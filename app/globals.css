@@ -1,26 +1,220 @@
 @import "tailwindcss";
 
+/* 다크모드는 <html class="dark"> 로 켠다 (상단의 "어둡게" 버튼) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/*
+ * 색상은 아래 변수만 쓴다. 다크모드에서는 변수 값만 바뀌므로
+ * 화면 코드에서 dark: 를 일일이 붙이지 않아도 된다.
+ * 연회색 글씨 금지: 글자색은 ink / ink-sub 두 가지만 쓴다.
+ */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg: #f1f5f9;
+  --surface: #ffffff;
+  --surface-2: #e2e8f0;
+  --ink: #0f172a;
+  --ink-sub: #334155;
+  --line: #94a3b8;
+  --line-soft: #cbd5e1;
+  --primary: #1d4ed8;
+  --primary-hover: #1e40af;
+  --primary-soft: #dbeafe;
+  --accent: #1d4ed8;
+  --ok: #166534;
+  --ok-soft: #dcfce7;
+  --bad: #b91c1c;
+  --bad-soft: #fee2e2;
+  --warn: #92400e;
+  --warn-soft: #fef3c7;
+  --star: #b45309;
+  --focus: #f59e0b;
+}
+
+.dark {
+  --bg: #0b1220;
+  --surface: #162033;
+  --surface-2: #24324b;
+  --ink: #f8fafc;
+  --ink-sub: #cbd5e1;
+  --line: #64748b;
+  --line-soft: #3b4a63;
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+  --primary-soft: #1e3a6e;
+  --accent: #93c5fd;
+  --ok: #86efac;
+  --ok-soft: #14402a;
+  --bad: #fca5a5;
+  --bad-soft: #4c1d1d;
+  --warn: #fcd34d;
+  --warn-soft: #4a3410;
+  --star: #fbbf24;
+  --focus: #fbbf24;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans:
+    "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui,
+    "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", sans-serif;
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-ink: var(--ink);
+  --color-ink-sub: var(--ink-sub);
+  --color-line: var(--line);
+  --color-line-soft: var(--line-soft);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-soft: var(--primary-soft);
+  --color-accent: var(--accent);
+  --color-ok: var(--ok);
+  --color-ok-soft: var(--ok-soft);
+  --color-bad: var(--bad);
+  --color-bad-soft: var(--bad-soft);
+  --color-warn: var(--warn);
+  --color-warn-soft: var(--warn-soft);
+  --color-star: var(--star);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* 글씨 크기 3단계: 기본 18px. rem 단위를 쓰는 모든 글자·여백이 함께 커진다 */
+html {
+  font-size: 18px;
+  -webkit-text-size-adjust: 100%;
+}
+html[data-font="lg"] {
+  font-size: 20px;
+}
+html[data-font="xl"] {
+  font-size: 22px;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+/* 키보드로 이동할 때 현재 위치가 뚜렷하게 보이도록 */
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+
+button,
+summary,
+[role="button"] {
+  cursor: pointer;
+}
+button:disabled {
+  cursor: not-allowed;
+}
+
+/* 접기/펼치기(details) 기본 화살표 대신 글자로 표시한다 */
+summary {
+  list-style: none;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+
+/* 본문 링크 */
+.link {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* 공통 버튼 */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  min-height: 3rem;
+  padding: 0.5rem 1.1rem;
+  border-radius: 0.6rem;
+  border: 2px solid var(--line);
+  background: var(--surface);
+  color: var(--ink);
+  font-weight: 700;
+  text-align: center;
+}
+.btn:hover:not(:disabled) {
+  border-color: var(--ink);
+}
+.btn-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #ffffff;
+}
+.btn-primary:hover:not(:disabled) {
+  background: var(--primary-hover);
+  border-color: var(--primary-hover);
+}
+.btn:disabled {
+  background: var(--surface-2);
+  border-color: var(--line-soft);
+  color: var(--ink-sub);
+}
+.btn-lg {
+  min-height: 3.5rem;
+  font-size: 1.125rem;
+  padding: 0.6rem 1.4rem;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line-soft);
+  border-radius: 0.8rem;
+}
+
+/* ───────── 인쇄 (오답노트 인쇄하기): 흑백 기준 ───────── */
+@media print {
+  :root,
+  .dark {
+    --bg: #ffffff;
+    --surface: #ffffff;
+    --surface-2: #ffffff;
+    --ink: #000000;
+    --ink-sub: #000000;
+    --line: #000000;
+    --line-soft: #666666;
+    --accent: #000000;
+    --ok: #000000;
+    --ok-soft: #ffffff;
+    --bad: #000000;
+    --bad-soft: #ffffff;
+    --warn: #000000;
+    --warn-soft: #ffffff;
+    --star: #000000;
+  }
+  html,
+  html[data-font="lg"],
+  html[data-font="xl"] {
+    font-size: 12pt;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .print-avoid-break {
+    break-inside: avoid;
+  }
+  main {
+    max-width: none !important;
+    padding: 0 !important;
+  }
+  a {
+    text-decoration: none;
+    color: #000000;
+  }
+}
+.print-only {
+  display: none;
 }

@@ -32,6 +32,10 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+!.env.example
+
+# import 스크립트 오류 리포트
+/import-report.json
 
 # vercel
 .vercel

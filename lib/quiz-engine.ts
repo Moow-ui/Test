@@ -1,0 +1,370 @@
+import type { Level, Question, QuizLevel, Subject } from "./types";
+
+/**
+ * 출제 엔진.
+ *
+ * 1) 과목별 문항 수: 요청 문항 수를 과목의 실제 시험 문항 수(questionCount) 비율로 나눈다.
+ * 2) 단원별 문항 수: 과목 안에서 단원 출제 비중(examWeight) 비율로 나눈다.
+ *    → 결과적으로 "examWeight × 과목 문항 비율"에 비례한다.
+ *    반올림 오차는 최대 잔여법(largest remainder)으로 처리한다.
+ * 3) 문항 수가 적어 과목에 배정된 수가 단원 수보다 적으면 중요도 높은 단원부터 1문제씩 배정한다.
+ * 4) 같은 세션 안에서는 중복 없이 뽑고, 최근 7일 안에 푼 문제는 뒤로 미룬다.
+ * 5) 단원에 문제가 모자라면 같은 과목의 다른 단원에서 채운다.
+ *
+ * 화면과 무관한 순수 함수만 둔다. (tests/quiz-engine.test.ts 참고)
+ */
+
+export const QUIZ_COUNTS = [5, 10, 20, 30] as const;
+export const DEFAULT_QUIZ_COUNT = 5;
+export const RECENT_DAYS = 7;
+const DAY_MS = 24 * 60 * 60 * 1000;
+
+export interface LevelRule {
+  label: string;
+  title: string;
+  description: string;
+  /** 이 카드에 포함되는 문제 난이도 */
+  levels: Level[];
+  /** 목표 기출 비율 (1 = 기출 우선, 0.5 = 기출:예상 50:50). 기출이 모자라면 예상문제로 채운다 */
+  pastRatio: number;
+}
+
+export const LEVEL_RULES: Record<QuizLevel, LevelRule> = {
+  basic: {
+    label: "초급",
+    title: "자주 나오는 기본 문제",
+    description: "기출 중에서 자주 나오는 기본 개념 문제입니다. 처음 시작하거나 오랜만에 공부한다면 여기부터 푸세요.",
+    levels: ["basic"],
+    pastRatio: 1,
+  },
+  intermediate: {
+    label: "중급",
+    title: "합격선 수준 문제",
+    description: "합격하려면 여기까지는 풀 수 있어야 합니다. 합격선 수준의 기출 전체에서 나옵니다.",
+    levels: ["basic", "intermediate"],
+    pastRatio: 1,
+  },
+  advanced: {
+    label: "고급",
+    title: "기출 + AI 예상문제",
+    description: "기출문제와 AI 예상문제를 절반씩 섞었습니다. 조금 까다로운 문제로 실력을 다질 때 푸세요.",
+    levels: ["intermediate", "advanced"],
+    pastRatio: 0.5,
+  },
+};
+
+export type Rng = () => number;
+
+/** 풀이 기록: 문제 id → 마지막으로 푼 시각(ms) */
+export type SolveHistory = Record<string, { lastSolvedAt: number } | undefined>;
+
+/** 시드가 같으면 항상 같은 순서가 나오는 난수 (테스트용) */
+export function createRng(seed: number): Rng {
+  let a = seed >>> 0;
+  return () => {
+    a = (a + 0x6d2b79f5) >>> 0;
+    let t = a;
+    t = Math.imul(t ^ (t >>> 15), t | 1);
+    t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+
+export function shuffle<T>(items: readonly T[], rng: Rng = Math.random): T[] {
+  const arr = [...items];
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(rng() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
+/** 난이도 카드와 범위(전체/특정 과목)에 해당하는 문제 모음 */
+export function filterPool(
+  questions: Question[],
+  level: QuizLevel,
+  subjectId?: string | null,
+): Question[] {
+  const levels = LEVEL_RULES[level].levels;
+  return questions.filter(
+    (q) => levels.includes(q.level) && (!subjectId || subjectId === "all" || q.subjectId === subjectId),
+  );
+}
+
+export function countAvailable(
+  questions: Question[],
+  level: QuizLevel,
+  subjectId?: string | null,
+): number {
+  return filterPool(questions, level, subjectId).length;
+}
+
+/**
+ * 최대 잔여법: total 을 weights 비율로 나눠 정수로 배분한다.
+ * 몫의 소수 부분이 큰 순서로 남은 자리를 1개씩 준다.
+ * 소수 부분이 같으면 priority 값이 작은 쪽이 먼저 받는다.
+ */
+export function largestRemainder(
+  weights: number[],
+  total: number,
+  priority: number[] = weights.map((_, i) => i),
+): number[] {
+  const n = weights.length;
+  if (n === 0 || total <= 0) return weights.map(() => 0);
+  const sum = weights.reduce((a, b) => a + b, 0);
+  const quotas = weights.map((w) => (sum > 0 ? (w / sum) * total : total / n));
+  const result = quotas.map((q) => Math.floor(q + 1e-9));
+  let remaining = total - result.reduce((a, b) => a + b, 0);
+
+  const order = quotas
+    .map((q, i) => ({ i, rem: Math.round((q - result[i]) * 1e9) / 1e9 }))
+    .sort((a, b) => b.rem - a.rem || priority[a.i] - priority[b.i]);
+
+  for (let k = 0; remaining > 0; k = (k + 1) % n) {
+    result[order[k].i] += 1;
+    remaining -= 1;
+  }
+  return result;
+}
+
+export interface ChapterAllocation {
+  subjectId: string;
+  chapterId: string;
+  count: number;
+}
+
+/** 중요도 높은 순(같으면 출제 비중 큰 순, 그다음 원래 순서)의 순위. 0 이 가장 우선 */
+function importanceRank(chapters: Subject["chapters"]): number[] {
+  const order = chapters
+    .map((c, i) => ({ i, c }))
+    .sort((a, b) => b.c.importance - a.c.importance || b.c.examWeight - a.c.examWeight || a.i - b.i);
+  const rank = new Array<number>(chapters.length);
+  order.forEach((o, r) => {
+    rank[o.i] = r;
+  });
+  return rank;
+}
+
+/** 과목별 문항 수 (과목의 실제 시험 문항 수 비율) */
+export function allocateSubjects(subjects: Subject[], count: number, rng: Rng = Math.random): number[] {
+  // 소수 부분이 같은 과목끼리는 매번 같은 과목만 손해 보지 않도록 무작위로 순서를 정한다
+  const tieBreak = shuffle(
+    subjects.map((_, i) => i),
+    rng,
+  );
+  const priority = new Array<number>(subjects.length);
+  tieBreak.forEach((subjectIndex, r) => {
+    priority[subjectIndex] = r;
+  });
+  return largestRemainder(
+    subjects.map((s) => s.questionCount),
+    count,
+    priority,
+  );
+}
+
+/** 한 과목 안에서 단원별 문항 수 */
+export function allocateChapters(subject: Subject, count: number): number[] {
+  const chapters = subject.chapters;
+  const rank = importanceRank(chapters);
+  if (count <= 0) return chapters.map(() => 0);
+  if (count < chapters.length) {
+    // 문항 수가 적을 때: 중요도 높은 단원부터 1문제씩
+    return chapters.map((_, i) => (rank[i] < count ? 1 : 0));
+  }
+  return largestRemainder(
+    chapters.map((c) => c.examWeight),
+    count,
+    rank,
+  );
+}
+
+/** 요청 문항 수를 과목 → 단원 순서로 배분한다. 합계는 항상 count 와 같다 */
+export function allocateQuestions(
+  subjects: Subject[],
+  count: number,
+  rng: Rng = Math.random,
+): ChapterAllocation[] {
+  const perSubject = allocateSubjects(subjects, count, rng);
+  const result: ChapterAllocation[] = [];
+  subjects.forEach((subject, si) => {
+    const perChapter = allocateChapters(subject, perSubject[si]);
+    subject.chapters.forEach((chapter, ci) => {
+      result.push({ subjectId: subject.id, chapterId: chapter.id, count: perChapter[ci] });
+    });
+  });
+  return result;
+}
+
+export interface BuildQuizParams {
+  /** 출제 범위에 들어가는 과목 (특정 과목만 풀 때는 그 과목 하나만 넘긴다) */
+  subjects: Subject[];
+  /** 뽑을 수 있는 문제 모음 (난이도·범위로 이미 걸러진 것) */
+  pool: Question[];
+  count: number;
+  /** 목표 기출 비율 0~1 */
+  pastRatio?: number;
+  history?: SolveHistory;
+  now?: number;
+  rng?: Rng;
+}
+
+/**
+ * 문제를 뽑는다. pool 이 count 보다 적으면 있는 만큼만 돌려준다.
+ * 결과는 과목 순서대로 묶여 있고(실제 시험처럼), 과목 안에서는 무작위 순서다.
+ */
+export function buildQuiz({
+  subjects,
+  pool,
+  count,
+  pastRatio = 1,
+  history = {},
+  now = Date.now(),
+  rng = Math.random,
+}: BuildQuizParams): Question[] {
+  const target = Math.min(count, pool.length);
+  if (target <= 0) return [];
+
+  const recentCutoff = now - RECENT_DAYS * DAY_MS;
+  const isRecent = (q: Question) => (history[q.id]?.lastSolvedAt ?? 0) >= recentCutoff;
+
+  const randomOrder = new Map(shuffle(pool, rng).map((q, i) => [q.id, i]));
+  const chapterImportance = new Map<string, number>();
+  for (const s of subjects) for (const c of s.chapters) chapterImportance.set(c.id, c.importance);
+
+  const picked: Question[] = [];
+  const pickedIds = new Set<string>();
+  let pastCount = 0;
+
+  /** candidates 에서 n 문제를 고르고, 실제로 고른 개수를 돌려준다 */
+  const pickFrom = (candidates: Question[], n: number, preferImportant = false): number => {
+    let got = 0;
+    while (got < n) {
+      // 지금까지 뽑은 것 중 기출 비율이 목표보다 낮으면 기출을, 아니면 예상문제를 먼저 찾는다
+      const wantPast = pastCount < pastRatio * (picked.length + 1) - 1e-9;
+      let best: Question | null = null;
+      let bestKey: number[] | null = null;
+      for (const q of candidates) {
+        if (pickedIds.has(q.id)) continue;
+        const key = [
+          (q.source === "past") === wantPast ? 0 : 1,
+          isRecent(q) ? 1 : 0,
+          preferImportant ? -(chapterImportance.get(q.chapterId) ?? 0) : 0,
+          randomOrder.get(q.id) ?? 0,
+        ];
+        if (bestKey === null || compareKeys(key, bestKey) < 0) {
+          best = q;
+          bestKey = key;
+        }
+      }
+      if (!best) break;
+      picked.push(best);
+      pickedIds.add(best.id);
+      if (best.source === "past") pastCount += 1;
+      got += 1;
+    }
+    return got;
+  };
+
+  // 1) 단원별 배정대로 뽑기
+  const allocation = allocateQuestions(subjects, target, rng);
+  const shortage = new Map<string, number>();
+  for (const a of allocation) {
+    if (a.count === 0) continue;
+    const candidates = pool.filter((q) => q.chapterId === a.chapterId && q.subjectId === a.subjectId);
+    const got = pickFrom(candidates, a.count);
+    if (got < a.count) shortage.set(a.subjectId, (shortage.get(a.subjectId) ?? 0) + a.count - got);
+  }
+
+  // 2) 모자란 만큼 같은 과목의 다른 단원에서 채우기 (중요도 높은 단원 우선)
+  let leftover = 0;
+  for (const [subjectId, need] of shortage) {
+    const candidates = pool.filter((q) => q.subjectId === subjectId);
+    leftover += need - pickFrom(candidates, need, true);
+  }
+
+  // 3) 그래도 모자라면 범위 안의 다른 과목에서 채우기
+  if (leftover > 0) pickFrom(pool, leftover, true);
+
+  const subjectOrder = new Map(subjects.map((s, i) => [s.id, i]));
+  return picked.sort(
+    (a, b) =>
+      (subjectOrder.get(a.subjectId) ?? 99) - (subjectOrder.get(b.subjectId) ?? 99) ||
+      (randomOrder.get(a.id) ?? 0) - (randomOrder.get(b.id) ?? 0),
+  );
+}
+
+function compareKeys(a: number[], b: number[]): number {
+  for (let i = 0; i < a.length; i++) {
+    if (a[i] !== b[i]) return a[i] - b[i];
+  }
+  return 0;
+}
+
+export interface LevelQuizParams {
+  subjects: Subject[];
+  questions: Question[];
+  level: QuizLevel;
+  count: number;
+  /** "all" 또는 과목 id */
+  subjectId?: string | null;
+  history?: SolveHistory;
+  now?: number;
+  rng?: Rng;
+}
+
+/** 난이도 카드(초급/중급/고급) 기준으로 문제를 뽑는다 */
+export function buildLevelQuiz({
+  subjects,
+  questions,
+  level,
+  count,
+  subjectId,
+  history,
+  now,
+  rng,
+}: LevelQuizParams): Question[] {
+  const scoped =
+    subjectId && subjectId !== "all" ? subjects.filter((s) => s.id === subjectId) : subjects;
+  return buildQuiz({
+    subjects: scoped,
+    pool: filterPool(questions, level, subjectId),
+    count,
+    pastRatio: LEVEL_RULES[level].pastRatio,
+    history,
+    now,
+    rng,
+  });
+}
+
+/**
+ * 실전 CBT 체험용 모의고사: 실제 시험과 같은 과목별 문항 수로 뽑는다.
+ * 보유 문제가 모자라면 있는 만큼만 나온다.
+ */
+export function buildMockExam(params: {
+  subjects: Subject[];
+  questions: Question[];
+  totalQuestions: number;
+  history?: SolveHistory;
+  now?: number;
+  rng?: Rng;
+}): Question[] {
+  return buildQuiz({
+    subjects: params.subjects,
+    pool: params.questions,
+    count: params.totalQuestions,
+    pastRatio: 1,
+    history: params.history,
+    now: params.now,
+    rng: params.rng,
+  });
+}
+
+/** 모의고사 제한 시간(초): 문항 수가 실제보다 적으면 같은 비율로 줄인다 */
+export function mockExamSeconds(
+  questionCount: number,
+  examInfo: { totalQuestions: number; timeLimitMinutes: number },
+): number {
+  const ratio = Math.min(1, questionCount / examInfo.totalQuestions);
+  return Math.max(60, Math.round(examInfo.timeLimitMinutes * 60 * ratio));
+}
