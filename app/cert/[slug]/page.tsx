@@ -1,15 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import type { ReactNode } from "react";
 import { AdSlot } from "@/components/AdSlot";
 import { Badge } from "@/components/Badge";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { JsonLd } from "@/components/JsonLd";
 import { AnalysisPanel } from "@/components/cert/AnalysisPanel";
-import { CertQuickActions } from "@/components/cert/CertQuickActions";
-import { CertTabs } from "@/components/cert/CertTabs";
+import { CertBoxes } from "@/components/cert/CertBoxes";
 import { RelatedCerts } from "@/components/cert/RelatedCerts";
-import { StartPanel } from "@/components/cert/StartPanel";
 import { getCertList, getCertification, getQuestions } from "@/lib/data";
 import { countAvailable, mockExamSeconds } from "@/lib/quiz-engine";
 import { certMainMeta, certPastMeta, faqJsonLd, toMetadata } from "@/lib/seo";
@@ -102,96 +101,96 @@ export default async function CertPage({ params }: Props) {
   const { examInfo, content } = cert;
 
   return (
-    <article className="space-y-8">
+    <article className="space-y-5">
       <JsonLd data={faqJsonLd(content.faqs)} />
       <Breadcrumbs crumbs={crumbs} />
 
-      <header className="space-y-3">
-        <div className="flex flex-wrap gap-2">
-          <Badge>{cert.grade}</Badge>
-          <Badge>{cert.field}</Badge>
-        </div>
-        <h1 className="text-2xl font-extrabold leading-snug sm:text-3xl">{meta.h1}</h1>
+      <h1 className="text-xl font-extrabold leading-snug sm:text-2xl">{meta.h1}</h1>
 
-        <dl className="card grid gap-x-4 gap-y-2 p-3 sm:grid-cols-[7rem_1fr] sm:p-4">
-          <dt className="font-bold text-ink-sub">시험 과목</dt>
-          <dd>
-            {cert.subjects.map((s) => `${s.name} ${s.questionCount}문항`).join(" · ")}
-          </dd>
-          <dt className="font-bold text-ink-sub">문항·시간</dt>
-          <dd>
-            총 {examInfo.totalQuestions}문항 · {examInfo.timeLimitMinutes}분
-          </dd>
-          <dt className="font-bold text-ink-sub">시험 방식</dt>
-          <dd>{examInfo.format}</dd>
-          <dt className="font-bold text-ink-sub">합격 기준</dt>
-          <dd className="font-bold">{examInfo.passCriteria.description}</dd>
-        </dl>
-
-        <CertQuickActions certId={cert.id} />
-      </header>
-
-      <CertTabs
+      {/* 가장 먼저 보이는 박스 4개: 초급 / 중급 / 고급 / 출제 분석 */}
+      <CertBoxes
+        certId={cert.id}
+        subjects={cert.subjects.map((s) => ({ id: s.id, name: s.name }))}
+        counts={counts}
+        pastCount={pastCount}
+        cbt={{
+          questionCount: cbtCount,
+          minutes: Math.round(mockExamSeconds(cbtCount, examInfo) / 60),
+        }}
         analysis={<AnalysisPanel certId={cert.id} subjects={cert.subjects} />}
-        start={
-          <StartPanel
-            certId={cert.id}
-            certName={cert.name}
-            subjects={cert.subjects.map((s) => ({ id: s.id, name: s.name }))}
-            counts={counts}
-            pastCount={pastCount}
-            cbt={{
-              questionCount: cbtCount,
-              minutes: Math.round(mockExamSeconds(cbtCount, examInfo) / 60),
-            }}
-          />
-        }
       />
 
-      <section aria-labelledby="intro-title" className="cv space-y-2">
-        <h2 id="intro-title" className="text-xl font-extrabold">
-          {cert.name}는 어떤 자격증인가요?
-        </h2>
-        <p>{content.intro}</p>
-        <dl className="card grid gap-x-4 gap-y-2 p-3 sm:grid-cols-[7rem_1fr] sm:p-4">
-          <dt className="font-bold text-ink-sub">시행기관</dt>
-          <dd>{content.organizer}</dd>
-          <dt className="font-bold text-ink-sub">응시자격</dt>
-          <dd>{content.eligibility}</dd>
-        </dl>
-      </section>
+      {/* 시험 정보·출제 경향 등 읽을거리는 아래쪽에 접어 둔다 (내용은 HTML 에 그대로 있음) */}
+      <div className="space-y-2 pt-4">
+        <Fold title="시험 정보">
+          <dl className="grid gap-x-4 gap-y-2 sm:grid-cols-[6rem_1fr]">
+            <dt className="font-bold text-ink-sub">등급·분야</dt>
+            <dd>
+              {cert.grade} · {cert.field}
+            </dd>
+            <dt className="font-bold text-ink-sub">시험 과목</dt>
+            <dd>{cert.subjects.map((s) => `${s.name} ${s.questionCount}문항`).join(" · ")}</dd>
+            <dt className="font-bold text-ink-sub">문항·시간</dt>
+            <dd>
+              총 {examInfo.totalQuestions}문항 · {examInfo.timeLimitMinutes}분
+            </dd>
+            <dt className="font-bold text-ink-sub">시험 방식</dt>
+            <dd>{examInfo.format}</dd>
+            <dt className="font-bold text-ink-sub">합격 기준</dt>
+            <dd className="font-bold">{examInfo.passCriteria.description}</dd>
+            <dt className="font-bold text-ink-sub">시행기관</dt>
+            <dd>{content.organizer}</dd>
+            <dt className="font-bold text-ink-sub">응시자격</dt>
+            <dd>{content.eligibility}</dd>
+          </dl>
+        </Fold>
 
-      <section aria-labelledby="trend-title" className="cv space-y-2">
-        <h2 id="trend-title" className="text-xl font-extrabold">
-          {cert.name} 필기 출제 경향 요약
-        </h2>
-        <p>{content.trendSummary}</p>
-        <h3 className="pt-2 text-lg font-bold">이렇게 공부하세요</h3>
-        <p>{content.studyTip}</p>
-        <p>
-          <Link href={pastMeta.path} className="link">
-            {pastMeta.h1} 보러 가기 →
-          </Link>
-        </p>
-      </section>
+        <Fold title={`${cert.name} 필기 출제 경향 요약`}>
+          <p>{content.trendSummary}</p>
+          <h3 className="pt-2 font-bold">이렇게 공부하세요</h3>
+          <p>{content.studyTip}</p>
+          <p>
+            <Link href={pastMeta.path} className="link">
+              {pastMeta.h1} 보러 가기 →
+            </Link>
+          </p>
+        </Fold>
 
-      <section aria-labelledby="faq-title" className="cv">
-        <h2 id="faq-title" className="text-xl font-extrabold">
-          자주 묻는 질문
-        </h2>
-        <dl className="mt-2 space-y-3">
-          {content.faqs.map((faq) => (
-            <div key={faq.question} className="card p-3 sm:p-4">
-              <dt className="font-bold">Q. {faq.question}</dt>
-              <dd className="mt-1">{faq.answer}</dd>
-            </div>
-          ))}
-        </dl>
-      </section>
+        <Fold title={`${cert.name}는 어떤 자격증인가요?`}>
+          <p>{content.intro}</p>
+        </Fold>
+
+        <Fold title="자주 묻는 질문">
+          <dl className="space-y-3">
+            {content.faqs.map((faq) => (
+              <div key={faq.question}>
+                <dt className="font-bold">Q. {faq.question}</dt>
+                <dd className="mt-1">{faq.answer}</dd>
+              </div>
+            ))}
+          </dl>
+        </Fold>
+      </div>
 
       <RelatedCerts certName={cert.name} related={related} />
 
       <AdSlot position="cert-bottom" />
     </article>
+  );
+}
+
+/** 눌러야 펼쳐지는 묶음. 접혀 있어도 내용은 HTML 에 들어 있어 검색엔진이 읽을 수 있다 */
+function Fold({ title, children }: { title: string; children: ReactNode }) {
+  return (
+    <details className="card">
+      <summary className="flex min-h-14 items-center justify-between gap-2 px-3 sm:px-4">
+        <h2 className="font-extrabold">{title}</h2>
+        <span className="shrink-0 text-[0.85rem] font-bold text-accent">
+          <span className="when-closed">▼ 보기</span>
+          <span className="when-open">▲ 접기</span>
+        </span>
+      </summary>
+      <div className="space-y-2 border-t border-line-soft p-3 text-[0.95rem] sm:p-4">{children}</div>
+    </details>
   );
 }

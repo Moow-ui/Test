@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useRef } from "react";
 import { AdSlot } from "@/components/AdSlot";
+import { sourceLabel } from "@/lib/format";
 import { LEVEL_RULES, QUIZ_COUNTS, buildLevelQuiz, buildQuiz } from "@/lib/quiz-engine";
 import {
   STORAGE_KEYS,
@@ -232,19 +233,22 @@ export function QuizRunner({ cert, questions }: { cert: QuizCert; questions: Que
   const isLast = index + 1 >= total;
 
   return (
-    // 좁은 화면에서는 위 여백을 줄여 문제와 선지 4개가 한 화면에 들어오게 한다
-    <div className="mx-auto -mt-2 max-w-3xl sm:mt-0">
-      <div className="flex items-center justify-between gap-2 text-[0.9rem]">
-        <h1 className="font-bold">
-          {cert.name} · {session.label}
-        </h1>
-        <Link href={`/cert/${cert.id}`} className="link shrink-0">
-          나가기
-        </Link>
-      </div>
-      <div className="mt-1 flex items-center gap-3">
-        <p className="shrink-0 font-extrabold">
-          문제 {index + 1} / {total}
+    // 좁은 화면에서는 위 여백을 줄여 문제와 선지 4개가 한 화면에 들어오게 한다.
+    // 화면 높이만큼 자리를 차지해, 푸는 동안 하단 안내 문구가 문제 아래로 따라 올라오지 않게 한다.
+    <div className="mx-auto -mt-2 min-h-[calc(100dvh-5.5rem)] max-w-3xl sm:mt-0">
+      <h1 className="sr-only">
+        {cert.name} · {session.label}
+      </h1>
+      {/* 실제 시험처럼 문제와 선지만 눈에 띄게: 진행률·출처 표시는 한 줄로 아주 작게 둔다 */}
+      <div className="flex items-center gap-2 text-[0.72rem] font-bold text-ink-sub">
+        <p className="shrink-0">
+          <span className="sr-only">문제 </span>
+          {index + 1} / {total}
+          <span className="mx-1" aria-hidden="true">
+            ·
+          </span>
+          {sourceLabel(question)}
+          {question.reviewStatus === "unverified" && " · 검수 전"}
         </p>
         <div
           role="progressbar"
@@ -252,13 +256,16 @@ export function QuizRunner({ cert, questions }: { cert: QuizCert; questions: Que
           aria-valuemin={0}
           aria-valuemax={total}
           aria-valuenow={answeredCount}
-          className="h-3 flex-1 overflow-hidden rounded-full border border-line bg-surface-2"
+          className="h-1.5 flex-1 overflow-hidden rounded-full bg-surface-2"
         >
           <div className="h-full bg-primary" style={{ width: `${(answeredCount / total) * 100}%` }} />
         </div>
+        <Link href={`/cert/${cert.id}`} className="-my-2 shrink-0 py-2 underline underline-offset-2">
+          나가기
+        </Link>
       </div>
 
-      <div className="mt-3">
+      <div className="mt-2">
         <QuestionCard
           key={question.id}
           question={question}
@@ -270,10 +277,6 @@ export function QuizRunner({ cert, questions }: { cert: QuizCert; questions: Que
           nextLabel={isLast ? "결과 보기 →" : "다음 문제 →"}
         />
       </div>
-
-      <p className="mt-6 hidden text-[0.85rem] text-ink-sub md:block">
-        키보드로도 풀 수 있습니다: 숫자 1~4 로 답 선택, Enter 로 다음 문제.
-      </p>
 
       <AdSlot position="quiz-bottom" />
     </div>

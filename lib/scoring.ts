@@ -12,20 +12,16 @@ export const SCORING = {
   STAR_MIN: 1,
   STAR_MAX: 5,
 
-  /** 합격 기여도 % = BASE + (★ − 1) × PER_STAR + (frequency ≥ HIGH_FREQ_THRESHOLD ? HIGH_FREQ_BONUS : 0) */
+  /**
+   * 합격 기여도 %. 화면에는 "이 문제를 맞혔다면 합격 가능성은? N%" 로 보인다.
+   * = BASE + (★ − 1) × PER_STAR + (frequency ≥ HIGH_FREQ_THRESHOLD ? HIGH_FREQ_BONUS : 0)
+   */
   PASS_BASE: 50,
   PASS_PER_STAR: 10,
   HIGH_FREQ_THRESHOLD: 4,
   HIGH_FREQ_BONUS: 5,
   PASS_MAX: 95,
 } as const;
-
-/** 툴팁에 보여 주는 계산 방식 설명 */
-export const PASS_CONTRIBUTION_HELP =
-  `합격 기여도는 "이 유형을 확실히 맞힐 수 있으면 합격 가능성이 이 정도 수준"이라는 추정치입니다. ` +
-  `단원 중요도와 출제 빈도로 계산합니다: ${SCORING.PASS_BASE} + (★ − 1) × ${SCORING.PASS_PER_STAR}` +
-  ` + (출제 빈도 ${SCORING.HIGH_FREQ_THRESHOLD} 이상이면 ${SCORING.HIGH_FREQ_BONUS}), 최대 ${SCORING.PASS_MAX}%. ` +
-  `실제 합격률을 측정한 값이 아닙니다.`;
 
 function clamp(value: number, min: number, max: number): number {
   return Math.min(max, Math.max(min, value));

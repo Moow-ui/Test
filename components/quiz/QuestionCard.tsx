@@ -4,14 +4,13 @@ import { useEffect, useRef, useState } from "react";
 import { Markdown } from "@/components/Markdown";
 import { Stars } from "@/components/Stars";
 import { circled } from "@/lib/format";
-import { PASS_CONTRIBUTION_HELP, calcStars, getPassContribution } from "@/lib/scoring";
+import { calcStars, getPassContribution } from "@/lib/scoring";
 import type { Question } from "@/lib/types";
-import { QuestionBadges } from "./QuestionBadges";
 import { ReportForm } from "./ReportForm";
 
 export interface QuestionCardProps {
   question: Question;
-  /** 과목 › 단원 이름 */
+  /** 과목 › 단원 이름 (해설을 펼쳤을 때만 보인다) */
   location: string;
   chapterImportance: number;
   /** 고른 답 (아직 안 골랐으면 null) */
@@ -22,8 +21,9 @@ export interface QuestionCardProps {
 }
 
 /**
- * 한 화면에 한 문제.
- * 선지를 누르면 즉시 채점하고, 결과(정답·한 줄 핵심·중요도·합격 기여도)와 해설 토글을 보여 준다.
+ * 한 화면에 한 문제. 실제 시험처럼 문제와 선지만 크게 보이고 나머지는 작게 두거나 접어 둔다.
+ * 선지를 누르면 즉시 채점하고, 정답·한 줄 핵심·중요도·합격 가능성을 짧게 보여 준다.
+ * 해설과 오류 신고는 눌러야 펼쳐진다.
  * 문제가 바뀔 때는 key 를 바꿔 다시 만들어지므로 해설·신고 창은 항상 닫힌 상태로 시작한다.
  */
 export function QuestionCard({
@@ -36,7 +36,6 @@ export function QuestionCard({
   nextLabel,
 }: QuestionCardProps) {
   const [showExplanation, setShowExplanation] = useState(false);
-  const [showHelp, setShowHelp] = useState(false);
   const [showReport, setShowReport] = useState(false);
   const nextRef = useRef<HTMLButtonElement>(null);
   const resultRef = useRef<HTMLDivElement>(null);
@@ -60,12 +59,7 @@ export function QuestionCard({
 
   return (
     <div>
-      <div className="flex flex-wrap items-center gap-1.5">
-        <QuestionBadges question={question} />
-        <span className="text-[0.85rem] font-bold text-ink-sub">{location}</span>
-      </div>
-
-      <h2 className="mt-1.5 text-[1.15rem] font-bold leading-snug sm:mt-2 sm:text-xl sm:leading-normal">
+      <h2 className="text-[1.15rem] font-bold leading-snug sm:text-xl sm:leading-normal">
         {question.stem}
       </h2>
 
@@ -96,10 +90,10 @@ export function QuestionCard({
                 <span className="flex min-w-0 flex-1 flex-col gap-x-3 sm:flex-row sm:items-center sm:justify-between">
                   <span>{choice}</span>
                   {answered && isAnswer && (
-                    <span className="shrink-0 text-[1rem] font-extrabold text-ok">✔ 정답</span>
+                    <span className="shrink-0 text-[0.8rem] font-extrabold text-ok">✔ 정답</span>
                   )}
                   {answered && isChosen && !isAnswer && (
-                    <span className="shrink-0 text-[1rem] font-extrabold text-bad">✘ 내가 고른 답</span>
+                    <span className="shrink-0 text-[0.8rem] font-extrabold text-bad">✘ 내가 고른 답</span>
                   )}
                 </span>
               </button>
@@ -109,78 +103,65 @@ export function QuestionCard({
       </ol>
 
       {answered && (
-        <div ref={resultRef} className="mt-3 scroll-mb-4">
+        <div ref={resultRef} className="mt-2.5 scroll-mb-4">
           <div
             role="status"
-            className={`grid gap-3 rounded-lg border-2 p-3 sm:grid-cols-[1fr_auto] ${
+            className={`grid gap-x-4 gap-y-1.5 rounded-lg border-2 px-3 py-2 sm:grid-cols-[1fr_auto] ${
               correct ? "border-ok bg-ok-soft" : "border-bad bg-bad-soft"
             }`}
           >
             <div>
-              <p className="text-lg font-extrabold">
-                <span className={correct ? "text-ok" : "text-bad"}>
-                  {correct ? "맞았습니다!" : "틀렸습니다."}
-                </span>{" "}
+              <p className="font-extrabold">
+                <span className={correct ? "text-ok" : "text-bad"}>{correct ? "정답" : "오답"}</span>
+                <span className="mx-1.5" aria-hidden="true">
+                  ·
+                </span>
                 정답: {circled(question.answer)}
               </p>
-              <p className="mt-1">
+              <p className="text-[0.85rem]">
                 <span className="font-bold">핵심:</span> {question.oneLineConcept}
               </p>
             </div>
-            <div className="flex flex-wrap items-center gap-x-4 gap-y-1 border-t border-line pt-2 sm:block sm:border-l sm:border-t-0 sm:pl-3 sm:pt-0">
-              <p className="whitespace-nowrap">
-                <span className="font-bold">중요도</span> <Stars value={stars} />
+            <div className="text-[0.8rem] sm:text-right">
+              <p>
+                중요도 <Stars value={stars} />
               </p>
-              <p className="whitespace-nowrap">
-                <span className="font-bold">합격 기여도</span>{" "}
-                <span className="text-lg font-extrabold">{contribution.value}%</span>{" "}
-                <button
-                  type="button"
-                  aria-expanded={showHelp}
-                  title={PASS_CONTRIBUTION_HELP}
-                  onClick={() => setShowHelp((v) => !v)}
-                  className="link text-[0.9rem]"
-                >
-                  ⓘ {contribution.isEstimate ? "추정치" : "실측값"} 설명
-                </button>
+              <p>
+                이 문제를 맞혔다면 합격 가능성은?{" "}
+                <strong className="text-lg font-extrabold">{contribution.value}%</strong>
               </p>
             </div>
           </div>
 
-          {showHelp && (
-            <p className="mt-2 rounded-lg border border-line bg-surface p-3 text-[0.9rem]">
-              {PASS_CONTRIBUTION_HELP}
-            </p>
-          )}
-
-          <button
-            type="button"
-            aria-expanded={showExplanation}
-            onClick={() => setShowExplanation((v) => !v)}
-            className="btn mt-2 w-full justify-start"
-          >
-            {showExplanation ? "▲ 상세 개념 및 해설 접기" : "▼ 상세 개념 및 해설 보기"}
-          </button>
-          {showExplanation && (
-            <div className="mt-2 rounded-lg border border-line bg-surface p-3 sm:p-4">
-              <Markdown text={question.explanation} />
-            </div>
-          )}
-
-          <div className="mt-3 flex flex-wrap items-center justify-between gap-2">
+          <div className="mt-2 flex items-center justify-between gap-2">
             <button
               type="button"
-              className="btn min-h-11 px-3 py-1 text-[0.9rem]"
-              aria-expanded={showReport}
-              onClick={() => setShowReport((v) => !v)}
+              aria-expanded={showExplanation}
+              onClick={() => setShowExplanation((v) => !v)}
+              className="btn min-h-12 px-3 text-[0.9rem]"
             >
-              문제 오류 신고
+              {showExplanation ? "▲ 해설 접기" : "▼ 해설 보기"}
             </button>
             <button ref={nextRef} type="button" className="btn btn-primary btn-lg min-w-40" onClick={onNext}>
               {nextLabel}
             </button>
           </div>
-          {showReport && <ReportForm question={question} onClose={() => setShowReport(false)} />}
+
+          {showExplanation && (
+            <div className="mt-2 rounded-lg border border-line bg-surface p-3 text-[0.95rem] sm:p-4">
+              <p className="mb-2 text-[0.75rem] font-bold text-ink-sub">{location}</p>
+              <Markdown text={question.explanation} />
+              <button
+                type="button"
+                className="mt-3 text-[0.75rem] font-bold text-ink-sub underline underline-offset-2"
+                aria-expanded={showReport}
+                onClick={() => setShowReport((v) => !v)}
+              >
+                문제 오류 신고
+              </button>
+              {showReport && <ReportForm question={question} onClose={() => setShowReport(false)} />}
+            </div>
+          )}
         </div>
       )}
     </div>
