@@ -1,0 +1,94 @@
+[
+  {
+    "id": "computer-literacy-1-p023",
+    "certId": "computer-literacy-1",
+    "subjectId": "spreadsheet",
+    "chapterId": "data-analysis",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "시나리오 관리자에 대한 설명으로 옳지 않은 것은?",
+    "choices": [
+      "여러 가지 상황에 따른 결과값의 변화를 비교할 수 있다.",
+      "하나의 시나리오에 변경 셀을 최대 32개까지 지정할 수 있다.",
+      "원본 데이터를 바꾸면 이미 만든 요약 보고서도 자동으로 바뀐다.",
+      "결과를 시나리오 요약 보고서나 피벗 테이블 보고서로 만들 수 있다."
+    ],
+    "answer": 3,
+    "oneLineConcept": "시나리오 요약 보고서는 자동으로 갱신되지 않는다",
+    "explanation": "시나리오 요약 보고서는 만든 순간의 값을 적어 둔 것입니다. 원본을 바꾸면 **보고서를 다시 만들어야** 합니다.\n\n**틀린 선지**\n- ① 여러 가지 상황에 따른 결과값의 변화를 비교할 수 있다.: 맞는 설명입니다.\n- ② 하나의 시나리오에 변경 셀을 최대 32개까지 지정할 수 있다.: 맞는 설명입니다.\n- ④ 결과를 시나리오 요약 보고서나 피벗 테이블 보고서로 만들 수 있다.: 맞는 설명입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "시나리오"
+    ]
+  },
+  {
+    "id": "computer-literacy-1-p024",
+    "certId": "computer-literacy-1",
+    "subjectId": "spreadsheet",
+    "chapterId": "data-analysis",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "데이터 표에 대한 설명으로 옳지 않은 것은?",
+    "choices": [
+      "결과가 표시된 셀 가운데 일부만 골라 지우거나 고칠 수 있다.",
+      "변수가 하나 또는 둘인 경우에 사용할 수 있다.",
+      "특정 값의 변화에 따른 결과값의 변화를 표 형태로 보여 준다.",
+      "[데이터] 탭의 가상 분석에서 실행한다."
+    ],
+    "answer": 1,
+    "oneLineConcept": "데이터 표의 결과는 일부만 고치거나 지울 수 없다",
+    "explanation": "데이터 표의 결과는 배열 수식으로 한꺼번에 만들어집니다. 그래서 **일부만 지우거나 고칠 수 없고**, 결과 범위 전체를 선택해 지워야 합니다.\n\n**틀린 선지**\n- ② 변수가 하나 또는 둘인 경우에 사용할 수 있다.: 맞는 설명입니다.\n- ③ 특정 값의 변화에 따른 결과값의 변화를 표 형태로 보여 준다.: 맞는 설명입니다.\n- ④ [데이터] 탭의 가상 분석에서 실행한다.: 맞는 설명입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "가상 분석"
+    ]
+  },
+  {
+    "id": "computer-literacy-1-p025",
+    "certId": "computer-literacy-1",
+    "subjectId": "spreadsheet",
+    "chapterId": "data-analysis",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "피벗 테이블과 피벗 차트에 대한 설명으로 옳지 않은 것은?",
+    "choices": [
+      "피벗 테이블의 필드 위치를 바꾸면 피벗 차트도 함께 바뀐다.",
+      "피벗 테이블을 지우면 피벗 차트는 일반 차트로 바뀐다.",
+      "값 영역의 숫자 필드는 합계, 개수, 평균 등으로 요약할 수 있다.",
+      "피벗 테이블을 만들지 않고도 피벗 차트만 따로 만들 수 있다."
+    ],
+    "answer": 4,
+    "oneLineConcept": "피벗 차트는 피벗 테이블 없이 따로 만들 수 없다",
+    "explanation": "피벗 차트는 **피벗 테이블을 바탕으로** 그려집니다. 피벗 차트를 만들면 피벗 테이블도 함께 만들어집니다.\n\n**틀린 선지**\n- ① 피벗 테이블의 필드 위치를 바꾸면 피벗 차트도 함께 바뀐다.: 맞는 설명입니다.\n- ② 피벗 테이블을 지우면 피벗 차트는 일반 차트로 바뀐다.: 맞는 설명입니다.\n- ③ 값 영역의 숫자 필드는 합계, 개수, 평균 등으로 요약할 수 있다.: 맞는 설명입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "피벗 테이블"
+    ]
+  },
+  {
+    "id": "computer-literacy-1-p026",
+    "certId": "computer-literacy-1",
+    "subjectId": "spreadsheet",
+    "chapterId": "data-analysis",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "고급 필터의 조건 범위에 수식을 조건으로 쓸 때의 규칙으로 옳은 것은?",
+    "choices": [
+      "조건의 필드명은 원본 데이터의 필드명과 똑같이 써야 한다.",
+      "조건의 필드명은 원본 데이터의 필드명과 다르게 쓰거나 비워 둔다.",
+      "수식의 결과는 반드시 숫자여야 한다.",
+      "수식을 조건으로 쓸 때는 '그리고(AND)' 조건을 쓸 수 없다."
+    ],
+    "answer": 2,
+    "oneLineConcept": "고급 필터에 수식 조건을 쓸 때 필드명은 원본과 다르게 쓴다",
+    "explanation": "수식을 조건으로 쓸 때는 조건의 필드명을 **원본에 없는 이름으로 쓰거나 비워 두어야** 합니다. 수식의 결과는 TRUE 또는 FALSE 로 나옵니다.\n\n**틀린 선지**\n- ① 조건의 필드명은 원본 데이터의 필드명과 똑같이 써야 한다.: 값을 조건으로 쓸 때의 규칙입니다. 수식 조건은 반대입니다.\n- ③ 수식의 결과는 반드시 숫자여야 한다.: 결과는 TRUE/FALSE 여야 합니다.\n- ④ 수식을 조건으로 쓸 때는 '그리고(AND)' 조건을 쓸 수 없다.: 같은 행에 쓰면 AND 조건으로 쓸 수 있습니다.",
+    "frequency": 3,
+    "reviewStatus": "unverified",
+    "tags": [
+      "필터"
+    ]
+  }
+]

@@ -1,0 +1,94 @@
+[
+  {
+    "id": "information-processing-engineer-p018",
+    "certId": "information-processing-engineer",
+    "subjectId": "sw-development",
+    "chapterId": "testing",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "프로그램의 내부 구조(코드)는 보지 않고, 입력에 대한 출력이 요구사항대로 나오는지 확인하는 테스트는?",
+    "choices": [
+      "화이트박스 테스트",
+      "블랙박스 테스트",
+      "구조 테스트",
+      "코드 인스펙션"
+    ],
+    "answer": 2,
+    "oneLineConcept": "블랙박스 테스트: 내부를 보지 않고 입력·출력만 확인한다",
+    "explanation": "속이 보이지 않는 검은 상자처럼 **기능만** 확인하므로 블랙박스 테스트(기능 테스트)라고 합니다.\n\n**틀린 선지**\n- ① 화이트박스 테스트: 코드의 논리 경로를 따라가며 확인하는 테스트입니다.\n- ③ 구조 테스트: 화이트박스 테스트의 다른 이름입니다.\n- ④ 코드 인스펙션: 프로그램을 실행하지 않고 코드를 눈으로 검토하는 정적 테스트입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "테스트"
+    ]
+  },
+  {
+    "id": "information-processing-engineer-p019",
+    "certId": "information-processing-engineer",
+    "subjectId": "sw-development",
+    "chapterId": "testing",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "소프트웨어 테스트 단계를 진행 순서대로 옳게 나열한 것은?",
+    "choices": [
+      "단위 테스트 → 통합 테스트 → 시스템 테스트 → 인수 테스트",
+      "통합 테스트 → 단위 테스트 → 인수 테스트 → 시스템 테스트",
+      "단위 테스트 → 시스템 테스트 → 통합 테스트 → 인수 테스트",
+      "인수 테스트 → 시스템 테스트 → 통합 테스트 → 단위 테스트"
+    ],
+    "answer": 1,
+    "oneLineConcept": "테스트 단계: 단위 → 통합 → 시스템 → 인수",
+    "explanation": "작은 것에서 큰 것으로 넓혀 갑니다.\n\n1. 단위: 모듈 하나\n2. 통합: 모듈을 합친 것\n3. 시스템: 전체 시스템\n4. 인수: 사용자가 직접 확인\n\n**틀린 선지**\n- ② 통합 테스트 → 단위 테스트 → 인수 테스트 → 시스템 테스트: 단위 테스트가 먼저입니다.\n- ③ 단위 테스트 → 시스템 테스트 → 통합 테스트 → 인수 테스트: 통합 테스트가 시스템 테스트보다 먼저입니다.\n- ④ 인수 테스트 → 시스템 테스트 → 통합 테스트 → 단위 테스트: 순서가 거꾸로입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "테스트 단계"
+    ]
+  },
+  {
+    "id": "information-processing-engineer-p020",
+    "certId": "information-processing-engineer",
+    "subjectId": "sw-development",
+    "chapterId": "testing",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "하향식 통합 테스트에서, 아직 만들어지지 않은 하위 모듈을 대신하는 임시 모듈은?",
+    "choices": [
+      "드라이버(Driver)",
+      "테스트 오라클",
+      "테스트 하네스",
+      "스텁(Stub)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "하향식 통합은 스텁, 상향식 통합은 드라이버",
+    "explanation": "위에서 아래로 합쳐 가는 **하향식**에서는 아래쪽 모듈이 아직 없으므로, 그 자리를 대신할 가짜 모듈 **스텁**이 필요합니다.\n\n**틀린 선지**\n- ① 드라이버(Driver): 상향식 통합에서 아직 없는 상위 모듈을 대신하는 임시 모듈입니다.\n- ② 테스트 오라클: 테스트 결과가 맞는지 판단하는 기준입니다.\n- ③ 테스트 하네스: 테스트를 돕는 코드와 데이터를 통틀어 이르는 말입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "통합 테스트"
+    ]
+  },
+  {
+    "id": "information-processing-engineer-p021",
+    "certId": "information-processing-engineer",
+    "subjectId": "sw-development",
+    "chapterId": "testing",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "점수가 0~100 사이의 정수만 유효한 입력 조건일 때, 경계값 분석 기법으로 고른 테스트 값으로 가장 알맞은 것은?",
+    "choices": [
+      "-1, 0, 100, 101",
+      "10, 50, 90",
+      "25, 50, 75",
+      "0, 50, 100"
+    ],
+    "answer": 1,
+    "oneLineConcept": "경계값 분석: 경계와 그 바로 옆의 값을 시험한다",
+    "explanation": "오류는 **경계 근처**에서 잘 생깁니다. 그래서 경계(0, 100)와 경계를 막 벗어난 값(-1, 101)을 골라 시험합니다.\n\n**틀린 선지**\n- ② 10, 50, 90: 유효한 범위의 가운데 값들이라 경계를 시험하지 못합니다.\n- ③ 25, 50, 75: 유효한 범위의 가운데 값들입니다.\n- ④ 0, 50, 100: 경계는 들어 있지만 경계 바깥의 값이 빠져 있습니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "블랙박스 테스트"
+    ]
+  }
+]

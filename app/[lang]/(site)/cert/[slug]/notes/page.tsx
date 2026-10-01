@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { NotesView } from "@/components/notes/NotesView";
-import { getCertificationIn, getQuestions } from "@/lib/data";
+import { getCertificationIn } from "@/lib/data";
 import { getMessages, isLocale, localeCountry } from "@/lib/i18n";
 import { noindexMetadata } from "@/lib/seo";
 import { readyCertParams } from "@/lib/static-params";
@@ -27,9 +27,6 @@ export default async function CertNotesPage({ params }: Props) {
   if (!isLocale(lang)) notFound();
   const cert = await getCertificationIn(localeCountry(lang), slug);
   if (!cert?.ready) notFound();
-  const questions = await getQuestions(cert.id);
 
-  return (
-    <NotesView cert={{ id: cert.id, name: cert.name, subjects: cert.subjects }} questions={questions} />
-  );
+  return <NotesView cert={{ id: cert.id, name: cert.name, subjects: cert.subjects }} />;
 }

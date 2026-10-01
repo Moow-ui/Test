@@ -1,0 +1,122 @@
+[
+  {
+    "id": "computer-literacy-1-p040",
+    "certId": "computer-literacy-1",
+    "subjectId": "database",
+    "chapterId": "query",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "<사원> 테이블에서 '부서'가 \"영업\"인 사원의 이름을 검색하는 SQL 문으로 옳은 것은?",
+    "choices": [
+      "SELECT 이름 FROM 사원 ORDER BY 부서 = \"영업\";",
+      "SELECT 이름 WHERE 부서 = \"영업\" FROM 사원;",
+      "SELECT 사원 FROM 이름 WHERE 부서 = \"영업\";",
+      "SELECT 이름 FROM 사원 WHERE 부서 = \"영업\";"
+    ],
+    "answer": 4,
+    "oneLineConcept": "SELECT 필드 FROM 테이블 WHERE 조건",
+    "explanation": "검색 SQL 은 **SELECT(무엇을) → FROM(어디에서) → WHERE(어떤 조건으로)** 순서로 씁니다.\n\n**틀린 선지**\n- ① SELECT 이름 FROM 사원 ORDER BY 부서 = \"영업\";: ORDER BY 는 조건이 아니라 정렬에 쓰는 절입니다.\n- ② SELECT 이름 WHERE 부서 = \"영업\" FROM 사원;: WHERE 는 FROM 뒤에 와야 합니다.\n- ③ SELECT 사원 FROM 이름 WHERE 부서 = \"영업\";: 필드 이름과 테이블 이름의 자리가 바뀌었습니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "SQL",
+      "SELECT"
+    ]
+  },
+  {
+    "id": "computer-literacy-1-p041",
+    "certId": "computer-literacy-1",
+    "subjectId": "database",
+    "chapterId": "query",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "SQL 문 \"SELECT * FROM 사원 ORDER BY 급여 DESC;\" 에 대한 설명으로 옳은 것은?",
+    "choices": [
+      "급여가 낮은 사원부터 차례로 표시한다.",
+      "급여가 높은 사원부터 차례로 표시한다.",
+      "급여 필드만 표시한다.",
+      "급여가 같은 사원끼리 묶어서 표시한다."
+    ],
+    "answer": 2,
+    "oneLineConcept": "ORDER BY ~ DESC: 내림차순(큰 값부터) 정렬",
+    "explanation": "**DESC** 는 내림차순, 곧 큰 값에서 작은 값 순서입니다. ASC(오름차순)는 생략할 수 있지만 DESC 는 꼭 써야 합니다.\n\n**틀린 선지**\n- ① 급여가 낮은 사원부터 차례로 표시한다.: ASC(오름차순)일 때의 결과입니다.\n- ③ 급여 필드만 표시한다.: * 는 모든 필드를 표시하라는 뜻입니다.\n- ④ 급여가 같은 사원끼리 묶어서 표시한다.: 묶는 것은 GROUP BY 입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "SQL",
+      "정렬"
+    ]
+  },
+  {
+    "id": "computer-literacy-1-p042",
+    "certId": "computer-literacy-1",
+    "subjectId": "database",
+    "chapterId": "query",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "<사원> 테이블에서 '부서'별 급여의 평균을 구하되, 평균이 300 이상인 부서만 표시하려고 한다. 빈칸에 알맞은 것은?\n\nSELECT 부서, AVG(급여) FROM 사원 GROUP BY 부서 (      ) AVG(급여) >= 300;",
+    "choices": [
+      "HAVING",
+      "WHERE",
+      "ORDER BY",
+      "LIKE"
+    ],
+    "answer": 1,
+    "oneLineConcept": "그룹에 대한 조건은 HAVING, 레코드에 대한 조건은 WHERE",
+    "explanation": "GROUP BY 로 묶은 **그룹에 조건**을 걸 때는 HAVING 을 씁니다. WHERE 는 묶기 전의 레코드 하나하나에 거는 조건입니다.\n\n**틀린 선지**\n- ② WHERE: 그룹 함수(AVG 등)를 쓴 조건에는 쓸 수 없습니다.\n- ③ ORDER BY: 정렬할 때 쓰는 절입니다.\n- ④ LIKE: 글자의 일부가 같은 것을 찾을 때 쓰는 연산자입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "SQL",
+      "GROUP BY"
+    ]
+  },
+  {
+    "id": "computer-literacy-1-p043",
+    "certId": "computer-literacy-1",
+    "subjectId": "database",
+    "chapterId": "query",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "<사원> 테이블에서 사번이 10 인 사원의 급여를 500 으로 고치는 SQL 문으로 옳은 것은?",
+    "choices": [
+      "ALTER 사원 SET 급여 = 500 WHERE 사번 = 10;",
+      "UPDATE 급여 = 500 FROM 사원 WHERE 사번 = 10;",
+      "INSERT INTO 사원 SET 급여 = 500 WHERE 사번 = 10;",
+      "UPDATE 사원 SET 급여 = 500 WHERE 사번 = 10;"
+    ],
+    "answer": 4,
+    "oneLineConcept": "UPDATE 테이블 SET 필드 = 값 WHERE 조건",
+    "explanation": "값을 고칠 때는 **UPDATE ~ SET ~ WHERE** 형식을 씁니다. WHERE 를 빼면 모든 레코드의 값이 바뀌므로 조심해야 합니다.\n\n**틀린 선지**\n- ① ALTER 사원 SET 급여 = 500 WHERE 사번 = 10;: ALTER 는 테이블의 구조(필드)를 바꿀 때 씁니다.\n- ② UPDATE 급여 = 500 FROM 사원 WHERE 사번 = 10;: UPDATE 뒤에는 테이블 이름이 오고 FROM 은 쓰지 않습니다.\n- ③ INSERT INTO 사원 SET 급여 = 500 WHERE 사번 = 10;: INSERT 는 새 레코드를 추가할 때 씁니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "SQL",
+      "UPDATE"
+    ]
+  },
+  {
+    "id": "computer-literacy-1-p044",
+    "certId": "computer-literacy-1",
+    "subjectId": "database",
+    "chapterId": "query",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "액세스 쿼리의 조건에 Like \"김*\" 을 지정했을 때 검색되는 값은?",
+    "choices": [
+      "'김'이 들어 있는 모든 값",
+      "'김'으로 끝나는 모든 값",
+      "'김'으로 시작하는 모든 값",
+      "'김'으로 시작하는 두 글자 값"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Like \"김*\": '김'으로 시작하는 값 (* 는 여러 글자)",
+    "explanation": "액세스에서 별표(*)는 글자 수에 상관없이 아무 글자나 대신합니다. \"김*\" 은 '김' 뒤에 무엇이 오든 찾으므로 '김'으로 시작하는 값이 모두 나옵니다.\n\n**틀린 선지**\n- ① '김'이 들어 있는 모든 값: Like \"*김*\" 일 때입니다.\n- ② '김'으로 끝나는 모든 값: Like \"*김\" 일 때입니다.\n- ④ '김'으로 시작하는 두 글자 값: Like \"김?\" 일 때입니다. ? 는 한 글자를 대신합니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "SQL",
+      "LIKE"
+    ]
+  }
+]

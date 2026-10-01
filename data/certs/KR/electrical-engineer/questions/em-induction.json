@@ -1,0 +1,73 @@
+[
+  {
+    "id": "electrical-engineer-p010",
+    "certId": "electrical-engineer",
+    "subjectId": "electromagnetics",
+    "chapterId": "em-induction",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "권수 100회인 코일을 지나는 자속이 0.5초 동안 0.2Wb 에서 0.7Wb 로 변했다. 코일에 유도되는 기전력의 크기는 몇 V 인가?",
+    "choices": [
+      "10V",
+      "50V",
+      "100V",
+      "140V"
+    ],
+    "answer": 3,
+    "oneLineConcept": "패러데이 법칙: e = N × ΔΦ ÷ Δt",
+    "explanation": "1. 자속의 변화 ΔΦ = 0.7 − 0.2 = 0.5Wb\n2. e = N × ΔΦ ÷ Δt = 100 × 0.5 ÷ 0.5\n3. e = 100V\n\n**틀린 선지**\n- ① 10V: 계산이 틀린 값입니다.\n- ② 50V: 시간으로 나누지 않은 값(100 × 0.5)입니다.\n- ④ 140V: 변화량이 아니라 나중 자속 0.7Wb 로 계산한 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "전자유도",
+      "계산"
+    ]
+  },
+  {
+    "id": "electrical-engineer-p011",
+    "certId": "electrical-engineer",
+    "subjectId": "electromagnetics",
+    "chapterId": "em-induction",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "자기 인덕턴스가 각각 4mH, 9mH 인 두 코일의 결합 계수가 0.5 일 때 상호 인덕턴스는 몇 mH 인가?",
+    "choices": [
+      "18mH",
+      "6mH",
+      "6.5mH",
+      "3mH"
+    ],
+    "answer": 4,
+    "oneLineConcept": "상호 인덕턴스 M = k × √(L1 × L2)",
+    "explanation": "1. √(L1 × L2) = √(4 × 9) = √36 = 6\n2. M = k × 6 = 0.5 × 6\n3. M = 3mH\n\n**틀린 선지**\n- ① 18mH: 제곱근을 구하지 않은 값(0.5 × 36)입니다.\n- ② 6mH: 결합 계수가 1 일 때의 값입니다.\n- ③ 6.5mH: 두 인덕턴스의 평균입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "인덕턴스",
+      "계산"
+    ]
+  },
+  {
+    "id": "electrical-engineer-p012",
+    "certId": "electrical-engineer",
+    "subjectId": "electromagnetics",
+    "chapterId": "em-induction",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "전자파에 대한 설명으로 옳지 않은 것은?",
+    "choices": [
+      "전계와 자계는 서로 수직이고, 둘 다 진행 방향과도 수직이다.",
+      "매질의 유전율과 투자율이 클수록 전자파의 속도는 빨라진다.",
+      "포인팅 벡터는 단위 넓이를 지나는 전자파의 전력을 나타낸다.",
+      "진공에서 전자파의 속도는 빛의 속도와 같다."
+    ],
+    "answer": 2,
+    "oneLineConcept": "전자파의 속도 v = 1 ÷ √(ε × μ): 유전율·투자율이 클수록 느려진다",
+    "explanation": "속도 공식의 분모에 유전율(ε)과 투자율(μ)이 있으므로, 이 값이 **클수록 느려집니다.** 물이나 유리 속에서 빛이 느려지는 것과 같은 이치입니다.\n\n**틀린 선지**\n- ① 전계와 자계는 서로 수직이고, 둘 다 진행 방향과도 수직이다.: 맞는 설명입니다. 전자파는 횡파입니다.\n- ③ 포인팅 벡터는 단위 넓이를 지나는 전자파의 전력을 나타낸다.: 맞는 설명입니다. P = E × H [W/m²]\n- ④ 진공에서 전자파의 속도는 빛의 속도와 같다.: 맞는 설명입니다. 약 3 × 10⁸ m/s 입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "전자파"
+    ]
+  }
+]

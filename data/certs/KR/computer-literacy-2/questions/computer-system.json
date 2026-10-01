@@ -1,0 +1,140 @@
+[
+  {
+    "id": "computer-literacy-2-p007",
+    "certId": "computer-literacy-2",
+    "subjectId": "computer-general",
+    "chapterId": "computer-system",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "다음 중 전원이 꺼지면 기억된 내용이 모두 사라지는 휘발성 기억장치는?",
+    "choices": [
+      "ROM",
+      "하드디스크(HDD)",
+      "RAM",
+      "SSD"
+    ],
+    "answer": 3,
+    "oneLineConcept": "RAM은 전원이 꺼지면 내용이 사라진다 (휘발성)",
+    "explanation": "**RAM** 은 지금 실행 중인 프로그램과 자료를 잠시 올려 두는 주기억장치로, 전원이 꺼지면 내용이 사라집니다. 이런 성질을 휘발성이라고 합니다.\n\n**틀린 선지**\n- ① ROM: 전원이 꺼져도 내용이 남는 읽기 전용 기억장치입니다.\n- ② 하드디스크(HDD): 전원이 꺼져도 내용이 남는 보조기억장치입니다.\n- ④ SSD: 반도체를 쓰는 보조기억장치로, 전원이 꺼져도 내용이 남습니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "기억장치"
+    ]
+  },
+  {
+    "id": "computer-literacy-2-p008",
+    "certId": "computer-literacy-2",
+    "subjectId": "computer-general",
+    "chapterId": "computer-system",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "다음 중 자료의 단위를 작은 것부터 큰 순서로 옳게 나열한 것은?",
+    "choices": [
+      "비트 → 니블 → 바이트 → 워드",
+      "니블 → 비트 → 바이트 → 워드",
+      "비트 → 바이트 → 니블 → 워드",
+      "비트 → 니블 → 워드 → 바이트"
+    ],
+    "answer": 1,
+    "oneLineConcept": "비트 → 니블(4비트) → 바이트(8비트) → 워드",
+    "explanation": "1. 비트(bit): 0 또는 1, 가장 작은 단위\n2. 니블(nibble): 4비트\n3. 바이트(byte): 8비트, 글자를 나타내는 기본 단위\n4. 워드(word): 컴퓨터가 한 번에 처리하는 단위\n\n**틀린 선지**\n- ② 니블 → 비트 → 바이트 → 워드: 가장 작은 단위는 비트입니다.\n- ③ 비트 → 바이트 → 니블 → 워드: 니블(4비트)이 바이트(8비트)보다 작습니다.\n- ④ 비트 → 니블 → 워드 → 바이트: 워드가 바이트보다 큽니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "자료 단위"
+    ]
+  },
+  {
+    "id": "computer-literacy-2-p009",
+    "certId": "computer-literacy-2",
+    "subjectId": "computer-general",
+    "chapterId": "computer-system",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "CPU와 주기억장치 사이에 두어 둘의 속도 차이를 줄이는 고속 기억장치는?",
+    "choices": [
+      "캐시 메모리",
+      "가상 메모리",
+      "플래시 메모리",
+      "연관 메모리"
+    ],
+    "answer": 1,
+    "oneLineConcept": "캐시 메모리: CPU와 주기억장치의 속도 차이를 줄인다",
+    "explanation": "**캐시 메모리**는 자주 쓰는 자료를 미리 담아 두어 CPU 가 느린 주기억장치를 기다리지 않게 해 줍니다.\n\n**틀린 선지**\n- ② 가상 메모리: 보조기억장치의 일부를 주기억장치처럼 써서 용량을 늘리는 방법입니다.\n- ③ 플래시 메모리: USB 메모리·SSD 에 쓰이는 비휘발성 메모리입니다.\n- ④ 연관 메모리: 주소가 아니라 내용으로 자료를 찾는 메모리입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "기억장치"
+    ]
+  },
+  {
+    "id": "computer-literacy-2-p010",
+    "certId": "computer-literacy-2",
+    "subjectId": "computer-general",
+    "chapterId": "computer-system",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "다음 중 처리 속도가 가장 빠른 단위는?",
+    "choices": [
+      "ms (밀리초)",
+      "μs (마이크로초)",
+      "ns (나노초)",
+      "ps (피코초)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "처리 속도: ms → μs → ns → ps 순으로 빨라진다",
+    "explanation": "시간 단위는 아래로 갈수록 1000분의 1씩 짧아집니다.\n\n1. ms = 1000분의 1초\n2. μs = 100만분의 1초\n3. ns = 10억분의 1초\n4. ps = 1조분의 1초\n\n시간이 짧을수록 빠른 것이므로 ps 가 가장 빠릅니다.\n\n**틀린 선지**\n- ① ms (밀리초): 넷 중 가장 느립니다.\n- ② μs (마이크로초): ms 보다 빠르지만 ns 보다 느립니다.\n- ③ ns (나노초): ps 보다 1000배 느립니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "단위"
+    ]
+  },
+  {
+    "id": "computer-literacy-2-p011",
+    "certId": "computer-literacy-2",
+    "subjectId": "computer-general",
+    "chapterId": "computer-system",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "일정 기간이나 일부 기능만 무료로 써 본 뒤, 계속 쓰려면 돈을 내야 하는 소프트웨어는?",
+    "choices": [
+      "프리웨어",
+      "셰어웨어",
+      "오픈 소스 소프트웨어",
+      "번들 프로그램"
+    ],
+    "answer": 2,
+    "oneLineConcept": "셰어웨어: 기간·기능 제한이 있는 맛보기 소프트웨어",
+    "explanation": "**셰어웨어**는 써 보고 마음에 들면 사도록 기간이나 기능을 제한해 나눠 주는 소프트웨어입니다.\n\n**틀린 선지**\n- ① 프리웨어: 처음부터 끝까지 무료로 쓸 수 있습니다.\n- ③ 오픈 소스 소프트웨어: 소스 코드까지 공개되어 누구나 고쳐 쓸 수 있습니다.\n- ④ 번들 프로그램: 하드웨어나 다른 소프트웨어를 살 때 끼워 주는 프로그램입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "소프트웨어"
+    ]
+  },
+  {
+    "id": "computer-literacy-2-p012",
+    "certId": "computer-literacy-2",
+    "subjectId": "computer-general",
+    "chapterId": "computer-system",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "다음 중 운영체제의 성능을 평가하는 기준으로 옳지 않은 것은?",
+    "choices": [
+      "처리 능력(일정 시간에 처리하는 일의 양)은 클수록 좋다.",
+      "신뢰도(문제를 정확하게 해결하는 정도)는 높을수록 좋다.",
+      "응답 시간(결과가 나올 때까지 걸리는 시간)은 길수록 좋다.",
+      "사용 가능도(필요할 때 바로 쓸 수 있는 정도)는 높을수록 좋다."
+    ],
+    "answer": 3,
+    "oneLineConcept": "응답 시간은 짧을수록 좋다",
+    "explanation": "운영체제 성능의 네 가지 기준은 처리 능력, 응답 시간, 신뢰도, 사용 가능도입니다. 이 가운데 **응답 시간만 짧을수록** 좋고 나머지는 높을수록 좋습니다.\n\n**틀린 선지**\n- ① 처리 능력(일정 시간에 처리하는 일의 양)은 클수록 좋다.: 맞는 설명입니다.\n- ② 신뢰도(문제를 정확하게 해결하는 정도)는 높을수록 좋다.: 맞는 설명입니다.\n- ④ 사용 가능도(필요할 때 바로 쓸 수 있는 정도)는 높을수록 좋다.: 맞는 설명입니다.",
+    "frequency": 3,
+    "reviewStatus": "unverified",
+    "tags": [
+      "운영체제"
+    ]
+  }
+]

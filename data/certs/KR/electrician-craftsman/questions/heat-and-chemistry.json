@@ -1,0 +1,27 @@
+[
+  {
+    "id": "electrician-craftsman-p020",
+    "certId": "electrician-craftsman",
+    "subjectId": "electric-theory",
+    "chapterId": "heat-and-chemistry",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "저항 10Ω인 전열선에 5A의 전류를 10분 동안 흘렸을 때 발생하는 열량은 약 몇 kcal인가?",
+    "choices": [
+      "3.6kcal",
+      "36kcal",
+      "150kcal",
+      "360kcal"
+    ],
+    "answer": 2,
+    "oneLineConcept": "줄의 법칙: 열량 H = 0.24 × I² × R × t [cal]",
+    "explanation": "**줄의 법칙**은 저항에 전류가 흐를 때 나는 열의 양을 구하는 법칙입니다. 시간은 반드시 **초**로 바꿔서 넣어야 합니다.\n\n1. 시간을 초로: 10분 = 10 × 60 = 600초\n2. 에너지[J]: I² × R × t = 5 × 5 × 10 × 600\n3. 5 × 5 = 25, 25 × 10 = 250, 250 × 600 = 150000J\n4. 칼로리로 바꾸기: 1J 은 약 0.24cal 이므로 0.24 × 150000 = 36000cal\n5. 답: 36000cal = 36kcal\n\n**틀린 선지**\n- ① 3.6kcal: 자릿수를 하나 잘못 옮긴 값입니다.\n- ③ 150kcal: 0.24를 곱하지 않은 값입니다. 150은 kJ(킬로줄) 단위의 값입니다.\n- ④ 360kcal: 자릿수를 하나 잘못 옮긴 값입니다.",
+    "frequency": 3,
+    "reviewStatus": "unverified",
+    "tags": [
+      "줄의 법칙",
+      "열량",
+      "계산"
+    ]
+  }
+]

@@ -1,0 +1,94 @@
+[
+  {
+    "id": "computer-literacy-1-p010",
+    "certId": "computer-literacy-1",
+    "subjectId": "computer-general",
+    "chapterId": "internet",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "네트워크 장비 중 서로 다른 네트워크를 연결하고, 데이터를 보낼 가장 알맞은 경로를 선택하는 장비는?",
+    "choices": [
+      "리피터",
+      "허브",
+      "라우터",
+      "브리지"
+    ],
+    "answer": 3,
+    "oneLineConcept": "라우터: 가장 알맞은 경로를 골라 데이터를 보낸다",
+    "explanation": "**라우터**는 길 찾기(라우팅)를 하는 장비입니다. 목적지까지 가는 여러 길 가운데 가장 좋은 길을 고릅니다.\n\n**틀린 선지**\n- ① 리피터: 약해진 신호를 다시 키워 멀리 보내는 장비입니다.\n- ② 허브: 여러 대의 컴퓨터를 한 네트워크로 묶는 장비입니다.\n- ④ 브리지: 두 개의 근거리 통신망(LAN)을 이어 주는 장비입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "네트워크 장비"
+    ]
+  },
+  {
+    "id": "computer-literacy-1-p011",
+    "certId": "computer-literacy-1",
+    "subjectId": "computer-general",
+    "chapterId": "internet",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "TCP/IP 프로토콜에서 TCP 에 대한 설명으로 옳은 것은?",
+    "choices": [
+      "데이터의 오류와 순서를 검사하여 믿을 수 있는 전송을 한다.",
+      "데이터를 보낼 경로를 정하고 주소를 지정한다.",
+      "연결을 맺지 않고 데이터를 빠르게 보낸다.",
+      "도메인 이름을 IP 주소로 바꾼다."
+    ],
+    "answer": 1,
+    "oneLineConcept": "TCP는 오류·순서를 검사하는 믿을 수 있는 전송",
+    "explanation": "**TCP** 는 상대와 먼저 연결을 맺고, 보낸 자료가 빠짐없이 순서대로 도착했는지 확인합니다.\n\n**틀린 선지**\n- ② 데이터를 보낼 경로를 정하고 주소를 지정한다.: IP 의 설명입니다.\n- ③ 연결을 맺지 않고 데이터를 빠르게 보낸다.: UDP 의 설명입니다.\n- ④ 도메인 이름을 IP 주소로 바꾼다.: DNS 의 설명입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "프로토콜"
+    ]
+  },
+  {
+    "id": "computer-literacy-1-p012",
+    "certId": "computer-literacy-1",
+    "subjectId": "computer-general",
+    "chapterId": "internet",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "멀티미디어 데이터의 압축 표준에 대한 설명으로 옳지 않은 것은?",
+    "choices": [
+      "JPEG 는 정지 영상(사진) 압축 표준이다.",
+      "MPEG 는 동영상 압축 표준이다.",
+      "MP3 는 소리(오디오) 압축 방식이다.",
+      "GIF 는 동영상을 손실 없이 압축하는 표준으로 1,600만 가지 색을 표현한다."
+    ],
+    "answer": 4,
+    "oneLineConcept": "GIF는 256색까지 표현하는 그림 형식이다",
+    "explanation": "**GIF** 는 그림 파일 형식으로 **256가지 색**까지만 표현합니다. 대신 간단한 움직임(애니메이션)과 투명한 배경을 지원합니다.\n\n**틀린 선지**\n- ① JPEG 는 정지 영상(사진) 압축 표준이다.: 맞는 설명입니다.\n- ② MPEG 는 동영상 압축 표준이다.: 맞는 설명입니다.\n- ③ MP3 는 소리(오디오) 압축 방식이다.: 맞는 설명입니다.",
+    "frequency": 3,
+    "reviewStatus": "unverified",
+    "tags": [
+      "멀티미디어"
+    ]
+  },
+  {
+    "id": "computer-literacy-1-p013",
+    "certId": "computer-literacy-1",
+    "subjectId": "computer-general",
+    "chapterId": "internet",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "IP 주소에서 네트워크 주소와 호스트 주소를 구분하는 데 쓰는 32비트 값은?",
+    "choices": [
+      "게이트웨이",
+      "서브넷 마스크",
+      "DNS 서버 주소",
+      "MAC 주소"
+    ],
+    "answer": 2,
+    "oneLineConcept": "서브넷 마스크: 네트워크 부분과 호스트 부분을 구분",
+    "explanation": "**서브넷 마스크**는 IP 주소의 어디까지가 네트워크(동네) 번호이고 어디부터가 호스트(집) 번호인지 알려 줍니다. (예: 255.255.255.0)\n\n**틀린 선지**\n- ① 게이트웨이: 다른 네트워크로 나가는 출입구 역할을 하는 장치의 주소입니다.\n- ③ DNS 서버 주소: 도메인 이름을 IP 주소로 바꿔 주는 서버의 주소입니다.\n- ④ MAC 주소: 랜카드마다 붙어 있는 고유한 하드웨어 주소(48비트)입니다.",
+    "frequency": 3,
+    "reviewStatus": "unverified",
+    "tags": [
+      "IP 주소"
+    ]
+  }
+]

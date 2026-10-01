@@ -1,0 +1,168 @@
+[
+  {
+    "id": "computer-literacy-2-p025",
+    "certId": "computer-literacy-2",
+    "subjectId": "spreadsheet",
+    "chapterId": "formulas",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "수식을 다른 셀에 복사해도 참조하는 셀 주소가 바뀌지 않게 하려면 어떻게 써야 하는가? (A1 셀 기준)",
+    "choices": [
+      "A1",
+      "$A$1",
+      "A$1",
+      "$A1"
+    ],
+    "answer": 2,
+    "oneLineConcept": "절대 참조($A$1)는 복사해도 주소가 바뀌지 않는다",
+    "explanation": "행과 열 앞에 모두 **$** 를 붙인 $A$1 을 절대 참조라고 합니다. $ 는 '고정'이라는 뜻입니다. 셀 주소를 쓰고 F4 키를 누르면 자동으로 붙습니다.\n\n**틀린 선지**\n- ① A1: 상대 참조입니다. 복사하면 행과 열이 모두 바뀝니다.\n- ③ A$1: 행(1)만 고정한 혼합 참조입니다. 옆으로 복사하면 열이 바뀝니다.\n- ④ $A1: 열(A)만 고정한 혼합 참조입니다. 아래로 복사하면 행이 바뀝니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "셀 참조"
+    ]
+  },
+  {
+    "id": "computer-literacy-2-p026",
+    "certId": "computer-literacy-2",
+    "subjectId": "spreadsheet",
+    "chapterId": "formulas",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A1:A5 범위에 10, 20, \"합격\", (빈 셀), 30 이 차례로 입력되어 있다. =COUNT(A1:A5) 의 결과는?",
+    "choices": [
+      "3",
+      "2",
+      "4",
+      "5"
+    ],
+    "answer": 1,
+    "oneLineConcept": "COUNT는 숫자가 든 셀만 센다",
+    "explanation": "**COUNT** 는 숫자가 들어 있는 셀만 셉니다.\n\n1. 숫자: 10, 20, 30 → 3개\n2. 문자 \"합격\"과 빈 셀은 세지 않습니다.\n3. 결과: 3\n\n**틀린 선지**\n- ② 2: 숫자는 3개입니다.\n- ③ 4: 비어 있지 않은 셀을 세는 COUNTA 의 결과입니다.\n- ④ 5: 범위의 전체 칸 수입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "함수",
+      "COUNT"
+    ]
+  },
+  {
+    "id": "computer-literacy-2-p027",
+    "certId": "computer-literacy-2",
+    "subjectId": "spreadsheet",
+    "chapterId": "formulas",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "=ROUND(3456.789, -2) 의 결과는?",
+    "choices": [
+      "3456.79",
+      "3460",
+      "3500",
+      "3400"
+    ],
+    "answer": 3,
+    "oneLineConcept": "ROUND의 자릿수가 -2이면 십의 자리에서 반올림해 백 단위로 만든다",
+    "explanation": "ROUND(숫자, 자릿수)에서 자릿수가 음수이면 소수점 **왼쪽**으로 갑니다.\n\n1. -1 은 십 단위, -2 는 백 단위까지 남깁니다.\n2. 3456.789 를 백 단위로 만들려면 십의 자리(5)에서 반올림합니다.\n3. 5 이상이므로 올림 → **3500**\n\n**틀린 선지**\n- ① 3456.79: 자릿수가 2일 때의 결과입니다.\n- ② 3460: 자릿수가 -1일 때의 결과입니다.\n- ④ 3400: 내림(ROUNDDOWN)했을 때의 결과입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "함수",
+      "ROUND"
+    ]
+  },
+  {
+    "id": "computer-literacy-2-p028",
+    "certId": "computer-literacy-2",
+    "subjectId": "spreadsheet",
+    "chapterId": "formulas",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "=MID(\"KOREA2026\", 3, 4) 의 결과는?",
+    "choices": [
+      "KOR",
+      "2026",
+      "EA20",
+      "REA2"
+    ],
+    "answer": 4,
+    "oneLineConcept": "MID(문자열, 시작 위치, 글자 수)",
+    "explanation": "**MID** 는 가운데에서 글자를 잘라 냅니다.\n\n1. 3번째 글자부터 시작: K(1) O(2) **R(3)**\n2. 4글자를 가져옴: R, E, A, 2\n3. 결과: REA2\n\n**틀린 선지**\n- ① KOR: =LEFT(\"KOREA2026\", 3) 의 결과입니다.\n- ② 2026: =RIGHT(\"KOREA2026\", 4) 의 결과입니다.\n- ③ EA20: 4번째 글자부터 4글자를 가져온 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "함수",
+      "문자"
+    ]
+  },
+  {
+    "id": "computer-literacy-2-p029",
+    "certId": "computer-literacy-2",
+    "subjectId": "spreadsheet",
+    "chapterId": "formulas",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A1 셀에 75 가 입력되어 있다. =IF(A1>=80, \"우수\", IF(A1>=60, \"보통\", \"미달\")) 의 결과는?",
+    "choices": [
+      "우수",
+      "보통",
+      "미달",
+      "#VALUE!"
+    ],
+    "answer": 2,
+    "oneLineConcept": "IF 안의 IF는 앞 조건이 거짓일 때 다음 조건을 본다",
+    "explanation": "1. 첫 조건: 75 >= 80 → 거짓이므로 뒤쪽 IF 로 넘어갑니다.\n2. 둘째 조건: 75 >= 60 → 참\n3. 결과: \"보통\"\n\n**틀린 선지**\n- ① 우수: 80 이상일 때의 결과입니다.\n- ③ 미달: 60 미만일 때의 결과입니다.\n- ④ #VALUE!: 수식에 잘못이 없으므로 오류가 나지 않습니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "함수",
+      "IF"
+    ]
+  },
+  {
+    "id": "computer-literacy-2-p030",
+    "certId": "computer-literacy-2",
+    "subjectId": "spreadsheet",
+    "chapterId": "formulas",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "VLOOKUP 함수에서 찾는 값이 표의 첫 열에 없을 때 나타나는 오류 값은? (정확히 일치하는 값을 찾는 경우)",
+    "choices": [
+      "#N/A",
+      "#DIV/0!",
+      "#NAME?",
+      "#REF!"
+    ],
+    "answer": 1,
+    "oneLineConcept": "#N/A: 찾는 값이 없을 때 나오는 오류",
+    "explanation": "**#N/A** 는 'Not Available(값이 없음)'의 줄임말입니다. 찾기 함수가 값을 찾지 못했을 때 나옵니다.\n\n**틀린 선지**\n- ② #DIV/0!: 숫자를 0 으로 나누었을 때 나옵니다.\n- ③ #NAME?: 함수 이름을 틀리게 썼을 때 나옵니다.\n- ④ #REF!: 참조하던 셀이 지워졌을 때 나옵니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "오류 값"
+    ]
+  },
+  {
+    "id": "computer-literacy-2-p031",
+    "certId": "computer-literacy-2",
+    "subjectId": "spreadsheet",
+    "chapterId": "formulas",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A1:A4 에 \"사과\", \"배\", \"사과\", \"감\", B1:B4 에 100, 200, 300, 400 이 입력되어 있다. =SUMIF(A1:A4, \"사과\", B1:B4) 의 결과는?",
+    "choices": [
+      "100",
+      "300",
+      "400",
+      "1000"
+    ],
+    "answer": 3,
+    "oneLineConcept": "SUMIF(조건 범위, 조건, 합계 범위)",
+    "explanation": "**SUMIF** 는 조건에 맞는 행의 값만 더합니다.\n\n1. A 열에서 \"사과\"인 행: 1행, 3행\n2. 그 행의 B 열 값: 100, 300\n3. 합계: 100 + 300 = 400\n\n**틀린 선지**\n- ① 100: 첫 번째 사과의 값만 본 것입니다.\n- ② 300: 두 번째 사과의 값만 본 것입니다.\n- ④ 1000: 조건 없이 모두 더한 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "함수",
+      "SUMIF"
+    ]
+  }
+]

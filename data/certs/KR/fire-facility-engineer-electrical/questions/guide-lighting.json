@@ -1,0 +1,73 @@
+[
+  {
+    "id": "fire-facility-engineer-electrical-p053",
+    "certId": "fire-facility-engineer-electrical",
+    "subjectId": "fire-electric-facility",
+    "chapterId": "guide-lighting",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "피난구 유도등의 설치 높이로 옳은 것은?",
+    "choices": [
+      "바닥으로부터 0.5m 이하",
+      "바닥으로부터 1m 이하",
+      "바닥으로부터 1.5m 이상",
+      "천장 면에 붙여서"
+    ],
+    "answer": 3,
+    "oneLineConcept": "피난구 유도등: 1.5m 이상 / 복도·계단 통로 유도등: 1m 이하",
+    "explanation": "**피난구 유도등**은 멀리서도 출입구가 보이도록 바닥에서 **1.5m 이상** 높이에 답니다. 반대로 복도 통로 유도등은 연기 아래로 기어서 피난할 때 보이도록 1m 이하에 답니다.\n\n**틀린 선지**\n- ① 바닥으로부터 0.5m 이하: 기준과 다릅니다.\n- ② 바닥으로부터 1m 이하: 복도 통로 유도등·계단 통로 유도등의 기준입니다.\n- ④ 천장 면에 붙여서: 기준과 다릅니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "유도등"
+    ]
+  },
+  {
+    "id": "fire-facility-engineer-electrical-p054",
+    "certId": "fire-facility-engineer-electrical",
+    "subjectId": "fire-electric-facility",
+    "chapterId": "guide-lighting",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "유도등의 비상 전원을 60분 이상 작동할 수 있는 용량으로 해야 하는 곳이 아닌 것은?",
+    "choices": [
+      "지하층을 제외한 층수가 11층 이상인 층",
+      "지하층 또는 무창층으로서 용도가 지하상가인 곳",
+      "지하층 또는 무창층으로서 용도가 지하 역사인 곳",
+      "지상 5층 건물의 3층 사무실"
+    ],
+    "answer": 4,
+    "oneLineConcept": "유도등 비상 전원: 기본 20분, 11층 이상과 지하·무창층의 특정 용도는 60분",
+    "explanation": "유도등의 비상 전원은 기본 **20분 이상**입니다. 다만 **11층 이상의 층**과, 지하층·무창층으로서 도매 시장·소매 시장·여객 자동차 터미널·지하 역사·지하상가인 곳은 피난에 시간이 오래 걸리므로 60분 이상입니다.\n\n**틀린 선지**\n- ① 지하층을 제외한 층수가 11층 이상인 층: 60분 이상이어야 하는 곳입니다.\n- ② 지하층 또는 무창층으로서 용도가 지하상가인 곳: 60분 이상이어야 하는 곳입니다.\n- ③ 지하층 또는 무창층으로서 용도가 지하 역사인 곳: 60분 이상이어야 하는 곳입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "유도등",
+      "비상 전원"
+    ]
+  },
+  {
+    "id": "fire-facility-engineer-electrical-p055",
+    "certId": "fire-facility-engineer-electrical",
+    "subjectId": "fire-electric-facility",
+    "chapterId": "guide-lighting",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "객석 통로의 직선 부분 길이가 30m 인 공연장에 설치해야 하는 객석 유도등의 최소 개수는?",
+    "choices": [
+      "7개",
+      "6개",
+      "8개",
+      "9개"
+    ],
+    "answer": 1,
+    "oneLineConcept": "객석 유도등 수 = 통로 직선 길이 ÷ 4 − 1 (소수점은 올림)",
+    "explanation": "1. 공식: 개수 = 길이 ÷ 4 − 1\n2. 숫자 대입: 30 ÷ 4 − 1 = 7.5 − 1 = 6.5\n3. 소수점 아래는 올려서 7개\n\n**틀린 선지**\n- ② 6개: 소수점 아래를 버린 값입니다.\n- ③ 8개: 1 을 빼지 않고 올림한 값입니다.\n- ④ 9개: 계산이 틀린 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "객석 유도등",
+      "계산"
+    ]
+  }
+]

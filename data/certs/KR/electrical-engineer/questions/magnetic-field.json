@@ -1,0 +1,96 @@
+[
+  {
+    "id": "electrical-engineer-p006",
+    "certId": "electrical-engineer",
+    "subjectId": "electromagnetics",
+    "chapterId": "magnetic-field",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "무한히 긴 직선 도체에 31.4A 의 전류가 흐를 때, 도체에서 0.5m 떨어진 점의 자계의 세기는 약 몇 AT/m 인가? (π = 3.14)",
+    "choices": [
+      "5",
+      "10",
+      "20",
+      "62.8"
+    ],
+    "answer": 2,
+    "oneLineConcept": "무한 직선 도체의 자계 H = I ÷ (2πr)",
+    "explanation": "1. 공식: H = I ÷ (2 × π × r)\n2. 숫자 대입: H = 31.4 ÷ (2 × 3.14 × 0.5)\n3. H = 31.4 ÷ 3.14 = 10 AT/m\n\n**틀린 선지**\n- ① 5: 2πr 대신 4πr 로 계산한 값입니다.\n- ③ 20: 2 를 빼먹고 πr 로 나눈 값입니다.\n- ④ 62.8: 전류를 거리로만 나눈 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "자계",
+      "계산"
+    ]
+  },
+  {
+    "id": "electrical-engineer-p007",
+    "certId": "electrical-engineer",
+    "subjectId": "electromagnetics",
+    "chapterId": "magnetic-field",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "평행한 두 직선 도체에 같은 방향으로 전류가 흐를 때, 두 도체 사이에 작용하는 힘은?",
+    "choices": [
+      "서로 끌어당기는 힘(흡인력)",
+      "서로 밀어내는 힘(반발력)",
+      "힘이 작용하지 않는다",
+      "도체를 회전시키는 힘"
+    ],
+    "answer": 1,
+    "oneLineConcept": "같은 방향 전류는 흡인력, 반대 방향 전류는 반발력",
+    "explanation": "전류의 방향이 **같으면 끌어당기고, 다르면 밀어냅니다.** 전하(같은 것끼리 밀어냄)와는 반대이므로 헷갈리지 않게 주의합니다.\n\n**틀린 선지**\n- ② 서로 밀어내는 힘(반발력): 전류 방향이 서로 반대일 때입니다.\n- ③ 힘이 작용하지 않는다: 전류가 흐르면 자계가 생겨 힘이 작용합니다.\n- ④ 도체를 회전시키는 힘: 평행 도체에는 회전력이 아니라 끌거나 미는 힘이 작용합니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "전자력"
+    ]
+  },
+  {
+    "id": "electrical-engineer-p008",
+    "certId": "electrical-engineer",
+    "subjectId": "electromagnetics",
+    "chapterId": "magnetic-field",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "강자성체의 히스테리시스 곡선에 대한 설명으로 옳은 것은?",
+    "choices": [
+      "가로축과 만나는 점은 잔류 자기를 나타낸다.",
+      "세로축과 만나는 점은 보자력을 나타낸다.",
+      "곡선으로 둘러싸인 넓이는 히스테리시스 손실에 해당한다.",
+      "영구자석 재료는 곡선의 넓이가 작을수록 좋다."
+    ],
+    "answer": 3,
+    "oneLineConcept": "히스테리시스 곡선의 넓이 = 히스테리시스 손실",
+    "explanation": "가로축은 자계의 세기(H), 세로축은 자속 밀도(B)입니다.\n\n1. 세로축과 만나는 점: 잔류 자기\n2. 가로축과 만나는 점: 보자력\n3. 곡선이 둘러싼 넓이: 한 번 자화될 때마다 열로 잃는 에너지(히스테리시스 손)\n\n**틀린 선지**\n- ① 가로축과 만나는 점은 잔류 자기를 나타낸다.: 가로축과 만나는 점은 보자력입니다.\n- ② 세로축과 만나는 점은 보자력을 나타낸다.: 세로축과 만나는 점은 잔류 자기입니다.\n- ④ 영구자석 재료는 곡선의 넓이가 작을수록 좋다.: 영구자석은 잔류 자기와 보자력이 모두 커야 하므로 넓이가 큽니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "자성체"
+    ]
+  },
+  {
+    "id": "electrical-engineer-p009",
+    "certId": "electrical-engineer",
+    "subjectId": "electromagnetics",
+    "chapterId": "magnetic-field",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "단위 길이당 권수가 1,000 회/m 인 무한장 솔레노이드에 2A 의 전류가 흐를 때 솔레노이드 내부와 외부의 자계의 세기는 각각 몇 AT/m 인가?",
+    "choices": [
+      "내부 2,000, 외부 0",
+      "내부 2,000, 외부 2,000",
+      "내부 0, 외부 2,000",
+      "내부 500, 외부 0"
+    ],
+    "answer": 1,
+    "oneLineConcept": "무한장 솔레노이드: 내부 H = n × I, 외부 H = 0",
+    "explanation": "1. 내부 자계 H = n × I = 1,000 × 2 = 2,000 AT/m (내부 어디서나 같은 평등 자계)\n2. 외부 자계는 0 입니다.\n\n**틀린 선지**\n- ② 내부 2,000, 외부 2,000: 외부 자계는 0 입니다.\n- ③ 내부 0, 외부 2,000: 내부와 외부가 바뀌었습니다.\n- ④ 내부 500, 외부 0: 권수를 전류로 나눈 값입니다.",
+    "frequency": 3,
+    "reviewStatus": "unverified",
+    "tags": [
+      "솔레노이드",
+      "계산"
+    ]
+  }
+]

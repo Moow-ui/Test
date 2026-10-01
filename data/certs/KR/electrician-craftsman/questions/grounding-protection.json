@@ -1,0 +1,102 @@
+[
+  {
+    "id": "electrician-craftsman-p051",
+    "certId": "electrician-craftsman",
+    "subjectId": "electric-facilities",
+    "chapterId": "grounding-protection",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "한국전기설비규정(KEC)에서 교류 '저압'의 범위는?",
+    "choices": [
+      "600V 이하",
+      "750V 이하",
+      "1kV 이하",
+      "1.5kV 이하"
+    ],
+    "answer": 3,
+    "oneLineConcept": "KEC 저압: 교류 1kV 이하, 직류 1.5kV 이하",
+    "explanation": "KEC에서는 전압을 세 단계로 나눕니다.\n\n- **저압**: 교류 **1kV 이하**, 직류 1.5kV 이하\n- **고압**: 저압을 넘고 7kV 이하\n- **특고압**: 7kV 초과\n\n예전 기준(교류 600V, 직류 750V 이하)과 달라졌으므로 주의해야 합니다.\n\n**틀린 선지**\n- ① 600V 이하: 예전 기준의 교류 저압 범위입니다.\n- ② 750V 이하: 예전 기준의 직류 저압 범위입니다.\n- ④ 1.5kV 이하: 지금 기준의 **직류** 저압 범위입니다. 문제는 교류를 물었습니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "KEC",
+      "전압 구분",
+      "암기"
+    ]
+  },
+  {
+    "id": "electrician-craftsman-p052",
+    "certId": "electrician-craftsman",
+    "subjectId": "electric-facilities",
+    "chapterId": "grounding-protection",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "TN 계통접지 중에서, 계통 전체에 걸쳐 중성선과 보호도체의 기능을 하나의 도체(PEN 도체)로 겸하는 방식은?",
+    "choices": [
+      "TN-S 계통",
+      "TN-C 계통",
+      "TT 계통",
+      "IT 계통"
+    ],
+    "answer": 2,
+    "oneLineConcept": "TN-C: 중성선과 보호도체를 한 가닥(PEN)으로 겸용",
+    "explanation": "**계통접지**는 전원 쪽과 설비 쪽을 땅(대지)에 어떻게 연결하느냐에 따라 나눕니다. 알파벳의 뜻을 알면 쉽습니다.\n\n- **S** (Separated, 분리): 중성선(N)과 보호도체(PE)를 **따로** 씁니다. → TN-S\n- **C** (Combined, 겸용): 중성선과 보호도체를 **한 가닥(PEN)** 으로 같이 씁니다. → **TN-C**\n- TN-C-S: 앞쪽은 겸용(C), 뒤쪽은 분리(S)한 방식\n\n**틀린 선지**\n- ① TN-S: 중성선과 보호도체를 따로 쓰는 방식입니다.\n- ③ TT: 전원 쪽과 설비 쪽을 각각 따로 땅에 접지하는 방식입니다.\n- ④ IT: 전원 쪽을 땅에서 띄우거나(절연) 큰 임피던스를 거쳐 접지하는 방식입니다.",
+    "frequency": 3,
+    "reviewStatus": "unverified",
+    "tags": [
+      "KEC",
+      "계통접지",
+      "개념"
+    ]
+  },
+  {
+    "id": "electrician-craftsman-p053",
+    "certId": "electrician-craftsman",
+    "subjectId": "electric-facilities",
+    "chapterId": "grounding-protection",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "사용전압이 220V인 저압 전로의 전선 상호 간 및 전로와 대지 사이의 절연저항은 몇 MΩ 이상이어야 하는가?",
+    "choices": [
+      "0.1MΩ",
+      "0.5MΩ",
+      "1.0MΩ",
+      "2.0MΩ"
+    ],
+    "answer": 3,
+    "oneLineConcept": "저압 절연저항: 500V 이하는 1.0MΩ 이상 (DC 500V로 시험)",
+    "explanation": "**절연저항**은 전기가 새지 않도록 막는 정도를 나타내며, 클수록 안전합니다. 전기설비기술기준에서 정한 저압 전로의 절연저항 기준은 다음과 같습니다.\n\n- SELV, PELV(안전 특별저압): 시험전압 DC 250V, **0.5MΩ 이상**\n- FELV, **500V 이하**: 시험전압 DC 500V, **1.0MΩ 이상**\n- 500V 초과: 시험전압 DC 1000V, 1.0MΩ 이상\n\n220V는 '500V 이하'에 해당하므로 1.0MΩ 이상입니다.\n\n**틀린 선지**\n- ① 0.1MΩ: 예전 기준(150V 이하)의 숫자로, 지금은 쓰지 않습니다.\n- ② 0.5MΩ: 안전 특별저압(SELV, PELV) 회로의 기준입니다.\n- ④ 2.0MΩ: 기준에 없는 숫자입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "절연저항",
+      "KEC",
+      "암기"
+    ]
+  },
+  {
+    "id": "electrician-craftsman-p054",
+    "certId": "electrician-craftsman",
+    "subjectId": "electric-facilities",
+    "chapterId": "grounding-protection",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "선도체의 단면적이 25mm²일 때, 선도체와 같은 재질의 보호도체 최소 단면적은 몇 mm²인가? (KEC 기준)",
+    "choices": [
+      "6mm²",
+      "10mm²",
+      "12.5mm²",
+      "16mm²"
+    ],
+    "answer": 4,
+    "oneLineConcept": "보호도체: 선도체 16 초과 35mm² 이하이면 16mm²",
+    "explanation": "**보호도체**는 감전을 막기 위해 설비의 금속 외함 등을 접지에 연결하는 전선입니다. 최소 굵기는 **선도체**(전기가 흐르는 본선)의 굵기에 따라 정해집니다.\n\n- 선도체 16mm² 이하: 선도체와 **같은 굵기**\n- 선도체 **16mm² 초과 35mm² 이하**: **16mm²**\n- 선도체 35mm² 초과: 선도체의 **절반**\n\n25mm²는 가운데 구간(16 초과 35 이하)에 해당하므로 16mm² 입니다.\n\n**틀린 선지**\n- ① 6mm², ② 10mm²: 이 구간의 기준이 아닙니다.\n- ③ 12.5mm²: 25의 절반입니다. 절반으로 계산하는 것은 선도체가 35mm²를 넘을 때입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "보호도체",
+      "접지",
+      "KEC"
+    ]
+  }
+]

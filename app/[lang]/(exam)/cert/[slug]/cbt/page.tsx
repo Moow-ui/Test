@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { CbtRunner } from "@/components/cbt/CbtRunner";
-import { getCertificationIn, getQuestions } from "@/lib/data";
+import { getCertificationIn } from "@/lib/data";
 import { getMessages, isLocale, localeCountry } from "@/lib/i18n";
 import { noindexMetadata } from "@/lib/seo";
 import { readyCertParams } from "@/lib/static-params";
@@ -27,12 +27,10 @@ export default async function CbtPage({ params }: Props) {
   if (!isLocale(lang)) notFound();
   const cert = await getCertificationIn(localeCountry(lang), slug);
   if (!cert?.ready || !cert.examInfo) notFound();
-  const questions = await getQuestions(cert.id);
 
   return (
     <CbtRunner
       cert={{ id: cert.id, name: cert.name, subjects: cert.subjects, examInfo: cert.examInfo }}
-      questions={questions}
     />
   );
 }

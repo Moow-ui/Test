@@ -1,0 +1,119 @@
+[
+  {
+    "id": "electrical-engineer-p044",
+    "certId": "electrical-engineer",
+    "subjectId": "circuit-control",
+    "chapterId": "control",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "전향 경로의 전달 함수가 G, 궤환(피드백) 경로의 전달 함수가 H 인 부궤환 제어계의 전체(폐루프) 전달 함수는?",
+    "choices": [
+      "1 ÷ (1 + GH)",
+      "G ÷ (1 − GH)",
+      "GH ÷ (1 + G)",
+      "G ÷ (1 + GH)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "부궤환 폐루프 전달 함수 = G ÷ (1 + GH)",
+    "explanation": "출력을 되돌려 입력에서 **빼는** 부궤환(음의 피드백)이면 분모가 1 + GH 입니다. 더하는 정궤환이면 1 − GH 가 됩니다.\n\n**틀린 선지**\n- ① 1 ÷ (1 + GH): 분자에 G 가 있어야 합니다.\n- ② G ÷ (1 − GH): 정궤환(양의 피드백)일 때의 식입니다.\n- ③ GH ÷ (1 + G): 분자와 분모가 틀렸습니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "전달 함수",
+      "블록 선도"
+    ]
+  },
+  {
+    "id": "electrical-engineer-p045",
+    "certId": "electrical-engineer",
+    "subjectId": "circuit-control",
+    "chapterId": "control",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "제어계가 안정하기 위한 특성 방정식의 근의 위치는?",
+    "choices": [
+      "모든 근이 s 평면의 왼쪽 반평면에 있어야 한다.",
+      "모든 근이 s 평면의 오른쪽 반평면에 있어야 한다.",
+      "모든 근이 허수축 위에 있어야 한다.",
+      "근의 위치와 안정도는 관계가 없다."
+    ],
+    "answer": 1,
+    "oneLineConcept": "안정 조건: 특성 방정식의 근이 모두 s 평면의 좌반면",
+    "explanation": "근의 실수부가 **음수**(왼쪽 반평면)이면 시간이 지날수록 응답이 줄어들어 안정합니다. 양수(오른쪽)이면 응답이 점점 커져 불안정합니다.\n\n**틀린 선지**\n- ② 모든 근이 s 평면의 오른쪽 반평면에 있어야 한다.: 불안정합니다.\n- ③ 모든 근이 허수축 위에 있어야 한다.: 줄지도 늘지도 않고 계속 진동하는 임계 상태입니다.\n- ④ 근의 위치와 안정도는 관계가 없다.: 근의 위치가 안정도를 결정합니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "안정도"
+    ]
+  },
+  {
+    "id": "electrical-engineer-p046",
+    "certId": "electrical-engineer",
+    "subjectId": "circuit-control",
+    "chapterId": "control",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "특성 방정식 s³ + 2s² + 3s + 10 = 0 인 제어계를 루스(Routh) 판별법으로 판별했을 때의 결과로 옳은 것은?",
+    "choices": [
+      "안정하다.",
+      "불안정하며, 오른쪽 반평면에 근이 1개 있다.",
+      "불안정하며, 오른쪽 반평면에 근이 2개 있다.",
+      "임계 안정 상태이다."
+    ],
+    "answer": 3,
+    "oneLineConcept": "루스 표 제1열의 부호 변화 횟수 = 오른쪽 반평면의 근의 수",
+    "explanation": "루스 표를 만듭니다.\n\n1. s³ 행: 1, 3\n2. s² 행: 2, 10\n3. s¹ 행: (2 × 3 − 1 × 10) ÷ 2 = −2\n4. s⁰ 행: 10\n\n제1열은 1, 2, −2, 10 입니다. 부호가 (+ → −), (− → +)로 **2번** 바뀌므로 오른쪽 반평면에 근이 2개 있어 불안정합니다.\n\n**틀린 선지**\n- ① 안정하다.: 제1열에 음수가 있으므로 불안정합니다.\n- ② 불안정하며, 오른쪽 반평면에 근이 1개 있다.: 부호는 2번 바뀝니다.\n- ④ 임계 안정 상태이다.: 제1열에 0 인 행이 없으므로 임계 상태가 아닙니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "안정도",
+      "루스 판별법"
+    ]
+  },
+  {
+    "id": "electrical-engineer-p047",
+    "certId": "electrical-engineer",
+    "subjectId": "circuit-control",
+    "chapterId": "control",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "2차 제어계에서 제동비(ζ)가 0 < ζ < 1 일 때의 응답은?",
+    "choices": [
+      "무제동(지속 진동)",
+      "부족 제동(감쇠 진동)",
+      "임계 제동",
+      "과제동"
+    ],
+    "answer": 2,
+    "oneLineConcept": "ζ < 1 부족 제동, ζ = 1 임계 제동, ζ > 1 과제동, ζ = 0 무제동",
+    "explanation": "제동비가 1 보다 작으면 제동이 **모자라서** 목표값을 넘었다 모자랐다 하며 진동하다가 점점 잦아듭니다.\n\n**틀린 선지**\n- ① 무제동(지속 진동): ζ = 0 일 때입니다.\n- ③ 임계 제동: ζ = 1 일 때입니다. 진동 없이 가장 빨리 목표값에 이릅니다.\n- ④ 과제동: ζ > 1 일 때입니다. 진동 없이 천천히 목표값에 이릅니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "과도 응답"
+    ]
+  },
+  {
+    "id": "electrical-engineer-p048",
+    "certId": "electrical-engineer",
+    "subjectId": "circuit-control",
+    "chapterId": "control",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "제어기의 동작 가운데 잔류 편차(오프셋)를 없애는 효과가 있는 것은?",
+    "choices": [
+      "비례(P) 동작",
+      "온-오프(2위치) 동작",
+      "미분(D) 동작",
+      "적분(I) 동작"
+    ],
+    "answer": 4,
+    "oneLineConcept": "적분(I) 동작은 잔류 편차를 없앤다",
+    "explanation": "**적분 동작**은 편차를 계속 쌓아 가며 조작량을 내므로, 편차가 조금이라도 남아 있으면 계속 고쳐 결국 0 으로 만듭니다.\n\n**틀린 선지**\n- ① 비례(P) 동작: 잔류 편차가 남는 것이 비례 동작의 단점입니다.\n- ② 온-오프(2위치) 동작: 켜짐·꺼짐 둘만 있어 목표값 근처에서 계속 오르내립니다.\n- ③ 미분(D) 동작: 편차의 변화 속도에 반응하여 응답을 빠르게 하고 진동을 억제합니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "제어 동작"
+    ]
+  }
+]

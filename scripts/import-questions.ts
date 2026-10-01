@@ -1,97 +1,90 @@
 /**
- * 문제 가져오기·갱신 (CSV / JSON → 검증 → 오류 행 리포트 → /data 에 병합)
+ * 문제 넣기·고치기 (CSV / JSON → 검증 → 오류 행 리포트 → 자격증 폴더의 단원별 파일에 병합)
  *
- * ※ 기출문제의 저작권은 한국산업인력공단에 있습니다.
- *   사용 권리가 확인된 데이터만 이 스크립트로 넣으세요.
+ * ※ 모든 문제는 직접 만든 AI 예상문제여야 합니다. 기출 원문을 넣지 않습니다 (docs/data-rules.md).
  *
- * 사용법 (새 기출이 나올 때마다 같은 명령을 다시 실행하면 됩니다)
- *   npm run past:add -- <파일.csv 또는 파일.json> --cert <자격증 id> [옵션]
+ * 사용법
+ *   npm run questions:add -- <파일.csv 또는 파일.json> --cert <자격증 slug> [옵션]
  *
  * 옵션
- *   --cert <id>     자격증 id (예: electrician-craftsman). 필수
- *   --update        이미 있는 문제 id 와 겹치면 새 내용으로 바꿈 (기본: 겹치면 오류로 처리)
+ *   --cert <slug>   자격증 slug (예: electrician-craftsman). 필수
+ *   --update        이미 있는 문제 id 와 겹치면 새 내용으로 바꾸고 version 을 1 올림 (기본: 겹치면 오류)
  *   --dry-run       검증만 하고 파일은 쓰지 않음
- *   --out <파일명>  예상문제를 저장할 파일 이름 (기본: imported.json). 기출에는 쓰지 않음
  *
  * 저장 위치 (자동)
- *   기출:     data/questions/<id>/past/<난이도>/<단원 id>.json   ← 난이도별 폴더, 단원별 파일
- *   예상문제: data/questions/<id>/predicted/<파일명>
+ *   data/certs/{country}/{slug}/questions/{단원 id}.json   (300문항이 넘으면 -2, -3 파일)
+ *
+ * 문제 id (자동)
+ *   id 를 비워 두면 "{slug}-{단원 id}-{4자리 번호}" 로 그 단원의 다음 번호를 붙인다.
+ *   한번 정한 id 는 바꾸거나 다시 쓰지 않는다. 문제를 없앨 때는 지우지 말고 retired 를 true 로.
  *
  * 예
- *   npm run past:add -- scripts/templates/questions-template.csv --cert electrician-craftsman --dry-run
- *   npm run past:add -- 2026년1회.csv --cert electrician-craftsman
+ *   npm run questions:add -- scripts/templates/questions-template.csv --cert electrician-craftsman --dry-run
  *
  * CSV 열 (첫 줄은 열 이름. 순서는 상관없음)
- *   id            비워 두면 자동으로 만듦
+ *   id            비워 두면 자동으로 만듦 (고칠 때만 적는다)
  *   subjectId     과목 id 또는 과목 이름 (예: electric-theory 또는 전기이론)
  *   chapterId     단원 id 또는 단원 이름 (예: dc-circuit 또는 직류회로)
- *   source        past / predicted (또는 기출 / 예상)
- *   year, round   기출일 때만 (예: 2023, 1). 최근 10년 안의 기출만 수록
- *   number        기출 문항 번호 (id 자동 생성에 사용, 선택)
+ *   source        predicted (또는 예상). 비워 두면 predicted
  *   level         basic / intermediate / advanced (또는 초급 / 중급 / 고급)
  *   correctRate   정답률 % (선택). level 을 비워 두면 정답률로 난이도를 정함: 70 이상 초급, 40 이상 중급, 그 아래 고급
  *   stem          문제
- *   choice1~4     선지 4개
- *   answer        정답 번호 1~4
+ *   choice1~N     선지 (개수는 자격증 meta.json 의 examInfo.choiceCount)
+ *   answer        정답 번호
  *   oneLineConcept  핵심 개념 한 줄
  *   explanation   상세 해설 (줄바꿈은 셀 안에서 Alt+Enter 또는 \n 으로)
  *   frequency     출제 빈도 1~5
  *   reviewStatus  verified / unverified (또는 검수완료 / 검수전)
  *   tags          태그 (| 로 구분)
+ *   retired       true 면 출제 중단
  */
-import { createHash } from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
 import { z } from "zod";
-import {
-  certDetailFile,
-  listQuestionFiles,
-  pastQuestionFile,
-  predictedQuestionFile,
-  readJsonFile,
-  shortPath,
-} from "../lib/data-files";
-import { isWithinPastWindow, levelFromCorrectRate, oldestPastYear } from "../lib/past";
-import { certDetailSchema, questionSchema } from "../lib/schemas";
+import { getCertSummary, getCertification, getQuestionFiles } from "../lib/data";
+import { writeDataJson } from "../lib/data/fs-store";
+import { questionFileStem, questionId, questionIdNumber, questionsDir } from "../lib/data/paths";
+import { levelFromCorrectRate } from "../lib/past";
+import { MAX_QUESTIONS_PER_FILE, questionSchema } from "../lib/schemas";
 import type { CertDetail, Question } from "../lib/types";
 import { checkQuestionRefs } from "../lib/validate";
 
 // 검증 오류 문구를 한국어로
 z.config(z.locales.ko());
 
-const REPORT_FILE = path.join(process.cwd(), "import-report.json");
+/** 리포트는 월별 폴더에 쌓는다: reports/{YYYY-MM}/import-{slug}-{시각}.json */
+function reportFile(slug: string, now = new Date()): string {
+  const stamp = now.toISOString().replace(/[:.]/g, "-");
+  return path.join(process.cwd(), "reports", stamp.slice(0, 7), `import-${slug}-${stamp}.json`);
+}
 
 // ───────────────────────── 인자 ─────────────────────────
 
 interface Args {
   file: string;
   cert: string;
-  out: string;
   update: boolean;
   dryRun: boolean;
 }
 
 function fail(message: string): never {
   console.error(`\n✗ ${message}\n`);
-  console.error("사용법: npm run past:add -- <파일.csv|파일.json> --cert <자격증 id> [--update] [--dry-run]");
+  console.error("사용법: npm run questions:add -- <파일.csv|파일.json> --cert <자격증 slug> [--update] [--dry-run]");
   process.exit(1);
 }
 
 function parseArgs(argv: string[]): Args {
-  const args: Partial<Args> = { out: "imported.json", update: false, dryRun: false };
+  const args: Partial<Args> = { update: false, dryRun: false };
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i];
     if (a === "--cert") args.cert = argv[++i];
-    else if (a === "--out") args.out = argv[++i];
     else if (a === "--update") args.update = true;
     else if (a === "--dry-run") args.dryRun = true;
     else if (a.startsWith("--")) fail(`알 수 없는 옵션입니다: ${a}`);
     else args.file = a;
   }
   if (!args.file) fail("가져올 파일을 지정해 주세요.");
-  if (!args.cert) fail("--cert <자격증 id> 를 지정해 주세요.");
-  if (!args.out!.endsWith(".json")) args.out = `${args.out}.json`;
-  if (/[\\/]/.test(args.out!)) fail("--out 에는 폴더 없이 파일 이름만 적어 주세요.");
+  if (!args.cert) fail("--cert <자격증 slug> 를 지정해 주세요.");
   return args as Args;
 }
 
@@ -184,7 +177,7 @@ function toCandidate(raw: Raw, detail: CertDetail): Raw {
   const chapter = chapterPool.find((c) => c.id === chapterText || c.name === chapterText);
 
   const sourceText = text(raw.source);
-  const source = SOURCE_ALIASES[sourceText] ?? sourceText;
+  const source = SOURCE_ALIASES[sourceText] ?? (sourceText || "predicted");
   const reviewText = text(raw.reviewStatus);
 
   // 난이도: 직접 적었으면 그 값, 비워 두었으면 정답률로 정한다
@@ -204,7 +197,7 @@ function toCandidate(raw: Raw, detail: CertDetail): Raw {
 
   const choices = Array.isArray(raw.choices)
     ? raw.choices.map(text)
-    : [raw.choice1, raw.choice2, raw.choice3, raw.choice4].map(text);
+    : Array.from({ length: detail.examInfo.choiceCount }, (_, i) => text(raw[`choice${i + 1}`]));
 
   const tags = Array.isArray(raw.tags)
     ? raw.tags.map(text).filter(Boolean)
@@ -213,29 +206,18 @@ function toCandidate(raw: Raw, detail: CertDetail): Raw {
         .map((t) => t.trim())
         .filter(Boolean);
 
-  const stem = text(raw.stem);
-  let id = text(raw.id);
-  if (id === "") {
-    const info = pastInfo as { year?: number; round?: number } | undefined;
-    const number = text(raw.number);
-    if (source === "past" && info?.year && info?.round && number !== "") {
-      id = `${detail.id}-${info.year}-${info.round}-${number.padStart(3, "0")}`;
-    } else {
-      // 같은 문제는 다시 가져와도 같은 id 가 되도록 문제 내용으로 만든다
-      const hash = createHash("sha1").update(`${stem}|${choices.join("|")}`).digest("hex").slice(0, 10);
-      id = `${detail.id}-${source === "past" ? "past" : "pred"}-${hash}`;
-    }
-  }
+  const retiredText = text(raw.retired).toLowerCase();
 
   return {
-    id,
+    // 비어 있으면 검증을 통과한 뒤 그 단원의 다음 번호를 붙인다
+    id: text(raw.id),
     certId: text(raw.certId) || detail.id,
     subjectId: subject?.id ?? subjectText,
     chapterId: chapter?.id ?? chapterText,
     source,
     ...(pastInfo ? { pastInfo } : {}),
     level,
-    stem,
+    stem: text(raw.stem),
     choices,
     answer: numberOrUndefined(raw.answer),
     oneLineConcept: text(raw.oneLineConcept),
@@ -244,6 +226,8 @@ function toCandidate(raw: Raw, detail: CertDetail): Raw {
     frequency: numberOrUndefined(raw.frequency),
     reviewStatus: REVIEW_ALIASES[reviewText] ?? (reviewText || "unverified"),
     tags,
+    ...(text(raw.image) ? { image: text(raw.image) } : {}),
+    ...(retiredText === "true" || retiredText === "1" ? { retired: true } : {}),
   };
 }
 
@@ -256,21 +240,21 @@ interface RowError {
   errors: string[];
 }
 
-function main(): void {
+async function main(): Promise<void> {
   const args = parseArgs(process.argv.slice(2));
   const inputFile = path.resolve(args.file);
   if (!fs.existsSync(inputFile)) fail(`파일을 찾을 수 없습니다: ${inputFile}`);
 
-  const detailFile = certDetailFile(args.cert);
-  if (!fs.existsSync(detailFile)) {
-    fail(
-      `data/certs/${args.cert}.json 이 없습니다. 자격증의 과목·단원 데이터를 먼저 만들어야 문제를 넣을 수 있습니다.`,
-    );
+  const summary = await getCertSummary(args.cert);
+  const cert = await getCertification(args.cert);
+  if (!summary || !cert) fail(`자격증을 찾을 수 없습니다: ${args.cert}`);
+  if (!cert.examInfo || !cert.updatedAt || cert.subjects.length === 0) {
+    fail("meta.json 의 examInfo 와 chapters.json 을 먼저 만들어야 문제를 넣을 수 있습니다 (docs/add-cert.md).");
   }
-  const detail = certDetailSchema.parse(readJsonFile(detailFile));
+  const detail: CertDetail = { id: cert.id, updatedAt: cert.updatedAt, examInfo: cert.examInfo, subjects: cert.subjects };
+  const dir = questionsDir(summary.country, summary.id);
 
-  console.log(`\n[문제 가져오기] ${path.basename(inputFile)} → ${args.cert}`);
-  console.log("※ 기출문제 저작권은 한국산업인력공단에 있습니다. 사용 권리가 확인된 데이터만 넣으세요.\n");
+  console.log(`\n[문제 넣기] ${path.basename(inputFile)} → ${args.cert}\n`);
 
   // 1) 읽기
   let rawRows: Array<{ raw: Raw; row: number }>;
@@ -288,20 +272,23 @@ function main(): void {
     }));
   }
 
-  // 2) 이미 있는 문제: 파일별 내용과, 문제 id 가 어느 파일에 있는지
-  const fileContents = new Map<string, Question[]>();
-  const whereIs = new Map<string, string>();
-  for (const file of listQuestionFiles(args.cert)) {
-    const list = z.array(questionSchema).parse(readJsonFile(file));
-    fileContents.set(file, list);
-    for (const q of list) whereIs.set(q.id, file);
+  // 2) 이미 있는 문제 (단원별)
+  const byChapter = new Map<string, Question[]>();
+  const existing = new Map<string, Question>();
+  for (const file of await getQuestionFiles(args.cert)) {
+    for (const q of file.questions) {
+      existing.set(q.id, q);
+      byChapter.set(q.chapterId, [...(byChapter.get(q.chapterId) ?? []), q]);
+    }
   }
-
-  /** 문제가 저장될 파일: 기출은 난이도·단원으로 자동 분류한다 */
-  const targetFile = (q: Question) =>
-    q.source === "past"
-      ? pastQuestionFile(args.cert, q.level, q.chapterId)
-      : predictedQuestionFile(args.cert, args.out);
+  /** 그 단원의 다음 번호 (출제 중단 문제의 번호도 다시 쓰지 않는다) */
+  const nextNumber = new Map<string, number>();
+  const newId = (chapterId: string): string => {
+    const used = [...existing.keys()].map((id) => questionIdNumber(detail.id, chapterId, id) ?? 0);
+    const n = Math.max(nextNumber.get(chapterId) ?? 0, ...used) + 1;
+    nextNumber.set(chapterId, n);
+    return questionId(detail.id, chapterId, n);
+  };
 
   // 3) 검증
   const valid: Question[] = [];
@@ -324,7 +311,8 @@ function main(): void {
       errors.push("난이도가 없습니다: level(초급/중급/고급) 또는 correctRate(정답률 %) 중 하나를 적어 주세요");
     }
 
-    const result = questionSchema.safeParse(candidate);
+    const isNew = candidate.id === "";
+    const result = questionSchema.safeParse(isNew ? { ...candidate, id: "(new)" } : candidate);
     if (!result.success) {
       for (const issue of result.error.issues) {
         const field = issue.path.join(".") || "(전체)";
@@ -334,20 +322,21 @@ function main(): void {
     } else if (errors.length === 0) {
       const q = result.data;
       errors.push(...checkQuestionRefs(q, detail));
-      if (q.source === "past" && q.pastInfo && !isWithinPastWindow(q.pastInfo.year)) {
-        errors.push(
-          `${q.pastInfo.year}년 기출은 수록하지 않습니다 (최근 10년: ${oldestPastYear()}년 이후만 수록)`,
-        );
+      if (q.choices.length !== detail.examInfo.choiceCount) {
+        errors.push(`선지가 ${q.choices.length}개입니다 (이 자격증은 ${detail.examInfo.choiceCount}개)`);
       }
-      if (seen.has(q.id)) errors.push(`같은 파일 안에 id 가 겹칩니다: ${q.id}`);
-      const existing = whereIs.get(q.id);
-      if (existing && !args.update) {
-        errors.push(`이미 있는 문제 id 입니다: ${q.id} (${shortPath(existing)}). 내용을 바꾸려면 --update 옵션`);
-      }
+      const old = isNew ? undefined : existing.get(q.id);
+      if (!isNew && !old) errors.push(`없는 문제 id 입니다: ${q.id}. 새 문제는 id 를 비워 두세요 (자동으로 붙습니다)`);
+      if (!isNew && seen.has(q.id)) errors.push(`같은 파일 안에 id 가 겹칩니다: ${q.id}`);
+      if (old && !args.update) errors.push(`이미 있는 문제 id 입니다: ${q.id}. 내용을 바꾸려면 --update 옵션`);
       if (errors.length === 0) {
-        seen.add(q.id);
-        if (existing) updated += 1;
-        valid.push(q);
+        if (old) {
+          updated += 1;
+          valid.push({ ...q, version: old.version + 1 });
+        } else {
+          valid.push({ ...q, id: newId(q.chapterId) });
+        }
+        seen.add(valid[valid.length - 1].id);
       }
     }
 
@@ -373,65 +362,70 @@ function main(): void {
     }
   }
 
-  // 5) 병합: 바뀌는 파일만 다시 쓴다
+  // 5) 병합: 바뀌는 단원만 다시 쓴다 (고친 문제는 제자리에, 새 문제는 뒤에)
   const changed = new Set<string>();
   for (const q of valid) {
-    const from = whereIs.get(q.id);
-    if (from) {
-      // 내용 교체(--update): 예전 위치에서 빼고 새 위치(난이도·단원이 바뀌었을 수 있음)에 넣는다
-      fileContents.set(
-        from,
-        (fileContents.get(from) ?? []).filter((x) => x.id !== q.id),
-      );
-      changed.add(from);
+    const old = existing.get(q.id);
+    if (old) {
+      byChapter.set(old.chapterId, (byChapter.get(old.chapterId) ?? []).filter((x) => x.id !== q.id));
+      changed.add(old.chapterId);
     }
-    const to = targetFile(q);
-    fileContents.set(to, [...(fileContents.get(to) ?? []), q]);
-    changed.add(to);
+    const list = byChapter.get(q.chapterId) ?? [];
+    const at = old && old.chapterId === q.chapterId ? list.findIndex((x) => x.id > q.id) : -1;
+    byChapter.set(q.chapterId, at < 0 ? [...list, q] : [...list.slice(0, at), q, ...list.slice(at)]);
+    changed.add(q.chapterId);
   }
 
+  /** 단원의 문제를 파일당 최대 문항 수로 나눈 결과: [파일 경로, 문제들] */
+  const filesOf = (chapterId: string): Array<[string, Question[]]> => {
+    const list = byChapter.get(chapterId) ?? [];
+    const parts: Array<[string, Question[]]> = [];
+    for (let i = 0; i < list.length; i += MAX_QUESTIONS_PER_FILE) {
+      const stem = questionFileStem(chapterId, i / MAX_QUESTIONS_PER_FILE + 1);
+      parts.push([`${dir}/${stem}.json`, list.slice(i, i + MAX_QUESTIONS_PER_FILE)]);
+    }
+    return parts;
+  };
+  const written = [...changed].flatMap(filesOf);
+
+  const report = reportFile(args.cert);
+  fs.mkdirSync(path.dirname(report), { recursive: true });
   fs.writeFileSync(
-    REPORT_FILE,
+    report,
     JSON.stringify(
       {
-        file: inputFile,
+        file: path.basename(inputFile),
         certId: args.cert,
-        written: args.dryRun ? [] : [...changed].map(shortPath),
+        written: args.dryRun ? [] : written.map(([file]) => `data/${file}`),
         total: rawRows.length,
         passed: valid.length,
         failed: rowErrors.length,
+        newIds: valid.filter((q) => !existing.has(q.id)).map((q) => q.id),
         errors: rowErrors,
       },
       null,
       2,
     ),
   );
-  console.log(`\n오류 리포트: import-report.json`);
+  console.log(`\n리포트: ${path.relative(process.cwd(), report).split(path.sep).join("/")}`);
 
   if (args.dryRun) {
     console.log("\n(--dry-run) 검증만 했습니다. 파일은 바뀌지 않았습니다.");
-    if (changed.size > 0) {
-      console.log("실제로 실행하면 아래 파일에 들어갑니다:");
-      for (const file of changed) console.log(`  ${shortPath(file)}`);
-    }
+    for (const [file, list] of written) console.log(`  data/${file} (${list.length}문제)`);
     console.log("");
   } else if (valid.length === 0) {
     console.log("\n통과한 문제가 없어 파일을 쓰지 않았습니다.\n");
   } else {
-    for (const file of changed) {
-      const list = fileContents.get(file) ?? [];
-      if (list.length === 0) {
-        fs.rmSync(file, { force: true });
-        continue;
-      }
-      fs.mkdirSync(path.dirname(file), { recursive: true });
-      fs.writeFileSync(file, `${JSON.stringify(list, null, 2)}\n`);
-    }
+    // JSON 에는 기본값(version 1, retired false)을 적지 않는다
+    const compact = ({ version, retired, ...q }: Question) => ({
+      ...q,
+      ...(version > 1 ? { version } : {}),
+      ...(retired ? { retired } : {}),
+    });
+    for (const [file, list] of written) writeDataJson(file, list.map(compact));
     console.log(`\n✓ ${valid.length}문제를 넣었습니다.`);
-    for (const file of changed) {
-      console.log(`  ${shortPath(file)} (${(fileContents.get(file) ?? []).length}문제)`);
-    }
-    console.log("\n다음 순서: npm run past:status → npm run build → git push (push 하면 자동 배포)\n");
+    for (const [file, list] of written) console.log(`  data/${file} (${list.length}문제)`);
+    console.log("\n다음 순서: npm run validate → npm run build → 커밋 → git push (push 하면 자동 배포)\n");
   }
 
   if (rowErrors.length > 0) process.exitCode = 1;
@@ -439,5 +433,5 @@ function main(): void {
 
 // 다른 파일에서 parseCsv 만 불러 쓸 수 있게, 직접 실행했을 때만 main 을 돌린다
 if (process.argv[1] && path.resolve(process.argv[1]).includes("import-questions")) {
-  main();
+  void main();
 }

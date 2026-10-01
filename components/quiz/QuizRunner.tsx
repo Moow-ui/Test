@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useRef } from "react";
 import { ExamScreen } from "@/components/exam/ExamScreen";
+import { useQuestionPool, useQuestions } from "@/lib/data/client";
 import { fmt, localePath, type Messages } from "@/lib/i18n";
 import { QUIZ_COUNTS, buildLevelQuiz, buildQuiz } from "@/lib/quiz-engine";
 import {
@@ -20,7 +21,7 @@ import {
   touchRecentCert,
   type QuizSession,
 } from "@/lib/storage";
-import type { ExamInfo, Question, QuizLevel, Subject } from "@/lib/types";
+import type { ExamInfo, PoolItem, Question, QuizLevel, Subject } from "@/lib/types";
 import { useMessages } from "@/lib/use-messages";
 import { useHydrated, useStored } from "@/lib/use-storage";
 import { ResultView } from "./ResultView";
@@ -40,7 +41,7 @@ const LEVELS: QuizLevel[] = ["basic", "intermediate", "advanced"];
  */
 function createSession(
   cert: QuizCert,
-  questions: Question[],
+  questions: PoolItem[],
   params: URLSearchParams,
   m: Messages,
 ): QuizSession | null {
@@ -121,8 +122,13 @@ function Pad({ children }: { children: React.ReactNode }) {
   return <div className="mx-auto w-full max-w-5xl px-4 py-4 sm:py-6">{children}</div>;
 }
 
-/** 풀이 화면: 새 풀이 시작 / 이어서 풀기 / (바로 또는 마지막에) 채점 / 결과 */
-export function QuizRunner({ cert, questions }: { cert: QuizCert; questions: Question[] }) {
+const NO_IDS: string[] = [];
+
+/**
+ * 풀이 화면: 새 풀이 시작 / 이어서 풀기 / (바로 또는 마지막에) 채점 / 결과
+ * 문제 목록으로 먼저 뽑고, 뽑힌 문제가 들어 있는 단원 파일만 받는다 (lib/data/client.ts).
+ */
+export function QuizRunner({ cert }: { cert: QuizCert }) {
   const router = useRouter();
   const { locale, m } = useMessages();
   const certPath = localePath(locale, `/cert/${cert.id}`);
@@ -132,6 +138,8 @@ export function QuizRunner({ cert, questions }: { cert: QuizCert; questions: Que
   // "바로 답 확인하기": 기본은 켜짐
   const instant = useStored<boolean>(STORAGE_KEYS.instantCheck, true);
   const handledRef = useRef<string | null>(null);
+  const pool = useQuestionPool(cert.id);
+  const loaded = useQuestions(cert.id, session?.questionIds ?? NO_IDS);
 
   // 주소에 시작 조건이 있으면 새 풀이를 만들어 저장한 뒤, 주소에서 조건을 지운다.
   // (새로고침해도 문제가 다시 섞이지 않고 "이어서 풀기"가 되도록)
@@ -140,20 +148,17 @@ export function QuizRunner({ cert, questions }: { cert: QuizCert; questions: Que
       handledRef.current = null;
       return;
     }
-    if (handledRef.current === paramString) return;
+    if (!pool || handledRef.current === paramString) return;
     handledRef.current = paramString;
-    createSession(cert, questions, new URLSearchParams(paramString), m);
+    createSession(cert, pool, new URLSearchParams(paramString), m);
     touchRecentCert(cert.id);
     router.replace(`${certPath}/quiz`);
-  }, [paramString, cert, questions, router, m, certPath]);
+  }, [paramString, cert, pool, router, m, certPath]);
 
-  const byId = new Map(questions.map((q) => [q.id, q]));
-  const sessionQuestions = session
-    ? session.questionIds.map((id) => byId.get(id)).filter((q): q is Question => !!q)
-    : [];
+  const sessionQuestions = loaded ?? [];
   const total = sessionQuestions.length;
 
-  if (!hydrated || paramString) {
+  if (!hydrated || paramString || !loaded) {
     return (
       <Pad>
         <p className="card p-5 text-lg font-bold">{m.quiz.preparing}</p>

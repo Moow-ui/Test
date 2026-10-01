@@ -1,0 +1,96 @@
+[
+  {
+    "id": "information-processing-engineer-p049",
+    "certId": "information-processing-engineer",
+    "subjectId": "is-management",
+    "chapterId": "sw-methodology",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "소프트웨어 생명주기 모형 가운데, 각 단계를 확실히 끝낸 뒤 다음 단계로 넘어가며 앞 단계로 되돌아가기 어려운 고전적인 모형은?",
+    "choices": [
+      "폭포수 모형",
+      "프로토타입 모형",
+      "나선형 모형",
+      "애자일 모형"
+    ],
+    "answer": 1,
+    "oneLineConcept": "폭포수 모형: 단계별로 차례대로 진행하는 고전적 모형",
+    "explanation": "**폭포수 모형**은 물이 위에서 아래로만 떨어지듯, 분석 → 설계 → 구현 → 테스트 → 유지보수를 순서대로 진행합니다.\n\n**틀린 선지**\n- ② 프로토타입 모형: 견본(시제품)을 먼저 만들어 사용자의 요구를 확인하는 모형입니다.\n- ③ 나선형 모형: 계획 → 위험 분석 → 개발 → 평가를 되풀이하는 모형입니다.\n- ④ 애자일 모형: 짧은 주기로 되풀이하며 변화에 빠르게 대응하는 모형입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "생명주기"
+    ]
+  },
+  {
+    "id": "information-processing-engineer-p050",
+    "certId": "information-processing-engineer",
+    "subjectId": "is-management",
+    "chapterId": "sw-methodology",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "예측된 총 라인 수가 36,000 라인이고, 개발자 6명이 참여하며, 개발자 1인당 월평균 생산성이 300 라인일 때 개발에 걸리는 기간은?",
+    "choices": [
+      "10개월",
+      "20개월",
+      "120개월",
+      "6개월"
+    ],
+    "answer": 2,
+    "oneLineConcept": "개발 기간 = 총 라인 수 ÷ (인원 × 1인당 월 생산 라인 수)",
+    "explanation": "1. 한 달 동안 6명이 만드는 양 = 6 × 300 = 1,800 라인\n2. 개발 기간 = 36,000 ÷ 1,800\n3. 답: 20개월\n\n검산: 1,800 × 20 = 36,000 라인\n\n**틀린 선지**\n- ① 10개월: 계산이 틀린 값입니다.\n- ③ 120개월: 한 명이 혼자 했을 때의 기간(36,000 ÷ 300)입니다.\n- ④ 6개월: 계산이 틀린 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "비용 산정",
+      "계산"
+    ]
+  },
+  {
+    "id": "information-processing-engineer-p051",
+    "certId": "information-processing-engineer",
+    "subjectId": "is-management",
+    "chapterId": "sw-methodology",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "COCOMO 모형에서 5만 라인 이하의 중·소규모 소프트웨어(일반 업무용, 과학 기술 계산용 등)를 개발하는 유형은?",
+    "choices": [
+      "분산형(Distributed)",
+      "반분리형(Semi-Detached)",
+      "내장형(Embedded)",
+      "조직형(Organic)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "COCOMO: 조직형(5만 이하), 반분리형(30만 이하), 내장형(30만 초과)",
+    "explanation": "**조직형**은 가장 작은 규모의 유형입니다.\n\n**틀린 선지**\n- ① 분산형(Distributed): COCOMO 의 유형이 아닙니다.\n- ② 반분리형(Semi-Detached): 30만 라인 이하의 운영체제, 데이터베이스 관리 시스템 등을 개발하는 유형입니다.\n- ③ 내장형(Embedded): 30만 라인이 넘는 초대형 시스템 소프트웨어를 개발하는 유형입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "비용 산정",
+      "COCOMO"
+    ]
+  },
+  {
+    "id": "information-processing-engineer-p052",
+    "certId": "information-processing-engineer",
+    "subjectId": "is-management",
+    "chapterId": "sw-methodology",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "CMMI(능력 성숙도 통합 모델)의 성숙도 단계를 낮은 순서부터 옳게 나열한 것은?",
+    "choices": [
+      "관리 → 초기 → 정의 → 정량적 관리 → 최적화",
+      "초기 → 정의 → 관리 → 최적화 → 정량적 관리",
+      "초기 → 관리 → 정의 → 정량적 관리 → 최적화",
+      "초기 → 관리 → 정량적 관리 → 정의 → 최적화"
+    ],
+    "answer": 3,
+    "oneLineConcept": "CMMI 5단계: 초기 → 관리 → 정의 → 정량적 관리 → 최적화",
+    "explanation": "1. 초기: 정해진 절차 없이 사람에 의존\n2. 관리: 프로젝트 단위로 절차를 관리\n3. 정의: 조직 전체의 표준 절차를 정함\n4. 정량적 관리: 숫자로 측정하며 관리\n5. 최적화: 계속 개선\n\n**틀린 선지**\n- ① 관리 → 초기 → 정의 → 정량적 관리 → 최적화: 초기가 가장 낮은 단계입니다.\n- ② 초기 → 정의 → 관리 → 최적화 → 정량적 관리: 관리가 정의보다 앞이고, 최적화가 맨 마지막입니다.\n- ④ 초기 → 관리 → 정량적 관리 → 정의 → 최적화: 정의가 정량적 관리보다 앞입니다.",
+    "frequency": 3,
+    "reviewStatus": "unverified",
+    "tags": [
+      "CMMI"
+    ]
+  }
+]

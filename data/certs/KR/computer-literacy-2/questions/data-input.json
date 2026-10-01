@@ -1,0 +1,94 @@
+[
+  {
+    "id": "computer-literacy-2-p021",
+    "certId": "computer-literacy-2",
+    "subjectId": "spreadsheet",
+    "chapterId": "data-input",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "엑셀에서 한 셀 안에 두 줄 이상의 내용을 입력하려고 할 때, 줄을 바꾸는 키는?",
+    "choices": [
+      "Enter",
+      "Ctrl + Enter",
+      "Alt + Enter",
+      "Shift + Enter"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Alt + Enter: 한 셀 안에서 줄 바꾸기",
+    "explanation": "셀 안에서 **Alt + Enter** 를 누르면 같은 셀 안에서 다음 줄로 넘어갑니다.\n\n**틀린 선지**\n- ① Enter: 입력을 끝내고 아래 셀로 내려갑니다.\n- ② Ctrl + Enter: 선택한 여러 셀에 같은 내용을 한 번에 입력합니다.\n- ④ Shift + Enter: 입력을 끝내고 위 셀로 올라갑니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "입력"
+    ]
+  },
+  {
+    "id": "computer-literacy-2-p022",
+    "certId": "computer-literacy-2",
+    "subjectId": "spreadsheet",
+    "chapterId": "data-input",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "엑셀에서 오늘 날짜를 셀에 바로 입력하는 바로 가기 키는?",
+    "choices": [
+      "Ctrl + ;",
+      "Ctrl + Shift + ;",
+      "Ctrl + D",
+      "Ctrl + T"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Ctrl + ; 은 오늘 날짜, Ctrl + Shift + ; 은 현재 시간",
+    "explanation": "**Ctrl + ;(세미콜론)** 을 누르면 오늘 날짜가 들어갑니다. 이렇게 넣은 날짜는 다음 날 파일을 열어도 바뀌지 않습니다.\n\n**틀린 선지**\n- ② Ctrl + Shift + ;: 현재 시간을 넣는 키입니다.\n- ③ Ctrl + D: 바로 위 셀의 내용을 아래로 복사하는 키입니다.\n- ④ Ctrl + T: 표를 만드는 키입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "입력"
+    ]
+  },
+  {
+    "id": "computer-literacy-2-p023",
+    "certId": "computer-literacy-2",
+    "subjectId": "spreadsheet",
+    "chapterId": "data-input",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "셀에 1234.5 를 입력하고 사용자 지정 표시 형식을 #,##0 으로 지정했을 때 화면에 표시되는 결과는?",
+    "choices": [
+      "1234.5",
+      "1,235",
+      "1,234",
+      "1,234.5"
+    ],
+    "answer": 2,
+    "oneLineConcept": "#,##0 은 천 단위 쉼표를 넣고 소수는 반올림해 정수로 표시한다",
+    "explanation": "1. #,##0 은 천 단위마다 쉼표를 찍으라는 뜻입니다.\n2. 소수점 아래 자리를 정해 주지 않았으므로 소수 첫째 자리에서 반올림합니다.\n3. 1234.5 → 1235 → **1,235**\n\n화면에 보이는 모양만 바뀌고, 셀에 든 실제 값은 1234.5 그대로입니다.\n\n**틀린 선지**\n- ① 1234.5: 서식이 적용되지 않은 모양입니다.\n- ③ 1,234: 소수를 버린 값입니다. 버림이 아니라 반올림됩니다.\n- ④ 1,234.5: 소수 자리까지 보이려면 서식이 #,##0.0 이어야 합니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "셀 서식"
+    ]
+  },
+  {
+    "id": "computer-literacy-2-p024",
+    "certId": "computer-literacy-2",
+    "subjectId": "spreadsheet",
+    "chapterId": "data-input",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "숫자 10 이 입력된 셀의 채우기 핸들을 Ctrl 키를 누른 채 아래로 세 칸 끌었을 때, 채워지는 값은?",
+    "choices": [
+      "10, 10, 10",
+      "9, 8, 7",
+      "20, 30, 40",
+      "11, 12, 13"
+    ],
+    "answer": 4,
+    "oneLineConcept": "숫자 셀: 그냥 끌면 복사, Ctrl + 끌면 1씩 증가",
+    "explanation": "숫자 하나만 든 셀의 채우기 핸들은 다음과 같이 움직입니다.\n\n1. 그냥 끌기: 같은 값 복사 (10, 10, 10)\n2. **Ctrl 을 누르고 끌기: 1씩 증가 (11, 12, 13)**\n\n**틀린 선지**\n- ① 10, 10, 10: Ctrl 을 누르지 않고 끌었을 때의 결과입니다.\n- ② 9, 8, 7: 위쪽으로 끌었을 때 1씩 줄어드는 모양입니다.\n- ③ 20, 30, 40: 10씩 늘어나게 하려면 10, 20 을 입력한 두 셀을 함께 선택해 끌어야 합니다.",
+    "frequency": 3,
+    "reviewStatus": "unverified",
+    "tags": [
+      "채우기 핸들"
+    ]
+  }
+]

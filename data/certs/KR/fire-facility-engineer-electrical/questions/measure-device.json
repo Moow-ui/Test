@@ -1,0 +1,96 @@
+[
+  {
+    "id": "fire-facility-engineer-electrical-p026",
+    "certId": "fire-facility-engineer-electrical",
+    "subjectId": "fire-electric",
+    "chapterId": "measure-device",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "전류계와 전압계를 부하에 연결하는 방법으로 옳은 것은?",
+    "choices": [
+      "둘 다 직렬로 연결한다.",
+      "전류계는 병렬, 전압계는 직렬로 연결한다.",
+      "전류계는 직렬, 전압계는 병렬로 연결한다.",
+      "둘 다 병렬로 연결한다."
+    ],
+    "answer": 3,
+    "oneLineConcept": "전류계는 직렬, 전압계는 병렬",
+    "explanation": "**전류계**는 흐르는 전류가 그대로 지나가야 하므로 직렬로, **전압계**는 두 점 사이의 전압을 재야 하므로 병렬로 연결합니다.\n\n**틀린 선지**\n- ① 둘 다 직렬로 연결한다.: 전압계를 직렬로 연결하면 회로에 전류가 거의 흐르지 않습니다.\n- ② 전류계는 병렬, 전압계는 직렬로 연결한다.: 전류계를 병렬로 연결하면 큰 전류가 흘러 계기가 탑니다.\n- ④ 둘 다 병렬로 연결한다.: 전류계를 병렬로 연결하면 안 됩니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "계측"
+    ]
+  },
+  {
+    "id": "fire-facility-engineer-electrical-p027",
+    "certId": "fire-facility-engineer-electrical",
+    "subjectId": "fire-electric",
+    "chapterId": "measure-device",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "내부 저항이 10kΩ 인 전압계에 90kΩ 의 배율기를 직렬로 연결하면 측정 범위는 몇 배가 되는가?",
+    "choices": [
+      "9배",
+      "10배",
+      "90배",
+      "100배"
+    ],
+    "answer": 2,
+    "oneLineConcept": "배율 m = 1 + 배율기 저항 ÷ 전압계 내부 저항",
+    "explanation": "1. 공식: m = 1 + Rm ÷ Rv\n2. 숫자 대입: m = 1 + 90 ÷ 10\n3. m = 1 + 9 = 10배\n\n**틀린 선지**\n- ① 9배: 1 을 더하지 않은 값입니다.\n- ③ 90배: 배율기의 저항값을 그대로 쓴 값입니다.\n- ④ 100배: 두 저항을 더한 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "배율기",
+      "계산"
+    ]
+  },
+  {
+    "id": "fire-facility-engineer-electrical-p028",
+    "certId": "fire-facility-engineer-electrical",
+    "subjectId": "fire-electric",
+    "chapterId": "measure-device",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "반도체 소자와 그 주된 용도를 짝지은 것으로 옳지 않은 것은?",
+    "choices": [
+      "제너 다이오드 – 정전압 회로",
+      "서미스터 – 온도 보상",
+      "바리스터 – 서지 전압 흡수",
+      "SCR – 양방향 전류 제어"
+    ],
+    "answer": 4,
+    "oneLineConcept": "SCR은 단방향, 트라이액은 양방향",
+    "explanation": "**SCR(사이리스터)** 은 한 방향으로만 전류를 흘리는 단방향 3단자 소자입니다. 양쪽으로 제어하는 것은 트라이액(TRIAC)입니다.\n\n**틀린 선지**\n- ① 제너 다이오드 – 정전압 회로: 맞는 짝입니다.\n- ② 서미스터 – 온도 보상: 맞는 짝입니다. 온도가 오르면 저항이 줄어드는 성질을 이용합니다.\n- ③ 바리스터 – 서지 전압 흡수: 맞는 짝입니다. 과전압으로부터 회로를 보호합니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "반도체"
+    ]
+  },
+  {
+    "id": "fire-facility-engineer-electrical-p029",
+    "certId": "fire-facility-engineer-electrical",
+    "subjectId": "fire-electric",
+    "chapterId": "measure-device",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "실효값 100V 의 단상 교류를 단상 전파 정류했을 때, 직류 전압의 평균값은 약 몇 V 인가? (정류기의 전압 강하는 무시한다)",
+    "choices": [
+      "90V",
+      "45V",
+      "100V",
+      "141V"
+    ],
+    "answer": 1,
+    "oneLineConcept": "정류 직류 전압: 단상 반파 0.45E, 단상 전파 0.9E",
+    "explanation": "1. 단상 전파 정류: Ed = 0.9 × E\n2. 숫자 대입: Ed = 0.9 × 100\n3. 답: 90V\n\n**틀린 선지**\n- ② 45V: 단상 반파 정류일 때의 값(0.45 × 100)입니다.\n- ③ 100V: 교류의 실효값 그대로입니다.\n- ④ 141V: 교류의 최댓값입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "정류",
+      "계산"
+    ]
+  }
+]

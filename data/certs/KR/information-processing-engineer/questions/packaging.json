@@ -1,0 +1,72 @@
+[
+  {
+    "id": "information-processing-engineer-p022",
+    "certId": "information-processing-engineer",
+    "subjectId": "sw-development",
+    "chapterId": "packaging",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "소프트웨어 형상 관리에 대한 설명으로 옳지 않은 것은?",
+    "choices": [
+      "소프트웨어 개발 과정에서 생기는 변경 사항을 관리하는 활동이다.",
+      "개발이 모두 끝난 뒤의 유지보수 단계에서만 수행한다.",
+      "소스 코드뿐 아니라 설계서, 문서 등도 관리 대상이다.",
+      "대표적인 도구로 Git, SVN 이 있다."
+    ],
+    "answer": 2,
+    "oneLineConcept": "형상 관리는 개발의 모든 단계에서 수행한다",
+    "explanation": "형상 관리는 **개발 처음부터 유지보수까지** 전 과정에서 합니다.\n\n**틀린 선지**\n- ① 소프트웨어 개발 과정에서 생기는 변경 사항을 관리하는 활동이다.: 맞는 설명입니다.\n- ③ 소스 코드뿐 아니라 설계서, 문서 등도 관리 대상이다.: 맞는 설명입니다.\n- ④ 대표적인 도구로 Git, SVN 이 있다.: 맞는 설명입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "형상 관리"
+    ]
+  },
+  {
+    "id": "information-processing-engineer-p023",
+    "certId": "information-processing-engineer",
+    "subjectId": "sw-development",
+    "chapterId": "packaging",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "속성과 값의 쌍(이름 : 값)으로 이루어진 자료를 주고받기 위한, 사람이 읽을 수 있는 글자 기반의 가벼운 데이터 형식은?",
+    "choices": [
+      "DRM",
+      "AJAX",
+      "JSON",
+      "SOAP"
+    ],
+    "answer": 3,
+    "oneLineConcept": "JSON: '이름 : 값' 쌍으로 된 가벼운 데이터 교환 형식",
+    "explanation": "**JSON** 은 {\"이름\": \"홍길동\", \"나이\": 30} 처럼 쓰며, XML 보다 짧고 가벼워 널리 쓰입니다.\n\n**틀린 선지**\n- ① DRM: 디지털 콘텐츠의 저작권을 보호하는 기술입니다.\n- ② AJAX: 화면 전체를 새로 읽지 않고 필요한 자료만 서버와 주고받는 기술입니다.\n- ④ SOAP: XML 을 바탕으로 메시지를 주고받는 통신 규약입니다.",
+    "frequency": 3,
+    "reviewStatus": "unverified",
+    "tags": [
+      "인터페이스 구현"
+    ]
+  },
+  {
+    "id": "information-processing-engineer-p024",
+    "certId": "information-processing-engineer",
+    "subjectId": "sw-development",
+    "chapterId": "packaging",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "버전 관리 도구 Git 에 대한 설명으로 옳지 않은 것은?",
+    "choices": [
+      "분산 저장소 방식으로, 개발자마다 지역 저장소를 가진다.",
+      "네트워크가 끊어진 상태에서도 지역 저장소에 커밋할 수 있다.",
+      "브랜치를 만들어 서로 다른 작업을 나란히 진행할 수 있다.",
+      "원격 저장소의 내용을 지역 저장소로 가져올 때 push 명령을 쓴다."
+    ],
+    "answer": 4,
+    "oneLineConcept": "원격 → 지역은 pull(fetch), 지역 → 원격은 push",
+    "explanation": "**push** 는 내 지역 저장소의 내용을 원격 저장소로 '밀어 올리는' 명령입니다. 원격에서 가져올 때는 pull 이나 fetch 를 씁니다.\n\n**틀린 선지**\n- ① 분산 저장소 방식으로, 개발자마다 지역 저장소를 가진다.: 맞는 설명입니다.\n- ② 네트워크가 끊어진 상태에서도 지역 저장소에 커밋할 수 있다.: 맞는 설명입니다.\n- ③ 브랜치를 만들어 서로 다른 작업을 나란히 진행할 수 있다.: 맞는 설명입니다.",
+    "frequency": 3,
+    "reviewStatus": "unverified",
+    "tags": [
+      "형상 관리",
+      "Git"
+    ]
+  }
+]

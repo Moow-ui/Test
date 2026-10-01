@@ -1,0 +1,49 @@
+[
+  {
+    "id": "electrical-engineer-p023",
+    "certId": "electrical-engineer",
+    "subjectId": "power-engineering",
+    "chapterId": "generation",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "유효 낙차 100m, 사용 유량 10m³/s, 수차와 발전기의 종합 효율이 80% 인 수력 발전소의 출력은 몇 kW 인가?",
+    "choices": [
+      "8,000kW",
+      "9,800kW",
+      "7,840kW",
+      "12,250kW"
+    ],
+    "answer": 3,
+    "oneLineConcept": "수력 발전 출력 P = 9.8 × Q × H × η [kW]",
+    "explanation": "1. 공식: P = 9.8 × Q × H × η\n2. 숫자 대입: P = 9.8 × 10 × 100 × 0.8\n3. P = 9,800 × 0.8 = 7,840kW\n\n**틀린 선지**\n- ① 8,000kW: 9.8 대신 10 을 곱한 값입니다.\n- ② 9,800kW: 효율을 곱하지 않은 값(이론 출력)입니다.\n- ④ 12,250kW: 효율로 나눈 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "수력 발전",
+      "계산"
+    ]
+  },
+  {
+    "id": "electrical-engineer-p024",
+    "certId": "electrical-engineer",
+    "subjectId": "power-engineering",
+    "chapterId": "generation",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "화력 발전소에서 보일러를 나온 배기가스의 남은 열을 이용하여 보일러 급수를 미리 데우는 장치는?",
+    "choices": [
+      "과열기",
+      "재열기",
+      "공기 예열기",
+      "절탄기"
+    ],
+    "answer": 4,
+    "oneLineConcept": "절탄기: 배기가스의 열로 급수를 데운다",
+    "explanation": "**절탄기**는 '석탄을 아끼는 장치'라는 뜻입니다. 버려지는 배기가스의 열로 물을 미리 데워 연료를 아낍니다.\n\n**틀린 선지**\n- ① 과열기: 포화 증기를 더 가열해 과열 증기로 만드는 장치입니다.\n- ② 재열기: 고압 터빈에서 나온 증기를 다시 가열해 저압 터빈으로 보내는 장치입니다.\n- ③ 공기 예열기: 배기가스의 열로 연소용 공기를 데우는 장치입니다.",
+    "frequency": 3,
+    "reviewStatus": "unverified",
+    "tags": [
+      "화력 발전"
+    ]
+  }
+]

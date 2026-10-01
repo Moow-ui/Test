@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { Markdown } from "@/components/Markdown";
 import { QuestionBadges } from "@/components/quiz/QuestionBadges";
+import { useQuestions } from "@/lib/data/client";
 import { circled } from "@/lib/format";
 import { fmt, localePath } from "@/lib/i18n";
 import {
@@ -19,13 +20,7 @@ import { useMessages } from "@/lib/use-messages";
 import { useHydrated, useStored } from "@/lib/use-storage";
 
 /** 자격증별 오답노트: 틀린 문제 + 정답 + 해설, 인쇄(흑백 기준), 다시 풀기 */
-export function NotesView({
-  cert,
-  questions,
-}: {
-  cert: { id: string; name: string; subjects: Subject[] };
-  questions: Question[];
-}) {
+export function NotesView({ cert }: { cert: { id: string; name: string; subjects: Subject[] } }) {
   const hydrated = useHydrated();
   const { locale, m: all, brand } = useMessages();
   const m = all.notes;
@@ -33,9 +28,14 @@ export function NotesView({
   const allNotes = useStored<NoteEntry[]>(STORAGE_KEYS.notes, EMPTY_NOTES);
   const [confirmClear, setConfirmClear] = useState(false);
 
-  const byId = new Map(questions.map((q) => [q.id, q]));
-  const notes = allNotes
-    .filter((n) => n.certId === cert.id)
+  // 오답노트에 담긴 문제가 들어 있는 단원 파일만 받는다
+  const certNotes = allNotes.filter((n) => n.certId === cert.id);
+  const loaded = useQuestions(
+    cert.id,
+    certNotes.map((n) => n.questionId),
+  );
+  const byId = new Map((loaded ?? []).map((q) => [q.id, q]));
+  const notes = certNotes
     .map((n) => ({ note: n, question: byId.get(n.questionId) }))
     .filter((x): x is { note: NoteEntry; question: Question } => !!x.question);
 
@@ -54,12 +54,12 @@ export function NotesView({
           </Link>
         </p>
         <h1 className="mt-1 text-2xl font-extrabold">
-          {fmt(m.certTitle, { name: cert.name })} {hydrated && fmt(m.countSuffix, { n: notes.length })}
+          {fmt(m.certTitle, { name: cert.name })} {hydrated && loaded && fmt(m.countSuffix, { n: notes.length })}
         </h1>
         <p className="print-only text-[0.9rem]">{fmt(m.printHeader, { brand })}</p>
       </header>
 
-      {!hydrated ? (
+      {!hydrated || !loaded ? (
         <p className="card p-4 font-bold">{m.loading}</p>
       ) : notes.length === 0 ? (
         <div className="card space-y-3 p-5">

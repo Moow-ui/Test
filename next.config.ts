@@ -5,9 +5,14 @@ import type { NextConfig } from "next";
 const LEGACY_PATHS = ["/cert/:path*", "/notes", "/profile", "/admin/reports"];
 
 const nextConfig: NextConfig = {
-  // lib/data.ts 와 OG 이미지가 실행 중에 읽는 파일을 서버 번들에 포함시킨다
+  // OG 이미지가 쓰는 글꼴만 서버 묶음에 넣는다.
+  // /data 는 넣지 않는다: 모든 페이지는 빌드 때 만들어지고, 문제는 정적 파일(public/data)로 배포한다.
+  // (Worker 는 코드 크기 제한이 있어 자격증이 늘면 배포가 막힌다)
   outputFileTracingIncludes: {
-    "/**": ["./data/**/*", "./assets/fonts/*"],
+    "/**": ["./assets/fonts/*"],
+  },
+  outputFileTracingExcludes: {
+    "/**": ["./data/**/*", "./public/data/**/*"],
   },
   // 예전 주소 → /ko 주소 (301: 검색엔진이 새 주소로 바꿔 기억한다)
   async redirects() {

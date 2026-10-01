@@ -1,0 +1,119 @@
+[
+  {
+    "id": "industrial-safety-engineer-p031",
+    "certId": "industrial-safety-engineer",
+    "subjectId": "electric",
+    "chapterId": "electric-shock",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "감전되었을 때 위험의 정도를 좌우하는 요소로 가장 거리가 먼 것은?",
+    "choices": [
+      "통전 전류의 크기",
+      "통전 경로",
+      "통전 시간",
+      "전선의 색깔"
+    ],
+    "answer": 4,
+    "oneLineConcept": "감전 위험 요소: 전류의 크기, 경로, 시간, 전원의 종류",
+    "explanation": "감전의 피해는 **몸에 흐른 전류의 크기, 흐른 길(심장을 지나는지), 흐른 시간, 전원의 종류(교류·직류, 주파수)**로 정해집니다. 전선의 색은 관계가 없습니다.\n\n**틀린 선지**\n- ① 통전 전류의 크기: 가장 큰 영향을 주는 요소입니다.\n- ② 통전 경로: 전류가 심장을 지나면 훨씬 위험합니다.\n- ③ 통전 시간: 오래 흐를수록 위험합니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "감전"
+    ]
+  },
+  {
+    "id": "industrial-safety-engineer-p032",
+    "certId": "industrial-safety-engineer",
+    "subjectId": "electric",
+    "chapterId": "electric-shock",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "감전 방지용으로 쓰는 누전 차단기의 정격 감도 전류와 동작 시간으로 옳은 것은?",
+    "choices": [
+      "30mA 이하, 0.03초 이내",
+      "50mA 이하, 0.1초 이내",
+      "100mA 이하, 0.03초 이내",
+      "30mA 이하, 1초 이내"
+    ],
+    "answer": 1,
+    "oneLineConcept": "감전 방지용 누전 차단기: 30mA 이하, 0.03초 이내",
+    "explanation": "사람이 감전되었을 때 심장에 무리가 가기 전에 끊으려면 **30mA 이하의 누설 전류에서 0.03초 안에** 동작해야 합니다.\n\n**틀린 선지**\n- ② 50mA 이하, 0.1초 이내: 기준보다 둔하고 느립니다.\n- ③ 100mA 이하, 0.03초 이내: 감도 전류가 너무 큽니다.\n- ④ 30mA 이하, 1초 이내: 동작 시간이 너무 깁니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "누전 차단기"
+    ]
+  },
+  {
+    "id": "industrial-safety-engineer-p033",
+    "certId": "industrial-safety-engineer",
+    "subjectId": "electric",
+    "chapterId": "electric-shock",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "심실세동 전류를 I = 165 ÷ √T (mA)라고 할 때, 통전 시간이 1초이면 심실세동을 일으키는 전류는 약 몇 mA 인가?",
+    "choices": [
+      "16.5mA",
+      "100mA",
+      "165mA",
+      "330mA"
+    ],
+    "answer": 3,
+    "oneLineConcept": "심실세동 전류 I = 165 ÷ √T (mA)",
+    "explanation": "1. 공식: I = 165 ÷ √T\n2. T = 1초를 넣으면 √1 = 1\n3. I = 165 ÷ 1 = 165mA\n\n심실세동은 심장이 파르르 떨기만 하고 피를 보내지 못하는 상태로, 감전 사망의 가장 큰 원인입니다.\n\n**틀린 선지**\n- ① 16.5mA: 계산이 틀린 값입니다.\n- ② 100mA: 계산이 틀린 값입니다.\n- ④ 330mA: 통전 시간이 0.25초일 때의 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "감전",
+      "계산"
+    ]
+  },
+  {
+    "id": "industrial-safety-engineer-p034",
+    "certId": "industrial-safety-engineer",
+    "subjectId": "electric",
+    "chapterId": "electric-shock",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "정전 작업을 할 때의 조치 순서로 옳은 것은?",
+    "choices": [
+      "검전기로 확인 → 전원 차단 → 단락 접지 → 잔류 전하 방전 → 꼬리표 부착",
+      "전원 차단 → 잠금 장치·꼬리표 부착 → 잔류 전하 방전 → 검전기로 확인 → 단락 접지",
+      "단락 접지 → 전원 차단 → 검전기로 확인 → 잔류 전하 방전 → 꼬리표 부착",
+      "전원 차단 → 단락 접지 → 검전기로 확인 → 잔류 전하 방전 → 꼬리표 부착"
+    ],
+    "answer": 2,
+    "oneLineConcept": "정전 작업: 차단 → 잠금·표지 → 방전 → 검전 → 단락 접지",
+    "explanation": "1. 전원을 끊습니다.\n2. 다른 사람이 다시 켜지 못하게 잠그고 꼬리표를 답니다.\n3. 콘덴서나 케이블에 남은 전기를 뺍니다.\n4. 검전기로 전기가 없는지 확인합니다.\n5. 실수로 전기가 들어와도 안전하도록 단락 접지 기구로 접지합니다.\n\n**틀린 선지**\n- ① 검전기로 확인 → 전원 차단 → 단락 접지 → 잔류 전하 방전 → 꼬리표 부착: 전원 차단이 가장 먼저입니다.\n- ③ 단락 접지 → 전원 차단 → 검전기로 확인 → 잔류 전하 방전 → 꼬리표 부착: 전기가 살아 있을 때 접지하면 사고가 납니다.\n- ④ 전원 차단 → 단락 접지 → 검전기로 확인 → 잔류 전하 방전 → 꼬리표 부착: 전기가 없는지 확인한 뒤에 접지합니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "정전 작업"
+    ]
+  },
+  {
+    "id": "industrial-safety-engineer-p035",
+    "certId": "industrial-safety-engineer",
+    "subjectId": "electric",
+    "chapterId": "electric-shock",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "인체의 전기 저항을 500Ω, 심실세동 전류를 I = 165 ÷ √T (mA)라고 할 때, 통전 시간 1초 동안 인체에 전달되어 심실세동을 일으키는 전기 에너지는 약 몇 J 인가?",
+    "choices": [
+      "6.8J",
+      "13.6J",
+      "27.2J",
+      "82.5J"
+    ],
+    "answer": 2,
+    "oneLineConcept": "위험 한계 에너지 W = I² × R × T ≈ 13.6J",
+    "explanation": "1. 전류 I = 165mA = 0.165A (T = 1초)\n2. 에너지 W = I² × R × T\n3. W = 0.165 × 0.165 × 500 × 1\n4. W = 0.027225 × 500 ≈ 13.6J\n\n**틀린 선지**\n- ① 6.8J: 절반으로 잘못 계산한 값입니다.\n- ③ 27.2J: 두 배로 잘못 계산한 값입니다.\n- ④ 82.5J: 전류를 제곱하지 않고 곱한 값(0.165 × 500)입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "감전",
+      "계산"
+    ]
+  }
+]

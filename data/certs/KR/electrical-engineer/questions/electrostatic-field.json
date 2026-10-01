@@ -1,0 +1,120 @@
+[
+  {
+    "id": "electrical-engineer-p001",
+    "certId": "electrical-engineer",
+    "subjectId": "electromagnetics",
+    "chapterId": "electrostatic-field",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "공기 중에서 2 × 10⁻⁶ C 과 3 × 10⁻⁶ C 의 두 점전하가 0.3m 떨어져 있을 때, 두 전하 사이에 작용하는 힘의 크기는 몇 N 인가?",
+    "choices": [
+      "0.06N",
+      "0.18N",
+      "0.6N",
+      "1.8N"
+    ],
+    "answer": 3,
+    "oneLineConcept": "쿨롱의 법칙: F = 9 × 10⁹ × Q1 × Q2 ÷ r²",
+    "explanation": "1. Q1 × Q2 = 2 × 10⁻⁶ × 3 × 10⁻⁶ = 6 × 10⁻¹²\n2. r² = 0.3 × 0.3 = 0.09\n3. F = 9 × 10⁹ × 6 × 10⁻¹² ÷ 0.09\n4. F = 0.054 ÷ 0.09 = 0.6N\n\n**틀린 선지**\n- ① 0.06N: 자릿수를 잘못 계산한 값입니다.\n- ② 0.18N: 거리를 제곱하지 않고 0.3 으로 나눈 값입니다.\n- ④ 1.8N: 계산이 틀린 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "쿨롱의 법칙",
+      "계산"
+    ]
+  },
+  {
+    "id": "electrical-engineer-p002",
+    "certId": "electrical-engineer",
+    "subjectId": "electromagnetics",
+    "chapterId": "electrostatic-field",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "평행판 콘덴서의 극판 사이 간격을 2배로 넓히면 정전용량은 어떻게 되는가? (다른 조건은 같다)",
+    "choices": [
+      "1/2 배가 된다.",
+      "2배가 된다.",
+      "4배가 된다.",
+      "변하지 않는다."
+    ],
+    "answer": 1,
+    "oneLineConcept": "평행판 콘덴서 C = ε × S ÷ d: 간격에 반비례한다",
+    "explanation": "정전용량은 극판 넓이(S)에 비례하고 **간격(d)에 반비례**합니다. 간격이 2배가 되면 정전용량은 절반이 됩니다.\n\n**틀린 선지**\n- ② 2배가 된다.: 간격을 절반으로 줄였을 때의 결과입니다.\n- ③ 4배가 된다.: 제곱에 비례하는 관계가 아닙니다.\n- ④ 변하지 않는다.: 간격이 바뀌면 정전용량도 바뀝니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "정전용량"
+    ]
+  },
+  {
+    "id": "electrical-engineer-p003",
+    "certId": "electrical-engineer",
+    "subjectId": "electromagnetics",
+    "chapterId": "electrostatic-field",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "정전용량이 10μF 인 콘덴서에 100V 의 전압을 가했을 때 저장되는 에너지는 몇 J 인가?",
+    "choices": [
+      "0.005J",
+      "0.05J",
+      "0.1J",
+      "0.5J"
+    ],
+    "answer": 2,
+    "oneLineConcept": "콘덴서의 에너지 W = ½ × C × V²",
+    "explanation": "1. C = 10μF = 10 × 10⁻⁶ F\n2. W = ½ × 10 × 10⁻⁶ × 100²\n3. W = ½ × 10 × 10⁻⁶ × 10,000 = ½ × 0.1\n4. W = 0.05J\n\n**틀린 선지**\n- ① 0.005J: 자릿수를 잘못 계산한 값입니다.\n- ③ 0.1J: ½ 을 곱하지 않은 값입니다.\n- ④ 0.5J: 자릿수를 잘못 계산한 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "정전 에너지",
+      "계산"
+    ]
+  },
+  {
+    "id": "electrical-engineer-p004",
+    "certId": "electrical-engineer",
+    "subjectId": "electromagnetics",
+    "chapterId": "electrostatic-field",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "정전 평형 상태에 있는 도체에 대한 설명으로 옳지 않은 것은?",
+    "choices": [
+      "도체 내부의 전계는 0 이다.",
+      "전하는 도체 표면에만 분포한다.",
+      "도체 표면은 등전위면이다.",
+      "전하는 표면의 곡률 반지름이 큰(평평한) 곳에 많이 모인다."
+    ],
+    "answer": 4,
+    "oneLineConcept": "전하는 뾰족한 곳(곡률 반지름이 작은 곳)에 많이 모인다",
+    "explanation": "전하는 **뾰족한 곳**에 몰립니다. 뾰족하다는 것은 곡률 반지름이 작다는 뜻입니다. 피뢰침 끝을 뾰족하게 만드는 것도 이 때문입니다.\n\n**틀린 선지**\n- ① 도체 내부의 전계는 0 이다.: 맞는 설명입니다.\n- ② 전하는 도체 표면에만 분포한다.: 맞는 설명입니다.\n- ③ 도체 표면은 등전위면이다.: 맞는 설명입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "도체"
+    ]
+  },
+  {
+    "id": "electrical-engineer-p005",
+    "certId": "electrical-engineer",
+    "subjectId": "electromagnetics",
+    "chapterId": "electrostatic-field",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "공기 콘덴서의 극판 사이를 비유전율 4 인 유전체로 가득 채웠다. 전원을 연결한 채(전압 일정)라면 콘덴서에 저장되는 에너지는 처음의 몇 배가 되는가?",
+    "choices": [
+      "1/4 배",
+      "1/2 배",
+      "2배",
+      "4배"
+    ],
+    "answer": 4,
+    "oneLineConcept": "전압이 일정하면 W = ½CV² 이므로 에너지는 정전용량에 비례한다",
+    "explanation": "1. 유전체를 채우면 정전용량이 비유전율 배, 곧 4배가 됩니다.\n2. 전압 V 가 일정하므로 W = ½ × C × V² 에서 W 는 C 에 비례합니다.\n3. 따라서 에너지도 4배가 됩니다.\n\n참고로 전원을 뗀 상태(전하 일정)라면 W = Q² ÷ (2C) 이므로 1/4 배가 됩니다.\n\n**틀린 선지**\n- ① 1/4 배: 전원을 뗀 상태(전하 일정)일 때의 결과입니다.\n- ② 1/2 배: 계산이 틀린 값입니다.\n- ③ 2배: 계산이 틀린 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "유전체",
+      "정전 에너지"
+    ]
+  }
+]

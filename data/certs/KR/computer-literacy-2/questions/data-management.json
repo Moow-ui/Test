@@ -1,0 +1,117 @@
+[
+  {
+    "id": "computer-literacy-2-p032",
+    "certId": "computer-literacy-2",
+    "subjectId": "spreadsheet",
+    "chapterId": "data-management",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "부분합을 실행하기 전에 반드시 먼저 해야 하는 작업은?",
+    "choices": [
+      "셀을 병합한다.",
+      "자동 필터를 설정한다.",
+      "피벗 테이블을 만든다.",
+      "그룹으로 묶을 항목을 기준으로 정렬한다."
+    ],
+    "answer": 4,
+    "oneLineConcept": "부분합 전에는 그룹화할 항목으로 먼저 정렬한다",
+    "explanation": "부분합은 같은 값이 **연달아 있는 구간**마다 소계를 냅니다. 정렬하지 않으면 같은 항목이 흩어져 있어 소계가 여러 번 따로 나옵니다.\n\n**틀린 선지**\n- ① 셀을 병합한다.: 병합된 셀이 있으면 오히려 정렬과 부분합이 제대로 되지 않습니다.\n- ② 자동 필터를 설정한다.: 필터는 부분합의 준비 작업이 아닙니다.\n- ③ 피벗 테이블을 만든다.: 피벗 테이블은 부분합과 별개의 기능입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "부분합"
+    ]
+  },
+  {
+    "id": "computer-literacy-2-p033",
+    "certId": "computer-literacy-2",
+    "subjectId": "spreadsheet",
+    "chapterId": "data-management",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "고급 필터의 조건 범위에서 두 조건을 서로 다른 행에 입력했을 때의 의미는?",
+    "choices": [
+      "두 조건을 모두 만족 (AND)",
+      "두 조건 중 하나라도 만족 (OR)",
+      "두 조건 모두 만족하지 않음",
+      "첫 번째 조건만 적용"
+    ],
+    "answer": 2,
+    "oneLineConcept": "고급 필터: 같은 행은 AND, 다른 행은 OR",
+    "explanation": "고급 필터의 조건은 **같은 행에 쓰면 '그리고'**, **다른 행에 쓰면 '또는'**으로 묶입니다.\n\n**틀린 선지**\n- ① 두 조건을 모두 만족 (AND): 같은 행에 썼을 때의 의미입니다.\n- ③ 두 조건 모두 만족하지 않음: 이런 뜻으로 쓰이지 않습니다.\n- ④ 첫 번째 조건만 적용: 입력한 조건은 모두 적용됩니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "필터"
+    ]
+  },
+  {
+    "id": "computer-literacy-2-p034",
+    "certId": "computer-literacy-2",
+    "subjectId": "spreadsheet",
+    "chapterId": "data-management",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "피벗 테이블에 대한 설명으로 옳지 않은 것은?",
+    "choices": [
+      "많은 양의 데이터를 요약하고 분석할 때 쓴다.",
+      "행, 열, 값, 필터 영역에 필드를 끌어다 놓아 구성한다.",
+      "원본 데이터를 고치면 피벗 테이블에도 자동으로 바로 반영된다.",
+      "피벗 테이블을 바탕으로 피벗 차트를 만들 수 있다."
+    ],
+    "answer": 3,
+    "oneLineConcept": "피벗 테이블은 원본이 바뀌면 '새로 고침'을 해야 반영된다",
+    "explanation": "피벗 테이블은 원본을 한 번 읽어 와서 만든 요약표입니다. 원본을 고친 뒤에는 **새로 고침**을 눌러야 바뀐 내용이 반영됩니다.\n\n**틀린 선지**\n- ① 많은 양의 데이터를 요약하고 분석할 때 쓴다.: 맞는 설명입니다.\n- ② 행, 열, 값, 필터 영역에 필드를 끌어다 놓아 구성한다.: 맞는 설명입니다.\n- ④ 피벗 테이블을 바탕으로 피벗 차트를 만들 수 있다.: 맞는 설명입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "피벗 테이블"
+    ]
+  },
+  {
+    "id": "computer-literacy-2-p035",
+    "certId": "computer-literacy-2",
+    "subjectId": "spreadsheet",
+    "chapterId": "data-management",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "\"월 납입액이 50만 원이 되려면 대출 금액을 얼마로 해야 하는가?\"처럼, 수식의 결과값을 정해 놓고 그 결과를 얻는 데 필요한 입력값을 찾는 기능은?",
+    "choices": [
+      "목표값 찾기",
+      "시나리오 관리자",
+      "데이터 표",
+      "통합"
+    ],
+    "answer": 1,
+    "oneLineConcept": "목표값 찾기: 원하는 결과가 나오게 하는 입력값 하나를 찾는다",
+    "explanation": "**목표값 찾기**는 결과에서 거꾸로 입력값을 찾아 줍니다. 바꿀 수 있는 입력값은 하나뿐입니다.\n\n**틀린 선지**\n- ② 시나리오 관리자: 여러 입력값을 바꿔 가며 결과가 어떻게 달라지는지 비교하는 기능입니다.\n- ③ 데이터 표: 입력값의 변화에 따른 결과를 표 모양으로 한꺼번에 보여 주는 기능입니다.\n- ④ 통합: 여러 시트에 흩어진 데이터를 하나로 합쳐 요약하는 기능입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "가상 분석"
+    ]
+  },
+  {
+    "id": "computer-literacy-2-p036",
+    "certId": "computer-literacy-2",
+    "subjectId": "spreadsheet",
+    "chapterId": "data-management",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "엑셀의 정렬에 대한 설명으로 옳지 않은 것은?",
+    "choices": [
+      "정렬 기준은 최대 64개까지 지정할 수 있다.",
+      "오름차순 정렬에서 숫자는 문자보다 앞에 놓인다.",
+      "셀 색이나 글꼴 색을 기준으로 정렬할 수 있다.",
+      "빈 셀은 오름차순에서는 맨 앞, 내림차순에서는 맨 뒤에 놓인다."
+    ],
+    "answer": 4,
+    "oneLineConcept": "빈 셀은 오름차순·내림차순 모두 맨 마지막에 놓인다",
+    "explanation": "빈 셀은 정렬 방향과 상관없이 **항상 맨 마지막**에 놓입니다. 오름차순의 순서는 숫자 → 문자 → 논리값 → 오류 값 → 빈 셀입니다.\n\n**틀린 선지**\n- ① 정렬 기준은 최대 64개까지 지정할 수 있다.: 맞는 설명입니다.\n- ② 오름차순 정렬에서 숫자는 문자보다 앞에 놓인다.: 맞는 설명입니다.\n- ③ 셀 색이나 글꼴 색을 기준으로 정렬할 수 있다.: 맞는 설명입니다.",
+    "frequency": 3,
+    "reviewStatus": "unverified",
+    "tags": [
+      "정렬"
+    ]
+  }
+]

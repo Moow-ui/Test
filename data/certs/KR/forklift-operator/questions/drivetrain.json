@@ -1,0 +1,94 @@
+[
+  {
+    "id": "forklift-operator-p040",
+    "certId": "forklift-operator",
+    "subjectId": "structure",
+    "chapterId": "drivetrain",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "일반적인 카운터밸런스형 지게차의 구동 방식과 조향 방식으로 옳은 것은?",
+    "choices": [
+      "뒷바퀴 구동, 뒷바퀴 조향",
+      "뒷바퀴 구동, 앞바퀴 조향",
+      "앞바퀴 구동, 앞바퀴 조향",
+      "앞바퀴 구동, 뒷바퀴 조향"
+    ],
+    "answer": 4,
+    "oneLineConcept": "지게차: 앞바퀴로 구동하고 뒷바퀴로 방향을 바꾼다",
+    "explanation": "화물의 무게가 앞바퀴에 실리므로 **앞바퀴로 구동**해야 힘을 잘 전달합니다. 또 **뒷바퀴로 방향을 바꾸면** 좁은 곳에서도 작게 돌 수 있습니다. 승용차와 반대여서 처음에는 낯설 수 있습니다.\n\n**틀린 선지**\n- ① 뒷바퀴 구동, 뒷바퀴 조향: 지게차의 방식이 아닙니다.\n- ② 뒷바퀴 구동, 앞바퀴 조향: 일반 화물차의 방식입니다.\n- ③ 앞바퀴 구동, 앞바퀴 조향: 지게차의 방식이 아닙니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "주행장치"
+    ]
+  },
+  {
+    "id": "forklift-operator-p041",
+    "certId": "forklift-operator",
+    "subjectId": "structure",
+    "chapterId": "drivetrain",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "토크 컨버터의 3대 구성 요소로 옳은 것은?",
+    "choices": [
+      "펌프, 터빈, 스테이터",
+      "펌프, 클러치판, 압력판",
+      "터빈, 플라이휠, 릴리스 베어링",
+      "스테이터, 변속 기어, 추진축"
+    ],
+    "answer": 1,
+    "oneLineConcept": "토크 컨버터 = 펌프(임펠러) + 터빈 + 스테이터",
+    "explanation": "토크 컨버터는 기름의 흐름으로 힘을 전달합니다.\n\n1. 펌프(임펠러): 엔진과 함께 돌며 기름을 밀어냄\n2. 터빈: 그 기름을 받아 돌면서 변속기로 힘을 전달\n3. 스테이터: 기름의 방향을 바꿔 돌리는 힘(토크)을 키움\n\n**틀린 선지**\n- ② 펌프, 클러치판, 압력판: 클러치판과 압력판은 마찰 클러치의 부품입니다.\n- ③ 터빈, 플라이휠, 릴리스 베어링: 플라이휠과 릴리스 베어링은 마찰 클러치 쪽 부품입니다.\n- ④ 스테이터, 변속 기어, 추진축: 변속 기어와 추진축은 다른 장치입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "토크 컨버터"
+    ]
+  },
+  {
+    "id": "forklift-operator-p042",
+    "certId": "forklift-operator",
+    "subjectId": "structure",
+    "chapterId": "drivetrain",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "긴 내리막길에서 브레이크를 계속 밟았더니 마찰열 때문에 제동력이 떨어졌다. 이 현상은?",
+    "choices": [
+      "베이퍼 록 현상",
+      "페이드 현상",
+      "노킹 현상",
+      "수막 현상"
+    ],
+    "answer": 2,
+    "oneLineConcept": "페이드: 마찰열로 브레이크가 밀리는 현상",
+    "explanation": "브레이크 라이닝과 드럼이 뜨거워지면 마찰력이 줄어 브레이크가 **밀립니다.** 이것이 페이드 현상입니다. 긴 내리막에서는 엔진 브레이크를 함께 써야 합니다.\n\n**틀린 선지**\n- ① 베이퍼 록 현상: 브레이크 오일이 끓어 기포가 생기고 페달이 푹 들어가는 현상입니다.\n- ③ 노킹 현상: 엔진에서 연료가 비정상적으로 타며 소리가 나는 현상입니다.\n- ④ 수막 현상: 젖은 길에서 타이어가 물 위에 뜨는 현상입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "제동 장치"
+    ]
+  },
+  {
+    "id": "forklift-operator-p050",
+    "certId": "forklift-operator",
+    "subjectId": "structure",
+    "chapterId": "drivetrain",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "유압식 브레이크의 페달을 밟았을 때 스펀지를 밟는 것처럼 푹 들어가며 제동이 잘 되지 않는다. 가장 관계 깊은 원인은?",
+    "choices": [
+      "브레이크 오일 회로에 공기(기포)가 들어 있다.",
+      "타이어 공기압이 높다.",
+      "브레이크 페달의 유격이 너무 작다.",
+      "엔진 오일이 부족하다."
+    ],
+    "answer": 1,
+    "oneLineConcept": "브레이크 회로에 기포가 있으면 페달이 스펀지처럼 들어간다",
+    "explanation": "기름은 눌러도 부피가 줄지 않지만 **공기는 눌리면 쪼그라듭니다.** 회로에 공기가 있으면 페달을 밟은 힘이 공기를 누르는 데 쓰여 바퀴까지 전달되지 않습니다. 공기 빼기 작업을 해야 합니다.\n\n**틀린 선지**\n- ② 타이어 공기압이 높다.: 브레이크 페달의 느낌과 관계가 없습니다.\n- ③ 브레이크 페달의 유격이 너무 작다.: 유격이 작으면 브레이크가 끌리는 현상이 생깁니다.\n- ④ 엔진 오일이 부족하다.: 브레이크와 관계가 없습니다.",
+    "frequency": 3,
+    "reviewStatus": "unverified",
+    "tags": [
+      "제동 장치"
+    ]
+  }
+]

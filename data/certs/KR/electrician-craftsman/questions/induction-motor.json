@@ -1,0 +1,102 @@
+[
+  {
+    "id": "electrician-craftsman-p035",
+    "certId": "electrician-craftsman",
+    "subjectId": "electric-machines",
+    "chapterId": "induction-motor",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "3상 유도전동기의 회전 방향을 반대로 바꾸려면 어떻게 해야 하는가?",
+    "choices": [
+      "전원 전압을 낮춘다.",
+      "전원 주파수를 높인다.",
+      "전원 3선을 모두 차례로 옮겨 연결한다.",
+      "전원 3선 중 2선을 서로 바꿔 연결한다."
+    ],
+    "answer": 4,
+    "oneLineConcept": "3상 유도전동기 역회전: 전원 3선 중 2선을 바꾼다",
+    "explanation": "3상 유도전동기는 세 전선에 들어오는 전기의 순서(**상회전 방향**)에 따라 회전 자기장이 도는 방향이 정해집니다. 세 선 중 **아무 2선이나 서로 바꾸면** 순서가 뒤집혀 반대로 돕니다.\n\n**틀린 선지**\n- ① 전압을 낮추면 힘(토크)이 약해질 뿐 방향은 그대로입니다.\n- ② 주파수를 높이면 속도가 빨라질 뿐 방향은 그대로입니다.\n- ③ 3선을 모두 차례로 옮기면(R→S, S→T, T→R) 순서가 그대로여서 회전 방향이 바뀌지 않습니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "유도전동기",
+      "회전 방향",
+      "개념"
+    ]
+  },
+  {
+    "id": "electrician-craftsman-p036",
+    "certId": "electrician-craftsman",
+    "subjectId": "electric-machines",
+    "chapterId": "induction-motor",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "4극, 60Hz인 3상 유도전동기가 슬립 5%로 운전하고 있다. 이때 회전속도는 몇 rpm인가?",
+    "choices": [
+      "90rpm",
+      "1620rpm",
+      "1710rpm",
+      "1800rpm"
+    ],
+    "answer": 3,
+    "oneLineConcept": "회전속도 N = (1 − 슬립) × 동기속도",
+    "explanation": "유도전동기는 회전 자기장(동기속도)보다 조금 느리게 돕니다. 얼마나 느린지를 나타내는 비율이 **슬립**입니다.\n\n1. 동기속도: Ns = 120 × f ÷ P = 120 × 60 ÷ 4 = 1800rpm\n2. 슬립 5% = 0.05\n3. 회전속도: N = (1 − 0.05) × 1800\n4. 0.95 × 1800 = 1710\n5. 답: 1710rpm\n\n**틀린 선지**\n- ① 90rpm: 동기속도보다 느려진 만큼의 속도(1800 × 0.05)입니다.\n- ② 1620rpm: 슬립을 10%로 계산한 값입니다.\n- ④ 1800rpm: 동기속도입니다. 유도전동기는 동기속도로 돌 수 없습니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "유도전동기",
+      "슬립",
+      "계산"
+    ]
+  },
+  {
+    "id": "electrician-craftsman-p037",
+    "certId": "electrician-craftsman",
+    "subjectId": "electric-machines",
+    "chapterId": "induction-motor",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "3상 유도전동기를 Y-Δ 기동할 때, 기동 전류와 기동 토크는 Δ결선으로 직접 기동할 때의 각각 몇 배가 되는가?",
+    "choices": [
+      "기동 전류 1/3배, 기동 토크 1/3배",
+      "기동 전류 1/3배, 기동 토크 1/√3배",
+      "기동 전류 1/√3배, 기동 토크 1/3배",
+      "기동 전류 1/√3배, 기동 토크 1/√3배"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Y-Δ 기동: 기동 전류도 1/3, 기동 토크도 1/3",
+    "explanation": "**Y-Δ 기동**은 출발할 때만 Y결선으로 연결했다가 속도가 오르면 Δ결선으로 바꾸는 방법입니다. 큰 기동 전류를 줄이기 위해 씁니다.\n\n- Y결선으로 하면 코일 하나에 걸리는 전압이 1/√3 로 줄어듭니다.\n- 전원에서 들어오는 **기동 전류는 1/3** 로 줄어듭니다.\n- 토크는 전압의 제곱에 비례하므로 (1/√3)² = **1/3** 로 줄어듭니다.\n\n즉 전류와 토크가 **둘 다 1/3** 입니다.\n\n**틀린 선지**\n- ②, ③, ④ 1/√3 로 줄어드는 것은 코일 하나에 걸리는 전압입니다. 선전류와 토크는 모두 1/3 입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "유도전동기",
+      "Y-Δ 기동",
+      "개념"
+    ]
+  },
+  {
+    "id": "electrician-craftsman-p038",
+    "certId": "electrician-craftsman",
+    "subjectId": "electric-machines",
+    "chapterId": "induction-motor",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "3상 유도전동기의 2차 입력(회전자로 전달되는 전력)이 10kW이고 슬립이 4%일 때 기계적 출력은 몇 kW인가?",
+    "choices": [
+      "0.4kW",
+      "9.6kW",
+      "10kW",
+      "10.4kW"
+    ],
+    "answer": 2,
+    "oneLineConcept": "기계적 출력 = (1 − 슬립) × 2차 입력",
+    "explanation": "회전자로 넘어온 전력(2차 입력) 중 슬립만큼은 회전자 코일에서 열로 없어지고(**2차 동손**), 나머지가 회전하는 힘(**기계적 출력**)이 됩니다.\n\n1. 슬립 4% = 0.04\n2. 2차 동손: 0.04 × 10 = 0.4kW\n3. 기계적 출력: (1 − 0.04) × 10\n4. 0.96 × 10 = 9.6\n5. 답: 9.6kW\n\n검산: 9.6 + 0.4 = 10kW 로 2차 입력과 같습니다.\n\n**틀린 선지**\n- ① 0.4kW: 2차 동손(열로 없어지는 전력)입니다.\n- ③ 10kW: 2차 입력 그대로입니다. 손실을 빼지 않았습니다.\n- ④ 10.4kW: 손실을 빼지 않고 더한 값입니다. 출력이 입력보다 클 수는 없습니다.",
+    "frequency": 3,
+    "reviewStatus": "unverified",
+    "tags": [
+      "유도전동기",
+      "슬립",
+      "계산"
+    ]
+  }
+]

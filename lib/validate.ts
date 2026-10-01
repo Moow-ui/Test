@@ -2,7 +2,7 @@ import type { CertDetail, CertSummary, Question } from "./types";
 
 /**
  * 스키마(zod)만으로는 잡을 수 없는, 파일 사이의 관계를 검사한다.
- * scripts/validate-data.ts, scripts/import-questions.ts, tests/data.test.ts 가 함께 쓴다.
+ * lib/data/validate.ts, scripts/import-questions.ts, tests/data.test.ts 가 함께 쓴다.
  */
 
 /** 문제 한 건이 자격증의 과목·단원과 맞는지 검사해 오류 문장을 돌려준다 */

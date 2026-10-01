@@ -1,0 +1,94 @@
+[
+  {
+    "id": "forklift-operator-p019",
+    "certId": "forklift-operator",
+    "subjectId": "operation",
+    "chapterId": "driving",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "지게차가 화물을 싣고 주행할 때, 포크의 높이는 지면에서 어느 정도가 알맞은가?",
+    "choices": [
+      "지면에 닿게",
+      "20~30cm",
+      "50~80cm",
+      "운전자의 눈높이"
+    ],
+    "answer": 2,
+    "oneLineConcept": "주행 중 포크 높이는 지면에서 20~30cm",
+    "explanation": "포크가 너무 낮으면 바닥에 걸리고, 너무 높으면 **무게중심이 높아져 넘어지기 쉽습니다.** 그래서 지면에서 20~30cm 로 들고 마스트를 뒤로 기울여 달립니다.\n\n**틀린 선지**\n- ① 지면에 닿게: 바닥의 턱에 걸려 화물이 쏟아집니다.\n- ③ 50~80cm: 무게중심이 높아 위험합니다.\n- ④ 운전자의 눈높이: 앞이 보이지 않고 넘어지기 쉽습니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "주행"
+    ]
+  },
+  {
+    "id": "forklift-operator-p020",
+    "certId": "forklift-operator",
+    "subjectId": "operation",
+    "chapterId": "driving",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "지게차에 화물을 싣고 경사지를 내려올 때의 운전 방법으로 옳은 것은?",
+    "choices": [
+      "전진으로, 변속기를 중립에 놓고 내려온다.",
+      "전진으로, 포크를 높이 들고 내려온다.",
+      "후진으로, 저속으로 천천히 내려온다.",
+      "지그재그로 방향을 바꾸며 내려온다."
+    ],
+    "answer": 3,
+    "oneLineConcept": "화물을 싣고 오를 때는 전진, 내려올 때는 후진",
+    "explanation": "화물은 언제나 **언덕 위쪽**을 향해야 쏟아지지 않습니다.\n\n1. 올라갈 때: 화물이 앞(위쪽)에 있도록 전진\n2. 내려올 때: 화물이 뒤(위쪽)에 있도록 후진\n\n내려올 때는 저속 기어로 엔진 브레이크를 쓰며 천천히 내려옵니다.\n\n**틀린 선지**\n- ① 전진으로, 변속기를 중립에 놓고 내려온다.: 화물이 아래쪽을 향해 쏟아지고, 중립에서는 엔진 브레이크가 듣지 않습니다.\n- ② 전진으로, 포크를 높이 들고 내려온다.: 무게중심이 높아져 앞으로 넘어갑니다.\n- ④ 지그재그로 방향을 바꾸며 내려온다.: 경사지에서 방향을 바꾸면 옆으로 넘어집니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "경사지"
+    ]
+  },
+  {
+    "id": "forklift-operator-p021",
+    "certId": "forklift-operator",
+    "subjectId": "operation",
+    "chapterId": "driving",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "실은 화물이 커서 운전석에서 앞이 잘 보이지 않을 때의 운전 방법으로 가장 알맞은 것은?",
+    "choices": [
+      "포크를 높이 올려 화물 밑으로 앞을 보며 전진한다.",
+      "몸을 운전석 밖으로 내밀어 앞을 보며 전진한다.",
+      "경적을 계속 울리며 빠르게 전진한다.",
+      "후진으로 운행하거나 유도자를 세워 유도에 따라 운행한다."
+    ],
+    "answer": 4,
+    "oneLineConcept": "앞이 안 보이면 후진 운행하거나 유도자를 둔다",
+    "explanation": "앞이 안 보이는 채로 전진하면 사람이나 물건을 치게 됩니다. **뒤를 보며 후진**하거나 **유도자(신호수)**의 안내를 받습니다.\n\n**틀린 선지**\n- ① 포크를 높이 올려 화물 밑으로 앞을 보며 전진한다.: 무게중심이 높아져 넘어질 위험이 큽니다.\n- ② 몸을 운전석 밖으로 내밀어 앞을 보며 전진한다.: 몸이 마스트나 주변 구조물에 끼일 수 있습니다.\n- ③ 경적을 계속 울리며 빠르게 전진한다.: 앞이 안 보이는 것은 그대로입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "시야 확보"
+    ]
+  },
+  {
+    "id": "forklift-operator-p022",
+    "certId": "forklift-operator",
+    "subjectId": "operation",
+    "chapterId": "driving",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "지게차 주행 중의 안전 수칙으로 옳지 않은 것은?",
+    "choices": [
+      "포크에 사람을 태우고 높은 곳의 작업을 돕는다.",
+      "방향을 바꿀 때는 속도를 충분히 줄인다.",
+      "급출발·급정지·급선회를 하지 않는다.",
+      "통로의 모퉁이에서는 멈추거나 서행하며 경적을 울린다."
+    ],
+    "answer": 1,
+    "oneLineConcept": "포크나 팰릿 위에 사람을 태워서는 안 된다",
+    "explanation": "포크는 화물을 드는 장치이지 사람을 태우는 장치가 아닙니다. 떨어지거나 마스트에 끼이는 **큰 사고**로 이어집니다.\n\n**틀린 선지**\n- ② 방향을 바꿀 때는 속도를 충분히 줄인다.: 맞는 수칙입니다. 지게차는 폭이 좁고 무게중심이 높아 빨리 돌면 넘어집니다.\n- ③ 급출발·급정지·급선회를 하지 않는다.: 맞는 수칙입니다.\n- ④ 통로의 모퉁이에서는 멈추거나 서행하며 경적을 울린다.: 맞는 수칙입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "주행 안전"
+    ]
+  }
+]

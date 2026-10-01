@@ -1,0 +1,49 @@
+[
+  {
+    "id": "fire-facility-engineer-electrical-p020",
+    "certId": "fire-facility-engineer-electrical",
+    "subjectId": "fire-electric",
+    "chapterId": "electromagnetism-basics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "2μF 와 3μF 의 콘덴서를 병렬로 연결했을 때의 합성 정전용량은?",
+    "choices": [
+      "1.2μF",
+      "2.5μF",
+      "6μF",
+      "5μF"
+    ],
+    "answer": 4,
+    "oneLineConcept": "콘덴서 병렬 = 그대로 더한다 (저항과 반대)",
+    "explanation": "콘덴서는 **병렬로 이으면 더합니다.** 2 + 3 = 5μF. 저항과 계산 방법이 반대라는 점을 기억합니다.\n\n**틀린 선지**\n- ① 1.2μF: 직렬로 연결했을 때의 값(곱 ÷ 합 = 6 ÷ 5)입니다.\n- ② 2.5μF: 두 값의 평균입니다.\n- ③ 6μF: 두 값을 곱한 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "콘덴서",
+      "계산"
+    ]
+  },
+  {
+    "id": "fire-facility-engineer-electrical-p021",
+    "certId": "fire-facility-engineer-electrical",
+    "subjectId": "fire-electric",
+    "chapterId": "electromagnetism-basics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "\"전자 유도로 생기는 기전력은 자속의 변화를 방해하는 방향으로 생긴다\"는 법칙은?",
+    "choices": [
+      "렌츠의 법칙",
+      "패러데이의 법칙",
+      "플레밍의 왼손 법칙",
+      "앙페르의 오른나사 법칙"
+    ],
+    "answer": 1,
+    "oneLineConcept": "렌츠의 법칙 = 유도 기전력의 방향, 패러데이 법칙 = 크기",
+    "explanation": "**렌츠의 법칙**은 유도 기전력의 '방향'을 알려 줍니다. 자석을 코일에 가까이 대면 밀어내는 쪽으로, 멀리하면 끌어당기는 쪽으로 전류가 흐릅니다.\n\n**틀린 선지**\n- ② 패러데이의 법칙: 유도 기전력의 '크기'가 자속 변화의 빠르기에 비례한다는 법칙입니다.\n- ③ 플레밍의 왼손 법칙: 자기장 속의 전류가 받는 힘의 방향(전동기)을 알려 줍니다.\n- ④ 앙페르의 오른나사 법칙: 전류가 만드는 자기장의 방향을 알려 줍니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "전자 유도"
+    ]
+  }
+]

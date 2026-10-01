@@ -1,0 +1,73 @@
+[
+  {
+    "id": "electrical-engineer-p027",
+    "certId": "electrical-engineer",
+    "subjectId": "electric-machines",
+    "chapterId": "synchronous-machine",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "주파수 60Hz, 극수 4극인 동기 발전기의 동기 속도는 몇 rpm 인가?",
+    "choices": [
+      "900rpm",
+      "1,200rpm",
+      "1,800rpm",
+      "3,600rpm"
+    ],
+    "answer": 3,
+    "oneLineConcept": "동기 속도 Ns = 120 × f ÷ p",
+    "explanation": "1. 공식: Ns = 120 × f ÷ p\n2. 숫자 대입: Ns = 120 × 60 ÷ 4\n3. Ns = 7,200 ÷ 4 = 1,800rpm\n\n**틀린 선지**\n- ① 900rpm: 8극일 때의 값입니다.\n- ② 1,200rpm: 6극일 때의 값입니다.\n- ④ 3,600rpm: 2극일 때의 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "동기 속도",
+      "계산"
+    ]
+  },
+  {
+    "id": "electrical-engineer-p028",
+    "certId": "electrical-engineer",
+    "subjectId": "electric-machines",
+    "chapterId": "synchronous-machine",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "동기 발전기의 병렬 운전 조건으로 옳지 않은 것은?",
+    "choices": [
+      "기전력의 크기가 같을 것",
+      "기전력의 위상이 같을 것",
+      "기전력의 주파수가 같을 것",
+      "발전기의 용량이 같을 것"
+    ],
+    "answer": 4,
+    "oneLineConcept": "병렬 운전 조건: 기전력의 크기·위상·주파수·파형이 같을 것",
+    "explanation": "병렬 운전에는 **기전력의 크기, 위상, 주파수, 파형**이 같아야 합니다. 용량은 달라도 됩니다.\n\n**틀린 선지**\n- ① 기전력의 크기가 같을 것: 다르면 무효 순환 전류가 흐릅니다.\n- ② 기전력의 위상이 같을 것: 다르면 동기화 전류(유효 순환 전류)가 흐릅니다.\n- ③ 기전력의 주파수가 같을 것: 다르면 난조가 일어납니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "동기 발전기",
+      "병렬 운전"
+    ]
+  },
+  {
+    "id": "electrical-engineer-p029",
+    "certId": "electrical-engineer",
+    "subjectId": "electric-machines",
+    "chapterId": "synchronous-machine",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "단락비가 큰 동기 발전기에 대한 설명으로 옳지 않은 것은?",
+    "choices": [
+      "동기 임피던스가 작다.",
+      "전압 변동률이 작다.",
+      "안정도가 좋다.",
+      "기계의 크기가 작고 값이 싸다."
+    ],
+    "answer": 4,
+    "oneLineConcept": "단락비가 크면 성능은 좋지만 기계가 크고 비싸다",
+    "explanation": "단락비가 큰 기계는 철을 많이 쓰는 '철 기계'입니다. 동기 임피던스가 작아 전압 변동이 적고 안정하지만, **크고 무겁고 비싸며** 철손이 커 효율은 조금 떨어집니다.\n\n**틀린 선지**\n- ① 동기 임피던스가 작다.: 맞는 설명입니다.\n- ② 전압 변동률이 작다.: 맞는 설명입니다.\n- ③ 안정도가 좋다.: 맞는 설명입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "단락비"
+    ]
+  }
+]

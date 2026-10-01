@@ -4,6 +4,7 @@ import { z } from "zod";
  * 데이터 스키마 (zod).
  * /data 폴더의 JSON과 import 스크립트가 모두 이 스키마로 검증된다.
  * 타입은 lib/types.ts에서 z.infer로 뽑아 쓴다.
+ * 폴더·파일 규칙은 docs/data-rules.md, lib/data/paths.ts 참고.
  */
 
 /** 한국 자격증의 등급 + 미국 자격증의 종류(Certification, License) */
@@ -46,6 +47,12 @@ const slugSchema = z
 
 const oneToFive = z.number().int().min(1).max(5);
 
+/** 선지 수의 범위 (자격증별 실제 값은 meta.json 의 examInfo.choiceCount) */
+export const MIN_CHOICES = 2;
+export const MAX_CHOICES = 6;
+/** 문제 파일 하나에 넣을 수 있는 최대 문항 수. 넘으면 {chapterId}-2.json, -3.json 으로 나눈다 */
+export const MAX_QUESTIONS_PER_FILE = 300;
+
 export const chapterSchema = z.object({
   id: slugSchema.refine((v) => !RESERVED_CHAPTER_IDS.includes(v), {
     message: `단원 id로 쓸 수 없는 이름입니다 (${RESERVED_CHAPTER_IDS.join(", ")})`,
@@ -81,6 +88,8 @@ export const examInfoSchema = z.object({
   timeLimitMinutes: z.number().int().positive(),
   /** 시험 방식 설명 (예: 객관식 4지 택일형, CBT) */
   format: z.string().min(1),
+  /** 한 문제의 선지 수 (4지선다면 4). 이 자격증의 모든 문제가 이 수를 따라야 한다 */
+  choiceCount: z.number().int().min(MIN_CHOICES).max(MAX_CHOICES).default(4),
   passCriteria: z.object({
     /** 합격 평균 점수 (100점 만점) */
     averageScore: z.number().min(0).max(100),
@@ -111,7 +120,7 @@ export const certContentSchema = z.object({
   faqs: z.array(faqSchema).min(3).max(5),
 });
 
-/** data/certifications.json 의 한 줄 (자격증 목록) */
+/** 자격증의 기본 정보 (meta.json 의 앞부분. 목록·검색에 쓴다) */
 export const certSummarySchema = z.object({
   /** URL에 쓰는 영문 slug (예: forklift-operator). 한번 정하면 바꾸지 않는다 */
   id: slugSchema,
@@ -128,7 +137,52 @@ export const certSummarySchema = z.object({
   field: z.string().min(1),
 });
 
-/** data/certs/{id}.json (문제가 준비된 자격증만 존재) */
+/** 자격증 정보의 출처 (공식 출제기준 등) */
+export const sourceRefSchema = z.object({
+  title: z.string().min(1),
+  url: z.string().url().optional(),
+});
+
+/**
+ * data/certs/{country}/{slug}/meta.json
+ * "준비 중" 자격증은 기본 정보만 있고 examInfo·content 가 없다.
+ */
+export const certMetaSchema = certSummarySchema.extend({
+  /** 목록에서의 순서 (작을수록 앞). 문제가 준비된 자격증은 이 값과 상관없이 항상 앞에 온다 */
+  order: z.number().int().default(1000),
+  /** 내용 최종 수정일 (sitemap lastmod) YYYY-MM-DD */
+  updatedAt: z
+    .string()
+    .regex(/^\d{4}-\d{2}-\d{2}$/)
+    .optional(),
+  examInfo: examInfoSchema.optional(),
+  /** 자격증 소개·출제 경향·FAQ */
+  content: certContentSchema.optional(),
+  sources: z.array(sourceRefSchema).optional(),
+});
+
+/** data/certs/{country}/{slug}/chapters.json */
+export const chaptersFileSchema = z.object({
+  subjects: z.array(subjectSchema).min(1),
+});
+
+/** data/certs/{country}/{slug}/exams/{year}-{round}.json — 실전 모의고사 구성 (문제 id 목록) */
+export const examSetSchema = z.object({
+  title: z.string().min(1),
+  questionIds: z.array(z.string().min(1)).min(1),
+});
+
+/** data/cert-queue.json — 앞으로 추가할 자격증 대기 목록 */
+export const certQueueSchema = z.array(
+  z.object({
+    slug: slugSchema,
+    country: z.enum(COUNTRIES),
+    name: z.string().min(1),
+    note: z.string().optional(),
+  }),
+);
+
+/** meta.json + chapters.json 을 합친 모양 (문제가 준비된 자격증) */
 export const certDetailSchema = z.object({
   id: slugSchema,
   /** 내용 최종 수정일 (sitemap lastmod) YYYY-MM-DD */
@@ -155,14 +209,10 @@ export const questionSchema = z
       .optional(),
     level: z.enum(LEVELS),
     stem: z.string().min(1),
-    choices: z.tuple([
-      z.string().min(1),
-      z.string().min(1),
-      z.string().min(1),
-      z.string().min(1),
-    ]),
-    /** 정답 번호 1~4 */
-    answer: z.number().int().min(1).max(4),
+    /** 선지. 개수는 자격증의 examInfo.choiceCount 와 같아야 한다 (npm run validate 가 검사) */
+    choices: z.array(z.string().min(1)).min(MIN_CHOICES).max(MAX_CHOICES),
+    /** 정답 번호 (1부터, 선지 수 이하) */
+    answer: z.number().int().min(1).max(MAX_CHOICES),
     /** 핵심 개념 한 줄 (40자 내외) */
     oneLineConcept: z.string().min(1).max(70),
     /** 상세 해설 (마크다운) */
@@ -171,6 +221,12 @@ export const questionSchema = z
     frequency: oneToFive,
     reviewStatus: z.enum(REVIEW_STATUSES),
     tags: z.array(z.string()).default([]),
+    /** 문제 그림 파일 이름 (자격증 폴더의 assets/ 안) */
+    image: z.string().min(1).optional(),
+    /** 문제 내용을 고칠 때마다 1씩 올린다 (id 는 바꾸지 않는다) */
+    version: z.number().int().positive().default(1),
+    /** 삭제 대신 true 로 표시한다. 새로 출제되지 않지만 오답노트·기록에서는 계속 보인다 */
+    retired: z.boolean().default(false),
   })
   .superRefine((q, ctx) => {
     if (q.source === "past" && !q.pastInfo) {
@@ -187,11 +243,18 @@ export const questionSchema = z
         message: "예상문제(source=predicted)에는 pastInfo를 넣지 않습니다",
       });
     }
-    if (new Set(q.choices).size !== 4) {
+    if (new Set(q.choices).size !== q.choices.length) {
       ctx.addIssue({
         code: "custom",
         path: ["choices"],
-        message: "선지 4개가 서로 달라야 합니다",
+        message: "선지가 서로 달라야 합니다",
+      });
+    }
+    if (q.answer > q.choices.length) {
+      ctx.addIssue({
+        code: "custom",
+        path: ["answer"],
+        message: "정답 번호가 선지 수보다 큽니다",
       });
     }
   });

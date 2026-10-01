@@ -1,4 +1,4 @@
-import type { Level, Question, QuizLevel, Subject } from "./types";
+import type { Level, QuestionKey, QuizLevel, Subject } from "./types";
 
 /**
  * 출제 엔진.
@@ -13,6 +13,8 @@ import type { Level, Question, QuizLevel, Subject } from "./types";
  * 5) 단원에 문제가 모자라면 같은 과목의 다른 단원에서 채운다.
  *
  * 화면과 무관한 순수 함수만 둔다. (tests/quiz-engine.test.ts 참고)
+ * 문제의 내용은 보지 않고 QuestionKey(id·과목·단원·난이도·출처)만 쓴다.
+ * 그래서 브라우저는 가벼운 문제 목록으로 먼저 뽑고, 뽑힌 단원의 파일만 받는다.
  */
 
 export const QUIZ_COUNTS = [5, 10, 20, 30] as const;
@@ -94,11 +96,11 @@ export function shuffle<T>(items: readonly T[], rng: Rng = Math.random): T[] {
 }
 
 /** 난이도 카드와 범위(전체/특정 과목)에 해당하는 문제 모음 */
-export function filterPool(
-  questions: Question[],
+export function filterPool<T extends QuestionKey>(
+  questions: T[],
   level: QuizLevel,
   subjectId?: string | null,
-): Question[] {
+): T[] {
   const rule = LEVEL_RULES[level];
   // 초급·중급은 기출만. 등록된 기출이 하나도 없는 자격증만 예상문제로 대신한다
   const pastOnly =
@@ -112,7 +114,7 @@ export function filterPool(
 }
 
 export function countAvailable(
-  questions: Question[],
+  questions: QuestionKey[],
   level: QuizLevel,
   subjectId?: string | null,
 ): number {
@@ -220,11 +222,11 @@ export function allocateQuestions(
   return result;
 }
 
-export interface BuildQuizParams {
+export interface BuildQuizParams<T extends QuestionKey> {
   /** 출제 범위에 들어가는 과목 (특정 과목만 풀 때는 그 과목 하나만 넘긴다) */
   subjects: Subject[];
   /** 뽑을 수 있는 문제 모음 (난이도·범위로 이미 걸러진 것) */
-  pool: Question[];
+  pool: T[];
   count: number;
   /** 목표 기출 비율 0~1 */
   pastRatio?: number;
@@ -239,7 +241,7 @@ export interface BuildQuizParams {
  * 문제를 뽑는다. pool 이 count 보다 적으면 있는 만큼만 돌려준다.
  * 결과는 과목 순서대로 묶여 있고(실제 시험처럼), 과목 안에서는 무작위 순서다.
  */
-export function buildQuiz({
+export function buildQuiz<T extends QuestionKey>({
   subjects,
   pool,
   count,
@@ -248,28 +250,28 @@ export function buildQuiz({
   history = {},
   now = Date.now(),
   rng = Math.random,
-}: BuildQuizParams): Question[] {
+}: BuildQuizParams<T>): T[] {
   const target = Math.min(count, pool.length);
   if (target <= 0) return [];
 
   const recentCutoff = now - RECENT_DAYS * DAY_MS;
-  const isRecent = (q: Question) => (history[q.id]?.lastSolvedAt ?? 0) >= recentCutoff;
+  const isRecent = (q: T) => (history[q.id]?.lastSolvedAt ?? 0) >= recentCutoff;
 
   const randomOrder = new Map(shuffle(pool, rng).map((q, i) => [q.id, i]));
   const chapterImportance = new Map<string, number>();
   for (const s of subjects) for (const c of s.chapters) chapterImportance.set(c.id, c.importance);
 
-  const picked: Question[] = [];
+  const picked: T[] = [];
   const pickedIds = new Set<string>();
   let pastCount = 0;
 
   /** candidates 에서 n 문제를 고르고, 실제로 고른 개수를 돌려준다 */
-  const pickFrom = (candidates: Question[], n: number, preferImportant = false): number => {
+  const pickFrom = (candidates: T[], n: number, preferImportant = false): number => {
     let got = 0;
     while (got < n) {
       // 지금까지 뽑은 것 중 기출 비율이 목표보다 낮으면 기출을, 아니면 예상문제를 먼저 찾는다
       const wantPast = pastCount < pastRatio * (picked.length + 1) - 1e-9;
-      let best: Question | null = null;
+      let best: T | null = null;
       let bestKey: number[] | null = null;
       for (const q of candidates) {
         if (pickedIds.has(q.id)) continue;
@@ -328,9 +330,9 @@ function compareKeys(a: number[], b: number[]): number {
   return 0;
 }
 
-export interface LevelQuizParams {
+export interface LevelQuizParams<T extends QuestionKey> {
   subjects: Subject[];
-  questions: Question[];
+  questions: T[];
   level: QuizLevel;
   count: number;
   /** "all" 또는 과목 id */
@@ -341,7 +343,7 @@ export interface LevelQuizParams {
 }
 
 /** 난이도 카드(초급/중급/고급) 기준으로 문제를 뽑는다 */
-export function buildLevelQuiz({
+export function buildLevelQuiz<T extends QuestionKey>({
   subjects,
   questions,
   level,
@@ -350,7 +352,7 @@ export function buildLevelQuiz({
   history,
   now,
   rng,
-}: LevelQuizParams): Question[] {
+}: LevelQuizParams<T>): T[] {
   const scoped =
     subjectId && subjectId !== "all" ? subjects.filter((s) => s.id === subjectId) : subjects;
   return buildQuiz({
@@ -369,14 +371,14 @@ export function buildLevelQuiz({
  * 실전 CBT 체험용 모의고사: 실제 시험과 같은 과목별 문항 수로 뽑는다.
  * 보유 문제가 모자라면 있는 만큼만 나온다.
  */
-export function buildMockExam(params: {
+export function buildMockExam<T extends QuestionKey>(params: {
   subjects: Subject[];
-  questions: Question[];
+  questions: T[];
   totalQuestions: number;
   history?: SolveHistory;
   now?: number;
   rng?: Rng;
-}): Question[] {
+}): T[] {
   return buildQuiz({
     subjects: params.subjects,
     pool: params.questions,

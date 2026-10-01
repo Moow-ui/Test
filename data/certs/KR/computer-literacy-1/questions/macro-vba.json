@@ -1,0 +1,96 @@
+[
+  {
+    "id": "computer-literacy-1-p029",
+    "certId": "computer-literacy-1",
+    "subjectId": "spreadsheet",
+    "chapterId": "macro-vba",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "VBA 에서 사용자에게 메시지를 대화 상자로 보여 주는 함수는?",
+    "choices": [
+      "InputBox",
+      "MsgBox",
+      "Range",
+      "Debug.Print"
+    ],
+    "answer": 2,
+    "oneLineConcept": "MsgBox는 메시지 표시, InputBox는 값 입력받기",
+    "explanation": "**MsgBox** 는 메시지 상자를 띄워 글을 보여 줍니다.\n\n**틀린 선지**\n- ① InputBox: 사용자에게 값을 입력받는 상자를 띄웁니다.\n- ③ Range: 셀이나 셀 범위를 가리키는 개체입니다.\n- ④ Debug.Print: 직접 실행 창에 값을 찍어 보는 명령입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "VBA"
+    ]
+  },
+  {
+    "id": "computer-literacy-1-p030",
+    "certId": "computer-literacy-1",
+    "subjectId": "spreadsheet",
+    "chapterId": "macro-vba",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "다음 VBA 코드를 실행했을 때 메시지 상자에 표시되는 값은?\n\nDim i As Integer, s As Integer\ns = 0\nFor i = 1 To 5\n  s = s + i\nNext i\nMsgBox s",
+    "choices": [
+      "5",
+      "10",
+      "15",
+      "6"
+    ],
+    "answer": 3,
+    "oneLineConcept": "For i = 1 To 5: i가 1부터 5까지 바뀌며 5번 반복한다",
+    "explanation": "s 에 i 를 계속 더해 갑니다.\n\n1. i = 1 → s = 1\n2. i = 2 → s = 3\n3. i = 3 → s = 6\n4. i = 4 → s = 10\n5. i = 5 → s = 15\n\n검산: 1 + 2 + 3 + 4 + 5 = 15\n\n**틀린 선지**\n- ① 5: 반복 횟수입니다.\n- ② 10: 4까지만 더한 값입니다.\n- ④ 6: 반복이 끝난 뒤의 i 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "VBA",
+      "반복문"
+    ]
+  },
+  {
+    "id": "computer-literacy-1-p031",
+    "certId": "computer-literacy-1",
+    "subjectId": "spreadsheet",
+    "chapterId": "macro-vba",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "VBA 에서 현재 워크시트의 3행 2열(B3 셀)에 100 을 입력하는 코드로 옳은 것은?",
+    "choices": [
+      "Cells(3, 2).Value = 100",
+      "Cells(2, 3).Value = 100",
+      "Range(3, 2).Value = 100",
+      "Cells(\"B3\") = 100"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Cells(행, 열): 행 번호를 먼저 쓴다",
+    "explanation": "**Cells(행, 열)** 순서입니다. 3행 2열이므로 Cells(3, 2) 이고, 이것은 B3 셀입니다. Range 로 쓰려면 Range(\"B3\").Value = 100 입니다.\n\n**틀린 선지**\n- ② Cells(2, 3).Value = 100: 2행 3열, 곧 C2 셀에 입력합니다.\n- ③ Range(3, 2).Value = 100: Range 에는 \"B3\" 처럼 셀 주소를 글자로 넣어야 합니다.\n- ④ Cells(\"B3\") = 100: Cells 에는 행 번호와 열 번호를 넣어야 합니다.",
+    "frequency": 3,
+    "reviewStatus": "unverified",
+    "tags": [
+      "VBA"
+    ]
+  },
+  {
+    "id": "computer-literacy-1-p032",
+    "certId": "computer-literacy-1",
+    "subjectId": "spreadsheet",
+    "chapterId": "macro-vba",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "다음 VBA 코드를 실행했을 때 메시지 상자에 표시되는 값은?\n\nDim n As Integer, k As Integer\nn = 10: k = 0\nDo While n > 0\n  n = n - 3\n  k = k + 1\nLoop\nMsgBox k",
+    "choices": [
+      "3",
+      "10",
+      "5",
+      "4"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Do While: 조건이 참인 동안만 반복한다",
+    "explanation": "n 이 0 보다 큰 동안 3씩 빼며 횟수(k)를 셉니다.\n\n1. n = 10 → 7, k = 1\n2. n = 7 → 4, k = 2\n3. n = 4 → 1, k = 3\n4. n = 1 → -2, k = 4\n5. n = -2 는 0 보다 크지 않으므로 반복 끝\n\n결과: 4\n\n**틀린 선지**\n- ① 3: n 이 1일 때도 조건(1 > 0)이 참이라 한 번 더 반복합니다.\n- ② 10: n 의 처음 값입니다.\n- ③ 5: 4번 만에 n 이 0 이하가 됩니다.",
+    "frequency": 3,
+    "reviewStatus": "unverified",
+    "tags": [
+      "VBA",
+      "반복문"
+    ]
+  }
+]

@@ -2,6 +2,7 @@ import type { z } from "zod";
 import type {
   certContentSchema,
   certDetailSchema,
+  certMetaSchema,
   certSummarySchema,
   chapterSchema,
   examInfoSchema,
@@ -25,6 +26,7 @@ export type ExamInfo = z.infer<typeof examInfoSchema>;
 export type Faq = z.infer<typeof faqSchema>;
 export type CertContent = z.infer<typeof certContentSchema>;
 export type CertSummary = z.infer<typeof certSummarySchema>;
+export type CertMeta = z.infer<typeof certMetaSchema>;
 export type CertDetail = z.infer<typeof certDetailSchema>;
 export type Question = z.infer<typeof questionSchema>;
 
@@ -41,9 +43,22 @@ export interface Certification extends CertSummary {
   ready: boolean;
 }
 
-/** 홈 목록·검색에 쓰는 가벼운 형태 */
+/** 홈 목록·검색에 쓰는 요약 인덱스 한 줄 (빌드 때 data 폴더에서 자동으로 만든다) */
 export interface CertListItem extends CertSummary {
+  /** 시행기관 ("준비 중" 자격증은 null) */
+  organizer: string | null;
+  /** 지금 출제되는 문제 수 */
+  questionCount: number;
   ready: boolean;
+}
+
+/** 문제를 뽑는 데 필요한 값만 (lib/quiz-engine.ts 가 쓰는 필드) */
+export type QuestionKey = Pick<Question, "id" | "subjectId" | "chapterId" | "level" | "source">;
+
+/** 브라우저가 먼저 받는 문제 목록의 한 줄. file 은 그 문제가 들어 있는 단원 파일 이름 */
+export interface PoolItem extends QuestionKey {
+  retired: boolean;
+  file: string;
 }
 
 /** 풀이 화면 난이도 카드 (초급/중급/고급) */

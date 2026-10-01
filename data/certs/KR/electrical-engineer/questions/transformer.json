@@ -1,0 +1,98 @@
+[
+  {
+    "id": "electrical-engineer-p030",
+    "certId": "electrical-engineer",
+    "subjectId": "electric-machines",
+    "chapterId": "transformer",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "1차 전압 6,600V, 2차 전압 220V 인 변압기의 2차 전류가 300A 일 때 1차 전류는 몇 A 인가? (손실은 무시한다)",
+    "choices": [
+      "5A",
+      "10A",
+      "30A",
+      "9,000A"
+    ],
+    "answer": 2,
+    "oneLineConcept": "권수비 a = V1 ÷ V2 = I2 ÷ I1",
+    "explanation": "1. 권수비 a = 6,600 ÷ 220 = 30\n2. I1 = I2 ÷ a = 300 ÷ 30\n3. I1 = 10A\n\n검산: 1차 전력 6,600 × 10 = 66,000VA, 2차 전력 220 × 300 = 66,000VA 로 같습니다.\n\n**틀린 선지**\n- ① 5A: 계산이 틀린 값입니다.\n- ③ 30A: 권수비의 값입니다.\n- ④ 9,000A: 전류에 권수비를 곱한 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "변압기",
+      "계산"
+    ]
+  },
+  {
+    "id": "electrical-engineer-p031",
+    "certId": "electrical-engineer",
+    "subjectId": "electric-machines",
+    "chapterId": "transformer",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "변압기의 효율이 가장 높아지는 조건은?",
+    "choices": [
+      "철손 = 동손",
+      "철손 > 동손",
+      "철손 < 동손",
+      "철손 = 0"
+    ],
+    "answer": 1,
+    "oneLineConcept": "변압기 최대 효율 조건: 철손 = 동손",
+    "explanation": "부하와 상관없이 일정한 **철손**과, 부하 전류의 제곱에 비례하는 **동손**이 같아질 때 효율이 가장 높습니다.\n\n**틀린 선지**\n- ② 철손 > 동손: 최대 효율 조건이 아닙니다.\n- ③ 철손 < 동손: 최대 효율 조건이 아닙니다.\n- ④ 철손 = 0: 철심이 있는 한 철손은 0 이 될 수 없습니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "변압기",
+      "효율"
+    ]
+  },
+  {
+    "id": "electrical-engineer-p032",
+    "certId": "electrical-engineer",
+    "subjectId": "electric-machines",
+    "chapterId": "transformer",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "단상 변압기 3대를 Δ-Δ 결선으로 운전하다가 1대가 고장 나서 V 결선으로 바꾸었다. 고장 전 출력에 대한 V 결선의 출력비는 약 몇 % 인가?",
+    "choices": [
+      "50%",
+      "66.7%",
+      "57.7%",
+      "86.6%"
+    ],
+    "answer": 3,
+    "oneLineConcept": "V 결선: 출력비 57.7%, 이용률 86.6%",
+    "explanation": "1. Δ 결선 출력 = 3 × P (P 는 1대 용량)\n2. V 결선 출력 = √3 × P\n3. 출력비 = √3 ÷ 3 = 0.577 → 57.7%\n\n**틀린 선지**\n- ① 50%: 계산이 틀린 값입니다.\n- ② 66.7%: 2대가 남았다고 2/3 로 계산한 값입니다.\n- ④ 86.6%: V 결선의 이용률(√3 ÷ 2)입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "변압기",
+      "V 결선"
+    ]
+  },
+  {
+    "id": "electrical-engineer-p033",
+    "certId": "electrical-engineer",
+    "subjectId": "electric-machines",
+    "chapterId": "transformer",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "3상 변압기의 병렬 운전이 불가능한 결선 조합은?",
+    "choices": [
+      "Δ-Δ 와 Δ-Δ",
+      "Δ-Δ 와 Y-Y",
+      "Δ-Y 와 Δ-Y",
+      "Δ-Δ 와 Δ-Y"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Δ 와 Y 의 개수 합이 홀수이면 병렬 운전 불가",
+    "explanation": "두 변압기 결선에 들어 있는 Δ(또는 Y)의 개수를 세어 **홀수**이면 2차 전압 사이에 30도의 위상차가 생겨 병렬 운전을 할 수 없습니다.\n\n- Δ-Δ 와 Δ-Y: Δ 가 3개(홀수) → 불가능\n\n**틀린 선지**\n- ① Δ-Δ 와 Δ-Δ: Δ 가 4개(짝수)로 가능합니다.\n- ② Δ-Δ 와 Y-Y: Δ 가 2개(짝수)로 가능합니다.\n- ③ Δ-Y 와 Δ-Y: Δ 가 2개(짝수)로 가능합니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "변압기",
+      "병렬 운전"
+    ]
+  }
+]

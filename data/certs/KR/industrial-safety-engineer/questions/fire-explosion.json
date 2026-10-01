@@ -1,0 +1,119 @@
+[
+  {
+    "id": "industrial-safety-engineer-p041",
+    "certId": "industrial-safety-engineer",
+    "subjectId": "chemical",
+    "chapterId": "fire-explosion",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "연소의 3요소에 해당하지 않는 것은?",
+    "choices": [
+      "가연물",
+      "산소 공급원",
+      "점화원",
+      "질소"
+    ],
+    "answer": 4,
+    "oneLineConcept": "연소의 3요소: 가연물, 산소 공급원, 점화원",
+    "explanation": "탈 것(가연물), 산소, 불씨(점화원)가 모두 있어야 불이 붙습니다. **질소**는 타지 않는 기체로, 오히려 불을 끄는 데 쓰입니다.\n\n**틀린 선지**\n- ① 가연물: 3요소의 하나입니다.\n- ② 산소 공급원: 3요소의 하나입니다.\n- ③ 점화원: 3요소의 하나입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "연소"
+    ]
+  },
+  {
+    "id": "industrial-safety-engineer-p042",
+    "certId": "industrial-safety-engineer",
+    "subjectId": "chemical",
+    "chapterId": "fire-explosion",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "이산화탄소 소화기로 불을 끌 때의 주된 소화 원리는?",
+    "choices": [
+      "냉각 소화",
+      "질식 소화",
+      "제거 소화",
+      "억제 소화"
+    ],
+    "answer": 2,
+    "oneLineConcept": "질식 소화: 산소를 차단해서 끈다",
+    "explanation": "이산화탄소는 공기보다 무거워 불을 덮어 **산소를 막습니다.** 산소 농도가 15% 아래로 내려가면 불이 꺼집니다.\n\n**틀린 선지**\n- ① 냉각 소화: 물을 뿌려 온도를 낮추는 방법입니다.\n- ③ 제거 소화: 탈 것을 치우는 방법입니다.\n- ④ 억제 소화: 연소의 연쇄 반응을 끊는 방법입니다. (할로겐화물, 분말 소화 약제)",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "소화"
+    ]
+  },
+  {
+    "id": "industrial-safety-engineer-p043",
+    "certId": "industrial-safety-engineer",
+    "subjectId": "chemical",
+    "chapterId": "fire-explosion",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "폭발 하한이 2.5%, 폭발 상한이 81%인 아세틸렌의 위험도는?",
+    "choices": [
+      "31.4",
+      "30.4",
+      "32.4",
+      "78.5"
+    ],
+    "answer": 1,
+    "oneLineConcept": "위험도 H = (상한 − 하한) ÷ 하한",
+    "explanation": "1. 공식: H = (U − L) ÷ L\n2. 숫자 대입: H = (81 − 2.5) ÷ 2.5\n3. H = 78.5 ÷ 2.5 = 31.4\n\n위험도가 클수록 폭발하기 쉬운 가스입니다.\n\n**틀린 선지**\n- ② 30.4: 계산이 틀린 값입니다.\n- ③ 32.4: 상한을 하한으로 그대로 나눈 값(81 ÷ 2.5)입니다.\n- ④ 78.5: 상한에서 하한을 빼기만 한 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "폭발 한계",
+      "계산"
+    ]
+  },
+  {
+    "id": "industrial-safety-engineer-p044",
+    "certId": "industrial-safety-engineer",
+    "subjectId": "chemical",
+    "chapterId": "fire-explosion",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "폭발 하한이 5%인 가스 A 75vol% 와, 폭발 하한이 2%인 가스 B 25vol% 를 섞은 혼합 가스의 폭발 하한은 약 몇 % 인가?",
+    "choices": [
+      "2.75%",
+      "4.25%",
+      "3.64%",
+      "7.00%"
+    ],
+    "answer": 3,
+    "oneLineConcept": "르샤틀리에 식: 100 ÷ L = V1 ÷ L1 + V2 ÷ L2",
+    "explanation": "1. 100 ÷ L = 75 ÷ 5 + 25 ÷ 2\n2. 100 ÷ L = 15 + 12.5 = 27.5\n3. L = 100 ÷ 27.5 ≈ 3.64%\n\n**틀린 선지**\n- ① 2.75%: 계산이 틀린 값입니다.\n- ② 4.25%: 부피 비율로 그냥 평균 낸 값(5 × 0.75 + 2 × 0.25)입니다.\n- ④ 7.00%: 두 하한을 더한 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "폭발 한계",
+      "계산"
+    ]
+  },
+  {
+    "id": "industrial-safety-engineer-p045",
+    "certId": "industrial-safety-engineer",
+    "subjectId": "chemical",
+    "chapterId": "fire-explosion",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "분진 폭발을 가스 폭발과 비교한 설명으로 옳지 않은 것은?",
+    "choices": [
+      "가스 폭발보다 최소 발화 에너지가 크다.",
+      "가스 폭발보다 연소 시간이 길고 발생 에너지가 크다.",
+      "가스 폭발보다 연소 속도와 폭발 압력이 크다.",
+      "쌓여 있던 분진이 날려 2차, 3차 폭발로 이어질 수 있다."
+    ],
+    "answer": 3,
+    "oneLineConcept": "분진 폭발은 가스 폭발보다 연소 속도·폭발 압력이 작다",
+    "explanation": "분진 폭발은 가스 폭발보다 **연소 속도와 폭발 압력은 작지만**, 타는 시간이 길고 내는 에너지가 커서 피해가 큽니다. 또 불완전 연소로 일산화탄소가 많이 생깁니다.\n\n**틀린 선지**\n- ① 가스 폭발보다 최소 발화 에너지가 크다.: 맞는 설명입니다. 가스보다 불이 붙기 어렵습니다.\n- ② 가스 폭발보다 연소 시간이 길고 발생 에너지가 크다.: 맞는 설명입니다.\n- ④ 쌓여 있던 분진이 날려 2차, 3차 폭발로 이어질 수 있다.: 맞는 설명입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "분진 폭발"
+    ]
+  }
+]

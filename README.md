@@ -12,7 +12,7 @@
   - 화면 문구는 [messages/ko.json](messages/ko.json), [messages/en.json](messages/en.json) 에 있습니다.
 - 기술: Next.js 16 (App Router) · TypeScript · Tailwind CSS v4 · zod · vitest
 - 저장소: https://github.com/Moow-ui/Test (브랜치 `main`) · 배포: Cloudflare Workers
-- 현재 풀 수 있는 자격증: **전기기능사 필기** (AI 예상문제 60개). 나머지 29종은 "준비 중"
+- 현재 풀 수 있는 자격증: 한국 9종 (AI 예상문제 497개). 나머지는 "준비 중"
 - 프로젝트 규칙(스택·스키마·계산 공식·콘텐츠 정책)은 [CLAUDE.md](CLAUDE.md) 에 있습니다.
 
 ---
@@ -38,88 +38,27 @@ npm run dev
 | `npm run dev` | 개발용으로 실행 (파일을 고치면 바로 반영) |
 | `npm run build` | 빌드 (에러가 없어야 배포 가능) |
 | `npm test` | 단위 테스트 |
-| `npm run past:add -- <파일> --cert <id>` | **기출(또는 예상문제) 넣기·갱신** |
-| `npm run past:status` | 자격증별 기출 현황 (난이도·연도별 개수) |
-| `npm run past:status -- --cert <id>` | 자격증 하나의 단원별 기출 개수 |
-| `npm run past:prune` | 최근 10년보다 오래된 기출을 파일에서 지움 |
+| `npm run questions:add -- <파일> --cert <slug>` | **문제 넣기·고치기** (id 자동, 단원별 파일로 자동 분류) |
+| `npm run build:data` | `data/` → `public/data/` 정적 문제 파일 만들기 (dev·build 앞에서 자동 실행) |
 | `npm run validate` | `/data` 폴더 전체 검증 |
 | `npm run check:meta` | 빌드 결과의 title·description 중복, noindex, sitemap 검사 |
 
-## 3. 기출문제 넣기·갱신 (새 시험이 나올 때마다)
+## 3. 자격증 추가·문제 넣기
 
-**기출문제의 저작권은 한국산업인력공단에 있습니다. 사용 권리가 확인된 데이터만 넣으세요.**
-
-### 3-1. 순서
-
-1. `scripts/templates/questions-template.csv` 를 엑셀로 열어 같은 형식으로 문제를 적습니다.
-2. 먼저 검사만 해 봅니다. (파일은 바뀌지 않습니다)
-
-```bash
-npm run past:add -- 2026년1회.csv --cert electrician-craftsman --dry-run
-```
-
-3. 오류가 없으면 실제로 넣습니다.
-
-```bash
-npm run past:add -- 2026년1회.csv --cert electrician-craftsman
-```
-
-4. 들어간 결과를 확인합니다.
-
-```bash
-npm run past:status -- --cert electrician-craftsman
-```
-
-5. GitHub 에 올리면 자동으로 다시 배포됩니다. (6번 참고)
-
-### 3-2. 엑셀(CSV) 적는 법
-
-| 열 | 내용 |
-|---|---|
-| `subjectId`, `chapterId` | 과목·단원. id(`dc-circuit`) 대신 이름(`직류회로`)으로 적어도 됩니다 |
-| `source` | `기출` 또는 `예상` |
-| `year`, `round`, `number` | 기출의 연도·회차·문항 번호 (예: 2026, 1, 17) |
-| `level` | `초급`·`중급`·`고급`. 비워 두려면 `correctRate` 를 적습니다 |
-| `correctRate` | 정답률 %. `level` 이 비어 있으면 **70 이상 초급, 40 이상 중급, 그 아래 고급**으로 자동 분류 |
-| `stem`, `choice1`~`choice4`, `answer` | 문제, 선지 4개, 정답 번호(1~4) |
-| `oneLineConcept`, `explanation` | 한 줄 핵심, 해설 (줄바꿈은 셀 안에서 `Alt + Enter` 또는 `\n`) |
-| `frequency` | 출제 빈도 1~5 |
-| `reviewStatus` | `검수완료` 또는 `검수전` |
-
-### 3-3. 저장되는 곳 (자동 분류)
-
-기출은 **난이도별 폴더 → 단원별 파일**로 자동 정리됩니다. 손으로 옮길 필요가 없습니다.
+**자격증 추가 = 데이터 폴더 하나 추가**입니다. 코드는 고치지 않습니다.
 
 ```
-data/questions/electrician-craftsman/
-  past/
-    basic/          ← 초급 기출
-      dc-circuit.json        (직류회로 단원)
-      ac-circuit.json        (교류회로 단원)
-    intermediate/   ← 중급 기출
-    advanced/       ← 고급 기출
-  predicted/        ← AI 예상문제
+data/certs/{country}/{slug}/
+  meta.json                   자격증 정보 (시행기관, 시험 구성, 선지 수, 합격 기준, 출처)
+  chapters.json               과목·단원·중요도·출제 비중
+  questions/{chapterId}.json  단원별 문제 (파일당 최대 300문항)
 ```
 
-### 3-4. 규칙
-
-- **최근 10년 기출만 수록**합니다. 올해가 2026년이면 2017년 이후만 들어가고, 해가 바뀌면 가장 오래된 해가 자동으로 빠집니다.
-  (`npm run past:prune` 으로 파일에서도 지울 수 있습니다)
-- **초급·중급은 기출만**, **고급은 기출 반 + 예상문제 반**으로 출제됩니다.
-  단, 기출이 하나도 등록되지 않은 자격증은 풀 문제가 없어지므로 예상문제로 대신 출제됩니다.
-- 풀 때마다 문제가 무작위로 바뀌고, 중요한 단원에서 더 많이 나옵니다. 최근 7일 안에 푼 문제는 뒤로 밀립니다.
-- 오류가 있는 줄은 화면과 `import-report.json` 에 줄 번호와 이유가 나오고, 통과한 줄만 들어갑니다.
-- 이미 넣은 문제의 내용·난이도를 바꾸려면 같은 파일을 고친 뒤 끝에 `--update` 를 붙여 다시 실행합니다.
-
-### 3-5. 새 자격증 추가하기
-
-1. `data/certs/<자격증 id>.json` 을 만듭니다. (`data/certs/electrician-craftsman.json` 을 복사해서 고치면 됩니다)
-   시험 정보, 과목, 단원(중요도·출제 비중·요약)이 들어갑니다. 자격증 소개·FAQ(`content`)는 나중에 넣어도 됩니다.
-2. `npm run past:add` 로 문제를 넣습니다.
-3. `npm run validate` → `npm test` → `npm run build` → `npm run check:meta`
-
-자격증 id 는 `data/certifications.json` 에 있는 값이어야 합니다. 과목·단원과 문제가 모두 들어가면
-"준비 중" 표시가 사라지고 검색엔진 색인 대상(sitemap)에 자동으로 포함됩니다.
+- 순서와 주의할 점: [docs/add-cert.md](docs/add-cert.md)
+- 필드 설명·문제 id 규칙·콘텐츠 정책: [docs/data-rules.md](docs/data-rules.md)
+- 자격증 목록·검색·sitemap 은 빌드할 때 이 폴더를 읽어 자동으로 만듭니다.
+- **모든 문제는 직접 만든 AI 예상문제입니다. 기출 원문은 넣지 않습니다.**
+- 자격증 1개를 추가할 때마다 커밋 1개(`cert: add {slug}`)로 올립니다. 문제가 생기면 그 커밋만 되돌리면 됩니다.
 
 ## 4. 조정할 수 있는 값
 
@@ -132,7 +71,7 @@ data/questions/electrician-craftsman/
 | 시험 화면 글자 크기(100·150·200%) | `lib/storage.ts` 의 `EXAM_ZOOMS` |
 | 페이지 제목·설명 문구 규칙 | `lib/seo.ts` |
 | 사이트 이름·한 줄 소개·하단 고지 문구 | `lib/site.ts` |
-| 자격증 목록·노출 순서 | `data/certifications.json` (위에 있을수록 먼저 노출) |
+| 자격증 노출 순서 | 각 자격증 `meta.json` 의 `order` (작을수록 먼저. 문제가 준비된 자격증은 항상 앞) |
 
 ## 5. 화면 구성
 

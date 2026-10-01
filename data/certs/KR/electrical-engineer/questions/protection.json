@@ -1,0 +1,73 @@
+[
+  {
+    "id": "electrical-engineer-p017",
+    "certId": "electrical-engineer",
+    "subjectId": "power-engineering",
+    "chapterId": "protection",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "변전소에서 전원을 끊을 때(정전 조작) 차단기(CB)와 단로기(DS)의 조작 순서로 옳은 것은?",
+    "choices": [
+      "차단기를 먼저 열고, 단로기를 나중에 연다.",
+      "단로기를 먼저 열고, 차단기를 나중에 연다.",
+      "둘을 동시에 연다.",
+      "순서는 상관없다."
+    ],
+    "answer": 1,
+    "oneLineConcept": "끊을 때: 차단기 → 단로기, 넣을 때: 단로기 → 차단기",
+    "explanation": "단로기는 **전류가 흐르는 상태에서 열면 아크가 생겨** 큰 사고가 납니다. 그래서 먼저 차단기로 전류를 끊은 뒤 단로기를 엽니다.\n\n**틀린 선지**\n- ② 단로기를 먼저 열고, 차단기를 나중에 연다.: 부하 전류가 흐르는 채로 단로기를 열게 되어 위험합니다.\n- ③ 둘을 동시에 연다.: 순서를 지켜야 합니다.\n- ④ 순서는 상관없다.: 순서를 지켜야 합니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "차단기",
+      "단로기"
+    ]
+  },
+  {
+    "id": "electrical-engineer-p018",
+    "certId": "electrical-engineer",
+    "subjectId": "power-engineering",
+    "chapterId": "protection",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "정격 전류가 100A 이고 %임피던스가 5% 인 변압기의 2차 측에서 3상 단락이 일어났을 때 단락 전류는 몇 A 인가?",
+    "choices": [
+      "500A",
+      "1,000A",
+      "2,000A",
+      "5,000A"
+    ],
+    "answer": 3,
+    "oneLineConcept": "단락 전류 Is = 100 ÷ %Z × 정격 전류",
+    "explanation": "1. 공식: Is = (100 ÷ %Z) × In\n2. 숫자 대입: Is = (100 ÷ 5) × 100\n3. Is = 20 × 100 = 2,000A\n\n**틀린 선지**\n- ① 500A: 정격 전류에 5 를 곱한 값입니다.\n- ② 1,000A: 계산이 틀린 값입니다.\n- ④ 5,000A: 계산이 틀린 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "단락 전류",
+      "계산"
+    ]
+  },
+  {
+    "id": "electrical-engineer-p019",
+    "certId": "electrical-engineer",
+    "subjectId": "power-engineering",
+    "chapterId": "protection",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "피뢰기가 갖추어야 할 조건으로 옳지 않은 것은?",
+    "choices": [
+      "충격 방전 개시 전압이 낮을 것",
+      "제한 전압이 높을 것",
+      "상용 주파 방전 개시 전압이 높을 것",
+      "속류 차단 능력이 클 것"
+    ],
+    "answer": 2,
+    "oneLineConcept": "피뢰기: 제한 전압은 낮을수록 좋다",
+    "explanation": "**제한 전압**은 피뢰기가 동작하고 있을 때 기기에 걸리는 전압입니다. 이 값이 낮아야 기기를 보호할 수 있습니다.\n\n**틀린 선지**\n- ① 충격 방전 개시 전압이 낮을 것: 맞는 조건입니다. 벼락 같은 충격파에는 빨리 동작해야 합니다.\n- ③ 상용 주파 방전 개시 전압이 높을 것: 맞는 조건입니다. 평상시 전압에서는 동작하지 않아야 합니다.\n- ④ 속류 차단 능력이 클 것: 맞는 조건입니다. 방전이 끝난 뒤 따라 흐르는 전류를 빨리 끊어야 합니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "피뢰기"
+    ]
+  }
+]

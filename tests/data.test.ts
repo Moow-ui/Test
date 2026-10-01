@@ -1,6 +1,16 @@
 import { describe, expect, it } from "vitest";
-import { getCertList, getCertification, getQuestions, getReadyCertifications } from "@/lib/data";
-import { LEVELS } from "@/lib/schemas";
+import {
+  getCertList,
+  getCertification,
+  getQuestionFiles,
+  getQuestionPool,
+  getQuestions,
+  getReadyCertifications,
+} from "@/lib/data";
+import { fsStore } from "@/lib/data/fs-store";
+import { isQuestionIdFor, questionId, questionIdNumber } from "@/lib/data/paths";
+import { validateData } from "@/lib/data/validate";
+import { LEVELS, MAX_QUESTIONS_PER_FILE } from "@/lib/schemas";
 import {
   QUIZ_COUNTS,
   buildLevelQuiz,
@@ -15,38 +25,88 @@ import type { CertDetail, QuizLevel } from "@/lib/types";
 
 const CERT_ID = "electrician-craftsman";
 
-/** 문제가 준비된 자격증 (data/certifications.json 의 앞쪽 순서와 같다) */
-const READY_IDS = [
-  "forklift-operator",
-  "electrician-craftsman",
-  "computer-literacy-2",
-  "computer-literacy-1",
-  "industrial-safety-engineer",
-  "information-processing-engineer",
-  "electrical-engineer",
-  "fire-facility-engineer-electrical",
-  "construction-safety-engineer",
-];
+/**
+ * 문제가 준비된 자격증. 목록은 data 폴더에서 읽는다 (자격증을 추가해도 이 파일은 고치지 않는다).
+ * describe 안에서 한 번만 읽어 둔다.
+ */
+const READY_IDS = (await getReadyCertifications()).map((c) => c.id);
 
-describe("자격증 목록", () => {
-  it("33종이 있고 id·관련 자격증 참조에 오류가 없다", async () => {
+describe("data 폴더 전체 검사 (npm run validate 와 같은 검사)", () => {
+  it("오류가 없다", async () => {
+    expect((await validateData(fsStore)).errors).toEqual([]);
+  });
+});
+
+describe("자격증 목록 (data/certs 폴더에서 자동으로 만든다)", () => {
+  it("id·관련 자격증 참조에 오류가 없다", async () => {
     const list = await getCertList();
-    expect(list.filter((c) => c.country === "KR")).toHaveLength(33);
+    expect(list.length).toBeGreaterThan(0);
     expect(checkCertList(list)).toEqual([]);
   });
 
-  it("문제가 준비된 자격증 9종이 목록 맨 앞에 온다", async () => {
-    const ready = await getReadyCertifications();
-    expect(ready.map((c) => c.id)).toEqual(READY_IDS);
+  it("문제가 준비된 자격증이 목록 맨 앞에 온다", async () => {
+    expect(READY_IDS).toContain(CERT_ID);
     const list = await getCertList();
     expect(list.slice(0, READY_IDS.length).map((c) => c.id)).toEqual(READY_IDS);
+    expect(list.slice(READY_IDS.length).every((c) => !c.ready)).toBe(true);
+  });
+
+  it("요약 인덱스에 시행기관과 문제 수가 들어 있다", async () => {
+    for (const item of await getCertList()) {
+      expect(item.questionCount, item.id).toBe((await getQuestions(item.id)).length);
+      if (item.ready) expect(item.organizer, item.id).toBeTruthy();
+    }
   });
 
   it("준비 중 자격증은 과목·시험 정보가 비어 있다", async () => {
-    const cert = await getCertification("excavator-operator");
-    expect(cert?.ready).toBe(false);
-    expect(cert?.subjects).toEqual([]);
-    expect(cert?.examInfo).toBeNull();
+    const soon = (await getCertList()).filter((c) => !c.ready);
+    for (const item of soon) {
+      const cert = await getCertification(item.id);
+      expect(cert?.subjects, item.id).toEqual([]);
+      expect(cert?.examInfo, item.id).toBeNull();
+    }
+  });
+});
+
+describe("문제 파일·id 규칙", () => {
+  it("새 문제 id 는 {slug}-{단원 id}-{4자리 번호}", () => {
+    expect(questionId("electrician-craftsman", "dc-circuit", 7)).toBe("electrician-craftsman-dc-circuit-0007");
+    expect(isQuestionIdFor("electrician-craftsman", "electrician-craftsman-dc-circuit-0007")).toBe(true);
+    expect(isQuestionIdFor("electrician-craftsman", "electrician-craftsman-p001")).toBe(false);
+    expect(isQuestionIdFor("electrician-craftsman", "forklift-operator-safety-0001")).toBe(false);
+    expect(questionIdNumber("electrician-craftsman", "dc-circuit", "electrician-craftsman-dc-circuit-0007")).toBe(7);
+    expect(questionIdNumber("electrician-craftsman", "dc-circuit", "electrician-craftsman-p001")).toBeNull();
+  });
+
+  it("문제는 단원별 파일에 있고 파일당 최대 문항 수를 넘지 않는다", async () => {
+    for (const id of READY_IDS) {
+      for (const file of await getQuestionFiles(id)) {
+        expect(file.questions.length, `${id}/${file.stem}`).toBeGreaterThan(0);
+        expect(file.questions.length, `${id}/${file.stem}`).toBeLessThanOrEqual(MAX_QUESTIONS_PER_FILE);
+        expect(new Set(file.questions.map((q) => q.chapterId)).size, `${id}/${file.stem}`).toBe(1);
+      }
+    }
+  });
+
+  it("문제 목록(pool)은 모든 문제를 한 번씩 담고, 들어 있는 파일을 가리킨다", async () => {
+    for (const id of READY_IDS) {
+      const files = await getQuestionFiles(id);
+      const pool = await getQuestionPool(id);
+      expect(pool.map((p) => p.id).sort(), id).toEqual(files.flatMap((f) => f.questions.map((q) => q.id)).sort());
+      for (const p of pool) {
+        expect(files.find((f) => f.stem === p.file)?.questions.some((q) => q.id === p.id), p.id).toBe(true);
+      }
+    }
+  });
+
+  it("선지 수가 자격증의 examInfo.choiceCount 와 같고 정답 번호가 그 안에 있다", async () => {
+    for (const id of READY_IDS) {
+      const cert = await getCertification(id);
+      for (const q of await getQuestions(id)) {
+        expect(q.choices, q.id).toHaveLength(cert!.examInfo!.choiceCount);
+        expect(q.answer, q.id).toBeLessThanOrEqual(q.choices.length);
+      }
+    }
   });
 });
 
@@ -105,10 +165,11 @@ describe("문제가 준비된 모든 자격증", () => {
   it("정답 번호가 한쪽으로 쏠려 있지 않다", async () => {
     for (const id of READY_IDS) {
       const questions = await getQuestions(id);
-      for (const n of [1, 2, 3, 4]) {
+      const choiceCount = (await getCertification(id))!.examInfo!.choiceCount;
+      for (let n = 1; n <= choiceCount; n++) {
         const ratio = questions.filter((q) => q.answer === n).length / questions.length;
-        expect(ratio, `${id} 정답 ${n}`).toBeGreaterThan(0.15);
-        expect(ratio, `${id} 정답 ${n}`).toBeLessThan(0.35);
+        expect(ratio, `${id} 정답 ${n}`).toBeGreaterThan(0.6 / choiceCount);
+        expect(ratio, `${id} 정답 ${n}`).toBeLessThan(1.4 / choiceCount);
       }
     }
   });

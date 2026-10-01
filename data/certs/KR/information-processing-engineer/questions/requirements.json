@@ -1,0 +1,95 @@
+[
+  {
+    "id": "information-processing-engineer-p001",
+    "certId": "information-processing-engineer",
+    "subjectId": "sw-design",
+    "chapterId": "requirements",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "애자일(Agile) 선언문의 4가지 핵심 가치로 옳지 않은 것은?",
+    "choices": [
+      "절차와 도구보다 개인과 상호작용을 중시한다.",
+      "동작하는 소프트웨어보다 포괄적인 문서를 중시한다.",
+      "계약 협상보다 고객과의 협업을 중시한다.",
+      "계획을 따르기보다 변화에 대응하는 것을 중시한다."
+    ],
+    "answer": 2,
+    "oneLineConcept": "애자일: 문서보다 동작하는 소프트웨어를 중시한다",
+    "explanation": "애자일은 두꺼운 문서를 만드는 데 시간을 쓰기보다 **실제로 돌아가는 프로그램**을 빨리 만들어 고객에게 보여 주는 것을 중요하게 여깁니다.\n\n**틀린 선지**\n- ① 절차와 도구보다 개인과 상호작용을 중시한다.: 맞는 가치입니다.\n- ③ 계약 협상보다 고객과의 협업을 중시한다.: 맞는 가치입니다.\n- ④ 계획을 따르기보다 변화에 대응하는 것을 중시한다.: 맞는 가치입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "애자일"
+    ]
+  },
+  {
+    "id": "information-processing-engineer-p002",
+    "certId": "information-processing-engineer",
+    "subjectId": "sw-design",
+    "chapterId": "requirements",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "UML 다이어그램 가운데 시스템의 정적인 구조를 나타내는 '구조 다이어그램'에 해당하는 것은?",
+    "choices": [
+      "유스케이스 다이어그램",
+      "시퀀스 다이어그램",
+      "클래스 다이어그램",
+      "상태 다이어그램"
+    ],
+    "answer": 3,
+    "oneLineConcept": "구조 다이어그램: 클래스, 객체, 컴포넌트, 배치, 패키지",
+    "explanation": "**클래스 다이어그램**은 클래스와 그 사이의 관계를 보여 주는 대표적인 구조(정적) 다이어그램입니다.\n\n**틀린 선지**\n- ① 유스케이스 다이어그램: 사용자와 시스템의 기능을 보여 주는 행위 다이어그램입니다.\n- ② 시퀀스 다이어그램: 객체들이 주고받는 메시지를 시간 순서로 보여 주는 행위 다이어그램입니다.\n- ④ 상태 다이어그램: 객체의 상태 변화를 보여 주는 행위 다이어그램입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "UML"
+    ]
+  },
+  {
+    "id": "information-processing-engineer-p003",
+    "certId": "information-processing-engineer",
+    "subjectId": "sw-design",
+    "chapterId": "requirements",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "요구사항 가운데 '비기능 요구사항'에 해당하는 것은?",
+    "choices": [
+      "회원은 아이디와 비밀번호로 로그인할 수 있어야 한다.",
+      "관리자는 주문 목록을 조회할 수 있어야 한다.",
+      "사용자는 장바구니에 상품을 담을 수 있어야 한다.",
+      "시스템은 3초 안에 검색 결과를 보여 주어야 한다."
+    ],
+    "answer": 4,
+    "oneLineConcept": "비기능 요구사항: 성능, 보안, 품질 같은 '얼마나 잘'에 관한 요구",
+    "explanation": "**기능 요구사항**은 시스템이 '무엇을 하는가', **비기능 요구사항**은 '얼마나 빠르게, 안전하게, 안정적으로 하는가'입니다. 응답 시간 3초는 성능에 관한 요구입니다.\n\n**틀린 선지**\n- ① 회원은 아이디와 비밀번호로 로그인할 수 있어야 한다.: 기능 요구사항입니다.\n- ② 관리자는 주문 목록을 조회할 수 있어야 한다.: 기능 요구사항입니다.\n- ③ 사용자는 장바구니에 상품을 담을 수 있어야 한다.: 기능 요구사항입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "요구사항"
+    ]
+  },
+  {
+    "id": "information-processing-engineer-p004",
+    "certId": "information-processing-engineer",
+    "subjectId": "sw-design",
+    "chapterId": "requirements",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "유스케이스 다이어그램에서 '기본 유스케이스를 수행할 때 특정 조건이 맞는 경우에만 수행되는 유스케이스'와의 관계는?",
+    "choices": [
+      "확장(extend) 관계",
+      "포함(include) 관계",
+      "일반화(generalization) 관계",
+      "연관(association) 관계"
+    ],
+    "answer": 1,
+    "oneLineConcept": "include는 반드시 실행, extend는 조건이 맞을 때만 실행",
+    "explanation": "**확장(extend)** 은 '조건이 맞으면 덧붙여 실행'하는 관계입니다. 예: '결제하기'를 할 때 쿠폰이 있는 경우에만 '쿠폰 적용'을 실행.\n\n**틀린 선지**\n- ② 포함(include) 관계: 기본 유스케이스를 실행하면 반드시 함께 실행되는 관계입니다.\n- ③ 일반화(generalization) 관계: 일반적인 것과 구체적인 것 사이(부모·자식)의 관계입니다.\n- ④ 연관(association) 관계: 액터와 유스케이스가 서로 관련됨을 나타내는 관계입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "UML",
+      "유스케이스"
+    ]
+  }
+]

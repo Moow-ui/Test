@@ -1,0 +1,72 @@
+[
+  {
+    "id": "information-processing-engineer-p053",
+    "certId": "information-processing-engineer",
+    "subjectId": "is-management",
+    "chapterId": "it-trends",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "클라우드 서비스 유형 가운데, 사용자가 프로그램을 설치하지 않고 인터넷으로 접속해 소프트웨어를 빌려 쓰는 서비스는?",
+    "choices": [
+      "IaaS",
+      "PaaS",
+      "SaaS",
+      "BaaS"
+    ],
+    "answer": 3,
+    "oneLineConcept": "SaaS: 소프트웨어를 인터넷으로 빌려 쓴다",
+    "explanation": "**SaaS** 의 첫 글자 S 는 Software 입니다. 웹 메일이나 온라인 문서 편집기가 그 예입니다.\n\n**틀린 선지**\n- ① IaaS: 서버·저장 장치 같은 기반 시설을 빌려주는 서비스입니다.\n- ② PaaS: 프로그램을 개발하고 실행할 수 있는 환경(플랫폼)을 빌려주는 서비스입니다.\n- ④ BaaS: 블록체인 개발 환경을 빌려주는 서비스입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "클라우드"
+    ]
+  },
+  {
+    "id": "information-processing-engineer-p054",
+    "certId": "information-processing-engineer",
+    "subjectId": "is-management",
+    "chapterId": "it-trends",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "RAID 방식 가운데, 같은 데이터를 두 개의 디스크에 똑같이 저장(미러링)하여 한 디스크가 고장 나도 복구할 수 있는 것은?",
+    "choices": [
+      "RAID 0",
+      "RAID 1",
+      "RAID 5",
+      "RAID 6"
+    ],
+    "answer": 2,
+    "oneLineConcept": "RAID 0 = 스트라이핑(나눠 저장), RAID 1 = 미러링(똑같이 복사)",
+    "explanation": "**RAID 1** 은 거울(mirror)처럼 똑같은 내용을 두 디스크에 씁니다. 안전하지만 저장 공간은 절반만 쓸 수 있습니다.\n\n**틀린 선지**\n- ① RAID 0: 데이터를 여러 디스크에 나눠 저장해 빠르지만, 하나만 고장 나도 모두 잃습니다.\n- ③ RAID 5: 오류 복구용 패리티를 여러 디스크에 나눠 저장하는 방식입니다.\n- ④ RAID 6: 패리티를 두 개 두어 디스크 두 개가 고장 나도 복구할 수 있는 방식입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "RAID"
+    ]
+  },
+  {
+    "id": "information-processing-engineer-p055",
+    "certId": "information-processing-engineer",
+    "subjectId": "is-management",
+    "chapterId": "it-trends",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "네트워크를 제어하는 부분과 데이터를 전달하는 부분을 분리하여, 소프트웨어로 네트워크를 중앙에서 제어·관리하는 기술은?",
+    "choices": [
+      "SDN",
+      "NFC",
+      "VPN",
+      "CDN"
+    ],
+    "answer": 1,
+    "oneLineConcept": "SDN: 소프트웨어로 네트워크를 제어하는 기술",
+    "explanation": "**SDN(소프트웨어 정의 네트워킹)** 은 장비마다 따로 설정하던 것을 중앙의 소프트웨어가 한꺼번에 제어하게 한 기술입니다.\n\n**틀린 선지**\n- ② NFC: 10cm 안팎의 가까운 거리에서 쓰는 무선 통신 기술입니다.\n- ③ VPN: 공중망에 암호화된 전용 통로를 만드는 가상 사설망입니다.\n- ④ CDN: 콘텐츠를 사용자와 가까운 서버에서 보내 주는 전송망입니다.",
+    "frequency": 3,
+    "reviewStatus": "unverified",
+    "tags": [
+      "신기술",
+      "네트워크"
+    ]
+  }
+]

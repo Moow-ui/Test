@@ -1,0 +1,94 @@
+[
+  {
+    "id": "electrical-engineer-p013",
+    "certId": "electrical-engineer",
+    "subjectId": "power-engineering",
+    "chapterId": "transmission",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "송전 전력과 역률이 같을 때, 송전 전압을 2배로 높이면 선로의 전력 손실은 어떻게 되는가?",
+    "choices": [
+      "1/4 배",
+      "1/2 배",
+      "2배",
+      "4배"
+    ],
+    "answer": 1,
+    "oneLineConcept": "전력 손실은 송전 전압의 제곱에 반비례한다",
+    "explanation": "1. 같은 전력을 보낼 때 전압이 2배면 전류는 1/2 배가 됩니다.\n2. 전력 손실 = I² × R 이므로 (1/2)² = 1/4 배가 됩니다.\n\n이것이 전기를 높은 전압으로 보내는 이유입니다.\n\n**틀린 선지**\n- ② 1/2 배: 전류가 줄어드는 비율입니다. 손실은 전류의 제곱에 비례합니다.\n- ③ 2배: 전압을 높이면 손실은 줄어듭니다.\n- ④ 4배: 송전할 수 있는 전력이 늘어나는 비율입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "송전 전압"
+    ]
+  },
+  {
+    "id": "electrical-engineer-p014",
+    "certId": "electrical-engineer",
+    "subjectId": "power-engineering",
+    "chapterId": "transmission",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "송전 선로에 복도체(다도체)를 쓸 때의 특징으로 옳지 않은 것은?",
+    "choices": [
+      "코로나 발생이 줄어든다.",
+      "선로의 인덕턴스가 감소한다.",
+      "선로의 정전용량이 감소한다.",
+      "송전 용량이 증가한다."
+    ],
+    "answer": 3,
+    "oneLineConcept": "복도체: 인덕턴스 감소, 정전용량 증가, 코로나 억제",
+    "explanation": "복도체는 전선을 여러 가닥으로 나눠 **겉보기 굵기를 키운 것**과 같습니다. 그래서 인덕턴스는 줄고 **정전용량은 늘어납니다.**\n\n**틀린 선지**\n- ① 코로나 발생이 줄어든다.: 맞는 특징입니다. 전선 표면의 전위 경도가 낮아집니다.\n- ② 선로의 인덕턴스가 감소한다.: 맞는 특징입니다.\n- ④ 송전 용량이 증가한다.: 맞는 특징입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "복도체"
+    ]
+  },
+  {
+    "id": "electrical-engineer-p015",
+    "certId": "electrical-engineer",
+    "subjectId": "power-engineering",
+    "chapterId": "transmission",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "무부하 또는 경부하 상태의 장거리 송전 선로에서 수전단 전압이 송전단 전압보다 높아지는 현상과, 그 방지 대책을 옳게 짝지은 것은?",
+    "choices": [
+      "표피 효과 – 직렬 콘덴서 설치",
+      "페란티 현상 – 전력용 콘덴서 설치",
+      "코로나 현상 – 분로 리액터 설치",
+      "페란티 현상 – 분로 리액터 설치"
+    ],
+    "answer": 4,
+    "oneLineConcept": "페란티 현상은 선로의 정전용량 때문에 생기며 분로 리액터로 막는다",
+    "explanation": "부하가 적으면 선로의 정전용량 때문에 **앞선(진상) 전류**가 흘러 수전단 전압이 올라갑니다. 뒤진 전류를 흘리는 **분로 리액터**를 달아 이를 상쇄합니다.\n\n**틀린 선지**\n- ① 표피 효과 – 직렬 콘덴서 설치: 표피 효과는 전류가 전선의 겉쪽으로 몰리는 현상입니다.\n- ② 페란티 현상 – 전력용 콘덴서 설치: 콘덴서는 진상 전류를 더 늘려 현상을 키웁니다.\n- ③ 코로나 현상 – 분로 리액터 설치: 코로나는 전선 주위의 공기가 부분적으로 방전하는 현상입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "페란티 현상"
+    ]
+  },
+  {
+    "id": "electrical-engineer-p016",
+    "certId": "electrical-engineer",
+    "subjectId": "power-engineering",
+    "chapterId": "transmission",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "중성점 직접 접지 방식의 특징으로 옳지 않은 것은?",
+    "choices": [
+      "1선 지락 때 건전상의 전위 상승이 작다.",
+      "지락 전류가 작아 통신선 유도 장해가 작다.",
+      "기기의 절연 수준을 낮출 수 있다.",
+      "보호 계전기의 동작이 확실하다."
+    ],
+    "answer": 2,
+    "oneLineConcept": "직접 접지: 지락 전류가 가장 커서 통신선 유도 장해가 크다",
+    "explanation": "직접 접지 방식은 지락 사고 때 **큰 전류**가 흐릅니다. 그래서 계전기는 확실히 동작하지만, 근처 통신선에 유도 장해를 크게 줍니다.\n\n**틀린 선지**\n- ① 1선 지락 때 건전상의 전위 상승이 작다.: 맞는 특징입니다.\n- ③ 기기의 절연 수준을 낮출 수 있다.: 맞는 특징입니다. 전위 상승이 작기 때문입니다.\n- ④ 보호 계전기의 동작이 확실하다.: 맞는 특징입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "중성점 접지"
+    ]
+  }
+]

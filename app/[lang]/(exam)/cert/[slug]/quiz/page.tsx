@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
 import { QuizRunner } from "@/components/quiz/QuizRunner";
-import { getCertificationIn, getQuestions } from "@/lib/data";
+import { getCertificationIn } from "@/lib/data";
 import { getMessages, isLocale, localeCountry } from "@/lib/i18n";
 import { noindexMetadata } from "@/lib/seo";
 import { readyCertParams } from "@/lib/static-params";
@@ -29,13 +29,11 @@ export default async function QuizPage({ params }: Props) {
   if (!isLocale(lang)) notFound();
   const cert = await getCertificationIn(localeCountry(lang), slug);
   if (!cert?.ready || !cert.examInfo) notFound();
-  const questions = await getQuestions(cert.id);
 
   return (
     <Suspense fallback={<p className="p-5 text-lg font-bold">{getMessages(lang).quiz.preparing}</p>}>
       <QuizRunner
         cert={{ id: cert.id, name: cert.name, subjects: cert.subjects, examInfo: cert.examInfo }}
-        questions={questions}
       />
     </Suspense>
   );

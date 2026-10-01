@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { Fold } from "@/components/Fold";
 import { AuthForm, errorText } from "@/components/auth/AuthForm";
 import { deleteAccount, logout, useAuth } from "@/lib/auth-client";
+import { fetchQuestions } from "@/lib/data/client";
 import { circled, formatDate } from "@/lib/format";
 import { fmt, localePath } from "@/lib/i18n";
 import {
@@ -29,7 +30,7 @@ export interface ProfileCert {
   ready: boolean;
 }
 
-/** /api/questions/{certId} 가 내려 주는 문제 요약 */
+/** 프로필에 보여 주는 문제 내용 */
 interface QuestionBrief {
   id: string;
   stem: string;
@@ -61,23 +62,24 @@ export function ProfileView({ certs }: { certs: ProfileCert[] }) {
   const certOf = (questionId: string): string | null =>
     history[questionId]?.certId ?? readyCerts.find((c) => questionId.startsWith(c.id))?.id ?? null;
 
-  const neededCerts = Array.from(
-    new Set(
-      Object.keys(history)
-        .map(certOf)
-        .filter((id): id is string => !!id),
-    ),
-  )
+  /** 내가 푼 문제를 자격증별로: "자격증 id:문제 id,문제 id" 를 한 줄씩 */
+  const byCert: Record<string, string[]> = {};
+  for (const questionId of Object.keys(history)) {
+    const certId = certOf(questionId);
+    if (certId) (byCert[certId] ??= []).push(questionId);
+  }
+  const needed = Object.entries(byCert)
+    .map(([certId, ids]) => `${certId}:${ids.sort().join(",")}`)
     .sort()
-    .join(",");
+    .join("\n");
 
-  // 내가 푼 문제가 있는 자격증의 문제 내용만 불러온다
+  // 내가 푼 문제가 들어 있는 단원 파일만 불러온다
   useEffect(() => {
-    if (auth.status !== "user" || neededCerts === "") return;
+    if (auth.status !== "user" || needed === "") return;
     let cancelled = false;
-    for (const certId of neededCerts.split(",")) {
-      fetch(`/api/questions/${certId}`)
-        .then((r) => (r.ok ? (r.json() as Promise<QuestionBrief[]>) : []))
+    for (const line of needed.split("\n")) {
+      const [certId, ids] = line.split(":");
+      fetchQuestions(certId, ids.split(","))
         .then((list) => {
           if (cancelled) return;
           setQuestions((prev) => ({ ...prev, ...Object.fromEntries(list.map((q) => [q.id, q])) }));
@@ -87,7 +89,7 @@ export function ProfileView({ certs }: { certs: ProfileCert[] }) {
     return () => {
       cancelled = true;
     };
-  }, [auth.status, neededCerts]);
+  }, [auth.status, needed]);
 
   if (auth.status === "loading") {
     return <p className="card p-5 font-bold">{m.loading}</p>;

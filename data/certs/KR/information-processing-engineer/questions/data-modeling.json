@@ -1,0 +1,94 @@
+[
+  {
+    "id": "information-processing-engineer-p025",
+    "certId": "information-processing-engineer",
+    "subjectId": "db-build",
+    "chapterId": "data-modeling",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "관계형 데이터베이스의 릴레이션에서 튜플(행)의 수를 뜻하는 용어는?",
+    "choices": [
+      "차수(Degree)",
+      "카디널리티(Cardinality)",
+      "도메인(Domain)",
+      "스키마(Schema)"
+    ],
+    "answer": 2,
+    "oneLineConcept": "카디널리티 = 튜플(행)의 수, 차수 = 속성(열)의 수",
+    "explanation": "**카디널리티**는 행의 수입니다. 학생 테이블에 학생이 50명 있으면 카디널리티는 50 입니다.\n\n**틀린 선지**\n- ① 차수(Degree): 속성(열)의 수입니다.\n- ③ 도메인(Domain): 한 속성이 가질 수 있는 값의 범위입니다.\n- ④ 스키마(Schema): 데이터베이스의 구조와 제약 조건을 적어 둔 것입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "관계형 모델"
+    ]
+  },
+  {
+    "id": "information-processing-engineer-p026",
+    "certId": "information-processing-engineer",
+    "subjectId": "db-build",
+    "chapterId": "data-modeling",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "'기본키를 이루는 속성은 Null 값이나 중복된 값을 가질 수 없다'는 제약 조건은?",
+    "choices": [
+      "개체 무결성",
+      "참조 무결성",
+      "도메인 무결성",
+      "사용자 정의 무결성"
+    ],
+    "answer": 1,
+    "oneLineConcept": "개체 무결성: 기본키는 Null·중복 불가",
+    "explanation": "기본키는 행 하나하나를 구별하는 값이므로 비어 있거나 겹치면 안 됩니다. 이것이 **개체 무결성**입니다.\n\n**틀린 선지**\n- ② 참조 무결성: 외래키 값은 참조하는 릴레이션의 기본키 값이거나 Null 이어야 한다는 조건입니다.\n- ③ 도메인 무결성: 속성의 값이 정해진 범위(도메인) 안에 있어야 한다는 조건입니다.\n- ④ 사용자 정의 무결성: 사용자가 정한 업무 규칙을 지켜야 한다는 조건입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "무결성"
+    ]
+  },
+  {
+    "id": "information-processing-engineer-p027",
+    "certId": "information-processing-engineer",
+    "subjectId": "db-build",
+    "chapterId": "data-modeling",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "정규화 과정에서 제2정규형(2NF)을 제3정규형(3NF)으로 만들 때 하는 작업은?",
+    "choices": [
+      "도메인을 원자값으로 분해한다.",
+      "부분 함수 종속을 제거한다.",
+      "이행 함수 종속을 제거한다.",
+      "다치 종속을 제거한다."
+    ],
+    "answer": 3,
+    "oneLineConcept": "1NF 원자값 → 2NF 부분 종속 제거 → 3NF 이행 종속 제거",
+    "explanation": "**이행 함수 종속**은 A → B 이고 B → C 이면 A → C 가 되는 것입니다. 이것을 없애 테이블을 나누면 제3정규형이 됩니다.\n\n**틀린 선지**\n- ① 도메인을 원자값으로 분해한다.: 비정규 릴레이션을 제1정규형으로 만드는 작업입니다.\n- ② 부분 함수 종속을 제거한다.: 제1정규형을 제2정규형으로 만드는 작업입니다.\n- ④ 다치 종속을 제거한다.: BCNF 를 제4정규형으로 만드는 작업입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "정규화"
+    ]
+  },
+  {
+    "id": "information-processing-engineer-p028",
+    "certId": "information-processing-engineer",
+    "subjectId": "db-build",
+    "chapterId": "data-modeling",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "관계 대수 연산자 가운데 릴레이션에서 조건을 만족하는 튜플(행)만 골라내는 연산은?",
+    "choices": [
+      "디비전(÷)",
+      "프로젝트(π)",
+      "조인(⋈)",
+      "셀렉트(σ)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "셀렉트(σ)는 행을, 프로젝트(π)는 열을 골라낸다",
+    "explanation": "**셀렉트(σ)** 는 조건에 맞는 행만 뽑으므로 수평 연산이라고 합니다.\n\n**틀린 선지**\n- ① 디비전(÷): 나누는 릴레이션의 모든 값과 짝을 이루는 튜플을 구하는 연산입니다.\n- ② 프로젝트(π): 필요한 속성(열)만 뽑는 수직 연산입니다.\n- ③ 조인(⋈): 공통 속성을 기준으로 두 릴레이션을 합치는 연산입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "관계 대수"
+    ]
+  }
+]

@@ -1,0 +1,71 @@
+[
+  {
+    "id": "forklift-operator-p037",
+    "certId": "forklift-operator",
+    "subjectId": "structure",
+    "chapterId": "electric",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "지게차에서 축전지(배터리)를 떼어 낼 때의 순서로 옳은 것은?",
+    "choices": [
+      "(+) 선을 먼저 떼고 접지(-) 선을 나중에 뗀다.",
+      "접지(-) 선을 먼저 떼고 (+) 선을 나중에 뗀다.",
+      "두 선을 동시에 뗀다.",
+      "순서는 상관없다."
+    ],
+    "answer": 2,
+    "oneLineConcept": "축전지: 뗄 때는 (-) 먼저, 붙일 때는 (+) 먼저",
+    "explanation": "차체가 (-)에 이어져 있습니다. (+) 선을 먼저 풀다가 공구가 차체에 닿으면 **합선되어 불꽃**이 튑니다. 그래서 뗄 때는 접지(-) 선부터 풉니다. 붙일 때는 반대로 (+) 선부터 연결합니다.\n\n**틀린 선지**\n- ① (+) 선을 먼저 떼고 접지(-) 선을 나중에 뗀다.: 합선 위험이 있습니다. 붙일 때의 순서입니다.\n- ③ 두 선을 동시에 뗀다.: 위험합니다.\n- ④ 순서는 상관없다.: 순서가 정해져 있습니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "축전지"
+    ]
+  },
+  {
+    "id": "forklift-operator-p038",
+    "certId": "forklift-operator",
+    "subjectId": "structure",
+    "chapterId": "electric",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "납산 축전지에 대한 설명으로 옳지 않은 것은?",
+    "choices": [
+      "전해액은 묽은 황산이다.",
+      "12V 축전지는 셀 6개가 직렬로 연결되어 있다.",
+      "전해액이 줄었을 때는 수돗물을 보충한다.",
+      "방전될수록 전해액의 비중이 낮아진다."
+    ],
+    "answer": 3,
+    "oneLineConcept": "전해액이 줄면 증류수를 보충한다",
+    "explanation": "수돗물에는 여러 물질이 섞여 있어 축전지의 극판을 상하게 합니다. 전해액이 자연히 줄었을 때는 **증류수**를 넣습니다.\n\n**틀린 선지**\n- ① 전해액은 묽은 황산이다.: 맞는 설명입니다.\n- ② 12V 축전지는 셀 6개가 직렬로 연결되어 있다.: 맞는 설명입니다. 셀 하나가 약 2V 입니다.\n- ④ 방전될수록 전해액의 비중이 낮아진다.: 맞는 설명입니다. 완전 충전일 때 비중은 약 1.280 입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "축전지"
+    ]
+  },
+  {
+    "id": "forklift-operator-p039",
+    "certId": "forklift-operator",
+    "subjectId": "structure",
+    "chapterId": "electric",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "건설기계에 쓰는 교류(AC) 발전기에서 교류를 직류로 바꾸는(정류) 부품은?",
+    "choices": [
+      "다이오드",
+      "스테이터 코일",
+      "로터",
+      "전압 조정기"
+    ],
+    "answer": 1,
+    "oneLineConcept": "교류 발전기는 다이오드로 정류한다",
+    "explanation": "**다이오드**는 전기를 한쪽으로만 흐르게 하는 부품입니다. 이 성질로 교류를 직류로 바꾸고, 축전지의 전기가 발전기로 거꾸로 흐르는 것도 막습니다.\n\n**틀린 선지**\n- ② 스테이터 코일: 전기가 만들어지는 고정된 코일입니다.\n- ③ 로터: 돌면서 자석 구실을 하는 부분입니다.\n- ④ 전압 조정기: 발전기의 전압을 일정하게 맞추는 부품입니다.",
+    "frequency": 3,
+    "reviewStatus": "unverified",
+    "tags": [
+      "발전기"
+    ]
+  }
+]

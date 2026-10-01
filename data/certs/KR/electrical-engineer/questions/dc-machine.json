@@ -1,0 +1,49 @@
+[
+  {
+    "id": "electrical-engineer-p025",
+    "certId": "electrical-engineer",
+    "subjectId": "electric-machines",
+    "chapterId": "dc-machine",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "직류기에서 전기자 반작용을 막는 대책으로 가장 효과적인 것은?",
+    "choices": [
+      "보상 권선을 설치한다.",
+      "브러시의 접촉 저항을 줄인다.",
+      "계자 권선의 권수를 줄인다.",
+      "전기자 전류를 늘린다."
+    ],
+    "answer": 1,
+    "oneLineConcept": "전기자 반작용 대책: 보상 권선(가장 효과적), 보극",
+    "explanation": "**보상 권선**은 자극 표면에 감아 전기자 전류와 반대 방향의 전류를 흘려, 전기자가 만드는 자속을 상쇄합니다.\n\n**틀린 선지**\n- ② 브러시의 접촉 저항을 줄인다.: 전기자 반작용의 대책이 아닙니다.\n- ③ 계자 권선의 권수를 줄인다.: 주자속이 약해져 반작용의 영향이 오히려 커집니다.\n- ④ 전기자 전류를 늘린다.: 전기자 전류가 늘면 반작용이 더 심해집니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "직류기",
+      "전기자 반작용"
+    ]
+  },
+  {
+    "id": "electrical-engineer-p026",
+    "certId": "electrical-engineer",
+    "subjectId": "electric-machines",
+    "chapterId": "dc-machine",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "직류 직권 전동기를 무부하 상태로 운전하면 안 되는 이유는?",
+    "choices": [
+      "전기자 전류가 지나치게 커지기 때문에",
+      "속도가 위험할 정도로 높아지기 때문에",
+      "역기전력이 0 이 되기 때문에",
+      "토크가 지나치게 커지기 때문에"
+    ],
+    "answer": 2,
+    "oneLineConcept": "직권 전동기는 무부하에서 속도가 위험하게 올라간다",
+    "explanation": "직권 전동기는 전기자와 계자가 직렬이어서, 부하가 없으면 전류가 줄고 **자속도 함께 줄어듭니다.** 속도는 자속에 반비례하므로 속도가 끝없이 올라갑니다. 그래서 벨트가 벗겨질 수 있는 벨트 운전도 하지 않습니다.\n\n**틀린 선지**\n- ① 전기자 전류가 지나치게 커지기 때문에: 무부하에서는 전류가 작아집니다.\n- ③ 역기전력이 0 이 되기 때문에: 역기전력은 속도가 오르면 커집니다.\n- ④ 토크가 지나치게 커지기 때문에: 무부하에서는 토크가 작습니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "직류 전동기"
+    ]
+  }
+]

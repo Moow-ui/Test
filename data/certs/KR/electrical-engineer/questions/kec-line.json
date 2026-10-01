@@ -1,0 +1,95 @@
+[
+  {
+    "id": "electrical-engineer-p057",
+    "certId": "electrical-engineer",
+    "subjectId": "kec",
+    "chapterId": "kec-line",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "가공 전선로의 지지물에 취급자가 오르내리는 데 쓰는 발판 볼트는 지표상 몇 m 미만에 시설해서는 안 되는가?",
+    "choices": [
+      "1.2m",
+      "1.5m",
+      "1.8m",
+      "2.0m"
+    ],
+    "answer": 3,
+    "oneLineConcept": "발판 볼트는 지표상 1.8m 미만에 시설하지 않는다",
+    "explanation": "일반 사람이 함부로 올라가지 못하도록, 발판 볼트는 **지표상 1.8m 이상**의 높이에만 답니다.\n\n**틀린 선지**\n- ① 1.2m: 기준과 다릅니다.\n- ② 1.5m: 기준과 다릅니다.\n- ④ 2.0m: 기준은 1.8m 입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "지지물"
+    ]
+  },
+  {
+    "id": "electrical-engineer-p058",
+    "certId": "electrical-engineer",
+    "subjectId": "kec",
+    "chapterId": "kec-line",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "가공 전선로의 지지물에 시설하는 지선의 기준으로 옳지 않은 것은?",
+    "choices": [
+      "소선 2가닥 이상을 꼬아 만든 연선일 것",
+      "허용 인장 하중의 최저는 4.31kN 일 것",
+      "지선의 안전율은 2.5 이상일 것",
+      "도로를 횡단하는 지선의 높이는 지표상 5m 이상일 것"
+    ],
+    "answer": 1,
+    "oneLineConcept": "지선: 소선 3가닥 이상의 연선",
+    "explanation": "지선은 **소선 3가닥 이상**을 꼬아 만든 연선이어야 하고, 소선은 지름 2.6mm 이상의 금속선을 씁니다.\n\n**틀린 선지**\n- ② 허용 인장 하중의 최저는 4.31kN 일 것: 맞는 기준입니다.\n- ③ 지선의 안전율은 2.5 이상일 것: 맞는 기준입니다.\n- ④ 도로를 횡단하는 지선의 높이는 지표상 5m 이상일 것: 맞는 기준입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "지선"
+    ]
+  },
+  {
+    "id": "electrical-engineer-p059",
+    "certId": "electrical-engineer",
+    "subjectId": "kec",
+    "chapterId": "kec-line",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "저압 또는 고압 가공 전선이 도로를 횡단하는 경우, 전선의 지표상 높이는 몇 m 이상이어야 하는가?",
+    "choices": [
+      "4m 이상",
+      "5m 이상",
+      "6.5m 이상",
+      "6m 이상"
+    ],
+    "answer": 4,
+    "oneLineConcept": "가공 전선 높이: 도로 횡단 6m, 철도 횡단 6.5m 이상",
+    "explanation": "도로를 가로지를 때는 지표상 **6m 이상**입니다. 철도나 궤도를 가로지를 때는 레일면상 6.5m 이상입니다.\n\n**틀린 선지**\n- ① 4m 이상: 기준에 미치지 못합니다.\n- ② 5m 이상: 기준에 미치지 못합니다. 5m 는 도로를 횡단하는 지선의 높이 기준입니다.\n- ③ 6.5m 이상: 철도·궤도를 횡단할 때의 기준입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "가공 전선"
+    ]
+  },
+  {
+    "id": "electrical-engineer-p060",
+    "certId": "electrical-engineer",
+    "subjectId": "kec",
+    "chapterId": "kec-line",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "전체 길이가 12m 인 철근 콘크리트주를 땅에 세울 때, 묻히는 깊이는 최소 몇 m 이상이어야 하는가? (설계 하중 6.8kN 이하)",
+    "choices": [
+      "1.5m",
+      "2.0m",
+      "2.5m",
+      "3.0m"
+    ],
+    "answer": 2,
+    "oneLineConcept": "지지물의 근입 깊이: 15m 이하는 길이의 1/6 이상",
+    "explanation": "1. 전체 길이가 15m 이하이므로 길이의 1/6 이상을 묻습니다.\n2. 12 ÷ 6 = 2.0m\n\n전체 길이가 15m 를 넘으면 2.5m 이상 묻습니다.\n\n**틀린 선지**\n- ① 1.5m: 기준에 미치지 못합니다.\n- ③ 2.5m: 전체 길이가 15m 를 넘을 때의 기준입니다.\n- ④ 3.0m: 기준과 다릅니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "지지물",
+      "계산"
+    ]
+  }
+]

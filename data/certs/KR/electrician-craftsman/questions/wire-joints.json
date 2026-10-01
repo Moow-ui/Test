@@ -1,0 +1,50 @@
+[
+  {
+    "id": "electrician-craftsman-p044",
+    "certId": "electrician-craftsman",
+    "subjectId": "electric-facilities",
+    "chapterId": "wire-joints",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "전선을 접속할 때 전선의 세기(인장하중)는 몇 % 이상 감소시키지 않아야 하는가?",
+    "choices": [
+      "10%",
+      "20%",
+      "40%",
+      "80%"
+    ],
+    "answer": 2,
+    "oneLineConcept": "전선 접속: 세기를 20% 이상 줄이지 말 것 (80% 이상 유지)",
+    "explanation": "전선을 이은 부분은 약해지기 쉽습니다. 그래서 접속할 때 지켜야 할 조건이 정해져 있습니다.\n\n- 전기저항이 늘어나지 않게 할 것\n- 전선의 세기(잡아당기는 힘에 견디는 정도)를 **20% 이상 줄이지 말 것** → 원래 세기의 80% 이상을 유지\n- 접속 부분은 원래 절연물과 같은 수준 이상으로 절연할 것\n\n**틀린 선지**\n- ① 10%, ③ 40%: 규정에 없는 숫자입니다.\n- ④ 80%: '80% 이상 유지'의 80과 헷갈리게 만든 선지입니다. 줄어들어도 되는 한도는 20% 입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "전선 접속",
+      "암기"
+    ]
+  },
+  {
+    "id": "electrician-craftsman-p045",
+    "certId": "electrician-craftsman",
+    "subjectId": "electric-facilities",
+    "chapterId": "wire-joints",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "단면적 6mm² 이하의 가는 단선을 직선으로 이을 때 주로 쓰는 접속 방법은?",
+    "choices": [
+      "브리타니아 접속",
+      "트위스트 접속",
+      "쥐꼬리 접속",
+      "슬리브 압착 접속"
+    ],
+    "answer": 2,
+    "oneLineConcept": "가는 단선(6mm² 이하)은 트위스트, 굵은 단선은 브리타니아",
+    "explanation": "**단선**(한 가닥으로 된 전선)을 직선으로 잇는 방법은 굵기에 따라 나뉩니다.\n\n- **트위스트 접속**: 6mm² 이하의 **가는** 단선. 두 전선을 서로 꼬아서 잇습니다.\n- **브리타니아 접속**: 10mm² 이상의 **굵은** 단선. 굵어서 꼬기 어려우므로 가는 첨선과 조인트선을 감아서 잇습니다.\n\n**틀린 선지**\n- ① 브리타니아 접속: 굵은 단선에 씁니다.\n- ③ 쥐꼬리 접속: 박스 안에서 전선 끝끼리 모아 꼬는 방법으로, 직선 접속이 아닙니다.\n- ④ 슬리브 압착 접속: 슬리브(접속관)에 넣고 압착 공구로 눌러 잇는 방법입니다. 손으로 꼬아 잇는 직선 접속과 다릅니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "전선 접속",
+      "개념"
+    ]
+  }
+]

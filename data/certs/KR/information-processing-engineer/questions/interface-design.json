@@ -1,0 +1,25 @@
+[
+  {
+    "id": "information-processing-engineer-p012",
+    "certId": "information-processing-engineer",
+    "subjectId": "sw-design",
+    "chapterId": "interface-design",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "미들웨어 가운데 메시지를 큐에 넣어 두고 비동기 방식으로 전달하는 것은?",
+    "choices": [
+      "RPC",
+      "ORB",
+      "TP-Monitor",
+      "MOM"
+    ],
+    "answer": 4,
+    "oneLineConcept": "MOM: 메시지 기반의 비동기형 미들웨어",
+    "explanation": "**MOM(메시지 지향 미들웨어)** 은 우편함처럼 메시지를 맡겨 두면 상대가 나중에 꺼내 가는 방식입니다. 보내는 쪽이 답을 기다리지 않아도 됩니다.\n\n**틀린 선지**\n- ① RPC: 멀리 있는 프로시저를 내 것처럼 불러 쓰는 방식입니다.\n- ② ORB: 객체지향 방식으로 원격 객체를 불러 쓰는 미들웨어입니다. (CORBA)\n- ③ TP-Monitor: 트랜잭션이 올바로 처리되는지 감시하는 미들웨어입니다.",
+    "frequency": 3,
+    "reviewStatus": "unverified",
+    "tags": [
+      "미들웨어"
+    ]
+  }
+]

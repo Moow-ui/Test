@@ -1,0 +1,94 @@
+[
+  {
+    "id": "computer-literacy-1-p001",
+    "certId": "computer-literacy-1",
+    "subjectId": "computer-general",
+    "chapterId": "windows",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "여러 사용자가 한 대의 컴퓨터를 동시에 쓸 수 있도록, CPU 사용 시간을 아주 짧게 나누어 차례로 배정하는 운영 방식은?",
+    "choices": [
+      "일괄 처리 시스템",
+      "시분할 시스템",
+      "분산 처리 시스템",
+      "실시간 처리 시스템"
+    ],
+    "answer": 2,
+    "oneLineConcept": "시분할: CPU 시간을 잘게 나눠 여러 사용자에게 차례로 배정",
+    "explanation": "**시분할(Time Sharing)** 방식은 시간을 잘게 쪼개 돌아가며 처리하므로, 사용자는 저마다 컴퓨터를 혼자 쓰는 것처럼 느낍니다.\n\n**틀린 선지**\n- ① 일괄 처리 시스템: 자료를 모아 두었다가 한꺼번에 처리하는 방식입니다. (예: 급여 계산)\n- ③ 분산 처리 시스템: 여러 대의 컴퓨터가 일을 나누어 처리하는 방식입니다.\n- ④ 실시간 처리 시스템: 자료가 생기는 즉시 처리하는 방식입니다. (예: 좌석 예약)",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "운영체제"
+    ]
+  },
+  {
+    "id": "computer-literacy-1-p002",
+    "certId": "computer-literacy-1",
+    "subjectId": "computer-general",
+    "chapterId": "windows",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "파일 시스템 NTFS 에 대한 설명으로 옳지 않은 것은?",
+    "choices": [
+      "FAT32 보다 큰 용량의 파일과 드라이브를 지원한다.",
+      "파일과 폴더에 대한 접근 권한을 설정할 수 있다.",
+      "FAT32 보다 보안과 안정성이 떨어진다.",
+      "파일 압축과 암호화 기능을 제공한다."
+    ],
+    "answer": 3,
+    "oneLineConcept": "NTFS는 FAT32보다 보안·안정성·대용량 지원이 뛰어나다",
+    "explanation": "**NTFS** 는 FAT32 의 단점을 고친 파일 시스템입니다. 권한 설정, 압축, 암호화, 오류 복구 기능이 있어 보안과 안정성이 더 좋습니다. 참고로 FAT32 는 파일 하나가 4GB 를 넘을 수 없습니다.\n\n**틀린 선지**\n- ① FAT32 보다 큰 용량의 파일과 드라이브를 지원한다.: 맞는 설명입니다.\n- ② 파일과 폴더에 대한 접근 권한을 설정할 수 있다.: 맞는 설명입니다.\n- ④ 파일 압축과 암호화 기능을 제공한다.: 맞는 설명입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "파일 시스템"
+    ]
+  },
+  {
+    "id": "computer-literacy-1-p003",
+    "certId": "computer-literacy-1",
+    "subjectId": "computer-general",
+    "chapterId": "windows",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "한글 Windows의 레지스트리(Registry)에 대한 설명으로 옳지 않은 것은?",
+    "choices": [
+      "시스템 구성 정보와 프로그램 설정을 모아 둔 데이터베이스이다.",
+      "실행 창에 regedit 를 입력하여 레지스트리 편집기를 연다.",
+      "잘못 고치면 시스템이 제대로 동작하지 않을 수 있다.",
+      "레지스트리는 백업(내보내기)할 수 없으므로 고칠 때 주의해야 한다."
+    ],
+    "answer": 4,
+    "oneLineConcept": "레지스트리는 편집기의 '내보내기'로 백업할 수 있다",
+    "explanation": "레지스트리 편집기의 **[파일] → [내보내기]** 로 백업해 둘 수 있습니다. 잘못 고쳤을 때는 '가져오기'로 되돌립니다.\n\n**틀린 선지**\n- ① 시스템 구성 정보와 프로그램 설정을 모아 둔 데이터베이스이다.: 맞는 설명입니다.\n- ② 실행 창에 regedit 를 입력하여 레지스트리 편집기를 연다.: 맞는 설명입니다.\n- ③ 잘못 고치면 시스템이 제대로 동작하지 않을 수 있다.: 맞는 설명입니다. 그래서 고치기 전에 백업합니다.",
+    "frequency": 3,
+    "reviewStatus": "unverified",
+    "tags": [
+      "레지스트리"
+    ]
+  },
+  {
+    "id": "computer-literacy-1-p004",
+    "certId": "computer-literacy-1",
+    "subjectId": "computer-general",
+    "chapterId": "windows",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "한글 Windows의 '드라이브 조각 모음 및 최적화'에 대한 설명으로 옳은 것은?",
+    "choices": [
+      "흩어진 파일 조각을 모아 디스크를 읽는 속도를 높인다.",
+      "디스크의 사용 가능한 용량을 늘려 준다.",
+      "필요 없는 임시 파일을 찾아 지운다.",
+      "디스크의 물리적 손상을 찾아 고친다."
+    ],
+    "answer": 1,
+    "oneLineConcept": "조각 모음은 용량이 아니라 읽는 속도를 높인다",
+    "explanation": "파일을 넣고 지우기를 되풀이하면 한 파일이 디스크 여기저기에 흩어져 저장됩니다. **조각 모음**은 이를 한곳에 모아 읽는 속도를 높입니다. 용량은 늘어나지 않습니다.\n\n**틀린 선지**\n- ② 디스크의 사용 가능한 용량을 늘려 준다.: 용량을 늘리는 기능은 디스크 정리입니다.\n- ③ 필요 없는 임시 파일을 찾아 지운다.: 디스크 정리의 설명입니다.\n- ④ 디스크의 물리적 손상을 찾아 고친다.: 오류 검사의 설명입니다.",
+    "frequency": 3,
+    "reviewStatus": "unverified",
+    "tags": [
+      "시스템 관리"
+    ]
+  }
+]

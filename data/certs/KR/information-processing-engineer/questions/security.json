@@ -1,0 +1,119 @@
+[
+  {
+    "id": "information-processing-engineer-p056",
+    "certId": "information-processing-engineer",
+    "subjectId": "is-management",
+    "chapterId": "security",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "암호 알고리즘 가운데 공개키(비대칭키) 암호 방식에 해당하는 것은?",
+    "choices": [
+      "DES",
+      "AES",
+      "SEED",
+      "RSA"
+    ],
+    "answer": 4,
+    "oneLineConcept": "공개키 암호: RSA, ECC / 대칭키 암호: DES, AES, SEED, ARIA",
+    "explanation": "**RSA** 는 큰 수의 소인수분해가 어렵다는 점을 이용한 대표적인 공개키 암호입니다.\n\n**틀린 선지**\n- ① DES: 대칭키(비밀키) 암호입니다.\n- ② AES: 대칭키 암호입니다. DES 를 대신하는 표준입니다.\n- ③ SEED: 우리나라에서 개발한 대칭키 암호입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "암호"
+    ]
+  },
+  {
+    "id": "information-processing-engineer-p057",
+    "certId": "information-processing-engineer",
+    "subjectId": "is-management",
+    "chapterId": "security",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "웹 응용 프로그램의 입력란에 SQL 문을 끼워 넣어 데이터베이스를 허가 없이 조회하거나 조작하는 공격은?",
+    "choices": [
+      "SQL 삽입(SQL Injection)",
+      "크로스 사이트 스크립팅(XSS)",
+      "서비스 거부 공격(DoS)",
+      "버퍼 오버플로"
+    ],
+    "answer": 1,
+    "oneLineConcept": "SQL 삽입: 입력값에 SQL 문을 끼워 넣는 공격",
+    "explanation": "로그인 창에 ' OR '1'='1 같은 값을 넣어 조건을 언제나 참으로 만드는 것이 대표적인 예입니다. 입력값을 검증하고 미리 준비된 문장(Prepared Statement)을 써서 막습니다.\n\n**틀린 선지**\n- ② 크로스 사이트 스크립팅(XSS): 웹 페이지에 악성 스크립트를 심어 방문자의 브라우저에서 실행되게 하는 공격입니다.\n- ③ 서비스 거부 공격(DoS): 서버에 요청을 몰아 정상적인 서비스를 못 하게 하는 공격입니다.\n- ④ 버퍼 오버플로: 정해진 메모리 크기보다 큰 값을 넣어 프로그램의 흐름을 바꾸는 공격입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "보안 공격"
+    ]
+  },
+  {
+    "id": "information-processing-engineer-p058",
+    "certId": "information-processing-engineer",
+    "subjectId": "is-management",
+    "chapterId": "security",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "TCP 의 3-way handshake 과정을 악용하여, 공격자가 연결 요청(SYN)만 대량으로 보내고 응답하지 않아 서버의 대기 큐를 가득 채우는 공격은?",
+    "choices": [
+      "Ping of Death",
+      "SYN Flooding",
+      "Smurf",
+      "Land 공격"
+    ],
+    "answer": 2,
+    "oneLineConcept": "SYN Flooding: SYN만 보내고 응답하지 않아 대기 큐를 채운다",
+    "explanation": "서버는 SYN 을 받으면 자리를 잡아 두고 상대의 응답(ACK)을 기다립니다. 응답이 오지 않는 요청이 쌓이면 **정상 사용자가 접속하지 못하게** 됩니다.\n\n**틀린 선지**\n- ① Ping of Death: 허용 범위보다 큰 ICMP 패킷을 보내 시스템을 마비시키는 공격입니다.\n- ③ Smurf: 보내는 주소를 공격 대상으로 속인 ICMP 패킷을 네트워크 전체에 뿌려, 응답이 대상에게 몰리게 하는 공격입니다.\n- ④ Land 공격: 보내는 주소와 받는 주소를 모두 공격 대상의 주소로 만든 패킷을 보내는 공격입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "보안 공격",
+      "DoS"
+    ]
+  },
+  {
+    "id": "information-processing-engineer-p059",
+    "certId": "information-processing-engineer",
+    "subjectId": "is-management",
+    "chapterId": "security",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "접근 통제 정책 가운데, 주체와 객체에 보안 등급을 매기고 그 등급을 비교하여 시스템이 강제로 접근을 통제하는 방식은?",
+    "choices": [
+      "임의 접근 통제(DAC)",
+      "역할 기반 접근 통제(RBAC)",
+      "강제 접근 통제(MAC)",
+      "속성 기반 접근 통제(ABAC)"
+    ],
+    "answer": 3,
+    "oneLineConcept": "MAC: 보안 등급에 따라 시스템이 강제로 통제한다",
+    "explanation": "**MAC** 은 군대의 비밀 등급처럼, 등급이 맞지 않으면 볼 수 없게 시스템이 강제합니다.\n\n**틀린 선지**\n- ① 임의 접근 통제(DAC): 자료의 소유자가 자기 판단으로 다른 사용자에게 권한을 주는 방식입니다.\n- ② 역할 기반 접근 통제(RBAC): 사용자가 맡은 역할(직무)에 따라 권한을 주는 방식입니다.\n- ④ 속성 기반 접근 통제(ABAC): 사용자·자료·환경의 여러 속성을 조합해 판단하는 방식입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "접근 통제"
+    ]
+  },
+  {
+    "id": "information-processing-engineer-p060",
+    "certId": "information-processing-engineer",
+    "subjectId": "is-management",
+    "chapterId": "security",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "해시(Hash) 함수에 대한 설명으로 옳지 않은 것은?",
+    "choices": [
+      "임의의 길이의 입력을 고정된 길이의 값으로 바꾼다.",
+      "SHA-256, MD5 등이 있다.",
+      "데이터의 무결성 검증과 비밀번호 저장에 쓰인다.",
+      "해시값으로부터 원래의 입력값을 쉽게 되찾을 수 있다."
+    ],
+    "answer": 4,
+    "oneLineConcept": "해시는 일방향 함수: 해시값에서 원래 값을 되찾을 수 없다",
+    "explanation": "해시 함수는 **한쪽으로만** 계산할 수 있습니다. 고기를 갈아 놓으면 다시 덩어리로 돌릴 수 없는 것과 같습니다. 그래서 비밀번호를 해시로 저장하면 유출되어도 원래 비밀번호를 알기 어렵습니다.\n\n**틀린 선지**\n- ① 임의의 길이의 입력을 고정된 길이의 값으로 바꾼다.: 맞는 설명입니다.\n- ② SHA-256, MD5 등이 있다.: 맞는 설명입니다.\n- ③ 데이터의 무결성 검증과 비밀번호 저장에 쓰인다.: 맞는 설명입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "암호",
+      "해시"
+    ]
+  }
+]

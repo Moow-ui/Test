@@ -1,0 +1,125 @@
+[
+  {
+    "id": "electrician-craftsman-p001",
+    "certId": "electrician-craftsman",
+    "subjectId": "electric-theory",
+    "chapterId": "dc-circuit",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "저항 20Ω에 100V의 전압을 가했을 때 흐르는 전류는 몇 A인가?",
+    "choices": [
+      "0.2A",
+      "2A",
+      "5A",
+      "2000A"
+    ],
+    "answer": 3,
+    "oneLineConcept": "옴의 법칙: 전류 = 전압 ÷ 저항",
+    "explanation": "**옴의 법칙**(전압·전류·저항의 관계를 나타내는 법칙)을 그대로 쓰는 문제입니다.\n\n1. 공식: 전류 I = 전압 V ÷ 저항 R\n2. 숫자 대입: I = 100 ÷ 20\n3. 답: I = 5A\n\n**틀린 선지**\n- ① 0.2A: 저항을 전압으로 나눈 값(20 ÷ 100)입니다. 나누는 순서가 거꾸로 되었습니다.\n- ② 2A: 계산 실수로 나오기 쉬운 값입니다.\n- ④ 2000A: 전압과 저항을 곱한 값(100 × 20)입니다. 곱하는 것이 아니라 나눠야 합니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "옴의 법칙",
+      "계산"
+    ]
+  },
+  {
+    "id": "electrician-craftsman-p002",
+    "certId": "electrician-craftsman",
+    "subjectId": "electric-theory",
+    "chapterId": "dc-circuit",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "10Ω, 20Ω, 30Ω의 저항 3개를 직렬로 연결했을 때 합성저항은 몇 Ω인가?",
+    "choices": [
+      "60Ω",
+      "30Ω",
+      "약 5.5Ω",
+      "6000Ω"
+    ],
+    "answer": 1,
+    "oneLineConcept": "직렬 연결의 합성저항은 저항을 그대로 더한다",
+    "explanation": "**직렬 연결**(저항을 한 줄로 이어 붙인 연결)에서는 저항값을 그대로 더하면 됩니다.\n\n1. 공식: R = R1 + R2 + R3\n2. 숫자 대입: R = 10 + 20 + 30\n3. 답: R = 60Ω\n\n**틀린 선지**\n- ② 30Ω: 가장 큰 저항 하나만 본 값입니다.\n- ③ 약 5.5Ω: 병렬(나란히 연결)로 계산했을 때의 값입니다. 병렬이면 1/10 + 1/20 + 1/30 = 11/60 이고 뒤집으면 약 5.5Ω이 됩니다.\n- ④ 6000Ω: 세 저항을 모두 곱한 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "합성저항",
+      "직렬",
+      "계산"
+    ]
+  },
+  {
+    "id": "electrician-craftsman-p003",
+    "certId": "electrician-craftsman",
+    "subjectId": "electric-theory",
+    "chapterId": "dc-circuit",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "6Ω과 3Ω의 저항을 병렬로 연결하고 12V의 전압을 가했다. 회로 전체에 흐르는 전류는 몇 A인가?",
+    "choices": [
+      "약 1.3A",
+      "2A",
+      "4A",
+      "6A"
+    ],
+    "answer": 4,
+    "oneLineConcept": "저항 2개 병렬은 (곱 ÷ 합), 그다음 옴의 법칙",
+    "explanation": "먼저 합성저항을 구하고, 그다음 옴의 법칙으로 전류를 구합니다.\n\n1. 병렬 합성저항: R = (6 × 3) ÷ (6 + 3)\n2. R = 18 ÷ 9 = 2Ω\n3. 전체 전류: I = V ÷ R = 12 ÷ 2\n4. 답: I = 6A\n\n검산: 6Ω에는 12 ÷ 6 = 2A, 3Ω에는 12 ÷ 3 = 4A가 흐르므로 합하면 6A로 같습니다.\n\n**틀린 선지**\n- ① 약 1.3A: 직렬로 착각해 12 ÷ (6 + 3)으로 계산한 값입니다.\n- ② 2A: 6Ω 쪽에만 흐르는 전류입니다.\n- ③ 4A: 3Ω 쪽에만 흐르는 전류입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "합성저항",
+      "병렬",
+      "계산"
+    ]
+  },
+  {
+    "id": "electrician-craftsman-p004",
+    "certId": "electrician-craftsman",
+    "subjectId": "electric-theory",
+    "chapterId": "dc-circuit",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "저항이 44Ω인 전열기에 220V의 전압을 가했을 때 소비전력은 몇 W인가?",
+    "choices": [
+      "5W",
+      "220W",
+      "9680W",
+      "1100W"
+    ],
+    "answer": 4,
+    "oneLineConcept": "전력 P = V² ÷ R (전압의 제곱을 저항으로 나눈다)",
+    "explanation": "**소비전력**(전기 기구가 1초 동안 쓰는 전기 에너지)을 전압과 저항으로 구하는 문제입니다.\n\n1. 공식: P = V² ÷ R\n2. 숫자 대입: P = 220 × 220 ÷ 44\n3. 220 × 220 = 48400\n4. 48400 ÷ 44 = 1100\n5. 답: P = 1100W\n\n다른 방법: 전류 I = 220 ÷ 44 = 5A, 전력 P = V × I = 220 × 5 = 1100W 로 풀어도 같습니다.\n\n**틀린 선지**\n- ① 5W: 5는 전류(A)의 값입니다. 전력이 아닙니다.\n- ② 220W: 전압 숫자를 그대로 쓴 값입니다.\n- ③ 9680W: 전압과 저항을 곱한 값(220 × 44)입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "전력",
+      "계산"
+    ]
+  },
+  {
+    "id": "electrician-craftsman-p005",
+    "certId": "electrician-craftsman",
+    "subjectId": "electric-theory",
+    "chapterId": "dc-circuit",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "기전력 12V, 내부저항 1Ω인 전지에 5Ω의 부하저항을 연결했다. 부하저항 양끝에 걸리는 전압(단자전압)은 몇 V인가?",
+    "choices": [
+      "2V",
+      "10V",
+      "12V",
+      "14V"
+    ],
+    "answer": 2,
+    "oneLineConcept": "단자전압 = 기전력 − 전류 × 내부저항",
+    "explanation": "전지 안에도 작은 저항(**내부저항**)이 있어서, 전류가 흐르면 전지 안에서 전압이 조금 줄어듭니다.\n\n1. 전체 저항: 1 + 5 = 6Ω (내부저항과 부하저항은 직렬)\n2. 전류: I = 12 ÷ 6 = 2A\n3. 부하에 걸리는 전압: V = I × R = 2 × 5\n4. 답: V = 10V\n\n검산: 내부저항에서 줄어드는 전압은 2 × 1 = 2V, 12 − 2 = 10V 로 같습니다.\n\n**틀린 선지**\n- ① 2V: 전지 내부저항에서 줄어드는 전압입니다.\n- ③ 12V: 내부저항을 무시했을 때의 값입니다. 전류가 흐르지 않을 때만 12V가 그대로 나옵니다.\n- ④ 14V: 줄어드는 전압을 오히려 더한 값입니다.",
+    "frequency": 3,
+    "reviewStatus": "unverified",
+    "tags": [
+      "내부저항",
+      "단자전압",
+      "계산"
+    ]
+  }
+]

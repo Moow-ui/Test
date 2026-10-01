@@ -1,0 +1,142 @@
+[
+  {
+    "id": "computer-literacy-1-p017",
+    "certId": "computer-literacy-1",
+    "subjectId": "spreadsheet",
+    "chapterId": "formulas",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "엑셀에서 배열 수식을 입력할 때 마지막에 누르는 키는? (동적 배열을 지원하지 않는 버전 기준)",
+    "choices": [
+      "Ctrl + Enter",
+      "Alt + Enter",
+      "Ctrl + Shift + Enter",
+      "Shift + Enter"
+    ],
+    "answer": 3,
+    "oneLineConcept": "배열 수식은 Ctrl + Shift + Enter 로 입력한다",
+    "explanation": "배열 수식을 쓰고 **Ctrl + Shift + Enter** 를 누르면 수식 양쪽에 중괄호 { } 가 자동으로 붙습니다. 중괄호를 직접 입력하면 안 됩니다.\n\n**틀린 선지**\n- ① Ctrl + Enter: 선택한 여러 셀에 같은 내용을 넣는 키입니다.\n- ② Alt + Enter: 셀 안에서 줄을 바꾸는 키입니다.\n- ④ Shift + Enter: 입력 후 위 셀로 이동하는 키입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "배열 수식"
+    ]
+  },
+  {
+    "id": "computer-literacy-1-p018",
+    "certId": "computer-literacy-1",
+    "subjectId": "spreadsheet",
+    "chapterId": "formulas",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A1:A5 에 3, 7, 2, 9, 5 가 입력되어 있다. =LARGE(A1:A5, 2) 의 결과는?",
+    "choices": [
+      "9",
+      "7",
+      "3",
+      "2"
+    ],
+    "answer": 2,
+    "oneLineConcept": "LARGE(범위, k): k번째로 큰 값",
+    "explanation": "**LARGE** 는 큰 순서로 줄을 세워 k번째 값을 가져옵니다.\n\n1. 큰 순서: 9, 7, 5, 3, 2\n2. 두 번째로 큰 값: 7\n\n**틀린 선지**\n- ① 9: 가장 큰 값(1번째)입니다.\n- ③ 3: =SMALL(A1:A5, 2) 의 결과입니다.\n- ④ 2: 가장 작은 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "함수"
+    ]
+  },
+  {
+    "id": "computer-literacy-1-p019",
+    "certId": "computer-literacy-1",
+    "subjectId": "spreadsheet",
+    "chapterId": "formulas",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A1:A3 에 1, 2, 3, B1:B3 에 10, 20, 30 이 입력되어 있다. =SUMPRODUCT(A1:A3, B1:B3) 의 결과는?",
+    "choices": [
+      "66",
+      "36",
+      "360",
+      "140"
+    ],
+    "answer": 4,
+    "oneLineConcept": "SUMPRODUCT: 같은 자리끼리 곱한 뒤 모두 더한다",
+    "explanation": "1. 같은 행끼리 곱합니다: 1×10 = 10, 2×20 = 40, 3×30 = 90\n2. 모두 더합니다: 10 + 40 + 90 = **140**\n\n**틀린 선지**\n- ① 66: 두 범위를 그냥 더한 값(6 + 60)입니다.\n- ② 36: 계산 과정에서 나오지 않는 값입니다.\n- ③ 360: 합계끼리 곱한 값(6 × 60)입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "함수",
+      "SUMPRODUCT"
+    ]
+  },
+  {
+    "id": "computer-literacy-1-p020",
+    "certId": "computer-literacy-1",
+    "subjectId": "spreadsheet",
+    "chapterId": "formulas",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A1:A4 에 \"가\", \"나\", \"다\", \"라\", B1:B4 에 10, 20, 30, 40 이 입력되어 있다. =INDEX(B1:B4, MATCH(\"다\", A1:A4, 0)) 의 결과는?",
+    "choices": [
+      "30",
+      "20",
+      "3",
+      "40"
+    ],
+    "answer": 1,
+    "oneLineConcept": "MATCH로 위치를 찾고 INDEX로 그 위치의 값을 가져온다",
+    "explanation": "1. MATCH(\"다\", A1:A4, 0): \"다\"는 A 열에서 3번째 → 3\n2. INDEX(B1:B4, 3): B 열의 3번째 값 → **30**\n\n마지막 인수 0 은 '정확히 같은 값을 찾으라'는 뜻입니다.\n\n**틀린 선지**\n- ② 20: 2번째 값입니다.\n- ③ 3: MATCH 함수만 계산한 값(위치)입니다.\n- ④ 40: 4번째 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "함수",
+      "찾기"
+    ]
+  },
+  {
+    "id": "computer-literacy-1-p021",
+    "certId": "computer-literacy-1",
+    "subjectId": "spreadsheet",
+    "chapterId": "formulas",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A1:A5 에 \"남\", \"여\", \"남\", \"여\", \"남\", B1:B5 에 80, 90, 70, 60, 90 이 입력되어 있다. 배열 수식 {=SUM((A1:A5=\"남\")*(B1:B5>=80))} 의 결과는?",
+    "choices": [
+      "1",
+      "2",
+      "3",
+      "170"
+    ],
+    "answer": 2,
+    "oneLineConcept": "배열 수식에서 조건끼리 곱하면 '그리고(AND)' 조건의 개수가 된다",
+    "explanation": "조건이 참이면 1, 거짓이면 0 으로 계산됩니다.\n\n1. 성별이 \"남\": 1, 0, 1, 0, 1\n2. 점수가 80 이상: 1, 1, 0, 0, 1\n3. 같은 자리끼리 곱함: 1, 0, 0, 0, 1\n4. 합계: **2** (1행과 5행)\n\n**틀린 선지**\n- ① 1: 한 행만 센 값입니다.\n- ③ 3: 남자의 수만 센 값입니다.\n- ④ 170: 개수가 아니라 점수를 더한 값입니다. 점수를 더하려면 B1:B5 를 한 번 더 곱해야 합니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "배열 수식"
+    ]
+  },
+  {
+    "id": "computer-literacy-1-p022",
+    "certId": "computer-literacy-1",
+    "subjectId": "spreadsheet",
+    "chapterId": "formulas",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "배열 상수 {1,2,3;4,5,6} 은 몇 행 몇 열인가?",
+    "choices": [
+      "1행 6열",
+      "6행 1열",
+      "3행 2열",
+      "2행 3열"
+    ],
+    "answer": 4,
+    "oneLineConcept": "배열 상수: 쉼표는 열 구분, 세미콜론은 행 구분",
+    "explanation": "1. 쉼표(,)는 **옆 칸**으로 넘어갑니다. → 1, 2, 3 은 한 행에 3열\n2. 세미콜론(;)은 **다음 행**으로 넘어갑니다. → 4, 5, 6 이 두 번째 행\n3. 따라서 2행 3열입니다.\n\n**틀린 선지**\n- ① 1행 6열: 모두 쉼표로 구분했을 때입니다.\n- ② 6행 1열: 모두 세미콜론으로 구분했을 때입니다.\n- ③ 3행 2열: {1,2;3,4;5,6} 처럼 썼을 때입니다.",
+    "frequency": 3,
+    "reviewStatus": "unverified",
+    "tags": [
+      "배열 수식"
+    ]
+  }
+]

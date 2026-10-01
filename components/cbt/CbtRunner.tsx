@@ -6,6 +6,7 @@ import { ExamScreen } from "@/components/exam/ExamScreen";
 import type { QuizCert } from "@/components/quiz/QuizRunner";
 import { ResultView } from "@/components/quiz/ResultView";
 import { FoldMark } from "@/components/Fold";
+import { useQuestionPool, useQuestions } from "@/lib/data/client";
 import { formatClock } from "@/lib/format";
 import { fmt, localePath } from "@/lib/i18n";
 import { buildMockExam, mockExamSeconds } from "@/lib/quiz-engine";
@@ -27,6 +28,8 @@ import { useMessages } from "@/lib/use-messages";
 import { useHydrated, useStored } from "@/lib/use-storage";
 
 const NO_REVEAL: Record<string, boolean> = {};
+const NO_IDS: string[] = [];
+const NO_QUESTIONS: Question[] = [];
 
 function Pad({ children }: { children: React.ReactNode }) {
   return <div className="mx-auto w-full max-w-5xl px-4 py-4 sm:py-6">{children}</div>;
@@ -38,7 +41,7 @@ function Pad({ children }: { children: React.ReactNode }) {
  * 풀이 중에는 채점하지 않고, 제출한 뒤에 한꺼번에 결과를 보여 준다.
  * 시험 화면 자체는 연습 풀이와 같은 components/exam/ExamScreen.tsx 를 쓴다.
  */
-export function CbtRunner({ cert, questions }: { cert: QuizCert; questions: Question[] }) {
+export function CbtRunner({ cert }: { cert: QuizCert }) {
   const hydrated = useHydrated();
   const { locale, m: all } = useMessages();
   const m = all.cbt;
@@ -46,11 +49,11 @@ export function CbtRunner({ cert, questions }: { cert: QuizCert; questions: Ques
   const session = useStored<CbtSession | null>(STORAGE_KEYS.cbt(cert.id), null);
   // 안내 화면에서 "시작/이어서 풀기"를 눌러야 시계가 가기 시작한다
   const [running, setRunning] = useState(false);
+  // 문제 목록으로 먼저 뽑고, 뽑힌 문제가 들어 있는 단원 파일만 받는다 (lib/data/client.ts)
+  const pool = useQuestionPool(cert.id);
+  const loaded = useQuestions(cert.id, session?.questionIds ?? NO_IDS);
 
-  const byId = new Map(questions.map((q) => [q.id, q]));
-  const examQuestions = session
-    ? session.questionIds.map((id) => byId.get(id)).filter((q): q is Question => !!q)
-    : [];
+  const examQuestions = loaded ?? NO_QUESTIONS;
   const total = examQuestions.length;
   const inProgress = !!session && !session.finishedAt && total > 0;
   const ticking = running && inProgress;
@@ -58,7 +61,7 @@ export function CbtRunner({ cert, questions }: { cert: QuizCert; questions: Ques
   function submit(target: CbtSession) {
     finishCbt(target);
     const asked = target.questionIds
-      .map((id) => questions.find((q) => q.id === id))
+      .map((id) => examQuestions.find((q) => q.id === id))
       .filter((q): q is Question => !!q);
     for (const q of asked) {
       const chosen = target.answers[q.id];
@@ -94,9 +97,10 @@ export function CbtRunner({ cert, questions }: { cert: QuizCert; questions: Ques
   }, [ticking]);
 
   const startNew = () => {
+    if (!pool) return;
     const picked = buildMockExam({
       subjects: cert.subjects,
-      questions,
+      questions: pool,
       totalQuestions: cert.examInfo.totalQuestions,
       history: getHistory(),
     });
@@ -106,7 +110,7 @@ export function CbtRunner({ cert, questions }: { cert: QuizCert; questions: Ques
     window.scrollTo(0, 0);
   };
 
-  if (!hydrated) {
+  if (!hydrated || !pool || !loaded) {
     return (
       <Pad>
         <p className="card p-5 text-lg font-bold">{m.preparing}</p>
@@ -156,7 +160,7 @@ export function CbtRunner({ cert, questions }: { cert: QuizCert; questions: Ques
   }
 
   // ───────── 안내 화면 (시작 / 이어서 풀기) ─────────
-  const plannedCount = Math.min(cert.examInfo.totalQuestions, questions.length);
+  const plannedCount = Math.min(cert.examInfo.totalQuestions, pool.length);
   const plannedMinutes = Math.round(mockExamSeconds(plannedCount, cert.examInfo) / 60);
   const answered = session ? examQuestions.filter((q) => session.answers[q.id] !== undefined).length : 0;
 

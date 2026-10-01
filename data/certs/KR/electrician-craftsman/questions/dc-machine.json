@@ -1,0 +1,127 @@
+[
+  {
+    "id": "electrician-craftsman-p021",
+    "certId": "electrician-craftsman",
+    "subjectId": "electric-machines",
+    "chapterId": "dc-machine",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "직류 발전기에서 전기자에 생긴 교류를 직류로 바꿔 주는 부분은?",
+    "choices": [
+      "계자",
+      "전기자",
+      "정류자",
+      "계철"
+    ],
+    "answer": 3,
+    "oneLineConcept": "직류기 3요소: 계자, 전기자, 정류자(교류→직류)",
+    "explanation": "직류 발전기도 안에서 회전하는 코일에는 사실 교류가 만들어집니다. 이것을 밖으로 꺼낼 때 직류로 바꿔 주는 부품이 **정류자**입니다. 정류자는 브러시와 맞닿아 돌아가면서 전류의 방향을 한쪽으로 맞춰 줍니다.\n\n**틀린 선지**\n- ① 계자: 자속(자석의 힘)을 만드는 부분입니다.\n- ② 전기자: 자속을 끊으면서 기전력(전압)을 만드는 회전 부분입니다.\n- ④ 계철: 자극을 붙잡아 주고 자속이 지나가는 길이 되는 바깥 틀입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "직류기",
+      "구조",
+      "개념"
+    ]
+  },
+  {
+    "id": "electrician-craftsman-p022",
+    "certId": "electrician-craftsman",
+    "subjectId": "electric-machines",
+    "chapterId": "dc-machine",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "기동 토크가 커서 전동차나 크레인처럼 무거운 것을 출발시키는 곳에 주로 쓰이는 직류 전동기는?",
+    "choices": [
+      "직권전동기",
+      "분권전동기",
+      "타여자전동기",
+      "차동 복권전동기"
+    ],
+    "answer": 1,
+    "oneLineConcept": "직권전동기: 기동 토크가 가장 크다 (전동차·크레인)",
+    "explanation": "**직권전동기**는 계자 코일과 전기자가 한 줄(직렬)로 연결되어 있습니다. 출발할 때 큰 전류가 계자에도 그대로 흘러 자속이 강해지므로 **기동 토크**(출발할 때 돌리는 힘)가 매우 큽니다.\n\n**틀린 선지**\n- ② 분권전동기: 부하가 변해도 속도가 거의 일정한 것이 특징입니다. 기동 토크는 직권보다 작습니다.\n- ③ 타여자전동기: 계자 전원을 따로 써서 속도를 넓은 범위로 조절하는 데 씁니다.\n- ④ 차동 복권전동기: 두 계자의 자속이 서로 줄이는 방향이라 기동 토크가 작습니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "직류 전동기",
+      "직권",
+      "개념"
+    ]
+  },
+  {
+    "id": "electrician-craftsman-p023",
+    "certId": "electrician-craftsman",
+    "subjectId": "electric-machines",
+    "chapterId": "dc-machine",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "직류 직권전동기를 벨트로 부하에 연결해 운전하면 안 되는 이유로 가장 알맞은 것은?",
+    "choices": [
+      "벨트의 마찰 때문에 손실이 지나치게 커진다.",
+      "벨트가 벗겨지면 무부하가 되어 속도가 위험하게 높아진다.",
+      "벨트가 미끄러지면 역률이 나빠진다.",
+      "벨트를 걸면 기동 토크가 작아진다."
+    ],
+    "answer": 2,
+    "oneLineConcept": "직권전동기는 무부하가 되면 위험 속도 → 벨트 운전 금지",
+    "explanation": "직권전동기는 부하가 가벼워질수록 전류가 줄고, 전류가 줄면 자속도 함께 줄어 속도가 계속 올라갑니다. 부하가 아예 없어지면(**무부하**) 속도가 한없이 올라가 전동기가 부서질 수 있습니다.\n\n벨트는 벗겨지거나 끊어질 수 있어서 갑자기 무부하가 될 위험이 있습니다. 그래서 직권전동기는 벨트 대신 **기어나 체인으로 직접 연결**합니다.\n\n**틀린 선지**\n- ① 벨트 손실은 금지 이유가 아닙니다.\n- ③ 역률은 교류에서 쓰는 개념이라 직류 전동기와 관계없습니다.\n- ④ 벨트를 건다고 기동 토크가 작아지지 않습니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "직류 전동기",
+      "직권",
+      "개념"
+    ]
+  },
+  {
+    "id": "electrician-craftsman-p024",
+    "certId": "electrician-craftsman",
+    "subjectId": "electric-machines",
+    "chapterId": "dc-machine",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "직류기에서 전기자 반작용을 줄이는 방법으로 가장 효과적인 것은?",
+    "choices": [
+      "브러시의 개수를 늘린다.",
+      "계자 전류를 줄인다.",
+      "전기자 권선의 저항을 크게 한다.",
+      "보상권선을 설치한다."
+    ],
+    "answer": 4,
+    "oneLineConcept": "전기자 반작용 대책: 보상권선(가장 효과적)과 보극",
+    "explanation": "**전기자 반작용**은 전기자에 흐르는 전류가 만든 자속이 원래의 계자 자속을 흐트러뜨리는 현상입니다. 이 때문에 전압이 떨어지고 브러시에서 불꽃이 생깁니다.\n\n가장 효과적인 대책은 **보상권선**입니다. 자극 표면에 권선을 넣고 전기자 전류와 반대 방향으로 전류를 흘려, 전기자가 만든 자속을 지워 버립니다. 보조 자극인 **보극**을 다는 방법도 함께 씁니다.\n\n**틀린 선지**\n- ① 브러시 개수는 전기자 반작용과 관계없습니다.\n- ② 계자 전류를 줄이면 주 자속이 약해져 반작용의 영향이 오히려 커집니다.\n- ③ 전기자 저항을 키우면 손실만 늘어납니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "직류기",
+      "전기자 반작용",
+      "개념"
+    ]
+  },
+  {
+    "id": "electrician-craftsman-p025",
+    "certId": "electrician-craftsman",
+    "subjectId": "electric-machines",
+    "chapterId": "dc-machine",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "극수 4, 전기자 도체 수 400, 극당 자속 0.02Wb인 파권 직류 발전기가 600rpm으로 회전할 때 유도기전력은 몇 V인가?",
+    "choices": [
+      "80V",
+      "160V",
+      "320V",
+      "640V"
+    ],
+    "answer": 2,
+    "oneLineConcept": "E = P×Z×Φ×N ÷ (60×a), 파권은 a = 2",
+    "explanation": "직류 발전기의 유도기전력 공식에 넣어 계산합니다. **파권**은 병렬 회로 수 a가 항상 2이고, **중권**은 a가 극수와 같습니다.\n\n1. 공식: E = (P × Z × Φ × N) ÷ (60 × a)\n2. 파권이므로 a = 2\n3. 분자: 4 × 400 × 0.02 × 600\n4. 4 × 400 = 1600, 1600 × 0.02 = 32, 32 × 600 = 19200\n5. 분모: 60 × 2 = 120\n6. 19200 ÷ 120 = 160\n7. 답: E = 160V\n\n**틀린 선지**\n- ① 80V: 중권으로 착각해 a = 4로 계산한 값(19200 ÷ 240)입니다.\n- ③ 320V: a = 1로 계산한 값입니다.\n- ④ 640V: 계산 과정에서 2배씩 틀렸을 때 나오는 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "직류 발전기",
+      "유도기전력",
+      "계산"
+    ]
+  }
+]

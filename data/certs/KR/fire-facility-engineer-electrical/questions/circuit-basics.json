@@ -1,0 +1,121 @@
+[
+  {
+    "id": "fire-facility-engineer-electrical-p015",
+    "certId": "fire-facility-engineer-electrical",
+    "subjectId": "fire-electric",
+    "chapterId": "circuit-basics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "6Ω 과 3Ω 의 저항을 병렬로 연결했을 때의 합성 저항은 몇 Ω 인가?",
+    "choices": [
+      "2Ω",
+      "4.5Ω",
+      "9Ω",
+      "18Ω"
+    ],
+    "answer": 1,
+    "oneLineConcept": "두 저항의 병렬 합성 = 곱 ÷ 합",
+    "explanation": "1. 공식: R = (R1 × R2) ÷ (R1 + R2)\n2. 숫자 대입: R = (6 × 3) ÷ (6 + 3)\n3. R = 18 ÷ 9 = 2Ω\n\n병렬로 이으면 합성 저항은 가장 작은 저항(3Ω)보다도 작아집니다.\n\n**틀린 선지**\n- ② 4.5Ω: 두 저항의 평균입니다.\n- ③ 9Ω: 직렬로 연결했을 때의 값입니다.\n- ④ 18Ω: 두 저항을 곱한 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "합성 저항",
+      "계산"
+    ]
+  },
+  {
+    "id": "fire-facility-engineer-electrical-p016",
+    "certId": "fire-facility-engineer-electrical",
+    "subjectId": "fire-electric",
+    "chapterId": "circuit-basics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "최댓값이 141.4V 인 정현파 교류 전압의 실효값은 약 몇 V 인가?",
+    "choices": [
+      "70.7V",
+      "90V",
+      "100V",
+      "200V"
+    ],
+    "answer": 3,
+    "oneLineConcept": "실효값 = 최댓값 ÷ √2",
+    "explanation": "1. 공식: 실효값 = 최댓값 ÷ √2\n2. 숫자 대입: 141.4 ÷ 1.414\n3. 답: 100V\n\n**틀린 선지**\n- ① 70.7V: 최댓값을 2 로 나눈 값입니다.\n- ② 90V: 평균값(최댓값 × 0.637)에 가까운 값입니다.\n- ④ 200V: 최댓값에 √2 를 곱한 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "교류",
+      "계산"
+    ]
+  },
+  {
+    "id": "fire-facility-engineer-electrical-p017",
+    "certId": "fire-facility-engineer-electrical",
+    "subjectId": "fire-electric",
+    "chapterId": "circuit-basics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "100V 의 전압을 가했을 때 500W 의 전력을 소비하는 전열기의 저항은 몇 Ω 인가?",
+    "choices": [
+      "5Ω",
+      "20Ω",
+      "50Ω",
+      "0.2Ω"
+    ],
+    "answer": 2,
+    "oneLineConcept": "전력 P = V² ÷ R 에서 R = V² ÷ P",
+    "explanation": "1. 공식: R = V² ÷ P\n2. 숫자 대입: R = 100² ÷ 500 = 10,000 ÷ 500\n3. R = 20Ω\n\n검산: 전류 I = 100 ÷ 20 = 5A, 전력 = 100 × 5 = 500W\n\n**틀린 선지**\n- ① 5Ω: 전류의 값(500 ÷ 100)입니다.\n- ③ 50Ω: 계산이 틀린 값입니다.\n- ④ 0.2Ω: 전압을 전력으로 나눈 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "전력",
+      "계산"
+    ]
+  },
+  {
+    "id": "fire-facility-engineer-electrical-p018",
+    "certId": "fire-facility-engineer-electrical",
+    "subjectId": "fire-electric",
+    "chapterId": "circuit-basics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "R-L-C 직렬 회로가 공진 상태일 때의 설명으로 옳은 것은?",
+    "choices": [
+      "임피던스가 최대가 되고 전류가 최소가 된다.",
+      "역률이 0 이 된다.",
+      "전압과 전류의 위상차가 90도가 된다.",
+      "임피던스가 최소가 되고 전류가 최대가 된다."
+    ],
+    "answer": 4,
+    "oneLineConcept": "직렬 공진: 임피던스 최소(Z = R), 전류 최대, 역률 1",
+    "explanation": "공진일 때는 코일의 리액턴스와 콘덴서의 리액턴스가 서로 상쇄되어 **저항(R)만 남습니다.** 그래서 임피던스가 가장 작고 전류가 가장 크며, 전압과 전류의 위상이 같아 역률은 1 입니다.\n\n**틀린 선지**\n- ① 임피던스가 최대가 되고 전류가 최소가 된다.: 병렬 공진의 설명입니다.\n- ② 역률이 0 이 된다.: 역률은 1 입니다.\n- ③ 전압과 전류의 위상차가 90도가 된다.: 위상차는 0 입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "공진"
+    ]
+  },
+  {
+    "id": "fire-facility-engineer-electrical-p019",
+    "certId": "fire-facility-engineer-electrical",
+    "subjectId": "fire-electric",
+    "chapterId": "circuit-basics",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "저항 8Ω 과 용량 리액턴스 6Ω 이 직렬로 연결된 회로의 역률은?",
+    "choices": [
+      "0.6",
+      "0.75",
+      "0.8",
+      "1.0"
+    ],
+    "answer": 3,
+    "oneLineConcept": "역률 cosθ = R ÷ Z",
+    "explanation": "1. 임피던스 Z = √(8² + 6²) = √100 = 10Ω\n2. 역률 = R ÷ Z = 8 ÷ 10\n3. 답: 0.8\n\n**틀린 선지**\n- ① 0.6: 리액턴스를 임피던스로 나눈 값(sinθ)입니다.\n- ② 0.75: 리액턴스를 저항으로 나눈 값입니다.\n- ④ 1.0: 리액턴스가 없을 때의 역률입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "역률",
+      "계산"
+    ]
+  }
+]

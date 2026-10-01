@@ -1,0 +1,95 @@
+[
+  {
+    "id": "fire-facility-engineer-electrical-p056",
+    "certId": "fire-facility-engineer-electrical",
+    "subjectId": "fire-electric-facility",
+    "chapterId": "emergency-power",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "비상 콘센트 설비의 전원 회로 기준으로 옳은 것은?",
+    "choices": [
+      "단상 교류 220V, 공급 용량 1.5kVA 이상",
+      "단상 교류 110V, 공급 용량 1.0kVA 이상",
+      "3상 교류 380V, 공급 용량 3.0kVA 이상",
+      "직류 24V, 공급 용량 0.5kVA 이상"
+    ],
+    "answer": 1,
+    "oneLineConcept": "비상 콘센트: 단상 교류 220V, 1.5kVA 이상",
+    "explanation": "비상 콘센트는 소방대가 조명이나 장비를 꽂아 쓰는 콘센트로, **단상 교류 220V, 공급 용량 1.5kVA 이상**입니다.\n\n**틀린 선지**\n- ② 단상 교류 110V, 공급 용량 1.0kVA 이상: 기준과 다릅니다.\n- ③ 3상 교류 380V, 공급 용량 3.0kVA 이상: 현재 기준에는 단상 220V 만 있습니다.\n- ④ 직류 24V, 공급 용량 0.5kVA 이상: 기준과 다릅니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "비상 콘센트"
+    ]
+  },
+  {
+    "id": "fire-facility-engineer-electrical-p057",
+    "certId": "fire-facility-engineer-electrical",
+    "subjectId": "fire-electric-facility",
+    "chapterId": "emergency-power",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "비상 콘센트 설비에서 하나의 전용 회로에 설치하는 비상 콘센트의 수는 몇 개 이하로 해야 하는가?",
+    "choices": [
+      "5개 이하",
+      "10개 이하",
+      "15개 이하",
+      "20개 이하"
+    ],
+    "answer": 2,
+    "oneLineConcept": "비상 콘센트: 하나의 전용 회로에 10개 이하",
+    "explanation": "하나의 전용 회로에 설치하는 비상 콘센트는 **10개 이하**입니다. 이때 전선의 용량은 비상 콘센트(3개 이상이면 3개)의 공급 용량을 합한 것 이상으로 합니다.\n\n**틀린 선지**\n- ① 5개 이하: 기준과 다릅니다.\n- ③ 15개 이하: 기준과 다릅니다.\n- ④ 20개 이하: 기준과 다릅니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "비상 콘센트"
+    ]
+  },
+  {
+    "id": "fire-facility-engineer-electrical-p058",
+    "certId": "fire-facility-engineer-electrical",
+    "subjectId": "fire-electric-facility",
+    "chapterId": "emergency-power",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "무선 통신 보조 설비에 쓰는 누설 동축 케이블과 동축 케이블의 임피던스는 몇 Ω 으로 해야 하는가?",
+    "choices": [
+      "25Ω",
+      "100Ω",
+      "75Ω",
+      "50Ω"
+    ],
+    "answer": 4,
+    "oneLineConcept": "무선 통신 보조 설비의 임피던스: 50Ω",
+    "explanation": "누설 동축 케이블, 동축 케이블, 안테나, 분배기 등의 임피던스는 모두 **50Ω** 으로 맞춥니다. 임피던스가 서로 다르면 신호가 반사되어 통신 품질이 나빠집니다.\n\n**틀린 선지**\n- ① 25Ω: 기준과 다릅니다.\n- ② 100Ω: 기준과 다릅니다.\n- ③ 75Ω: 텔레비전 수신용 동축 케이블에 쓰는 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "무선 통신 보조 설비"
+    ]
+  },
+  {
+    "id": "fire-facility-engineer-electrical-p059",
+    "certId": "fire-facility-engineer-electrical",
+    "subjectId": "fire-electric-facility",
+    "chapterId": "emergency-power",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "무선 통신 보조 설비의 증폭기에 설치하는 비상 전원의 용량은, 설비를 유효하게 몇 분 이상 작동시킬 수 있어야 하는가?",
+    "choices": [
+      "10분 이상",
+      "20분 이상",
+      "30분 이상",
+      "60분 이상"
+    ],
+    "answer": 3,
+    "oneLineConcept": "무선 통신 보조 설비 증폭기의 비상 전원: 30분 이상",
+    "explanation": "증폭기의 비상 전원 용량은 **30분 이상**입니다. 소방대가 지하나 고층에서 무전기로 통신하며 활동하는 시간을 고려한 것입니다.\n\n**틀린 선지**\n- ① 10분 이상: 기준과 다릅니다.\n- ② 20분 이상: 유도등·비상 조명등의 기본 기준입니다.\n- ④ 60분 이상: 기준과 다릅니다.",
+    "frequency": 3,
+    "reviewStatus": "unverified",
+    "tags": [
+      "무선 통신 보조 설비",
+      "비상 전원"
+    ]
+  }
+]

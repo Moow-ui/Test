@@ -14,6 +14,7 @@ function examInfo(subjectMinScore: number | null): ExamInfo {
     totalQuestions: 60,
     timeLimitMinutes: 60,
     format: "객관식",
+    choiceCount: 4,
     passCriteria: { averageScore: 60, subjectMinScore, description: "설명" },
   };
 }

@@ -1,0 +1,71 @@
+[
+  {
+    "id": "computer-literacy-1-p037",
+    "certId": "computer-literacy-1",
+    "subjectId": "database",
+    "chapterId": "table",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "액세스 테이블에서 레코드가 추가될 때마다 번호가 자동으로 붙고, 사용자가 값을 고칠 수 없는 데이터 형식은?",
+    "choices": [
+      "숫자",
+      "일련 번호",
+      "짧은 텍스트",
+      "Yes/No"
+    ],
+    "answer": 2,
+    "oneLineConcept": "일련 번호: 자동으로 붙고 고칠 수 없다",
+    "explanation": "**일련 번호** 형식은 새 레코드마다 1, 2, 3… 번호를 자동으로 매깁니다. 한번 붙은 번호는 고칠 수 없고, 레코드를 지워도 그 번호는 다시 쓰이지 않습니다.\n\n**틀린 선지**\n- ① 숫자: 사용자가 직접 숫자를 입력하는 형식입니다.\n- ③ 짧은 텍스트: 글자를 최대 255자까지 입력하는 형식입니다.\n- ④ Yes/No: 예/아니요 둘 중 하나를 고르는 형식입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "데이터 형식"
+    ]
+  },
+  {
+    "id": "computer-literacy-1-p038",
+    "certId": "computer-literacy-1",
+    "subjectId": "database",
+    "chapterId": "table",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "입력 마스크 기호 가운데 '0~9 사이의 숫자를 반드시 입력해야 하는 자리'를 뜻하는 것은?",
+    "choices": [
+      "9",
+      "#",
+      "0",
+      "L"
+    ],
+    "answer": 3,
+    "oneLineConcept": "입력 마스크: 0 = 숫자 필수, 9 = 숫자 선택",
+    "explanation": "**0** 은 그 자리에 숫자를 꼭 넣어야 한다는 뜻입니다. (예: 000-0000)\n\n**틀린 선지**\n- ① 9: 숫자나 빈칸을 넣을 수 있고, 안 넣어도 되는 자리입니다.\n- ② #: 숫자, 빈칸, 더하기·빼기 기호를 넣을 수 있는 자리입니다.\n- ④ L: 글자(영문·한글)를 꼭 넣어야 하는 자리입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "입력 마스크"
+    ]
+  },
+  {
+    "id": "computer-literacy-1-p039",
+    "certId": "computer-literacy-1",
+    "subjectId": "database",
+    "chapterId": "table",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "<고객> 테이블의 '고객번호'(기본키)를 <주문> 테이블의 '고객번호'(외래키)가 참조하고, 참조 무결성이 설정되어 있다. 다음 중 참조 무결성에 어긋나는 것은?",
+    "choices": [
+      "<주문> 테이블의 고객번호에 <고객> 테이블에 없는 번호를 입력한다.",
+      "<주문> 테이블의 고객번호를 비워 둔다(Null).",
+      "주문 기록이 하나도 없는 고객을 <고객> 테이블에서 삭제한다.",
+      "<고객> 테이블에 새로운 고객을 추가한다."
+    ],
+    "answer": 1,
+    "oneLineConcept": "참조 무결성: 외래키에는 참조 테이블에 있는 값만 넣을 수 있다",
+    "explanation": "외래키 값은 **참조하는 테이블의 기본키에 있는 값이거나 Null** 이어야 합니다. 없는 고객의 주문은 만들 수 없습니다.\n\n**틀린 선지**\n- ② <주문> 테이블의 고객번호를 비워 둔다(Null).: 외래키는 Null 을 넣을 수 있습니다.\n- ③ 주문 기록이 하나도 없는 고객을 <고객> 테이블에서 삭제한다.: 참조하는 주문이 없으므로 지워도 됩니다.\n- ④ <고객> 테이블에 새로운 고객을 추가한다.: 기본키 쪽 테이블에 추가하는 것은 문제가 없습니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "참조 무결성"
+    ]
+  }
+]

@@ -47,6 +47,8 @@ export function makeQuestion(
     frequency: 3,
     reviewStatus: "unverified",
     tags: [],
+    version: 1,
+    retired: false,
     ...overrides,
   };
 }

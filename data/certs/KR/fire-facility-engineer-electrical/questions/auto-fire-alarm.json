@@ -1,0 +1,140 @@
+[
+  {
+    "id": "fire-facility-engineer-electrical-p044",
+    "certId": "fire-facility-engineer-electrical",
+    "subjectId": "fire-electric-facility",
+    "chapterId": "auto-fire-alarm",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "자동화재탐지설비에서 하나의 경계 구역의 넓이와 한 변의 길이 기준으로 옳은 것은? (주 출입구에서 내부 전체가 보이지 않는 경우)",
+    "choices": [
+      "넓이 500m² 이하, 한 변의 길이 50m 이하",
+      "넓이 600m² 이하, 한 변의 길이 50m 이하",
+      "넓이 600m² 이하, 한 변의 길이 100m 이하",
+      "넓이 1,000m² 이하, 한 변의 길이 100m 이하"
+    ],
+    "answer": 2,
+    "oneLineConcept": "경계 구역: 600m² 이하, 한 변 50m 이하",
+    "explanation": "하나의 경계 구역은 **넓이 600m² 이하, 한 변의 길이 50m 이하**입니다. 주 출입구에서 내부 전체가 보이는 곳은 한 변 50m 범위 안에서 1,000m² 이하까지 됩니다.\n\n**틀린 선지**\n- ① 넓이 500m² 이하, 한 변의 길이 50m 이하: 500m² 는 2개 층을 하나의 경계 구역으로 할 수 있는 넓이 기준입니다.\n- ③ 넓이 600m² 이하, 한 변의 길이 100m 이하: 한 변의 길이는 50m 이하입니다.\n- ④ 넓이 1,000m² 이하, 한 변의 길이 100m 이하: 넓이와 길이 모두 기준과 다릅니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "경계 구역"
+    ]
+  },
+  {
+    "id": "fire-facility-engineer-electrical-p045",
+    "certId": "fire-facility-engineer-electrical",
+    "subjectId": "fire-electric-facility",
+    "chapterId": "auto-fire-alarm",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "주위 온도가 일정한 상승률 이상으로 빠르게 오를 때 작동하는 감지기는?",
+    "choices": [
+      "차동식 감지기",
+      "정온식 감지기",
+      "이온화식 감지기",
+      "광전식 감지기"
+    ],
+    "answer": 1,
+    "oneLineConcept": "차동식 = 온도 상승 속도, 정온식 = 일정한 온도",
+    "explanation": "**차동식**은 온도가 '얼마나 빨리 오르는가'에 반응합니다. 불이 나면 온도가 갑자기 오르는 것을 잡아냅니다.\n\n**틀린 선지**\n- ② 정온식 감지기: 주위 온도가 정해진 온도 이상이 되면 작동합니다. 주방·보일러실에 씁니다.\n- ③ 이온화식 감지기: 연기가 들어와 이온 전류가 변하는 것으로 작동하는 연기 감지기입니다.\n- ④ 광전식 감지기: 연기가 빛을 가리거나 흩뜨리는 것으로 작동하는 연기 감지기입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "감지기"
+    ]
+  },
+  {
+    "id": "fire-facility-engineer-electrical-p046",
+    "certId": "fire-facility-engineer-electrical",
+    "subjectId": "fire-electric-facility",
+    "chapterId": "auto-fire-alarm",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "자동화재탐지설비의 발신기 설치 기준으로 옳은 것은?",
+    "choices": [
+      "발신기의 위치 표시등은 녹색 등으로 한다.",
+      "층마다 설치하되, 각 부분에서 하나의 발신기까지 수평 거리가 50m 이하가 되게 한다.",
+      "조작 스위치는 바닥에서 0.8m 이상 1.5m 이하의 높이에 설치한다.",
+      "조작 스위치는 바닥에서 1.8m 이상의 높이에 설치한다."
+    ],
+    "answer": 3,
+    "oneLineConcept": "발신기: 높이 0.8~1.5m, 수평 거리 25m 이하, 표시등은 적색",
+    "explanation": "발신기는 **바닥에서 0.8~1.5m** 높이에, 각 부분에서 **수평 거리 25m 이하**가 되게 설치합니다. 위치 표시등은 **적색**입니다.\n\n**틀린 선지**\n- ① 발신기의 위치 표시등은 녹색 등으로 한다.: 표시등은 적색입니다.\n- ② 층마다 설치하되, 각 부분에서 하나의 발신기까지 수평 거리가 50m 이하가 되게 한다.: 수평 거리는 25m 이하입니다.\n- ④ 조작 스위치는 바닥에서 1.8m 이상의 높이에 설치한다.: 0.8m 이상 1.5m 이하입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "발신기"
+    ]
+  },
+  {
+    "id": "fire-facility-engineer-electrical-p047",
+    "certId": "fire-facility-engineer-electrical",
+    "subjectId": "fire-electric-facility",
+    "chapterId": "auto-fire-alarm",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "자동화재탐지설비의 음향 장치에 대한 기준으로 옳지 않은 것은?",
+    "choices": [
+      "음량은 부착된 음향 장치의 중심에서 1m 떨어진 곳에서 90dB 이상일 것",
+      "정격 전압의 80% 전압에서 음향을 낼 수 있을 것",
+      "각 부분에서 하나의 음향 장치까지 수평 거리가 25m 이하일 것",
+      "감지기와 발신기의 작동과 연동하지 않고 수동으로만 작동할 것"
+    ],
+    "answer": 4,
+    "oneLineConcept": "음향 장치는 감지기·발신기의 작동과 연동하여 울려야 한다",
+    "explanation": "음향 장치는 **감지기나 발신기가 작동하면 자동으로** 울려야 합니다.\n\n**틀린 선지**\n- ① 음량은 부착된 음향 장치의 중심에서 1m 떨어진 곳에서 90dB 이상일 것: 맞는 기준입니다.\n- ② 정격 전압의 80% 전압에서 음향을 낼 수 있을 것: 맞는 기준입니다.\n- ③ 각 부분에서 하나의 음향 장치까지 수평 거리가 25m 이하일 것: 맞는 기준입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "음향 장치"
+    ]
+  },
+  {
+    "id": "fire-facility-engineer-electrical-p048",
+    "certId": "fire-facility-engineer-electrical",
+    "subjectId": "fire-electric-facility",
+    "chapterId": "auto-fire-alarm",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "자동화재탐지설비의 감지기 회로 배선을 '송배선식'으로 하는 가장 큰 이유는?",
+    "choices": [
+      "배선에 드는 전선의 양을 줄이려고",
+      "감지기 회로의 도통 시험(끊어진 곳이 없는지 확인)을 할 수 있게 하려고",
+      "감지기의 감도를 높이려고",
+      "수신기의 소비 전력을 줄이려고"
+    ],
+    "answer": 2,
+    "oneLineConcept": "송배선식: 도통 시험을 쉽게 하려는 배선 방식",
+    "explanation": "**송배선식**은 감지기를 한 줄로 차례차례 이어 가는 방식입니다. 회로 끝에 종단 저항을 달아 두면, 수신기에서 전류를 흘려 보아 중간에 선이 끊어졌는지 알 수 있습니다.\n\n**틀린 선지**\n- ① 배선에 드는 전선의 양을 줄이려고: 전선의 양은 오히려 늘 수 있습니다.\n- ③ 감지기의 감도를 높이려고: 감도와는 관계가 없습니다.\n- ④ 수신기의 소비 전력을 줄이려고: 소비 전력과는 관계가 없습니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "배선"
+    ]
+  },
+  {
+    "id": "fire-facility-engineer-electrical-p049",
+    "certId": "fire-facility-engineer-electrical",
+    "subjectId": "fire-electric-facility",
+    "chapterId": "auto-fire-alarm",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "자동화재탐지설비에 쓰는 축전지 설비(비상 전원)의 용량 기준으로 옳은 것은? (일반 건축물)",
+    "choices": [
+      "10분간 감시 상태를 지속한 뒤 60분 이상 경보할 수 있을 것",
+      "30분간 감시 상태를 지속한 뒤 10분 이상 경보할 수 있을 것",
+      "60분간 감시 상태를 지속한 뒤 10분 이상 경보할 수 있을 것",
+      "60분간 감시 상태를 지속한 뒤 60분 이상 경보할 수 있을 것"
+    ],
+    "answer": 3,
+    "oneLineConcept": "축전지: 감시 60분 + 경보 10분 이상",
+    "explanation": "정전이 되어도 **60분 동안 감시**를 계속하다가 불이 나면 **10분 이상 경보**를 울릴 수 있어야 합니다. (층수가 30층 이상인 고층 건축물은 경보 30분 이상)\n\n**틀린 선지**\n- ① 10분간 감시 상태를 지속한 뒤 60분 이상 경보할 수 있을 것: 감시 시간과 경보 시간이 바뀌었습니다.\n- ② 30분간 감시 상태를 지속한 뒤 10분 이상 경보할 수 있을 것: 감시 시간은 60분입니다.\n- ④ 60분간 감시 상태를 지속한 뒤 60분 이상 경보할 수 있을 것: 일반 건축물의 경보 시간은 10분 이상입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "비상 전원"
+    ]
+  }
+]
