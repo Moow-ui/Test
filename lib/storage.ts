@@ -210,6 +210,28 @@ export function saveSession(session: QuizSession): void {
   writeJson(STORAGE_KEYS.session(session.certId), session);
 }
 
+/** 새 풀이를 만들어 저장한다 (id·시작 시각은 여기서 붙인다) */
+export function startSession(
+  input: Pick<QuizSession, "certId" | "mode" | "label" | "level" | "subjectId" | "questionIds">,
+): QuizSession {
+  const now = Date.now();
+  const session: QuizSession = {
+    ...input,
+    id: newSessionId(now),
+    answers: {},
+    currentIndex: 0,
+    startedAt: now,
+    finishedAt: null,
+  };
+  saveSession(session);
+  return session;
+}
+
+/** 풀이를 끝낸 것으로 표시한다 (결과 화면으로 넘어감) */
+export function finishSession(session: QuizSession): void {
+  saveSession({ ...session, finishedAt: Date.now() });
+}
+
 export function clearSession(certId: string): void {
   removeKey(STORAGE_KEYS.session(certId));
 }
@@ -263,7 +285,9 @@ export function getNotes(): NoteEntry[] {
 }
 
 /** 오답노트에 담는다. 이미 있는 문제는 최신 내용으로 바꾼다. 새로 담긴 개수를 돌려준다 */
-export function addNotes(entries: NoteEntry[]): number {
+export function addNotes(items: Array<Omit<NoteEntry, "addedAt">>): number {
+  const now = Date.now();
+  const entries: NoteEntry[] = items.map((item) => ({ ...item, addedAt: now }));
   const current = getNotes();
   const incoming = new Map(entries.map((e) => [e.questionId, e]));
   const added = entries.filter((e) => !current.some((c) => c.questionId === e.questionId)).length;
