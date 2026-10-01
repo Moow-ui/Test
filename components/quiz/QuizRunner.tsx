@@ -207,7 +207,23 @@ export function QuizRunner({ cert, questions }: { cert: QuizCert; questions: Que
   }
 
   if (session.finishedAt) {
-    return <ResultView cert={cert} session={session} questions={sessionQuestions} />;
+    const againHref =
+      session.mode === "level" && session.level
+        ? `/cert/${cert.id}/quiz?level=${session.level}&count=${total}&subject=${session.subjectId ?? "all"}`
+        : `/cert/${cert.id}/quiz?level=basic&count=5&subject=all`;
+    return (
+      <ResultView
+        cert={cert}
+        label={session.label}
+        answers={session.answers}
+        questions={sessionQuestions}
+        againAction={
+          <Link href={againHref} className="btn btn-lg">
+            새 문제로 다시 풀기 →
+          </Link>
+        }
+      />
+    );
   }
 
   const subject = cert.subjects.find((s) => s.id === question.subjectId);

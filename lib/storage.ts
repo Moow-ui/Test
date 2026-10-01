@@ -264,6 +264,29 @@ export function saveCbt(session: CbtSession): void {
   writeJson(STORAGE_KEYS.cbt(session.certId), session);
 }
 
+/** 새 모의고사를 만들어 저장한다 */
+export function startCbt(certId: string, questionIds: string[], totalSec: number): CbtSession {
+  const now = Date.now();
+  const session: CbtSession = {
+    id: newSessionId(now),
+    certId,
+    questionIds,
+    answers: {},
+    currentIndex: 0,
+    totalSec,
+    remainingSec: totalSec,
+    startedAt: now,
+    finishedAt: null,
+  };
+  saveCbt(session);
+  return session;
+}
+
+/** 답안 제출 */
+export function finishCbt(session: CbtSession): void {
+  saveCbt({ ...session, finishedAt: Date.now() });
+}
+
 export function clearCbt(certId: string): void {
   removeKey(STORAGE_KEYS.cbt(certId));
 }

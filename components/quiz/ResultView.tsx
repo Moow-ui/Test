@@ -1,6 +1,8 @@
 "use client";
 
 import Link from "next/link";
+import { useRouter } from "next/navigation";
+import type { ReactNode } from "react";
 import { AdSlot } from "@/components/AdSlot";
 import { Markdown } from "@/components/Markdown";
 import { circled, formatScore } from "@/lib/format";
@@ -11,7 +13,6 @@ import {
   addNotes,
   startSession,
   type NoteEntry,
-  type QuizSession,
 } from "@/lib/storage";
 import type { Question } from "@/lib/types";
 import { useStored } from "@/lib/use-storage";
@@ -23,16 +24,24 @@ const RELIABLE_QUESTION_COUNT = 20;
 /** 결과 화면: 점수, 과목별 정답률, 합격 기준 대비 판정, 약점 단원, 다시 풀기·오답노트 */
 export function ResultView({
   cert,
-  session,
+  label,
+  answers,
   questions,
+  againAction,
 }: {
   cert: QuizCert;
-  session: QuizSession;
+  /** 풀이 이름 (예: "초급 · 전체 과목", "실전 CBT 체험") */
+  label: string;
+  /** 문제 id → 고른 답 */
+  answers: Record<string, number>;
   questions: Question[];
+  /** "새 문제로 다시 풀기" 자리에 들어갈 버튼/링크 */
+  againAction: ReactNode;
 }) {
+  const router = useRouter();
   const notes = useStored<NoteEntry[]>(STORAGE_KEYS.notes, EMPTY_NOTES);
 
-  const graded = gradeQuiz(questions, session.answers);
+  const graded = gradeQuiz(questions, answers);
   const summary = summarize(graded, cert);
   const verdict = summary.verdict;
   const wrong = graded.filter((g) => !g.correct);
@@ -49,22 +58,18 @@ export function ResultView({
       questionIds: wrong.map((w) => w.questionId),
     });
     window.scrollTo(0, 0);
+    router.push(`/cert/${cert.id}/quiz`);
   };
 
   const saveNotes = () => {
     addNotes(wrong.map((w) => ({ questionId: w.questionId, certId: cert.id, chosen: w.chosen })));
   };
 
-  const againHref =
-    session.mode === "level" && session.level
-      ? `/cert/${cert.id}/quiz?level=${session.level}&count=${questions.length}&subject=${session.subjectId ?? "all"}`
-      : `/cert/${cert.id}/quiz?level=basic&count=5&subject=all`;
-
   return (
     <div className="mx-auto max-w-3xl space-y-6">
       <header>
         <p className="text-[0.9rem] font-bold text-ink-sub">
-          {cert.name} · {session.label}
+          {cert.name} · {label}
         </p>
         <h1 className="text-2xl font-extrabold">풀이 결과</h1>
       </header>
@@ -175,9 +180,7 @@ export function ResultView({
             )}
           </>
         )}
-        <Link href={againHref} className={`btn btn-lg ${wrong.length === 0 ? "btn-primary" : ""}`}>
-          새 문제로 다시 풀기 →
-        </Link>
+        {againAction}
         <Link href={`/cert/${cert.id}`} className="btn btn-lg">
           {cert.name} 페이지로 가기
         </Link>
