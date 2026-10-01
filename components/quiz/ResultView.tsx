@@ -138,6 +138,24 @@ export function ResultView({
         </ul>
       </section>
 
+      {wrong.length > 0 && (
+        <section aria-labelledby="concepts-title" className="rounded-xl border-2 border-primary bg-primary-soft p-4">
+          <h2 id="concepts-title" className="text-xl font-extrabold">
+            틀린 핵심 개념
+            <span className="ml-2 text-[0.95rem] font-bold">다음번엔 이것만 더 기억하세요</span>
+          </h2>
+          <ol className="mt-2 list-decimal space-y-1.5 pl-6">
+            {questions
+              .filter((q, i) => !graded[i].correct)
+              .map((q) => (
+                <li key={q.id} className="font-bold">
+                  {q.oneLineConcept}
+                </li>
+              ))}
+          </ol>
+        </section>
+      )}
+
       <section aria-labelledby="weak-title">
         <h2 id="weak-title" className="text-xl font-extrabold">
           약한 단원 (정답률 낮은 순)

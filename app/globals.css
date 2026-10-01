@@ -128,56 +128,62 @@ summary::-webkit-details-marker {
   display: none;
 }
 
-/* 본문 링크 */
-.link {
-  color: var(--accent);
-  font-weight: 600;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
+/*
+ * 직접 만든 부품 클래스(.btn, .card, .link)는 components 레이어에 둔다.
+ * 그래야 같은 요소에 붙인 Tailwind 유틸리티(lg:hidden, min-h-11, px-3 등)가 이 값을 덮어쓸 수 있다.
+ */
+@layer components {
+  /* 본문 링크 */
+  .link {
+    color: var(--accent);
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
 
-/* 공통 버튼 */
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.4rem;
-  min-height: 3rem;
-  padding: 0.5rem 1.1rem;
-  border-radius: 0.6rem;
-  border: 2px solid var(--line);
-  background: var(--surface);
-  color: var(--ink);
-  font-weight: 700;
-  text-align: center;
-}
-.btn:hover:not(:disabled) {
-  border-color: var(--ink);
-}
-.btn-primary {
-  background: var(--primary);
-  border-color: var(--primary);
-  color: #ffffff;
-}
-.btn-primary:hover:not(:disabled) {
-  background: var(--primary-hover);
-  border-color: var(--primary-hover);
-}
-.btn:disabled {
-  background: var(--surface-2);
-  border-color: var(--line-soft);
-  color: var(--ink-sub);
-}
-.btn-lg {
-  min-height: 3.5rem;
-  font-size: 1.125rem;
-  padding: 0.6rem 1.4rem;
-}
+  /* 공통 버튼 */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    min-height: 3rem;
+    padding: 0.5rem 1.1rem;
+    border-radius: 0.6rem;
+    border: 2px solid var(--line);
+    background: var(--surface);
+    color: var(--ink);
+    font-weight: 700;
+    text-align: center;
+  }
+  .btn:hover:not(:disabled) {
+    border-color: var(--ink);
+  }
+  .btn-primary {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: #ffffff;
+  }
+  .btn-primary:hover:not(:disabled) {
+    background: var(--primary-hover);
+    border-color: var(--primary-hover);
+  }
+  .btn:disabled {
+    background: var(--surface-2);
+    border-color: var(--line-soft);
+    color: var(--ink-sub);
+  }
+  .btn-lg {
+    min-height: 3.5rem;
+    font-size: 1.125rem;
+    padding: 0.6rem 1.4rem;
+  }
 
-.card {
-  background: var(--surface);
-  border: 1px solid var(--line-soft);
-  border-radius: 0.8rem;
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--line-soft);
+    border-radius: 0.8rem;
+  }
 }
 
 /* ───────── 인쇄 (오답노트 인쇄하기): 흑백 기준 ───────── */

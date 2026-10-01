@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { SITE_NAME } from "@/lib/site";
 import { DisplayControls } from "./DisplayControls";
+import { HeaderAccount } from "./auth/HeaderAccount";
 
 /** 글씨 크기 설정과 상관없이 높이가 일정하도록 헤더 안은 px 단위를 쓴다 */
 export function Header() {
@@ -13,10 +14,11 @@ export function Header() {
           </Link>
           <Link
             href="/notes"
-            className="text-[15px] font-bold text-ink underline underline-offset-4 sm:text-[16px]"
+            className="hidden text-[16px] font-bold text-ink underline underline-offset-4 sm:inline"
           >
             오답노트
           </Link>
+          <HeaderAccount />
         </div>
         <DisplayControls />
       </div>

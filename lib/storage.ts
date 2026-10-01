@@ -16,7 +16,11 @@ export const STORAGE_KEYS = {
   history: "qpass:history",
   notes: "qpass:notes",
   reports: "qpass:reports",
+  results: "qpass:results",
+  ownedCerts: "qpass:ownedCerts",
   lastLevel: "qpass:lastLevel",
+  instantCheck: "qpass:instantCheck",
+  examZoom: "qpass:examZoom",
   session: (certId: string) => `qpass:session:${certId}`,
   cbt: (certId: string) => `qpass:cbt:${certId}`,
 } as const;
@@ -170,6 +174,10 @@ export interface HistoryEntry {
   lastSolvedAt: number;
   correct: number;
   wrong: number;
+  /** 가장 최근에 풀었을 때 맞혔는가 */
+  lastCorrect?: boolean;
+  /** 어느 자격증의 문제인가 (프로필에서 문제 내용을 불러올 때 쓴다) */
+  certId?: string;
 }
 
 export type SolveHistoryStore = Record<string, HistoryEntry>;
@@ -179,7 +187,12 @@ export function getHistory(): SolveHistoryStore {
   return readJson<SolveHistoryStore>(STORAGE_KEYS.history, EMPTY_HISTORY);
 }
 
-export function recordAnswer(questionId: string, correct: boolean, now = Date.now()): void {
+export function recordAnswer(
+  questionId: string,
+  correct: boolean,
+  certId?: string,
+  now = Date.now(),
+): void {
   const history = getHistory();
   const prev = history[questionId] ?? { lastSolvedAt: 0, correct: 0, wrong: 0 };
   writeJson(STORAGE_KEYS.history, {
@@ -188,8 +201,105 @@ export function recordAnswer(questionId: string, correct: boolean, now = Date.no
       lastSolvedAt: now,
       correct: prev.correct + (correct ? 1 : 0),
       wrong: prev.wrong + (correct ? 0 : 1),
+      lastCorrect: correct,
+      certId: certId ?? prev.certId,
     },
   });
+}
+
+// ───────────────────────── 점수 기록 ─────────────────────────
+
+/** 끝까지 푼 시험 한 번의 기록 */
+export interface ResultRecord {
+  id: string;
+  certId: string;
+  /** "초급 · 전체 과목", "실전 CBT 체험" 등 */
+  label: string;
+  kind: "quiz" | "cbt";
+  total: number;
+  correct: number;
+  /** 0~100 */
+  score: number;
+  at: number;
+  /** 틀리거나 안 푼 문제 id */
+  wrongIds: string[];
+}
+
+export const EMPTY_RESULTS: ResultRecord[] = [];
+const RESULT_LIMIT = 200;
+
+export function getResults(): ResultRecord[] {
+  return readJson<ResultRecord[]>(STORAGE_KEYS.results, EMPTY_RESULTS);
+}
+
+export function addResult(record: Omit<ResultRecord, "id" | "at">): void {
+  const now = Date.now();
+  writeJson(
+    STORAGE_KEYS.results,
+    [{ ...record, id: newSessionId(now), at: now }, ...getResults()].slice(0, RESULT_LIMIT),
+  );
+}
+
+// ───────────────────────── 보유 자격증 (프로필의 칭호) ─────────────────────────
+
+export interface OwnedCert {
+  /** 목록에 있는 자격증이면 그 id, 직접 적은 자격증이면 "custom:이름" */
+  key: string;
+  name: string;
+  /** 기능사·산업기사·기사 등. 직접 적은 자격증은 null */
+  grade: string | null;
+  /** 취득 연도 (모르면 null) */
+  year: number | null;
+  addedAt: number;
+}
+
+export const EMPTY_OWNED: OwnedCert[] = [];
+
+export function getOwnedCerts(): OwnedCert[] {
+  return readJson<OwnedCert[]>(STORAGE_KEYS.ownedCerts, EMPTY_OWNED);
+}
+
+export function addOwnedCert(cert: Omit<OwnedCert, "addedAt">): void {
+  const current = getOwnedCerts().filter((c) => c.key !== cert.key);
+  writeJson(STORAGE_KEYS.ownedCerts, [...current, { ...cert, addedAt: Date.now() }]);
+}
+
+export function removeOwnedCert(key: string): void {
+  writeJson(
+    STORAGE_KEYS.ownedCerts,
+    getOwnedCerts().filter((c) => c.key !== key),
+  );
+}
+
+// ───────────────────────── 계정 동기화 대상 ─────────────────────────
+
+/** 로그인하면 계정에 함께 저장되는 항목 (lib/sync-merge.ts 의 SyncData 와 짝) */
+export function readSyncData() {
+  return {
+    history: getHistory(),
+    notes: getNotes(),
+    results: getResults(),
+    ownedCerts: getOwnedCerts(),
+  };
+}
+
+export function writeSyncData(data: {
+  history: SolveHistoryStore;
+  notes: NoteEntry[];
+  results: ResultRecord[];
+  ownedCerts: OwnedCert[];
+}): void {
+  writeJson(STORAGE_KEYS.history, data.history);
+  writeJson(STORAGE_KEYS.notes, data.notes);
+  writeJson(STORAGE_KEYS.results, data.results);
+  writeJson(STORAGE_KEYS.ownedCerts, data.ownedCerts);
+}
+
+/** 로그아웃할 때: 다음 사람이 이 기기에서 내 기록을 보지 못하게 지운다 */
+export function clearSyncData(): void {
+  for (const key of [STORAGE_KEYS.history, STORAGE_KEYS.notes, STORAGE_KEYS.results, STORAGE_KEYS.ownedCerts]) {
+    removeKey(key);
+  }
 }
 
 // ───────────────────────── 진행 중인 풀이 (이어서 풀기) ─────────────────────────
@@ -207,6 +317,8 @@ export interface QuizSession {
   questionIds: string[];
   /** 문제 id → 고른 답(1~4) */
   answers: Record<string, number>;
+  /** "바로 답 확인하기"로 이미 채점해 보여 준 문제 (답을 더 바꿀 수 없다) */
+  revealed?: Record<string, boolean>;
   currentIndex: number;
   startedAt: number;
   finishedAt: number | null;
@@ -249,6 +361,26 @@ export function clearSession(certId: string): void {
 /** 아직 끝내지 않은 풀이인가 (이어서 풀기 대상) */
 export function isInProgress(session: QuizSession | null): session is QuizSession {
   return !!session && session.finishedAt === null && session.questionIds.length > 0;
+}
+
+// ───────────────────────── 시험 화면 설정 ─────────────────────────
+
+/** "바로 답 확인하기" 체크 여부 (기본: 켜짐) */
+export function setInstantCheck(value: boolean): void {
+  writeJson(STORAGE_KEYS.instantCheck, value);
+}
+
+/** 시험 화면 글자 크기 (실제 CBT 처럼 100% / 150% / 200%) */
+export type ExamZoom = 100 | 150 | 200;
+
+export const EXAM_ZOOMS: Array<{ value: ExamZoom; px: number }> = [
+  { value: 100, px: 17 },
+  { value: 150, px: 21 },
+  { value: 200, px: 25 },
+];
+
+export function setExamZoom(value: ExamZoom): void {
+  writeJson(STORAGE_KEYS.examZoom, value);
 }
 
 // ───────────────────────── 실전 CBT 체험 ─────────────────────────
@@ -309,6 +441,8 @@ export interface NoteEntry {
   /** 틀렸을 때 고른 답 (안 풀었으면 null) */
   chosen: number | null;
   addedAt: number;
+  /** 내가 직접 적은 메모 (나만의 오답노트) */
+  memo?: string;
 }
 
 export const EMPTY_NOTES: NoteEntry[] = [];
@@ -318,15 +452,28 @@ export function getNotes(): NoteEntry[] {
 }
 
 /** 오답노트에 담는다. 이미 있는 문제는 최신 내용으로 바꾼다. 새로 담긴 개수를 돌려준다 */
-export function addNotes(items: Array<Omit<NoteEntry, "addedAt">>): number {
+export function addNotes(items: Array<Omit<NoteEntry, "addedAt" | "memo">>): number {
   const now = Date.now();
-  const entries: NoteEntry[] = items.map((item) => ({ ...item, addedAt: now }));
   const current = getNotes();
+  // 이미 적어 둔 메모는 다시 담아도 지워지지 않게 한다
+  const entries: NoteEntry[] = items.map((item) => ({
+    ...item,
+    addedAt: now,
+    memo: current.find((c) => c.questionId === item.questionId)?.memo,
+  }));
   const incoming = new Map(entries.map((e) => [e.questionId, e]));
   const added = entries.filter((e) => !current.some((c) => c.questionId === e.questionId)).length;
   const kept = current.filter((c) => !incoming.has(c.questionId));
   writeJson(STORAGE_KEYS.notes, [...entries, ...kept]);
   return added;
+}
+
+/** 오답노트의 문제에 내 메모를 적는다 */
+export function setNoteMemo(questionId: string, memo: string): void {
+  writeJson(
+    STORAGE_KEYS.notes,
+    getNotes().map((n) => (n.questionId === questionId ? { ...n, memo: memo.trim() || undefined } : n)),
+  );
 }
 
 export function removeNote(questionId: string): void {

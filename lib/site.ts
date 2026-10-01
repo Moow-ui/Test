@@ -2,13 +2,13 @@
 
 export const SITE_NAME = "큐패스";
 
-export const SITE_TAGLINE = "합격에 필요한 것만, 중요한 순서대로";
+export const SITE_TAGLINE = "세상의 모든 자격증. 5분 문제 연습하기.";
 
 export const SITE_DESCRIPTION =
   "국가기술자격 필기시험을 준비하는 분들을 위한 무료 문제 풀이 사이트입니다. 자격증별 출제 경향을 확인하고, 한 문제씩 풀면서 바로 정답과 쉬운 해설을 볼 수 있습니다.";
 
 /**
- * 사이트 주소. 배포 후 Vercel 환경변수 NEXT_PUBLIC_SITE_URL 에 실제 주소를 넣는다.
+ * 사이트 주소. 배포 설정(Cloudflare 의 Build variables)에 NEXT_PUBLIC_SITE_URL 로 실제 주소를 넣는다.
  * (canonical, sitemap, OG 이미지 주소가 모두 이 값을 쓴다)
  */
 export const SITE_URL = (

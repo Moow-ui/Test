@@ -33,15 +33,10 @@ export default async function HomePage() {
         }}
       />
 
-      <div>
-        <h1 className="text-2xl font-extrabold leading-snug sm:text-3xl">
-          국가기술자격 필기,
-          <br className="sm:hidden" /> 합격에 필요한 것만 중요한 순서대로
-        </h1>
-        <p className="mt-2 text-ink-sub">
-          쉬는 시간 5분이면 5문제. 한 문제씩 풀고 그 자리에서 정답과 쉬운 해설을 확인하세요.
-        </p>
-      </div>
+      <h1 className="text-2xl font-extrabold leading-snug sm:text-3xl">
+        세상의 모든 자격증.
+        <br className="sm:hidden" /> 5분 문제 연습하기.
+      </h1>
 
       <QuickStart certs={certs} featuredId={featured.id} />
 
@@ -52,9 +47,8 @@ export default async function HomePage() {
           큐패스는 이렇게 씁니다
         </h2>
         <ol className="mt-2 list-decimal space-y-1 pl-6">
-          <li>자격증을 고르면 과목·단원별로 무엇이 얼마나 나오는지(출제 분석) 먼저 보여 줍니다.</li>
-          <li>초급·중급·고급 중 하나를 고르고 5문제부터 풉니다.</li>
-          <li>답을 누르면 바로 채점되고, 한 줄 핵심과 쉬운 말로 쓴 해설이 나옵니다.</li>
+          <li>자격증을 고르고 초급·중급·고급 중 하나를 누릅니다.</li>
+          <li>실제 시험 화면과 같은 화면에서 5문제부터 풉니다. 답을 누르면 바로 정답과 해설을 볼 수 있습니다.</li>
           <li>틀린 문제는 오답노트에 담아 두었다가 다시 풀거나 종이로 인쇄할 수 있습니다.</li>
         </ol>
         <p className="mt-3 text-[0.9rem] text-ink-sub">

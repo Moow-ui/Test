@@ -108,7 +108,8 @@ export const certDetailSchema = z.object({
   updatedAt: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
   examInfo: examInfoSchema,
   subjects: z.array(subjectSchema).min(1),
-  content: certContentSchema,
+  /** 자격증 소개·출제 경향·FAQ. 과목·단원 구조만 먼저 넣은 자격증은 비워 둘 수 있다 */
+  content: certContentSchema.optional(),
 });
 
 export const questionSchema = z

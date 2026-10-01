@@ -1,6 +1,8 @@
 import fs from "node:fs";
 import path from "node:path";
 import { z } from "zod";
+import { DATA_DIR, certDetailFile, listQuestionFiles, readJsonFile } from "./data-files";
+import { isWithinPastWindow } from "./past";
 import { certDetailSchema, certSummarySchema, questionSchema } from "./schemas";
 import type { CertDetail, CertListItem, CertSummary, Certification, Question } from "./types";
 
@@ -11,12 +13,10 @@ import type { CertDetail, CertListItem, CertSummary, Certification, Question } f
  * 이 파일의 함수 내용만 바꾸면 되도록 화면 코드는 모두 여기 함수만 호출한다.
  * 그래서 함수는 처음부터 전부 async 로 만들어 두었다.
  *
- *   data/certifications.json          자격증 목록 (노출 순서 = 배열 순서)
- *   data/certs/{id}.json              시험 정보·과목·단원·본문 (준비된 자격증만)
- *   data/questions/{id}/*.json        문제 (폴더 안 모든 json 파일을 합쳐 읽는다)
+ * 파일 위치 규칙은 lib/data-files.ts 참고.
+ * 기출은 최근 10년치만 내보낸다 (lib/past.ts). 더 오래된 기출은 파일에 남아 있어도 사이트에 나오지 않는다.
  */
 
-const DATA_DIR = path.join(process.cwd(), "data");
 const useCache = process.env.NODE_ENV === "production";
 
 const cache = new Map<string, unknown>();
@@ -28,9 +28,7 @@ function cached<T>(key: string, load: () => T): T {
   return value;
 }
 
-function readJson(file: string): unknown {
-  return JSON.parse(fs.readFileSync(file, "utf8"));
-}
+const readJson = readJsonFile;
 
 function loadSummaries(): CertSummary[] {
   return cached("summaries", () =>
@@ -40,7 +38,7 @@ function loadSummaries(): CertSummary[] {
 
 function loadDetail(id: string): CertDetail | null {
   return cached(`detail:${id}`, () => {
-    const file = path.join(DATA_DIR, "certs", `${id}.json`);
+    const file = certDetailFile(id);
     if (!fs.existsSync(file)) return null;
     return certDetailSchema.parse(readJson(file));
   });
@@ -48,17 +46,12 @@ function loadDetail(id: string): CertDetail | null {
 
 function loadQuestions(id: string): Question[] {
   return cached(`questions:${id}`, () => {
-    const dir = path.join(DATA_DIR, "questions", id);
-    if (!fs.existsSync(dir)) return [];
-    const files = fs
-      .readdirSync(dir)
-      .filter((f) => f.endsWith(".json"))
-      .sort();
     const all: Question[] = [];
-    for (const f of files) {
-      all.push(...z.array(questionSchema).parse(readJson(path.join(dir, f))));
+    for (const file of listQuestionFiles(id)) {
+      all.push(...z.array(questionSchema).parse(readJson(file)));
     }
-    return all;
+    // 최근 10년 안의 기출만 수록한다
+    return all.filter((q) => q.source !== "past" || !q.pastInfo || isWithinPastWindow(q.pastInfo.year));
   });
 }
 

@@ -8,11 +8,18 @@ import { SITE_NAME, SITE_TAGLINE } from "./site";
 export const OG_SIZE = { width: 1200, height: 630 };
 export const OG_CONTENT_TYPE = "image/png";
 
-// 글꼴은 요청마다 달라지지 않으므로 모듈에서 한 번만 읽는다
-const fonts = Promise.all([
-  readFile(join(process.cwd(), "assets/fonts/Pretendard-Bold.otf")),
-  readFile(join(process.cwd(), "assets/fonts/Pretendard-Regular.otf")),
-]);
+// 글꼴은 처음 그릴 때 한 번만 읽는다.
+// (이미지는 빌드 때 미리 만들어지므로, 배포된 서버에서는 이 파일을 읽을 일이 없다.
+//  파일을 불러오기만 해도 읽으려 들면 서버에서 오류가 나므로 그릴 때까지 미룬다)
+let fonts: Promise<[Buffer, Buffer]> | null = null;
+
+function loadFonts(): Promise<[Buffer, Buffer]> {
+  fonts ??= Promise.all([
+    readFile(join(process.cwd(), "assets/fonts/Pretendard-Bold.otf")),
+    readFile(join(process.cwd(), "assets/fonts/Pretendard-Regular.otf")),
+  ]);
+  return fonts;
+}
 
 export async function renderOgImage({
   eyebrow,
@@ -23,7 +30,7 @@ export async function renderOgImage({
   title: string;
   subtitle: string;
 }): Promise<ImageResponse> {
-  const [bold, regular] = await fonts;
+  const [bold, regular] = await loadFonts();
   const titleSize = title.length > 14 ? 76 : title.length > 9 ? 96 : 116;
 
   return new ImageResponse(

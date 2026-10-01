@@ -7,8 +7,9 @@ import type { Level, Question, QuizLevel, Subject } from "./types";
  * 2) 단원별 문항 수: 과목 안에서 단원 출제 비중(examWeight) 비율로 나눈다.
  *    → 결과적으로 "examWeight × 과목 문항 비율"에 비례한다.
  *    반올림 오차는 최대 잔여법(largest remainder)으로 처리한다.
+ *    연습 풀이(초급/중급/고급)에서는 중요한 단원이 더 자주 나오도록 중요도 가중치(IMPORTANCE_BOOST)를 곱한다.
  * 3) 문항 수가 적어 과목에 배정된 수가 단원 수보다 적으면 중요도 높은 단원부터 1문제씩 배정한다.
- * 4) 같은 세션 안에서는 중복 없이 뽑고, 최근 7일 안에 푼 문제는 뒤로 미룬다.
+ * 4) 단원 안에서는 매번 무작위로 뽑는다. 같은 세션 안에서는 중복 없이 뽑고, 최근 7일 안에 푼 문제는 뒤로 미룬다.
  * 5) 단원에 문제가 모자라면 같은 과목의 다른 단원에서 채운다.
  *
  * 화면과 무관한 순수 함수만 둔다. (tests/quiz-engine.test.ts 참고)
@@ -27,7 +28,24 @@ export interface LevelRule {
   levels: Level[];
   /** 목표 기출 비율 (1 = 기출 우선, 0.5 = 기출:예상 50:50). 기출이 모자라면 예상문제로 채운다 */
   pastRatio: number;
+  /**
+   * true 면 기출문제만 출제한다 (초급·중급).
+   * 단, 그 자격증에 등록된 기출이 하나도 없으면 풀 수 있는 문제가 없어지므로 예상문제로 대신한다.
+   */
+  pastOnly: boolean;
 }
+
+/**
+ * 초급·중급(기출 전용)인데 그 자격증에 등록된 기출이 하나도 없을 때 예상문제로 대신 출제할지.
+ * false 로 바꾸면 기출이 등록될 때까지 초급·중급 버튼이 비활성화된다.
+ */
+export const FALLBACK_TO_PREDICTED_WHEN_NO_PAST = true;
+
+/**
+ * 중요도(1~5)별 출제 가중치. 연습 풀이에서 단원 출제 비중에 곱한다.
+ * 숫자가 클수록 그 중요도의 단원에서 문제가 더 많이 나온다. (실전 CBT 모의고사에는 적용하지 않는다)
+ */
+export const IMPORTANCE_BOOST: Record<number, number> = { 1: 0.6, 2: 0.8, 3: 1, 4: 1.2, 5: 1.4 };
 
 export const LEVEL_RULES: Record<QuizLevel, LevelRule> = {
   basic: {
@@ -36,6 +54,7 @@ export const LEVEL_RULES: Record<QuizLevel, LevelRule> = {
     description: "기출 중에서 자주 나오는 기본 개념 문제입니다. 처음 시작하거나 오랜만에 공부한다면 여기부터 푸세요.",
     levels: ["basic"],
     pastRatio: 1,
+    pastOnly: true,
   },
   intermediate: {
     label: "중급",
@@ -43,6 +62,7 @@ export const LEVEL_RULES: Record<QuizLevel, LevelRule> = {
     description: "합격하려면 여기까지는 풀 수 있어야 합니다. 합격선 수준의 기출 전체에서 나옵니다.",
     levels: ["basic", "intermediate"],
     pastRatio: 1,
+    pastOnly: true,
   },
   advanced: {
     label: "고급",
@@ -50,6 +70,7 @@ export const LEVEL_RULES: Record<QuizLevel, LevelRule> = {
     description: "기출문제와 AI 예상문제를 절반씩 섞었습니다. 조금 까다로운 문제로 실력을 다질 때 푸세요.",
     levels: ["intermediate", "advanced"],
     pastRatio: 0.5,
+    pastOnly: false,
   },
 };
 
@@ -85,9 +106,15 @@ export function filterPool(
   level: QuizLevel,
   subjectId?: string | null,
 ): Question[] {
-  const levels = LEVEL_RULES[level].levels;
+  const rule = LEVEL_RULES[level];
+  // 초급·중급은 기출만. 등록된 기출이 하나도 없는 자격증만 예상문제로 대신한다
+  const pastOnly =
+    rule.pastOnly && (!FALLBACK_TO_PREDICTED_WHEN_NO_PAST || questions.some((q) => q.source === "past"));
   return questions.filter(
-    (q) => levels.includes(q.level) && (!subjectId || subjectId === "all" || q.subjectId === subjectId),
+    (q) =>
+      rule.levels.includes(q.level) &&
+      (!pastOnly || q.source === "past") &&
+      (!subjectId || subjectId === "all" || q.subjectId === subjectId),
   );
 }
 
@@ -163,8 +190,11 @@ export function allocateSubjects(subjects: Subject[], count: number, rng: Rng = 
   );
 }
 
-/** 한 과목 안에서 단원별 문항 수 */
-export function allocateChapters(subject: Subject, count: number): number[] {
+/**
+ * 한 과목 안에서 단원별 문항 수.
+ * importanceBoost 가 true 면 출제 비중에 중요도 가중치를 곱해 중요한 단원이 더 많이 나오게 한다.
+ */
+export function allocateChapters(subject: Subject, count: number, importanceBoost = false): number[] {
   const chapters = subject.chapters;
   const rank = importanceRank(chapters);
   if (count <= 0) return chapters.map(() => 0);
@@ -173,7 +203,7 @@ export function allocateChapters(subject: Subject, count: number): number[] {
     return chapters.map((_, i) => (rank[i] < count ? 1 : 0));
   }
   return largestRemainder(
-    chapters.map((c) => c.examWeight),
+    chapters.map((c) => c.examWeight * (importanceBoost ? (IMPORTANCE_BOOST[c.importance] ?? 1) : 1)),
     count,
     rank,
   );
@@ -184,11 +214,12 @@ export function allocateQuestions(
   subjects: Subject[],
   count: number,
   rng: Rng = Math.random,
+  importanceBoost = false,
 ): ChapterAllocation[] {
   const perSubject = allocateSubjects(subjects, count, rng);
   const result: ChapterAllocation[] = [];
   subjects.forEach((subject, si) => {
-    const perChapter = allocateChapters(subject, perSubject[si]);
+    const perChapter = allocateChapters(subject, perSubject[si], importanceBoost);
     subject.chapters.forEach((chapter, ci) => {
       result.push({ subjectId: subject.id, chapterId: chapter.id, count: perChapter[ci] });
     });
@@ -204,6 +235,8 @@ export interface BuildQuizParams {
   count: number;
   /** 목표 기출 비율 0~1 */
   pastRatio?: number;
+  /** 중요한 단원에 가중치를 줄지 (연습 풀이용) */
+  importanceBoost?: boolean;
   history?: SolveHistory;
   now?: number;
   rng?: Rng;
@@ -218,6 +251,7 @@ export function buildQuiz({
   pool,
   count,
   pastRatio = 1,
+  importanceBoost = false,
   history = {},
   now = Date.now(),
   rng = Math.random,
@@ -267,7 +301,7 @@ export function buildQuiz({
   };
 
   // 1) 단원별 배정대로 뽑기
-  const allocation = allocateQuestions(subjects, target, rng);
+  const allocation = allocateQuestions(subjects, target, rng, importanceBoost);
   const shortage = new Map<string, number>();
   for (const a of allocation) {
     if (a.count === 0) continue;
@@ -331,6 +365,7 @@ export function buildLevelQuiz({
     pool: filterPool(questions, level, subjectId),
     count,
     pastRatio: LEVEL_RULES[level].pastRatio,
+    importanceBoost: true,
     history,
     now,
     rng,

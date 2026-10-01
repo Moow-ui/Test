@@ -224,14 +224,14 @@ describe("난이도 카드", () => {
     }
   });
 
-  it("초급·중급은 기출을 먼저 쓰고, 모자라면 예상문제로 채운다", () => {
+  it("초급·중급은 기출만 쓴다 (기출이 있는 자격증에서는 예상문제로 채우지 않는다)", () => {
     const mixed = [
       ...Array.from({ length: 3 }, () => makeQuestion("a", "a1", { level: "basic", source: "past" })),
       ...Array.from({ length: 10 }, () => makeQuestion("a", "a1", { level: "basic", source: "predicted" })),
     ];
     const quiz = buildLevelQuiz({ subjects, questions: mixed, level: "basic", count: 5, rng: createRng(1) });
-    expect(quiz).toHaveLength(5);
-    expect(quiz.filter((q) => q.source === "past")).toHaveLength(3);
+    expect(quiz).toHaveLength(3);
+    expect(quiz.every((q) => q.source === "past")).toBe(true);
   });
 
   it("기출이 하나도 없어도 예상문제만으로 출제된다", () => {

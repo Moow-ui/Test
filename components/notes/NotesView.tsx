@@ -10,6 +10,7 @@ import {
   STORAGE_KEYS,
   clearNotes,
   removeNote,
+  setNoteMemo,
   type NoteEntry,
 } from "@/lib/storage";
 import type { Question, Subject } from "@/lib/types";
@@ -136,6 +137,29 @@ export function NotesView({
                 </p>
                 <div className="mt-2 text-[0.95rem]">
                   <Markdown text={q.explanation} />
+                </div>
+                {/* 나만의 오답노트: 내가 직접 적는 메모 (칸을 벗어나면 저장된다) */}
+                <div className="mt-3">
+                  <label htmlFor={`memo-${q.id}`} className="no-print block text-[0.9rem] font-bold">
+                    내 메모
+                  </label>
+                  <textarea
+                    id={`memo-${q.id}`}
+                    key={note.memo ?? ""}
+                    defaultValue={note.memo ?? ""}
+                    onBlur={(e) => {
+                      if (e.target.value.trim() !== (note.memo ?? "")) setNoteMemo(q.id, e.target.value);
+                    }}
+                    rows={2}
+                    maxLength={500}
+                    placeholder="헷갈린 이유, 외우는 방법 등을 적어 두세요"
+                    className="no-print mt-1 w-full rounded-lg border-2 border-line bg-surface p-2 text-ink placeholder:text-ink-sub"
+                  />
+                  {note.memo && (
+                    <p className="print-only mt-1">
+                      <span className="font-bold">내 메모:</span> {note.memo}
+                    </p>
+                  )}
                 </div>
                 <div className="no-print mt-3">
                   <button

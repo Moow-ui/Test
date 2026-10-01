@@ -1,3 +1,4 @@
+import { initOpenNextCloudflareForDev } from "@opennextjs/cloudflare";
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
@@ -6,5 +7,9 @@ const nextConfig: NextConfig = {
     "/**": ["./data/**/*", "./assets/fonts/*"],
   },
 };
+
+// 개발 서버(npm run dev)에서 wrangler.jsonc 의 바인딩(DB)을 로컬에서 흉내 낸다.
+// 회원 정보는 .wrangler 폴더의 로컬 파일에 저장되며 실제 서버와는 별개다.
+void initOpenNextCloudflareForDev();
 
 export default nextConfig;

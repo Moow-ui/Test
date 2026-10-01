@@ -30,7 +30,7 @@ export function certMainMeta(cert: Certification): PageMeta {
   return {
     title: `${cert.name} 필기 기출문제·출제경향 | ${SITE_NAME}`,
     description: `${cert.name} 필기 ${cert.examInfo.totalQuestions}문항(${subjects})의 과목별 출제 비중과 단원별 중요도를 확인하고, 초급·중급·고급 문제를 5문제부터 바로 풀어 보세요. 로그인 없이 무료입니다.`,
-    h1: `${cert.name} 필기 시험 정보와 출제경향`,
+    h1: `${cert.name} 합격 문제 풀기`,
     path,
   };
 }
@@ -147,7 +147,10 @@ export function noindexMetadata(title: string, description: string): Metadata {
   return { title, description, robots: { index: false, follow: false } };
 }
 
-/** 자격증별 OG 이미지 주소 (app/cert/[slug]/opengraph-image.tsx) */
+/**
+ * 자격증별 OG 이미지 주소 (app/cert/[slug]/opengraph-image.tsx).
+ * 이 파일은 일부러 (site) 묶음 밖에 둔다. 묶음 안에 두면 주소 끝에 임의의 꼬리표가 붙어 주소를 미리 알 수 없다.
+ */
 export function certOgImagePath(certId: string): string {
   return `/cert/${certId}/opengraph-image`;
 }

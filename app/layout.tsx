@@ -2,8 +2,7 @@ import type { Metadata, Viewport } from "next";
 import "pretendard/dist/web/variable/pretendardvariable-dynamic-subset.css";
 import "./globals.css";
 import { FontLoader } from "@/components/FontLoader";
-import { Footer } from "@/components/Footer";
-import { Header } from "@/components/Header";
+import { SyncManager } from "@/components/auth/SyncManager";
 import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "@/lib/site";
 import { DISPLAY_INIT_SCRIPT } from "@/lib/storage";
 
@@ -37,7 +36,7 @@ export const viewport: Viewport = {
   ],
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ko" suppressHydrationWarning>
       <body className="flex min-h-dvh flex-col antialiased">
@@ -49,12 +48,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         >
           본문으로 바로 가기
         </a>
-        <Header />
-        <main id="main" className="mx-auto w-full max-w-5xl flex-1 px-4 py-4 sm:py-6">
-          {children}
-        </main>
-        <Footer />
+        {/* 상단 메뉴·하단 안내는 app/(site)/layout.tsx, 시험 화면은 app/(exam)/layout.tsx */}
+        {children}
         <FontLoader />
+        <SyncManager />
       </body>
     </html>
   );

@@ -3,16 +3,17 @@
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useRef } from "react";
-import { AdSlot } from "@/components/AdSlot";
-import { sourceLabel } from "@/lib/format";
+import { ExamScreen } from "@/components/exam/ExamScreen";
 import { LEVEL_RULES, QUIZ_COUNTS, buildLevelQuiz, buildQuiz } from "@/lib/quiz-engine";
 import {
   STORAGE_KEYS,
+  addResult,
   getHistory,
   finishSession,
   getNotes,
   recordAnswer,
   saveSession,
+  setInstantCheck,
   setLastLevel,
   startSession,
   touchRecentCert,
@@ -20,7 +21,6 @@ import {
 } from "@/lib/storage";
 import type { ExamInfo, Question, QuizLevel, Subject } from "@/lib/types";
 import { useHydrated, useStored } from "@/lib/use-storage";
-import { QuestionCard } from "./QuestionCard";
 import { ResultView } from "./ResultView";
 
 export interface QuizCert {
@@ -110,16 +110,19 @@ function createSession(
   });
 }
 
-function Notice({ children }: { children: React.ReactNode }) {
-  return <div className="card mx-auto max-w-3xl space-y-3 p-5">{children}</div>;
+/** 시험 화면이 아닌 안내·결과는 여백을 두고 가운데에 보여 준다 */
+function Pad({ children }: { children: React.ReactNode }) {
+  return <div className="mx-auto w-full max-w-5xl px-4 py-4 sm:py-6">{children}</div>;
 }
 
-/** 풀이 화면: 새 풀이 시작 / 이어서 풀기 / 채점 / 결과 */
+/** 풀이 화면: 새 풀이 시작 / 이어서 풀기 / (바로 또는 마지막에) 채점 / 결과 */
 export function QuizRunner({ cert, questions }: { cert: QuizCert; questions: Question[] }) {
   const router = useRouter();
   const paramString = useSearchParams().toString();
   const hydrated = useHydrated();
   const session = useStored<QuizSession | null>(STORAGE_KEYS.session(cert.id), null);
+  // "바로 답 확인하기": 기본은 켜짐
+  const instant = useStored<boolean>(STORAGE_KEYS.instantCheck, true);
   const handledRef = useRef<string | null>(null);
 
   // 주소에 시작 조건이 있으면 새 풀이를 만들어 저장한 뒤, 주소에서 조건을 지운다.
@@ -141,69 +144,25 @@ export function QuizRunner({ cert, questions }: { cert: QuizCert; questions: Que
     ? session.questionIds.map((id) => byId.get(id)).filter((q): q is Question => !!q)
     : [];
   const total = sessionQuestions.length;
-  const index = session ? Math.min(session.currentIndex, Math.max(0, total - 1)) : 0;
-  const question = sessionQuestions[index];
-  const chosen = session && question ? (session.answers[question.id] ?? null) : null;
-  const active = hydrated && !paramString && !!session && !session.finishedAt && !!question;
-
-  const answer = (choice: number) => {
-    if (!session || !question || chosen !== null) return;
-    saveSession({ ...session, currentIndex: index, answers: { ...session.answers, [question.id]: choice } });
-    recordAnswer(question.id, choice === question.answer);
-  };
-
-  const next = () => {
-    if (!session || chosen === null) return;
-    window.scrollTo(0, 0);
-    if (index + 1 >= total) finishSession(session);
-    else saveSession({ ...session, currentIndex: index + 1 });
-  };
-
-  // 키보드: 1~4 답 선택, Enter 다음 문제
-  useEffect(() => {
-    if (!active) return;
-    const onKey = (e: KeyboardEvent) => {
-      if (e.ctrlKey || e.metaKey || e.altKey || e.repeat) return;
-      const tag = (e.target as HTMLElement | null)?.tagName;
-      if (tag === "INPUT" || tag === "TEXTAREA" || tag === "SELECT") return;
-      if (["1", "2", "3", "4"].includes(e.key)) {
-        if (chosen === null) {
-          e.preventDefault();
-          answer(Number(e.key));
-        }
-      } else if (e.key === "Enter" && chosen !== null) {
-        // 버튼·링크에 초점이 있으면 브라우저가 그 버튼을 누르므로 여기서는 처리하지 않는다
-        if (tag === "BUTTON" || tag === "A") return;
-        e.preventDefault();
-        next();
-      }
-    };
-    window.addEventListener("keydown", onKey);
-    return () => window.removeEventListener("keydown", onKey);
-  });
 
   if (!hydrated || paramString) {
     return (
-      <Notice>
-        <p className="text-lg font-bold">문제를 준비하고 있습니다…</p>
-      </Notice>
+      <Pad>
+        <p className="card p-5 text-lg font-bold">문제를 준비하고 있습니다…</p>
+      </Pad>
     );
   }
 
   if (!session || total === 0) {
     return (
-      <Notice>
-        <h1 className="text-xl font-extrabold">진행 중인 풀이가 없습니다</h1>
-        <p>난이도와 문항 수를 고르면 바로 시작할 수 있습니다.</p>
-        <div className="flex flex-wrap gap-2">
-          <Link href={`/cert/${cert.id}/quiz?level=basic&count=5&subject=all`} className="btn btn-primary btn-lg">
-            바로 5문제 풀기 →
-          </Link>
-          <Link href={`/cert/${cert.id}`} className="btn btn-lg">
-            {cert.name} 페이지로 가기
+      <Pad>
+        <div className="card mx-auto max-w-3xl space-y-3 p-5">
+          <h1 className="text-xl font-extrabold">진행 중인 풀이가 없습니다</h1>
+          <Link href={`/cert/${cert.id}`} className="btn btn-primary btn-lg">
+            {cert.name} 화면에서 시작하기 →
           </Link>
         </div>
-      </Notice>
+      </Pad>
     );
   }
 
@@ -213,72 +172,91 @@ export function QuizRunner({ cert, questions }: { cert: QuizCert; questions: Que
         ? `/cert/${cert.id}/quiz?level=${session.level}&count=${total}&subject=${session.subjectId ?? "all"}`
         : `/cert/${cert.id}/quiz?level=basic&count=5&subject=all`;
     return (
-      <ResultView
-        cert={cert}
-        label={session.label}
-        answers={session.answers}
-        questions={sessionQuestions}
-        againAction={
-          <Link href={againHref} className="btn btn-lg">
-            새 문제로 다시 풀기 →
-          </Link>
-        }
-      />
+      <Pad>
+        <ResultView
+          cert={cert}
+          label={session.label}
+          answers={session.answers}
+          questions={sessionQuestions}
+          againAction={
+            <Link href={againHref} className="btn btn-lg">
+              새 문제로 다시 풀기 →
+            </Link>
+          }
+        />
+      </Pad>
     );
   }
 
-  const subject = cert.subjects.find((s) => s.id === question.subjectId);
-  const chapter = subject?.chapters.find((c) => c.id === question.chapterId);
-  const answeredCount = sessionQuestions.filter((q) => session.answers[q.id] !== undefined).length;
-  const isLast = index + 1 >= total;
+  const revealed = session.revealed ?? {};
+  const index = Math.min(session.currentIndex, total - 1);
+
+  /** 보기를 고른다. "바로 답 확인하기"가 켜져 있으면 그 자리에서 채점하고 답을 잠근다 */
+  const select = (question: Question, choice: number) => {
+    if (revealed[question.id]) return;
+    saveSession({
+      ...session,
+      answers: { ...session.answers, [question.id]: choice },
+      revealed: instant ? { ...revealed, [question.id]: true } : revealed,
+    });
+    if (instant) recordAnswer(question.id, choice === question.answer, cert.id);
+  };
+
+  /** 체크박스를 다시 켜면, 지금 보고 있는 문제에 이미 고른 답이 있을 때 바로 채점해 보여 준다 */
+  const changeInstant = (checked: boolean) => {
+    setInstantCheck(checked);
+    const current = sessionQuestions[index];
+    const chosen = session.answers[current.id];
+    if (checked && chosen !== undefined && !revealed[current.id]) {
+      saveSession({ ...session, revealed: { ...revealed, [current.id]: true } });
+      recordAnswer(current.id, chosen === current.answer, cert.id);
+    }
+  };
+
+  /** 채점: 아직 확인하지 않은 답까지 풀이 기록에 남기고 결과 화면으로 넘어간다 */
+  const submit = () => {
+    for (const q of sessionQuestions) {
+      const chosen = session.answers[q.id];
+      if (chosen !== undefined && !revealed[q.id]) recordAnswer(q.id, chosen === q.answer, cert.id);
+    }
+    const wrongIds = sessionQuestions.filter((q) => session.answers[q.id] !== q.answer).map((q) => q.id);
+    addResult({
+      certId: cert.id,
+      label: session.label,
+      kind: "quiz",
+      total,
+      correct: total - wrongIds.length,
+      score: Math.round(((total - wrongIds.length) / total) * 100),
+      wrongIds,
+    });
+    finishSession(session);
+    window.scrollTo(0, 0);
+  };
+
+  const metaOf = (q: Question) => {
+    const subject = cert.subjects.find((s) => s.id === q.subjectId);
+    const chapter = subject?.chapters.find((c) => c.id === q.chapterId);
+    return {
+      location: `${subject?.name ?? ""} › ${chapter?.name ?? ""}`,
+      chapterImportance: chapter?.importance ?? 3,
+    };
+  };
 
   return (
-    // 좁은 화면에서는 위 여백을 줄여 문제와 선지 4개가 한 화면에 들어오게 한다.
-    // 화면 높이만큼 자리를 차지해, 푸는 동안 하단 안내 문구가 문제 아래로 따라 올라오지 않게 한다.
-    <div className="mx-auto -mt-2 min-h-[calc(100dvh-5.5rem)] max-w-3xl sm:mt-0">
-      <h1 className="sr-only">
-        {cert.name} · {session.label}
-      </h1>
-      {/* 실제 시험처럼 문제와 선지만 눈에 띄게: 진행률·출처 표시는 한 줄로 아주 작게 둔다 */}
-      <div className="flex items-center gap-2 text-[0.72rem] font-bold text-ink-sub">
-        <p className="shrink-0">
-          <span className="sr-only">문제 </span>
-          {index + 1} / {total}
-          <span className="mx-1" aria-hidden="true">
-            ·
-          </span>
-          {sourceLabel(question)}
-          {question.reviewStatus === "unverified" && " · 검수 전"}
-        </p>
-        <div
-          role="progressbar"
-          aria-label="진행률"
-          aria-valuemin={0}
-          aria-valuemax={total}
-          aria-valuenow={answeredCount}
-          className="h-1.5 flex-1 overflow-hidden rounded-full bg-surface-2"
-        >
-          <div className="h-full bg-primary" style={{ width: `${(answeredCount / total) * 100}%` }} />
-        </div>
-        <Link href={`/cert/${cert.id}`} className="-my-2 shrink-0 py-2 underline underline-offset-2">
-          나가기
-        </Link>
-      </div>
-
-      <div className="mt-2">
-        <QuestionCard
-          key={question.id}
-          question={question}
-          location={`${subject?.name ?? ""} › ${chapter?.name ?? ""}`}
-          chapterImportance={chapter?.importance ?? 3}
-          chosen={chosen}
-          onAnswer={answer}
-          onNext={next}
-          nextLabel={isLast ? "결과 보기 →" : "다음 문제 →"}
-        />
-      </div>
-
-      <AdSlot position="quiz-bottom" />
-    </div>
+    <ExamScreen
+      certName={cert.name}
+      modeLabel={session.label}
+      exitHref={`/cert/${cert.id}`}
+      questions={sessionQuestions}
+      index={index}
+      answers={session.answers}
+      revealed={revealed}
+      instant={{ checked: instant, onChange: changeInstant }}
+      submitLabel="채점하기"
+      onSelect={select}
+      onGoTo={(i) => saveSession({ ...session, currentIndex: i })}
+      onSubmit={submit}
+      metaOf={metaOf}
+    />
   );
 }

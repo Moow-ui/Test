@@ -6,6 +6,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { z } from "zod";
+import { listQuestionFiles, pastQuestionFile, shortPath } from "../lib/data-files";
 import { certDetailSchema, certSummarySchema, questionSchema } from "../lib/schemas";
 import { checkCertDetail, checkCertList, checkQuestions } from "../lib/validate";
 import type { Question } from "../lib/types";
@@ -47,19 +48,22 @@ if (!summariesResult.success) {
     if (detail.id !== summary.id) errors.push(`certs/${summary.id}.json → id 가 파일 이름과 다릅니다`);
     errors.push(...checkCertDetail(detail));
 
-    const questionDir = path.join(DATA_DIR, "questions", summary.id);
     const questions: Question[] = [];
-    if (fs.existsSync(questionDir)) {
-      for (const file of fs.readdirSync(questionDir).filter((f) => f.endsWith(".json")).sort()) {
-        const result = z.array(questionSchema).safeParse(readJson(path.join(questionDir, file)));
-        if (!result.success) {
-          for (const m of formatIssues(result.error)) {
-            errors.push(`questions/${summary.id}/${file} → ${m}`);
-          }
-          continue;
-        }
-        questions.push(...result.data);
+    for (const file of listQuestionFiles(summary.id)) {
+      const result = z.array(questionSchema).safeParse(readJson(file));
+      if (!result.success) {
+        for (const m of formatIssues(result.error)) errors.push(`${shortPath(file)} → ${m}`);
+        continue;
       }
+      // 기출 파일은 난이도별 폴더·단원별 파일에 맞게 들어 있어야 한다
+      for (const q of result.data) {
+        if (q.source !== "past") continue;
+        const expected = pastQuestionFile(summary.id, q.level, q.chapterId);
+        if (path.resolve(file) !== path.resolve(expected)) {
+          errors.push(`${q.id}: 기출 파일 위치가 다릅니다 (${shortPath(file)} → ${shortPath(expected)})`);
+        }
+      }
+      questions.push(...result.data);
     }
     errors.push(...checkQuestions(questions, detail));
 
