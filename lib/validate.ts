@@ -39,6 +39,10 @@ export function checkCertList(summaries: CertSummary[]): string[] {
   for (const s of summaries) {
     for (const related of s.relatedCertIds) {
       if (!ids.has(related)) errors.push(`${s.id}: 관련 자격증 "${related}" 가 목록에 없습니다`);
+      const target = summaries.find((x) => x.id === related);
+      if (target && target.country !== s.country) {
+        errors.push(`${s.id}: 관련 자격증 "${related}" 의 나라(country)가 다릅니다`);
+      }
       if (related === s.id) errors.push(`${s.id}: 자기 자신을 관련 자격증으로 넣었습니다`);
     }
   }

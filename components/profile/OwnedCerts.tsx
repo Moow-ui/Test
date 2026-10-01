@@ -1,27 +1,30 @@
 "use client";
 
 import { useState } from "react";
+import { GRADE_TIER, type GradeTier } from "@/lib/schemas";
 import { addOwnedCert, removeOwnedCert, type OwnedCert } from "@/lib/storage";
+import { useMessages } from "@/lib/use-messages";
 import type { ProfileCert } from "./ProfileView";
 
 /**
  * 등급별 칭호 모양. 등급이 높을수록 별이 많고 색이 달라진다.
  * (동 → 은 → 금 → 보라 → 진홍, 직접 적은 자격증은 파랑)
  */
-const TIERS: Record<string, { stars: string; style: string }> = {
-  기능사: { stars: "★", style: "border-[#b45309] bg-[linear-gradient(135deg,#fde4c8,#d9955a)] text-[#3b1d06]" },
-  산업기사: { stars: "★★", style: "border-[#64748b] bg-[linear-gradient(135deg,#ffffff,#b6c2d1)] text-[#0f172a]" },
-  기사: { stars: "★★★", style: "border-[#b45309] bg-[linear-gradient(135deg,#fef3c7,#f5b301)] text-[#3b2a00]" },
-  기능장: { stars: "★★★★", style: "border-[#6d28d9] bg-[linear-gradient(135deg,#ede9fe,#a78bfa)] text-[#2e1065]" },
-  "2급": { stars: "★", style: "border-[#0f766e] bg-[linear-gradient(135deg,#e0f7f3,#7fd1c5)] text-[#06302b]" },
-  "1급": { stars: "★★", style: "border-[#0f766e] bg-[linear-gradient(135deg,#ccfbf1,#2dd4bf)] text-[#042f2e]" },
-  기술사: { stars: "★★★★★", style: "border-[#9f1239] bg-[linear-gradient(135deg,#ffe4e6,#fb7185)] text-[#4c0519]" },
+const TIERS: Record<GradeTier, { stars: string; style: string }> = {
+  bronze: { stars: "★", style: "border-[#b45309] bg-[linear-gradient(135deg,#fde4c8,#d9955a)] text-[#3b1d06]" },
+  silver: { stars: "★★", style: "border-[#64748b] bg-[linear-gradient(135deg,#ffffff,#b6c2d1)] text-[#0f172a]" },
+  gold: { stars: "★★★", style: "border-[#b45309] bg-[linear-gradient(135deg,#fef3c7,#f5b301)] text-[#3b2a00]" },
+  purple: { stars: "★★★★", style: "border-[#6d28d9] bg-[linear-gradient(135deg,#ede9fe,#a78bfa)] text-[#2e1065]" },
+  mint: { stars: "★", style: "border-[#0f766e] bg-[linear-gradient(135deg,#e0f7f3,#7fd1c5)] text-[#06302b]" },
+  teal: { stars: "★★", style: "border-[#0f766e] bg-[linear-gradient(135deg,#ccfbf1,#2dd4bf)] text-[#042f2e]" },
+  crimson: { stars: "★★★★★", style: "border-[#9f1239] bg-[linear-gradient(135deg,#ffe4e6,#fb7185)] text-[#4c0519]" },
 };
 const CUSTOM_TIER = { stars: "◆", style: "border-[#1d4ed8] bg-[linear-gradient(135deg,#dbeafe,#93c5fd)] text-[#172554]" };
 
 /** 보유 자격증 하나를 칭호처럼 보여 주는 배지 */
 export function TitleBadge({ cert }: { cert: OwnedCert }) {
-  const tier = (cert.grade && TIERS[cert.grade]) || CUSTOM_TIER;
+  const tierName = cert.grade ? (GRADE_TIER as Record<string, GradeTier | undefined>)[cert.grade] : undefined;
+  const tier = tierName ? TIERS[tierName] : CUSTOM_TIER;
   return (
     <span
       className={`inline-flex items-center gap-1.5 rounded-full border-2 px-3.5 py-1.5 text-[1.05rem] font-extrabold ${tier.style}`}
@@ -39,6 +42,7 @@ const CUSTOM = "__custom__";
 
 /** 딴 자격증을 등록·삭제한다 */
 export function OwnedCertManager({ certs, owned }: { certs: ProfileCert[]; owned: OwnedCert[] }) {
+  const m = useMessages().m.owned;
   const [selected, setSelected] = useState(certs[0]?.id ?? CUSTOM);
   const [customName, setCustomName] = useState("");
   const [year, setYear] = useState("");
@@ -48,11 +52,11 @@ export function OwnedCertManager({ certs, owned }: { certs: ProfileCert[]; owned
     setError(null);
     const yearNumber = year.trim() === "" ? null : Number(year);
     if (yearNumber !== null && (!Number.isInteger(yearNumber) || yearNumber < 1960 || yearNumber > 2100)) {
-      return setError("취득 연도는 숫자 4자리로 적어 주세요. (예: 2024)");
+      return setError(m.yearError);
     }
     if (selected === CUSTOM) {
       const name = customName.trim();
-      if (!name) return setError("자격증 이름을 적어 주세요.");
+      if (!name) return setError(m.nameError);
       addOwnedCert({ key: `custom:${name}`, name, grade: null, year: yearNumber });
       setCustomName("");
     } else {
@@ -70,7 +74,7 @@ export function OwnedCertManager({ certs, owned }: { certs: ProfileCert[]; owned
       <div className="grid gap-3 sm:grid-cols-[1fr_8rem_auto] sm:items-end">
         <div>
           <label htmlFor="owned-cert" className="font-bold">
-            자격증
+            {m.cert}
           </label>
           <select
             id="owned-cert"
@@ -83,31 +87,31 @@ export function OwnedCertManager({ certs, owned }: { certs: ProfileCert[]; owned
                 {c.name}
               </option>
             ))}
-            <option value={CUSTOM}>목록에 없음 (직접 입력)</option>
+            <option value={CUSTOM}>{m.custom}</option>
           </select>
         </div>
         <div>
           <label htmlFor="owned-year" className="font-bold">
-            취득 연도
+            {m.year}
           </label>
           <input
             id="owned-year"
             inputMode="numeric"
             value={year}
             onChange={(e) => setYear(e.target.value)}
-            placeholder="예: 2024"
+            placeholder={m.yearPlaceholder}
             className={fieldClass}
           />
         </div>
         <button type="button" className="btn btn-primary" onClick={add}>
-          등록
+          {m.add}
         </button>
       </div>
 
       {selected === CUSTOM && (
         <div>
           <label htmlFor="owned-custom" className="font-bold">
-            자격증 이름
+            {m.name}
           </label>
           <input
             id="owned-custom"
@@ -135,7 +139,7 @@ export function OwnedCertManager({ certs, owned }: { certs: ProfileCert[]; owned
                 className="btn min-h-10 px-3 py-1 text-[0.85rem]"
                 onClick={() => removeOwnedCert(cert.key)}
               >
-                삭제
+                {m.remove}
               </button>
             </li>
           ))}

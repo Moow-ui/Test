@@ -8,9 +8,11 @@
  *   3. noindex 페이지(준비 중·풀이 화면 등)가 sitemap.xml 에 들어 있지 않은가
  *   4. 색인 대상 페이지가 sitemap.xml 에 빠짐없이 들어 있는가
  *   5. 기출·단원 페이지의 HTML 에 대표 문제의 정답·해설 텍스트가 들어 있는가
+ *   6. 모든 페이지에 hreflang(ko, en, x-default)이 있고, <html lang> 과 사이트 이름이 주소의 언어와 맞는가
  */
 import fs from "node:fs";
 import path from "node:path";
+import { LOCALES, brandName, getMessages, isLocale, type Locale } from "../lib/i18n";
 
 const APP_DIR = path.join(process.cwd(), ".next", "server", "app");
 
@@ -27,6 +29,12 @@ interface Page {
   h1: string[];
   noindex: boolean;
   html: string;
+  /** 주소의 언어 (/ko/..., /en/...) */
+  locale: Locale | null;
+  /** <html lang="..."> */
+  htmlLang: string;
+  /** hreflang → 주소 */
+  hreflang: Record<string, string>;
 }
 
 function walk(dir: string): string[] {
@@ -65,8 +73,19 @@ const pages: Page[] = walk(APP_DIR)
   .map((file) => {
     const html = fs.readFileSync(file, "utf8");
     const robots = attr(html, /<meta name="robots" content="([^"]*)"/);
+    const route = toRoute(file);
+    const first = route.split("/")[1];
+    const hreflang: Record<string, string> = {};
+    for (const tag of html.match(/<link rel="alternate"[^>]*>/g) ?? []) {
+      const lang = tag.match(/hrefLang="([^"]*)"/i)?.[1];
+      const href = tag.match(/href="([^"]*)"/)?.[1];
+      if (lang && href) hreflang[lang] = decode(href);
+    }
     return {
-      route: toRoute(file),
+      route,
+      locale: isLocale(first) ? first : null,
+      htmlLang: attr(html, /<html[^>]* lang="([^"]*)"/),
+      hreflang,
       title: attr(html, /<title>([^<]*)<\/title>/),
       description: attr(html, /<meta name="description" content="([^"]*)"/),
       canonical: attr(html, /<link rel="canonical" href="([^"]*)"/),
@@ -109,38 +128,79 @@ for (const p of indexable) {
   if (p.h1.length !== 1) errors.push(`H1 이 ${p.h1.length}개: ${p.route} (1개여야 함)`);
 }
 
-// 3, 4) sitemap
-const sitemapFile = path.join(APP_DIR, "sitemap.xml.body");
-if (!fs.existsSync(sitemapFile)) {
-  errors.push("sitemap.xml 이 빌드 결과에 없습니다");
-} else {
+// 3, 4) sitemap — 언어별로 따로 있다 (/sitemaps/ko.xml, /sitemaps/en.xml), /sitemap.xml 은 그 목록
+const indexFile = path.join(APP_DIR, "sitemap.xml.body");
+if (!fs.existsSync(indexFile)) errors.push("sitemap.xml 이 빌드 결과에 없습니다");
+const byRoute = new Map(pages.map((p) => [p.route, p]));
+for (const locale of LOCALES) {
+  const name = `sitemaps/${locale}.xml`;
+  const sitemapFile = path.join(APP_DIR, "sitemaps", `${locale}.xml.body`);
+  if (!fs.existsSync(sitemapFile)) {
+    errors.push(`${name} 이 빌드 결과에 없습니다`);
+    continue;
+  }
+  if (fs.existsSync(indexFile) && !fs.readFileSync(indexFile, "utf8").includes(`/${name}<`)) {
+    errors.push(`sitemap.xml 목록에 ${name} 이 없습니다`);
+  }
   const xml = fs.readFileSync(sitemapFile, "utf8");
   const sitemapRoutes = Array.from(xml.matchAll(/<loc>([^<]+)<\/loc>/g)).map(
     (m) => new URL(m[1]).pathname.replace(/\/$/, "") || "/",
   );
   const lastmodCount = (xml.match(/<lastmod>/g) ?? []).length;
   if (lastmodCount !== sitemapRoutes.length) {
-    errors.push(`sitemap: lastmod 가 없는 항목이 있습니다 (${lastmodCount}/${sitemapRoutes.length})`);
+    errors.push(`${name}: lastmod 가 없는 항목이 있습니다 (${lastmodCount}/${sitemapRoutes.length})`);
   }
-  const byRoute = new Map(pages.map((p) => [p.route, p]));
   for (const route of sitemapRoutes) {
     const page = byRoute.get(route);
-    if (!page) errors.push(`sitemap 에 있는데 페이지가 없음: ${route}`);
-    else if (page.noindex) errors.push(`noindex 페이지가 sitemap 에 들어 있음: ${route}`);
+    if (!page) errors.push(`${name} 에 있는데 페이지가 없음: ${route}`);
+    else if (page.noindex) errors.push(`noindex 페이지가 ${name} 에 들어 있음: ${route}`);
+    else if (page.locale !== locale) errors.push(`${name} 에 다른 언어 주소가 들어 있음: ${route}`);
   }
-  for (const p of indexable) {
-    if (!sitemapRoutes.includes(p.route)) errors.push(`색인 대상인데 sitemap 에 없음: ${p.route}`);
+  for (const p of indexable.filter((x) => x.locale === locale)) {
+    if (!sitemapRoutes.includes(p.route)) errors.push(`색인 대상인데 ${name} 에 없음: ${p.route}`);
   }
-  console.log(`sitemap.xml: ${sitemapRoutes.length}개 주소`);
+  console.log(`${name}: ${sitemapRoutes.length}개 주소`);
 }
 
 // 5) 기출·단원 페이지에 문제·정답·해설이 HTML 로 들어 있는가
-const contentPages = indexable.filter((p) => /^\/cert\/[^/]+\/[^/]+$/.test(p.route));
+const CIRCLED = "[①②③④]";
+const contentPages = indexable.filter((p) => /^\/[^/]+\/cert\/[^/]+\/[^/]+$/.test(p.route));
 for (const p of contentPages) {
-  const questionCount = (p.html.match(/정답과 해설 보기/g) ?? []).length;
-  const hasAnswer = /정답: <!-- -->[①②③④]|정답: [①②③④]/.test(p.html);
-  if (questionCount === 0 || !hasAnswer) {
+  if (!p.locale) continue;
+  const m = getMessages(p.locale).question;
+  const hasQuestions = p.html.includes(m.showAnswer);
+  // React 는 글자 사이에 <!-- --> 를 끼워 넣는다: "정답:<!-- --> <!-- -->①"
+  const answerAt = p.html.indexOf(m.answerIs);
+  const afterAnswer = answerAt === -1 ? "" : p.html.slice(answerAt + m.answerIs.length, answerAt + 60);
+  const hasAnswer = new RegExp(`^(?:<!-- -->| )*${CIRCLED}`).test(afterAnswer);
+  if (!hasQuestions || !hasAnswer) {
     warnings.push(`대표 문제·정답이 HTML 에 없음: ${p.route}`);
+  }
+}
+
+// 6) 언어: 주소의 언어, <html lang>, 사이트 이름, hreflang
+const pathOf = (url: string) => new URL(url, "http://x").pathname.replace(/\/$/, "") || "/";
+for (const p of pages) {
+  if (!p.locale) {
+    errors.push(`언어 경로(/ko, /en) 밖에 있는 페이지: ${p.route}`);
+    continue;
+  }
+  if (p.htmlLang !== p.locale) errors.push(`<html lang="${p.htmlLang}"> 이 주소의 언어와 다름: ${p.route}`);
+  if (!p.title.includes(brandName(p.locale))) errors.push(`title 에 사이트 이름(${brandName(p.locale)})이 없음: ${p.route}`);
+  for (const other of LOCALES) {
+    if (other !== p.locale && p.title.includes(brandName(other))) {
+      errors.push(`title 에 다른 언어의 사이트 이름이 들어 있음: ${p.route}`);
+    }
+  }
+  for (const key of [...LOCALES, "x-default"]) {
+    if (!p.hreflang[key]) errors.push(`hreflang="${key}" 없음: ${p.route}`);
+  }
+  const self = p.hreflang[p.locale];
+  if (self && pathOf(self) !== p.route) errors.push(`hreflang="${p.locale}" 이 자기 주소가 아님: ${p.route} → ${self}`);
+  for (const [key, href] of Object.entries(p.hreflang)) {
+    const target = pathOf(href);
+    // x-default 가 가리키는 "/" 는 언어를 골라 보내는 주소(app/route.ts)라 HTML 이 없다
+    if (target !== "/" && !byRoute.has(target)) errors.push(`hreflang="${key}" 이 없는 주소를 가리킴: ${p.route} → ${href}`);
   }
 }
 
@@ -163,4 +223,4 @@ if (errors.length > 0) {
   for (const e of errors) console.error(`  ✗ ${e}`);
   process.exit(1);
 }
-console.log("\nSEO 검사 통과 ✓ (title·description·H1 중복 없음, noindex 페이지는 sitemap 에서 제외됨)");
+console.log("\nSEO 검사 통과 ✓ (title·description·H1 중복 없음, noindex 페이지는 sitemap 에서 제외됨, hreflang 확인됨)");

@@ -3,7 +3,9 @@
 import Link from "next/link";
 import { useState } from "react";
 import { Stars } from "@/components/Stars";
+import { fmt, localePath } from "@/lib/i18n";
 import type { Subject } from "@/lib/types";
+import { useMessages } from "@/lib/use-messages";
 
 /**
  * 출제 분석: 과목을 가로로 나란히 놓고, 과목마다 "1단원 : 직류회로" 식으로 단원을 보여 준다.
@@ -18,6 +20,7 @@ export function AnalysisPanel({
   subjects: Subject[];
   linkChapters?: boolean;
 }) {
+  const { locale, m } = useMessages();
   const [byImportance, setByImportance] = useState(false);
 
   return (
@@ -29,7 +32,7 @@ export function AnalysisPanel({
           onClick={() => setByImportance((v) => !v)}
           className={`btn min-h-10 px-3 py-1 text-[0.8rem] ${byImportance ? "btn-primary" : ""}`}
         >
-          {byImportance ? "✓ 중요도순" : "중요도순 정렬"}
+          {byImportance ? m.cert.sortedByImportance : m.cert.sortByImportance}
         </button>
       </div>
 
@@ -47,15 +50,17 @@ export function AnalysisPanel({
             <section key={subject.id} className="rounded-lg border-2 border-line p-3">
               <h3 className="border-b border-line-soft pb-1.5 text-lg font-extrabold">
                 {subject.name}
-                <span className="ml-2 text-[0.8rem] font-bold text-ink-sub">{subject.questionCount}문항</span>
+                <span className="ml-2 text-[0.8rem] font-bold text-ink-sub">
+                  {fmt(m.common.items, { n: subject.questionCount })}
+                </span>
               </h3>
               <ol className="mt-2 space-y-2.5">
                 {chapters.map(({ chapter, no }) => {
-                  const label = `${no}단원 : ${chapter.name}`;
+                  const label = fmt(m.cert.chapterLabel, { no, name: chapter.name });
                   return (
                     <li key={chapter.id}>
                       {linkChapters ? (
-                        <Link href={`/cert/${certId}/${chapter.id}`} className="link">
+                        <Link href={localePath(locale, `/cert/${certId}/${chapter.id}`)} className="link">
                           {label}
                         </Link>
                       ) : (
@@ -63,7 +68,9 @@ export function AnalysisPanel({
                       )}
                       <span className="block text-[0.8rem]">
                         <Stars value={chapter.importance} />
-                        <span className="ml-1.5 font-bold text-ink-sub">출제 비중 {chapter.examWeight}%</span>
+                        <span className="ml-1.5 font-bold text-ink-sub">
+                          {fmt(m.cert.weight, { n: chapter.examWeight })}
+                        </span>
                       </span>
                     </li>
                   );

@@ -2,7 +2,15 @@
 
 import { useState } from "react";
 import { login, signup } from "@/lib/auth-client";
-import { NICKNAME_RULE, PASSWORD_RULE, USERNAME_RULE, signupSchema } from "@/lib/auth-rules";
+import { LOCK_MINUTES, signupSchema } from "@/lib/auth-rules";
+import { fmt, type Messages } from "@/lib/i18n";
+import { useMessages } from "@/lib/use-messages";
+
+/** 오류 코드 → 화면 문구 (모르는 코드는 일반 안내 문구) */
+export function errorText(m: Messages, code: string): string {
+  const errors: Record<string, string> = m.errors;
+  return fmt(errors[code] ?? errors.unknown, { minutes: LOCK_MINUTES });
+}
 
 type Mode = "login" | "signup";
 
@@ -11,6 +19,8 @@ const inputClass =
 
 /** 로그인 / 회원가입 (아이디·비밀번호·닉네임만 받는다) */
 export function AuthForm() {
+  const { m: all } = useMessages();
+  const m = all.auth;
   const [mode, setMode] = useState<Mode>("login");
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -24,37 +34,37 @@ export function AuthForm() {
     if (mode === "signup") {
       const parsed = signupSchema.safeParse({ username, password, nickname });
       if (!parsed.success) return setError(parsed.error.issues[0].message);
-      if (password !== passwordAgain) return setError("비밀번호 확인이 비밀번호와 다릅니다.");
+      if (password !== passwordAgain) return setError("password_mismatch");
     } else if (!username.trim() || !password) {
-      return setError("아이디와 비밀번호를 입력해 주세요.");
+      return setError("credentials_required");
     }
     setBusy(true);
-    const message =
+    const code =
       mode === "login" ? await login(username, password) : await signup(username, password, nickname);
     setBusy(false);
-    if (message) setError(message);
+    if (code) setError(code);
   };
 
   return (
     <div className="mx-auto max-w-md">
-      <div role="tablist" aria-label="로그인 또는 회원가입" className="grid grid-cols-2 gap-2">
-        {(["login", "signup"] as const).map((m) => (
+      <div role="tablist" aria-label={m.tabs} className="grid grid-cols-2 gap-2">
+        {(["login", "signup"] as const).map((tab) => (
           <button
-            key={m}
+            key={tab}
             type="button"
             role="tab"
-            aria-selected={mode === m}
+            aria-selected={mode === tab}
             onClick={() => {
-              setMode(m);
+              setMode(tab);
               setError(null);
             }}
             className={`min-h-14 rounded-lg border-2 text-lg font-extrabold ${
-              mode === m
+              mode === tab
                 ? "border-primary bg-primary text-white"
                 : "border-line bg-surface text-ink hover:border-ink"
             }`}
           >
-            {m === "login" ? "로그인" : "회원가입"}
+            {m[tab]}
           </button>
         ))}
       </div>
@@ -68,7 +78,7 @@ export function AuthForm() {
       >
         <div>
           <label htmlFor="auth-username" className="font-bold">
-            아이디
+            {m.username}
           </label>
           <input
             id="auth-username"
@@ -79,12 +89,12 @@ export function AuthForm() {
             spellCheck={false}
             className={inputClass}
           />
-          {mode === "signup" && <p className="mt-1 text-[0.8rem] text-ink-sub">{USERNAME_RULE}</p>}
+          {mode === "signup" && <p className="mt-1 text-[0.8rem] text-ink-sub">{all.errors.username_rule}</p>}
         </div>
 
         <div>
           <label htmlFor="auth-password" className="font-bold">
-            비밀번호
+            {m.password}
           </label>
           <input
             id="auth-password"
@@ -94,14 +104,14 @@ export function AuthForm() {
             autoComplete={mode === "login" ? "current-password" : "new-password"}
             className={inputClass}
           />
-          {mode === "signup" && <p className="mt-1 text-[0.8rem] text-ink-sub">{PASSWORD_RULE}</p>}
+          {mode === "signup" && <p className="mt-1 text-[0.8rem] text-ink-sub">{all.errors.password_rule}</p>}
         </div>
 
         {mode === "signup" && (
           <>
             <div>
               <label htmlFor="auth-password-again" className="font-bold">
-                비밀번호 확인
+                {m.passwordAgain}
               </label>
               <input
                 id="auth-password-again"
@@ -114,7 +124,7 @@ export function AuthForm() {
             </div>
             <div>
               <label htmlFor="auth-nickname" className="font-bold">
-                닉네임
+                {m.nickname}
               </label>
               <input
                 id="auth-nickname"
@@ -123,26 +133,22 @@ export function AuthForm() {
                 autoComplete="nickname"
                 className={inputClass}
               />
-              <p className="mt-1 text-[0.8rem] text-ink-sub">{NICKNAME_RULE}</p>
+              <p className="mt-1 text-[0.8rem] text-ink-sub">{all.errors.nickname_rule}</p>
             </div>
           </>
         )}
 
         {error && (
           <p role="alert" className="rounded-lg border border-bad bg-bad-soft p-3 font-bold">
-            {error}
+            {errorText(all, error)}
           </p>
         )}
 
         <button type="submit" disabled={busy} className="btn btn-primary btn-lg w-full">
-          {busy ? "잠시만요…" : mode === "login" ? "로그인" : "가입하기"}
+          {busy ? m.busy : mode === "login" ? m.login : m.join}
         </button>
 
-        {mode === "signup" && (
-          <p className="text-[0.8rem] text-ink-sub">
-            이메일·전화번호는 받지 않습니다. 그래서 비밀번호를 잊으면 찾을 수 없으니 꼭 기억해 두세요.
-          </p>
-        )}
+        {mode === "signup" && <p className="text-[0.8rem] text-ink-sub">{m.noRecovery}</p>}
       </form>
     </div>
   );

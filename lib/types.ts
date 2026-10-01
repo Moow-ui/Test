@@ -8,12 +8,14 @@ import type {
   faqSchema,
   questionSchema,
   subjectSchema,
+  COUNTRIES,
   GRADES,
   LEVELS,
   SOURCES,
 } from "./schemas";
 
 export type Grade = (typeof GRADES)[number];
+export type Country = (typeof COUNTRIES)[number];
 export type Level = (typeof LEVELS)[number];
 export type Source = (typeof SOURCES)[number];
 

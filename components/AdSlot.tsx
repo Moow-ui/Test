@@ -1,4 +1,8 @@
+"use client";
+
+import { fmt } from "@/lib/i18n";
 import { SHOW_AD_SLOTS } from "@/lib/site";
+import { useMessages } from "@/lib/use-messages";
 
 /**
  * 광고 자리 (지금은 미구현).
@@ -10,14 +14,15 @@ import { SHOW_AD_SLOTS } from "@/lib/site";
  * 그래서 위쪽 여백(mt-16)을 크게 두고, 항상 본문·버튼 묶음이 끝난 뒤에만 놓는다.
  */
 export function AdSlot({ position }: { position: string }) {
+  const m = useMessages().m.ad;
   if (!SHOW_AD_SLOTS) return null;
   return (
     <aside
-      aria-label="광고 영역"
+      aria-label={m.label}
       data-ad-position={position}
       className="no-print mx-auto mt-16 flex min-h-[100px] w-full max-w-3xl items-center justify-center rounded-lg border-2 border-dashed border-line text-[0.85rem] text-ink-sub"
     >
-      광고 자리 ({position})
+      {fmt(m.slot, { position })}
     </aside>
   );
 }

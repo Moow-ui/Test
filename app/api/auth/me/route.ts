@@ -10,11 +10,11 @@ export async function GET() {
 
 /** 회원 탈퇴: 계정과 저장된 기록을 모두 지운다 */
 export async function DELETE(request: Request) {
-  if (!isSameOrigin(request)) return json({ error: "잘못된 요청입니다." }, 403);
+  if (!isSameOrigin(request)) return json({ error: "bad_request" }, 403);
   const db = await getDb();
-  if (!db) return json({ error: "로그인 서버에 연결할 수 없습니다." }, 503);
+  if (!db) return json({ error: "db_missing" }, 503);
   const user = await getSessionUser(db);
-  if (!user) return json({ error: "로그인이 필요합니다." }, 401);
+  if (!user) return json({ error: "login_required" }, 401);
 
   await db.batch([
     db.prepare("DELETE FROM user_data WHERE user_id = ?").bind(user.id),

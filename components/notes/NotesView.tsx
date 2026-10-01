@@ -5,6 +5,7 @@ import { useState } from "react";
 import { Markdown } from "@/components/Markdown";
 import { QuestionBadges } from "@/components/quiz/QuestionBadges";
 import { circled } from "@/lib/format";
+import { fmt, localePath } from "@/lib/i18n";
 import {
   EMPTY_NOTES,
   STORAGE_KEYS,
@@ -14,6 +15,7 @@ import {
   type NoteEntry,
 } from "@/lib/storage";
 import type { Question, Subject } from "@/lib/types";
+import { useMessages } from "@/lib/use-messages";
 import { useHydrated, useStored } from "@/lib/use-storage";
 
 /** 자격증별 오답노트: 틀린 문제 + 정답 + 해설, 인쇄(흑백 기준), 다시 풀기 */
@@ -25,6 +27,9 @@ export function NotesView({
   questions: Question[];
 }) {
   const hydrated = useHydrated();
+  const { locale, m: all, brand } = useMessages();
+  const m = all.notes;
+  const certPath = localePath(locale, `/cert/${cert.id}`);
   const allNotes = useStored<NoteEntry[]>(STORAGE_KEYS.notes, EMPTY_NOTES);
   const [confirmClear, setConfirmClear] = useState(false);
 
@@ -44,50 +49,45 @@ export function NotesView({
     <div className="mx-auto max-w-3xl space-y-5">
       <header>
         <p className="no-print text-[0.9rem] font-bold text-ink-sub">
-          <Link href={`/cert/${cert.id}`} className="link">
-            ← {cert.name} 페이지
+          <Link href={certPath} className="link">
+            {fmt(m.backToCert, { name: cert.name })}
           </Link>
         </p>
         <h1 className="mt-1 text-2xl font-extrabold">
-          {cert.name} 오답노트 {hydrated && `(${notes.length}문제)`}
+          {fmt(m.certTitle, { name: cert.name })} {hydrated && fmt(m.countSuffix, { n: notes.length })}
         </h1>
-        <p className="print-only text-[0.9rem]">자격증달인 오답노트 · 정답과 해설 포함</p>
+        <p className="print-only text-[0.9rem]">{fmt(m.printHeader, { brand })}</p>
       </header>
 
       {!hydrated ? (
-        <p className="card p-4 font-bold">오답노트를 불러오고 있습니다…</p>
+        <p className="card p-4 font-bold">{m.loading}</p>
       ) : notes.length === 0 ? (
         <div className="card space-y-3 p-5">
-          <p className="font-bold">아직 오답노트에 담은 문제가 없습니다.</p>
-          <p>
-            문제를 풀고 결과 화면에서 &lsquo;틀린 문제 오답노트에 저장&rsquo;을 누르면 여기에 모입니다.
-          </p>
-          <Link href={`/cert/${cert.id}/quiz?level=basic&count=5&subject=all`} className="btn btn-primary btn-lg">
-            바로 5문제 풀기 →
+          <p className="font-bold">{m.empty}</p>
+          <p>{m.emptyHint}</p>
+          <Link href={`${certPath}/quiz?level=basic&count=5&subject=all`} className="btn btn-primary btn-lg">
+            {m.start5}
           </Link>
         </div>
       ) : (
         <>
           <div className="no-print grid gap-2 sm:grid-cols-3">
-            <Link href={`/cert/${cert.id}/quiz?mode=notes`} className="btn btn-primary btn-lg">
-              오답 다시 풀기 →
+            <Link href={`${certPath}/quiz?mode=notes`} className="btn btn-primary btn-lg">
+              {m.retry}
             </Link>
             <button type="button" className="btn btn-lg" onClick={() => window.print()}>
-              🖨 인쇄하기
+              {m.print}
             </button>
             <button type="button" className="btn btn-lg" onClick={() => setConfirmClear(true)}>
-              오답노트 비우기
+              {m.clear}
             </button>
           </div>
-          <p className="no-print text-[0.9rem] text-ink-sub">
-            인쇄하면 문제·정답·해설이 흑백으로 깔끔하게 나옵니다. 오답노트는 이 기기(브라우저)에만
-            저장됩니다.
-          </p>
+          <p className="no-print text-[0.9rem] text-ink-sub">{m.printHint}</p>
 
           {confirmClear && (
             <div role="alertdialog" aria-labelledby="clear-title" className="no-print rounded-lg border-2 border-bad bg-bad-soft p-4">
               <p id="clear-title" className="font-extrabold">
-                {cert.name} 오답노트 {notes.length}문제를 모두 지울까요?
+                {fmt(m.confirmClear, { name: cert.name, n: notes.length })}
               </p>
               <div className="mt-2 flex flex-wrap gap-2">
                 <button
@@ -98,10 +98,10 @@ export function NotesView({
                     setConfirmClear(false);
                   }}
                 >
-                  네, 모두 지웁니다
+                  {m.yesClear}
                 </button>
                 <button type="button" className="btn btn-primary" onClick={() => setConfirmClear(false)}>
-                  아니요
+                  {all.common.no}
                 </button>
               </div>
             </div>
@@ -124,16 +124,16 @@ export function NotesView({
                     return (
                       <li key={n} className={n === q.answer ? "font-extrabold" : ""}>
                         {circled(n)} {choice}
-                        {n === q.answer && <span className="ml-2 text-ok">← 정답</span>}
+                        {n === q.answer && <span className="ml-2 text-ok">{all.result.answerMark}</span>}
                         {n === note.chosen && n !== q.answer && (
-                          <span className="ml-2 font-bold text-bad">← 내가 고른 답</span>
+                          <span className="ml-2 font-bold text-bad">{all.result.myChoiceMark}</span>
                         )}
                       </li>
                     );
                   })}
                 </ol>
                 <p className="mt-2 border-t border-line-soft pt-2">
-                  <span className="font-bold">핵심:</span> {q.oneLineConcept}
+                  <span className="font-bold">{all.common.keyConcept}</span> {q.oneLineConcept}
                 </p>
                 <div className="mt-2 text-[0.95rem]">
                   <Markdown text={q.explanation} />
@@ -141,7 +141,7 @@ export function NotesView({
                 {/* 나만의 오답노트: 내가 직접 적는 메모 (칸을 벗어나면 저장된다) */}
                 <div className="mt-3">
                   <label htmlFor={`memo-${q.id}`} className="no-print block text-[0.9rem] font-bold">
-                    내 메모
+                    {m.memo}
                   </label>
                   <textarea
                     id={`memo-${q.id}`}
@@ -152,12 +152,12 @@ export function NotesView({
                     }}
                     rows={2}
                     maxLength={500}
-                    placeholder="헷갈린 이유, 외우는 방법 등을 적어 두세요"
+                    placeholder={m.memoPlaceholder}
                     className="no-print mt-1 w-full rounded-lg border-2 border-line bg-surface p-2 text-ink placeholder:text-ink-sub"
                   />
                   {note.memo && (
                     <p className="print-only mt-1">
-                      <span className="font-bold">내 메모:</span> {note.memo}
+                      <span className="font-bold">{m.memoPrint}</span> {note.memo}
                     </p>
                   )}
                 </div>
@@ -167,7 +167,7 @@ export function NotesView({
                     className="btn min-h-11 px-3 py-1 text-[0.9rem]"
                     onClick={() => removeNote(q.id)}
                   >
-                    이 문제는 이제 알아요 (오답노트에서 빼기)
+                    {m.remove}
                   </button>
                 </div>
               </li>

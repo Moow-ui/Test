@@ -1,7 +1,6 @@
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { ImageResponse } from "next/og";
-import { SITE_NAME, SITE_TAGLINE } from "./site";
 
 /** OG 이미지(카톡·밴드 공유 미리보기) 공통 틀 */
 
@@ -22,10 +21,15 @@ function loadFonts(): Promise<[Buffer, Buffer]> {
 }
 
 export async function renderOgImage({
+  brand,
+  tagline,
   eyebrow,
   title,
   subtitle,
 }: {
+  /** 사이트 이름과 한 줄 소개 (언어별로 다르다) */
+  brand: string;
+  tagline: string;
   eyebrow: string;
   title: string;
   subtitle: string;
@@ -49,7 +53,7 @@ export async function renderOgImage({
         }}
       >
         <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-          <div style={{ display: "flex", fontSize: 44, fontWeight: 700 }}>{SITE_NAME}</div>
+          <div style={{ display: "flex", fontSize: 44, fontWeight: 700 }}>{brand}</div>
           <div
             style={{
               display: "flex",
@@ -72,7 +76,7 @@ export async function renderOgImage({
           <div style={{ display: "flex", fontSize: 44, marginTop: 20, fontWeight: 400 }}>{subtitle}</div>
         </div>
 
-        <div style={{ display: "flex", fontSize: 32, fontWeight: 400 }}>{SITE_TAGLINE}</div>
+        <div style={{ display: "flex", fontSize: 32, fontWeight: 400 }}>{tagline}</div>
       </div>
     ),
     {

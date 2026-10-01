@@ -9,7 +9,8 @@ export const SESSION_COOKIE = "qpass_session";
 const SESSION_DAYS = 30;
 const DAY_MS = 24 * 60 * 60 * 1000;
 
-export const DB_MISSING_MESSAGE = "로그인 서버가 아직 연결되지 않았습니다. 잠시 후 다시 시도해 주세요.";
+/** API 오류는 코드로 돌려준다. 화면 문구는 messages 의 "errors" 에 있다 */
+export const DB_MISSING_MESSAGE = "db_missing";
 
 /** 응답은 항상 캐시하지 않는다 (사람마다 내용이 다르다) */
 export function json(data: unknown, status = 200): Response {

@@ -3,9 +3,12 @@
 import { useState } from "react";
 import { REPORT_REASONS, addReport } from "@/lib/storage";
 import type { Question } from "@/lib/types";
+import { useMessages } from "@/lib/use-messages";
 
 /** 문제 오류 신고 (MVP: 이 기기의 localStorage 에 기록. /admin/reports 에서 확인) */
 export function ReportForm({ question, onClose }: { question: Question; onClose: () => void }) {
+  const { m: all } = useMessages();
+  const m = all.report;
   const [reason, setReason] = useState<string>(REPORT_REASONS[0]);
   const [memo, setMemo] = useState("");
   const [done, setDone] = useState(false);
@@ -13,9 +16,9 @@ export function ReportForm({ question, onClose }: { question: Question; onClose:
   if (done) {
     return (
       <div role="status" className="mt-3 rounded-lg border-2 border-ok bg-ok-soft p-3">
-        <p className="font-bold">신고가 저장되었습니다. 알려 주셔서 고맙습니다.</p>
+        <p className="font-bold">{m.saved}</p>
         <button type="button" className="btn mt-2" onClick={onClose}>
-          닫기
+          {all.common.close}
         </button>
       </div>
     );
@@ -36,10 +39,10 @@ export function ReportForm({ question, onClose }: { question: Question; onClose:
         setDone(true);
       }}
     >
-      <p className="font-bold">이 문제에서 무엇이 이상한가요?</p>
+      <p className="font-bold">{m.ask}</p>
       <div>
         <label htmlFor="report-reason" className="block font-bold">
-          이유
+          {m.reason}
         </label>
         <select
           id="report-reason"
@@ -49,14 +52,14 @@ export function ReportForm({ question, onClose }: { question: Question; onClose:
         >
           {REPORT_REASONS.map((r) => (
             <option key={r} value={r}>
-              {r}
+              {m.reasons[r]}
             </option>
           ))}
         </select>
       </div>
       <div>
         <label htmlFor="report-memo" className="block font-bold">
-          자세한 내용 (안 써도 됩니다)
+          {m.memo}
         </label>
         <textarea
           id="report-memo"
@@ -69,10 +72,10 @@ export function ReportForm({ question, onClose }: { question: Question; onClose:
       </div>
       <div className="flex flex-wrap gap-2">
         <button type="submit" className="btn btn-primary">
-          신고 저장하기
+          {m.submit}
         </button>
         <button type="button" className="btn" onClick={onClose}>
-          취소
+          {all.common.cancel}
         </button>
       </div>
     </form>

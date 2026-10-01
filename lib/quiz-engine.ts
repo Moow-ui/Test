@@ -20,10 +20,8 @@ export const DEFAULT_QUIZ_COUNT = 5;
 export const RECENT_DAYS = 7;
 const DAY_MS = 24 * 60 * 60 * 1000;
 
+/** 난이도 이름(초급·중급·고급)은 messages 의 "levels" 에 있다 */
 export interface LevelRule {
-  label: string;
-  title: string;
-  description: string;
   /** 이 카드에 포함되는 문제 난이도 */
   levels: Level[];
   /** 목표 기출 비율 (1 = 기출 우선, 0.5 = 기출:예상 50:50). 기출이 모자라면 예상문제로 채운다 */
@@ -53,25 +51,16 @@ export const IMPORTANCE_BOOST: Record<number, number> = { 1: 0.6, 2: 0.8, 3: 1, 
  */
 export const LEVEL_RULES: Record<QuizLevel, LevelRule> = {
   basic: {
-    label: "초급",
-    title: "자주 나오는 기본 문제",
-    description: "자주 나오는 기본 개념 문제입니다. 처음 시작하거나 오랜만에 공부한다면 여기부터 푸세요.",
     levels: ["basic"],
     pastRatio: 0,
     pastOnly: false,
   },
   intermediate: {
-    label: "중급",
-    title: "합격선 수준 문제",
-    description: "합격하려면 여기까지는 풀 수 있어야 합니다. 기본 문제와 합격선 수준 문제가 함께 나옵니다.",
     levels: ["basic", "intermediate"],
     pastRatio: 0,
     pastOnly: false,
   },
   advanced: {
-    label: "고급",
-    title: "까다로운 문제",
-    description: "합격선 수준 문제와 까다로운 문제가 함께 나옵니다. 실력을 다질 때 푸세요.",
     levels: ["intermediate", "advanced"],
     pastRatio: 0,
     pastOnly: false,

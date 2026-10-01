@@ -7,6 +7,30 @@
 
 - 저장소: https://github.com/Moow-ui/Test (브랜치 `main`). 작업을 마치면 커밋하고 push 한다.
 - 배포: Cloudflare Workers (Workers Builds). push 하면 자동으로 빌드·배포된다.
+- 도메인은 `exampasso.com` 하나. 주소는 언어(나라)별 경로로 나뉜다: `/ko` = 자격증달인(한국 자격증), `/en` = ExamPasso(미국 자격증).
+
+## 0. 다국어 규칙 (나라별 사이트)
+
+번역이 아니라 **나라별 별도 콘텐츠**다. 화면 틀과 문구만 두 언어로 있고, 자격증·문제는 나라마다 따로 만든다.
+
+- **브랜드명·도메인은 `config/brand.ts` 한 곳에만 둔다.** 로고·title·OG·푸터가 모두 여기서 읽는다. 다른 파일(문구 파일 포함)에 사이트 이름을 직접 쓰지 않는다 (`{brand}` 로 받는다).
+- **화면 문구는 `messages/ko.json`, `messages/en.json`** 에만 둔다. 두 파일의 키 구성과 `{변수}` 는 같아야 한다.
+  - `app/`, `components/` 에 한글(또는 영어) 문구를 직접 쓰지 않는다. `tests/i18n.test.ts` 가 검사한다.
+  - 서버 컴포넌트는 `getMessages(locale)`, 클라이언트 컴포넌트는 `useMessages()` (`lib/use-messages.ts`). 변수는 `fmt("{n}문제", { n })`.
+  - 긴 설명 문장 대신 짧은 라벨을 쓴다.
+- **주소**: 모든 화면은 `app/[lang]/` 아래에 있다. 링크는 `localePath(locale, "/cert/…")` 로 만든다 (`/cert/…` 를 직접 쓰지 않는다).
+  - 예전 주소(`/cert/…`, `/notes`, `/profile`, `/admin/reports`)는 `next.config.ts` 의 `redirects` 가 `/ko/…` 로 301 보낸다.
+- **언어 감지는 루트(`/`)에서만** 한다 (`app/route.ts`): 쿠키(`NEXT_LOCALE`) → 브라우저 언어 → 모르면 `/en`.
+  그 밖의 주소에서는 강제로 옮기지 않고, 다른 언어 사용자로 보이면 맨 위에 한 줄 안내만 띄운다 (`components/i18n/LocaleBanner.tsx`).
+  사용자가 안내나 하단의 언어 바꾸기를 누르면 고른 언어를 쿠키에 기억한다 (`lib/locale-cookie.ts`).
+- **자격증의 나라**: `data/certifications.json` 의 `country`(`KR`/`US`). `/ko` 에는 KR, `/en` 에는 US 만 나온다
+  (`getCertList(country)`, `getCertificationIn(country, id)`). 다른 나라 자격증 주소는 404.
+- **hreflang**(`ko`, `en`, `x-default`)은 모든 페이지에 넣는다 (`lib/seo.ts` 의 `languageAlternates`).
+  두 언어에 다 있는 화면(홈·오답노트·내 정보)은 서로를 가리키고, 자격증 화면은 다른 언어에 같은 내용이 없으므로 자기 자신(+다른 언어는 그 언어의 홈)을 가리킨다.
+- **sitemap 은 언어별**: `/sitemaps/ko.xml`, `/sitemaps/en.xml` (목록은 `/sitemap.xml`, `lib/sitemap.ts`).
+- **`generateStaticParams` 는 `lib/static-params.ts` 의 함수를 쓴다.** 어느 한 언어에서 빈 목록을 돌려주면 Next.js 가 그 화면 전체를 미리 만들지 않는다 (준비된 미국 자격증이 0개일 때 실제로 겪은 문제).
+- API 오류는 문장이 아니라 코드(`wrong_credentials` 등)로 돌려주고, 화면이 `messages` 의 `errors` 로 바꿔 보여 준다.
+- 미국 자격증은 지금 목록만 있고 전부 "준비 중"이다 (영어 문제는 아직 없음).
 
 ## 1. 타겟 사용자 (모든 화면·문장의 기준)
 
@@ -18,7 +42,7 @@
 - 아이콘만 있는 버튼 금지. 항상 글자를 함께 쓴다 ("다음 ▶").
 - 애니메이션 최소화 (저사양 PC). transition·animation 을 새로 넣지 않는다.
 - 색은 `app/globals.css` 의 변수만 쓴다. 상단 메뉴는 남색(`header`), 초급·중급·고급 박스는 청록·파랑·보라(`lv1`~`lv3`, 연한 바탕은 `-soft`). 제목은 가운데 맞춤.
-- 사이트 이름은 **자격증달인** (`lib/site.ts` 의 `SITE_NAME`). 저장소 키·쿠키·DB 이름의 `qpass` 는 기존 사용자 기록 때문에 바꾸지 않는다.
+- 사이트 이름은 `/ko` 는 **자격증달인**, `/en` 은 **ExamPasso** (`config/brand.ts`). 저장소 키·쿠키·DB 이름의 `qpass` 는 기존 사용자 기록 때문에 바꾸지 않는다.
 - 로그인하지 않아도 모든 기능을 쓸 수 있어야 한다 (로그인은 기록을 계정에 저장하는 선택 기능). 문제 수 기본값은 5문제.
 - 웹폰트는 Pretendard. 처음 방문한 화면은 기기 글꼴로 바로 그리고 다음 화면부터 적용한다 (`components/FontLoader.tsx`).
 - 화면 밖의 긴 묶음에는 `cv` 클래스(content-visibility: auto)를 붙인다. 인쇄 화면(오답노트)에는 붙이지 않는다.
@@ -45,7 +69,7 @@
     꺼져 있으면 답만 표시하고 넘어가며, 마지막 문제에서 "채점하기"를 누르면 한꺼번에 채점한다.
   - 문제 위에 출처를 작게 표시한다: "AI 예상문제 · 검수 전".
   - 해설·문제 오류 신고는 눌러야 펼쳐진다.
-  - 시험 화면에는 사이트 상단 메뉴·하단 안내를 넣지 않는다 (`app/(exam)/layout.tsx`).
+  - 시험 화면에는 사이트 상단 메뉴·하단 안내를 넣지 않는다 (`app/[lang]/(exam)/layout.tsx`).
   - 키보드: 1~4 답 선택, Enter/→ 다음, ← 이전.
 
 ## 2. 기술 스택
@@ -67,28 +91,37 @@
 ## 3. 폴더 구조
 
 ```
+config/brand.ts                    ★ 브랜드명(언어별)·도메인은 여기 한 곳
+messages/{ko,en}.json              ★ 화면 문구는 여기 두 파일
 app/
-  layout.tsx                       html/body, 글꼴·테마 초기화
-  (site)/                          상단 메뉴 + 하단 안내가 있는 일반 화면
-    page.tsx                       홈
-    cert/[slug]/page.tsx           자격증 화면
-    cert/[slug]/past/              기출문제 페이지 (대표 문제 서버 렌더링)
-    cert/[slug]/[chapterId]/       단원별 핵심정리 + 대표 문제
-    cert/[slug]/notes/             오답노트 + 인쇄 (noindex)
-    notes/, admin/reports/         오답노트 목록, 문제 오류 신고 목록(숨김 경로, noindex)
-    profile/                       내 정보 (로그인·회원가입·프로필, noindex)
-  (exam)/                          시험 화면 (메뉴 없음, noindex)
-    cert/[slug]/quiz/              연습 풀이
-    cert/[slug]/cbt/               실전 CBT 체험
+  route.ts                         루트(/): 쿠키·브라우저 언어로 /ko 또는 /en 으로 보낸다
+  [lang]/                          ko | en
+    layout.tsx                     html/body(lang), 글꼴·테마 초기화, 홈 metadata
+    (site)/                        (언어 안내 한 줄) + 상단 메뉴 + 하단 안내가 있는 일반 화면
+      page.tsx                     홈
+      cert/[slug]/page.tsx         자격증 화면
+      cert/[slug]/past/            기출문제 페이지 (대표 문제 서버 렌더링)
+      cert/[slug]/[chapterId]/     단원별 핵심정리 + 대표 문제
+      cert/[slug]/notes/           오답노트 + 인쇄 (noindex)
+      notes/, admin/reports/       오답노트 목록, 문제 오류 신고 목록(숨김 경로, noindex)
+      profile/                     내 정보 (로그인·회원가입·프로필, noindex)
+    (exam)/                        시험 화면 (메뉴 없음, noindex)
+      cert/[slug]/quiz/            연습 풀이
+      cert/[slug]/cbt/             실전 CBT 체험
+    cert/[slug]/opengraph-image.tsx  자격증별 OG 이미지 (일부러 (site) 묶음 밖에 둔다)
+    opengraph-image.tsx            언어별 기본 OG 이미지
   api/auth/{signup,login,logout,me}/   회원가입·로그인·로그아웃·내 정보(탈퇴)
   api/sync/                        계정 기록 불러오기·저장하기
   api/questions/[certId]/          프로필용 문제 요약 (빌드 때 만드는 정적 JSON)
-  cert/[slug]/opengraph-image.tsx  자격증별 OG 이미지 (일부러 (site) 묶음 밖에 둔다)
-  sitemap.ts, robots.ts, opengraph-image.tsx
+  sitemap.xml/, sitemaps/[file]/   sitemap 목록, 언어별 sitemap (ko.xml, en.xml)
+  robots.ts
 components/
   exam/ExamScreen.tsx              ★ 시험 화면 (연습 풀이·CBT 공용)
+  i18n/                            언어 안내 배너, 언어 바꾸기, 없는 주소 안내
   cert/, home/, quiz/, cbt/, notes/, admin/
 lib/
+  i18n.ts, use-messages.ts         ★ 언어 규칙·문구 읽기 (서버: getMessages, 화면: useMessages)
+  static-params.ts, sitemap.ts     미리 만들 주소 목록, 언어별 sitemap
   schemas.ts, types.ts             데이터 스키마(zod)와 타입
   data.ts, data-files.ts           ★ 데이터 접근·파일 위치 규칙은 여기 한 곳 (서버 전용, fs)
   storage.ts, use-storage.ts       ★ localStorage 접근은 여기 한 곳 (클라이언트 전용)
@@ -113,7 +146,7 @@ tests/                             vitest 단위 테스트
 
 ## 4. 데이터 스키마 (정의는 `lib/schemas.ts`)
 
-- **Certification**: `id`(영문 slug, URL 에 사용·변경 금지), `name`, `officialName`, `spacedName`, `shortNames[]`, `relatedCertIds[]`, `grade`, `field`, `examInfo`, `subjects[]`, `content?`, `updatedAt`
+- **Certification**: `id`(영문 slug, URL 에 사용·변경 금지), `country`(`KR`|`US`), `name`, `officialName`, `spacedName`, `shortNames[]`, `relatedCertIds[]`, `grade`, `field`, `examInfo`, `subjects[]`, `content?`, `updatedAt`
   - `examInfo`: `totalQuestions`, `timeLimitMinutes`, `format`, `passCriteria { averageScore, subjectMinScore(과락 없으면 null), description }`
   - `content`(선택): `organizer`, `eligibility`, `intro`, `trendSummary`, `studyTip`, `faqs[3~5]`
 - **Subject**: `id`, `name`, `questionCount`, `chapters[]`
@@ -189,14 +222,15 @@ tests/                             vitest 단위 테스트
 
 ## 7. SEO 규칙
 
-- slug 는 영문 고정, 한글 키워드는 title·H1·본문에. 페이지마다 title·description·H1 이 서로 달라야 한다 (`lib/seo.ts`).
+- slug 는 영문 고정, 한글 키워드는 title·H1·본문에. 페이지마다 title·description·H1 이 서로 달라야 한다 (`lib/seo.ts`, 문구 틀은 `messages` 의 `seo`).
+- 주소 예시는 `/ko` 기준이다. 아래 title 은 한국어 쪽이고 영어 쪽은 `messages/en.json` 의 `seo` 를 따른다.
   - 메인: "{이름} 필기 예상문제·출제경향 | 자격증달인"
   - 기출 유형: "{이름} 기출 유형 문제 무료 풀이 + 해설 | 자격증달인"
   - 단원: "{이름} {단원명} 핵심정리·예상문제 | 자격증달인"
 - `/past` 와 단원 페이지는 대표 문제(최대 10개)를 정답·해설까지 서버 렌더링한다.
 - 시험 화면·오답노트·"준비 중" 자격증 페이지는 `noindex` 이고 sitemap 에서 뺀다.
 - 화면에서 접어 둔 내용(`<details>`)도 HTML 에는 그대로 둔다. 키워드 나열·숨김 텍스트는 금지.
-- 빌드 후 `npm run check:meta` 로 title·description 중복과 noindex/sitemap 을 검사한다.
+- 빌드 후 `npm run check:meta` 로 title·description 중복, noindex/sitemap, hreflang·`<html lang>`·브랜드명을 검사한다.
 
 ## 8. 광고 자리
 

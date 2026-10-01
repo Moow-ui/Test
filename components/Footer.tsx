@@ -1,24 +1,25 @@
 import Link from "next/link";
-import { COPYRIGHT_NOTICE, SITE_NAME, SITE_TAGLINE } from "@/lib/site";
+import { brandName, getMessages, localePath, type Locale } from "@/lib/i18n";
+import { LocaleSwitch } from "./i18n/LocaleSwitch";
 
-export function Footer() {
+export function Footer({ locale }: { locale: Locale }) {
+  const m = getMessages(locale);
   return (
     <footer className="cv no-print mt-12 border-t border-line-soft bg-surface">
       <div className="mx-auto w-full max-w-5xl space-y-2 px-4 py-6 text-[0.85rem] text-ink-sub">
         <p className="font-bold text-ink">
-          {SITE_NAME} · {SITE_TAGLINE}
+          {brandName(locale)} · {m.site.tagline}
         </p>
-        <p>{COPYRIGHT_NOTICE}</p>
-        <p>
-          시험 일정·응시 자격 등 공식 정보는 시행기관(한국산업인력공단 큐넷, 대한상공회의소 자격평가사업단)에서 꼭 다시 확인하세요.
-        </p>
-        <nav aria-label="하단 메뉴" className="flex flex-wrap gap-x-4 gap-y-1 pt-1">
-          <Link href="/" className="link">
-            자격증 목록
+        <p>{m.site.notice}</p>
+        <p>{m.site.officialInfo}</p>
+        <nav aria-label={m.nav.footerMenu} className="flex flex-wrap gap-x-4 gap-y-1 pt-1">
+          <Link href={localePath(locale)} className="link">
+            {m.nav.certList}
           </Link>
-          <Link href="/notes" className="link">
-            오답노트
+          <Link href={localePath(locale, "/notes")} className="link">
+            {m.nav.notes}
           </Link>
+          <LocaleSwitch />
         </nav>
       </div>
     </footer>

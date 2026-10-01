@@ -5,7 +5,7 @@ import { hashPassword, randomToken } from "@/lib/server/password";
 
 /** 회원가입: 아이디·비밀번호·닉네임만 받는다 (이메일·전화번호 등 개인정보는 받지 않는다) */
 export async function POST(request: Request) {
-  if (!isSameOrigin(request)) return json({ error: "잘못된 요청입니다." }, 403);
+  if (!isSameOrigin(request)) return json({ error: "bad_request" }, 403);
   const db = await getDb();
   if (!db) return json({ error: DB_MISSING_MESSAGE }, 503);
 
@@ -14,7 +14,7 @@ export async function POST(request: Request) {
   const { username, password, nickname } = parsed.data;
 
   const exists = await db.prepare("SELECT id FROM users WHERE username = ?").bind(username).first();
-  if (exists) return json({ error: "이미 사용 중인 아이디입니다." }, 409);
+  if (exists) return json({ error: "username_taken" }, 409);
 
   const id = randomToken(12);
   const { hash, salt } = await hashPassword(password);

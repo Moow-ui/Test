@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { DEFAULT_QUIZ_COUNT, LEVEL_RULES, QUIZ_COUNTS } from "@/lib/quiz-engine";
+import { fmt, localePath } from "@/lib/i18n";
+import { DEFAULT_QUIZ_COUNT, QUIZ_COUNTS } from "@/lib/quiz-engine";
 import {
   STORAGE_KEYS,
   isInProgress,
@@ -11,6 +12,7 @@ import {
   type QuizSession,
 } from "@/lib/storage";
 import type { QuizLevel } from "@/lib/types";
+import { useMessages } from "@/lib/use-messages";
 import { useStored } from "@/lib/use-storage";
 
 const LEVELS: QuizLevel[] = ["basic", "intermediate", "advanced"];
@@ -38,17 +40,19 @@ export interface CertBoxesProps {
  * 난이도 박스를 누르면 바로 아래에 범위·문제 수·[시험 시작하기] 가 펼쳐진다.
  */
 export function CertBoxes({ certId, ready, subjects, counts, cbt }: CertBoxesProps) {
+  const { locale, m } = useMessages();
   const [level, setLevel] = useState<QuizLevel | null>(null);
   const [scope, setScope] = useState("all");
   const [count, setCount] = useState<number>(DEFAULT_QUIZ_COUNT);
   const session = useStored<QuizSession | null>(STORAGE_KEYS.session(certId), null);
+  const certPath = localePath(locale, `/cert/${certId}`);
 
   // 이 자격증을 "최근 공부한 자격증"으로 기록한다 (홈의 바로 풀기 버튼용)
   useEffect(() => {
     if (ready) touchRecentCert(certId);
   }, [certId, ready]);
 
-  const scopes = [{ id: "all", name: "전체" }, ...subjects];
+  const scopes = [{ id: "all", name: m.common.all }, ...subjects];
   const available = level ? (counts[level][scope] ?? 0) : 0;
   // 고른 문제 수가 보유 문제보다 많으면, 가능한 가장 큰 문제 수로 낮춘다
   const possible = QUIZ_COUNTS.filter((c) => c <= available);
@@ -75,7 +79,7 @@ export function CertBoxes({ certId, ready, subjects, counts, cbt }: CertBoxesPro
                     : `${LEVEL_STYLE[id].idle} hover:border-ink`
               }`}
             >
-              {LEVEL_RULES[id].label}
+              {m.levels[id]}
             </button>
           );
         })}
@@ -84,8 +88,8 @@ export function CertBoxes({ certId, ready, subjects, counts, cbt }: CertBoxesPro
       <div id="level-detail">
         {level && (
           <div className={`rounded-2xl border-2 bg-surface p-3 shadow-[var(--shadow)] sm:p-4 ${LEVEL_STYLE[level].border}`}>
-            <dl className="grid items-center gap-x-3 gap-y-3 sm:grid-cols-[3.5rem_1fr]">
-              <dt className="font-bold">범위</dt>
+            <dl className="grid items-center gap-x-3 gap-y-3 sm:grid-cols-[4.5rem_1fr]">
+              <dt className="font-bold">{m.cert.scope}</dt>
               <dd className="flex flex-wrap gap-2">
                 {scopes.map((s) => {
                   const active = scope === s.id;
@@ -107,7 +111,7 @@ export function CertBoxes({ certId, ready, subjects, counts, cbt }: CertBoxesPro
                 })}
               </dd>
 
-              <dt className="font-bold">문제</dt>
+              <dt className="font-bold">{m.cert.count}</dt>
               <dd className="grid grid-cols-4 gap-2">
                 {QUIZ_COUNTS.map((c) => {
                   const enough = c <= available;
@@ -127,7 +131,7 @@ export function CertBoxes({ certId, ready, subjects, counts, cbt }: CertBoxesPro
                             : "border-line-soft bg-surface-2 text-ink-sub"
                       }`}
                     >
-                      {c}문제
+                      {fmt(m.common.questions, { n: c })}
                     </button>
                   );
                 })}
@@ -136,15 +140,15 @@ export function CertBoxes({ certId, ready, subjects, counts, cbt }: CertBoxesPro
 
             {effectiveCount === null ? (
               <p className="mt-3 rounded-lg border border-bad bg-bad-soft p-3 font-bold">
-                이 범위에는 {LEVEL_RULES[level].label} 문제가 부족합니다. 범위나 난이도를 바꿔 주세요.
+                {fmt(m.cert.notEnough, { level: m.levels[level] })}
               </p>
             ) : (
               <Link
-                href={`/cert/${certId}/quiz?level=${level}&count=${effectiveCount}&subject=${scope}`}
+                href={`${certPath}/quiz?level=${level}&count=${effectiveCount}&subject=${scope}`}
                 onClick={() => setLastLevel(level)}
                 className="btn btn-primary btn-lg mt-3 w-full"
               >
-                시험 시작하기 →
+                {m.cert.start}
               </Link>
             )}
           </div>
@@ -154,25 +158,23 @@ export function CertBoxes({ certId, ready, subjects, counts, cbt }: CertBoxesPro
       {/* 실전 CBT 체험은 난이도와 별개의 칸으로 둔다 */}
       {cbt ? (
         <Link
-          href={`/cert/${certId}/cbt`}
+          href={`${certPath}/cbt`}
           className="flex min-h-20 items-center justify-between gap-3 rounded-2xl border-2 border-header bg-header px-5 text-white shadow-[var(--shadow)] hover:border-focus"
         >
-          <span className="text-xl font-extrabold sm:text-2xl">실전 CBT 체험</span>
-          <span className="font-bold">
-            {cbt.questionCount}문항 · {cbt.minutes}분 →
-          </span>
+          <span className="text-xl font-extrabold sm:text-2xl">{m.cert.cbt}</span>
+          <span className="font-bold">{fmt(m.cert.cbtInfo, { n: cbt.questionCount, min: cbt.minutes })}</span>
         </Link>
       ) : (
         <div className="flex min-h-20 items-center justify-between gap-3 rounded-2xl border-2 border-line-soft bg-surface-2 px-5 text-ink-sub">
-          <span className="text-xl font-extrabold sm:text-2xl">실전 CBT 체험</span>
-          <span className="font-bold">문제 준비 중</span>
+          <span className="text-xl font-extrabold sm:text-2xl">{m.cert.cbt}</span>
+          <span className="font-bold">{m.cert.cbtNotReady}</span>
         </div>
       )}
 
       {/* 풀던 문제가 남아 있을 때만 보인다 */}
       {isInProgress(session) && (
-        <Link href={`/cert/${certId}/quiz`} className="btn w-full">
-          이어서 풀기 ({session.currentIndex + 1}/{session.questionIds.length}) →
+        <Link href={`${certPath}/quiz`} className="btn w-full">
+          {fmt(m.cert.resume, { current: session.currentIndex + 1, total: session.questionIds.length })}
         </Link>
       )}
     </div>

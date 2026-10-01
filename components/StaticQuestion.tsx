@@ -2,6 +2,7 @@ import { Markdown } from "@/components/Markdown";
 import { Stars } from "@/components/Stars";
 import { QuestionBadges } from "@/components/quiz/QuestionBadges";
 import { circled } from "@/lib/format";
+import { fmt, getMessages, type Locale } from "@/lib/i18n";
 import { calcStars } from "@/lib/scoring";
 import type { Question } from "@/lib/types";
 
@@ -12,27 +13,32 @@ import type { Question } from "@/lib/types";
  * 정답과 해설은 접어 두지만(details) 페이지 소스에는 그대로 들어 있다.
  */
 export function StaticQuestion({
+  locale,
   question,
   number,
   location,
   chapterImportance,
 }: {
+  locale: Locale;
   question: Question;
   number: number;
   location: string;
   chapterImportance: number;
 }) {
+  const m = getMessages(locale);
   return (
     <article className="cv card p-3 sm:p-4">
       <div className="flex flex-wrap items-center gap-1.5">
-        <QuestionBadges question={question} />
+        <QuestionBadges
+          question={{ source: question.source, pastInfo: question.pastInfo, reviewStatus: question.reviewStatus }}
+        />
         <span className="text-[0.85rem] font-bold text-ink-sub">{location}</span>
         <span className="text-[0.85rem]">
           <Stars value={calcStars(chapterImportance, question.frequency)} />
         </span>
       </div>
       <h3 className="mt-2 whitespace-pre-wrap text-lg font-bold leading-normal">
-        문제 {number}. {question.stem}
+        {fmt(m.question.numbered, { n: number })} {question.stem}
       </h3>
       <ol className="mt-2 space-y-1.5 text-lg">
         {question.choices.map((choice, i) => (
@@ -43,15 +49,15 @@ export function StaticQuestion({
       </ol>
       <details className="mt-3 rounded-lg border-2 border-line">
         <summary className="flex min-h-12 items-center px-3 font-bold text-accent">
-          <span className="when-closed">▼ 정답과 해설 보기</span>
-          <span className="when-open">▲ 정답과 해설 접기</span>
+          <span className="when-closed">{m.question.showAnswer}</span>
+          <span className="when-open">{m.question.hideAnswer}</span>
         </summary>
         <div className="space-y-2 border-t border-line-soft p-3">
           <p className="text-lg font-extrabold">
-            정답: {circled(question.answer)} {question.choices[question.answer - 1]}
+            {m.question.answerIs} {circled(question.answer)} {question.choices[question.answer - 1]}
           </p>
           <p>
-            <span className="font-bold">핵심:</span> {question.oneLineConcept}
+            <span className="font-bold">{m.common.keyConcept}</span> {question.oneLineConcept}
           </p>
           <Markdown text={question.explanation} />
         </div>

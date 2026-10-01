@@ -8,6 +8,8 @@ import {
   removeReport,
   type ReportEntry,
 } from "@/lib/storage";
+import { fmt } from "@/lib/i18n";
+import { useMessages } from "@/lib/use-messages";
 import { useHydrated, useStored } from "@/lib/use-storage";
 
 function formatTime(at: number): string {
@@ -19,42 +21,43 @@ function formatTime(at: number): string {
 /** 문제 오류 신고 목록 (MVP: 이 기기의 localStorage 에 쌓인 신고만 보인다) */
 export function ReportsView({ certNames }: { certNames: Record<string, string> }) {
   const hydrated = useHydrated();
+  const { m: all } = useMessages();
+  const m = all.admin;
+  const reasons: Record<string, string> = all.report.reasons;
   const reports = useStored<ReportEntry[]>(STORAGE_KEYS.reports, EMPTY_REPORTS);
   const [copied, setCopied] = useState(false);
   const [confirmClear, setConfirmClear] = useState(false);
 
-  if (!hydrated) return <p className="card p-4 font-bold">신고 목록을 불러오고 있습니다…</p>;
+  if (!hydrated) return <p className="card p-4 font-bold">{m.loading}</p>;
 
   const json = JSON.stringify(reports, null, 2);
 
   return (
     <div className="space-y-4">
-      <p className="rounded-lg border border-warn bg-warn-soft p-3 text-[0.95rem]">
-        지금은 로그인·서버 저장이 없어서 <strong>이 기기(브라우저)에서 접수된 신고만</strong> 보입니다.
-        다른 사용자의 신고를 모으려면 나중에 Supabase 같은 서버 저장소로 옮겨야 합니다.
-      </p>
+      <p className="rounded-lg border border-warn bg-warn-soft p-3 text-[0.95rem] font-bold">{m.localOnly}</p>
 
-      <p className="font-bold">신고 {reports.length}건</p>
+      <p className="font-bold">{fmt(m.count, { n: reports.length })}</p>
 
       {reports.length === 0 ? (
-        <p className="card p-4">접수된 신고가 없습니다.</p>
+        <p className="card p-4">{m.none}</p>
       ) : (
         <>
           <ul className="space-y-2">
             {reports.map((r) => (
               <li key={r.id} className="card space-y-1 p-3">
                 <p className="text-[0.85rem] font-bold text-ink-sub">
-                  {formatTime(r.at)} · {certNames[r.certId] ?? r.certId} · 문제 id: {r.questionId}
+                  {formatTime(r.at)} · {certNames[r.certId] ?? r.certId} · {fmt(m.questionId, { id: r.questionId })}
                 </p>
-                <p className="font-bold">{r.reason}</p>
-                <p className="text-[0.95rem]">문제: {r.stem}…</p>
-                {r.memo && <p className="text-[0.95rem]">메모: {r.memo}</p>}
+                {/* 예전 기록에는 이유가 문장으로 들어 있으므로, 코드가 아니면 그대로 보여 준다 */}
+                <p className="font-bold">{reasons[r.reason] ?? r.reason}</p>
+                <p className="text-[0.95rem]">{fmt(m.question, { stem: r.stem })}</p>
+                {r.memo && <p className="text-[0.95rem]">{fmt(m.memo, { memo: r.memo })}</p>}
                 <button
                   type="button"
                   className="btn min-h-11 px-3 py-1 text-[0.9rem]"
                   onClick={() => removeReport(r.id)}
                 >
-                  처리 완료 (목록에서 지우기)
+                  {m.done}
                 </button>
               </li>
             ))}
@@ -62,7 +65,7 @@ export function ReportsView({ certNames }: { certNames: Record<string, string> }
 
           <div className="card space-y-2 p-3">
             <label htmlFor="report-json" className="block font-bold">
-              전체 신고 내용 (JSON)
+              {m.json}
             </label>
             <textarea
               id="report-json"
@@ -84,7 +87,7 @@ export function ReportsView({ certNames }: { certNames: Record<string, string> }
                   }
                 }}
               >
-                {copied ? "✔ 복사했습니다" : "JSON 복사하기"}
+                {copied ? m.copied : m.copy}
               </button>
               {confirmClear ? (
                 <>
@@ -96,15 +99,15 @@ export function ReportsView({ certNames }: { certNames: Record<string, string> }
                       setConfirmClear(false);
                     }}
                   >
-                    네, 모두 지웁니다
+                    {m.yesClear}
                   </button>
                   <button type="button" className="btn btn-primary" onClick={() => setConfirmClear(false)}>
-                    아니요
+                    {all.common.no}
                   </button>
                 </>
               ) : (
                 <button type="button" className="btn" onClick={() => setConfirmClear(true)}>
-                  신고 모두 지우기
+                  {m.clear}
                 </button>
               )}
             </div>

@@ -55,7 +55,7 @@ async function request(url: string, init?: RequestInit): Promise<{ ok: boolean; 
     const body = (await response.json().catch(() => ({}))) as Record<string, unknown>;
     return { ok: response.ok, body };
   } catch {
-    return { ok: false, body: { error: "서버에 연결할 수 없습니다. 잠시 후 다시 시도해 주세요." } };
+    return { ok: false, body: { error: "network" } };
   }
 }
 
@@ -70,12 +70,13 @@ export async function refreshAuth(): Promise<void> {
   setState({ status: user ? "user" : "guest", user, available: body.available !== false });
 }
 
+/** 성공하면 null, 실패하면 오류 코드 (화면 문구는 messages 의 "errors") */
 export async function login(username: string, password: string): Promise<string | null> {
   const { ok, body } = await request("/api/auth/login", {
     method: "POST",
     body: JSON.stringify({ username, password }),
   });
-  if (!ok) return String(body.error ?? "로그인하지 못했습니다.");
+  if (!ok) return String(body.error ?? "unknown");
   mergeOnNextPull = true;
   setState({ status: "user", user: body.user as AuthUser, available: true });
   return null;
@@ -86,7 +87,7 @@ export async function signup(username: string, password: string, nickname: strin
     method: "POST",
     body: JSON.stringify({ username, password, nickname }),
   });
-  if (!ok) return String(body.error ?? "가입하지 못했습니다.");
+  if (!ok) return String(body.error ?? "unknown");
   mergeOnNextPull = true;
   setState({ status: "user", user: body.user as AuthUser, available: true });
   return null;
@@ -100,10 +101,10 @@ export async function logout(): Promise<void> {
   setState({ status: "guest", user: null, available: true });
 }
 
-/** 회원 탈퇴. 성공하면 null, 실패하면 오류 문구 */
+/** 회원 탈퇴. 성공하면 null, 실패하면 오류 코드 */
 export async function deleteAccount(): Promise<string | null> {
   const { ok, body } = await request("/api/auth/me", { method: "DELETE" });
-  if (!ok) return String(body.error ?? "탈퇴하지 못했습니다.");
+  if (!ok) return String(body.error ?? "unknown");
   clearSyncData();
   lastSynced = "";
   setState({ status: "guest", user: null, available: true });

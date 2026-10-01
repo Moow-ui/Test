@@ -7,9 +7,9 @@ const MAX_VALUE_LENGTH = 400_000;
 
 async function requireUser() {
   const db = await getDb();
-  if (!db) return { error: json({ error: "로그인 서버에 연결할 수 없습니다." }, 503) } as const;
+  if (!db) return { error: json({ error: "db_missing" }, 503) } as const;
   const user = await getSessionUser(db);
-  if (!user) return { error: json({ error: "로그인이 필요합니다." }, 401) } as const;
+  if (!user) return { error: json({ error: "login_required" }, 401) } as const;
   return { db, user } as const;
 }
 
@@ -36,12 +36,12 @@ export async function GET() {
 
 /** 내 기록 저장하기 */
 export async function PUT(request: Request) {
-  if (!isSameOrigin(request)) return json({ error: "잘못된 요청입니다." }, 403);
+  if (!isSameOrigin(request)) return json({ error: "bad_request" }, 403);
   const auth = await requireUser();
   if ("error" in auth) return auth.error;
 
   const body = (await request.json().catch(() => null)) as { data?: Record<string, unknown> } | null;
-  if (!body?.data || typeof body.data !== "object") return json({ error: "잘못된 요청입니다." }, 400);
+  if (!body?.data || typeof body.data !== "object") return json({ error: "bad_request" }, 400);
 
   const now = Date.now();
   const statements = [];
@@ -49,7 +49,7 @@ export async function PUT(request: Request) {
     const value = body.data[key];
     if (value === undefined || value === null || typeof value !== "object") continue;
     const text = JSON.stringify(value);
-    if (text.length > MAX_VALUE_LENGTH) return json({ error: "저장할 기록이 너무 많습니다." }, 413);
+    if (text.length > MAX_VALUE_LENGTH) return json({ error: "too_large" }, 413);
     statements.push(
       auth.db
         .prepare(

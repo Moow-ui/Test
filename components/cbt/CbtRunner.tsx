@@ -5,7 +5,9 @@ import { useEffect, useEffectEvent, useState } from "react";
 import { ExamScreen } from "@/components/exam/ExamScreen";
 import type { QuizCert } from "@/components/quiz/QuizRunner";
 import { ResultView } from "@/components/quiz/ResultView";
+import { FoldMark } from "@/components/Fold";
 import { formatClock } from "@/lib/format";
+import { fmt, localePath } from "@/lib/i18n";
 import { buildMockExam, mockExamSeconds } from "@/lib/quiz-engine";
 import {
   STORAGE_KEYS,
@@ -21,6 +23,7 @@ import {
   type CbtSession,
 } from "@/lib/storage";
 import type { Question } from "@/lib/types";
+import { useMessages } from "@/lib/use-messages";
 import { useHydrated, useStored } from "@/lib/use-storage";
 
 const NO_REVEAL: Record<string, boolean> = {};
@@ -37,6 +40,9 @@ function Pad({ children }: { children: React.ReactNode }) {
  */
 export function CbtRunner({ cert, questions }: { cert: QuizCert; questions: Question[] }) {
   const hydrated = useHydrated();
+  const { locale, m: all } = useMessages();
+  const m = all.cbt;
+  const certPath = localePath(locale, `/cert/${cert.id}`);
   const session = useStored<CbtSession | null>(STORAGE_KEYS.cbt(cert.id), null);
   // 안내 화면에서 "시작/이어서 풀기"를 눌러야 시계가 가기 시작한다
   const [running, setRunning] = useState(false);
@@ -62,7 +68,7 @@ export function CbtRunner({ cert, questions }: { cert: QuizCert; questions: Ques
     if (asked.length > 0) {
       addResult({
         certId: cert.id,
-        label: "실전 CBT 체험",
+        label: m.title,
         kind: "cbt",
         total: asked.length,
         correct: asked.length - wrongIds.length,
@@ -103,7 +109,7 @@ export function CbtRunner({ cert, questions }: { cert: QuizCert; questions: Ques
   if (!hydrated) {
     return (
       <Pad>
-        <p className="card p-5 text-lg font-bold">시험을 준비하고 있습니다…</p>
+        <p className="card p-5 text-lg font-bold">{m.preparing}</p>
       </Pad>
     );
   }
@@ -114,12 +120,12 @@ export function CbtRunner({ cert, questions }: { cert: QuizCert; questions: Ques
       <Pad>
         <ResultView
           cert={cert}
-          label="실전 CBT 체험"
+          label={m.title}
           answers={session.answers}
           questions={examQuestions}
           againAction={
             <button type="button" className="btn btn-lg" onClick={() => clearCbt(cert.id)}>
-              실전 CBT 다시 보기 →
+              {m.again}
             </button>
           }
         />
@@ -132,14 +138,14 @@ export function CbtRunner({ cert, questions }: { cert: QuizCert; questions: Ques
     return (
       <ExamScreen
         certName={cert.name}
-        modeLabel="실전 CBT 체험"
-        exitHref={`/cert/${cert.id}`}
+        modeLabel={m.title}
+        exitHref={certPath}
         questions={examQuestions}
         index={Math.min(session.currentIndex, total - 1)}
         answers={session.answers}
         revealed={NO_REVEAL}
         timer={{ remainingSec: session.remainingSec, totalSec: session.totalSec }}
-        submitLabel="답안 제출"
+        submitKind="submit"
         onSelect={(q, choice) => saveCbt({ ...session, answers: { ...session.answers, [q.id]: choice } })}
         onGoTo={(i) => saveCbt({ ...session, currentIndex: i })}
         onSubmit={() => submit(session)}
@@ -159,58 +165,55 @@ export function CbtRunner({ cert, questions }: { cert: QuizCert; questions: Ques
       <div className="mx-auto max-w-3xl space-y-5">
         <header>
           <p className="text-[0.9rem] font-bold text-ink-sub">{cert.name}</p>
-          <h1 className="text-2xl font-extrabold">실전 CBT 체험</h1>
+          <h1 className="text-2xl font-extrabold">{m.title}</h1>
         </header>
 
-        <dl className="card grid gap-x-4 gap-y-1 p-4 sm:grid-cols-[6rem_1fr]">
-          <dt className="font-bold text-ink-sub">문항 수</dt>
-          <dd className="font-bold">{plannedCount}문항</dd>
-          <dt className="font-bold text-ink-sub">제한 시간</dt>
-          <dd className="font-bold">{plannedMinutes}분</dd>
-          <dt className="font-bold text-ink-sub">합격 기준</dt>
+        <dl className="card grid gap-x-4 gap-y-1 p-4 sm:grid-cols-[7rem_1fr]">
+          <dt className="font-bold text-ink-sub">{m.count}</dt>
+          <dd className="font-bold">{fmt(m.countValue, { n: plannedCount })}</dd>
+          <dt className="font-bold text-ink-sub">{m.time}</dt>
+          <dd className="font-bold">{fmt(m.timeValue, { min: plannedMinutes })}</dd>
+          <dt className="font-bold text-ink-sub">{m.pass}</dt>
           <dd>{cert.examInfo.passCriteria.description}</dd>
         </dl>
 
         {inProgress && session ? (
           <div className="rounded-xl border-2 border-primary bg-primary-soft p-4">
             <p className="font-bold">
-              풀던 시험이 있습니다. 푼 문제 {answered} / {total} · 남은 시간 {formatClock(session.remainingSec)}
+              {fmt(m.inProgress, { answered, total, time: formatClock(session.remainingSec) })}
             </p>
             <div className="mt-3 flex flex-col gap-2 sm:flex-row">
               <button type="button" className="btn btn-primary btn-lg" onClick={() => setRunning(true)}>
-                이어서 풀기 →
+                {m.resume}
               </button>
               <button type="button" className="btn btn-lg" onClick={startNew}>
-                처음부터 새로 시작
+                {m.restart}
               </button>
             </div>
           </div>
         ) : (
           <button type="button" className="btn btn-primary btn-lg w-full" onClick={startNew}>
-            시험 시작하기 →
+            {m.start}
           </button>
         )}
 
         <details className="card">
           <summary className="flex min-h-14 items-center justify-between px-4 font-bold">
-            화면 사용법
+            {m.howTo}
             <span className="text-[0.85rem] text-accent">
-              <span className="when-closed">▼ 보기</span>
-              <span className="when-open">▲ 접기</span>
+              <FoldMark />
             </span>
           </summary>
           <ol className="list-decimal space-y-1 border-t border-line-soft p-4 pl-9 text-[0.95rem]">
-            <li>문제를 읽고 보기 ①~④ 중 하나를 누릅니다. 다시 누르면 답을 바꿀 수 있습니다.</li>
-            <li>답안 표기란에서 내가 고른 답을 한눈에 보고, 문제 번호를 눌러 그 문제로 갈 수 있습니다.</li>
-            <li>&lsquo;안 푼 문제&rsquo;를 누르면 아직 답을 고르지 않은 문제 번호가 나옵니다.</li>
-            <li>다 풀었으면 &lsquo;답안 제출&rsquo;을 누릅니다. 시간이 다 되면 자동으로 제출됩니다.</li>
-            <li>풀이 중에는 정답을 알려 주지 않습니다. 창을 닫으면 시간이 멈추고 다시 들어오면 이어집니다.</li>
+            {m.steps.map((step) => (
+              <li key={step}>{step}</li>
+            ))}
           </ol>
         </details>
 
         <p>
-          <Link href={`/cert/${cert.id}`} className="link">
-            ← {cert.name} 화면으로 돌아가기
+          <Link href={certPath} className="link">
+            {fmt(m.back, { name: cert.name })}
           </Link>
         </p>
       </div>

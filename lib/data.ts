@@ -4,7 +4,7 @@ import { z } from "zod";
 import { DATA_DIR, certDetailFile, listQuestionFiles, readJsonFile } from "./data-files";
 import { isWithinPastWindow } from "./past";
 import { certDetailSchema, certSummarySchema, questionSchema } from "./schemas";
-import type { CertDetail, CertListItem, CertSummary, Certification, Question } from "./types";
+import type { CertDetail, CertListItem, CertSummary, Certification, Country, Question } from "./types";
 
 /**
  * 데이터 접근 계층 (서버 전용).
@@ -59,9 +59,11 @@ function isReady(id: string): boolean {
   return loadDetail(id) !== null && loadQuestions(id).length > 0;
 }
 
-/** 자격증 목록 (노출 우선순위 순) */
-export async function getCertList(): Promise<CertListItem[]> {
-  return loadSummaries().map((s) => ({ ...s, ready: isReady(s.id) }));
+/** 자격증 목록 (노출 우선순위 순). country 를 넘기면 그 나라 자격증만 */
+export async function getCertList(country?: Country): Promise<CertListItem[]> {
+  return loadSummaries()
+    .filter((s) => !country || s.country === country)
+    .map((s) => ({ ...s, ready: isReady(s.id) }));
 }
 
 /** 자격증 한 건 (없으면 null) */
@@ -79,10 +81,17 @@ export async function getCertification(id: string): Promise<Certification | null
   };
 }
 
-/** 풀이가 가능한(문제가 준비된) 자격증만 */
-export async function getReadyCertifications(): Promise<Certification[]> {
+/** 그 나라의 자격증 한 건. 다른 나라 자격증이면 null (/en 에서 한국 자격증 주소를 열 수 없게) */
+export async function getCertificationIn(country: Country, id: string): Promise<Certification | null> {
+  const cert = await getCertification(id);
+  return cert && cert.country === country ? cert : null;
+}
+
+/** 풀이가 가능한(문제가 준비된) 자격증만. country 를 넘기면 그 나라 자격증만 */
+export async function getReadyCertifications(country?: Country): Promise<Certification[]> {
   const result: Certification[] = [];
   for (const s of loadSummaries()) {
+    if (country && s.country !== country) continue;
     const cert = await getCertification(s.id);
     if (cert?.ready) result.push(cert);
   }

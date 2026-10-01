@@ -4,9 +4,11 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import type { ReactNode } from "react";
 import { AdSlot } from "@/components/AdSlot";
+import { FoldMark } from "@/components/Fold";
 import { Markdown } from "@/components/Markdown";
 import { circled, formatScore } from "@/lib/format";
 import { gradeQuiz, summarize } from "@/lib/grading";
+import { fmt, localePath } from "@/lib/i18n";
 import {
   EMPTY_NOTES,
   STORAGE_KEYS,
@@ -15,6 +17,7 @@ import {
   type NoteEntry,
 } from "@/lib/storage";
 import type { Question } from "@/lib/types";
+import { useMessages } from "@/lib/use-messages";
 import { useStored } from "@/lib/use-storage";
 import type { QuizCert } from "./QuizRunner";
 
@@ -39,6 +42,9 @@ export function ResultView({
   againAction: ReactNode;
 }) {
   const router = useRouter();
+  const { locale, m: all } = useMessages();
+  const m = all.result;
+  const certPath = localePath(locale, `/cert/${cert.id}`);
   const notes = useStored<NoteEntry[]>(STORAGE_KEYS.notes, EMPTY_NOTES);
 
   const graded = gradeQuiz(questions, answers);
@@ -52,13 +58,13 @@ export function ResultView({
     startSession({
       certId: cert.id,
       mode: "retry",
-      label: "틀린 문제 다시 풀기",
+      label: m.retryLabel,
       level: null,
       subjectId: null,
       questionIds: wrong.map((w) => w.questionId),
     });
     window.scrollTo(0, 0);
-    router.push(`/cert/${cert.id}/quiz`);
+    router.push(`${certPath}/quiz`);
   };
 
   const saveNotes = () => {
@@ -71,14 +77,12 @@ export function ResultView({
         <p className="text-[0.9rem] font-bold text-ink-sub">
           {cert.name} · {label}
         </p>
-        <h1 className="text-2xl font-extrabold">풀이 결과</h1>
+        <h1 className="text-2xl font-extrabold">{m.title}</h1>
       </header>
 
-      <section aria-label="점수" className="card p-4 sm:p-5">
-        <p className="text-lg">
-          {summary.total}문제 중 <strong className="text-2xl">{summary.correct}문제</strong> 정답
-        </p>
-        <p className="mt-1 text-4xl font-extrabold">{formatScore(summary.score)}점</p>
+      <section aria-label={m.scoreLabel} className="card p-4 sm:p-5">
+        <p className="text-lg font-bold">{fmt(m.correctOf, { total: summary.total, correct: summary.correct })}</p>
+        <p className="mt-1 text-4xl font-extrabold">{fmt(m.score, { n: formatScore(summary.score) })}</p>
 
         {verdict && (
           <div
@@ -87,31 +91,28 @@ export function ResultView({
             }`}
           >
             <p className="text-lg font-extrabold">
-              실제 합격 기준으로 보면:{" "}
-              <span className={verdict.passed ? "text-ok" : "text-bad"}>
-                {verdict.passed ? "합격선 통과 ✔" : "합격선 미달 ✘"}
-              </span>
+              {m.verdict}{" "}
+              <span className={verdict.passed ? "text-ok" : "text-bad"}>{verdict.passed ? m.pass : m.fail}</span>
             </p>
-            <p className="mt-1 text-[0.95rem]">합격 기준: {criteria.description}</p>
+            <p className="mt-1 text-[0.95rem]">{fmt(m.criteria, { text: criteria.description })}</p>
             {verdict.failedSubjects.length > 0 && (
               <p className="mt-1 text-[0.95rem] font-bold">
-                과락 과목: {verdict.failedSubjects.map((s) => `${s.name}(${formatScore(s.score)}점)`).join(", ")}
-                {" — "}과목별 {verdict.subjectMinScore}점 미만이면 평균이 높아도 불합격입니다.
+                {fmt(m.failedSubjects, {
+                  list: verdict.failedSubjects
+                    .map((s) => fmt(m.failedItem, { name: s.name, score: formatScore(s.score) }))
+                    .join(all.common.listSeparator),
+                  min: verdict.subjectMinScore ?? 0,
+                })}
               </p>
             )}
-            {summary.total < RELIABLE_QUESTION_COUNT && (
-              <p className="mt-1 text-[0.9rem]">
-                ※ 문항 수가 적어 참고용입니다. 실전 CBT 체험 모드로 전체 문항을 풀면 더 정확하게 알
-                수 있습니다.
-              </p>
-            )}
+            {summary.total < RELIABLE_QUESTION_COUNT && <p className="mt-1 text-[0.9rem]">{m.fewQuestions}</p>}
           </div>
         )}
       </section>
 
       <section aria-labelledby="by-subject-title">
         <h2 id="by-subject-title" className="text-xl font-extrabold">
-          과목별 정답률
+          {m.bySubject}
         </h2>
         <ul className="mt-2 space-y-2">
           {summary.bySubject.map((s) => {
@@ -121,13 +122,13 @@ export function ResultView({
                 <div className="flex flex-wrap items-baseline justify-between gap-2">
                   <span className="font-bold">{s.name}</span>
                   <span className="font-bold">
-                    {s.correct} / {s.total}문제 · {formatScore(s.score)}%
-                    {failed && <span className="ml-2 text-bad">과락</span>}
+                    {fmt(m.subjectScore, { correct: s.correct, total: s.total, score: formatScore(s.score) })}
+                    {failed && <span className="ml-2 text-bad">{m.failedTag}</span>}
                   </span>
                 </div>
                 <div
                   role="img"
-                  aria-label={`${s.name} 정답률 ${formatScore(s.score)}%`}
+                  aria-label={fmt(m.subjectAria, { name: s.name, score: formatScore(s.score) })}
                   className="mt-1.5 h-4 overflow-hidden rounded border border-line bg-surface-2"
                 >
                   <div className="h-full bg-primary" style={{ width: `${s.score}%` }} />
@@ -141,8 +142,8 @@ export function ResultView({
       {wrong.length > 0 && (
         <section aria-labelledby="concepts-title" className="rounded-xl border-2 border-primary bg-primary-soft p-4">
           <h2 id="concepts-title" className="text-xl font-extrabold">
-            틀린 핵심 개념
-            <span className="ml-2 text-[0.95rem] font-bold">다음번엔 이것만 더 기억하세요</span>
+            {m.concepts}
+            <span className="ml-2 text-[0.95rem] font-bold">{m.conceptsHint}</span>
           </h2>
           <ol className="mt-2 list-decimal space-y-1.5 pl-6">
             {questions
@@ -158,10 +159,10 @@ export function ResultView({
 
       <section aria-labelledby="weak-title">
         <h2 id="weak-title" className="text-xl font-extrabold">
-          약한 단원 (정답률 낮은 순)
+          {m.weak}
         </h2>
         {summary.weakChapters.length === 0 ? (
-          <p className="card mt-2 p-3 font-bold">틀린 문제가 없습니다. 훌륭합니다!</p>
+          <p className="card mt-2 p-3 font-bold">{m.noWrong}</p>
         ) : (
           <ol className="mt-2 space-y-2">
             {summary.weakChapters.map((c, i) => (
@@ -169,11 +170,11 @@ export function ResultView({
                 <span>
                   <span className="font-extrabold">{i + 1}. {c.name}</span>
                   <span className="ml-2 text-[0.9rem] font-bold text-ink-sub">
-                    {c.total}문제 중 {c.correct}문제 정답 ({formatScore(c.score)}%)
+                    {fmt(m.chapterScore, { total: c.total, correct: c.correct, score: formatScore(c.score) })}
                   </span>
                 </span>
-                <Link href={`/cert/${cert.id}/${c.id}`} className="link">
-                  핵심정리 보기 →
+                <Link href={`${certPath}/${c.id}`} className="link">
+                  {m.viewSummary}
                 </Link>
               </li>
             ))}
@@ -181,32 +182,32 @@ export function ResultView({
         )}
       </section>
 
-      <section aria-label="다음에 할 일" className="grid gap-2 sm:grid-cols-2">
+      <section aria-label={m.next} className="grid gap-2 sm:grid-cols-2">
         {wrong.length > 0 && (
           <>
             <button type="button" className="btn btn-primary btn-lg" onClick={retryWrong}>
-              틀린 문제 {wrong.length}개 다시 풀기 →
+              {fmt(m.retryWrong, { n: wrong.length })}
             </button>
             {allSaved ? (
-              <Link href={`/cert/${cert.id}/notes`} className="btn btn-lg">
-                ✔ 오답노트에 저장됨 · 오답노트 보기
+              <Link href={`${certPath}/notes`} className="btn btn-lg">
+                {m.saved}
               </Link>
             ) : (
               <button type="button" className="btn btn-lg" onClick={saveNotes}>
-                틀린 문제 {wrong.length}개 오답노트에 저장
+                {fmt(m.save, { n: wrong.length })}
               </button>
             )}
           </>
         )}
         {againAction}
-        <Link href={`/cert/${cert.id}`} className="btn btn-lg">
-          {cert.name} 페이지로 가기
+        <Link href={certPath} className="btn btn-lg">
+          {fmt(m.toCert, { name: cert.name })}
         </Link>
       </section>
 
       <section aria-labelledby="review-title" className="cv">
         <h2 id="review-title" className="text-xl font-extrabold">
-          문제별 결과
+          {m.review}
         </h2>
         <ol className="mt-2 space-y-2">
           {questions.map((q, i) => {
@@ -216,14 +217,13 @@ export function ResultView({
                 <details className="card">
                   <summary className="flex min-h-14 items-center gap-2 p-3">
                     <span className={`shrink-0 font-extrabold ${g.correct ? "text-ok" : "text-bad"}`}>
-                      {g.correct ? "✔ 정답" : "✘ 오답"}
+                      {g.correct ? m.ok : m.ng}
                     </span>
                     <span className="flex-1 whitespace-pre-wrap font-bold">
                       {i + 1}. {q.stem}
                     </span>
                     <span className="shrink-0 text-[0.9rem] font-bold text-accent">
-                      <span className="when-closed">▼ 보기</span>
-                      <span className="when-open">▲ 접기</span>
+                      <FoldMark />
                     </span>
                   </summary>
                   <div className="space-y-2 border-t border-line-soft p-3">
@@ -231,15 +231,15 @@ export function ResultView({
                       {q.choices.map((choice, ci) => (
                         <li key={ci} className={ci + 1 === q.answer ? "font-bold" : ""}>
                           {circled(ci + 1)} {choice}
-                          {ci + 1 === q.answer && <span className="ml-2 text-ok">← 정답</span>}
+                          {ci + 1 === q.answer && <span className="ml-2 text-ok">{m.answerMark}</span>}
                           {ci + 1 === g.chosen && ci + 1 !== q.answer && (
-                            <span className="ml-2 font-bold text-bad">← 내가 고른 답</span>
+                            <span className="ml-2 font-bold text-bad">{m.myChoiceMark}</span>
                           )}
                         </li>
                       ))}
                     </ol>
                     <p>
-                      <span className="font-bold">핵심:</span> {q.oneLineConcept}
+                      <span className="font-bold">{all.common.keyConcept}</span> {q.oneLineConcept}
                     </p>
                     <div className="rounded-lg border border-line-soft p-3">
                       <Markdown text={q.explanation} />

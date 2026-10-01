@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { sitemapPaths } from "@/lib/sitemap";
 import { SITE_URL, absoluteUrl } from "@/lib/site";
 
 /**
@@ -10,7 +11,8 @@ import { SITE_URL, absoluteUrl } from "@/lib/site";
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: [{ userAgent: "*", allow: "/" }],
-    sitemap: absoluteUrl("/sitemap.xml"),
+    // 언어별 sitemap 을 모두 적는다
+    sitemap: sitemapPaths().map(absoluteUrl),
     host: SITE_URL,
   };
 }

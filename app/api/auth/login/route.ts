@@ -3,7 +3,7 @@ import { DB_MISSING_MESSAGE, createSession, isSameOrigin, json } from "@/lib/ser
 import { getDb } from "@/lib/server/db";
 import { hashPassword, verifyPassword } from "@/lib/server/password";
 
-const WRONG = "아이디 또는 비밀번호가 올바르지 않습니다.";
+const WRONG = "wrong_credentials";
 
 interface UserRow {
   id: string;
@@ -14,7 +14,7 @@ interface UserRow {
 }
 
 export async function POST(request: Request) {
-  if (!isSameOrigin(request)) return json({ error: "잘못된 요청입니다." }, 403);
+  if (!isSameOrigin(request)) return json({ error: "bad_request" }, 403);
   const db = await getDb();
   if (!db) return json({ error: DB_MISSING_MESSAGE }, 503);
 
@@ -29,7 +29,7 @@ export async function POST(request: Request) {
     .bind(username)
     .first<{ fails: number; lockedUntil: number }>();
   if (attempt && attempt.lockedUntil > now) {
-    return json({ error: `비밀번호를 여러 번 틀렸습니다. ${LOCK_MINUTES}분 뒤에 다시 시도해 주세요.` }, 429);
+    return json({ error: "locked" }, 429);
   }
 
   const user = await db

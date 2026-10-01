@@ -13,7 +13,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { z } from "zod";
 import { DATA_DIR, certDetailFile, listQuestionFiles, readJsonFile, shortPath } from "../lib/data-files";
-import { LEVEL_LABEL } from "../lib/format";
+const LEVEL_LABEL = { basic: "초급", intermediate: "중급", advanced: "고급" } as const;
 import { PAST_WINDOW_YEARS, isWithinPastWindow, oldestPastYear } from "../lib/past";
 import { LEVELS, certDetailSchema, certSummarySchema, questionSchema } from "../lib/schemas";
 import type { Question } from "../lib/types";

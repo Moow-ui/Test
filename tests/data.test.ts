@@ -31,7 +31,7 @@ const READY_IDS = [
 describe("자격증 목록", () => {
   it("33종이 있고 id·관련 자격증 참조에 오류가 없다", async () => {
     const list = await getCertList();
-    expect(list).toHaveLength(33);
+    expect(list.filter((c) => c.country === "KR")).toHaveLength(33);
     expect(checkCertList(list)).toEqual([]);
   });
 

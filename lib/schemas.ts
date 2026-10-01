@@ -6,7 +6,33 @@ import { z } from "zod";
  * 타입은 lib/types.ts에서 z.infer로 뽑아 쓴다.
  */
 
-export const GRADES = ["기능사", "산업기사", "기사", "기능장", "기술사", "1급", "2급"] as const;
+/** 한국 자격증의 등급 + 미국 자격증의 종류(Certification, License) */
+export const GRADES = [
+  "기능사",
+  "산업기사",
+  "기사",
+  "기능장",
+  "기술사",
+  "1급",
+  "2급",
+  "Certification",
+  "License",
+] as const;
+/** 등급별 칭호 모양 (프로필의 보유 자격증 배지. 색은 components/profile/OwnedCerts.tsx) */
+export type GradeTier = "bronze" | "silver" | "gold" | "purple" | "mint" | "teal" | "crimson";
+export const GRADE_TIER: Record<(typeof GRADES)[number], GradeTier> = {
+  기능사: "bronze",
+  산업기사: "silver",
+  기사: "gold",
+  기능장: "purple",
+  기술사: "crimson",
+  "2급": "mint",
+  "1급": "teal",
+  Certification: "teal",
+  License: "gold",
+};
+/** 자격증의 나라. KR 은 /ko, US 는 /en 에만 노출한다 (lib/i18n.ts 의 localeCountry) */
+export const COUNTRIES = ["KR", "US"] as const;
 export const LEVELS = ["basic", "intermediate", "advanced"] as const;
 export const SOURCES = ["past", "predicted"] as const;
 export const REVIEW_STATUSES = ["verified", "unverified"] as const;
@@ -89,6 +115,7 @@ export const certContentSchema = z.object({
 export const certSummarySchema = z.object({
   /** URL에 쓰는 영문 slug (예: forklift-operator). 한번 정하면 바꾸지 않는다 */
   id: slugSchema,
+  country: z.enum(COUNTRIES),
   name: z.string().min(1),
   /** 공식 명칭 (붙여쓰기) */
   officialName: z.string().min(1),

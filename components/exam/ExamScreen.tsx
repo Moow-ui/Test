@@ -6,9 +6,11 @@ import { Markdown } from "@/components/Markdown";
 import { ReportForm } from "@/components/quiz/ReportForm";
 import { Stars } from "@/components/Stars";
 import { circled, formatClock, sourceLabel } from "@/lib/format";
+import { fmt } from "@/lib/i18n";
 import { calcStars, getPassContribution } from "@/lib/scoring";
 import { EXAM_ZOOMS, STORAGE_KEYS, setExamZoom, type ExamZoom } from "@/lib/storage";
 import type { Question } from "@/lib/types";
+import { useMessages } from "@/lib/use-messages";
 import { useStored } from "@/lib/use-storage";
 
 const CHOICES = [1, 2, 3, 4];
@@ -28,8 +30,8 @@ export interface ExamScreenProps {
   timer?: { remainingSec: number; totalSec: number };
   /** "바로 답 확인하기" 체크박스 (연습 풀이만). 없으면 체크박스를 그리지 않는다 */
   instant?: { checked: boolean; onChange: (checked: boolean) => void };
-  /** 마지막에 누르는 버튼 이름: "채점하기" 또는 "답안 제출" */
-  submitLabel: string;
+  /** 마지막에 누르는 버튼: grade = "채점하기"(연습 풀이), submit = "답안 제출"(실전 CBT) */
+  submitKind: "grade" | "submit";
   onSelect: (question: Question, choice: number) => void;
   onGoTo: (index: number) => void;
   onSubmit: () => void;
@@ -55,13 +57,16 @@ export function ExamScreen({
   revealed,
   timer,
   instant,
-  submitLabel,
+  submitKind,
   onSelect,
   onGoTo,
   onSubmit,
   onPause,
   metaOf,
 }: ExamScreenProps) {
+  const { m: all } = useMessages();
+  const m = all.exam;
+  const submitLabel = submitKind === "grade" ? m.grade : m.submit;
   const zoom = useStored<ExamZoom>(STORAGE_KEYS.examZoom, 100);
   const [showSheet, setShowSheet] = useState(false);
   const [showUnanswered, setShowUnanswered] = useState(false);
@@ -140,7 +145,7 @@ export function ExamScreen({
           </h1>
           {timer ? (
             <p>
-              제한 시간 {Math.round(timer.totalSec / 60)}분 · 남은 시간{" "}
+              {fmt(m.timeLimit, { min: Math.round(timer.totalSec / 60) })}{" "}
               <span
                 role="timer"
                 className={`text-[18px] font-extrabold tabular-nums ${timer.remainingSec <= 300 ? "text-[#fca5a5]" : ""}`}
@@ -149,9 +154,7 @@ export function ExamScreen({
               </span>
             </p>
           ) : (
-            <p>
-              전체 문제 수: {total} · 안 푼 문제 수: {unanswered.length}
-            </p>
+            <p>{fmt(m.totals, { total, left: unanswered.length })}</p>
           )}
         </div>
       </header>
@@ -159,8 +162,8 @@ export function ExamScreen({
       {/* ───── 글자크기 · 나가기 ───── */}
       <div className="border-b border-line-soft bg-surface">
         <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-2 px-3 py-1.5 text-[13px] font-bold">
-          <div role="group" aria-label="글자 크기" className="flex items-center gap-1">
-            <span>글자크기</span>
+          <div role="group" aria-label={m.fontSizeLabel} className="flex items-center gap-1">
+            <span>{m.fontSize}</span>
             {EXAM_ZOOMS.map((z) => (
               <button
                 key={z.value}
@@ -178,18 +181,14 @@ export function ExamScreen({
             ))}
           </div>
           <div className="flex items-center gap-3">
-            {timer && (
-              <span>
-                전체 {total} · 안 푼 문제 {unanswered.length}
-              </span>
-            )}
+            {timer && <span>{fmt(m.totalsShort, { total, left: unanswered.length })}</span>}
             {onPause && (
               <button type="button" className="underline underline-offset-2" onClick={onPause}>
-                잠시 멈추기
+                {m.pause}
               </button>
             )}
             <Link href={exitHref} className="underline underline-offset-2">
-              나가기
+              {m.exit}
             </Link>
           </div>
         </div>
@@ -200,10 +199,10 @@ export function ExamScreen({
         className="mx-auto grid w-full max-w-6xl flex-1 content-start gap-3 px-3 py-3 lg:grid-cols-[1fr_15.5rem]"
         style={{ fontSize: `${fontPx}px` }}
       >
-        <section aria-label="문제" className="border border-line bg-surface px-[1em] py-[0.9em]">
+        <section aria-label={m.question} className="border border-line bg-surface px-[1em] py-[0.9em]">
           <p className="text-[12px] font-bold text-ink-sub">
-            {sourceLabel(question)}
-            {question.reviewStatus === "unverified" && " · 검수 전"}
+            {sourceLabel(question, all)}
+            {question.reviewStatus === "unverified" && ` · ${all.source.unverified}`}
           </p>
           <h2 className="mt-[0.2em] whitespace-pre-wrap font-bold leading-normal">
             {index + 1}. {question.stem}
@@ -241,13 +240,13 @@ export function ExamScreen({
                     >
                       {n}
                     </span>
-                    <span className="sr-only">{n}번</span>
+                    <span className="sr-only">{fmt(m.choiceN, { n })}</span>
                     <span className="min-w-0 flex-1">{choice}</span>
                     {isRevealed && isAnswer && (
-                      <span className="shrink-0 text-[12px] font-extrabold text-ok">정답</span>
+                      <span className="shrink-0 text-[12px] font-extrabold text-ok">{all.common.answer}</span>
                     )}
                     {isRevealed && selected && !isAnswer && (
-                      <span className="shrink-0 text-[12px] font-extrabold text-bad">내가 고른 답</span>
+                      <span className="shrink-0 text-[12px] font-extrabold text-bad">{all.common.myChoice}</span>
                     )}
                   </button>
                 </li>
@@ -259,10 +258,10 @@ export function ExamScreen({
         </section>
 
         <aside
-          aria-label="답안 표기란"
+          aria-label={m.sheet}
           className={`border border-line bg-surface p-2 text-[14px] lg:block ${showSheet ? "" : "hidden"}`}
         >
-          <h2 className="border-b border-line-soft pb-1 text-center font-extrabold">답안 표기란</h2>
+          <h2 className="border-b border-line-soft pb-1 text-center font-extrabold">{m.sheet}</h2>
           <ol className="mt-1 grid grid-cols-2 gap-x-2 sm:grid-cols-3 lg:max-h-[calc(100dvh-14rem)] lg:grid-cols-1 lg:overflow-y-auto">
             {questions.map((q, i) => {
               const marked = answers[q.id];
@@ -272,7 +271,7 @@ export function ExamScreen({
                   <button
                     type="button"
                     onClick={() => goTo(i)}
-                    aria-label={`${i + 1}번 문제로 가기${marked === undefined ? " (안 푼 문제)" : ""}`}
+                    aria-label={fmt(marked === undefined ? m.goToUnanswered : m.goTo, { n: i + 1 })}
                     aria-current={i === index ? "true" : undefined}
                     className={`h-8 w-8 shrink-0 font-extrabold underline ${marked === undefined ? "text-bad" : "text-ink"}`}
                   >
@@ -292,7 +291,7 @@ export function ExamScreen({
                         key={n}
                         type="button"
                         disabled={shown}
-                        aria-label={`${i + 1}번 문제 답 ${n}번 표기`}
+                        aria-label={fmt(m.mark, { q: i + 1, n })}
                         aria-pressed={marked === n}
                         onClick={() => onSelect(q, n)}
                         className={`flex h-7 w-7 items-center justify-center rounded-full border-2 text-[12px] font-bold ${bubble}`}
@@ -314,10 +313,10 @@ export function ExamScreen({
           {showUnanswered && (
             <div className="border border-line bg-surface p-3">
               {unanswered.length === 0 ? (
-                <p className="font-bold">모든 문제에 답을 표기했습니다.</p>
+                <p className="font-bold">{m.allAnswered}</p>
               ) : (
                 <>
-                  <p className="font-bold">안 푼 문제 {unanswered.length}개 — 번호를 누르면 그 문제로 갑니다.</p>
+                  <p className="font-bold">{fmt(m.unansweredList, { n: unanswered.length })}</p>
                   <ul className="mt-2 flex flex-wrap gap-1.5">
                     {unanswered.map(({ q, i }) => (
                       <li key={q.id}>
@@ -338,19 +337,17 @@ export function ExamScreen({
           {confirming && (
             <div role="alertdialog" aria-labelledby="submit-title" className="mt-2 border-2 border-[#1e3a8a] bg-primary-soft p-3">
               <h2 id="submit-title" className="font-extrabold">
-                {submitLabel === "채점하기" ? "채점할까요?" : "답안을 제출할까요?"}
+                {submitKind === "grade" ? m.confirmGrade : m.confirmSubmit}
               </h2>
               <p className="mt-1">
-                {unanswered.length > 0
-                  ? `안 푼 문제가 ${unanswered.length}개 있습니다. 안 푼 문제는 틀린 것으로 채점됩니다.`
-                  : "모든 문제에 답을 표기했습니다."}
+                {unanswered.length > 0 ? fmt(m.unansweredWarn, { n: unanswered.length }) : m.allAnswered}
               </p>
               <div className="mt-2 flex flex-wrap gap-2">
                 <button type="button" className="btn btn-primary" onClick={onSubmit}>
-                  네, {submitLabel === "채점하기" ? "채점합니다" : "제출합니다"}
+                  {submitKind === "grade" ? m.yesGrade : m.yesSubmit}
                 </button>
                 <button type="button" className="btn" onClick={() => setConfirming(false)}>
-                  아니요, 계속 풉니다
+                  {m.noContinue}
                 </button>
               </div>
             </div>
@@ -368,7 +365,7 @@ export function ExamScreen({
               onClick={() => goTo(index - 1)}
               className="btn min-h-11 px-3 py-1"
             >
-              ◀ 이전
+              {m.prev}
             </button>
             <button
               ref={nextRef}
@@ -376,7 +373,7 @@ export function ExamScreen({
               onClick={forward}
               className="btn btn-primary min-h-11 flex-1 px-4 py-1 sm:flex-none sm:min-w-36"
             >
-              {isLast ? `${submitLabel} ▶` : "다음 ▶"}
+              {isLast ? fmt(m.last, { label: submitLabel }) : m.next}
             </button>
             {instant && (
               <label className="flex min-h-11 cursor-pointer items-center gap-1.5 whitespace-nowrap">
@@ -386,7 +383,7 @@ export function ExamScreen({
                   onChange={(e) => instant.onChange(e.target.checked)}
                   className="h-5 w-5 accent-[#1e3a8a]"
                 />
-                바로 답 확인하기
+                {m.instant}
               </label>
             )}
           </div>
@@ -397,7 +394,7 @@ export function ExamScreen({
               onClick={() => setShowSheet((v) => !v)}
               className="btn min-h-11 px-3 py-1 lg:hidden"
             >
-              답안 표기란
+              {m.sheet}
             </button>
             <button
               type="button"
@@ -405,7 +402,7 @@ export function ExamScreen({
               onClick={() => setShowUnanswered((v) => !v)}
               className="btn min-h-11 px-3 py-1"
             >
-              안 푼 문제 {unanswered.length}
+              {fmt(m.unanswered, { n: unanswered.length })}
             </button>
             {!isLast && (
               <button type="button" onClick={requestSubmit} className="btn min-h-11 px-3 py-1">
@@ -429,6 +426,8 @@ function AnswerResult({
   chosen: number | undefined;
   meta: { location: string; chapterImportance: number };
 }) {
+  const { m: all } = useMessages();
+  const m = all.exam;
   const [showExplanation, setShowExplanation] = useState(false);
   const [showReport, setShowReport] = useState(false);
   const correct = chosen === question.answer;
@@ -447,21 +446,21 @@ function AnswerResult({
       }`}
     >
       <p className="font-extrabold">
-        <span className={correct ? "text-ok" : "text-bad"}>{correct ? "정답" : "오답"}</span>
+        <span className={correct ? "text-ok" : "text-bad"}>{correct ? m.correct : m.wrong}</span>
         <span className="mx-1.5" aria-hidden="true">
           ·
         </span>
-        정답: {circled(question.answer)}
+        {fmt(m.answerIs, { answer: circled(question.answer) })}
       </p>
       <p>
-        <span className="font-bold">핵심:</span> {question.oneLineConcept}
+        <span className="font-bold">{all.common.keyConcept}</span> {question.oneLineConcept}
       </p>
       <p>
-        중요도 <Stars value={stars} />
+        {all.common.importance} <Stars value={stars} />
         <span className="mx-1.5" aria-hidden="true">
           ·
         </span>
-        이 문제를 맞혔다면 합격 가능성은? <strong className="font-extrabold">{contribution.value}%</strong>
+        {m.passChance} <strong className="font-extrabold">{contribution.value}%</strong>
       </p>
       <button
         type="button"
@@ -469,7 +468,7 @@ function AnswerResult({
         onClick={() => setShowExplanation((v) => !v)}
         className="mt-1 font-bold underline underline-offset-2"
       >
-        {showExplanation ? "▲ 해설 접기" : "▼ 해설 보기"}
+        {showExplanation ? m.hideExplanation : m.showExplanation}
       </button>
       {showExplanation && (
         <div className="mt-2 border border-line bg-surface p-[0.8em]">
@@ -481,7 +480,7 @@ function AnswerResult({
             aria-expanded={showReport}
             onClick={() => setShowReport((v) => !v)}
           >
-            문제 오류 신고
+            {m.report}
           </button>
           {showReport && <ReportForm question={question} onClose={() => setShowReport(false)} />}
         </div>

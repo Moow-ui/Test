@@ -4,7 +4,8 @@ import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useRef } from "react";
 import { ExamScreen } from "@/components/exam/ExamScreen";
-import { LEVEL_RULES, QUIZ_COUNTS, buildLevelQuiz, buildQuiz } from "@/lib/quiz-engine";
+import { fmt, localePath, type Messages } from "@/lib/i18n";
+import { QUIZ_COUNTS, buildLevelQuiz, buildQuiz } from "@/lib/quiz-engine";
 import {
   STORAGE_KEYS,
   addResult,
@@ -20,6 +21,7 @@ import {
   type QuizSession,
 } from "@/lib/storage";
 import type { ExamInfo, Question, QuizLevel, Subject } from "@/lib/types";
+import { useMessages } from "@/lib/use-messages";
 import { useHydrated, useStored } from "@/lib/use-storage";
 import { ResultView } from "./ResultView";
 
@@ -40,6 +42,7 @@ function createSession(
   cert: QuizCert,
   questions: Question[],
   params: URLSearchParams,
+  m: Messages,
 ): QuizSession | null {
   const history = getHistory();
 
@@ -53,7 +56,7 @@ function createSession(
     return startSession({
       certId: cert.id,
       mode: "notes",
-      label: "오답노트 다시 풀기",
+      label: m.quiz.notesRetry,
       level: null,
       subjectId: null,
       questionIds: ids,
@@ -76,7 +79,7 @@ function createSession(
     return startSession({
       certId: cert.id,
       mode: "chapter",
-      label: `${chapter.name} 단원`,
+      label: fmt(m.quiz.chapterLabel, { name: chapter.name }),
       level: null,
       subjectId: subject.id,
       questionIds: picked.map((q) => q.id),
@@ -103,7 +106,10 @@ function createSession(
   return startSession({
     certId: cert.id,
     mode: "level",
-    label: `${LEVEL_RULES[level].label} · ${subject ? subject.name : "전체 과목"}`,
+    label: fmt(m.quiz.levelLabel, {
+      level: m.levels[level],
+      scope: subject ? subject.name : m.common.allSubjects,
+    }),
     level,
     subjectId: subject?.id ?? null,
     questionIds: picked.map((q) => q.id),
@@ -118,6 +124,8 @@ function Pad({ children }: { children: React.ReactNode }) {
 /** 풀이 화면: 새 풀이 시작 / 이어서 풀기 / (바로 또는 마지막에) 채점 / 결과 */
 export function QuizRunner({ cert, questions }: { cert: QuizCert; questions: Question[] }) {
   const router = useRouter();
+  const { locale, m } = useMessages();
+  const certPath = localePath(locale, `/cert/${cert.id}`);
   const paramString = useSearchParams().toString();
   const hydrated = useHydrated();
   const session = useStored<QuizSession | null>(STORAGE_KEYS.session(cert.id), null);
@@ -134,10 +142,10 @@ export function QuizRunner({ cert, questions }: { cert: QuizCert; questions: Que
     }
     if (handledRef.current === paramString) return;
     handledRef.current = paramString;
-    createSession(cert, questions, new URLSearchParams(paramString));
+    createSession(cert, questions, new URLSearchParams(paramString), m);
     touchRecentCert(cert.id);
-    router.replace(`/cert/${cert.id}/quiz`);
-  }, [paramString, cert, questions, router]);
+    router.replace(`${certPath}/quiz`);
+  }, [paramString, cert, questions, router, m, certPath]);
 
   const byId = new Map(questions.map((q) => [q.id, q]));
   const sessionQuestions = session
@@ -148,7 +156,7 @@ export function QuizRunner({ cert, questions }: { cert: QuizCert; questions: Que
   if (!hydrated || paramString) {
     return (
       <Pad>
-        <p className="card p-5 text-lg font-bold">문제를 준비하고 있습니다…</p>
+        <p className="card p-5 text-lg font-bold">{m.quiz.preparing}</p>
       </Pad>
     );
   }
@@ -157,9 +165,9 @@ export function QuizRunner({ cert, questions }: { cert: QuizCert; questions: Que
     return (
       <Pad>
         <div className="card mx-auto max-w-3xl space-y-3 p-5">
-          <h1 className="text-xl font-extrabold">진행 중인 풀이가 없습니다</h1>
-          <Link href={`/cert/${cert.id}`} className="btn btn-primary btn-lg">
-            {cert.name} 화면에서 시작하기 →
+          <h1 className="text-xl font-extrabold">{m.quiz.none}</h1>
+          <Link href={certPath} className="btn btn-primary btn-lg">
+            {fmt(m.quiz.startFrom, { name: cert.name })}
           </Link>
         </div>
       </Pad>
@@ -169,8 +177,8 @@ export function QuizRunner({ cert, questions }: { cert: QuizCert; questions: Que
   if (session.finishedAt) {
     const againHref =
       session.mode === "level" && session.level
-        ? `/cert/${cert.id}/quiz?level=${session.level}&count=${total}&subject=${session.subjectId ?? "all"}`
-        : `/cert/${cert.id}/quiz?level=basic&count=5&subject=all`;
+        ? `${certPath}/quiz?level=${session.level}&count=${total}&subject=${session.subjectId ?? "all"}`
+        : `${certPath}/quiz?level=basic&count=5&subject=all`;
     return (
       <Pad>
         <ResultView
@@ -180,7 +188,7 @@ export function QuizRunner({ cert, questions }: { cert: QuizCert; questions: Que
           questions={sessionQuestions}
           againAction={
             <Link href={againHref} className="btn btn-lg">
-              새 문제로 다시 풀기 →
+              {m.quiz.again}
             </Link>
           }
         />
@@ -246,13 +254,13 @@ export function QuizRunner({ cert, questions }: { cert: QuizCert; questions: Que
     <ExamScreen
       certName={cert.name}
       modeLabel={session.label}
-      exitHref={`/cert/${cert.id}`}
+      exitHref={certPath}
       questions={sessionQuestions}
       index={index}
       answers={session.answers}
       revealed={revealed}
       instant={{ checked: instant, onChange: changeInstant }}
-      submitLabel="채점하기"
+      submitKind="grade"
       onSelect={select}
       onGoTo={(i) => saveSession({ ...session, currentIndex: i })}
       onSubmit={submit}

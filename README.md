@@ -6,6 +6,10 @@
 로그인하지 않아도 모든 문제를 풀 수 있고(기록은 그 브라우저에만 저장),
 로그인하면 점수 기록·오답·오답노트·보유 자격증이 계정에 저장됩니다.
 
+- 주소는 나라별로 나뉩니다: **`/ko` = 자격증달인(한국 자격증)**, **`/en` = ExamPasso(미국 자격증)**. 도메인은 `exampasso.com` 하나입니다.
+  - `/` 로 들어오면 브라우저 언어에 따라 `/ko` 또는 `/en` 으로 보냅니다 (알 수 없으면 `/en`).
+  - 사이트 이름을 바꾸려면 [config/brand.ts](config/brand.ts) 한 줄만 고치면 됩니다.
+  - 화면 문구는 [messages/ko.json](messages/ko.json), [messages/en.json](messages/en.json) 에 있습니다.
 - 기술: Next.js 16 (App Router) · TypeScript · Tailwind CSS v4 · zod · vitest
 - 저장소: https://github.com/Moow-ui/Test (브랜치 `main`) · 배포: Cloudflare Workers
 - 현재 풀 수 있는 자격증: **전기기능사 필기** (AI 예상문제 60개). 나머지 29종은 "준비 중"
@@ -171,7 +175,7 @@ Cloudflare 대시보드 → Workers & Pages → `test` → **Settings → Build*
 | Build command | 비워 둠 (설치 직후 `scripts/ci-build.mjs` 가 자동으로 빌드합니다) |
 | Deploy command | `npx wrangler deploy` |
 | Root directory | `/` |
-| **Build variables** 에 추가 | `NEXT_PUBLIC_SITE_URL` = 실제 사이트 주소 (예: `https://test.내계정.workers.dev`, 끝에 `/` 없이) |
+| **Settings → Domains & Routes** | `exampasso.com` 을 이 Worker 에 연결 (Custom domain) |
 
 - 사이트 빌드는 `npm` 설치가 끝난 직후 `scripts/ci-build.mjs` 가 실행합니다 (`package.json` 의 `postinstall`). `npx wrangler deploy` 는 그 결과를 올리기만 합니다.
 - 회원 정보는 Cloudflare 의 DB(D1, 이름 `qpass`)에 저장됩니다. **처음 배포할 때 Cloudflare 가 DB 를 자동으로 만들어 연결합니다.**
@@ -179,7 +183,8 @@ Cloudflare 대시보드 → Workers & Pages → `test` → **Settings → Build*
     Cloudflare 대시보드 → 오른쪽 위 프로필 → **API Tokens** → 이 프로젝트의 빌드 토큰(`test build token`) **Edit** →
     Permissions 에 **Account · D1 · Edit** 를 추가하고 저장한 뒤, 배포 화면에서 **Retry build** 를 누르세요.
   - DB 가 연결되지 않아도 사이트와 문제 풀이는 정상 동작하고, 로그인 화면에만 "준비 중"이라고 나옵니다.
-- `NEXT_PUBLIC_SITE_URL` 을 넣지 않으면 검색엔진용 주소(canonical, sitemap)가 `localhost` 로 나오니 꼭 넣으세요.
+- 검색엔진용 주소(canonical, hreflang, sitemap)는 `config/brand.ts` 의 도메인(`https://exampasso.com`)으로 만들어집니다.
+  다른 주소로 시험 배포할 때만 Build variables 에 `NEXT_PUBLIC_SITE_URL` (끝에 `/` 없이)을 넣으세요. **실제 서비스에서는 넣지 않습니다.**
 - 구글·네이버 소유확인 값이 있으면 `GOOGLE_SITE_VERIFICATION`, `NAVER_SITE_VERIFICATION` 도 같은 곳에 넣습니다. (`.env.example` 참고)
 - Worker 이름을 바꾸면 `wrangler.jsonc` 의 `"name"` 도 같은 이름으로 바꿔야 합니다.
 
@@ -190,14 +195,14 @@ Cloudflare 대시보드 → Workers & Pages → `test` → **Settings → Build*
 1. **속성 추가 → URL 접두어** 에 사이트 주소 입력
 2. 소유확인 방법 중 **HTML 태그** 선택 → `content="…"` 안의 값만 복사
 3. Cloudflare Build variables 의 `GOOGLE_SITE_VERIFICATION` 에 붙여넣고 다시 배포 → 서치콘솔에서 **확인**
-4. 왼쪽 메뉴 **Sitemaps** 에 `sitemap.xml` 입력 후 제출
+4. 왼쪽 메뉴 **Sitemaps** 에 `sitemap.xml` 입력 후 제출 (언어별 목록 `sitemaps/ko.xml`, `sitemaps/en.xml` 이 그 안에 들어 있습니다)
 
 **네이버 서치어드바이저** (https://searchadvisor.naver.com)
 
 1. **웹마스터 도구 → 사이트 등록** 에 사이트 주소 입력
 2. **HTML 태그** 방식 선택 → `content="…"` 안의 값만 복사
 3. Cloudflare Build variables 의 `NAVER_SITE_VERIFICATION` 에 붙여넣고 다시 배포 → **소유확인**
-4. **요청 → 사이트맵 제출** 에 `https://내도메인/sitemap.xml` 입력
+4. **요청 → 사이트맵 제출** 에 `https://exampasso.com/sitemaps/ko.xml` 입력 (네이버에는 한국어 쪽만 내면 됩니다)
 
 ### 6-4. 내 컴퓨터에서 배포 묶음을 확인하고 싶을 때
 

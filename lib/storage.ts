@@ -97,11 +97,8 @@ export function removeKey(key: string): void {
 export type Theme = "light" | "dark";
 export type FontScale = "md" | "lg" | "xl";
 
-export const FONT_SCALES: Array<{ value: FontScale; label: string }> = [
-  { value: "md", label: "보통" },
-  { value: "lg", label: "크게" },
-  { value: "xl", label: "아주 크게" },
-];
+/** 이름(보통·크게·아주 크게)은 messages 의 "display.sizes" 에 있다 */
+export const FONT_SCALES: FontScale[] = ["md", "lg", "xl"];
 
 export function getTheme(): Theme {
   if (typeof document === "undefined") return "light";
@@ -492,13 +489,9 @@ export function clearNotes(certId: string): void {
 
 // ───────────────────────── 문제 오류 신고 ─────────────────────────
 
-export const REPORT_REASONS = [
-  "정답이 틀린 것 같아요",
-  "문제 내용이 이상해요",
-  "해설이 틀렸거나 이해가 안 돼요",
-  "오타가 있어요",
-  "기타",
-] as const;
+/** 신고 이유 코드. 화면 문구는 messages 의 "report.reasons" 에 있다 */
+export const REPORT_REASONS = ["wrong_answer", "bad_question", "bad_explanation", "typo", "other"] as const;
+export type ReportReason = (typeof REPORT_REASONS)[number];
 
 export interface ReportEntry {
   id: string;
@@ -506,6 +499,7 @@ export interface ReportEntry {
   questionId: string;
   /** 신고 당시 문제 앞부분 (목록에서 알아보기 위한 용도) */
   stem: string;
+  /** 신고 이유 코드 (예전 기록에는 한글 문장이 들어 있을 수 있다) */
   reason: string;
   memo: string;
   at: number;
