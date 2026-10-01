@@ -1,0 +1,280 @@
+[
+  {
+    "id": "electrical-engineer-p049",
+    "certId": "electrical-engineer",
+    "subjectId": "kec",
+    "chapterId": "kec-general",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "한국전기설비규정(KEC)에서 정한 저압의 범위로 옳은 것은?",
+    "choices": [
+      "교류 600V 이하, 직류 750V 이하",
+      "교류 1kV 이하, 직류 1.5kV 이하",
+      "교류 1.5kV 이하, 직류 1kV 이하",
+      "교류·직류 모두 7kV 이하"
+    ],
+    "answer": 2,
+    "oneLineConcept": "저압: 교류 1kV 이하, 직류 1.5kV 이하",
+    "explanation": "KEC 의 전압 구분은 다음과 같습니다.\n\n1. 저압: 교류 1kV 이하, 직류 1.5kV 이하\n2. 고압: 저압을 넘고 7kV 이하\n3. 특고압: 7kV 초과\n\n**틀린 선지**\n- ① 교류 600V 이하, 직류 750V 이하: 2021년 이전의 옛 기준입니다.\n- ③ 교류 1.5kV 이하, 직류 1kV 이하: 교류와 직류의 값이 바뀌었습니다.\n- ④ 교류·직류 모두 7kV 이하: 7kV 는 고압과 특고압의 경계입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "전압 구분"
+    ]
+  },
+  {
+    "id": "electrical-engineer-p050",
+    "certId": "electrical-engineer",
+    "subjectId": "kec",
+    "chapterId": "kec-general",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "한국전기설비규정(KEC)에 따른 전선의 식별 색상으로 옳지 않은 것은?",
+    "choices": [
+      "L1 – 갈색",
+      "L2 – 흑색",
+      "L3 – 회색",
+      "N(중성선) – 녹색"
+    ],
+    "answer": 4,
+    "oneLineConcept": "전선 색상: L1 갈색, L2 흑색, L3 회색, N 청색, 보호 도체 녹색-노란색",
+    "explanation": "중성선(N)은 **청색**입니다. 녹색-노란색은 보호 도체(접지선)의 색입니다.\n\n**틀린 선지**\n- ① L1 – 갈색: 맞는 색상입니다.\n- ② L2 – 흑색: 맞는 색상입니다.\n- ③ L3 – 회색: 맞는 색상입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "전선 식별"
+    ]
+  },
+  {
+    "id": "electrical-engineer-p051",
+    "certId": "electrical-engineer",
+    "subjectId": "kec",
+    "chapterId": "kec-general",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "한국전기설비규정(KEC)에서 접지극을 땅에 묻을 때의 매설 깊이 기준은?",
+    "choices": [
+      "지표면으로부터 0.3m 이상",
+      "지표면으로부터 0.5m 이상",
+      "지표면으로부터 0.75m 이상",
+      "지표면으로부터 1.5m 이상"
+    ],
+    "answer": 3,
+    "oneLineConcept": "접지극의 매설 깊이: 지표면에서 0.75m 이상",
+    "explanation": "접지극은 동결 깊이를 고려하여 **지표면에서 0.75m 이상** 깊이에 묻습니다. 얕으면 겨울에 땅이 얼어 접지 저항이 커지고, 사람이 밟는 곳의 전위가 높아집니다.\n\n**틀린 선지**\n- ① 지표면으로부터 0.3m 이상: 기준에 미치지 못합니다.\n- ② 지표면으로부터 0.5m 이상: 기준에 미치지 못합니다.\n- ④ 지표면으로부터 1.5m 이상: 기준은 0.75m 이상입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "접지"
+    ]
+  },
+  {
+    "id": "electrical-engineer-p052",
+    "certId": "electrical-engineer",
+    "subjectId": "kec",
+    "chapterId": "kec-general",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "사용 전압이 400V 인 저압 전로의 절연 저항은 몇 MΩ 이상이어야 하는가? (SELV·PELV·FELV 가 아닌 경우)",
+    "choices": [
+      "1.0MΩ",
+      "0.5MΩ",
+      "0.1MΩ",
+      "2.0MΩ"
+    ],
+    "answer": 1,
+    "oneLineConcept": "500V 이하(FELV 포함) 전로: 시험 전압 500V, 절연 저항 1.0MΩ 이상",
+    "explanation": "KEC 의 저압 전로 절연 저항 기준입니다.\n\n1. SELV, PELV: 시험 전압 250V, 0.5MΩ 이상\n2. FELV, 500V 이하: 시험 전압 500V, **1.0MΩ 이상**\n3. 500V 초과: 시험 전압 1,000V, 1.0MΩ 이상\n\n**틀린 선지**\n- ② 0.5MΩ: SELV·PELV 의 기준입니다.\n- ③ 0.1MΩ: 2021년 이전의 옛 기준에 있던 값입니다.\n- ④ 2.0MΩ: 기준에 없는 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "절연 저항"
+    ]
+  },
+  {
+    "id": "electrical-engineer-p053",
+    "certId": "electrical-engineer",
+    "subjectId": "kec",
+    "chapterId": "kec-general",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "선도체의 단면적이 25mm² 일 때, 보호 도체의 최소 단면적은 몇 mm² 인가? (보호 도체의 재질이 선도체와 같은 경우)",
+    "choices": [
+      "10mm²",
+      "12.5mm²",
+      "16mm²",
+      "25mm²"
+    ],
+    "answer": 3,
+    "oneLineConcept": "보호 도체: S ≤ 16 이면 S, 16 < S ≤ 35 이면 16, S > 35 이면 S ÷ 2",
+    "explanation": "선도체 단면적(S)에 따른 보호 도체의 최소 단면적입니다.\n\n1. S 가 16mm² 이하: S 와 같게\n2. S 가 16 초과 35mm² 이하: **16mm²**\n3. S 가 35mm² 초과: S 의 절반\n\n25mm² 는 두 번째에 해당하므로 16mm² 입니다.\n\n**틀린 선지**\n- ① 10mm²: 기준에 없는 값입니다.\n- ② 12.5mm²: 35mm² 초과일 때의 계산 방법(S ÷ 2)을 쓴 값입니다.\n- ④ 25mm²: 16mm² 이하일 때의 방법(S 와 같게)을 쓴 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "보호 도체"
+    ]
+  },
+  {
+    "id": "electrical-engineer-p054",
+    "certId": "electrical-engineer",
+    "subjectId": "kec",
+    "chapterId": "kec-wiring",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "저압 옥내 배선에 쓰는 전선의 최소 굵기는? (일반적인 경우)",
+    "choices": [
+      "단면적 1.5mm² 이상의 연동선",
+      "단면적 2.5mm² 이상의 연동선",
+      "단면적 4mm² 이상의 연동선",
+      "단면적 6mm² 이상의 연동선"
+    ],
+    "answer": 2,
+    "oneLineConcept": "저압 옥내 배선: 2.5mm² 이상의 연동선",
+    "explanation": "저압 옥내 배선에는 **단면적 2.5mm² 이상의 연동선** 또는 이와 같은 세기와 굵기의 것을 씁니다.\n\n**틀린 선지**\n- ① 단면적 1.5mm² 이상의 연동선: 기준에 미치지 못합니다.\n- ③ 단면적 4mm² 이상의 연동선: 기준은 2.5mm² 이상입니다.\n- ④ 단면적 6mm² 이상의 연동선: 기준은 2.5mm² 이상입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "옥내 배선"
+    ]
+  },
+  {
+    "id": "electrical-engineer-p055",
+    "certId": "electrical-engineer",
+    "subjectId": "kec",
+    "chapterId": "kec-wiring",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "과전류 차단기를 시설해서는 안 되는 곳은?",
+    "choices": [
+      "분기 회로의 전원 측 전선",
+      "전동기 회로의 전원 측",
+      "간선의 전원 측 전선",
+      "접지 공사의 접지 도체"
+    ],
+    "answer": 4,
+    "oneLineConcept": "과전류 차단기 시설 금지: 접지 도체, 다선식 전로의 중성선, 접지 측 전선",
+    "explanation": "접지 도체가 끊어지면 **접지가 되지 않아 감전 위험**이 생깁니다. 그래서 접지 도체에는 차단기나 퓨즈를 달지 않습니다.\n\n**틀린 선지**\n- ① 분기 회로의 전원 측 전선: 과전류 차단기를 시설하는 곳입니다.\n- ② 전동기 회로의 전원 측: 과전류 차단기를 시설하는 곳입니다.\n- ③ 간선의 전원 측 전선: 과전류 차단기를 시설하는 곳입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "과전류 차단기"
+    ]
+  },
+  {
+    "id": "electrical-engineer-p056",
+    "certId": "electrical-engineer",
+    "subjectId": "kec",
+    "chapterId": "kec-wiring",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "최대 사용 전압이 6,600V 인 고압 전로의 절연 내력 시험 전압과 시험 시간으로 옳은 것은?",
+    "choices": [
+      "9,900V, 10분",
+      "8,250V, 1분",
+      "9,900V, 1분",
+      "13,200V, 10분"
+    ],
+    "answer": 1,
+    "oneLineConcept": "7kV 이하 전로의 절연 내력 시험: 최대 사용 전압의 1.5배, 10분",
+    "explanation": "1. 최대 사용 전압이 7kV 이하이므로 시험 전압은 1.5배입니다.\n2. 6,600 × 1.5 = 9,900V\n3. 이 전압을 전로와 대지 사이에 연속하여 **10분간** 가합니다.\n\n**틀린 선지**\n- ② 8,250V, 1분: 1.25배로 계산했고 시간도 틀렸습니다.\n- ③ 9,900V, 1분: 시험 시간은 10분입니다.\n- ④ 13,200V, 10분: 2배로 계산한 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "절연 내력",
+      "계산"
+    ]
+  },
+  {
+    "id": "electrical-engineer-p057",
+    "certId": "electrical-engineer",
+    "subjectId": "kec",
+    "chapterId": "kec-line",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "가공 전선로의 지지물에 취급자가 오르내리는 데 쓰는 발판 볼트는 지표상 몇 m 미만에 시설해서는 안 되는가?",
+    "choices": [
+      "1.2m",
+      "1.5m",
+      "1.8m",
+      "2.0m"
+    ],
+    "answer": 3,
+    "oneLineConcept": "발판 볼트는 지표상 1.8m 미만에 시설하지 않는다",
+    "explanation": "일반 사람이 함부로 올라가지 못하도록, 발판 볼트는 **지표상 1.8m 이상**의 높이에만 답니다.\n\n**틀린 선지**\n- ① 1.2m: 기준과 다릅니다.\n- ② 1.5m: 기준과 다릅니다.\n- ④ 2.0m: 기준은 1.8m 입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "지지물"
+    ]
+  },
+  {
+    "id": "electrical-engineer-p058",
+    "certId": "electrical-engineer",
+    "subjectId": "kec",
+    "chapterId": "kec-line",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "가공 전선로의 지지물에 시설하는 지선의 기준으로 옳지 않은 것은?",
+    "choices": [
+      "소선 2가닥 이상을 꼬아 만든 연선일 것",
+      "허용 인장 하중의 최저는 4.31kN 일 것",
+      "지선의 안전율은 2.5 이상일 것",
+      "도로를 횡단하는 지선의 높이는 지표상 5m 이상일 것"
+    ],
+    "answer": 1,
+    "oneLineConcept": "지선: 소선 3가닥 이상의 연선",
+    "explanation": "지선은 **소선 3가닥 이상**을 꼬아 만든 연선이어야 하고, 소선은 지름 2.6mm 이상의 금속선을 씁니다.\n\n**틀린 선지**\n- ② 허용 인장 하중의 최저는 4.31kN 일 것: 맞는 기준입니다.\n- ③ 지선의 안전율은 2.5 이상일 것: 맞는 기준입니다.\n- ④ 도로를 횡단하는 지선의 높이는 지표상 5m 이상일 것: 맞는 기준입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "지선"
+    ]
+  },
+  {
+    "id": "electrical-engineer-p059",
+    "certId": "electrical-engineer",
+    "subjectId": "kec",
+    "chapterId": "kec-line",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "저압 또는 고압 가공 전선이 도로를 횡단하는 경우, 전선의 지표상 높이는 몇 m 이상이어야 하는가?",
+    "choices": [
+      "4m 이상",
+      "5m 이상",
+      "6.5m 이상",
+      "6m 이상"
+    ],
+    "answer": 4,
+    "oneLineConcept": "가공 전선 높이: 도로 횡단 6m, 철도 횡단 6.5m 이상",
+    "explanation": "도로를 가로지를 때는 지표상 **6m 이상**입니다. 철도나 궤도를 가로지를 때는 레일면상 6.5m 이상입니다.\n\n**틀린 선지**\n- ① 4m 이상: 기준에 미치지 못합니다.\n- ② 5m 이상: 기준에 미치지 못합니다. 5m 는 도로를 횡단하는 지선의 높이 기준입니다.\n- ③ 6.5m 이상: 철도·궤도를 횡단할 때의 기준입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "가공 전선"
+    ]
+  },
+  {
+    "id": "electrical-engineer-p060",
+    "certId": "electrical-engineer",
+    "subjectId": "kec",
+    "chapterId": "kec-line",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "전체 길이가 12m 인 철근 콘크리트주를 땅에 세울 때, 묻히는 깊이는 최소 몇 m 이상이어야 하는가? (설계 하중 6.8kN 이하)",
+    "choices": [
+      "1.5m",
+      "2.0m",
+      "2.5m",
+      "3.0m"
+    ],
+    "answer": 2,
+    "oneLineConcept": "지지물의 근입 깊이: 15m 이하는 길이의 1/6 이상",
+    "explanation": "1. 전체 길이가 15m 이하이므로 길이의 1/6 이상을 묻습니다.\n2. 12 ÷ 6 = 2.0m\n\n전체 길이가 15m 를 넘으면 2.5m 이상 묻습니다.\n\n**틀린 선지**\n- ① 1.5m: 기준에 미치지 못합니다.\n- ③ 2.5m: 전체 길이가 15m 를 넘을 때의 기준입니다.\n- ④ 3.0m: 기준과 다릅니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "지지물",
+      "계산"
+    ]
+  }
+]

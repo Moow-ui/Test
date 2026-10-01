@@ -1,0 +1,284 @@
+[
+  {
+    "id": "electrical-engineer-p037",
+    "certId": "electrical-engineer",
+    "subjectId": "circuit-control",
+    "chapterId": "circuit-theory",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "저항 3Ω 과 유도 리액턴스 4Ω 이 직렬로 연결된 회로에 100V 의 교류 전압을 가했을 때 흐르는 전류는 몇 A 인가?",
+    "choices": [
+      "14.3A",
+      "20A",
+      "25A",
+      "33.3A"
+    ],
+    "answer": 2,
+    "oneLineConcept": "R-L 직렬: Z = √(R² + X²), I = V ÷ Z",
+    "explanation": "1. 임피던스 Z = √(3² + 4²) = √25 = 5Ω\n2. 전류 I = V ÷ Z = 100 ÷ 5\n3. I = 20A\n\n**틀린 선지**\n- ① 14.3A: 저항과 리액턴스를 그냥 더한 7Ω 으로 나눈 값입니다.\n- ③ 25A: 리액턴스 4Ω 으로만 나눈 값입니다.\n- ④ 33.3A: 저항 3Ω 으로만 나눈 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "교류 회로",
+      "계산"
+    ]
+  },
+  {
+    "id": "electrical-engineer-p038",
+    "certId": "electrical-engineer",
+    "subjectId": "circuit-control",
+    "chapterId": "circuit-theory",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "내부 저항이 r 인 전원에 부하 저항 R 을 연결했을 때, 부하에 최대 전력이 전달되는 조건은?",
+    "choices": [
+      "R = r",
+      "R = 2r",
+      "R = r ÷ 2",
+      "R = 0"
+    ],
+    "answer": 1,
+    "oneLineConcept": "최대 전력 전달 조건: 부하 저항 = 내부 저항",
+    "explanation": "부하 저항이 **전원의 내부 저항과 같을 때** 부하에서 가장 큰 전력을 얻습니다. 이때 최대 전력은 E² ÷ (4r) 입니다.\n\n**틀린 선지**\n- ② R = 2r: 최대 전력 조건이 아닙니다.\n- ③ R = r ÷ 2: 최대 전력 조건이 아닙니다.\n- ④ R = 0: 부하 저항이 0 이면 부하에서 쓰는 전력도 0 입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "최대 전력 전달"
+    ]
+  },
+  {
+    "id": "electrical-engineer-p039",
+    "certId": "electrical-engineer",
+    "subjectId": "circuit-control",
+    "chapterId": "circuit-theory",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "비정현파 전류 i = 3 + 4√2 sin ωt [A] 의 실효값은 몇 A 인가?",
+    "choices": [
+      "8.66A",
+      "7A",
+      "√7 A",
+      "5A"
+    ],
+    "answer": 4,
+    "oneLineConcept": "비정현파 실효값 = √(직류분² + 각 성분 실효값²)",
+    "explanation": "1. 직류분 = 3A\n2. 기본파의 실효값 = 최댓값 ÷ √2 = 4√2 ÷ √2 = 4A\n3. 실효값 = √(3² + 4²) = √25 = 5A\n\n**틀린 선지**\n- ① 8.66A: 계산이 틀린 값입니다.\n- ② 7A: 두 값을 그냥 더한 값입니다.\n- ③ √7 A: 제곱하지 않고 더한 뒤 제곱근을 구한 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "비정현파",
+      "계산"
+    ]
+  },
+  {
+    "id": "electrical-engineer-p040",
+    "certId": "electrical-engineer",
+    "subjectId": "circuit-control",
+    "chapterId": "circuit-theory",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "함수 f(t) = e^(−2t) 의 라플라스 변환은?",
+    "choices": [
+      "1 ÷ (s − 2)",
+      "2 ÷ s",
+      "1 ÷ (s + 2)",
+      "s ÷ (s + 2)"
+    ],
+    "answer": 3,
+    "oneLineConcept": "라플라스 변환: e^(−at) → 1 ÷ (s + a)",
+    "explanation": "지수 함수 e^(−at) 의 라플라스 변환은 **1 ÷ (s + a)** 입니다. a = 2 이므로 1 ÷ (s + 2) 가 됩니다. 지수의 부호와 분모의 부호가 반대라는 점에 주의합니다.\n\n**틀린 선지**\n- ① 1 ÷ (s − 2): e^(2t) 의 라플라스 변환입니다.\n- ② 2 ÷ s: 상수 2 의 라플라스 변환입니다.\n- ④ s ÷ (s + 2): 해당하는 변환이 아닙니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "라플라스 변환"
+    ]
+  },
+  {
+    "id": "electrical-engineer-p041",
+    "certId": "electrical-engineer",
+    "subjectId": "circuit-control",
+    "chapterId": "circuit-theory",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "저항 10Ω 과 인덕턴스 2H 가 직렬로 연결된 회로의 시정수는 몇 초인가?",
+    "choices": [
+      "0.2초",
+      "5초",
+      "12초",
+      "20초"
+    ],
+    "answer": 1,
+    "oneLineConcept": "R-L 직렬 회로의 시정수 τ = L ÷ R",
+    "explanation": "1. 공식: τ = L ÷ R\n2. 숫자 대입: τ = 2 ÷ 10\n3. τ = 0.2초\n\n시정수는 전류가 최종값의 63.2% 에 이르는 데 걸리는 시간입니다. 시정수가 클수록 과도 현상이 오래갑니다.\n\n**틀린 선지**\n- ② 5초: R ÷ L 로 거꾸로 계산한 값입니다.\n- ③ 12초: 두 값을 더한 값입니다.\n- ④ 20초: 두 값을 곱한 값입니다. (R × C 는 R-C 회로의 시정수입니다.)",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "과도 현상",
+      "계산"
+    ]
+  },
+  {
+    "id": "electrical-engineer-p042",
+    "certId": "electrical-engineer",
+    "subjectId": "circuit-control",
+    "chapterId": "circuit-theory",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "선간 전압이 200V 인 평형 3상 전원에 한 상의 임피던스가 6 + j8 [Ω] 인 부하를 Y 결선으로 연결했다. 3상 전체의 소비 전력은 약 몇 W 인가?",
+    "choices": [
+      "1,600W",
+      "2,400W",
+      "4,000W",
+      "7,200W"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Y 결선: 상전압 = 선간 전압 ÷ √3, P = 3 × I² × R",
+    "explanation": "1. 한 상의 임피던스 Z = √(6² + 8²) = 10Ω\n2. 상전압 = 200 ÷ √3 ≈ 115.5V\n3. 상전류 I = 115.5 ÷ 10 ≈ 11.55A\n4. P = 3 × I² × R = 3 × 11.55² × 6 = 3 × 133.3 × 6 ≈ 2,400W\n\n**틀린 선지**\n- ① 1,600W: 계산이 틀린 값입니다.\n- ③ 4,000W: 피상 전력(3 × I² × Z)의 값입니다.\n- ④ 7,200W: Δ 결선으로 연결했을 때의 소비 전력입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "3상 회로",
+      "계산"
+    ]
+  },
+  {
+    "id": "electrical-engineer-p043",
+    "certId": "electrical-engineer",
+    "subjectId": "circuit-control",
+    "chapterId": "circuit-theory",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "4단자 회로망의 4단자 정수 A, B, C, D 사이에 언제나 성립하는 관계식은? (수동 선형 회로)",
+    "choices": [
+      "AD + BC = 1",
+      "AB − CD = 1",
+      "AD − BC = 1",
+      "AC − BD = 1"
+    ],
+    "answer": 3,
+    "oneLineConcept": "4단자 정수: AD − BC = 1",
+    "explanation": "수동 선형 4단자망에서는 **AD − BC = 1** 이 언제나 성립합니다. 대칭 회로라면 여기에 A = D 가 더해집니다.\n\n**틀린 선지**\n- ① AD + BC = 1: 부호가 틀렸습니다.\n- ② AB − CD = 1: 성립하지 않는 식입니다.\n- ④ AC − BD = 1: 성립하지 않는 식입니다.",
+    "frequency": 3,
+    "reviewStatus": "unverified",
+    "tags": [
+      "4단자망"
+    ]
+  },
+  {
+    "id": "electrical-engineer-p044",
+    "certId": "electrical-engineer",
+    "subjectId": "circuit-control",
+    "chapterId": "control",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "전향 경로의 전달 함수가 G, 궤환(피드백) 경로의 전달 함수가 H 인 부궤환 제어계의 전체(폐루프) 전달 함수는?",
+    "choices": [
+      "1 ÷ (1 + GH)",
+      "G ÷ (1 − GH)",
+      "GH ÷ (1 + G)",
+      "G ÷ (1 + GH)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "부궤환 폐루프 전달 함수 = G ÷ (1 + GH)",
+    "explanation": "출력을 되돌려 입력에서 **빼는** 부궤환(음의 피드백)이면 분모가 1 + GH 입니다. 더하는 정궤환이면 1 − GH 가 됩니다.\n\n**틀린 선지**\n- ① 1 ÷ (1 + GH): 분자에 G 가 있어야 합니다.\n- ② G ÷ (1 − GH): 정궤환(양의 피드백)일 때의 식입니다.\n- ③ GH ÷ (1 + G): 분자와 분모가 틀렸습니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "전달 함수",
+      "블록 선도"
+    ]
+  },
+  {
+    "id": "electrical-engineer-p045",
+    "certId": "electrical-engineer",
+    "subjectId": "circuit-control",
+    "chapterId": "control",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "제어계가 안정하기 위한 특성 방정식의 근의 위치는?",
+    "choices": [
+      "모든 근이 s 평면의 왼쪽 반평면에 있어야 한다.",
+      "모든 근이 s 평면의 오른쪽 반평면에 있어야 한다.",
+      "모든 근이 허수축 위에 있어야 한다.",
+      "근의 위치와 안정도는 관계가 없다."
+    ],
+    "answer": 1,
+    "oneLineConcept": "안정 조건: 특성 방정식의 근이 모두 s 평면의 좌반면",
+    "explanation": "근의 실수부가 **음수**(왼쪽 반평면)이면 시간이 지날수록 응답이 줄어들어 안정합니다. 양수(오른쪽)이면 응답이 점점 커져 불안정합니다.\n\n**틀린 선지**\n- ② 모든 근이 s 평면의 오른쪽 반평면에 있어야 한다.: 불안정합니다.\n- ③ 모든 근이 허수축 위에 있어야 한다.: 줄지도 늘지도 않고 계속 진동하는 임계 상태입니다.\n- ④ 근의 위치와 안정도는 관계가 없다.: 근의 위치가 안정도를 결정합니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "안정도"
+    ]
+  },
+  {
+    "id": "electrical-engineer-p046",
+    "certId": "electrical-engineer",
+    "subjectId": "circuit-control",
+    "chapterId": "control",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "특성 방정식 s³ + 2s² + 3s + 10 = 0 인 제어계를 루스(Routh) 판별법으로 판별했을 때의 결과로 옳은 것은?",
+    "choices": [
+      "안정하다.",
+      "불안정하며, 오른쪽 반평면에 근이 1개 있다.",
+      "불안정하며, 오른쪽 반평면에 근이 2개 있다.",
+      "임계 안정 상태이다."
+    ],
+    "answer": 3,
+    "oneLineConcept": "루스 표 제1열의 부호 변화 횟수 = 오른쪽 반평면의 근의 수",
+    "explanation": "루스 표를 만듭니다.\n\n1. s³ 행: 1, 3\n2. s² 행: 2, 10\n3. s¹ 행: (2 × 3 − 1 × 10) ÷ 2 = −2\n4. s⁰ 행: 10\n\n제1열은 1, 2, −2, 10 입니다. 부호가 (+ → −), (− → +)로 **2번** 바뀌므로 오른쪽 반평면에 근이 2개 있어 불안정합니다.\n\n**틀린 선지**\n- ① 안정하다.: 제1열에 음수가 있으므로 불안정합니다.\n- ② 불안정하며, 오른쪽 반평면에 근이 1개 있다.: 부호는 2번 바뀝니다.\n- ④ 임계 안정 상태이다.: 제1열에 0 인 행이 없으므로 임계 상태가 아닙니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "안정도",
+      "루스 판별법"
+    ]
+  },
+  {
+    "id": "electrical-engineer-p047",
+    "certId": "electrical-engineer",
+    "subjectId": "circuit-control",
+    "chapterId": "control",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "2차 제어계에서 제동비(ζ)가 0 < ζ < 1 일 때의 응답은?",
+    "choices": [
+      "무제동(지속 진동)",
+      "부족 제동(감쇠 진동)",
+      "임계 제동",
+      "과제동"
+    ],
+    "answer": 2,
+    "oneLineConcept": "ζ < 1 부족 제동, ζ = 1 임계 제동, ζ > 1 과제동, ζ = 0 무제동",
+    "explanation": "제동비가 1 보다 작으면 제동이 **모자라서** 목표값을 넘었다 모자랐다 하며 진동하다가 점점 잦아듭니다.\n\n**틀린 선지**\n- ① 무제동(지속 진동): ζ = 0 일 때입니다.\n- ③ 임계 제동: ζ = 1 일 때입니다. 진동 없이 가장 빨리 목표값에 이릅니다.\n- ④ 과제동: ζ > 1 일 때입니다. 진동 없이 천천히 목표값에 이릅니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "과도 응답"
+    ]
+  },
+  {
+    "id": "electrical-engineer-p048",
+    "certId": "electrical-engineer",
+    "subjectId": "circuit-control",
+    "chapterId": "control",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "제어기의 동작 가운데 잔류 편차(오프셋)를 없애는 효과가 있는 것은?",
+    "choices": [
+      "비례(P) 동작",
+      "온-오프(2위치) 동작",
+      "미분(D) 동작",
+      "적분(I) 동작"
+    ],
+    "answer": 4,
+    "oneLineConcept": "적분(I) 동작은 잔류 편차를 없앤다",
+    "explanation": "**적분 동작**은 편차를 계속 쌓아 가며 조작량을 내므로, 편차가 조금이라도 남아 있으면 계속 고쳐 결국 0 으로 만듭니다.\n\n**틀린 선지**\n- ① 비례(P) 동작: 잔류 편차가 남는 것이 비례 동작의 단점입니다.\n- ② 온-오프(2위치) 동작: 켜짐·꺼짐 둘만 있어 목표값 근처에서 계속 오르내립니다.\n- ③ 미분(D) 동작: 편차의 변화 속도에 반응하여 응답을 빠르게 하고 진동을 억제합니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "제어 동작"
+    ]
+  }
+]

@@ -47,29 +47,33 @@ export const FALLBACK_TO_PREDICTED_WHEN_NO_PAST = true;
  */
 export const IMPORTANCE_BOOST: Record<number, number> = { 1: 0.6, 2: 0.8, 3: 1, 4: 1.2, 5: 1.4 };
 
+/**
+ * 지금은 모든 문제가 AI 예상문제다 (사용자 결정: 기출문제는 싣지 않는다).
+ * pastOnly·pastRatio 는 나중에 권리가 확인된 기출을 넣게 될 때를 위해 남겨 둔 값이다.
+ */
 export const LEVEL_RULES: Record<QuizLevel, LevelRule> = {
   basic: {
     label: "초급",
     title: "자주 나오는 기본 문제",
-    description: "기출 중에서 자주 나오는 기본 개념 문제입니다. 처음 시작하거나 오랜만에 공부한다면 여기부터 푸세요.",
+    description: "자주 나오는 기본 개념 문제입니다. 처음 시작하거나 오랜만에 공부한다면 여기부터 푸세요.",
     levels: ["basic"],
-    pastRatio: 1,
-    pastOnly: true,
+    pastRatio: 0,
+    pastOnly: false,
   },
   intermediate: {
     label: "중급",
     title: "합격선 수준 문제",
-    description: "합격하려면 여기까지는 풀 수 있어야 합니다. 합격선 수준의 기출 전체에서 나옵니다.",
+    description: "합격하려면 여기까지는 풀 수 있어야 합니다. 기본 문제와 합격선 수준 문제가 함께 나옵니다.",
     levels: ["basic", "intermediate"],
-    pastRatio: 1,
-    pastOnly: true,
+    pastRatio: 0,
+    pastOnly: false,
   },
   advanced: {
     label: "고급",
-    title: "기출 + AI 예상문제",
-    description: "기출문제와 AI 예상문제를 절반씩 섞었습니다. 조금 까다로운 문제로 실력을 다질 때 푸세요.",
+    title: "까다로운 문제",
+    description: "합격선 수준 문제와 까다로운 문제가 함께 나옵니다. 실력을 다질 때 푸세요.",
     levels: ["intermediate", "advanced"],
-    pastRatio: 0.5,
+    pastRatio: 0,
     pastOnly: false,
   },
 };

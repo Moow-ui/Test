@@ -1,0 +1,373 @@
+[
+  {
+    "id": "fire-facility-engineer-electrical-p044",
+    "certId": "fire-facility-engineer-electrical",
+    "subjectId": "fire-electric-facility",
+    "chapterId": "auto-fire-alarm",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "자동화재탐지설비에서 하나의 경계 구역의 넓이와 한 변의 길이 기준으로 옳은 것은? (주 출입구에서 내부 전체가 보이지 않는 경우)",
+    "choices": [
+      "넓이 500m² 이하, 한 변의 길이 50m 이하",
+      "넓이 600m² 이하, 한 변의 길이 50m 이하",
+      "넓이 600m² 이하, 한 변의 길이 100m 이하",
+      "넓이 1,000m² 이하, 한 변의 길이 100m 이하"
+    ],
+    "answer": 2,
+    "oneLineConcept": "경계 구역: 600m² 이하, 한 변 50m 이하",
+    "explanation": "하나의 경계 구역은 **넓이 600m² 이하, 한 변의 길이 50m 이하**입니다. 주 출입구에서 내부 전체가 보이는 곳은 한 변 50m 범위 안에서 1,000m² 이하까지 됩니다.\n\n**틀린 선지**\n- ① 넓이 500m² 이하, 한 변의 길이 50m 이하: 500m² 는 2개 층을 하나의 경계 구역으로 할 수 있는 넓이 기준입니다.\n- ③ 넓이 600m² 이하, 한 변의 길이 100m 이하: 한 변의 길이는 50m 이하입니다.\n- ④ 넓이 1,000m² 이하, 한 변의 길이 100m 이하: 넓이와 길이 모두 기준과 다릅니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "경계 구역"
+    ]
+  },
+  {
+    "id": "fire-facility-engineer-electrical-p045",
+    "certId": "fire-facility-engineer-electrical",
+    "subjectId": "fire-electric-facility",
+    "chapterId": "auto-fire-alarm",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "주위 온도가 일정한 상승률 이상으로 빠르게 오를 때 작동하는 감지기는?",
+    "choices": [
+      "차동식 감지기",
+      "정온식 감지기",
+      "이온화식 감지기",
+      "광전식 감지기"
+    ],
+    "answer": 1,
+    "oneLineConcept": "차동식 = 온도 상승 속도, 정온식 = 일정한 온도",
+    "explanation": "**차동식**은 온도가 '얼마나 빨리 오르는가'에 반응합니다. 불이 나면 온도가 갑자기 오르는 것을 잡아냅니다.\n\n**틀린 선지**\n- ② 정온식 감지기: 주위 온도가 정해진 온도 이상이 되면 작동합니다. 주방·보일러실에 씁니다.\n- ③ 이온화식 감지기: 연기가 들어와 이온 전류가 변하는 것으로 작동하는 연기 감지기입니다.\n- ④ 광전식 감지기: 연기가 빛을 가리거나 흩뜨리는 것으로 작동하는 연기 감지기입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "감지기"
+    ]
+  },
+  {
+    "id": "fire-facility-engineer-electrical-p046",
+    "certId": "fire-facility-engineer-electrical",
+    "subjectId": "fire-electric-facility",
+    "chapterId": "auto-fire-alarm",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "자동화재탐지설비의 발신기 설치 기준으로 옳은 것은?",
+    "choices": [
+      "발신기의 위치 표시등은 녹색 등으로 한다.",
+      "층마다 설치하되, 각 부분에서 하나의 발신기까지 수평 거리가 50m 이하가 되게 한다.",
+      "조작 스위치는 바닥에서 0.8m 이상 1.5m 이하의 높이에 설치한다.",
+      "조작 스위치는 바닥에서 1.8m 이상의 높이에 설치한다."
+    ],
+    "answer": 3,
+    "oneLineConcept": "발신기: 높이 0.8~1.5m, 수평 거리 25m 이하, 표시등은 적색",
+    "explanation": "발신기는 **바닥에서 0.8~1.5m** 높이에, 각 부분에서 **수평 거리 25m 이하**가 되게 설치합니다. 위치 표시등은 **적색**입니다.\n\n**틀린 선지**\n- ① 발신기의 위치 표시등은 녹색 등으로 한다.: 표시등은 적색입니다.\n- ② 층마다 설치하되, 각 부분에서 하나의 발신기까지 수평 거리가 50m 이하가 되게 한다.: 수평 거리는 25m 이하입니다.\n- ④ 조작 스위치는 바닥에서 1.8m 이상의 높이에 설치한다.: 0.8m 이상 1.5m 이하입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "발신기"
+    ]
+  },
+  {
+    "id": "fire-facility-engineer-electrical-p047",
+    "certId": "fire-facility-engineer-electrical",
+    "subjectId": "fire-electric-facility",
+    "chapterId": "auto-fire-alarm",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "자동화재탐지설비의 음향 장치에 대한 기준으로 옳지 않은 것은?",
+    "choices": [
+      "음량은 부착된 음향 장치의 중심에서 1m 떨어진 곳에서 90dB 이상일 것",
+      "정격 전압의 80% 전압에서 음향을 낼 수 있을 것",
+      "각 부분에서 하나의 음향 장치까지 수평 거리가 25m 이하일 것",
+      "감지기와 발신기의 작동과 연동하지 않고 수동으로만 작동할 것"
+    ],
+    "answer": 4,
+    "oneLineConcept": "음향 장치는 감지기·발신기의 작동과 연동하여 울려야 한다",
+    "explanation": "음향 장치는 **감지기나 발신기가 작동하면 자동으로** 울려야 합니다.\n\n**틀린 선지**\n- ① 음량은 부착된 음향 장치의 중심에서 1m 떨어진 곳에서 90dB 이상일 것: 맞는 기준입니다.\n- ② 정격 전압의 80% 전압에서 음향을 낼 수 있을 것: 맞는 기준입니다.\n- ③ 각 부분에서 하나의 음향 장치까지 수평 거리가 25m 이하일 것: 맞는 기준입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "음향 장치"
+    ]
+  },
+  {
+    "id": "fire-facility-engineer-electrical-p048",
+    "certId": "fire-facility-engineer-electrical",
+    "subjectId": "fire-electric-facility",
+    "chapterId": "auto-fire-alarm",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "자동화재탐지설비의 감지기 회로 배선을 '송배선식'으로 하는 가장 큰 이유는?",
+    "choices": [
+      "배선에 드는 전선의 양을 줄이려고",
+      "감지기 회로의 도통 시험(끊어진 곳이 없는지 확인)을 할 수 있게 하려고",
+      "감지기의 감도를 높이려고",
+      "수신기의 소비 전력을 줄이려고"
+    ],
+    "answer": 2,
+    "oneLineConcept": "송배선식: 도통 시험을 쉽게 하려는 배선 방식",
+    "explanation": "**송배선식**은 감지기를 한 줄로 차례차례 이어 가는 방식입니다. 회로 끝에 종단 저항을 달아 두면, 수신기에서 전류를 흘려 보아 중간에 선이 끊어졌는지 알 수 있습니다.\n\n**틀린 선지**\n- ① 배선에 드는 전선의 양을 줄이려고: 전선의 양은 오히려 늘 수 있습니다.\n- ③ 감지기의 감도를 높이려고: 감도와는 관계가 없습니다.\n- ④ 수신기의 소비 전력을 줄이려고: 소비 전력과는 관계가 없습니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "배선"
+    ]
+  },
+  {
+    "id": "fire-facility-engineer-electrical-p049",
+    "certId": "fire-facility-engineer-electrical",
+    "subjectId": "fire-electric-facility",
+    "chapterId": "auto-fire-alarm",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "자동화재탐지설비에 쓰는 축전지 설비(비상 전원)의 용량 기준으로 옳은 것은? (일반 건축물)",
+    "choices": [
+      "10분간 감시 상태를 지속한 뒤 60분 이상 경보할 수 있을 것",
+      "30분간 감시 상태를 지속한 뒤 10분 이상 경보할 수 있을 것",
+      "60분간 감시 상태를 지속한 뒤 10분 이상 경보할 수 있을 것",
+      "60분간 감시 상태를 지속한 뒤 60분 이상 경보할 수 있을 것"
+    ],
+    "answer": 3,
+    "oneLineConcept": "축전지: 감시 60분 + 경보 10분 이상",
+    "explanation": "정전이 되어도 **60분 동안 감시**를 계속하다가 불이 나면 **10분 이상 경보**를 울릴 수 있어야 합니다. (층수가 30층 이상인 고층 건축물은 경보 30분 이상)\n\n**틀린 선지**\n- ① 10분간 감시 상태를 지속한 뒤 60분 이상 경보할 수 있을 것: 감시 시간과 경보 시간이 바뀌었습니다.\n- ② 30분간 감시 상태를 지속한 뒤 10분 이상 경보할 수 있을 것: 감시 시간은 60분입니다.\n- ④ 60분간 감시 상태를 지속한 뒤 60분 이상 경보할 수 있을 것: 일반 건축물의 경보 시간은 10분 이상입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "비상 전원"
+    ]
+  },
+  {
+    "id": "fire-facility-engineer-electrical-p050",
+    "certId": "fire-facility-engineer-electrical",
+    "subjectId": "fire-electric-facility",
+    "chapterId": "alarm-broadcast",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "비상 방송 설비의 확성기(스피커) 설치 기준으로 옳은 것은?",
+    "choices": [
+      "음성 입력은 실외에 설치하는 것은 1W 이상일 것",
+      "음량 조정기의 배선은 2선식으로 할 것",
+      "각 부분에서 하나의 확성기까지 수평 거리가 50m 이하일 것",
+      "음성 입력은 3W(실내에 설치하는 것은 1W) 이상일 것"
+    ],
+    "answer": 4,
+    "oneLineConcept": "비상 방송 확성기: 3W(실내 1W) 이상, 수평 거리 25m 이하, 음량 조정기 3선식",
+    "explanation": "확성기의 음성 입력은 **3W 이상(실내는 1W 이상)**, 수평 거리는 25m 이하, 음량 조정기의 배선은 3선식입니다.\n\n**틀린 선지**\n- ① 음성 입력은 실외에 설치하는 것은 1W 이상일 것: 실외는 3W 이상입니다.\n- ② 음량 조정기의 배선은 2선식으로 할 것: 3선식으로 해야 합니다. 평소 음량을 줄여 두어도 비상 방송은 크게 나가게 하기 위해서입니다.\n- ③ 각 부분에서 하나의 확성기까지 수평 거리가 50m 이하일 것: 수평 거리는 25m 이하입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "비상 방송 설비"
+    ]
+  },
+  {
+    "id": "fire-facility-engineer-electrical-p051",
+    "certId": "fire-facility-engineer-electrical",
+    "subjectId": "fire-electric-facility",
+    "chapterId": "alarm-broadcast",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "누전 경보기의 설치 기준에서, 경계 전로의 정격 전류가 몇 A 를 초과하는 전로에는 1급 누전 경보기를 설치해야 하는가?",
+    "choices": [
+      "60A",
+      "30A",
+      "100A",
+      "150A"
+    ],
+    "answer": 1,
+    "oneLineConcept": "누전 경보기: 60A 초과는 1급, 60A 이하는 1급 또는 2급",
+    "explanation": "정격 전류가 **60A 를 넘으면 1급**, 60A 이하이면 1급 또는 2급을 설치합니다.\n\n**틀린 선지**\n- ② 30A: 기준과 다릅니다.\n- ③ 100A: 기준과 다릅니다.\n- ④ 150A: 기준과 다릅니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "누전 경보기"
+    ]
+  },
+  {
+    "id": "fire-facility-engineer-electrical-p052",
+    "certId": "fire-facility-engineer-electrical",
+    "subjectId": "fire-electric-facility",
+    "chapterId": "alarm-broadcast",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "자동화재속보설비의 속보기는 자동화재탐지설비로부터 작동 신호를 받은 뒤 몇 초 이내에, 몇 회 이상 소방관서에 자동으로 알려야 하는가?",
+    "choices": [
+      "10초 이내, 2회 이상",
+      "20초 이내, 3회 이상",
+      "30초 이내, 3회 이상",
+      "60초 이내, 5회 이상"
+    ],
+    "answer": 2,
+    "oneLineConcept": "자동화재속보설비: 20초 이내, 3회 이상 통보",
+    "explanation": "속보기는 신호를 받으면 **20초 이내**에 소방관서에 자동으로 신호를 보내 **3회 이상** 알립니다.\n\n**틀린 선지**\n- ① 10초 이내, 2회 이상: 기준과 다릅니다.\n- ③ 30초 이내, 3회 이상: 시간 기준이 다릅니다.\n- ④ 60초 이내, 5회 이상: 기준과 다릅니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "자동화재속보설비"
+    ]
+  },
+  {
+    "id": "fire-facility-engineer-electrical-p053",
+    "certId": "fire-facility-engineer-electrical",
+    "subjectId": "fire-electric-facility",
+    "chapterId": "guide-lighting",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "피난구 유도등의 설치 높이로 옳은 것은?",
+    "choices": [
+      "바닥으로부터 0.5m 이하",
+      "바닥으로부터 1m 이하",
+      "바닥으로부터 1.5m 이상",
+      "천장 면에 붙여서"
+    ],
+    "answer": 3,
+    "oneLineConcept": "피난구 유도등: 1.5m 이상 / 복도·계단 통로 유도등: 1m 이하",
+    "explanation": "**피난구 유도등**은 멀리서도 출입구가 보이도록 바닥에서 **1.5m 이상** 높이에 답니다. 반대로 복도 통로 유도등은 연기 아래로 기어서 피난할 때 보이도록 1m 이하에 답니다.\n\n**틀린 선지**\n- ① 바닥으로부터 0.5m 이하: 기준과 다릅니다.\n- ② 바닥으로부터 1m 이하: 복도 통로 유도등·계단 통로 유도등의 기준입니다.\n- ④ 천장 면에 붙여서: 기준과 다릅니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "유도등"
+    ]
+  },
+  {
+    "id": "fire-facility-engineer-electrical-p054",
+    "certId": "fire-facility-engineer-electrical",
+    "subjectId": "fire-electric-facility",
+    "chapterId": "guide-lighting",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "유도등의 비상 전원을 60분 이상 작동할 수 있는 용량으로 해야 하는 곳이 아닌 것은?",
+    "choices": [
+      "지하층을 제외한 층수가 11층 이상인 층",
+      "지하층 또는 무창층으로서 용도가 지하상가인 곳",
+      "지하층 또는 무창층으로서 용도가 지하 역사인 곳",
+      "지상 5층 건물의 3층 사무실"
+    ],
+    "answer": 4,
+    "oneLineConcept": "유도등 비상 전원: 기본 20분, 11층 이상과 지하·무창층의 특정 용도는 60분",
+    "explanation": "유도등의 비상 전원은 기본 **20분 이상**입니다. 다만 **11층 이상의 층**과, 지하층·무창층으로서 도매 시장·소매 시장·여객 자동차 터미널·지하 역사·지하상가인 곳은 피난에 시간이 오래 걸리므로 60분 이상입니다.\n\n**틀린 선지**\n- ① 지하층을 제외한 층수가 11층 이상인 층: 60분 이상이어야 하는 곳입니다.\n- ② 지하층 또는 무창층으로서 용도가 지하상가인 곳: 60분 이상이어야 하는 곳입니다.\n- ③ 지하층 또는 무창층으로서 용도가 지하 역사인 곳: 60분 이상이어야 하는 곳입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "유도등",
+      "비상 전원"
+    ]
+  },
+  {
+    "id": "fire-facility-engineer-electrical-p055",
+    "certId": "fire-facility-engineer-electrical",
+    "subjectId": "fire-electric-facility",
+    "chapterId": "guide-lighting",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "객석 통로의 직선 부분 길이가 30m 인 공연장에 설치해야 하는 객석 유도등의 최소 개수는?",
+    "choices": [
+      "7개",
+      "6개",
+      "8개",
+      "9개"
+    ],
+    "answer": 1,
+    "oneLineConcept": "객석 유도등 수 = 통로 직선 길이 ÷ 4 − 1 (소수점은 올림)",
+    "explanation": "1. 공식: 개수 = 길이 ÷ 4 − 1\n2. 숫자 대입: 30 ÷ 4 − 1 = 7.5 − 1 = 6.5\n3. 소수점 아래는 올려서 7개\n\n**틀린 선지**\n- ② 6개: 소수점 아래를 버린 값입니다.\n- ③ 8개: 1 을 빼지 않고 올림한 값입니다.\n- ④ 9개: 계산이 틀린 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "객석 유도등",
+      "계산"
+    ]
+  },
+  {
+    "id": "fire-facility-engineer-electrical-p056",
+    "certId": "fire-facility-engineer-electrical",
+    "subjectId": "fire-electric-facility",
+    "chapterId": "emergency-power",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "비상 콘센트 설비의 전원 회로 기준으로 옳은 것은?",
+    "choices": [
+      "단상 교류 220V, 공급 용량 1.5kVA 이상",
+      "단상 교류 110V, 공급 용량 1.0kVA 이상",
+      "3상 교류 380V, 공급 용량 3.0kVA 이상",
+      "직류 24V, 공급 용량 0.5kVA 이상"
+    ],
+    "answer": 1,
+    "oneLineConcept": "비상 콘센트: 단상 교류 220V, 1.5kVA 이상",
+    "explanation": "비상 콘센트는 소방대가 조명이나 장비를 꽂아 쓰는 콘센트로, **단상 교류 220V, 공급 용량 1.5kVA 이상**입니다.\n\n**틀린 선지**\n- ② 단상 교류 110V, 공급 용량 1.0kVA 이상: 기준과 다릅니다.\n- ③ 3상 교류 380V, 공급 용량 3.0kVA 이상: 현재 기준에는 단상 220V 만 있습니다.\n- ④ 직류 24V, 공급 용량 0.5kVA 이상: 기준과 다릅니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "비상 콘센트"
+    ]
+  },
+  {
+    "id": "fire-facility-engineer-electrical-p057",
+    "certId": "fire-facility-engineer-electrical",
+    "subjectId": "fire-electric-facility",
+    "chapterId": "emergency-power",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "비상 콘센트 설비에서 하나의 전용 회로에 설치하는 비상 콘센트의 수는 몇 개 이하로 해야 하는가?",
+    "choices": [
+      "5개 이하",
+      "10개 이하",
+      "15개 이하",
+      "20개 이하"
+    ],
+    "answer": 2,
+    "oneLineConcept": "비상 콘센트: 하나의 전용 회로에 10개 이하",
+    "explanation": "하나의 전용 회로에 설치하는 비상 콘센트는 **10개 이하**입니다. 이때 전선의 용량은 비상 콘센트(3개 이상이면 3개)의 공급 용량을 합한 것 이상으로 합니다.\n\n**틀린 선지**\n- ① 5개 이하: 기준과 다릅니다.\n- ③ 15개 이하: 기준과 다릅니다.\n- ④ 20개 이하: 기준과 다릅니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "비상 콘센트"
+    ]
+  },
+  {
+    "id": "fire-facility-engineer-electrical-p058",
+    "certId": "fire-facility-engineer-electrical",
+    "subjectId": "fire-electric-facility",
+    "chapterId": "emergency-power",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "무선 통신 보조 설비에 쓰는 누설 동축 케이블과 동축 케이블의 임피던스는 몇 Ω 으로 해야 하는가?",
+    "choices": [
+      "25Ω",
+      "100Ω",
+      "75Ω",
+      "50Ω"
+    ],
+    "answer": 4,
+    "oneLineConcept": "무선 통신 보조 설비의 임피던스: 50Ω",
+    "explanation": "누설 동축 케이블, 동축 케이블, 안테나, 분배기 등의 임피던스는 모두 **50Ω** 으로 맞춥니다. 임피던스가 서로 다르면 신호가 반사되어 통신 품질이 나빠집니다.\n\n**틀린 선지**\n- ① 25Ω: 기준과 다릅니다.\n- ② 100Ω: 기준과 다릅니다.\n- ③ 75Ω: 텔레비전 수신용 동축 케이블에 쓰는 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "무선 통신 보조 설비"
+    ]
+  },
+  {
+    "id": "fire-facility-engineer-electrical-p059",
+    "certId": "fire-facility-engineer-electrical",
+    "subjectId": "fire-electric-facility",
+    "chapterId": "emergency-power",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "무선 통신 보조 설비의 증폭기에 설치하는 비상 전원의 용량은, 설비를 유효하게 몇 분 이상 작동시킬 수 있어야 하는가?",
+    "choices": [
+      "10분 이상",
+      "20분 이상",
+      "30분 이상",
+      "60분 이상"
+    ],
+    "answer": 3,
+    "oneLineConcept": "무선 통신 보조 설비 증폭기의 비상 전원: 30분 이상",
+    "explanation": "증폭기의 비상 전원 용량은 **30분 이상**입니다. 소방대가 지하나 고층에서 무전기로 통신하며 활동하는 시간을 고려한 것입니다.\n\n**틀린 선지**\n- ① 10분 이상: 기준과 다릅니다.\n- ② 20분 이상: 유도등·비상 조명등의 기본 기준입니다.\n- ④ 60분 이상: 기준과 다릅니다.",
+    "frequency": 3,
+    "reviewStatus": "unverified",
+    "tags": [
+      "무선 통신 보조 설비",
+      "비상 전원"
+    ]
+  }
+]

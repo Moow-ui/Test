@@ -14,11 +14,11 @@ export function CertExplorer({ certs }: { certs: CertListItem[] }) {
 
   return (
     <section aria-labelledby="explorer-title">
-      <h2 id="explorer-title" className="text-xl font-extrabold">
+      <h2 id="explorer-title" className="text-center text-xl font-extrabold">
         자격증 찾기
       </h2>
 
-      <div className="mt-2">
+      <div className="mx-auto mt-3 max-w-2xl">
         <label htmlFor="cert-search" className="sr-only">
           자격증 이름으로 검색
         </label>
@@ -29,11 +29,11 @@ export function CertExplorer({ certs }: { certs: CertListItem[] }) {
           onChange={(e) => setQuery(e.target.value)}
           placeholder="자격증 이름 (예: 전기기능사, 지게차, ㅈㄱㄱㄴㅅ)"
           autoComplete="off"
-          className="block h-14 w-full rounded-lg border-2 border-line bg-surface px-4 text-lg text-ink placeholder:text-ink-sub"
+          className="block h-14 w-full rounded-full border-2 border-primary bg-surface px-6 text-center text-lg text-ink shadow-[var(--shadow)] placeholder:text-ink-sub"
         />
       </div>
 
-      <p aria-live="polite" className="mt-3 text-[0.9rem] font-bold text-ink-sub">
+      <p aria-live="polite" className="mt-4 text-center text-[0.9rem] font-bold text-ink-sub">
         {searching ? `검색 결과 ${results.length}개` : `전체 ${certs.length}개`}
       </p>
 
@@ -45,7 +45,7 @@ export function CertExplorer({ certs }: { certs: CertListItem[] }) {
             <li key={c.id}>
               <Link
                 href={`/cert/${c.id}`}
-                className="card flex min-h-[4.5rem] items-center justify-between gap-2 p-3 hover:border-ink"
+                className="card flex min-h-[4.5rem] items-center justify-between gap-2 p-3 pl-4 hover:border-primary"
               >
                 <span>
                   <span className="block text-[1.05rem] font-bold leading-snug">{c.name}</span>

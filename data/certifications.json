@@ -10,16 +10,6 @@
     "field": "건설기계"
   },
   {
-    "id": "excavator-operator",
-    "name": "굴착기운전기능사",
-    "officialName": "굴착기운전기능사",
-    "spacedName": "굴착기 운전 기능사",
-    "shortNames": ["굴착기 기능사", "굴삭기운전기능사", "굴삭기 자격증", "포크레인 자격증", "굴착기 필기"],
-    "relatedCertIds": ["forklift-operator", "loader-operator", "crane-operator"],
-    "grade": "기능사",
-    "field": "건설기계"
-  },
-  {
     "id": "electrician-craftsman",
     "name": "전기기능사",
     "officialName": "전기기능사",
@@ -28,6 +18,86 @@
     "relatedCertIds": ["electrical-industrial-engineer", "electrical-engineer", "elevator-craftsman", "electrical-work-industrial-engineer"],
     "grade": "기능사",
     "field": "전기"
+  },
+  {
+    "id": "computer-literacy-2",
+    "name": "컴퓨터활용능력 2급",
+    "officialName": "컴퓨터활용능력 2급",
+    "spacedName": "컴퓨터 활용 능력 2급",
+    "shortNames": ["컴활 2급", "컴활2급", "컴활", "컴퓨터활용능력", "컴활 필기"],
+    "relatedCertIds": ["computer-literacy-1", "information-processing-engineer"],
+    "grade": "2급",
+    "field": "사무·컴퓨터"
+  },
+  {
+    "id": "computer-literacy-1",
+    "name": "컴퓨터활용능력 1급",
+    "officialName": "컴퓨터활용능력 1급",
+    "spacedName": "컴퓨터 활용 능력 1급",
+    "shortNames": ["컴활 1급", "컴활1급", "컴활", "컴퓨터활용능력", "컴활 필기"],
+    "relatedCertIds": ["computer-literacy-2", "information-processing-engineer"],
+    "grade": "1급",
+    "field": "사무·컴퓨터"
+  },
+  {
+    "id": "industrial-safety-engineer",
+    "name": "산업안전기사",
+    "officialName": "산업안전기사",
+    "spacedName": "산업 안전 기사",
+    "shortNames": ["산안기", "산업안전 자격증", "산업안전기사 필기"],
+    "relatedCertIds": ["industrial-safety-industrial-engineer", "construction-safety-engineer", "hazardous-materials-industrial-engineer"],
+    "grade": "기사",
+    "field": "안전관리"
+  },
+  {
+    "id": "information-processing-engineer",
+    "name": "정보처리기사",
+    "officialName": "정보처리기사",
+    "spacedName": "정보 처리 기사",
+    "shortNames": ["정처기", "정보처리 자격증", "정보처리기사 필기"],
+    "relatedCertIds": ["computer-literacy-1", "computer-literacy-2"],
+    "grade": "기사",
+    "field": "정보기술"
+  },
+  {
+    "id": "electrical-engineer",
+    "name": "전기기사",
+    "officialName": "전기기사",
+    "spacedName": "전기 기사",
+    "shortNames": ["전기기사 필기", "전기 기사 자격증"],
+    "relatedCertIds": ["electrical-industrial-engineer", "electrical-work-engineer", "fire-facility-engineer-electrical"],
+    "grade": "기사",
+    "field": "전기"
+  },
+  {
+    "id": "fire-facility-engineer-electrical",
+    "name": "소방설비기사(전기분야)",
+    "officialName": "소방설비기사(전기분야)",
+    "spacedName": "소방 설비 기사 전기",
+    "shortNames": ["소방설비기사 전기", "소방전기", "소방기사 전기", "소방설비기사 필기"],
+    "relatedCertIds": ["fire-facility-engineer-mechanical", "electrical-engineer"],
+    "grade": "기사",
+    "field": "소방"
+  },
+  {
+    "id": "construction-safety-engineer",
+    "name": "건설안전기사",
+    "officialName": "건설안전기사",
+    "spacedName": "건설 안전 기사",
+    "shortNames": ["건안기", "건설안전 자격증", "건설안전기사 필기"],
+    "relatedCertIds": ["construction-safety-industrial-engineer", "industrial-safety-engineer"],
+    "grade": "기사",
+    "field": "안전관리"
+  },
+  {
+    "id": "excavator-operator",
+    "name": "굴착기운전기능사",
+    "officialName": "굴착기운전기능사",
+    "spacedName": "굴착기 운전 기능사",
+    "shortNames": ["굴착기 기능사", "굴삭기운전기능사", "굴삭기 자격증", "포크레인 자격증", "굴착기 필기"],
+    "relatedCertIds": ["forklift-operator", "loader-operator", "crane-operator"],
+    "grade": "기능사",
+    "field": "건설기계"
   },
   {
     "id": "arc-welding-craftsman",
@@ -60,16 +130,6 @@
     "field": "가스·에너지"
   },
   {
-    "id": "industrial-safety-engineer",
-    "name": "산업안전기사",
-    "officialName": "산업안전기사",
-    "spacedName": "산업 안전 기사",
-    "shortNames": ["산안기", "산업안전 자격증", "산업안전기사 필기"],
-    "relatedCertIds": ["industrial-safety-industrial-engineer", "construction-safety-engineer", "hazardous-materials-industrial-engineer"],
-    "grade": "기사",
-    "field": "안전관리"
-  },
-  {
     "id": "industrial-safety-industrial-engineer",
     "name": "산업안전산업기사",
     "officialName": "산업안전산업기사",
@@ -77,16 +137,6 @@
     "shortNames": ["산안산기", "산업안전 산업기사", "산업안전산업기사 필기"],
     "relatedCertIds": ["industrial-safety-engineer", "construction-safety-industrial-engineer", "hazardous-materials-craftsman"],
     "grade": "산업기사",
-    "field": "안전관리"
-  },
-  {
-    "id": "construction-safety-engineer",
-    "name": "건설안전기사",
-    "officialName": "건설안전기사",
-    "spacedName": "건설 안전 기사",
-    "shortNames": ["건안기", "건설안전 자격증", "건설안전기사 필기"],
-    "relatedCertIds": ["construction-safety-industrial-engineer", "industrial-safety-engineer"],
-    "grade": "기사",
     "field": "안전관리"
   },
   {
@@ -118,16 +168,6 @@
     "relatedCertIds": ["refrigeration-craftsman", "gas-craftsman", "plumbing-craftsman"],
     "grade": "기능사",
     "field": "가스·에너지"
-  },
-  {
-    "id": "electrical-engineer",
-    "name": "전기기사",
-    "officialName": "전기기사",
-    "spacedName": "전기 기사",
-    "shortNames": ["전기기사 필기", "전기 기사 자격증"],
-    "relatedCertIds": ["electrical-industrial-engineer", "electrical-work-engineer", "fire-facility-engineer-electrical"],
-    "grade": "기사",
-    "field": "전기"
   },
   {
     "id": "electrical-industrial-engineer",
@@ -178,16 +218,6 @@
     "relatedCertIds": ["construction-safety-engineer", "industrial-safety-industrial-engineer"],
     "grade": "산업기사",
     "field": "안전관리"
-  },
-  {
-    "id": "fire-facility-engineer-electrical",
-    "name": "소방설비기사(전기분야)",
-    "officialName": "소방설비기사(전기분야)",
-    "spacedName": "소방 설비 기사 전기",
-    "shortNames": ["소방설비기사 전기", "소방전기", "소방기사 전기", "소방설비기사 필기"],
-    "relatedCertIds": ["fire-facility-engineer-mechanical", "electrical-engineer"],
-    "grade": "기사",
-    "field": "소방"
   },
   {
     "id": "fire-facility-engineer-mechanical",

@@ -28,7 +28,7 @@ export function certMainMeta(cert: Certification): PageMeta {
   }
   const subjects = cert.subjects.map((s) => s.name).join("·");
   return {
-    title: `${cert.name} 필기 기출문제·출제경향 | ${SITE_NAME}`,
+    title: `${cert.name} 필기 예상문제·출제경향 | ${SITE_NAME}`,
     description: `${cert.name} 필기 ${cert.examInfo.totalQuestions}문항(${subjects})의 과목별 출제 비중과 단원별 중요도를 확인하고, 초급·중급·고급 문제를 5문제부터 바로 풀어 보세요. 로그인 없이 무료입니다.`,
     h1: `${cert.name} 합격 문제 풀기`,
     path,

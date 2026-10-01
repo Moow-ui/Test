@@ -39,14 +39,14 @@ export function QuickStart({ certs, featuredId }: { certs: CertListItem[]; featu
   return (
     <section
       aria-labelledby="quick-start-title"
-      className="rounded-xl border-2 border-primary bg-primary-soft p-4 sm:p-5"
+      className="mx-auto max-w-3xl rounded-2xl border border-primary bg-primary-soft p-4 text-center shadow-[var(--shadow)] sm:p-6"
     >
       <h2 id="quick-start-title" className="text-[1.05rem] font-bold">
         {recentReady ? "최근 공부한 자격증" : "처음이신가요? 이 자격증으로 바로 시작해 보세요"}
       </h2>
-      <p className="mt-1 text-2xl font-extrabold">{target.name}</p>
+      <p className="mt-1 text-2xl font-extrabold text-accent sm:text-3xl">{target.name}</p>
 
-      <div className="mt-3 flex flex-col gap-2 sm:flex-row sm:flex-wrap">
+      <div className="mt-3 flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:justify-center">
         {inProgress ? (
           <>
             <Link href={`/cert/${target.id}/quiz`} className="btn btn-primary btn-lg">
@@ -73,7 +73,7 @@ export function QuickStart({ certs, featuredId }: { certs: CertListItem[]; featu
       {others.length > 0 && (
         <div className="mt-4 border-t border-line pt-3">
           <h3 className="text-[0.95rem] font-bold">최근 본 다른 자격증</h3>
-          <ul className="mt-2 flex flex-wrap gap-2">
+          <ul className="mt-2 flex flex-wrap justify-center gap-2">
             {others.map((c) => (
               <li key={c.id}>
                 <Link href={`/cert/${c.id}`} className="btn min-h-11 px-3 py-1 text-[0.95rem]">

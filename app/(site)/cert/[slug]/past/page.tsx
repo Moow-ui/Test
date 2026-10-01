@@ -71,16 +71,15 @@ export default async function PastPage({ params }: Props) {
           <p>
             {cert.name} 필기 기출문제 가운데 자주 나오는 문제 {shown.length}개를 골라 정답과 해설을
             정리했습니다. {cert.spacedName} 시험은 {cert.subjects.map((s) => s.name).join(", ")}{" "}
-            과목에서 총 {cert.examInfo.totalQuestions}문항이 나오며, 큐패스에는 권리가 확인된 기출문제{" "}
+            과목에서 총 {cert.examInfo.totalQuestions}문항이 나오며, 이 사이트에는 권리가 확인된 기출문제{" "}
             {past.length}개가 등록되어 있습니다.
           </p>
         ) : (
           <>
             <p>
-              {cert.name} 기출문제의 저작권은 한국산업인력공단에 있어서, 큐패스는 권리가 확인된
-              기출문제만 싣습니다. 지금은 최근 출제 유형을 분석해 직접 만든 AI 예상문제{" "}
-              {predictedCount}개를 제공하고 있고, 그중 시험에 자주 나오는 유형 {shown.length}개를 아래에
-              정답·해설과 함께 정리했습니다.
+              이 사이트는 실제 기출문제를 싣지 않습니다. 대신 {cert.name} 필기의 출제 유형과 난도를
+              참고해 직접 만든 AI 예상문제 {predictedCount}개를 제공하고 있고, 그중 시험에 자주 나오는
+              유형 {shown.length}개를 아래에 정답·해설과 함께 정리했습니다.
             </p>
             <p>
               {cert.spacedName} 필기는 {cert.subjects.map((s) => `${s.name} ${s.questionCount}문항`).join(", ")}

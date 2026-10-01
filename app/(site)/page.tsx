@@ -9,7 +9,7 @@ import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "@/lib/site";
 export const metadata: Metadata = {
   alternates: { canonical: "/" },
   openGraph: {
-    title: `${SITE_NAME} | 국가기술자격 필기 기출·예상문제 무료 풀이`,
+    title: `${SITE_NAME} | 자격증 필기 예상문제 무료 풀이`,
     description: SITE_DESCRIPTION,
     url: "/",
   },
@@ -33,9 +33,10 @@ export default async function HomePage() {
         }}
       />
 
-      <h1 className="text-2xl font-extrabold leading-snug sm:text-3xl">
+      <h1 className="pt-3 text-center text-[1.7rem] font-extrabold leading-snug tracking-tight sm:pt-6 sm:text-4xl">
         세상의 모든 자격증.
-        <br className="sm:hidden" /> 5분 문제 연습하기.
+        <br />
+        <span className="text-accent">5분 문제 연습하기.</span>
       </h1>
 
       <QuickStart certs={certs} featuredId={featured.id} />
@@ -43,8 +44,8 @@ export default async function HomePage() {
       <CertExplorer certs={certs} />
 
       <section aria-labelledby="about-title" className="cv card p-4 sm:p-5">
-        <h2 id="about-title" className="text-lg font-extrabold">
-          큐패스는 이렇게 씁니다
+        <h2 id="about-title" className="text-center text-lg font-extrabold">
+          {SITE_NAME}은 이렇게 씁니다
         </h2>
         <ol className="mt-2 list-decimal space-y-1 pl-6">
           <li>자격증을 고르고 초급·중급·고급 중 하나를 누릅니다.</li>

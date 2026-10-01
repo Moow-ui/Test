@@ -13,6 +13,8 @@ const TIERS: Record<string, { stars: string; style: string }> = {
   산업기사: { stars: "★★", style: "border-[#64748b] bg-[linear-gradient(135deg,#ffffff,#b6c2d1)] text-[#0f172a]" },
   기사: { stars: "★★★", style: "border-[#b45309] bg-[linear-gradient(135deg,#fef3c7,#f5b301)] text-[#3b2a00]" },
   기능장: { stars: "★★★★", style: "border-[#6d28d9] bg-[linear-gradient(135deg,#ede9fe,#a78bfa)] text-[#2e1065]" },
+  "2급": { stars: "★", style: "border-[#0f766e] bg-[linear-gradient(135deg,#e0f7f3,#7fd1c5)] text-[#06302b]" },
+  "1급": { stars: "★★", style: "border-[#0f766e] bg-[linear-gradient(135deg,#ccfbf1,#2dd4bf)] text-[#042f2e]" },
   기술사: { stars: "★★★★★", style: "border-[#9f1239] bg-[linear-gradient(135deg,#ffe4e6,#fb7185)] text-[#4c0519]" },
 };
 const CUSTOM_TIER = { stars: "◆", style: "border-[#1d4ed8] bg-[linear-gradient(135deg,#dbeafe,#93c5fd)] text-[#172554]" };

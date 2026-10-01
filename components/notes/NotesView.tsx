@@ -51,7 +51,7 @@ export function NotesView({
         <h1 className="mt-1 text-2xl font-extrabold">
           {cert.name} 오답노트 {hydrated && `(${notes.length}문제)`}
         </h1>
-        <p className="print-only text-[0.9rem]">큐패스 오답노트 · 정답과 해설 포함</p>
+        <p className="print-only text-[0.9rem]">자격증달인 오답노트 · 정답과 해설 포함</p>
       </header>
 
       {!hydrated ? (
@@ -117,7 +117,7 @@ export function NotesView({
                   </span>
                   <span className="text-[0.85rem] font-bold text-ink-sub">{locationOf(q)}</span>
                 </div>
-                <h2 className="mt-1 text-lg font-bold leading-normal">{q.stem}</h2>
+                <h2 className="mt-1 whitespace-pre-wrap text-lg font-bold leading-normal">{q.stem}</h2>
                 <ol className="mt-2 space-y-1">
                   {q.choices.map((choice, ci) => {
                     const n = ci + 1;

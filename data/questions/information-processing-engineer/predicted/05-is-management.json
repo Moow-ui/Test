@@ -1,0 +1,283 @@
+[
+  {
+    "id": "information-processing-engineer-p049",
+    "certId": "information-processing-engineer",
+    "subjectId": "is-management",
+    "chapterId": "sw-methodology",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "소프트웨어 생명주기 모형 가운데, 각 단계를 확실히 끝낸 뒤 다음 단계로 넘어가며 앞 단계로 되돌아가기 어려운 고전적인 모형은?",
+    "choices": [
+      "폭포수 모형",
+      "프로토타입 모형",
+      "나선형 모형",
+      "애자일 모형"
+    ],
+    "answer": 1,
+    "oneLineConcept": "폭포수 모형: 단계별로 차례대로 진행하는 고전적 모형",
+    "explanation": "**폭포수 모형**은 물이 위에서 아래로만 떨어지듯, 분석 → 설계 → 구현 → 테스트 → 유지보수를 순서대로 진행합니다.\n\n**틀린 선지**\n- ② 프로토타입 모형: 견본(시제품)을 먼저 만들어 사용자의 요구를 확인하는 모형입니다.\n- ③ 나선형 모형: 계획 → 위험 분석 → 개발 → 평가를 되풀이하는 모형입니다.\n- ④ 애자일 모형: 짧은 주기로 되풀이하며 변화에 빠르게 대응하는 모형입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "생명주기"
+    ]
+  },
+  {
+    "id": "information-processing-engineer-p050",
+    "certId": "information-processing-engineer",
+    "subjectId": "is-management",
+    "chapterId": "sw-methodology",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "예측된 총 라인 수가 36,000 라인이고, 개발자 6명이 참여하며, 개발자 1인당 월평균 생산성이 300 라인일 때 개발에 걸리는 기간은?",
+    "choices": [
+      "10개월",
+      "20개월",
+      "120개월",
+      "6개월"
+    ],
+    "answer": 2,
+    "oneLineConcept": "개발 기간 = 총 라인 수 ÷ (인원 × 1인당 월 생산 라인 수)",
+    "explanation": "1. 한 달 동안 6명이 만드는 양 = 6 × 300 = 1,800 라인\n2. 개발 기간 = 36,000 ÷ 1,800\n3. 답: 20개월\n\n검산: 1,800 × 20 = 36,000 라인\n\n**틀린 선지**\n- ① 10개월: 계산이 틀린 값입니다.\n- ③ 120개월: 한 명이 혼자 했을 때의 기간(36,000 ÷ 300)입니다.\n- ④ 6개월: 계산이 틀린 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "비용 산정",
+      "계산"
+    ]
+  },
+  {
+    "id": "information-processing-engineer-p051",
+    "certId": "information-processing-engineer",
+    "subjectId": "is-management",
+    "chapterId": "sw-methodology",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "COCOMO 모형에서 5만 라인 이하의 중·소규모 소프트웨어(일반 업무용, 과학 기술 계산용 등)를 개발하는 유형은?",
+    "choices": [
+      "분산형(Distributed)",
+      "반분리형(Semi-Detached)",
+      "내장형(Embedded)",
+      "조직형(Organic)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "COCOMO: 조직형(5만 이하), 반분리형(30만 이하), 내장형(30만 초과)",
+    "explanation": "**조직형**은 가장 작은 규모의 유형입니다.\n\n**틀린 선지**\n- ① 분산형(Distributed): COCOMO 의 유형이 아닙니다.\n- ② 반분리형(Semi-Detached): 30만 라인 이하의 운영체제, 데이터베이스 관리 시스템 등을 개발하는 유형입니다.\n- ③ 내장형(Embedded): 30만 라인이 넘는 초대형 시스템 소프트웨어를 개발하는 유형입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "비용 산정",
+      "COCOMO"
+    ]
+  },
+  {
+    "id": "information-processing-engineer-p052",
+    "certId": "information-processing-engineer",
+    "subjectId": "is-management",
+    "chapterId": "sw-methodology",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "CMMI(능력 성숙도 통합 모델)의 성숙도 단계를 낮은 순서부터 옳게 나열한 것은?",
+    "choices": [
+      "관리 → 초기 → 정의 → 정량적 관리 → 최적화",
+      "초기 → 정의 → 관리 → 최적화 → 정량적 관리",
+      "초기 → 관리 → 정의 → 정량적 관리 → 최적화",
+      "초기 → 관리 → 정량적 관리 → 정의 → 최적화"
+    ],
+    "answer": 3,
+    "oneLineConcept": "CMMI 5단계: 초기 → 관리 → 정의 → 정량적 관리 → 최적화",
+    "explanation": "1. 초기: 정해진 절차 없이 사람에 의존\n2. 관리: 프로젝트 단위로 절차를 관리\n3. 정의: 조직 전체의 표준 절차를 정함\n4. 정량적 관리: 숫자로 측정하며 관리\n5. 최적화: 계속 개선\n\n**틀린 선지**\n- ① 관리 → 초기 → 정의 → 정량적 관리 → 최적화: 초기가 가장 낮은 단계입니다.\n- ② 초기 → 정의 → 관리 → 최적화 → 정량적 관리: 관리가 정의보다 앞이고, 최적화가 맨 마지막입니다.\n- ④ 초기 → 관리 → 정량적 관리 → 정의 → 최적화: 정의가 정량적 관리보다 앞입니다.",
+    "frequency": 3,
+    "reviewStatus": "unverified",
+    "tags": [
+      "CMMI"
+    ]
+  },
+  {
+    "id": "information-processing-engineer-p053",
+    "certId": "information-processing-engineer",
+    "subjectId": "is-management",
+    "chapterId": "it-trends",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "클라우드 서비스 유형 가운데, 사용자가 프로그램을 설치하지 않고 인터넷으로 접속해 소프트웨어를 빌려 쓰는 서비스는?",
+    "choices": [
+      "IaaS",
+      "PaaS",
+      "SaaS",
+      "BaaS"
+    ],
+    "answer": 3,
+    "oneLineConcept": "SaaS: 소프트웨어를 인터넷으로 빌려 쓴다",
+    "explanation": "**SaaS** 의 첫 글자 S 는 Software 입니다. 웹 메일이나 온라인 문서 편집기가 그 예입니다.\n\n**틀린 선지**\n- ① IaaS: 서버·저장 장치 같은 기반 시설을 빌려주는 서비스입니다.\n- ② PaaS: 프로그램을 개발하고 실행할 수 있는 환경(플랫폼)을 빌려주는 서비스입니다.\n- ④ BaaS: 블록체인 개발 환경을 빌려주는 서비스입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "클라우드"
+    ]
+  },
+  {
+    "id": "information-processing-engineer-p054",
+    "certId": "information-processing-engineer",
+    "subjectId": "is-management",
+    "chapterId": "it-trends",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "RAID 방식 가운데, 같은 데이터를 두 개의 디스크에 똑같이 저장(미러링)하여 한 디스크가 고장 나도 복구할 수 있는 것은?",
+    "choices": [
+      "RAID 0",
+      "RAID 1",
+      "RAID 5",
+      "RAID 6"
+    ],
+    "answer": 2,
+    "oneLineConcept": "RAID 0 = 스트라이핑(나눠 저장), RAID 1 = 미러링(똑같이 복사)",
+    "explanation": "**RAID 1** 은 거울(mirror)처럼 똑같은 내용을 두 디스크에 씁니다. 안전하지만 저장 공간은 절반만 쓸 수 있습니다.\n\n**틀린 선지**\n- ① RAID 0: 데이터를 여러 디스크에 나눠 저장해 빠르지만, 하나만 고장 나도 모두 잃습니다.\n- ③ RAID 5: 오류 복구용 패리티를 여러 디스크에 나눠 저장하는 방식입니다.\n- ④ RAID 6: 패리티를 두 개 두어 디스크 두 개가 고장 나도 복구할 수 있는 방식입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "RAID"
+    ]
+  },
+  {
+    "id": "information-processing-engineer-p055",
+    "certId": "information-processing-engineer",
+    "subjectId": "is-management",
+    "chapterId": "it-trends",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "네트워크를 제어하는 부분과 데이터를 전달하는 부분을 분리하여, 소프트웨어로 네트워크를 중앙에서 제어·관리하는 기술은?",
+    "choices": [
+      "SDN",
+      "NFC",
+      "VPN",
+      "CDN"
+    ],
+    "answer": 1,
+    "oneLineConcept": "SDN: 소프트웨어로 네트워크를 제어하는 기술",
+    "explanation": "**SDN(소프트웨어 정의 네트워킹)** 은 장비마다 따로 설정하던 것을 중앙의 소프트웨어가 한꺼번에 제어하게 한 기술입니다.\n\n**틀린 선지**\n- ② NFC: 10cm 안팎의 가까운 거리에서 쓰는 무선 통신 기술입니다.\n- ③ VPN: 공중망에 암호화된 전용 통로를 만드는 가상 사설망입니다.\n- ④ CDN: 콘텐츠를 사용자와 가까운 서버에서 보내 주는 전송망입니다.",
+    "frequency": 3,
+    "reviewStatus": "unverified",
+    "tags": [
+      "신기술",
+      "네트워크"
+    ]
+  },
+  {
+    "id": "information-processing-engineer-p056",
+    "certId": "information-processing-engineer",
+    "subjectId": "is-management",
+    "chapterId": "security",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "암호 알고리즘 가운데 공개키(비대칭키) 암호 방식에 해당하는 것은?",
+    "choices": [
+      "DES",
+      "AES",
+      "SEED",
+      "RSA"
+    ],
+    "answer": 4,
+    "oneLineConcept": "공개키 암호: RSA, ECC / 대칭키 암호: DES, AES, SEED, ARIA",
+    "explanation": "**RSA** 는 큰 수의 소인수분해가 어렵다는 점을 이용한 대표적인 공개키 암호입니다.\n\n**틀린 선지**\n- ① DES: 대칭키(비밀키) 암호입니다.\n- ② AES: 대칭키 암호입니다. DES 를 대신하는 표준입니다.\n- ③ SEED: 우리나라에서 개발한 대칭키 암호입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "암호"
+    ]
+  },
+  {
+    "id": "information-processing-engineer-p057",
+    "certId": "information-processing-engineer",
+    "subjectId": "is-management",
+    "chapterId": "security",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "웹 응용 프로그램의 입력란에 SQL 문을 끼워 넣어 데이터베이스를 허가 없이 조회하거나 조작하는 공격은?",
+    "choices": [
+      "SQL 삽입(SQL Injection)",
+      "크로스 사이트 스크립팅(XSS)",
+      "서비스 거부 공격(DoS)",
+      "버퍼 오버플로"
+    ],
+    "answer": 1,
+    "oneLineConcept": "SQL 삽입: 입력값에 SQL 문을 끼워 넣는 공격",
+    "explanation": "로그인 창에 ' OR '1'='1 같은 값을 넣어 조건을 언제나 참으로 만드는 것이 대표적인 예입니다. 입력값을 검증하고 미리 준비된 문장(Prepared Statement)을 써서 막습니다.\n\n**틀린 선지**\n- ② 크로스 사이트 스크립팅(XSS): 웹 페이지에 악성 스크립트를 심어 방문자의 브라우저에서 실행되게 하는 공격입니다.\n- ③ 서비스 거부 공격(DoS): 서버에 요청을 몰아 정상적인 서비스를 못 하게 하는 공격입니다.\n- ④ 버퍼 오버플로: 정해진 메모리 크기보다 큰 값을 넣어 프로그램의 흐름을 바꾸는 공격입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "보안 공격"
+    ]
+  },
+  {
+    "id": "information-processing-engineer-p058",
+    "certId": "information-processing-engineer",
+    "subjectId": "is-management",
+    "chapterId": "security",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "TCP 의 3-way handshake 과정을 악용하여, 공격자가 연결 요청(SYN)만 대량으로 보내고 응답하지 않아 서버의 대기 큐를 가득 채우는 공격은?",
+    "choices": [
+      "Ping of Death",
+      "SYN Flooding",
+      "Smurf",
+      "Land 공격"
+    ],
+    "answer": 2,
+    "oneLineConcept": "SYN Flooding: SYN만 보내고 응답하지 않아 대기 큐를 채운다",
+    "explanation": "서버는 SYN 을 받으면 자리를 잡아 두고 상대의 응답(ACK)을 기다립니다. 응답이 오지 않는 요청이 쌓이면 **정상 사용자가 접속하지 못하게** 됩니다.\n\n**틀린 선지**\n- ① Ping of Death: 허용 범위보다 큰 ICMP 패킷을 보내 시스템을 마비시키는 공격입니다.\n- ③ Smurf: 보내는 주소를 공격 대상으로 속인 ICMP 패킷을 네트워크 전체에 뿌려, 응답이 대상에게 몰리게 하는 공격입니다.\n- ④ Land 공격: 보내는 주소와 받는 주소를 모두 공격 대상의 주소로 만든 패킷을 보내는 공격입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "보안 공격",
+      "DoS"
+    ]
+  },
+  {
+    "id": "information-processing-engineer-p059",
+    "certId": "information-processing-engineer",
+    "subjectId": "is-management",
+    "chapterId": "security",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "접근 통제 정책 가운데, 주체와 객체에 보안 등급을 매기고 그 등급을 비교하여 시스템이 강제로 접근을 통제하는 방식은?",
+    "choices": [
+      "임의 접근 통제(DAC)",
+      "역할 기반 접근 통제(RBAC)",
+      "강제 접근 통제(MAC)",
+      "속성 기반 접근 통제(ABAC)"
+    ],
+    "answer": 3,
+    "oneLineConcept": "MAC: 보안 등급에 따라 시스템이 강제로 통제한다",
+    "explanation": "**MAC** 은 군대의 비밀 등급처럼, 등급이 맞지 않으면 볼 수 없게 시스템이 강제합니다.\n\n**틀린 선지**\n- ① 임의 접근 통제(DAC): 자료의 소유자가 자기 판단으로 다른 사용자에게 권한을 주는 방식입니다.\n- ② 역할 기반 접근 통제(RBAC): 사용자가 맡은 역할(직무)에 따라 권한을 주는 방식입니다.\n- ④ 속성 기반 접근 통제(ABAC): 사용자·자료·환경의 여러 속성을 조합해 판단하는 방식입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "접근 통제"
+    ]
+  },
+  {
+    "id": "information-processing-engineer-p060",
+    "certId": "information-processing-engineer",
+    "subjectId": "is-management",
+    "chapterId": "security",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "해시(Hash) 함수에 대한 설명으로 옳지 않은 것은?",
+    "choices": [
+      "임의의 길이의 입력을 고정된 길이의 값으로 바꾼다.",
+      "SHA-256, MD5 등이 있다.",
+      "데이터의 무결성 검증과 비밀번호 저장에 쓰인다.",
+      "해시값으로부터 원래의 입력값을 쉽게 되찾을 수 있다."
+    ],
+    "answer": 4,
+    "oneLineConcept": "해시는 일방향 함수: 해시값에서 원래 값을 되찾을 수 없다",
+    "explanation": "해시 함수는 **한쪽으로만** 계산할 수 있습니다. 고기를 갈아 놓으면 다시 덩어리로 돌릴 수 없는 것과 같습니다. 그래서 비밀번호를 해시로 저장하면 유출되어도 원래 비밀번호를 알기 어렵습니다.\n\n**틀린 선지**\n- ① 임의의 길이의 입력을 고정된 길이의 값으로 바꾼다.: 맞는 설명입니다.\n- ② SHA-256, MD5 등이 있다.: 맞는 설명입니다.\n- ③ 데이터의 무결성 검증과 비밀번호 저장에 쓰인다.: 맞는 설명입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "암호",
+      "해시"
+    ]
+  }
+]

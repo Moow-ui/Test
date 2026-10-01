@@ -31,7 +31,7 @@ export function StaticQuestion({
           <Stars value={calcStars(chapterImportance, question.frequency)} />
         </span>
       </div>
-      <h3 className="mt-2 text-lg font-bold leading-normal">
+      <h3 className="mt-2 whitespace-pre-wrap text-lg font-bold leading-normal">
         문제 {number}. {question.stem}
       </h3>
       <ol className="mt-2 space-y-1.5 text-lg">

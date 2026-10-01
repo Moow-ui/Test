@@ -1,4 +1,4 @@
-# 큐패스 — 국가기술자격 기출·예상문제 풀이 사이트
+# 자격증달인 — 자격증 필기 AI 예상문제 풀이 사이트
 
 > 세상의 모든 자격증. 5분 문제 연습하기.
 
@@ -168,12 +168,12 @@ Cloudflare 대시보드 → Workers & Pages → `test` → **Settings → Build*
 
 | 항목 | 값 |
 |---|---|
-| Build command | 비워 둠 |
+| Build command | 비워 둠 (설치 직후 `scripts/ci-build.mjs` 가 자동으로 빌드합니다) |
 | Deploy command | `npx wrangler deploy` |
 | Root directory | `/` |
 | **Build variables** 에 추가 | `NEXT_PUBLIC_SITE_URL` = 실제 사이트 주소 (예: `https://test.내계정.workers.dev`, 끝에 `/` 없이) |
 
-- `npx wrangler deploy` 가 사이트 빌드(`opennextjs-cloudflare build`)까지 알아서 실행합니다. (`wrangler.jsonc` 에 설정되어 있음)
+- 사이트 빌드는 `npm` 설치가 끝난 직후 `scripts/ci-build.mjs` 가 실행합니다 (`package.json` 의 `postinstall`). `npx wrangler deploy` 는 그 결과를 올리기만 합니다.
 - 회원 정보는 Cloudflare 의 DB(D1, 이름 `qpass`)에 저장됩니다. **처음 배포할 때 Cloudflare 가 DB 를 자동으로 만들어 연결합니다.**
   - 만약 배포 로그에 D1 권한 오류(예: `Authentication error`, `d1` 관련 `10000`)가 나오면:
     Cloudflare 대시보드 → 오른쪽 위 프로필 → **API Tokens** → 이 프로젝트의 빌드 토큰(`test build token`) **Edit** →

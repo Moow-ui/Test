@@ -9,7 +9,7 @@ export function HeaderAccount() {
   return (
     <Link
       href="/profile"
-      className="text-[15px] font-bold text-ink underline underline-offset-4 sm:text-[16px]"
+      className="text-[15px] font-bold text-white underline underline-offset-4 sm:text-[16px]"
     >
       {auth.status === "user" ? "내 정보" : "로그인"}
     </Link>

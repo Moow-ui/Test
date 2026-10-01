@@ -10,7 +10,7 @@ const naverVerification = process.env.NAVER_SITE_VERIFICATION;
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: `${SITE_NAME} | 국가기술자격 필기 기출·예상문제 무료 풀이`,
+  title: `${SITE_NAME} | 자격증 필기 예상문제 무료 풀이`,
   description: SITE_DESCRIPTION,
   applicationName: SITE_NAME,
   openGraph: {

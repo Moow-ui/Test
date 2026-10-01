@@ -10,7 +10,7 @@ export function Footer() {
         </p>
         <p>{COPYRIGHT_NOTICE}</p>
         <p>
-          시험 일정·응시 자격 등 공식 정보는 한국산업인력공단 큐넷(Q-Net)에서 꼭 다시 확인하세요.
+          시험 일정·응시 자격 등 공식 정보는 시행기관(한국산업인력공단 큐넷, 대한상공회의소 자격평가사업단)에서 꼭 다시 확인하세요.
         </p>
         <nav aria-label="하단 메뉴" className="flex flex-wrap gap-x-4 gap-y-1 pt-1">
           <Link href="/" className="link">

@@ -19,7 +19,7 @@ export function DisplayControls() {
       <div
         role="group"
         aria-label="글씨 크기"
-        className="flex items-center gap-1 text-[15px] font-semibold"
+        className="flex items-center gap-1 text-[15px] font-semibold text-white"
       >
         <span className="hidden sm:inline">글씨 크기</span>
         <span className="hidden min-[400px]:inline sm:hidden">글씨</span>
@@ -35,8 +35,8 @@ export function DisplayControls() {
               title={`글씨 ${scale.label}`}
               className={`flex h-10 w-9 items-center justify-center rounded-md border-2 font-bold ${SAMPLE_SIZE[scale.value]} ${
                 active
-                  ? "border-primary bg-primary text-white"
-                  : "border-line bg-surface text-ink hover:border-ink"
+                  ? "border-white bg-primary text-white"
+                  : "border-transparent bg-surface text-ink hover:border-focus"
               }`}
             >
               가
@@ -47,7 +47,7 @@ export function DisplayControls() {
       <button
         type="button"
         onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-        className="h-10 rounded-md border-2 border-line bg-surface px-2 text-[15px] font-bold text-ink hover:border-ink"
+        className="h-10 rounded-md border-2 border-transparent bg-surface px-2 text-[15px] font-bold text-ink hover:border-focus"
       >
         {theme === "dark" ? "밝게" : "어둡게"}
       </button>

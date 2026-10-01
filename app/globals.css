@@ -15,17 +15,27 @@
     system-ui, sans-serif;
   --font-web: "Pretendard Variable", Pretendard, var(--font-system);
 
-  --bg: #f1f5f9;
+  --bg: #f3f5fb;
   --surface: #ffffff;
-  --surface-2: #e2e8f0;
+  --surface-2: #e4e9f2;
   --ink: #0f172a;
   --ink-sub: #334155;
   --line: #94a3b8;
-  --line-soft: #cbd5e1;
-  --primary: #1d4ed8;
-  --primary-hover: #1e40af;
-  --primary-soft: #dbeafe;
-  --accent: #1d4ed8;
+  --line-soft: #d3dae6;
+  --primary: #2646c8;
+  --primary-hover: #1c36a3;
+  --primary-soft: #e6ebff;
+  --accent: #2646c8;
+  /* 상단 메뉴 바탕 */
+  --header: #17224f;
+  /* 초급·중급·고급 박스 색 (진한 색 위에는 흰 글자, 연한 색 위에는 ink) */
+  --lv1: #0f766e;
+  --lv1-soft: #dcf5f1;
+  --lv2: #2646c8;
+  --lv2-soft: #e6ebff;
+  --lv3: #6d28d9;
+  --lv3-soft: #efe7ff;
+  --shadow: 0 1px 2px rgba(15, 23, 42, 0.06), 0 2px 8px rgba(15, 23, 42, 0.05);
   --ok: #166534;
   --ok-soft: #dcfce7;
   --bad: #b91c1c;
@@ -48,6 +58,14 @@
   --primary-hover: #1d4ed8;
   --primary-soft: #1e3a6e;
   --accent: #93c5fd;
+  --header: #0e1730;
+  --lv1: #0f766e;
+  --lv1-soft: #113b38;
+  --lv2: #2563eb;
+  --lv2-soft: #1e3a6e;
+  --lv3: #7c3aed;
+  --lv3-soft: #35226b;
+  --shadow: none;
   --ok: #86efac;
   --ok-soft: #14402a;
   --bad: #fca5a5;
@@ -71,6 +89,14 @@
   --color-primary-hover: var(--primary-hover);
   --color-primary-soft: var(--primary-soft);
   --color-accent: var(--accent);
+  --color-header: var(--header);
+  --color-focus: var(--focus);
+  --color-lv1: var(--lv1);
+  --color-lv1-soft: var(--lv1-soft);
+  --color-lv2: var(--lv2);
+  --color-lv2-soft: var(--lv2-soft);
+  --color-lv3: var(--lv3);
+  --color-lv3-soft: var(--lv3-soft);
   --color-ok: var(--ok);
   --color-ok-soft: var(--ok-soft);
   --color-bad: var(--bad);
@@ -149,7 +175,7 @@ summary::-webkit-details-marker {
     gap: 0.4rem;
     min-height: 3rem;
     padding: 0.5rem 1.1rem;
-    border-radius: 0.6rem;
+    border-radius: 0.75rem;
     border: 2px solid var(--line);
     background: var(--surface);
     color: var(--ink);
@@ -182,7 +208,8 @@ summary::-webkit-details-marker {
   .card {
     background: var(--surface);
     border: 1px solid var(--line-soft);
-    border-radius: 0.8rem;
+    border-radius: 0.9rem;
+    box-shadow: var(--shadow);
   }
 }
 
@@ -205,6 +232,7 @@ summary::-webkit-details-marker {
     --warn: #000000;
     --warn-soft: #ffffff;
     --star: #000000;
+    --shadow: none;
   }
   html,
   html[data-font="lg"],

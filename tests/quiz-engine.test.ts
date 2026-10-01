@@ -212,26 +212,13 @@ describe("난이도 카드", () => {
     expect(quiz.every((q) => q.subjectId === "machines")).toBe(true);
   });
 
-  it("고급은 기출과 예상문제를 50:50 으로 섞는다", () => {
-    const mixed = [
-      ...Array.from({ length: 20 }, () => makeQuestion("a", "a1", { level: "advanced", source: "past" })),
-      ...Array.from({ length: 20 }, () => makeQuestion("a", "a1", { level: "advanced", source: "predicted" })),
-    ];
-    expect(LEVEL_RULES.advanced.pastRatio).toBe(0.5);
-    for (const count of [10, 20, 30]) {
-      const quiz = buildLevelQuiz({ subjects, questions: mixed, level: "advanced", count, rng: createRng(count) });
-      expect(quiz.filter((q) => q.source === "past")).toHaveLength(count / 2);
+  it("모든 난이도가 예상문제로 출제된다 (기출 전용 규칙 없음)", () => {
+    for (const level of ["basic", "intermediate", "advanced"] as const) {
+      expect(LEVEL_RULES[level].pastOnly).toBe(false);
     }
-  });
-
-  it("초급·중급은 기출만 쓴다 (기출이 있는 자격증에서는 예상문제로 채우지 않는다)", () => {
-    const mixed = [
-      ...Array.from({ length: 3 }, () => makeQuestion("a", "a1", { level: "basic", source: "past" })),
-      ...Array.from({ length: 10 }, () => makeQuestion("a", "a1", { level: "basic", source: "predicted" })),
-    ];
-    const quiz = buildLevelQuiz({ subjects, questions: mixed, level: "basic", count: 5, rng: createRng(1) });
-    expect(quiz).toHaveLength(3);
-    expect(quiz.every((q) => q.source === "past")).toBe(true);
+    const predicted = Array.from({ length: 10 }, () => makeQuestion("a", "a1", { level: "basic", source: "predicted" }));
+    const quiz = buildLevelQuiz({ subjects, questions: predicted, level: "basic", count: 5, rng: createRng(1) });
+    expect(quiz).toHaveLength(5);
   });
 
   it("기출이 하나도 없어도 예상문제만으로 출제된다", () => {

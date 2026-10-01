@@ -218,7 +218,7 @@ export function ResultView({
                     <span className={`shrink-0 font-extrabold ${g.correct ? "text-ok" : "text-bad"}`}>
                       {g.correct ? "✔ 정답" : "✘ 오답"}
                     </span>
-                    <span className="flex-1 font-bold">
+                    <span className="flex-1 whitespace-pre-wrap font-bold">
                       {i + 1}. {q.stem}
                     </span>
                     <span className="shrink-0 text-[0.9rem] font-bold text-accent">

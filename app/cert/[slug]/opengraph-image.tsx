@@ -1,7 +1,7 @@
 import { getCertList, getCertification } from "@/lib/data";
 import { OG_CONTENT_TYPE, OG_SIZE, renderOgImage } from "@/lib/og";
 
-export const alt = "자격증 필기 기출문제·출제경향";
+export const alt = "자격증 필기 예상문제·출제경향";
 export const size = OG_SIZE;
 export const contentType = OG_CONTENT_TYPE;
 

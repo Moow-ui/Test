@@ -1,0 +1,235 @@
+[
+  {
+    "id": "industrial-safety-engineer-p041",
+    "certId": "industrial-safety-engineer",
+    "subjectId": "chemical",
+    "chapterId": "fire-explosion",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "연소의 3요소에 해당하지 않는 것은?",
+    "choices": [
+      "가연물",
+      "산소 공급원",
+      "점화원",
+      "질소"
+    ],
+    "answer": 4,
+    "oneLineConcept": "연소의 3요소: 가연물, 산소 공급원, 점화원",
+    "explanation": "탈 것(가연물), 산소, 불씨(점화원)가 모두 있어야 불이 붙습니다. **질소**는 타지 않는 기체로, 오히려 불을 끄는 데 쓰입니다.\n\n**틀린 선지**\n- ① 가연물: 3요소의 하나입니다.\n- ② 산소 공급원: 3요소의 하나입니다.\n- ③ 점화원: 3요소의 하나입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "연소"
+    ]
+  },
+  {
+    "id": "industrial-safety-engineer-p042",
+    "certId": "industrial-safety-engineer",
+    "subjectId": "chemical",
+    "chapterId": "fire-explosion",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "이산화탄소 소화기로 불을 끌 때의 주된 소화 원리는?",
+    "choices": [
+      "냉각 소화",
+      "질식 소화",
+      "제거 소화",
+      "억제 소화"
+    ],
+    "answer": 2,
+    "oneLineConcept": "질식 소화: 산소를 차단해서 끈다",
+    "explanation": "이산화탄소는 공기보다 무거워 불을 덮어 **산소를 막습니다.** 산소 농도가 15% 아래로 내려가면 불이 꺼집니다.\n\n**틀린 선지**\n- ① 냉각 소화: 물을 뿌려 온도를 낮추는 방법입니다.\n- ③ 제거 소화: 탈 것을 치우는 방법입니다.\n- ④ 억제 소화: 연소의 연쇄 반응을 끊는 방법입니다. (할로겐화물, 분말 소화 약제)",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "소화"
+    ]
+  },
+  {
+    "id": "industrial-safety-engineer-p043",
+    "certId": "industrial-safety-engineer",
+    "subjectId": "chemical",
+    "chapterId": "fire-explosion",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "폭발 하한이 2.5%, 폭발 상한이 81%인 아세틸렌의 위험도는?",
+    "choices": [
+      "31.4",
+      "30.4",
+      "32.4",
+      "78.5"
+    ],
+    "answer": 1,
+    "oneLineConcept": "위험도 H = (상한 − 하한) ÷ 하한",
+    "explanation": "1. 공식: H = (U − L) ÷ L\n2. 숫자 대입: H = (81 − 2.5) ÷ 2.5\n3. H = 78.5 ÷ 2.5 = 31.4\n\n위험도가 클수록 폭발하기 쉬운 가스입니다.\n\n**틀린 선지**\n- ② 30.4: 계산이 틀린 값입니다.\n- ③ 32.4: 상한을 하한으로 그대로 나눈 값(81 ÷ 2.5)입니다.\n- ④ 78.5: 상한에서 하한을 빼기만 한 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "폭발 한계",
+      "계산"
+    ]
+  },
+  {
+    "id": "industrial-safety-engineer-p044",
+    "certId": "industrial-safety-engineer",
+    "subjectId": "chemical",
+    "chapterId": "fire-explosion",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "폭발 하한이 5%인 가스 A 75vol% 와, 폭발 하한이 2%인 가스 B 25vol% 를 섞은 혼합 가스의 폭발 하한은 약 몇 % 인가?",
+    "choices": [
+      "2.75%",
+      "4.25%",
+      "3.64%",
+      "7.00%"
+    ],
+    "answer": 3,
+    "oneLineConcept": "르샤틀리에 식: 100 ÷ L = V1 ÷ L1 + V2 ÷ L2",
+    "explanation": "1. 100 ÷ L = 75 ÷ 5 + 25 ÷ 2\n2. 100 ÷ L = 15 + 12.5 = 27.5\n3. L = 100 ÷ 27.5 ≈ 3.64%\n\n**틀린 선지**\n- ① 2.75%: 계산이 틀린 값입니다.\n- ② 4.25%: 부피 비율로 그냥 평균 낸 값(5 × 0.75 + 2 × 0.25)입니다.\n- ④ 7.00%: 두 하한을 더한 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "폭발 한계",
+      "계산"
+    ]
+  },
+  {
+    "id": "industrial-safety-engineer-p045",
+    "certId": "industrial-safety-engineer",
+    "subjectId": "chemical",
+    "chapterId": "fire-explosion",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "분진 폭발을 가스 폭발과 비교한 설명으로 옳지 않은 것은?",
+    "choices": [
+      "가스 폭발보다 최소 발화 에너지가 크다.",
+      "가스 폭발보다 연소 시간이 길고 발생 에너지가 크다.",
+      "가스 폭발보다 연소 속도와 폭발 압력이 크다.",
+      "쌓여 있던 분진이 날려 2차, 3차 폭발로 이어질 수 있다."
+    ],
+    "answer": 3,
+    "oneLineConcept": "분진 폭발은 가스 폭발보다 연소 속도·폭발 압력이 작다",
+    "explanation": "분진 폭발은 가스 폭발보다 **연소 속도와 폭발 압력은 작지만**, 타는 시간이 길고 내는 에너지가 커서 피해가 큽니다. 또 불완전 연소로 일산화탄소가 많이 생깁니다.\n\n**틀린 선지**\n- ① 가스 폭발보다 최소 발화 에너지가 크다.: 맞는 설명입니다. 가스보다 불이 붙기 어렵습니다.\n- ② 가스 폭발보다 연소 시간이 길고 발생 에너지가 크다.: 맞는 설명입니다.\n- ④ 쌓여 있던 분진이 날려 2차, 3차 폭발로 이어질 수 있다.: 맞는 설명입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "분진 폭발"
+    ]
+  },
+  {
+    "id": "industrial-safety-engineer-p046",
+    "certId": "industrial-safety-engineer",
+    "subjectId": "chemical",
+    "chapterId": "chemical-handling",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "위험물안전관리법에서 정한 제4류 위험물의 성질은?",
+    "choices": [
+      "인화성 액체",
+      "가연성 고체",
+      "산화성 고체",
+      "자기 반응성 물질"
+    ],
+    "answer": 1,
+    "oneLineConcept": "제4류 위험물: 인화성 액체 (휘발유, 등유, 경유, 알코올 등)",
+    "explanation": "1류 산화성 고체 → 2류 가연성 고체 → 3류 자연 발화성·금수성 물질 → **4류 인화성 액체** → 5류 자기 반응성 물질 → 6류 산화성 액체 순서입니다.\n\n**틀린 선지**\n- ② 가연성 고체: 제2류 위험물입니다.\n- ③ 산화성 고체: 제1류 위험물입니다.\n- ④ 자기 반응성 물질: 제5류 위험물입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "위험물"
+    ]
+  },
+  {
+    "id": "industrial-safety-engineer-p047",
+    "certId": "industrial-safety-engineer",
+    "subjectId": "chemical",
+    "chapterId": "chemical-handling",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "유해 물질의 노출 기준 가운데, 1일 8시간 작업을 기준으로 한 시간 가중 평균 노출 기준은?",
+    "choices": [
+      "STEL",
+      "TWA",
+      "C (Ceiling)",
+      "LD50"
+    ],
+    "answer": 2,
+    "oneLineConcept": "TWA: 1일 8시간 평균, STEL: 15분, C: 최고값",
+    "explanation": "**TWA** 는 Time Weighted Average(시간 가중 평균)의 줄임말로, 하루 8시간 일하는 동안의 평균 농도 기준입니다.\n\n**틀린 선지**\n- ① STEL: 15분 동안의 단시간 노출 기준입니다.\n- ③ C (Ceiling): 1일 작업 시간 중 잠시라도 넘으면 안 되는 최고 노출 기준입니다.\n- ④ LD50: 실험 동물의 절반이 죽는 양(반수 치사량)으로, 독성의 세기를 나타냅니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "노출 기준"
+    ]
+  },
+  {
+    "id": "industrial-safety-engineer-p048",
+    "certId": "industrial-safety-engineer",
+    "subjectId": "chemical",
+    "chapterId": "chemical-handling",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "화학 설비에 안전밸브 대신(또는 함께) 파열판을 설치해야 하는 경우가 아닌 것은?",
+    "choices": [
+      "반응 폭주 등으로 압력이 급격히 오를 우려가 있는 경우",
+      "급성 독성 물질이 새어 나와 작업 환경을 오염시킬 우려가 있는 경우",
+      "운전 중 이상 물질이 쌓여 안전밸브가 작동하지 않을 우려가 있는 경우",
+      "설비 내부의 압력이 대기압과 같게 유지되는 경우"
+    ],
+    "answer": 4,
+    "oneLineConcept": "파열판 설치: 급격한 압력 상승, 독성 물질 누출, 안전밸브 막힘 우려",
+    "explanation": "파열판은 얇은 판이 터지면서 **한꺼번에** 압력을 빼는 장치입니다. 압력이 대기압과 같다면 압력이 오를 일이 없으므로 설치할 이유가 없습니다.\n\n**틀린 선지**\n- ① 반응 폭주 등으로 압력이 급격히 오를 우려가 있는 경우: 파열판을 설치해야 하는 경우입니다.\n- ② 급성 독성 물질이 새어 나와 작업 환경을 오염시킬 우려가 있는 경우: 파열판을 설치해야 하는 경우입니다.\n- ③ 운전 중 이상 물질이 쌓여 안전밸브가 작동하지 않을 우려가 있는 경우: 파열판을 설치해야 하는 경우입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "안전 장치"
+    ]
+  },
+  {
+    "id": "industrial-safety-engineer-p049",
+    "certId": "industrial-safety-engineer",
+    "subjectId": "chemical",
+    "chapterId": "chemical-handling",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "제3류 위험물인 금속 나트륨이나 칼륨에 불이 났을 때 쓰기에 알맞은 소화 방법은?",
+    "choices": [
+      "물을 뿌린다.",
+      "포(거품) 소화 약제를 쓴다.",
+      "마른 모래로 덮는다.",
+      "이산화탄소 소화기를 쓴다."
+    ],
+    "answer": 3,
+    "oneLineConcept": "금수성 물질(나트륨·칼륨)은 물과 닿으면 수소가 나온다. 마른 모래로 덮는다",
+    "explanation": "나트륨과 칼륨은 **물과 만나면 수소 가스를 내며 폭발적으로 반응**합니다. 물이 들어간 소화 약제는 쓸 수 없고, 마른 모래나 팽창 질석으로 덮어서 끕니다.\n\n**틀린 선지**\n- ① 물을 뿌린다.: 수소가 발생해 폭발합니다.\n- ② 포(거품) 소화 약제를 쓴다.: 거품에 물이 들어 있어 위험합니다.\n- ④ 이산화탄소 소화기를 쓴다.: 나트륨·칼륨은 이산화탄소와도 반응하므로 알맞지 않습니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "위험물",
+      "소화"
+    ]
+  },
+  {
+    "id": "industrial-safety-engineer-p050",
+    "certId": "industrial-safety-engineer",
+    "subjectId": "chemical",
+    "chapterId": "chemical-handling",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "가연성 액화 가스 저장 탱크 주위에서 불이 나 탱크가 뜨거워지면서, 탱크가 찢어지고 안의 액체가 한꺼번에 끓어올라 폭발하는 현상은?",
+    "choices": [
+      "BLEVE",
+      "UVCE",
+      "플래시 오버",
+      "백 드래프트"
+    ],
+    "answer": 1,
+    "oneLineConcept": "BLEVE: 끓는 액체가 팽창하며 증기가 폭발하는 현상",
+    "explanation": "**BLEVE(비등 액체 팽창 증기 폭발)** 는 탱크가 불에 달궈져 약해진 곳이 찢어지면서, 안의 액화 가스가 순식간에 기체로 바뀌어 터지는 현상입니다.\n\n**틀린 선지**\n- ② UVCE: 새어 나온 가연성 가스가 넓게 퍼져 구름을 이룬 뒤 불이 붙어 터지는 증기운 폭발입니다.\n- ③ 플래시 오버: 실내 화재에서 방 전체가 한꺼번에 불길에 휩싸이는 현상입니다.\n- ④ 백 드래프트: 산소가 모자란 방에 문을 열어 공기가 들어가면서 폭발적으로 타는 현상입니다.",
+    "frequency": 3,
+    "reviewStatus": "unverified",
+    "tags": [
+      "폭발"
+    ]
+  }
+]

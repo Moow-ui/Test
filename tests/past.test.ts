@@ -35,40 +35,38 @@ describe("정답률로 난이도 정하기", () => {
   });
 });
 
-describe("초급·중급은 기출만", () => {
+/**
+ * 지금은 모든 난이도가 AI 예상문제로 출제된다 (사용자 결정: 기출문제를 싣지 않는다).
+ * 기출 데이터가 섞여 있더라도 기출만 골라 내거나 기출 비율을 맞추지 않는다.
+ */
+describe("난이도와 문제 출처", () => {
   const subjects = [makeSubject("a", 20, [["a1", 5, 100]])];
   const past = (level: "basic" | "intermediate" | "advanced", n: number) =>
     Array.from({ length: n }, () => makeQuestion("a", "a1", { level, source: "past" }));
   const predicted = (level: "basic" | "intermediate" | "advanced", n: number) =>
     Array.from({ length: n }, () => makeQuestion("a", "a1", { level, source: "predicted" }));
 
-  it("기출이 등록된 자격증은 초급·중급에서 예상문제가 나오지 않는다", () => {
-    const questions = [...past("basic", 6), ...predicted("basic", 20), ...past("intermediate", 4), ...predicted("intermediate", 20)];
-    expect(filterPool(questions, "basic").every((q) => q.source === "past")).toBe(true);
-    expect(countAvailable(questions, "basic")).toBe(6);
-    expect(countAvailable(questions, "intermediate")).toBe(10);
+  it("초급·중급도 예상문제가 그대로 출제 범위에 들어간다", () => {
+    const questions = [...predicted("basic", 20), ...predicted("intermediate", 20)];
+    expect(countAvailable(questions, "basic")).toBe(20);
+    expect(countAvailable(questions, "intermediate")).toBe(40);
 
     const quiz = buildLevelQuiz({ subjects, questions, level: "intermediate", count: 10, rng: createRng(1) });
     expect(quiz).toHaveLength(10);
-    expect(quiz.every((q) => q.source === "past")).toBe(true);
+    expect(quiz.every((q) => q.source === "predicted")).toBe(true);
   });
 
-  it("기출이 모자라면 예상문제로 채우지 않고 그만큼만 출제된다 (화면에서는 버튼이 비활성화)", () => {
+  it("기출 데이터가 섞여 있어도 예상문제를 걸러 내지 않는다", () => {
     const questions = [...past("basic", 3), ...predicted("basic", 20)];
+    expect(filterPool(questions, "basic")).toHaveLength(23);
     const quiz = buildLevelQuiz({ subjects, questions, level: "basic", count: 5, rng: createRng(1) });
-    expect(quiz).toHaveLength(3);
+    expect(quiz).toHaveLength(5);
   });
 
-  it("기출이 하나도 없는 자격증은 예상문제로 대신한다", () => {
-    const questions = predicted("basic", 8);
-    expect(countAvailable(questions, "basic")).toBe(8);
-  });
-
-  it("고급은 기출과 예상문제를 반반 섞는다", () => {
-    const questions = [...past("advanced", 20), ...predicted("advanced", 20)];
+  it("고급은 예상문제만으로 요청한 수만큼 출제된다", () => {
+    const questions = predicted("advanced", 40);
     const quiz = buildLevelQuiz({ subjects, questions, level: "advanced", count: 20, rng: createRng(7) });
-    expect(quiz.filter((q) => q.source === "past")).toHaveLength(10);
-    expect(quiz.filter((q) => q.source === "predicted")).toHaveLength(10);
+    expect(quiz).toHaveLength(20);
   });
 });
 

@@ -1,0 +1,287 @@
+[
+  {
+    "id": "information-processing-engineer-p037",
+    "certId": "information-processing-engineer",
+    "subjectId": "programming",
+    "chapterId": "languages",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "다음 C 프로그램의 출력 결과는?\n\nint a = 7, b = 2;\nprintf(\"%d %d\", a / b, a % b);",
+    "choices": [
+      "3.5 1",
+      "3 1",
+      "3 0",
+      "4 1"
+    ],
+    "answer": 2,
+    "oneLineConcept": "C에서 정수 ÷ 정수는 몫만 남고, % 는 나머지를 구한다",
+    "explanation": "1. a / b = 7 / 2 → 정수끼리 나누면 소수는 버려져 3\n2. a % b = 7 을 2 로 나눈 나머지 → 1\n3. 출력: 3 1\n\n**틀린 선지**\n- ① 3.5 1: 정수끼리의 나눗셈은 소수가 나오지 않습니다.\n- ③ 3 0: 나머지는 1 입니다.\n- ④ 4 1: 반올림하지 않고 버립니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "C",
+      "연산자"
+    ]
+  },
+  {
+    "id": "information-processing-engineer-p038",
+    "certId": "information-processing-engineer",
+    "subjectId": "programming",
+    "chapterId": "languages",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "다음 파이썬 코드의 출력 결과는?\n\na = [10, 20, 30, 40, 50]\nprint(a[1:3])",
+    "choices": [
+      "[10, 20, 30]",
+      "[20, 30, 40]",
+      "[20, 30]",
+      "[10, 20]"
+    ],
+    "answer": 3,
+    "oneLineConcept": "파이썬 a[1:3]: 1번부터 3번 바로 앞(2번)까지",
+    "explanation": "파이썬의 순번은 0 부터 시작합니다.\n\n1. a[0] = 10, a[1] = 20, a[2] = 30, a[3] = 40\n2. a[1:3] 은 1번부터 3번 **앞**까지 → a[1], a[2]\n3. 결과: [20, 30]\n\n**틀린 선지**\n- ① [10, 20, 30]: a[0:3] 의 결과입니다.\n- ② [20, 30, 40]: a[1:4] 의 결과입니다.\n- ④ [10, 20]: a[0:2] 의 결과입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "파이썬",
+      "슬라이싱"
+    ]
+  },
+  {
+    "id": "information-processing-engineer-p039",
+    "certId": "information-processing-engineer",
+    "subjectId": "programming",
+    "chapterId": "languages",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "다음 C 프로그램의 출력 결과는?\n\nint a = 5, b;\nb = a++ + 10;\nprintf(\"%d %d\", a, b);",
+    "choices": [
+      "6 15",
+      "5 15",
+      "6 16",
+      "5 16"
+    ],
+    "answer": 1,
+    "oneLineConcept": "후위 증가(a++)는 먼저 값을 쓰고 나중에 1을 더한다",
+    "explanation": "1. a++ + 10: 먼저 a 의 지금 값 5 를 써서 5 + 10 = 15 → b = 15\n2. 그 뒤에 a 가 1 늘어 6\n3. 출력: 6 15\n\n**틀린 선지**\n- ② 5 15: a 가 늘어나지 않은 값입니다.\n- ③ 6 16: 전위 증가(++a)였을 때의 결과입니다.\n- ④ 5 16: 맞지 않는 조합입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "C",
+      "증감 연산자"
+    ]
+  },
+  {
+    "id": "information-processing-engineer-p040",
+    "certId": "information-processing-engineer",
+    "subjectId": "programming",
+    "chapterId": "languages",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "다음 자바 프로그램의 출력 결과는?\n\nint sum = 0;\nfor (int i = 1; i <= 10; i++) {\n  if (i % 2 == 0) continue;\n  sum += i;\n}\nSystem.out.println(sum);",
+    "choices": [
+      "20",
+      "30",
+      "55",
+      "25"
+    ],
+    "answer": 4,
+    "oneLineConcept": "continue는 아래 문장을 건너뛰고 다음 반복으로 넘어간다",
+    "explanation": "1. i 가 짝수이면 continue 로 건너뜁니다.\n2. 따라서 홀수만 더합니다: 1 + 3 + 5 + 7 + 9\n3. 합계: 25\n\n**틀린 선지**\n- ① 20: 계산이 틀린 값입니다.\n- ② 30: 짝수의 합(2 + 4 + 6 + 8 + 10)입니다.\n- ③ 55: 1부터 10까지 모두 더한 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "자바",
+      "반복문"
+    ]
+  },
+  {
+    "id": "information-processing-engineer-p041",
+    "certId": "information-processing-engineer",
+    "subjectId": "programming",
+    "chapterId": "languages",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "다음 C 프로그램의 출력 결과는?\n\nint arr[5] = {10, 20, 30, 40, 50};\nint *p = arr;\nprintf(\"%d\", *(p + 2) + *p);",
+    "choices": [
+      "30",
+      "40",
+      "50",
+      "60"
+    ],
+    "answer": 2,
+    "oneLineConcept": "*(p + i)는 p[i]와 같다",
+    "explanation": "1. p 는 배열의 첫 원소(arr[0])를 가리킵니다.\n2. *(p + 2) = arr[2] = 30\n3. *p = arr[0] = 10\n4. 30 + 10 = 40\n\n**틀린 선지**\n- ① 30: *(p + 2) 만 계산한 값입니다.\n- ③ 50: arr[2] + arr[1] 로 계산한 값입니다.\n- ④ 60: 계산이 틀린 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "C",
+      "포인터"
+    ]
+  },
+  {
+    "id": "information-processing-engineer-p042",
+    "certId": "information-processing-engineer",
+    "subjectId": "programming",
+    "chapterId": "os",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "교착 상태(Deadlock)가 생기기 위한 4가지 필요조건에 해당하지 않는 것은?",
+    "choices": [
+      "상호 배제",
+      "점유와 대기",
+      "선점",
+      "환형 대기"
+    ],
+    "answer": 3,
+    "oneLineConcept": "교착 상태 4조건: 상호 배제, 점유와 대기, 비선점, 환형 대기",
+    "explanation": "네 번째 조건은 **비선점**(남이 가진 자원을 빼앗을 수 없음)입니다. 자원을 빼앗을 수 있다면(선점) 교착 상태가 풀립니다.\n\n**틀린 선지**\n- ① 상호 배제: 한 자원은 한 번에 한 프로세스만 쓸 수 있다는 조건입니다.\n- ② 점유와 대기: 자원을 가진 채로 다른 자원을 기다린다는 조건입니다.\n- ④ 환형 대기: 프로세스들이 원 모양으로 서로의 자원을 기다린다는 조건입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "교착 상태"
+    ]
+  },
+  {
+    "id": "information-processing-engineer-p043",
+    "certId": "information-processing-engineer",
+    "subjectId": "programming",
+    "chapterId": "os",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "프로세스 P1, P2, P3 가 동시에 도착했고 실행 시간이 각각 6, 3, 1 이다. SJF(가장 짧은 작업 먼저) 스케줄링을 쓸 때 평균 대기 시간은?",
+    "choices": [
+      "약 1.67",
+      "약 3.33",
+      "5",
+      "약 6.67"
+    ],
+    "answer": 1,
+    "oneLineConcept": "SJF: 실행 시간이 짧은 순서대로 실행한다",
+    "explanation": "1. 실행 순서: P3(1) → P2(3) → P1(6)\n2. 대기 시간: P3 = 0, P2 = 1, P1 = 1 + 3 = 4\n3. 평균 대기 시간 = (0 + 1 + 4) ÷ 3 = 5 ÷ 3 ≈ 1.67\n\n**틀린 선지**\n- ② 약 3.33: 계산이 틀린 값입니다.\n- ③ 5: FCFS(도착 순서 P1 → P2 → P3)로 했을 때의 평균 대기 시간((0 + 6 + 9) ÷ 3)입니다.\n- ④ 약 6.67: 계산이 틀린 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "스케줄링",
+      "계산"
+    ]
+  },
+  {
+    "id": "information-processing-engineer-p044",
+    "certId": "information-processing-engineer",
+    "subjectId": "programming",
+    "chapterId": "os",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "페이지 프레임이 3개이고 처음에는 모두 비어 있다. 페이지 참조 순서가 1, 2, 3, 1, 4 일 때, FIFO 페이지 교체 알고리즘에서 페이지 부재(Page Fault)는 몇 번 일어나는가?",
+    "choices": [
+      "3번",
+      "2번",
+      "5번",
+      "4번"
+    ],
+    "answer": 4,
+    "oneLineConcept": "FIFO: 가장 먼저 들어온 페이지를 내보낸다",
+    "explanation": "1. 1 참조 → 부재 (프레임: 1)\n2. 2 참조 → 부재 (1, 2)\n3. 3 참조 → 부재 (1, 2, 3)\n4. 1 참조 → 이미 있음\n5. 4 참조 → 부재, 가장 먼저 들어온 1 을 내보냄 (2, 3, 4)\n\n페이지 부재는 4번입니다.\n\n**틀린 선지**\n- ① 3번: 마지막 4 를 참조할 때의 부재를 빼먹은 값입니다.\n- ② 2번: 계산이 틀린 값입니다.\n- ③ 5번: 1 을 두 번째로 참조할 때는 이미 프레임에 있어 부재가 아닙니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "페이지 교체",
+      "계산"
+    ]
+  },
+  {
+    "id": "information-processing-engineer-p045",
+    "certId": "information-processing-engineer",
+    "subjectId": "programming",
+    "chapterId": "os",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "HRN 스케줄링에서 작업 A(대기 시간 10, 서비스 시간 5), B(대기 시간 6, 서비스 시간 2), C(대기 시간 12, 서비스 시간 12) 가운데 가장 먼저 실행되는 작업은?",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "세 작업의 우선순위가 같다"
+    ],
+    "answer": 2,
+    "oneLineConcept": "HRN 우선순위 = (대기 시간 + 서비스 시간) ÷ 서비스 시간",
+    "explanation": "1. A = (10 + 5) ÷ 5 = 3\n2. B = (6 + 2) ÷ 2 = 4\n3. C = (12 + 12) ÷ 12 = 2\n\n값이 가장 큰 B 가 먼저 실행됩니다.\n\n**틀린 선지**\n- ① A: 우선순위 값이 3 으로 두 번째입니다.\n- ③ C: 우선순위 값이 2 로 가장 낮습니다.\n- ④ 세 작업의 우선순위가 같다: 값이 서로 다릅니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "스케줄링",
+      "계산"
+    ]
+  },
+  {
+    "id": "information-processing-engineer-p046",
+    "certId": "information-processing-engineer",
+    "subjectId": "programming",
+    "chapterId": "network",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "OSI 7계층 가운데 경로 설정(라우팅)과 논리 주소(IP 주소) 지정을 맡는 계층은?",
+    "choices": [
+      "네트워크 계층",
+      "데이터 링크 계층",
+      "전송 계층",
+      "세션 계층"
+    ],
+    "answer": 1,
+    "oneLineConcept": "네트워크 계층(3계층): 경로 설정, IP 주소, 라우터",
+    "explanation": "**네트워크 계층**은 목적지까지 가는 길을 정합니다. 이 계층의 대표 장비가 라우터이고 대표 프로토콜이 IP 입니다.\n\n**틀린 선지**\n- ② 데이터 링크 계층: 이웃한 장치 사이의 전송과 오류 제어를 맡습니다. (2계층)\n- ③ 전송 계층: 끝에서 끝까지의 믿을 수 있는 전송을 맡습니다. (4계층, TCP·UDP)\n- ④ 세션 계층: 통신하는 두 쪽의 대화 연결을 관리합니다. (5계층)",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "OSI 7계층"
+    ]
+  },
+  {
+    "id": "information-processing-engineer-p047",
+    "certId": "information-processing-engineer",
+    "subjectId": "programming",
+    "chapterId": "network",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "UDP 프로토콜의 특징으로 옳은 것은?",
+    "choices": [
+      "연결을 맺은 뒤에 데이터를 보내는 연결형 서비스이다.",
+      "데이터가 순서대로 도착하는 것을 보장한다.",
+      "연결 설정 없이 보내므로 TCP 보다 빠르고 부담이 적다.",
+      "흐름 제어와 오류 복구 기능을 제공한다."
+    ],
+    "answer": 3,
+    "oneLineConcept": "UDP: 비연결형, 빠르지만 신뢰성은 보장하지 않는다",
+    "explanation": "**UDP** 는 상대와 미리 연결을 맺지 않고 바로 보냅니다. 빠르지만 도착을 확인하지 않으므로, 실시간 방송·음성 통화처럼 속도가 중요한 곳에 씁니다.\n\n**틀린 선지**\n- ① 연결을 맺은 뒤에 데이터를 보내는 연결형 서비스이다.: TCP 의 특징입니다.\n- ② 데이터가 순서대로 도착하는 것을 보장한다.: TCP 의 특징입니다.\n- ④ 흐름 제어와 오류 복구 기능을 제공한다.: TCP 의 특징입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "TCP/IP"
+    ]
+  },
+  {
+    "id": "information-processing-engineer-p048",
+    "certId": "information-processing-engineer",
+    "subjectId": "programming",
+    "chapterId": "network",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "IP 주소 192.168.1.0/26 네트워크에서 한 서브넷에 쓸 수 있는 호스트 주소의 수는? (네트워크 주소와 브로드캐스트 주소 제외)",
+    "choices": [
+      "30개",
+      "126개",
+      "64개",
+      "62개"
+    ],
+    "answer": 4,
+    "oneLineConcept": "호스트 수 = 2^(호스트 비트 수) − 2",
+    "explanation": "1. /26 은 32비트 가운데 앞의 26비트가 네트워크 부분이라는 뜻입니다.\n2. 호스트 비트 = 32 − 26 = 6비트\n3. 주소의 수 = 2⁶ = 64개\n4. 네트워크 주소와 브로드캐스트 주소 2개를 빼면 62개\n\n**틀린 선지**\n- ① 30개: /27 일 때의 값입니다.\n- ② 126개: /25 일 때의 값입니다.\n- ③ 64개: 2개를 빼지 않은 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "서브넷",
+      "계산"
+    ]
+  }
+]

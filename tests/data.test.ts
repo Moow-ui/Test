@@ -15,23 +15,102 @@ import type { CertDetail, QuizLevel } from "@/lib/types";
 
 const CERT_ID = "electrician-craftsman";
 
+/** 문제가 준비된 자격증 (data/certifications.json 의 앞쪽 순서와 같다) */
+const READY_IDS = [
+  "forklift-operator",
+  "electrician-craftsman",
+  "computer-literacy-2",
+  "computer-literacy-1",
+  "industrial-safety-engineer",
+  "information-processing-engineer",
+  "electrical-engineer",
+  "fire-facility-engineer-electrical",
+  "construction-safety-engineer",
+];
+
 describe("자격증 목록", () => {
-  it("30종이 있고 id·관련 자격증 참조에 오류가 없다", async () => {
+  it("33종이 있고 id·관련 자격증 참조에 오류가 없다", async () => {
     const list = await getCertList();
-    expect(list).toHaveLength(30);
+    expect(list).toHaveLength(33);
     expect(checkCertList(list)).toEqual([]);
   });
 
-  it("문제가 준비된 자격증은 전기기능사 하나다 (MVP)", async () => {
+  it("문제가 준비된 자격증 9종이 목록 맨 앞에 온다", async () => {
     const ready = await getReadyCertifications();
-    expect(ready.map((c) => c.id)).toEqual([CERT_ID]);
+    expect(ready.map((c) => c.id)).toEqual(READY_IDS);
+    const list = await getCertList();
+    expect(list.slice(0, READY_IDS.length).map((c) => c.id)).toEqual(READY_IDS);
   });
 
   it("준비 중 자격증은 과목·시험 정보가 비어 있다", async () => {
-    const cert = await getCertification("forklift-operator");
+    const cert = await getCertification("excavator-operator");
     expect(cert?.ready).toBe(false);
     expect(cert?.subjects).toEqual([]);
     expect(cert?.examInfo).toBeNull();
+  });
+});
+
+describe("문제가 준비된 모든 자격증", () => {
+  it("과목 문항 수의 합이 전체 문항 수와 같고, 단원 출제 비중 합계가 100 이다", async () => {
+    for (const id of READY_IDS) {
+      const cert = await getCertification(id);
+      expect(cert, id).not.toBeNull();
+      expect(checkCertDetail(cert as unknown as CertDetail), id).toEqual([]);
+      expect(cert!.subjects.reduce((sum, s) => sum + s.questionCount, 0), id).toBe(cert!.examInfo!.totalQuestions);
+      for (const s of cert!.subjects) {
+        expect(s.chapters.reduce((sum, c) => sum + c.examWeight, 0), `${id}/${s.id}`).toBe(100);
+      }
+    }
+  });
+
+  it("모든 문제가 AI 예상문제·검수 전이고, 해설에 틀린 선지 설명이 들어 있다 (기출 없음)", async () => {
+    for (const id of READY_IDS) {
+      const questions = await getQuestions(id);
+      expect(checkQuestions(questions, (await getCertification(id)) as unknown as CertDetail), id).toEqual([]);
+      for (const q of questions) {
+        expect(q.source, q.id).toBe("predicted");
+        expect(q.reviewStatus, q.id).toBe("unverified");
+        expect(q.pastInfo, q.id).toBeUndefined();
+        expect(q.explanation.length, q.id).toBeGreaterThan(60);
+      }
+    }
+  });
+
+  it("모든 단원에 문제가 있고, 과목마다 초급·중급·고급 문제가 있다", async () => {
+    for (const id of READY_IDS) {
+      const cert = await getCertification(id);
+      const questions = await getQuestions(id);
+      for (const s of cert!.subjects) {
+        for (const c of s.chapters) {
+          expect(questions.some((q) => q.chapterId === c.id), `${id}/${c.id}`).toBe(true);
+        }
+        for (const level of LEVELS) {
+          expect(questions.some((q) => q.subjectId === s.id && q.level === level), `${id}/${s.id}/${level}`).toBe(true);
+        }
+      }
+    }
+  });
+
+  it("초급·중급·고급 모두 전체 범위에서 20문제까지 풀 수 있다", async () => {
+    for (const id of READY_IDS) {
+      const questions = await getQuestions(id);
+      for (const level of ["basic", "intermediate", "advanced"] as QuizLevel[]) {
+        // 초급은 과목 수가 적은 자격증에서 20문제에 못 미칠 수 있어 10문제까지만 확인한다
+        const min = level === "basic" ? 10 : 20;
+        expect(countAvailable(questions, level, "all"), `${id}/${level}`).toBeGreaterThanOrEqual(min);
+      }
+    }
+  });
+
+  it("정답 번호가 한쪽으로 쏠려 있지 않다", async () => {
+    for (const id of READY_IDS) {
+      const questions = await getQuestions(id);
+      for (const n of [1, 2, 3, 4]) {
+        const ratio = questions.filter((q) => q.answer === n).length / questions.length;
+        expect(ratio, `${id} 정답 ${n}`).toBeGreaterThan(0.15);
+        expect(ratio, `${id} 정답 ${n}`).toBeLessThan(0.35);
+      }
+    }
   });
 });
 

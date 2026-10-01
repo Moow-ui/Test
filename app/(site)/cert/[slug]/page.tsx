@@ -67,7 +67,7 @@ export default async function CertPage({ params }: Props) {
         ]}
       />
 
-      <h1 className="text-xl font-extrabold leading-snug sm:text-2xl">{meta.h1}</h1>
+      <h1 className="text-center text-2xl font-extrabold leading-snug tracking-tight sm:text-3xl">{meta.h1}</h1>
 
       {/* 가장 먼저 보이는 큰 박스: 초급 / 중급 / 고급, 그 아래 실전 CBT 체험 */}
       <CertBoxes

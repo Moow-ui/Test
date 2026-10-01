@@ -15,6 +15,13 @@ import { useStored } from "@/lib/use-storage";
 
 const LEVELS: QuizLevel[] = ["basic", "intermediate", "advanced"];
 
+/** 난이도별 박스 색: 고르기 전, 고른 뒤, 펼친 칸 테두리 */
+const LEVEL_STYLE: Record<QuizLevel, { idle: string; active: string; border: string }> = {
+  basic: { idle: "border-lv1 bg-lv1-soft text-ink", active: "border-lv1 bg-lv1 text-white", border: "border-lv1" },
+  intermediate: { idle: "border-lv2 bg-lv2-soft text-ink", active: "border-lv2 bg-lv2 text-white", border: "border-lv2" },
+  advanced: { idle: "border-lv3 bg-lv3-soft text-ink", active: "border-lv3 bg-lv3 text-white", border: "border-lv3" },
+};
+
 export interface CertBoxesProps {
   certId: string;
   /** 풀 수 있는 문제가 있는가. false 면 박스가 모두 비활성화된다 */
@@ -60,12 +67,12 @@ export function CertBoxes({ certId, ready, subjects, counts, cbt }: CertBoxesPro
               aria-expanded={active}
               aria-controls="level-detail"
               onClick={() => setLevel(active ? null : id)}
-              className={`flex min-h-32 items-center justify-center rounded-xl border-2 text-3xl font-extrabold sm:min-h-40 sm:text-5xl ${
+              className={`flex min-h-32 items-center justify-center rounded-2xl border-2 text-3xl font-extrabold shadow-[var(--shadow)] sm:min-h-40 sm:text-5xl ${
                 !ready
                   ? "border-line-soft bg-surface-2 text-ink-sub"
                   : active
-                    ? "border-primary bg-primary text-white"
-                    : "border-line bg-surface text-ink hover:border-ink"
+                    ? LEVEL_STYLE[id].active
+                    : `${LEVEL_STYLE[id].idle} hover:border-ink`
               }`}
             >
               {LEVEL_RULES[id].label}
@@ -76,7 +83,7 @@ export function CertBoxes({ certId, ready, subjects, counts, cbt }: CertBoxesPro
 
       <div id="level-detail">
         {level && (
-          <div className="rounded-xl border-2 border-primary bg-surface p-3 sm:p-4">
+          <div className={`rounded-2xl border-2 bg-surface p-3 shadow-[var(--shadow)] sm:p-4 ${LEVEL_STYLE[level].border}`}>
             <dl className="grid items-center gap-x-3 gap-y-3 sm:grid-cols-[3.5rem_1fr]">
               <dt className="font-bold">범위</dt>
               <dd className="flex flex-wrap gap-2">
@@ -148,15 +155,15 @@ export function CertBoxes({ certId, ready, subjects, counts, cbt }: CertBoxesPro
       {cbt ? (
         <Link
           href={`/cert/${certId}/cbt`}
-          className="flex min-h-20 items-center justify-between gap-3 rounded-xl border-2 border-line bg-surface px-4 hover:border-ink"
+          className="flex min-h-20 items-center justify-between gap-3 rounded-2xl border-2 border-header bg-header px-5 text-white shadow-[var(--shadow)] hover:border-focus"
         >
           <span className="text-xl font-extrabold sm:text-2xl">실전 CBT 체험</span>
-          <span className="font-bold text-ink-sub">
+          <span className="font-bold">
             {cbt.questionCount}문항 · {cbt.minutes}분 →
           </span>
         </Link>
       ) : (
-        <div className="flex min-h-20 items-center justify-between gap-3 rounded-xl border-2 border-line-soft bg-surface-2 px-4 text-ink-sub">
+        <div className="flex min-h-20 items-center justify-between gap-3 rounded-2xl border-2 border-line-soft bg-surface-2 px-5 text-ink-sub">
           <span className="text-xl font-extrabold sm:text-2xl">실전 CBT 체험</span>
           <span className="font-bold">문제 준비 중</span>
         </div>

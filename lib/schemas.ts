@@ -6,7 +6,7 @@ import { z } from "zod";
  * 타입은 lib/types.ts에서 z.infer로 뽑아 쓴다.
  */
 
-export const GRADES = ["기능사", "산업기사", "기사", "기능장", "기술사"] as const;
+export const GRADES = ["기능사", "산업기사", "기사", "기능장", "기술사", "1급", "2급"] as const;
 export const LEVELS = ["basic", "intermediate", "advanced"] as const;
 export const SOURCES = ["past", "predicted"] as const;
 export const REVIEW_STATUSES = ["verified", "unverified"] as const;

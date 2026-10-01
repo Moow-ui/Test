@@ -1,0 +1,282 @@
+[
+  {
+    "id": "information-processing-engineer-p013",
+    "certId": "information-processing-engineer",
+    "subjectId": "sw-development",
+    "chapterId": "data-structure",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "스택(Stack)에 대한 설명으로 옳은 것은?",
+    "choices": [
+      "먼저 넣은 자료가 먼저 나오는 선입선출(FIFO) 구조이다.",
+      "나중에 넣은 자료가 먼저 나오는 후입선출(LIFO) 구조이다.",
+      "양쪽 끝에서 모두 넣고 뺄 수 있다.",
+      "운영체제의 작업 스케줄링에 주로 쓰인다."
+    ],
+    "answer": 2,
+    "oneLineConcept": "스택은 LIFO(후입선출), 큐는 FIFO(선입선출)",
+    "explanation": "**스택**은 접시를 쌓는 것과 같아서 맨 위(나중에 올린 것)부터 꺼냅니다. 함수 호출, 되돌리기(Undo), 괄호 검사에 쓰입니다.\n\n**틀린 선지**\n- ① 먼저 넣은 자료가 먼저 나오는 선입선출(FIFO) 구조이다.: 큐의 설명입니다.\n- ③ 양쪽 끝에서 모두 넣고 뺄 수 있다.: 데크(Deque)의 설명입니다.\n- ④ 운영체제의 작업 스케줄링에 주로 쓰인다.: 큐의 쓰임새입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "자료구조",
+      "스택"
+    ]
+  },
+  {
+    "id": "information-processing-engineer-p014",
+    "certId": "information-processing-engineer",
+    "subjectId": "sw-development",
+    "chapterId": "data-structure",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "뿌리(루트)가 A 이고, A 의 왼쪽 자식이 B, 오른쪽 자식이 C 이며, B 의 왼쪽 자식이 D, 오른쪽 자식이 E 인 이진 트리를 전위(Preorder) 순회한 결과는?",
+    "choices": [
+      "A B D E C",
+      "D B E A C",
+      "D E B C A",
+      "A B C D E"
+    ],
+    "answer": 1,
+    "oneLineConcept": "전위 순회: 뿌리 → 왼쪽 → 오른쪽",
+    "explanation": "1. 뿌리 A 를 방문\n2. 왼쪽 서브트리(B)로: B 방문 → B 의 왼쪽 D → B 의 오른쪽 E\n3. 오른쪽 서브트리 C 방문\n4. 결과: A B D E C\n\n**틀린 선지**\n- ② D B E A C: 중위 순회(왼쪽 → 뿌리 → 오른쪽)의 결과입니다.\n- ③ D E B C A: 후위 순회(왼쪽 → 오른쪽 → 뿌리)의 결과입니다.\n- ④ A B C D E: 위에서부터 한 층씩 읽은 레벨 순회의 결과입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "트리 순회"
+    ]
+  },
+  {
+    "id": "information-processing-engineer-p015",
+    "certId": "information-processing-engineer",
+    "subjectId": "sw-development",
+    "chapterId": "data-structure",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "자료 [5, 3, 8, 1] 을 버블 정렬로 오름차순 정렬할 때, 1회전(Pass 1)이 끝난 뒤의 결과는?",
+    "choices": [
+      "[3, 5, 8, 1]",
+      "[1, 3, 5, 8]",
+      "[3, 5, 1, 8]",
+      "[1, 5, 3, 8]"
+    ],
+    "answer": 3,
+    "oneLineConcept": "버블 정렬: 이웃한 두 값을 비교해 큰 값을 뒤로 보낸다",
+    "explanation": "이웃한 두 값을 앞에서부터 차례로 비교합니다.\n\n1. 5 와 3 비교 → 바꿈 → [3, 5, 8, 1]\n2. 5 와 8 비교 → 그대로 → [3, 5, 8, 1]\n3. 8 과 1 비교 → 바꿈 → [3, 5, 1, 8]\n\n1회전이 끝나면 가장 큰 값(8)이 맨 뒤에 놓입니다.\n\n**틀린 선지**\n- ① [3, 5, 8, 1]: 첫 번째 비교만 한 결과입니다.\n- ② [1, 3, 5, 8]: 정렬이 모두 끝난 결과입니다.\n- ④ [1, 5, 3, 8]: 선택 정렬 1회전의 결과입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "정렬"
+    ]
+  },
+  {
+    "id": "information-processing-engineer-p016",
+    "certId": "information-processing-engineer",
+    "subjectId": "sw-development",
+    "chapterId": "data-structure",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "정렬 알고리즘의 평균 시간 복잡도가 O(n log n)이 아닌 것은?",
+    "choices": [
+      "퀵 정렬",
+      "병합(합병) 정렬",
+      "힙 정렬",
+      "삽입 정렬"
+    ],
+    "answer": 4,
+    "oneLineConcept": "삽입·선택·버블 정렬은 O(n²), 퀵·병합·힙 정렬은 O(n log n)",
+    "explanation": "**삽입 정렬**은 평균 O(n²)입니다. 자료가 이미 거의 정렬되어 있을 때만 O(n)으로 빨라집니다.\n\n**틀린 선지**\n- ① 퀵 정렬: 평균 O(n log n)입니다. 다만 최악의 경우에는 O(n²)입니다.\n- ② 병합(합병) 정렬: 언제나 O(n log n)입니다.\n- ③ 힙 정렬: 언제나 O(n log n)입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "정렬",
+      "시간 복잡도"
+    ]
+  },
+  {
+    "id": "information-processing-engineer-p017",
+    "certId": "information-processing-engineer",
+    "subjectId": "sw-development",
+    "chapterId": "data-structure",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "후위 표기식 3 4 + 5 * 를 계산한 결과는?",
+    "choices": [
+      "17",
+      "23",
+      "35",
+      "60"
+    ],
+    "answer": 3,
+    "oneLineConcept": "후위 표기식은 스택으로 계산한다: 숫자는 넣고, 연산자가 나오면 두 개를 꺼내 계산",
+    "explanation": "1. 3 을 넣음 → [3]\n2. 4 를 넣음 → [3, 4]\n3. + 를 만남 → 3 + 4 = 7 → [7]\n4. 5 를 넣음 → [7, 5]\n5. * 를 만남 → 7 × 5 = 35\n\n일반 식으로 바꾸면 (3 + 4) × 5 입니다.\n\n**틀린 선지**\n- ① 17: 3 × 4 + 5 로 계산한 값입니다.\n- ② 23: 3 + 4 × 5 로 계산한 값입니다.\n- ④ 60: 세 수를 모두 곱한 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "스택",
+      "후위 표기"
+    ]
+  },
+  {
+    "id": "information-processing-engineer-p018",
+    "certId": "information-processing-engineer",
+    "subjectId": "sw-development",
+    "chapterId": "testing",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "프로그램의 내부 구조(코드)는 보지 않고, 입력에 대한 출력이 요구사항대로 나오는지 확인하는 테스트는?",
+    "choices": [
+      "화이트박스 테스트",
+      "블랙박스 테스트",
+      "구조 테스트",
+      "코드 인스펙션"
+    ],
+    "answer": 2,
+    "oneLineConcept": "블랙박스 테스트: 내부를 보지 않고 입력·출력만 확인한다",
+    "explanation": "속이 보이지 않는 검은 상자처럼 **기능만** 확인하므로 블랙박스 테스트(기능 테스트)라고 합니다.\n\n**틀린 선지**\n- ① 화이트박스 테스트: 코드의 논리 경로를 따라가며 확인하는 테스트입니다.\n- ③ 구조 테스트: 화이트박스 테스트의 다른 이름입니다.\n- ④ 코드 인스펙션: 프로그램을 실행하지 않고 코드를 눈으로 검토하는 정적 테스트입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "테스트"
+    ]
+  },
+  {
+    "id": "information-processing-engineer-p019",
+    "certId": "information-processing-engineer",
+    "subjectId": "sw-development",
+    "chapterId": "testing",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "소프트웨어 테스트 단계를 진행 순서대로 옳게 나열한 것은?",
+    "choices": [
+      "단위 테스트 → 통합 테스트 → 시스템 테스트 → 인수 테스트",
+      "통합 테스트 → 단위 테스트 → 인수 테스트 → 시스템 테스트",
+      "단위 테스트 → 시스템 테스트 → 통합 테스트 → 인수 테스트",
+      "인수 테스트 → 시스템 테스트 → 통합 테스트 → 단위 테스트"
+    ],
+    "answer": 1,
+    "oneLineConcept": "테스트 단계: 단위 → 통합 → 시스템 → 인수",
+    "explanation": "작은 것에서 큰 것으로 넓혀 갑니다.\n\n1. 단위: 모듈 하나\n2. 통합: 모듈을 합친 것\n3. 시스템: 전체 시스템\n4. 인수: 사용자가 직접 확인\n\n**틀린 선지**\n- ② 통합 테스트 → 단위 테스트 → 인수 테스트 → 시스템 테스트: 단위 테스트가 먼저입니다.\n- ③ 단위 테스트 → 시스템 테스트 → 통합 테스트 → 인수 테스트: 통합 테스트가 시스템 테스트보다 먼저입니다.\n- ④ 인수 테스트 → 시스템 테스트 → 통합 테스트 → 단위 테스트: 순서가 거꾸로입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "테스트 단계"
+    ]
+  },
+  {
+    "id": "information-processing-engineer-p020",
+    "certId": "information-processing-engineer",
+    "subjectId": "sw-development",
+    "chapterId": "testing",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "하향식 통합 테스트에서, 아직 만들어지지 않은 하위 모듈을 대신하는 임시 모듈은?",
+    "choices": [
+      "드라이버(Driver)",
+      "테스트 오라클",
+      "테스트 하네스",
+      "스텁(Stub)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "하향식 통합은 스텁, 상향식 통합은 드라이버",
+    "explanation": "위에서 아래로 합쳐 가는 **하향식**에서는 아래쪽 모듈이 아직 없으므로, 그 자리를 대신할 가짜 모듈 **스텁**이 필요합니다.\n\n**틀린 선지**\n- ① 드라이버(Driver): 상향식 통합에서 아직 없는 상위 모듈을 대신하는 임시 모듈입니다.\n- ② 테스트 오라클: 테스트 결과가 맞는지 판단하는 기준입니다.\n- ③ 테스트 하네스: 테스트를 돕는 코드와 데이터를 통틀어 이르는 말입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "통합 테스트"
+    ]
+  },
+  {
+    "id": "information-processing-engineer-p021",
+    "certId": "information-processing-engineer",
+    "subjectId": "sw-development",
+    "chapterId": "testing",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "점수가 0~100 사이의 정수만 유효한 입력 조건일 때, 경계값 분석 기법으로 고른 테스트 값으로 가장 알맞은 것은?",
+    "choices": [
+      "-1, 0, 100, 101",
+      "10, 50, 90",
+      "25, 50, 75",
+      "0, 50, 100"
+    ],
+    "answer": 1,
+    "oneLineConcept": "경계값 분석: 경계와 그 바로 옆의 값을 시험한다",
+    "explanation": "오류는 **경계 근처**에서 잘 생깁니다. 그래서 경계(0, 100)와 경계를 막 벗어난 값(-1, 101)을 골라 시험합니다.\n\n**틀린 선지**\n- ② 10, 50, 90: 유효한 범위의 가운데 값들이라 경계를 시험하지 못합니다.\n- ③ 25, 50, 75: 유효한 범위의 가운데 값들입니다.\n- ④ 0, 50, 100: 경계는 들어 있지만 경계 바깥의 값이 빠져 있습니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "블랙박스 테스트"
+    ]
+  },
+  {
+    "id": "information-processing-engineer-p022",
+    "certId": "information-processing-engineer",
+    "subjectId": "sw-development",
+    "chapterId": "packaging",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "소프트웨어 형상 관리에 대한 설명으로 옳지 않은 것은?",
+    "choices": [
+      "소프트웨어 개발 과정에서 생기는 변경 사항을 관리하는 활동이다.",
+      "개발이 모두 끝난 뒤의 유지보수 단계에서만 수행한다.",
+      "소스 코드뿐 아니라 설계서, 문서 등도 관리 대상이다.",
+      "대표적인 도구로 Git, SVN 이 있다."
+    ],
+    "answer": 2,
+    "oneLineConcept": "형상 관리는 개발의 모든 단계에서 수행한다",
+    "explanation": "형상 관리는 **개발 처음부터 유지보수까지** 전 과정에서 합니다.\n\n**틀린 선지**\n- ① 소프트웨어 개발 과정에서 생기는 변경 사항을 관리하는 활동이다.: 맞는 설명입니다.\n- ③ 소스 코드뿐 아니라 설계서, 문서 등도 관리 대상이다.: 맞는 설명입니다.\n- ④ 대표적인 도구로 Git, SVN 이 있다.: 맞는 설명입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "형상 관리"
+    ]
+  },
+  {
+    "id": "information-processing-engineer-p023",
+    "certId": "information-processing-engineer",
+    "subjectId": "sw-development",
+    "chapterId": "packaging",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "속성과 값의 쌍(이름 : 값)으로 이루어진 자료를 주고받기 위한, 사람이 읽을 수 있는 글자 기반의 가벼운 데이터 형식은?",
+    "choices": [
+      "DRM",
+      "AJAX",
+      "JSON",
+      "SOAP"
+    ],
+    "answer": 3,
+    "oneLineConcept": "JSON: '이름 : 값' 쌍으로 된 가벼운 데이터 교환 형식",
+    "explanation": "**JSON** 은 {\"이름\": \"홍길동\", \"나이\": 30} 처럼 쓰며, XML 보다 짧고 가벼워 널리 쓰입니다.\n\n**틀린 선지**\n- ① DRM: 디지털 콘텐츠의 저작권을 보호하는 기술입니다.\n- ② AJAX: 화면 전체를 새로 읽지 않고 필요한 자료만 서버와 주고받는 기술입니다.\n- ④ SOAP: XML 을 바탕으로 메시지를 주고받는 통신 규약입니다.",
+    "frequency": 3,
+    "reviewStatus": "unverified",
+    "tags": [
+      "인터페이스 구현"
+    ]
+  },
+  {
+    "id": "information-processing-engineer-p024",
+    "certId": "information-processing-engineer",
+    "subjectId": "sw-development",
+    "chapterId": "packaging",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "버전 관리 도구 Git 에 대한 설명으로 옳지 않은 것은?",
+    "choices": [
+      "분산 저장소 방식으로, 개발자마다 지역 저장소를 가진다.",
+      "네트워크가 끊어진 상태에서도 지역 저장소에 커밋할 수 있다.",
+      "브랜치를 만들어 서로 다른 작업을 나란히 진행할 수 있다.",
+      "원격 저장소의 내용을 지역 저장소로 가져올 때 push 명령을 쓴다."
+    ],
+    "answer": 4,
+    "oneLineConcept": "원격 → 지역은 pull(fetch), 지역 → 원격은 push",
+    "explanation": "**push** 는 내 지역 저장소의 내용을 원격 저장소로 '밀어 올리는' 명령입니다. 원격에서 가져올 때는 pull 이나 fetch 를 씁니다.\n\n**틀린 선지**\n- ① 분산 저장소 방식으로, 개발자마다 지역 저장소를 가진다.: 맞는 설명입니다.\n- ② 네트워크가 끊어진 상태에서도 지역 저장소에 커밋할 수 있다.: 맞는 설명입니다.\n- ③ 브랜치를 만들어 서로 다른 작업을 나란히 진행할 수 있다.: 맞는 설명입니다.",
+    "frequency": 3,
+    "reviewStatus": "unverified",
+    "tags": [
+      "형상 관리",
+      "Git"
+    ]
+  }
+]

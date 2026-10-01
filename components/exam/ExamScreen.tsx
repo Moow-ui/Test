@@ -205,7 +205,7 @@ export function ExamScreen({
             {sourceLabel(question)}
             {question.reviewStatus === "unverified" && " · 검수 전"}
           </p>
-          <h2 className="mt-[0.2em] font-bold leading-normal">
+          <h2 className="mt-[0.2em] whitespace-pre-wrap font-bold leading-normal">
             {index + 1}. {question.stem}
           </h2>
 
