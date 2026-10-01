@@ -15,14 +15,14 @@ export function DisplayControls() {
   const theme = useTheme();
 
   return (
-    <div className="flex items-center gap-2">
+    <div className="flex shrink-0 items-center gap-1.5 whitespace-nowrap sm:gap-2">
       <div
         role="group"
         aria-label="글씨 크기"
         className="flex items-center gap-1 text-[15px] font-semibold"
       >
         <span className="hidden sm:inline">글씨 크기</span>
-        <span className="sm:hidden">글씨</span>
+        <span className="hidden min-[400px]:inline sm:hidden">글씨</span>
         {FONT_SCALES.map((scale) => {
           const active = font === scale.value;
           return (

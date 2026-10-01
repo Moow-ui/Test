@@ -50,6 +50,15 @@ describe("초성 검색", () => {
     expect(names("ㅍㅋㄹㅇ")).toEqual(["굴착기운전기능사"]);
   });
 
+  it("이름이 검색어로 시작하는 자격증을 먼저 보여 준다", () => {
+    const list = [
+      { name: "기중기운전기능사", officialName: "기중기운전기능사", spacedName: "기중기 운전 기능사", shortNames: ["기중기 기능사"] },
+      { name: "전기기능사", officialName: "전기기능사", spacedName: "전기 기능사", shortNames: [] },
+    ];
+    // "기중기 기능사"(ㄱㅈㄱㄱㄴㅅ)에도 ㅈㄱㄱㄴㅅ 이 들어 있지만, 이름이 그렇게 시작하는 전기기능사가 먼저다
+    expect(searchCerts(list, "ㅈㄱㄱㄴㅅ").map((c) => c.name)).toEqual(["전기기능사", "기중기운전기능사"]);
+  });
+
   it("빈 검색어는 전체를 돌려준다", () => {
     expect(names("")).toHaveLength(3);
     expect(names("   ")).toHaveLength(3);

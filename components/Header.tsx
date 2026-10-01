@@ -6,8 +6,8 @@ import { DisplayControls } from "./DisplayControls";
 export function Header() {
   return (
     <header className="no-print border-b border-line-soft bg-surface">
-      <div className="mx-auto flex h-14 w-full max-w-5xl items-center justify-between gap-2 px-3 sm:px-4">
-        <div className="flex items-center gap-3 sm:gap-5">
+      <div className="mx-auto flex h-[56px] w-full max-w-5xl items-center justify-between gap-2 px-3 sm:px-4">
+        <div className="flex shrink-0 items-center gap-3 whitespace-nowrap sm:gap-5">
           <Link href="/" className="text-[21px] font-extrabold tracking-tight text-accent">
             {SITE_NAME}
           </Link>

@@ -218,3 +218,14 @@ summary::-webkit-details-marker {
 .print-only {
   display: none;
 }
+
+/* 접기/펼치기 안내 글자 (▼ 펼치기 / ▲ 접기) */
+details > summary .when-open {
+  display: none;
+}
+details[open] > summary .when-open {
+  display: inline;
+}
+details[open] > summary .when-closed {
+  display: none;
+}
