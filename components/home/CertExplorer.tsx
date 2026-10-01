@@ -112,7 +112,7 @@ export function CertExplorer({ certs }: { certs: CertListItem[] }) {
           보세요.
         </p>
       ) : (
-        <ul className="mt-3 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+        <ul className="cv mt-3 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
           {results.map((c) => (
             <li key={c.id}>
               <Link

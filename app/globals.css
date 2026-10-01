@@ -9,6 +9,12 @@
  * 연회색 글씨 금지: 글자색은 ink / ink-sub 두 가지만 쓴다.
  */
 :root {
+  /* 처음에는 기기에 있는 글꼴로 바로 그리고, Pretendard 가 준비되면 한 번에 바꾼다 (FontLoader 참고) */
+  --font-system:
+    -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕",
+    system-ui, sans-serif;
+  --font-web: "Pretendard Variable", Pretendard, var(--font-system);
+
   --bg: #f1f5f9;
   --surface: #ffffff;
   --surface-2: #e2e8f0;
@@ -53,9 +59,7 @@
 }
 
 @theme inline {
-  --font-sans:
-    "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui,
-    "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", sans-serif;
+  --font-sans: var(--font-system);
   --color-bg: var(--bg);
   --color-surface: var(--surface);
   --color-surface-2: var(--surface-2);
@@ -91,10 +95,14 @@ html[data-font="xl"] {
 body {
   background: var(--bg);
   color: var(--ink);
-  font-family: var(--font-sans);
+  font-family: var(--font-system);
   line-height: 1.6;
   word-break: keep-all;
   overflow-wrap: anywhere;
+}
+
+html.fonts-ready body {
+  font-family: var(--font-web);
 }
 
 /* 키보드로 이동할 때 현재 위치가 뚜렷하게 보이도록 */
@@ -228,4 +236,23 @@ details[open] > summary .when-open {
 }
 details[open] > summary .when-closed {
   display: none;
+}
+
+/*
+ * 화면 밖에 있는 긴 묶음은 보일 때까지 그리기를 미룬다 (저사양 PC·휴대폰에서 첫 화면이 빨라짐).
+ * 한글 웹폰트 조각이 도착할 때마다 페이지 전체를 다시 계산하는 비용을 줄여 준다.
+ * 내용은 HTML 에 그대로 있으므로 검색엔진·찾기(Ctrl+F)에는 영향이 없다.
+ */
+.cv {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 420px;
+}
+/* .cv 는 바깥으로 삐져나온 그림을 잘라 내므로, 초점 테두리를 안쪽으로 그린다 */
+.cv :focus-visible {
+  outline-offset: -3px;
+}
+@media print {
+  .cv {
+    content-visibility: visible;
+  }
 }

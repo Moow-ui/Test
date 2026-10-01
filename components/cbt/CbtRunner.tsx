@@ -261,7 +261,7 @@ export function CbtRunner({ cert, questions }: { cert: QuizCert; questions: Ques
                     type="button"
                     aria-pressed={selected}
                     onClick={() => mark(question.id, n)}
-                    className={`flex min-h-14 w-full items-center gap-3 rounded-lg border-2 px-3 py-2 text-left text-lg leading-snug ${
+                    className={`flex min-h-[3.2rem] w-full items-center gap-3 rounded-lg border-2 px-3 py-1.5 text-left text-lg leading-snug ${
                       selected
                         ? "border-primary bg-primary-soft font-bold"
                         : "border-line bg-surface hover:border-ink"

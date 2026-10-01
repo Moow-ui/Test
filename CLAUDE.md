@@ -18,6 +18,9 @@
 - 로그인·회원가입 없이 모든 기능 사용. 문항 수 기본값은 5문제.
 - PC 키보드: 1~4 답 선택, Enter 다음 문제.
 - 웹폰트는 Pretendard (`pretendard` 패키지의 dynamic-subset CSS).
+  - 처음 방문한 화면은 기기 글꼴로 바로 그리고, 뒤에서 Pretendard 를 받아 둔 뒤 **다음 화면부터** 적용한다
+    (`components/FontLoader.tsx`, `html.fonts-ready`). 보고 있는 글자가 눈앞에서 바뀌거나 저사양 기기에서 버벅이는 것을 막기 위함.
+- 화면 밖의 긴 묶음에는 `cv` 클래스(content-visibility: auto)를 붙여 그리기를 미룬다. 인쇄 화면(오답노트)에는 붙이지 않는다.
 
 ## 2. 기술 스택
 
@@ -132,6 +135,11 @@ tests/                       vitest 단위 테스트
 - 풀이 화면(`/quiz`, `/cbt`, `/notes`)과 "준비 중" 자격증 페이지는 `noindex` 이고 sitemap 에서 뺀다.
 - canonical, BreadcrumbList JSON-LD, OG 이미지(자격증별 자동 생성) 유지.
 - 빌드 후 `npm run check:meta` 로 title·description 중복과 noindex/sitemap 을 검사한다.
+
+### 성능 목표
+
+Lighthouse SEO 100, 성능 90 이상(PC). 모바일 성능은 배포 후 PageSpeed Insights 로 다시 확인한다.
+새 화면을 만들 때: 큰 이미지·애니메이션·무거운 라이브러리를 넣지 않는다. 마크다운도 직접 만든 작은 표시기(`components/Markdown.tsx`)를 쓴다.
 
 ## 8. 광고 자리
 

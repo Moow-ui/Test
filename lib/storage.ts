@@ -11,6 +11,7 @@ import type { QuizLevel } from "./types";
 export const STORAGE_KEYS = {
   theme: "qpass:theme",
   font: "qpass:font",
+  fontsReady: "qpass:fontsReady",
   recent: "qpass:recent",
   history: "qpass:history",
   notes: "qpass:notes",
@@ -123,7 +124,16 @@ export function setFontScale(scale: FontScale): void {
  * 첫 화면이 그려지기 전에 저장된 테마·글씨 크기를 적용하는 인라인 스크립트.
  * (app/layout.tsx 에서 사용. 깜빡임 방지)
  */
-export const DISPLAY_INIT_SCRIPT = `(function(){try{var d=document.documentElement;var t=JSON.parse(localStorage.getItem("${STORAGE_KEYS.theme}"));if(t==="dark"||(t==null&&window.matchMedia("(prefers-color-scheme: dark)").matches)){d.classList.add("dark")}var f=JSON.parse(localStorage.getItem("${STORAGE_KEYS.font}"));if(f==="lg"||f==="xl"){d.dataset.font=f}}catch(e){}})();`;
+export const DISPLAY_INIT_SCRIPT = `(function(){try{var d=document.documentElement;var t=JSON.parse(localStorage.getItem("${STORAGE_KEYS.theme}"));if(t==="dark"||(t==null&&window.matchMedia("(prefers-color-scheme: dark)").matches)){d.classList.add("dark")}var f=JSON.parse(localStorage.getItem("${STORAGE_KEYS.font}"));if(f==="lg"||f==="xl"){d.dataset.font=f}if(localStorage.getItem("${STORAGE_KEYS.fontsReady}")==="1"){d.classList.add("fonts-ready")}}catch(e){}})();`;
+
+/** 웹폰트(Pretendard)를 한 번 받은 적이 있다고 기록한다. 다음 방문부터는 처음부터 웹폰트로 그린다 */
+export function markFontsReady(): void {
+  try {
+    window.localStorage.setItem(STORAGE_KEYS.fontsReady, "1");
+  } catch {
+    // 무시
+  }
+}
 
 // ───────────────────────── 최근 공부한 자격증 ─────────────────────────
 

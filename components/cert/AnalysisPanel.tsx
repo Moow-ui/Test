@@ -50,7 +50,7 @@ export function AnalysisPanel({ certId, subjects }: { certId: string; subjects: 
               </summary>
               <ul className="px-3 pb-2 sm:px-4">
                 {chapters.map((chapter) => (
-                  <li key={chapter.id} className="border-t border-line-soft py-3">
+                  <li key={chapter.id} className="cv border-t border-line-soft py-3">
                     <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1">
                       <Link href={`/cert/${certId}/${chapter.id}`} className="link text-[1.05rem]">
                         {chapter.name}

@@ -12,7 +12,7 @@ export function RelatedCerts({
 }) {
   if (related.length === 0) return null;
   return (
-    <section aria-labelledby="related-title">
+    <section aria-labelledby="related-title" className="cv">
       <h2 id="related-title" className="text-xl font-extrabold">
         {certName}와 같이 많이 따는 자격증
       </h2>

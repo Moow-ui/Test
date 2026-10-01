@@ -65,9 +65,11 @@ export function QuestionCard({
         <span className="text-[0.85rem] font-bold text-ink-sub">{location}</span>
       </div>
 
-      <h2 className="mt-2 text-[1.15rem] font-bold leading-normal sm:text-xl">{question.stem}</h2>
+      <h2 className="mt-1.5 text-[1.15rem] font-bold leading-snug sm:mt-2 sm:text-xl sm:leading-normal">
+        {question.stem}
+      </h2>
 
-      <ol className="mt-3 space-y-2">
+      <ol className="mt-2.5 space-y-1.5 sm:mt-3 sm:space-y-2">
         {question.choices.map((choice, i) => {
           const n = i + 1;
           const isAnswer = n === question.answer;
@@ -84,7 +86,7 @@ export function QuestionCard({
                 type="button"
                 disabled={answered}
                 onClick={() => onAnswer(n)}
-                className={`flex min-h-14 w-full items-center gap-3 rounded-lg border-2 px-3 py-2 text-left text-lg leading-snug ${style}`}
+                className={`flex min-h-[3.2rem] w-full items-center gap-3 rounded-lg border-2 px-3 py-1.5 text-left text-lg leading-snug ${style}`}
               >
                 <span aria-hidden="true" className="shrink-0 text-xl font-bold">
                   {circled(n)}

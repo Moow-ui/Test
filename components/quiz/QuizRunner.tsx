@@ -232,7 +232,8 @@ export function QuizRunner({ cert, questions }: { cert: QuizCert; questions: Que
   const isLast = index + 1 >= total;
 
   return (
-    <div className="mx-auto max-w-3xl">
+    // 좁은 화면에서는 위 여백을 줄여 문제와 선지 4개가 한 화면에 들어오게 한다
+    <div className="mx-auto -mt-2 max-w-3xl sm:mt-0">
       <div className="flex items-center justify-between gap-2 text-[0.9rem]">
         <h1 className="font-bold">
           {cert.name} · {session.label}

@@ -1,0 +1,61 @@
+import { Markdown } from "@/components/Markdown";
+import { Stars } from "@/components/Stars";
+import { QuestionBadges } from "@/components/quiz/QuestionBadges";
+import { circled } from "@/lib/format";
+import { calcStars } from "@/lib/scoring";
+import type { Question } from "@/lib/types";
+
+/**
+ * 서버에서 HTML 로 그려지는 문제 한 건 (기출 페이지·단원 페이지용).
+ * 풀이 화면은 JS 로 동작해 검색엔진이 문제 내용을 못 읽으므로,
+ * 여기서는 문제·선지·정답·해설을 모두 HTML 본문에 넣는다.
+ * 정답과 해설은 접어 두지만(details) 페이지 소스에는 그대로 들어 있다.
+ */
+export function StaticQuestion({
+  question,
+  number,
+  location,
+  chapterImportance,
+}: {
+  question: Question;
+  number: number;
+  location: string;
+  chapterImportance: number;
+}) {
+  return (
+    <article className="cv card p-3 sm:p-4">
+      <div className="flex flex-wrap items-center gap-1.5">
+        <QuestionBadges question={question} />
+        <span className="text-[0.85rem] font-bold text-ink-sub">{location}</span>
+        <span className="text-[0.85rem]">
+          <Stars value={calcStars(chapterImportance, question.frequency)} />
+        </span>
+      </div>
+      <h3 className="mt-2 text-lg font-bold leading-normal">
+        문제 {number}. {question.stem}
+      </h3>
+      <ol className="mt-2 space-y-1.5 text-lg">
+        {question.choices.map((choice, i) => (
+          <li key={i}>
+            {circled(i + 1)} {choice}
+          </li>
+        ))}
+      </ol>
+      <details className="mt-3 rounded-lg border-2 border-line">
+        <summary className="flex min-h-12 items-center px-3 font-bold text-accent">
+          <span className="when-closed">▼ 정답과 해설 보기</span>
+          <span className="when-open">▲ 정답과 해설 접기</span>
+        </summary>
+        <div className="space-y-2 border-t border-line-soft p-3">
+          <p className="text-lg font-extrabold">
+            정답: {circled(question.answer)} {question.choices[question.answer - 1]}
+          </p>
+          <p>
+            <span className="font-bold">핵심:</span> {question.oneLineConcept}
+          </p>
+          <Markdown text={question.explanation} />
+        </div>
+      </details>
+    </article>
+  );
+}

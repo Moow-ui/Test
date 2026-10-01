@@ -3,7 +3,7 @@ import { COPYRIGHT_NOTICE, SITE_NAME, SITE_TAGLINE } from "@/lib/site";
 
 export function Footer() {
   return (
-    <footer className="no-print mt-12 border-t border-line-soft bg-surface">
+    <footer className="cv no-print mt-12 border-t border-line-soft bg-surface">
       <div className="mx-auto w-full max-w-5xl space-y-2 px-4 py-6 text-[0.85rem] text-ink-sub">
         <p className="font-bold text-ink">
           {SITE_NAME} · {SITE_TAGLINE}

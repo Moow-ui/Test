@@ -186,7 +186,7 @@ export function ResultView({
         </Link>
       </section>
 
-      <section aria-labelledby="review-title">
+      <section aria-labelledby="review-title" className="cv">
         <h2 id="review-title" className="text-xl font-extrabold">
           문제별 결과
         </h2>

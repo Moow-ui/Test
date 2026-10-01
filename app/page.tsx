@@ -47,7 +47,7 @@ export default async function HomePage() {
 
       <CertExplorer certs={certs} />
 
-      <section aria-labelledby="about-title" className="card p-4 sm:p-5">
+      <section aria-labelledby="about-title" className="cv card p-4 sm:p-5">
         <h2 id="about-title" className="text-lg font-extrabold">
           큐패스는 이렇게 씁니다
         </h2>

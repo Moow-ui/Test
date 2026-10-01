@@ -148,7 +148,7 @@ export default async function CertPage({ params }: Props) {
         }
       />
 
-      <section aria-labelledby="intro-title" className="space-y-2">
+      <section aria-labelledby="intro-title" className="cv space-y-2">
         <h2 id="intro-title" className="text-xl font-extrabold">
           {cert.name}는 어떤 자격증인가요?
         </h2>
@@ -161,7 +161,7 @@ export default async function CertPage({ params }: Props) {
         </dl>
       </section>
 
-      <section aria-labelledby="trend-title" className="space-y-2">
+      <section aria-labelledby="trend-title" className="cv space-y-2">
         <h2 id="trend-title" className="text-xl font-extrabold">
           {cert.name} 필기 출제 경향 요약
         </h2>
@@ -175,7 +175,7 @@ export default async function CertPage({ params }: Props) {
         </p>
       </section>
 
-      <section aria-labelledby="faq-title">
+      <section aria-labelledby="faq-title" className="cv">
         <h2 id="faq-title" className="text-xl font-extrabold">
           자주 묻는 질문
         </h2>

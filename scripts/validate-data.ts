@@ -10,6 +10,8 @@ import { certDetailSchema, certSummarySchema, questionSchema } from "../lib/sche
 import { checkCertDetail, checkCertList, checkQuestions } from "../lib/validate";
 import type { Question } from "../lib/types";
 
+z.config(z.locales.ko());
+
 const DATA_DIR = path.join(process.cwd(), "data");
 const errors: string[] = [];
 

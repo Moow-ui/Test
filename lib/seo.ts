@@ -107,8 +107,18 @@ export function faqJsonLd(faqs: Faq[]) {
   };
 }
 
-/** PageMeta → Next.js Metadata (canonical, OG, noindex 포함) */
-export function toMetadata(meta: PageMeta, options: { noindex?: boolean } = {}): Metadata {
+/**
+ * PageMeta → Next.js Metadata (canonical, OG, noindex 포함).
+ * ogImagePath: 하위 페이지(기출·단원)는 openGraph 를 새로 정하면서 상위의 OG 이미지가 빠지므로
+ * 자격증 OG 이미지 주소를 직접 넘겨 준다.
+ */
+export function toMetadata(
+  meta: PageMeta,
+  options: { noindex?: boolean; ogImagePath?: string } = {},
+): Metadata {
+  const images = options.ogImagePath
+    ? [{ url: options.ogImagePath, width: 1200, height: 630, alt: meta.h1 }]
+    : undefined;
   return {
     title: meta.title,
     description: meta.description,
@@ -121,12 +131,23 @@ export function toMetadata(meta: PageMeta, options: { noindex?: boolean } = {}):
       title: meta.title,
       description: meta.description,
       url: meta.path,
+      ...(images ? { images } : {}),
     },
-    twitter: { card: "summary_large_image", title: meta.title, description: meta.description },
+    twitter: {
+      card: "summary_large_image",
+      title: meta.title,
+      description: meta.description,
+      ...(images ? { images: images.map((i) => i.url) } : {}),
+    },
   };
 }
 
 /** 검색엔진이 색인하면 안 되는 화면(풀이·오답노트 등)의 Metadata */
 export function noindexMetadata(title: string, description: string): Metadata {
   return { title, description, robots: { index: false, follow: false } };
+}
+
+/** 자격증별 OG 이미지 주소 (app/cert/[slug]/opengraph-image.tsx) */
+export function certOgImagePath(certId: string): string {
+  return `/cert/${certId}/opengraph-image`;
 }
