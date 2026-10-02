@@ -29,7 +29,7 @@
      (문제 전체 + `reviewNote` 에 사유. id 는 붙이지 않는다). **검증을 통과한 문제만 `questions/` 에 넣는다.**
    - 검증 결과(작성 수·통과 수·수정 수·탈락 수)는 `reports/{YYYY-MM}/verify-{slug}.md` 에 남긴다.
    - **검증을 통과한 문제에는 `reviewedAt`(검증 통과 날짜 `YYYY-MM-DD`)을 기록한다.** CSV/JSON 의 `reviewedAt` 열에 날짜를 적어 넣으면
-     `reviewStatus: "verified"` 로 들어가고 화면에 "AI 예상문제 · 검수 완료"로 나온다. 날짜가 없는 문제는 `unverified` = "검수 전"으로 나온다.
+     `reviewStatus: "verified"` 로 들어가고 화면에 "예상문제 · 검수 완료"로 나온다. 날짜가 없는 문제는 `unverified` = "검수 전"으로 나온다.
    - 검증하지 않은 문제에 `reviewedAt` 을 적지 않는다. 검증을 통과한 문제를 나중에 고치면(`--update`) 다시 검증하고 그 날짜를 적는다.
 6. **운영진 학습 팁 3개 작성**: `meta.json` 의 `studyTips` 에 적는다. 자격증 페이지의 후기란 바로 위에 "운영진 작성" 상자로 나온다.
    - `studyOrder`(공부 순서), `hardChapters`(자주 틀리는 단원), `examDay`(시험 당일 팁). 각각 2~4문장.

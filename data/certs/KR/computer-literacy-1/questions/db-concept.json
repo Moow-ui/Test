@@ -153,5 +153,40 @@
         4
       ]
     }
+  },
+  {
+    "id": "computer-literacy-1-db-concept-0002",
+    "certId": "computer-literacy-1",
+    "subjectId": "database",
+    "chapterId": "db-concept",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "데이터의 중복을 줄이고 삽입·삭제·갱신 이상 현상을 막으려고 테이블을 나누는 작업은?",
+    "choices": [
+      "인덱싱",
+      "정규화",
+      "조인",
+      "백업"
+    ],
+    "answer": 2,
+    "oneLineConcept": "정규화: 중복을 줄이고 이상 현상을 막으려 테이블을 나눔",
+    "explanation": "**정규화** 는 한 테이블에 섞여 있는 정보를 알맞게 나누어 데이터 중복을 줄이고, 삽입·삭제·갱신 이상이 생기지 않게 하는 작업입니다.\n\n**틀린 선지**\n- ① 인덱싱: 검색과 정렬 속도를 높이려고 인덱스(색인)를 만드는 것입니다.\n- ③ 조인: 나뉘어 있는 테이블을 연결해 함께 보는 것입니다.\n- ④ 백업: 데이터를 잃을 때를 대비해 복사해 두는 것입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
+    "tags": [
+      "정규화"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   }
 ]

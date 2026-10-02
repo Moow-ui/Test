@@ -250,5 +250,40 @@
         4
       ]
     }
+  },
+  {
+    "id": "computer-literacy-1-query-0003",
+    "certId": "computer-literacy-1",
+    "subjectId": "database",
+    "chapterId": "query",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "SELECT 문에서 검색 결과에 같은 값이 여러 번 나올 때 한 번만 표시하려고 SELECT 바로 뒤에 쓰는 예약어는?",
+    "choices": [
+      "DISTINCT",
+      "GROUP",
+      "HAVING",
+      "ORDER"
+    ],
+    "answer": 1,
+    "oneLineConcept": "DISTINCT: 중복된 결과를 한 번만 표시",
+    "explanation": "**DISTINCT** 를 SELECT 바로 뒤에 쓰면 결과에서 중복된 값을 빼고 한 번만 보여 줍니다. 예: SELECT DISTINCT 부서 FROM 사원;\n\n**틀린 선지**\n- ② GROUP: GROUP BY 로 쓰며, 같은 값끼리 묶어 그룹별로 계산할 때 씁니다. SELECT 바로 뒤에 쓰지 않습니다.\n- ③ HAVING: 그룹에 조건을 줄 때 GROUP BY 뒤에 씁니다.\n- ④ ORDER: ORDER BY 로 쓰며, 결과를 정렬할 때 씁니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
+    "tags": [
+      "SQL"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   }
 ]

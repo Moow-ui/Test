@@ -224,5 +224,40 @@
         4
       ]
     }
+  },
+  {
+    "id": "computer-literacy-1-computer-system-0003",
+    "certId": "computer-literacy-1",
+    "subjectId": "computer-general",
+    "chapterId": "computer-system",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "CPU의 레지스터 가운데 연산 결과를 잠시 기억하는 것은?",
+    "choices": [
+      "누산기(AC)",
+      "프로그램 카운터(PC)",
+      "명령 레지스터(IR)",
+      "메모리 주소 레지스터(MAR)"
+    ],
+    "answer": 1,
+    "oneLineConcept": "누산기(AC): 연산 결과를 잠시 기억",
+    "explanation": "**누산기(AC, Accumulator)** 는 연산 장치에 있는 레지스터로, 덧셈·뺄셈 같은 연산의 결과를 잠시 기억합니다.\n\n**틀린 선지**\n- ② 프로그램 카운터(PC): 다음에 실행할 명령어의 주소를 기억합니다.\n- ③ 명령 레지스터(IR): 지금 실행 중인 명령어를 기억합니다.\n- ④ 메모리 주소 레지스터(MAR): 기억 장치에서 읽거나 쓸 자리의 주소를 기억합니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
+    "tags": [
+      "레지스터"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   }
 ]

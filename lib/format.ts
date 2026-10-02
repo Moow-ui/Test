@@ -8,7 +8,7 @@ export function circled(n: number): string {
   return CIRCLED[n - 1] ?? String(n);
 }
 
-/** 문제 출처 배지 문구: "2023년 1회 기출" 또는 "AI 예상문제" */
+/** 문제 출처 배지 문구: "2023년 1회 기출" 또는 "예상문제" */
 export function sourceLabel(q: Pick<Question, "source" | "pastInfo">, m: Messages): string {
   if (q.source === "past" && q.pastInfo) {
     return fmt(m.source.past, { year: q.pastInfo.year, round: q.pastInfo.round });

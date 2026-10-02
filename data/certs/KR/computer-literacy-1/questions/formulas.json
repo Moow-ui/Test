@@ -281,5 +281,41 @@
         4
       ]
     }
+  },
+  {
+    "id": "computer-literacy-1-formulas-0003",
+    "certId": "computer-literacy-1",
+    "subjectId": "spreadsheet",
+    "chapterId": "formulas",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "엑셀에서 =MID(\"KOREA2026\", 6, 4) 의 결과는?",
+    "choices": [
+      "2026",
+      "A202",
+      "KOREA2",
+      "026"
+    ],
+    "answer": 1,
+    "oneLineConcept": "MID(문자열, 시작 위치, 개수): 가운데 글자 추출",
+    "explanation": "MID 함수는 문자열의 지정한 위치부터 지정한 개수만큼 글자를 꺼냅니다.\n\n1. 글자 순서: K(1) O(2) R(3) E(4) A(5) 2(6) 0(7) 2(8) 6(9)\n2. 6번째 글자 2 부터 4글자를 꺼냅니다.\n3. 답: 2026\n\n**틀린 선지**\n- ② A202: 5번째 글자부터 4글자를 꺼낸 값입니다.\n- ③ KOREA2: 왼쪽에서 6글자를 꺼낸 값으로, LEFT 함수의 결과입니다.\n- ④ 026: 7번째 글자부터 꺼낸 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
+    "tags": [
+      "텍스트 함수",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
   }
 ]

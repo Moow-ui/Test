@@ -163,5 +163,41 @@
         4
       ]
     }
+  },
+  {
+    "id": "computer-literacy-1-internet-0002",
+    "certId": "computer-literacy-1",
+    "subjectId": "computer-general",
+    "chapterId": "internet",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "인터넷에서 www.example.com 같은 도메인 이름을 숫자로 된 IP 주소로 바꾸어 주는 것은?",
+    "choices": [
+      "DHCP",
+      "FTP",
+      "SMTP",
+      "DNS"
+    ],
+    "answer": 4,
+    "oneLineConcept": "DNS: 도메인 이름을 IP 주소로 변환",
+    "explanation": "**DNS(Domain Name System)** 는 사람이 기억하기 쉬운 도메인 이름을 컴퓨터가 쓰는 IP 주소로 바꾸어 줍니다.\n\n**틀린 선지**\n- ① DHCP: 컴퓨터에 IP 주소를 자동으로 나누어 주는 것입니다.\n- ② FTP: 파일을 주고받는 프로토콜입니다.\n- ③ SMTP: 전자우편을 보내는 프로토콜입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
+    "tags": [
+      "DNS",
+      "인터넷"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
   }
 ]

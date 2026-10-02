@@ -45,7 +45,7 @@ export interface ExamScreenProps {
 }
 
 /**
- * 문제 위의 출처 한 줄: "AI 예상문제 · 검수 완료 ⓘ 검수 방식" 또는 "AI 예상문제 · 검수 전".
+ * 문제 위의 출처 한 줄: "예상문제 · 검수 완료 ⓘ" 또는 "예상문제 · 검수 전".
  * ⓘ 를 누르면 검수 방식 안내가 펼쳐진다.
  */
 function ReviewLine({ question }: { question: Question }) {
@@ -64,12 +64,13 @@ function ReviewLine({ question }: { question: Question }) {
         {reviewed && (
           <button
             type="button"
-            className="inline-flex min-h-7 items-center gap-1 border border-line bg-surface px-1.5 text-ink underline underline-offset-2"
+            className="inline-flex min-h-7 min-w-7 items-center justify-center border border-line bg-surface px-1 text-[15px] text-ink"
+            aria-label={m.source.reviewInfoButton}
+            title={m.source.reviewInfoButton}
             aria-expanded={open}
             onClick={() => setOpen(!open)}
           >
             <span aria-hidden="true">ⓘ</span>
-            {m.source.reviewInfoButton}
           </button>
         )}
       </p>

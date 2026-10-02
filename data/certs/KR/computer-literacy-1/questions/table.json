@@ -164,5 +164,40 @@
         4
       ]
     }
+  },
+  {
+    "id": "computer-literacy-1-table-0003",
+    "certId": "computer-literacy-1",
+    "subjectId": "database",
+    "chapterId": "table",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "액세스 테이블에서 '참 / 거짓', '설정 / 해제'처럼 두 값 가운데 하나만 저장하는 필드에 알맞은 데이터 형식은?",
+    "choices": [
+      "짧은 텍스트",
+      "숫자",
+      "통화",
+      "예/아니요(Yes/No)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "예/아니요(Yes/No) 형식: 두 값 중 하나만 저장",
+    "explanation": "**예/아니요(Yes/No)** 형식은 참/거짓, 설정/해제처럼 두 값 가운데 하나만 저장합니다. 크기는 1비트입니다.\n\n**틀린 선지**\n- ① 짧은 텍스트: 글자나 계산하지 않는 숫자(전화번호 등)를 저장합니다.\n- ② 숫자: 계산에 쓰는 숫자를 저장합니다.\n- ③ 통화: 돈의 액수를 저장합니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
+    "tags": [
+      "데이터 형식"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
   }
 ]

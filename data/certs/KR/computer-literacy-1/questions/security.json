@@ -129,5 +129,40 @@
         3
       ]
     }
+  },
+  {
+    "id": "computer-literacy-1-security-0002",
+    "certId": "computer-literacy-1",
+    "subjectId": "computer-general",
+    "chapterId": "security",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "정상적인 프로그램인 것처럼 꾸며 컴퓨터에 숨어 있다가, 실행되면 정보를 빼내는 등 피해를 주는 악성 프로그램은? (스스로 복제하지는 않는다)",
+    "choices": [
+      "웜(Worm)",
+      "트로이 목마(Trojan Horse)",
+      "스니핑(Sniffing)",
+      "스푸핑(Spoofing)"
+    ],
+    "answer": 2,
+    "oneLineConcept": "트로이 목마: 정상 프로그램인 척 숨어듦, 복제 안 함",
+    "explanation": "**트로이 목마** 는 쓸모 있는 프로그램인 척 숨어 들어와 피해를 주는 악성 프로그램입니다. 바이러스나 웜과 달리 스스로 복제하지 않습니다.\n\n**틀린 선지**\n- ① 웜(Worm): 네트워크를 통해 스스로 복제하며 퍼져 시스템에 부담을 주는 프로그램입니다.\n- ③ 스니핑(Sniffing): 네트워크를 오가는 데이터를 몰래 엿보는 행위입니다.\n- ④ 스푸핑(Spoofing): 다른 사람이나 다른 컴퓨터인 것처럼 속이는 행위입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
+    "tags": [
+      "악성 프로그램"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
   }
 ]
