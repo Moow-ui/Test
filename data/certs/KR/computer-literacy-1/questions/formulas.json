@@ -204,5 +204,64 @@
         4
       ]
     }
+  },
+  {
+    "id": "computer-literacy-1-formulas-0001",
+    "certId": "computer-literacy-1",
+    "subjectId": "spreadsheet",
+    "chapterId": "formulas",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A1 셀에 70, B1 셀에 50 이 입력되어 있다. =IF(AND(A1>=60, B1>=60), \"합격\", \"불합격\") 의 결과는?",
+    "choices": [
+      "불합격",
+      "TRUE",
+      "#VALUE!",
+      "합격"
+    ],
+    "answer": 1,
+    "oneLineConcept": "AND 는 모든 조건이 참일 때만 참",
+    "explanation": "1. A1>=60 → 70 은 60 이상이므로 참\n2. B1>=60 → 50 은 60 보다 작으므로 거짓\n3. AND 는 하나라도 거짓이면 거짓\n4. IF 가 거짓일 때의 값 \"불합격\"을 돌려줍니다.\n\n**틀린 선지**\n- ② TRUE: IF 함수는 조건의 참·거짓이 아니라 지정한 글자를 돌려줍니다.\n- ③ #VALUE!: 수식에 오류가 없으므로 오류 값이 나오지 않습니다.\n- ④ 합격: AND 는 두 조건이 모두 맞아야 참입니다. B1 이 60 보다 작습니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "IF",
+      "AND"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "computer-literacy-1-formulas-0002",
+    "certId": "computer-literacy-1",
+    "subjectId": "spreadsheet",
+    "chapterId": "formulas",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "=VLOOKUP(A1, D1:F10, 3, FALSE) 에서 마지막 인수 FALSE 의 의미는?",
+    "choices": [
+      "찾는 값과 비슷한 값(근삿값)을 찾는다",
+      "표를 내림차순으로 정렬한 뒤 찾는다",
+      "찾는 값이 없으면 0 을 돌려준다",
+      "찾는 값과 정확히 일치하는 값만 찾는다"
+    ],
+    "answer": 4,
+    "oneLineConcept": "VLOOKUP 의 FALSE(0): 정확히 일치",
+    "explanation": "VLOOKUP 의 네 번째 인수는 찾는 방법입니다. **FALSE(또는 0)** 는 정확히 일치하는 값만 찾고, TRUE(또는 생략)는 비슷한 값을 찾습니다. TRUE 로 쓸 때는 표의 첫 열이 오름차순으로 정렬되어 있어야 합니다.\n\n**틀린 선지**\n- ① 찾는 값과 비슷한 값(근삿값)을 찾는다: 근삿값을 찾는 것은 TRUE 이거나 생략했을 때입니다.\n- ② 표를 내림차순으로 정렬한 뒤 찾는다: VLOOKUP 은 표를 정렬하지 않습니다.\n- ③ 찾는 값이 없으면 0 을 돌려준다: 정확히 일치하는 값이 없으면 #N/A 오류가 납니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "VLOOKUP"
+    ],
+    "levelLock": true
   }
 ]

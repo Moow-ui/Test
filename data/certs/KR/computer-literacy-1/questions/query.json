@@ -173,5 +173,75 @@
         3
       ]
     }
+  },
+  {
+    "id": "computer-literacy-1-query-0001",
+    "certId": "computer-literacy-1",
+    "subjectId": "database",
+    "chapterId": "query",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "<사원> 테이블에 사번이 10 이고 이름이 '김철수'인 레코드를 추가하는 SQL 문으로 옳은 것은?",
+    "choices": [
+      "ADD INTO 사원(사번, 이름) VALUES (10, '김철수');",
+      "INSERT INTO 사원(사번, 이름) VALUES (10, '김철수');",
+      "INSERT 사원 VALUES 사번 = 10, 이름 = '김철수';",
+      "INSERT INTO 사원 SET 사번 = 10, 이름 = '김철수';"
+    ],
+    "answer": 2,
+    "oneLineConcept": "INSERT INTO 테이블(필드) VALUES (값)",
+    "explanation": "레코드를 추가하는 문장의 틀은 **INSERT INTO 테이블(필드1, 필드2) VALUES (값1, 값2);** 입니다. 필드와 값은 순서와 개수가 같아야 합니다.\n\n**틀린 선지**\n- ① 레코드를 추가하는 명령은 ADD 가 아니라 INSERT 입니다.\n- ③ INTO 가 빠졌고 VALUES 뒤에는 괄호 안에 값만 적습니다.\n- ④ SET 은 UPDATE 문에서 쓰는 말입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "SQL",
+      "INSERT"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "computer-literacy-1-query-0002",
+    "certId": "computer-literacy-1",
+    "subjectId": "database",
+    "chapterId": "query",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "SQL 문 \"DELETE FROM 사원;\" 을 실행한 결과로 옳은 것은?",
+    "choices": [
+      "사원 테이블 자체가 지워진다",
+      "WHERE 절이 없어 오류가 난다",
+      "첫 번째 레코드 하나만 지워진다",
+      "사원 테이블의 모든 레코드가 지워지고 테이블 구조는 남는다"
+    ],
+    "answer": 4,
+    "oneLineConcept": "DELETE 에 WHERE 가 없으면 모든 레코드 삭제",
+    "explanation": "DELETE 문에서 WHERE 절을 생략하면 조건 없이 **모든 레코드**를 지웁니다. 다만 테이블의 구조(필드)는 그대로 남습니다. 구조까지 없애려면 DROP TABLE 을 씁니다.\n\n**틀린 선지**\n- ① 사원 테이블 자체가 지워진다: 테이블 자체를 지우는 것은 DROP TABLE 입니다.\n- ② WHERE 절이 없어 오류가 난다: WHERE 절은 생략할 수 있습니다. 생략하면 모든 레코드가 대상이 됩니다.\n- ③ 첫 번째 레코드 하나만 지워진다: 조건이 없으면 모든 레코드가 지워집니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "SQL",
+      "DELETE"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
   }
 ]

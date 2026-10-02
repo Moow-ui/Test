@@ -124,5 +124,39 @@
         3
       ]
     }
+  },
+  {
+    "id": "computer-literacy-1-internet-0001",
+    "certId": "computer-literacy-1",
+    "subjectId": "computer-general",
+    "chapterId": "internet",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "IPv6 주소 체계에 대한 설명으로 옳은 것은?",
+    "choices": [
+      "128비트 주소를 16비트씩 8부분으로 나누고 콜론(:)으로 구분한다",
+      "64비트 주소를 16비트씩 4부분으로 나누고 콜론(:)으로 구분한다",
+      "128비트 주소를 각 부분 10진수로 표현한다",
+      "32비트 주소를 8비트씩 4부분으로 나누고 마침표(.)로 구분한다"
+    ],
+    "answer": 1,
+    "oneLineConcept": "IPv6: 128비트, 16비트 × 8부분, 콜론, 16진수",
+    "explanation": "IPv6 는 주소가 모자란 IPv4(32비트)를 대신하려고 만든 **128비트** 주소 체계입니다. 16비트씩 8부분을 16진수로 쓰고 콜론(:)으로 구분합니다.\n\n**틀린 선지**\n- ② IPv6 는 64비트가 아니라 128비트입니다.\n- ③ IPv6 는 각 부분을 16진수로 표현합니다.\n- ④ 이것은 IPv4 에 대한 설명입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "IPv6"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
   }
 ]

@@ -136,5 +136,40 @@
         4
       ]
     }
+  },
+  {
+    "id": "computer-literacy-1-macro-vba-0001",
+    "certId": "computer-literacy-1",
+    "subjectId": "spreadsheet",
+    "chapterId": "macro-vba",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "다음 VBA 코드에서 반복문 안의 문장은 모두 몇 번 실행되는가?\nFor i = 1 To 10 Step 3\n    k = k + 1\nNext i",
+    "choices": [
+      "5번",
+      "3번",
+      "4번",
+      "10번"
+    ],
+    "answer": 3,
+    "oneLineConcept": "For 1 To 10 Step 3 → i = 1, 4, 7, 10",
+    "explanation": "1. Step 3 이므로 i 는 3씩 커집니다.\n2. i = 1, 4, 7, 10 일 때 실행됩니다.\n3. 다음 값 13 은 10 보다 크므로 끝납니다.\n4. 답: 4번\n\n**틀린 선지**\n- ① 5번: i 는 1, 4, 7, 10 의 네 값만 가집니다.\n- ② 3번: i 가 10 일 때도 조건(10 이하)에 맞으므로 한 번 더 실행됩니다.\n- ④ 10번: Step 3 이므로 i 가 3씩 커집니다. 1씩 커질 때가 10번입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "VBA",
+      "반복문"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
   }
 ]

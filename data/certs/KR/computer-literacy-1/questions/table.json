@@ -90,5 +90,74 @@
       "참조 무결성"
     ],
     "levelLock": true
+  },
+  {
+    "id": "computer-literacy-1-table-0001",
+    "certId": "computer-literacy-1",
+    "subjectId": "database",
+    "chapterId": "table",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "다른 테이블의 기본키를 참조하는 필드를 무엇이라 하는가?",
+    "choices": [
+      "외래키(Foreign Key)",
+      "후보키(Candidate Key)",
+      "대체키(Alternate Key)",
+      "슈퍼키(Super Key)"
+    ],
+    "answer": 1,
+    "oneLineConcept": "외래키: 다른 테이블의 기본키를 참조하는 필드",
+    "explanation": "**외래키**는 두 테이블을 이어 주는 필드입니다. 예를 들어 <주문> 테이블의 '고객번호'가 <고객> 테이블의 기본키 '고객번호'를 참조하면, <주문>의 '고객번호'가 외래키입니다.\n\n**틀린 선지**\n- ② 후보키(Candidate Key): 레코드를 구별할 수 있어 기본키가 될 수 있는 키들입니다.\n- ③ 대체키(Alternate Key): 후보키 가운데 기본키로 뽑히지 않은 나머지 키입니다.\n- ④ 슈퍼키(Super Key): 유일성은 만족하지만 최소성은 만족하지 않는 키입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "키",
+      "외래키"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "computer-literacy-1-table-0002",
+    "certId": "computer-literacy-1",
+    "subjectId": "database",
+    "chapterId": "table",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "테이블의 인덱스(Index)에 대한 설명으로 옳은 것은?",
+    "choices": [
+      "OLE 개체 형식의 필드에도 인덱스를 만들 수 있다",
+      "인덱스를 많이 만들수록 모든 작업이 빨라진다",
+      "검색 속도는 빨라지지만 레코드를 추가·수정하는 속도는 느려질 수 있다",
+      "기본키로 지정한 필드에는 인덱스를 만들 수 없다"
+    ],
+    "answer": 3,
+    "oneLineConcept": "인덱스: 검색은 빨라지고 추가·수정은 느려질 수 있다",
+    "explanation": "인덱스는 책의 '찾아보기'와 같습니다. 원하는 자료를 빨리 찾게 해 주지만, 레코드를 추가하거나 고칠 때마다 인덱스도 함께 고쳐야 하므로 그만큼 느려질 수 있습니다.\n\n**틀린 선지**\n- ① OLE 개체 형식에는 인덱스를 만들 수 없습니다.\n- ② 인덱스가 많으면 추가·수정할 때마다 인덱스도 고쳐야 해서 느려집니다.\n- ④ 기본키에는 인덱스가 자동으로 만들어집니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "인덱스"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
   }
 ]

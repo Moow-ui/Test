@@ -114,5 +114,39 @@
         4
       ]
     }
+  },
+  {
+    "id": "computer-literacy-1-db-concept-0001",
+    "certId": "computer-literacy-1",
+    "subjectId": "database",
+    "chapterId": "db-concept",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "DBMS 의 필수 기능 가운데, 데이터의 형식과 구조·제약 조건 등을 정하는 기능은?",
+    "choices": [
+      "정의 기능",
+      "제어 기능",
+      "번역 기능",
+      "조작 기능"
+    ],
+    "answer": 1,
+    "oneLineConcept": "DBMS 필수 기능: 정의·조작·제어",
+    "explanation": "DBMS 의 필수 기능은 세 가지입니다.\n\n- **정의 기능**: 데이터의 형식·구조·제약 조건을 정함\n- 조작 기능: 검색·삽입·수정·삭제\n- 제어 기능: 무결성·보안·병행 제어\n\n**틀린 선지**\n- ② 제어 기능: 무결성, 보안, 병행 제어 등 데이터를 정확하고 안전하게 유지하는 기능입니다.\n- ③ 번역 기능: DBMS 의 필수 기능 세 가지에 들지 않습니다.\n- ④ 조작 기능: 데이터를 검색·삽입·수정·삭제하는 기능입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "DBMS"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
   }
 ]

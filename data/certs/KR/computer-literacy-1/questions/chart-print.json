@@ -56,5 +56,74 @@
         4
       ]
     }
+  },
+  {
+    "id": "computer-literacy-1-chart-print-0001",
+    "certId": "computer-literacy-1",
+    "subjectId": "spreadsheet",
+    "chapterId": "chart-print",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "두 값 사이의 관계를 점으로 나타내며, 가로축과 세로축이 모두 값(숫자) 축인 차트는?",
+    "choices": [
+      "원형 차트",
+      "분산형 차트",
+      "꺾은선형 차트",
+      "방사형 차트"
+    ],
+    "answer": 2,
+    "oneLineConcept": "분산형: 가로·세로 모두 값 축, 두 값의 관계",
+    "explanation": "**분산형(XY) 차트**는 가로축과 세로축이 모두 숫자입니다. 키와 몸무게처럼 두 값이 서로 어떤 관계인지 볼 때 씁니다.\n\n**틀린 선지**\n- ① 원형 차트: 전체에 대한 각 항목의 비율을 나타냅니다.\n- ③ 꺾은선형 차트: 가로축이 항목 축이며, 시간에 따른 변화를 보는 데 씁니다.\n- ④ 방사형 차트: 여러 항목의 값을 가운데에서 뻗은 축에 나타냅니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "차트"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "computer-literacy-1-chart-print-0002",
+    "certId": "computer-literacy-1",
+    "subjectId": "spreadsheet",
+    "chapterId": "chart-print",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "'페이지 나누기 미리 보기'에서 자동으로 나뉜 페이지 구분선과 사용자가 직접 넣은 페이지 구분선은 각각 어떻게 표시되는가?",
+    "choices": [
+      "둘 다 점선",
+      "둘 다 실선",
+      "자동은 실선, 직접 넣은 것은 점선",
+      "자동은 점선, 직접 넣은 것은 실선"
+    ],
+    "answer": 4,
+    "oneLineConcept": "페이지 구분선: 자동은 점선, 수동은 실선",
+    "explanation": "페이지 나누기 미리 보기에서는 엑셀이 **자동으로** 나눈 곳을 **점선**으로, 사용자가 **직접** 넣은 곳을 **실선**으로 보여 줍니다. 구분선을 마우스로 끌어 위치를 바꿀 수 있습니다.\n\n**틀린 선지**\n- ① 둘 다 점선: 직접 넣은 구분선은 실선으로 표시됩니다.\n- ② 둘 다 실선: 자동으로 나뉜 구분선은 점선으로 표시됩니다.\n- ③ 자동은 실선, 직접 넣은 것은 점선: 반대입니다. 자동이 점선, 직접 넣은 것이 실선입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "인쇄",
+      "페이지 나누기"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
   }
 ]

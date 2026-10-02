@@ -148,5 +148,74 @@
         3
       ]
     }
+  },
+  {
+    "id": "computer-literacy-1-computer-system-0001",
+    "certId": "computer-literacy-1",
+    "subjectId": "computer-general",
+    "chapterId": "computer-system",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "ROM 의 종류 가운데 전기적인 방법으로 내용을 지우고 다시 쓸 수 있는 것은?",
+    "choices": [
+      "EPROM",
+      "EEPROM",
+      "PROM",
+      "Mask ROM"
+    ],
+    "answer": 2,
+    "oneLineConcept": "EPROM 은 자외선, EEPROM 은 전기로 지운다",
+    "explanation": "**EEPROM**(Electrically Erasable PROM)은 이름 그대로 전기로 지우고 다시 쓸 수 있습니다. 플래시 메모리도 EEPROM 의 한 종류입니다.\n\n**틀린 선지**\n- ① EPROM: EPROM 은 자외선을 쬐어 내용을 지웁니다.\n- ③ PROM: PROM 은 한 번만 기록할 수 있고 지울 수 없습니다.\n- ④ Mask ROM: 만들 때 내용이 정해져 사용자가 바꿀 수 없습니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "ROM",
+      "기억장치"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "computer-literacy-1-computer-system-0002",
+    "certId": "computer-literacy-1",
+    "subjectId": "computer-general",
+    "chapterId": "computer-system",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "인터럽트 가운데 '외부 인터럽트'에 해당하는 것은?",
+    "choices": [
+      "프로그램이 SVC 명령을 실행한 경우",
+      "0 으로 나누는 연산을 한 경우",
+      "정전 등 전원에 이상이 생긴 경우",
+      "연산 결과에 오버플로가 생긴 경우"
+    ],
+    "answer": 3,
+    "oneLineConcept": "외부 인터럽트: 전원 이상, 기계 고장, 입출력, 타이머",
+    "explanation": "**외부 인터럽트**는 CPU 바깥의 원인으로 생깁니다. 전원 이상(정전), 기계 고장, 입출력 장치의 요청, 타이머가 여기에 듭니다. 프로그램의 잘못된 명령이나 연산으로 생기는 것은 내부 인터럽트입니다.\n\n**틀린 선지**\n- ① 프로그램이 SVC 명령을 실행한 경우: 프로그램이 운영체제에 서비스를 요청하는 소프트웨어 인터럽트입니다.\n- ② 0 으로 나누는 연산을 한 경우: 잘못된 연산으로 생기는 내부 인터럽트(트랩)입니다.\n- ④ 연산 결과에 오버플로가 생긴 경우: 프로그램 실행 중에 생기는 내부 인터럽트입니다.",
+    "frequency": 3,
+    "reviewStatus": "unverified",
+    "tags": [
+      "인터럽트"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
   }
 ]

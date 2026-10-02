@@ -90,5 +90,40 @@
         3
       ]
     }
+  },
+  {
+    "id": "computer-literacy-1-security-0001",
+    "certId": "computer-literacy-1",
+    "subjectId": "computer-general",
+    "chapterId": "security",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "여러 대의 컴퓨터를 이용해 한 서버에 한꺼번에 많은 양의 데이터를 보내, 서버가 정상적인 서비스를 하지 못하게 만드는 공격은?",
+    "choices": [
+      "스니핑(Sniffing)",
+      "스푸핑(Spoofing)",
+      "분산 서비스 거부 공격(DDoS)",
+      "키로거(Key Logger)"
+    ],
+    "answer": 3,
+    "oneLineConcept": "DDoS: 여러 컴퓨터로 한꺼번에 공격해 서비스를 마비",
+    "explanation": "**DDoS** 는 공격자가 감염시킨 여러 대의 컴퓨터(좀비 PC)를 한꺼번에 동원해 서버에 과부하를 거는 공격입니다. 정보 보안 요건 가운데 **가용성**을 해칩니다.\n\n**틀린 선지**\n- ① 스니핑(Sniffing): 네트워크를 오가는 데이터를 몰래 엿보는 행위입니다.\n- ② 스푸핑(Spoofing): 다른 사람의 주소나 신분으로 속이는 행위입니다.\n- ④ 키로거(Key Logger): 키보드로 입력한 내용을 몰래 가로채는 프로그램입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "DDoS",
+      "가용성"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   }
 ]
