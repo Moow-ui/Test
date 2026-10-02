@@ -100,5 +100,39 @@
         3
       ]
     }
+  },
+  {
+    "id": "fire-facility-engineer-electrical-alarm-broadcast-0001",
+    "certId": "fire-facility-engineer-electrical",
+    "subjectId": "fire-electric-facility",
+    "chapterId": "alarm-broadcast",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "비상 경보 설비의 음향 장치는 부착된 음향 장치의 중심에서 1m 떨어진 곳에서 음량이 몇 dB 이상이어야 하는가?",
+    "choices": [
+      "120dB 이상",
+      "90dB 이상",
+      "70dB 이상",
+      "60dB 이상"
+    ],
+    "answer": 2,
+    "oneLineConcept": "음향 장치: 1m 떨어진 곳에서 90dB 이상",
+    "explanation": "비상벨이나 자동식 사이렌 같은 음향 장치는 중심에서 **1m 떨어진 곳에서 90dB 이상**이어야 합니다. 자동화재탐지설비의 음향 장치도 같은 기준입니다.\n\n**틀린 선지**\n- ① 120dB 이상: 기준보다 큰 값입니다.\n- ③ 70dB 이상: 누전 경보기의 음향 장치 등 다른 기준과 헷갈린 값입니다.\n- ④ 60dB 이상: 기준보다 작은 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "음향 장치"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
   }
 ]

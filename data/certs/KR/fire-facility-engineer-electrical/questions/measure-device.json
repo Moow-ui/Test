@@ -126,5 +126,74 @@
         3
       ]
     }
+  },
+  {
+    "id": "fire-facility-engineer-electrical-measure-device-0001",
+    "certId": "fire-facility-engineer-electrical",
+    "subjectId": "fire-electric",
+    "chapterId": "measure-device",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "전류계의 측정 범위를 넓히려고 전류계와 병렬로 연결하는 저항을 무엇이라 하는가?",
+    "choices": [
+      "가변 저항기",
+      "배율기",
+      "분류기",
+      "계기용 변압기(PT)"
+    ],
+    "answer": 3,
+    "oneLineConcept": "분류기: 전류계에 병렬 / 배율기: 전압계에 직렬",
+    "explanation": "큰 전류를 재려면 전류의 일부를 다른 길로 흘려보내야 합니다. 전류계와 **병렬**로 연결해 전류를 나누어 주는 저항이 **분류기**입니다. 전압계에는 **직렬**로 배율기를 연결합니다.\n\n**틀린 선지**\n- ① 가변 저항기: 저항값을 바꿀 수 있는 부품으로, 측정 범위를 넓히는 용도가 아닙니다.\n- ② 배율기: 전압계의 측정 범위를 넓히려고 전압계와 직렬로 연결하는 저항입니다.\n- ④ 계기용 변압기(PT): 높은 전압을 낮은 전압으로 바꾸어 계기에 보내는 기기입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "계측"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "fire-facility-engineer-electrical-measure-device-0002",
+    "certId": "fire-facility-engineer-electrical",
+    "subjectId": "fire-electric",
+    "chapterId": "measure-device",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "극수가 4극이고 주파수가 60Hz 인 3상 유도 전동기의 동기 속도는 몇 rpm 인가?",
+    "choices": [
+      "1,200rpm",
+      "1,800rpm",
+      "900rpm",
+      "3,600rpm"
+    ],
+    "answer": 2,
+    "oneLineConcept": "동기 속도 Ns = 120f ÷ P",
+    "explanation": "1. 공식: Ns = 120 × f ÷ P\n2. 숫자 대입: Ns = 120 × 60 ÷ 4\n3. 계산: 7,200 ÷ 4 = 1,800\n4. 답: 1,800rpm\n\n**틀린 선지**\n- ① 1,200rpm: 극수가 6극일 때의 값입니다.\n- ③ 900rpm: 극수가 8극일 때의 값입니다.\n- ④ 3,600rpm: 극수가 2극일 때의 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "유도 전동기",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
   }
 ]

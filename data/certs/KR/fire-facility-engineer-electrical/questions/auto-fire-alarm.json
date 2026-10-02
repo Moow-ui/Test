@@ -192,5 +192,73 @@
         3
       ]
     }
+  },
+  {
+    "id": "fire-facility-engineer-electrical-auto-fire-alarm-0001",
+    "certId": "fire-facility-engineer-electrical",
+    "subjectId": "fire-electric-facility",
+    "chapterId": "auto-fire-alarm",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "수신기 가운데 감지기나 발신기의 신호를 중계기를 거쳐 고유 신호(다중 전송)로 받으며, 회선 수가 많은 대규모 건물에 알맞은 것은?",
+    "choices": [
+      "M형 수신기",
+      "R형 수신기",
+      "GP형 수신기",
+      "P형 수신기"
+    ],
+    "answer": 2,
+    "oneLineConcept": "P형은 공통 신호(소규모), R형은 고유 신호(대규모)",
+    "explanation": "**R형 수신기**는 중계기가 보낸 고유 신호를 통신선 몇 가닥으로 받습니다. 전선 수가 적게 들고 회선을 늘리기 쉬워 대규모 건물에 씁니다.\n\n**틀린 선지**\n- ① M형 수신기: 예전에 공공용 발신기의 신호를 소방관서에서 받던 수신기입니다.\n- ③ GP형 수신기: P형 수신기에 가스 누설 경보 기능을 더한 것입니다.\n- ④ P형 수신기: 회선마다 전선을 따로 이어 공통 신호로 받으며, 작은 건물에 씁니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "수신기"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "fire-facility-engineer-electrical-auto-fire-alarm-0002",
+    "certId": "fire-facility-engineer-electrical",
+    "subjectId": "fire-electric-facility",
+    "chapterId": "auto-fire-alarm",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "연기 감지기를 설치해야 하는 장소는?",
+    "choices": [
+      "주방",
+      "보일러실",
+      "목욕실",
+      "계단과 경사로"
+    ],
+    "answer": 4,
+    "oneLineConcept": "연기 감지기: 계단·경사로·복도·승강로",
+    "explanation": "연기는 수직 통로를 따라 빠르게 퍼집니다. 그래서 **계단, 경사로, 복도, 엘리베이터 승강로** 같은 곳에는 연기 감지기를 답니다. 주방이나 보일러실처럼 평소 열과 연기가 있는 곳에는 정온식을 답니다.\n\n**틀린 선지**\n- ① 주방: 평소에도 연기와 김이 나므로 정온식 감지기를 답니다.\n- ② 보일러실: 온도가 높고 변화가 큰 곳이라 정온식 감지기를 답니다.\n- ③ 목욕실: 수증기가 많아 감지기 설치를 제외할 수 있는 곳입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "감지기"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
   }
 ]

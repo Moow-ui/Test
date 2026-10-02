@@ -135,5 +135,73 @@
         3
       ]
     }
+  },
+  {
+    "id": "fire-facility-engineer-electrical-extinguishing-0001",
+    "certId": "fire-facility-engineer-electrical",
+    "subjectId": "fire-theory",
+    "chapterId": "extinguishing",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "연소의 연쇄 반응을 끊어서 불을 끄는 소화 방법은?",
+    "choices": [
+      "제거 소화",
+      "냉각 소화",
+      "억제 소화(부촉매 소화)",
+      "질식 소화"
+    ],
+    "answer": 3,
+    "oneLineConcept": "억제 소화: 연쇄 반응 차단 (할론, 분말)",
+    "explanation": "**억제 소화**는 불꽃 속에서 이어지는 화학 반응(연쇄 반응)을 끊는 방법입니다. 할론, 할로겐화합물 소화 약제, 분말 소화 약제가 이 작용을 합니다. 냉각·질식·제거는 물리적 소화, 억제는 화학적 소화입니다.\n\n**틀린 선지**\n- ① 제거 소화: 가연물을 치워 없애서 끄는 방법입니다.\n- ② 냉각 소화: 가연물의 온도를 낮추어 끄는 방법입니다.\n- ④ 질식 소화: 산소의 공급을 막거나 농도를 낮추어 끄는 방법입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "소화 방법"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "fire-facility-engineer-electrical-extinguishing-0002",
+    "certId": "fire-facility-engineer-electrical",
+    "subjectId": "fire-theory",
+    "chapterId": "extinguishing",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "물이 소화 약제로 널리 쓰이는 가장 큰 이유는?",
+    "choices": [
+      "증발 잠열이 커서 냉각 효과가 크다",
+      "기름보다 가벼워 기름 위를 덮는다",
+      "연쇄 반응을 끊는 부촉매 효과가 크다",
+      "전기가 통하지 않아 전기 화재에 알맞다"
+    ],
+    "answer": 1,
+    "oneLineConcept": "물: 증발 잠열(약 539kcal/kg)이 커서 냉각 효과가 크다",
+    "explanation": "물 1kg 이 수증기로 바뀔 때 약 539kcal 의 열을 빼앗습니다(증발 잠열). 이렇게 많은 열을 빼앗아 가므로 **냉각 효과**가 큽니다. 값이 싸고 구하기 쉬운 것도 장점입니다.\n\n**틀린 선지**\n- ② 기름보다 가벼워 기름 위를 덮는다: 물은 기름보다 무거워 기름 아래로 가라앉습니다.\n- ③ 연쇄 반응을 끊는 부촉매 효과가 크다: 부촉매 효과는 할론이나 분말 약제의 특징입니다.\n- ④ 전기가 통하지 않아 전기 화재에 알맞다: 물은 전기가 통하므로 전기 화재에 그대로 뿌리면 위험합니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "물 소화 약제"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
   }
 ]

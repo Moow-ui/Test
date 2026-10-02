@@ -102,5 +102,75 @@
         3
       ]
     }
+  },
+  {
+    "id": "fire-facility-engineer-electrical-hazmat-0001",
+    "certId": "fire-facility-engineer-electrical",
+    "subjectId": "fire-theory",
+    "chapterId": "hazmat",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "제4류 위험물인 휘발유(제1석유류, 비수용성)의 지정 수량은?",
+    "choices": [
+      "50L",
+      "400L",
+      "1,000L",
+      "200L"
+    ],
+    "answer": 4,
+    "oneLineConcept": "휘발유(제1석유류 비수용성) 지정 수량 200L",
+    "explanation": "제4류 위험물의 지정 수량은 위험할수록 작습니다.\n\n- 특수 인화물 50L\n- 제1석유류: 비수용성 **200L**, 수용성 400L\n- 알코올류 400L\n- 제2석유류: 비수용성 1,000L, 수용성 2,000L\n\n**틀린 선지**\n- ① 50L: 특수 인화물(이황화탄소, 다이에틸에터 등)의 지정 수량입니다.\n- ② 400L: 제1석유류 가운데 수용성 액체와 알코올류의 지정 수량입니다.\n- ③ 1,000L: 제2석유류 가운데 비수용성 액체(등유, 경유)의 지정 수량입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "위험물",
+      "지정 수량"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "fire-facility-engineer-electrical-hazmat-0002",
+    "certId": "fire-facility-engineer-electrical",
+    "subjectId": "fire-theory",
+    "chapterId": "hazmat",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "제3류 위험물인 칼륨이나 나트륨이 물과 반응할 때 발생하는 가연성 가스는?",
+    "choices": [
+      "산소",
+      "수소",
+      "아세틸렌",
+      "포스핀"
+    ],
+    "answer": 2,
+    "oneLineConcept": "칼륨·나트륨 + 물 → 수소 (물로 끄면 안 된다)",
+    "explanation": "칼륨과 나트륨은 물과 만나면 격렬하게 반응하여 **수소**를 내놓고 열이 납니다. 이 수소에 불이 붙어 폭발할 수 있으므로 물로 끄면 안 되고, 마른 모래 등으로 덮습니다.\n\n**틀린 선지**\n- ① 산소: 산소는 가연성 가스가 아니며, 제1류나 제6류 위험물이 분해될 때 나옵니다.\n- ③ 아세틸렌: 탄화칼슘(카바이드)이 물과 반응할 때 나오는 가스입니다.\n- ④ 포스핀: 인화칼슘이 물과 반응할 때 나오는 가스입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "위험물",
+      "금수성 물질"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
   }
 ]

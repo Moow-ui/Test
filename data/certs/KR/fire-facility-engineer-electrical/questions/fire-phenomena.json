@@ -100,5 +100,74 @@
         3
       ]
     }
+  },
+  {
+    "id": "fire-facility-engineer-electrical-fire-phenomena-0001",
+    "certId": "fire-facility-engineer-electrical",
+    "subjectId": "fire-theory",
+    "chapterId": "fire-phenomena",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "열이 전자기파의 형태로 전달되어, 불이 직접 닿지 않은 옆 건물에도 불이 옮겨붙게 하는 열 전달 방식은?",
+    "choices": [
+      "복사",
+      "대류",
+      "확산",
+      "전도"
+    ],
+    "answer": 1,
+    "oneLineConcept": "복사: 전자기파로 열이 전달된다",
+    "explanation": "**복사**는 중간에 물질이 없어도 전자기파로 열이 전달되는 방식입니다. 난로 앞에 서면 따뜻한 것, 큰 불 옆의 건물에 불이 옮겨붙는 것이 복사열 때문입니다.\n\n**틀린 선지**\n- ② 대류: 공기나 물처럼 흐르는 물질이 움직이며 열을 옮기는 방식입니다.\n- ③ 확산: 열 전달 방식이 아니라 물질이 퍼져 나가는 현상입니다.\n- ④ 전도: 물체 속에서 뜨거운 곳에서 차가운 곳으로 열이 옮겨 가는 방식입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "열 전달"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "fire-facility-engineer-electrical-fire-phenomena-0002",
+    "certId": "fire-facility-engineer-electrical",
+    "subjectId": "fire-theory",
+    "chapterId": "fire-phenomena",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "고층 건물의 계단실이나 승강로에서 연기가 빠르게 위로 올라가는 '굴뚝 효과(연돌 효과)'가 생기는 주된 원인은?",
+    "choices": [
+      "건물 안과 밖의 습도 차이",
+      "건물 안의 조명에서 나오는 열",
+      "건물 안과 밖의 온도 차이로 생기는 공기의 밀도 차이",
+      "건물 벽체의 두께 차이"
+    ],
+    "answer": 3,
+    "oneLineConcept": "굴뚝 효과: 안팎 온도 차 → 공기 밀도 차",
+    "explanation": "따뜻한 공기는 가벼워서 위로 올라갑니다. 건물 안이 바깥보다 따뜻하면 계단실·승강로 같은 수직 통로에서 공기가 위로 빨려 올라가는데, 이것이 **굴뚝 효과**입니다. 건물이 높고 안팎의 온도 차가 클수록 강해집니다.\n\n**틀린 선지**\n- ① 건물 안과 밖의 습도 차이: 습도가 아니라 온도 차이가 원인입니다.\n- ② 건물 안의 조명에서 나오는 열: 조명의 열로는 건물 전체의 공기 흐름이 생기지 않습니다.\n- ④ 건물 벽체의 두께 차이: 벽 두께는 굴뚝 효과의 원인이 아닙니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "연기",
+      "굴뚝 효과"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   }
 ]

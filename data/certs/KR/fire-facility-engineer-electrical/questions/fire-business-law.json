@@ -81,5 +81,73 @@
       "지정 수량"
     ],
     "levelLock": true
+  },
+  {
+    "id": "fire-facility-engineer-electrical-fire-business-law-0001",
+    "certId": "fire-facility-engineer-electrical",
+    "subjectId": "fire-law",
+    "chapterId": "fire-business-law",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "소방시설업(설계업·공사업·감리업·방염처리업)을 하려는 사람은 누구에게 등록해야 하는가?",
+    "choices": [
+      "시·도지사",
+      "소방청장",
+      "소방서장",
+      "행정안전부 장관"
+    ],
+    "answer": 1,
+    "oneLineConcept": "소방시설업 등록: 시·도지사",
+    "explanation": "소방시설업을 하려면 업종별로 자본금과 기술 인력 등 요건을 갖추어 **시·도지사**에게 등록해야 합니다.\n\n**틀린 선지**\n- ② 소방청장: 소방시설업의 등록은 시·도지사가 맡습니다.\n- ③ 소방서장: 소방서장은 착공 신고나 완공 검사를 맡습니다.\n- ④ 행정안전부 장관: 소방시설업의 등록 기관이 아닙니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "소방시설공사업법"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "fire-facility-engineer-electrical-fire-business-law-0002",
+    "certId": "fire-facility-engineer-electrical",
+    "subjectId": "fire-law",
+    "chapterId": "fire-business-law",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "지정 수량 미만인 위험물의 저장·취급에 관한 기술 기준은 무엇으로 정하는가?",
+    "choices": [
+      "소방청 고시",
+      "대통령령",
+      "행정안전부령",
+      "시·도의 조례"
+    ],
+    "answer": 4,
+    "oneLineConcept": "지정 수량 미만 위험물: 시·도의 조례",
+    "explanation": "지정 수량 **이상**의 위험물은 위험물안전관리법으로 규제하고, 지정 수량 **미만**의 위험물은 **시·도의 조례**로 저장·취급 기준을 정합니다.\n\n**틀린 선지**\n- ① 소방청 고시: 지정 수량 미만의 기준은 지역 조례로 정합니다.\n- ② 대통령령: 지정 수량 이상인 위험물에 관한 사항을 정하는 법령 체계입니다.\n- ③ 행정안전부령: 지정 수량 미만의 기준은 지역 조례로 정합니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "위험물안전관리법"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
   }
 ]

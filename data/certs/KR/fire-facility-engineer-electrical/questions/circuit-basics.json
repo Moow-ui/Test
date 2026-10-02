@@ -172,5 +172,75 @@
         3
       ]
     }
+  },
+  {
+    "id": "fire-facility-engineer-electrical-circuit-basics-0001",
+    "certId": "fire-facility-engineer-electrical",
+    "subjectId": "fire-electric",
+    "chapterId": "circuit-basics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "저항 10Ω 에 2A 의 전류가 흐를 때 저항 양끝의 전압은 몇 V 인가?",
+    "choices": [
+      "12V",
+      "0.2V",
+      "5V",
+      "20V"
+    ],
+    "answer": 4,
+    "oneLineConcept": "옴의 법칙: 전압 = 전류 × 저항",
+    "explanation": "1. 공식: V = I × R\n2. 숫자 대입: V = 2 × 10\n3. 답: 20V\n\n**틀린 선지**\n- ① 12V: 두 값을 더한 값입니다.\n- ② 0.2V: 전류를 저항으로 나눈 값(2 ÷ 10)입니다.\n- ③ 5V: 저항을 전류로 나눈 값(10 ÷ 2)입니다. 곱해야 합니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "옴의 법칙",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "fire-facility-engineer-electrical-circuit-basics-0002",
+    "certId": "fire-facility-engineer-electrical",
+    "subjectId": "fire-electric",
+    "chapterId": "circuit-basics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "저항값이 일정한 전열기에 흐르는 전류를 2배로 늘리면 소비 전력은 몇 배가 되는가?",
+    "choices": [
+      "2배",
+      "4배",
+      "1/2 배",
+      "변하지 않는다"
+    ],
+    "answer": 2,
+    "oneLineConcept": "전력 P = I²R: 전류가 2배면 전력은 4배",
+    "explanation": "1. 공식: P = I² × R\n2. 전류가 2배가 되면 I² 은 2 × 2 = 4배\n3. 저항 R 은 그대로이므로 전력은 4배\n\n**틀린 선지**\n- ① 2배: 전력은 전류에 비례하는 것이 아니라 전류의 제곱에 비례합니다.\n- ③ 1/2 배: 전류가 늘면 전력도 늘어납니다.\n- ④ 변하지 않는다: 전류가 달라지면 전력도 달라집니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "전력",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   }
 ]

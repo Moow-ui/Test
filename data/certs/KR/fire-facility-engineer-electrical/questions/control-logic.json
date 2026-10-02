@@ -134,5 +134,39 @@
         4
       ]
     }
+  },
+  {
+    "id": "fire-facility-engineer-electrical-control-logic-0001",
+    "certId": "fire-facility-engineer-electrical",
+    "subjectId": "fire-electric",
+    "chapterId": "control-logic",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "두 입력이 모두 1 일 때만 출력이 0 이 되고, 그 밖에는 출력이 1 이 되는 논리 회로는?",
+    "choices": [
+      "NAND 회로",
+      "NOR 회로",
+      "AND 회로",
+      "XOR 회로"
+    ],
+    "answer": 1,
+    "oneLineConcept": "NAND = AND 의 출력을 뒤집은 것",
+    "explanation": "**NAND** 는 AND 뒤에 NOT 을 붙인 회로입니다. AND 는 두 입력이 모두 1 일 때만 1 을 내므로, NAND 는 그때만 0 을 냅니다.\n\n**틀린 선지**\n- ② NOR 회로: 두 입력이 모두 0 일 때만 출력이 1 이 됩니다.\n- ③ AND 회로: 두 입력이 모두 1 일 때만 출력이 1 이 됩니다. 출력이 반대입니다.\n- ④ XOR 회로: 두 입력이 서로 다를 때 출력이 1 이 됩니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "논리 회로"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   }
 ]

@@ -67,5 +67,74 @@
         3
       ]
     }
+  },
+  {
+    "id": "fire-facility-engineer-electrical-electromagnetism-basics-0001",
+    "certId": "fire-facility-engineer-electrical",
+    "subjectId": "fire-electric",
+    "chapterId": "electromagnetism-basics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "자기장 속에 있는 도체에 전류가 흐를 때 도체가 받는 힘의 방향을 알아내는 법칙으로, 전동기의 원리가 되는 것은?",
+    "choices": [
+      "앙페르의 오른나사 법칙",
+      "플레밍의 오른손 법칙",
+      "플레밍의 왼손 법칙",
+      "렌츠의 법칙"
+    ],
+    "answer": 3,
+    "oneLineConcept": "왼손 법칙은 전동기, 오른손 법칙은 발전기",
+    "explanation": "**플레밍의 왼손 법칙**은 자기장 속의 도체에 전류를 흘릴 때 받는 힘의 방향을 알려 줍니다. 전기로 힘을 얻는 **전동기**의 원리입니다. 오른손 법칙은 움직여서 전기를 얻는 발전기의 원리입니다.\n\n**틀린 선지**\n- ① 앙페르의 오른나사 법칙: 전류가 만드는 자기장의 방향을 정하는 법칙입니다.\n- ② 플레밍의 오른손 법칙: 도체가 움직일 때 생기는 기전력의 방향을 정하며, 발전기의 원리입니다.\n- ④ 렌츠의 법칙: 유도 기전력은 자속의 변화를 방해하는 방향으로 생긴다는 법칙입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "플레밍의 법칙"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "fire-facility-engineer-electrical-electromagnetism-basics-0002",
+    "certId": "fire-facility-engineer-electrical",
+    "subjectId": "fire-electric",
+    "chapterId": "electromagnetism-basics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "자기 인덕턴스가 2H 인 코일에 3A 의 전류가 흐를 때 코일에 저장되는 에너지는 몇 J 인가?",
+    "choices": [
+      "9J",
+      "6J",
+      "3J",
+      "18J"
+    ],
+    "answer": 1,
+    "oneLineConcept": "코일의 에너지 W = ½ L I²",
+    "explanation": "1. 공식: W = 1/2 × L × I²\n2. 숫자 대입: W = 1/2 × 2 × 3²\n3. 계산: 1/2 × 2 × 9 = 9\n4. 답: 9J\n\n**틀린 선지**\n- ② 6J: 전류를 제곱하지 않고 2 × 3 으로 계산한 값입니다.\n- ③ 3J: 1/2 × 2 × 3 으로, 전류를 제곱하지 않은 값입니다.\n- ④ 18J: 앞의 1/2 을 곱하지 않은 값(2 × 3²)입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "인덕턴스",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
   }
 ]

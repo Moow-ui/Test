@@ -148,5 +148,73 @@
         4
       ]
     }
+  },
+  {
+    "id": "fire-facility-engineer-electrical-fire-facility-law-0001",
+    "certId": "fire-facility-engineer-electrical",
+    "subjectId": "fire-law",
+    "chapterId": "fire-facility-law",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "소방시설의 종류 가운데 '소화 설비'에 해당하는 것은?",
+    "choices": [
+      "제연 설비",
+      "비상 방송 설비",
+      "연결 송수관 설비",
+      "스프링클러 설비"
+    ],
+    "answer": 4,
+    "oneLineConcept": "소화 설비: 소화기구, 옥내·옥외 소화전, 스프링클러 등",
+    "explanation": "**소화 설비**는 물이나 소화 약제로 불을 끄는 설비입니다. 소화 기구, 자동 소화 장치, 옥내 소화전, 스프링클러, 물분무 등 소화 설비, 옥외 소화전이 여기에 듭니다.\n\n**틀린 선지**\n- ① 제연 설비: 연기를 빼내는 소화 활동 설비입니다.\n- ② 비상 방송 설비: 화재를 알리는 경보 설비입니다.\n- ③ 연결 송수관 설비: 소방대가 쓰는 소화 활동 설비입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "소방시설의 종류"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "fire-facility-engineer-electrical-fire-facility-law-0002",
+    "certId": "fire-facility-engineer-electrical",
+    "subjectId": "fire-law",
+    "chapterId": "fire-facility-law",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "건축 허가 등의 동의를 요구받은 소방본부장 또는 소방서장은 며칠 이내에 동의 여부를 회신해야 하는가? (특급 소방안전관리 대상물이 아닌 경우)",
+    "choices": [
+      "5일 이내",
+      "10일 이내",
+      "7일 이내",
+      "14일 이내"
+    ],
+    "answer": 1,
+    "oneLineConcept": "건축 허가 동의 회신: 5일 (특급은 10일)",
+    "explanation": "소방본부장이나 소방서장은 동의 요구 서류를 받은 날부터 **5일 이내**에 동의 여부를 알려야 합니다. 특급 소방안전관리 대상물이면 10일 이내입니다.\n\n**틀린 선지**\n- ② 10일 이내: 특급 소방안전관리 대상물일 때의 기한입니다.\n- ③ 7일 이내: 법에서 정한 기한이 아닙니다.\n- ④ 14일 이내: 소방안전관리자 선임 신고 기한과 헷갈린 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "건축 허가 동의"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   }
 ]
