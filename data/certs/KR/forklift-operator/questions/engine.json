@@ -126,5 +126,73 @@
         3
       ]
     }
+  },
+  {
+    "id": "forklift-operator-engine-0001",
+    "certId": "forklift-operator",
+    "subjectId": "structure",
+    "chapterId": "engine",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "엔진 오일의 작용으로 볼 수 있는 것은?",
+    "choices": [
+      "연료에 불을 붙이는 점화 작용",
+      "전기를 만드는 발전 작용",
+      "공기를 걸러 주는 여과 작용",
+      "마찰을 줄이는 윤활 작용"
+    ],
+    "answer": 4,
+    "oneLineConcept": "엔진 오일: 윤활·냉각·밀봉·청정·방청",
+    "explanation": "엔진 오일은 금속끼리 닿는 곳에 기름막을 만들어 **마찰을 줄이는 것(윤활)** 이 가장 큰 역할입니다. 이 밖에 열을 식히고(냉각), 틈을 막고(밀봉), 찌꺼기를 씻어 내고(청정), 녹을 막습니다(방청).\n\n**틀린 선지**\n- ① 연료에 불을 붙이는 점화 작용: 디젤 엔진은 압축열로 불이 붙으며, 오일이 불을 붙이지 않습니다.\n- ② 전기를 만드는 발전 작용: 전기는 발전기가 만듭니다.\n- ③ 공기를 걸러 주는 여과 작용: 공기는 공기 청정기(에어 클리너)가 거릅니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "윤활"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "forklift-operator-engine-0002",
+    "certId": "forklift-operator",
+    "subjectId": "structure",
+    "chapterId": "engine",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "디젤 엔진의 연료 계통에 공기가 들어갔을 때 나타나는 현상은?",
+    "choices": [
+      "엔진 오일의 압력이 높아진다",
+      "시동이 잘 걸리지 않거나 엔진이 부조(떨림)를 일으킨다",
+      "엔진의 출력이 커진다",
+      "냉각수의 온도가 내려간다"
+    ],
+    "answer": 2,
+    "oneLineConcept": "연료에 공기가 섞이면 시동 불량·부조 → 공기 빼기",
+    "explanation": "연료관에 공기가 들어가면 연료가 고르게 분사되지 않아 **시동이 잘 걸리지 않고 엔진이 떨립니다**. 연료가 바닥났거나 연료 필터를 바꾼 뒤에는 공기 빼기 작업을 해야 합니다.\n\n**틀린 선지**\n- ① 엔진 오일의 압력이 높아진다: 오일 압력은 윤활 계통의 문제입니다.\n- ③ 엔진의 출력이 커진다: 공기가 섞이면 연료가 제대로 뿌려지지 않아 출력이 떨어집니다.\n- ④ 냉각수의 온도가 내려간다: 연료 계통의 공기와 냉각수 온도는 관계가 없습니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "연료 장치"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
   }
 ]

@@ -134,5 +134,39 @@
         3
       ]
     }
+  },
+  {
+    "id": "forklift-operator-drivetrain-0001",
+    "certId": "forklift-operator",
+    "subjectId": "structure",
+    "chapterId": "drivetrain",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "타이어의 공기압이 너무 낮을 때 나타나는 현상은?",
+    "choices": [
+      "연료 소비가 줄어든다",
+      "타이어의 가운데가 빨리 닳는다",
+      "타이어의 양쪽 가장자리가 빨리 닳고 핸들이 무거워진다",
+      "핸들이 가벼워진다"
+    ],
+    "answer": 3,
+    "oneLineConcept": "공기압 낮음: 가장자리 마모 / 높음: 가운데 마모",
+    "explanation": "공기압이 낮으면 타이어가 주저앉아 **양쪽 가장자리**가 땅에 많이 닿습니다. 그래서 가장자리가 빨리 닳고, 핸들이 무거워지며, 연료도 더 듭니다.\n\n**틀린 선지**\n- ① 연료 소비가 줄어든다: 구르는 저항이 커져 연료가 더 듭니다.\n- ② 타이어의 가운데가 빨리 닳는다: 가운데가 빨리 닳는 것은 공기압이 너무 높을 때입니다.\n- ④ 핸들이 가벼워진다: 공기압이 낮으면 땅에 닿는 면이 넓어져 핸들이 무거워집니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "타이어"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
   }
 ]

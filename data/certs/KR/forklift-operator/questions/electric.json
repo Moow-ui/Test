@@ -90,5 +90,73 @@
         3
       ]
     }
+  },
+  {
+    "id": "forklift-operator-electric-0001",
+    "certId": "forklift-operator",
+    "subjectId": "structure",
+    "chapterId": "electric",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "엔진을 처음 돌려 시동이 걸리게 하는 전기 장치는?",
+    "choices": [
+      "전압 조정기",
+      "예열 플러그",
+      "발전기(알터네이터)",
+      "시동 전동기(스타터)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "시동 전동기: 축전지 전기로 엔진을 처음 돌린다",
+    "explanation": "**시동 전동기**는 축전지의 전기로 플라이휠을 돌려 엔진이 스스로 돌기 시작하게 합니다. 시동이 걸린 뒤에는 발전기가 전기를 만들어 축전지를 다시 채웁니다.\n\n**틀린 선지**\n- ① 전압 조정기: 발전기가 만드는 전압을 일정하게 맞추는 장치입니다.\n- ② 예열 플러그: 연소실을 데워 시동을 돕지만 엔진을 돌리지는 않습니다.\n- ③ 발전기(알터네이터): 발전기는 엔진이 돈 뒤에 전기를 만들어 축전지를 충전합니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "시동 장치"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "forklift-operator-electric-0002",
+    "certId": "forklift-operator",
+    "subjectId": "structure",
+    "chapterId": "electric",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "12V 축전지 2개를 직렬로 연결했을 때의 전압과 용량으로 옳은 것은?",
+    "choices": [
+      "전압은 12V 그대로이고 용량이 2배가 된다",
+      "전압은 24V 가 되고 용량은 1개일 때와 같다",
+      "전압과 용량이 모두 2배가 된다",
+      "전압과 용량이 모두 1개일 때와 같다"
+    ],
+    "answer": 2,
+    "oneLineConcept": "직렬은 전압 2배, 병렬은 용량 2배",
+    "explanation": "축전지를 **직렬**로 이으면 전압이 더해져 12 + 12 = 24V 가 되고, 용량은 그대로입니다. **병렬**로 이으면 전압은 12V 그대로이고 용량이 2배가 됩니다.\n\n**틀린 선지**\n- ① 이것은 병렬로 연결했을 때의 결과입니다.\n- ③ 전압과 용량이 모두 2배가 된다: 직렬에서는 전압만 2배가 됩니다.\n- ④ 전압과 용량이 모두 1개일 때와 같다: 직렬로 이으면 전압이 더해집니다.",
+    "frequency": 3,
+    "reviewStatus": "unverified",
+    "tags": [
+      "축전지"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   }
 ]

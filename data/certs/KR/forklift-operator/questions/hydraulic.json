@@ -126,5 +126,74 @@
       "작동유"
     ],
     "levelLock": true
+  },
+  {
+    "id": "forklift-operator-hydraulic-0001",
+    "certId": "forklift-operator",
+    "subjectId": "structure",
+    "chapterId": "hydraulic",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "유압 장치에서 엔진의 힘(기계적 에너지)을 유압 에너지로 바꾸는 것은?",
+    "choices": [
+      "유압 펌프",
+      "유압 모터",
+      "오일 탱크",
+      "유압 실린더"
+    ],
+    "answer": 1,
+    "oneLineConcept": "펌프: 기계 힘 → 유압 / 실린더·모터: 유압 → 기계 힘",
+    "explanation": "**유압 펌프**는 엔진의 힘으로 돌면서 작동유를 밀어내 유압을 만듭니다. 이 유압을 받아 실제로 일을 하는 것이 실린더(직선 운동)와 모터(회전 운동)입니다.\n\n**틀린 선지**\n- ② 유압 모터: 모터는 유압을 회전 운동으로 바꿉니다.\n- ③ 오일 탱크: 작동유를 담아 두는 통입니다.\n- ④ 유압 실린더: 실린더는 거꾸로 유압을 직선 운동으로 바꿉니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "유압 펌프"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "forklift-operator-hydraulic-0002",
+    "certId": "forklift-operator",
+    "subjectId": "structure",
+    "chapterId": "hydraulic",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "유압 펌프에서 소음이 나고 작동유에 거품이 생기는 원인으로 가장 알맞은 것은?",
+    "choices": [
+      "흡입 쪽으로 공기가 빨려 들어간다",
+      "작동유의 양이 너무 많다",
+      "릴리프 밸브의 설정 압력이 낮다",
+      "작동유의 온도가 낮다"
+    ],
+    "answer": 1,
+    "oneLineConcept": "펌프 소음·거품: 공기 흡입(오일 부족, 흡입관 풀림)",
+    "explanation": "작동유가 모자라거나 흡입관의 이음부가 헐거우면 펌프가 **공기를 함께 빨아들입니다**. 공기가 섞이면 소음이 나고 작동유에 거품이 생기며 실린더의 움직임도 불규칙해집니다.\n\n**틀린 선지**\n- ② 작동유의 양이 너무 많다: 양이 모자랄 때 공기가 빨려 들어가 소음이 납니다.\n- ③ 릴리프 밸브의 설정 압력이 낮다: 설정 압력이 낮으면 힘이 약해질 뿐 거품과는 거리가 멉니다.\n- ④ 작동유의 온도가 낮다: 온도가 낮으면 끈적해져 움직임이 둔해질 수 있지만 거품의 주된 원인은 아닙니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "유압 펌프",
+      "고장"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   }
 ]

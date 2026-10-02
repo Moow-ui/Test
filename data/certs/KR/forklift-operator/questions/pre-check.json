@@ -124,5 +124,74 @@
         4
       ]
     }
+  },
+  {
+    "id": "forklift-operator-pre-check-0001",
+    "certId": "forklift-operator",
+    "subjectId": "operation",
+    "chapterId": "pre-check",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "지게차의 시동을 걸기 전에 하는 점검 항목으로 알맞은 것은?",
+    "choices": [
+      "배기가스의 색",
+      "엔진 오일과 냉각수의 양",
+      "충전 경고등이 꺼지는지 여부",
+      "엔진 오일의 압력"
+    ],
+    "answer": 2,
+    "oneLineConcept": "시동 전: 오일·냉각수·연료 양, 누유, 타이어",
+    "explanation": "시동 **전**에는 엔진을 돌리지 않고도 볼 수 있는 것을 점검합니다. 엔진 오일 양, 냉각수 양, 연료 양, 바닥에 기름이나 물이 샌 자국, 타이어 상태가 여기에 들어갑니다.\n\n**틀린 선지**\n- ① 배기가스의 색: 배기가스 색은 시동을 건 뒤에야 볼 수 있습니다.\n- ③ 충전 경고등이 꺼지는지 여부: 충전 경고등은 시동이 걸린 뒤 꺼지는지를 봅니다.\n- ④ 엔진 오일의 압력: 오일 압력은 엔진이 돌아야 생기므로 시동 뒤에 확인합니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "일상 점검"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "forklift-operator-pre-check-0002",
+    "certId": "forklift-operator",
+    "subjectId": "operation",
+    "chapterId": "pre-check",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "디젤 엔진의 예열 장치(예열 플러그)를 쓰는 때로 알맞은 것은?",
+    "choices": [
+      "화물을 들어 올릴 때",
+      "엔진이 과열되었을 때",
+      "작업을 마치고 엔진을 끄기 전에",
+      "추운 날 시동을 걸기 전에"
+    ],
+    "answer": 4,
+    "oneLineConcept": "예열 플러그: 추울 때 연소실을 데워 시동을 돕는다",
+    "explanation": "디젤 엔진은 압축한 공기의 열로 연료에 불을 붙입니다. 날이 추우면 공기가 충분히 뜨거워지지 않아 시동이 잘 걸리지 않으므로, **예열 플러그**로 연소실을 미리 데운 뒤 시동을 겁니다.\n\n**틀린 선지**\n- ① 화물을 들어 올릴 때: 화물을 들 때는 유압 장치를 쓰며 예열 장치와 관계가 없습니다.\n- ② 엔진이 과열되었을 때: 과열되면 엔진을 공회전시켜 식혀야 하며, 예열과는 관계가 없습니다.\n- ③ 작업을 마치고 엔진을 끄기 전에: 엔진을 끄기 전에는 잠시 공회전시켜 식힙니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "시동",
+      "예열"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
   }
 ]

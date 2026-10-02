@@ -124,5 +124,74 @@
       "주행 안전"
     ],
     "levelLock": true
+  },
+  {
+    "id": "forklift-operator-driving-0001",
+    "certId": "forklift-operator",
+    "subjectId": "operation",
+    "chapterId": "driving",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "화물을 실은 지게차로 경사지를 올라갈 때의 운전 방법으로 옳은 것은?",
+    "choices": [
+      "포크를 높이 든 채 빠르게 올라간다",
+      "화물이 언덕 아래쪽을 향하도록 후진으로 올라간다",
+      "화물이 언덕 위쪽을 향하도록 전진으로 올라간다",
+      "경사면을 비스듬히 가로질러 올라간다"
+    ],
+    "answer": 3,
+    "oneLineConcept": "화물은 늘 언덕 위쪽: 오를 때 전진, 내려올 때 후진",
+    "explanation": "경사지에서는 **화물이 언제나 언덕 위쪽**을 향해야 합니다. 그래서 올라갈 때는 전진, 내려올 때는 후진으로 운전합니다.\n\n**틀린 선지**\n- ① 포크를 높이 든 채 빠르게 올라간다: 포크를 높이 들면 무게중심이 높아져 위험합니다.\n- ② 화물이 아래쪽을 향하면 화물이 쏟아지고 차가 앞으로 넘어질 수 있습니다.\n- ④ 경사면을 비스듬히 가로질러 올라간다: 비스듬히 가면 옆으로 넘어질 위험이 큽니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "경사지"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "forklift-operator-driving-0002",
+    "certId": "forklift-operator",
+    "subjectId": "operation",
+    "chapterId": "driving",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "지게차가 선회할 때 특히 조심해야 하는 부분과 그 이유로 옳은 것은?",
+    "choices": [
+      "뒷바퀴로 방향을 바꾸므로 차체 뒤쪽이 바깥으로 크게 돈다",
+      "네 바퀴가 모두 방향을 바꾸므로 조심할 부분이 없다",
+      "선회할 때는 속도를 높여야 안정된다",
+      "앞바퀴로 방향을 바꾸므로 차체 앞쪽이 바깥으로 크게 돈다"
+    ],
+    "answer": 1,
+    "oneLineConcept": "지게차는 뒷바퀴 조향: 선회할 때 뒤쪽이 크게 돈다",
+    "explanation": "지게차는 **뒷바퀴로 방향을 바꿉니다**. 그래서 선회할 때 차체 뒤쪽(평형추 쪽)이 바깥으로 크게 휘둘립니다. 좁은 통로에서는 뒤쪽이 사람이나 물건에 부딪히지 않는지 살피며 천천히 돌아야 합니다.\n\n**틀린 선지**\n- ② 일반적인 지게차는 뒷바퀴만 방향을 바꿉니다.\n- ③ 선회할 때는 속도를 높여야 안정된다: 속도를 높이면 원심력이 커져 넘어지기 쉽습니다.\n- ④ 지게차는 앞바퀴가 아니라 뒷바퀴로 방향을 바꿉니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "선회",
+      "조향"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
   }
 ]
