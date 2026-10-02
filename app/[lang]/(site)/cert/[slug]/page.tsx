@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { AdSlot } from "@/components/AdSlot";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Fold } from "@/components/Fold";
 import { JsonLd } from "@/components/JsonLd";
@@ -191,7 +190,6 @@ export default async function CertPage({ params }: Props) {
         </details>
       )}
 
-      <AdSlot position="cert-bottom" />
     </article>
   );
 }

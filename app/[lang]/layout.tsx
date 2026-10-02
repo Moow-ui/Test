@@ -6,7 +6,7 @@ import { FontLoader } from "@/components/FontLoader";
 import { SyncManager } from "@/components/auth/SyncManager";
 import { LOCALES, brandName, getMessages, isLocale } from "@/lib/i18n";
 import { homeMeta, toMetadata } from "@/lib/seo";
-import { SITE_URL } from "@/lib/site";
+import { ADSENSE_CLIENT, SITE_URL, SITE_VERIFICATION } from "@/lib/site";
 import { DISPLAY_INIT_SCRIPT } from "@/lib/storage";
 
 type Props = { children: React.ReactNode; params: Promise<{ lang: string }> };
@@ -18,8 +18,6 @@ export function generateStaticParams() {
   return LOCALES.map((lang) => ({ lang }));
 }
 
-const naverVerification = process.env.NAVER_SITE_VERIFICATION;
-
 export async function generateMetadata({ params }: Pick<Props, "params">): Promise<Metadata> {
   const { lang } = await params;
   if (!isLocale(lang)) return {};
@@ -27,11 +25,16 @@ export async function generateMetadata({ params }: Pick<Props, "params">): Promi
     ...toMetadata(lang, homeMeta(lang), { shared: "/" }),
     metadataBase: new URL(SITE_URL),
     applicationName: brandName(lang),
-    // 구글 서치콘솔·네이버 서치어드바이저 소유확인 (환경변수에 값이 있을 때만 태그가 생긴다)
+    // 구글·네이버·Bing 소유확인 (값이 있을 때만 태그가 생긴다. lib/site.ts)
     verification: {
-      google: process.env.GOOGLE_SITE_VERIFICATION || undefined,
-      other: naverVerification ? { "naver-site-verification": naverVerification } : undefined,
+      google: SITE_VERIFICATION.google || undefined,
+      other: {
+        ...(SITE_VERIFICATION.naver ? { "naver-site-verification": SITE_VERIFICATION.naver } : {}),
+        ...(SITE_VERIFICATION.bing ? { "msvalidate.01": SITE_VERIFICATION.bing } : {}),
+      },
     },
+    // 애드센스 사이트 확인 (광고 id 가 있을 때만)
+    other: ADSENSE_CLIENT ? { "google-adsense-account": ADSENSE_CLIENT } : undefined,
     formatDetection: { telephone: false },
   };
 }

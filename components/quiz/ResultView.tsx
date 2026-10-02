@@ -253,6 +253,15 @@ export function ResultView({
         </ol>
       </section>
 
+      {/* 시험 화면에는 하단 안내(Footer)가 없어서 약관 링크를 여기에 둔다 */}
+      <nav aria-label={all.nav.legalMenu} className="no-print flex flex-wrap justify-center gap-x-4 gap-y-1 text-[0.85rem]">
+        {(["terms", "privacy", "disclaimer"] as const).map((id) => (
+          <Link key={id} href={localePath(locale, `/${id}`)} className="link">
+            {all.nav[id]}
+          </Link>
+        ))}
+      </nav>
+
       <AdSlot position="result-bottom" />
     </div>
   );

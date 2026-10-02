@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { AdSlot } from "@/components/AdSlot";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Stars } from "@/components/Stars";
 import { StaticQuestion } from "@/components/StaticQuestion";
@@ -176,7 +175,6 @@ export default async function ChapterPage({ params }: Props) {
         </p>
       </nav>
 
-      <AdSlot position="chapter-bottom" />
     </article>
   );
 }

@@ -97,7 +97,16 @@
   - 체크가 켜져 있으면 고르는 즉시 채점하고 답을 잠근다. 꺼져 있으면 마지막에 한꺼번에 채점한다.
   - 문제 위에 출처: "AI 예상문제 · 검수 전". 해설·오류 신고는 눌러야 펼쳐진다.
   - 상단 메뉴·하단 안내 없음 (`app/[lang]/(exam)/layout.tsx`). 키보드: 숫자 키(보이는 보기 번호) 선택, Enter/→ 다음, ← 이전.
-- **광고 자리**: `components/AdSlot.tsx` 로 자리만 (지금은 아무것도 그리지 않음). 선지·다음 버튼과 붙이지 않고, 시험 화면에는 넣지 않는다.
+- **광고 자리**: `components/AdSlot.tsx`. `NEXT_PUBLIC_ADSENSE_ID` 가 없으면 아무것도 그리지 않는다.
+  자리는 **홈 목록 하단·결과 화면 하단 두 곳뿐**이다. 선지·다음 버튼과 붙이지 않고, 풀이 중인 시험 화면에는 넣지 않는다.
+  `/ads.txt` 는 `scripts/build-ads-txt.ts` 가 빌드 때 만든다 (id 가 없으면 빈 파일).
+- **안내 페이지** (소개·문의·개인정보처리방침·이용약관·면책 고지): 본문은 `content/pages/{ko,en}.ts`, 화면은 `app/[lang]/(site)/[page]/page.tsx` 하나.
+  긴 글이고 나라마다 구성이 달라 `messages` 에 넣지 않는다. 사이트 이름·이메일은 `{brand}`, `{email}` 로 받는다. 글을 고치면 `INFO_UPDATED`(시행일)도 고친다.
+  하단 안내(`Footer`)에 5개 링크가 모두 있고, 결과 화면에는 약관 링크만 작게 둔다.
+- **쿠키 안내**: `/en` 은 화면 아래 배너(`components/CookieNotice.tsx`, 확인하면 다시 안 뜸), `/ko` 는 하단 안내의 한 줄.
+- **내 데이터 삭제**: 로그인한 사람은 회원 탈퇴, 로그인하지 않은 사람은 내 정보 화면의 "이 기기의 기록 모두 지우기"(`clearDeviceRecords`). 둘 다 한 번 확인한다.
+- **빌드 때 읽는 설정값**은 `lib/site.ts` 에 모은다: `CONTACT_EMAIL`, 소유확인(`GOOGLE_`·`NAVER_`·`BING_SITE_VERIFICATION`), `NEXT_PUBLIC_ADSENSE_ID`.
+  모든 페이지가 정적이라 Cloudflare 의 **빌드 변수**에 넣고 다시 배포해야 반영된다.
 
 ## 4. 출제 규칙
 

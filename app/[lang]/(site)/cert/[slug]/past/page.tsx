@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { AdSlot } from "@/components/AdSlot";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { StaticQuestion } from "@/components/StaticQuestion";
 import { getCertificationIn, getQuestions } from "@/lib/data";
@@ -153,7 +152,6 @@ export default async function PastPage({ params }: Props) {
         </div>
       </section>
 
-      <AdSlot position="past-bottom" />
     </article>
   );
 }

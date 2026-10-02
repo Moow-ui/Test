@@ -4,7 +4,8 @@
     "titleSuffix": "Free Certification Practice Questions",
     "description": "Free practice questions for US certification and licensing exams. Pick an exam, answer a few questions at a time, and see the answer with a plain-English explanation right away.",
     "notice": "Questions on this site are AI-written practice questions modeled on each exam's format and difficulty. They are not real exam questions and may contain errors. Use 'Report a problem' if something looks wrong.",
-    "officialInfo": "Always confirm exam dates, fees, and eligibility with the official exam provider."
+    "officialInfo": "Always confirm exam dates, fees, and eligibility with the official exam provider.",
+    "cookieNotice": "This site uses cookies to keep you logged in and to show ads. See the Privacy Policy for details."
   },
   "nav": {
     "skip": "Skip to content",
@@ -15,12 +16,28 @@
     "certList": "All exams",
     "footerMenu": "Footer menu",
     "breadcrumb": "You are here",
-    "languageName": "English"
+    "languageName": "English",
+    "about": "About",
+    "contact": "Contact",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "disclaimer": "Disclaimer",
+    "legalMenu": "Policies"
   },
   "banner": {
     "label": "Language notice",
     "go": "US exams: {brand} →",
     "stay": "Dismiss"
+  },
+  "cookie": {
+    "label": "Cookie notice",
+    "text": "We use cookies to keep you logged in and to show ads.",
+    "more": "Learn more",
+    "ok": "OK"
+  },
+  "info": {
+    "contact": "Contact:",
+    "emailPending": "(contact email coming soon)"
   },
   "display": {
     "fontSize": "Text size",
@@ -351,7 +368,12 @@
     "logout": "Log out",
     "delete": "Delete account",
     "confirmDelete": "Delete your account? Your account and all saved records will be removed permanently.",
-    "yesDelete": "Yes, delete"
+    "yesDelete": "Yes, delete",
+    "clearDevice": "Delete all records on this device",
+    "clearDeviceHint": "Removes the practice history, scores, and review list stored in this browser.",
+    "confirmClearDevice": "Delete all practice history, scores, and review list items stored on this device? This cannot be undone.",
+    "yesClearDevice": "Yes, delete all",
+    "clearedDevice": "All records on this device were deleted."
   },
   "owned": {
     "cert": "Certification",
@@ -473,6 +495,9 @@
     "cbt": {
       "title": "{name} Full Mock Exam | {brand}",
       "description": "Take a timed {name} mock exam on a screen laid out like the real test."
+    },
+    "info": {
+      "title": "{title} | {brand}"
     }
   },
   "og": {

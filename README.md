@@ -124,7 +124,8 @@ Cloudflare 대시보드 → Workers & Pages → `test` → **Settings → Build*
   - DB 가 연결되지 않아도 사이트와 문제 풀이는 정상 동작하고, 로그인 화면에만 "준비 중"이라고 나옵니다.
 - 검색엔진용 주소(canonical, hreflang, sitemap)는 `config/brand.ts` 의 도메인(`https://exampasso.com`)으로 만들어집니다.
   다른 주소로 시험 배포할 때만 Build variables 에 `NEXT_PUBLIC_SITE_URL` (끝에 `/` 없이)을 넣으세요. **실제 서비스에서는 넣지 않습니다.**
-- 구글·네이버 소유확인 값이 있으면 `GOOGLE_SITE_VERIFICATION`, `NAVER_SITE_VERIFICATION` 도 같은 곳에 넣습니다. (`.env.example` 참고)
+- 같은 곳(Build 의 Variables and secrets)에 넣는 값: 문의 이메일 `CONTACT_EMAIL`, 소유확인 `GOOGLE_SITE_VERIFICATION`·`BING_SITE_VERIFICATION`, 애드센스 `NEXT_PUBLIC_ADSENSE_ID`. (`.env.example` 참고)
+  네이버 소유확인 값은 `lib/site.ts` 에 이미 들어 있습니다. 값을 넣거나 바꾼 뒤에는 **다시 배포**해야 반영됩니다.
 - Worker 이름을 바꾸면 `wrangler.jsonc` 의 `"name"` 도 같은 이름으로 바꿔야 합니다.
 
 ### 6-3. 검색엔진에 등록하기
@@ -163,7 +164,8 @@ npx wrangler deploy --dry-run
 
 - 지금 들어 있는 문제·해설은 모두 AI 가 만든 예상문제이며 "검수 전"으로 표시됩니다. 공개 전에 전문가 검수를 권합니다.
 - "이 문제를 맞혔다면 합격 가능성은? N%" 는 단원 중요도와 출제 빈도로 계산한 추정치입니다.
-- 광고는 아직 없습니다. 자리는 `components/AdSlot.tsx` 로 잡아 두었습니다.
-- 회원가입을 받으면 개인정보처리방침·이용약관을 사이트에 게시해야 합니다. (아이디·닉네임·풀이 기록을 저장합니다)
-  아직 만들어 두지 않았으니 공개 전에 준비하세요.
+- 광고는 `NEXT_PUBLIC_ADSENSE_ID` 를 넣기 전에는 나오지 않습니다. 자리는 홈 목록 하단과 결과 화면 하단 두 곳입니다 (`components/AdSlot.tsx`).
+  `/ads.txt` 는 빌드할 때 그 값으로 자동으로 만들어집니다.
+- 소개·문의·개인정보처리방침·이용약관·면책 고지는 `content/pages/ko.ts`, `en.ts` 에 있습니다 (`/ko/about`, `/ko/privacy` …).
+  글을 고치면 `content/pages/index.ts` 의 시행일(`INFO_UPDATED`)도 함께 고칩니다.
 - 비밀번호는 원문을 저장하지 않고 해시(PBKDF2-SHA256)만 저장합니다. 로그인 5회 연속 실패 시 5분간 잠깁니다.

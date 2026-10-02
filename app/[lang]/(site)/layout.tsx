@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import { CookieNotice } from "@/components/CookieNotice";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { LocaleBanner } from "@/components/i18n/LocaleBanner";
@@ -22,6 +23,7 @@ export default async function SiteLayout({
         {children}
       </main>
       <Footer locale={lang} />
+      <CookieNotice />
     </>
   );
 }

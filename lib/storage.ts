@@ -20,6 +20,7 @@ export const STORAGE_KEYS = {
   lastLevel: "qpass:lastLevel",
   instantCheck: "qpass:instantCheck",
   examZoom: "qpass:examZoom",
+  cookieNotice: "qpass:cookieNotice",
   session: (certId: string) => `qpass:session:${certId}`,
   cbt: (certId: string) => `qpass:cbt:${certId}`,
 } as const;
@@ -296,6 +297,34 @@ export function clearSyncData(): void {
   for (const key of [STORAGE_KEYS.history, STORAGE_KEYS.notes, STORAGE_KEYS.results, STORAGE_KEYS.ownedCerts]) {
     removeKey(key);
   }
+}
+
+/** 지워도 남겨 두는 값: 화면 설정과 쿠키 안내 확인 여부 (기록이 아니다) */
+const KEPT_KEYS: string[] = [STORAGE_KEYS.theme, STORAGE_KEYS.font, STORAGE_KEYS.fontsReady, STORAGE_KEYS.cookieNotice];
+
+/**
+ * "이 기기의 기록 모두 지우기": 이 브라우저에 저장된 풀이 기록·점수 기록·오답노트·보유 자격증·
+ * 풀던 시험·최근 본 자격증을 모두 지운다. 글씨 크기 같은 화면 설정은 남긴다.
+ */
+export function clearDeviceRecords(): void {
+  try {
+    const keys: string[] = [];
+    for (let i = 0; i < window.localStorage.length; i += 1) {
+      const key = window.localStorage.key(i);
+      if (key?.startsWith("qpass:") && !KEPT_KEYS.includes(key)) keys.push(key);
+    }
+    for (const key of keys) window.localStorage.removeItem(key);
+  } catch {
+    // 무시
+  }
+  notify();
+}
+
+// ───────────────────────── 쿠키 안내 ─────────────────────────
+
+/** 쿠키 안내 배너에서 "확인"을 눌렀다고 기억한다 (다시 띄우지 않는다) */
+export function dismissCookieNotice(): void {
+  writeJson(STORAGE_KEYS.cookieNotice, true);
 }
 
 // ───────────────────────── 진행 중인 풀이 (이어서 풀기) ─────────────────────────

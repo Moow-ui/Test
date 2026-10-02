@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { INFO_PAGE_IDS } from "@/content/pages";
 import { brandName, getMessages, localePath, type Locale } from "@/lib/i18n";
 import { LocaleSwitch } from "./i18n/LocaleSwitch";
 
@@ -21,6 +22,14 @@ export function Footer({ locale }: { locale: Locale }) {
           </Link>
           <LocaleSwitch />
         </nav>
+        <nav aria-label={m.nav.legalMenu} className="flex flex-wrap gap-x-4 gap-y-1">
+          {INFO_PAGE_IDS.map((id) => (
+            <Link key={id} href={localePath(locale, `/${id}`)} className="link">
+              {m.nav[id]}
+            </Link>
+          ))}
+        </nav>
+        <p>{m.site.cookieNotice}</p>
       </div>
     </footer>
   );

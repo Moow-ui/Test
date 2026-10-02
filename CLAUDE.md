@@ -55,6 +55,7 @@ reports/{YYYY-MM}/            작업 리포트 (월별 폴더)
 ```
 config/brand.ts            ★ 브랜드명(언어별)·도메인
 messages/{ko,en}.json      ★ 화면 문구 (app/, components/ 에 문구를 직접 쓰지 않는다)
+content/pages/{ko,en}.ts   안내 페이지 본문 (소개·문의·개인정보처리방침·이용약관·면책 고지)
 app/[lang]/                모든 화면. 자격증은 동적 경로 하나(cert/[slug])와 공통 컴포넌트로 처리
 lib/data/                  ★ 데이터 읽기 (index: 서버·빌드 / client: 브라우저 / paths: 폴더 규칙 / validate: 검사)
 lib/schemas.ts             데이터 스키마 (zod)

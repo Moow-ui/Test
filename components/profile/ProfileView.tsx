@@ -14,6 +14,7 @@ import {
   EMPTY_OWNED,
   EMPTY_RESULTS,
   STORAGE_KEYS,
+  clearDeviceRecords,
   type NoteEntry,
   type OwnedCert,
   type ResultRecord,
@@ -41,6 +42,50 @@ interface QuestionBrief {
 
 const LIST_LIMIT = 50;
 
+/** 로그인하지 않은 사람의 "내 데이터 삭제": 이 기기에 저장된 기록을 모두 지운다 (한 번 확인) */
+function ClearDeviceRecords() {
+  const { m: all } = useMessages();
+  const m = all.profile;
+  const [step, setStep] = useState<"idle" | "confirm" | "done">("idle");
+
+  return (
+    <div className="mx-auto max-w-md space-y-2 border-t border-line-soft pt-4">
+      <p className="text-[0.85rem] text-ink-sub">{m.clearDeviceHint}</p>
+      {step !== "confirm" && (
+        <button type="button" className="btn" onClick={() => setStep("confirm")}>
+          {m.clearDevice}
+        </button>
+      )}
+      {step === "done" && (
+        <p role="status" className="font-bold text-ok">
+          {m.clearedDevice}
+        </p>
+      )}
+      {step === "confirm" && (
+        <div role="alertdialog" aria-labelledby="clear-device-title" className="rounded-lg border-2 border-bad bg-bad-soft p-4">
+          <p id="clear-device-title" className="font-extrabold">
+            {m.confirmClearDevice}
+          </p>
+          <div className="mt-2 flex flex-wrap gap-2">
+            <button
+              type="button"
+              className="btn"
+              onClick={() => {
+                clearDeviceRecords();
+                setStep("done");
+              }}
+            >
+              {m.yesClearDevice}
+            </button>
+            <button type="button" className="btn btn-primary" onClick={() => setStep("idle")}>
+              {all.common.no}
+            </button>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
 
 /** 프로필: 칭호(보유 자격증), 점수 기록, 내가 푼 문제, 오답, 틀린 핵심 개념, 나만의 오답노트 */
 export function ProfileView({ certs }: { certs: ProfileCert[] }) {
@@ -101,6 +146,7 @@ export function ProfileView({ certs }: { certs: ProfileCert[] }) {
         <h1 className="text-center text-2xl font-extrabold">{all.auth.login}</h1>
         {auth.available ? <AuthForm /> : <p className="card mx-auto max-w-md p-5 font-bold">{m.unavailable}</p>}
         <p className="mx-auto max-w-md text-[0.85rem] text-ink-sub">{m.guestHint}</p>
+        <ClearDeviceRecords />
       </div>
     );
   }

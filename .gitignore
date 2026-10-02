@@ -37,6 +37,9 @@ yarn-error.log*
 # 빌드 때 data/ 에서 만드는 정적 문제 파일 (scripts/build-data.ts)
 /public/data/
 
+# 빌드 때 NEXT_PUBLIC_ADSENSE_ID 로 만드는 파일 (scripts/build-ads-txt.ts)
+/public/ads.txt
+
 # vercel
 .vercel
 

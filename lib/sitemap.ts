@@ -1,3 +1,4 @@
+import { INFO_PAGE_IDS, INFO_UPDATED } from "@/content/pages";
 import { getReadyCertifications } from "./data";
 import { LOCALES, localeCountry, localePath, type Locale } from "./i18n";
 import { languageAlternates } from "./seo";
@@ -46,6 +47,18 @@ export async function sitemapEntries(locale: Locale): Promise<SitemapEntry[]> {
         entries.push({ path: `${base}/${chapter.id}`, lastModified, changeFrequency: "monthly", priority: 0.6 });
       }
     }
+  }
+
+  // 안내 페이지 (소개·문의·개인정보처리방침·이용약관·면책 고지)
+  for (const id of INFO_PAGE_IDS) {
+    const path = localePath(locale, `/${id}`);
+    entries.push({
+      path,
+      lastModified: INFO_UPDATED,
+      changeFrequency: "monthly",
+      priority: 0.3,
+      alternates: languageAlternates(locale, path, `/${id}`),
+    });
   }
   return entries;
 }
