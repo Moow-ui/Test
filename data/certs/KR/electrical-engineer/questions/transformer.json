@@ -138,5 +138,110 @@
         4
       ]
     }
+  },
+  {
+    "id": "electrical-engineer-transformer-0001",
+    "certId": "electrical-engineer",
+    "subjectId": "electric-machines",
+    "chapterId": "transformer",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "권수비가 20 인 변압기의 1차 측에 2,000V 를 가했을 때 2차 측 전압은 몇 V 인가?",
+    "choices": [
+      "200V",
+      "1,980V",
+      "100V",
+      "40,000V"
+    ],
+    "answer": 3,
+    "oneLineConcept": "권수비 a = V1 ÷ V2",
+    "explanation": "1. 공식: a = V1 ÷ V2 → V2 = V1 ÷ a\n2. 계산: 2,000 ÷ 20 = 100V\n\n**틀린 선지**\n- ① 200V: 권수비를 10 으로 잘못 본 값입니다.\n- ② 1,980V: 권수비를 뺀 값입니다.\n- ④ 40,000V: 권수비를 곱한 값입니다. 나누어야 합니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "변압기",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-engineer-transformer-0002",
+    "certId": "electrical-engineer",
+    "subjectId": "electric-machines",
+    "chapterId": "transformer",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "변압기의 무부하손 가운데 대부분을 차지하는 것은?",
+    "choices": [
+      "철손",
+      "동손",
+      "표유 부하손",
+      "기계손"
+    ],
+    "answer": 1,
+    "oneLineConcept": "무부하손 ≒ 철손(히스테리시스손 + 와류손)",
+    "explanation": "부하가 없어도 철심에는 자속이 지나므로 **철손**이 생깁니다. 철손은 히스테리시스손과 와류손으로 이루어지며, 부하의 크기와 관계없이 거의 일정합니다.\n\n**틀린 선지**\n- ② 동손: 부하 전류가 흐를 때 권선의 저항에서 생기는 부하손입니다.\n- ③ 표유 부하손: 부하가 걸렸을 때 누설 자속으로 생기는 손실입니다.\n- ④ 기계손: 변압기는 도는 부분이 없어 기계손이 없습니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "변압기",
+      "손실"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "electrical-engineer-transformer-0003",
+    "certId": "electrical-engineer",
+    "subjectId": "electric-machines",
+    "chapterId": "transformer",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "% 저항 강하가 2%, % 리액턴스 강하가 3% 인 변압기의 역률 0.8(지상)에서의 전압 변동률은 몇 % 인가?",
+    "choices": [
+      "3.4%",
+      "1%",
+      "5%",
+      "3.6%"
+    ],
+    "answer": 1,
+    "oneLineConcept": "전압 변동률 ε = p cosθ + q sinθ",
+    "explanation": "1. 역률 0.8 이면 cosθ = 0.8, sinθ = 0.6\n2. 공식: ε = p cosθ + q sinθ\n3. 계산: 2 × 0.8 + 3 × 0.6 = 1.6 + 1.8\n4. 답: 3.4%\n\n**틀린 선지**\n- ② 1%: 두 값의 차이입니다.\n- ③ 5%: 두 값을 그대로 더한 값입니다.\n- ④ 3.6%: p 에 sinθ, q 에 cosθ 를 바꿔 곱한 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "전압 변동률",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
   }
 ]

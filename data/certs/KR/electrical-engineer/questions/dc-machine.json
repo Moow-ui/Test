@@ -67,5 +67,110 @@
         4
       ]
     }
+  },
+  {
+    "id": "electrical-engineer-dc-machine-0001",
+    "certId": "electrical-engineer",
+    "subjectId": "electric-machines",
+    "chapterId": "dc-machine",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "직류 분권 전동기의 계자 저항을 늘리면 회전 속도는 어떻게 되는가?",
+    "choices": [
+      "빨라진다",
+      "느려진다",
+      "변하지 않는다",
+      "곧바로 멈춘다"
+    ],
+    "answer": 1,
+    "oneLineConcept": "직류 전동기 속도는 자속에 반비례",
+    "explanation": "1. 계자 저항을 늘리면 계자 전류가 줄어듭니다.\n2. 계자 전류가 줄면 자속(Φ)이 줄어듭니다.\n3. 속도 N 은 자속에 반비례하므로 **빨라집니다**.\n\n**틀린 선지**\n- ② 느려진다: 계자 전류가 줄어 자속이 줄면 속도는 오히려 빨라집니다.\n- ③ 변하지 않는다: 속도는 자속에 반비례하므로 변합니다.\n- ④ 곧바로 멈춘다: 자속이 줄어든다고 멈추지는 않습니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "직류 전동기",
+      "속도 제어"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "electrical-engineer-dc-machine-0002",
+    "certId": "electrical-engineer",
+    "subjectId": "electric-machines",
+    "chapterId": "dc-machine",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "단자 전압 100V, 전기자 전류 10A, 전기자 저항 0.5Ω 인 직류 분권 전동기의 역기전력은 몇 V 인가?",
+    "choices": [
+      "100V",
+      "105V",
+      "5V",
+      "95V"
+    ],
+    "answer": 4,
+    "oneLineConcept": "전동기 역기전력 E = V − Ia × Ra",
+    "explanation": "1. 공식: E = V − Ia × Ra\n2. 전압 강하: 10 × 0.5 = 5V\n3. E = 100 − 5 = 95V\n\n**틀린 선지**\n- ① 100V: 전압 강하를 빼지 않은 값입니다.\n- ② 105V: 전압 강하를 더한 값으로, 발전기의 유도 기전력을 구하는 식입니다.\n- ③ 5V: 전기자 저항에서 생기는 전압 강하(10 × 0.5)입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "직류 전동기",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-engineer-dc-machine-0003",
+    "certId": "electrical-engineer",
+    "subjectId": "electric-machines",
+    "chapterId": "dc-machine",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "출력 10kW, 회전 속도 1,000rpm 인 전동기의 토크는 약 몇 N·m 인가?",
+    "choices": [
+      "955N·m",
+      "95.5N·m",
+      "10N·m",
+      "9.55N·m"
+    ],
+    "answer": 2,
+    "oneLineConcept": "토크 T = 9.55 × P[W] ÷ N[rpm]",
+    "explanation": "1. 공식: T = 9.55 × P ÷ N (P 는 W, N 은 rpm)\n2. 계산: 9.55 × 10,000 ÷ 1,000\n3. 답: 95.5N·m\n\n**틀린 선지**\n- ① 955N·m: 자릿수를 잘못 잡은 값입니다.\n- ③ 10N·m: 출력을 회전 속도로 그냥 나눈 값입니다.\n- ④ 9.55N·m: 출력을 kW 그대로 넣거나 자릿수를 잘못 잡은 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "토크",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
   }
 ]

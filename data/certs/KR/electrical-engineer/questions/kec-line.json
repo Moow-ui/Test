@@ -125,5 +125,141 @@
         4
       ]
     }
+  },
+  {
+    "id": "electrical-engineer-kec-line-0001",
+    "certId": "electrical-engineer",
+    "subjectId": "kec",
+    "chapterId": "kec-line",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "저압 또는 고압 가공 전선이 철도나 궤도를 횡단하는 경우, 레일면상 높이는 몇 m 이상이어야 하는가?",
+    "choices": [
+      "6m 이상",
+      "5m 이상",
+      "6.5m 이상",
+      "3.5m 이상"
+    ],
+    "answer": 3,
+    "oneLineConcept": "가공 전선 높이: 철도 6.5m, 도로 6m, 그 밖 5m",
+    "explanation": "저압·고압 가공 전선의 높이\n\n- 도로 횡단: 지표상 6m 이상\n- **철도·궤도 횡단: 레일면상 6.5m 이상**\n- 그 밖의 곳: 지표상 5m 이상\n\n**틀린 선지**\n- ① 6m 이상: 도로를 횡단할 때의 기준입니다.\n- ② 5m 이상: 도로나 철도를 횡단하지 않는 일반 장소의 기준입니다.\n- ④ 3.5m 이상: 횡단보도교 위에 시설하는 저압 전선의 기준입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "가공 전선의 높이"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "electrical-engineer-kec-line-0002",
+    "certId": "electrical-engineer",
+    "subjectId": "kec",
+    "chapterId": "kec-line",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "고압 가공 전선로의 지지물로 철탑을 쓸 때의 표준 경간은 몇 m 이하인가?",
+    "choices": [
+      "400m 이하",
+      "150m 이하",
+      "600m 이하",
+      "250m 이하"
+    ],
+    "answer": 3,
+    "oneLineConcept": "경간: 목주·A종 150m, B종 250m, 철탑 600m",
+    "explanation": "고압·특고압 가공 전선로의 표준 경간\n\n- 목주, A종 철주, A종 철근 콘크리트주: 150m 이하\n- B종 철주, B종 철근 콘크리트주: 250m 이하\n- **철탑: 600m 이하**\n\n**틀린 선지**\n- ① 400m 이하: 기준에 없는 값입니다.\n- ② 150m 이하: 목주나 A종 철주·철근 콘크리트주의 기준입니다.\n- ④ 250m 이하: B종 철주·철근 콘크리트주의 기준입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "경간"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-engineer-kec-line-0003",
+    "certId": "electrical-engineer",
+    "subjectId": "kec",
+    "chapterId": "kec-line",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "가공 전선로의 풍압 하중을 계산할 때, 갑종 풍압 하중에서 원형 목주가 받는 풍압은 수직 투영 면적 1m² 당 몇 Pa 인가?",
+    "choices": [
+      "588Pa",
+      "666Pa",
+      "1,117Pa",
+      "745Pa"
+    ],
+    "answer": 1,
+    "oneLineConcept": "갑종 풍압: 원형 지지물 588Pa, 단도체 전선 745Pa",
+    "explanation": "갑종 풍압 하중(수직 투영 면적 1m² 당)\n\n- **목주, 원형 철주·철근 콘크리트주: 588Pa**\n- 다도체 전선: 666Pa\n- 그 밖의 전선(단도체): 745Pa\n\n**틀린 선지**\n- ② 666Pa: 다도체 전선이 받는 풍압입니다.\n- ③ 1,117Pa: 철주 가운데 강관으로 된 4각형의 것이 받는 풍압입니다.\n- ④ 745Pa: 단도체 전선이 받는 풍압입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "풍압 하중"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-engineer-kec-line-0004",
+    "certId": "electrical-engineer",
+    "subjectId": "kec",
+    "chapterId": "kec-line",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "지중 전선로를 직접 매설식으로 시설할 때, 차량이나 그 밖의 무거운 물체의 압력을 받을 우려가 있는 곳의 매설 깊이는 몇 m 이상인가?",
+    "choices": [
+      "0.6m 이상",
+      "1.2m 이상",
+      "0.3m 이상",
+      "1.0m 이상"
+    ],
+    "answer": 4,
+    "oneLineConcept": "직접 매설식: 압력 받는 곳 1.0m, 그 밖 0.6m 이상",
+    "explanation": "지중 전선로를 직접 매설식으로 시설할 때의 매설 깊이는 **차량 등 무거운 물체의 압력을 받을 우려가 있는 곳 1.0m 이상**, 그 밖의 곳 0.6m 이상입니다.\n\n**틀린 선지**\n- ① 0.6m 이상: 압력을 받을 우려가 없는 곳의 기준입니다.\n- ② 1.2m 이상: KEC 시행 전의 옛 기준입니다.\n- ③ 0.3m 이상: 기준보다 얕은 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "지중 전선로"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
   }
 ]

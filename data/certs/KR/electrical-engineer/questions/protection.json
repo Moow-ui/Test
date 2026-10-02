@@ -92,5 +92,108 @@
       "피뢰기"
     ],
     "levelLock": true
+  },
+  {
+    "id": "electrical-engineer-protection-0001",
+    "certId": "electrical-engineer",
+    "subjectId": "power-engineering",
+    "chapterId": "protection",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "소호(아크를 끄는) 매질로 육불화황(SF₆) 가스를 쓰는 차단기는?",
+    "choices": [
+      "유입 차단기(OCB)",
+      "가스 차단기(GCB)",
+      "공기 차단기(ABB)",
+      "진공 차단기(VCB)"
+    ],
+    "answer": 2,
+    "oneLineConcept": "GCB: SF₆ 가스로 소호",
+    "explanation": "**SF₆ 가스**는 절연 성능과 아크를 끄는 능력이 뛰어나고 불에 타지 않습니다. 가스 차단기는 초고압 계통에 널리 씁니다.\n\n**틀린 선지**\n- ① 유입 차단기(OCB): 절연유 속에서 아크를 끄는 차단기입니다.\n- ③ 공기 차단기(ABB): 압축 공기를 불어 아크를 끄는 차단기입니다.\n- ④ 진공 차단기(VCB): 진공 속에서 아크를 끄는 차단기입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "차단기"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-engineer-protection-0002",
+    "certId": "electrical-engineer",
+    "subjectId": "power-engineering",
+    "chapterId": "protection",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "송전 선로의 철탑 맨 위에 가공 지선을 설치하는 주된 목적은?",
+    "choices": [
+      "전선의 진동을 막는다",
+      "코로나의 발생을 막는다",
+      "지락 전류의 크기를 제한한다",
+      "직격뢰로부터 전선을 보호한다"
+    ],
+    "answer": 4,
+    "oneLineConcept": "가공 지선: 직격뢰 차폐",
+    "explanation": "**가공 지선**은 전선보다 높은 곳에 걸어 둔 접지된 선입니다. 벼락이 전선 대신 가공 지선에 떨어지게 하여 전선을 보호하고, 유도뢰도 줄여 줍니다.\n\n**틀린 선지**\n- ① 전선의 진동을 막는다: 전선의 진동은 댐퍼로 막습니다.\n- ② 코로나의 발생을 막는다: 코로나는 굵은 전선이나 복도체로 막습니다.\n- ③ 지락 전류의 크기를 제한한다: 지락 전류는 중성점 접지 방식으로 제한합니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "가공 지선",
+      "이상 전압"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-engineer-protection-0003",
+    "certId": "electrical-engineer",
+    "subjectId": "power-engineering",
+    "chapterId": "protection",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "변압기 내부 고장을 검출하는 데 주로 쓰는 계전기는?",
+    "choices": [
+      "부족 전압 계전기",
+      "비율 차동 계전기",
+      "과전류 계전기",
+      "거리 계전기"
+    ],
+    "answer": 2,
+    "oneLineConcept": "변압기·발전기 내부 고장: 비율 차동 계전기",
+    "explanation": "**비율 차동 계전기**는 변압기로 들어가는 전류와 나오는 전류를 비교합니다. 내부에 고장이 나면 둘의 차이가 커지므로 이를 검출해 동작합니다.\n\n**틀린 선지**\n- ① 부족 전압 계전기: 전압이 정해 둔 값보다 낮아지면 동작합니다.\n- ③ 과전류 계전기: 전류가 정해 둔 값보다 커지면 동작하며, 내부 고장만 가려내지는 못합니다.\n- ④ 거리 계전기: 고장점까지의 거리(임피던스)로 동작하며 송전 선로 보호에 씁니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "보호 계전기"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
   }
 ]

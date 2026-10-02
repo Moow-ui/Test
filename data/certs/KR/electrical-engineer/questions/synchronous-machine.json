@@ -82,5 +82,73 @@
       "단락비"
     ],
     "levelLock": true
+  },
+  {
+    "id": "electrical-engineer-synchronous-machine-0001",
+    "certId": "electrical-engineer",
+    "subjectId": "electric-machines",
+    "chapterId": "synchronous-machine",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "동기 발전기에 뒤진(지상) 전류가 흐를 때의 전기자 반작용은?",
+    "choices": [
+      "주자속을 늘리는 증자 작용",
+      "주자속과 직각으로 작용하는 교차 자화 작용",
+      "전기자 반작용이 생기지 않는다",
+      "주자속을 줄이는 감자 작용"
+    ],
+    "answer": 4,
+    "oneLineConcept": "동기 발전기: 지상은 감자, 진상은 증자",
+    "explanation": "동기 **발전기**의 전기자 반작용\n\n- 같은 위상(역률 1): 교차 자화 작용\n- 뒤진 전류(지상): **감자 작용**\n- 앞선 전류(진상): 증자 작용\n\n동기 전동기는 지상과 진상이 반대입니다.\n\n**틀린 선지**\n- ① 주자속을 늘리는 증자 작용: 앞선(진상) 전류가 흐를 때의 작용입니다.\n- ② 전압과 같은 위상의 전류(역률 1)가 흐를 때의 작용입니다.\n- ③ 전기자 반작용이 생기지 않는다: 전류가 흐르면 전기자 반작용이 생깁니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "전기자 반작용"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-engineer-synchronous-machine-0002",
+    "certId": "electrical-engineer",
+    "subjectId": "electric-machines",
+    "chapterId": "synchronous-machine",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "동기 전동기를 과여자 상태로 운전하면 어떻게 되는가?",
+    "choices": [
+      "기동 토크가 커진다",
+      "앞선(진상) 전류가 흘러 콘덴서처럼 작용한다",
+      "뒤진(지상) 전류가 흘러 리액터처럼 작용한다",
+      "회전 속도가 동기 속도보다 빨라진다"
+    ],
+    "answer": 2,
+    "oneLineConcept": "과여자는 진상(콘덴서), 부족 여자는 지상(리액터)",
+    "explanation": "동기 전동기는 계자 전류로 역률을 조정할 수 있습니다. **과여자**로 하면 진상 전류가 흘러 콘덴서처럼, 부족 여자로 하면 지상 전류가 흘러 리액터처럼 작용합니다.\n\n**틀린 선지**\n- ① 기동 토크가 커진다: 여자를 늘려도 기동 토크는 커지지 않습니다.\n- ③ 부족 여자로 운전할 때의 현상입니다.\n- ④ 회전 속도가 동기 속도보다 빨라진다: 동기 전동기는 여자와 관계없이 동기 속도로 돕니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "동기 전동기"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
   }
 ]

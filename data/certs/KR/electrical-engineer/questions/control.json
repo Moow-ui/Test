@@ -170,5 +170,175 @@
         4
       ]
     }
+  },
+  {
+    "id": "electrical-engineer-control-0001",
+    "certId": "electrical-engineer",
+    "subjectId": "circuit-control",
+    "chapterId": "control",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "목표값이 시간이 지나도 변하지 않고 일정한 제어는?",
+    "choices": [
+      "정치 제어",
+      "비율 제어",
+      "추종 제어",
+      "프로그램 제어"
+    ],
+    "answer": 1,
+    "oneLineConcept": "정치 제어: 목표값 일정 / 추치 제어: 목표값 변함",
+    "explanation": "목표값이 **일정한** 제어가 **정치 제어**입니다. 목표값이 변하는 추치 제어에는 추종 제어, 프로그램 제어, 비율 제어가 있습니다.\n\n**틀린 선지**\n- ② 비율 제어: 목표값이 다른 양과 일정한 비율을 유지하도록 변하는 제어입니다.\n- ③ 추종 제어: 목표값이 제멋대로 변하고, 제어량이 그것을 따라가게 하는 제어입니다.\n- ④ 프로그램 제어: 목표값이 미리 정해 둔 순서대로 변하는 제어입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "제어계의 분류"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-engineer-control-0002",
+    "certId": "electrical-engineer",
+    "subjectId": "circuit-control",
+    "chapterId": "control",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "제어기의 동작 가운데, 오차가 변하는 속도에 비례해 조작량을 내어 응답을 빠르게 하고 오버슈트를 줄이는 것은?",
+    "choices": [
+      "비례(P) 동작",
+      "온-오프 동작",
+      "적분(I) 동작",
+      "미분(D) 동작"
+    ],
+    "answer": 4,
+    "oneLineConcept": "미분 동작: 속응성 개선 / 적분 동작: 잔류 편차 제거",
+    "explanation": "**미분 동작**은 오차가 커지려는 낌새를 미리 알아채 제동을 겁니다. 그래서 응답이 빨라지고(속응성) 오버슈트가 줄어듭니다.\n\n**틀린 선지**\n- ① 비례(P) 동작: 오차의 크기에 비례해 조작량을 내며, 잔류 편차가 남습니다.\n- ② 온-오프 동작: 조작량이 켜짐과 꺼짐 두 가지뿐인 동작입니다.\n- ③ 적분(I) 동작: 오차를 쌓아 가며 잔류 편차를 없애는 동작입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "PID 제어"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-engineer-control-0003",
+    "certId": "electrical-engineer",
+    "subjectId": "circuit-control",
+    "chapterId": "control",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "1차 지연 요소의 전달 함수는? (K 는 이득, T 는 시정수)",
+    "choices": [
+      "Ks",
+      "K ÷ (1 + Ts)",
+      "K ÷ s",
+      "K"
+    ],
+    "answer": 2,
+    "oneLineConcept": "비례 K, 미분 Ks, 적분 K/s, 1차 지연 K/(1+Ts)",
+    "explanation": "**1차 지연 요소**는 입력이 들어오면 출력이 천천히 따라가는 요소입니다(예: R-C 회로). 전달 함수는 K ÷ (1 + Ts) 이고, T 가 클수록 느리게 따라갑니다.\n\n**틀린 선지**\n- ① Ks: 미분 요소의 전달 함수입니다.\n- ③ K ÷ s: 적분 요소의 전달 함수입니다.\n- ④ K: 비례 요소의 전달 함수입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "전달 함수"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "electrical-engineer-control-0004",
+    "certId": "electrical-engineer",
+    "subjectId": "circuit-control",
+    "chapterId": "control",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "근궤적의 성질로 옳은 것은?",
+    "choices": [
+      "근궤적의 가지 수는 언제나 1개이다",
+      "근궤적은 허수축에 대하여 대칭이다",
+      "근궤적은 개루프 영점에서 출발하여 극점에서 끝난다",
+      "근궤적은 실수축에 대하여 대칭이다"
+    ],
+    "answer": 4,
+    "oneLineConcept": "근궤적: 극점에서 출발, 영점에서 끝, 실수축 대칭",
+    "explanation": "근궤적은 이득 K 를 0 에서 무한대까지 바꿀 때 특성 방정식의 근이 움직이는 자취입니다. **개루프 극점에서 출발해 영점에서 끝나고, 실수축에 대하여 대칭**입니다.\n\n**틀린 선지**\n- ① 근궤적의 가지 수는 언제나 1개이다: 가지 수는 극점의 수와 영점의 수 가운데 큰 쪽과 같습니다.\n- ② 근궤적은 허수축에 대하여 대칭이다: 허수축이 아니라 실수축에 대하여 대칭입니다.\n- ③ 반대입니다. 극점에서 출발하여 영점에서 끝납니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "근궤적"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-engineer-control-0005",
+    "certId": "electrical-engineer",
+    "subjectId": "circuit-control",
+    "chapterId": "control",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "논리식 (A · B)′ 와 같은 것은? (′ 는 부정)",
+    "choices": [
+      "A + B",
+      "A′ + B′",
+      "(A + B)′",
+      "A′ · B′"
+    ],
+    "answer": 2,
+    "oneLineConcept": "드모르간: (A·B)′ = A′+B′, (A+B)′ = A′·B′",
+    "explanation": "**드모르간의 정리**: 전체 부정을 풀 때 곱은 합으로, 합은 곱으로 바꾸고 각 변수를 부정합니다.\n\n- (A · B)′ = A′ + B′\n- (A + B)′ = A′ · B′\n\n**틀린 선지**\n- ① A + B: 부정을 풀면서 각 변수의 부정이 빠졌습니다.\n- ③ (A + B)′: 이 식은 A′ · B′ 와 같습니다.\n- ④ A′ · B′: (A + B)′ 와 같은 식입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "논리식"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
   }
 ]

@@ -136,5 +136,108 @@
         3
       ]
     }
+  },
+  {
+    "id": "electrical-engineer-magnetic-field-0001",
+    "certId": "electrical-engineer",
+    "subjectId": "electromagnetics",
+    "chapterId": "magnetic-field",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "강자성체로만 묶인 것은?",
+    "choices": [
+      "철, 구리, 알루미늄",
+      "구리, 은, 비스무트",
+      "철, 니켈, 코발트",
+      "알루미늄, 백금, 산소"
+    ],
+    "answer": 3,
+    "oneLineConcept": "강자성체: 철·니켈·코발트",
+    "explanation": "**강자성체**는 자석에 강하게 끌리고 스스로 자석이 될 수 있는 물질입니다. 철(Fe), 니켈(Ni), 코발트(Co)가 대표적입니다.\n\n**틀린 선지**\n- ① 철, 구리, 알루미늄: 구리는 반자성체, 알루미늄은 상자성체입니다.\n- ② 구리, 은, 비스무트: 자석에 약하게 밀려나는 반자성체입니다.\n- ④ 알루미늄, 백금, 산소: 자석에 약하게 끌리는 상자성체입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "자성체"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-engineer-magnetic-field-0002",
+    "certId": "electrical-engineer",
+    "subjectId": "electromagnetics",
+    "chapterId": "magnetic-field",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "권수가 200회인 코일에 5A 의 전류를 흘릴 때의 기자력은 몇 AT 인가?",
+    "choices": [
+      "1,000AT",
+      "205AT",
+      "5,000AT",
+      "40AT"
+    ],
+    "answer": 1,
+    "oneLineConcept": "기자력 F = N × I",
+    "explanation": "1. 공식: F = N × I\n2. 계산: 200 × 5 = 1,000AT\n\n기자력은 자기 회로에서 자속을 만들어 내는 힘으로, 전기 회로의 기전력에 해당합니다.\n\n**틀린 선지**\n- ② 205AT: 두 값을 더한 값입니다.\n- ③ 5,000AT: 전류를 제곱해서 곱한 값입니다.\n- ④ 40AT: 권수를 전류로 나눈 값입니다. 곱해야 합니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "자기 회로",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-engineer-magnetic-field-0003",
+    "certId": "electrical-engineer",
+    "subjectId": "electromagnetics",
+    "chapterId": "magnetic-field",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "자속 밀도가 B, 자계의 세기가 H 인 자계 속에 저장되는 단위 부피당 에너지는?",
+    "choices": [
+      "BH",
+      "B ÷ H",
+      "½B²H",
+      "½BH"
+    ],
+    "answer": 4,
+    "oneLineConcept": "자계의 에너지 밀도 w = ½BH = B²÷2μ = ½μH²",
+    "explanation": "자계에 저장되는 단위 부피당 에너지는 **w = ½BH [J/m³]** 입니다. B = μH 를 넣으면 ½μH² 또는 B² ÷ 2μ 로도 쓸 수 있습니다.\n\n**틀린 선지**\n- ① BH: 앞에 1/2 을 곱해야 합니다.\n- ② B ÷ H: 이 값은 투자율(μ)입니다.\n- ③ ½B²H: B 를 제곱하지 않습니다.",
+    "frequency": 3,
+    "reviewStatus": "unverified",
+    "tags": [
+      "자계 에너지"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
   }
 ]

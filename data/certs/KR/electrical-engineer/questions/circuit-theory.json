@@ -240,5 +240,212 @@
         4
       ]
     }
+  },
+  {
+    "id": "electrical-engineer-circuit-theory-0001",
+    "certId": "electrical-engineer",
+    "subjectId": "circuit-control",
+    "chapterId": "circuit-theory",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "\"회로의 한 접속점으로 들어오는 전류의 합은 나가는 전류의 합과 같다\"는 법칙은?",
+    "choices": [
+      "테브난의 정리",
+      "키르히호프의 전압 법칙(제2법칙)",
+      "옴의 법칙",
+      "키르히호프의 전류 법칙(제1법칙)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "KCL: 들어온 전류의 합 = 나간 전류의 합",
+    "explanation": "전류는 접속점에서 새로 생기거나 사라지지 않습니다. 그래서 **들어온 만큼 나갑니다**. 이것이 키르히호프의 전류 법칙(KCL)입니다.\n\n**틀린 선지**\n- ① 테브난의 정리: 복잡한 회로를 전압원 하나와 저항 하나로 바꾸는 정리입니다.\n- ② 키르히호프의 전압 법칙(제2법칙): 닫힌 회로를 한 바퀴 돌 때 기전력의 합과 전압 강하의 합이 같다는 법칙입니다.\n- ③ 옴의 법칙: 전압·전류·저항 사이의 관계를 나타내는 법칙입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "키르히호프의 법칙"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-engineer-circuit-theory-0002",
+    "certId": "electrical-engineer",
+    "subjectId": "circuit-control",
+    "chapterId": "circuit-theory",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "R-L-C 직렬 회로의 공진 주파수를 구하는 식은?",
+    "choices": [
+      "1 ÷ (2πLC)",
+      "1 ÷ (2π√(LC))",
+      "√(LC) ÷ 2π",
+      "2π√(LC)"
+    ],
+    "answer": 2,
+    "oneLineConcept": "공진 주파수 f = 1 ÷ (2π√(LC))",
+    "explanation": "공진은 유도 리액턴스와 용량 리액턴스가 같을 때(ωL = 1/ωC) 일어납니다. 이 식을 풀면 **f = 1 ÷ (2π√(LC))** 가 됩니다.\n\n**틀린 선지**\n- ① 1 ÷ (2πLC): L 과 C 의 곱에 제곱근을 씌워야 합니다.\n- ③ √(LC) ÷ 2π: 분자와 분모가 바뀌었습니다.\n- ④ 2π√(LC): 이 식은 주기를 나타냅니다. 주파수는 그 역수입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "공진"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-engineer-circuit-theory-0003",
+    "certId": "electrical-engineer",
+    "subjectId": "circuit-control",
+    "chapterId": "circuit-theory",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "각 변의 저항이 30Ω 인 Δ 결선을 같은 값의 Y 결선으로 바꾸면 한 상의 저항은 몇 Ω 인가?",
+    "choices": [
+      "90Ω",
+      "30Ω",
+      "15Ω",
+      "10Ω"
+    ],
+    "answer": 4,
+    "oneLineConcept": "세 저항이 같으면 Δ → Y 는 1/3 배",
+    "explanation": "세 저항이 모두 같을 때 Δ 를 Y 로 바꾸면 **1/3 배**가 됩니다.\n\n1. 계산: 30 ÷ 3 = 10Ω\n\n반대로 Y 를 Δ 로 바꾸면 3배가 됩니다.\n\n**틀린 선지**\n- ① 90Ω: Y 를 Δ 로 바꿀 때처럼 3배 한 값입니다.\n- ② 30Ω: 바꾸면 저항값이 달라집니다.\n- ③ 15Ω: 2 로 나눈 값입니다. 3 으로 나누어야 합니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "Δ-Y 변환",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-engineer-circuit-theory-0004",
+    "certId": "electrical-engineer",
+    "subjectId": "circuit-control",
+    "chapterId": "circuit-theory",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "유효 전력이 800W, 무효 전력이 600var 인 부하의 피상 전력은 몇 VA 인가?",
+    "choices": [
+      "1,000VA",
+      "700VA",
+      "1,400VA",
+      "200VA"
+    ],
+    "answer": 1,
+    "oneLineConcept": "피상 전력 = √(유효 전력² + 무효 전력²)",
+    "explanation": "1. 공식: Pa = √(P² + Q²)\n2. 계산: √(800² + 600²) = √(640,000 + 360,000)\n3. √1,000,000 = 1,000VA\n\n**틀린 선지**\n- ② 700VA: 두 값의 평균입니다.\n- ③ 1,400VA: 두 값을 그대로 더한 값입니다.\n- ④ 200VA: 두 값의 차이입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "전력",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-engineer-circuit-theory-0005",
+    "certId": "electrical-engineer",
+    "subjectId": "circuit-control",
+    "chapterId": "circuit-theory",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "2전력계법으로 3상 전력을 측정했더니 두 전력계의 지시값이 각각 500W 와 300W 였다. 3상 유효 전력은 몇 W 인가?",
+    "choices": [
+      "400W",
+      "약 1,386W",
+      "800W",
+      "200W"
+    ],
+    "answer": 3,
+    "oneLineConcept": "2전력계법: 유효 전력 = P1 + P2",
+    "explanation": "2전력계법에서 3상 **유효 전력**은 두 전력계 지시값의 합입니다.\n\n1. 계산: 500 + 300 = 800W\n\n참고로 무효 전력은 √3 × (P1 − P2) 로 구합니다.\n\n**틀린 선지**\n- ① 400W: 두 지시값의 평균입니다.\n- ② 약 1,386W: 두 지시값의 합에 √3 을 곱한 값입니다.\n- ④ 200W: 두 지시값의 차이입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "2전력계법",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-engineer-circuit-theory-0006",
+    "certId": "electrical-engineer",
+    "subjectId": "circuit-control",
+    "chapterId": "circuit-theory",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "단위 계단 함수 u(t) 의 라플라스 변환은?",
+    "choices": [
+      "1",
+      "1 ÷ s²",
+      "1 ÷ s",
+      "s"
+    ],
+    "answer": 3,
+    "oneLineConcept": "δ(t) → 1, u(t) → 1/s, t → 1/s²",
+    "explanation": "자주 쓰는 라플라스 변환\n\n- 단위 임펄스 δ(t) → 1\n- **단위 계단 u(t) → 1/s**\n- 단위 램프 t → 1/s²\n\n**틀린 선지**\n- ① 1: 단위 임펄스 함수 δ(t) 의 라플라스 변환입니다.\n- ② 1 ÷ s²: 단위 램프 함수 t 의 라플라스 변환입니다.\n- ④ s: 단위 계단 함수의 변환이 아닙니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "라플라스 변환"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   }
 ]

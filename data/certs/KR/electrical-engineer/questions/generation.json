@@ -67,5 +67,73 @@
         4
       ]
     }
+  },
+  {
+    "id": "electrical-engineer-generation-0001",
+    "certId": "electrical-engineer",
+    "subjectId": "power-engineering",
+    "chapterId": "generation",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "낙차가 큰(고낙차) 수력 발전소에 쓰는 충동 수차는?",
+    "choices": [
+      "프로펠러 수차",
+      "프란시스 수차",
+      "펠턴 수차",
+      "카플란 수차"
+    ],
+    "answer": 3,
+    "oneLineConcept": "고낙차 펠턴, 중낙차 프란시스, 저낙차 카플란",
+    "explanation": "**펠턴 수차**는 노즐에서 뿜어 나온 물이 버킷을 때리는 힘으로 도는 충동 수차로, 낙차가 큰 곳에 씁니다.\n\n**틀린 선지**\n- ① 프로펠러 수차: 저낙차에 쓰는 반동 수차입니다.\n- ② 프란시스 수차: 중낙차에 쓰는 반동 수차입니다.\n- ④ 카플란 수차: 저낙차에 쓰는 반동 수차로, 날개 각도를 바꿀 수 있습니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "수력 발전"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-engineer-generation-0002",
+    "certId": "electrical-engineer",
+    "subjectId": "power-engineering",
+    "chapterId": "generation",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "원자로에서 감속재가 하는 역할은?",
+    "choices": [
+      "핵분열로 생긴 열을 원자로 밖으로 실어 나른다",
+      "밖으로 새어 나가는 중성자를 되돌려 보낸다",
+      "빠른 중성자의 속도를 늦추어 핵분열이 잘 일어나게 한다",
+      "중성자를 흡수하여 원자로의 출력을 조절한다"
+    ],
+    "answer": 3,
+    "oneLineConcept": "감속재: 고속 중성자 → 열중성자 (경수·중수·흑연)",
+    "explanation": "핵분열로 튀어나온 중성자는 너무 빨라 다음 핵분열을 잘 일으키지 못합니다. **감속재**(경수, 중수, 흑연)가 속도를 늦추어 열중성자로 만들어 줍니다.\n\n**틀린 선지**\n- ① 이것은 냉각재의 역할입니다.\n- ② 이것은 반사재의 역할입니다.\n- ④ 이것은 제어봉의 역할입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "원자력 발전"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
   }
 ]

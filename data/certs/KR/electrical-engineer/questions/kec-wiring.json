@@ -101,5 +101,142 @@
         4
       ]
     }
+  },
+  {
+    "id": "electrical-engineer-kec-wiring-0001",
+    "certId": "electrical-engineer",
+    "subjectId": "kec",
+    "chapterId": "kec-wiring",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "금속제 외함을 가진 저압 기계 기구로서 사람이 쉽게 접촉할 우려가 있는 곳에 시설하는 것에 전기를 공급하는 전로에는, 사용 전압이 몇 V 를 초과할 때 누전 차단기를 시설해야 하는가?",
+    "choices": [
+      "30V",
+      "150V",
+      "60V",
+      "50V"
+    ],
+    "answer": 4,
+    "oneLineConcept": "누전 차단기: 사용 전압 50V 초과 금속제 외함 기계 기구",
+    "explanation": "사람이 닿기 쉬운 곳의 금속제 외함 기계 기구에 누전이 생기면 감전될 수 있습니다. 그래서 **사용 전압 50V 를 초과**하면 지락이 생겼을 때 자동으로 전로를 끊는 장치를 답니다.\n\n**틀린 선지**\n- ① 30V: 기준보다 낮은 값입니다.\n- ② 150V: 대지 전압과 관련된 다른 기준과 헷갈린 값입니다.\n- ③ 60V: KEC 시행 전의 옛 기준입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "누전 차단기"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-engineer-kec-wiring-0002",
+    "certId": "electrical-engineer",
+    "subjectId": "kec",
+    "chapterId": "kec-wiring",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "전동기의 과부하 보호 장치를 생략할 수 있는 전동기의 정격 출력은?",
+    "choices": [
+      "0.4kW 이하",
+      "0.2kW 이하",
+      "0.75kW 이하",
+      "1.5kW 이하"
+    ],
+    "answer": 2,
+    "oneLineConcept": "과부하 보호 장치 생략: 정격 출력 0.2kW 이하",
+    "explanation": "옥내에 시설하는 전동기에는 과부하로 타는 것을 막는 보호 장치를 달아야 합니다. 다만 **정격 출력이 0.2kW 이하**인 작은 전동기는 생략할 수 있습니다.\n\n**틀린 선지**\n- ① 0.4kW 이하: 기준보다 큰 값입니다.\n- ③ 0.75kW 이하: 기준보다 큰 값입니다.\n- ④ 1.5kW 이하: 기준보다 큰 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "전동기 보호"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "electrical-engineer-kec-wiring-0003",
+    "certId": "electrical-engineer",
+    "subjectId": "kec",
+    "chapterId": "kec-wiring",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "고압 옥내 배선으로 시설할 수 있는 공사 방법은?",
+    "choices": [
+      "금속 덕트 공사",
+      "금속관 공사",
+      "합성수지관 공사",
+      "케이블 공사"
+    ],
+    "answer": 4,
+    "oneLineConcept": "고압 옥내 배선: 애자·케이블·케이블 트레이 공사",
+    "explanation": "고압 옥내 배선은 **애자 공사(건조하고 드러난 곳), 케이블 공사, 케이블 트레이 공사** 가운데 하나로 시설합니다.\n\n**틀린 선지**\n- ① 금속 덕트 공사: 저압 옥내 배선에 쓰는 방법입니다.\n- ② 금속관 공사: 저압 옥내 배선에 쓰는 방법으로, 고압 옥내 배선에는 쓸 수 없습니다.\n- ③ 합성수지관 공사: 저압 옥내 배선에 쓰는 방법입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "고압 옥내 배선"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-engineer-kec-wiring-0004",
+    "certId": "electrical-engineer",
+    "subjectId": "kec",
+    "chapterId": "kec-wiring",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "욕실처럼 물기가 있는 곳에 콘센트를 시설할 때 설치하는 인체 감전 보호용 누전 차단기의 규격은?",
+    "choices": [
+      "정격 감도 전류 15mA 이하, 동작 시간 0.03초 이하",
+      "정격 감도 전류 15mA 이하, 동작 시간 0.1초 이하",
+      "정격 감도 전류 30mA 이하, 동작 시간 0.1초 이하",
+      "정격 감도 전류 30mA 이하, 동작 시간 0.03초 이하"
+    ],
+    "answer": 1,
+    "oneLineConcept": "물기 있는 곳 콘센트: 15mA 이하, 0.03초 이하",
+    "explanation": "몸이 젖으면 인체 저항이 낮아져 작은 전류로도 위험합니다. 그래서 욕실 같은 곳에는 일반 장소(30mA)보다 민감한 **15mA 이하, 0.03초 이하**의 전류 동작형 누전 차단기를 답니다.\n\n**틀린 선지**\n- ② 동작 시간은 0.03초 이하여야 합니다.\n- ③ 감도 전류와 동작 시간이 모두 기준과 다릅니다.\n- ④ 일반 장소의 감전 보호용 기준입니다. 물기가 있는 곳은 더 엄격합니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "콘센트",
+      "누전 차단기"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
   }
 ]
