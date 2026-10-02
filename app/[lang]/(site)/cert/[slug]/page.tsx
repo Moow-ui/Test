@@ -156,7 +156,8 @@ export default async function CertPage({ params }: Props) {
         </div>
       )}
 
-      <RelatedCerts locale={lang} certName={cert.name} related={related} />
+      {/* 운영진 학습 팁(운영진 작성). 이용자 후기와 섞지 않고 따로 둔다 */}
+      {cert.studyTips && <StudyTips locale={lang} certName={cert.name} tips={cert.studyTips} />}
 
       {/* 읽을거리(출제 경향·자격증 소개·자주 묻는 질문)는 맨 아래에 작게 접어 둔다 */}
       {content && (
@@ -193,12 +194,13 @@ export default async function CertPage({ params }: Props) {
                 ))}
               </dl>
             </section>
+            <RelatedCerts locale={lang} certName={cert.name} related={related} />
           </div>
         </details>
       )}
+      {/* "준비 중" 자격증은 접어 둘 읽을거리가 없어서 관련 자격증을 그대로 보여 준다 */}
+      {!content && <RelatedCerts locale={lang} certName={cert.name} related={related} />}
 
-      {/* 운영진 학습 팁(운영진 작성)과 이용자 후기는 섞지 않고 따로 둔다 */}
-      {cert.studyTips && <StudyTips locale={lang} certName={cert.name} tips={cert.studyTips} />}
       <ReviewSection certId={cert.id} certName={cert.name} />
 
       <IssuerNotice locale={lang} cert={cert} />
