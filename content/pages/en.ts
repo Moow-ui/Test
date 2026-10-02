@@ -31,7 +31,7 @@ Most people studying for a trade or professional exam are doing it around a full
 - **Explanations**: each question explains the key idea and why each wrong choice is wrong. Calculation questions are worked step by step.
 - **Unit summaries**: must-know points and sample questions for each unit on one page.
 
-Each question is labeled with its source and review status, such as "AI-generated · Reviewed". "Reviewed" means a separate AI that could not see the answer solved the question again and its answer matched. "Not yet reviewed" means that check has not been done yet. Neither label means a human expert has checked the question.`,
+Each question is labeled with its source and review status, such as "Practice question · Reviewed". "Reviewed" means a separate AI that could not see the answer solved the question again and its answer matched. "Not yet reviewed" means that check has not been done yet. Neither label means a human expert has checked the question.`,
       },
       {
         heading: "How the site is updated",
