@@ -110,8 +110,8 @@ export function ReviewSection({ certId, certName }: { certId: string; certName: 
 
       {page &&
         (writing ? (
-          <ReviewForm certId={certId} siteKey={page.form.siteKey} onSaved={onSaved} onClose={() => setWriting(false)} />
-        ) : page.form.open ? (
+          <ReviewForm certId={certId} onSaved={onSaved} onClose={() => setWriting(false)} />
+        ) : (
           <button
             type="button"
             className="btn btn-primary btn-lg w-full"
@@ -122,8 +122,6 @@ export function ReviewSection({ certId, certName }: { certId: string; certName: 
           >
             {m.write}
           </button>
-        ) : (
-          <p className="text-[0.9rem] text-ink-sub">{m.closed}</p>
         ))}
     </section>
   );

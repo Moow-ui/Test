@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useEffectEvent, useRef, useState } from "react";
+import { useState } from "react";
 import { errorText } from "@/components/auth/AuthForm";
 import { useAuth } from "@/lib/auth-client";
 import { fmt } from "@/lib/i18n";
@@ -14,80 +14,17 @@ import {
   type ReviewItem,
   type ReviewStatus,
 } from "@/lib/review-rules";
-import { useLocale, useMessages } from "@/lib/use-messages";
-
-const TURNSTILE_SCRIPT = "https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit";
-
-interface TurnstileApi {
-  render(element: HTMLElement, options: Record<string, unknown>): string;
-  remove(widgetId: string): void;
-}
-
-declare global {
-  interface Window {
-    turnstile?: TurnstileApi;
-  }
-}
-
-let turnstileLoading: Promise<void> | null = null;
-
-function loadTurnstile(): Promise<void> {
-  turnstileLoading ??= new Promise<void>((resolve, reject) => {
-    const script = document.createElement("script");
-    script.src = TURNSTILE_SCRIPT;
-    script.async = true;
-    script.onload = () => resolve();
-    script.onerror = () => {
-      turnstileLoading = null;
-      reject(new Error("turnstile"));
-    };
-    document.head.appendChild(script);
-  });
-  return turnstileLoading;
-}
-
-/** 사람 확인 (Cloudflare Turnstile). 확인되면 토큰을, 기간이 지나면 빈 값을 알려 준다 */
-function Turnstile({ siteKey, onToken }: { siteKey: string; onToken: (token: string) => void }) {
-  const box = useRef<HTMLDivElement>(null);
-  const locale = useLocale();
-  const report = useEffectEvent(onToken);
-
-  useEffect(() => {
-    let widgetId: string | null = null;
-    let cancelled = false;
-    void loadTurnstile()
-      .then(() => {
-        if (cancelled || !box.current || !window.turnstile) return;
-        widgetId = window.turnstile.render(box.current, {
-          sitekey: siteKey,
-          language: locale,
-          callback: (token: string) => report(token),
-          "expired-callback": () => report(""),
-          "error-callback": () => report(""),
-        });
-      })
-      .catch(() => report(""));
-    return () => {
-      cancelled = true;
-      if (widgetId) window.turnstile?.remove(widgetId);
-    };
-  }, [siteKey, locale]);
-
-  return <div ref={box} className="min-h-[65px]" />;
-}
+import { useMessages } from "@/lib/use-messages";
 
 const inputClass = "mt-1 w-full rounded-lg border-2 border-line bg-surface p-2 text-ink";
 
 /** 후기 쓰기: 별점·지금 상태·한 줄 후기·닉네임. 로그인하지 않아도 쓸 수 있고, 로그인했으면 닉네임이 자동으로 들어간다 */
 export function ReviewForm({
   certId,
-  siteKey,
   onSaved,
   onClose,
 }: {
   certId: string;
-  /** 있으면 사람 확인을 거친다 */
-  siteKey: string | null;
   onSaved: (review: ReviewItem) => void;
   onClose: () => void;
 }) {
@@ -98,9 +35,6 @@ export function ReviewForm({
   const [status, setStatus] = useState<ReviewStatus>(REVIEW_STATUSES[0]);
   const [body, setBody] = useState("");
   const [typedNickname, setTypedNickname] = useState("");
-  const [token, setToken] = useState("");
-  /** 한 번 쓴 토큰은 다시 쓸 수 없어서, 실패하면 사람 확인을 새로 그린다 */
-  const [captchaRound, setCaptchaRound] = useState(0);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -112,17 +46,11 @@ export function ReviewForm({
     const input = { certId, rating, body, status, nickname };
     const checked = checkReview(input);
     if ("error" in checked) return setError(checked.error);
-    if (siteKey && !token) return setError("captcha_failed");
 
     setBusy(true);
-    const result = await sendReview({ ...checked.data, token });
+    const result = await sendReview(checked.data);
     setBusy(false);
-    if ("error" in result) {
-      setError(result.error);
-      setToken("");
-      setCaptchaRound((n) => n + 1);
-      return;
-    }
+    if ("error" in result) return setError(result.error);
     onSaved(result.review);
   };
 
@@ -201,13 +129,6 @@ export function ReviewForm({
         />
         {user && <p className="mt-1 text-[0.85rem] text-ink-sub">{m.nicknameAuto}</p>}
       </div>
-
-      {siteKey && (
-        <div>
-          <p className="font-bold">{m.captcha}</p>
-          <Turnstile key={captchaRound} siteKey={siteKey} onToken={setToken} />
-        </div>
-      )}
 
       {error && (
         <p role="alert" className="rounded-lg border border-bad bg-bad-soft p-2 font-bold">

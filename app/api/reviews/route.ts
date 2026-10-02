@@ -1,17 +1,7 @@
 import { checkReview, type ReviewPage } from "@/lib/review-rules";
 import { getSessionUser, isSameOrigin, json } from "@/lib/server/auth";
 import { getDb } from "@/lib/server/db";
-import {
-  clientIp,
-  createReview,
-  formState,
-  getTurnstileConfig,
-  isKnownCert,
-  listReviews,
-  reviewStats,
-  verifyTurnstile,
-  weekSolves,
-} from "@/lib/server/reviews";
+import { clientIp, createReview, isKnownCert, listReviews, reviewStats, weekSolves } from "@/lib/server/reviews";
 
 const CERT_ID = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 
@@ -21,18 +11,10 @@ export async function GET(request: Request) {
   const certId = params.get("cert") ?? "";
   if (!CERT_ID.test(certId) || certId.length > 80) return json({ error: "bad_request" }, 400);
   const before = Number(params.get("before"));
-  const form = formState(await getTurnstileConfig());
 
   const db = await getDb();
   if (!db) {
-    const empty: ReviewPage = {
-      reviews: [],
-      total: 0,
-      average: null,
-      hasMore: false,
-      weekSolves: null,
-      form: { open: false, siteKey: null },
-    };
+    const empty: ReviewPage = { reviews: [], total: 0, average: null, hasMore: false, weekSolves: null };
     return json(empty);
   }
   const [page, stats, solves] = await Promise.all([
@@ -40,7 +22,7 @@ export async function GET(request: Request) {
     reviewStats(db, certId),
     weekSolves(db, certId),
   ]);
-  const body: ReviewPage = { ...page, ...stats, weekSolves: solves, form };
+  const body: ReviewPage = { ...page, ...stats, weekSolves: solves };
   return json(body);
 }
 
@@ -58,13 +40,6 @@ export async function POST(request: Request) {
   if (!(await isKnownCert(request, checked.data.certId))) return json({ error: "bad_request" }, 400);
 
   const ip = clientIp(request.headers);
-  const config = await getTurnstileConfig();
-  if (!formState(config).open) return json({ error: "review_closed" }, 503);
-  if (config) {
-    const token = typeof raw.token === "string" ? raw.token : "";
-    if (!(await verifyTurnstile(config.secret, token, ip))) return json({ error: "captcha_failed" }, 400);
-  }
-
   const result = await createReview(db, checked.data, { ip, userId: user?.id ?? null });
   if ("error" in result) return json({ error: result.error }, 429);
   return json({ ok: true, review: result.review });

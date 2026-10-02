@@ -145,6 +145,4 @@ export interface ReviewPage {
   hasMore: boolean;
   /** 이번 주 풀이 횟수. ACTIVITY_MIN_TO_SHOW 미만이면 null */
   weekSolves: number | null;
-  /** 후기 작성 폼. open=false 면 아직 받을 수 없는 상태, siteKey 가 있으면 사람 확인(Turnstile)을 거친다 */
-  form: { open: boolean; siteKey: string | null };
 }

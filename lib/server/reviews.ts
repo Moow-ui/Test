@@ -8,7 +8,6 @@ import {
   REVIEW_PAGE_SIZE,
   type ReviewInput,
   type ReviewItem,
-  type ReviewPage,
 } from "../review-rules";
 import { kstDayStart, kstWeekStart } from "./admin";
 import type { D1Like } from "./db";
@@ -17,59 +16,16 @@ import { randomToken, sha256 } from "./password";
 /**
  * 자격증 후기·주간 풀이 횟수 (서버 전용).
  *
- * 스팸 방지: 사람 확인(Cloudflare Turnstile) + 같은 IP 하루 3개 + 링크·전화번호·금칙어 거부(lib/review-rules.ts).
- * IP 원문은 저장하지 않는다. 비밀 값과 날짜(또는 후기 id)를 섞은 해시만 저장한다.
- *
- * 필요한 설정값 (Cloudflare 대시보드 → Worker → 설정 → 변수 및 비밀. 넣으면 바로 반영된다):
- *   TURNSTILE_SITE_KEY     Turnstile 위젯의 사이트 키 (공개 값)
- *   TURNSTILE_SECRET_KEY   Turnstile 위젯의 비밀 키 (비밀로 넣는다)
- * 둘 중 하나라도 없으면 배포된 사이트에서는 후기를 받지 않는다 (목록은 보인다).
- * 내 컴퓨터의 개발 서버(npm run dev)에서만 키 없이도 쓸 수 있다.
+ * 스팸 방지: 같은 IP 하루 3개 + 링크·전화번호·금칙어 거부(lib/review-rules.ts) + 신고 3회 자동 숨김.
+ * IP 원문은 저장하지 않는다. 날짜(또는 후기 id)를 섞은 해시만 저장한다.
+ * Worker 변수 REVIEW_HASH_SALT 를 넣으면 그 값을 해시에 섞는다 (없어도 동작한다).
  */
-
-const SITEVERIFY_URL = "https://challenges.cloudflare.com/turnstile/v0/siteverify";
 
 async function readEnv(): Promise<Record<string, unknown>> {
   try {
     return (await getCloudflareContext({ async: true })).env as unknown as Record<string, unknown>;
   } catch {
     return {};
-  }
-}
-
-export interface TurnstileConfig {
-  siteKey: string;
-  secret: string;
-}
-
-export async function getTurnstileConfig(): Promise<TurnstileConfig | null> {
-  const env = await readEnv();
-  const pick = (name: string) => {
-    const value = env[name] ?? process.env[name];
-    return typeof value === "string" ? value.trim() : "";
-  };
-  const siteKey = pick("TURNSTILE_SITE_KEY");
-  const secret = pick("TURNSTILE_SECRET_KEY");
-  return siteKey && secret ? { siteKey, secret } : null;
-}
-
-/** 후기 작성 폼의 상태: 키가 있으면 사람 확인을 거치고, 없으면 개발 서버에서만 열린다 */
-export function formState(config: TurnstileConfig | null): ReviewPage["form"] {
-  if (config) return { open: true, siteKey: config.siteKey };
-  return { open: process.env.NODE_ENV === "development", siteKey: null };
-}
-
-/** Turnstile 토큰을 Cloudflare 에 확인한다 */
-export async function verifyTurnstile(secret: string, token: string, ip: string): Promise<boolean> {
-  if (!token) return false;
-  try {
-    const form = new URLSearchParams({ secret, response: token });
-    if (ip) form.set("remoteip", ip);
-    const response = await fetch(SITEVERIFY_URL, { method: "POST", body: form });
-    const body = (await response.json().catch(() => null)) as { success?: unknown } | null;
-    return body?.success === true;
-  } catch {
-    return false;
   }
 }
 
@@ -87,8 +43,8 @@ export function clientIp(headers: Headers): string {
  * (후기는 날짜, 신고는 후기 id).
  */
 async function ipHash(ip: string, scope: string): Promise<string> {
-  const config = await getTurnstileConfig();
-  return sha256(`${config?.secret ?? "qpass"}|${ip}|${scope}`);
+  const salt = (await readEnv()).REVIEW_HASH_SALT ?? process.env.REVIEW_HASH_SALT;
+  return sha256(`${typeof salt === "string" && salt ? salt : "qpass"}|${ip}|${scope}`);
 }
 
 // ───────────────────────── 자격증 id 확인 ─────────────────────────

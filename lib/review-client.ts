@@ -33,7 +33,7 @@ export async function fetchReviews(certId: string, before?: number): Promise<Rev
 }
 
 /** 후기를 보낸다. 성공하면 저장된 후기, 실패하면 오류 코드 */
-export async function sendReview(input: ReviewInput & { token: string }): Promise<{ review: ReviewItem } | { error: string }> {
+export async function sendReview(input: ReviewInput): Promise<{ review: ReviewItem } | { error: string }> {
   const { ok, body } = await post("/api/reviews", input);
   return ok && body.review ? { review: body.review as ReviewItem } : { error: errorOf(body) };
 }

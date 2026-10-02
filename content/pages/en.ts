@@ -98,7 +98,7 @@ Contact: {email}`,
 
 **Problem reports**: the question, the reason you picked, and any details you type. We do not record who sent a report. Please do not include personal information in reports or notes.
 
-**Reviews**: your star rating, the review text, where you are now (studying, passed, or did not pass), and a display name. You can post without an account. To limit how many reviews come from one place in a day we store a one-way hash of your IP address, never the address itself, and we run a human check (Cloudflare Turnstile) before a review is posted. Reviews are public, so please do not include personal information.
+**Reviews**: your star rating, the review text, where you are now (studying, passed, or did not pass), and a display name. You can post without an account. To limit how many reviews come from one place in a day we store a one-way hash of your IP address, never the address itself. Reviews are public, so please do not include personal information.
 
 **Practice counts**: when a practice session ends we add one to a weekly count for that exam. We do not record who took it.
 
