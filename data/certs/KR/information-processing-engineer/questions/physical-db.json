@@ -90,5 +90,107 @@
         4
       ]
     }
+  },
+  {
+    "id": "information-processing-engineer-physical-db-0001",
+    "certId": "information-processing-engineer",
+    "subjectId": "db-build",
+    "chapterId": "physical-db",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "데이터베이스에서 인덱스(Index)를 만드는 가장 큰 목적은?",
+    "choices": [
+      "자료를 저장하는 공간을 줄인다",
+      "자료를 검색하는 속도를 높인다",
+      "자료를 입력하는 속도를 높인다",
+      "자료를 암호화하여 보안을 높인다"
+    ],
+    "answer": 2,
+    "oneLineConcept": "인덱스: 검색 속도 향상",
+    "explanation": "인덱스는 책 뒤의 '찾아보기'처럼 <키 값, 위치>를 정리해 둔 것입니다. 전체를 훑지 않고도 원하는 자료를 **빨리 찾을 수** 있습니다.\n\n**틀린 선지**\n- ① 자료를 저장하는 공간을 줄인다: 인덱스를 만들면 저장 공간이 오히려 더 필요합니다.\n- ③ 자료를 입력하는 속도를 높인다: 입력할 때 인덱스도 함께 고쳐야 해서 느려질 수 있습니다.\n- ④ 자료를 암호화하여 보안을 높인다: 인덱스는 보안 기능이 아닙니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "인덱스"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "information-processing-engineer-physical-db-0002",
+    "certId": "information-processing-engineer",
+    "subjectId": "db-build",
+    "chapterId": "physical-db",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "트랜잭션의 성질 가운데 '성공적으로 끝난 트랜잭션의 결과는 시스템에 고장이 나더라도 영구적으로 반영되어야 한다'는 것은?",
+    "choices": [
+      "독립성(Isolation)",
+      "원자성(Atomicity)",
+      "일관성(Consistency)",
+      "영속성(Durability)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "트랜잭션 ACID: 원자성·일관성·독립성·영속성",
+    "explanation": "**영속성**(지속성)은 COMMIT 된 결과가 사라지지 않는다는 성질입니다.\n\n**틀린 선지**\n- ① 독립성(Isolation): 실행 중인 트랜잭션에 다른 트랜잭션이 끼어들 수 없다는 성질입니다.\n- ② 원자성(Atomicity): 트랜잭션의 연산은 모두 반영되거나 전혀 반영되지 않아야 한다는 성질입니다.\n- ③ 일관성(Consistency): 트랜잭션이 끝난 뒤에도 데이터베이스가 모순 없는 상태를 유지해야 한다는 성질입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "트랜잭션"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "information-processing-engineer-physical-db-0003",
+    "certId": "information-processing-engineer",
+    "subjectId": "db-build",
+    "chapterId": "physical-db",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "파티션의 종류 가운데, 지정한 열의 값을 기준으로 월별·분기별처럼 구간을 정해 나누는 것은?",
+    "choices": [
+      "목록 분할",
+      "범위 분할",
+      "조합 분할",
+      "해시 분할"
+    ],
+    "answer": 2,
+    "oneLineConcept": "범위 분할: 값의 구간으로 나눈다",
+    "explanation": "**범위 분할**(Range Partitioning)은 날짜나 숫자처럼 순서가 있는 값의 구간으로 나눕니다.\n\n**틀린 선지**\n- ① 목록 분할: 지역 이름처럼 미리 정해 둔 값의 목록에 따라 나누는 방식입니다.\n- ③ 조합 분할: 범위로 나눈 다음 다시 해시 등으로 나누는 방식입니다.\n- ④ 해시 분할: 해시 함수를 적용한 결과값에 따라 고르게 나누는 방식입니다.",
+    "frequency": 3,
+    "reviewStatus": "unverified",
+    "tags": [
+      "파티션"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
   }
 ]

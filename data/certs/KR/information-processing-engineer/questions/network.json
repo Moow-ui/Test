@@ -101,5 +101,107 @@
         4
       ]
     }
+  },
+  {
+    "id": "information-processing-engineer-network-0001",
+    "certId": "information-processing-engineer",
+    "subjectId": "programming",
+    "chapterId": "network",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "OSI 7계층 가운데 전송 계층에서 동작하는 프로토콜은?",
+    "choices": [
+      "IP",
+      "HTTP",
+      "TCP",
+      "ARP"
+    ],
+    "answer": 3,
+    "oneLineConcept": "전송 계층: TCP, UDP",
+    "explanation": "**전송 계층**은 송신 측과 수신 측 사이의 신뢰성 있는 전달을 맡으며, TCP 와 UDP 가 여기에서 동작합니다.\n\n**틀린 선지**\n- ① IP: 네트워크 계층의 프로토콜입니다.\n- ② HTTP: 응용 계층의 프로토콜입니다.\n- ④ ARP: IP 주소를 MAC 주소로 바꾸는 네트워크 계층의 프로토콜입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "OSI 7계층"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "information-processing-engineer-network-0002",
+    "certId": "information-processing-engineer",
+    "subjectId": "programming",
+    "chapterId": "network",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "IP 주소를 물리적 주소(MAC 주소)로 바꿔 주는 프로토콜은?",
+    "choices": [
+      "ARP",
+      "DNS",
+      "RARP",
+      "ICMP"
+    ],
+    "answer": 1,
+    "oneLineConcept": "ARP: IP → MAC / RARP: MAC → IP",
+    "explanation": "**ARP**(Address Resolution Protocol)는 같은 네트워크 안에서 상대의 IP 주소를 알 때 그 MAC 주소를 알아내는 데 씁니다.\n\n**틀린 선지**\n- ② DNS: 도메인 이름을 IP 주소로 바꿔 주는 서비스입니다.\n- ③ RARP: 반대로 MAC 주소를 IP 주소로 바꿔 주는 프로토콜입니다.\n- ④ ICMP: 전송 중에 생긴 오류나 상태를 알려 주는 프로토콜입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "프로토콜"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "information-processing-engineer-network-0003",
+    "certId": "information-processing-engineer",
+    "subjectId": "programming",
+    "chapterId": "network",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "C 클래스 IP 주소의 기본 서브넷 마스크는?",
+    "choices": [
+      "255.255.255.0",
+      "255.255.0.0",
+      "255.255.255.255",
+      "255.0.0.0"
+    ],
+    "answer": 1,
+    "oneLineConcept": "A 255.0.0.0 / B 255.255.0.0 / C 255.255.255.0",
+    "explanation": "C 클래스는 앞의 24비트(세 부분)가 네트워크 주소입니다. 그래서 기본 서브넷 마스크가 **255.255.255.0** 입니다.\n\n**틀린 선지**\n- ② 255.255.0.0: B 클래스의 기본 서브넷 마스크입니다.\n- ③ 255.255.255.255: 호스트 한 대만을 가리키는 마스크입니다.\n- ④ 255.0.0.0: A 클래스의 기본 서브넷 마스크입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "IP 주소"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
   }
 ]

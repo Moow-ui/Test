@@ -32,5 +32,73 @@
         4
       ]
     }
+  },
+  {
+    "id": "information-processing-engineer-interface-design-0001",
+    "certId": "information-processing-engineer",
+    "subjectId": "sw-design",
+    "chapterId": "interface-design",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "요구사항 검토 방법 가운데, 명세서를 작성한 사람이 내용을 직접 설명하고 동료들이 듣으면서 결함을 찾는 것은?",
+    "choices": [
+      "워크스루(Walk Through)",
+      "동료 검토(Peer Review)",
+      "인스펙션(Inspection)",
+      "프로토타이핑(Prototyping)"
+    ],
+    "answer": 2,
+    "oneLineConcept": "동료 검토: 작성자가 설명, 동료가 결함 발견",
+    "explanation": "**동료 검토**는 작성자가 직접 설명한다는 점이 특징입니다. 워크스루는 미리 배포한 뒤 회의, 인스펙션은 작성자가 아닌 전문가가 검토합니다.\n\n**틀린 선지**\n- ① 워크스루(Walk Through): 명세서를 미리 나누어 준 뒤 짧은 검토 회의를 열어 결함을 찾습니다.\n- ③ 인스펙션(Inspection): 작성자를 뺀 다른 검토 전문가들이 명세서를 확인하며 결함을 찾습니다.\n- ④ 프로토타이핑(Prototyping): 견본품을 만들어 요구사항을 확인하는 방법입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "요구사항 검증"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "information-processing-engineer-interface-design-0002",
+    "certId": "information-processing-engineer",
+    "subjectId": "sw-design",
+    "chapterId": "interface-design",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "미들웨어 가운데, 응용 프로그램이 원격지의 프로시저를 마치 자기 컴퓨터의 프로시저처럼 호출하게 해 주는 것은?",
+    "choices": [
+      "WAS",
+      "MOM",
+      "RPC",
+      "TP-Monitor"
+    ],
+    "answer": 3,
+    "oneLineConcept": "RPC: 원격 프로시저를 로컬처럼 호출",
+    "explanation": "**RPC**(Remote Procedure Call)는 이름 그대로 멀리 있는 프로시저를 호출하는 미들웨어입니다.\n\n**틀린 선지**\n- ① WAS: 웹 환경에서 동적인 콘텐츠를 처리하는 미들웨어입니다.\n- ② MOM: 메시지를 큐에 넣어 비동기 방식으로 전달하는 미들웨어입니다.\n- ④ TP-Monitor: 온라인 트랜잭션 업무를 처리하고 감시하는 미들웨어입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "미들웨어"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
   }
 ]

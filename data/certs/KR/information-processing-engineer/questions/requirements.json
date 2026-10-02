@@ -125,5 +125,107 @@
         3
       ]
     }
+  },
+  {
+    "id": "information-processing-engineer-requirements-0001",
+    "certId": "information-processing-engineer",
+    "subjectId": "sw-design",
+    "chapterId": "requirements",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "요구사항 개발 프로세스를 진행 순서대로 옳게 나열한 것은?",
+    "choices": [
+      "분석 → 도출 → 명세 → 확인",
+      "도출 → 분석 → 명세 → 확인",
+      "도출 → 명세 → 분석 → 확인",
+      "명세 → 도출 → 확인 → 분석"
+    ],
+    "answer": 2,
+    "oneLineConcept": "요구사항 개발: 도출 → 분석 → 명세 → 확인",
+    "explanation": "요구사항은 **끌어내고(도출) → 따져 보고(분석) → 문서로 적고(명세) → 맞는지 검토하는(확인)** 순서로 개발합니다.\n\n**틀린 선지**\n- ① 분석 → 도출 → 명세 → 확인: 먼저 요구사항을 끌어내야(도출) 분석할 수 있습니다.\n- ③ 도출 → 명세 → 분석 → 확인: 분석을 마친 뒤에 문서로 적습니다(명세).\n- ④ 명세 → 도출 → 확인 → 분석: 명세는 도출과 분석 다음 단계입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "요구사항"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "information-processing-engineer-requirements-0002",
+    "certId": "information-processing-engineer",
+    "subjectId": "sw-design",
+    "chapterId": "requirements",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "UML 의 관계 가운데, 전체와 부분의 관계이면서 부분이 전체 없이는 혼자 존재할 수 없는 강한 포함 관계는?",
+    "choices": [
+      "일반화(Generalization) 관계",
+      "집합(Aggregation) 관계",
+      "의존(Dependency) 관계",
+      "합성(Composition) 관계"
+    ],
+    "answer": 4,
+    "oneLineConcept": "합성: 부분이 전체에 종속 (속이 찬 마름모)",
+    "explanation": "**합성 관계**는 전체가 사라지면 부분도 함께 사라지는 관계입니다(예: 집과 방). 속이 찬 마름모로 그립니다. 집합 관계는 속이 빈 마름모로 그리며 부분이 따로 존재할 수 있습니다(예: 컴퓨터와 프린터).\n\n**틀린 선지**\n- ① 일반화(Generalization) 관계: 부모와 자식처럼 일반적인 것과 구체적인 것의 관계입니다.\n- ② 집합(Aggregation) 관계: 전체와 부분의 관계이지만 부분이 전체와 따로 존재할 수 있습니다.\n- ③ 의존(Dependency) 관계: 한쪽이 바뀌면 다른 쪽이 영향을 받는, 잠깐 쓰는 관계입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "UML"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "information-processing-engineer-requirements-0003",
+    "certId": "information-processing-engineer",
+    "subjectId": "sw-design",
+    "chapterId": "requirements",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "자료 흐름도(DFD)에서 '자료 저장소'를 나타내는 기호는?",
+    "choices": [
+      "평행선(두 줄)",
+      "화살표",
+      "사각형",
+      "원"
+    ],
+    "answer": 1,
+    "oneLineConcept": "DFD: 프로세스 원, 흐름 화살표, 저장소 평행선, 단말 사각형",
+    "explanation": "자료 흐름도의 네 가지 기호\n\n- 프로세스: 원\n- 자료 흐름: 화살표\n- **자료 저장소: 평행선(두 줄)**\n- 단말: 사각형\n\n**틀린 선지**\n- ② 화살표: 자료의 흐름을 나타냅니다.\n- ③ 사각형: 자료가 나오거나 들어가는 단말(외부 개체)을 나타냅니다.\n- ④ 원: 자료를 바꾸는 처리(프로세스)를 나타냅니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "DFD"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
   }
 ]

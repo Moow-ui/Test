@@ -101,5 +101,107 @@
         4
       ]
     }
+  },
+  {
+    "id": "information-processing-engineer-it-trends-0001",
+    "certId": "information-processing-engineer",
+    "subjectId": "is-management",
+    "chapterId": "it-trends",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "거래 내용을 담은 블록을 사슬처럼 이어, 네트워크 참여자들이 똑같이 나누어 저장하는 분산 원장 기술은?",
+    "choices": [
+      "매시업",
+      "디지털 트윈",
+      "메타버스",
+      "블록체인"
+    ],
+    "answer": 4,
+    "oneLineConcept": "블록체인: P2P 분산 원장",
+    "explanation": "**블록체인**은 중앙 서버 없이 참여자 모두가 같은 장부를 갖습니다. 한 곳의 기록을 몰래 고치기 어려워 비트코인 같은 가상 화폐에 쓰입니다.\n\n**틀린 선지**\n- ① 매시업: 웹에서 제공하는 정보와 서비스를 섞어 새로운 서비스를 만드는 기술입니다.\n- ② 디지털 트윈: 현실의 사물을 가상 공간에 똑같이 만들어 시험해 보는 기술입니다.\n- ③ 메타버스: 가상과 현실이 섞인 3차원 가상 세계입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "IT 신기술"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "information-processing-engineer-it-trends-0002",
+    "certId": "information-processing-engineer",
+    "subjectId": "is-management",
+    "chapterId": "it-trends",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "값싼 일반 컴퓨터 여러 대를 묶어 대용량 데이터를 나누어 저장하고 처리하는 오픈 소스 기반의 분산 컴퓨팅 플랫폼은?",
+    "choices": [
+      "하둡(Hadoop)",
+      "도커(Docker)",
+      "오픈스택(OpenStack)",
+      "스쿱(Sqoop)"
+    ],
+    "answer": 1,
+    "oneLineConcept": "하둡: 분산 저장(HDFS) + 분산 처리(맵리듀스)",
+    "explanation": "**하둡**은 분산 파일 시스템(HDFS)에 데이터를 나누어 저장하고, 맵리듀스로 나누어 처리합니다. 빅데이터 처리의 대표적인 플랫폼입니다.\n\n**틀린 선지**\n- ② 도커(Docker): 컨테이너 기술로 응용 프로그램의 배포를 자동화하는 엔진입니다.\n- ③ 오픈스택(OpenStack): 클라우드 컴퓨팅 환경을 만드는 오픈 소스 플랫폼입니다.\n- ④ 스쿱(Sqoop): 하둡과 관계형 데이터베이스 사이에서 데이터를 옮기는 도구입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "빅데이터"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "information-processing-engineer-it-trends-0003",
+    "certId": "information-processing-engineer",
+    "subjectId": "is-management",
+    "chapterId": "it-trends",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "사물 인터넷(IoT)처럼 대역폭이 좁은 환경에 알맞게 만든, 발행-구독(Publish-Subscribe) 방식의 가벼운 메시지 전송 프로토콜은?",
+    "choices": [
+      "Zigbee",
+      "NFC",
+      "MQTT",
+      "SOAP"
+    ],
+    "answer": 3,
+    "oneLineConcept": "MQTT: 발행-구독 방식의 경량 IoT 프로토콜",
+    "explanation": "**MQTT** 는 메시지를 보내는 쪽(발행자)과 받는 쪽(구독자) 사이에 중개자(브로커)를 두는 가벼운 프로토콜입니다.\n\n**틀린 선지**\n- ① Zigbee: 저전력·저속의 근거리 무선 통신 기술입니다.\n- ② NFC: 10cm 안팎의 아주 가까운 거리에서 쓰는 무선 통신 기술입니다.\n- ④ SOAP: XML 기반의 메시지를 주고받는 웹 서비스 프로토콜로, 무거운 편입니다.",
+    "frequency": 3,
+    "reviewStatus": "unverified",
+    "tags": [
+      "IoT"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   }
 ]
