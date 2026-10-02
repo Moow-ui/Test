@@ -1,0 +1,347 @@
+[
+  {
+    "id": "driver-license-written-speed-highway-0001",
+    "certId": "driver-license-written",
+    "subjectId": "driving-test",
+    "chapterId": "speed-highway",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "편도 2차로 이상인 고속도로에서 승용자동차의 최고속도는? (속도를 따로 지정하지 않은 구간)",
+    "choices": [
+      "시속 80km",
+      "시속 90km",
+      "시속 100km",
+      "시속 110km"
+    ],
+    "answer": 3,
+    "oneLineConcept": "편도 2차로 이상 고속도로 = 최고 100, 최저 50",
+    "explanation": "도로교통법 시행규칙 제19조에 따라 **편도 2차로 이상 고속도로**에서 승용자동차의 최고속도는 **시속 100km**, 최저속도는 **시속 50km**입니다.\n\n경찰청장이 따로 지정한 구간에서는 시속 120km까지 정할 수 있습니다.\n\n**틀린 선지**\n- 시속 80km: 시속 80km는 편도 1차로 고속도로의 최고속도입니다.\n- 시속 90km: 시속 90km는 자동차전용도로의 최고속도입니다.\n- 시속 110km: 시속 110km는 따로 지정하지 않은 구간의 기준이 아닙니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "고속도로",
+      "최고속도"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "driver-license-written-speed-highway-0002",
+    "certId": "driver-license-written",
+    "subjectId": "driving-test",
+    "chapterId": "speed-highway",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "고속도로의 최저속도는? (속도를 따로 지정하지 않은 구간)",
+    "choices": [
+      "시속 40km",
+      "시속 50km",
+      "시속 60km",
+      "시속 70km"
+    ],
+    "answer": 2,
+    "oneLineConcept": "고속도로 최저속도 = 시속 50km",
+    "explanation": "고속도로의 **최저속도**는 편도 차로 수와 관계없이 **시속 50km**입니다(도로교통법 시행규칙 제19조).\n\n너무 느리게 달려도 뒤차와 부딪힐 위험이 커지기 때문에 최저속도를 정해 두었습니다.\n\n**틀린 선지**\n- 시속 40km: 시속 40km가 아니라 50km입니다.\n- 시속 60km: 시속 60km가 아니라 50km입니다.\n- 시속 70km: 시속 70km가 아니라 50km입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "고속도로",
+      "최저속도"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "driver-license-written-speed-highway-0003",
+    "certId": "driver-license-written",
+    "subjectId": "driving-test",
+    "chapterId": "speed-highway",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "편도 1차로인 고속도로의 최고속도는?",
+    "choices": [
+      "시속 80km",
+      "시속 90km",
+      "시속 100km",
+      "시속 110km"
+    ],
+    "answer": 1,
+    "oneLineConcept": "편도 1차로 고속도로 = 최고 80, 최저 50",
+    "explanation": "**편도 1차로** 고속도로의 최고속도는 **시속 80km**, 최저속도는 시속 50km입니다(도로교통법 시행규칙 제19조).\n\n**틀린 선지**\n- 시속 90km: 시속 90km는 자동차전용도로의 최고속도입니다.\n- 시속 100km: 시속 100km는 편도 2차로 이상 고속도로의 최고속도입니다.\n- 시속 110km: 시속 110km라는 기준은 없습니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "고속도로",
+      "최고속도",
+      "편도 1차로"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "driver-license-written-speed-highway-0004",
+    "certId": "driver-license-written",
+    "subjectId": "driving-test",
+    "chapterId": "speed-highway",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "비가 내려 노면이 젖어 있을 때는 최고속도에서 얼마를 줄인 속도로 운행해야 하는가?",
+    "choices": [
+      "100분의 50",
+      "100분의 10",
+      "100분의 30",
+      "100분의 20"
+    ],
+    "answer": 4,
+    "oneLineConcept": "비로 노면 젖음·눈 20mm 미만 = 최고속도의 20% 감속",
+    "explanation": "도로교통법 시행규칙 제19조에 따라 다음 경우에는 최고속도의 **100분의 20**을 줄인 속도로 운행해야 합니다.\n\n- 비가 내려 노면이 젖어 있는 경우\n- 눈이 20mm 미만 쌓인 경우\n\n예: 최고속도 100km/h 도로라면 100 × 0.8 = 시속 80km 이하\n\n**틀린 선지**\n- 100분의 50: 100분의 50은 폭우·폭설·안개로 가시거리 100m 이내, 노면이 얼어붙은 경우 등의 기준입니다.\n- 100분의 10: 100분의 10이라는 기준은 없습니다.\n- 100분의 30: 100분의 30이라는 기준은 없습니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "악천후",
+      "감속"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "driver-license-written-speed-highway-0005",
+    "certId": "driver-license-written",
+    "subjectId": "driving-test",
+    "chapterId": "speed-highway",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "터널에 들어갈 때 바른 운전 방법은?",
+    "choices": [
+      "선글라스를 써서 눈부심을 막는다",
+      "비상점멸등만 켜고 속도를 높인다",
+      "전조등을 켜고 앞차와 거리를 충분히 둔다",
+      "창문을 열어 바깥 소리를 듣는다"
+    ],
+    "answer": 3,
+    "oneLineConcept": "터널 진입 = 전조등 켜고 감속, 안전거리 확보",
+    "explanation": "터널 안을 운행할 때는 **전조등 등 등화를 켜야** 합니다(도로교통법 제37조).\n\n터널 입구에서는 갑자기 어두워져 눈이 적응하는 데 시간이 걸리므로, 미리 속도를 줄이고 앞차와의 거리를 충분히 두는 것이 안전합니다.\n\n**틀린 선지**\n- 선글라스를 써서 눈부심을 막는다: 선글라스를 쓰면 터널 안에서 더 어두워 앞이 잘 보이지 않습니다.\n- 비상점멸등만 켜고 속도를 높인다: 비상점멸등만으로는 부족하며, 속도를 높이는 것은 위험합니다.\n- 창문을 열어 바깥 소리를 듣는다: 창문을 여는 것은 터널 안전운전 방법이 아닙니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "터널",
+      "등화"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "driver-license-written-speed-highway-0006",
+    "certId": "driver-license-written",
+    "subjectId": "driving-test",
+    "chapterId": "speed-highway",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "폭우나 안개로 앞이 보이는 거리(가시거리)가 100m 이내일 때는 최고속도에서 얼마를 줄인 속도로 운행해야 하는가?",
+    "choices": [
+      "100분의 50",
+      "100분의 20",
+      "100분의 10",
+      "100분의 30"
+    ],
+    "answer": 1,
+    "oneLineConcept": "가시거리 100m 이내·노면 결빙·눈 20mm 이상 = 50% 감속",
+    "explanation": "도로교통법 시행규칙 제19조에 따라 다음 경우에는 최고속도의 **100분의 50**을 줄인 속도로 운행해야 합니다.\n\n- 폭우·폭설·안개 등으로 가시거리가 100m 이내인 경우\n- 노면이 얼어붙은 경우\n- 눈이 20mm 이상 쌓인 경우\n\n예: 최고속도 100km/h 도로라면 100 × 0.5 = 시속 50km 이하\n\n**틀린 선지**\n- 100분의 20: 100분의 20은 비가 내려 노면이 젖었거나 눈이 20mm 미만 쌓인 경우의 기준입니다.\n- 100분의 10: 100분의 10이라는 기준은 없습니다.\n- 100분의 30: 100분의 30이라는 기준은 없습니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "악천후",
+      "감속",
+      "안개"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "driver-license-written-speed-highway-0007",
+    "certId": "driver-license-written",
+    "subjectId": "driving-test",
+    "chapterId": "speed-highway",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "고속도로에서 진로를 바꿀 때 방향지시등은 진로를 바꾸려는 지점에서 몇 m 이상 앞에서부터 켜야 하는가?",
+    "choices": [
+      "30m",
+      "50m",
+      "100m",
+      "200m"
+    ],
+    "answer": 3,
+    "oneLineConcept": "방향지시등: 일반도로 30m 이상 전, 고속도로 100m 이상 전",
+    "explanation": "진로를 바꾸려면 미리 방향지시등을 켜야 합니다(도로교통법 시행령 별표2).\n\n- 일반도로: 바꾸려는 지점에서 **30m 이상** 앞\n- 고속도로: 바꾸려는 지점에서 **100m 이상** 앞\n\n고속도로는 속도가 빨라 뒤차가 알아차릴 시간이 더 필요하기 때문입니다.\n\n**틀린 선지**\n- 30m: 30m는 일반도로의 기준입니다.\n- 50m: 50m라는 기준은 없습니다.\n- 200m: 200m라는 기준은 없습니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "고속도로",
+      "방향지시등",
+      "진로변경"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "driver-license-written-speed-highway-0008",
+    "certId": "driver-license-written",
+    "subjectId": "driving-test",
+    "chapterId": "speed-highway",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "고속도로에서 차가 고장 나 더 이상 운행할 수 없을 때 바른 조치는?",
+    "choices": [
+      "사람들은 차 안에 그대로 앉아 견인차를 기다린다",
+      "비상점멸등을 켜고 차 뒤쪽에 안전삼각대를 세운 뒤, 사람들은 가드레일 밖 안전한 곳으로 피한다",
+      "차 바로 뒤에 서서 손을 흔들어 뒤차에 알린다",
+      "갓길이 없으면 차로에 세운 채 트렁크만 열어 둔다"
+    ],
+    "answer": 2,
+    "oneLineConcept": "고속도로 고장 = 비상등·안전삼각대·안전한 곳으로 대피",
+    "explanation": "고속도로에서 차가 멈추면 뒤에서 오는 차에 부딪히는 2차 사고가 매우 위험합니다.\n\n1. 비상점멸등을 켜고, 가능하면 차를 갓길 등 안전한 곳으로 옮긴다.\n2. 뒤에서 오는 차가 알아볼 수 있는 위치에 **안전삼각대**를 세운다(밤에는 적색 섬광신호 등도 함께 설치).\n3. 운전자와 승객은 **가드레일 밖** 등 안전한 곳으로 피한 뒤 신고한다.\n\n**틀린 선지**\n- 사람들은 차 안에 그대로 앉아 견인차를 기다린다: 차 안에 머물면 뒤차가 들이받을 때 크게 다칠 수 있습니다.\n- 차 바로 뒤에 서서 손을 흔들어 뒤차에 알린다: 차 뒤에 사람이 서 있는 것은 2차 사고 위험이 매우 큽니다.\n- 갓길이 없으면 차로에 세운 채 트렁크만 열어 둔다: 트렁크를 여는 것만으로는 뒤차에 충분히 알릴 수 없습니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "고속도로",
+      "고장",
+      "안전삼각대",
+      "2차 사고"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "driver-license-written-speed-highway-0009",
+    "certId": "driver-license-written",
+    "subjectId": "driving-test",
+    "chapterId": "speed-highway",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "자동차전용도로의 최고속도와 최저속도로 맞는 것은?",
+    "choices": [
+      "최고 시속 100km, 최저 시속 50km",
+      "최고 시속 80km, 최저 시속 50km",
+      "최고 시속 80km, 최저 시속 30km",
+      "최고 시속 90km, 최저 시속 30km"
+    ],
+    "answer": 4,
+    "oneLineConcept": "자동차전용도로 = 최고 90, 최저 30",
+    "explanation": "도로교통법 시행규칙 제19조에 따라 **자동차전용도로**의 최고속도는 **시속 90km**, 최저속도는 **시속 30km**입니다.\n\n고속도로(최저 시속 50km)와 헷갈리지 않도록 함께 기억해 둡니다.\n\n**틀린 선지**\n- 최고 시속 100km, 최저 시속 50km: 편도 2차로 이상 고속도로의 기준입니다.\n- 최고 시속 80km, 최저 시속 50km: 편도 1차로 고속도로의 기준입니다.\n- 최고 시속 80km, 최저 시속 30km: 최고속도가 틀렸습니다. 자동차전용도로는 최고 시속 90km입니다.",
+    "frequency": 3,
+    "reviewStatus": "unverified",
+    "tags": [
+      "자동차전용도로",
+      "속도"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "driver-license-written-speed-highway-0010",
+    "certId": "driver-license-written",
+    "subjectId": "driving-test",
+    "chapterId": "speed-highway",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "악천후 때 감속 운행 기준에 대한 설명으로 옳지 않은 것은?",
+    "choices": [
+      "비가 내려 노면이 젖어 있으면 최고속도의 100분의 20을 줄인다",
+      "눈이 20mm 미만 쌓이면 최고속도의 100분의 20을 줄인다",
+      "노면이 얼어붙으면 최고속도의 100분의 50을 줄인다",
+      "안개로 가시거리가 100m 이내이면 최고속도의 100분의 20만 줄이면 된다"
+    ],
+    "answer": 4,
+    "oneLineConcept": "가시거리 100m 이내는 20%가 아니라 50% 감속",
+    "explanation": "악천후 감속 기준(도로교통법 시행규칙 제19조)\n\n- **100분의 20 감속**: 비가 내려 노면이 젖은 경우, 눈이 20mm 미만 쌓인 경우\n- **100분의 50 감속**: 폭우·폭설·안개로 가시거리 100m 이내, 노면이 얼어붙은 경우, 눈이 20mm 이상 쌓인 경우\n\n가시거리 100m 이내일 때는 100분의 50을 줄여야 하므로 옳지 않은 설명입니다.\n\n**틀린 선지**\n- 비가 내려 노면이 젖어 있으면 최고속도의 100분의 20을 줄인다: 옳은 설명입니다.\n- 눈이 20mm 미만 쌓이면 최고속도의 100분의 20을 줄인다: 옳은 설명입니다.\n- 노면이 얼어붙으면 최고속도의 100분의 50을 줄인다: 옳은 설명입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "악천후",
+      "감속"
+    ],
+    "levelLock": true
+  }
+]

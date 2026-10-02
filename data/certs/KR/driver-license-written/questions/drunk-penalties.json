@@ -1,0 +1,273 @@
+[
+  {
+    "id": "driver-license-written-drunk-penalties-0001",
+    "certId": "driver-license-written",
+    "subjectId": "driving-test",
+    "chapterId": "drunk-penalties",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "술에 취한 상태로 운전하는 것이 금지되는 혈중알코올농도 기준은?",
+    "choices": [
+      "0.01% 이상",
+      "0.03% 이상",
+      "0.05% 이상",
+      "0.08% 이상"
+    ],
+    "answer": 2,
+    "oneLineConcept": "음주운전 기준 = 혈중알코올농도 0.03% 이상",
+    "explanation": "도로교통법 제44조에 따라 혈중알코올농도가 **0.03% 이상**이면 술에 취한 상태로 보아 운전할 수 없습니다.\n\n- 0.03% 이상 0.08% 미만: 면허 정지\n- 0.08% 이상: 면허 취소\n\n**틀린 선지**\n- 0.01% 이상: 0.01%라는 기준은 없습니다.\n- 0.05% 이상: 0.05%는 예전 기준입니다. 지금은 0.03% 이상입니다.\n- 0.08% 이상: 0.08% 이상은 면허 취소 기준입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "음주운전",
+      "혈중알코올농도"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "driver-license-written-drunk-penalties-0002",
+    "certId": "driver-license-written",
+    "subjectId": "driving-test",
+    "chapterId": "drunk-penalties",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "음주운전으로 운전면허가 취소되는 혈중알코올농도 기준은?",
+    "choices": [
+      "0.03% 이상",
+      "0.05% 이상",
+      "0.1% 이상",
+      "0.08% 이상"
+    ],
+    "answer": 4,
+    "oneLineConcept": "면허 취소 = 혈중알코올농도 0.08% 이상",
+    "explanation": "혈중알코올농도가 **0.08% 이상**이면 **운전면허가 취소**됩니다.\n\n0.03% 이상 0.08% 미만이면 면허 정지(벌점 100점)가 됩니다.\n\n**틀린 선지**\n- 0.03% 이상: 0.03% 이상은 음주운전 금지 기준이며, 이 구간(0.08% 미만)은 원칙적으로 면허 정지입니다.\n- 0.05% 이상: 0.05%라는 취소 기준은 없습니다.\n- 0.1% 이상: 0.1%는 예전 기준입니다. 지금은 0.08% 이상이면 취소됩니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "음주운전",
+      "면허 취소"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "driver-license-written-drunk-penalties-0003",
+    "certId": "driver-license-written",
+    "subjectId": "driving-test",
+    "chapterId": "drunk-penalties",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "경찰공무원의 음주측정 요구에 응하지 않으면 어떻게 되는가?",
+    "choices": [
+      "운전면허가 취소되고 형사처벌도 받는다",
+      "경고만 받는다",
+      "벌점 10점만 받는다",
+      "측정하지 않았으므로 아무 처분도 받지 않는다"
+    ],
+    "answer": 1,
+    "oneLineConcept": "음주측정 거부 = 면허 취소 + 형사처벌",
+    "explanation": "운전자는 경찰공무원의 음주측정에 응해야 합니다(도로교통법 제44조).\n\n측정을 **거부**하면 **운전면허가 취소**되고, 음주운전보다 가볍지 않은 **형사처벌**을 받습니다.\n\n**틀린 선지**\n- 경고만 받는다: 경고로 끝나지 않습니다.\n- 벌점 10점만 받는다: 벌점이 아니라 면허 취소 사유입니다.\n- 측정하지 않았으므로 아무 처분도 받지 않는다: 측정을 거부하는 것 자체가 처벌 대상입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "음주운전",
+      "측정 거부"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "driver-license-written-drunk-penalties-0004",
+    "certId": "driver-license-written",
+    "subjectId": "driving-test",
+    "chapterId": "drunk-penalties",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "1년 동안 쌓인 벌점(누산점수)이 몇 점 이상이면 운전면허가 취소되는가?",
+    "choices": [
+      "40점 이상",
+      "100점 이상",
+      "121점 이상",
+      "201점 이상"
+    ],
+    "answer": 3,
+    "oneLineConcept": "누산점수 1년 121점·2년 201점·3년 271점 이상 = 취소",
+    "explanation": "벌점이 쌓여 운전면허가 취소되는 기준은 다음과 같습니다.\n\n- 1년간 **121점 이상**\n- 2년간 201점 이상\n- 3년간 271점 이상\n\n**틀린 선지**\n- 40점 이상: 40점 이상은 면허 정지 처분이 시작되는 기준입니다.\n- 100점 이상: 100점은 1년 기준의 취소 점수가 아닙니다.\n- 201점 이상: 201점 이상은 2년간 기준입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "벌점",
+      "면허 취소"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "driver-license-written-drunk-penalties-0005",
+    "certId": "driver-license-written",
+    "subjectId": "driving-test",
+    "chapterId": "drunk-penalties",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "처분벌점이 40점 이상이 되면 받는 처분은?",
+    "choices": [
+      "운전면허 취소",
+      "운전면허 정지(벌점 1점을 하루로 계산)",
+      "처분 없이 경고만 받는다",
+      "범칙금만 두 배로 낸다"
+    ],
+    "answer": 2,
+    "oneLineConcept": "처분벌점 40점 이상 = 면허 정지(1점 = 1일)",
+    "explanation": "처분벌점이 **40점 이상**이 되면 **운전면허 정지** 처분을 받습니다. 정지 기간은 **벌점 1점을 하루**로 계산합니다.\n\n예: 처분벌점 100점이면 100일 정지\n\n**틀린 선지**\n- 운전면허 취소: 40점은 취소 기준이 아닙니다. 1년간 121점 이상이면 취소됩니다.\n- 처분 없이 경고만 받는다: 40점 이상이면 경고가 아니라 정지 처분을 받습니다.\n- 범칙금만 두 배로 낸다: 벌점과 범칙금은 따로 정해지며, 이런 규정은 없습니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "벌점",
+      "면허 정지"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "driver-license-written-drunk-penalties-0006",
+    "certId": "driver-license-written",
+    "subjectId": "driving-test",
+    "chapterId": "drunk-penalties",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "전날 밤 늦게까지 술을 마신 뒤 다음 날 아침 운전하려 한다. 바른 설명은?",
+    "choices": [
+      "잠을 자고 일어났으면 음주운전이 아니다",
+      "아침에는 단속하지 않으므로 괜찮다",
+      "커피를 마시면 알코올이 바로 빠지므로 운전해도 된다",
+      "다음 날이라도 혈중알코올농도가 0.03% 이상이면 음주운전이다"
+    ],
+    "answer": 4,
+    "oneLineConcept": "숙취 운전도 0.03% 이상이면 음주운전",
+    "explanation": "술을 마신 다음 날이라도 몸에 알코올이 남아 **혈중알코올농도가 0.03% 이상**이면 **음주운전**입니다.\n\n알코올은 시간이 지나야 빠지며, 커피나 찬물로 빨리 빠지지 않습니다. 많이 마신 다음 날에는 운전하지 않는 것이 안전합니다.\n\n**틀린 선지**\n- 잠을 자고 일어났으면 음주운전이 아니다: 잠을 자도 알코올이 다 빠지지 않을 수 있습니다.\n- 아침에는 단속하지 않으므로 괜찮다: 음주운전 단속은 시간과 관계없이 할 수 있습니다.\n- 커피를 마시면 알코올이 바로 빠지므로 운전해도 된다: 커피를 마셔도 혈중알코올농도는 낮아지지 않습니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "음주운전",
+      "숙취"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "driver-license-written-drunk-penalties-0007",
+    "certId": "driver-license-written",
+    "subjectId": "driving-test",
+    "chapterId": "drunk-penalties",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "과거에 음주운전으로 적발된 적이 있는 사람이 다시 혈중알코올농도 0.03% 이상 0.08% 미만 상태로 운전하다 적발되었다. 운전면허 처분은?",
+    "choices": [
+      "운전면허가 취소된다",
+      "운전면허가 100일 정지된다",
+      "벌점 40점만 받는다",
+      "처음과 같이 경고만 받는다"
+    ],
+    "answer": 1,
+    "oneLineConcept": "음주운전 2회째부터는 정지 수치라도 면허 취소",
+    "explanation": "도로교통법 제93조에 따라 음주운전을 한 적이 있는 사람이 **다시** 음주운전으로 면허 정지 수준에 해당하면 **운전면허가 취소**됩니다.\n\n즉 두 번째부터는 0.03% 이상 0.08% 미만이라도 정지가 아니라 취소입니다.\n\n**틀린 선지**\n- 운전면허가 100일 정지된다: 처음 적발된 경우의 정지 처분이며, 다시 적발되면 취소됩니다.\n- 벌점 40점만 받는다: 벌점만으로 끝나지 않습니다.\n- 처음과 같이 경고만 받는다: 음주운전은 처음이라도 경고로 끝나지 않습니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "음주운전",
+      "면허 취소",
+      "재범"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "driver-license-written-drunk-penalties-0008",
+    "certId": "driver-license-written",
+    "subjectId": "driving-test",
+    "chapterId": "drunk-penalties",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "교통사고 결과에 따른 벌점에 대한 설명으로 옳지 않은 것은?",
+    "choices": [
+      "사망 1명마다 90점",
+      "중상 1명마다 15점",
+      "경상 1명마다 5점",
+      "부상신고 1명마다 30점"
+    ],
+    "answer": 4,
+    "oneLineConcept": "사고 벌점: 사망 90 · 중상 15 · 경상 5 · 부상신고 2",
+    "explanation": "교통사고를 일으켰을 때 사고 결과에 따른 벌점은 다음과 같습니다.\n\n- 사망 1명마다(72시간 이내 사망): 90점\n- 중상 1명마다(3주 이상 치료): 15점\n- 경상 1명마다(3주 미만 5일 이상 치료): 5점\n- 부상신고 1명마다(5일 미만 치료): **2점**\n\n부상신고는 30점이 아니라 2점이므로 옳지 않은 설명입니다.\n\n**틀린 선지**\n- 사망 1명마다 90점: 옳은 설명입니다.\n- 중상 1명마다 15점: 옳은 설명입니다.\n- 경상 1명마다 5점: 옳은 설명입니다.",
+    "frequency": 3,
+    "reviewStatus": "unverified",
+    "tags": [
+      "벌점",
+      "교통사고"
+    ],
+    "levelLock": true
+  }
+]
