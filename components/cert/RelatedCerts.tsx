@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Badge } from "@/components/Badge";
-import { fmt, getMessages, localePath, type Locale } from "@/lib/i18n";
+import { certKind, fmt, getMessages, localePath, type Locale } from "@/lib/i18n";
 import type { CertListItem } from "@/lib/types";
 
 /** 관련 자격증 내부 링크 */
@@ -30,7 +30,7 @@ export function RelatedCerts({
               <span>
                 <span className="font-bold">{c.name}</span>
                 <span className="ml-2 text-[0.85rem] text-ink-sub">
-                  {c.grade} · {c.field}
+                  {certKind(m, c)} · {c.field}
                 </span>
               </span>
               {c.ready ? <Badge tone="ok">{m.common.ready}</Badge> : <Badge>{m.common.comingSoon}</Badge>}

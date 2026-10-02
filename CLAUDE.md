@@ -27,6 +27,7 @@
 1. **자격증 추가 = 데이터 폴더 하나 추가.** `data/certs/{country}/{slug}/` 만 만들면 목록·검색·sitemap·화면이 자동으로 생긴다.
    자격증 때문에 코드를 고치지 않는다. 손으로 고치는 자격증 목록은 없다.
 2. **자격증 이름·slug 로 분기하는 코드 금지.** 자격증마다 다른 점은 전부 `meta.json` 값으로 처리한다 (선지 수, 합격 기준 등).
+   시행기관도 마찬가지다. 기관 이름을 코드·화면 문구에 적지 않고 `meta.json` 의 `issuer`·`certType` 으로 표기한다.
    선지 수는 초급 2개·중급 3개·고급 4개·실전 문제풀이 는 시험 그대로. 남길 선지는 문제의 `choicesByLevel` 에 미리 적고, 줄일 수 없는 문제는 `levelLock`.
 3. **문제 id 는 영구적이다.** `{slug}-{chapterId}-{4자리 번호}`. 바꾸지도 다시 쓰지도 않는다.
    문제를 고치면 `version` 만 올리고, 없앨 때는 지우지 말고 `retired: true`. (회원의 오답노트·풀이 기록이 id 를 가리킨다)
@@ -38,12 +39,12 @@
 
 ```
 data/certs/{country}/{slug}/
-  meta.json                   자격증 정보 (시행기관, 시험 구성, 선지 수, 합격 기준, 출처)
+  meta.json                   자격증 정보 (시행기관 issuer, 자격 종류 certType, 시험 구성, 선지 수, 합격 기준, 출처)
   chapters.json               과목·단원·중요도·출제 비중
   questions/{chapterId}.json  단원별 문제 (파일당 최대 300문항, 넘으면 -2, -3)
   exams/{year}-{round}.json   실전 모의고사 구성
   assets/                     문제 그림
-data/cert-queue.json          추가할 자격증 대기 목록
+data/cert-queue.json          추가할 자격증 대기 목록 (나라별 응시자 수 순, 시행기관·기출 공개 여부 메모)
 data/review-queue/            검수 대기 목록
 reports/{YYYY-MM}/            작업 리포트 (월별 폴더)
 ```

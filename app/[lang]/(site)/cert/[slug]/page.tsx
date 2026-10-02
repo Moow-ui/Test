@@ -6,6 +6,7 @@ import { Fold } from "@/components/Fold";
 import { JsonLd } from "@/components/JsonLd";
 import { AnalysisPanel } from "@/components/cert/AnalysisPanel";
 import { CertBoxes } from "@/components/cert/CertBoxes";
+import { IssuerNotice } from "@/components/cert/IssuerNotice";
 import { RelatedCerts } from "@/components/cert/RelatedCerts";
 import { getCertList, getCertificationIn, getQuestions } from "@/lib/data";
 import { fmt, getMessages, isLocale, localeCountry, localePath } from "@/lib/i18n";
@@ -116,10 +117,16 @@ export default async function CertPage({ params }: Props) {
         <div className="space-y-2 pt-3">
           <Fold title={m.cert.examInfo}>
             <dl className="grid gap-x-4 gap-y-2 sm:grid-cols-[6rem_1fr]">
-              <dt className="font-bold text-ink-sub">{m.cert.gradeField}</dt>
+              <dt className="font-bold text-ink-sub">{m.cert.certType}</dt>
               <dd>
-                {cert.grade} · {cert.field}
+                {cert.grade
+                  ? fmt(m.cert.certTypeWithGrade, { type: m.certTypes[cert.certType], grade: cert.grade })
+                  : m.certTypes[cert.certType]}
               </dd>
+              <dt className="font-bold text-ink-sub">{m.cert.field}</dt>
+              <dd>{cert.field}</dd>
+              <dt className="font-bold text-ink-sub">{m.cert.organizer}</dt>
+              <dd>{cert.issuer.name}</dd>
               <dt className="font-bold text-ink-sub">{m.cert.subjects}</dt>
               <dd>
                 {cert.subjects
@@ -134,8 +141,6 @@ export default async function CertPage({ params }: Props) {
               <dd className="font-bold">{examInfo.passCriteria.description}</dd>
               {content && (
                 <>
-                  <dt className="font-bold text-ink-sub">{m.cert.organizer}</dt>
-                  <dd>{content.organizer}</dd>
                   <dt className="font-bold text-ink-sub">{m.cert.eligibility}</dt>
                   <dd>{content.eligibility}</dd>
                 </>
@@ -190,6 +195,7 @@ export default async function CertPage({ params }: Props) {
         </details>
       )}
 
+      <IssuerNotice locale={lang} cert={cert} />
     </article>
   );
 }

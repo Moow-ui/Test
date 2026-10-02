@@ -124,14 +124,13 @@ async function toListItem(cert: LoadedCert): Promise<CertListItem> {
   const questionCount = (await getQuestions(cert.meta.id)).length;
   return {
     ...certSummarySchema.parse(cert.meta),
-    organizer: cert.meta.content?.organizer ?? null,
     questionCount,
     ready: !!cert.subjects && !!cert.meta.examInfo && questionCount > 0,
   };
 }
 
 /**
- * 자격증 요약 인덱스 (이름·분류·시행기관·문제 수). 홈 목록과 검색은 이것만 쓴다.
+ * 자격증 요약 인덱스 (이름·분야·자격 종류·시행기관·문제 수). 홈 목록과 검색은 이것만 쓴다.
  * 순서: 문제가 준비된 자격증 먼저 → meta.json 의 order → id. country 를 넘기면 그 나라 자격증만.
  */
 export async function getCertList(country?: Country): Promise<CertListItem[]> {

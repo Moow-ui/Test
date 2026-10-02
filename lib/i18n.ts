@@ -1,7 +1,7 @@
 import { BRAND } from "@/config/brand";
 import en from "@/messages/en.json";
 import ko from "@/messages/ko.json";
-import type { Country } from "./types";
+import type { CertType, Country } from "./types";
 
 /**
  * 다국어 규칙 (서버·화면 공용, 순수 함수).
@@ -81,6 +81,11 @@ export function getMessages(locale: Locale): Messages {
 
 export function brandName(locale: Locale): string {
   return BRAND[locale].name;
+}
+
+/** 목록에서 자격증 이름 아래에 보여 주는 분류 한마디: 등급이 있으면 등급, 없으면 자격 종류 이름 */
+export function certKind(m: Messages, cert: { grade?: string; certType: CertType }): string {
+  return cert.grade ?? m.certTypes[cert.certType];
 }
 
 /** "{n}문제" + { n: 5 } → "5문제" */

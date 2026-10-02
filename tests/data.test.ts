@@ -57,7 +57,7 @@ describe("자격증 목록 (data/certs 폴더에서 자동으로 만든다)", ()
   it("요약 인덱스에 시행기관과 문제 수가 들어 있다", async () => {
     for (const item of await getCertList()) {
       expect(item.questionCount, item.id).toBe((await getQuestions(item.id)).length);
-      if (item.ready) expect(item.organizer, item.id).toBeTruthy();
+      expect(item.issuer.name, item.id).toBeTruthy();
     }
   });
 

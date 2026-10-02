@@ -76,6 +76,17 @@
     "intermediate": "Medium",
     "advanced": "Hard"
   },
+  "certTypes": {
+    "national-technical": "National technical qualification",
+    "national-professional": "National professional qualification",
+    "accredited-private": "Accredited private qualification",
+    "private": "Private qualification",
+    "license": "License",
+    "state-license": "State license",
+    "federal-certification": "Federal certification",
+    "professional-certification": "Professional certification",
+    "other": "Exam"
+  },
   "source": {
     "predicted": "AI practice question",
     "past": "{year} exam, round {round}",
@@ -99,27 +110,28 @@
     "startNew": "Start {n} new questions →",
     "startNow": "Start {n} questions →",
     "viewAnalysis": "Exam outline",
-    "quickNote": "{level} · {n} questions · no login needed",
+    "quickNote": "{level} · {n} questions · no login",
     "otherRecent": "Other recent exams",
     "findTitle": "Find an exam",
     "searchLabel": "Search by exam name",
     "searchPlaceholder": "e.g. CDL, EPA 608",
+    "filterLabel": "Filter",
+    "filterField": "Field",
+    "filterGrade": "Grade",
+    "filterType": "Type",
     "resultCount": "{n} results",
     "totalCount": "{n} exams",
     "noResult": "No matching exam. Try a shorter name.",
     "howTitle": "How it works",
-    "steps": [
-      "Pick an exam",
-      "Pick Easy, Medium, or Hard",
-      "Answer 5 questions, get instant answers"
-    ],
-    "readyCount": "{n} exams available now"
+    "how": "Pick an exam → Pick Easy, Medium, or Hard → Answer 5 questions, see answers right away"
   },
   "cert": {
     "soon": "{name} questions are coming soon.",
     "goSolve": "Practice {name} →",
     "examInfo": "Exam info",
-    "gradeField": "Type · Field",
+    "certType": "Type",
+    "certTypeWithGrade": "{type} · {grade}",
+    "field": "Field",
     "subjects": "Sections",
     "subjectItem": "{name} ({n})",
     "subjectSeparator": " · ",
@@ -128,6 +140,8 @@
     "format": "Format",
     "passCriteria": "Passing score",
     "organizer": "Provider",
+    "officialSite": "Official site",
+    "issuerNotice": "{brand} is an independent study site. It is not affiliated with, endorsed by, or sponsored by {issuer}. Always confirm exam dates, fees, and eligibility with the official provider.",
     "eligibility": "Eligibility",
     "analysis": "Exam outline",
     "more": "▼ More about {name} (trends · overview · FAQ)",
@@ -505,7 +519,7 @@
     "homeEyebrow": "Free · No login",
     "homeTitle": "Certification Practice",
     "homeSubtitle": "Answer one question at a time, see the explanation",
-    "certEyebrow": "{grade} · {field}",
+    "certEyebrow": "{kind} · {field}",
     "certSubtitle": "{n}-question exam outline · practice + explanations",
     "certSoon": "Practice questions coming soon"
   }

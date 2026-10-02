@@ -18,6 +18,6 @@ export default async function ProfilePage({ params }: Props) {
   if (!isLocale(lang)) notFound();
   const certs = await getCertList(localeCountry(lang));
   return (
-    <ProfileView certs={certs.map((c) => ({ id: c.id, name: c.name, grade: c.grade, ready: c.ready }))} />
+    <ProfileView certs={certs.map((c) => ({ id: c.id, name: c.name, grade: c.grade ?? null, ready: c.ready }))} />
   );
 }

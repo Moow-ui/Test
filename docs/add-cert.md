@@ -8,7 +8,8 @@
 1. **폴더 만들기**: `data/certs/{country}/{slug}/`
    - slug 는 영문 소문자·숫자·하이픈. 나라가 달라도 겹치면 안 되고, 한번 정하면 바꾸지 않는다.
    - "준비 중"으로 이미 있는 자격증이면 그 폴더에 파일을 채우면 된다.
-2. **`meta.json`**: 이름, 등급, 분야, `examInfo`(문항 수·시간·선지 수·합격 기준), `content`(시행기관·소개·FAQ 3~5개), `sources`(공식 출제기준), `updatedAt`.
+2. **`meta.json`**: 이름, 분야(`field`), 자격 종류(`certType`), 시행기관(`issuer`: 이름·공식 URL), 등급(있을 때만), `examInfo`(문항 수·시간·선지 수·합격 기준), `content`(소개·FAQ 3~5개), `sources`(공식 출제기준), `updatedAt`.
+   시행기관이 어디든 방법은 같다. 미국 자격증은 그 기관의 상표 사용 규정을 확인해 `trademarkNotice` 에 상표 고지 문장을 적는다.
    - 과목·문항 수·합격 기준은 반드시 공식 출제기준으로 확인한다.
 3. **`chapters.json`**: 과목과 단원.
    - 과목 `questionCount` 의 합 = `examInfo.totalQuestions`
@@ -41,7 +42,8 @@ npm run build
 git add data/certs && git commit -m "cert: add {slug}"
 ```
 
-`data/cert-queue.json` 에 있던 자격증이면 같은 커밋에서 대기 목록에서 뺀다.
+`data/cert-queue.json` 에 있던 자격증이면 같은 커밋에서 대기 목록에서 뺀다 (문제가 있는데 대기 목록에 남아 있으면 `npm run validate` 가 막는다).
+대기 목록은 나라별로 응시자 수(없으면 검색량)가 많은 순서이고, 항목마다 시행기관·기출 공개 여부(`pastQuestions`)·공개 문제의 이용 조건(`usageNote`)이 적혀 있다. 순서와 메모는 어림값이므로 추가하기 전에 시행기관 공지로 다시 확인한다.
 
 ## B. 문제 넣기·고치기
 

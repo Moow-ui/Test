@@ -60,11 +60,10 @@ export async function validateData(store: DataStore): Promise<ValidationResult> 
   if (!legacyRaw.success) errors.push(`${LEGACY_IDS_FILE} → 문제 id 문자열의 배열이어야 합니다`);
   const legacyIds = new Set(legacyRaw.success ? legacyRaw.data : []);
 
-  const queue = await store.readJson(CERT_QUEUE_FILE);
-  if (queue !== null) {
-    const result = certQueueSchema.safeParse(queue);
-    if (!result.success) for (const m of issues(result.error)) errors.push(`${CERT_QUEUE_FILE} → ${m}`);
-  }
+  const queueRaw = await store.readJson(CERT_QUEUE_FILE);
+  const queueResult = certQueueSchema.safeParse(queueRaw ?? []);
+  if (!queueResult.success) for (const m of issues(queueResult.error)) errors.push(`${CERT_QUEUE_FILE} → ${m}`);
+  const queue = queueResult.success ? queueResult.data : [];
 
   for (const country of await store.list(CERTS_DIR)) {
     if (!(COUNTRIES as readonly string[]).includes(country)) {
@@ -101,6 +100,14 @@ export async function validateData(store: DataStore): Promise<ValidationResult> 
       // ── chapters.json ("준비 중" 자격증에는 없다)
       const chaptersRaw = await store.readJson(chaptersFile(country, slug));
       const questionFiles = (await store.list(questionsDir(country, slug))).filter((n) => n.endsWith(".json"));
+      // 대기 목록의 slug 는 폴더 이름과 같다. 문제까지 들어간 자격증은 대기 목록에서 뺀다
+      const queued = queue.find((item) => item.slug === slug);
+      if (queued && queued.country !== country) {
+        errors.push(`${CERT_QUEUE_FILE} → ${slug}: 나라(${queued.country})가 자격증 폴더(${country})와 다릅니다`);
+      }
+      if (queued && questionFiles.length > 0) {
+        errors.push(`${CERT_QUEUE_FILE} → ${slug}: 이미 문제가 있는 자격증입니다 (대기 목록에서 뺍니다)`);
+      }
       if (chaptersRaw === null) {
         if (questionFiles.length > 0) errors.push(`${where} → 문제는 있는데 chapters.json 이 없습니다`);
         continue;
@@ -209,6 +216,12 @@ export async function validateData(store: DataStore): Promise<ValidationResult> 
 
   // slug 는 나라가 달라도 겹치면 안 된다 (문제 id·배포 파일 주소가 slug 로 시작한다)
   errors.push(...checkCertList(metas));
+
+  if (queue.length > 0) {
+    lines.push(
+      `\n[대기 목록] ${COUNTRIES.map((c) => `${c} ${queue.filter((item) => item.country === c).length}개`).join(" · ")}`,
+    );
+  }
 
   return { errors, lines, certCount: metas.length, questionCount };
 }

@@ -4,7 +4,7 @@
     "titleSuffix": "자격증 필기 예상문제 무료 풀이",
     "description": "자격증 필기시험을 준비하는 분들을 위한 무료 문제 풀이 사이트입니다. 자격증별 출제 경향을 확인하고, 실제 시험과 비슷한 유형의 AI 예상문제를 한 문제씩 풀면서 바로 정답과 쉬운 해설을 볼 수 있습니다.",
     "notice": "이 사이트의 문제는 실제 기출문제가 아니라, 출제 유형과 난도를 참고해 직접 만든 AI 예상문제입니다. 문제와 해설에는 오류가 있을 수 있으니, 이상한 점이 보이면 '문제 오류 신고'로 알려 주세요.",
-    "officialInfo": "시험 일정·응시 자격 등 공식 정보는 시행기관(한국산업인력공단 큐넷, 대한상공회의소 자격평가사업단)에서 꼭 다시 확인하세요.",
+    "officialInfo": "시험 일정·응시 자격 등 공식 정보는 각 자격증의 시행기관에서 꼭 다시 확인하세요.",
     "cookieNotice": "이 사이트는 로그인 유지와 광고 표시를 위해 쿠키를 사용합니다. 자세한 내용은 개인정보처리방침에서 확인하세요."
   },
   "nav": {
@@ -76,6 +76,17 @@
     "intermediate": "중급",
     "advanced": "고급"
   },
+  "certTypes": {
+    "national-technical": "국가기술자격",
+    "national-professional": "국가전문자격",
+    "accredited-private": "국가공인 민간자격",
+    "private": "민간자격",
+    "license": "면허",
+    "state-license": "주(州) 면허",
+    "federal-certification": "연방 자격",
+    "professional-certification": "전문 자격증",
+    "other": "검정·시험"
+  },
   "source": {
     "predicted": "AI 예상문제",
     "past": "{year}년 {round}회 기출",
@@ -99,27 +110,28 @@
     "startNew": "새로 {n}문제 풀기 →",
     "startNow": "바로 {n}문제 풀기 →",
     "viewAnalysis": "출제 분석 보기",
-    "quickNote": "{level} {n}문제 · 로그인 없이 바로 시작",
+    "quickNote": "{level} {n}문제 · 로그인 없이 시작",
     "otherRecent": "최근 본 다른 자격증",
     "findTitle": "자격증 찾기",
     "searchLabel": "자격증 이름으로 검색",
     "searchPlaceholder": "자격증 이름 (예: 전기기능사, 지게차, ㅈㄱㄱㄴㅅ)",
+    "filterLabel": "조건으로 찾기",
+    "filterField": "분야",
+    "filterGrade": "등급",
+    "filterType": "자격 종류",
     "resultCount": "검색 결과 {n}개",
     "totalCount": "전체 {n}개",
     "noResult": "찾는 자격증이 없습니다. 이름을 짧게 줄여 보세요.",
     "howTitle": "사용 방법",
-    "steps": [
-      "자격증 선택",
-      "초급·중급·고급 선택",
-      "5문제 풀고 바로 채점·해설"
-    ],
-    "readyCount": "지금 풀 수 있는 자격증 {n}개"
+    "how": "자격증 선택 → 초급·중급·고급 선택 → 5문제 풀고 바로 채점"
   },
   "cert": {
     "soon": "{name} 문제는 준비 중입니다.",
     "goSolve": "{name} 문제 풀기 →",
     "examInfo": "시험 정보",
-    "gradeField": "등급·분야",
+    "certType": "자격 종류",
+    "certTypeWithGrade": "{type} · {grade}",
+    "field": "분야",
     "subjects": "시험 과목",
     "subjectItem": "{name} {n}문항",
     "subjectSeparator": " · ",
@@ -128,6 +140,8 @@
     "format": "시험 방식",
     "passCriteria": "합격 기준",
     "organizer": "시행기관",
+    "officialSite": "공식 사이트 열기",
+    "issuerNotice": "{brand}은 시행기관({issuer})과 관계가 없는 비공식 학습 서비스입니다. 시험 일정·응시 자격 등 공식 정보는 시행기관에서 꼭 확인하세요.",
     "eligibility": "응시자격",
     "analysis": "출제 분석",
     "more": "▼ {name} 더 알아보기 (출제 경향 · 자격증 소개 · 자주 묻는 질문)",
@@ -505,7 +519,7 @@
     "homeEyebrow": "무료 · 로그인 없음",
     "homeTitle": "자격증 필기 문제 풀이",
     "homeSubtitle": "예상문제를 한 문제씩 풀고 바로 해설 확인",
-    "certEyebrow": "{grade} · {field}",
+    "certEyebrow": "{kind} · {field}",
     "certSubtitle": "필기 {n}문항 출제 분석 · 문제 풀이 + 해설",
     "certSoon": "필기 문제 준비 중"
   }

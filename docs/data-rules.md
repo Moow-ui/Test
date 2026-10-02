@@ -14,7 +14,7 @@ data/
     questions/{chapterId}-2.json  한 파일이 300문항을 넘으면 -2, -3 … 으로 나눈다
     exams/{year}-{round}.json     실전 모의고사 구성 (문제 id 목록)
     assets/                       문제 그림 (회로도 등)
-  cert-queue.json                 앞으로 추가할 자격증 대기 목록
+  cert-queue.json                 앞으로 추가할 자격증 대기 목록 (나라별 응시자 수 순. 시행기관·기출 공개 여부·이용 조건 메모)
   review-queue/                   검수 대기 목록
   legacy-question-ids.json        새 id 규칙 이전에 만든 문제 id (고치지 않는다)
 reports/{YYYY-MM}/                작업 리포트. 월별 폴더에 쌓는다
@@ -34,12 +34,15 @@ public/data/                      빌드 때 자동으로 만든다 (git 에 올
 | `country` | `KR` 은 `/ko`, `US` 는 `/en` 에만 나온다 |
 | `name`, `officialName`, `spacedName`, `shortNames[]` | 이름과 검색어 변형 |
 | `relatedCertIds[]` | 관련 자격증 slug (같은 나라, 실제로 있는 것만) |
-| `grade` | `GRADES` 중 하나 (기능사·산업기사·기사·기능장·기술사·1급·2급·Certification·License) |
-| `field` | 분야 |
+| `grade` | 등급 (기능사·산업기사·기사·1급·2급 등). 등급이 없는 자격증은 적지 않는다 |
+| `field` | 분야 (건설·전기·IT·사무·조리·운전·의료 등). 홈의 분야 필터가 이 값으로 묶으므로 이미 쓰는 이름에 맞춘다 |
+| `certType` | 자격 종류. `CERT_TYPES` 중 하나: `national-technical`(국가기술자격) · `national-professional`(국가전문자격) · `accredited-private`(국가공인 민간자격) · `private`(민간자격) · `license`(면허) · `state-license` · `federal-certification` · `professional-certification` · `other`(검정·시험) |
+| `issuer` | 시행기관 `{ name, url }`. 어느 기관이든 같은 모양. 기관이 여러 곳이면(주별 면허 등) `url` 은 비운다 |
+| `trademarkNotice` | (선택) 시행기관의 상표 사용 규정에 따른 상표 고지 문장. 자격증 페이지 아래에 그대로 나온다 |
 | `order` | 목록 순서 (작을수록 앞). 문제가 준비된 자격증은 이 값과 상관없이 항상 앞에 온다 |
 | `updatedAt` | 내용 최종 수정일 `YYYY-MM-DD` (sitemap) |
 | `examInfo` | `totalQuestions`, `timeLimitMinutes`, `format`, `choiceCount`(선지 수, 기본 4), `passCriteria { averageScore, subjectMinScore(과락 없으면 null), description }` |
-| `content` | `organizer`(시행기관), `eligibility`, `intro`, `trendSummary`, `studyTip`, `faqs[3~5]` |
+| `content` | `eligibility`, `intro`, `trendSummary`, `studyTip`, `faqs[3~5]` |
 | `sources[]` | 정보의 출처 `{ title, url? }` (공식 출제기준 등) |
 
 - "준비 중" 자격증은 `id`~`order` 까지만 있으면 된다.
@@ -155,7 +158,7 @@ public/data/                      빌드 때 자동으로 만든다 (git 에 올
   쉬운 말, 전문용어는 괄호로 풀이, 계산은 한 단계씩 + 검산, 오답 선지가 왜 틀렸는지 포함.
 - 시험 과목·문항 수는 개편으로 자주 바뀐다 (예: 건설안전기사 2026년부터 6과목 → 5과목). 새 자격증은 공식 출제기준으로 확인하고 `sources` 에 적는다.
 - 전기설비 과목은 최신 KEC(한국전기설비규정) 기준.
-- 컴퓨터활용능력은 시행기관이 대한상공회의소이고 등급은 "1급"/"2급".
+- 시행기관은 자격증마다 `issuer` 에 적는다 (코드·화면 문구에는 기관 이름을 적지 않는다).
 - 지게차운전기능사는 공식 과목이 하나라서, 4개 영역과 영역별 문항 수는 학습용 구분(어림값)이다.
 - 미국 자격증은 지금 목록만 있고 전부 "준비 중"이다 (영어 문제는 아직 없음).
 - 사이트 하단 고지: "실제 기출문제가 아니라 직접 만든 AI 예상문제이며 오류가 있을 수 있음"

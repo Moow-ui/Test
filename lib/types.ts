@@ -9,13 +9,13 @@ import type {
   faqSchema,
   questionSchema,
   subjectSchema,
+  CERT_TYPES,
   COUNTRIES,
-  GRADES,
   LEVELS,
   SOURCES,
 } from "./schemas";
 
-export type Grade = (typeof GRADES)[number];
+export type CertType = (typeof CERT_TYPES)[number];
 export type Country = (typeof COUNTRIES)[number];
 export type Level = (typeof LEVELS)[number];
 export type Source = (typeof SOURCES)[number];
@@ -45,8 +45,6 @@ export interface Certification extends CertSummary {
 
 /** 홈 목록·검색에 쓰는 요약 인덱스 한 줄 (빌드 때 data 폴더에서 자동으로 만든다) */
 export interface CertListItem extends CertSummary {
-  /** 시행기관 ("준비 중" 자격증은 null) */
-  organizer: string | null;
   /** 지금 출제되는 문제 수 */
   questionCount: number;
   ready: boolean;

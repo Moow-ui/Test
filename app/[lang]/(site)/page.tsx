@@ -4,7 +4,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { CertExplorer } from "@/components/home/CertExplorer";
 import { QuickStart } from "@/components/home/QuickStart";
 import { getCertList } from "@/lib/data";
-import { brandName, fmt, getMessages, isLocale, localeCountry, localePath } from "@/lib/i18n";
+import { brandName, getMessages, isLocale, localeCountry, localePath } from "@/lib/i18n";
 import { absoluteUrl } from "@/lib/site";
 
 // title·description·canonical·hreflang 은 app/[lang]/layout.tsx 의 것을 그대로 쓴다 (홈)
@@ -17,7 +17,6 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
   // 그 나라의 자격증만 보여 준다 (번역이 아니라 나라별 별도 콘텐츠)
   const certs = await getCertList(localeCountry(lang));
   const featured = certs.find((c) => c.ready);
-  const readyCount = certs.filter((c) => c.ready).length;
 
   return (
     <div className="space-y-8">
@@ -43,19 +42,11 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
 
       <CertExplorer certs={certs} />
 
-      <section aria-labelledby="about-title" className="cv card p-4 sm:p-5">
-        <h2 id="about-title" className="text-center text-lg font-extrabold">
-          {m.home.howTitle}
-        </h2>
-        <ol className="mt-2 list-decimal space-y-1 pl-6">
-          {m.home.steps.map((step) => (
-            <li key={step}>{step}</li>
-          ))}
-        </ol>
-        {readyCount > 0 && (
-          <p className="mt-3 text-[0.9rem] text-ink-sub">{fmt(m.home.readyCount, { n: readyCount })}</p>
-        )}
-      </section>
+      {/* 사용법은 한 문장으로만 (첫 화면은 짧게) */}
+      <p className="cv card p-4 text-center">
+        <strong className="mr-2">{m.home.howTitle}</strong>
+        {m.home.how}
+      </p>
 
       <AdSlot position="home-bottom" />
     </div>

@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Stars } from "@/components/Stars";
 import { StaticQuestion } from "@/components/StaticQuestion";
+import { IssuerNotice } from "@/components/cert/IssuerNotice";
 import { getCertificationIn, getQuestions } from "@/lib/data";
 import { fmt, getMessages, isLocale, localeCountry, localePath } from "@/lib/i18n";
 import { pickChapterRepresentatives } from "@/lib/representative";
@@ -175,6 +176,7 @@ export default async function ChapterPage({ params }: Props) {
         </p>
       </nav>
 
+      <IssuerNotice locale={lang} cert={cert} />
     </article>
   );
 }

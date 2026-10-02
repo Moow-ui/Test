@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { StaticQuestion } from "@/components/StaticQuestion";
+import { IssuerNotice } from "@/components/cert/IssuerNotice";
 import { getCertificationIn, getQuestions } from "@/lib/data";
 import { fmt, getMessages, isLocale, localeCountry, localePath } from "@/lib/i18n";
 import { pickCertRepresentatives } from "@/lib/representative";
@@ -152,6 +153,7 @@ export default async function PastPage({ params }: Props) {
         </div>
       </section>
 
+      <IssuerNotice locale={lang} cert={cert} />
     </article>
   );
 }

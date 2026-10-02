@@ -7,21 +7,28 @@ import { z } from "zod";
  * 폴더·파일 규칙은 docs/data-rules.md, lib/data/paths.ts 참고.
  */
 
-/** 한국 자격증의 등급 + 미국 자격증의 종류(Certification, License) */
-export const GRADES = [
-  "기능사",
-  "산업기사",
-  "기사",
-  "기능장",
-  "기술사",
-  "1급",
-  "2급",
-  "Certification",
-  "License",
+/**
+ * 자격 종류 (시행기관과 상관없이 모든 자격증이 하나를 가진다). 화면 이름은 messages 의 certTypes.
+ * 한국: 국가기술자격, 국가전문자격, 국가공인민간자격, 민간자격, 면허 / 미국: 주 면허, 연방 자격, 전문 자격증
+ * other 는 자격이 아닌 검정·시험 (한국사능력검정, 시민권 시험 등)
+ */
+export const CERT_TYPES = [
+  "national-technical",
+  "national-professional",
+  "accredited-private",
+  "private",
+  "license",
+  "state-license",
+  "federal-certification",
+  "professional-certification",
+  "other",
 ] as const;
-/** 등급별 칭호 모양 (프로필의 보유 자격증 배지. 색은 components/profile/OwnedCerts.tsx) */
+/**
+ * 등급별 칭호 모양 (프로필의 보유 자격증 배지. 색은 components/profile/OwnedCerts.tsx).
+ * 등급(grade)은 자유롭게 적는 값이고, 여기 없는 등급·등급이 없는 자격증은 기본 모양으로 보인다.
+ */
 export type GradeTier = "bronze" | "silver" | "gold" | "purple" | "mint" | "teal" | "crimson";
-export const GRADE_TIER: Record<(typeof GRADES)[number], GradeTier> = {
+export const GRADE_TIER: Record<string, GradeTier> = {
   기능사: "bronze",
   산업기사: "silver",
   기사: "gold",
@@ -29,8 +36,6 @@ export const GRADE_TIER: Record<(typeof GRADES)[number], GradeTier> = {
   기술사: "crimson",
   "2급": "mint",
   "1급": "teal",
-  Certification: "teal",
-  License: "gold",
 };
 /** 자격증의 나라. KR 은 /ko, US 는 /en 에만 노출한다 (lib/i18n.ts 의 localeCountry) */
 export const COUNTRIES = ["KR", "US"] as const;
@@ -115,10 +120,16 @@ export const faqSchema = z.object({
   answer: z.string().min(1),
 });
 
+/** 시행기관 (어느 기관이든 같은 모양. 화면의 시행기관 표기·"관계 없음" 고지가 모두 이 값을 쓴다) */
+export const issuerSchema = z.object({
+  /** 시행기관 이름 */
+  name: z.string().min(1),
+  /** 시행기관 공식 사이트 (기관이 여러 곳이라 하나로 정할 수 없으면 비운다) */
+  url: z.string().url().optional(),
+});
+
 /** 자격증 메인 페이지에 들어가는 자격증별 고유 본문 */
 export const certContentSchema = z.object({
-  /** 시행기관 */
-  organizer: z.string().min(1),
   /** 응시자격 */
   eligibility: z.string().min(1),
   /** 자격증 소개 (검색 키워드 변형이 자연스럽게 들어간 문단) */
@@ -143,8 +154,16 @@ export const certSummarySchema = z.object({
   /** 줄임말·검색어 변형 */
   shortNames: z.array(z.string().min(1)),
   relatedCertIds: z.array(slugSchema),
-  grade: z.enum(GRADES),
+  /** 등급 (기능사, 기사, 1급 등). 등급이 없는 자격증은 적지 않는다 (목록에는 자격 종류가 대신 보인다) */
+  grade: z.string().min(1).optional(),
+  /** 분야 (건설, 전기, IT, 사무, 조리, 운전, 의료 등). 홈의 분야 필터가 이 값으로 묶는다 */
   field: z.string().min(1),
+  /** 자격 종류 */
+  certType: z.enum(CERT_TYPES),
+  /** 시행기관 */
+  issuer: issuerSchema,
+  /** 시행기관의 상표 사용 규정에 따른 상표 고지 문장 (자격증 페이지 아래에 그대로 보여 준다) */
+  trademarkNotice: z.string().min(1).optional(),
 });
 
 /** 자격증 정보의 출처 (공식 출제기준 등) */
@@ -182,15 +201,39 @@ export const examSetSchema = z.object({
   questionIds: z.array(z.string().min(1)).min(1),
 });
 
-/** data/cert-queue.json — 앞으로 추가할 자격증 대기 목록 */
-export const certQueueSchema = z.array(
-  z.object({
-    slug: slugSchema,
-    country: z.enum(COUNTRIES),
-    name: z.string().min(1),
-    note: z.string().optional(),
-  }),
-);
+/** 기출문제 공개 여부: public 공개, partial 일부·과거분만 공개, none 비공개 */
+export const PAST_QUESTION_STATUSES = ["public", "partial", "none"] as const;
+
+/**
+ * data/cert-queue.json — 앞으로 추가할 자격증 대기 목록.
+ * 나라별로 응시자 수(없으면 검색량)가 많은 순서로 적는다 (배열 순서 = 추가 순서).
+ */
+export const certQueueSchema = z
+  .array(
+    z.object({
+      slug: slugSchema,
+      country: z.enum(COUNTRIES),
+      name: z.string().min(1),
+      /** 시행기관 이름 */
+      issuer: z.string().min(1),
+      certType: z.enum(CERT_TYPES),
+      field: z.string().min(1),
+      /** 기출문제 공개 여부 */
+      pastQuestions: z.enum(PAST_QUESTION_STATUSES),
+      /** 공개된 문제·자료의 이용 조건 메모 (저작권, 허락 필요 여부) */
+      usageNote: z.string().min(1),
+      note: z.string().optional(),
+    }),
+  )
+  .superRefine((queue, ctx) => {
+    const seen = new Set<string>();
+    queue.forEach((item, index) => {
+      if (seen.has(item.slug)) {
+        ctx.addIssue({ code: "custom", path: [index, "slug"], message: `대기 목록에 같은 slug 가 두 번 있습니다 (${item.slug})` });
+      }
+      seen.add(item.slug);
+    });
+  });
 
 /** meta.json + chapters.json 을 합친 모양 (문제가 준비된 자격증) */
 export const certDetailSchema = z.object({

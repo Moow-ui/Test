@@ -1,5 +1,5 @@
 import { getCertificationIn } from "@/lib/data";
-import { DEFAULT_LOCALE, brandName, fmt, getMessages, isLocale, localeCountry } from "@/lib/i18n";
+import { brandName, certKind, DEFAULT_LOCALE, fmt, getMessages, isLocale, localeCountry } from "@/lib/i18n";
 import { OG_CONTENT_TYPE, OG_SIZE, renderOgImage } from "@/lib/og";
 import { certParams } from "@/lib/static-params";
 
@@ -27,7 +27,7 @@ export default async function Image({ params }: { params: Promise<{ lang: string
   }
   return renderOgImage({
     ...common,
-    eyebrow: fmt(m.og.certEyebrow, { grade: cert.grade, field: cert.field }),
+    eyebrow: fmt(m.og.certEyebrow, { kind: certKind(m, cert), field: cert.field }),
     title: cert.name,
     subtitle:
       cert.ready && cert.examInfo

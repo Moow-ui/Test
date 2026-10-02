@@ -27,7 +27,7 @@ import { OwnedCertManager, TitleBadge } from "./OwnedCerts";
 export interface ProfileCert {
   id: string;
   name: string;
-  grade: string;
+  grade: string | null;
   ready: boolean;
 }
 
