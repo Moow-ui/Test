@@ -24,7 +24,8 @@ const LOCK_STEM_PATTERNS: Array<[RegExp, string]> = [
   ],
   [/모두 고[르른]|모두 나열|모두 묶|있는 대로/, "모두 고르기"],
   [/(것|설명|항목|보기)[은는이]?\s*(모두\s*)?몇\s*(개|가지)/, "개수 세기"],
-  [/\b(NOT|EXCEPT|LEAST|FALSE|INCORRECT)\b/, "부정형 (NOT / EXCEPT)"],
+  // 수식 속의 FALSE(예: VLOOKUP 의 인수)는 부정형이 아니므로 "is FALSE" 꼴만 본다
+  [/\b(NOT|EXCEPT|LEAST|INCORRECT)\b|\bis FALSE\b/, "부정형 (NOT / EXCEPT)"],
   [/select all|choose all|all that apply|how many of the (following|statements)/i, "모두 고르기"],
 ];
 
