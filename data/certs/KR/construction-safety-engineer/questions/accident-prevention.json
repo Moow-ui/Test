@@ -160,5 +160,143 @@
         3
       ]
     }
+  },
+  {
+    "id": "construction-safety-engineer-accident-prevention-0001",
+    "certId": "construction-safety-engineer",
+    "subjectId": "prevention",
+    "chapterId": "accident-prevention",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "하인리히의 재해 구성 비율(1 : 29 : 300)에서 '300'이 뜻하는 것은?",
+    "choices": [
+      "가벼운 부상(경상)",
+      "다치지 않은 무상해 사고",
+      "사망 또는 중상",
+      "물건만 부서진 사고"
+    ],
+    "answer": 2,
+    "oneLineConcept": "하인리히 1 : 29 : 300 = 중상 : 경상 : 무상해 사고",
+    "explanation": "하인리히는 사고 330건 가운데 **중상 1건, 경상 29건, 다치지 않은 사고 300건**이 일어난다고 보았습니다. 다치지 않은 사고(아차 사고)를 줄여야 큰 재해를 막을 수 있다는 뜻입니다.\n\n**틀린 선지**\n- ① 가벼운 부상(경상): 경상은 29 에 해당합니다.\n- ③ 사망 또는 중상: 사망이나 중상은 1 에 해당합니다.\n- ④ 물건만 부서진 사고: 물적 손실만 따로 구분하는 것은 버드의 이론입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "하인리히"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "construction-safety-engineer-accident-prevention-0002",
+    "certId": "construction-safety-engineer",
+    "subjectId": "prevention",
+    "chapterId": "accident-prevention",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "근로자 200명이 일하는 사업장에서 1년 동안 재해가 6건 발생했다. 도수율은? (1인당 연 근로 시간은 2,400시간)",
+    "choices": [
+      "25",
+      "30",
+      "1.25",
+      "12.5"
+    ],
+    "answer": 4,
+    "oneLineConcept": "도수율 = 재해 건수 ÷ 연 근로 시간 × 1,000,000",
+    "explanation": "1. 연 근로 시간: 200 × 2,400 = 480,000시간\n2. 공식: 도수율 = 재해 건수 ÷ 연 근로 시간 × 1,000,000\n3. 계산: 6 ÷ 480,000 × 1,000,000 = 12.5\n\n**틀린 선지**\n- ① 25: 근로 시간을 절반으로 잘못 계산한 값입니다.\n- ② 30: 근로자 1,000명당 재해자 수인 연천인율(6 ÷ 200 × 1,000)을 구한 값입니다.\n- ③ 1.25: 100만이 아니라 10만을 곱한 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "재해 통계",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "construction-safety-engineer-accident-prevention-0003",
+    "certId": "construction-safety-engineer",
+    "subjectId": "prevention",
+    "chapterId": "accident-prevention",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "연 근로 시간이 500,000시간인 사업장에서 1년 동안 근로 손실 일수가 250일 발생했다. 강도율은?",
+    "choices": [
+      "0.5",
+      "0.05",
+      "2",
+      "5"
+    ],
+    "answer": 1,
+    "oneLineConcept": "강도율 = 근로 손실 일수 ÷ 연 근로 시간 × 1,000",
+    "explanation": "1. 공식: 강도율 = 근로 손실 일수 ÷ 연 근로 시간 × 1,000\n2. 계산: 250 ÷ 500,000 × 1,000 = 0.5\n\n강도율은 근로 시간 1,000시간당 잃어버린 일수로, 재해가 얼마나 심했는지를 나타냅니다.\n\n**틀린 선지**\n- ② 0.05: 1,000 이 아니라 100 을 곱한 값입니다.\n- ③ 2: 근로 시간을 손실 일수로 나누어 거꾸로 계산한 값에서 나온 숫자입니다.\n- ④ 5: 1,000 이 아니라 10,000 을 곱한 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "재해 통계",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "construction-safety-engineer-accident-prevention-0004",
+    "certId": "construction-safety-engineer",
+    "subjectId": "prevention",
+    "chapterId": "accident-prevention",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "버드(Bird)의 재해 구성 비율로 옳은 것은? (중상 : 경상 : 무상해 사고 : 무상해·무사고 고장)",
+    "choices": [
+      "1 : 29 : 300",
+      "1 : 10 : 30 : 300",
+      "1 : 10 : 30 : 600",
+      "1 : 30 : 100 : 600"
+    ],
+    "answer": 3,
+    "oneLineConcept": "버드 1 : 10 : 30 : 600, 하인리히 1 : 29 : 300",
+    "explanation": "버드는 **중상 1 : 경상 10 : 물적 손실만 있는 사고 30 : 다치지도 부서지지도 않은 사고 600** 의 비율을 제시했습니다. 하인리히(1 : 29 : 300)와 숫자를 바꿔 묻는 문제가 자주 나옵니다.\n\n**틀린 선지**\n- ① 1 : 29 : 300: 하인리히의 재해 구성 비율입니다.\n- ② 1 : 10 : 30 : 300: 마지막 숫자가 600 이어야 합니다.\n- ④ 1 : 30 : 100 : 600: 가운데 두 숫자가 10 과 30 이어야 합니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "버드"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   }
 ]

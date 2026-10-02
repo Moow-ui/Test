@@ -80,5 +80,107 @@
       "산업안전보건관리비"
     ],
     "levelLock": true
+  },
+  {
+    "id": "construction-safety-engineer-safety-plan-0001",
+    "certId": "construction-safety-engineer",
+    "subjectId": "construction-safety",
+    "chapterId": "safety-plan",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "건설업의 사망 재해에서 가장 큰 비중을 차지하는 재해 발생 형태는?",
+    "choices": [
+      "끼임",
+      "감전",
+      "화재",
+      "떨어짐(추락)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "건설업 사망 재해 1위는 추락",
+    "explanation": "건설업 사망 재해의 절반 이상이 **떨어짐(추락)** 입니다. 그래서 작업 발판, 안전 난간, 추락 방호망, 안전대 같은 추락 방지 조치가 가장 중요합니다.\n\n**틀린 선지**\n- ① 끼임: 제조업에서 가장 많이 일어나는 형태입니다.\n- ② 감전: 건설 현장에서 일어나지만 추락보다 훨씬 적습니다.\n- ③ 화재: 건설업 사망 재해에서 차지하는 비중이 작습니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "건설 재해"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "construction-safety-engineer-safety-plan-0002",
+    "certId": "construction-safety-engineer",
+    "subjectId": "construction-safety",
+    "chapterId": "safety-plan",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "건설 공사에서 산업안전보건관리비를 계상해야 하는 공사의 규모는?",
+    "choices": [
+      "총 공사 금액 1억 원 이상",
+      "총 공사 금액 2천만 원 이상",
+      "총 공사 금액 50억 원 이상",
+      "총 공사 금액 20억 원 이상"
+    ],
+    "answer": 2,
+    "oneLineConcept": "산업안전보건관리비: 공사 금액 2천만 원 이상",
+    "explanation": "산업안전보건관리비는 안전 시설, 보호구, 안전 교육 등 재해 예방에만 쓰도록 공사비에 따로 잡아 두는 돈입니다. **총 공사 금액 2천만 원 이상**인 공사에 적용합니다.\n\n**틀린 선지**\n- ① 총 공사 금액 1억 원 이상: 기준보다 큰 금액입니다.\n- ③ 총 공사 금액 50억 원 이상: 기준보다 큰 금액입니다.\n- ④ 총 공사 금액 20억 원 이상: 안전보건 총괄 책임자를 지정해야 하는 규모입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "산업안전보건관리비"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "construction-safety-engineer-safety-plan-0003",
+    "certId": "construction-safety-engineer",
+    "subjectId": "construction-safety",
+    "chapterId": "safety-plan",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "유해위험방지계획서를 제출해야 하는 굴착 공사는 깊이 몇 m 이상인가?",
+    "choices": [
+      "5m 이상",
+      "20m 이상",
+      "10m 이상",
+      "31m 이상"
+    ],
+    "answer": 3,
+    "oneLineConcept": "계획서 대상: 굴착 깊이 10m, 건축물 높이 31m 이상",
+    "explanation": "유해위험방지계획서 제출 대상 가운데 숫자로 자주 묻는 것\n\n- 지상 높이 31m 이상인 건축물\n- 최대 지간 길이 50m 이상인 다리\n- **깊이 10m 이상인 굴착 공사**\n- 터널 공사\n\n**틀린 선지**\n- ① 5m 이상: 기준보다 얕은 깊이입니다.\n- ② 20m 이상: 기준보다 깊은 깊이입니다.\n- ④ 31m 이상: 계획서 제출 대상인 건축물의 지상 높이 기준입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "유해위험방지계획서"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   }
 ]

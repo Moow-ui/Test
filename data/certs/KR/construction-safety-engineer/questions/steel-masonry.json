@@ -67,5 +67,107 @@
         4
       ]
     }
+  },
+  {
+    "id": "construction-safety-engineer-steel-masonry-0001",
+    "certId": "construction-safety-engineer",
+    "subjectId": "construction-execution",
+    "chapterId": "steel-masonry",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "철골 공사의 고장력 볼트 접합이 힘을 전달하는 주된 원리는?",
+    "choices": [
+      "볼트를 강하게 조여 생기는 부재 사이의 마찰력",
+      "접착제가 굳으면서 생기는 부착력",
+      "볼트 몸통이 잘리지 않고 버티는 전단력",
+      "녹은 금속이 부재를 하나로 붙이는 융합"
+    ],
+    "answer": 1,
+    "oneLineConcept": "고장력 볼트: 강하게 조여 마찰력으로 전달",
+    "explanation": "고장력 볼트는 매우 큰 힘으로 조여 부재끼리 꽉 눌러 붙입니다. 이때 생기는 **마찰력**으로 힘을 전달하므로 접합부가 잘 풀리지 않고 소음도 적습니다.\n\n**틀린 선지**\n- ② 접착제가 굳으면서 생기는 부착력: 철골 접합에 쓰는 방식이 아닙니다.\n- ③ 볼트 몸통이 잘리지 않고 버티는 전단력: 일반 볼트의 지압 접합 방식입니다.\n- ④ 녹은 금속이 부재를 하나로 붙이는 융합: 용접 접합의 원리입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "철골 공사"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "construction-safety-engineer-steel-masonry-0002",
+    "certId": "construction-safety-engineer",
+    "subjectId": "construction-execution",
+    "chapterId": "steel-masonry",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "벽돌을 쌓을 때, 위에서 오는 하중이 고르게 퍼지도록 세로 줄눈이 위아래로 이어지지 않게 한 줄눈은?",
+    "choices": [
+      "치장 줄눈",
+      "신축 줄눈",
+      "통줄눈",
+      "막힌줄눈"
+    ],
+    "answer": 4,
+    "oneLineConcept": "벽돌 쌓기는 막힌줄눈이 원칙",
+    "explanation": "**막힌줄눈**으로 쌓으면 하중이 아래로 내려가면서 옆으로 퍼집니다. 통줄눈은 하중이 한 줄로 몰려 금이 가기 쉬우므로, 힘을 받는 벽에는 쓰지 않습니다.\n\n**틀린 선지**\n- ① 치장 줄눈: 벽돌 벽의 겉면을 보기 좋게 마무리하는 줄눈입니다.\n- ② 신축 줄눈: 온도 변화에 따른 늘어남과 줄어듦을 받아 주려고 일부러 띄운 줄눈입니다.\n- ③ 통줄눈: 세로 줄눈이 위아래로 죽 이어진 줄눈으로, 하중이 한곳으로 몰려 구조적으로 약합니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "조적 공사"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "construction-safety-engineer-steel-masonry-0003",
+    "certId": "construction-safety-engineer",
+    "subjectId": "construction-execution",
+    "chapterId": "steel-masonry",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "용접부 속에 초음파를 보내 되돌아오는 신호로 내부 결함을 찾는 비파괴 검사는?",
+    "choices": [
+      "방사선 투과 검사",
+      "초음파 탐상 검사",
+      "자분 탐상 검사",
+      "침투 탐상 검사"
+    ],
+    "answer": 2,
+    "oneLineConcept": "초음파 탐상: 초음파의 반사로 내부 결함 확인",
+    "explanation": "**초음파 탐상 검사**는 검사 속도가 빠르고 두꺼운 부재도 검사할 수 있어 철골 용접부 검사에 널리 씁니다. 표면 결함은 자분·침투 탐상으로 찾습니다.\n\n**틀린 선지**\n- ① 방사선 투과 검사: X 선이나 감마선을 쬐어 필름에 찍힌 모습으로 결함을 찾습니다.\n- ③ 자분 탐상 검사: 자석의 성질을 이용해 표면 가까이의 결함을 찾습니다.\n- ④ 침투 탐상 검사: 색깔 있는 액체를 스며들게 하여 표면의 갈라진 틈을 찾습니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "용접 검사"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   }
 ]

@@ -239,5 +239,211 @@
         4
       ]
     }
+  },
+  {
+    "id": "construction-safety-engineer-risk-assessment-0001",
+    "certId": "construction-safety-engineer",
+    "subjectId": "ergonomics",
+    "chapterId": "risk-assessment",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "시스템을 개발하는 맨 처음 단계에서, 시스템 안의 위험 요소가 어떤 상태에 있는지를 정성적으로 평가하는 분석 기법은?",
+    "choices": [
+      "FTA(결함수 분석)",
+      "PHA(예비 위험 분석)",
+      "OHA(운용 위험 분석)",
+      "FMEA(고장 형태와 영향 분석)"
+    ],
+    "answer": 2,
+    "oneLineConcept": "PHA: 개발 최초 단계의 정성적 위험 분석",
+    "explanation": "**PHA**(Preliminary Hazard Analysis)는 이름 그대로 가장 먼저 하는 위험 분석입니다. 설계에 들어가기 전, 어떤 위험이 있는지를 정성적으로 살핍니다.\n\n**틀린 선지**\n- ① FTA(결함수 분석): 사고에서 원인 쪽으로 거슬러 내려가며 분석하는 기법입니다.\n- ③ OHA(운용 위험 분석): 시스템을 운용하는 단계의 위험을 분석하는 기법입니다.\n- ④ FMEA(고장 형태와 영향 분석): 부품 하나하나의 고장이 시스템에 미치는 영향을 보는 기법입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "시스템 안전"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "construction-safety-engineer-risk-assessment-0002",
+    "certId": "construction-safety-engineer",
+    "subjectId": "ergonomics",
+    "chapterId": "risk-assessment",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "FT 도에서 원(○) 기호가 뜻하는 것은?",
+    "choices": [
+      "원인을 더 분석해야 하는 결함 사상",
+      "정보가 모자라 더 전개하지 않는 생략 사상",
+      "평소에도 일어나는 통상 사상",
+      "더 이상 전개할 수 없는 기본 사상"
+    ],
+    "answer": 4,
+    "oneLineConcept": "FT 도: 원은 기본 사상, 직사각형은 결함 사상",
+    "explanation": "FT 도의 기호\n\n- **원**: 기본 사상 (더 쪼갤 수 없는 맨 아래의 원인)\n- 직사각형: 결함 사상\n- 마름모: 생략 사상\n- 집 모양: 통상 사상\n\n**틀린 선지**\n- ① 원인을 더 분석해야 하는 결함 사상: 결함 사상은 직사각형으로 나타냅니다.\n- ② 생략 사상은 마름모로 나타냅니다.\n- ③ 평소에도 일어나는 통상 사상: 통상 사상은 집 모양으로 나타냅니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "FTA"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "construction-safety-engineer-risk-assessment-0003",
+    "certId": "construction-safety-engineer",
+    "subjectId": "ergonomics",
+    "chapterId": "risk-assessment",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "신뢰도가 0.9 인 부품과 0.8 인 부품을 직렬로 연결한 시스템의 신뢰도는?",
+    "choices": [
+      "1.7",
+      "0.72",
+      "0.98",
+      "0.85"
+    ],
+    "answer": 2,
+    "oneLineConcept": "직렬 신뢰도 = 각 신뢰도의 곱",
+    "explanation": "1. 직렬은 하나만 고장 나도 전체가 멈춥니다. 그래서 신뢰도를 서로 곱합니다.\n2. 계산: 0.9 × 0.8 = 0.72\n\n**틀린 선지**\n- ① 1.7: 두 값을 더한 값입니다. 신뢰도는 1 을 넘을 수 없습니다.\n- ③ 0.98: 병렬로 연결했을 때의 값입니다. 1 − (0.1 × 0.2) = 0.98\n- ④ 0.85: 두 값의 평균입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "신뢰도",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "construction-safety-engineer-risk-assessment-0004",
+    "certId": "construction-safety-engineer",
+    "subjectId": "ergonomics",
+    "chapterId": "risk-assessment",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "고장률이 시간당 0.002 로 일정한 설비의 평균 고장 간격(MTBF)은 몇 시간인가?",
+    "choices": [
+      "50시간",
+      "2,000시간",
+      "200시간",
+      "500시간"
+    ],
+    "answer": 4,
+    "oneLineConcept": "MTBF = 1 ÷ 고장률",
+    "explanation": "1. 공식: MTBF = 1 ÷ 고장률(λ)\n2. 계산: 1 ÷ 0.002 = 500\n3. 답: 500시간\n\n**틀린 선지**\n- ① 50시간: 1 ÷ 0.02 를 계산한 값입니다.\n- ② 2,000시간: 고장률의 숫자만 보고 1,000 을 곱한 값입니다.\n- ③ 200시간: 1 ÷ 0.005 를 계산한 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "신뢰도",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "construction-safety-engineer-risk-assessment-0005",
+    "certId": "construction-safety-engineer",
+    "subjectId": "ergonomics",
+    "chapterId": "risk-assessment",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "위험성 평가에서 위험성의 크기를 추정하는 기본적인 방법은?",
+    "choices": [
+      "사고가 일어날 가능성(빈도)과 일어났을 때의 중대성(강도)을 조합한다",
+      "사고가 일어날 가능성과 대책에 드는 비용을 조합한다",
+      "작업자의 나이와 경력을 조합한다",
+      "작업 시간과 생산량을 조합한다"
+    ],
+    "answer": 1,
+    "oneLineConcept": "위험성 = 가능성(빈도) × 중대성(강도)",
+    "explanation": "위험성은 **얼마나 자주 일어날 수 있는가(가능성)** 와 **일어나면 얼마나 크게 다치는가(중대성)** 를 곱하거나 더하는 방식으로 추정합니다.\n\n**틀린 선지**\n- ② 비용은 위험성의 크기를 정하는 요소가 아닙니다.\n- ③ 작업자의 나이와 경력을 조합한다: 위험성은 가능성과 중대성으로 추정합니다.\n- ④ 작업 시간과 생산량을 조합한다: 생산량은 위험성의 크기와 관계가 없습니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "위험성 평가"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "construction-safety-engineer-risk-assessment-0006",
+    "certId": "construction-safety-engineer",
+    "subjectId": "ergonomics",
+    "chapterId": "risk-assessment",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "FTA 에서 최소 패스셋(Minimal Path Set)에 대한 설명으로 옳은 것은?",
+    "choices": [
+      "시스템의 위험성(고장 나는 길)을 나타낸다",
+      "그 안의 기본 사상이 모두 일어나면 정상 사상이 일어나는 최소한의 묶음이다",
+      "그 안의 기본 사상이 모두 일어나지 않으면 정상 사상이 일어나지 않는 최소한의 묶음으로, 시스템의 신뢰성을 나타낸다",
+      "최소 패스셋의 수가 많을수록 시스템은 위험하다"
+    ],
+    "answer": 3,
+    "oneLineConcept": "컷셋은 위험성, 패스셋은 신뢰성",
+    "explanation": "**컷셋**은 사고가 나는 조합(위험성), **패스셋**은 사고가 나지 않는 조합(신뢰성)입니다. 최소 패스셋 안의 사상이 모두 일어나지 않으면 정상 사상(사고)도 일어나지 않습니다.\n\n**틀린 선지**\n- ① 위험성을 나타내는 것은 컷셋입니다.\n- ② 이것은 최소 컷셋에 대한 설명입니다.\n- ④ 패스셋은 사고를 막는 길이므로 많을수록 안전합니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "FTA"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
   }
 ]
