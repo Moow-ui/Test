@@ -23,8 +23,8 @@ export function absoluteUrl(pathname: string): string {
  * Cloudflare 에서는 Worker → Settings → Build → Variables and secrets 에 넣고 다시 배포해야 반영된다.
  */
 
-/** 문의 이메일 (CONTACT_EMAIL). 없으면 안내 페이지에 "준비 중"으로 나온다. 서버 컴포넌트에서만 쓴다 */
-export const CONTACT_EMAIL = (process.env.CONTACT_EMAIL ?? "").trim() || null;
+/** 문의 이메일. 안내 페이지에 공개되는 값이라 코드에 적어 둔다. 환경변수 CONTACT_EMAIL 이 있으면 그 값이 우선한다 */
+export const CONTACT_EMAIL: string | null = (process.env.CONTACT_EMAIL ?? "").trim() || "exampasso123@gmail.com";
 
 /**
  * 검색엔진 소유확인 값 (HTML 태그 방식의 content="..." 값).
