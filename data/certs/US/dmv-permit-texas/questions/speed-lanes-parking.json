@@ -1,0 +1,576 @@
+[
+  {
+    "id": "dmv-permit-texas-speed-lanes-parking-0001",
+    "certId": "dmv-permit-texas",
+    "subjectId": "knowledge-test",
+    "chapterId": "speed-lanes-parking",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "No speed limit sign is posted. What is the Texas speed limit on a city street (urban district) that is not an alley?",
+    "choices": [
+      "30 mph",
+      "25 mph",
+      "40 mph",
+      "35 mph"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Unposted city street (urban district) = 30 mph",
+    "explanation": "When no other limit is posted, Texas law sets the speed limit at **30 mph** on a street in an **urban district** (other than an alley).\n\n**Wrong choices**\n- 25 mph: 25 mph is used in some states, but the Texas unposted city limit is 30 mph.\n- 35 mph: 35 mph is higher than the 30 mph Texas limit.\n- 40 mph: 40 mph is far above the unposted limit for city streets.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-03",
+    "tags": [
+      "speed",
+      "urban district"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-texas-speed-lanes-parking-0002",
+    "certId": "dmv-permit-texas",
+    "subjectId": "knowledge-test",
+    "chapterId": "speed-lanes-parking",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What is the Texas speed limit in an alley in a city or town, unless signs say otherwise?",
+    "choices": [
+      "25 mph",
+      "15 mph",
+      "20 mph",
+      "10 mph"
+    ],
+    "answer": 2,
+    "oneLineConcept": "City alley speed limit = 15 mph",
+    "explanation": "Texas law sets the speed limit in an **alley** in an urban district at **15 mph** unless a different limit is posted.\n\n**Wrong choices**\n- 10 mph: 10 mph is lower than the Texas alley limit.\n- 20 mph: 20 mph is higher than the Texas alley limit.\n- 25 mph: 25 mph is much too fast for a narrow alley and is not the legal limit.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-03",
+    "tags": [
+      "speed",
+      "alley"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-texas-speed-lanes-parking-0003",
+    "certId": "dmv-permit-texas",
+    "subjectId": "knowledge-test",
+    "chapterId": "speed-lanes-parking",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "If no other limit is posted, what is the speed limit on a U.S. or state numbered highway outside an urban district in Texas?",
+    "choices": [
+      "70 mph",
+      "65 mph",
+      "60 mph",
+      "75 mph"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Unposted numbered highway outside town = 70 mph",
+    "explanation": "Texas law sets **70 mph** as the speed limit on a **U.S. or state numbered highway** (including farm-to-market and ranch-to-market roads) **outside an urban district**, unless another limit is posted.\n\n**Wrong choices**\n- 65 mph: 65 mph is lower than the Texas default for numbered highways.\n- 60 mph: 60 mph is the default for roads outside town that are NOT numbered highways.\n- 75 mph: 75 mph and higher limits apply only where they are posted.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-03",
+    "tags": [
+      "speed",
+      "highway"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-texas-speed-lanes-parking-0004",
+    "certId": "dmv-permit-texas",
+    "subjectId": "knowledge-test",
+    "chapterId": "speed-lanes-parking",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "You are on a county road outside any town. It is NOT a U.S. or state numbered highway, and no limit is posted. What is the speed limit?",
+    "choices": [
+      "70 mph",
+      "60 mph",
+      "55 mph",
+      "50 mph"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Unposted road outside town, not numbered highway = 60 mph",
+    "explanation": "For a road **outside an urban district** that is **not a U.S. or state numbered highway**, Texas law sets the unposted speed limit at **60 mph**.\n\n**Wrong choices**\n- 70 mph: 70 mph is the default for U.S. and state numbered highways, not other rural roads.\n- 55 mph: 55 mph is not the Texas default for this kind of road.\n- 50 mph: 50 mph is lower than the Texas default for this kind of road.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-03",
+    "tags": [
+      "speed",
+      "rural road"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-texas-speed-lanes-parking-0005",
+    "certId": "dmv-permit-texas",
+    "subjectId": "knowledge-test",
+    "chapterId": "speed-lanes-parking",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Texas allows driving on some public beaches. If no other limit is posted, what is the speed limit on a beach?",
+    "choices": [
+      "25 mph",
+      "30 mph",
+      "10 mph",
+      "15 mph"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Beach speed limit in Texas = 15 mph",
+    "explanation": "Texas law sets the speed limit on a **beach** at **15 mph** unless a different limit is posted. People, children, and pets may be near the water and in your path.\n\n**Wrong choices**\n- 25 mph: 25 mph is higher than the beach limit.\n- 10 mph: 10 mph is lower than the beach limit set by law.\n- 30 mph: 30 mph is the city street limit, not the beach limit.",
+    "frequency": 2,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-03",
+    "tags": [
+      "speed",
+      "beach"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-texas-speed-lanes-parking-0006",
+    "certId": "dmv-permit-texas",
+    "subjectId": "knowledge-test",
+    "chapterId": "speed-lanes-parking",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "The posted limit is 60 mph, but there is heavy rain and fog. How fast may you legally drive?",
+    "choices": [
+      "Any speed, as long as your headlights are on",
+      "10 mph over the limit if traffic is moving faster",
+      "60 mph, because that is the posted speed limit",
+      "No faster than is safe for the conditions, even below 60"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Basic speed rule: drive at a safe speed for conditions",
+    "explanation": "Texas has a **basic speed rule**: you may not drive faster than is **reasonable and prudent** for the conditions. In rain, fog, or heavy traffic, the safe speed may be **well below the posted limit**.\n\n**Wrong choices**\n- 60 mph, because that is the posted speed limit: The posted limit is the top speed in good conditions, not a safe speed in rain and fog.\n- Any speed, as long as your headlights are on: Using headlights does not make an unsafe speed legal.\n- 10 mph over the limit if traffic is moving faster: Driving over the limit is never allowed, even if others are speeding.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-03",
+    "tags": [
+      "speed",
+      "basic speed rule"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-texas-speed-lanes-parking-0007",
+    "certId": "dmv-permit-texas",
+    "subjectId": "knowledge-test",
+    "chapterId": "speed-lanes-parking",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "In Texas, how close to a fire hydrant may you park?",
+    "choices": [
+      "No closer than 5 feet",
+      "No closer than 15 feet",
+      "No closer than 10 feet",
+      "No closer than 20 feet"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Do not park within 15 feet of a fire hydrant",
+    "explanation": "Texas law says you may not **stand or park** within **15 feet of a fire hydrant**, except for a moment to pick up or drop off a passenger. Firefighters need room to reach it.\n\n**Wrong choices**\n- No closer than 10 feet: 10 feet is too close; the law requires 15 feet.\n- No closer than 20 feet: 20 feet is the distance from a crosswalk at an intersection, not from a hydrant.\n- No closer than 5 feet: 5 feet would block the hydrant.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-03",
+    "tags": [
+      "parking",
+      "fire hydrant"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-texas-speed-lanes-parking-0008",
+    "certId": "dmv-permit-texas",
+    "subjectId": "knowledge-test",
+    "chapterId": "speed-lanes-parking",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "How close to a crosswalk at an intersection may you park in Texas?",
+    "choices": [
+      "No closer than 15 feet",
+      "No closer than 10 feet",
+      "No closer than 20 feet",
+      "No closer than 30 feet"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Do not park within 20 feet of a crosswalk at an intersection",
+    "explanation": "You may not **stand or park** within **20 feet of a crosswalk at an intersection**. Parked cars there would hide pedestrians from drivers.\n\n**Wrong choices**\n- No closer than 15 feet: 15 feet is the distance from a fire hydrant.\n- No closer than 30 feet: 30 feet is the distance before a stop sign, yield sign, or traffic signal.\n- No closer than 10 feet: 10 feet is closer than the law allows.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-03",
+    "tags": [
+      "parking",
+      "crosswalk"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-texas-speed-lanes-parking-0009",
+    "certId": "dmv-permit-texas",
+    "subjectId": "knowledge-test",
+    "chapterId": "speed-lanes-parking",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "On the approach to a STOP sign at the side of the road, how close to the sign may you park?",
+    "choices": [
+      "No closer than 50 feet",
+      "No closer than 20 feet",
+      "No closer than 15 feet",
+      "No closer than 30 feet"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Do not park within 30 feet before a stop sign or signal",
+    "explanation": "Texas law says you may not **stand or park** within **30 feet** on the approach to a **stop sign, yield sign, flashing signal, or traffic signal** at the side of the road. A parked car could hide the sign from other drivers.\n\n**Wrong choices**\n- No closer than 20 feet: 20 feet is the rule for a crosswalk at an intersection.\n- No closer than 50 feet: 50 feet is the rule for a railroad crossing.\n- No closer than 15 feet: 15 feet is the rule for a fire hydrant.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-03",
+    "tags": [
+      "parking",
+      "stop sign"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-texas-speed-lanes-parking-0010",
+    "certId": "dmv-permit-texas",
+    "subjectId": "knowledge-test",
+    "chapterId": "speed-lanes-parking",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "How close to the nearest rail of a railroad crossing may you park?",
+    "choices": [
+      "No closer than 50 feet",
+      "No closer than 30 feet",
+      "No closer than 100 feet",
+      "No closer than 15 feet"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Do not park within 50 feet of a railroad crossing",
+    "explanation": "Texas law says you may not **park within 50 feet of the nearest rail** of a railroad crossing. You also may never stop, stand, or park **on** the tracks.\n\n**Wrong choices**\n- No closer than 30 feet: 30 feet is the rule for the approach to a stop sign or traffic signal.\n- No closer than 15 feet: 15 feet is the rule for a fire hydrant.\n- No closer than 100 feet: 100 feet is more than the law requires for parking.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-03",
+    "tags": [
+      "parking",
+      "railroad"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-texas-speed-lanes-parking-0011",
+    "certId": "dmv-permit-texas",
+    "subjectId": "knowledge-test",
+    "chapterId": "speed-lanes-parking",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "You parallel park on a two-way street with a curb. How far from the curb may your right wheels be?",
+    "choices": [
+      "Within 24 inches",
+      "Within 12 inches",
+      "Within 36 inches",
+      "Within 18 inches"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Parallel parking: right wheels within 18 inches of the curb",
+    "explanation": "On a two-way road, Texas law says to park **parallel** to the curb with your **right-hand wheels within 18 inches** of the curb or edge of the road.\n\n**Wrong choices**\n- Within 24 inches: 24 inches is farther from the curb than allowed.\n- Within 12 inches: 12 inches is fine in practice, but the legal limit is 18 inches.\n- Within 36 inches: 36 inches would leave your car sticking out into traffic.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-03",
+    "tags": [
+      "parking",
+      "curb"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-texas-speed-lanes-parking-0012",
+    "certId": "dmv-permit-texas",
+    "subjectId": "knowledge-test",
+    "chapterId": "speed-lanes-parking",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "You want to check your following distance. The car ahead passes a road sign. What should you do?",
+    "choices": [
+      "Count the car lengths between you and the car ahead",
+      "Count the seconds until your car reaches the same sign",
+      "Check how fast the car ahead is pulling away",
+      "Look at your speedometer and divide by ten"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Following distance: count seconds to a fixed point",
+    "explanation": "Use the **seconds rule**: when the car ahead passes a **fixed point** such as a sign, count \"one-thousand-one, one-thousand-two...\" until you reach it. If you get there **before your count is done**, you are too close. **Add more time** in rain, at night, or behind large trucks.\n\n**Wrong choices**\n- Count the car lengths between you and the car ahead: Guessing car lengths is hard to do correctly at speed. Counting seconds works at any speed.\n- Look at your speedometer and divide by ten: Dividing your speed by ten is not how following distance is measured.\n- Check how fast the car ahead is pulling away: Watching the other car pull away does not tell you whether your gap is safe.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-03",
+    "tags": [
+      "following distance"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-texas-speed-lanes-parking-0013",
+    "certId": "dmv-permit-texas",
+    "subjectId": "knowledge-test",
+    "chapterId": "speed-lanes-parking",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "You are passing a slower car on a two-lane road. When may you move back into the right lane?",
+    "choices": [
+      "Right after you turn on your right signal",
+      "As soon as your front bumper is past its front bumper",
+      "When the other driver flashes the headlights at you",
+      "When you are safely clear of the car you passed"
+    ],
+    "answer": 4,
+    "oneLineConcept": "After passing, return only when safely clear of that car",
+    "explanation": "Texas law says you pass **on the left** at a safe distance and may **not move back to the right** until you are **safely clear** of the car you passed. A good check is to see the whole car in your inside rearview mirror.\n\n**Wrong choices**\n- As soon as your front bumper is past its front bumper: Being just past the other car's bumper is too close; you could cut it off.\n- Right after you turn on your right signal: Turning on a signal does not make the move safe.\n- When the other driver flashes the headlights at you: Another driver's flashing lights are not a legal signal that it is safe.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-03",
+    "tags": [
+      "passing"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-texas-speed-lanes-parking-0014",
+    "certId": "dmv-permit-texas",
+    "subjectId": "knowledge-test",
+    "chapterId": "speed-lanes-parking",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "In a city or town, how close to an intersection or railroad crossing may you be when you drive on the left side of the road to pass?",
+    "choices": [
+      "You may not pass within 500 feet of them",
+      "You may not pass within 100 feet of them",
+      "You may pass at any distance if no cars are coming",
+      "You may not pass within 50 feet of them"
+    ],
+    "answer": 2,
+    "oneLineConcept": "No passing on the left within 100 feet of an intersection or RR",
+    "explanation": "Texas law forbids driving on the **left side of the road** to pass when you are **within 100 feet of an intersection or railroad crossing** in a city or town (Transportation Code §545.056; and outside town where signs or markings show one).\n\n**Wrong choices**\n- You may not pass within 50 feet of them: 50 feet is shorter than the 100 feet set in the law.\n- You may not pass within 500 feet of them: 500 feet is the visibility distance in the U-turn rule, not this passing rule.\n- You may pass at any distance if no cars are coming: The rule applies even when no cars seem to be coming; a car could turn out of the side road.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-03",
+    "tags": [
+      "passing",
+      "intersection"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-texas-speed-lanes-parking-0015",
+    "certId": "dmv-permit-texas",
+    "subjectId": "knowledge-test",
+    "chapterId": "speed-lanes-parking",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "When may you drive on a paved (improved) shoulder on a Texas highway?",
+    "choices": [
+      "Any time the shoulder is wide and empty",
+      "To pass a car that is driving at the limit",
+      "To get around a long line of slow traffic",
+      "To pass a car that is stopped to make a left turn"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Shoulder use is allowed only for specific, necessary reasons",
+    "explanation": "Texas law lets you drive on an **improved shoulder** only when it is **necessary and safe** and only for listed reasons, such as **passing a vehicle that is slowing or stopped to turn left**, slowing to make a right turn, speeding up to enter traffic, letting a faster car pass, or avoiding a crash.\n\n**Wrong choices**\n- To get around a long line of slow traffic: Using the shoulder to skip ahead of slow traffic is not one of the allowed reasons.\n- Any time the shoulder is wide and empty: A wide, empty shoulder still may not be used as a travel lane.\n- To pass a car that is driving at the limit: Passing a car that is moving at the limit is not an allowed reason.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-03",
+    "tags": [
+      "lane use",
+      "shoulder"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-texas-speed-lanes-parking-0016",
+    "certId": "dmv-permit-texas",
+    "subjectId": "knowledge-test",
+    "chapterId": "speed-lanes-parking",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "You are parking on the LEFT side of a one-way street that has a curb. How must you park?",
+    "choices": [
+      "Facing the flow of traffic, left wheels within 18 inches of the curb",
+      "Facing against traffic, right wheels within 18 inches of the curb",
+      "Facing the flow of traffic, left wheels within 36 inches of the curb",
+      "Angled to the curb, with your front left wheel touching it"
+    ],
+    "answer": 1,
+    "oneLineConcept": "One-way street: may park on left, left wheels within 18 inches",
+    "explanation": "On a **one-way** road, you park **parallel to the curb** and **facing the direction traffic moves**. On the right side, right wheels are within **18 inches**; on the left side, **left wheels** are within **18 inches** of the curb.\n\n**Wrong choices**\n- Facing against traffic, right wheels within 18 inches of the curb: You may not park facing against the direction of traffic.\n- Facing the flow of traffic, left wheels within 36 inches of the curb: 36 inches is too far from the curb; the limit is 18 inches.\n- Angled to the curb, with your front left wheel touching it: Angle parking is allowed only where it is marked, and wheels should not rub the curb.",
+    "frequency": 2,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-03",
+    "tags": [
+      "parking",
+      "one-way"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+]
