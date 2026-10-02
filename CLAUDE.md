@@ -80,6 +80,13 @@ scripts/                   validate-data, build-data, import-questions, convert-
 - **자격증 1개 추가 = 커밋 1개**, 메시지는 `cert: add {slug}`. 문제가 생기면 그 커밋만 되돌린다.
 - 개발 서버가 켜져 있으면 배포용 빌드(`opennextjs-cloudflare build`)가 실패한다. 끄고 실행한다.
 
+## 매일 자격증 추가 루틴 (2026-10-02 ~ 2026-10-29)
+
+- 매일 한국시간 새벽 3시에 클라우드 루틴이 한국 1개 + 미국 1개를 추가한다. 28회 실행 후 종료.
+- **종료일 = 애드센스 신청일 = 2026-10-29.** 목표는 누적 50개 이상.
+- 절차는 [docs/daily-routine.md](docs/daily-routine.md), 진행 기록은 [reports/routine-progress.md](reports/routine-progress.md).
+- 문제는 작성과 분리된 검증(다시 풀기·재계산·최신 기준 확인)을 통과한 것만 게시한다. 확신이 없는 문제는 `data/review-queue/` 에 보관.
+
 ## 명령어
 
 ```
@@ -90,6 +97,7 @@ npm run validate       /data 전체 검사 (스키마, id 중복·형식, 정답
 npm run build:data     data/ → public/data/ 정적 문제 파일 만들기
 npm run questions:add  문제 넣기·고치기 (CSV/JSON → 검증 → 단원별 파일, id 자동)
 npm run choices:convert  값이 없는 문제에 choicesByLevel·levelLock 채우기 (난이도별 선지 수)
+npm run check:cert -- {slug}  자격증 게시 기준 검사 (초급·중급·고급 각 30문제 이상, 실전 1회분 이상)
 npm run check:meta     빌드 결과의 title·description 중복, noindex, sitemap, hreflang 검사
 npx wrangler deploy --dry-run   Cloudflare 배포 묶음 확인 (실제 배포는 push 하면 자동)
 ```

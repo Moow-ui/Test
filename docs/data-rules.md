@@ -15,7 +15,7 @@ data/
     exams/{year}-{round}.json     실전 모의고사 구성 (문제 id 목록)
     assets/                       문제 그림 (회로도 등)
   cert-queue.json                 앞으로 추가할 자격증 대기 목록 (나라별 응시자 수 순. 시행기관·기출 공개 여부·이용 조건 메모)
-  review-queue/                   검수 대기 목록
+  review-queue/{slug}.json        검증에서 확신이 없어 게시하지 않은 문제 (문제 전체 + reviewNote 사유, id 없음)
   legacy-question-ids.json        새 id 규칙 이전에 만든 문제 id (고치지 않는다)
 reports/{YYYY-MM}/                작업 리포트. 월별 폴더에 쌓는다
 public/data/                      빌드 때 자동으로 만든다 (git 에 올리지 않는다)
@@ -79,7 +79,7 @@ public/data/                      빌드 때 자동으로 만든다 (git 에 올
 | `oneLineConcept` | 핵심 개념 한 줄 (40자 내외, 최대 70자) |
 | `explanation` | 해설 (마크다운) |
 | `frequency` | 출제 빈도 1~5 |
-| `reviewStatus` | `"unverified"` (사람이 검수하면 `"verified"`) |
+| `reviewStatus` | `"unverified"` = 사람 검수 전 (사람이 검수하면 `"verified"`). 게시되는 문제는 모두 [add-cert.md](add-cert.md) 의 "문제 검증"을 통과한 것이다 |
 | `tags[]` | 태그 |
 | `image` | (선택) `assets/` 안의 그림 파일 이름 |
 | `version` | (선택, 기본 1) 문제를 고칠 때마다 1씩 올린다 |

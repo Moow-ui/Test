@@ -17,33 +17,53 @@
 4. **문제**: `questions/{chapterId}.json`
    - 직접 쓰거나, CSV/JSON 으로 만들어 아래 B 의 명령으로 넣는다 (id 가 자동으로 붙는다).
    - 모든 단원에 문제가 1개 이상, 과목마다 초급·중급·고급이 모두 있어야 한다.
-   - 전체 범위에서 초급 10문제, 중급·고급 20문제 이상 풀 수 있어야 한다 ("옳지 않은 것은?" 같은 levelLock 문제는 초급·중급에서 빠진다).
+   - **초급·중급·고급에서 각각 30문제 이상** 풀 수 있어야 한다 (같은 문제가 `choicesByLevel` 로 여러 난이도에 쓰여도 된다. "옳지 않은 것은?" 같은 levelLock 문제는 초급·중급에서 빠진다).
    - 실전 문제풀이 는 과목마다 문제가 실제 문항 수(`questionCount`) 이상 있어야 열린다. 모자라면 "문제 준비 중"으로 나온다.
    - 문제마다 `choicesByLevel`(초급·중급에 남길 선지) 또는 `levelLock` 이 있어야 한다 ([data-rules.md](data-rules.md) 의 "난이도별 선지 수").
-5. **검사**
+5. **문제 검증 (작성과 분리된 단계, 필수)**: 문제를 다 쓴 뒤, 넣기 전에 한 문제도 빠짐없이 다시 확인한다.
+   - **다시 풀기**: 정답·해설을 가린 채(문제와 선지만 보고) 처음부터 풀어, 적어 둔 정답과 같은지 본다. 작성한 쪽과 다른 눈으로 본다 (자동 실행에서는 정답을 뺀 파일만 받은 별도 에이전트가 푼다).
+   - **재계산**: 계산 문제는 해설을 보지 않고 처음부터 다시 계산한다.
+   - **최신 기준**: 법규·기준·수치(벌칙, 기한, 규격 등)는 공식 자료(법령·출제기준·시행기관 공지)로 지금도 맞는지 확인한다.
+   - 정답이 둘 이상이거나 없는 문제, 선지를 줄였을 때(`choicesByLevel`) 답이 달라지는 문제도 여기서 걸러 낸다.
+   - **불일치는 고친 뒤 다시 검증한다.** 고쳐도 확신이 없으면 게시하지 않고 `data/review-queue/{slug}.json` 에 보관한다
+     (문제 전체 + `reviewNote` 에 사유. id 는 붙이지 않는다). **검증을 통과한 문제만 `questions/` 에 넣는다.**
+   - 검증 결과(작성 수·통과 수·수정 수·탈락 수)는 `reports/{YYYY-MM}/verify-{slug}.md` 에 남긴다.
+   - `reviewStatus: "unverified"` 는 "사람 검수 전"이라는 뜻이다. 이 검증을 통과해도 `unverified` 로 둔다 (사람이 검수하면 `verified`).
+6. **검사**
 
 ```bash
 npm run validate
 ```
 
 ```bash
+npm run check:cert -- {slug}
+```
+
+```bash
 npm test
 ```
 
-6. **빌드해서 화면 확인** (목록·검색·sitemap·자격증 화면이 자동으로 생긴다)
+7. **빌드해서 화면 확인** (목록·검색·sitemap·자격증 화면이 자동으로 생긴다)
 
 ```bash
 npm run build
 ```
 
-7. **커밋 1개로 올린다.** 메시지는 `cert: add {slug}`. 문제가 생기면 이 커밋만 되돌리면 된다.
+```bash
+npm run check:meta
+```
+
+8. **커밋 1개로 올린다.** 메시지는 `cert: add {slug}`. 문제가 생기면 이 커밋만 되돌리면 된다.
+   위 검사 중 하나라도 실패하면 올리지 않는다. push 한 뒤 배포된 주소가 열리는지 확인한다.
 
 ```bash
-git add data/certs && git commit -m "cert: add {slug}"
+git add data/certs data/cert-queue.json data/review-queue reports && git commit -m "cert: add {slug}"
 ```
 
 `data/cert-queue.json` 에 있던 자격증이면 같은 커밋에서 대기 목록에서 뺀다 (문제가 있는데 대기 목록에 남아 있으면 `npm run validate` 가 막는다).
 대기 목록은 나라별로 응시자 수(없으면 검색량)가 많은 순서이고, 항목마다 시행기관·기출 공개 여부(`pastQuestions`)·공개 문제의 이용 조건(`usageNote`)이 적혀 있다. 순서와 메모는 어림값이므로 추가하기 전에 시행기관 공지로 다시 확인한다.
+
+매일 자동으로 추가하는 루틴의 절차는 [daily-routine.md](daily-routine.md).
 
 ## B. 문제 넣기·고치기
 
