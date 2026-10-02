@@ -161,5 +161,211 @@
         4
       ]
     }
+  },
+  {
+    "id": "industrial-safety-engineer-human-factors-0001",
+    "certId": "industrial-safety-engineer",
+    "subjectId": "ergonomics",
+    "chapterId": "human-factors",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "밝은 곳에 있다가 어두운 곳으로 들어갔을 때, 눈이 차츰 어둠에 적응해 가는 현상은?",
+    "choices": [
+      "암순응",
+      "명순응",
+      "잔상",
+      "현휘(눈부심)"
+    ],
+    "answer": 1,
+    "oneLineConcept": "암순응: 어둠에 적응 (완전히 적응하는 데 30~40분)",
+    "explanation": "**암순응**은 완전히 이루어지는 데 30~40분이 걸리고, 반대인 명순응은 1~2분이면 됩니다.\n\n**틀린 선지**\n- ② 명순응: 어두운 곳에서 밝은 곳으로 나왔을 때 눈이 적응하는 현상입니다.\n- ③ 잔상: 빛의 자극이 사라진 뒤에도 잠깐 그 모습이 남아 보이는 현상입니다.\n- ④ 현휘(눈부심): 지나치게 밝은 빛 때문에 잘 보이지 않는 현상입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "시각"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-engineer-human-factors-0002",
+    "certId": "industrial-safety-engineer",
+    "subjectId": "ergonomics",
+    "chapterId": "human-factors",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "산업안전보건법령에서 '소음 작업'이란 1일 8시간 작업을 기준으로 몇 dB 이상의 소음이 발생하는 작업을 말하는가?",
+    "choices": [
+      "100dB",
+      "90dB",
+      "85dB",
+      "80dB"
+    ],
+    "answer": 3,
+    "oneLineConcept": "소음 작업: 8시간 기준 85dB 이상",
+    "explanation": "**소음 작업**은 1일 8시간 기준 **85dB 이상**의 소음이 나는 작업입니다. 90dB 이상이 하루 8시간 넘게 이어지면 강렬한 소음 작업입니다.\n\n**틀린 선지**\n- ① 100dB: 하루 2시간 이상이면 강렬한 소음 작업이 되는 기준입니다.\n- ② 90dB: 하루 8시간 이상이면 '강렬한 소음 작업'이 되는 기준입니다.\n- ④ 80dB: 기준보다 낮은 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "소음"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-engineer-human-factors-0003",
+    "certId": "industrial-safety-engineer",
+    "subjectId": "ergonomics",
+    "chapterId": "human-factors",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "서서 일하는 작업대의 높이를 정하는 원칙으로 옳은 것은?",
+    "choices": [
+      "작업의 종류와 관계없이 어깨 높이에 맞춘다",
+      "정밀한 작업은 팔꿈치보다 조금 높게, 힘이 드는 작업은 팔꿈치보다 낮게 한다",
+      "작업의 종류와 관계없이 무릎 높이에 맞춘다",
+      "정밀한 작업은 팔꿈치보다 낮게, 힘이 드는 작업은 팔꿈치보다 높게 한다"
+    ],
+    "answer": 2,
+    "oneLineConcept": "작업대: 정밀 작업은 높게, 힘든 작업은 낮게",
+    "explanation": "작업대 높이는 **팔꿈치 높이**가 기준입니다. 정밀 작업은 조금 높게, 힘을 써야 하는 작업은 낮게 합니다.\n\n**틀린 선지**\n- ① 어깨 높이는 팔과 어깨에 무리가 갑니다.\n- ③ 허리를 굽혀야 해서 허리에 무리가 갑니다.\n- ④ 반대입니다. 힘을 쓰는 작업은 몸무게를 실을 수 있게 낮추어야 합니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "작업 설계"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-engineer-human-factors-0004",
+    "certId": "industrial-safety-engineer",
+    "subjectId": "ergonomics",
+    "chapterId": "human-factors",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "인체 측정 자료를 응용할 때, 의자 높이처럼 조절식으로 설계하는 경우에 보통 적용하는 범위는?",
+    "choices": [
+      "1 ~ 99 퍼센타일",
+      "25 ~ 75 퍼센타일",
+      "50 퍼센타일",
+      "5 ~ 95 퍼센타일"
+    ],
+    "answer": 4,
+    "oneLineConcept": "조절식 설계: 5 ~ 95 퍼센타일",
+    "explanation": "조절식 설계는 몸집이 작은 사람(5 퍼센타일)부터 큰 사람(95 퍼센타일)까지, 곧 **전체의 90%** 가 쓸 수 있도록 조절 범위를 정합니다.\n\n**틀린 선지**\n- ① 1 ~ 99 퍼센타일: 범위가 너무 넓어 비용이 많이 듭니다.\n- ② 25 ~ 75 퍼센타일: 범위가 좁아 맞지 않는 사람이 많아집니다.\n- ③ 50 퍼센타일: 평균치 하나에 맞추는 것으로, 조절식 설계가 아닙니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "인체 측정"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-engineer-human-factors-0005",
+    "certId": "industrial-safety-engineer",
+    "subjectId": "ergonomics",
+    "chapterId": "human-factors",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "일어날 확률이 같은 8가지 대안 가운데 하나가 정해질 때 얻는 정보량은 몇 bit 인가?",
+    "choices": [
+      "2bit",
+      "3bit",
+      "8bit",
+      "4bit"
+    ],
+    "answer": 2,
+    "oneLineConcept": "정보량 H = log₂N (대안이 8가지면 3bit)",
+    "explanation": "1. 공식: H = log₂N\n2. 2 × 2 × 2 = 8 이므로 log₂8 = 3\n3. 답: 3bit\n\n**틀린 선지**\n- ① 2bit: 2 를 2번 곱하면 4 입니다.\n- ③ 8bit: 대안의 수를 그대로 쓴 값입니다.\n- ④ 4bit: 2 를 4번 곱하면 16 입니다.",
+    "frequency": 3,
+    "reviewStatus": "unverified",
+    "tags": [
+      "정보량",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-engineer-human-factors-0006",
+    "certId": "industrial-safety-engineer",
+    "subjectId": "ergonomics",
+    "chapterId": "human-factors",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "건구 온도가 30℃, 습구 온도가 20℃ 일 때의 옥스퍼드(Oxford) 지수는?",
+    "choices": [
+      "25℃",
+      "50℃",
+      "28.5℃",
+      "21.5℃"
+    ],
+    "answer": 4,
+    "oneLineConcept": "옥스퍼드 지수 = 0.85 × 습구 + 0.15 × 건구",
+    "explanation": "1. 공식: WD = 0.85 × 습구 온도 + 0.15 × 건구 온도\n2. 계산: 0.85 × 20 + 0.15 × 30 = 17 + 4.5\n3. 답: 21.5℃\n\n**틀린 선지**\n- ① 25℃: 두 온도의 단순한 평균입니다.\n- ② 50℃: 두 온도를 더한 값입니다.\n- ③ 28.5℃: 습구와 건구의 계수를 바꿔 곱한 값(0.85 × 30 + 0.15 × 20)입니다.",
+    "frequency": 3,
+    "reviewStatus": "unverified",
+    "tags": [
+      "온열 지수",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
   }
 ]

@@ -150,5 +150,211 @@
       "분진 폭발"
     ],
     "levelLock": true
+  },
+  {
+    "id": "industrial-safety-engineer-fire-explosion-0001",
+    "certId": "industrial-safety-engineer",
+    "subjectId": "chemical",
+    "chapterId": "fire-explosion",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "가연성 액체의 표면 가까이에 점화원을 가져갔을 때 불이 붙는 가장 낮은 온도는?",
+    "choices": [
+      "발화점",
+      "인화점",
+      "연소점",
+      "비점"
+    ],
+    "answer": 2,
+    "oneLineConcept": "인화점은 점화원이 있을 때, 발화점은 없을 때",
+    "explanation": "**인화점**이 낮을수록 낮은 온도에서도 불이 붙으므로 위험합니다. 온도는 인화점 < 연소점 < 발화점 순서로 높아집니다.\n\n**틀린 선지**\n- ① 발화점: 점화원이 없어도 스스로 불이 붙는 가장 낮은 온도입니다.\n- ③ 연소점: 불이 붙은 뒤 꺼지지 않고 계속 타는 가장 낮은 온도입니다.\n- ④ 비점: 액체가 끓기 시작하는 온도입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "연소"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-engineer-fire-explosion-0002",
+    "certId": "industrial-safety-engineer",
+    "subjectId": "chemical",
+    "chapterId": "fire-explosion",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "식용유 같은 주방의 기름에 불이 붙은 화재는 어떤 급으로 분류하는가?",
+    "choices": [
+      "D급 화재",
+      "A급 화재",
+      "B급 화재",
+      "K급 화재"
+    ],
+    "answer": 4,
+    "oneLineConcept": "A 일반, B 유류, C 전기, D 금속, K 주방",
+    "explanation": "식용유는 끓는 온도보다 불이 붙는 온도가 낮아, 불꽃을 꺼도 다시 불이 붙습니다. 그래서 **K급(주방 화재)** 으로 따로 구분하고, 기름 표면에 비누 막을 만드는 K급 소화기를 씁니다.\n\n**틀린 선지**\n- ① D급 화재: 마그네슘 같은 금속의 화재입니다.\n- ② A급 화재: 나무, 종이 같은 일반 가연물의 화재입니다.\n- ③ B급 화재: 휘발유, 경유 같은 유류의 화재입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "화재의 분류"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-engineer-fire-explosion-0003",
+    "certId": "industrial-safety-engineer",
+    "subjectId": "chemical",
+    "chapterId": "fire-explosion",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "분진 폭발을 일으킬 수 있는 물질은?",
+    "choices": [
+      "알루미늄 가루",
+      "석회석 가루",
+      "모래",
+      "시멘트 가루"
+    ],
+    "answer": 1,
+    "oneLineConcept": "분진 폭발: 금속 가루, 밀가루, 석탄 가루 등 타는 가루",
+    "explanation": "분진 폭발은 **불에 타는 가루**가 공기 중에 떠 있을 때 일어납니다. 알루미늄·마그네슘 같은 금속 가루, 밀가루, 설탕, 석탄 가루가 대표적입니다.\n\n**틀린 선지**\n- ② 석회석 가루: 불에 타지 않는 물질입니다.\n- ③ 모래: 불에 타지 않는 물질입니다.\n- ④ 시멘트 가루: 이미 산화된 물질이어서 타지 않습니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "분진 폭발"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-engineer-fire-explosion-0004",
+    "certId": "industrial-safety-engineer",
+    "subjectId": "chemical",
+    "chapterId": "fire-explosion",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "폭발할 때 화염이 퍼지는 속도가 음속보다 빨라 강한 충격파를 만드는 현상은?",
+    "choices": [
+      "폭연",
+      "증기운 폭발",
+      "폭굉",
+      "백 드래프트"
+    ],
+    "answer": 3,
+    "oneLineConcept": "폭연은 음속 이하, 폭굉은 음속 이상",
+    "explanation": "**폭굉**(Detonation)은 화염의 전파 속도가 초속 1,000~3,500m 에 이르러 충격파가 생깁니다. 파괴력이 폭연보다 훨씬 큽니다.\n\n**틀린 선지**\n- ① 폭연: 화염이 퍼지는 속도가 음속보다 느린 폭발입니다.\n- ② 증기운 폭발: 새어 나온 가연성 가스가 구름처럼 퍼졌다가 폭발하는 현상입니다.\n- ④ 백 드래프트: 산소가 모자란 방에 갑자기 공기가 들어가 폭발하듯 타는 현상입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "폭발"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-engineer-fire-explosion-0005",
+    "certId": "industrial-safety-engineer",
+    "subjectId": "chemical",
+    "chapterId": "fire-explosion",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "프로판(C₃H₈)의 연소 하한이 2.1vol% 일 때, 최소 산소 농도(MOC)는 약 몇 vol% 인가?",
+    "choices": [
+      "21vol%",
+      "2.1vol%",
+      "10.5vol%",
+      "6.3vol%"
+    ],
+    "answer": 3,
+    "oneLineConcept": "MOC = 연소 하한 × 완전 연소에 필요한 산소 몰수",
+    "explanation": "1. 프로판의 연소식: C₃H₈ + 5O₂ → 3CO₂ + 4H₂O (산소 5몰)\n2. 공식: MOC = 연소 하한 × 산소 몰수\n3. 계산: 2.1 × 5 = 10.5vol%\n\n산소 농도를 이보다 낮추면 불이 붙지 않습니다(불활성화).\n\n**틀린 선지**\n- ① 21vol%: 공기 중의 산소 농도입니다.\n- ② 2.1vol%: 연소 하한을 그대로 쓴 값입니다. 산소의 몰수를 곱해야 합니다.\n- ④ 6.3vol%: 산소의 몰수를 3 으로 잘못 본 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "불활성화",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-engineer-fire-explosion-0006",
+    "certId": "industrial-safety-engineer",
+    "subjectId": "chemical",
+    "chapterId": "fire-explosion",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "프로판(C₃H₈)이 공기 중에서 완전 연소할 때의 화학 양론 농도(완전 연소 조성 농도)는 약 몇 vol% 인가?",
+    "choices": [
+      "4.0vol%",
+      "9.5vol%",
+      "16.7vol%",
+      "2.1vol%"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Cst = 100 ÷ (1 + 4.773 × 산소 몰수)",
+    "explanation": "1. 프로판 1몰이 완전 연소하는 데 산소 5몰이 필요합니다.\n2. 공식: Cst = 100 ÷ (1 + 4.773 × 5)\n3. 계산: 100 ÷ 24.865 ≒ 4.0vol%\n\n**틀린 선지**\n- ② 9.5vol%: 프로판의 연소 상한입니다.\n- ③ 16.7vol%: 공기가 아니라 순수한 산소와 섞일 때의 값(1 ÷ 6)입니다.\n- ④ 2.1vol%: 프로판의 연소 하한입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "연소",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
   }
 ]

@@ -160,5 +160,210 @@
       "FMEA"
     ],
     "levelLock": true
+  },
+  {
+    "id": "industrial-safety-engineer-system-safety-0001",
+    "certId": "industrial-safety-engineer",
+    "subjectId": "ergonomics",
+    "chapterId": "system-safety",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "시스템을 개발하는 맨 처음 단계에서, 시스템 안의 위험 요소가 어떤 상태에 있는지를 정성적으로 평가하는 분석 기법은?",
+    "choices": [
+      "PHA(예비 위험 분석)",
+      "FMEA(고장 형태와 영향 분석)",
+      "FTA(결함수 분석)",
+      "OHA(운용 위험 분석)"
+    ],
+    "answer": 1,
+    "oneLineConcept": "PHA: 개발 최초 단계의 정성적 위험 분석",
+    "explanation": "**PHA**(Preliminary Hazard Analysis)는 이름 그대로 가장 먼저 하는 위험 분석입니다.\n\n**틀린 선지**\n- ② FMEA(고장 형태와 영향 분석): 부품 하나하나의 고장이 시스템에 미치는 영향을 보는 기법입니다.\n- ③ FTA(결함수 분석): 사고에서 원인 쪽으로 거슬러 내려가며 분석하는 기법입니다.\n- ④ OHA(운용 위험 분석): 시스템을 운용하는 단계의 위험을 분석하는 기법입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "시스템 안전"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-engineer-system-safety-0002",
+    "certId": "industrial-safety-engineer",
+    "subjectId": "ergonomics",
+    "chapterId": "system-safety",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "FT 도에서 원(○) 기호가 뜻하는 것은?",
+    "choices": [
+      "평소에도 일어나는 통상 사상",
+      "원인을 더 분석해야 하는 결함 사상",
+      "더 이상 전개할 수 없는 기본 사상",
+      "정보가 모자라 더 전개하지 않는 생략 사상"
+    ],
+    "answer": 3,
+    "oneLineConcept": "FT 도: 원은 기본 사상, 직사각형은 결함 사상",
+    "explanation": "- **원**: 기본 사상\n- 직사각형: 결함 사상\n- 마름모: 생략 사상\n- 집 모양: 통상 사상\n\n**틀린 선지**\n- ① 평소에도 일어나는 통상 사상: 통상 사상은 집 모양으로 나타냅니다.\n- ② 원인을 더 분석해야 하는 결함 사상: 결함 사상은 직사각형으로 나타냅니다.\n- ④ 생략 사상은 마름모로 나타냅니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "FTA"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-engineer-system-safety-0003",
+    "certId": "industrial-safety-engineer",
+    "subjectId": "ergonomics",
+    "chapterId": "system-safety",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "고장률이 시간당 0.002 로 일정한 설비의 평균 고장 간격(MTBF)은 몇 시간인가?",
+    "choices": [
+      "50시간",
+      "2,000시간",
+      "500시간",
+      "200시간"
+    ],
+    "answer": 3,
+    "oneLineConcept": "MTBF = 1 ÷ 고장률",
+    "explanation": "1. 공식: MTBF = 1 ÷ 고장률(λ)\n2. 계산: 1 ÷ 0.002 = 500시간\n\n**틀린 선지**\n- ① 50시간: 1 ÷ 0.02 를 계산한 값입니다.\n- ② 2,000시간: 고장률의 숫자만 보고 1,000 을 곱한 값입니다.\n- ④ 200시간: 1 ÷ 0.005 를 계산한 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "신뢰도",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-engineer-system-safety-0004",
+    "certId": "industrial-safety-engineer",
+    "subjectId": "ergonomics",
+    "chapterId": "system-safety",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "사람이 저지르는 과오(휴먼 에러)를 정량적으로 평가하려고 만든 기법은?",
+    "choices": [
+      "THERP",
+      "FMEA",
+      "PHA",
+      "MORT"
+    ],
+    "answer": 1,
+    "oneLineConcept": "THERP: 인간 과오율 예측 기법",
+    "explanation": "**THERP**(Technique for Human Error Rate Prediction)는 사람이 실수할 확률을 숫자로 구해 시스템의 위험을 평가합니다.\n\n**틀린 선지**\n- ② FMEA: 부품의 고장 형태가 시스템에 미치는 영향을 분석하는 기법입니다.\n- ③ PHA: 개발 초기에 위험 요소를 정성적으로 평가하는 기법입니다.\n- ④ MORT: 관리·설계·생산·보전 등 넓은 범위의 안전을 나무 모양으로 분석하는 기법입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "휴먼 에러"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-engineer-system-safety-0005",
+    "certId": "industrial-safety-engineer",
+    "subjectId": "ergonomics",
+    "chapterId": "system-safety",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "페일 세이프(Fail Safe) 가운데, 부품이 고장 나더라도 다음 정기 점검 때까지 기계가 안전하게 운전을 계속할 수 있는 것은?",
+    "choices": [
+      "풀 프루프(Fool Proof)",
+      "페일 패시브(Fail Passive)",
+      "페일 액티브(Fail Active)",
+      "페일 오퍼레이셔널(Fail Operational)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "패시브 정지, 액티브 짧게 운전, 오퍼레이셔널 계속 운전",
+    "explanation": "페일 세이프의 세 가지\n\n- Fail Passive: 고장 나면 **정지**\n- Fail Active: 경보를 울리며 **짧은 시간 운전**\n- **Fail Operational: 다음 점검까지 운전 유지**\n\n**틀린 선지**\n- ① 풀 프루프(Fool Proof): 사람의 실수가 사고로 이어지지 않게 하는 설계입니다.\n- ② 페일 패시브(Fail Passive): 부품이 고장 나면 기계가 정지하는 쪽으로 가는 것입니다.\n- ③ 페일 액티브(Fail Active): 부품이 고장 나면 경보를 울리며 짧은 시간 동안만 운전하는 것입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "페일 세이프"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-engineer-system-safety-0006",
+    "certId": "industrial-safety-engineer",
+    "subjectId": "ergonomics",
+    "chapterId": "system-safety",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "FTA 에서 최소 패스셋(Minimal Path Set)에 대한 설명으로 옳은 것은?",
+    "choices": [
+      "최소 패스셋의 수가 많을수록 시스템은 위험하다",
+      "그 안의 기본 사상이 모두 일어나지 않으면 정상 사상이 일어나지 않는 최소한의 묶음으로, 시스템의 신뢰성을 나타낸다",
+      "시스템의 위험성(고장 나는 길)을 나타낸다",
+      "그 안의 기본 사상이 모두 일어나면 정상 사상이 일어나는 최소한의 묶음이다"
+    ],
+    "answer": 2,
+    "oneLineConcept": "컷셋은 위험성, 패스셋은 신뢰성",
+    "explanation": "**컷셋**은 사고가 나는 조합(위험성), **패스셋**은 사고가 나지 않는 조합(신뢰성)입니다.\n\n**틀린 선지**\n- ① 패스셋은 사고를 막는 길이므로 많을수록 안전합니다.\n- ③ 위험성을 나타내는 것은 컷셋입니다.\n- ④ 이것은 최소 컷셋에 대한 설명입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "FTA"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
   }
 ]

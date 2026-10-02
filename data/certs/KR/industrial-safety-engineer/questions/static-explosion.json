@@ -149,5 +149,176 @@
         3
       ]
     }
+  },
+  {
+    "id": "industrial-safety-engineer-static-explosion-0001",
+    "certId": "industrial-safety-engineer",
+    "subjectId": "electric",
+    "chapterId": "static-explosion",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "정전기로 인한 재해를 막기 위한 대책으로 옳은 것은?",
+    "choices": [
+      "작업장의 상대 습도를 70% 정도로 높게 유지한다",
+      "설비의 접지를 떼어 낸다",
+      "배관 속을 흐르는 액체의 속도를 빠르게 한다",
+      "바닥과 작업대에 절연성이 높은 재료를 쓴다"
+    ],
+    "answer": 1,
+    "oneLineConcept": "정전기 대책: 접지, 가습(70%), 제전기, 도전성 재료",
+    "explanation": "습도가 높으면 물체 표면에 얇은 물기가 생겨 전기가 잘 빠져나갑니다. 그래서 **상대 습도를 70% 정도**로 유지하면 정전기가 쌓이지 않습니다.\n\n**틀린 선지**\n- ② 설비의 접지를 떼어 낸다: 접지를 해야 정전기가 땅으로 빠져나갑니다.\n- ③ 빨리 흐를수록 정전기가 많이 생깁니다. 속도를 늦춰야 합니다.\n- ④ 전기가 빠져나가지 못해 정전기가 쌓입니다. 도전성 재료를 써야 합니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "정전기"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-engineer-static-explosion-0002",
+    "certId": "industrial-safety-engineer",
+    "subjectId": "electric",
+    "chapterId": "static-explosion",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "서로 붙어 있던 물체가 떨어질 때 전하가 분리되어 생기는 정전기 대전 현상은?",
+    "choices": [
+      "박리 대전",
+      "유동 대전",
+      "분출 대전",
+      "마찰 대전"
+    ],
+    "answer": 1,
+    "oneLineConcept": "박리 대전: 붙어 있던 물체가 떨어질 때",
+    "explanation": "'박리'는 벗겨 낸다는 뜻입니다. 테이프나 필름을 떼어 낼 때 생기는 정전기가 **박리 대전**입니다.\n\n**틀린 선지**\n- ② 유동 대전: 액체가 배관 속을 흐를 때 배관 벽과의 사이에서 생기는 대전입니다.\n- ③ 분출 대전: 기체나 액체가 좁은 구멍으로 뿜어져 나올 때 생기는 대전입니다.\n- ④ 마찰 대전: 두 물체가 서로 문질러질 때 생기는 대전입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "정전기"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-engineer-static-explosion-0003",
+    "certId": "industrial-safety-engineer",
+    "subjectId": "electric",
+    "chapterId": "static-explosion",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "방폭 구조의 기호 가운데 본질 안전 방폭 구조를 나타내는 것은?",
+    "choices": [
+      "d",
+      "p",
+      "ia 또는 ib",
+      "e"
+    ],
+    "answer": 3,
+    "oneLineConcept": "방폭 기호: 내압 d, 압력 p, 안전증 e, 본질 안전 i",
+    "explanation": "**본질 안전 방폭 구조**(ia, ib)는 정상일 때는 물론 고장이 났을 때 생기는 불꽃이나 열로도 가스에 불이 붙지 않게 만든 구조입니다.\n\n**틀린 선지**\n- ① d: 내압 방폭 구조의 기호입니다.\n- ② p: 압력 방폭 구조의 기호입니다.\n- ④ e: 안전증 방폭 구조의 기호입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "방폭 구조"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-engineer-static-explosion-0004",
+    "certId": "industrial-safety-engineer",
+    "subjectId": "electric",
+    "chapterId": "static-explosion",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "가스 폭발 위험 장소 가운데, 정상 상태에서는 폭발성 가스 분위기가 생길 우려가 없고 이상 상태에서만 짧은 시간 동안 생길 수 있는 장소는?",
+    "choices": [
+      "20종 장소",
+      "2종 장소",
+      "0종 장소",
+      "1종 장소"
+    ],
+    "answer": 2,
+    "oneLineConcept": "0종 늘 존재, 1종 정상 시 우려, 2종 이상 시만",
+    "explanation": "가스 폭발 위험 장소\n\n- 0종: 늘 또는 오랫동안 존재\n- 1종: 정상 상태에서 생길 우려\n- **2종: 이상 상태에서만 짧은 시간**\n\n**틀린 선지**\n- ① 20종 장소: 분진 폭발 위험 장소의 구분입니다.\n- ③ 0종 장소: 폭발성 가스 분위기가 연속적으로 또는 오랫동안 존재하는 장소입니다.\n- ④ 1종 장소: 정상 상태에서도 폭발성 가스 분위기가 생길 우려가 있는 장소입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "폭발 위험 장소"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-engineer-static-explosion-0005",
+    "certId": "industrial-safety-engineer",
+    "subjectId": "electric",
+    "chapterId": "static-explosion",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "정전용량이 100pF 인 물체가 10kV 로 대전되어 있을 때, 방전될 때 내놓는 정전기 에너지는 몇 mJ 인가?",
+    "choices": [
+      "0.5mJ",
+      "50mJ",
+      "10mJ",
+      "5mJ"
+    ],
+    "answer": 4,
+    "oneLineConcept": "정전기 에너지 E = ½CV²",
+    "explanation": "1. 단위를 바꿉니다: 100pF = 100 × 10⁻¹² F, 10kV = 10⁴ V\n2. 공식: E = 1/2 × C × V²\n3. 계산: 1/2 × 100 × 10⁻¹² × (10⁴)² = 1/2 × 100 × 10⁻⁴ = 5 × 10⁻³ J\n4. 답: 5mJ\n\n**틀린 선지**\n- ① 0.5mJ: 자릿수를 잘못 잡은 값입니다.\n- ② 50mJ: 자릿수를 잘못 잡은 값입니다.\n- ③ 10mJ: 앞의 1/2 을 곱하지 않은 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "정전기",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
   }
 ]

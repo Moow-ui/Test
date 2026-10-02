@@ -159,5 +159,175 @@
         3
       ]
     }
+  },
+  {
+    "id": "industrial-safety-engineer-chemical-handling-0001",
+    "certId": "industrial-safety-engineer",
+    "subjectId": "chemical",
+    "chapterId": "chemical-handling",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "화학 물질의 유해성·위험성, 취급 방법, 응급조치 요령 등을 적어 작업장에 갖추어 두고 근로자에게 알려야 하는 자료는?",
+    "choices": [
+      "공정안전보고서(PSM)",
+      "유해위험방지계획서",
+      "작업 환경 측정 결과표",
+      "물질안전보건자료(MSDS)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "MSDS: 화학 물질의 유해성과 취급 방법을 적은 자료",
+    "explanation": "**MSDS** 는 화학 물질을 다루는 작업장에 근로자가 쉽게 볼 수 있게 갖추어 두어야 하고, 그 내용을 근로자에게 교육해야 합니다.\n\n**틀린 선지**\n- ① 공정안전보고서(PSM): 위험한 설비를 가진 사업장이 중대 산업 사고를 막으려고 작성해 제출하는 보고서입니다.\n- ② 유해위험방지계획서: 위험한 기계나 건설 공사를 시작하기 전에 제출하는 계획서입니다.\n- ③ 작업 환경 측정 결과표: 작업장의 유해 인자 농도를 잰 결과입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "MSDS"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-engineer-chemical-handling-0002",
+    "certId": "industrial-safety-engineer",
+    "subjectId": "chemical",
+    "chapterId": "chemical-handling",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "특수 화학 설비 안의 이상 상태를 일찍 알아내려고 설치해야 하는 것은?",
+    "choices": [
+      "국소 배기 장치",
+      "온도계·유량계·압력계 같은 계측 장치",
+      "피뢰침",
+      "방호 울"
+    ],
+    "answer": 2,
+    "oneLineConcept": "특수 화학 설비: 계측 장치·자동 경보·긴급 차단·예비 동력",
+    "explanation": "특수 화학 설비에는 **계측 장치(온도계·유량계·압력계)**, 자동 경보 장치, 긴급 차단 장치, 예비 동력원을 갖추어야 합니다.\n\n**틀린 선지**\n- ① 국소 배기 장치: 유해 물질을 빨아들여 내보내는 장치입니다.\n- ③ 피뢰침: 벼락으로부터 설비를 지키는 장치입니다.\n- ④ 방호 울: 사람이 위험한 곳에 들어가지 못하게 막는 시설입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "특수 화학 설비"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-engineer-chemical-handling-0003",
+    "certId": "industrial-safety-engineer",
+    "subjectId": "chemical",
+    "chapterId": "chemical-handling",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "공정안전보고서(PSM)에 포함되어야 하는 내용으로만 묶인 것은?",
+    "choices": [
+      "공정 위험성 평가서, 근로자 건강 진단 결과, 안전 운전 계획, 비상조치 계획",
+      "공정 안전 자료, 공정 위험성 평가서, 작업 환경 측정 결과, 생산 계획",
+      "공정 안전 자료, 산업안전보건관리비 사용 계획, 안전 운전 계획, 비상조치 계획",
+      "공정 안전 자료, 공정 위험성 평가서, 안전 운전 계획, 비상조치 계획"
+    ],
+    "answer": 4,
+    "oneLineConcept": "PSM 4요소: 안전 자료·위험성 평가·안전 운전·비상조치",
+    "explanation": "공정안전보고서의 네 가지 내용: **공정 안전 자료, 공정 위험성 평가서, 안전 운전 계획, 비상조치 계획**\n\n**틀린 선지**\n- ① 건강 진단 결과는 들어가지 않습니다.\n- ② 작업 환경 측정 결과와 생산 계획은 들어가지 않습니다.\n- ③ 산업안전보건관리비 사용 계획은 건설 공사와 관련된 것입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "PSM"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-engineer-chemical-handling-0004",
+    "certId": "industrial-safety-engineer",
+    "subjectId": "chemical",
+    "chapterId": "chemical-handling",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "유해 물질의 노출 기준 가운데, 1회에 15분 동안 노출되는 경우를 기준으로 한 것은?",
+    "choices": [
+      "TWA(시간 가중 평균 노출 기준)",
+      "STEL(단시간 노출 기준)",
+      "C(최고 노출 기준)",
+      "LD50(반수 치사량)"
+    ],
+    "answer": 2,
+    "oneLineConcept": "TWA 8시간, STEL 15분, C 순간",
+    "explanation": "**STEL** 은 15분 동안의 평균 노출 기준입니다. 이 농도 이하라도 1회 15분 미만, 하루 4회 이하, 노출 간격 60분 이상이어야 합니다.\n\n**틀린 선지**\n- ① TWA(시간 가중 평균 노출 기준): 1일 8시간 작업을 기준으로 한 평균 농도입니다.\n- ③ C(최고 노출 기준): 잠깐이라도 넘어서는 안 되는 농도입니다.\n- ④ LD50(반수 치사량): 실험 동물의 절반이 죽는 양으로, 노출 기준이 아니라 독성의 크기를 나타냅니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "노출 기준"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-engineer-chemical-handling-0005",
+    "certId": "industrial-safety-engineer",
+    "subjectId": "chemical",
+    "chapterId": "chemical-handling",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "산업안전보건법령에서 부식성 염기류로 분류하는 수산화나트륨·수산화칼륨은 농도가 몇 % 이상인 것인가?",
+    "choices": [
+      "10% 이상",
+      "20% 이상",
+      "40% 이상",
+      "60% 이상"
+    ],
+    "answer": 3,
+    "oneLineConcept": "부식성: 산 20%·60%, 염기 40% 이상",
+    "explanation": "부식성 물질의 기준\n\n- 부식성 산류: 농도 20% 이상인 염산·황산·질산, 60% 이상인 인산·아세트산·불산\n- **부식성 염기류: 농도 40% 이상인 수산화나트륨·수산화칼륨**\n\n**틀린 선지**\n- ① 10% 이상: 기준보다 낮은 값입니다.\n- ② 20% 이상: 염산·황산·질산이 부식성 산류로 분류되는 농도입니다.\n- ④ 60% 이상: 인산·아세트산·불산이 부식성 산류로 분류되는 농도입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "부식성 물질"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
   }
 ]

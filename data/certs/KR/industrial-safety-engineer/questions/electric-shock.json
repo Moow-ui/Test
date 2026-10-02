@@ -160,5 +160,243 @@
         4
       ]
     }
+  },
+  {
+    "id": "industrial-safety-engineer-electric-shock-0001",
+    "certId": "industrial-safety-engineer",
+    "subjectId": "electric",
+    "chapterId": "electric-shock",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "전기 기계·기구의 금속제 외함을 접지하는 주된 목적은?",
+    "choices": [
+      "전력 손실을 줄인다",
+      "기계에 공급되는 전압을 높인다",
+      "누전되었을 때 외함에 걸리는 전압을 낮추어 감전을 막는다",
+      "기계의 역률을 개선한다"
+    ],
+    "answer": 3,
+    "oneLineConcept": "외함 접지: 누전 시 감전 방지",
+    "explanation": "절연이 나빠져 외함에 전기가 새면(누전), 접지선이 그 전류를 땅으로 흘려보냅니다. 그래서 사람이 외함을 만져도 **몸에 걸리는 전압이 낮아집니다**.\n\n**틀린 선지**\n- ① 전력 손실을 줄인다: 접지는 전력 손실과 관계가 없습니다.\n- ② 기계에 공급되는 전압을 높인다: 접지는 전압을 높이지 않습니다.\n- ④ 기계의 역률을 개선한다: 역률은 콘덴서로 개선합니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "접지"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-engineer-electric-shock-0002",
+    "certId": "industrial-safety-engineer",
+    "subjectId": "electric",
+    "chapterId": "electric-shock",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "전기 기계·기구 가운데 접지를 하지 않아도 되는 것은?",
+    "choices": [
+      "이중 절연 구조로 된 전기 기계·기구",
+      "사용 전압이 대지 전압 150V 를 넘는 고정식 전기 기계",
+      "물기가 있는 곳에서 쓰는 금속제 외함의 전기 기계",
+      "금속제 외함을 가진 휴대형 전동 공구"
+    ],
+    "answer": 1,
+    "oneLineConcept": "이중 절연 구조·절연대 위·비접지 방식은 접지 생략",
+    "explanation": "**이중 절연 구조**는 기본 절연이 망가져도 한 겹이 더 있어 외함에 전기가 새지 않습니다. 그래서 접지를 생략할 수 있습니다.\n\n**틀린 선지**\n- ② 접지 대상입니다.\n- ③ 감전 위험이 커서 반드시 접지해야 합니다.\n- ④ 금속제 외함을 가진 휴대형 전동 공구: 사람이 손에 쥐고 쓰므로 접지해야 합니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "접지"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-engineer-electric-shock-0003",
+    "certId": "industrial-safety-engineer",
+    "subjectId": "electric",
+    "chapterId": "electric-shock",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "감전되었을 때 근육이 수축하여 스스로 전선에서 손을 뗄 수 없게 되는 전류를 무엇이라 하는가?",
+    "choices": [
+      "가수 전류(이탈 전류)",
+      "심실세동 전류",
+      "최소 감지 전류",
+      "불수 전류(교착 전류)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "가수 전류는 뗄 수 있음, 불수 전류는 뗄 수 없음",
+    "explanation": "통전 전류가 커지는 순서: 최소 감지 전류 → 고통 한계 전류 → 가수 전류(뗄 수 있음) → **불수 전류(뗄 수 없음)** → 심실세동 전류\n\n**틀린 선지**\n- ① 가수 전류(이탈 전류): 아직 스스로 손을 뗄 수 있는 전류입니다.\n- ② 심실세동 전류: 심장이 불규칙하게 떨려 피를 보내지 못하게 되는 전류입니다.\n- ③ 최소 감지 전류: 전기가 흐르는 것을 느끼기 시작하는 가장 작은 전류입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "통전 전류"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-engineer-electric-shock-0004",
+    "certId": "industrial-safety-engineer",
+    "subjectId": "electric",
+    "chapterId": "electric-shock",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "우리나라에서 일반적으로 안전 전압으로 보는 전압은?",
+    "choices": [
+      "24V",
+      "30V",
+      "50V",
+      "110V"
+    ],
+    "answer": 2,
+    "oneLineConcept": "우리나라의 안전 전압: 30V",
+    "explanation": "안전 전압은 사람 몸에 닿아도 위험하지 않다고 보는 전압입니다. 나라마다 다르며 우리나라는 **30V** 로 봅니다.\n\n**틀린 선지**\n- ① 24V: 독일 등 다른 나라에서 쓰는 값입니다.\n- ③ 50V: 영국, 프랑스 등 다른 나라에서 쓰는 값입니다.\n- ④ 110V: 감전 위험이 있는 전압입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "안전 전압"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-engineer-electric-shock-0005",
+    "certId": "industrial-safety-engineer",
+    "subjectId": "electric",
+    "chapterId": "electric-shock",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "대지 전압이 몇 V 를 초과하는 이동형 또는 휴대형 전기 기계·기구에 감전 방지용 누전 차단기를 설치해야 하는가?",
+    "choices": [
+      "220V",
+      "30V",
+      "50V",
+      "150V"
+    ],
+    "answer": 4,
+    "oneLineConcept": "누전 차단기: 대지 전압 150V 초과 이동형·휴대형",
+    "explanation": "누전 차단기를 설치해야 하는 전기 기계·기구\n\n- **대지 전압 150V 를 초과하는 이동형·휴대형**\n- 물 등 도전성이 높은 액체가 있는 습윤 장소에서 쓰는 저압용\n- 철판·철골 위 등 도전성이 높은 곳에서 쓰는 이동형·휴대형\n- 임시 배선의 전로가 설치되는 곳에서 쓰는 이동형·휴대형\n\n**틀린 선지**\n- ① 220V: 기준보다 큰 값입니다.\n- ② 30V: 안전 전압의 값입니다.\n- ③ 50V: 다른 기준과 헷갈린 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "누전 차단기"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-engineer-electric-shock-0006",
+    "certId": "industrial-safety-engineer",
+    "subjectId": "electric",
+    "chapterId": "electric-shock",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "22.9kV 충전 전로에 대한 접근 한계 거리는?",
+    "choices": [
+      "110cm",
+      "90cm",
+      "45cm",
+      "60cm"
+    ],
+    "answer": 2,
+    "oneLineConcept": "접근 한계 거리: 15kV 초과 37kV 이하는 90cm",
+    "explanation": "충전 전로의 접근 한계 거리\n\n- 0.3kV 초과 0.75kV 이하: 30cm\n- 0.75kV 초과 2kV 이하: 45cm\n- 2kV 초과 15kV 이하: 60cm\n- **15kV 초과 37kV 이하: 90cm**\n- 37kV 초과 88kV 이하: 110cm\n\n**틀린 선지**\n- ① 110cm: 37kV 초과 88kV 이하 충전 전로의 접근 한계 거리입니다.\n- ③ 45cm: 0.75kV 초과 2kV 이하 충전 전로의 접근 한계 거리입니다.\n- ④ 60cm: 2kV 초과 15kV 이하 충전 전로의 접근 한계 거리입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "충전 전로"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-engineer-electric-shock-0007",
+    "certId": "industrial-safety-engineer",
+    "subjectId": "electric",
+    "chapterId": "electric-shock",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "피부가 물에 젖어 있을 때 인체의 전기 저항은 건조할 때의 약 얼마로 줄어드는가?",
+    "choices": [
+      "약 1/12",
+      "약 1/2",
+      "약 1/25",
+      "약 1/100"
+    ],
+    "answer": 3,
+    "oneLineConcept": "인체 저항: 땀이 나면 1/12, 물에 젖으면 1/25",
+    "explanation": "인체 저항은 피부 상태에 따라 크게 달라집니다. 땀이 나면 약 **1/12**, 물에 젖으면 약 **1/25** 로 줄어 같은 전압에서도 훨씬 큰 전류가 흐릅니다.\n\n**틀린 선지**\n- ① 약 1/12: 땀이 났을 때 줄어드는 정도입니다.\n- ② 약 1/2: 실제보다 훨씬 덜 줄어든 값입니다.\n- ④ 약 1/100: 실제보다 지나치게 줄어든 값입니다.",
+    "frequency": 3,
+    "reviewStatus": "unverified",
+    "tags": [
+      "인체 저항"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   }
 ]

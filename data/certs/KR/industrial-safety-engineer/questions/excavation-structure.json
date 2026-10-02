@@ -115,5 +115,177 @@
         4
       ]
     }
+  },
+  {
+    "id": "industrial-safety-engineer-excavation-structure-0001",
+    "certId": "industrial-safety-engineer",
+    "subjectId": "construction",
+    "chapterId": "excavation-structure",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "모래 지반을 굴착할 때, 흙막이 벽 안팎의 지하수위 차이 때문에 굴착 바닥의 모래가 물과 함께 끓어오르듯 솟아오르는 현상은?",
+    "choices": [
+      "보일링",
+      "히빙",
+      "액상화",
+      "부동 침하"
+    ],
+    "answer": 1,
+    "oneLineConcept": "보일링은 모래 지반, 히빙은 점토 지반",
+    "explanation": "**보일링**은 모래 지반에서 물의 힘으로 모래가 솟아오르는 현상입니다. 흙막이 벽을 깊이 박거나 지하수위를 낮추어 막습니다.\n\n**틀린 선지**\n- ② 히빙: 연약한 점토 지반에서 굴착 바닥이 부풀어 오르는 현상입니다.\n- ③ 액상화: 지진 같은 진동으로 모래 지반이 물처럼 흐물거리게 되는 현상입니다.\n- ④ 부동 침하: 구조물이 고르지 않게 가라앉는 현상입니다.",
+    "frequency": 5,
+    "reviewStatus": "unverified",
+    "tags": [
+      "토공사"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-engineer-excavation-structure-0002",
+    "certId": "industrial-safety-engineer",
+    "subjectId": "construction",
+    "chapterId": "excavation-structure",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "흙막이 공사에서 흙막이 벽이나 그 뒤쪽 지반이 옆으로 얼마나 기울어졌는지(수평 변위)를 재는 계측기는?",
+    "choices": [
+      "지하수위계",
+      "하중계",
+      "지중 경사계",
+      "변형률계"
+    ],
+    "answer": 3,
+    "oneLineConcept": "지중 경사계: 흙막이 벽·지반의 수평 변위",
+    "explanation": "**지중 경사계**(Inclinometer)는 땅속에 관을 묻고 깊이마다 기울기를 재어, 흙막이 벽이 얼마나 밀려 나왔는지 알아냅니다.\n\n**틀린 선지**\n- ① 지하수위계: 지하수위가 오르내리는 것을 재는 계측기입니다.\n- ② 하중계: 버팀대나 어스 앵커에 걸리는 힘을 재는 계측기입니다.\n- ④ 변형률계: 버팀대 같은 부재가 늘어나거나 줄어든 정도를 재는 계측기입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "계측"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-engineer-excavation-structure-0003",
+    "certId": "industrial-safety-engineer",
+    "subjectId": "construction",
+    "chapterId": "excavation-structure",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "콘크리트를 부어 넣을 때 거푸집에 작용하는 측압이 커지는 경우는?",
+    "choices": [
+      "슬럼프가 작을수록",
+      "철근의 양이 많을수록",
+      "부어 넣는 속도가 빠를수록",
+      "기온이 높을수록"
+    ],
+    "answer": 3,
+    "oneLineConcept": "측압이 커지는 조건: 빠른 타설, 묽은 반죽, 낮은 기온",
+    "explanation": "굳기 전의 콘크리트는 물처럼 거푸집을 옆으로 밉니다. **빨리 부을수록**, 묽을수록(슬럼프가 클수록), 기온이 낮을수록, 다짐이 많을수록 측압이 커집니다.\n\n**틀린 선지**\n- ① 슬럼프가 작을수록: 반죽이 되면(슬럼프가 작으면) 측압이 작아집니다.\n- ② 철근의 양이 많을수록: 철근이 많으면 콘크리트를 붙잡아 측압이 작아집니다.\n- ④ 기온이 높을수록: 기온이 높으면 빨리 굳어 측압이 작아집니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "거푸집",
+      "측압"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-engineer-excavation-structure-0004",
+    "certId": "industrial-safety-engineer",
+    "subjectId": "construction",
+    "chapterId": "excavation-structure",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "순간 풍속이 초당 몇 m 를 초과하는 바람이 불어올 우려가 있을 때, 옥외에 설치한 주행 크레인의 이탈 방지 장치를 작동시키는 등의 조치를 해야 하는가?",
+    "choices": [
+      "30m",
+      "10m",
+      "15m",
+      "35m"
+    ],
+    "answer": 1,
+    "oneLineConcept": "크레인 풍속: 10m 설치 중지, 15m 운전 중지, 30m 이탈 방지",
+    "explanation": "풍속에 따른 조치(순간 풍속, 초당)\n\n- 10m 초과: 타워 크레인 설치·수리·점검·해체 중지\n- 15m 초과: 타워 크레인 운전 중지\n- **30m 초과: 옥외 주행 크레인 이탈 방지 조치**\n- 35m 초과: 건설용 리프트·옥외 승강기 붕괴 방지 조치\n\n**틀린 선지**\n- ② 10m: 타워 크레인의 설치·수리·점검·해체 작업을 중지하는 기준입니다.\n- ③ 15m: 타워 크레인의 운전 작업을 중지하는 기준입니다.\n- ④ 35m: 건설용 리프트나 옥외 승강기의 붕괴 방지 조치를 하는 기준입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "크레인",
+      "풍속"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-engineer-excavation-structure-0005",
+    "certId": "industrial-safety-engineer",
+    "subjectId": "construction",
+    "chapterId": "excavation-structure",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "철골 작업을 중지해야 하는 풍속의 기준은?",
+    "choices": [
+      "초당 30m 이상",
+      "초당 5m 이상",
+      "초당 15m 이상",
+      "초당 10m 이상"
+    ],
+    "answer": 4,
+    "oneLineConcept": "철골 작업 중지: 풍속 10m/s, 강우 1mm/h, 강설 1cm/h",
+    "explanation": "철골 작업을 중지해야 하는 날씨\n\n- **풍속: 초당 10m 이상**\n- 강우량: 시간당 1mm 이상\n- 강설량: 시간당 1cm 이상\n\n**틀린 선지**\n- ① 초당 30m 이상: 옥외 주행 크레인의 이탈 방지 조치 기준과 헷갈린 값입니다.\n- ② 초당 5m 이상: 기준보다 약한 바람입니다.\n- ③ 초당 15m 이상: 타워 크레인의 운전 작업을 중지하는 기준과 헷갈린 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "철골 작업"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
   }
 ]
