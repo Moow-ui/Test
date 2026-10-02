@@ -9,20 +9,27 @@ import { Markdown } from "@/components/Markdown";
 import { circled, formatScore } from "@/lib/format";
 import { gradeQuiz, summarize } from "@/lib/grading";
 import { fmt, localePath } from "@/lib/i18n";
-import {
-  EMPTY_NOTES,
-  STORAGE_KEYS,
-  addNotes,
-  startSession,
-  type NoteEntry,
-} from "@/lib/storage";
+import { startSession } from "@/lib/storage";
 import type { Question } from "@/lib/types";
 import { useMessages } from "@/lib/use-messages";
-import { useStored } from "@/lib/use-storage";
 import type { QuizCert } from "./QuizRunner";
 
 /** 이 문항 수보다 적게 풀었으면 합격 판정은 "참고용"이라고 알려 준다 */
 const RELIABLE_QUESTION_COUNT = 20;
+
+/** 결과 화면 맨 위: 왼쪽에 사이트 이름(누르면 메인으로). 풀이 중인 시험 화면에는 두지 않는다 */
+export function ResultHeader() {
+  const { locale, brand } = useMessages();
+  return (
+    <header className="no-print bg-header">
+      <div className="mx-auto flex h-[56px] w-full max-w-5xl items-center px-3 sm:px-4">
+        <Link href={localePath(locale)} className="text-[21px] font-extrabold tracking-tight text-white">
+          {brand}
+        </Link>
+      </div>
+    </header>
+  );
+}
 
 /** 결과 화면: 점수, 과목별 정답률, 합격 기준 대비 판정, 약점 단원, 다시 풀기·오답노트 */
 export function ResultView({
@@ -45,13 +52,13 @@ export function ResultView({
   const { locale, m: all } = useMessages();
   const m = all.result;
   const certPath = localePath(locale, `/cert/${cert.id}`);
-  const notes = useStored<NoteEntry[]>(STORAGE_KEYS.notes, EMPTY_NOTES);
 
   const graded = gradeQuiz(questions, answers);
   const summary = summarize(graded, cert);
   const verdict = summary.verdict;
   const wrong = graded.filter((g) => !g.correct);
-  const allSaved = wrong.length > 0 && wrong.every((w) => notes.some((n) => n.questionId === w.questionId));
+  // 오답노트에는 채점하는 순간 "답을 골라서 틀린 문제"만 자동으로 담긴다 (lib/storage.ts 의 addWrongNotes)
+  const savedCount = wrong.filter((w) => w.chosen !== null).length;
   const criteria = cert.examInfo.passCriteria;
 
   const retryWrong = () => {
@@ -65,10 +72,6 @@ export function ResultView({
     });
     window.scrollTo(0, 0);
     router.push(`${certPath}/quiz`);
-  };
-
-  const saveNotes = () => {
-    addNotes(wrong.map((w) => ({ questionId: w.questionId, certId: cert.id, chosen: w.chosen })));
   };
 
   return (
@@ -184,20 +187,14 @@ export function ResultView({
 
       <section aria-label={m.next} className="grid gap-2 sm:grid-cols-2">
         {wrong.length > 0 && (
-          <>
-            <button type="button" className="btn btn-primary btn-lg" onClick={retryWrong}>
-              {fmt(m.retryWrong, { n: wrong.length })}
-            </button>
-            {allSaved ? (
-              <Link href={`${certPath}/notes`} className="btn btn-lg">
-                {m.saved}
-              </Link>
-            ) : (
-              <button type="button" className="btn btn-lg" onClick={saveNotes}>
-                {fmt(m.save, { n: wrong.length })}
-              </button>
-            )}
-          </>
+          <button type="button" className="btn btn-primary btn-lg" onClick={retryWrong}>
+            {fmt(m.retryWrong, { n: wrong.length })}
+          </button>
+        )}
+        {savedCount > 0 && (
+          <Link href={`${certPath}/notes`} className="btn btn-lg">
+            {fmt(m.saved, { n: savedCount })}
+          </Link>
         )}
         {againAction}
         <Link href={certPath} className="btn btn-lg">

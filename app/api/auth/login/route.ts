@@ -56,7 +56,10 @@ export async function POST(request: Request) {
     return json({ error: WRONG }, 401);
   }
 
-  await db.prepare("DELETE FROM login_attempts WHERE username = ?").bind(username).run();
+  await db.batch([
+    db.prepare("DELETE FROM login_attempts WHERE username = ?").bind(username),
+    db.prepare("UPDATE users SET last_seen_at = ? WHERE id = ?").bind(now, user.id),
+  ]);
   await createSession(db, user.id, request);
   return json({ user: { id: user.id, username: user.username, nickname: user.nickname } });
 }

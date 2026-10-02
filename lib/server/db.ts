@@ -53,12 +53,34 @@ const SCHEMA = [
      fails INTEGER NOT NULL,
      locked_until INTEGER NOT NULL
    )`,
+  // 문제 오류 신고 (누가 보냈는지는 저장하지 않는다). 관리자 화면(/admin)에서 본다
+  `CREATE TABLE IF NOT EXISTS reports (
+     id TEXT PRIMARY KEY,
+     cert_id TEXT NOT NULL,
+     question_id TEXT NOT NULL,
+     stem TEXT NOT NULL,
+     reason TEXT NOT NULL,
+     memo TEXT NOT NULL,
+     created_at INTEGER NOT NULL,
+     resolved_at INTEGER
+   )`,
+  `CREATE INDEX IF NOT EXISTS reports_created ON reports (created_at)`,
 ];
+
+/** 나중에 추가한 칸. 이미 있으면 오류가 나므로 하나씩 실행하고 그 오류는 넘어간다 */
+const ADDED_COLUMNS = [`ALTER TABLE users ADD COLUMN last_seen_at INTEGER`];
 
 let schemaReady: Promise<void> | null = null;
 
 async function ensureSchema(db: D1Like): Promise<void> {
   await db.batch(SCHEMA.map((sql) => db.prepare(sql)));
+  for (const sql of ADDED_COLUMNS) {
+    try {
+      await db.prepare(sql).run();
+    } catch (error) {
+      if (!/duplicate column/i.test(String(error))) throw error;
+    }
+  }
 }
 
 /** DB 를 돌려준다. 연결되어 있지 않으면(바인딩 없음) null */

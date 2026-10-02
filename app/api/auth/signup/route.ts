@@ -18,9 +18,13 @@ export async function POST(request: Request) {
 
   const id = randomToken(12);
   const { hash, salt } = await hashPassword(password);
+  const now = Date.now();
   await db
-    .prepare("INSERT INTO users (id, username, nickname, pw_hash, pw_salt, created_at) VALUES (?, ?, ?, ?, ?, ?)")
-    .bind(id, username, nickname, hash, salt, Date.now())
+    .prepare(
+      `INSERT INTO users (id, username, nickname, pw_hash, pw_salt, created_at, last_seen_at)
+       VALUES (?, ?, ?, ?, ?, ?, ?)`,
+    )
+    .bind(id, username, nickname, hash, salt, now, now)
     .run();
   await createSession(db, id, request);
   return json({ user: { id, username, nickname } });

@@ -27,7 +27,11 @@
     "fontSizeShort": "Text",
     "fontButton": "Text size: {size}",
     "sample": "A",
-    "sizes": { "md": "Normal", "lg": "Large", "xl": "Extra large" },
+    "sizes": {
+      "md": "Normal",
+      "lg": "Large",
+      "xl": "Extra large"
+    },
     "light": "Light",
     "dark": "Dark"
   },
@@ -50,13 +54,20 @@
     "starsLabel": "{label}: {value} out of 5",
     "listSeparator": ", "
   },
-  "levels": { "basic": "Easy", "intermediate": "Medium", "advanced": "Hard" },
+  "levels": {
+    "basic": "Easy",
+    "intermediate": "Medium",
+    "advanced": "Hard"
+  },
   "source": {
     "predicted": "AI practice question",
     "past": "{year} exam, round {round}",
     "unverified": "Not yet reviewed"
   },
-  "ad": { "label": "Advertisement", "slot": "Ad slot ({position})" },
+  "ad": {
+    "label": "Advertisement",
+    "slot": "Ad slot ({position})"
+  },
   "notFound": {
     "title": "Page not found",
     "text": "The address may have changed or been mistyped.",
@@ -80,7 +91,11 @@
     "totalCount": "{n} exams",
     "noResult": "No matching exam. Try a shorter name.",
     "howTitle": "How it works",
-    "steps": ["Pick an exam", "Pick Easy, Medium, or Hard", "Answer 5 questions, get instant answers"],
+    "steps": [
+      "Pick an exam",
+      "Pick Easy, Medium, or Hard",
+      "Answer 5 questions, get instant answers"
+    ],
     "readyCount": "{n} exams available now"
   },
   "cert": {
@@ -173,7 +188,9 @@
     "unansweredList": "{n} unanswered — tap a number to go there.",
     "confirmGrade": "Grade now?",
     "confirmSubmit": "Submit your answers?",
-    "unansweredWarn": "{n} unanswered. Unanswered questions count as wrong.",
+    "unansweredGrade": "{n} unanswered. Grade now?",
+    "unansweredSubmit": "{n} unanswered. Submit anyway?",
+    "unansweredNote": "Unanswered questions count as wrong.",
     "yesGrade": "Yes, grade",
     "yesSubmit": "Yes, submit",
     "noContinue": "No, keep going",
@@ -249,8 +266,7 @@
     "viewSummary": "Unit summary →",
     "next": "Next steps",
     "retryWrong": "Retry {n} wrong questions →",
-    "saved": "✔ Saved · Open review list",
-    "save": "Save {n} wrong questions to review list",
+    "saved": "{n} wrong questions saved to review list ✓ Open",
     "toCert": "Back to {name}",
     "review": "Question by question",
     "ok": "✔ Correct",
@@ -259,7 +275,7 @@
     "myChoiceMark": "← Your answer"
   },
   "report": {
-    "saved": "Report saved. Thank you.",
+    "saved": "Report received. Thank you.",
     "ask": "What is wrong with this question?",
     "reason": "Reason",
     "reasons": {
@@ -270,14 +286,14 @@
       "other": "Other"
     },
     "memo": "Details (optional)",
-    "submit": "Save report"
+    "submit": "Send report"
   },
   "notes": {
     "title": "Review list",
     "intro": "Your wrong questions, grouped by exam.",
     "loading": "Loading your review list…",
     "empty": "Your review list is empty.",
-    "emptyHint": "Tap 'Save wrong questions to review list' on the results screen to add them here.",
+    "emptyHint": "Questions you get wrong are added here automatically when you grade.",
     "solve5": "{name}: 5 questions →",
     "viewWrong": "View {n} wrong questions →",
     "backToCert": "← {name}",
@@ -302,7 +318,12 @@
     "guestHint": "No login needed to practice. Logging in saves your records to your account so they follow you across devices.",
     "titles": "Badges · {n} certifications held",
     "noOwned": "No certifications added yet.",
-    "stats": { "solved": "Answered", "accuracy": "Accuracy", "exams": "Exams taken", "notes": "Review list" },
+    "stats": {
+      "solved": "Answered",
+      "accuracy": "Accuracy",
+      "exams": "Exams taken",
+      "notes": "Review list"
+    },
     "countItems": "{n}",
     "countTimes": "{n}",
     "register": "Add a certification you hold",
@@ -366,23 +387,35 @@
     "password_too_long": "Password: 72 characters or fewer",
     "nickname_rule": "Display name: 1–20 characters",
     "password_mismatch": "The passwords do not match.",
-    "credentials_required": "Enter your username and password."
+    "credentials_required": "Enter your username and password.",
+    "too_many": "Too many reports right now. Please try again shortly."
   },
   "admin": {
-    "title": "Problem reports (admin)",
-    "loading": "Loading reports…",
-    "localOnly": "Only reports made on this device (browser) are shown.",
-    "count": "{n} reports",
+    "title": "Admin",
+    "dbMissing": "The member database is not connected.",
+    "members": "Members",
+    "total": "Total members",
+    "today": "Joined today",
+    "week": "Joined this week",
+    "people": "{n}",
+    "memberList": "Members (newest first, up to {n})",
+    "noMembers": "No members yet.",
+    "username": "Username",
+    "nickname": "Display name",
+    "joined": "Joined",
+    "lastSeen": "Last seen",
+    "solved": "Questions answered",
+    "never": "None",
+    "reports": "Problem reports",
+    "count": "{open} open · {n} total",
     "none": "No reports.",
     "questionId": "Question id: {id}",
     "question": "Question: {stem}…",
     "memo": "Note: {memo}",
-    "done": "Done (remove from list)",
-    "json": "All reports (JSON)",
-    "copy": "Copy JSON",
-    "copied": "✔ Copied",
-    "clear": "Delete all reports",
-    "yesClear": "Yes, delete all"
+    "done": "Mark as done",
+    "resolved": "Done",
+    "undo": "Mark as open",
+    "failed": "Could not save. Please try again."
   },
   "seo": {
     "subjectSeparator": ", ",
@@ -426,7 +459,7 @@
       "description": "Log in to see your scores, answered questions, wrong answers, and certifications in one place."
     },
     "admin": {
-      "title": "Problem Reports | {brand}",
+      "title": "Admin | {brand}",
       "description": "Admin page."
     },
     "quiz": {

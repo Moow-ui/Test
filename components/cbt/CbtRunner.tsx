@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect, useEffectEvent, useState } from "react";
 import { ExamScreen } from "@/components/exam/ExamScreen";
 import type { QuizCert } from "@/components/quiz/QuizRunner";
-import { ResultView } from "@/components/quiz/ResultView";
+import { ResultHeader, ResultView } from "@/components/quiz/ResultView";
 import { FoldMark } from "@/components/Fold";
 import { useQuestionPool, useQuestions } from "@/lib/data/client";
 import { formatClock } from "@/lib/format";
@@ -13,6 +13,7 @@ import { buildMockExam, mockExamSeconds } from "@/lib/quiz-engine";
 import {
   STORAGE_KEYS,
   addResult,
+  addWrongNotes,
   clearCbt,
   finishCbt,
   getHistory,
@@ -79,6 +80,7 @@ export function CbtRunner({ cert }: { cert: QuizCert }) {
         wrongIds,
       });
     }
+    addWrongNotes(cert.id, asked, target.answers);
     setRunning(false);
     window.scrollTo(0, 0);
   }
@@ -121,19 +123,22 @@ export function CbtRunner({ cert }: { cert: QuizCert }) {
   // ───────── 결과 ─────────
   if (session?.finishedAt && total > 0) {
     return (
-      <Pad>
-        <ResultView
-          cert={cert}
-          label={m.title}
-          answers={session.answers}
-          questions={examQuestions}
-          againAction={
-            <button type="button" className="btn btn-lg" onClick={() => clearCbt(cert.id)}>
-              {m.again}
-            </button>
-          }
-        />
-      </Pad>
+      <>
+        <ResultHeader />
+        <Pad>
+          <ResultView
+            cert={cert}
+            label={m.title}
+            answers={session.answers}
+            questions={examQuestions}
+            againAction={
+              <button type="button" className="btn btn-lg" onClick={() => clearCbt(cert.id)}>
+                {m.again}
+              </button>
+            }
+          />
+        </Pad>
+      </>
     );
   }
 

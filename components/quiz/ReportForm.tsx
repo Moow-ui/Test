@@ -1,16 +1,20 @@
 "use client";
 
 import { useState } from "react";
-import { REPORT_REASONS, addReport } from "@/lib/storage";
+import { errorText } from "@/components/auth/AuthForm";
+import { sendReport } from "@/lib/report-client";
+import { REPORT_MEMO_MAX, REPORT_REASONS, REPORT_STEM_MAX, type ReportReason } from "@/lib/report-rules";
 import type { Question } from "@/lib/types";
 import { useMessages } from "@/lib/use-messages";
 
-/** 문제 오류 신고 (MVP: 이 기기의 localStorage 에 기록. /admin/reports 에서 확인) */
+/** 문제 오류 신고: 서버에 저장되고 관리자 화면(/admin)에서 본다. 로그인 없이 보낼 수 있다 */
 export function ReportForm({ question, onClose }: { question: Question; onClose: () => void }) {
   const { m: all } = useMessages();
   const m = all.report;
-  const [reason, setReason] = useState<string>(REPORT_REASONS[0]);
+  const [reason, setReason] = useState<ReportReason>(REPORT_REASONS[0]);
   const [memo, setMemo] = useState("");
+  const [busy, setBusy] = useState(false);
+  const [error, setError] = useState<string | null>(null);
   const [done, setDone] = useState(false);
 
   if (done) {
@@ -24,19 +28,27 @@ export function ReportForm({ question, onClose }: { question: Question; onClose:
     );
   }
 
+  const submit = async () => {
+    setBusy(true);
+    setError(null);
+    const code = await sendReport({
+      certId: question.certId,
+      questionId: question.id,
+      stem: question.stem.slice(0, REPORT_STEM_MAX),
+      reason,
+      memo: memo.trim(),
+    });
+    setBusy(false);
+    if (code) setError(code);
+    else setDone(true);
+  };
+
   return (
     <form
       className="mt-3 space-y-3 rounded-lg border-2 border-line bg-surface p-3"
       onSubmit={(e) => {
         e.preventDefault();
-        addReport({
-          certId: question.certId,
-          questionId: question.id,
-          stem: question.stem.slice(0, 80),
-          reason,
-          memo: memo.trim(),
-        });
-        setDone(true);
+        void submit();
       }}
     >
       <p className="font-bold">{m.ask}</p>
@@ -47,7 +59,7 @@ export function ReportForm({ question, onClose }: { question: Question; onClose:
         <select
           id="report-reason"
           value={reason}
-          onChange={(e) => setReason(e.target.value)}
+          onChange={(e) => setReason(e.target.value as ReportReason)}
           className="mt-1 h-12 w-full rounded-lg border-2 border-line bg-surface px-2 text-ink"
         >
           {REPORT_REASONS.map((r) => (
@@ -66,12 +78,17 @@ export function ReportForm({ question, onClose }: { question: Question; onClose:
           value={memo}
           onChange={(e) => setMemo(e.target.value)}
           rows={3}
-          maxLength={500}
+          maxLength={REPORT_MEMO_MAX}
           className="mt-1 w-full rounded-lg border-2 border-line bg-surface p-2 text-ink"
         />
       </div>
+      {error && (
+        <p role="alert" className="rounded-lg border border-bad bg-bad-soft p-2 font-bold">
+          {errorText(all, error)}
+        </p>
+      )}
       <div className="flex flex-wrap gap-2">
-        <button type="submit" className="btn btn-primary">
+        <button type="submit" disabled={busy} className="btn btn-primary">
           {m.submit}
         </button>
         <button type="button" className="btn" onClick={onClose}>

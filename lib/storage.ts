@@ -3,7 +3,7 @@ import type { QuizLevel } from "./types";
 /**
  * 브라우저 저장소(localStorage) 접근 계층 (클라이언트 전용).
  *
- * 풀이 기록·진행 중인 풀이·오답노트·신고·화면 설정을 모두 여기서만 읽고 쓴다.
+ * 풀이 기록·진행 중인 풀이·오답노트·화면 설정을 모두 여기서만 읽고 쓴다.
  * 나중에 로그인/Supabase 로 옮길 때 이 파일의 함수 내용만 바꾸면 된다.
  * 화면에서는 lib/use-storage.ts 의 훅으로 값을 구독한다.
  */
@@ -15,7 +15,6 @@ export const STORAGE_KEYS = {
   recent: "qpass:recent",
   history: "qpass:history",
   notes: "qpass:notes",
-  reports: "qpass:reports",
   results: "qpass:results",
   ownedCerts: "qpass:ownedCerts",
   lastLevel: "qpass:lastLevel",
@@ -465,6 +464,22 @@ export function addNotes(items: Array<Omit<NoteEntry, "addedAt" | "memo">>): num
   return added;
 }
 
+/**
+ * 채점한 순간 틀린 문제를 오답노트에 담는다 (연습 풀이·실전 CBT 공용).
+ * 답을 골라서 틀린 문제만 담고, 안 푼 문제는 담지 않는다. 이미 있는 문제는 겹쳐 담기지 않는다.
+ */
+export function addWrongNotes(
+  certId: string,
+  questions: Array<{ id: string; answer: number }>,
+  answers: Record<string, number | undefined>,
+): void {
+  const wrong = questions.flatMap((q) => {
+    const chosen = answers[q.id];
+    return chosen !== undefined && chosen !== q.answer ? [{ questionId: q.id, certId, chosen }] : [];
+  });
+  if (wrong.length > 0) addNotes(wrong);
+}
+
 /** 오답노트의 문제에 내 메모를 적는다 */
 export function setNoteMemo(questionId: string, memo: string): void {
   writeJson(
@@ -485,46 +500,6 @@ export function clearNotes(certId: string): void {
     STORAGE_KEYS.notes,
     getNotes().filter((n) => n.certId !== certId),
   );
-}
-
-// ───────────────────────── 문제 오류 신고 ─────────────────────────
-
-/** 신고 이유 코드. 화면 문구는 messages 의 "report.reasons" 에 있다 */
-export const REPORT_REASONS = ["wrong_answer", "bad_question", "bad_explanation", "typo", "other"] as const;
-export type ReportReason = (typeof REPORT_REASONS)[number];
-
-export interface ReportEntry {
-  id: string;
-  certId: string;
-  questionId: string;
-  /** 신고 당시 문제 앞부분 (목록에서 알아보기 위한 용도) */
-  stem: string;
-  /** 신고 이유 코드 (예전 기록에는 한글 문장이 들어 있을 수 있다) */
-  reason: string;
-  memo: string;
-  at: number;
-}
-
-export const EMPTY_REPORTS: ReportEntry[] = [];
-
-export function getReports(): ReportEntry[] {
-  return readJson<ReportEntry[]>(STORAGE_KEYS.reports, EMPTY_REPORTS);
-}
-
-export function addReport(entry: Omit<ReportEntry, "id" | "at">, now = Date.now()): void {
-  const id = `${now}-${Math.random().toString(36).slice(2, 8)}`;
-  writeJson(STORAGE_KEYS.reports, [{ ...entry, id, at: now }, ...getReports()]);
-}
-
-export function removeReport(id: string): void {
-  writeJson(
-    STORAGE_KEYS.reports,
-    getReports().filter((r) => r.id !== id),
-  );
-}
-
-export function clearReports(): void {
-  removeKey(STORAGE_KEYS.reports);
 }
 
 export function newSessionId(now = Date.now()): string {

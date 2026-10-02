@@ -104,10 +104,21 @@ export function ExamScreen({
 
   const forward = () => (isLast ? requestSubmit() : goTo(index + 1));
 
+  // 확인창이 뜨면 초점을 창으로 옮긴다 (화면 읽기 프로그램이 읽어 주고, Tab 이 창 안의 버튼부터 시작한다)
+  const dialogRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    if (confirming) dialogRef.current?.focus();
+  }, [confirming]);
+
   // 키보드: 1~4 답 표기, ←/→ 이전·다음, Enter 다음(마지막 문제에서는 채점)
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (e.ctrlKey || e.metaKey || e.altKey) return;
+      // 확인창이 떠 있는 동안에는 뒤의 시험 화면을 건드리지 않는다. Esc 는 "계속 풀기"
+      if (confirming) {
+        if (e.key === "Escape") setConfirming(false);
+        return;
+      }
       const target = e.target as HTMLElement | null;
       const tag = target?.tagName;
       const typing =
@@ -307,56 +318,67 @@ export function ExamScreen({
         </aside>
       </div>
 
-      {/* ───── 안 푼 문제 / 제출 확인 ───── */}
-      {(showUnanswered || confirming) && (
-        <div className="mx-auto w-full max-w-6xl px-3 pb-2 text-[15px]">
-          {showUnanswered && (
-            <div className="border border-line bg-surface p-3">
-              {unanswered.length === 0 ? (
-                <p className="font-bold">{m.allAnswered}</p>
-              ) : (
-                <>
-                  <p className="font-bold">{fmt(m.unansweredList, { n: unanswered.length })}</p>
-                  <ul className="mt-2 flex flex-wrap gap-1.5">
-                    {unanswered.map(({ q, i }) => (
-                      <li key={q.id}>
-                        <button
-                          type="button"
-                          className="h-10 min-w-11 rounded border-2 border-line bg-surface px-2 font-bold hover:border-ink"
-                          onClick={() => goTo(i)}
-                        >
-                          {i + 1}
-                        </button>
-                      </li>
-                    ))}
-                  </ul>
-                </>
-              )}
+      {/* ───── 제출 확인: 아래 버튼 줄에 가리지 않도록 화면 가운데에 띄운다 ───── */}
+      {confirming && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4">
+          <div
+            ref={dialogRef}
+            tabIndex={-1}
+            role="alertdialog"
+            aria-modal="true"
+            aria-labelledby="submit-title"
+            aria-describedby="submit-text"
+            className="w-full max-w-md border-2 border-[#1e3a8a] bg-surface p-5 text-[17px] outline-none"
+          >
+            <h2 id="submit-title" className="text-[20px] font-extrabold">
+              {unanswered.length === 0
+                ? submitKind === "grade"
+                  ? m.confirmGrade
+                  : m.confirmSubmit
+                : fmt(submitKind === "grade" ? m.unansweredGrade : m.unansweredSubmit, { n: unanswered.length })}
+            </h2>
+            <p id="submit-text" className="mt-2">
+              {unanswered.length > 0 ? m.unansweredNote : m.allAnswered}
+            </p>
+            <div className="mt-4 flex flex-col gap-2 sm:flex-row">
+              <button type="button" className="btn btn-primary btn-lg flex-1" onClick={onSubmit}>
+                {submitKind === "grade" ? m.yesGrade : m.yesSubmit}
+              </button>
+              <button type="button" className="btn btn-lg flex-1" onClick={() => setConfirming(false)}>
+                {m.noContinue}
+              </button>
             </div>
-          )}
-          {confirming && (
-            <div role="alertdialog" aria-labelledby="submit-title" className="mt-2 border-2 border-[#1e3a8a] bg-primary-soft p-3">
-              <h2 id="submit-title" className="font-extrabold">
-                {submitKind === "grade" ? m.confirmGrade : m.confirmSubmit}
-              </h2>
-              <p className="mt-1">
-                {unanswered.length > 0 ? fmt(m.unansweredWarn, { n: unanswered.length }) : m.allAnswered}
-              </p>
-              <div className="mt-2 flex flex-wrap gap-2">
-                <button type="button" className="btn btn-primary" onClick={onSubmit}>
-                  {submitKind === "grade" ? m.yesGrade : m.yesSubmit}
-                </button>
-                <button type="button" className="btn" onClick={() => setConfirming(false)}>
-                  {m.noContinue}
-                </button>
-              </div>
-            </div>
-          )}
+          </div>
         </div>
       )}
 
       {/* ───── 아래: 바로 답 확인 · 이전 · 다음 · 안 푼 문제 · 제출 ───── */}
       <footer className="sticky bottom-0 border-t-2 border-line bg-surface">
+        {/* 안 푼 문제 목록: 버튼 줄 바로 위에 붙여 항상 보이게 한다 */}
+        {showUnanswered && (
+          <div className="mx-auto max-h-[40dvh] w-full max-w-6xl overflow-y-auto border-b border-line px-3 py-2 text-[15px]">
+            {unanswered.length === 0 ? (
+              <p className="font-bold">{m.allAnswered}</p>
+            ) : (
+              <>
+                <p className="font-bold">{fmt(m.unansweredList, { n: unanswered.length })}</p>
+                <ul className="mt-2 flex flex-wrap gap-1.5">
+                  {unanswered.map(({ q, i }) => (
+                    <li key={q.id}>
+                      <button
+                        type="button"
+                        className="h-10 min-w-11 rounded border-2 border-line bg-surface px-2 font-bold hover:border-ink"
+                        onClick={() => goTo(i)}
+                      >
+                        {i + 1}
+                      </button>
+                    </li>
+                  ))}
+                </ul>
+              </>
+            )}
+          </div>
+        )}
         <div className="mx-auto flex w-full max-w-6xl flex-wrap items-center justify-between gap-x-3 gap-y-2 px-3 py-2 text-[15px] font-bold">
           <div className="flex flex-1 items-center gap-2">
             <button

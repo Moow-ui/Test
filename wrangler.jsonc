@@ -23,6 +23,10 @@
       "database_name": "qpass"
     }
   ],
+  // 관리자 화면(/admin) 잠금에 쓰는 값 CF_ACCESS_TEAM_DOMAIN, CF_ACCESS_AUD 는
+  // Cloudflare 대시보드(Worker → 설정 → 변수 및 비밀)에 넣는다. 배포해도 그 값이 지워지지 않게 한다.
+  // 두 값이 없으면 /admin 은 아무도 열 수 없다 (lib/server/access.ts).
+  "keep_vars": true,
   "observability": {
     "enabled": true
   }

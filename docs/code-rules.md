@@ -51,7 +51,8 @@
   - 서버 컴포넌트는 `getMessages(locale)`, 클라이언트 컴포넌트는 `useMessages()`. 변수는 `fmt("{n}문제", { n })`.
   - 긴 설명 문장 대신 짧은 라벨.
 - **주소**: 모든 화면은 `app/[lang]/` 아래. 링크는 `localePath(locale, "/cert/…")` 로 만든다.
-  - 예전 주소(`/cert/…`, `/notes`, `/profile`, `/admin/reports`)는 `next.config.ts` 의 `redirects` 가 `/ko/…` 로 301.
+  - 예전 주소(`/cert/…`, `/notes`, `/profile`)는 `next.config.ts` 의 `redirects` 가 `/ko/…` 로 301.
+  - 관리자 화면 `/admin` 만 언어 경로 밖에 있다 (5-1 참고).
 - **언어 감지는 루트(`/`)에서만** (`app/route.ts`): 쿠키(`NEXT_LOCALE`) → 브라우저 언어 → 모르면 `/en`.
   그 밖의 주소에서는 옮기지 않고 맨 위에 한 줄 안내만 띄운다 (`components/i18n/LocaleBanner.tsx`).
 - **자격증의 나라**: `/ko` 에는 KR, `/en` 에는 US 만 (`getCertList(country)`, `getCertificationIn(country, id)`). 다른 나라 자격증 주소는 404.
@@ -85,11 +86,14 @@
   - 그 아래: 실전 CBT 체험 → 접힌 묶음 2개(시험 정보, 출제 분석)
   - 출제 경향 요약·소개·FAQ 는 맨 아래에 작게 접어 둔다 (`<details>`, HTML 에는 유지)
 - **결과 화면** (`components/quiz/ResultView.tsx`): 점수 → 과목별 정답률 → 틀린 핵심 개념 → 약한 단원 → 버튼 → 문제별 결과.
+  - 맨 위 왼쪽에 사이트 이름(`ResultHeader`, 누르면 메인). 풀이 중인 시험 화면에는 두지 않는다.
+  - **오답노트는 채점·제출하는 순간 자동 저장** (`lib/storage.ts` 의 `addWrongNotes`). 답을 골라서 틀린 문제만 담고 안 푼 문제는 담지 않는다 (채점은 안 푼 문제도 오답). 버튼의 개수는 담긴 개수와 같다.
 - **내 정보** (`components/profile/`): 로그인 전에는 로그인·회원가입 폼. 로그인하면 이름·칭호·요약 수치만 보이고 나머지는 접혀 있다.
 - **출제 분석** (`components/cert/AnalysisPanel.tsx`): 과목을 가로로, 단원은 "1단원 : 직류회로". 막대 그래프 없이 ★ 와 %.
 - **시험 화면** (`components/exam/ExamScreen.tsx`, 연습 풀이·실전 CBT 공용): 큐넷 CBT 와 같은 배열.
   - 위: 종목명·문제 수(CBT 는 남은 시간)·글자크기 100/150/200% / 가운데: 문제+보기, 오른쪽: 답안 표기란
   - 아래: 이전·다음·**바로 답 확인하기**(연습만, 기본 켜짐)·안 푼 문제·채점하기
+  - 제출 확인창은 화면 가운데에 띄운다 (아래 고정 버튼 줄 뒤에 그리면 가려진다). 실전 CBT 는 다 풀어도 한 번 묻고, 연습 풀이는 다 풀었으면 바로 채점. 안 푼 문제 목록은 버튼 줄 바로 위.
   - 체크가 켜져 있으면 고르는 즉시 채점하고 답을 잠근다. 꺼져 있으면 마지막에 한꺼번에 채점한다.
   - 문제 위에 출처: "AI 예상문제 · 검수 전". 해설·오류 신고는 눌러야 펼쳐진다.
   - 상단 메뉴·하단 안내 없음 (`app/[lang]/(exam)/layout.tsx`). 키보드: 1~4 선택, Enter/→ 다음, ← 이전.
@@ -142,6 +146,18 @@
   - 로그아웃하면 이 기기의 기록을 지운다. 회원 탈퇴는 계정과 기록을 모두 지운다.
 - 화면은 `lib/storage.ts` 의 값만 읽는다. 서버와 맞추는 일은 `components/auth/SyncManager.tsx`.
 - 기록은 **문제 id** 로 저장된다. 그래서 문제 id 를 바꾸면 안 된다 ([data-rules.md](data-rules.md)).
+
+### 5-1. 관리자 화면 (`/admin`)
+
+- 회원 수, 오늘·이번 주 가입자(한국 시간), 회원 목록, 문제 오류 신고 목록. 비밀번호 해시·소금은 조회하지 않는다 (`lib/server/admin.ts`).
+- **코드에 관리자 비밀번호를 만들지 않는다.** 잠금은 Cloudflare Access(Zero Trust)가 하고, 서버는 Access 가 붙여 주는 토큰(`Cf-Access-Jwt-Assertion`)의 서명·발급자·AUD·기간을 직접 검증한다 (`lib/server/access.ts`).
+  - Access 를 거치지 않은 요청(workers.dev 주소 등)은 `/admin`, `/api/admin/…` 모두 404.
+  - 설정값 `CF_ACCESS_TEAM_DOMAIN`, `CF_ACCESS_AUD` 는 Cloudflare 대시보드의 Worker 변수에 넣는다 (`wrangler.jsonc` 의 `keep_vars` 가 배포 때 지워지지 않게 한다). 없으면 아무도 못 들어온다.
+  - 개발 서버(`npm run dev`)에서만 검사를 건너뛴다.
+- 관리자 API 를 새로 만들면 맨 처음에 `getAdminIdentity(request.headers)` 를 확인한다.
+- `/admin` 은 요청할 때마다 그리는 유일한 화면이다 (`force-dynamic`). 언어 경로 밖에 있어 자기 `layout.tsx` 를 가진다.
+- 문제 오류 신고는 `POST /api/reports` 로 D1 의 `reports` 표에 쌓인다 (로그인 불필요, 보낸 사람은 저장하지 않음, 입력 규칙은 `lib/report-rules.ts`).
+- 회원의 마지막 접속일(`users.last_seen_at`)은 로그인·가입 때와 `/api/auth/me` 에서 10분에 한 번 고친다.
 
 ## 6. SEO
 

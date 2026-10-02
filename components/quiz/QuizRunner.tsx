@@ -10,6 +10,7 @@ import { QUIZ_COUNTS, buildLevelQuiz, buildQuiz } from "@/lib/quiz-engine";
 import {
   STORAGE_KEYS,
   addResult,
+  addWrongNotes,
   getHistory,
   finishSession,
   getNotes,
@@ -24,7 +25,7 @@ import {
 import type { ExamInfo, PoolItem, Question, QuizLevel, Subject } from "@/lib/types";
 import { useMessages } from "@/lib/use-messages";
 import { useHydrated, useStored } from "@/lib/use-storage";
-import { ResultView } from "./ResultView";
+import { ResultHeader, ResultView } from "./ResultView";
 
 export interface QuizCert {
   id: string;
@@ -185,19 +186,22 @@ export function QuizRunner({ cert }: { cert: QuizCert }) {
         ? `${certPath}/quiz?level=${session.level}&count=${total}&subject=${session.subjectId ?? "all"}`
         : `${certPath}/quiz?level=basic&count=5&subject=all`;
     return (
-      <Pad>
-        <ResultView
-          cert={cert}
-          label={session.label}
-          answers={session.answers}
-          questions={sessionQuestions}
-          againAction={
-            <Link href={againHref} className="btn btn-lg">
-              {m.quiz.again}
-            </Link>
-          }
-        />
-      </Pad>
+      <>
+        <ResultHeader />
+        <Pad>
+          <ResultView
+            cert={cert}
+            label={session.label}
+            answers={session.answers}
+            questions={sessionQuestions}
+            againAction={
+              <Link href={againHref} className="btn btn-lg">
+                {m.quiz.again}
+              </Link>
+            }
+          />
+        </Pad>
+      </>
     );
   }
 
@@ -242,6 +246,7 @@ export function QuizRunner({ cert }: { cert: QuizCert }) {
       score: Math.round(((total - wrongIds.length) / total) * 100),
       wrongIds,
     });
+    addWrongNotes(cert.id, sessionQuestions, session.answers);
     finishSession(session);
     window.scrollTo(0, 0);
   };

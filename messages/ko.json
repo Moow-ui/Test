@@ -27,7 +27,11 @@
     "fontSizeShort": "글씨",
     "fontButton": "글씨 {size}",
     "sample": "가",
-    "sizes": { "md": "보통", "lg": "크게", "xl": "아주 크게" },
+    "sizes": {
+      "md": "보통",
+      "lg": "크게",
+      "xl": "아주 크게"
+    },
     "light": "밝게",
     "dark": "어둡게"
   },
@@ -50,13 +54,20 @@
     "starsLabel": "{label} 5점 중 {value}점",
     "listSeparator": ", "
   },
-  "levels": { "basic": "초급", "intermediate": "중급", "advanced": "고급" },
+  "levels": {
+    "basic": "초급",
+    "intermediate": "중급",
+    "advanced": "고급"
+  },
   "source": {
     "predicted": "AI 예상문제",
     "past": "{year}년 {round}회 기출",
     "unverified": "검수 전"
   },
-  "ad": { "label": "광고 영역", "slot": "광고 자리 ({position})" },
+  "ad": {
+    "label": "광고 영역",
+    "slot": "광고 자리 ({position})"
+  },
   "notFound": {
     "title": "페이지를 찾을 수 없습니다",
     "text": "주소가 바뀌었거나 잘못 입력되었습니다.",
@@ -80,7 +91,11 @@
     "totalCount": "전체 {n}개",
     "noResult": "찾는 자격증이 없습니다. 이름을 짧게 줄여 보세요.",
     "howTitle": "사용 방법",
-    "steps": ["자격증 선택", "초급·중급·고급 선택", "5문제 풀고 바로 채점·해설"],
+    "steps": [
+      "자격증 선택",
+      "초급·중급·고급 선택",
+      "5문제 풀고 바로 채점·해설"
+    ],
     "readyCount": "지금 풀 수 있는 자격증 {n}개"
   },
   "cert": {
@@ -173,7 +188,9 @@
     "unansweredList": "안 푼 문제 {n}개 — 번호를 누르면 그 문제로 갑니다.",
     "confirmGrade": "채점할까요?",
     "confirmSubmit": "답안을 제출할까요?",
-    "unansweredWarn": "안 푼 문제가 {n}개 있습니다. 안 푼 문제는 틀린 것으로 채점됩니다.",
+    "unansweredGrade": "안 푼 문제 {n}개가 있습니다. 채점할까요?",
+    "unansweredSubmit": "안 푼 문제 {n}개가 있습니다. 제출할까요?",
+    "unansweredNote": "안 푼 문제는 틀린 것으로 채점됩니다.",
     "yesGrade": "네, 채점합니다",
     "yesSubmit": "네, 제출합니다",
     "noContinue": "아니요, 계속 풉니다",
@@ -249,8 +266,7 @@
     "viewSummary": "핵심정리 보기 →",
     "next": "다음에 할 일",
     "retryWrong": "틀린 문제 {n}개 다시 풀기 →",
-    "saved": "✔ 오답노트에 저장됨 · 오답노트 보기",
-    "save": "틀린 문제 {n}개 오답노트에 저장",
+    "saved": "틀린 문제 {n}개 오답노트에 저장됨 ✓ 보러 가기",
     "toCert": "{name} 페이지로 가기",
     "review": "문제별 결과",
     "ok": "✔ 정답",
@@ -259,7 +275,7 @@
     "myChoiceMark": "← 내가 고른 답"
   },
   "report": {
-    "saved": "신고가 저장되었습니다. 고맙습니다.",
+    "saved": "신고가 접수되었습니다. 고맙습니다.",
     "ask": "이 문제에서 무엇이 이상한가요?",
     "reason": "이유",
     "reasons": {
@@ -270,14 +286,14 @@
       "other": "기타"
     },
     "memo": "자세한 내용 (안 써도 됩니다)",
-    "submit": "신고 저장하기"
+    "submit": "신고 보내기"
   },
   "notes": {
     "title": "오답노트",
     "intro": "틀린 문제를 자격증별로 모아 둔 곳입니다.",
     "loading": "오답노트를 불러오고 있습니다…",
     "empty": "아직 오답노트에 담은 문제가 없습니다.",
-    "emptyHint": "결과 화면에서 '틀린 문제 오답노트에 저장'을 누르면 여기에 모입니다.",
+    "emptyHint": "문제를 풀고 채점하면 틀린 문제가 자동으로 여기에 모입니다.",
     "solve5": "{name} 5문제 풀기 →",
     "viewWrong": "틀린 문제 {n}개 보기 →",
     "backToCert": "← {name} 페이지",
@@ -302,7 +318,12 @@
     "guestHint": "로그인하지 않아도 모든 문제를 풀 수 있습니다. 로그인하면 기록이 계정에 저장되어 다른 기기에서도 이어집니다.",
     "titles": "칭호 · 보유 자격증 {n}개",
     "noOwned": "아직 등록한 자격증이 없습니다.",
-    "stats": { "solved": "푼 문제", "accuracy": "정답률", "exams": "시험 본 횟수", "notes": "오답노트" },
+    "stats": {
+      "solved": "푼 문제",
+      "accuracy": "정답률",
+      "exams": "시험 본 횟수",
+      "notes": "오답노트"
+    },
     "countItems": "{n}개",
     "countTimes": "{n}회",
     "register": "딴 자격증 등록하기",
@@ -366,23 +387,35 @@
     "password_too_long": "비밀번호는 72자 이하",
     "nickname_rule": "닉네임은 1~20자",
     "password_mismatch": "비밀번호 확인이 비밀번호와 다릅니다.",
-    "credentials_required": "아이디와 비밀번호를 입력해 주세요."
+    "credentials_required": "아이디와 비밀번호를 입력해 주세요.",
+    "too_many": "지금은 신고가 너무 많습니다. 잠시 후 다시 시도해 주세요."
   },
   "admin": {
-    "title": "문제 오류 신고 목록 (관리용)",
-    "loading": "신고 목록을 불러오고 있습니다…",
-    "localOnly": "이 기기(브라우저)에서 접수된 신고만 보입니다.",
-    "count": "신고 {n}건",
+    "title": "관리자",
+    "dbMissing": "회원 DB 가 연결되지 않았습니다.",
+    "members": "회원",
+    "total": "총 회원 수",
+    "today": "오늘 가입",
+    "week": "이번 주 가입",
+    "people": "{n}명",
+    "memberList": "회원 목록 (최근 가입순, 최대 {n}명)",
+    "noMembers": "아직 회원이 없습니다.",
+    "username": "아이디",
+    "nickname": "닉네임",
+    "joined": "가입일",
+    "lastSeen": "마지막 접속일",
+    "solved": "푼 문제 수",
+    "never": "기록 없음",
+    "reports": "문제 오류 신고",
+    "count": "처리 전 {open}건 · 전체 {n}건",
     "none": "접수된 신고가 없습니다.",
     "questionId": "문제 id: {id}",
     "question": "문제: {stem}…",
     "memo": "메모: {memo}",
-    "done": "처리 완료 (목록에서 지우기)",
-    "json": "전체 신고 내용 (JSON)",
-    "copy": "JSON 복사하기",
-    "copied": "✔ 복사했습니다",
-    "clear": "신고 모두 지우기",
-    "yesClear": "네, 모두 지웁니다"
+    "done": "처리 완료로 표시",
+    "resolved": "처리 완료",
+    "undo": "처리 전으로 되돌리기",
+    "failed": "저장하지 못했습니다. 다시 눌러 주세요."
   },
   "seo": {
     "subjectSeparator": "·",
@@ -426,7 +459,7 @@
       "description": "로그인하면 점수 기록, 내가 푼 문제, 오답, 보유 자격증을 한곳에서 볼 수 있습니다."
     },
     "admin": {
-      "title": "문제 오류 신고 목록 | {brand}",
+      "title": "관리자 | {brand}",
       "description": "관리용 페이지입니다."
     },
     "quiz": {

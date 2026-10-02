@@ -151,10 +151,13 @@ Cloudflare 대시보드 → Workers & Pages → `test` → **Settings → Build*
 npx wrangler deploy --dry-run
 ```
 
-## 7. 숨김 경로
+## 7. 관리자 화면
 
-- `/admin/reports` — 문제 오류 신고 목록. 비밀번호 없이 주소를 아는 사람만 들어가는 방식이며 검색엔진에는 색인되지 않습니다.
-  지금은 **신고한 사람의 브라우저에만** 저장되므로, 여러 사용자의 신고를 모으려면 나중에 서버 저장소로 옮겨야 합니다.
+- `/admin` — 회원 수, 오늘·이번 주 가입자, 회원 목록, 문제 오류 신고 목록. 비밀번호는 어디에도 표시하지 않습니다.
+- 잠금은 Cloudflare Access(Zero Trust)로 합니다. 코드에는 관리자 비밀번호가 없고, 서버가 Access 토큰을 직접 검증하므로
+  Access 를 거치지 않은 요청(workers.dev 주소 등)은 404 가 나옵니다.
+- Cloudflare 대시보드의 Worker 변수에 `CF_ACCESS_TEAM_DOMAIN`, `CF_ACCESS_AUD` 두 값을 넣어야 열립니다. 없으면 아무도 들어올 수 없습니다.
+  (자세한 규칙은 [docs/code-rules.md](docs/code-rules.md) 5-1)
 
 ## 8. 알아 둘 점
 
