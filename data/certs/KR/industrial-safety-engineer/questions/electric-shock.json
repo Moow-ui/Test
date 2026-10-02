@@ -20,7 +20,8 @@
     "reviewStatus": "unverified",
     "tags": [
       "감전"
-    ]
+    ],
+    "levelLock": true
   },
   {
     "id": "industrial-safety-engineer-p032",
@@ -43,7 +44,18 @@
     "reviewStatus": "unverified",
     "tags": [
       "누전 차단기"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   },
   {
     "id": "industrial-safety-engineer-p033",
@@ -67,7 +79,18 @@
     "tags": [
       "감전",
       "계산"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   },
   {
     "id": "industrial-safety-engineer-p034",
@@ -90,7 +113,18 @@
     "reviewStatus": "unverified",
     "tags": [
       "정전 작업"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
   },
   {
     "id": "industrial-safety-engineer-p035",
@@ -114,6 +148,17 @@
     "tags": [
       "감전",
       "계산"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
   }
 ]

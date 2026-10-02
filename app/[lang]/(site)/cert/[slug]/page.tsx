@@ -10,7 +10,8 @@ import { CertBoxes } from "@/components/cert/CertBoxes";
 import { RelatedCerts } from "@/components/cert/RelatedCerts";
 import { getCertList, getCertificationIn, getQuestions } from "@/lib/data";
 import { fmt, getMessages, isLocale, localeCountry, localePath } from "@/lib/i18n";
-import { countAvailable, mockExamSeconds } from "@/lib/quiz-engine";
+import { levelChoiceCount } from "@/lib/choices";
+import { countAvailable, mockExamShortage } from "@/lib/quiz-engine";
 import { certMainMeta, certOgImagePath, certPastMeta, faqJsonLd, toMetadata } from "@/lib/seo";
 import { certParams } from "@/lib/static-params";
 import type { QuizLevel } from "@/lib/types";
@@ -60,7 +61,6 @@ export default async function CertPage({ params }: Props) {
   ) as Record<QuizLevel, Record<string, number>>;
   const pastCount = questions.filter((q) => q.source === "past").length;
   const { examInfo, content } = cert;
-  const cbtCount = examInfo ? Math.min(examInfo.totalQuestions, questions.length) : 0;
   const pastMeta = certPastMeta(lang, cert, pastCount > 0, 0);
 
   return (
@@ -82,9 +82,19 @@ export default async function CertPage({ params }: Props) {
         ready={cert.ready}
         subjects={cert.subjects.map((s) => ({ id: s.id, name: s.name }))}
         counts={counts}
+        choiceCounts={
+          Object.fromEntries(
+            LEVELS.map((level) => [level, levelChoiceCount(level, examInfo?.choiceCount ?? 4)]),
+          ) as Record<QuizLevel, number>
+        }
         cbt={
-          cert.ready && examInfo
-            ? { questionCount: cbtCount, minutes: Math.round(mockExamSeconds(cbtCount, examInfo) / 60) }
+          // 실전 CBT 는 실제 시험과 같은 문항 수로만 낸다. 과목별 문제가 모자라면 "문제 준비 중"
+          cert.ready && examInfo && mockExamShortage(cert.subjects, questions).length === 0
+            ? {
+                questionCount: examInfo.totalQuestions,
+                minutes: examInfo.timeLimitMinutes,
+                choiceCount: examInfo.choiceCount,
+              }
             : null
         }
       />

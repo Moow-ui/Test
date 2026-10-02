@@ -20,7 +20,18 @@
     "reviewStatus": "unverified",
     "tags": [
       "지지물"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   },
   {
     "id": "electrical-engineer-p058",
@@ -43,7 +54,8 @@
     "reviewStatus": "unverified",
     "tags": [
       "지선"
-    ]
+    ],
+    "levelLock": true
   },
   {
     "id": "electrical-engineer-p059",
@@ -66,7 +78,18 @@
     "reviewStatus": "unverified",
     "tags": [
       "가공 전선"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
   },
   {
     "id": "electrical-engineer-p060",
@@ -90,6 +113,17 @@
     "tags": [
       "지지물",
       "계산"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
   }
 ]

@@ -20,7 +20,18 @@
     "reviewStatus": "unverified",
     "tags": [
       "네트워크 장비"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
   },
   {
     "id": "computer-literacy-1-p011",
@@ -43,7 +54,18 @@
     "reviewStatus": "unverified",
     "tags": [
       "프로토콜"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   },
   {
     "id": "computer-literacy-1-p012",
@@ -66,7 +88,8 @@
     "reviewStatus": "unverified",
     "tags": [
       "멀티미디어"
-    ]
+    ],
+    "levelLock": true
   },
   {
     "id": "computer-literacy-1-p013",
@@ -89,6 +112,17 @@
     "reviewStatus": "unverified",
     "tags": [
       "IP 주소"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   }
 ]

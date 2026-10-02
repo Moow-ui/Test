@@ -20,7 +20,18 @@
     "reviewStatus": "unverified",
     "tags": [
       "악성 프로그램"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   },
   {
     "id": "computer-literacy-2-p018",
@@ -43,7 +54,18 @@
     "reviewStatus": "unverified",
     "tags": [
       "해킹"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   },
   {
     "id": "computer-literacy-2-p019",
@@ -66,7 +88,8 @@
     "reviewStatus": "unverified",
     "tags": [
       "암호화"
-    ]
+    ],
+    "levelLock": true
   },
   {
     "id": "computer-literacy-2-p020",
@@ -89,6 +112,7 @@
     "reviewStatus": "unverified",
     "tags": [
       "보안"
-    ]
+    ],
+    "levelLock": true
   }
 ]

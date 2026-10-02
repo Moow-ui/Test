@@ -311,7 +311,7 @@ export interface QuizSession {
   level: QuizLevel | null;
   subjectId: string | null;
   questionIds: string[];
-  /** 문제 id → 고른 답(1~4) */
+  /** 문제 id → 고른 답 (원래 선지 번호. 선지를 줄여 보여 준 풀이에서도 원래 번호로 적는다) */
   answers: Record<string, number>;
   /** "바로 답 확인하기"로 이미 채점해 보여 준 문제 (답을 더 바꿀 수 없다) */
   revealed?: Record<string, boolean>;

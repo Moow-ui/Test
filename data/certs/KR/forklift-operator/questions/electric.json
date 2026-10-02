@@ -20,7 +20,18 @@
     "reviewStatus": "unverified",
     "tags": [
       "축전지"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   },
   {
     "id": "forklift-operator-p038",
@@ -43,7 +54,8 @@
     "reviewStatus": "unverified",
     "tags": [
       "축전지"
-    ]
+    ],
+    "levelLock": true
   },
   {
     "id": "forklift-operator-p039",
@@ -66,6 +78,17 @@
     "reviewStatus": "unverified",
     "tags": [
       "발전기"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   }
 ]

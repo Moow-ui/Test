@@ -20,7 +20,18 @@
     "reviewStatus": "unverified",
     "tags": [
       "소방시설의 종류"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
   },
   {
     "id": "fire-facility-engineer-electrical-p034",
@@ -43,7 +54,8 @@
     "reviewStatus": "unverified",
     "tags": [
       "소방시설의 종류"
-    ]
+    ],
+    "levelLock": true
   },
   {
     "id": "fire-facility-engineer-electrical-p035",
@@ -66,7 +78,18 @@
     "reviewStatus": "unverified",
     "tags": [
       "용어 정의"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
   },
   {
     "id": "fire-facility-engineer-electrical-p036",
@@ -89,7 +112,8 @@
     "reviewStatus": "unverified",
     "tags": [
       "방염"
-    ]
+    ],
+    "levelLock": true
   },
   {
     "id": "fire-facility-engineer-electrical-p037",
@@ -112,6 +136,17 @@
     "reviewStatus": "unverified",
     "tags": [
       "건축 허가 동의"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
   }
 ]

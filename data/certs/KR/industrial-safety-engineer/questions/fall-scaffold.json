@@ -20,7 +20,18 @@
     "reviewStatus": "unverified",
     "tags": [
       "안전 난간"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
   },
   {
     "id": "industrial-safety-engineer-p052",
@@ -43,7 +54,18 @@
     "reviewStatus": "unverified",
     "tags": [
       "작업 발판"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
   },
   {
     "id": "industrial-safety-engineer-p053",
@@ -66,7 +88,18 @@
     "reviewStatus": "unverified",
     "tags": [
       "낙하물 방지망"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
   },
   {
     "id": "industrial-safety-engineer-p054",
@@ -89,7 +122,8 @@
     "reviewStatus": "unverified",
     "tags": [
       "비계"
-    ]
+    ],
+    "levelLock": true
   },
   {
     "id": "industrial-safety-engineer-p055",
@@ -112,7 +146,8 @@
     "reviewStatus": "unverified",
     "tags": [
       "가설 통로"
-    ]
+    ],
+    "levelLock": true
   },
   {
     "id": "industrial-safety-engineer-p056",
@@ -135,6 +170,7 @@
     "reviewStatus": "unverified",
     "tags": [
       "사다리"
-    ]
+    ],
+    "levelLock": true
   }
 ]

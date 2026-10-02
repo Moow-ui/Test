@@ -20,7 +20,18 @@
     "reviewStatus": "unverified",
     "tags": [
       "시멘트"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
   },
   {
     "id": "construction-safety-engineer-p026",
@@ -43,7 +54,18 @@
     "reviewStatus": "unverified",
     "tags": [
       "콘크리트"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   },
   {
     "id": "construction-safety-engineer-p027",
@@ -67,7 +89,8 @@
     "tags": [
       "시멘트",
       "분말도"
-    ]
+    ],
+    "levelLock": true
   },
   {
     "id": "construction-safety-engineer-p028",
@@ -90,7 +113,8 @@
     "reviewStatus": "unverified",
     "tags": [
       "혼화제"
-    ]
+    ],
+    "levelLock": true
   },
   {
     "id": "construction-safety-engineer-p029",
@@ -114,6 +138,17 @@
     "tags": [
       "콘크리트",
       "내구성"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
   }
 ]

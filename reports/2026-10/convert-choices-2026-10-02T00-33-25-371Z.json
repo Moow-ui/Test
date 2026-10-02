@@ -1,0 +1,1052 @@
+{
+  "total": {
+    "questions": 497,
+    "converted": 497,
+    "reduced": 407,
+    "locked": 90,
+    "skipped": 0,
+    "byPick": 115
+  },
+  "certs": [
+    {
+      "cert": "computer-literacy-1",
+      "name": "컴퓨터활용능력 1급",
+      "questions": 48,
+      "reduced": 34,
+      "locked": 14,
+      "skipped": 0,
+      "choiceCount": 4,
+      "usable": {
+        "basic": 13,
+        "intermediate": 24,
+        "advanced": 32
+      }
+    },
+    {
+      "cert": "computer-literacy-2",
+      "name": "컴퓨터활용능력 2급",
+      "questions": 40,
+      "reduced": 31,
+      "locked": 9,
+      "skipped": 0,
+      "choiceCount": 4,
+      "usable": {
+        "basic": 16,
+        "intermediate": 27,
+        "advanced": 23
+      }
+    },
+    {
+      "cert": "construction-safety-engineer",
+      "name": "건설안전기사",
+      "questions": 60,
+      "reduced": 47,
+      "locked": 13,
+      "skipped": 0,
+      "choiceCount": 4,
+      "usable": {
+        "basic": 17,
+        "intermediate": 36,
+        "advanced": 38
+      }
+    },
+    {
+      "cert": "electrical-engineer",
+      "name": "전기기사",
+      "questions": 60,
+      "reduced": 51,
+      "locked": 9,
+      "skipped": 0,
+      "choiceCount": 4,
+      "usable": {
+        "basic": 21,
+        "intermediate": 40,
+        "advanced": 37
+      }
+    },
+    {
+      "cert": "electrician-craftsman",
+      "name": "전기기능사",
+      "questions": 60,
+      "reduced": 56,
+      "locked": 4,
+      "skipped": 0,
+      "choiceCount": 4,
+      "usable": {
+        "basic": 21,
+        "intermediate": 39,
+        "advanced": 39
+      }
+    },
+    {
+      "cert": "fire-facility-engineer-electrical",
+      "name": "소방설비기사(전기분야)",
+      "questions": 59,
+      "reduced": 49,
+      "locked": 10,
+      "skipped": 0,
+      "choiceCount": 4,
+      "usable": {
+        "basic": 20,
+        "intermediate": 36,
+        "advanced": 36
+      }
+    },
+    {
+      "cert": "forklift-operator",
+      "name": "지게차운전기능사",
+      "questions": 50,
+      "reduced": 41,
+      "locked": 9,
+      "skipped": 0,
+      "choiceCount": 4,
+      "usable": {
+        "basic": 18,
+        "intermediate": 31,
+        "advanced": 29
+      }
+    },
+    {
+      "cert": "industrial-safety-engineer",
+      "name": "산업안전기사",
+      "questions": 60,
+      "reduced": 45,
+      "locked": 15,
+      "skipped": 0,
+      "choiceCount": 4,
+      "usable": {
+        "basic": 17,
+        "intermediate": 34,
+        "advanced": 39
+      }
+    },
+    {
+      "cert": "information-processing-engineer",
+      "name": "정보처리기사",
+      "questions": 60,
+      "reduced": 53,
+      "locked": 7,
+      "skipped": 0,
+      "choiceCount": 4,
+      "usable": {
+        "basic": 19,
+        "intermediate": 40,
+        "advanced": 38
+      }
+    }
+  ],
+  "locked": [
+    {
+      "id": "computer-literacy-1-p027",
+      "reason": "부정형 (…이 아닌 것은?)",
+      "stem": "다음 중 추세선을 추가할 수 없는 차트는?"
+    },
+    {
+      "id": "computer-literacy-1-p007",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "RISC 방식 프로세서를 CISC 방식과 비교한 설명으로 옳지 않은 것은?"
+    },
+    {
+      "id": "computer-literacy-1-p008",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "자료의 표현에 대한 설명으로 옳지 않은 것은?"
+    },
+    {
+      "id": "computer-literacy-1-p023",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "시나리오 관리자에 대한 설명으로 옳지 않은 것은?"
+    },
+    {
+      "id": "computer-literacy-1-p024",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "데이터 표에 대한 설명으로 옳지 않은 것은?"
+    },
+    {
+      "id": "computer-literacy-1-p025",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "피벗 테이블과 피벗 차트에 대한 설명으로 옳지 않은 것은?"
+    },
+    {
+      "id": "computer-literacy-1-p033",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "테이블의 기본키(Primary Key)에 대한 설명으로 옳지 않은 것은?"
+    },
+    {
+      "id": "computer-literacy-1-p035",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "데이터베이스 정규화에 대한 설명으로 옳지 않은 것은?"
+    },
+    {
+      "id": "computer-literacy-1-p047",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "보고서에 대한 설명으로 옳지 않은 것은?"
+    },
+    {
+      "id": "computer-literacy-1-p012",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "멀티미디어 데이터의 압축 표준에 대한 설명으로 옳지 않은 것은?"
+    },
+    {
+      "id": "computer-literacy-1-p015",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "공개키(비대칭키) 암호화 방식에 대한 설명으로 옳지 않은 것은?"
+    },
+    {
+      "id": "computer-literacy-1-p039",
+      "reason": "부정형 (…이 아닌 것은?)",
+      "stem": "<고객> 테이블의 '고객번호'(기본키)를 <주문> 테이블의 '고객번호'(외래키)가 참조하고, 참조 무결성이 설정되어 있다. 다음 중 참조 무결성에 어긋나는 것은?"
+    },
+    {
+      "id": "computer-literacy-1-p002",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "파일 시스템 NTFS 에 대한 설명으로 옳지 않은 것은?"
+    },
+    {
+      "id": "computer-literacy-1-p003",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "한글 Windows의 레지스트리(Registry)에 대한 설명으로 옳지 않은 것은?"
+    },
+    {
+      "id": "computer-literacy-2-p012",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "다음 중 운영체제의 성능을 평가하는 기준으로 옳지 않은 것은?"
+    },
+    {
+      "id": "computer-literacy-2-p034",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "피벗 테이블에 대한 설명으로 옳지 않은 것은?"
+    },
+    {
+      "id": "computer-literacy-2-p036",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "엑셀의 정렬에 대한 설명으로 옳지 않은 것은?"
+    },
+    {
+      "id": "computer-literacy-2-p039",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "매크로 이름을 지정하는 규칙으로 옳지 않은 것은?"
+    },
+    {
+      "id": "computer-literacy-2-p019",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "비밀키(대칭키) 암호화 방식에 대한 설명으로 옳지 않은 것은?"
+    },
+    {
+      "id": "computer-literacy-2-p020",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "방화벽(Firewall)에 대한 설명으로 옳지 않은 것은?"
+    },
+    {
+      "id": "computer-literacy-2-p002",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "한글 Windows의 휴지통에 대한 설명으로 옳지 않은 것은?"
+    },
+    {
+      "id": "computer-literacy-2-p005",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "한글 Windows의 바로 가기 아이콘에 대한 설명으로 옳지 않은 것은?"
+    },
+    {
+      "id": "computer-literacy-2-p006",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "한글 Windows의 프린터 사용에 대한 설명으로 옳지 않은 것은?"
+    },
+    {
+      "id": "construction-safety-engineer-p002",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "재해 예방을 위한 3E 대책에 해당하지 않는 것은?"
+    },
+    {
+      "id": "construction-safety-engineer-p027",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "분말도가 높은(입자가 고운) 시멘트의 성질로 옳지 않은 것은?"
+    },
+    {
+      "id": "construction-safety-engineer-p028",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "콘크리트에 AE 제를 넣었을 때의 효과로 옳지 않은 것은?"
+    },
+    {
+      "id": "construction-safety-engineer-p038",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "표준 관입 시험(SPT)에 대한 설명으로 옳지 않은 것은?"
+    },
+    {
+      "id": "construction-safety-engineer-p057",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "산업안전보건법령에서 정한 양중기에 해당하지 않는 것은?"
+    },
+    {
+      "id": "construction-safety-engineer-p060",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "토사 붕괴의 원인 가운데 '외적 원인'에 해당하지 않는 것은?"
+    },
+    {
+      "id": "construction-safety-engineer-p055",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "이동식 비계를 조립하여 작업할 때의 준수 사항으로 옳지 않은 것은?"
+    },
+    {
+      "id": "construction-safety-engineer-p042",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "철근 콘크리트에서 철근의 피복 두께를 확보하는 목적으로 옳지 않은 것은?"
+    },
+    {
+      "id": "construction-safety-engineer-p044",
+      "reason": "부정형 (…이 아닌 것은?)",
+      "stem": "콘크리트를 부어 넣을 때 거푸집에 작용하는 측압이 커지는 경우가 아닌 것은?"
+    },
+    {
+      "id": "construction-safety-engineer-p046",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "콘크리트를 다질 때 내부 진동기(막대형 진동기)의 사용 방법으로 옳지 않은 것은?"
+    },
+    {
+      "id": "construction-safety-engineer-p049",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "유해위험방지계획서를 제출해야 하는 건설 공사에 해당하지 않는 것은?"
+    },
+    {
+      "id": "construction-safety-engineer-p051",
+      "reason": "부정형 (…이 아닌 것은?)",
+      "stem": "건설업 산업안전보건관리비로 사용할 수 없는 것은?"
+    },
+    {
+      "id": "construction-safety-engineer-p007",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "산업안전보건위원회에 대한 설명으로 옳지 않은 것은?"
+    },
+    {
+      "id": "electrical-engineer-p004",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "정전 평형 상태에 있는 도체에 대한 설명으로 옳지 않은 것은?"
+    },
+    {
+      "id": "electrical-engineer-p012",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "전자파에 대한 설명으로 옳지 않은 것은?"
+    },
+    {
+      "id": "electrical-engineer-p050",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "한국전기설비규정(KEC)에 따른 전선의 식별 색상으로 옳지 않은 것은?"
+    },
+    {
+      "id": "electrical-engineer-p058",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "가공 전선로의 지지물에 시설하는 지선의 기준으로 옳지 않은 것은?"
+    },
+    {
+      "id": "electrical-engineer-p019",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "피뢰기가 갖추어야 할 조건으로 옳지 않은 것은?"
+    },
+    {
+      "id": "electrical-engineer-p028",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "동기 발전기의 병렬 운전 조건으로 옳지 않은 것은?"
+    },
+    {
+      "id": "electrical-engineer-p029",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "단락비가 큰 동기 발전기에 대한 설명으로 옳지 않은 것은?"
+    },
+    {
+      "id": "electrical-engineer-p014",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "송전 선로에 복도체(다도체)를 쓸 때의 특징으로 옳지 않은 것은?"
+    },
+    {
+      "id": "electrical-engineer-p016",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "중성점 직접 접지 방식의 특징으로 옳지 않은 것은?"
+    },
+    {
+      "id": "electrician-craftsman-p017",
+      "reason": "부정형 (…이 아닌 것은?)",
+      "stem": "R-L-C 직렬회로가 공진 상태일 때에 대한 설명으로 틀린 것은?"
+    },
+    {
+      "id": "electrician-craftsman-p056",
+      "reason": "부정형 (…이 아닌 것은?)",
+      "stem": "가공전선로의 지선에 대한 설명으로 틀린 것은?"
+    },
+    {
+      "id": "electrician-craftsman-p027",
+      "reason": "부정형 (…이 아닌 것은?)",
+      "stem": "동기발전기를 병렬로 운전하기 위한 조건이 아닌 것은?"
+    },
+    {
+      "id": "electrician-craftsman-p033",
+      "reason": "부정형 (…이 아닌 것은?)",
+      "stem": "변압기유(절연유)가 갖추어야 할 조건으로 틀린 것은?"
+    },
+    {
+      "id": "fire-facility-engineer-electrical-p047",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "자동화재탐지설비의 음향 장치에 대한 기준으로 옳지 않은 것은?"
+    },
+    {
+      "id": "fire-facility-engineer-electrical-p003",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "가연물과 연소 형태를 짝지은 것으로 옳지 않은 것은?"
+    },
+    {
+      "id": "fire-facility-engineer-electrical-p004",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "가연물이 되기 쉬운 조건으로 옳지 않은 것은?"
+    },
+    {
+      "id": "fire-facility-engineer-electrical-p030",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "소방기본법에서 정한 '관계인'에 해당하지 않는 사람은?"
+    },
+    {
+      "id": "fire-facility-engineer-electrical-p041",
+      "reason": "부정형 (…이 아닌 것은?)",
+      "stem": "소방시설공사업법에서 정한 소방시설업의 종류가 아닌 것은?"
+    },
+    {
+      "id": "fire-facility-engineer-electrical-p043",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "위험물안전관리법에 따른 제4류 위험물의 지정 수량으로 옳지 않은 것은?"
+    },
+    {
+      "id": "fire-facility-engineer-electrical-p034",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "소방시설 가운데 '경보 설비'에 해당하지 않는 것은?"
+    },
+    {
+      "id": "fire-facility-engineer-electrical-p036",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "방염 대상 물품의 방염 성능 기준으로 옳지 않은 것은?"
+    },
+    {
+      "id": "fire-facility-engineer-electrical-p054",
+      "reason": "부정형 (…이 아닌 것은?)",
+      "stem": "유도등의 비상 전원을 60분 이상 작동할 수 있는 용량으로 해야 하는 곳이 아닌 것은?"
+    },
+    {
+      "id": "fire-facility-engineer-electrical-p028",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "반도체 소자와 그 주된 용도를 짝지은 것으로 옳지 않은 것은?"
+    },
+    {
+      "id": "forklift-operator-p022",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "지게차 주행 중의 안전 수칙으로 옳지 않은 것은?"
+    },
+    {
+      "id": "forklift-operator-p038",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "납산 축전지에 대한 설명으로 옳지 않은 것은?"
+    },
+    {
+      "id": "forklift-operator-p035",
+      "reason": "부정형 (…이 아닌 것은?)",
+      "stem": "엔진이 과열되는 원인으로 볼 수 없는 것은?"
+    },
+    {
+      "id": "forklift-operator-p046",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "유압 작동유의 온도가 지나치게 높아졌을 때 나타나는 현상으로 옳지 않은 것은?"
+    },
+    {
+      "id": "forklift-operator-p024",
+      "reason": "부정형 (…이 아닌 것은?)",
+      "stem": "건설기계관리법에서 정한 건설기계 검사의 종류가 아닌 것은?"
+    },
+    {
+      "id": "forklift-operator-p028",
+      "reason": "부정형 (…이 아닌 것은?)",
+      "stem": "건설기계조종사 면허가 취소되거나 효력이 정지될 수 있는 경우가 아닌 것은?"
+    },
+    {
+      "id": "forklift-operator-p012",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "작업을 마친 뒤 지게차를 주차할 때의 방법으로 옳지 않은 것은?"
+    },
+    {
+      "id": "forklift-operator-p004",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "안전모에 대한 설명으로 옳지 않은 것은?"
+    },
+    {
+      "id": "forklift-operator-p006",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "전기 화재(C급 화재)에 쓰기에 가장 알맞지 않은 소화 방법은?"
+    },
+    {
+      "id": "industrial-safety-engineer-p004",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "재해 예방의 4원칙에 해당하지 않는 것은?"
+    },
+    {
+      "id": "industrial-safety-engineer-p048",
+      "reason": "부정형 (…이 아닌 것은?)",
+      "stem": "화학 설비에 안전밸브 대신(또는 함께) 파열판을 설치해야 하는 경우가 아닌 것은?"
+    },
+    {
+      "id": "industrial-safety-engineer-p031",
+      "reason": "부정형 (…이 아닌 것은?)",
+      "stem": "감전되었을 때 위험의 정도를 좌우하는 요소로 가장 거리가 먼 것은?"
+    },
+    {
+      "id": "industrial-safety-engineer-p058",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "산업안전보건기준에 관한 규칙에 따른 굴착면의 기울기 기준으로 옳지 않은 것은?"
+    },
+    {
+      "id": "industrial-safety-engineer-p059",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "철골 작업을 중지해야 하는 기상 조건으로 옳지 않은 것은?"
+    },
+    {
+      "id": "industrial-safety-engineer-p054",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "강관 비계의 구조 기준으로 옳지 않은 것은?"
+    },
+    {
+      "id": "industrial-safety-engineer-p055",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "가설 통로의 설치 기준으로 옳지 않은 것은?"
+    },
+    {
+      "id": "industrial-safety-engineer-p056",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "사다리식 통로의 설치 기준으로 옳지 않은 것은?"
+    },
+    {
+      "id": "industrial-safety-engineer-p041",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "연소의 3요소에 해당하지 않는 것은?"
+    },
+    {
+      "id": "industrial-safety-engineer-p045",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "분진 폭발을 가스 폭발과 비교한 설명으로 옳지 않은 것은?"
+    },
+    {
+      "id": "industrial-safety-engineer-p013",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "산업안전보건기준에 관한 규칙에 따른 작업면의 조도 기준으로 옳지 않은 것은?"
+    },
+    {
+      "id": "industrial-safety-engineer-p029",
+      "reason": "부정형 (…이 아닌 것은?)",
+      "stem": "보일러의 폭발 사고를 막기 위한 방호 장치가 아닌 것은?"
+    },
+    {
+      "id": "industrial-safety-engineer-p036",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "정전기로 인한 재해를 막기 위한 대책으로 옳지 않은 것은?"
+    },
+    {
+      "id": "industrial-safety-engineer-p037",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "방폭 구조의 종류와 기호를 짝지은 것으로 옳지 않은 것은?"
+    },
+    {
+      "id": "industrial-safety-engineer-p020",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "FMEA(고장 형태와 영향 분석)에 대한 설명으로 옳지 않은 것은?"
+    },
+    {
+      "id": "information-processing-engineer-p016",
+      "reason": "부정형 (…이 아닌 것은?)",
+      "stem": "정렬 알고리즘의 평균 시간 복잡도가 O(n log n)이 아닌 것은?"
+    },
+    {
+      "id": "information-processing-engineer-p042",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "교착 상태(Deadlock)가 생기기 위한 4가지 필요조건에 해당하지 않는 것은?"
+    },
+    {
+      "id": "information-processing-engineer-p022",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "소프트웨어 형상 관리에 대한 설명으로 옳지 않은 것은?"
+    },
+    {
+      "id": "information-processing-engineer-p024",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "버전 관리 도구 Git 에 대한 설명으로 옳지 않은 것은?"
+    },
+    {
+      "id": "information-processing-engineer-p035",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "뷰(View)에 대한 설명으로 옳지 않은 것은?"
+    },
+    {
+      "id": "information-processing-engineer-p001",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "애자일(Agile) 선언문의 4가지 핵심 가치로 옳지 않은 것은?"
+    },
+    {
+      "id": "information-processing-engineer-p060",
+      "reason": "부정형 (옳지 않은 것은?)",
+      "stem": "해시(Hash) 함수에 대한 설명으로 옳지 않은 것은?"
+    }
+  ],
+  "picks": {
+    "computer-literacy-1-p028": [
+      3,
+      4
+    ],
+    "computer-literacy-1-p005": [
+      2,
+      4
+    ],
+    "computer-literacy-1-p045": [
+      2,
+      3
+    ],
+    "computer-literacy-1-p017": [
+      1,
+      4
+    ],
+    "computer-literacy-1-p020": [
+      3,
+      2
+    ],
+    "computer-literacy-1-p010": [
+      4,
+      2
+    ],
+    "computer-literacy-1-p013": [
+      1,
+      3
+    ],
+    "computer-literacy-1-p031": [
+      2,
+      3
+    ],
+    "computer-literacy-1-p032": [
+      1,
+      3
+    ],
+    "computer-literacy-1-p044": [
+      2,
+      1
+    ],
+    "computer-literacy-1-p001": [
+      4,
+      1
+    ],
+    "computer-literacy-1-p004": [
+      2,
+      3
+    ],
+    "computer-literacy-2-p009": [
+      2,
+      3
+    ],
+    "computer-literacy-2-p010": [
+      3,
+      2
+    ],
+    "computer-literacy-2-p021": [
+      2,
+      4
+    ],
+    "computer-literacy-2-p022": [
+      2,
+      3
+    ],
+    "computer-literacy-2-p032": [
+      2,
+      3
+    ],
+    "computer-literacy-2-p027": [
+      2,
+      4
+    ],
+    "computer-literacy-2-p030": [
+      3,
+      4
+    ],
+    "computer-literacy-2-p017": [
+      2,
+      3
+    ],
+    "construction-safety-engineer-p003": [
+      4,
+      3
+    ],
+    "construction-safety-engineer-p005": [
+      1,
+      3
+    ],
+    "construction-safety-engineer-p037": [
+      2,
+      1
+    ],
+    "construction-safety-engineer-p039": [
+      2,
+      3
+    ],
+    "construction-safety-engineer-p012": [
+      3,
+      2
+    ],
+    "construction-safety-engineer-p013": [
+      2,
+      3
+    ],
+    "construction-safety-engineer-p016": [
+      3,
+      2
+    ],
+    "construction-safety-engineer-p054": [
+      2,
+      4
+    ],
+    "construction-safety-engineer-p034": [
+      3,
+      2
+    ],
+    "construction-safety-engineer-p045": [
+      1,
+      4
+    ],
+    "construction-safety-engineer-p019": [
+      3,
+      1
+    ],
+    "construction-safety-engineer-p048": [
+      2,
+      3
+    ],
+    "construction-safety-engineer-p030": [
+      1,
+      3
+    ],
+    "electrical-engineer-p037": [
+      1,
+      3
+    ],
+    "electrical-engineer-p021": [
+      1,
+      4
+    ],
+    "electrical-engineer-p022": [
+      2,
+      3
+    ],
+    "electrical-engineer-p003": [
+      3,
+      1
+    ],
+    "electrical-engineer-p024": [
+      3,
+      2
+    ],
+    "electrical-engineer-p035": [
+      4,
+      1
+    ],
+    "electrical-engineer-p052": [
+      2,
+      4
+    ],
+    "electrical-engineer-p053": [
+      2,
+      4
+    ],
+    "electrical-engineer-p059": [
+      2,
+      3
+    ],
+    "electrical-engineer-p060": [
+      3,
+      4
+    ],
+    "electrical-engineer-p008": [
+      1,
+      2
+    ],
+    "electrical-engineer-p009": [
+      2,
+      3
+    ],
+    "electrical-engineer-p018": [
+      1,
+      2
+    ],
+    "electrical-engineer-p027": [
+      4,
+      2
+    ],
+    "electrical-engineer-p030": [
+      3,
+      4
+    ],
+    "electrical-engineer-p032": [
+      2,
+      4
+    ],
+    "electrical-engineer-p015": [
+      2,
+      3
+    ],
+    "electrician-craftsman-p014": [
+      4,
+      1
+    ],
+    "electrician-craftsman-p015": [
+      1,
+      3
+    ],
+    "electrician-craftsman-p002": [
+      3,
+      2
+    ],
+    "electrician-craftsman-p004": [
+      1,
+      3
+    ],
+    "electrician-craftsman-p021": [
+      2,
+      1
+    ],
+    "electrician-craftsman-p008": [
+      4,
+      2
+    ],
+    "electrician-craftsman-p053": [
+      2,
+      4
+    ],
+    "electrician-craftsman-p054": [
+      3,
+      2
+    ],
+    "electrician-craftsman-p020": [
+      3,
+      4
+    ],
+    "electrician-craftsman-p038": [
+      1,
+      3
+    ],
+    "electrician-craftsman-p055": [
+      4,
+      2
+    ],
+    "electrician-craftsman-p040": [
+      4,
+      2
+    ],
+    "electrician-craftsman-p026": [
+      4,
+      1
+    ],
+    "electrician-craftsman-p029": [
+      2,
+      3
+    ],
+    "electrician-craftsman-p018": [
+      1,
+      2
+    ],
+    "electrician-craftsman-p034": [
+      4,
+      2
+    ],
+    "electrician-craftsman-p045": [
+      1,
+      3
+    ],
+    "electrician-craftsman-p048": [
+      2,
+      3
+    ],
+    "electrician-craftsman-p049": [
+      4,
+      3
+    ],
+    "electrician-craftsman-p050": [
+      1,
+      2
+    ],
+    "fire-facility-engineer-electrical-p015": [
+      3,
+      2
+    ],
+    "fire-facility-engineer-electrical-p016": [
+      1,
+      4
+    ],
+    "fire-facility-engineer-electrical-p017": [
+      1,
+      3
+    ],
+    "fire-facility-engineer-electrical-p022": [
+      3,
+      1
+    ],
+    "fire-facility-engineer-electrical-p023": [
+      1,
+      4
+    ],
+    "fire-facility-engineer-electrical-p024": [
+      3,
+      4
+    ],
+    "fire-facility-engineer-electrical-p020": [
+      1,
+      3
+    ],
+    "fire-facility-engineer-electrical-p058": [
+      3,
+      2
+    ],
+    "fire-facility-engineer-electrical-p011": [
+      1,
+      3
+    ],
+    "fire-facility-engineer-electrical-p031": [
+      3,
+      4
+    ],
+    "fire-facility-engineer-electrical-p005": [
+      2,
+      4
+    ],
+    "fire-facility-engineer-electrical-p055": [
+      2,
+      3
+    ],
+    "fire-facility-engineer-electrical-p013": [
+      1,
+      3
+    ],
+    "fire-facility-engineer-electrical-p027": [
+      1,
+      3
+    ],
+    "fire-facility-engineer-electrical-p029": [
+      2,
+      3
+    ],
+    "forklift-operator-p040": [
+      2,
+      1
+    ],
+    "forklift-operator-p042": [
+      1,
+      4
+    ],
+    "forklift-operator-p043": [
+      2,
+      1
+    ],
+    "forklift-operator-p017": [
+      2,
+      3
+    ],
+    "forklift-operator-p032": [
+      2,
+      1
+    ],
+    "forklift-operator-p003": [
+      2,
+      1
+    ],
+    "industrial-safety-engineer-p003": [
+      4,
+      3
+    ],
+    "industrial-safety-engineer-p035": [
+      4,
+      1
+    ],
+    "industrial-safety-engineer-p057": [
+      1,
+      3
+    ],
+    "industrial-safety-engineer-p060": [
+      4,
+      2
+    ],
+    "industrial-safety-engineer-p011": [
+      1,
+      4
+    ],
+    "industrial-safety-engineer-p012": [
+      1,
+      2
+    ],
+    "industrial-safety-engineer-p021": [
+      2,
+      1
+    ],
+    "industrial-safety-engineer-p022": [
+      1,
+      3
+    ],
+    "industrial-safety-engineer-p023": [
+      2,
+      3
+    ],
+    "industrial-safety-engineer-p025": [
+      2,
+      4
+    ],
+    "industrial-safety-engineer-p009": [
+      4,
+      3
+    ],
+    "industrial-safety-engineer-p010": [
+      1,
+      3
+    ],
+    "information-processing-engineer-p008": [
+      3,
+      2
+    ],
+    "information-processing-engineer-p025": [
+      1,
+      3
+    ],
+    "information-processing-engineer-p015": [
+      1,
+      4
+    ],
+    "information-processing-engineer-p053": [
+      2,
+      1
+    ],
+    "information-processing-engineer-p043": [
+      3,
+      2
+    ],
+    "information-processing-engineer-p045": [
+      3,
+      1
+    ],
+    "information-processing-engineer-p034": [
+      2,
+      1
+    ],
+    "information-processing-engineer-p004": [
+      2,
+      3
+    ],
+    "information-processing-engineer-p031": [
+      3,
+      1
+    ],
+    "information-processing-engineer-p051": [
+      2,
+      3
+    ],
+    "information-processing-engineer-p019": [
+      3,
+      4
+    ],
+    "information-processing-engineer-p005": [
+      3,
+      2
+    ]
+  }
+}

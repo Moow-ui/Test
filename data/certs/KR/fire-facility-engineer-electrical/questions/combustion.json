@@ -20,7 +20,18 @@
     "reviewStatus": "unverified",
     "tags": [
       "화재 분류"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   },
   {
     "id": "fire-facility-engineer-electrical-p002",
@@ -43,7 +54,18 @@
     "reviewStatus": "unverified",
     "tags": [
       "연소"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   },
   {
     "id": "fire-facility-engineer-electrical-p003",
@@ -66,7 +88,8 @@
     "reviewStatus": "unverified",
     "tags": [
       "연소 형태"
-    ]
+    ],
+    "levelLock": true
   },
   {
     "id": "fire-facility-engineer-electrical-p004",
@@ -89,6 +112,7 @@
     "reviewStatus": "unverified",
     "tags": [
       "가연물"
-    ]
+    ],
+    "levelLock": true
   }
 ]

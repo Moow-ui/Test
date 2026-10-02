@@ -20,7 +20,18 @@
     "reviewStatus": "unverified",
     "tags": [
       "운영체제"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
   },
   {
     "id": "computer-literacy-1-p002",
@@ -43,7 +54,8 @@
     "reviewStatus": "unverified",
     "tags": [
       "파일 시스템"
-    ]
+    ],
+    "levelLock": true
   },
   {
     "id": "computer-literacy-1-p003",
@@ -66,7 +78,8 @@
     "reviewStatus": "unverified",
     "tags": [
       "레지스트리"
-    ]
+    ],
+    "levelLock": true
   },
   {
     "id": "computer-literacy-1-p004",
@@ -89,6 +102,17 @@
     "reviewStatus": "unverified",
     "tags": [
       "시스템 관리"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   }
 ]

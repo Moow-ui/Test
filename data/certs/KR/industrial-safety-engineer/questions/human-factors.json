@@ -20,7 +20,18 @@
     "reviewStatus": "unverified",
     "tags": [
       "안전 설계"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
   },
   {
     "id": "industrial-safety-engineer-p012",
@@ -44,7 +55,18 @@
     "tags": [
       "신뢰도",
       "계산"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   },
   {
     "id": "industrial-safety-engineer-p013",
@@ -68,7 +90,8 @@
     "tags": [
       "작업 환경",
       "조도"
-    ]
+    ],
+    "levelLock": true
   },
   {
     "id": "industrial-safety-engineer-p014",
@@ -91,7 +114,18 @@
     "reviewStatus": "unverified",
     "tags": [
       "인간·기계 체계"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
   },
   {
     "id": "industrial-safety-engineer-p015",
@@ -115,6 +149,17 @@
     "tags": [
       "신뢰도",
       "계산"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
   }
 ]

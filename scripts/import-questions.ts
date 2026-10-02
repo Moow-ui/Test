@@ -37,10 +37,14 @@
  *   reviewStatus  verified / unverified (또는 검수완료 / 검수전)
  *   tags          태그 (| 로 구분)
  *   retired       true 면 출제 중단
+ *   levelLock     true 면 선지를 줄일 수 없는 문제 ("옳지 않은 것은?" 등. 초급·중급에서 제외). 비워 두면 자동 판단
+ *   distractorOrder  오답 번호를 그럴듯한 순서로 (예: 2|4|1). 초급은 정답 + 첫 번째, 중급은 + 두 번째 오답을 남긴다.
+ *                    비워 두면 자동으로 정한다 (lib/choice-reduce.ts). 넣은 뒤 questions/ 파일의 choicesByLevel 을 확인할 것
  */
 import fs from "node:fs";
 import path from "node:path";
 import { z } from "zod";
+import { reduceChoices } from "../lib/choice-reduce";
 import { getCertSummary, getCertification, getQuestionFiles } from "../lib/data";
 import { writeDataJson } from "../lib/data/fs-store";
 import { questionFileStem, questionId, questionIdNumber, questionsDir } from "../lib/data/paths";
@@ -167,8 +171,34 @@ function numberOrUndefined(value: unknown): number | undefined {
   return Number.isFinite(n) ? n : NaN;
 }
 
+/**
+ * 난이도별 선지(choicesByLevel)와 잠금(levelLock)을 정한다.
+ * 직접 적은 값 → 고치는 문제의 원래 값(선지·정답이 그대로일 때) → 자동 판단 순서로 쓴다.
+ */
+function reducedFields(raw: Raw, stem: string, choices: string[], answer: number | undefined, old?: Question): Raw {
+  if (raw.choicesByLevel && typeof raw.choicesByLevel === "object") {
+    return { choicesByLevel: raw.choicesByLevel, ...(raw.levelLock === true ? { levelLock: true } : {}) };
+  }
+  const lockText = text(raw.levelLock).toLowerCase();
+  const lock = lockText === "" ? undefined : lockText === "true" || lockText === "1";
+  const order = text(raw.distractorOrder)
+    .split(/[|,;]/)
+    .map((t) => Number(t.trim()))
+    .filter((n) => Number.isInteger(n) && n > 0);
+  const untouched = lock === undefined && order.length === 0;
+  if (old && untouched && old.answer === answer && old.choices.join("\n") === choices.join("\n")) {
+    return {
+      ...(old.choicesByLevel ? { choicesByLevel: old.choicesByLevel } : {}),
+      ...(old.levelLock ? { levelLock: true } : {}),
+    };
+  }
+  // 정답 번호가 잘못된 행은 여기서 정하지 않는다 (다음 단계의 검증이 오류로 알려 준다)
+  if (answer === undefined || !Number.isInteger(answer) || answer < 1 || answer > choices.length) return {};
+  return { ...reduceChoices({ stem, choices, answer, explanation: text(raw.explanation) }, order, lock) };
+}
+
 /** CSV 한 줄(또는 JSON 한 건)을 Question 모양으로 바꾼다. 검증은 그다음 단계에서 한다 */
-function toCandidate(raw: Raw, detail: CertDetail): Raw {
+function toCandidate(raw: Raw, detail: CertDetail, old?: Question): Raw {
   // 과목·단원은 id 대신 이름으로 적어도 된다
   const subjectText = text(raw.subjectId ?? raw.subject);
   const subject = detail.subjects.find((s) => s.id === subjectText || s.name === subjectText);
@@ -227,6 +257,7 @@ function toCandidate(raw: Raw, detail: CertDetail): Raw {
     reviewStatus: REVIEW_ALIASES[reviewText] ?? (reviewText || "unverified"),
     tags,
     ...(text(raw.image) ? { image: text(raw.image) } : {}),
+    ...reducedFields(raw, text(raw.stem), choices, numberOrUndefined(raw.answer), old),
     ...(retiredText === "true" || retiredText === "1" ? { retired: true } : {}),
   };
 }
@@ -297,7 +328,7 @@ async function main(): Promise<void> {
   let updated = 0;
 
   for (const { raw, row } of rawRows) {
-    const candidate = toCandidate(raw, detail);
+    const candidate = toCandidate(raw, detail, existing.get(text(raw.id)));
     const errors: string[] = [];
 
     // 과목·단원을 못 찾은 경우는 알기 쉬운 문구로 먼저 알려 준다
@@ -416,9 +447,10 @@ async function main(): Promise<void> {
   } else if (valid.length === 0) {
     console.log("\n통과한 문제가 없어 파일을 쓰지 않았습니다.\n");
   } else {
-    // JSON 에는 기본값(version 1, retired false)을 적지 않는다
-    const compact = ({ version, retired, ...q }: Question) => ({
+    // JSON 에는 기본값(levelLock false, version 1, retired false)을 적지 않는다
+    const compact = ({ levelLock, version, retired, ...q }: Question) => ({
       ...q,
+      ...(levelLock ? { levelLock } : {}),
       ...(version > 1 ? { version } : {}),
       ...(retired ? { retired } : {}),
     });

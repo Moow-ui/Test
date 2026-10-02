@@ -6,7 +6,7 @@ export interface GradedItem {
   questionId: string;
   subjectId: string;
   chapterId: string;
-  /** 고른 답 (1~4). 안 풀었으면 null */
+  /** 고른 답 (원래 선지 번호). 안 풀었으면 null */
   chosen: number | null;
   answer: number;
   correct: boolean;

@@ -20,7 +20,18 @@
     "reviewStatus": "unverified",
     "tags": [
       "추락 방호망"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   },
   {
     "id": "construction-safety-engineer-p053",
@@ -43,7 +54,18 @@
     "reviewStatus": "unverified",
     "tags": [
       "작업 발판"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   },
   {
     "id": "construction-safety-engineer-p054",
@@ -66,7 +88,18 @@
     "reviewStatus": "unverified",
     "tags": [
       "달비계"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
   },
   {
     "id": "construction-safety-engineer-p055",
@@ -89,7 +122,8 @@
     "reviewStatus": "unverified",
     "tags": [
       "이동식 비계"
-    ]
+    ],
+    "levelLock": true
   },
   {
     "id": "construction-safety-engineer-p056",
@@ -112,6 +146,17 @@
     "reviewStatus": "unverified",
     "tags": [
       "말비계"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
   }
 ]

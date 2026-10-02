@@ -20,7 +20,18 @@
     "reviewStatus": "unverified",
     "tags": [
       "위험물"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
   },
   {
     "id": "fire-facility-engineer-electrical-p013",
@@ -44,7 +55,18 @@
     "tags": [
       "위험물",
       "저장"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   },
   {
     "id": "fire-facility-engineer-electrical-p014",
@@ -68,6 +90,17 @@
     "tags": [
       "위험물",
       "소화"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   }
 ]

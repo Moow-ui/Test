@@ -6,11 +6,12 @@ import type { ReactNode } from "react";
 import { AdSlot } from "@/components/AdSlot";
 import { FoldMark } from "@/components/Fold";
 import { Markdown } from "@/components/Markdown";
+import { visibleChoices } from "@/lib/choices";
 import { circled, formatScore } from "@/lib/format";
 import { gradeQuiz, summarize } from "@/lib/grading";
 import { fmt, localePath } from "@/lib/i18n";
 import { startSession } from "@/lib/storage";
-import type { Question } from "@/lib/types";
+import type { Question, QuizLevel } from "@/lib/types";
 import { useMessages } from "@/lib/use-messages";
 import type { QuizCert } from "./QuizRunner";
 
@@ -37,6 +38,7 @@ export function ResultView({
   label,
   answers,
   questions,
+  level,
   againAction,
 }: {
   cert: QuizCert;
@@ -45,6 +47,8 @@ export function ResultView({
   /** 문제 id → 고른 답 */
   answers: Record<string, number>;
   questions: Question[];
+  /** 난이도 카드로 푼 풀이면 그 난이도. 풀 때 보여 준 선지만 다시 보여 준다 (lib/choices.ts) */
+  level?: QuizLevel | null;
   /** "새 문제로 다시 풀기" 자리에 들어갈 버튼/링크 */
   againAction: ReactNode;
 }) {
@@ -225,11 +229,11 @@ export function ResultView({
                   </summary>
                   <div className="space-y-2 border-t border-line-soft p-3">
                     <ol className="space-y-1">
-                      {q.choices.map((choice, ci) => (
-                        <li key={ci} className={ci + 1 === q.answer ? "font-bold" : ""}>
-                          {circled(ci + 1)} {choice}
-                          {ci + 1 === q.answer && <span className="ml-2 text-ok">{m.answerMark}</span>}
-                          {ci + 1 === g.chosen && ci + 1 !== q.answer && (
+                      {visibleChoices(q, level).map((original, ci) => (
+                        <li key={original} className={original === q.answer ? "font-bold" : ""}>
+                          {circled(ci + 1)} {q.choices[original - 1]}
+                          {original === q.answer && <span className="ml-2 text-ok">{m.answerMark}</span>}
+                          {original === g.chosen && original !== q.answer && (
                             <span className="ml-2 font-bold text-bad">{m.myChoiceMark}</span>
                           )}
                         </li>

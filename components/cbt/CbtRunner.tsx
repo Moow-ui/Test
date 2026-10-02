@@ -9,7 +9,7 @@ import { FoldMark } from "@/components/Fold";
 import { useQuestionPool, useQuestions } from "@/lib/data/client";
 import { formatClock } from "@/lib/format";
 import { fmt, localePath } from "@/lib/i18n";
-import { buildMockExam, mockExamSeconds } from "@/lib/quiz-engine";
+import { buildMockExam, mockExamSeconds, mockExamShortage } from "@/lib/quiz-engine";
 import {
   STORAGE_KEYS,
   addResult,
@@ -39,6 +39,7 @@ function Pad({ children }: { children: React.ReactNode }) {
 /**
  * 실전 CBT 체험 모드.
  * 실제 큐넷 CBT 시험처럼 전체 문항 + 제한 시간 + 답안 표기란 + 안 푼 문제 확인 + 답안 제출 순서로 진행한다.
+ * 문항 수·과목별 문항 수·선지 수·제한 시간은 실제 시험과 같다. 문제가 모자란 자격증은 시작할 수 없다.
  * 풀이 중에는 채점하지 않고, 제출한 뒤에 한꺼번에 결과를 보여 준다.
  * 시험 화면 자체는 연습 풀이와 같은 components/exam/ExamScreen.tsx 를 쓴다.
  */
@@ -98,15 +99,18 @@ export function CbtRunner({ cert }: { cert: QuizCert }) {
     return () => window.clearInterval(timer);
   }, [ticking]);
 
+  // 실제 시험과 같은 문항 수로 낼 수 있는가 (과목마다 문제가 questionCount 만큼 있어야 한다)
+  const enough = !!pool && mockExamShortage(cert.subjects, pool).length === 0;
+
   const startNew = () => {
-    if (!pool) return;
+    if (!pool || !enough) return;
     const picked = buildMockExam({
       subjects: cert.subjects,
       questions: pool,
       totalQuestions: cert.examInfo.totalQuestions,
       history: getHistory(),
     });
-    startCbt(cert.id, picked.map((q) => q.id), mockExamSeconds(picked.length, cert.examInfo));
+    startCbt(cert.id, picked.map((q) => q.id), mockExamSeconds(cert.examInfo));
     touchRecentCert(cert.id);
     setRunning(true);
     window.scrollTo(0, 0);
@@ -165,8 +169,6 @@ export function CbtRunner({ cert }: { cert: QuizCert }) {
   }
 
   // ───────── 안내 화면 (시작 / 이어서 풀기) ─────────
-  const plannedCount = Math.min(cert.examInfo.totalQuestions, pool.length);
-  const plannedMinutes = Math.round(mockExamSeconds(plannedCount, cert.examInfo) / 60);
   const answered = session ? examQuestions.filter((q) => session.answers[q.id] !== undefined).length : 0;
 
   return (
@@ -179,9 +181,11 @@ export function CbtRunner({ cert }: { cert: QuizCert }) {
 
         <dl className="card grid gap-x-4 gap-y-1 p-4 sm:grid-cols-[7rem_1fr]">
           <dt className="font-bold text-ink-sub">{m.count}</dt>
-          <dd className="font-bold">{fmt(m.countValue, { n: plannedCount })}</dd>
+          <dd className="font-bold">{fmt(m.countValue, { n: cert.examInfo.totalQuestions })}</dd>
           <dt className="font-bold text-ink-sub">{m.time}</dt>
-          <dd className="font-bold">{fmt(m.timeValue, { min: plannedMinutes })}</dd>
+          <dd className="font-bold">{fmt(m.timeValue, { min: cert.examInfo.timeLimitMinutes })}</dd>
+          <dt className="font-bold text-ink-sub">{m.choices}</dt>
+          <dd className="font-bold">{fmt(m.choicesValue, { n: cert.examInfo.choiceCount })}</dd>
           <dt className="font-bold text-ink-sub">{m.pass}</dt>
           <dd>{cert.examInfo.passCriteria.description}</dd>
         </dl>
@@ -195,15 +199,21 @@ export function CbtRunner({ cert }: { cert: QuizCert }) {
               <button type="button" className="btn btn-primary btn-lg" onClick={() => setRunning(true)}>
                 {m.resume}
               </button>
-              <button type="button" className="btn btn-lg" onClick={startNew}>
-                {m.restart}
-              </button>
+              {enough && (
+                <button type="button" className="btn btn-lg" onClick={startNew}>
+                  {m.restart}
+                </button>
+              )}
             </div>
           </div>
-        ) : (
+        ) : enough ? (
           <button type="button" className="btn btn-primary btn-lg w-full" onClick={startNew}>
             {m.start}
           </button>
+        ) : (
+          <p className="rounded-lg border border-bad bg-bad-soft p-3 font-bold">
+            {fmt(m.notEnough, { have: pool.length, need: cert.examInfo.totalQuestions })}
+          </p>
         )}
 
         <details className="card">

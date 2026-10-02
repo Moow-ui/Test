@@ -21,7 +21,18 @@
     "tags": [
       "굴착",
       "지반"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   },
   {
     "id": "industrial-safety-engineer-p058",
@@ -44,7 +55,8 @@
     "reviewStatus": "unverified",
     "tags": [
       "굴착"
-    ]
+    ],
+    "levelLock": true
   },
   {
     "id": "industrial-safety-engineer-p059",
@@ -67,7 +79,8 @@
     "reviewStatus": "unverified",
     "tags": [
       "철골 작업"
-    ]
+    ],
+    "levelLock": true
   },
   {
     "id": "industrial-safety-engineer-p060",
@@ -90,6 +103,17 @@
     "reviewStatus": "unverified",
     "tags": [
       "거푸집 동바리"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
   }
 ]

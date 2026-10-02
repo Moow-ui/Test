@@ -21,7 +21,18 @@
     "tags": [
       "쿨롱의 법칙",
       "계산"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   },
   {
     "id": "electrical-engineer-p002",
@@ -44,7 +55,18 @@
     "reviewStatus": "unverified",
     "tags": [
       "정전용량"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
   },
   {
     "id": "electrical-engineer-p003",
@@ -68,7 +90,18 @@
     "tags": [
       "정전 에너지",
       "계산"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   },
   {
     "id": "electrical-engineer-p004",
@@ -91,7 +124,8 @@
     "reviewStatus": "unverified",
     "tags": [
       "도체"
-    ]
+    ],
+    "levelLock": true
   },
   {
     "id": "electrical-engineer-p005",
@@ -115,6 +149,17 @@
     "tags": [
       "유전체",
       "정전 에너지"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
   }
 ]

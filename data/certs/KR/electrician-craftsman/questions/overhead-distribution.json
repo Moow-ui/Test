@@ -22,7 +22,18 @@
       "지선",
       "배전",
       "개념"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
   },
   {
     "id": "electrician-craftsman-p056",
@@ -47,7 +58,8 @@
       "지선",
       "KEC",
       "암기"
-    ]
+    ],
+    "levelLock": true
   },
   {
     "id": "electrician-craftsman-p057",
@@ -72,6 +84,17 @@
       "전주",
       "KEC",
       "계산"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
   }
 ]

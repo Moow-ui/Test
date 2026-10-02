@@ -113,6 +113,7 @@ export async function getQuestionPool(certId: string): Promise<PoolItem[]> {
         chapterId: q.chapterId,
         level: q.level,
         source: q.source,
+        levelLock: q.levelLock,
         retired: q.retired,
         file: f.stem,
       })),

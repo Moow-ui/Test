@@ -10,13 +10,16 @@ import {
 import { fsStore } from "@/lib/data/fs-store";
 import { isQuestionIdFor, questionId, questionIdNumber } from "@/lib/data/paths";
 import { validateData } from "@/lib/data/validate";
-import { LEVELS, MAX_QUESTIONS_PER_FILE } from "@/lib/schemas";
+import { visibleChoices } from "@/lib/choices";
+import { LEVELS, LEVEL_CHOICE_COUNT, MAX_QUESTIONS_PER_FILE } from "@/lib/schemas";
 import {
   QUIZ_COUNTS,
   buildLevelQuiz,
   buildMockExam,
   countAvailable,
   createRng,
+  filterPool,
+  mockExamShortage,
 } from "@/lib/quiz-engine";
 import { checkCertDetail, checkCertList, checkQuestions } from "@/lib/validate";
 import type { CertDetail, QuizLevel } from "@/lib/types";
@@ -105,6 +108,61 @@ describe("문제 파일·id 규칙", () => {
       for (const q of await getQuestions(id)) {
         expect(q.choices, q.id).toHaveLength(cert!.examInfo!.choiceCount);
         expect(q.answer, q.id).toBeLessThanOrEqual(q.choices.length);
+      }
+    }
+  });
+});
+
+describe("난이도별 선지 수 (초급 2개 · 중급 3개 · 고급 4개 · 실전 CBT 는 시험 그대로)", () => {
+  it("난이도 카드에 나오는 문제는 그 난이도의 선지 수만큼, 정답을 포함해 보여 준다", async () => {
+    for (const id of READY_IDS) {
+      const choiceCount = (await getCertification(id))!.examInfo!.choiceCount;
+      const questions = await getQuestions(id);
+      for (const level of LEVELS) {
+        const want = Math.min(LEVEL_CHOICE_COUNT[level], choiceCount);
+        for (const q of filterPool(questions, level)) {
+          const shown = visibleChoices(q, level);
+          // levelLock 문제는 고급에만 나오고, 선지를 줄이지 않는다
+          expect(shown, `${q.id}/${level}`).toHaveLength(q.levelLock ? choiceCount : want);
+          expect(shown, `${q.id}/${level}`).toContain(q.answer);
+        }
+      }
+    }
+  });
+
+  it("실전 CBT·단원 풀기·오답노트(난이도 없음)는 선지를 모두 보여 준다", async () => {
+    for (const id of READY_IDS) {
+      const choiceCount = (await getCertification(id))!.examInfo!.choiceCount;
+      for (const q of await getQuestions(id)) {
+        expect(visibleChoices(q, null), q.id).toEqual(Array.from({ length: choiceCount }, (_, i) => i + 1));
+      }
+    }
+  });
+
+  it("모든 문제에 choicesByLevel 또는 levelLock 이 있다 (선지를 무작위로 빼지 않는다)", async () => {
+    for (const id of READY_IDS) {
+      const choiceCount = (await getCertification(id))!.examInfo!.choiceCount;
+      if (choiceCount <= LEVEL_CHOICE_COUNT.basic) continue;
+      for (const q of await getQuestions(id)) {
+        expect(q.levelLock || q.choicesByLevel !== undefined, q.id).toBe(true);
+      }
+    }
+  });
+
+  it("실전 CBT 를 낼 수 있는 자격증은 문항 수·과목별 문항 수가 실제 시험과 같다", async () => {
+    for (const id of READY_IDS) {
+      const cert = await getCertification(id);
+      const questions = await getQuestions(id);
+      if (mockExamShortage(cert!.subjects, questions).length > 0) continue; // 화면에서 "문제 준비 중"
+      const exam = buildMockExam({
+        subjects: cert!.subjects,
+        questions,
+        totalQuestions: cert!.examInfo!.totalQuestions,
+        rng: createRng(7),
+      });
+      expect(exam, id).toHaveLength(cert!.examInfo!.totalQuestions);
+      for (const s of cert!.subjects) {
+        expect(exam.filter((q) => q.subjectId === s.id), `${id}/${s.id}`).toHaveLength(s.questionCount);
       }
     }
   });

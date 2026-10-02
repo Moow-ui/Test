@@ -50,6 +50,16 @@ const oneToFive = z.number().int().min(1).max(5);
 /** 선지 수의 범위 (자격증별 실제 값은 meta.json 의 examInfo.choiceCount) */
 export const MIN_CHOICES = 2;
 export const MAX_CHOICES = 6;
+/**
+ * 난이도 카드별로 화면에 보여 주는 선지 수: 초급 2개, 중급 3개, 고급 4개.
+ * 시험의 선지 수가 이보다 적으면 있는 만큼만 보여 준다. 실전 CBT 는 항상 examInfo.choiceCount 그대로.
+ * 어떤 선지를 남길지는 문제의 choicesByLevel 에 미리 적어 둔다 (lib/choices.ts).
+ */
+export const LEVEL_CHOICE_COUNT: Record<(typeof LEVELS)[number], number> = {
+  basic: 2,
+  intermediate: 3,
+  advanced: 4,
+};
 /** 문제 파일 하나에 넣을 수 있는 최대 문항 수. 넘으면 {chapterId}-2.json, -3.json 으로 나눈다 */
 export const MAX_QUESTIONS_PER_FILE = 300;
 
@@ -193,6 +203,53 @@ export const certDetailSchema = z.object({
   content: certContentSchema.optional(),
 });
 
+/** 한 난이도에서 남길 선지 번호 (1부터, 원래 순서대로) */
+const keptChoicesSchema = z.array(z.number().int().min(1).max(MAX_CHOICES)).min(MIN_CHOICES);
+
+/**
+ * choicesByLevel·levelLock 이 규칙에 맞는지 검사해 오류 문장을 돌려준다.
+ *  - 그 난이도의 선지 수(LEVEL_CHOICE_COUNT)가 문제의 선지 수보다 적으면 남길 선지를 반드시 적는다.
+ *  - 남길 선지에는 정답이 들어 있어야 하고, 쉬운 난이도의 선지는 어려운 난이도의 선지 안에 들어 있어야 한다.
+ *  - levelLock 문제는 선지를 줄이지 않으므로 choicesByLevel 을 적지 않는다.
+ */
+export function checkChoicesByLevel(q: {
+  choices: string[];
+  answer: number;
+  levelLock: boolean;
+  choicesByLevel?: Partial<Record<(typeof LEVELS)[number], number[]>>;
+}): string[] {
+  const errors: string[] = [];
+  let larger: number[] | null = null;
+  for (const level of [...LEVELS].reverse()) {
+    const want = LEVEL_CHOICE_COUNT[level];
+    const kept = q.choicesByLevel?.[level];
+    if (q.levelLock || want >= q.choices.length) {
+      if (kept) {
+        errors.push(
+          q.levelLock
+            ? `choicesByLevel.${level}: levelLock 문제는 선지를 줄이지 않습니다 (choicesByLevel 을 지우세요)`
+            : `choicesByLevel.${level}: 이 난이도는 선지를 모두 보여 주므로 적지 않습니다`,
+        );
+      }
+      continue;
+    }
+    if (!kept) {
+      errors.push(`choicesByLevel.${level}: 남길 선지 ${want}개를 적어야 합니다 (줄일 수 없는 문제면 levelLock: true)`);
+      continue;
+    }
+    if (kept.length !== want) errors.push(`choicesByLevel.${level}: 선지 번호가 ${want}개여야 합니다 (${kept.length}개)`);
+    if (kept.some((n, i) => n > q.choices.length || (i > 0 && n <= kept[i - 1]))) {
+      errors.push(`choicesByLevel.${level}: 1~${q.choices.length} 사이의 번호를 작은 것부터 겹치지 않게 적습니다`);
+    }
+    if (!kept.includes(q.answer)) errors.push(`choicesByLevel.${level}: 정답(${q.answer}번)이 들어 있어야 합니다`);
+    if (larger && kept.some((n) => !larger!.includes(n))) {
+      errors.push(`choicesByLevel.${level}: 더 어려운 난이도에서 남기는 선지 안에서 골라야 합니다`);
+    }
+    larger = kept;
+  }
+  return errors;
+}
+
 export const questionSchema = z
   .object({
     id: z.string().min(1),
@@ -223,6 +280,22 @@ export const questionSchema = z
     tags: z.array(z.string()).default([]),
     /** 문제 그림 파일 이름 (자격증 폴더의 assets/ 안) */
     image: z.string().min(1).optional(),
+    /**
+     * 난이도 카드별로 남길 선지 번호 (정답 + 가장 그럴듯한 오답). 초급 2개, 중급 3개, 고급 4개.
+     * 선지를 모두 보여 주는 난이도는 적지 않는다 (4지선다면 basic·intermediate 만).
+     */
+    choicesByLevel: z
+      .object({
+        basic: keptChoicesSchema.optional(),
+        intermediate: keptChoicesSchema.optional(),
+        advanced: keptChoicesSchema.optional(),
+      })
+      .optional(),
+    /**
+     * true 면 선지를 줄일 수 없는 문제다 ("옳지 않은 것은?", "모두 고르시오" 등).
+     * 초급·중급에는 나오지 않고, 나올 때는 항상 선지를 모두 보여 준다.
+     */
+    levelLock: z.boolean().default(false),
     /** 문제 내용을 고칠 때마다 1씩 올린다 (id 는 바꾸지 않는다) */
     version: z.number().int().positive().default(1),
     /** 삭제 대신 true 로 표시한다. 새로 출제되지 않지만 오답노트·기록에서는 계속 보인다 */
@@ -256,5 +329,9 @@ export const questionSchema = z
         path: ["answer"],
         message: "정답 번호가 선지 수보다 큽니다",
       });
+      return;
+    }
+    for (const message of checkChoicesByLevel(q)) {
+      ctx.addIssue({ code: "custom", path: ["choicesByLevel"], message });
     }
   });

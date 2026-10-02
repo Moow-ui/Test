@@ -13,6 +13,7 @@ import {
   filterPool,
   largestRemainder,
   mockExamSeconds,
+  mockExamShortage,
 } from "@/lib/quiz-engine";
 import { SAMPLE_SUBJECTS, makeQuestion, makeQuestionsFor, makeSubject } from "./helpers";
 
@@ -198,6 +199,20 @@ describe("난이도 카드", () => {
     expect(filterPool(questions, "advanced").some((q) => q.level === "basic")).toBe(false);
   });
 
+  it("선지를 줄일 수 없는 문제(levelLock)는 초급·중급에 나오지 않고 고급에는 나온다", () => {
+    const locked = [
+      makeQuestion("a", "a1", { level: "basic", levelLock: true, choicesByLevel: undefined }),
+      makeQuestion("a", "a1", { level: "intermediate", levelLock: true, choicesByLevel: undefined }),
+    ];
+    const all = [...questions, ...locked];
+    expect(countAvailable(all, "basic")).toBe(10);
+    expect(countAvailable(all, "intermediate")).toBe(20);
+    expect(countAvailable(all, "advanced")).toBe(21);
+    for (const level of ["basic", "intermediate"] as const) {
+      expect(filterPool(all, level).some((q) => q.levelLock)).toBe(false);
+    }
+  });
+
   it("특정 과목만 고르면 그 과목 문제만 나온다", () => {
     const pool = makeQuestionsFor(SAMPLE_SUBJECTS, 5);
     const quiz = buildLevelQuiz({
@@ -237,10 +252,19 @@ describe("실전 CBT 모의고사", () => {
     }
   });
 
-  it("제한 시간은 문항 수 비율로 줄어든다", () => {
-    const examInfo = { totalQuestions: 60, timeLimitMinutes: 60 };
-    expect(mockExamSeconds(60, examInfo)).toBe(3600);
-    expect(mockExamSeconds(30, examInfo)).toBe(1800);
-    expect(mockExamSeconds(90, examInfo)).toBe(3600);
+  it("제한 시간은 실제 시험과 같다", () => {
+    expect(mockExamSeconds({ timeLimitMinutes: 60 })).toBe(3600);
+    expect(mockExamSeconds({ timeLimitMinutes: 150 })).toBe(9000);
+  });
+
+  it("과목별 문제가 실제 문항 수보다 모자라면 실전 CBT 를 낼 수 없다", () => {
+    // 과목당 20문항이 필요하다. 단원마다 4문제면 theory 24, machines 20, facilities 24 → 낼 수 있다
+    expect(mockExamShortage(SAMPLE_SUBJECTS, makeQuestionsFor(SAMPLE_SUBJECTS, 4))).toEqual([]);
+    // 단원마다 3문제면 theory 18, machines 15, facilities 18 → 세 과목 모두 모자란다
+    expect(mockExamShortage(SAMPLE_SUBJECTS, makeQuestionsFor(SAMPLE_SUBJECTS, 3))).toEqual([
+      { subjectId: "theory", have: 18, need: 20 },
+      { subjectId: "machines", have: 15, need: 20 },
+      { subjectId: "facilities", have: 18, need: 20 },
+    ]);
   });
 });

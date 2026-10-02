@@ -20,7 +20,18 @@
     "reviewStatus": "unverified",
     "tags": [
       "실내 화재"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
   },
   {
     "id": "fire-facility-engineer-electrical-p006",
@@ -43,7 +54,18 @@
     "reviewStatus": "unverified",
     "tags": [
       "연기"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   },
   {
     "id": "fire-facility-engineer-electrical-p007",
@@ -66,6 +88,17 @@
     "reviewStatus": "unverified",
     "tags": [
       "피난"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   }
 ]

@@ -20,7 +20,18 @@
     "reviewStatus": "unverified",
     "tags": [
       "전압 구분"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   },
   {
     "id": "electrical-engineer-p050",
@@ -43,7 +54,8 @@
     "reviewStatus": "unverified",
     "tags": [
       "전선 식별"
-    ]
+    ],
+    "levelLock": true
   },
   {
     "id": "electrical-engineer-p051",
@@ -66,7 +78,18 @@
     "reviewStatus": "unverified",
     "tags": [
       "접지"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   },
   {
     "id": "electrical-engineer-p052",
@@ -89,7 +112,18 @@
     "reviewStatus": "unverified",
     "tags": [
       "절연 저항"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
   },
   {
     "id": "electrical-engineer-p053",
@@ -112,6 +146,17 @@
     "reviewStatus": "unverified",
     "tags": [
       "보호 도체"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
   }
 ]

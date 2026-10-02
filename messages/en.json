@@ -125,7 +125,8 @@
     "notEnough": "Not enough {level} questions. Change the section or level.",
     "start": "Start →",
     "cbt": "Full mock exam",
-    "cbtInfo": "{n} questions · {min} min →",
+    "cbtInfo": "{n} questions · {min} min · {choices} choices →",
+    "choiceCount": "{n} choices",
     "cbtNotReady": "Coming soon",
     "resume": "Continue ({current}/{total}) →",
     "sortByImportance": "Sort by importance",
@@ -220,6 +221,9 @@
   },
   "cbt": {
     "title": "Full mock exam",
+    "choices": "Choices",
+    "choicesValue": "{n} per question (same as the real exam)",
+    "notEnough": "Not enough questions yet for the full {need}-question exam ({have} so far). More are on the way.",
     "preparing": "Getting your exam ready…",
     "again": "Take the mock exam again →",
     "count": "Questions",
@@ -233,7 +237,7 @@
     "start": "Start exam →",
     "howTo": "How to use this screen",
     "steps": [
-      "Tap one of choices ①–④. Tap again to change it.",
+      "Tap one of the choices. Tap again to change it.",
       "Tap a question number on the answer sheet to jump there.",
       "'Unanswered' lists the questions you have not answered.",
       "Tap 'Submit' when done. It submits automatically when time runs out.",

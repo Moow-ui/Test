@@ -33,6 +33,11 @@ export interface LevelRule {
    * 단, 그 자격증에 등록된 기출이 하나도 없으면 풀 수 있는 문제가 없어지므로 예상문제로 대신한다.
    */
   pastOnly: boolean;
+  /**
+   * true 면 선지를 줄일 수 없는 문제(levelLock)를 뺀다.
+   * 초급·중급은 선지를 2개·3개만 보여 주므로(lib/choices.ts) 이런 문제를 낼 수 없다.
+   */
+  excludeLocked: boolean;
 }
 
 /**
@@ -56,16 +61,19 @@ export const LEVEL_RULES: Record<QuizLevel, LevelRule> = {
     levels: ["basic"],
     pastRatio: 0,
     pastOnly: false,
+    excludeLocked: true,
   },
   intermediate: {
     levels: ["basic", "intermediate"],
     pastRatio: 0,
     pastOnly: false,
+    excludeLocked: true,
   },
   advanced: {
     levels: ["intermediate", "advanced"],
     pastRatio: 0,
     pastOnly: false,
+    excludeLocked: false,
   },
 };
 
@@ -108,6 +116,7 @@ export function filterPool<T extends QuestionKey>(
   return questions.filter(
     (q) =>
       rule.levels.includes(q.level) &&
+      (!rule.excludeLocked || !q.levelLock) &&
       (!pastOnly || q.source === "past") &&
       (!subjectId || subjectId === "all" || q.subjectId === subjectId),
   );
@@ -368,8 +377,25 @@ export function buildLevelQuiz<T extends QuestionKey>({
 }
 
 /**
- * 실전 CBT 체험용 모의고사: 실제 시험과 같은 과목별 문항 수로 뽑는다.
- * 보유 문제가 모자라면 있는 만큼만 나온다.
+ * 실전 CBT 를 실제 시험과 같은 문항 수로 내려면 과목마다 questionCount 만큼의 문제가 있어야 한다.
+ * 과목별로 모자란 문제 수를 돌려준다 (모자란 과목이 없으면 빈 배열 = 실전 CBT 를 낼 수 있다).
+ */
+export function mockExamShortage(
+  subjects: Subject[],
+  questions: QuestionKey[],
+): Array<{ subjectId: string; have: number; need: number }> {
+  return subjects
+    .map((s) => ({
+      subjectId: s.id,
+      have: questions.filter((q) => q.subjectId === s.id).length,
+      need: s.questionCount,
+    }))
+    .filter((s) => s.have < s.need);
+}
+
+/**
+ * 실전 CBT 모의고사: 실제 시험과 같은 전체 문항 수·과목별 문항 수로 뽑는다.
+ * 문제가 모자란 자격증은 화면에서 시작할 수 없게 막는다 (mockExamShortage).
  */
 export function buildMockExam<T extends QuestionKey>(params: {
   subjects: Subject[];
@@ -390,11 +416,7 @@ export function buildMockExam<T extends QuestionKey>(params: {
   });
 }
 
-/** 모의고사 제한 시간(초): 문항 수가 실제보다 적으면 같은 비율로 줄인다 */
-export function mockExamSeconds(
-  questionCount: number,
-  examInfo: { totalQuestions: number; timeLimitMinutes: number },
-): number {
-  const ratio = Math.min(1, questionCount / examInfo.totalQuestions);
-  return Math.max(60, Math.round(examInfo.timeLimitMinutes * 60 * ratio));
+/** 실전 CBT 제한 시간(초): 실제 시험의 제한 시간 그대로 */
+export function mockExamSeconds(examInfo: { timeLimitMinutes: number }): number {
+  return examInfo.timeLimitMinutes * 60;
 }

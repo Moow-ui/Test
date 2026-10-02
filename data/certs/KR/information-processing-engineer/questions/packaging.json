@@ -20,7 +20,8 @@
     "reviewStatus": "unverified",
     "tags": [
       "형상 관리"
-    ]
+    ],
+    "levelLock": true
   },
   {
     "id": "information-processing-engineer-p023",
@@ -43,7 +44,18 @@
     "reviewStatus": "unverified",
     "tags": [
       "인터페이스 구현"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
   },
   {
     "id": "information-processing-engineer-p024",
@@ -67,6 +79,7 @@
     "tags": [
       "형상 관리",
       "Git"
-    ]
+    ],
+    "levelLock": true
   }
 ]

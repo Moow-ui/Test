@@ -20,7 +20,18 @@
     "reviewStatus": "unverified",
     "tags": [
       "유압"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
   },
   {
     "id": "forklift-operator-p044",
@@ -44,7 +55,18 @@
     "tags": [
       "유압",
       "밸브"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   },
   {
     "id": "forklift-operator-p045",
@@ -68,7 +90,18 @@
     "tags": [
       "유압",
       "밸브"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   },
   {
     "id": "forklift-operator-p046",
@@ -91,6 +124,7 @@
     "reviewStatus": "unverified",
     "tags": [
       "작동유"
-    ]
+    ],
+    "levelLock": true
   }
 ]

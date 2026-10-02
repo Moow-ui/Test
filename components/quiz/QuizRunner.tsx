@@ -180,6 +180,9 @@ export function QuizRunner({ cert }: { cert: QuizCert }) {
     );
   }
 
+  // 난이도 카드로 시작한 풀이만 선지를 줄여 보여 준다 (초급 2개·중급 3개·고급 4개)
+  const choiceLevel = session.mode === "level" ? session.level : null;
+
   if (session.finishedAt) {
     const againHref =
       session.mode === "level" && session.level
@@ -194,6 +197,7 @@ export function QuizRunner({ cert }: { cert: QuizCert }) {
             label={session.label}
             answers={session.answers}
             questions={sessionQuestions}
+            level={choiceLevel}
             againAction={
               <Link href={againHref} className="btn btn-lg">
                 {m.quiz.again}
@@ -266,6 +270,7 @@ export function QuizRunner({ cert }: { cert: QuizCert }) {
       modeLabel={session.label}
       exitHref={certPath}
       questions={sessionQuestions}
+      level={choiceLevel}
       index={index}
       answers={session.answers}
       revealed={revealed}

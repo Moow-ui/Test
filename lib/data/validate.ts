@@ -9,6 +9,7 @@ import {
   examSetSchema,
   questionSchema,
 } from "../schemas";
+import { mockExamShortage } from "../quiz-engine";
 import type { CertDetail, CertMeta, Question } from "../types";
 import { checkCertDetail, checkCertList, checkQuestions } from "../validate";
 import {
@@ -31,7 +32,7 @@ import type { DataStore } from "./store";
 
 /**
  * /data 폴더 전체 검사 (npm run validate, 빌드 전에 자동 실행).
- * 스키마, 폴더·파일 이름, 문제 id 규칙·중복, 정답 번호 범위, 선지 수, 필수 필드, 과목·단원 참조.
+ * 스키마, 폴더·파일 이름, 문제 id 규칙·중복, 정답 번호 범위, 선지 수, 난이도별 선지(choicesByLevel), 필수 필드, 과목·단원 참조.
  * 하나라도 틀리면 errors 에 담아 돌려주고, 빌드(배포)는 중단된다.
  */
 
@@ -185,6 +186,15 @@ export async function validateData(store: DataStore): Promise<ValidationResult> 
       // ── 현황
       const active = questions.filter((q) => !q.retired);
       lines.push(`\n[${meta.name}] 문제 ${active.length}개${questions.length > active.length ? ` (+출제 중단 ${questions.length - active.length})` : ""}`);
+      const locked = active.filter((q) => q.levelLock).length;
+      const shortage = mockExamShortage(detail.subjects, active);
+      lines.push(
+        `  선지를 줄일 수 없는 문제(levelLock) ${locked}개 · 실전 CBT(${detail.examInfo.totalQuestions}문항): ${
+          shortage.length === 0
+            ? "낼 수 있음"
+            : `문제 부족 (${shortage.map((s) => `${s.subjectId} ${s.have}/${s.need}`).join(", ")})`
+        }`,
+      );
       for (const subject of detail.subjects) {
         const inSubject = active.filter((q) => q.subjectId === subject.id);
         const byLevel = LEVELS.map((l) => inSubject.filter((q) => q.level === l).length).join("/");

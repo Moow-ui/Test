@@ -52,8 +52,8 @@ export interface CertListItem extends CertSummary {
   ready: boolean;
 }
 
-/** 문제를 뽑는 데 필요한 값만 (lib/quiz-engine.ts 가 쓰는 필드) */
-export type QuestionKey = Pick<Question, "id" | "subjectId" | "chapterId" | "level" | "source">;
+/** 문제를 뽑는 데 필요한 값만 (lib/quiz-engine.ts 가 쓰는 필드). levelLock 은 초급·중급에서 빼는 문제 */
+export type QuestionKey = Pick<Question, "id" | "subjectId" | "chapterId" | "level" | "source" | "levelLock">;
 
 /** 브라우저가 먼저 받는 문제 목록의 한 줄. file 은 그 문제가 들어 있는 단원 파일 이름 */
 export interface PoolItem extends QuestionKey {

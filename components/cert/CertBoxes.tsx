@@ -31,15 +31,17 @@ export interface CertBoxesProps {
   subjects: Array<{ id: string; name: string }>;
   /** 난이도 → 범위("all" 또는 과목 id) → 보유 문제 수 */
   counts: Record<QuizLevel, Record<string, number>>;
-  /** 실전 CBT 체험 정보. 문제가 없으면 null */
-  cbt: { questionCount: number; minutes: number } | null;
+  /** 난이도 → 한 문제에 보여 주는 선지 수 (초급 2 · 중급 3 · 고급 4) */
+  choiceCounts: Record<QuizLevel, number>;
+  /** 실전 CBT 체험 정보 (실제 시험과 같은 문항 수·시간·선지 수). 문제가 모자라면 null */
+  cbt: { questionCount: number; minutes: number; choiceCount: number } | null;
 }
 
 /**
  * 자격증 화면에서 가장 먼저 보이는 큰 박스: 초급 / 중급 / 고급, 그 아래 실전 CBT 체험.
  * 난이도 박스를 누르면 바로 아래에 범위·문제 수·[시험 시작하기] 가 펼쳐진다.
  */
-export function CertBoxes({ certId, ready, subjects, counts, cbt }: CertBoxesProps) {
+export function CertBoxes({ certId, ready, subjects, counts, choiceCounts, cbt }: CertBoxesProps) {
   const { locale, m } = useMessages();
   const [level, setLevel] = useState<QuizLevel | null>(null);
   const [scope, setScope] = useState("all");
@@ -71,7 +73,7 @@ export function CertBoxes({ certId, ready, subjects, counts, cbt }: CertBoxesPro
               aria-expanded={active}
               aria-controls="level-detail"
               onClick={() => setLevel(active ? null : id)}
-              className={`flex min-h-32 items-center justify-center rounded-2xl border-2 text-3xl font-extrabold shadow-[var(--shadow)] sm:min-h-40 sm:text-5xl ${
+              className={`flex min-h-32 flex-col items-center justify-center gap-1 rounded-2xl border-2 text-3xl font-extrabold shadow-[var(--shadow)] sm:min-h-40 sm:text-5xl ${
                 !ready
                   ? "border-line-soft bg-surface-2 text-ink-sub"
                   : active
@@ -80,6 +82,7 @@ export function CertBoxes({ certId, ready, subjects, counts, cbt }: CertBoxesPro
               }`}
             >
               {m.levels[id]}
+              <span className="text-[0.95rem] font-bold sm:text-lg">{fmt(m.cert.choiceCount, { n: choiceCounts[id] })}</span>
             </button>
           );
         })}
@@ -162,7 +165,7 @@ export function CertBoxes({ certId, ready, subjects, counts, cbt }: CertBoxesPro
           className="flex min-h-20 items-center justify-between gap-3 rounded-2xl border-2 border-header bg-header px-5 text-white shadow-[var(--shadow)] hover:border-focus"
         >
           <span className="text-xl font-extrabold sm:text-2xl">{m.cert.cbt}</span>
-          <span className="font-bold">{fmt(m.cert.cbtInfo, { n: cbt.questionCount, min: cbt.minutes })}</span>
+          <span className="font-bold">{fmt(m.cert.cbtInfo, { n: cbt.questionCount, min: cbt.minutes, choices: cbt.choiceCount })}</span>
         </Link>
       ) : (
         <div className="flex min-h-20 items-center justify-between gap-3 rounded-2xl border-2 border-line-soft bg-surface-2 px-5 text-ink-sub">

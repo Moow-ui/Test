@@ -5,15 +5,14 @@ import { useEffect, useRef, useState } from "react";
 import { Markdown } from "@/components/Markdown";
 import { ReportForm } from "@/components/quiz/ReportForm";
 import { Stars } from "@/components/Stars";
+import { visibleChoices } from "@/lib/choices";
 import { circled, formatClock, sourceLabel } from "@/lib/format";
 import { fmt } from "@/lib/i18n";
 import { calcStars, getPassContribution } from "@/lib/scoring";
 import { EXAM_ZOOMS, STORAGE_KEYS, setExamZoom, type ExamZoom } from "@/lib/storage";
-import type { Question } from "@/lib/types";
+import type { Question, QuizLevel } from "@/lib/types";
 import { useMessages } from "@/lib/use-messages";
 import { useStored } from "@/lib/use-storage";
-
-const CHOICES = [1, 2, 3, 4];
 
 export interface ExamScreenProps {
   certName: string;
@@ -21,8 +20,13 @@ export interface ExamScreenProps {
   modeLabel: string;
   exitHref: string;
   questions: Question[];
+  /**
+   * 난이도 카드(초급 2개·중급 3개·고급 4개)로 풀 때의 난이도. 선지를 그 수만큼만 보여 준다 (lib/choices.ts).
+   * 없으면 선지를 모두 보여 준다 (실전 CBT, 단원 풀기, 오답노트).
+   */
+  level?: QuizLevel | null;
   index: number;
-  /** 문제 id → 고른 답(1~4) */
+  /** 문제 id → 고른 답 (원래 선지 번호. 화면에 보이는 번호와 다를 수 있다) */
   answers: Record<string, number>;
   /** "바로 답 확인하기"로 이미 채점해 보여 준 문제 */
   revealed: Record<string, boolean>;
@@ -46,12 +50,15 @@ export interface ExamScreenProps {
  *   가운데: 문제와 보기 ①~④ / 오른쪽: 답안 표기란
  *   아래: 이전 · 다음 · 안 푼 문제 · 답안 제출
  * 연습 풀이에서는 "바로 답 확인하기"를 켜 두면 보기를 고르는 즉시 채점 결과가 문제 아래에 나온다.
+ *
+ * 화면의 보기 번호는 보이는 순서대로 1, 2, 3… 이고, 답은 원래 선지 번호로 주고받는다.
  */
 export function ExamScreen({
   certName,
   modeLabel,
   exitHref,
   questions,
+  level,
   index,
   answers,
   revealed,
@@ -75,6 +82,8 @@ export function ExamScreen({
 
   const total = questions.length;
   const question = questions[index];
+  /** 지금 문제에서 보여 줄 선지의 원래 번호. 화면의 n번 보기 = shown[n - 1] */
+  const shown = visibleChoices(question, level);
   const chosen = answers[question.id];
   const isRevealed = !!revealed[question.id];
   const isLast = index + 1 >= total;
@@ -110,7 +119,7 @@ export function ExamScreen({
     if (confirming) dialogRef.current?.focus();
   }, [confirming]);
 
-  // 키보드: 1~4 답 표기, ←/→ 이전·다음, Enter 다음(마지막 문제에서는 채점)
+  // 키보드: 숫자 키로 답 표기, ←/→ 이전·다음, Enter 다음(마지막 문제에서는 채점)
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (e.ctrlKey || e.metaKey || e.altKey) return;
@@ -126,9 +135,9 @@ export function ExamScreen({
         tag === "SELECT" ||
         (tag === "INPUT" && (target as HTMLInputElement).type !== "checkbox");
       if (typing) return;
-      if (["1", "2", "3", "4"].includes(e.key)) {
+      if (/^[1-9]$/.test(e.key) && Number(e.key) <= shown.length) {
         e.preventDefault();
-        select(Number(e.key));
+        select(shown[Number(e.key) - 1]);
       } else if (e.key === "ArrowRight") {
         e.preventDefault();
         if (!isLast) goTo(index + 1);
@@ -220,10 +229,11 @@ export function ExamScreen({
           </h2>
 
           <ol className="mt-[0.5em]">
-            {question.choices.map((choice, i) => {
+            {shown.map((original, i) => {
               const n = i + 1;
-              const selected = chosen === n;
-              const isAnswer = n === question.answer;
+              const choice = question.choices[original - 1];
+              const selected = chosen === original;
+              const isAnswer = original === question.answer;
               let row = "hover:bg-surface-2";
               let bubble = "border-ink bg-surface text-ink";
               if (isRevealed && isAnswer) {
@@ -242,7 +252,7 @@ export function ExamScreen({
                     type="button"
                     aria-pressed={selected}
                     disabled={isRevealed}
-                    onClick={() => select(n)}
+                    onClick={() => select(original)}
                     className={`flex min-h-[2.7em] w-full items-center gap-[0.6em] rounded px-[0.4em] py-[0.35em] text-left leading-snug ${row}`}
                   >
                     <span
@@ -265,7 +275,15 @@ export function ExamScreen({
             })}
           </ol>
 
-          {isRevealed && <AnswerResult key={question.id} question={question} chosen={chosen} meta={metaOf(question)} />}
+          {isRevealed && (
+            <AnswerResult
+              key={question.id}
+              question={question}
+              answerNo={shown.indexOf(question.answer) + 1}
+              chosen={chosen}
+              meta={metaOf(question)}
+            />
+          )}
         </section>
 
         <aside
@@ -276,7 +294,7 @@ export function ExamScreen({
           <ol className="mt-1 grid grid-cols-2 gap-x-2 sm:grid-cols-3 lg:max-h-[calc(100dvh-14rem)] lg:grid-cols-1 lg:overflow-y-auto">
             {questions.map((q, i) => {
               const marked = answers[q.id];
-              const shown = !!revealed[q.id];
+              const graded = !!revealed[q.id];
               return (
                 <li key={q.id} className={`flex items-center gap-1 rounded px-1 ${i === index ? "bg-primary-soft" : ""}`}>
                   <button
@@ -288,12 +306,13 @@ export function ExamScreen({
                   >
                     {i + 1}
                   </button>
-                  {CHOICES.map((n) => {
+                  {visibleChoices(q, level).map((original, ci) => {
+                    const n = ci + 1;
                     let bubble = "border-line bg-surface text-ink";
-                    if (marked === n) {
-                      bubble = !shown
+                    if (marked === original) {
+                      bubble = !graded
                         ? "border-ink bg-ink text-surface"
-                        : n === q.answer
+                        : original === q.answer
                           ? "border-ok bg-ok text-surface"
                           : "border-bad bg-bad text-surface";
                     }
@@ -301,10 +320,10 @@ export function ExamScreen({
                       <button
                         key={n}
                         type="button"
-                        disabled={shown}
+                        disabled={graded}
                         aria-label={fmt(m.mark, { q: i + 1, n })}
-                        aria-pressed={marked === n}
-                        onClick={() => onSelect(q, n)}
+                        aria-pressed={marked === original}
+                        onClick={() => onSelect(q, original)}
                         className={`flex h-7 w-7 items-center justify-center rounded-full border-2 text-[12px] font-bold ${bubble}`}
                       >
                         {n}
@@ -441,10 +460,13 @@ export function ExamScreen({
 /** "바로 답 확인하기"로 채점한 결과. 해설과 오류 신고는 눌러야 펼쳐진다 */
 function AnswerResult({
   question,
+  answerNo,
   chosen,
   meta,
 }: {
   question: Question;
+  /** 화면에 보이는 정답 번호 (선지를 줄였으면 원래 번호와 다르다) */
+  answerNo: number;
   chosen: number | undefined;
   meta: { location: string; chapterImportance: number };
 }) {
@@ -472,7 +494,7 @@ function AnswerResult({
         <span className="mx-1.5" aria-hidden="true">
           ·
         </span>
-        {fmt(m.answerIs, { answer: circled(question.answer) })}
+        {fmt(m.answerIs, { answer: circled(answerNo) })}
       </p>
       <p>
         <span className="font-bold">{all.common.keyConcept}</span> {question.oneLineConcept}

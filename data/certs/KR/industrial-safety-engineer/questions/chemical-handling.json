@@ -20,7 +20,18 @@
     "reviewStatus": "unverified",
     "tags": [
       "위험물"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   },
   {
     "id": "industrial-safety-engineer-p047",
@@ -43,7 +54,18 @@
     "reviewStatus": "unverified",
     "tags": [
       "노출 기준"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   },
   {
     "id": "industrial-safety-engineer-p048",
@@ -66,7 +88,8 @@
     "reviewStatus": "unverified",
     "tags": [
       "안전 장치"
-    ]
+    ],
+    "levelLock": true
   },
   {
     "id": "industrial-safety-engineer-p049",
@@ -90,7 +113,18 @@
     "tags": [
       "위험물",
       "소화"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
   },
   {
     "id": "industrial-safety-engineer-p050",
@@ -113,6 +147,17 @@
     "reviewStatus": "unverified",
     "tags": [
       "폭발"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   }
 ]

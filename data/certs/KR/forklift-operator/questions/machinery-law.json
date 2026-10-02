@@ -20,7 +20,18 @@
     "reviewStatus": "unverified",
     "tags": [
       "등록"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
   },
   {
     "id": "forklift-operator-p024",
@@ -43,7 +54,8 @@
     "reviewStatus": "unverified",
     "tags": [
       "검사"
-    ]
+    ],
+    "levelLock": true
   },
   {
     "id": "forklift-operator-p025",
@@ -66,7 +78,18 @@
     "reviewStatus": "unverified",
     "tags": [
       "조종사 면허"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   },
   {
     "id": "forklift-operator-p026",
@@ -89,7 +112,18 @@
     "reviewStatus": "unverified",
     "tags": [
       "등록"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
   },
   {
     "id": "forklift-operator-p027",
@@ -112,7 +146,18 @@
     "reviewStatus": "unverified",
     "tags": [
       "조종사 면허"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
   },
   {
     "id": "forklift-operator-p028",
@@ -136,6 +181,7 @@
     "tags": [
       "조종사 면허",
       "벌칙"
-    ]
+    ],
+    "levelLock": true
   }
 ]

@@ -20,7 +20,8 @@
     "reviewStatus": "unverified",
     "tags": [
       "키"
-    ]
+    ],
+    "levelLock": true
   },
   {
     "id": "computer-literacy-1-p034",
@@ -43,7 +44,18 @@
     "reviewStatus": "unverified",
     "tags": [
       "E-R 모델"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   },
   {
     "id": "computer-literacy-1-p035",
@@ -66,7 +78,8 @@
     "reviewStatus": "unverified",
     "tags": [
       "정규화"
-    ]
+    ],
+    "levelLock": true
   },
   {
     "id": "computer-literacy-1-p036",
@@ -89,6 +102,17 @@
     "reviewStatus": "unverified",
     "tags": [
       "DBMS"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
   }
 ]

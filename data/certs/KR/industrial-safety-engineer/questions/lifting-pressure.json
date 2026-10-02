@@ -20,7 +20,18 @@
     "reviewStatus": "unverified",
     "tags": [
       "크레인"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
   },
   {
     "id": "industrial-safety-engineer-p028",
@@ -43,7 +54,18 @@
     "reviewStatus": "unverified",
     "tags": [
       "와이어로프"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   },
   {
     "id": "industrial-safety-engineer-p029",
@@ -66,7 +88,8 @@
     "reviewStatus": "unverified",
     "tags": [
       "보일러"
-    ]
+    ],
+    "levelLock": true
   },
   {
     "id": "industrial-safety-engineer-p030",
@@ -89,6 +112,17 @@
     "reviewStatus": "unverified",
     "tags": [
       "산업용 로봇"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   }
 ]

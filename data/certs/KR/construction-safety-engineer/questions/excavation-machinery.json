@@ -20,7 +20,8 @@
     "reviewStatus": "unverified",
     "tags": [
       "양중기"
-    ]
+    ],
+    "levelLock": true
   },
   {
     "id": "construction-safety-engineer-p058",
@@ -43,7 +44,18 @@
     "reviewStatus": "unverified",
     "tags": [
       "타워 크레인"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   },
   {
     "id": "construction-safety-engineer-p059",
@@ -67,7 +79,18 @@
     "tags": [
       "흙막이",
       "계측"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   },
   {
     "id": "construction-safety-engineer-p060",
@@ -90,6 +113,7 @@
     "reviewStatus": "unverified",
     "tags": [
       "토사 붕괴"
-    ]
+    ],
+    "levelLock": true
   }
 ]

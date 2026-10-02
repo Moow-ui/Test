@@ -20,7 +20,18 @@
     "reviewStatus": "unverified",
     "tags": [
       "계측"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   },
   {
     "id": "fire-facility-engineer-electrical-p027",
@@ -44,7 +55,18 @@
     "tags": [
       "배율기",
       "계산"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   },
   {
     "id": "fire-facility-engineer-electrical-p028",
@@ -67,7 +89,8 @@
     "reviewStatus": "unverified",
     "tags": [
       "반도체"
-    ]
+    ],
+    "levelLock": true
   },
   {
     "id": "fire-facility-engineer-electrical-p029",
@@ -91,6 +114,17 @@
     "tags": [
       "정류",
       "계산"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   }
 ]

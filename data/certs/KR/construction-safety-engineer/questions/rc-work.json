@@ -20,7 +20,8 @@
     "reviewStatus": "unverified",
     "tags": [
       "철근"
-    ]
+    ],
+    "levelLock": true
   },
   {
     "id": "construction-safety-engineer-p043",
@@ -43,7 +44,18 @@
     "reviewStatus": "unverified",
     "tags": [
       "거푸집"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   },
   {
     "id": "construction-safety-engineer-p044",
@@ -67,7 +79,8 @@
     "tags": [
       "거푸집",
       "측압"
-    ]
+    ],
+    "levelLock": true
   },
   {
     "id": "construction-safety-engineer-p045",
@@ -90,7 +103,18 @@
     "reviewStatus": "unverified",
     "tags": [
       "콘크리트 타설"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
   },
   {
     "id": "construction-safety-engineer-p046",
@@ -113,6 +137,7 @@
     "reviewStatus": "unverified",
     "tags": [
       "콘크리트 다짐"
-    ]
+    ],
+    "levelLock": true
   }
 ]

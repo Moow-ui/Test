@@ -20,7 +20,18 @@
     "reviewStatus": "unverified",
     "tags": [
       "유도등"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   },
   {
     "id": "fire-facility-engineer-electrical-p054",
@@ -44,7 +55,8 @@
     "tags": [
       "유도등",
       "비상 전원"
-    ]
+    ],
+    "levelLock": true
   },
   {
     "id": "fire-facility-engineer-electrical-p055",
@@ -68,6 +80,17 @@
     "tags": [
       "객석 유도등",
       "계산"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   }
 ]

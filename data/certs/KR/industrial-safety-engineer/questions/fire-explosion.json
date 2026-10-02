@@ -20,7 +20,8 @@
     "reviewStatus": "unverified",
     "tags": [
       "연소"
-    ]
+    ],
+    "levelLock": true
   },
   {
     "id": "industrial-safety-engineer-p042",
@@ -43,7 +44,18 @@
     "reviewStatus": "unverified",
     "tags": [
       "소화"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   },
   {
     "id": "industrial-safety-engineer-p043",
@@ -67,7 +79,18 @@
     "tags": [
       "폭발 한계",
       "계산"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   },
   {
     "id": "industrial-safety-engineer-p044",
@@ -91,7 +114,18 @@
     "tags": [
       "폭발 한계",
       "계산"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   },
   {
     "id": "industrial-safety-engineer-p045",
@@ -114,6 +148,7 @@
     "reviewStatus": "unverified",
     "tags": [
       "분진 폭발"
-    ]
+    ],
+    "levelLock": true
   }
 ]

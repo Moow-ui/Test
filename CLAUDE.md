@@ -27,6 +27,7 @@
 1. **자격증 추가 = 데이터 폴더 하나 추가.** `data/certs/{country}/{slug}/` 만 만들면 목록·검색·sitemap·화면이 자동으로 생긴다.
    자격증 때문에 코드를 고치지 않는다. 손으로 고치는 자격증 목록은 없다.
 2. **자격증 이름·slug 로 분기하는 코드 금지.** 자격증마다 다른 점은 전부 `meta.json` 값으로 처리한다 (선지 수, 합격 기준 등).
+   선지 수는 초급 2개·중급 3개·고급 4개·실전 CBT 는 시험 그대로. 남길 선지는 문제의 `choicesByLevel` 에 미리 적고, 줄일 수 없는 문제는 `levelLock`.
 3. **문제 id 는 영구적이다.** `{slug}-{chapterId}-{4자리 번호}`. 바꾸지도 다시 쓰지도 않는다.
    문제를 고치면 `version` 만 올리고, 없앨 때는 지우지 말고 `retired: true`. (회원의 오답노트·풀이 기록이 id 를 가리킨다)
 4. **문제 데이터를 Worker 코드에 넣지 않는다.** 화면 코드에서 문제 JSON 을 `import` 하지 않는다.
@@ -58,9 +59,10 @@ app/[lang]/                모든 화면. 자격증은 동적 경로 하나(cert
 lib/data/                  ★ 데이터 읽기 (index: 서버·빌드 / client: 브라우저 / paths: 폴더 규칙 / validate: 검사)
 lib/schemas.ts             데이터 스키마 (zod)
 lib/quiz-engine.ts         출제 알고리즘 · lib/scoring.ts ★·합격 가능성 · lib/grading.ts 채점
+lib/choices.ts             난이도별로 보여 줄 선지 (초급 2 · 중급 3 · 고급 4 · 실전 CBT 는 시험 그대로)
 lib/storage.ts             ★ localStorage 는 여기 한 곳
 lib/server/                D1, 세션, 비밀번호 해시
-scripts/                   validate-data, build-data, import-questions, check-meta, ci-build
+scripts/                   validate-data, build-data, import-questions, convert-choices, check-meta, ci-build
 ```
 
 ## 콘텐츠 정책 (요약)
@@ -85,6 +87,7 @@ npm test               단위 테스트
 npm run validate       /data 전체 검사 (스키마, id 중복·형식, 정답 번호, 선지 수, 필수 필드)
 npm run build:data     data/ → public/data/ 정적 문제 파일 만들기
 npm run questions:add  문제 넣기·고치기 (CSV/JSON → 검증 → 단원별 파일, id 자동)
+npm run choices:convert  값이 없는 문제에 choicesByLevel·levelLock 채우기 (난이도별 선지 수)
 npm run check:meta     빌드 결과의 title·description 중복, noindex, sitemap, hreflang 검사
 npx wrangler deploy --dry-run   Cloudflare 배포 묶음 확인 (실제 배포는 push 하면 자동)
 ```

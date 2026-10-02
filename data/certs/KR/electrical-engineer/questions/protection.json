@@ -21,7 +21,18 @@
     "tags": [
       "차단기",
       "단로기"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   },
   {
     "id": "electrical-engineer-p018",
@@ -45,7 +56,18 @@
     "tags": [
       "단락 전류",
       "계산"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   },
   {
     "id": "electrical-engineer-p019",
@@ -68,6 +90,7 @@
     "reviewStatus": "unverified",
     "tags": [
       "피뢰기"
-    ]
+    ],
+    "levelLock": true
   }
 ]

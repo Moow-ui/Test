@@ -20,7 +20,8 @@
     "reviewStatus": "unverified",
     "tags": [
       "소방기본법"
-    ]
+    ],
+    "levelLock": true
   },
   {
     "id": "fire-facility-engineer-electrical-p031",
@@ -43,7 +44,18 @@
     "reviewStatus": "unverified",
     "tags": [
       "소방 용수 시설"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
   },
   {
     "id": "fire-facility-engineer-electrical-p032",
@@ -66,6 +78,17 @@
     "reviewStatus": "unverified",
     "tags": [
       "소방 활동"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   }
 ]

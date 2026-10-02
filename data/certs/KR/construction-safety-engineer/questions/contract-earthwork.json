@@ -20,7 +20,18 @@
     "reviewStatus": "unverified",
     "tags": [
       "도급 방식"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   },
   {
     "id": "construction-safety-engineer-p038",
@@ -43,7 +54,8 @@
     "reviewStatus": "unverified",
     "tags": [
       "지반 조사"
-    ]
+    ],
+    "levelLock": true
   },
   {
     "id": "construction-safety-engineer-p039",
@@ -66,7 +78,18 @@
     "reviewStatus": "unverified",
     "tags": [
       "공정 관리"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   },
   {
     "id": "construction-safety-engineer-p040",
@@ -89,7 +112,18 @@
     "reviewStatus": "unverified",
     "tags": [
       "지반 개량"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
   },
   {
     "id": "construction-safety-engineer-p041",
@@ -112,6 +146,17 @@
     "reviewStatus": "unverified",
     "tags": [
       "흙막이 공법"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
   }
 ]

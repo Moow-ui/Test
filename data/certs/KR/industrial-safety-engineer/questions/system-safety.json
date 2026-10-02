@@ -20,7 +20,18 @@
     "reviewStatus": "unverified",
     "tags": [
       "FTA"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   },
   {
     "id": "industrial-safety-engineer-p017",
@@ -43,7 +54,18 @@
     "reviewStatus": "unverified",
     "tags": [
       "위험성 평가"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
   },
   {
     "id": "industrial-safety-engineer-p018",
@@ -67,7 +89,18 @@
     "tags": [
       "FTA",
       "계산"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
   },
   {
     "id": "industrial-safety-engineer-p019",
@@ -91,7 +124,18 @@
     "tags": [
       "FTA",
       "컷셋"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
   },
   {
     "id": "industrial-safety-engineer-p020",
@@ -114,6 +158,7 @@
     "reviewStatus": "unverified",
     "tags": [
       "FMEA"
-    ]
+    ],
+    "levelLock": true
   }
 ]

@@ -20,7 +20,18 @@
     "reviewStatus": "unverified",
     "tags": [
       "작업 전 점검"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   },
   {
     "id": "forklift-operator-p012",
@@ -43,7 +54,8 @@
     "reviewStatus": "unverified",
     "tags": [
       "작업 후 점검"
-    ]
+    ],
+    "levelLock": true
   },
   {
     "id": "forklift-operator-p013",
@@ -66,7 +78,18 @@
     "reviewStatus": "unverified",
     "tags": [
       "작업 후 점검"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
   },
   {
     "id": "forklift-operator-p014",
@@ -89,6 +112,17 @@
     "reviewStatus": "unverified",
     "tags": [
       "계기판"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
   }
 ]

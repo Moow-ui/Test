@@ -20,7 +20,8 @@
     "reviewStatus": "unverified",
     "tags": [
       "소방시설업"
-    ]
+    ],
+    "levelLock": true
   },
   {
     "id": "fire-facility-engineer-electrical-p042",
@@ -43,7 +44,18 @@
     "reviewStatus": "unverified",
     "tags": [
       "하자 보수"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
   },
   {
     "id": "fire-facility-engineer-electrical-p043",
@@ -67,6 +79,7 @@
     "tags": [
       "위험물",
       "지정 수량"
-    ]
+    ],
+    "levelLock": true
   }
 ]

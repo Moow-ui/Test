@@ -47,6 +47,8 @@ export function makeQuestion(
     frequency: 3,
     reviewStatus: "unverified",
     tags: [],
+    choicesByLevel: { basic: [1, 2], intermediate: [1, 2, 3] },
+    levelLock: false,
     version: 1,
     retired: false,
     ...overrides,

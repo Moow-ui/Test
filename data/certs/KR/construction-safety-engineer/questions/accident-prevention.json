@@ -20,7 +20,18 @@
     "reviewStatus": "unverified",
     "tags": [
       "사고 예방"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
   },
   {
     "id": "construction-safety-engineer-p002",
@@ -43,7 +54,8 @@
     "reviewStatus": "unverified",
     "tags": [
       "3E"
-    ]
+    ],
+    "levelLock": true
   },
   {
     "id": "construction-safety-engineer-p003",
@@ -67,7 +79,18 @@
     "tags": [
       "재해 통계",
       "계산"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
   },
   {
     "id": "construction-safety-engineer-p004",
@@ -91,7 +114,18 @@
     "tags": [
       "재해 통계",
       "계산"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
   },
   {
     "id": "construction-safety-engineer-p005",
@@ -114,6 +148,17 @@
     "reviewStatus": "unverified",
     "tags": [
       "재해 조사"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   }
 ]

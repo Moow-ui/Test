@@ -21,7 +21,18 @@
     "tags": [
       "동기 속도",
       "계산"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
   },
   {
     "id": "electrical-engineer-p028",
@@ -45,7 +56,8 @@
     "tags": [
       "동기 발전기",
       "병렬 운전"
-    ]
+    ],
+    "levelLock": true
   },
   {
     "id": "electrical-engineer-p029",
@@ -68,6 +80,7 @@
     "reviewStatus": "unverified",
     "tags": [
       "단락비"
-    ]
+    ],
+    "levelLock": true
   }
 ]

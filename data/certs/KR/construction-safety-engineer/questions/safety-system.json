@@ -21,7 +21,18 @@
     "tags": [
       "보호구",
       "안전모"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
   },
   {
     "id": "construction-safety-engineer-p007",
@@ -44,7 +55,8 @@
     "reviewStatus": "unverified",
     "tags": [
       "안전보건 관리 체제"
-    ]
+    ],
+    "levelLock": true
   },
   {
     "id": "construction-safety-engineer-p008",
@@ -67,7 +79,18 @@
     "reviewStatus": "unverified",
     "tags": [
       "안전보건 표지"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   },
   {
     "id": "construction-safety-engineer-p009",
@@ -91,6 +114,17 @@
     "tags": [
       "보호구",
       "안전대"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   }
 ]

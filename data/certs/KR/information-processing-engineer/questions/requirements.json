@@ -20,7 +20,8 @@
     "reviewStatus": "unverified",
     "tags": [
       "애자일"
-    ]
+    ],
+    "levelLock": true
   },
   {
     "id": "information-processing-engineer-p002",
@@ -43,7 +44,18 @@
     "reviewStatus": "unverified",
     "tags": [
       "UML"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   },
   {
     "id": "information-processing-engineer-p003",
@@ -66,7 +78,18 @@
     "reviewStatus": "unverified",
     "tags": [
       "요구사항"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
   },
   {
     "id": "information-processing-engineer-p004",
@@ -90,6 +113,17 @@
     "tags": [
       "UML",
       "유스케이스"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   }
 ]

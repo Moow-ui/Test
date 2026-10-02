@@ -20,7 +20,18 @@
     "reviewStatus": "unverified",
     "tags": [
       "송전 전압"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
   },
   {
     "id": "electrical-engineer-p014",
@@ -43,7 +54,8 @@
     "reviewStatus": "unverified",
     "tags": [
       "복도체"
-    ]
+    ],
+    "levelLock": true
   },
   {
     "id": "electrical-engineer-p015",
@@ -66,7 +78,18 @@
     "reviewStatus": "unverified",
     "tags": [
       "페란티 현상"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
   },
   {
     "id": "electrical-engineer-p016",
@@ -89,6 +112,7 @@
     "reviewStatus": "unverified",
     "tags": [
       "중성점 접지"
-    ]
+    ],
+    "levelLock": true
   }
 ]

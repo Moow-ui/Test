@@ -20,7 +20,8 @@
     "reviewStatus": "unverified",
     "tags": [
       "시나리오"
-    ]
+    ],
+    "levelLock": true
   },
   {
     "id": "computer-literacy-1-p024",
@@ -43,7 +44,8 @@
     "reviewStatus": "unverified",
     "tags": [
       "가상 분석"
-    ]
+    ],
+    "levelLock": true
   },
   {
     "id": "computer-literacy-1-p025",
@@ -66,7 +68,8 @@
     "reviewStatus": "unverified",
     "tags": [
       "피벗 테이블"
-    ]
+    ],
+    "levelLock": true
   },
   {
     "id": "computer-literacy-1-p026",
@@ -89,6 +92,17 @@
     "reviewStatus": "unverified",
     "tags": [
       "필터"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
   }
 ]

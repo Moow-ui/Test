@@ -20,7 +20,18 @@
     "reviewStatus": "unverified",
     "tags": [
       "경계 구역"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   },
   {
     "id": "fire-facility-engineer-electrical-p045",
@@ -43,7 +54,18 @@
     "reviewStatus": "unverified",
     "tags": [
       "감지기"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
   },
   {
     "id": "fire-facility-engineer-electrical-p046",
@@ -66,7 +88,18 @@
     "reviewStatus": "unverified",
     "tags": [
       "발신기"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
   },
   {
     "id": "fire-facility-engineer-electrical-p047",
@@ -89,7 +122,8 @@
     "reviewStatus": "unverified",
     "tags": [
       "음향 장치"
-    ]
+    ],
+    "levelLock": true
   },
   {
     "id": "fire-facility-engineer-electrical-p048",
@@ -112,7 +146,18 @@
     "reviewStatus": "unverified",
     "tags": [
       "배선"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   },
   {
     "id": "fire-facility-engineer-electrical-p049",
@@ -135,6 +180,17 @@
     "reviewStatus": "unverified",
     "tags": [
       "비상 전원"
-    ]
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   }
 ]
