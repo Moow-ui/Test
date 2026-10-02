@@ -52,7 +52,7 @@ export const MIN_CHOICES = 2;
 export const MAX_CHOICES = 6;
 /**
  * 난이도 카드별로 화면에 보여 주는 선지 수: 초급 2개, 중급 3개, 고급 4개.
- * 시험의 선지 수가 이보다 적으면 있는 만큼만 보여 준다. 실전 CBT 는 항상 examInfo.choiceCount 그대로.
+ * 시험의 선지 수가 이보다 적으면 있는 만큼만 보여 준다. 실전 문제풀이 는 항상 examInfo.choiceCount 그대로.
  * 어떤 선지를 남길지는 문제의 choicesByLevel 에 미리 적어 둔다 (lib/choices.ts).
  */
 export const LEVEL_CHOICE_COUNT: Record<(typeof LEVELS)[number], number> = {

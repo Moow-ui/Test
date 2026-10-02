@@ -33,12 +33,12 @@ export interface CertBoxesProps {
   counts: Record<QuizLevel, Record<string, number>>;
   /** 난이도 → 한 문제에 보여 주는 선지 수 (초급 2 · 중급 3 · 고급 4) */
   choiceCounts: Record<QuizLevel, number>;
-  /** 실전 CBT 체험 정보 (실제 시험과 같은 문항 수·시간·선지 수). 문제가 모자라면 null */
+  /** 실전 문제풀이 정보 (실제 시험과 같은 문항 수·시간·선지 수). 문제가 모자라면 null */
   cbt: { questionCount: number; minutes: number; choiceCount: number } | null;
 }
 
 /**
- * 자격증 화면에서 가장 먼저 보이는 큰 박스: 초급 / 중급 / 고급, 그 아래 실전 CBT 체험.
+ * 자격증 화면에서 가장 먼저 보이는 큰 박스: 초급 / 중급 / 고급, 그 아래 실전 문제풀이.
  * 난이도 박스를 누르면 바로 아래에 범위·문제 수·[시험 시작하기] 가 펼쳐진다.
  */
 export function CertBoxes({ certId, ready, subjects, counts, choiceCounts, cbt }: CertBoxesProps) {
@@ -158,7 +158,7 @@ export function CertBoxes({ certId, ready, subjects, counts, choiceCounts, cbt }
         )}
       </div>
 
-      {/* 실전 CBT 체험은 난이도와 별개의 칸으로 둔다 */}
+      {/* 실전 문제풀이은 난이도와 별개의 칸으로 둔다 */}
       {cbt ? (
         <Link
           href={`${certPath}/cbt`}

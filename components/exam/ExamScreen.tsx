@@ -16,13 +16,13 @@ import { useStored } from "@/lib/use-storage";
 
 export interface ExamScreenProps {
   certName: string;
-  /** "초급 · 전체 과목", "실전 CBT 체험" 등 */
+  /** "초급 · 전체 과목", "실전 문제풀이" 등 */
   modeLabel: string;
   exitHref: string;
   questions: Question[];
   /**
    * 난이도 카드(초급 2개·중급 3개·고급 4개)로 풀 때의 난이도. 선지를 그 수만큼만 보여 준다 (lib/choices.ts).
-   * 없으면 선지를 모두 보여 준다 (실전 CBT, 단원 풀기, 오답노트).
+   * 없으면 선지를 모두 보여 준다 (실전 문제풀이, 단원 풀기, 오답노트).
    */
   level?: QuizLevel | null;
   index: number;
@@ -30,11 +30,11 @@ export interface ExamScreenProps {
   answers: Record<string, number>;
   /** "바로 답 확인하기"로 이미 채점해 보여 준 문제 */
   revealed: Record<string, boolean>;
-  /** 제한 시간이 있는 시험(실전 CBT)만 넘긴다 */
+  /** 제한 시간이 있는 시험(실전 문제풀이)만 넘긴다 */
   timer?: { remainingSec: number; totalSec: number };
   /** "바로 답 확인하기" 체크박스 (연습 풀이만). 없으면 체크박스를 그리지 않는다 */
   instant?: { checked: boolean; onChange: (checked: boolean) => void };
-  /** 마지막에 누르는 버튼: grade = "채점하기"(연습 풀이), submit = "답안 제출"(실전 CBT) */
+  /** 마지막에 누르는 버튼: grade = "채점하기"(연습 풀이), submit = "답안 제출"(실전 문제풀이) */
   submitKind: "grade" | "submit";
   onSelect: (question: Question, choice: number) => void;
   onGoTo: (index: number) => void;
@@ -44,7 +44,7 @@ export interface ExamScreenProps {
 }
 
 /**
- * 시험 화면 (연습 풀이·실전 CBT 공용).
+ * 시험 화면 (연습 풀이·실전 문제풀이 공용).
  * 큐넷 CBT 화면과 같은 배열을 따른다:
  *   위: 종목명 · 문제 수(또는 남은 시간) / 글자크기 100·150·200%
  *   가운데: 문제와 보기 ①~④ / 오른쪽: 답안 표기란
@@ -106,7 +106,7 @@ export function ExamScreen({
 
   /** 마지막 문제의 큰 버튼, 그리고 "답안 제출" 버튼 */
   const requestSubmit = () => {
-    // 연습 풀이에서 다 풀었으면 바로 채점한다. 안 푼 문제가 있거나 실전 CBT 면 한 번 더 묻는다
+    // 연습 풀이에서 다 풀었으면 바로 채점한다. 안 푼 문제가 있거나 실전 문제풀이 면 한 번 더 묻는다
     if (!timer && unanswered.length === 0) onSubmit();
     else setConfirming(true);
   };

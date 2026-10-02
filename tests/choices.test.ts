@@ -4,7 +4,7 @@ import { levelChoiceCount, visibleChoices } from "@/lib/choices";
 import { checkChoicesByLevel, questionSchema } from "@/lib/schemas";
 import { makeQuestion } from "./helpers";
 
-/** 난이도별 선지 수: 초급 2개, 중급 3개, 고급 4개, 실전 CBT 는 시험의 실제 선지 수 */
+/** 난이도별 선지 수: 초급 2개, 중급 3개, 고급 4개, 실전 문제풀이 는 시험의 실제 선지 수 */
 
 describe("visibleChoices (화면에 보여 줄 선지)", () => {
   const q = makeQuestion("a", "a1", { answer: 3, choicesByLevel: { basic: [3, 4], intermediate: [1, 3, 4] } });
@@ -15,7 +15,7 @@ describe("visibleChoices (화면에 보여 줄 선지)", () => {
     expect(visibleChoices(q, "advanced")).toEqual([1, 2, 3, 4]);
   });
 
-  it("난이도가 없으면(실전 CBT·단원 풀기·오답노트) 모두 보여 준다", () => {
+  it("난이도가 없으면(실전 문제풀이·단원 풀기·오답노트) 모두 보여 준다", () => {
     expect(visibleChoices(q, null)).toEqual([1, 2, 3, 4]);
     expect(visibleChoices(q, undefined)).toEqual([1, 2, 3, 4]);
   });

@@ -48,7 +48,7 @@ export const FALLBACK_TO_PREDICTED_WHEN_NO_PAST = true;
 
 /**
  * 중요도(1~5)별 출제 가중치. 연습 풀이에서 단원 출제 비중에 곱한다.
- * 숫자가 클수록 그 중요도의 단원에서 문제가 더 많이 나온다. (실전 CBT 모의고사에는 적용하지 않는다)
+ * 숫자가 클수록 그 중요도의 단원에서 문제가 더 많이 나온다. (실전 문제풀이 모의고사에는 적용하지 않는다)
  */
 export const IMPORTANCE_BOOST: Record<number, number> = { 1: 0.6, 2: 0.8, 3: 1, 4: 1.2, 5: 1.4 };
 
@@ -377,8 +377,8 @@ export function buildLevelQuiz<T extends QuestionKey>({
 }
 
 /**
- * 실전 CBT 를 실제 시험과 같은 문항 수로 내려면 과목마다 questionCount 만큼의 문제가 있어야 한다.
- * 과목별로 모자란 문제 수를 돌려준다 (모자란 과목이 없으면 빈 배열 = 실전 CBT 를 낼 수 있다).
+ * 실전 문제풀이 를 실제 시험과 같은 문항 수로 내려면 과목마다 questionCount 만큼의 문제가 있어야 한다.
+ * 과목별로 모자란 문제 수를 돌려준다 (모자란 과목이 없으면 빈 배열 = 실전 문제풀이 를 낼 수 있다).
  */
 export function mockExamShortage(
   subjects: Subject[],
@@ -394,7 +394,7 @@ export function mockExamShortage(
 }
 
 /**
- * 실전 CBT 모의고사: 실제 시험과 같은 전체 문항 수·과목별 문항 수로 뽑는다.
+ * 실전 문제풀이 모의고사: 실제 시험과 같은 전체 문항 수·과목별 문항 수로 뽑는다.
  * 문제가 모자란 자격증은 화면에서 시작할 수 없게 막는다 (mockExamShortage).
  */
 export function buildMockExam<T extends QuestionKey>(params: {
@@ -416,7 +416,7 @@ export function buildMockExam<T extends QuestionKey>(params: {
   });
 }
 
-/** 실전 CBT 제한 시간(초): 실제 시험의 제한 시간 그대로 */
+/** 실전 문제풀이 제한 시간(초): 실제 시험의 제한 시간 그대로 */
 export function mockExamSeconds(examInfo: { timeLimitMinutes: number }): number {
   return examInfo.timeLimitMinutes * 60;
 }

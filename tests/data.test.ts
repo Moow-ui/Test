@@ -113,7 +113,7 @@ describe("문제 파일·id 규칙", () => {
   });
 });
 
-describe("난이도별 선지 수 (초급 2개 · 중급 3개 · 고급 4개 · 실전 CBT 는 시험 그대로)", () => {
+describe("난이도별 선지 수 (초급 2개 · 중급 3개 · 고급 4개 · 실전 문제풀이 는 시험 그대로)", () => {
   it("난이도 카드에 나오는 문제는 그 난이도의 선지 수만큼, 정답을 포함해 보여 준다", async () => {
     for (const id of READY_IDS) {
       const choiceCount = (await getCertification(id))!.examInfo!.choiceCount;
@@ -130,7 +130,7 @@ describe("난이도별 선지 수 (초급 2개 · 중급 3개 · 고급 4개 · 
     }
   });
 
-  it("실전 CBT·단원 풀기·오답노트(난이도 없음)는 선지를 모두 보여 준다", async () => {
+  it("실전 문제풀이·단원 풀기·오답노트(난이도 없음)는 선지를 모두 보여 준다", async () => {
     for (const id of READY_IDS) {
       const choiceCount = (await getCertification(id))!.examInfo!.choiceCount;
       for (const q of await getQuestions(id)) {
@@ -149,7 +149,7 @@ describe("난이도별 선지 수 (초급 2개 · 중급 3개 · 고급 4개 · 
     }
   });
 
-  it("실전 CBT 를 낼 수 있는 자격증은 문항 수·과목별 문항 수가 실제 시험과 같다", async () => {
+  it("실전 문제풀이 를 낼 수 있는 자격증은 문항 수·과목별 문항 수가 실제 시험과 같다", async () => {
     for (const id of READY_IDS) {
       const cert = await getCertification(id);
       const questions = await getQuestions(id);
@@ -350,7 +350,7 @@ describe("초급/중급/고급 × 5/10/20/30 조합", () => {
     expect(countAvailable(questions, "advanced", "all")).toBeGreaterThanOrEqual(30);
   });
 
-  it("실전 CBT 모의고사는 60문항(과목별 20문항)으로 출제된다", async () => {
+  it("실전 문제풀이 모의고사는 60문항(과목별 20문항)으로 출제된다", async () => {
     const cert = await getCertification(CERT_ID);
     const questions = await getQuestions(CERT_ID);
     const exam = buildMockExam({

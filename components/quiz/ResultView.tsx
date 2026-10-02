@@ -42,7 +42,7 @@ export function ResultView({
   againAction,
 }: {
   cert: QuizCert;
-  /** 풀이 이름 (예: "초급 · 전체 과목", "실전 CBT 체험") */
+  /** 풀이 이름 (예: "초급 · 전체 과목", "실전 문제풀이") */
   label: string;
   /** 문제 id → 고른 답 */
   answers: Record<string, number>;

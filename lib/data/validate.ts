@@ -189,7 +189,7 @@ export async function validateData(store: DataStore): Promise<ValidationResult> 
       const locked = active.filter((q) => q.levelLock).length;
       const shortage = mockExamShortage(detail.subjects, active);
       lines.push(
-        `  선지를 줄일 수 없는 문제(levelLock) ${locked}개 · 실전 CBT(${detail.examInfo.totalQuestions}문항): ${
+        `  선지를 줄일 수 없는 문제(levelLock) ${locked}개 · 실전 문제풀이(${detail.examInfo.totalQuestions}문항): ${
           shortage.length === 0
             ? "낼 수 있음"
             : `문제 부족 (${shortage.map((s) => `${s.subjectId} ${s.have}/${s.need}`).join(", ")})`

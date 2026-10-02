@@ -242,7 +242,7 @@ describe("난이도 카드", () => {
   });
 });
 
-describe("실전 CBT 모의고사", () => {
+describe("실전 문제풀이 모의고사", () => {
   it("과목별 문항 수가 실제 시험과 같다", () => {
     const pool = makeQuestionsFor(SAMPLE_SUBJECTS, 8);
     const exam = buildMockExam({ subjects: SAMPLE_SUBJECTS, questions: pool, totalQuestions: 60, rng: createRng(1) });
@@ -257,7 +257,7 @@ describe("실전 CBT 모의고사", () => {
     expect(mockExamSeconds({ timeLimitMinutes: 150 })).toBe(9000);
   });
 
-  it("과목별 문제가 실제 문항 수보다 모자라면 실전 CBT 를 낼 수 없다", () => {
+  it("과목별 문제가 실제 문항 수보다 모자라면 실전 문제풀이 를 낼 수 없다", () => {
     // 과목당 20문항이 필요하다. 단원마다 4문제면 theory 24, machines 20, facilities 24 → 낼 수 있다
     expect(mockExamShortage(SAMPLE_SUBJECTS, makeQuestionsFor(SAMPLE_SUBJECTS, 4))).toEqual([]);
     // 단원마다 3문제면 theory 18, machines 15, facilities 18 → 세 과목 모두 모자란다

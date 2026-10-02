@@ -209,7 +209,7 @@ export function recordAnswer(
 export interface ResultRecord {
   id: string;
   certId: string;
-  /** "초급 · 전체 과목", "실전 CBT 체험" 등 */
+  /** "초급 · 전체 과목", "실전 문제풀이" 등 */
   label: string;
   kind: "quiz" | "cbt";
   total: number;
@@ -379,7 +379,7 @@ export function setExamZoom(value: ExamZoom): void {
   writeJson(STORAGE_KEYS.examZoom, value);
 }
 
-// ───────────────────────── 실전 CBT 체험 ─────────────────────────
+// ───────────────────────── 실전 문제풀이 ─────────────────────────
 
 export interface CbtSession {
   id: string;
@@ -465,7 +465,7 @@ export function addNotes(items: Array<Omit<NoteEntry, "addedAt" | "memo">>): num
 }
 
 /**
- * 채점한 순간 틀린 문제를 오답노트에 담는다 (연습 풀이·실전 CBT 공용).
+ * 채점한 순간 틀린 문제를 오답노트에 담는다 (연습 풀이·실전 문제풀이 공용).
  * 답을 골라서 틀린 문제만 담고, 안 푼 문제는 담지 않는다. 이미 있는 문제는 겹쳐 담기지 않는다.
  */
 export function addWrongNotes(
