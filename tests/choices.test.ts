@@ -74,6 +74,14 @@ describe("checkChoicesByLevel (데이터 검사)", () => {
     expect(questionSchema.safeParse({ ...q, choicesByLevel: undefined }).success).toBe(false);
     expect(questionSchema.safeParse({ ...q, choicesByLevel: undefined, levelLock: true }).success).toBe(true);
   });
+
+  it("검수 완료(verified)와 검증 날짜(reviewedAt)는 함께 있어야 한다", () => {
+    const q = makeQuestion("a", "a1");
+    expect(questionSchema.safeParse({ ...q, reviewStatus: "verified" }).success).toBe(false);
+    expect(questionSchema.safeParse({ ...q, reviewedAt: "2026-10-02" }).success).toBe(false);
+    expect(questionSchema.safeParse({ ...q, reviewStatus: "verified", reviewedAt: "2026-10-02" }).success).toBe(true);
+    expect(questionSchema.safeParse({ ...q, reviewStatus: "verified", reviewedAt: "10/02" }).success).toBe(false);
+  });
 });
 
 describe("변환 규칙 (lib/choice-reduce.ts)", () => {

@@ -17,7 +17,8 @@
     "oneLineConcept": "두 저항의 병렬 합성 = 곱 ÷ 합",
     "explanation": "1. 공식: R = (R1 × R2) ÷ (R1 + R2)\n2. 숫자 대입: R = (6 × 3) ÷ (6 + 3)\n3. R = 18 ÷ 9 = 2Ω\n\n병렬로 이으면 합성 저항은 가장 작은 저항(3Ω)보다도 작아집니다.\n\n**틀린 선지**\n- ② 4.5Ω: 두 저항의 평균입니다.\n- ③ 9Ω: 직렬로 연결했을 때의 값입니다.\n- ④ 18Ω: 두 저항을 곱한 값입니다.",
     "frequency": 5,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "합성 저항",
       "계산"
@@ -52,7 +53,8 @@
     "oneLineConcept": "실효값 = 최댓값 ÷ √2",
     "explanation": "1. 공식: 실효값 = 최댓값 ÷ √2\n2. 숫자 대입: 141.4 ÷ 1.414\n3. 답: 100V\n\n**틀린 선지**\n- ① 70.7V: 최댓값을 2 로 나눈 값입니다.\n- ② 90V: 평균값(최댓값 × 0.637)에 가까운 값입니다.\n- ④ 200V: 최댓값에 √2 를 곱한 값입니다.",
     "frequency": 5,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "교류",
       "계산"
@@ -87,7 +89,8 @@
     "oneLineConcept": "전력 P = V² ÷ R 에서 R = V² ÷ P",
     "explanation": "1. 공식: R = V² ÷ P\n2. 숫자 대입: R = 100² ÷ 500 = 10,000 ÷ 500\n3. R = 20Ω\n\n검산: 전류 I = 100 ÷ 20 = 5A, 전력 = 100 × 5 = 500W\n\n**틀린 선지**\n- ① 5Ω: 전류의 값(500 ÷ 100)입니다.\n- ③ 50Ω: 계산이 틀린 값입니다.\n- ④ 0.2Ω: 전압을 전력으로 나눈 값입니다.",
     "frequency": 5,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "전력",
       "계산"
@@ -122,7 +125,8 @@
     "oneLineConcept": "직렬 공진: 임피던스 최소(Z = R), 전류 최대, 역률 1",
     "explanation": "공진일 때는 코일의 리액턴스와 콘덴서의 리액턴스가 서로 상쇄되어 **저항(R)만 남습니다.** 그래서 임피던스가 가장 작고 전류가 가장 크며, 전압과 전류의 위상이 같아 역률은 1 입니다.\n\n**틀린 선지**\n- ① 임피던스가 최대가 되고 전류가 최소가 된다.: 병렬 공진의 설명입니다.\n- ② 역률이 0 이 된다.: 역률은 1 입니다.\n- ③ 전압과 전류의 위상차가 90도가 된다.: 위상차는 0 입니다.",
     "frequency": 4,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "공진"
     ],
@@ -156,7 +160,8 @@
     "oneLineConcept": "역률 cosθ = R ÷ Z",
     "explanation": "1. 임피던스 Z = √(8² + 6²) = √100 = 10Ω\n2. 역률 = R ÷ Z = 8 ÷ 10\n3. 답: 0.8\n\n**틀린 선지**\n- ① 0.6: 리액턴스를 임피던스로 나눈 값(sinθ)입니다.\n- ② 0.75: 리액턴스를 저항으로 나눈 값입니다.\n- ④ 1.0: 리액턴스가 없을 때의 역률입니다.",
     "frequency": 4,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "역률",
       "계산"
@@ -191,7 +196,8 @@
     "oneLineConcept": "옴의 법칙: 전압 = 전류 × 저항",
     "explanation": "1. 공식: V = I × R\n2. 숫자 대입: V = 2 × 10\n3. 답: 20V\n\n**틀린 선지**\n- ① 12V: 두 값을 더한 값입니다.\n- ② 0.2V: 전류를 저항으로 나눈 값(2 ÷ 10)입니다.\n- ③ 5V: 저항을 전류로 나눈 값(10 ÷ 2)입니다. 곱해야 합니다.",
     "frequency": 5,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "옴의 법칙",
       "계산"
@@ -226,7 +232,8 @@
     "oneLineConcept": "전력 P = I²R: 전류가 2배면 전력은 4배",
     "explanation": "1. 공식: P = I² × R\n2. 전류가 2배가 되면 I² 은 2 × 2 = 4배\n3. 저항 R 은 그대로이므로 전력은 4배\n\n**틀린 선지**\n- ① 2배: 전력은 전류에 비례하는 것이 아니라 전류의 제곱에 비례합니다.\n- ③ 1/2 배: 전류가 늘면 전력도 늘어납니다.\n- ④ 변하지 않는다: 전류가 달라지면 전력도 달라집니다.",
     "frequency": 4,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "전력",
       "계산"

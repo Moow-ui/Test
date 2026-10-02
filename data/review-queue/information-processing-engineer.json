@@ -1,0 +1,38 @@
+[
+  {
+    "id": "information-processing-engineer-interface-design-0001",
+    "certId": "information-processing-engineer",
+    "subjectId": "sw-design",
+    "chapterId": "interface-design",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "요구사항 검토 방법 가운데, 명세서를 작성한 사람이 내용을 직접 설명하고 동료들이 듣으면서 결함을 찾는 것은?",
+    "choices": [
+      "워크스루(Walk Through)",
+      "동료 검토(Peer Review)",
+      "인스펙션(Inspection)",
+      "프로토타이핑(Prototyping)"
+    ],
+    "answer": 2,
+    "oneLineConcept": "동료 검토: 작성자가 설명, 동료가 결함 발견",
+    "explanation": "**동료 검토**는 작성자가 직접 설명한다는 점이 특징입니다. 워크스루는 미리 배포한 뒤 회의, 인스펙션은 작성자가 아닌 전문가가 검토합니다.\n\n**틀린 선지**\n- ① 워크스루(Walk Through): 명세서를 미리 나누어 준 뒤 짧은 검토 회의를 열어 결함을 찾습니다.\n- ③ 인스펙션(Inspection): 작성자를 뺀 다른 검토 전문가들이 명세서를 확인하며 결함을 찾습니다.\n- ④ 프로토타이핑(Prototyping): 견본품을 만들어 요구사항을 확인하는 방법입니다.",
+    "frequency": 4,
+    "reviewStatus": "unverified",
+    "tags": [
+      "요구사항 검증"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    },
+    "retired": true,
+    "reviewNote": "2026-10-02 기존 문제 재검증 탈락(게시 중단). 정답을 가린 재풀이에서 워크스루(1번)로 답이 갈림. 국내 수험서 정의로는 동료 검토(2번)가 맞지만, 일반 소프트웨어공학에서는 워크스루도 작성자가 설명하며 진행하는 기법이라 문제 문장만으로 답을 하나로 정하기 어렵다. 다시 게시하려면 두 방법을 구별하는 조건을 문제에 넣고 재검증할 것. 게시했던 문제이므로 questions/ 에는 retired: true 로 남아 있다(id 유지)."
+  }
+]

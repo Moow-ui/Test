@@ -48,7 +48,8 @@
    - 법규·기준·수치는 공식 자료로 최신 여부를 확인한다.
    - 불일치 → 고치고 다시 검증. 확신이 없으면 `data/review-queue/{slug}.json` 에 보관하고 게시하지 않는다.
    - 결과를 `reports/{YYYY-MM}/verify-{slug}.md` 에 적는다: 작성 N · 통과 N · 수정 후 통과 N · 탈락(보관) N.
-5. 통과한 문제만 `npm run questions:add` 로 넣는다 (`reviewStatus` 는 `unverified` = 사람 검수 전).
+5. 통과한 문제만 `npm run questions:add` 로 넣는다. **넣는 파일의 모든 문제에 `reviewedAt`(오늘 날짜, 한국시간 `YYYY-MM-DD`)을 적는다.**
+   그러면 `reviewStatus: "verified"` 로 들어가 화면에 "AI 예상문제 · 검수 완료"로 표시된다 (4번 검증을 통과하지 않은 문제에는 적지 않는다).
 6. **운영진 학습 팁 3개 작성**: `docs/add-cert.md` A-6. `meta.json` 의 `studyTips` 에 `studyOrder`(공부 순서), `hardChapters`(자주 틀리는 단원),
    `examDay`(시험 당일 팁)를 각 2~4문장으로 쓴다 (미국 자격증은 영어).
    - 방금 만든 `chapters.json`(과목·단원 이름, 문항 수, 출제 비중·중요도)과 `examInfo`(문항 수·시간·합격 기준·과락)에 근거해 쓴다.

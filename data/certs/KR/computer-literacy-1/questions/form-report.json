@@ -17,7 +17,8 @@
     "oneLineConcept": "보고서 머리글: 첫 쪽에 한 번만 인쇄",
     "explanation": "**보고서 머리글**은 보고서 전체에서 맨 처음 한 번만 인쇄됩니다.\n\n**틀린 선지**\n- ② 페이지 머리글: 모든 쪽의 위쪽에 인쇄됩니다. 필드 제목 등을 넣습니다.\n- ③ 그룹 머리글: 그룹이 바뀔 때마다 그룹의 맨 위에 인쇄됩니다.\n- ④ 본문: 레코드 하나하나가 되풀이하여 인쇄되는 곳입니다.",
     "frequency": 4,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "보고서"
     ],
@@ -51,7 +52,8 @@
     "oneLineConcept": "바운드 컨트롤: 필드와 연결된 컨트롤",
     "explanation": "'바운드(bound)'는 묶여 있다는 뜻입니다. **바운드 컨트롤**은 필드에 묶여 있어 그 값을 보여 주고 고칠 수 있습니다.\n\n**틀린 선지**\n- ① 언바운드 컨트롤: 필드와 연결되지 않은 컨트롤입니다.\n- ③ 계산 컨트롤: 수식의 결과를 보여 주는 컨트롤입니다. (예: =[단가]*[수량])\n- ④ 레이블 컨트롤: 제목이나 설명 글을 보여 주는 컨트롤입니다.",
     "frequency": 4,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "폼"
     ],
@@ -85,7 +87,8 @@
     "oneLineConcept": "보고서에서는 데이터를 입력·수정할 수 없다",
     "explanation": "보고서는 **인쇄용**입니다. 데이터를 넣거나 고치는 일은 테이블이나 폼에서 합니다.\n\n**틀린 선지**\n- ① 테이블이나 쿼리의 데이터를 보기 좋게 인쇄하기 위한 개체이다.: 맞는 설명입니다.\n- ② 레코드를 그룹으로 묶어 그룹별 합계나 평균을 낼 수 있다.: 맞는 설명입니다.\n- ④ 레코드 원본으로 테이블, 쿼리, SQL 문을 쓸 수 있다.: 맞는 설명입니다.",
     "frequency": 3,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "보고서"
     ],
@@ -109,7 +112,8 @@
     "oneLineConcept": "[Page]는 현재 쪽, [Pages]는 전체 쪽 수",
     "explanation": "**[Page]** 는 현재 쪽 번호, **[Pages]** 는 전체 쪽 수입니다. & 는 글자를 이어 붙이는 연산자입니다.\n\n1. [Page] → 2\n2. \" / \" → 가운데 글자\n3. [Pages] → 5\n4. 결과: 2 / 5\n\n**틀린 선지**\n- ① =[Page] + [Pages]: 두 숫자를 더한 값(7)이 표시됩니다.\n- ② =[Pages] & \" / \" & [Page]: 전체 쪽이 앞에 와서 5 / 2 로 표시됩니다.\n- ③ =\"Page / Pages\": 따옴표 안의 글자가 그대로 인쇄됩니다.",
     "frequency": 3,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "보고서"
     ],
@@ -143,7 +147,8 @@
     "oneLineConcept": "레코드 원본: 테이블, 쿼리, SQL 문",
     "explanation": "폼과 보고서에 보여 줄 자료는 **테이블**이나 **쿼리**(또는 SQL 문)에서 가져옵니다. 이를 레코드 원본이라고 합니다.\n\n**틀린 선지**\n- ① 모듈: 모듈은 VBA 코드를 담는 개체입니다.\n- ③ 다른 보고서: 보고서는 레코드 원본이 될 수 없습니다.\n- ④ 매크로: 매크로는 작업을 자동으로 실행하는 개체입니다.",
     "frequency": 4,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "폼",
       "보고서"

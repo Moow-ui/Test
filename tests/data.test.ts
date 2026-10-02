@@ -181,13 +181,13 @@ describe("문제가 준비된 모든 자격증", () => {
     }
   });
 
-  it("모든 문제가 AI 예상문제·검수 전이고, 해설에 틀린 선지 설명이 들어 있다 (기출 없음)", async () => {
+  it("모든 문제가 AI 예상문제이고, 검수 완료 문제에는 검증 날짜가 있고, 해설에 틀린 선지 설명이 들어 있다 (기출 없음)", async () => {
     for (const id of READY_IDS) {
       const questions = await getQuestions(id);
       expect(checkQuestions(questions, (await getCertification(id)) as unknown as CertDetail), id).toEqual([]);
       for (const q of questions) {
         expect(q.source, q.id).toBe("predicted");
-        expect(q.reviewStatus, q.id).toBe("unverified");
+        expect(q.reviewStatus === "verified", q.id).toBe(q.reviewedAt !== undefined);
         expect(q.pastInfo, q.id).toBeUndefined();
         expect(q.explanation.length, q.id).toBeGreaterThan(60);
       }
@@ -279,11 +279,10 @@ describe("전기기능사 데이터", () => {
     }
   });
 
-  it("샘플 문제는 모두 AI 예상문제·검수 전으로 표시되어 있다 (기출 원문 없음)", async () => {
+  it("샘플 문제는 모두 AI 예상문제로 표시되어 있다 (기출 원문 없음)", async () => {
     const questions = await getQuestions(CERT_ID);
     for (const q of questions) {
       expect(q.source).toBe("predicted");
-      expect(q.reviewStatus).toBe("unverified");
       expect(q.pastInfo).toBeUndefined();
     }
   });

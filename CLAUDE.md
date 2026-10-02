@@ -75,7 +75,8 @@ scripts/                   validate-data, build-data, import-questions, convert-
 
 ## 콘텐츠 정책 (요약)
 
-- **모든 문제는 직접 만든 AI 예상문제다.** 기출 원문을 싣거나 지어내지 않는다. `source: "predicted"`, `reviewStatus: "unverified"`.
+- **모든 문제는 직접 만든 AI 예상문제다.** 기출 원문을 싣거나 지어내지 않는다. `source: "predicted"`.
+- **검수 표시**: 분리된 AI 검증(add-cert.md A-5)을 통과한 문제는 `reviewStatus: "verified"` + `reviewedAt`(통과 날짜) → "AI 예상문제 · 검수 완료". 기록이 없으면 `unverified` → "검수 전".
 - 해설은 "핵심 설명(계산은 번호 목록) + **틀린 선지** 목록" 형식. 50대가 이해할 수 있는 쉬운 말로.
 - **운영진 학습 팁**: 자격증마다 3개(공부 순서 · 자주 틀리는 단원 · 시험 당일 팁), 각 2~4문장. `meta.json` 의 `studyTips`.
   그 자격증의 출제기준·단원 데이터(`chapters.json`, `examInfo`)에 근거해 쓰고, 확인할 수 없는 합격률·통계는 쓰지 않는다.
@@ -97,6 +98,7 @@ scripts/                   validate-data, build-data, import-questions, convert-
 - **종료일 = 애드센스 신청일 = 2026-10-29.** 목표는 누적 50개 이상.
 - 절차는 [docs/daily-routine.md](docs/daily-routine.md), 진행 기록은 [reports/routine-progress.md](reports/routine-progress.md).
 - 문제는 작성과 분리된 검증(다시 풀기·재계산·최신 기준 확인)을 통과한 것만 게시한다. 확신이 없는 문제는 `data/review-queue/` 에 보관.
+- 검증을 통과한 문제는 `reviewedAt` 을 적어 넣는다 (자동으로 "검수 완료" 표시).
 - 문제 검증 다음에 운영진 학습 팁 3개(`meta.json` 의 `studyTips`)를 쓴다. 후기란·활동 표시는 새 자격증에도 저절로 붙는다 (코드를 고치지 않는다).
 
 ## 명령어

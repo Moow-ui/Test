@@ -15,7 +15,7 @@ data/
     exams/{year}-{round}.json     실전 모의고사 구성 (문제 id 목록)
     assets/                       문제 그림 (회로도 등)
   cert-queue.json                 앞으로 추가할 자격증 대기 목록 (나라별 응시자 수 순. 시행기관·기출 공개 여부·이용 조건 메모)
-  review-queue/{slug}.json        검증에서 확신이 없어 게시하지 않은 문제 (문제 전체 + reviewNote 사유, id 없음)
+  review-queue/{slug}.json        검증에서 확신이 없어 게시하지 않은 문제 (문제 전체 + reviewNote 사유. 새 문제는 id 없음, 게시했다가 중단한 문제는 id 포함)
   legacy-question-ids.json        새 id 규칙 이전에 만든 문제 id (고치지 않는다)
 reports/{YYYY-MM}/                작업 리포트. 월별 폴더에 쌓는다
 public/data/                      빌드 때 자동으로 만든다 (git 에 올리지 않는다)
@@ -80,7 +80,8 @@ public/data/                      빌드 때 자동으로 만든다 (git 에 올
 | `oneLineConcept` | 핵심 개념 한 줄 (40자 내외, 최대 70자) |
 | `explanation` | 해설 (마크다운) |
 | `frequency` | 출제 빈도 1~5 |
-| `reviewStatus` | `"unverified"` = 사람 검수 전 (사람이 검수하면 `"verified"`). 게시되는 문제는 모두 [add-cert.md](add-cert.md) 의 "문제 검증"을 통과한 것이다 |
+| `reviewStatus` | `"verified"` = 작성과 분리된 AI 검증([add-cert.md](add-cert.md) A-5: 정답을 가린 별도 AI가 다시 풀어 정답 일치 확인)을 통과한 문제. 화면에 "검수 완료". `"unverified"` = 그 검증 기록이 없는 문제. 화면에 "검수 전". 사람 전문가 검수를 뜻하지 않는다 |
+| `reviewedAt` | 검증을 통과한 날짜 `YYYY-MM-DD`. `verified` 문제에는 필수, `unverified` 문제에는 적지 않는다. 문제를 고치면 다시 검증하고 날짜를 새로 적는다 |
 | `tags[]` | 태그 |
 | `image` | (선택) `assets/` 안의 그림 파일 이름 |
 | `version` | (선택, 기본 1) 문제를 고칠 때마다 1씩 올린다 |
@@ -147,6 +148,7 @@ public/data/                      빌드 때 자동으로 만든다 (git 에 올
 - 과목 문항 수 합계, 단원 출제 비중 합계 100
 - 관련 자격증 참조, 모의고사의 문제 id, 그림 파일 존재
 - 문제가 있는 자격증에 운영진 학습 팁(`studyTips`)이 있는지
+- 검수 표시: `reviewStatus: "verified"` 와 `reviewedAt` 이 짝이 맞는지
 
 ## 7. 콘텐츠 정책
 
@@ -154,7 +156,8 @@ public/data/                      빌드 때 자동으로 만든다 (git 에 올
   - 기억에 의존해 "○○년 ○회 기출"이라고 지어내지 않는다 (가짜 기출이 된다).
   - 다른 사이트의 기출·복원 문제를 긁어 오지 않는다.
   - 대신 실제 시험의 출제 유형·난도와 비슷하게 만든다 (공식 출제기준의 과목·항목, 자주 나오는 개념과 숫자 기준 위주).
-- 문제는 반드시 `source: "predicted"`, `reviewStatus: "unverified"`.
+- 문제는 반드시 `source: "predicted"`. 검증을 통과한 문제는 `reviewStatus: "verified"` + `reviewedAt`, 검증 기록이 없으면 `"unverified"`.
+- 검증에서 탈락한 기존 문제는 지우지 않고 `retired: true` 로 게시를 중단하고, 사본을 `data/review-queue/{slug}.json` 에 사유(`reviewNote`)와 함께 둔다.
 - **해설 형식**: "핵심 설명(계산은 번호 목록) + **틀린 선지** 목록". 해설 본문에서는 선지를 번호(①~④)로 가리키지 않는다.
 - **해설 수준**: "현장 경험은 있지만 이론 공부는 오랜만인 50대가 이해할 수 있는 수준".
   쉬운 말, 전문용어는 괄호로 풀이, 계산은 한 단계씩 + 검산, 오답 선지가 왜 틀렸는지 포함.

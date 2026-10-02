@@ -28,7 +28,9 @@
    - **불일치는 고친 뒤 다시 검증한다.** 고쳐도 확신이 없으면 게시하지 않고 `data/review-queue/{slug}.json` 에 보관한다
      (문제 전체 + `reviewNote` 에 사유. id 는 붙이지 않는다). **검증을 통과한 문제만 `questions/` 에 넣는다.**
    - 검증 결과(작성 수·통과 수·수정 수·탈락 수)는 `reports/{YYYY-MM}/verify-{slug}.md` 에 남긴다.
-   - `reviewStatus: "unverified"` 는 "사람 검수 전"이라는 뜻이다. 이 검증을 통과해도 `unverified` 로 둔다 (사람이 검수하면 `verified`).
+   - **검증을 통과한 문제에는 `reviewedAt`(검증 통과 날짜 `YYYY-MM-DD`)을 기록한다.** CSV/JSON 의 `reviewedAt` 열에 날짜를 적어 넣으면
+     `reviewStatus: "verified"` 로 들어가고 화면에 "AI 예상문제 · 검수 완료"로 나온다. 날짜가 없는 문제는 `unverified` = "검수 전"으로 나온다.
+   - 검증하지 않은 문제에 `reviewedAt` 을 적지 않는다. 검증을 통과한 문제를 나중에 고치면(`--update`) 다시 검증하고 그 날짜를 적는다.
 6. **운영진 학습 팁 3개 작성**: `meta.json` 의 `studyTips` 에 적는다. 자격증 페이지의 후기란 바로 위에 "운영진 작성" 상자로 나온다.
    - `studyOrder`(공부 순서), `hardChapters`(자주 틀리는 단원), `examDay`(시험 당일 팁). 각각 2~4문장.
    - **그 자격증의 데이터에 근거해 쓴다**: 과목·단원 이름, 문항 수, 단원 출제 비중·중요도(`chapters.json`), 문항 수·시간·합격 기준·과락(`examInfo`).
@@ -82,6 +84,7 @@ npm run questions:add -- 문제.csv --cert electrician-craftsman --dry-run
 - CSV 양식: `scripts/templates/questions-template.csv` (엑셀로 열어 작성. 과목·단원은 id 대신 이름으로 적어도 된다)
 - **새 문제는 `id` 를 비워 둔다.** `{slug}-{단원 id}-{4자리 번호}` 로 그 단원의 다음 번호가 붙는다.
 - **있는 문제를 고칠 때**는 `id` 를 적고 `--update` 를 붙인다. `version` 이 자동으로 1 올라간다.
+- **`reviewedAt`**: A-5 의 문제 검증을 통과한 날짜. 적으면 "검수 완료", 비우면 "검수 전"으로 표시된다. 고친 문제는 다시 검증한 날짜를 적는다.
 - **문제를 없앨 때**는 지우지 말고 `retired` 열에 `true` 를 적어 `--update` 한다.
 - **초급·중급에 남길 선지**: `distractorOrder` 열에 오답 번호를 그럴듯한 순서로 적는다 (예: `2|4|1`).
   선지를 줄일 수 없는 문제는 `levelLock` 열에 `true`. 둘 다 비워 두면 자동으로 채운다 (어림이므로 넣은 뒤 확인).

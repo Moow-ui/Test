@@ -17,7 +17,8 @@
     "oneLineConcept": "저압: 교류 1kV 이하, 직류 1.5kV 이하",
     "explanation": "KEC 의 전압 구분은 다음과 같습니다.\n\n1. 저압: 교류 1kV 이하, 직류 1.5kV 이하\n2. 고압: 저압을 넘고 7kV 이하\n3. 특고압: 7kV 초과\n\n**틀린 선지**\n- ① 교류 600V 이하, 직류 750V 이하: 2021년 이전의 옛 기준입니다.\n- ③ 교류 1.5kV 이하, 직류 1kV 이하: 교류와 직류의 값이 바뀌었습니다.\n- ④ 교류·직류 모두 7kV 이하: 7kV 는 고압과 특고압의 경계입니다.",
     "frequency": 5,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "전압 구분"
     ],
@@ -51,7 +52,8 @@
     "oneLineConcept": "전선 색상: L1 갈색, L2 흑색, L3 회색, N 청색, 보호 도체 녹색-노란색",
     "explanation": "중성선(N)은 **청색**입니다. 녹색-노란색은 보호 도체(접지선)의 색입니다.\n\n**틀린 선지**\n- ① L1 – 갈색: 맞는 색상입니다.\n- ② L2 – 흑색: 맞는 색상입니다.\n- ③ L3 – 회색: 맞는 색상입니다.",
     "frequency": 5,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "전선 식별"
     ],
@@ -75,7 +77,8 @@
     "oneLineConcept": "접지극의 매설 깊이: 지표면에서 0.75m 이상",
     "explanation": "접지극은 동결 깊이를 고려하여 **지표면에서 0.75m 이상** 깊이에 묻습니다. 얕으면 겨울에 땅이 얼어 접지 저항이 커지고, 사람이 밟는 곳의 전위가 높아집니다.\n\n**틀린 선지**\n- ① 지표면으로부터 0.3m 이상: 기준에 미치지 못합니다.\n- ② 지표면으로부터 0.5m 이상: 기준에 미치지 못합니다.\n- ④ 지표면으로부터 1.5m 이상: 기준은 0.75m 이상입니다.",
     "frequency": 5,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "접지"
     ],
@@ -109,7 +112,8 @@
     "oneLineConcept": "500V 이하(FELV 포함) 전로: 시험 전압 500V, 절연 저항 1.0MΩ 이상",
     "explanation": "KEC 의 저압 전로 절연 저항 기준입니다.\n\n1. SELV, PELV: 시험 전압 250V, 0.5MΩ 이상\n2. FELV, 500V 이하: 시험 전압 500V, **1.0MΩ 이상**\n3. 500V 초과: 시험 전압 1,000V, 1.0MΩ 이상\n\n**틀린 선지**\n- ② 0.5MΩ: SELV·PELV 의 기준입니다.\n- ③ 0.1MΩ: 2021년 이전의 옛 기준에 있던 값입니다.\n- ④ 2.0MΩ: 기준에 없는 값입니다.",
     "frequency": 4,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "절연 저항"
     ],
@@ -143,7 +147,8 @@
     "oneLineConcept": "보호 도체: S ≤ 16 이면 S, 16 < S ≤ 35 이면 16, S > 35 이면 S ÷ 2",
     "explanation": "선도체 단면적(S)에 따른 보호 도체의 최소 단면적입니다.\n\n1. S 가 16mm² 이하: S 와 같게\n2. S 가 16 초과 35mm² 이하: **16mm²**\n3. S 가 35mm² 초과: S 의 절반\n\n25mm² 는 두 번째에 해당하므로 16mm² 입니다.\n\n**틀린 선지**\n- ① 10mm²: 기준에 없는 값입니다.\n- ② 12.5mm²: 35mm² 초과일 때의 계산 방법(S ÷ 2)을 쓴 값입니다.\n- ④ 25mm²: 16mm² 이하일 때의 방법(S 와 같게)을 쓴 값입니다.",
     "frequency": 4,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "보호 도체"
     ],
@@ -177,7 +182,8 @@
     "oneLineConcept": "고압: 교류 1kV 초과, 직류 1.5kV 초과 ~ 7kV 이하",
     "explanation": "KEC 의 전압 구분\n\n- 저압: 교류 1kV 이하, 직류 1.5kV 이하\n- **고압: 교류 1kV 초과, 직류 1.5kV 초과 ~ 7kV 이하**\n- 특고압: 7kV 초과\n\n**틀린 선지**\n- ① 600V 초과 7kV 이하: 2021년 이전의 옛 기준입니다.\n- ② 1.5kV 초과 7kV 이하: 직류 고압의 범위입니다.\n- ④ 7kV 초과: 특고압의 범위입니다.",
     "frequency": 5,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "전압 구분"
     ],
@@ -211,7 +217,8 @@
     "oneLineConcept": "TT: 전원도 접지, 설비도 따로 접지",
     "explanation": "계통 접지의 글자 뜻\n\n- 첫 글자: 전원 쪽 (T 는 직접 접지, I 는 절연)\n- 둘째 글자: 설비 쪽 (T 는 따로 접지, N 은 전원의 접지점에 연결)\n\n**TT** 는 전원과 설비가 각각 따로 접지하는 방식입니다.\n\n**틀린 선지**\n- ② IT 계통: 전원을 대지에서 절연하거나 임피던스를 거쳐 접지합니다.\n- ③ TN-S 계통: 노출 도전부를 보호 도체로 전원의 접지점에 연결하며, 중성선과 보호 도체를 따로 둡니다.\n- ④ TN-C 계통: 중성선과 보호 도체를 하나의 도체(PEN)로 겸합니다.",
     "frequency": 4,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "계통 접지"
     ],
@@ -245,7 +252,8 @@
     "oneLineConcept": "접지 구분: 계통·보호·피뢰 / 시설: 단독·공통·통합",
     "explanation": "KEC 는 접지 시스템을 **목적**에 따라 계통 접지, 보호 접지, 피뢰 시스템 접지로 나누고, **시설 방법**에 따라 단독 접지, 공통 접지, 통합 접지로 나눕니다.\n\n**틀린 선지**\n- ② TN 계통, TT 계통, IT 계통: 계통 접지의 방식입니다.\n- ③ 제1종, 제2종, 제3종 접지: KEC 시행으로 없어진 옛 구분입니다.\n- ④ 단독 접지, 공통 접지, 통합 접지: 접지 시스템을 시설하는 방법에 따라 나눈 것입니다.",
     "frequency": 4,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "접지 시스템"
     ],
@@ -279,7 +287,8 @@
     "oneLineConcept": "접지 도체: 구리 6mm², 철 50mm² 이상",
     "explanation": "큰 고장 전류가 흐르지 않는 접지 도체는 **구리 6mm² 이상, 철 50mm² 이상**으로 합니다. 피뢰 시스템이 접속되면 구리 16mm² 이상으로 굵어집니다.\n\n**틀린 선지**\n- ① 2.5mm² 이상: 저압 옥내 배선에 쓰는 전선의 최소 굵기입니다.\n- ② 16mm² 이상: 접지 도체에 피뢰 시스템이 접속되는 경우의 구리 최소 단면적입니다.\n- ④ 50mm² 이상: 철제 접지 도체의 최소 단면적입니다.",
     "frequency": 4,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "접지 도체"
     ],
@@ -313,7 +322,8 @@
     "oneLineConcept": "SELV·PELV 는 250V 로 재고 0.5MΩ 이상",
     "explanation": "저압 전로의 절연 저항 기준\n\n| 전로 | 시험 전압 | 절연 저항 |\n|---|---|---|\n| SELV, PELV | DC 250V | 0.5MΩ 이상 |\n| FELV, 500V 이하 | DC 500V | 1.0MΩ 이상 |\n| 500V 초과 | DC 1,000V | 1.0MΩ 이상 |\n\n**틀린 선지**\n- ① DC 1,000V, 1.0MΩ 이상: 사용 전압 500V 초과 전로의 기준입니다.\n- ③ DC 500V, 1.0MΩ 이상: FELV 와 사용 전압 500V 이하 전로의 기준입니다.\n- ④ DC 250V, 1.0MΩ 이상: 시험 전압은 맞지만 절연 저항 기준은 0.5MΩ 입니다.",
     "frequency": 4,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "절연 저항"
     ],

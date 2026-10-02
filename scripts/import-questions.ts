@@ -34,7 +34,9 @@
  *   oneLineConcept  핵심 개념 한 줄
  *   explanation   상세 해설 (줄바꿈은 셀 안에서 Alt+Enter 또는 \n 으로)
  *   frequency     출제 빈도 1~5
- *   reviewStatus  verified / unverified (또는 검수완료 / 검수전)
+ *   reviewedAt    문제 검증(docs/add-cert.md A-5)을 통과한 날짜 YYYY-MM-DD. 적으면 "검수 완료"(verified)로 들어간다.
+ *                 비워 두면 "검수 전"(unverified). 문제를 고칠 때(--update)는 다시 검증한 날짜를 적는다
+ *   reviewStatus  적지 않아도 된다 (reviewedAt 이 있으면 verified, 없으면 unverified)
  *   tags          태그 (| 로 구분)
  *   retired       true 면 출제 중단
  *   levelLock     true 면 선지를 줄일 수 없는 문제 ("옳지 않은 것은?" 등. 초급·중급에서 제외). 비워 두면 자동 판단
@@ -209,6 +211,8 @@ function toCandidate(raw: Raw, detail: CertDetail, old?: Question): Raw {
   const sourceText = text(raw.source);
   const source = SOURCE_ALIASES[sourceText] ?? (sourceText || "predicted");
   const reviewText = text(raw.reviewStatus);
+  // 검증 통과 날짜가 있으면 검수 완료. 날짜 없이 "검수완료"라고만 적으면 다음 단계의 검증이 오류로 알려 준다
+  const reviewedAt = text(raw.reviewedAt);
 
   // 난이도: 직접 적었으면 그 값, 비워 두었으면 정답률로 정한다
   const levelText = text(raw.level);
@@ -254,7 +258,8 @@ function toCandidate(raw: Raw, detail: CertDetail, old?: Question): Raw {
     // 셀 안에 \n 이라고 적은 줄바꿈을 실제 줄바꿈으로 바꾼다
     explanation: text(raw.explanation).replace(/\\n/g, "\n"),
     frequency: numberOrUndefined(raw.frequency),
-    reviewStatus: REVIEW_ALIASES[reviewText] ?? (reviewText || "unverified"),
+    reviewStatus: REVIEW_ALIASES[reviewText] ?? (reviewText || (reviewedAt ? "verified" : "unverified")),
+    ...(reviewedAt ? { reviewedAt } : {}),
     tags,
     ...(text(raw.image) ? { image: text(raw.image) } : {}),
     ...reducedFields(raw, text(raw.stem), choices, numberOrUndefined(raw.answer), old),

@@ -334,7 +334,16 @@ export const questionSchema = z
     explanation: z.string().min(1),
     /** 이 개념의 출제 빈도 1~5 */
     frequency: oneToFive,
+    /**
+     * verified = 작성과 분리된 AI 검증(정답을 가리고 다시 풀기)을 통과한 문제 → 화면에 "검수 완료".
+     * unverified = 검증 기록이 없는 문제 → "검수 전".
+     */
     reviewStatus: z.enum(REVIEW_STATUSES),
+    /** 검증을 통과한 날짜 YYYY-MM-DD. verified 문제에만, 반드시 적는다 */
+    reviewedAt: z
+      .string()
+      .regex(/^\d{4}-\d{2}-\d{2}$/)
+      .optional(),
     tags: z.array(z.string()).default([]),
     /** 문제 그림 파일 이름 (자격증 폴더의 assets/ 안) */
     image: z.string().min(1).optional(),
@@ -372,6 +381,20 @@ export const questionSchema = z
         code: "custom",
         path: ["pastInfo"],
         message: "예상문제(source=predicted)에는 pastInfo를 넣지 않습니다",
+      });
+    }
+    if (q.reviewStatus === "verified" && !q.reviewedAt) {
+      ctx.addIssue({
+        code: "custom",
+        path: ["reviewedAt"],
+        message: "검수 완료(reviewStatus=verified) 문제는 reviewedAt(검증 통과 날짜)이 필요합니다",
+      });
+    }
+    if (q.reviewStatus === "unverified" && q.reviewedAt) {
+      ctx.addIssue({
+        code: "custom",
+        path: ["reviewedAt"],
+        message: "reviewedAt 이 있으면 reviewStatus 는 verified 여야 합니다",
       });
     }
     if (new Set(q.choices).size !== q.choices.length) {

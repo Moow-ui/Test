@@ -17,7 +17,8 @@
     "oneLineConcept": "네트워크 계층(3계층): 경로 설정, IP 주소, 라우터",
     "explanation": "**네트워크 계층**은 목적지까지 가는 길을 정합니다. 이 계층의 대표 장비가 라우터이고 대표 프로토콜이 IP 입니다.\n\n**틀린 선지**\n- ② 데이터 링크 계층: 이웃한 장치 사이의 전송과 오류 제어를 맡습니다. (2계층)\n- ③ 전송 계층: 끝에서 끝까지의 믿을 수 있는 전송을 맡습니다. (4계층, TCP·UDP)\n- ④ 세션 계층: 통신하는 두 쪽의 대화 연결을 관리합니다. (5계층)",
     "frequency": 5,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "OSI 7계층"
     ],
@@ -51,7 +52,8 @@
     "oneLineConcept": "UDP: 비연결형, 빠르지만 신뢰성은 보장하지 않는다",
     "explanation": "**UDP** 는 상대와 미리 연결을 맺지 않고 바로 보냅니다. 빠르지만 도착을 확인하지 않으므로, 실시간 방송·음성 통화처럼 속도가 중요한 곳에 씁니다.\n\n**틀린 선지**\n- ① 연결을 맺은 뒤에 데이터를 보내는 연결형 서비스이다.: TCP 의 특징입니다.\n- ② 데이터가 순서대로 도착하는 것을 보장한다.: TCP 의 특징입니다.\n- ④ 흐름 제어와 오류 복구 기능을 제공한다.: TCP 의 특징입니다.",
     "frequency": 4,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "TCP/IP"
     ],
@@ -85,7 +87,8 @@
     "oneLineConcept": "호스트 수 = 2^(호스트 비트 수) − 2",
     "explanation": "1. /26 은 32비트 가운데 앞의 26비트가 네트워크 부분이라는 뜻입니다.\n2. 호스트 비트 = 32 − 26 = 6비트\n3. 주소의 수 = 2⁶ = 64개\n4. 네트워크 주소와 브로드캐스트 주소 2개를 빼면 62개\n\n**틀린 선지**\n- ① 30개: /27 일 때의 값입니다.\n- ② 126개: /25 일 때의 값입니다.\n- ③ 64개: 2개를 빼지 않은 값입니다.",
     "frequency": 4,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "서브넷",
       "계산"
@@ -120,7 +123,8 @@
     "oneLineConcept": "전송 계층: TCP, UDP",
     "explanation": "**전송 계층**은 송신 측과 수신 측 사이의 신뢰성 있는 전달을 맡으며, TCP 와 UDP 가 여기에서 동작합니다.\n\n**틀린 선지**\n- ① IP: 네트워크 계층의 프로토콜입니다.\n- ② HTTP: 응용 계층의 프로토콜입니다.\n- ④ ARP: IP 주소를 MAC 주소로 바꾸는 네트워크 계층의 프로토콜입니다.",
     "frequency": 4,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "OSI 7계층"
     ],
@@ -154,7 +158,8 @@
     "oneLineConcept": "ARP: IP → MAC / RARP: MAC → IP",
     "explanation": "**ARP**(Address Resolution Protocol)는 같은 네트워크 안에서 상대의 IP 주소를 알 때 그 MAC 주소를 알아내는 데 씁니다.\n\n**틀린 선지**\n- ② DNS: 도메인 이름을 IP 주소로 바꿔 주는 서비스입니다.\n- ③ RARP: 반대로 MAC 주소를 IP 주소로 바꿔 주는 프로토콜입니다.\n- ④ ICMP: 전송 중에 생긴 오류나 상태를 알려 주는 프로토콜입니다.",
     "frequency": 4,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "프로토콜"
     ],
@@ -188,7 +193,8 @@
     "oneLineConcept": "A 255.0.0.0 / B 255.255.0.0 / C 255.255.255.0",
     "explanation": "C 클래스는 앞의 24비트(세 부분)가 네트워크 주소입니다. 그래서 기본 서브넷 마스크가 **255.255.255.0** 입니다.\n\n**틀린 선지**\n- ② 255.255.0.0: B 클래스의 기본 서브넷 마스크입니다.\n- ③ 255.255.255.255: 호스트 한 대만을 가리키는 마스크입니다.\n- ④ 255.0.0.0: A 클래스의 기본 서브넷 마스크입니다.",
     "frequency": 4,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "IP 주소"
     ],

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { Markdown } from "@/components/Markdown";
+import { isReviewed } from "@/components/quiz/QuestionBadges";
 import { ReportForm } from "@/components/quiz/ReportForm";
 import { Stars } from "@/components/Stars";
 import { visibleChoices } from "@/lib/choices";
@@ -41,6 +42,40 @@ export interface ExamScreenProps {
   onSubmit: () => void;
   onPause?: () => void;
   metaOf: (question: Question) => { location: string; chapterImportance: number };
+}
+
+/**
+ * 문제 위의 출처 한 줄: "AI 예상문제 · 검수 완료 ⓘ 검수 방식" 또는 "AI 예상문제 · 검수 전".
+ * ⓘ 를 누르면 검수 방식 안내가 펼쳐진다.
+ */
+function ReviewLine({ question }: { question: Question }) {
+  const { m } = useMessages();
+  const [open, setOpen] = useState(false);
+  const reviewed = isReviewed(question);
+  return (
+    <div className="text-[12px] font-bold text-ink-sub">
+      <p className="flex flex-wrap items-center gap-x-2 gap-y-1">
+        <span>
+          {sourceLabel(question, m)}
+          {reviewed
+            ? ` · ${m.source.reviewed}`
+            : question.reviewStatus === "unverified" && ` · ${m.source.unverified}`}
+        </span>
+        {reviewed && (
+          <button
+            type="button"
+            className="inline-flex min-h-7 items-center gap-1 border border-line bg-surface px-1.5 text-ink underline underline-offset-2"
+            aria-expanded={open}
+            onClick={() => setOpen(!open)}
+          >
+            <span aria-hidden="true">ⓘ</span>
+            {m.source.reviewInfoButton}
+          </button>
+        )}
+      </p>
+      {open && <p className="mt-1 border border-line bg-surface-2 p-2 text-[14px] font-normal text-ink">{m.source.reviewInfo}</p>}
+    </div>
+  );
 }
 
 /**
@@ -220,10 +255,7 @@ export function ExamScreen({
         style={{ fontSize: `${fontPx}px` }}
       >
         <section aria-label={m.question} className="border border-line bg-surface px-[1em] py-[0.9em]">
-          <p className="text-[12px] font-bold text-ink-sub">
-            {sourceLabel(question, all)}
-            {question.reviewStatus === "unverified" && ` · ${all.source.unverified}`}
-          </p>
+          <ReviewLine key={question.id} question={question} />
           <h2 className="mt-[0.2em] whitespace-pre-wrap font-bold leading-normal">
             {index + 1}. {question.stem}
           </h2>

@@ -17,7 +17,8 @@
     "oneLineConcept": "프로그램 카운터(PC): 다음에 실행할 명령의 주소",
     "explanation": "**프로그램 카운터**는 '다음 차례'의 주소를 가리키는 레지스터입니다.\n\n**틀린 선지**\n- ② 명령 레지스터(IR): 지금 실행 중인 명령의 내용을 기억합니다.\n- ③ 누산기(AC): 연산의 결과를 잠시 기억합니다.\n- ④ 메모리 버퍼 레지스터(MBR): 기억장치에서 읽어 오거나 저장할 자료를 잠시 기억합니다.",
     "frequency": 5,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "레지스터"
     ],
@@ -51,7 +52,8 @@
     "oneLineConcept": "컴파일러: 전체 번역, 목적 프로그램 생성, 실행이 빠름",
     "explanation": "**컴파일러**는 프로그램 전체를 한 번에 번역해 목적 프로그램(기계어 파일)을 만듭니다. 번역은 오래 걸리지만 실행은 빠릅니다. **인터프리터**는 한 줄씩 번역하며 바로 실행하고 목적 프로그램을 만들지 않습니다.\n\n**틀린 선지**\n- ① 컴파일러는 한 줄씩 번역하고, 인터프리터는 전체를 한 번에 번역한다.: 서로 바뀌었습니다.\n- ③ 컴파일러가 인터프리터보다 실행 속도가 느리다.: 컴파일러 쪽 실행 속도가 더 빠릅니다.\n- ④ 컴파일러가 인터프리터보다 번역 속도가 빠르다.: 전체를 번역해야 하므로 컴파일러의 번역 속도가 더 느립니다.",
     "frequency": 4,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "언어 번역"
     ],
@@ -85,7 +87,8 @@
     "oneLineConcept": "RISC는 명령어가 적고 단순해 빠르다",
     "explanation": "**RISC** 의 R 은 Reduced(줄인)입니다. 명령어를 줄이고 단순하게 만들어 속도를 높였습니다. 대신 복잡한 일은 단순한 명령 여러 개를 조합해야 해서 프로그램이 길어집니다.\n\n**틀린 선지**\n- ① 명령어의 종류가 적고 구조가 단순하다.: 맞는 설명입니다.\n- ② 명령어의 길이가 일정하다.: 맞는 설명입니다.\n- ③ 전력 소모가 적고 처리 속도가 빠르다.: 맞는 설명입니다.",
     "frequency": 4,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "CPU"
     ],
@@ -109,7 +112,8 @@
     "oneLineConcept": "BCD는 6비트(64가지), ASCII는 7비트, EBCDIC은 8비트",
     "explanation": "문자 코드의 비트 수를 정리하면 다음과 같습니다.\n\n1. BCD: 6비트 → 64가지\n2. ASCII: 7비트 → 128가지\n3. EBCDIC: 8비트 → 256가지\n\n**틀린 선지**\n- ① ASCII 코드는 7비트로 128가지 문자를 표현한다.: 맞는 설명입니다.\n- ② 유니코드는 전 세계의 문자를 표현할 수 있는 국제 표준 코드이다.: 맞는 설명입니다.\n- ④ EBCDIC 코드는 8비트로 256가지 문자를 표현한다.: 맞는 설명입니다.",
     "frequency": 3,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "자료 표현"
     ],
@@ -133,7 +137,8 @@
     "oneLineConcept": "가상 메모리: 보조기억장치를 주기억장치처럼 쓴다",
     "explanation": "**가상 메모리**는 하드디스크 같은 보조기억장치의 빈 곳을 빌려 주기억장치가 넓어진 것처럼 쓰는 방법입니다.\n\n**틀린 선지**\n- ① 캐시 메모리: CPU 와 주기억장치의 속도 차이를 줄이는 고속 메모리입니다.\n- ③ 버퍼 메모리: 속도가 다른 두 장치 사이에서 자료를 잠시 모아 두는 메모리입니다.\n- ④ 연관 메모리: 저장된 내용으로 자료를 찾는 메모리입니다.",
     "frequency": 4,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "기억장치"
     ],
@@ -167,7 +172,8 @@
     "oneLineConcept": "EPROM 은 자외선, EEPROM 은 전기로 지운다",
     "explanation": "**EEPROM**(Electrically Erasable PROM)은 이름 그대로 전기로 지우고 다시 쓸 수 있습니다. 플래시 메모리도 EEPROM 의 한 종류입니다.\n\n**틀린 선지**\n- ① EPROM: EPROM 은 자외선을 쬐어 내용을 지웁니다.\n- ③ PROM: PROM 은 한 번만 기록할 수 있고 지울 수 없습니다.\n- ④ Mask ROM: 만들 때 내용이 정해져 사용자가 바꿀 수 없습니다.",
     "frequency": 4,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "ROM",
       "기억장치"
@@ -202,7 +208,8 @@
     "oneLineConcept": "외부 인터럽트: 전원 이상, 기계 고장, 입출력, 타이머",
     "explanation": "**외부 인터럽트**는 CPU 바깥의 원인으로 생깁니다. 전원 이상(정전), 기계 고장, 입출력 장치의 요청, 타이머가 여기에 듭니다. 프로그램의 잘못된 명령이나 연산으로 생기는 것은 내부 인터럽트입니다.\n\n**틀린 선지**\n- ① 프로그램이 SVC 명령을 실행한 경우: 프로그램이 운영체제에 서비스를 요청하는 소프트웨어 인터럽트입니다.\n- ② 0 으로 나누는 연산을 한 경우: 잘못된 연산으로 생기는 내부 인터럽트(트랩)입니다.\n- ④ 연산 결과에 오버플로가 생긴 경우: 프로그램 실행 중에 생기는 내부 인터럽트입니다.",
     "frequency": 3,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "인터럽트"
     ],

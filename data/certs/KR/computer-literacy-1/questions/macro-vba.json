@@ -17,7 +17,8 @@
     "oneLineConcept": "MsgBox는 메시지 표시, InputBox는 값 입력받기",
     "explanation": "**MsgBox** 는 메시지 상자를 띄워 글을 보여 줍니다.\n\n**틀린 선지**\n- ① InputBox: 사용자에게 값을 입력받는 상자를 띄웁니다.\n- ③ Range: 셀이나 셀 범위를 가리키는 개체입니다.\n- ④ Debug.Print: 직접 실행 창에 값을 찍어 보는 명령입니다.",
     "frequency": 4,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "VBA"
     ],
@@ -51,7 +52,8 @@
     "oneLineConcept": "For i = 1 To 5: i가 1부터 5까지 바뀌며 5번 반복한다",
     "explanation": "s 에 i 를 계속 더해 갑니다.\n\n1. i = 1 → s = 1\n2. i = 2 → s = 3\n3. i = 3 → s = 6\n4. i = 4 → s = 10\n5. i = 5 → s = 15\n\n검산: 1 + 2 + 3 + 4 + 5 = 15\n\n**틀린 선지**\n- ① 5: 반복 횟수입니다.\n- ② 10: 4까지만 더한 값입니다.\n- ④ 6: 반복이 끝난 뒤의 i 값입니다.",
     "frequency": 4,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "VBA",
       "반복문"
@@ -80,13 +82,14 @@
       "Cells(3, 2).Value = 100",
       "Cells(2, 3).Value = 100",
       "Range(3, 2).Value = 100",
-      "Cells(\"B3\") = 100"
+      "Cell(3, 2).Value = 100"
     ],
     "answer": 1,
     "oneLineConcept": "Cells(행, 열): 행 번호를 먼저 쓴다",
-    "explanation": "**Cells(행, 열)** 순서입니다. 3행 2열이므로 Cells(3, 2) 이고, 이것은 B3 셀입니다. Range 로 쓰려면 Range(\"B3\").Value = 100 입니다.\n\n**틀린 선지**\n- ② Cells(2, 3).Value = 100: 2행 3열, 곧 C2 셀에 입력합니다.\n- ③ Range(3, 2).Value = 100: Range 에는 \"B3\" 처럼 셀 주소를 글자로 넣어야 합니다.\n- ④ Cells(\"B3\") = 100: Cells 에는 행 번호와 열 번호를 넣어야 합니다.",
+    "explanation": "**Cells(행, 열)** 순서입니다. 3행 2열이므로 Cells(3, 2) 이고, 이것은 B3 셀입니다. Range 로 쓰려면 Range(\"B3\").Value = 100 입니다.\n\n**틀린 선지**\n- ② Cells(2, 3).Value = 100: 2행 3열, 곧 C2 셀에 입력합니다.\n- ③ Range(3, 2).Value = 100: Range 에는 \"B3\" 처럼 셀 주소를 글자로 넣어야 합니다.\n- ④ Cell(3, 2).Value = 100: Cell 이라는 이름은 없습니다. 끝에 s 를 붙여 Cells 로 써야 합니다.",
     "frequency": 3,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "VBA"
     ],
@@ -100,7 +103,8 @@
         2,
         3
       ]
-    }
+    },
+    "version": 2
   },
   {
     "id": "computer-literacy-1-p032",
@@ -120,7 +124,8 @@
     "oneLineConcept": "Do While: 조건이 참인 동안만 반복한다",
     "explanation": "n 이 0 보다 큰 동안 3씩 빼며 횟수(k)를 셉니다.\n\n1. n = 10 → 7, k = 1\n2. n = 7 → 4, k = 2\n3. n = 4 → 1, k = 3\n4. n = 1 → -2, k = 4\n5. n = -2 는 0 보다 크지 않으므로 반복 끝\n\n결과: 4\n\n**틀린 선지**\n- ① 3: n 이 1일 때도 조건(1 > 0)이 참이라 한 번 더 반복합니다.\n- ② 10: n 의 처음 값입니다.\n- ③ 5: 4번 만에 n 이 0 이하가 됩니다.",
     "frequency": 3,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "VBA",
       "반복문"
@@ -155,7 +160,8 @@
     "oneLineConcept": "For 1 To 10 Step 3 → i = 1, 4, 7, 10",
     "explanation": "1. Step 3 이므로 i 는 3씩 커집니다.\n2. i = 1, 4, 7, 10 일 때 실행됩니다.\n3. 다음 값 13 은 10 보다 크므로 끝납니다.\n4. 답: 4번\n\n**틀린 선지**\n- ① 5번: i 는 1, 4, 7, 10 의 네 값만 가집니다.\n- ② 3번: i 가 10 일 때도 조건(10 이하)에 맞으므로 한 번 더 실행됩니다.\n- ④ 10번: Step 3 이므로 i 가 3씩 커집니다. 1씩 커질 때가 10번입니다.",
     "frequency": 4,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "VBA",
       "반복문"

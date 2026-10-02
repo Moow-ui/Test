@@ -17,7 +17,8 @@
     "oneLineConcept": "전류계는 직렬, 전압계는 병렬",
     "explanation": "**전류계**는 흐르는 전류가 그대로 지나가야 하므로 직렬로, **전압계**는 두 점 사이의 전압을 재야 하므로 병렬로 연결합니다.\n\n**틀린 선지**\n- ① 둘 다 직렬로 연결한다.: 전압계를 직렬로 연결하면 회로에 전류가 거의 흐르지 않습니다.\n- ② 전류계는 병렬, 전압계는 직렬로 연결한다.: 전류계를 병렬로 연결하면 큰 전류가 흘러 계기가 탑니다.\n- ④ 둘 다 병렬로 연결한다.: 전류계를 병렬로 연결하면 안 됩니다.",
     "frequency": 5,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "계측"
     ],
@@ -51,7 +52,8 @@
     "oneLineConcept": "배율 m = 1 + 배율기 저항 ÷ 전압계 내부 저항",
     "explanation": "1. 공식: m = 1 + Rm ÷ Rv\n2. 숫자 대입: m = 1 + 90 ÷ 10\n3. m = 1 + 9 = 10배\n\n**틀린 선지**\n- ① 9배: 1 을 더하지 않은 값입니다.\n- ③ 90배: 배율기의 저항값을 그대로 쓴 값입니다.\n- ④ 100배: 두 저항을 더한 값입니다.",
     "frequency": 5,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "배율기",
       "계산"
@@ -86,7 +88,8 @@
     "oneLineConcept": "SCR은 단방향, 트라이액은 양방향",
     "explanation": "**SCR(사이리스터)** 은 한 방향으로만 전류를 흘리는 단방향 3단자 소자입니다. 양쪽으로 제어하는 것은 트라이액(TRIAC)입니다.\n\n**틀린 선지**\n- ① 제너 다이오드 – 정전압 회로: 맞는 짝입니다.\n- ② 서미스터 – 온도 보상: 맞는 짝입니다. 온도가 오르면 저항이 줄어드는 성질을 이용합니다.\n- ③ 바리스터 – 서지 전압 흡수: 맞는 짝입니다. 과전압으로부터 회로를 보호합니다.",
     "frequency": 4,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "반도체"
     ],
@@ -110,7 +113,8 @@
     "oneLineConcept": "정류 직류 전압: 단상 반파 0.45E, 단상 전파 0.9E",
     "explanation": "1. 단상 전파 정류: Ed = 0.9 × E\n2. 숫자 대입: Ed = 0.9 × 100\n3. 답: 90V\n\n**틀린 선지**\n- ② 45V: 단상 반파 정류일 때의 값(0.45 × 100)입니다.\n- ③ 100V: 교류의 실효값 그대로입니다.\n- ④ 141V: 교류의 최댓값입니다.",
     "frequency": 4,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "정류",
       "계산"
@@ -145,7 +149,8 @@
     "oneLineConcept": "분류기: 전류계에 병렬 / 배율기: 전압계에 직렬",
     "explanation": "큰 전류를 재려면 전류의 일부를 다른 길로 흘려보내야 합니다. 전류계와 **병렬**로 연결해 전류를 나누어 주는 저항이 **분류기**입니다. 전압계에는 **직렬**로 배율기를 연결합니다.\n\n**틀린 선지**\n- ① 가변 저항기: 저항값을 바꿀 수 있는 부품으로, 측정 범위를 넓히는 용도가 아닙니다.\n- ② 배율기: 전압계의 측정 범위를 넓히려고 전압계와 직렬로 연결하는 저항입니다.\n- ④ 계기용 변압기(PT): 높은 전압을 낮은 전압으로 바꾸어 계기에 보내는 기기입니다.",
     "frequency": 4,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "계측"
     ],
@@ -179,7 +184,8 @@
     "oneLineConcept": "동기 속도 Ns = 120f ÷ P",
     "explanation": "1. 공식: Ns = 120 × f ÷ P\n2. 숫자 대입: Ns = 120 × 60 ÷ 4\n3. 계산: 7,200 ÷ 4 = 1,800\n4. 답: 1,800rpm\n\n**틀린 선지**\n- ① 1,200rpm: 극수가 6극일 때의 값입니다.\n- ③ 900rpm: 극수가 8극일 때의 값입니다.\n- ④ 3,600rpm: 극수가 2극일 때의 값입니다.",
     "frequency": 4,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "유도 전동기",
       "계산"

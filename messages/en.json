@@ -88,9 +88,12 @@
     "other": "Exam"
   },
   "source": {
-    "predicted": "AI practice question",
+    "predicted": "AI-generated",
     "past": "{year} exam, round {round}",
-    "unverified": "Not yet reviewed"
+    "unverified": "Not yet reviewed",
+    "reviewed": "Reviewed",
+    "reviewInfoButton": "How it was reviewed",
+    "reviewInfo": "A separate AI that could not see the answer solved this question again, and we confirmed its answer matched. If you find an error, please report it."
   },
   "ad": {
     "label": "Advertisement",
@@ -187,7 +190,7 @@
     "introPast": "{shown} frequently asked {name} past questions with answers and explanations. The {spaced} exam has {total} questions across {subjects}; {past} licensed past questions are available here.",
     "intro1": "This site does not publish real exam questions. Instead, here are {shown} of our {predicted} AI-written {name} practice questions, chosen to match the question types that come up most.",
     "intro2": "The {spaced} exam covers {subjects}, {total} questions in total. New to '{short}'? Read these first to see what to expect.",
-    "unverifiedNote": "'Not yet reviewed' questions have not been checked by an expert. Use 'Report a problem' on the practice screen if something looks wrong.",
+    "unverifiedNote": "'Reviewed' means a separate AI that could not see the answer solved the question again and its answer matched. 'Not yet reviewed' means that check has not been done yet. No human expert has checked these questions, so use 'Report a problem' on the practice screen if something looks wrong.",
     "listTitlePast": "{name}: {n} past questions",
     "listTitle": "{name}: {n} sample questions",
     "moreTitle": "Practice the other {n} questions",

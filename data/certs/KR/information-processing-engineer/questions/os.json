@@ -17,7 +17,8 @@
     "oneLineConcept": "교착 상태 4조건: 상호 배제, 점유와 대기, 비선점, 환형 대기",
     "explanation": "네 번째 조건은 **비선점**(남이 가진 자원을 빼앗을 수 없음)입니다. 자원을 빼앗을 수 있다면(선점) 교착 상태가 풀립니다.\n\n**틀린 선지**\n- ① 상호 배제: 한 자원은 한 번에 한 프로세스만 쓸 수 있다는 조건입니다.\n- ② 점유와 대기: 자원을 가진 채로 다른 자원을 기다린다는 조건입니다.\n- ④ 환형 대기: 프로세스들이 원 모양으로 서로의 자원을 기다린다는 조건입니다.",
     "frequency": 5,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "교착 상태"
     ],
@@ -41,7 +42,8 @@
     "oneLineConcept": "SJF: 실행 시간이 짧은 순서대로 실행한다",
     "explanation": "1. 실행 순서: P3(1) → P2(3) → P1(6)\n2. 대기 시간: P3 = 0, P2 = 1, P1 = 1 + 3 = 4\n3. 평균 대기 시간 = (0 + 1 + 4) ÷ 3 = 5 ÷ 3 ≈ 1.67\n\n**틀린 선지**\n- ② 약 3.33: 계산이 틀린 값입니다.\n- ③ 5: FCFS(도착 순서 P1 → P2 → P3)로 했을 때의 평균 대기 시간((0 + 6 + 9) ÷ 3)입니다.\n- ④ 약 6.67: 계산이 틀린 값입니다.",
     "frequency": 5,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "스케줄링",
       "계산"
@@ -76,7 +78,8 @@
     "oneLineConcept": "FIFO: 가장 먼저 들어온 페이지를 내보낸다",
     "explanation": "1. 1 참조 → 부재 (프레임: 1)\n2. 2 참조 → 부재 (1, 2)\n3. 3 참조 → 부재 (1, 2, 3)\n4. 1 참조 → 이미 있음\n5. 4 참조 → 부재, 가장 먼저 들어온 1 을 내보냄 (2, 3, 4)\n\n페이지 부재는 4번입니다.\n\n**틀린 선지**\n- ① 3번: 마지막 4 를 참조할 때의 부재를 빼먹은 값입니다.\n- ② 2번: 계산이 틀린 값입니다.\n- ③ 5번: 1 을 두 번째로 참조할 때는 이미 프레임에 있어 부재가 아닙니다.",
     "frequency": 5,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "페이지 교체",
       "계산"
@@ -111,7 +114,8 @@
     "oneLineConcept": "HRN 우선순위 = (대기 시간 + 서비스 시간) ÷ 서비스 시간",
     "explanation": "1. A = (10 + 5) ÷ 5 = 3\n2. B = (6 + 2) ÷ 2 = 4\n3. C = (12 + 12) ÷ 12 = 2\n\n값이 가장 큰 B 가 먼저 실행됩니다.\n\n**틀린 선지**\n- ① A: 우선순위 값이 3 으로 두 번째입니다.\n- ③ C: 우선순위 값이 2 로 가장 낮습니다.\n- ④ 세 작업의 우선순위가 같다: 값이 서로 다릅니다.",
     "frequency": 4,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "스케줄링",
       "계산"
@@ -146,7 +150,8 @@
     "oneLineConcept": "선점형: RR·SRT·MLQ / 비선점형: FCFS·SJF·HRN",
     "explanation": "**RR** 은 프로세스마다 같은 시간(타임 슬라이스)만큼만 CPU 를 쓰게 하고, 시간이 끝나면 CPU 를 빼앗아 다음 프로세스에 넘기는 선점형 기법입니다.\n\n**틀린 선지**\n- ① SJF: 실행 시간이 가장 짧은 작업을 먼저 끝까지 처리하는 비선점형입니다.\n- ② HRN: 대기 시간과 실행 시간으로 우선순위를 정하는 비선점형입니다.\n- ③ FCFS: 먼저 온 순서대로 끝까지 처리하는 비선점형입니다.",
     "frequency": 4,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "스케줄링"
     ],
@@ -180,7 +185,8 @@
     "oneLineConcept": "LRU: 가장 오래 안 쓴 것 / LFU: 가장 적게 쓴 것",
     "explanation": "**LRU**(Least Recently Used)는 '최근에 가장 덜 쓰인' 페이지를 내보냅니다. LFU 는 횟수, LRU 는 시간이 기준입니다.\n\n**틀린 선지**\n- ① FIFO: 가장 먼저 들어온(가장 오래 있었던) 페이지를 교체합니다.\n- ③ LFU: 쓰인 횟수가 가장 적은 페이지를 교체합니다.\n- ④ OPT: 앞으로 가장 오랫동안 쓰이지 않을 페이지를 교체합니다.",
     "frequency": 4,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "페이지 교체"
     ],
@@ -214,7 +220,8 @@
     "oneLineConcept": "스래싱: 페이지 교체에 시간을 다 쓰는 현상",
     "explanation": "다중 프로그래밍의 정도가 너무 높아지면 **스래싱**이 생겨 CPU 이용률이 뚝 떨어집니다. 워킹 셋을 유지하거나 페이지 부재 빈도를 조절해 막습니다.\n\n**틀린 선지**\n- ① 교착 상태(Deadlock): 프로세스들이 서로의 자원을 기다리며 멈춰 있는 상태입니다.\n- ② 워킹 셋(Working Set): 프로세스가 일정 시간 동안 자주 참조하는 페이지들의 집합입니다.\n- ③ 구역성(Locality): 프로세스가 일부 페이지만 집중적으로 참조하는 성질입니다.",
     "frequency": 4,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "가상 기억장치"
     ],
@@ -248,7 +255,8 @@
     "oneLineConcept": "r = 4, w = 2, x = 1 을 더한 값",
     "explanation": "1. 읽기 r = 4, 쓰기 w = 2, 실행 x = 1\n2. 7 = 4 + 2 + 1 → rwx (소유자)\n3. 5 = 4 + 1 → r-x (그룹)\n4. 4 → r-- (기타 사용자)\n\n**틀린 선지**\n- ① 소유자가 rw- 이면 6 이므로 654 입니다.\n- ③ 기타 사용자가 --x 이면 1 이므로 751 입니다.\n- ④ 그룹이 rw- 이면 6 이므로 764 입니다.",
     "frequency": 4,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "UNIX",
       "권한"

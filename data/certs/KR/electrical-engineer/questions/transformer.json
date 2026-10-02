@@ -17,7 +17,8 @@
     "oneLineConcept": "권수비 a = V1 ÷ V2 = I2 ÷ I1",
     "explanation": "1. 권수비 a = 6,600 ÷ 220 = 30\n2. I1 = I2 ÷ a = 300 ÷ 30\n3. I1 = 10A\n\n검산: 1차 전력 6,600 × 10 = 66,000VA, 2차 전력 220 × 300 = 66,000VA 로 같습니다.\n\n**틀린 선지**\n- ① 5A: 계산이 틀린 값입니다.\n- ③ 30A: 권수비의 값입니다.\n- ④ 9,000A: 전류에 권수비를 곱한 값입니다.",
     "frequency": 5,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "변압기",
       "계산"
@@ -52,7 +53,8 @@
     "oneLineConcept": "변압기 최대 효율 조건: 철손 = 동손",
     "explanation": "부하와 상관없이 일정한 **철손**과, 부하 전류의 제곱에 비례하는 **동손**이 같아질 때 효율이 가장 높습니다.\n\n**틀린 선지**\n- ② 철손 > 동손: 최대 효율 조건이 아닙니다.\n- ③ 철손 < 동손: 최대 효율 조건이 아닙니다.\n- ④ 철손 = 0: 철심이 있는 한 철손은 0 이 될 수 없습니다.",
     "frequency": 5,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "변압기",
       "효율"
@@ -87,7 +89,8 @@
     "oneLineConcept": "V 결선: 출력비 57.7%, 이용률 86.6%",
     "explanation": "1. Δ 결선 출력 = 3 × P (P 는 1대 용량)\n2. V 결선 출력 = √3 × P\n3. 출력비 = √3 ÷ 3 = 0.577 → 57.7%\n\n**틀린 선지**\n- ① 50%: 계산이 틀린 값입니다.\n- ② 66.7%: 2대가 남았다고 2/3 로 계산한 값입니다.\n- ④ 86.6%: V 결선의 이용률(√3 ÷ 2)입니다.",
     "frequency": 5,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "변압기",
       "V 결선"
@@ -122,7 +125,8 @@
     "oneLineConcept": "Δ 와 Y 의 개수 합이 홀수이면 병렬 운전 불가",
     "explanation": "두 변압기 결선에 들어 있는 Δ(또는 Y)의 개수를 세어 **홀수**이면 2차 전압 사이에 30도의 위상차가 생겨 병렬 운전을 할 수 없습니다.\n\n- Δ-Δ 와 Δ-Y: Δ 가 3개(홀수) → 불가능\n\n**틀린 선지**\n- ① Δ-Δ 와 Δ-Δ: Δ 가 4개(짝수)로 가능합니다.\n- ② Δ-Δ 와 Y-Y: Δ 가 2개(짝수)로 가능합니다.\n- ③ Δ-Y 와 Δ-Y: Δ 가 2개(짝수)로 가능합니다.",
     "frequency": 4,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "변압기",
       "병렬 운전"
@@ -157,7 +161,8 @@
     "oneLineConcept": "권수비 a = V1 ÷ V2",
     "explanation": "1. 공식: a = V1 ÷ V2 → V2 = V1 ÷ a\n2. 계산: 2,000 ÷ 20 = 100V\n\n**틀린 선지**\n- ① 200V: 권수비를 10 으로 잘못 본 값입니다.\n- ② 1,980V: 권수비를 뺀 값입니다.\n- ④ 40,000V: 권수비를 곱한 값입니다. 나누어야 합니다.",
     "frequency": 4,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "변압기",
       "계산"
@@ -192,7 +197,8 @@
     "oneLineConcept": "무부하손 ≒ 철손(히스테리시스손 + 와류손)",
     "explanation": "부하가 없어도 철심에는 자속이 지나므로 **철손**이 생깁니다. 철손은 히스테리시스손과 와류손으로 이루어지며, 부하의 크기와 관계없이 거의 일정합니다.\n\n**틀린 선지**\n- ② 동손: 부하 전류가 흐를 때 권선의 저항에서 생기는 부하손입니다.\n- ③ 표유 부하손: 부하가 걸렸을 때 누설 자속으로 생기는 손실입니다.\n- ④ 기계손: 변압기는 도는 부분이 없어 기계손이 없습니다.",
     "frequency": 4,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "변압기",
       "손실"
@@ -227,7 +233,8 @@
     "oneLineConcept": "전압 변동률 ε = p cosθ + q sinθ",
     "explanation": "1. 역률 0.8 이면 cosθ = 0.8, sinθ = 0.6\n2. 공식: ε = p cosθ + q sinθ\n3. 계산: 2 × 0.8 + 3 × 0.6 = 1.6 + 1.8\n4. 답: 3.4%\n\n**틀린 선지**\n- ② 1%: 두 값의 차이입니다.\n- ③ 5%: 두 값을 그대로 더한 값입니다.\n- ④ 3.6%: p 에 sinθ, q 에 cosθ 를 바꿔 곱한 값입니다.",
     "frequency": 4,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "전압 변동률",
       "계산"

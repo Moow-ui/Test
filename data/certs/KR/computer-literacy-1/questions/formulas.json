@@ -17,7 +17,8 @@
     "oneLineConcept": "배열 수식은 Ctrl + Shift + Enter 로 입력한다",
     "explanation": "배열 수식을 쓰고 **Ctrl + Shift + Enter** 를 누르면 수식 양쪽에 중괄호 { } 가 자동으로 붙습니다. 중괄호를 직접 입력하면 안 됩니다.\n\n**틀린 선지**\n- ① Ctrl + Enter: 선택한 여러 셀에 같은 내용을 넣는 키입니다.\n- ② Alt + Enter: 셀 안에서 줄을 바꾸는 키입니다.\n- ④ Shift + Enter: 입력 후 위 셀로 이동하는 키입니다.",
     "frequency": 5,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "배열 수식"
     ],
@@ -51,7 +52,8 @@
     "oneLineConcept": "LARGE(범위, k): k번째로 큰 값",
     "explanation": "**LARGE** 는 큰 순서로 줄을 세워 k번째 값을 가져옵니다.\n\n1. 큰 순서: 9, 7, 5, 3, 2\n2. 두 번째로 큰 값: 7\n\n**틀린 선지**\n- ① 9: 가장 큰 값(1번째)입니다.\n- ③ 3: =SMALL(A1:A5, 2) 의 결과입니다.\n- ④ 2: 가장 작은 값입니다.",
     "frequency": 4,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "함수"
     ],
@@ -85,7 +87,8 @@
     "oneLineConcept": "SUMPRODUCT: 같은 자리끼리 곱한 뒤 모두 더한다",
     "explanation": "1. 같은 행끼리 곱합니다: 1×10 = 10, 2×20 = 40, 3×30 = 90\n2. 모두 더합니다: 10 + 40 + 90 = **140**\n\n**틀린 선지**\n- ① 66: 두 범위를 그냥 더한 값(6 + 60)입니다.\n- ② 36: 계산 과정에서 나오지 않는 값입니다.\n- ③ 360: 합계끼리 곱한 값(6 × 60)입니다.",
     "frequency": 5,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "함수",
       "SUMPRODUCT"
@@ -120,7 +123,8 @@
     "oneLineConcept": "MATCH로 위치를 찾고 INDEX로 그 위치의 값을 가져온다",
     "explanation": "1. MATCH(\"다\", A1:A4, 0): \"다\"는 A 열에서 3번째 → 3\n2. INDEX(B1:B4, 3): B 열의 3번째 값 → **30**\n\n마지막 인수 0 은 '정확히 같은 값을 찾으라'는 뜻입니다.\n\n**틀린 선지**\n- ② 20: 2번째 값입니다.\n- ③ 3: MATCH 함수만 계산한 값(위치)입니다.\n- ④ 40: 4번째 값입니다.",
     "frequency": 5,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "함수",
       "찾기"
@@ -155,7 +159,8 @@
     "oneLineConcept": "배열 수식에서 조건끼리 곱하면 '그리고(AND)' 조건의 개수가 된다",
     "explanation": "조건이 참이면 1, 거짓이면 0 으로 계산됩니다.\n\n1. 성별이 \"남\": 1, 0, 1, 0, 1\n2. 점수가 80 이상: 1, 1, 0, 0, 1\n3. 같은 자리끼리 곱함: 1, 0, 0, 0, 1\n4. 합계: **2** (1행과 5행)\n\n**틀린 선지**\n- ① 1: 한 행만 센 값입니다.\n- ③ 3: 남자의 수만 센 값입니다.\n- ④ 170: 개수가 아니라 점수를 더한 값입니다. 점수를 더하려면 B1:B5 를 한 번 더 곱해야 합니다.",
     "frequency": 4,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "배열 수식"
     ],
@@ -189,7 +194,8 @@
     "oneLineConcept": "배열 상수: 쉼표는 열 구분, 세미콜론은 행 구분",
     "explanation": "1. 쉼표(,)는 **옆 칸**으로 넘어갑니다. → 1, 2, 3 은 한 행에 3열\n2. 세미콜론(;)은 **다음 행**으로 넘어갑니다. → 4, 5, 6 이 두 번째 행\n3. 따라서 2행 3열입니다.\n\n**틀린 선지**\n- ① 1행 6열: 모두 쉼표로 구분했을 때입니다.\n- ② 6행 1열: 모두 세미콜론으로 구분했을 때입니다.\n- ③ 3행 2열: {1,2;3,4;5,6} 처럼 썼을 때입니다.",
     "frequency": 3,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "배열 수식"
     ],
@@ -223,7 +229,8 @@
     "oneLineConcept": "AND 는 모든 조건이 참일 때만 참",
     "explanation": "1. A1>=60 → 70 은 60 이상이므로 참\n2. B1>=60 → 50 은 60 보다 작으므로 거짓\n3. AND 는 하나라도 거짓이면 거짓\n4. IF 가 거짓일 때의 값 \"불합격\"을 돌려줍니다.\n\n**틀린 선지**\n- ② TRUE: IF 함수는 조건의 참·거짓이 아니라 지정한 글자를 돌려줍니다.\n- ③ #VALUE!: 수식에 오류가 없으므로 오류 값이 나오지 않습니다.\n- ④ 합격: AND 는 두 조건이 모두 맞아야 참입니다. B1 이 60 보다 작습니다.",
     "frequency": 5,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "IF",
       "AND"
@@ -258,7 +265,8 @@
     "oneLineConcept": "VLOOKUP 의 FALSE(0): 정확히 일치",
     "explanation": "VLOOKUP 의 네 번째 인수는 찾는 방법입니다. **FALSE(또는 0)** 는 정확히 일치하는 값만 찾고, TRUE(또는 생략)는 비슷한 값을 찾습니다. TRUE 로 쓸 때는 표의 첫 열이 오름차순으로 정렬되어 있어야 합니다.\n\n**틀린 선지**\n- ① 찾는 값과 비슷한 값(근삿값)을 찾는다: 근삿값을 찾는 것은 TRUE 이거나 생략했을 때입니다.\n- ② 표를 내림차순으로 정렬한 뒤 찾는다: VLOOKUP 은 표를 정렬하지 않습니다.\n- ③ 찾는 값이 없으면 0 을 돌려준다: 정확히 일치하는 값이 없으면 #N/A 오류가 납니다.",
     "frequency": 5,
-    "reviewStatus": "unverified",
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-02",
     "tags": [
       "VLOOKUP"
     ],
