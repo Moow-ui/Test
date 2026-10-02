@@ -7,7 +7,7 @@
 | 기간 | 2026-10-02(1회차) ~ **2026-10-29(28회차, 종료일 = 애드센스 신청일)** |
 | 목표 | 28회 동안 50개 이상 (최대 56개). 누적은 이 루틴으로 추가한 것만 0부터 센다 |
 | 진행 기록 | [reports/routine-progress.md](../reports/routine-progress.md) |
-| 자격증 추가 절차 | [add-cert.md](add-cert.md) A 의 1~8 |
+| 자격증 추가 절차 | [add-cert.md](add-cert.md) A 의 1~9 |
 
 이 문서는 루틴이 매번 읽고 그대로 따르는 지시문이다. 실행하는 쪽은 이전 실행을 기억하지 못하므로
 상태는 전부 `reports/routine-progress.md` 와 git 에 남긴다.
@@ -33,7 +33,7 @@
 
 ## 2. 자격증 1개 추가 (한국 먼저, 그다음 미국)
 
-**하나가 실패해도 다른 하나는 진행한다.** 각 자격증은 `docs/add-cert.md` A 의 1~8 을 그대로 따른다. 요점:
+**하나가 실패해도 다른 하나는 진행한다.** 각 자격증은 `docs/add-cert.md` A 의 1~9 를 그대로 따른다. 요점:
 
 1. **공식 확인**: 시행기관의 공식 출제기준·공지를 웹에서 찾아 과목·문항 수·시간·선지 수·합격 기준을 확인하고 `sources` 에 적는다.
    공식 자료로 확인하지 못하면 지어내지 말고 실패로 처리한다.
@@ -49,7 +49,11 @@
    - 불일치 → 고치고 다시 검증. 확신이 없으면 `data/review-queue/{slug}.json` 에 보관하고 게시하지 않는다.
    - 결과를 `reports/{YYYY-MM}/verify-{slug}.md` 에 적는다: 작성 N · 통과 N · 수정 후 통과 N · 탈락(보관) N.
 5. 통과한 문제만 `npm run questions:add` 로 넣는다 (`reviewStatus` 는 `unverified` = 사람 검수 전).
-6. **검사 (전부 통과해야 게시)**
+6. **운영진 학습 팁 3개 작성**: `docs/add-cert.md` A-6. `meta.json` 의 `studyTips` 에 `studyOrder`(공부 순서), `hardChapters`(자주 틀리는 단원),
+   `examDay`(시험 당일 팁)를 각 2~4문장으로 쓴다 (미국 자격증은 영어).
+   - 방금 만든 `chapters.json`(과목·단원 이름, 문항 수, 출제 비중·중요도)과 `examInfo`(문항 수·시간·합격 기준·과락)에 근거해 쓴다.
+   - 확인할 수 없는 합격률·통계는 쓰지 않는다. **이용자 후기를 지어내 넣지 않는다** (후기란은 비워 둔 채로 게시된다).
+7. **검사 (전부 통과해야 게시)**
 
    ```bash
    npm run validate && npm run check:cert -- {slug} && npm test && npm run build && npm run check:meta
@@ -57,7 +61,7 @@
 
    - 문제 수가 모자라 `check:cert` 가 실패하면 문제를 더 써서 4번부터 다시 한다.
    - 자격증을 추가하면서 `app/`, `components/`, `lib/`, `scripts/` 는 고치지 않는다. 고쳐야만 통과한다면 실패로 처리하고 사유를 적는다.
-7. **커밋 1개 + push**: 대기 목록에서 빼고, 그 자격증의 파일만 add 한다.
+8. **커밋 1개 + push**: 대기 목록에서 빼고, 그 자격증의 파일만 add 한다.
 
    ```bash
    git add data/certs/{country}/{slug} data/cert-queue.json reports/{YYYY-MM}/
@@ -67,12 +71,12 @@
    ```
 
    push 가 거절되면(다른 변경이 먼저 올라감) `git pull --rebase origin main` 뒤 다시 push 한다. 강제 push 는 하지 않는다.
-8. **배포 확인**: push 후 몇 분 기다린 뒤 `https://exampasso.com/ko/cert/{slug}` (미국은 `/en/cert/{slug}`) 와
+9. **배포 확인**: push 후 몇 분 기다린 뒤 `https://exampasso.com/ko/cert/{slug}` (미국은 `/en/cert/{slug}`) 와
    `https://exampasso.com/data/{slug}/pool.json` 이 200 인지 본다. 10분이 지나도 안 열리면 진행 기록의 "회장 확인 필요"에 적는다.
 
 ### 실패했을 때
 
-- 6번 검사 중 하나라도 실패했고 고칠 수 없으면 **그 자격증은 배포하지 않는다.**
+- 7번 검사 중 하나라도 실패했고 고칠 수 없으면 **그 자격증은 배포하지 않는다.**
   그 자격증의 변경만 되돌린다 (`git restore --staged --worktree data/cert-queue.json` 과 새로 만든 폴더 삭제. 원래 "준비 중"으로 있던 `meta.json` 은 원래대로 되돌린다).
 - 처음 실패 → "재시도 대기"에 적는다. 재시도에서도 실패 → "건너뜀"에 사유와 함께 적는다. 누적 실패 수를 1 올린다 (자격증 1개당 건너뛸 때 1).
 - **사용량 한도·시간 부족으로 중단될 것 같으면** 실패로 세지 않는다. 지금까지의 작업을 `routine/wip-{slug}` 브랜치에 커밋해 push 하고

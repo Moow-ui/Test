@@ -23,6 +23,7 @@ import {
   type QuizSession,
 } from "@/lib/storage";
 import type { ExamInfo, PoolItem, Question, QuizLevel, Subject } from "@/lib/types";
+import { reportSolve } from "@/lib/review-client";
 import { useMessages } from "@/lib/use-messages";
 import { useHydrated, useStored } from "@/lib/use-storage";
 import { ResultHeader, ResultView } from "./ResultView";
@@ -252,6 +253,7 @@ export function QuizRunner({ cert }: { cert: QuizCert }) {
     });
     addWrongNotes(cert.id, sessionQuestions, session.answers);
     finishSession(session);
+    reportSolve(cert.id);
     window.scrollTo(0, 0);
   };
 

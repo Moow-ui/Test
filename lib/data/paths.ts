@@ -65,6 +65,8 @@ export function questionIdNumber(slug: string, chapterId: string, id: string): n
 /** 저장소 기준 폴더. 주소는 /data/… */
 export const PUBLIC_DATA_DIR = "public/data";
 
+/** 자격증 slug 전체 목록 ("준비 중" 포함). 후기·활동 API 가 없는 자격증 id 를 걸러 내는 데 쓴다 */
+export const PUBLIC_CERT_IDS_PATH = "cert-ids.json";
 /** 자격증의 문제 목록 (뽑기에 필요한 값만 담은 가벼운 파일) */
 export const publicPoolPath = (slug: string) => `${slug}/pool.json`;
 /** 단원별 문제 파일 */

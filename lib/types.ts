@@ -8,6 +8,7 @@ import type {
   examInfoSchema,
   faqSchema,
   questionSchema,
+  studyTipsSchema,
   subjectSchema,
   CERT_TYPES,
   COUNTRIES,
@@ -25,6 +26,7 @@ export type Subject = z.infer<typeof subjectSchema>;
 export type ExamInfo = z.infer<typeof examInfoSchema>;
 export type Faq = z.infer<typeof faqSchema>;
 export type CertContent = z.infer<typeof certContentSchema>;
+export type StudyTips = z.infer<typeof studyTipsSchema>;
 export type CertSummary = z.infer<typeof certSummarySchema>;
 export type CertMeta = z.infer<typeof certMetaSchema>;
 export type CertDetail = z.infer<typeof certDetailSchema>;
@@ -38,6 +40,8 @@ export interface Certification extends CertSummary {
   examInfo: ExamInfo | null;
   subjects: Subject[];
   content: CertContent | null;
+  /** 운영진 학습 팁 (없으면 상자를 그리지 않는다) */
+  studyTips: StudyTips | null;
   updatedAt: string | null;
   /** 과목·단원 데이터와 문제가 모두 있어 풀이가 가능한가 */
   ready: boolean;

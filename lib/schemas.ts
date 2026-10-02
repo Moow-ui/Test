@@ -141,6 +141,19 @@ export const certContentSchema = z.object({
   faqs: z.array(faqSchema).min(3).max(5),
 });
 
+/**
+ * 운영진 학습 팁 3개 (자격증 페이지의 후기란 바로 위 상자. 화면에 "운영진 작성"으로 표시한다).
+ * 각 2~4문장. 그 자격증의 출제기준·단원 데이터에 근거해 쓰고, 확인할 수 없는 합격률·통계는 쓰지 않는다.
+ */
+export const studyTipsSchema = z.object({
+  /** 공부 순서 */
+  studyOrder: z.string().min(20),
+  /** 자주 틀리는 단원 */
+  hardChapters: z.string().min(20),
+  /** 시험 당일 팁 */
+  examDay: z.string().min(20),
+});
+
 /** 자격증의 기본 정보 (meta.json 의 앞부분. 목록·검색에 쓴다) */
 export const certSummarySchema = z.object({
   /** URL에 쓰는 영문 slug (예: forklift-operator). 한번 정하면 바꾸지 않는다 */
@@ -187,6 +200,8 @@ export const certMetaSchema = certSummarySchema.extend({
   examInfo: examInfoSchema.optional(),
   /** 자격증 소개·출제 경향·FAQ */
   content: certContentSchema.optional(),
+  /** 운영진 학습 팁. 문제가 있는 자격증에는 반드시 있어야 한다 (npm run validate 가 검사) */
+  studyTips: studyTipsSchema.optional(),
   sources: z.array(sourceRefSchema).optional(),
 });
 

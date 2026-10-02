@@ -11,6 +11,7 @@ const KST_OFFSET_MS = 9 * 60 * 60 * 1000;
 
 export const MEMBER_LIST_LIMIT = 500;
 export const REPORT_LIST_LIMIT = 300;
+export const REVIEW_LIST_LIMIT = 300;
 
 /** 한국 시간으로 오늘 0시 */
 export function kstDayStart(now: number): number {
@@ -107,5 +108,56 @@ export async function getAdminOverview(db: D1Like, now = Date.now()): Promise<Ad
     reportTotal: reportCounts?.total ?? 0,
     reportOpen: reportCounts?.open ?? 0,
     reports: reports.results,
+  };
+}
+
+export interface AdminReview {
+  id: string;
+  certId: string;
+  rating: number;
+  body: string;
+  status: string;
+  nickname: string;
+  createdAt: number;
+  /** 0 보임 · 1 관리자가 숨김 · 2 신고 누적으로 자동 숨김 */
+  hidden: number;
+  reportCount: number;
+}
+
+export interface AdminReviews {
+  total: number;
+  hiddenTotal: number;
+  /** 자격증별 후기 수 (많은 순) */
+  byCert: { certId: string; count: number; hidden: number }[];
+  /** 최신순 */
+  reviews: AdminReview[];
+}
+
+export async function getAdminReviews(db: D1Like): Promise<AdminReviews> {
+  const byCert = await db
+    .prepare(
+      `SELECT cert_id AS certId, COUNT(*) AS count, COALESCE(SUM(hidden != 0), 0) AS hidden
+         FROM reviews
+        GROUP BY cert_id
+        ORDER BY count DESC, cert_id`,
+    )
+    .all<{ certId: string; count: number; hidden: number }>();
+
+  const reviews = await db
+    .prepare(
+      `SELECT id, cert_id AS certId, rating, body, status, nickname,
+              created_at AS createdAt, hidden, report_count AS reportCount
+         FROM reviews
+        ORDER BY created_at DESC
+        LIMIT ?`,
+    )
+    .bind(REVIEW_LIST_LIMIT)
+    .all<AdminReview>();
+
+  return {
+    total: byCert.results.reduce((sum, c) => sum + c.count, 0),
+    hiddenTotal: byCert.results.reduce((sum, c) => sum + c.hidden, 0),
+    byCert: byCert.results,
+    reviews: reviews.results,
   };
 }

@@ -10,7 +10,14 @@ import fs from "node:fs";
 import path from "node:path";
 import { getCertList, getQuestionFiles, getQuestionPool } from "../lib/data";
 import { copyDataFile, fsStore } from "../lib/data/fs-store";
-import { PUBLIC_DATA_DIR, assetsDir, publicAssetPath, publicPoolPath, publicQuestionsPath } from "../lib/data/paths";
+import {
+  PUBLIC_CERT_IDS_PATH,
+  PUBLIC_DATA_DIR,
+  assetsDir,
+  publicAssetPath,
+  publicPoolPath,
+  publicQuestionsPath,
+} from "../lib/data/paths";
 
 const OUT_DIR = path.join(process.cwd(), ...PUBLIC_DATA_DIR.split("/"));
 
@@ -25,7 +32,13 @@ async function main(): Promise<void> {
   let certs = 0;
   let files = 0;
 
-  for (const cert of await getCertList()) {
+  const all = await getCertList();
+  write(
+    PUBLIC_CERT_IDS_PATH,
+    all.map((cert) => cert.id),
+  );
+
+  for (const cert of all) {
     if (!cert.ready) continue;
     certs += 1;
     write(publicPoolPath(cert.id), await getQuestionPool(cert.id));

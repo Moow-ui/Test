@@ -29,7 +29,13 @@
      (문제 전체 + `reviewNote` 에 사유. id 는 붙이지 않는다). **검증을 통과한 문제만 `questions/` 에 넣는다.**
    - 검증 결과(작성 수·통과 수·수정 수·탈락 수)는 `reports/{YYYY-MM}/verify-{slug}.md` 에 남긴다.
    - `reviewStatus: "unverified"` 는 "사람 검수 전"이라는 뜻이다. 이 검증을 통과해도 `unverified` 로 둔다 (사람이 검수하면 `verified`).
-6. **검사**
+6. **운영진 학습 팁 3개 작성**: `meta.json` 의 `studyTips` 에 적는다. 자격증 페이지의 후기란 바로 위에 "운영진 작성" 상자로 나온다.
+   - `studyOrder`(공부 순서), `hardChapters`(자주 틀리는 단원), `examDay`(시험 당일 팁). 각각 2~4문장.
+   - **그 자격증의 데이터에 근거해 쓴다**: 과목·단원 이름, 문항 수, 단원 출제 비중·중요도(`chapters.json`), 문항 수·시간·합격 기준·과락(`examInfo`).
+   - 확인할 수 없는 합격률·통계·"몇 명이 틀렸다" 같은 수치는 쓰지 않는다. 이용자 후기처럼 꾸미지 않는다 (경험담·별점 금지).
+   - 미국 자격증은 영어로 쓴다. 팁이 없으면 다음 단계의 `npm run validate` 가 실패한다.
+   - 이용자 후기란과 "이번 주 풀이 N회" 표시는 저절로 붙는다. 후기를 미리 써 넣거나 숫자의 초깃값을 넣지 않는다.
+7. **검사**
 
 ```bash
 npm run validate
@@ -43,7 +49,7 @@ npm run check:cert -- {slug}
 npm test
 ```
 
-7. **빌드해서 화면 확인** (목록·검색·sitemap·자격증 화면이 자동으로 생긴다)
+8. **빌드해서 화면 확인** (목록·검색·sitemap·자격증 화면이 자동으로 생긴다)
 
 ```bash
 npm run build
@@ -53,7 +59,7 @@ npm run build
 npm run check:meta
 ```
 
-8. **커밋 1개로 올린다.** 메시지는 `cert: add {slug}`. 문제가 생기면 이 커밋만 되돌리면 된다.
+9. **커밋 1개로 올린다.** 메시지는 `cert: add {slug}`. 문제가 생기면 이 커밋만 되돌리면 된다.
    위 검사 중 하나라도 실패하면 올리지 않는다. push 한 뒤 배포된 주소가 열리는지 확인한다.
 
 ```bash
@@ -88,3 +94,4 @@ npm run questions:add -- 문제.csv --cert electrician-craftsman --dry-run
 - 자격증을 추가하면서 `app/`, `components/`, `lib/` 를 고치지 않는다. 고쳐야 한다면 그 자격증만의 차이를 `meta.json` 값으로 표현할 방법을 먼저 찾는다.
 - `public/data/` 를 직접 고치지 않는다 (빌드 때마다 새로 만든다).
 - 기출 원문을 넣지 않는다.
+- 이용자 후기를 지어내 넣지 않는다. 확인할 수 없는 합격률·통계를 쓰지 않는다.

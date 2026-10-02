@@ -307,7 +307,8 @@
     "ok": "✔ 정답",
     "ng": "✘ 오답",
     "answerMark": "← 정답",
-    "myChoiceMark": "← 내가 고른 답"
+    "myChoiceMark": "← 내가 고른 답",
+    "writeReview": "이 자격증 후기 남기기"
   },
   "report": {
     "saved": "신고가 접수되었습니다. 고맙습니다.",
@@ -322,6 +323,45 @@
     },
     "memo": "자세한 내용 (안 써도 됩니다)",
     "submit": "신고 보내기"
+  },
+  "reviews": {
+    "title": "{name} 후기",
+    "byUsers": "이용자 작성",
+    "empty": "아직 후기가 없어요. 이 자격증을 공부 중이라면 첫 후기를 남겨 주세요.",
+    "average": "평균 {avg}점",
+    "count": "후기 {n}개",
+    "activity": "이번 주 이 자격증 문제 풀이 {n}회",
+    "loading": "후기를 불러오는 중…",
+    "loadFailed": "후기를 불러오지 못했습니다. 잠시 후 다시 열어 주세요.",
+    "more": "후기 더 보기 ▼",
+    "write": "후기 쓰기",
+    "closed": "후기 작성은 곧 열립니다.",
+    "saved": "후기가 등록되었습니다. 고맙습니다.",
+    "rating": "별점",
+    "ratingValue": "{n}점",
+    "starsLabel": "별점 5점 중 {n}점",
+    "status": "지금 상태",
+    "statuses": {
+      "studying": "공부 중",
+      "passed": "합격",
+      "failed": "불합격"
+    },
+    "body": "한 줄 후기 (10~300자)",
+    "bodyCount": "{n} / {max}자",
+    "nickname": "닉네임",
+    "nicknameAuto": "로그인한 닉네임으로 등록됩니다.",
+    "captcha": "사람 확인",
+    "submit": "후기 등록하기",
+    "flag": "신고",
+    "flagged": "신고했습니다",
+    "flagFailed": "신고 실패. 다시 누르기"
+  },
+  "tips": {
+    "title": "{name} 학습 팁",
+    "byStaff": "운영진 작성",
+    "studyOrder": "공부 순서",
+    "hardChapters": "자주 틀리는 단원",
+    "examDay": "시험 당일 팁"
   },
   "notes": {
     "title": "오답노트",
@@ -428,7 +468,15 @@
     "nickname_rule": "닉네임은 1~20자",
     "password_mismatch": "비밀번호 확인이 비밀번호와 다릅니다.",
     "credentials_required": "아이디와 비밀번호를 입력해 주세요.",
-    "too_many": "지금은 신고가 너무 많습니다. 잠시 후 다시 시도해 주세요."
+    "too_many": "지금은 신고가 너무 많습니다. 잠시 후 다시 시도해 주세요.",
+    "review_rating": "별점을 골라 주세요.",
+    "review_length": "후기는 10~300자로 써 주세요.",
+    "review_link": "링크(인터넷 주소)는 넣을 수 없습니다.",
+    "review_phone": "전화번호는 넣을 수 없습니다.",
+    "review_banned": "쓸 수 없는 말이 들어 있습니다.",
+    "review_limit": "후기는 하루에 3개까지 쓸 수 있습니다.",
+    "captcha_failed": "사람 확인을 마친 뒤 다시 눌러 주세요.",
+    "review_closed": "후기 작성은 곧 열립니다."
   },
   "admin": {
     "title": "관리자",
@@ -455,7 +503,22 @@
     "done": "처리 완료로 표시",
     "resolved": "처리 완료",
     "undo": "처리 전으로 되돌리기",
-    "failed": "저장하지 못했습니다. 다시 눌러 주세요."
+    "failed": "저장하지 못했습니다. 다시 눌러 주세요.",
+    "tabs": "관리 메뉴",
+    "reviews": "후기",
+    "reviewCount": "전체 {n}개 · 숨김 {hidden}개",
+    "reviewNone": "아직 후기가 없습니다.",
+    "byCert": "자격증별 후기 수",
+    "certCount": "{id}: {n}개 (숨김 {hidden}개)",
+    "reviewList": "최신 후기 (최대 {n}개)",
+    "reviewLine": "별점 {rating}점 · {status} · {nickname}",
+    "flags": "신고 {n}회",
+    "hiddenByAdmin": "숨김",
+    "hiddenByFlags": "신고 누적으로 자동 숨김",
+    "hide": "숨기기",
+    "show": "다시 보이기",
+    "delete": "삭제",
+    "deleteConfirm": "이 후기를 삭제할까요? 되돌릴 수 없습니다."
   },
   "seo": {
     "subjectSeparator": "·",

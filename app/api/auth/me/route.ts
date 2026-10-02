@@ -29,6 +29,9 @@ export async function DELETE(request: Request) {
 
   await db.batch([
     db.prepare("DELETE FROM user_data WHERE user_id = ?").bind(user.id),
+    // 이 계정으로 쓴 후기와 그 후기에 달린 신고도 함께 지운다
+    db.prepare("DELETE FROM review_flags WHERE review_id IN (SELECT id FROM reviews WHERE user_id = ?)").bind(user.id),
+    db.prepare("DELETE FROM reviews WHERE user_id = ?").bind(user.id),
     db.prepare("DELETE FROM sessions WHERE user_id = ?").bind(user.id),
     db.prepare("DELETE FROM login_attempts WHERE username = ?").bind(user.username),
     db.prepare("DELETE FROM users WHERE id = ?").bind(user.id),

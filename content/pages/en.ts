@@ -98,7 +98,11 @@ Contact: {email}`,
 
 **Problem reports**: the question, the reason you picked, and any details you type. We do not record who sent a report. Please do not include personal information in reports or notes.
 
-We use this information only to provide and secure the service and to fix reported questions.`,
+**Reviews**: your star rating, the review text, where you are now (studying, passed, or did not pass), and a display name. You can post without an account. To limit how many reviews come from one place in a day we store a one-way hash of your IP address, never the address itself, and we run a human check (Cloudflare Turnstile) before a review is posted. Reviews are public, so please do not include personal information.
+
+**Practice counts**: when a practice session ends we add one to a weekly count for that exam. We do not record who took it.
+
+We use this information only to provide and secure the service, to publish reviews, and to fix reported questions.`,
       },
       {
         heading: "If you do not log in",
@@ -145,7 +149,8 @@ We may also disclose information if required by law.`,
         body: `- **Account information and study records**: until you delete your account. Deletion is immediate.
 - **Login sessions**: up to 30 days, or until you log out.
 - **Failed login counts**: cleared when you log in successfully or delete your account.
-- **Problem reports**: contain no information that identifies you and are kept to maintain question quality.`,
+- **Problem reports**: contain no information that identifies you and are kept to maintain question quality.
+- **Reviews**: stay published until removed. Reviews posted while logged in are deleted when you delete your account. To remove a review posted without an account, email {email}.`,
       },
       {
         heading: "Your rights and how to delete your data",

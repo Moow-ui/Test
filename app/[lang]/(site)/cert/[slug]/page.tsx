@@ -8,6 +8,8 @@ import { AnalysisPanel } from "@/components/cert/AnalysisPanel";
 import { CertBoxes } from "@/components/cert/CertBoxes";
 import { IssuerNotice } from "@/components/cert/IssuerNotice";
 import { RelatedCerts } from "@/components/cert/RelatedCerts";
+import { StudyTips } from "@/components/cert/StudyTips";
+import { ReviewSection } from "@/components/reviews/ReviewSection";
 import { getCertList, getCertificationIn, getQuestions } from "@/lib/data";
 import { fmt, getMessages, isLocale, localeCountry, localePath } from "@/lib/i18n";
 import { levelChoiceCount } from "@/lib/choices";
@@ -194,6 +196,10 @@ export default async function CertPage({ params }: Props) {
           </div>
         </details>
       )}
+
+      {/* 운영진 학습 팁(운영진 작성)과 이용자 후기는 섞지 않고 따로 둔다 */}
+      {cert.studyTips && <StudyTips locale={lang} certName={cert.name} tips={cert.studyTips} />}
+      <ReviewSection certId={cert.id} certName={cert.name} />
 
       <IssuerNotice locale={lang} cert={cert} />
     </article>

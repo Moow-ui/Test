@@ -25,6 +25,7 @@ import {
   type CbtSession,
 } from "@/lib/storage";
 import type { Question } from "@/lib/types";
+import { reportSolve } from "@/lib/review-client";
 import { useMessages } from "@/lib/use-messages";
 import { useHydrated, useStored } from "@/lib/use-storage";
 
@@ -82,6 +83,7 @@ export function CbtRunner({ cert }: { cert: QuizCert }) {
       });
     }
     addWrongNotes(cert.id, asked, target.answers);
+    if (asked.length > 0) reportSolve(cert.id);
     setRunning(false);
     window.scrollTo(0, 0);
   }

@@ -6,6 +6,7 @@ import type { ReactNode } from "react";
 import { AdSlot } from "@/components/AdSlot";
 import { FoldMark } from "@/components/Fold";
 import { Markdown } from "@/components/Markdown";
+import { REVIEWS_ANCHOR } from "@/components/reviews/ReviewSection";
 import { visibleChoices } from "@/lib/choices";
 import { circled, formatScore } from "@/lib/format";
 import { gradeQuiz, summarize } from "@/lib/grading";
@@ -203,6 +204,9 @@ export function ResultView({
         {againAction}
         <Link href={certPath} className="btn btn-lg">
           {fmt(m.toCert, { name: cert.name })}
+        </Link>
+        <Link href={`${certPath}#${REVIEWS_ANCHOR}`} className="btn btn-lg">
+          {m.writeReview}
         </Link>
       </section>
 

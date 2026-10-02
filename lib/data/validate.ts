@@ -121,6 +121,9 @@ export async function validateData(store: DataStore): Promise<ValidationResult> 
         errors.push(`${metaFile(country, slug)} → chapters.json 이 있으면 examInfo 와 updatedAt 이 필요합니다`);
         continue;
       }
+      if (questionFiles.length > 0 && !meta.studyTips) {
+        errors.push(`${metaFile(country, slug)} → 문제가 있는 자격증에는 운영진 학습 팁(studyTips) 3개가 필요합니다`);
+      }
       const detail: CertDetail = {
         id: meta.id,
         updatedAt: meta.updatedAt,

@@ -156,6 +156,7 @@ export async function getCertification(id: string): Promise<Certification | null
     examInfo: hasDetail ? (cert.meta.examInfo ?? null) : null,
     subjects: hasDetail ? (cert.subjects ?? []) : [],
     content: hasDetail ? (cert.meta.content ?? null) : null,
+    studyTips: cert.meta.studyTips ?? null,
     updatedAt: hasDetail ? (cert.meta.updatedAt ?? null) : null,
     ready: item.ready,
   };

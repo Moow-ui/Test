@@ -307,7 +307,8 @@
     "ok": "✔ Correct",
     "ng": "✘ Wrong",
     "answerMark": "← Correct",
-    "myChoiceMark": "← Your answer"
+    "myChoiceMark": "← Your answer",
+    "writeReview": "Leave a review for this exam"
   },
   "report": {
     "saved": "Report received. Thank you.",
@@ -322,6 +323,45 @@
     },
     "memo": "Details (optional)",
     "submit": "Send report"
+  },
+  "reviews": {
+    "title": "{name} reviews",
+    "byUsers": "Written by users",
+    "empty": "No reviews yet. If you are studying for this exam, be the first to leave one.",
+    "average": "{avg} average",
+    "count": "{n} reviews",
+    "activity": "{n} practice sessions on this exam this week",
+    "loading": "Loading reviews…",
+    "loadFailed": "Could not load reviews. Please try again shortly.",
+    "more": "Show more reviews ▼",
+    "write": "Write a review",
+    "closed": "Reviews will open soon.",
+    "saved": "Your review was posted. Thank you.",
+    "rating": "Rating",
+    "ratingValue": "{n}",
+    "starsLabel": "{n} out of 5 stars",
+    "status": "Where you are now",
+    "statuses": {
+      "studying": "Studying",
+      "passed": "Passed",
+      "failed": "Did not pass"
+    },
+    "body": "Short review (10–300 characters)",
+    "bodyCount": "{n} / {max}",
+    "nickname": "Display name",
+    "nicknameAuto": "Posted under your account display name.",
+    "captcha": "Human check",
+    "submit": "Post review",
+    "flag": "Report",
+    "flagged": "Reported",
+    "flagFailed": "Report failed. Tap to retry"
+  },
+  "tips": {
+    "title": "{name} study tips",
+    "byStaff": "Written by our team",
+    "studyOrder": "Study order",
+    "hardChapters": "Topics people often miss",
+    "examDay": "Test day tips"
   },
   "notes": {
     "title": "Review list",
@@ -428,7 +468,15 @@
     "nickname_rule": "Display name: 1–20 characters",
     "password_mismatch": "The passwords do not match.",
     "credentials_required": "Enter your username and password.",
-    "too_many": "Too many reports right now. Please try again shortly."
+    "too_many": "Too many reports right now. Please try again shortly.",
+    "review_rating": "Please choose a rating.",
+    "review_length": "Reviews must be 10–300 characters.",
+    "review_link": "Links are not allowed.",
+    "review_phone": "Phone numbers are not allowed.",
+    "review_banned": "Your review contains words that are not allowed.",
+    "review_limit": "You can post up to 3 reviews a day.",
+    "captcha_failed": "Please complete the human check, then try again.",
+    "review_closed": "Reviews will open soon."
   },
   "admin": {
     "title": "Admin",
@@ -455,7 +503,22 @@
     "done": "Mark as done",
     "resolved": "Done",
     "undo": "Mark as open",
-    "failed": "Could not save. Please try again."
+    "failed": "Could not save. Please try again.",
+    "tabs": "Admin menu",
+    "reviews": "Reviews",
+    "reviewCount": "{n} total · {hidden} hidden",
+    "reviewNone": "No reviews yet.",
+    "byCert": "Reviews per exam",
+    "certCount": "{id}: {n} ({hidden} hidden)",
+    "reviewList": "Latest reviews (up to {n})",
+    "reviewLine": "{rating} stars · {status} · {nickname}",
+    "flags": "Reported {n} times",
+    "hiddenByAdmin": "Hidden",
+    "hiddenByFlags": "Auto-hidden after reports",
+    "hide": "Hide",
+    "show": "Show again",
+    "delete": "Delete",
+    "deleteConfirm": "Delete this review? This cannot be undone."
   },
   "seo": {
     "subjectSeparator": ", ",

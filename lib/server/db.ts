@@ -65,6 +65,38 @@ const SCHEMA = [
      resolved_at INTEGER
    )`,
   `CREATE INDEX IF NOT EXISTS reports_created ON reports (created_at)`,
+  // 자격증 후기 (이용자가 직접 쓴 글만. 로그인 없이 쓸 수 있다).
+  // ip_hash 는 "같은 IP 하루 3개" 제한용으로, IP 원문이 아니라 날짜를 섞은 해시라 다음 날이면 이어지지 않는다.
+  // hidden: 0 보임 · 1 관리자가 숨김 · 2 신고 누적으로 자동 숨김
+  `CREATE TABLE IF NOT EXISTS reviews (
+     id TEXT PRIMARY KEY,
+     cert_id TEXT NOT NULL,
+     rating INTEGER NOT NULL,
+     body TEXT NOT NULL,
+     status TEXT NOT NULL,
+     nickname TEXT NOT NULL,
+     user_id TEXT,
+     ip_hash TEXT NOT NULL,
+     created_at INTEGER NOT NULL,
+     hidden INTEGER NOT NULL DEFAULT 0,
+     report_count INTEGER NOT NULL DEFAULT 0
+   )`,
+  `CREATE INDEX IF NOT EXISTS reviews_cert ON reviews (cert_id, created_at)`,
+  `CREATE INDEX IF NOT EXISTS reviews_ip ON reviews (ip_hash, created_at)`,
+  // 후기 신고 (같은 사람이 같은 후기를 여러 번 신고해도 1번으로 센다. 해시는 후기마다 달라 서로 이어지지 않는다)
+  `CREATE TABLE IF NOT EXISTS review_flags (
+     review_id TEXT NOT NULL,
+     ip_hash TEXT NOT NULL,
+     created_at INTEGER NOT NULL,
+     PRIMARY KEY (review_id, ip_hash)
+   )`,
+  // 자격증별 주간 풀이 횟수 (횟수만 센다. 누가 풀었는지는 저장하지 않는다)
+  `CREATE TABLE IF NOT EXISTS quiz_activity (
+     cert_id TEXT NOT NULL,
+     week_start INTEGER NOT NULL,
+     count INTEGER NOT NULL,
+     PRIMARY KEY (cert_id, week_start)
+   )`,
 ];
 
 /** 나중에 추가한 칸. 이미 있으면 오류가 나므로 하나씩 실행하고 그 오류는 넘어간다 */
