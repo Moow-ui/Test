@@ -8,6 +8,7 @@
 
 | 회차 | 날짜 | 추가된 자격증 | 검증(작성/탈락) | 누적 한국 | 누적 미국 | 누적 합계 | 목표 50 대비 | 비고 |
 |---|---|---|---|---|---|---|---|---|
+| 1 | 2026-10-02 (금) | KR driver-license-written · US dmv-permit-california | 160/0 | 1 | 1 | 2 | 4% | 배포 확인 못 함(실행 환경에서 exampasso.com 접속 차단) |
 
 ## 상태
 
@@ -15,6 +16,7 @@
 - 재시도 대기: 없음
 - 건너뜀: 없음
 - 이어서 할 작업: 없음
+- 회장 확인 필요: 루틴 실행 환경의 네트워크 정책이 exampasso.com 을 막아 배포 확인(8번)을 하지 못함. /ko/cert/driver-license-written, /en/cert/dmv-permit-california 가 열리는지 확인 필요 (허용 도메인에 exampasso.com 을 추가하면 다음 회차부터 자동 확인)
 
 ## 주간 요약
 
