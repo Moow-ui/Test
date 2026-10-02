@@ -71,7 +71,8 @@ export function QuickStart({ certs, featuredId }: { certs: CertListItem[]; featu
         </Link>
       </div>
       <p className="mt-2 text-[0.9rem] text-ink-sub">
-        {fmt(m.home.quickNote, { level: m.levels[lastLevel], n: DEFAULT_QUIZ_COUNT })}
+        {fmt(m.home.quickNote, { level: m.levels[lastLevel], n: DEFAULT_QUIZ_COUNT })}{" "}
+        <span className="whitespace-nowrap text-[0.7rem]">· {m.home.quickBasis}</span>
       </p>
 
       {others.length > 0 && (
