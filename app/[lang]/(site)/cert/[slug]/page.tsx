@@ -6,6 +6,7 @@ import { Fold } from "@/components/Fold";
 import { JsonLd } from "@/components/JsonLd";
 import { AnalysisPanel } from "@/components/cert/AnalysisPanel";
 import { CertBoxes } from "@/components/cert/CertBoxes";
+import { ANALYSIS_ANCHOR } from "@/components/cert/anchors";
 import { IssuerNotice } from "@/components/cert/IssuerNotice";
 import { RelatedCerts } from "@/components/cert/RelatedCerts";
 import { StudyTips } from "@/components/cert/StudyTips";
@@ -99,6 +100,7 @@ export default async function CertPage({ params }: Props) {
               }
             : null
         }
+        showConcepts={cert.ready && !!examInfo}
       />
 
       {!cert.ready && (
@@ -150,7 +152,7 @@ export default async function CertPage({ params }: Props) {
             </dl>
           </Fold>
 
-          <Fold title={m.cert.analysis}>
+          <Fold id={ANALYSIS_ANCHOR} title={m.cert.analysis}>
             <AnalysisPanel certId={cert.id} subjects={cert.subjects} linkChapters={cert.ready} />
           </Fold>
         </div>

@@ -282,6 +282,7 @@ export function QuizRunner({ cert }: { cert: QuizCert }) {
       onGoTo={(i) => saveSession({ ...session, currentIndex: i })}
       onSubmit={submit}
       metaOf={metaOf}
+      chapterNotes={{ certId: cert.id, subjects: cert.subjects }}
     />
   );
 }

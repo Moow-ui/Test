@@ -5,6 +5,7 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Stars } from "@/components/Stars";
 import { StaticQuestion } from "@/components/StaticQuestion";
 import { IssuerNotice } from "@/components/cert/IssuerNotice";
+import { ANALYSIS_ANCHOR } from "@/components/cert/anchors";
 import { getCertificationIn, getQuestions } from "@/lib/data";
 import { fmt, getMessages, isLocale, localeCountry, localePath } from "@/lib/i18n";
 import { pickChapterRepresentatives } from "@/lib/representative";
@@ -63,6 +64,9 @@ export default async function ChapterPage({ params }: Props) {
   const next = allChapters[position + 1];
   const quizCount = Math.min(5, inChapter.length);
   const certPath = mainMeta.path;
+  // 핵심정리 작성 주체: 운영진 작성 / AI 작성 · 운영진 검수 / AI 작성 · 운영진 검수 전
+  const notesBy =
+    cert.notes.by === "staff" ? m.chapter.byStaff : cert.notes.reviewedAt ? m.chapter.byAiReviewed : m.chapter.byAi;
 
   return (
     <article className="mx-auto max-w-3xl space-y-6">
@@ -76,7 +80,10 @@ export default async function ChapterPage({ params }: Props) {
       />
 
       <header className="space-y-3">
-        <p className="font-bold text-ink-sub">{fmt(m.chapter.eyebrow, { cert: cert.name, subject: subject.name })}</p>
+        <div className="flex flex-wrap items-center justify-between gap-2">
+          <p className="font-bold text-ink-sub">{fmt(m.chapter.eyebrow, { cert: cert.name, subject: subject.name })}</p>
+          <span className="rounded border border-line px-2 py-0.5 text-[0.85rem] font-bold text-ink-sub">{notesBy}</span>
+        </div>
         <h1 className="text-2xl font-extrabold leading-snug sm:text-3xl">{meta.h1}</h1>
         <dl className="card grid gap-x-4 gap-y-2 p-3 sm:grid-cols-[7rem_1fr] sm:p-4">
           <dt className="font-bold text-ink-sub">{m.common.importance}</dt>
@@ -170,7 +177,7 @@ export default async function ChapterPage({ params }: Props) {
             ))}
         </ul>
         <p>
-          <Link href={certPath} className="link">
+          <Link href={`${certPath}#${ANALYSIS_ANCHOR}`} className="link">
             {fmt(m.chapter.back, { cert: cert.name })}
           </Link>
         </p>

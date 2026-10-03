@@ -45,6 +45,7 @@ interface LoadedCert {
   meta: CertMeta;
   /** chapters.json 이 없으면 null ("준비 중") */
   subjects: Subject[] | null;
+  notes: Certification["notes"];
 }
 
 function loadCerts(): Promise<LoadedCert[]> {
@@ -53,8 +54,13 @@ function loadCerts(): Promise<LoadedCert[]> {
     for (const country of COUNTRIES) {
       for (const slug of await store.list(countryDir(country))) {
         const meta = certMetaSchema.parse(await store.readJson(metaFile(country, slug)));
-        const chapters = await store.readJson(chaptersFile(country, slug));
-        result.push({ meta, subjects: chapters ? chaptersFileSchema.parse(chapters).subjects : null });
+        const raw = await store.readJson(chaptersFile(country, slug));
+        const chapters = raw ? chaptersFileSchema.parse(raw) : null;
+        result.push({
+          meta,
+          subjects: chapters?.subjects ?? null,
+          notes: { by: chapters?.notesBy ?? "ai", reviewedAt: chapters?.notesReviewedAt ?? null },
+        });
       }
     }
     return result;
@@ -157,6 +163,7 @@ export async function getCertification(id: string): Promise<Certification | null
     subjects: hasDetail ? (cert.subjects ?? []) : [],
     content: hasDetail ? (cert.meta.content ?? null) : null,
     studyTips: cert.meta.studyTips ?? null,
+    notes: cert.notes,
     updatedAt: hasDetail ? (cert.meta.updatedAt ?? null) : null,
     ready: item.ready,
   };

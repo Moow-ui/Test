@@ -205,8 +205,24 @@ export const certMetaSchema = certSummarySchema.extend({
   sources: z.array(sourceRefSchema).optional(),
 });
 
+/**
+ * 단원 핵심정리(summary·keyPoints)를 쓴 주체. 단원 페이지 위에 배지로 보여 준다.
+ * ai = AI 가 쓴 글, staff = 운영진이 직접 쓴 글.
+ */
+export const NOTES_AUTHORS = ["ai", "staff"] as const;
+
 /** data/certs/{country}/{slug}/chapters.json */
 export const chaptersFileSchema = z.object({
+  /** 이 파일의 단원 핵심정리를 쓴 주체. 적지 않으면 ai (자격증 추가 루틴이 AI 로 쓴다) */
+  notesBy: z.enum(NOTES_AUTHORS).default("ai"),
+  /**
+   * 운영진(사람)이 AI 정리글을 직접 검수한 날짜 YYYY-MM-DD.
+   * 있으면 "AI 작성 · 운영진 검수", 없으면 "AI 작성 · 운영진 검수 전". 실제로 검수한 뒤에만 적는다.
+   */
+  notesReviewedAt: z
+    .string()
+    .regex(/^\d{4}-\d{2}-\d{2}$/)
+    .optional(),
   subjects: z.array(subjectSchema).min(1),
 });
 

@@ -12,6 +12,7 @@
  */
 import fs from "node:fs";
 import path from "node:path";
+import { CIRCLED as CIRCLED_NUMBERS } from "../lib/format";
 import { LOCALES, brandName, getMessages, isLocale, type Locale } from "../lib/i18n";
 
 const APP_DIR = path.join(process.cwd(), ".next", "server", "app");
@@ -163,7 +164,7 @@ for (const locale of LOCALES) {
 }
 
 // 5) 기출·단원 페이지에 문제·정답·해설이 HTML 로 들어 있는가
-const CIRCLED = "[①②③④]";
+const CIRCLED = `[${CIRCLED_NUMBERS.join("")}]`;
 const contentPages = indexable.filter((p) => /^\/[^/]+\/cert\/[^/]+\/[^/]+$/.test(p.route));
 for (const p of contentPages) {
   if (!p.locale) continue;

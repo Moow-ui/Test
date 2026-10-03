@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { Markdown } from "@/components/Markdown";
+import { ChapterNotesLink } from "@/components/quiz/ChapterNotesLink";
 import { QuestionBadges } from "@/components/quiz/QuestionBadges";
 import { useQuestions } from "@/lib/data/client";
 import { circled } from "@/lib/format";
@@ -138,6 +139,7 @@ export function NotesView({ cert }: { cert: { id: string; name: string; subjects
                 <div className="mt-2 text-[0.95rem]">
                   <Markdown text={q.explanation} />
                 </div>
+                <ChapterNotesLink certId={cert.id} subjects={cert.subjects} question={q} className="no-print mt-2" />
                 {/* 나만의 오답노트: 내가 직접 적는 메모 (칸을 벗어나면 저장된다) */}
                 <div className="mt-3">
                   <label htmlFor={`memo-${q.id}`} className="no-print block text-[0.9rem] font-bold">

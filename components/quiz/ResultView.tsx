@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import type { ReactNode } from "react";
 import { AdSlot } from "@/components/AdSlot";
 import { FoldMark } from "@/components/Fold";
+import { ChapterNotesLink } from "@/components/quiz/ChapterNotesLink";
 import { Markdown } from "@/components/Markdown";
 import { REVIEWS_ANCHOR } from "@/components/reviews/ReviewSection";
 import { visibleChoices } from "@/lib/choices";
@@ -249,6 +250,7 @@ export function ResultView({
                     <div className="rounded-lg border border-line-soft p-3">
                       <Markdown text={q.explanation} />
                     </div>
+                    {!g.correct && <ChapterNotesLink certId={cert.id} subjects={cert.subjects} question={q} />}
                   </div>
                 </details>
               </li>

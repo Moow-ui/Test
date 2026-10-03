@@ -1,9 +1,10 @@
 import { fmt, type Messages } from "./i18n";
 import type { Question } from "./types";
 
-export const CIRCLED = ["①", "②", "③", "④"] as const;
+/** 선지 번호 표시. 선지는 최대 MAX_CHOICES(6)개까지 있을 수 있다 (lib/schemas.ts) */
+export const CIRCLED = ["①", "②", "③", "④", "⑤", "⑥"] as const;
 
-/** 정답 번호(1~4) → ①~④ */
+/** 선지 번호(1~6) → ①~⑥ */
 export function circled(n: number): string {
   return CIRCLED[n - 1] ?? String(n);
 }

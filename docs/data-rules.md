@@ -53,8 +53,12 @@ public/data/                      빌드 때 자동으로 만든다 (git 에 올
 ## 3. chapters.json
 
 ```json
-{ "subjects": [ { "id": "...", "name": "...", "questionCount": 20, "chapters": [ ... ] } ] }
+{ "notesBy": "ai", "subjects": [ { "id": "...", "name": "...", "questionCount": 20, "chapters": [ ... ] } ] }
 ```
+
+- **notesBy**: 단원 핵심정리(`summary`·`keyPoints`)를 쓴 주체. `ai`(AI 작성) 또는 `staff`(운영진 작성). 적지 않으면 `ai`.
+  - **notesReviewedAt**(선택, YYYY-MM-DD): 운영진(사람)이 AI 정리글을 직접 검수한 날짜. 실제로 검수한 뒤에만 적는다.
+  - 단원 페이지 위 배지: `staff` → "운영진 작성" / `ai` + 검수 날짜 → "AI 작성 · 운영진 검수" / `ai` → "AI 작성 · 운영진 검수 전".
 
 - **Subject**: `id`, `name`, `questionCount`(실제 시험의 과목 문항 수), `chapters[]`
   - 과목 `questionCount` 의 합 = `examInfo.totalQuestions`

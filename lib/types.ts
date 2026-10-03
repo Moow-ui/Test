@@ -13,6 +13,7 @@ import type {
   CERT_TYPES,
   COUNTRIES,
   LEVELS,
+  NOTES_AUTHORS,
   SOURCES,
 } from "./schemas";
 
@@ -20,6 +21,7 @@ export type CertType = (typeof CERT_TYPES)[number];
 export type Country = (typeof COUNTRIES)[number];
 export type Level = (typeof LEVELS)[number];
 export type Source = (typeof SOURCES)[number];
+export type NotesAuthor = (typeof NOTES_AUTHORS)[number];
 
 export type Chapter = z.infer<typeof chapterSchema>;
 export type Subject = z.infer<typeof subjectSchema>;
@@ -42,6 +44,8 @@ export interface Certification extends CertSummary {
   content: CertContent | null;
   /** 운영진 학습 팁 (없으면 상자를 그리지 않는다) */
   studyTips: StudyTips | null;
+  /** 단원 핵심정리 작성 주체와 운영진 검수 날짜 (chapters.json 의 notesBy·notesReviewedAt) */
+  notes: { by: NotesAuthor; reviewedAt: string | null };
   updatedAt: string | null;
   /** 과목·단원 데이터와 문제가 모두 있어 풀이가 가능한가 */
   ready: boolean;

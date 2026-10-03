@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { Markdown } from "@/components/Markdown";
+import { ChapterNotesLink } from "@/components/quiz/ChapterNotesLink";
 import { isReviewed } from "@/components/quiz/QuestionBadges";
 import { ReportForm } from "@/components/quiz/ReportForm";
 import { Stars } from "@/components/Stars";
@@ -11,7 +12,7 @@ import { circled, formatClock, sourceLabel } from "@/lib/format";
 import { fmt } from "@/lib/i18n";
 import { calcStars, getPassContribution } from "@/lib/scoring";
 import { EXAM_ZOOMS, STORAGE_KEYS, setExamZoom, type ExamZoom } from "@/lib/storage";
-import type { Question, QuizLevel } from "@/lib/types";
+import type { Question, QuizLevel, Subject } from "@/lib/types";
 import { useMessages } from "@/lib/use-messages";
 import { useStored } from "@/lib/use-storage";
 
@@ -42,6 +43,8 @@ export interface ExamScreenProps {
   onSubmit: () => void;
   onPause?: () => void;
   metaOf: (question: Question) => { location: string; chapterImportance: number };
+  /** 틀린 문제의 해설 아래에 "이 단원 핵심정리 보기" 링크를 걸 때 넘긴다 (연습 풀이) */
+  chapterNotes?: { certId: string; subjects: Subject[] };
 }
 
 /**
@@ -106,6 +109,7 @@ export function ExamScreen({
   onSubmit,
   onPause,
   metaOf,
+  chapterNotes,
 }: ExamScreenProps) {
   const { m: all } = useMessages();
   const m = all.exam;
@@ -315,6 +319,7 @@ export function ExamScreen({
               answerNo={shown.indexOf(question.answer) + 1}
               chosen={chosen}
               meta={metaOf(question)}
+              chapterNotes={chapterNotes}
             />
           )}
         </section>
@@ -496,12 +501,14 @@ function AnswerResult({
   answerNo,
   chosen,
   meta,
+  chapterNotes,
 }: {
   question: Question;
   /** 화면에 보이는 정답 번호 (선지를 줄였으면 원래 번호와 다르다) */
   answerNo: number;
   chosen: number | undefined;
   meta: { location: string; chapterImportance: number };
+  chapterNotes?: { certId: string; subjects: Subject[] };
 }) {
   const { m: all } = useMessages();
   const m = all.exam;
@@ -561,6 +568,14 @@ function AnswerResult({
           </button>
           {showReport && <ReportForm question={question} onClose={() => setShowReport(false)} />}
         </div>
+      )}
+      {!correct && chapterNotes && (
+        <ChapterNotesLink
+          certId={chapterNotes.certId}
+          subjects={chapterNotes.subjects}
+          question={question}
+          className="mt-2"
+        />
       )}
     </div>
   );

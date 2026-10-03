@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { ConceptsLink } from "@/components/cert/ConceptsLink";
 import { fmt, localePath } from "@/lib/i18n";
 import { DEFAULT_QUIZ_COUNT, QUIZ_COUNTS } from "@/lib/quiz-engine";
 import {
@@ -35,13 +36,15 @@ export interface CertBoxesProps {
   choiceCounts: Record<QuizLevel, number>;
   /** 실전 문제풀이 정보 (실제 시험과 같은 문항 수·시간·선지 수). 문제가 모자라면 null */
   cbt: { questionCount: number; minutes: number; choiceCount: number } | null;
+  /** 실전 문제풀이 아래에 "단원별 핵심 개념 먼저 보기" 한 줄 링크를 둘까 (단원 페이지가 있는 자격증만) */
+  showConcepts?: boolean;
 }
 
 /**
  * 자격증 화면에서 가장 먼저 보이는 큰 박스: 초급 / 중급 / 고급, 그 아래 실전 문제풀이.
  * 난이도 박스를 누르면 바로 아래에 범위·문제 수·[시험 시작하기] 가 펼쳐진다.
  */
-export function CertBoxes({ certId, ready, subjects, counts, choiceCounts, cbt }: CertBoxesProps) {
+export function CertBoxes({ certId, ready, subjects, counts, choiceCounts, cbt, showConcepts = false }: CertBoxesProps) {
   const { locale, m } = useMessages();
   const [level, setLevel] = useState<QuizLevel | null>(null);
   const [scope, setScope] = useState("all");
@@ -173,6 +176,9 @@ export function CertBoxes({ certId, ready, subjects, counts, choiceCounts, cbt }
           <span className="font-bold">{m.cert.cbtNotReady}</span>
         </div>
       )}
+
+      {/* 단원 핵심정리로 가는 얇은 한 줄 (문제 박스보다 눈에 덜 띄게) */}
+      {showConcepts && <ConceptsLink />}
 
       {/* 풀던 문제가 남아 있을 때만 보인다 */}
       {isInProgress(session) && (
