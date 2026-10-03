@@ -3,7 +3,8 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   // Cloudflare 대시보드의 Worker 이름과 같아야 한다
   "name": "test",
-  "main": ".open-next/worker.js",
+  // 사이트는 OpenNext 가 만든 .open-next/worker.js 가 처리하고, custom-worker.ts 는 정기 작업(IndexNow)만 덧붙인다
+  "main": "custom-worker.ts",
   "compatibility_date": "2026-09-01",
   "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
   "assets": {
@@ -27,6 +28,10 @@
   // Cloudflare 대시보드(Worker → 설정 → 변수 및 비밀)에 넣는다. 배포해도 그 값이 지워지지 않게 한다.
   // 두 값이 없으면 /admin 은 아무도 열 수 없다 (lib/server/access.ts).
   "keep_vars": true,
+  // 정기 작업: 매시 정각(UTC)에 sitemap 이 바뀌었는지 보고 바뀐 주소만 IndexNow 로 알린다 (custom-worker.ts)
+  "triggers": {
+    "crons": ["0 * * * *"]
+  },
   "observability": {
     "enabled": true
   }

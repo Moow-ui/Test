@@ -39,6 +39,16 @@
 - `wrangler.jsonc` 에는 build 명령을 두지 않는다 (두 번 빌드하게 된다). 내 컴퓨터에서 직접 올릴 때는 `npm run deploy`.
 - 개발 서버가 켜져 있으면 `.open-next` 폴더를 잡고 있어 배포용 빌드가 실패한다. 끄고 실행한다.
 - 회원 DB: D1 (`wrangler.jsonc` 의 `DB` 바인딩, `database_id` 없이 자동 생성). 표는 `lib/server/db.ts` 가 처음 쓸 때 만든다. `npm run dev` 에서는 `.wrangler` 폴더의 로컬 DB.
+- Worker 시작 파일은 `custom-worker.ts` 다 (`wrangler.jsonc` 의 `main`). 사이트는 `.open-next/worker.js` 가 그대로 처리하고, 여기서는 정기 작업만 덧붙인다.
+
+### IndexNow (Bing·네이버 등에 새·바뀐 페이지 알리기)
+
+- 키와 제출 주소는 `config/indexnow.ts` 한 곳. 키 파일 `public/{키}.txt` 는 빌드 때 `scripts/build-indexnow-key.ts` 가 만든다 (git 에 올리지 않는다).
+- 매시 정각 정기 작업(`wrangler.jsonc` 의 `triggers.crons`)이 sitemap 을 직전 목록(D1 `indexnow_state`)과 비교해,
+  새로 생기거나 `lastmod` 가 바뀐 주소만 `api.indexnow.org` 와 네이버(`searchadvisor.naver.com/indexnow`)에 낸다. 첫 실행 때만 전체. 바뀐 게 없으면 내지 않는다.
+- 배포와 따로 돌므로 실패해도 배포·루틴은 실패하지 않는다. 실패하면 다음 회차에 다시 내고, 같은 변경분이 3번 실패하면 포기한다.
+- 기록은 D1 `indexnow_log`. 확인 주소 `/api/indexnow` (최근 20건, 날짜·주소 수·응답 코드만, 5분 캐시, noindex + robots.txt 차단).
+- 자격증을 추가할 때 따로 할 일은 없다 (sitemap 에 들어가면 다음 정각에 자동 제출). 구글은 IndexNow 를 쓰지 않는다.
 
 ## 2. 다국어 (나라별 사이트)
 

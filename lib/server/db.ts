@@ -97,6 +97,19 @@ const SCHEMA = [
      count INTEGER NOT NULL,
      PRIMARY KEY (cert_id, week_start)
    )`,
+  // IndexNow: 직전에 제출한 sitemap 목록(주소 → lastmod, JSON 한 덩어리)과 재시도 횟수 (lib/server/indexnow.ts)
+  `CREATE TABLE IF NOT EXISTS indexnow_state (
+     key TEXT PRIMARY KEY,
+     value TEXT NOT NULL
+   )`,
+  // IndexNow 제출 기록 (날짜·주소 수·응답 코드). /api/indexnow 에서 최근 20건을 본다
+  `CREATE TABLE IF NOT EXISTS indexnow_log (
+     id INTEGER PRIMARY KEY AUTOINCREMENT,
+     created_at INTEGER NOT NULL,
+     url_count INTEGER NOT NULL,
+     results TEXT NOT NULL,
+     note TEXT NOT NULL
+   )`,
 ];
 
 /** 나중에 추가한 칸. 이미 있으면 오류가 나므로 하나씩 실행하고 그 오류는 넘어간다 */
@@ -124,6 +137,11 @@ export async function getDb(): Promise<D1Like | null> {
     return null;
   }
   if (!db) return null;
+  return prepareDb(db);
+}
+
+/** 표가 없으면 만든 뒤 DB 를 돌려준다. 정기 작업(custom-worker.ts)처럼 env.DB 를 직접 받은 곳에서도 쓴다 */
+export async function prepareDb(db: D1Like): Promise<D1Like> {
   schemaReady ??= ensureSchema(db).catch((error) => {
     schemaReady = null;
     throw error;

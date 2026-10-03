@@ -40,6 +40,9 @@ yarn-error.log*
 # 빌드 때 NEXT_PUBLIC_ADSENSE_ID 로 만드는 파일 (scripts/build-ads-txt.ts)
 /public/ads.txt
 
+# 빌드 때 config/indexnow.ts 의 키로 만드는 IndexNow 키 파일 (scripts/build-indexnow-key.ts)
+/public/*.txt
+
 # vercel
 .vercel
 
