@@ -1,0 +1,883 @@
+[
+  {
+    "id": "korean-cuisine-craftsman-food-hygiene-0001",
+    "certId": "korean-cuisine-craftsman",
+    "subjectId": "written",
+    "chapterId": "food-hygiene",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "황색포도상구균 식중독의 원인 독소로, 열에 강해 끓여도 잘 없어지지 않는 것은?",
+    "choices": [
+      "솔라닌",
+      "뉴로톡신",
+      "엔테로톡신",
+      "테트로도톡신"
+    ],
+    "answer": 3,
+    "oneLineConcept": "황색포도상구균 독소 = 엔테로톡신(열에 강함)",
+    "explanation": "황색포도상구균은 손의 상처나 고름(화농)에 많은 균입니다. 이 균이 음식 속에서 자라며 **엔테로톡신**(장에 작용하는 독소)을 만듭니다.\n\n균은 열에 죽어도 이 독소는 **열에 강해 끓여도 잘 없어지지 않습니다**. 그래서 손에 상처가 있는 사람은 음식을 만지지 않는 것이 가장 중요한 예방법입니다.\n\n**틀린 선지**\n- 뉴로톡신: 클로스트리디움 보툴리눔균이 만드는 신경독소입니다.\n- 테트로도톡신: 복어의 독입니다.\n- 솔라닌: 감자 싹과 초록색으로 변한 껍질에 있는 독입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-04",
+    "tags": [
+      "세균성 식중독",
+      "독소형"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "korean-cuisine-craftsman-food-hygiene-0002",
+    "certId": "korean-cuisine-craftsman",
+    "subjectId": "written",
+    "chapterId": "food-hygiene",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "복어의 알(난소)과 간 등에 많이 들어 있는 독성분은?",
+    "choices": [
+      "무스카린",
+      "시큐톡신",
+      "삭시톡신",
+      "테트로도톡신"
+    ],
+    "answer": 4,
+    "oneLineConcept": "복어 독 = 테트로도톡신",
+    "explanation": "복어 독은 **테트로도톡신**입니다. 알(난소)과 간에 특히 많고, 열에 강해 끓여도 없어지지 않습니다. 그래서 복어는 자격을 갖춘 조리사가 독이 있는 부위를 깨끗이 없앤 뒤 조리해야 합니다.\n\n**틀린 선지**\n- 무스카린: 독버섯의 독입니다.\n- 시큐톡신: 독미나리의 독입니다.\n- 삭시톡신: 섭조개(홍합류)·대합 같은 조개류의 마비성 독입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-04",
+    "tags": [
+      "자연독",
+      "동물성 자연독"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "korean-cuisine-craftsman-food-hygiene-0003",
+    "certId": "korean-cuisine-craftsman",
+    "subjectId": "written",
+    "chapterId": "food-hygiene",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "감자의 싹이 난 부분과 초록색으로 변한 껍질에 많은 독성분은?",
+    "choices": [
+      "베네루핀",
+      "아미그달린",
+      "솔라닌",
+      "고시폴"
+    ],
+    "answer": 3,
+    "oneLineConcept": "감자 싹·초록 껍질의 독 = 솔라닌",
+    "explanation": "감자의 **싹이 난 부분과 껍질이 초록색으로 변한 부분**에 **솔라닌**이 많습니다. 조리할 때 싹과 초록 부분을 넉넉히 도려내면 막을 수 있습니다.\n\n**틀린 선지**\n- 고시폴: 목화씨(면실유)의 독입니다.\n- 아미그달린: 덜 익은 매실(청매)·살구씨 등에 있는 독입니다.\n- 베네루핀: 모시조개·바지락·굴 같은 조개류의 독입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-04",
+    "tags": [
+      "자연독",
+      "식물성 자연독"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "korean-cuisine-craftsman-food-hygiene-0004",
+    "certId": "korean-cuisine-craftsman",
+    "subjectId": "written",
+    "chapterId": "food-hygiene",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "다음 중 독소형 세균성 식중독의 원인균은?",
+    "choices": [
+      "장염비브리오균",
+      "클로스트리디움 보툴리눔균",
+      "캄필로박터균",
+      "살모넬라균"
+    ],
+    "answer": 2,
+    "oneLineConcept": "독소형: 황색포도상구균·보툴리눔균",
+    "explanation": "세균성 식중독은 두 가지로 나뉩니다.\n\n- **감염형**: 균 자체가 몸속에서 늘어나 병을 일으킴 (살모넬라, 장염비브리오, 캄필로박터 등)\n- **독소형**: 균이 음식 속에서 만든 독소를 먹어서 생김 (황색포도상구균, 클로스트리디움 보툴리눔 등)\n\n보툴리눔균은 통조림·진공포장처럼 산소가 없는 곳에서 자라며 신경을 마비시키는 독소를 만듭니다.\n\n**틀린 선지**\n- 살모넬라균: 달걀·닭고기 등으로 옮는 감염형 식중독균입니다.\n- 장염비브리오균: 어패류를 날로 먹을 때 생기는 감염형 식중독균입니다.\n- 캄필로박터균: 닭고기 등으로 옮는 감염형 식중독균입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-04",
+    "tags": [
+      "세균성 식중독",
+      "독소형"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "korean-cuisine-craftsman-food-hygiene-0005",
+    "certId": "korean-cuisine-craftsman",
+    "subjectId": "written",
+    "chapterId": "food-hygiene",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "소금기가 있는 바닷물에서 잘 자라며, 여름철 어패류를 날로 먹을 때 주로 생기는 식중독의 원인균은?",
+    "choices": [
+      "황색포도상구균",
+      "장염비브리오균",
+      "바실러스 세레우스균",
+      "클로스트리디움 퍼프린젠스균"
+    ],
+    "answer": 2,
+    "oneLineConcept": "장염비브리오: 소금기를 좋아하는 바닷물 세균",
+    "explanation": "장염비브리오균은 **소금기(3% 정도)를 좋아하는 바닷물 세균**입니다. 여름철 어패류를 날로 먹을 때 주로 생깁니다.\n\n민물(수돗물)에 약하므로 어패류는 **수돗물로 깨끗이 씻고**, 칼·도마를 따로 쓰고, 익혀 먹으면 예방할 수 있습니다.\n\n**틀린 선지**\n- 황색포도상구균: 사람 손의 상처·고름에서 옮는 독소형 균입니다.\n- 바실러스 세레우스균: 흙에 많은 균으로, 밥·볶음밥 같은 곡류 음식에서 잘 생깁니다.\n- 클로스트리디움 퍼프린젠스균: 많은 양의 고기 요리를 천천히 식힐 때 잘 생기는 균(웰치균)입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-04",
+    "tags": [
+      "세균성 식중독",
+      "감염형"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "korean-cuisine-craftsman-food-hygiene-0006",
+    "certId": "korean-cuisine-craftsman",
+    "subjectId": "written",
+    "chapterId": "food-hygiene",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "조리하기 전 손 씻기 방법으로 가장 알맞은 것은?",
+    "choices": [
+      "손바닥만 비누로 문지른 뒤 물로 헹군다",
+      "물로만 가볍게 헹군 뒤 앞치마에 닦는다",
+      "비누로 30초 이상 손 구석구석을 문질러 씻는다",
+      "장갑을 낄 것이므로 손은 씻지 않는다"
+    ],
+    "answer": 3,
+    "oneLineConcept": "손 씻기: 비누로 30초 이상, 구석구석",
+    "explanation": "손에는 눈에 보이지 않는 세균이 많습니다. **비누로 30초 이상** 손바닥·손등·손가락 사이·손톱 밑까지 문지르고 흐르는 물로 헹군 뒤, 일회용 종이타월 등으로 물기를 닦습니다.\n\n**틀린 선지**\n- 손바닥만 비누로 문지른 뒤 물로 헹군다: 손등·손가락 사이·손톱 밑의 세균이 그대로 남습니다.\n- 물로만 가볍게 헹군 뒤 앞치마에 닦는다: 물로만 헹구면 세균이 잘 없어지지 않고, 앞치마에 닦으면 다시 더러워집니다.\n- 장갑을 낄 것이므로 손은 씻지 않는다: 장갑을 끼기 전에도 손을 씻어야 합니다. 장갑을 벗고 낄 때 손의 세균이 옮습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-04",
+    "tags": [
+      "개인위생",
+      "손 씻기"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "korean-cuisine-craftsman-food-hygiene-0007",
+    "certId": "korean-cuisine-craftsman",
+    "subjectId": "written",
+    "chapterId": "food-hygiene",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "세균성 식중독과 비교한 경구감염병의 특징으로 옳은 것은?",
+    "choices": [
+      "사람 사이의 2차 감염이 거의 없다",
+      "앓고 난 뒤 면역이 생기는 경우가 없다",
+      "적은 양의 균으로도 병이 생긴다",
+      "잠복기가 일반적으로 더 짧다"
+    ],
+    "answer": 3,
+    "oneLineConcept": "경구감염병: 적은 균량, 긴 잠복기, 2차 감염 있음",
+    "explanation": "경구감염병(입으로 들어와 옮는 전염병: 장티푸스, 콜레라, 세균성 이질 등)은 세균성 식중독과 이렇게 다릅니다.\n\n- **적은 양의 균**으로도 병이 생김 (식중독은 많은 양의 균이 필요)\n- 잠복기(균이 들어와 증상이 나타나기까지의 기간)가 **긺**\n- 사람에게서 사람으로 **2차 감염**이 있음\n- 앓고 나면 **면역**이 생기는 경우가 많음\n\n**틀린 선지**\n- 잠복기가 일반적으로 더 짧다: 잠복기가 짧은 쪽은 세균성 식중독입니다. 경구감염병은 잠복기가 깁니다.\n- 사람 사이의 2차 감염이 거의 없다: 경구감염병은 사람에게서 사람으로 옮는 2차 감염이 있습니다.\n- 앓고 난 뒤 면역이 생기는 경우가 없다: 경구감염병은 앓고 나면 면역이 생기는 경우가 많습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-04",
+    "tags": [
+      "경구감염병",
+      "공중보건"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "korean-cuisine-craftsman-food-hygiene-0008",
+    "certId": "korean-cuisine-craftsman",
+    "subjectId": "written",
+    "chapterId": "food-hygiene",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "식품이 미생물 때문에 상하는 것을 막아 보존 기간을 늘리는 데 쓰는 보존료는?",
+    "choices": [
+      "아스파탐",
+      "소브산칼륨",
+      "카라기난",
+      "글루탐산나트륨"
+    ],
+    "answer": 2,
+    "oneLineConcept": "보존료: 소브산·안식향산·프로피온산",
+    "explanation": "보존료(방부제)는 미생물이 자라는 것을 억제해 식품이 상하는 것을 늦춥니다. **소브산(소르빈산)과 소브산칼륨**, 안식향산나트륨, 프로피온산 등이 대표적입니다.\n\n**틀린 선지**\n- 카라기난: 해조류에서 얻는 증점제(음식을 걸쭉하게 만드는 물질)입니다.\n- 글루탐산나트륨: 감칠맛을 내는 조미료(MSG)입니다.\n- 아스파탐: 단맛을 내는 감미료입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-04",
+    "tags": [
+      "식품첨가물",
+      "보존료"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "korean-cuisine-craftsman-food-hygiene-0009",
+    "certId": "korean-cuisine-craftsman",
+    "subjectId": "written",
+    "chapterId": "food-hygiene",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "식용유의 산패를 막기 위해 쓰는 산화방지제는?",
+    "choices": [
+      "프로피온산칼슘",
+      "부틸히드록시아니솔(BHA)",
+      "과산화벤조일",
+      "안식향산나트륨"
+    ],
+    "answer": 2,
+    "oneLineConcept": "산화방지제: BHA·BHT·토코페롤",
+    "explanation": "산화방지제(항산화제)는 기름이 공기 중 산소와 만나 **산패**(기름이 상해 냄새가 나고 맛이 변함)하는 것을 늦춥니다. **BHA, BHT**, 토코페롤(비타민 E), 몰식자산프로필 등이 있습니다.\n\n**틀린 선지**\n- 안식향산나트륨: 간장·음료 등에서 미생물을 억제하는 보존료입니다.\n- 프로피온산칼슘: 빵·과자에 곰팡이가 피는 것을 막는 보존료입니다.\n- 과산화벤조일: 밀가루를 희게 하고 품질을 좋게 하는 밀가루 개량제입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-04",
+    "tags": [
+      "식품첨가물",
+      "산화방지제"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "korean-cuisine-craftsman-food-hygiene-0010",
+    "certId": "korean-cuisine-craftsman",
+    "subjectId": "written",
+    "chapterId": "food-hygiene",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "돼지고기를 덜 익혀 먹었을 때 감염될 수 있는 기생충은?",
+    "choices": [
+      "광절열두조충(긴촌충)",
+      "유구조충(갈고리촌충)",
+      "무구조충(민촌충)",
+      "간흡충(간디스토마)"
+    ],
+    "answer": 2,
+    "oneLineConcept": "돼지고기 → 유구조충, 소고기 → 무구조충",
+    "explanation": "고기로 옮는 기생충은 이렇게 짝지어 외웁니다.\n\n- **돼지고기 → 유구조충(갈고리촌충)**, 선모충\n- **소고기 → 무구조충(민촌충)**\n\n고기를 속까지 충분히 익혀 먹으면 예방할 수 있습니다.\n\n**틀린 선지**\n- 무구조충(민촌충): 소고기를 날로 먹을 때 감염되는 기생충입니다.\n- 광절열두조충(긴촌충): 송어·연어 같은 물고기를 날로 먹을 때 감염되는 기생충입니다.\n- 간흡충(간디스토마): 잉어·붕어 같은 민물고기를 날로 먹을 때 감염되는 기생충입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-04",
+    "tags": [
+      "기생충",
+      "육류"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "korean-cuisine-craftsman-food-hygiene-0011",
+    "certId": "korean-cuisine-craftsman",
+    "subjectId": "written",
+    "chapterId": "food-hygiene",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "간흡충(간디스토마)의 제2중간숙주는?",
+    "choices": [
+      "민물고기(잉어·붕어 등)",
+      "가재·게",
+      "다슬기",
+      "왜우렁이"
+    ],
+    "answer": 1,
+    "oneLineConcept": "간흡충: 왜우렁이 → 민물고기",
+    "explanation": "간흡충(간디스토마)은 중간숙주(기생충이 사람에게 오기 전에 거쳐 가는 동물)를 두 번 거칩니다.\n\n1. 제1중간숙주: 왜우렁이\n2. 제2중간숙주: **민물고기(잉어·붕어 등)**\n\n민물고기를 날로 먹지 않는 것이 가장 좋은 예방법입니다.\n\n**틀린 선지**\n- 왜우렁이: 간흡충의 제1중간숙주입니다.\n- 가재·게: 폐흡충(폐디스토마)의 제2중간숙주입니다.\n- 다슬기: 폐흡충(폐디스토마)의 제1중간숙주입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-04",
+    "tags": [
+      "기생충",
+      "어패류"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "korean-cuisine-craftsman-food-hygiene-0012",
+    "certId": "korean-cuisine-craftsman",
+    "subjectId": "written",
+    "chapterId": "food-hygiene",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "중간숙주 없이 오염된 채소 등을 통해 입으로 감염되는 기생충은?",
+    "choices": [
+      "폐흡충",
+      "회충",
+      "유극악구충",
+      "간흡충"
+    ],
+    "answer": 2,
+    "oneLineConcept": "회충: 중간숙주 없음, 채소로 감염",
+    "explanation": "**회충**은 중간숙주(기생충이 거쳐 가는 동물)가 없습니다. 분변에 섞여 나온 알이 채소에 묻어 있다가 입으로 들어와 감염됩니다. 채소는 흐르는 물에 여러 번 깨끗이 씻어 먹습니다.\n\n**틀린 선지**\n- 간흡충: 왜우렁이와 민물고기를 거쳐 감염됩니다.\n- 폐흡충: 다슬기와 가재·게를 거쳐 감염됩니다.\n- 유극악구충: 물벼룩과 가물치 같은 민물고기를 거쳐 감염됩니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-04",
+    "tags": [
+      "기생충",
+      "채소"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "korean-cuisine-craftsman-food-hygiene-0013",
+    "certId": "korean-cuisine-craftsman",
+    "subjectId": "written",
+    "chapterId": "food-hygiene",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "손 소독에 쓰는 역성비누(양성비누)의 올바른 사용법은?",
+    "choices": [
+      "독성과 냄새가 강해 식기에는 쓰지 않는다",
+      "단백질 같은 유기물이 많을수록 효과가 커진다",
+      "보통 비누로 먼저 씻어 헹군 뒤에 쓴다",
+      "보통 비누와 섞어 쓰면 효과가 커진다"
+    ],
+    "answer": 3,
+    "oneLineConcept": "역성비누: 보통 비누로 씻어 헹군 뒤 사용",
+    "explanation": "역성비누(양성비누)는 살균력이 강하고 냄새와 독성이 적어 **손·식기 소독**에 씁니다. 다만 보통 비누와 만나면 효과가 떨어지므로 **보통 비누로 먼저 씻어 깨끗이 헹군 다음** 역성비누를 씁니다.\n\n**틀린 선지**\n- 보통 비누와 섞어 쓰면 효과가 커진다: 보통 비누와 섞으면 살균 효과가 오히려 떨어집니다.\n- 단백질 같은 유기물이 많을수록 효과가 커진다: 유기물이 많으면 살균 효과가 떨어집니다.\n- 독성과 냄새가 강해 식기에는 쓰지 않는다: 독성과 냄새가 적어 식기 소독에도 씁니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-04",
+    "tags": [
+      "소독",
+      "역성비누"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "korean-cuisine-craftsman-food-hygiene-0014",
+    "certId": "korean-cuisine-craftsman",
+    "subjectId": "written",
+    "chapterId": "food-hygiene",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "여러 소독약의 살균력을 비교할 때 기준으로 삼는 소독약은?",
+    "choices": [
+      "에틸알코올",
+      "과산화수소",
+      "크레졸",
+      "석탄산(페놀)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "살균력 비교 기준 = 석탄산(석탄산 계수)",
+    "explanation": "소독약의 살균력을 비교할 때는 **석탄산(페놀)**을 기준으로 삼습니다. 이를 **석탄산 계수**라고 하며, 숫자가 클수록 석탄산보다 살균력이 강하다는 뜻입니다.\n\n**틀린 선지**\n- 크레졸: 변소·하수구 소독 등에 쓰는 소독약으로, 기준이 아니라 비교되는 쪽입니다.\n- 에틸알코올: 70% 정도로 손·기구 소독에 쓰며, 비교의 기준은 아닙니다.\n- 과산화수소: 상처 소독 등에 쓰며, 비교의 기준은 아닙니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-04",
+    "tags": [
+      "소독",
+      "석탄산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "korean-cuisine-craftsman-food-hygiene-0015",
+    "certId": "korean-cuisine-craftsman",
+    "subjectId": "written",
+    "chapterId": "food-hygiene",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "우유의 저온장시간살균법(LTLT)의 조건으로 가장 알맞은 것은?",
+    "choices": [
+      "130~150℃에서 0.5~5초 정도",
+      "100℃에서 30분 정도",
+      "71~75℃에서 15초 정도",
+      "63~65℃에서 30분 정도"
+    ],
+    "answer": 4,
+    "oneLineConcept": "저온장시간살균 = 63~65℃, 30분",
+    "explanation": "우유 살균법은 세 가지를 짝지어 외웁니다.\n\n- **저온장시간살균(LTLT)**: 63~65℃에서 30분\n- 고온단시간살균(HTST): 71~75℃에서 15초 정도\n- 초고온순간살균(UHT): 130~150℃에서 0.5~5초 정도\n\n**틀린 선지**\n- 71~75℃에서 15초 정도: 고온단시간살균법(HTST)의 조건입니다.\n- 130~150℃에서 0.5~5초 정도: 초고온순간살균법(UHT)의 조건입니다.\n- 100℃에서 30분 정도: 우유 살균 조건이 아닙니다. 끓는 물에 넣는 소독(자비소독)과 헷갈리기 쉬운 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-04",
+    "tags": [
+      "살균",
+      "우유"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "korean-cuisine-craftsman-food-hygiene-0016",
+    "certId": "korean-cuisine-craftsman",
+    "subjectId": "written",
+    "chapterId": "food-hygiene",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "겨울철에도 자주 생기며, 덜 익힌 굴 같은 조개류나 오염된 물로 감염되는 바이러스성 식중독의 원인은?",
+    "choices": [
+      "황색포도상구균",
+      "클로스트리디움 퍼프린젠스균",
+      "살모넬라균",
+      "노로바이러스"
+    ],
+    "answer": 4,
+    "oneLineConcept": "노로바이러스: 겨울철, 조개류·오염된 물",
+    "explanation": "**노로바이러스**는 세균이 아니라 바이러스입니다. 기온이 낮은 **겨울철**에도 자주 생기고, 덜 익힌 굴 같은 조개류나 오염된 물, 환자의 손을 통해 옮습니다. 아주 적은 양으로도 감염되므로 손 씻기와 충분히 익혀 먹기가 중요합니다.\n\n**틀린 선지**\n- 살모넬라균: 세균이며, 주로 여름철 달걀·닭고기로 옮습니다.\n- 황색포도상구균: 세균이며, 손의 상처·고름에서 음식으로 옮습니다.\n- 클로스트리디움 퍼프린젠스균: 세균이며, 많은 양의 고기 요리를 천천히 식힐 때 잘 생깁니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-04",
+    "tags": [
+      "바이러스성 식중독"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "korean-cuisine-craftsman-food-hygiene-0017",
+    "certId": "korean-cuisine-craftsman",
+    "subjectId": "written",
+    "chapterId": "food-hygiene",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "식품위생법에서 정한 '식품'의 뜻으로 옳은 것은?",
+    "choices": [
+      "공장에서 가공한 음식물만을 말한다",
+      "의약으로 섭취하는 것을 포함한 모든 음식물",
+      "의약으로 섭취하는 것을 제외한 모든 음식물",
+      "농산물과 수산물만을 말한다"
+    ],
+    "answer": 3,
+    "oneLineConcept": "식품 = 모든 음식물(의약으로 섭취하는 것 제외)",
+    "explanation": "식품위생법에서 '식품'은 **모든 음식물(의약으로 섭취하는 것은 제외)**을 말합니다. 날것이든 가공한 것이든 먹고 마시는 것은 모두 식품이지만, 약으로 먹는 것은 빠집니다.\n\n**틀린 선지**\n- 의약으로 섭취하는 것을 포함한 모든 음식물: 약으로 먹는 것은 식품에서 빠집니다.\n- 농산물과 수산물만을 말한다: 축산물·가공식품 등도 모두 식품입니다.\n- 공장에서 가공한 음식물만을 말한다: 가공하지 않은 날것도 식품입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-04",
+    "tags": [
+      "식품위생법",
+      "정의"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "korean-cuisine-craftsman-food-hygiene-0018",
+    "certId": "korean-cuisine-craftsman",
+    "subjectId": "written",
+    "chapterId": "food-hygiene",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "식품위생법에서 말하는 '식품위생'의 대상에 해당하지 않는 것은?",
+    "choices": [
+      "기구",
+      "식품첨가물",
+      "용기·포장",
+      "조리 종사자의 복장"
+    ],
+    "answer": 4,
+    "oneLineConcept": "식품위생의 대상: 식품·식품첨가물·기구·용기·포장",
+    "explanation": "식품위생법에서 '식품위생'은 **식품, 식품첨가물, 기구, 용기·포장**을 대상으로 하는 음식에 관한 위생을 말합니다. 조리하는 사람의 복장도 위생상 중요하지만, 이 정의에 나오는 네 가지 대상에는 들어가지 않습니다.\n\n**나머지 선지 (옳은 설명)**\n- 식품첨가물: 정의에 나오는 대상입니다.\n- 기구: 정의에 나오는 대상입니다. 조리·보관에 쓰는 도구를 말합니다.\n- 용기·포장: 정의에 나오는 대상입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-04",
+    "tags": [
+      "식품위생법",
+      "정의"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "korean-cuisine-craftsman-food-hygiene-0019",
+    "certId": "korean-cuisine-craftsman",
+    "subjectId": "written",
+    "chapterId": "food-hygiene",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "황색포도상구균 식중독에 대한 설명으로 옳지 않은 것은?",
+    "choices": [
+      "손의 상처나 고름에 많은 균이다",
+      "독소는 끓이면 쉽게 없어진다",
+      "잠복기가 비교적 짧은 편이다",
+      "독소형 식중독에 속한다"
+    ],
+    "answer": 2,
+    "oneLineConcept": "황색포도상구균 독소는 열에 강하다",
+    "explanation": "황색포도상구균이 만든 독소(엔테로톡신)는 **열에 강해 보통의 가열로는 잘 없어지지 않습니다**. 그래서 '끓이면 쉽게 없어진다'는 설명이 틀렸습니다.\n\n**나머지 선지 (옳은 설명)**\n- 손의 상처나 고름에 많은 균이다: 맞는 설명입니다. 손에 고름이 생긴 상처가 있는 사람은 조리하지 않습니다.\n- 잠복기가 비교적 짧은 편이다: 맞는 설명입니다. 평균 3시간 정도로, 식중독 가운데 잠복기가 짧은 편입니다.\n- 독소형 식중독에 속한다: 맞는 설명입니다. 음식 속에서 만들어진 독소를 먹어서 생깁니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-04",
+    "tags": [
+      "세균성 식중독",
+      "독소형"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "korean-cuisine-craftsman-food-hygiene-0020",
+    "certId": "korean-cuisine-craftsman",
+    "subjectId": "written",
+    "chapterId": "food-hygiene",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "자연독과 그 독성분의 연결로 옳지 않은 것은?",
+    "choices": [
+      "목화씨 – 고시폴",
+      "독미나리 – 테무린",
+      "모시조개 – 베네루핀",
+      "청매(덜 익은 매실) – 아미그달린"
+    ],
+    "answer": 2,
+    "oneLineConcept": "독미나리 = 시큐톡신, 독보리 = 테무린",
+    "explanation": "독미나리의 독은 **시큐톡신**입니다. 테무린은 **독보리**의 독이므로 이 연결이 틀렸습니다.\n\n**나머지 선지 (옳은 설명)**\n- 청매(덜 익은 매실) – 아미그달린: 맞는 연결입니다.\n- 목화씨 – 고시폴: 맞는 연결입니다. 면실유를 덜 정제하면 남을 수 있습니다.\n- 모시조개 – 베네루핀: 맞는 연결입니다. 바지락·굴에도 있습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-04",
+    "tags": [
+      "자연독"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "korean-cuisine-craftsman-food-hygiene-0021",
+    "certId": "korean-cuisine-craftsman",
+    "subjectId": "written",
+    "chapterId": "food-hygiene",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "통조림이나 진공 포장 식품처럼 산소가 없는 곳에서 자라며, 신경 마비 증상을 일으키고 치명률이 높은 식중독균은?",
+    "choices": [
+      "여시니아균",
+      "클로스트리디움 퍼프린젠스균",
+      "클로스트리디움 보툴리눔균",
+      "바실러스 세레우스균"
+    ],
+    "answer": 3,
+    "oneLineConcept": "보툴리눔균: 통조림, 신경독소, 치명률 높음",
+    "explanation": "**클로스트리디움 보툴리눔균**은 산소를 싫어하는 균(혐기성균)입니다. 통조림·진공 포장 식품처럼 공기가 없는 곳에서 자라며 **신경독소(뉴로톡신)**를 만듭니다. 눈꺼풀 처짐, 말하기·삼키기 어려움 같은 신경 마비가 생기고, 세균성 식중독 가운데 치명률이 가장 높은 편입니다. 부풀어 오른 통조림은 먹지 않습니다.\n\n**틀린 선지**\n- 클로스트리디움 퍼프린젠스균: 산소를 싫어하는 균이지만 주로 설사·복통을 일으키며, 많은 양의 고기 요리에서 잘 생깁니다.\n- 바실러스 세레우스균: 밥·곡류 음식에서 잘 생기며 구토·설사를 일으킵니다.\n- 여시니아균: 냉장 온도에서도 자라는 감염형 균으로, 돼지고기·우유 등에서 옮습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-04",
+    "tags": [
+      "세균성 식중독",
+      "독소형"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "korean-cuisine-craftsman-food-hygiene-0022",
+    "certId": "korean-cuisine-craftsman",
+    "subjectId": "written",
+    "chapterId": "food-hygiene",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "HACCP(식품안전관리인증기준) 7원칙 가운데 가장 먼저 하는 것은?",
+    "choices": [
+      "중요관리점(CCP) 결정",
+      "한계기준 설정",
+      "위해요소 분석",
+      "모니터링 체계 확립"
+    ],
+    "answer": 3,
+    "oneLineConcept": "HACCP 7원칙의 첫 번째 = 위해요소 분석",
+    "explanation": "HACCP 7원칙은 다음 순서로 진행합니다.\n\n1. **위해요소 분석**\n2. 중요관리점(CCP) 결정\n3. 한계기준 설정\n4. 모니터링 체계 확립\n5. 개선조치 방법 수립\n6. 검증 절차 수립\n7. 문서화·기록 유지\n\n어떤 위험(세균·이물·화학물질 등)이 있는지 먼저 알아야 어디를 관리할지 정할 수 있습니다.\n\n**틀린 선지**\n- 중요관리점(CCP) 결정: 위해요소 분석 다음인 두 번째 원칙입니다.\n- 한계기준 설정: 중요관리점을 정한 뒤에 하는 세 번째 원칙입니다.\n- 모니터링 체계 확립: 한계기준을 정한 뒤에 하는 네 번째 원칙입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-04",
+    "tags": [
+      "HACCP"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "korean-cuisine-craftsman-food-hygiene-0023",
+    "certId": "korean-cuisine-craftsman",
+    "subjectId": "written",
+    "chapterId": "food-hygiene",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "쥐의 오줌 등을 통해 사람에게 옮는 감염병은?",
+    "choices": [
+      "말라리아",
+      "발진티푸스",
+      "일본뇌염",
+      "렙토스피라증"
+    ],
+    "answer": 4,
+    "oneLineConcept": "쥐가 옮기는 병: 렙토스피라증, 신증후군출혈열, 페스트",
+    "explanation": "**렙토스피라증**은 쥐 등의 오줌에 섞여 나온 균이 물·흙을 거쳐 피부 상처나 입으로 들어와 생깁니다. 쥐는 이 밖에도 신증후군출혈열(유행성출혈열), 페스트 등을 옮기므로 조리장에서는 쥐가 들어오지 못하게 막아야 합니다.\n\n**틀린 선지**\n- 말라리아: 모기가 옮기는 감염병입니다.\n- 발진티푸스: 이가 옮기는 감염병입니다.\n- 일본뇌염: 모기가 옮기는 감염병입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-04",
+    "tags": [
+      "감염병",
+      "위생동물"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "korean-cuisine-craftsman-food-hygiene-0024",
+    "certId": "korean-cuisine-craftsman",
+    "subjectId": "written",
+    "chapterId": "food-hygiene",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "소·양 같은 가축에서 사람에게 옮을 수 있고, 사람에게는 열이 오르내리는 파상열을 일으키는 인수공통감염병은?",
+    "choices": [
+      "세균성 이질",
+      "브루셀라증",
+      "장티푸스",
+      "콜레라"
+    ],
+    "answer": 2,
+    "oneLineConcept": "브루셀라증: 가축 → 사람, 파상열",
+    "explanation": "인수공통감염병은 사람과 동물이 함께 걸리는 감염병입니다. **브루셀라증**은 소·양·돼지 등에서 옮으며, 사람에게는 열이 올랐다 내렸다를 되풀이하는 **파상열**을 일으킵니다. 결핵(소), 탄저 등도 인수공통감염병입니다.\n\n**틀린 선지**\n- 장티푸스: 사람에게서 사람으로 옮는 경구감염병입니다.\n- 콜레라: 사람에게서 사람으로 옮는 경구감염병입니다.\n- 세균성 이질: 사람에게서 사람으로 옮는 경구감염병입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-04",
+    "tags": [
+      "감염병",
+      "인수공통감염병"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "korean-cuisine-craftsman-food-hygiene-0025",
+    "certId": "korean-cuisine-craftsman",
+    "subjectId": "written",
+    "chapterId": "food-hygiene",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "조리장에서 지켜야 할 개인위생으로 옳지 않은 것은?",
+    "choices": [
+      "머리카락은 위생모 안에 넣는다",
+      "조리할 때는 반지와 시계를 뺀다",
+      "맛을 볼 때는 손가락으로 찍어 본다",
+      "화장실을 다녀온 뒤에는 손을 씻는다"
+    ],
+    "answer": 3,
+    "oneLineConcept": "맛보기는 손가락이 아니라 별도 숟가락으로",
+    "explanation": "맛을 볼 때 손가락으로 찍으면 손의 세균이 음식에 들어갑니다. **맛보기용 숟가락이나 작은 그릇에 덜어** 맛을 보고, 쓴 숟가락을 다시 음식에 넣지 않습니다.\n\n**나머지 선지 (옳은 설명)**\n- 화장실을 다녀온 뒤에는 손을 씻는다: 맞는 설명입니다. 화장실 뒤 손 씻기는 기본입니다.\n- 조리할 때는 반지와 시계를 뺀다: 맞는 설명입니다. 반지·시계 틈에 세균이 남고 음식에 떨어질 수 있습니다.\n- 머리카락은 위생모 안에 넣는다: 맞는 설명입니다. 머리카락이 음식에 들어가지 않게 합니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-04",
+    "tags": [
+      "개인위생"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "korean-cuisine-craftsman-food-hygiene-0026",
+    "certId": "korean-cuisine-craftsman",
+    "subjectId": "written",
+    "chapterId": "food-hygiene",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "볶음밥·김밥 같은 쌀밥이나 곡류 음식에서 잘 생기고, 흙에 많은 포자형성균이 원인인 식중독은?",
+    "choices": [
+      "살모넬라 식중독",
+      "캄필로박터 식중독",
+      "바실러스 세레우스 식중독",
+      "장염비브리오 식중독"
+    ],
+    "answer": 3,
+    "oneLineConcept": "바실러스 세레우스: 흙에 많음, 밥·곡류",
+    "explanation": "**바실러스 세레우스균**은 흙에 많고 열에 강한 포자(씨앗 같은 휴면 상태)를 만듭니다. 밥을 지어도 포자가 살아남아, 지은 밥을 실온에 오래 두면 다시 자랍니다. 밥은 빨리 식혀 냉장 보관하는 것이 좋습니다.\n\n**틀린 선지**\n- 장염비브리오 식중독: 바닷물 세균으로, 어패류를 날로 먹을 때 생깁니다.\n- 살모넬라 식중독: 주로 달걀·닭고기 등 동물성 식품으로 옮습니다.\n- 캄필로박터 식중독: 주로 덜 익힌 닭고기 등으로 옮습니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-04",
+    "tags": [
+      "세균성 식중독"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  }
+]
