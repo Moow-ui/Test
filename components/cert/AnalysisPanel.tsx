@@ -25,7 +25,9 @@ export function AnalysisPanel({
 
   return (
     <div>
-      <div className="flex justify-end">
+      <div className="flex flex-wrap items-center justify-between gap-2">
+        {/* 단원 이름이 링크라는 것을 알려 주는 안내 (링크가 없는 "준비 중" 자격증에는 두지 않는다) */}
+        {linkChapters ? <p className="text-[0.9rem] font-bold text-ink-sub">{m.cert.analysisHint}</p> : <span />}
         <button
           type="button"
           aria-pressed={byImportance}
