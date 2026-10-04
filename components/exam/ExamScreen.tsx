@@ -48,26 +48,29 @@ export interface ExamScreenProps {
 }
 
 /**
- * 문제 위의 출처 한 줄: "예상문제 · 검수 완료 ⓘ" 또는 "예상문제 · 검수 전".
+ * 문제 위의 출처 배지 1개: "예상문제 · 검수 완료" + 오른쪽 ⓘ 버튼, 또는 "예상문제 · 검수 전".
  * ⓘ 를 누르면 검수 방식 안내가 펼쳐진다.
+ * 문제 영역(<section key={문제 id}>) 안에 하나만 그린다. 문제가 바뀌면 영역째 새로 그려져 이전 배지가 남지 않는다.
  */
-function ReviewLine({ question }: { question: Question }) {
+export function ReviewLine({ question }: { question: Question }) {
   const { m } = useMessages();
   const [open, setOpen] = useState(false);
   const reviewed = isReviewed(question);
+  const status = reviewed ? m.source.reviewed : question.reviewStatus === "unverified" ? m.source.unverified : null;
   return (
-    <div className="text-[12px] font-bold text-ink-sub">
-      <p className="flex flex-wrap items-center gap-x-2 gap-y-1">
-        <span>
-          {sourceLabel(question, m)}
-          {reviewed
-            ? ` · ${m.source.reviewed}`
-            : question.reviewStatus === "unverified" && ` · ${m.source.unverified}`}
+    <div data-review-badge="">
+      <p className="flex flex-wrap items-center gap-1">
+        <span
+          className={`inline-flex items-center rounded-full px-3 py-1 text-[14px] font-bold ${
+            reviewed ? "bg-ok-soft text-ok" : "bg-surface-2 text-ink-sub"
+          }`}
+        >
+          {status ? `${sourceLabel(question, m)} · ${status}` : sourceLabel(question, m)}
         </span>
         {reviewed && (
           <button
             type="button"
-            className="inline-flex min-h-7 min-w-7 items-center justify-center border border-line bg-surface px-1 text-[15px] text-ink"
+            className="inline-flex h-11 w-11 items-center justify-center rounded-full text-[20px] leading-none text-ink-sub hover:bg-surface-2"
             aria-label={m.source.reviewInfoButton}
             title={m.source.reviewInfoButton}
             aria-expanded={open}
@@ -77,7 +80,7 @@ function ReviewLine({ question }: { question: Question }) {
           </button>
         )}
       </p>
-      {open && <p className="mt-1 border border-line bg-surface-2 p-2 text-[14px] font-normal text-ink">{m.source.reviewInfo}</p>}
+      {open && <p className="mt-1 rounded-lg bg-surface-2 px-3 py-2 text-[15px] text-ink">{m.source.reviewInfo}</p>}
     </div>
   );
 }
@@ -259,8 +262,9 @@ export function ExamScreen({
         className="mx-auto grid w-full max-w-6xl flex-1 content-start gap-3 px-3 py-3 lg:grid-cols-[1fr_15.5rem]"
         style={{ fontSize: `${fontPx}px` }}
       >
-        <section aria-label={m.question} className="border border-line bg-surface px-[1em] py-[0.9em]">
-          <ReviewLine key={question.id} question={question} />
+        {/* key: 문제가 바뀌면 문제 영역(배지·해설 포함)을 통째로 새로 그린다. 안쪽 요소에 같은 key 를 다시 쓰지 않는다 */}
+        <section key={question.id} aria-label={m.question} className="border border-line bg-surface px-[1em] py-[0.9em]">
+          <ReviewLine question={question} />
           <h2 className="mt-[0.2em] whitespace-pre-wrap font-bold leading-normal">
             {index + 1}. {question.stem}
           </h2>
@@ -314,7 +318,6 @@ export function ExamScreen({
 
           {isRevealed && (
             <AnswerResult
-              key={question.id}
               question={question}
               answerNo={shown.indexOf(question.answer) + 1}
               chosen={chosen}
