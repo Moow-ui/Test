@@ -11,6 +11,7 @@
 | 1 | 2026-10-02 (금) | KR driver-license-written · US dmv-permit-california | 160/0 | 1 | 1 | 2 | 4% | 배포 확인 못 함(실행 환경에서 exampasso.com 접속 차단) |
 | 2 | 2026-10-03 (토) | KR korean-history-advanced · US dmv-permit-texas | 160/0 | 2 | 2 | 4 | 8% | 배포 확인 200. 1회차 두 자격증도 200 확인. Texas 는 DPS 가 문항 수·시간을 공개하지 않아 연습용 30문항·30분(합격 70%는 37 TAC §15.52 로 확인) |
 | 3 | 2026-10-04 (일) | KR korean-cuisine-craftsman · US dmv-permit-florida | 160/0 | 3 | 3 | 6 | 12% | 배포 확인 200. Florida 는 2026-02부터 영어로만 시행, flhsmv.gov·q-net 은 실행 환경에서 직접 열 수 없어 검색 결과·조문 사이트로 확인 |
+| 4 | 2026-10-05 (월) | KR excavator-operator · US dmv-permit-new-york | 174/1 | 4 | 4 | 8 | 16% | 기출 0 / AI 173 (굴착기 87·뉴욕 86). 기출 미수록 사유: 굴착기는 CBT 비공개·공단 저작권(이용 조건 불가)·q-net 접속 차단, 뉴욕은 문제은행 비공개·dmv.ny.gov 접속 차단. 굴착기 1문제(붐·암 각도 경험칙) review-queue 보관. 개념 정리 18단원 중 3단원 1차 FAIL → 수정·재검증 PASS. 배포 확인 200 (두 자격증 페이지·pool.json·개념 정리) |
 
 ## 상태
 
