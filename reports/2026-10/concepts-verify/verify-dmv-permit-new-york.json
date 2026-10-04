@@ -1,0 +1,77 @@
+{
+  "cert": "dmv-permit-new-york",
+  "checkedAt": "2026-10-05",
+  "by": "separate verifier AI",
+  "chapters": {
+    "road-signs": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "Octagon stop, downward-pointing triangle yield, pennant no-passing sign on the left, round yellow railroad advance sign, crossbuck treated like a yield sign, pentagon school sign, color meanings (white regulatory, yellow warning, orange work zone, green guide, blue services, brown recreation): consistent with NYS Driver's Manual Ch. 4 (dmv.ny.gov/new-york-state-drivers-manual-and-practice-tests/chapter-4-traffic-control) and the MUTCD."
+      ]
+    },
+    "traffic-control": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "Right on red allowed outside NYC after a full stop unless a sign prohibits it; in NYC prohibited unless a sign permits it: correct (VTL 1111(d)).",
+        "Steady and flashing yellow and red meanings, green arrow, officer overrides signals, dark signal treated as an all-way stop (VTL 1117), yellow/white line meanings: correct per Manual Ch. 4."
+      ]
+    },
+    "intersections-turns": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "'Most crashes in town happen where roads cross' is close to the Manual Ch. 5 wording ('Most traffic crashes occur at intersections when a driver makes a turn'), so it is acceptable (dmv.ny.gov chapter-5-intersections-and-turns).",
+        "Yield to the vehicle already in the intersection, left yields to right (VTL 1140), left turn yields to oncoming traffic (VTL 1141), signal 100 ft before a turn (VTL 1163), emergency vehicles: pull right and stop, not in the intersection (VTL 1144), blind pedestrian with white cane or guide dog (VTL 1153), roundabout counterclockwise yielding to circulating traffic: correct."
+      ]
+    },
+    "passing-parking": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "Pass on the left; return when the passed vehicle is visible in the rearview mirror; passing on the right only when the vehicle ahead turns left or on a multi-lane road, never on the shoulder (VTL 1123); do not speed up when being passed; no passing at a school bus with red lights: correct.",
+        "Parking distances: hydrant 15 ft unless a licensed driver stays with the vehicle, crosswalk at an intersection 20 ft, traffic light/stop/yield sign 30 ft, railroad crossing 50 ft. These match Manual Ch. 7 (dmv.ny.gov chapter-7-parallel-parking) and parking-law summaries."
+      ]
+    },
+    "defensive-driving": {
+      "verdict": "PASS",
+      "problems": [
+        "Summary: 'Headlights must be on from sunset to sunrise, when visibility is less than 1,000 feet, ...' and concept 'When to use headlights': 'Turn on your headlights from sunset to sunrise, ...': the time window is inaccurate. NY VTL 375(2)(a) and the NYS Driver's Manual Ch. 10 say 'from one-half hour after sunset to one-half hour before sunrise'. Permit tests ask for this exact wording. Fix both sentences to 'from one-half hour after sunset to one-half hour before sunrise'."
+      ],
+      "notes": [
+        "Headlight rule confirmed: dmv.ny.gov/new-york-state-drivers-manual-and-practice-tests/chapter-10-special-driving-conditions ('one-half hour after the sun sets to one-half hour before the sun rises, when visibility is less than 1,000 feet, and when you use your windshield wipers to clear rain, snow or sleet'). The 1,000 ft and wiper parts are correct.",
+        "Two-second rule (Manual Ch. 8; 3–4 seconds in bad weather or behind trucks; the note says 'longer', which is consistent). 55 mph statewide limit unless posted (VTL 1180). Dim within 500 ft of oncoming and 200 ft of a vehicle ahead (VTL 375(3)). Hydroplaning and skid advice: correct."
+      ],
+      "firstVerdict": "FAIL",
+      "reverify": {
+        "verdict": "PASS",
+        "problems": [],
+        "notes": [
+          "Two-second rule with the fixed-object count ('one thousand one, one thousand two'), more time in bad weather: matches NYS Driver's Manual Ch. 8 (manual says increase to at least 3-4 seconds in bad weather / behind large trucks).",
+          "55 mph maximum unless otherwise posted, and slowing for conditions: matches VTL 1180(a)/(b).",
+          "Headlights from 1/2 hour after sunset to 1/2 hour before sunrise, when visibility is less than 1,000 feet, and whenever wipers are in use because of weather: matches VTL 375(2)(a) and the manual.",
+          "Low beams within 500 feet of an oncoming vehicle and within 200 feet of a vehicle ahead: matches VTL 375(3) and the manual.",
+          "Hydroplaning description and advice (slow down; ease off gas, no hard braking or sharp turns): consistent with the manual.",
+          "Skid advice (foot off gas, steer where you want the front to go, no slamming brakes) matches the manual's rear-wheel-skid guidance, the common case on permit tests. The manual also covers front-wheel skids separately (don't steer right away; steer once traction returns). Leaving that out is a simplification, not an error. Optional improvement: say 'rear-wheel skid'.",
+          "Source fields ('NY Vehicle and Traffic Law / NYS DMV Driver's Manual', 2026) are appropriate for the cited facts."
+        ]
+      }
+    },
+    "alcohol-drugs": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "DWI at 0.08% or more, Aggravated DWI at 0.18% or more (VTL 1192), DWAI below 0.08% when impaired, DWAI-drugs, Zero Tolerance 0.02–0.07% under 21 means suspension (VTL 1192-a), implied consent covering breath/blood/urine/saliva with revocation on refusal (VTL 1194), only time lowers BAC: correct."
+      ]
+    },
+    "sharing-road": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "School bus with red lights: stop from both directions, even on a divided highway, until the lights stop or the driver or an officer signals (VTL 1174; Manual Ch. 11): correct.",
+        "Truck No-Zones, wide right turns, motorcycle entitled to a full lane, bicyclists have drivers' rights and duties (VTL 1231), look before opening a door (VTL 1214), railroad gate and track rules: correct."
+      ]
+    }
+  }
+}
