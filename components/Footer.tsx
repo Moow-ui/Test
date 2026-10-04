@@ -1,15 +1,22 @@
 import Link from "next/link";
 import { INFO_PAGE_IDS } from "@/content/pages";
-import { brandName, getMessages, localePath, type Locale } from "@/lib/i18n";
+import { getCertList } from "@/lib/data";
+import { brandName, fmt, getMessages, localeCountry, localePath, type Locale } from "@/lib/i18n";
 import { LocaleSwitch } from "./i18n/LocaleSwitch";
 
-export function Footer({ locale }: { locale: Locale }) {
+/**
+ * 모든 일반 화면 맨 아래의 안내.
+ * 맨 끝 두 줄: 그 나라에 지금 수록된 예상문제 수(빌드할 때 데이터에서 센 실제 값, 출제 중단 문제 제외)와 저작권 표시.
+ */
+export async function Footer({ locale }: { locale: Locale }) {
   const m = getMessages(locale);
+  const brand = brandName(locale);
+  const total = (await getCertList(localeCountry(locale))).reduce((sum, c) => sum + c.questionCount, 0);
   return (
     <footer className="cv no-print mt-12 border-t border-line-soft bg-surface">
       <div className="mx-auto w-full max-w-5xl space-y-2 px-4 py-6 text-sm text-ink-sub">
         <p className="font-bold text-ink">
-          {brandName(locale)} · {m.site.tagline}
+          {brand} · {m.site.tagline}
         </p>
         <p>{m.site.notice}</p>
         <p>{m.site.officialInfo}</p>
@@ -34,6 +41,10 @@ export function Footer({ locale }: { locale: Locale }) {
           ))}
         </nav>
         <p>{m.site.cookieNotice}</p>
+        <p className="pt-2 font-bold text-ink">
+          {fmt(m.site.questionTotal, { n: total.toLocaleString(locale === "ko" ? "ko-KR" : "en-US") })}
+        </p>
+        <p>{fmt(m.site.copyright, { year: new Date().getFullYear(), brand })}</p>
       </div>
     </footer>
   );
