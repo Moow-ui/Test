@@ -35,13 +35,15 @@ export interface CertBoxesProps {
   cbt: { questionCount: number; minutes: number; choiceCount: number } | null;
   /** 실전 문제풀이 아래에 "단원별 핵심 개념 먼저 보기" 한 줄 링크를 둘까 (단원 페이지가 있는 자격증만) */
   showConcepts?: boolean;
+  /** 개념 정리 페이지 주소 (있으면 "핵심 개념 먼저 보기"가 그 페이지로 간다) */
+  conceptsHref?: string;
 }
 
 /**
  * 자격증 화면에서 가장 먼저 보이는 큰 박스: 초급 / 중급 / 고급, 그 아래 실전 문제풀이.
  * 난이도 박스를 누르면 바로 아래에 범위·문제 수·[시험 시작하기] 가 펼쳐진다.
  */
-export function CertBoxes({ certId, ready, subjects, counts, choiceCounts, cbt, showConcepts = false }: CertBoxesProps) {
+export function CertBoxes({ certId, ready, subjects, counts, choiceCounts, cbt, showConcepts = false, conceptsHref }: CertBoxesProps) {
   const { locale, m } = useMessages();
   const [level, setLevel] = useState<QuizLevel | null>(null);
   const [scope, setScope] = useState("all");
@@ -173,7 +175,7 @@ export function CertBoxes({ certId, ready, subjects, counts, choiceCounts, cbt, 
       )}
 
       {/* 단원 핵심정리로 가는 얇은 한 줄 (문제 박스보다 눈에 덜 띄게) */}
-      {showConcepts && <ConceptsLink />}
+      {showConcepts && <ConceptsLink href={conceptsHref} />}
 
       {/* 풀던 문제가 남아 있을 때만 보인다 */}
       {isInProgress(session) && (

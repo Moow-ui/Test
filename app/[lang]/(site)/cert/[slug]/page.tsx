@@ -11,7 +11,7 @@ import { IssuerNotice } from "@/components/cert/IssuerNotice";
 import { RelatedCerts } from "@/components/cert/RelatedCerts";
 import { StudyTips } from "@/components/cert/StudyTips";
 import { ReviewSection } from "@/components/reviews/ReviewSection";
-import { getCertList, getCertificationIn, getQuestions } from "@/lib/data";
+import { getCertList, getCertificationIn, getConcepts, getQuestions } from "@/lib/data";
 import { fmt, getMessages, isLocale, localeCountry, localePath } from "@/lib/i18n";
 import { levelChoiceCount } from "@/lib/choices";
 import { countAvailable, mockExamShortage } from "@/lib/quiz-engine";
@@ -45,6 +45,8 @@ export default async function CertPage({ params }: Props) {
   if (!isLocale(lang)) notFound();
   const country = localeCountry(lang);
   const cert = await getCertificationIn(country, slug);
+  // 개념 정리(검증 통과 단원)가 있으면 "핵심 개념 먼저 보기"와 출제 분석의 단원 이름이 그 페이지로 간다
+  const concepts = cert ? await getConcepts(cert.id) : null;
   if (!cert) notFound();
   const m = getMessages(lang);
 
@@ -101,6 +103,7 @@ export default async function CertPage({ params }: Props) {
             : null
         }
         showConcepts={cert.ready && !!examInfo}
+        conceptsHref={concepts ? localePath(lang, `/cert/${cert.id}/concepts`) : undefined}
       />
 
       {!cert.ready && (
@@ -153,7 +156,12 @@ export default async function CertPage({ params }: Props) {
           </Fold>
 
           <Fold id={ANALYSIS_ANCHOR} title={m.cert.analysis}>
-            <AnalysisPanel certId={cert.id} subjects={cert.subjects} linkChapters={cert.ready} />
+            <AnalysisPanel
+              certId={cert.id}
+              subjects={cert.subjects}
+              linkChapters={cert.ready}
+              conceptChapterIds={concepts?.chapters.map((c) => c.id)}
+            />
           </Fold>
         </div>
       )}

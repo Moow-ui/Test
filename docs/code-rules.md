@@ -221,6 +221,9 @@
   - 기출 유형: "{이름} 기출 유형 문제 무료 풀이 + 해설 | 자격증달인"
   - 단원: "{이름} {단원명} 핵심정리·예상문제 | 자격증달인"
 - `/past` 와 단원 페이지는 대표 문제(최대 10개)를 정답·해설까지 서버 렌더링한다.
+- **개념 정리** (P14): `/cert/{slug}/concepts` 제목 "{이름} 개념 정리 - 단원별 핵심 요약 | 자격증달인", 단원 `/cert/{slug}/concepts/{단원}`.
+  canonical, BreadcrumbList·Article 구조화 데이터, sitemap 포함, 본문 서버 렌더링. 데이터는 `concepts.json`(검증 통과 단원만, data-rules.md 3-1).
+  출제 분석의 단원 이름과 "핵심 개념 먼저 보기"는 개념 정리가 있으면 그 페이지로 간다. 주소는 영문 `concepts` (slug 영문 고정 규칙).
 - 시험 화면·오답노트·"준비 중" 자격증 페이지는 `noindex` 이고 sitemap 에서 뺀다.
 - 접어 둔 내용(`<details>`)도 HTML 에는 그대로. 키워드 나열·숨김 텍스트 금지.
 - 빌드 후 `npm run check:meta` 로 title·description 중복, noindex/sitemap, hreflang·`<html lang>`·브랜드명 검사.

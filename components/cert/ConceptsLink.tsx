@@ -16,9 +16,10 @@ function openAnalysis(): boolean {
 
 /**
  * 실전 문제풀이 바로 아래의 얇은 한 줄 링크: "풀기 전에 단원별 핵심 개념 먼저 보기 →".
- * 문제 박스보다 눈에 덜 띄게 연한 배경·작은 글씨로 둔다. 누르면 같은 페이지의 출제 분석을 펼친다.
+ * 문제 박스보다 눈에 덜 띄게 연한 배경·작은 글씨로 둔다.
+ * 개념 정리 페이지가 있으면(href) 그 페이지로 가고, 없으면 같은 페이지의 출제 분석을 펼친다.
  */
-export function ConceptsLink() {
+export function ConceptsLink({ href }: { href?: string }) {
   const { m } = useMessages();
 
   // 주소가 #analysis 로 열리면(단원 페이지의 "출제 분석으로 돌아가기") 출제 분석을 펼쳐 둔다
@@ -28,9 +29,9 @@ export function ConceptsLink() {
 
   return (
     <a
-      href={`#${ANALYSIS_ANCHOR}`}
+      href={href ?? `#${ANALYSIS_ANCHOR}`}
       onClick={(e) => {
-        if (!openAnalysis()) return;
+        if (href || !openAnalysis()) return;
         e.preventDefault();
         history.replaceState(null, "", `#${ANALYSIS_ANCHOR}`);
       }}

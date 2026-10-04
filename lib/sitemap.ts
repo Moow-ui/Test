@@ -1,5 +1,5 @@
 import { INFO_PAGE_IDS, INFO_UPDATED } from "@/content/pages";
-import { getReadyCertifications } from "./data";
+import { getConcepts, getReadyCertifications } from "./data";
 import { LOCALES, localeCountry, localePath, type Locale } from "./i18n";
 import { languageAlternates } from "./seo";
 import { absoluteUrl } from "./site";
@@ -45,6 +45,19 @@ export async function sitemapEntries(locale: Locale): Promise<SitemapEntry[]> {
     for (const subject of cert.subjects) {
       for (const chapter of subject.chapters) {
         entries.push({ path: `${base}/${chapter.id}`, lastModified, changeFrequency: "monthly", priority: 0.6 });
+      }
+    }
+    // 개념 정리 (검증을 통과한 단원만)
+    const concepts = await getConcepts(cert.id);
+    if (concepts) {
+      entries.push({ path: `${base}/concepts`, lastModified: concepts.verifiedAt, changeFrequency: "monthly", priority: 0.7 });
+      for (const chapter of concepts.chapters) {
+        entries.push({
+          path: `${base}/concepts/${chapter.id}`,
+          lastModified: chapter.verifiedAt,
+          changeFrequency: "monthly",
+          priority: 0.6,
+        });
       }
     }
   }

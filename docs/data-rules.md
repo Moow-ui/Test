@@ -10,6 +10,7 @@ data/
   certs/{country}/{slug}/         country 는 KR 또는 US
     meta.json                     자격증 정보
     chapters.json                 과목·단원 (문제가 준비된 자격증만)
+    concepts.json                 개념 정리 (선택. 검증을 통과한 단원만 /cert/{slug}/concepts 페이지가 생긴다)
     questions/{chapterId}.json    단원별 문제
     questions/{chapterId}-2.json  한 파일이 300문항을 넘으면 -2, -3 … 으로 나눈다
     exams/{year}-{round}.json     실전 모의고사 구성 (문제 id 목록)
@@ -21,7 +22,7 @@ reports/{YYYY-MM}/                작업 리포트. 월별 폴더에 쌓는다
 public/data/                      빌드 때 자동으로 만든다 (git 에 올리지 않는다)
 ```
 
-- 자격증 폴더에는 위 다섯 이름(`meta.json`, `chapters.json`, `questions`, `exams`, `assets`)만 둘 수 있다.
+- 자격증 폴더에는 위 여섯 이름(`meta.json`, `chapters.json`, `concepts.json`, `questions`, `exams`, `assets`)만 둘 수 있다.
 - 폴더 이름 = `meta.json` 의 `id`, 나라 폴더 = `country`.
 - **slug 는 나라가 달라도 겹치면 안 된다.** 한번 정하면 바꾸지 않는다 (URL·문제 id·배포 파일 주소에 쓰인다).
 - 자격증 목록·검색 인덱스·sitemap 은 빌드할 때 이 폴더를 읽어 자동으로 만든다. 손으로 고치는 목록은 없다.
@@ -65,6 +66,27 @@ public/data/                      빌드 때 자동으로 만든다 (git 에 올
 - **Chapter**: `id`, `name`, `importance`(1~5), `examWeight`(과목 내 %, 합계 100), `summary`, `keyPoints[]`
   - 단원 id 는 자격증 안에서 유일해야 한다. `past`, `quiz`, `cbt`, `notes`, `opengraph-image` 는 쓸 수 없다 (URL 충돌).
   - 단원 id 도 한번 정하면 바꾸지 않는다 (URL 과 문제 파일 이름에 쓰인다).
+
+## 3-1. concepts.json (개념 정리, 선택)
+
+`/cert/{slug}/concepts`(전체)와 `/cert/{slug}/concepts/{chapterId}`(단원) 페이지의 내용. 스키마는 `lib/schemas.ts` 의 `conceptsFileSchema`.
+
+```json
+{ "by": "ai",
+  "chapters": {
+    "{chapterId}": {
+      "verifiedAt": "2026-10-04",
+      "concepts": [{ "term": "용어", "definition": "정의", "tip": "외우는 요령", "source": { "org": "법령·기관", "year": 2026 } }],
+      "points": ["자주 나오는 포인트"],
+      "compare": { "title": "비교 제목", "columns": ["구분", "A", "B"], "rows": [["…", "…", "…"]] } } } }
+```
+
+- 핵심 개념 3~7개, 포인트 2~6개, 비교표는 헷갈리는 짝이 있을 때만.
+- **문장은 새로 쓴다.** 교재·다른 사이트 문장을 옮기지 않는다. 기출 원문 금지.
+- 법령·기준 수치가 들어간 카드에는 `source`(기관·법령 이름, 기준 연도)를 반드시 적는다.
+- **작성과 분리된 검증**(다른 AI 가 정답·수치를 다시 확인)을 통과한 단원만 `verifiedAt` 을 적는다. `verifiedAt` 이 없는 단원은 페이지·sitemap 에 나오지 않는다 (실패 단원은 만들지 않는다).
+- 화면에는 "AI 작성 · 검수 완료" 배지. 단원별 출제 비중(`examWeight`)은 공식 발표가 없으므로 "(추정)"으로 표시된다.
+- 검증 기록은 `reports/{YYYY-MM}/` 에 남긴다 (예: `reports/2026-10/p14-concepts-verify/`).
 
 ## 4. 문제 (questions/{chapterId}.json)
 

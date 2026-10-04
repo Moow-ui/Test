@@ -6,6 +6,7 @@ import {
   certMetaSchema,
   certQueueSchema,
   chaptersFileSchema,
+  conceptsFileSchema,
   examSetSchema,
   questionSchema,
 } from "../schemas";
@@ -21,6 +22,7 @@ import {
   assetsDir,
   certDir,
   chaptersFile,
+  conceptsFile,
   countryDir,
   examsDir,
   isQuestionIdFor,
@@ -133,6 +135,19 @@ export async function validateData(store: DataStore): Promise<ValidationResult> 
       };
       errors.push(...checkCertDetail(detail));
       const chapterIds = detail.subjects.flatMap((s) => s.chapters.map((c) => c.id));
+
+      // ── concepts.json (선택): 단원 id 가 chapters.json 에 있어야 한다
+      const conceptsRaw = await store.readJson(conceptsFile(country, slug));
+      if (conceptsRaw !== null) {
+        const conceptsResult = conceptsFileSchema.safeParse(conceptsRaw);
+        if (!conceptsResult.success) {
+          for (const m of issues(conceptsResult.error)) errors.push(`${conceptsFile(country, slug)} → ${m}`);
+        } else {
+          for (const id of Object.keys(conceptsResult.data.chapters)) {
+            if (!chapterIds.includes(id)) errors.push(`${conceptsFile(country, slug)} → 없는 단원 id: ${id}`);
+          }
+        }
+      }
       const assets = new Set(await store.list(assetsDir(country, slug)));
 
       // ── questions/{chapterId}.json, {chapterId}-2.json …

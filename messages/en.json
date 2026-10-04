@@ -519,6 +519,41 @@
     "delete": "Delete",
     "deleteConfirm": "Delete this review? This cannot be undone."
   },
+  "concepts": {
+    "seeChapter": "📖 See {name} concepts →",
+    "coreTitle": "Key concepts",
+    "h1": "{name} Concept Review",
+    "chapterH1": "{name}: {chapter} Concepts",
+    "breadcrumb": "Concept review",
+    "eyebrowChapter": "{cert} · {subject}",
+    "byAiVerified": "AI-written · Verified",
+    "byStaff": "Written by our team",
+    "byInfo": "Written by AI. Only units that passed a separate AI check (re-reading facts and numbers) are published. Tell us if you find a mistake.",
+    "summaryLabel": "At a glance",
+    "summary": "{format} · {subjects} sections · {total} questions · {minutes} min",
+    "passAvg": "Pass: {avg} points average",
+    "passWithMin": "Pass: {min}+ in every section and {avg}+ average",
+    "sourceLine": "Source: {org} · as of {year}",
+    "tocTitle": "Units",
+    "tocHint": "★ importance · % = estimated share within the section",
+    "subjectItems": "{n} questions",
+    "weightEstimated": "{n}% (estimate)",
+    "weightNote": "Unit shares are not officially published; they are estimates based on the exam outline and question analysis. Section question counts follow the official exam outline.",
+    "notYet": "Not reviewed yet",
+    "readChapter": "Read {name} →",
+    "solve5": "Practice 5 {name} questions →",
+    "solveChapter": "Practice {n} questions from this unit →",
+    "tip": "Memory tip",
+    "points": "Often tested",
+    "compare": "Easy to confuse",
+    "examples": "{n} sample questions",
+    "examplesHint": "Verified practice questions from this unit.",
+    "prev": "← Previous: {name}",
+    "next": "Next: {name} →",
+    "toOverview": "All {cert} concepts →",
+    "toCert": "Go to {cert} practice →",
+    "otherLabel": "Other units"
+  },
   "seo": {
     "subjectSeparator": ", ",
     "certMain": {
@@ -540,6 +575,14 @@
       "title": "{name} Sample Questions with Answers | {brand}",
       "description": "{shown} {name} sample questions with answers and plain-English explanations on one page, built around the topics the {spaced} exam asks most.",
       "h1": "{name} Sample Questions and Explanations"
+    },
+    "concepts": {
+      "title": "{name} Concept Review - Key Points by Unit | {brand}",
+      "description": "Key concepts for {name}: {subjects} sections and {chapters} units with definitions, memory tips, often-tested points and sample questions."
+    },
+    "conceptChapter": {
+      "title": "{name} {chapter} Concepts - Key Points | {brand}",
+      "description": "{n} key concepts from the {name} {subject} unit '{chapter}', with definitions and memory tips. {first}"
     },
     "chapter": {
       "title": "{name} {chapter}: Summary & {kind} | {brand}",

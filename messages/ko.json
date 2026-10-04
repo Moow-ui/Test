@@ -519,6 +519,41 @@
     "delete": "삭제",
     "deleteConfirm": "이 후기를 삭제할까요? 되돌릴 수 없습니다."
   },
+  "concepts": {
+    "seeChapter": "📖 {name} 개념 정리 보기 →",
+    "coreTitle": "핵심 개념",
+    "h1": "{name} 개념 정리",
+    "chapterH1": "{name} {chapter} 개념 정리",
+    "breadcrumb": "개념 정리",
+    "eyebrowChapter": "{cert} · {subject} 과목",
+    "byAiVerified": "AI 작성 · 검수 완료",
+    "byStaff": "운영진 작성",
+    "byInfo": "AI가 새로 쓴 글 가운데, 작성과 분리된 AI 검증(다시 읽고 사실·수치 확인)을 통과한 단원만 싣습니다. 틀린 곳을 발견하면 알려 주세요.",
+    "summaryLabel": "한눈에 보기",
+    "summary": "{format} · {subjects}과목 {total}문항 · {minutes}분",
+    "passAvg": "합격 기준: 평균 {avg}점 이상",
+    "passWithMin": "합격 기준: 과목마다 {min}점 이상, 평균 {avg}점 이상",
+    "sourceLine": "출처: {org} · {year}년 기준",
+    "tocTitle": "단원 목차",
+    "tocHint": "★ 중요도 · % 는 과목 안 출제 비중(추정)",
+    "subjectItems": "{n}문항",
+    "weightEstimated": "{n}% (추정)",
+    "weightNote": "단원별 출제 비중은 공식 발표가 없어 출제기준과 문제 분석을 바탕으로 추정한 값입니다. 과목별 문항 수는 시행기관 발표 기준입니다.",
+    "notYet": "아직 정리 전",
+    "readChapter": "{name} 자세히 보기 →",
+    "solve5": "{name} 5문제 풀기 →",
+    "solveChapter": "이 단원 {n}문제 풀기 →",
+    "tip": "외우는 요령",
+    "points": "자주 나오는 포인트",
+    "compare": "헷갈리는 것 비교",
+    "examples": "대표 문제 {n}개",
+    "examplesHint": "검수를 마친 예상문제 가운데 이 단원의 대표 문제입니다.",
+    "prev": "← 이전 단원: {name}",
+    "next": "다음 단원: {name} →",
+    "toOverview": "{cert} 개념 정리 전체 보기 →",
+    "toCert": "{cert} 문제 풀기 페이지로 →",
+    "otherLabel": "다른 단원"
+  },
   "seo": {
     "subjectSeparator": "·",
     "certMain": {
@@ -540,6 +575,14 @@
       "title": "{name} 기출 유형 문제 무료 풀이 + 해설 | {brand}",
       "description": "{name} 필기 기출 유형을 분석해 만든 대표 문제 {shown}개를 정답과 쉬운 해설까지 한 페이지에서 볼 수 있습니다. {spaced} 시험에 자주 나오는 개념부터 확인하세요.",
       "h1": "{name} 기출 유형 문제 풀이와 해설"
+    },
+    "concepts": {
+      "title": "{name} 개념 정리 - 단원별 핵심 요약 | {brand}",
+      "description": "{name} 필기 {subjects}과목 {chapters}개 단원의 핵심 개념을 단원별로 정리했습니다. 정의와 외우는 요령, 자주 나오는 포인트, 대표 문제를 한 번에 보세요."
+    },
+    "conceptChapter": {
+      "title": "{name} {chapter} 개념 정리 - 핵심 요약 | {brand}",
+      "description": "{name} {subject} 과목 '{chapter}' 단원의 핵심 개념 {n}개를 정의와 외우는 요령으로 정리했습니다. {first}"
     },
     "chapter": {
       "title": "{name} {chapter} 핵심정리·{kind} | {brand}",

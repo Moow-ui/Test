@@ -6,7 +6,7 @@ import { Stars } from "@/components/Stars";
 import { StaticQuestion } from "@/components/StaticQuestion";
 import { IssuerNotice } from "@/components/cert/IssuerNotice";
 import { ANALYSIS_ANCHOR } from "@/components/cert/anchors";
-import { getCertificationIn, getQuestions } from "@/lib/data";
+import { getCertificationIn, getConcepts, getQuestions } from "@/lib/data";
 import { fmt, getMessages, isLocale, localeCountry, localePath } from "@/lib/i18n";
 import { pickChapterRepresentatives } from "@/lib/representative";
 import { certMainMeta, certOgImagePath, chapterMeta, toMetadata } from "@/lib/seo";
@@ -64,6 +64,8 @@ export default async function ChapterPage({ params }: Props) {
   const next = allChapters[position + 1];
   const quizCount = Math.min(5, inChapter.length);
   const certPath = mainMeta.path;
+  // 이 단원의 개념 정리(검증 통과)가 있으면 그 페이지로 가는 링크를 둔다
+  const hasConcept = !!(await getConcepts(cert.id))?.chapters.some((c) => c.id === chapter.id);
   // 핵심정리 작성 주체: 운영진 작성 / AI 작성 · 운영진 검수 / AI 작성 · 운영진 검수 전
   const notesBy =
     cert.notes.by === "staff" ? m.chapter.byStaff : cert.notes.reviewedAt ? m.chapter.byAiReviewed : m.chapter.byAi;
@@ -102,6 +104,11 @@ export default async function ChapterPage({ params }: Props) {
           </dd>
         </dl>
         <p>{chapter.summary}</p>
+        {hasConcept && (
+          <Link href={`${certPath}/concepts/${chapter.id}`} className="link inline-flex min-h-11 items-center">
+            {fmt(m.concepts.seeChapter, { name: chapter.name })}
+          </Link>
+        )}
       </header>
 
       {chapter.keyPoints.length > 0 && (

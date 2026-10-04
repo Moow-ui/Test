@@ -1,0 +1,15 @@
+{"cert":"industrial-safety-engineer","checkedAt":"2026-10-04","chapters":{
+"accident-theory":{"verdict":"PASS","problems":[],"notes":["하인리히 1:29:300, 버드 1:10:30:600, 도수율(×10^6)·강도율(×10^3), 사망·영구전노동불능 7,500일, 재해예방 4원칙 모두 맞음."]},
+"safety-management":{"verdict":"PASS","problems":[],"notes":["안전보건표지 색: 경고는 노란색이 원칙이지만, 화학물질 취급장소의 유해·위험 경고는 빨간색을 씀(시행규칙 별표 8). 이 예외를 한 줄 덧붙이면 더 정확함.","조직 형태와 규모(100명 미만 / 100~1,000명 / 1,000명 이상) 짝짓기, 위험예지훈련 4라운드, 무재해 3원칙 모두 맞음."]},
+"safety-education":{"verdict":"PASS","problems":[],"notes":[]},
+"human-factors":{"verdict":"PASS","problems":[],"notes":["'덮개를 열면 기계가 멈춤'은 인터록으로, 시험에서는 풀 프루프의 예로 분류되므로 맞음."]},
+"system-safety":{"verdict":"PASS","problems":[],"notes":["최소 패스셋 팁 '통과해서 안전하다'는 비유일 뿐 틀린 내용은 아님."]},
+"machine-guard":{"verdict":"PASS","problems":[],"notes":["양수조작식 D = 1.6×(Tl+Ts)[ms] = 1,600×T[s] 로 맞음. 연삭숫돌 시운전 1분/3분(기준규칙 제122조) 맞음."]},
+"lifting-pressure":{"verdict":"PASS","problems":[],"notes":["와이어로프 안전계수 10/5(기준규칙 제163조), 크레인 방호장치(제134조), 보일러 방호장치 4가지 모두 맞음."]},
+"electric-shock":{"verdict":"PASS","problems":[],"notes":["정전 작업 순서는 기준규칙 제319조에 근거하므로 source 를 달아 두면 좋음(숫자 기준이 아니라 FAIL 사유는 아님).","누전차단기 30mA·0.03초(제304조), 165/√T 모두 맞음."]},
+"static-explosion":{"verdict":"FAIL","problems":[{"where":"concepts[방폭 구조 기호].tip","issue":"'알파벳이 영어 이름 첫 글자는 아니므로'라고 단정하지만 일부만 맞음. 압력 p(pressurized), 유입 o(oil), 본질안전 i(intrinsic)는 영어 첫 글자이고, 내압 d(독일어 druckfest)·안전증 e(독일어 erhöhte Sicherheit)만 영어 첫 글자가 아님. 암기 팁이 틀린 사실을 가르침.","correct":"예: '압력 p(pressure)·유입 o(oil)·본질안전 i(intrinsic)는 영어 첫 글자, 내압 d·안전증 e는 독일어에서 왔으니 따로 외우세요.'","evidence":"IEC 60079 방폭 구조 기호(Ex d/p/o/e/i) 명칭 유래"}],"notes":["기호와 이름 짝(d·p·o·e·ia/ib) 자체와 0·1·2종 장소 구분은 맞음."]},
+"fire-explosion":{"verdict":"PASS","problems":[],"notes":["르샤틀리에 식은 혼합 가스가 모두 가연성일 때(부피 합 100%) 기준. 위험도 H=(U−L)/L 맞음."]},
+"chemical-handling":{"verdict":"PASS","problems":[],"notes":["위험물 1~6류(위험물안전관리법 시행령 별표 1, 소방청 소관), MSDS 16항목, 파열판 설치 대상(기준규칙 제262조) 모두 맞음.","TWA 8시간·STEL 15분은 고용노동부 '화학물질 및 물리적 인자의 노출기준' 고시 값이므로 source 를 달면 좋음."]},
+"fall-scaffold":{"verdict":"PASS","problems":[],"notes":["안전난간 90cm·10cm·100kg(제13조), 작업발판 40cm·3cm(제56조), 가설통로 30도·15도(제23조), 낙하물 방지망 10m·2m·20~30도(제14조) 모두 맞음.","가설통로: 규칙 문구는 '15도 초과 시 미끄러지지 않는 구조로 할 것'이며 '막이를 단다'는 것은 쉬운 말 풀이로 허용 범위."]},
+"excavation-structure":{"verdict":"PASS","problems":[],"notes":["굴착면 기울기는 개정된 기준규칙 별표 11 기준(모래 1:1.8, 연암·풍화암 1:1.0, 경암 1:0.5, 그 밖의 흙 1:1.2)과 일치. 철골 작업 중지 10m/s·1mm/h·1cm/h(제383조) 맞음."]}
+}}

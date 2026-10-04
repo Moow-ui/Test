@@ -1,18 +1,19 @@
 import { z } from "zod";
 import { isWithinPastWindow } from "../past";
-import { COUNTRIES, certMetaSchema, certSummarySchema, chaptersFileSchema, questionSchema } from "../schemas";
+import { COUNTRIES, certMetaSchema, certSummarySchema, chaptersFileSchema, conceptsFileSchema, questionSchema } from "../schemas";
 import type {
   CertListItem,
   CertMeta,
   CertSummary,
   Certification,
+  ConceptChapter,
   Country,
   PoolItem,
   Question,
   Subject,
 } from "../types";
 import { fsStore } from "./fs-store";
-import { chaptersFile, countryDir, metaFile, questionsDir } from "./paths";
+import { chaptersFile, conceptsFile, countryDir, metaFile, questionsDir } from "./paths";
 import type { DataStore } from "./store";
 
 /**
@@ -190,4 +191,33 @@ export async function getReadyCertifications(country?: Country): Promise<Certifi
 export async function getCertSummary(id: string): Promise<CertSummary | null> {
   const cert = await findCert(id);
   return cert ? certSummarySchema.parse(cert.meta) : null;
+}
+
+/** 자격증 개념 정리 (concepts.json). 검증을 통과한(verifiedAt 이 있는) 단원만, chapters.json 의 단원 순서대로 */
+export interface CertConcepts {
+  by: "ai" | "staff";
+  chapters: Array<{ id: string; verifiedAt: string } & Omit<ConceptChapter, "verifiedAt">>;
+  /** 가장 최근 검증 날짜 (sitemap lastmod) */
+  verifiedAt: string;
+}
+
+/** 개념 정리가 없거나 검증을 통과한 단원이 하나도 없으면 null */
+export function getConcepts(certId: string): Promise<CertConcepts | null> {
+  return cached(`concepts:${certId}`, async () => {
+    const cert = await findCert(certId);
+    if (!cert?.subjects) return null;
+    const raw = await store.readJson(conceptsFile(cert.meta.country, cert.meta.id));
+    if (!raw) return null;
+    const file = conceptsFileSchema.parse(raw);
+    const chapters: CertConcepts["chapters"] = [];
+    for (const subject of cert.subjects) {
+      for (const chapter of subject.chapters) {
+        const c = file.chapters[chapter.id];
+        if (c?.verifiedAt) chapters.push({ ...c, id: chapter.id, verifiedAt: c.verifiedAt });
+      }
+    }
+    if (chapters.length === 0) return null;
+    const verifiedAt = chapters.map((c) => c.verifiedAt).sort().at(-1)!;
+    return { by: file.by, chapters, verifiedAt };
+  });
 }

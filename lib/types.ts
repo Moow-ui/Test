@@ -5,6 +5,8 @@ import type {
   certMetaSchema,
   certSummarySchema,
   chapterSchema,
+  conceptChapterSchema,
+  conceptsFileSchema,
   examInfoSchema,
   faqSchema,
   questionSchema,
@@ -33,6 +35,8 @@ export type CertSummary = z.infer<typeof certSummarySchema>;
 export type CertMeta = z.infer<typeof certMetaSchema>;
 export type CertDetail = z.infer<typeof certDetailSchema>;
 export type Question = z.infer<typeof questionSchema>;
+export type ConceptsFile = z.infer<typeof conceptsFileSchema>;
+export type ConceptChapter = z.infer<typeof conceptChapterSchema>;
 
 /**
  * 자격증 한 건.

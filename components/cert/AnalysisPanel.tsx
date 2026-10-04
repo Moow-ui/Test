@@ -15,10 +15,13 @@ export function AnalysisPanel({
   certId,
   subjects,
   linkChapters = true,
+  conceptChapterIds = [],
 }: {
   certId: string;
   subjects: Subject[];
   linkChapters?: boolean;
+  /** 개념 정리 페이지가 있는 단원. 이 단원 이름은 개념 정리(/concepts/{단원})로, 나머지는 단원 핵심정리로 간다 */
+  conceptChapterIds?: string[];
 }) {
   const { locale, m } = useMessages();
   const [byImportance, setByImportance] = useState(false);
@@ -62,7 +65,15 @@ export function AnalysisPanel({
                   return (
                     <li key={chapter.id}>
                       {linkChapters ? (
-                        <Link href={localePath(locale, `/cert/${certId}/${chapter.id}`)} className="link">
+                        <Link
+                          href={localePath(
+                            locale,
+                            conceptChapterIds.includes(chapter.id)
+                              ? `/cert/${certId}/concepts/${chapter.id}`
+                              : `/cert/${certId}/${chapter.id}`,
+                          )}
+                          className="link"
+                        >
                           {label}
                         </Link>
                       ) : (

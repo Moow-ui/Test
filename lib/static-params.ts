@@ -1,4 +1,4 @@
-import { getCertList, getReadyCertifications } from "./data";
+import { getCertList, getConcepts, getReadyCertifications } from "./data";
 import { LOCALES, localeCountry } from "./i18n";
 
 /**
@@ -35,6 +35,30 @@ export async function chapterParams(): Promise<Array<{ lang: string; slug: strin
     for (const cert of await getReadyCertifications(localeCountry(lang))) {
       for (const subject of cert.subjects) {
         for (const chapter of subject.chapters) result.push({ lang, slug: cert.id, chapterId: chapter.id });
+      }
+    }
+  }
+  return result;
+}
+
+/** 개념 정리 화면: 검증을 통과한 단원이 하나라도 있는 자격증 */
+export async function conceptParams(): Promise<Array<{ lang: string; slug: string }>> {
+  const result = [];
+  for (const lang of LOCALES) {
+    for (const cert of await getReadyCertifications(localeCountry(lang))) {
+      if (await getConcepts(cert.id)) result.push({ lang, slug: cert.id });
+    }
+  }
+  return result;
+}
+
+/** 단원 개념 정리 화면: 검증을 통과한 단원만 */
+export async function conceptChapterParams(): Promise<Array<{ lang: string; slug: string; chapterId: string }>> {
+  const result = [];
+  for (const lang of LOCALES) {
+    for (const cert of await getReadyCertifications(localeCountry(lang))) {
+      for (const chapter of (await getConcepts(cert.id))?.chapters ?? []) {
+        result.push({ lang, slug: cert.id, chapterId: chapter.id });
       }
     }
   }

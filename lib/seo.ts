@@ -104,6 +104,61 @@ export function chapterMeta(
   };
 }
 
+/** 자격증 개념 정리 (단원 목차 + 단원별 핵심 개념) */
+export function conceptsMeta(locale: Locale, cert: Certification, chapterCount: number): PageMeta {
+  const m = getMessages(locale);
+  const vars = { name: cert.name, subjects: cert.subjects.length, chapters: chapterCount, brand: brandName(locale) };
+  return {
+    title: fmt(m.seo.concepts.title, vars),
+    description: fmt(m.seo.concepts.description, vars),
+    h1: fmt(m.concepts.h1, vars),
+    path: localePath(locale, `/cert/${cert.id}/concepts`),
+  };
+}
+
+/** 단원 개념 정리 */
+export function conceptChapterMeta(
+  locale: Locale,
+  cert: Certification,
+  subject: Subject,
+  chapter: Chapter,
+  conceptCount: number,
+  firstDefinition: string,
+): PageMeta {
+  const m = getMessages(locale);
+  const vars = {
+    name: cert.name,
+    subject: subject.name,
+    chapter: chapter.name,
+    n: conceptCount,
+    first: firstSentence(firstDefinition),
+    brand: brandName(locale),
+  };
+  return {
+    title: fmt(m.seo.conceptChapter.title, vars),
+    description: fmt(m.seo.conceptChapter.description, vars),
+    h1: fmt(m.concepts.chapterH1, vars),
+    path: localePath(locale, `/cert/${cert.id}/concepts/${chapter.id}`),
+  };
+}
+
+/** Article 구조화 데이터 (개념 정리). 쓴 주체는 사이트(단체)로 적는다 */
+export function articleJsonLd(locale: Locale, meta: PageMeta, dateModified: string) {
+  const publisher = { "@type": "Organization", name: brandName(locale), url: absoluteUrl(localePath(locale)) };
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: meta.h1,
+    description: meta.description,
+    inLanguage: locale,
+    mainEntityOfPage: absoluteUrl(meta.path),
+    datePublished: dateModified,
+    dateModified,
+    author: publisher,
+    publisher,
+  };
+}
+
 function firstSentence(text: string): string {
   const match = text.match(/^.*?[.!?](?=\s|$)/);
   return match ? match[0] : text;

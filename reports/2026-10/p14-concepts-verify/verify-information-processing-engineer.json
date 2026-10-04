@@ -1,0 +1,18 @@
+{"cert":"information-processing-engineer","checkedAt":"2026-10-04","chapters":{
+"requirements":{"verdict":"PASS","problems":[],"notes":["애자일 선언 4가치 중 '프로세스·도구보다 개인과 상호작용'이 빠져 있음(틀린 내용은 아님, 추가하면 더 완전)."]},
+"ui-design":{"verdict":"PASS","problems":[],"notes":[]},
+"app-design":{"verdict":"PASS","problems":[],"notes":["결합도(자료→스탬프→제어→외부→공통→내용), 응집도(기능→순차→교환→절차→시간→논리→우연) 순서 확인 완료. 교환 응집도는 '통신 응집도'라고도 부른다고 덧붙이면 좋음."]},
+"interface-design":{"verdict":"PASS","problems":[],"notes":[]},
+"data-structure":{"verdict":"PASS","problems":[],"notes":[]},
+"testing":{"verdict":"PASS","problems":[],"notes":[]},
+"packaging":{"verdict":"PASS","problems":[],"notes":["DRM 구성 요소는 일부만 나열됨(콘텐츠 분배자·보안 컨테이너·콘텐츠 소비자도 있음). 틀린 내용은 아님."]},
+"data-modeling":{"verdict":"PASS","problems":[],"notes":["참조 무결성: 외래키 값은 참조 표에 있는 값이거나 Null 일 수 있음. '실제로 있는 값이어야'만 쓰면 Null 허용이 빠짐 — '(또는 Null)'을 덧붙이길 권장."]},
+"sql":{"verdict":"PASS","problems":[],"notes":["COMMIT·ROLLBACK 을 DCL 로 분류한 것은 정보처리기사 교재 기준과 일치(일반적으로는 TCL 로 따로 나누기도 함)."]},
+"physical-db":{"verdict":"PASS","problems":[],"notes":["'뷰는 ALTER 로 바꿀 수 없다'는 정보처리기사 시험 기준과 일치(실제 일부 DBMS 에는 ALTER VIEW 가 있음)."]},
+"languages":{"verdict":"PASS","problems":[],"notes":["배열과 포인터: '*(p + i) 는 p[i] 와 같은 값을 가리킵니다' → '*(p + i) 는 p[i] 와 같은 값입니다'가 더 정확(* 로 꺼낸 것은 값 자체). 또 p 가 무엇인지(배열 이름 또는 배열을 가리키는 포인터) 한 번 밝혀 주면 좋음."]},
+"os":{"verdict":"PASS","problems":[],"notes":[]},
+"network":{"verdict":"PASS","problems":[],"notes":[]},
+"sw-methodology":{"verdict":"PASS","problems":[],"notes":[]},
+"it-trends":{"verdict":"PASS","problems":[],"notes":[]},
+"security":{"verdict":"PASS","problems":[],"notes":[]}
+}}

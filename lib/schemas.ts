@@ -44,7 +44,7 @@ export const SOURCES = ["past", "predicted"] as const;
 export const REVIEW_STATUSES = ["verified", "unverified"] as const;
 
 /** /cert/[slug]/ 바로 아래의 고정 경로와 겹치면 안 되는 단원 id */
-export const RESERVED_CHAPTER_IDS = ["past", "quiz", "cbt", "notes", "opengraph-image"];
+export const RESERVED_CHAPTER_IDS = ["past", "quiz", "cbt", "notes", "concepts", "opengraph-image"];
 
 const slugSchema = z
   .string()
@@ -226,6 +226,56 @@ export const chaptersFileSchema = z.object({
     .regex(/^\d{4}-\d{2}-\d{2}$/)
     .optional(),
   subjects: z.array(subjectSchema).min(1),
+});
+
+const dateSchema = z.string().regex(/^\d{4}-\d{2}-\d{2}$/);
+
+/** 법령·기준 수치의 출처: 기관(법령 이름)과 기준 연도 */
+export const conceptSourceSchema = z.object({
+  /** 예: "산업안전보건기준에 관한 규칙(고용노동부)" */
+  org: z.string().min(1),
+  /** 이 수치를 확인한 기준 연도 */
+  year: z.number().int().min(2000).max(2100),
+});
+
+/** 핵심 개념 카드 하나: 정의 + 외우는 요령 */
+export const conceptCardSchema = z.object({
+  term: z.string().min(1).max(40),
+  definition: z.string().min(10).max(300),
+  tip: z.string().min(5).max(200),
+  /** 법령·기준 수치가 들어 있으면 반드시 적는다 */
+  source: conceptSourceSchema.optional(),
+});
+
+/** 헷갈리는 것 비교표 (있을 때만) */
+export const conceptCompareSchema = z
+  .object({
+    title: z.string().min(1),
+    columns: z.array(z.string().min(1)).min(2).max(4),
+    rows: z.array(z.array(z.string().min(1))).min(2).max(8),
+  })
+  .refine((t) => t.rows.every((r) => r.length === t.columns.length), { message: "비교표의 칸 수가 맞지 않습니다" });
+
+export const conceptChapterSchema = z.object({
+  /**
+   * 작성과 분리된 검증(다시 읽고 사실·수치 확인)을 통과한 날짜. 없으면 그 단원 개념 정리 페이지를 만들지 않는다.
+   * 실패한 단원은 이 값을 적지 않는다.
+   */
+  verifiedAt: dateSchema.optional(),
+  concepts: z.array(conceptCardSchema).min(3).max(7),
+  /** 자주 나오는 포인트 */
+  points: z.array(z.string().min(5).max(200)).min(2).max(6),
+  compare: conceptCompareSchema.optional(),
+});
+
+/**
+ * data/certs/{country}/{slug}/concepts.json — 자격증 "개념 정리" 페이지 (/cert/{slug}/concepts).
+ * 문장은 새로 쓴다 (교재·다른 사이트 복사 금지). 단원 키는 chapters.json 의 단원 id.
+ */
+export const conceptsFileSchema = z.object({
+  /** 쓴 주체. ai 면 화면에 "AI 작성 · 검수 완료" */
+  by: z.enum(NOTES_AUTHORS),
+  chapters: z.record(z.string(), conceptChapterSchema),
 });
 
 /** data/certs/{country}/{slug}/exams/{year}-{round}.json — 실전 모의고사 구성 (문제 id 목록) */

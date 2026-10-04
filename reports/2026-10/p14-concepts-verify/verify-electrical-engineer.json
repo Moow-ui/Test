@@ -1,0 +1,18 @@
+{"cert":"electrical-engineer","checkedAt":"2026-10-04","chapters":{
+"electrostatic-field":{"verdict":"PASS","problems":[],"notes":[]},
+"magnetic-field":{"verdict":"PASS","problems":[],"notes":["히스테리시스 손 ∝ f, 와류손 ∝ f² 는 최대 자속 밀도가 같다는 전제의 표준 서술이라 문제 없음."]},
+"em-induction":{"verdict":"PASS","problems":[],"notes":[]},
+"transmission":{"verdict":"PASS","problems":[],"notes":[]},
+"protection":{"verdict":"PASS","problems":[],"notes":[]},
+"distribution":{"verdict":"PASS","problems":[],"notes":[]},
+"generation":{"verdict":"PASS","problems":[],"notes":["감속재 목록에 베릴륨(산화베릴륨)이 빠졌지만 틀린 내용은 아님."]},
+"dc-machine":{"verdict":"PASS","problems":[],"notes":[]},
+"synchronous-machine":{"verdict":"PASS","problems":[],"notes":["3상 발전기는 상회전 방향도 같아야 하지만, 시험에서 흔히 나오는 4가지 조건을 적은 것이라 오류는 아님."]},
+"transformer":{"verdict":"PASS","problems":[],"notes":["3상 병렬 운전에는 상회전 방향·각 변위가 같아야 한다는 조건도 있음. 결선 조합 팁으로 일부 다루고 있음."]},
+"induction-motor":{"verdict":"PASS","problems":[],"notes":["Y-Δ 기동에서 1/3 로 줄어드는 것은 선전류 기준. 시험에서 쓰는 표준 서술임."]},
+"circuit-theory":{"verdict":"PASS","problems":[],"notes":[]},
+"control":{"verdict":"PASS","problems":[],"notes":[]},
+"kec-general":{"verdict":"PASS","problems":[],"notes":["KEC 111.1(전압 구분), 121.2(전선 식별 색), 141(접지 시스템 구분·시설 종류), 142.2(접지극 0.75m 이상)와 맞음.","출처 태그에 KEC 조항 번호가 없음. 넣으면 더 좋음."]},
+"kec-wiring":{"verdict":"PASS","problems":[],"notes":["KEC 231.3.1(2.5mm² 연동선; 1mm² 이상 MI 케이블 예외는 빠짐), 과전류 차단기 시설 제한, 211.2.4(누전 차단기 50V), 132(7kV 이하 1.5배 10분)와 맞음.","절연 내력 시험: 시험 전압의 최저값 500V 와 '전로와 대지 사이' 표현이 빠졌지만 틀린 내용은 아님.","출처 태그에 KEC 조항 번호가 없음."]},
+"kec-line":{"verdict":"PASS","problems":[],"notes":["KEC 331.4(발판 볼트 1.8m), 331.11(지선 안전율 2.5·4.31kN·3가닥·도로 횡단 5m), 222.7/332.5(도로 6m·철도 6.5m), 331.7(묻는 깊이), 332.9(고압 경간 150/250/600m)와 맞음.","지선: 안전율 1.5 를 쓰는 경우(목주 등)와 교통 지장 없을 때 4.5m 예외는 빠짐.","묻는 깊이: 설계하중 6.8kN 이하 기준이며, 16m 초과 20m 이하는 2.8m 이상이라는 세부 규정은 빠짐(15m 초과 2.5m 이상 자체는 맞음).","출처 태그에 KEC 조항 번호가 없음."]}
+}}

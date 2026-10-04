@@ -1,0 +1,95 @@
+{
+  "cert": "construction-safety-engineer",
+  "checkedAt": "2026-10-04",
+  "chapters": {
+    "accident-prevention": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": ["Heinrich 5단계, 3E, 연천인율(=도수율×2.4), 종합재해지수 √(FR×SR), 도수율·강도율 식 모두 맞음."]
+    },
+    "safety-system": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "산업안전보건위원회: '노사 같은 수' 구성은 산업안전보건법 제24조, 분기별 정기회의는 시행령 제37조에 있음. 출처를 '산업안전보건법·시행령'으로 적으면 더 정확함.",
+        "안전보건표지 색: 빨간색은 금지 외에 화학물질 취급장소 경고에도 쓰임(시행규칙 별표 8). 단순화한 설명이며 틀린 내용은 아님."
+      ]
+    },
+    "education-psychology": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": []
+    },
+    "ergonomics-basics": {
+      "verdict": "FAIL",
+      "problems": [
+        {
+          "where": "concepts[2] '인체 측정 자료의 응용' definition",
+          "issue": "'극단치 설계, 조절식 설계, 마지막으로 평균치 설계 순서로 생각합니다'라고 적어 극단치 설계가 먼저인 것처럼 읽힘. 같은 카드의 tip('조절식이 가장 좋고')과도 어긋남.",
+          "correct": "시험에서 쓰는 적용 순서는 조절식 설계 → 극단치 설계 → 평균치 설계. 정의를 '조절식 설계를 먼저 생각하고, 안 되면 극단치 설계, 마지막으로 평균치 설계' 식으로 고쳐야 함.",
+          "evidence": "인간공학 표준 교재·기출(인체계측자료 응용원칙 적용 순서: 조절식 → 극단치 → 평균치)"
+        }
+      ],
+      "notes": [
+        "points[2] 청각 표시가 유리한 경우의 '어두운 곳': 교재 표현은 보통 '수신 장소가 너무 밝거나 암순응을 유지해야 할 때'임. 틀렸다고 보기는 어렵지만 표현을 다듬는 것을 권장함."
+      ]
+    },
+    "risk-assessment": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "위험성평가 절차: 지침 제8조 본문은 5단계(사전준비→유해·위험요인 파악→위험성 결정→감소대책 수립·실행→기록·보존)이고, '공유'는 별도 조문과 2023 고용노동부 '새로운 위험성평가 안내서'의 단계도에 나옴. 순서는 맞지만 '법령상 절차 5단계 + 공유'라고 밝히면 시험 선지와 덜 헷갈림. 근거: https://gycci.korcham.net/file/dext5uploaddata/2023/2023%20%EC%83%88%EB%A1%9C%EC%9A%B4%20%EC%9C%84%ED%97%98%EC%84%B1%ED%8F%89%EA%B0%80%20%EC%95%88%EB%82%B4%EC%84%9C%20(%EC%A0%80%EC%9A%A9%EB%9F%89).pdf",
+        "감소대책 우선순위(제거→공학적→관리적→보호구), 욕조곡선, 가용도 식, FTA/FMEA/ETA 구분 모두 맞음."
+      ]
+    },
+    "cement-concrete": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": []
+    },
+    "steel-wood": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": []
+    },
+    "finish-materials": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": []
+    },
+    "contract-earthwork": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": ["웰 포인트·샌드 드레인 tip의 '이름과 반대라'는 샌드 드레인(모래 이름이지만 점토용)만 해당함. 표현이 조금 모호하지만 틀린 내용은 아님."]
+    },
+    "rc-work": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": []
+    },
+    "steel-masonry": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": []
+    },
+    "safety-plan": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": ["대상 공사(시행령 제42조: 31m·50m·10m·터널)와 제출 시기·제출처(시행규칙 제42조: 착공 전날까지 공단)가 맞음. 대상 공사에는 연면적 3만㎡ 이상 건축물, 댐 공사 등도 있음('등'으로 처리되어 있음)."]
+    },
+    "fall-temporary": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": ["추락방호망(제42조 10m·3m), 달비계 안전계수(제55조 10·5), 말비계 75°(제67조), 이동식 비계 250kg(제68조), 안전난간 90cm·10cm(제13조) 모두 맞음."]
+    },
+    "excavation-machinery": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "굴착면 기울기(별표 11: 모래 1:1.8, 연암·풍화암 1:1.0, 경암 1:0.5) 맞음. '그 밖의 흙 1:1.2'를 넣으면 더 완전함.",
+        "타워크레인 풍속 10m/s·15m/s는 기준규칙 제37조 제2항 현행 규정과 맞음(2017년에 20→15m/s로 변경). 근거: https://www.anjunj.com/news/articleView.html?idxno=17158",
+        "양중기 5종(제132조), 항타기·항발기 와이어로프 안전계수 5 이상(제211조) 맞음."
+      ]
+    }
+  }
+}

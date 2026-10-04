@@ -4,6 +4,7 @@
  *   data/certs/{country}/{slug}/
  *     meta.json                   자격증 정보 (시행기관, 시험 구성, 선지 수, 합격 기준, 출처)
  *     chapters.json               과목·단원·중요도·출제 비중
+ *     concepts.json               개념 정리 (선택. 검증을 통과한 단원만 페이지가 생긴다)
  *     questions/{chapterId}.json  단원별 문제 (파일당 최대 300문항, 넘으면 {chapterId}-2.json, -3.json)
  *     exams/{year}-{round}.json   실전 모의고사 구성
  *     assets/                     문제 그림
@@ -26,9 +27,10 @@ export const chaptersFile = (country: string, slug: string) => `${certDir(countr
 export const questionsDir = (country: string, slug: string) => `${certDir(country, slug)}/questions`;
 export const examsDir = (country: string, slug: string) => `${certDir(country, slug)}/exams`;
 export const assetsDir = (country: string, slug: string) => `${certDir(country, slug)}/assets`;
+export const conceptsFile = (country: string, slug: string) => `${certDir(country, slug)}/concepts.json`;
 
 /** 자격증 폴더 안에 둘 수 있는 이름 */
-export const CERT_DIR_ENTRIES = ["meta.json", "chapters.json", "questions", "exams", "assets"];
+export const CERT_DIR_ENTRIES = ["meta.json", "chapters.json", "concepts.json", "questions", "exams", "assets"];
 
 /** 단원의 n번째 문제 파일 이름 (확장자 없이). 1번째는 단원 id 그대로, 2번째부터 -2, -3 */
 export function questionFileStem(chapterId: string, part: number): string {
