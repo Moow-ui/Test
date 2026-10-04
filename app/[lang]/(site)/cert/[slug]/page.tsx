@@ -103,7 +103,16 @@ export default async function CertPage({ params }: Props) {
             : null
         }
         showConcepts={cert.ready && !!examInfo}
-        conceptsHref={concepts ? localePath(lang, `/cert/${cert.id}/concepts`) : undefined}
+        concepts={
+          concepts && concepts.chapters.length > 0
+            ? {
+                href: localePath(lang, `/cert/${cert.id}/concepts`),
+                subjects: cert.subjects.filter((s) => s.chapters.some((c) => concepts.chapters.some((k) => k.id === c.id)))
+                  .length,
+                chapters: concepts.chapters.length,
+              }
+            : undefined
+        }
       />
 
       {!cert.ready && (

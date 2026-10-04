@@ -122,7 +122,22 @@
     "noResult": "아직 없는 자격증이에요",
     "popular": "많이 찾는 자격증",
     "popularBy": "운영진 선정",
-    "allCerts": "전체 자격증 목록"
+    "allCerts": "전체 자격증 목록",
+    "dailyTitle": "오늘의 1문제",
+    "dailyDate": "{month}월 {day}일",
+    "dailyLoading": "오늘의 문제를 불러오는 중…",
+    "dailyMore": "{name} 문제 더 풀기 →",
+    "certCount": "{n}개",
+    "filter": "분류 ▼",
+    "filterOn": "분류 적용 중 ▼",
+    "filterClose": "분류 접기 ▲",
+    "filterField": "분야",
+    "filterGrade": "등급",
+    "filterOther": "기타",
+    "filterReady": "준비된 것만",
+    "filterReset": "분류 초기화",
+    "filterNone": "조건에 맞는 자격증이 없어요",
+    "conceptBadge": "개념"
   },
   "cert": {
     "soon": "{name} 문제는 준비 중입니다.",
@@ -163,8 +178,14 @@
     "sortedByImportance": "✓ 중요도순",
     "chapterLabel": "{no}단원 : {name}",
     "weight": "출제 비중 {n}%",
-    "conceptsFirst": "📖 풀기 전에 단원별 핵심 개념 먼저 보기 →",
-    "analysisHint": "단원 이름을 누르면 그 단원의 핵심 개념과 대표 문제를 볼 수 있어요."
+    "conceptsFirst": "📖 풀기 전에 단원별 핵심정리 먼저 보기 →",
+    "analysisHint": "단원 이름을 누르면 그 단원의 핵심 개념과 대표 문제를 볼 수 있어요.",
+    "conceptsCardTitle": "핵심 개념 정리",
+    "conceptsCardDesc": "풀기 전에 과목별·단원별 핵심 개념을 먼저 읽어 보세요.",
+    "conceptsCardCount": "{subjects}과목 · {chapters}개 단원",
+    "conceptsCardGo": "개념 정리 보기 →",
+    "seeConcept": "개념 보기",
+    "seeConceptLabel": "{name} 개념 보기"
   },
   "chapter": {
     "eyebrow": "{cert} 필기 · {subject} 과목",

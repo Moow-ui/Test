@@ -37,6 +37,10 @@ export const GRADE_TIER: Record<string, GradeTier> = {
   "2급": "mint",
   "1급": "teal",
 };
+/**
+ * 홈 전체 목록 [분류]의 등급 단추 순서 (P15). 데이터에 있는 등급만 단추가 되고, 여기 없는 등급·등급 없는 자격증은 "기타"로 묶는다.
+ */
+export const GRADE_FILTER_ORDER = ["기능사", "산업기사", "기사", "기능장", "기술사"] as const;
 /** 자격증의 나라. KR 은 /ko, US 는 /en 에만 노출한다 (lib/i18n.ts 의 localeCountry) */
 export const COUNTRIES = ["KR", "US"] as const;
 export const LEVELS = ["basic", "intermediate", "advanced"] as const;

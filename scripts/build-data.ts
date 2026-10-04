@@ -8,6 +8,7 @@
  */
 import fs from "node:fs";
 import path from "node:path";
+import { buildDailySchedule, isDailyCandidate } from "../lib/daily";
 import { getCertList, getQuestionFiles, getQuestionPool } from "../lib/data";
 import { copyDataFile, fsStore } from "../lib/data/fs-store";
 import {
@@ -15,6 +16,7 @@ import {
   PUBLIC_DATA_DIR,
   assetsDir,
   publicAssetPath,
+  publicDailyPath,
   publicPoolPath,
   publicQuestionsPath,
 } from "../lib/data/paths";
@@ -38,14 +40,23 @@ async function main(): Promise<void> {
     all.map((cert) => cert.id),
   );
 
+  // 홈 "오늘의 1문제" 후보 (나라별)
+  const daily = new Map<string, Parameters<typeof buildDailySchedule>[0]>();
+
   for (const cert of all) {
     if (!cert.ready) continue;
     certs += 1;
     write(publicPoolPath(cert.id), await getQuestionPool(cert.id));
+    const items: Array<{ id: string; file: string }> = [];
     for (const file of await getQuestionFiles(cert.id)) {
       write(publicQuestionsPath(cert.id, file.stem), file.questions);
       files += 1;
+      for (const q of file.questions) if (isDailyCandidate(q)) items.push({ id: q.id, file: file.stem });
     }
+    items.sort((a, b) => a.id.localeCompare(b.id));
+    const list = daily.get(cert.country) ?? [];
+    list.push({ certId: cert.id, certName: cert.name, items });
+    daily.set(cert.country, list);
     for (const name of await fsStore.list(assetsDir(cert.country, cert.id))) {
       copyDataFile(
         `${assetsDir(cert.country, cert.id)}/${name}`,
@@ -53,6 +64,7 @@ async function main(): Promise<void> {
       );
     }
   }
+  for (const [country, candidates] of daily) write(publicDailyPath(country), buildDailySchedule(candidates));
   console.log(`[build-data] 자격증 ${certs}종, 문제 파일 ${files}개 → ${PUBLIC_DATA_DIR}`);
 }
 

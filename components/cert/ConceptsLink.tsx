@@ -1,11 +1,10 @@
 "use client";
 
-import { useEffect } from "react";
 import { ANALYSIS_ANCHOR } from "@/components/cert/anchors";
 import { useMessages } from "@/lib/use-messages";
 
 /** 접힌 출제 분석을 펼치고 그 위치로 바로 이동한다 (애니메이션 없이) */
-function openAnalysis(): boolean {
+export function openAnalysis(): boolean {
   const el = document.getElementById(ANALYSIS_ANCHOR);
   if (!(el instanceof HTMLDetailsElement)) return false;
   el.open = true;
@@ -15,23 +14,17 @@ function openAnalysis(): boolean {
 }
 
 /**
- * 실전 문제풀이 바로 아래의 얇은 한 줄 링크: "풀기 전에 단원별 핵심 개념 먼저 보기 →".
- * 문제 박스보다 눈에 덜 띄게 연한 배경·작은 글씨로 둔다.
- * 개념 정리 페이지가 있으면(href) 그 페이지로 가고, 없으면 같은 페이지의 출제 분석을 펼친다.
+ * 개념 정리가 없는 자격증: 실전 문제풀이 바로 아래의 얇은 한 줄 링크 "풀기 전에 단원별 핵심정리 먼저 보기 →".
+ * 같은 페이지의 출제 분석을 펼친다 (단원 이름 → 단원 핵심정리). 이 경우 "개념 정리"라는 이름은 쓰지 않는다 (P15).
+ * 개념 정리가 있는 자격증은 이 줄 대신 CertBoxes 의 "핵심 개념 정리" 카드가 나온다.
  */
-export function ConceptsLink({ href }: { href?: string }) {
+export function ConceptsLink() {
   const { m } = useMessages();
-
-  // 주소가 #analysis 로 열리면(단원 페이지의 "출제 분석으로 돌아가기") 출제 분석을 펼쳐 둔다
-  useEffect(() => {
-    if (window.location.hash === `#${ANALYSIS_ANCHOR}`) openAnalysis();
-  }, []);
-
   return (
     <a
-      href={href ?? `#${ANALYSIS_ANCHOR}`}
+      href={`#${ANALYSIS_ANCHOR}`}
       onClick={(e) => {
-        if (href || !openAnalysis()) return;
+        if (!openAnalysis()) return;
         e.preventDefault();
         history.replaceState(null, "", `#${ANALYSIS_ANCHOR}`);
       }}

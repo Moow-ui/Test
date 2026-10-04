@@ -230,7 +230,7 @@ export function ExamScreen({
       {/* ───── 문제 / 답안 표기란 ───── */}
       <div className="mx-auto grid w-full max-w-6xl flex-1 content-start gap-4 px-4 py-4 text-base lg:grid-cols-[1fr_16rem]">
         {/* key: 문제가 바뀌면 문제 영역(배지·해설 포함)을 통째로 새로 그린다. 안쪽 요소에 같은 key 를 다시 쓰지 않는다 */}
-        <section key={question.id} aria-label={m.question} className="rounded-2xl bg-surface p-4 sm:p-6">
+        <section key={question.id} aria-label={m.question} className="card p-4 sm:p-6">
           <ReviewLine question={question} />
           <h2 className="mt-2 whitespace-pre-wrap font-bold leading-normal">
             {index + 1}. {question.stem}
@@ -296,7 +296,7 @@ export function ExamScreen({
 
         <aside
           aria-label={m.sheet}
-          className={`rounded-2xl bg-surface p-4 text-sm lg:block ${showSheet ? "" : "hidden"}`}
+          className={`card p-4 text-sm lg:block ${showSheet ? "" : "hidden"}`}
         >
           <h2 className="text-center font-bold">{m.sheet}</h2>
           <ol className="mt-2 grid grid-cols-1 gap-x-4 sm:grid-cols-2 lg:max-h-[calc(100dvh-14rem)] lg:grid-cols-1 lg:overflow-y-auto">
@@ -359,7 +359,7 @@ export function ExamScreen({
             aria-modal="true"
             aria-labelledby="submit-title"
             aria-describedby="submit-text"
-            className="w-full max-w-md rounded-2xl bg-surface p-6 text-base outline-none"
+            className="w-full max-w-md card p-6 text-base outline-none"
           >
             <h2 id="submit-title" className="text-lg font-bold">
               {unanswered.length === 0

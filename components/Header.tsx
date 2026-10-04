@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { brandName, getMessages, localePath, type Locale } from "@/lib/i18n";
+import { LogoMark } from "./LogoMark";
 import { TopBar } from "./TopBar";
 import { HeaderAccount } from "./auth/HeaderAccount";
 
@@ -8,7 +9,11 @@ export function Header({ locale }: { locale: Locale }) {
   const m = getMessages(locale);
   return (
     <TopBar>
-      <Link href={localePath(locale)} className="text-[18px] font-bold tracking-tight text-accent sm:text-[22px]">
+      <Link
+        href={localePath(locale)}
+        className="inline-flex min-h-11 items-center gap-2 text-[18px] font-bold tracking-tight text-accent sm:text-[22px]"
+      >
+        <LogoMark size={28} />
         {brandName(locale)}
       </Link>
       <Link href={localePath(locale, "/notes")} className="hidden font-bold text-ink underline underline-offset-4 sm:inline">

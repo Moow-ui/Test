@@ -73,5 +73,7 @@ export const PUBLIC_CERT_IDS_PATH = "cert-ids.json";
 export const publicPoolPath = (slug: string) => `${slug}/pool.json`;
 /** 단원별 문제 파일 */
 export const publicQuestionsPath = (slug: string, fileStem: string) => `${slug}/questions/${fileStem}.json`;
+/** 홈 "오늘의 1문제" 일정표 (나라별, lib/daily.ts) */
+export const publicDailyPath = (country: string) => `daily/${country.toLowerCase()}.json`;
 export const publicAssetPath = (slug: string, name: string) => `${slug}/assets/${name}`;
 export const publicDataUrl = (relative: string) => `/data/${relative}`;

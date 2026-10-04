@@ -79,9 +79,9 @@ export function CertSearch({ certs }: { certs: CertListItem[] }) {
 
       {showList &&
         (results.length === 0 ? (
-          <p className="mt-2 rounded-2xl bg-surface px-6 py-4 text-lg font-bold">{m.home.noResult}</p>
+          <p className="mt-2 card px-6 py-4 text-lg font-bold">{m.home.noResult}</p>
         ) : (
-          <ul id={listId} role="listbox" aria-label={m.home.searchLabel} className="mt-2 rounded-2xl bg-surface py-2">
+          <ul id={listId} role="listbox" aria-label={m.home.searchLabel} className="mt-2 card py-2">
             {results.map((c, i) => (
               <li key={c.id} id={optionId(i)} role="option" aria-selected={i === active}>
                 <Link

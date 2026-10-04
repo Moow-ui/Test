@@ -104,7 +104,7 @@ function PopularCerts({ certs }: { certs: CertListItem[] }) {
   const { locale, m } = useMessages();
   if (certs.length === 0) return null;
   return (
-    <section aria-labelledby="popular-title" className="mx-auto max-w-2xl rounded-2xl bg-surface p-6">
+    <section aria-labelledby="popular-title" className="mx-auto max-w-2xl card p-6">
       <h2 id="popular-title" className="flex flex-wrap items-center gap-2 text-lg font-bold">
         {m.home.popular}
         <span className="rounded-full bg-surface-2 px-3 py-1 text-sm font-bold text-ink-sub">{m.home.popularBy}</span>

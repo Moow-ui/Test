@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import type { ReactNode } from "react";
 import { AdSlot } from "@/components/AdSlot";
 import { FoldMark } from "@/components/Fold";
+import { LogoMark } from "@/components/LogoMark";
 import { TopBar } from "@/components/TopBar";
 import { ChapterNotesLink } from "@/components/quiz/ChapterNotesLink";
 import { Markdown } from "@/components/Markdown";
@@ -26,7 +27,8 @@ export function ResultHeader() {
   const { locale, brand } = useMessages();
   return (
     <TopBar>
-      <Link href={localePath(locale)} className="text-[22px] font-bold tracking-tight text-accent">
+      <Link href={localePath(locale)} className="inline-flex min-h-11 items-center gap-2 text-[22px] font-bold tracking-tight text-accent">
+        <LogoMark size={28} />
         {brand}
       </Link>
     </TopBar>

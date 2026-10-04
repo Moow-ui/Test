@@ -56,7 +56,7 @@ export function ReviewForm({
 
   return (
     <form
-      className="space-y-4 rounded-2xl bg-surface p-6"
+      className="space-y-4 card p-6"
       onSubmit={(e) => {
         e.preventDefault();
         void submit();

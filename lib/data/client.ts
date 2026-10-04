@@ -1,8 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import type { PoolItem, Question } from "../types";
-import { publicDataUrl, publicPoolPath, publicQuestionsPath } from "./paths";
+import { dailyDateKey, dailyEntryFor, type DailyEntry } from "../daily";
+import type { Country, PoolItem, Question } from "../types";
+import { publicDailyPath, publicDataUrl, publicPoolPath, publicQuestionsPath } from "./paths";
 
 /**
  * 브라우저에서 문제 불러오기.
@@ -78,4 +79,26 @@ const NO_QUESTIONS: Question[] = [];
 export function useQuestions(certId: string, ids: readonly string[]): Question[] | null {
   const loaded = useLoaded(`questions:${certId}:${ids.join(",")}`, () => fetchQuestions(certId, ids));
   return ids.length === 0 ? NO_QUESTIONS : loaded;
+}
+
+/** 홈 "오늘의 1문제": 그 나라 오늘 날짜의 문제 (불러오는 중이면 null, 없으면 "none") */
+export interface DailyQuestion {
+  entry: DailyEntry;
+  question: Question;
+  /** 그 나라 날짜 YYYY-MM-DD */
+  date: string;
+}
+
+async function fetchDailyQuestion(country: Country): Promise<DailyQuestion | "none"> {
+  const date = dailyDateKey(country);
+  const schedule = await fetchJson<DailyEntry[]>(publicDailyPath(country)).catch(() => []);
+  const entry = dailyEntryFor(schedule, date);
+  if (!entry) return "none";
+  const file = await fetchJson<Question[]>(publicQuestionsPath(entry.certId, entry.file)).catch(() => []);
+  const question = file.find((q) => q.id === entry.id);
+  return question ? { entry, question, date } : "none";
+}
+
+export function useDailyQuestion(country: Country): DailyQuestion | "none" | null {
+  return useLoaded(`daily:${country}`, () => fetchDailyQuestion(country));
 }

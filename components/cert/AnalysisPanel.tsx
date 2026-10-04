@@ -9,7 +9,7 @@ import { useMessages } from "@/lib/use-messages";
 
 /**
  * 출제 분석: 과목을 가로로 나란히 놓고, 과목마다 "1단원 : 직류회로" 식으로 단원을 보여 준다.
- * 단원 옆에는 중요도 ★ 와 과목 내 출제 비중(%)만 둔다. linkChapters 가 false 면 단원 이름에 링크를 걸지 않는다.
+ * 단원 옆에는 중요도 ★ 와 과목 내 출제 비중(%)만 둔다. 개념 정리가 있는 단원은 줄 끝에 [개념 보기] (P15). linkChapters 가 false 면 단원 이름에 링크를 걸지 않는다.
  */
 export function AnalysisPanel({
   certId,
@@ -62,29 +62,35 @@ export function AnalysisPanel({
               <ol className="mt-2 space-y-4">
                 {chapters.map(({ chapter, no }) => {
                   const label = fmt(m.cert.chapterLabel, { no, name: chapter.name });
+                  const hasConcept = conceptChapterIds.includes(chapter.id);
+                  const conceptPath = `/cert/${certId}/concepts/${chapter.id}`;
                   return (
-                    <li key={chapter.id}>
-                      {linkChapters ? (
-                        <Link
-                          href={localePath(
-                            locale,
-                            conceptChapterIds.includes(chapter.id)
-                              ? `/cert/${certId}/concepts/${chapter.id}`
-                              : `/cert/${certId}/${chapter.id}`,
-                          )}
-                          className="link"
-                        >
-                          {label}
-                        </Link>
-                      ) : (
-                        <span className="font-bold">{label}</span>
-                      )}
-                      <span className="block text-sm">
-                        <Stars value={chapter.importance} />
-                        <span className="ml-2 font-bold text-ink-sub">
-                          {fmt(m.cert.weight, { n: chapter.examWeight })}
+                    <li key={chapter.id} className="flex items-start justify-between gap-2">
+                      <span className="min-w-0">
+                        {linkChapters ? (
+                          <Link href={localePath(locale, hasConcept ? conceptPath : `/cert/${certId}/${chapter.id}`)} className="link">
+                            {label}
+                          </Link>
+                        ) : (
+                          <span className="font-bold">{label}</span>
+                        )}
+                        <span className="block text-sm">
+                          <Stars value={chapter.importance} />
+                          <span className="ml-2 font-bold text-ink-sub">
+                            {fmt(m.cert.weight, { n: chapter.examWeight })}
+                          </span>
                         </span>
                       </span>
+                      {/* 개념 정리 페이지가 있는 단원(검증 통과)에만 */}
+                      {linkChapters && hasConcept && (
+                        <Link
+                          href={localePath(locale, conceptPath)}
+                          aria-label={fmt(m.cert.seeConceptLabel, { name: chapter.name })}
+                          className="inline-flex min-h-11 shrink-0 items-center rounded-lg bg-primary-soft px-2 text-sm font-bold text-accent hover:underline"
+                        >
+                          {m.cert.seeConcept}
+                        </Link>
+                      )}
                     </li>
                   );
                 })}

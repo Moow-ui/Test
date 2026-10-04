@@ -6,9 +6,10 @@
  *  굵기 2종:       font-normal(400) · font-bold(700)
  *  간격:           8px 단위. Tailwind 의 간격 1칸 = 4px 이고 짝수 칸(2=8px, 4=16px, 6=24px …)만 쓴다.
  *                  (예외: 작은 배지 안쪽 위아래 여백 py-1 = 4px)
- *  색:             강조색 1개(파랑 primary) + 정답 초록(ok) + 오답 빨강(bad) + 회색 계열(bg·surface·surface-2·ink·ink-sub·line)
+ *  색:             브랜드 주황(primary: 버튼 바탕 · accent: 글자·링크 · primary-soft: 넓은 면) + 정답 초록(ok) + 오답 빨강(bad)
+ *                  + 회색 계열(bg·surface·surface-2·ink·ink-sub·line) + 난이도 4색(lv-basic 초록 · lv-mid 파랑 · lv-adv 보라 · lv-cbt 먹색) (P15)
  *  모서리 2종:     rounded-lg(8px: 버튼·입력칸·작은 상자) · rounded-2xl(16px: 큰 상자). 동그라미(rounded-full)는 번호 원·배지에만.
- *  테두리:         되도록 쓰지 않는다. 상자는 바탕색 차이와 여백으로 구분하고, 상자 안에 상자를 넣지 않는다.
+ *  테두리:         카드(.card)·목록 카드·난이도 버튼은 1px 테두리(card-line) + 아주 옅은 그림자(shadow). 상자 안에 상자를 넣지 않는다 (P15).
  *
  * 다크모드는 <html class="dark"> 로 켠다. 처음에는 기기 설정을 따르고, 한 번 고르면 모든 화면에서 유지된다 (lib/storage.ts).
  * 명도 대비: 글자는 바탕과 4.5:1 이상 (WCAG AA). 연회색 글씨 금지 — 글자색은 ink / ink-sub 두 가지만.
@@ -21,27 +22,45 @@
     system-ui, sans-serif;
   --font-web: "Pretendard Variable", Pretendard, var(--font-system);
 
-  /* 회색 계열 */
-  --bg: #f3f4f6;
+  /* 회색 계열. 바탕(bg)과 카드(surface)의 차이를 키워 상자 경계가 보이게 한다 */
+  --bg: #e9ecf0;
   --surface: #ffffff;
-  --surface-2: #e9ecf1;
+  --surface-2: #e4e7ec;
   --ink: #111827;
   --ink-sub: #374151;
   --line: #9ca3af;
   --line-soft: #e5e7eb;
-  /* 강조색 (파랑) 하나 */
-  --primary: #1d4ed8;
-  --primary-hover: #1e40af;
-  --primary-soft: #e8efff;
-  /* 글자로 쓰는 파랑 (링크). 밝은 화면에서는 primary 와 같다 */
-  --accent: #1d4ed8;
+  /* 카드 테두리(1px)와 그림자 */
+  --card-line: #d1d6de;
+  --shadow: 0 1px 3px rgba(17, 24, 39, 0.08);
+
+  /* 브랜드 주황. 버튼 바탕(흰 글자 5.2:1) · 글자·링크용 진한 주황(흰 바탕 5.6:1, 회색 바탕 4.7:1) · 넓은 면용 밝은 주황 */
+  --primary: #c2410c;
+  --primary-hover: #9a3412;
+  --primary-soft: #fff1e6;
+  --accent: #b93d0a;
+  /* 주황·난이도 색 바탕 위의 글자 */
+  --on-primary: #ffffff;
   /* 정답 · 오답 */
   --ok: #166534;
   --ok-soft: #e3f6e9;
   --bad: #b91c1c;
   --bad-soft: #fdeaea;
-  --focus: #1d4ed8;
-  --shadow: none;
+  --focus: #b93d0a;
+
+  /* 난이도 4색 (자격증 페이지의 초급·중급·고급·실전). 진한 색 = 고른 버튼 바탕(흰 글자), soft = 고르기 전 바탕, ink = soft 위 글자 */
+  --lv-basic: #15803d;
+  --lv-basic-soft: #e6f4ea;
+  --lv-basic-ink: #14532d;
+  --lv-mid: #1d4ed8;
+  --lv-mid-soft: #e8efff;
+  --lv-mid-ink: #1e3a8a;
+  --lv-adv: #7e22ce;
+  --lv-adv-soft: #f3e8ff;
+  --lv-adv-ink: #581c87;
+  --lv-cbt: #334155;
+  --lv-cbt-soft: #eef1f5;
+  --lv-cbt-ink: #1e293b;
 }
 
 .dark {
@@ -52,15 +71,31 @@
   --ink-sub: #cbd5e1;
   --line: #6b7280;
   --line-soft: #2f3a49;
-  --primary: #2563eb;
-  --primary-hover: #1d4ed8;
-  --primary-soft: #1e335f;
-  --accent: #93c5fd;
+  --card-line: #2f3a49;
+  --shadow: none;
+  --primary: #c2410c;
+  --primary-hover: #9a3412;
+  --primary-soft: #3a2417;
+  --accent: #fdba74;
+  --on-primary: #ffffff;
   --ok: #86efac;
   --ok-soft: #153a26;
   --bad: #fca5a5;
   --bad-soft: #4a1f1f;
-  --focus: #93c5fd;
+  --focus: #fdba74;
+
+  --lv-basic: #15803d;
+  --lv-basic-soft: #14291c;
+  --lv-basic-ink: #86efac;
+  --lv-mid: #1d4ed8;
+  --lv-mid-soft: #172a4a;
+  --lv-mid-ink: #93c5fd;
+  --lv-adv: #7e22ce;
+  --lv-adv-soft: #2a1b3d;
+  --lv-adv-ink: #d8b4fe;
+  --lv-cbt: #475569;
+  --lv-cbt-soft: #222b37;
+  --lv-cbt-ink: #cbd5e1;
 }
 
 @theme inline {
@@ -117,5 +152,20 @@
   --color-ok-soft: var(--ok-soft);
   --color-bad: var(--bad);
   --color-bad-soft: var(--bad-soft);
+  --color-card-line: var(--card-line);
+  --color-on-primary: var(--on-primary);
+  --color-lv-basic: var(--lv-basic);
+  --color-lv-basic-soft: var(--lv-basic-soft);
+  --color-lv-basic-ink: var(--lv-basic-ink);
+  --color-lv-mid: var(--lv-mid);
+  --color-lv-mid-soft: var(--lv-mid-soft);
+  --color-lv-mid-ink: var(--lv-mid-ink);
+  --color-lv-adv: var(--lv-adv);
+  --color-lv-adv-soft: var(--lv-adv-soft);
+  --color-lv-adv-ink: var(--lv-adv-ink);
+  --color-lv-cbt: var(--lv-cbt);
+  --color-lv-cbt-soft: var(--lv-cbt-soft);
+  --color-lv-cbt-ink: var(--lv-cbt-ink);
+  --shadow-card: var(--shadow);
 
 }
