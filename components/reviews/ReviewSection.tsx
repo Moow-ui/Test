@@ -60,22 +60,22 @@ export function ReviewSection({ certId, certName }: { certId: string; certName: 
   const date = new Intl.DateTimeFormat(locale, { year: "numeric", month: "short", day: "numeric" });
 
   return (
-    <section id={REVIEWS_ANCHOR} aria-labelledby="reviews-title" className="scroll-mt-4 space-y-3">
+    <section id={REVIEWS_ANCHOR} aria-labelledby="reviews-title" className="scroll-mt-4 space-y-4">
       <div className="flex flex-wrap items-baseline justify-between gap-2">
-        <h2 id="reviews-title" className="text-xl font-extrabold">
+        <h2 id="reviews-title" className="text-xl font-bold">
           {fmt(m.title, { name: certName })}
         </h2>
-        <span className="rounded border border-line px-2 py-0.5 text-[0.85rem] font-bold text-ink-sub">{m.byUsers}</span>
+        <span className="rounded-full bg-surface-2 px-3 py-1 text-sm font-bold text-ink-sub">{m.byUsers}</span>
       </div>
 
       {page && (page.weekSolves !== null || page.total > 0) && (
         <p className="font-bold">
           {page.average !== null && (
-            <span className="mr-3">
-              <span className="text-star">★</span> {fmt(m.average, { avg: page.average.toFixed(1) })}
+            <span className="mr-4">
+              <span className="text-accent">★</span> {fmt(m.average, { avg: page.average.toFixed(1) })}
             </span>
           )}
-          {page.total > 0 && <span className="mr-3">{fmt(m.count, { n: page.total })}</span>}
+          {page.total > 0 && <span className="mr-4">{fmt(m.count, { n: page.total })}</span>}
           {page.weekSolves !== null && <span>{fmt(m.activity, { n: page.weekSolves })}</span>}
         </p>
       )}
@@ -103,7 +103,7 @@ export function ReviewSection({ certId, certName }: { certId: string; certName: 
       )}
 
       {saved && (
-        <p role="status" className="rounded-lg border-2 border-ok bg-ok-soft p-3 font-bold">
+        <p role="status" className="rounded-lg bg-ok-soft p-4 font-bold">
           {m.saved}
         </p>
       )}
@@ -137,22 +137,22 @@ function ReviewCard({ review, date }: { review: ReviewItem; date: string }) {
   };
 
   return (
-    <li className="card space-y-1 p-3">
-      <p className="flex flex-wrap items-center gap-x-2 gap-y-1 text-[0.9rem] font-bold">
+    <li className="card space-y-2 p-4">
+      <p className="flex flex-wrap items-center gap-x-2 gap-y-2 text-sm font-bold">
         <span
           role="img"
           aria-label={fmt(m.starsLabel, { n: review.rating })}
-          className="whitespace-nowrap tracking-tight text-star"
+          className="whitespace-nowrap tracking-tight text-accent"
         >
           {"★".repeat(review.rating)}
           {"☆".repeat(5 - review.rating)}
         </span>
-        <span className="rounded border border-line px-1.5">{m.statuses[review.status]}</span>
+        <span className="rounded-full bg-surface-2 px-2">{m.statuses[review.status]}</span>
         <span>{review.nickname}</span>
         <span className="text-ink-sub">{date}</span>
       </p>
       <p className="break-words">{review.body}</p>
-      <p className="text-right text-[0.85rem]">
+      <p className="text-right text-sm">
         {flag === "done" ? (
           <span role="status" className="font-bold text-ink-sub">
             {m.flagged}

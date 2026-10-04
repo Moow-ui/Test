@@ -7,12 +7,12 @@ export function Breadcrumbs({ crumbs, label }: { crumbs: Crumb[]; label: string 
   return (
     <>
       <JsonLd data={breadcrumbJsonLd(crumbs)} />
-      <nav aria-label={label} className="no-print mb-3 text-[0.85rem] text-ink-sub">
-        <ol className="flex flex-wrap items-center gap-x-1.5 gap-y-1">
+      <nav aria-label={label} className="no-print mb-4 text-sm text-ink-sub">
+        <ol className="flex flex-wrap items-center gap-x-2 gap-y-2">
           {crumbs.map((c, i) => {
             const last = i === crumbs.length - 1;
             return (
-              <li key={c.path} className="flex items-center gap-1.5">
+              <li key={c.path} className="flex items-center gap-2">
                 {last ? (
                   <span aria-current="page" className="font-bold text-ink">
                     {c.name}

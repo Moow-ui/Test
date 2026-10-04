@@ -13,18 +13,18 @@ export function StudyTips({ locale, certName, tips }: { locale: Locale; certName
     { label: m.examDay, text: tips.examDay },
   ];
   return (
-    <section aria-labelledby="tips-title" className="card space-y-3 p-4">
+    <section aria-labelledby="tips-title" className="card space-y-4 p-4">
       <div className="flex flex-wrap items-baseline justify-between gap-2">
-        <h2 id="tips-title" className="text-xl font-extrabold">
+        <h2 id="tips-title" className="text-xl font-bold">
           {fmt(m.title, { name: certName })}
         </h2>
-        <span className="rounded border border-line px-2 py-0.5 text-[0.85rem] font-bold text-ink-sub">{m.byStaff}</span>
+        <span className="rounded-full bg-surface-2 px-3 py-1 text-sm font-bold text-ink-sub">{m.byStaff}</span>
       </div>
-      <dl className="space-y-3">
+      <dl className="space-y-4">
         {items.map((item) => (
           <div key={item.label}>
-            <dt className="font-extrabold">{item.label}</dt>
-            <dd className="mt-1 text-[0.95rem]">{item.text}</dd>
+            <dt className="font-bold">{item.label}</dt>
+            <dd className="mt-2 text-sm">{item.text}</dd>
           </div>
         ))}
       </dl>

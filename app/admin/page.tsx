@@ -40,7 +40,7 @@ export default async function AdminPage({ searchParams }: { searchParams: Promis
   if (!db) {
     return (
       <div className="space-y-4">
-        <h1 className="text-2xl font-extrabold">{m.title}</h1>
+        <h1 className="text-xl font-bold">{m.title}</h1>
         <p className="card p-4 font-bold">{m.dbMissing}</p>
       </div>
     );
@@ -59,8 +59,8 @@ export default async function AdminPage({ searchParams }: { searchParams: Promis
   return (
     <div className="space-y-6">
       <header className="flex flex-wrap items-baseline justify-between gap-2">
-        <h1 className="text-2xl font-extrabold">{m.title}</h1>
-        <p className="text-[0.9rem] font-bold text-ink-sub">{admin.email}</p>
+        <h1 className="text-xl font-bold">{m.title}</h1>
+        <p className="text-sm font-bold text-ink-sub">{admin.email}</p>
       </header>
 
       <nav aria-label={m.tabs} className="flex flex-wrap gap-2">
@@ -77,29 +77,29 @@ export default async function AdminPage({ searchParams }: { searchParams: Promis
       </nav>
 
       {tab === "members" && (
-        <section aria-labelledby="members-title" className="space-y-3">
-          <h2 id="members-title" className="text-xl font-extrabold">
+        <section aria-labelledby="members-title" className="space-y-4">
+          <h2 id="members-title" className="text-xl font-bold">
             {m.members}
           </h2>
           <dl className="grid gap-2 sm:grid-cols-3">
             {stats.map((s) => (
               <div key={s.label} className="card p-4">
                 <dt className="font-bold text-ink-sub">{s.label}</dt>
-                <dd className="text-3xl font-extrabold">{fmt(m.people, { n: s.value })}</dd>
+                <dd className="text-2xl font-bold">{fmt(m.people, { n: s.value })}</dd>
               </div>
             ))}
           </dl>
 
-          <h3 className="font-extrabold">{fmt(m.memberList, { n: MEMBER_LIST_LIMIT })}</h3>
+          <h3 className="font-bold">{fmt(m.memberList, { n: MEMBER_LIST_LIMIT })}</h3>
           {data.members.length === 0 ? (
             <p className="card p-4">{m.noMembers}</p>
           ) : (
             <div className="card overflow-x-auto">
-              <table className="w-full min-w-[40rem] text-left text-[0.95rem]">
+              <table className="w-full min-w-[40rem] text-left text-sm">
                 <thead>
                   <tr className="border-b-2 border-line">
                     {[m.username, m.nickname, m.joined, m.lastSeen, m.solved].map((label) => (
-                      <th key={label} scope="col" className="whitespace-nowrap px-3 py-2 font-extrabold">
+                      <th key={label} scope="col" className="whitespace-nowrap px-4 py-2 font-bold">
                         {label}
                       </th>
                     ))}
@@ -108,13 +108,13 @@ export default async function AdminPage({ searchParams }: { searchParams: Promis
                 <tbody>
                   {data.members.map((u) => (
                     <tr key={u.username} className="border-b border-line-soft">
-                      <td className="px-3 py-2 font-bold">{u.username}</td>
-                      <td className="px-3 py-2">{u.nickname}</td>
-                      <td className="whitespace-nowrap px-3 py-2 tabular-nums">{formatKst(u.createdAt)}</td>
-                      <td className="whitespace-nowrap px-3 py-2 tabular-nums">
+                      <td className="px-4 py-2 font-bold">{u.username}</td>
+                      <td className="px-4 py-2">{u.nickname}</td>
+                      <td className="whitespace-nowrap px-4 py-2 tabular-nums">{formatKst(u.createdAt)}</td>
+                      <td className="whitespace-nowrap px-4 py-2 tabular-nums">
                         {u.lastSeenAt ? formatKst(u.lastSeenAt) : m.never}
                       </td>
-                      <td className="px-3 py-2 tabular-nums">{u.solved}</td>
+                      <td className="px-4 py-2 tabular-nums">{u.solved}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -125,8 +125,8 @@ export default async function AdminPage({ searchParams }: { searchParams: Promis
       )}
 
       {tab === "reports" && (
-        <section aria-labelledby="reports-title" className="space-y-3">
-          <h2 id="reports-title" className="text-xl font-extrabold">
+        <section aria-labelledby="reports-title" className="space-y-4">
+          <h2 id="reports-title" className="text-xl font-bold">
             {m.reports}
           </h2>
           <p className="font-bold">{fmt(m.count, { open: data.reportOpen, n: data.reportTotal })}</p>
@@ -135,14 +135,14 @@ export default async function AdminPage({ searchParams }: { searchParams: Promis
           ) : (
             <ul className="space-y-2">
               {data.reports.map((r) => (
-                <li key={r.id} className="card space-y-1 p-3">
-                  <p className="text-[0.85rem] font-bold text-ink-sub">
+                <li key={r.id} className="card space-y-2 p-4">
+                  <p className="text-sm font-bold text-ink-sub">
                     {formatKst(r.createdAt)} · {r.certId} · {fmt(m.questionId, { id: r.questionId })}
                     {r.resolvedAt && <span className="ml-2 text-ok">{m.resolved}</span>}
                   </p>
                   <p className="font-bold">{reasons[r.reason] ?? r.reason}</p>
-                  <p className="text-[0.95rem]">{fmt(m.question, { stem: r.stem })}</p>
-                  {r.memo && <p className="whitespace-pre-wrap text-[0.95rem]">{fmt(m.memo, { memo: r.memo })}</p>}
+                  <p className="text-sm">{fmt(m.question, { stem: r.stem })}</p>
+                  {r.memo && <p className="whitespace-pre-wrap text-sm">{fmt(m.memo, { memo: r.memo })}</p>}
                   <ReportStatusButton
                     id={r.id}
                     resolved={!!r.resolvedAt}
@@ -156,8 +156,8 @@ export default async function AdminPage({ searchParams }: { searchParams: Promis
       )}
 
       {reviewData && (
-        <section aria-labelledby="reviews-title" className="space-y-3">
-          <h2 id="reviews-title" className="text-xl font-extrabold">
+        <section aria-labelledby="reviews-title" className="space-y-4">
+          <h2 id="reviews-title" className="text-xl font-bold">
             {m.reviews}
           </h2>
           <p className="font-bold">{fmt(m.reviewCount, { n: reviewData.total, hidden: reviewData.hiddenTotal })}</p>
@@ -165,18 +165,18 @@ export default async function AdminPage({ searchParams }: { searchParams: Promis
             <p className="card p-4">{m.reviewNone}</p>
           ) : (
             <>
-              <h3 className="font-extrabold">{m.byCert}</h3>
-              <ul className="card space-y-1 p-3 text-[0.95rem]">
+              <h3 className="font-bold">{m.byCert}</h3>
+              <ul className="card space-y-2 p-4 text-sm">
                 {reviewData.byCert.map((c) => (
                   <li key={c.certId}>{fmt(m.certCount, { id: c.certId, n: c.count, hidden: c.hidden })}</li>
                 ))}
               </ul>
 
-              <h3 className="font-extrabold">{fmt(m.reviewList, { n: REVIEW_LIST_LIMIT })}</h3>
+              <h3 className="font-bold">{fmt(m.reviewList, { n: REVIEW_LIST_LIMIT })}</h3>
               <ul className="space-y-2">
                 {reviewData.reviews.map((r) => (
-                  <li key={r.id} className="card space-y-1 p-3">
-                    <p className="text-[0.85rem] font-bold text-ink-sub">
+                  <li key={r.id} className="card space-y-2 p-4">
+                    <p className="text-sm font-bold text-ink-sub">
                       {formatKst(r.createdAt)} · {r.certId}
                       {r.reportCount > 0 && <span className="ml-2">{fmt(m.flags, { n: r.reportCount })}</span>}
                       {r.hidden !== 0 && (
@@ -190,7 +190,7 @@ export default async function AdminPage({ searchParams }: { searchParams: Promis
                         nickname: r.nickname,
                       })}
                     </p>
-                    <p className="break-words text-[0.95rem]">{r.body}</p>
+                    <p className="break-words text-sm">{r.body}</p>
                     <ReviewAdminButtons
                       id={r.id}
                       hidden={r.hidden !== 0}

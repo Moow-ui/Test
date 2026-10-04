@@ -31,7 +31,7 @@ export default async function QuizPage({ params }: Props) {
   if (!cert?.ready || !cert.examInfo) notFound();
 
   return (
-    <Suspense fallback={<p className="p-5 text-lg font-bold">{getMessages(lang).quiz.preparing}</p>}>
+    <Suspense fallback={<p className="p-6 text-lg font-bold">{getMessages(lang).quiz.preparing}</p>}>
       <QuizRunner
         cert={{ id: cert.id, name: cert.name, subjects: cert.subjects, examInfo: cert.examInfo }}
       />

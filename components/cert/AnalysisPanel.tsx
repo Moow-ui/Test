@@ -27,12 +27,12 @@ export function AnalysisPanel({
     <div>
       <div className="flex flex-wrap items-center justify-between gap-2">
         {/* 단원 이름이 링크라는 것을 알려 주는 안내 (링크가 없는 "준비 중" 자격증에는 두지 않는다) */}
-        {linkChapters ? <p className="text-[0.9rem] font-bold text-ink-sub">{m.cert.analysisHint}</p> : <span />}
+        {linkChapters ? <p className="text-sm font-bold text-ink-sub">{m.cert.analysisHint}</p> : <span />}
         <button
           type="button"
           aria-pressed={byImportance}
           onClick={() => setByImportance((v) => !v)}
-          className={`btn min-h-10 px-3 py-1 text-[0.8rem] ${byImportance ? "btn-primary" : ""}`}
+          className={`btn min-h-10 px-4 py-2 text-sm ${byImportance ? "btn-primary" : ""}`}
         >
           {byImportance ? m.cert.sortedByImportance : m.cert.sortByImportance}
         </button>
@@ -49,14 +49,14 @@ export function AnalysisPanel({
               )
             : numbered;
           return (
-            <section key={subject.id} className="rounded-lg border-2 border-line p-3">
-              <h3 className="border-b border-line-soft pb-1.5 text-lg font-extrabold">
+            <section key={subject.id} className="py-2">
+              <h3 className="text-lg font-bold">
                 {subject.name}
-                <span className="ml-2 text-[0.8rem] font-bold text-ink-sub">
+                <span className="ml-2 text-sm font-bold text-ink-sub">
                   {fmt(m.common.items, { n: subject.questionCount })}
                 </span>
               </h3>
-              <ol className="mt-2 space-y-2.5">
+              <ol className="mt-2 space-y-4">
                 {chapters.map(({ chapter, no }) => {
                   const label = fmt(m.cert.chapterLabel, { no, name: chapter.name });
                   return (
@@ -68,9 +68,9 @@ export function AnalysisPanel({
                       ) : (
                         <span className="font-bold">{label}</span>
                       )}
-                      <span className="block text-[0.8rem]">
+                      <span className="block text-sm">
                         <Stars value={chapter.importance} />
-                        <span className="ml-1.5 font-bold text-ink-sub">
+                        <span className="ml-2 font-bold text-ink-sub">
                           {fmt(m.cert.weight, { n: chapter.examWeight })}
                         </span>
                       </span>

@@ -32,8 +32,8 @@ export function LocaleBanner() {
   const m = getMessages(target).banner;
 
   return (
-    <aside aria-label={m.label} className="no-print border-b border-line bg-primary-soft text-ink">
-      <p className="mx-auto flex w-full max-w-5xl flex-wrap items-center justify-center gap-x-3 gap-y-1 px-3 py-1.5 text-[14px] font-bold">
+    <aside aria-label={m.label} className="no-print bg-primary-soft text-ink">
+      <p className="mx-auto flex w-full max-w-5xl flex-wrap items-center justify-center gap-x-4 gap-y-2 px-4 py-2 text-sm font-bold">
         <a
           href={localePath(target)}
           lang={target}

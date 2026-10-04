@@ -50,7 +50,7 @@ function ClearDeviceRecords() {
 
   return (
     <div className="mx-auto max-w-md space-y-2 border-t border-line-soft pt-4">
-      <p className="text-[0.85rem] text-ink-sub">{m.clearDeviceHint}</p>
+      <p className="text-sm text-ink-sub">{m.clearDeviceHint}</p>
       {step !== "confirm" && (
         <button type="button" className="btn" onClick={() => setStep("confirm")}>
           {m.clearDevice}
@@ -62,8 +62,8 @@ function ClearDeviceRecords() {
         </p>
       )}
       {step === "confirm" && (
-        <div role="alertdialog" aria-labelledby="clear-device-title" className="rounded-lg border-2 border-bad bg-bad-soft p-4">
-          <p id="clear-device-title" className="font-extrabold">
+        <div role="alertdialog" aria-labelledby="clear-device-title" className="rounded-lg bg-bad-soft p-4">
+          <p id="clear-device-title" className="font-bold">
             {m.confirmClearDevice}
           </p>
           <div className="mt-2 flex flex-wrap gap-2">
@@ -137,15 +137,15 @@ export function ProfileView({ certs }: { certs: ProfileCert[] }) {
   }, [auth.status, needed]);
 
   if (auth.status === "loading") {
-    return <p className="card p-5 font-bold">{m.loading}</p>;
+    return <p className="card p-6 font-bold">{m.loading}</p>;
   }
 
   if (auth.status === "guest") {
     return (
       <div className="space-y-4">
-        <h1 className="text-center text-2xl font-extrabold">{all.auth.login}</h1>
-        {auth.available ? <AuthForm /> : <p className="card mx-auto max-w-md p-5 font-bold">{m.unavailable}</p>}
-        <p className="mx-auto max-w-md text-[0.85rem] text-ink-sub">{m.guestHint}</p>
+        <h1 className="text-center text-xl font-bold">{all.auth.login}</h1>
+        {auth.available ? <AuthForm /> : <p className="card mx-auto max-w-md p-6 font-bold">{m.unavailable}</p>}
+        <p className="mx-auto max-w-md text-sm text-ink-sub">{m.guestHint}</p>
         <ClearDeviceRecords />
       </div>
     );
@@ -179,17 +179,17 @@ export function ProfileView({ certs }: { certs: ProfileCert[] }) {
   return (
     <div className="mx-auto max-w-3xl space-y-4">
       {/* ───── 이름과 칭호 ───── */}
-      <section className="rounded-2xl border-2 border-[#1e3a8a] bg-[#0f172a] p-5 text-white sm:p-6">
-        <p className="text-[0.8rem] font-bold text-[#cbd5e1]">{all.nav.profile}</p>
-        <h1 className="mt-1 text-3xl font-extrabold">
+      <section className="card p-6">
+        <p className="text-sm font-bold text-ink-sub">{all.nav.profile}</p>
+        <h1 className="mt-2 text-2xl font-bold">
           {user.nickname}
-          <span className="ml-2 text-[0.9rem] font-bold text-[#cbd5e1]">@{user.username}</span>
+          <span className="ml-2 text-sm font-bold text-ink-sub">@{user.username}</span>
         </h1>
 
         <div className="mt-4">
-          <p className="text-[0.8rem] font-bold text-[#cbd5e1]">{fmt(m.titles, { n: owned.length })}</p>
+          <p className="text-sm font-bold text-ink-sub">{fmt(m.titles, { n: owned.length })}</p>
           {owned.length === 0 ? (
-            <p className="mt-1 text-[0.95rem]">{m.noOwned}</p>
+            <p className="mt-2 text-sm">{m.noOwned}</p>
           ) : (
             <ul className="mt-2 flex flex-wrap gap-2">
               {owned.map((cert) => (
@@ -201,7 +201,7 @@ export function ProfileView({ certs }: { certs: ProfileCert[] }) {
           )}
         </div>
 
-        <dl className="mt-5 grid grid-cols-2 gap-3 border-t border-[#334155] pt-4 sm:grid-cols-4">
+        <dl className="mt-6 grid grid-cols-2 gap-4 pt-4 sm:grid-cols-4">
           {[
             [m.stats.solved, fmt(m.countItems, { n: solved.length })],
             [m.stats.accuracy, accuracy === null ? "-" : `${accuracy}%`],
@@ -209,8 +209,8 @@ export function ProfileView({ certs }: { certs: ProfileCert[] }) {
             [m.stats.notes, fmt(m.countItems, { n: notes.length })],
           ].map(([label, value]) => (
             <div key={label}>
-              <dt className="text-[0.8rem] font-bold text-[#cbd5e1]">{label}</dt>
-              <dd className="text-2xl font-extrabold">{value}</dd>
+              <dt className="text-sm font-bold text-ink-sub">{label}</dt>
+              <dd className="text-xl font-bold">{value}</dd>
             </div>
           ))}
         </dl>
@@ -226,16 +226,16 @@ export function ProfileView({ certs }: { certs: ProfileCert[] }) {
         ) : (
           <ul className="space-y-2">
             {results.slice(0, LIST_LIMIT).map((r) => (
-              <li key={r.id} className="flex flex-wrap items-baseline justify-between gap-x-3 border-b border-line-soft pb-2">
+              <li key={r.id} className="flex flex-wrap items-baseline justify-between gap-x-4 border-b border-line-soft pb-2">
                 <span>
                   <span className="font-bold">{certName(r.certId)}</span>
-                  <span className="ml-2 text-[0.85rem] text-ink-sub">
+                  <span className="ml-2 text-sm text-ink-sub">
                     {r.label} · {formatDate(r.at)}
                   </span>
                 </span>
-                <span className="font-extrabold">
+                <span className="font-bold">
                   {fmt(m.resultScore, { n: r.score })}
-                  <span className="ml-1.5 text-[0.85rem] font-bold text-ink-sub">
+                  <span className="ml-2 text-sm font-bold text-ink-sub">
                     ({r.correct}/{r.total})
                   </span>
                 </span>
@@ -253,7 +253,7 @@ export function ProfileView({ certs }: { certs: ProfileCert[] }) {
             {solved.slice(0, LIST_LIMIT).map(({ id, entry }) => (
               <li key={id} className="border-b border-line-soft pb-2">
                 <p className="font-bold">{questions[id]?.stem ?? m.questionLoading}</p>
-                <p className="text-[0.85rem] text-ink-sub">
+                <p className="text-sm text-ink-sub">
                   <span className={entry.lastCorrect === false ? "font-bold text-bad" : "font-bold text-ok"}>
                     {entry.lastCorrect === false ? m.lastWrong : m.lastCorrect}
                   </span>{" "}
@@ -269,7 +269,7 @@ export function ProfileView({ certs }: { certs: ProfileCert[] }) {
           </ul>
         )}
         {solved.length > LIST_LIMIT && (
-          <p className="text-[0.85rem] text-ink-sub">{fmt(m.recentOnly, { n: LIST_LIMIT })}</p>
+          <p className="text-sm text-ink-sub">{fmt(m.recentOnly, { n: LIST_LIMIT })}</p>
         )}
       </Fold>
 
@@ -277,7 +277,7 @@ export function ProfileView({ certs }: { certs: ProfileCert[] }) {
         {wrong.length === 0 ? (
           <p>{m.noWrong}</p>
         ) : (
-          <ul className="space-y-3">
+          <ul className="space-y-4">
             {wrong.slice(0, LIST_LIMIT).map(({ id, entry }) => {
               const q = questions[id];
               return (
@@ -291,7 +291,7 @@ export function ProfileView({ certs }: { certs: ProfileCert[] }) {
                       {q.choices[q.answer - 1]}
                     </p>
                   )}
-                  <p className="text-[0.85rem] text-ink-sub">{fmt(m.wrongTimes, { n: entry.wrong })}</p>
+                  <p className="text-sm text-ink-sub">{fmt(m.wrongTimes, { n: entry.wrong })}</p>
                 </li>
               );
             })}
@@ -305,8 +305,8 @@ export function ProfileView({ certs }: { certs: ProfileCert[] }) {
         ) : (
           [...concepts.entries()].map(([certId, list]) => (
             <div key={certId}>
-              <h3 className="font-extrabold">{certName(certId)}</h3>
-              <ol className="mt-1 list-decimal space-y-1 pl-6">
+              <h3 className="font-bold">{certName(certId)}</h3>
+              <ol className="mt-2 list-decimal space-y-2 pl-6">
                 {list.map((concept) => (
                   <li key={concept} className="font-bold">
                     {concept}
@@ -341,7 +341,7 @@ export function ProfileView({ certs }: { certs: ProfileCert[] }) {
         </button>
         <button
           type="button"
-          className="text-[0.8rem] font-bold text-ink-sub underline underline-offset-2"
+          className="text-sm font-bold text-ink-sub underline underline-offset-2"
           onClick={() => setConfirmDelete(true)}
         >
           {m.delete}
@@ -349,11 +349,11 @@ export function ProfileView({ certs }: { certs: ProfileCert[] }) {
       </div>
 
       {confirmDelete && (
-        <div role="alertdialog" aria-labelledby="delete-title" className="rounded-lg border-2 border-bad bg-bad-soft p-4">
-          <p id="delete-title" className="font-extrabold">
+        <div role="alertdialog" aria-labelledby="delete-title" className="rounded-lg bg-bad-soft p-4">
+          <p id="delete-title" className="font-bold">
             {m.confirmDelete}
           </p>
-          {errorCode && <p className="mt-1 font-bold text-bad">{errorText(all, errorCode)}</p>}
+          {errorCode && <p className="mt-2 font-bold text-bad">{errorText(all, errorCode)}</p>}
           <div className="mt-2 flex flex-wrap gap-2">
             <button
               type="button"

@@ -79,13 +79,13 @@ export default async function ChapterPage({ params }: Props) {
         ]}
       />
 
-      <header className="space-y-3">
+      <header className="space-y-4">
         <div className="flex flex-wrap items-center justify-between gap-2">
           <p className="font-bold text-ink-sub">{fmt(m.chapter.eyebrow, { cert: cert.name, subject: subject.name })}</p>
-          <span className="rounded border border-line px-2 py-0.5 text-[0.85rem] font-bold text-ink-sub">{notesBy}</span>
+          <span className="rounded-full bg-surface-2 px-3 py-1 text-sm font-bold text-ink-sub">{notesBy}</span>
         </div>
-        <h1 className="text-2xl font-extrabold leading-snug sm:text-3xl">{meta.h1}</h1>
-        <dl className="card grid gap-x-4 gap-y-2 p-3 sm:grid-cols-[7rem_1fr] sm:p-4">
+        <h1 className="text-xl font-bold leading-snug sm:text-2xl">{meta.h1}</h1>
+        <dl className="card grid gap-x-4 gap-y-2 p-4 sm:grid-cols-[7rem_1fr] sm:p-4">
           <dt className="font-bold text-ink-sub">{m.common.importance}</dt>
           <dd>
             <Stars value={chapter.importance} />{" "}
@@ -106,10 +106,10 @@ export default async function ChapterPage({ params }: Props) {
 
       {chapter.keyPoints.length > 0 && (
         <section aria-labelledby="keypoints-title">
-          <h2 id="keypoints-title" className="text-xl font-extrabold">
+          <h2 id="keypoints-title" className="text-xl font-bold">
             {fmt(m.chapter.keyPointsTitle, { name: chapter.name })}
           </h2>
-          <ul className="card mt-2 list-disc space-y-2 p-4 pl-9">
+          <ul className="card mt-2 list-disc space-y-2 p-4 pl-8">
             {chapter.keyPoints.map((point) => (
               <li key={point}>{point}</li>
             ))}
@@ -118,8 +118,8 @@ export default async function ChapterPage({ params }: Props) {
       )}
 
       {shown.length > 0 && (
-        <section aria-labelledby="questions-title" className="space-y-3">
-          <h2 id="questions-title" className="text-xl font-extrabold">
+        <section aria-labelledby="questions-title" className="space-y-4">
+          <h2 id="questions-title" className="text-xl font-bold">
             {fmt(m.chapter.questionsTitle, { name: chapter.name, n: shown.length })}
           </h2>
           {shown.map((q, i) => (
@@ -136,9 +136,9 @@ export default async function ChapterPage({ params }: Props) {
       )}
 
       {quizCount > 0 && (
-        <section aria-label={m.chapter.solveLabel} className="rounded-xl border-2 border-primary bg-primary-soft p-4">
+        <section aria-label={m.chapter.solveLabel} className="rounded-2xl bg-primary-soft p-4">
           <p className="font-bold">{m.chapter.solveHint}</p>
-          <div className="mt-3 flex flex-col gap-2 sm:flex-row">
+          <div className="mt-4 flex flex-col gap-2 sm:flex-row">
             <Link href={`${certPath}/quiz?chapter=${chapter.id}&count=${quizCount}`} className="btn btn-primary btn-lg">
               {fmt(m.chapter.solveN, { name: chapter.name, n: quizCount })}
             </Link>
@@ -149,7 +149,7 @@ export default async function ChapterPage({ params }: Props) {
         </section>
       )}
 
-      <nav aria-label={m.chapter.otherLabel} className="space-y-3">
+      <nav aria-label={m.chapter.otherLabel} className="space-y-4">
         <div className="grid gap-2 sm:grid-cols-2">
           {prev ? (
             <Link href={`${certPath}/${prev.chapter.id}`} className="btn justify-start text-left">
@@ -164,8 +164,8 @@ export default async function ChapterPage({ params }: Props) {
             </Link>
           )}
         </div>
-        <h2 className="text-lg font-extrabold">{fmt(m.chapter.othersTitle, { subject: subject.name })}</h2>
-        <ul className="flex flex-wrap gap-x-4 gap-y-1">
+        <h2 className="text-lg font-bold">{fmt(m.chapter.othersTitle, { subject: subject.name })}</h2>
+        <ul className="flex flex-wrap gap-x-4 gap-y-2">
           {subject.chapters
             .filter((c) => c.id !== chapter.id)
             .map((c) => (

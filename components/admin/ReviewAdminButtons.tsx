@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { setReviewState } from "@/lib/review-client";
 
-const buttonClass = "btn min-h-11 px-3 py-1 text-[0.9rem]";
+const buttonClass = "btn min-h-11 px-4 py-2 text-sm";
 
 /** 후기 숨기기 / 다시 보이기 / 삭제 버튼. 삭제는 한 번 더 묻는다. 문구는 서버 화면(app/admin/page.tsx)이 넘겨준다 */
 export function ReviewAdminButtons({

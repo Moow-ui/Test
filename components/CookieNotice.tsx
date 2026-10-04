@@ -22,8 +22,8 @@ export function CookieNotice() {
   if (!BANNER_LOCALES.includes(locale) || !hydrated || dismissed) return null;
 
   return (
-    <aside aria-label={m.label} className="no-print sticky bottom-0 z-40 border-t-2 border-line bg-surface">
-      <div className="mx-auto flex w-full max-w-5xl flex-wrap items-center justify-center gap-x-4 gap-y-2 px-4 py-3 text-[0.9rem]">
+    <aside aria-label={m.label} className="no-print sticky bottom-0 z-40 border-t border-line-soft bg-surface">
+      <div className="mx-auto flex w-full max-w-5xl flex-wrap items-center justify-center gap-x-4 gap-y-2 px-4 py-4 text-sm">
         <p>
           {m.text}{" "}
           <Link href={localePath(locale, "/privacy")} className="link">

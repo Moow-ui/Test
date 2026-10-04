@@ -112,6 +112,8 @@ export const examInfoSchema = z.object({
     subjectMinScore: z.number().min(0).max(100).nullable(),
     /** 화면에 보여 줄 합격 기준 문장 */
     description: z.string().min(1),
+    /** 결과 화면 "합격선 통과 (…)" 괄호 안의 짧은 문구 (예: "2종 보통 60점"). 없으면 평균·과락 점수로 만든다 */
+    shortLabel: z.string().min(1).max(30).optional(),
   }),
 });
 

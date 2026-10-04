@@ -1,121 +1,20 @@
 @import "tailwindcss";
+/* 색·글자 크기·굵기·간격·모서리는 디자인 토큰 파일 하나에만 (app/tokens.css) */
+@import "./tokens.css";
 
 /* 다크모드는 <html class="dark"> 로 켠다 (상단의 "어둡게" 버튼) */
 @custom-variant dark (&:where(.dark, .dark *));
 
-/*
- * 색상은 아래 변수만 쓴다. 다크모드에서는 변수 값만 바뀌므로
- * 화면 코드에서 dark: 를 일일이 붙이지 않아도 된다.
- * 연회색 글씨 금지: 글자색은 ink / ink-sub 두 가지만 쓴다.
- */
-:root {
-  /* 처음에는 기기에 있는 글꼴로 바로 그리고, Pretendard 가 준비되면 한 번에 바꾼다 (FontLoader 참고) */
-  --font-system:
-    -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕",
-    system-ui, sans-serif;
-  --font-web: "Pretendard Variable", Pretendard, var(--font-system);
-
-  --bg: #f3f5fb;
-  --surface: #ffffff;
-  --surface-2: #e4e9f2;
-  --ink: #0f172a;
-  --ink-sub: #334155;
-  --line: #94a3b8;
-  --line-soft: #d3dae6;
-  --primary: #2646c8;
-  --primary-hover: #1c36a3;
-  --primary-soft: #e6ebff;
-  --accent: #2646c8;
-  /* 상단 메뉴 바탕 */
-  --header: #17224f;
-  /* 초급·중급·고급 박스 색 (진한 색 위에는 흰 글자, 연한 색 위에는 ink) */
-  --lv1: #0f766e;
-  --lv1-soft: #dcf5f1;
-  --lv2: #2646c8;
-  --lv2-soft: #e6ebff;
-  --lv3: #6d28d9;
-  --lv3-soft: #efe7ff;
-  --shadow: 0 1px 2px rgba(15, 23, 42, 0.06), 0 2px 8px rgba(15, 23, 42, 0.05);
-  --ok: #166534;
-  --ok-soft: #dcfce7;
-  --bad: #b91c1c;
-  --bad-soft: #fee2e2;
-  --warn: #92400e;
-  --warn-soft: #fef3c7;
-  --star: #b45309;
-  --focus: #f59e0b;
-}
-
-.dark {
-  --bg: #0b1220;
-  --surface: #162033;
-  --surface-2: #24324b;
-  --ink: #f8fafc;
-  --ink-sub: #cbd5e1;
-  --line: #64748b;
-  --line-soft: #3b4a63;
-  --primary: #2563eb;
-  --primary-hover: #1d4ed8;
-  --primary-soft: #1e3a6e;
-  --accent: #93c5fd;
-  --header: #0e1730;
-  --lv1: #0f766e;
-  --lv1-soft: #113b38;
-  --lv2: #2563eb;
-  --lv2-soft: #1e3a6e;
-  --lv3: #7c3aed;
-  --lv3-soft: #35226b;
-  --shadow: none;
-  --ok: #86efac;
-  --ok-soft: #14402a;
-  --bad: #fca5a5;
-  --bad-soft: #4c1d1d;
-  --warn: #fcd34d;
-  --warn-soft: #4a3410;
-  --star: #fbbf24;
-  --focus: #fbbf24;
-}
-
-@theme inline {
-  --font-sans: var(--font-system);
-  --color-bg: var(--bg);
-  --color-surface: var(--surface);
-  --color-surface-2: var(--surface-2);
-  --color-ink: var(--ink);
-  --color-ink-sub: var(--ink-sub);
-  --color-line: var(--line);
-  --color-line-soft: var(--line-soft);
-  --color-primary: var(--primary);
-  --color-primary-hover: var(--primary-hover);
-  --color-primary-soft: var(--primary-soft);
-  --color-accent: var(--accent);
-  --color-header: var(--header);
-  --color-focus: var(--focus);
-  --color-lv1: var(--lv1);
-  --color-lv1-soft: var(--lv1-soft);
-  --color-lv2: var(--lv2);
-  --color-lv2-soft: var(--lv2-soft);
-  --color-lv3: var(--lv3);
-  --color-lv3-soft: var(--lv3-soft);
-  --color-ok: var(--ok);
-  --color-ok-soft: var(--ok-soft);
-  --color-bad: var(--bad);
-  --color-bad-soft: var(--bad-soft);
-  --color-warn: var(--warn);
-  --color-warn-soft: var(--warn-soft);
-  --color-star: var(--star);
-}
-
-/* 글씨 크기 3단계: 기본 18px. rem 단위를 쓰는 모든 글자·여백이 함께 커진다 */
+/* 글자 크기 3단계 (상단의 "가 가 가"): 기본 18px. rem 단위로 적은 모든 글자가 함께 커진다. 여백은 px(8px 단위)라 그대로 */
 html {
   font-size: 18px;
   -webkit-text-size-adjust: 100%;
 }
 html[data-font="lg"] {
-  font-size: 20px;
+  font-size: 22px;
 }
 html[data-font="xl"] {
-  font-size: 22px;
+  font-size: 26px;
 }
 
 body {
@@ -167,27 +66,29 @@ summary::-webkit-details-marker {
     text-underline-offset: 3px;
   }
 
-  /* 공통 버튼 */
+  /*
+   * 공통 버튼: 모양은 한 가지(모서리 8px, 테두리 없음, 높이 48px 이상).
+   * 보조 버튼은 회색 바탕, 주 버튼(.btn-primary)만 파랑. 한 화면 묶음에 주 버튼은 1개만 둔다.
+   */
   .btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 0.4rem;
-    min-height: 3rem;
-    padding: 0.5rem 1.1rem;
-    border-radius: 0.75rem;
-    border: 2px solid var(--line);
-    background: var(--surface);
+    gap: 8px;
+    min-height: 48px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    background: var(--surface-2);
     color: var(--ink);
     font-weight: 700;
     text-align: center;
   }
   .btn:hover:not(:disabled) {
-    border-color: var(--ink);
+    border-color: var(--ink-sub);
   }
   .btn-primary {
     background: var(--primary);
-    border-color: var(--primary);
     color: #ffffff;
   }
   .btn-primary:hover:not(:disabled) {
@@ -196,20 +97,19 @@ summary::-webkit-details-marker {
   }
   .btn:disabled {
     background: var(--surface-2);
-    border-color: var(--line-soft);
     color: var(--ink-sub);
+    opacity: 0.75;
   }
   .btn-lg {
-    min-height: 3.5rem;
-    font-size: 1.125rem;
-    padding: 0.6rem 1.4rem;
+    min-height: 56px;
+    font-size: var(--text-lg);
+    padding: 8px 24px;
   }
 
+  /* 큰 상자: 테두리 없이 흰 바탕 + 모서리 16px. 상자 안에 또 상자를 넣지 않는다 */
   .card {
     background: var(--surface);
-    border: 1px solid var(--line-soft);
-    border-radius: 0.9rem;
-    box-shadow: var(--shadow);
+    border-radius: 16px;
   }
 }
 
@@ -229,9 +129,6 @@ summary::-webkit-details-marker {
     --ok-soft: #ffffff;
     --bad: #000000;
     --bad-soft: #ffffff;
-    --warn: #000000;
-    --warn-soft: #ffffff;
-    --star: #000000;
     --shadow: none;
   }
   html,

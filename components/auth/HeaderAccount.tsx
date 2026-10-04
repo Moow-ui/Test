@@ -12,7 +12,7 @@ export function HeaderAccount() {
   return (
     <Link
       href={localePath(locale, "/profile")}
-      className="text-[15px] font-bold text-white underline underline-offset-4 sm:text-[16px]"
+      className="font-bold text-ink underline underline-offset-4"
     >
       {auth.status === "user" ? m.nav.profile : m.nav.login}
     </Link>

@@ -53,11 +53,11 @@ function inline(text: string): ReactNode[] {
 
 export function Markdown({ text }: { text: string }) {
   return (
-    <div className="space-y-3">
+    <div className="space-y-4">
       {parse(text).map((block, i) => {
         if (block.type === "ul") {
           return (
-            <ul key={i} className="list-disc space-y-1 pl-6">
+            <ul key={i} className="list-disc space-y-2 pl-6">
               {block.items.map((item, j) => (
                 <li key={j}>{inline(item)}</li>
               ))}
@@ -66,7 +66,7 @@ export function Markdown({ text }: { text: string }) {
         }
         if (block.type === "ol") {
           return (
-            <ol key={i} className="list-decimal space-y-1 pl-7">
+            <ol key={i} className="list-decimal space-y-2 pl-8">
               {block.items.map((item, j) => (
                 <li key={j}>{inline(item)}</li>
               ))}

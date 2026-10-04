@@ -41,7 +41,7 @@ public/data/                      빌드 때 자동으로 만든다 (git 에 올
 | `trademarkNotice` | (선택) 시행기관의 상표 사용 규정에 따른 상표 고지 문장. 자격증 페이지 아래에 그대로 나온다 |
 | `order` | 목록 순서 (작을수록 앞). 문제가 준비된 자격증은 이 값과 상관없이 항상 앞에 온다 |
 | `updatedAt` | 내용 최종 수정일 `YYYY-MM-DD` (sitemap) |
-| `examInfo` | `totalQuestions`, `timeLimitMinutes`, `format`, `choiceCount`(선지 수, 기본 4), `passCriteria { averageScore, subjectMinScore(과락 없으면 null), description }` |
+| `examInfo` | `totalQuestions`, `timeLimitMinutes`, `format`, `choiceCount`(선지 수, 기본 4), `passCriteria { averageScore, subjectMinScore(과락 없으면 null), description, shortLabel(선택: 결과 화면 "합격선 통과 (…)" 괄호 안, 예 "2종 보통 60점") }` |
 | `content` | `eligibility`, `intro`, `trendSummary`, `studyTip`, `faqs[3~5]` |
 | `studyTips` | 운영진 학습 팁 3개 `{ studyOrder(공부 순서), hardChapters(자주 틀리는 단원), examDay(시험 당일 팁) }`. 각 2~4문장. 문제가 있는 자격증에는 필수 |
 | `sources[]` | 정보의 출처 `{ title, url? }` (공식 출제기준 등) |

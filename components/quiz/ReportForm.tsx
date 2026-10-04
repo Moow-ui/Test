@@ -19,7 +19,7 @@ export function ReportForm({ question, onClose }: { question: Question; onClose:
 
   if (done) {
     return (
-      <div role="status" className="mt-3 rounded-lg border-2 border-ok bg-ok-soft p-3">
+      <div role="status" className="mt-4 rounded-lg bg-ok-soft p-4">
         <p className="font-bold">{m.saved}</p>
         <button type="button" className="btn mt-2" onClick={onClose}>
           {all.common.close}
@@ -45,7 +45,7 @@ export function ReportForm({ question, onClose }: { question: Question; onClose:
 
   return (
     <form
-      className="mt-3 space-y-3 rounded-lg border-2 border-line bg-surface p-3"
+      className="mt-4 space-y-4"
       onSubmit={(e) => {
         e.preventDefault();
         void submit();
@@ -60,7 +60,7 @@ export function ReportForm({ question, onClose }: { question: Question; onClose:
           id="report-reason"
           value={reason}
           onChange={(e) => setReason(e.target.value as ReportReason)}
-          className="mt-1 h-12 w-full rounded-lg border-2 border-line bg-surface px-2 text-ink"
+          className="mt-2 h-12 w-full rounded-lg border-2 border-line bg-surface px-2 text-ink"
         >
           {REPORT_REASONS.map((r) => (
             <option key={r} value={r}>
@@ -79,11 +79,11 @@ export function ReportForm({ question, onClose }: { question: Question; onClose:
           onChange={(e) => setMemo(e.target.value)}
           rows={3}
           maxLength={REPORT_MEMO_MAX}
-          className="mt-1 w-full rounded-lg border-2 border-line bg-surface p-2 text-ink"
+          className="mt-2 w-full rounded-lg border-2 border-line bg-surface p-2 text-ink"
         />
       </div>
       {error && (
-        <p role="alert" className="rounded-lg border border-bad bg-bad-soft p-2 font-bold">
+        <p role="alert" className="rounded-lg bg-bad-soft p-2 font-bold">
           {errorText(all, error)}
         </p>
       )}

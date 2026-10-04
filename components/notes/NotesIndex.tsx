@@ -21,7 +21,7 @@ export function NotesIndex({ certs }: { certs: Array<{ id: string; name: string 
 
   if (rows.length === 0) {
     return (
-      <div className="card space-y-3 p-5">
+      <div className="card space-y-4 p-6">
         <p className="font-bold">{m.empty}</p>
         <p>{m.emptyHint}</p>
         <ul className="flex flex-wrap gap-2">
@@ -46,9 +46,9 @@ export function NotesIndex({ certs }: { certs: Array<{ id: string; name: string 
         <li key={c.id}>
           <Link
             href={localePath(locale, `/cert/${c.id}/notes`)}
-            className="card flex min-h-16 items-center justify-between gap-3 p-4 hover:border-ink"
+            className="card flex min-h-16 items-center justify-between gap-4 p-4 hover:bg-primary-soft"
           >
-            <span className="text-lg font-extrabold">{c.name}</span>
+            <span className="text-lg font-bold">{c.name}</span>
             <span className="font-bold text-accent">{fmt(m.viewWrong, { n: c.count })}</span>
           </Link>
         </li>

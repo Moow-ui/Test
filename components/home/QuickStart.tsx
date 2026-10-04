@@ -44,14 +44,14 @@ export function QuickStart({ certs, featuredId }: { certs: CertListItem[]; featu
   return (
     <section
       aria-labelledby="quick-start-title"
-      className="mx-auto max-w-3xl rounded-2xl border border-primary bg-primary-soft p-4 text-center shadow-[var(--shadow)] sm:p-6"
+      className="mx-auto max-w-3xl rounded-2xl bg-primary-soft p-4 text-center  sm:p-6"
     >
-      <h2 id="quick-start-title" className="text-[1.05rem] font-bold">
+      <h2 id="quick-start-title" className="text-base font-bold">
         {recentReady ? m.home.recent : m.home.firstTime}
       </h2>
-      <p className="mt-1 text-2xl font-extrabold text-accent sm:text-3xl">{target.name}</p>
+      <p className="mt-2 text-xl font-bold text-accent sm:text-2xl">{target.name}</p>
 
-      <div className="mt-3 flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:justify-center">
+      <div className="mt-4 flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:justify-center">
         {inProgress ? (
           <>
             <Link href={`${certPath}/quiz`} className="btn btn-primary btn-lg">
@@ -70,18 +70,18 @@ export function QuickStart({ certs, featuredId }: { certs: CertListItem[]; featu
           {m.home.viewAnalysis}
         </Link>
       </div>
-      <p className="mt-2 text-[0.9rem] text-ink-sub">
+      <p className="mt-2 text-sm text-ink-sub">
         {fmt(m.home.quickNote, { level: m.levels[lastLevel], n: DEFAULT_QUIZ_COUNT })}{" "}
-        <span className="whitespace-nowrap text-[0.7rem]">· {m.home.quickBasis}</span>
+        <span className="text-sm">· {m.home.quickBasis}</span>
       </p>
 
       {others.length > 0 && (
-        <div className="mt-4 border-t border-line pt-3">
-          <h3 className="text-[0.95rem] font-bold">{m.home.otherRecent}</h3>
+        <div className="mt-6">
+          <h3 className="text-sm font-bold">{m.home.otherRecent}</h3>
           <ul className="mt-2 flex flex-wrap justify-center gap-2">
             {others.map((c) => (
               <li key={c.id}>
-                <Link href={localePath(locale, `/cert/${c.id}`)} className="btn min-h-11 px-3 py-1 text-[0.95rem]">
+                <Link href={localePath(locale, `/cert/${c.id}`)} className="btn min-h-11 px-4 py-2 text-sm">
                   {c.name}
                 </Link>
               </li>

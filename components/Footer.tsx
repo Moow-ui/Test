@@ -7,13 +7,13 @@ export function Footer({ locale }: { locale: Locale }) {
   const m = getMessages(locale);
   return (
     <footer className="cv no-print mt-12 border-t border-line-soft bg-surface">
-      <div className="mx-auto w-full max-w-5xl space-y-2 px-4 py-6 text-[0.85rem] text-ink-sub">
+      <div className="mx-auto w-full max-w-5xl space-y-2 px-4 py-6 text-sm text-ink-sub">
         <p className="font-bold text-ink">
           {brandName(locale)} · {m.site.tagline}
         </p>
         <p>{m.site.notice}</p>
         <p>{m.site.officialInfo}</p>
-        <nav aria-label={m.nav.footerMenu} className="flex flex-wrap gap-x-4 gap-y-1 pt-1">
+        <nav aria-label={m.nav.footerMenu} className="flex flex-wrap gap-x-4 gap-y-2 pt-2">
           <Link href={localePath(locale)} className="link">
             {m.nav.certList}
           </Link>
@@ -22,7 +22,7 @@ export function Footer({ locale }: { locale: Locale }) {
           </Link>
           <LocaleSwitch />
         </nav>
-        <nav aria-label={m.nav.legalMenu} className="flex flex-wrap gap-x-4 gap-y-1">
+        <nav aria-label={m.nav.legalMenu} className="flex flex-wrap gap-x-4 gap-y-2">
           {INFO_PAGE_IDS.map((id) => (
             <Link key={id} href={localePath(locale, `/${id}`)} className="link">
               {m.nav[id]}

@@ -56,11 +56,11 @@ export function CertExplorer({ certs }: { certs: CertListItem[] }) {
 
   return (
     <section aria-labelledby="explorer-title">
-      <h2 id="explorer-title" className="text-center text-xl font-extrabold">
+      <h2 id="explorer-title" className="text-center text-xl font-bold">
         {m.home.findTitle}
       </h2>
 
-      <div className="mx-auto mt-3 max-w-2xl">
+      <div className="mx-auto mt-4 max-w-2xl">
         <label htmlFor="cert-search" className="sr-only">
           {m.home.searchLabel}
         </label>
@@ -71,17 +71,17 @@ export function CertExplorer({ certs }: { certs: CertListItem[] }) {
           onChange={(e) => setQuery(e.target.value)}
           placeholder={m.home.searchPlaceholder}
           autoComplete="off"
-          className="block h-14 w-full rounded-full border-2 border-primary bg-surface px-6 text-center text-lg text-ink shadow-[var(--shadow)] placeholder:text-ink-sub"
+          className="block h-14 w-full rounded-full border-2 border-primary bg-surface px-6 text-center text-lg text-ink  placeholder:text-ink-sub"
         />
 
         {filters.length > 0 && (
-          <fieldset className="mt-3">
+          <fieldset className="mt-4">
             <legend className="sr-only">{m.home.filterLabel}</legend>
             <div className="grid grid-cols-1 gap-2 sm:grid-flow-col sm:auto-cols-fr">
               {filters.map((f) => (
-                <label key={f.id} className="block text-[0.9rem] font-bold text-ink-sub">
+                <label key={f.id} className="block text-sm font-bold text-ink-sub">
                   {f.label}
-                  <select value={f.value} onChange={(e) => f.set(e.target.value)} className={`mt-1 ${selectClass}`}>
+                  <select value={f.value} onChange={(e) => f.set(e.target.value)} className={`mt-2 ${selectClass}`}>
                     <option value="">{m.common.all}</option>
                     {f.options.map((v) => (
                       <option key={v} value={v}>
@@ -96,23 +96,23 @@ export function CertExplorer({ certs }: { certs: CertListItem[] }) {
         )}
       </div>
 
-      <p aria-live="polite" className="mt-4 text-center text-[0.9rem] font-bold text-ink-sub">
+      <p aria-live="polite" className="mt-4 text-center text-sm font-bold text-ink-sub">
         {fmt(narrowed ? m.home.resultCount : m.home.totalCount, { n: results.length })}
       </p>
 
       {results.length === 0 ? (
-        <p className="card mt-2 p-5">{m.home.noResult}</p>
+        <p className="card mt-2 p-6">{m.home.noResult}</p>
       ) : (
         <ul className="cv mt-2 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
           {results.map((c) => (
             <li key={c.id}>
               <Link
                 href={localePath(locale, `/cert/${c.id}`)}
-                className="card flex min-h-[4.5rem] items-center justify-between gap-2 p-3 pl-4 hover:border-primary"
+                className="card flex min-h-[4.5rem] items-center justify-between gap-2 p-4  hover:bg-primary-soft"
               >
                 <span>
-                  <span className="block text-[1.05rem] font-bold leading-snug">{c.name}</span>
-                  <span className="text-[0.85rem] text-ink-sub">
+                  <span className="block text-base font-bold leading-snug">{c.name}</span>
+                  <span className="text-sm text-ink-sub">
                     {certKind(m, c)} · {c.field}
                   </span>
                 </span>

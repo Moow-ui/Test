@@ -34,7 +34,7 @@ export function ConceptsLink() {
         e.preventDefault();
         history.replaceState(null, "", `#${ANALYSIS_ANCHOR}`);
       }}
-      className="flex min-h-11 items-center justify-center rounded-lg border border-line-soft bg-surface-2 px-3 py-1.5 text-center text-[0.9rem] font-bold leading-snug text-ink-sub hover:underline"
+      className="flex min-h-11 items-center justify-center rounded-lg bg-surface-2 px-4 py-2 text-center text-sm font-bold leading-snug text-ink-sub hover:underline"
     >
       {m.cert.conceptsFirst}
     </a>

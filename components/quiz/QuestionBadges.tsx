@@ -27,7 +27,7 @@ export function QuestionBadges({ question }: { question: Pick<Question, "source"
           <Badge tone="ok">{m.source.reviewed}</Badge>
           <button
             type="button"
-            className="inline-flex min-h-8 min-w-8 items-center justify-center rounded-md border border-line bg-surface px-1.5 text-base font-bold text-ink"
+            className="inline-flex h-11 w-11 items-center justify-center rounded-full text-[20px] leading-none text-ink-sub hover:bg-surface-2"
             aria-label={m.source.reviewInfoButton}
             title={m.source.reviewInfoButton}
             aria-expanded={open}
@@ -37,7 +37,7 @@ export function QuestionBadges({ question }: { question: Pick<Question, "source"
             <span aria-hidden="true">ⓘ</span>
           </button>
           {open && (
-            <p id={noteId} className="basis-full rounded-lg border border-line bg-surface-2 p-2.5 text-[0.95rem] font-normal text-ink">
+            <p id={noteId} className="basis-full rounded-lg bg-surface-2 px-4 py-2 text-sm font-normal text-ink">
               {m.source.reviewInfo}
             </p>
           )}

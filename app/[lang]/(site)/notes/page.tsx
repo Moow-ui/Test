@@ -20,7 +20,7 @@ export default async function NotesPage({ params }: Props) {
   const certs = await getReadyCertifications(localeCountry(lang));
   return (
     <div className="mx-auto max-w-3xl space-y-4">
-      <h1 className="text-2xl font-extrabold">{m.notes.title}</h1>
+      <h1 className="text-xl font-bold">{m.notes.title}</h1>
       <p className="text-ink-sub">{m.notes.intro}</p>
       <NotesIndex certs={certs.map((c) => ({ id: c.id, name: c.name }))} />
     </div>

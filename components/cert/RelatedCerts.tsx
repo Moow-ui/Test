@@ -17,7 +17,7 @@ export function RelatedCerts({
   if (related.length === 0) return null;
   return (
     <section aria-labelledby="related-title" className="cv">
-      <h2 id="related-title" className="text-xl font-extrabold">
+      <h2 id="related-title" className="text-xl font-bold">
         {fmt(m.cert.related, { name: certName })}
       </h2>
       <ul className="mt-2 grid gap-2 sm:grid-cols-2">
@@ -25,11 +25,11 @@ export function RelatedCerts({
           <li key={c.id}>
             <Link
               href={localePath(locale, `/cert/${c.id}`)}
-              className="card flex min-h-14 items-center justify-between gap-2 p-3 hover:border-ink"
+              className="card flex min-h-14 items-center justify-between gap-2 p-4 hover:bg-primary-soft"
             >
               <span>
                 <span className="font-bold">{c.name}</span>
-                <span className="ml-2 text-[0.85rem] text-ink-sub">
+                <span className="ml-2 text-sm text-ink-sub">
                   {certKind(m, c)} · {c.field}
                 </span>
               </span>

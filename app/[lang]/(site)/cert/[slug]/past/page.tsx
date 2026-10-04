@@ -77,8 +77,8 @@ export default async function PastPage({ params }: Props) {
         ]}
       />
 
-      <header className="space-y-3">
-        <h1 className="text-2xl font-extrabold leading-snug sm:text-3xl">{meta.h1}</h1>
+      <header className="space-y-4">
+        <h1 className="text-xl font-bold leading-snug sm:text-2xl">{meta.h1}</h1>
         {hasPast ? (
           <p>{fmt(m.past.introPast, { ...vars, subjects: cert.subjects.map((s) => s.name).join(sep) })}</p>
         ) : (
@@ -94,11 +94,11 @@ export default async function PastPage({ params }: Props) {
             </p>
           </>
         )}
-        <p className="rounded-lg border border-warn bg-warn-soft p-3 text-[0.95rem]">{m.past.unverifiedNote}</p>
+        <p className="rounded-lg bg-surface-2 p-4 text-sm">{m.past.unverifiedNote}</p>
       </header>
 
-      <section aria-labelledby="questions-title" className="space-y-3">
-        <h2 id="questions-title" className="text-xl font-extrabold">
+      <section aria-labelledby="questions-title" className="space-y-4">
+        <h2 id="questions-title" className="text-xl font-bold">
           {fmt(hasPast ? m.past.listTitlePast : m.past.listTitle, { name: cert.name, n: shown.length })}
         </h2>
         {shown.map((q, i) => {
@@ -116,12 +116,12 @@ export default async function PastPage({ params }: Props) {
         })}
       </section>
 
-      <section aria-labelledby="more-title" className="rounded-xl border-2 border-primary bg-primary-soft p-4">
-        <h2 id="more-title" className="text-lg font-extrabold">
+      <section aria-labelledby="more-title" className="rounded-2xl bg-primary-soft p-4">
+        <h2 id="more-title" className="text-lg font-bold">
           {fmt(m.past.moreTitle, { n: questions.length - shown.length })}
         </h2>
-        <p className="mt-1 text-[0.95rem]">{m.past.moreHint}</p>
-        <div className="mt-3 flex flex-col gap-2 sm:flex-row">
+        <p className="mt-2 text-sm">{m.past.moreHint}</p>
+        <div className="mt-4 flex flex-col gap-2 sm:flex-row">
           <Link href={`${certPath}/quiz?level=intermediate&count=10&subject=all`} className="btn btn-primary btn-lg">
             {m.past.more10}
           </Link>
@@ -132,14 +132,14 @@ export default async function PastPage({ params }: Props) {
       </section>
 
       <section aria-labelledby="chapters-title">
-        <h2 id="chapters-title" className="text-xl font-extrabold">
+        <h2 id="chapters-title" className="text-xl font-bold">
           {m.past.chaptersTitle}
         </h2>
-        <div className="mt-2 space-y-3">
+        <div className="mt-2 space-y-4">
           {cert.subjects.map((s) => (
             <div key={s.id}>
               <h3 className="font-bold">{s.name}</h3>
-              <ul className="mt-1 flex flex-wrap gap-x-4 gap-y-1">
+              <ul className="mt-2 flex flex-wrap gap-x-4 gap-y-2">
                 {s.chapters.map((c) => (
                   <li key={c.id}>
                     <Link href={`${certPath}/${c.id}`} className="link">

@@ -18,13 +18,13 @@ export function FoldMark() {
 export function Fold({ id, title, children }: { id?: string; title: string; children: ReactNode }) {
   return (
     <details id={id} className="card scroll-mt-4">
-      <summary className="flex min-h-14 items-center justify-between gap-2 px-3 sm:px-4">
-        <h2 className="font-extrabold">{title}</h2>
-        <span className="shrink-0 text-[0.85rem] font-bold text-accent">
+      <summary className="flex min-h-14 items-center justify-between gap-2 px-4 sm:px-4">
+        <h2 className="font-bold">{title}</h2>
+        <span className="shrink-0 text-sm font-bold text-accent">
           <FoldMark />
         </span>
       </summary>
-      <div className="space-y-2 border-t border-line-soft p-3 text-[0.95rem] sm:p-4">{children}</div>
+      <div className="space-y-2 px-4 pb-4 text-sm">{children}</div>
     </details>
   );
 }

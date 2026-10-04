@@ -121,7 +121,7 @@ export function CbtRunner({ cert }: { cert: QuizCert }) {
   if (!hydrated || !pool || !loaded) {
     return (
       <Pad>
-        <p className="card p-5 text-lg font-bold">{m.preparing}</p>
+        <p className="card p-6 text-lg font-bold">{m.preparing}</p>
       </Pad>
     );
   }
@@ -175,13 +175,13 @@ export function CbtRunner({ cert }: { cert: QuizCert }) {
 
   return (
     <Pad>
-      <div className="mx-auto max-w-3xl space-y-5">
+      <div className="mx-auto max-w-3xl space-y-6">
         <header>
-          <p className="text-[0.9rem] font-bold text-ink-sub">{cert.name}</p>
-          <h1 className="text-2xl font-extrabold">{m.title}</h1>
+          <p className="text-sm font-bold text-ink-sub">{cert.name}</p>
+          <h1 className="text-xl font-bold">{m.title}</h1>
         </header>
 
-        <dl className="card grid gap-x-4 gap-y-1 p-4 sm:grid-cols-[7rem_1fr]">
+        <dl className="card grid gap-x-4 gap-y-2 p-4 sm:grid-cols-[7rem_1fr]">
           <dt className="font-bold text-ink-sub">{m.count}</dt>
           <dd className="font-bold">{fmt(m.countValue, { n: cert.examInfo.totalQuestions })}</dd>
           <dt className="font-bold text-ink-sub">{m.time}</dt>
@@ -193,11 +193,11 @@ export function CbtRunner({ cert }: { cert: QuizCert }) {
         </dl>
 
         {inProgress && session ? (
-          <div className="rounded-xl border-2 border-primary bg-primary-soft p-4">
+          <div className="rounded-2xl bg-primary-soft p-4">
             <p className="font-bold">
               {fmt(m.inProgress, { answered, total, time: formatClock(session.remainingSec) })}
             </p>
-            <div className="mt-3 flex flex-col gap-2 sm:flex-row">
+            <div className="mt-4 flex flex-col gap-2 sm:flex-row">
               <button type="button" className="btn btn-primary btn-lg" onClick={() => setRunning(true)}>
                 {m.resume}
               </button>
@@ -213,7 +213,7 @@ export function CbtRunner({ cert }: { cert: QuizCert }) {
             {m.start}
           </button>
         ) : (
-          <p className="rounded-lg border border-bad bg-bad-soft p-3 font-bold">
+          <p className="rounded-lg bg-bad-soft p-4 font-bold">
             {fmt(m.notEnough, { have: pool.length, need: cert.examInfo.totalQuestions })}
           </p>
         )}
@@ -221,11 +221,11 @@ export function CbtRunner({ cert }: { cert: QuizCert }) {
         <details className="card">
           <summary className="flex min-h-14 items-center justify-between px-4 font-bold">
             {m.howTo}
-            <span className="text-[0.85rem] text-accent">
+            <span className="text-sm text-accent">
               <FoldMark />
             </span>
           </summary>
-          <ol className="list-decimal space-y-1 border-t border-line-soft p-4 pl-9 text-[0.95rem]">
+          <ol className="list-decimal space-y-2 p-4 pl-8 text-sm">
             {m.steps.map((step) => (
               <li key={step}>{step}</li>
             ))}

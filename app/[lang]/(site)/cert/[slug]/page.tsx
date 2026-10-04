@@ -67,7 +67,7 @@ export default async function CertPage({ params }: Props) {
   const pastMeta = certPastMeta(lang, cert, pastCount > 0, 0);
 
   return (
-    <article className="space-y-5">
+    <article className="space-y-6">
       {content && <JsonLd data={faqJsonLd(content.faqs)} />}
       <Breadcrumbs
         label={m.nav.breadcrumb}
@@ -77,7 +77,7 @@ export default async function CertPage({ params }: Props) {
         ]}
       />
 
-      <h1 className="text-center text-2xl font-extrabold leading-snug tracking-tight sm:text-3xl">{meta.h1}</h1>
+      <h1 className="text-center text-xl font-bold leading-snug tracking-tight sm:text-2xl">{meta.h1}</h1>
 
       {/* 가장 먼저 보이는 큰 박스: 초급 / 중급 / 고급, 그 아래 실전 문제풀이 */}
       <CertBoxes
@@ -118,7 +118,7 @@ export default async function CertPage({ params }: Props) {
 
       {/* 시험 정보·출제 분석은 아래에 접어 둔다 (내용은 HTML 에 그대로 있음) */}
       {examInfo && (
-        <div className="space-y-2 pt-3">
+        <div className="space-y-2 pt-4">
           <Fold title={m.cert.examInfo}>
             <dl className="grid gap-x-4 gap-y-2 sm:grid-cols-[6rem_1fr]">
               <dt className="font-bold text-ink-sub">{m.cert.certType}</dt>
@@ -163,14 +163,14 @@ export default async function CertPage({ params }: Props) {
 
       {/* 읽을거리(출제 경향·자격증 소개·자주 묻는 질문)는 맨 아래에 작게 접어 둔다 */}
       {content && (
-        <details className="pt-6 text-[0.85rem]">
+        <details className="pt-6 text-sm">
           <summary className="inline-flex min-h-10 items-center font-bold text-ink-sub underline underline-offset-2">
             <span className="when-closed">{fmt(m.cert.more, { name: cert.name })}</span>
             <span className="when-open">{m.common.hide}</span>
           </summary>
-          <div className="mt-2 space-y-5">
+          <div className="mt-2 space-y-6">
             <section className="space-y-2">
-              <h2 className="font-extrabold">{fmt(m.cert.trendTitle, { name: cert.name })}</h2>
+              <h2 className="font-bold">{fmt(m.cert.trendTitle, { name: cert.name })}</h2>
               <p>{content.trendSummary}</p>
               <p>{content.studyTip}</p>
               {cert.ready && (
@@ -182,16 +182,16 @@ export default async function CertPage({ params }: Props) {
               )}
             </section>
             <section className="space-y-2">
-              <h2 className="font-extrabold">{fmt(m.cert.introTitle, { name: cert.name })}</h2>
+              <h2 className="font-bold">{fmt(m.cert.introTitle, { name: cert.name })}</h2>
               <p>{content.intro}</p>
             </section>
             <section>
-              <h2 className="font-extrabold">{m.cert.faqTitle}</h2>
-              <dl className="mt-2 space-y-3">
+              <h2 className="font-bold">{m.cert.faqTitle}</h2>
+              <dl className="mt-2 space-y-4">
                 {content.faqs.map((faq) => (
                   <div key={faq.question}>
                     <dt className="font-bold">{fmt(m.cert.faqQ, { question: faq.question })}</dt>
-                    <dd className="mt-1">{faq.answer}</dd>
+                    <dd className="mt-2">{faq.answer}</dd>
                   </div>
                 ))}
               </dl>

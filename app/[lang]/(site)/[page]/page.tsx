@@ -29,10 +29,10 @@ export default async function InfoPage({ params }: Props) {
 
   return (
     <article className="mx-auto max-w-3xl space-y-6">
-      <h1 className="text-center text-2xl font-extrabold sm:text-3xl">{content.title}</h1>
+      <h1 className="text-center text-xl font-bold sm:text-2xl">{content.title}</h1>
       {content.sections.map((section) => (
         <section key={section.heading} className="space-y-2">
-          <h2 className="text-lg font-extrabold">{section.heading}</h2>
+          <h2 className="text-lg font-bold">{section.heading}</h2>
           <Markdown text={section.body} />
         </section>
       ))}

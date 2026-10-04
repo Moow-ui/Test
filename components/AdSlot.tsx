@@ -46,7 +46,7 @@ export function AdSlot({ position }: { position: string }) {
   if (ADSENSE_CLIENT) {
     return (
       <aside aria-label={m.label} data-ad-position={position} className="no-print mx-auto mt-16 w-full max-w-3xl">
-        <p className="text-center text-[0.8rem] text-ink-sub">{m.label}</p>
+        <p className="text-center text-sm text-ink-sub">{m.label}</p>
         <ins
           className="adsbygoogle"
           style={{ display: "block", minHeight: 100 }}
@@ -63,7 +63,7 @@ export function AdSlot({ position }: { position: string }) {
     <aside
       aria-label={m.label}
       data-ad-position={position}
-      className="no-print mx-auto mt-16 flex min-h-[100px] w-full max-w-3xl items-center justify-center rounded-lg border-2 border-dashed border-line text-[0.85rem] text-ink-sub"
+      className="no-print mx-auto mt-16 flex min-h-[100px] w-full max-w-3xl items-center justify-center rounded-lg bg-surface-2 text-sm text-ink-sub"
     >
       {fmt(m.slot, { position })}
     </aside>

@@ -18,12 +18,9 @@ import { useStored } from "@/lib/use-storage";
 
 const LEVELS: QuizLevel[] = ["basic", "intermediate", "advanced"];
 
-/** 난이도별 박스 색: 고르기 전, 고른 뒤, 펼친 칸 테두리 */
-const LEVEL_STYLE: Record<QuizLevel, { idle: string; active: string; border: string }> = {
-  basic: { idle: "border-lv1 bg-lv1-soft text-ink", active: "border-lv1 bg-lv1 text-white", border: "border-lv1" },
-  intermediate: { idle: "border-lv2 bg-lv2-soft text-ink", active: "border-lv2 bg-lv2 text-white", border: "border-lv2" },
-  advanced: { idle: "border-lv3 bg-lv3-soft text-ink", active: "border-lv3 bg-lv3 text-white", border: "border-lv3" },
-};
+/** 난이도 박스 색: 강조색(파랑) 하나로. 고르기 전은 연한 파랑, 고른 박스만 진한 파랑 */
+const LEVEL_IDLE = "border-transparent bg-primary-soft text-ink hover:border-primary";
+const LEVEL_ACTIVE = "border-primary bg-primary text-white";
 
 export interface CertBoxesProps {
   certId: string;
@@ -76,16 +73,16 @@ export function CertBoxes({ certId, ready, subjects, counts, choiceCounts, cbt, 
               aria-expanded={active}
               aria-controls="level-detail"
               onClick={() => setLevel(active ? null : id)}
-              className={`flex min-h-32 flex-col items-center justify-center gap-1 rounded-2xl border-2 text-3xl font-extrabold shadow-[var(--shadow)] sm:min-h-40 sm:text-5xl ${
+              className={`flex min-h-32 flex-col items-center justify-center gap-2 rounded-2xl border-2 text-xl font-bold sm:min-h-40 sm:text-2xl ${
                 !ready
-                  ? "border-line-soft bg-surface-2 text-ink-sub"
+                  ? "border-transparent bg-surface-2 text-ink-sub"
                   : active
-                    ? LEVEL_STYLE[id].active
-                    : `${LEVEL_STYLE[id].idle} hover:border-ink`
+                    ? LEVEL_ACTIVE
+                    : LEVEL_IDLE
               }`}
             >
               {m.levels[id]}
-              <span className="text-[0.95rem] font-bold sm:text-lg">{fmt(m.cert.choiceCount, { n: choiceCounts[id] })}</span>
+              <span className="text-sm font-normal sm:text-base">{fmt(m.cert.choiceCount, { n: choiceCounts[id] })}</span>
             </button>
           );
         })}
@@ -93,8 +90,8 @@ export function CertBoxes({ certId, ready, subjects, counts, choiceCounts, cbt, 
 
       <div id="level-detail">
         {level && (
-          <div className={`rounded-2xl border-2 bg-surface p-3 shadow-[var(--shadow)] sm:p-4 ${LEVEL_STYLE[level].border}`}>
-            <dl className="grid items-center gap-x-3 gap-y-3 sm:grid-cols-[4.5rem_1fr]">
+          <div className="rounded-2xl bg-surface p-4 sm:p-6">
+            <dl className="grid items-center gap-x-4 gap-y-4 sm:grid-cols-[4.5rem_1fr]">
               <dt className="font-bold">{m.cert.scope}</dt>
               <dd className="flex flex-wrap gap-2">
                 {scopes.map((s) => {
@@ -105,10 +102,8 @@ export function CertBoxes({ certId, ready, subjects, counts, choiceCounts, cbt, 
                       type="button"
                       aria-pressed={active}
                       onClick={() => setScope(s.id)}
-                      className={`min-h-12 rounded-lg border-2 px-4 font-bold ${
-                        active
-                          ? "border-primary bg-primary text-white"
-                          : "border-line bg-surface text-ink hover:border-ink"
+                      className={`min-h-12 rounded-lg px-4 font-bold ${
+                        active ? "bg-primary text-white" : "bg-surface-2 text-ink hover:bg-primary-soft"
                       }`}
                     >
                       {s.name}
@@ -129,12 +124,12 @@ export function CertBoxes({ certId, ready, subjects, counts, choiceCounts, cbt, 
                       disabled={!enough}
                       aria-pressed={active}
                       onClick={() => setCount(c)}
-                      className={`min-h-12 rounded-lg border-2 px-1 text-lg font-extrabold ${
+                      className={`min-h-12 rounded-lg px-2 text-lg font-bold ${
                         active
-                          ? "border-primary bg-primary text-white"
+                          ? "bg-primary text-white"
                           : enough
-                            ? "border-line bg-surface text-ink hover:border-ink"
-                            : "border-line-soft bg-surface-2 text-ink-sub"
+                            ? "bg-surface-2 text-ink hover:bg-primary-soft"
+                            : "bg-surface-2 text-ink-sub opacity-60"
                       }`}
                     >
                       {fmt(m.common.questions, { n: c })}
@@ -145,14 +140,14 @@ export function CertBoxes({ certId, ready, subjects, counts, choiceCounts, cbt, 
             </dl>
 
             {effectiveCount === null ? (
-              <p className="mt-3 rounded-lg border border-bad bg-bad-soft p-3 font-bold">
+              <p className="mt-4 rounded-lg bg-bad-soft p-4 font-bold">
                 {fmt(m.cert.notEnough, { level: m.levels[level] })}
               </p>
             ) : (
               <Link
                 href={`${certPath}/quiz?level=${level}&count=${effectiveCount}&subject=${scope}`}
                 onClick={() => setLastLevel(level)}
-                className="btn btn-primary btn-lg mt-3 w-full"
+                className="btn btn-primary btn-lg mt-4 w-full"
               >
                 {m.cert.start}
               </Link>
@@ -165,15 +160,15 @@ export function CertBoxes({ certId, ready, subjects, counts, choiceCounts, cbt, 
       {cbt ? (
         <Link
           href={`${certPath}/cbt`}
-          className="flex min-h-20 items-center justify-between gap-3 rounded-2xl border-2 border-header bg-header px-5 text-white shadow-[var(--shadow)] hover:border-focus"
+          className="flex min-h-20 items-center justify-between gap-4 rounded-2xl border-2 border-transparent bg-surface px-6 text-ink hover:border-primary"
         >
-          <span className="text-xl font-extrabold sm:text-2xl">{m.cert.cbt}</span>
-          <span className="font-bold">{fmt(m.cert.cbtInfo, { n: cbt.questionCount, min: cbt.minutes, choices: cbt.choiceCount })}</span>
+          <span className="text-lg font-bold">{m.cert.cbt}</span>
+          <span>{fmt(m.cert.cbtInfo, { n: cbt.questionCount, min: cbt.minutes, choices: cbt.choiceCount })}</span>
         </Link>
       ) : (
-        <div className="flex min-h-20 items-center justify-between gap-3 rounded-2xl border-2 border-line-soft bg-surface-2 px-5 text-ink-sub">
-          <span className="text-xl font-extrabold sm:text-2xl">{m.cert.cbt}</span>
-          <span className="font-bold">{m.cert.cbtNotReady}</span>
+        <div className="flex min-h-20 items-center justify-between gap-4 rounded-2xl bg-surface-2 px-6 text-ink-sub">
+          <span className="text-lg font-bold">{m.cert.cbt}</span>
+          <span>{m.cert.cbtNotReady}</span>
         </div>
       )}
 

@@ -19,7 +19,6 @@ export const STORAGE_KEYS = {
   ownedCerts: "qpass:ownedCerts",
   lastLevel: "qpass:lastLevel",
   instantCheck: "qpass:instantCheck",
-  examZoom: "qpass:examZoom",
   cookieNotice: "qpass:cookieNotice",
   session: (certId: string) => `qpass:session:${certId}`,
   cbt: (certId: string) => `qpass:cbt:${certId}`,
@@ -393,19 +392,6 @@ export function isInProgress(session: QuizSession | null): session is QuizSessio
 /** "바로 답 확인하기" 체크 여부 (기본: 켜짐) */
 export function setInstantCheck(value: boolean): void {
   writeJson(STORAGE_KEYS.instantCheck, value);
-}
-
-/** 시험 화면 글자 크기 (실제 CBT 처럼 100% / 150% / 200%) */
-export type ExamZoom = 100 | 150 | 200;
-
-export const EXAM_ZOOMS: Array<{ value: ExamZoom; px: number }> = [
-  { value: 100, px: 17 },
-  { value: 150, px: 21 },
-  { value: 200, px: 25 },
-];
-
-export function setExamZoom(value: ExamZoom): void {
-  writeJson(STORAGE_KEYS.examZoom, value);
 }
 
 // ───────────────────────── 실전 문제풀이 ─────────────────────────

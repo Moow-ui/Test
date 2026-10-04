@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import type { ReactNode } from "react";
 import { AdSlot } from "@/components/AdSlot";
 import { FoldMark } from "@/components/Fold";
+import { TopBar } from "@/components/TopBar";
 import { ChapterNotesLink } from "@/components/quiz/ChapterNotesLink";
 import { Markdown } from "@/components/Markdown";
 import { REVIEWS_ANCHOR } from "@/components/reviews/ReviewSection";
@@ -20,17 +21,15 @@ import type { QuizCert } from "./QuizRunner";
 /** 이 문항 수보다 적게 풀었으면 합격 판정은 "참고용"이라고 알려 준다 */
 const RELIABLE_QUESTION_COUNT = 20;
 
-/** 결과 화면 맨 위: 왼쪽에 사이트 이름(누르면 메인으로). 풀이 중인 시험 화면에는 두지 않는다 */
+/** 결과 화면 맨 위: 다른 화면과 같은 상단 막대 (왼쪽 사이트 이름 → 메인, 오른쪽 글자 크기·어둡게). 풀이 중인 시험 화면에는 사이트 이름을 두지 않는다 */
 export function ResultHeader() {
   const { locale, brand } = useMessages();
   return (
-    <header className="no-print bg-header">
-      <div className="mx-auto flex h-[56px] w-full max-w-5xl items-center px-3 sm:px-4">
-        <Link href={localePath(locale)} className="text-[21px] font-extrabold tracking-tight text-white">
-          {brand}
-        </Link>
-      </div>
-    </header>
+    <TopBar>
+      <Link href={localePath(locale)} className="text-[22px] font-bold tracking-tight text-accent">
+        {brand}
+      </Link>
+    </TopBar>
   );
 }
 
@@ -66,6 +65,12 @@ export function ResultView({
   // 오답노트에는 채점하는 순간 "답을 골라서 틀린 문제"만 자동으로 담긴다 (lib/storage.ts 의 addWrongNotes)
   const savedCount = wrong.filter((w) => w.chosen !== null).length;
   const criteria = cert.examInfo.passCriteria;
+  /** 합격선 괄호 안 짧은 문구: meta.json 의 shortLabel(예: "2종 보통 60점"), 없으면 "평균 60점 · 과목별 40점" */
+  const passLine =
+    criteria.shortLabel ??
+    (criteria.subjectMinScore === null
+      ? fmt(m.lineAverage, { avg: criteria.averageScore })
+      : fmt(m.lineWithMin, { avg: criteria.averageScore, min: criteria.subjectMinScore }));
 
   const retryWrong = () => {
     startSession({
@@ -83,51 +88,58 @@ export function ResultView({
   return (
     <div className="mx-auto max-w-3xl space-y-6">
       <header>
-        <p className="text-[0.9rem] font-bold text-ink-sub">
+        <p className="text-sm font-bold text-ink-sub">
           {cert.name} · {label}
         </p>
-        <h1 className="text-2xl font-extrabold">{m.title}</h1>
+        <h1 className="text-xl font-bold">{m.title}</h1>
       </header>
 
-      <section aria-label={m.scoreLabel} className="card p-4 sm:p-5">
-        <p className="text-lg font-bold">{fmt(m.correctOf, { total: summary.total, correct: summary.correct })}</p>
-        <p className="mt-1 text-4xl font-extrabold">{fmt(m.score, { n: formatScore(summary.score) })}</p>
+      {/* 점수: 큰 숫자 "60점" + 작게 "3/5 정답", 그 아래 합격선 한 줄. 긴 합격 기준은 ⓘ 를 눌러야 보인다 */}
+      <section aria-label={m.scoreLabel} className="card p-6">
+        <p className="flex flex-wrap items-baseline gap-x-4 gap-y-2">
+          <span className="text-2xl font-bold">{fmt(m.score, { n: formatScore(summary.score) })}</span>
+          <span className="text-lg">{fmt(m.correctShort, { total: summary.total, correct: summary.correct })}</span>
+        </p>
 
         {verdict && (
-          <div
-            className={`mt-4 rounded-lg border-2 p-3 ${
-              verdict.passed ? "border-ok bg-ok-soft" : "border-bad bg-bad-soft"
-            }`}
-          >
-            <p className="text-lg font-extrabold">
-              {m.verdict}{" "}
-              <span className={verdict.passed ? "text-ok" : "text-bad"}>{verdict.passed ? m.pass : m.fail}</span>
-            </p>
-            <p className="mt-1 text-[0.95rem]">{fmt(m.criteria, { text: criteria.description })}</p>
-            {verdict.failedSubjects.length > 0 && (
-              <p className="mt-1 text-[0.95rem] font-bold">
-                {fmt(m.failedSubjects, {
-                  list: verdict.failedSubjects
-                    .map((s) => fmt(m.failedItem, { name: s.name, score: formatScore(s.score) }))
-                    .join(all.common.listSeparator),
-                  min: verdict.subjectMinScore ?? 0,
-                })}
-              </p>
-            )}
-            {summary.total < RELIABLE_QUESTION_COUNT && <p className="mt-1 text-[0.9rem]">{m.fewQuestions}</p>}
-          </div>
+          <details className="mt-4">
+            <summary className="flex min-h-11 items-center gap-2">
+              <span className={`min-w-0 text-lg font-bold ${verdict.passed ? "text-ok" : "text-bad"}`}>
+                {verdict.passed ? m.pass : m.fail} ({passLine})
+              </span>
+              <span
+                className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-[20px] leading-none text-ink-sub hover:bg-surface-2"
+                title={m.criteriaButton}
+              >
+                <span aria-hidden="true">ⓘ</span>
+                <span className="sr-only">{m.criteriaButton}</span>
+              </span>
+            </summary>
+            <p className="mt-2 text-sm">{fmt(m.criteria, { text: criteria.description })}</p>
+          </details>
         )}
+        {verdict && verdict.failedSubjects.length > 0 && (
+          <p className="mt-2 font-bold text-bad">
+            {fmt(m.failedSubjects, {
+              list: verdict.failedSubjects
+                .map((s) => fmt(m.failedItem, { name: s.name, score: formatScore(s.score) }))
+                .join(all.common.listSeparator),
+              min: verdict.subjectMinScore ?? 0,
+            })}
+          </p>
+        )}
+        {verdict && summary.total < RELIABLE_QUESTION_COUNT && <p className="mt-2 text-sm text-ink-sub">{m.fewQuestions}</p>}
       </section>
 
       <section aria-labelledby="by-subject-title">
-        <h2 id="by-subject-title" className="text-xl font-extrabold">
+        <h2 id="by-subject-title" className="text-xl font-bold">
           {m.bySubject}
         </h2>
         <ul className="mt-2 space-y-2">
           {summary.bySubject.map((s) => {
             const failed = verdict?.failedSubjects.some((f) => f.id === s.id);
             return (
-              <li key={s.id} className="card p-3">
+              <li key={s.id} className="card p-4">
                 <div className="flex flex-wrap items-baseline justify-between gap-2">
                   <span className="font-bold">{s.name}</span>
                   <span className="font-bold">
@@ -138,7 +150,7 @@ export function ResultView({
                 <div
                   role="img"
                   aria-label={fmt(m.subjectAria, { name: s.name, score: formatScore(s.score) })}
-                  className="mt-1.5 h-4 overflow-hidden rounded border border-line bg-surface-2"
+                  className="mt-2 h-3 overflow-hidden rounded-full bg-surface-2"
                 >
                   <div className="h-full bg-primary" style={{ width: `${s.score}%` }} />
                 </div>
@@ -149,12 +161,12 @@ export function ResultView({
       </section>
 
       {wrong.length > 0 && (
-        <section aria-labelledby="concepts-title" className="rounded-xl border-2 border-primary bg-primary-soft p-4">
-          <h2 id="concepts-title" className="text-xl font-extrabold">
+        <section aria-labelledby="concepts-title" className="rounded-2xl bg-primary-soft p-6">
+          <h2 id="concepts-title" className="text-xl font-bold">
             {m.concepts}
-            <span className="ml-2 text-[0.95rem] font-bold">{m.conceptsHint}</span>
           </h2>
-          <ol className="mt-2 list-decimal space-y-1.5 pl-6">
+          <p className="mt-2 text-sm">{m.conceptsHint}</p>
+          <ol className="mt-2 list-decimal space-y-2 pl-6">
             {questions
               .filter((q, i) => !graded[i].correct)
               .map((q) => (
@@ -167,18 +179,18 @@ export function ResultView({
       )}
 
       <section aria-labelledby="weak-title">
-        <h2 id="weak-title" className="text-xl font-extrabold">
+        <h2 id="weak-title" className="text-xl font-bold">
           {m.weak}
         </h2>
         {summary.weakChapters.length === 0 ? (
-          <p className="card mt-2 p-3 font-bold">{m.noWrong}</p>
+          <p className="card mt-2 p-4 font-bold">{m.noWrong}</p>
         ) : (
           <ol className="mt-2 space-y-2">
             {summary.weakChapters.map((c, i) => (
-              <li key={c.id} className="card flex flex-wrap items-center justify-between gap-2 p-3">
+              <li key={c.id} className="card flex flex-wrap items-center justify-between gap-2 p-4">
                 <span>
-                  <span className="font-extrabold">{i + 1}. {c.name}</span>
-                  <span className="ml-2 text-[0.9rem] font-bold text-ink-sub">
+                  <span className="font-bold">{i + 1}. {c.name}</span>
+                  <span className="ml-2 text-sm font-bold text-ink-sub">
                     {fmt(m.chapterScore, { total: c.total, correct: c.correct, score: formatScore(c.score) })}
                   </span>
                 </span>
@@ -212,7 +224,7 @@ export function ResultView({
       </section>
 
       <section aria-labelledby="review-title" className="cv">
-        <h2 id="review-title" className="text-xl font-extrabold">
+        <h2 id="review-title" className="text-xl font-bold">
           {m.review}
         </h2>
         <ol className="mt-2 space-y-2">
@@ -221,19 +233,19 @@ export function ResultView({
             return (
               <li key={q.id}>
                 <details className="card">
-                  <summary className="flex min-h-14 items-center gap-2 p-3">
-                    <span className={`shrink-0 font-extrabold ${g.correct ? "text-ok" : "text-bad"}`}>
+                  <summary className="flex min-h-14 items-center gap-2 p-4">
+                    <span className={`shrink-0 font-bold ${g.correct ? "text-ok" : "text-bad"}`}>
                       {g.correct ? m.ok : m.ng}
                     </span>
                     <span className="flex-1 whitespace-pre-wrap font-bold">
                       {i + 1}. {q.stem}
                     </span>
-                    <span className="shrink-0 text-[0.9rem] font-bold text-accent">
+                    <span className="shrink-0 text-sm font-bold text-accent">
                       <FoldMark />
                     </span>
                   </summary>
-                  <div className="space-y-2 border-t border-line-soft p-3">
-                    <ol className="space-y-1">
+                  <div className="space-y-2 px-4 pb-4">
+                    <ol className="space-y-2">
                       {visibleChoices(q, level).map((original, ci) => (
                         <li key={original} className={original === q.answer ? "font-bold" : ""}>
                           {circled(ci + 1)} {q.choices[original - 1]}
@@ -247,9 +259,7 @@ export function ResultView({
                     <p>
                       <span className="font-bold">{all.common.keyConcept}</span> {q.oneLineConcept}
                     </p>
-                    <div className="rounded-lg border border-line-soft p-3">
-                      <Markdown text={q.explanation} />
-                    </div>
+                    <Markdown text={q.explanation} />
                     {!g.correct && <ChapterNotesLink certId={cert.id} subjects={cert.subjects} question={q} />}
                   </div>
                 </details>
@@ -260,7 +270,7 @@ export function ResultView({
       </section>
 
       {/* 시험 화면에는 하단 안내(Footer)가 없어서 약관 링크를 여기에 둔다 */}
-      <nav aria-label={all.nav.legalMenu} className="no-print flex flex-wrap justify-center gap-x-4 gap-y-1 text-[0.85rem]">
+      <nav aria-label={all.nav.legalMenu} className="no-print flex flex-wrap justify-center gap-x-4 gap-y-2 text-sm">
         {(["terms", "privacy", "disclaimer"] as const).map((id) => (
           <Link key={id} href={localePath(locale, `/${id}`)} className="link">
             {all.nav[id]}

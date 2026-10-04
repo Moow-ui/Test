@@ -15,7 +15,7 @@ export function errorText(m: Messages, code: string): string {
 type Mode = "login" | "signup";
 
 const inputClass =
-  "mt-1 block h-14 w-full rounded-lg border-2 border-line bg-surface px-4 text-lg text-ink placeholder:text-ink-sub";
+  "mt-2 block h-14 w-full rounded-lg border-2 border-line bg-surface px-4 text-lg text-ink placeholder:text-ink-sub";
 
 /** 로그인 / 회원가입 (아이디·비밀번호·닉네임만 받는다) */
 export function AuthForm() {
@@ -58,10 +58,10 @@ export function AuthForm() {
               setMode(tab);
               setError(null);
             }}
-            className={`min-h-14 rounded-lg border-2 text-lg font-extrabold ${
+            className={`min-h-14 rounded-lg text-lg font-bold ${
               mode === tab
-                ? "border-primary bg-primary text-white"
-                : "border-line bg-surface text-ink hover:border-ink"
+                ? "bg-primary text-white"
+                : "bg-surface-2 text-ink hover:bg-primary-soft"
             }`}
           >
             {m[tab]}
@@ -70,7 +70,7 @@ export function AuthForm() {
       </div>
 
       <form
-        className="card mt-3 space-y-4 p-4"
+        className="card mt-4 space-y-4 p-4"
         onSubmit={(e) => {
           e.preventDefault();
           void submit();
@@ -89,7 +89,7 @@ export function AuthForm() {
             spellCheck={false}
             className={inputClass}
           />
-          {mode === "signup" && <p className="mt-1 text-[0.8rem] text-ink-sub">{all.errors.username_rule}</p>}
+          {mode === "signup" && <p className="mt-2 text-sm text-ink-sub">{all.errors.username_rule}</p>}
         </div>
 
         <div>
@@ -104,7 +104,7 @@ export function AuthForm() {
             autoComplete={mode === "login" ? "current-password" : "new-password"}
             className={inputClass}
           />
-          {mode === "signup" && <p className="mt-1 text-[0.8rem] text-ink-sub">{all.errors.password_rule}</p>}
+          {mode === "signup" && <p className="mt-2 text-sm text-ink-sub">{all.errors.password_rule}</p>}
         </div>
 
         {mode === "signup" && (
@@ -133,13 +133,13 @@ export function AuthForm() {
                 autoComplete="nickname"
                 className={inputClass}
               />
-              <p className="mt-1 text-[0.8rem] text-ink-sub">{all.errors.nickname_rule}</p>
+              <p className="mt-2 text-sm text-ink-sub">{all.errors.nickname_rule}</p>
             </div>
           </>
         )}
 
         {error && (
-          <p role="alert" className="rounded-lg border border-bad bg-bad-soft p-3 font-bold">
+          <p role="alert" className="rounded-lg bg-bad-soft p-4 font-bold">
             {errorText(all, error)}
           </p>
         )}
@@ -148,7 +148,7 @@ export function AuthForm() {
           {busy ? m.busy : mode === "login" ? m.login : m.join}
         </button>
 
-        {mode === "signup" && <p className="text-[0.8rem] text-ink-sub">{m.noRecovery}</p>}
+        {mode === "signup" && <p className="text-sm text-ink-sub">{m.noRecovery}</p>}
       </form>
     </div>
   );

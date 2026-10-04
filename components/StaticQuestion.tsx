@@ -27,33 +27,33 @@ export function StaticQuestion({
 }) {
   const m = getMessages(locale);
   return (
-    <article className="cv card p-3 sm:p-4">
-      <div className="flex flex-wrap items-center gap-1.5">
+    <article className="cv card p-4 sm:p-4">
+      <div className="flex flex-wrap items-center gap-2">
         <QuestionBadges
           question={{ source: question.source, pastInfo: question.pastInfo, reviewStatus: question.reviewStatus }}
         />
-        <span className="text-[0.85rem] font-bold text-ink-sub">{location}</span>
-        <span className="text-[0.85rem]">
+        <span className="text-sm font-bold text-ink-sub">{location}</span>
+        <span className="text-sm">
           <Stars value={calcStars(chapterImportance, question.frequency)} />
         </span>
       </div>
       <h3 className="mt-2 whitespace-pre-wrap text-lg font-bold leading-normal">
         {fmt(m.question.numbered, { n: number })} {question.stem}
       </h3>
-      <ol className="mt-2 space-y-1.5 text-lg">
+      <ol className="mt-2 space-y-2 text-lg">
         {question.choices.map((choice, i) => (
           <li key={i}>
             {circled(i + 1)} {choice}
           </li>
         ))}
       </ol>
-      <details className="mt-3 rounded-lg border-2 border-line">
-        <summary className="flex min-h-12 items-center px-3 font-bold text-accent">
+      <details className="mt-4 rounded-lg bg-surface-2">
+        <summary className="flex min-h-12 items-center px-4 font-bold text-accent">
           <span className="when-closed">{m.question.showAnswer}</span>
           <span className="when-open">{m.question.hideAnswer}</span>
         </summary>
-        <div className="space-y-2 border-t border-line-soft p-3">
-          <p className="text-lg font-extrabold">
+        <div className="space-y-2 p-4">
+          <p className="text-lg font-bold">
             {m.question.answerIs} {circled(question.answer)} {question.choices[question.answer - 1]}
           </p>
           <p>

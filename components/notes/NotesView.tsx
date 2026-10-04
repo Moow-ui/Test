@@ -47,23 +47,23 @@ export function NotesView({ cert }: { cert: { id: string; name: string; subjects
   };
 
   return (
-    <div className="mx-auto max-w-3xl space-y-5">
+    <div className="mx-auto max-w-3xl space-y-6">
       <header>
-        <p className="no-print text-[0.9rem] font-bold text-ink-sub">
+        <p className="no-print text-sm font-bold text-ink-sub">
           <Link href={certPath} className="link">
             {fmt(m.backToCert, { name: cert.name })}
           </Link>
         </p>
-        <h1 className="mt-1 text-2xl font-extrabold">
+        <h1 className="mt-2 text-xl font-bold">
           {fmt(m.certTitle, { name: cert.name })} {hydrated && loaded && fmt(m.countSuffix, { n: notes.length })}
         </h1>
-        <p className="print-only text-[0.9rem]">{fmt(m.printHeader, { brand })}</p>
+        <p className="print-only text-sm">{fmt(m.printHeader, { brand })}</p>
       </header>
 
       {!hydrated || !loaded ? (
         <p className="card p-4 font-bold">{m.loading}</p>
       ) : notes.length === 0 ? (
-        <div className="card space-y-3 p-5">
+        <div className="card space-y-4 p-6">
           <p className="font-bold">{m.empty}</p>
           <p>{m.emptyHint}</p>
           <Link href={`${certPath}/quiz?level=basic&count=5&subject=all`} className="btn btn-primary btn-lg">
@@ -83,11 +83,11 @@ export function NotesView({ cert }: { cert: { id: string; name: string; subjects
               {m.clear}
             </button>
           </div>
-          <p className="no-print text-[0.9rem] text-ink-sub">{m.printHint}</p>
+          <p className="no-print text-sm text-ink-sub">{m.printHint}</p>
 
           {confirmClear && (
-            <div role="alertdialog" aria-labelledby="clear-title" className="no-print rounded-lg border-2 border-bad bg-bad-soft p-4">
-              <p id="clear-title" className="font-extrabold">
+            <div role="alertdialog" aria-labelledby="clear-title" className="no-print rounded-lg bg-bad-soft p-4">
+              <p id="clear-title" className="font-bold">
                 {fmt(m.confirmClear, { name: cert.name, n: notes.length })}
               </p>
               <div className="mt-2 flex flex-wrap gap-2">
@@ -110,20 +110,20 @@ export function NotesView({ cert }: { cert: { id: string; name: string; subjects
 
           <ol className="space-y-4">
             {notes.map(({ note, question: q }, i) => (
-              <li key={q.id} className="card print-avoid-break p-3 sm:p-4">
-                <div className="flex flex-wrap items-center gap-1.5">
-                  <span className="font-extrabold">{i + 1}.</span>
-                  <span className="no-print flex flex-wrap gap-1.5">
+              <li key={q.id} className="card print-avoid-break p-4 sm:p-4">
+                <div className="flex flex-wrap items-center gap-2">
+                  <span className="font-bold">{i + 1}.</span>
+                  <span className="no-print flex flex-wrap gap-2">
                     <QuestionBadges question={q} />
                   </span>
-                  <span className="text-[0.85rem] font-bold text-ink-sub">{locationOf(q)}</span>
+                  <span className="text-sm font-bold text-ink-sub">{locationOf(q)}</span>
                 </div>
-                <h2 className="mt-1 whitespace-pre-wrap text-lg font-bold leading-normal">{q.stem}</h2>
-                <ol className="mt-2 space-y-1">
+                <h2 className="mt-2 whitespace-pre-wrap text-lg font-bold leading-normal">{q.stem}</h2>
+                <ol className="mt-2 space-y-2">
                   {q.choices.map((choice, ci) => {
                     const n = ci + 1;
                     return (
-                      <li key={n} className={n === q.answer ? "font-extrabold" : ""}>
+                      <li key={n} className={n === q.answer ? "font-bold" : ""}>
                         {circled(n)} {choice}
                         {n === q.answer && <span className="ml-2 text-ok">{all.result.answerMark}</span>}
                         {n === note.chosen && n !== q.answer && (
@@ -136,13 +136,13 @@ export function NotesView({ cert }: { cert: { id: string; name: string; subjects
                 <p className="mt-2 border-t border-line-soft pt-2">
                   <span className="font-bold">{all.common.keyConcept}</span> {q.oneLineConcept}
                 </p>
-                <div className="mt-2 text-[0.95rem]">
+                <div className="mt-2 text-sm">
                   <Markdown text={q.explanation} />
                 </div>
                 <ChapterNotesLink certId={cert.id} subjects={cert.subjects} question={q} className="no-print mt-2" />
                 {/* 나만의 오답노트: 내가 직접 적는 메모 (칸을 벗어나면 저장된다) */}
-                <div className="mt-3">
-                  <label htmlFor={`memo-${q.id}`} className="no-print block text-[0.9rem] font-bold">
+                <div className="mt-4">
+                  <label htmlFor={`memo-${q.id}`} className="no-print block text-sm font-bold">
                     {m.memo}
                   </label>
                   <textarea
@@ -155,18 +155,18 @@ export function NotesView({ cert }: { cert: { id: string; name: string; subjects
                     rows={2}
                     maxLength={500}
                     placeholder={m.memoPlaceholder}
-                    className="no-print mt-1 w-full rounded-lg border-2 border-line bg-surface p-2 text-ink placeholder:text-ink-sub"
+                    className="no-print mt-2 w-full rounded-lg border-2 border-line bg-surface p-2 text-ink placeholder:text-ink-sub"
                   />
                   {note.memo && (
-                    <p className="print-only mt-1">
+                    <p className="print-only mt-2">
                       <span className="font-bold">{m.memoPrint}</span> {note.memo}
                     </p>
                   )}
                 </div>
-                <div className="no-print mt-3">
+                <div className="no-print mt-4">
                   <button
                     type="button"
-                    className="btn min-h-11 px-3 py-1 text-[0.9rem]"
+                    className="btn min-h-11 px-4 py-2 text-sm"
                     onClick={() => removeNote(q.id)}
                   >
                     {m.remove}

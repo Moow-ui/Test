@@ -8,8 +8,8 @@ import { useMessages } from "@/lib/use-messages";
 export function NotFoundView() {
   const { locale, m } = useMessages();
   return (
-    <div className="card mx-auto my-6 w-[calc(100%-2rem)] max-w-3xl space-y-3 p-5">
-      <h1 className="text-2xl font-extrabold">{m.notFound.title}</h1>
+    <div className="card mx-auto my-6 w-[calc(100%-2rem)] max-w-3xl space-y-4 p-6">
+      <h1 className="text-xl font-bold">{m.notFound.title}</h1>
       <p>{m.notFound.text}</p>
       <Link href={localePath(locale)} className="btn btn-primary btn-lg">
         {m.notFound.button}

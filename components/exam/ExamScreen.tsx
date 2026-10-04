@@ -11,10 +11,9 @@ import { visibleChoices } from "@/lib/choices";
 import { circled, formatClock, sourceLabel } from "@/lib/format";
 import { fmt } from "@/lib/i18n";
 import { calcStars, getPassContribution } from "@/lib/scoring";
-import { EXAM_ZOOMS, STORAGE_KEYS, setExamZoom, type ExamZoom } from "@/lib/storage";
 import type { Question, QuizLevel, Subject } from "@/lib/types";
 import { useMessages } from "@/lib/use-messages";
-import { useStored } from "@/lib/use-storage";
+import { TopBar } from "@/components/TopBar";
 
 export interface ExamScreenProps {
   certName: string;
@@ -59,9 +58,9 @@ export function ReviewLine({ question }: { question: Question }) {
   const status = reviewed ? m.source.reviewed : question.reviewStatus === "unverified" ? m.source.unverified : null;
   return (
     <div data-review-badge="">
-      <p className="flex flex-wrap items-center gap-1">
+      <p className="flex flex-wrap items-center gap-2">
         <span
-          className={`inline-flex items-center rounded-full px-3 py-1 text-[14px] font-bold ${
+          className={`inline-flex items-center rounded-full px-4 py-2 text-sm font-bold ${
             reviewed ? "bg-ok-soft text-ok" : "bg-surface-2 text-ink-sub"
           }`}
         >
@@ -70,7 +69,7 @@ export function ReviewLine({ question }: { question: Question }) {
         {reviewed && (
           <button
             type="button"
-            className="inline-flex h-11 w-11 items-center justify-center rounded-full text-[20px] leading-none text-ink-sub hover:bg-surface-2"
+            className="inline-flex h-11 w-11 items-center justify-center rounded-full text-lg leading-none text-ink-sub hover:bg-surface-2"
             aria-label={m.source.reviewInfoButton}
             title={m.source.reviewInfoButton}
             aria-expanded={open}
@@ -80,7 +79,7 @@ export function ReviewLine({ question }: { question: Question }) {
           </button>
         )}
       </p>
-      {open && <p className="mt-1 rounded-lg bg-surface-2 px-3 py-2 text-[15px] text-ink">{m.source.reviewInfo}</p>}
+      {open && <p className="mt-2 rounded-lg bg-surface-2 px-4 py-2 text-sm text-ink">{m.source.reviewInfo}</p>}
     </div>
   );
 }
@@ -117,7 +116,6 @@ export function ExamScreen({
   const { m: all } = useMessages();
   const m = all.exam;
   const submitLabel = submitKind === "grade" ? m.grade : m.submit;
-  const zoom = useStored<ExamZoom>(STORAGE_KEYS.examZoom, 100);
   const [showSheet, setShowSheet] = useState(false);
   const [showUnanswered, setShowUnanswered] = useState(false);
   const [confirming, setConfirming] = useState(false);
@@ -131,7 +129,6 @@ export function ExamScreen({
   const isRevealed = !!revealed[question.id];
   const isLast = index + 1 >= total;
   const unanswered = questions.map((q, i) => ({ q, i })).filter(({ q }) => answers[q.id] === undefined);
-  const fontPx = (EXAM_ZOOMS.find((z) => z.value === zoom) ?? EXAM_ZOOMS[0]).px;
 
   const goTo = (i: number) => {
     onGoTo(Math.max(0, Math.min(total - 1, i)));
@@ -200,82 +197,52 @@ export function ExamScreen({
 
   return (
     <div className="flex min-h-dvh flex-col">
-      {/* ───── 위: 종목명, 문제 수 / 남은 시간 ───── */}
-      <header className="bg-[#1e3a8a] text-white">
-        <div className="mx-auto flex w-full max-w-6xl flex-wrap items-center justify-between gap-x-4 gap-y-0.5 px-3 py-2 text-[15px]">
-          <h1 className="font-bold">
-            {certName} <span className="font-normal">· {modeLabel}</span>
-          </h1>
-          {timer ? (
-            <p>
-              {fmt(m.timeLimit, { min: Math.round(timer.totalSec / 60) })}{" "}
-              <span
-                role="timer"
-                className={`text-[18px] font-extrabold tabular-nums ${timer.remainingSec <= 300 ? "text-[#fca5a5]" : ""}`}
-              >
-                {formatClock(timer.remainingSec)}
-              </span>
-            </p>
-          ) : (
-            <p>{fmt(m.totals, { total, left: unanswered.length })}</p>
-          )}
-        </div>
-      </header>
+      {/* ───── 위: 다른 화면과 같은 상단 막대 (왼쪽 나가기, 오른쪽 글자 크기·어둡게) ───── */}
+      <TopBar wide>
+        <Link href={exitHref} className="font-bold text-ink underline underline-offset-4">
+          {m.exit}
+        </Link>
+        {onPause && (
+          <button type="button" className="min-h-11 font-bold text-ink underline underline-offset-4" onClick={onPause}>
+            {m.pause}
+          </button>
+        )}
+      </TopBar>
 
-      {/* ───── 글자크기 · 나가기 ───── */}
-      <div className="border-b border-line-soft bg-surface">
-        <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-2 px-3 py-1.5 text-[13px] font-bold">
-          <div role="group" aria-label={m.fontSizeLabel} className="flex items-center gap-1">
-            <span>{m.fontSize}</span>
-            {EXAM_ZOOMS.map((z) => (
-              <button
-                key={z.value}
-                type="button"
-                aria-pressed={zoom === z.value}
-                onClick={() => setExamZoom(z.value)}
-                className={`h-8 rounded border px-2 ${
-                  zoom === z.value
-                    ? "border-[#1e3a8a] bg-[#1e3a8a] text-white"
-                    : "border-line bg-surface text-ink hover:border-ink"
-                }`}
-              >
-                {z.value}%
-              </button>
-            ))}
-          </div>
-          <div className="flex items-center gap-3">
-            {timer && <span>{fmt(m.totalsShort, { total, left: unanswered.length })}</span>}
-            {onPause && (
-              <button type="button" className="underline underline-offset-2" onClick={onPause}>
-                {m.pause}
-              </button>
-            )}
-            <Link href={exitHref} className="underline underline-offset-2">
-              {m.exit}
-            </Link>
-          </div>
-        </div>
+      {/* ───── 한 줄 요약: "운전면허 학과시험 · 중급 · 3/5" (실전 문제풀이는 오른쪽에 남은 시간) ───── */}
+      <div className="mx-auto flex w-full max-w-6xl flex-wrap items-center justify-between gap-x-4 gap-y-2 px-4 pt-4">
+        <h1 className="text-base font-bold">
+          {certName} · {modeLabel} · {fmt(m.progress, { n: index + 1, total })}
+        </h1>
+        {timer && (
+          <p className="text-sm">
+            {fmt(m.timeLimit, { min: Math.round(timer.totalSec / 60) })}{" "}
+            <span
+              role="timer"
+              className={`text-lg font-bold tabular-nums ${timer.remainingSec <= 300 ? "text-bad" : ""}`}
+            >
+              {formatClock(timer.remainingSec)}
+            </span>
+          </p>
+        )}
       </div>
 
       {/* ───── 문제 / 답안 표기란 ───── */}
-      <div
-        className="mx-auto grid w-full max-w-6xl flex-1 content-start gap-3 px-3 py-3 lg:grid-cols-[1fr_15.5rem]"
-        style={{ fontSize: `${fontPx}px` }}
-      >
+      <div className="mx-auto grid w-full max-w-6xl flex-1 content-start gap-4 px-4 py-4 text-base lg:grid-cols-[1fr_16rem]">
         {/* key: 문제가 바뀌면 문제 영역(배지·해설 포함)을 통째로 새로 그린다. 안쪽 요소에 같은 key 를 다시 쓰지 않는다 */}
-        <section key={question.id} aria-label={m.question} className="border border-line bg-surface px-[1em] py-[0.9em]">
+        <section key={question.id} aria-label={m.question} className="rounded-2xl bg-surface p-4 sm:p-6">
           <ReviewLine question={question} />
-          <h2 className="mt-[0.2em] whitespace-pre-wrap font-bold leading-normal">
+          <h2 className="mt-2 whitespace-pre-wrap font-bold leading-normal">
             {index + 1}. {question.stem}
           </h2>
 
-          <ol className="mt-[0.5em]">
+          <ol className="mt-4 space-y-2">
             {shown.map((original, i) => {
               const n = i + 1;
               const choice = question.choices[original - 1];
               const selected = chosen === original;
               const isAnswer = original === question.answer;
-              let row = "hover:bg-surface-2";
+              let row = "bg-bg hover:bg-primary-soft";
               let bubble = "border-ink bg-surface text-ink";
               if (isRevealed && isAnswer) {
                 row = "bg-ok-soft";
@@ -294,21 +261,21 @@ export function ExamScreen({
                     aria-pressed={selected}
                     disabled={isRevealed}
                     onClick={() => select(original)}
-                    className={`flex min-h-[2.7em] w-full items-center gap-[0.6em] rounded px-[0.4em] py-[0.35em] text-left leading-snug ${row}`}
+                    className={`flex min-h-12 w-full items-center gap-4 rounded-lg px-4 py-2 text-left leading-snug ${row}`}
                   >
                     <span
                       aria-hidden="true"
-                      className={`flex h-[1.5em] w-[1.5em] shrink-0 items-center justify-center rounded-full border-2 text-[0.8em] font-bold ${bubble}`}
+                      className={`flex h-[1.6em] w-[1.6em] shrink-0 items-center justify-center rounded-full border-2 text-sm font-bold ${bubble}`}
                     >
                       {n}
                     </span>
                     <span className="sr-only">{fmt(m.choiceN, { n })}</span>
                     <span className="min-w-0 flex-1">{choice}</span>
                     {isRevealed && isAnswer && (
-                      <span className="shrink-0 text-[12px] font-extrabold text-ok">{all.common.answer}</span>
+                      <span className="shrink-0 text-sm font-bold text-ok">{all.common.answer}</span>
                     )}
                     {isRevealed && selected && !isAnswer && (
-                      <span className="shrink-0 text-[12px] font-extrabold text-bad">{all.common.myChoice}</span>
+                      <span className="shrink-0 text-sm font-bold text-bad">{all.common.myChoice}</span>
                     )}
                   </button>
                 </li>
@@ -329,21 +296,21 @@ export function ExamScreen({
 
         <aside
           aria-label={m.sheet}
-          className={`border border-line bg-surface p-2 text-[14px] lg:block ${showSheet ? "" : "hidden"}`}
+          className={`rounded-2xl bg-surface p-4 text-sm lg:block ${showSheet ? "" : "hidden"}`}
         >
-          <h2 className="border-b border-line-soft pb-1 text-center font-extrabold">{m.sheet}</h2>
-          <ol className="mt-1 grid grid-cols-2 gap-x-2 sm:grid-cols-3 lg:max-h-[calc(100dvh-14rem)] lg:grid-cols-1 lg:overflow-y-auto">
+          <h2 className="text-center font-bold">{m.sheet}</h2>
+          <ol className="mt-2 grid grid-cols-1 gap-x-4 sm:grid-cols-2 lg:max-h-[calc(100dvh-14rem)] lg:grid-cols-1 lg:overflow-y-auto">
             {questions.map((q, i) => {
               const marked = answers[q.id];
               const graded = !!revealed[q.id];
               return (
-                <li key={q.id} className={`flex items-center gap-1 rounded px-1 ${i === index ? "bg-primary-soft" : ""}`}>
+                <li key={q.id} className={`flex items-center rounded-lg ${i === index ? "bg-primary-soft" : ""}`}>
                   <button
                     type="button"
                     onClick={() => goTo(i)}
                     aria-label={fmt(marked === undefined ? m.goToUnanswered : m.goTo, { n: i + 1 })}
                     aria-current={i === index ? "true" : undefined}
-                    className={`h-8 w-8 shrink-0 font-extrabold underline ${marked === undefined ? "text-bad" : "text-ink"}`}
+                    className={`h-11 w-11 shrink-0 font-bold underline ${marked === undefined ? "text-bad" : "text-ink"}`}
                   >
                     {i + 1}
                   </button>
@@ -365,9 +332,13 @@ export function ExamScreen({
                         aria-label={fmt(m.mark, { q: i + 1, n })}
                         aria-pressed={marked === original}
                         onClick={() => onSelect(q, original)}
-                        className={`flex h-7 w-7 items-center justify-center rounded-full border-2 text-[12px] font-bold ${bubble}`}
+                        className="flex h-11 w-11 items-center justify-center"
                       >
-                        {n}
+                        <span
+                          className={`flex h-7 w-7 items-center justify-center rounded-full border-2 text-sm font-bold ${bubble}`}
+                        >
+                          {n}
+                        </span>
                       </button>
                     );
                   })}
@@ -388,9 +359,9 @@ export function ExamScreen({
             aria-modal="true"
             aria-labelledby="submit-title"
             aria-describedby="submit-text"
-            className="w-full max-w-md border-2 border-[#1e3a8a] bg-surface p-5 text-[17px] outline-none"
+            className="w-full max-w-md rounded-2xl bg-surface p-6 text-base outline-none"
           >
-            <h2 id="submit-title" className="text-[20px] font-extrabold">
+            <h2 id="submit-title" className="text-lg font-bold">
               {unanswered.length === 0
                 ? submitKind === "grade"
                   ? m.confirmGrade
@@ -413,21 +384,21 @@ export function ExamScreen({
       )}
 
       {/* ───── 아래: 바로 답 확인 · 이전 · 다음 · 안 푼 문제 · 제출 ───── */}
-      <footer className="sticky bottom-0 border-t-2 border-line bg-surface">
+      <footer className="sticky bottom-0 border-t border-line-soft bg-surface">
         {/* 안 푼 문제 목록: 버튼 줄 바로 위에 붙여 항상 보이게 한다 */}
         {showUnanswered && (
-          <div className="mx-auto max-h-[40dvh] w-full max-w-6xl overflow-y-auto border-b border-line px-3 py-2 text-[15px]">
+          <div className="mx-auto max-h-[40dvh] w-full max-w-6xl overflow-y-auto px-4 py-2 text-sm">
             {unanswered.length === 0 ? (
               <p className="font-bold">{m.allAnswered}</p>
             ) : (
               <>
                 <p className="font-bold">{fmt(m.unansweredList, { n: unanswered.length })}</p>
-                <ul className="mt-2 flex flex-wrap gap-1.5">
+                <ul className="mt-2 flex flex-wrap gap-2">
                   {unanswered.map(({ q, i }) => (
                     <li key={q.id}>
                       <button
                         type="button"
-                        className="h-10 min-w-11 rounded border-2 border-line bg-surface px-2 font-bold hover:border-ink"
+                        className="btn min-w-12 px-2"
                         onClick={() => goTo(i)}
                       >
                         {i + 1}
@@ -439,13 +410,13 @@ export function ExamScreen({
             )}
           </div>
         )}
-        <div className="mx-auto flex w-full max-w-6xl flex-wrap items-center justify-between gap-x-3 gap-y-2 px-3 py-2 text-[15px] font-bold">
-          <div className="flex flex-1 items-center gap-2">
+        <div className="mx-auto flex w-full max-w-6xl flex-wrap items-center justify-between gap-x-4 gap-y-2 px-4 py-2 text-sm font-bold">
+          <div className="flex flex-1 flex-wrap items-center gap-2">
             <button
               type="button"
               disabled={index === 0}
               onClick={() => goTo(index - 1)}
-              className="btn min-h-11 px-3 py-1"
+              className="btn"
             >
               {m.prev}
             </button>
@@ -453,17 +424,17 @@ export function ExamScreen({
               ref={nextRef}
               type="button"
               onClick={forward}
-              className="btn btn-primary min-h-11 flex-1 px-4 py-1 sm:flex-none sm:min-w-36"
+              className="btn btn-primary flex-1 sm:min-w-40 sm:flex-none"
             >
               {isLast ? fmt(m.last, { label: submitLabel }) : m.next}
             </button>
             {instant && (
-              <label className="flex min-h-11 cursor-pointer items-center gap-1.5 whitespace-nowrap">
+              <label className="flex min-h-12 cursor-pointer items-center gap-2">
                 <input
                   type="checkbox"
                   checked={instant.checked}
                   onChange={(e) => instant.onChange(e.target.checked)}
-                  className="h-5 w-5 accent-[#1e3a8a]"
+                  className="h-6 w-6 accent-primary"
                 />
                 {m.instant}
               </label>
@@ -474,7 +445,7 @@ export function ExamScreen({
               type="button"
               aria-expanded={showSheet}
               onClick={() => setShowSheet((v) => !v)}
-              className="btn min-h-11 px-3 py-1 lg:hidden"
+              className="btn lg:hidden"
             >
               {m.sheet}
             </button>
@@ -482,12 +453,12 @@ export function ExamScreen({
               type="button"
               aria-expanded={showUnanswered}
               onClick={() => setShowUnanswered((v) => !v)}
-              className="btn min-h-11 px-3 py-1"
+              className="btn"
             >
               {fmt(m.unanswered, { n: unanswered.length })}
             </button>
             {!isLast && (
-              <button type="button" onClick={requestSubmit} className="btn min-h-11 px-3 py-1">
+              <button type="button" onClick={requestSubmit} className="btn">
                 {submitLabel}
               </button>
             )}
@@ -526,44 +497,47 @@ function AnswerResult({
   });
 
   return (
-    <div
-      role="status"
-      className={`mt-[0.7em] border-l-4 px-[0.8em] py-[0.5em] text-[0.85em] ${
-        correct ? "border-ok bg-ok-soft" : "border-bad bg-bad-soft"
-      }`}
-    >
-      <p className="font-extrabold">
-        <span className={correct ? "text-ok" : "text-bad"}>{correct ? m.correct : m.wrong}</span>
-        <span className="mx-1.5" aria-hidden="true">
-          ·
-        </span>
-        {fmt(m.answerIs, { answer: circled(answerNo) })}
+    <div role="status" className={`mt-6 rounded-lg p-4 ${correct ? "bg-ok-soft" : "bg-bad-soft"}`}>
+      {/* 맞혔으면 "정답 ③", 틀렸으면 "오답 · 정답 ③" */}
+      <p className="text-lg font-bold">
+        {correct ? (
+          <span className="text-ok">{fmt(m.answerIs, { answer: circled(answerNo) })}</span>
+        ) : (
+          <>
+            <span className="text-bad">{m.wrong}</span>
+            <span className="mx-2" aria-hidden="true">
+              ·
+            </span>
+            {fmt(m.answerIs, { answer: circled(answerNo) })}
+          </>
+        )}
       </p>
-      <p>
+      <p className="mt-2">
         <span className="font-bold">{all.common.keyConcept}</span> {question.oneLineConcept}
-      </p>
-      <p>
-        {all.common.importance} <Stars value={stars} />
-        <span className="mx-1.5" aria-hidden="true">
-          ·
-        </span>
-        {m.passChance} <strong className="font-extrabold">{contribution.value}%</strong>
       </p>
       <button
         type="button"
         aria-expanded={showExplanation}
         onClick={() => setShowExplanation((v) => !v)}
-        className="mt-1 font-bold underline underline-offset-2"
+        className="btn mt-4 bg-surface"
       >
         {showExplanation ? m.hideExplanation : m.showExplanation}
       </button>
+      {/* 해설: 상자 안에 상자를 넣지 않고 여백으로만 나눈다 */}
       {showExplanation && (
-        <div className="mt-2 border border-line bg-surface p-[0.8em]">
-          <p className="mb-2 text-[12px] font-bold text-ink-sub">{meta.location}</p>
+        <div className="mt-4 space-y-2">
+          <p className="text-sm">
+            {all.common.importance} <Stars value={stars} />
+            <span className="mx-2" aria-hidden="true">
+              ·
+            </span>
+            {m.passChance} <strong className="font-bold">{contribution.value}%</strong>
+          </p>
+          <p className="text-sm text-ink-sub">{meta.location}</p>
           <Markdown text={question.explanation} />
           <button
             type="button"
-            className="mt-3 text-[12px] font-bold text-ink-sub underline underline-offset-2"
+            className="min-h-11 text-sm font-bold text-ink-sub underline underline-offset-2"
             aria-expanded={showReport}
             onClick={() => setShowReport((v) => !v)}
           >
@@ -577,7 +551,7 @@ function AnswerResult({
           certId={chapterNotes.certId}
           subjects={chapterNotes.subjects}
           question={question}
-          className="mt-2"
+          className="mt-4"
         />
       )}
     </div>

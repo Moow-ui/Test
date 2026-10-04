@@ -28,7 +28,7 @@ export function ReportStatusButton({
 
   return (
     <div className="flex flex-wrap items-center gap-2">
-      <button type="button" disabled={busy} className="btn min-h-11 px-3 py-1 text-[0.9rem]" onClick={toggle}>
+      <button type="button" disabled={busy} className="btn min-h-11 px-4 py-2 text-sm" onClick={toggle}>
         {resolved ? labels.undo : labels.done}
       </button>
       {failed && (

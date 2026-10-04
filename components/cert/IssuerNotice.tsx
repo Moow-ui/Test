@@ -16,7 +16,7 @@ export function IssuerNotice({
   const m = getMessages(locale);
   const { issuer, trademarkNotice } = cert;
   return (
-    <aside className="cv space-y-1 border-t border-line-soft pt-4 text-[0.85rem] text-ink-sub">
+    <aside className="cv space-y-2 border-t border-line-soft pt-4 text-sm text-ink-sub">
       <p>{fmt(m.cert.issuerNotice, { brand: brandName(locale), issuer: issuer.name })}</p>
       {trademarkNotice && <p>{trademarkNotice}</p>}
       {issuer.url && (

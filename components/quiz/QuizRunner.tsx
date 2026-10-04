@@ -109,10 +109,8 @@ function createSession(
   return startSession({
     certId: cert.id,
     mode: "level",
-    label: fmt(m.quiz.levelLabel, {
-      level: m.levels[level],
-      scope: subject ? subject.name : m.common.allSubjects,
-    }),
+    // 전체 과목이면 "중급" 만, 과목을 골랐으면 "중급 · 과목명" (시험 화면 위 한 줄을 짧게)
+    label: subject ? fmt(m.quiz.levelLabel, { level: m.levels[level], scope: subject.name }) : m.levels[level],
     level,
     subjectId: subject?.id ?? null,
     questionIds: picked.map((q) => q.id),
@@ -163,7 +161,7 @@ export function QuizRunner({ cert }: { cert: QuizCert }) {
   if (!hydrated || paramString || !loaded) {
     return (
       <Pad>
-        <p className="card p-5 text-lg font-bold">{m.quiz.preparing}</p>
+        <p className="card p-6 text-lg font-bold">{m.quiz.preparing}</p>
       </Pad>
     );
   }
@@ -171,8 +169,8 @@ export function QuizRunner({ cert }: { cert: QuizCert }) {
   if (!session || total === 0) {
     return (
       <Pad>
-        <div className="card mx-auto max-w-3xl space-y-3 p-5">
-          <h1 className="text-xl font-extrabold">{m.quiz.none}</h1>
+        <div className="card mx-auto max-w-3xl space-y-4 p-6">
+          <h1 className="text-xl font-bold">{m.quiz.none}</h1>
           <Link href={certPath} className="btn btn-primary btn-lg">
             {fmt(m.quiz.startFrom, { name: cert.name })}
           </Link>

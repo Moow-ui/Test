@@ -31,7 +31,7 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
         }}
       />
 
-      <h1 className="pt-3 text-center text-[1.7rem] font-extrabold leading-snug tracking-tight sm:pt-6 sm:text-4xl">
+      <h1 className="pt-4 text-center text-xl font-bold leading-snug tracking-tight sm:pt-6 sm:text-2xl">
         {m.home.h1a}
         <br />
         <span className="text-accent">{m.home.h1b}</span>
