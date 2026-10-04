@@ -1,0 +1,114 @@
+{
+  "cert": "computer-literacy-1",
+  "checkedAt": "2026-10-04",
+  "by": "separate verifier AI",
+  "chapters": {
+    "windows": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "일괄·실시간·시분할·다중·분산 처리 정의 정확.",
+        "FAT32 파일 1개 최대 크기는 4GB-1바이트(4,294,967,295바이트)이므로 '4GB 넘게 저장할 수 없다'는 정확.",
+        "NTFS = New Technology File System 이므로 'N = New' 팁도 맞음. regedit, 조각 모음(속도)·디스크 정리(공간) 구분 정확."
+      ]
+    },
+    "computer-system": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "PC(다음 주소)·IR(현재 명령, 제어장치)·AC(연산장치) 정확. RISC/CISC, 기억장치 속도 순서, 컴파일러/인터프리터 정확.",
+        "유니코드 '2바이트'는 실제로는 UTF-8/UTF-16 가변 길이지만 컴활 교재·기출이 '2바이트 체계'를 정답으로 다루며, 카드에 '시험에서는 ~라고 배웁니다'라는 표현이 있어 허용. 다만 summary 3문단과 chapters.json keyPoints 에는 이 단서가 없으므로, summary 에도 '시험에서는' 단서를 넣으면 더 정확함 (권고, 탈락 사유 아님)."
+      ]
+    },
+    "internet": {
+      "verdict": "FAIL",
+      "problems": [
+        {
+          "where": "concepts[MPEG·JPEG·MP3].tip",
+          "issue": "'J(사진)PEG' 라고 적어 J 가 '사진'을 뜻하는 것처럼 가르침. 앞의 'M(Moving)PEG' 는 실제 약자 풀이인데 J 는 Joint 의 약자이므로 같은 형식의 팁이 거짓 어원을 가르침.",
+          "correct": "JPEG = Joint Photographic Experts Group, 사진은 P(Photographic). 예: \"MPEG 의 M 은 Moving(움직이는), JPEG 의 P 는 Photographic(사진)\".",
+          "evidence": "https://jpeg.org/about.html (Joint Photographic Experts Group), MPEG = Moving Picture Experts Group"
+        }
+      ],
+      "notes": [
+        "OSI 7계층 순서, 리피터·브리지·라우터·게이트웨이, TCP/UDP(전송 계층), IPv4 32비트/IPv6 128비트·16비트×8·콜론, 서브넷 마스크 모두 정확."
+      ]
+    },
+    "security": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "기밀성·무결성·가용성 정의, 가로막기→가용성, 가로채기→기밀성, 수정→무결성 매핑이 컴활 교재와 일치. 카드는 위조를 특정 요건에 짝짓지 않아 문제 없음.",
+        "참고: chapters.json keyPoints 의 '위조는 인증을 해칩니다'는 교재에 따라 무결성 위협으로 분류하기도 함 (이 파일 검사 범위 밖, 확인 권장).",
+        "DES 는 현재 실무에서 폐기된 알고리즘이지만 컴활 출제 범위에서는 비밀키 방식의 대표 예로 그대로 출제되므로 허용. RSA 공개키, 공개키 암호화·개인키 복호화, 트로이 목마(자기 복제 없음)·백도어·웜 정의 정확."
+      ]
+    },
+    "formulas": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "배열 수식 Ctrl+Shift+Enter·중괄호 자동 생성·직접 입력 불가는 '시험에서는' 단서가 있어 적절 (Microsoft 365 동적 배열에서는 Enter 만으로도 되지만 필기 출제는 CSE 기준).",
+        "배열 상수 쉼표=열, 세미콜론=행, {1,2;3,4}=2행 2열 정확. INDEX/MATCH(0=정확히 일치), D함수 인수 순서(범위·필드·조건), SUMPRODUCT, SUMIF/SUMIFS 인수 순서 정확."
+      ]
+    },
+    "data-analysis": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "고급 필터 같은 행 AND·다른 행 OR, 부분합 전 정렬, 목표값 찾기 변경 셀 1개, 시나리오 변경 셀 최대 32개(요약·피벗 테이블 보고서), 데이터 표 결과 일부 수정 불가, 통합 '원본 데이터에 연결', 피벗 테이블 삭제 시 피벗 차트는 일반 차트로 남음 모두 정확.",
+        "32개 근거: https://www.howtogeek.com/808134/scenario-manager-excel/ , https://www.contextures.com/xlscenario01.html"
+      ]
+    },
+    "chart-print": {
+      "verdict": "FAIL",
+      "problems": [
+        {
+          "where": "summary 2문단, concepts[추세선].definition·tip",
+          "issue": "추세선을 넣을 수 없는 차트 목록에서 '누적형(stacked)' 차트가 빠짐. 목록이 완전한 것처럼 제시되고 팁('입체·동그라미·거미줄·표면형은 추세선 금지')도 이 네 부류만 외우게 해, 누적 세로 막대형 등을 '추세선 가능'으로 오해하게 함. points 에서 '추세선을 넣을 수 없는 차트를 고르는 문제가 단골'이라고 했으므로 시험에 직접 영향.",
+          "correct": "추세선은 3차원, 누적형, 원형, 도넛형, 방사형, 표면형 차트에는 추가할 수 없다 (비누적 2차원 영역형·가로/세로 막대형·꺾은선형·주식형·분산형·거품형에는 가능). 팁에도 '누적형' 추가.",
+          "evidence": "https://support.microsoft.com/en-us/access/trendlines-in-charts ; https://www.ablebits.com/office-addins-blog/add-trendline-excel/ (\"You cannot add a trendline to data series in a stacked, 3-D, radar, pie, surface, or doughnut chart\")"
+        }
+      ],
+      "notes": [
+        "원형 차트 계열 1개, 이중 축(보조 세로 축), 인쇄 제목 = 페이지 설정 '시트' 탭, &[페이지 번호]·&[전체 페이지 수] 정확.",
+        "비교표(compare) 없음 — 규칙상 선택 항목이라 문제 없음."
+      ]
+    },
+    "macro-vba": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "Range/Cells(행, 열), Cells(2,3)=C2, ActiveCell, Worksheets.Add, MsgBox/InputBox, For~Next(Step), Do While~Loop(조건이 처음부터 거짓이면 0회 실행) 모두 정확."
+      ]
+    },
+    "db-concept": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "DBMS 필수 기능 정의·조작·제어, 장단점, 기본키(유일·Not Null), 외래키(중복·Null 허용), 정규화(테이블 분해·이상 현상 방지), E-R 기호(사각형 개체·마름모 관계·타원 속성·선 연결) 정확."
+      ]
+    },
+    "table": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "입력 마스크 0(숫자 필수)·9(숫자나 공백, 선택)·L(영문자 필수)는 Microsoft 문서와 일치: '9 Digit or space (entry not required; plus and minus signs not allowed)', 'L Letter (A to Z, entry required)'. 근거: https://documentation.help/MS-Office-Access-2003/acrefExamplesDataEntryMasksS.htm",
+        "일련 번호 수정 불가, 참조 무결성(외래키 = 기본키 값 또는 Null), 인덱스 장단점·기본키 자동 인덱스 정확."
+      ]
+    },
+    "query": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "SELECT~FROM~WHERE~GROUP BY~HAVING~ORDER BY 순서, WHERE/HAVING 구분, ASC 기본값, 액세스 만능 문자 *·?, INSERT INTO~VALUES / UPDATE~SET~WHERE / DELETE FROM~WHERE, INNER JOIN 정확."
+      ]
+    },
+    "form-report": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "바운드·언바운드·계산 컨트롤(= 로 시작), 보고서에서 데이터 입력·수정 불가, 보고서 머리글(첫 쪽 맨 위 한 번)·페이지 머리글(쪽마다)·그룹 머리글/바닥글 정확."
+      ]
+    }
+  }
+}

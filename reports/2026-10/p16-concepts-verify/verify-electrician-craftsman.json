@@ -1,0 +1,157 @@
+{
+  "cert": "electrician-craftsman",
+  "checkedAt": "2026-10-04",
+  "by": "separate verifier AI",
+  "chapters": {
+    "dc-circuit": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "옴의 법칙, 직렬·병렬 합성저항, 전력 P=VI=I²R=V²/R, 단자전압 V=E−Ir, 키르히호프 1·2법칙 모두 정확."
+      ]
+    },
+    "electrostatics": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "쿨롱의 법칙(거리 제곱 반비례), Q=CV, 콘덴서 합성(저항과 반대), W=½CV² 모두 정확."
+      ]
+    },
+    "magnetism": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "플레밍 왼손(엄지 힘·검지 자기장·중지 전류, 전동기)·오른손(발전기), 앙페르 오른나사, 패러데이(크기)·렌츠(방향), W=½LI² 모두 정확."
+      ]
+    },
+    "ac-circuit": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "최댓값=√2×실효값(220V→약 311V), T=1/f, Z=√(R²+XL²), 역률=R/Z, 직렬공진 시 임피던스 최소·전류 최대 모두 정확."
+      ]
+    },
+    "three-phase-ac": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "Y결선 V_l=√3V_p·I_l=I_p, Δ결선 V_l=V_p·I_l=√3I_p, P=√3VIcosθ, 380/1.732≒220 모두 정확."
+      ]
+    },
+    "heat-and-chemistry": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "H=I²Rt[J]=0.24I²Rt[cal], 패러데이 전기분해 법칙, 제베크(열전대)·펠티에(전자냉동) 정확."
+      ]
+    },
+    "dc-machine": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "계자·전기자·정류자 역할, 직권전동기 무부하 위험속도·벨트운전 금지, 분권 정속도, 전기자 반작용 대책(보상권선·보극), E=PZΦN/60a(파권 a=2, 중권 a=P) 정확."
+      ]
+    },
+    "synchronous-machine": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "Ns=120f/P(60Hz 4극 1800rpm), 병렬운전 조건(크기·위상·주파수·파형, 용량 무관), 동기전동기 자기기동 불가, 동기조상기 과여자=콘덴서·부족여자=리액터 정확."
+      ]
+    },
+    "transformer": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "권수비 a=N1/N2=V1/V2=I2/I1, 철손(무부하손)·동손(전류 제곱), 규소=히스테리시스손·성층=와류손 감소, 변압기유 조건, V결선 출력=1대 용량의 √3배 정확."
+      ]
+    },
+    "induction-motor": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "s=(Ns−N)/Ns, N=(1−s)Ns, 2차 동손=s×2차 입력, 두 선 교체로 역회전, Y-Δ 기동 전류·토크 1/3 정확.",
+        "단상 유도전동기 기동 토크 순서(반발기동>콘덴서기동>분상기동>셰이딩코일)는 교재 순서(반발기동>반발유도>콘덴서기동>분상기동>셰이딩코일)의 부분집합으로 순서상 모순 없음."
+      ]
+    },
+    "power-electronics": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "컨버터·인버터·초퍼 정의, 정류 평균전압 0.45/0.9/1.17/1.35E, SCR 단방향 3단자, TRIAC 양방향 3단자, DIAC 양방향 2단자 정확."
+      ]
+    },
+    "wiring-materials": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "KEC 121.2(전선의 식별, 표 121.2-1): L1 갈색·L2 흑색·L3 회색·N 청색·보호도체 녹색-노란색 — 조항 번호·값 일치.",
+        "와이어 스트리퍼, 리머, 오스터, 벤더(히키), 녹아웃 펀치, 메거, 어스 테스터 용도 정확."
+      ]
+    },
+    "wire-joints": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "KEC 123(전선의 접속): 전기저항 증가 금지, 세기(인장하중) 20% 이상 감소 금지, 절연물과 동등 이상 절연효력 피복 — 조항 번호·값 일치.",
+        "트위스트 접속 6mm² 이하 단선, 브리타니아 접속 10mm² 이상 단선 — 전기기능사 표준 교재·기출 기준과 일치.",
+        "참고: KEC 123의 20% 기준은 원문상 '나전선 상호 또는 나전선과 절연전선 접속' 항목에 있는 조건이지만, 시험에서 일반 접속 조건으로 묻는 범위이므로 오류로 보지 않음."
+      ]
+    },
+    "wiring-methods": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "KEC 232.11 합성수지관: 지지점 1.5m 이하, 삽입 깊이 바깥지름 1.2배(접착제 0.8배) — 일치.",
+        "KEC 232.12 금속관: OW 제외 절연전선, 관 안 접속점 금지, 콘크리트 매설 1.2mm·기타 1mm 이상 — 일치(이음매 없는 4m 이하 관 0.5mm 예외는 생략, 오류 아님).",
+        "KEC 232.31 금속덕트: 전선 단면적 합계 20% 이하, 지지점 3m 이하 — 일치(제어회로 등 50%, 수직 6m 예외 생략).",
+        "KEC 232.51 케이블공사: 조영재 아랫면·옆면 지지점 2m, 캡타이어 1m — 일치.",
+        "금속관 굽힘 반지름 관 안지름 6배 이상: 출처 표기 없이 '일반적인 시공 기준'으로 적혀 있고 전기기능사 기출 정답과 일치."
+      ]
+    },
+    "grounding-protection": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "KEC 111.1: 저압 교류 1kV·직류 1.5kV 이하, 고압 7kV 이하, 특고압 7kV 초과 — 일치. 예전 저압 '교류 600V 이하' 함정 설명도 정확(구 기술기준: 교류 600V·직류 750V 이하).",
+        "전기설비기술기준 제52조(저압전로의 절연성능): SELV·PELV DC 250V 0.5MΩ, FELV·500V 이하 DC 500V 1.0MΩ, 500V 초과 DC 1000V 1.0MΩ — 일치.",
+        "KEC 141: 계통접지·보호접지·피뢰시스템접지 — 일치. KEC 203(203.1 계통접지 구성): TN(TN-S·TN-C·TN-C-S)·TT·IT, TN-C의 PEN — 일치.",
+        "KEC 142.3.2(표 142.3-1): S≤16→S, 16<S≤35→16, S>35→S/2 — 일치.",
+        "KEC 142.2: 0.75m 이상 — 값·조항 일치. 다만 원문(142.2.3 나)은 '동결 깊이를 감안하되 고압 이상 전기설비와 변압기 중성점 접지극의 매설깊이는 0.75m 이상'으로 적용 대상을 한정한다. 시험 정답은 0.75m이므로 PASS로 두되, 카드에 '고압 이상 설비·변압기 중성점 접지극 기준' 문구를 덧붙이면 더 정확함(권고)."
+      ]
+    },
+    "overhead-distribution": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "KEC 331.11 지선: 안전율 2.5, 허용 인장하중 최저 4.31kN, 소선 3가닥 이상, 도로 횡단 지표상 5m — 일치.",
+        "KEC 331.7 지지물 기초: 15m 이하 전장의 1/6 이상, 15m 초과 2.5m 이상(설계하중 6.8kN 이하 조건) — 일치.",
+        "KEC 331.4: 발판 볼트 등 지표상 1.8m 미만 시설 금지 — 일치.",
+        "KEC 221.1.1 저압 인입선: 도로 5m, 철도 레일면 6.5m, 횡단보도교 3m — 일치. KEC 221.1.2 연접인입선: 분기점 100m 초과 금지, 폭 5m 초과 도로 횡단 금지, 옥내 통과 금지 — 일치."
+      ]
+    },
+    "special-places": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "KEC 242.2.1 폭연성 분진: 금속관 또는 케이블 공사(캡타이어 케이블 제외) — 일치(캡타이어 제외 문구 생략은 오류 아님).",
+        "KEC 242.2.2 가연성 분진: 합성수지관(두께 2mm 미만 등 제외)·금속관·케이블 — 일치.",
+        "KEC 234.5 콘센트: 욕실 등 15mA 이하·0.03초 이하 전류동작형 인체감전보호용 누전차단기 — 일치.",
+        "조명 단위 lm·cd·lx·nt 정확."
+      ]
+    }
+  },
+  "evidence": [
+    "https://cq4l.com/kec120/",
+    "https://cq4l.com/kec140/",
+    "https://cq4l.com/kec232-10/",
+    "https://cq4l.com/kec220/",
+    "https://cq4l.com/kec330/",
+    "https://cq4l.com/kec242/",
+    "https://www.24time.kr/bbs/board.php?bo_table=cus_6&wr_id=95",
+    "https://dfirejobs.com/entry/%EC%A0%80%EC%95%95-%EC%A0%84%EB%A1%9C-%EC%A0%88%EC%97%B0%EC%A0%80%ED%95%AD-KEC-%EA%B0%9C%EC%A0%95",
+    "https://cq4l.com/kec200/",
+    "https://www.eom.co.kr/3.engineering/2.elec/3.supply/6.working-choise/steel_conduit.htm",
+    "https://www.e-dasan.net/boardView?id=explain&idx=1577"
+  ]
+}

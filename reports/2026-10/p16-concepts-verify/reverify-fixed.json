@@ -1,0 +1,66 @@
+{
+  "checkedAt": "2026-10-04",
+  "by": "separate verifier AI",
+  "chapters": {
+    "dmv-permit-california/right-of-way": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "Fixed: the turn-signal card and the summary now apply the 100-foot rule only to turns. VC 22108 text: 'Any signal of intention to turn right or left shall be given continuously during the last 100 feet traveled by the vehicle before turning.' (leginfo.legislature.ca.gov). Lane changes are no longer mentioned.",
+        "Four-way stop (first to stop goes first; tie -> yield to vehicle on the right), left-turn yield (VC 21801), roundabout counterclockwise / yield to traffic already in the circle, marked and unmarked crosswalks (VC 21950), and blind pedestrian with white cane or guide dog (VC 21963; don't honk) all match the CA Driver Handbook.",
+        "Calling 100 ft 'about one-third of a football field' is fine (300 ft between goal lines)."
+      ]
+    },
+    "dmv-permit-florida/licensing-alcohol-laws": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "Fixed: the phone card now cites s.316.305 (texting ban, primary enforcement since 2019) and s.316.306 (handheld use banned in school zones, school crossings, and work zones with workers present; hands-free allowed). Checked against flsenate.gov/Laws/Statutes/2025/316.306. 'Active work zone' matches the statute's 'workers present' condition.",
+        "Learner license (age 15, supervisor 21+ in the front passenger seat, daylight only for the first 3 months, then until 10 p.m.), Class E requirements (12 months or until age 18, 50 hours with 10 at night), and teen curfews (16: 11 p.m.-6 a.m.; 17: 1 a.m.-5 a.m.; exceptions for a driver 21+ or work) all match the FLHSMV handbook.",
+        "The BAC limits are right: 0.08% (s.316.193) and 0.02% under 21. The 0.02% rule is in s.322.2616, not s.316.193, but the card also cites the FLHSMV Driver License Handbook, which states it, so this is not a FAIL. Optional: add s.322.2616 to the source.",
+        "Implied consent (first refusal 1 year, later refusal 18 months; s.316.1932), seat belts (s.316.614: driver, front passenger, everyone under 18), and child restraints (s.316.613: 5 and under; through age 3 a carrier or built-in seat; ages 4-5 may use a booster) are correct.",
+        "Moving the car out of traffic after a property-damage-only crash matches s.316.061."
+      ]
+    },
+    "computer-literacy-2/internet": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "수정 확인: SMTP 팁을 정식 이름(Simple Mail Transfer Protocol)과 '보내기' 짝짓기로 바꿔 틀린 'S = Send' 설명이 없어졌습니다.",
+        "IPv4 32비트·8비트×4·점, IPv6 128비트·16비트×8·콜론, RFC 791/8200, DNS, 라우터, 비트맵·벡터, POP3·IMAP 받기 모두 맞습니다. 'IPv6 는 IPv4 의 4배 길이'(128/32)도 맞습니다."
+      ]
+    },
+    "computer-literacy-1/chart-print": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "수정 확인: 추세선을 넣을 수 없는 차트 목록(요약·카드·팁 모두)에 누적형이 들어갔습니다. 3차원·누적형·원형·도넛형·방사형·표면형은 Microsoft 안내(추세선은 누적되지 않은 2차원 차트만 지원)와 일치합니다.",
+        "원형 차트는 계열 하나, 이중 축(보조 세로 축), 인쇄 제목은 '시트' 탭, 머리글·바닥글 코드 &[페이지 번호]·&[전체 페이지 수] 모두 맞습니다."
+      ]
+    },
+    "computer-literacy-1/internet": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "수정 확인: 팁이 'JPEG 의 P(Photographic)'로 바뀌었습니다. JPEG = Joint Photographic Experts Group, MPEG = Moving Picture Experts Group 이므로 맞습니다.",
+        "OSI 7계층 순서(물·데·네·전·세·표·응), 리피터·브리지·라우터·게이트웨이 역할, TCP·UDP 가 모두 전송 계층이라는 점, IPv4·IPv6, 서브넷 마스크, MP3 모두 맞습니다."
+      ]
+    },
+    "korean-cuisine-craftsman/cooking-basics": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "수정 확인: 요약과 포인트 모두 '흰자 거품은 조금 묵은 달걀, 실온에 가까울 때 잘 생긴다, 설탕은 거품이 어느 정도 생긴 뒤에 넣는다'로 맞게 바뀌었습니다. 신선한 달걀은 노른자가 볼록하다는 설명과도 어긋나지 않습니다.",
+        "계량(15/5/200mL, 45+5=50), 습열·건열 구분(튀기기는 건열), 호화·노화(냉장 온도에서 노화가 잘 되고 냉동하면 덜 굳음), 연육 효소 4가지, 트리메틸아민, 두부 응고제 4가지, 황화제1철, 강력분·박력분, 튀김옷, 은행잎썰기, 녹색 채소 데치기 모두 맞습니다."
+      ]
+    },
+    "forklift-operator/engine": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "수정 확인: '피스톤이 네 번 움직이고(두 번 올라가고 두 번 내려가고) 크랭크축은 2바퀴'로 고쳐져 뜻이 분명합니다.",
+        "압축 착화(점화 플러그 없음), 배기가스로 돌리는 과급기, 과열 원인 4가지(냉각수 부족·팬벨트 느슨·라디에이터 막힘·서모스탯이 닫힌 채 고장), 디젤·가솔린 비교표 모두 맞습니다."
+      ]
+    }
+  }
+}

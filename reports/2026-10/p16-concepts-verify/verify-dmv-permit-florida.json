@@ -1,0 +1,67 @@
+{
+  "cert": "dmv-permit-florida",
+  "checkedAt": "2026-10-04",
+  "by": "separate verifier AI",
+  "chapters": {
+    "signs-signals-markings": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "Sign shapes/colors, flashing and steady signal meanings, and line colors match the Florida Driver License Handbook and MUTCD conventions.",
+        "Dark signal treated as a four-way (all-way) stop matches s. 316.1235. No cited sources in this chapter."
+      ]
+    },
+    "right-of-way-turns": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "s. 316.075(1)(c)1.a confirms right on steady red after stop (yield to pedestrians/traffic; locals may prohibit by sign). s. 316.075(1)(c)1.b confirms left on red from a one-way street onto a one-way street on which traffic moves to the left. Evidence: http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0300-0399/0316/Sections/0316.075.html",
+        "Emergency vehicle rule (pull to the right edge/curb, clear of intersection, stop) matches s. 316.126(1)(a)."
+      ]
+    },
+    "speed-passing-parking": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "s. 316.183(2): 30 mph business/residence, 55 mph elsewhere; interstate (4+ lanes) minimum 40 mph, 50 mph where posted limit is 70. Confirmed.",
+        "s. 316.187: limited access highways max 70 mph. Confirmed.",
+        "s. 316.155(2): signal continuously for not less than the last 100 feet. Confirmed.",
+        "s. 316.083: pass on left at safe distance, 3 feet for bicycles, overtaken driver must not increase speed. Confirmed.",
+        "s. 316.087: no driving left of center within 100 feet of a railroad crossing or intersection (statute has a narrow exception for unmarked rural intersections on state/county roads outside city limits; omission is acceptable for a permit-test summary).",
+        "s. 316.1945: hydrant 15 ft, crosswalk at intersection 20 ft, 30 ft on approach to stop sign/flashing signal/traffic signal, 50 ft from nearest rail; no stopping on sidewalk, in intersection, on crosswalk. Confirmed."
+      ]
+    },
+    "safe-driving-sharing-road": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "s. 316.217: lamps sunset to sunrise incl. twilight, and during rain, smoke, or fog. Confirmed.",
+        "s. 316.238: dim within 500 ft of oncoming, 300 ft when following. Confirmed.",
+        "s. 316.172: stop for school bus stop signal until withdrawn; opposite-direction exception only for divided highway with unpaved space of at least 5 ft, raised median, or physical barrier. Confirmed.",
+        "s. 316.126 (current): Move Over covers emergency, sanitation, utility, wrecker, road/bridge maintenance vehicles, and disabled motor vehicles displaying hazard lights, flares, or signage (or with persons visibly present). Slow to 20 mph below posted limit when limit is 25+, or 5 mph when limit is 20 or less. Confirmed.",
+        "s. 316.1575: stop within 50 ft but not less than 15 ft of nearest rail; no driving through/around/under closed or moving gates. Confirmed."
+      ]
+    },
+    "licensing-alcohol-laws": {
+      "verdict": "FAIL",
+      "problems": [
+        {
+          "where": "concepts[Phones while driving].source",
+          "issue": "Cited source is only s. 316.305, but the card's school crossing / school zone / work zone handheld ban is not in s. 316.305. That rule is in s. 316.306 ('School and work zones; prohibition on the use of a wireless communications device in a handheld manner'). The cited section does not contain the stated rule.",
+          "correct": "Cite 'Florida Statutes, Chapter 316 (s. 316.305, s. 316.306)'. Optionally note the work-zone ban applies when construction personnel are present or operating equipment (s. 316.306), which 'active work zone' already approximates.",
+          "evidence": "http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0300-0399/0316/Sections/0316.306.html ; http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0300-0399/0316/Sections/0316.305.html"
+        }
+      ],
+      "notes": [
+        "Content of every statement in this chapter is correct; only the phone-card citation is incomplete.",
+        "Learner rules confirmed by s. 322.1615 (21+ licensed driver in closest seat to the right, daylight only first 3 months, then until 10 p.m.).",
+        "Class E: s. 322.05 says 12 months with no MOVING traffic convictions (or until 18), 50 hours incl. 10 at night certified by an adult 21+. Card says 'no traffic convictions' - acceptable simplification, but 'no moving traffic convictions' would be more precise.",
+        "Teen hours confirmed by s. 322.16 (under 17: 11 p.m.-6 a.m.; 17: 1 a.m.-5 a.m.; exceptions for 21+ licensed driver or driving directly to/from work).",
+        "0.08 confirmed in s. 316.193(1). The under-21 0.02 rule is in s. 322.2616(1)(a), not s. 316.193; the card co-cites the Florida Driver License Handbook, which covers it, so not failed. Suggest adding s. 322.2616 to the source.",
+        "Refusal suspension 1 year first / 18 months if previously suspended for refusal confirmed by s. 322.2615.",
+        "s. 316.613 (child restraint 5 and under; through age 3 carrier or integrated seat; ages 4-5 booster allowed) and s. 316.614 (driver, front seat passenger, all occupants under 18) confirmed.",
+        "Texting ban in s. 316.305(3) is enforceable by a stop without another violation (secondary-enforcement language removed in 2019), so 'primary offense' is correct."
+      ]
+    }
+  }
+}

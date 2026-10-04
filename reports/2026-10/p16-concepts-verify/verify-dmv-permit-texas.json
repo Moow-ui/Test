@@ -1,0 +1,56 @@
+{
+  "cert": "dmv-permit-texas",
+  "checkedAt": "2026-10-04",
+  "by": "separate verifier AI",
+  "chapters": {
+    "signs-signals-markings": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "Dark signal: Tex. Transp. Code 544.007(i) says a driver facing a signal that displays no indication stops as provided by 544.010 as if the intersection had a stop sign; treating it as an all-way stop matches the DPS handbook wording. Evidence: https://codes.findlaw.com/tx/transportation-code/transp-sect-544-007/",
+        "Hand signals (545.107), sign shapes/colors, flashing red/yellow, flashing yellow arrow, yellow center lines and shared center left-turn lane all correct."
+      ]
+    },
+    "right-of-way-turns": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "Turn signal at least last 100 ft: 545.104(b) confirmed (https://codes.findlaw.com/tx/transportation-code/transp-sect-545-104/).",
+        "U-turn on curve/crest not visible within 500 ft: 545.102 confirmed (https://codes.findlaw.com/tx/transportation-code/transp-sect-545-102/).",
+        "Left on red only one-way onto one-way after stopping: 544.007 confirmed. Emergency vehicle: pull right, clear of intersection, stop (545.156) correct.",
+        "Four-way stop, left-turn yielding, roundabout/freeway merge rules correct."
+      ]
+    },
+    "speed-lanes-parking": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "Prima facie limits 30 urban / 15 alley / 70 numbered highway / 60 other outside urban district / 15 beach: 545.352(b) confirmed (https://codes.findlaw.com/tx/transportation-code/transp-sect-545-352/).",
+        "No-parking 15 ft hydrant, 20 ft crosswalk at intersection, 30 ft on approach to stop sign/yield/flashing or traffic-control signal, 50 ft nearest rail: 545.302 confirmed (https://texas.public.law/statutes/tex._transp._code_section_545.302).",
+        "Curb within 18 inches: 545.303 confirmed. No driving left within 100 ft of intersection/railroad crossing in a municipality: 545.056 confirmed (the card's 'In a city or town' matches). Shoulder use to pass a car stopped to turn left: 545.058 correct."
+      ]
+    },
+    "safe-driving-sharing-road": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "School bus first offense fine $500-$1,250 and separate-roadway exception (center turn lane does not count): 545.066 confirmed (https://texas.public.law/statutes/tex._transp._code_section_545.066).",
+        "Move Over: 545.157(b) says 20 mph below the posted limit when the limit is 25 mph or more, and 5 mph when the limit is LESS than 25 mph (https://codes.findlaw.com/tx/transportation-code/transp-sect-545-157/). The content says '5 mph if the limit is 25 mph or less'; at exactly 25 mph both formulas give 5 mph, so no answer is wrong, but the wording 'below 25 mph' would match the statute exactly. Optional wording fix, not a failure.",
+        "Headlights 1,000 ft (547.302) and nighttime = 30 min after sunset to 30 min before sunrise (541.401) correct; dimming 500/300 ft (547.333) confirmed; railroad stop 15-50 ft (545.251) confirmed; work zone fines double when workers present (542.404) correct."
+      ]
+    },
+    "laws-licensing-alcohol": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "Provisional limits: 545.424 - during the 12 months after first license, a driver under 18 may not drive with more than one passenger under 21 who is not family, or between midnight and 5 a.m. unless for work, a school-related activity, or a medical emergency. Confirmed (https://codes.findlaw.com/tx/transportation-code/transp-sect-545-424/). Note: these limits are in 545.424, not 521.204; the card only cites 'Texas Transportation Code', so no wrong section number.",
+        "Learner license age 15, supervisor 21+ with 1 year experience in the seat beside the driver: 521.222 confirmed.",
+        "Implied consent first refusal = 180-day suspension: 724.035 confirmed (https://texas.public.law/statutes/tex._transp._code_section_724.035).",
+        "Insurance 30/60/25: 601.072(a-1) confirmed (https://texas.public.law/statutes/tex._transp._code_section_601.072).",
+        "Child seat younger than 8 unless taller than 4'9\": 545.412 confirmed (https://texas.public.law/statutes/tex._transp._code_section_545.412).",
+        "Phones: texting ban for all (545.4251); under 18 no wireless device except emergency (545.424); school crossing zone handheld only when stopped, hands-free allowed (545.425, https://texas.public.law/statutes/tex._transp._code_section_545.425). Adult handheld calls still legal under state law in 2026: the 2025 hands-free bill SB 47 died in committee (https://legiscan.com/TX/bill/SB47/2025), and some cities have their own bans - compare table is correct.",
+        "0.08 adult / any detectable alcohol under 21, crash duties, moving vehicles off freeway after minor crash (550.022), note for unattended vehicle (550.024) correct."
+      ]
+    }
+  }
+}

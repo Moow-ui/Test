@@ -1,0 +1,67 @@
+{
+  "cert": "dmv-permit-california",
+  "checkedAt": "2026-10-04",
+  "by": "separate verifier AI",
+  "chapters": {
+    "signs-signals-markings": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "VC 21457 confirmed: flashing red = stop, then proceed as at a stop sign; flashing yellow = proceed only with caution (leginfo.legislature.ca.gov VEH 21457).",
+        "VC 21800 confirmed: driver approaching an intersection with inoperative signals must stop and may proceed with caution when safe (all-way stop rules) (leginfo VEH 21800).",
+        "Sign shapes, round yellow/black railroad advance sign, and double solid yellow rule (may cross to turn left into/out of a driveway or private road, or make a U-turn) match the CA Driver Handbook (dmv.ca.gov/portal/handbook/california-driver-handbook/navigating-the-roads/).",
+        "Minor, not failing: the handbook adds that two sets of double yellow lines 2+ feet apart are a barrier that may not be crossed even for left turns/U-turns; the card's 'door for left turns' tip applies only to a single set of double yellow lines."
+      ]
+    },
+    "right-of-way": {
+      "verdict": "FAIL",
+      "problems": [
+        {
+          "where": "concepts[term='Turn signal distance'].definition (source VC 22108)",
+          "issue": "Says to signal for at least the last 100 feet before you 'turn or change lanes' and cites VC 22108. VC 22108 covers only turns ('Any signal of intention to turn right or left shall be given continuously during the last 100 feet traveled by the vehicle before turning'); it does not mention lane changes. The CA Driver Handbook gives a different rule for lane changes: signal at least 5 seconds before changing lanes on a freeway. A learner could pick '100 feet' for a lane-change question and get it wrong.",
+          "correct": "Signal continuously during the last 100 feet before turning (VC 22108). For lane changes, signal before moving over; on a freeway, signal at least 5 seconds before changing lanes (CA Driver Handbook). Remove 'or change lanes' from the 100-foot rule or add the separate 5-second rule without citing VC 22108 for it.",
+          "evidence": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=VEH&sectionNum=22108 ; https://www.dmv.ca.gov/portal/handbook/california-driver-handbook/navigating-the-roads/"
+        }
+      ],
+      "notes": [
+        "VC 21950 confirmed: drivers yield to pedestrians in marked crosswalks and unmarked crosswalks at intersections (law.justia.com/codes/california/code-veh/division-11/chapter-5/section-21950/).",
+        "Four-way stop tie (yield to the right) consistent with VC 21800 right-of-way rule; left-turn and roundabout rules match the handbook.",
+        "Summary paragraph 4 ('signal for the last 100 feet before the turn') is correct; only the card's lane-change extension is wrong.",
+        "White cane / guide dog right of way is VC 21963 (no source cited on the card, acceptable)."
+      ]
+    },
+    "speed-lanes-parking": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "VC 22350 confirmed (Basic Speed Law: no faster than reasonable or prudent for weather, visibility, traffic, surface and width).",
+        "VC 22352 confirmed: 15 mph at blind railroad crossings, blind intersections, and in any alley; 25 mph in business/residence districts and near schools when children are present (leginfo Division 11, Ch. 7, Art. 1).",
+        "VC 22349 confirmed: 65 mph general maximum. Note: 22349(b) sets 55 mph on two-lane undivided highways unless posted higher; the card's 'most highways' / 'unless signs post a different limit' wording keeps it from being wrong, but adding the 55 mph two-lane rule would be more complete.",
+        "VC 22502 confirmed: right-hand wheels within 18 inches of the curb.",
+        "VC 21458 confirmed: red = no stopping/standing/parking; white = passenger loading or mail; green = time-limited parking; blue = disabled persons/disabled veterans only.",
+        "Hill parking directions (downhill toward curb, uphill with curb away from curb) match the handbook."
+      ]
+    },
+    "safe-driving": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "VC 21760 confirmed: at least 3 feet when passing a bicycle; if not possible, slow down and pass only when safe.",
+        "VC 21806 confirmed: yield, drive to the right-hand edge or curb clear of any intersection, and stop until the emergency vehicle has passed. The card omits 'clear of any intersection' (handbook: never stop in an intersection); incomplete but not false.",
+        "VC 22454 confirmed: stop and remain stopped while the school bus red lights flash. The card omits the exception for drivers on the opposite side of a divided highway or multilane highway (2+ lanes each direction); acceptable simplification for this level, but could be added.",
+        "Three-second following distance, skid recovery, and truck blind spot content match the CA Driver Handbook."
+      ]
+    },
+    "laws-alcohol": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "VC 23152(b) confirmed: unlawful to drive with 0.08% BAC or more. VC 23136 confirmed: under 21 with 0.01% or more (zero tolerance).",
+        "VC 23612 confirmed: drivers are deemed to consent to blood or breath testing if lawfully arrested for DUI; refusal leads to license suspension. Summary paragraph 2 says 'if an officer lawfully asks' while the card says 'if lawfully arrested'; the card is the precise wording, the summary is a looser paraphrase but not contradictory.",
+        "VC 23123.5 confirmed: may not hold a device; a mounted device may be operated with a single tap or swipe. VC 23124 confirmed: drivers under 18 may not use a wireless device even hands-free, except emergency calls.",
+        "VC 16000 confirmed: report to DMV (SR-1) within 10 days if injury, death, or property damage over $1,000, regardless of fault or police report (multiple 2026 sources).",
+        "Seat belt rule (VC 27315) has no source cited; acceptable since no specific number is stated."
+      ]
+    }
+  }
+}

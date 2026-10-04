@@ -1,0 +1,85 @@
+{
+  "cert": "computer-literacy-2",
+  "checkedAt": "2026-10-04",
+  "by": "separate verifier AI",
+  "chapters": {
+    "windows": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "Alt+Tab·Alt+F4·Win+E·Win+D·Win+L(Lock) 모두 정확.",
+        "끌어 놓기 규칙(같은 드라이브 이동·다른 드라이브 복사, Ctrl 복사, Shift 이동), Shift+Delete·USB·네트워크 드라이브의 휴지통 미경유, 바로 가기 삭제 시 원본 유지, 기본 프린터 1대 모두 정확.",
+        "인쇄 대기 문서는 '취소·일시 중지 가능'으로만 썼고 순서 변경은 주장하지 않아 문제없음 (chapters.json keyPoints 의 '순서를 바꿀 수 있습니다'도 우선순위 변경으로 가능하므로 모순 아님)."
+      ]
+    },
+    "computer-system": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "비트→니블(4)→바이트(8)→워드, RAM 휘발성·ROM 비휘발성, 캐시(속도)·가상 메모리(용량), ms→μs→ns→ps, KB→TB, 프리웨어·셰어웨어·오픈 소스 정의 모두 정확."
+      ]
+    },
+    "internet": {
+      "verdict": "FAIL",
+      "problems": [
+        {
+          "where": "concepts[메일 프로토콜].tip",
+          "issue": "'SMTP 의 S 는 보내기(Send)라고 떠올리면' — SMTP 의 S 는 Simple 이다 (Simple Mail Transfer Protocol). 외우는 요령이 약어의 뜻을 틀리게 가르친다.",
+          "correct": "예: 'SMTP 는 Simple Mail Transfer(전송) Protocol, 메일을 내보내는 쪽입니다. POP3·IMAP 은 받아 오는 쪽.' 처럼 약어를 바르게 쓰거나, S 를 Send 로 연결하는 문장을 빼야 한다.",
+          "evidence": "RFC 5321 Simple Mail Transfer Protocol (https://www.rfc-editor.org/rfc/rfc5321)"
+        }
+      ],
+      "notes": [
+        "IPv4 32비트(8비트×4, 점), IPv6 128비트(16비트×8, 콜론) 정확. '4배 길이'(128/32) 정확.",
+        "출처 확인: RFC 791 'Addresses are fixed length of four octets (32 bits)' (https://www.rfc-editor.org/rfc/rfc791), RFC 8200 'from 32 bits to 128 bits' (https://www.rfc-editor.org/rfc/rfc8200). 인용한 RFC 번호가 맞다.",
+        "DNS·라우터·비트맵/벡터 설명 정확."
+      ]
+    },
+    "security": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "스니핑·스푸핑·피싱·랜섬웨어·DDoS, 대칭키(빠름·키 배포 어려움)/공개키(느림·배포 쉬움), 방화벽의 내부 공격 한계 모두 시험 기준에 맞다.",
+        "피싱 요령 'Private data + Fishing' 은 국내 교재·기관에서 널리 쓰는 설명이라 문제 삼지 않음 (영어 어원은 fishing 의 변형이라는 설명도 있음)."
+      ]
+    },
+    "data-input": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "Alt+Enter·Ctrl+Enter, Ctrl+;(날짜)·Ctrl+Shift+;(시간), 숫자 오른쪽·문자 왼쪽, 작은따옴표, #/0 서식(5 → ### 은 5, 000 은 005), 채우기 핸들(숫자 1개: 그냥 복사, Ctrl 1씩 증가) 모두 정확."
+      ]
+    },
+    "formulas": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "MID(\"컴퓨터활용\",2,2)=\"퓨터\", ROUND(123.456,1)=123.5, ROUND(123.456,-1)=120 직접 계산해 확인.",
+        "참조 방식·F4, COUNT/COUNTA/COUNTBLANK, VLOOKUP/HLOOKUP, 오류 값 4종 설명 정확."
+      ]
+    },
+    "data-management": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "정렬 기준 최대 64개: Microsoft 지원 문서 'You can sort by up to 64 columns' (https://support.microsoft.com/en-us/office/sort-data-in-a-range-or-table-in-excel-62d0b95d-2a90-4610-a6ae-2e545c4a4654).",
+        "빈 셀은 오름차순·내림차순 모두 맨 마지막: Excel 기본 정렬 순서(내림차순에서도 빈 셀은 항상 마지막) 확인 (https://bettersolutions.com/excel/cells-ranges/sorting.htm 등).",
+        "부분합 전 정렬, 고급 필터 같은 행 AND·다른 행 OR, 피벗 테이블 새로 고침, 목표값 찾기(입력값 1개) 정확."
+      ]
+    },
+    "chart-print": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "원형 차트 계열 1개, 분산형 차트, F11(새 차트 시트)·Alt+F1(현재 시트에 포함) 정확, 페이지 나누기 미리 보기의 파란 선 끌기 정확."
+      ]
+    },
+    "macro": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "이름 첫 글자는 문자·숫자로 시작 불가·빈칸 불가, Ctrl+영문자(대문자면 Ctrl+Shift), 저장 위치 3곳, 개인용 매크로 통합 문서는 모든 문서에서 사용, VBA·Alt+F11 모두 정확."
+      ]
+    }
+  }
+}
