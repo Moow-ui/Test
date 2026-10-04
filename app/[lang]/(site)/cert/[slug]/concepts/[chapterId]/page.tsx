@@ -101,6 +101,18 @@ export default async function ConceptChapterPage({ params }: Props) {
         <ConceptByline locale={lang} by={concepts.by} />
       </header>
 
+      {/* 개요: 요약 노트와 같은 글 (P16) */}
+      {entry.summary && entry.summary.length > 0 && (
+        <section aria-labelledby="overview-title" className="card space-y-2 border-l-4 border-l-primary p-6">
+          <h2 id="overview-title" className="text-lg font-bold text-accent">
+            {m.concepts.noteOverview}
+          </h2>
+          {entry.summary.map((paragraph) => (
+            <p key={paragraph}>{paragraph}</p>
+          ))}
+        </section>
+      )}
+
       <section aria-labelledby="concepts-title">
         <h2 id="concepts-title" className="text-lg font-bold">
           {m.concepts.coreTitle}

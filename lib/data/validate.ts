@@ -143,8 +143,11 @@ export async function validateData(store: DataStore): Promise<ValidationResult> 
         if (!conceptsResult.success) {
           for (const m of issues(conceptsResult.error)) errors.push(`${conceptsFile(country, slug)} → ${m}`);
         } else {
-          for (const id of Object.keys(conceptsResult.data.chapters)) {
+          for (const [id, chapter] of Object.entries(conceptsResult.data.chapters)) {
             if (!chapterIds.includes(id)) errors.push(`${conceptsFile(country, slug)} → 없는 단원 id: ${id}`);
+            // 요약 노트(P16): 게시되는(verifiedAt 이 있는) 단원은 개요(summary)가 있어야 한다
+            if (chapter.verifiedAt && !chapter.summary)
+              errors.push(`${conceptsFile(country, slug)} → ${id}: 게시 단원에 summary(개요)가 없습니다`);
           }
         }
       }

@@ -266,6 +266,11 @@ export const conceptChapterSchema = z.object({
    * 실패한 단원은 이 값을 적지 않는다.
    */
   verifiedAt: dateSchema.optional(),
+  /**
+   * 책처럼 읽는 단원 요약 (P16): 문단 2~4개, 문단마다 2~5문장. 개념 정리 전체 페이지(책)에 그대로 실린다.
+   * 카드(concepts)와 같은 사실만 쓰고 새 수치를 덧붙이지 않는다.
+   */
+  summary: z.array(z.string().min(30).max(600)).min(2).max(4).optional(),
   concepts: z.array(conceptCardSchema).min(3).max(7),
   /** 자주 나오는 포인트 */
   points: z.array(z.string().min(5).max(200)).min(2).max(6),

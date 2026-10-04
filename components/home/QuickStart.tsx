@@ -18,14 +18,10 @@ function toLevel(value: string | null): QuizLevel {
   return value === "intermediate" || value === "advanced" ? value : "basic";
 }
 
-/** 첫 방문자에게 보여 줄 "많이 찾는 자격증" 버튼 수 */
-const POPULAR_COUNT = 6;
-
 /**
  * 홈 검색창 아래 상자.
  * - 최근 공부한 자격증이 있으면: 그 자격증으로 "바로 5문제 풀기"(풀던 문제가 남아 있으면 "이어서 풀기"가 먼저) + 최근 본 다른 자격증.
- * - 기록이 없는 첫 방문이면: "많이 찾는 자격증" 버튼 몇 개.
- *   조회 수를 모으지 않으므로 고르는 기준은 운영진이 meta.json 에 정한 order(목록 순서)이고, 화면에 "운영진 선정"이라고 적는다.
+ * - 기록이 없는 첫 방문이면 그리지 않는다 (사용자 결정 2026-10-04: "많이 찾는 자격증" 상자 삭제).
  */
 export function QuickStart({ certs }: { certs: CertListItem[] }) {
   const { locale, m } = useMessages();
@@ -40,7 +36,8 @@ export function QuickStart({ certs }: { certs: CertListItem[] }) {
   const target = recentReady ?? certs[0];
 
   const session = useStored<QuizSession | null>(STORAGE_KEYS.session(target.id), null);
-  if (!recentReady) return <PopularCerts certs={certs.filter((c) => c.ready).slice(0, POPULAR_COUNT)} />;
+  // 기록이 없는 첫 방문이면 아무것도 그리지 않는다 (P16: "많이 찾는 자격증" 상자는 없앴다)
+  if (!recentReady) return null;
 
   const inProgress = isInProgress(session);
   const certPath = localePath(locale, `/cert/${target.id}`);
@@ -95,29 +92,6 @@ export function QuickStart({ certs }: { certs: CertListItem[] }) {
           </ul>
         </div>
       )}
-    </section>
-  );
-}
-
-/** 첫 방문: 많이 찾는 자격증 (운영진 선정) */
-function PopularCerts({ certs }: { certs: CertListItem[] }) {
-  const { locale, m } = useMessages();
-  if (certs.length === 0) return null;
-  return (
-    <section aria-labelledby="popular-title" className="mx-auto max-w-2xl card p-6">
-      <h2 id="popular-title" className="flex flex-wrap items-center gap-2 text-lg font-bold">
-        {m.home.popular}
-        <span className="rounded-full bg-surface-2 px-3 py-1 text-sm font-bold text-ink-sub">{m.home.popularBy}</span>
-      </h2>
-      <ul className="mt-4 grid grid-cols-1 gap-2 sm:grid-cols-2">
-        {certs.map((c) => (
-          <li key={c.id}>
-            <Link href={localePath(locale, `/cert/${c.id}`)} className="btn btn-lg w-full justify-start text-left">
-              {c.name}
-            </Link>
-          </li>
-        ))}
-      </ul>
     </section>
   );
 }
