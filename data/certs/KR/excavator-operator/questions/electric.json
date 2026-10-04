@@ -1,0 +1,218 @@
+[
+  {
+    "id": "excavator-operator-electric-0001",
+    "certId": "excavator-operator",
+    "subjectId": "mechanism",
+    "chapterId": "electric",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "장비에서 축전지(배터리)를 떼어 낼 때 먼저 떼는 선은?",
+    "choices": [
+      "아무 선이나 먼저",
+      "두 선을 동시에",
+      "접지(-) 선",
+      "(+) 선"
+    ],
+    "answer": 3,
+    "oneLineConcept": "축전지: 뗄 때 접지(-) 먼저, 붙일 때 (+) 먼저",
+    "explanation": "차체가 (-)에 연결되어 있으므로 **(-)선을 먼저 떼면** 그 뒤에 (+)선을 풀다 공구가 차체에 닿아도 합선되지 않습니다. 붙일 때는 반대로 **(+)선을 먼저**, 접지(-)선을 나중에 연결합니다.\n\n**틀린 선지**\n- 아무 선이나 먼저: 순서를 지키지 않으면 합선과 불꽃 위험이 있습니다.\n- 두 선을 동시에: 두 선을 동시에 떼다 공구로 이어지면 합선됩니다.\n- (+) 선: (+) 선을 먼저 떼다가 공구가 차체에 닿으면 불꽃이 튀고 합선됩니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-05",
+    "tags": [
+      "전기",
+      "축전지"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "excavator-operator-electric-0002",
+    "certId": "excavator-operator",
+    "subjectId": "mechanism",
+    "chapterId": "electric",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "전기 회로에서 퓨즈는 어떻게 연결하는가?",
+    "choices": [
+      "회로에 병렬로 연결한다.",
+      "축전지 (-) 단자에만 따로 연결한다.",
+      "회로에 직렬로 연결한다.",
+      "연결하지 않고 옆에 보관만 한다."
+    ],
+    "answer": 3,
+    "oneLineConcept": "퓨즈는 회로에 직렬 연결",
+    "explanation": "퓨즈는 너무 큰 전류가 흐르면 녹아 끊어지면서 **회로를 끊어** 전선과 부품을 지킵니다. 전류가 반드시 퓨즈를 지나가야 하므로 **직렬**로 연결합니다. 끊어진 퓨즈는 같은 용량으로 바꿉니다.\n\n**틀린 선지**\n- 회로에 병렬로 연결한다.: 병렬로 달면 퓨즈가 끊어져도 다른 길로 전기가 흘러 회로를 보호하지 못합니다.\n- 축전지 (-) 단자에만 따로 연결한다.: 퓨즈는 보호할 회로마다 그 길에 넣는 것이지 (-) 단자에만 다는 것이 아닙니다.\n- 연결하지 않고 옆에 보관만 한다.: 퓨즈는 회로에 연결해야 과전류를 막을 수 있습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-05",
+    "tags": [
+      "전기",
+      "퓨즈"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "excavator-operator-electric-0003",
+    "certId": "excavator-operator",
+    "subjectId": "mechanism",
+    "chapterId": "electric",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "교류 발전기에서 만든 교류를 직류로 바꾸는(정류) 부품은?",
+    "choices": [
+      "다이오드",
+      "로터",
+      "브러시",
+      "팬벨트"
+    ],
+    "answer": 1,
+    "oneLineConcept": "교류 발전기는 다이오드로 교류를 직류로 정류",
+    "explanation": "발전기 안에서는 교류(방향이 바뀌는 전기)가 만들어지지만 축전지와 장비의 전기 장치는 직류를 씁니다. **다이오드**는 전기를 한쪽 방향으로만 흐르게 해 교류를 **직류로** 바꿉니다.\n\n**틀린 선지**\n- 로터: 로터는 돌면서 자석 역할을 하는 부품으로 정류를 하지 않습니다.\n- 브러시: 브러시는 로터에 전기를 넣어 주는 부품입니다.\n- 팬벨트: 팬벨트는 엔진의 힘을 발전기에 전달하는 벨트입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-05",
+    "tags": [
+      "전기",
+      "발전기"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "excavator-operator-electric-0004",
+    "certId": "excavator-operator",
+    "subjectId": "mechanism",
+    "chapterId": "electric",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "12V 100Ah 축전지 두 개를 직렬로 연결하면 전압과 용량은 어떻게 되는가?",
+    "choices": [
+      "24V 100Ah",
+      "12V 200Ah",
+      "24V 200Ah",
+      "12V 100Ah"
+    ],
+    "answer": 1,
+    "oneLineConcept": "직렬: 전압은 더하고 용량은 그대로",
+    "explanation": "직렬 연결은 한 축전지의 (+)를 다른 축전지의 (-)에 잇는 방법입니다.\n1. 전압: 12V + 12V = 24V\n2. 용량: 100Ah 그대로\n3. 검산: 병렬이면 반대로 전압 12V 그대로, 용량 100 + 100 = 200Ah\n\n**틀린 선지**\n- 12V 200Ah: 12V 200Ah는 병렬로 연결했을 때입니다(전압 그대로, 용량 합).\n- 24V 200Ah: 직렬은 전압만 더해지고 용량은 그대로이므로 둘 다 늘지는 않습니다.\n- 12V 100Ah: 직렬로 연결하면 전압이 더해지므로 12V 그대로가 아닙니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-05",
+    "tags": [
+      "전기",
+      "축전지"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "excavator-operator-electric-0005",
+    "certId": "excavator-operator",
+    "subjectId": "mechanism",
+    "chapterId": "electric",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "디젤 엔진의 시동 전동기로 주로 쓰는 전동기는?",
+    "choices": [
+      "교류 동기 전동기",
+      "교류 유도 전동기",
+      "직류 직권 전동기",
+      "직류 분권 전동기"
+    ],
+    "answer": 3,
+    "oneLineConcept": "시동 전동기 = 직류 직권식 (처음 회전력이 크다)",
+    "explanation": "엔진을 처음 돌릴 때는 아주 큰 힘이 필요합니다. **직류 직권 전동기**는 돌기 시작할 때의 회전력(기동 회전력)이 매우 커서 시동 전동기에 씁니다. 축전지가 직류이므로 직류 전동기를 씁니다.\n\n**틀린 선지**\n- 교류 동기 전동기: 교류 동기 전동기도 직류 축전지로 바로 돌릴 수 없습니다.\n- 교류 유도 전동기: 장비의 축전지는 직류이므로 교류 전동기를 바로 쓸 수 없습니다.\n- 직류 분권 전동기: 분권 전동기는 회전 속도는 일정하지만 처음 도는 힘이 직권식보다 작아 시동용에 알맞지 않습니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-05",
+    "tags": [
+      "전기",
+      "시동 전동기"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "excavator-operator-electric-0006",
+    "certId": "excavator-operator",
+    "subjectId": "mechanism",
+    "chapterId": "electric",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "작업 중 계기판의 충전 경고등이 켜졌을 때 가장 먼저 의심할 곳은?",
+    "choices": [
+      "발전기나 팬벨트 등 충전 계통",
+      "버킷 투스의 마모",
+      "작동유 탱크의 기름 양",
+      "트랙의 장력"
+    ],
+    "answer": 1,
+    "oneLineConcept": "충전 경고등 = 발전기·팬벨트 등 충전 계통 이상",
+    "explanation": "충전 경고등은 **발전기가 축전지를 충전하지 못할 때** 켜집니다. 팬벨트가 끊어지거나 느슨해 발전기가 돌지 않거나, 발전기·레귤레이터(전압 조정기)가 고장 난 경우입니다. 그대로 쓰면 축전지가 방전되어 시동이 걸리지 않습니다.\n\n**틀린 선지**\n- 버킷 투스의 마모: 버킷 투스 마모는 작업장치 문제로 충전과 관계가 없습니다.\n- 작동유 탱크의 기름 양: 작동유 양은 충전 경고등과 관계가 없고 유압 쪽 문제입니다.\n- 트랙의 장력: 트랙 장력은 전기 충전과 관계가 없습니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-05",
+    "tags": [
+      "전기",
+      "경고등"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  }
+]

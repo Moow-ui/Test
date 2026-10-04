@@ -1,0 +1,133 @@
+{
+  "cert": "excavator-operator",
+  "checkedAt": "2026-10-05",
+  "by": "separate verifier AI",
+  "chapters": {
+    "safety-gear-signs": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "Sign colors match 산업안전보건법 시행규칙 별표8: 빨강 금지(빨강은 화학물질 경고에도 쓰이지만 단순화로 허용), 노랑 경고, 파랑 지시, 녹색 안내(비상구·피난소·구급). Source attribution (시행규칙) is correct.",
+        "지시표지 = 파란 원 바탕에 흰 그림: correct.",
+        "Fire classes A 일반 / B 유류 / C 전기 match NFTC 101 (소화기구 및 자동소화장치의 화재안전기술기준); K급 주방화재 omitted, which is not an error.",
+        "No water on oil fire, use sand/분말/포말; no gloves when hammering; 사고 시 기계 정지 → 구조 → 보고: standard 굴착기운전기능사 answers."
+      ]
+    },
+    "gas-electric-safety": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "좌우 1m 이내 인력굴착: 도시가스사업법 시행규칙 별표16 (도시가스배관의 안전조치 및 손상방지기준) '도시가스배관의 좌우 1m 이내의 부분은 인력으로 굴착할 것' confirmed (law.go.kr 별표16 download, search snippet).",
+        "Pressure classes 저압 <0.1MPa, 중압 0.1~1MPa 미만, 고압 ≥1MPa: 시행규칙 제2조 confirmed (liquefied-gas exception not mentioned; acceptable).",
+        "Buried pipe color 저압 황색 / 중압 이상 적색, 지상배관 황색: confirmed in 별표16/별표7 snippets.",
+        "보호포 (yellow for low pressure, red for medium+), 보호판 (steel plate), 라인마크, 애자 수 ↔ 전압, 감전 시 운전석에 머물고 붐을 떼어냄: consistent with standard exam material."
+      ]
+    },
+    "pre-check": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "Oil dipstick F–L, hot radiator cap, 난기운전, oil-pressure lamp → stop engine, charge lamp → alternator/belt, parking sequence, filling fuel after work to reduce condensation: all match standard exam answers. No numbers or legal claims."
+      ]
+    },
+    "driving-work": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "Sprocket rear / idler front travel orientation and reversed lever when sprocket is in front: correct.",
+        "Downhill with bucket slightly raised at low speed, no turning on slopes (KOSHA GUIDE D-C-4-2025 also prohibits swinging the boom while moving on a slope), no swing-digging, bucket not over the truck cab, no steering on trailer ramp, secure with chains: consistent with exam material."
+      ]
+    },
+    "work-device": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "3 main parts (작업장치/상부회전체/하부주행체), boom types (one-piece, two-piece, offset), arm = dipper stick, bucket teeth and side cutter, breaker/crusher/grapple/ripper, quick coupler with safety pin: all correct."
+      ]
+    },
+    "upper-lower": {
+      "verdict": "PASS",
+      "problems": [
+        "compare table row [\"잘하는 곳\", \"무르거나 험한 땅\", \"단단한 땅, 짧은 거리 이동\"]: '짧은 거리 이동' is wrong/misleading. The standard textbook and exam point is the opposite: the wheel type has better mobility and higher travel speed (about 25~40km/h vs 2.5~10km/h for crawlers), so it suits paved roads and moving long distances by itself, while a crawler needs a trailer for long moves. Suggested fix: '단단하고 평평한 땅, 도로 이동·장거리 이동(기동성 좋음)'."
+      ],
+      "notes": [
+        "Counterweight, center joint, swing motor, idler/sprocket/upper and lower rollers, track tension (grease cylinder), recoil spring behind the idler absorbing shock, outriggers: all correct.",
+        "Evidence for wheel vs crawler mobility: hellocbt.com exam_srl=25907 and rlcnf.net fork_lift_truck wr_id=21 (exam questions on 무한궤도식 vs 타이어식), plus textbook summaries stating that crawlers cannot travel on ordinary roads and have trouble with long-distance moves, while the wheel type has good mobility and suits flat, paved roads and long-distance work."
+      ],
+      "firstVerdict": "FAIL",
+      "reverify": {
+        "verdict": "PASS",
+        "problems": [],
+        "notes": [
+          "상부 회전체 구성(엔진·유압 펌프·운전석·선회 장치·카운터웨이트), 360도 선회, 선회 모터: 표준 교재 내용과 일치.",
+          "센터 조인트(터닝/스위블 조인트)가 회전 중심에서 상부 회전 중에도 호스 꼬임 없이 하부 주행 모터로 작동유를 공급: 맞음.",
+          "아이들러(앞, 트랙 유도) / 스프로킷(뒤, 주행 모터 동력으로 트랙 구동) / 상부 롤러(트랙 처짐 방지) / 하부 롤러(장비 무게 지지): 맞음. '보통 스프로킷이 뒤쪽'이라는 단서도 적절.",
+          "트랙 장력: 너무 팽팽하면 롤러·아이들러·스프로킷 마모 증가, 너무 느슨하면 벗겨짐. 조정 실린더에 그리스를 넣거나 빼서 조정: 맞음.",
+          "리코일 스프링이 아이들러 뒤쪽에서 주행 중 앞쪽에서 오는 충격을 흡수: 맞음.",
+          "아우트리거(타이어식 작업 시 지지), 비교표(무한궤도식은 연약지·험지·경사지, 타이어식은 단단한 평지·도로 이동이 빠름): 맞음."
+        ]
+      }
+    },
+    "machinery-law": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "Registration within 2 months of acquisition: 건설기계관리법 시행령 제3조 (2월 이내; 5일 in a national emergency) confirmed via sejong.go.kr guide and law-text snippets. Source attribution (시행령) is correct.",
+        "Four inspection types 신규등록·정기·구조변경·수시: 법 제13조, correct.",
+        "Operator licence issued by 시장·군수·구청장: 법 제26조, correct. Unlicensed or suspended operation is punishable: correct.",
+        "Four business types 대여업·정비업·매매업·해체재활용업: 법 제21조 (current name 해체재활용업), correct."
+      ]
+    },
+    "road-traffic": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "When the police officer's hand signal differs from the signal or sign, follow the officer: 도로교통법 제5조②, correct.",
+        "Flashing yellow and flashing red meanings: 시행규칙 별표2, correct.",
+        "Five kinds of safety signs (주의·규제·지시·보조·노면표시): 시행규칙 제8조, correct.",
+        "No stopping or parking: on intersections, crosswalks and level crossings; within 5m of an intersection edge or road corner; within 10m of a bus stop sign; within 10m of a level crossing edge or a crosswalk: 법 제32조, correct.",
+        "Drunk = BAC 0.03% or more: 법 제44조④, correct. 'Construction machinery can't be operated either' holds substantively: an excavator is not a 도로교통법 '자동차', but 건설기계관리법 제28조 and 시행규칙 별표22 apply the same 0.03% standard for suspending or revoking the operator licence. Not an error; the author could optionally cite 건설기계관리법."
+      ]
+    },
+    "engine": {
+      "verdict": "PASS",
+      "problems": [
+        "compare table row [\"시동 보조\", \"예열 플러그\", \"점화 장치\"]: misleading. The ignition system (spark plug, ignition coil) is how a gasoline engine burns fuel on every combustion stroke. It is not a starting aid. A gasoline engine has no counterpart to the diesel glow plug (preheating), so a learner may wrongly learn '점화장치 = 시동보조장치'. Suggested fix: rename the row to '불을 붙이는 장치' (diesel: none, compression heat / gasoline: spark plug and ignition system), or write '시동 보조: 예열 플러그 / 따로 필요 없음'."
+      ],
+      "notes": [
+        "4-stroke order and 2 crankshaft revolutions per cycle, compression ignition, glow plug, bleeding air from the fuel system, oil functions (윤활·냉각·밀봉·청정·방청), thermostat stuck closed → overheating, overheating causes, black smoke = incomplete combustion / clogged air cleaner, grey-white smoke = burning oil: all correct.",
+        "The row '가솔린 흡입: 공기와 연료를 섞은 것' ignores direct-injection gasoline engines, but it is the standard textbook simplification, so it is not counted as a failure."
+      ],
+      "firstVerdict": "FAIL",
+      "reverify": {
+        "verdict": "PASS",
+        "problems": [],
+        "notes": [
+          "4행정 순서 흡입-압축-폭발(동력)-배기, 1사이클에 크랭크축 2회전: 맞음.",
+          "디젤 압축 착화(공기만 흡입·압축 후 연료 분사, 점화 플러그 없음): 맞음.",
+          "예열 플러그: 연소실 공기를 데우는 전기 발열 장치, 예열 표시등이 꺼질 때까지 대기: 맞음. 참고로 직접 분사식 엔진은 예열 플러그 대신 흡기 가열식을 쓰기도 하지만, 기능사 수준 설명과 비교표('디젤: 예열 플러그 있음')는 오해를 부를 정도는 아님.",
+          "비교표 '가솔린: 공기와 연료를 섞은 것을 흡입'은 전통적 교재 기준. 요즘 직분사(GDI) 가솔린 엔진은 공기만 흡입하지만 시험 범위 설명으로는 허용 가능.",
+          "연료 계통 공기 빼기(연료 소진·연료 필터 교환 후): 맞음.",
+          "엔진 오일 작용(윤활·냉각·밀봉·청정·방청): 맞음.",
+          "수온 조절기: 차가울 때 라디에이터 쪽을 닫고 뜨거워지면 열림, 닫힌 채 고장 나면 과열: 맞음. 과열 원인(냉각수 부족·팬벨트 느슨함·라디에이터 막힘·수온 조절기 고장): 맞음.",
+          "배기가스 색: 검은색은 불완전 연소(공기 청정기 막힘 등), 회백색은 엔진 오일 연소: 기능사 표준 답과 일치."
+        ]
+      }
+    },
+    "electric": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "12V lead-acid battery = six cells of about 2V in series; series raises voltage, parallel raises capacity; remove the ground (−) cable first and connect (+) first; starter is a DC series-wound motor; alternator rectifies AC to DC with diodes; fuse in series, replace with the same rating: all correct."
+      ]
+    },
+    "hydraulic": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "Pascal's principle, piston pump gives the highest pressure, pressure/flow/direction control = force/speed/direction, relief valve, check valve (classified as a 방향제어밸브 in the Korean syllabus, so the compare row is correct), throttle valve as flow control, cylinder linear / motor rotary, swing and travel by hydraulic motors: all correct.",
+        "Cavitation described as 'air bubbles forming and collapsing': strictly these are vapor bubbles from low pressure, but the description matches the level of 기능사 exam explanations. Not counted as a failure."
+      ]
+    }
+  }
+}

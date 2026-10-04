@@ -1,0 +1,237 @@
+[
+  {
+    "id": "excavator-operator-road-traffic-0001",
+    "certId": "excavator-operator",
+    "subjectId": "law",
+    "chapterId": "road-traffic",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "도로교통법상 운전이 금지되는 '술에 취한 상태'의 기준은 혈중알코올농도 몇 % 이상인가?",
+    "choices": [
+      "0.1%",
+      "0.03%",
+      "0.08%",
+      "0.05%"
+    ],
+    "answer": 2,
+    "oneLineConcept": "술에 취한 상태 = 혈중알코올농도 0.03% 이상",
+    "explanation": "도로교통법은 혈중알코올농도 **0.03% 이상**을 술에 취한 상태로 보고 운전을 금지합니다. 소주 한두 잔으로도 넘을 수 있으므로 술을 마셨으면 운전하지 않습니다.\n\n**틀린 선지**\n- 0.1%: 0.1%는 술에 취한 상태의 시작 기준이 아닙니다.\n- 0.08%: 0.08%는 면허 취소 등 더 무겁게 처벌하는 기준이지 술에 취한 상태의 시작 기준이 아닙니다.\n- 0.05%: 0.05%는 예전 기준으로, 지금은 0.03%로 낮아졌습니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-05",
+    "tags": [
+      "음주 운전"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "excavator-operator-road-traffic-0002",
+    "certId": "excavator-operator",
+    "subjectId": "law",
+    "chapterId": "road-traffic",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "교차로에서 신호기의 신호와 경찰공무원의 수신호가 서로 다를 때 따라야 하는 것은?",
+    "choices": [
+      "신호기의 신호",
+      "앞차의 움직임",
+      "경찰공무원의 수신호",
+      "운전자 스스로의 판단"
+    ],
+    "answer": 3,
+    "oneLineConcept": "신호기보다 경찰공무원 수신호가 우선",
+    "explanation": "경찰공무원 등의 수신호는 사고·혼잡 같은 현장 상황에 맞춰 내리는 지시입니다. 그래서 신호기와 다르면 **경찰공무원의 수신호를 따릅니다.**\n\n**틀린 선지**\n- 신호기의 신호: 신호기 신호보다 경찰공무원의 수신호가 우선합니다.\n- 앞차의 움직임: 앞차가 잘못 움직일 수 있으므로 앞차를 따르는 것은 기준이 아닙니다.\n- 운전자 스스로의 판단: 운전자 판단보다 교통정리를 하는 경찰공무원의 지시가 우선입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-05",
+    "tags": [
+      "신호"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "excavator-operator-road-traffic-0003",
+    "certId": "excavator-operator",
+    "subjectId": "law",
+    "chapterId": "road-traffic",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "도로교통법상 교차로의 가장자리나 도로의 모퉁이로부터 몇 m 이내에는 주차·정차를 할 수 없는가?",
+    "choices": [
+      "15m",
+      "20m",
+      "3m",
+      "5m"
+    ],
+    "answer": 4,
+    "oneLineConcept": "교차로 가장자리·도로 모퉁이 5m 이내 주정차 금지",
+    "explanation": "교차로 가장자리나 도로 모퉁이 가까이에 차를 세우면 다른 차가 돌 때 앞이 보이지 않아 사고가 납니다. 그래서 **5m 이내**에는 주차도 정차도 하지 않습니다.\n\n참고: 횡단보도·버스 정류장·건널목은 10m 이내 주정차 금지입니다.\n\n**틀린 선지**\n- 15m: 15m가 아니라 5m 이내입니다.\n- 20m: 20m가 아니라 5m 이내입니다.\n- 3m: 3m가 아니라 5m 이내입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-05",
+    "tags": [
+      "주정차 금지"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "excavator-operator-road-traffic-0004",
+    "certId": "excavator-operator",
+    "subjectId": "law",
+    "chapterId": "road-traffic",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "도로교통법상 안전표지의 종류가 아닌 것은?",
+    "choices": [
+      "주의표지",
+      "안내표지",
+      "규제표지",
+      "노면표시"
+    ],
+    "answer": 2,
+    "oneLineConcept": "안전표지: 주의·규제·지시·보조 표지와 노면표시",
+    "explanation": "도로교통법의 안전표지는 다섯 가지입니다.\n1. 주의표지\n2. 규제표지\n3. 지시표지\n4. 보조표지\n5. 노면표시\n\n길 이름·방향·거리를 알려 주는 **안내표지**는 도로교통법의 안전표지가 아니라 도로표지에 속합니다.\n\n**틀린 선지**\n- 주의표지: 주의표지는 도로교통법의 안전표지에 속합니다.\n- 규제표지: 규제표지는 도로교통법의 안전표지에 속합니다.\n- 노면표시: 노면표시도 도로교통법의 안전표지에 속합니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-05",
+    "tags": [
+      "안전표지"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "excavator-operator-road-traffic-0005",
+    "certId": "excavator-operator",
+    "subjectId": "law",
+    "chapterId": "road-traffic",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "적색 등화가 깜빡이는(적색 점멸) 신호에서 운전자가 해야 할 일은?",
+    "choices": [
+      "신호가 녹색으로 바뀔 때까지 계속 기다린다.",
+      "속도를 줄이지 않고 그대로 진행한다.",
+      "경음기를 울리며 빠르게 지나간다.",
+      "정지선 직전에서 일시정지한 뒤 다른 교통에 주의하며 진행한다."
+    ],
+    "answer": 4,
+    "oneLineConcept": "적색 점멸 = 일시정지 후 주의하며 진행",
+    "explanation": "신호등의 점멸(깜빡임) 신호는 이렇게 다릅니다.\n1. 적색 점멸: 정지선 직전에서 **일시정지**한 뒤 다른 교통에 주의하며 진행\n2. 황색 점멸: 다른 교통이나 안전표지에 주의하며 진행\n\n**틀린 선지**\n- 신호가 녹색으로 바뀔 때까지 계속 기다린다.: 점멸 신호는 녹색으로 바뀌는 신호가 아니므로 계속 기다릴 필요가 없습니다.\n- 속도를 줄이지 않고 그대로 진행한다.: 적색 점멸에서는 반드시 일시정지해야 하므로 그대로 진행하면 안 됩니다.\n- 경음기를 울리며 빠르게 지나간다.: 경음기를 울리며 빨리 지나가는 것은 위험한 운전입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-05",
+    "tags": [
+      "신호"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "excavator-operator-road-traffic-0006",
+    "certId": "excavator-operator",
+    "subjectId": "law",
+    "chapterId": "road-traffic",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "도로교통법상 앞지르기가 금지된 장소는?",
+    "choices": [
+      "편도 3차로의 곧은 도로",
+      "앞지르기 허용 표시가 있는 도로",
+      "앞이 잘 보이는 평탄한 도로",
+      "터널 안"
+    ],
+    "answer": 4,
+    "oneLineConcept": "터널 안·다리 위·교차로는 앞지르기 금지",
+    "explanation": "앞지르기가 금지된 대표 장소는 **교차로, 터널 안, 다리 위**, 도로가 구부러진 곳, 비탈길 고갯마루 부근, 가파른 비탈길 내리막 등입니다. 앞이 잘 안 보이거나 피할 공간이 없는 곳입니다.\n\n**틀린 선지**\n- 편도 3차로의 곧은 도로: 곧고 넓은 편도 3차로 도로는 앞지르기 금지 장소가 아닙니다.\n- 앞지르기 허용 표시가 있는 도로: 앞지르기를 허용한 곳에서는 안전하게 앞지를 수 있습니다.\n- 앞이 잘 보이는 평탄한 도로: 앞이 잘 보이는 평탄한 도로는 앞지르기 금지 장소가 아닙니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-05",
+    "tags": [
+      "앞지르기"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "excavator-operator-road-traffic-0007",
+    "certId": "excavator-operator",
+    "subjectId": "law",
+    "chapterId": "road-traffic",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "교차로나 그 부근에서 긴급자동차가 다가올 때 운전자가 해야 할 일은?",
+    "choices": [
+      "교차로 한가운데에 그대로 멈춰 선다.",
+      "교차로를 피하여 일시정지한다.",
+      "긴급자동차보다 먼저 빠르게 교차로를 지나간다.",
+      "중앙선을 넘어 반대 차로로 비켜 준다."
+    ],
+    "answer": 2,
+    "oneLineConcept": "교차로 부근 긴급자동차 접근 → 교차로를 피해 일시정지",
+    "explanation": "교차로나 그 부근에서 긴급자동차가 다가오면 **교차로를 피하여 일시정지**해 길을 비켜 줍니다. 교차로가 아닌 곳에서는 도로 가장자리로 피해 진로를 양보합니다.\n\n**틀린 선지**\n- 교차로 한가운데에 그대로 멈춰 선다.: 교차로 안에 멈추면 긴급자동차가 지나갈 길을 막습니다.\n- 긴급자동차보다 먼저 빠르게 교차로를 지나간다.: 먼저 지나가려고 서두르면 긴급자동차와 부딪칠 수 있습니다.\n- 중앙선을 넘어 반대 차로로 비켜 준다.: 중앙선을 넘으면 마주 오는 차와 사고가 납니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-05",
+    "tags": [
+      "긴급자동차"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+]

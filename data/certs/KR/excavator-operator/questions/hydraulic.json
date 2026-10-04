@@ -1,0 +1,280 @@
+[
+  {
+    "id": "excavator-operator-hydraulic-0001",
+    "certId": "excavator-operator",
+    "subjectId": "mechanism",
+    "chapterId": "hydraulic",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "유압 장치가 작은 힘으로 큰 힘을 낼 수 있는 원리는?",
+    "choices": [
+      "파스칼의 원리",
+      "관성의 법칙",
+      "베르누이의 원리",
+      "아르키메데스의 원리"
+    ],
+    "answer": 1,
+    "oneLineConcept": "유압의 기본 원리 = 파스칼의 원리",
+    "explanation": "**파스칼의 원리**: 밀폐된 용기 속 액체에 압력을 주면 그 압력이 **모든 방향에 같은 크기로** 전달됩니다. 그래서 작은 피스톤을 누른 압력이 큰 피스톤에 그대로 전해져, 면적이 넓은 쪽에서 큰 힘이 나옵니다.\n\n**틀린 선지**\n- 관성의 법칙: 관성의 법칙은 물체가 하던 운동을 계속하려는 성질입니다.\n- 베르누이의 원리: 베르누이의 원리는 흐르는 유체의 속도와 압력의 관계를 설명합니다.\n- 아르키메데스의 원리: 아르키메데스의 원리는 물에 잠긴 물체가 받는 뜨는 힘(부력)에 관한 것입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-05",
+    "tags": [
+      "유압",
+      "원리"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "excavator-operator-hydraulic-0002",
+    "certId": "excavator-operator",
+    "subjectId": "mechanism",
+    "chapterId": "hydraulic",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "유압 회로에서 작동유의 양을 조절하여 실린더나 모터의 '속도'를 바꾸는 밸브는?",
+    "choices": [
+      "유량 제어 밸브",
+      "체크 밸브",
+      "압력 제어 밸브",
+      "방향 제어 밸브"
+    ],
+    "answer": 1,
+    "oneLineConcept": "유량 제어 = 속도, 압력 제어 = 힘, 방향 제어 = 방향",
+    "explanation": "유압 밸브는 하는 일로 나눕니다.\n1. 압력 제어 밸브: 힘(일의 크기)\n2. 유량 제어 밸브: **속도**(일의 빠르기)\n3. 방향 제어 밸브: 방향\n\n작동유가 많이 흐르면 실린더가 빨리, 적게 흐르면 천천히 움직입니다.\n\n**틀린 선지**\n- 체크 밸브: 체크 밸브는 작동유를 한쪽으로만 흐르게 하는 밸브로 속도 조절용이 아닙니다.\n- 압력 제어 밸브: 압력 제어 밸브는 압력을 조절해 일의 크기(힘)를 정합니다.\n- 방향 제어 밸브: 방향 제어 밸브는 작동유가 흐르는 방향을 바꿔 움직이는 방향을 정합니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-05",
+    "tags": [
+      "유압",
+      "밸브"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "excavator-operator-hydraulic-0003",
+    "certId": "excavator-operator",
+    "subjectId": "mechanism",
+    "chapterId": "hydraulic",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "유압 회로의 압력이 정해진 값보다 높아지지 않도록 막아 주는 밸브는?",
+    "choices": [
+      "스로틀 밸브",
+      "체크 밸브",
+      "릴리프 밸브",
+      "방향 전환 밸브"
+    ],
+    "answer": 3,
+    "oneLineConcept": "릴리프 밸브 = 회로 최고 압력 제한(과부하 방지)",
+    "explanation": "**릴리프 밸브**는 회로 압력이 정해진 값을 넘으면 열려 작동유를 탱크로 돌려보냅니다. 그래서 펌프·호스·실린더가 지나친 압력에 터지거나 망가지는 것을 막습니다. 압력 제어 밸브의 한 종류입니다.\n\n**틀린 선지**\n- 스로틀 밸브: 스로틀 밸브는 통로를 좁혀 흐르는 양(속도)을 조절하는 밸브입니다.\n- 체크 밸브: 체크 밸브는 작동유를 한쪽으로만 흐르게 하는 밸브입니다.\n- 방향 전환 밸브: 방향 전환 밸브는 작동유 흐름 방향을 바꾸는 밸브입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-05",
+    "tags": [
+      "유압",
+      "밸브"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "excavator-operator-hydraulic-0004",
+    "certId": "excavator-operator",
+    "subjectId": "mechanism",
+    "chapterId": "hydraulic",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "작동유가 한쪽 방향으로만 흐르고 거꾸로는 흐르지 못하게 하는 밸브는?",
+    "choices": [
+      "유량 조절 밸브",
+      "릴리프 밸브",
+      "감압 밸브",
+      "체크 밸브"
+    ],
+    "answer": 4,
+    "oneLineConcept": "체크 밸브 = 한쪽 방향으로만 흐름(역류 방지)",
+    "explanation": "**체크 밸브**는 한 방향으로는 열리고, 반대 방향으로 흐르려 하면 닫혀 **역류(거꾸로 흐름)를 막습니다.** 작동유 흐름의 방향을 다루므로 방향 제어 밸브에 속합니다.\n\n**틀린 선지**\n- 유량 조절 밸브: 유량 조절 밸브는 흐르는 양을 조절해 속도를 바꾸는 밸브입니다.\n- 릴리프 밸브: 릴리프 밸브는 회로의 최고 압력을 제한하는 밸브입니다.\n- 감압 밸브: 감압 밸브는 회로 일부의 압력을 낮춰 쓰는 밸브입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-05",
+    "tags": [
+      "유압",
+      "밸브"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "excavator-operator-hydraulic-0005",
+    "certId": "excavator-operator",
+    "subjectId": "mechanism",
+    "chapterId": "hydraulic",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "작동유의 온도가 너무 높아졌을 때 나타나는 현상으로 옳은 것은?",
+    "choices": [
+      "유압 펌프의 효율이 좋아진다.",
+      "작동유의 양이 저절로 늘어난다.",
+      "점도가 낮아져(묽어져) 새는 양이 늘고 작동이 느려진다.",
+      "점도가 높아져 작동이 빨라진다."
+    ],
+    "answer": 3,
+    "oneLineConcept": "작동유 과열 → 점도 저하 → 누설 증가·작동 불량",
+    "explanation": "작동유는 뜨거워지면 물처럼 **묽어집니다(점도 저하).** 그러면 틈새로 새는 양이 늘어 힘과 속도가 떨어지고, 기름이 빨리 상하며 실(고무 패킹)도 상합니다. 작동유 온도는 너무 높지 않게 관리합니다.\n\n**틀린 선지**\n- 유압 펌프의 효율이 좋아진다.: 작동유가 묽어지면 펌프 안에서 새는 양이 늘어 효율이 떨어집니다.\n- 작동유의 양이 저절로 늘어난다.: 온도가 올라도 작동유 양이 늘지는 않습니다. 오히려 새는 양이 늘어납니다.\n- 점도가 높아져 작동이 빨라진다.: 온도가 오르면 작동유는 묽어지므로 점도가 높아지지 않고, 작동도 빨라지지 않습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-05",
+    "tags": [
+      "유압",
+      "작동유"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "excavator-operator-hydraulic-0006",
+    "certId": "excavator-operator",
+    "subjectId": "mechanism",
+    "chapterId": "hydraulic",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "유압 회로에서 압력이 낮아진 부분에 기포가 생겼다 터지며 소음과 진동이 나는 현상은?",
+    "choices": [
+      "베이퍼 록",
+      "채터링",
+      "캐비테이션(공동 현상)",
+      "서지 압력"
+    ],
+    "answer": 3,
+    "oneLineConcept": "캐비테이션 = 기포 생성·붕괴로 소음·진동·부식",
+    "explanation": "유압 펌프의 흡입 쪽처럼 압력이 낮아지면 기름에 녹아 있던 공기가 **기포**로 나옵니다. 이 기포가 압력이 높은 곳에서 터지면서 **소음·진동**을 내고 부품 표면을 깎아 냅니다. 이를 **캐비테이션(공동 현상)**이라 합니다. 흡입 필터 막힘, 작동유 부족 등이 원인입니다.\n\n**틀린 선지**\n- 베이퍼 록: 베이퍼 록은 브레이크 액 등이 열로 끓어 기포가 차서 힘이 전달되지 않는 현상입니다.\n- 채터링: 채터링은 밸브가 빠르게 떨며 열고 닫히는 소리를 내는 현상입니다.\n- 서지 압력: 서지 압력은 밸브를 갑자기 닫을 때 순간적으로 치솟는 압력입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-05",
+    "tags": [
+      "유압",
+      "고장 현상"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "excavator-operator-hydraulic-0007",
+    "certId": "excavator-operator",
+    "subjectId": "mechanism",
+    "chapterId": "hydraulic",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "유압 회로에서 압력을 가진 작동유를 저장해 두었다가 필요할 때 쓰고, 압력 변화에 따른 충격도 흡수하는 장치는?",
+    "choices": [
+      "스트레이너",
+      "오일 쿨러",
+      "어큐뮬레이터(축압기)",
+      "유압 모터"
+    ],
+    "answer": 3,
+    "oneLineConcept": "어큐뮬레이터 = 압력 저장·충격 흡수",
+    "explanation": "**어큐뮬레이터(축압기)**는 안에 질소 가스 등을 넣어 두고, 압력이 걸린 작동유를 눌러 저장합니다. 필요할 때 작동유를 내보내 보조 동력이 되고, 압력이 갑자기 오르내릴 때 **충격(맥동)**을 흡수합니다.\n\n**틀린 선지**\n- 스트레이너: 스트레이너는 탱크에서 펌프로 들어가는 작동유의 찌꺼기를 거르는 거름망입니다.\n- 오일 쿨러: 오일 쿨러는 뜨거워진 작동유를 식히는 장치입니다.\n- 유압 모터: 유압 모터는 작동유의 힘으로 회전 운동을 만드는 장치이지 압력을 저장하지 않습니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-05",
+    "tags": [
+      "유압",
+      "부속 장치"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "excavator-operator-hydraulic-0008",
+    "certId": "excavator-operator",
+    "subjectId": "mechanism",
+    "chapterId": "hydraulic",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "유압 장치의 장점으로 옳지 않은 것은?",
+    "choices": [
+      "작은 힘으로 큰 힘을 낼 수 있다.",
+      "릴리프 밸브로 과부하를 쉽게 막을 수 있다.",
+      "작동유의 온도가 바뀌어도 기계 속도가 전혀 달라지지 않는다.",
+      "속도를 끊김 없이(무단으로) 바꾸기 쉽다."
+    ],
+    "answer": 3,
+    "oneLineConcept": "유압의 단점: 작동유 온도에 따라 속도·힘이 변한다",
+    "explanation": "유압은 작동유의 점도가 온도에 따라 바뀌기 때문에 **온도가 바뀌면 속도와 힘도 달라집니다.** 이것은 유압의 대표적인 **단점**입니다. 그 밖의 단점으로 기름이 새기 쉽고 화재 위험이 있다는 점이 있습니다.\n\n**틀린 선지**\n- 작은 힘으로 큰 힘을 낼 수 있다.: 파스칼의 원리로 작은 힘을 큰 힘으로 바꾸는 것은 유압의 대표 장점입니다.\n- 릴리프 밸브로 과부하를 쉽게 막을 수 있다.: 릴리프 밸브로 과부하를 막기 쉬운 것도 장점입니다.\n- 속도를 끊김 없이(무단으로) 바꾸기 쉽다.: 유량을 조절해 속도를 부드럽게 바꿀 수 있는 것도 장점입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-05",
+    "tags": [
+      "유압",
+      "장단점"
+    ],
+    "levelLock": true
+  }
+]
