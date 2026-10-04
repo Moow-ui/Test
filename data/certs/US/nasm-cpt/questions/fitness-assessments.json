@@ -1,0 +1,285 @@
+[
+  {
+    "id": "nasm-cpt-fitness-assessments-0001",
+    "certId": "nasm-cpt",
+    "subjectId": "assessment",
+    "chapterId": "fitness-assessments",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Using 220 minus age, what is the estimated maximum heart rate of a 40-year-old?",
+    "choices": [
+      "260 beats per minute",
+      "180 beats per minute",
+      "190 beats per minute",
+      "140 beats per minute"
+    ],
+    "answer": 2,
+    "oneLineConcept": "HRmax = 220 - age",
+    "explanation": "220 minus 40 equals 180 beats per minute.\n\n**Wrong choices**\n- 260 beats per minute: This adds age instead of subtracting it.\n- 190 beats per minute: This does not match 220 minus 40.\n- 140 beats per minute: This is too low.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-04",
+    "tags": [
+      "heart rate",
+      "calculation"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "nasm-cpt-fitness-assessments-0002",
+    "certId": "nasm-cpt",
+    "subjectId": "assessment",
+    "chapterId": "fitness-assessments",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A 40-year-old client has a resting heart rate of 70. Using the heart rate reserve (Karvonen) method, what is the target heart rate at 60% intensity?",
+    "choices": [
+      "108 beats per minute",
+      "66 beats per minute",
+      "147 beats per minute",
+      "136 beats per minute"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Karvonen: (HRmax - HRrest) x % + HRrest",
+    "explanation": "1. Estimated maximum heart rate is 220 - 40 = 180.\n2. Heart rate reserve is 180 - 70 = 110.\n3. Take 60% of the reserve: 110 x 0.6 = 66.\n4. Add the resting rate: 66 + 70 = 136.\n\n**Wrong choices**\n- 108 beats per minute: This is 60% of 180 with no reserve or resting rate added.\n- 66 beats per minute: This is only the reserve part before adding the resting rate.\n- 147 beats per minute: This uses 70%, not 60%.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-04",
+    "tags": [
+      "heart rate",
+      "Karvonen"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "nasm-cpt-fitness-assessments-0003",
+    "certId": "nasm-cpt",
+    "subjectId": "assessment",
+    "chapterId": "fitness-assessments",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which test is a submaximal test used to estimate aerobic fitness?",
+    "choices": [
+      "Push-up test",
+      "Sit-and-reach test",
+      "Vertical jump test",
+      "Rockport walk test"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Rockport walk test estimates aerobic fitness",
+    "explanation": "The Rockport walk test has the client walk one mile quickly. The time and heart rate estimate aerobic fitness.\n\n**Wrong choices**\n- Push-up test: This measures muscular endurance.\n- Sit-and-reach test: This measures flexibility.\n- Vertical jump test: This measures lower body power.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-04",
+    "tags": [
+      "cardio test"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "nasm-cpt-fitness-assessments-0004",
+    "certId": "nasm-cpt",
+    "subjectId": "assessment",
+    "chapterId": "fitness-assessments",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which measurement uses a client's height and weight to place them in a weight category?",
+    "choices": [
+      "Body mass index (BMI)",
+      "Waist-to-hip ratio",
+      "Skinfold measurement",
+      "Resting heart rate"
+    ],
+    "answer": 1,
+    "oneLineConcept": "BMI = weight and height",
+    "explanation": "BMI is calculated from weight and height and is used as a general screening measure.\n\n**Wrong choices**\n- Waist-to-hip ratio: This uses two body circumferences.\n- Skinfold measurement: This measures fat under the skin with calipers.\n- Resting heart rate: This is not related to body size.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-04",
+    "tags": [
+      "BMI"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "nasm-cpt-fitness-assessments-0005",
+    "certId": "nasm-cpt",
+    "subjectId": "assessment",
+    "chapterId": "fitness-assessments",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A client weighs 70 kg and is 1.75 m tall. What is the BMI, rounded to one decimal place?",
+    "choices": [
+      "40.0",
+      "20.0",
+      "22.9",
+      "24.5"
+    ],
+    "answer": 3,
+    "oneLineConcept": "BMI = kg / m squared",
+    "explanation": "1. Square the height: 1.75 x 1.75 = 3.0625.\n2. Divide weight by that: 70 / 3.0625 = 22.86.\n3. Rounded, BMI is 22.9.\n\n**Wrong choices**\n- 40.0: This divides weight by height without squaring height.\n- 20.0: This divides by 3.5, which is height x 2, not height squared.\n- 24.5: This does not match the formula.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-04",
+    "tags": [
+      "BMI",
+      "calculation"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "nasm-cpt-fitness-assessments-0006",
+    "certId": "nasm-cpt",
+    "subjectId": "assessment",
+    "chapterId": "fitness-assessments",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which artery is commonly used to take a pulse at the wrist?",
+    "choices": [
+      "Femoral artery",
+      "Brachial artery of the thigh",
+      "Radial artery",
+      "Aorta"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Wrist pulse = radial artery",
+    "explanation": "The radial artery runs along the thumb side of the wrist and is commonly used to take a pulse.\n\n**Wrong choices**\n- Femoral artery: The femoral artery is in the groin area.\n- Brachial artery of the thigh: There is no brachial artery of the thigh.\n- Aorta: The aorta is deep in the chest, not at the wrist.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-04",
+    "tags": [
+      "pulse"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "nasm-cpt-fitness-assessments-0007",
+    "certId": "nasm-cpt",
+    "subjectId": "assessment",
+    "chapterId": "fitness-assessments",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which measurement is used to estimate body composition?",
+    "choices": [
+      "Rockport walk test",
+      "Skinfold measurement",
+      "Overhead squat assessment",
+      "Heart rate reserve"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Skinfold = body composition estimate",
+    "explanation": "Skinfold measurement uses calipers at set sites to estimate body fat.\n\n**Wrong choices**\n- Rockport walk test: The Rockport walk test estimates aerobic fitness.\n- Overhead squat assessment: The overhead squat assessment checks movement.\n- Heart rate reserve: Heart rate reserve helps set training intensity.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-04",
+    "tags": [
+      "body composition"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "nasm-cpt-fitness-assessments-0008",
+    "certId": "nasm-cpt",
+    "subjectId": "assessment",
+    "chapterId": "fitness-assessments",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A client weighs 80 kg and is 2.0 m tall. What is the BMI?",
+    "choices": [
+      "16.0",
+      "20.0",
+      "40.0",
+      "25.0"
+    ],
+    "answer": 2,
+    "oneLineConcept": "BMI = kg / m squared",
+    "explanation": "BMI is weight in kg divided by height in meters squared.\n\n1. Height squared: 2.0 x 2.0 = 4.0\n2. BMI: 80 / 4.0 = 20.0\n\n**Wrong choices**\n- 16.0: 16.0 comes from dividing by the wrong number.\n- 40.0: 40.0 comes from dividing by height without squaring it.\n- 25.0: 25.0 does not match the calculation.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-04",
+    "tags": [
+      "BMI"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+]

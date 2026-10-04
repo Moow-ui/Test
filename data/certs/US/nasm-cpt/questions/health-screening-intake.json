@@ -1,0 +1,206 @@
+[
+  {
+    "id": "nasm-cpt-health-screening-intake-0001",
+    "certId": "nasm-cpt",
+    "subjectId": "assessment",
+    "chapterId": "health-screening-intake",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which tool is commonly used to screen clients before starting exercise?",
+    "choices": [
+      "One-repetition maximum test",
+      "Overhead squat assessment",
+      "Vertical jump test",
+      "PAR-Q+"
+    ],
+    "answer": 4,
+    "oneLineConcept": "PAR-Q+ screens readiness for activity",
+    "explanation": "The PAR-Q+ is a questionnaire that screens whether a person is ready for physical activity or needs medical clearance first.\n\n**Wrong choices**\n- One-repetition maximum test: This is a strength test, not a health screen.\n- Overhead squat assessment: This looks at movement, not health risk.\n- Vertical jump test: This is a performance test.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-04",
+    "tags": [
+      "PAR-Q+",
+      "screening"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "nasm-cpt-health-screening-intake-0002",
+    "certId": "nasm-cpt",
+    "subjectId": "assessment",
+    "chapterId": "health-screening-intake",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A client's screening shows a medical concern. What should the trainer do?",
+    "choices": [
+      "Start a maximal strength test",
+      "Ignore it if the client feels fine",
+      "Ask for clearance from a healthcare provider",
+      "Diagnose the condition"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Medical concern = get provider clearance",
+    "explanation": "If screening shows a medical concern, the trainer asks for clearance from a healthcare provider before training.\n\n**Wrong choices**\n- Start a maximal strength test: This could be unsafe.\n- Ignore it if the client feels fine: Medical concerns must be checked.\n- Diagnose the condition: Trainers cannot diagnose medical conditions.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-04",
+    "tags": [
+      "screening",
+      "referral"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "nasm-cpt-health-screening-intake-0003",
+    "certId": "nasm-cpt",
+    "subjectId": "assessment",
+    "chapterId": "health-screening-intake",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which is an example of objective information about a client?",
+    "choices": [
+      "A measured resting heart rate of 72 beats per minute",
+      "The client says they feel stressed",
+      "The client wants to lose weight",
+      "The client says they have back pain"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Objective = measured; subjective = reported",
+    "explanation": "Objective information can be measured, such as heart rate. Subjective information comes from what the client says.\n\n**Wrong choices**\n- The client says they feel stressed: This is the client's own report, so it is subjective.\n- The client wants to lose weight: This is a goal, so it is subjective.\n- The client says they have back pain: This is a report from the client, so it is subjective.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-04",
+    "tags": [
+      "intake",
+      "data"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "nasm-cpt-health-screening-intake-0004",
+    "certId": "nasm-cpt",
+    "subjectId": "assessment",
+    "chapterId": "health-screening-intake",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Which of the following is NOT a normal part of a client intake?",
+    "choices": [
+      "Asking about exercise history",
+      "Asking about current medications",
+      "Asking about the client's goals",
+      "Diagnosing the client's medical condition"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Intake gathers info; it does not diagnose",
+    "explanation": "A trainer collects history, medications, and goals. Diagnosing a medical condition is outside a trainer's scope.\n\n**Wrong choices**\n- Asking about exercise history: This is a normal part of intake.\n- Asking about current medications: This is a normal part of intake.\n- Asking about the client's goals: This is a normal part of intake.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-04",
+    "tags": [
+      "intake",
+      "scope"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "nasm-cpt-health-screening-intake-0005",
+    "certId": "nasm-cpt",
+    "subjectId": "assessment",
+    "chapterId": "health-screening-intake",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "In the PAR-Q+, what does the R stand for?",
+    "choices": [
+      "Readiness",
+      "Recovery",
+      "Resistance",
+      "Rhythm"
+    ],
+    "answer": 1,
+    "oneLineConcept": "PAR-Q+ = Physical Activity Readiness Questionnaire",
+    "explanation": "PAR-Q+ stands for Physical Activity Readiness Questionnaire, so the R is Readiness.\n\n**Wrong choices**\n- Recovery: Recovery is not part of the name.\n- Resistance: Resistance is not part of the name.\n- Rhythm: Rhythm is not part of the name.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-04",
+    "tags": [
+      "PAR-Q+"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "nasm-cpt-health-screening-intake-0006",
+    "certId": "nasm-cpt",
+    "subjectId": "assessment",
+    "chapterId": "health-screening-intake",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which statement is an example of subjective information from a client?",
+    "choices": [
+      "Resting heart rate of 72 beats per minute",
+      "Height of 170 cm",
+      "Body weight of 68 kg",
+      "\"My knee hurts when I climb stairs\""
+    ],
+    "answer": 4,
+    "oneLineConcept": "Subjective = what the client reports",
+    "explanation": "Subjective information is what the client reports or feels, such as pain on stairs.\n\n**Wrong choices**\n- Resting heart rate of 72 beats per minute: A heart rate reading is measured, so it is objective.\n- Height of 170 cm: Height is measured, so it is objective.\n- Body weight of 68 kg: Weight is measured, so it is objective.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-04",
+    "tags": [
+      "intake"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  }
+]
