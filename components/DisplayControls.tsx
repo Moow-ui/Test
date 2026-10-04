@@ -24,8 +24,9 @@ export function DisplayControls() {
 
   return (
     <div className="flex shrink-0 items-center gap-2 whitespace-nowrap">
-      <div role="group" aria-label={m.fontSize} className="flex items-center gap-1 text-[16px] font-bold text-ink">
-        <span className="mr-1 hidden sm:inline">{m.fontSize}</span>
+      <div role="group" aria-label={m.fontSize} className="flex items-center text-[16px] font-bold text-ink">
+        <span className="mr-2 hidden sm:inline">{m.fontSize}</span>
+        <span className="flex rounded-lg bg-surface-2">
         {FONT_SCALES.map((scale) => {
           const active = font === scale;
           const label = fmt(m.fontButton, { size: m.sizes[scale] });
@@ -38,13 +39,14 @@ export function DisplayControls() {
               aria-label={label}
               title={label}
               className={`flex h-11 w-11 items-center justify-center rounded-lg font-bold ${SAMPLE_SIZE[scale]} ${
-                active ? "bg-primary text-white" : "bg-surface-2 text-ink hover:bg-primary-soft"
+                active ? "bg-primary text-white" : "text-ink hover:bg-primary-soft"
               }`}
             >
               {m.sample}
             </button>
           );
         })}
+        </span>
       </div>
       <button
         type="button"

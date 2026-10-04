@@ -8,7 +8,7 @@ export function Header({ locale }: { locale: Locale }) {
   const m = getMessages(locale);
   return (
     <TopBar>
-      <Link href={localePath(locale)} className="text-[22px] font-bold tracking-tight text-accent">
+      <Link href={localePath(locale)} className="text-[18px] font-bold tracking-tight text-accent sm:text-[22px]">
         {brandName(locale)}
       </Link>
       <Link href={localePath(locale, "/notes")} className="hidden font-bold text-ink underline underline-offset-4 sm:inline">

@@ -20,6 +20,10 @@ export function Footer({ locale }: { locale: Locale }) {
           <Link href={localePath(locale, "/notes")} className="link">
             {m.nav.notes}
           </Link>
+          {/* 아주 좁은 휴대폰(360px)에서는 상단 막대에 로그인 자리가 없어 여기에도 둔다 */}
+          <Link href={localePath(locale, "/profile")} className="link">
+            {m.nav.profile}
+          </Link>
           <LocaleSwitch />
         </nav>
         <nav aria-label={m.nav.legalMenu} className="flex flex-wrap gap-x-4 gap-y-2">

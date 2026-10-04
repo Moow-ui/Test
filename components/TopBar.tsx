@@ -12,7 +12,7 @@ export function TopBar({ children, wide = false }: { children: ReactNode; wide?:
       <div
         className={`mx-auto flex h-16 w-full items-center justify-between gap-2 px-3 sm:px-4 ${wide ? "max-w-6xl" : "max-w-5xl"}`}
       >
-        <div className="flex min-w-0 items-center gap-4 whitespace-nowrap text-[16px]">{children}</div>
+        <div className="flex min-w-0 items-center gap-2 whitespace-nowrap text-[16px] sm:gap-4">{children}</div>
         <DisplayControls />
       </div>
     </header>
