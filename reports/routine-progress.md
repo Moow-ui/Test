@@ -12,6 +12,7 @@
 | 2 | 2026-10-03 (토) | KR korean-history-advanced · US dmv-permit-texas | 160/0 | 2 | 2 | 4 | 8% | 배포 확인 200. 1회차 두 자격증도 200 확인. Texas 는 DPS 가 문항 수·시간을 공개하지 않아 연습용 30문항·30분(합격 70%는 37 TAC §15.52 로 확인) |
 | 3 | 2026-10-04 (일) | KR korean-cuisine-craftsman · US dmv-permit-florida | 160/0 | 3 | 3 | 6 | 12% | 배포 확인 200. Florida 는 2026-02부터 영어로만 시행, flhsmv.gov·q-net 은 실행 환경에서 직접 열 수 없어 검색 결과·조문 사이트로 확인 |
 | 4 | 2026-10-05 (월) | KR excavator-operator · US dmv-permit-new-york | 174/1 | 4 | 4 | 8 | 16% | 기출 0 / AI 173 (굴착기 87·뉴욕 86). 기출 미수록 사유: 굴착기는 CBT 비공개·공단 저작권(이용 조건 불가)·q-net 접속 차단, 뉴욕은 문제은행 비공개·dmv.ny.gov 접속 차단. 굴착기 1문제(붐·암 각도 경험칙) review-queue 보관. 개념 정리 18단원 중 3단원 1차 FAIL → 수정·재검증 PASS. 배포 확인 200 (두 자격증 페이지·pool.json·개념 정리) |
+| 5 | 2026-10-06 (화) | KR licensed-real-estate-agent-1 · US cdl-general-knowledge | 172/1 | 5 | 5 | 10 | 20% | 기출 0 / AI 171 (공인중개사 90·CDL 81). 공인중개사는 큐넷이 시험문제지·최종정답을 **공공누리 제1유형**(상업적 이용·변경 가능)으로 공개해 2025년 제36회 1차 80문항을 옮겨 적고 79문항이 공단 정답과 일치했으나, 저장소 테스트(`tests/data.test.ts` 기출 없음)·data-rules 7장·루틴 지시(기출 원문 싣지 않음)와 충돌해 main 에는 싣지 않음 → `routine/wip-licensed-real-estate-agent-1-past` 브랜치에 보관(14번은 다시 풀기 불일치로 보관). CDL 기출 미수록 사유: 문제은행 비공개. CDL 1문제(타이다운 수: 매뉴얼 vs 49 CFR 393.110) review-queue 보관. 공인중개사 개념 정리 13단원 중 2단원 1차 FAIL → 수정·재검증 PASS. 배포 확인 200 (두 자격증 페이지·pool.json·개념 정리) |
 
 ## 상태
 
@@ -19,7 +20,7 @@
 - 재시도 대기: 없음
 - 건너뜀: 없음
 - 이어서 할 작업: 없음
-- 회장 확인 필요: 없음 (2회차부터 exampasso.com 접속 가능, 1회차 배포도 200 확인)
+- 회장 확인 필요: 공인중개사 기출 수록 여부. 큐넷 공개 기출은 공공누리 제1유형이라 이용 조건상 수록할 수 있지만, 저장소 정책(data-rules 7장 "기출 원문을 싣지 않는다", `tests/data.test.ts` 기출 없음 검사)이 막고 있음. 수록하기로 하면 정책·테스트를 바꾼 뒤 `routine/wip-licensed-real-estate-agent-1-past` 브랜치(2025년 1차 기출 79문항, 해설·검증 완료)를 반영하면 됨. 문제 배지는 pastInfo.round 최대 10 제한 때문에 '2025년 1회 기출'(실제 명칭 제36회)로 표시됨
 
 ## 주간 요약
 
