@@ -1,0 +1,310 @@
+[
+  {
+    "id": "forest-engineer-fire-weather-pesticide-0001",
+    "certId": "forest-engineer",
+    "subjectId": "forest-protection",
+    "chapterId": "fire-weather-pesticide",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "산불이 나려면 필요한 3요소는?",
+    "choices": [
+      "연료, 물, 열",
+      "바람, 산소, 물",
+      "연료, 산소, 열(점화원)",
+      "연료, 바람, 눈"
+    ],
+    "answer": 3,
+    "oneLineConcept": "연소 3요소: 연료·산소·열",
+    "explanation": "불이 나려면 탈 물질, 산소, 열이 모두 있어야 하고 하나만 없애도 불이 꺼집니다.\n\n**틀린 선지**\n- 연료, 물, 열: 물은 불을 끄는 요소입니다.\n- 바람, 산소, 물: 물은 불을 끄는 요소입니다.\n- 연료, 바람, 눈: 눈은 불을 끄는 요소입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-05",
+    "tags": [
+      "산불"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "forest-engineer-fire-weather-pesticide-0002",
+    "certId": "forest-engineer",
+    "subjectId": "forest-protection",
+    "chapterId": "fire-weather-pesticide",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "낙엽, 마른 풀 등 땅 위의 물질이 타는 가장 흔한 산불 종류는?",
+    "choices": [
+      "수관화",
+      "지표화",
+      "수간화",
+      "지중화"
+    ],
+    "answer": 2,
+    "oneLineConcept": "지표화가 가장 흔한 산불",
+    "explanation": "지표화는 땅 위의 낙엽이나 풀이 타는 산불입니다.\n\n**틀린 선지**\n- 수관화: 나무 윗부분이 타는 산불입니다.\n- 수간화: 나무 줄기가 타는 산불입니다.\n- 지중화: 땅속 부식질이 타는 산불입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-05",
+    "tags": [
+      "산불"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "forest-engineer-fire-weather-pesticide-0003",
+    "certId": "forest-engineer",
+    "subjectId": "forest-protection",
+    "chapterId": "fire-weather-pesticide",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "응애 방제에 쓰는 농약의 종류는?",
+    "choices": [
+      "살균제",
+      "제초제",
+      "살선충제",
+      "살비제"
+    ],
+    "answer": 4,
+    "oneLineConcept": "살비제는 응애 방제용",
+    "explanation": "응애를 죽이는 약제를 살비제라고 합니다.\n\n**틀린 선지**\n- 살균제: 곰팡이를 방제합니다.\n- 제초제: 잡초를 방제합니다.\n- 살선충제: 선충을 방제합니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-05",
+    "tags": [
+      "농약"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "forest-engineer-fire-weather-pesticide-0004",
+    "certId": "forest-engineer",
+    "subjectId": "forest-protection",
+    "chapterId": "fire-weather-pesticide",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "1,000배로 희석해 살포액 20L를 만들려면 농약 원액은 몇 mL 필요합니까?",
+    "choices": [
+      "2mL",
+      "20mL",
+      "200mL",
+      "2,000mL"
+    ],
+    "answer": 2,
+    "oneLineConcept": "원액량 = 살포액 ÷ 희석배수",
+    "explanation": "1. 20L = 20,000mL\n2. 20,000 ÷ 1,000 = 20mL\n\n**틀린 선지**\n- 2mL: 10배 적게 계산한 값입니다.\n- 200mL: 10배 많이 계산한 값입니다.\n- 2,000mL: 100배 많이 계산한 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-05",
+    "tags": [
+      "농약",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "forest-engineer-fire-weather-pesticide-0005",
+    "certId": "forest-engineer",
+    "subjectId": "forest-protection",
+    "chapterId": "fire-weather-pesticide",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "50% 원액으로 0.05% 용액 1,000L를 만들려면 원액은 몇 L 필요합니까?",
+    "choices": [
+      "1L",
+      "0.1L",
+      "10L",
+      "25L"
+    ],
+    "answer": 1,
+    "oneLineConcept": "원액량 = 만들 양 × 목표 농도 ÷ 원액 농도",
+    "explanation": "1. 원액량 = 1,000 × 0.05 ÷ 50\n2. = 1L\n\n**틀린 선지**\n- 0.1L: 10배 적은 값입니다.\n- 10L: 10배 많은 값입니다.\n- 25L: 계산을 잘못한 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-05",
+    "tags": [
+      "농약",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "forest-engineer-fire-weather-pesticide-0006",
+    "certId": "forest-engineer",
+    "subjectId": "forest-protection",
+    "chapterId": "fire-weather-pesticide",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "산불은 지형상 어느 방향으로 가장 빨리 번집니까?",
+    "choices": [
+      "경사 아래쪽(내리막)",
+      "바람이 불어오는 쪽",
+      "모든 방향으로 같은 속도",
+      "경사 위쪽(오르막)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "산불은 오르막으로 빠르게 번진다",
+    "explanation": "불꽃과 열이 위로 올라가므로 오르막으로 더 빨리 번집니다.\n\n**틀린 선지**\n- 경사 아래쪽(내리막): 느리게 번집니다.\n- 바람이 불어오는 쪽: 바람 방향으로 번집니다.\n- 모든 방향으로 같은 속도: 방향에 따라 속도가 다릅니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-05",
+    "tags": [
+      "산불"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "forest-engineer-fire-weather-pesticide-0007",
+    "certId": "forest-engineer",
+    "subjectId": "forest-protection",
+    "chapterId": "fire-weather-pesticide",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "겨울철 밤낮의 심한 온도차 때문에 나무 줄기가 갈라지는 피해는?",
+    "choices": [
+      "만상",
+      "설해",
+      "상렬",
+      "풍해"
+    ],
+    "answer": 3,
+    "oneLineConcept": "상렬은 줄기 갈라짐",
+    "explanation": "겨울철 낮에 데워진 껍질이 밤에 급히 식으면 줄기가 터집니다.\n\n**틀린 선지**\n- 만상: 늦서리 피해입니다.\n- 설해: 눈으로 인한 피해입니다.\n- 풍해: 바람으로 인한 피해입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-05",
+    "tags": [
+      "기상피해"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "forest-engineer-fire-weather-pesticide-0008",
+    "certId": "forest-engineer",
+    "subjectId": "forest-protection",
+    "chapterId": "fire-weather-pesticide",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "농약 사용에 관한 설명 중 옳지 않은 것은?",
+    "choices": [
+      "살포 때는 마스크·보호안경·장갑을 착용한다",
+      "약을 뿌릴 때는 바람을 안고 뿌려야 멀리 날아간다",
+      "쓰고 남은 농약은 안전하게 보관·처리한다",
+      "같은 약제를 연속 사용하면 저항성이 생길 수 있어 번갈아 사용한다"
+    ],
+    "answer": 2,
+    "oneLineConcept": "살포는 바람을 등지고",
+    "explanation": "바람을 안고 뿌리면 약이 자기 몸에 묻어 중독될 수 있습니다.\n\n**틀린 선지**\n- 살포 때는 마스크·보호안경·장갑을 착용한다: 맞는 설명입니다.\n- 쓰고 남은 농약은 안전하게 보관·처리한다: 맞는 설명입니다.\n- 같은 약제를 연속 사용하면 저항성이 생길 수 있어 번갈아 사용한다: 맞는 설명입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-05",
+    "tags": [
+      "농약",
+      "안전"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "forest-engineer-fire-weather-pesticide-0009",
+    "certId": "forest-engineer",
+    "subjectId": "forest-protection",
+    "chapterId": "fire-weather-pesticide",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "농약의 급성독성을 나타내는 LD50 값에 대한 설명으로 옳은 것은?",
+    "choices": [
+      "값이 작을수록 독성이 강하다",
+      "값이 클수록 독성이 강하다",
+      "값은 독성과 관계없다",
+      "0이면 안전하다"
+    ],
+    "answer": 1,
+    "oneLineConcept": "LD50이 작을수록 독성이 강하다",
+    "explanation": "LD50은 시험 동물의 절반이 죽는 양이므로 적은 양으로 죽일수록 독성이 강합니다.\n\n**틀린 선지**\n- 값이 클수록 독성이 강하다: 반대로 값이 클수록 독성이 약합니다.\n- 값은 독성과 관계없다: 독성의 크기를 나타내는 값입니다.\n- 0이면 안전하다: 0에 가까울수록 매우 위험합니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-05",
+    "tags": [
+      "농약"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+]

@@ -1,0 +1,324 @@
+[
+  {
+    "id": "forest-engineer-mgmt-valuation-0001",
+    "certId": "forest-engineer",
+    "subjectId": "forest-management",
+    "chapterId": "mgmt-valuation",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "원금 100만원을 연 5% 복리로 2년간 맡기면 2년 뒤 금액은?",
+    "choices": [
+      "1,100,000원",
+      "1,050,000원",
+      "1,102,500원",
+      "1,200,000원"
+    ],
+    "answer": 3,
+    "oneLineConcept": "복리 후가 = 원금 × (1 + 이율)^기간",
+    "explanation": "복리는 이자에도 이자가 붙습니다.\n\n1. 1년 뒤 = 1,000,000 × 1.05 = 1,050,000\n2. 2년 뒤 = 1,050,000 × 1.05 = 1,102,500\n\n**틀린 선지**\n- 1,100,000원: 이자에 이자가 붙지 않는 단리 계산입니다.\n- 1,050,000원: 1년 뒤 금액입니다.\n- 1,200,000원: 이율을 잘못 적용한 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-05",
+    "tags": [
+      "경영계산",
+      "복리"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "forest-engineer-mgmt-valuation-0002",
+    "certId": "forest-engineer",
+    "subjectId": "forest-management",
+    "chapterId": "mgmt-valuation",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "임업 투자 평가에서 편익비용비(B/C)가 어떤 값일 때 경제성이 있다고 봅니까?",
+    "choices": [
+      "0보다 작을 때",
+      "1보다 클 때",
+      "1보다 작을 때",
+      "10 이상일 때만"
+    ],
+    "answer": 2,
+    "oneLineConcept": "B/C > 1 이면 경제성 있음",
+    "explanation": "편익(이익)을 비용으로 나눈 값이 1보다 크면 들인 돈보다 얻는 이익이 크다는 뜻입니다.\n\n**틀린 선지**\n- 0보다 작을 때: B/C는 음수가 되지 않습니다.\n- 1보다 작을 때: 1보다 작으면 이익이 비용보다 적습니다.\n- 10 이상일 때만: 10 이상이어야 한다는 기준은 없습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-05",
+    "tags": [
+      "경영계산",
+      "투자평가"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "forest-engineer-mgmt-valuation-0003",
+    "certId": "forest-engineer",
+    "subjectId": "forest-management",
+    "chapterId": "mgmt-valuation",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "미래의 금액을 복리로 현재가치로 바꿀 때 쓰는 계산은?",
+    "choices": [
+      "미래금액 ÷ (1 + 이율)^기간",
+      "미래금액 × (1 + 이율)^기간",
+      "미래금액 × 이율 × 기간",
+      "미래금액 − 이율"
+    ],
+    "answer": 1,
+    "oneLineConcept": "현재가 = 후가 ÷ (1 + 이율)^기간",
+    "explanation": "현재가는 앞으로 받을 돈이 지금 얼마의 가치인지 구하는 것으로, 후가를 구하는 식의 반대로 나눕니다.\n\n**틀린 선지**\n- 미래금액 × (1 + 이율)^기간: 후가(미래가치)를 구하는 식입니다.\n- 미래금액 × 이율 × 기간: 단리 이자를 구하는 식입니다.\n- 미래금액 − 이율: 의미 없는 계산입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-05",
+    "tags": [
+      "경영계산",
+      "현재가"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "forest-engineer-mgmt-valuation-0004",
+    "certId": "forest-engineer",
+    "subjectId": "forest-management",
+    "chapterId": "mgmt-valuation",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "매년 말 100만원씩 영구히 들어오는 수입의 현재가는? (이율 5%)",
+    "choices": [
+      "2,000만원",
+      "500만원",
+      "105만원",
+      "100만원"
+    ],
+    "answer": 1,
+    "oneLineConcept": "영구정기수입 현재가 = 연 수입 ÷ 이율",
+    "explanation": "끝없이 이어지는 정기 수입의 현재가는 연 수입을 이율로 나눕니다.\n\n1. 현재가 = 1,000,000 ÷ 0.05\n2. = 20,000,000원\n\n**틀린 선지**\n- 500만원: 이율을 곱한 값입니다.\n- 105만원: 1년치 수입에 이자를 더한 값입니다.\n- 100만원: 1년치 수입 금액입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-05",
+    "tags": [
+      "경영계산",
+      "영구수입"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "forest-engineer-mgmt-valuation-0005",
+    "certId": "forest-engineer",
+    "subjectId": "forest-management",
+    "chapterId": "mgmt-valuation",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "2년 뒤에 받을 1,210,000원의 현재가는? (이율 10%, 복리)",
+    "choices": [
+      "1,089,000원",
+      "1,000,000원",
+      "1,100,000원",
+      "1,210,000원"
+    ],
+    "answer": 2,
+    "oneLineConcept": "현재가 = 후가 ÷ (1+이율)^n",
+    "explanation": "1. (1.1)² = 1.21\n2. 1,210,000 ÷ 1.21 = 1,000,000원\n3. 검산: 1,000,000 × 1.21 = 1,210,000\n\n**틀린 선지**\n- 1,089,000원: 계산 과정이 맞지 않는 값입니다. 1.21로 나누어야 합니다.\n- 1,100,000원: 1년 치만 나눈 값입니다.\n- 1,210,000원: 현재가로 바꾸지 않은 미래 금액 그대로입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-05",
+    "tags": [
+      "경영계산",
+      "현재가"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "forest-engineer-mgmt-valuation-0006",
+    "certId": "forest-engineer",
+    "subjectId": "forest-management",
+    "chapterId": "mgmt-valuation",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "취득가 500만원, 잔존가 50만원, 내용연수 9년인 임업 기계의 직선법 연간 감가상각비는?",
+    "choices": [
+      "55.6만원",
+      "45만원",
+      "500만원",
+      "50만원"
+    ],
+    "answer": 4,
+    "oneLineConcept": "직선법 감가상각비 = (취득가 − 잔존가) ÷ 내용연수",
+    "explanation": "1. (5,000,000 − 500,000) = 4,500,000\n2. 4,500,000 ÷ 9 = 500,000원/년\n\n**틀린 선지**\n- 55.6만원: 잔존가를 빼지 않고 취득가만 9로 나눈 값입니다.\n- 45만원: 내용연수를 10년으로 잘못 계산한 값입니다.\n- 500만원: 취득가 그대로입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-05",
+    "tags": [
+      "경영계산",
+      "감가상각"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "forest-engineer-mgmt-valuation-0007",
+    "certId": "forest-engineer",
+    "subjectId": "forest-management",
+    "chapterId": "mgmt-valuation",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "원목 시장가격에서 벌채·운반 비용과 적정 이윤을 빼서 서 있는 나무의 가격을 구하는 평가법은?",
+    "choices": [
+      "원가법",
+      "기망가법",
+      "시장가역산법",
+      "비용가법"
+    ],
+    "answer": 3,
+    "oneLineConcept": "시장가역산법은 원목 시세에서 비용을 거꾸로 빼서 계산",
+    "explanation": "이미 자란 나무를 평가할 때, 팔 수 있는 원목 값에서 베어 내고 옮기는 데 드는 비용과 이윤을 빼면 서 있는 나무의 값을 알 수 있습니다.\n\n**틀린 선지**\n- 원가법: 들인 조림비와 이자를 합해 구하는 방법입니다.\n- 기망가법: 앞으로 얻을 수익을 현재가로 바꾸는 방법입니다.\n- 비용가법: 비용을 기준으로 가격을 매기는 방법으로 원목 시세를 쓰지 않습니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-05",
+    "tags": [
+      "임목평가"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "forest-engineer-mgmt-valuation-0008",
+    "certId": "forest-engineer",
+    "subjectId": "forest-management",
+    "chapterId": "mgmt-valuation",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "임지기망가에 대한 설명으로 옳은 것은?",
+    "choices": [
+      "서 있는 나무를 지금 팔았을 때 받는 값이다",
+      "조림에 들인 비용의 후가 합계이다",
+      "현재 임지에서 같은 임업을 영구히 계속할 때 얻을 순수익의 현재가 합계이다",
+      "5년 안에 얻을 단기 수익이다"
+    ],
+    "answer": 3,
+    "oneLineConcept": "임지기망가 = 영속 경영 시 순수익의 현재가",
+    "explanation": "임지기망가는 그 땅에서 벌채와 조림을 되풀이하며 영구히 임업을 할 때 얻는 순수익을 현재 가치로 모은 값으로 임지의 가치를 평가합니다.\n\n**틀린 선지**\n- 서 있는 나무를 지금 팔았을 때 받는 값이다: 임목의 시장가격이며 임지기망가와 다릅니다.\n- 조림에 들인 비용의 후가 합계이다: 원가법에서 쓰는 개념입니다.\n- 5년 안에 얻을 단기 수익이다: 기망가는 영구 수익을 전제로 합니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-05",
+    "tags": [
+      "임지평가"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "forest-engineer-mgmt-valuation-0009",
+    "certId": "forest-engineer",
+    "subjectId": "forest-management",
+    "chapterId": "mgmt-valuation",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "조림비 400만원을 연 5% 복리로 3년간 계산한 후가는?",
+    "choices": [
+      "4,600,000원",
+      "4,630,500원",
+      "4,200,000원",
+      "4,620,000원"
+    ],
+    "answer": 2,
+    "oneLineConcept": "후가 = 원금 × (1+이율)^3",
+    "explanation": "1. 1.05³ = 1.05 × 1.05 × 1.05 = 1.157625\n2. 4,000,000 × 1.157625 = 4,630,500원\n\n**틀린 선지**\n- 4,600,000원: 단리(4,000,000 × 1.15)로 계산한 값입니다.\n- 4,200,000원: 1년 치 이자(20만원)만 더한 값입니다.\n- 4,620,000원: 계산 중간에 값을 잘못 반올림해 틀린 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-05",
+    "tags": [
+      "경영계산",
+      "복리"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+]
