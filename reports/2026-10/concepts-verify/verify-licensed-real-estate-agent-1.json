@@ -1,0 +1,148 @@
+{
+  "cert": "licensed-real-estate-agent-1",
+  "checkedAt": "2026-10-06",
+  "by": "separate verifier AI",
+  "chapters": {
+    "intro-characteristics": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "공동주택 구분(아파트 5개 층 이상 / 연립 1개 동 바닥면적 합계 660㎡ 초과·4개 층 이하 / 다세대 660㎡ 이하·4개 층 이하) matches 건축법 시행령 별표 1 제2호 (law.go.kr 별표1 개정 2025.1.21. file, search snippet). Source present.",
+        "단독주택(단독·다중·다가구·공관), 공동주택(아파트·연립·다세대·기숙사) match 별표 1 제1호·제2호.",
+        "후보지(택지·농지·임지지역 상호 간 전환) / 이행지(같은 지역 안 세부지역 이행), 필지(법적)·획지(경제적), 자연적 특성 5가지와 그 결과, 복합개념(법률·경제·물리) are standard textbook content; no numbers."
+      ]
+    },
+    "economics": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "수요량의 변화/수요의 변화, 탄력성 정의, 탄력성과 임대수입, 거미집 수렴 조건(수요 탄력성 > 공급 탄력성 = 수요곡선 기울기 절댓값 < 공급) are correct.",
+        "'일반 경기에 비해 뒤따라가거나 함께 움직이며' is a simplification: textbooks say 부동산경기는 일반경기보다 후순환(주거용은 역순환 경향, 상업·공업용은 일치 경향). Not wrong, but 주거용 역순환 is omitted. 변동 폭이 크고 주기가 길다, 상향시장 사례가격=하한·하향시장=상한, 안정시장 설명: correct."
+      ]
+    },
+    "market-location": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "효율적 시장 3구분, 리카도 차액지대(한계지 지대 0)·마르크스 절대지대, 튀넨 위치지대, 알론소 입찰지대, 버제스·호이트·해리스와 울만, 레일리(인구 비례·거리 제곱 반비례), 허프(크기·거리·공간마찰계수), 베버(최소비용)·뢰쉬(최대수요): all correct.",
+        "Wording to tidy (not a factual error): summary sentence '크리스탈러는 중심지가 유지되려면 최소요구치가 재화의 도달범위 안에 있어야 한다고 설명했습니다' mixes terms; 최소요구치 is a demand quantity, the distance compared with 도달범위 is 최소요구범위 (the concept card says this correctly)."
+      ]
+    },
+    "policy": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "시장실패 원인, 외부효과(정 → 과소생산, 부 → 과다생산), 임대료 상한 효과, 조세 귀착(비탄력적인 쪽이 더 부담) are correct.",
+        "취득세·재산세 = 지방세(지방세기본법 제8조 세목), 종합부동산세·양도소득세(소득세) = 국세(국세기본법 제2조): correct; source present.",
+        "No compare table in this chapter (not an error)."
+      ]
+    },
+    "investment": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "영업수지 흐름(가능총소득 − 공실·대손 + 기타소득 = 유효총소득 → − 영업경비 = 순영업소득 → − 부채서비스액 = 세전현금흐름 → − 영업소득세 = 세후현금흐름), NPV ≥ 0 / IRR ≥ 요구수익률 / PI ≥ 1, 저당상수 = 연금현가계수의 역수, 감채기금계수 = 연금내가계수의 역수, 부채감당률 = NOI ÷ 부채서비스액, 체계적·비체계적 위험: all correct.",
+        "'요구수익률 = 무위험률 + 위험할증률' is the standard exam formula (some texts add 예상 인플레이션); acceptable."
+      ]
+    },
+    "finance": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "상환방식 초기 부담(원금균등 > 원리금균등 > 체증식)·총이자(원금균등 최소), LTV/DTI(주담대 원리금 + 기타대출 이자)/DSR(모든 대출 원리금), MPTS·MBB·MPTB·CMO 위험 귀속, 프로젝트 금융(비소구·제한소구, 에스크로): correct.",
+        "리츠 3종(자기관리·위탁관리·기업구조조정) match 부동산투자회사법 제2조 제1호; 위탁관리·CR 리츠 = 명목회사 correct. Source present.",
+        "No statutory LTV/DTI/DSR ratios are quoted (good: those limits change often)."
+      ]
+    },
+    "development-management": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "BTO·BTL·BOT·BOO 소유권 이전 시점·투자비 회수, 자기·위탁·혼합관리 장단점, STP·4P(시장점유)·AIDA(고객점유)·관계 마케팅: correct.",
+        "개발 과정 '구상 → 타당성 분석 → 부지 확보 → 금융 → 건설 → 마케팅' is a simplified form of 워포드 7단계(구상, 예비적 타당성분석, 부지모색·확보, 타당성분석, 금융, 건설, 마케팅); acceptable as a summary."
+      ]
+    },
+    "appraisal": {
+      "verdict": "FAIL",
+      "problems": [
+        "Concept '가격공시의 주체' definition: \"표준지공시지가·표준주택가격·공동주택가격은 국토교통부장관이 조사·평가하여 공시합니다.\" — Wrong for 표준주택가격·공동주택가격. Under 부동산 가격공시에 관한 법률, only 표준지공시지가 is '조사·평가' (감정평가법인등에 의뢰, 제3조). 표준주택가격(제16조) and 공동주택가격(제18조) are '조사·산정' by 국토교통부장관, who must commission 한국부동산원 (제16조 제4항, 제18조 제6항). This 조사·평가 vs 조사·산정 distinction is a frequent exam trap. Correct: '표준지공시지가는 국토교통부장관이 조사·평가하여 공시하고, 표준주택가격과 공동주택가격은 국토교통부장관이 조사·산정하여 공시합니다(조사·산정은 한국부동산원에 의뢰).'"
+      ],
+      "notes": [
+        "Summary sentence '표준지공시지가와 표준주택가격, 공동주택가격은 국토교통부장관이 공시하고, 개별공시지가와 개별주택가격은 시장·군수·구청장이 공시합니다' is correct as written (it does not say 조사·평가).",
+        "시장가치 정의 matches 감정평가에 관한 규칙 제2조 제1호; 시장가치 외 기준 예외 3가지(법령, 의뢰인 요청, 목적·특성상 사회통념상 필요) match 제5조 제2항. Source present.",
+        "감정평가 3방식, 원가법→적산가액, 거래사례비교법→비준가액(사정보정·시점수정·가치형성요인 비교), 수익환원법→수익가액, 토지 = 공시지가기준법 원칙(제14조), 건물 = 원가법 원칙(제15조): correct.",
+        "Cards citing only '감정평가에 관한 규칙' without article: acceptable; consider 제2조(정의)·제14조·제15조 for precision."
+      ],
+      "recheck": {
+        "checkedAt": "2026-10-06",
+        "verdict": "PASS",
+        "problems": [],
+        "notes": [
+          "First-round problem fixed: card '가격공시의 주체' now says 표준지공시지가 = 국토교통부장관이 감정평가법인등에 의뢰해 조사·평가(법 제3조), 표준주택가격·공동주택가격 = 국토교통부장관이 한국부동산원에 의뢰해 조사·산정(제16조 제4항·제18조 제6항), 개별공시지가·개별주택가격 = 시장·군수·구청장 결정·공시(제10조·제17조). Confirmed via molit.go.kr Q&A, reb.or.kr 표준주택가격 조사·산정 page, search snippets of the statute.",
+          "Summary sentence on 공시 주체 (장관 vs 시장·군수·구청장) is correct; it does not mention 조사·평가/산정, so no conflict with the card.",
+          "감정평가에 관한 규칙 제2조 definitions (시장가치, 거래사례비교법 사정보정·시점수정·가치형성요인 비교, 수익환원법 순수익·미래 현금흐름 환원·할인), 제5조 제2항 예외 3가지, 제14조 토지 = 공시지가기준법, 제15조 건물 = 원가법: re-verified against statute text in search results.",
+          "원가법 = 재조달원가 − 감가수정, 적산·비준·수익가액 짝, 직접환원법 = 순영업소득 ÷ 환원율(환원율 상승 → 가액 하락), compare table 3방식(비용성·시장성·수익성): correct.",
+          "Minor wording (not an error): 거래사례비교법 card says '지역요인·개별요인 비교'; the rule says '가치형성요인 비교' (일반·지역·개별요인). Acceptable."
+        ]
+      }
+    },
+    "juristic-acts": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "민법 제107조(비진의표시), 제108조(통정허위표시, 제3자 선의면 족하고 무과실 불요 — 판례), 제109조(착오, 중대과실 시 취소 불가; 상대방이 착오를 알고 이용한 경우 취소 가능 — 대판 2013다49794), 제110조(사기·강박, 선의 제3자 대항 불가), 제146조(추인할 수 있는 날부터 3년·법률행위를 한 날부터 10년, 제척기간), 제130조~제134조(무권대리, 최고권은 악의 상대방도, 철회권은 선의만), 제125·126·129조(표현대리 3유형), 제147조(정지·해제조건, 특약 시 소급), 제153조(기한의 이익 채무자 추정): all article numbers and contents verified correct. Sources present on all cards."
+      ]
+    },
+    "property-ownership": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "민법 제185조(물권법정주의), 제186조, 제187조(상속·공용징수·판결·경매 등 등기 불요, 처분 시 등기 필요), 제197조(점유 추정), 제245조 제1항(20년, 등기로 취득)·제2항(등기 10년, 선의·무과실), 제263조~제265조(지분 처분 자유, 처분·변경 전원 동의, 관리 지분 과반수, 보존 각자): verified.",
+        "'판결' in 제187조 means 형성판결 only (이행판결은 등기해야 함); the summary lists 판결 without this qualifier — simplification, not an error, but worth adding.",
+        "Card '물권적 청구권' has no source; it states no article number so not required (제213조·제214조 could be added)."
+      ]
+    },
+    "limited-real-rights": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "민법 제280조(견고한 건물·수목 30년, 그 밖의 건물 15년, 공작물 5년; 최장 제한 없음은 판례), 제283조(지상권 갱신청구·매수청구), 제292조(지역권 부종성), 제294조(계속·표현 지역권만 시효취득), 제312조(전세권 최장 10년, 건물 최단 1년, 만료 6월~1월 전 통지 없으면 법정갱신, 존속기간 약정 없는 것으로 봄), 제320조·제328조(유치권, 점유 상실 시 소멸), 제366조(법정지상권, 지료는 당사자 청구로 법원이 정함), 제357조(근저당, 이자는 최고액에 산입): verified. Sources present."
+      ]
+    },
+    "contracts": {
+      "verdict": "FAIL",
+      "problems": [
+        "Summary: \"매매에서 계약금만 주고받은 상태라면, 상대방이 이행에 착수하기 전까지 계약금을 준 사람은 이를 포기하고, 받은 사람은 그 두 배를 돌려주고 계약을 해제할 수 있습니다.\" — Wrong limit. 민법 제565조 says '당사자의 일방이 이행에 착수할 때까지', and the 대법원(99다62074 등) holds '당사자의 일방은 매매 쌍방 중 어느 일방을 지칭하는 것이고, 상대방이라 국한하여 해석할 것이 아니므로' — e.g., a 매수인 who has already paid 중도금 cannot rescind by forfeiting the deposit even if the 매도인 has done nothing. Correct: '당사자 한쪽(자기 자신 포함)이 이행에 착수하기 전까지'.",
+        "Points: \"계약금 해제는 상대방이 이행에 착수하기 전까지만 가능하다는 점을 묻습니다.\" — Same error; this is exactly the trap the exam uses. Correct: '계약금 해제는 당사자 어느 한쪽이라도 이행에 착수하기 전까지만 가능하다는 점을 묻습니다.'"
+      ],
+      "notes": [
+        "The concept card '계약금에 의한 해제' itself correctly says '당사자 한쪽이 이행에 착수하기 전까지', so the chapter contradicts itself.",
+        "민법 제536조(동시이행), 제537조·제538조(채무자위험부담, 채권자 귀책·수령지체), 제544조·제548조(원상회복, 받은 날부터 이자)·제551조, 제590조·제591조(환매: 부동산 5년·동산 3년, 연장 불가, 미정 시 그 기간), 제626조(필요비 즉시·유익비 종료 시, 임대인 선택), 제629조·제632조(무단 양도·전대 해지, 건물 소부분 예외): verified. 비용상환청구권 포기 특약 유효(제652조 강행규정 목록에 제626조 없음, 판례) correct."
+      ],
+      "recheck": {
+        "checkedAt": "2026-10-06",
+        "verdict": "PASS",
+        "problems": [],
+        "notes": [
+          "First-round problems fixed: summary now reads '당사자 한쪽(자기 자신 포함)이 이행에 착수하기 전까지' and the point reads '당사자 어느 한쪽이라도 이행에 착수하기 전까지만 가능 (자기가 중도금을 냈어도 해제할 수 없음)', matching 민법 제565조 '당사자의 일방이 이행에 착수할 때까지' and 대법원 판례 (일방 = 쌍방 중 어느 일방). Card '계약금에 의한 해제' consistent; 제565조 제2항(제551조 배제 → 손해배상 없음) correct.",
+          "Re-verified: 제536조 동시이행(등기의무·잔금 지급; 동시이행 관계 중 이행지체 책임 없음 — 판례), 제537조 채무자위험부담·제538조 제1항(채권자 귀책 / 수령지체 중 쌍방 무책 불능 → 대가 청구 가능), 이미 받은 대금 부당이득 반환(판례), 제544조 최고 후 해제·제548조(원상회복, 제3자 권리 불가침, 금전은 받은 날부터 이자)·제551조(손해배상 병행).",
+          "제590조(매매계약과 동시에 보류, 영수한 대금 및 매수인이 부담한 매매비용 반환)·제591조(부동산 5년·동산 3년, 초과 시 단축, 연장 불가, 미정 시 그 기간): verified.",
+          "제626조(필요비 즉시, 유익비 종료 시 가액 증가 현존 시 임대인 선택으로 지출액 또는 증가액; 포기 특약 유효 — 제652조 강행규정에 미포함), 제629조(무단 양도·전대 금지, 위반 시 해지)·제632조(건물 소부분 예외): verified.",
+          "Minor simplification (not an error): summary '한쪽이 자기 의무를 이행하지 않으면 상대방도 이행을 거절할 수 있는데' — precisely, 상대방이 이행을 제공할 때까지 거절; the concept card states it precisely.",
+          "No compare table in this chapter (not an error)."
+        ]
+      }
+    },
+    "special-acts": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "주택임대차보호법 제3조(인도+주민등록 다음 날 0시 대항력 — 판례), 제3조의2(확정일자 우선변제, 확정일자가 먼저면 대항력 발생 시점), 제4조(최단 2년, 임차인만 2년 미만 유효 주장), 제6조의3(만료 6개월 전부터 2개월 전까지, 1회, 2년): verified (casenote/easylaw snippets). Note 6~2개월 applies to 계약 since 2020.12.10; older contracts used 1개월 — not mentioned, acceptable.",
+        "상가건물 임대차보호법 제3조(사업자등록 신청 다음 날), 제9조(최단 1년), 제10조(6개월~1개월 전, 전체 10년), 제10조의4(만료 6개월 전부터 종료 시까지 권리금 회수 방해 금지, 손해배상): verified. '전체 10년 지나도 권리금 보호' matches 대판 2017다225312.",
+        "가등기담보 등에 관한 법률 제3조(청산금 평가액 통지, 도달일부터 2개월 청산기간)·제4조(청산금 지급 전 소유권 취득 불가, 불리한 약정 무효): verified.",
+        "부동산실명법 제4조(약정 무효, 물권변동 원칙 무효, 수탁자가 당사자이고 상대방 선의면 유효, 제3자 대항 불가)·제8조(종중·배우자·종교단체, 조세포탈·강제집행면탈·법령상 제한 회피 목적이 없을 때): verified. Source org '(법무부)': 소관부처 is listed as 법무부 (with 기획재정부 for 과징금 parts) — acceptable.",
+        "집합건물법 대지사용권 분리처분 금지(제20조) point is correct; no source needed since it is in points only."
+      ]
+    }
+  }
+}
