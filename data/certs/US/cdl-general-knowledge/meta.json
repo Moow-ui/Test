@@ -1,13 +1,16 @@
 {
   "id": "cdl-general-knowledge",
   "country": "US",
-  "name": "CDL General Knowledge",
+  "name": "CDL General Knowledge Test",
   "officialName": "Commercial Driver's License (CDL) General Knowledge Test",
   "spacedName": "CDL General Knowledge",
   "shortNames": [
     "CDL",
     "CDL permit test",
-    "CLP"
+    "CLP",
+    "CDL general knowledge",
+    "CDL written test",
+    "commercial learner's permit test"
   ],
   "relatedCertIds": [
     "cdl-air-brakes"
@@ -15,8 +18,92 @@
   "field": "Driving",
   "certType": "state-license",
   "issuer": {
-    "name": "State driver licensing agencies (DMV)",
-    "url": "https://www.fmcsa.dot.gov/registration/commercial-drivers-license"
+    "name": "State driver licensing agencies (DMV)"
   },
-  "order": 340
+  "trademarkNotice": "This practice resource is independent and is not affiliated with, endorsed by, or sponsored by any state Department of Motor Vehicles or driver licensing agency, the Federal Motor Carrier Safety Administration (FMCSA), or the American Association of Motor Vehicle Administrators (AAMVA). Agency names are used only to identify the test this material helps you prepare for.",
+  "order": 6,
+  "updatedAt": "2026-10-06",
+  "examInfo": {
+    "totalQuestions": 50,
+    "timeLimitMinutes": 60,
+    "format": "Multiple choice questions on the safe driving and cargo safety sections of your state's CDL manual (Sections 2 and 3 in the common manual layout). Every CDL applicant takes this test. Federal rules require at least 30 questions, and many states, such as Washington and Connecticut, use 50. Some state manuals, such as New York's, say each question has three answer choices. States do not all publish a time limit, so this practice mock uses 60 minutes, 50 questions, and 3 answer choices per question.",
+    "choiceCount": 3,
+    "passCriteria": {
+      "averageScore": 80,
+      "subjectMinScore": null,
+      "description": "Federal rules require at least 80% correct on every CDL knowledge test. On a 50-question test, that means at least 40 correct answers, so you can miss no more than 10.",
+      "shortLabel": "80% (40 of 50)"
+    }
+  },
+  "content": {
+    "eligibility": "You need a valid regular driver license from your state before you can take the CDL General Knowledge test. You also need to meet the age rules (federal rules require age 21 to drive a commercial vehicle across state lines, and your state sets the age for driving only within the state), pass a vision test, and give a medical examiner's certificate. After you pass the knowledge test, you get a commercial learner's permit (CLP). Check your state's driver licensing agency for the exact documents and fees.",
+    "intro": "The CDL General Knowledge test is the first written test every commercial driver applicant takes, whether you want a Class A, B, or C license. It covers the safe driving and cargo safety sections of your state's CDL manual: vehicle inspection, vehicle control, seeing and communicating, speed and space, hazards, night and winter driving, railroad crossings, mountain grades, emergencies, cargo securement, and the hazardous materials basics every driver must know. Federal rules set the passing score at 80%. Passing this test, along with any endorsement tests you need, gets you your commercial learner's permit.",
+    "trendSummary": "Questions mix safe driving habits with rules that have exact numbers. Following distance (one second for every 10 feet of vehicle length, plus one second over 40 mph), warning triangle placement, tire tread depth, cargo checks in the first 50 miles, tiedown counts, the 0.04% alcohol limit for commercial drivers, and the downgrade braking method come up often. Air brakes, combination vehicles, and passenger rules are in separate tests. The chapters on this site follow the manual but are study groupings, not official test sections.",
+    "studyTip": "Start with Vehicle Inspection and Speed and Space Management, because they carry the most weight on this site and many other topics build on them. Keep one list of every number in the manual (feet, seconds, miles, and percent) and review it daily. Then work through emergencies, railroad crossings, and mountain driving, which are the topics where a wrong habit is most dangerous. Before test day, take a full 50-question Mock Exam and aim for 45 or more.",
+    "faqs": [
+      {
+        "question": "What score do I need to pass the CDL General Knowledge test?",
+        "answer": "Federal rules require at least 80% correct on every CDL knowledge test. On a 50-question test that means at least 40 correct answers. Some states may use a different number of questions, but the 80% rule is the same everywhere."
+      },
+      {
+        "question": "Which part of the CDL manual should I study?",
+        "answer": "Study the section on driving safely and the section on transporting cargo safely. In the common CDL manual layout, these are Sections 2 and 3. Your state may also tell you to read the introduction and the vehicle inspection sections. Check your own state's manual for the exact list."
+      },
+      {
+        "question": "Is air brakes part of the General Knowledge test?",
+        "answer": "No. Air brakes is a separate knowledge test. You take it if the vehicle you will drive has air brakes. If you do not pass it, your license will have an air brake restriction. This site has a separate CDL Air Brakes practice test."
+      },
+      {
+        "question": "Are these the real CDL test questions?",
+        "answer": "No. The real question banks are not public. Every question here is an original practice question written from the rules in state CDL manuals and federal rules. Use this site to learn the rules, and read your state's official CDL manual as well."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "title": "New York State DMV, Commercial Driver's License (CDL) Manual page (Sections 2 and 3 prepare you for the General (Core) Knowledge test)",
+      "url": "https://dmv.ny.gov/driver-license/commercial-drivers/new-york-state-commercial-drivers-manual"
+    },
+    {
+      "title": "New York State DMV, CDL-10 Section 1 Introduction (multiple choice with three answer choices; 80% passing score; .04% BAC limit)",
+      "url": "https://dmv.ny.gov/brochure/cdl10sec01.pdf"
+    },
+    {
+      "title": "New York State DMV, CDL-10 Section 2 Driving Safely",
+      "url": "https://dmv.ny.gov/brochure/cdl10sec02.pdf"
+    },
+    {
+      "title": "New York State DMV, CDL-10 Section 3 Transporting Cargo Safely",
+      "url": "https://dmv.ny.gov/brochure/cdl10sec03.pdf"
+    },
+    {
+      "title": "California DMV, California Commercial Driver Handbook",
+      "url": "https://www.dmv.ca.gov/portal/file/california-commercial-driver-handbook-pdf/"
+    },
+    {
+      "title": "Washington State Department of Licensing, CDL knowledge test (General Knowledge: 50 questions, 40 to pass)",
+      "url": "https://dol.wa.gov/driver-licenses-and-permits/commercial-driver-licenses-cdl/cdl-training-and-testing/cdl-knowledge-test"
+    },
+    {
+      "title": "Connecticut DMV, How to get a commercial learner's permit (General Knowledge: 50 questions, 40 to pass)",
+      "url": "https://portal.ct.gov/dmv/commercial-and-industry-services/get-commercial-learners-permit"
+    },
+    {
+      "title": "49 CFR Part 383 Subpart H, Tests (383.133: at least 30 items; 383.135: 80% to pass)",
+      "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-III/subchapter-B/part-383/subpart-H"
+    },
+    {
+      "title": "49 CFR 392.22, Emergency signals; stopped commercial motor vehicles (warning devices within 10 minutes)",
+      "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-III/subchapter-B/part-392/subpart-C/section-392.22"
+    },
+    {
+      "title": "49 CFR Part 392 Subpart H, Limiting the Use of Electronic Devices (texting and hand-held phone bans)",
+      "url": "https://www.ecfr.gov/current/title-49/subtitle-B/chapter-III/subchapter-B/part-392/subpart-H"
+    }
+  ],
+  "studyTips": {
+    "studyOrder": "Start with Vehicle Inspection and Speed and Space Management. They carry the largest share on this site (14% each) and both have the importance rating of 5. Next study Seeing and Communicating and Emergencies, because warning triangles, braking methods, and skids build on the first two chapters. Finish with Cargo Safety and Hazardous Materials Basics, which are short but full of exact rules.",
+    "hardChapters": "Speed and Space Management has a formula that is easy to mix up: one second for every 10 feet of vehicle length, plus one more second above 40 mph. Railroad Crossings and Mountain Driving has the downgrade braking method, where you brake to about 5 mph below your safe speed and then release. Vehicle Inspection has small numbers like 4/32 inch of tread on front tires and 2/32 inch on the others, so keep them in one list.",
+    "examDay": "You need at least 80% to pass, which is 40 correct answers out of 50, so you can miss no more than 10 questions. Read all three answer choices before you choose, because wrong choices often change only one number. If you are unsure, pick the answer that gives you more space, more time, or less speed."
+  }
 }

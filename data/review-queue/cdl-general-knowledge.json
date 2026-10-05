@@ -1,0 +1,26 @@
+[
+  {
+    "subjectId": "general-knowledge",
+    "chapterId": "cargo-safety",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "How many tiedowns should a 40-foot load on a flatbed have at a minimum?",
+    "choices": [
+      "2",
+      "4",
+      "8"
+    ],
+    "answer": 2,
+    "oneLineConcept": "One tiedown per 10 feet of cargo",
+    "explanation": "The rule is one tiedown for each 10 feet of cargo, and never fewer than two.\n\n1. 40 feet ÷ 10 feet = **4 tiedowns**\n2. 4 is more than the minimum of 2, so use **4**.\n\n**Wrong choices**\n- 2: Two is the minimum only for loads of 20 feet or less.\n- 8: This is more than the minimum rule requires.",
+    "frequency": 4,
+    "tags": [
+      "tiedowns",
+      "calculation"
+    ],
+    "distractorOrder": "1|3",
+    "certId": "cdl-general-knowledge",
+    "reviewStatus": "unverified",
+    "reviewNote": "분리 검증에서 확신도 medium: CDL 매뉴얼은 '화물 10ft 마다 타이다운 1개'(40ft → 4개)지만 연방 규정 49 CFR 393.110(b)는 첫 10ft 에 2개 + 10ft 마다 1개(40ft → 5개)라 정답이 하나로 정해지지 않음. 게시하지 않고 보관 (2026-10-06)"
+  }
+]

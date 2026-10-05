@@ -1,0 +1,111 @@
+{
+  "cert": "cdl-general-knowledge",
+  "checkedAt": "2026-10-06",
+  "by": "separate verifier AI",
+  "chapters": {
+    "vehicle-inspection": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "Tread 4/32 front / 2/32 other, no fabric showing: NY CDL-10 2.1.3 (lines 64, 1797). Steering play >10 degrees = about 2 in at the rim of a 20-inch wheel: 2.1.3 confirmed.",
+        "Out-of-service spring defects (1/4 or more leaves broken, any leaf missing/separated, any main leaf broken): 2.1.3 confirmed.",
+        "Emergency equipment (spare fuses unless circuit breakers, three red reflective triangles, properly charged and rated extinguisher): confirmed. Hydraulic leak test (pump 3, hold 5 s, pedal should not move): Step 7 confirmed.",
+        "Recapped/regrooved/retreaded tires prohibited on bus front wheels; oil pressure normal within seconds; during-trip checks (tires, wheels, rims, brakes, lights, trailer brake/electrical connections, coupling, cargo securement); 'safety is the most important reason': all confirmed in 2.1.",
+        "Short rule phrases overlap the manual (e.g. 'one-fourth or more of the leaves in any spring assembly are broken', 13 words); acceptable as rule wording."
+      ]
+    },
+    "basic-control": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "Partly engage the clutch before taking foot off the brake; both hands on opposite sides; backing rules (look at path, mirrors both sides, slowest/lowest reverse gear, driver's side, helper, agree on 'stop' signal): NY 2.2 confirmed.",
+        "Double clutching steps and missed-shift recovery (back to neutral, match engine speed to road speed, retry, do not force): 2.3.1 confirmed. Downshift before hills and curves: confirmed.",
+        "Retarders brake the drive wheels only, may cause skids, turn off on wet/icy/snow-covered roads: 2.3.4 confirmed.",
+        "Minor: summary sentence 'These skills matter more in a large vehicle because mistakes take longer to correct' is a general rationale not stated in the manual; no number or rule, so not failed."
+      ]
+    },
+    "seeing-communicating": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "12-15 s ahead = about one block in town, about a quarter mile on highway: NY 2.4.1 confirmed. Convex mirrors: things look smaller and farther away: confirmed.",
+        "Signal early/continuously, flash brake lights before slowing, don't direct traffic, flashers when stopped: NY 2.5 confirmed.",
+        "49 CFR 392.22: hazard flashers immediately; warning devices as soon as possible but within 10 minutes; two-lane/undivided: one 10 ft (4 paces) on traffic side, one 100 ft behind, one 100 ft ahead; one-way/divided: 10, 100, 200 ft toward approaching traffic. Confirmed via search results for eCFR/govinfo text.",
+        "Card wording 'within 10 feet of the front or rear corner' follows the NY manual text rather than the CFR wording ('4 paces ... on the traffic side ... in the direction of approaching traffic'); substantively equivalent. The card omits the 392.22(b)(2) exceptions (e.g. lighted business/residential districts); omission, not an error.",
+        "Source present on all regulation-number cards."
+      ]
+    },
+    "speed-space": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "Driving too fast is a major cause of fatal crashes; perception + reaction + braking distance; double speed 20->40 mph = 4x impact and braking distance: NY 2.6.1 confirmed.",
+        "Empty trucks need greater stopping distance (less traction); wet roads can double stopping distance; reduce 1/3 on wet (55 -> ~35), half or more on packed snow, crawl on ice: 2.6 confirmed.",
+        "Hydroplaning as low as 30 mph, more likely with low pressure/worn tread, release accelerator + push clutch, no brakes: confirmed.",
+        "Following distance 1 s per 10 ft below 40 mph, +1 s above (40-ft truck 4 s / 5 s): 2.7.1 confirmed. Tailgater response, empty van taller than loaded, right-turn (rear near curb, wide at end), outside left-turn lane of two: 2.7 confirmed."
+      ]
+    },
+    "hazards-alertness": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "Hazard definition (any road condition or other road user that could be a danger): NY 2.8 confirmed. Move-over guidance (slow, change to non-adjacent lane if safe, otherwise slow and proceed with caution): 2.8.2 confirmed; it is presented as 'move-over laws', consistent with the manual (which notes they are state laws).",
+        "Aggressive driver: get out of the way, avoid eye contact, ignore gestures: 2.10.3 confirmed.",
+        "Texting (49 CFR 392.80) and hand-held phone (392.82) bans with exception for contacting law enforcement/emergency services: confirmed via search of regulation text; source present.",
+        "BAC .04% illegal in a CMV; any detectable alcohol under .04% = 24 h out of service; disqualification at least 1 yr first offense (incl. refusal), 3 yr if placarded hazmat, life for second offense: NY 1.6.2 confirmed (matches 49 CFR 392.5 / 383.51). Source present.",
+        "Fatigue: sleep is the only cure, a nap beats a coffee stop, warning signs list: NY 2.23 confirmed. 'Only time sobers you up': 2.22 confirmed."
+      ]
+    },
+    "night-weather": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "Night vision/glare; low beams about 250 ft; stop within headlight range; dim within 500 ft of oncoming and when following within 500 ft; use high beams when safe and legal: NY 2.11 confirmed (CA handbook gives the same 500 ft figures). Some state vehicle codes use a shorter distance when following (e.g. 300 ft), but the 500-ft figure is the national CDL manual text, so not failed.",
+        "Fog (pull off; slow before entering; low beams + fog lights; 4-way flashers; avoid passing): 2.12 confirmed.",
+        "Winter checks, black ice definition, bridges freeze first, wet-brake drying with light pressure then test stop: 2.13 confirmed.",
+        "Hot weather: inspect tires every 2 hours or 100 miles, do not let air out, too hot to touch = stay stopped; never remove radiator cap until cooled, bare-hand test: 2.14 confirmed."
+      ]
+    },
+    "railroad-mountain": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "Passive vs active crossing definitions; don't race trains, don't rely only on signals, don't shift on tracks; tractor-trailer at least 14 s for a single track and more than 15 s for a double track; stuck: get out and away, call posted number or 911, give DOT number: NY 2.15 confirmed (CA handbook same).",
+        "Safe speed factors, low gear before the grade, engine braking as principal control, brake fade and adjustment, braking technique (definite slowdown, release ~5 mph below safe speed, about 3 s application, repeat), escape ramps (loose soft material, sometimes upgrade, signs): NY 2.16 confirmed.",
+        "Style note: 'at least 14 seconds to clear a single track and more than 15 seconds to clear a double track' is a 19-word verbatim run from the manual; it is a numeric rule statement, so acceptable, but could be lightly reworded."
+      ]
+    },
+    "emergencies": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "Steering usually faster than stopping, no braking while turning, countersteer, move right for an oncoming drifter: NY 2.17.1 confirmed.",
+        "Controlled and stab braking, don't jam on brakes: 2.17.2 confirmed. Tire failure signs (bang, vibration, heavy steering) and response (firm grip, stay off brake, then brake gently, check all tires): confirmed.",
+        "ABS keeps wheels from locking, does not necessarily shorten stopping distance, normal brakes remain if ABS fails: 2.18 confirmed.",
+        "Drive-wheel braking skid (stop braking, turn quickly, countersteer) and front-wheel skid (stop turning/braking so hard, let it slow); most serious skids from driving too fast: 2.19 confirmed.",
+        "Crash steps (protect area, notify authorities, care for injured) and fire (open area away from things that can burn, keep van doors shut, upwind, aim at base, no water on electrical/gasoline fires): 2.20-2.21 confirmed."
+      ]
+    },
+    "cargo-safety": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "Driver responsible even if someone else loaded; inspect cargo within first 50 miles, then after 3 hours or 150 miles and after every break: NY 3.1 and 2.1.6 confirmed (matches 49 CFR 392.9).",
+        "GVW/GVWR/GCW/GCWR definitions; center of gravity low with heaviest under lightest; axle balance effects: NY 3.2 confirmed.",
+        "Tiedowns: at least one per 10 ft of cargo, at least two no matter how small; aggregate WLL at least one-half the cargo weight: NY 3.3.2 confirmed. Note: the federal rule 49 CFR 393.110 actually allows a single tiedown for an article 5 ft or shorter and 1,100 lb or lighter; the 'at least two' figure is the CDL manual's simplified teaching rule. The card cites the NY manual, so it is accurate to its source and not failed.",
+        "Covering cargo (protect people from spills, cargo from weather); sealed loads cannot be inspected but check gross and axle weight: 3.3.4-3.3.5 confirmed."
+      ]
+    },
+    "hazmat-basics": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "Definition, three purposes (contain, communicate, ensure safe drivers and equipment), shipper's shipping papers and diamond labels: NY 2.24 confirmed.",
+        "Shipping papers tabbed or on top; door pouch / clear view within reach / driver's seat when out of vehicle: confirmed (49 CFR 177.817).",
+        "At least four identical placards, front, rear, both sides, at least 10 3/4 in square: NY 2.24.3 confirmed. Placards required -> hazmat endorsement required: confirmed.",
+        "Four-digit ID numbers preceded by UN or NA, listed in the ERG: confirmed.",
+        "Summary phrase 'products that pose a risk to health, safety, and property during transport' is close to manual wording (14 words); short definition, acceptable."
+      ]
+    }
+  }
+}
