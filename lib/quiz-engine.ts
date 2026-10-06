@@ -53,25 +53,27 @@ export const FALLBACK_TO_PREDICTED_WHEN_NO_PAST = true;
 export const IMPORTANCE_BOOST: Record<number, number> = { 1: 0.6, 2: 0.8, 3: 1, 4: 1.2, 5: 1.4 };
 
 /**
- * 지금은 모든 문제가 AI 예상문제다 (사용자 결정: 기출문제는 싣지 않는다).
- * pastOnly·pastRatio 는 나중에 권리가 확인된 기출을 넣게 될 때를 위해 남겨 둔 값이다.
+ * 기출과 예상문제를 섞어 낸다 (사용자 결정 2026-10-06): 기출이 있으면 절반쯤 기출, 모자라면 예상문제로 채운다.
+ * 기출이 없는 자격증은 지금처럼 예상문제만 나온다. pastOnly 는 쓰지 않는다.
  */
+export const PAST_MIX_RATIO = 0.5;
+
 export const LEVEL_RULES: Record<QuizLevel, LevelRule> = {
   basic: {
     levels: ["basic"],
-    pastRatio: 0,
+    pastRatio: PAST_MIX_RATIO,
     pastOnly: false,
     excludeLocked: true,
   },
   intermediate: {
     levels: ["basic", "intermediate"],
-    pastRatio: 0,
+    pastRatio: PAST_MIX_RATIO,
     pastOnly: false,
     excludeLocked: true,
   },
   advanced: {
     levels: ["intermediate", "advanced"],
-    pastRatio: 0,
+    pastRatio: PAST_MIX_RATIO,
     pastOnly: false,
     excludeLocked: false,
   },
@@ -409,7 +411,7 @@ export function buildMockExam<T extends QuestionKey>(params: {
     subjects: params.subjects,
     pool: params.questions,
     count: params.totalQuestions,
-    pastRatio: 1,
+    pastRatio: PAST_MIX_RATIO,
     history: params.history,
     now: params.now,
     rng: params.rng,

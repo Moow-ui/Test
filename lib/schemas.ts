@@ -401,6 +401,8 @@ export const questionSchema = z
         year: z.number().int().min(1990).max(2100),
         round: z.number().int().min(1).max(999),
         roundName: z.string().min(1).optional(),
+        /** 시험지 안의 문항 위치 (예: "부동산학개론 14번") */
+        item: z.string().min(1).optional(),
         /** 시행기관 (예: 공개한 기관 이름) */
         issuer: z.string().min(1).optional(),
         /** 이용 조건 (예: "공공누리 제1유형(출처표시)") */

@@ -6,6 +6,7 @@ import {
   IMPORTANCE_BOOST,
   allocateChapters,
   buildLevelQuiz,
+  buildMockExam,
   countAvailable,
   createRng,
   filterPool,
@@ -38,8 +39,8 @@ describe("정답률로 난이도 정하기", () => {
 });
 
 /**
- * 지금은 모든 난이도가 AI 예상문제로 출제된다 (사용자 결정: 기출문제를 싣지 않는다).
- * 기출 데이터가 섞여 있더라도 기출만 골라 내거나 기출 비율을 맞추지 않는다.
+ * 기출과 예상문제를 섞어 낸다 (사용자 결정 2026-10-06, PAST_MIX_RATIO).
+ * 기출이 없으면 예상문제만, 기출이 모자라면 예상문제로 채운다.
  */
 describe("난이도와 문제 출처", () => {
   const subjects = [makeSubject("a", 20, [["a1", 5, 100]])];
@@ -63,6 +64,24 @@ describe("난이도와 문제 출처", () => {
     expect(filterPool(questions, "basic")).toHaveLength(23);
     const quiz = buildLevelQuiz({ subjects, questions, level: "basic", count: 5, rng: createRng(1) });
     expect(quiz).toHaveLength(5);
+  });
+
+  it("초급·중급·고급·실전 모두 기출과 예상문제가 반쯤씩 섞여 나온다", () => {
+    for (const level of ["basic", "intermediate", "advanced"] as const) {
+      const questions = [...past(level, 20), ...predicted(level, 20)];
+      const quiz = buildLevelQuiz({ subjects, questions, level, count: 10, rng: createRng(3) });
+      expect(quiz.filter((q) => q.source === "past").length, level).toBe(5);
+    }
+    const questions = [...past("advanced", 30), ...predicted("advanced", 30)];
+    const exam = buildMockExam({ subjects, questions, totalQuestions: 20, rng: createRng(5) });
+    expect(exam.filter((q) => q.source === "past").length).toBe(10);
+  });
+
+  it("기출이 모자라면 예상문제로 채운다", () => {
+    const questions = [...past("basic", 2), ...predicted("basic", 20)];
+    const quiz = buildLevelQuiz({ subjects, questions, level: "basic", count: 10, rng: createRng(1) });
+    expect(quiz).toHaveLength(10);
+    expect(quiz.filter((q) => q.source === "past")).toHaveLength(2);
   });
 
   it("고급은 예상문제만으로 요청한 수만큼 출제된다", () => {
@@ -107,6 +126,12 @@ describe("기출 배지·출처 표기", () => {
 
   it("기출에는 출처·이용 조건 한 줄이 붙고, 예상문제에는 없다", () => {
     expect(pastCredit({ source: "past", pastInfo: info }, m)).toBe(
+      "출처: 시행기관 2025년 제36회 시험문제 · 이용 조건: 공공누리 제1유형(출처표시)",
+    );
+    expect(pastCredit({ source: "past", pastInfo: { ...info, item: "1과목 3번" } }, m)).toBe(
+      "출처: 시행기관 2025년 제36회 시험문제 1과목 3번 · 이용 조건: 공공누리 제1유형(출처표시)",
+    );
+    expect(pastCredit({ source: "past", pastInfo: { ...info, item: "1과목 3번" } }, m, false)).toBe(
       "출처: 시행기관 2025년 제36회 시험문제 · 이용 조건: 공공누리 제1유형(출처표시)",
     );
     expect(pastCredit({ source: "predicted" }, m)).toBeNull();

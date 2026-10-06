@@ -23,7 +23,7 @@ Most people studying for a trade or professional exam are doing it around a full
       },
       {
         heading: "How the questions are put together",
-        body: `**Every question on this site is an original, AI-written practice question.** We do not publish real exam questions. Questions are written from each exam's publicly available outline (sections, number of questions, passing score) and are modeled on the topics and difficulty the exam is known for.
+        body: `**Questions on this site are original, AI-written practice questions, plus real past exam questions where the exam provider has published them.** We only include past questions that the provider has made public with clear license terms, from the last 10 years, and every one shows its source (provider, year, administration) and license. We never use leaked or "dump" questions. Practice questions are written from each exam's publicly available outline (sections, number of questions, passing score) and are modeled on the topics and difficulty the exam is known for.
 
 - **Easy, Medium, Hard**: Easy shows 2 answer choices, Medium shows 3, and Hard shows 4. Start easy and work up to the real thing.
 - **Full mock exam**: the same number of questions, section breakdown, answer choices, and time limit as the real exam. Your result is checked against the real passing score.
@@ -250,14 +250,16 @@ Always confirm exam dates, fees, eligibility, content outlines, and passing scor
         body: `All certification names, exam names, and organization names on this site are **trademarks or registered trademarks of their respective owners**. They are used only to identify the exams the practice questions relate to. Their use does not imply any affiliation or endorsement.`,
       },
       {
-        heading: "These are not real exam questions",
-        body: `{brand} does not publish real exam questions. Every question is an original, AI-written practice question based on publicly available exam outlines. "Sample questions" means questions written in the style of the exam, not questions taken from it.
+        heading: "Past exam questions and practice questions",
+        body: `Most questions on {brand} are original, AI-written practice questions based on publicly available exam outlines. "Sample questions" means questions written in the style of the exam, not questions taken from it.
+
+Questions marked with a past exam badge are real past exam questions that the exam provider has published for public use. We reproduce them as published, under the provider's license terms, and show the source (provider, year, administration) and license with each question. Copyright in those questions stays with the provider. We do not use leaked, recalled, or "dump" questions.
 
 If you believe anything on this site infringes your rights, email {email} and we will review it promptly.`,
       },
       {
         heading: "Questions may contain errors",
-        body: `- Questions, answers, and explanations are AI-written. They have not been checked by a human subject-matter expert.
+        body: `- Practice questions, answers, and all explanations are AI-written. They have not been checked by a human subject-matter expert. For past exam questions, the answer follows the provider's official final answer key.
 - Items labeled "Reviewed": a separate AI that could not see the answer solved the question again, and we confirmed its answer matched. If you find an error, please report it.
 - Items labeled "Not yet reviewed" have not had that check yet.
 - Codes, regulations, and exam content change, and our content may be out of date.

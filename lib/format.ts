@@ -18,11 +18,15 @@ export function sourceLabel(q: Pick<Question, "source" | "pastInfo">, m: Message
   return m.source.predicted;
 }
 
-/** 기출 출처·이용 조건 한 줄: "출처: (시행기관) 2025년 제36회 시험 · 이용 조건: 공공누리 제1유형". 예상문제는 null */
-export function pastCredit(q: Pick<Question, "source" | "pastInfo">, m: Messages): string | null {
+/**
+ * 기출 출처·이용 조건 한 줄: "출처: (시행기관) 2025년 제36회 시험문제 부동산학개론 14번 · 이용 조건: 공공누리 제1유형".
+ * withItem 이 false 면 문항 번호를 뺀다 (자격증 페이지처럼 시험 단위로 모아 보여 줄 때). 예상문제는 null
+ */
+export function pastCredit(q: Pick<Question, "source" | "pastInfo">, m: Messages, withItem = true): string | null {
   if (q.source !== "past" || !q.pastInfo?.issuer || !q.pastInfo.license) return null;
-  const { year, round, roundName, issuer, license } = q.pastInfo;
-  return fmt(m.source.pastCredit, { issuer, year, roundName: roundName ?? fmt(m.source.roundFallback, { round }), license });
+  const { year, round, roundName, item, issuer, license } = q.pastInfo;
+  const vars = { issuer, year, roundName: roundName ?? fmt(m.source.roundFallback, { round }), license };
+  return withItem && item ? fmt(m.source.pastCreditItem, { ...vars, item }) : fmt(m.source.pastCredit, vars);
 }
 
 /** 날짜 → "2026.10.01" */

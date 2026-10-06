@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { Markdown } from "@/components/Markdown";
 import { ChapterNotesLink } from "@/components/quiz/ChapterNotesLink";
-import { isReviewed } from "@/components/quiz/QuestionBadges";
+import { CreditButton, isReviewed } from "@/components/quiz/QuestionBadges";
 import { ReportForm } from "@/components/quiz/ReportForm";
 import { Stars } from "@/components/Stars";
 import { visibleChoices } from "@/lib/choices";
@@ -54,6 +54,7 @@ export interface ExamScreenProps {
 export function ReviewLine({ question }: { question: Question }) {
   const { m } = useMessages();
   const [open, setOpen] = useState(false);
+  const [creditOpen, setCreditOpen] = useState(false);
   const reviewed = isReviewed(question);
   const status = reviewed ? m.source.reviewed : question.reviewStatus === "unverified" ? m.source.unverified : null;
   const credit = pastCredit(question, m);
@@ -67,6 +68,9 @@ export function ReviewLine({ question }: { question: Question }) {
         >
           {status ? `${sourceLabel(question, m)} · ${status}` : sourceLabel(question, m)}
         </span>
+        {credit && (
+          <CreditButton label={m.source.creditButton} open={creditOpen} onClick={() => setCreditOpen(!creditOpen)} />
+        )}
         {reviewed && (
           <button
             type="button"
@@ -81,7 +85,7 @@ export function ReviewLine({ question }: { question: Question }) {
         )}
       </p>
       {open && <p className="mt-2 rounded-lg bg-surface-2 px-4 py-2 text-sm text-ink">{m.source.reviewInfo}</p>}
-      {credit && <p className="mt-1 text-sm text-ink-sub">{credit}</p>}
+      {credit && creditOpen && <p className="mt-2 rounded-lg bg-surface-2 px-4 py-2 text-sm text-ink">{credit}</p>}
     </div>
   );
 }
