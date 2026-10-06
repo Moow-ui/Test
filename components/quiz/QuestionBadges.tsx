@@ -2,7 +2,7 @@
 
 import { useId, useState } from "react";
 import { Badge } from "@/components/Badge";
-import { sourceLabel } from "@/lib/format";
+import { pastCredit, sourceLabel } from "@/lib/format";
 import type { Question } from "@/lib/types";
 import { useMessages } from "@/lib/use-messages";
 
@@ -12,13 +12,14 @@ export function isReviewed(question: Pick<Question, "source" | "reviewStatus">):
 }
 
 /**
- * 문제 출처 배지: "20XX년 X회 기출" 또는 "예상문제".
+ * 문제 출처 배지: "2025년 제36회 기출" 또는 "예상문제". 기출은 아래에 출처·이용 조건 한 줄이 붙는다.
  * 검증을 통과한 예상문제는 "검수 완료" + ⓘ 버튼(누르면 검수 방식 안내. AI 로 만들고 검증했다는 설명은 여기에 나온다), 검증 기록이 없으면 "검수 전".
  */
 export function QuestionBadges({ question }: { question: Pick<Question, "source" | "pastInfo" | "reviewStatus"> }) {
   const { m } = useMessages();
   const [open, setOpen] = useState(false);
   const noteId = useId();
+  const credit = pastCredit(question, m);
   return (
     <>
       <Badge tone={question.source === "past" ? "primary" : "neutral"}>{sourceLabel(question, m)}</Badge>
@@ -45,6 +46,7 @@ export function QuestionBadges({ question }: { question: Pick<Question, "source"
       ) : (
         question.reviewStatus === "unverified" && <Badge tone="warn">{m.source.unverified}</Badge>
       )}
+      {credit && <p className="basis-full text-sm font-normal text-ink-sub">{credit}</p>}
     </>
   );
 }

@@ -9,12 +9,20 @@ export function circled(n: number): string {
   return CIRCLED[n - 1] ?? String(n);
 }
 
-/** 문제 출처 배지 문구: "2023년 1회 기출" 또는 "예상문제" */
+/** 문제 출처 배지 문구: "2025년 제36회 기출"(실제 회차 명칭), 명칭이 없으면 "2023년 1회 기출", 또는 "예상문제" */
 export function sourceLabel(q: Pick<Question, "source" | "pastInfo">, m: Messages): string {
   if (q.source === "past" && q.pastInfo) {
-    return fmt(m.source.past, { year: q.pastInfo.year, round: q.pastInfo.round });
+    const { year, round, roundName } = q.pastInfo;
+    return roundName ? fmt(m.source.pastNamed, { year, roundName }) : fmt(m.source.past, { year, round });
   }
   return m.source.predicted;
+}
+
+/** 기출 출처·이용 조건 한 줄: "출처: (시행기관) 2025년 제36회 시험 · 이용 조건: 공공누리 제1유형". 예상문제는 null */
+export function pastCredit(q: Pick<Question, "source" | "pastInfo">, m: Messages): string | null {
+  if (q.source !== "past" || !q.pastInfo?.issuer || !q.pastInfo.license) return null;
+  const { year, round, roundName, issuer, license } = q.pastInfo;
+  return fmt(m.source.pastCredit, { issuer, year, roundName: roundName ?? fmt(m.source.roundFallback, { round }), license });
 }
 
 /** 날짜 → "2026.10.01" */

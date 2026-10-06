@@ -392,11 +392,19 @@ export const questionSchema = z
     subjectId: slugSchema,
     chapterId: slugSchema,
     source: z.enum(SOURCES),
-    /** 기출일 때만 */
+    /**
+     * 기출일 때만. 출처(시행기관·연도·회차)와 이용 조건을 적는다 (docs/data-rules.md 7장).
+     * round 는 회차 번호(그해 몇 번째 시험이거나 누적 회차), roundName 은 배지에 나오는 실제 명칭 (예: "제36회").
+     */
     pastInfo: z
       .object({
         year: z.number().int().min(1990).max(2100),
-        round: z.number().int().min(1).max(10),
+        round: z.number().int().min(1).max(999),
+        roundName: z.string().min(1).optional(),
+        /** 시행기관 (예: 공개한 기관 이름) */
+        issuer: z.string().min(1).optional(),
+        /** 이용 조건 (예: "공공누리 제1유형(출처표시)") */
+        license: z.string().min(1).optional(),
       })
       .optional(),
     level: z.enum(LEVELS),
@@ -452,6 +460,17 @@ export const questionSchema = z
         path: ["pastInfo"],
         message: "기출(source=past) 문제는 pastInfo(year, round)가 필요합니다",
       });
+    }
+    if (q.source === "past" && q.pastInfo) {
+      for (const key of ["roundName", "issuer", "license"] as const) {
+        if (!q.pastInfo[key]) {
+          ctx.addIssue({
+            code: "custom",
+            path: ["pastInfo", key],
+            message: `기출 문제는 출처와 이용 조건(pastInfo.${key})을 적어야 합니다`,
+          });
+        }
+      }
     }
     if (q.source === "predicted" && q.pastInfo) {
       ctx.addIssue({

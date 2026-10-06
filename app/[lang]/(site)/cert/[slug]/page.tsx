@@ -12,6 +12,7 @@ import { RelatedCerts } from "@/components/cert/RelatedCerts";
 import { StudyTips } from "@/components/cert/StudyTips";
 import { ReviewSection } from "@/components/reviews/ReviewSection";
 import { getCertList, getCertificationIn, getConcepts, getQuestions } from "@/lib/data";
+import { pastCredit } from "@/lib/format";
 import { fmt, getMessages, isLocale, localeCountry, localePath } from "@/lib/i18n";
 import { levelChoiceCount } from "@/lib/choices";
 import { countAvailable, mockExamShortage } from "@/lib/quiz-engine";
@@ -65,6 +66,8 @@ export default async function CertPage({ params }: Props) {
     ]),
   ) as Record<QuizLevel, Record<string, number>>;
   const pastCount = questions.filter((q) => q.source === "past").length;
+  // 수록한 기출의 출처·이용 조건 (문제의 pastInfo 에서 모은다. 같은 시험은 한 줄)
+  const pastCredits = [...new Set(questions.map((q) => pastCredit(q, m)).filter((c): c is string => !!c))];
   const { examInfo, content } = cert;
   const pastMeta = certPastMeta(lang, cert, pastCount > 0, 0);
 
@@ -117,6 +120,15 @@ export default async function CertPage({ params }: Props) {
             : undefined
         }
       />
+
+      {pastCredits.length > 0 && (
+        <div className="space-y-1 text-sm text-ink-sub" data-past-credits="">
+          <p>{fmt(m.cert.pastIncluded, { n: pastCount })}</p>
+          {pastCredits.map((credit) => (
+            <p key={credit}>{credit}</p>
+          ))}
+        </div>
+      )}
 
       {!cert.ready && (
         <p className="card p-4">

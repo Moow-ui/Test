@@ -1,4 +1,6 @@
 import { describe, expect, it } from "vitest";
+import { pastCredit, sourceLabel } from "@/lib/format";
+import { getMessages } from "@/lib/i18n";
 import { isWithinPastWindow, levelFromCorrectRate, oldestPastYear } from "@/lib/past";
 import {
   IMPORTANCE_BOOST,
@@ -90,5 +92,23 @@ describe("중요 단원 가중치", () => {
     const first = buildLevelQuiz({ subjects, questions, level: "basic", count: 5, rng: createRng(1) }).map((q) => q.id);
     const second = buildLevelQuiz({ subjects, questions, level: "basic", count: 5, rng: createRng(2) }).map((q) => q.id);
     expect(first).not.toEqual(second);
+  });
+});
+
+describe("기출 배지·출처 표기", () => {
+  const m = getMessages("ko");
+  const info = { year: 2025, round: 36, roundName: "제36회", issuer: "시행기관", license: "공공누리 제1유형(출처표시)" };
+
+  it("실제 회차 명칭으로 배지를 만든다", () => {
+    expect(sourceLabel({ source: "past", pastInfo: info }, m)).toBe("2025년 제36회 기출");
+    expect(sourceLabel({ source: "past", pastInfo: { year: 2023, round: 2 } }, m)).toBe("2023년 2회 기출");
+    expect(sourceLabel({ source: "predicted" }, m)).toBe("예상문제");
+  });
+
+  it("기출에는 출처·이용 조건 한 줄이 붙고, 예상문제에는 없다", () => {
+    expect(pastCredit({ source: "past", pastInfo: info }, m)).toBe(
+      "출처: 시행기관 2025년 제36회 시험문제 · 이용 조건: 공공누리 제1유형(출처표시)",
+    );
+    expect(pastCredit({ source: "predicted" }, m)).toBeNull();
   });
 });

@@ -12,6 +12,7 @@ import { isQuestionIdFor, questionId, questionIdNumber } from "@/lib/data/paths"
 import { validateData } from "@/lib/data/validate";
 import { visibleChoices } from "@/lib/choices";
 import { LEVELS, LEVEL_CHOICE_COUNT, MAX_QUESTIONS_PER_FILE } from "@/lib/schemas";
+import { oldestPastYear } from "@/lib/past";
 import {
   QUIZ_COUNTS,
   buildLevelQuiz,
@@ -181,15 +182,34 @@ describe("문제가 준비된 모든 자격증", () => {
     }
   });
 
-  it("모든 문제가 AI 예상문제이고, 검수 완료 문제에는 검증 날짜가 있고, 해설에 틀린 선지 설명이 들어 있다 (기출 없음)", async () => {
+  it("검수 완료 문제에는 검증 날짜가 있고, 해설에 틀린 선지 설명이 들어 있고, 예상문제에는 기출 정보가 없다", async () => {
     for (const id of READY_IDS) {
       const questions = await getQuestions(id);
       expect(checkQuestions(questions, (await getCertification(id)) as unknown as CertDetail), id).toEqual([]);
       for (const q of questions) {
-        expect(q.source, q.id).toBe("predicted");
+        expect(["predicted", "past"], q.id).toContain(q.source);
         expect(q.reviewStatus === "verified", q.id).toBe(q.reviewedAt !== undefined);
-        expect(q.pastInfo, q.id).toBeUndefined();
+        if (q.source === "predicted") expect(q.pastInfo, q.id).toBeUndefined();
         expect(q.explanation.length, q.id).toBeGreaterThan(60);
+      }
+    }
+  });
+
+  it("기출 문항에는 출처(시행기관·연도·회차)와 이용 조건이 있고, 시행 연도가 최근 10년 안이다 (docs/data-rules.md 7장)", async () => {
+    const oldest = oldestPastYear();
+    for (const cert of await getCertList()) {
+      for (const file of await getQuestionFiles(cert.id)) {
+        for (const q of file.questions) {
+          if (q.source !== "past" || q.retired) continue;
+          const info = q.pastInfo;
+          expect(info, q.id).toBeDefined();
+          expect(info?.issuer?.trim(), `${q.id} 시행기관`).toBeTruthy();
+          expect(info?.year, `${q.id} 연도`).toBeGreaterThanOrEqual(oldest);
+          expect(info?.year, `${q.id} 연도`).toBeLessThanOrEqual(new Date().getFullYear());
+          expect(info?.round, `${q.id} 회차`).toBeGreaterThanOrEqual(1);
+          expect(info?.roundName?.trim(), `${q.id} 회차 명칭`).toBeTruthy();
+          expect(info?.license?.trim(), `${q.id} 이용 조건`).toBeTruthy();
+        }
       }
     }
   });
@@ -276,14 +296,6 @@ describe("전기기능사 데이터", () => {
       for (const c of s.chapters) {
         expect(questions.some((q) => q.chapterId === c.id), `${c.name} 단원`).toBe(true);
       }
-    }
-  });
-
-  it("샘플 문제는 모두 AI 예상문제로 표시되어 있다 (기출 원문 없음)", async () => {
-    const questions = await getQuestions(CERT_ID);
-    for (const q of questions) {
-      expect(q.source).toBe("predicted");
-      expect(q.pastInfo).toBeUndefined();
     }
   });
 

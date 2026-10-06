@@ -8,7 +8,7 @@ import { isReviewed } from "@/components/quiz/QuestionBadges";
 import { ReportForm } from "@/components/quiz/ReportForm";
 import { Stars } from "@/components/Stars";
 import { visibleChoices } from "@/lib/choices";
-import { circled, formatClock, sourceLabel } from "@/lib/format";
+import { circled, formatClock, pastCredit, sourceLabel } from "@/lib/format";
 import { fmt } from "@/lib/i18n";
 import { calcStars, getPassContribution } from "@/lib/scoring";
 import type { Question, QuizLevel, Subject } from "@/lib/types";
@@ -47,7 +47,7 @@ export interface ExamScreenProps {
 }
 
 /**
- * 문제 위의 출처 배지 1개: "예상문제 · 검수 완료" + 오른쪽 ⓘ 버튼, 또는 "예상문제 · 검수 전".
+ * 문제 위의 출처 배지 1개: "예상문제 · 검수 완료" + 오른쪽 ⓘ 버튼, 또는 "예상문제 · 검수 전", 또는 "2025년 제36회 기출" + 아래에 출처·이용 조건 한 줄.
  * ⓘ 를 누르면 검수 방식 안내가 펼쳐진다.
  * 문제 영역(<section key={문제 id}>) 안에 하나만 그린다. 문제가 바뀌면 영역째 새로 그려져 이전 배지가 남지 않는다.
  */
@@ -56,6 +56,7 @@ export function ReviewLine({ question }: { question: Question }) {
   const [open, setOpen] = useState(false);
   const reviewed = isReviewed(question);
   const status = reviewed ? m.source.reviewed : question.reviewStatus === "unverified" ? m.source.unverified : null;
+  const credit = pastCredit(question, m);
   return (
     <div data-review-badge="">
       <p className="flex flex-wrap items-center gap-2">
@@ -80,6 +81,7 @@ export function ReviewLine({ question }: { question: Question }) {
         )}
       </p>
       {open && <p className="mt-2 rounded-lg bg-surface-2 px-4 py-2 text-sm text-ink">{m.source.reviewInfo}</p>}
+      {credit && <p className="mt-1 text-sm text-ink-sub">{credit}</p>}
     </div>
   );
 }

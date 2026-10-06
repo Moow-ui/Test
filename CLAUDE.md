@@ -75,7 +75,7 @@ scripts/                   validate-data, build-data, import-questions, convert-
 
 ## 콘텐츠 정책 (요약)
 
-- **모든 문제는 직접 만든 AI 예상문제다.** 기출 원문을 싣거나 지어내지 않는다. `source: "predicted"`.
+- **문제는 직접 만든 AI 예상문제(`source: "predicted"`)와 공개 기출(`source: "past"`)이다.** 기출은 시행기관이 공개한 것만, 최근 10년, 문항마다 출처(기관·연도·회차)와 이용 조건(예: 공공누리 제1유형)을 적는다. 유출 문제(덤프)·복원 문제 금지, 기출을 지어내지 않는다 ([docs/data-rules.md](docs/data-rules.md) 7장).
 - **검수 표시**: 분리된 AI 검증(add-cert.md A-5)을 통과한 문제는 `reviewStatus: "verified"` + `reviewedAt`(통과 날짜) → "예상문제 · 검수 완료 ⓘ". 기록이 없으면 `unverified` → "검수 전".
 - 해설은 "핵심 설명(계산은 번호 목록) + **틀린 선지** 목록" 형식. 50대가 이해할 수 있는 쉬운 말로.
 - **운영진 학습 팁**: 자격증마다 3개(공부 순서 · 자주 틀리는 단원 · 시험 당일 팁), 각 2~4문장. `meta.json` 의 `studyTips`.
