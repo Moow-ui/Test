@@ -15,6 +15,7 @@
    - 과목 `questionCount` 의 합 = `examInfo.totalQuestions`
    - 과목 안의 단원 `examWeight` 합 = 100
 4. **문제**: `questions/{chapterId}.json`
+   - **공개 기출을 구할 수 있으면 반드시 기출부터 넣는다** (사용자 결정 2026-10-06). 절차는 [daily-routine.md](daily-routine.md) "2-1. 기출 수록", 기준은 [data-rules.md](data-rules.md) 7장. 기출이 모자란 만큼 예상문제를 쓴다.
    - 직접 쓰거나, CSV/JSON 으로 만들어 아래 B 의 명령으로 넣는다 (id 가 자동으로 붙는다).
    - 모든 단원에 문제가 1개 이상, 과목마다 초급·중급·고급이 모두 있어야 한다.
    - **초급·중급·고급에서 각각 30문제 이상** 풀 수 있어야 한다 (같은 문제가 `choicesByLevel` 로 여러 난이도에 쓰여도 된다. "옳지 않은 것은?" 같은 levelLock 문제는 초급·중급에서 빠진다).

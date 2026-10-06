@@ -99,6 +99,7 @@ scripts/                   validate-data, build-data, import-questions, convert-
 - 절차는 [docs/daily-routine.md](docs/daily-routine.md), 진행 기록은 [reports/routine-progress.md](reports/routine-progress.md).
 - 문제는 작성과 분리된 검증(다시 풀기·재계산·최신 기준 확인)을 통과한 것만 게시한다. 확신이 없는 문제는 `data/review-queue/` 에 보관.
 - 검증을 통과한 문제는 `reviewedAt` 을 적어 넣는다 (자동으로 "검수 완료" 표시).
+- **공개 기출을 구할 수 있으면 반드시 문제 구성에 넣는다** ([docs/daily-routine.md](docs/daily-routine.md) 2-1). 출제는 기출과 예상문제를 반씩 섞는다.
 - 문제 검증 다음에 운영진 학습 팁 3개(`meta.json` 의 `studyTips`)를 쓴다. 후기란·활동 표시는 새 자격증에도 저절로 붙는다 (코드를 고치지 않는다).
 
 ## 명령어
