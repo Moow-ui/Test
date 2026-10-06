@@ -1,0 +1,454 @@
+[
+  {
+    "id": "mblex-assessment-0001",
+    "certId": "mblex",
+    "subjectId": "client-assessment",
+    "chapterId": "assessment",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "In SOAP notes, what does the letter \"S\" stand for?",
+    "choices": [
+      "Symptoms",
+      "Structural",
+      "Session",
+      "Subjective"
+    ],
+    "answer": 4,
+    "oneLineConcept": "SOAP: S = Subjective",
+    "explanation": "SOAP stands for Subjective, Objective, Assessment, and Plan. The S section records what the client tells you.\n\n**Wrong choices**\n- Symptoms: Symptoms may be written in the notes, but S stands for Subjective.\n- Structural: Structural is not one of the SOAP words.\n- Session: Session is not one of the SOAP words.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-06",
+    "tags": [
+      "SOAP notes"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "mblex-assessment-0002",
+    "certId": "mblex",
+    "subjectId": "client-assessment",
+    "chapterId": "assessment",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which note belongs in the Subjective section of a SOAP note?",
+    "choices": [
+      "The client says her low back hurts when she sits",
+      "Neck rotation to the left is limited",
+      "A tight band is felt in the upper trapezius",
+      "Right shoulder is higher than the left"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Subjective = what the client says",
+    "explanation": "The Subjective section holds what the client reports, such as pain, feelings, and history. The client's own words about back pain belong here.\n\n**Wrong choices**\n- Right shoulder is higher than the left: A posture finding the therapist sees goes in Objective.\n- Neck rotation to the left is limited: A measured range of motion finding goes in Objective.\n- A tight band is felt in the upper trapezius: Something the therapist feels with the hands goes in Objective.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-06",
+    "tags": [
+      "SOAP notes",
+      "subjective"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "mblex-assessment-0003",
+    "certId": "mblex",
+    "subjectId": "client-assessment",
+    "chapterId": "assessment",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which note belongs in the Objective section of a SOAP note?",
+    "choices": [
+      "The client rates the pain 6 out of 10",
+      "The client reports headaches three days a week",
+      "The client says work stress is high",
+      "The therapist sees the client's head sits forward"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Objective = what the therapist observes",
+    "explanation": "The Objective section holds what the therapist sees, feels, or measures. A forward head posture seen by the therapist is an objective finding.\n\n**Wrong choices**\n- The client reports headaches three days a week: Headaches the client reports are Subjective.\n- The client says work stress is high: Stress the client describes is Subjective.\n- The client rates the pain 6 out of 10: A pain rating given by the client is Subjective.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-06",
+    "tags": [
+      "SOAP notes",
+      "objective"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "mblex-assessment-0004",
+    "certId": "mblex",
+    "subjectId": "client-assessment",
+    "chapterId": "assessment",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "In active range of motion testing, who moves the joint?",
+    "choices": [
+      "No one, because the joint is held still",
+      "The therapist",
+      "The client",
+      "A machine"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Active ROM = client moves the joint",
+    "explanation": "In active range of motion, the client moves the joint using their own muscles. The therapist watches how far and how smoothly it moves.\n\n**Wrong choices**\n- The therapist: When the therapist moves the joint, it is passive range of motion.\n- A machine: Range of motion tests in massage are not done by a machine.\n- No one, because the joint is held still: Holding a joint still is not a range of motion test.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-06",
+    "tags": [
+      "range of motion"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "mblex-assessment-0005",
+    "certId": "mblex",
+    "subjectId": "client-assessment",
+    "chapterId": "assessment",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "When should a client's health history first be taken?",
+    "choices": [
+      "Only after the third visit",
+      "Before the first session",
+      "After the first session ends",
+      "Only if the client has pain"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Take health history before first session",
+    "explanation": "The health history is taken before the first session so the therapist can spot conditions that need care or referral. It should then be updated at later visits.\n\n**Wrong choices**\n- After the first session ends: Waiting until after the session misses problems before they happen.\n- Only if the client has pain: Every client needs a health history, with or without pain.\n- Only after the third visit: Waiting until the third visit puts the client at risk in the first two.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-06",
+    "tags": [
+      "health history",
+      "intake"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "mblex-assessment-0006",
+    "certId": "mblex",
+    "subjectId": "client-assessment",
+    "chapterId": "assessment",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What is gait?",
+    "choices": [
+      "How a person stands still",
+      "The way a person sits",
+      "The movement of a single joint",
+      "The way a person walks"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Gait = walking pattern",
+    "explanation": "Gait is the pattern of a person's walking. Watching gait can show muscle tightness, weakness, or pain.\n\n**Wrong choices**\n- The way a person sits: Sitting is not gait.\n- How a person stands still: Standing still is posture, not gait.\n- The movement of a single joint: The movement of one joint is range of motion, not gait.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-06",
+    "tags": [
+      "gait",
+      "observation"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "mblex-assessment-0007",
+    "certId": "mblex",
+    "subjectId": "client-assessment",
+    "chapterId": "assessment",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "During passive range of motion testing, what should the client do?",
+    "choices": [
+      "Relax while the therapist moves the joint",
+      "Stretch the joint as far as possible alone",
+      "Push against the therapist's hand",
+      "Move the joint without any help"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Passive ROM: client relaxes",
+    "explanation": "In passive range of motion, the client relaxes and the therapist moves the joint. This shows how far the joint can move without the client's muscles working.\n\n**Wrong choices**\n- Move the joint without any help: Moving the joint without help is active range of motion.\n- Push against the therapist's hand: Pushing against the therapist's hand is resisted testing.\n- Stretch the joint as far as possible alone: Stretching alone is active movement, not passive.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-06",
+    "tags": [
+      "range of motion"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "mblex-assessment-0008",
+    "certId": "mblex",
+    "subjectId": "client-assessment",
+    "chapterId": "assessment",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Resisted range of motion testing mainly checks which kind of tissue?",
+    "choices": [
+      "Skin",
+      "Bones",
+      "Ligaments only",
+      "Muscles and tendons"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Resisted tests check muscles, tendons",
+    "explanation": "In a resisted test, the client pushes against the therapist's hand without the joint moving much. Pain or weakness points to the muscles and tendons, the tissues that contract.\n\n**Wrong choices**\n- Ligaments only: Ligaments are mainly checked with passive movement, not resisted testing.\n- Bones: Bones are not the target of a resisted test.\n- Skin: Skin is not tested by resisting a movement.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-06",
+    "tags": [
+      "range of motion",
+      "resisted testing"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "mblex-assessment-0009",
+    "certId": "mblex",
+    "subjectId": "client-assessment",
+    "chapterId": "assessment",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Where in a SOAP note would you write \"Return in one week; client to stretch hamstrings daily\"?",
+    "choices": [
+      "Subjective",
+      "Objective",
+      "Assessment",
+      "Plan"
+    ],
+    "answer": 4,
+    "oneLineConcept": "SOAP: P = next steps and home care",
+    "explanation": "The Plan section records what comes next, such as the next visit and home care. A return date and daily stretches belong here.\n\n**Wrong choices**\n- Assessment: Assessment records the results and changes from the session.\n- Objective: Objective records what the therapist sees, feels, or measures.\n- Subjective: Subjective records what the client reports.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-06",
+    "tags": [
+      "SOAP notes"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "mblex-assessment-0010",
+    "certId": "mblex",
+    "subjectId": "client-assessment",
+    "chapterId": "assessment",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A therapist sees that a standing client's right shoulder sits higher than the left. Which kind of assessment is this?",
+    "choices": [
+      "Resisted range of motion test",
+      "Client interview",
+      "Gait assessment",
+      "Postural assessment"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Standing alignment = posture assessment",
+    "explanation": "Looking at how the body lines up while standing is a postural assessment. Uneven shoulder height is a common postural finding.\n\n**Wrong choices**\n- Gait assessment: Gait assessment watches the client walking.\n- Client interview: An interview is asking questions, not looking.\n- Resisted range of motion test: A resisted test has the client push against the therapist.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-06",
+    "tags": [
+      "posture",
+      "observation"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "mblex-assessment-0011",
+    "certId": "mblex",
+    "subjectId": "client-assessment",
+    "chapterId": "assessment",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which assessment method uses the therapist's hands to feel tissue texture, temperature, and tension?",
+    "choices": [
+      "Gait analysis",
+      "Interview",
+      "Observation",
+      "Palpation"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Palpation = assessing by touch",
+    "explanation": "Palpation means assessing by touch. The therapist feels for warmth, tightness, swelling, and texture in the tissue.\n\n**Wrong choices**\n- Observation: Observation uses the eyes, not the hands.\n- Interview: An interview uses questions and answers.\n- Gait analysis: Gait analysis watches the client walk.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-06",
+    "tags": [
+      "palpation"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "mblex-assessment-0012",
+    "certId": "mblex",
+    "subjectId": "client-assessment",
+    "chapterId": "assessment",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "All of these belong in the Objective section of a SOAP note EXCEPT which one?",
+    "choices": [
+      "The client says she slept poorly",
+      "Shoulder abduction is limited on the right",
+      "Swelling is seen at the left ankle",
+      "Tight tissue is felt in the left calf"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Client reports go in Subjective",
+    "explanation": "The Objective section is for what the therapist sees, feels, or measures. What the client says, such as poor sleep, belongs in the Subjective section.\n\n**Wrong choices**\n- Swelling is seen at the left ankle: Swelling the therapist sees is objective.\n- Shoulder abduction is limited on the right: A limited range of motion the therapist measures is objective.\n- Tight tissue is felt in the left calf: Tight tissue the therapist feels is objective.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-06",
+    "tags": [
+      "SOAP notes"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "mblex-assessment-0013",
+    "certId": "mblex",
+    "subjectId": "client-assessment",
+    "chapterId": "assessment",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "At intake, a client describes sudden pain in one calf with warmth, redness, and swelling. What should the therapist do?",
+    "choices": [
+      "Massage the calf lightly and recheck at the next visit",
+      "Massage the calf firmly to improve circulation",
+      "Not massage the leg and refer the client to a doctor right away",
+      "Apply heat and continue the full session"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Possible clot: no massage, refer now",
+    "explanation": "Sudden calf pain with warmth, redness, and swelling can be a sign of a blood clot (deep vein thrombosis). Massage could move the clot, so the therapist should not work the leg and should refer the client for medical care right away.\n\n**Wrong choices**\n- Massage the calf lightly and recheck at the next visit: Even light massage could move a possible clot, and waiting delays care.\n- Apply heat and continue the full session: Heat and a full session ignore a possible emergency.\n- Massage the calf firmly to improve circulation: Firm massage over a possible clot is dangerous.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-06",
+    "tags": [
+      "DVT",
+      "referral"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  }
+]
