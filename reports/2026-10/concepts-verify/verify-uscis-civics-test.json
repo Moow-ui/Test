@@ -1,0 +1,80 @@
+{
+  "cert": "uscis-civics-test",
+  "checkedAt": "2026-10-07",
+  "by": "separate verifier AI",
+  "chapters": {
+    "principles": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "Republic/constitution-based federal republic/representative democracy match Q1; supreme law Q2; 27 amendments Q7; Declaration 1776, Constitution 1787 (Q79, Q82); rule of law Q13; capitalism/free market Q12.",
+        "Minor wording (not an error): 'Power is split among three branches ... an idea called checks and balances' is strictly separation of powers; USCIS Q15 accepts both, so acceptable. Optional: 'ideas called separation of powers and checks and balances'."
+      ]
+    },
+    "congress": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "100 senators/6 yrs/2 per state, 435 voting members/2 yrs, Great Compromise, public opinion, population-based seats all match Q16-Q35. No current officeholders named."
+      ]
+    },
+    "president-executive": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "4-year term, 22nd Amendment, VP succession, powers list, Cabinet advises, Electoral College compromise all match Q36-Q49. No current officeholders named."
+      ]
+    },
+    "courts-federalism": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "9 seats, 5 to decide, life term/independence, federal-only and state-only powers, 10th Amendment match Q50-Q60. Chief Justice not named.",
+        "Compare row label 'Daily life' for treaties/foreign policy is an odd label but not a factual error."
+      ]
+    },
+    "rights-responsibilities": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "Four voting amendments (15th/19th/24th/26th) described per Q63; citizen-only rights Q64; rights of everyone Q65; Pledge Q66; Oath Q67; citizenship routes Q68; Selective Service 18-25 Q72; taxes required by law Q71."
+      ]
+    },
+    "colonial-independence": {
+      "verdict": "PASS (re-verified)",
+      "problems": [
+        "Summary para 3: \"Thomas Jefferson wrote the Declaration of Independence, which was adopted on July 4, 1776. The Americans then won independence from Britain in the Revolutionary War, with events such as the battles of Bunker Hill, Saratoga, and Yorktown.\" -- 'then' implies the war (including Bunker Hill) came after the Declaration; the war began in April 1775 and Bunker Hill was June 1775, a year before the Declaration. Fix: \"The Revolutionary War had already begun in 1775. Thomas Jefferson wrote the Declaration of Independence, which was adopted on July 4, 1776, and the Americans went on to win the war, with events such as the battles of Bunker Hill, Saratoga, and Yorktown.\""
+      ],
+      "notes": [
+        "13 original states list matches Q81 and all are on the Atlantic coast; Federalist writers Madison/Hamilton/Jay as Publius (Q83); Washington 1st, Jefferson 3rd, Madison 4th/'Father of the Constitution', Hamilton first Treasury Secretary, Franklin inventor/diplomat/first Postmaster General (Q85-Q89).",
+        "Battle of Bunker Hill: June 17, 1775; Lexington and Concord: April 19, 1775 (well-established; britannica)."
+      ],
+      "history": [
+        "1st check FAIL: chronology of war vs Declaration",
+        "2nd check FAIL: Bunker Hill chronology; Pennsylvania not on Atlantic coast",
+        "3rd check PASS after fixes (also fixed Q81 explanation \"All 13 were on the Atlantic coast\")"
+      ]
+    },
+    "the-1800s": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "Louisiana 1803 from France, doubled size (Q87/Q90); 1800s wars (Q91); Civil War events and Lincoln (Q93-Q96); 14th Amendment (ratified 1868, after the war) Q97; 15th Amendment 1870 per Q98; women's rights leaders Q99."
+      ]
+    },
+    "recent-history": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "War-entry reasons match Q101/Q106/Q110/Q111/Q114; 1920 & 19th Amendment Q102; Depression Q103-Q104; FDR Q105; Eisenhower 34th president Q107; Cold War Q108-Q109; civil rights/MLK Q112-Q113; 9/11 and after Q115-Q116; Cherokee/Navajo/Sioux on Q117 list; light bulb/airplane/moon landing on Q118 list."
+      ]
+    },
+    "symbols-holidays": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "Washington, D.C.; Liberty Island/New York Harbor; 13 stripes/50 stars; Star-Spangled Banner; E Pluribus Unum; Independence/Memorial/Veterans Day; 11 holidays all on Q126 list (Q119-Q128)."
+      ]
+    }
+  }
+}
