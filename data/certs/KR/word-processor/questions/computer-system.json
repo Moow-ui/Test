@@ -1,0 +1,414 @@
+[
+  {
+    "id": "word-processor-computer-system-0001",
+    "certId": "word-processor",
+    "subjectId": "pc-basics",
+    "chapterId": "computer-system",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "전원이 꺼지면 저장된 내용이 지워지는 기억장치는?",
+    "choices": [
+      "SSD",
+      "ROM",
+      "RAM",
+      "하드 디스크"
+    ],
+    "answer": 3,
+    "oneLineConcept": "RAM = 휘발성(전원 끄면 지워짐), ROM = 비휘발성",
+    "explanation": "**RAM**은 컴퓨터가 지금 처리하는 프로그램과 자료를 잠시 올려 두는 주기억장치입니다. 읽고 쓰기가 자유롭지만, **전원이 꺼지면 내용이 지워지는**(휘발성) 성질이 있습니다. 그래서 작업한 문서는 꼭 저장해야 합니다.\n\n**틀린 선지**\n- SSD: SSD 는 전원이 꺼져도 자료가 남는 보조기억장치입니다.\n- ROM: ROM 은 전원이 꺼져도 내용이 남는 기억장치입니다.\n- 하드 디스크: 하드 디스크는 전원이 꺼져도 자료가 남는 보조기억장치입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-07",
+    "tags": [
+      "기억장치",
+      "RAM"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "word-processor-computer-system-0002",
+    "certId": "word-processor",
+    "subjectId": "pc-basics",
+    "chapterId": "computer-system",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "CPU와 주기억장치 사이의 속도 차이를 줄이려고 그 사이에 두는 매우 빠른 메모리는?",
+    "choices": [
+      "하드 디스크",
+      "캐시 메모리",
+      "가상 메모리",
+      "플래시 메모리"
+    ],
+    "answer": 2,
+    "oneLineConcept": "캐시 = CPU와 RAM 사이 속도 차이를 줄이는 고속 메모리",
+    "explanation": "**캐시 메모리**는 CPU 가 자주 쓰는 자료를 미리 담아 두는 **아주 빠른 메모리**입니다. 빠른 CPU 와 상대적으로 느린 주기억장치(RAM) 사이의 **속도 차이를 줄여** 컴퓨터 전체 처리 속도를 높입니다.\n\n**틀린 선지**\n- 하드 디스크: 하드 디스크는 대용량 보조기억장치로 속도가 느립니다.\n- 가상 메모리: 가상 메모리는 보조기억장치의 일부를 주기억장치처럼 쓰는 방식으로, 속도를 높이는 것이 아니라 부족한 용량을 채우는 것입니다.\n- 플래시 메모리: 플래시 메모리는 USB 메모리 등에 쓰이는, 전원이 꺼져도 내용이 남는 메모리입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-07",
+    "tags": [
+      "기억장치",
+      "캐시 메모리"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "word-processor-computer-system-0003",
+    "certId": "word-processor",
+    "subjectId": "pc-basics",
+    "chapterId": "computer-system",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "다음 중 시스템 소프트웨어에 해당하는 것은?",
+    "choices": [
+      "운영체제",
+      "웹 브라우저",
+      "워드프로세서",
+      "스프레드시트"
+    ],
+    "answer": 1,
+    "oneLineConcept": "시스템 SW = 운영체제 등 / 응용 SW = 워드·브라우저 등",
+    "explanation": "**시스템 소프트웨어**는 컴퓨터 자체를 움직이고 관리하는 소프트웨어로, **운영체제**(Windows 등)와 언어 번역 프로그램 등이 있습니다. **응용 소프트웨어**는 문서 작성, 계산, 인터넷처럼 사용자가 원하는 일을 하는 프로그램입니다.\n\n**틀린 선지**\n- 웹 브라우저: 웹 브라우저는 인터넷을 보는 응용 소프트웨어입니다.\n- 워드프로세서: 워드프로세서는 문서를 만드는 특정 목적의 응용 소프트웨어입니다.\n- 스프레드시트: 스프레드시트는 표 계산을 하는 응용 소프트웨어입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-07",
+    "tags": [
+      "소프트웨어",
+      "운영체제"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "word-processor-computer-system-0004",
+    "certId": "word-processor",
+    "subjectId": "pc-basics",
+    "chapterId": "computer-system",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "CPU에서 덧셈·뺄셈 같은 산술 연산과 크다·작다를 비교하는 논리 연산을 하는 장치는?",
+    "choices": [
+      "주기억장치",
+      "연산장치",
+      "제어장치",
+      "입력장치"
+    ],
+    "answer": 2,
+    "oneLineConcept": "CPU = 연산장치(계산) + 제어장치(지시) + 레지스터",
+    "explanation": "CPU(중앙처리장치)는 크게 세 부분입니다.\n- **연산장치(ALU)**: 산술 연산과 논리 연산을 합니다.\n- **제어장치**: 명령을 해석하고 각 장치에 지시를 내립니다.\n- **레지스터**: 처리 중인 자료를 잠시 기억하는 아주 빠른 기억 공간입니다.\n\n**틀린 선지**\n- 주기억장치: 주기억장치는 처리할 프로그램과 자료를 기억하는 장치입니다.\n- 제어장치: 제어장치는 명령을 해석하고 각 장치에 지시를 내리는 장치로, 직접 계산하지는 않습니다.\n- 입력장치: 입력장치는 키보드, 마우스처럼 자료를 컴퓨터에 넣는 장치입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-07",
+    "tags": [
+      "CPU",
+      "연산장치"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "word-processor-computer-system-0005",
+    "certId": "word-processor",
+    "subjectId": "pc-basics",
+    "chapterId": "computer-system",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "디지털 컴퓨터의 특징으로 옳은 것은?",
+    "choices": [
+      "정밀도가 낮고 기억 기능이 없다.",
+      "숫자나 문자처럼 띄엄띄엄 떨어진 값(이산 데이터)을 처리한다.",
+      "전압·온도처럼 연속적으로 변하는 값을 그대로 처리한다.",
+      "프로그램이 없어도 일을 처리한다."
+    ],
+    "answer": 2,
+    "oneLineConcept": "디지털 = 이산 데이터·프로그램 필요·높은 정밀도",
+    "explanation": "**디지털 컴퓨터**는 숫자·문자처럼 0과 1로 나타내는 **띄엄띄엄 떨어진 값**(이산 데이터)을 처리합니다. 프로그램이 필요하고, 정밀도가 높으며, 기억 기능이 있습니다. 반면 **아날로그 컴퓨터**는 전압·온도처럼 **연속적으로 변하는 값**을 처리합니다.\n\n**틀린 선지**\n- 정밀도가 낮고 기억 기능이 없다.: 디지털 컴퓨터는 정밀도가 높고 기억 기능이 있습니다.\n- 전압·온도처럼 연속적으로 변하는 값을 그대로 처리한다.: 연속적으로 변하는 값을 그대로 처리하는 것은 아날로그 컴퓨터입니다.\n- 프로그램이 없어도 일을 처리한다.: 디지털 컴퓨터는 프로그램이 있어야 일을 처리합니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-07",
+    "tags": [
+      "컴퓨터 분류",
+      "디지털 컴퓨터"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "word-processor-computer-system-0006",
+    "certId": "word-processor",
+    "subjectId": "pc-basics",
+    "chapterId": "computer-system",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "2진수 1011을 10진수로 바꾸면 얼마인가?",
+    "choices": [
+      "13",
+      "11",
+      "9",
+      "10"
+    ],
+    "answer": 2,
+    "oneLineConcept": "2진수 → 10진수: 각 자리 숫자 × 자리값(8·4·2·1)을 더한다",
+    "explanation": "2진수는 오른쪽부터 자리값이 1, 2, 4, 8 … 로 두 배씩 커집니다.\n1. 자리값: 1011 → 8의 자리 1, 4의 자리 0, 2의 자리 1, 1의 자리 1\n2. 계산: 1×8 + 0×4 + 1×2 + 1×1 = 8 + 0 + 2 + 1 = **11**\n3. 검산: 11 = 8 + 2 + 1 이므로 8·2·1 자리에 1, 4 자리에 0 → 1011 이 맞습니다.\n\n**틀린 선지**\n- 13: 13을 2진수로 나타내면 1101입니다. 자리 순서를 거꾸로 읽으면 이런 실수가 생깁니다.\n- 9: 9를 2진수로 나타내면 1001입니다.\n- 10: 10을 2진수로 나타내면 1010입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-07",
+    "tags": [
+      "진법 변환",
+      "2진수"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "word-processor-computer-system-0007",
+    "certId": "word-processor",
+    "subjectId": "pc-basics",
+    "chapterId": "computer-system",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "기억 용량 단위를 작은 것부터 큰 것 순서로 옳게 나열한 것은?",
+    "choices": [
+      "KB → MB → GB → TB",
+      "KB → MB → TB → GB",
+      "MB → KB → GB → TB",
+      "KB → GB → MB → TB"
+    ],
+    "answer": 1,
+    "oneLineConcept": "용량 단위: KB < MB < GB < TB (한 단계마다 약 1,024배)",
+    "explanation": "기억 용량 단위는 한 단계 올라갈 때마다 약 **1,024배**(2의 10제곱)씩 커집니다.\n1. 1KB(킬로바이트) = 1,024바이트\n2. 1MB(메가바이트) = 1,024KB\n3. 1GB(기가바이트) = 1,024MB\n4. 1TB(테라바이트) = 1,024GB\n따라서 작은 것부터 **KB → MB → GB → TB** 입니다.\n\n**틀린 선지**\n- KB → MB → TB → GB: TB 는 GB 의 약 1,024배로 GB 보다 큽니다.\n- MB → KB → GB → TB: KB 가 MB 보다 작으므로 KB 가 맨 앞에 와야 합니다.\n- KB → GB → MB → TB: MB 가 GB 보다 작으므로 GB 가 MB 앞에 올 수 없습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-07",
+    "tags": [
+      "기억 용량",
+      "단위"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "word-processor-computer-system-0008",
+    "certId": "word-processor",
+    "subjectId": "pc-basics",
+    "chapterId": "computer-system",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "CMOS 설정(바이오스 설정) 화면에서 할 수 있는 일로 옳은 것은?",
+    "choices": [
+      "인쇄 대기열의 문서를 취소한다.",
+      "문서에 쓸 새 글꼴을 추가한다.",
+      "Windows 앱을 설치하거나 제거한다.",
+      "부팅할 때 먼저 읽을 장치의 순서를 바꾼다."
+    ],
+    "answer": 4,
+    "oneLineConcept": "CMOS 설정 = 부팅 순서·날짜/시간·하드웨어 기본 설정",
+    "explanation": "**CMOS 설정**은 컴퓨터를 켤 때 Windows 가 시작되기 전에 들어가는 설정 화면으로, **부팅 순서**, 시스템 날짜와 시간, 하드웨어 기본 설정, 시스템 암호 등을 정합니다. 앱 설치나 글꼴 추가는 Windows 안에서 하는 일입니다.\n\n**틀린 선지**\n- 인쇄 대기열의 문서를 취소한다.: 인쇄 대기열은 Windows 의 프린터 설정에서 다룹니다.\n- 문서에 쓸 새 글꼴을 추가한다.: 글꼴 추가는 Windows 의 글꼴 설정에서 합니다.\n- Windows 앱을 설치하거나 제거한다.: 앱 설치·제거는 Windows 가 켜진 뒤 설정 앱 등에서 합니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-07",
+    "tags": [
+      "CMOS",
+      "PC 유지보수"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "word-processor-computer-system-0009",
+    "certId": "word-processor",
+    "subjectId": "pc-basics",
+    "chapterId": "computer-system",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "ROM에 대한 설명으로 옳지 않은 것은?",
+    "choices": [
+      "전원이 꺼지면 저장된 내용이 모두 지워진다.",
+      "전기적으로 내용을 다시 쓸 수 있는 종류(EEPROM)도 있다.",
+      "기본적으로 읽기 전용 기억장치이다.",
+      "바이오스(BIOS) 같은 펌웨어를 저장하는 데 쓰인다."
+    ],
+    "answer": 1,
+    "oneLineConcept": "ROM = 비휘발성 읽기 전용, 바이오스 등 펌웨어 저장",
+    "explanation": "**ROM**은 **전원이 꺼져도 내용이 남는**(비휘발성) 기억장치입니다. 그래서 컴퓨터를 켤 때 꼭 필요한 바이오스 같은 **펌웨어**를 담아 둡니다. 전원이 꺼지면 내용이 지워지는 것은 RAM 의 특징입니다.\n\n**나머지는 옳은 설명**\n- 전기적으로 내용을 다시 쓸 수 있는 종류(EEPROM)도 있다.: EEPROM, 플래시 메모리처럼 전기로 내용을 지우고 다시 쓸 수 있는 ROM 도 있습니다.\n- 기본적으로 읽기 전용 기억장치이다.: ROM 은 Read Only Memory 로, 기본적으로 읽기만 하는 기억장치입니다.\n- 바이오스(BIOS) 같은 펌웨어를 저장하는 데 쓰인다.: 컴퓨터를 켤 때 필요한 바이오스 같은 펌웨어가 ROM 에 들어 있습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-07",
+    "tags": [
+      "기억장치",
+      "ROM"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "word-processor-computer-system-0010",
+    "certId": "word-processor",
+    "subjectId": "pc-basics",
+    "chapterId": "computer-system",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "기능이나 사용 기간에 제한 없이 누구나 무료로 쓸 수 있도록 공개한 소프트웨어는?",
+    "choices": [
+      "데모 버전",
+      "셰어웨어",
+      "상용 소프트웨어",
+      "프리웨어"
+    ],
+    "answer": 4,
+    "oneLineConcept": "프리웨어 = 무료·제한 없음, 셰어웨어 = 기간·기능 제한 후 구매",
+    "explanation": "소프트웨어는 쓰는 조건에 따라 나뉩니다. **프리웨어**는 **무료**로 제한 없이 쓸 수 있고, **셰어웨어**는 일정 기간 또는 일부 기능만 무료로 써 본 뒤 계속 쓰려면 사야 합니다. **상용 소프트웨어**는 처음부터 사서 씁니다.\n\n**틀린 선지**\n- 데모 버전: 데모 버전은 홍보를 위해 기능 일부만 맛보기로 보여 주는 소프트웨어입니다.\n- 셰어웨어: 셰어웨어는 일정 기간 무료로 써 보게 하고, 계속 쓰려면 돈을 내야 하는 소프트웨어입니다.\n- 상용 소프트웨어: 상용 소프트웨어는 돈을 내고 사서 쓰는 소프트웨어입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-07",
+    "tags": [
+      "소프트웨어",
+      "프리웨어"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "word-processor-computer-system-0011",
+    "certId": "word-processor",
+    "subjectId": "pc-basics",
+    "chapterId": "computer-system",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "기억장치를 접근 속도가 빠른 것부터 느린 것 순서로 옳게 나열한 것은?",
+    "choices": [
+      "보조기억장치 → 주기억장치 → 캐시 메모리 → 레지스터",
+      "캐시 메모리 → 레지스터 → 주기억장치 → 보조기억장치",
+      "레지스터 → 주기억장치 → 캐시 메모리 → 보조기억장치",
+      "레지스터 → 캐시 메모리 → 주기억장치 → 보조기억장치"
+    ],
+    "answer": 4,
+    "oneLineConcept": "속도: 레지스터 > 캐시 > 주기억장치 > 보조기억장치",
+    "explanation": "기억장치는 CPU 에 가까울수록 빠르고 용량이 작습니다.\n1. **레지스터**: CPU 안에 있어 가장 빠릅니다.\n2. **캐시 메모리**: CPU 와 주기억장치 사이에서 속도 차이를 줄입니다.\n3. **주기억장치**(RAM): 실행 중인 프로그램을 올려 둡니다.\n4. **보조기억장치**(하드 디스크, SSD 등): 가장 느리지만 용량이 큽니다.\n\n**틀린 선지**\n- 보조기억장치 → 주기억장치 → 캐시 메모리 → 레지스터: 느린 것부터 빠른 것 순서로 거꾸로 나열했습니다.\n- 캐시 메모리 → 레지스터 → 주기억장치 → 보조기억장치: CPU 안에 있는 레지스터가 캐시 메모리보다 더 빠릅니다.\n- 레지스터 → 주기억장치 → 캐시 메모리 → 보조기억장치: 캐시 메모리는 주기억장치보다 빨라서 그 사이의 속도 차이를 줄이는 메모리입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-07",
+    "tags": [
+      "기억장치",
+      "접근 속도"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "word-processor-computer-system-0012",
+    "certId": "word-processor",
+    "subjectId": "pc-basics",
+    "chapterId": "computer-system",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "입출력 장치에 대한 설명으로 옳지 않은 것은?",
+    "choices": [
+      "OMR은 카드에 표시한 자리를 빛으로 읽어 들이는 입력 장치이다.",
+      "터치스크린은 입력과 출력을 함께 하는 장치이다.",
+      "모니터의 해상도는 화면을 이루는 픽셀 수로 나타내며, 수치가 클수록 화면이 거칠어진다.",
+      "프린터의 해상도 단위로 1인치당 점의 수를 뜻하는 DPI를 쓴다."
+    ],
+    "answer": 3,
+    "oneLineConcept": "해상도: 픽셀 수가 많을수록 화면이 더 선명",
+    "explanation": "**해상도**는 화면을 이루는 **픽셀**(화소, 작은 점)의 수로 나타냅니다(예: 1920×1080). 픽셀 수가 **많을수록** 같은 화면을 더 촘촘하게 그리므로 **선명해집니다**. 따라서 수치가 클수록 거칠어진다는 설명이 틀렸습니다.\n\n**나머지는 옳은 설명**\n- OMR은 카드에 표시한 자리를 빛으로 읽어 들이는 입력 장치이다.: 시험 답안 카드를 읽는 OMR(광학 마크 판독기)에 대한 바른 설명입니다.\n- 터치스크린은 입력과 출력을 함께 하는 장치이다.: 화면을 손가락으로 눌러 입력하면서 화면으로 결과도 보여 주므로 입출력을 함께 합니다.\n- 프린터의 해상도 단위로 1인치당 점의 수를 뜻하는 DPI를 쓴다.: 프린터 해상도는 DPI 로 나타내며, 수치가 클수록 곱게 인쇄됩니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-07",
+    "tags": [
+      "입출력 장치",
+      "해상도"
+    ],
+    "levelLock": true
+  }
+]

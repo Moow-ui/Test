@@ -1,0 +1,316 @@
+[
+  {
+    "id": "word-processor-multimedia-internet-0001",
+    "certId": "word-processor",
+    "subjectId": "pc-basics",
+    "chapterId": "multimedia-internet",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "IPv6 주소는 몇 비트로 이루어져 있는가?",
+    "choices": [
+      "256비트",
+      "128비트",
+      "64비트",
+      "32비트"
+    ],
+    "answer": 2,
+    "oneLineConcept": "IPv4 = 32비트, IPv6 = 128비트",
+    "explanation": "인터넷 주소(IP 주소)는 두 가지 체계가 있습니다. **IPv4**는 **32비트**로 점(.)으로 나눈 4개의 10진수로 쓰고, 주소가 모자라는 문제를 풀려고 만든 **IPv6**는 **128비트**로 콜론(:)으로 나눈 8개의 16진수로 씁니다.\n\n**틀린 선지**\n- 256비트: 256비트는 IP 주소 체계의 길이가 아닙니다.\n- 64비트: 64비트는 IP 주소 체계의 길이가 아닙니다.\n- 32비트: 32비트는 IPv4 주소의 길이입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-07",
+    "tags": [
+      "IP 주소",
+      "IPv6"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "word-processor-multimedia-internet-0002",
+    "certId": "word-processor",
+    "subjectId": "pc-basics",
+    "chapterId": "multimedia-internet",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "서로 다른 네트워크 사이에서 데이터가 갈 가장 알맞은 경로를 찾아 보내 주는 장비는?",
+    "choices": [
+      "랜카드",
+      "허브",
+      "리피터",
+      "라우터"
+    ],
+    "answer": 4,
+    "oneLineConcept": "라우터 = 다른 네트워크 사이 최적 경로 선택",
+    "explanation": "**라우터**는 서로 다른 네트워크를 연결하고, 데이터가 목적지까지 갈 **가장 알맞은 경로**를 골라 보내는 장비입니다. 집에서 쓰는 공유기도 라우터 기능을 합니다.\n\n**틀린 선지**\n- 랜카드: 랜카드는 컴퓨터를 네트워크에 연결하는 부품입니다.\n- 허브: 허브는 여러 컴퓨터를 한 네트워크 안에 묶어 연결하는 장비로, 경로를 고르지 않습니다.\n- 리피터: 리피터는 약해진 신호를 다시 키워 멀리 보내는 장비입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-07",
+    "tags": [
+      "네트워크 장비",
+      "라우터"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "word-processor-multimedia-internet-0003",
+    "certId": "word-processor",
+    "subjectId": "pc-basics",
+    "chapterId": "multimedia-internet",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "사진을 저장할 때 많이 쓰는, 손실 압축 방식의 그림 파일 형식은?",
+    "choices": [
+      "JPEG",
+      "MP3",
+      "BMP",
+      "MIDI"
+    ],
+    "answer": 1,
+    "oneLineConcept": "JPEG = 사진용 손실 압축 그림 형식",
+    "explanation": "**JPEG**(JPG)는 사진처럼 색이 많은 그림을 작은 용량으로 저장하는 **손실 압축** 형식입니다. 눈에 잘 띄지 않는 정보를 조금 버리고 크게 줄이므로 디지털카메라와 인터넷에서 가장 많이 씁니다.\n\n**틀린 선지**\n- MP3: MP3 는 소리(음악) 파일 형식입니다.\n- BMP: BMP 는 대체로 압축하지 않는 그림 형식이라 파일이 큽니다.\n- MIDI: MIDI 는 악기 연주 정보를 저장하는 소리 형식입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-07",
+    "tags": [
+      "그림 파일 형식",
+      "JPEG"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "word-processor-multimedia-internet-0004",
+    "certId": "word-processor",
+    "subjectId": "pc-basics",
+    "chapterId": "multimedia-internet",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "인터넷에서 웹 페이지 같은 자료가 있는 위치를 나타내는 표준 주소 형식(예: https://www.example.com/index.html)은?",
+    "choices": [
+      "URL",
+      "HTML",
+      "FTP",
+      "DNS"
+    ],
+    "answer": 1,
+    "oneLineConcept": "URL = 인터넷 자료 위치를 나타내는 주소",
+    "explanation": "**URL**은 인터넷에 있는 자료의 **위치**를 나타내는 표준 주소입니다. 보통 '프로토콜://호스트(도메인) 이름/경로/파일 이름' 형식이며, 예시 주소에서 https 는 프로토콜, www.example.com 은 도메인 이름, index.html 은 파일 이름입니다.\n\n**틀린 선지**\n- HTML: HTML 은 웹 페이지를 만드는 언어입니다.\n- FTP: FTP 는 파일을 주고받는 프로토콜입니다.\n- DNS: DNS 는 도메인 이름을 IP 주소로 바꾸는 체계(서버)입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-07",
+    "tags": [
+      "인터넷 주소",
+      "URL"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "word-processor-multimedia-internet-0005",
+    "certId": "word-processor",
+    "subjectId": "pc-basics",
+    "chapterId": "multimedia-internet",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "가로 1,024 × 세로 768 해상도에 한 픽셀당 24비트(3바이트) 색을 쓰는 그림 한 장을 압축하지 않고 저장할 때의 용량은?",
+    "choices": [
+      "786,432바이트(768KB)",
+      "6,291,456바이트(6MB)",
+      "2,359,296바이트(약 2.25MB)",
+      "18,874,368바이트(18MB)"
+    ],
+    "answer": 3,
+    "oneLineConcept": "그림 용량 = 가로 × 세로 × 픽셀당 바이트 수",
+    "explanation": "압축하지 않은 그림의 용량은 '픽셀 수 × 픽셀당 바이트 수'로 구합니다.\n1. 픽셀 수: 1,024 × 768 = 786,432개\n2. 픽셀당 24비트 = 24 ÷ 8 = 3바이트\n3. 용량: 786,432 × 3 = **2,359,296바이트**\n4. MB로 바꾸기: 2,359,296 ÷ 1,048,576(1MB) = 2.25MB\n5. 검산: 2.25 × 1,048,576 = 2,359,296 으로 맞습니다.\n\n**틀린 선지**\n- 786,432바이트(768KB): 픽셀 수만 구하고 픽셀당 3바이트를 곱하지 않았습니다.\n- 6,291,456바이트(6MB): 픽셀당 3바이트가 아니라 8바이트를 곱했습니다.\n- 18,874,368바이트(18MB): 픽셀당 24'비트'를 24'바이트'로 잘못 곱했습니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-07",
+    "tags": [
+      "멀티미디어",
+      "용량 계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "word-processor-multimedia-internet-0006",
+    "certId": "word-processor",
+    "subjectId": "pc-basics",
+    "chapterId": "multimedia-internet",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "한 건물이나 학교처럼 비교적 가까운 지역 안의 컴퓨터들을 연결하는 통신망은?",
+    "choices": [
+      "WAN(광역 통신망)",
+      "VAN(부가가치 통신망)",
+      "LAN(근거리 통신망)",
+      "MAN(도시권 통신망)"
+    ],
+    "answer": 3,
+    "oneLineConcept": "범위: LAN(건물) < MAN(도시) < WAN(나라·대륙)",
+    "explanation": "통신망은 연결하는 범위에 따라 나눕니다. **LAN**(근거리 통신망)은 건물·학교·회사처럼 **가까운 지역**, **MAN**은 도시 정도, **WAN**은 나라나 대륙처럼 넓은 지역을 연결합니다. **VAN**은 범위가 아니라 부가 서비스를 기준으로 한 이름입니다.\n\n**틀린 선지**\n- WAN(광역 통신망): WAN 은 나라나 대륙처럼 넓은 지역을 연결하는 통신망입니다.\n- VAN(부가가치 통신망): VAN 은 통신 회선에 정보 처리 같은 부가 서비스를 더해 제공하는 통신망입니다.\n- MAN(도시권 통신망): MAN 은 한 도시 정도의 지역을 연결하는 통신망입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-07",
+    "tags": [
+      "통신망",
+      "LAN"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "word-processor-multimedia-internet-0007",
+    "certId": "word-processor",
+    "subjectId": "pc-basics",
+    "chapterId": "multimedia-internet",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "웹 페이지를 주고받는 프로토콜에 암호화를 더해, 주고받는 내용을 안전하게 보호하는 것은?",
+    "choices": [
+      "SMTP",
+      "HTTPS",
+      "FTP",
+      "HTTP"
+    ],
+    "answer": 2,
+    "oneLineConcept": "HTTPS = 암호화한 HTTP (주소창 자물쇠 표시)",
+    "explanation": "**HTTP**는 웹 페이지를 주고받는 프로토콜(통신 약속)이고, **HTTPS**는 여기에 **암호화**를 더해 비밀번호나 카드 정보 같은 내용이 중간에서 엿보이지 않게 보호합니다. 브라우저 주소창의 자물쇠 표시로 확인할 수 있습니다.\n\n**틀린 선지**\n- SMTP: SMTP 는 전자우편을 보내는 프로토콜입니다.\n- FTP: FTP 는 파일을 주고받는 프로토콜입니다.\n- HTTP: HTTP 는 웹 페이지를 주고받는 프로토콜이지만 내용을 암호화하지 않습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-07",
+    "tags": [
+      "프로토콜",
+      "HTTPS"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "word-processor-multimedia-internet-0008",
+    "certId": "word-processor",
+    "subjectId": "pc-basics",
+    "chapterId": "multimedia-internet",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "100MB(메가바이트) 파일을 초당 8Mbps(초당 8메가비트) 속도로 보낼 때 걸리는 시간은? (1바이트 = 8비트, 다른 지연은 없다고 본다)",
+    "choices": [
+      "8초",
+      "100초",
+      "12.5초",
+      "800초"
+    ],
+    "answer": 2,
+    "oneLineConcept": "전송 시간 = 파일 크기(비트) ÷ 전송 속도(bps)",
+    "explanation": "전송 속도 단위 bps 는 '초당 비트 수'이므로 파일 크기를 먼저 **비트**로 바꿉니다.\n1. 바이트 → 비트: 100MB × 8 = 800Mb(메가비트)\n2. 시간 = 800Mb ÷ 8Mbps = **100초**\n3. 검산: 8Mb × 100초 = 800Mb = 100MB 로 맞습니다.\n\n**틀린 선지**\n- 8초: 8초 동안에는 8Mbps × 8초 = 64Mb(8MB)밖에 보내지 못합니다.\n- 12.5초: 100MB 를 비트로 바꾸지 않고 바로 8로 나누었습니다. 12.5초 동안에는 8Mbps × 12.5초 = 100Mb(12.5MB)밖에 보내지 못합니다.\n- 800초: 800Mb 로 바꾼 뒤 속도 8Mbps 로 나누지 않았습니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-07",
+    "tags": [
+      "전송 속도",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "word-processor-multimedia-internet-0009",
+    "certId": "word-processor",
+    "subjectId": "pc-basics",
+    "chapterId": "multimedia-internet",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "멀티미디어 파일 형식에 대한 설명으로 옳지 않은 것은?",
+    "choices": [
+      "GIF는 1,600만 가지가 넘는 색(24비트)을 표현할 수 있어 사진 저장에 가장 알맞다.",
+      "MIDI는 실제 소리를 녹음한 것이 아니라 연주 정보를 저장하므로 용량이 작다.",
+      "BMP는 대체로 압축하지 않는 비트맵 형식이라 파일 용량이 크다.",
+      "MP4는 소리와 영상을 함께 담을 수 있는 동영상 형식이다."
+    ],
+    "answer": 1,
+    "oneLineConcept": "GIF = 256색, 움직이는 그림 / 사진은 JPEG",
+    "explanation": "**GIF**는 최대 **256색**까지만 표현하는 그림 형식으로, 간단한 그림이나 **움직이는 그림**(애니메이션)에 많이 씁니다. 색이 많은 사진에는 JPEG 가 알맞습니다. 따라서 GIF 가 1,600만 가지 넘는 색을 표현해 사진에 가장 알맞다는 설명이 틀렸습니다.\n\n**나머지는 옳은 설명**\n- MIDI는 실제 소리를 녹음한 것이 아니라 연주 정보를 저장하므로 용량이 작다.: MIDI 에 대한 바른 설명입니다.\n- BMP는 대체로 압축하지 않는 비트맵 형식이라 파일 용량이 크다.: BMP 에 대한 바른 설명입니다.\n- MP4는 소리와 영상을 함께 담을 수 있는 동영상 형식이다.: MP4 에 대한 바른 설명입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-07",
+    "tags": [
+      "파일 형식",
+      "GIF"
+    ],
+    "levelLock": true
+  }
+]

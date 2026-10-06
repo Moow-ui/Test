@@ -1,0 +1,280 @@
+[
+  {
+    "id": "word-processor-security-privacy-0001",
+    "certId": "word-processor",
+    "subjectId": "pc-basics",
+    "chapterId": "security-privacy",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "컴퓨터의 파일을 암호화해 쓰지 못하게 만든 뒤, 풀어 주는 대가로 돈을 요구하는 악성 프로그램은?",
+    "choices": [
+      "애드웨어",
+      "랜섬웨어",
+      "웜",
+      "스파이웨어"
+    ],
+    "answer": 2,
+    "oneLineConcept": "랜섬웨어 = 파일 암호화 후 몸값 요구",
+    "explanation": "**랜섬웨어**는 몸값(ransom)과 소프트웨어(software)를 합친 말로, 파일을 **암호화**해 열지 못하게 만든 뒤 풀어 주는 대가로 **돈을 요구**합니다. 가장 좋은 대비는 중요한 자료를 따로 **백업**해 두는 것입니다.\n\n**틀린 선지**\n- 애드웨어: 애드웨어는 광고를 자꾸 띄우는 프로그램입니다.\n- 웜: 웜은 스스로 복제하며 네트워크로 퍼지는 악성 프로그램입니다.\n- 스파이웨어: 스파이웨어는 몰래 설치되어 사용자 정보를 빼내는 프로그램으로, 파일을 잠그고 돈을 요구하지는 않습니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-07",
+    "tags": [
+      "악성 프로그램",
+      "랜섬웨어"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "word-processor-security-privacy-0002",
+    "certId": "word-processor",
+    "subjectId": "pc-basics",
+    "chapterId": "security-privacy",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "'택배 주소 확인' 같은 문자 메시지 속 인터넷 주소를 누르게 해서 악성 앱을 설치하거나 개인정보를 빼내는 수법은?",
+    "choices": [
+      "스미싱",
+      "스푸핑",
+      "파밍",
+      "스니핑"
+    ],
+    "answer": 1,
+    "oneLineConcept": "스미싱 = 문자(SMS) + 피싱",
+    "explanation": "**스미싱**은 문자 메시지(SMS)와 피싱(phishing)을 합친 말입니다. 택배·청첩장·부고 같은 **문자 메시지**에 인터넷 주소를 넣어 누르게 한 뒤, 악성 앱을 설치하거나 개인정보·금융 정보를 빼냅니다. 모르는 문자의 주소는 누르지 않는 것이 가장 좋습니다.\n\n**틀린 선지**\n- 스푸핑: 스푸핑은 주소나 신분을 속여 믿을 만한 상대인 것처럼 꾸미는 수법입니다.\n- 파밍: 파밍은 PC 나 공유기 설정을 조작해 정상 주소를 입력해도 가짜 사이트로 가게 하는 수법입니다.\n- 스니핑: 스니핑은 네트워크에 오가는 자료를 몰래 엿보는 수법입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-07",
+    "tags": [
+      "보안 위협",
+      "스미싱"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "word-processor-security-privacy-0003",
+    "certId": "word-processor",
+    "subjectId": "pc-basics",
+    "chapterId": "security-privacy",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "랜섬웨어 같은 악성 프로그램 피해에 대비하는 가장 기본적인 방법은?",
+    "choices": [
+      "중요한 자료를 다른 저장 장치에 정기적으로 백업한다.",
+      "백신 프로그램을 꺼서 컴퓨터 속도를 높인다.",
+      "출처를 모르는 메일의 첨부 파일도 일단 열어 확인한다.",
+      "운영체제 보안 업데이트를 하지 않는다."
+    ],
+    "answer": 1,
+    "oneLineConcept": "기본 대비: 정기 백업 + 백신 + 보안 업데이트",
+    "explanation": "악성 프로그램에 대비하는 가장 기본은 **정기적인 백업**입니다. 파일이 망가지거나 잠겨도 백업본으로 되살릴 수 있습니다. 여기에 **백신 프로그램**을 켜 두고, 운영체제 **보안 업데이트**를 하고, 모르는 첨부 파일은 열지 않는 습관을 함께 지킵니다.\n\n**틀린 선지**\n- 백신 프로그램을 꺼서 컴퓨터 속도를 높인다.: 백신을 끄면 악성 프로그램을 막지 못해 더 위험해집니다.\n- 출처를 모르는 메일의 첨부 파일도 일단 열어 확인한다.: 출처를 모르는 첨부 파일은 악성 프로그램일 수 있으므로 열지 않습니다.\n- 운영체제 보안 업데이트를 하지 않는다.: 보안 업데이트는 알려진 약점을 막아 주므로 꼭 설치해야 합니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-07",
+    "tags": [
+      "보안 대책",
+      "백업"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "word-processor-security-privacy-0004",
+    "certId": "word-processor",
+    "subjectId": "pc-basics",
+    "chapterId": "security-privacy",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "다른 파일에 붙지 않고도 스스로 복제하여 네트워크를 통해 다른 컴퓨터로 퍼지는 악성 프로그램은?",
+    "choices": [
+      "스파이웨어",
+      "트로이 목마",
+      "애드웨어",
+      "웜"
+    ],
+    "answer": 4,
+    "oneLineConcept": "웜 = 스스로 복제하며 네트워크로 퍼짐",
+    "explanation": "**웜**(worm)은 다른 파일에 기생하지 않고 **스스로 복제**해 네트워크를 타고 퍼지는 악성 프로그램입니다. 빠르게 퍼지며 네트워크를 느리게 만들기도 합니다. 반면 **트로이 목마**는 스스로 복제하지 않습니다.\n\n**틀린 선지**\n- 스파이웨어: 스파이웨어는 몰래 정보를 빼내는 프로그램으로, 스스로 복제하며 퍼지는 것이 특징이 아닙니다.\n- 트로이 목마: 트로이 목마는 유용한 프로그램처럼 꾸며 몰래 나쁜 일을 하지만, 스스로 복제해 퍼지지는 않습니다.\n- 애드웨어: 애드웨어는 광고를 띄우는 프로그램입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-07",
+    "tags": [
+      "악성 프로그램",
+      "웜"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "word-processor-security-privacy-0005",
+    "certId": "word-processor",
+    "subjectId": "pc-basics",
+    "chapterId": "security-privacy",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "많은 양의 요청을 한꺼번에 보내 서버가 정상적인 서비스를 하지 못하게 만드는 공격은?",
+    "choices": [
+      "피싱",
+      "서비스 거부 공격(DoS)",
+      "스니핑",
+      "키로거"
+    ],
+    "answer": 2,
+    "oneLineConcept": "DoS = 요청 폭주로 서비스 마비 (여러 대 동원하면 DDoS)",
+    "explanation": "**서비스 거부 공격(DoS)**은 서버가 감당할 수 없을 만큼 요청을 쏟아부어 **정상적인 서비스를 못 하게** 만드는 공격입니다. 여러 대의 컴퓨터를 동원해 한꺼번에 공격하면 **분산 서비스 거부 공격(DDoS)**이라고 합니다.\n\n**틀린 선지**\n- 피싱: 피싱은 가짜 누리집이나 메일로 개인정보를 빼내는 수법입니다.\n- 스니핑: 스니핑은 네트워크에 오가는 자료를 몰래 엿보는 것으로, 서버를 마비시키는 공격이 아닙니다.\n- 키로거: 키로거는 키보드로 입력한 내용을 몰래 기록하는 프로그램입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-07",
+    "tags": [
+      "보안 위협",
+      "DoS"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "word-processor-security-privacy-0006",
+    "certId": "word-processor",
+    "subjectId": "pc-basics",
+    "chapterId": "security-privacy",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "저작권에 대한 설명으로 옳지 않은 것은?",
+    "choices": [
+      "남의 글을 인용할 때는 출처를 밝혀야 한다.",
+      "저작권은 저작물을 창작한 때부터 생긴다.",
+      "컴퓨터 프로그램도 저작물로 보호받는다.",
+      "저작권은 저작물을 관청에 등록해야만 생긴다."
+    ],
+    "answer": 4,
+    "oneLineConcept": "저작권 = 창작과 동시에 발생(등록 불필요)",
+    "explanation": "**저작권**은 글, 그림, 음악, 컴퓨터 프로그램 같은 저작물을 **창작한 때부터** 저절로 생깁니다. 등록은 권리를 증명하는 데 도움이 될 뿐, 권리가 생기는 조건은 아닙니다. 따라서 등록해야만 생긴다는 설명이 틀렸습니다.\n\n**나머지는 옳은 설명**\n- 남의 글을 인용할 때는 출처를 밝혀야 한다.: 인용할 때 출처를 밝히는 것은 저작권을 지키는 기본입니다.\n- 저작권은 저작물을 창작한 때부터 생긴다.: 저작권은 등록 같은 절차 없이 창작과 동시에 생깁니다.\n- 컴퓨터 프로그램도 저작물로 보호받는다.: 컴퓨터 프로그램도 저작권법으로 보호받는 저작물입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-07",
+    "tags": [
+      "저작권",
+      "정보 윤리"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "word-processor-security-privacy-0007",
+    "certId": "word-processor",
+    "subjectId": "pc-basics",
+    "chapterId": "security-privacy",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "겉으로는 쓸모 있는 프로그램처럼 보이지만, 실행하면 몰래 정보를 빼내거나 밖에서 컴퓨터를 조종할 수 있는 통로를 여는 악성 프로그램은?",
+    "choices": [
+      "랜섬웨어",
+      "트로이 목마",
+      "애드웨어",
+      "웜"
+    ],
+    "answer": 2,
+    "oneLineConcept": "트로이 목마 = 정상 프로그램으로 위장, 스스로 복제 안 함",
+    "explanation": "**트로이 목마**는 그리스 신화의 목마처럼, **쓸모 있는 프로그램으로 위장**해 사용자가 직접 설치·실행하게 만든 뒤 몰래 정보를 빼내거나 원격 조종 통로(백도어)를 엽니다. **스스로 복제하지 않는다**는 점에서 웜과 다릅니다.\n\n**틀린 선지**\n- 랜섬웨어: 랜섬웨어는 파일을 암호화한 뒤 돈을 요구하는 프로그램입니다.\n- 애드웨어: 애드웨어는 광고를 띄우는 프로그램입니다.\n- 웜: 웜은 스스로 복제해 퍼지는 것이 특징이며, 쓸모 있는 프로그램으로 위장하는 것이 핵심이 아닙니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-07",
+    "tags": [
+      "악성 프로그램",
+      "트로이 목마"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "word-processor-security-privacy-0008",
+    "certId": "word-processor",
+    "subjectId": "pc-basics",
+    "chapterId": "security-privacy",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "PC나 공유기 설정을 몰래 바꿔, 사용자가 은행 주소를 정확히 입력해도 가짜 은행 사이트로 접속되게 하는 수법은?",
+    "choices": [
+      "스미싱",
+      "파밍",
+      "피싱",
+      "스니핑"
+    ],
+    "answer": 2,
+    "oneLineConcept": "파밍 = 정상 주소를 입력해도 가짜 사이트로 연결",
+    "explanation": "**파밍**은 PC 를 악성 프로그램에 감염시키거나 공유기·DNS 설정을 조작해, 사용자가 **정상 주소를 직접 입력해도 가짜 사이트**로 접속되게 하는 수법입니다. 가짜 메일이나 링크로 유인하는 **피싱**보다 알아차리기 더 어렵습니다.\n\n**틀린 선지**\n- 스미싱: 스미싱은 문자 메시지 속 주소를 누르게 하는 수법입니다.\n- 피싱: 피싱은 가짜 메일이나 링크를 보내 사용자가 직접 가짜 사이트로 들어오게 하는 수법으로, 올바른 주소를 입력해도 가짜로 가게 하지는 않습니다.\n- 스니핑: 스니핑은 네트워크의 자료를 몰래 엿보는 수법입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-07",
+    "tags": [
+      "보안 위협",
+      "파밍"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+]

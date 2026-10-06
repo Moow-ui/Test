@@ -1,0 +1,413 @@
+[
+  {
+    "id": "word-processor-doc-management-0001",
+    "certId": "word-processor",
+    "subjectId": "wp-general",
+    "chapterId": "doc-management",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "일반적인 공문서의 효력이 생기는 때로 옳은 것은?",
+    "choices": [
+      "기안자가 기안문을 작성했을 때",
+      "발신 부서가 문서를 발송했을 때",
+      "결재권자가 서명 등으로 결재했을 때",
+      "문서가 수신자에게 도달했을 때"
+    ],
+    "answer": 4,
+    "oneLineConcept": "공문서: 결재로 성립, 수신자 도달로 효력 발생(도달주의)",
+    "explanation": "공문서는 두 단계를 구분해 기억합니다.\n- **성립**: 결재권자가 서명 등의 방식으로 **결재**하면 공문서가 성립합니다.\n- **효력 발생**: 일반 공문서는 **수신자에게 도달**해야 효력이 생깁니다. 이를 **도달주의**라고 합니다. 전자문서는 수신자가 관리하거나 지정한 전자적 시스템에 입력되면 도달한 것으로 봅니다.\n\n**틀린 선지**\n- 기안자가 기안문을 작성했을 때: 기안문을 작성한 것만으로는 공문서가 성립하지도, 효력이 생기지도 않습니다.\n- 발신 부서가 문서를 발송했을 때: 보내기만 해서는 효력이 생기지 않고, 받는 쪽에 도달해야 효력이 생깁니다.\n- 결재권자가 서명 등으로 결재했을 때: 결재권자가 결재하면 공문서가 성립하지만, 효력은 수신자에게 도달해야 생깁니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-07",
+    "tags": [
+      "공문서",
+      "효력 발생"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "word-processor-doc-management-0002",
+    "certId": "word-processor",
+    "subjectId": "wp-general",
+    "chapterId": "doc-management",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "결재권자로부터 결재 권한을 위임받은 사람이 정해진 범위의 문서를 결재하는 것은?",
+    "choices": [
+      "협조",
+      "전결",
+      "간인",
+      "대결"
+    ],
+    "answer": 2,
+    "oneLineConcept": "전결 = 위임받은 사람의 결재, 대결 = 부재 시 대리자의 결재",
+    "explanation": "**전결**은 업무의 내용에 따라 결재 권한을 **위임받은 사람**이 그 범위의 문서를 결재하는 것입니다. 모든 문서를 기관장이 직접 결재하지 않아도 되므로 일 처리가 빨라집니다.\n\n**틀린 선지**\n- 협조: 협조는 관련 부서의 의견을 듣고 동의를 받는 것으로, 결재 권한을 위임받아 결재하는 것이 아닙니다.\n- 간인: 간인은 여러 장의 문서가 이어져 있음을 확인하려고 장 사이에 걸쳐 도장을 찍는 것입니다.\n- 대결: 대결은 결재권자가 휴가·출장 등으로 자리에 없을 때 직무를 대리하는 사람이 대신 결재하는 것입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-07",
+    "tags": [
+      "결재",
+      "전결"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "word-processor-doc-management-0003",
+    "certId": "word-processor",
+    "subjectId": "wp-general",
+    "chapterId": "doc-management",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "두 장 이상으로 된 종이 문서에서 앞뒤 장이 서로 이어진 문서임을 확인하려고 장과 장 사이에 걸쳐 도장을 찍는 것은?",
+    "choices": [
+      "간인",
+      "전결",
+      "발송",
+      "서명"
+    ],
+    "answer": 1,
+    "oneLineConcept": "간인 = 여러 장 문서의 장 사이에 걸쳐 찍는 도장",
+    "explanation": "**간인**은 여러 장으로 된 문서에서 장과 장이 바뀌거나 빠지지 않았음을 확인하려고, 앞장과 뒷장에 **걸쳐서** 도장을 찍는 것입니다. 중간에 몰래 장을 바꿔 끼우는 일을 막습니다.\n\n**틀린 선지**\n- 전결: 전결은 위임받은 사람이 결재하는 것입니다.\n- 발송: 발송은 완성된 문서를 수신자에게 보내는 일입니다.\n- 서명: 서명은 결재하거나 확인할 때 자기 이름을 쓰는 것으로, 장과 장 사이에 걸쳐 찍는 것이 아닙니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-07",
+    "tags": [
+      "간인",
+      "공문서 처리"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "word-processor-doc-management-0004",
+    "certId": "word-processor",
+    "subjectId": "wp-general",
+    "chapterId": "doc-management",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "문서를 필요할 때 바로 찾아 쓸 수 있도록 일정한 기준에 따라 분류·정리·보관하는 일은?",
+    "choices": [
+      "파일링",
+      "결재",
+      "발송",
+      "기안"
+    ],
+    "answer": 1,
+    "oneLineConcept": "파일링 = 필요할 때 바로 꺼내 쓰도록 분류·정리·보관",
+    "explanation": "**파일링**(문서 정리)은 문서를 주제별·거래처별·날짜별 같은 기준에 따라 **분류·정리·보관**해서, 필요할 때 누구나 바로 찾아 쓸 수 있게 하는 일입니다.\n\n**틀린 선지**\n- 결재: 결재는 결재권자가 기안문의 내용을 승인하는 일입니다.\n- 발송: 발송은 완성된 문서를 수신자에게 보내는 일입니다.\n- 기안: 기안은 처리할 일에 대해 문서의 초안을 만드는 일입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-07",
+    "tags": [
+      "파일링",
+      "문서 관리"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "word-processor-doc-management-0005",
+    "certId": "word-processor",
+    "subjectId": "wp-general",
+    "chapterId": "doc-management",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "공문서는 두문·본문·결문으로 구성된다. 다음 중 결문에 들어가는 것은?",
+    "choices": [
+      "수신",
+      "제목",
+      "발신명의",
+      "행정기관명"
+    ],
+    "answer": 3,
+    "oneLineConcept": "두문: 기관명·수신 / 본문: 제목·내용·붙임 / 결문: 발신명의 등",
+    "explanation": "공문서의 구성은 다음과 같습니다.\n- **두문**: 행정기관명, 수신\n- **본문**: 제목, 내용, 붙임\n- **결문**: **발신명의**, 기안자·검토자·결재권자의 직위와 서명, 생산등록번호와 시행일, 접수등록번호와 접수일, 주소·전화번호 등\n\n**틀린 선지**\n- 수신: 수신(받는 사람)은 문서 맨 앞의 두문에 적습니다.\n- 제목: 제목은 본문에 들어갑니다.\n- 행정기관명: 행정기관명은 두문에 적습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-07",
+    "tags": [
+      "공문서 구성",
+      "결문"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "word-processor-doc-management-0006",
+    "certId": "word-processor",
+    "subjectId": "wp-general",
+    "chapterId": "doc-management",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "전자문서와 전자결재에 대한 설명으로 옳은 것은?",
+    "choices": [
+      "전자문서는 종이로 출력해야만 효력이 생긴다.",
+      "전자결재를 하면 문서를 들고 다니지 않아도 되어 결재 시간과 종이가 줄어든다.",
+      "전자결재 문서는 결재가 끝나도 등록하지 않는다.",
+      "전자문서는 검색이 어려워 보관용으로만 쓴다."
+    ],
+    "answer": 2,
+    "oneLineConcept": "전자결재 = 시간·종이 절약, 검색·공유 쉬움",
+    "explanation": "**전자결재**는 컴퓨터 시스템에서 기안·검토·결재를 하는 방식입니다. 문서를 들고 결재권자를 찾아다니지 않아도 되므로 **처리 시간과 종이**가 줄고, 결재가 끝난 문서는 자동으로 등록·보관되어 **검색과 공유**가 쉽습니다.\n\n**틀린 선지**\n- 전자문서는 종이로 출력해야만 효력이 생긴다.: 전자문서는 출력하지 않아도 수신자의 전자적 시스템에 입력되면 효력이 생깁니다.\n- 전자결재 문서는 결재가 끝나도 등록하지 않는다.: 결재가 끝난 문서는 전자 시스템에서도 등록해 관리합니다.\n- 전자문서는 검색이 어려워 보관용으로만 쓴다.: 전자문서는 오히려 검색과 공유가 쉬운 것이 장점입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-07",
+    "tags": [
+      "전자결재",
+      "전자문서"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "word-processor-doc-management-0007",
+    "certId": "word-processor",
+    "subjectId": "wp-general",
+    "chapterId": "doc-management",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "문서 관리의 원칙으로 옳은 것은?",
+    "choices": [
+      "중요한 문서일수록 개인 책상 서랍에 따로 보관한다.",
+      "문서는 처리 담당자만 알아볼 수 있는 방식으로 분류한다.",
+      "같은 종류의 문서는 일정한 양식으로 표준화하여 처리한다.",
+      "모든 문서는 내용과 상관없이 영구 보존한다."
+    ],
+    "answer": 3,
+    "oneLineConcept": "문서 관리 원칙: 표준화·간소화·신속·정확·경제·용이",
+    "explanation": "문서 관리는 문서를 빠르고 정확하게 만들고, 쉽게 찾고, 비용을 아끼는 것이 목표입니다. 그래서 **표준화**(같은 양식 사용), **간소화**(필요 없는 절차 줄이기), **신속성**, **정확성**, **경제성**, **용이성**(찾기 쉬움) 같은 원칙을 지킵니다.\n\n**틀린 선지**\n- 중요한 문서일수록 개인 책상 서랍에 따로 보관한다.: 문서는 개인이 따로 보관하지 않고 정해진 곳에 함께 보관해야 필요할 때 찾을 수 있습니다.\n- 문서는 처리 담당자만 알아볼 수 있는 방식으로 분류한다.: 문서는 누가 찾아도 쉽게 찾을 수 있도록 정해진 기준으로 분류해야 합니다.\n- 모든 문서는 내용과 상관없이 영구 보존한다.: 문서는 중요도에 따라 보존 기간을 정해 두고, 기간이 지나면 정해진 절차로 폐기합니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-07",
+    "tags": [
+      "문서 관리 원칙"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "word-processor-doc-management-0008",
+    "certId": "word-processor",
+    "subjectId": "wp-general",
+    "chapterId": "doc-management",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "접수한 문서를 처리하지 않고 그 문서를 보낸 곳으로 되돌려 보내는 것은?",
+    "choices": [
+      "접수",
+      "반송",
+      "이송",
+      "시행"
+    ],
+    "answer": 2,
+    "oneLineConcept": "반송 = 보낸 곳으로 되돌려 보냄, 이송 = 맡을 기관으로 보냄",
+    "explanation": "**반송**은 받은 문서를 처리하지 않고 **보낸 곳으로 되돌려 보내는 것**입니다. 이와 달리 **이송**은 우리 기관 일이 아닌 문서를 그 일을 맡은 기관으로 보내는 것이므로 방향이 다릅니다.\n\n**틀린 선지**\n- 접수: 접수는 들어온 문서를 받아 등록하는 일입니다.\n- 이송: 이송은 다른 기관이 맡을 일의 문서를 받았을 때 그 문서를 맡을 기관으로 보내는 것입니다.\n- 시행: 시행은 결재가 끝난 문서를 밖으로 내보내 효력이 생기게 하는 일입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-07",
+    "tags": [
+      "공문서 처리",
+      "반송"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "word-processor-doc-management-0009",
+    "certId": "word-processor",
+    "subjectId": "wp-general",
+    "chapterId": "doc-management",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "공문서 작성 방법에 대한 설명으로 옳지 않은 것은?",
+    "choices": [
+      "시각은 24시각제로 쓰고, 시·분 글자 대신 쌍점(:)을 찍어 구분한다.",
+      "날짜는 반드시 '2026년 10월 6일'처럼 써야 하며, 숫자와 마침표로 줄여 쓸 수 없다.",
+      "문서는 한글로 쓰되, 뜻을 정확히 전하려고 필요하면 괄호 안에 한자나 외국어를 쓸 수 있다.",
+      "날짜는 숫자로 쓰되 연·월·일 글자를 생략하고 그 자리에 마침표를 찍어 표시한다."
+    ],
+    "answer": 2,
+    "oneLineConcept": "공문서 날짜: 2026. 10. 6. / 시각: 14:30",
+    "explanation": "공문서에서 **날짜**는 숫자로 쓰고 연·월·일 글자 대신 **마침표**를 찍습니다(예: 2026. 10. 6.). 따라서 날짜를 숫자와 마침표로 줄여 쓸 수 없다는 설명이 틀렸습니다.\n\n**나머지는 옳은 설명**\n- 시각은 24시각제로 쓰고, 시·분 글자 대신 쌍점(:)을 찍어 구분한다.: 예를 들어 오후 2시 30분은 '14:30'으로 씁니다.\n- 문서는 한글로 쓰되, 뜻을 정확히 전하려고 필요하면 괄호 안에 한자나 외국어를 쓸 수 있다.: 한글로 쓰는 것이 원칙이고, 필요할 때 괄호 안에 한자나 외국어를 함께 쓸 수 있습니다.\n- 날짜는 숫자로 쓰되 연·월·일 글자를 생략하고 그 자리에 마침표를 찍어 표시한다.: 예를 들어 2026년 10월 6일은 '2026. 10. 6.'으로 씁니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-07",
+    "tags": [
+      "공문서 작성",
+      "날짜 표기"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "word-processor-doc-management-0010",
+    "certId": "word-processor",
+    "subjectId": "wp-general",
+    "chapterId": "doc-management",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "공문서에 금액을 표시하는 방법으로 옳은 것은?",
+    "choices": [
+      "金113,560원",
+      "금113,560원(금일십일만삼천오백육십원)",
+      "금 일십일만삼천오백육십원",
+      "금일십일만삼천오백육십원(113,560원)"
+    ],
+    "answer": 2,
+    "oneLineConcept": "금액 표기: 아라비아 숫자 + 괄호 안 한글",
+    "explanation": "공문서에서 **금액**은 **아라비아 숫자**로 쓰고, 숫자 다음에 **괄호**를 하여 **한글**로 다시 적습니다. 숫자를 고쳐 쓰는 일을 막고 금액을 분명히 하려는 것입니다.\n1. 숫자로 쓰기: 금113,560원\n2. 괄호 안에 한글로 쓰기: (금일십일만삼천오백육십원)\n3. 검산: 일십일만(110,000) + 삼천(3,000) + 오백(500) + 육십(60) = 113,560\n\n**틀린 선지**\n- 金113,560원: 금액은 아라비아 숫자 다음에 괄호를 하고 한글로 적어야 하는데, 한글 표기가 없습니다.\n- 금 일십일만삼천오백육십원: 숫자 없이 한글로만 썼습니다. 금액은 아라비아 숫자로 쓰고 괄호 안에 한글을 함께 적습니다.\n- 금일십일만삼천오백육십원(113,560원): 한글을 앞에 쓰고 숫자를 괄호에 넣은 것으로, 순서가 거꾸로입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-07",
+    "tags": [
+      "공문서 작성",
+      "금액 표기"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "word-processor-doc-management-0011",
+    "certId": "word-processor",
+    "subjectId": "wp-general",
+    "chapterId": "doc-management",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "공문서의 성립과 효력에 대한 설명으로 옳지 않은 것은?",
+    "choices": [
+      "공문서는 결재권자가 서명 등의 방식으로 결재하면 성립한다.",
+      "공고문서는 따로 정한 시기가 없으면 고시·공고한 그날 바로 효력이 생긴다.",
+      "전자문서는 수신자가 관리하거나 지정한 전자적 시스템에 입력되면 도달한 것으로 본다.",
+      "일반 공문서는 수신자에게 도달해야 효력이 생긴다."
+    ],
+    "answer": 2,
+    "oneLineConcept": "공고문서: 따로 정함이 없으면 공고 후 5일이 지난 때 효력",
+    "explanation": "**공고문서**(고시·공고 문서)는 문서에 효력 발생 시기를 따로 밝히지 않았다면, 고시·공고가 있은 날부터 **5일이 지난 때** 효력이 생깁니다. 따라서 '그날 바로' 효력이 생긴다는 설명이 틀렸습니다.\n\n**나머지는 옳은 설명**\n- 공문서는 결재권자가 서명 등의 방식으로 결재하면 성립한다.: 결재로 공문서가 성립한다는 설명은 맞습니다.\n- 전자문서는 수신자가 관리하거나 지정한 전자적 시스템에 입력되면 도달한 것으로 본다.: 전자문서의 도달 시점에 대한 바른 설명입니다.\n- 일반 공문서는 수신자에게 도달해야 효력이 생긴다.: 일반 공문서는 도달주의에 따라 수신자에게 도달할 때 효력이 생깁니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-07",
+    "tags": [
+      "공문서",
+      "효력 발생"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "word-processor-doc-management-0012",
+    "certId": "word-processor",
+    "subjectId": "wp-general",
+    "chapterId": "doc-management",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "결재권자가 휴가·출장 등으로 자리에 없을 때, 그 직무를 대리하는 사람이 대신 결재하는 것은?",
+    "choices": [
+      "기안",
+      "대결",
+      "협조",
+      "전결"
+    ],
+    "answer": 2,
+    "oneLineConcept": "대결 = 결재권자 부재 시 직무 대리자가 결재",
+    "explanation": "**대결**은 결재권자가 휴가, 출장 등으로 **자리에 없을 때** 그 직무를 대리하는 사람이 대신 결재하는 것입니다. 미리 정한 위임 범위에 따라 결재하는 **전결**과 구별해야 합니다. 대결한 문서 가운데 중요한 것은 결재권자에게 나중에 보고합니다.\n\n**틀린 선지**\n- 기안: 기안은 문서의 초안을 만드는 일로 결재가 아닙니다.\n- 협조: 협조는 관련 부서의 의견과 동의를 받는 절차입니다.\n- 전결: 전결은 결재권자가 없을 때가 아니라, 업무 내용에 따라 미리 결재 권한을 위임받은 사람이 결재하는 것입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-07",
+    "tags": [
+      "결재",
+      "대결"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  }
+]
