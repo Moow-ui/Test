@@ -98,6 +98,23 @@
   --lv-cbt-ink: #cbd5e1;
 }
 
+/* 간격: 1칸 4px, 짝수 칸만 쓴다 (8px 단위). inline 이 아니라야 휴대폰에서 아래 값을 바꿔 상자·여백을 글씨와 함께 줄일 수 있다 */
+@theme {
+  --spacing: 4px;
+}
+/* 휴대폰: 글씨(app/globals.css 의 14·15.5·18px)와 같은 비율로 여백·상자 높이를 줄인다. PC 는 그대로 */
+@media (max-width: 639px) {
+  :root {
+    --spacing: 3.11px;
+  }
+  html[data-font="lg"] {
+    --spacing: 3.44px;
+  }
+  html[data-font="xl"] {
+    --spacing: 4px;
+  }
+}
+
 @theme inline {
   --font-sans: var(--font-system);
 
@@ -124,9 +141,6 @@
   --font-weight-bold: 700;
   --font-weight-extrabold: 700;
   --font-weight-black: 700;
-
-  /* 간격: 1칸 4px, 짝수 칸만 쓴다 (8px 단위) */
-  --spacing: 4px;
 
   /* 모서리 2종 */
   --radius-sm: 8px;
