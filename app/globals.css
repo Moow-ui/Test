@@ -16,6 +16,18 @@ html[data-font="lg"] {
 html[data-font="xl"] {
   font-size: 26px;
 }
+/* 휴대폰(639px 이하)만 한 단계씩 작게: 가운데 "가"가 예전 맨 왼쪽 "가"보다 조금 작은 크기. PC 는 그대로 */
+@media (max-width: 639px) {
+  html {
+    font-size: 14px;
+  }
+  html[data-font="lg"] {
+    font-size: 15.5px;
+  }
+  html[data-font="xl"] {
+    font-size: 18px;
+  }
+}
 
 body {
   background: var(--bg);

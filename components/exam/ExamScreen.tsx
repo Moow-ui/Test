@@ -416,13 +416,14 @@ export function ExamScreen({
             )}
           </div>
         )}
-        <div className="mx-auto flex w-full max-w-6xl flex-wrap items-center justify-between gap-x-4 gap-y-2 px-4 py-2 text-sm font-bold">
-          <div className="flex flex-1 flex-wrap items-center gap-2">
+        {/* 좁은 화면(휴대폰·태블릿)은 글씨 크기와 상관없이 항상 같은 3줄: ① 이전·다음 ② 바로 답 확인 ③ 답안지·안 푼 문제·제출. PC(lg)는 한 줄 */}
+        <div className="mx-auto flex w-full max-w-6xl flex-col gap-2 px-4 py-2 text-sm font-bold lg:flex-row lg:flex-wrap lg:items-center lg:justify-between lg:gap-x-4">
+          <div className="grid grid-cols-[auto_minmax(0,1fr)] items-center gap-2 lg:flex lg:flex-1 lg:flex-wrap">
             <button
               type="button"
               disabled={index === 0}
               onClick={() => goTo(index - 1)}
-              className="btn"
+              className="btn whitespace-nowrap"
             >
               {m.prev}
             </button>
@@ -430,12 +431,12 @@ export function ExamScreen({
               ref={nextRef}
               type="button"
               onClick={forward}
-              className="btn btn-primary flex-1 sm:min-w-40 sm:flex-none"
+              className="btn btn-primary min-w-0 lg:min-w-40 lg:flex-none"
             >
               {isLast ? fmt(m.last, { label: submitLabel }) : m.next}
             </button>
             {instant && (
-              <label className="flex min-h-12 cursor-pointer items-center gap-2">
+              <label className="col-span-2 flex min-h-12 cursor-pointer items-center gap-2 lg:col-span-1">
                 <input
                   type="checkbox"
                   checked={instant.checked}
@@ -446,12 +447,12 @@ export function ExamScreen({
               </label>
             )}
           </div>
-          <div className="flex items-center gap-2">
+          <div className="grid auto-cols-[minmax(0,1fr)] grid-flow-col gap-2 lg:flex lg:items-center">
             <button
               type="button"
               aria-expanded={showSheet}
               onClick={() => setShowSheet((v) => !v)}
-              className="btn lg:hidden"
+              className="btn px-2 leading-tight [overflow-wrap:normal] lg:hidden"
             >
               {m.sheet}
             </button>
@@ -459,12 +460,12 @@ export function ExamScreen({
               type="button"
               aria-expanded={showUnanswered}
               onClick={() => setShowUnanswered((v) => !v)}
-              className="btn"
+              className="btn px-2 leading-tight [overflow-wrap:normal] lg:px-4"
             >
               {fmt(m.unanswered, { n: unanswered.length })}
             </button>
             {!isLast && (
-              <button type="button" onClick={requestSubmit} className="btn">
+              <button type="button" onClick={requestSubmit} className="btn px-2 leading-tight [overflow-wrap:normal] lg:px-4">
                 {submitLabel}
               </button>
             )}
