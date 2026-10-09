@@ -71,8 +71,8 @@ export const PUBLIC_DATA_DIR = "public/data";
 export const PUBLIC_CERT_IDS_PATH = "cert-ids.json";
 /** 자격증의 문제 목록 (뽑기에 필요한 값만 담은 가벼운 파일) */
 export const publicPoolPath = (slug: string) => `${slug}/pool.json`;
-/** 단원별 문제 파일 */
-export const publicQuestionsPath = (slug: string, fileStem: string) => `${slug}/questions/${fileStem}.json`;
+/** 자격증의 문제 전체 (원본 단원 파일을 합친 것. 배포 파일 수를 줄이려고 자격증마다 1개) */
+export const publicQuestionsPath = (slug: string) => `${slug}/questions.json`;
 /** 홈 "오늘의 1문제" 일정표 (나라별, lib/daily.ts) */
 export const publicDailyPath = (country: string) => `daily/${country.toLowerCase()}.json`;
 export const publicAssetPath = (slug: string, name: string) => `${slug}/assets/${name}`;

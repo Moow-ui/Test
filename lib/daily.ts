@@ -14,7 +14,7 @@ export const DAILY_DAYS = 366;
 export interface DailyEntry {
   certId: string;
   certName: string;
-  /** 단원 파일 이름 (publicQuestionsPath 의 fileStem) */
+  /** 원본 단원 파일 이름 (기록용. 브라우저는 자격증 문제 파일 하나를 받는다) */
   file: string;
   id: string;
 }

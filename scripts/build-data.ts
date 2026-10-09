@@ -3,7 +3,9 @@
  *   npm run build:data   (dev·build 앞에서 자동 실행)
  *
  * 문제를 Worker 코드 묶음에 넣지 않기 위해서다 (Worker 는 코드 크기 제한이 있다).
- * 브라우저는 자격증의 문제 목록(pool.json)을 먼저 받고, 필요한 단원 파일만 받는다 (lib/data/client.ts).
+ * 브라우저는 자격증의 문제 목록(pool.json)을 먼저 받고, 문제 내용은 자격증 파일 하나(questions.json)로 받는다 (lib/data/client.ts).
+ * 원본(data/certs/…/questions/{단원}.json)은 단원별 관리 그대로이고, 내보낼 때만 자격증마다 1개로 합친다
+ * (Cloudflare 정적 파일 개수 제한 때문에 자격증당 배포 파일 수를 줄인다).
  * public/data 는 매번 새로 만들므로 git 에 올리지 않는다.
  */
 import fs from "node:fs";
@@ -48,11 +50,13 @@ async function main(): Promise<void> {
     certs += 1;
     write(publicPoolPath(cert.id), await getQuestionPool(cert.id));
     const items: Array<{ id: string; file: string }> = [];
+    const questions: unknown[] = [];
     for (const file of await getQuestionFiles(cert.id)) {
-      write(publicQuestionsPath(cert.id, file.stem), file.questions);
-      files += 1;
+      questions.push(...file.questions);
       for (const q of file.questions) if (isDailyCandidate(q)) items.push({ id: q.id, file: file.stem });
     }
+    write(publicQuestionsPath(cert.id), questions);
+    files += 1;
     items.sort((a, b) => a.id.localeCompare(b.id));
     const list = daily.get(cert.country) ?? [];
     list.push({ certId: cert.id, certName: cert.name, items });

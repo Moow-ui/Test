@@ -25,8 +25,10 @@
   - `next.config.ts` 의 `outputFileTracingExcludes` 가 `data/` 를 서버 묶음에서 뺀다. 이 설정을 지우지 않는다.
 - 문제는 빌드 때 `scripts/build-data.ts` 가 **정적 파일(Static Assets)** 로 내보낸다 (`public/data/`, 주소는 `/data/…`).
   - `/data/{slug}/pool.json` — 문제 목록 (id·과목·단원·난이도만 담은 가벼운 파일)
-  - `/data/{slug}/questions/{단원 파일}.json` — 단원별 문제
-  - 브라우저는 목록으로 먼저 문제를 뽑고, **뽑힌 문제가 들어 있는 단원 파일만** 받는다.
+  - `/data/{slug}/questions.json` — 그 자격증의 문제 전체 (원본 단원 파일들을 합친 것)
+  - 브라우저는 목록으로 먼저 문제를 뽑고, 문제 내용은 **자격증 파일 하나**에서 꺼낸다 (한 번 받으면 다른 단원도 다시 받지 않는다).
+  - 원본(`data/certs/…/questions/{단원}.json`, 단원별·파일당 300문항)은 그대로다. 합치는 것은 내보낼 때뿐이다.
+  - 이유: Cloudflare 무료 요금제는 배포 한 번에 정적 파일 20,000개까지라, 자격증당 파일 수를 줄인다 (자격증 1개 ≈ 38개, 2026-10-09 기준).
 - **첫 화면과 검색에는 요약 인덱스만** 쓴다 (`getCertList`: 이름·분야·자격 종류·시행기관·문제 수).
 - 모든 페이지는 빌드 때 만들어지는 정적 페이지다. 실행 중(요청 시)에는 파일을 읽을 수 없으므로 새 페이지도 반드시 `generateStaticParams` + `dynamicParams = false` 로 미리 만든다.
   - `generateStaticParams` 는 `lib/static-params.ts` 의 함수를 쓴다. 어느 한 언어에서 빈 목록을 돌려주면 Next.js 가 그 화면 전체를 미리 만들지 않는다.

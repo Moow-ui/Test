@@ -10,7 +10,7 @@ import { publicDailyPath, publicDataUrl, publicPoolPath, publicQuestionsPath } f
  *
  * 문제는 페이지에 실어 보내지 않고 정적 파일(/data/…)로 배포한다.
  *   1) 문제 목록(pool.json): 뽑기에 필요한 값만 담은 가벼운 파일
- *   2) 단원별 문제 파일: 실제로 보여 줄 문제가 들어 있는 단원 것만 받는다
+ *   2) 문제 파일(questions.json): 자격증의 문제 전체. 자격증마다 1개라 한 번 받으면 다른 단원도 다시 받지 않는다
  */
 
 const requests = new Map<string, Promise<unknown>>();
@@ -38,13 +38,8 @@ export function fetchPool(certId: string): Promise<PoolItem[]> {
 /** 문제 id 로 문제 내용을 가져온다 (ids 순서대로. 없는 문제는 뺀다) */
 export async function fetchQuestions(certId: string, ids: readonly string[]): Promise<Question[]> {
   if (ids.length === 0) return [];
-  const wanted = new Set(ids);
-  const pool = await fetchPool(certId);
-  const stems = Array.from(new Set(pool.filter((p) => wanted.has(p.id)).map((p) => p.file)));
-  const files = await Promise.all(
-    stems.map((stem) => fetchJson<Question[]>(publicQuestionsPath(certId, stem))),
-  );
-  const byId = new Map(files.flat().map((q) => [q.id, q]));
+  const all = await fetchJson<Question[]>(publicQuestionsPath(certId));
+  const byId = new Map(all.map((q) => [q.id, q]));
   return ids.map((id) => byId.get(id)).filter((q): q is Question => !!q);
 }
 
@@ -94,7 +89,7 @@ async function fetchDailyQuestion(country: Country): Promise<DailyQuestion | "no
   const schedule = await fetchJson<DailyEntry[]>(publicDailyPath(country)).catch(() => []);
   const entry = dailyEntryFor(schedule, date);
   if (!entry) return "none";
-  const file = await fetchJson<Question[]>(publicQuestionsPath(entry.certId, entry.file)).catch(() => []);
+  const file = await fetchJson<Question[]>(publicQuestionsPath(entry.certId)).catch(() => []);
   const question = file.find((q) => q.id === entry.id);
   return question ? { entry, question, date } : "none";
 }
