@@ -92,11 +92,13 @@ scripts/                   validate-data, build-data, import-questions, convert-
 - **자격증 1개 추가 = 커밋 1개**, 메시지는 `cert: add {slug}`. 문제가 생기면 그 커밋만 되돌린다.
 - 개발 서버가 켜져 있으면 배포용 빌드(`opennextjs-cloudflare build`)가 실패한다. 끄고 실행한다.
 
-## 매일 자격증 추가 루틴 (2026-10-02 ~ 2026-10-29)
+## 매일 자격증 추가 루틴 (2026-10-02 시작)
 
-- 매일 한국시간 새벽 3시에 클라우드 루틴이 한국 1개 + 미국 1개를 추가한다. 28회 실행 후 종료.
-- **종료일 = 애드센스 신청일 = 2026-10-29.** 목표는 누적 50개 이상.
-- 절차는 [docs/daily-routine.md](docs/daily-routine.md), 진행 기록은 [reports/routine-progress.md](reports/routine-progress.md).
+- 매일 한국시간 새벽 04:30(새벽 루틴)과 오후 13:54(오후 루틴)에 클라우드 루틴이 각각 한국 1개 + 미국 1개를 추가한다.
+- **종료일 없음. 중지·속도 변경은 [docs/routine-status.md](docs/routine-status.md) 로만 정한다.**
+- 애드센스 신청(2026-10-29)은 루틴과 별개 일정이다.
+- 절차는 [docs/daily-routine.md](docs/daily-routine.md), 진행 기록은 [reports/routine-progress.md](reports/routine-progress.md)(새벽)·[reports/routine-progress-pm.md](reports/routine-progress-pm.md)(오후).
+- 후보(`data/cert-queue.json`)가 한 나라에서 10개 이하로 줄면 새벽 루틴이 그 나라 후보를 10개 보충한다 ([docs/daily-routine.md](docs/daily-routine.md) 1-1).
 - 문제는 작성과 분리된 검증(다시 풀기·재계산·최신 기준 확인)을 통과한 것만 게시한다. 확신이 없는 문제는 `data/review-queue/` 에 보관.
 - 검증을 통과한 문제는 `reviewedAt` 을 적어 넣는다 (자동으로 "검수 완료" 표시).
 - **공개 기출을 구할 수 있으면 반드시 문제 구성에 넣는다** ([docs/daily-routine.md](docs/daily-routine.md) 2-1). 출제는 기출과 예상문제를 반씩 섞는다.
