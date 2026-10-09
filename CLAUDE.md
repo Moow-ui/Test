@@ -98,6 +98,7 @@ scripts/                   validate-data, build-data, import-questions, convert-
 - **종료일 없음. 중지·속도 변경은 [docs/routine-status.md](docs/routine-status.md) 로만 정한다.**
 - 애드센스 신청(2026-10-29)은 루틴과 별개 일정이다.
 - 절차는 [docs/daily-routine.md](docs/daily-routine.md), 진행 기록은 [reports/routine-progress.md](reports/routine-progress.md)(새벽)·[reports/routine-progress-pm.md](reports/routine-progress-pm.md)(오후).
+- 배포 파일 수가 Cloudflare 한도 근처면(`npm run check:deploy-size` → "모드: 보강") 새 자격증 대신 기존 자격증의 문제를 보강한다 ([docs/daily-routine.md](docs/daily-routine.md) 0-1). 매일 업데이트는 계속된다.
 - 후보(`data/cert-queue.json`)가 한 나라에서 10개 이하로 줄면 새벽 루틴이 그 나라 후보를 10개 보충한다 ([docs/daily-routine.md](docs/daily-routine.md) 1-1).
 - 문제는 작성과 분리된 검증(다시 풀기·재계산·최신 기준 확인)을 통과한 것만 게시한다. 확신이 없는 문제는 `data/review-queue/` 에 보관.
 - 검증을 통과한 문제는 `reviewedAt` 을 적어 넣는다 (자동으로 "검수 완료" 표시).
@@ -116,5 +117,6 @@ npm run questions:add  문제 넣기·고치기 (CSV/JSON → 검증 → 단원�
 npm run choices:convert  값이 없는 문제에 choicesByLevel·levelLock 채우기 (난이도별 선지 수)
 npm run check:cert -- {slug}  자격증 게시 기준 검사 (초급·중급·고급 각 30문제 이상, 실전 1회분 이상)
 npm run check:meta     빌드 결과의 title·description 중복, noindex, sitemap, hreflang 검사
+npm run check:deploy-size  빌드 결과의 Cloudflare 배포 파일 수 (한도 근처면 "모드: 보강")
 npx wrangler deploy --dry-run   Cloudflare 배포 묶음 확인 (실제 배포는 push 하면 자동)
 ```

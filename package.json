@@ -18,6 +18,7 @@
     "choices:convert": "tsx scripts/convert-choices.ts",
     "check:meta": "tsx scripts/check-meta.ts",
     "check:cert": "tsx scripts/check-cert.ts",
+    "check:deploy-size": "tsx scripts/check-deploy-size.ts",
     "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
     "postinstall": "node scripts/ci-build.mjs",
     "cf:build": "opennextjs-cloudflare build"
