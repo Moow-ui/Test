@@ -1,0 +1,732 @@
+[
+  {
+    "id": "servsafe-food-handler-cross-contamination-allergens-0001",
+    "certId": "servsafe-food-handler",
+    "subjectId": "food-handler",
+    "chapterId": "cross-contamination-allergens",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "In the refrigerator, where should raw poultry be stored?",
+    "choices": [
+      "On the same shelf as fresh fruit, side by side",
+      "On the bottom shelf",
+      "Above the salads and cooked foods",
+      "On the top shelf"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Raw poultry goes on the bottom shelf",
+    "explanation": "Store **raw poultry on the bottom shelf**. If its juices drip, they will not fall onto other food. Poultry needs the highest cooking temperature, so it goes lowest.\n\n**Wrong choices**\n- On the same shelf as fresh fruit, side by side: Raw poultry next to fresh fruit can spread germs.\n- Above the salads and cooked foods: Raw juices could drip onto ready-to-eat food.\n- On the top shelf: Juices from raw poultry could drip onto food below.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "storage order",
+      "refrigerator"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-food-handler-cross-contamination-allergens-0002",
+    "certId": "servsafe-food-handler",
+    "subjectId": "food-handler",
+    "chapterId": "cross-contamination-allergens",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "How should ready-to-eat food, such as salad, be stored in the refrigerator?",
+    "choices": [
+      "On the floor of the walk-in cooler",
+      "Below raw meat, seafood, and poultry",
+      "Anywhere, as long as it is covered",
+      "Above raw meat, seafood, and poultry"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Ready-to-eat food goes above raw food",
+    "explanation": "Store **ready-to-eat food above raw meat, seafood, and poultry**. Ready-to-eat food will not be cooked again, so any germs that drip on it stay there.\n\n**Wrong choices**\n- On the floor of the walk-in cooler: Food must not be stored on the floor.\n- Below raw meat, seafood, and poultry: Raw juices could drip onto the salad.\n- Anywhere, as long as it is covered: Covering helps, but ready-to-eat food still goes above raw food.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "storage order",
+      "ready-to-eat food"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-food-handler-cross-contamination-allergens-0003",
+    "certId": "servsafe-food-handler",
+    "subjectId": "food-handler",
+    "chapterId": "cross-contamination-allergens",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What is cross-contamination?",
+    "choices": [
+      "Germs moving from one food or surface to another",
+      "A guest's allergic reaction to food",
+      "Mixing two foods together in a recipe",
+      "Food left too long in the temperature danger zone"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Cross-contamination = germs moving around",
+    "explanation": "**Cross-contamination** happens when **germs move from one food or surface to another**, for example from raw chicken to a cutting board and then to lettuce.\n\n**Wrong choices**\n- A guest's allergic reaction to food: An allergic reaction is not the definition of cross-contamination.\n- Mixing two foods together in a recipe: Mixing foods in a recipe is normal cooking.\n- Food left too long in the temperature danger zone: That is time-temperature abuse, not cross-contamination.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "cross-contamination"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-food-handler-cross-contamination-allergens-0004",
+    "certId": "servsafe-food-handler",
+    "subjectId": "food-handler",
+    "chapterId": "cross-contamination-allergens",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "How many major food allergens does the U.S. FDA list?",
+    "choices": [
+      "Five",
+      "Six",
+      "Twelve",
+      "Nine"
+    ],
+    "answer": 4,
+    "oneLineConcept": "FDA lists 9 major food allergens",
+    "explanation": "The FDA lists **nine major food allergens**: **milk, eggs, fish, crustacean shellfish, tree nuts, peanuts, wheat, soybeans, and sesame**.\n\n**Wrong choices**\n- Five: The FDA lists more than five major food allergens.\n- Six: Six is the number of FDA reportable germs (the \"Big 6\"), not allergens.\n- Twelve: The FDA lists nine major food allergens, not twelve.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "allergens"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-food-handler-cross-contamination-allergens-0005",
+    "certId": "servsafe-food-handler",
+    "subjectId": "food-handler",
+    "chapterId": "cross-contamination-allergens",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which of these is a major food allergen?",
+    "choices": [
+      "Peanuts",
+      "Carrots",
+      "Apples",
+      "Rice"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Peanuts are a major allergen",
+    "explanation": "**Peanuts** are one of the FDA's nine major food allergens. The others are milk, eggs, fish, crustacean shellfish, tree nuts, wheat, soybeans, and sesame.\n\n**Wrong choices**\n- Carrots: Carrots are not one of the FDA's nine major food allergens.\n- Apples: Apples are not one of the FDA's nine major food allergens.\n- Rice: Rice is not one of the FDA's nine major food allergens.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "allergens"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-food-handler-cross-contamination-allergens-0006",
+    "certId": "servsafe-food-handler",
+    "subjectId": "food-handler",
+    "chapterId": "cross-contamination-allergens",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which of these is a sign that a guest may be having an allergic reaction?",
+    "choices": [
+      "Yellow skin and eyes (jaundice)",
+      "Hair loss",
+      "A sunburn",
+      "Swelling of the lips, face, or throat"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Swelling, hives, trouble breathing",
+    "explanation": "Signs of an allergic reaction include **swelling of the lips, face, or throat**, **hives or an itchy rash**, **wheezing or trouble breathing**, and stomach cramps, vomiting, or diarrhea.\n\n**Wrong choices**\n- Yellow skin and eyes (jaundice): Jaundice is a sign of some illnesses such as Hepatitis A, not an allergic reaction.\n- Hair loss: Hair loss is not a sign of an allergic reaction.\n- A sunburn: A sunburn comes from the sun, not food.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "allergic reaction",
+      "symptoms"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-food-handler-cross-contamination-allergens-0007",
+    "certId": "servsafe-food-handler",
+    "subjectId": "food-handler",
+    "chapterId": "cross-contamination-allergens",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What is allergen cross-contact?",
+    "choices": [
+      "When a guest orders two dishes at once",
+      "When an allergen gets into a food that should not have it",
+      "When hot food touches cold food",
+      "When germs move from raw meat to a cutting board"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Cross-contact = allergen gets into food",
+    "explanation": "**Cross-contact** is when an **allergen** (a food that causes an allergic reaction) gets into a food that should not contain it. For example, a knife used to spread peanut butter is then used on a sandwich for a guest with a peanut allergy.\n\n**Wrong choices**\n- When a guest orders two dishes at once: Ordering two dishes has nothing to do with cross-contact.\n- When hot food touches cold food: That is not allergen cross-contact.\n- When germs move from raw meat to a cutting board: That is cross-contamination with germs, not allergen cross-contact.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "cross-contact"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-food-handler-cross-contamination-allergens-0008",
+    "certId": "servsafe-food-handler",
+    "subjectId": "food-handler",
+    "chapterId": "cross-contamination-allergens",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "You cut raw chicken on a cutting board. Before you use the same board to cut lettuce, what must you do?",
+    "choices": [
+      "Flip it over and use the other side",
+      "Wipe it with a dry towel",
+      "Wash, rinse, and sanitize the board",
+      "Rinse it with water only"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Wash, rinse, sanitize between tasks",
+    "explanation": "Use a separate board for raw meat if you can. If you must use the same board, **wash, rinse, and sanitize it** after raw meat and before ready-to-eat food like lettuce.\n\n**Wrong choices**\n- Flip it over and use the other side: Germs from the raw chicken can still spread from the board.\n- Wipe it with a dry towel: Wiping does not remove the germs.\n- Rinse it with water only: Water alone does not remove all the germs.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "cutting boards",
+      "clean and sanitize"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-food-handler-cross-contamination-allergens-0009",
+    "certId": "servsafe-food-handler",
+    "subjectId": "food-handler",
+    "chapterId": "cross-contamination-allergens",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A guest tells the server they have a food allergy. What should the server do?",
+    "choices": [
+      "Do nothing, because the guest will choose carefully",
+      "Tell the manager or chef and clearly mark the order as an allergy order",
+      "Guess which dishes are probably safe",
+      "Tell the guest a small amount will not hurt"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Allergy order: tell the kitchen, mark it",
+    "explanation": "When a guest has a food allergy, the server should **tell the manager or chef**, **mark the order clearly**, and answer menu questions honestly. Even a **tiny amount** of an allergen can cause a serious reaction.\n\n**Wrong choices**\n- Do nothing, because the guest will choose carefully: The staff must help keep the allergen out of the guest's food.\n- Guess which dishes are probably safe: Guessing can put the guest in danger.\n- Tell the guest a small amount will not hurt: Even a tiny amount of an allergen can cause a serious reaction.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "allergens",
+      "guest service"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-food-handler-cross-contamination-allergens-0010",
+    "certId": "servsafe-food-handler",
+    "subjectId": "food-handler",
+    "chapterId": "cross-contamination-allergens",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A dish for a guest with a tree nut allergy was made with nuts by mistake. What should you do?",
+    "choices": [
+      "Pick the nuts off and serve it",
+      "Serve it and tell the guest to eat around the nuts",
+      "Scrape the top layer off and serve it",
+      "Throw it away and make a new dish"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Allergen mistake: remake, never pick off",
+    "explanation": "If an allergen gets into a guest's food by mistake, **throw the food away and make it again** with clean equipment. Picking off or scraping the allergen does **not** make the food safe.\n\n**Wrong choices**\n- Pick the nuts off and serve it: Bits of nut and nut oil stay in the food after picking.\n- Serve it and tell the guest to eat around the nuts: This can cause a serious allergic reaction.\n- Scrape the top layer off and serve it: Scraping does not remove all of the allergen.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "allergens",
+      "remake"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-food-handler-cross-contamination-allergens-0011",
+    "certId": "servsafe-food-handler",
+    "subjectId": "food-handler",
+    "chapterId": "cross-contamination-allergens",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which of these is one of the FDA's nine major food allergens?",
+    "choices": [
+      "Sesame",
+      "Mustard",
+      "Corn",
+      "Celery"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Sesame is the 9th major allergen",
+    "explanation": "**Sesame** became the FDA's ninth major food allergen in 2023. The full list is **milk, eggs, fish, crustacean shellfish, tree nuts, peanuts, wheat, soybeans, and sesame**.\n\n**Wrong choices**\n- Mustard: Mustard is not on the FDA's list of nine major food allergens.\n- Corn: Corn is not on the FDA's list of nine major food allergens.\n- Celery: Celery is not on the FDA's list of nine major food allergens.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "allergens",
+      "sesame"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "servsafe-food-handler-cross-contamination-allergens-0012",
+    "certId": "servsafe-food-handler",
+    "subjectId": "food-handler",
+    "chapterId": "cross-contamination-allergens",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "French fries are cooked in the same fryer oil used for breaded shrimp. A guest has a shellfish allergy. Are these fries safe for that guest?",
+    "choices": [
+      "No, they can carry the allergen, so they should be cooked in separate oil",
+      "Yes, because hot oil destroys allergens",
+      "Yes, if the fries are drained well",
+      "Yes, if the fries are cooked after the shrimp"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Shared fryer oil causes cross-contact",
+    "explanation": "Allergens can stay in **fryer oil**. Food cooked in oil shared with shellfish or other allergens can cause a reaction. **Heat does not destroy allergens**, so use **separate oil** for allergy orders.\n\n**Wrong choices**\n- Yes, because hot oil destroys allergens: Cooking does not destroy allergens.\n- Yes, if the fries are drained well: Draining does not remove the allergen from the fries.\n- Yes, if the fries are cooked after the shrimp: The shellfish allergen is still in the oil.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "allergens",
+      "fryer oil",
+      "cross-contact"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-food-handler-cross-contamination-allergens-0013",
+    "certId": "servsafe-food-handler",
+    "subjectId": "food-handler",
+    "chapterId": "cross-contamination-allergens",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "You must use the same prep table for raw chicken and for a salad. What is the safest plan?",
+    "choices": [
+      "Wipe the table with your apron between tasks",
+      "Prepare them at different times and clean and sanitize the table in between",
+      "Prepare the chicken, then the salad, without cleaning, since the chicken will be cooked",
+      "Prepare both at the same time at opposite ends of the table"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Same table? Different times + clean and sanitize",
+    "explanation": "If raw meat and ready-to-eat food must share a work area, **prepare them at different times**, and **clean and sanitize** the surface and tools between tasks. Better still, use separate tables and equipment.\n\n**Wrong choices**\n- Wipe the table with your apron between tasks: An apron does not clean or sanitize a surface.\n- Prepare the chicken, then the salad, without cleaning, since the chicken will be cooked: The salad will not be cooked, so germs left by the chicken would stay on it.\n- Prepare both at the same time at opposite ends of the table: Juices and germs can still spread across the table.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "prep",
+      "cross-contamination"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-food-handler-cross-contamination-allergens-0014",
+    "certId": "servsafe-food-handler",
+    "subjectId": "food-handler",
+    "chapterId": "cross-contamination-allergens",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Why is raw poultry stored on the lowest shelf in the refrigerator?",
+    "choices": [
+      "Poultry spoils slower than other foods",
+      "It is the heaviest food in the cooler",
+      "It needs the highest cooking temperature, so its drips will not reach foods cooked to lower temperatures",
+      "The bottom shelf is the easiest to reach"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Shelf order follows cooking temperature",
+    "explanation": "Refrigerator shelf order is based on the **minimum cooking temperature**. Food that needs the **highest** temperature goes on the **bottom**. **Poultry** needs the highest, so it goes lowest, and ready-to-eat food goes on top.\n\n**Wrong choices**\n- Poultry spoils slower than other foods: That is not the reason for the storage order.\n- It is the heaviest food in the cooler: Weight is not the reason. The order is based on cooking temperature.\n- The bottom shelf is the easiest to reach: Ease of reach is not the reason.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "storage order"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-food-handler-cross-contamination-allergens-0015",
+    "certId": "servsafe-food-handler",
+    "subjectId": "food-handler",
+    "chapterId": "cross-contamination-allergens",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "You just made a peanut butter sandwich. Next, you need to make a meal for a guest with a peanut allergy. What should you do first?",
+    "choices": [
+      "Keep the same gloves, since they look clean",
+      "Wipe your gloves on your apron",
+      "Put hand sanitizer on your gloves",
+      "Wash your hands, put on new gloves, and use cleaned and sanitized tools"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Allergy order: wash, new gloves, clean tools",
+    "explanation": "To prevent **cross-contact**, **wash your hands and change gloves** before preparing an allergy order, and use **equipment that has been washed, rinsed, and sanitized** (or set aside only for allergy orders).\n\n**Wrong choices**\n- Keep the same gloves, since they look clean: Peanut butter can be on gloves even when you cannot see it.\n- Wipe your gloves on your apron: Wiping does not remove the allergen.\n- Put hand sanitizer on your gloves: Sanitizer does not remove allergens.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "allergens",
+      "gloves",
+      "cross-contact"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-food-handler-cross-contamination-allergens-0016",
+    "certId": "servsafe-food-handler",
+    "subjectId": "food-handler",
+    "chapterId": "cross-contamination-allergens",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "What should be used to scoop ice for drinks?",
+    "choices": [
+      "A clean ice scoop, stored outside the ice",
+      "An ice scoop left buried in the ice",
+      "Your bare hand",
+      "A drinking glass"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Use a scoop; never a glass",
+    "explanation": "Use a **clean ice scoop** and store it **outside the ice**, in a clean container. **Never use a glass** to scoop ice, because broken glass is hard to see in ice. Do not touch ice for drinks with bare hands.\n\n**Wrong choices**\n- An ice scoop left buried in the ice: The handle touches hands and then the ice, which can spread germs.\n- Your bare hand: Ice is ready-to-eat. It must not be touched with bare hands.\n- A drinking glass: A glass can chip or break in the ice.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "ice",
+      "physical hazard"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-food-handler-cross-contamination-allergens-0017",
+    "certId": "servsafe-food-handler",
+    "subjectId": "food-handler",
+    "chapterId": "cross-contamination-allergens",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which of these is NOT a good way to prevent cross-contamination?",
+    "choices": [
+      "Using separate cutting boards for raw meat and ready-to-eat food",
+      "Storing ready-to-eat food above raw meat in the refrigerator",
+      "Cleaning and sanitizing a work area between raw meat and ready-to-eat food",
+      "Using one cutting board for raw chicken and salad, wiping it with a cloth in between"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Wiping is not cleaning and sanitizing",
+    "explanation": "To prevent cross-contamination, use **separate equipment**, store **ready-to-eat food above raw food**, and **clean and sanitize** surfaces between tasks. Just **wiping a board with a cloth** does not remove the germs.\n\n**Wrong choices**\n- Using separate cutting boards for raw meat and ready-to-eat food: Separate boards are a good way to prevent cross-contamination.\n- Storing ready-to-eat food above raw meat in the refrigerator: This is correct storage and prevents raw juices from dripping on ready-to-eat food.\n- Cleaning and sanitizing a work area between raw meat and ready-to-eat food: This is a good way to prevent cross-contamination.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "cross-contamination"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "servsafe-food-handler-cross-contamination-allergens-0018",
+    "certId": "servsafe-food-handler",
+    "subjectId": "food-handler",
+    "chapterId": "cross-contamination-allergens",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "In the refrigerator, which of these should go on the shelf just above raw chicken?",
+    "choices": [
+      "Fresh lettuce",
+      "Raw fish fillets",
+      "Cooked soup",
+      "Raw ground beef"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Ground meat goes just above poultry",
+    "explanation": "Shelf order from **top to bottom** follows the cooking temperature:\n1. Ready-to-eat food\n2. Seafood\n3. Whole cuts of beef and pork\n4. Ground meat and ground fish\n5. Poultry\nPoultry (165°F) needs a higher cooking temperature than ground beef (155°F), so **ground beef goes just above poultry**.\n\n**Wrong choices**\n- Fresh lettuce: Lettuce is ready-to-eat, so it belongs on the top shelf.\n- Raw fish fillets: Fish needs a lower cooking temperature than ground beef, so it goes higher.\n- Cooked soup: Cooked food is ready-to-eat, so it belongs on the top shelf.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "storage order"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-food-handler-cross-contamination-allergens-0019",
+    "certId": "servsafe-food-handler",
+    "subjectId": "food-handler",
+    "chapterId": "cross-contamination-allergens",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Which of these is a crustacean shellfish, one of the FDA's nine major food allergens?",
+    "choices": [
+      "Clams",
+      "Scallops",
+      "Lobster",
+      "Oysters"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Crustaceans: shrimp, crab, lobster",
+    "explanation": "**Crustacean shellfish** have hard shells and jointed legs, such as **shrimp, crab, and lobster**. They are one of the FDA's nine major food allergens. Clams, oysters, and scallops are **mollusks**, a different group.\n\n**Wrong choices**\n- Clams: Clams are mollusks, not crustaceans.\n- Scallops: Scallops are mollusks, not crustaceans.\n- Oysters: Oysters are mollusks, not crustaceans.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "allergens",
+      "crustacean shellfish"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-food-handler-cross-contamination-allergens-0020",
+    "certId": "servsafe-food-handler",
+    "subjectId": "food-handler",
+    "chapterId": "cross-contamination-allergens",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Which of these is NOT one of the FDA's nine major food allergens?",
+    "choices": [
+      "Corn",
+      "Tree nuts",
+      "Soybeans",
+      "Fish"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Corn is not a major allergen",
+    "explanation": "The FDA's nine major food allergens are **milk, eggs, fish, crustacean shellfish, tree nuts, peanuts, wheat, soybeans, and sesame**. **Corn** is not on this list.\n\n**Wrong choices**\n- Tree nuts: Tree nuts are one of the FDA's nine major food allergens.\n- Soybeans: Soybeans are one of the FDA's nine major food allergens.\n- Fish: Fish is one of the FDA's nine major food allergens.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "allergens"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "servsafe-food-handler-cross-contamination-allergens-0021",
+    "certId": "servsafe-food-handler",
+    "subjectId": "food-handler",
+    "chapterId": "cross-contamination-allergens",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Right after eating, a guest has trouble breathing and their throat is swelling. What should staff do first?",
+    "choices": [
+      "Wait a few minutes to see if it gets better",
+      "Call 911 (emergency services) right away",
+      "Bring the guest a new plate of food",
+      "Give the guest a glass of water and wait"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Severe reaction: call 911 at once",
+    "explanation": "**Trouble breathing and throat swelling** are signs of a **severe allergic reaction** (anaphylaxis), which can cause death. **Call 911 (emergency services) right away.**\n\n**Wrong choices**\n- Wait a few minutes to see if it gets better: A severe reaction can become deadly very quickly.\n- Bring the guest a new plate of food: New food does not help a severe allergic reaction.\n- Give the guest a glass of water and wait: Water does not stop a severe allergic reaction, and waiting wastes time.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "allergic reaction",
+      "emergency"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  }
+]
