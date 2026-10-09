@@ -1,0 +1,74 @@
+{
+  "cert": "servsafe-food-handler",
+  "checkedAt": "2026-10-10",
+  "by": "separate verifier AI",
+  "chapters": {
+    "basic-food-safety": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "Outbreak definition, symptoms, high-risk groups, three hazard types, galvanized-container/acid rule (Food Code 4-101.15), approved source / no home-canned food (3-201.11), TCS examples (Food Code 1-201.10 definition: cut melons, cut tomatoes, cut leafy greens, raw sprouts, heat-treated plant food), FAT TOM and the Big 6 list (Food Code 2022 2-201.11/2-201.12) all check out.",
+        "'Food most often becomes unsafe through time-temperature abuse, cross-contamination, poor personal hygiene, and poor cleaning and sanitizing' matches the ServSafe 'four main ways' wording.",
+        "'Viruses do not grow in food; they come from people' is slightly broad: Norovirus and Hepatitis A can also come from contaminated water and shellfish. Optional fix: 'they usually come from people'.",
+        "'The Big 6' is an informal industry label. The Food Code lists the six pathogens but does not formally use that name, so 'the FDA names six germs, the Big 6' is acceptable but could read 'the FDA Food Code lists six germs, often called the Big 6'."
+      ]
+    },
+    "personal-hygiene": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "Handwashing steps and times (scrub 10-15 s, whole process at least 20 s) match Food Code 2-301.12. Hand antiseptic only on clean hands matches 2-301.16. Handwashing sink only matches 2-301.15. Nail polish and artificial nails only with intact gloves matches 2-302.11. Plain band ring only matches 2-303.11.",
+        "Exclusion for vomiting/diarrhea with return after 24 h symptom-free (unless a Big 6 diagnosis) matches 2-201.12(A) / 2-201.13(A). Sore throat with fever = restrict, or exclude when serving a highly susceptible population (HSP), matches 2-201.12(G). Restriction and exclusion definitions are correct.",
+        "Bare-hand contact with RTE food: the Food Code (3-301.11) allows exceptions. Bare hands are allowed when the RTE food is an ingredient in food that will be cooked to the required temperature, or under an alternative procedure the regulatory authority approved in advance (not allowed for HSP). Some states and localities apply this differently. Suggested wording: 'In most jurisdictions, ready-to-eat food must not be touched with bare hands.' Or add 'unless your local health department has approved otherwise'.",
+        "'A drink in a prep area needs a lid and straw': the Food Code (2-401.11(B)) requires a closed beverage container handled to prevent contamination. 'Lid and straw' is ServSafe's example, not the only allowed form. This is acceptable.",
+        "Tip 'Vomiting, diarrhea, jaundice: report and stay out': jaundice means exclusion only when it started within the last 7 days (2-201.12(B)). The compare table's 'new jaundice' captures this correctly."
+      ]
+    },
+    "cross-contamination-allergens": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "Nine major allergens, sesame effective Jan 1 2023 (FASTER Act), and 'crustaceans, not clams or oysters' (mollusks are not major allergens under FALCPA) are all correct. The cited source is appropriate.",
+        "Source on the 'Refrigerator storage order' card: Food Code 2022 3-302.11 requires raw animal foods to be separated from RTE food and from each other. However, the specific top-to-bottom order (RTE, seafood, whole beef/pork, ground meat/fish, poultry) is ServSafe's teaching, based on cooking temperatures; the code text does not spell it out. Suggested source: 'ServSafe / based on FDA Food Code 2022 3-302.11 and minimum cooking temperatures'.",
+        "Ice scoop 'stored outside the ice': this is ServSafe guidance and many local codes require it. However, Food Code 3-304.12(B) allows a utensil to be stored in a non-TCS food such as ice, with the handle above the food, in a container that can be closed. It is not a universal FDA rule. Optional wording: 'store the scoop outside the ice in a clean, protected place (ServSafe practice)'.",
+        "'Heat does not destroy allergens' is ServSafe's standard teaching. Scientifically, cooking does not reliably remove allergens, though some proteins are partly heat-sensitive. Optional, more precise wording: 'cooking does not remove allergens'."
+      ]
+    },
+    "time-temperature": {
+      "verdict": "PASS (re-verified)",
+      "problems": [
+        "Compare table row ['Poultry, stuffing, reheating for hot holding', '165°F', 'Less than 1 second (reheat within 2 hours)'] — wrong for reheating. Food Code 2022 3-403.11(A) and ServSafe require food reheated for hot holding to reach 165°F for 15 seconds within 2 hours. 'Less than 1 second' applies only to poultry and stuffing cooking (3-401.11(A)(3)). Suggested fix: split into two rows: 'Poultry, stuffing | 165°F | Less than 1 second' and 'Reheating for hot holding | 165°F | 15 seconds, reached within 2 hours'. Optionally also change the summary to 'Reheat food for hot holding to 165°F for 15 seconds within 2 hours'."
+      ],
+      "notes": [
+        "Cooking temperatures (165 °F <1 s poultry/stuffing; 155 °F 17 s ground; 145 °F 15 s fish, steaks, chops; 135 °F plant food for hot holding) match Food Code 3-401.11 and 3-401.13. Thawing methods match 3-501.13. Date marking (7 days at 41 °F, prep day = day 1; 'made on the 4th, last day the 10th') matches 3-501.17. Ice-point calibration at 32 °F is correct.",
+        "'Germs grow fastest between 41°F and 135°F': USDA uses the same wording. However, ServSafe adds that growth is fastest between 70°F and 125°F. Optional: 'Germs grow well between 41°F and 135°F, and fastest between 70°F and 125°F.'",
+        "'Receive ... cold TCS food at 41°F or lower' (summary, points, compare table) leaves out the Food Code 3-202.11 exceptions: milk and shell eggs may be received at 45°F, and live shellfish at 45°F air temperature / 50°F internal. Suggested: add 'unless your local code allows an exception, such as milk and shell eggs at 45°F'.",
+        "Cooling: Food Code 3-501.14 says 135°F to 70°F within 2 hours, and to 41°F 'within a total of 6 hours'. 'Within the next 4 hours' is ServSafe's simplification and is acceptable. The corrective action (reheat and re-cool, or discard, if 70°F is not reached in 2 hours) matches ServSafe.",
+        "Time as a public health control: 'served or thrown out within 4 hours' is the 4-hour option of Food Code 3-501.19. The code also has a 6-hour option for cold food that starts at 41°F or lower and stays at 70°F or lower. It requires written procedures and is not allowed for some HSP foods. Many jurisdictions also require prior approval. Suggested: 'usually within 4 hours (local rules and written procedures apply)'.",
+        "Date marking applies to RTE TCS food held more than 24 hours. Optionally add this condition."
+      ],
+      "history": [
+        "1st check FAIL (reheating row merged with poultry <1 s)",
+        "fixed: split into poultry/stuffing 165°F <1 s and reheating 165°F 15 s within 2 h; storage-order card source changed to ServSafe course",
+        "re-verified by a separate agent: PASS"
+      ]
+    },
+    "cleaning-sanitation": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "The following check out:",
+        "  - Cleaning vs. sanitizing.",
+        "  - Clean and sanitize every 4 hours for constant use (Food Code 4-602.11(C); refrigerated prep rooms may use a longer schedule).",
+        "  - Three-compartment sink steps; air-dry only (4-901.11).",
+        "  - Sanitizer test kit (4-302.14).",
+        "  - Wiping cloths kept in sanitizer (3-304.14).",
+        "  - Storage at least 6 inches off the floor (4-903.11).",
+        "  - Chemicals separated from food and never above it (7-201.11).",
+        "  - Working containers labeled with the common name (7-102.11).",
+        "  - SDS, mop water in a service sink, and the pest signs.",
+        "'Only a licensed pest control operator should apply pesticides' is ServSafe guidance. The Food Code (7-202.12) governs how pesticides are used, not who applies them, and state pesticide laws vary. The wording 'should' is acceptable. Optional: 'Leave pesticide use to a licensed pest control operator'."
+      ]
+    }
+  }
+}
