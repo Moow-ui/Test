@@ -1,0 +1,464 @@
+[
+  {
+    "id": "industrial-safety-industrial-engineer-human-factors-0001",
+    "certId": "industrial-safety-industrial-engineer",
+    "subjectId": "ergonomics",
+    "chapterId": "human-factors",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "신뢰도가 각각 0.9, 0.8인 부품 2개를 직렬로 연결한 시스템의 신뢰도는?",
+    "choices": [
+      "0.98",
+      "0.72",
+      "0.85",
+      "0.8"
+    ],
+    "answer": 2,
+    "oneLineConcept": "직렬 신뢰도 = 각 부품 신뢰도의 곱",
+    "explanation": "직렬 연결은 부품 하나만 고장 나도 시스템 전체가 멈추므로 신뢰도를 곱합니다.\n\n1. 신뢰도 = 0.9 × 0.8\n2. 답: 0.72\n\n검산: 직렬 신뢰도는 가장 약한 부품(0.8)보다 작아야 하므로 0.72가 맞습니다.\n\n**틀린 선지**\n- ① 0.98: 병렬로 연결했을 때의 값입니다.\n- ③ 0.85: 두 값의 평균으로, 신뢰도 계산법이 아닙니다.\n- ④ 0.8: 가장 약한 부품의 신뢰도를 그대로 쓴 값으로, 직렬 연결이면 이보다 더 낮아집니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "신뢰도",
+      "직렬",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-industrial-engineer-human-factors-0002",
+    "certId": "industrial-safety-industrial-engineer",
+    "subjectId": "ergonomics",
+    "chapterId": "human-factors",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "신뢰도가 각각 0.9, 0.8인 부품 2개를 병렬로 연결한 시스템의 신뢰도는?",
+    "choices": [
+      "0.72",
+      "0.85",
+      "0.02",
+      "0.98"
+    ],
+    "answer": 4,
+    "oneLineConcept": "병렬 신뢰도 = 1 − (1 − R1)(1 − R2)",
+    "explanation": "병렬 연결은 두 부품이 모두 고장 나야 시스템이 멈춥니다.\n\n1. 각 부품의 고장 확률: 1 − 0.9 = 0.1, 1 − 0.8 = 0.2\n2. 둘 다 고장 날 확률 = 0.1 × 0.2 = 0.02\n3. 신뢰도 = 1 − 0.02 = 0.98\n\n검산: 병렬 신뢰도는 가장 좋은 부품(0.9)보다 커야 하므로 0.98이 맞습니다.\n\n**틀린 선지**\n- ① 0.72: 직렬로 연결했을 때의 값입니다.\n- ② 0.85: 두 값의 평균으로, 신뢰도 계산법이 아닙니다.\n- ③ 0.02: 둘 다 고장 날 확률로, 1에서 빼지 않은 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "신뢰도",
+      "병렬",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-industrial-engineer-human-factors-0003",
+    "certId": "industrial-safety-industrial-engineer",
+    "subjectId": "ergonomics",
+    "chapterId": "human-factors",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "신뢰도 0.9인 부품 A 뒤에, 신뢰도가 각각 0.8인 부품 B와 C를 병렬로 묶은 장치가 직렬로 연결되어 있다. 전체 신뢰도는?",
+    "choices": [
+      "0.576",
+      "0.864",
+      "0.96",
+      "0.72"
+    ],
+    "answer": 2,
+    "oneLineConcept": "혼합 연결은 병렬 부분을 먼저 하나로 계산한 뒤 직렬로 곱한다",
+    "explanation": "직렬과 병렬이 섞여 있으면 병렬 부분을 먼저 하나의 부품으로 바꿔 계산합니다.\n\n1. B와 C의 병렬 신뢰도 = 1 − (1 − 0.8) × (1 − 0.8) = 1 − 0.04 = 0.96\n2. A와 직렬 = 0.9 × 0.96 = 0.864\n\n검산: 전체는 직렬이므로 A의 신뢰도(0.9)보다 작아야 하고, 0.864는 0.9보다 작습니다.\n\n**틀린 선지**\n- ① 0.576: 세 부품을 모두 직렬로 곱한 값(0.9 × 0.8 × 0.8)입니다.\n- ③ 0.96: 병렬 부분만 계산하고 A를 곱하지 않은 값입니다.\n- ④ 0.72: A와 B 하나만 직렬로 곱한 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "신뢰도",
+      "직렬",
+      "병렬",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-industrial-engineer-human-factors-0004",
+    "certId": "industrial-safety-industrial-engineer",
+    "subjectId": "ergonomics",
+    "chapterId": "human-factors",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "작업자가 해야 할 밸브 잠그기를 깜빡 잊고 하지 않았다. 스웨인(Swain)의 휴먼 에러 분류로 맞는 것은?",
+    "choices": [
+      "생략 에러(Omission error)",
+      "실행 에러(Commission error)",
+      "순서 에러(Sequential error)",
+      "불필요한 행동 에러(Extraneous error)"
+    ],
+    "answer": 1,
+    "oneLineConcept": "생략 에러 = 해야 할 일을 빠뜨림",
+    "explanation": "스웨인은 휴먼 에러를 행동으로 나눴습니다. **생략**(해야 할 일을 하지 않음), **실행**(했지만 잘못 함), **순서**(순서를 틀림), **시간**(너무 이르거나 늦음), **불필요한 행동**(하지 않아도 될 일을 함)입니다. 해야 할 일을 빠뜨렸으므로 생략 에러입니다.\n\n**틀린 선지**\n- ② 실행 에러(Commission error): 일은 했지만 잘못 수행한 경우입니다.\n- ③ 순서 에러(Sequential error): 순서를 바꿔서 한 경우입니다.\n- ④ 불필요한 행동 에러(Extraneous error): 하지 말아야 할 일을 더 한 경우입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "휴먼 에러",
+      "스웨인"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-industrial-engineer-human-factors-0005",
+    "certId": "industrial-safety-industrial-engineer",
+    "subjectId": "ergonomics",
+    "chapterId": "human-factors",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "고용노동부 고시의 소음 노출 기준에서, 하루 8시간 노출될 때의 기준은?",
+    "choices": [
+      "80dB(A)",
+      "85dB(A)",
+      "90dB(A)",
+      "100dB(A)"
+    ],
+    "answer": 3,
+    "oneLineConcept": "소음 노출 기준: 하루 8시간 90dB(A)",
+    "explanation": "소음 노출 기준은 하루 8시간 일할 때 **90dB(A)** 입니다. 소리가 5dB 커질 때마다 허용 시간은 절반으로 줄어듭니다. 85dB(A)는 산업안전보건기준에 관한 규칙에서 ‘소음작업’으로 보는 기준이므로 헷갈리지 않도록 합니다.\n\n**틀린 선지**\n- ① 80dB(A): 노출 기준보다 낮은 값입니다.\n- ② 85dB(A): 8시간 기준으로 ‘소음작업’에 해당하는 기준으로, 노출 기준과 다릅니다.\n- ④ 100dB(A): 하루 2시간 노출 기준에 해당하는 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "소음",
+      "노출 기준"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-industrial-engineer-human-factors-0006",
+    "certId": "industrial-safety-industrial-engineer",
+    "subjectId": "ergonomics",
+    "chapterId": "human-factors",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "계기의 수치를 정확하게 읽어야 할 때 가장 알맞은 표시장치는?",
+    "choices": [
+      "계수형(숫자가 바로 보이는 디지털형)",
+      "동침형(바늘이 움직이는 형)",
+      "동목형(눈금판이 움직이는 형)",
+      "경고등"
+    ],
+    "answer": 1,
+    "oneLineConcept": "정확한 값 = 계수형, 변화 추세 = 동침형",
+    "explanation": "계수형 표시장치는 숫자가 그대로 나타나므로 값을 정확하고 빠르게 읽을 수 있습니다. 바늘이 움직이는 동침형은 값이 오르는지 내리는지 같은 **변화의 흐름**을 보기에 좋습니다.\n\n**틀린 선지**\n- ② 동침형(바늘이 움직이는 형): 변화 방향과 정도를 보기 좋지만, 정확한 값을 읽기에는 계수형보다 못합니다.\n- ③ 동목형(눈금판이 움직이는 형): 눈금판이 움직여 값을 읽기 어렵고 정확도가 떨어집니다.\n- ④ 경고등: 켜짐·꺼짐으로 상태만 알려 주므로 수치를 읽을 수 없습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "표시장치"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-industrial-engineer-human-factors-0007",
+    "certId": "industrial-safety-industrial-engineer",
+    "subjectId": "ergonomics",
+    "chapterId": "human-factors",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "인간-기계 체계에서 사람이 기계보다 뛰어난 기능은?",
+    "choices": [
+      "같은 일을 오랜 시간 정확하게 되풀이한다",
+      "예상하지 못한 일이 생겼을 때 융통성 있게 대처한다",
+      "큰 힘을 일정하게 낸다",
+      "복잡한 계산을 빠르게 한다"
+    ],
+    "answer": 2,
+    "oneLineConcept": "사람은 융통성·판단, 기계는 반복·힘·빠른 계산",
+    "explanation": "사람은 처음 보는 상황에서도 경험을 살려 판단하고 융통성 있게 대처하는 능력이 기계보다 뛰어납니다. 반대로 같은 일을 지치지 않고 되풀이하거나, 큰 힘을 내거나, 빠르게 계산하는 일은 기계가 더 잘합니다.\n\n**틀린 선지**\n- ① 같은 일을 오랜 시간 정확하게 되풀이한다: 기계가 더 잘하는 기능입니다.\n- ③ 큰 힘을 일정하게 낸다: 기계가 더 잘하는 기능입니다.\n- ④ 복잡한 계산을 빠르게 한다: 기계가 더 잘하는 기능입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "인간-기계 체계"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-industrial-engineer-human-factors-0008",
+    "certId": "industrial-safety-industrial-engineer",
+    "subjectId": "ergonomics",
+    "chapterId": "human-factors",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "상황을 잘못 해석해 처음부터 목표나 계획을 잘못 세운 경우, 리즌(Reason)의 분류에 따른 에러 유형은?",
+    "choices": [
+      "실수(Slip)",
+      "건망증(Lapse)",
+      "착오(Mistake)",
+      "위반(Violation)"
+    ],
+    "answer": 3,
+    "oneLineConcept": "착오 = 계획 자체가 틀림, 실수 = 계획은 맞고 행동이 틀림",
+    "explanation": "리즌은 에러를 이렇게 나눕니다. **착오**는 상황을 잘못 판단해 계획(목표) 자체가 틀린 경우이고, **실수**는 계획은 맞았지만 행동이 빗나간 경우, **건망증**은 해야 할 일을 잊어버린 경우, **위반**은 규칙을 알면서도 일부러 어긴 경우입니다.\n\n**틀린 선지**\n- ① 실수(Slip): 계획은 맞았는데 행동이 의도와 다르게 나간 경우입니다.\n- ② 건망증(Lapse): 기억이 빠져 해야 할 일을 잊어버린 경우입니다.\n- ④ 위반(Violation): 규칙을 알면서도 일부러 지키지 않은 경우입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "휴먼 에러",
+      "착오"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-industrial-engineer-human-factors-0009",
+    "certId": "industrial-safety-industrial-engineer",
+    "subjectId": "ergonomics",
+    "chapterId": "human-factors",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "산업안전보건기준에 관한 규칙에서 정한 정밀작업 장소의 조도(밝기) 기준은? (갱내와 감광재료를 다루는 작업장은 제외)",
+    "choices": [
+      "75럭스 이상",
+      "150럭스 이상",
+      "300럭스 이상",
+      "750럭스 이상"
+    ],
+    "answer": 3,
+    "oneLineConcept": "조도: 초정밀 750, 정밀 300, 보통 150, 그 밖 75럭스 이상",
+    "explanation": "산업안전보건기준에 관한 규칙은 작업 종류마다 조도 기준을 정해 두었습니다.\n\n- 초정밀작업: 750럭스 이상\n- **정밀작업: 300럭스 이상**\n- 보통작업: 150럭스 이상\n- 그 밖의 작업: 75럭스 이상\n\n**틀린 선지**\n- ① 75럭스 이상: 그 밖의 작업 기준입니다.\n- ② 150럭스 이상: 보통작업 기준입니다.\n- ④ 750럭스 이상: 초정밀작업 기준입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "조명",
+      "조도 기준"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-industrial-engineer-human-factors-0010",
+    "certId": "industrial-safety-industrial-engineer",
+    "subjectId": "ergonomics",
+    "chapterId": "human-factors",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "시각적 표시장치보다 청각적 표시장치(경보음 등)를 쓰는 것이 더 알맞은 경우는?",
+    "choices": [
+      "전달할 내용이 길고 복잡할 때",
+      "전달한 내용을 나중에 다시 봐야 할 때",
+      "주변 소음이 매우 심할 때",
+      "전달할 내용이 짧고 단순하며 즉시 행동해야 할 때"
+    ],
+    "answer": 4,
+    "oneLineConcept": "청각 표시 = 짧고 단순, 즉시 행동 / 시각 표시 = 길고 복잡, 나중에 참고",
+    "explanation": "소리는 눈을 다른 곳에 두고 있어도 바로 알아챌 수 있습니다. 그래서 **내용이 짧고 단순하며 곧바로 행동해야 할 때**, 작업자가 자주 움직일 때에는 청각적 표시가 알맞습니다. 내용이 길고 복잡하거나 나중에 다시 봐야 하는 정보는 시각적 표시가 알맞습니다.\n\n**틀린 선지**\n- ① 전달할 내용이 길고 복잡할 때: 시각적 표시가 알맞은 경우입니다.\n- ② 전달한 내용을 나중에 다시 봐야 할 때: 소리는 지나가면 남지 않으므로 시각적 표시가 알맞습니다.\n- ③ 주변 소음이 매우 심할 때: 소음 때문에 소리가 묻혀 잘 들리지 않으므로 시각적 표시가 알맞습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "표시장치",
+      "청각"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-industrial-engineer-human-factors-0011",
+    "certId": "industrial-safety-industrial-engineer",
+    "subjectId": "ergonomics",
+    "chapterId": "human-factors",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "고장률이 시간당 0.0001로 일정한 설비의 평균고장간격(MTBF)은?",
+    "choices": [
+      "1,000시간",
+      "10,000시간",
+      "100,000시간",
+      "0.0001시간"
+    ],
+    "answer": 2,
+    "oneLineConcept": "고장률이 일정하면 MTBF = 1 ÷ 고장률",
+    "explanation": "고장률(λ)이 일정할 때 평균고장간격은 고장률의 역수입니다.\n\n1. MTBF = 1 ÷ λ = 1 ÷ 0.0001\n2. 답: 10,000시간\n\n검산: 10,000시간 × 0.0001(시간당 고장) = 1회로, 평균 1번 고장 나는 간격이 맞습니다.\n\n**틀린 선지**\n- ① 1,000시간: 0의 개수를 하나 적게 센 값입니다.\n- ③ 100,000시간: 0의 개수를 하나 많이 센 값입니다.\n- ④ 0.0001시간: 고장률을 그대로 쓴 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "신뢰도",
+      "MTBF",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-industrial-engineer-human-factors-0012",
+    "certId": "industrial-safety-industrial-engineer",
+    "subjectId": "ergonomics",
+    "chapterId": "human-factors",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "광원에서 2m 떨어진 곳의 조도가 200럭스이다. 같은 광원에서 4m 떨어진 곳의 조도는? (조도는 거리의 제곱에 반비례한다)",
+    "choices": [
+      "100럭스",
+      "50럭스",
+      "25럭스",
+      "400럭스"
+    ],
+    "answer": 2,
+    "oneLineConcept": "조도 = 광도 ÷ 거리², 거리가 2배면 조도는 1/4",
+    "explanation": "조도는 거리의 제곱에 반비례하므로, 거리가 멀어지면 빠르게 어두워집니다.\n\n1. 거리 비 = 4 ÷ 2 = 2배\n2. 조도는 1 ÷ 2² = 1/4 로 줄어듦\n3. 200 × 1/4 = 50럭스\n\n검산: 광도 = 200 × 2² = 800칸델라, 800 ÷ 4² = 800 ÷ 16 = 50럭스로 같습니다.\n\n**틀린 선지**\n- ① 100럭스: 거리에 그냥 반비례한다고 보고 절반만 줄인 값입니다.\n- ③ 25럭스: 1/8 로 줄인 값으로, 제곱 관계가 아닙니다.\n- ④ 400럭스: 멀어질수록 밝아진다고 거꾸로 계산한 값입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "조명",
+      "조도",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-industrial-engineer-human-factors-0013",
+    "certId": "industrial-safety-industrial-engineer",
+    "subjectId": "ergonomics",
+    "chapterId": "human-factors",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "인체 측정 자료를 설계에 응용하는 방법으로 옳지 않은 것은?",
+    "choices": [
+      "출입문의 높이는 키가 큰 사람(최대치)을 기준으로 정한다",
+      "손을 뻗어 닿아야 하는 조종 장치까지의 거리는 팔이 짧은 사람(최소치)을 기준으로 정한다",
+      "자동차 운전석처럼 사람마다 맞춰야 하는 것은 조절식으로 설계한다",
+      "비상구 문의 높이는 키가 작은 사람(최소치)을 기준으로 정한다"
+    ],
+    "answer": 4,
+    "oneLineConcept": "높이·여유 공간은 최대치, 손이 닿는 거리는 최소치 기준",
+    "explanation": "인체 측정 자료는 ‘누구도 불편하지 않게’ 쓰는 것이 원칙입니다. 문 높이처럼 **여유 공간**은 큰 사람(최대치)에 맞춰야 모두가 지나갈 수 있고, 조종 장치까지 거리처럼 **손이 닿아야 하는 것**은 작은 사람(최소치)에 맞춰야 모두가 닿을 수 있습니다. 비상구 문도 출입문이므로 최대치를 기준으로 합니다.\n\n**틀린 선지**\n- ① 출입문의 높이는 키가 큰 사람(최대치)을 기준으로 정한다: 맞는 설명입니다.\n- ② 손을 뻗어 닿아야 하는 조종 장치까지의 거리는 팔이 짧은 사람(최소치)을 기준으로 정한다: 맞는 설명입니다.\n- ③ 자동차 운전석처럼 사람마다 맞춰야 하는 것은 조절식으로 설계한다: 맞는 설명입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "인체 측정",
+      "설계 원칙"
+    ],
+    "levelLock": true
+  }
+]

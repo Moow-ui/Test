@@ -1,0 +1,463 @@
+[
+  {
+    "id": "industrial-safety-industrial-engineer-risk-assessment-0001",
+    "certId": "industrial-safety-industrial-engineer",
+    "subjectId": "ergonomics",
+    "chapterId": "risk-assessment",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "정상 사상(일어나면 안 되는 사고)에서 시작해 그 원인을 거꾸로 찾아 내려가는 연역적 분석 기법은?",
+    "choices": [
+      "ETA",
+      "FTA",
+      "FMEA",
+      "PHA"
+    ],
+    "answer": 2,
+    "oneLineConcept": "FTA = 정상 사상에서 원인으로 내려가는 연역적 기법",
+    "explanation": "FTA(결함수 분석)는 맨 위에 ‘일어나면 안 되는 사고(정상 사상)’를 두고, 그 사고가 왜 일어나는지를 AND·OR 게이트로 나무 모양처럼 거꾸로 풀어 내려가는 기법입니다. 결과에서 원인으로 가므로 **연역적** 기법입니다.\n\n**틀린 선지**\n- ① ETA: 처음 일어난 사건에서 결과 쪽으로 나아가는 귀납적 기법입니다.\n- ③ FMEA: 부품의 고장 형태와 그 영향을 표로 정리하는 귀납적 기법입니다.\n- ④ PHA: 설계 초기에 위험 정도를 대략 살피는 예비위험분석입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "FTA",
+      "분석 기법"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-industrial-engineer-risk-assessment-0002",
+    "certId": "industrial-safety-industrial-engineer",
+    "subjectId": "ergonomics",
+    "chapterId": "risk-assessment",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "처음 일어난 사건 뒤에 안전장치가 성공하는지 실패하는지에 따라 갈래를 나누어 결과를 찾아가는 귀납적 분석 기법은?",
+    "choices": [
+      "FTA",
+      "HAZOP",
+      "ETA",
+      "MORT"
+    ],
+    "answer": 3,
+    "oneLineConcept": "ETA = 초기 사건에서 성공·실패로 갈라지는 귀납적 기법",
+    "explanation": "ETA(사건수 분석)는 처음 일어난 사건(초기 사상)에서 출발해, 안전장치가 작동했는지(성공) 안 했는지(실패)에 따라 가지를 나누며 최종 결과를 찾습니다. 원인에서 결과로 나아가므로 **귀납적** 기법입니다.\n\n**틀린 선지**\n- ① FTA: 결과(정상 사상)에서 원인으로 거꾸로 가는 연역적 기법입니다.\n- ② HAZOP: 가이드 워드로 설계 의도에서 벗어난 상태를 찾는 위험과 운전 분석입니다.\n- ④ MORT: 경영·관리 측면까지 나무 모양으로 살피는 관리 감독 위험 수목 분석입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "ETA",
+      "분석 기법"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-industrial-engineer-risk-assessment-0003",
+    "certId": "industrial-safety-industrial-engineer",
+    "subjectId": "ergonomics",
+    "chapterId": "risk-assessment",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "시스템을 이루는 부품 하나하나의 고장 형태를 찾고, 그 고장이 시스템에 주는 영향을 표로 정리하는 귀납적 분석 기법은?",
+    "choices": [
+      "FMEA",
+      "FTA",
+      "THERP",
+      "HAZOP"
+    ],
+    "answer": 1,
+    "oneLineConcept": "FMEA = 부품 고장 형태와 영향을 표로 정리하는 귀납적 기법",
+    "explanation": "FMEA(고장 형태와 영향 분석)는 부품마다 ‘어떻게 고장 날 수 있는지’를 적고, 그 고장이 시스템 전체에 어떤 영향을 주는지 표로 정리합니다. 부품(원인)에서 시스템(결과)으로 나아가므로 귀납적 기법입니다.\n\n**틀린 선지**\n- ② FTA: 정상 사상에서 원인을 찾아 내려가는 연역적 기법입니다.\n- ③ THERP: 사람의 실수(휴먼 에러) 확률을 예측하는 기법입니다.\n- ④ HAZOP: 가이드 워드로 공정의 이상 상태를 찾는 기법입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "FMEA",
+      "분석 기법"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-industrial-engineer-risk-assessment-0004",
+    "certId": "industrial-safety-industrial-engineer",
+    "subjectId": "ergonomics",
+    "chapterId": "risk-assessment",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "HAZOP(위험과 운전 분석)에서 설계 의도와 정반대인 상태(예: 배관 속 흐름이 거꾸로 흐름)를 나타내는 가이드 워드는?",
+    "choices": [
+      "NO 또는 NOT",
+      "MORE",
+      "OTHER THAN",
+      "REVERSE"
+    ],
+    "answer": 4,
+    "oneLineConcept": "HAZOP 가이드 워드: REVERSE = 설계 의도와 정반대",
+    "explanation": "HAZOP은 공정의 변수(흐름·압력·온도 등)에 가이드 워드를 붙여 이상 상태를 찾는 기법입니다. **REVERSE**는 설계 의도와 반대 방향, NO·NOT은 전혀 없음, MORE·LESS는 양이 많거나 적음, OTHER THAN은 완전히 다른 것으로 바뀜을 뜻합니다.\n\n**틀린 선지**\n- ① NO 또는 NOT: 설계 의도가 전혀 이루어지지 않음(흐름 없음)을 뜻합니다.\n- ② MORE: 양이 설계보다 많음을 뜻합니다.\n- ③ OTHER THAN: 설계 의도와 완전히 다른 것으로 바뀜을 뜻합니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "HAZOP",
+      "가이드 워드"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-industrial-engineer-risk-assessment-0005",
+    "certId": "industrial-safety-industrial-engineer",
+    "subjectId": "ergonomics",
+    "chapterId": "risk-assessment",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "FT도에서 기본 사상 A(발생 확률 0.1)와 B(발생 확률 0.2)가 AND 게이트로 연결되어 있다. 정상 사상의 발생 확률은?",
+    "choices": [
+      "0.02",
+      "0.28",
+      "0.3",
+      "0.72"
+    ],
+    "answer": 1,
+    "oneLineConcept": "AND 게이트 = 확률을 곱한다",
+    "explanation": "AND 게이트는 아래 사건이 **모두** 일어나야 위 사건이 일어나므로 확률을 곱합니다.\n\n1. 확률 = 0.1 × 0.2\n2. 답: 0.02\n\n검산: AND 게이트의 결과는 가장 작은 확률(0.1)보다 작아야 하므로 0.02가 맞습니다.\n\n**틀린 선지**\n- ② 0.28: OR 게이트로 계산한 값입니다.\n- ③ 0.3: 두 확률을 단순히 더한 값입니다.\n- ④ 0.72: 두 사건이 모두 일어나지 않을 확률(0.9 × 0.8)입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "FTA",
+      "AND 게이트",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-industrial-engineer-risk-assessment-0006",
+    "certId": "industrial-safety-industrial-engineer",
+    "subjectId": "ergonomics",
+    "chapterId": "risk-assessment",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "FT도에서 기본 사상 A(발생 확률 0.1)와 B(발생 확률 0.2)가 OR 게이트로 연결되어 있다. 정상 사상의 발생 확률은?",
+    "choices": [
+      "0.02",
+      "0.3",
+      "0.28",
+      "0.72"
+    ],
+    "answer": 3,
+    "oneLineConcept": "OR 게이트 = 1 − (1 − q1)(1 − q2)",
+    "explanation": "OR 게이트는 아래 사건 중 **하나만** 일어나도 위 사건이 일어납니다. 그래서 ‘하나도 안 일어날 확률’을 1에서 뺍니다.\n\n1. A가 안 일어날 확률 0.9, B가 안 일어날 확률 0.8\n2. 둘 다 안 일어날 확률 = 0.9 × 0.8 = 0.72\n3. 정상 사상 확률 = 1 − 0.72 = 0.28\n\n검산: 0.1 + 0.2 − (0.1 × 0.2) = 0.28로 같습니다.\n\n**틀린 선지**\n- ① 0.02: AND 게이트로 계산한 값입니다.\n- ② 0.3: 두 확률을 단순히 더해 둘 다 일어나는 경우를 두 번 센 값입니다.\n- ④ 0.72: 둘 다 안 일어날 확률로, 1에서 빼지 않은 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "FTA",
+      "OR 게이트",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-industrial-engineer-risk-assessment-0007",
+    "certId": "industrial-safety-industrial-engineer",
+    "subjectId": "ergonomics",
+    "chapterId": "risk-assessment",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "정상 사상 T는 게이트 G1과 기본 사상 C가 AND 게이트로 연결되어 있고, G1은 기본 사상 A와 B가 OR 게이트로 연결되어 있다. A = 0.1, B = 0.2, C = 0.5일 때 T의 발생 확률은?",
+    "choices": [
+      "0.01",
+      "0.14",
+      "0.15",
+      "0.64"
+    ],
+    "answer": 2,
+    "oneLineConcept": "아래 게이트부터 차례로 계산: OR 먼저, 그다음 AND",
+    "explanation": "FT도는 맨 아래 게이트부터 위로 올라가며 계산합니다.\n\n1. G1(OR) = 1 − (1 − 0.1) × (1 − 0.2) = 1 − 0.72 = 0.28\n2. T(AND) = G1 × C = 0.28 × 0.5 = 0.14\n\n검산: T는 AND 결과이므로 G1(0.28)과 C(0.5)보다 작아야 하고, 0.14는 둘보다 작습니다.\n\n**틀린 선지**\n- ① 0.01: 세 확률을 모두 곱한 값(0.1 × 0.2 × 0.5)으로, G1을 AND로 잘못 본 것입니다.\n- ③ 0.15: G1을 단순히 더해(0.3) C를 곱한 값입니다.\n- ④ 0.64: T까지 OR 게이트로 잘못 계산한 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "FTA",
+      "게이트 확률",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-industrial-engineer-risk-assessment-0008",
+    "certId": "industrial-safety-industrial-engineer",
+    "subjectId": "ergonomics",
+    "chapterId": "risk-assessment",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "정상 사상 T = G1 AND G2 이고, G1 = A OR B, G2 = A OR C 인 FT도의 최소 컷셋(minimal cut set)은?",
+    "choices": [
+      "{A}, {B, C}",
+      "{A, B, C}",
+      "{A}, {A, B}, {A, C}, {B, C}",
+      "{B, C}"
+    ],
+    "answer": 1,
+    "oneLineConcept": "최소 컷셋 = 정상 사상을 일으키는 가장 작은 기본 사상 모음",
+    "explanation": "컷셋은 ‘이 사건들이 모두 일어나면 정상 사상이 생기는 모음’이고, 최소 컷셋은 그 가운데 더 줄일 수 없는 것입니다.\n\n1. T = (A + B) × (A + C) 로 전개 (+는 OR, ×는 AND)\n2. = A·A + A·C + B·A + B·C = A + AC + AB + BC (A·A 는 A)\n3. A 하나만 일어나도 T가 생기므로, A가 들어 있는 AC와 AB는 A에 흡수되어 빠집니다.\n4. 최소 컷셋: {A}, {B, C}\n\n검산: A만 일어나면 G1·G2가 모두 참이고, B와 C만 일어나도 G1(B)·G2(C)가 모두 참이므로 T가 생깁니다.\n\n**틀린 선지**\n- ② {A, B, C}: 컷셋이기는 하지만 A만으로도 T가 생기므로 최소가 아닙니다.\n- ③ {A}, {A, B}, {A, C}, {B, C}: 흡수(줄이기)를 하지 않은 컷셋 목록입니다.\n- ④ {B, C}: {A}를 빠뜨렸습니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "FTA",
+      "최소 컷셋"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-industrial-engineer-risk-assessment-0009",
+    "certId": "industrial-safety-industrial-engineer",
+    "subjectId": "ergonomics",
+    "chapterId": "risk-assessment",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "사업장 위험성평가에서 ‘위험성’의 크기를 정할 때 조합하는 두 가지 요소는?",
+    "choices": [
+      "근로자 수와 작업 시간",
+      "재해 건수와 근로자 수",
+      "가능성(빈도)과 중대성(강도)",
+      "설비 가격과 수리 비용"
+    ],
+    "answer": 3,
+    "oneLineConcept": "위험성 = 가능성(빈도) × 중대성(강도)",
+    "explanation": "위험성은 유해·위험요인이 사망, 부상 또는 질병으로 이어질 수 있는 **가능성(얼마나 자주)** 과 **중대성(얼마나 크게)** 등을 고려한 위험의 정도입니다. 가능성과 중대성을 곱하거나 표(위험성 행렬)로 맞춰 보아 위험성의 크기를 정합니다.\n\n**틀린 선지**\n- ① 근로자 수와 작업 시간: 근로시간 계산에 쓰는 값으로, 위험성의 요소가 아닙니다.\n- ② 재해 건수와 근로자 수: 연천인율 같은 재해 통계에 쓰는 값입니다.\n- ④ 설비 가격과 수리 비용: 비용에 관한 값으로, 위험성의 요소가 아닙니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "위험성 평가",
+      "위험성 추정"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-industrial-engineer-risk-assessment-0010",
+    "certId": "industrial-safety-industrial-engineer",
+    "subjectId": "ergonomics",
+    "chapterId": "risk-assessment",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "사업장 위험성평가에 관한 지침에 따라 위험성 감소대책을 세울 때 가장 먼저 검토해야 하는 것은?",
+    "choices": [
+      "개인용 보호구 지급",
+      "작업 절차서 정비 같은 관리적 대책",
+      "연동장치·환기장치 설치 같은 공학적 대책",
+      "위험한 작업을 없애거나 덜 위험한 물질로 바꾸는 본질적 대책"
+    ],
+    "answer": 4,
+    "oneLineConcept": "감소대책 순서: 본질적 → 공학적 → 관리적 → 개인 보호구",
+    "explanation": "위험성 감소대책은 위험을 뿌리부터 없애는 쪽을 먼저 검토합니다.\n\n1. 위험한 작업을 없애거나 바꾸고, 덜 위험한 물질로 대체하는 **본질적 대책**\n2. 연동장치·환기장치 설치 같은 **공학적 대책**\n3. 작업 절차서 정비 같은 **관리적 대책**\n4. **개인용 보호구** 사용\n\n보호구는 다른 대책을 다 한 뒤에도 남는 위험에 쓰는 마지막 수단입니다.\n\n**틀린 선지**\n- ① 개인용 보호구 지급: 가장 마지막에 쓰는 대책입니다.\n- ② 작업 절차서 정비 같은 관리적 대책: 세 번째 순서의 대책입니다.\n- ③ 연동장치·환기장치 설치 같은 공학적 대책: 두 번째 순서의 대책입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "위험성 평가",
+      "감소대책"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-industrial-engineer-risk-assessment-0011",
+    "certId": "industrial-safety-industrial-engineer",
+    "subjectId": "ergonomics",
+    "chapterId": "risk-assessment",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "시스템 위험의 심각한 정도를 4가지 범주로 나눌 때(MIL-STD-882), 사망이나 시스템 전체 손실을 일으키는 가장 심각한 범주는?",
+    "choices": [
+      "파국적(Catastrophic)",
+      "위기적(Critical)",
+      "한계적(Marginal)",
+      "무시 가능(Negligible)"
+    ],
+    "answer": 1,
+    "oneLineConcept": "위험 강도: 파국적 > 위기적 > 한계적 > 무시 가능",
+    "explanation": "시스템 안전에서는 위험의 심각한 정도를 **범주 Ⅰ 파국적, 범주 Ⅱ 위기적, 범주 Ⅲ 한계적, 범주 Ⅳ 무시 가능**으로 나눕니다. 사망이나 시스템 전체를 잃는 가장 심각한 경우가 파국적입니다.\n\n**틀린 선지**\n- ② 위기적(Critical): 두 번째로 심각한 범주로, 큰 부상이나 큰 시스템 손상이 생기는 경우입니다.\n- ③ 한계적(Marginal): 세 번째 범주로, 가벼운 부상이나 손상에 그치는 경우입니다.\n- ④ 무시 가능(Negligible): 가장 가벼운 범주입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "시스템 안전",
+      "위험 강도"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-industrial-engineer-risk-assessment-0012",
+    "certId": "industrial-safety-industrial-engineer",
+    "subjectId": "ergonomics",
+    "chapterId": "risk-assessment",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "시스템을 구상하고 설계하는 초기 단계에서 가장 먼저 실시하며, 위험 요소가 어느 정도인지 정성적으로 살펴보는 분석은?",
+    "choices": [
+      "결함수 분석(FTA)",
+      "운용 위험 분석(OHA)",
+      "예비 위험 분석(PHA)",
+      "고장 형태와 영향 분석(FMEA)"
+    ],
+    "answer": 3,
+    "oneLineConcept": "PHA = 설계 초기에 가장 먼저 하는 정성적 위험 분석",
+    "explanation": "PHA(예비 위험 분석)는 시스템 안전 프로그램에서 **가장 먼저** 하는 분석입니다. 아직 자세한 설계가 없는 초기 단계에서 어떤 위험이 있을 수 있는지, 얼마나 심각한지를 정성적(말과 등급으로)으로 살펴봅니다.\n\n**틀린 선지**\n- ① 결함수 분석(FTA): 정상 사상의 원인을 자세히 찾는 기법으로, 설계가 어느 정도 진행된 뒤에 씁니다.\n- ② 운용 위험 분석(OHA): 시스템을 실제로 운용·정비하는 단계의 위험을 살피는 분석입니다.\n- ④ 고장 형태와 영향 분석(FMEA): 부품 설계가 정해진 뒤 부품별 고장을 살피는 기법입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "시스템 안전",
+      "PHA"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-industrial-engineer-risk-assessment-0013",
+    "certId": "industrial-safety-industrial-engineer",
+    "subjectId": "ergonomics",
+    "chapterId": "risk-assessment",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "FTA에 쓰는 기호에 대한 설명으로 옳지 않은 것은?",
+    "choices": [
+      "결함 사상(아래로 더 풀어 나가는 사건)은 직사각형으로 나타낸다",
+      "기본 사상(더 이상 나눌 수 없는 사건)은 직사각형으로 나타낸다",
+      "생략 사상(정보가 부족해 더 풀지 않는 사건)은 마름모로 나타낸다",
+      "통상 사상(평소에 일어날 것으로 예상되는 사건)은 집 모양으로 나타낸다"
+    ],
+    "answer": 2,
+    "oneLineConcept": "FTA 기호: 결함 사상 직사각형, 기본 사상 원, 생략 사상 마름모",
+    "explanation": "FTA 기호는 사건의 성격에 따라 모양이 다릅니다. 아래로 더 풀어 나가는 **결함 사상은 직사각형**, 더 나눌 수 없는 **기본 사상은 원**, 더 풀지 않는 **생략 사상은 마름모**, 평소 일어나는 **통상 사상은 집 모양**입니다.\n\n**틀린 선지**\n- ① 결함 사상(아래로 더 풀어 나가는 사건)은 직사각형으로 나타낸다: 맞는 설명입니다.\n- ③ 생략 사상(정보가 부족해 더 풀지 않는 사건)은 마름모로 나타낸다: 맞는 설명입니다.\n- ④ 통상 사상(평소에 일어날 것으로 예상되는 사건)은 집 모양으로 나타낸다: 맞는 설명입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "FTA",
+      "FTA 기호"
+    ],
+    "levelLock": true
+  }
+]

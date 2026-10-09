@@ -1,0 +1,357 @@
+[
+  {
+    "id": "industrial-safety-industrial-engineer-accident-theory-0001",
+    "certId": "industrial-safety-industrial-engineer",
+    "subjectId": "prevention",
+    "chapterId": "accident-theory",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "버드(Bird)의 재해 구성 비율 1 : 10 : 30 : 600 에서 ‘600’이 뜻하는 것은?",
+    "choices": [
+      "중상 또는 폐질",
+      "경상(사람이 다친 사고)",
+      "물적 손실만 있는 사고",
+      "상해도 물적 손실도 없는 사고(아차 사고)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "버드 1 : 10 : 30 : 600 = 중상 : 경상 : 물적 손실 : 무상해·무손실 사고",
+    "explanation": "버드는 사고를 모아 보면 **중상·폐질 1, 경상 10, 물적 손실만 있는 사고 30, 상해도 손실도 없는 사고 600** 의 비율이 된다고 보았습니다. 하인리히(1 : 29 : 300)와 달리 ‘물건만 부서진 사고’를 따로 나눈 것이 특징입니다. 600건의 아차 사고를 줄여야 큰 재해도 줄어든다는 뜻입니다.\n\n**틀린 선지**\n- ① 중상 또는 폐질: ‘1’에 해당합니다.\n- ② 경상(사람이 다친 사고): ‘10’에 해당합니다.\n- ③ 물적 손실만 있는 사고: ‘30’에 해당합니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "버드",
+      "재해 구성 비율"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-industrial-engineer-accident-theory-0002",
+    "certId": "industrial-safety-industrial-engineer",
+    "subjectId": "prevention",
+    "chapterId": "accident-theory",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "근로자 400명이 1인당 연 2,400시간 일하는 사업장에서 1년 동안 근로손실일수가 1,200일이었다. 강도율은?",
+    "choices": [
+      "0.125",
+      "1.25",
+      "3",
+      "12.5"
+    ],
+    "answer": 2,
+    "oneLineConcept": "강도율 = 근로손실일수 ÷ 연 근로시간 × 1,000",
+    "explanation": "강도율은 1,000시간 일할 때 잃어버리는 근로일수로, 재해가 얼마나 무거웠는지를 나타냅니다.\n\n1. 연 근로시간 = 400명 × 2,400시간 = 960,000시간\n2. 강도율 = 1,200 ÷ 960,000 × 1,000\n3. 답: 1.25\n\n검산: 1.25 × 960,000 ÷ 1,000 = 1,200일로 문제의 근로손실일수와 같습니다.\n\n**틀린 선지**\n- ① 0.125: 1,000 대신 100을 곱한 값입니다.\n- ③ 3: 근로손실일수를 근로자 수로 나눈 값(1,200 ÷ 400)으로, 강도율 공식이 아닙니다.\n- ④ 12.5: 1,000 대신 10,000을 곱한 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "재해 통계",
+      "강도율",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-industrial-engineer-accident-theory-0003",
+    "certId": "industrial-safety-industrial-engineer",
+    "subjectId": "prevention",
+    "chapterId": "accident-theory",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "도수율이 15인 사업장의 연천인율은 약 얼마인가? (재해 1건당 재해자 1명, 근로자 1인당 연 2,400시간 근무)",
+    "choices": [
+      "36",
+      "6.25",
+      "15",
+      "24"
+    ],
+    "answer": 1,
+    "oneLineConcept": "연천인율 ≒ 도수율 × 2.4 (1인당 연 2,400시간일 때)",
+    "explanation": "연천인율은 근로자 1,000명당 1년 동안 생긴 재해자 수이고, 도수율은 100만 시간당 재해 건수입니다. 1인당 연 2,400시간 일하면 두 값 사이에 ‘연천인율 = 도수율 × 2.4’ 관계가 생깁니다.\n\n1. 연천인율 = 15 × 2.4\n2. 답: 36\n\n검산: 36 ÷ 2.4 = 15로 처음 도수율과 같습니다.\n\n**틀린 선지**\n- ② 6.25: 2.4를 곱하지 않고 나눈 값입니다.\n- ③ 15: 도수율을 그대로 쓴 값입니다.\n- ④ 24: 2,400시간의 앞자리 24를 그대로 쓴 값으로, 계산과 관계없습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "재해 통계",
+      "연천인율",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-industrial-engineer-accident-theory-0004",
+    "certId": "industrial-safety-industrial-engineer",
+    "subjectId": "prevention",
+    "chapterId": "accident-theory",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "근로자 1,000명(1인당 연 2,400시간 근무)인 사업장에서 1년 동안 사망자 1명과 휴업 73일인 재해 1건이 생겼다. 강도율은? (사망의 근로손실일수는 7,500일, 휴업일수는 300/365를 곱해 환산)",
+    "choices": [
+      "3.13",
+      "3.15",
+      "31.5",
+      "0.025"
+    ],
+    "answer": 2,
+    "oneLineConcept": "사망 근로손실일수 7,500일, 휴업일수는 × 300/365 로 환산",
+    "explanation": "강도율을 구할 때는 사망과 휴업의 근로손실일수를 모두 더합니다.\n\n1. 휴업의 근로손실일수 = 73 × 300 ÷ 365 = 60일\n2. 총 근로손실일수 = 7,500 + 60 = 7,560일\n3. 연 근로시간 = 1,000명 × 2,400시간 = 2,400,000시간\n4. 강도율 = 7,560 ÷ 2,400,000 × 1,000 = 3.15\n\n검산: 3.15 × 2,400,000 ÷ 1,000 = 7,560일로 2번의 값과 같습니다.\n\n**틀린 선지**\n- ① 3.13: 사망 7,500일만 넣고 휴업 60일을 빠뜨린 값(7,500 ÷ 2,400 ≒ 3.13)입니다.\n- ③ 31.5: 1,000 대신 10,000을 곱한 값입니다.\n- ④ 0.025: 휴업 60일만 넣고 사망 7,500일을 빠뜨린 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "재해 통계",
+      "강도율",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-industrial-engineer-accident-theory-0005",
+    "certId": "industrial-safety-industrial-engineer",
+    "subjectId": "prevention",
+    "chapterId": "accident-theory",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "도수율이 16, 강도율이 1인 사업장의 종합재해지수(FSI)는?",
+    "choices": [
+      "4",
+      "8",
+      "16",
+      "17"
+    ],
+    "answer": 1,
+    "oneLineConcept": "종합재해지수 = √(도수율 × 강도율)",
+    "explanation": "종합재해지수는 재해가 얼마나 자주(도수율), 얼마나 무겁게(강도율) 일어났는지를 한 숫자로 합친 값입니다.\n\n1. 종합재해지수 = √(도수율 × 강도율)\n2. = √(16 × 1) = √16\n3. 답: 4\n\n검산: 4 × 4 = 16으로 도수율 × 강도율과 같습니다.\n\n**틀린 선지**\n- ② 8: 16을 2로 나눈 값으로, 제곱근이 아닙니다.\n- ③ 16: 곱한 뒤 제곱근(√)을 씌우지 않은 값입니다.\n- ④ 17: 도수율과 강도율을 더한 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "재해 통계",
+      "종합재해지수",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-industrial-engineer-accident-theory-0006",
+    "certId": "industrial-safety-industrial-engineer",
+    "subjectId": "prevention",
+    "chapterId": "accident-theory",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "하인리히의 재해 예방 4원칙에 해당하지 않는 것은?",
+    "choices": [
+      "손실 우연의 원칙",
+      "원인 계기(원인 연계)의 원칙",
+      "책임 추궁의 원칙",
+      "대책 선정의 원칙"
+    ],
+    "answer": 3,
+    "oneLineConcept": "재해 예방 4원칙: 손실 우연·원인 계기·예방 가능·대책 선정",
+    "explanation": "하인리히의 재해 예방 4원칙은 **손실 우연의 원칙, 원인 계기(원인 연계)의 원칙, 예방 가능의 원칙, 대책 선정의 원칙**입니다. 재해는 누구 탓인지 따지는 것보다 원인을 찾아 대책을 세우는 것이 목적이므로 ‘책임 추궁’은 원칙에 들어가지 않습니다.\n\n**틀린 선지**\n- ① 손실 우연의 원칙: 4원칙에 들어갑니다. 사고로 생기는 손실의 크기는 우연히 정해진다는 뜻입니다.\n- ② 원인 계기(원인 연계)의 원칙: 4원칙에 들어갑니다. 재해에는 반드시 원인이 있다는 뜻입니다.\n- ④ 대책 선정의 원칙: 4원칙에 들어갑니다. 원인에 맞는 대책을 골라 바로 실행해야 한다는 뜻입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "하인리히",
+      "재해 예방 4원칙"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "industrial-safety-industrial-engineer-accident-theory-0007",
+    "certId": "industrial-safety-industrial-engineer",
+    "subjectId": "prevention",
+    "chapterId": "accident-theory",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "하인리히의 사고 방지 5단계 중 2단계는?",
+    "choices": [
+      "안전 조직",
+      "사실의 발견",
+      "분석·평가",
+      "시정책의 적용"
+    ],
+    "answer": 2,
+    "oneLineConcept": "사고 방지 5단계: 조직 → 사실 발견 → 분석 → 시정책 선정 → 적용",
+    "explanation": "하인리히의 사고 방지 5단계는 **1단계 안전 조직 → 2단계 사실의 발견 → 3단계 분석·평가 → 4단계 시정책의 선정 → 5단계 시정책의 적용**입니다. 조직을 만든 다음, 현장을 점검하고 사고 기록을 모아 문제를 찾아내는 일이 2단계입니다.\n\n**틀린 선지**\n- ① 안전 조직: 1단계입니다.\n- ③ 분석·평가: 3단계입니다.\n- ④ 시정책의 적용: 5단계입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "하인리히",
+      "사고 방지 5단계"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-industrial-engineer-accident-theory-0008",
+    "certId": "industrial-safety-industrial-engineer",
+    "subjectId": "prevention",
+    "chapterId": "accident-theory",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "다음 중 재해의 직접 원인인 ‘불안전한 행동’에 해당하는 것은?",
+    "choices": [
+      "보호구를 착용하지 않고 작업함",
+      "안전 교육을 충분히 받지 못함",
+      "작업 기준이 정해져 있지 않음",
+      "작업자에게 지병(몸의 질병)이 있음"
+    ],
+    "answer": 1,
+    "oneLineConcept": "직접 원인 = 불안전한 행동·상태, 나머지는 간접 원인",
+    "explanation": "재해의 **직접 원인**은 사람의 불안전한 행동과 물건·설비의 불안전한 상태입니다. 보호구를 쓰지 않고 일하는 것은 사람이 직접 한 불안전한 행동입니다. 교육·관리·몸 상태 같은 것은 그 뒤에 숨어 있는 **간접 원인**입니다.\n\n**틀린 선지**\n- ② 안전 교육을 충분히 받지 못함: 교육적 원인으로, 간접 원인입니다.\n- ③ 작업 기준이 정해져 있지 않음: 관리적 원인으로, 간접 원인입니다.\n- ④ 작업자에게 지병(몸의 질병)이 있음: 신체적 원인으로, 간접 원인입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "재해 원인",
+      "불안전한 행동"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-industrial-engineer-accident-theory-0009",
+    "certId": "industrial-safety-industrial-engineer",
+    "subjectId": "prevention",
+    "chapterId": "accident-theory",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "재해의 원인과 결과의 관계를 생선뼈 모양으로 그려 원인을 찾는 통계 분석 도표는?",
+    "choices": [
+      "파레토도",
+      "관리도",
+      "특성요인도",
+      "클로즈(Close) 분석도"
+    ],
+    "answer": 3,
+    "oneLineConcept": "특성요인도 = 원인과 결과를 생선뼈 모양으로 정리",
+    "explanation": "특성요인도는 오른쪽 머리에 결과(재해)를 두고, 큰 뼈와 작은 뼈에 원인을 하나씩 적어 나가는 그림입니다. 모양이 생선뼈를 닮아 ‘어골도’라고도 합니다.\n\n**틀린 선지**\n- ① 파레토도: 항목을 큰 순서대로 막대그래프로 늘어놓아 중요한 문제를 찾는 그림입니다.\n- ② 관리도: 재해 건수 같은 값의 변화를 시간 순서로 그려 관리 한계선을 넘는지 보는 그림입니다.\n- ④ 클로즈(Close) 분석도: 두 가지 이상의 요인을 표로 엮어 서로의 관계를 보는 분석입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "재해 통계",
+      "특성요인도"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-industrial-engineer-accident-theory-0010",
+    "certId": "industrial-safety-industrial-engineer",
+    "subjectId": "prevention",
+    "chapterId": "accident-theory",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "근로자 200명이 하루 8시간씩 연 300일 일했고, 1년 동안 잔업이 모두 20,000시간 있었다. 이 기간에 재해가 6건 생겼다면 도수율은?",
+    "choices": [
+      "12.5",
+      "30",
+      "1.2",
+      "12"
+    ],
+    "answer": 4,
+    "oneLineConcept": "도수율 = 재해 건수 ÷ 연 근로시간 × 1,000,000 (잔업 포함)",
+    "explanation": "도수율은 100만 시간 일할 때 일어나는 재해 건수입니다. 근로시간에는 잔업 시간도 넣습니다.\n\n1. 정규 근로시간 = 200명 × 8시간 × 300일 = 480,000시간\n2. 총 근로시간 = 480,000 + 20,000 = 500,000시간\n3. 도수율 = 6 ÷ 500,000 × 1,000,000 = 12\n\n검산: 50만 시간에 6건이면 100만 시간에는 그 두 배인 12건입니다.\n\n**틀린 선지**\n- ① 12.5: 잔업 20,000시간을 빼고 계산한 값(6 ÷ 480,000 × 1,000,000)입니다.\n- ② 30: 연천인율(6 ÷ 200 × 1,000)의 값입니다.\n- ③ 1.2: 자릿수를 잘못 센 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "재해 통계",
+      "도수율",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  }
+]

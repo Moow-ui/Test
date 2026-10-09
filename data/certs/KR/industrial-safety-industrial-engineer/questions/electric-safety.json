@@ -1,0 +1,445 @@
+[
+  {
+    "id": "industrial-safety-industrial-engineer-electric-safety-0001",
+    "certId": "industrial-safety-industrial-engineer",
+    "subjectId": "elec-chem",
+    "chapterId": "electric-safety",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "산업안전보건기준에 관한 규칙에 따라 전기기계·기구에 설치하는 감전 방지용 누전차단기의 기본 성능은?",
+    "choices": [
+      "정격감도전류 30mA 이하, 작동 시간 0.3초 이내",
+      "정격감도전류 200mA 이하, 작동 시간 0.1초 이내",
+      "정격감도전류 100mA 이하, 작동 시간 0.03초 이내",
+      "정격감도전류 30mA 이하, 작동 시간 0.03초 이내"
+    ],
+    "answer": 4,
+    "oneLineConcept": "누전차단기: 30mA 이하, 0.03초 이내 (50A 이상 기계는 200mA·0.1초)",
+    "explanation": "누전차단기는 전기가 새는 것(누전)을 감지해 전기를 끊습니다. 사람이 감전되어도 심장에 큰 해가 가기 전에 끊어야 하므로 **30mA 이하의 누설 전류에서 0.03초 이내**에 작동해야 합니다. 정격 전부하 전류가 50A 이상인 큰 기계는 오작동을 막기 위해 200mA 이하, 0.1초 이내로 할 수 있습니다.\n\n**틀린 선지**\n- ① 정격감도전류 30mA 이하, 작동 시간 0.3초 이내: 작동 시간이 기준(0.03초)의 10배로 너무 깁니다.\n- ② 정격감도전류 200mA 이하, 작동 시간 0.1초 이내: 정격 전부하 전류가 50A 이상인 기계에 오작동 방지를 위해 예외로 허용되는 값입니다.\n- ③ 정격감도전류 100mA 이하, 작동 시간 0.03초 이내: 정격감도전류가 기준(30mA)보다 큽니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "누전차단기"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-industrial-engineer-electric-safety-0002",
+    "certId": "industrial-safety-industrial-engineer",
+    "subjectId": "elec-chem",
+    "chapterId": "electric-safety",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "방폭 구조의 기호 'd'가 뜻하는 것은?",
+    "choices": [
+      "안전증 방폭 구조",
+      "내압 방폭 구조",
+      "유입 방폭 구조",
+      "압력 방폭 구조"
+    ],
+    "answer": 2,
+    "oneLineConcept": "방폭 기호: d 내압, p 압력, e 안전증, o 유입, i 본질안전",
+    "explanation": "**내압(耐壓) 방폭 구조(d)**는 용기 안으로 들어온 가스가 폭발해도 용기가 견디고, 불꽃이 틈새를 지나며 식어 바깥 가스에 불이 옮겨 붙지 않게 만든 구조입니다. '압력을 견딘다'는 뜻의 내압이며, 안에 압력을 넣는 압력 방폭 구조(p)와 다릅니다.\n\n**틀린 선지**\n- ① 안전증 방폭 구조: 기호는 'e'이며, 불꽃·고온이 생기지 않게 안전도를 높인 구조입니다.\n- ③ 유입 방폭 구조: 기호는 'o'이며, 불꽃이 생기는 부분을 기름 속에 넣은 구조입니다.\n- ④ 압력 방폭 구조: 기호는 'p'이며, 용기 안에 깨끗한 공기나 불활성 가스를 넣어 압력을 유지하는 구조입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "방폭"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-industrial-engineer-electric-safety-0003",
+    "certId": "industrial-safety-industrial-engineer",
+    "subjectId": "elec-chem",
+    "chapterId": "electric-safety",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "인화성 가스나 증기의 폭발 분위기가 계속해서 또는 오랫동안 존재하는 장소는 위험 장소 가운데 어디에 해당하는가?",
+    "choices": [
+      "0종 장소",
+      "2종 장소",
+      "1종 장소",
+      "20종 장소"
+    ],
+    "answer": 1,
+    "oneLineConcept": "가스 위험 장소: 0종(늘) > 1종(정상 운전 중 가끔) > 2종(이상 시 잠깐)",
+    "explanation": "가스 폭발 위험 장소는 폭발 분위기가 얼마나 자주·오래 있느냐에 따라 나눕니다. **늘 있거나 오래 있으면 0종**, 정상 운전 중에도 생길 수 있으면 1종, 고장 같은 이상 상태에서만 잠깐 생기면 2종입니다. 분진은 20종·21종·22종으로 따로 나눕니다.\n\n**틀린 선지**\n- ② 2종 장소: 이상 상태에서만 폭발 분위기가 잠깐 생길 수 있는 장소입니다.\n- ③ 1종 장소: 정상 작동 중에 폭발 분위기가 가끔 생길 수 있는 장소입니다.\n- ④ 20종 장소: 가스가 아니라 가연성 분진(먼지)의 위험 장소 구분입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "위험장소",
+      "방폭"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-industrial-engineer-electric-safety-0004",
+    "certId": "industrial-safety-industrial-engineer",
+    "subjectId": "elec-chem",
+    "chapterId": "electric-safety",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "휘발유 같은 액체가 배관 안을 흐를 때 배관 벽과의 마찰로 정전기가 생기는 것을 무엇이라 하는가?",
+    "choices": [
+      "분출 대전",
+      "유동 대전",
+      "박리 대전",
+      "유도 대전"
+    ],
+    "answer": 2,
+    "oneLineConcept": "액체가 배관을 흐를 때 = 유동 대전, 노즐로 뿜을 때 = 분출 대전",
+    "explanation": "액체가 관 속을 **흐를(유동)** 때 관 벽과 맞닿아 전하가 나뉘면서 생기는 정전기를 **유동 대전**이라고 합니다. 흐르는 속도가 빠를수록 많이 생기므로 인화성 액체는 유속을 낮추어 보냅니다.\n\n**틀린 선지**\n- ① 분출 대전: 액체·기체가 좁은 구멍(노즐)으로 세게 뿜어져 나올 때 생기는 대전입니다.\n- ③ 박리 대전: 붙어 있던 필름·테이프 등을 떼어 낼 때 생기는 대전입니다.\n- ④ 유도 대전: 대전된 물체 가까이에 있는 도체에 전하가 끌려와 생기는 대전입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "정전기"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-industrial-engineer-electric-safety-0005",
+    "certId": "industrial-safety-industrial-engineer",
+    "subjectId": "elec-chem",
+    "chapterId": "electric-safety",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "전압 220V인 전선에 몸이 닿았을 때, 전류가 흐르는 길의 전체 저항을 인체 저항 1,100Ω만으로 본다면 몸에 흐르는 전류는 몇 mA인가?",
+    "choices": [
+      "2,000mA",
+      "200mA",
+      "5mA",
+      "20mA"
+    ],
+    "answer": 2,
+    "oneLineConcept": "감전 전류 I = 전압 ÷ 저항 (1A = 1,000mA)",
+    "explanation": "전류는 옴의 법칙에 따라 전압을 저항으로 나누어 구합니다.\n\n1. 공식: I = V ÷ R\n2. 숫자 대입: 220V ÷ 1,100Ω = 0.2A\n3. 단위 바꾸기: 0.2A × 1,000 = 200mA\n4. 검산: 0.2A × 1,100Ω = 220V 로 전압과 같습니다.\n\n**틀린 선지**\n- ① 2,000mA: A를 mA로 바꿀 때 1,000이 아니라 10,000을 곱한 값입니다.\n- ③ 5mA: 저항을 전압으로 나눈(1,100 ÷ 220) 값입니다.\n- ④ 20mA: A를 mA로 바꿀 때 1,000이 아니라 100을 곱한 값입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "감전",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-industrial-engineer-electric-safety-0006",
+    "certId": "industrial-safety-industrial-engineer",
+    "subjectId": "elec-chem",
+    "chapterId": "electric-safety",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "금속 배관이나 탱크 같은 도체에 쌓이는 정전기를 없애는 가장 기본적인 방법은?",
+    "choices": [
+      "절연(전기가 통하지 않게 감싸기)",
+      "배관 안 유속을 빠르게 하기",
+      "접지(땅과 전선으로 연결)",
+      "작업장을 건조하게 유지하기"
+    ],
+    "answer": 3,
+    "oneLineConcept": "도체의 정전기 제거 기본 = 접지(와 본딩)",
+    "explanation": "도체에 생긴 정전기는 땅과 연결해 주면 쉽게 빠져나갑니다. 그래서 금속 배관·탱크·용기에는 **접지**를 하고, 떨어져 있는 금속끼리는 전선으로 이어(본딩) 같은 전위로 만듭니다.\n\n**틀린 선지**\n- ① 절연(전기가 통하지 않게 감싸기): 절연하면 정전기가 빠져나갈 길이 막혀 오히려 더 쌓입니다.\n- ② 배관 안 유속을 빠르게 하기: 유속이 빠르면 정전기가 더 많이 생깁니다.\n- ④ 작업장을 건조하게 유지하기: 건조하면 정전기가 잘 빠지지 않아 더 쌓입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "정전기",
+      "접지"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-industrial-engineer-electric-safety-0007",
+    "certId": "industrial-safety-industrial-engineer",
+    "subjectId": "elec-chem",
+    "chapterId": "electric-safety",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "산업안전보건기준에 관한 규칙에 따라 22.9kV 충전 전로 가까이에서 일할 때 근로자 몸과 충전 전로 사이에 유지해야 하는 접근 한계 거리는?",
+    "choices": [
+      "60cm",
+      "45cm",
+      "110cm",
+      "90cm"
+    ],
+    "answer": 4,
+    "oneLineConcept": "접근 한계 거리: 15kV 초과 37kV 이하(22.9kV 포함) = 90cm",
+    "explanation": "충전 전로의 전압이 높을수록 멀리 떨어져야 합니다. 22.9kV 는 **15kV 초과 37kV 이하** 구간에 들어가므로 접근 한계 거리는 **90cm** 입니다. 참고로 0.3kV 초과 0.75kV 이하는 30cm, 0.75kV 초과 2kV 이하는 45cm, 2kV 초과 15kV 이하는 60cm 입니다.\n\n**틀린 선지**\n- ① 60cm: 2kV 초과 15kV 이하일 때의 거리입니다.\n- ② 45cm: 0.75kV 초과 2kV 이하일 때의 거리입니다.\n- ③ 110cm: 37kV 초과 88kV 이하일 때의 거리입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "충전전로",
+      "접근한계거리"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-industrial-engineer-electric-safety-0008",
+    "certId": "industrial-safety-industrial-engineer",
+    "subjectId": "elec-chem",
+    "chapterId": "electric-safety",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "달지엘(Dalziel)의 식 I = 165 ÷ √T (mA, T는 초)로 볼 때, 통전 시간이 0.25초이면 심실세동(심장이 떨리며 멈추는 상태)을 일으키는 전류는 약 몇 mA인가?",
+    "choices": [
+      "660mA",
+      "330mA",
+      "165mA",
+      "41mA"
+    ],
+    "answer": 2,
+    "oneLineConcept": "심실세동 전류 I = 165/√T (mA), 시간이 짧을수록 커진다",
+    "explanation": "전기가 몸에 짧게 흐를수록 심장이 견딜 수 있는 전류는 커집니다.\n\n1. 공식: I = 165 ÷ √T\n2. √0.25 = 0.5\n3. 계산: 165 ÷ 0.5 = 330mA\n4. 검산: 330 × 0.5 = 165 로 공식의 분자와 같습니다.\n\n**틀린 선지**\n- ① 660mA: √T 대신 T(0.25)로 나눈 값입니다.\n- ③ 165mA: 통전 시간이 1초일 때의 값입니다.\n- ④ 41mA: 165에 0.25를 곱한 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "감전",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-industrial-engineer-electric-safety-0009",
+    "certId": "industrial-safety-industrial-engineer",
+    "subjectId": "elec-chem",
+    "chapterId": "electric-safety",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "정전 용량(전기를 담는 능력)이 200pF인 물체가 5kV로 대전되어 있다. 이 물체가 방전할 때 나오는 정전기 에너지는 몇 mJ인가?",
+    "choices": [
+      "5.0mJ",
+      "25mJ",
+      "0.25mJ",
+      "2.5mJ"
+    ],
+    "answer": 4,
+    "oneLineConcept": "정전기 에너지 W = ½CV² (pF는 10⁻¹², mJ는 10⁻³)",
+    "explanation": "정전기 방전 에너지가 가스·증기의 최소 점화 에너지보다 크면 불이 붙을 수 있으므로 이 값을 계산할 줄 알아야 합니다.\n\n1. 공식: W = 1/2 × C × V²\n2. 단위 맞추기: C = 200pF = 200 × 10⁻¹² F, V = 5kV = 5,000V\n3. V² = 5,000 × 5,000 = 25 × 10⁶\n4. 계산: 1/2 × 200 × 10⁻¹² × 25 × 10⁶ = 2,500 × 10⁻⁶ J = 2.5 × 10⁻³ J\n5. 단위 바꾸기: 2.5 × 10⁻³ J = 2.5mJ\n6. 검산: 2.5mJ × 2 ÷ 200pF = 25 × 10⁶ → √ = 5,000V 로 처음 전압과 같습니다.\n\n**틀린 선지**\n- ① 5.0mJ: 공식의 1/2을 곱하지 않은 값입니다.\n- ② 25mJ: 자릿수를 하나 잘못 옮긴 값입니다.\n- ③ 0.25mJ: 자릿수를 하나 잘못 옮긴 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "정전기",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-industrial-engineer-electric-safety-0010",
+    "certId": "industrial-safety-industrial-engineer",
+    "subjectId": "elec-chem",
+    "chapterId": "electric-safety",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "정전기 재해를 막는 방법으로 옳지 않은 것은?",
+    "choices": [
+      "제전기를 설치해 대전된 물체의 전하를 중화한다",
+      "인화성 액체를 보낼 때 배관 안 유속을 빠르게 한다",
+      "작업장을 가습해 습도를 높인다",
+      "금속 배관과 용기를 접지하고 서로 본딩한다"
+    ],
+    "answer": 2,
+    "oneLineConcept": "정전기 대책: 접지·본딩, 가습, 제전기, 대전방지제, 유속 제한",
+    "explanation": "정전기는 빨리 흐르고 세게 비빌수록 많이 생깁니다. 그래서 인화성 액체는 **유속을 낮추어** 보내야 합니다. 접지·본딩, 제전기, 가습, 대전 방지제 사용은 모두 정전기를 줄이는 방법입니다.\n\n**틀린 선지**\n- ① 제전기를 설치해 대전된 물체의 전하를 중화한다: 정전기를 없애는 옳은 방법입니다.\n- ③ 작업장을 가습해 습도를 높인다: 물체 표면에 수분이 생겨 정전기가 잘 새어 나가게 하는 옳은 방법입니다.\n- ④ 금속 배관과 용기를 접지하고 서로 본딩한다: 정전기를 땅으로 빼내는 옳은 방법입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "정전기"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "industrial-safety-industrial-engineer-electric-safety-0011",
+    "certId": "industrial-safety-industrial-engineer",
+    "subjectId": "elec-chem",
+    "chapterId": "electric-safety",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "방폭 구조의 기호와 이름을 잘못 짝지은 것은?",
+    "choices": [
+      "e — 압력 방폭 구조",
+      "p — 압력 방폭 구조",
+      "o — 유입 방폭 구조",
+      "ia — 본질안전 방폭 구조"
+    ],
+    "answer": 1,
+    "oneLineConcept": "e = 안전증, p = 압력 (두 기호를 바꿔 낸 선지 주의)",
+    "explanation": "**e 는 안전증 방폭 구조**입니다. 정상 운전 때 불꽃이나 높은 열이 생기지 않는 기기를 더 튼튼하게 만들어 안전도를 높인 구조입니다. 압력 방폭 구조의 기호는 **p** 이고, 그 밖에 d 내압, o 유입, ia·ib 본질안전, m 몰드 방폭 구조가 있습니다.\n\n**틀린 선지**\n- ② p — 압력 방폭 구조: 바르게 짝지은 것입니다.\n- ③ o — 유입 방폭 구조: 바르게 짝지은 것입니다.\n- ④ ia — 본질안전 방폭 구조: 바르게 짝지은 것입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "방폭"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "industrial-safety-industrial-engineer-electric-safety-0012",
+    "certId": "industrial-safety-industrial-engineer",
+    "subjectId": "elec-chem",
+    "chapterId": "electric-safety",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "인체 저항을 500Ω, 통전 시간을 1초로 보고 달지엘의 심실세동 전류 식 I = 165 ÷ √T (mA)를 쓸 때, 심실세동을 일으키는 위험 한계 에너지는 약 몇 J인가?",
+    "choices": [
+      "약 82.5J",
+      "약 6.8J",
+      "약 13.6J",
+      "약 27.2J"
+    ],
+    "answer": 3,
+    "oneLineConcept": "위험 한계 에너지 W = I²RT, 500Ω·1초면 약 13.6J",
+    "explanation": "전기 에너지는 전류의 제곱 × 저항 × 시간으로 구합니다.\n\n1. 전류: I = 165 ÷ √1 = 165mA = 0.165A\n2. 공식: W = I² × R × T\n3. I² = 0.165 × 0.165 = 0.027225\n4. 계산: 0.027225 × 500 × 1 ≈ 13.6J\n5. 검산: 13.6 ÷ 500 ÷ 1 = 0.0272 → √0.0272 ≈ 0.165A 로 처음 전류와 같습니다.\n\n**틀린 선지**\n- ① 약 82.5J: 전류에 저항만 곱한 값으로, 에너지가 아니라 전압(V)입니다.\n- ② 약 6.8J: 올바른 값의 절반으로, 1/2을 잘못 곱한 값입니다.\n- ④ 약 27.2J: 올바른 값의 2배로 잘못 계산한 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "감전",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-industrial-engineer-electric-safety-0013",
+    "certId": "industrial-safety-industrial-engineer",
+    "subjectId": "elec-chem",
+    "chapterId": "electric-safety",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "누전된 220V 기계의 외함(겉 케이스)에 사람이 손을 댔다. 외함은 접지되어 있지 않고, 전류가 흐르는 길의 저항은 변압기 쪽 접지 저항 20Ω, 인체 저항 1,000Ω, 신발과 바닥의 저항 1,180Ω이다. 사람 몸에 흐르는 전류는 몇 mA인가? (저항들은 모두 한 줄로 이어져 있다)",
+    "choices": [
+      "약 186mA",
+      "100mA",
+      "220mA",
+      "11mA"
+    ],
+    "answer": 2,
+    "oneLineConcept": "직렬 저항은 모두 더한 뒤 I = V ÷ R",
+    "explanation": "한 줄로 이어진(직렬) 저항은 모두 더한 뒤 옴의 법칙을 씁니다. 신발과 바닥의 저항이 크면 몸에 흐르는 전류가 크게 줄어듭니다.\n\n1. 전체 저항: 20 + 1,000 + 1,180 = 2,200Ω\n2. 전류: I = 220V ÷ 2,200Ω = 0.1A\n3. 단위 바꾸기: 0.1A = 100mA\n4. 검산: 0.1A × 2,200Ω = 220V 로 전원 전압과 같습니다.\n\n**틀린 선지**\n- ① 약 186mA: 신발·바닥 저항(1,180Ω)만 넣어 계산한 값입니다.\n- ③ 220mA: 인체 저항(1,000Ω)만 넣고 신발·바닥과 접지 저항을 빼고 계산한 값입니다.\n- ④ 11mA: 자릿수를 잘못 옮긴 값입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "감전",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+]
