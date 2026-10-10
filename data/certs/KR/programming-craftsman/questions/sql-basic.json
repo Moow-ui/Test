@@ -1,0 +1,254 @@
+[
+  {
+    "id": "programming-craftsman-sql-basic-0001",
+    "certId": "programming-craftsman",
+    "subjectId": "sql",
+    "chapterId": "sql-basic",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "다음 중 DDL(데이터 정의어)에 해당하는 SQL 명령어는?",
+    "choices": [
+      "UPDATE",
+      "SELECT",
+      "CREATE",
+      "GRANT"
+    ],
+    "answer": 3,
+    "oneLineConcept": "DDL: CREATE·ALTER·DROP",
+    "explanation": "SQL 명령어는 세 가지로 나뉩니다.\n\n1. DDL(정의): CREATE, ALTER, DROP\n2. DML(조작): SELECT, INSERT, UPDATE, DELETE\n3. DCL(제어): GRANT, REVOKE 등\n\n**틀린 선지**\n- ① UPDATE: UPDATE 는 데이터를 고치는 DML(데이터 조작어)입니다.\n- ② SELECT: SELECT 는 데이터를 조회하는 DML 입니다.\n- ④ GRANT: GRANT 는 권한을 주는 DCL(데이터 제어어)입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "SQL",
+      "DDL"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "programming-craftsman-sql-basic-0002",
+    "certId": "programming-craftsman",
+    "subjectId": "sql",
+    "chapterId": "sql-basic",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "사용자에게 주었던 권한을 회수하는 SQL 명령어는?",
+    "choices": [
+      "DELETE",
+      "GRANT",
+      "ROLLBACK",
+      "REVOKE"
+    ],
+    "answer": 4,
+    "oneLineConcept": "GRANT 는 권한 주기, REVOKE 는 권한 회수",
+    "explanation": "권한을 다루는 명령어는 DCL 입니다. GRANT 로 권한을 주고 REVOKE 로 권한을 거두어들입니다.\n\n**틀린 선지**\n- ① DELETE: DELETE 는 테이블의 행을 지웁니다.\n- ② GRANT: GRANT 는 반대로 권한을 주는 명령어입니다.\n- ③ ROLLBACK: ROLLBACK 은 트랜잭션 작업을 취소해 되돌립니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "SQL",
+      "DCL"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "programming-craftsman-sql-basic-0003",
+    "certId": "programming-craftsman",
+    "subjectId": "sql",
+    "chapterId": "sql-basic",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "테이블은 그대로 두고, 조건에 맞는 행만 지우는 SQL 명령어는?",
+    "choices": [
+      "ALTER",
+      "DROP",
+      "DELETE",
+      "INSERT"
+    ],
+    "answer": 3,
+    "oneLineConcept": "DELETE 는 행 삭제, DROP 은 테이블 삭제",
+    "explanation": "DELETE FROM 테이블 WHERE 조건; 형식으로 조건에 맞는 행만 지웁니다. 테이블의 구조는 남아 있습니다.\n\n**틀린 선지**\n- ① ALTER: ALTER 는 테이블 구조를 바꿉니다.\n- ② DROP: DROP 은 테이블 자체를 없애는 DDL 명령어입니다.\n- ④ INSERT: INSERT 는 새 행을 넣습니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "SQL",
+      "DML"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "programming-craftsman-sql-basic-0004",
+    "certId": "programming-craftsman",
+    "subjectId": "sql",
+    "chapterId": "sql-basic",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "[직원 테이블]\n이름 | 부서 | 급여\n김   | 영업 | 300\n이   | 개발 | 400\n박   | 영업 | 250\n최   | 개발 | 350\n\n위 테이블에 다음 SQL 을 실행한 결과는?\n\nSELECT 이름 FROM 직원\nWHERE 부서 = '영업' AND 급여 >= 300;",
+    "choices": [
+      "김, 박",
+      "이, 최",
+      "김",
+      "김, 이, 최"
+    ],
+    "answer": 3,
+    "oneLineConcept": "AND 는 두 조건을 모두 만족하는 행만 고른다",
+    "explanation": "1. 부서 = '영업' → 김(300), 박(250)\n2. 그중 급여 >= 300 → 김\n3. 결과: 김\n\n**틀린 선지**\n- ① 김, 박: AND 는 두 조건을 모두 만족해야 합니다. 박은 급여가 250 입니다.\n- ② 이, 최: 개발 부서는 조건에 맞지 않습니다.\n- ④ 김, 이, 최: OR 로 계산한 결과입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "SQL",
+      "SELECT"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "programming-craftsman-sql-basic-0005",
+    "certId": "programming-craftsman",
+    "subjectId": "sql",
+    "chapterId": "sql-basic",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "[직원 테이블]\n이름 | 부서 | 급여\n김   | 영업 | 300\n이   | 개발 | 400\n박   | 영업 | 250\n최   | 개발 | 350\n\n위 테이블에 다음 SQL 을 실행했을 때 첫 번째 행에 나오는 이름은?\n\nSELECT 이름 FROM 직원\nORDER BY 급여 DESC;",
+    "choices": [
+      "이",
+      "박",
+      "최",
+      "김"
+    ],
+    "answer": 1,
+    "oneLineConcept": "ORDER BY ... DESC 는 큰 값부터 정렬한다",
+    "explanation": "DESC 는 내림차순(큰 것부터), ASC 는 오름차순(작은 것부터)입니다.\n\n1. 급여 큰 순서: 이(400) → 최(350) → 김(300) → 박(250)\n2. 첫 번째 행: 이\n\n**틀린 선지**\n- ② 박: 오름차순(ASC)으로 정렬했을 때 첫 번째입니다. DESC 는 큰 값부터입니다.\n- ③ 최: 최는 350 으로 두 번째입니다.\n- ④ 김: 김은 300 으로 세 번째입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "SQL",
+      "ORDER BY"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "programming-craftsman-sql-basic-0006",
+    "certId": "programming-craftsman",
+    "subjectId": "sql",
+    "chapterId": "sql-basic",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "[직원 테이블]\n이름 | 부서 | 급여\n김   | 영업 | 300\n이   | 개발 | 400\n박   | 영업 | 250\n최   | 개발 | 350\n\n위 테이블에 다음 SQL 을 차례로 실행한 결과는?\n\nUPDATE 직원 SET 급여 = 급여 + 50\nWHERE 부서 = '개발';\nSELECT SUM(급여) FROM 직원;",
+    "choices": [
+      "1300",
+      "1500",
+      "1350",
+      "1400"
+    ],
+    "answer": 4,
+    "oneLineConcept": "UPDATE 는 WHERE 조건에 맞는 행만 고친다",
+    "explanation": "1. 처음 합계: 300 + 400 + 250 + 350 = 1300\n2. 개발 부서(이, 최) 2명에게 50 씩 더함: 이 450, 최 400\n3. 새 합계: 300 + 450 + 250 + 400 = 1400\n4. 확인: 1300 + 50 × 2 = 1400\n\n**틀린 선지**\n- ① 1300: UPDATE 전의 합계입니다.\n- ② 1500: 모든 직원에게 50 을 더한 값입니다. WHERE 조건으로 개발 부서 2명만 바뀝니다.\n- ③ 1350: 개발 부서 중 1명에게만 더한 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "SQL",
+      "UPDATE"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "programming-craftsman-sql-basic-0007",
+    "certId": "programming-craftsman",
+    "subjectId": "sql",
+    "chapterId": "sql-basic",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "학생 테이블에 '전화' 열을 새로 추가하는 SQL 문으로 알맞은 것은?",
+    "choices": [
+      "UPDATE 학생 ADD 전화 VARCHAR(20);",
+      "CREATE TABLE 학생 ADD 전화 VARCHAR(20);",
+      "ALTER TABLE 학생 ADD 전화 VARCHAR(20);",
+      "INSERT INTO 학생 ADD 전화 VARCHAR(20);"
+    ],
+    "answer": 3,
+    "oneLineConcept": "테이블 구조(열) 변경은 ALTER TABLE",
+    "explanation": "테이블의 구조를 바꾸는 것은 DDL 의 ALTER 입니다. 열을 추가할 때는 ALTER TABLE 테이블명 ADD 열이름 자료형; 으로 씁니다.\n\n**틀린 선지**\n- ① UPDATE 학생 ADD 전화 VARCHAR(20);: UPDATE 는 데이터 값을 고치는 명령어로, 열을 추가할 수 없습니다.\n- ② CREATE TABLE 학생 ADD 전화 VARCHAR(20);: CREATE TABLE 은 새 테이블을 만드는 명령어입니다.\n- ④ INSERT INTO 학생 ADD 전화 VARCHAR(20);: INSERT 는 새 행을 넣는 명령어입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "SQL",
+      "ALTER"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  }
+]

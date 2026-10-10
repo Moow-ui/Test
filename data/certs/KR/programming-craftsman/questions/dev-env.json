@@ -1,0 +1,110 @@
+[
+  {
+    "id": "programming-craftsman-dev-env-0001",
+    "certId": "programming-craftsman",
+    "subjectId": "app-sw-basics",
+    "chapterId": "dev-env",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "여러 개발자가 각자 컴퓨터에 전체 저장소를 복제해 두고 작업하는 분산형 버전 관리 도구는?",
+    "choices": [
+      "Git",
+      "SVN",
+      "JDK",
+      "JUnit"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Git 은 분산형 버전 관리 도구다",
+    "explanation": "버전 관리 도구는 파일이 바뀐 기록을 남겨 이전 상태로 되돌리거나 함께 작업할 수 있게 해 줍니다. Git 은 각자 전체 저장소를 복제해 가지는 분산형입니다.\n\n**틀린 선지**\n- ② SVN: SVN 은 중앙 서버 한 곳에 저장소를 두는 중앙 집중형 도구입니다.\n- ③ JDK: JDK 는 자바 개발 도구 모음으로, 버전 관리 도구가 아닙니다.\n- ④ JUnit: JUnit 은 자바 단위 테스트 도구입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "개발 환경",
+      "버전 관리"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "programming-craftsman-dev-env-0002",
+    "certId": "programming-craftsman",
+    "subjectId": "app-sw-basics",
+    "chapterId": "dev-env",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "고급 언어로 작성한 프로그램 전체를 한 번에 기계어로 번역해 실행 파일을 만드는 프로그램은?",
+    "choices": [
+      "인터프리터",
+      "로더",
+      "컴파일러",
+      "링커"
+    ],
+    "answer": 3,
+    "oneLineConcept": "컴파일러는 전체를 한 번에, 인터프리터는 한 줄씩 번역한다",
+    "explanation": "컴파일러는 프로그램 전체를 먼저 번역해 실행 파일을 만듭니다. 한 번 번역해 두면 실행이 빠릅니다. C 언어가 대표적인 컴파일 방식 언어입니다.\n\n**틀린 선지**\n- ① 인터프리터: 인터프리터는 프로그램을 한 줄씩 번역하면서 바로 실행합니다.\n- ② 로더: 로더는 실행할 프로그램을 주기억장치에 올립니다.\n- ④ 링커: 링커는 번역된 여러 목적 파일을 하나로 연결합니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "개발 환경",
+      "번역기"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "programming-craftsman-dev-env-0003",
+    "certId": "programming-craftsman",
+    "subjectId": "app-sw-basics",
+    "chapterId": "dev-env",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Git 에서 내 컴퓨터(로컬 저장소)에 커밋한 내용을 원격 저장소로 올리는 명령어는?",
+    "choices": [
+      "git clone",
+      "git pull",
+      "git commit",
+      "git push"
+    ],
+    "answer": 4,
+    "oneLineConcept": "git push 는 올리기, git pull 은 내려받기",
+    "explanation": "Git 작업 순서는 보통 다음과 같습니다.\n\n1. git add: 올릴 파일 고르기\n2. git commit: 로컬 저장소에 기록\n3. git push: 원격 저장소로 올리기\n\n**틀린 선지**\n- ① git clone: git clone 은 원격 저장소 전체를 처음 복제해 올 때 씁니다.\n- ② git pull: git pull 은 반대로 원격 저장소의 변경 내용을 내려받아 합칩니다.\n- ③ git commit: git commit 은 변경 내용을 로컬 저장소에만 기록합니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "개발 환경",
+      "Git"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  }
+]

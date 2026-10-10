@@ -1,0 +1,218 @@
+[
+  {
+    "id": "programming-craftsman-security-0001",
+    "certId": "programming-craftsman",
+    "subjectId": "info-system",
+    "chapterId": "security",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "허락받은 사람만 정보를 볼 수 있도록 하는 정보 보안 요소는?",
+    "choices": [
+      "기밀성",
+      "무결성",
+      "부인 방지",
+      "가용성"
+    ],
+    "answer": 1,
+    "oneLineConcept": "보안 3요소: 기밀성·무결성·가용성",
+    "explanation": "정보 보안의 3요소는 기밀성(허락된 사람만 보기), 무결성(함부로 바뀌지 않기), 가용성(필요할 때 쓸 수 있기)입니다. 볼 수 있는 사람을 제한하는 것은 기밀성입니다.\n\n**틀린 선지**\n- ② 무결성: 무결성은 허락 없이 정보가 바뀌지 않도록 하는 것입니다.\n- ③ 부인 방지: 부인 방지는 보내거나 받은 사실을 나중에 부인하지 못하게 하는 것입니다.\n- ④ 가용성: 가용성은 필요할 때 언제든 정보를 쓸 수 있게 하는 것입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "정보 보안",
+      "보안 요소"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "programming-craftsman-security-0002",
+    "certId": "programming-craftsman",
+    "subjectId": "info-system",
+    "chapterId": "security",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "암호화와 복호화에 같은 키를 쓰는 대칭키 암호 알고리즘은?",
+    "choices": [
+      "AES",
+      "SHA-256",
+      "ECC",
+      "RSA"
+    ],
+    "answer": 1,
+    "oneLineConcept": "대칭키: AES 등 / 공개키: RSA·ECC 등",
+    "explanation": "대칭키 방식은 잠글 때와 열 때 같은 키를 씁니다. 속도가 빠르며 대표적인 예가 AES 입니다. 공개키 방식(RSA 등)은 두 개의 서로 다른 키를 씁니다.\n\n**틀린 선지**\n- ② SHA-256: SHA-256 은 되돌릴 수 없는 해시 함수로, 복호화하지 않습니다.\n- ③ ECC: ECC 는 타원곡선을 이용한 공개키 방식입니다.\n- ④ RSA: RSA 는 공개키와 개인키를 따로 쓰는 공개키(비대칭) 방식입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "정보 보안",
+      "암호"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "programming-craftsman-security-0003",
+    "certId": "programming-craftsman",
+    "subjectId": "info-system",
+    "chapterId": "security",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "컴퓨터의 파일을 암호화해 열지 못하게 한 뒤, 풀어 주는 대가로 돈을 요구하는 악성 코드는?",
+    "choices": [
+      "랜섬웨어",
+      "트로이 목마",
+      "스파이웨어",
+      "웜"
+    ],
+    "answer": 1,
+    "oneLineConcept": "랜섬웨어는 파일을 인질로 잡고 돈을 요구한다",
+    "explanation": "랜섬웨어(ransomware)는 몸값(ransom)과 소프트웨어를 합친 말입니다. 파일을 암호화해 쓰지 못하게 하고 돈을 요구합니다. 중요한 파일을 따로 백업해 두는 것이 가장 좋은 대비책입니다.\n\n**틀린 선지**\n- ② 트로이 목마: 트로이 목마는 정상 프로그램인 척 숨어 있다가 해를 끼칩니다.\n- ③ 스파이웨어: 스파이웨어는 몰래 정보를 빼내는 악성 코드입니다.\n- ④ 웜: 웜은 스스로 복제해 네트워크로 퍼지는 악성 코드입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "정보 보안",
+      "악성 코드"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "programming-craftsman-security-0004",
+    "certId": "programming-craftsman",
+    "subjectId": "info-system",
+    "chapterId": "security",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "악성 코드에 감염된 여러 대의 컴퓨터를 이용해 한 서버에 한꺼번에 많은 요청을 보내 서비스를 마비시키는 공격은?",
+    "choices": [
+      "피싱",
+      "DDoS",
+      "SQL 삽입",
+      "스니핑"
+    ],
+    "answer": 2,
+    "oneLineConcept": "DDoS 는 여러 컴퓨터로 요청을 퍼부어 서비스를 막는다",
+    "explanation": "DoS 는 서비스 거부 공격이고, DDoS 는 이것을 여러 대의 컴퓨터가 나누어(분산) 동시에 하는 공격입니다. 가용성을 해치는 공격입니다.\n\n**틀린 선지**\n- ① 피싱: 피싱은 가짜 사이트나 문자로 개인정보를 속여 빼내는 공격입니다.\n- ③ SQL 삽입: SQL 삽입은 입력 창에 SQL 문을 넣어 데이터베이스를 조작하는 공격입니다.\n- ④ 스니핑: 스니핑은 네트워크를 지나는 데이터를 몰래 엿보는 공격입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "정보 보안",
+      "공격 유형"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "programming-craftsman-security-0005",
+    "certId": "programming-craftsman",
+    "subjectId": "info-system",
+    "chapterId": "security",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "공개키 방식으로 A 가 B 에게 비밀 메시지를 보낼 때, 메시지를 암호화하는 데 쓰는 키는?",
+    "choices": [
+      "B 의 개인키",
+      "B 의 공개키",
+      "A 의 개인키",
+      "A 의 공개키"
+    ],
+    "answer": 2,
+    "oneLineConcept": "받는 사람의 공개키로 잠그고, 받는 사람의 개인키로 푼다",
+    "explanation": "공개키는 누구나 볼 수 있는 자물쇠이고, 개인키는 주인만 가진 열쇠입니다.\n\n1. A 는 B 의 공개키로 메시지를 잠급니다.\n2. 이 메시지는 B 의 개인키로만 열 수 있습니다.\n3. 그래서 B 만 읽을 수 있습니다.\n\n**틀린 선지**\n- ① B 의 개인키: B 의 개인키는 B 만 가지고 있으며, 받은 메시지를 풀 때(복호화) 씁니다.\n- ③ A 의 개인키: A 의 개인키로 암호화하는 것은 전자서명에 쓰는 방식입니다.\n- ④ A 의 공개키: A 의 공개키로 잠그면 A 의 개인키로만 열 수 있어 B 가 읽을 수 없습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "정보 보안",
+      "공개키"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "programming-craftsman-security-0006",
+    "certId": "programming-craftsman",
+    "subjectId": "info-system",
+    "chapterId": "security",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "로그인 입력 창에 ' OR '1'='1 같은 문자열을 넣어 데이터베이스 조회 문을 조작하는 공격은?",
+    "choices": [
+      "크로스 사이트 스크립팅(XSS)",
+      "스니핑",
+      "무차별 대입 공격",
+      "SQL 삽입(SQL Injection)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "SQL 삽입은 입력값에 SQL 문을 섞어 DB 를 조작한다",
+    "explanation": "' OR '1'='1 은 항상 참이 되는 조건입니다. 입력값을 그대로 SQL 문에 붙이면 비밀번호 확인 조건이 무력해질 수 있습니다. 입력값을 검사하고, 값과 SQL 문을 분리하는 방식(바인딩)으로 막습니다.\n\n**틀린 선지**\n- ① 크로스 사이트 스크립팅(XSS): XSS 는 게시글 등에 악성 스크립트를 넣어 다른 이용자의 브라우저에서 실행시키는 공격입니다.\n- ② 스니핑: 스니핑은 네트워크 데이터를 엿보는 공격입니다.\n- ③ 무차별 대입 공격: 무차별 대입 공격은 가능한 비밀번호를 하나씩 모두 넣어 보는 공격입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "정보 보안",
+      "공격 유형"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  }
+]

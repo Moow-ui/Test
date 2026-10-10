@@ -1,0 +1,254 @@
+[
+  {
+    "id": "programming-craftsman-c-java-0001",
+    "certId": "programming-craftsman",
+    "subjectId": "programming-language",
+    "chapterId": "c-java",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "다음 C 프로그램의 출력 결과는?\n\nint s = 0;\nfor (int i = 1; i <= 5; i++)\n    s += i;\nprintf(\"%d\", s);",
+    "choices": [
+      "5",
+      "10",
+      "6",
+      "15"
+    ],
+    "answer": 4,
+    "oneLineConcept": "for 문으로 1부터 5까지 더하면 15",
+    "explanation": "i 가 1부터 5까지 바뀌면서 s 에 차례로 더해집니다.\n\n1. s = 0 + 1 = 1\n2. s = 1 + 2 = 3\n3. s = 3 + 3 = 6\n4. s = 6 + 4 = 10\n5. s = 10 + 5 = 15\n6. 출력: 15\n\n**틀린 선지**\n- ① 5: 마지막 i 값만 넣은 것입니다. s += i 는 계속 더해 나갑니다.\n- ② 10: 1부터 4까지만 더한 값입니다. 조건이 i <= 5 이므로 5 도 더합니다.\n- ③ 6: 1부터 3까지만 더한 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "C",
+      "반복문"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "programming-craftsman-c-java-0002",
+    "certId": "programming-craftsman",
+    "subjectId": "programming-language",
+    "chapterId": "c-java",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "다음 C 프로그램의 출력 결과는?\n\nint a[5] = {1, 2, 3, 4, 5};\nprintf(\"%d\", a[2]);",
+    "choices": [
+      "4",
+      "2",
+      "1",
+      "3"
+    ],
+    "answer": 4,
+    "oneLineConcept": "C 배열의 첨자는 0부터 시작한다",
+    "explanation": "C 의 배열 번호(첨자)는 0부터 시작합니다.\n\n1. a[0] = 1, a[1] = 2, a[2] = 3\n2. 출력: 3\n\n**틀린 선지**\n- ① 4: a[3] 의 값입니다.\n- ② 2: 배열 번호를 1부터 센 경우입니다. C 배열은 0번부터 시작합니다.\n- ③ 1: a[0] 의 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "C",
+      "배열"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "programming-craftsman-c-java-0003",
+    "certId": "programming-craftsman",
+    "subjectId": "programming-language",
+    "chapterId": "c-java",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "다음 자바 코드의 출력 결과는?\n\nint x = 10;\nx += 5;\nx *= 2;\nSystem.out.println(x);",
+    "choices": [
+      "30",
+      "20",
+      "15",
+      "25"
+    ],
+    "answer": 1,
+    "oneLineConcept": "x += 5 는 x = x + 5, x *= 2 는 x = x * 2",
+    "explanation": "복합 대입 연산자는 계산한 결과를 다시 그 변수에 넣습니다.\n\n1. x = 10\n2. x += 5 → x = 10 + 5 = 15\n3. x *= 2 → x = 15 × 2 = 30\n4. 출력: 30\n\n**틀린 선지**\n- ② 20: x += 5 를 빠뜨리고 10 × 2 만 계산한 값입니다.\n- ③ 15: x *= 2 를 빠뜨린 값입니다.\n- ④ 25: 곱하기 대신 10 + 5 + 10 처럼 계산한 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "자바",
+      "대입 연산자"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "programming-craftsman-c-java-0004",
+    "certId": "programming-craftsman",
+    "subjectId": "programming-language",
+    "chapterId": "c-java",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "다음 C 프로그램의 출력 결과는?\n\nint i = 0, c = 0;\nwhile (i < 10) {\n    i += 3;\n    c++;\n}\nprintf(\"%d %d\", i, c);",
+    "choices": [
+      "12 3",
+      "12 4",
+      "10 4",
+      "9 3"
+    ],
+    "answer": 2,
+    "oneLineConcept": "while 문은 조건이 거짓이 될 때까지 반복한다",
+    "explanation": "반복할 때마다 i 는 3 늘고 c 는 1 늘어납니다.\n\n1. 1회: i = 3, c = 1\n2. 2회: i = 6, c = 2\n3. 3회: i = 9, c = 3 (9 < 10 이므로 계속)\n4. 4회: i = 12, c = 4 (12 < 10 이 거짓이므로 멈춤)\n5. 출력: 12 4\n\n**틀린 선지**\n- ① 12 3: 반복 횟수 c 는 4 입니다.\n- ③ 10 4: i 는 3씩 늘어나므로 10 이 될 수 없습니다.\n- ④ 9 3: i 가 9 일 때도 9 < 10 이 참이므로 한 번 더 반복합니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "C",
+      "반복문"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "programming-craftsman-c-java-0005",
+    "certId": "programming-craftsman",
+    "subjectId": "programming-language",
+    "chapterId": "c-java",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "다음 C 프로그램의 출력 결과는?\n\nint a = 5, b;\nb = a++;\nprintf(\"%d %d\", a, b);",
+    "choices": [
+      "5 6",
+      "6 5",
+      "5 5",
+      "6 6"
+    ],
+    "answer": 2,
+    "oneLineConcept": "a++ 는 값을 먼저 쓰고 나중에 1 을 더한다",
+    "explanation": "a++ (후위 증가)는 지금 값을 먼저 쓰고, 그다음에 a 를 1 늘립니다.\n\n1. b = a++ → b 에 지금 값 5 가 들어감\n2. 그다음 a 가 1 늘어 6\n3. 출력: 6 5\n\n참고: ++a (전위 증가)였다면 먼저 6 으로 만든 뒤 넣으므로 b 도 6 이 됩니다.\n\n**틀린 선지**\n- ① 5 6: a 와 b 의 값이 바뀌었습니다.\n- ③ 5 5: a 는 a++ 로 1 이 늘어 6 이 됩니다.\n- ④ 6 6: a++ 는 값을 먼저 넘겨준 뒤 1 을 더합니다. b 에는 5 가 들어갑니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "C",
+      "증감 연산자"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "programming-craftsman-c-java-0006",
+    "certId": "programming-craftsman",
+    "subjectId": "programming-language",
+    "chapterId": "c-java",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "다음 자바 코드의 출력 결과는?\n\nint n = 2, s = 0;\nswitch (n) {\n    case 1: s += 1;\n    case 2: s += 2;\n    case 3: s += 3; break;\n    default: s += 10;\n}\nSystem.out.println(s);",
+    "choices": [
+      "2",
+      "5",
+      "6",
+      "15"
+    ],
+    "answer": 2,
+    "oneLineConcept": "switch 문은 break 를 만날 때까지 아래 case 를 계속 실행한다",
+    "explanation": "switch 문은 맞는 case 부터 시작해 break 를 만날 때까지 아래로 계속 실행합니다.\n\n1. n = 2 이므로 case 2 부터 시작: s = 0 + 2 = 2\n2. break 가 없으니 case 3 실행: s = 2 + 3 = 5\n3. break 를 만나 switch 를 빠져나감\n4. 출력: 5\n\n**틀린 선지**\n- ① 2: case 2 에 break 가 없으므로 case 3 까지 이어서 실행됩니다.\n- ③ 6: case 1 은 건너뛰고 case 2 부터 시작합니다.\n- ④ 15: case 3 의 break 에서 멈추므로 default 는 실행되지 않습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "자바",
+      "switch"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "programming-craftsman-c-java-0007",
+    "certId": "programming-craftsman",
+    "subjectId": "programming-language",
+    "chapterId": "c-java",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "다음 C 프로그램의 출력 결과는?\n\nint a[3] = {10, 20, 30};\nint *p = a;\nprintf(\"%d\", *(p + 2) - *p);",
+    "choices": [
+      "30",
+      "2",
+      "20",
+      "10"
+    ],
+    "answer": 3,
+    "oneLineConcept": "포인터 p + 2 는 배열의 두 칸 뒤 원소를 가리킨다",
+    "explanation": "배열 이름 a 는 첫 원소의 주소입니다. 그래서 p 는 a[0] 을 가리킵니다.\n\n1. *p = a[0] = 10\n2. p + 2 는 두 칸 뒤 a[2] 의 주소 → *(p + 2) = 30\n3. 30 - 10 = 20\n4. 출력: 20\n\n**틀린 선지**\n- ① 30: *p 를 빼지 않은 값입니다.\n- ② 2: 주소의 차이가 아니라 주소가 가리키는 값끼리 뺍니다.\n- ④ 10: *(p + 1) - *p 를 계산한 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "C",
+      "포인터"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  }
+]

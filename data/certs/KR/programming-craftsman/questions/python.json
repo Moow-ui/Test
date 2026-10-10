@@ -1,0 +1,218 @@
+[
+  {
+    "id": "programming-craftsman-python-0001",
+    "certId": "programming-craftsman",
+    "subjectId": "programming-language",
+    "chapterId": "python",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "다음 파이썬 코드의 출력 결과는?\n\na = [1, 2, 3]\na.append(4)\nprint(len(a))",
+    "choices": [
+      "10",
+      "3",
+      "[1, 2, 3, 4]",
+      "4"
+    ],
+    "answer": 4,
+    "oneLineConcept": "append 는 리스트 끝에 추가, len 은 개수를 센다",
+    "explanation": "1. a = [1, 2, 3]\n2. a.append(4) → 끝에 4 를 붙여 a = [1, 2, 3, 4]\n3. len(a) 는 원소의 개수 → 4\n4. 출력: 4\n\n**틀린 선지**\n- ① 10: len 은 원소의 합이 아니라 개수를 구합니다.\n- ② 3: append(4) 로 원소가 하나 늘어났습니다.\n- ③ [1, 2, 3, 4]: 리스트 자체가 아니라 길이(개수)를 출력합니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "파이썬",
+      "리스트"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "programming-craftsman-python-0002",
+    "certId": "programming-craftsman",
+    "subjectId": "programming-language",
+    "chapterId": "python",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "다음 파이썬 코드의 출력 결과는?\n\ns = \"hello\"\nprint(s[-1])",
+    "choices": [
+      "오류",
+      "l",
+      "o",
+      "h"
+    ],
+    "answer": 3,
+    "oneLineConcept": "파이썬에서 [-1] 은 맨 마지막 원소",
+    "explanation": "파이썬은 뒤에서부터 셀 때 음수 번호를 씁니다. -1 은 맨 마지막 글자입니다.\n\n1. \"hello\" 의 마지막 글자: o\n2. 출력: o\n\n**틀린 선지**\n- ① 오류: 파이썬은 음수 번호를 쓸 수 있어 오류가 나지 않습니다.\n- ② l: s[-2] 의 값입니다.\n- ④ h: s[0] 의 값입니다. -1 은 맨 뒤를 뜻합니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "파이썬",
+      "문자열"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "programming-craftsman-python-0003",
+    "certId": "programming-craftsman",
+    "subjectId": "programming-language",
+    "chapterId": "python",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "다음 파이썬 코드의 출력 결과는?\n\nd = {'a': 1, 'b': 2}\nd['c'] = 3\nprint(sum(d.values()))",
+    "choices": [
+      "abc",
+      "3",
+      "오류",
+      "6"
+    ],
+    "answer": 4,
+    "oneLineConcept": "딕셔너리에 새 키로 넣으면 항목이 추가된다",
+    "explanation": "딕셔너리는 '키: 값' 쌍으로 자료를 저장합니다.\n\n1. 처음: {'a': 1, 'b': 2}\n2. d['c'] = 3 → 'c': 3 이 추가됨\n3. d.values() → 1, 2, 3\n4. sum → 1 + 2 + 3 = 6\n5. 출력: 6\n\n**틀린 선지**\n- ① abc: values() 는 키가 아니라 값을 가져옵니다.\n- ② 3: 새로 넣은 'c' 의 값 3 만 본 것입니다. values() 는 모든 값을 가져옵니다.\n- ③ 오류: 없는 키에 값을 넣으면 새 항목이 추가될 뿐 오류가 나지 않습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "파이썬",
+      "딕셔너리"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "programming-craftsman-python-0004",
+    "certId": "programming-craftsman",
+    "subjectId": "programming-language",
+    "chapterId": "python",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "다음 파이썬 코드의 출력 결과는?\n\nprint(10 // 3, 10 % 3, 2 ** 3)",
+    "choices": [
+      "1 3 8",
+      "3 1 8",
+      "3.3333333333333335 1 8",
+      "3 1 6"
+    ],
+    "answer": 2,
+    "oneLineConcept": "// 는 몫, % 는 나머지, ** 는 거듭제곱",
+    "explanation": "1. 10 // 3 → 10 을 3 으로 나눈 몫 → 3\n2. 10 % 3 → 나머지 → 1\n3. 2 ** 3 → 2 × 2 × 2 = 8\n4. print 는 값 사이에 빈칸을 넣어 출력: 3 1 8\n\n**틀린 선지**\n- ① 1 3 8: 몫과 나머지가 바뀌었습니다.\n- ③ 3.3333333333333335 1 8: // 는 몫만 구하는 정수 나눗셈입니다. 소수가 나오는 것은 / 입니다.\n- ④ 3 1 6: ** 는 거듭제곱입니다. 2 × 3 이 아니라 2 × 2 × 2 입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "파이썬",
+      "연산자"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "programming-craftsman-python-0005",
+    "certId": "programming-craftsman",
+    "subjectId": "programming-language",
+    "chapterId": "python",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "다음 파이썬 코드의 출력 결과는?\n\ndef f(n):\n    if n <= 1:\n        return 1\n    return n * f(n - 1)\n\nprint(f(4))",
+    "choices": [
+      "4",
+      "24",
+      "10",
+      "12"
+    ],
+    "answer": 2,
+    "oneLineConcept": "재귀 함수로 4! = 4×3×2×1 = 24 를 구한다",
+    "explanation": "함수 f 는 자기 자신을 다시 부르는 재귀 함수로, 팩토리얼(n!)을 구합니다.\n\n1. f(4) = 4 × f(3)\n2. f(3) = 3 × f(2)\n3. f(2) = 2 × f(1)\n4. f(1) = 1 (n <= 1)\n5. 거꾸로 계산: 2 × 1 = 2 → 3 × 2 = 6 → 4 × 6 = 24\n6. 출력: 24\n\n**틀린 선지**\n- ① 4: 함수가 자기 자신을 다시 부르며(재귀) 계속 곱합니다.\n- ③ 10: 곱하기가 아니라 4 + 3 + 2 + 1 처럼 더한 값입니다.\n- ④ 12: 4 × 3 에서 멈춘 값입니다. f(2) = 2 까지 이어서 곱합니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "파이썬",
+      "재귀 함수"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "programming-craftsman-python-0006",
+    "certId": "programming-craftsman",
+    "subjectId": "programming-language",
+    "chapterId": "python",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "다음 파이썬 코드의 출력 결과는?\n\nprint([x * x for x in range(1, 6) if x % 2 == 1])",
+    "choices": [
+      "[4, 16]",
+      "[1, 9, 25, 49]",
+      "[1, 4, 9, 16, 25]",
+      "[1, 9, 25]"
+    ],
+    "answer": 4,
+    "oneLineConcept": "리스트 컴프리헨션: 조건에 맞는 값만 골라 계산한다",
+    "explanation": "대괄호 안의 for 와 if 로 새 리스트를 만드는 문법입니다.\n\n1. range(1, 6) → 1, 2, 3, 4, 5\n2. x % 2 == 1 (홀수) → 1, 3, 5\n3. 각각 제곱: 1, 9, 25\n4. 출력: [1, 9, 25]\n\n**틀린 선지**\n- ① [4, 16]: x % 2 == 1 은 홀수만 고르는 조건입니다. 짝수의 제곱입니다.\n- ② [1, 9, 25, 49]: range(1, 6) 은 1~5 이므로 7 은 들어가지 않습니다.\n- ③ [1, 4, 9, 16, 25]: if 조건으로 홀수만 고른다는 점을 빠뜨렸습니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "파이썬",
+      "리스트 컴프리헨션"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  }
+]

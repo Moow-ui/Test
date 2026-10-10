@@ -1,0 +1,254 @@
+[
+  {
+    "id": "programming-craftsman-computer-structure-0001",
+    "certId": "programming-craftsman",
+    "subjectId": "info-system",
+    "chapterId": "computer-structure",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "2진수 1101 을 10진수로 바꾼 값은?",
+    "choices": [
+      "11",
+      "1101",
+      "13",
+      "14"
+    ],
+    "answer": 3,
+    "oneLineConcept": "2진수는 자리마다 8·4·2·1 을 곱해 더한다",
+    "explanation": "오른쪽 자리부터 1, 2, 4, 8 의 값을 가집니다.\n\n1. 1101 → 8 + 4 + 0 + 1\n2. 합계: 13\n3. 확인: 13 = 8 + 4 + 1 이므로 2진수 1101 이 맞습니다.\n\n**틀린 선지**\n- ① 11: 1011 을 바꾼 값입니다.\n- ② 1101: 2진수를 그대로 읽은 것입니다.\n- ④ 14: 1110 을 바꾼 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "진법 변환",
+      "2진수"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "programming-craftsman-computer-structure-0002",
+    "certId": "programming-craftsman",
+    "subjectId": "info-system",
+    "chapterId": "computer-structure",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "다음 기억장치 중 접근 속도가 가장 빠른 것은?",
+    "choices": [
+      "레지스터",
+      "주기억장치(RAM)",
+      "하드디스크",
+      "캐시 메모리"
+    ],
+    "answer": 1,
+    "oneLineConcept": "속도: 레지스터 > 캐시 > 주기억장치 > 보조기억장치",
+    "explanation": "레지스터는 CPU 안에 있는 아주 작은 기억장소로 가장 빠릅니다. CPU 에서 멀어질수록 느려지고 용량은 커집니다.\n\n**틀린 선지**\n- ② 주기억장치(RAM): 주기억장치는 캐시보다 느립니다.\n- ③ 하드디스크: 하드디스크는 보조기억장치로 가장 느립니다.\n- ④ 캐시 메모리: 캐시도 빠르지만 CPU 안의 레지스터보다는 느립니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "컴퓨터 구조",
+      "기억장치"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "programming-craftsman-computer-structure-0003",
+    "certId": "programming-craftsman",
+    "subjectId": "info-system",
+    "chapterId": "computer-structure",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "1 바이트(Byte)는 몇 비트(bit)인가?",
+    "choices": [
+      "16비트",
+      "1024비트",
+      "8비트",
+      "4비트"
+    ],
+    "answer": 3,
+    "oneLineConcept": "1 바이트 = 8 비트",
+    "explanation": "비트는 0 또는 1 하나를 나타내는 가장 작은 단위입니다. 비트 8개를 모은 것이 1 바이트이고, 보통 영문자 한 글자를 나타냅니다.\n\n**틀린 선지**\n- ① 16비트: 16비트는 2 바이트입니다.\n- ② 1024비트: 1024 는 1 KB 가 몇 바이트인지 나타내는 수입니다.\n- ④ 4비트: 4비트는 니블(nibble)이라고 부르며 바이트의 절반입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "자료 표현",
+      "단위"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "programming-craftsman-computer-structure-0004",
+    "certId": "programming-craftsman",
+    "subjectId": "info-system",
+    "chapterId": "computer-structure",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "10진수 25 를 2진수로 바꾼 값은?",
+    "choices": [
+      "11001",
+      "11010",
+      "10101",
+      "10011"
+    ],
+    "answer": 1,
+    "oneLineConcept": "10진수를 2로 계속 나누어 나머지를 거꾸로 읽는다",
+    "explanation": "2로 나누면서 나머지를 적고, 아래에서 위로 읽습니다.\n\n1. 25 ÷ 2 = 12 … 1\n2. 12 ÷ 2 = 6 … 0\n3. 6 ÷ 2 = 3 … 0\n4. 3 ÷ 2 = 1 … 1\n5. 1 ÷ 2 = 0 … 1\n6. 거꾸로 읽기: 11001\n7. 확인: 16 + 8 + 1 = 25\n\n**틀린 선지**\n- ② 11010: 11010 은 10진수 26 입니다.\n- ③ 10101: 10101 은 10진수 21 입니다.\n- ④ 10011: 10011 은 10진수 19 입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "진법 변환",
+      "2진수"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "programming-craftsman-computer-structure-0005",
+    "certId": "programming-craftsman",
+    "subjectId": "info-system",
+    "chapterId": "computer-structure",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "CPU 에서 다음에 실행할 명령어의 주소를 기억하는 레지스터는?",
+    "choices": [
+      "누산기(AC)",
+      "프로그램 카운터(PC)",
+      "메모리 버퍼 레지스터(MBR)",
+      "명령 레지스터(IR)"
+    ],
+    "answer": 2,
+    "oneLineConcept": "프로그램 카운터는 다음 명령어의 주소를 기억한다",
+    "explanation": "CPU 는 프로그램 카운터(PC)에 적힌 주소에서 명령어를 가져오고, PC 값을 다음 명령어 주소로 바꾸어 둡니다. 그래서 명령어가 차례대로 실행됩니다.\n\n**틀린 선지**\n- ① 누산기(AC): 누산기는 연산 결과를 잠시 담아 둡니다.\n- ③ 메모리 버퍼 레지스터(MBR): MBR 은 기억장치에서 읽거나 쓸 데이터를 잠시 담아 둡니다.\n- ④ 명령 레지스터(IR): 명령 레지스터는 지금 실행 중인 명령어 자체를 담습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "컴퓨터 구조",
+      "레지스터"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "programming-craftsman-computer-structure-0006",
+    "certId": "programming-craftsman",
+    "subjectId": "info-system",
+    "chapterId": "computer-structure",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "2진수 1011 과 0110 을 비트 단위로 AND 연산한 결과는?",
+    "choices": [
+      "1101",
+      "1111",
+      "0010",
+      "0100"
+    ],
+    "answer": 3,
+    "oneLineConcept": "AND 는 두 비트가 모두 1 일 때만 1",
+    "explanation": "같은 자리끼리 비교해 둘 다 1 일 때만 1 을 적습니다.\n\n1. 1011\n2. 0110\n3. 자리별: 1·0 → 0, 0·1 → 0, 1·1 → 1, 1·0 → 0\n4. 결과: 0010\n\n**틀린 선지**\n- ① 1101: XOR(서로 다를 때 1) 연산의 결과입니다.\n- ② 1111: OR(하나라도 1 이면 1) 연산의 결과입니다.\n- ④ 0100: 자리를 잘못 맞춘 결과입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "논리 연산",
+      "AND"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "programming-craftsman-computer-structure-0007",
+    "certId": "programming-craftsman",
+    "subjectId": "info-system",
+    "chapterId": "computer-structure",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "8비트 2의 보수 방식으로 10진수 -5 를 나타낸 것은?",
+    "choices": [
+      "10000101",
+      "11111010",
+      "00000101",
+      "11111011"
+    ],
+    "answer": 4,
+    "oneLineConcept": "2의 보수 = 비트를 모두 뒤집고 1 을 더한다",
+    "explanation": "음수는 양수의 비트를 모두 뒤집고(1의 보수) 1 을 더해 만듭니다.\n\n1. +5 = 00000101\n2. 비트 뒤집기: 11111010\n3. 1 더하기: 11111011\n4. 확인: 11111011 + 00000101 = 1 00000000 → 넘친 자리를 버리면 0 이므로 -5 가 맞습니다.\n\n**틀린 선지**\n- ① 10000101: 맨 앞 비트만 부호로 바꾼 부호와 절댓값 방식입니다.\n- ② 11111010: 1의 보수로 나타낸 것입니다. 2의 보수는 여기에 1 을 더합니다.\n- ③ 00000101: +5 를 나타낸 것입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "자료 표현",
+      "2의 보수"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  }
+]
