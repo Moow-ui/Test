@@ -1,0 +1,145 @@
+[
+  {
+    "id": "notary-california-other-notarial-acts-0001",
+    "certId": "notary-california",
+    "subjectId": "notarial-acts",
+    "chapterId": "other-notarial-acts",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A customer asks a California notary to certify a copy of a birth certificate. What should the notary do?",
+    "choices": [
+      "Decline and refer the customer to the agency that keeps the record",
+      "Certify the copy if the customer shows the original",
+      "Certify the copy and record it in the journal",
+      "Complete a jurat on the copy instead"
+    ],
+    "answer": 1,
+    "oneLineConcept": "No certified copies of vital records",
+    "explanation": "California notaries may not certify copies of birth, death, or marriage records. Certified copies come from official record keepers such as the state or local registrar or the county recorder.\n\n**Wrong choices**\n- Certify the copy if the customer shows the original: Notaries are not allowed to certify copies of birth records, even with the original.\n- Certify the copy and record it in the journal: Recording it does not make it allowed.\n- Complete a jurat on the copy instead: A jurat is not a way to certify a vital record copy.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "certified copy",
+      "vital records"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "notary-california-other-notarial-acts-0002",
+    "certId": "notary-california",
+    "subjectId": "notarial-acts",
+    "chapterId": "other-notarial-acts",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which kind of document may a California notary certify as a true copy?",
+    "choices": [
+      "A power of attorney",
+      "A marriage certificate",
+      "A birth certificate",
+      "A death certificate"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Notaries may certify POA copies",
+    "explanation": "A California notary may certify a copy of a power of attorney. Notaries may not certify copies of vital records such as birth, death, or marriage certificates.\n\n**Wrong choices**\n- A marriage certificate: Marriage records are certified only by official record keepers.\n- A birth certificate: Birth records are certified only by official record keepers.\n- A death certificate: Death records are certified only by official record keepers.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "certified copy",
+      "power of attorney"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "notary-california-other-notarial-acts-0004",
+    "certId": "notary-california",
+    "subjectId": "notarial-acts",
+    "chapterId": "other-notarial-acts",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What is an affirmation?",
+    "choices": [
+      "A solemn promise made on personal honor without reference to God",
+      "A signed statement that does not need to be true",
+      "A promise made to God that a statement is true",
+      "A certificate showing a copy matches the original"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Affirmation = oath without God",
+    "explanation": "An affirmation is a solemn promise on one's personal honor, without mentioning God. It has the same legal effect as an oath.\n\n**Wrong choices**\n- A signed statement that does not need to be true: An affirmation is a promise of truth.\n- A promise made to God that a statement is true: That describes an oath, not an affirmation.\n- A certificate showing a copy matches the original: That describes a certified copy.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "affirmation",
+      "oath"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "notary-california-other-notarial-acts-0005",
+    "certId": "notary-california",
+    "subjectId": "notarial-acts",
+    "chapterId": "other-notarial-acts",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A signer cannot write and signs a document with an \"X.\" What makes this a proper signature by mark?",
+    "choices": [
+      "The signer's relative signs the document instead",
+      "No witnesses are needed if the notary watches",
+      "Witnesses watch and sign their own names, and one writes the signer's name next to the mark",
+      "The notary signs the signer's name for them"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Signature by mark needs witnesses",
+    "explanation": "A person who cannot write may sign with a mark, such as an X. Witnesses watch the mark being made and sign their own names, and one of them writes the person's name near the mark.\n\n**Wrong choices**\n- The signer's relative signs the document instead: Another person may not sign in the signer's place.\n- No witnesses are needed if the notary watches: A signature by mark needs witnesses who sign their own names.\n- The notary signs the signer's name for them: The notary may not sign for a signer.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "signature by mark"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  }
+]

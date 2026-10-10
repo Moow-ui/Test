@@ -1,0 +1,234 @@
+[
+  {
+    "subjectId": "administrative-procedures",
+    "chapterId": "seal-changes-records",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A notary wants to list a post office box as the principal place of business. When is this allowed?",
+    "choices": [
+      "Only if the county clerk approves the box",
+      "Always, because any mailing address is acceptable",
+      "Only if the notary also gives a physical street address",
+      "Never, under any circumstances"
+    ],
+    "answer": 3,
+    "oneLineConcept": "P.O. box needs a street address too",
+    "explanation": "A post office box or a commercial mail receiving agency may not be used as the principal place of business unless the notary also provides a physical street address.\n\n**Wrong choices**\n- Only if the county clerk approves the box: The county clerk does not approve business addresses.\n- Always, because any mailing address is acceptable: A post office box alone is not enough.\n- Never, under any circumstances: A box may be listed when a physical street address is also provided.",
+    "frequency": 3,
+    "tags": [
+      "address change"
+    ],
+    "distractorOrder": "2|1|4",
+    "certId": "notary-california",
+    "reviewNote": "2026-10-10 separate verification: ambiguous. The current SOS application says the physical business location may not be a P.O. box or commercial mailbox (a P.O. box is allowed only as a separate mailing address), so \"only with a street address\" and \"never\" are both defensible. Reword before publishing."
+  },
+  {
+    "id": "notary-california-immigration-advertising-0004",
+    "certId": "notary-california",
+    "subjectId": "immigration-foreign-language",
+    "chapterId": "immigration-advertising",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A notary who is not an attorney advertises notary services in Vietnamese. What must the advertisement include?",
+    "choices": [
+      "The notary's home address and date of birth",
+      "A statement that the notary can help with immigration matters",
+      "A notice in English only saying the notary is licensed",
+      "A notice in English and Vietnamese saying the notary is not an attorney and may not give legal advice or accept fees for legal advice"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Foreign-language ads need a two-language notice",
+    "explanation": "A non-attorney notary who advertises notary services in a language other than English must post a notice in English and in that language stating that the notary is not an attorney licensed in California and may not give legal advice or accept fees for legal advice.\n\n**Wrong choices**\n- The notary's home address and date of birth: These are not required.\n- A statement that the notary can help with immigration matters: Saying this could mislead and is not the required notice.\n- A notice in English only saying the notary is licensed: The notice must be in both English and the other language, and it says the notary is not an attorney.",
+    "frequency": 5,
+    "tags": [
+      "foreign language",
+      "advertising"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    },
+    "reviewNote": "2026-10-10 공식 핸드북(2026-01) 대조 탈락: Keyed notice wording differs from GC 8219.5(a): \"I am not an attorney and, therefore, cannot give legal advice about immigration or any other legal matters.\" plus the statutory fee list."
+  },
+  {
+    "id": "notary-california-immigration-advertising-0005",
+    "certId": "notary-california",
+    "subjectId": "immigration-foreign-language",
+    "chapterId": "immigration-advertising",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "When does the not-an-attorney advertising notice rule apply to a notary who is not an attorney?",
+    "choices": [
+      "Only when the notary charges the maximum fee",
+      "Only when the notary advertises on television",
+      "When the notary advertises notary services in a language other than English",
+      "Only when the notary works for a bank"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Notice rule: ads in another language",
+    "explanation": "The notice rule applies to a notary who is not an attorney and who advertises notary services in a language other than English, in any medium.\n\n**Wrong choices**\n- Only when the notary charges the maximum fee: Fees do not trigger the rule.\n- Only when the notary advertises on television: The rule covers advertising in any medium.\n- Only when the notary works for a bank: Employment does not matter.",
+    "frequency": 4,
+    "tags": [
+      "foreign language",
+      "advertising"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    },
+    "reviewNote": "2026-10-10 공식 핸드북(2026-01) 대조 탈락: Says the rule covers advertising \"in any medium\". GC 8219.5(a): signs or other written communication, except a single desk plaque."
+  },
+  {
+    "id": "notary-california-fees-0010",
+    "certId": "notary-california",
+    "subjectId": "misconduct-fees",
+    "chapterId": "fees",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which of these notarial services has a maximum fee listed in Government Code section 8211?",
+    "choices": [
+      "Giving immigration advice",
+      "Certifying a copy of a power of attorney",
+      "Performing a marriage ceremony",
+      "Certifying a copy of a birth certificate"
+    ],
+    "answer": 2,
+    "oneLineConcept": "POA copy certification has a set fee",
+    "explanation": "Government Code section 8211 lists a maximum fee for certifying a copy of a power of attorney under the Probate Code. Notaries may not certify vital records, perform marriages, or give legal advice.\n\n**Wrong choices**\n- Giving immigration advice: Non-attorney notaries may not give legal advice.\n- Performing a marriage ceremony: Notaries may not perform marriages in California.\n- Certifying a copy of a birth certificate: Notaries may not certify birth records, so no fee is listed.",
+    "frequency": 3,
+    "tags": [
+      "fees",
+      "power of attorney"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    },
+    "reviewNote": "2026-10-10 공식 핸드북(2026-01) 대조 탈락: Explanation says notaries may not perform marriages. Handbook: only if also authorized under Family Code 400-402."
+  },
+  {
+    "id": "notary-california-other-notarial-acts-0003",
+    "certId": "notary-california",
+    "subjectId": "notarial-acts",
+    "chapterId": "other-notarial-acts",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "When may a California notary certify a copy of an entry in the notary's own journal?",
+    "choices": [
+      "Only when the notary's employer requests it",
+      "Whenever any member of the public asks",
+      "When the Secretary of State or a court requests it",
+      "Never, under any circumstances"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Certified journal copy: for state or court",
+    "explanation": "A notary may certify a copy of a journal entry when the Secretary of State or a court requests it. Members of the public may request a photocopy of a line item, but that is not the same as a certified copy.\n\n**Wrong choices**\n- Only when the notary's employer requests it: Employers have no special right to the journal.\n- Whenever any member of the public asks: A public request gets a photocopy of the line item, not a certified copy.\n- Never, under any circumstances: The law allows it when the Secretary of State or a court asks.",
+    "frequency": 3,
+    "tags": [
+      "certified copy",
+      "journal"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    },
+    "reviewNote": "2026-10-10 공식 핸드북(2026-01) 대조 탈락: Explanation says employers have no special right to the journal. GC 8206(d): an employee-notary must allow inspection by the employer's designated auditor/agent for business-related transactions."
+  },
+  {
+    "id": "notary-california-other-notarial-acts-0006",
+    "certId": "notary-california",
+    "subjectId": "notarial-acts",
+    "chapterId": "other-notarial-acts",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which is one of the powers given to a California notary public by law?",
+    "choices": [
+      "Certifying copies of birth certificates",
+      "Taking depositions and affidavits",
+      "Issuing marriage licenses",
+      "Preparing wills for clients"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Notaries take depositions and affidavits",
+    "explanation": "California law lets notaries take acknowledgments and proofs, take depositions and affidavits, administer oaths and affirmations, certify copies of powers of attorney, and protest unpaid bills of exchange.\n\n**Wrong choices**\n- Certifying copies of birth certificates: Notaries may not certify copies of vital records.\n- Issuing marriage licenses: Marriage licenses are issued by the county clerk, not by notaries.\n- Preparing wills for clients: Preparing wills is legal work for attorneys.",
+    "frequency": 3,
+    "tags": [
+      "notary powers"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    },
+    "reviewNote": "2026-10-10 공식 핸드북(2026-01) 대조 탈락: Explanation says notaries never issue marriage licenses and lists protesting bills of exchange as every notary's power. Handbook: a notary approved by the county clerk may issue confidential marriage licenses; GC 8205(a)(1) limits protests to notaries employed by a financial institution."
+  },
+  {
+    "id": "notary-california-other-notarial-acts-0007",
+    "certId": "notary-california",
+    "subjectId": "notarial-acts",
+    "chapterId": "other-notarial-acts",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A couple asks a California notary to perform their wedding ceremony. What should the notary do?",
+    "choices": [
+      "Perform the ceremony and complete an acknowledgment",
+      "Perform the ceremony and record it in the journal",
+      "Explain that California notaries are not authorized to perform marriages",
+      "Perform the ceremony if two witnesses are present"
+    ],
+    "answer": 3,
+    "oneLineConcept": "California notaries cannot perform marriages",
+    "explanation": "California law does not give notaries the power to solemnize marriages. The couple must use an official authorized to perform marriages.\n\n**Wrong choices**\n- Perform the ceremony and complete an acknowledgment: Notaries have no power to marry people in California.\n- Perform the ceremony and record it in the journal: Recording it does not make it allowed.\n- Perform the ceremony if two witnesses are present: Witnesses do not give a notary this power.",
+    "frequency": 3,
+    "tags": [
+      "notary powers",
+      "marriage"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    },
+    "reviewNote": "2026-10-10 공식 핸드북(2026-01) 대조 탈락: Says notaries have no power to solemnize marriages. Handbook: a notary may perform a marriage only if also a person authorized under Family Code 400-402; the commission alone does not authorize it."
+  }
+]
