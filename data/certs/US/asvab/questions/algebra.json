@@ -1,0 +1,317 @@
+[
+  {
+    "id": "asvab-algebra-0001",
+    "certId": "asvab",
+    "subjectId": "mathematics-knowledge",
+    "chapterId": "algebra",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Solve for x: 3x + 5 = 20",
+    "choices": [
+      "x = 25/3",
+      "x = 4",
+      "x = 15",
+      "x = 5"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Undo addition, then undo multiplication",
+    "explanation": "1. Subtract 5 from both sides: 3x = 15.\n2. Divide both sides by 3: x = 5.\n\nCheck: 3(5) + 5 = 15 + 5 = 20.\n\n**Wrong choices**\n- (A) x = 25/3: 25/3 comes from adding 5 instead of subtracting it.\n- (B) x = 4: x = 4 gives 3(4) + 5 = 17, not 20.\n- (C) x = 15: 15 is the value of 3x, not x.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "equations"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "asvab-algebra-0002",
+    "certId": "asvab",
+    "subjectId": "mathematics-knowledge",
+    "chapterId": "algebra",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What is (-4) x (-6)?",
+    "choices": [
+      "24",
+      "10",
+      "-10",
+      "-24"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Negative x negative = positive",
+    "explanation": "When two negative numbers are multiplied, the answer is positive. 4 x 6 = 24, so (-4) x (-6) = 24.\n\nCheck: (-4) x (-6) is the same as 4 x 6, which is 24.\n\n**Wrong choices**\n- (B) 10: 10 adds 4 and 6 instead of multiplying.\n- (C) -10: -10 adds the numbers instead of multiplying.\n- (D) -24: -24 forgets that two negatives make a positive.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "signed numbers"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "asvab-algebra-0003",
+    "certId": "asvab",
+    "subjectId": "mathematics-knowledge",
+    "chapterId": "algebra",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What is the value of 2 to the 5th power (2^5)?",
+    "choices": [
+      "10",
+      "32",
+      "16",
+      "25"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Exponent = repeated multiplication",
+    "explanation": "1. 2^5 means 2 multiplied by itself 5 times.\n2. 2 x 2 x 2 x 2 x 2 = 32.\n\nCheck: 2^4 = 16, and 16 x 2 = 32.\n\n**Wrong choices**\n- (A) 10: 10 multiplies 2 by 5 instead of using 2 five times.\n- (C) 16: 16 is 2^4, one factor short.\n- (D) 25: 25 is 5^2, which reverses the base and exponent.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "exponents"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "asvab-algebra-0004",
+    "certId": "asvab",
+    "subjectId": "mathematics-knowledge",
+    "chapterId": "algebra",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What is √81 + √16?",
+    "choices": [
+      "5",
+      "97",
+      "12",
+      "13"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Find each square root first, then add",
+    "explanation": "1. √81 = 9, because 9 x 9 = 81.\n2. √16 = 4, because 4 x 4 = 16.\n3. 9 + 4 = 13.\n\nCheck: 9² = 81 and 4² = 16.\n\n**Wrong choices**\n- (A) 5: 5 subtracts the roots (9 - 4) instead of adding them.\n- (B) 97: 97 adds 81 and 16 without taking any square roots.\n- (C) 12: 12 uses √81 = 8, but 8 x 8 = 64.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "roots"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "asvab-algebra-0005",
+    "certId": "asvab",
+    "subjectId": "mathematics-knowledge",
+    "chapterId": "algebra",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Simplify: 4(2x - 3) - 2x",
+    "choices": [
+      "10x - 12",
+      "6x - 3",
+      "6x + 12",
+      "6x - 12"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Distribute, then combine like terms",
+    "explanation": "1. Distribute the 4: 4(2x) - 4(3) = 8x - 12.\n2. Subtract 2x: 8x - 2x - 12 = 6x - 12.\n\nCheck with x = 1: 4(2 - 3) - 2 = -4 - 2 = -6, and 6(1) - 12 = -6.\n\n**Wrong choices**\n- (A) 10x - 12: 10x - 12 adds 2x instead of subtracting it.\n- (B) 6x - 3: 6x - 3 forgets to multiply the 3 by 4.\n- (C) 6x + 12: 6x + 12 gets the sign of the 12 wrong.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "expressions"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "asvab-algebra-0006",
+    "certId": "asvab",
+    "subjectId": "mathematics-knowledge",
+    "chapterId": "algebra",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Solve the inequality: -2x + 7 > 15",
+    "choices": [
+      "x < -4",
+      "x > 4",
+      "x < 4",
+      "x > -4"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Dividing by a negative flips the sign",
+    "explanation": "1. Subtract 7 from both sides: -2x > 8.\n2. Divide both sides by -2. Dividing by a negative number flips the inequality sign: x < -4.\n\nCheck with x = -5: -2(-5) + 7 = 17, and 17 > 15 is true.\n\n**Wrong choices**\n- (B) x > 4: x > 4 drops the negative and also forgets to flip the sign.\n- (C) x < 4: x < 4 drops the negative sign on the 4.\n- (D) x > -4: x > -4 forgets to flip the sign when dividing by a negative.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "inequalities"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "asvab-algebra-0007",
+    "certId": "asvab",
+    "subjectId": "mathematics-knowledge",
+    "chapterId": "algebra",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "If a = 2 and b = -1, what is the value of a² - 3ab?",
+    "choices": [
+      "-10",
+      "-2",
+      "4",
+      "10"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Substitute carefully with negatives",
+    "explanation": "1. a² = 2² = 4.\n2. 3ab = 3 x 2 x (-1) = -6.\n3. a² - 3ab = 4 - (-6) = 4 + 6 = 10.\n\nCheck: subtracting a negative is the same as adding, so 4 + 6 = 10.\n\n**Wrong choices**\n- (A) -10: -10 gets the sign wrong; 4 - (-6) is 4 + 6, a positive number.\n- (B) -2: -2 treats 3ab as +6 and computes 4 - 6.\n- (C) 4: 4 is only the value of a², leaving out the second term.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "substitution"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "asvab-algebra-0008",
+    "certId": "asvab",
+    "subjectId": "mathematics-knowledge",
+    "chapterId": "algebra",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Factor completely: x² - 5x - 14",
+    "choices": [
+      "(x - 7)(x + 2)",
+      "(x + 7)(x - 2)",
+      "(x - 7)(x - 2)",
+      "(x - 14)(x + 1)"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Find two numbers: product c, sum b",
+    "explanation": "1. Find two numbers that multiply to -14 and add to -5.\n2. -7 and +2 work: (-7)(2) = -14 and -7 + 2 = -5.\n3. So x² - 5x - 14 = (x - 7)(x + 2).\n\nCheck: (x - 7)(x + 2) = x² + 2x - 7x - 14 = x² - 5x - 14.\n\n**Wrong choices**\n- (B) (x + 7)(x - 2): (x + 7)(x - 2) gives x² + 5x - 14; the middle sign is wrong.\n- (C) (x - 7)(x - 2): (x - 7)(x - 2) gives x² - 9x + 14.\n- (D) (x - 14)(x + 1): (x - 14)(x + 1) gives x² - 13x - 14.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "factoring"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "asvab-algebra-0009",
+    "certId": "asvab",
+    "subjectId": "mathematics-knowledge",
+    "chapterId": "algebra",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Solve the system: x + y = 10 and x - y = 4. What is the value of y?",
+    "choices": [
+      "4",
+      "7",
+      "6",
+      "3"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Add the equations to remove y",
+    "explanation": "1. Add the two equations: (x + y) + (x - y) = 10 + 4, so 2x = 14 and x = 7.\n2. Put x = 7 into x + y = 10: 7 + y = 10, so y = 3.\n\nCheck: 7 + 3 = 10 and 7 - 3 = 4.\n\n**Wrong choices**\n- (A) 4: y = 4 gives x = 6, and 6 - 4 = 2, not 4.\n- (B) 7: 7 is the value of x, not y.\n- (C) 6: y = 6 gives x = 4, and 4 - 6 = -2, not 4.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "systems"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  }
+]

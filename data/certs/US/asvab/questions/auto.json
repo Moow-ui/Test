@@ -1,0 +1,396 @@
+[
+  {
+    "id": "asvab-auto-0001",
+    "certId": "asvab",
+    "subjectId": "auto-information",
+    "chapterId": "auto",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What is the correct order of the four strokes in a four-stroke gasoline engine?",
+    "choices": [
+      "Power, intake, exhaust, compression",
+      "Compression, intake, exhaust, power",
+      "Intake, power, compression, exhaust",
+      "Intake, compression, power, exhaust"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Four strokes: intake, compression, power, exhaust",
+    "explanation": "The piston makes four strokes for each cycle. It draws in the air-fuel mixture (intake), squeezes it (compression), the spark ignites it and pushes the piston down (power), and then it pushes the burned gas out (exhaust).\n\n**Wrong choices**\n- (A) Power, intake, exhaust, compression: The cycle starts by drawing in the mixture; burning comes after compression.\n- (B) Compression, intake, exhaust, power: The engine must take in air and fuel before it can compress them.\n- (C) Intake, power, compression, exhaust: Power cannot come before compression; the mixture must be squeezed before it is ignited.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "engine",
+      "four-stroke"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "asvab-auto-0002",
+    "certId": "asvab",
+    "subjectId": "auto-information",
+    "chapterId": "auto",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What is the main job of a car's radiator?",
+    "choices": [
+      "To filter dirt out of the engine oil",
+      "To remove heat from the engine coolant",
+      "To charge the battery while driving",
+      "To store extra fuel for the engine"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Radiator cools the engine coolant",
+    "explanation": "Hot coolant from the engine flows through the radiator's thin tubes and fins. Air passing through the radiator carries the heat away, and the cooled coolant goes back to the engine.\n\n**Wrong choices**\n- (A) To filter dirt out of the engine oil: The oil filter cleans the oil; the radiator handles coolant.\n- (C) To charge the battery while driving: The alternator charges the battery.\n- (D) To store extra fuel for the engine: Fuel is stored in the fuel tank.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "cooling system"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "asvab-auto-0003",
+    "certId": "asvab",
+    "subjectId": "auto-information",
+    "chapterId": "auto",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "While the engine is running, which part produces electricity to recharge the battery?",
+    "choices": [
+      "Voltage gauge",
+      "Starter motor",
+      "Distributor",
+      "Alternator"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Alternator charges the battery",
+    "explanation": "The alternator is turned by a belt from the engine. It makes electricity to recharge the battery and to run the lights, radio, and other electrical parts while the engine runs.\n\n**Wrong choices**\n- (A) Voltage gauge: A gauge only shows a reading; it does not make electricity.\n- (B) Starter motor: The starter motor uses battery power to crank the engine; it does not charge the battery.\n- (C) Distributor: A distributor sends spark to the cylinders in older engines; it does not produce charging current.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "electrical system",
+      "alternator"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "asvab-auto-0004",
+    "certId": "asvab",
+    "subjectId": "auto-information",
+    "chapterId": "auto",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "In a gasoline engine, what does the spark plug do?",
+    "choices": [
+      "Squeezes the air-fuel mixture",
+      "Ignites the air-fuel mixture in the cylinder",
+      "Sprays fuel into the cylinder",
+      "Cools the top of the cylinder"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Spark plug ignites the fuel mixture",
+    "explanation": "At the end of the compression stroke, the spark plug makes an electric spark across its gap. The spark ignites the compressed air-fuel mixture, which starts the power stroke.\n\n**Wrong choices**\n- (A) Squeezes the air-fuel mixture: The rising piston does the squeezing during the compression stroke.\n- (C) Sprays fuel into the cylinder: A fuel injector sprays the fuel; the spark plug only makes the spark.\n- (D) Cools the top of the cylinder: The cooling system removes heat; the spark plug creates heat.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "ignition system"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "asvab-auto-0005",
+    "certId": "asvab",
+    "subjectId": "auto-information",
+    "chapterId": "auto",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What is the main purpose of a catalytic converter?",
+    "choices": [
+      "To reduce harmful gases in the exhaust",
+      "To increase the engine's horsepower",
+      "To filter dust from the intake air",
+      "To reduce exhaust noise"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Catalytic converter cleans exhaust gases",
+    "explanation": "The catalytic converter sits in the exhaust system. Metals inside it cause chemical reactions that change harmful gases such as carbon monoxide and unburned fuel into less harmful gases.\n\n**Wrong choices**\n- (B) To increase the engine's horsepower: A catalytic converter is for cleaner exhaust, not more power.\n- (C) To filter dust from the intake air: The air filter cleans the air going into the engine.\n- (D) To reduce exhaust noise: The muffler is the part that quiets exhaust noise.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "exhaust",
+      "emissions"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "asvab-auto-0006",
+    "certId": "asvab",
+    "subjectId": "auto-information",
+    "chapterId": "auto",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "How is the fuel ignited in a diesel engine while it is running?",
+    "choices": [
+      "By a flame kept lit in the cylinder",
+      "By a spark from a spark plug",
+      "By a spark from the alternator",
+      "By the heat of highly compressed air"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Diesel fuel ignites by compression heat",
+    "explanation": "A diesel engine squeezes air very hard, which makes the air very hot. When fuel is sprayed into this hot air, it ignites by itself. This is called compression ignition.\n\n**Wrong choices**\n- (A) By a flame kept lit in the cylinder: No flame is kept burning inside the cylinder.\n- (B) By a spark from a spark plug: Diesel engines do not use spark plugs; gasoline engines do.\n- (C) By a spark from the alternator: The alternator makes electricity for charging, not for igniting fuel.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "diesel",
+      "engine"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "asvab-auto-0007",
+    "certId": "asvab",
+    "subjectId": "auto-information",
+    "chapterId": "auto",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "When a car turns a corner, what part lets the left and right drive wheels turn at different speeds?",
+    "choices": [
+      "Shock absorber",
+      "Differential",
+      "Transmission",
+      "Clutch"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Differential lets wheels turn at different speeds",
+    "explanation": "In a turn, the outside wheel travels farther than the inside wheel, so it must turn faster. The differential's gears split the power so each drive wheel can turn at its own speed.\n\n**Wrong choices**\n- (A) Shock absorber: A shock absorber controls bouncing; it does not affect wheel speed.\n- (C) Transmission: The transmission changes gear ratios between the engine and the drive line.\n- (D) Clutch: The clutch connects and disconnects the engine from the transmission.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "drivetrain",
+      "differential"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "asvab-auto-0008",
+    "certId": "asvab",
+    "subjectId": "auto-information",
+    "chapterId": "auto",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "In a hydraulic brake system, which part changes the force of the driver's foot on the pedal into fluid pressure?",
+    "choices": [
+      "Master cylinder",
+      "Power steering pump",
+      "Brake caliper",
+      "Brake rotor"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Master cylinder makes brake fluid pressure",
+    "explanation": "Pressing the brake pedal pushes a piston in the master cylinder. This pushes brake fluid through the lines to the wheels, where calipers or wheel cylinders press the brake pads or shoes.\n\n**Wrong choices**\n- (B) Power steering pump: The power steering pump serves the steering system, not the brakes.\n- (C) Brake caliper: The caliper receives the fluid pressure at the wheel and squeezes the pads; it does not create the pressure.\n- (D) Brake rotor: The rotor is the disc that the pads squeeze; it holds no fluid.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "brakes",
+      "hydraulics"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "asvab-auto-0009",
+    "certId": "asvab",
+    "subjectId": "auto-information",
+    "chapterId": "auto",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "If an engine's cooling-system thermostat sticks in the closed position, what is the most likely result?",
+    "choices": [
+      "The engine overheats",
+      "The oil pressure drops to zero",
+      "The engine takes too long to warm up",
+      "The battery stops charging"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Thermostat stuck closed causes overheating",
+    "explanation": "The thermostat is a valve that stays closed while the engine is cold and opens when it warms up. If it sticks closed, hot coolant cannot flow to the radiator, so heat builds up and the engine overheats.\n\n**Wrong choices**\n- (B) The oil pressure drops to zero: A thermostat does not control oil pressure; the oil pump does.\n- (C) The engine takes too long to warm up: Slow warm-up happens when the thermostat sticks open, letting coolant reach the radiator too soon.\n- (D) The battery stops charging: Battery charging depends on the alternator, not the thermostat.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "cooling system",
+      "thermostat"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "asvab-auto-0010",
+    "certId": "asvab",
+    "subjectId": "auto-information",
+    "chapterId": "auto",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "What does the octane rating of gasoline tell you?",
+    "choices": [
+      "How well the fuel resists knocking (igniting too early)",
+      "How quickly the fuel evaporates",
+      "How much energy the fuel contains",
+      "How much sulfur the fuel contains"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Octane = resistance to engine knock",
+    "explanation": "Knock (pinging) happens when the fuel mixture ignites on its own before the spark or in an uncontrolled way. Gasoline with a higher octane rating resists this better. Engines with high compression often need higher-octane fuel.\n\n**Wrong choices**\n- (B) How quickly the fuel evaporates: Evaporation rate is a different fuel property.\n- (C) How much energy the fuel contains: A higher octane number does not mean more energy; it means more resistance to knock.\n- (D) How much sulfur the fuel contains: Sulfur content is a separate fuel standard, not the octane rating.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "fuel",
+      "octane"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "asvab-auto-0011",
+    "certId": "asvab",
+    "subjectId": "auto-information",
+    "chapterId": "auto",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A car's exhaust gives off blue-gray smoke. What is the most likely cause?",
+    "choices": [
+      "Normal water vapor on a cold morning",
+      "Coolant is leaking into the cylinders",
+      "The air-fuel mixture is too rich",
+      "Engine oil is being burned in the cylinders"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Blue-gray exhaust smoke = burning oil",
+    "explanation": "Blue-gray smoke usually means oil is getting into the combustion chamber, often past worn piston rings or valve seals, and burning with the fuel. Black smoke points to too much fuel, and white smoke points to coolant.\n\n**Wrong choices**\n- (A) Normal water vapor on a cold morning: Normal water vapor is thin and white and goes away as the engine warms up.\n- (B) Coolant is leaking into the cylinders: Burning coolant usually makes thick white smoke with a sweet smell.\n- (C) The air-fuel mixture is too rich: A rich mixture (too much fuel) usually makes black smoke.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "exhaust",
+      "troubleshooting"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  }
+]

@@ -1,0 +1,597 @@
+[
+  {
+    "id": "asvab-word-problems-0001",
+    "certId": "asvab",
+    "subjectId": "arithmetic-reasoning",
+    "chapterId": "word-problems",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A warehouse worker earns $18 per hour. How much does the worker earn for a 40-hour week?",
+    "choices": [
+      "$760",
+      "$720",
+      "$58",
+      "$680"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Pay = hourly rate x hours",
+    "explanation": "1. Multiply the hourly pay by the hours worked.\n2. $18 x 40 = $720.\n\nCheck: $720 divided by 40 hours = $18 per hour.\n\n**Wrong choices**\n- (A) $760: $760 is 40 hours at $19, not $18.\n- (C) $58: $58 comes from adding 18 and 40 instead of multiplying.\n- (D) $680: $680 is 40 hours at $17, not $18.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "pay"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "asvab-word-problems-0002",
+    "certId": "asvab",
+    "subjectId": "arithmetic-reasoning",
+    "chapterId": "word-problems",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A pack of 12 water bottles costs $9. What is the cost of one bottle?",
+    "choices": [
+      "$0.70",
+      "$1.33",
+      "$0.75",
+      "$0.80"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Unit price = total cost / number of items",
+    "explanation": "1. Divide the total cost by the number of bottles.\n2. $9 / 12 = $0.75.\n\nCheck: 12 x $0.75 = $9.00.\n\n**Wrong choices**\n- (A) $0.70: 12 x $0.70 = $8.40, not $9.\n- (B) $1.33: $1.33 comes from dividing 12 by 9, which is backward.\n- (D) $0.80: 12 x $0.80 = $9.60, not $9.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "unit price"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "asvab-word-problems-0003",
+    "certId": "asvab",
+    "subjectId": "arithmetic-reasoning",
+    "chapterId": "word-problems",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A truck drives at a steady 55 miles per hour for 4 hours. How far does it travel?",
+    "choices": [
+      "230 miles",
+      "220 miles",
+      "59 miles",
+      "200 miles"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Distance = rate x time",
+    "explanation": "1. Distance = speed x time.\n2. 55 x 4 = 220 miles.\n\nCheck: 220 miles / 4 hours = 55 miles per hour.\n\n**Wrong choices**\n- (A) 230 miles: 230 miles is 10 miles too many; 55 x 4 is 220.\n- (C) 59 miles: 59 comes from adding 55 and 4.\n- (D) 200 miles: 200 miles would be 50 miles per hour for 4 hours.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "distance"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "asvab-word-problems-0004",
+    "certId": "asvab",
+    "subjectId": "arithmetic-reasoning",
+    "chapterId": "word-problems",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "On four safety quizzes, a worker scored 82, 90, 76, and 88. What is the worker's average score?",
+    "choices": [
+      "86",
+      "84",
+      "85",
+      "82"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Average = total / number of items",
+    "explanation": "1. Add the scores: 82 + 90 + 76 + 88 = 336.\n2. Divide by the number of quizzes: 336 / 4 = 84.\n\nCheck: 84 x 4 = 336.\n\n**Wrong choices**\n- (A) 86: 86 is the middle of 82 and 90 only, ignoring the other scores.\n- (C) 85: 85 is not the average; 85 x 4 = 340, not 336.\n- (D) 82: 82 is just the first score, not the average.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "average"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "asvab-word-problems-0005",
+    "certId": "asvab",
+    "subjectId": "arithmetic-reasoning",
+    "chapterId": "word-problems",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A jacket regularly priced at $80 is on sale for 25% off. What is the sale price?",
+    "choices": [
+      "$75",
+      "$60",
+      "$55",
+      "$20"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Sale price = price - (percent off x price)",
+    "explanation": "1. Find the discount: 25% of $80 = 0.25 x 80 = $20.\n2. Subtract: $80 - $20 = $60.\n\nCheck: $60 is 75% of $80, since 0.75 x 80 = 60.\n\n**Wrong choices**\n- (A) $75: $75 subtracts only $5.\n- (C) $55: $55 subtracts $25 instead of 25% of $80.\n- (D) $20: $20 is the amount of the discount, not the sale price.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "percent"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "asvab-word-problems-0006",
+    "certId": "asvab",
+    "subjectId": "arithmetic-reasoning",
+    "chapterId": "word-problems",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Three coworkers split a $57 lunch bill equally. How much does each person pay?",
+    "choices": [
+      "$18",
+      "$17",
+      "$19",
+      "$21"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Equal share = total / number of people",
+    "explanation": "1. Divide the bill by the number of people.\n2. $57 / 3 = $19.\n\nCheck: 3 x $19 = $57.\n\n**Wrong choices**\n- (A) $18: 3 x $18 = $54, which is $3 short.\n- (B) $17: 3 x $17 = $51, which is too little.\n- (D) $21: 3 x $21 = $63, which is too much.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "division"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "asvab-word-problems-0007",
+    "certId": "asvab",
+    "subjectId": "arithmetic-reasoning",
+    "chapterId": "word-problems",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A carpenter cuts a 12-foot board into pieces that are each 1.5 feet long. How many pieces does she get?",
+    "choices": [
+      "9",
+      "8",
+      "18",
+      "6"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Number of pieces = total length / piece length",
+    "explanation": "1. Divide the board length by the length of each piece.\n2. 12 / 1.5 = 8 pieces.\n\nCheck: 8 x 1.5 = 12 feet.\n\n**Wrong choices**\n- (A) 9: 9 pieces of 1.5 feet would need 13.5 feet of board.\n- (C) 18: 18 comes from multiplying 12 by 1.5 instead of dividing.\n- (D) 6: 6 pieces would each be 2 feet long.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "division"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "asvab-word-problems-0008",
+    "certId": "asvab",
+    "subjectId": "arithmetic-reasoning",
+    "chapterId": "word-problems",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Dan had $250 in his checking account. He deposited $125, then wrote two checks for $80 and $64. What is his balance now?",
+    "choices": [
+      "$519",
+      "$295",
+      "$311",
+      "$231"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Add deposits, subtract checks",
+    "explanation": "1. Add the deposit: $250 + $125 = $375.\n2. Add the checks: $80 + $64 = $144.\n3. Subtract: $375 - $144 = $231.\n\nCheck: $231 + $144 - $125 = $250, the starting balance.\n\n**Wrong choices**\n- (A) $519: $519 adds the checks instead of subtracting them.\n- (B) $295: $295 subtracts only the $80 check and forgets the $64 check.\n- (C) $311: $311 subtracts only the $64 check and forgets the $80 check.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "money"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "asvab-word-problems-0009",
+    "certId": "asvab",
+    "subjectId": "arithmetic-reasoning",
+    "chapterId": "word-problems",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A recipe uses 3 cups of flour to make 24 cookies. How many cups of flour are needed to make 60 cookies?",
+    "choices": [
+      "7 cups",
+      "7.5 cups",
+      "6 cups",
+      "8 cups"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Scale a recipe with a proportion",
+    "explanation": "1. Find how many batches 60 cookies is: 60 / 24 = 2.5 batches.\n2. Multiply the flour: 3 x 2.5 = 7.5 cups.\n\nCheck: 7.5 cups / 60 cookies = 0.125 cup each, and 3 / 24 = 0.125 cup each too.\n\n**Wrong choices**\n- (A) 7 cups: 7 cups would make only 56 cookies.\n- (C) 6 cups: 6 cups would make only 48 cookies.\n- (D) 8 cups: 8 cups would make 64 cookies.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "ratio"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "asvab-word-problems-0010",
+    "certId": "asvab",
+    "subjectId": "arithmetic-reasoning",
+    "chapterId": "word-problems",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Lisa puts $2,000 in an account that pays 4% simple interest per year. How much interest does she earn in 3 years?",
+    "choices": [
+      "$2,240",
+      "$80",
+      "$240",
+      "$249.73"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Simple interest = principal x rate x time",
+    "explanation": "1. Use simple interest: interest = principal x rate x time.\n2. $2,000 x 0.04 x 3 = $240.\n\nCheck: $80 per year x 3 years = $240.\n\n**Wrong choices**\n- (A) $2,240: $2,240 is the total balance, not the interest earned.\n- (B) $80: $80 is the interest for only one year.\n- (D) $249.73: $249.73 is compound interest; the question asks for simple interest.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "interest"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "asvab-word-problems-0011",
+    "certId": "asvab",
+    "subjectId": "arithmetic-reasoning",
+    "chapterId": "word-problems",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "On a map, 1 inch stands for 15 miles. Two towns are 4.5 inches apart on the map. What is the real distance between them?",
+    "choices": [
+      "67.5 miles",
+      "60 miles",
+      "75 miles",
+      "65 miles"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Map distance x scale = real distance",
+    "explanation": "1. Multiply the map distance by the scale.\n2. 4.5 x 15 = 67.5 miles.\n\nCheck: 67.5 / 15 = 4.5 inches.\n\n**Wrong choices**\n- (B) 60 miles: 60 miles is only 4 inches on the map.\n- (C) 75 miles: 75 miles would be 5 inches on the map.\n- (D) 65 miles: 65 miles is about 4.33 inches on the map, not 4.5.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "scale"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "asvab-word-problems-0012",
+    "certId": "asvab",
+    "subjectId": "arithmetic-reasoning",
+    "chapterId": "word-problems",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Two trucks leave the same depot at the same time and drive in opposite directions. One goes 50 miles per hour and the other goes 60 miles per hour. How far apart are they after 3 hours?",
+    "choices": [
+      "180 miles",
+      "150 miles",
+      "330 miles",
+      "30 miles"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Opposite directions: add the speeds",
+    "explanation": "1. Moving in opposite directions, the gap grows by both speeds: 50 + 60 = 110 miles each hour.\n2. After 3 hours: 110 x 3 = 330 miles.\n\nCheck: 50 x 3 = 150 and 60 x 3 = 180; 150 + 180 = 330.\n\n**Wrong choices**\n- (A) 180 miles: 180 miles is how far only the faster truck went.\n- (B) 150 miles: 150 miles is how far only the slower truck went.\n- (D) 30 miles: 30 miles uses the difference in speed, which is for trucks going the same way.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "distance"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "asvab-word-problems-0013",
+    "certId": "asvab",
+    "subjectId": "arithmetic-reasoning",
+    "chapterId": "word-problems",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "The price of a box of nails went up from $40 to $50. By what percent did the price increase?",
+    "choices": [
+      "20%",
+      "25%",
+      "125%",
+      "10%"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Percent change = change / original x 100",
+    "explanation": "1. Find the change: $50 - $40 = $10.\n2. Divide by the original price: $10 / $40 = 0.25.\n3. 0.25 = 25%.\n\nCheck: 25% of $40 is $10, and $40 + $10 = $50.\n\n**Wrong choices**\n- (A) 20%: 20% divides by the new price ($50) instead of the original ($40).\n- (C) 125%: 125% is the new price as a percent of the old one, not the increase.\n- (D) 10%: 10 is the dollar change, not the percent.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "percent"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "asvab-word-problems-0014",
+    "certId": "asvab",
+    "subjectId": "arithmetic-reasoning",
+    "chapterId": "word-problems",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A crew of 40 people has a ratio of men to women of 3 to 5. How many women are on the crew?",
+    "choices": [
+      "30",
+      "15",
+      "24",
+      "25"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Ratio parts: divide the total by the sum of parts",
+    "explanation": "1. Add the ratio parts: 3 + 5 = 8 parts.\n2. Each part = 40 / 8 = 5 people.\n3. Women = 5 parts x 5 = 25.\n\nCheck: men = 3 x 5 = 15, and 15 + 25 = 40.\n\n**Wrong choices**\n- (A) 30: 30 women would leave 10 men, a ratio of 1 to 3.\n- (B) 15: 15 is the number of men, not women.\n- (C) 24: 24 women would leave 16 men, a ratio of 2 to 3, not 3 to 5.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "ratio"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "asvab-word-problems-0015",
+    "certId": "asvab",
+    "subjectId": "arithmetic-reasoning",
+    "chapterId": "word-problems",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "One hose can fill a tank in 6 hours. A second hose can fill the same tank in 3 hours. If both hoses run together, how long will it take to fill the tank?",
+    "choices": [
+      "9 hours",
+      "4.5 hours",
+      "3 hours",
+      "2 hours"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Work together: add the hourly rates",
+    "explanation": "1. The first hose fills 1/6 of the tank each hour.\n2. The second hose fills 1/3 = 2/6 of the tank each hour.\n3. Together: 1/6 + 2/6 = 3/6 = 1/2 tank per hour.\n4. A full tank takes 2 hours.\n\nCheck: in 2 hours the first hose fills 2/6 and the second fills 4/6; 2/6 + 4/6 = 1 full tank.\n\n**Wrong choices**\n- (A) 9 hours: 9 hours adds the two times, which makes the job slower, not faster.\n- (B) 4.5 hours: 4.5 hours is the average of the two times; working together must be faster than either hose alone.\n- (C) 3 hours: 3 hours is how long the faster hose takes by itself.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "work rate"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "asvab-word-problems-0016",
+    "certId": "asvab",
+    "subjectId": "arithmetic-reasoning",
+    "chapterId": "word-problems",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "The average of five numbers is 20. When a sixth number is added, the average becomes 22. What is the sixth number?",
+    "choices": [
+      "32",
+      "2",
+      "22",
+      "24"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Total = average x count",
+    "explanation": "1. Total of the first five: 5 x 20 = 100.\n2. Total of all six: 6 x 22 = 132.\n3. Sixth number: 132 - 100 = 32.\n\nCheck: (100 + 32) / 6 = 132 / 6 = 22.\n\n**Wrong choices**\n- (B) 2: 2 is only the change in the average.\n- (C) 22: 22 is the new average, not the added number; adding 22 gives an average of only about 20.3.\n- (D) 24: 24 gives a total of 124 and an average of about 20.7.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "average"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "asvab-word-problems-0017",
+    "certId": "asvab",
+    "subjectId": "arithmetic-reasoning",
+    "chapterId": "word-problems",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "After a 20% raise, a mechanic's yearly pay is $48,000. What was the pay before the raise?",
+    "choices": [
+      "$57,600",
+      "$38,400",
+      "$9,600",
+      "$40,000"
+    ],
+    "answer": 4,
+    "oneLineConcept": "New = old x 1.20, so old = new / 1.20",
+    "explanation": "1. After a 20% raise, the new pay is 120% of the old pay.\n2. Old pay = $48,000 / 1.20 = $40,000.\n\nCheck: 20% of $40,000 is $8,000, and $40,000 + $8,000 = $48,000.\n\n**Wrong choices**\n- (A) $57,600: $57,600 adds another 20% instead of removing the raise.\n- (B) $38,400: $38,400 takes 20% off $48,000; but the 20% was figured on the old pay, not the new pay.\n- (C) $9,600: $9,600 is 20% of $48,000, not the old pay.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "percent"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  }
+]

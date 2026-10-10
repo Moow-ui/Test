@@ -1,0 +1,606 @@
+[
+  {
+    "id": "asvab-electricity-0001",
+    "certId": "asvab",
+    "subjectId": "electronics-information",
+    "chapterId": "electricity",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What is the unit used to measure electrical resistance?",
+    "choices": [
+      "Volt",
+      "Watt",
+      "Ampere",
+      "Ohm"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Resistance is measured in ohms",
+    "explanation": "Resistance is how much a part holds back the flow of electric current. It is measured in ohms, shown by the Greek letter omega.\n\n**Wrong choices**\n- (A) Volt: The volt measures voltage, the electrical push.\n- (B) Watt: The watt measures power, the rate of using energy.\n- (C) Ampere: The ampere (amp) measures current, the flow of charge.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "units",
+      "resistance"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "asvab-electricity-0002",
+    "certId": "asvab",
+    "subjectId": "electronics-information",
+    "chapterId": "electricity",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A 12-volt battery is connected to a 4-ohm resistor. How much current flows through the resistor?",
+    "choices": [
+      "0.33 ampere",
+      "3 amperes",
+      "48 amperes",
+      "16 amperes"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Ohm's law: I = V / R",
+    "explanation": "Ohm's law says V = I x R. To find current, divide voltage by resistance.\n\n1. I = V / R\n2. I = 12 V / 4 ohms = 3 A\n3. Check: 3 A x 4 ohms = 12 V. Correct.\n\n**Wrong choices**\n- (A) 0.33 ampere: 0.33 comes from dividing 4 by 12, which is upside down.\n- (C) 48 amperes: 48 comes from multiplying 12 x 4. Ohm's law divides voltage by resistance to get current.\n- (D) 16 amperes: 16 comes from adding 12 + 4. Ohm's law does not add the numbers.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "Ohm's law"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "asvab-electricity-0003",
+    "certId": "asvab",
+    "subjectId": "electronics-information",
+    "chapterId": "electricity",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which of these materials is a good electrical insulator?",
+    "choices": [
+      "Rubber",
+      "Aluminum",
+      "Copper",
+      "Salt water"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Insulators block current; metals conduct",
+    "explanation": "An insulator is a material that does not let electric current flow easily. Rubber, plastic, glass, and dry wood are insulators. That is why wire is covered with rubber or plastic.\n\n**Wrong choices**\n- (B) Aluminum: Aluminum is a metal and conducts electricity well.\n- (C) Copper: Copper is one of the best conductors; it is used in most wiring.\n- (D) Salt water: Salt water conducts electricity because of the dissolved salt.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "conductors",
+      "insulators"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "asvab-electricity-0004",
+    "certId": "asvab",
+    "subjectId": "electronics-information",
+    "chapterId": "electricity",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which electronic part stores electric charge between two plates separated by an insulator?",
+    "choices": [
+      "Diode",
+      "Fuse",
+      "Resistor",
+      "Capacitor"
+    ],
+    "answer": 4,
+    "oneLineConcept": "A capacitor stores electric charge",
+    "explanation": "A capacitor has two metal plates with an insulator between them. It stores electric charge and can release it later. Its unit is the farad.\n\n**Wrong choices**\n- (A) Diode: A diode lets current flow in only one direction.\n- (B) Fuse: A fuse protects a circuit by melting when current is too high.\n- (C) Resistor: A resistor limits current; it does not store charge.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "capacitor",
+      "components"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "asvab-electricity-0005",
+    "certId": "asvab",
+    "subjectId": "electronics-information",
+    "chapterId": "electricity",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What does a diode do in a circuit?",
+    "choices": [
+      "Raises the voltage of the circuit",
+      "Stores energy in a magnetic field",
+      "Lets current flow equally in both directions",
+      "Lets current flow in only one direction"
+    ],
+    "answer": 4,
+    "oneLineConcept": "A diode passes current one way only",
+    "explanation": "A diode works like a one-way valve for electricity. Current flows easily in the forward direction and is blocked in the reverse direction. Diodes are used to change AC into DC.\n\n**Wrong choices**\n- (A) Raises the voltage of the circuit: A transformer can raise AC voltage; a diode does not.\n- (B) Stores energy in a magnetic field: An inductor (coil) stores energy in a magnetic field.\n- (C) Lets current flow equally in both directions: A plain wire or resistor passes current both ways; a diode blocks one direction.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "diode",
+      "components"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "asvab-electricity-0006",
+    "certId": "asvab",
+    "subjectId": "electronics-information",
+    "chapterId": "electricity",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A heater runs on 120 volts and draws 2 amperes. How much power does it use?",
+    "choices": [
+      "240 watts",
+      "60 watts",
+      "118 watts",
+      "122 watts"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Power: P = V x I",
+    "explanation": "Electric power equals voltage times current.\n\n1. P = V x I\n2. P = 120 V x 2 A = 240 W\n3. Check: 240 W / 120 V = 2 A. Correct.\n\n**Wrong choices**\n- (B) 60 watts: 60 comes from dividing 120 by 2. Power multiplies voltage and current.\n- (C) 118 watts: 118 comes from subtracting 2 from 120.\n- (D) 122 watts: 122 comes from adding 120 + 2.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "power"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "asvab-electricity-0007",
+    "certId": "asvab",
+    "subjectId": "electronics-information",
+    "chapterId": "electricity",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What type of current does a car battery supply?",
+    "choices": [
+      "Alternating current (AC)",
+      "Direct current (DC)",
+      "Three-phase alternating current",
+      "Current that changes direction 60 times a second"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Batteries supply direct current (DC)",
+    "explanation": "A battery pushes current in one direction only, from its negative side through the circuit to its positive side. This is direct current, or DC.\n\n**Wrong choices**\n- (A) Alternating current (AC): Alternating current changes direction back and forth; a battery's current flows one way.\n- (C) Three-phase alternating current: Three-phase AC comes from power plants and large generators, not batteries.\n- (D) Current that changes direction 60 times a second: Current that reverses 60 times a second describes U.S. household AC, not a battery.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "AC/DC",
+      "battery"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "asvab-electricity-0008",
+    "certId": "asvab",
+    "subjectId": "electronics-information",
+    "chapterId": "electricity",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What is the job of a fuse in a circuit?",
+    "choices": [
+      "To change AC into DC",
+      "To raise the voltage when it drops",
+      "To store energy for later use",
+      "To open the circuit when the current gets too high"
+    ],
+    "answer": 4,
+    "oneLineConcept": "A fuse melts to stop excess current",
+    "explanation": "A fuse has a thin metal strip. If too much current flows, the strip heats up and melts, breaking the circuit. This protects wires from overheating and helps prevent fires.\n\n**Wrong choices**\n- (A) To change AC into DC: A rectifier made of diodes changes AC into DC.\n- (B) To raise the voltage when it drops: A fuse cannot raise voltage; a transformer changes AC voltage.\n- (C) To store energy for later use: Batteries and capacitors store energy; a fuse does not.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "fuse",
+      "safety"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "asvab-electricity-0009",
+    "certId": "asvab",
+    "subjectId": "electronics-information",
+    "chapterId": "electricity",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Three resistors of 10 ohms, 20 ohms, and 30 ohms are connected in series. What is the total resistance?",
+    "choices": [
+      "20 ohms",
+      "5.45 ohms",
+      "60 ohms",
+      "6,000 ohms"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Series resistors add up",
+    "explanation": "In a series circuit, current passes through each resistor one after another, so the resistances add.\n\n1. Total = 10 + 20 + 30\n2. Total = 60 ohms\n3. Check: the total in series is always larger than the biggest single resistor (30). 60 is larger. Correct.\n\n**Wrong choices**\n- (A) 20 ohms: 20 ohms is the average of the three values, not the total.\n- (B) 5.45 ohms: 5.45 ohms is the total if the three were connected in parallel, not series.\n- (D) 6,000 ohms: 6,000 comes from multiplying the values; series resistances are added.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "series circuit"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "asvab-electricity-0010",
+    "certId": "asvab",
+    "subjectId": "electronics-information",
+    "chapterId": "electricity",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Two 10-ohm resistors are connected in parallel. What is the total resistance?",
+    "choices": [
+      "10 ohms",
+      "100 ohms",
+      "5 ohms",
+      "20 ohms"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Equal resistors in parallel: R / number",
+    "explanation": "When equal resistors are in parallel, divide one resistor's value by how many there are.\n\n1. Total = 10 ohms / 2 = 5 ohms\n2. Check with the product-over-sum rule: (10 x 10) / (10 + 10) = 100 / 20 = 5 ohms. Correct.\n\nThe total in parallel is always smaller than the smallest single resistor.\n\n**Wrong choices**\n- (A) 10 ohms: 10 ohms is the value of only one resistor; adding a parallel path lowers the total.\n- (B) 100 ohms: 100 comes from multiplying 10 x 10 without dividing by the sum.\n- (D) 20 ohms: 20 ohms is the total if they were connected in series.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "parallel circuit"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "asvab-electricity-0011",
+    "certId": "asvab",
+    "subjectId": "electronics-information",
+    "chapterId": "electricity",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A transformer has 100 turns of wire on its primary coil and 500 turns on its secondary coil. If 120 volts AC goes into the primary, what voltage comes out of the secondary? (Assume an ideal transformer.)",
+    "choices": [
+      "24 volts",
+      "120 volts",
+      "600 volts",
+      "720 volts"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Transformer: voltage follows turns ratio",
+    "explanation": "In an ideal transformer, voltage changes in the same ratio as the number of turns.\n\n1. Turns ratio = 500 / 100 = 5\n2. Output voltage = 120 V x 5 = 600 V\n3. Check: 600 / 120 = 5, the same as 500 / 100. Correct.\n\nMore turns on the secondary means a step-up transformer.\n\n**Wrong choices**\n- (A) 24 volts: 24 volts is the result if the turns ratio is flipped, as in a step-down transformer.\n- (B) 120 volts: 120 volts would come out only if both coils had the same number of turns.\n- (D) 720 volts: 720 comes from adding 120 + 600; the output is just 600 volts.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "transformer"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "asvab-electricity-0012",
+    "certId": "asvab",
+    "subjectId": "electronics-information",
+    "chapterId": "electricity",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which part is most often used in a circuit as an electronic switch or to amplify a small signal?",
+    "choices": [
+      "Capacitor",
+      "Resistor",
+      "Transistor",
+      "Fuse"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Transistors amplify signals and switch",
+    "explanation": "A transistor uses a small current or voltage at one lead to control a larger current through the other two leads. This lets it act as an amplifier or as a switch with no moving parts.\n\n**Wrong choices**\n- (A) Capacitor: A capacitor stores charge; it cannot amplify a signal.\n- (B) Resistor: A resistor only limits current; it cannot amplify.\n- (D) Fuse: A fuse only protects the circuit from too much current.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "transistor",
+      "components"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "asvab-electricity-0013",
+    "certId": "asvab",
+    "subjectId": "electronics-information",
+    "chapterId": "electricity",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "In a simple series circuit, what is true about the current?",
+    "choices": [
+      "It is largest through the biggest resistor",
+      "It splits up among the different branches",
+      "It is the same through every part of the circuit",
+      "It drops to zero after the first resistor"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Series circuit: same current everywhere",
+    "explanation": "A series circuit has only one path. All the charge must pass through each part in turn, so the current is the same at every point. The voltage, however, is divided among the parts.\n\n**Wrong choices**\n- (A) It is largest through the biggest resistor: Current is the same everywhere in a series loop; the biggest resistor gets the largest voltage drop, not more current.\n- (B) It splits up among the different branches: Splitting into branches happens in a parallel circuit, not a series circuit.\n- (D) It drops to zero after the first resistor: If the current were zero after the first resistor, nothing would flow at all; the same current goes all the way around.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "series circuit"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "asvab-electricity-0014",
+    "certId": "asvab",
+    "subjectId": "electronics-information",
+    "chapterId": "electricity",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A lamp is rated 60 watts at 120 volts. What is the lamp's resistance when it is operating?",
+    "choices": [
+      "7,200 ohms",
+      "240 ohms",
+      "2 ohms",
+      "0.5 ohm"
+    ],
+    "answer": 2,
+    "oneLineConcept": "R = V squared / P",
+    "explanation": "First find the current, then use Ohm's law.\n\n1. I = P / V = 60 W / 120 V = 0.5 A\n2. R = V / I = 120 V / 0.5 A = 240 ohms\n3. Check with R = V x V / P = 14,400 / 60 = 240 ohms. Correct.\n\n**Wrong choices**\n- (A) 7,200 ohms: 7,200 comes from multiplying 120 x 60.\n- (C) 2 ohms: 2 comes from dividing 120 by 60. That is not the resistance formula.\n- (D) 0.5 ohm: 0.5 is the current in amperes, not the resistance.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "power",
+      "Ohm's law"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "asvab-electricity-0015",
+    "certId": "asvab",
+    "subjectId": "electronics-information",
+    "chapterId": "electricity",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Three 6-ohm resistors are connected in parallel across a 12-volt battery. What is the total current drawn from the battery?",
+    "choices": [
+      "2 amperes",
+      "6 amperes",
+      "0.67 ampere",
+      "18 amperes"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Parallel: add branch currents",
+    "explanation": "Each resistor sits directly across the 12-volt battery.\n\n1. Current in one branch = 12 V / 6 ohms = 2 A\n2. Three branches: 2 + 2 + 2 = 6 A\n3. Check: total resistance = 6 / 3 = 2 ohms, and 12 V / 2 ohms = 6 A. Correct.\n\n**Wrong choices**\n- (A) 2 amperes: 2 A is the current through just one branch, not the total.\n- (C) 0.67 ampere: 0.67 A would flow if the three resistors were in series (18 ohms).\n- (D) 18 amperes: 18 is the series resistance in ohms, not the current.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "parallel circuit",
+      "Ohm's law"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "asvab-electricity-0016",
+    "certId": "asvab",
+    "subjectId": "electronics-information",
+    "chapterId": "electricity",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A 4-ohm resistor and a 12-ohm resistor are connected in parallel. What is their total resistance?",
+    "choices": [
+      "16 ohms",
+      "48 ohms",
+      "8 ohms",
+      "3 ohms"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Two in parallel: product over sum",
+    "explanation": "For two resistors in parallel, use product over sum.\n\n1. Product = 4 x 12 = 48\n2. Sum = 4 + 12 = 16\n3. Total = 48 / 16 = 3 ohms\n4. Check: 3 ohms is less than the smaller resistor (4 ohms), as it must be. Correct.\n\n**Wrong choices**\n- (A) 16 ohms: 16 ohms is the total for series, not parallel.\n- (B) 48 ohms: 48 is the product of the two values, before dividing by their sum.\n- (C) 8 ohms: 8 ohms is the average of the two values; parallel resistance is smaller than the smallest resistor.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "parallel circuit"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "asvab-electricity-0017",
+    "certId": "asvab",
+    "subjectId": "electronics-information",
+    "chapterId": "electricity",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A resistor has color bands of brown, black, and red, followed by a gold band. What is its resistance value?",
+    "choices": [
+      "100 ohms",
+      "10,000 ohms",
+      "1,000 ohms",
+      "102 ohms"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Color code: digit, digit, multiplier",
+    "explanation": "In the resistor color code, the first two bands are digits and the third band is the multiplier. The gold band shows tolerance (plus or minus 5%).\n\n1. Brown = 1, black = 0, so the digits are 10\n2. Red multiplier = x100\n3. 10 x 100 = 1,000 ohms\n\n**Wrong choices**\n- (A) 100 ohms: 100 ohms would need a brown multiplier band (x10), not red.\n- (B) 10,000 ohms: 10,000 ohms would need an orange multiplier band (x1,000).\n- (D) 102 ohms: 102 treats the third band as a digit. The third band is a multiplier.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "resistor color code"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  }
+]

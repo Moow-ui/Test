@@ -1,0 +1,602 @@
+[
+  {
+    "id": "asvab-mechanics-0001",
+    "certId": "asvab",
+    "subjectId": "mechanical-comprehension",
+    "chapterId": "mechanics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A 100-pound load sits 2 feet from the fulcrum of a lever. The effort is applied 4 feet from the fulcrum on the other side. How much effort is needed to balance the load?",
+    "choices": [
+      "200 pounds",
+      "50 pounds",
+      "25 pounds",
+      "100 pounds"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Lever: effort x effort arm = load x load arm",
+    "explanation": "Use the lever rule.\n\n1. Effort x 4 ft = 100 lb x 2 ft\n2. Effort x 4 = 200\n3. Effort = 200 / 4 = 50 lb\n4. Check: 50 x 4 = 200 and 100 x 2 = 200. Balanced.\n\n**Wrong choices**\n- (A) 200 pounds: 200 comes from multiplying by the ratio the wrong way. A longer effort arm means less effort.\n- (C) 25 pounds: 25 pounds would need an effort arm 8 feet long.\n- (D) 100 pounds: 100 pounds would balance only if both arms were the same length.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "levers"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "asvab-mechanics-0002",
+    "certId": "asvab",
+    "subjectId": "mechanical-comprehension",
+    "chapterId": "mechanics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Gear A meshes directly with gear B. If gear A turns clockwise, which way does gear B turn?",
+    "choices": [
+      "It does not turn",
+      "Clockwise",
+      "Back and forth",
+      "Counterclockwise"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Meshed gears turn in opposite directions",
+    "explanation": "When two gears mesh, the teeth of one push the teeth of the other in the opposite direction. So if one turns clockwise, the other turns counterclockwise.\n\n**Wrong choices**\n- (A) It does not turn: Meshed teeth push each other, so B must turn when A turns.\n- (B) Clockwise: Two meshed gears always turn in opposite directions, so B cannot also turn clockwise.\n- (C) Back and forth: Steady turning of A gives steady turning of B, not back-and-forth motion.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "gears"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "asvab-mechanics-0003",
+    "certId": "asvab",
+    "subjectId": "mechanical-comprehension",
+    "chapterId": "mechanics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What is the main advantage of using a single fixed pulley to lift a load?",
+    "choices": [
+      "It cuts the needed force in half",
+      "It lifts the load twice as fast",
+      "It changes the direction of the pulling force",
+      "It makes the load lighter"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Fixed pulley: changes direction, MA = 1",
+    "explanation": "A single fixed pulley is attached to a support and does not move. It lets you pull down to lift a load up, which is easier, but the force needed is the same as the load's weight.\n\n**Wrong choices**\n- (A) It cuts the needed force in half: Halving the force needs a movable pulley; a single fixed pulley has a mechanical advantage of 1.\n- (B) It lifts the load twice as fast: With a mechanical advantage of 1, the load moves at the same speed as the rope is pulled.\n- (D) It makes the load lighter: No pulley changes the actual weight of the load.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "pulleys"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "asvab-mechanics-0004",
+    "certId": "asvab",
+    "subjectId": "mechanical-comprehension",
+    "chapterId": "mechanics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A worker pushes a crate with a steady force of 50 pounds for a distance of 10 feet. How much work is done?",
+    "choices": [
+      "5 foot-pounds",
+      "40 foot-pounds",
+      "60 foot-pounds",
+      "500 foot-pounds"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Work = force x distance",
+    "explanation": "Work is force multiplied by the distance moved in the direction of the force.\n\n1. Work = 50 lb x 10 ft\n2. Work = 500 foot-pounds\n3. Check: 500 / 10 = 50 lb. Correct.\n\n**Wrong choices**\n- (A) 5 foot-pounds: 5 comes from dividing 50 by 10. Work multiplies force by distance.\n- (B) 40 foot-pounds: 40 comes from subtracting 10 from 50.\n- (C) 60 foot-pounds: 60 comes from adding 50 + 10.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "work"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "asvab-mechanics-0005",
+    "certId": "asvab",
+    "subjectId": "mechanical-comprehension",
+    "chapterId": "mechanics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Two ramps lift a box to the same height. Ramp 1 is longer than Ramp 2. Compared with Ramp 2, what does Ramp 1 require (ignoring friction)?",
+    "choices": [
+      "Less force, but over a longer distance",
+      "The same force over the same distance",
+      "More force, but over a shorter distance",
+      "Less force and a shorter distance"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Longer ramp: less force, more distance",
+    "explanation": "An inclined plane trades distance for force. The work to lift the box to the same height is the same, so a longer, gentler ramp needs less force but you push it farther.\n\n**Wrong choices**\n- (B) The same force over the same distance: A longer ramp is less steep, so the force needed changes.\n- (C) More force, but over a shorter distance: More force is needed on the shorter, steeper ramp, not the longer one.\n- (D) Less force and a shorter distance: A longer ramp always means a longer distance to push.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "inclined plane"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "asvab-mechanics-0006",
+    "certId": "asvab",
+    "subjectId": "mechanical-comprehension",
+    "chapterId": "mechanics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A force of 200 pounds presses evenly on an area of 4 square inches. What is the pressure?",
+    "choices": [
+      "196 pounds per square inch",
+      "50 pounds per square inch",
+      "800 pounds per square inch",
+      "204 pounds per square inch"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Pressure = force / area",
+    "explanation": "Pressure is the force spread over each unit of area.\n\n1. Pressure = 200 lb / 4 sq in\n2. Pressure = 50 psi\n3. Check: 50 psi x 4 sq in = 200 lb. Correct.\n\n**Wrong choices**\n- (A) 196 pounds per square inch: 196 comes from subtracting 4 from 200.\n- (C) 800 pounds per square inch: 800 comes from multiplying 200 x 4. Pressure divides force by area.\n- (D) 204 pounds per square inch: 204 comes from adding 200 + 4.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "pressure"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "asvab-mechanics-0007",
+    "certId": "asvab",
+    "subjectId": "mechanical-comprehension",
+    "chapterId": "mechanics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A 20-tooth gear turning at 100 rpm drives a 40-tooth gear. How fast does the 40-tooth gear turn?",
+    "choices": [
+      "200 rpm",
+      "100 rpm",
+      "25 rpm",
+      "50 rpm"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Bigger driven gear turns slower",
+    "explanation": "The teeth that pass the meeting point each minute are the same for both gears.\n\n1. Teeth per minute = 20 x 100 = 2,000\n2. Speed of the 40-tooth gear = 2,000 / 40 = 50 rpm\n3. Check: 40 x 50 = 2,000. Correct.\n\n**Wrong choices**\n- (A) 200 rpm: 200 rpm would happen if the driven gear were smaller, not larger.\n- (B) 100 rpm: The speeds are equal only when both gears have the same number of teeth.\n- (C) 25 rpm: 25 rpm would need a driven gear with 80 teeth.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "gears",
+      "gear ratio"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "asvab-mechanics-0008",
+    "certId": "asvab",
+    "subjectId": "mechanical-comprehension",
+    "chapterId": "mechanics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A spring stretches 2 inches when a 10-pound weight hangs from it. How far will it stretch with a 30-pound weight? (Assume the spring is not overloaded.)",
+    "choices": [
+      "6 inches",
+      "3 inches",
+      "12 inches",
+      "4 inches"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Spring stretch is proportional to force",
+    "explanation": "A spring stretches in direct proportion to the force on it.\n\n1. Stretch per pound = 2 in / 10 lb = 0.2 in per lb\n2. Stretch for 30 lb = 30 x 0.2 = 6 in\n3. Check: 30 lb is 3 times 10 lb, and 6 in is 3 times 2 in. Correct.\n\n**Wrong choices**\n- (B) 3 inches: 3 inches comes from dividing 30 by 10; the stretch must also be multiplied by 2.\n- (C) 12 inches: 12 inches is double the correct answer.\n- (D) 4 inches: 4 inches is the stretch for a 20-pound weight.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "springs"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "asvab-mechanics-0009",
+    "certId": "asvab",
+    "subjectId": "mechanical-comprehension",
+    "chapterId": "mechanics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A block and tackle has 4 rope segments supporting a 400-pound load. Ignoring friction, how much force is needed to lift the load?",
+    "choices": [
+      "200 pounds",
+      "100 pounds",
+      "400 pounds",
+      "1,600 pounds"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Pulley MA = number of supporting ropes",
+    "explanation": "In a pulley system, the mechanical advantage equals the number of rope segments holding up the load.\n\n1. Mechanical advantage = 4\n2. Force = 400 lb / 4 = 100 lb\n3. Check: 100 lb x 4 = 400 lb. Correct.\n\n**Wrong choices**\n- (A) 200 pounds: 200 pounds would be the force with only 2 supporting rope segments.\n- (C) 400 pounds: 400 pounds would be needed with a mechanical advantage of 1, like a single fixed pulley.\n- (D) 1,600 pounds: 1,600 comes from multiplying 400 x 4 instead of dividing.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "pulleys"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "asvab-mechanics-0010",
+    "certId": "asvab",
+    "subjectId": "mechanical-comprehension",
+    "chapterId": "mechanics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Gear A meshes with gear B, and gear B meshes with gear C. All three are in a straight line. If gear A turns clockwise, which way does gear C turn?",
+    "choices": [
+      "It does not turn",
+      "Clockwise",
+      "Counterclockwise",
+      "It depends on the size of gear B"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Every other gear turns the same way",
+    "explanation": "Each meshed gear reverses direction.\n\n1. Gear A: clockwise\n2. Gear B: counterclockwise\n3. Gear C: clockwise\n\nA middle gear like B is called an idler gear. It makes the first and last gears turn the same way.\n\n**Wrong choices**\n- (A) It does not turn: Meshed gears always pass motion along.\n- (C) Counterclockwise: Counterclockwise is the direction of gear B, the middle gear.\n- (D) It depends on the size of gear B: The size of the middle gear changes speed, not the direction of gear C.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "gears"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "asvab-mechanics-0011",
+    "certId": "asvab",
+    "subjectId": "mechanical-comprehension",
+    "chapterId": "mechanics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A ramp is 12 feet long and rises 3 feet. Ignoring friction, how much force is needed to push a 240-pound load up the ramp?",
+    "choices": [
+      "60 pounds",
+      "80 pounds",
+      "20 pounds",
+      "960 pounds"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Ramp: force x length = weight x height",
+    "explanation": "The work done pushing along the ramp equals the work of lifting straight up.\n\n1. Force x 12 ft = 240 lb x 3 ft\n2. Force x 12 = 720\n3. Force = 720 / 12 = 60 lb\n4. Check: 60 x 12 = 720 and 240 x 3 = 720. Correct.\n\n**Wrong choices**\n- (B) 80 pounds: 80 pounds comes from dividing 240 by 3, which leaves out the ramp length.\n- (C) 20 pounds: 20 pounds comes from dividing 240 by 12, which leaves out the height.\n- (D) 960 pounds: 960 comes from multiplying 240 x 12 / 3, which is upside down.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "inclined plane"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "asvab-mechanics-0012",
+    "certId": "asvab",
+    "subjectId": "mechanical-comprehension",
+    "chapterId": "mechanics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "In a wheelbarrow, the wheel is the fulcrum, the load sits in the middle, and you lift the handles at the far end. What class of lever is this?",
+    "choices": [
+      "First-class lever",
+      "It is not a lever",
+      "Second-class lever",
+      "Third-class lever"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Second-class lever: load in the middle",
+    "explanation": "Lever classes depend on what is in the middle.\n\n- First class: fulcrum in the middle (seesaw)\n- Second class: load in the middle (wheelbarrow, nutcracker)\n- Third class: effort in the middle (tweezers)\n\nA second-class lever always lets you lift more than the force you apply.\n\n**Wrong choices**\n- (A) First-class lever: A first-class lever has the fulcrum in the middle, like a seesaw.\n- (B) It is not a lever: A wheelbarrow is a lever because it turns about a fixed point, the wheel's axle.\n- (D) Third-class lever: A third-class lever has the effort in the middle, like tweezers or a fishing rod.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "levers"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "asvab-mechanics-0013",
+    "certId": "asvab",
+    "subjectId": "mechanical-comprehension",
+    "chapterId": "mechanics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "In a hydraulic jack, a 50-pound force pushes on a small piston with an area of 2 square inches. The large piston has an area of 20 square inches. How much force does the large piston push with?",
+    "choices": [
+      "100 pounds",
+      "5 pounds",
+      "500 pounds",
+      "50 pounds"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Hydraulics: same pressure, bigger area",
+    "explanation": "The pressure is the same everywhere in the fluid.\n\n1. Pressure = 50 lb / 2 sq in = 25 psi\n2. Force on large piston = 25 psi x 20 sq in = 500 lb\n3. Check: area ratio 20 / 2 = 10, and 50 x 10 = 500. Correct.\n\n**Wrong choices**\n- (A) 100 pounds: 100 comes from multiplying 50 x 2, using only the small piston's area.\n- (B) 5 pounds: 5 pounds comes from dividing by the area ratio instead of multiplying.\n- (D) 50 pounds: 50 pounds would be correct only if both pistons were the same size.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "hydraulics",
+      "pressure"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "asvab-mechanics-0014",
+    "certId": "asvab",
+    "subjectId": "mechanical-comprehension",
+    "chapterId": "mechanics",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A bolt has 8 threads per inch. How many full turns are needed to move a nut 1-1/2 inches along the bolt?",
+    "choices": [
+      "5-1/3 turns",
+      "8 turns",
+      "9-1/2 turns",
+      "12 turns"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Turns = distance x threads per inch",
+    "explanation": "Each full turn moves the nut forward by one thread.\n\n1. One turn moves 1/8 inch\n2. Turns = 1-1/2 in x 8 threads per inch\n3. Turns = 1.5 x 8 = 12\n4. Check: 12 turns x 1/8 in = 1.5 in. Correct.\n\n**Wrong choices**\n- (A) 5-1/3 turns: 5-1/3 comes from dividing 8 by 1-1/2 instead of multiplying.\n- (B) 8 turns: 8 turns moves the nut only 1 inch.\n- (C) 9-1/2 turns: 9-1/2 comes from adding 8 + 1-1/2.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "screws"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "asvab-mechanics-0015",
+    "certId": "asvab",
+    "subjectId": "mechanical-comprehension",
+    "chapterId": "mechanics",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A 60-pound child sits 6 feet from the center of a seesaw. How far from the center on the other side must a 90-pound child sit to balance it?",
+    "choices": [
+      "9 feet",
+      "3 feet",
+      "4 feet",
+      "6 feet"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Balance: weight x distance on both sides",
+    "explanation": "The seesaw balances when weight times distance is the same on both sides.\n\n1. Left side: 60 lb x 6 ft = 360\n2. Right side: 90 lb x distance = 360\n3. Distance = 360 / 90 = 4 ft\n4. Check: 90 x 4 = 360. Balanced.\n\n**Wrong choices**\n- (A) 9 feet: 9 feet comes from flipping the ratio; the heavier child must sit closer, not farther.\n- (B) 3 feet: At 3 feet, the 90-pound side would be too light (270 is less than 360).\n- (D) 6 feet: At 6 feet, the 90-pound side would be heavier and would go down.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "levers",
+      "balance"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "asvab-mechanics-0016",
+    "certId": "asvab",
+    "subjectId": "mechanical-comprehension",
+    "chapterId": "mechanics",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A 12-tooth gear turning at 300 rpm drives a 36-tooth gear. How does the 36-tooth gear move compared with the 12-tooth gear?",
+    "choices": [
+      "100 rpm, with less turning force",
+      "900 rpm, with more turning force",
+      "100 rpm, with more turning force",
+      "900 rpm, with less turning force"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Slower output gear = more torque",
+    "explanation": "1. Gear ratio = 36 / 12 = 3\n2. Speed of the large gear = 300 / 3 = 100 rpm\n3. Check: 12 x 300 = 3,600 teeth per minute, and 36 x 100 = 3,600. Correct.\n\nWhen a gear system lowers speed, it raises turning force (torque) by the same ratio, ignoring friction.\n\n**Wrong choices**\n- (A) 100 rpm, with less turning force: The speed is right, but when a gear turns slower its turning force (torque) goes up, not down.\n- (B) 900 rpm, with more turning force: 900 rpm is wrong, and speed and turning force cannot both go up at once.\n- (D) 900 rpm, with less turning force: 900 rpm would happen if the larger gear drove the smaller one.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "gears",
+      "torque"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "asvab-mechanics-0017",
+    "certId": "asvab",
+    "subjectId": "mechanical-comprehension",
+    "chapterId": "mechanics",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A motor lifts a 330-pound load straight up 50 feet in 30 seconds. One horsepower equals 550 foot-pounds per second. What power does the motor deliver (ignoring losses)?",
+    "choices": [
+      "2 horsepower",
+      "30 horsepower",
+      "1 horsepower",
+      "0.5 horsepower"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Power = work / time",
+    "explanation": "1. Work = 330 lb x 50 ft = 16,500 foot-pounds\n2. Power = 16,500 / 30 s = 550 foot-pounds per second\n3. Horsepower = 550 / 550 = 1 hp\n4. Check: 1 hp for 30 s = 550 x 30 = 16,500 foot-pounds. Correct.\n\n**Wrong choices**\n- (A) 2 horsepower: 2 horsepower would mean the job took only 15 seconds.\n- (B) 30 horsepower: 30 is the time in seconds, not the power.\n- (D) 0.5 horsepower: 0.5 horsepower would mean the job took 60 seconds.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "power",
+      "work"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  }
+]
