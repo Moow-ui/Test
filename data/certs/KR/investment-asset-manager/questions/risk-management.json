@@ -1,0 +1,362 @@
+[
+  {
+    "id": "investment-asset-manager-risk-management-0001",
+    "certId": "investment-asset-manager",
+    "subjectId": "strategy2-analysis",
+    "chapterId": "risk-management",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "VaR(Value at Risk, 최대예상손실)의 뜻으로 옳은 것은?",
+    "choices": [
+      "금융위기 같은 극단적인 상황에서 생길 수 있는 손실의 평균",
+      "과거 한 해 동안 실제로 발생한 가장 큰 손실 금액",
+      "거래 상대방이 부도났을 때 받지 못하는 금액",
+      "정상적인 시장에서 정해진 기간 동안 일정 신뢰수준으로 생길 수 있는 최대 손실 금액"
+    ],
+    "answer": 4,
+    "oneLineConcept": "VaR = 정상 시장, 일정 기간·신뢰수준의 최대 손실",
+    "explanation": "**VaR**는 정상적인 시장 상황을 가정하고, 정해진 기간(예: 1일) 동안 정해진 신뢰수준(예: 99%)에서 생길 수 있는 최대 손실 금액입니다.\n\n- 예: '1일 99% VaR = 10억 원'은 하루에 10억 원보다 크게 잃을 확률이 1%라는 뜻입니다.\n\n**틀린 선지**\n- 금융위기 같은 극단적인 상황에서 생길 수 있는 손실의 평균: 극단적 상황의 손실을 보는 것은 스트레스 테스트입니다. VaR는 정상 시장을 가정합니다.\n- 거래 상대방이 부도났을 때 받지 못하는 금액: 상대방 부도로 받지 못하는 금액은 신용위험의 손실입니다.\n- 과거 한 해 동안 실제로 발생한 가장 큰 손실 금액: 과거에 실제로 생긴 최대 손실은 VaR가 아닙니다. VaR는 신뢰수준을 정해 통계적으로 추정합니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "VaR"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "investment-asset-manager-risk-management-0002",
+    "certId": "investment-asset-manager",
+    "subjectId": "strategy2-analysis",
+    "chapterId": "risk-management",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "어떤 포지션의 1일 VaR가 5억 원이다. 일별 수익률이 서로 독립이라고 가정할 때 같은 신뢰수준에서 25일 VaR는?",
+    "choices": [
+      "10억 원",
+      "25억 원",
+      "5억 원",
+      "125억 원"
+    ],
+    "answer": 2,
+    "oneLineConcept": "T일 VaR = 1일 VaR × √T",
+    "explanation": "수익률이 날마다 독립이면 위험(표준편차)은 기간의 **제곱근**에 비례해 커집니다.\n\n1. T일 VaR = 1일 VaR × √T\n2. = 5억 원 × √25 = 5억 원 × 5 = **25억 원**\n3. 검산: 25억 ÷ 5억 = 5 = √25\n\n**틀린 선지**\n- 125억 원: 125억 원은 √25 대신 25를 그대로 곱한 값입니다.\n- 10억 원: 10억 원은 계산 근거가 없는 값입니다. √25는 5입니다.\n- 5억 원: 5억 원은 1일 VaR 그대로입니다. 기간이 길어지면 VaR도 커집니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "VaR",
+      "기간 조정",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "investment-asset-manager-risk-management-0003",
+    "certId": "investment-asset-manager",
+    "subjectId": "strategy2-analysis",
+    "chapterId": "risk-management",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "주식 포지션 100억 원의 일별 수익률 표준편차가 2%이고 수익률이 정규분포를 따른다고 할 때, 델타-노멀 방법으로 구한 99% 신뢰수준의 1일 VaR는? (99% 신뢰수준의 계수는 2.33)",
+    "choices": [
+      "2.33억 원",
+      "3.3억 원",
+      "4.66억 원",
+      "2억 원"
+    ],
+    "answer": 3,
+    "oneLineConcept": "VaR = 신뢰수준 계수 × 표준편차 × 포지션 금액",
+    "explanation": "**델타-노멀 방법**은 정규분포를 가정하여 VaR를 구합니다.\n\n1. VaR = 신뢰수준 계수 × 표준편차 × 포지션 금액\n2. = 2.33 × 0.02 × 100억 원\n3. 0.02 × 100억 = 2억, 2.33 × 2억 = **4.66억 원**\n4. 검산: 4.66억 ÷ 100억 = 4.66% = 2.33 × 2%\n\n**틀린 선지**\n- 3.3억 원: 3.3억 원은 95% 신뢰수준 계수 1.65를 쓴 값입니다(1.65 × 2억).\n- 2억 원: 2억 원은 신뢰수준 계수를 곱하지 않은 1 표준편차 금액입니다.\n- 2.33억 원: 2.33억 원은 표준편차 2%를 곱하지 않고 1%로 계산한 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "VaR",
+      "델타-노멀",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "investment-asset-manager-risk-management-0004",
+    "certId": "investment-asset-manager",
+    "subjectId": "strategy2-analysis",
+    "chapterId": "risk-management",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "두 자산의 개별 VaR가 각각 30억 원, 40억 원이고 두 자산 수익률의 상관계수가 0일 때 포트폴리오 VaR는?",
+    "choices": [
+      "50억 원",
+      "10억 원",
+      "70억 원",
+      "35억 원"
+    ],
+    "answer": 1,
+    "oneLineConcept": "포트폴리오 VaR = √(VaR₁²+VaR₂²+2ρVaR₁VaR₂)",
+    "explanation": "두 자산 포트폴리오의 VaR는 상관계수를 반영해 구합니다.\n\n1. 포트폴리오 VaR = √(VaR₁² + VaR₂² + 2 × ρ × VaR₁ × VaR₂)\n2. ρ = 0이므로 = √(30² + 40²) = √(900 + 1,600) = √2,500\n3. = **50억 원**\n4. 검산: 50² = 2,500 = 900 + 1,600\n\n개별 VaR의 합(70억 원)보다 20억 원 작은데, 이것이 분산효과입니다.\n\n**틀린 선지**\n- 70억 원: 70억 원은 두 VaR를 단순히 더한 값으로, 상관계수가 1일 때만 맞습니다.\n- 10억 원: 10억 원은 두 VaR의 차이로, 상관계수가 −1일 때의 값입니다.\n- 35억 원: 35억 원은 두 VaR의 평균으로 계산 근거가 없습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "포트폴리오 VaR",
+      "상관계수",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "investment-asset-manager-risk-management-0005",
+    "certId": "investment-asset-manager",
+    "subjectId": "strategy2-analysis",
+    "chapterId": "risk-management",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "대출금 100억 원의 부도율(PD)이 2%, 부도 시 손실률(LGD)이 45%일 때 기대손실(EL)은?",
+    "choices": [
+      "9,000만 원",
+      "9억 원",
+      "45억 원",
+      "2억 원"
+    ],
+    "answer": 1,
+    "oneLineConcept": "기대손실 = 위험노출금액 × 부도율 × 부도 시 손실률",
+    "explanation": "**기대손실(EL)**은 신용위험에서 평균적으로 예상되는 손실입니다.\n\n1. EL = 위험노출금액(EAD) × 부도율(PD) × 부도 시 손실률(LGD)\n2. = 100억 원 × 0.02 × 0.45\n3. 100억 × 0.02 = 2억, 2억 × 0.45 = 0.9억 = **9,000만 원**\n4. 검산: 9,000만 ÷ 100억 = 0.9% = 2% × 45%\n\n**틀린 선지**\n- 2억 원: 2억 원은 부도 시 손실률(45%)을 곱하지 않은 값입니다.\n- 45억 원: 45억 원은 부도율(2%)을 곱하지 않은 값입니다.\n- 9억 원: 9억 원은 자릿수를 한 자리 잘못 계산한 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "신용위험",
+      "기대손실",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "investment-asset-manager-risk-management-0006",
+    "certId": "investment-asset-manager",
+    "subjectId": "strategy2-analysis",
+    "chapterId": "risk-management",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "VaR 측정 방법 가운데 역사적 시뮬레이션의 특징으로 옳은 것은?",
+    "choices": [
+      "과거 자료가 전혀 필요 없고 무작위 숫자만으로 가격 경로를 만든다",
+      "과거의 실제 가격 변동을 그대로 사용하므로 정규분포 같은 분포 가정이 필요 없다",
+      "변동성과 상관계수만으로 공식을 이용해 계산하는 분석적 방법이다",
+      "옵션처럼 가격이 비선형으로 움직이는 상품에는 쓸 수 없다"
+    ],
+    "answer": 2,
+    "oneLineConcept": "역사적 시뮬레이션 = 실제 과거 자료 사용, 분포 가정 불필요",
+    "explanation": "**역사적 시뮬레이션**은 과거 일정 기간의 실제 가격 변동을 지금의 포트폴리오에 그대로 적용해 손익 분포를 만들고 VaR를 구합니다.\n\n- 장점: 정규분포 같은 가정이 필요 없고, 포지션을 다시 평가하므로 옵션 같은 비선형 상품에도 쓸 수 있습니다.\n- 단점: 과거에 없던 상황은 반영하지 못하고, 자료 기간에 따라 결과가 달라집니다.\n\n**틀린 선지**\n- 변동성과 상관계수만으로 공식을 이용해 계산하는 분석적 방법이다: 변동성과 상관계수만으로 공식을 써서 계산하는 것은 델타-노멀(분석적) 방법입니다.\n- 과거 자료가 전혀 필요 없고 무작위 숫자만으로 가격 경로를 만든다: 무작위 숫자로 가격 경로를 만드는 것은 몬테카를로 시뮬레이션입니다. 역사적 시뮬레이션은 과거 자료가 꼭 필요합니다.\n- 옵션처럼 가격이 비선형으로 움직이는 상품에는 쓸 수 없다: 역사적 시뮬레이션은 포지션을 직접 다시 평가하므로 비선형 상품에도 쓸 수 있습니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "VaR",
+      "역사적 시뮬레이션"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "investment-asset-manager-risk-management-0007",
+    "certId": "investment-asset-manager",
+    "subjectId": "strategy2-analysis",
+    "chapterId": "risk-management",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "VaR 측정 방법 가운데 몬테카를로 시뮬레이션의 특징으로 옳은 것은?",
+    "choices": [
+      "공식 하나로 바로 계산되어 가장 간단하고 빠르다",
+      "과거의 실제 가격 변동만 그대로 쓰므로 가격 모형을 정할 필요가 없다",
+      "옵션 같은 비선형 상품의 위험은 측정할 수 없다",
+      "수많은 가격 경로를 무작위로 만들어 계산하므로 정교하지만 계산량이 많고 시간이 오래 걸린다"
+    ],
+    "answer": 4,
+    "oneLineConcept": "몬테카를로 = 무작위 경로 대량 생성, 정교하지만 계산 부담 큼",
+    "explanation": "**몬테카를로 시뮬레이션**은 가격이 움직이는 확률 모형을 정한 뒤, 컴퓨터로 수많은 가격 경로를 무작위로 만들어 각 경로의 손익으로 VaR를 구합니다.\n\n- 장점: 비선형 상품과 다양한 분포를 다룰 수 있어 가장 정교한 방법으로 꼽힙니다.\n- 단점: 계산량이 많아 시간이 오래 걸리고, 가정한 모형이 틀리면 결과도 틀립니다(모형위험).\n\n**틀린 선지**\n- 과거의 실제 가격 변동만 그대로 쓰므로 가격 모형을 정할 필요가 없다: 과거 실제 가격 변동을 그대로 쓰는 것은 역사적 시뮬레이션입니다. 몬테카를로는 가격 모형을 정해야 합니다.\n- 공식 하나로 바로 계산되어 가장 간단하고 빠르다: 공식으로 바로 계산하는 가장 간단한 방법은 델타-노멀 방법입니다.\n- 옵션 같은 비선형 상품의 위험은 측정할 수 없다: 몬테카를로는 포지션을 다시 평가하므로 비선형 상품의 위험도 측정할 수 있습니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "VaR",
+      "몬테카를로"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "investment-asset-manager-risk-management-0008",
+    "certId": "investment-asset-manager",
+    "subjectId": "strategy2-analysis",
+    "chapterId": "risk-management",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "VaR 모형이 정확한지 확인하기 위해, 일정 기간 실제 손실이 VaR를 넘은 횟수를 세어 사후에 검증하는 방법은?",
+    "choices": [
+      "몬테카를로 시뮬레이션",
+      "스트레스 테스트",
+      "백테스팅",
+      "시나리오 분석"
+    ],
+    "answer": 3,
+    "oneLineConcept": "실제 손익으로 VaR 모형 사후 검증 = 백테스팅",
+    "explanation": "**백테스팅**은 VaR 모형으로 계산한 값과 실제 손익을 비교해 모형이 맞는지 확인하는 사후 검증입니다.\n\n- 예: 99% VaR라면 250일 중 실제 손실이 VaR를 넘는 날이 2~3일 정도 나와야 정상입니다. 그보다 훨씬 많으면 모형이 위험을 작게 재고 있다는 뜻입니다.\n\n**틀린 선지**\n- 스트레스 테스트: 스트레스 테스트는 극단적인 상황을 가정해 손실을 보는 방법으로, 모형의 정확성을 사후에 검증하는 것이 아닙니다.\n- 시나리오 분석: 시나리오 분석은 특정 상황을 가정해 손익을 계산하는 방법입니다.\n- 몬테카를로 시뮬레이션: 몬테카를로 시뮬레이션은 VaR를 측정하는 방법이지 검증 방법이 아닙니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "백테스팅"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "investment-asset-manager-risk-management-0009",
+    "certId": "investment-asset-manager",
+    "subjectId": "strategy2-analysis",
+    "chapterId": "risk-management",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "정상적인 시장을 가정하는 VaR의 한계를 보완하기 위해, 금융위기처럼 극단적인 상황을 가정하여 포트폴리오의 손실을 측정하는 방법은?",
+    "choices": [
+      "스트레스 테스트",
+      "백테스팅",
+      "델타-노멀 방법",
+      "듀레이션 분석"
+    ],
+    "answer": 1,
+    "oneLineConcept": "극단적 상황 가정 손실 측정 = 스트레스 테스트",
+    "explanation": "**스트레스 테스트**는 주가 폭락, 금리 급등 같은 극단적이지만 일어날 수 있는 상황을 가정하고 손실을 계산합니다.\n\n- VaR는 정상 시장을 가정하므로 드물게 오는 큰 손실(꼬리 위험)을 놓칠 수 있습니다.\n- 스트레스 테스트는 이런 VaR의 한계를 보완합니다.\n\n**틀린 선지**\n- 백테스팅: 백테스팅은 VaR 모형을 실제 손익과 비교해 사후 검증하는 방법입니다.\n- 델타-노멀 방법: 델타-노멀 방법은 정규분포를 가정한 VaR 계산 방법으로, 오히려 정상 시장을 가정합니다.\n- 듀레이션 분석: 듀레이션 분석은 금리 변화에 따른 채권 가격 민감도를 보는 방법입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "스트레스 테스트"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "investment-asset-manager-risk-management-0010",
+    "certId": "investment-asset-manager",
+    "subjectId": "strategy2-analysis",
+    "chapterId": "risk-management",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "내부 절차·인력·시스템이 부적절하거나 잘못 작동해서, 또는 외부 사건 때문에 손실이 생길 위험을 무엇이라고 하는가?",
+    "choices": [
+      "신용위험",
+      "시장위험",
+      "유동성위험",
+      "운영위험"
+    ],
+    "answer": 4,
+    "oneLineConcept": "내부 절차·사람·시스템·외부 사건 손실 = 운영위험",
+    "explanation": "금융회사의 주요 위험은 다음과 같이 나뉩니다.\n\n- 시장위험: 주가·금리·환율 같은 시장가격 변동으로 생기는 손실 위험\n- 신용위험: 거래 상대방이 약속을 지키지 못해 생기는 손실 위험\n- 유동성위험: 필요한 자금을 구하지 못하거나 자산을 제값에 팔지 못하는 위험\n- **운영위험**: 내부 절차·인력·시스템의 문제나 외부 사건으로 생기는 손실 위험(예: 직원의 주문 실수, 전산 장애, 횡령)\n\n**틀린 선지**\n- 시장위험: 시장위험은 시장가격 변동으로 생기는 손실 위험입니다.\n- 신용위험: 신용위험은 거래 상대방의 부도나 계약 불이행으로 생기는 손실 위험입니다.\n- 유동성위험: 유동성위험은 자금을 구하지 못하거나 자산을 제값에 팔지 못하는 위험입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "운영위험"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  }
+]

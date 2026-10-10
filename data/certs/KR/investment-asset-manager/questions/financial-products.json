@@ -1,0 +1,361 @@
+[
+  {
+    "id": "investment-asset-manager-financial-products-0001",
+    "certId": "investment-asset-manager",
+    "subjectId": "products-tax",
+    "chapterId": "financial-products",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "다음 중 예금자보호법에 따라 보호되는 상품은?",
+    "choices": [
+      "주식형 펀드",
+      "양도성예금증서(CD)",
+      "은행의 정기예금",
+      "증권회사의 환매조건부채권(RP)"
+    ],
+    "answer": 3,
+    "oneLineConcept": "은행 예금은 보호, CD·RP·펀드는 비보호",
+    "explanation": "**예금자보호**는 금융회사가 망했을 때 예금을 일정 한도까지 돌려주는 제도입니다. 은행의 보통예금·정기예금·적금 같은 예금이 대상입니다.\n\n- CD, RP, 펀드처럼 투자성이 있거나 예금이 아닌 상품은 보호 대상이 아닙니다.\n\n**틀린 선지**\n- 양도성예금증서(CD): 양도성예금증서(CD)는 은행이 발행하지만 예금자보호 대상이 아닙니다.\n- 증권회사의 환매조건부채권(RP): 환매조건부채권(RP)은 채권을 사고파는 거래이므로 예금자보호 대상이 아닙니다.\n- 주식형 펀드: 펀드는 운용 실적에 따라 수익이 달라지는 투자상품이라 예금자보호 대상이 아닙니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "예금자보호",
+      "금융상품"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "investment-asset-manager-financial-products-0002",
+    "certId": "investment-asset-manager",
+    "subjectId": "products-tax",
+    "chapterId": "financial-products",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "은행이 발행하며, 다른 사람에게 팔아넘길(양도할) 수 있는 정기예금 증서를 무엇이라고 하는가?",
+    "choices": [
+      "표지어음",
+      "기업어음(CP)",
+      "양도성예금증서(CD)",
+      "환매조건부채권(RP)"
+    ],
+    "answer": 3,
+    "oneLineConcept": "양도 가능한 정기예금 증서 = CD",
+    "explanation": "**양도성예금증서(CD)**는 은행의 정기예금에 양도성을 준 증서입니다.\n\n- 보통 이자를 미리 떼고 할인된 가격에 삽니다(할인식).\n- 만기 전에 돈이 필요하면 중도해지 대신 시장에서 팔 수 있습니다.\n- 예금자보호 대상은 아닙니다.\n\n**틀린 선지**\n- 기업어음(CP): 기업어음(CP)은 은행이 아니라 일반 기업이 단기 자금을 빌리려고 발행하는 어음입니다.\n- 표지어음: 표지어음은 금융회사가 할인해 사들인 어음들을 묶어 다시 발행한 어음으로, 정기예금 증서가 아닙니다.\n- 환매조건부채권(RP): RP는 금융회사가 되사는 조건으로 파는 채권입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "CD",
+      "단기금융상품"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "investment-asset-manager-financial-products-0003",
+    "certId": "investment-asset-manager",
+    "subjectId": "products-tax",
+    "chapterId": "financial-products",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "환매조건부채권(RP)에 대한 설명으로 옳은 것은?",
+    "choices": [
+      "예금자보호법에 따라 원금과 이자가 보호된다",
+      "수익이 주가지수 움직임에 따라 정해지는 파생결합증권이다",
+      "만기가 정해져 있지 않고 장중에 거래소에서 사고판다",
+      "금융회사가 일정 기간 뒤 미리 정한 가격으로 되사는 조건으로 고객에게 채권을 파는 상품이다"
+    ],
+    "answer": 4,
+    "oneLineConcept": "RP = 되사는 조건으로 파는 채권",
+    "explanation": "**환매조건부채권(RP)**은 금융회사가 국채 같은 채권을 고객에게 팔면서, 일정 기간 뒤 미리 정한 가격(이자 포함)으로 되사겠다고 약속하는 상품입니다.\n\n- 채권이 담보 역할을 하므로 비교적 안전하지만 예금자보호 대상은 아닙니다.\n- 고객 입장에서는 약정한 기간 동안 정해진 수익을 받는 단기 상품입니다.\n\n**틀린 선지**\n- 예금자보호법에 따라 원금과 이자가 보호된다: RP는 예금이 아니므로 예금자보호 대상이 아닙니다.\n- 수익이 주가지수 움직임에 따라 정해지는 파생결합증권이다: 주가지수에 따라 수익이 정해지는 것은 주가연계증권(ELS) 같은 파생결합증권입니다.\n- 만기가 정해져 있지 않고 장중에 거래소에서 사고판다: 거래소에서 장중에 사고파는 것은 ETF나 주식입니다. RP는 약정 기간이 있는 상품입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "RP",
+      "단기금융상품"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "investment-asset-manager-financial-products-0004",
+    "certId": "investment-asset-manager",
+    "subjectId": "products-tax",
+    "chapterId": "financial-products",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "MMF(머니마켓펀드)에 대한 설명으로 옳은 것은?",
+    "choices": [
+      "만기가 짧은 단기 금융상품에 투자하고 운용 실적에 따라 수익을 나누는 펀드이다",
+      "예금자보호 대상이라 원금이 보장된다",
+      "주로 만기가 긴 회사채와 주식에 투자한다",
+      "가입할 때 약속한 확정금리를 지급한다"
+    ],
+    "answer": 1,
+    "oneLineConcept": "MMF = 단기 금융상품에 투자하는 실적배당형 펀드",
+    "explanation": "**MMF**는 만기가 짧은 국공채, CD, 기업어음(CP), 콜론 같은 단기 금융상품에 투자하는 펀드입니다.\n\n- 수시로 넣고 뺄 수 있어 단기 자금을 맡기기 좋습니다.\n- 펀드이므로 운용 실적에 따라 수익이 정해지는 실적배당형이며, 예금자보호 대상이 아닙니다.\n\n**틀린 선지**\n- 예금자보호 대상이라 원금이 보장된다: MMF는 펀드라서 예금자보호 대상이 아니고 원금도 보장되지 않습니다.\n- 주로 만기가 긴 회사채와 주식에 투자한다: MMF는 만기가 짧은 상품에 투자합니다. 장기 회사채나 주식 위주가 아닙니다.\n- 가입할 때 약속한 확정금리를 지급한다: MMF는 확정금리가 아니라 운용 실적에 따라 수익이 달라집니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "MMF",
+      "집합투자"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "investment-asset-manager-financial-products-0005",
+    "certId": "investment-asset-manager",
+    "subjectId": "products-tax",
+    "chapterId": "financial-products",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "특정 주식이나 주가지수의 움직임에 따라 미리 정한 조건(예: 조기상환 조건)으로 수익이 결정되는 파생결합증권은?",
+    "choices": [
+      "상장지수펀드(ETF)",
+      "주가연계증권(ELS)",
+      "주식워런트증권(ELW)",
+      "부동산투자회사(리츠)"
+    ],
+    "answer": 2,
+    "oneLineConcept": "주가에 연계된 조건부 수익 = ELS",
+    "explanation": "**주가연계증권(ELS)**은 기초자산(특정 주식이나 주가지수)의 가격이 미리 정한 조건을 만족하는지에 따라 수익이 정해지는 파생결합증권입니다.\n\n- 증권회사가 발행하며, 일정 시점마다 조건을 충족하면 조기상환되는 구조가 많습니다.\n- 조건을 벗어나면 원금 손실이 날 수 있습니다.\n\n**틀린 선지**\n- 주식워런트증권(ELW): ELW는 정해진 가격에 기초자산을 사거나 팔 수 있는 권리(옵션)를 증권으로 만든 것으로, 조기상환 조건이 있는 상품이 아닙니다.\n- 상장지수펀드(ETF): ETF는 지수를 따라가도록 만든 펀드를 거래소에 상장한 것입니다.\n- 부동산투자회사(리츠): 리츠는 부동산에 투자하는 회사입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "ELS",
+      "파생결합증권"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "investment-asset-manager-financial-products-0006",
+    "certId": "investment-asset-manager",
+    "subjectId": "products-tax",
+    "chapterId": "financial-products",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "상장지수펀드(ETF)에 대한 설명으로 옳은 것은?",
+    "choices": [
+      "따라가는 지수와 수익률이 반드시 같아 추적오차가 생기지 않는다",
+      "환매 신청 뒤 정해지는 기준가격으로만 사고팔 수 있다",
+      "거래소에 상장되어 장중에 주식처럼 실시간으로 사고팔 수 있다",
+      "예금자보호 대상이라 원금이 보장된다"
+    ],
+    "answer": 3,
+    "oneLineConcept": "ETF = 거래소에서 주식처럼 거래하는 지수 펀드",
+    "explanation": "**ETF**는 특정 지수를 따라가도록 만든 펀드를 거래소에 상장한 상품입니다.\n\n- 일반 펀드와 달리 장중에 주식처럼 실시간 가격으로 사고팔 수 있습니다.\n- 운용 보수, 매매 비용 등 때문에 지수와 수익률이 조금씩 어긋나는 추적오차가 생길 수 있습니다.\n\n**틀린 선지**\n- 환매 신청 뒤 정해지는 기준가격으로만 사고팔 수 있다: 환매 뒤 기준가격으로 거래하는 것은 일반(비상장) 펀드의 방식입니다.\n- 따라가는 지수와 수익률이 반드시 같아 추적오차가 생기지 않는다: ETF도 보수와 비용 때문에 지수와 수익률이 완전히 같지는 않습니다(추적오차).\n- 예금자보호 대상이라 원금이 보장된다: ETF는 투자상품이므로 예금자보호 대상이 아닙니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "ETF"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "investment-asset-manager-financial-products-0007",
+    "certId": "investment-asset-manager",
+    "subjectId": "products-tax",
+    "chapterId": "financial-products",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "위탁자(고객)가 신탁재산의 운용 방법을 직접 지정하는 금전신탁은?",
+    "choices": [
+      "불특정금전신탁",
+      "특정금전신탁",
+      "연금보험",
+      "부동산담보신탁"
+    ],
+    "answer": 2,
+    "oneLineConcept": "고객이 운용 방법을 지정 = 특정금전신탁",
+    "explanation": "**특정금전신탁**은 고객(위탁자)이 맡긴 돈을 어디에 어떻게 운용할지 직접 지정하는 신탁입니다.\n\n- 신탁회사(수탁자)는 고객의 지시대로 운용하고, 결과는 고객에게 돌아갑니다.\n- 반대로 불특정금전신탁은 운용 방법을 신탁회사에 맡기는 방식입니다.\n\n**틀린 선지**\n- 불특정금전신탁: 불특정금전신탁은 운용 방법을 지정하지 않고 신탁회사에 맡기는 신탁입니다.\n- 부동산담보신탁: 부동산담보신탁은 돈이 아니라 부동산을 맡기는 재산신탁입니다.\n- 연금보험: 연금보험은 보험상품이며 금전신탁이 아닙니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "신탁",
+      "특정금전신탁"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "investment-asset-manager-financial-products-0008",
+    "certId": "investment-asset-manager",
+    "subjectId": "products-tax",
+    "chapterId": "financial-products",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "투자자의 자산을 투자자별 계좌로 따로 관리하면서, 증권회사가 투자 판단을 위임받아 운용하고 계좌 잔고에 비례한 수수료를 받는 상품은?",
+    "choices": [
+      "일임형 랩어카운트",
+      "집합투자기구(펀드)",
+      "주가연계증권(ELS)",
+      "불특정금전신탁"
+    ],
+    "answer": 1,
+    "oneLineConcept": "계좌별 운용 + 투자일임 + 잔고 기준 수수료 = 랩",
+    "explanation": "**랩어카운트**는 여러 서비스를 하나로 싸서(wrap) 제공하는 종합자산관리계좌입니다.\n\n- 일임형 랩은 고객이 투자 판단을 증권회사에 맡기고(투자일임), 증권회사가 계좌별로 운용합니다.\n- 매매할 때마다 수수료를 내는 대신 잔고에 비례한 수수료(랩 수수료)를 냅니다.\n- 펀드와 달리 투자자 계좌가 하나씩 따로 관리됩니다.\n\n**틀린 선지**\n- 집합투자기구(펀드): 펀드는 여러 투자자의 돈을 한데 모아 운용하므로 계좌별로 따로 관리하지 않습니다.\n- 불특정금전신탁: 불특정금전신탁은 신탁회사가 운용하는 신탁 상품이며, 투자일임 계좌가 아닙니다.\n- 주가연계증권(ELS): ELS는 정해진 조건에 따라 수익이 정해지는 파생결합증권입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "랩어카운트",
+      "투자일임"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "investment-asset-manager-financial-products-0009",
+    "certId": "investment-asset-manager",
+    "subjectId": "products-tax",
+    "chapterId": "financial-products",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "확정기여형(DC) 퇴직연금에 대한 설명으로 옳은 것은?",
+    "choices": [
+      "운용 결과와 관계없이 원금과 정해진 이자가 보장된다",
+      "근로자가 받을 퇴직급여가 미리 정해져 있고 운용 책임은 회사가 진다",
+      "회사는 부담금을 내지 않고 근로자 혼자 적립한다",
+      "근로자가 적립금의 운용 방법을 정하고, 운용 결과에 따라 받을 퇴직급여가 달라진다"
+    ],
+    "answer": 4,
+    "oneLineConcept": "DC형 = 회사 부담금 확정, 근로자가 운용·책임",
+    "explanation": "**확정기여형(DC)**은 회사가 낼 부담금이 미리 정해지고, 근로자가 그 적립금을 어디에 투자할지 정합니다.\n\n- 운용을 잘하면 퇴직급여가 늘고, 못하면 줄어듭니다. 운용 책임은 근로자에게 있습니다.\n- 반대로 확정급여형(DB)은 받을 급여가 정해져 있고 운용 책임은 회사가 집니다.\n\n**틀린 선지**\n- 근로자가 받을 퇴직급여가 미리 정해져 있고 운용 책임은 회사가 진다: 받을 급여가 정해져 있고 회사가 운용 책임을 지는 것은 확정급여형(DB)입니다.\n- 회사는 부담금을 내지 않고 근로자 혼자 적립한다: DC형에서도 회사가 정해진 부담금을 냅니다.\n- 운용 결과와 관계없이 원금과 정해진 이자가 보장된다: DC형은 운용 결과에 따라 급여가 달라지므로 원금과 이자가 보장되지 않습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "퇴직연금",
+      "DC형"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "investment-asset-manager-financial-products-0010",
+    "certId": "investment-asset-manager",
+    "subjectId": "products-tax",
+    "chapterId": "financial-products",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "자산유동화증권(ABS)의 신용보강 방법 가운데 외부 신용보강에 해당하는 것은?",
+    "choices": [
+      "기초자산 가치를 발행금액보다 크게 담는 초과담보",
+      "선순위·후순위 구조로 나누어 발행",
+      "현금흐름 일부를 따로 적립하는 현금유보",
+      "은행 등 제3자의 지급보증"
+    ],
+    "answer": 4,
+    "oneLineConcept": "ABS 신용보강: 내부(후순위·초과담보·현금유보), 외부(제3자 보증)",
+    "explanation": "**자산유동화증권(ABS)**은 대출채권 같은 자산에서 나오는 현금흐름을 바탕으로 발행하는 증권입니다. 투자자를 안심시키려고 신용을 높이는 장치(신용보강)를 둡니다.\n\n- **내부 신용보강**: 증권 구조 안에서 해결하는 방법(선·후순위 구조, 초과담보, 현금유보 등)\n- **외부 신용보강**: 바깥의 제3자가 보증하는 방법(은행의 지급보증, 신용공여 등)\n\n**틀린 선지**\n- 선순위·후순위 구조로 나누어 발행: 선·후순위 구조는 후순위가 먼저 손실을 떠안게 하는 내부 신용보강입니다.\n- 기초자산 가치를 발행금액보다 크게 담는 초과담보: 초과담보는 증권 구조 안에서 담보를 더 넣는 내부 신용보강입니다.\n- 현금흐름 일부를 따로 적립하는 현금유보: 현금유보는 기초자산의 현금흐름 일부를 쌓아 두는 내부 신용보강입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "ABS",
+      "신용보강"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  }
+]

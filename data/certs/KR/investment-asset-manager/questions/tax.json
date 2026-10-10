@@ -1,0 +1,387 @@
+[
+  {
+    "id": "investment-asset-manager-tax-0001",
+    "certId": "investment-asset-manager",
+    "subjectId": "products-tax",
+    "chapterId": "tax",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "거주자의 한 해 이자소득과 배당소득을 합한 금융소득이 얼마를 넘으면, 넘는 부분을 다른 종합소득과 합산하여 과세(금융소득종합과세)하는가?",
+    "choices": [
+      "4천만 원",
+      "2천만 원",
+      "5천만 원",
+      "1천만 원"
+    ],
+    "answer": 2,
+    "oneLineConcept": "금융소득종합과세 기준금액은 연 2천만 원",
+    "explanation": "**금융소득종합과세**는 이자소득과 배당소득을 합한 금액이 한 해에 **2천만 원**을 넘을 때 적용됩니다.\n\n- 2천만 원 이하: 원천징수(14%)로 세금이 끝납니다(분리과세).\n- 2천만 원 초과: 넘는 부분을 근로·사업소득 같은 다른 종합소득과 합쳐 기본세율(누진세율)로 계산합니다.\n\n**틀린 선지**\n- 4천만 원: 4천만 원은 예전에 쓰던 기준금액입니다. 지금 기준은 2천만 원입니다.\n- 1천만 원: 1천만 원은 기준금액이 아닙니다.\n- 5천만 원: 5천만 원은 기준금액이 아닙니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "금융소득종합과세",
+      "소득세"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "investment-asset-manager-tax-0002",
+    "certId": "investment-asset-manager",
+    "subjectId": "products-tax",
+    "chapterId": "tax",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "거주자가 은행 정기예금 이자를 받을 때 일반적으로 적용되는 소득세 원천징수세율은? (지방소득세는 제외한다)",
+    "choices": [
+      "22%",
+      "15.4%",
+      "9.9%",
+      "14%"
+    ],
+    "answer": 4,
+    "oneLineConcept": "이자·배당소득 원천징수세율 14%(지방소득세 별도)",
+    "explanation": "일반적인 이자소득과 배당소득은 지급할 때 **소득세 14%**를 원천징수(미리 떼어 냄)합니다.\n\n- 여기에 지방소득세 1.4%(소득세의 10%)가 따로 붙어, 실제로 떼이는 세금은 모두 15.4%입니다.\n- 문제는 지방소득세를 뺀 소득세율을 물었으므로 14%가 답입니다.\n\n**틀린 선지**\n- 15.4%: 15.4%는 소득세 14%에 지방소득세 1.4%를 더한 값입니다. 지방소득세를 빼면 14%입니다.\n- 22%: 22%는 일반 이자소득의 원천징수세율이 아닙니다.\n- 9.9%: 9.9%는 일반 이자소득의 원천징수세율이 아닙니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "원천징수",
+      "이자소득"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "investment-asset-manager-tax-0003",
+    "certId": "investment-asset-manager",
+    "subjectId": "products-tax",
+    "chapterId": "tax",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "피상속인과 상속인이 모두 국내에 주소를 둔 경우, 상속세 신고기한은?",
+    "choices": [
+      "상속개시일이 속하는 달의 말일부터 6개월 이내",
+      "상속개시일부터 1년 이내",
+      "상속개시일이 속하는 달의 말일부터 3개월 이내",
+      "상속개시일이 속하는 달의 말일부터 9개월 이내"
+    ],
+    "answer": 1,
+    "oneLineConcept": "상속세 신고기한 6개월, 증여세 3개월",
+    "explanation": "상속세는 **상속개시일(사망일)이 속하는 달의 말일부터 6개월 이내**에 신고합니다.\n\n- 증여세 신고기한: 증여받은 날이 속하는 달의 말일부터 3개월 이내\n- 피상속인이나 상속인이 외국에 주소를 둔 경우 상속세 신고기한은 9개월입니다.\n\n**틀린 선지**\n- 상속개시일이 속하는 달의 말일부터 3개월 이내: 3개월은 증여세 신고기한입니다.\n- 상속개시일이 속하는 달의 말일부터 9개월 이내: 9개월은 피상속인이나 상속인이 외국에 주소를 둔 경우의 상속세 신고기한입니다.\n- 상속개시일부터 1년 이내: 상속세 신고기한은 1년이 아니라 6개월입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "상속세",
+      "신고기한"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "investment-asset-manager-tax-0004",
+    "certId": "investment-asset-manager",
+    "subjectId": "products-tax",
+    "chapterId": "tax",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "부모에게서 재산을 증여받은 거주자는 언제까지 증여세를 신고해야 하는가?",
+    "choices": [
+      "증여받은 날이 속하는 해의 다음 해 5월 31일까지",
+      "증여받은 날이 속하는 달의 말일부터 1개월 이내",
+      "증여받은 날이 속하는 달의 말일부터 3개월 이내",
+      "증여받은 날이 속하는 달의 말일부터 6개월 이내"
+    ],
+    "answer": 3,
+    "oneLineConcept": "증여세 신고기한은 증여일이 속하는 달 말일부터 3개월",
+    "explanation": "증여세는 **증여받은 날이 속하는 달의 말일부터 3개월 이내**에 신고합니다.\n\n- 상속세는 상속개시일이 속하는 달의 말일부터 6개월 이내입니다.\n- 두 기한을 바꿔 내는 문제가 많으니 '상속 6, 증여 3'으로 외우세요.\n\n**틀린 선지**\n- 증여받은 날이 속하는 달의 말일부터 6개월 이내: 6개월은 상속세 신고기한입니다.\n- 증여받은 날이 속하는 달의 말일부터 1개월 이내: 증여세 신고기한은 1개월이 아니라 3개월입니다.\n- 증여받은 날이 속하는 해의 다음 해 5월 31일까지: 다음 해 5월 31일은 종합소득세 확정신고 기한입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "증여세",
+      "신고기한"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "investment-asset-manager-tax-0005",
+    "certId": "investment-asset-manager",
+    "subjectId": "products-tax",
+    "chapterId": "tax",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "거주자가 배우자에게서 재산을 증여받을 때 적용되는 증여재산공제 한도는? (10년간 합산 기준)",
+    "choices": [
+      "6억 원",
+      "3억 원",
+      "5억 원",
+      "5천만 원"
+    ],
+    "answer": 1,
+    "oneLineConcept": "증여재산공제: 배우자 6억, 직계존속→성인 자녀 5천만",
+    "explanation": "**증여재산공제**는 증여받은 재산에서 일정 금액을 빼 주는 제도로, 10년 동안 같은 관계의 사람에게서 받은 증여를 합쳐 적용합니다.\n\n- 배우자에게서 받으면: **6억 원**\n- 성인 자녀가 직계존속(부모 등)에게서 받으면: 5천만 원(미성년자는 2천만 원)\n\n**틀린 선지**\n- 5억 원: 5억 원은 배우자 증여재산공제 금액이 아닙니다. 배우자 공제는 6억 원입니다.\n- 5천만 원: 5천만 원은 성인 자녀가 부모 등 직계존속에게서 받을 때의 공제 금액입니다.\n- 3억 원: 3억 원은 배우자 증여재산공제 금액이 아닙니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "증여세",
+      "증여재산공제"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "investment-asset-manager-tax-0006",
+    "certId": "investment-asset-manager",
+    "subjectId": "products-tax",
+    "chapterId": "tax",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "소득세법상 다른 소득과 합산하지 않고 따로 세금을 계산하는 분류과세 대상 소득은?",
+    "choices": [
+      "연금소득",
+      "이자소득",
+      "기타소득",
+      "양도소득"
+    ],
+    "answer": 4,
+    "oneLineConcept": "분류과세 = 퇴직소득·양도소득",
+    "explanation": "소득세는 이자·배당·사업·근로·연금·기타소득의 6가지를 합쳐 과세하는 **종합과세**가 원칙입니다.\n\n- **퇴직소득과 양도소득**은 오랜 기간 쌓인 소득이 한꺼번에 생기므로 다른 소득과 합치지 않고 따로 계산하는 **분류과세**입니다.\n\n**틀린 선지**\n- 연금소득: 연금소득은 종합소득에 포함됩니다.\n- 이자소득: 이자소득은 종합소득에 포함됩니다. 금융소득이 2천만 원 이하이면 분리과세로 끝날 뿐입니다.\n- 기타소득: 기타소득은 종합소득에 포함됩니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "분류과세",
+      "소득세"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "investment-asset-manager-tax-0007",
+    "certId": "investment-asset-manager",
+    "subjectId": "products-tax",
+    "chapterId": "tax",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "거주자가 적격 집합투자기구(펀드)로부터 받은 이익은 소득세법상 어떤 소득으로 과세되는가?",
+    "choices": [
+      "양도소득",
+      "배당소득",
+      "이자소득",
+      "기타소득"
+    ],
+    "answer": 2,
+    "oneLineConcept": "집합투자기구로부터의 이익 = 배당소득",
+    "explanation": "소득세법은 집합투자기구(펀드)로부터 받는 이익을 **배당소득**으로 봅니다.\n\n- 그래서 원천징수세율 14%가 적용되고, 금융소득종합과세 기준금액(2천만 원)을 따질 때도 이자소득과 함께 합산됩니다.\n\n**틀린 선지**\n- 이자소득: 펀드가 채권에 투자해 이자를 받았더라도 투자자가 펀드에서 받는 이익은 배당소득입니다.\n- 양도소득: 펀드 이익은 양도소득으로 과세하지 않습니다.\n- 기타소득: 펀드 이익은 기타소득이 아닙니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "집합투자기구",
+      "배당소득"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "investment-asset-manager-tax-0008",
+    "certId": "investment-asset-manager",
+    "subjectId": "products-tax",
+    "chapterId": "tax",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "납세자가 법정신고기한까지 과세표준신고서를 제출하지 않은 경우, 상속세·증여세를 제외한 일반 국세의 부과제척기간은?",
+    "choices": [
+      "5년",
+      "10년",
+      "7년",
+      "15년"
+    ],
+    "answer": 3,
+    "oneLineConcept": "부과제척기간: 원칙 5년, 무신고 7년, 부정행위 10년",
+    "explanation": "**부과제척기간**은 국가가 세금을 매길 수 있는 기간입니다. 상속세·증여세를 제외한 일반 국세는 다음과 같습니다.\n\n- 원칙(제대로 신고한 경우): 5년\n- **신고하지 않은 경우: 7년**\n- 사기 등 부정행위로 세금을 피한 경우: 10년\n\n**틀린 선지**\n- 5년: 5년은 신고를 한 경우의 원칙적인 부과제척기간입니다.\n- 10년: 10년은 부정행위로 세금을 피한 경우입니다.\n- 15년: 15년은 일반 국세의 부과제척기간이 아닙니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "국세기본법",
+      "부과제척기간"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "investment-asset-manager-tax-0009",
+    "certId": "investment-asset-manager",
+    "subjectId": "products-tax",
+    "chapterId": "tax",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "세무서장의 과세처분에 이의가 있는 납세자가 이의신청·심사청구·심판청구를 할 수 있는 기한은?",
+    "choices": [
+      "처분이 있음을 안 날(처분 통지를 받은 날)부터 90일 이내",
+      "처분이 있음을 안 날부터 60일 이내",
+      "처분이 있음을 안 날부터 30일 이내",
+      "처분일부터 1년 이내"
+    ],
+    "answer": 1,
+    "oneLineConcept": "국세 불복 청구는 처분을 안 날부터 90일 이내",
+    "explanation": "국세기본법상 불복 절차(이의신청·심사청구·심판청구)는 모두 **처분이 있음을 안 날(처분 통지를 받은 날)부터 90일 이내**에 청구해야 합니다.\n\n- 기한을 넘기면 처분 내용을 다툴 수 없게 되므로 기한이 중요합니다.\n\n**틀린 선지**\n- 처분이 있음을 안 날부터 30일 이내: 30일은 국세 불복 청구 기한이 아닙니다.\n- 처분이 있음을 안 날부터 60일 이내: 60일은 국세 불복 청구 기한이 아닙니다.\n- 처분일부터 1년 이내: 처분일부터 1년이 아니라 처분을 안 날부터 90일입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "국세기본법",
+      "불복"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "investment-asset-manager-tax-0010",
+    "certId": "investment-asset-manager",
+    "subjectId": "products-tax",
+    "chapterId": "tax",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "납세자가 법정신고기한까지 신고한 세액이 실제보다 많았을 때, 과다하게 낸 세금을 돌려 달라고 하는 경정청구는 원칙적으로 언제까지 할 수 있는가?",
+    "choices": [
+      "법정신고기한이 지난 후 3년 이내",
+      "법정신고기한이 지난 후 10년 이내",
+      "법정신고기한이 지난 후 1년 이내",
+      "법정신고기한이 지난 후 5년 이내"
+    ],
+    "answer": 4,
+    "oneLineConcept": "경정청구는 법정신고기한 경과 후 5년 이내",
+    "explanation": "**경정청구**는 납세자가 세금을 너무 많이 신고·납부했을 때 바로잡아 달라고 청구하는 제도입니다.\n\n- 원칙적으로 **법정신고기한이 지난 후 5년 이내**에 청구합니다.\n- 반대로 국가가 세금을 매기는 부과제척기간은 원칙 5년, 무신고 7년, 부정행위 10년입니다.\n\n**틀린 선지**\n- 법정신고기한이 지난 후 3년 이내: 3년은 예전 기준입니다. 지금은 5년입니다.\n- 법정신고기한이 지난 후 1년 이내: 1년은 경정청구 기한이 아닙니다.\n- 법정신고기한이 지난 후 10년 이내: 10년은 부정행위가 있을 때의 부과제척기간과 혼동한 것입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "국세기본법",
+      "경정청구"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "investment-asset-manager-tax-0011",
+    "certId": "investment-asset-manager",
+    "subjectId": "products-tax",
+    "chapterId": "tax",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "다음 중 거주자의 금융소득종합과세 기준금액(연 2천만 원) 판단에 포함되는 소득을 모두 고른 것은?\n\nㄱ. 은행 정기예금 이자\nㄴ. 상장회사 주식의 현금배당\nㄷ. 소액주주가 증권시장에서 상장주식을 팔아 얻은 매매차익",
+    "choices": [
+      "ㄱ, ㄴ, ㄷ",
+      "ㄱ, ㄴ",
+      "ㄴ, ㄷ",
+      "ㄱ"
+    ],
+    "answer": 2,
+    "oneLineConcept": "금융소득종합과세는 이자소득+배당소득만 합산",
+    "explanation": "금융소득종합과세는 **이자소득과 배당소득**을 합쳐 2천만 원을 넘는지 봅니다.\n\n- ㄱ. 정기예금 이자 → 이자소득이므로 포함\n- ㄴ. 주식 현금배당 → 배당소득이므로 포함\n- ㄷ. 상장주식 매매차익 → 이자·배당소득이 아니라 주식을 판 차익이므로 포함되지 않습니다. 소액주주가 증권시장에서 판 상장주식 차익은 양도소득세 과세 대상도 아닙니다.\n\n**틀린 선지**\n- ㄱ, ㄴ, ㄷ: ㄷ의 상장주식 매매차익은 이자·배당소득이 아니므로 금융소득에 들어가지 않습니다.\n- ㄱ: ㄴ의 현금배당도 배당소득이므로 포함됩니다.\n- ㄴ, ㄷ: ㄱ의 정기예금 이자가 빠졌고, ㄷ은 금융소득이 아닙니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "금융소득종합과세"
+    ],
+    "levelLock": true
+  }
+]
