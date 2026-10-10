@@ -198,6 +198,11 @@ export const sourceRefSchema = z.object({
 export const certMetaSchema = certSummarySchema.extend({
   /** 목록에서의 순서 (작을수록 앞). 문제가 준비된 자격증은 이 값과 상관없이 항상 앞에 온다 */
   order: z.number().int().default(1000),
+  /** 문제를 풀 수 있게 추가된 날짜 (한국시간) YYYY-MM-DD. 사이트 하단 "기록" 페이지에 날짜별로 나온다 */
+  addedAt: z
+    .string()
+    .regex(/^\d{4}-\d{2}-\d{2}$/)
+    .optional(),
   /** 내용 최종 수정일 (sitemap lastmod) YYYY-MM-DD */
   updatedAt: z
     .string()

@@ -8,7 +8,7 @@
 1. **폴더 만들기**: `data/certs/{country}/{slug}/`
    - slug 는 영문 소문자·숫자·하이픈. 나라가 달라도 겹치면 안 되고, 한번 정하면 바꾸지 않는다.
    - "준비 중"으로 이미 있는 자격증이면 그 폴더에 파일을 채우면 된다.
-2. **`meta.json`**: 이름, 분야(`field`), 자격 종류(`certType`), 시행기관(`issuer`: 이름·공식 URL), 등급(있을 때만), `examInfo`(문항 수·시간·선지 수·합격 기준), `content`(소개·FAQ 3~5개), `sources`(공식 출제기준), `updatedAt`.
+2. **`meta.json`**: 이름, 분야(`field`), 자격 종류(`certType`), 시행기관(`issuer`: 이름·공식 URL), 등급(있을 때만), `examInfo`(문항 수·시간·선지 수·합격 기준), `content`(소개·FAQ 3~5개), `sources`(공식 출제기준), `updatedAt`, `addedAt`(추가한 날, 한국시간 — 사이트 하단 "기록" 페이지에 자동으로 나온다).
    시행기관이 어디든 방법은 같다. 미국 자격증은 그 기관의 상표 사용 규정을 확인해 `trademarkNotice` 에 상표 고지 문장을 적는다.
    - 과목·문항 수·합격 기준은 반드시 공식 출제기준으로 확인한다.
 3. **`chapters.json`**: 과목과 단원.

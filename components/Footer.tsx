@@ -6,7 +6,7 @@ import { LocaleSwitch } from "./i18n/LocaleSwitch";
 
 /**
  * 모든 일반 화면 맨 아래의 안내.
- * 맨 끝 두 줄: 그 나라에 지금 수록된 예상문제 수(빌드할 때 데이터에서 센 실제 값, 출제 중단 문제 제외)와 저작권 표시.
+ * 맨 끝: 자격증 추가 기록 링크(작게). 그 위 두 줄: 그 나라에 지금 수록된 예상문제 수(빌드할 때 데이터에서 센 실제 값, 출제 중단 문제 제외)와 저작권 표시.
  */
 export async function Footer({ locale }: { locale: Locale }) {
   const m = getMessages(locale);
@@ -45,6 +45,12 @@ export async function Footer({ locale }: { locale: Locale }) {
           {fmt(m.site.questionTotal, { n: total.toLocaleString(locale === "ko" ? "ko-KR" : "en-US") })}
         </p>
         <p>{fmt(m.site.copyright, { year: new Date().getFullYear(), brand })}</p>
+        {/* 자격증 추가 기록. 운영자 확인용이라 아주 작게 둔다 */}
+        <p className="text-xs">
+          <Link href={localePath(locale, "/log")} className="link">
+            {m.nav.addedLog}
+          </Link>
+        </p>
       </div>
     </footer>
   );

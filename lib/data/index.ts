@@ -152,6 +152,21 @@ export async function getCertList(country?: Country): Promise<CertListItem[]> {
   );
 }
 
+export interface AddedLogEntry {
+  date: string;
+  certs: { id: string; name: string }[];
+}
+
+/** 자격증 추가 기록 (meta.json 의 addedAt). 최근 날짜가 위. 사이트 하단 "기록" 페이지용 */
+export async function getAddedLog(country: Country): Promise<AddedLogEntry[]> {
+  const byDate = new Map<string, { id: string; name: string }[]>();
+  for (const { meta } of await loadCerts()) {
+    if (meta.country !== country || !meta.addedAt) continue;
+    byDate.set(meta.addedAt, [...(byDate.get(meta.addedAt) ?? []), { id: meta.id, name: meta.name }]);
+  }
+  return [...byDate].sort(([a], [b]) => b.localeCompare(a)).map(([date, certs]) => ({ date, certs }));
+}
+
 /** 자격증 한 건 (없으면 null) */
 export async function getCertification(id: string): Promise<Certification | null> {
   const cert = await findCert(id);
