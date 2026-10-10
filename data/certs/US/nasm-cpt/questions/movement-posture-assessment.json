@@ -211,5 +211,77 @@
         4
       ]
     }
+  },
+  {
+    "id": "nasm-cpt-movement-posture-assessment-0007",
+    "certId": "nasm-cpt",
+    "subjectId": "assessment",
+    "chapterId": "movement-posture-assessment",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "In an overhead squat assessment, the low back arches. Which muscle group is likely overactive?",
+    "choices": [
+      "Gluteus maximus",
+      "Hamstring complex",
+      "Hip flexor complex",
+      "Intrinsic core stabilizers"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Low back arches: hip flexors are overactive",
+    "explanation": "A low back arch often comes with overactive hip flexors and erector spinae. The glutes, hamstrings, and deep core muscles are often underactive.\n\n**Wrong choices**\n- Gluteus maximus: This muscle is likely underactive.\n- Hamstring complex: This muscle is likely underactive.\n- Intrinsic core stabilizers: These muscles are likely underactive.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "overhead squat",
+      "muscle imbalance"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "nasm-cpt-movement-posture-assessment-0008",
+    "certId": "nasm-cpt",
+    "subjectId": "assessment",
+    "chapterId": "movement-posture-assessment",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "In an overhead squat assessment, the client leans excessively forward. Which muscle is likely underactive?",
+    "choices": [
+      "Anterior tibialis",
+      "Soleus",
+      "Gastrocnemius",
+      "Hip flexor complex"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Forward lean: anterior tibialis is underactive",
+    "explanation": "With excessive forward lean, the soleus, gastrocnemius, and hip flexors are often overactive. The anterior tibialis, glutes, and erector spinae are underactive.\n\n**Wrong choices**\n- Soleus: This muscle is likely overactive.\n- Gastrocnemius: This muscle is likely overactive.\n- Hip flexor complex: This muscle group is likely overactive.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "overhead squat",
+      "muscle imbalance"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   }
 ]

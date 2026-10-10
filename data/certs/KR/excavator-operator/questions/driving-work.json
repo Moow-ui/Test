@@ -284,5 +284,41 @@
         3
       ]
     }
+  },
+  {
+    "id": "excavator-operator-driving-work-0009",
+    "certId": "excavator-operator",
+    "subjectId": "operation",
+    "chapterId": "driving-work",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "굴착기에서 굴착하는 힘이 가장 크게 나오는 붐과 암 사이의 각도는?",
+    "choices": [
+      "약 180도(일직선으로 편 상태)",
+      "약 10도(거의 접힌 상태)",
+      "각도와 상관없이 항상 같다.",
+      "약 90도(직각) 부근"
+    ],
+    "answer": 4,
+    "oneLineConcept": "붐과 암이 직각(약 90°) 부근일 때 굴착력 최대",
+    "explanation": "암 실린더가 암을 미는 힘은 지렛대처럼 **각도에 따라** 달라집니다. 붐과 암 사이가 **직각 부근**일 때 실린더 힘이 가장 잘 전달되어 굴착력이 가장 큽니다. 너무 접거나 너무 펴면 힘이 약해집니다.\n\n**틀린 선지**\n- 약 180도(일직선으로 편 상태): 암을 끝까지 펴면 실린더가 밀어 주는 방향이 맞지 않아 굴착력이 작습니다.\n- 약 10도(거의 접힌 상태): 암을 거의 접으면 실린더가 힘을 쓰기 어려운 자세라 굴착력이 작습니다.\n- 각도와 상관없이 항상 같다.: 실린더가 미는 방향과 지렛대 각도에 따라 힘이 달라지므로 항상 같지 않습니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "굴착 작업",
+      "작업장치"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
   }
 ]
