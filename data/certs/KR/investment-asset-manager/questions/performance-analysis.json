@@ -1,0 +1,244 @@
+[
+  {
+    "id": "investment-asset-manager-performance-analysis-0001",
+    "certId": "investment-asset-manager",
+    "subjectId": "ethics-law-strategy1",
+    "chapterId": "performance-analysis",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "어떤 펀드의 수익률이 12%, 무위험이자율이 3%, 펀드 수익률의 표준편차가 18%일 때 샤프지수는?",
+    "choices": [
+      "0.75",
+      "0.67",
+      "2.0",
+      "0.5"
+    ],
+    "answer": 4,
+    "oneLineConcept": "샤프지수 = (수익률 − 무위험이자율) ÷ 표준편차",
+    "explanation": "**샤프지수**는 전체 위험(표준편차) 한 단위당 초과수익을 나타냅니다.\n\n1. 초과수익률 = 12% − 3% = 9%\n2. 샤프지수 = 9% ÷ 18% = **0.5**\n3. 검산: 18% × 0.5 = 9%\n\n**틀린 선지**\n- 0.67: 0.67은 무위험이자율을 빼지 않고 12% ÷ 18%로 계산한 값입니다.\n- 0.75: 0.75는 초과수익률 9%를 수익률 12%로 나눈 값입니다.\n- 2.0: 2.0은 분자와 분모를 거꾸로 하여 18% ÷ 9%로 계산한 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "샤프지수",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "investment-asset-manager-performance-analysis-0002",
+    "certId": "investment-asset-manager",
+    "subjectId": "ethics-law-strategy1",
+    "chapterId": "performance-analysis",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "어떤 포트폴리오의 수익률이 10%, 무위험이자율이 2%, 베타가 0.8일 때 트레이너지수는?",
+    "choices": [
+      "10%",
+      "8%",
+      "12.5%",
+      "6.4%"
+    ],
+    "answer": 1,
+    "oneLineConcept": "트레이너지수 = (수익률 − 무위험이자율) ÷ 베타",
+    "explanation": "**트레이너지수**는 체계적 위험(베타) 한 단위당 초과수익을 나타냅니다.\n\n1. 초과수익률 = 10% − 2% = 8%\n2. 트레이너지수 = 8% ÷ 0.8 = **10%**\n3. 검산: 0.8 × 10% = 8%\n\n**틀린 선지**\n- 12.5%: 12.5%는 무위험이자율을 빼지 않고 10% ÷ 0.8로 계산한 값입니다.\n- 6.4%: 6.4%는 초과수익률에 베타를 나누지 않고 곱한 값(8% × 0.8)입니다.\n- 8%: 8%는 초과수익률만 구하고 베타로 나누지 않은 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "트레이너지수",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "investment-asset-manager-performance-analysis-0003",
+    "certId": "investment-asset-manager",
+    "subjectId": "ethics-law-strategy1",
+    "chapterId": "performance-analysis",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "펀드 수익률이 14%, 무위험이자율이 4%, 시장수익률이 10%, 펀드 베타가 1.5일 때 젠센의 알파는?",
+    "choices": [
+      "+5%",
+      "+4%",
+      "+1%",
+      "−1%"
+    ],
+    "answer": 3,
+    "oneLineConcept": "젠센 알파 = 실제 수익률 − [Rf + β(Rm − Rf)]",
+    "explanation": "**젠센의 알파**는 실제 수익률이 CAPM으로 구한 기대수익률보다 얼마나 높은지 봅니다.\n\n1. CAPM 기대수익률 = 4% + 1.5 × (10% − 4%) = 4% + 9% = 13%\n2. 알파 = 14% − 13% = **+1%**\n3. 검산: 13% + 1% = 14% (실제 수익률)\n\n0보다 크므로 감수한 위험에 비해 1%p 더 벌었다는 뜻입니다.\n\n**틀린 선지**\n- +4%: +4%는 펀드 수익률에서 시장수익률을 단순히 뺀 값(14% − 10%)으로, 베타를 반영하지 않았습니다.\n- −1%: −1%는 부호를 거꾸로 한 값입니다. 실제 수익률이 기대수익률보다 높으므로 양수입니다.\n- +5%: +5%는 기대수익률을 계산할 때 무위험이자율 4%를 더하지 않고 1.5 × 6% = 9%만 빼서 구한 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "젠센 알파",
+      "CAPM",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "investment-asset-manager-performance-analysis-0004",
+    "certId": "investment-asset-manager",
+    "subjectId": "ethics-law-strategy1",
+    "chapterId": "performance-analysis",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "펀드매니저의 운용 능력을 평가할 때 시간가중수익률을 쓰는 가장 큰 이유는?",
+    "choices": [
+      "투자자가 실제로 번 금액을 가장 정확히 보여 주기 때문이다",
+      "투자자가 돈을 넣고 빼는 시점과 금액의 영향을 없애 운용자가 통제할 수 있는 성과만 보여 주기 때문이다",
+      "수익률이 항상 금액가중수익률보다 높게 나오기 때문이다",
+      "계산할 때 기간별 자료가 전혀 필요 없기 때문이다"
+    ],
+    "answer": 2,
+    "oneLineConcept": "운용자 평가 = 시간가중수익률(자금 유출입 영향 제거)",
+    "explanation": "**시간가중수익률**은 자금이 들어오고 나가는 시점마다 기간을 나누어 각 기간 수익률을 곱해 연결합니다.\n\n- 투자자가 언제 얼마나 돈을 넣고 뺐는지는 운용자가 정할 수 없으므로, 그 영향을 없애야 공정하게 평가할 수 있습니다.\n- 반대로 금액가중수익률(내부수익률)은 자금 유출입 영향이 들어가 투자자 입장의 실제 성과를 보여 줍니다.\n\n**틀린 선지**\n- 투자자가 실제로 번 금액을 가장 정확히 보여 주기 때문이다: 투자자의 실제 성과를 보여 주는 것은 금액가중수익률입니다.\n- 계산할 때 기간별 자료가 전혀 필요 없기 때문이다: 시간가중수익률은 자금 유출입 시점마다의 기간별 자료가 필요합니다.\n- 수익률이 항상 금액가중수익률보다 높게 나오기 때문이다: 시간가중수익률이 항상 더 높게 나오는 것은 아닙니다. 자금 유출입 시점에 따라 어느 쪽이든 높을 수 있습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "시간가중수익률"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "investment-asset-manager-performance-analysis-0005",
+    "certId": "investment-asset-manager",
+    "subjectId": "ethics-law-strategy1",
+    "chapterId": "performance-analysis",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "어떤 펀드의 수익률이 12%, 벤치마크 수익률이 10%, 추적오차(초과수익률의 표준편차)가 4%, 펀드 수익률의 표준편차가 16%이다. 이 펀드의 정보비율은?",
+    "choices": [
+      "2.0",
+      "0.5",
+      "0.125",
+      "3.0"
+    ],
+    "answer": 2,
+    "oneLineConcept": "정보비율 = (펀드 수익률 − 벤치마크 수익률) ÷ 추적오차",
+    "explanation": "**정보비율**은 벤치마크를 벗어나며 감수한 위험(추적오차) 한 단위당 초과수익을 나타냅니다.\n\n1. 초과수익률 = 12% − 10% = 2%\n2. 정보비율 = 2% ÷ 4% = **0.5**\n3. 검산: 4% × 0.5 = 2%\n\n**틀린 선지**\n- 0.125: 0.125는 추적오차 대신 펀드 수익률의 표준편차 16%로 나눈 값입니다.\n- 2.0: 2.0은 분자와 분모를 거꾸로 하여 4% ÷ 2%로 계산한 값입니다.\n- 3.0: 3.0은 초과수익률 대신 펀드 수익률 12%를 추적오차 4%로 나눈 값입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "정보비율",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "investment-asset-manager-performance-analysis-0006",
+    "certId": "investment-asset-manager",
+    "subjectId": "ethics-law-strategy1",
+    "chapterId": "performance-analysis",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "어떤 펀드의 수익률이 첫해 +50%, 둘째 해 −50%였다. 이 기간의 연평균 기하평균 수익률은 약 얼마인가?",
+    "choices": [
+      "−25%",
+      "약 +13.4%",
+      "0%",
+      "약 −13.4%"
+    ],
+    "answer": 4,
+    "oneLineConcept": "기하평균 = √[(1+r₁)(1+r₂)] − 1",
+    "explanation": "여러 해의 평균 수익률은 실제 결과와 맞는 **기하평균**으로 봅니다.\n\n1. 두 해를 연결한 값 = 1.5 × 0.5 = 0.75 (원금 100이 75가 됨)\n2. 연평균 = √0.75 − 1 ≈ 0.866 − 1 = **약 −13.4%**\n3. 검산: 0.866 × 0.866 ≈ 0.75\n\n산술평균은 (50% − 50%) ÷ 2 = 0%이지만 실제로는 25%를 잃었습니다.\n\n**틀린 선지**\n- 0%: 0%는 산술평균입니다. 실제로는 원금 100이 75가 되었으므로 손실입니다.\n- −25%: −25%는 2년 동안의 누적 수익률(0.75 − 1)입니다. 연평균이 아닙니다.\n- 약 +13.4%: 약 +13.4%는 부호를 거꾸로 한 값입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "기하평균",
+      "수익률",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "investment-asset-manager-performance-analysis-0007",
+    "certId": "investment-asset-manager",
+    "subjectId": "ethics-law-strategy1",
+    "chapterId": "performance-analysis",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "운용 성과를 평가하는 벤치마크가 갖추어야 할 조건으로 옳지 않은 것은?",
+    "choices": [
+      "운용을 시작하기 전에 미리 정해 둔다",
+      "구성 종목과 비중이 명확하여 실제로 투자할 수 있다",
+      "운용 기간이 끝난 뒤 성과를 보고 가장 유리한 지수를 고른다",
+      "수익률을 객관적으로 측정하고 계산할 수 있다"
+    ],
+    "answer": 3,
+    "oneLineConcept": "벤치마크는 운용 전에 미리 정한다",
+    "explanation": "좋은 벤치마크의 조건은 다음과 같습니다.\n\n- 운용 전에 미리 정해 둘 것(사전성)\n- 구성 종목과 비중이 명확하고 실제로 투자할 수 있을 것\n- 수익률을 측정할 수 있을 것\n- 운용 스타일·목표에 적합할 것\n\n**틀린 선지**\n- 운용 기간이 끝난 뒤 성과를 보고 가장 유리한 지수를 고른다: 벤치마크를 나중에 고르면 성과를 부풀릴 수 있으므로, 반드시 운용 전에 정해야 합니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "벤치마크"
+    ],
+    "levelLock": true
+  }
+]

@@ -1,0 +1,508 @@
+[
+  {
+    "id": "investment-asset-manager-investment-analysis-0001",
+    "certId": "investment-asset-manager",
+    "subjectId": "strategy2-analysis",
+    "chapterId": "investment-analysis",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "주가가 30,000원이고 주당순이익(EPS)이 2,000원인 기업의 주가수익비율(PER)은?",
+    "choices": [
+      "1.5배",
+      "15배",
+      "10배",
+      "약 0.07배"
+    ],
+    "answer": 2,
+    "oneLineConcept": "PER = 주가 ÷ 주당순이익(EPS)",
+    "explanation": "**PER(주가수익비율)**은 주가가 주당순이익의 몇 배인지 보여 줍니다.\n\n1. PER = 주가 ÷ 주당순이익\n2. = 30,000원 ÷ 2,000원 = **15배**\n3. 검산: 2,000원 × 15 = 30,000원\n\n**틀린 선지**\n- 1.5배: 1.5배는 자릿수를 잘못 계산한 값입니다. 30,000 ÷ 2,000은 15입니다.\n- 10배: 10배는 주당순이익을 3,000원으로 잘못 넣은 값입니다. 30,000 ÷ 2,000은 15입니다.\n- 약 0.07배: 약 0.07배는 주당순이익을 주가로 거꾸로 나눈 값(2,000 ÷ 30,000)입니다. 이것은 PER의 역수인 이익수익률입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "PER",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "investment-asset-manager-investment-analysis-0002",
+    "certId": "investment-asset-manager",
+    "subjectId": "strategy2-analysis",
+    "chapterId": "investment-analysis",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "주가가 12,000원이고 주당순자산(BPS)이 15,000원인 기업의 주가순자산비율(PBR)은?",
+    "choices": [
+      "0.8배",
+      "8배",
+      "1.25배",
+      "0.6배"
+    ],
+    "answer": 1,
+    "oneLineConcept": "PBR = 주가 ÷ 주당순자산(BPS)",
+    "explanation": "**PBR(주가순자산비율)**은 주가가 장부상 주당순자산의 몇 배인지 보여 줍니다.\n\n1. PBR = 주가 ÷ 주당순자산\n2. = 12,000원 ÷ 15,000원 = **0.8배**\n3. 검산: 15,000원 × 0.8 = 12,000원\n\n1보다 작으므로 주가가 장부상 순자산보다 낮게 거래되고 있다는 뜻입니다.\n\n**틀린 선지**\n- 1.25배: 1.25배는 분자와 분모를 거꾸로 하여 15,000 ÷ 12,000으로 계산한 값입니다.\n- 8배: 8배는 소수점 자리를 잘못 옮긴 값입니다.\n- 0.6배: 0.6배는 계산 근거가 없는 값입니다. 12,000 ÷ 15,000은 0.8입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "PBR",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "investment-asset-manager-investment-analysis-0003",
+    "certId": "investment-asset-manager",
+    "subjectId": "strategy2-analysis",
+    "chapterId": "investment-analysis",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "어떤 기업의 매출액순이익률이 5%, 총자산회전율이 1.2회, 총자산을 자기자본으로 나눈 값(재무레버리지)이 2.5배이다. DuPont 분석에 따른 자기자본이익률(ROE)은?",
+    "choices": [
+      "15%",
+      "12.5%",
+      "6%",
+      "2.4%"
+    ],
+    "answer": 1,
+    "oneLineConcept": "ROE = 순이익률 × 총자산회전율 × 총자산/자기자본",
+    "explanation": "**DuPont 분석**은 ROE를 세 가지 요소의 곱으로 나누어 봅니다.\n\n1. ROE = 매출액순이익률 × 총자산회전율 × (총자산 ÷ 자기자본)\n2. = 5% × 1.2 × 2.5\n3. 5% × 1.2 = 6%, 6% × 2.5 = **15%**\n4. 검산: 순이익/매출 × 매출/총자산 × 총자산/자기자본 = 순이익/자기자본\n\n**틀린 선지**\n- 6%: 6%는 재무레버리지(2.5배)를 곱하지 않은 값으로, 총자산이익률(ROA)입니다.\n- 12.5%: 12.5%는 총자산회전율(1.2회)을 곱하지 않은 값입니다.\n- 2.4%: 2.4%는 재무레버리지를 곱하지 않고 나눈 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "DuPont",
+      "ROE",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "investment-asset-manager-investment-analysis-0004",
+    "certId": "investment-asset-manager",
+    "subjectId": "strategy2-analysis",
+    "chapterId": "investment-analysis",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A기업은 올해 주당 1,000원을 배당했고 배당이 매년 5%씩 늘어날 것으로 예상된다. 투자자의 요구수익률이 10%라면 정률성장 배당할인모형으로 구한 A기업 주식의 이론가격은?",
+    "choices": [
+      "20,000원",
+      "10,500원",
+      "7,000원",
+      "21,000원"
+    ],
+    "answer": 4,
+    "oneLineConcept": "주가 = D1 ÷ (k − g), D1 = 올해 배당 × (1 + g)",
+    "explanation": "**정률성장 배당할인모형**(고든 모형)의 주가는 다음 해 배당을 (요구수익률 − 성장률)로 나눈 값입니다.\n\n1. 다음 해 배당 D1 = 1,000원 × (1 + 0.05) = 1,050원\n2. 주가 = 1,050원 ÷ (0.10 − 0.05) = 1,050원 ÷ 0.05 = **21,000원**\n3. 검산: 21,000원 × 0.05 = 1,050원\n\n**틀린 선지**\n- 20,000원: 20,000원은 올해 배당 1,000원을 그대로 넣은 값입니다. 다음 해 배당(1,050원)을 써야 합니다.\n- 10,500원: 10,500원은 1,050원을 요구수익률 10%로만 나누고 성장률을 빼지 않은 값입니다.\n- 7,000원: 7,000원은 1,050원을 요구수익률과 성장률을 더한 15%로 나눈 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "배당할인모형",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "investment-asset-manager-investment-analysis-0005",
+    "certId": "investment-asset-manager",
+    "subjectId": "strategy2-analysis",
+    "chapterId": "investment-analysis",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "자기자본이익률(ROE)이 12%이고 배당성향이 40%인 기업이 같은 ROE와 배당성향을 계속 유지한다면, 이 기업의 지속가능 성장률(g)은?",
+    "choices": [
+      "12%",
+      "4.8%",
+      "7.2%",
+      "20%"
+    ],
+    "answer": 3,
+    "oneLineConcept": "성장률 g = ROE × 유보율(1 − 배당성향)",
+    "explanation": "기업이 이익 가운데 배당하지 않고 남긴(유보한) 돈을 ROE만큼의 수익률로 다시 투자하면 그만큼 성장한다고 봅니다.\n\n1. 유보율 = 1 − 배당성향 = 1 − 0.40 = 0.60\n2. 성장률 = ROE × 유보율 = 12% × 0.60 = **7.2%**\n3. 검산: 7.2% ÷ 0.60 = 12% (ROE와 같음)\n\n**틀린 선지**\n- 4.8%: 4.8%는 유보율 대신 배당성향(40%)을 곱한 값입니다.\n- 12%: 12%는 ROE 그대로입니다. 이익을 모두 남길 때만 성장률이 ROE와 같습니다.\n- 20%: 20%는 ROE에 유보율을 곱하지 않고 나눈 값(12% ÷ 0.6)입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "성장률",
+      "유보율",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "investment-asset-manager-investment-analysis-0006",
+    "certId": "investment-asset-manager",
+    "subjectId": "strategy2-analysis",
+    "chapterId": "investment-analysis",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "정률성장 배당할인모형이 성립한다고 하자. 배당성향이 40%, 요구수익률이 10%, 배당성장률이 6%일 때 다음 해 이익을 기준으로 한 이론적 PER은?",
+    "choices": [
+      "15배",
+      "10배",
+      "4배",
+      "약 6.7배"
+    ],
+    "answer": 2,
+    "oneLineConcept": "이론 PER(다음 해 이익 기준) = 배당성향 ÷ (k − g)",
+    "explanation": "정률성장모형 P = D1 ÷ (k − g)의 양변을 다음 해 주당순이익(E1)으로 나누면 이론적 PER을 얻습니다.\n\n1. PER = (D1 ÷ E1) ÷ (k − g) = 배당성향 ÷ (k − g)\n2. = 0.40 ÷ (0.10 − 0.06) = 0.40 ÷ 0.04 = **10배**\n3. 검산: 0.04 × 10 = 0.40\n\n**틀린 선지**\n- 4배: 4배는 0.40을 요구수익률 0.10으로만 나눈 값입니다. 성장률을 빼야 합니다.\n- 15배: 15배는 배당성향 대신 유보율(0.60)을 넣어 0.60 ÷ 0.04로 계산한 값입니다.\n- 약 6.7배: 약 6.7배는 0.40을 성장률 0.06으로 나눈 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "PER",
+      "배당할인모형",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "investment-asset-manager-investment-analysis-0007",
+    "certId": "investment-asset-manager",
+    "subjectId": "strategy2-analysis",
+    "chapterId": "investment-analysis",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "다음 자료로 계산한 A기업의 EV/EBITDA 배수는?\n\n- 시가총액: 800억 원\n- 순차입금(차입금 − 현금성자산): 200억 원\n- 영업이익: 100억 원\n- EBITDA(이자·세금·감가상각비 차감 전 이익): 125억 원",
+    "choices": [
+      "10배",
+      "6.4배",
+      "4.8배",
+      "8배"
+    ],
+    "answer": 4,
+    "oneLineConcept": "EV = 시가총액 + 순차입금, EV/EBITDA",
+    "explanation": "**EV/EBITDA**는 기업 전체 가치(EV)가 EBITDA의 몇 배인지 보여 줍니다.\n\n1. EV = 시가총액 + 순차입금 = 800억 + 200억 = 1,000억 원\n2. EV/EBITDA = 1,000억 ÷ 125억 = **8배**\n3. 검산: 125억 × 8 = 1,000억\n\n**틀린 선지**\n- 6.4배: 6.4배는 순차입금을 더하지 않고 시가총액 800억 원만 EBITDA로 나눈 값입니다.\n- 10배: 10배는 EBITDA 대신 영업이익 100억 원으로 나눈 값입니다.\n- 4.8배: 4.8배는 시가총액에서 순차입금을 빼서(600억 원) 나눈 값입니다. 순차입금은 더해야 합니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "EV/EBITDA",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "investment-asset-manager-investment-analysis-0008",
+    "certId": "investment-asset-manager",
+    "subjectId": "strategy2-analysis",
+    "chapterId": "investment-analysis",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "다음 자료로 계산한 A기업의 기업잉여현금흐름(FCFF)은?\n\n- 영업이익(EBIT): 100억 원\n- 법인세율: 20%\n- 감가상각비: 30억 원\n- 자본적 지출(설비투자): 40억 원\n- 순운전자본 증가분: 10억 원",
+    "choices": [
+      "80억 원",
+      "60억 원",
+      "70억 원",
+      "30억 원"
+    ],
+    "answer": 2,
+    "oneLineConcept": "FCFF = EBIT(1−t) + 감가상각비 − 자본적지출 − 순운전자본 증가",
+    "explanation": "**기업잉여현금흐름(FCFF)**은 영업으로 번 현금에서 꼭 필요한 투자를 하고 남은 현금입니다.\n\n1. 세후 영업이익 = 100억 × (1 − 0.2) = 80억 원\n2. 감가상각비는 현금이 나가지 않는 비용이므로 더함: 80억 + 30억 = 110억 원\n3. 자본적 지출을 뺌: 110억 − 40억 = 70억 원\n4. 순운전자본 증가분을 뺌: 70억 − 10억 = **60억 원**\n5. 검산: 80 + 30 − 40 − 10 = 60\n\n**틀린 선지**\n- 70억 원: 70억 원은 순운전자본 증가분(10억 원)을 빼지 않은 값입니다.\n- 30억 원: 30억 원은 감가상각비(30억 원)를 더하지 않은 값입니다.\n- 80억 원: 80억 원은 세후 영업이익만 구하고 나머지 조정을 하지 않은 값입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "잉여현금흐름",
+      "FCFF",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "investment-asset-manager-investment-analysis-0009",
+    "certId": "investment-asset-manager",
+    "subjectId": "strategy2-analysis",
+    "chapterId": "investment-analysis",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "기술적 분석에서 '골든크로스'에 대한 설명으로 옳은 것은?",
+    "choices": [
+      "단기 이동평균선이 장기 이동평균선을 위에서 아래로 뚫고 내려가는 것으로, 매도 신호로 본다",
+      "주가가 직전 고점을 넘지 못하고 두 번 꺾이는 것으로, 하락 신호로 본다",
+      "단기 이동평균선이 장기 이동평균선을 아래에서 위로 뚫고 올라가는 것으로, 매수 신호로 본다",
+      "거래량이 줄면서 주가가 옆으로 움직이는 것으로, 추세가 없다는 신호로 본다"
+    ],
+    "answer": 3,
+    "oneLineConcept": "골든크로스 = 단기선이 장기선을 상향 돌파(매수 신호)",
+    "explanation": "**골든크로스**는 최근 주가 흐름(단기 이동평균선)이 긴 기간의 평균(장기 이동평균선)을 아래에서 위로 넘어서는 것으로, 상승 추세로 바뀌는 매수 신호로 봅니다.\n\n- 반대로 단기선이 장기선을 위에서 아래로 뚫고 내려가면 **데드크로스**(매도 신호)입니다.\n\n**틀린 선지**\n- 단기 이동평균선이 장기 이동평균선을 위에서 아래로 뚫고 내려가는 것으로, 매도 신호로 본다: 단기선이 장기선을 위에서 아래로 뚫는 것은 데드크로스입니다.\n- 주가가 직전 고점을 넘지 못하고 두 번 꺾이는 것으로, 하락 신호로 본다: 고점을 두 번 넘지 못하고 꺾이는 것은 이중천정형(쌍봉) 같은 반전형 패턴입니다.\n- 거래량이 줄면서 주가가 옆으로 움직이는 것으로, 추세가 없다는 신호로 본다: 거래량이 줄며 옆으로 움직이는 것은 횡보(보합) 국면을 말하며 골든크로스가 아닙니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "이동평균선",
+      "골든크로스"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "investment-asset-manager-investment-analysis-0010",
+    "certId": "investment-asset-manager",
+    "subjectId": "strategy2-analysis",
+    "chapterId": "investment-analysis",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "다우이론에서 강세시장의 첫 단계로, 경기 전망이 어둡다고 보는 일반 투자자들이 판 주식을 앞을 내다보는 전문투자자들이 사들이는 국면은?",
+    "choices": [
+      "매집국면",
+      "과열국면",
+      "공포국면",
+      "분산국면"
+    ],
+    "answer": 1,
+    "oneLineConcept": "다우이론 강세시장: 매집 → 상승 → 과열",
+    "explanation": "**다우이론**은 주가의 큰 흐름을 국면으로 나눕니다.\n\n- 강세시장: **매집국면** → 상승국면 → 과열국면\n- 약세시장: 분산국면 → 공포국면 → 침체국면\n\n매집국면에서는 아직 나쁜 소식이 많지만 전문투자자들이 낮은 가격에 조용히 주식을 사 모읍니다.\n\n**틀린 선지**\n- 과열국면: 과열국면은 강세시장의 마지막 단계로, 일반 투자자까지 몰려 과열되는 때입니다.\n- 분산국면: 분산국면은 약세시장의 첫 단계로, 전문투자자들이 높은 가격에서 주식을 파는 때입니다.\n- 공포국면: 공포국면은 약세시장에서 매도가 쏟아지며 주가가 크게 떨어지는 때입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "다우이론"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "investment-asset-manager-investment-analysis-0011",
+    "certId": "investment-asset-manager",
+    "subjectId": "strategy2-analysis",
+    "chapterId": "investment-analysis",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "엘리어트 파동이론의 기본 규칙으로 옳은 것은?",
+    "choices": [
+      "4번 파동의 저점은 반드시 1번 파동의 고점과 겹쳐야 한다",
+      "하락 국면은 5개의 파동으로 이루어진다",
+      "2번 파동은 1번 파동의 출발점보다 아래로 내려갈 수 있다",
+      "상승 충격파(1·3·5번 파동) 가운데 3번 파동이 가장 짧은 파동이 될 수는 없다"
+    ],
+    "answer": 4,
+    "oneLineConcept": "엘리어트: 상승 5파+하락 3파, 3번 파동은 가장 짧을 수 없음",
+    "explanation": "**엘리어트 파동이론**은 주가가 상승 5개 파동과 하락 3개 파동으로 한 사이클을 이룬다고 봅니다. 기본 규칙은 다음과 같습니다.\n\n- 2번 파동은 1번 파동의 출발점 아래로 내려가지 않습니다.\n- **3번 파동은 1·3·5번 충격파 가운데 가장 짧을 수 없습니다**(대개 가장 깁니다).\n- 4번 파동의 저점은 1번 파동의 고점과 겹치지 않습니다.\n\n**틀린 선지**\n- 2번 파동은 1번 파동의 출발점보다 아래로 내려갈 수 있다: 2번 파동이 1번 파동의 출발점 아래로 내려가면 파동을 잘못 센 것으로 봅니다.\n- 4번 파동의 저점은 반드시 1번 파동의 고점과 겹쳐야 한다: 4번 파동은 1번 파동의 고점과 겹치지 않는 것이 규칙입니다.\n- 하락 국면은 5개의 파동으로 이루어진다: 하락 국면은 3개의 파동(a·b·c)으로 이루어집니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "엘리어트 파동"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "investment-asset-manager-investment-analysis-0012",
+    "certId": "investment-asset-manager",
+    "subjectId": "strategy2-analysis",
+    "chapterId": "investment-analysis",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "상대강도지수(RSI)를 이용할 때 일반적으로 '과매수' 상태로 보는 구간은?",
+    "choices": [
+      "70 이상",
+      "20 이하",
+      "50 근처",
+      "30 이하"
+    ],
+    "answer": 1,
+    "oneLineConcept": "RSI 70 이상 과매수, 30 이하 과매도",
+    "explanation": "**RSI(상대강도지수)**는 일정 기간 주가 상승폭과 하락폭을 비교해 0에서 100 사이 값으로 나타낸 지표입니다.\n\n- 일반적으로 **70 이상**이면 너무 많이 올랐다는 과매수 상태로 봅니다.\n- 30 이하이면 너무 많이 떨어졌다는 과매도 상태로 봅니다.\n\n**틀린 선지**\n- 30 이하: 30 이하는 과매도 구간입니다.\n- 50 근처: 50 근처는 상승과 하락 힘이 비슷한 중립 구간입니다.\n- 20 이하: 20 이하는 과매도 쪽에 더 가까운 구간입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "RSI",
+      "보조지표"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "investment-asset-manager-investment-analysis-0013",
+    "certId": "investment-asset-manager",
+    "subjectId": "strategy2-analysis",
+    "chapterId": "investment-analysis",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "산업의 수명주기 가운데 매출이 빠르게 늘고 이익이 커지며 새로운 경쟁자가 많이 들어오는 단계는?",
+    "choices": [
+      "쇠퇴기",
+      "성숙기",
+      "성장기",
+      "도입기"
+    ],
+    "answer": 3,
+    "oneLineConcept": "산업 수명주기: 도입기 → 성장기 → 성숙기 → 쇠퇴기",
+    "explanation": "산업은 대체로 네 단계를 거칩니다.\n\n- 도입기: 제품이 처음 나와 매출이 적고 적자인 경우가 많음\n- **성장기**: 수요가 빠르게 늘어 매출과 이익이 크게 늘고, 새 경쟁자가 많이 들어옴\n- 성숙기: 매출 증가가 둔해지고 경쟁이 치열해져 이익률이 낮아짐\n- 쇠퇴기: 수요가 줄어 매출과 이익이 감소\n\n**틀린 선지**\n- 성숙기: 성숙기는 매출 증가가 둔해지고 경쟁이 치열해지는 단계입니다.\n- 도입기: 도입기는 매출이 적고 손실이 나기 쉬운 첫 단계입니다.\n- 쇠퇴기: 쇠퇴기는 수요가 줄어 매출이 감소하는 단계입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "산업분석",
+      "수명주기"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "investment-asset-manager-investment-analysis-0014",
+    "certId": "investment-asset-manager",
+    "subjectId": "strategy2-analysis",
+    "chapterId": "investment-analysis",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "마이클 포터의 산업 경쟁구조 분석에서 산업의 경쟁 강도를 결정하는 다섯 가지 힘에 포함되는 것은?",
+    "choices": [
+      "중앙은행의 금리 정책",
+      "대체재의 위협",
+      "환율 변동",
+      "경기순환"
+    ],
+    "answer": 2,
+    "oneLineConcept": "포터의 5가지 힘: 기존 경쟁·신규 진입·대체재·구매자·공급자",
+    "explanation": "**포터의 다섯 가지 힘(5 Forces)**은 산업 안의 경쟁 강도와 수익성을 결정하는 요인입니다.\n\n- 기존 기업 사이의 경쟁\n- 새로운 기업의 진입 위협\n- **대체재의 위협**\n- 구매자의 교섭력\n- 공급자의 교섭력\n\n**틀린 선지**\n- 중앙은행의 금리 정책: 금리 정책은 경제 전체에 영향을 주는 거시경제 요인이며 다섯 가지 힘에 포함되지 않습니다.\n- 환율 변동: 환율 변동은 거시경제 요인입니다.\n- 경기순환: 경기순환은 거시경제 요인입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "산업분석",
+      "포터"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+]

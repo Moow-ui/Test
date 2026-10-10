@@ -1,0 +1,257 @@
+[
+  {
+    "id": "investment-asset-manager-diversification-0001",
+    "certId": "investment-asset-manager",
+    "subjectId": "ethics-law-strategy1",
+    "chapterId": "diversification",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "여러 종목에 나누어 투자하면 줄일 수 있는 위험은?",
+    "choices": [
+      "비체계적 위험(기업 고유의 위험)",
+      "금리 변동에 따른 시장 전체의 위험",
+      "체계적 위험(시장 위험)",
+      "경기 침체에 따른 시장 전체의 위험"
+    ],
+    "answer": 1,
+    "oneLineConcept": "분산투자로 줄이는 위험 = 비체계적 위험",
+    "explanation": "위험은 두 종류로 나뉩니다.\n\n- **비체계적 위험**: 파업, 소송, 경영진 문제처럼 개별 기업에만 생기는 위험. 여러 종목에 나누어 투자하면 서로 상쇄되어 줄어듭니다.\n- 체계적 위험: 경기, 금리, 환율처럼 시장 전체에 영향을 주는 위험. 분산투자로도 없앨 수 없습니다.\n\n**틀린 선지**\n- 체계적 위험(시장 위험): 체계적 위험은 시장 전체에 영향을 주므로 분산투자로 없앨 수 없습니다.\n- 금리 변동에 따른 시장 전체의 위험: 금리 변동은 모든 기업에 영향을 주는 체계적 위험입니다.\n- 경기 침체에 따른 시장 전체의 위험: 경기 침체는 모든 기업에 영향을 주는 체계적 위험입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "체계적 위험",
+      "비체계적 위험"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "investment-asset-manager-diversification-0002",
+    "certId": "investment-asset-manager",
+    "subjectId": "ethics-law-strategy1",
+    "chapterId": "diversification",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "자산 A(기대수익률 10%)에 60%, 자산 B(기대수익률 5%)에 40%를 투자한 포트폴리오의 기대수익률은?",
+    "choices": [
+      "15%",
+      "7%",
+      "8%",
+      "7.5%"
+    ],
+    "answer": 3,
+    "oneLineConcept": "포트폴리오 기대수익률 = 비중 × 기대수익률의 합",
+    "explanation": "포트폴리오의 기대수익률은 각 자산 기대수익률을 투자 비중으로 가중평균한 값입니다.\n\n1. 0.6 × 10% = 6%\n2. 0.4 × 5% = 2%\n3. 합계 = 6% + 2% = **8%**\n4. 검산: 비중 합 0.6 + 0.4 = 1\n\n**틀린 선지**\n- 7.5%: 7.5%는 비중을 무시하고 두 수익률을 단순 평균한 값입니다.\n- 7%: 7%는 비중을 거꾸로 적용한 값(0.4 × 10% + 0.6 × 5%)입니다.\n- 15%: 15%는 두 수익률을 단순히 더한 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "포트폴리오",
+      "기대수익률",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "investment-asset-manager-diversification-0003",
+    "certId": "investment-asset-manager",
+    "subjectId": "ethics-law-strategy1",
+    "chapterId": "diversification",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "두 자산으로 포트폴리오를 만들 때 분산투자에 따른 위험 감소 효과가 가장 큰 상관계수는?",
+    "choices": [
+      "0",
+      "−1",
+      "+0.5",
+      "+1"
+    ],
+    "answer": 2,
+    "oneLineConcept": "상관계수 −1일 때 분산효과 최대(위험 0 가능)",
+    "explanation": "**상관계수**는 두 자산이 함께 움직이는 정도로 −1에서 +1 사이입니다.\n\n- +1: 똑같이 움직여 분산효과가 없습니다.\n- 0: 서로 관계없이 움직여 어느 정도 분산효과가 있습니다.\n- **−1**: 정반대로 움직여 분산효과가 가장 크며, 비중을 맞추면 위험을 0으로 만들 수 있습니다.\n\n**틀린 선지**\n- 0: 0은 분산효과가 있지만 −1보다는 작습니다.\n- +0.5: +0.5는 꽤 같은 방향으로 움직여 분산효과가 작은 편입니다.\n- +1: +1은 완전히 같이 움직여 분산효과가 전혀 없습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "상관계수",
+      "분산효과"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "investment-asset-manager-diversification-0004",
+    "certId": "investment-asset-manager",
+    "subjectId": "ethics-law-strategy1",
+    "chapterId": "diversification",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "자산 A의 표준편차는 20%, 자산 B의 표준편차는 10%이고 두 자산 수익률의 상관계수는 0이다. 두 자산에 50%씩 투자한 포트폴리오의 표준편차는 약 얼마인가?",
+    "choices": [
+      "약 13.2%",
+      "약 11.2%",
+      "5%",
+      "15%"
+    ],
+    "answer": 2,
+    "oneLineConcept": "σp² = w₁²σ₁² + w₂²σ₂² + 2w₁w₂ρσ₁σ₂",
+    "explanation": "두 자산 포트폴리오의 위험은 분산을 먼저 구한 뒤 제곱근을 씌웁니다.\n\n1. 분산 = 0.5² × 20² + 0.5² × 10² + 2 × 0.5 × 0.5 × 0 × 20 × 10\n2. = 0.25 × 400 + 0.25 × 100 + 0 = 100 + 25 = 125 (%²)\n3. 표준편차 = √125 ≈ **약 11.2%**\n4. 검산: 11.18 × 11.18 ≈ 125\n\n**틀린 선지**\n- 15%: 15%는 두 표준편차를 비중대로 단순 평균한 값으로, 상관계수가 +1일 때만 맞습니다.\n- 약 13.2%: 약 13.2%는 상관계수를 0.5로 잘못 넣어 계산한 값입니다(분산 175).\n- 5%: 5%는 상관계수가 −1일 때의 값입니다(0.5 × 20% − 0.5 × 10%).",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "포트폴리오 위험",
+      "표준편차",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "investment-asset-manager-diversification-0005",
+    "certId": "investment-asset-manager",
+    "subjectId": "ethics-law-strategy1",
+    "chapterId": "diversification",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "무위험이자율이 3%, 시장포트폴리오의 기대수익률이 8%, 주식 A의 베타가 1.4일 때 CAPM에 따른 주식 A의 기대수익률은?",
+    "choices": [
+      "7%",
+      "11.2%",
+      "10%",
+      "14.2%"
+    ],
+    "answer": 3,
+    "oneLineConcept": "CAPM: E(R) = Rf + β × (Rm − Rf)",
+    "explanation": "**CAPM**은 체계적 위험(베타)에 따라 기대수익률을 정합니다.\n\n1. 시장위험프리미엄 = 8% − 3% = 5%\n2. 기대수익률 = 3% + 1.4 × 5% = 3% + 7% = **10%**\n3. 검산: (10% − 3%) ÷ 5% = 1.4 (베타와 같음)\n\n**틀린 선지**\n- 14.2%: 14.2%는 시장수익률에서 무위험이자율을 빼지 않고 3% + 1.4 × 8%로 계산한 값입니다.\n- 7%: 7%는 위험프리미엄(1.4 × 5%)만 구하고 무위험이자율 3%를 더하지 않은 값입니다.\n- 11.2%: 11.2%는 시장수익률에 베타만 곱한 값(1.4 × 8%)입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "CAPM",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "investment-asset-manager-diversification-0006",
+    "certId": "investment-asset-manager",
+    "subjectId": "ethics-law-strategy1",
+    "chapterId": "diversification",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "자본시장선(CML)과 증권시장선(SML)에 대한 설명으로 옳은 것은?",
+    "choices": [
+      "증권시장선(SML)은 효율적 포트폴리오에만 적용된다",
+      "자본시장선(CML)과 증권시장선(SML)은 모두 표준편차를 위험 척도로 쓴다",
+      "자본시장선(CML)은 베타를 위험 척도로 쓰며 개별 주식의 기대수익률을 설명한다",
+      "증권시장선(SML)은 베타를 위험 척도로 쓰며 개별 자산을 포함한 모든 자산의 기대수익률을 설명한다"
+    ],
+    "answer": 4,
+    "oneLineConcept": "CML: 표준편차·효율적 포트폴리오 / SML: 베타·모든 자산",
+    "explanation": "두 선은 위험 척도와 적용 대상이 다릅니다.\n\n- 자본시장선(CML): 위험 척도는 **표준편차**(총위험), 적용 대상은 무위험자산과 시장포트폴리오를 섞은 **효율적 포트폴리오**\n- **증권시장선(SML)**: 위험 척도는 **베타**(체계적 위험), 적용 대상은 개별 자산을 포함한 **모든 자산**\n\n**틀린 선지**\n- 자본시장선(CML)은 베타를 위험 척도로 쓰며 개별 주식의 기대수익률을 설명한다: 자본시장선은 베타가 아니라 표준편차를 쓰며, 개별 주식이 아니라 효율적 포트폴리오에 적용됩니다.\n- 증권시장선(SML)은 효율적 포트폴리오에만 적용된다: 효율적 포트폴리오에만 적용되는 것은 자본시장선입니다.\n- 자본시장선(CML)과 증권시장선(SML)은 모두 표준편차를 위험 척도로 쓴다: 증권시장선은 표준편차가 아니라 베타를 위험 척도로 씁니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "CML",
+      "SML"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "investment-asset-manager-diversification-0007",
+    "certId": "investment-asset-manager",
+    "subjectId": "ethics-law-strategy1",
+    "chapterId": "diversification",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "자산 A의 표준편차가 30%, 자산 B의 표준편차가 20%이고 두 자산의 상관계수가 −1이다. 포트폴리오의 위험을 0으로 만드는 자산 A의 투자 비중은?",
+    "choices": [
+      "40%",
+      "60%",
+      "30%",
+      "50%"
+    ],
+    "answer": 1,
+    "oneLineConcept": "ρ = −1일 때 A의 비중 = σB ÷ (σA + σB)",
+    "explanation": "상관계수가 −1이면 두 자산이 정반대로 움직이므로, 위험이 정확히 상쇄되는 비중이 있습니다.\n\n1. A의 비중 = σB ÷ (σA + σB) = 20% ÷ (30% + 20%) = 0.4 = **40%**\n2. B의 비중 = 60%\n3. 검산: 포트폴리오 표준편차 = |0.4 × 30% − 0.6 × 20%| = |12% − 12%| = 0\n\n**틀린 선지**\n- 60%: 60%는 B의 비중입니다. A의 비중은 B의 표준편차를 분자에 넣어 구합니다.\n- 50%: 50%씩 담으면 |0.5 × 30% − 0.5 × 20%| = 5%의 위험이 남습니다.\n- 30%: 30%는 A의 표준편차 값을 비중으로 착각한 것입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "최소분산 포트폴리오",
+      "상관계수",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  }
+]

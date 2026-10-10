@@ -1,0 +1,291 @@
+[
+  {
+    "id": "investment-asset-manager-derivatives-strategy-0001",
+    "certId": "investment-asset-manager",
+    "subjectId": "ethics-law-strategy1",
+    "chapterId": "derivatives-strategy",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "콜옵션을 산 사람(콜옵션 매수자)이 갖는 권리는?",
+    "choices": [
+      "만기에(또는 만기까지) 정해진 가격으로 기초자산을 살 수 있는 권리",
+      "만기에 정해진 가격으로 기초자산을 반드시 사야 하는 의무",
+      "옵션 프리미엄을 받는 대신 기초자산을 팔아야 하는 의무",
+      "만기에 정해진 가격으로 기초자산을 팔 수 있는 권리"
+    ],
+    "answer": 1,
+    "oneLineConcept": "콜 = 살 권리, 풋 = 팔 권리",
+    "explanation": "옵션은 정해진 가격(행사가격)으로 사거나 팔 수 있는 **권리**입니다.\n\n- **콜옵션 매수자**: 프리미엄을 내고 기초자산을 **살 권리**를 가집니다. 불리하면 권리를 쓰지 않아도 됩니다.\n- 풋옵션 매수자: 기초자산을 **팔 권리**를 가집니다.\n- 옵션 매도자는 프리미엄을 받는 대신, 매수자가 권리를 쓰면 응해야 할 의무가 있습니다.\n\n**틀린 선지**\n- 만기에 정해진 가격으로 기초자산을 팔 수 있는 권리: 팔 권리는 풋옵션 매수자의 권리입니다.\n- 만기에 정해진 가격으로 기초자산을 반드시 사야 하는 의무: 옵션 매수자는 권리만 있고 반드시 사야 할 의무는 없습니다. 반드시 사고팔아야 하는 것은 선물입니다.\n- 옵션 프리미엄을 받는 대신 기초자산을 팔아야 하는 의무: 프리미엄을 받고 의무를 지는 쪽은 옵션 매도자입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "옵션",
+      "콜옵션"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "investment-asset-manager-derivatives-strategy-0002",
+    "certId": "investment-asset-manager",
+    "subjectId": "ethics-law-strategy1",
+    "chapterId": "derivatives-strategy",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "주가지수선물 가격이 주가지수 현물 가격보다 높은 상태를 무엇이라고 하는가?",
+    "choices": [
+      "백워데이션",
+      "역베이시스",
+      "만기수렴",
+      "콘탱고"
+    ],
+    "answer": 4,
+    "oneLineConcept": "선물 > 현물 = 콘탱고, 선물 < 현물 = 백워데이션",
+    "explanation": "**베이시스**는 선물가격 − 현물가격입니다.\n\n- 선물가격 > 현물가격(베이시스가 양수): **콘탱고**\n- 선물가격 < 현물가격(베이시스가 음수): 백워데이션\n\n보유비용(이자)이 배당보다 크면 선물 이론가격이 현물보다 높아 보통 콘탱고가 됩니다.\n\n**틀린 선지**\n- 백워데이션: 백워데이션은 선물가격이 현물가격보다 낮은 상태입니다.\n- 역베이시스: 역베이시스는 선물가격이 현물가격보다 낮아 베이시스가 음수인 상태를 말합니다.\n- 만기수렴: 만기수렴은 만기가 다가올수록 선물가격이 현물가격에 가까워지는 현상입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "베이시스",
+      "콘탱고"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "investment-asset-manager-derivatives-strategy-0003",
+    "certId": "investment-asset-manager",
+    "subjectId": "ethics-law-strategy1",
+    "chapterId": "derivatives-strategy",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "KOSPI200 지수가 400, 연 금리가 4%, 연 배당수익률이 1%, 선물 만기까지 남은 기간이 3개월(0.25년)일 때 주가지수선물의 이론가격은? (단리로 계산)",
+    "choices": [
+      "397",
+      "404",
+      "403",
+      "412"
+    ],
+    "answer": 3,
+    "oneLineConcept": "선물 이론가격 = S × {1 + (r − d) × t}",
+    "explanation": "선물 이론가격은 현물을 들고 가는 비용(이자)에서 받는 배당을 뺀 만큼 현물보다 비쌉니다.\n\n1. 이론가격 = 현물 × {1 + (금리 − 배당수익률) × 잔존기간}\n2. = 400 × {1 + (0.04 − 0.01) × 0.25}\n3. = 400 × (1 + 0.0075) = 400 × 1.0075 = **403**\n4. 검산: 이자 400 × 4% × 0.25 = 4, 배당 400 × 1% × 0.25 = 1, 400 + 4 − 1 = 403\n\n**틀린 선지**\n- 404: 404는 배당수익률을 빼지 않고 금리만 반영한 값입니다.\n- 412: 412는 잔존기간(0.25년)을 곱하지 않고 1년 기준으로 계산한 값입니다.\n- 397: 397은 금리와 배당수익률을 거꾸로 넣은 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "선물 이론가격",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "investment-asset-manager-derivatives-strategy-0004",
+    "certId": "investment-asset-manager",
+    "subjectId": "ethics-law-strategy1",
+    "chapterId": "derivatives-strategy",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "베타가 1.2인 100억 원 규모의 주식 포트폴리오를 주가지수선물로 완전히 헤지하려고 한다. 선물가격이 400포인트이고 거래승수가 1포인트당 25만 원일 때 필요한 선물 거래는?",
+    "choices": [
+      "100계약 매도",
+      "120계약 매도",
+      "120계약 매수",
+      "약 83계약 매도"
+    ],
+    "answer": 2,
+    "oneLineConcept": "헤지 계약 수 = β × 포트폴리오 금액 ÷ (선물가격 × 승수)",
+    "explanation": "주식을 가진 사람은 하락 위험을 막기 위해 주가지수선물을 **팝니다**.\n\n1. 선물 1계약 금액 = 400 × 25만 원 = 1억 원\n2. 헤지 계약 수 = 베타 × 포트폴리오 금액 ÷ 1계약 금액\n3. = 1.2 × 100억 ÷ 1억 = **120계약**, 방향은 매도\n4. 검산: 120계약 × 1억 = 120억 = 100억 × 1.2\n\n**틀린 선지**\n- 100계약 매도: 100계약은 베타(1.2)를 반영하지 않은 값입니다.\n- 120계약 매수: 주식을 보유하고 있으므로 선물은 매수가 아니라 매도해야 위험이 상쇄됩니다.\n- 약 83계약 매도: 약 83계약은 베타를 곱하지 않고 나눈 값(100 ÷ 1.2)입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "헤지",
+      "주가지수선물",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "investment-asset-manager-derivatives-strategy-0005",
+    "certId": "investment-asset-manager",
+    "subjectId": "ethics-law-strategy1",
+    "chapterId": "derivatives-strategy",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "만기와 행사가격(100)이 같은 유럽형 콜옵션 가격이 6이고, 기초자산 가격이 100, 행사가격의 현재가치가 98이다. 풋-콜 패리티가 성립한다면 풋옵션 가격은?",
+    "choices": [
+      "2",
+      "4",
+      "6",
+      "8"
+    ],
+    "answer": 2,
+    "oneLineConcept": "풋-콜 패리티: C − P = S − PV(K)",
+    "explanation": "**풋-콜 패리티**는 C − P = S − PV(K)입니다. 풋 가격을 구하려면 식을 바꿉니다.\n\n1. P = C − S + PV(K)\n2. = 6 − 100 + 98 = **4**\n3. 검산: C − P = 6 − 4 = 2, S − PV(K) = 100 − 98 = 2 (같음)\n\n**틀린 선지**\n- 8: 8은 부호를 잘못 써서 P = C + (S − PV(K))로 계산한 값입니다.\n- 6: 6은 행사가격을 할인하지 않고 100을 그대로 넣어 6 − 100 + 100으로 계산한 값입니다.\n- 2: 2는 S − PV(K)만 계산하고 콜 가격을 반영하지 않은 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "풋-콜 패리티",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "investment-asset-manager-derivatives-strategy-0006",
+    "certId": "investment-asset-manager",
+    "subjectId": "ethics-law-strategy1",
+    "chapterId": "derivatives-strategy",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "주식을 보유한 투자자가 주가 하락에 따른 손실을 일정 수준 이하로 제한하려고 같은 주식에 대한 풋옵션을 사는 전략은?",
+    "choices": [
+      "강세 콜 스프레드",
+      "스트래들 매수",
+      "보호적 풋",
+      "커버드 콜"
+    ],
+    "answer": 3,
+    "oneLineConcept": "주식 보유 + 풋 매수 = 보호적 풋",
+    "explanation": "**보호적 풋(Protective Put)**은 주식을 가진 채 풋옵션을 사는 전략입니다.\n\n- 주가가 행사가격 아래로 떨어져도 풋옵션으로 행사가격에 팔 수 있어 손실이 제한됩니다.\n- 주가가 오르면 이익은 그대로 누리고, 비용은 풋 프리미엄뿐입니다. 보험과 비슷합니다.\n\n**틀린 선지**\n- 커버드 콜: 커버드 콜은 주식을 가진 채 콜옵션을 파는 전략으로, 프리미엄 수입을 얻지만 하락 손실을 막아 주지는 못합니다.\n- 스트래들 매수: 스트래들 매수는 같은 행사가격의 콜과 풋을 함께 사는 전략으로, 주식 보유와 관계가 없습니다.\n- 강세 콜 스프레드: 강세 콜 스프레드는 낮은 행사가격 콜을 사고 높은 행사가격 콜을 파는 전략입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "옵션 전략",
+      "보호적 풋"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "investment-asset-manager-derivatives-strategy-0007",
+    "certId": "investment-asset-manager",
+    "subjectId": "ethics-law-strategy1",
+    "chapterId": "derivatives-strategy",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "주가가 크게 움직일 것으로 예상되지만 오를지 내릴지 방향을 알 수 없을 때 적합한 옵션 전략은?",
+    "choices": [
+      "같은 행사가격의 콜과 풋을 함께 파는 스트래들 매도",
+      "주식을 보유하고 콜을 파는 커버드 콜",
+      "낮은 행사가격의 콜을 사고 높은 행사가격의 콜을 파는 강세 스프레드",
+      "같은 행사가격의 콜과 풋을 함께 사는 스트래들 매수"
+    ],
+    "answer": 4,
+    "oneLineConcept": "큰 변동 예상·방향 모름 = 스트래들 매수",
+    "explanation": "**스트래들 매수**는 같은 행사가격의 콜과 풋을 함께 삽니다.\n\n- 주가가 크게 오르면 콜에서, 크게 내리면 풋에서 이익이 납니다.\n- 주가가 거의 움직이지 않으면 두 프리미엄만큼 손실이 납니다.\n- 그래서 **변동성이 커질 것**으로 보지만 방향을 모를 때 씁니다.\n\n**틀린 선지**\n- 같은 행사가격의 콜과 풋을 함께 파는 스트래들 매도: 스트래들 매도는 주가가 거의 움직이지 않을 때 이익을 보는 전략으로, 큰 변동이 오면 손실이 커집니다.\n- 주식을 보유하고 콜을 파는 커버드 콜: 커버드 콜은 주가가 크게 오르지 않을 것으로 볼 때 프리미엄 수입을 얻는 전략입니다.\n- 낮은 행사가격의 콜을 사고 높은 행사가격의 콜을 파는 강세 스프레드: 강세 스프레드는 주가가 오를 것으로 예상할 때 쓰는 방향성 전략입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "옵션 전략",
+      "스트래들"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "investment-asset-manager-derivatives-strategy-0008",
+    "certId": "investment-asset-manager",
+    "subjectId": "ethics-law-strategy1",
+    "chapterId": "derivatives-strategy",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "기초자산 가격이 행사가격과 같은 등가격(ATM) 콜옵션의 델타는 대략 얼마인가?",
+    "choices": [
+      "0.5",
+      "−0.5",
+      "0",
+      "1"
+    ],
+    "answer": 1,
+    "oneLineConcept": "등가격 콜 델타 ≈ 0.5, 콜 0~1, 풋 −1~0",
+    "explanation": "**델타**는 기초자산 가격이 1 움직일 때 옵션 가격이 움직이는 크기입니다.\n\n- 콜옵션의 델타는 0과 1 사이이고, 풋옵션은 −1과 0 사이입니다.\n- 깊은 내가격 콜은 1에 가깝고, 깊은 외가격 콜은 0에 가깝습니다.\n- **등가격 콜은 대략 0.5**입니다.\n\n**틀린 선지**\n- −0.5: −0.5는 등가격 풋옵션의 델타입니다.\n- 1: 1은 깊은 내가격 콜옵션의 델타에 가까운 값입니다.\n- 0: 0은 깊은 외가격 콜옵션의 델타에 가까운 값입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "옵션",
+      "델타"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  }
+]

@@ -1,0 +1,317 @@
+[
+  {
+    "id": "investment-asset-manager-bond-strategy-0001",
+    "certId": "investment-asset-manager",
+    "subjectId": "ethics-law-strategy1",
+    "chapterId": "bond-strategy",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "시장금리가 오르면 이미 발행된 고정금리 채권의 가격은 일반적으로 어떻게 되는가?",
+    "choices": [
+      "오른다",
+      "변하지 않는다",
+      "내린다",
+      "만기가 길수록 오른다"
+    ],
+    "answer": 3,
+    "oneLineConcept": "채권 가격과 시장금리는 반대로 움직인다",
+    "explanation": "채권 가격과 시장금리(수익률)는 **반대 방향**으로 움직입니다.\n\n- 시장금리가 오르면 새로 나오는 채권이 더 높은 이자를 주므로, 낮은 이자를 주는 기존 채권은 값을 낮춰야 팔립니다.\n- 그래서 금리 상승 → 기존 채권 가격 하락입니다.\n\n**틀린 선지**\n- 오른다: 금리가 오르면 기존 채권 가격은 오르지 않고 내립니다.\n- 변하지 않는다: 고정금리 채권의 가격은 시장금리 변동에 따라 바뀝니다.\n- 만기가 길수록 오른다: 만기가 길수록 가격이 더 크게 내립니다. 오르지 않습니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "채권 가격",
+      "금리"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "investment-asset-manager-bond-strategy-0002",
+    "certId": "investment-asset-manager",
+    "subjectId": "ethics-law-strategy1",
+    "chapterId": "bond-strategy",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "채권 가격과 수익률의 관계(말킬의 채권가격 정리)에 대한 설명으로 옳지 않은 것은?",
+    "choices": [
+      "다른 조건이 같다면 만기가 길수록 같은 크기의 금리 변동에 대한 가격 변동률이 작아진다",
+      "같은 크기로 금리가 변할 때 금리 하락 시 가격 상승폭이 금리 상승 시 가격 하락폭보다 크다",
+      "다른 조건이 같다면 표면금리가 낮을수록 금리 변동에 따른 가격 변동률이 크다",
+      "채권 가격과 수익률은 반대 방향으로 움직인다"
+    ],
+    "answer": 1,
+    "oneLineConcept": "말킬: 만기 길수록·표면금리 낮을수록 가격 변동 크다",
+    "explanation": "말킬의 채권가격 정리 핵심은 다음과 같습니다.\n\n- 채권 가격과 수익률은 반대로 움직입니다.\n- 만기가 길수록 같은 금리 변동에 가격이 더 크게 움직입니다(다만 늘어나는 정도는 점점 줄어듭니다).\n- 같은 크기의 금리 변동이라면 금리가 내릴 때의 가격 상승폭이 오를 때의 하락폭보다 큽니다(볼록성).\n- 표면금리가 낮을수록 가격 변동률이 큽니다.\n\n**틀린 선지**\n- 다른 조건이 같다면 만기가 길수록 같은 크기의 금리 변동에 대한 가격 변동률이 작아진다: 반대입니다. 만기가 길수록 가격 변동률이 커집니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "말킬 정리",
+      "채권 가격"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "investment-asset-manager-bond-strategy-0003",
+    "certId": "investment-asset-manager",
+    "subjectId": "ethics-law-strategy1",
+    "chapterId": "bond-strategy",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "액면금액 10,000원, 만기 2년인 할인채(무이표채)의 만기수익률이 연 5%(연 복리)일 때 이 채권의 현재 가격은 약 얼마인가?",
+    "choices": [
+      "약 9,524원",
+      "약 9,091원",
+      "9,025원",
+      "약 9,070원"
+    ],
+    "answer": 4,
+    "oneLineConcept": "할인채 가격 = 액면 ÷ (1 + 수익률)^만기",
+    "explanation": "할인채는 만기에 액면금액만 받으므로, 액면금액을 만기까지 할인하면 가격이 됩니다.\n\n1. 가격 = 10,000 ÷ (1.05)²\n2. (1.05)² = 1.1025\n3. 10,000 ÷ 1.1025 ≈ **9,070원**\n4. 검산: 9,070 × 1.1025 ≈ 9,999.7 ≈ 10,000원\n\n**틀린 선지**\n- 약 9,091원: 약 9,091원은 단리로 계산해 10,000 ÷ 1.10으로 구한 값입니다. 연 복리이므로 1.05를 두 번 곱해야 합니다.\n- 약 9,524원: 약 9,524원은 1년만 할인한 값(10,000 ÷ 1.05)입니다.\n- 9,025원: 9,025원은 10,000 × 0.95 × 0.95로 계산한 값입니다. 수익률로 나누어야지 (1 − 수익률)을 곱하면 안 됩니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "할인채",
+      "채권 가격",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "investment-asset-manager-bond-strategy-0004",
+    "certId": "investment-asset-manager",
+    "subjectId": "ethics-law-strategy1",
+    "chapterId": "bond-strategy",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "만기수익률이 연 5%인 만기 3년 무이표채(할인채)의 맥컬레이 듀레이션은?",
+    "choices": [
+      "1.5년",
+      "3년",
+      "3년보다 길다",
+      "약 2.86년"
+    ],
+    "answer": 2,
+    "oneLineConcept": "무이표채의 맥컬레이 듀레이션 = 만기",
+    "explanation": "**맥컬레이 듀레이션**은 채권에서 들어오는 현금을 받는 시점을 현재가치로 가중평균한 기간입니다.\n\n- 무이표채는 만기에 한 번만 돈을 받으므로 듀레이션이 **만기와 같습니다**: 3년\n- 이표채는 중간에 이자를 받으므로 듀레이션이 만기보다 짧습니다.\n\n**틀린 선지**\n- 약 2.86년: 약 2.86년은 수정듀레이션(3 ÷ 1.05)입니다. 맥컬레이 듀레이션은 3년입니다.\n- 1.5년: 1.5년은 만기의 절반으로 계산 근거가 없습니다.\n- 3년보다 길다: 듀레이션은 만기보다 길어질 수 없습니다. 무이표채는 만기와 같습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "듀레이션"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "investment-asset-manager-bond-strategy-0005",
+    "certId": "investment-asset-manager",
+    "subjectId": "ethics-law-strategy1",
+    "chapterId": "bond-strategy",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "수정듀레이션이 5, 볼록성이 40인 채권의 수익률이 1%p(0.01) 오를 때, 볼록성까지 고려한 채권 가격 변동률은 약 얼마인가? (가격 변동률 = −수정듀레이션 × Δy + ½ × 볼록성 × (Δy)²)",
+    "choices": [
+      "약 −5.2%",
+      "약 −4.6%",
+      "약 −4.8%",
+      "약 −5.0%"
+    ],
+    "answer": 3,
+    "oneLineConcept": "가격 변동률 ≈ −수정D×Δy + ½×볼록성×(Δy)²",
+    "explanation": "볼록성까지 고려한 가격 변동률은 두 부분을 더해 구합니다.\n\n1. 듀레이션 효과 = −5 × 0.01 = −0.05 (−5.0%)\n2. 볼록성 효과 = ½ × 40 × (0.01)² = 20 × 0.0001 = +0.002 (+0.2%)\n3. 합계 = −5.0% + 0.2% = **약 −4.8%**\n4. 검산: 볼록성 효과는 금리가 오르든 내리든 항상 더해지므로 하락폭이 −5.0%보다 작아야 합니다.\n\n**틀린 선지**\n- 약 −5.2%: 약 −5.2%는 볼록성 효과를 빼 버린 값입니다. 볼록성 효과는 항상 더합니다.\n- 약 −5.0%: 약 −5.0%는 볼록성을 무시하고 듀레이션 효과만 계산한 값입니다.\n- 약 −4.6%: 약 −4.6%는 ½을 곱하지 않아 볼록성 효과를 0.4%로 계산한 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "듀레이션",
+      "볼록성",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "investment-asset-manager-bond-strategy-0006",
+    "certId": "investment-asset-manager",
+    "subjectId": "ethics-law-strategy1",
+    "chapterId": "bond-strategy",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "수익률곡선이 우상향하고 앞으로도 모양이 변하지 않을 것으로 예상될 때, 만기가 남은 채권을 만기 전에 팔아 수익률 하락에 따른 가격 상승 이익을 얻는 적극적 채권 전략은?",
+    "choices": [
+      "면역전략",
+      "수익률곡선 타기 전략",
+      "사다리형 만기전략",
+      "바벨형 만기전략"
+    ],
+    "answer": 2,
+    "oneLineConcept": "우상향 곡선에서 만기 전 매도로 롤링 이익 = 수익률곡선 타기",
+    "explanation": "**수익률곡선 타기(riding)** 전략은 우상향하는 수익률곡선을 이용합니다.\n\n- 시간이 지나 잔존만기가 짧아지면 그 채권에 적용되는 수익률이 낮아지고, 그만큼 가격이 오릅니다(롤링 효과).\n- 이때 만기 전에 팔아 가격 상승 이익을 얻습니다.\n- 곡선 모양이 유지된다는 전제가 필요합니다.\n\n**틀린 선지**\n- 면역전략: 면역전략은 듀레이션을 투자기간에 맞춰 금리 위험을 없애는 소극적 전략입니다.\n- 사다리형 만기전략: 사다리형은 만기를 고르게 나누어 보유하는 소극적 전략입니다.\n- 바벨형 만기전략: 바벨형은 단기채와 장기채만 담는 전략으로, 만기 전 매도 이익을 노리는 전략이 아닙니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "수익률곡선 타기",
+      "적극적 전략"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "investment-asset-manager-bond-strategy-0007",
+    "certId": "investment-asset-manager",
+    "subjectId": "ethics-law-strategy1",
+    "chapterId": "bond-strategy",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "채권 포트폴리오를 만기가 짧은 단기채와 만기가 긴 장기채로만 구성하고 중기채는 거의 담지 않는 만기 운용 전략은?",
+    "choices": [
+      "면역전략",
+      "사다리형 전략",
+      "바벨형 전략",
+      "불릿형 전략"
+    ],
+    "answer": 3,
+    "oneLineConcept": "단기+장기만 = 바벨형, 중기 집중 = 불릿형",
+    "explanation": "만기 구성에 따른 전략은 모양으로 기억하면 쉽습니다.\n\n- **바벨형**: 역기(바벨)처럼 양 끝(단기·장기)에만 무게를 둠\n- 불릿형: 총알(불릿)처럼 특정 만기(주로 중기)에 집중\n- 사다리형: 계단처럼 만기를 고르게 나눔\n\n**틀린 선지**\n- 불릿형 전략: 불릿형은 중기 같은 특정 만기에 집중하는 전략입니다.\n- 사다리형 전략: 사다리형은 만기를 고르게 나누는 전략입니다.\n- 면역전략: 면역전략은 듀레이션을 투자기간에 맞추는 전략으로 만기 모양을 말하는 것이 아닙니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "바벨형",
+      "만기전략"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "investment-asset-manager-bond-strategy-0008",
+    "certId": "investment-asset-manager",
+    "subjectId": "ethics-law-strategy1",
+    "chapterId": "bond-strategy",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "채권 면역전략에 대한 설명으로 옳은 것은?",
+    "choices": [
+      "수익률곡선이 우상향할 때 만기 전에 팔아 가격 상승 이익을 얻는다",
+      "금리 하락을 예상하여 듀레이션을 최대한 길게 늘린다",
+      "만기를 고르게 나누어 매년 같은 금액씩 만기가 오게 한다",
+      "채권 포트폴리오의 듀레이션을 투자기간과 같게 맞추어, 금리 변화에 따른 가격 위험과 재투자 위험이 서로 상쇄되도록 한다"
+    ],
+    "answer": 4,
+    "oneLineConcept": "면역전략 = 듀레이션을 투자기간과 일치",
+    "explanation": "**면역전략**은 금리가 변해도 목표 수익을 지키려는 소극적 전략입니다.\n\n- 금리가 오르면 채권 가격은 내리지만(가격 위험), 이자를 더 높은 금리로 재투자할 수 있습니다(재투자 수익 증가).\n- 금리가 내리면 반대로 작용합니다.\n- 포트폴리오 **듀레이션을 투자기간과 같게** 맞추면 두 효과가 서로 상쇄됩니다.\n\n**틀린 선지**\n- 금리 하락을 예상하여 듀레이션을 최대한 길게 늘린다: 금리 전망에 따라 듀레이션을 늘리는 것은 금리 예측에 따른 적극적 전략입니다.\n- 만기를 고르게 나누어 매년 같은 금액씩 만기가 오게 한다: 만기를 고르게 나누는 것은 사다리형 전략입니다.\n- 수익률곡선이 우상향할 때 만기 전에 팔아 가격 상승 이익을 얻는다: 만기 전 매도로 가격 상승 이익을 얻는 것은 수익률곡선 타기 전략입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "면역전략"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "investment-asset-manager-bond-strategy-0009",
+    "certId": "investment-asset-manager",
+    "subjectId": "ethics-law-strategy1",
+    "chapterId": "bond-strategy",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "전환가격이 12,000원인 전환사채가 있다. 현재 주가가 15,000원일 때 이 전환사채의 패리티는?",
+    "choices": [
+      "125%",
+      "25%",
+      "150%",
+      "80%"
+    ],
+    "answer": 1,
+    "oneLineConcept": "패리티 = 주가 ÷ 전환가격 × 100(%)",
+    "explanation": "**패리티**는 전환사채를 주식으로 바꿨을 때 가치가 전환가격 대비 어느 정도인지 보여 줍니다.\n\n1. 패리티 = 주가 ÷ 전환가격 × 100\n2. = 15,000 ÷ 12,000 × 100 = **125%**\n3. 검산: 12,000 × 1.25 = 15,000\n\n100%보다 크므로 주식으로 바꾸면 이익입니다(액면 10,000원이면 전환가치는 12,500원).\n\n**틀린 선지**\n- 80%: 80%는 분자와 분모를 거꾸로 하여 12,000 ÷ 15,000으로 계산한 값입니다.\n- 150%: 150%는 전환가격 대신 액면금액 10,000원으로 나눈 값입니다.\n- 25%: 25%는 주가가 전환가격보다 높은 비율(상승분)만 계산한 값입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "전환사채",
+      "패리티",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  }
+]
