@@ -5,8 +5,11 @@
  * 검사 항목 (하나라도 모자라면 실패)
  *   1. 초급·중급·고급에서 각각 풀 수 있는 문제가 30개 이상인가 (같은 문제가 여러 난이도에 쓰여도 된다)
  *   2. 실전 문제풀이 를 1회분 이상 낼 수 있는가 (과목마다 실제 문항 수 이상)
+ * 경고만 (실패는 아님)
+ *   - meta.json 에 addedAt(추가한 날)이 없다 → 사이트 하단 "기록" 페이지에 안 나온다.
+ *     새로 추가하는 자격증이면 오늘 날짜(한국시간)를 적는다. 루틴 전부터 있던 자격증 보강이면 그대로 둔다.
  */
-import { getCertification, getQuestions } from "../lib/data";
+import { getAddedLog, getCertification, getQuestions } from "../lib/data";
 import { countAvailable, mockExamShortage } from "../lib/quiz-engine";
 import type { QuizLevel } from "../lib/types";
 
@@ -38,6 +41,11 @@ async function main(): Promise<void> {
   if (cert.subjects.length === 0) errors.push("과목(chapters.json)이 없음");
   for (const s of shortage) errors.push(`실전 문제풀이 문제 부족: ${s.subjectId} ${s.have}/${s.need}`);
   console.log(`  실전 문제풀이: ${shortage.length === 0 && cert.subjects.length > 0 ? "낼 수 있음" : "낼 수 없음"}`);
+
+  const log = await getAddedLog(cert.country);
+  if (!log.some((e) => e.certs.some((c) => c.id === slug))) {
+    console.warn(`\n⚠ meta.json 에 addedAt 이 없습니다. 새로 추가하는 자격증이면 오늘 날짜(한국시간)를 적으세요 ("기록" 페이지에 나옵니다).`);
+  }
 
   if (errors.length > 0) {
     console.error(`\n게시 기준 미달 ${errors.length}건`);
