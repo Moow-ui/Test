@@ -1,0 +1,105 @@
+{
+  "cert": "notary-california",
+  "checkedAt": "2026-10-10",
+  "by": "separate verifier AI",
+  "chapters": {
+    "commission-bond-oath": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "18+, legal CA resident, 6-hour course for first appointment, 3-hour refresher only if the 6-hour course was completed before and reappointment is applied for before the current commission expires (SOS checklist) — correct (Gov §8201).",
+        "Four-year term, statewide jurisdiction; oath + $15,000 bond filed with county clerk of principal place of business within 30 days or commission does not take effect — correct (Gov §8204, §8212, §8213).",
+        "Bond protects the public; notary personally liable beyond bond — correct.",
+        "Minor citation: the background check is in Gov §8201.1, not §8201; the 'Basic qualifications' card cites §8201 only. Optional: 'Government Code §8201, §8201.1'."
+      ]
+    },
+    "seal-changes-records": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "Seal size (round ≤2 in; rectangle ≤1 x 2.5 in; serrated/milled edge), photographically reproducible, contents (name, State Seal, 'Notary Public', county, expiration date, notary and manufacturer ID numbers), vendor Certificate of Authorization — correct (Gov §8207, §8207.2).",
+        "Seal is notary's property even if employer paid, locked under exclusive control, lost seal reported immediately, destroyed/defaced at end of commission — correct.",
+        "Address change within 30 days, willful failure infraction up to $500 — correct (Gov §8213.5).",
+        "Name change: new oath + bond amendment within 30 days of the amended commission is in Gov §8213(c), so the §8213 citation is acceptable. Omitted (not wrong): a new seal reflecting the new name is also required."
+      ]
+    },
+    "acknowledgments-jurats": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "Acknowledgment (personal appearance, satisfactory evidence, need not sign in front of notary, certified under penalty of perjury) and jurat (sign in presence, oath/affirmation, satisfactory evidence) — correct (Civ §1185, §1189; Gov §8202).",
+        "Boxed notice wording at top of both certificates — correct.",
+        "Out-of-state acknowledgment form allowed if it requires no capacity determination or other certification not allowed by CA law — correct (Civ §1189(c)).",
+        "Signer/drafter chooses the certificate; notary choosing could be unauthorized legal advice — matches Handbook."
+      ]
+    },
+    "notary-journal": {
+      "verdict": "FAIL",
+      "problems": [
+        "Summary: \"For deeds, quitclaim deeds, deeds of trust, other documents affecting real property, and powers of attorney, the signer must also leave a right thumbprint.\" and card 'Thumbprint rule' definition: \"For a deed, quitclaim deed, deed of trust, other document affecting real property, or power of attorney, the signer places a right thumbprint in the journal.\" — Overbroad. Gov Code §8206(a)(2)(G) exempts a trustee's deed resulting from a decree of foreclosure or a nonjudicial foreclosure (Civ §2924) and a deed of reconveyance. The same exception is stated in the subscribing-witness chapter, so the two chapters conflict. Correct: add 'except a trustee's deed resulting from a foreclosure and a deed of reconveyance' (e.g., '...or power of attorney, the signer places a right thumbprint in the journal. Trustee's deeds from a foreclosure and deeds of reconveyance are exempt.'). Point 'Thumbprints are required for real property documents and powers of attorney.' should read '...for most real property documents (not foreclosure trustee's deeds or reconveyances) and powers of attorney.'"
+      ],
+      "notes": [
+        "One active sequential journal, entry contents (date, time, type of act, character of document, signature, ID details, fee), locked/exclusive control, notary's property, lost journal reported immediately by certified/registered mail or receipted delivery — correct (Gov §8206).",
+        "Public copy request (parties, document type, month and year) at no more than 30 cents per page — correct (Gov §8206(c)); AB 1597 (Ch. 39, 2026, effective 2027-01-01) raises §8211 caps but no source shows a change to the 30-cent journal copy cap.",
+        "Peace officer surrender with receipt, SOS notice within 10 days; journals to county clerk within 30 days on resignation/expiration without reappointment — correct (Gov §8206(d), §8209)."
+      ]
+    },
+    "other-notarial-acts": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "Powers listed match Gov §8205(a). Certified copy of power of attorney — Gov §8205(a)(4) / Probate §4307. Certified journal copies on SOS request (§8205(b)(1)) or court order (§8206(e)) — matches Handbook.",
+        "No certified copies of birth/death/marriage records; no authority to perform marriages as a notary — correct. AB 2004 (2025) lets a custodian, not the notary, certify paper copies of electronic records, so no conflict.",
+        "Oath/affirmation definitions and equal legal effect — correct. Signature by mark: Civ §14 requires two witnesses for an acknowledged or sworn signature; text says 'witnesses' (plural), acceptable. Optional: say 'two witnesses'."
+      ]
+    },
+    "satisfactory-evidence": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "Definition (absence of doubt + ID or credible witness), no personal knowledge, ID current or issued within 5 years, listed ID examples — correct (Civ §1185(a),(b)).",
+        "One credible witness known to the notary, or two credible witnesses, each with ID, no financial interest, not named; oath contents — correct. 'Two who do not know the notary' matches Handbook/NNA framing (statute does not forbid them knowing the notary); acceptable.",
+        "$10,000 civil penalty — Civ §1185(b)(1)(B); statutorily it is tied to the credible-witness subparagraph, but the Handbook/exam present it as failure to obtain satisfactory evidence; acceptable.",
+        "Journal ID details (type, issuing agency, serial number, issue/expiration date) — correct (Gov §8206(a)(2)(D))."
+      ]
+    },
+    "subscribing-witness": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "Definition (saw signing or heard acknowledgment, signed as witness at principal's request), principal does not appear, subscribing witness proved by one credible witness with ID — correct (CCP §1935; Civ §1195, §1196).",
+        "Not for grant/quitclaim deeds, deeds of trust, other real property instruments (except foreclosure trustee's deeds and deeds of reconveyance), or documents requiring a journal thumbprint — correct (Civ §1195(b); Gov §27287)."
+      ]
+    },
+    "immigration-advertising": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "No legal/immigration advice by non-attorney; immigration-consultant notary may not advertise as notary; bonded immigration consultant may enter client-provided data — correct (Gov §8223).",
+        "Foreign-language ad notice in English and the other language; 'notario publico'/'notario' banned; first violation suspension ≥1 year or revocation, second permanent revocation — correct (Gov §8219.5)."
+      ]
+    },
+    "fees": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "§8211 caps are maximums; acknowledgment fee per signature; jurat fee covers oath to one person plus jurat and seal; no fee for vote-by-mail/voting materials or veterans' benefit applications; overcharging is a ground under §8214.1 — correct.",
+        "No dollar amounts are stated, so AB 1597 (signed 2026-06-30, Ch. 39, effective 2027-01-01: acknowledgment/proof/jurat/POA copy caps $15→$20, depositions $30→$35) does not make any sentence wrong. Optional: replace 'check the current handbook' with 'current caps are $15 per signature, rising to $20 on January 1, 2027 (AB 1597)', since the handbook may lag the law."
+      ]
+    },
+    "misconduct-penalties": {
+      "verdict": "PASS",
+      "problems": [],
+      "notes": [
+        "Grounds under Gov §8214.1 (misstatement, felony, misleading ads, overcharging, dishonesty/fraud, incomplete acknowledgment at signing/sealing, unsecured journal, willful refusal of peace officer access) — correct.",
+        "$750 negligent / $1,500 willful (Gov §8214.15), $2,500 thumbprint (Gov §8214.23), $10,000 satisfactory evidence (Civ §1185(b)(1)(B)) — correct.",
+        "Deed of trust fraud on 1–4 unit residence = felony (Gov §8214.2); influencing a notary = misdemeanor (Gov §8225); disqualifying interest and agent/employee/insurer/attorney/escrow/lender exception (Gov §8224) — correct."
+      ]
+    }
+  },
+  "reverify": {
+    "date": "2026-10-10",
+    "notary-journal": "PASS (trustee's deed from foreclosure / deed of reconveyance exception added)",
+    "commission-bond-oath Basic qualifications card": "PASS (source now cites §8201 and §8201.1)"
+  }
+}

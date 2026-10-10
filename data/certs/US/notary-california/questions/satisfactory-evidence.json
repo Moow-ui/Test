@@ -1,0 +1,444 @@
+[
+  {
+    "id": "notary-california-satisfactory-evidence-0001",
+    "certId": "notary-california",
+    "subjectId": "identification",
+    "chapterId": "satisfactory-evidence",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A notary's longtime neighbor asks for an acknowledgment but has no ID with them. May the notary identify the neighbor by personal knowledge?",
+    "choices": [
+      "Yes, for acknowledgments but not for jurats",
+      "No, California notaries may not identify signers by personal knowledge alone",
+      "Yes, if the notary has known the neighbor for at least 5 years",
+      "Yes, if the notary writes \"personally known\" in the journal"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Personal knowledge is not enough in CA",
+    "explanation": "In California, satisfactory evidence means an acceptable ID or credible witnesses. A notary may not rely on personal knowledge alone, even for a family member or neighbor.\n\n**Wrong choices**\n- Yes, for acknowledgments but not for jurats: The rule applies to both acts.\n- Yes, if the notary has known the neighbor for at least 5 years: There is no time-based personal knowledge rule in California.\n- Yes, if the notary writes \"personally known\" in the journal: Personal knowledge is not satisfactory evidence in California.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "identity",
+      "personal knowledge"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "notary-california-satisfactory-evidence-0002",
+    "certId": "notary-california",
+    "subjectId": "identification",
+    "chapterId": "satisfactory-evidence",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which ID may a California notary rely on to identify a signer?",
+    "choices": [
+      "A California driver's license that is current or was issued within the last five years",
+      "A library card with the signer's name",
+      "A Social Security card",
+      "A credit card with the signer's photo"
+    ],
+    "answer": 1,
+    "oneLineConcept": "CA driver's license is acceptable ID",
+    "explanation": "A California driver's license or ID card from the DMV is acceptable when it is current or was issued within the last five years.\n\n**Wrong choices**\n- A library card with the signer's name: A library card is not an acceptable ID.\n- A Social Security card: A Social Security card has no photo or description and is not on the list.\n- A credit card with the signer's photo: A credit card is not on the list of acceptable IDs.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "identity",
+      "ID"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "notary-california-satisfactory-evidence-0003",
+    "certId": "notary-california",
+    "subjectId": "identification",
+    "chapterId": "satisfactory-evidence",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A signer shows a U.S. passport that expired last month. It was issued about ten years ago. May the notary rely on it?",
+    "choices": [
+      "Yes, because it expired less than a year ago",
+      "No, because it is neither current nor issued within the last five years",
+      "Yes, if the signer also shows a credit card",
+      "Yes, because passports are accepted for 10 years after they expire"
+    ],
+    "answer": 2,
+    "oneLineConcept": "ID must be current or issued within 5 years",
+    "explanation": "An ID is acceptable only if it is current or was issued within the last five years. A passport issued about ten years ago that has expired meets neither test.\n\n**Wrong choices**\n- Yes, because it expired less than a year ago: There is no one-year grace period.\n- Yes, if the signer also shows a credit card: A credit card does not make an unacceptable ID acceptable.\n- Yes, because passports are accepted for 10 years after they expire: There is no 10-year grace period.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "identity",
+      "five-year rule"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "notary-california-satisfactory-evidence-0004",
+    "certId": "notary-california",
+    "subjectId": "identification",
+    "chapterId": "satisfactory-evidence",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A signer shows a current driver's license from Nevada. May a California notary rely on it?",
+    "choices": [
+      "No, only California IDs are acceptable",
+      "Yes, a current driver's license from another state is acceptable",
+      "No, unless a California judge approves it",
+      "Only if the signer also brings a credible witness"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Other states' licenses are acceptable",
+    "explanation": "A driver's license issued by another U.S. state is acceptable when it is current or was issued within five years and includes a photo, description, signature, and serial number.\n\n**Wrong choices**\n- No, only California IDs are acceptable: Driver's licenses from other states are on the list of acceptable IDs.\n- No, unless a California judge approves it: No approval is needed.\n- Only if the signer also brings a credible witness: A credible witness is used when the signer has no acceptable ID.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "identity",
+      "ID"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "notary-california-satisfactory-evidence-0005",
+    "certId": "notary-california",
+    "subjectId": "identification",
+    "chapterId": "satisfactory-evidence",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A signer has no acceptable ID. How many credible witnesses are needed if the witness personally knows both the notary and the signer?",
+    "choices": [
+      "Two",
+      "One",
+      "None; the notary may accept the signer's word",
+      "Three"
+    ],
+    "answer": 2,
+    "oneLineConcept": "One credible witness if known to notary",
+    "explanation": "One credible witness is enough when the witness personally knows both the notary and the signer, shows acceptable ID, and takes the required oath.\n\n**Wrong choices**\n- Two: Two credible witnesses are used when they do not personally know the notary.\n- None; the notary may accept the signer's word: Without ID, credible witnesses are required.\n- Three: California never requires three credible witnesses.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "credible witness"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "notary-california-satisfactory-evidence-0006",
+    "certId": "notary-california",
+    "subjectId": "identification",
+    "chapterId": "satisfactory-evidence",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A signer has no acceptable ID. The available witnesses know the signer but do not know the notary. What does the law require?",
+    "choices": [
+      "Three witnesses, at least one with ID",
+      "One credible witness with acceptable ID",
+      "Two credible witnesses, each with acceptable ID",
+      "Two witnesses, with no ID needed"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Two credible witnesses if unknown to notary",
+    "explanation": "When credible witnesses do not personally know the notary, two credible witnesses are needed. Each must personally know the signer, show acceptable ID, and take an oath.\n\n**Wrong choices**\n- Three witnesses, at least one with ID: Three witnesses are not required.\n- One credible witness with acceptable ID: One witness is enough only when that witness personally knows the notary.\n- Two witnesses, with no ID needed: Each credible witness must show acceptable ID.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "credible witness"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "notary-california-satisfactory-evidence-0007",
+    "certId": "notary-california",
+    "subjectId": "identification",
+    "chapterId": "satisfactory-evidence",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Which person may NOT serve as a credible witness to identify a signer?",
+    "choices": [
+      "The signer's neighbor who has no stake in the deed",
+      "A friend of the signer who shows a current ID",
+      "The buyer named as grantee in the deed being signed",
+      "A coworker who has known the signer for years"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Credible witness: no interest, not named",
+    "explanation": "A credible witness must have no financial interest in the document and must not be named in it. A grantee named in the deed fails both tests.\n\n**Wrong choices**\n- The signer's neighbor who has no stake in the deed: A neighbor with no financial interest may serve.\n- A friend of the signer who shows a current ID: A friend may serve if they meet the other requirements.\n- A coworker who has known the signer for years: A coworker may serve if they meet the other requirements.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "credible witness"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "notary-california-satisfactory-evidence-0008",
+    "certId": "notary-california",
+    "subjectId": "identification",
+    "chapterId": "satisfactory-evidence",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Which statement must a credible witness make under oath?",
+    "choices": [
+      "The witness has known the signer for at least five years",
+      "It would be very difficult or impossible for the signer to obtain an acceptable ID",
+      "The witness has read the document and it is accurate",
+      "The witness will be responsible for the signer's debts"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Witness swears ID is very hard to get",
+    "explanation": "A credible witness swears that the signer is the person named, that the witness personally knows the signer, that the signer has no acceptable ID, and that it would be very difficult or impossible for the signer to get one.\n\n**Wrong choices**\n- The witness has known the signer for at least five years: No minimum time is set by law.\n- The witness has read the document and it is accurate: The witness swears about identity, not about the document's contents.\n- The witness will be responsible for the signer's debts: The oath has nothing to do with debts.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "credible witness"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "notary-california-satisfactory-evidence-0009",
+    "certId": "notary-california",
+    "subjectId": "identification",
+    "chapterId": "satisfactory-evidence",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which ID is on California's list of acceptable identification documents?",
+    "choices": [
+      "A utility bill showing the signer's address",
+      "A student ID card from a private college",
+      "A gym membership card with a photo",
+      "An identification card issued by a branch of the U.S. armed forces"
+    ],
+    "answer": 4,
+    "oneLineConcept": "U.S. military ID is acceptable",
+    "explanation": "California accepts several IDs, including an identification card issued by a branch of the U.S. armed forces, as long as it is current or was issued within five years and has the required details.\n\n**Wrong choices**\n- A utility bill showing the signer's address: A bill has no photo or description and is not acceptable.\n- A student ID card from a private college: Private school IDs are not on the list.\n- A gym membership card with a photo: Private membership cards are not acceptable.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "identity",
+      "ID"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "notary-california-satisfactory-evidence-0010",
+    "certId": "notary-california",
+    "subjectId": "identification",
+    "chapterId": "satisfactory-evidence",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A signer shows a current California driver's license, but the photo does not look like the signer and the signer cannot answer basic questions about it. What should the notary do?",
+    "choices": [
+      "Refuse, because satisfactory evidence also requires no information that would make a reasonable person doubt the signer's identity",
+      "Proceed, but write a note in the journal",
+      "Proceed, because the license is current",
+      "Proceed if the signer pays an extra fee"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Doubtful identity = do not notarize",
+    "explanation": "Satisfactory evidence means there is no information or circumstance that would lead a reasonable person to believe the signer is not who they claim to be, plus an acceptable ID or credible witnesses. Clear warning signs mean the notary should not proceed.\n\n**Wrong choices**\n- Proceed, but write a note in the journal: A note does not cure a lack of satisfactory evidence.\n- Proceed, because the license is current: A valid ID alone is not enough when there are serious reasons to doubt identity.\n- Proceed if the signer pays an extra fee: Fees have nothing to do with identity.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "identity"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "notary-california-satisfactory-evidence-0011",
+    "certId": "notary-california",
+    "subjectId": "identification",
+    "chapterId": "satisfactory-evidence",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "When a signer is identified by an ID card, which details does the notary record in the journal?",
+    "choices": [
+      "The type of ID, the agency that issued it, its serial number, and its date of issue or expiration",
+      "A photocopy of the ID instead of any written details",
+      "Only the signer's age",
+      "The signer's height and weight only"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Journal records ID type, issuer, number, date",
+    "explanation": "When identity is established by an ID, the journal records the type of identifying document, the governmental agency that issued it, its serial or identifying number, and its date of issuance or expiration.\n\n**Wrong choices**\n- A photocopy of the ID instead of any written details: The journal entry must include the ID details.\n- Only the signer's age: The journal needs details of the ID, not the signer's age.\n- The signer's height and weight only: Physical details alone do not record the ID used.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "journal",
+      "ID"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "notary-california-satisfactory-evidence-0012",
+    "certId": "notary-california",
+    "subjectId": "identification",
+    "chapterId": "satisfactory-evidence",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Under California Civil Code section 1185, a notary who fails to obtain the satisfactory evidence of identity required by law can face a civil penalty of up to how much?",
+    "choices": [
+      "$10,000",
+      "$1,500",
+      "$750",
+      "$2,500"
+    ],
+    "answer": 1,
+    "oneLineConcept": "No satisfactory evidence: up to $10,000",
+    "explanation": "Civil Code section 1185 allows a civil penalty of up to $10,000 against a notary who fails to obtain the satisfactory evidence of identity the law requires.\n\n**Wrong choices**\n- $1,500: $1,500 is the maximum for a willful failure of duty.\n- $750: $750 is the maximum for a negligent failure of duty.\n- $2,500: $2,500 is the maximum penalty for failing to take a required thumbprint.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "identity",
+      "penalties"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "notary-california-satisfactory-evidence-0013",
+    "certId": "notary-california",
+    "subjectId": "identification",
+    "chapterId": "satisfactory-evidence",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Each of the following may be used to identify a signer in California EXCEPT:",
+    "choices": [
+      "A U.S. passport issued three years ago",
+      "A current California ID card from the DMV",
+      "Two credible witnesses with acceptable ID who do not know the notary",
+      "The notary's personal knowledge of the signer"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Personal knowledge is not satisfactory evidence",
+    "explanation": "California notaries may rely on acceptable IDs that are current or issued within five years, or on credible witnesses. Personal knowledge alone is not satisfactory evidence.\n\n**Wrong choices**\n- A U.S. passport issued three years ago: A U.S. passport issued within the last five years is acceptable.\n- A current California ID card from the DMV: A current DMV ID card is acceptable.\n- Two credible witnesses with acceptable ID who do not know the notary: Two credible witnesses are allowed when they do not know the notary.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "identity"
+    ],
+    "levelLock": true
+  }
+]

@@ -1,0 +1,170 @@
+[
+  {
+    "id": "notary-california-subscribing-witness-0001",
+    "certId": "notary-california",
+    "subjectId": "identification",
+    "chapterId": "subscribing-witness",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "In a proof of execution, who personally appears before the notary?",
+    "choices": [
+      "The principal who signed the document",
+      "The subscribing witness",
+      "The person who wrote the document",
+      "The county recorder"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Proof: subscribing witness appears",
+    "explanation": "In a proof of execution, the subscribing witness appears before the notary in place of the principal and swears that the principal signed the document.\n\n**Wrong choices**\n- The principal who signed the document: In a proof, the principal does not appear. That is the reason a proof is used.\n- The person who wrote the document: The drafter does not need to appear.\n- The county recorder: The county recorder has no role in a proof.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "subscribing witness"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "notary-california-subscribing-witness-0002",
+    "certId": "notary-california",
+    "subjectId": "identification",
+    "chapterId": "subscribing-witness",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which statement correctly describes a subscribing witness?",
+    "choices": [
+      "A credible witness who identifies a signer who has no ID",
+      "Any person who knows the principal, even if not present at the signing",
+      "A notary who signs the document on the principal's behalf",
+      "A person who saw the principal sign, or heard the principal acknowledge the signature, and signed as a witness at the principal's request"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Subscribing witness saw it and signed",
+    "explanation": "A subscribing witness saw the principal sign the document, or heard the principal acknowledge the signature, and then signed the document as a witness at the principal's request.\n\n**Wrong choices**\n- A credible witness who identifies a signer who has no ID: That describes a credible witness, not a subscribing witness.\n- Any person who knows the principal, even if not present at the signing: The subscribing witness must have seen the signing or heard the principal acknowledge it.\n- A notary who signs the document on the principal's behalf: A notary may not sign for the principal.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "subscribing witness"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "notary-california-subscribing-witness-0003",
+    "certId": "notary-california",
+    "subjectId": "identification",
+    "chapterId": "subscribing-witness",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "How must the notary identify a subscribing witness?",
+    "choices": [
+      "By a phone call to the principal",
+      "By the notary's personal knowledge of the subscribing witness",
+      "By the subscribing witness's own driver's license alone",
+      "By the oath of a credible witness who shows acceptable ID"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Subscribing witness ID: credible witness oath",
+    "explanation": "The identity of the subscribing witness is proven by the oath of a credible witness who shows acceptable identification. The notary may not rely on personal knowledge or on the subscribing witness's own ID alone.\n\n**Wrong choices**\n- By a phone call to the principal: A phone call does not prove identity.\n- By the notary's personal knowledge of the subscribing witness: Personal knowledge is not allowed for this purpose.\n- By the subscribing witness's own driver's license alone: The subscribing witness's own ID is not enough by itself.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "subscribing witness",
+      "identity"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "notary-california-subscribing-witness-0004",
+    "certId": "notary-california",
+    "subjectId": "identification",
+    "chapterId": "subscribing-witness",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which document may NOT be notarized by a proof of execution by a subscribing witness?",
+    "choices": [
+      "A written agreement to rent a storage unit",
+      "A letter stating a person's address",
+      "A deed of trust",
+      "A personal contract to sell a used car"
+    ],
+    "answer": 3,
+    "oneLineConcept": "No proofs for deeds of trust",
+    "explanation": "Proofs of execution may not be used for grant deeds, quitclaim deeds, deeds of trust, and other documents affecting real property, with narrow exceptions such as deeds of reconveyance.\n\n**Wrong choices**\n- A written agreement to rent a storage unit: This is not a real property document such as a deed.\n- A letter stating a person's address: A simple letter that does not affect real property may be proved.\n- A personal contract to sell a used car: A car sale contract is not a real property document.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "subscribing witness",
+      "real property"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "notary-california-subscribing-witness-0005",
+    "certId": "notary-california",
+    "subjectId": "identification",
+    "chapterId": "subscribing-witness",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A principal in the hospital asks for her power of attorney to be notarized through a subscribing witness. What should the notary do?",
+    "choices": [
+      "Accept, but skip the journal thumbprint",
+      "Accept, if two subscribing witnesses appear",
+      "Decline, because a power of attorney may not be notarized by a proof of execution",
+      "Accept, if the subscribing witness shows a driver's license"
+    ],
+    "answer": 3,
+    "oneLineConcept": "No proofs for powers of attorney",
+    "explanation": "California does not allow proofs of execution for powers of attorney or for other documents that require a journal thumbprint. The principal must appear for an acknowledgment instead.\n\n**Wrong choices**\n- Accept, but skip the journal thumbprint: Skipping the thumbprint would add another violation.\n- Accept, if two subscribing witnesses appear: More witnesses do not make a proof allowed for a power of attorney.\n- Accept, if the subscribing witness shows a driver's license: Powers of attorney cannot be proved by a subscribing witness at all.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-10",
+    "tags": [
+      "subscribing witness",
+      "power of attorney"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  }
+]
