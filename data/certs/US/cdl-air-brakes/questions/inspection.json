@@ -1,0 +1,980 @@
+[
+  {
+    "id": "cdl-air-brakes-inspection-0001",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "inspection",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Before you check manual slack adjusters by hand, how should the vehicle be set up?",
+    "choices": [
+      "Engine running and the brake pedal held down",
+      "On level ground, wheels chocked, parking brakes applied",
+      "On level ground, wheels chocked, parking brakes released"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Slack check: level ground, chocks, parking brakes off",
+    "explanation": "To check slack adjusters (the arms that connect the brake chamber push rod to the brake), **park on level ground, chock the wheels so the vehicle cannot roll, and release the parking brakes**. With the brakes released you can feel the true free play when you pull on each adjuster.\n\n**Wrong choices**\n- On level ground, wheels chocked, parking brakes applied: With the parking (spring) brakes applied, the push rods are already pushed out, so you cannot feel the free play.\n- Engine running and the brake pedal held down: Holding the brake pedal down applies the brakes, which also hides the free play. The engine does not need to run for this check.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "slack adjusters",
+      "pre-trip inspection"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-inspection-0002",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "inspection",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "You pull hard on a manual slack adjuster. How much movement where the push rod attaches means it probably needs adjustment?",
+    "choices": [
+      "More than about 1/4 inch",
+      "More than about 1 inch",
+      "More than about 3 inches"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Slack adjuster moves over about 1 inch: needs adjustment",
+    "explanation": "Wearing gloves, pull hard on each slack adjuster you can reach. **If it moves more than about 1 inch where the push rod attaches, it probably needs adjustment.** Brakes with too much slack can make the vehicle very hard to stop.\n\n**Wrong choices**\n- More than about 1/4 inch: A small amount of movement is normal. The manual uses about 1 inch as the limit, not 1/4 inch.\n- More than about 3 inches: Waiting until there are 3 inches of movement is far too late. The brake would already be badly out of adjustment.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "slack adjusters",
+      "pre-trip inspection"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-inspection-0003",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "inspection",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "In a dual air brake system, with the engine at operating rpm, how quickly should air pressure build from 85 to 100 psi?",
+    "choices": [
+      "Within 3 minutes",
+      "Within 10 minutes",
+      "Within 45 seconds"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Dual system build-up: 85 to 100 psi within 45 seconds",
+    "explanation": "Check the build-up rate with the engine at operating rpm. In a **dual air system, pressure should build from 85 to 100 psi within 45 seconds**. (If the vehicle has air tanks larger than the minimum size, build-up can take longer and still be safe. Check the manufacturer's specifications.)\n\n**Wrong choices**\n- Within 3 minutes: 3 minutes is the typical figure for older single air systems building from 50 to 90 psi at idle, not for dual systems.\n- Within 10 minutes: 10 minutes is much too slow. Pressure could drop too low while you drive.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "air pressure build-up",
+      "dual air system"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-inspection-0004",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "inspection",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "The low air pressure warning must come on before the air tank pressure drops below what level?",
+    "choices": [
+      "100 psi",
+      "60 psi",
+      "20 psi"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Low-air warning: must come on before 60 psi",
+    "explanation": "With the engine off and electrical power on, step on and off the brake pedal to lower the tank pressure. **The low air pressure warning (a buzzer, light, or wig wag) must come on before pressure drops below 60 psi** in the tank (or in the tank with the lowest pressure in a dual system).\n\n**Wrong choices**\n- 20 psi: 20 psi is far too low. By then the spring brakes may already be coming on, and the warning would be useless.\n- 100 psi: About 100 psi is where the governor tells the compressor to start pumping again (cut-in). It is not the warning level.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "low air warning",
+      "pre-trip inspection"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-inspection-0005",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "inspection",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "During the spring brake check, at about what air pressure should the parking brake knob pop out?",
+    "choices": [
+      "Usually between 20 and 45 psi",
+      "Usually between 100 and 125 psi",
+      "Usually between 60 and 80 psi"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Spring brakes come on at about 20 to 45 psi",
+    "explanation": "With the wheels chocked and the engine off, step on and off the brake pedal to lower the tank pressure. **The parking brake knob should pop out when pressure falls to the manufacturer's setting, usually in the range of 20 to 45 psi.** This makes the spring brakes come on.\n\n**Wrong choices**\n- Usually between 60 and 80 psi: 60 psi is the low-air warning level. The spring brakes come on later, at a lower pressure.\n- Usually between 100 and 125 psi: 100 to 125 psi is the normal working range where the governor cuts the compressor in and out.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "spring brakes",
+      "pre-trip inspection"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-inspection-0006",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "inspection",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "For a single vehicle (such as a straight truck), with a fully charged system, engine off, and brakes released, what is the most air pressure it should lose?",
+    "choices": [
+      "Less than 2 psi in one minute",
+      "Less than 10 psi in one minute",
+      "Less than 3 psi in one minute"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Released leakage, single vehicle: under 2 psi per minute",
+    "explanation": "Charge the system fully, turn off the engine, release the parking brake, and time the pressure drop. **For a single vehicle, the loss should be less than 2 psi in one minute** (less than 3 psi for a combination vehicle).\n\n**Wrong choices**\n- Less than 3 psi in one minute: Less than 3 psi in one minute is the limit for a combination vehicle with brakes released, not a single vehicle.\n- Less than 10 psi in one minute: Losing up to 10 psi a minute means a serious leak.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "leakage test",
+      "pre-trip inspection"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-inspection-0007",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "inspection",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "According to the CDL manual, at about what pressure does the governor stop the compressor from pumping air (cut-out)?",
+    "choices": [
+      "About 60 psi",
+      "About 125 psi",
+      "About 100 psi"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Governor cut-out: about 125 psi",
+    "explanation": "The governor controls when the air compressor pumps air into the tanks. **The compressor should stop pumping (cut out) at about 125 psi** and start again (cut in) at about 100 psi. Always check the manufacturer's specification.\n\n**Wrong choices**\n- About 100 psi: About 100 psi is the cut-in pressure, where the compressor starts pumping again.\n- About 60 psi: About 60 psi is the level where the low air warning must already be on.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "governor",
+      "cut-out"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-inspection-0008",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "inspection",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "According to the CDL manual, at about what pressure should the compressor start pumping air again (cut-in)?",
+    "choices": [
+      "About 125 psi",
+      "About 100 psi",
+      "About 45 psi"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Governor cut-in: about 100 psi",
+    "explanation": "When air is used and tank pressure falls, **the governor lets the compressor start pumping again (cut in) at about 100 psi**. It stops pumping (cuts out) at about 125 psi. Check the manufacturer's specification.\n\n**Wrong choices**\n- About 125 psi: About 125 psi is the cut-out pressure, where the compressor stops pumping.\n- About 45 psi: About 45 psi is near the top of the range where spring brakes come on. The compressor should cut in long before that.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "governor",
+      "cut-in"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-inspection-0009",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "inspection",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "During the engine compartment check on a vehicle with air brakes, which extra item should you check?",
+    "choices": [
+      "The brake fluid level in the master cylinder",
+      "The air compressor drive belt, if the compressor is belt-driven",
+      "The air conditioning filter"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Engine check: air compressor drive belt",
+    "explanation": "On a vehicle with air brakes, the engine compartment check adds one item: **check the air compressor drive belt (if the compressor is belt-driven) for condition and tightness.** If the belt fails, the compressor cannot keep up the air supply.\n\n**Wrong choices**\n- The brake fluid level in the master cylinder: A brake fluid master cylinder belongs to hydraulic brakes. Air brakes use compressed air, not brake fluid.\n- The air conditioning filter: The air conditioning filter has nothing to do with the brakes.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "engine compartment",
+      "air compressor"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-inspection-0010",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "inspection",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "According to the CDL manual, what kind of slack adjusters do newer air brake vehicles have?",
+    "choices": [
+      "Automatic slack adjusters",
+      "Manual slack adjusters only",
+      "No slack adjusters"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Newer air brake vehicles: automatic slack adjusters",
+    "explanation": "**Newer air brake vehicles have automatic slack adjusters.** They adjust themselves as the brake linings wear. Even so, you still check them during your inspection.\n\n**Wrong choices**\n- Manual slack adjusters only: Manual slack adjusters are found on older vehicles. Newer ones use automatic adjusters.\n- No slack adjusters: S-cam drum brakes need slack adjusters to connect the push rod to the brake camshaft.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "slack adjusters",
+      "automatic slack adjusters"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-inspection-0011",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "inspection",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "To test the service brakes, about how fast should you move the vehicle forward before applying the brakes firmly?",
+    "choices": [
+      "About 25 mph",
+      "About 45 mph",
+      "About 5 mph"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Service brake test: about 5 mph, then brake firmly",
+    "explanation": "Wait for normal air pressure, release the parking brake, and **move the vehicle forward slowly, about 5 mph. Then apply the brakes firmly with the brake pedal.** Watch for pulling to one side, an unusual feel, or a delayed stop.\n\n**Wrong choices**\n- About 25 mph: 25 mph is too fast for a test in the yard. A problem at that speed could cause a crash.\n- About 45 mph: 45 mph is road speed, not a safe test speed.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "service brake test",
+      "pre-trip inspection"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-inspection-0012",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "inspection",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "How should you test the parking brake?",
+    "choices": [
+      "Stop, apply the parking brake, and gently pull against it in a low gear",
+      "Apply the parking brake while moving at about 20 mph",
+      "Release the parking brake and roll down a hill in neutral"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Parking brake test: pull gently against it in low gear",
+    "explanation": "**Stop the vehicle, put the parking brake on, and gently pull against it in a low gear** to test that it holds. If the vehicle moves, the parking brake is not doing its job.\n\n**Wrong choices**\n- Apply the parking brake while moving at about 20 mph: Applying the parking brake while moving can lock wheels and cause a skid. That is not how you test it.\n- Release the parking brake and roll down a hill in neutral: Rolling downhill in neutral with no parking brake is unsafe and tests nothing.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "parking brake test",
+      "pre-trip inspection"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-inspection-0013",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "inspection",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "According to the CDL manual, what is the most common problem found in roadside inspections of air brakes?",
+    "choices": [
+      "Air tanks that are too large",
+      "Brakes that are out of adjustment",
+      "Brake pedals that are too stiff"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Most common roadside problem: out-of-adjustment brakes",
+    "explanation": "**Out-of-adjustment brakes are the most common problem found in roadside inspections.** That is why you check slack adjusters before every trip. A vehicle with too much brake slack can be very hard to stop.\n\n**Wrong choices**\n- Air tanks that are too large: Larger-than-minimum air tanks are allowed. They only make build-up take longer.\n- Brake pedals that are too stiff: A stiff brake pedal is not what the manual names as the most common problem.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "slack adjusters",
+      "roadside inspection"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-inspection-0014",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "inspection",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "When you check brake drums, which cracks make a drum unsafe?",
+    "choices": [
+      "Cracks longer than one-half the width of the friction area",
+      "Only cracks that go all the way through the drum",
+      "Any small mark in the paint on the outside of the drum"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Drum cracks longer than half the friction width: unsafe",
+    "explanation": "Brake drums (or discs) **must not have cracks longer than one-half the width of the friction area** (the surface the linings rub on). Also check that linings are not loose, soaked with oil or grease, or dangerously thin.\n\n**Wrong choices**\n- Only cracks that go all the way through the drum: A crack does not need to go all the way through to be dangerous. The limit is based on its length across the friction area.\n- Any small mark in the paint on the outside of the drum: Paint marks on the outside are not cracks in the braking surface.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "brake drums",
+      "pre-trip inspection"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-inspection-0015",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "inspection",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "For a combination vehicle (tractor-trailer), with a fully charged system, engine off, and brakes released, the air loss should be:",
+    "choices": [
+      "Less than 3 psi in one minute",
+      "Less than 2 psi in one minute",
+      "Less than 4 psi in one minute"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Released leakage, combination: under 3 psi per minute",
+    "explanation": "With brakes **released** and the engine off, the air loss should be:\n1. Single vehicle: less than 2 psi in one minute\n2. **Combination vehicle: less than 3 psi in one minute**\nA combination has more hoses and connections, so it is allowed a little more.\n\n**Wrong choices**\n- Less than 2 psi in one minute: Less than 2 psi in one minute is the limit for a single vehicle with brakes released.\n- Less than 4 psi in one minute: 4 psi in one minute is the combination limit for the brakes-applied test, not the released test.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "leakage test",
+      "combination vehicle"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-inspection-0016",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "inspection",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "In the brakes-applied leakage test on a single vehicle, after the first pressure drop, what is the most the air pressure should fall?",
+    "choices": [
+      "3 psi in one minute",
+      "2 psi in one minute",
+      "4 psi in one minute"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Applied leakage, single vehicle: no more than 3 psi per minute",
+    "explanation": "Apply the brakes with 90 psi or more using the brake pedal. **After the first drop, a single vehicle should not lose more than 3 psi in one minute** (a combination vehicle: not more than 4 psi). More than that means a leak to find and fix.\n\n**Wrong choices**\n- 2 psi in one minute: 2 psi in one minute is the single-vehicle limit with the brakes released, not applied.\n- 4 psi in one minute: 4 psi in one minute is the limit for a combination vehicle with the brakes applied.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "leakage test",
+      "applied leakage"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-inspection-0017",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "inspection",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "In the brakes-applied leakage test on a combination vehicle, after the first pressure drop, what is the most the air pressure should fall?",
+    "choices": [
+      "4 psi in one minute",
+      "3 psi in one minute",
+      "6 psi in one minute"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Applied leakage, combination: no more than 4 psi per minute",
+    "explanation": "With the brakes applied (90 psi or more on the pedal), wait for the first drop. **A combination vehicle should then lose no more than 4 psi in one minute.** A single vehicle should lose no more than 3 psi.\n\n**Wrong choices**\n- 3 psi in one minute: 3 psi in one minute is the brakes-applied limit for a single vehicle, or the brakes-released limit for a combination.\n- 6 psi in one minute: 6 psi in one minute is more than the manual allows.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "leakage test",
+      "applied leakage"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-inspection-0018",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "inspection",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "After the released-brake leakage check, how do you do the brakes-applied part of the test?",
+    "choices": [
+      "Press the brake pedal to apply 90 psi or more, then time the loss after the first drop",
+      "Pull out the parking brake knob and time the pressure loss",
+      "Pump the brake pedal until the low air warning comes on"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Applied test: 90 psi or more on the pedal, time after first drop",
+    "explanation": "With the engine still off, **step on the brake pedal to apply 90 psi or more. Ignore the first drop (air filling the brake chambers), then time the loss for one minute.** Limits: no more than 3 psi for a single vehicle and 4 psi for a combination.\n\n**Wrong choices**\n- Pull out the parking brake knob and time the pressure loss: Setting the parking brake does not put service-brake air pressure into the system, so it does not test for service-line leaks.\n- Pump the brake pedal until the low air warning comes on: Pumping the pedal until the warning comes on is the low-air warning test, not the leakage test.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "leakage test",
+      "applied leakage"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-inspection-0019",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "inspection",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "In an older single air brake system, what is the typical build-up requirement with the engine at idle (600 to 900 rpm)?",
+    "choices": [
+      "From 85 to 100 psi within 45 seconds",
+      "From 50 to 90 psi within 3 minutes",
+      "From 20 to 45 psi within 1 minute"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Older single system: 50 to 90 psi within 3 minutes",
+    "explanation": "Build-up rates differ by system type:\n1. **Older single air system (engine at idle, 600 to 900 rpm): 50 to 90 psi within 3 minutes**\n2. Dual air system (engine at operating rpm): 85 to 100 psi within 45 seconds\n\n**Wrong choices**\n- From 85 to 100 psi within 45 seconds: 85 to 100 psi within 45 seconds is the figure for dual air systems.\n- From 20 to 45 psi within 1 minute: 20 to 45 psi is the usual range where spring brakes come on. It is not a build-up figure.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "air pressure build-up",
+      "single air system"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-inspection-0020",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "inspection",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Why is it important that the low air pressure warning works?",
+    "choices": [
+      "Without it, you could lose air pressure without knowing it",
+      "Without it, the compressor cannot start pumping air",
+      "Without it, the brake drums will crack"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Warning signal tells you air is getting low",
+    "explanation": "The low air warning (buzzer, light, or wig wag) tells you that tank pressure is getting low. **If it does not work, you could lose air pressure and not know it** until the brakes stop working well or the spring brakes come on suddenly.\n\n**Wrong choices**\n- Without it, the compressor cannot start pumping air: The compressor is controlled by the governor, not by the warning signal.\n- Without it, the brake drums will crack: The warning signal has no effect on the drums.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "low air warning"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-inspection-0021",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "inspection",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "How do you test the low air pressure warning signal?",
+    "choices": [
+      "Engine off, electrical power on, step on and off the brake pedal to lower tank pressure",
+      "Engine at fast idle, watch the gauge until the pressure stops rising",
+      "Engine running, open the air tank drains all the way"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Low-air test: engine off, key on, pump the pedal",
+    "explanation": "Shut the engine off when there is enough air that the warning is not on. **Turn the electrical power on and step on and off the brake pedal to lower the tank pressure.** The warning must come on before pressure drops below 60 psi.\n\n**Wrong choices**\n- Engine at fast idle, watch the gauge until the pressure stops rising: Running at fast idle until the gauge stops rising is the governor cut-out check.\n- Engine running, open the air tank drains all the way: Draining the tanks is maintenance, not the warning test. With the engine running, the compressor keeps adding air.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "low air warning",
+      "pre-trip inspection"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-inspection-0022",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "inspection",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "How do you check the governor cut-out pressure?",
+    "choices": [
+      "Pump the brake pedal with the engine off until the parking brake knob pops out",
+      "Turn off the engine and note the pressure where the warning comes on",
+      "Run the engine at fast idle and note the pressure where the gauge stops rising"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Cut-out check: fast idle, gauge stops rising",
+    "explanation": "**Run the engine at a fast idle. The governor should cut out at the manufacturer's pressure (about 125 psi), and the gauge stops rising.** Then, with the engine idling, step on and off the brake to lower pressure. The compressor should cut in (about 100 psi), and pressure starts rising again.\n\n**Wrong choices**\n- Turn off the engine and note the pressure where the warning comes on: Watching for the warning with the engine off is the low-air warning test.\n- Pump the brake pedal with the engine off until the parking brake knob pops out: Watching for the knob to pop out is the spring brake test.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "governor",
+      "cut-out"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-inspection-0023",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "inspection",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "During your inspection you find an automatic slack adjuster out of adjustment. What does this usually mean?",
+    "choices": [
+      "Nothing; automatic adjusters always need manual adjusting",
+      "There is likely a mechanical problem; have the brakes repaired",
+      "Adjust it by hand and keep driving as normal"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Automatic adjuster out of adjustment: mechanical problem",
+    "explanation": "Automatic slack adjusters should not need manual adjusting except during brake maintenance or installation. **If one is out of adjustment, it usually means a mechanical problem. Have the brakes repaired**; manually adjusting it can hide the real problem.\n\n**Wrong choices**\n- Adjust it by hand and keep driving as normal: Adjusting it by hand only covers up the problem. The adjuster or brake has a fault that needs repair.\n- Nothing; automatic adjusters always need manual adjusting: Automatic adjusters are made to adjust themselves. Needing manual adjustment is a sign of trouble.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "automatic slack adjusters"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-inspection-0024",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "inspection",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "If air pressure builds up too slowly during your inspection, what is the danger?",
+    "choices": [
+      "The brakes will grab too hard at low speed",
+      "Pressure could drop too low while driving, forcing an emergency stop",
+      "The governor will stop the compressor too early"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Slow build-up: air may run low while driving",
+    "explanation": "**If air pressure does not build up fast enough, your pressure may drop too low while you drive, which could force an emergency stop.** Do not drive until the problem is fixed.\n\n**Wrong choices**\n- The governor will stop the compressor too early: A slow build-up is not caused by the governor cutting out early. It means the compressor cannot keep up.\n- The brakes will grab too hard at low speed: Slow build-up means too little air, not brakes that grab too hard.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "air pressure build-up"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-inspection-0025",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "inspection",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "When you test the service brakes at slow speed, what problems are you watching for?",
+    "choices": [
+      "Pulling to one side, an unusual feel, or a delayed stop",
+      "Whether the air pressure gauge rises during the stop",
+      "Whether the low air warning stays off all day"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Service brake test: pulling, odd feel, slow stop",
+    "explanation": "Move forward at about 5 mph and apply the brakes firmly. **Note any pulling to one side, unusual feel, or delayed stopping action.** This test can show problems you would not otherwise find until you needed the brakes on the road.\n\n**Wrong choices**\n- Whether the air pressure gauge rises during the stop: Braking uses air, so the gauge normally drops, not rises. Watching the gauge is not the point of this test.\n- Whether the low air warning stays off all day: The low air warning is checked in its own test with the engine off.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "service brake test"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-inspection-0026",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "inspection",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A tractor-trailer has a fully charged air system. With the engine off and the brakes released, it loses 2 psi in one minute. What is the result of the leakage test?",
+    "choices": [
+      "It fails: the limit is less than 2 psi per minute for every vehicle",
+      "It passes: the limit for a combination vehicle is less than 3 psi per minute",
+      "It fails: any drop at all means there is a leak"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Combination, brakes released: under 3 psi/min passes",
+    "explanation": "With the engine off and the brakes released, the air loss rate must be **less than 2 psi in one minute for a single vehicle** and **less than 3 psi in one minute for a combination vehicle**. A tractor-trailer is a combination vehicle, so a 2 psi loss in one minute is under its limit of 3 psi and passes.\n\n**Wrong choices**\n- It fails: the limit is less than 2 psi per minute for every vehicle: The 2 psi limit is for single vehicles. Combination vehicles may lose up to just under 3 psi per minute.\n- It fails: any drop at all means there is a leak: A small loss is normal. The test fails only when the loss reaches the limit.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "leakage test",
+      "calculation"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-inspection-0027",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "inspection",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A straight truck (single vehicle) is tested with the brakes applied at 90 psi. After the first drop, pressure falls 7 psi in 2 minutes. What is the result?",
+    "choices": [
+      "It passes: 3.5 psi per minute is under the 4 psi limit",
+      "It passes: only the released-brake test has a limit",
+      "It fails: 3.5 psi per minute is more than the 3 psi limit"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Single, applied: 7 psi in 2 min = 3.5 psi/min, fails",
+    "explanation": "Work out the rate per minute:\n1. Rate: 7 / 2 = 3.5 psi per minute\n2. Limit for a single vehicle with brakes applied: no more than 3 psi per minute\n3. 3.5 is more than 3, so there is too much leakage. Find and fix the leak before driving.\nCheck: 3 psi per minute for 2 minutes would be 6 psi; the truck lost 7.\n\n**Wrong choices**\n- It passes: 3.5 psi per minute is under the 4 psi limit: 4 psi per minute is the limit for a combination vehicle. This is a single vehicle, so the limit is 3.\n- It passes: only the released-brake test has a limit: The brakes-applied test has its own limit: 3 psi per minute (single) and 4 psi per minute (combination).",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "leakage test",
+      "calculation"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-inspection-0028",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "inspection",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A truck has a dual air system with minimum-size tanks. At operating rpm, pressure takes 60 seconds to build from 85 to 100 psi. What should you conclude?",
+    "choices": [
+      "It is fine; up to 3 minutes is allowed",
+      "It is fine as long as pressure reaches about 125 psi in the end",
+      "It is too slow; it should take 45 seconds or less"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Dual system: 60 s from 85 to 100 psi is too slow",
+    "explanation": "In a dual air system, **pressure should build from 85 to 100 psi within 45 seconds**. Larger-than-minimum tanks can take longer, but these are minimum-size tanks. 60 seconds is more than 45, so the build-up is too slow. Do not drive until it is fixed.\n\n**Wrong choices**\n- It is fine; up to 3 minutes is allowed: 3 minutes is the typical figure for older single systems building from 50 to 90 psi at idle.\n- It is fine as long as pressure reaches about 125 psi in the end: Reaching cut-out pressure eventually is not enough. A slow compressor may not keep up with the air you use while driving.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "air pressure build-up",
+      "dual air system"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-inspection-0029",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "inspection",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "During the low air warning test, the buzzer does not sound until the gauge shows 55 psi. What is the result?",
+    "choices": [
+      "It passes: the warning came on, which is all that matters",
+      "It passes: it only has to come on before the spring brakes engage",
+      "It fails: the warning must come on before pressure drops below 60 psi"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Warning at 55 psi is too late; must be before 60 psi",
+    "explanation": "**The low air warning must come on before tank pressure drops below 60 psi.** At 55 psi it is already below 60, so the warning is too late. Have it repaired.\n\n**Wrong choices**\n- It passes: it only has to come on before the spring brakes engage: The spring brakes usually come on at 20 to 45 psi. The warning must come on well before that, by 60 psi.\n- It passes: the warning came on, which is all that matters: The timing matters. A late warning gives you less time to stop safely.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "low air warning"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-inspection-0030",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "inspection",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "During the spring brake test, you pump the brake pedal and the gauge falls to 15 psi, but the parking brake knob has not popped out. What does this tell you?",
+    "choices": [
+      "It is normal; spring brakes come on only at 0 psi",
+      "It is normal; the knob only pops out with the engine running",
+      "Something is wrong; the knob should usually pop out between about 20 and 45 psi"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Knob not out at 15 psi: spring brake problem",
+    "explanation": "The parking brake knob should pop out at the manufacturer's setting, **usually between 20 and 45 psi**, so the spring brakes come on by themselves when air runs low. At 15 psi it is already below that range, so the system is not working right.\n\n**Wrong choices**\n- It is normal; spring brakes come on only at 0 psi: Spring brakes are meant to come on before all the air is gone. Waiting until 0 psi would be too late.\n- It is normal; the knob only pops out with the engine running: The test is done with the engine off. The knob should pop out without the engine running.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "spring brakes"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-inspection-0031",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "inspection",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Which statement about the air leakage test is NOT correct?",
+    "choices": [
+      "The test is done with the engine running at fast idle",
+      "The air system should be fully charged before you start",
+      "You check the loss with the brakes released and then with them applied"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Leakage test is done with the engine OFF",
+    "explanation": "For the leakage test, **charge the system fully, then turn the engine off** so the compressor is not adding air. Time the loss first with the brakes released, then with the brakes applied (90 psi or more on the pedal). The statement that the test is done with the engine running at fast idle is NOT correct.\n\n**Wrong choices**\n- The air system should be fully charged before you start: This is correct. A full system (typically 125 psi) is the starting point.\n- You check the loss with the brakes released and then with them applied: This is correct. Both checks are part of the test.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "leakage test"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "cdl-air-brakes-inspection-0032",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "inspection",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "With the engine idling, you step on and off the brake pedal. The compressor does not start pumping until pressure falls to about 70 psi. What does this suggest?",
+    "choices": [
+      "The low air warning must be broken",
+      "This is normal; the compressor waits until the warning level",
+      "The governor cut-in is too low; it should be about 100 psi"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Cut-in at 70 psi is too low; should be about 100 psi",
+    "explanation": "**The compressor should cut in (start pumping again) at about 100 psi**, or the manufacturer's setting. Cutting in at 70 psi means the governor is not working right. Have it checked before driving.\n\n**Wrong choices**\n- This is normal; the compressor waits until the warning level: The compressor should start long before the 60 psi warning level, at about 100 psi.\n- The low air warning must be broken: The warning signal does not control the compressor. The governor does.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "governor",
+      "cut-in"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-inspection-0033",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "inspection",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "An older truck has a single air system. At idle (about 700 rpm), pressure builds from 50 to 90 psi in 2 minutes 30 seconds. What should you conclude?",
+    "choices": [
+      "It is too slow; it should take 45 seconds or less",
+      "It is too slow; it should take 1 minute or less",
+      "It meets the typical requirement of 50 to 90 psi within 3 minutes"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Single system: 2.5 min from 50 to 90 psi is OK",
+    "explanation": "For an older single air system at idle (600 to 900 rpm), **the typical requirement is 50 to 90 psi within 3 minutes**. 2 minutes 30 seconds is less than 3 minutes, so it meets the requirement.\n\n**Wrong choices**\n- It is too slow; it should take 45 seconds or less: 45 seconds is the figure for dual systems, measured from 85 to 100 psi at operating rpm.\n- It is too slow; it should take 1 minute or less: The manual does not give 1 minute for this test. The typical single-system figure is 3 minutes.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "air pressure build-up",
+      "single air system"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ]
+    }
+  }
+]

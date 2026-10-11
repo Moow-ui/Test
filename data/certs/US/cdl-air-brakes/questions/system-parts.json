@@ -1,0 +1,1117 @@
+[
+  {
+    "id": "cdl-air-brakes-system-parts-0001",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "system-parts",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Air brake systems are really three braking systems in one. What are they?",
+    "choices": [
+      "Service brakes, engine brakes, and exhaust brakes",
+      "Front brakes, rear brakes, and trailer brakes",
+      "Service brakes, parking brakes, and emergency brakes"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Air brakes = service + parking + emergency",
+    "explanation": "An air brake system combines **three braking systems**: the **service brake** (used in normal driving when you press the pedal), the **parking brake** (used when you park), and the **emergency brake** (uses parts of the service and parking brakes to stop the vehicle if the service brake system fails).\n\n**Wrong choices**\n- Service brakes, engine brakes, and exhaust brakes: Engine and exhaust brakes are speed retarders, not part of the three air brake systems.\n- Front brakes, rear brakes, and trailer brakes: These are places where brakes are, not the three braking systems.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "three braking systems"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-system-parts-0002",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "system-parts",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What does the air compressor do?",
+    "choices": [
+      "Pumps air into the air storage tanks",
+      "Lets air out of the brake chambers",
+      "Removes water and oil from the air tanks"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Compressor fills the air tanks",
+    "explanation": "The **air compressor pumps air into the air storage tanks** (reservoirs). It is driven by the engine through gears or a belt.\n\n**Wrong choices**\n- Lets air out of the brake chambers: Air leaves the brake chambers through valves when you release the brakes, not through the compressor.\n- Removes water and oil from the air tanks: Water and oil are removed with drain valves, not by the compressor.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "air compressor"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-system-parts-0003",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "system-parts",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What part controls when the air compressor pumps air into the air tanks?",
+    "choices": [
+      "The safety relief valve",
+      "The foot valve",
+      "The governor"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Governor tells the compressor when to pump",
+    "explanation": "The **air compressor governor** controls when the compressor pumps air into the tanks. When tank pressure is high enough, it stops the pumping; when pressure falls, it starts the pumping again.\n\n**Wrong choices**\n- The safety relief valve: The safety relief valve only opens to let air out if pressure gets too high.\n- The foot valve: The foot valve (brake pedal) sends air to the brakes; it does not control the compressor.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "governor"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-system-parts-0004",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "system-parts",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "According to the CDL manual, at about what tank pressure does the governor stop the compressor from pumping air (cut-out)?",
+    "choices": [
+      "About 100 psi",
+      "About 125 psi",
+      "About 60 psi"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Governor cut-out: about 125 psi",
+    "explanation": "When air tank pressure rises to the **cut-out** level (around **125 psi**, psi = pounds per square inch), the governor stops the compressor from pumping air.\n\n**Wrong choices**\n- About 100 psi: About 100 psi is the cut-in level, where pumping starts again.\n- About 60 psi: 60 psi is where the low air pressure warning must come on, far below cut-out.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "governor",
+      "cut-out"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-system-parts-0005",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "system-parts",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "According to the CDL manual, at about what tank pressure does the governor let the compressor start pumping again (cut-in)?",
+    "choices": [
+      "About 125 psi",
+      "About 100 psi",
+      "About 150 psi"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Governor cut-in: about 100 psi",
+    "explanation": "When tank pressure falls to the **cut-in** level (around **100 psi**), the governor lets the compressor start pumping again.\n\n**Wrong choices**\n- About 125 psi: About 125 psi is the cut-out level, where pumping stops.\n- About 150 psi: About 150 psi is where the safety relief valve opens.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "governor",
+      "cut-in"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-system-parts-0006",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "system-parts",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "According to the CDL manual, the safety relief valve is usually set to open at about what pressure?",
+    "choices": [
+      "150 psi",
+      "125 psi",
+      "100 psi"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Safety valve opens at about 150 psi",
+    "explanation": "A **safety relief valve** is installed in the first tank the compressor pumps air to. It protects the tank and the system from too much pressure. It is usually set to open at **150 psi**.\n\n**Wrong choices**\n- 125 psi: About 125 psi is the governor cut-out, where the compressor simply stops pumping.\n- 100 psi: About 100 psi is the governor cut-in pressure.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "safety valve"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-system-parts-0007",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "system-parts",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Why must air tanks be drained?",
+    "choices": [
+      "To lower the air pressure before every stop",
+      "Water and compressor oil collect in them and can cause brake failure",
+      "To let the alcohol evaporator work"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Drain tanks: water and oil cause brake failure",
+    "explanation": "Compressed air usually has some **water and some compressor oil** in it, and they collect in the bottom of the tanks. This is bad for the air brake system. For example, **the water can freeze in cold weather and cause brake failure**. That is why tanks have drain valves.\n\n**Wrong choices**\n- To lower the air pressure before every stop: You do not drain tanks to control pressure while driving.\n- To let the alcohol evaporator work: The alcohol evaporator works without draining the tanks.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "air tank drain"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-system-parts-0008",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "system-parts",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What is the purpose of an alcohol evaporator in an air brake system?",
+    "choices": [
+      "To reduce the risk of ice forming in air brake valves in cold weather",
+      "To clean oil out of the brake drums",
+      "To cool the air compressor in hot weather"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Alcohol evaporator fights ice in valves",
+    "explanation": "Some air brake systems have an **alcohol evaporator**. It puts alcohol into the air system, which helps **reduce the risk of ice** in air brake valves and other parts during cold weather. Ice inside the system can make the brakes stop working.\n\n**Wrong choices**\n- To clean oil out of the brake drums: It puts alcohol into the air system; it does not clean the drums.\n- To cool the air compressor in hot weather: Its job is about freezing, not cooling the compressor.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "alcohol evaporator"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-system-parts-0009",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "system-parts",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "On newer vehicles, what does the parking brake control usually look like?",
+    "choices": [
+      "A yellow, diamond-shaped knob",
+      "A red, eight-sided knob",
+      "A blue lever on the steering column"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Parking brake: yellow diamond knob",
+    "explanation": "In newer vehicles with air brakes, you put on the parking brakes using a **diamond-shaped, yellow, push-pull control knob**. You **pull the knob out** to put the parking brakes (spring brakes) on and **push it in** to release them.\n\n**Wrong choices**\n- A red, eight-sided knob: A red, eight-sided knob is the trailer air supply control on combination vehicles, not the parking brake.\n- A blue lever on the steering column: Blue is not the standard color for the parking brake control.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "parking brake control"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-system-parts-0010",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "system-parts",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What is the most common type of foundation brake on air brake vehicles?",
+    "choices": [
+      "Disc brakes",
+      "S-cam drum brakes",
+      "Wedge brakes"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Most common: S-cam drum brakes",
+    "explanation": "Foundation brakes are the brakes used at each wheel. **The most common type is the S-cam drum brake.** Wedge brakes and disc brakes are less common.\n\n**Wrong choices**\n- Disc brakes: Air-operated disc brakes exist, but they are not the most common type.\n- Wedge brakes: Wedge brakes are used on some vehicles but are less common.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "foundation brakes",
+      "S-cam"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-system-parts-0011",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "system-parts",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A low air pressure warning signal must come on before tank pressure drops below what level?",
+    "choices": [
+      "100 psi",
+      "20 psi",
+      "60 psi"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Low air warning: before below 60 psi",
+    "explanation": "A **low air pressure warning signal is required** on vehicles with air brakes. It must come on **before the air pressure in the tanks falls below 60 psi** (or one half the governor cut-out pressure on older vehicles). The warning is usually a red light, and a buzzer may also come on.\n\n**Wrong choices**\n- 100 psi: 100 psi is about the governor cut-in pressure, not the warning level.\n- 20 psi: By 20 psi the spring brakes may already be on; the warning must come on much earlier.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "low air warning"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-system-parts-0012",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "system-parts",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What does the supply pressure gauge show?",
+    "choices": [
+      "How much air pressure you are applying to the brakes",
+      "How much air pressure is in the air tanks",
+      "How hot the brake drums are"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Supply gauge = pressure in the tanks",
+    "explanation": "All vehicles with air brakes have a **pressure gauge connected to the air tank**. It shows **how much pressure is in the air tanks**. If the vehicle has a dual air brake system, there is a gauge for each half of the system (or one gauge with two needles).\n\n**Wrong choices**\n- How much air pressure you are applying to the brakes: That is the application pressure gauge.\n- How hot the brake drums are: No air brake gauge measures drum temperature.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "gauges"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-system-parts-0013",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "system-parts",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What color is the ABS malfunction lamp on the instrument panel of a tractor or truck?",
+    "choices": [
+      "Red",
+      "Green",
+      "Yellow"
+    ],
+    "answer": 3,
+    "oneLineConcept": "ABS malfunction lamp is yellow",
+    "explanation": "Vehicles with antilock brakes (ABS) have **yellow malfunction lamps**. On tractors and trucks the lamp is on the instrument panel. It comes on briefly as a bulb check when you start the vehicle and should then go out. If it stays on, the ABS is not working.\n\n**Wrong choices**\n- Red: Red is normally used for the low air pressure warning, not ABS.\n- Green: The ABS malfunction lamp is not green.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "ABS",
+      "warning lamp"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-system-parts-0014",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "system-parts",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What happens to the spring brakes when air pressure is removed from them?",
+    "choices": [
+      "The brakes release so the wheels roll freely",
+      "Nothing; spring brakes only work when you press the pedal",
+      "Powerful springs put the brakes on"
+    ],
+    "answer": 3,
+    "oneLineConcept": "No air = spring brakes ON",
+    "explanation": "**Spring brakes** are held back by air pressure. When the air pressure is removed (by the parking control or by a leak), **strong springs put the brakes on**. That is why they work as parking brakes and as emergency brakes.\n\n**Wrong choices**\n- The brakes release so the wheels roll freely: Spring brakes do the opposite: losing air puts them on.\n- Nothing; spring brakes only work when you press the pedal: Spring brakes are applied by springs, not by the brake pedal.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "spring brakes"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-system-parts-0015",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "system-parts",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "According to the CDL manual, on tractors and straight trucks the spring brakes come fully on when air pressure drops to about what range?",
+    "choices": [
+      "60 to 80 psi",
+      "100 to 125 psi",
+      "20 to 45 psi"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Spring brakes come on at 20 to 45 psi",
+    "explanation": "On tractors and straight trucks, the **spring brakes come fully on when air pressure drops to a range of 20 to 45 psi** (usually 20 to 30 psi). The low air warning comes on earlier (before 60 psi), so you have time to stop safely before the spring brakes lock on.\n\n**Wrong choices**\n- 60 to 80 psi: 60 psi is the low air warning level; the spring brakes come on lower than that.\n- 100 to 125 psi: This is the normal working range set by the governor.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "spring brakes",
+      "air pressure"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-system-parts-0016",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "system-parts",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "How do you drain a manually operated air tank?",
+    "choices": [
+      "Pump the brake pedal until the gauge reads zero",
+      "Loosen a gladhand coupling",
+      "Turn the drain cock a quarter turn or pull a cable"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Manual drain: quarter-turn drain cock or cable",
+    "explanation": "Each air tank has a **drain valve** in the bottom. A **manually operated** drain is opened by **turning a drain cock a quarter turn** (as in a manual valve) or by **pulling a cable**. Let the water and oil run out until the tank is drained.\n\n**Wrong choices**\n- Pump the brake pedal until the gauge reads zero: Pumping the pedal lets air out of the brakes but does not remove water and oil from the tank.\n- Loosen a gladhand coupling: Gladhands connect trailer air lines; they are not tank drains.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "air tank drain"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-system-parts-0017",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "system-parts",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "If your vehicle has manual drain valves on its air tanks, how often should you drain the tanks?",
+    "choices": [
+      "Only when the low air warning comes on",
+      "Once a month during routine maintenance",
+      "Completely at the end of each day of driving"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Manual tanks: drain fully every day",
+    "explanation": "With manual drain valves, **you must drain the tanks yourself at the end of each day of driving**, and drain them completely. Automatic drain valves remove water and oil automatically, but they may also have manual drains.\n\n**Wrong choices**\n- Only when the low air warning comes on: Water and oil collect every day; waiting for a warning is too late.\n- Once a month during routine maintenance: Monthly is far too seldom for manual drains.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "air tank drain"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-system-parts-0018",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "system-parts",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "When should you check and fill the alcohol container of an alcohol evaporator?",
+    "choices": [
+      "Only once at the start of winter",
+      "Only after the brakes freeze",
+      "Every day during cold weather"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Alcohol evaporator: check daily in cold weather",
+    "explanation": "**Check and fill the alcohol container every day during cold weather.** Even with an alcohol evaporator, you still need to drain the air tanks daily to remove water and oil (unless the vehicle has automatic drains).\n\n**Wrong choices**\n- Only once at the start of winter: Alcohol is used up as it goes into the air system, so once a season is not enough.\n- Only after the brakes freeze: The point is to prevent freezing, not to react after it happens.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "alcohol evaporator"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-system-parts-0019",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "system-parts",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "While driving down a long hill, you need more and more application pressure to hold the same speed. What does this mean?",
+    "choices": [
+      "The compressor is pumping too much air",
+      "The brakes are fading",
+      "The governor cut-out is set too low"
+    ],
+    "answer": 2,
+    "oneLineConcept": "More pressure to hold speed = brake fade",
+    "explanation": "The **application pressure gauge** shows how much air pressure you are applying to the brakes. **Needing more application pressure to hold the same speed means the brakes are fading.** Slow down and use a lower gear. Brakes may be out of adjustment, have air leaks, or have mechanical problems.\n\n**Wrong choices**\n- The compressor is pumping too much air: Compressor output does not change how hard the brakes must be applied.\n- The governor cut-out is set too low: Governor settings affect tank pressure, not the pressure needed to hold speed.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "application gauge",
+      "brake fade"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-system-parts-0020",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "system-parts",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "The spring brakes are on. Why should you NOT push the brake pedal down at the same time?",
+    "choices": [
+      "It will cause the spring brakes to release",
+      "The combined forces of the springs and air pressure can damage the brakes",
+      "It will turn off the low air warning"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Spring brakes on: do not press pedal",
+    "explanation": "**Never push the brake pedal down when the spring brakes are on.** If you do, **the brakes could be damaged by the combined forces of the springs and the air pressure.** Many brake systems are designed to prevent this, but not all, so do not rely on it.\n\n**Wrong choices**\n- It will cause the spring brakes to release: Pressing the pedal does not release the spring brakes.\n- It will turn off the low air warning: The pedal has nothing to do with the low air warning.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "spring brakes",
+      "brake pedal"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "cdl-air-brakes-system-parts-0021",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "system-parts",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Why can pumping the brake pedal over and over (fanning) be a problem in an air brake vehicle?",
+    "choices": [
+      "It overheats the air compressor",
+      "It lets air out faster than the compressor can replace it",
+      "It causes the governor to stop pumping"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Fanning brakes wastes air",
+    "explanation": "Pressing the brake pedal sends air to the brakes; letting up lets some air out of the system, which lowers tank pressure. **Putting the brakes on and off unnecessarily can let air out faster than the compressor can replace it.** If pressure gets too low, the brakes will not work well.\n\n**Wrong choices**\n- It overheats the air compressor: Fanning the pedal wastes air; it does not overheat the compressor.\n- It causes the governor to stop pumping: The governor reacts to tank pressure; fanning lowers pressure, so it would start pumping, not stop.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "brake pedal",
+      "air use"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-system-parts-0022",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "system-parts",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "In an S-cam drum brake, what part does the brake chamber push rod move first?",
+    "choices": [
+      "The slack adjuster",
+      "The brake shoe directly",
+      "The governor"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Push rod moves the slack adjuster",
+    "explanation": "When you press the pedal, air goes into each **brake chamber**. The air pushes out a **push rod**, which moves the **slack adjuster**. The slack adjuster **twists the brake camshaft**, which turns the **S-cam**. The S-cam forces the **brake shoes** away from each other and against the inside of the **brake drum**.\n\n**Wrong choices**\n- The brake shoe directly: The push rod does not touch the shoes; the S-cam does that.\n- The governor: The governor controls the compressor and is not part of the foundation brake.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "S-cam",
+      "slack adjuster"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-system-parts-0023",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "system-parts",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "In an S-cam drum brake, what pulls the brake shoes away from the drum when you release the brakes?",
+    "choices": [
+      "A return spring",
+      "The S-cam turning further",
+      "Air pressure in the supply tank"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Return spring pulls shoes off the drum",
+    "explanation": "When you release the brakes, the S-cam turns back and **a return spring pulls the brake shoes away from the drum**, letting the wheels roll freely again.\n\n**Wrong choices**\n- The S-cam turning further: The S-cam turns back when air is released, but the return spring is what pulls the shoes away.\n- Air pressure in the supply tank: Releasing the brakes lets air out of the chamber; tank air does not pull the shoes back.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "S-cam",
+      "release"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-system-parts-0024",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "system-parts",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "How much air do the air storage tanks hold?",
+    "choices": [
+      "Only enough for one brake application",
+      "Enough to use the brakes several times even if the compressor stops working",
+      "Enough for a full day of driving without the compressor"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Tanks: enough air for several stops",
+    "explanation": "Air storage tanks hold compressed air. The number and size of tanks varies, but **the tanks hold enough air to let the brakes be used several times, even if the compressor stops working**. You should still stop safely as soon as you can if the compressor fails.\n\n**Wrong choices**\n- Only enough for one brake application: The tanks are sized to give you several stops, not just one.\n- Enough for a full day of driving without the compressor: They hold far less than that; the compressor must keep refilling them.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "air tanks"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-system-parts-0025",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "system-parts",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Some older vehicles have a front brake limiting valve with a \"normal\" and a \"slippery\" setting. What does the \"slippery\" setting do?",
+    "choices": [
+      "Cuts the normal air pressure to the front brakes by half",
+      "Shuts off the front brakes completely",
+      "Doubles the air pressure to the rear brakes"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Slippery setting = half air to front brakes",
+    "explanation": "Some older vehicles have a **front brake limiting valve** and a control in the cab marked \"normal\" and \"slippery.\" When you put it in the **\"slippery\" position, the valve cuts the normal air pressure to the front brakes by half**. Tests have shown front-wheel braking is good under all conditions, and many newer vehicles have automatic front wheel limiting valves.\n\n**Wrong choices**\n- Shuts off the front brakes completely: The slippery setting reduces front brake pressure; it does not shut it off.\n- Doubles the air pressure to the rear brakes: The valve only affects the front brakes.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "front brake limiting valve"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-system-parts-0026",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "system-parts",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which statement about antilock brakes (ABS) is NOT true?",
+    "choices": [
+      "ABS increases your vehicle's stopping power",
+      "ABS helps keep the wheels from locking up",
+      "If the ABS stops working, you still have normal brakes"
+    ],
+    "answer": 1,
+    "oneLineConcept": "ABS prevents lockup but adds no stopping power",
+    "explanation": "ABS uses sensors to detect when a wheel is about to lock, and a computer reduces the braking pressure on that wheel. **ABS does not give you more stopping power, and it does not let you drive faster, follow closer, or drive less carefully.** It is an addition to your normal brakes. If ABS fails, the normal brakes still work, so you can drive to a service shop.\n\n**Wrong choices**\n- ABS helps keep the wheels from locking up: This is true: ABS keeps the wheels from locking during hard braking.\n- If the ABS stops working, you still have normal brakes: This is true: ABS is an addition to the normal brakes.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "ABS"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "cdl-air-brakes-system-parts-0027",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "system-parts",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Where is the ABS malfunction lamp on a trailer?",
+    "choices": [
+      "On the left side, near the front or rear corner",
+      "Inside the cab, above the windshield",
+      "On the right side, next to the landing gear"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Trailer ABS lamp: left side, front or rear corner",
+    "explanation": "Trailers that must have ABS also have a **yellow ABS malfunction lamp on the left side, either on the front or rear corner**. This lets the driver see it in the left mirror. Tractors and trucks have their ABS lamp on the instrument panel.\n\n**Wrong choices**\n- Inside the cab, above the windshield: The tractor's lamp is on the dash; the trailer's lamp is on the trailer body.\n- On the right side, next to the landing gear: The trailer ABS lamp is on the left side, not the right.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "ABS",
+      "trailer"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-system-parts-0028",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "system-parts",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "The safety relief valve on the first air tank lets out air. What does this tell you?",
+    "choices": [
+      "Something is wrong, and the system should be fixed by a mechanic",
+      "The system is working normally at its top pressure",
+      "The tanks need to be drained right away"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Safety valve venting = have it repaired",
+    "explanation": "The safety relief valve opens at about 150 psi to protect the tank from too much pressure. Since the governor should stop pumping at about 125 psi, **a safety valve that releases air means something is wrong**, often with the governor. **Have the fault fixed by a mechanic.**\n\n**Wrong choices**\n- The system is working normally at its top pressure: Normal top pressure is controlled by the governor; the safety valve should not need to open.\n- The tanks need to be drained right away: Draining removes water and oil; it does not fix whatever caused the over-pressure.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "safety valve",
+      "governor"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-system-parts-0029",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "system-parts",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Federal rules require antilock brakes on truck tractors with air brakes built on or after what date?",
+    "choices": [
+      "March 1, 1998",
+      "March 1, 1997",
+      "January 1, 2000"
+    ],
+    "answer": 2,
+    "oneLineConcept": "ABS on air-brake tractors: built on/after March 1, 1997",
+    "explanation": "**Truck tractors with air brakes built on or after March 1, 1997** must have antilock brakes (ABS). Other air-brake vehicles, such as trucks, buses, trailers, and converter dollies, must have ABS if they were **built on or after March 1, 1998**. Many vehicles built before these dates have ABS voluntarily.\n\n**Wrong choices**\n- March 1, 1998: March 1, 1998 is the date for other air brake vehicles such as trailers and converter dollies.\n- January 1, 2000: This is not one of the ABS requirement dates.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "ABS",
+      "dates"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-system-parts-0030",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "system-parts",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Federal rules require antilock brakes on air-brake trailers and converter dollies built on or after what date?",
+    "choices": [
+      "March 1, 1998",
+      "March 1, 1997",
+      "March 1, 1996"
+    ],
+    "answer": 1,
+    "oneLineConcept": "ABS on trailers and dollies: built on/after March 1, 1998",
+    "explanation": "**Trailers and converter dollies with air brakes built on or after March 1, 1998** must have ABS. For **truck tractors** with air brakes, the date is **March 1, 1997**. Check the certification label on the vehicle for the manufacture date.\n\n**Wrong choices**\n- March 1, 1997: March 1, 1997 is the date for air-brake truck tractors.\n- March 1, 1996: This is not one of the ABS requirement dates.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "ABS",
+      "dates",
+      "trailer"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-system-parts-0031",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "system-parts",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Some older vehicles have a \"wig wag\" low pressure warning. How does it work?",
+    "choices": [
+      "A buzzer sounds when air pressure goes above 125 psi",
+      "A light flashes when the parking brake is pulled out",
+      "A mechanical arm drops into your view when air pressure falls below 60 psi"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Wig wag drops into view below 60 psi",
+    "explanation": "A **wig wag** is a type of low air warning. It **drops a mechanical arm into the driver's view when pressure in the system drops below 60 psi**. An automatic wig wag rises out of view when pressure goes back above 60 psi. A manual-reset type must be put back by hand and will not stay in place until pressure is above 60 psi.\n\n**Wrong choices**\n- A buzzer sounds when air pressure goes above 125 psi: The wig wag warns about low pressure, not high pressure.\n- A light flashes when the parking brake is pulled out: The wig wag reacts to low tank pressure, not the parking control.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "low air warning",
+      "wig wag"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-system-parts-0032",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "system-parts",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "What does a modulating control valve let the driver do?",
+    "choices": [
+      "Switch the front brakes between normal and slippery settings",
+      "Release the spring brakes one time using air from a separate tank",
+      "Use a control handle on the dash to put the spring brakes on gradually"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Modulating valve: apply spring brakes gradually",
+    "explanation": "In some vehicles, a **control handle on the dash board may be used to apply the spring brakes gradually**. This is called a **modulating valve**. It is spring-loaded so you have a feel for the braking action: the more you move the handle, the harder the spring brakes come on. It can be used if the service brakes fail.\n\n**Wrong choices**\n- Switch the front brakes between normal and slippery settings: That is the job of a front brake limiting valve.\n- Release the spring brakes one time using air from a separate tank: That describes dual parking control valves.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "modulating control valve",
+      "spring brakes"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-system-parts-0033",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "system-parts",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "What are dual parking control valves for?",
+    "choices": [
+      "They let you release the spring brakes using air from a separate tank so you can move the vehicle in an emergency",
+      "They let you apply the spring brakes gradually with a hand control",
+      "They split the air into a primary and a secondary brake system"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Dual parking valves: separate tank to release spring brakes",
+    "explanation": "When main air pressure is lost, the spring brakes come on. Some vehicles, such as buses, have a **separate air tank that can be used to release the spring brakes**, so **you can move the vehicle in an emergency**. One valve is a push-pull type used to put on the spring brakes for parking; the other is spring-loaded in the \"out\" position. When you push it in, air from the separate tank releases the spring brakes.\n\n**Wrong choices**\n- They let you apply the spring brakes gradually with a hand control: That describes a modulating control valve.\n- They split the air into a primary and a secondary brake system: That describes a dual air brake system, not a parking control.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "dual parking control valves",
+      "spring brakes"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-system-parts-0034",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "system-parts",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Why does it matter that the brakes are kept in adjustment for the spring brakes to work well?",
+    "choices": [
+      "Spring brakes adjust themselves, so adjustment does not affect them",
+      "Out-of-adjustment brakes only affect the service brakes, not the parking brakes",
+      "The braking power of the spring brakes depends on the brakes being in adjustment"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Spring brake power needs adjusted brakes",
+    "explanation": "Spring brakes push on the same foundation brakes (push rod, slack adjuster, shoes, drum) as the service brakes. **The braking power of spring brakes depends on the brakes being in adjustment.** If the brakes are out of adjustment, **neither the regular brakes nor the emergency/parking brakes will work right**.\n\n**Wrong choices**\n- Spring brakes adjust themselves, so adjustment does not affect them: Spring brakes use the same foundation brakes; poor adjustment weakens them too.\n- Out-of-adjustment brakes only affect the service brakes, not the parking brakes: Both the service and the spring (parking/emergency) brakes lose power if the brakes are out of adjustment.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "spring brakes",
+      "brake adjustment"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-system-parts-0035",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "system-parts",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "According to the CDL manual, what usually lies behind an automatic slack adjuster that keeps going out of adjustment?",
+    "choices": [
+      "A mechanical problem that manual adjusting would only hide",
+      "Normal wear that the driver should fix by adjusting it by hand",
+      "Too much air pressure in the supply tanks"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Auto slack out of adjustment = mechanical problem",
+    "explanation": "Most vehicles built since 1994 have **automatic slack adjusters**, which adjust themselves during full brake applications. **Manually adjusting an automatic adjuster to bring the push rod stroke within legal limits is generally masking a mechanical problem**, not fixing it. Brakes that keep going out of adjustment should be checked by a mechanic.\n\n**Wrong choices**\n- Normal wear that the driver should fix by adjusting it by hand: Hand-adjusting an automatic slack adjuster to bring the stroke back within limits usually masks a problem.\n- Too much air pressure in the supply tanks: Tank pressure does not throw an automatic slack adjuster out of adjustment.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "slack adjuster",
+      "automatic"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-system-parts-0036",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "system-parts",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Your vehicle has ABS. How should you brake in normal driving?",
+    "choices": [
+      "Brake harder and later, because ABS shortens stopping distance",
+      "Brake the same way you always would; ABS works only when a wheel is about to lock",
+      "Pump the brake pedal quickly so the ABS can work"
+    ],
+    "answer": 2,
+    "oneLineConcept": "With ABS, brake normally",
+    "explanation": "**ABS does not change the way you normally brake.** It only acts when a wheel is about to lock up, reducing pressure on that wheel. Under normal conditions, use your brakes the usual way, and keep a safe following distance, because **ABS does not make you stop shorter**.\n\n**Wrong choices**\n- Brake harder and later, because ABS shortens stopping distance: ABS does not increase stopping power, so you cannot brake later.\n- Pump the brake pedal quickly so the ABS can work: ABS does its own pressure changes; pumping the pedal only wastes air.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "ABS",
+      "braking"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-system-parts-0037",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "system-parts",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "While driving, your low air warning comes on and the supply gauge keeps falling. According to the CDL manual, what should you expect and do?",
+    "choices": [
+      "Keep driving to the next shop; the spring brakes will not come on until 0 psi",
+      "Stop safely now; if pressure keeps falling, the spring brakes will come on somewhere between 20 and 45 psi",
+      "Pump the brake pedal to raise the air pressure"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Low air while driving: stop before spring brakes lock",
+    "explanation": "The low air warning comes on before pressure drops below 60 psi. **If pressure keeps falling, the spring brakes come on at about 20 to 45 psi** and could stop the vehicle in an unsafe place. **Do not wait for that.** Bring the vehicle to a safe stop right away, while you can still control the brakes, and park off the road.\n\n**Wrong choices**\n- Keep driving to the next shop; the spring brakes will not come on until 0 psi: Spring brakes come on well before 0 psi, about 20 to 45 psi, and could stop you suddenly.\n- Pump the brake pedal to raise the air pressure: Pumping the pedal uses air and makes the pressure fall faster.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "low air warning",
+      "spring brakes"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-system-parts-0038",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "system-parts",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "How do air-operated disc brakes differ from S-cam drum brakes?",
+    "choices": [
+      "Disc brakes use no slack adjuster or brake chamber",
+      "A power screw, instead of an S-cam, clamps the disc between the brake linings",
+      "Disc brakes are applied by springs only and never by air"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Air disc brakes: power screw replaces the S-cam",
+    "explanation": "In **air-operated disc brakes**, air pressure acts on a **brake chamber and slack adjuster, like S-cam brakes**. But **instead of the S-cam, a \"power screw\" is used**. The pressure of the brake chamber on the slack adjuster turns the power screw, which **clamps the disc or rotor between the brake lining pads**, like a large C-clamp.\n\n**Wrong choices**\n- Disc brakes use no slack adjuster or brake chamber: Air disc brakes still use a brake chamber and slack adjuster, like S-cam brakes.\n- Disc brakes are applied by springs only and never by air: Air disc brakes are applied by air pressure through the brake chamber.",
+    "frequency": 2,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "disc brakes",
+      "foundation brakes"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ]
+    }
+  }
+]

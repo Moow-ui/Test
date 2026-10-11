@@ -1,0 +1,157 @@
+{
+  "slug": "cdl-air-brakes",
+  "date": "2026-10-12",
+  "reference": "NY DMV CDL-10 Section 5 (11/25), 49 CFR 393",
+  "round1": {
+    "chapters": {
+      "system-parts": {
+        "result": "FAIL",
+        "issues": [
+          {
+            "where": "concepts[4].definition",
+            "text": "A required red light, buzzer, or wig wag that comes on before tank pressure falls below 60 psi.",
+            "problem": "Implies a buzzer alone satisfies the rule. CDL manual Sec. 5.1.11 and 49 CFR 393.51 (via FMVSS 121 S5.1.5) require a warning the driver can SEE (usually a red light; a buzzer may also sound; wig wag is a visible device). Also the 60 psi value applies to vehicles built on/after March 1, 1975; older vehicles: before pressure falls below one-half of governor cut-out pressure (393.51(c), manual Sec. 5.1.11).",
+            "fix": "A required visible warning (usually a red light, sometimes with a buzzer, or a wig wag) that comes on before tank pressure falls below 60 psi (on older vehicles, one-half of the governor cut-out pressure)."
+          },
+          {
+            "where": "points[5]",
+            "text": "ABS keeps wheels from locking but does not shorten stopping distance.",
+            "problem": "Over-absolute. Manual Sec. 5.4.2: 'You may or may not be able to stop faster with ABS'; it neither increases nor decreases normal braking capability.",
+            "fix": "ABS keeps wheels from locking and adds no braking power; it may or may not shorten your stop."
+          },
+          {
+            "where": "summary[3]",
+            "text": "a low air warning must come on before pressure falls below 60 psi",
+            "problem": "style (minor): same older-vehicle exception (one-half governor cut-out) not mentioned; acceptable for summary but could add '(on newer vehicles)'.",
+            "fix": "a visible low air warning must come on before pressure falls below 60 psi."
+          },
+          {
+            "where": "compare.rows[2][2]",
+            "text": "Needing more pressure to hold the same speed means brake fade",
+            "problem": "style (minor): manual adds that it can also be caused by brakes out of adjustment, air leaks, or mechanical problems.",
+            "fix": "Needing more pressure to hold the same speed means brake fade (or out-of-adjustment brakes, leaks, mechanical problems)"
+          },
+          {
+            "where": "concepts[0].source / concepts[1].source / concepts[5].source",
+            "text": "AAMVA-based state CDL manual, Section 5",
+            "problem": "style: generic citation; verified against NY DMV CDL-10 (11/25) Section 5 - all numbers (125/100/150 psi, 20-45 psi, 60 psi, ABS 3/1/1997 and 3/1/1998) match NY manual and 49 CFR 393.55(c). No NY number differences found.",
+            "fix": "Optionally cite e.g. 'State CDL manual (AAMVA model), Section 5.1'."
+          }
+        ]
+      },
+      "dual-systems": {
+        "result": "PASS",
+        "issues": [
+          {
+            "where": "summary[1] / concepts[1-2]",
+            "text": "The primary system usually works the regular brakes on the rear axle",
+            "problem": "style: manual only says one system typically operates rear brakes and the 'first' is called primary; 'usually' wording is acceptable and consistent with the standard manual.",
+            "fix": "none required"
+          }
+        ]
+      },
+      "inspection": {
+        "result": "FAIL",
+        "issues": [
+          {
+            "where": "concepts[4].definition",
+            "text": "A buzzer, light, or wig wag that must come on before tank pressure drops below 60 psi.",
+            "problem": "Implies a buzzer alone is acceptable. Manual Sec. 5.1.11 / 393.51 (FMVSS 121 S5.1.5) require a visible warning; buzzer is supplementary. Test procedure also includes turning electrical power on and, in dual systems, refers to the tank with the lowest pressure.",
+            "fix": "A visible warning (usually a red light, often with a buzzer, or a wig wag) that must come on before pressure in the tank (in dual systems, the tank with the lowest pressure) drops below 60 psi. Test it with the engine off and electrical power on by stepping on and off the brake pedal."
+          },
+          {
+            "where": "concepts[1].definition",
+            "text": "pressure should build from 85 to 100 psi within 45 seconds",
+            "problem": "style (minor): manual notes larger-than-minimum tanks may take longer and still be safe (check manufacturer specs); older single systems are pre-1975 at 600-900 rpm idle. Numbers are correct.",
+            "fix": "Optionally add: 'Larger-than-minimum tanks may take longer; check the manufacturer's specs.'"
+          },
+          {
+            "where": "summary[3]",
+            "text": "Each test has a number to remember. ... If any test fails, do not drive until the problem is fixed.",
+            "problem": "style: the parking-brake and service-brake tests have no number; slightly overgeneral but not misleading for safety.",
+            "fix": "Most tests have a number to remember."
+          }
+        ]
+      },
+      "using-brakes": {
+        "result": "PASS",
+        "issues": [
+          {
+            "where": "concepts[5].definition",
+            "text": "Use wheel chocks on level ground instead.",
+            "problem": "style: manual just says 'Use wheel chocks to hold the vehicle'; 'on level ground' is an unsupported qualifier that could be read as a restriction.",
+            "fix": "Use wheel chocks to hold the vehicle instead."
+          },
+          {
+            "where": "points[0]",
+            "text": "Brake lag is about one-half second",
+            "problem": "style: manual says 'one half second or more' (summary and card say this correctly).",
+            "fix": "Brake lag is one-half second or more and adds about 32 feet at 55 mph."
+          },
+          {
+            "where": "summary[1]",
+            "text": "With ABS, brake as you normally would, using only the force you need.",
+            "problem": "style: correct; manual's single exception (straight truck/combination with working ABS on all axles may fully apply brakes in an emergency) not mentioned - acceptable.",
+            "fix": "none required"
+          }
+        ]
+      }
+    }
+  },
+  "round2_fixed_chapters": {
+    "chapters": {
+      "system-parts": {
+        "result": "PASS",
+        "issues": [
+          {
+            "where": "concepts[4].source",
+            "text": "49 CFR 393.51",
+            "problem": "style (citation precision, non-blocking): the card's wording (visible signal before 60 psi, or one-half governor cut-out on older vehicles; red light / buzzer / wig wag) follows the CDL manual Section 5.1.11 almost word for word. 49 CFR 393.51 is the right FMCSR section for air-pressure warning signals, but its own threshold wording is framed around the governor cut-out pressure, while the 60 psi figure comes from FMVSS 121 / the CDL manual. The facts stated are correct.",
+            "fix": "Use source {\"org\": \"AAMVA-based state CDL manual, Section 5\", \"year\": 2026} (or \"49 CFR 393.51; FMVSS 121\")."
+          },
+          {
+            "where": "concepts[4].definition",
+            "text": "usually a red light, often with a buzzer, or a wig wag",
+            "problem": "style: manual says 'A buzzer may also come on'; 'often' is slightly stronger than the source.",
+            "fix": "usually a red light, sometimes with a buzzer, or a wig wag"
+          },
+          {
+            "where": "concepts[5].definition / points[4]",
+            "text": "come fully on when pressure drops to about 20 to 45 psi",
+            "problem": "style: manual gives the range 20 to 45 psi (typically 20 to 30 psi); 'about' is unnecessary and points[4] drops the 'tractors and straight trucks' qualifier. Not wrong.",
+            "fix": "come fully on when pressure drops to between 20 and 45 psi (typically 20 to 30 psi)"
+          },
+          {
+            "where": "compare.rows[1][1]",
+            "text": "Yes (one per system, or two needles in dual systems)",
+            "problem": "style: manual says a dual system has a gauge for each half of the system, or a single gauge with two needles; 'one per system' is ambiguous.",
+            "fix": "Yes (in dual systems, one gauge for each half, or one gauge with two needles)"
+          },
+          {
+            "where": "concepts[2].source, concepts[3].source",
+            "text": "(missing)",
+            "problem": "style: Air tank drains and Alcohol evaporator cards have no source, though both are in CDL manual Section 5.1.4-5.1.5.",
+            "fix": "Add source {\"org\": \"AAMVA-based state CDL manual, Section 5\", \"year\": 2026}"
+          }
+        ]
+      },
+      "inspection": {
+        "result": "PASS",
+        "issues": [
+          {
+            "where": "summary[3]",
+            "text": "If any test fails, do not drive until the problem is fixed.",
+            "problem": "style: a reasonable safety generalization; the manual says 'Don't drive until you get the problem fixed' for build-up and 'fix before driving' for leakage, and 'may need to be fixed' for the governor. Not a factual error.",
+            "fix": "(optional) keep as is"
+          },
+          {
+            "where": "concepts[5].definition",
+            "text": "The parking brake knob should pop out at the manufacturer's setting, usually between 20 and 45 psi.",
+            "problem": "style: manual adds that on a tractor-trailer the tractor protection valve also pops out, and gives 20-45 psi as the manufacturer's specification range. Accurate as written.",
+            "fix": "(optional) The parking brake knob (and, on a tractor-trailer, the tractor protection valve) should pop out at the manufacturer's setting, between 20 and 45 psi."
+          }
+        ]
+      }
+    }
+  }
+}

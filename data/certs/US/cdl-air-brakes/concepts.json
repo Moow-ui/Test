@@ -1,0 +1,365 @@
+{
+  "by": "ai",
+  "chapters": {
+    "system-parts": {
+      "verifiedAt": "2026-10-12",
+      "summary": [
+        "An air brake system is really three braking systems working together: the service brakes you use with the pedal, the parking brakes you use when you park, and the emergency brakes that stop the vehicle if the service brakes fail. Everything starts at the air compressor, which the engine drives to pump air into the storage tanks. The governor decides when the compressor pumps: it stops pumping at the cut-out pressure and starts again at the cut-in pressure. A safety relief valve on the first tank lets air out if pressure climbs too high; if it opens, something is wrong and should be fixed.",
+        "Compressed air carries water and compressor oil into the tanks, and in cold weather that water can freeze and make the brakes fail. That is why every tank has a drain valve. A manual drain is opened with a quarter turn of a drain cock or by pulling a cable, and you drain the tanks completely at the end of each day of driving. Some systems also have an alcohol evaporator that puts alcohol into the air to help keep ice out of the valves; check and fill it every day in cold weather.",
+        "At each wheel, the most common foundation brake is the S-cam drum brake. Air enters the brake chamber and pushes out a push rod, which moves the slack adjuster, which twists the camshaft and turns the S-cam. The S-cam spreads the brake shoes against the drum, and a return spring pulls them back when you let off the brakes. Air disc brakes use a power screw in place of the S-cam. Whatever the type, the brakes must stay in adjustment, and an automatic slack adjuster that keeps going out of adjustment points to a mechanical problem.",
+        "Spring brakes are held off by air pressure, so when air is lost, strong springs put the brakes on. On newer vehicles you control them with a yellow, diamond-shaped knob: pull it out to park, push it in to release. Gauges and warnings tell you what is happening: the supply gauge shows tank pressure, the application gauge shows how hard you are braking, and a low air warning you can see must come on before pressure falls below 60 psi. Antilock brakes (ABS) keep the wheels from locking, but they add no stopping power, and a yellow lamp warns you when the ABS is not working."
+      ],
+      "concepts": [
+        {
+          "term": "Governor cut-out and cut-in",
+          "definition": "The governor stops the compressor from pumping at the cut-out pressure (about 125 psi) and lets it pump again at the cut-in pressure (about 100 psi).",
+          "tip": "Out at the top (125), in at the bottom (100).",
+          "source": {
+            "org": "AAMVA-based state CDL manual, Section 5",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Safety relief valve",
+          "definition": "A valve in the first air tank that opens at about 150 psi to protect the system from too much pressure.",
+          "tip": "If it lets air out, the governor or system has a fault. Get it repaired.",
+          "source": {
+            "org": "AAMVA-based state CDL manual, Section 5",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Air tank drains",
+          "definition": "Valves at the bottom of each tank that remove water and compressor oil. Manual drains are opened with a quarter-turn drain cock or a pull cable.",
+          "tip": "Manual drains: drain the tanks completely at the end of each day."
+        },
+        {
+          "term": "Alcohol evaporator",
+          "definition": "A device that puts alcohol into the air system to reduce the risk of ice in valves and other parts in cold weather.",
+          "tip": "Check and fill the alcohol container every day in cold weather."
+        },
+        {
+          "term": "Low air pressure warning",
+          "definition": "A required warning you can see (usually a red light, often with a buzzer, or a wig wag) that comes on before tank pressure falls below 60 psi. On older vehicles, it may come on at one-half of the governor cut-out pressure instead.",
+          "tip": "When it comes on while driving, stop safely right away.",
+          "source": {
+            "org": "AAMVA-based state CDL manual, Section 5",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Spring brakes",
+          "definition": "Brakes held off by air pressure and put on by strong springs when air is removed. On tractors and straight trucks they come fully on when pressure drops to about 20 to 45 psi.",
+          "tip": "Never press the brake pedal while the spring brakes are on; the combined force can damage the brakes.",
+          "source": {
+            "org": "AAMVA-based state CDL manual, Section 5",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Antilock brakes (ABS)",
+          "definition": "A system that keeps wheels from locking during hard braking. Required on air-brake truck tractors built on or after March 1, 1997, and on other air-brake vehicles such as trailers and converter dollies built on or after March 1, 1998.",
+          "tip": "ABS adds no stopping power. A yellow lamp means it is not working, but your normal brakes still work.",
+          "source": {
+            "org": "49 CFR 393.55",
+            "year": 2026
+          }
+        }
+      ],
+      "points": [
+        "Governor cut-out about 125 psi, cut-in about 100 psi; safety valve about 150 psi.",
+        "Water and oil in the tanks can freeze and cause brake failure, so drain manual tanks every day.",
+        "S-cam order: brake chamber, push rod, slack adjuster, camshaft, S-cam, shoes against the drum.",
+        "Yellow diamond knob: pull out to set the parking (spring) brakes, push in to release.",
+        "Low air warning before 60 psi; spring brakes come on at about 20 to 45 psi.",
+        "ABS keeps the wheels from locking and adds no braking power. You may or may not stop faster with ABS."
+      ],
+      "compare": {
+        "title": "Supply gauge vs. application gauge",
+        "columns": [
+          "Item",
+          "Supply pressure gauge",
+          "Application pressure gauge"
+        ],
+        "rows": [
+          [
+            "What it shows",
+            "Air pressure in the tanks",
+            "Air pressure you are applying to the brakes"
+          ],
+          [
+            "On every air brake vehicle?",
+            "Yes (one per system, or two needles in dual systems)",
+            "Not on all vehicles"
+          ],
+          [
+            "Warning sign",
+            "Falling pressure toward the low air warning",
+            "Needing more pressure to hold the same speed means the brakes are fading (or are out of adjustment, leaking, or have another problem)"
+          ]
+        ]
+      }
+    },
+    "dual-systems": {
+      "verifiedAt": "2026-10-12",
+      "summary": [
+        "Most heavy vehicles use a dual air brake system for safety. It is two separate air brake systems that share one set of brake controls, so one brake pedal works both. Each system has its own air tanks, hoses, and lines, which means a leak in one system does not drain the other.",
+        "The primary system usually works the regular brakes on the rear axle or axles. The secondary system usually works the brakes on the front axle, and possibly one rear axle. Both systems send air to the trailer if there is one. Because each system handles a different set of brakes, losing pressure in one of them means either the front or the rear brakes will not work fully.",
+        "You watch the two systems with a gauge for each one, or a single gauge with two needles. Before driving, let the compressor build at least 100 psi in both the primary and the secondary systems, not just one. The low air warning should shut off only when both systems rise above a level set by the manufacturer, which must be higher than 60 psi. If the warning comes on while you are driving, stop right away and park the vehicle safely."
+      ],
+      "concepts": [
+        {
+          "term": "Dual air brake system",
+          "definition": "Two separate air brake systems that use a single set of brake controls. Each has its own tanks, hoses, and lines.",
+          "tip": "Two systems, one pedal."
+        },
+        {
+          "term": "Primary system",
+          "definition": "The system that usually operates the regular brakes on the rear axle or axles.",
+          "tip": "Primary = rear (usually)."
+        },
+        {
+          "term": "Secondary system",
+          "definition": "The system that usually operates the brakes on the front axle, and possibly one rear axle.",
+          "tip": "Secondary = front (usually)."
+        },
+        {
+          "term": "Build-up before driving",
+          "definition": "Let the compressor build at least 100 psi in both the primary and secondary systems before you drive.",
+          "tip": "Check both needles, not just one.",
+          "source": {
+            "org": "AAMVA-based state CDL manual, Section 5",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Low air warning in a dual system",
+          "definition": "Comes on before pressure drops below 60 psi in either system, and shuts off when both systems rise above a manufacturer-set value higher than 60 psi.",
+          "tip": "Warning while driving: stop right away and park safely.",
+          "source": {
+            "org": "AAMVA-based state CDL manual, Section 5",
+            "year": 2026
+          }
+        }
+      ],
+      "points": [
+        "Two separate systems share one set of brake controls.",
+        "Primary usually = rear axle brakes; secondary usually = front axle brakes.",
+        "Both systems supply air to the trailer.",
+        "Build at least 100 psi in BOTH systems before driving.",
+        "If one system is very low, the front or rear brakes will not work fully."
+      ],
+      "compare": {
+        "title": "Primary vs. secondary system",
+        "columns": [
+          "Item",
+          "Primary system",
+          "Secondary system"
+        ],
+        "rows": [
+          [
+            "Usually brakes",
+            "Rear axle or axles",
+            "Front axle (and possibly one rear axle)"
+          ],
+          [
+            "Supplies the trailer?",
+            "Yes",
+            "Yes"
+          ],
+          [
+            "Pressure before driving",
+            "At least 100 psi",
+            "At least 100 psi"
+          ]
+        ]
+      }
+    },
+    "inspection": {
+      "verifiedAt": "2026-10-12",
+      "summary": [
+        "An air brake vehicle gets the same walkaround inspection as any other truck, plus a few extra checks. In the engine compartment you look at the air compressor drive belt if the compressor is belt-driven. During the walkaround you check the slack adjusters, the brake drums, the linings, and the air hoses. Brakes that are out of adjustment are the most common problem found in roadside inspections, so this check matters.",
+        "To check manual slack adjusters, park on level ground, chock the wheels, and release the parking brakes. Pull hard on each adjuster you can reach; if it moves more than about 1 inch where the push rod attaches, it probably needs adjustment. Newer vehicles have automatic slack adjusters. If an automatic adjuster is out of adjustment, that points to a mechanical problem that a repair shop should fix.",
+        "The final air brake check is a series of short tests done from the cab. You check how fast air pressure builds up, where the governor stops and starts the compressor, how much air leaks out with the brakes released and applied, when the low air warning comes on, and when the spring brakes set themselves. You finish by testing the parking brake and making a slow-speed stop with the service brakes.",
+        "Most tests have a number to remember. The rules are written so that you find a weak compressor, a leak, or a failed warning while you are still parked, not while you are on the road. If any test fails, do not drive until the problem is fixed."
+      ],
+      "concepts": [
+        {
+          "term": "Slack adjuster check",
+          "definition": "With wheels chocked and parking brakes released, pull hard on each slack adjuster. Movement of more than about 1 inch where the push rod attaches means it probably needs adjustment.",
+          "tip": "Brakes released, not applied, or you cannot feel the free play.",
+          "source": {
+            "org": "AAMVA-based state CDL manual, Section 5",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Air pressure build-up rate",
+          "definition": "In a dual air system at operating rpm, pressure should build from 85 to 100 psi within 45 seconds. Older single systems at idle typically build from 50 to 90 psi within 3 minutes. Tanks larger than the minimum may take longer and still be safe, so check the manufacturer's specifications.",
+          "tip": "Dual: 45 seconds. Older single: 3 minutes.",
+          "source": {
+            "org": "AAMVA-based state CDL manual, Section 5",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Governor cut-out and cut-in",
+          "definition": "The governor stops the compressor (cut-out) at about 125 psi and starts it again (cut-in) at about 100 psi. Always check the manufacturer's specification.",
+          "tip": "Fast idle: the gauge stops rising at cut-out.",
+          "source": {
+            "org": "AAMVA-based state CDL manual, Section 5",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Leakage rate",
+          "definition": "Engine off, fully charged system. Brakes released: less than 2 psi per minute (single vehicle) or 3 psi (combination). Brakes applied with 90 psi or more, after the first drop: no more than 3 psi per minute (single) or 4 psi (combination).",
+          "tip": "Combination vehicles get 1 psi more in each test.",
+          "source": {
+            "org": "AAMVA-based state CDL manual, Section 5",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Low air warning",
+          "definition": "A warning you can see (usually a red light, often with a buzzer, or a wig wag) that must come on before pressure in the tank (in dual systems, the tank with the lowest pressure) drops below 60 psi. Test it with the engine off and the electrical power on by stepping on and off the brake pedal.",
+          "tip": "60 psi is the warning; spring brakes come later.",
+          "source": {
+            "org": "AAMVA-based state CDL manual, Section 5",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Spring brake check",
+          "definition": "With the engine off and wheels chocked, pump the brake pedal. The parking brake knob should pop out at the manufacturer's setting, usually between 20 and 45 psi.",
+          "tip": "Warning first (by 60 psi), knob pops out later (20 to 45 psi).",
+          "source": {
+            "org": "AAMVA-based state CDL manual, Section 5",
+            "year": 2026
+          }
+        }
+      ],
+      "points": [
+        "Slack adjuster moving more than about 1 inch by hand needs adjustment.",
+        "Dual system build-up: 85 to 100 psi within 45 seconds.",
+        "Governor: cut-out about 125 psi, cut-in about 100 psi.",
+        "Leakage, released: under 2 psi/min single, under 3 psi/min combination.",
+        "Leakage, applied: no more than 3 psi/min single, 4 psi/min combination.",
+        "Low air warning before 60 psi; spring brakes usually 20 to 45 psi."
+      ],
+      "compare": {
+        "title": "Air leakage limits (engine off, per minute)",
+        "columns": [
+          "Test",
+          "Single vehicle",
+          "Combination vehicle"
+        ],
+        "rows": [
+          [
+            "Brakes released",
+            "Less than 2 psi",
+            "Less than 3 psi"
+          ],
+          [
+            "Brakes applied (90 psi or more), after first drop",
+            "No more than 3 psi",
+            "No more than 4 psi"
+          ]
+        ]
+      }
+    },
+    "using-brakes": {
+      "verifiedAt": "2026-10-12",
+      "summary": [
+        "For a normal stop, press the brake pedal and control the pressure so the vehicle stops smoothly. With a manual transmission, keep the clutch out until the engine is turning close to idle. Air brakes do not act the instant you press the pedal. The air needs one-half second or more to reach the brakes, and this brake lag adds about 32 feet to your stop at 55 mph on dry pavement. Total stopping distance is perception distance plus reaction distance plus brake lag distance plus effective braking distance.",
+        "In an emergency you can use controlled braking or stab braking. Controlled braking means braking as hard as you can without locking the wheels, with only small steering moves; if the wheels lock, release and reapply. Stab braking means braking fully, releasing when the wheels lock, and braking fully again once they roll. If you reapply before the wheels roll, the vehicle will not straighten out. With ABS, brake as you normally would, using only the force you need.",
+        "On a long downgrade, the engine in a low gear does the main work and the brakes only help. Brake until your speed is about 5 mph below your safe speed, release, and repeat when you are back at the safe speed. Each application lasts about 3 seconds. Overusing the brakes makes them overheat and fade, and brakes that are out of adjustment stop doing their share first.",
+        "If the low air warning comes on, stop and park safely as soon as you can, while there is still air for a controlled stop. When the spring brakes come on by themselves, a loaded vehicle needs a long distance to stop and a light one may skid. Use the parking brakes whenever you park, except when the brakes are very hot or very wet in freezing weather; then use wheel chocks."
+      ],
+      "concepts": [
+        {
+          "term": "Brake lag",
+          "definition": "The time, one-half second or more, that air takes to flow to the brakes after you press the pedal. At 55 mph on dry pavement it adds about 32 feet to the stop.",
+          "tip": "Hydraulic brakes act almost at once; air brakes have lag.",
+          "source": {
+            "org": "AAMVA-based state CDL manual, Section 5",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Controlled braking",
+          "definition": "Braking as hard as you can without locking the wheels, keeping steering moves very small. If the wheels lock or you must steer more, release and reapply.",
+          "tip": "Hard, but no lock-up."
+        },
+        {
+          "term": "Stab braking",
+          "definition": "Apply the brakes all the way, release when the wheels lock, and apply fully again as soon as the wheels start rolling. It can take up to 1 second for the wheels to roll again.",
+          "tip": "Wait for the wheels to roll before reapplying.",
+          "source": {
+            "org": "AAMVA-based state CDL manual, Section 5",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Downgrade braking",
+          "definition": "In the proper low gear, brake for a definite slowdown until you are about 5 mph below your safe speed, release, and repeat. Each application lasts about 3 seconds.",
+          "tip": "Safe speed 40 mph: brake at 40, release at about 35.",
+          "source": {
+            "org": "AAMVA-based state CDL manual, Section 5",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Low air warning on the road",
+          "definition": "Stop and park safely as soon as possible. Spring brakes come on when pressure drops to about 20 to 45 psi and do not work on all axles.",
+          "tip": "Stop while you still have air for the foot brake.",
+          "source": {
+            "org": "AAMVA-based state CDL manual, Section 5",
+            "year": 2026
+          }
+        },
+        {
+          "term": "When not to set the parking brakes",
+          "definition": "When the brakes are very hot (they can be damaged) or very wet in freezing weather (they can freeze). Use wheel chocks to hold the vehicle instead.",
+          "tip": "Hot or wet-and-freezing: chock the wheels.",
+          "source": {
+            "org": "AAMVA-based state CDL manual, Section 5",
+            "year": 2026
+          }
+        }
+      ],
+      "points": [
+        "Brake lag is one-half second or more and adds about 32 feet at 55 mph.",
+        "Controlled braking: hard without locking. Stab braking: full on, off at lock-up, on again.",
+        "Downgrade: brake to about 5 mph below safe speed, release, repeat (about 3 seconds each).",
+        "Low air warning: stop and park as soon as possible.",
+        "Do not set parking brakes on very hot brakes or wet brakes in freezing weather."
+      ],
+      "compare": {
+        "title": "Controlled braking vs. stab braking",
+        "columns": [
+          "Item",
+          "Controlled braking",
+          "Stab braking"
+        ],
+        "rows": [
+          [
+            "How hard",
+            "As hard as possible without locking wheels",
+            "All the way"
+          ],
+          [
+            "When wheels lock",
+            "Release, then reapply as soon as you can",
+            "Release, reapply fully once wheels roll"
+          ],
+          [
+            "Steering",
+            "Very small moves",
+            "Steer while wheels are rolling"
+          ]
+        ]
+      }
+    }
+  }
+}
