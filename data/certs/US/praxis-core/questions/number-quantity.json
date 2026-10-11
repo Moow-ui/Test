@@ -1,0 +1,944 @@
+[
+  {
+    "id": "praxis-core-number-quantity-0001",
+    "certId": "praxis-core",
+    "subjectId": "mathematics",
+    "chapterId": "number-quantity",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What is 3/4 + 2/3?",
+    "choices": [
+      "5/7",
+      "11/12",
+      "17/12",
+      "1/2",
+      "1/12"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Add fractions by first rewriting them with a common denominator.",
+    "explanation": "1. The common denominator of 4 and 3 is 12.\n2. 3/4 = 9/12 and 2/3 = 8/12.\n3. 9/12 + 8/12 = 17/12 (which is 1 and 5/12).\n\nCheck: 0.75 + 0.667 ≈ 1.417, and 17 ÷ 12 ≈ 1.417.\n\n**Wrong choices**\n- \"5/7\": This adds the tops and the bottoms (3 + 2 and 4 + 3). Fractions need a common denominator first.\n- \"11/12\": This changes 3/4 to 9/12 correctly but writes 2/3 as 2/12 without multiplying the top by 4.\n- \"1/2\": This is the product 3/4 × 2/3 = 6/12, not the sum.\n- \"1/12\": This is the difference 9/12 − 8/12, not the sum.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "fractions",
+      "addition"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-number-quantity-0002",
+    "certId": "praxis-core",
+    "subjectId": "mathematics",
+    "chapterId": "number-quantity",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What is 35% of 240?",
+    "choices": [
+      "84",
+      "156",
+      "840",
+      "275",
+      "8.4"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Percent of a number: change the percent to a decimal and multiply.",
+    "explanation": "1. 35% = 0.35.\n2. 0.35 × 240 = 84.\n\nCheck: 10% of 240 is 24, so 30% is 72 and 5% is 12; 72 + 12 = 84.\n\n**Wrong choices**\n- \"8.4\": This moves the decimal one place too far. 35% is 0.35, not 0.035.\n- \"156\": This is 240 − 84, the part that is NOT 35%.\n- \"840\": This uses 3.5 instead of 0.35.\n- \"275\": This simply adds 35 and 240.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "percent"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        5
+      ],
+      "intermediate": [
+        1,
+        2,
+        5
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        5
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-number-quantity-0003",
+    "certId": "praxis-core",
+    "subjectId": "mathematics",
+    "chapterId": "number-quantity",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "In the number 4,382.765, which digit is in the hundredths place?",
+    "choices": [
+      "5",
+      "8",
+      "3",
+      "6",
+      "7"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Hundredths is the second place to the right of the decimal point.",
+    "explanation": "After the decimal point the places are tenths (7), hundredths (6), and thousandths (5). So the hundredths digit is 6.\n\nCheck: 0.765 = 7 tenths + 6 hundredths + 5 thousandths.\n\n**Wrong choices**\n- \"3\": 3 is in the hundreds place (to the left of the decimal point), not the hundredths place.\n- \"7\": 7 is in the tenths place, the first place after the decimal point.\n- \"5\": 5 is in the thousandths place, the third place after the decimal point.\n- \"8\": 8 is in the tens place.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "place value",
+      "decimals"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        3,
+        4,
+        5
+      ],
+      "advanced": [
+        1,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-number-quantity-0004",
+    "certId": "praxis-core",
+    "subjectId": "mathematics",
+    "chapterId": "number-quantity",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What is the value of 15 − 9 ÷ 3 + 2 × 5?",
+    "choices": [
+      "6",
+      "22",
+      "20",
+      "12",
+      "2"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Order of operations: multiply and divide before you add or subtract.",
+    "explanation": "1. Division and multiplication first: 9 ÷ 3 = 3 and 2 × 5 = 10.\n2. Then left to right: 15 − 3 + 10 = 12 + 10 = 22.\n\nCheck: 15 − 3 = 12, and 12 + 10 = 22.\n\n**Wrong choices**\n- \"20\": This works strictly left to right: 15 − 9 = 6, 6 ÷ 3 = 2, 2 + 2 = 4, 4 × 5 = 20. Division and multiplication must come first.\n- \"12\": This does 15 − 9 first and then divides: (15 − 9) ÷ 3 + 10 = 12.\n- \"2\": This adds 3 + 10 before subtracting: 15 − 13 = 2. Addition and subtraction are done left to right.\n- \"6\": This adds 3 + 2 first, as if there were parentheses around it.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "order of operations"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ],
+      "advanced": [
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-number-quantity-0005",
+    "certId": "praxis-core",
+    "subjectId": "mathematics",
+    "chapterId": "number-quantity",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "In a class of 40 students, the ratio of boys to girls is 3 to 5. How many girls are in the class?",
+    "choices": [
+      "15",
+      "24",
+      "8",
+      "20",
+      "25"
+    ],
+    "answer": 5,
+    "oneLineConcept": "A ratio a:b splits a total into a + b equal parts.",
+    "explanation": "1. Total parts: 3 + 5 = 8.\n2. Each part: 40 ÷ 8 = 5 students.\n3. Girls: 5 parts × 5 = 25.\n\nCheck: boys = 3 × 5 = 15, and 15 + 25 = 40.\n\n**Wrong choices**\n- \"15\": 15 is the number of boys, not girls.\n- \"24\": This finds 3/5 of 40. The girls are 5 out of 8 total parts, not 3/5.\n- \"8\": 8 is the total number of ratio parts (3 + 5), not the number of girls.\n- \"20\": This splits the class in half, ignoring the 3-to-5 ratio.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "ratio"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        5
+      ],
+      "intermediate": [
+        1,
+        2,
+        5
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        5
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-number-quantity-0006",
+    "certId": "praxis-core",
+    "subjectId": "mathematics",
+    "chapterId": "number-quantity",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Six pounds of apples cost $9.90. What is the price per pound?",
+    "choices": [
+      "$0.61",
+      "$1.65",
+      "$3.90",
+      "$59.40",
+      "$1.50"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Unit price = total cost ÷ number of units.",
+    "explanation": "1. Price per pound = $9.90 ÷ 6.\n2. 9.90 ÷ 6 = 1.65.\n\nCheck: 6 × $1.65 = $9.90.\n\n**Wrong choices**\n- \"$1.50\": This divides only the whole dollars ($9 ÷ 6) and ignores the 90 cents.\n- \"$0.61\": This divides 6 by 9.90 (pounds per dollar), which is backward.\n- \"$3.90\": This subtracts 6 from 9.90 instead of dividing.\n- \"$59.40\": This multiplies 9.90 by 6 instead of dividing.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "unit rate"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        5
+      ],
+      "intermediate": [
+        1,
+        2,
+        5
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        5
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-number-quantity-0007",
+    "certId": "praxis-core",
+    "subjectId": "mathematics",
+    "chapterId": "number-quantity",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A board is 3.5 feet long. How long is it in inches? (1 foot = 12 inches)",
+    "choices": [
+      "35 inches",
+      "0.29 inches",
+      "41 inches",
+      "36 inches",
+      "42 inches"
+    ],
+    "answer": 5,
+    "oneLineConcept": "To change feet to inches, multiply by 12.",
+    "explanation": "1. 3.5 × 12 = 42.\n2. So the board is 42 inches long.\n\nCheck: 3 feet = 36 inches and half a foot = 6 inches; 36 + 6 = 42.\n\n**Wrong choices**\n- \"41 inches\": This treats 3.5 feet as 3 feet 5 inches. Half a foot is 6 inches, not 5.\n- \"36 inches\": This converts only the 3 whole feet and drops the half foot.\n- \"35 inches\": This just moves the decimal point; feet and inches are not related by 10.\n- \"0.29 inches\": This divides 3.5 by 12. To go from a larger unit to a smaller unit, multiply.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "unit conversion"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        5
+      ],
+      "intermediate": [
+        3,
+        4,
+        5
+      ],
+      "advanced": [
+        1,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-number-quantity-0008",
+    "certId": "praxis-core",
+    "subjectId": "mathematics",
+    "chapterId": "number-quantity",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What is −7 + 12 − (−5)?",
+    "choices": [
+      "−14",
+      "0",
+      "10",
+      "24",
+      "−10"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Subtracting a negative number is the same as adding a positive one.",
+    "explanation": "1. −7 + 12 = 5.\n2. 5 − (−5) = 5 + 5 = 10.\n\nCheck: on a number line, start at −7, move right 12 to 5, then right 5 more to 10.\n\n**Wrong choices**\n- \"0\": This treats − (−5) as −5. Subtracting a negative number is the same as adding it.\n- \"24\": This ignores all the negative signs and adds 7 + 12 + 5.\n- \"−10\": This flips every sign: 7 − 12 − 5 = −10.\n- \"−14\": This subtracts 12 instead of adding it: −7 − 12 + 5 = −14.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "integers",
+      "negative numbers"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ],
+      "advanced": [
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-number-quantity-0009",
+    "certId": "praxis-core",
+    "subjectId": "mathematics",
+    "chapterId": "number-quantity",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What is 7/8 written as a percent?",
+    "choices": [
+      "87.5%",
+      "78%",
+      "8.75%",
+      "0.875%",
+      "114.3%"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Fraction to percent: divide top by bottom, then multiply by 100.",
+    "explanation": "1. 7 ÷ 8 = 0.875.\n2. 0.875 × 100 = 87.5%.\n\nCheck: 1/8 = 12.5%, and 7 × 12.5% = 87.5%.\n\n**Wrong choices**\n- \"78%\": This just writes the digits 7 and 8 side by side.\n- \"8.75%\": 7/8 = 0.875; to make a percent, move the decimal two places right, not one.\n- \"0.875%\": 0.875 is the decimal form. It must be multiplied by 100 to become a percent.\n- \"114.3%\": This divides 8 by 7 instead of 7 by 8.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "fractions",
+      "percent",
+      "conversion"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-number-quantity-0010",
+    "certId": "praxis-core",
+    "subjectId": "mathematics",
+    "chapterId": "number-quantity",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "The price of a ticket rose from $60 to $75. What was the percent increase?",
+    "choices": [
+      "15%",
+      "80%",
+      "125%",
+      "25%",
+      "20%"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Percent change = (new − old) ÷ old × 100.",
+    "explanation": "1. Increase: $75 − $60 = $15.\n2. Divide by the original: 15 ÷ 60 = 0.25.\n3. 0.25 = 25%.\n\nCheck: 25% of $60 is $15, and $60 + $15 = $75.\n\n**Wrong choices**\n- \"20%\": This divides the $15 increase by the NEW price ($75). Percent change uses the original price.\n- \"15%\": 15 is the dollar increase, not the percent increase.\n- \"80%\": This is 60 ÷ 75, which compares the two prices but is not the change.\n- \"125%\": This is the new price as a percent of the old price (75 ÷ 60), not the increase.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "percent change"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        4,
+        5
+      ],
+      "intermediate": [
+        1,
+        4,
+        5
+      ],
+      "advanced": [
+        1,
+        2,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-number-quantity-0011",
+    "certId": "praxis-core",
+    "subjectId": "mathematics",
+    "chapterId": "number-quantity",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A jacket costs $80. It is on sale for 25% off, and then an 8% sales tax is charged on the sale price. What is the total cost?",
+    "choices": [
+      "$64.80",
+      "$53.60",
+      "$86.40",
+      "$66.40",
+      "$60.00"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Apply a discount first, then compute tax on the new price.",
+    "explanation": "1. Discount: 25% of $80 = $20, so the sale price is $60.\n2. Tax: 8% of $60 = $4.80.\n3. Total: $60 + $4.80 = $64.80.\n\nCheck: $80 × 0.75 × 1.08 = $64.80.\n\n**Wrong choices**\n- \"$66.40\": This takes 25% − 8% = 17% off. Discount and tax are applied one after the other, not combined.\n- \"$60.00\": This is the sale price before tax.\n- \"$53.60\": This takes off 25% + 8% = 33%. The tax adds to the price; it does not reduce it.\n- \"$86.40\": This adds the tax to the original price and forgets the 25% discount.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "percent",
+      "discount",
+      "sales tax"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        4,
+        5
+      ],
+      "advanced": [
+        1,
+        2,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-number-quantity-0012",
+    "certId": "praxis-core",
+    "subjectId": "mathematics",
+    "chapterId": "number-quantity",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A recipe uses 3 cups of flour to make 24 cookies. At this rate, how many cups of flour are needed to make 40 cookies?",
+    "choices": [
+      "19 cups",
+      "1.8 cups",
+      "8 cups",
+      "5 cups",
+      "13.3 cups"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Set up equal ratios and cross-multiply to solve a proportion.",
+    "explanation": "1. Set up: 3/24 = x/40.\n2. Cross-multiply: 24x = 3 × 40 = 120.\n3. x = 120 ÷ 24 = 5 cups.\n\nCheck: 1 cup makes 8 cookies, and 5 × 8 = 40.\n\n**Wrong choices**\n- \"1.8 cups\": This sets up the proportion upside down (24 × 3 ÷ 40).\n- \"8 cups\": 8 is the number of cookies per cup (24 ÷ 3), not the cups needed.\n- \"13.3 cups\": This divides 40 by 3, mixing up cookies and cups.\n- \"19 cups\": This adds 16 (the extra cookies) to 3 cups. A proportion multiplies; it does not add.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "proportion"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ],
+      "advanced": [
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-number-quantity-0013",
+    "certId": "praxis-core",
+    "subjectId": "mathematics",
+    "chapterId": "number-quantity",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A car travels 186 miles in 3 hours. At the same speed, how long will it take to travel 279 miles?",
+    "choices": [
+      "4 hours 50 minutes",
+      "4 hours 30 minutes",
+      "5 hours",
+      "4 hours 5 minutes",
+      "1 hour 30 minutes"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Find the speed (miles ÷ hours), then time = distance ÷ speed.",
+    "explanation": "1. Speed: 186 ÷ 3 = 62 miles per hour.\n2. Time: 279 ÷ 62 = 4.5 hours.\n3. 0.5 hour = 30 minutes, so the time is 4 hours 30 minutes.\n\nCheck: 62 × 4.5 = 279.\n\n**Wrong choices**\n- \"4 hours 50 minutes\": The time is 4.5 hours, but 0.5 hour is 30 minutes, not 50 minutes.\n- \"5 hours\": This rounds up; 279 ÷ 62 is exactly 4.5, not 5.\n- \"4 hours 5 minutes\": This reads 4.5 hours as 4 hours and 5 minutes.\n- \"1 hour 30 minutes\": This is only the extra time for the extra 93 miles, not the total trip.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "rate",
+      "time"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-number-quantity-0014",
+    "certId": "praxis-core",
+    "subjectId": "mathematics",
+    "chapterId": "number-quantity",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "What is (3 × 10^4) × (6 × 10^3) written in scientific notation?",
+    "choices": [
+      "9 × 10^7",
+      "1.8 × 10^13",
+      "9 × 10^12",
+      "1.8 × 10^7",
+      "1.8 × 10^8"
+    ],
+    "answer": 5,
+    "oneLineConcept": "Multiply the numbers, add the exponents, then adjust to standard form.",
+    "explanation": "1. Multiply the numbers: 3 × 6 = 18.\n2. Add the exponents: 10^4 × 10^3 = 10^7.\n3. 18 × 10^7 = 1.8 × 10^8.\n\nCheck: 30,000 × 6,000 = 180,000,000, which is 1.8 × 10^8.\n\n**Wrong choices**\n- \"1.8 × 10^7\": 3 × 6 = 18 = 1.8 × 10, so one more power of 10 must be added: 10^7 becomes 10^8.\n- \"9 × 10^7\": This adds 3 + 6 instead of multiplying them.\n- \"1.8 × 10^13\": This multiplies the exponents (4 × 3 = 12). When multiplying powers of 10, add the exponents.\n- \"9 × 10^12\": This adds the numbers and multiplies the exponents, which is backward on both parts.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "scientific notation",
+      "exponents"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        4,
+        5
+      ],
+      "intermediate": [
+        1,
+        4,
+        5
+      ],
+      "advanced": [
+        1,
+        2,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-number-quantity-0015",
+    "certId": "praxis-core",
+    "subjectId": "mathematics",
+    "chapterId": "number-quantity",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which list shows the numbers 0.6, 5/8, 0.58, and 2/3 in order from least to greatest?",
+    "choices": [
+      "0.58, 0.6, 2/3, 5/8",
+      "2/3, 5/8, 0.6, 0.58",
+      "0.58, 0.6, 5/8, 2/3",
+      "0.6, 0.58, 5/8, 2/3",
+      "0.58, 5/8, 0.6, 2/3"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Compare numbers by changing all of them to decimals.",
+    "explanation": "1. Change to decimals: 0.6 = 0.600, 5/8 = 0.625, 0.58 = 0.580, 2/3 ≈ 0.667.\n2. Order: 0.580 < 0.600 < 0.625 < 0.667.\n\nCheck: each value in the list is larger than the one before it.\n\n**Wrong choices**\n- \"0.6, 0.58, 5/8, 2/3\": This treats 0.58 as larger than 0.6 because 58 is bigger than 6. But 0.6 = 0.60, which is larger than 0.58.\n- \"0.58, 5/8, 0.6, 2/3\": This treats 5/8 as less than 0.6. In fact 5/8 = 0.625.\n- \"0.58, 0.6, 2/3, 5/8\": This treats 5/8 as larger than 2/3. In fact 2/3 ≈ 0.667 is larger than 0.625.\n- \"2/3, 5/8, 0.6, 0.58\": This is the correct order but reversed: greatest to least.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "ordering",
+      "decimals",
+      "fractions"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        3,
+        4,
+        5
+      ],
+      "advanced": [
+        1,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-number-quantity-0016",
+    "certId": "praxis-core",
+    "subjectId": "mathematics",
+    "chapterId": "number-quantity",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A leaky faucet drips 2 cups of water every hour. How many gallons does it drip in one week? (16 cups = 1 gallon)",
+    "choices": [
+      "336 gallons",
+      "42 gallons",
+      "3 gallons",
+      "84 gallons",
+      "21 gallons"
+    ],
+    "answer": 5,
+    "oneLineConcept": "Chain unit conversions: cups/hour → cups/week → gallons.",
+    "explanation": "1. Cups per day: 2 × 24 = 48.\n2. Cups per week: 48 × 7 = 336.\n3. Gallons: 336 ÷ 16 = 21.\n\nCheck: 48 cups is 3 gallons a day, and 3 × 7 = 21.\n\n**Wrong choices**\n- \"42 gallons\": This uses 8 cups per gallon. The problem says 16 cups = 1 gallon.\n- \"3 gallons\": This finds the amount for one day (48 cups = 3 gallons) and forgets the 7 days.\n- \"84 gallons\": This divides 336 cups by 4, which gives quarts, not gallons.\n- \"336 gallons\": 336 is the number of cups. It still needs to be divided by 16.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "unit conversion",
+      "rate"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        5
+      ],
+      "intermediate": [
+        2,
+        3,
+        5
+      ],
+      "advanced": [
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-number-quantity-0017",
+    "certId": "praxis-core",
+    "subjectId": "mathematics",
+    "chapterId": "number-quantity",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Maria spent 1/3 of her money on rent and then 1/4 of the remaining money on food. What fraction of her original money is left?",
+    "choices": [
+      "5/12",
+      "7/12",
+      "1/2",
+      "1/6",
+      "5/7"
+    ],
+    "answer": 3,
+    "oneLineConcept": "\"A fraction of the rest\" is taken from the remainder, not the total.",
+    "explanation": "1. After rent: 1 − 1/3 = 2/3 is left.\n2. Food: 1/4 × 2/3 = 2/12 = 1/6.\n3. Left: 2/3 − 1/6 = 4/6 − 1/6 = 3/6 = 1/2.\n\nCheck: with $120, rent is $40, leaving $80; food is $20, leaving $60, which is half of $120.\n\n**Wrong choices**\n- \"5/12\": This takes 1/4 of the ORIGINAL money for food. The problem says 1/4 of what was left after rent.\n- \"7/12\": This is 1/3 + 1/4, an amount spent (calculated the wrong way), not the amount left.\n- \"1/6\": 1/6 is the fraction spent on food, not the fraction left.\n- \"5/7\": This adds tops and bottoms: 1 − 2/7. Fractions cannot be combined that way.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "fractions",
+      "word problem"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-number-quantity-0018",
+    "certId": "praxis-core",
+    "subjectId": "mathematics",
+    "chapterId": "number-quantity",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "The price of an item is increased by 20%, and then the new price is decreased by 20%. Compared with the original price, the final price shows",
+    "choices": [
+      "a decrease of 4%",
+      "an increase of 4%",
+      "a decrease of 20%",
+      "a decrease of 40%",
+      "no change"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Successive percent changes multiply; they do not simply add.",
+    "explanation": "1. Start with $100. After a 20% increase: $100 × 1.20 = $120.\n2. After a 20% decrease: $120 × 0.80 = $96.\n3. $96 is $4 less than $100, a 4% decrease.\n\nCheck: 1.20 × 0.80 = 0.96.\n\n**Wrong choices**\n- \"no change\": The 20% decrease is taken from a larger number than the 20% increase, so they do not cancel.\n- \"an increase of 4%\": The final price is lower than the original, not higher (0.96 of the original).\n- \"a decrease of 20%\": This looks only at the last step and ignores the earlier increase.\n- \"a decrease of 40%\": This counts both changes as decreases and adds them.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "percent change",
+      "successive percents"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        5
+      ],
+      "intermediate": [
+        1,
+        2,
+        5
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        5
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-number-quantity-0019",
+    "certId": "praxis-core",
+    "subjectId": "mathematics",
+    "chapterId": "number-quantity",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "After a 15% discount, a coat costs $68. What was the original price?",
+    "choices": [
+      "$57.80",
+      "$453.33",
+      "$78.20",
+      "$80.00",
+      "$83.00"
+    ],
+    "answer": 4,
+    "oneLineConcept": "If the sale price is 85% of the original, divide by 0.85.",
+    "explanation": "1. After a 15% discount, the coat costs 100% − 15% = 85% of the original.\n2. 0.85 × original = $68.\n3. Original = 68 ÷ 0.85 = $80.\n\nCheck: 15% of $80 is $12, and $80 − $12 = $68.\n\n**Wrong choices**\n- \"$78.20\": This adds 15% of $68 to $68. The 15% was taken from the original price, not from $68.\n- \"$83.00\": This adds 15 dollars instead of working with 15 percent.\n- \"$57.80\": This takes another 15% off $68.\n- \"$453.33\": This divides $68 by 0.15. The sale price is 85% of the original, not 15%.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "percent",
+      "reverse percent"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        3,
+        4,
+        5
+      ],
+      "advanced": [
+        1,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-number-quantity-0020",
+    "certId": "praxis-core",
+    "subjectId": "mathematics",
+    "chapterId": "number-quantity",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Worker A packs 12 orders per hour and Worker B packs 18 orders per hour. Working together at these rates, how long will it take them to pack 75 orders?",
+    "choices": [
+      "about 10 hours 25 minutes",
+      "2 hours 30 minutes",
+      "2 hours 50 minutes",
+      "5 hours",
+      "about 5 hours 13 minutes"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Rates of people working together add: combined rate = rate A + rate B.",
+    "explanation": "1. Combined rate: 12 + 18 = 30 orders per hour.\n2. Time: 75 ÷ 30 = 2.5 hours.\n3. 2.5 hours = 2 hours 30 minutes.\n\nCheck: in 2.5 hours, A packs 30 and B packs 45; 30 + 45 = 75.\n\n**Wrong choices**\n- \"2 hours 50 minutes\": The time is 2.5 hours, but 0.5 hour is 30 minutes, not 50.\n- \"5 hours\": This divides 75 by the average rate (15), which is the rate of only one average worker.\n- \"about 5 hours 13 minutes\": This averages the times each worker would take alone. Working together is faster than either worker alone.\n- \"about 10 hours 25 minutes\": This adds the two workers' separate times. Working together shortens the time.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "rate",
+      "work problem"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ],
+      "advanced": [
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-number-quantity-0021",
+    "certId": "praxis-core",
+    "subjectId": "mathematics",
+    "chapterId": "number-quantity",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Three partners share a $1,200 profit in the ratio 2 : 3 : 7. How much is the largest share?",
+    "choices": [
+      "$840",
+      "$400",
+      "$700",
+      "$300",
+      "$200"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Divide the total by the sum of the ratio parts to find one part.",
+    "explanation": "1. Total parts: 2 + 3 + 7 = 12.\n2. One part: $1,200 ÷ 12 = $100.\n3. Largest share: 7 × $100 = $700.\n\nCheck: $200 + $300 + $700 = $1,200.\n\n**Wrong choices**\n- \"$840\": This treats the 7 as 70% of the total. There are 12 parts in all, so 7 parts is 7/12.\n- \"$400\": This splits the money equally among three people.\n- \"$300\": This is the middle share (3 parts), not the largest.\n- \"$200\": This is the smallest share (2 parts), not the largest.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "ratio",
+      "sharing"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-number-quantity-0022",
+    "certId": "praxis-core",
+    "subjectId": "mathematics",
+    "chapterId": "number-quantity",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A car travels at 60 miles per hour. What is this speed in feet per second? (1 mile = 5,280 feet; 1 hour = 3,600 seconds)",
+    "choices": [
+      "88 feet per second",
+      "8.8 feet per second",
+      "1.47 feet per second",
+      "316,800 feet per second",
+      "5,280 feet per second"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Convert both units: miles to feet (×5,280), hours to seconds (÷3,600).",
+    "explanation": "1. Feet per hour: 60 × 5,280 = 316,800.\n2. Feet per second: 316,800 ÷ 3,600 = 88.\n\nCheck: 60 mph is 1 mile per minute = 5,280 feet per minute, and 5,280 ÷ 60 = 88.\n\n**Wrong choices**\n- \"5,280 feet per second\": 5,280 is the speed in feet per MINUTE. It still needs to be divided by 60.\n- \"8.8 feet per second\": This is off by a factor of 10; 316,800 ÷ 3,600 = 88.\n- \"1.47 feet per second\": This divides 5,280 by 3,600 but forgets to multiply by the 60 miles.\n- \"316,800 feet per second\": 316,800 is the number of feet in one HOUR. It must be divided by 3,600 seconds.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "unit conversion",
+      "rate"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        5
+      ],
+      "intermediate": [
+        1,
+        2,
+        5
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        5
+      ]
+    }
+  }
+]

@@ -1,0 +1,560 @@
+[
+  {
+    "id": "praxis-core-sentence-correction-0001",
+    "certId": "praxis-core",
+    "subjectId": "writing",
+    "chapterId": "sentence-correction",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Choose the best version of the part of the sentence in square brackets. The first choice repeats the original wording.\n\nThe students finished the experiment[, they wrote] their reports the next day.",
+    "choices": [
+      ", they wrote",
+      "they wrote",
+      "; they wrote",
+      ", and writing",
+      ", while they wrote"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Two complete sentences cannot be joined by a comma alone.",
+    "explanation": "\"The students finished the experiment\" and \"they wrote their reports\" are both complete sentences. Joining them with only a comma creates a comma splice. A semicolon correctly joins them.\n\n**Wrong choices**\n- \", they wrote\": This is a comma splice: two complete sentences joined only by a comma.\n- \" they wrote\": This is a run-on sentence: two complete sentences with no punctuation between them.\n- \", and writing\": \"Writing\" breaks the sentence structure and leaves the second part incomplete.\n- \", while they wrote\": \"While\" means the actions happened at the same time, but the reports were written the next day.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "comma splice",
+      "semicolon"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-sentence-correction-0002",
+    "certId": "praxis-core",
+    "subjectId": "writing",
+    "chapterId": "sentence-correction",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Choose the best version of the part of the sentence in square brackets. The first choice repeats the original wording.\n\nMs. Park stayed late every Tuesday[. Because her students] needed extra help with fractions.",
+    "choices": [
+      ". Because her students",
+      "because her students",
+      ". Her students, because they",
+      "; because her students",
+      ", her students"
+    ],
+    "answer": 2,
+    "oneLineConcept": "A clause beginning with \"because\" cannot stand alone as a sentence.",
+    "explanation": "\"Because her students needed extra help with fractions\" is a fragment; it cannot stand alone. Attaching it to the first sentence without a period makes one complete sentence.\n\n**Wrong choices**\n- \". Because her students\": This leaves a fragment that begins with \"Because.\"\n- \". Her students, because they\": \"Her students, because they needed extra help with fractions\" has no main verb, so it is still a fragment.\n- \"; because her students\": A semicolon must join two complete sentences, and the \"because\" part is not complete.\n- \", her students\": This creates a comma splice, joining two complete sentences with only a comma.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "sentence fragment",
+      "subordinate clause"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        5
+      ],
+      "advanced": [
+        1,
+        2,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-sentence-correction-0003",
+    "certId": "praxis-core",
+    "subjectId": "writing",
+    "chapterId": "sentence-correction",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Choose the best version of the part of the sentence in square brackets. The first choice repeats the original wording.\n\nOn weekends, Dana likes hiking, swimming, and [to ride her bike].",
+    "choices": [
+      "to ride her bike",
+      "she rides her bike",
+      "to go bike riding",
+      "riding her bike",
+      "a bike ride"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Items in a list should have the same grammatical form.",
+    "explanation": "The list already has \"hiking\" and \"swimming,\" which end in -ing. The third item should match: \"riding her bike.\"\n\n**Wrong choices**\n- \"to ride her bike\": \"To ride\" does not match the -ing words in the list.\n- \"she rides her bike\": \"She rides her bike\" is a full clause, not matching the other items.\n- \"to go bike riding\": \"To go\" still breaks the -ing pattern.\n- \"a bike ride\": \"A bike ride\" is a noun phrase, not matching \"hiking\" and \"swimming.\"",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "parallel structure",
+      "lists"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-sentence-correction-0004",
+    "certId": "praxis-core",
+    "subjectId": "writing",
+    "chapterId": "sentence-correction",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Choose the best version of the part of the sentence in square brackets. The first choice repeats the original wording.\n\nThe library, [which opened in 1920, is] the oldest building in town.",
+    "choices": [
+      "which opened in 1920, is",
+      "which opened in 1920 is",
+      "that opened in 1920, is",
+      "which opened in 1920, it is",
+      "opening in 1920, was being"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Extra information set off by commas needs a comma on both sides.",
+    "explanation": "\"Which opened in 1920\" is extra information about the library, so it needs a comma before and after it. The original is correct.\n\n**Wrong choices**\n- \"which opened in 1920 is\": This drops the second comma, so the extra information is not closed off.\n- \"that opened in 1920, is\": \"That\" is used for necessary information, which is not set off with commas.\n- \"which opened in 1920, it is\": \"It\" repeats the subject \"library\" and is not needed.\n- \"opening in 1920, was being\": \"Was being\" is the wrong tense for a building that is still the oldest.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "nonrestrictive clause",
+      "commas"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-sentence-correction-0005",
+    "certId": "praxis-core",
+    "subjectId": "writing",
+    "chapterId": "sentence-correction",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Choose the best version of the part of the sentence in square brackets. The first choice repeats the original wording.\n\nThe school changed [it's lunch schedule] after many parents complained.",
+    "choices": [
+      "it's lunch schedule",
+      "its' lunch schedule",
+      "it is lunch schedule",
+      "their's lunch schedule",
+      "its lunch schedule"
+    ],
+    "answer": 5,
+    "oneLineConcept": "Its = belonging to it; it's = it is or it has.",
+    "explanation": "The schedule belongs to the school, so the possessive \"its\" (no apostrophe) is correct. \"It's\" always means \"it is\" or \"it has.\"\n\n**Wrong choices**\n- \"it's lunch schedule\": \"It's\" means \"it is,\" which makes no sense here.\n- \"its' lunch schedule\": \"Its'\" is not a real word in English.\n- \"it is lunch schedule\": \"It is lunch schedule\" makes no sense in this sentence.\n- \"their's lunch schedule\": \"Their's\" is not a real word, and \"school\" is singular.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "apostrophes",
+      "its vs it's"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        5
+      ],
+      "intermediate": [
+        1,
+        2,
+        5
+      ],
+      "advanced": [
+        1,
+        2,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-sentence-correction-0006",
+    "certId": "praxis-core",
+    "subjectId": "writing",
+    "chapterId": "sentence-correction",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Choose the best version of the part of the sentence in square brackets. The first choice repeats the original wording.\n\n[Walking to school, the rain soaked Jamal's backpack.]",
+    "choices": [
+      "Walking to school, the rain soaked Jamal's backpack.",
+      "While Jamal was walking to school, the rain soaked his backpack.",
+      "Walking to school, Jamal's backpack was soaked by the rain.",
+      "Walking to school, the rain was soaking Jamal's backpack.",
+      "Walking to school, rain soaked the backpack of Jamal."
+    ],
+    "answer": 2,
+    "oneLineConcept": "An opening modifier must describe the word right after the comma.",
+    "explanation": "In the original, \"Walking to school\" seems to describe the rain, which cannot walk. The best version names Jamal as the one walking.\n\n**Wrong choices**\n- \"Walking to school, the rain soaked Jamal's backpack.\": This says the rain was walking to school (a dangling modifier).\n- \"Walking to school, Jamal's backpack was soaked by the rain.\": This says the backpack was walking to school.\n- \"Walking to school, the rain was soaking Jamal's backpack.\": This still says the rain was walking to school.\n- \"Walking to school, rain soaked the backpack of Jamal.\": This still says the rain was walking, and \"the backpack of Jamal\" is awkward.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "dangling modifier"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-sentence-correction-0007",
+    "certId": "praxis-core",
+    "subjectId": "writing",
+    "chapterId": "sentence-correction",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Choose the best version of the part of the sentence in square brackets. The first choice repeats the original wording.\n\nThe test was difficult[, however, most students] passed it.",
+    "choices": [
+      ", however, most students",
+      "however most students",
+      ", however most students",
+      ", but however, most students",
+      "; however, most students"
+    ],
+    "answer": 5,
+    "oneLineConcept": "Use a semicolon before \"however\" when it joins two sentences.",
+    "explanation": "\"However\" is not a joining word like \"but.\" When it links two complete sentences, put a semicolon before it and a comma after it.\n\n**Wrong choices**\n- \", however, most students\": Commas alone around \"however\" create a comma splice.\n- \" however most students\": With no punctuation, the two sentences run together.\n- \", however most students\": This is still a comma splice, just missing the second comma.\n- \", but however, most students\": \"But however\" says the same thing twice.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "conjunctive adverb",
+      "semicolon"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        5
+      ],
+      "intermediate": [
+        1,
+        3,
+        5
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        5
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-sentence-correction-0008",
+    "certId": "praxis-core",
+    "subjectId": "writing",
+    "chapterId": "sentence-correction",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Choose the best version of the part of the sentence in square brackets. The first choice repeats the original wording.\n\nIf the principal [were] here, she would know what to do.",
+    "choices": [
+      "were",
+      "was being",
+      "is",
+      "would be",
+      "has been"
+    ],
+    "answer": 1,
+    "oneLineConcept": "For an unreal or imagined situation after \"if,\" use \"were.\"",
+    "explanation": "The principal is not here, so the sentence describes an imagined situation. With \"if\" and \"would,\" the standard form is \"were.\" The original is correct.\n\n**Wrong choices**\n- \"was being\": \"Was being\" describes an ongoing action, which does not fit.\n- \"is\": \"Is\" does not match \"would know\" in the second part.\n- \"would be\": \"Would\" belongs in the result part, not the \"if\" part.\n- \"has been\": \"Has been\" does not fit an imagined situation in the present.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "subjunctive mood",
+      "conditional"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ],
+      "advanced": [
+        1,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-sentence-correction-0009",
+    "certId": "praxis-core",
+    "subjectId": "writing",
+    "chapterId": "sentence-correction",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Choose the best version of the part of the sentence in square brackets. The first choice repeats the original wording.\n\n[Due to the fact that the bus was late, the students] missed the opening of the play.",
+    "choices": [
+      "Due to the fact that the bus was late, the students",
+      "Due to the bus being late the students",
+      "Because the bus was late, the students",
+      "Because the bus was late the students they",
+      "The bus being late, and so the students"
+    ],
+    "answer": 3,
+    "oneLineConcept": "The best answer is correct, clear, and not wordy.",
+    "explanation": "\"Due to the fact that\" is a wordy way to say \"because.\" \"Because the bus was late, the students\" says the same thing clearly and correctly.\n\n**Wrong choices**\n- \"Due to the fact that the bus was late, the students\": It is not wrong, but it is wordy compared with \"because.\"\n- \"Due to the bus being late the students\": It is awkward and is missing the comma after the opening phrase.\n- \"Because the bus was late the students they\": \"The students they\" repeats the subject.\n- \"The bus being late, and so the students\": \"And so\" leaves the sentence without a proper structure.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "wordiness",
+      "conciseness"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-sentence-correction-0010",
+    "certId": "praxis-core",
+    "subjectId": "writing",
+    "chapterId": "sentence-correction",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Choose the best version of the part of the sentence in square brackets. The first choice repeats the original wording.\n\n[The teachers who attended the workshop, said] it was useful.",
+    "choices": [
+      "The teachers who attended the workshop, said",
+      "The teachers, who attended the workshop said",
+      "The teachers who attended the workshop, they said",
+      "The teachers who attended the workshop said",
+      "The teachers who attended, the workshop said"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Do not put a single comma between a subject and its verb.",
+    "explanation": "\"Who attended the workshop\" tells which teachers, so it needs no commas. A comma should not separate the subject (\"teachers\") from its verb (\"said\").\n\n**Wrong choices**\n- \"The teachers who attended the workshop, said\": The comma wrongly separates the subject from the verb.\n- \"The teachers, who attended the workshop said\": It has only one comma, so the inserted words are not properly set off.\n- \"The teachers who attended the workshop, they said\": \"They\" repeats the subject.\n- \"The teachers who attended, the workshop said\": The comma makes it seem the workshop said something.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "commas",
+      "restrictive clause"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-sentence-correction-0011",
+    "certId": "praxis-core",
+    "subjectId": "writing",
+    "chapterId": "sentence-correction",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Choose the best version of the part of the sentence in square brackets. The first choice repeats the original wording.\n\nWhen Ms. Diaz met with Ms. Cole, [she explained the new grading policy].",
+    "choices": [
+      "she explained the new grading policy",
+      "she explained to her the new grading policy",
+      "Ms. Diaz explained the new grading policy",
+      "they explained the new grading policy to her",
+      "the new grading policy was explained by her"
+    ],
+    "answer": 3,
+    "oneLineConcept": "A pronoun must clearly point to one person or thing.",
+    "explanation": "In the original, \"she\" could mean Ms. Diaz or Ms. Cole. Naming Ms. Diaz removes the confusion.\n\n**Wrong choices**\n- \"she explained the new grading policy\": \"She\" could refer to either woman.\n- \"she explained to her the new grading policy\": Both \"she\" and \"her\" are still unclear.\n- \"they explained the new grading policy to her\": \"They\" cannot explain something \"to her\" when both women are meeting.\n- \"the new grading policy was explained by her\": \"By her\" is still unclear and the passive voice is wordy.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "pronoun reference",
+      "ambiguity"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        5
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-sentence-correction-0012",
+    "certId": "praxis-core",
+    "subjectId": "writing",
+    "chapterId": "sentence-correction",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Choose the best version of the part of the sentence in square brackets. The first choice repeats the original wording.\n\nThe test scores at Lincoln School were higher than [Jefferson School].",
+    "choices": [
+      "Jefferson School",
+      "those at Jefferson School",
+      "that at Jefferson School",
+      "the Jefferson School",
+      "at Jefferson School it was"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Compare like things: scores with scores, not scores with a school.",
+    "explanation": "The original compares test scores with a school. The sentence must compare scores with scores: \"higher than those at Jefferson School.\" \"Those\" stands for the plural \"scores.\"\n\n**Wrong choices**\n- \"Jefferson School\": This compares scores with a school.\n- \"that at Jefferson School\": \"That\" is singular, but it stands for the plural \"scores.\"\n- \"the Jefferson School\": Adding \"the\" still compares scores with a school.\n- \"at Jefferson School it was\": \"It was\" is singular and does not match \"scores.\"",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "faulty comparison",
+      "pronoun agreement"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-sentence-correction-0013",
+    "certId": "praxis-core",
+    "subjectId": "writing",
+    "chapterId": "sentence-correction",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Choose the best version of the part of the sentence in square brackets. The first choice repeats the original wording.\n\nThe new program [not only will improve reading scores but also] build confidence.",
+    "choices": [
+      "not only will improve reading scores but also",
+      "will not only improve reading scores but also it will",
+      "not only will improve reading scores, but it also",
+      "will not only improve reading scores but also",
+      "will improve not only reading scores but also to"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Words after \"not only\" and \"but also\" must have the same form.",
+    "explanation": "\"Not only\" and \"but also\" should be followed by matching parts. Here both are followed by a verb: \"improve reading scores\" and \"build confidence,\" with \"will\" placed before both.\n\n**Wrong choices**\n- \"not only will improve reading scores but also\": \"Will\" falls after \"not only,\" so the two parts do not match.\n- \"will not only improve reading scores but also it will\": \"It will build\" does not match \"improve reading scores.\"\n- \"not only will improve reading scores, but it also\": \"It also build\" is ungrammatical; the verb form is wrong.\n- \"will improve not only reading scores but also to\": \"To\" does not match \"reading scores,\" and \"to build\" breaks the pattern.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "parallel structure",
+      "correlative conjunctions"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  }
+]

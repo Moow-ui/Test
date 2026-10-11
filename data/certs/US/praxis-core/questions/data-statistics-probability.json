@@ -1,0 +1,773 @@
+[
+  {
+    "id": "praxis-core-data-statistics-probability-0001",
+    "certId": "praxis-core",
+    "subjectId": "mathematics",
+    "chapterId": "data-statistics-probability",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Find the mean of these numbers: 10, 15, 9, 22, 16",
+    "choices": [
+      "15",
+      "18",
+      "13",
+      "72",
+      "14.4"
+    ],
+    "answer": 5,
+    "oneLineConcept": "Mean = sum of the values ÷ number of values.",
+    "explanation": "1. Sum: 10 + 15 + 9 + 22 + 16 = 72.\n2. Mean: 72 ÷ 5 = 14.4.\n\nCheck: 14.4 × 5 = 72.\n\n**Wrong choices**\n- \"15\": 15 is the median (the middle value when ordered), not the mean.\n- \"18\": This divides the total (72) by 4 instead of by 5 numbers.\n- \"13\": 13 is the range (22 − 9), not the mean.\n- \"72\": 72 is the total. It must be divided by how many numbers there are.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "mean"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        5
+      ],
+      "intermediate": [
+        1,
+        2,
+        5
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        5
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-data-statistics-probability-0002",
+    "certId": "praxis-core",
+    "subjectId": "mathematics",
+    "chapterId": "data-statistics-probability",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What is the median of 7, 3, 9, 4, 12, 8?",
+    "choices": [
+      "7",
+      "7.5",
+      "8",
+      "9",
+      "6.5"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Order the data; with an even count, average the two middle values.",
+    "explanation": "1. Order: 3, 4, 7, 8, 9, 12.\n2. The two middle values are 7 and 8.\n3. Median: (7 + 8) ÷ 2 = 7.5.\n\nCheck: three values (3, 4, 7) are below 7.5 and three (8, 9, 12) are above it.\n\n**Wrong choices**\n- \"6.5\": This takes the middle two numbers without first putting the list in order (9 and 4).\n- \"7\": With six numbers there are two middle values (7 and 8); the median is their average.\n- \"8\": This picks only one of the two middle values.\n- \"9\": 9 is the range (12 − 3), not the median.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "median"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        5
+      ],
+      "intermediate": [
+        1,
+        2,
+        5
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        5
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-data-statistics-probability-0003",
+    "certId": "praxis-core",
+    "subjectId": "mathematics",
+    "chapterId": "data-statistics-probability",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What is the mode of this data set: 4, 7, 7, 2, 9, 4, 7, 5?",
+    "choices": [
+      "3",
+      "5.625",
+      "4",
+      "6",
+      "7"
+    ],
+    "answer": 5,
+    "oneLineConcept": "The mode is the value that appears most often.",
+    "explanation": "Count each value: 2 (once), 4 (twice), 5 (once), 7 (three times), 9 (once). The value 7 appears most often, so the mode is 7.\n\nCheck: no other value appears three or more times.\n\n**Wrong choices**\n- \"4\": 4 appears twice, but 7 appears three times.\n- \"6\": 6 is the median ((5 + 7) ÷ 2), not the mode.\n- \"3\": 3 is HOW MANY times the mode appears, not the mode itself.\n- \"5.625\": 5.625 is the mean (45 ÷ 8), not the mode.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "mode"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        5
+      ],
+      "intermediate": [
+        3,
+        4,
+        5
+      ],
+      "advanced": [
+        1,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-data-statistics-probability-0004",
+    "certId": "praxis-core",
+    "subjectId": "mathematics",
+    "chapterId": "data-statistics-probability",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "The low temperatures for five days were −3°F, 5°F, 12°F, −8°F, and 7°F. What is the range?",
+    "choices": [
+      "2.6°F",
+      "4°F",
+      "20°F",
+      "15°F",
+      "5°F"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Range = greatest value − least value.",
+    "explanation": "1. Greatest: 12. Least: −8.\n2. Range: 12 − (−8) = 12 + 8 = 20°F.\n\nCheck: on a thermometer, going from −8 up to 0 is 8 degrees, and from 0 up to 12 is 12 more; 8 + 12 = 20.\n\n**Wrong choices**\n- \"4°F\": This subtracts 8 instead of −8. Subtracting a negative number means adding: 12 − (−8) = 20.\n- \"15°F\": This uses −3 as the lowest value. The lowest temperature is −8°F.\n- \"5°F\": 5°F is the median (the middle value), not the range.\n- \"2.6°F\": 2.6°F is the mean (13 ÷ 5), not the range.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "range",
+      "negative numbers"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ],
+      "advanced": [
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-data-statistics-probability-0005",
+    "certId": "praxis-core",
+    "subjectId": "mathematics",
+    "chapterId": "data-statistics-probability",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A bag holds 4 red, 6 blue, and 5 green marbles. One marble is picked at random. What is the probability that it is blue?",
+    "choices": [
+      "2/5",
+      "2/3",
+      "3/5",
+      "1/3",
+      "1/6"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Probability = favorable outcomes ÷ total outcomes.",
+    "explanation": "1. Total marbles: 4 + 6 + 5 = 15.\n2. Blue: 6.\n3. Probability: 6/15 = 2/5.\n\nCheck: 2/5 = 0.4, and 0.4 × 15 = 6 blue marbles.\n\n**Wrong choices**\n- \"2/3\": This compares blue to non-blue (6 to 9). Probability compares blue to ALL marbles (6 out of 15).\n- \"3/5\": 3/5 is the probability of NOT picking blue.\n- \"1/3\": This assumes the three colors are equally likely. There are more blue marbles than red or green.\n- \"1/6\": This puts 1 over the number of blue marbles.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "probability"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-data-statistics-probability-0006",
+    "certId": "praxis-core",
+    "subjectId": "mathematics",
+    "chapterId": "data-statistics-probability",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A store's sales by month were: January $4,200; February $3,800; March $5,100; April $4,600; May $5,700. Between which two months in a row did sales increase the most?",
+    "choices": [
+      "The two increases (February to March and April to May) were equal",
+      "March to April",
+      "January to February",
+      "February to March",
+      "April to May"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Find each change (later − earlier) and compare.",
+    "explanation": "1. Jan → Feb: 3,800 − 4,200 = −400.\n2. Feb → Mar: 5,100 − 3,800 = +1,300.\n3. Mar → Apr: 4,600 − 5,100 = −500.\n4. Apr → May: 5,700 − 4,600 = +1,100.\nThe largest increase is +1,300, from February to March.\n\nCheck: 3,800 + 1,300 = 5,100.\n\n**Wrong choices**\n- \"April to May\": Sales rose $1,100 from April to May, which is less than the $1,300 rise from February to March.\n- \"The two increases (February to March and April to May) were equal\": The increases were $1,300 and $1,100, which are not equal.\n- \"March to April\": Sales went DOWN $500 from March to April.\n- \"January to February\": Sales went DOWN $400 from January to February.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "reading tables",
+      "change"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        4,
+        5
+      ],
+      "intermediate": [
+        1,
+        4,
+        5
+      ],
+      "advanced": [
+        1,
+        2,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-data-statistics-probability-0007",
+    "certId": "praxis-core",
+    "subjectId": "mathematics",
+    "chapterId": "data-statistics-probability",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A fair six-sided die (numbered 1 to 6) is rolled once. What is the probability of rolling a number greater than 4?",
+    "choices": [
+      "1/3",
+      "2/3",
+      "5/6",
+      "1/2",
+      "1/6"
+    ],
+    "answer": 1,
+    "oneLineConcept": "\"Greater than\" does not include the number itself.",
+    "explanation": "1. Numbers greater than 4: 5 and 6, which is 2 outcomes.\n2. Total outcomes: 6.\n3. Probability: 2/6 = 1/3.\n\nCheck: the probability of 4 or less is 4/6, and 2/6 + 4/6 = 1.\n\n**Wrong choices**\n- \"1/2\": This counts 4, 5, and 6. \"Greater than 4\" does not include 4.\n- \"1/6\": This counts only one number. Both 5 and 6 are greater than 4.\n- \"2/3\": 2/3 is the probability of rolling 4 or less.\n- \"5/6\": This counts every number except 4.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "probability",
+      "dice"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        4,
+        5
+      ],
+      "advanced": [
+        1,
+        2,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-data-statistics-probability-0008",
+    "certId": "praxis-core",
+    "subjectId": "mathematics",
+    "chapterId": "data-statistics-probability",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A coin is flipped and a six-sided die is rolled. What is the probability of getting heads AND a 6?",
+    "choices": [
+      "1/6",
+      "2/3",
+      "7/12",
+      "1/12",
+      "1/8"
+    ],
+    "answer": 4,
+    "oneLineConcept": "For independent events, P(A and B) = P(A) × P(B).",
+    "explanation": "1. P(heads) = 1/2. P(6) = 1/6.\n2. P(both) = 1/2 × 1/6 = 1/12.\n\nCheck: there are 2 × 6 = 12 equally likely pairs, and only one of them is (heads, 6).\n\n**Wrong choices**\n- \"2/3\": This adds 1/2 + 1/6. For two independent events that BOTH must happen, multiply.\n- \"7/12\": 7/12 is the probability of heads OR a 6, not both.\n- \"1/8\": This puts 1 over 2 + 6. The total number of outcomes is 2 × 6 = 12.\n- \"1/6\": This gives only the chance of rolling a 6 and ignores the coin.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "compound probability",
+      "independent events"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ],
+      "advanced": [
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-data-statistics-probability-0009",
+    "certId": "praxis-core",
+    "subjectId": "mathematics",
+    "chapterId": "data-statistics-probability",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Class A has 20 students with a mean test score of 80. Class B has 30 students with a mean test score of 70. What is the mean score of all 50 students?",
+    "choices": [
+      "75",
+      "74",
+      "76",
+      "70",
+      "3,700"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Combined mean = total of all values ÷ total number of values.",
+    "explanation": "1. Class A total: 20 × 80 = 1,600.\n2. Class B total: 30 × 70 = 2,100.\n3. Combined mean: (1,600 + 2,100) ÷ 50 = 3,700 ÷ 50 = 74.\n\nCheck: 74 is closer to 70 than to 80, which makes sense because Class B is larger.\n\n**Wrong choices**\n- \"75\": This averages the two class means. Class B has more students, so it counts more.\n- \"76\": This gives Class A the larger weight. Class B has 30 students, not 20.\n- \"70\": This uses only the larger class.\n- \"3,700\": 3,700 is the total of all scores. It must be divided by 50 students.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "weighted mean"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-data-statistics-probability-0010",
+    "certId": "praxis-core",
+    "subjectId": "mathematics",
+    "chapterId": "data-statistics-probability",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Jamal's first four test scores are 78, 85, 92, and 88. What score does he need on the fifth test to have a mean of 87 for all five tests?",
+    "choices": [
+      "88.25",
+      "85.75",
+      "435",
+      "87",
+      "92"
+    ],
+    "answer": 5,
+    "oneLineConcept": "Needed score = (target mean × count) − current total.",
+    "explanation": "1. Total needed for five tests: 87 × 5 = 435.\n2. Current total: 78 + 85 + 92 + 88 = 343.\n3. Needed: 435 − 343 = 92.\n\nCheck: (343 + 92) ÷ 5 = 435 ÷ 5 = 87.\n\n**Wrong choices**\n- \"87\": Scoring 87 would not raise his current mean (85.75) all the way to 87.\n- \"88.25\": This adds the 1.25-point shortfall to 87 once. The fifth test must make up 1.25 for each of the four earlier tests too.\n- \"85.75\": 85.75 is his current mean, not the score he needs.\n- \"435\": 435 is the total needed for all five tests, not the fifth score.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "mean",
+      "missing value"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        4,
+        5
+      ],
+      "intermediate": [
+        1,
+        4,
+        5
+      ],
+      "advanced": [
+        1,
+        2,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-data-statistics-probability-0011",
+    "certId": "praxis-core",
+    "subjectId": "mathematics",
+    "chapterId": "data-statistics-probability",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "In a survey, 200 people named their favorite fruit: apples 64, bananas 50, grapes 38, oranges 48. What percent of the people chose grapes?",
+    "choices": [
+      "25%",
+      "0.19%",
+      "19%",
+      "24%",
+      "38%"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Percent of a group = part ÷ whole × 100.",
+    "explanation": "1. Grapes: 38 out of 200.\n2. 38 ÷ 200 = 0.19.\n3. 0.19 = 19%.\n\nCheck: 64 + 50 + 38 + 48 = 200, and 19% of 200 = 38.\n\n**Wrong choices**\n- \"24%\": 24% is the percent for oranges (48 ÷ 200), not grapes.\n- \"38%\": 38 is the number of people, not the percent. The total is 200, not 100.\n- \"25%\": This assumes the four fruits were chosen equally often.\n- \"0.19%\": 0.19 is the decimal; it must be multiplied by 100 to be a percent.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "reading tables",
+      "percent"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        3,
+        4,
+        5
+      ],
+      "advanced": [
+        1,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-data-statistics-probability-0012",
+    "certId": "praxis-core",
+    "subjectId": "mathematics",
+    "chapterId": "data-statistics-probability",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "The salaries (in thousands of dollars) at a small office are 32, 35, 38, 40, and 41. A manager earning 150 joins the office. How do the mean and median change?",
+    "choices": [
+      "The mean rises by 112.8 and the median rises by 1.",
+      "The mean rises by 18.8 and the median stays at 38.",
+      "The mean and the median both rise by 18.8.",
+      "The mean rises by 1 and the median rises by 18.8.",
+      "The mean rises by 18.8 and the median rises by 1."
+    ],
+    "answer": 5,
+    "oneLineConcept": "An outlier changes the mean much more than the median.",
+    "explanation": "1. Old mean: (32 + 35 + 38 + 40 + 41) ÷ 5 = 186 ÷ 5 = 37.2. Old median: 38.\n2. New mean: (186 + 150) ÷ 6 = 336 ÷ 6 = 56, a rise of 18.8.\n3. New median: (38 + 40) ÷ 2 = 39, a rise of 1.\n\nCheck: 37.2 + 18.8 = 56.\n\n**Wrong choices**\n- \"The mean rises by 18.8 and the median stays at 38.\": With six values the median is the average of the 3rd and 4th values, (38 + 40) ÷ 2 = 39, so it rises by 1.\n- \"The mean and the median both rise by 18.8.\": The median depends only on the middle values, so one large value moves it very little.\n- \"The mean rises by 1 and the median rises by 18.8.\": This switches them. An outlier pulls the mean much more than the median.\n- \"The mean rises by 112.8 and the median rises by 1.\": 112.8 is how far 150 is from the old mean (150 − 37.2), not how much the mean changes.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "outliers",
+      "mean",
+      "median"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        5
+      ],
+      "intermediate": [
+        2,
+        3,
+        5
+      ],
+      "advanced": [
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-data-statistics-probability-0013",
+    "certId": "praxis-core",
+    "subjectId": "mathematics",
+    "chapterId": "data-statistics-probability",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "In a random sample of 80 light bulbs, 6 were defective. Based on this sample, about how many bulbs in a shipment of 2,000 would be defective?",
+    "choices": [
+      "1,500",
+      "15",
+      "150",
+      "1,850",
+      "7.5"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Use the sample rate to predict the count in the whole group.",
+    "explanation": "1. Sample rate: 6 ÷ 80 = 0.075 (7.5%).\n2. Expected defective: 0.075 × 2,000 = 150.\n\nCheck: 2,000 is 25 times 80, and 25 × 6 = 150.\n\n**Wrong choices**\n- \"1,500\": This is off by a factor of 10: 6 ÷ 80 = 0.075, not 0.75.\n- \"15\": This uses 0.0075 instead of 0.075 (a decimal-place slip).\n- \"1,850\": 1,850 is the expected number of GOOD bulbs.\n- \"7.5\": 7.5 is the defect rate as a percent (7.5%), not a number of bulbs.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "sampling",
+      "proportion",
+      "prediction"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-data-statistics-probability-0014",
+    "certId": "praxis-core",
+    "subjectId": "mathematics",
+    "chapterId": "data-statistics-probability",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A bag contains 3 red and 5 blue marbles. Two marbles are drawn one after the other WITHOUT replacement. What is the probability that both are red?",
+    "choices": [
+      "3/28",
+      "3/8",
+      "5/14",
+      "3/4",
+      "9/64"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Without replacement, the second probability uses the reduced counts.",
+    "explanation": "1. First red: 3/8.\n2. Second red (2 red left out of 7): 2/7.\n3. Both: 3/8 × 2/7 = 6/56 = 3/28.\n\nCheck: there are 28 possible pairs of marbles, and 3 of them are red-red pairs.\n\n**Wrong choices**\n- \"9/64\": This treats the draws as WITH replacement (3/8 × 3/8). After one red is taken, only 2 red and 7 marbles remain.\n- \"3/8\": This is only the probability that the first marble is red.\n- \"5/14\": 5/14 is the probability that both are BLUE (5/8 × 4/7).\n- \"3/4\": This adds 3/8 + 3/8. For \"both\" events, multiply the probabilities.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "compound probability",
+      "without replacement"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        5
+      ],
+      "intermediate": [
+        1,
+        2,
+        5
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        5
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-data-statistics-probability-0015",
+    "certId": "praxis-core",
+    "subjectId": "mathematics",
+    "chapterId": "data-statistics-probability",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A survey asked 20 families how many pets they have. Results: 0 pets — 5 families; 1 pet — 8 families; 2 pets — 4 families; 3 pets — 3 families. What is the median number of pets?",
+    "choices": [
+      "4.5",
+      "8",
+      "1.25",
+      "1",
+      "1.5"
+    ],
+    "answer": 4,
+    "oneLineConcept": "In a frequency table, count down to the middle data value.",
+    "explanation": "1. There are 20 values, so the median is the average of the 10th and 11th values.\n2. Values 1–5 are 0 pets; values 6–13 are 1 pet.\n3. The 10th and 11th values are both 1, so the median is 1.\n\nCheck: 5 + 8 = 13 families have 1 pet or fewer, which is more than half of 20.\n\n**Wrong choices**\n- \"1.25\": 1.25 is the mean (25 pets ÷ 20 families), not the median.\n- \"1.5\": This takes the middle of the list 0, 1, 2, 3 and ignores how many families have each number.\n- \"4.5\": This finds the median of the frequency column (3, 4, 5, 8). The median must be a number of pets.\n- \"8\": 8 is the number of families with 1 pet, not a number of pets.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "median",
+      "frequency table"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        3,
+        4,
+        5
+      ],
+      "advanced": [
+        1,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-data-statistics-probability-0016",
+    "certId": "praxis-core",
+    "subjectId": "mathematics",
+    "chapterId": "data-statistics-probability",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "The probability that a certain flight is late is 0.2. For two independent flights, what is the probability that at least one of them is late?",
+    "choices": [
+      "0.04",
+      "0.36",
+      "0.4",
+      "0.32",
+      "0.64"
+    ],
+    "answer": 2,
+    "oneLineConcept": "P(at least one) = 1 − P(none).",
+    "explanation": "1. P(a flight is on time) = 1 − 0.2 = 0.8.\n2. P(both on time) = 0.8 × 0.8 = 0.64.\n3. P(at least one late) = 1 − 0.64 = 0.36.\n\nCheck: exactly one late (0.32) + both late (0.04) = 0.36.\n\n**Wrong choices**\n- \"0.4\": This adds 0.2 + 0.2, which counts the case where both are late twice.\n- \"0.32\": 0.32 is the probability that EXACTLY one is late. \"At least one\" also includes both being late.\n- \"0.64\": 0.64 is the probability that neither flight is late.\n- \"0.04\": 0.04 is the probability that both flights are late.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "compound probability",
+      "complement"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ],
+      "advanced": [
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-data-statistics-probability-0017",
+    "certId": "praxis-core",
+    "subjectId": "mathematics",
+    "chapterId": "data-statistics-probability",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "The mean of 8 numbers is 15. When one number is removed, the mean of the remaining 7 numbers is 14. What number was removed?",
+    "choices": [
+      "1",
+      "29",
+      "22",
+      "15",
+      "98"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Turn means into totals: total = mean × count.",
+    "explanation": "1. Total of 8 numbers: 8 × 15 = 120.\n2. Total of 7 numbers: 7 × 14 = 98.\n3. Removed number: 120 − 98 = 22.\n\nCheck: (98 + 22) ÷ 8 = 120 ÷ 8 = 15.\n\n**Wrong choices**\n- \"1\": 1 is the change in the mean, not the removed number.\n- \"29\": This adds the two means. Work with the totals instead.\n- \"15\": Removing a number equal to the mean would leave the mean at 15, not 14.\n- \"98\": 98 is the total of the remaining 7 numbers.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "mean",
+      "totals"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-data-statistics-probability-0018",
+    "certId": "praxis-core",
+    "subjectId": "mathematics",
+    "chapterId": "data-statistics-probability",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Of 120 students: 18 play a sport and are in the band, 42 play a sport but are not in the band, 30 are in the band but do not play a sport, and 30 do neither. A student who plays a sport is chosen at random. What is the probability that this student is also in the band?",
+    "choices": [
+      "3/10",
+      "3/20",
+      "3/7",
+      "1/2",
+      "3/8"
+    ],
+    "answer": 1,
+    "oneLineConcept": "For \"given\" questions, the total is only the group you choose from.",
+    "explanation": "1. Students who play a sport: 18 + 42 = 60.\n2. Of those, 18 are in the band.\n3. Probability: 18/60 = 3/10.\n\nCheck: 18 + 42 + 30 + 30 = 120, and 0.3 × 60 = 18.\n\n**Wrong choices**\n- \"3/8\": This divides by the band members (48). The student was chosen from those who play a sport (60).\n- \"3/20\": This divides by all 120 students. The question is limited to students who play a sport.\n- \"3/7\": This divides 18 by 42. The 18 students in both groups must be counted in the total of sport players.\n- \"1/2\": 1/2 is the probability that a student from the whole school plays a sport (60 ÷ 120).",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "two-way table",
+      "conditional probability"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        5
+      ],
+      "intermediate": [
+        1,
+        2,
+        5
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        5
+      ]
+    }
+  }
+]

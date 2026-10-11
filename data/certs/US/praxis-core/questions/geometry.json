@@ -1,0 +1,433 @@
+[
+  {
+    "id": "praxis-core-geometry-0001",
+    "certId": "praxis-core",
+    "subjectId": "mathematics",
+    "chapterId": "geometry",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Two angles of a triangle measure 47° and 68°. What is the measure of the third angle?",
+    "choices": [
+      "245°",
+      "21°",
+      "65°",
+      "115°",
+      "90°"
+    ],
+    "answer": 3,
+    "oneLineConcept": "The three angles of any triangle add up to 180°.",
+    "explanation": "1. Add the given angles: 47° + 68° = 115°.\n2. Third angle: 180° − 115° = 65°.\n\nCheck: 47 + 68 + 65 = 180.\n\n**Wrong choices**\n- \"115°\": 115° is the sum of the two given angles, not the third angle.\n- \"90°\": Nothing says this is a right triangle.\n- \"245°\": This subtracts from 360°. The angles of a triangle add up to 180°, not 360°.\n- \"21°\": This is the difference between the two given angles.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "triangles",
+      "angles"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        3,
+        4,
+        5
+      ],
+      "advanced": [
+        1,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-geometry-0002",
+    "certId": "praxis-core",
+    "subjectId": "mathematics",
+    "chapterId": "geometry",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A rectangular rug is 9 feet long and 4 feet wide. What is its area?",
+    "choices": [
+      "81 square feet",
+      "26 square feet",
+      "13 square feet",
+      "72 square feet",
+      "36 square feet"
+    ],
+    "answer": 5,
+    "oneLineConcept": "Area of a rectangle = length × width (in square units).",
+    "explanation": "1. Area = 9 × 4.\n2. Area = 36 square feet.\n\nCheck: 9 rows of 4 one-foot squares make 36 squares.\n\n**Wrong choices**\n- \"26 square feet\": 26 is the perimeter (9 + 4 + 9 + 4), which is measured in feet, not square feet.\n- \"13 square feet\": This adds length and width instead of multiplying.\n- \"72 square feet\": This doubles the area. The area of a rectangle is just length × width.\n- \"81 square feet\": This squares the length (9 × 9) and ignores the width.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "area",
+      "rectangle"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        5
+      ],
+      "intermediate": [
+        2,
+        3,
+        5
+      ],
+      "advanced": [
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-geometry-0003",
+    "certId": "praxis-core",
+    "subjectId": "mathematics",
+    "chapterId": "geometry",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Two angles together form a straight line. One angle measures 132°. What is the measure of the other angle?",
+    "choices": [
+      "42°",
+      "228°",
+      "48°",
+      "132°",
+      "90°"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Angles that form a straight line (supplementary angles) add to 180°.",
+    "explanation": "1. Angles on a straight line add up to 180°.\n2. 180° − 132° = 48°.\n\nCheck: 132 + 48 = 180.\n\n**Wrong choices**\n- \"42°\": This subtracts 90° from 132°, as if the angles formed a right angle.\n- \"228°\": This subtracts from 360°. Angles on a straight line add up to 180°.\n- \"132°\": Equal angles come from vertical angles, not from angles that form a straight line.\n- \"90°\": Only a straight line split by a perpendicular line gives two 90° angles.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "angles",
+      "supplementary"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-geometry-0004",
+    "certId": "praxis-core",
+    "subjectId": "mathematics",
+    "chapterId": "geometry",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A circle has a radius of 5 centimeters. Using π ≈ 3.14, what is its circumference?",
+    "choices": [
+      "31.4 cm",
+      "15.7 cm",
+      "62.8 cm",
+      "157 cm",
+      "78.5 cm"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Circumference = 2 × π × radius = π × diameter.",
+    "explanation": "1. Diameter = 2 × 5 = 10 cm.\n2. Circumference = 3.14 × 10 = 31.4 cm.\n\nCheck: a circle's circumference is a little more than 3 times its diameter; 3 × 10 = 30.\n\n**Wrong choices**\n- \"78.5 cm\": 78.5 is the AREA (π × 5 × 5), and area is in square centimeters.\n- \"15.7 cm\": This uses π × radius. Circumference is π × diameter, or 2 × π × radius.\n- \"62.8 cm\": This uses 2 × π × diameter, which doubles the answer.\n- \"157 cm\": This multiplies 3.14 by 50 (a decimal-place slip).",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "circles",
+      "circumference"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        5
+      ],
+      "intermediate": [
+        1,
+        2,
+        5
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        5
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-geometry-0005",
+    "certId": "praxis-core",
+    "subjectId": "mathematics",
+    "chapterId": "geometry",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A right triangle has legs of 9 inches and 12 inches. How long is the hypotenuse?",
+    "choices": [
+      "225 inches",
+      "10.5 inches",
+      "21 inches",
+      "15 inches",
+      "about 7.9 inches"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Pythagorean theorem: a^2 + b^2 = c^2, where c is the hypotenuse.",
+    "explanation": "1. 9^2 + 12^2 = 81 + 144 = 225.\n2. c = square root of 225 = 15 inches.\n\nCheck: 9, 12, 15 is 3 times the familiar 3-4-5 right triangle.\n\n**Wrong choices**\n- \"21 inches\": This adds the two legs. The hypotenuse is shorter than the sum of the legs.\n- \"about 7.9 inches\": This subtracts the squares (144 − 81). The hypotenuse is the LONGEST side, so the squares are added.\n- \"225 inches\": 225 is the square of the hypotenuse. Take the square root to get 15.\n- \"10.5 inches\": This averages the legs; the Pythagorean theorem does not work that way.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "Pythagorean theorem",
+      "right triangles"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        3,
+        4,
+        5
+      ],
+      "advanced": [
+        1,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-geometry-0006",
+    "certId": "praxis-core",
+    "subjectId": "mathematics",
+    "chapterId": "geometry",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A box is 8 inches long, 5 inches wide, and 3 inches high. What is its volume?",
+    "choices": [
+      "240 cubic inches",
+      "120 cubic inches",
+      "158 cubic inches",
+      "40 cubic inches",
+      "16 cubic inches"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Volume of a box = length × width × height (in cubic units).",
+    "explanation": "1. Volume = 8 × 5 × 3.\n2. 8 × 5 = 40, and 40 × 3 = 120 cubic inches.\n\nCheck: the base holds 40 one-inch cubes, and 3 layers make 120.\n\n**Wrong choices**\n- \"158 cubic inches\": 158 is the surface area (the area of all six faces), measured in square inches.\n- \"40 cubic inches\": This multiplies only two of the three measurements.\n- \"16 cubic inches\": This adds the measurements instead of multiplying.\n- \"240 cubic inches\": This doubles the volume, as if counting two layers.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "volume",
+      "rectangular prism"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ],
+      "advanced": [
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-geometry-0007",
+    "certId": "praxis-core",
+    "subjectId": "mathematics",
+    "chapterId": "geometry",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A 6-foot-tall person casts a 4-foot shadow. At the same time, a tree casts a 22-foot shadow. How tall is the tree?",
+    "choices": [
+      "about 14.7 feet",
+      "24 feet",
+      "33 feet",
+      "26 feet",
+      "132 feet"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Similar triangles have proportional sides: height/shadow is the same.",
+    "explanation": "1. The person's height is 6 ÷ 4 = 1.5 times the shadow.\n2. Tree height = 1.5 × 22 = 33 feet.\n\nCheck: 6/4 = 33/22, since both equal 1.5.\n\n**Wrong choices**\n- \"about 14.7 feet\": This sets the ratio upside down (22 × 4 ÷ 6). The tree's height must be greater than its shadow, just as the person's is.\n- \"24 feet\": This adds the 2-foot difference between the person and the shadow. Similar triangles use multiplication, not adding.\n- \"26 feet\": This adds 4 to the tree's shadow, which has no meaning here.\n- \"132 feet\": This multiplies 22 by 6 but forgets to divide by 4.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "similar triangles",
+      "proportion"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-geometry-0008",
+    "certId": "praxis-core",
+    "subjectId": "mathematics",
+    "chapterId": "geometry",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "The front wall of a shed is a 10-foot by 6-foot rectangle with a triangle on top. The triangle's base is the 10-foot top edge of the rectangle, and its height is 4 feet. What is the total area of the wall?",
+    "choices": [
+      "80 square feet",
+      "84 square feet",
+      "64 square feet",
+      "240 square feet",
+      "100 square feet"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Split a shape into parts, find each area, then add.",
+    "explanation": "1. Rectangle: 10 × 6 = 60 square feet.\n2. Triangle: 1/2 × 10 × 4 = 20 square feet.\n3. Total: 60 + 20 = 80 square feet.\n\nCheck: the triangle is half of a 10 × 4 rectangle (40), so 20 is right.\n\n**Wrong choices**\n- \"100 square feet\": This forgets that a triangle's area is HALF of base × height.\n- \"84 square feet\": This uses 6 feet as the triangle's base. The triangle sits on the 10-foot edge.\n- \"64 square feet\": This adds the triangle's height (4) instead of its area.\n- \"240 square feet\": This multiplies all three numbers, which would be a volume, not an area.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "area",
+      "composite figures"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        5
+      ],
+      "intermediate": [
+        1,
+        2,
+        5
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        5
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-geometry-0009",
+    "certId": "praxis-core",
+    "subjectId": "mathematics",
+    "chapterId": "geometry",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "If the radius of a circle is tripled, its area is multiplied by",
+    "choices": [
+      "27",
+      "3π",
+      "3",
+      "9",
+      "6"
+    ],
+    "answer": 4,
+    "oneLineConcept": "When lengths are multiplied by k, area is multiplied by k^2.",
+    "explanation": "1. Area = π × r^2.\n2. New area = π × (3r)^2 = π × 9r^2 = 9 × (π × r^2).\n\nCheck: r = 1 gives area π; r = 3 gives area 9π, which is 9 times as large.\n\n**Wrong choices**\n- \"3\": The radius triples, but area depends on the radius SQUARED.\n- \"6\": This doubles the factor 3 instead of squaring it.\n- \"27\": 27 is 3 cubed. That would apply to the volume of a sphere, not the area of a circle.\n- \"3π\": π appears in the area formula for both circles, so it cancels when comparing them.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "circles",
+      "area",
+      "scale factor"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        3,
+        4,
+        5
+      ],
+      "advanced": [
+        1,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-geometry-0010",
+    "certId": "praxis-core",
+    "subjectId": "mathematics",
+    "chapterId": "geometry",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A cylindrical can has a radius of 3 inches and a height of 10 inches. Using π ≈ 3.14, what is its volume?",
+    "choices": [
+      "90 cubic inches",
+      "282.6 cubic inches",
+      "188.4 cubic inches",
+      "94.2 cubic inches",
+      "1,130.4 cubic inches"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Volume of a cylinder = π × radius^2 × height.",
+    "explanation": "1. Radius squared: 3 × 3 = 9.\n2. Base area: 3.14 × 9 = 28.26 square inches.\n3. Volume: 28.26 × 10 = 282.6 cubic inches.\n\nCheck: 9 × 10 = 90, and 90 × 3.14 = 282.6.\n\n**Wrong choices**\n- \"188.4 cubic inches\": This uses 2 × radius (6) instead of radius squared (9).\n- \"94.2 cubic inches\": This uses the radius (3) instead of the radius squared (9).\n- \"1,130.4 cubic inches\": This squares the diameter (6 × 6 = 36) instead of the radius.\n- \"90 cubic inches\": This leaves out π.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "volume",
+      "cylinder"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ],
+      "advanced": [
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  }
+]

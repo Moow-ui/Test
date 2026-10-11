@@ -1,0 +1,516 @@
+[
+  {
+    "id": "praxis-core-algebra-0001",
+    "certId": "praxis-core",
+    "subjectId": "mathematics",
+    "chapterId": "algebra",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Solve for x: 4x − 7 = 21",
+    "choices": [
+      "x = 5.25",
+      "x = 112",
+      "x = 3.5",
+      "x = 7",
+      "x = 28"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Undo operations in reverse: add or subtract first, then divide.",
+    "explanation": "1. Add 7 to both sides: 4x = 28.\n2. Divide both sides by 4: x = 7.\n\nCheck: 4 × 7 − 7 = 28 − 7 = 21.\n\n**Wrong choices**\n- \"x = 3.5\": This subtracts 7 from 21 instead of adding: 4x = 14. To undo − 7, add 7 to both sides.\n- \"x = 28\": This adds 7 to get 4x = 28 but forgets to divide by 4.\n- \"x = 5.25\": This divides 21 by 4 without first moving the 7.\n- \"x = 112\": This multiplies 28 by 4 instead of dividing.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "linear equations"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        3,
+        4,
+        5
+      ],
+      "advanced": [
+        1,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-algebra-0002",
+    "certId": "praxis-core",
+    "subjectId": "mathematics",
+    "chapterId": "algebra",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What is the value of 3a^2 − 2b when a = 4 and b = 5?",
+    "choices": [
+      "134",
+      "38",
+      "43",
+      "58",
+      "14"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Exponents come before multiplying: 3a^2 means 3 × (a × a).",
+    "explanation": "1. a^2 = 4 × 4 = 16.\n2. 3a^2 = 3 × 16 = 48.\n3. 2b = 2 × 5 = 10.\n4. 48 − 10 = 38.\n\nCheck: 3 × 16 = 48 and 48 − 10 = 38.\n\n**Wrong choices**\n- \"43\": This subtracts only b (5) instead of 2b (10).\n- \"58\": This adds 2b instead of subtracting it.\n- \"14\": This doubles a instead of squaring it: 3 × 4 × 2 = 24, and 24 − 10 = 14.\n- \"134\": This squares 3a (12^2 = 144). Only a is squared, then multiplied by 3.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "expressions",
+      "evaluate"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ],
+      "advanced": [
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-algebra-0003",
+    "certId": "praxis-core",
+    "subjectId": "mathematics",
+    "chapterId": "algebra",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which equation represents the sentence \"Five less than twice a number n is 17\"?",
+    "choices": [
+      "5 − 2n = 17",
+      "2(n − 5) = 17",
+      "2n + 5 = 17",
+      "5n − 2 = 17",
+      "2n − 5 = 17"
+    ],
+    "answer": 5,
+    "oneLineConcept": "\"a less than b\" is written b − a.",
+    "explanation": "\"Twice a number\" is 2n. \"Five less than\" that is 2n − 5. \"Is 17\" means = 17, so the equation is 2n − 5 = 17.\n\nCheck: the solution n = 11 gives 2 × 11 − 5 = 17.\n\n**Wrong choices**\n- \"5 − 2n = 17\": \"Five less than\" something means subtract 5 FROM it, so the 5 comes second.\n- \"2(n − 5) = 17\": This subtracts 5 from the number before doubling. The sentence doubles the number first.\n- \"2n + 5 = 17\": \"Less than\" means subtract, not add.\n- \"5n − 2 = 17\": This switches the roles of 5 and 2. \"Twice\" means multiply by 2.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "translating words",
+      "equations"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        5
+      ],
+      "intermediate": [
+        1,
+        2,
+        5
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        5
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-algebra-0004",
+    "certId": "praxis-core",
+    "subjectId": "mathematics",
+    "chapterId": "algebra",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which inequality is the solution of x + 9 > 4?",
+    "choices": [
+      "x < −5",
+      "x > −5",
+      "x > 5",
+      "x < 13",
+      "x > 13"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Subtracting the same number from both sides keeps the inequality sign.",
+    "explanation": "1. Subtract 9 from both sides: x > 4 − 9.\n2. x > −5.\n\nCheck: x = 0 (which is greater than −5) gives 0 + 9 = 9 > 4, true.\n\n**Wrong choices**\n- \"x > 13\": This adds 9 to both sides instead of subtracting 9.\n- \"x < −5\": The sign flips only when you multiply or divide by a negative number. Subtracting 9 does not flip it.\n- \"x > 5\": 4 − 9 is −5, not 5.\n- \"x < 13\": This adds 9 and also flips the sign; both steps are wrong.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "inequalities"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        5
+      ],
+      "intermediate": [
+        1,
+        2,
+        5
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        5
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-algebra-0005",
+    "certId": "praxis-core",
+    "subjectId": "mathematics",
+    "chapterId": "algebra",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A gym charges a $25 sign-up fee plus $15 per month. Which expression gives the total cost, in dollars, for m months?",
+    "choices": [
+      "15m",
+      "25 − 15m",
+      "15 + 25m",
+      "40m",
+      "25 + 15m"
+    ],
+    "answer": 5,
+    "oneLineConcept": "One-time cost + (rate × number of periods).",
+    "explanation": "The $25 fee is paid once, and $15 is paid for each of the m months, so the total is 25 + 15m.\n\nCheck: for 2 months, 25 + 15 × 2 = $55, which is $25 + $15 + $15.\n\n**Wrong choices**\n- \"15 + 25m\": This switches the fees. The $15 is charged each month; the $25 is paid only once.\n- \"40m\": This charges the sign-up fee every month.\n- \"15m\": This leaves out the one-time $25 sign-up fee.\n- \"25 − 15m\": The monthly fee adds to the cost; it is not subtracted.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "expressions",
+      "word problem"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        5
+      ],
+      "intermediate": [
+        3,
+        4,
+        5
+      ],
+      "advanced": [
+        1,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-algebra-0006",
+    "certId": "praxis-core",
+    "subjectId": "mathematics",
+    "chapterId": "algebra",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Solve for x: 3(x − 4) = 2x + 5",
+    "choices": [
+      "x = −17",
+      "x = 9",
+      "x = 17",
+      "x = −7",
+      "x = 3.4"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Distribute, then move x terms to one side and numbers to the other.",
+    "explanation": "1. Distribute: 3x − 12 = 2x + 5.\n2. Subtract 2x from both sides: x − 12 = 5.\n3. Add 12 to both sides: x = 17.\n\nCheck: 3(17 − 4) = 3 × 13 = 39, and 2 × 17 + 5 = 39.\n\n**Wrong choices**\n- \"x = 9\": This multiplies only x by 3 and leaves −4, giving 3x − 4 = 2x + 5. The 3 must multiply both terms.\n- \"x = −7\": This subtracts 12 instead of adding it when moving it across: x = 5 − 12.\n- \"x = 3.4\": This adds 2x to the left side (5x = 17). To move 2x, subtract it from both sides.\n- \"x = −17\": This makes a sign error; checking −17 gives −63 on the left and −29 on the right.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "linear equations",
+      "distributive property"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ],
+      "advanced": [
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-algebra-0007",
+    "certId": "praxis-core",
+    "subjectId": "mathematics",
+    "chapterId": "algebra",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Solve the inequality: −3x + 4 ≤ 19",
+    "choices": [
+      "x ≥ −5",
+      "x ≤ −5",
+      "x ≥ 5",
+      "x ≤ 5",
+      "x ≥ −23/3"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Flip the inequality sign when you divide by a negative number.",
+    "explanation": "1. Subtract 4 from both sides: −3x ≤ 15.\n2. Divide by −3 and flip the sign: x ≥ −5.\n\nCheck: x = 0 (which is ≥ −5) gives 4 ≤ 19, true; x = −6 gives 22 ≤ 19, false.\n\n**Wrong choices**\n- \"x ≤ −5\": This forgets to flip the sign when dividing by −3.\n- \"x ≥ 5\": This drops the negative sign: 15 ÷ (−3) = −5, not 5.\n- \"x ≤ 5\": This loses the negative sign and also forgets to flip the inequality.\n- \"x ≥ −23/3\": This adds 4 to 19 instead of subtracting it.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "inequalities",
+      "negative numbers"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-algebra-0008",
+    "certId": "praxis-core",
+    "subjectId": "mathematics",
+    "chapterId": "algebra",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A school sold 50 tickets to a play. Adult tickets cost $12 and child tickets cost $7. Total sales were $500. How many adult tickets were sold?",
+    "choices": [
+      "25",
+      "42",
+      "71",
+      "30",
+      "20"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Write a count equation and a money equation, then substitute.",
+    "explanation": "1. Let a = adult tickets, so child tickets = 50 − a.\n2. Money: 12a + 7(50 − a) = 500 → 12a + 350 − 7a = 500.\n3. 5a = 150, so a = 30.\n\nCheck: 30 × $12 = $360 and 20 × $7 = $140; $360 + $140 = $500.\n\n**Wrong choices**\n- \"20\": 20 is the number of child tickets, not adult tickets.\n- \"25\": This assumes half of the tickets were for adults. That would give only $475.\n- \"42\": This divides $500 by $12, as if every ticket were an adult ticket.\n- \"71\": This divides $500 by $7, as if every ticket were a child ticket.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "word problem",
+      "systems of equations"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        4,
+        5
+      ],
+      "intermediate": [
+        1,
+        4,
+        5
+      ],
+      "advanced": [
+        1,
+        2,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-algebra-0009",
+    "certId": "praxis-core",
+    "subjectId": "mathematics",
+    "chapterId": "algebra",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "What is the slope of the line that passes through the points (2, 3) and (6, 11)?",
+    "choices": [
+      "2",
+      "3.5",
+      "−2",
+      "1/2",
+      "8"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Slope = (change in y) ÷ (change in x).",
+    "explanation": "1. Change in y: 11 − 3 = 8.\n2. Change in x: 6 − 2 = 4.\n3. Slope: 8 ÷ 4 = 2.\n\nCheck: starting at (2, 3), going 4 right and 8 up reaches (6, 11).\n\n**Wrong choices**\n- \"1/2\": This divides the change in x by the change in y. Slope is rise (y) over run (x).\n- \"8\": 8 is the rise (11 − 3). It must be divided by the run (6 − 2 = 4).\n- \"3.5\": This adds the y-values (11 + 3) instead of subtracting them.\n- \"−2\": Both y and x increase from one point to the other, so the slope is positive.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "slope",
+      "linear functions"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        4,
+        5
+      ],
+      "advanced": [
+        1,
+        2,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-algebra-0010",
+    "certId": "praxis-core",
+    "subjectId": "mathematics",
+    "chapterId": "algebra",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "The perimeter of a rectangle is P = 2L + 2W. Which expression gives W in terms of P and L?",
+    "choices": [
+      "W = 2P − 2L",
+      "W = P ÷ 2 − 2L",
+      "W = (P − L) ÷ 2",
+      "W = (P − 2L) ÷ 2",
+      "W = (P + 2L) ÷ 2"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Solve a formula for a letter the same way you solve an equation.",
+    "explanation": "1. Subtract 2L from both sides: P − 2L = 2W.\n2. Divide both sides by 2: W = (P − 2L) ÷ 2.\n\nCheck: with L = 5 and W = 3, P = 16; (16 − 10) ÷ 2 = 3.\n\n**Wrong choices**\n- \"W = P ÷ 2 − 2L\": This divides only P by 2. The whole quantity P − 2L must be divided by 2.\n- \"W = (P − L) ÷ 2\": This subtracts L instead of 2L.\n- \"W = (P + 2L) ÷ 2\": To move 2L to the other side, subtract it; do not add it.\n- \"W = 2P − 2L\": This multiplies P by 2 instead of dividing the result by 2.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "literal equations",
+      "formulas"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ],
+      "advanced": [
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-algebra-0011",
+    "certId": "praxis-core",
+    "subjectId": "mathematics",
+    "chapterId": "algebra",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "The sum of three consecutive even integers is 114. What is the largest of the three integers?",
+    "choices": [
+      "38",
+      "40",
+      "39",
+      "36",
+      "42"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Consecutive even integers are n, n + 2, and n + 4.",
+    "explanation": "1. n + (n + 2) + (n + 4) = 114.\n2. 3n + 6 = 114, so 3n = 108 and n = 36.\n3. The integers are 36, 38, 40. The largest is 40.\n\nCheck: 36 + 38 + 40 = 114.\n\n**Wrong choices**\n- \"38\": 38 is the middle integer, not the largest.\n- \"39\": This uses consecutive integers (n, n + 1, n + 2). Consecutive EVEN integers differ by 2.\n- \"36\": 36 is the smallest integer.\n- \"42\": This adds 6 to the smallest integer. The largest is n + 4.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "word problem",
+      "consecutive integers"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "praxis-core-algebra-0012",
+    "certId": "praxis-core",
+    "subjectId": "mathematics",
+    "chapterId": "algebra",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A phone plan costs $30 per month plus $0.10 for each text message. Dana wants her monthly bill to be no more than $45. What is the greatest number of text messages she can send in a month?",
+    "choices": [
+      "300",
+      "15",
+      "750",
+      "450",
+      "150"
+    ],
+    "answer": 5,
+    "oneLineConcept": "Write an inequality: fixed cost + rate × amount ≤ budget.",
+    "explanation": "1. 30 + 0.10t ≤ 45.\n2. Subtract 30: 0.10t ≤ 15.\n3. Divide by 0.10: t ≤ 150.\n\nCheck: 150 texts cost $15, and $30 + $15 = $45, exactly the limit.\n\n**Wrong choices**\n- \"450\": This divides the whole $45 by $0.10 and forgets the $30 monthly charge.\n- \"300\": This divides the $30 monthly charge by $0.10; that has nothing to do with the texts allowed.\n- \"15\": $15 is the money left for texts; it must be divided by $0.10 per text.\n- \"750\": This adds $30 and $45 and divides by $0.10.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "inequalities",
+      "word problem"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        4,
+        5
+      ],
+      "intermediate": [
+        1,
+        4,
+        5
+      ],
+      "advanced": [
+        1,
+        2,
+        4,
+        5
+      ]
+    }
+  }
+]
