@@ -1,0 +1,111 @@
+[
+  {
+    "id": "electrical-industrial-engineer-power-conversion-0001",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "electric-machines",
+    "chapterId": "power-conversion",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "교류 실효값 100V 를 다이오드로 단상 전파 정류했을 때 직류 평균 전압은 약 몇 V 인가?",
+    "choices": [
+      "45V",
+      "90V",
+      "약 141V",
+      "100V"
+    ],
+    "answer": 2,
+    "oneLineConcept": "단상 전파 Ed = 0.9E, 반파 Ed = 0.45E",
+    "explanation": "1. 단상 전파 정류의 직류 평균 전압 Ed = 0.9 × E\n2. Ed = 0.9 × 100 = 90V\n\n검산: 반파 정류는 절반만 쓰므로 45V, 전파는 그 두 배인 90V 입니다.\n\n**틀린 선지**\n- 45V: 단상 반파 정류(0.45E)의 값입니다.\n- 약 141V: 교류의 최대값(100 × √2)입니다.\n- 100V: 교류 실효값 그대로입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "단상 전파 정류",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-power-conversion-0002",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "electric-machines",
+    "chapterId": "power-conversion",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "교류 전력을 주파수가 다른 교류 전력으로 직접 바꾸는 전력 변환 장치는?",
+    "choices": [
+      "인버터",
+      "초퍼",
+      "사이클로컨버터",
+      "정류기(컨버터)"
+    ],
+    "answer": 3,
+    "oneLineConcept": "사이클로컨버터: 교류 → 다른 주파수 교류(직접)",
+    "explanation": "전력 변환 장치는 무엇을 무엇으로 바꾸는지로 구분합니다. 정류기는 교류→직류, 인버터는 직류→교류, 초퍼는 직류→직류입니다. **사이클로컨버터**는 직류를 거치지 않고 교류를 주파수가 다른 교류로 바로 바꿉니다.\n\n**틀린 선지**\n- 인버터: 직류를 교류로 바꾸는 장치입니다.\n- 초퍼: 직류 전압의 크기를 바꾸는 직류-직류 변환 장치입니다.\n- 정류기(컨버터): 교류를 직류로 바꾸는 장치입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "사이클로컨버터",
+      "전력 변환"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-power-conversion-0003",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "electric-machines",
+    "chapterId": "power-conversion",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "단상 반파 정류 회로에서 사이리스터(SCR)의 점호각(켜는 시점)을 60° 로 했다. 교류 실효값이 200V 이고 부하가 저항뿐일 때 직류 평균 전압은 몇 V 인가?",
+    "choices": [
+      "90V",
+      "45V",
+      "135V",
+      "67.5V"
+    ],
+    "answer": 4,
+    "oneLineConcept": "단상 반파 위상 제어 Ed = 0.45E × (1 + cosα) ÷ 2",
+    "explanation": "1. cos60° = 0.5\n2. (1 + cosα) ÷ 2 = (1 + 0.5) ÷ 2 = 0.75\n3. Ed = 0.45 × 200 × 0.75 = 90 × 0.75 = 67.5V\n\n검산: 점호각이 0° 면 90V, 점호각 60° 에서는 그 75% 인 67.5V 로 맞습니다.\n\n**틀린 선지**\n- 90V: 점호각을 0° 로 본 값(0.45 × 200)입니다.\n- 45V: (1 + cosα) ÷ 2 대신 cosα 만 곱한 값입니다.\n- 135V: 단상 전파 정류의 0.9 를 쓴 값입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "SCR",
+      "위상 제어",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  }
+]

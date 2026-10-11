@@ -1,0 +1,147 @@
+[
+  {
+    "id": "electrical-industrial-engineer-generation-0001",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "power-engineering",
+    "chapterId": "generation",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "기본적인 랭킨 사이클(증기 화력 발전의 기본 순환)에서 물과 증기가 지나가는 순서로 옳은 것은?",
+    "choices": [
+      "급수 펌프 → 터빈 → 보일러 → 과열기 → 복수기",
+      "보일러 → 복수기 → 과열기 → 터빈 → 급수 펌프",
+      "급수 펌프 → 과열기 → 보일러 → 복수기 → 터빈",
+      "급수 펌프 → 보일러 → 과열기 → 터빈 → 복수기"
+    ],
+    "answer": 4,
+    "oneLineConcept": "랭킨 사이클: 펌프 → 보일러 → 과열기 → 터빈 → 복수기",
+    "explanation": "급수 펌프가 물을 보일러로 밀어 넣고, 보일러에서 물이 증기가 됩니다. 과열기에서 증기를 더 뜨겁게 만든 뒤 터빈을 돌립니다. 일을 마친 증기는 복수기에서 다시 물이 되어 펌프로 돌아갑니다.\n\n**틀린 선지**\n- 급수 펌프 → 터빈 → 보일러 → 과열기 → 복수기: 물은 먼저 보일러에서 증기가 되어야 터빈을 돌릴 수 있습니다.\n- 보일러 → 복수기 → 과열기 → 터빈 → 급수 펌프: 복수기는 터빈을 돌고 나온 증기를 물로 되돌리는 곳이라 터빈 뒤에 있습니다.\n- 급수 펌프 → 과열기 → 보일러 → 복수기 → 터빈: 과열기는 보일러에서 만든 증기를 더 가열하므로 보일러 뒤에 있습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "랭킨 사이클",
+      "화력 발전"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-generation-0002",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "power-engineering",
+    "chapterId": "generation",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "터빈에서 일부 팽창한 증기를 다시 보일러로 보내 가열한 뒤 나머지 터빈에서 일을 하게 하는 사이클은?",
+    "choices": [
+      "재생 사이클",
+      "카르노 사이클",
+      "브레이턴 사이클",
+      "재열 사이클"
+    ],
+    "answer": 4,
+    "oneLineConcept": "재열: 증기를 다시 가열 / 재생: 추기로 급수 가열",
+    "explanation": "'재열(再熱)'은 다시 가열한다는 뜻입니다. 터빈에서 일하고 온도가 떨어진 증기를 보일러의 재열기로 보내 다시 데운 뒤 저압 터빈에 보냅니다. 증기가 너무 일찍 물방울이 되어 터빈 날개를 상하게 하는 것을 막고 효율을 높입니다.\n\n**틀린 선지**\n- 재생 사이클: 터빈 중간에서 증기 일부를 빼내어(추기) 보일러 급수를 데우는 사이클입니다.\n- 카르노 사이클: 이론상 최고 효율을 나타내는 이상적인 사이클로, 실제 발전소 설비 방식이 아닙니다.\n- 브레이턴 사이클: 가스 터빈의 기본 사이클입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "재열 사이클",
+      "화력 발전"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-generation-0003",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "power-engineering",
+    "chapterId": "generation",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "원자로에서 중성자를 흡수하여 핵분열 반응의 세기를 조절하는 제어봉 재료로 쓰는 것은?",
+    "choices": [
+      "흑연",
+      "중수",
+      "베릴륨",
+      "붕소"
+    ],
+    "answer": 4,
+    "oneLineConcept": "제어재: 붕소·카드뮴·하프늄 (중성자 흡수)",
+    "explanation": "제어봉은 중성자를 **잘 흡수하는** 물질로 만듭니다. 대표적인 재료가 붕소, 카드뮴, 하프늄입니다. 제어봉을 깊이 넣으면 중성자가 많이 흡수되어 반응이 약해지고, 빼면 반응이 강해집니다.\n\n**틀린 선지**\n- 흑연: 중성자의 속도를 늦추는 감속재로 씁니다.\n- 중수: 중성자를 잘 흡수하지 않아 감속재로 씁니다.\n- 베릴륨: 중성자를 노심 안으로 되돌려 보내는 반사재나 감속재로 씁니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "원자력 발전",
+      "제어재"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-generation-0004",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "power-engineering",
+    "chapterId": "generation",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "양수 발전소에서 양수량 10m³/s 의 물을 전양정(물을 끌어올리는 전체 높이) 40m 로 끌어올린다. 펌프와 전동기의 종합 효율이 80% 일 때 필요한 전동기 입력은 몇 kW 인가?",
+    "choices": [
+      "3,920kW",
+      "4,900kW",
+      "3,136kW",
+      "500kW"
+    ],
+    "answer": 2,
+    "oneLineConcept": "양수 펌프 입력 P = 9.8QH ÷ η",
+    "explanation": "1. 물을 끌어올리는 데 드는 동력 = 9.8 × Q × H = 9.8 × 10 × 40 = 3,920kW\n2. 효율 80% 를 고려하면 입력 = 3,920 ÷ 0.8 = 4,900kW\n\n검산: 4,900 × 0.8 = 3,920kW 로 맞습니다. 발전할 때는 효율을 곱하고, 끌어올릴 때는 효율로 나눕니다.\n\n**틀린 선지**\n- 3,920kW: 효율을 고려하지 않은 값입니다. 손실이 있으므로 입력은 이보다 커야 합니다.\n- 3,136kW: 효율로 나누지 않고 곱한 값입니다. 끌어올리는 쪽은 효율로 나눕니다.\n- 500kW: 9.8 을 곱하지 않은 값입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "양수 발전",
+      "펌프 입력",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+]

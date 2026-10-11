@@ -1,0 +1,257 @@
+[
+  {
+    "id": "electrical-industrial-engineer-induction-motor-0001",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "electric-machines",
+    "chapterId": "induction-motor",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "6극, 60Hz 인 3상 유도 전동기가 슬립 3% 로 운전하고 있다. 회전 속도는 몇 rpm 인가?",
+    "choices": [
+      "1,200rpm",
+      "1,236rpm",
+      "1,746rpm",
+      "1,164rpm"
+    ],
+    "answer": 4,
+    "oneLineConcept": "N = Ns × (1 - s), Ns = 120f ÷ p",
+    "explanation": "1. 동기 속도 Ns = 120 × 60 ÷ 6 = 1,200rpm\n2. N = 1,200 × (1 - 0.03) = 1,200 × 0.97\n3. N = 1,164rpm\n\n검산: (1,200 - 1,164) ÷ 1,200 = 36 ÷ 1,200 = 0.03 으로 맞습니다.\n\n**틀린 선지**\n- 1,200rpm: 동기 속도입니다. 유도 전동기는 슬립만큼 느리게 돕니다.\n- 1,236rpm: 슬립만큼 더한 값입니다. 전동기는 동기 속도보다 느립니다.\n- 1,746rpm: 4극으로 계산한 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "슬립",
+      "회전 속도",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-induction-motor-0002",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "electric-machines",
+    "chapterId": "induction-motor",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "3상 유도 전동기의 2차 입력이 20kW, 슬립이 5% 일 때 기계적 출력은 몇 kW 인가?",
+    "choices": [
+      "1kW",
+      "20kW",
+      "19kW",
+      "21kW"
+    ],
+    "answer": 3,
+    "oneLineConcept": "P2 : Pc2 : Po = 1 : s : (1 - s)",
+    "explanation": "1. 기계적 출력 Po = P2 × (1 - s)\n2. Po = 20 × (1 - 0.05) = 20 × 0.95 = 19kW\n\n검산: 2차 동손 1kW + 출력 19kW = 20kW 로 2차 입력과 같습니다.\n\n**틀린 선지**\n- 1kW: 2차 동손입니다(20 × 0.05).\n- 20kW: 2차 입력 그대로입니다. 2차 동손을 빼야 합니다.\n- 21kW: 2차 동손을 더한 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "2차 입력",
+      "기계적 출력",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-induction-motor-0003",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "electric-machines",
+    "chapterId": "induction-motor",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "3상 유도 전동기의 회전 방향을 반대로 바꾸는 방법으로 옳은 것은?",
+    "choices": [
+      "전원 3선 가운데 임의의 2선을 서로 바꾸어 연결한다",
+      "전원 3선을 모두 한 칸씩 돌려 연결한다",
+      "전원 전압을 낮춘다",
+      "전원 주파수를 높인다"
+    ],
+    "answer": 1,
+    "oneLineConcept": "3상 중 2선 교체 → 회전 자계 방향 반대",
+    "explanation": "유도 전동기는 3상 전류가 만드는 회전 자계를 따라 돕니다. 3선 가운데 아무 2선이나 서로 바꾸면 상의 순서가 바뀌어 회전 자계가 반대로 돌고, 전동기도 반대로 회전합니다.\n\n**틀린 선지**\n- 전원 3선을 모두 한 칸씩 돌려 연결한다: 3선을 차례로 돌리면 상의 순서가 그대로여서 회전 방향이 바뀌지 않습니다.\n- 전원 전압을 낮춘다: 속도와 토크가 줄 뿐 방향은 바뀌지 않습니다.\n- 전원 주파수를 높인다: 속도가 빨라질 뿐 방향은 바뀌지 않습니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "회전 방향"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-induction-motor-0004",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "electric-machines",
+    "chapterId": "induction-motor",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "권선형 유도 전동기의 2차 1상 저항이 0.02Ω 이고, 최대 토크가 슬립 0.2 에서 생긴다. 기동할 때(슬립 1) 최대 토크가 나오게 하려면 2차 1상에 넣어야 할 외부 저항은 몇 Ω 인가?",
+    "choices": [
+      "0.1Ω",
+      "0.004Ω",
+      "0.08Ω",
+      "0.18Ω"
+    ],
+    "answer": 3,
+    "oneLineConcept": "비례 추이: r2 ÷ s = (r2 + R) ÷ s′",
+    "explanation": "1. 비례 추이: 2차 저항 ÷ 슬립 이 같으면 같은 토크가 나옵니다.\n2. 0.02 ÷ 0.2 = (0.02 + R) ÷ 1\n3. 0.1 = 0.02 + R\n4. R = 0.08Ω\n\n검산: (0.02 + 0.08) ÷ 1 = 0.1, 0.02 ÷ 0.2 = 0.1 로 같습니다.\n\n**틀린 선지**\n- 0.1Ω: 2차 회로의 전체 저항입니다. 원래 있는 2차 저항 0.02Ω 을 빼야 합니다.\n- 0.004Ω: 저항에 슬립을 곱한 값입니다. 비례 추이는 '저항 ÷ 슬립'이 같아야 합니다.\n- 0.18Ω: 슬립 0.2 에서 저항 0.02 를 뺀 값으로, 비례 추이 식과 관계없습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "비례 추이",
+      "기동 토크",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-induction-motor-0005",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "electric-machines",
+    "chapterId": "induction-motor",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "60Hz 전원에 연결된 3상 유도 전동기가 슬립 4% 로 운전할 때 회전자(2차) 전류의 주파수는 몇 Hz 인가?",
+    "choices": [
+      "57.6Hz",
+      "60Hz",
+      "0.24Hz",
+      "2.4Hz"
+    ],
+    "answer": 4,
+    "oneLineConcept": "2차 주파수 f2 = s × f1",
+    "explanation": "1. f2 = s × f1\n2. f2 = 0.04 × 60 = 2.4Hz\n\n검산: 회전자가 동기 속도에 가까울수록 2차 주파수는 0 에 가까워집니다. 2.4Hz 는 60Hz 보다 훨씬 작아 맞는 방향입니다.\n\n**틀린 선지**\n- 57.6Hz: 60 × (1 - 0.04) 를 계산한 값입니다. 2차 주파수는 슬립을 곱합니다.\n- 60Hz: 회전자가 정지해 있을(슬립 1) 때의 2차 주파수입니다.\n- 0.24Hz: 4% 를 0.004 로 잘못 넣은 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "2차 주파수",
+      "슬립",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-induction-motor-0006",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "electric-machines",
+    "chapterId": "induction-motor",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "권선형 유도 전동기에 주로 쓰는 기동 방법은?",
+    "choices": [
+      "Y-Δ 기동법",
+      "2차 저항 기동법(기동 저항기 사용)",
+      "기동 보상기법",
+      "리액터 기동법"
+    ],
+    "answer": 2,
+    "oneLineConcept": "권선형: 2차 저항 기동 / 농형: Y-Δ·기동 보상기·리액터",
+    "explanation": "권선형 유도 전동기는 회전자 권선이 슬립 링으로 밖에 연결되어 있어 2차 회로에 저항을 넣을 수 있습니다. 기동할 때 저항을 넣으면 **기동 전류는 줄고 기동 토크는 커집니다**(비례 추이). 속도가 오르면 저항을 차례로 빼냅니다.\n\n**틀린 선지**\n- Y-Δ 기동법: 농형 유도 전동기의 기동 방법입니다.\n- 기동 보상기법: 단권 변압기로 전압을 낮추는 농형 유도 전동기의 기동 방법입니다.\n- 리액터 기동법: 1차에 리액터를 넣는 농형 유도 전동기의 기동 방법입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "기동법",
+      "권선형"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-induction-motor-0007",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "electric-machines",
+    "chapterId": "induction-motor",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "3상 유도 전동기의 1차 입력이 60kW, 1차 손실(1차 동손 + 철손)이 1kW, 슬립이 3% 일 때 기계적 출력은 몇 kW 인가?",
+    "choices": [
+      "58.2kW",
+      "57.23kW",
+      "59kW",
+      "1.77kW"
+    ],
+    "answer": 2,
+    "oneLineConcept": "2차 입력 = 1차 입력 - 1차 손실, Po = P2(1 - s)",
+    "explanation": "1. 2차 입력 P2 = 60 - 1 = 59kW\n2. 2차 동손 = 59 × 0.03 = 1.77kW\n3. 기계적 출력 Po = 59 - 1.77 = 57.23kW\n\n검산: 59 × 0.97 = 57.23kW 로 같습니다.\n\n**틀린 선지**\n- 58.2kW: 1차 손실을 빼지 않고 60kW 에 (1 - s) 를 곱한 값입니다.\n- 59kW: 2차 입력입니다. 2차 동손을 더 빼야 합니다.\n- 1.77kW: 2차 동손입니다(59 × 0.03).",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "출력 계산",
+      "손실"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+]

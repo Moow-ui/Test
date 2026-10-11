@@ -1,0 +1,362 @@
+[
+  {
+    "id": "electrical-industrial-engineer-transmission-0001",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "power-engineering",
+    "chapterId": "transmission",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "3상 3선식 송전 선로에 전류 100A 가 흐르고 있다. 1선의 저항이 2Ω, 리액턴스가 4Ω, 부하 역률이 0.8(지상)일 때 선로의 전압 강하는 약 몇 V 인가?",
+    "choices": [
+      "400V",
+      "약 762V",
+      "약 693V",
+      "1,200V"
+    ],
+    "answer": 3,
+    "oneLineConcept": "3상 전압 강하 e = √3 I(Rcosθ + Xsinθ)",
+    "explanation": "1. 역률 0.8 이면 sinθ = 0.6 입니다.\n2. Rcosθ + Xsinθ = 2 × 0.8 + 4 × 0.6 = 1.6 + 2.4 = 4\n3. e = √3 × 100 × 4 = 약 692.8V → 약 693V\n\n검산: 693 ÷ 1.732 ≈ 400, 400 ÷ 100 = 4 로 맞습니다.\n\n**틀린 선지**\n- 400V: √3 을 곱하지 않은 값입니다. 3상 선간 전압 강하는 √3 을 곱해야 합니다.\n- 약 762V: cosθ 와 sinθ 를 바꾸어 넣은 값입니다. 저항에는 cosθ, 리액턴스에는 sinθ 를 곱합니다.\n- 1,200V: √3 대신 3 을 곱한 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "전압 강하",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-transmission-0002",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "power-engineering",
+    "chapterId": "transmission",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "송전 선로에서 코로나(전선 주위 공기가 절연을 잃고 빛과 소리를 내며 방전하는 현상)가 가장 잘 생기는 조건은?",
+    "choices": [
+      "비가 오고 기압이 낮은 날",
+      "맑고 기압이 높은 날",
+      "굵은 전선을 쓴 경우",
+      "복도체를 쓴 경우"
+    ],
+    "answer": 1,
+    "oneLineConcept": "코로나 임계 전압은 기압이 낮고 날씨가 나쁘면 낮아진다",
+    "explanation": "코로나가 시작되는 전압(코로나 임계 전압)이 **낮을수록** 코로나가 잘 생깁니다. 비·눈·안개가 있거나 기압이 낮아 공기가 묽으면 공기의 절연이 약해져 임계 전압이 낮아집니다. 그래서 비가 오고 기압이 낮은 날 코로나가 가장 잘 생깁니다.\n\n**틀린 선지**\n- 맑고 기압이 높은 날: 공기가 맑고 밀도가 높으면 절연이 강해져 코로나가 잘 생기지 않습니다.\n- 굵은 전선을 쓴 경우: 전선이 굵으면 표면의 전기적 압력(전위 경도)이 낮아져 코로나가 줄어듭니다.\n- 복도체를 쓴 경우: 복도체는 전선을 겉보기로 굵게 만드는 효과가 있어 코로나를 줄입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "코로나"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-transmission-0003",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "power-engineering",
+    "chapterId": "transmission",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "송전단 전압이 6,300V, 수전단 전압이 6,000V 인 배전 선로의 전압 강하율은 몇 % 인가?",
+    "choices": [
+      "5%",
+      "약 4.8%",
+      "0.5%",
+      "10%"
+    ],
+    "answer": 1,
+    "oneLineConcept": "전압 강하율 = (송전단 - 수전단) ÷ 수전단 × 100",
+    "explanation": "1. 전압 강하 = 6,300 - 6,000 = 300V\n2. 전압 강하율 = 300 ÷ 6,000 × 100 = 5%\n\n검산: 6,000V 의 5% 는 300V 이고, 6,000 + 300 = 6,300V 로 송전단 전압과 같습니다.\n\n**틀린 선지**\n- 약 4.8%: 송전단 전압 6,300V 로 나눈 값입니다. 전압 강하율은 수전단 전압으로 나눕니다.\n- 0.5%: 소수점 자리를 잘못 옮긴 값입니다.\n- 10%: 계산이 틀린 값입니다. 300V 는 6,000V 의 5% 입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "전압 강하율",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-transmission-0004",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "power-engineering",
+    "chapterId": "transmission",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "3상 3선식 선로에서 1선의 저항이 4Ω 이고 선로 전류가 50A 일 때, 선로 전체의 전력 손실은 몇 kW 인가?",
+    "choices": [
+      "10kW",
+      "약 17.3kW",
+      "30kW",
+      "20kW"
+    ],
+    "answer": 3,
+    "oneLineConcept": "3상 3선식 전력 손실 = 3 × I² × R",
+    "explanation": "1. 전선 1가닥의 손실 = I² × R = 50² × 4 = 2,500 × 4 = 10,000W\n2. 전선이 3가닥이므로 3 × 10,000 = 30,000W\n3. 30,000W = 30kW\n\n검산: 30,000 ÷ 3 ÷ 4 = 2,500 = 50² 으로 맞습니다.\n\n**틀린 선지**\n- 10kW: 전선 1가닥의 손실만 구한 값입니다. 3상 3선식은 전선이 3가닥이므로 3배를 해야 합니다.\n- 약 17.3kW: 3 대신 √3 을 곱한 값입니다. 손실은 전선 가닥 수만큼 곱합니다.\n- 20kW: 전선을 2가닥(단상 2선식)으로 계산한 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "전력 손실",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-transmission-0005",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "power-engineering",
+    "chapterId": "transmission",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "가공 송전 선로에서 전선과 전선 사이의 거리(선간 거리)를 넓히면 선로의 인덕턴스와 정전용량은 어떻게 되는가?",
+    "choices": [
+      "인덕턴스는 작아지고, 정전용량은 커진다",
+      "인덕턴스와 정전용량이 모두 커진다",
+      "인덕턴스와 정전용량이 모두 작아진다",
+      "인덕턴스는 커지고, 정전용량은 작아진다"
+    ],
+    "answer": 4,
+    "oneLineConcept": "선간 거리↑ → 인덕턴스↑, 정전용량↓",
+    "explanation": "인덕턴스는 선간 거리 D 와 전선 반지름 r 의 비(D/r)의 로그에 **비례**하고, 정전용량은 그 값에 **반비례**합니다. 그래서 선간 거리를 넓히면 인덕턴스는 커지고 정전용량은 작아집니다. 인덕턴스와 정전용량은 늘 서로 반대로 움직인다고 기억하면 쉽습니다.\n\n**틀린 선지**\n- 인덕턴스는 작아지고, 정전용량은 커진다: 반대로 적은 것입니다. 이것은 선간 거리를 좁히거나 복도체를 쓸 때의 변화입니다.\n- 인덕턴스와 정전용량이 모두 커진다: 선간 거리가 넓어지면 두 전선이 서로 멀어지므로 정전용량은 줄어듭니다.\n- 인덕턴스와 정전용량이 모두 작아진다: 선간 거리가 넓어지면 인덕턴스는 오히려 커집니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "선로 정수",
+      "인덕턴스"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-transmission-0006",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "power-engineering",
+    "chapterId": "transmission",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "중거리 송전 선로(대략 수십 km ~ 100km 정도)의 특성을 계산할 때 주로 쓰는 등가 회로는?",
+    "choices": [
+      "저항과 인덕턴스만 직렬로 둔 회로",
+      "T형 회로 또는 π형 회로",
+      "분포 정수 회로",
+      "정전용량만 둔 회로"
+    ],
+    "answer": 2,
+    "oneLineConcept": "단거리: R·L 직렬, 중거리: T형·π형, 장거리: 분포 정수",
+    "explanation": "선로의 길이에 따라 계산 방법이 달라집니다. 짧은 선로는 정전용량을 무시하고 저항과 인덕턴스만 봅니다. 중거리 선로는 정전용량도 고려하되, 한두 곳에 모아 놓은 것(집중 정수)으로 보아 **T형 회로나 π형 회로**로 계산합니다. 긴 선로는 분포 정수 회로로 계산합니다.\n\n**틀린 선지**\n- 저항과 인덕턴스만 직렬로 둔 회로: 정전용량을 무시하는 단거리 선로의 계산 방법입니다.\n- 분포 정수 회로: 선로 정수가 선로 전체에 고르게 퍼져 있다고 보는 장거리 선로의 계산 방법입니다.\n- 정전용량만 둔 회로: 저항과 인덕턴스를 빼면 전압 강하를 계산할 수 없습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "선로 해석",
+      "중거리 선로"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-transmission-0007",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "power-engineering",
+    "chapterId": "transmission",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "송전단 전압과 수전단 전압이 모두 110kV, 선로의 리액턴스가 55Ω, 두 전압의 위상차(상차각)가 30° 일 때 송전 전력은 몇 MW 인가? (저항은 무시한다)",
+    "choices": [
+      "220MW",
+      "약 190.5MW",
+      "110MW",
+      "약 63.5MW"
+    ],
+    "answer": 3,
+    "oneLineConcept": "송전 전력 P = (Vs × Vr ÷ X) × sinδ",
+    "explanation": "1. Vs × Vr ÷ X = 110 × 110 ÷ 55 = 12,100 ÷ 55 = 220 (kV² ÷ Ω = MW)\n2. sin30° = 0.5\n3. P = 220 × 0.5 = 110MW\n\n검산: 110 × 55 ÷ 12,100 = 0.5 = sin30° 로 맞습니다.\n\n**틀린 선지**\n- 220MW: sin30° 를 곱하지 않은 값입니다.\n- 약 190.5MW: sin30° 대신 cos30° 를 곱한 값입니다.\n- 약 63.5MW: √3 으로 한 번 더 나눈 값입니다. 선간 전압(kV)을 그대로 쓰면 3상 전력이 바로 나옵니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "송전 전력",
+      "안정도",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-transmission-0008",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "power-engineering",
+    "chapterId": "transmission",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "교류 송전과 비교한 직류 송전(HVDC)의 장점으로 옳은 것은?",
+    "choices": [
+      "리액턴스에 의한 전압 강하가 없고 안정도 문제가 적다",
+      "변압기로 전압을 쉽게 바꿀 수 있다",
+      "전류를 차단하기가 교류보다 쉽다",
+      "회전 자계를 쉽게 만들 수 있다"
+    ],
+    "answer": 1,
+    "oneLineConcept": "직류 송전: 리액턴스·안정도 문제 없음, 변압·차단이 어려움",
+    "explanation": "직류에는 주파수가 없으므로 선로의 리액턴스가 작용하지 않습니다. 그래서 리액턴스에 의한 전압 강하가 없고, 발전기들이 박자를 맞춰야 하는 **안정도** 문제도 적어 먼 거리 송전에 유리합니다. 반면 전압을 바꾸려면 변환 장치가 필요하고 전류 차단이 어렵습니다.\n\n**틀린 선지**\n- 변압기로 전압을 쉽게 바꿀 수 있다: 교류 송전의 장점입니다. 직류는 변압기로 전압을 바꿀 수 없습니다.\n- 전류를 차단하기가 교류보다 쉽다: 직류는 전류가 0 이 되는 순간이 없어 오히려 차단하기 어렵습니다.\n- 회전 자계를 쉽게 만들 수 있다: 회전 자계는 3상 교류로 만듭니다. 교류의 장점입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "직류 송전"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-transmission-0009",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "power-engineering",
+    "chapterId": "transmission",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "선간 전압 154kV, 주파수 60Hz 인 3상 송전 선로의 1선당 작용 정전용량이 0.01μF/km 이고 선로 길이가 100km 이다. 1선에 흐르는 충전 전류는 약 몇 A 인가?",
+    "choices": [
+      "약 58.1A",
+      "약 19.4A",
+      "약 33.5A",
+      "약 0.34A"
+    ],
+    "answer": 3,
+    "oneLineConcept": "충전 전류 Ic = ωC × (V ÷ √3)",
+    "explanation": "1. 전체 정전용량 C = 0.01μF × 100km = 1μF\n2. 상전압 E = 154,000 ÷ √3 ≈ 88,912V\n3. ω = 2π × 60 ≈ 377\n4. Ic = 377 × 0.000001 × 88,912 ≈ 33.5A\n\n검산: 33.5 ÷ 377 ÷ 0.000001 ≈ 88,860V 로 상전압과 거의 같습니다.\n\n**틀린 선지**\n- 약 58.1A: 선간 전압 154kV 를 그대로 넣은 값입니다. 충전 전류는 상전압(선간 전압 ÷ √3)으로 계산합니다.\n- 약 19.4A: √3 으로 한 번 더 나눈 값입니다.\n- 약 0.34A: 선로 길이 100km 를 곱하지 않은 값입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "충전 전류",
+      "정전용량",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-transmission-0010",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "power-engineering",
+    "chapterId": "transmission",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "경간(전선을 받치는 두 지지물 사이 거리)이 200m, 전선 1m 당 무게(하중)가 20N, 전선의 수평 장력이 20,000N 일 때 전선의 이도(늘어진 깊이)는 몇 m 인가?",
+    "choices": [
+      "5m",
+      "2.5m",
+      "10m",
+      "20m"
+    ],
+    "answer": 1,
+    "oneLineConcept": "이도 D = W × S² ÷ (8T)",
+    "explanation": "1. S² = 200² = 40,000\n2. W × S² = 20 × 40,000 = 800,000\n3. 8T = 8 × 20,000 = 160,000\n4. D = 800,000 ÷ 160,000 = 5m\n\n검산: 이도는 경간의 제곱에 비례하므로 경간이 크면 이도가 빠르게 커집니다. 5m 는 200m 경간에 알맞은 값입니다.\n\n**틀린 선지**\n- 2.5m: 8 대신 16 으로 나눈 값입니다.\n- 10m: 8 대신 4 로 나눈 값입니다.\n- 20m: 8 대신 2 로 나눈 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "이도",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+]

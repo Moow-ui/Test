@@ -1,0 +1,291 @@
+[
+  {
+    "id": "electrical-industrial-engineer-three-phase-0001",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "circuit-theory",
+    "chapterId": "three-phase",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "선간 전압이 380V 인 평형 3상 Y 결선 전원의 상전압은 약 몇 V 인가?",
+    "choices": [
+      "380V",
+      "220V",
+      "127V",
+      "658V"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Y 결선: 상전압 = 선간 전압 ÷ √3",
+    "explanation": "Y 결선에서는 선간 전압이 상전압의 √3 배입니다.\n1. 상전압 = 380 ÷ √3\n2. = 380 ÷ 1.732 ≒ 219V, 약 220V\n3. 확인: 220 × 1.732 ≒ 381V 로 선간 전압과 맞습니다.\n\n**틀린 선지**\n- 380V: Δ 결선처럼 상전압과 선간 전압이 같다고 본 값입니다.\n- 658V: √3 으로 나누지 않고 곱한 값입니다.\n- 127V: √3 으로 두 번 나눈 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "Y 결선",
+      "3상"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-three-phase-0002",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "circuit-theory",
+    "chapterId": "three-phase",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "평형 3상 Δ 결선 부하의 상전류가 10A 일 때 선전류는 약 몇 A 인가?",
+    "choices": [
+      "10A",
+      "30A",
+      "5.77A",
+      "17.3A"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Δ 결선: 선전류 = √3 × 상전류",
+    "explanation": "Δ 결선에서는 전압은 선간과 상이 같고, 전류는 선전류가 상전류의 √3 배입니다.\n1. 선전류 = √3 × 10\n2. = 1.732 × 10 ≒ 17.3A\n3. 확인: Y 결선은 반대로 전류가 같고 전압이 √3 배입니다.\n\n**틀린 선지**\n- 10A: Y 결선처럼 선전류와 상전류가 같다고 본 값입니다.\n- 5.77A: √3 을 곱하지 않고 나눈 값입니다.\n- 30A: √3 대신 3을 곱한 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "Δ 결선",
+      "3상"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-three-phase-0003",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "circuit-theory",
+    "chapterId": "three-phase",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "테브난의 정리에 따라 복잡한 회로를 바꾸어 나타낸 등가 회로의 구성으로 옳은 것은?",
+    "choices": [
+      "하나의 전류원과 병렬로 연결된 임피던스",
+      "하나의 전압원과 직렬로 연결된 임피던스",
+      "하나의 전압원과 병렬로 연결된 임피던스",
+      "하나의 전류원과 직렬로 연결된 임피던스"
+    ],
+    "answer": 2,
+    "oneLineConcept": "테브난 = 전압원 + 직렬 임피던스, 노튼 = 전류원 + 병렬 임피던스",
+    "explanation": "**테브난의 정리**는 복잡한 회로를 **전압원 하나와 직렬 임피던스 하나**로 바꾸는 방법입니다. 전압원은 단자를 열었을 때의 전압, 임피던스는 전원을 없앴을 때(전압원은 단락, 전류원은 개방) 단자에서 본 임피던스입니다. 같은 회로를 **전류원과 병렬 임피던스**로 바꾸는 것은 노튼의 정리입니다.\n\n**틀린 선지**\n- 하나의 전류원과 병렬로 연결된 임피던스: 노튼의 정리에 따른 등가 회로입니다.\n- 하나의 전압원과 병렬로 연결된 임피던스: 전압원에 병렬로 붙은 임피던스는 단자 전압에 영향을 주지 못해 등가 회로가 되지 않습니다.\n- 하나의 전류원과 직렬로 연결된 임피던스: 전류원에 직렬로 붙은 임피던스는 단자 전류에 영향을 주지 못해 등가 회로가 되지 않습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "테브난 정리",
+      "회로망"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-three-phase-0004",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "circuit-theory",
+    "chapterId": "three-phase",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "선간 전압 200V, 선전류 10A, 역률 0.8 인 평형 3상 부하의 소비 전력은 약 몇 kW 인가?",
+    "choices": [
+      "2.77kW",
+      "1.6kW",
+      "4.8kW",
+      "3.46kW"
+    ],
+    "answer": 1,
+    "oneLineConcept": "3상 전력 P = √3 × 선간 전압 × 선전류 × 역률",
+    "explanation": "선간 전압과 선전류로 3상 전력을 구할 때는 √3 을 곱합니다.\n1. P = √3 × V × I × cosθ\n2. P = 1.732 × 200 × 10 × 0.8\n3. P ≒ 2,771W ≒ 2.77kW\n4. 확인: 피상 전력 1.732 × 200 × 10 ≒ 3,464VA 에 역률 0.8 을 곱한 값과 같습니다.\n\n**틀린 선지**\n- 4.8kW: √3 대신 3을 곱한 값입니다.\n- 3.46kW: 역률 0.8 을 곱하지 않은 피상 전력(kVA)입니다.\n- 1.6kW: √3 을 곱하지 않아 단상처럼 계산한 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "3상 전력",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-three-phase-0005",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "circuit-theory",
+    "chapterId": "three-phase",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "중첩의 정리로 회로를 풀 때, 하나의 전원만 남기고 나머지 전원을 없애는 방법으로 옳은 것은?",
+    "choices": [
+      "전압원은 단락하고, 전류원은 개방한다.",
+      "전압원은 개방하고, 전류원은 단락한다.",
+      "전압원과 전류원을 모두 단락한다.",
+      "전압원과 전류원을 모두 개방한다."
+    ],
+    "answer": 1,
+    "oneLineConcept": "중첩의 정리: 전압원은 단락(0V), 전류원은 개방(0A)",
+    "explanation": "중첩의 정리는 전원이 여럿인 선형 회로에서, 전원을 하나씩만 두고 구한 결과를 모두 더하는 방법입니다. 이때 쉬게 할 전원은 \"값을 0 으로\" 만듭니다.\n1. 전압원 0V = 두 단자를 전선으로 이음(**단락**)\n2. 전류원 0A = 그 자리를 끊어 둠(**개방**)\n확인: 테브난 등가 임피던스를 구할 때도 같은 방법을 씁니다.\n\n**틀린 선지**\n- 전압원은 개방하고, 전류원은 단락한다.: 반대로 처리한 것입니다. 전압원은 전압이 0 이 되도록 단락, 전류원은 전류가 0 이 되도록 개방합니다.\n- 전압원과 전류원을 모두 단락한다.: 전류원을 단락하면 그 자리로 전류가 흘러 회로가 바뀝니다.\n- 전압원과 전류원을 모두 개방한다.: 전압원을 개방하면 그 가지가 끊겨 회로가 바뀝니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "중첩의 정리",
+      "회로망"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-three-phase-0006",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "circuit-theory",
+    "chapterId": "three-phase",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "어떤 회로의 단자를 열었을 때 단자 전압이 12V 이고, 전원을 없애고 단자에서 본 저항이 2Ω 이다. 이 단자에 4Ω 의 부하를 연결하면 부하에 흐르는 전류는 몇 A 인가?",
+    "choices": [
+      "3A",
+      "6A",
+      "2A",
+      "1.5A"
+    ],
+    "answer": 3,
+    "oneLineConcept": "테브난 등가 회로: I = 개방 전압 ÷ (테브난 저항 + 부하)",
+    "explanation": "주어진 값으로 테브난 등가 회로(12V 전압원 + 2Ω 직렬)를 만들고 부하를 붙입니다.\n1. 전체 저항 = 2 + 4 = 6Ω\n2. 전류 I = 12 ÷ 6 = 2A\n3. 확인: 부하 전압 = 2 × 4 = 8V, 내부 저항 전압 = 2 × 2 = 4V, 합 12V 로 맞습니다.\n\n**틀린 선지**\n- 3A: 테브난 저항 2Ω 을 빼고 부하 4Ω 으로만 나눈 값입니다.\n- 6A: 부하 4Ω 을 빼고 테브난 저항 2Ω 으로만 나눈 값입니다.\n- 1.5A: 테브난 저항 2Ω 을 두 번 더해 8Ω 으로 나눈 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "테브난 정리",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-three-phase-0007",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "circuit-theory",
+    "chapterId": "three-phase",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "한 상의 임피던스가 6 + j8 [Ω] 인 평형 3상 부하를 Δ 결선으로 하여 선간 전압 200V 의 3상 전원에 연결했다. 3상 전체의 소비 전력은 몇 kW 인가?",
+    "choices": [
+      "2.4kW",
+      "약 4.16kW",
+      "7.2kW",
+      "12kW"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Δ 결선: 상전압 = 선간 전압, P = 3 × (상전류)² × R",
+    "explanation": "Δ 결선에서는 각 상에 선간 전압이 그대로 걸립니다.\n1. 한 상 임피던스 크기 Z = √(6² + 8²) = 10Ω\n2. 상전류 = 200 ÷ 10 = 20A\n3. 한 상 전력 = 20² × 6 = 2,400W\n4. 3상 전력 = 3 × 2,400 = 7,200W = 7.2kW\n5. 확인: 선전류 = √3 × 20 ≒ 34.6A, √3 × 200 × 34.6 × 0.6 ≒ 7,200W 로 같습니다.\n\n**틀린 선지**\n- 2.4kW: Y 결선으로 착각하여 상전압을 200 ÷ √3 으로 계산한 값입니다.\n- 약 4.16kW: 상전류 20A 를 선전류로 착각하여 √3 × 200 × 20 × 0.6 으로 계산한 값입니다.\n- 12kW: 역률을 곱하지 않은 피상 전력(kVA)입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "Δ 결선",
+      "3상 전력",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-three-phase-0008",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "circuit-theory",
+    "chapterId": "three-phase",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "2전력계법으로 평형 3상 부하의 전력을 측정할 때, 한쪽 전력계의 지시값이 0 이었다. 이 부하의 역률은?",
+    "choices": [
+      "1",
+      "약 0.866",
+      "0",
+      "0.5"
+    ],
+    "answer": 4,
+    "oneLineConcept": "2전력계법: P1 = VIcos(30° - θ), P2 = VIcos(30° + θ)",
+    "explanation": "2전력계법에서 두 전력계는 각각 P1 = V × I × cos(30° - θ), P2 = V × I × cos(30° + θ) 를 가리킵니다(θ 는 부하의 위상각).\n1. 한쪽이 0 이 되려면 cos(30° + θ) = 0\n2. 30° + θ = 90° → θ = 60°\n3. 역률 = cos60° = 0.5\n4. 확인: 이때 다른 전력계는 V × I × cos(-30°) ≒ 0.866VI 로, 3상 전력 √3 × V × I × 0.5 ≒ 0.866VI 와 같습니다.\n\n**틀린 선지**\n- 약 0.866: 위상각을 30° 로 본 값입니다. 한쪽이 0 이 되는 것은 위상각이 60° 일 때입니다.\n- 0: 역률이 0 이면 두 전력계의 지시값은 크기가 같고 부호가 반대가 됩니다.\n- 1: 역률이 1 이면 두 전력계의 지시값이 같아집니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "2전력계법",
+      "역률"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  }
+]

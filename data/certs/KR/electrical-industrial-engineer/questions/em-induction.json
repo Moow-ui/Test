@@ -1,0 +1,293 @@
+[
+  {
+    "id": "electrical-industrial-engineer-em-induction-0001",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "electromagnetics",
+    "chapterId": "em-induction",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "\"유도 기전력은 코일을 지나는 자속의 변화를 방해하는 방향으로 생긴다\"는 법칙은?",
+    "choices": [
+      "앙페르의 오른나사 법칙",
+      "렌츠의 법칙",
+      "쿨롱의 법칙",
+      "플레밍의 왼손 법칙"
+    ],
+    "answer": 2,
+    "oneLineConcept": "렌츠의 법칙: 유도 기전력은 자속 변화를 방해하는 방향",
+    "explanation": "**렌츠의 법칙**은 유도 기전력의 **방향**을 정합니다. 자속이 늘면 줄이는 쪽으로, 줄면 늘리는 쪽으로 전류가 흐르게 기전력이 생깁니다. 유도 기전력의 **크기**는 패러데이 법칙(e = -N × dΦ/dt)으로 구하고, 식의 마이너스(-) 부호가 렌츠의 법칙을 나타냅니다.\n\n**틀린 선지**\n- 플레밍의 왼손 법칙: 자계 속 전류가 받는 힘의 방향을 정하는 법칙입니다.\n- 앙페르의 오른나사 법칙: 전류가 만드는 자계의 방향을 정하는 법칙입니다.\n- 쿨롱의 법칙: 두 전하(또는 자극) 사이의 힘의 크기를 다루는 법칙입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "렌츠의 법칙",
+      "전자 유도"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-em-induction-0002",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "electromagnetics",
+    "chapterId": "em-induction",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "자속 밀도 0.5T 인 평등 자계 안에서 길이 0.6m 의 도체가 자계와 직각 방향으로 10m/s 의 속도로 움직일 때 도체에 유도되는 기전력은 몇 V 인가?",
+    "choices": [
+      "1.5V",
+      "0.3V",
+      "30V",
+      "3V"
+    ],
+    "answer": 4,
+    "oneLineConcept": "플레밍의 오른손 법칙 e = B × l × v × sinθ",
+    "explanation": "자계 속에서 도체가 움직이면 기전력이 생깁니다(발전기의 원리).\n1. e = B × l × v × sinθ\n2. e = 0.5 × 0.6 × 10 × sin90°\n3. e = 0.5 × 0.6 × 10 × 1 = 3V\n4. 확인: 3 ÷ (0.5 × 10) = 0.6m 로 길이가 맞습니다.\n\n**틀린 선지**\n- 1.5V: sin30° 를 곱한 값입니다. 자계와 직각이면 sin90° = 1 입니다.\n- 30V: 도체 길이 0.6m 대신 6m 로 계산한 값입니다.\n- 0.3V: 속도 10m/s 를 곱하지 않은 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "유도 기전력",
+      "플레밍의 오른손 법칙",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-em-induction-0003",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "electromagnetics",
+    "chapterId": "em-induction",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "자기 인덕턴스가 0.2H 인 코일에 5A 의 전류가 흐를 때 코일에 저장되는 에너지는 몇 J 인가?",
+    "choices": [
+      "5J",
+      "1J",
+      "2.5J",
+      "0.5J"
+    ],
+    "answer": 3,
+    "oneLineConcept": "코일에 저장되는 에너지 W = ½ × L × I²",
+    "explanation": "코일은 전류가 흐르는 동안 자계의 형태로 에너지를 저장합니다.\n1. W = ½ × L × I²\n2. W = ½ × 0.2 × 5²\n3. W = 0.1 × 25 = 2.5J\n4. 확인: 콘덴서 에너지 ½CV² 와 모양이 같습니다.\n\n**틀린 선지**\n- 5J: 1/2 을 곱하지 않은 값입니다.\n- 0.5J: 전류를 제곱하지 않은 값입니다.\n- 1J: ½ 과 제곱을 모두 빠뜨리고 L × I 만 곱한 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "인덕턴스",
+      "에너지",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-em-induction-0004",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "electromagnetics",
+    "chapterId": "em-induction",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "자기 인덕턴스 50mH 인 코일에 흐르는 전류가 0.01초 동안 10A 에서 4A 로 고르게 줄었다. 코일에 유도되는 기전력의 크기는 몇 V 인가?",
+    "choices": [
+      "20V",
+      "50V",
+      "30V",
+      "3V"
+    ],
+    "answer": 3,
+    "oneLineConcept": "자기 유도 기전력 e = L × (전류 변화량 ÷ 시간)",
+    "explanation": "코일의 전류가 바뀌면 그 변화를 방해하는 기전력이 생깁니다.\n1. 전류 변화량 = 10 - 4 = 6A\n2. 변화율 = 6 ÷ 0.01 = 600A/s\n3. e = L × 600 = 0.05 × 600 = 30V\n4. 확인: 30 ÷ 600 = 0.05H = 50mH 로 맞습니다.\n\n**틀린 선지**\n- 20V: 처음 전류를 빼지 않고 나중 전류 4A 만 보고 계산한 값입니다.\n- 50V: 처음 전류 10A 만 보고 계산한 값입니다. 변화량(6A)을 써야 합니다.\n- 3V: 50mH 를 0.005H 로 잘못 바꾼 값입니다. 50mH 는 0.05H 입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "자기 유도",
+      "인덕턴스",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-em-induction-0005",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "electromagnetics",
+    "chapterId": "em-induction",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "교류 전류가 도체에 흐를 때 나타나는 표피 효과에 대한 설명으로 옳은 것은?",
+    "choices": [
+      "도체의 투자율과는 관계가 없다.",
+      "주파수가 높을수록 전류가 도체 표면 쪽으로 더 몰린다.",
+      "도전율(전기가 통하는 정도)이 작을수록 표피 효과가 커진다.",
+      "주파수가 낮을수록 전류가 도체 표면 쪽으로 더 몰린다."
+    ],
+    "answer": 2,
+    "oneLineConcept": "표피 두께 δ = 1 ÷ √(πfμσ): f·μ·σ 가 클수록 표피 효과 증가",
+    "explanation": "교류는 도체 중심보다 바깥 표면 쪽으로 많이 흐르는데, 이를 표피 효과라고 합니다. 전류가 흐르는 깊이(표피 두께)는 δ = 1 ÷ √(πfμσ) 입니다.\n1. 주파수(f)가 높을수록 → δ 가 얇아짐 → 표피 효과가 커짐\n2. 투자율(μ)·도전율(σ)이 클수록 → 마찬가지로 표피 효과가 커짐\n3. 확인: 직류(f = 0)에서는 표피 효과가 없습니다.\n\n**틀린 선지**\n- 주파수가 낮을수록 전류가 도체 표면 쪽으로 더 몰린다.: 반대입니다. 주파수가 높을수록 표피 효과가 커집니다.\n- 도전율(전기가 통하는 정도)이 작을수록 표피 효과가 커진다.: 도전율이 클수록 표피 두께가 얇아져 표피 효과가 커집니다.\n- 도체의 투자율과는 관계가 없다.: 투자율이 클수록 표피 두께가 얇아져 표피 효과가 커집니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "표피 효과",
+      "전자파"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-em-induction-0006",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "electromagnetics",
+    "chapterId": "em-induction",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "같은 철심에 감은 코일의 권수를 3배로 늘리면 자기 인덕턴스는 처음의 몇 배가 되는가? (다른 조건은 같다)",
+    "choices": [
+      "9배",
+      "3배",
+      "1/3 배",
+      "1/9 배"
+    ],
+    "answer": 1,
+    "oneLineConcept": "자기 인덕턴스 L = μSN² ÷ l: 권수의 제곱에 비례",
+    "explanation": "권수를 늘리면 같은 전류로 만드는 자속도 늘고, 그 자속과 엮이는 권수도 늘어납니다.\n1. L = μ × S × N² ÷ l\n2. N 이 3배 → N² 은 9배\n3. 따라서 L 은 9배\n4. 확인: 권수를 2배로 하면 4배가 되는 것과 같은 원리입니다.\n\n**틀린 선지**\n- 3배: 권수에 한 번만 비례한다고 본 값입니다. 인덕턴스는 권수의 제곱에 비례합니다.\n- 1/3 배: 권수에 반비례한다고 본 값입니다.\n- 1/9 배: 권수의 제곱에 반비례한다고 본 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "인덕턴스",
+      "권수"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-em-induction-0007",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "electromagnetics",
+    "chapterId": "em-induction",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "두 코일을 직렬로 연결하여 자속이 서로 더해지게(가동 접속) 했더니 합성 인덕턴스가 140mH, 자속이 서로 빼지게(차동 접속) 했더니 60mH 였다. 두 코일 사이의 상호 인덕턴스는 몇 mH 인가?",
+    "choices": [
+      "40mH",
+      "100mH",
+      "80mH",
+      "20mH"
+    ],
+    "answer": 4,
+    "oneLineConcept": "가동 L1+L2+2M, 차동 L1+L2-2M → M = (가동 - 차동) ÷ 4",
+    "explanation": "1. 가동 접속: L1 + L2 + 2M = 140mH\n2. 차동 접속: L1 + L2 - 2M = 60mH\n3. 두 식을 빼면 4M = 80mH\n4. M = 80 ÷ 4 = 20mH\n5. 확인: L1 + L2 = 100mH 이고, 100 + 40 = 140, 100 - 40 = 60 으로 맞습니다.\n\n**틀린 선지**\n- 40mH: 두 값의 차(80mH)를 2로 나눈 값입니다. 차이에는 2M 이 두 번 들어 있으므로 4로 나누어야 합니다.\n- 80mH: 두 값의 차를 그대로 쓴 값입니다.\n- 100mH: 두 값을 더해 2로 나눈 값으로, L1 + L2 에 해당합니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "상호 인덕턴스",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-em-induction-0008",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "electromagnetics",
+    "chapterId": "em-induction",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "철심에서 생기는 와전류손(맴돌이 전류손)은 최대 자속 밀도가 같을 때 주파수가 2배가 되면 처음의 몇 배가 되는가?",
+    "choices": [
+      "4배",
+      "변하지 않는다.",
+      "2배",
+      "1/2 배"
+    ],
+    "answer": 1,
+    "oneLineConcept": "와전류손 ∝ (t × f × Bm)²: 주파수의 제곱에 비례",
+    "explanation": "와전류손은 철판 두께(t), 주파수(f), 최대 자속 밀도(Bm)의 곱의 **제곱**에 비례합니다.\n1. 와전류손 ∝ (t × f × Bm)²\n2. t 와 Bm 이 같고 f 만 2배 → 2² = 4배\n3. 비교: 히스테리시스손은 f 에 한 번만 비례하므로 2배가 됩니다.\n4. 그래서 철심을 얇은 판(성층 철심)으로 만들어 t 를 줄입니다.\n\n**틀린 선지**\n- 2배: 히스테리시스손처럼 주파수에 한 번만 비례한다고 본 값입니다.\n- 1/2 배: 주파수에 반비례한다고 본 값입니다.\n- 변하지 않는다.: 와전류손은 주파수의 영향을 크게 받습니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "와전류손",
+      "철손"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  }
+]

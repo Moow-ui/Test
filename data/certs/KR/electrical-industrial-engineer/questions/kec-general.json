@@ -1,0 +1,398 @@
+[
+  {
+    "id": "electrical-industrial-engineer-kec-general-0001",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "kec",
+    "chapterId": "kec-general",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "한국전기설비규정(KEC)의 전압 구분에 따르면, 사용 전압이 직류 750V 인 전로는 어디에 해당하는가?",
+    "choices": [
+      "저압",
+      "고압",
+      "특고압",
+      "초고압"
+    ],
+    "answer": 1,
+    "oneLineConcept": "직류는 1.5kV 이하까지 저압입니다",
+    "explanation": "KEC 는 전압을 저압·고압·특고압 세 가지로 나눕니다. 직류는 1.5kV(1,500V) 이하가 저압이므로, 직류 750V 는 저압에 해당합니다.\n\n1. 저압: 교류 1kV 이하, 직류 1.5kV 이하\n2. 고압: 저압을 넘고 7kV 이하\n3. 특고압: 7kV 초과\n\n**틀린 선지**\n- 고압: 직류에서 고압은 1.5kV 를 넘을 때부터입니다. 750V 는 그보다 낮습니다.\n- 특고압: 특고압은 7kV 를 넘는 전압입니다.\n- 초고압: '초고압'은 KEC 의 전압 구분에 없는 말입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "전압 구분",
+      "직류"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-kec-general-0002",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "kec",
+    "chapterId": "kec-general",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "계통 전체에 걸쳐 중성선과 보호 도체의 기능을 하나의 도체(PEN 도체)로 함께 쓰는 접지 계통은?",
+    "choices": [
+      "TT 계통",
+      "IT 계통",
+      "TN-C 계통",
+      "TN-S 계통"
+    ],
+    "answer": 3,
+    "oneLineConcept": "TN-C: 계통 전체에서 중성선 + 보호도체 = PEN",
+    "explanation": "TN 계통의 셋째 글자는 중성선(N)과 보호 도체(PE)를 어떻게 쓰는지를 나타냅니다.\n\n1. TN-C: 계통 전체에서 두 기능을 하나의 PEN 도체로 겸용합니다(C = 함께, Combined).\n2. TN-S: 계통 전체에서 중성선과 보호 도체를 따로 둡니다(S = 분리, Separate).\n3. TN-C-S: 계통의 일부만 PEN 도체로 겸용합니다.\n\n**틀린 선지**\n- TN-S 계통: TN-S 는 중성선과 보호 도체를 처음부터 끝까지 따로 둡니다.\n- TT 계통: TT 계통은 설비 쪽 노출 도전부를 전원과 독립된 접지극에 접지하는 방식으로, PEN 도체를 쓰지 않습니다.\n- IT 계통: IT 계통은 전원을 대지로부터 절연하거나 높은 임피던스로 접지하는 방식입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "접지 계통",
+      "TN-C"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-kec-general-0003",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "kec",
+    "chapterId": "kec-general",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "고압·특고압 전기 설비나 변압기 중성점 접지의 접지 도체를 사람이 접촉할 우려가 있는 곳에 고정 설비로 시설할 때, 합성수지관 등으로 덮어야 하는 범위는?",
+    "choices": [
+      "지하 0.3m 부터 지표상 1.5m 까지",
+      "지하 0.75m 부터 지표상 2m 까지",
+      "지하 0.75m 부터 지표상 1m 까지",
+      "지하 1m 부터 지표상 2.5m 까지"
+    ],
+    "answer": 2,
+    "oneLineConcept": "접지도체 보호: 지하 0.75m ~ 지표상 2m",
+    "explanation": "고압·특고압 전기 설비와 변압기 중성점 접지의 접지 도체가 사람이 접촉할 우려가 있는 곳에 고정 설비로 시설될 때는 (한국전기설비규정 142.3.1), 지하 0.75m 부터 지표상 2m 까지의 부분을 합성수지관(두께 2mm 미만의 합성수지제 전선관과 콤바인 덕트관은 제외)이나 이와 같은 정도 이상의 절연 효과와 강도를 가진 몰드로 덮어야 합니다. 지하 0.75m 는 접지극 매설 깊이와 같은 값이라 함께 외우면 쉽습니다.\n\n**틀린 선지**\n- 지하 0.75m 부터 지표상 1m 까지: 지하 깊이는 맞지만 지표상 높이 기준은 2m 입니다.\n- 지하 0.3m 부터 지표상 1.5m 까지: 지하 깊이와 지표상 높이가 모두 기준보다 작습니다.\n- 지하 1m 부터 지표상 2.5m 까지: 지하 1m, 지표상 2.5m 는 KEC 기준이 아닙니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "접지 도체",
+      "몰드"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-kec-general-0004",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "kec",
+    "chapterId": "kec-general",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "지중에 매설된 금속제 수도관로를 접지극으로 쓰려면, 대지와의 전기 저항값을 몇 Ω 이하로 유지해야 하는가?",
+    "choices": [
+      "2Ω 이하",
+      "10Ω 이하",
+      "5Ω 이하",
+      "3Ω 이하"
+    ],
+    "answer": 4,
+    "oneLineConcept": "수도관 접지극: 대지와 저항 3Ω 이하",
+    "explanation": "땅속에 묻힌 금속제 수도관로는 대지와의 전기 저항값이 3Ω 이하로 유지되고 있으면 접지극으로 쓸 수 있습니다. 이와 별도로, 건축물·구조물의 철골 같은 금속제 몸체는 대지와의 저항값이 2Ω 이하이면 비접지식 고압 전로와 관련된 일부 접지(기계기구 외함 접지, 변압기 저압 쪽 접지)의 접지극으로 쓸 수 있습니다.\n\n**틀린 선지**\n- 2Ω 이하: 2Ω 은 건축물 철골 등 금속제 몸체를 비접지식 고압 관련 접지의 접지극으로 쓸 때의 기준입니다.\n- 5Ω 이하: 5Ω 은 KEC 의 수도관 접지극 기준이 아닙니다.\n- 10Ω 이하: 10Ω 은 수도관 접지극 기준보다 훨씬 큽니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "접지극",
+      "수도관"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-kec-general-0005",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "kec",
+    "chapterId": "kec-general",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "선도체의 단면적이 70mm² 일 때, 보호 도체의 최소 단면적은? (보호 도체의 재질이 선도체와 같은 경우)",
+    "choices": [
+      "35mm²",
+      "16mm²",
+      "70mm²",
+      "25mm²"
+    ],
+    "answer": 1,
+    "oneLineConcept": "선도체 35mm² 초과 → 보호도체 = 선도체의 1/2",
+    "explanation": "보호 도체의 재질이 선도체와 같을 때, 최소 단면적은 선도체 단면적(S)에 따라 정해집니다.\n\n1. S 가 16mm² 이하: S 와 같게\n2. S 가 16mm² 초과 35mm² 이하: 16mm²\n3. S 가 35mm² 초과: S 의 1/2\n4. 70mm² 는 35mm² 를 넘으므로 70 ÷ 2 = 35mm²\n5. 확인: 35mm² 는 선도체 70mm² 의 절반이 맞습니다.\n\n**틀린 선지**\n- 16mm²: 16mm² 는 선도체가 16mm² 초과 35mm² 이하일 때의 값입니다.\n- 70mm²: 선도체와 같은 굵기는 16mm² 이하일 때만 적용합니다.\n- 25mm²: 25mm² 는 표에 따른 계산값이 아닙니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "보호 도체",
+      "단면적"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-kec-general-0006",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "kec",
+    "chapterId": "kec-general",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "IT 계통에 대한 설명으로 옳은 것은?",
+    "choices": [
+      "전원의 한 점을 직접 접지하고, 노출 도전부를 그 접지점에 보호 도체로 연결한다",
+      "전원의 한 점을 직접 접지하고, 노출 도전부는 전원과 독립된 접지극에 접지한다",
+      "중성선과 보호 도체를 계통 전체에서 하나의 도체로 겸용한다",
+      "충전부 전체를 대지로부터 절연하거나 한 점을 임피던스를 통해 대지에 접속하고, 노출 도전부는 접지한다"
+    ],
+    "answer": 4,
+    "oneLineConcept": "IT: 전원 측 절연(또는 임피던스 접지) + 노출도전부 접지",
+    "explanation": "접지 계통 이름의 첫째 글자는 전원 쪽과 대지의 관계를 나타냅니다. T 는 직접 접지, I 는 절연(또는 임피던스를 거친 접지)입니다. 둘째 글자 T 는 노출 도전부(평소엔 전기가 흐르지 않는 기기 외함)를 대지에 직접 접지한다는 뜻입니다. 그래서 IT 계통은 전원 쪽을 대지로부터 절연하거나 임피던스로 접지하고, 설비의 노출 도전부는 접지하는 방식입니다. 첫 번째 지락이 생겨도 고장 전류가 작아 바로 끊지 않고 운전을 이어갈 수 있다는 특징이 있습니다.\n\n**틀린 선지**\n- 전원의 한 점을 직접 접지하고, 노출 도전부는 전원과 독립된 접지극에 접지한다: TT 계통에 대한 설명입니다.\n- 전원의 한 점을 직접 접지하고, 노출 도전부를 그 접지점에 보호 도체로 연결한다: TN 계통에 대한 설명입니다.\n- 중성선과 보호 도체를 계통 전체에서 하나의 도체로 겸용한다: TN-C 계통에 대한 설명입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "접지 계통",
+      "IT 계통"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-kec-general-0007",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "kec",
+    "chapterId": "kec-general",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "정전이 어려워 저압 전로의 절연 저항을 측정하기 곤란한 경우, 대신 확인하는 누설 전류는 몇 mA 이하로 유지해야 하는가?",
+    "choices": [
+      "30mA 이하",
+      "1mA 이하",
+      "10mA 이하",
+      "0.1mA 이하"
+    ],
+    "answer": 2,
+    "oneLineConcept": "절연저항 측정 곤란 시 누설전류 1mA 이하",
+    "explanation": "저압 전로의 절연 성능은 원래 정전시킨 뒤 절연 저항을 재어 확인합니다. 그런데 정전이 어려워 절연 저항을 측정하기 곤란하면, 사용 전압을 건 상태에서 흐르는 누설 전류를 재어 1mA 이하이면 절연 성능이 있는 것으로 봅니다.\n\n**틀린 선지**\n- 10mA 이하: 10mA 는 기준의 10배로 너무 큽니다.\n- 30mA 이하: 30mA 는 일반적인 인체 감전 보호용 누전 차단기의 감도 전류를 떠올린 값입니다.\n- 0.1mA 이하: 0.1mA 는 KEC 가 정한 값이 아닙니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "절연 성능",
+      "누설 전류"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-kec-general-0008",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "kec",
+    "chapterId": "kec-general",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "전선을 서로 접속할 때 지켜야 할 기준으로 옳은 것은?",
+    "choices": [
+      "전선의 세기(인장 하중)를 20% 이상 감소시키지 않아야 한다",
+      "전선의 세기를 50% 이상 감소시키지 않아야 한다",
+      "접속부의 전기 저항은 원래보다 커져도 상관없다",
+      "절연 전선끼리 접속할 때는 접속 부분을 절연하지 않아도 된다"
+    ],
+    "answer": 1,
+    "oneLineConcept": "전선 접속: 세기 20% 이상 감소 금지(80% 이상 유지)",
+    "explanation": "전선을 접속할 때는 다음을 지켜야 합니다.\n\n1. 접속 부분의 전기 저항을 증가시키지 않습니다.\n2. 전선의 세기(인장 하중)를 20% 이상 감소시키지 않습니다. 즉 원래 세기의 80% 이상을 유지해야 합니다.\n3. 접속 부분은 접속관 등 접속 기구를 쓰거나 납땜을 합니다.\n4. 절연 전선의 접속 부분은 원래 절연물과 같은 정도 이상으로 절연합니다.\n\n**틀린 선지**\n- 전선의 세기를 50% 이상 감소시키지 않아야 한다: 50% 까지 줄어들면 기준(20% 이상 감소 금지)을 크게 넘습니다.\n- 접속부의 전기 저항은 원래보다 커져도 상관없다: 접속부 저항이 커지면 열이 나므로 저항을 증가시키지 않아야 합니다.\n- 절연 전선끼리 접속할 때는 접속 부분을 절연하지 않아도 된다: 절연 전선의 접속 부분은 원래와 같은 정도 이상으로 절연해야 합니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "전선 접속",
+      "인장 하중"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-kec-general-0009",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "kec",
+    "chapterId": "kec-general",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "접지 도체를 철주 같은 금속체를 따라 시설할 때, 접지극을 철주 밑면으로부터 0.3m 이상 깊이에 묻지 않는다면 접지극은 그 금속체로부터 땅속에서 몇 m 이상 떼어 묻어야 하는가?",
+    "choices": [
+      "0.5m 이상",
+      "0.75m 이상",
+      "1m 이상",
+      "2m 이상"
+    ],
+    "answer": 3,
+    "oneLineConcept": "철주 따라 시설: 밑면 0.3m 이상 깊이 아니면 1m 이상 이격",
+    "explanation": "접지 도체를 철주 같은 금속체를 따라 내리는 경우, 접지극의 위치는 둘 중 하나를 만족해야 합니다.\n\n1. 접지극을 철주의 밑면으로부터 0.3m 이상 깊이에 묻거나\n2. 그렇지 않으면 접지극을 땅속에서 그 금속체로부터 1m 이상 떼어 묻습니다.\n\n문제는 1번을 하지 않는 경우이므로 1m 이상이 답입니다.\n\n**틀린 선지**\n- 0.75m 이상: 0.75m 는 접지극을 묻는 깊이(지표면으로부터) 기준입니다.\n- 0.5m 이상: 0.5m 는 기준보다 짧습니다.\n- 2m 이상: 2m 는 접지 도체를 몰드로 덮는 지표상 높이와 헷갈린 값입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "접지극",
+      "이격 거리"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-kec-general-0010",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "kec",
+    "chapterId": "kec-general",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "고압 전로와 저압 전로를 결합하는 변압기의 중성점 접지 저항값을 구하려 한다. 고압 측 1선 지락 전류가 10A 이고, 혼촉 시 저압 전로의 대지전압이 150V 를 넘으며, 고압 전로에 지락이 생기면 1초를 넘고 2초 이내에 자동으로 차단하는 장치가 있다. 접지 저항값은 몇 Ω 이하인가?",
+    "choices": [
+      "15Ω 이하",
+      "60Ω 이하",
+      "20Ω 이하",
+      "30Ω 이하"
+    ],
+    "answer": 4,
+    "oneLineConcept": "1초 초과 2초 이내 자동 차단: R = 300 / I",
+    "explanation": "변압기 중성점 접지 저항값은 1선 지락 전류(I)와 자동 차단 시간에 따라 정해집니다 (한국전기설비규정 142.5).\n\n1. 일반적인 경우: R = 150 ÷ I\n2. 혼촉 시 저압 전로의 대지전압이 150V 를 넘고, 1초 초과 2초 이내에 자동 차단하는 장치가 있으면: R = 300 ÷ I\n3. 같은 조건에서 1초 이내에 자동 차단하면: R = 600 ÷ I\n4. 이 문제는 2번에 해당하므로 R = 300 ÷ 10 = 30Ω 이하\n5. 확인: 30Ω × 10A = 300 으로 맞습니다.\n\n**틀린 선지**\n- 15Ω 이하: 150 ÷ I 로 계산한 값입니다. 자동 차단 장치 조건이 없는 일반적인 경우의 식입니다.\n- 60Ω 이하: 600 ÷ I 로 계산한 값입니다. 1초 이내에 차단하는 경우의 식입니다.\n- 20Ω 이하: 200 ÷ I 라는 식은 기준에 없습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "변압기 중성점 접지",
+      "접지 저항 계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-kec-general-0011",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "kec",
+    "chapterId": "kec-general",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "접지 도체에 피뢰 시스템이 접속되는 경우, 구리로 된 접지 도체의 최소 단면적은?",
+    "choices": [
+      "6mm² 이상",
+      "16mm² 이상",
+      "10mm² 이상",
+      "50mm² 이상"
+    ],
+    "answer": 2,
+    "oneLineConcept": "피뢰시스템 접속 접지도체: 구리 16mm²·철 50mm² 이상",
+    "explanation": "접지 도체의 최소 굵기는 흐를 수 있는 전류의 크기에 따라 달라집니다.\n\n1. 큰 고장 전류가 흐르지 않는 경우: 구리 6mm² 이상, 철 50mm² 이상\n2. 피뢰 시스템이 접속되는 경우: 구리 16mm² 이상, 철 50mm² 이상\n\n벼락 전류가 흐를 수 있으므로 구리는 16mm² 이상이어야 합니다.\n\n**틀린 선지**\n- 6mm² 이상: 6mm² 는 큰 고장 전류가 흐르지 않는 경우의 구리 기준입니다.\n- 50mm² 이상: 50mm² 는 철로 된 접지 도체의 기준입니다.\n- 10mm² 이상: 10mm² 는 접지 도체 기준표에 없는 값입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "접지 도체",
+      "피뢰 시스템"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  }
+]

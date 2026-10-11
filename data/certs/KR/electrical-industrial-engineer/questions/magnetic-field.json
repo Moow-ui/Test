@@ -1,0 +1,293 @@
+[
+  {
+    "id": "electrical-industrial-engineer-magnetic-field-0001",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "electromagnetics",
+    "chapterId": "magnetic-field",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "반지름 0.1m, 권수 10회인 원형 코일에 2A 의 전류가 흐를 때 코일 중심의 자계의 세기는 몇 AT/m 인가?",
+    "choices": [
+      "200AT/m",
+      "약 31.8AT/m",
+      "10AT/m",
+      "100AT/m"
+    ],
+    "answer": 4,
+    "oneLineConcept": "원형 코일 중심의 자계 H = NI ÷ (2a)",
+    "explanation": "원형 코일 중심의 자계는 권수와 전류에 비례하고 반지름의 2배에 반비례합니다.\n1. H = N × I ÷ (2 × a)\n2. H = 10 × 2 ÷ (2 × 0.1)\n3. H = 20 ÷ 0.2 = 100AT/m\n4. 확인: 100 × 0.2 ÷ 10 = 2A 로 전류가 맞습니다.\n\n**틀린 선지**\n- 약 31.8AT/m: 무한 직선 전류의 식(NI ÷ 2πr)을 잘못 쓴 값입니다.\n- 200AT/m: 분모의 2를 빠뜨린 값입니다.\n- 10AT/m: 권수 10회를 곱하지 않은 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "원형 코일",
+      "자계",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-magnetic-field-0002",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "electromagnetics",
+    "chapterId": "magnetic-field",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "자속 밀도 0.5T 인 평등 자계 안에 길이 0.4m 의 도체를 자계와 직각으로 놓고 10A 의 전류를 흘렸다. 도체가 받는 힘은 몇 N 인가?",
+    "choices": [
+      "2N",
+      "20N",
+      "1N",
+      "0.2N"
+    ],
+    "answer": 1,
+    "oneLineConcept": "플레밍의 왼손 법칙 F = B × I × l × sinθ",
+    "explanation": "자계 속 전류가 흐르는 도체는 힘을 받습니다(플레밍의 왼손 법칙).\n1. F = B × I × l × sinθ\n2. F = 0.5 × 10 × 0.4 × sin90°\n3. F = 0.5 × 10 × 0.4 × 1 = 2N\n4. 확인: 2 ÷ (0.5 × 0.4) = 10A 로 전류가 맞습니다.\n\n**틀린 선지**\n- 1N: sin30° 를 곱한 값입니다. 자계와 직각이면 sin90° = 1 입니다.\n- 20N: 도체 길이 0.4m 를 곱하지 않은 값입니다.\n- 0.2N: 자릿수를 잘못 계산한 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "전자력",
+      "플레밍의 왼손 법칙",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-magnetic-field-0003",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "electromagnetics",
+    "chapterId": "magnetic-field",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "플레밍의 왼손 법칙에서 엄지손가락이 가리키는 것은?",
+    "choices": [
+      "도체가 받는 힘(운동)의 방향",
+      "전류의 방향",
+      "자계(자속)의 방향",
+      "유도 기전력의 방향"
+    ],
+    "answer": 1,
+    "oneLineConcept": "왼손 법칙: 엄지 = 힘, 집게 = 자계, 가운데 = 전류",
+    "explanation": "플레밍의 왼손 법칙은 전동기의 원리입니다. 왼손의 세 손가락을 서로 직각으로 폈을 때 다음과 같습니다.\n1. 엄지손가락: 힘(F, 도체가 움직이는 방향)\n2. 집게손가락: 자계(B)\n3. 가운뎃손가락: 전류(I)\n외우는 법: 엄지부터 \"F·B·I\" 순서입니다.\n\n**틀린 선지**\n- 전류의 방향: 전류의 방향은 가운뎃손가락이 가리킵니다.\n- 자계(자속)의 방향: 자계의 방향은 집게손가락이 가리킵니다.\n- 유도 기전력의 방향: 유도 기전력은 플레밍의 오른손 법칙에서 다룹니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "플레밍의 왼손 법칙",
+      "전자력"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-magnetic-field-0004",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "electromagnetics",
+    "chapterId": "magnetic-field",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "권수 500회인 코일을 감은 철심 자기 회로의 자기 저항이 5 × 10⁵ AT/Wb 이다. 코일에 2A 의 전류를 흘릴 때 철심을 지나는 자속은 몇 Wb 인가?",
+    "choices": [
+      "500Wb",
+      "5 × 10⁸ Wb",
+      "2 × 10⁻³ Wb",
+      "4 × 10⁻⁶ Wb"
+    ],
+    "answer": 3,
+    "oneLineConcept": "자기 회로의 옴 법칙: 자속 Φ = 기자력 NI ÷ 자기 저항",
+    "explanation": "자기 회로는 전기 회로와 닮았습니다. 기자력이 전압, 자속이 전류, 자기 저항이 저항에 해당합니다.\n1. 기자력 F = N × I = 500 × 2 = 1,000AT\n2. 자속 Φ = F ÷ R = 1,000 ÷ (5 × 10⁵)\n3. Φ = 2 × 10⁻³ Wb\n4. 확인: 2 × 10⁻³ × 5 × 10⁵ = 1,000AT 로 기자력과 같습니다.\n\n**틀린 선지**\n- 4 × 10⁻⁶ Wb: 기자력을 구하지 않고 전류 2A 를 자기 저항으로 나눈 값입니다.\n- 5 × 10⁸ Wb: 기자력과 자기 저항을 곱한 값입니다. 자속은 나누어 구합니다.\n- 500Wb: 자기 저항을 기자력으로 거꾸로 나눈 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "자기 회로",
+      "자기 저항",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-magnetic-field-0005",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "electromagnetics",
+    "chapterId": "magnetic-field",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "반지름 a 인 무한히 긴 원통 도체에 전류 I 가 단면 전체에 고르게 흐른다. 도체 내부에서 중심으로부터 r(r < a) 떨어진 점의 자계의 세기는?",
+    "choices": [
+      "I ÷ (2πr)",
+      "I × r ÷ (2πa²)",
+      "I ÷ (2πa)",
+      "0"
+    ],
+    "answer": 2,
+    "oneLineConcept": "원통 도체 내부 자계 H = Ir ÷ (2πa²) (r 에 비례)",
+    "explanation": "앙페르의 주회 법칙으로 반지름 r 인 원을 따라 생각합니다.\n1. 반지름 r 안쪽에 흐르는 전류 = I × (r² ÷ a²)\n2. H × 2πr = I × r² ÷ a²\n3. H = I × r ÷ (2πa²)\n4. 확인: r = a 를 넣으면 I ÷ (2πa) 가 되어 표면의 값과 이어집니다.\n\n**틀린 선지**\n- I ÷ (2πr): 도체 바깥에서 쓰는 식입니다. 내부에서는 반지름 r 안쪽의 전류만 생각해야 합니다.\n- 0: 도체 내부에도 전류가 흐르므로 자계는 0 이 아닙니다.\n- I ÷ (2πa): 도체 표면(r = a)에서의 값입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "앙페르의 주회 법칙",
+      "자계"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-magnetic-field-0006",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "electromagnetics",
+    "chapterId": "magnetic-field",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "비투자율이 1 보다 조금 작아서 자계를 가하면 자계와 반대 방향으로 약하게 자화되는 물질은?",
+    "choices": [
+      "상자성체 (예: 알루미늄, 백금)",
+      "반강자성체 (예: 산화망간)",
+      "강자성체 (예: 철, 니켈)",
+      "반자성체 (예: 구리, 은)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "반자성체: 비투자율 < 1, 자계와 반대 방향으로 자화",
+    "explanation": "자성체는 비투자율(μs)로 구분합니다.\n1. 강자성체: μs 가 1 보다 매우 큽니다(철, 니켈, 코발트).\n2. 상자성체: μs 가 1 보다 조금 큽니다(알루미늄, 백금).\n3. 반자성체: μs 가 1 보다 조금 작고, 자계와 **반대 방향**으로 자화됩니다(구리, 은, 비스무트).\n\n**틀린 선지**\n- 상자성체 (예: 알루미늄, 백금): 상자성체는 비투자율이 1 보다 조금 크고 자계와 같은 방향으로 약하게 자화됩니다.\n- 강자성체 (예: 철, 니켈): 강자성체는 비투자율이 1 보다 매우 크고 강하게 자화됩니다.\n- 반강자성체 (예: 산화망간): 이웃한 원자의 자기 방향이 서로 반대로 늘어선 물질로, 여기서 설명한 물질이 아닙니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "자성체"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-magnetic-field-0007",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "electromagnetics",
+    "chapterId": "magnetic-field",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "공기 중에 0.1m 간격으로 나란히 놓인 두 직선 도체에 각각 10A 의 전류가 흐른다. 도체 1m 당 작용하는 힘은 몇 N 인가?",
+    "choices": [
+      "1 × 10⁻⁴ N",
+      "2 × 10⁻⁶ N",
+      "2 × 10⁻⁴ N",
+      "2 × 10⁻³ N"
+    ],
+    "answer": 3,
+    "oneLineConcept": "평행 도체 사이의 힘 F = 2 × I1 × I2 ÷ r × 10⁻⁷ [N/m]",
+    "explanation": "평행한 두 도체 사이에는 단위 길이(1m)마다 다음 힘이 작용합니다.\n1. F = 2 × I1 × I2 ÷ r × 10⁻⁷\n2. F = 2 × 10 × 10 ÷ 0.1 × 10⁻⁷\n3. F = 2,000 × 10⁻⁷ = 2 × 10⁻⁴ N/m\n4. 확인: 거리가 1m 였다면 2 × 10⁻⁵ N 이고, 거리가 1/10 이므로 힘은 10배입니다.\n\n**틀린 선지**\n- 1 × 10⁻⁴ N: 식의 계수 2를 빠뜨린 값입니다.\n- 2 × 10⁻³ N: 거리를 제곱하여 0.01 로 나눈 값입니다. 평행 도체의 힘은 거리에 한 번만 반비례합니다.\n- 2 × 10⁻⁶ N: 거리로 나누지 않고 곱한 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "평행 도체",
+      "전자력",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-magnetic-field-0008",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "electromagnetics",
+    "chapterId": "magnetic-field",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "한 변의 길이가 a 인 정사각형 코일에 전류 I 가 흐를 때, 정사각형 중심의 자계의 세기는?",
+    "choices": [
+      "4I ÷ (πa)",
+      "2√2 × I ÷ (πa)",
+      "√2 × I ÷ (2πa)",
+      "I ÷ (2a)"
+    ],
+    "answer": 2,
+    "oneLineConcept": "정사각형 코일 중심: 한 변의 자계 × 4 = 2√2I ÷ (πa)",
+    "explanation": "한 변(유한 길이 직선)이 중심에 만드는 자계를 구해 4배 합니다. 중심과 한 변 사이 거리는 a/2, 양 끝을 보는 각도는 각각 45° 입니다.\n1. 한 변: H1 = I ÷ (4π × a/2) × (sin45° + sin45°)\n2. H1 = I ÷ (2πa) × √2 = √2 × I ÷ (2πa)\n3. 네 변의 합: H = 4 × √2 × I ÷ (2πa) = 2√2 × I ÷ (πa)\n4. 확인: 2√2 ÷ π ≒ 0.90 이므로 H ≒ 0.9 × I ÷ a 입니다.\n\n**틀린 선지**\n- √2 × I ÷ (2πa): 한 변이 만드는 자계만 구한 값입니다. 네 변이 같은 방향으로 더해지므로 4배 해야 합니다.\n- I ÷ (2a): 반지름 a 인 원형 코일 중심의 식입니다.\n- 4I ÷ (πa): 변의 끝 각도(45°)를 반영하지 않고 무한 직선처럼 계산한 값입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "비오-사바르 법칙",
+      "자계"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  }
+]

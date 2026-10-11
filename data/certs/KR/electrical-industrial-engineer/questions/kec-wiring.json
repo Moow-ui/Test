@@ -1,0 +1,290 @@
+[
+  {
+    "id": "electrical-industrial-engineer-kec-wiring-0001",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "kec",
+    "chapterId": "kec-wiring",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "전기 울타리에 전기를 공급하는 전로의 사용 전압은 몇 V 이하이어야 하는가?",
+    "choices": [
+      "150V 이하",
+      "600V 이하",
+      "250V 이하",
+      "400V 이하"
+    ],
+    "answer": 3,
+    "oneLineConcept": "전기 울타리 사용 전압: 250V 이하",
+    "explanation": "전기 울타리는 논밭에 짐승이 들어오지 못하게 전선에 전기를 흘려 두는 시설입니다. 사람이 닿을 수 있으므로 전기 울타리용 전원 장치에 전기를 공급하는 전로의 사용 전압은 250V 이하로 제한합니다.\n\n**틀린 선지**\n- 150V 이하: 150V 는 전기 울타리 기준이 아닙니다.\n- 400V 이하: 400V 는 기준(250V)보다 높습니다.\n- 600V 이하: 600V 는 예전 저압 상한을 떠올린 값입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "전기 울타리",
+      "특수 시설"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-kec-wiring-0002",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "kec",
+    "chapterId": "kec-wiring",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "합성수지관 공사에서 관을 지지하는 점 사이의 거리는 몇 m 이하로 해야 하는가?",
+    "choices": [
+      "1.5m 이하",
+      "1m 이하",
+      "2m 이하",
+      "3m 이하"
+    ],
+    "answer": 1,
+    "oneLineConcept": "합성수지관 지지점 간 거리: 1.5m 이하",
+    "explanation": "합성수지관은 금속관보다 휘기 쉬우므로 지지점을 촘촘히 둡니다. 관의 지지점 사이 거리는 1.5m 이하로 하고, 관과 관의 끝이나 관과 박스의 접속점 가까운 곳도 지지합니다.\n\n**틀린 선지**\n- 2m 이하: 2m 는 케이블을 조영재(벽·천장 등 건물 부분) 아래면이나 옆면에 붙일 때의 지지점 간격입니다.\n- 1m 이하: 1m 는 캡타이어 케이블을 조영재에 붙일 때의 지지점 간격입니다.\n- 3m 이하: 3m 는 합성수지관 지지 기준보다 너무 깁니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "합성수지관 공사",
+      "지지점"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-kec-wiring-0003",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "kec",
+    "chapterId": "kec-wiring",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "주택의 옥내 전로(전기 기계 기구 안의 전로는 제외)의 대지 전압은 원칙적으로 몇 V 이하이어야 하는가?",
+    "choices": [
+      "150V 이하",
+      "220V 이하",
+      "400V 이하",
+      "300V 이하"
+    ],
+    "answer": 4,
+    "oneLineConcept": "주택 옥내 전로 대지전압: 300V 이하",
+    "explanation": "대지 전압은 전선과 땅 사이의 전압입니다. 주택은 일반인이 전기를 쓰는 곳이므로 옥내 전로의 대지 전압을 300V 이하로 제한합니다. 220/380V 로 공급하는 주택에서 선과 대지 사이 전압은 220V 이므로 이 기준을 만족합니다.\n\n**틀린 선지**\n- 220V 이하: 220V 는 일반 가정의 공급 전압으로, 대지 전압 상한이 아닙니다.\n- 150V 이하: 150V 는 기준보다 낮은 값입니다.\n- 400V 이하: 400V 는 기준(300V)보다 높습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "대지 전압",
+      "주택"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-kec-wiring-0004",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "kec",
+    "chapterId": "kec-wiring",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "금속관 공사에서 콘크리트에 묻는 금속관의 두께는 몇 mm 이상이어야 하는가?",
+    "choices": [
+      "1.0mm 이상",
+      "1.2mm 이상",
+      "0.8mm 이상",
+      "2.0mm 이상"
+    ],
+    "answer": 2,
+    "oneLineConcept": "콘크리트 매설 금속관 두께: 1.2mm 이상",
+    "explanation": "금속관 공사에서 관의 두께는 시설 장소에 따라 다릅니다.\n\n1. 콘크리트에 묻는 경우: 1.2mm 이상\n2. 그 밖의 경우: 1mm 이상(이음매가 없는 길이 4m 이하의 관을 건조하고 전개된 곳에 쓰는 경우는 0.5mm 까지 허용)\n\n콘크리트를 부을 때 무게와 충격을 견뎌야 하므로 더 두꺼운 관을 씁니다.\n\n**틀린 선지**\n- 1.0mm 이상: 1.0mm 는 콘크리트에 묻지 않는 일반적인 경우의 두께입니다.\n- 0.8mm 이상: 0.8mm 는 기준보다 얇습니다.\n- 2.0mm 이상: 2.0mm 는 합성수지관 두께 제한(2mm 미만 제외)과 헷갈린 값입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "금속관 공사",
+      "관 두께"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-kec-wiring-0005",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "kec",
+    "chapterId": "kec-wiring",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "케이블을 조영재(벽·천장 등 건물 부분)의 아래면이나 옆면에 따라 붙이는 경우, 전선의 지지점 사이 거리는? (캡타이어 케이블이 아닌 경우)",
+    "choices": [
+      "1m 이하",
+      "1.5m 이하",
+      "3m 이하",
+      "2m 이하"
+    ],
+    "answer": 4,
+    "oneLineConcept": "케이블 조영재 부착 지지점: 2m 이하(캡타이어 1m)",
+    "explanation": "케이블 공사에서 케이블을 조영재의 아래면 또는 옆면에 따라 붙일 때는 지지점 사이 거리를 2m 이하로 합니다. 캡타이어 케이블은 더 부드러워 처지기 쉬우므로 1m 이하로 합니다.\n\n**틀린 선지**\n- 1m 이하: 1m 는 캡타이어 케이블의 지지점 간격입니다.\n- 1.5m 이하: 1.5m 는 합성수지관의 지지점 간격입니다.\n- 3m 이하: 3m 는 기준보다 깁니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "케이블 공사",
+      "지지점"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-kec-wiring-0006",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "kec",
+    "chapterId": "kec-wiring",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "특고압 전선로에 접속하는 배전용 변압기를 시설하는 기준으로 옳은 것은?",
+    "choices": [
+      "변압기의 1차 전압은 35kV 이하, 2차 전압은 저압 또는 고압일 것",
+      "변압기의 1차 전압은 154kV 이하, 2차 전압은 저압일 것",
+      "변압기의 1차 전압은 7kV 이하, 2차 전압은 고압일 것",
+      "변압기의 1차 전압은 100kV 이하, 2차 전압은 특고압일 것"
+    ],
+    "answer": 1,
+    "oneLineConcept": "특고압 배전용 변압기: 1차 35kV 이하, 2차 저압·고압",
+    "explanation": "특고압 가공 전선로에서 전기를 받아 마을이나 공장으로 나눠 주는 배전용 변압기는 다음 기준을 지킵니다.\n\n1. 사용 전선은 특고압 절연 전선 또는 케이블을 씁니다.\n2. 변압기의 1차 전압은 35kV 이하, 2차 전압은 저압 또는 고압이어야 합니다.\n3. 변압기의 특고압 측에는 개폐기와 과전류 차단기를 시설합니다.\n\n**틀린 선지**\n- 변압기의 1차 전압은 154kV 이하, 2차 전압은 저압일 것: 154kV 는 송전 전압으로, 배전용 변압기의 1차 전압 기준이 아닙니다.\n- 변압기의 1차 전압은 7kV 이하, 2차 전압은 고압일 것: 7kV 이하는 고압이므로 특고압 배전용 변압기의 1차 전압이 될 수 없습니다.\n- 변압기의 1차 전압은 100kV 이하, 2차 전압은 특고압일 것: 배전용 변압기의 2차 전압은 저압 또는 고압이어야 합니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "특고압 배전용 변압기",
+      "수전 설비"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-kec-wiring-0007",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "kec",
+    "chapterId": "kec-wiring",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "도체의 과부하를 보호하는 장치가 만족해야 할 조건으로 옳은 것은? (IB: 회로의 설계 전류, In: 보호 장치의 정격 전류, IZ: 케이블의 허용 전류, I2: 보호 장치가 규약 시간 이내에 확실히 동작하는 전류)",
+    "choices": [
+      "In ≤ IB ≤ IZ, I2 ≤ 1.45 × IZ",
+      "IB ≤ IZ ≤ In, I2 ≤ 1.45 × In",
+      "IB ≤ In ≤ IZ, I2 ≤ 1.45 × IZ",
+      "IZ ≤ In ≤ IB, I2 ≤ 1.13 × IZ"
+    ],
+    "answer": 3,
+    "oneLineConcept": "과부하 보호: IB ≤ In ≤ IZ, I2 ≤ 1.45·IZ",
+    "explanation": "과부하 보호 장치는 평소 전류로는 동작하지 않고, 케이블이 감당할 수 있는 전류를 넘으면 동작해야 합니다. 그래서 크기 순서가 '설계 전류 ≤ 보호 장치 정격 ≤ 케이블 허용 전류'가 됩니다.\n\n1. IB ≤ In ≤ IZ: 보호 장치 정격 전류는 설계 전류 이상, 케이블 허용 전류 이하\n2. I2 ≤ 1.45 × IZ: 보호 장치가 확실히 동작하는 전류는 케이블 허용 전류의 1.45배 이하\n\n예를 들어 설계 전류 20A, 케이블 허용 전류 32A 라면 정격 25A 차단기는 20 ≤ 25 ≤ 32 로 조건을 만족합니다.\n\n**틀린 선지**\n- In ≤ IB ≤ IZ, I2 ≤ 1.45 × IZ: 정격 전류가 설계 전류보다 작으면 평소 전류에도 차단기가 동작해 버립니다.\n- IB ≤ IZ ≤ In, I2 ≤ 1.45 × In: 정격 전류가 케이블 허용 전류보다 크면 케이블이 과열돼도 차단되지 않습니다.\n- IZ ≤ In ≤ IB, I2 ≤ 1.13 × IZ: 크기 순서가 완전히 거꾸로이고, 1.13 은 주택용 차단기의 부동작 배수입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "과부하 보호",
+      "차단기 선정"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-kec-wiring-0008",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "kec",
+    "chapterId": "kec-wiring",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "정격 전류 63A 이하인 주택용 배선 차단기의 과전류 트립 동작 특성(규정 시간 60분)으로 옳은 것은?",
+    "choices": [
+      "부동작 전류 1.05배, 동작 전류 1.3배",
+      "부동작 전류 1.25배, 동작 전류 1.6배",
+      "부동작 전류 1.5배, 동작 전류 1.9배",
+      "부동작 전류 1.13배, 동작 전류 1.45배"
+    ],
+    "answer": 4,
+    "oneLineConcept": "주택용 차단기: 1.13배 부동작, 1.45배 동작",
+    "explanation": "배선 차단기는 정격 전류의 몇 배까지는 견디고(부동작), 몇 배부터는 정해진 시간 안에 끊어야(동작) 하는지가 정해져 있습니다. 정격 전류 63A 이하는 규정 시간이 60분입니다.\n\n1. 주택용 배선 차단기: 부동작 1.13배, 동작 1.45배\n2. 산업용 배선 차단기: 부동작 1.05배, 동작 1.3배\n\n주택용이 산업용보다 배수가 큰 값이라는 점으로 구분하면 쉽습니다.\n\n**틀린 선지**\n- 부동작 전류 1.05배, 동작 전류 1.3배: 1.05배·1.3배는 산업용 배선 차단기의 값입니다.\n- 부동작 전류 1.25배, 동작 전류 1.6배: 1.25배·1.6배는 배선 차단기 기준에 없는 값입니다.\n- 부동작 전류 1.5배, 동작 전류 1.9배: 1.5배·1.9배는 퓨즈의 동작 특성과 헷갈린 값입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "배선 차단기",
+      "동작 특성"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  }
+]

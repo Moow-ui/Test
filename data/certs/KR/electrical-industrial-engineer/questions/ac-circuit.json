@@ -1,0 +1,403 @@
+[
+  {
+    "id": "electrical-industrial-engineer-ac-circuit-0001",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "circuit-theory",
+    "chapterId": "ac-circuit",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "순시값이 v = 141.4 sin ωt [V] 인 교류 전압의 실효값은 약 몇 V 인가?",
+    "choices": [
+      "141.4V",
+      "90V",
+      "100V",
+      "70.7V"
+    ],
+    "answer": 3,
+    "oneLineConcept": "정현파 실효값 = 최대값 ÷ √2",
+    "explanation": "1. 최대값 Vm = 141.4V\n2. 실효값 V = Vm ÷ √2 = 141.4 ÷ 1.414\n3. V = 100V\n4. 확인: 100 × 1.414 = 141.4 로 최대값과 맞습니다.\n\n**틀린 선지**\n- 141.4V: 최대값입니다. 실효값은 최대값을 √2 로 나눈 값입니다.\n- 90V: 평균값(최대값 × 2/π)입니다.\n- 70.7V: 최대값을 2로 나눈 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "실효값",
+      "정현파"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-ac-circuit-0002",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "circuit-theory",
+    "chapterId": "ac-circuit",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "인덕턴스 0.1H 인 코일에 주파수 50Hz 의 교류를 가했을 때 유도 리액턴스는 약 몇 Ω 인가?",
+    "choices": [
+      "31.4Ω",
+      "15.7Ω",
+      "314Ω",
+      "5Ω"
+    ],
+    "answer": 1,
+    "oneLineConcept": "유도 리액턴스 XL = 2πfL",
+    "explanation": "1. XL = 2 × π × f × L\n2. XL = 2 × 3.14 × 50 × 0.1\n3. XL = 314 × 0.1 = 31.4Ω\n4. 확인: 주파수가 높을수록, 인덕턴스가 클수록 XL 은 커집니다.\n\n**틀린 선지**\n- 5Ω: 2π 를 곱하지 않은 값(f × L)입니다.\n- 314Ω: 자릿수를 잘못 계산한 값입니다.\n- 15.7Ω: 2 를 빠뜨리고 π 만 곱한 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "리액턴스",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-ac-circuit-0003",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "circuit-theory",
+    "chapterId": "ac-circuit",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "6Ω 과 3Ω 의 저항을 병렬로 연결했을 때의 합성 저항은 몇 Ω 인가?",
+    "choices": [
+      "9Ω",
+      "4.5Ω",
+      "18Ω",
+      "2Ω"
+    ],
+    "answer": 4,
+    "oneLineConcept": "저항 2개 병렬: 합성 저항 = 곱 ÷ 합",
+    "explanation": "1. 합성 저항 = (6 × 3) ÷ (6 + 3)\n2. = 18 ÷ 9 = 2Ω\n3. 확인: 병렬 합성 저항은 가장 작은 저항(3Ω)보다 항상 작습니다.\n\n**틀린 선지**\n- 9Ω: 직렬로 연결했을 때의 값입니다.\n- 4.5Ω: 두 저항의 평균을 낸 값입니다.\n- 18Ω: 곱만 하고 합으로 나누지 않은 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "직류 회로",
+      "합성 저항"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-ac-circuit-0004",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "circuit-theory",
+    "chapterId": "ac-circuit",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "피상 전력이 500VA, 유효 전력이 400W 인 부하의 역률은?",
+    "choices": [
+      "1.25",
+      "0.6",
+      "0.8",
+      "0.75"
+    ],
+    "answer": 3,
+    "oneLineConcept": "역률 cosθ = 유효 전력 ÷ 피상 전력",
+    "explanation": "1. 역률 = 유효 전력 ÷ 피상 전력\n2. 역률 = 400 ÷ 500 = 0.8\n3. 확인: 무효 전력 = √(500² - 400²) = 300var 이고, 무효율은 300 ÷ 500 = 0.6 입니다.\n\n**틀린 선지**\n- 0.6: 무효 전력(300var)을 피상 전력으로 나눈 무효율입니다.\n- 1.25: 피상 전력을 유효 전력으로 나눈 값입니다. 역률은 1 을 넘을 수 없습니다.\n- 0.75: 무효 전력(300var)을 유효 전력으로 나눈 tanθ 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "역률",
+      "전력"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-ac-circuit-0005",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "circuit-theory",
+    "chapterId": "ac-circuit",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "콘덴서에 가하는 교류 전압의 주파수를 2배로 높이면 용량 리액턴스는 처음의 몇 배가 되는가?",
+    "choices": [
+      "4배",
+      "2배",
+      "1/2 배",
+      "변하지 않는다."
+    ],
+    "answer": 3,
+    "oneLineConcept": "용량 리액턴스 XC = 1 ÷ (2πfC): 주파수에 반비례",
+    "explanation": "1. XC = 1 ÷ (2π × f × C)\n2. f 가 분모에 있으므로 f 가 2배면 XC 는 1/2 배\n3. 확인: 주파수가 높을수록 콘덴서는 전류를 잘 흘립니다. 코일(XL = 2πfL)은 반대로 주파수에 비례합니다.\n\n**틀린 선지**\n- 2배: 유도 리액턴스(코일)의 경우입니다. 콘덴서는 반대입니다.\n- 4배: 주파수의 제곱에 비례한다고 본 값입니다.\n- 변하지 않는다.: 용량 리액턴스는 주파수에 따라 달라집니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "리액턴스",
+      "주파수"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-ac-circuit-0006",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "circuit-theory",
+    "chapterId": "ac-circuit",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "저항 8Ω 과 용량 리액턴스 6Ω 이 직렬로 연결된 회로에 100V 의 교류 전압을 가했다. 회로에서 소비되는 유효 전력은 몇 W 인가?",
+    "choices": [
+      "800W",
+      "1,000W",
+      "1,250W",
+      "600W"
+    ],
+    "answer": 1,
+    "oneLineConcept": "유효 전력 P = I² × R (저항에서만 소비)",
+    "explanation": "전력은 저항에서만 소비되고, 콘덴서는 소비하지 않습니다.\n1. 임피던스 Z = √(8² + 6²) = 10Ω\n2. 전류 I = 100 ÷ 10 = 10A\n3. 유효 전력 P = I² × R = 10² × 8 = 800W\n4. 확인: 역률 8/10 = 0.8 이므로 P = 100 × 10 × 0.8 = 800W 로 같습니다.\n\n**틀린 선지**\n- 1,000W: 전압 × 전류로 구한 피상 전력(VA)입니다.\n- 600W: 리액턴스에 걸리는 무효 전력(var)입니다.\n- 1,250W: 전체 전압을 저항에만 건 것으로 보고 V² ÷ R 로 계산한 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "전력",
+      "R-C 직렬",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-ac-circuit-0007",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "circuit-theory",
+    "chapterId": "ac-circuit",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "R-L-C 직렬 회로가 공진 상태일 때의 특징으로 옳은 것은?",
+    "choices": [
+      "임피던스가 최소가 되고 전류가 최대가 된다.",
+      "전류가 전압보다 90° 앞선다.",
+      "회로의 역률이 0 이 된다.",
+      "임피던스가 최대가 되고 전류가 최소가 된다."
+    ],
+    "answer": 1,
+    "oneLineConcept": "직렬 공진: XL = XC, Z = R (최소), 전류 최대, 역률 1",
+    "explanation": "직렬 공진에서는 유도 리액턴스와 용량 리액턴스의 크기가 같아져(XL = XC) 서로 없어집니다.\n1. 임피던스 Z = R 로 가장 작아집니다.\n2. 따라서 전류는 가장 커집니다.\n3. 전압과 전류의 위상이 같아 역률은 1 입니다.\n확인: 병렬 공진은 반대로 임피던스 최대, 전류 최소입니다.\n\n**틀린 선지**\n- 임피던스가 최대가 되고 전류가 최소가 된다.: R-L-C 병렬 공진의 특징입니다.\n- 회로의 역률이 0 이 된다.: 공진 때는 리액턴스가 서로 없어져 저항만 남으므로 역률은 1 입니다.\n- 전류가 전압보다 90° 앞선다.: 콘덴서만 있는 회로의 특징입니다. 공진 때는 전압과 전류의 위상이 같습니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "공진",
+      "R-L-C 회로"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-ac-circuit-0008",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "circuit-theory",
+    "chapterId": "ac-circuit",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "4Ω 의 저항에, 6Ω 과 12Ω 을 병렬로 연결한 부분이 직렬로 연결되어 있다. 이 회로 양 끝에 24V 를 가했을 때 4Ω 에 흐르는 전류는 몇 A 인가?",
+    "choices": [
+      "2A",
+      "3A",
+      "약 1.09A",
+      "6A"
+    ],
+    "answer": 2,
+    "oneLineConcept": "직·병렬 회로: 병렬 부분부터 합성한 뒤 직렬로 더한다",
+    "explanation": "1. 병렬 부분: (6 × 12) ÷ (6 + 12) = 72 ÷ 18 = 4Ω\n2. 전체 저항: 4 + 4 = 8Ω\n3. 전체 전류: 24 ÷ 8 = 3A\n4. 4Ω 은 직렬로 놓여 있으므로 전체 전류 3A 가 그대로 흐릅니다.\n5. 확인: 4Ω 에 12V, 병렬 부분에 12V 가 걸려 합이 24V 입니다.\n\n**틀린 선지**\n- 6A: 4Ω 에만 24V 가 걸린다고 본 값입니다.\n- 약 1.09A: 세 저항을 모두 직렬(22Ω)로 본 값입니다.\n- 2A: 12Ω 에만 24V 가 걸린다고 본 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "직류 회로",
+      "합성 저항",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-ac-circuit-0009",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "circuit-theory",
+    "chapterId": "ac-circuit",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "어떤 회로에 v = 100√2 sin ωt [V] 의 전압을 가했더니 i = 10√2 sin(ωt - 60°) [A] 의 전류가 흘렀다. 이 회로의 유효 전력은 몇 W 인가?",
+    "choices": [
+      "약 866W",
+      "2,000W",
+      "1,000W",
+      "500W"
+    ],
+    "answer": 4,
+    "oneLineConcept": "유효 전력 P = V × I × cosθ (V·I 는 실효값)",
+    "explanation": "1. 실효값: V = 100√2 ÷ √2 = 100V, I = 10√2 ÷ √2 = 10A\n2. 위상차 θ = 60° (전류가 늦음)\n3. P = V × I × cosθ = 100 × 10 × cos60°\n4. P = 1,000 × 0.5 = 500W\n5. 확인: 무효 전력은 1,000 × sin60° ≒ 866var 이고, √(500² + 866²) ≒ 1,000VA 로 맞습니다.\n\n**틀린 선지**\n- 약 866W: cos60° 대신 sin60° 를 곱한 값으로, 무효 전력(var)의 크기입니다.\n- 1,000W: 위상차를 무시한 피상 전력(VA)입니다.\n- 2,000W: 실효값이 아닌 최대값끼리 곱하고 역률도 빠뜨린 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "전력",
+      "위상차",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-ac-circuit-0010",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "circuit-theory",
+    "chapterId": "ac-circuit",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "저항 6Ω, 유도 리액턴스 12Ω, 용량 리액턴스 4Ω 이 직렬로 연결된 회로에 100V 의 교류 전압을 가했을 때 흐르는 전류는 몇 A 인가?",
+    "choices": [
+      "약 4.55A",
+      "10A",
+      "약 16.7A",
+      "6.25A"
+    ],
+    "answer": 2,
+    "oneLineConcept": "R-L-C 직렬: Z = √(R² + (XL - XC)²)",
+    "explanation": "코일과 콘덴서의 리액턴스는 방향이 반대라서 서로 뺍니다.\n1. 합성 리액턴스 X = XL - XC = 12 - 4 = 8Ω\n2. Z = √(6² + 8²) = √100 = 10Ω\n3. I = 100 ÷ 10 = 10A\n4. 확인: 10A × 10Ω = 100V 로 맞습니다.\n\n**틀린 선지**\n- 6.25A: 두 리액턴스를 빼지 않고 더한 16Ω 으로만 나눈 값입니다.\n- 약 16.7A: 저항 6Ω 으로만 나눈 값입니다.\n- 약 4.55A: 세 값을 그냥 더한 22Ω 으로 나눈 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "R-L-C 회로",
+      "임피던스",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-ac-circuit-0011",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "circuit-theory",
+    "chapterId": "ac-circuit",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "R = 10Ω, L = 0.1H, C = 10μF 인 R-L-C 직렬 공진 회로의 선택도(전압 확대율) Q 는?",
+    "choices": [
+      "0.001",
+      "10",
+      "100",
+      "1,000"
+    ],
+    "answer": 2,
+    "oneLineConcept": "직렬 공진 선택도 Q = (1/R) × √(L/C)",
+    "explanation": "선택도 Q 는 공진 때 코일(또는 콘덴서)에 걸리는 전압이 전원 전압의 몇 배인지를 나타냅니다.\n1. L ÷ C = 0.1 ÷ (10 × 10⁻⁶) = 10,000\n2. √(L ÷ C) = 100\n3. Q = 100 ÷ R = 100 ÷ 10 = 10\n4. 확인: 공진 각주파수 ω = 1 ÷ √(LC) = 1,000rad/s, XL = 1,000 × 0.1 = 100Ω, Q = XL ÷ R = 10 으로 같습니다.\n\n**틀린 선지**\n- 100: √(L ÷ C) 까지만 구하고 R 로 나누지 않은 값입니다.\n- 0.001: √(C ÷ L) 로 L 과 C 를 거꾸로 넣은 값입니다.\n- 1,000: √ 를 하지 않고 L ÷ C 를 R 로 나눈 값입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "공진",
+      "선택도",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+]

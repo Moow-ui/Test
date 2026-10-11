@@ -1,0 +1,290 @@
+[
+  {
+    "id": "electrical-industrial-engineer-kec-line-0001",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "kec",
+    "chapterId": "kec-line",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "가공 전선로 지지물의 기초 안전율은 원칙적으로 얼마 이상이어야 하는가?",
+    "choices": [
+      "1.5 이상",
+      "2 이상",
+      "2.5 이상",
+      "3 이상"
+    ],
+    "answer": 2,
+    "oneLineConcept": "지지물 기초 안전율: 2 이상(이상 시 철탑 1.33)",
+    "explanation": "가공 전선로의 지지물(전주·철탑)은 땅에 박힌 기초가 넘어지거나 뽑히지 않아야 합니다. 그래서 지지물에 걸리는 하중에 대한 기초의 안전율을 2 이상으로 합니다. 다만 이상 시 상정 하중(전선이 끊어지는 등의 비상 상황 하중)에 대한 철탑의 기초는 1.33 이상이면 됩니다.\n\n**틀린 선지**\n- 2.5 이상: 2.5 는 지선의 안전율 기준입니다.\n- 1.5 이상: 1.5 는 기초 안전율 기준보다 작습니다.\n- 3 이상: 3 은 기준보다 큰 값으로 KEC 가 정한 값이 아닙니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "지지물",
+      "안전율"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-kec-line-0002",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "kec",
+    "chapterId": "kec-line",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "저압 가공 전선이 도로를 횡단하는 경우, 전선의 지표상 높이는 몇 m 이상이어야 하는가? (농로 등 교통이 번잡하지 않은 도로는 제외)",
+    "choices": [
+      "4m 이상",
+      "3.5m 이상",
+      "5m 이상",
+      "6m 이상"
+    ],
+    "answer": 4,
+    "oneLineConcept": "저압 가공 전선 높이: 도로 횡단 6m, 철도 6.5m, 그 밖 5m",
+    "explanation": "저압 가공 전선의 높이는 장소에 따라 다릅니다 (한국전기설비규정 222.7).\n\n1. 도로 횡단: 지표상 6m 이상\n2. 철도·궤도 횡단: 레일면상 6.5m 이상\n3. 횡단보도교 위: 노면상 3.5m 이상(저압 절연 전선·다심형 전선·케이블은 3m)\n4. 그 밖의 장소: 지표상 5m 이상(도로 이외의 곳 등은 4m 까지 낮출 수 있음)\n\n따라서 도로를 횡단할 때는 6m 이상입니다.\n\n**틀린 선지**\n- 5m 이상: 도로·철도·횡단보도교 이외의 장소에 적용하는 높이입니다.\n- 4m 이상: 도로 이외의 곳 등에서 낮출 수 있는 한도입니다.\n- 3.5m 이상: 횡단보도교 위에 시설하는 경우의 높이입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "저압 가공 전선",
+      "전선 높이"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-kec-line-0003",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "kec",
+    "chapterId": "kec-line",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "지중 전선로를 직접 매설식으로 시설할 때, 차량 등 무거운 물체의 압력을 받을 우려가 없는 장소의 매설 깊이는 몇 m 이상인가?",
+    "choices": [
+      "0.3m 이상",
+      "0.75m 이상",
+      "1.2m 이상",
+      "0.6m 이상"
+    ],
+    "answer": 4,
+    "oneLineConcept": "직접 매설식: 압력 우려 없으면 0.6m 이상",
+    "explanation": "지중 전선로를 땅에 바로 묻는 직접 매설식에서는 위에서 누르는 무게에 따라 깊이가 다릅니다.\n\n1. 차량이나 무거운 물체의 압력을 받을 우려가 있는 곳: 1.0m 이상\n2. 그 밖의 곳: 0.6m 이상\n\n또한 케이블은 트로프 같은 견고한 방호물에 넣어 묻는 것이 원칙입니다.\n\n**틀린 선지**\n- 0.75m 이상: 0.75m 는 접지극을 묻는 깊이 기준입니다.\n- 1.2m 이상: 1.2m 는 직접 매설식 기준이 아닙니다.\n- 0.3m 이상: 0.3m 는 기준보다 얕습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "지중 전선로",
+      "매설 깊이"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-kec-line-0004",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "kec",
+    "chapterId": "kec-line",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "전체 길이가 16m 인 철근 콘크리트주(설계 하중 6.8kN 이하)를 논이나 연약한 지반이 아닌 곳에 세울 때, 땅에 묻히는 깊이는 몇 m 이상이어야 하는가?",
+    "choices": [
+      "2.5m 이상",
+      "2.8m 이상",
+      "약 2.67m 이상",
+      "2.0m 이상"
+    ],
+    "answer": 1,
+    "oneLineConcept": "전장 15m 초과 16m 이하 근입: 2.5m 이상",
+    "explanation": "철근 콘크리트주가 땅에 묻히는 깊이(근입)는 전체 길이(전장)에 따라 정합니다(설계 하중 6.8kN 이하).\n\n1. 전장 15m 이하: 전장의 1/6 이상\n2. 전장 15m 초과: 2.5m 이상\n3. 철근 콘크리트주로 전장 16m 초과 20m 이하: 2.8m 이상\n4. 이 문제의 전장 16m 는 15m 를 넘고 16m '초과'는 아니므로 2.5m 이상\n5. 확인: 1/6 규칙(16 ÷ 6 ≒ 2.67m)은 전장 15m 이하에만 씁니다.\n\n**틀린 선지**\n- 약 2.67m 이상: 16 ÷ 6 으로 계산한 값입니다. 1/6 규칙은 전장 15m 이하에만 씁니다.\n- 2.8m 이상: 2.8m 는 전장이 16m 를 넘고 20m 이하인 철근 콘크리트주의 값입니다.\n- 2.0m 이상: 2.0m 는 전장 12m 를 1/6 로 계산할 때의 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "지지물",
+      "근입 깊이"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-kec-line-0005",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "kec",
+    "chapterId": "kec-line",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "사용 전압이 400V 이하인 저압 가공 전선으로 절연 전선을 쓰는 경우, 전선의 굵기 기준은? (케이블이 아닌 경우)",
+    "choices": [
+      "인장 강도 3.43kN 이상 또는 지름 3.2mm 이상 경동선",
+      "인장 강도 2.30kN 이상 또는 지름 2.6mm 이상 경동선",
+      "인장 강도 8.01kN 이상 또는 지름 5mm 이상 경동선",
+      "인장 강도 1.38kN 이상 또는 지름 2mm 이상 경동선"
+    ],
+    "answer": 2,
+    "oneLineConcept": "400V 이하 저압 가공 절연전선: 2.30kN 또는 2.6mm",
+    "explanation": "사용 전압 400V 이하의 저압 가공 전선은 끊어지지 않을 만큼 굵어야 합니다.\n\n1. 절연 전선: 인장 강도 2.30kN 이상 또는 지름 2.6mm 이상 경동선\n2. 절연 전선이 아닌 경우: 인장 강도 3.43kN 이상 또는 지름 3.2mm 이상\n3. 400V 초과 저압 또는 고압으로 시가지에 시설하는 경우: 8.01kN 이상 또는 지름 5mm 이상 경동선\n\n절연 전선은 피복이 있어 조금 가는 전선도 허용됩니다.\n\n**틀린 선지**\n- 인장 강도 3.43kN 이상 또는 지름 3.2mm 이상 경동선: 3.43kN·3.2mm 는 400V 이하라도 절연 전선이 아닌 경우의 기준입니다.\n- 인장 강도 8.01kN 이상 또는 지름 5mm 이상 경동선: 8.01kN·5mm 는 400V 초과 저압이나 고압을 시가지에 시설할 때의 기준입니다.\n- 인장 강도 1.38kN 이상 또는 지름 2mm 이상 경동선: 1.38kN·2mm 는 전기 울타리용 전선의 기준입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "가공 전선 굵기",
+      "저압"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-kec-line-0006",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "kec",
+    "chapterId": "kec-line",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "고압 가공 전선으로 경동선을 쓸 때, 처짐 정도(이도)를 정하는 데 적용하는 전선의 안전율은 얼마 이상인가?",
+    "choices": [
+      "2.5 이상",
+      "2.0 이상",
+      "2.2 이상",
+      "1.33 이상"
+    ],
+    "answer": 3,
+    "oneLineConcept": "가공전선 안전율: 경동선·내열 동합금선 2.2, 그 밖 2.5",
+    "explanation": "가공 전선은 너무 팽팽하게 당기면 바람이나 추위에 끊어질 수 있어, 전선 세기에 여유(안전율)를 두고 처짐(이도)을 정합니다.\n\n1. 경동선 또는 내열 동합금선: 안전율 2.2 이상\n2. 그 밖의 전선(알루미늄선 등): 2.5 이상\n\n**틀린 선지**\n- 2.5 이상: 2.5 는 경동선·내열 동합금선이 아닌 그 밖의 전선 기준입니다.\n- 2.0 이상: 2.0 은 지지물 기초의 안전율입니다.\n- 1.33 이상: 1.33 은 이상 시 상정 하중에 대한 철탑 기초의 안전율입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "가공 전선",
+      "안전율"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-kec-line-0007",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "kec",
+    "chapterId": "kec-line",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "저압 가공 전선이 건조물의 상부 조영재(지붕·옥상 등) 위쪽으로 접근할 때, 전선으로 일반 절연 전선(고압·특고압 절연 전선이나 케이블이 아닌 것)을 쓰면 이격 거리는 몇 m 이상인가?",
+    "choices": [
+      "1.2m 이상",
+      "2m 이상",
+      "1m 이상",
+      "2.5m 이상"
+    ],
+    "answer": 2,
+    "oneLineConcept": "저압 가공전선-상부 조영재 위쪽: 2m(케이블 등 1m)",
+    "explanation": "저압 가공 전선이 건물 지붕 위쪽을 지날 때는 사람이 지붕에 올라가도 닿지 않도록 거리를 둡니다.\n\n1. 상부 조영재의 위쪽: 2m 이상(고압 절연 전선·특고압 절연 전선·케이블은 1m 이상)\n2. 상부 조영재의 옆쪽이나 아래쪽, 그 밖의 조영재: 1.2m 이상(사람이 쉽게 닿지 않으면 0.8m, 케이블 등은 0.4m 까지)\n\n문제는 일반 절연 전선이 위쪽으로 접근하는 경우이므로 2m 이상입니다.\n\n**틀린 선지**\n- 1m 이상: 1m 는 고압·특고압 절연 전선이나 케이블을 쓸 때의 값입니다.\n- 1.2m 이상: 1.2m 는 옆쪽·아래쪽 등 위쪽이 아닌 방향의 값입니다.\n- 2.5m 이상: 2.5m 는 저압 가공 전선 기준이 아닙니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "가공 전선",
+      "건조물 접근"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-kec-line-0008",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "kec",
+    "chapterId": "kec-line",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "사용 전압이 345kV 인 특고압 가공 전선을 산지 등이 아닌 일반 장소에 시설할 때, 지표상 높이는 몇 m 이상인가?",
+    "choices": [
+      "8.16m",
+      "8.40m",
+      "8.28m",
+      "6.00m"
+    ],
+    "answer": 3,
+    "oneLineConcept": "160kV 초과: 6m + 10kV(끝수 올림)마다 0.12m",
+    "explanation": "사용 전압이 160kV 를 넘는 특고압 가공 전선의 일반 장소 높이는 6m 에 10kV 마다 0.12m 를 더합니다. 10kV 미만의 끝수는 10kV 로 올려 셉니다.\n\n1. 160kV 를 넘는 부분: 345 - 160 = 185kV\n2. 10kV 단위 수: 185 ÷ 10 = 18.5 → 올려서 19단\n3. 더할 높이: 19 × 0.12 = 2.28m\n4. 전체 높이: 6 + 2.28 = 8.28m\n5. 확인: 18단으로 내림하면 8.16m 가 되므로, 끝수를 올렸는지 꼭 확인합니다.\n\n**틀린 선지**\n- 8.16m: 18.5 를 18단으로 내림해 계산한 값입니다. 끝수는 올려야 합니다.\n- 8.40m: 20단으로 계산한 값입니다. 185kV 는 19단입니다.\n- 6.00m: 6m 는 35kV 초과 160kV 이하일 때의 높이로, 160kV 를 넘는 부분의 높이를 더하지 않았습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "특고압 가공 전선",
+      "높이 계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+]

@@ -1,0 +1,182 @@
+[
+  {
+    "id": "electrical-industrial-engineer-dc-machine-0001",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "electric-machines",
+    "chapterId": "dc-machine",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "극수 4, 전기자 도체 수 400, 1극당 자속 0.01Wb, 회전 속도 1,200rpm 인 중권 직류 발전기의 유기 기전력은 몇 V 인가?",
+    "choices": [
+      "160V",
+      "80V",
+      "320V",
+      "40V"
+    ],
+    "answer": 2,
+    "oneLineConcept": "E = pZΦN ÷ (60a), 중권 a = p, 파권 a = 2",
+    "explanation": "1. 중권이므로 병렬 회로 수 a = 극수 p = 4\n2. E = (4 × 400 × 0.01 × 1,200) ÷ (60 × 4)\n3. 분자 = 19,200, 분모 = 240\n4. E = 19,200 ÷ 240 = 80V\n\n검산: 80 × 240 = 19,200 으로 맞습니다.\n\n**틀린 선지**\n- 160V: 파권(병렬 회로 수 a = 2)으로 계산한 값입니다. 중권은 병렬 회로 수가 극수와 같습니다.\n- 320V: 병렬 회로 수를 1 로 놓고 계산한 값입니다.\n- 40V: 병렬 회로 수를 8 로 잘못 넣은 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "유기 기전력",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-dc-machine-0002",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "electric-machines",
+    "chapterId": "dc-machine",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "직류기에서 주자극 사이에 보극을 설치하는 주된 목적은?",
+    "choices": [
+      "정류를 좋게 하기 위해",
+      "계자 자속을 늘려 출력을 키우기 위해",
+      "회전 속도를 높이기 위해",
+      "전기자 저항을 줄이기 위해"
+    ],
+    "answer": 1,
+    "oneLineConcept": "보극: 정류 개선(리액턴스 전압 상쇄)",
+    "explanation": "정류는 브러시 아래에서 코일의 전류 방향이 바뀌는 과정입니다. 이때 생기는 리액턴스 전압 때문에 불꽃이 생기는데, 보극이 이를 상쇄하는 전압을 만들어 **정류를 좋게** 합니다. 보극은 전기자 반작용도 일부 줄여 줍니다.\n\n**틀린 선지**\n- 계자 자속을 늘려 출력을 키우기 위해: 자속은 주자극(계자)이 만듭니다. 보극은 정류용입니다.\n- 회전 속도를 높이기 위해: 보극은 속도 제어 장치가 아닙니다.\n- 전기자 저항을 줄이기 위해: 보극은 저항과 관계가 없습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "보극",
+      "정류"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-dc-machine-0003",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "electric-machines",
+    "chapterId": "dc-machine",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "직류 발전기의 무부하 전압이 242V, 정격 부하 때 단자 전압이 220V 일 때 전압 변동률은 몇 % 인가?",
+    "choices": [
+      "약 9.1%",
+      "22%",
+      "1.1%",
+      "10%"
+    ],
+    "answer": 4,
+    "oneLineConcept": "전압 변동률 = (무부하 전압 - 정격 전압) ÷ 정격 전압 × 100",
+    "explanation": "1. 전압 차이 = 242 - 220 = 22V\n2. 전압 변동률 = 22 ÷ 220 × 100 = 10%\n\n검산: 220V 의 10% 는 22V, 220 + 22 = 242V 로 맞습니다.\n\n**틀린 선지**\n- 약 9.1%: 무부하 전압 242V 로 나눈 값입니다. 전압 변동률은 정격 전압으로 나눕니다.\n- 22%: 전압 차이 22V 를 그대로 %로 쓴 값입니다.\n- 1.1%: 242 ÷ 220 을 그대로 쓴 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "전압 변동률",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-dc-machine-0004",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "electric-machines",
+    "chapterId": "dc-machine",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "단자 전압 100V 로 부하에 95A 를 공급하는 직류 분권 발전기가 있다. 계자 저항이 20Ω, 전기자 저항이 0.1Ω 일 때 유기 기전력은 몇 V 인가? (브러시 전압 강하 등은 무시한다)",
+    "choices": [
+      "109.5V",
+      "110.5V",
+      "110V",
+      "100.5V"
+    ],
+    "answer": 3,
+    "oneLineConcept": "분권 발전기: Ia = I + If, E = V + IaRa",
+    "explanation": "1. 계자 전류 If = 100 ÷ 20 = 5A\n2. 전기자 전류 Ia = 부하 전류 + 계자 전류 = 95 + 5 = 100A\n3. 전기자 전압 강하 = 100 × 0.1 = 10V\n4. E = 100 + 10 = 110V\n\n검산: (110 - 100) ÷ 0.1 = 100A 로 전기자 전류와 같습니다.\n\n**틀린 선지**\n- 109.5V: 부하 전류 95A 만 전기자 전류로 본 값입니다. 계자 전류 5A 를 더해야 합니다.\n- 110.5V: 계자 전류를 10A 로 잘못 구해 전기자 전류를 105A 로 계산한 값입니다.\n- 100.5V: 계자 전류 5A 에만 전기자 저항을 곱해 전압 강하를 0.5V 로 본 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "분권 발전기",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-dc-machine-0005",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "electric-machines",
+    "chapterId": "dc-machine",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "직류 전동기의 속도 제어에서 워드 레오나드 방식은 어떤 제어 방법에 속하는가?",
+    "choices": [
+      "계자 제어",
+      "전압 제어",
+      "저항 제어",
+      "주파수 제어"
+    ],
+    "answer": 2,
+    "oneLineConcept": "워드 레오나드·일그너 방식 = 전압 제어",
+    "explanation": "직류 전동기의 속도는 전기자에 거는 전압에 거의 비례합니다. 워드 레오나드 방식은 별도의 발전기로 전동기에 공급하는 전압을 바꾸어 속도를 넓은 범위에서 부드럽게 조절합니다. 그래서 **전압 제어**에 속합니다. 일그너 방식도 같은 전압 제어입니다.\n\n**틀린 선지**\n- 계자 제어: 계자 저항을 바꾸어 자속을 조절하는 방법입니다. 워드 레오나드는 전기자 전압을 바꿉니다.\n- 저항 제어: 전기자 회로에 저항을 넣는 방법으로, 손실이 커서 효율이 나쁩니다.\n- 주파수 제어: 직류 전동기에는 주파수가 없습니다. 교류 전동기의 방법입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "속도 제어",
+      "워드 레오나드"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+]

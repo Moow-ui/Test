@@ -1,0 +1,293 @@
+[
+  {
+    "id": "electrical-industrial-engineer-protection-0001",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "power-engineering",
+    "chapterId": "protection",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "기준 용량이 10MVA 이고 고장점까지의 %임피던스가 5% 일 때, 3상 단락 용량은 몇 MVA 인가?",
+    "choices": [
+      "200MVA",
+      "50MVA",
+      "0.5MVA",
+      "20MVA"
+    ],
+    "answer": 1,
+    "oneLineConcept": "단락 용량 Ps = (100 ÷ %Z) × 기준 용량",
+    "explanation": "1. 100 ÷ %Z = 100 ÷ 5 = 20\n2. Ps = 20 × 10MVA = 200MVA\n\n검산: %임피던스가 작을수록 단락 용량은 커집니다. 5% 면 정격의 20배입니다.\n\n**틀린 선지**\n- 50MVA: %임피던스를 곱한 값입니다. 단락 용량은 %임피던스로 나눕니다.\n- 0.5MVA: 기준 용량에 5% 를 곱한 값입니다.\n- 20MVA: 100 대신 10 을 넣어 계산한 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "%임피던스",
+      "단락 용량",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-protection-0002",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "power-engineering",
+    "chapterId": "protection",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "용량 10MVA, %임피던스 10% 인 발전기에 용량 20MVA, %임피던스 5% 인 변압기가 직렬로 연결되어 있다. 변압기 2차 측에서 3상 단락이 일어났을 때 단락 용량은 몇 MVA 인가? (기준 용량 10MVA)",
+    "choices": [
+      "약 66.7MVA",
+      "50MVA",
+      "8MVA",
+      "80MVA"
+    ],
+    "answer": 4,
+    "oneLineConcept": "%Z 는 기준 용량에 비례해 환산한 뒤 더한다",
+    "explanation": "1. 변압기 %Z 를 기준 10MVA 로 환산: 5% × (10 ÷ 20) = 2.5%\n2. 합계 %Z = 10% + 2.5% = 12.5%\n3. 단락 용량 = (100 ÷ 12.5) × 10MVA = 8 × 10 = 80MVA\n\n검산: 80 × 12.5 ÷ 100 = 10MVA 로 기준 용량과 같습니다.\n\n**틀린 선지**\n- 약 66.7MVA: 변압기 %임피던스를 기준 용량으로 바꾸지 않고 10% + 5% = 15% 로 계산한 값입니다.\n- 50MVA: 변압기 %임피던스를 반대로 환산(5% → 10%)하여 합계 20% 로 계산한 값입니다.\n- 8MVA: %임피던스로 나누지 않고 곱한 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "%임피던스",
+      "기준 용량 환산",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-protection-0003",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "power-engineering",
+    "chapterId": "protection",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "1선 지락(전선 1가닥이 땅에 닿는 고장) 때 고장이 나지 않은 다른 상(건전상)의 전압 상승이 가장 작은 중성점 접지 방식은?",
+    "choices": [
+      "직접 접지 방식",
+      "비접지 방식",
+      "소호 리액터 접지 방식",
+      "고저항 접지 방식"
+    ],
+    "answer": 1,
+    "oneLineConcept": "직접 접지: 건전상 전압 상승 최소, 지락 전류 최대",
+    "explanation": "직접 접지 방식은 중성점을 저항 없이 땅에 바로 연결합니다. 그래서 지락이 나도 중성점 전위가 거의 올라가지 않아 다른 상의 전압 상승이 가장 작습니다. 대신 지락 전류가 커서 근처 통신선에 유도 장해를 주기 쉽습니다.\n\n**틀린 선지**\n- 비접지 방식: 건전상 전압이 선간 전압 가까이(약 √3 배) 올라가 전압 상승이 큽니다.\n- 소호 리액터 접지 방식: 지락 전류는 작지만 건전상 전압 상승은 큰 편입니다.\n- 고저항 접지 방식: 저항이 커서 중성점 전위가 올라가므로 건전상 전압 상승이 직접 접지보다 큽니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "중성점 접지",
+      "지락"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-protection-0004",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "power-engineering",
+    "chapterId": "protection",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "소호 리액터 접지 방식은 리액터를 무엇과 병렬 공진(서로 상쇄)시켜 지락 전류를 거의 0 으로 만드는가?",
+    "choices": [
+      "선로의 저항",
+      "선로의 대지 정전용량",
+      "변압기의 누설 리액턴스",
+      "선로의 인덕턴스"
+    ],
+    "answer": 2,
+    "oneLineConcept": "소호 리액터 ↔ 대지 정전용량 병렬 공진",
+    "explanation": "지락이 나면 선로와 땅 사이의 정전용량을 통해 진상(앞선) 전류가 흐릅니다. 중성점에 넣은 소호 리액터는 지상(뒤진) 전류를 흘려 이 전류를 상쇄합니다. 즉 리액터와 **대지 정전용량**이 병렬 공진하여 지락 전류가 거의 0 이 되고, 아크가 저절로 꺼집니다.\n\n**틀린 선지**\n- 선로의 저항: 저항은 공진에 관여하지 않습니다. 공진은 인덕턴스와 정전용량 사이에서 일어납니다.\n- 변압기의 누설 리액턴스: 리액터와 같은 성질(유도성)이라 서로 상쇄할 수 없습니다.\n- 선로의 인덕턴스: 리액터와 같은 유도성이므로 공진 상대가 아닙니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "소호 리액터",
+      "중성점 접지"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-protection-0005",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "power-engineering",
+    "chapterId": "protection",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "송전 선로에서 계전기 설치점부터 고장점까지의 임피던스(거리에 비례)를 측정하여 동작하는 계전기는?",
+    "choices": [
+      "거리 계전기",
+      "과전류 계전기",
+      "차동 계전기",
+      "부족 전압 계전기"
+    ],
+    "answer": 1,
+    "oneLineConcept": "거리 계전기: 고장점까지 임피던스로 동작",
+    "explanation": "거리 계전기는 계전기가 있는 곳의 전압과 전류로 임피던스(전압 ÷ 전류)를 계산합니다. 선로의 임피던스는 거리에 비례하므로, 이 값을 보면 고장점이 보호 구간 안인지 알 수 있습니다. 주로 송전 선로의 단락 보호에 씁니다.\n\n**틀린 선지**\n- 과전류 계전기: 전류가 정해진 값보다 커지면 동작합니다. 임피던스를 재지는 않습니다.\n- 차동 계전기: 보호 구간에 들어오고 나가는 전류의 차이로 동작합니다.\n- 부족 전압 계전기: 전압이 정해진 값보다 낮아지면 동작합니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "보호 계전기",
+      "거리 계전기"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-protection-0006",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "power-engineering",
+    "chapterId": "protection",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "보호 계전기에서 고장 전류가 클수록 동작 시간이 짧아지는 특성을 무엇이라 하는가?",
+    "choices": [
+      "정한시 특성",
+      "순한시 특성",
+      "계단식 특성",
+      "반한시 특성"
+    ],
+    "answer": 4,
+    "oneLineConcept": "반한시: 전류↑ → 동작 시간↓",
+    "explanation": "'반(反)'은 반대라는 뜻입니다. 전류가 커질수록 동작 시간이 **반대로 짧아지는** 특성을 반한시 특성이라고 합니다. 큰 고장일수록 빨리 끊어 설비를 보호할 수 있습니다.\n\n**틀린 선지**\n- 정한시 특성: 전류 크기와 상관없이 정해진 시간이 지나면 동작하는 특성입니다.\n- 순한시 특성: 정해진 값 이상의 전류가 흐르면 시간 지연 없이 곧바로 동작하는 특성입니다.\n- 계단식 특성: 보호 구간별로 동작 시간을 단계적으로 나눈 특성으로, 거리 계전기에 씁니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "보호 계전기",
+      "한시 특성"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-protection-0007",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "power-engineering",
+    "chapterId": "protection",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "기준 용량 10MVA, 선간 전압 22.9kV 인 3상 선로에서 고장점까지의 %임피던스가 10% 일 때 3상 단락 전류는 약 몇 A 인가?",
+    "choices": [
+      "약 4,367A",
+      "약 252A",
+      "약 1,456A",
+      "약 2,521A"
+    ],
+    "answer": 4,
+    "oneLineConcept": "단락 전류 Is = (100 ÷ %Z) × 정격 전류",
+    "explanation": "1. 정격 전류 In = 10,000,000 ÷ (√3 × 22,900) ≈ 252.1A\n2. 100 ÷ %Z = 100 ÷ 10 = 10\n3. Is = 10 × 252.1 ≈ 2,521A\n\n검산: √3 × 22.9kV × 2,521A ≈ 100MVA 로, 단락 용량(10MVA × 10)과 같습니다.\n\n**틀린 선지**\n- 약 4,367A: 정격 전류를 구할 때 √3 으로 나누지 않은 값입니다.\n- 약 252A: 정격 전류만 구하고 100 ÷ %Z 를 곱하지 않은 값입니다.\n- 약 1,456A: √3 으로 한 번 더 나눈 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "단락 전류",
+      "%임피던스",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-protection-0008",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "power-engineering",
+    "chapterId": "protection",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "피뢰기(이상 전압을 땅으로 흘려 기기를 보호하는 장치)가 방전하고 있는 동안 피뢰기 단자 사이에 남는 전압을 무엇이라 하는가?",
+    "choices": [
+      "제한 전압",
+      "정격 전압",
+      "충격 방전 개시 전압",
+      "상용 주파 방전 개시 전압"
+    ],
+    "answer": 1,
+    "oneLineConcept": "제한 전압: 피뢰기 방전 중 단자에 남는 전압",
+    "explanation": "피뢰기는 이상 전압이 오면 방전하여 전류를 땅으로 흘립니다. 이때도 피뢰기 단자에는 어느 정도 전압이 남는데, 이것을 **제한 전압**이라 합니다. 제한 전압이 낮을수록 보호받는 기기에 걸리는 전압이 낮아 보호 성능이 좋습니다.\n\n**틀린 선지**\n- 정격 전압: 방전 뒤 이어 흐르는 전류(속류)를 끊을 수 있는 최고 상용 주파수 전압입니다.\n- 충격 방전 개시 전압: 번개 같은 충격파가 왔을 때 방전이 시작되는 전압입니다.\n- 상용 주파 방전 개시 전압: 평상시 주파수의 전압에서 방전이 시작되는 전압입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "피뢰기",
+      "제한 전압"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+]

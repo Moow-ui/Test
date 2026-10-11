@@ -1,0 +1,292 @@
+[
+  {
+    "id": "electrical-industrial-engineer-transient-network-0001",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "circuit-theory",
+    "chapterId": "transient-network",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "저항 2MΩ 과 정전용량 5μF 가 직렬로 연결된 R-C 회로의 시정수는 몇 초인가?",
+    "choices": [
+      "0.4초",
+      "10초",
+      "2.5초",
+      "1초"
+    ],
+    "answer": 2,
+    "oneLineConcept": "R-C 회로의 시정수 τ = R × C",
+    "explanation": "시정수는 과도 현상이 얼마나 빨리 끝나는지를 나타내는 시간입니다.\n1. τ = R × C\n2. τ = 2 × 10⁶ × 5 × 10⁻⁶\n3. τ = 10초\n4. 확인: 메가(10⁶)와 마이크로(10⁻⁶)가 서로 없어집니다.\n\n**틀린 선지**\n- 2.5초: 곱하지 않고 5 ÷ 2 로 나눈 값입니다.\n- 0.4초: 곱하지 않고 2 ÷ 5 로 나눈 값입니다.\n- 1초: M(10⁶)과 μ(10⁻⁶)를 바꿀 때 자릿수를 틀린 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "시정수",
+      "과도 현상",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-transient-network-0002",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "circuit-theory",
+    "chapterId": "transient-network",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "함수 f(t) = t (t ≥ 0) 의 라플라스 변환은?",
+    "choices": [
+      "1 ÷ s",
+      "1 ÷ (s + 1)",
+      "s",
+      "1 ÷ s²"
+    ],
+    "answer": 4,
+    "oneLineConcept": "라플라스 변환: t → 1/s², u(t) → 1/s",
+    "explanation": "자주 나오는 라플라스 변환 쌍을 외워 둡니다.\n1. 단위 계단 u(t) → 1 ÷ s\n2. 램프 함수 t → 1 ÷ s²\n3. t^n → n! ÷ s^(n+1)\n확인: n = 1 을 넣으면 1! ÷ s² = 1 ÷ s² 입니다.\n\n**틀린 선지**\n- 1 ÷ s: 단위 계단 함수 u(t) 의 라플라스 변환입니다.\n- s: 미분 연산에 해당하는 값으로, t 의 변환이 아닙니다.\n- 1 ÷ (s + 1): 지수 함수 e^(-t) 의 라플라스 변환입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "라플라스 변환"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-transient-network-0003",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "circuit-theory",
+    "chapterId": "transient-network",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "주기적인 비정현파를 직류분, 기본파, 여러 고조파 정현파의 합으로 나누어 나타내는 방법은?",
+    "choices": [
+      "푸리에 급수",
+      "키르히호프의 법칙",
+      "테브난의 정리",
+      "라플라스 변환"
+    ],
+    "answer": 1,
+    "oneLineConcept": "푸리에 급수: 비정현파 = 직류분 + 기본파 + 고조파",
+    "explanation": "찌그러진 파형(비정현파)도 주기가 있으면 여러 정현파로 나눌 수 있습니다. 이를 **푸리에 급수**라고 하며, 직류분 + 기본파 + 고조파(기본파의 2배, 3배, … 주파수)로 이루어집니다. 비정현파의 실효값과 전력은 이렇게 나눈 각 성분으로 구합니다.\n\n**틀린 선지**\n- 라플라스 변환: 시간 함수를 s 함수로 바꾸어 미분 방정식을 쉽게 푸는 방법입니다.\n- 테브난의 정리: 회로를 전압원과 직렬 임피던스로 바꾸는 방법입니다.\n- 키르히호프의 법칙: 회로의 전류·전압 관계를 세우는 기본 법칙입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "비정현파",
+      "푸리에 급수"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-transient-network-0004",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "circuit-theory",
+    "chapterId": "transient-network",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "R-C 직렬 회로에 직류 전압 E 를 가했다. 처음에 콘덴서가 비어 있었다면, 시정수 τ 만큼 시간이 지났을 때 콘덴서 전압은 약 얼마인가?",
+    "choices": [
+      "0.368E",
+      "E",
+      "0.5E",
+      "0.632E"
+    ],
+    "answer": 4,
+    "oneLineConcept": "충전 시 t = τ 에서 콘덴서 전압 = E × (1 - e⁻¹) ≒ 0.632E",
+    "explanation": "콘덴서 충전 전압은 vc = E × (1 - e^(-t/τ)) 입니다.\n1. t = τ 를 넣으면 vc = E × (1 - e⁻¹)\n2. e⁻¹ ≒ 0.368\n3. vc ≒ E × (1 - 0.368) = 0.632E\n4. 확인: 저항 전압은 E - 0.632E = 0.368E 입니다.\n\n**틀린 선지**\n- 0.368E: 이때 저항에 걸리는 전압(또는 방전할 때 남은 전압)입니다.\n- 0.5E: 시정수를 반감기(절반이 되는 시간)로 착각한 값입니다.\n- E: 충분히 오랜 시간이 지난 뒤의 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "과도 현상",
+      "시정수"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-transient-network-0005",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "circuit-theory",
+    "chapterId": "transient-network",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "어떤 비정현파 전압에서 기본파의 실효값이 100V, 제3고조파가 30V, 제5고조파가 40V 이다. 이 전압의 왜형률은?",
+    "choices": [
+      "0.3",
+      "0.4",
+      "0.5",
+      "0.7"
+    ],
+    "answer": 3,
+    "oneLineConcept": "왜형률 = √(고조파 실효값² 의 합) ÷ 기본파 실효값",
+    "explanation": "왜형률은 파형이 정현파에서 얼마나 찌그러졌는지를 나타냅니다.\n1. 고조파 전체 실효값 = √(30² + 40²) = √2,500 = 50V\n2. 왜형률 = 50 ÷ 100 = 0.5\n3. 확인: 고조파가 없으면 왜형률은 0 입니다.\n\n**틀린 선지**\n- 0.7: 고조파를 제곱합의 제곱근으로 구하지 않고 그냥 더한 값(70 ÷ 100)입니다.\n- 0.4: 제5고조파만 반영한 값입니다.\n- 0.3: 제3고조파만 반영한 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "비정현파",
+      "왜형률",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-transient-network-0006",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "circuit-theory",
+    "chapterId": "transient-network",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "직렬 임피던스 Z 하나만으로 이루어진 4단자 회로망의 4단자 정수 B 는?",
+    "choices": [
+      "1 ÷ Z",
+      "Z",
+      "1",
+      "0"
+    ],
+    "answer": 2,
+    "oneLineConcept": "직렬 임피던스 4단자망: A = 1, B = Z, C = 0, D = 1",
+    "explanation": "4단자 정수는 V1 = A × V2 + B × I2, I1 = C × V2 + D × I2 로 정합니다.\n1. 직렬 임피던스만 있으면 I1 = I2 → C = 0, D = 1\n2. V1 = V2 + Z × I2 → A = 1, B = Z\n3. 확인: AD - BC = 1 × 1 - Z × 0 = 1 로 성립합니다.\n\n**틀린 선지**\n- 1 ÷ Z: 병렬 어드미턴스 회로의 정수 C 와 헷갈린 값입니다.\n- 1: 이 회로의 정수 A, D 의 값입니다.\n- 0: 이 회로의 정수 C 의 값입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "4단자망"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-transient-network-0007",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "circuit-theory",
+    "chapterId": "transient-network",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "어떤 회로에 v = 100√2 sin ωt + 50√2 sin 3ωt [V] 의 전압을 가했더니 i = 10√2 sin(ωt - 60°) + 5√2 sin 3ωt [A] 의 전류가 흘렀다. 이 회로의 소비 전력은 몇 W 인가?",
+    "choices": [
+      "500W",
+      "1,000W",
+      "750W",
+      "1,250W"
+    ],
+    "answer": 3,
+    "oneLineConcept": "비정현파 전력 = 같은 주파수 성분끼리의 전력의 합",
+    "explanation": "비정현파의 전력은 **같은 주파수 성분끼리만** 전력을 구해 더합니다(주파수가 다른 성분끼리는 전력을 만들지 않습니다).\n1. 기본파: 100 × 10 × cos60° = 500W\n2. 제3고조파: 50 × 5 × cos0° = 250W\n3. 합계: 500 + 250 = 750W\n4. 확인: 식의 √2 는 최대값 표시이므로 실효값은 각각 100V, 10A, 50V, 5A 입니다.\n\n**틀린 선지**\n- 1,250W: 기본파의 위상차 60° 를 무시한 값입니다.\n- 500W: 기본파 전력만 구하고 제3고조파 전력을 빠뜨린 값입니다.\n- 1,000W: 기본파의 피상 전력(100 × 10)만 쓴 값입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "비정현파",
+      "전력",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-transient-network-0008",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "circuit-theory",
+    "chapterId": "transient-network",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "손실이 없는 분포 정수 선로의 단위 길이당 인덕턴스가 0.9mH/km, 정전용량이 0.01μF/km 일 때 특성 임피던스는 몇 Ω 인가?",
+    "choices": [
+      "300Ω",
+      "90,000Ω",
+      "3Ω",
+      "약 0.0033Ω"
+    ],
+    "answer": 1,
+    "oneLineConcept": "무손실 선로 특성 임피던스 Z₀ = √(L ÷ C)",
+    "explanation": "특성 임피던스는 선로 어디서나 전압과 전류의 비로, 선로 길이와 관계없습니다.\n1. L = 0.9 × 10⁻³ H/km, C = 0.01 × 10⁻⁶ = 1 × 10⁻⁸ F/km\n2. L ÷ C = 0.9 × 10⁻³ ÷ 10⁻⁸ = 90,000\n3. Z₀ = √90,000 = 300Ω\n4. 확인: km 단위는 L 과 C 에 똑같이 들어 있어 나누면 없어집니다.\n\n**틀린 선지**\n- 90,000Ω: L ÷ C 에서 제곱근을 하지 않은 값입니다.\n- 3Ω: 단위(m, μ)를 바꿀 때 자릿수를 틀린 값입니다.\n- 약 0.0033Ω: √(C ÷ L) 로 L 과 C 를 거꾸로 넣은 값입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "분포 정수 회로",
+      "특성 임피던스",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+]

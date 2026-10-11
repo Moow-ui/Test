@@ -1,0 +1,372 @@
+{
+  "slug": "electrical-industrial-engineer",
+  "date": "2026-10-12",
+  "reference": "한국전기설비규정(KEC) 2026-01-05 시행 전문(law.go.kr), 전기 이론 재계산(python3)",
+  "round1": {
+    "theory": {
+      "chapters": {
+        "electrostatic-field": {
+          "result": "PASS",
+          "issues": []
+        },
+        "magnetic-field": {
+          "result": "PASS",
+          "issues": [
+            {
+              "where": "points[3]",
+              "text": "정사각형 코일 중심 자계는 2√2I/(πa).",
+              "problem": "style: a 의 뜻이 없음. 같은 장에서 a 는 반지름으로 쓰이므로 헷갈릴 수 있음 (식 자체는 한 변 a 일 때 맞음)",
+              "fix": "정사각형 코일(한 변 a) 중심 자계는 2√2I/(πa)."
+            }
+          ]
+        },
+        "em-induction": {
+          "result": "FAIL",
+          "issues": [
+            {
+              "where": "points[3]",
+              "text": "주파수 2배이면 와전류손 4배, 히스테리시스손 2배.",
+              "problem": "최대 자속 밀도 Bm 이 일정할 때만 성립. 변압기처럼 전압이 일정하면 Bm ∝ 1/f 이므로 와전류손은 변하지 않고 히스테리시스손은 줄어든다(시험 단골 함정). 조건 없이 쓰면 틀린 답으로 이끈다.",
+              "fix": "최대 자속 밀도가 일정할 때 주파수 2배이면 와전류손 4배, 히스테리시스손 2배. (전압이 일정한 변압기에서는 와전류손 일정, 히스테리시스손 감소)"
+            },
+            {
+              "where": "compare.rows[0]",
+              "text": "주파수와의 관계: f 에 비례 / f² 에 비례",
+              "problem": "style: 같은 조건(Bm 일정)이 빠짐",
+              "fix": "표 제목이나 행 이름에 '(최대 자속 밀도 일정)' 을 붙인다."
+            }
+          ]
+        },
+        "ac-circuit": {
+          "result": "PASS",
+          "issues": [
+            {
+              "where": "concepts[4].tip / compare",
+              "text": "병렬 공진은 전류 최소 / 임피던스 최대",
+              "problem": "style: 이상적인 L·C 병렬 공진 기준임(전원에서 본 전체 전류). 시험 수준에서는 맞음",
+              "fix": "그대로 두거나 '(전원 쪽 전체 전류)' 를 덧붙인다."
+            }
+          ]
+        },
+        "three-phase": {
+          "result": "PASS",
+          "issues": []
+        },
+        "transient-network": {
+          "result": "PASS",
+          "issues": []
+        },
+        "transmission": {
+          "result": "PASS",
+          "issues": []
+        },
+        "protection": {
+          "result": "FAIL",
+          "issues": [
+            {
+              "where": "summary[0]",
+              "text": "정격 전압을 걸었을 때 임피던스에서 떨어지는 전압이 몇 %인지를 나타낸 값입니다.",
+              "problem": "정의가 틀림. %Z 는 정격 '전류'가 흐를 때 임피던스에서 생기는 전압 강하를 정격 전압에 대한 % 로 나타낸 것이다(정격 전압을 걸면 강하는 항상 100%). concepts[0] 의 정의와도 모순.",
+              "fix": "정격 전류가 흐를 때 임피던스에서 떨어지는 전압이 정격 전압의 몇 %인지를 나타낸 값입니다."
+            }
+          ]
+        },
+        "distribution": {
+          "result": "PASS",
+          "issues": []
+        },
+        "generation": {
+          "result": "PASS",
+          "issues": []
+        },
+        "dc-machine": {
+          "result": "PASS",
+          "issues": []
+        },
+        "synchronous-machine": {
+          "result": "PASS",
+          "issues": []
+        },
+        "transformer": {
+          "result": "PASS",
+          "issues": []
+        },
+        "induction-motor": {
+          "result": "PASS",
+          "issues": []
+        },
+        "power-conversion": {
+          "result": "PASS",
+          "issues": []
+        }
+      }
+    },
+    "kec": {
+      "chapters": {
+        "kec-general": {
+          "result": "FAIL",
+          "issues": [
+            {
+              "where": "concepts[5].definition",
+              "text": "1선 지락 전류를 I 라 하면 일반적으로 150/I, 1초 초과 2초 이내 자동 차단이면 300/I, 1초 이내 자동 차단이면 600/I [Ω] 이하입니다.",
+              "problem": "KEC 142.5 1 나: 300/I·600/I 는 고압·특고압측 전로(또는 35kV 이하 특고압전로)가 저압측 전로와 혼촉하고 저압전로의 대지전압이 150V 를 초과하는 경우에만 적용된다. 조건 없이 쓰면 대지전압 150V 이하인 경우(이때는 150/I)에 틀린 설명이 된다. 출처에 조문 번호도 없음.",
+              "fix": "1선 지락 전류를 I 라 하면 일반적으로 150/I [Ω] 이하입니다. 혼촉 시 저압 전로의 대지 전압이 150V 를 넘는 경우에는 1초 초과 2초 이내 자동 차단이면 300/I, 1초 이내 자동 차단이면 600/I [Ω] 이하입니다. (source: 한국전기설비규정(KEC) 142.5)"
+            },
+            {
+              "where": "points[3]",
+              "text": "중성점 접지 저항 150/I·300/I·600/I 를 차단 시간과 짝지어 외웁니다.",
+              "problem": "위와 같은 이유로 300/I·600/I 의 적용 조건(혼촉 시 저압 대지전압 150V 초과)이 빠져 있다.",
+              "fix": "중성점 접지 저항 150/I(일반), 저압 대지 전압 150V 초과 시 300/I(1~2초 차단)·600/I(1초 이내 차단)."
+            },
+            {
+              "where": "concepts[3].definition",
+              "text": "사람이 닿을 우려가 있는 곳은 지하 0.75m 부터 지표상 2m 까지 합성수지관(두께 2mm 미만 제외)이나 몰드로 덮습니다.",
+              "problem": "KEC 142.3.1 3: 이 규정은 특고압·고압 전기설비 및 변압기 중성점 접지시스템의 접지도체에 적용된다(저압 일반에는 해당 없음). 적용 범위가 빠져 모든 접지 도체에 적용되는 것처럼 읽힌다. 나머지 수치(0.3m, 1m, 구리 16mm²[또는 철 50mm²])는 142.2 3 다·142.3.1 1 나와 일치.",
+              "fix": "특고압·고압 설비와 변압기 중성점 접지의 접지 도체가 사람이 닿을 우려가 있는 곳에 있으면 지하 0.75m 부터 지표상 2m 까지 합성수지관(두께 2mm 미만 제외)이나 몰드로 덮습니다. ... (source: KEC 142.2·142.3.1)"
+            },
+            {
+              "where": "concepts[1..6].source",
+              "text": "한국전기설비규정(KEC)",
+              "problem": "style: 조문 번호 없음. 확인된 해당 조문: 계통 접지 문자 203.1, 보호 도체 142.3.2(표 142.3-1), 접지 도체 시설 142.2·142.3.1, 수도관·철골 142.2 7, 중성점 접지 142.5, 누설 전류 132·전선 접속 123.",
+              "fix": "각 source.org 에 위 조문 번호 추가"
+            }
+          ]
+        },
+        "kec-wiring": {
+          "result": "PASS",
+          "issues": [
+            {
+              "where": "concepts[1].source / concepts[4].source",
+              "text": "KEC 212.4 / KEC 241.1",
+              "problem": "style: 조문 번호는 맞지만 세부 조문이 더 정확함 (식 IB≤In≤IZ, I2≤1.45IZ 는 212.4.1, 250V 는 241.1.2).",
+              "fix": "212.4.1 / 241.1.2"
+            },
+            {
+              "where": "concepts[0].source, concepts[3].source",
+              "text": "한국전기설비규정(KEC)",
+              "problem": "style: 조문 번호 없음. 주택 대지 전압은 231.6 2.",
+              "fix": "주택 대지 전압 source 에 231.6 추가"
+            }
+          ]
+        },
+        "kec-line": {
+          "result": "FAIL",
+          "issues": [
+            {
+              "where": "concepts[4].definition",
+              "text": "400V 이하 저압 가공 전선은 ... 경동선 이상입니다. 처짐을 정할 때 안전율은 경동선·내열 동합금선 2.2, 그 밖의 전선 2.5 이상입니다.",
+              "problem": "안전율 2.2/2.5 는 KEC 332.4(고압 가공전선, 케이블 제외) 규정이고, 저압 가공전선에는 222.6 에 따라 다심형 전선이거나 사용전압 400V 초과인 경우에만 준용된다. 400V 이하 저압 문장 바로 뒤에 붙어 있어 400V 이하 저압 전선에도 적용되는 것처럼 읽혀 틀린 설명이 된다. 굵기 수치(2.3kN/2.6mm, 3.43kN/3.2mm, 케이블 제외)는 222.5 2 와 일치.",
+              "fix": "400V 이하 저압 가공 전선은 케이블이 아니면 절연 전선은 인장강도 2.3kN 이상 또는 지름 2.6mm 이상 경동선, 그 밖에는 3.43kN 이상 또는 3.2mm 이상입니다(KEC 222.5). 고압 가공 전선(케이블 제외)은 처짐을 정할 때 안전율을 경동선·내열 동합금선 2.2, 그 밖의 전선 2.5 이상으로 합니다(KEC 332.4, 저압은 다심형 전선이거나 400V 초과일 때 준용)."
+            },
+            {
+              "where": "points[4], compare.rows[2..3]",
+              "text": "가공 전선 안전율 경동선 2.2, 그 밖 2.5.",
+              "problem": "위와 같은 적용 범위 누락(고압 가공전선 기준, 케이블 제외).",
+              "fix": "고압 가공 전선 안전율 경동선 2.2, 그 밖 2.5 (케이블 제외)."
+            },
+            {
+              "where": "concepts[2].tip",
+              "text": "교통에 지장이 없는 도로 이외의 곳은 4m 까지 허용됩니다.",
+              "problem": "KEC 222.7 1 라: 4m 까지 줄일 수 있는 경우는 (1) 도로 이외의 곳에 시설하는 경우 또는 (2) 절연전선·케이블로 옥외 조명용에 공급하며 교통에 지장이 없도록 시설하는 경우다. 두 조건을 섞어 부정확.",
+              "fix": "도로 이외의 곳에 시설하거나, 옥외 조명용 절연 전선·케이블로 교통에 지장이 없게 시설하면 4m 까지 낮출 수 있습니다."
+            },
+            {
+              "where": "concepts[1].definition",
+              "text": "전장 15m 이하는 전장의 1/6 이상, 15m 초과는 2.5m 이상",
+              "problem": "minor: 331.7 1 가 의 대상은 전장 16m 이하·설계하중 6.8kN 이하의 강관주·철근 콘크리트주 또는 목주이므로 '15m 초과'는 실질적으로 16m 이하까지다. 수치는 정확.",
+              "fix": "전장 15m 이하는 전장의 1/6 이상, 15m 초과 16m 이하는 2.5m 이상, ..."
+            },
+            {
+              "where": "concepts[6].source",
+              "text": "한국전기설비규정(KEC) 222.11",
+              "problem": "style: 222.11 은 실제 조문이며 332.11 에 준하도록 정하고 있고, 수치(위쪽 2m/절연전선·케이블 1m, 옆쪽·아래쪽 1.2m)는 표 332.11-1 에 있다. 수치 확인됨.",
+              "fix": "한국전기설비규정(KEC) 222.11(표 332.11-1)"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "round2": {
+    "theory": {
+      "chapters": {
+        "em-induction": {
+          "result": "FAIL",
+          "issues": [
+            {
+              "where": "summary[2]",
+              "text": "와전류손은 주파수의 제곱에 비례하므로 철심을 얇은 판으로 겹쳐 줄입니다.",
+              "problem": "조건 누락으로 일부 경우 틀림. 와전류손 ∝ (t·f·Bm)² 이므로 f² 비례는 최대 자속 밀도가 일정할 때만 성립한다. 전압이 일정한 변압기에서는 Bm ∝ V/f 라 와전류손이 주파수와 무관하다(자주 나오는 함정). concepts·points·compare 에는 조건이 있어 summary 와 어긋난다.",
+              "fix": "와전류손은 최대 자속 밀도가 일정할 때 주파수의 제곱에 비례하고 철판 두께의 제곱에도 비례하므로, 철심을 얇은 판으로 겹쳐 줄입니다."
+            }
+          ]
+        },
+        "protection": {
+          "result": "PASS",
+          "issues": []
+        }
+      }
+    },
+    "kec": {
+      "chapters": {
+        "kec-general": {
+          "result": "FAIL",
+          "issues": [
+            {
+              "where": "concepts[4].definition",
+              "text": "건축물 철골 등 금속제 몸체는 2Ω 이하일 때 접지극으로 쓸 수 있습니다.",
+              "problem": "범위 누락. KEC 142.2-7-나 에 따르면 철골 등 금속제는 비접지식 고압전로에 시설하는 기계기구의 철대·금속제 외함 접지공사, 또는 비접지식 고압전로와 저압전로를 결합하는 변압기 저압전로 접지공사의 접지극으로만 쓸 수 있고, 대지 저항 2Ω 이하를 유지할 때에 한한다. 지금 문장은 어떤 접지에나 쓸 수 있는 것처럼 읽힌다.",
+              "fix": "건축물·구조물의 철골 등 금속제는 대지와의 저항이 2Ω 이하일 때 비접지식 고압전로 기계기구 외함의 접지, 비접지식 고압전로와 저압전로를 결합하는 변압기 저압전로 접지의 접지극으로 쓸 수 있습니다."
+            },
+            {
+              "where": "concepts[6].definition",
+              "text": "절연 저항 측정이 곤란하면 누설 전류 1mA 이하로 절연 성능을 확인합니다.",
+              "problem": "범위 누락. KEC 132-1 은 사용전압이 저압인 전로에서 정전이 어려운 경우 등 절연저항 측정이 곤란할 때, 저항 성분의 누설 전류가 1mA 이하이면 적합한 것으로 본다. '저압 전로'와 '저항 성분'이 빠져 있다.",
+              "fix": "저압 전로에서 정전이 어려워 절연 저항 측정이 곤란하면 저항 성분의 누설 전류가 1mA 이하일 때 절연 성능이 적합한 것으로 봅니다."
+            },
+            {
+              "where": "concepts[1].source",
+              "text": "한국전기설비규정(KEC) 203.1",
+              "problem": "출처 일부 누락(사실 오류 아님). 문자 정의는 203.1 이 맞지만 'TN-C 는 계통 전체에서 PEN 도체를 겸용' 문장은 203.2-2 에 있다.",
+              "fix": "한국전기설비규정(KEC) 203.1·203.2"
+            },
+            {
+              "where": "concepts[6].definition",
+              "text": "전선을 접속할 때는 ... 세기를 20% 이상 감소시키지 않습니다.",
+              "problem": "style. KEC 123-1-가 의 문구 그대로(나전선 접속, 절연전선은 123-2 에서 준용). 시험 표현과 같아 그대로 두어도 되며, 연결선 접속 등 예외가 있다는 점만 참고.",
+              "fix": "변경 불필요"
+            }
+          ]
+        },
+        "kec-wiring": {
+          "result": "PASS",
+          "issues": [
+            {
+              "where": "concepts[0].source",
+              "text": "한국전기설비규정(KEC)",
+              "problem": "style/citation. 숫자는 모두 맞지만(합성수지관 1.5m: 232.11.3, 금속관 1.2/1mm: 232.12.2, 케이블 2m·캡타이어 1m: 232.51.1) 조항 번호가 없다.",
+              "fix": "한국전기설비규정(KEC) 232.11.3·232.12.2·232.51.1"
+            }
+          ]
+        },
+        "kec-line": {
+          "result": "FAIL",
+          "issues": [
+            {
+              "where": "concepts[1].definition 및 points[1]",
+              "text": "철근 콘크리트주로 16m 초과 20m 이하는 2.8m 이상입니다. / 16~20m 철근 콘크리트주 2.8m",
+              "problem": "조건 누락. KEC 331.7-1-나 의 2.8m 는 논이나 그 밖의 지반이 연약한 곳 이외에 시설하는 경우에만 적용된다. points 의 '16~20m' 도 '16m 초과'가 정확하다.",
+              "fix": "철근 콘크리트주로 16m 초과 20m 이하는 (논 등 연약한 지반이 아닌 곳에서) 2.8m 이상입니다. / points: '16m 초과 20m 이하 철근 콘크리트주 2.8m(연약 지반 제외)'"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "round3": {
+    "chapters": {
+      "kec-general": {
+        "result": "FAIL",
+        "issues": [
+          {
+            "where": "concepts[3].definition",
+            "text": "고압·특고압 설비와 변압기 중성점 접지의 접지 도체가 사람이 닿을 우려가 있는 곳에 있으면 지하 0.75m 부터 지표상 2m 까지 합성수지관(두께 2mm 미만 제외)이나 몰드로 덮습니다.",
+            "problem": "Scope is too broad. KEC 142.3.1-3 applies only when the grounding conductor is a fixed installation (고정설비) in a place where people may touch it. Places such as power stations and substations built under 322.5-1-가 are excepted. Movable equipment follows 142.3.1-4-다 instead (cabtyre cable of 10mm² or more).",
+            "fix": "고압·특고압 설비와 변압기 중성점 접지의 접지 도체가 사람이 닿을 우려가 있는 곳에 시설되는 고정 설비이면 지하 0.75m 부터 지표상 2m 까지 합성수지관(두께 2mm 미만의 합성수지제 전선관·콤바인덕트관 제외)이나 이와 동등 이상의 몰드로 덮습니다."
+          },
+          {
+            "where": "summary[2]",
+            "text": "고압·특고압 설비와 변압기 중성점 접지의 접지 도체는 사람이 닿을 수 있는 곳에서 몰드 등으로 덮고,",
+            "problem": "This has the same missing 'fixed installation (고정설비)' condition as concepts[3] (KEC 142.3.1-3).",
+            "fix": "고압·특고압 설비와 변압기 중성점 접지의 접지 도체는 사람이 닿을 수 있는 곳에 고정 설비로 시설하면 합성수지관이나 몰드로 덮고,"
+          },
+          {
+            "where": "concepts[3].definition",
+            "text": "피뢰 시스템이 접속되면 구리 16mm² 이상입니다.",
+            "problem": "style (not an error). KEC 142.3.1-1-나 says copper 16mm² OR iron 50mm². The copper-only wording is correct but incomplete.",
+            "fix": "피뢰 시스템이 접속되면 구리 16mm² 또는 철 50mm² 이상입니다."
+          }
+        ]
+      },
+      "kec-line": {
+        "result": "PASS",
+        "issues": [
+          {
+            "where": "concepts[6].definition",
+            "text": "옆쪽·아래쪽 등은 1.2m 이상입니다.",
+            "problem": "style (not an error). 1.2m is correct as the base value in table 332.11-1. The card gives the 1m reduction for the upward direction but leaves out the reductions for the side and below: 0.8m where people cannot easily touch the wire, and 0.4m for high-voltage or extra-high-voltage insulated wire or cable.",
+            "fix": "옆쪽·아래쪽 등은 1.2m 이상(사람이 쉽게 닿지 않게 시설하면 0.8m, 고압·특고압 절연 전선이나 케이블은 0.4m)입니다."
+          },
+          {
+            "where": "concepts[0].tip",
+            "text": "지선은 2.5, 기초는 2.",
+            "problem": "style. The 2026 KEC uses the term '지지선' (331.11). The value 2.5 is correct.",
+            "fix": "지지선은 2.5, 기초는 2."
+          }
+        ]
+      },
+      "kec-wiring": {
+        "result": "PASS",
+        "issues": []
+      },
+      "em-induction": {
+        "result": "PASS",
+        "issues": []
+      }
+    },
+    "q3": {
+      "result": "PASS",
+      "issues": [
+        {
+          "where": "explanation, 틀린 선지 '2Ω 이하'",
+          "problem": "optional, not an error. In KEC 142.2-7-가(1), 2Ω also appears for water pipes. When the pipe's resistance is 2Ω or less, the connection may be more than 5m from the branch point. The sentence is not false, but naming both uses would avoid confusion.",
+          "fix": "2Ω 은 건축물 철골 등 금속제 몸체를 비접지식 고압 관련 접지의 접지극으로 쓸 때의 기준입니다(수도관에서는 분기점에서 5m 를 넘어 접속할 수 있는 조건으로도 쓰입니다)."
+        }
+      ]
+    }
+  },
+  "round4": {
+    "chapters": {
+      "kec-general": {
+        "result": "PASS",
+        "issues": [
+          {
+            "where": "concepts[5].definition / points[3] / summary[3]",
+            "text": "혼촉 시 저압 전로의 대지 전압이 150V 를 넘는 경우에는 ... 300/I ... 600/I",
+            "problem": "style",
+            "fix": "KEC 142.5 1 나: 대상은 '고압·특고압측 전로 또는 사용전압 35kV 이하 특고압 전로가 저압측과 혼촉하는 경우'. 필요하면 '고압·특고압(35kV 이하) 전로와 저압 전로가 혼촉하여' 정도로 보충 가능. 현재 문장도 틀리지는 않음."
+          },
+          {
+            "where": "points[2]",
+            "text": "보호 도체: 35mm² 를 넘는 선도체는 1/2 로 계산합니다.",
+            "problem": "style",
+            "fix": "표 142.3-1 의 '보호 도체와 선도체 재질이 같은 경우' 값임. 카드 제목에는 이미 적혀 있으므로 '(같은 재질)' 정도 추가 가능."
+          },
+          {
+            "where": "summary[2]",
+            "text": "접지 도체는 피뢰 시스템이 연결되는지에 따라 최소 굵기가 달라집니다.",
+            "problem": "style",
+            "fix": "142.3.1 1: 피뢰 미접속 시 구리 저압 6mm²·고압 이상 16mm², 철 50mm²; 피뢰 접속 시 구리 16mm²·철 50mm². 전압 구분에 따라서도 달라진다는 점을 덧붙일 수 있음(필수 아님)."
+          },
+          {
+            "where": "concepts[3].definition",
+            "text": "고압·특고압 설비와 변압기 중성점 접지의 접지 도체가 ... 몰드로 덮습니다.",
+            "problem": "style",
+            "fix": "142.3.1 3 단서: 발전소·변전소·개폐소 등에 322.5 1 가 에 준해 시설하는 경우는 예외. 생략해도 문장이 틀리지는 않음."
+          }
+        ]
+      }
+    },
+    "q2": {
+      "pick": 2,
+      "result": "PASS",
+      "issues": [
+        {
+          "where": "explanation",
+          "problem": "style",
+          "text": "KEC 142.3.1 3 가 문구(지하 0.75m~지표상 2m, 두께 2mm 미만 합성수지제 전선관·콤바인덕트관 제외, 동등 이상 몰드)와 일치. 142.2 3 나 의 고압 이상 접지극 매설 깊이 0.75m 언급도 맞음. 발전소·변전소 등 예외 단서는 생략(문제 성립에는 영향 없음)."
+        }
+      ]
+    }
+  }
+}

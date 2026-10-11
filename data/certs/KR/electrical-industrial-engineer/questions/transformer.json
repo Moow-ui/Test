@@ -1,0 +1,254 @@
+[
+  {
+    "id": "electrical-industrial-engineer-transformer-0001",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "electric-machines",
+    "chapterId": "transformer",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "변압기 절연유(변압기 기름)가 갖추어야 할 조건으로 옳은 것은?",
+    "choices": [
+      "절연 내력이 크고 점도가 낮을 것",
+      "인화점이 낮을 것",
+      "응고점이 높을 것",
+      "점도가 높을 것"
+    ],
+    "answer": 1,
+    "oneLineConcept": "절연유: 절연 내력↑, 점도↓, 인화점↑, 응고점↓",
+    "explanation": "절연유는 전기를 막는(절연) 일과 열을 식히는(냉각) 일을 함께 합니다. 그래서 **절연 내력이 크고**, 잘 흘러 열을 옮기도록 **점도가 낮아야** 합니다. 또 불이 잘 붙지 않게 인화점은 높고, 추운 날 굳지 않게 응고점은 낮아야 합니다.\n\n**틀린 선지**\n- 인화점이 낮을 것: 인화점이 낮으면 불이 붙기 쉬워 위험합니다. 인화점은 높아야 합니다.\n- 응고점이 높을 것: 응고점이 높으면 추울 때 굳어 버립니다. 응고점은 낮아야 합니다.\n- 점도가 높을 것: 점도가 높으면 잘 흐르지 않아 열을 식히는 능력이 떨어집니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "절연유"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-transformer-0002",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "electric-machines",
+    "chapterId": "transformer",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "철손이 200W, 전부하 동손이 800W 인 변압기가 최대 효율이 되는 부하율은 몇 % 인가?",
+    "choices": [
+      "25%",
+      "50%",
+      "100%",
+      "약 71%"
+    ],
+    "answer": 2,
+    "oneLineConcept": "최대 효율 부하율 m = √(철손 ÷ 전부하 동손)",
+    "explanation": "1. 동손은 부하율의 제곱에 비례하므로, m² × 800 = 200 일 때 철손과 동손이 같아집니다.\n2. m² = 200 ÷ 800 = 0.25\n3. m = √0.25 = 0.5 → 50%\n\n검산: 50% 부하일 때 동손 = 0.5² × 800 = 200W 로 철손과 같습니다.\n\n**틀린 선지**\n- 25%: 제곱근을 씌우지 않고 200 ÷ 800 을 그대로 쓴 값입니다.\n- 100%: 전부하에서는 동손(800W)이 철손(200W)보다 커서 최대 효율 조건이 아닙니다.\n- 약 71%: 계산 과정에서 제곱근을 두 번 씌운 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "최대 효율",
+      "부하율",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-transformer-0003",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "electric-machines",
+    "chapterId": "transformer",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "용량 20kVA 인 단상 변압기의 철손이 200W, 전부하 동손이 800W 이다. 역률 1 에서 1/2 부하로 운전할 때 효율은 약 몇 % 인가?",
+    "choices": [
+      "약 90.9%",
+      "약 94.3%",
+      "약 96.2%",
+      "약 95.2%"
+    ],
+    "answer": 3,
+    "oneLineConcept": "효율 = 출력 ÷ (출력 + 철손 + m² × 동손)",
+    "explanation": "1. 출력 = 20kVA × 1/2 × 1 = 10kW = 10,000W\n2. 동손 = (1/2)² × 800 = 200W\n3. 전체 손실 = 철손 200 + 동손 200 = 400W\n4. 효율 = 10,000 ÷ (10,000 + 400) × 100 ≈ 96.2%\n\n검산: 이때 철손과 동손이 같으므로 이 변압기의 최대 효율 지점입니다.\n\n**틀린 선지**\n- 약 90.9%: 동손을 전부하 값 800W 그대로 넣은 값입니다. 1/2 부하에서 동손은 (1/2)² 배가 됩니다.\n- 약 94.3%: 동손을 1/2 배(400W)로 넣은 값입니다. 동손은 부하율의 제곱에 비례합니다.\n- 약 95.2%: 전부하(20kW)일 때의 효율입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "효율",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-transformer-0004",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "electric-machines",
+    "chapterId": "transformer",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "3상 변압기를 Δ-Y 결선으로 했을 때 1차와 2차 선간 전압 사이의 위상차는?",
+    "choices": [
+      "0°",
+      "30°",
+      "60°",
+      "120°"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Δ-Y, Y-Δ 결선: 1·2차 위상차 30°",
+    "explanation": "Δ 결선과 Y 결선은 선간 전압의 방향이 30° 어긋나 있습니다. 그래서 Δ-Y 나 Y-Δ 결선 변압기는 1차와 2차 선간 전압 사이에 **30°** 의 위상차가 생깁니다. 이 때문에 Δ-Δ 변압기와 Δ-Y 변압기는 병렬 운전할 수 없습니다.\n\n**틀린 선지**\n- 0°: Δ-Δ 나 Y-Y 결선의 위상차입니다.\n- 60°: Δ-Y 결선의 위상차가 아닙니다.\n- 120°: 3상의 각 상 사이 위상차입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "결선",
+      "위상차"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-transformer-0005",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "electric-machines",
+    "chapterId": "transformer",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "변압기의 단락 시험으로 구할 수 있는 것은?",
+    "choices": [
+      "철손과 여자 전류",
+      "절연 저항",
+      "동손(임피던스 와트)과 임피던스 전압",
+      "권선의 온도 상승"
+    ],
+    "answer": 3,
+    "oneLineConcept": "단락 시험 → 동손·%임피던스 / 무부하 시험 → 철손·여자 전류",
+    "explanation": "단락 시험은 2차를 단락하고 1차에 낮은 전압을 걸어 정격 전류를 흘리는 시험입니다. 이때 거는 전압이 **임피던스 전압**이고, 전압이 낮아 철손은 거의 없으므로 측정한 전력은 **동손(임피던스 와트)** 입니다. 여기서 %임피던스도 구할 수 있습니다.\n\n**틀린 선지**\n- 철손과 여자 전류: 2차를 열어 두고 하는 무부하 시험으로 구합니다.\n- 절연 저항: 메거(절연 저항계)로 측정합니다.\n- 권선의 온도 상승: 실부하법이나 반환 부하법 같은 온도 시험으로 구합니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "단락 시험",
+      "변압기 시험"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-transformer-0006",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "electric-machines",
+    "chapterId": "transformer",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "단권 변압기(1차와 2차가 권선 일부를 함께 쓰는 변압기)의 특징으로 옳은 것은?",
+    "choices": [
+      "1차와 2차가 전기적으로 완전히 분리되어 있다",
+      "누설 리액턴스가 커서 단락 전류가 작다",
+      "권선의 구리 양이 적게 들고 효율이 높다",
+      "권수비가 클수록 경제적이다"
+    ],
+    "answer": 3,
+    "oneLineConcept": "단권 변압기: 동량 적음·효율 높음, 1·2차 절연 분리 안 됨",
+    "explanation": "단권 변압기는 권선 하나를 1차와 2차가 함께 쓰기 때문에 구리가 적게 들고 손실이 작아 **효율이 높습니다**. 하지만 1차와 2차가 전기적으로 붙어 있어 절연이 분리되지 않고, 누설 리액턴스가 작아 단락 전류가 큽니다. 승압이나 강압 비율이 작을 때 유리합니다.\n\n**틀린 선지**\n- 1차와 2차가 전기적으로 완전히 분리되어 있다: 단권 변압기는 권선을 함께 쓰므로 1차와 2차가 전기적으로 이어져 있습니다.\n- 누설 리액턴스가 커서 단락 전류가 작다: 누설 리액턴스가 작아 오히려 단락 전류가 큽니다.\n- 권수비가 클수록 경제적이다: 1차와 2차 전압 차이가 작을(권수비가 1 에 가까울) 때 가장 경제적입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "단권 변압기"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-transformer-0007",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "electric-machines",
+    "chapterId": "transformer",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "용량이 모두 100kVA 인 변압기 A(%임피던스 5%)와 B(%임피던스 4%)를 병렬 운전하여 180kVA 의 부하에 전력을 공급한다. 변압기 A 가 분담하는 부하는 몇 kVA 인가?",
+    "choices": [
+      "80kVA",
+      "100kVA",
+      "90kVA",
+      "144kVA"
+    ],
+    "answer": 1,
+    "oneLineConcept": "병렬 운전 부하 분담은 (용량 ÷ %Z)에 비례",
+    "explanation": "1. 용량이 같으므로 분담은 %임피던스에 반비례합니다.\n2. A : B = 1/5 : 1/4 = 4 : 5\n3. A 분담 = 180 × 4 ÷ 9 = 80kVA\n4. B 분담 = 180 × 5 ÷ 9 = 100kVA\n\n검산: 80 + 100 = 180kVA, 80 × 5 = 100 × 4 = 400 으로 맞습니다.\n\n**틀린 선지**\n- 100kVA: 변압기 B 가 분담하는 부하입니다. %임피던스가 작은 B 가 더 많이 맡습니다.\n- 90kVA: 부하를 똑같이 나눈 값입니다. %임피던스가 다르면 분담도 달라집니다.\n- 144kVA: 180kVA 의 80% 로 본 값입니다. 분담 비율이 4 : 5 이므로 A 는 전체의 4/9 입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "병렬 운전",
+      "부하 분담",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+]

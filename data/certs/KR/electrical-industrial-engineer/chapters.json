@@ -1,0 +1,274 @@
+{
+  "notesBy": "ai",
+  "subjects": [
+    {
+      "id": "electromagnetics",
+      "name": "전기자기학",
+      "questionCount": 20,
+      "chapters": [
+        {
+          "id": "electrostatic-field",
+          "name": "정전계와 유전체",
+          "importance": 5,
+          "examWeight": 40,
+          "summary": "쿨롱의 법칙, 전계와 전위, 정전용량과 정전 에너지, 유전체의 성질을 다룹니다.",
+          "keyPoints": [
+            "쿨롱의 법칙(거리 제곱에 반비례)",
+            "평행판 콘덴서 C = εS/d",
+            "정전 에너지 W = ½CV²",
+            "유전체 경계면 조건"
+          ]
+        },
+        {
+          "id": "magnetic-field",
+          "name": "정자계와 자성체",
+          "importance": 4,
+          "examWeight": 30,
+          "summary": "전류가 만드는 자계, 자기력, 자성체와 자기 회로를 다룹니다.",
+          "keyPoints": [
+            "비오-사바르·앙페르 법칙",
+            "무한 직선 전류 H = I/(2πr)",
+            "플레밍의 왼손 법칙 F = BIl sinθ",
+            "자기 회로의 자기 저항"
+          ]
+        },
+        {
+          "id": "em-induction",
+          "name": "전자유도와 인덕턴스",
+          "importance": 4,
+          "examWeight": 30,
+          "summary": "패러데이·렌츠 법칙, 자기·상호 인덕턴스, 전자파의 기본 성질을 다룹니다.",
+          "keyPoints": [
+            "유도 기전력 e = -N dΦ/dt",
+            "플레밍의 오른손 법칙 e = Blv sinθ",
+            "코일 에너지 W = ½LI²",
+            "결합계수 k = M/√(L1L2)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "power-engineering",
+      "name": "전력공학",
+      "questionCount": 20,
+      "chapters": [
+        {
+          "id": "transmission",
+          "name": "송전 선로",
+          "importance": 5,
+          "examWeight": 35,
+          "summary": "선로 정수, 코로나, 송전 특성, 전압 강하와 전력 손실을 다룹니다.",
+          "keyPoints": [
+            "연가의 목적",
+            "코로나 임계 전압",
+            "전압 강하 e = √3 I(Rcosθ + Xsinθ)",
+            "전압을 n배 높이면 손실 1/n²"
+          ]
+        },
+        {
+          "id": "protection",
+          "name": "보호 계전과 이상 전압",
+          "importance": 5,
+          "examWeight": 30,
+          "summary": "고장 계산, 중성점 접지, 보호 계전기, 차단기·피뢰기를 다룹니다.",
+          "keyPoints": [
+            "%임피던스와 단락 전류",
+            "중성점 접지 방식 비교",
+            "계전기 종류",
+            "피뢰기·가공지선 역할"
+          ]
+        },
+        {
+          "id": "distribution",
+          "name": "배전과 역률 개선",
+          "importance": 4,
+          "examWeight": 20,
+          "summary": "배전 방식, 전력 손실, 역률 개선용 콘덴서 용량을 다룹니다.",
+          "keyPoints": [
+            "단상 3선식 특징",
+            "콘덴서 용량 Q = P(tanθ1 - tanθ2)",
+            "수용률·부등률·부하율",
+            "루프·네트워크 배전"
+          ]
+        },
+        {
+          "id": "generation",
+          "name": "발전",
+          "importance": 3,
+          "examWeight": 15,
+          "summary": "수력·화력·원자력 발전의 원리와 주요 설비를 다룹니다.",
+          "keyPoints": [
+            "수력 출력 P = 9.8QHη",
+            "랭킨 사이클과 재열·재생",
+            "원자로 감속재·제어재",
+            "조속기와 수차 종류"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "electric-machines",
+      "name": "전기기기",
+      "questionCount": 20,
+      "chapters": [
+        {
+          "id": "dc-machine",
+          "name": "직류기",
+          "importance": 4,
+          "examWeight": 20,
+          "summary": "직류 발전기·전동기의 구조, 유기 기전력, 전기자 반작용, 속도 제어를 다룹니다.",
+          "keyPoints": [
+            "유기 기전력 E = pZΦN/(60a)",
+            "전기자 반작용과 보극",
+            "직권·분권 전동기 특성",
+            "속도 제어 방법"
+          ]
+        },
+        {
+          "id": "synchronous-machine",
+          "name": "동기기",
+          "importance": 4,
+          "examWeight": 20,
+          "summary": "동기 발전기·전동기의 원리, 동기 속도, 병렬 운전, 단락비를 다룹니다.",
+          "keyPoints": [
+            "동기 속도 Ns = 120f/p",
+            "병렬 운전 조건",
+            "단락비가 큰 기계",
+            "동기 조상기"
+          ]
+        },
+        {
+          "id": "transformer",
+          "name": "변압기",
+          "importance": 5,
+          "examWeight": 25,
+          "summary": "변압기의 권수비, 손실과 효율, 결선, 병렬 운전을 다룹니다.",
+          "keyPoints": [
+            "권수비 a = N1/N2 = V1/V2",
+            "최대 효율 조건(철손 = 동손)",
+            "Δ-Y 결선 위상차",
+            "병렬 운전 조건"
+          ]
+        },
+        {
+          "id": "induction-motor",
+          "name": "유도기",
+          "importance": 5,
+          "examWeight": 25,
+          "summary": "3상 유도 전동기의 슬립, 2차 입력·출력, 기동법과 속도 제어를 다룹니다.",
+          "keyPoints": [
+            "슬립 s = (Ns - N)/Ns",
+            "P2 : Pc2 : Po = 1 : s : (1 - s)",
+            "Y-Δ 기동",
+            "비례 추이"
+          ]
+        },
+        {
+          "id": "power-conversion",
+          "name": "정류기와 전력 변환",
+          "importance": 3,
+          "examWeight": 10,
+          "summary": "다이오드·사이리스터 정류 회로, 인버터·초퍼 등 전력 변환 장치를 다룹니다.",
+          "keyPoints": [
+            "단상 반파 Ed = 0.45E",
+            "단상 전파 Ed = 0.9E",
+            "SCR 의 턴온·턴오프",
+            "인버터는 직류→교류"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "circuit-theory",
+      "name": "회로이론",
+      "questionCount": 20,
+      "chapters": [
+        {
+          "id": "ac-circuit",
+          "name": "직류·교류 회로",
+          "importance": 5,
+          "examWeight": 40,
+          "summary": "직류 회로 법칙, 정현파 교류의 표현, R·L·C 회로, 전력과 공진을 다룹니다.",
+          "keyPoints": [
+            "실효값 = 최대값/√2",
+            "임피던스 Z = √(R² + X²)",
+            "유효·무효·피상 전력",
+            "공진 주파수 f = 1/(2π√LC)"
+          ]
+        },
+        {
+          "id": "three-phase",
+          "name": "다상 교류와 회로망",
+          "importance": 4,
+          "examWeight": 30,
+          "summary": "3상 Y·Δ 결선, 3상 전력, 회로망 정리(테브난·중첩)를 다룹니다.",
+          "keyPoints": [
+            "Y 결선 선간전압 = √3 × 상전압",
+            "3상 전력 P = √3 VIcosθ",
+            "테브난·노튼 정리",
+            "2전력계법"
+          ]
+        },
+        {
+          "id": "transient-network",
+          "name": "비정현파·과도 현상·4단자망",
+          "importance": 4,
+          "examWeight": 30,
+          "summary": "비정현파, 과도 현상의 시정수, 라플라스 변환, 4단자망·분포 정수 회로를 다룹니다.",
+          "keyPoints": [
+            "시정수 τ = L/R, τ = RC",
+            "비정현파 실효값",
+            "라플라스 변환 기본 쌍",
+            "4단자 정수 AD - BC = 1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kec",
+      "name": "전기설비기술기준",
+      "questionCount": 20,
+      "chapters": [
+        {
+          "id": "kec-general",
+          "name": "공통 사항과 접지",
+          "importance": 5,
+          "examWeight": 40,
+          "summary": "전압 구분, 전선, 절연 저항, 접지 시스템과 보호 도체를 다룹니다.",
+          "keyPoints": [
+            "저압: 교류 1kV 이하·직류 1.5kV 이하",
+            "접지 시스템 TN·TT·IT",
+            "절연 저항 기준",
+            "보호 도체 단면적"
+          ]
+        },
+        {
+          "id": "kec-wiring",
+          "name": "저압·고압 전기 설비",
+          "importance": 4,
+          "examWeight": 30,
+          "summary": "저압 배선 방법, 과전류·누전 차단, 고압·특고압 수용 설비를 다룹니다.",
+          "keyPoints": [
+            "배선 공사 종류",
+            "누전 차단기 시설",
+            "특고압 배전용 변압기",
+            "전기 울타리 등 특수 시설"
+          ]
+        },
+        {
+          "id": "kec-line",
+          "name": "전선로",
+          "importance": 4,
+          "examWeight": 30,
+          "summary": "가공 전선로의 높이·이격 거리, 지지물, 지중 전선로를 다룹니다.",
+          "keyPoints": [
+            "저압 가공 전선 높이",
+            "지지물 근입 깊이",
+            "지중 전선로 매설 깊이",
+            "안전율"
+          ]
+        }
+      ]
+    }
+  ]
+}
