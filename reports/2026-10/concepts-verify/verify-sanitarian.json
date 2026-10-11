@@ -1,0 +1,118 @@
+{
+  "cert": "sanitarian",
+  "checkedAt": "2026-10-11",
+  "by": "separate verifier AI",
+  "chapters": {
+    "public-hygiene-act": {
+      "verdict": "PASS (re-verified 3rd; earlier: PASS, PASS)",
+      "problems": [
+        "summary[1] '신고하기 전에 미리 위생교육을 받아야 하고': (minor, not an error) 법 제17조 단서: 부득이한 사유가 있으면 영업개시 후 6개월 이내에 받을 수 있음. concepts 쪽은 '원칙적으로'라고 적었으나 summary 는 단정형."
+      ]
+    },
+    "food-sanitation-act": {
+      "verdict": "PASS (re-verified 3rd; earlier: FAIL, PASS)",
+      "problems": [
+        "concepts[식중독 보고].tip '보고받는 곳은 가장 가까운 지방자치단체장입니다.': 식품위생법 제86조의 기준은 '관할' 특별자치시장·시장·군수·구청장이지 '가장 가까운' 지자체장이 아님. 오해 소지(거리 기준으로 읽힘)."
+      ]
+    },
+    "infectious-disease-act": {
+      "verdict": "PASS (re-verified 3rd; earlier: FAIL, FAIL)",
+      "problems": [
+        "concepts[제1급감염병].definition '치명률이 높고 집단 발생 우려가 큰' 및 compare.rows[0][1] '치명률이 높고 집단 발생 우려가 큼': 법 제2조제2호 원문은 '생물테러감염병 또는 치명률이 높거나 집단 발생의 우려가 커서' — 두 조건 중 하나(또는)이지 둘 다(그리고)가 아님."
+      ]
+    },
+    "water-waste-sewer-acts": {
+      "verdict": "PASS (re-verified; earlier: FAIL)",
+      "problems": [
+        "summary[1] '수돗물은 이 법이 아니라 수도법을 따른다', concepts[먹는샘물·먹는염지하수].definition·tip, points[0]: 지나치게 단정적. 먹는물관리법 제4조(적용범위): 수돗물에는 수도법을 적용하되, 단서로 '먹는물의 수질기준(제5조제3항)에 관하여는 이 법을 적용'. 수돗물 수질기준은 먹는물관리법이 정하므로 '이 법이 아니라'는 시험에서 오답을 유도할 수 있음.",
+        "concepts[생활폐기물·사업장폐기물].definition '사업장폐기물은 사업장에서 나오는 폐기물입니다.' 및 tip '사업장에서 나오면 사업장폐기물': 과잉 단순화. 법 제2조: 사업장폐기물은 대기환경보전법·물환경보전법·소음·진동관리법에 따라 배출시설을 설치·운영하는 사업장 등 대통령령으로 정하는 사업장에서 발생하는 폐기물. 일반 사업장(작은 가게 등)의 폐기물은 생활폐기물(사업장생활계폐기물)일 수 있음."
+      ]
+    },
+    "air-climate": {
+      "verdict": "PASS",
+      "problems": []
+    },
+    "water-sewage": {
+      "verdict": "PASS (re-verified; earlier: FAIL)",
+      "problems": [
+        "summary[0] '환경위생학에서 비중이 가장 큰 단원입니다.': 확인할 수 없는 수치성 주장. 위생사 국가시험(국시원)은 단원별 출제 비중을 공개하지 않으며, chapters.json 의 examWeight 는 AI 추정치임. 콘텐츠 정책(확인 불가 통계 금지) 위반."
+      ]
+    },
+    "waste-soil": {
+      "verdict": "PASS",
+      "problems": []
+    },
+    "housing-noise-occupational": {
+      "verdict": "PASS",
+      "problems": []
+    },
+    "insect-biology": {
+      "verdict": "PASS",
+      "problems": []
+    },
+    "vectors-diseases": {
+      "verdict": "PASS (re-verified; earlier: FAIL)",
+      "problems": [
+        "summary[0] '위생곤충학에서 가장 비중이 큰 단원입니다.': 확인할 수 없는 출제 비중 주장(공식 단원별 비중 미공개, examWeight 는 AI 추정치)."
+      ]
+    },
+    "pest-control": {
+      "verdict": "PASS",
+      "problems": []
+    },
+    "epidemiology": {
+      "verdict": "PASS",
+      "problems": [
+        "concepts[코호트 연구].tip: (minor, not an error) '앞으로 따라가는 연구' is the typical prospective case; retrospective (historical) cohorts also exist."
+      ]
+    },
+    "communicable-diseases": {
+      "verdict": "PASS",
+      "problems": []
+    },
+    "health-statistics": {
+      "verdict": "PASS (re-verified 3rd; earlier: FAIL, FAIL)",
+      "problems": [
+        "summary[2], concepts[피라미드형].definition/tip, compare.rows[0]: Korean public-health / 위생사 textbooks define 피라미드형 (인구증가형) as 출생률은 높고 사망률은 낮은 형 (0~14세 인구가 50세 이상 인구의 2배를 넘음). The current text says both rates are high, yet also says the population grows. That contradicts itself, because growth needs births to exceed deaths. Students who learn '둘 다 높음' would miss the standard exam option.",
+        "concepts[종형].definition: (minor) The text is accepted, but it leaves out the standard criterion: 0~14세 인구가 50세 이상 인구의 2배 정도(인구정지형)."
+      ]
+    },
+    "health-programs": {
+      "verdict": "PASS",
+      "problems": []
+    },
+    "food-spoilage-preservation": {
+      "verdict": "PASS",
+      "problems": []
+    },
+    "food-poisoning": {
+      "verdict": "PASS",
+      "problems": []
+    },
+    "harmful-substances-additives": {
+      "verdict": "PASS",
+      "problems": [
+        "concepts[간흡충].definition: (minor) Most exam texts call the first intermediate host 왜우렁이. 쇠우렁이 is an accepted alternate name. The adult worm lives in the bile ducts (담관) inside the liver, not the liver tissue in general."
+      ]
+    },
+    "food-safety-management": {
+      "verdict": "PASS",
+      "problems": []
+    },
+    "practical-environment": {
+      "verdict": "PASS",
+      "problems": []
+    },
+    "practical-food": {
+      "verdict": "PASS (re-verified; earlier: FAIL)",
+      "problems": [
+        "concepts[냉장·냉동 온도 점검].tip: '점검 첫 순서는 온도계 확인입니다' is an absolute rule that nothing supports. No standard or law makes thermometer checking the first step of a kitchen inspection, so it reads as an invented procedure.",
+        "concepts[일반세균수].definition: '세균의 전체 수' is inaccurate. 일반세균수 (표준평판법) counts the aerobic mesophilic bacteria that form colonies on plate-count agar under set conditions (e.g. 35℃ for 48h). It does not count all bacteria."
+      ]
+    },
+    "practical-pest": {
+      "verdict": "PASS",
+      "problems": []
+    }
+  }
+}

@@ -1,0 +1,348 @@
+[
+  {
+    "id": "sanitarian-health-statistics-0001",
+    "certId": "sanitarian",
+    "subjectId": "public-health",
+    "chapterId": "health-statistics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "인구통계 중 인구동태통계에 해당하는 것은?",
+    "choices": [
+      "인구주택총조사(센서스)로 조사한 성별 인구",
+      "특정 시점의 연령별 인구 구성",
+      "특정 시점의 직업별 인구",
+      "일정 기간에 일어난 출생·사망·혼인·이혼 같은 인구 변동",
+      "특정 시점의 지역별 인구 분포"
+    ],
+    "answer": 4,
+    "oneLineConcept": "인구동태통계는 출생·사망·혼인·이혼 등 인구의 변동을 다룬다.",
+    "explanation": "인구동태통계는 일정 기간 동안 인구가 어떻게 변했는지(출생·사망·혼인·이혼·전입·전출 등)를 신고 자료로 모은 통계입니다. 반대로 어느 한 시점의 인구 상태를 조사한 것은 인구정태통계입니다.\n\n**틀린 선지**\n- 센서스로 조사한 성별 인구: 한 시점의 인구 상태로 정태통계입니다.\n- 특정 시점의 연령별 인구 구성: 정태통계입니다.\n- 특정 시점의 직업별 인구: 정태통계입니다.\n- 특정 시점의 지역별 인구 분포: 정태통계입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "인구동태통계",
+      "인구정태통계"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sanitarian-health-statistics-0002",
+    "certId": "sanitarian",
+    "subjectId": "public-health",
+    "chapterId": "health-statistics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "1년 동안 태어난 아기 수를 그해 인구 1,000명당으로 나타낸 지표는?",
+    "choices": [
+      "합계출산율",
+      "조출생률",
+      "일반출산율",
+      "총재생산율",
+      "순재생산율"
+    ],
+    "answer": 2,
+    "oneLineConcept": "조출생률 = 연간 출생아 수 ÷ 연앙인구 × 1,000",
+    "explanation": "조출생률은 1년 동안의 출생아 수를 그해 연앙인구(7월 1일 인구)로 나누고 1,000을 곱한 값입니다. 전체 인구를 분모로 쓰므로 '조(대략적인)'라는 말이 붙습니다.\n\n**틀린 선지**\n- 합계출산율: 여성 한 명이 가임기간(15~49세) 동안 낳을 것으로 예상되는 평균 자녀 수입니다.\n- 일반출산율: 가임기 여성(15~49세) 1,000명당 출생아 수입니다.\n- 총재생산율: 여성 한 명이 평생 낳는 여자아이 수입니다.\n- 순재생산율: 총재생산율에 어머니가 될 때까지 살아남는 비율을 반영한 값입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "조출생률",
+      "출산 지표"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        5
+      ]
+    }
+  },
+  {
+    "id": "sanitarian-health-statistics-0003",
+    "certId": "sanitarian",
+    "subjectId": "public-health",
+    "chapterId": "health-statistics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "출생률과 사망률이 모두 낮아 인구가 거의 늘지도 줄지도 않는 정지형 인구 구조는?",
+    "choices": [
+      "피라미드형",
+      "항아리형",
+      "별형",
+      "표주박형",
+      "종형"
+    ],
+    "answer": 5,
+    "oneLineConcept": "출생률·사망률이 모두 낮은 정지형 인구는 종형이다.",
+    "explanation": "종형은 출생률과 사망률이 모두 낮아 인구가 거의 변하지 않는 정지형 구조입니다. 위로 갈수록 천천히 좁아지는 종 모양이 됩니다.\n\n**틀린 선지**\n- 피라미드형: 출생률과 사망률이 모두 높은 인구 증가형입니다.\n- 항아리형: 출생률이 사망률보다 낮아 인구가 줄어드는 감소형입니다.\n- 별형: 젊은 생산층 인구가 들어와 많은 도시형입니다.\n- 표주박형: 젊은 생산층 인구가 빠져나간 농촌형입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "인구 구조",
+      "종형"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        5
+      ],
+      "intermediate": [
+        1,
+        2,
+        5
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        5
+      ]
+    }
+  },
+  {
+    "id": "sanitarian-health-statistics-0004",
+    "certId": "sanitarian",
+    "subjectId": "public-health",
+    "chapterId": "health-statistics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "어느 지역의 인구가 남자 5,200명, 여자 4,800명이다. 이 지역의 성비는? (성비 = 여자 100명당 남자 수)",
+    "choices": [
+      "92.3",
+      "52.0",
+      "108.3",
+      "104.0",
+      "48.0"
+    ],
+    "answer": 3,
+    "oneLineConcept": "성비 = 남자 수 ÷ 여자 수 × 100",
+    "explanation": "성비는 여자 100명에 대한 남자의 수입니다.\n1. 남자 ÷ 여자 = 5,200 ÷ 4,800 ≈ 1.0833\n2. 1.0833 × 100 ≈ 108.3\n검산: 4,800 × 1.0833 ≈ 5,200 으로 남자 수와 같습니다. 100보다 크므로 남자가 더 많습니다.\n\n**틀린 선지**\n- 92.3: 거꾸로 나눈 값(4,800 ÷ 5,200 × 100)입니다.\n- 52.0: 전체 인구 중 남자 비율(%)입니다.\n- 104.0: 남자 수를 전체 인구의 절반(5,000)으로 나눈 값입니다.\n- 48.0: 전체 인구 중 여자 비율(%)입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "성비",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sanitarian-health-statistics-0005",
+    "certId": "sanitarian",
+    "subjectId": "public-health",
+    "chapterId": "health-statistics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "어느 해 출생아가 20,000명이고, 그해 생후 1년이 안 되어 사망한 아기가 60명(이 중 생후 28일 미만 사망 36명)이다. 영아사망률(출생아 1,000명당)은?",
+    "choices": [
+      "3.0",
+      "1.8",
+      "4.8",
+      "1.2",
+      "0.3"
+    ],
+    "answer": 1,
+    "oneLineConcept": "영아사망률 = 1세 미만 사망아 수 ÷ 출생아 수 × 1,000",
+    "explanation": "영아사망률은 그해 생후 1년 미만에 사망한 아기 수를 그해 출생아 수로 나누고 1,000을 곱합니다. 생후 28일 미만 사망아도 이미 60명 안에 들어 있습니다.\n1. 60 ÷ 20,000 = 0.003\n2. 0.003 × 1,000 = 3.0\n검산: 20,000 × 0.003 = 60 으로 사망아 수와 같습니다.\n\n**틀린 선지**\n- 1.8: 생후 28일 미만 사망 36명만 쓴 신생아사망률입니다.\n- 4.8: 이미 포함된 36명을 한 번 더 더한 값(96명)입니다.\n- 1.2: 생후 28일 이후~1년 미만 사망 24명만 쓴 값입니다.\n- 0.3: 1,000이 아니라 100을 곱한 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "영아사망률",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sanitarian-health-statistics-0006",
+    "certId": "sanitarian",
+    "subjectId": "public-health",
+    "chapterId": "health-statistics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "α-index(영아사망 수 ÷ 신생아사망 수) 값이 1에 가깝다는 것은 무엇을 뜻하는가?",
+    "choices": [
+      "영아 사망이 매우 많다",
+      "출생률이 높다",
+      "신생아 사망이 거의 없다",
+      "그 지역의 보건 수준이 높다",
+      "노인 인구가 많다"
+    ],
+    "answer": 4,
+    "oneLineConcept": "α-index 가 1에 가까울수록 보건 수준이 높다.",
+    "explanation": "α-index 가 1에 가깝다는 것은 영아 사망의 대부분이 출생 직후 막기 어려운 신생아(생후 28일 미만) 사망이라는 뜻입니다. 환경·영양·감염 관리로 막을 수 있는 생후 28일 이후 사망이 거의 없으므로 보건 수준이 높다고 봅니다.\n\n**틀린 선지**\n- 영아 사망이 매우 많다: α-index 는 비율이므로 영아 사망의 많고 적음을 직접 보여 주지 않으며, 값이 클수록 보건 수준이 낮습니다.\n- 출생률이 높다: 출생률과는 관계없는 지표입니다.\n- 신생아 사망이 거의 없다: 오히려 영아 사망 대부분이 신생아 사망이라는 뜻입니다.\n- 노인 인구가 많다: 노인 인구와는 관계없는 지표입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "α-index",
+      "영아사망"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sanitarian-health-statistics-0007",
+    "certId": "sanitarian",
+    "subjectId": "public-health",
+    "chapterId": "health-statistics",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "어느 지역 인구가 0~14세 1,200명, 15~64세 6,000명, 65세 이상 1,800명이다. 이 지역의 노년부양비는?",
+    "choices": [
+      "50",
+      "20",
+      "150",
+      "66.7",
+      "30"
+    ],
+    "answer": 5,
+    "oneLineConcept": "노년부양비 = 65세 이상 인구 ÷ 15~64세 인구 × 100",
+    "explanation": "노년부양비는 일하는 나이(15~64세) 인구 100명이 부양하는 65세 이상 인구의 수입니다.\n1. 65세 이상 인구 = 1,800명\n2. 15~64세 인구 = 6,000명\n3. 1,800 ÷ 6,000 × 100 = 30\n검산: 6,000 × 0.3 = 1,800 으로 맞습니다.\n\n**틀린 선지**\n- 50: 0~14세와 65세 이상을 합해 나눈 총부양비((1,200 + 1,800) ÷ 6,000 × 100)입니다.\n- 20: 0~14세만 쓴 유년부양비(1,200 ÷ 6,000 × 100)입니다.\n- 150: 65세 이상을 0~14세로 나눈 노령화지수(1,800 ÷ 1,200 × 100)입니다.\n- 66.7: 노령화지수를 거꾸로 나눈 값(1,200 ÷ 1,800 × 100)입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "부양비",
+      "노년부양비",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        5
+      ],
+      "intermediate": [
+        1,
+        2,
+        5
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        5
+      ]
+    }
+  },
+  {
+    "id": "sanitarian-health-statistics-0008",
+    "certId": "sanitarian",
+    "subjectId": "public-health",
+    "chapterId": "health-statistics",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "어느 해 한 지역의 전체 사망자가 2,000명이고, 그중 50세 이상 사망자가 1,700명(이 가운데 65세 이상은 1,400명)이다. 비례사망지수(PMI)는?",
+    "choices": [
+      "85%",
+      "15%",
+      "70%",
+      "82.4%",
+      "117.6%"
+    ],
+    "answer": 1,
+    "oneLineConcept": "비례사망지수 = 50세 이상 사망자 ÷ 전체 사망자 × 100",
+    "explanation": "비례사망지수(PMI)는 전체 사망자 중 50세 이상 사망자의 비율입니다. 값이 높을수록 오래 살다가 사망한 사람이 많다는 뜻이므로 건강 수준이 높습니다.\n1. 50세 이상 사망자 = 1,700명\n2. 1,700 ÷ 2,000 = 0.85\n3. 0.85 × 100 = 85%\n검산: 2,000 × 0.85 = 1,700 으로 맞습니다.\n\n**틀린 선지**\n- 15%: 50세 미만 사망자의 비율(300 ÷ 2,000)입니다.\n- 70%: 기준을 65세 이상으로 잘못 잡은 값(1,400 ÷ 2,000)입니다.\n- 82.4%: 65세 이상을 50세 이상 사망자로 나눈 값(1,400 ÷ 1,700)입니다.\n- 117.6%: 거꾸로 나눈 값(2,000 ÷ 1,700)으로 100%를 넘을 수 없습니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "비례사망지수",
+      "PMI",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  }
+]

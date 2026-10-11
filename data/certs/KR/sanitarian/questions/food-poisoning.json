@@ -1,0 +1,760 @@
+[
+  {
+    "id": "sanitarian-food-poisoning-0001",
+    "certId": "sanitarian",
+    "subjectId": "food-hygiene",
+    "chapterId": "food-poisoning",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "달걀·닭고기·육류가 주요 원인 식품이고, 38~40℃의 높은 열이 나는 것이 특징인 감염형 세균성 식중독은?",
+    "choices": [
+      "황색포도상구균 식중독",
+      "보툴리누스 식중독",
+      "장염비브리오 식중독",
+      "살모넬라 식중독",
+      "복어 식중독"
+    ],
+    "answer": 4,
+    "oneLineConcept": "살모넬라 = 감염형, 달걀·닭고기, 38~40℃ 고열",
+    "explanation": "살모넬라 식중독은 균이 몸 안에서 늘어나 생기는 감염형 식중독입니다. 달걀, 닭고기 같은 축산물이 주 원인이고, 급한 고열이 특징입니다. 60℃에서 20분 정도 가열하면 균이 죽으므로 충분히 익혀 먹습니다.\n\n**틀린 선지**\n- 황색포도상구균: 독소형이고 잠복기가 짧으며, 높은 열은 드뭅니다.\n- 보툴리누스: 신경마비가 특징이며 통조림 등이 원인입니다.\n- 장염비브리오: 주로 여름철 어패류가 원인입니다.\n- 복어 식중독: 세균이 아니라 복어 독(자연독) 때문입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "살모넬라",
+      "세균성 식중독"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sanitarian-food-poisoning-0002",
+    "certId": "sanitarian",
+    "subjectId": "food-hygiene",
+    "chapterId": "food-poisoning",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "약 3% 소금물에서 잘 자라는 호염성 세균으로, 여름철 생선회·어패류를 먹고 생기는 식중독의 원인균은?",
+    "choices": [
+      "장염비브리오균",
+      "살모넬라균",
+      "웰치균",
+      "캄필로박터균",
+      "보툴리누스균"
+    ],
+    "answer": 1,
+    "oneLineConcept": "장염비브리오 = 호염성(약 3% 소금), 여름철 어패류",
+    "explanation": "장염비브리오균은 바닷물 정도의 소금(약 3%)을 좋아하는 호염성 세균입니다. 바닷물 온도가 올라가는 여름에 어패류에서 많이 늘어납니다. 민물(수돗물)에 약하므로 어패류를 수돗물로 잘 씻고, 열에 약하므로 익혀 먹으면 예방됩니다.\n\n**틀린 선지**\n- 살모넬라균: 달걀·닭고기 같은 축산물이 주 원인입니다.\n- 웰치균: 대량으로 조리한 육류·국을 천천히 식힐 때 문제가 되는 혐기성 균입니다.\n- 캄필로박터균: 주로 덜 익힌 닭고기가 원인입니다.\n- 보툴리누스균: 통조림처럼 산소가 없는 식품에서 독소를 만듭니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "장염비브리오",
+      "세균성 식중독"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sanitarian-food-poisoning-0003",
+    "certId": "sanitarian",
+    "subjectId": "food-hygiene",
+    "chapterId": "food-poisoning",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "황색포도상구균 식중독에 대한 설명으로 옳은 것은?",
+    "choices": [
+      "균이 몸 안에서 늘어나 생기는 감염형 식중독이다",
+      "신경독소 때문에 눈이 흐려지고 근육이 마비되는 것이 특징이다",
+      "38~40℃의 높은 열이 며칠 이어지는 것이 특징이다",
+      "잠복기가 평균 3~4일로 긴 편이다",
+      "원인 독소인 장독소(엔테로톡신)는 열에 강해 끓여도 잘 파괴되지 않는다"
+    ],
+    "answer": 5,
+    "oneLineConcept": "황색포도상구균 장독소(엔테로톡신)는 내열성 → 끓여도 남음",
+    "explanation": "황색포도상구균은 음식 속에서 장독소(엔테로톡신)를 만드는 독소형 식중독균입니다. 균은 열에 죽어도 독소는 열에 강해 다시 끓여도 식중독을 일으킬 수 있습니다.\n\n**틀린 선지**\n- 감염형: 황색포도상구균은 음식 속에서 만든 독소 때문에 생기는 독소형입니다.\n- 신경독소로 근육 마비: 보툴리누스 식중독의 특징입니다.\n- 높은 열이 며칠 이어짐: 살모넬라의 특징이며, 황색포도상구균은 열이 거의 없습니다.\n- 잠복기 3~4일: 황색포도상구균은 잠복기가 평균 3시간 정도로 매우 짧습니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "황색포도상구균",
+      "독소형"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        5
+      ],
+      "intermediate": [
+        1,
+        2,
+        5
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        5
+      ]
+    }
+  },
+  {
+    "id": "sanitarian-food-poisoning-0004",
+    "certId": "sanitarian",
+    "subjectId": "food-hygiene",
+    "chapterId": "food-poisoning",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "손가락에 곪은 상처가 있는 조리원이 만든 김밥을 먹은 사람들이 약 3시간 뒤 심한 구토와 복통을 일으켰다. 가장 의심되는 원인균은?",
+    "choices": [
+      "살모넬라균",
+      "보툴리누스균",
+      "황색포도상구균",
+      "장염비브리오균",
+      "캄필로박터균"
+    ],
+    "answer": 3,
+    "oneLineConcept": "곪은 상처 + 짧은 잠복기(약 3시간) + 구토 → 황색포도상구균",
+    "explanation": "황색포도상구균은 곪은 상처(화농)에 많이 있는 균으로, 손을 통해 음식에 옮겨 갑니다. 잠복기가 평균 3시간 정도로 짧고 구토가 심한 것이 특징입니다. 손에 상처가 있으면 조리를 하지 않아야 합니다.\n\n**틀린 선지**\n- 살모넬라균: 잠복기가 보통 12~36시간이고 고열이 특징입니다.\n- 보툴리누스균: 신경마비 증상이 특징이고 통조림 등이 원인입니다.\n- 장염비브리오균: 주로 어패류가 원인입니다.\n- 캄필로박터균: 주로 덜 익힌 닭고기가 원인이고 잠복기가 2~7일로 깁니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "황색포도상구균",
+      "화농"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sanitarian-food-poisoning-0005",
+    "certId": "sanitarian",
+    "subjectId": "food-hygiene",
+    "chapterId": "food-poisoning",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "산소가 없는 통조림·병조림 식품을 먹은 뒤 물체가 둘로 보이고(복시) 삼키기 어려운 신경마비 증상이 나타났다. 원인이 되는 식중독은?",
+    "choices": [
+      "클로스트리디움 보툴리눔 식중독",
+      "살모넬라 식중독",
+      "장염비브리오 식중독",
+      "황색포도상구균 식중독",
+      "노로바이러스 식중독"
+    ],
+    "answer": 1,
+    "oneLineConcept": "보툴리누스 = 혐기성, 통조림, 신경독소 → 복시·마비, 높은 치사율",
+    "explanation": "보툴리누스균은 산소가 없는 곳에서 자라는 혐기성 균으로, 신경독소(뉴로톡신)를 만들어 복시·삼킴 곤란 같은 신경마비를 일으킵니다. 세균성 식중독 가운데 치사율이 가장 높은 편입니다.\n\n**틀린 선지**\n- 살모넬라: 고열과 설사가 특징이고 신경마비는 없습니다.\n- 장염비브리오: 어패류가 원인이고 복통·설사가 주 증상입니다.\n- 황색포도상구균: 구토가 심한 것이 특징이며 신경마비는 없습니다.\n- 노로바이러스: 구토·설사가 주 증상이고 통조림과 관계가 적습니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "보툴리누스",
+      "독소형"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sanitarian-food-poisoning-0006",
+    "certId": "sanitarian",
+    "subjectId": "food-hygiene",
+    "chapterId": "food-poisoning",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "클로스트리디움 보툴리눔(보툴리누스균)에 대한 설명으로 옳지 않은 것은?",
+    "choices": [
+      "산소가 없어야 자라는 편성 혐기성 세균이다",
+      "열에 강한 아포(포자)를 만든다",
+      "만든 독소가 열에 매우 강해 100℃로 끓여도 파괴되지 않는다",
+      "신경독소를 만들어 마비 증상을 일으킨다",
+      "산소가 차단된 통조림·병조림에서 특히 문제가 된다"
+    ],
+    "answer": 3,
+    "oneLineConcept": "보툴리누스: 아포는 열에 강하지만 신경독소는 열에 약함",
+    "explanation": "보툴리누스균의 아포(포자)는 열에 강하지만, 균이 만든 신경독소는 열에 약해 충분히 끓이면(100℃에서 몇 분) 파괴됩니다. 그래서 의심되는 통조림 식품은 먹기 전에 충분히 가열하는 것이 예방법이 됩니다.\n\n**틀린 선지**\n- 편성 혐기성 세균: 맞는 설명입니다. 산소가 없어야 자랍니다.\n- 열에 강한 아포를 만든다: 맞는 설명입니다. 아포는 120℃ 정도의 고압 가열이 필요합니다.\n- 신경독소로 마비: 맞는 설명입니다.\n- 통조림·병조림에서 문제: 맞는 설명입니다. 산소가 없는 환경이기 때문입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "보툴리누스",
+      "독소"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "sanitarian-food-poisoning-0007",
+    "certId": "sanitarian",
+    "subjectId": "food-hygiene",
+    "chapterId": "food-poisoning",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "단체급식소에서 많은 양의 쇠고기국을 끓인 뒤 큰 솥째 실온에서 천천히 식혀 다음 날 데워 제공했더니 설사·복통 환자가 생겼다. 가장 의심되는 원인균은?",
+    "choices": [
+      "장염비브리오균",
+      "황색포도상구균",
+      "캄필로박터균",
+      "살모넬라균",
+      "웰치균(클로스트리디움 퍼프린젠스)"
+    ],
+    "answer": 5,
+    "oneLineConcept": "웰치균 = 대량 조리 육류·국을 천천히 식힐 때 (혐기성·아포)",
+    "explanation": "웰치균은 열에 강한 아포를 만드는 혐기성 균입니다. 큰 솥에 많이 끓인 국·찜은 속이 산소가 적고 천천히 식으면서 균이 크게 늘어납니다. 대량 조리한 음식은 나누어 빨리 식히고 냉장 보관해야 합니다.\n\n**틀린 선지**\n- 장염비브리오균: 어패류가 원인인 호염성 균입니다.\n- 황색포도상구균: 손의 상처 등에서 옮아 독소를 만들며, 구토가 심합니다.\n- 캄필로박터균: 덜 익힌 닭고기가 주 원인입니다.\n- 살모넬라균: 달걀·닭고기가 주 원인이고 고열이 특징입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "웰치균",
+      "대량조리"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        5
+      ],
+      "intermediate": [
+        1,
+        2,
+        5
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        5
+      ]
+    }
+  },
+  {
+    "id": "sanitarian-food-poisoning-0008",
+    "certId": "sanitarian",
+    "subjectId": "food-hygiene",
+    "chapterId": "food-poisoning",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "볶음밥을 실온에 오래 두었다가 먹은 뒤 1~5시간 만에 구토가 심하게 나타났다. 원인균으로 가장 알맞은 것은?",
+    "choices": [
+      "장염비브리오균",
+      "바실루스 세레우스",
+      "보툴리누스균",
+      "캄필로박터균",
+      "장출혈성대장균"
+    ],
+    "answer": 2,
+    "oneLineConcept": "바실루스 세레우스 구토형 = 실온에 둔 밥·볶음밥",
+    "explanation": "바실루스 세레우스는 흙·곡류에 흔한 아포 형성균입니다. 밥·볶음밥 같은 쌀 음식을 실온에 두면 구토형 독소를 만들어 짧은 시간 안에 구토를 일으킵니다. 밥은 식으면 바로 냉장 보관합니다.\n\n**틀린 선지**\n- 장염비브리오균: 어패류가 원인이고 쌀밥과 관계가 적습니다.\n- 보툴리누스균: 신경마비가 특징이고 통조림이 주 원인입니다.\n- 캄필로박터균: 덜 익힌 닭고기가 원인이고 잠복기가 깁니다.\n- 장출혈성대장균: 피 섞인 설사가 특징이고 덜 익힌 쇠고기 등이 원인입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "바실루스 세레우스",
+      "독소형"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sanitarian-food-poisoning-0009",
+    "certId": "sanitarian",
+    "subjectId": "food-hygiene",
+    "chapterId": "food-poisoning",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "산소가 조금(약 5%) 있는 미호기성 조건과 42℃ 정도에서 잘 자라며, 덜 익힌 닭고기가 주 원인인 식중독균은?",
+    "choices": [
+      "살모넬라 엔테리티디스",
+      "여시니아 엔테로콜리티카",
+      "리스테리아 모노사이토제네스",
+      "캄필로박터 제주니",
+      "황색포도상구균"
+    ],
+    "answer": 4,
+    "oneLineConcept": "캄필로박터 = 미호기성, 42℃ 생육, 덜 익힌 닭고기",
+    "explanation": "캄필로박터 제주니는 산소가 아주 조금 있는 미호기성 조건과 42℃ 정도의 높은 온도에서 잘 자랍니다. 닭의 장에 많아 덜 익힌 닭고기나 생닭을 만진 손·도마로 옮아 갑니다.\n\n**틀린 선지**\n- 살모넬라 엔테리티디스: 닭고기·달걀이 원인이지만 미호기성 균은 아닙니다.\n- 여시니아: 냉장 온도(4℃ 안팎)에서도 자라는 저온균입니다.\n- 리스테리아: 역시 냉장 온도에서 자라는 균으로 임신부에게 위험합니다.\n- 황색포도상구균: 장독소를 만드는 독소형 균으로 손의 상처에서 옮습니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "캄필로박터",
+      "감염형"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sanitarian-food-poisoning-0010",
+    "certId": "sanitarian",
+    "subjectId": "food-hygiene",
+    "chapterId": "food-poisoning",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "베로독소(시가독소)를 만들어 피가 섞인 설사를 일으키고, 어린이에게 용혈성요독증후군(HUS)을 일으킬 수 있는 식중독균은?",
+    "choices": [
+      "장독소형대장균",
+      "장출혈성대장균(O157:H7 등)",
+      "장염비브리오균",
+      "살모넬라균",
+      "바실루스 세레우스"
+    ],
+    "answer": 2,
+    "oneLineConcept": "장출혈성대장균 = 베로독소, 혈변, 용혈성요독증후군",
+    "explanation": "장출혈성대장균은 베로독소를 만들어 피 섞인 설사를 일으키고, 어린이·노인에게는 신장이 망가지는 용혈성요독증후군을 일으킬 수 있습니다. 덜 익힌 쇠고기 분쇄육 등이 원인이므로 속까지 충분히 익혀 먹습니다.\n\n**틀린 선지**\n- 장독소형대장균: 콜레라와 비슷한 물 설사를 일으키는 '여행자 설사'의 원인입니다.\n- 장염비브리오균: 어패류가 원인이며 베로독소를 만들지 않습니다.\n- 살모넬라균: 고열이 특징이며 베로독소와 관계가 없습니다.\n- 바실루스 세레우스: 구토형·설사형 독소를 만들지만 용혈성요독증후군과는 관계가 적습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "병원성대장균",
+      "O157"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sanitarian-food-poisoning-0011",
+    "certId": "sanitarian",
+    "subjectId": "food-hygiene",
+    "chapterId": "food-poisoning",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "노로바이러스 식중독에 대한 설명으로 옳은 것은?",
+    "choices": [
+      "식품 속에서 세균처럼 스스로 늘어난다",
+      "항생제를 먹으면 바로 치료된다",
+      "70% 알코올 손소독제만으로 완전히 없앨 수 있다",
+      "적은 수의 바이러스로도 감염되며 겨울철에 많이 발생한다",
+      "주로 한여름에만 발생한다"
+    ],
+    "answer": 4,
+    "oneLineConcept": "노로바이러스 = 적은 양으로 감염, 겨울철 다발, 식품 속에서 증식 안 함",
+    "explanation": "노로바이러스는 10~100개 정도의 적은 양으로도 감염되고, 추운 겨울철에 많이 발생합니다. 굴 같은 어패류나 오염된 물, 환자의 구토물로 퍼지므로 비누로 손을 씻고 염소 소독제로 소독합니다.\n\n**틀린 선지**\n- 식품 속에서 스스로 늘어난다: 바이러스는 살아 있는 세포 안에서만 늘어나며, 식품 속에서는 늘지 않습니다.\n- 항생제로 치료: 항생제는 세균에 듣는 약으로 바이러스에는 효과가 없습니다.\n- 알코올 손소독제로 완전히 제거: 노로바이러스는 알코올에 강한 편이라 비누 손 씻기와 염소 소독이 필요합니다.\n- 한여름에만 발생: 오히려 겨울철에 많이 발생합니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "노로바이러스",
+      "바이러스성 식중독"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sanitarian-food-poisoning-0012",
+    "certId": "sanitarian",
+    "subjectId": "food-hygiene",
+    "chapterId": "food-poisoning",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "복어의 독성분으로, 신경을 마비시키고 열에 강해 끓여도 잘 없어지지 않는 물질은?",
+    "choices": [
+      "테트로도톡신",
+      "삭시톡신",
+      "솔라닌",
+      "무스카린",
+      "베네루핀"
+    ],
+    "answer": 1,
+    "oneLineConcept": "복어독 = 테트로도톡신 (신경독, 열에 강함)",
+    "explanation": "복어독은 테트로도톡신이라는 신경독입니다. 열에 강해 끓여도 독이 없어지지 않으므로, 반드시 복어 조리 자격이 있는 사람이 독이 있는 부위를 제거해야 합니다.\n\n**틀린 선지**\n- 삭시톡신: 섭조개·대합 같은 조개류의 마비성 독입니다.\n- 솔라닌: 감자 싹과 녹색 부분의 독입니다.\n- 무스카린: 독버섯의 독입니다.\n- 베네루핀: 모시조개·바지락·굴의 독입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "복어",
+      "동물성 자연독"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sanitarian-food-poisoning-0013",
+    "certId": "sanitarian",
+    "subjectId": "food-hygiene",
+    "chapterId": "food-poisoning",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "복어에서 일반적으로 독(테트로도톡신)이 가장 많이 들어 있는 부위는?",
+    "choices": [
+      "근육(살)",
+      "껍질",
+      "지느러미",
+      "뼈",
+      "난소(알집)"
+    ],
+    "answer": 5,
+    "oneLineConcept": "복어독 함량: 난소 > 간 > 내장 > 껍질",
+    "explanation": "복어독은 보통 난소(알집)에 가장 많고, 그다음 간, 내장, 껍질 순입니다. 살(근육)에는 독이 적거나 없는 종류가 많지만, 종류에 따라 다르므로 전문 조리사가 다루어야 합니다.\n\n**틀린 선지**\n- 근육(살): 독이 가장 적은 부위로, 먹는 부위입니다.\n- 껍질: 독이 있을 수 있지만 난소·간보다는 적습니다.\n- 지느러미: 독이 많은 부위가 아닙니다.\n- 뼈: 독이 많이 모이는 부위가 아닙니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "복어",
+      "테트로도톡신"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        5
+      ],
+      "intermediate": [
+        1,
+        2,
+        5
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        5
+      ]
+    }
+  },
+  {
+    "id": "sanitarian-food-poisoning-0014",
+    "certId": "sanitarian",
+    "subjectId": "food-hygiene",
+    "chapterId": "food-poisoning",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "싹이 난 감자나 햇볕을 받아 녹색으로 변한 감자 부분에 많이 들어 있는 독성분은?",
+    "choices": [
+      "아미그달린",
+      "고시폴",
+      "솔라닌",
+      "무스카린",
+      "테무린"
+    ],
+    "answer": 3,
+    "oneLineConcept": "감자 싹·녹색 부분 = 솔라닌",
+    "explanation": "감자의 싹과 녹색 부분에는 솔라닌이 많습니다. 구토·복통·어지러움을 일으킬 수 있으므로 싹과 녹색 부분은 넉넉히 도려내고, 감자는 서늘하고 어두운 곳에 보관합니다.\n\n**틀린 선지**\n- 아미그달린: 덜 익은 매실(청매)·살구씨에 들어 있는 독입니다.\n- 고시폴: 목화씨(면실유)에 들어 있는 독입니다.\n- 무스카린: 독버섯의 독입니다.\n- 테무린: 독보리의 독입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "감자",
+      "식물성 자연독"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sanitarian-food-poisoning-0015",
+    "certId": "sanitarian",
+    "subjectId": "food-hygiene",
+    "chapterId": "food-poisoning",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "독버섯에 들어 있으며, 땀·침이 많이 나고 동공이 작아지는 등 부교감신경을 자극하는 증상을 일으키는 독성분은?",
+    "choices": [
+      "무스카린",
+      "시큐톡신",
+      "솔라닌",
+      "고시폴",
+      "아미그달린"
+    ],
+    "answer": 1,
+    "oneLineConcept": "독버섯 독 = 무스카린 (땀·침 분비 증가)",
+    "explanation": "무스카린은 대표적인 독버섯 독성분입니다. 부교감신경을 자극해 땀·침·눈물이 많이 나고 구토·설사가 나타납니다. 야생 버섯은 모양만 보고 먹지 않는 것이 가장 좋은 예방법입니다.\n\n**틀린 선지**\n- 시큐톡신: 독미나리의 독입니다.\n- 솔라닌: 감자 싹의 독입니다.\n- 고시폴: 목화씨(면실유)의 독입니다.\n- 아미그달린: 덜 익은 매실·살구씨의 독입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "독버섯",
+      "식물성 자연독"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sanitarian-food-poisoning-0016",
+    "certId": "sanitarian",
+    "subjectId": "food-hygiene",
+    "chapterId": "food-poisoning",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "모시조개·바지락·굴을 먹고 생기며, 간 기능 장애와 피하 출혈반, 황달 등을 일으키는 독성분은?",
+    "choices": [
+      "삭시톡신",
+      "테트로도톡신",
+      "베네루핀",
+      "시구아톡신",
+      "테무린"
+    ],
+    "answer": 3,
+    "oneLineConcept": "모시조개·바지락·굴 = 베네루핀 (간 장애)",
+    "explanation": "베네루핀은 모시조개·바지락·굴에서 문제가 되는 독으로, 간을 손상시켜 출혈반·황달 등을 일으킵니다. 열에 강해 익혀도 독이 없어지지 않으므로 독이 나오는 시기에는 먹지 않는 것이 좋습니다.\n\n**틀린 선지**\n- 삭시톡신: 섭조개(홍합)·대합의 독으로 간 장애가 아니라 마비 증상을 일으킵니다.\n- 테트로도톡신: 복어의 신경독입니다.\n- 시구아톡신: 열대 바다 산호초 주변 물고기의 독입니다.\n- 테무린: 독보리의 독입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "조개류",
+      "동물성 자연독"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sanitarian-food-poisoning-0017",
+    "certId": "sanitarian",
+    "subjectId": "food-hygiene",
+    "chapterId": "food-poisoning",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "섭조개(홍합)·대합 등을 먹고 입술과 혀가 저리고 팔다리가 마비되는 '마비성 패류독' 증상이 나타났다. 원인 독성분은?",
+    "choices": [
+      "베네루핀",
+      "테트로도톡신",
+      "무스카린",
+      "솔라닌",
+      "삭시톡신"
+    ],
+    "answer": 5,
+    "oneLineConcept": "섭조개·대합 마비성 패류독 = 삭시톡신",
+    "explanation": "삭시톡신은 섭조개(홍합)·대합 등에 쌓이는 마비성 패류독입니다. 입술·혀 저림에서 시작해 팔다리 마비, 심하면 호흡마비까지 올 수 있습니다. 열에 강해 익혀도 없어지지 않습니다.\n\n**틀린 선지**\n- 베네루핀: 모시조개·바지락·굴의 독으로 간 장애를 일으킵니다.\n- 테트로도톡신: 복어의 독입니다.\n- 무스카린: 독버섯의 독입니다.\n- 솔라닌: 감자 싹의 독입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "조개류",
+      "마비성 패류독"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        5
+      ],
+      "intermediate": [
+        1,
+        2,
+        5
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        5
+      ]
+    }
+  },
+  {
+    "id": "sanitarian-food-poisoning-0018",
+    "certId": "sanitarian",
+    "subjectId": "food-hygiene",
+    "chapterId": "food-poisoning",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "잘못 만든 술(과실주 등)에 섞여 들어가 두통·구토와 함께 시신경 장애를 일으켜 심하면 실명에 이르게 하는 화학물질은?",
+    "choices": [
+      "에탄올(에틸알코올)",
+      "메탄올(메틸알코올)",
+      "젖산",
+      "글리세롤",
+      "아세트산(초산)"
+    ],
+    "answer": 2,
+    "oneLineConcept": "메탄올 = 시신경 장애·실명 (과실주의 펙틴 분해)",
+    "explanation": "메탄올은 과일의 펙틴이 분해될 때 생길 수 있고, 몸 안에서 독성 물질로 바뀌어 시신경을 손상시킵니다. 심하면 실명하거나 목숨을 잃을 수 있습니다.\n\n**틀린 선지**\n- 에탄올: 술의 주성분으로, 많이 마시면 해롭지만 시신경 장애로 실명시키는 대표 물질은 아닙니다.\n- 젖산: 요구르트·김치 등에 들어 있는 산으로 실명과 관계가 없습니다.\n- 글리세롤: 단맛이 나는 알코올류로 이런 독성이 없습니다.\n- 아세트산: 식초의 주성분입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "메탄올",
+      "화학적 식중독"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  }
+]

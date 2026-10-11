@@ -1,0 +1,475 @@
+[
+  {
+    "id": "sanitarian-food-spoilage-preservation-0001",
+    "certId": "sanitarian",
+    "subjectId": "food-hygiene",
+    "chapterId": "food-spoilage-preservation",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "수분활성도(Aw)를 바르게 설명한 것은?",
+    "choices": [
+      "식품 100g 속에 들어 있는 물의 무게(g)",
+      "같은 온도에서 식품의 수증기압을 순수한 물의 수증기압으로 나눈 값",
+      "순수한 물의 수증기압을 식품의 수증기압으로 나눈 값",
+      "식품을 105℃에서 말렸을 때 줄어든 무게의 비율",
+      "공기 중 수증기량을 포화 수증기량으로 나눈 값"
+    ],
+    "answer": 2,
+    "oneLineConcept": "수분활성도 = 식품의 수증기압 ÷ 순수한 물의 수증기압 (물은 1)",
+    "explanation": "수분활성도는 식품 속 물 가운데 미생물이 실제로 쓸 수 있는 물의 정도를 나타냅니다. 같은 온도에서 식품의 수증기압을 순수한 물의 수증기압으로 나누어 구하므로, 순수한 물은 1이고 식품은 1보다 작습니다.\n\n**틀린 선지**\n- 식품 100g 속 물의 무게: 이것은 수분 함량(%)이며, 미생물이 쓸 수 있는 물의 정도와는 다릅니다.\n- 순수한 물의 수증기압을 식품의 수증기압으로 나눈 값: 분자와 분모가 거꾸로 되어 1보다 큰 값이 나옵니다.\n- 105℃에서 말렸을 때 줄어든 무게의 비율: 수분 함량을 재는 건조법의 설명입니다.\n- 공기 중 수증기량 ÷ 포화 수증기량: 공기의 상대습도를 구하는 식입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "수분활성도",
+      "미생물 생육조건"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sanitarian-food-spoilage-preservation-0002",
+    "certId": "sanitarian",
+    "subjectId": "food-hygiene",
+    "chapterId": "food-spoilage-preservation",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "일반적으로 생육에 필요한 최저 수분활성도가 높은 미생물부터 차례로 바르게 나열한 것은?",
+    "choices": [
+      "효모 > 세균 > 곰팡이",
+      "곰팡이 > 효모 > 세균",
+      "세균 > 곰팡이 > 효모",
+      "세균 > 효모 > 곰팡이",
+      "곰팡이 > 세균 > 효모"
+    ],
+    "answer": 4,
+    "oneLineConcept": "필요한 수분활성도: 세균 > 효모 > 곰팡이 (곰팡이가 가장 건조에 강함)",
+    "explanation": "세균은 물이 많아야(수분활성도 약 0.90 이상) 자라고, 효모는 그보다 조금 적은 물(약 0.88)에서도, 곰팡이는 더 마른 상태(약 0.80)에서도 자랍니다. 그래서 마른 식품에는 세균보다 곰팡이가 잘 핍니다.\n\n**틀린 선지**\n- 효모 > 세균 > 곰팡이: 세균이 효모보다 물을 더 많이 필요로 하므로 순서가 틀립니다.\n- 곰팡이 > 효모 > 세균: 순서가 완전히 거꾸로입니다. 곰팡이가 가장 마른 상태에서도 자랍니다.\n- 세균 > 곰팡이 > 효모: 효모가 곰팡이보다 물을 더 필요로 하므로 순서가 틀립니다.\n- 곰팡이 > 세균 > 효모: 곰팡이는 셋 중 물이 가장 적어도 자라므로 맨 앞에 올 수 없습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "수분활성도",
+      "미생물 생육조건"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sanitarian-food-spoilage-preservation-0003",
+    "certId": "sanitarian",
+    "subjectId": "food-hygiene",
+    "chapterId": "food-spoilage-preservation",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "고기나 생선 같은 단백질 식품이 미생물(주로 혐기성 세균)에 의해 분해되어 나쁜 냄새와 유해물질이 생기는 현상은?",
+    "choices": [
+      "부패",
+      "변패",
+      "산패",
+      "발효",
+      "갈변"
+    ],
+    "answer": 1,
+    "oneLineConcept": "부패 = 단백질 식품이 미생물로 분해되어 악취·유해물질 생성",
+    "explanation": "단백질 식품이 미생물에 의해 분해되어 암모니아·아민 같은 악취 물질과 유해물질이 생기는 것을 부패라고 합니다.\n\n**틀린 선지**\n- 변패: 탄수화물이나 지방 식품이 미생물로 변질되는 것을 말합니다.\n- 산패: 기름(지방)이 산소·빛·열로 산화되어 냄새와 맛이 나빠지는 것입니다.\n- 발효: 미생물이 식품을 분해해 사람에게 이로운 물질을 만드는 것(김치·된장 등)입니다.\n- 갈변: 식품 색이 갈색으로 변하는 현상으로, 단백질이 썩는 것과는 다릅니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "부패",
+      "변질"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sanitarian-food-spoilage-preservation-0004",
+    "certId": "sanitarian",
+    "subjectId": "food-hygiene",
+    "chapterId": "food-spoilage-preservation",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "식용유를 햇빛이 드는 곳에 오래 두었더니 불쾌한 냄새가 나고 맛이 변했다. 이 현상을 무엇이라 하는가?",
+    "choices": [
+      "부패",
+      "변패",
+      "발효",
+      "호화",
+      "산패"
+    ],
+    "answer": 5,
+    "oneLineConcept": "산패 = 유지가 산소·빛·열로 산화되어 냄새·맛이 나빠짐",
+    "explanation": "기름(유지)이 공기 중 산소, 빛, 열 때문에 산화되어 냄새와 맛이 나빠지는 것을 산패라고 합니다. 산패를 막으려면 기름을 서늘하고 어두운 곳에 마개를 닫아 보관합니다.\n\n**틀린 선지**\n- 부패: 단백질 식품이 미생물로 분해되는 것으로, 기름이 산화되는 것과 다릅니다.\n- 변패: 탄수화물·지방 식품이 미생물 때문에 변하는 것으로, 빛과 산소에 의한 산화는 산패라고 합니다.\n- 발효: 미생물이 이로운 물질을 만드는 과정입니다.\n- 호화: 전분에 물을 넣고 가열하면 풀처럼 되는 현상(밥 짓기 등)입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "산패",
+      "변질"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        5
+      ],
+      "intermediate": [
+        1,
+        2,
+        5
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        5
+      ]
+    }
+  },
+  {
+    "id": "sanitarian-food-spoilage-preservation-0005",
+    "certId": "sanitarian",
+    "subjectId": "food-hygiene",
+    "chapterId": "food-spoilage-preservation",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "식품의 초기부패를 판정할 때, 식품 1g 당 일반세균 수(생균 수)가 대략 얼마 이상이면 초기부패로 보는가?",
+    "choices": [
+      "10⁵ 개",
+      "10³ 개",
+      "10⁷~10⁸ 개",
+      "10¹⁰~10¹¹ 개",
+      "10 개"
+    ],
+    "answer": 3,
+    "oneLineConcept": "초기부패 판정: 식품 1g 당 생균 수 10⁷~10⁸ 개",
+    "explanation": "일반적으로 식품 1g 속 세균 수가 10⁷~10⁸ 개(1천만~1억 개)에 이르면 초기부패 단계로 판정합니다.\n\n**틀린 선지**\n- 10⁵ 개: 아직 초기부패 기준(10⁷~10⁸)에 못 미치는 수입니다.\n- 10³ 개: 비교적 신선한 식품에서도 볼 수 있는 적은 수입니다.\n- 10¹⁰~10¹¹ 개: 초기부패 기준보다 훨씬 많아, 이미 부패가 크게 진행된 상태입니다.\n- 10 개: 거의 세균이 없는 수준으로 부패 판정과 관계가 없습니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "초기부패",
+      "부패 판정"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sanitarian-food-spoilage-preservation-0006",
+    "certId": "sanitarian",
+    "subjectId": "food-hygiene",
+    "chapterId": "food-spoilage-preservation",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "우유의 저온장시간살균법(LTLT)의 가열 조건으로 옳은 것은?",
+    "choices": [
+      "63~65℃에서 30분",
+      "72~75℃에서 15~20초",
+      "130~150℃에서 1~5초",
+      "100℃에서 30분씩 하루 간격으로 3회",
+      "121℃에서 15분"
+    ],
+    "answer": 1,
+    "oneLineConcept": "저온장시간살균(LTLT) = 63~65℃, 30분",
+    "explanation": "저온장시간살균법은 63~65℃에서 30분 동안 가열하는 방법입니다. 영양 성분과 맛의 변화를 줄이면서 병원균을 없앨 수 있습니다.\n\n**틀린 선지**\n- 72~75℃에서 15~20초: 고온단시간살균법(HTST)의 조건입니다.\n- 130~150℃에서 1~5초: 초고온순간살균법(UHT)의 조건입니다.\n- 100℃에서 30분씩 3회: 아포(포자)까지 없애는 간헐멸균법입니다.\n- 121℃에서 15분: 고압증기멸균법의 조건입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "살균",
+      "우유"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sanitarian-food-spoilage-preservation-0007",
+    "certId": "sanitarian",
+    "subjectId": "food-hygiene",
+    "chapterId": "food-spoilage-preservation",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "열에 강한 아포(포자)를 만드는 세균까지 없애기 위해 100℃ 증기로 30분씩, 24시간 간격을 두고 3번 가열하는 방법은?",
+    "choices": [
+      "고압증기멸균법",
+      "저온장시간살균법",
+      "간헐멸균법",
+      "건열멸균법",
+      "초고온순간살균법"
+    ],
+    "answer": 3,
+    "oneLineConcept": "간헐멸균법 = 100℃ 30분씩, 하루 간격 3회 (아포까지 사멸)",
+    "explanation": "간헐멸균법은 100℃로 30분 가열한 뒤 하루를 두어 살아남은 아포가 싹(영양세포)을 틔우게 하고, 다시 가열해 죽이는 일을 3번 되풀이하는 방법입니다.\n\n**틀린 선지**\n- 고압증기멸균법: 압력솥 같은 장치로 121℃에서 15~20분 가열하며, 한 번에 끝냅니다.\n- 저온장시간살균법: 63~65℃에서 30분 가열하며, 아포까지 죽이지는 못합니다.\n- 건열멸균법: 물 없이 160~170℃ 정도의 마른 열로 유리기구 등을 멸균하는 방법입니다.\n- 초고온순간살균법: 130~150℃에서 몇 초만 가열하는 방법입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "살균",
+      "아포"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sanitarian-food-spoilage-preservation-0008",
+    "certId": "sanitarian",
+    "subjectId": "food-hygiene",
+    "chapterId": "food-spoilage-preservation",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "자외선 살균에 대한 설명으로 옳은 것은?",
+    "choices": [
+      "투과력이 강해 포장된 식품의 속까지 살균된다",
+      "살균 뒤 식품에 화학물질이 남는 것이 단점이다",
+      "파장이 400nm 이상인 빛에서 살균력이 가장 강하다",
+      "단백질이 많은 식품일수록 살균 효과가 좋아진다",
+      "살균력이 가장 강한 파장은 약 250~260nm(260nm 부근)이다"
+    ],
+    "answer": 5,
+    "oneLineConcept": "자외선 살균: 260nm 부근이 가장 강하고, 투과력이 약해 표면만 살균",
+    "explanation": "자외선은 약 250~260nm 파장에서 세균의 유전물질(DNA)을 손상시켜 살균력이 가장 강합니다. 다만 투과력이 약해 물체의 표면이나 공기·물만 살균할 수 있습니다.\n\n**틀린 선지**\n- 투과력이 강해 속까지 살균: 자외선은 투과력이 약해 표면만 살균합니다.\n- 화학물질이 남는다: 자외선은 빛이므로 잔류물이 남지 않는 것이 장점입니다.\n- 400nm 이상에서 가장 강하다: 400nm 이상은 눈에 보이는 빛(가시광선)이며, 살균력은 260nm 부근이 가장 강합니다.\n- 단백질이 많을수록 효과가 좋다: 단백질 같은 물질은 자외선을 흡수해 오히려 효과를 떨어뜨립니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "자외선",
+      "살균"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        5
+      ],
+      "intermediate": [
+        1,
+        2,
+        5
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        5
+      ]
+    }
+  },
+  {
+    "id": "sanitarian-food-spoilage-preservation-0009",
+    "certId": "sanitarian",
+    "subjectId": "food-hygiene",
+    "chapterId": "food-spoilage-preservation",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "소금에 절이는 염장법이 미생물의 번식을 막는 주된 원리는?",
+    "choices": [
+      "식품의 pH 를 높여 알칼리성으로 만든다",
+      "삼투압으로 미생물과 식품의 수분을 빼앗아 수분활성도를 낮춘다",
+      "식품 속 산소를 늘려 혐기성 세균을 죽인다",
+      "식품의 온도를 높여 단백질을 굳힌다",
+      "자외선을 흡수해 세균의 유전물질을 파괴한다"
+    ],
+    "answer": 2,
+    "oneLineConcept": "염장 = 삼투압으로 탈수 → 수분활성도 저하 → 미생물 억제",
+    "explanation": "소금 농도가 높으면 삼투압 때문에 미생물 세포와 식품에서 물이 빠져나갑니다. 미생물이 쓸 수 있는 물(수분활성도)이 줄어 번식하기 어려워집니다.\n\n**틀린 선지**\n- pH 를 높여 알칼리성으로: 소금은 pH 를 크게 바꾸지 않습니다. 산성으로 만드는 방법은 산저장법입니다.\n- 산소를 늘려 혐기성 세균을 죽인다: 염장은 산소량과 관계가 없습니다.\n- 온도를 높여 단백질을 굳힌다: 가열 살균의 원리이며, 염장은 열을 쓰지 않습니다.\n- 자외선을 흡수: 자외선 살균의 원리로 염장과 관계가 없습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "염장",
+      "보존법"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sanitarian-food-spoilage-preservation-0010",
+    "certId": "sanitarian",
+    "subjectId": "food-hygiene",
+    "chapterId": "food-spoilage-preservation",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "나무를 불완전 연소시킨 연기를 쐬어 식품을 말리면서 연기 속 살균 성분으로 보존성을 높이는 방법은?",
+    "choices": [
+      "염장법",
+      "당장법",
+      "산저장법",
+      "훈연법",
+      "CA 저장법(가스저장법)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "훈연법 = 연기 속 페놀류 등 살균 성분 + 건조로 보존",
+    "explanation": "훈연법은 참나무 같은 나무를 태운 연기를 쐬는 방법입니다. 연기 속 페놀류·포름알데히드 같은 성분이 살균 작용을 하고, 수분도 줄어들어 오래 보관할 수 있습니다. 햄·베이컨에 많이 씁니다.\n\n**틀린 선지**\n- 염장법: 소금에 절이는 방법입니다.\n- 당장법: 설탕에 절이는 방법(잼 등)입니다.\n- 산저장법: 식초 같은 산으로 pH 를 낮추는 방법(피클 등)입니다.\n- CA 저장법: 저장고의 산소·이산화탄소 농도를 조절하는 방법입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "훈연",
+      "보존법"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sanitarian-food-spoilage-preservation-0011",
+    "certId": "sanitarian",
+    "subjectId": "food-hygiene",
+    "chapterId": "food-spoilage-preservation",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "사과 같은 과일을 오래 저장하기 위해 CA 저장(가스저장)을 할 때 저장고 공기를 조절하는 방법으로 옳은 것은?",
+    "choices": [
+      "산소 농도를 높이고 이산화탄소 농도를 낮춘다",
+      "산소 농도를 낮추고 이산화탄소 농도를 높인다",
+      "산소와 이산화탄소 농도를 모두 높인다",
+      "질소를 모두 빼고 산소만 채운다",
+      "에틸렌 가스 농도를 높여 숙성을 빠르게 한다"
+    ],
+    "answer": 2,
+    "oneLineConcept": "CA 저장 = 산소↓ 이산화탄소↑ → 호흡 억제로 신선도 유지",
+    "explanation": "CA 저장은 저장고의 산소를 줄이고 이산화탄소를 늘려 과일·채소의 호흡을 느리게 하는 방법입니다. 호흡이 느려지면 숙성과 노화가 늦어져 신선도가 오래 갑니다.\n\n**틀린 선지**\n- 산소를 높이고 이산화탄소를 낮춘다: 호흡이 오히려 활발해져 빨리 시듭니다.\n- 둘 다 높인다: 산소를 높이면 호흡이 빨라지므로 CA 저장의 원리와 맞지 않습니다.\n- 질소를 빼고 산소만 채운다: 산소가 많으면 호흡과 산화가 빨라집니다.\n- 에틸렌 농도를 높인다: 에틸렌은 숙성을 앞당기는 가스이므로 저장에는 오히려 줄여야 합니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-11",
+    "tags": [
+      "CA 저장",
+      "보존법"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  }
+]
