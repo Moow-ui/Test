@@ -165,7 +165,7 @@ Cloudflare 배포 파일 수 한도(`docs/routine-status.md`)에 가까워지면
    그림이 들어간 단원이 가장 적은 자격증의 그림이 필요한 단원 하나를 고른다.
 2. **만들기 (1건 = 단원 1개)**: 그 단원에 **그림 문제 5~10개**를 새로 쓰고(id 는 `npm run questions:add` 가 붙인다), 개념 정리에 그 단원이 있으면 **개념 그림 1개**를 `figures` 에 넣는다.
    기존 문제에 그림을 붙이지 않는다 (붙이려면 `version` 을 올리고 다시 검증해야 한다).
-3. **검증**: [add-cert.md](add-cert.md) A-5 그대로 + 그림을 PNG 로 캡처해 별도 에이전트가 눈으로 보고 다시 푼다. 통과한 문제만 `reviewedAt`(오늘 날짜)을 적어 넣는다.
+3. **검증**: [add-cert.md](add-cert.md) A-5 그대로 + `npm run images:render -- {slug}` 로 만든 PNG 를 별도 에이전트가 눈으로 보고 다시 푼다. 통과한 문제만 `reviewedAt`(오늘 날짜)을 적어 넣는다.
    개념 그림도 같은 에이전트가 그 단원 `concepts`·`compare` 와 맞는지 본다. 틀리면 넣지 않는다.
    결과는 `reports/{YYYY-MM}/verify-images-{slug}-{chapterId}.md` (작성 N · 통과 N · 탈락 N).
 4. **검사**: `npm run validate && npm test && npm run build`. 통과하면 커밋 1개 `images: add {slug} {chapterId}` → `git pull --rebase origin main` → push.
