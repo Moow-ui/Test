@@ -1,0 +1,1233 @@
+[
+  {
+    "id": "credit-analyst-financial-analysis-0001",
+    "certId": "credit-analyst",
+    "subjectId": "credit-analysis",
+    "chapterId": "financial-analysis",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "유동자산이 300억 원, 유동부채가 200억 원인 기업의 유동비율은?",
+    "choices": [
+      "100%",
+      "150%",
+      "200%",
+      "66.7%",
+      "250%"
+    ],
+    "answer": 2,
+    "oneLineConcept": "유동비율 = 유동자산 ÷ 유동부채 × 100",
+    "explanation": "**유동비율**은 1년 안에 갚아야 할 빚(유동부채)을 1년 안에 현금이 되는 자산(유동자산)으로 얼마나 갚을 수 있는지 보는 단기 지급능력 비율입니다.\n\n1. 공식: 유동비율 = 유동자산 ÷ 유동부채 × 100\n2. 대입: 300 ÷ 200 × 100\n3. 답: **150%** (검산: 200 × 1.5 = 300)\n\n**틀린 선지**\n- 66.7%: 분자와 분모를 거꾸로 넣은 값(200 ÷ 300)입니다.\n- 100%: 유동자산과 유동부채의 차이(100억 원)를 %로 착각한 값입니다.\n- 200%: 유동자산이 400억 원일 때의 값으로, 계산이 틀렸습니다.\n- 250%: 300과 200을 더한 500을 200으로 나눈 값으로, 공식과 다릅니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "유동비율",
+      "안정성비율"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "credit-analyst-financial-analysis-0002",
+    "certId": "credit-analyst",
+    "subjectId": "credit-analysis",
+    "chapterId": "financial-analysis",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "유동자산 500억 원(이 중 재고자산 200억 원), 유동부채 250억 원인 기업의 당좌비율은?",
+    "choices": [
+      "40%",
+      "280%",
+      "120%",
+      "80%",
+      "200%"
+    ],
+    "answer": 3,
+    "oneLineConcept": "당좌비율 = (유동자산 − 재고자산) ÷ 유동부채 × 100",
+    "explanation": "**당좌비율**은 유동자산 가운데 팔아야 현금이 되는 재고자산을 빼고, 바로 현금화하기 쉬운 자산(당좌자산)만으로 단기 빚을 갚을 수 있는지 봅니다.\n\n1. 공식: 당좌비율 = (유동자산 − 재고자산) ÷ 유동부채 × 100\n2. 대입: (500 − 200) ÷ 250 × 100 = 300 ÷ 250 × 100\n3. 답: **120%** (검산: 250 × 1.2 = 300)\n\n**틀린 선지**\n- 200%: 재고자산을 빼지 않고 계산한 유동비율(500 ÷ 250)입니다.\n- 80%: 재고자산 200을 유동부채 250으로 나눈 값으로, 당좌비율이 아닙니다.\n- 40%: 재고자산이 유동자산에서 차지하는 비율(200 ÷ 500)입니다.\n- 280%: 재고자산을 빼는 대신 더해서 계산한 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "당좌비율",
+      "안정성비율"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        5
+      ],
+      "intermediate": [
+        3,
+        4,
+        5
+      ],
+      "advanced": [
+        1,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "credit-analyst-financial-analysis-0003",
+    "certId": "credit-analyst",
+    "subjectId": "credit-analysis",
+    "chapterId": "financial-analysis",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "부채총계가 600억 원, 자본총계가 400억 원인 기업의 부채비율은? (부채비율 = 부채총계 ÷ 자본총계 × 100)",
+    "choices": [
+      "40%",
+      "250%",
+      "60%",
+      "66.7%",
+      "150%"
+    ],
+    "answer": 5,
+    "oneLineConcept": "부채비율 = 부채총계 ÷ 자본총계 × 100",
+    "explanation": "**부채비율**은 자기 돈(자본)에 비해 남의 돈(부채)을 얼마나 썼는지 보여 주는 대표적인 안정성 비율입니다. 높을수록 빚 부담이 큽니다.\n\n1. 공식: 부채비율 = 부채총계 ÷ 자본총계 × 100\n2. 대입: 600 ÷ 400 × 100\n3. 답: **150%** (검산: 400 × 1.5 = 600)\n\n**틀린 선지**\n- 60%: 부채를 총자산(1,000)으로 나눈 값(부채의존도)입니다. 부채비율의 분모는 자본입니다.\n- 66.7%: 자본을 부채로 나눈 값(400 ÷ 600)으로, 분자와 분모가 바뀌었습니다.\n- 40%: 자본을 총자산으로 나눈 자기자본비율입니다.\n- 250%: 총자산(1,000)을 자본(400)으로 나눈 값으로, 공식과 다릅니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "부채비율",
+      "안정성비율"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        5
+      ],
+      "intermediate": [
+        3,
+        4,
+        5
+      ],
+      "advanced": [
+        1,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "credit-analyst-financial-analysis-0004",
+    "certId": "credit-analyst",
+    "subjectId": "credit-analysis",
+    "chapterId": "financial-analysis",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "영업이익이 120억 원, 이자비용이 40억 원인 기업의 이자보상배율은?",
+    "choices": [
+      "3배",
+      "0.33배",
+      "4배",
+      "2배",
+      "80배"
+    ],
+    "answer": 1,
+    "oneLineConcept": "이자보상배율 = 영업이익 ÷ 이자비용",
+    "explanation": "**이자보상배율**은 영업으로 번 이익(영업이익)이 이자비용의 몇 배인지 보여 줍니다. 클수록 이자를 갚을 여력이 큽니다.\n\n1. 공식: 이자보상배율 = 영업이익 ÷ 이자비용\n2. 대입: 120 ÷ 40\n3. 답: **3배** (검산: 40 × 3 = 120)\n\n**틀린 선지**\n- 0.33배: 이자비용을 영업이익으로 나눈 값(40 ÷ 120)으로, 분자와 분모가 바뀌었습니다.\n- 2배: 영업이익에서 이자비용을 뺀 80을 40으로 나눈 값으로, 공식과 다릅니다.\n- 4배: 영업이익과 이자비용을 더한 160을 40으로 나눈 값입니다.\n- 80배: 영업이익에서 이자비용을 뺀 금액(80억 원)으로, 배율이 아닙니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "이자보상배율",
+      "안정성비율"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "credit-analyst-financial-analysis-0005",
+    "certId": "credit-analyst",
+    "subjectId": "credit-analysis",
+    "chapterId": "financial-analysis",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "당기순이익이 60억 원, 자기자본(기말)이 500억 원인 기업의 자기자본이익률(ROE)은? (기말 자기자본 기준)",
+    "choices": [
+      "6%",
+      "20%",
+      "10%",
+      "12%",
+      "8.3%"
+    ],
+    "answer": 4,
+    "oneLineConcept": "ROE = 당기순이익 ÷ 자기자본 × 100",
+    "explanation": "**자기자본이익률(ROE)**은 주주가 넣은 돈(자기자본)으로 한 해에 얼마의 순이익을 냈는지 보여 주는 수익성 비율입니다.\n\n1. 공식: ROE = 당기순이익 ÷ 자기자본 × 100\n2. 대입: 60 ÷ 500 × 100\n3. 답: **12%** (검산: 500 × 0.12 = 60)\n\n**틀린 선지**\n- 8.3%: 자기자본을 당기순이익으로 나눈 값(500 ÷ 60 = 8.33)을 비율로 착각한 것입니다.\n- 6%: 순이익을 1,000으로 나눈 값으로, 문제의 자기자본과 맞지 않습니다.\n- 10%: 순이익 60을 600으로 나눈 값으로, 분모가 틀렸습니다.\n- 20%: 순이익 60을 300으로 나눈 값으로, 분모가 틀렸습니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "ROE",
+      "수익성비율"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        4,
+        5
+      ],
+      "intermediate": [
+        1,
+        4,
+        5
+      ],
+      "advanced": [
+        1,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "credit-analyst-financial-analysis-0006",
+    "certId": "credit-analyst",
+    "subjectId": "credit-analysis",
+    "chapterId": "financial-analysis",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "당기순이익이 30억 원, 총자산이 600억 원인 기업의 총자산이익률(ROA)은? (기말 총자산 기준)",
+    "choices": [
+      "6%",
+      "20%",
+      "5%",
+      "10%",
+      "3%"
+    ],
+    "answer": 3,
+    "oneLineConcept": "ROA = 당기순이익 ÷ 총자산 × 100",
+    "explanation": "**총자산이익률(ROA)**은 회사가 가진 전체 자산으로 얼마나 이익을 냈는지 보여 줍니다.\n\n1. 공식: ROA = 당기순이익 ÷ 총자산 × 100\n2. 대입: 30 ÷ 600 × 100\n3. 답: **5%** (검산: 600 × 0.05 = 30)\n\n**틀린 선지**\n- 20%: 총자산을 순이익으로 나눈 값(600 ÷ 30 = 20)을 %로 착각한 것입니다.\n- 3%: 순이익 30을 1,000으로 나눈 값으로, 분모가 틀렸습니다.\n- 6%: 순이익 30을 500으로 나눈 값으로, 분모가 틀렸습니다.\n- 10%: 순이익 30을 300으로 나눈 값으로, 분모가 틀렸습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "ROA",
+      "수익성비율"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        5
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        5
+      ]
+    }
+  },
+  {
+    "id": "credit-analyst-financial-analysis-0007",
+    "certId": "credit-analyst",
+    "subjectId": "credit-analysis",
+    "chapterId": "financial-analysis",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "매출액이 1,200억 원, 총자산이 800억 원인 기업의 총자산회전율은? (기말 총자산 기준)",
+    "choices": [
+      "2.0회",
+      "1.5회",
+      "0.67회",
+      "1.2회",
+      "2.5회"
+    ],
+    "answer": 2,
+    "oneLineConcept": "총자산회전율 = 매출액 ÷ 총자산",
+    "explanation": "**총자산회전율**은 자산 1원이 한 해에 매출을 몇 원 만들었는지 보는 활동성(효율성) 비율입니다. 높을수록 자산을 바쁘게 잘 돌린 것입니다.\n\n1. 공식: 총자산회전율 = 매출액 ÷ 총자산\n2. 대입: 1,200 ÷ 800\n3. 답: **1.5회** (검산: 800 × 1.5 = 1,200)\n\n**틀린 선지**\n- 0.67회: 총자산을 매출액으로 나눈 값(800 ÷ 1,200)으로, 분자와 분모가 바뀌었습니다.\n- 2.0회: 매출액 1,200을 600으로 나눈 값으로, 분모가 틀렸습니다.\n- 1.2회: 매출액 1,200을 1,000으로 나눈 값으로, 분모가 틀렸습니다.\n- 2.5회: 매출액과 총자산을 더한 2,000을 800으로 나눈 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "총자산회전율",
+      "활동성비율"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "credit-analyst-financial-analysis-0008",
+    "certId": "credit-analyst",
+    "subjectId": "credit-analysis",
+    "chapterId": "financial-analysis",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "매출액이 730억 원, 매출채권(기말)이 100억 원인 기업의 매출채권회전일수는? (1년은 365일, 기말 매출채권 기준)",
+    "choices": [
+      "100일",
+      "7.3일",
+      "36.5일",
+      "50일",
+      "73일"
+    ],
+    "answer": 4,
+    "oneLineConcept": "매출채권회전일수 = 365 ÷ 매출채권회전율",
+    "explanation": "**매출채권회전일수**는 외상으로 판 뒤 돈을 받기까지 평균 며칠 걸리는지 보여 줍니다. 짧을수록 돈이 빨리 들어옵니다.\n\n1. 매출채권회전율 = 매출액 ÷ 매출채권 = 730 ÷ 100 = 7.3회\n2. 매출채권회전일수 = 365 ÷ 7.3\n3. 답: **50일** (검산: 100 ÷ 730 × 365 = 50)\n\n**틀린 선지**\n- 7.3일: 회전율(7.3회)을 일수로 착각한 것입니다. 365를 회전율로 나눠야 합니다.\n- 73일: 730을 10으로 나눈 값으로, 공식에 맞지 않습니다.\n- 36.5일: 365를 10으로 나눈 값으로, 회전율 7.3회가 아니라 10회로 계산한 것입니다.\n- 100일: 매출채권 금액(100억 원)을 그대로 일수로 쓴 것입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "매출채권회전일수",
+      "활동성비율"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        4,
+        5
+      ],
+      "advanced": [
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "credit-analyst-financial-analysis-0009",
+    "certId": "credit-analyst",
+    "subjectId": "credit-analysis",
+    "chapterId": "financial-analysis",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "다음 중 활동성 비율(자산을 얼마나 효율적으로 쓰는지 보는 비율)에 해당하는 것은?",
+    "choices": [
+      "매출액영업이익률",
+      "부채비율",
+      "매출액증가율",
+      "유동비율",
+      "재고자산회전율"
+    ],
+    "answer": 5,
+    "oneLineConcept": "활동성 비율 = 회전율(매출 ÷ 자산) 계열",
+    "explanation": "재무비율은 크게 네 묶음으로 나눕니다.\n\n- **안정성**: 빚을 갚을 능력 (유동비율, 부채비율, 이자보상배율 등)\n- **수익성**: 이익을 얼마나 냈는지 (ROE, ROA, 매출액영업이익률 등)\n- **활동성**: 자산을 얼마나 빨리 돌리는지 (총자산회전율, **재고자산회전율**, 매출채권회전율 등)\n- **성장성**: 얼마나 커졌는지 (매출액증가율, 총자산증가율 등)\n\n이름에 '회전율'이 붙으면 활동성 비율입니다.\n\n**틀린 선지**\n- 유동비율: 유동비율은 단기 지급능력을 보는 안정성 비율입니다.\n- 매출액영업이익률: 매출액영업이익률은 매출에서 영업이익이 차지하는 몫을 보는 수익성 비율입니다.\n- 부채비율: 부채비율은 빚 부담을 보는 안정성 비율입니다.\n- 매출액증가율: 매출액증가율은 매출이 얼마나 늘었는지 보는 성장성 비율입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "재무비율 분류",
+      "활동성비율"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        4,
+        5
+      ],
+      "intermediate": [
+        1,
+        4,
+        5
+      ],
+      "advanced": [
+        1,
+        2,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "credit-analyst-financial-analysis-0010",
+    "certId": "credit-analyst",
+    "subjectId": "credit-analysis",
+    "chapterId": "financial-analysis",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "매출원가 1,095억 원, 기초 재고자산 140억 원, 기말 재고자산 160억 원인 기업의 재고자산회전일수는? (재고자산회전율 = 매출원가 ÷ 평균재고자산, 1년 365일 기준)",
+    "choices": [
+      "50일",
+      "7.3일",
+      "100일",
+      "53.3일",
+      "46.7일"
+    ],
+    "answer": 1,
+    "oneLineConcept": "재고자산회전일수 = 365 ÷ (매출원가 ÷ 평균재고)",
+    "explanation": "**재고자산회전일수**는 재고를 사 들인 뒤 팔리기까지 평균 며칠 걸리는지 보여 줍니다.\n\n1. 평균재고자산 = (기초 + 기말) ÷ 2 = (140 + 160) ÷ 2 = 150\n2. 재고자산회전율 = 매출원가 ÷ 평균재고 = 1,095 ÷ 150 = 7.3회\n3. 재고자산회전일수 = 365 ÷ 7.3 = **50일**\n4. 검산: 150 ÷ 1,095 × 365 = 50\n\n**틀린 선지**\n- 53.3일: 기말 재고 160만 써서 계산한 값(160 ÷ 1,095 × 365 ≒ 53.3)입니다. 문제는 평균재고 기준입니다.\n- 46.7일: 기초 재고 140만 써서 계산한 값(140 ÷ 1,095 × 365 ≒ 46.7)으로, 평균재고 기준이 아닙니다.\n- 7.3일: 회전율(7.3회)을 일수로 착각한 것입니다.\n- 100일: 기초와 기말을 더하기만 하고 2로 나누지 않은 300으로 계산한 값(300 ÷ 1,095 × 365)입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "재고자산회전일수",
+      "활동성비율"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        4,
+        5
+      ],
+      "advanced": [
+        1,
+        2,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "credit-analyst-financial-analysis-0011",
+    "certId": "credit-analyst",
+    "subjectId": "credit-analysis",
+    "chapterId": "financial-analysis",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "매출액순이익률 4%, 총자산회전율 1.5회, 자기자본비율(자기자본 ÷ 총자산) 50%인 기업의 ROE는? (듀퐁 분석, 모두 같은 시점 금액 기준)",
+    "choices": [
+      "8%",
+      "6%",
+      "24%",
+      "12%",
+      "3%"
+    ],
+    "answer": 4,
+    "oneLineConcept": "ROE = 매출액순이익률 × 총자산회전율 × 자기자본승수",
+    "explanation": "**듀퐁 분석**은 ROE를 세 부분으로 나눠 어디서 이익률이 나왔는지 봅니다.\n\nROE = 매출액순이익률 × 총자산회전율 × 자기자본승수(총자산 ÷ 자기자본)\n\n1. 자기자본승수 = 1 ÷ 자기자본비율 = 1 ÷ 0.5 = 2\n2. ROE = 4% × 1.5 × 2\n3. 답: **12%** (검산: ROA = 4% × 1.5 = 6%, 여기에 2배 → 12%)\n\n**틀린 선지**\n- 6%: 매출액순이익률 × 총자산회전율로 구한 ROA(6%)입니다. 자기자본승수를 곱하지 않았습니다.\n- 3%: 자기자본승수 대신 자기자본비율(0.5)을 곱한 값입니다.\n- 8%: 매출액순이익률(4%)에 자기자본승수(2)만 곱한 값으로, 총자산회전율이 빠졌습니다.\n- 24%: 자기자본승수를 4로 잘못 넣은 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "듀퐁분석",
+      "ROE"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        4,
+        5
+      ],
+      "advanced": [
+        1,
+        2,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "credit-analyst-financial-analysis-0012",
+    "certId": "credit-analyst",
+    "subjectId": "credit-analysis",
+    "chapterId": "financial-analysis",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "총자산이익률(ROA)이 6%이고 부채비율(부채 ÷ 자기자본)이 200%인 기업의 자기자본이익률(ROE)은? (모두 같은 시점 금액 기준)",
+    "choices": [
+      "12%",
+      "6%",
+      "18%",
+      "8%",
+      "3%"
+    ],
+    "answer": 3,
+    "oneLineConcept": "ROE = ROA × (1 + 부채비율)",
+    "explanation": "ROE는 ROA에 **자기자본승수**(총자산 ÷ 자기자본)를 곱한 값입니다.\n\n1. 자기자본승수 = 총자산 ÷ 자기자본 = (자기자본 + 부채) ÷ 자기자본 = 1 + 부채비율 = 1 + 2 = 3\n2. ROE = ROA × 자기자본승수 = 6% × 3\n3. 답: **18%**\n4. 검산: 자기자본 100이면 부채 200, 총자산 300 → 순이익 300 × 6% = 18 → 18 ÷ 100 = 18%\n\n**틀린 선지**\n- 12%: ROA에 부채비율(2)만 곱한 값입니다. 자기자본승수는 1 + 부채비율 = 3입니다.\n- 3%: ROA를 2로 나눈 값으로, 방향이 반대입니다.\n- 8%: ROA에 2를 더한 값으로, 공식과 다릅니다.\n- 6%: ROA를 그대로 쓴 값입니다. 부채를 쓰면 ROE는 ROA보다 커집니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "듀퐁분석",
+      "자기자본승수"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        5
+      ],
+      "advanced": [
+        1,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "credit-analyst-financial-analysis-0013",
+    "certId": "credit-analyst",
+    "subjectId": "credit-analysis",
+    "chapterId": "financial-analysis",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "매출액 1,000억 원, 변동비 600억 원, 고정비 200억 원인 기업의 영업레버리지도(DOL)는?",
+    "choices": [
+      "1.5",
+      "1.67",
+      "5.0",
+      "2.5",
+      "2.0"
+    ],
+    "answer": 5,
+    "oneLineConcept": "DOL = 공헌이익 ÷ 영업이익",
+    "explanation": "**영업레버리지도(DOL)**는 매출이 1% 변할 때 영업이익이 몇 % 변하는지 보여 줍니다. 고정비가 클수록 커집니다.\n\n1. 공헌이익(매출 − 변동비) = 1,000 − 600 = 400\n2. 영업이익(공헌이익 − 고정비) = 400 − 200 = 200\n3. DOL = 공헌이익 ÷ 영업이익 = 400 ÷ 200 = **2.0**\n4. 검산: 매출 10% 증가 → 공헌이익 440, 영업이익 240 → 영업이익 20% 증가 (10% × 2)\n\n**틀린 선지**\n- 1.67: 매출액을 변동비로 나눈 값(1,000 ÷ 600)입니다.\n- 2.5: 매출액을 공헌이익으로 나눈 값(1,000 ÷ 400)입니다.\n- 5.0: 매출액을 영업이익으로 나눈 값(1,000 ÷ 200)입니다.\n- 1.5: 변동비를 공헌이익으로 나눈 값(600 ÷ 400)입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "영업레버리지",
+      "DOL"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        5
+      ],
+      "intermediate": [
+        2,
+        4,
+        5
+      ],
+      "advanced": [
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "credit-analyst-financial-analysis-0014",
+    "certId": "credit-analyst",
+    "subjectId": "credit-analysis",
+    "chapterId": "financial-analysis",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "영업이익(EBIT)이 200억 원, 이자비용이 100억 원인 기업의 재무레버리지도(DFL)는? (우선주는 없다)",
+    "choices": [
+      "0.5",
+      "2.0",
+      "3.0",
+      "1.5",
+      "1.0"
+    ],
+    "answer": 2,
+    "oneLineConcept": "DFL = 영업이익 ÷ (영업이익 − 이자비용)",
+    "explanation": "**재무레버리지도(DFL)**는 영업이익이 1% 변할 때 주당순이익(EPS)이 몇 % 변하는지 보여 줍니다. 이자 같은 고정 금융비용이 클수록 커집니다.\n\n1. 공식: DFL = EBIT ÷ (EBIT − 이자비용)\n2. 대입: 200 ÷ (200 − 100) = 200 ÷ 100\n3. 답: **2.0**\n4. 검산: EBIT 10% 증가(220) → 세전이익 100 → 120으로 20% 증가 (10% × 2)\n\n**틀린 선지**\n- 0.5: (EBIT − 이자) ÷ EBIT로, 분자와 분모가 바뀌었습니다.\n- 1.5: (EBIT + 이자) ÷ EBIT = 300 ÷ 200으로 계산한 값입니다.\n- 3.0: (EBIT + 이자) ÷ 이자로 계산한 값입니다.\n- 1.0: 부채가 없을 때의 DFL입니다. 이자비용이 있으면 1보다 커집니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "재무레버리지",
+      "DFL"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "credit-analyst-financial-analysis-0015",
+    "certId": "credit-analyst",
+    "subjectId": "credit-analysis",
+    "chapterId": "financial-analysis",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "영업레버리지도가 2.5, 재무레버리지도가 1.6인 기업의 매출액이 10% 증가하면 주당순이익(EPS)은 몇 % 증가하는가?",
+    "choices": [
+      "40%",
+      "41%",
+      "16%",
+      "25%",
+      "4.1%"
+    ],
+    "answer": 1,
+    "oneLineConcept": "결합레버리지도(DCL) = DOL × DFL",
+    "explanation": "**결합레버리지도(DCL)**는 매출 변화가 EPS(주당순이익) 변화로 몇 배 커져 나타나는지 보여 줍니다.\n\n1. DCL = DOL × DFL = 2.5 × 1.6 = 4.0\n2. EPS 변화율 = 매출 변화율 × DCL = 10% × 4.0\n3. 답: **40%**\n4. 검산: 매출 10% → 영업이익 25%(× 2.5) → EPS 40%(× 1.6)\n\n**틀린 선지**\n- 25%: 영업레버리지만 반영한 영업이익 증가율입니다. 재무레버리지까지 곱해야 합니다.\n- 16%: 재무레버리지만 반영한 값입니다.\n- 41%: DOL과 DFL을 더한 4.1에 10%를 곱한 값입니다. 두 레버리지는 곱해야 합니다.\n- 4.1%: DOL과 DFL을 더한 4.1을 그대로 %로 쓴 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "결합레버리지",
+      "DCL"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "credit-analyst-financial-analysis-0016",
+    "certId": "credit-analyst",
+    "subjectId": "credit-analysis",
+    "chapterId": "financial-analysis",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "제품 단가 5,000원, 단위당 변동비 3,000원, 연간 고정비 400만 원인 기업의 손익분기점 판매량은?",
+    "choices": [
+      "1,333개",
+      "5,000개",
+      "1,000개",
+      "2,000개",
+      "800개"
+    ],
+    "answer": 4,
+    "oneLineConcept": "손익분기점 판매량 = 고정비 ÷ 단위당 공헌이익",
+    "explanation": "**손익분기점**은 이익도 손실도 없는(영업이익 0) 판매량입니다. 한 개를 팔 때 남는 돈(단위당 공헌이익)으로 고정비를 다 메우는 지점입니다.\n\n1. 단위당 공헌이익 = 단가 − 단위당 변동비 = 5,000 − 3,000 = 2,000원\n2. 손익분기점 판매량 = 고정비 ÷ 단위당 공헌이익 = 4,000,000 ÷ 2,000\n3. 답: **2,000개**\n4. 검산: 2,000개 × 2,000원 = 400만 원 = 고정비\n\n**틀린 선지**\n- 800개: 고정비를 단가(5,000원)로 나눈 값입니다. 공헌이익으로 나눠야 합니다.\n- 1,333개: 고정비를 단위당 변동비(3,000원)로 나눈 값입니다.\n- 5,000개: 단가를 판매량으로 착각한 값입니다.\n- 1,000개: 고정비를 4,000원으로 나눈 값으로, 공헌이익 계산이 틀렸습니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "손익분기점",
+      "공헌이익"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        4,
+        5
+      ],
+      "intermediate": [
+        1,
+        4,
+        5
+      ],
+      "advanced": [
+        1,
+        2,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "credit-analyst-financial-analysis-0017",
+    "certId": "credit-analyst",
+    "subjectId": "credit-analysis",
+    "chapterId": "financial-analysis",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "고정비가 300억 원이고 변동비율(변동비 ÷ 매출액)이 60%인 기업의 손익분기점 매출액은?",
+    "choices": [
+      "480억 원",
+      "1,000억 원",
+      "180억 원",
+      "500억 원",
+      "750억 원"
+    ],
+    "answer": 5,
+    "oneLineConcept": "손익분기점 매출액 = 고정비 ÷ 공헌이익률",
+    "explanation": "매출액 기준 손익분기점은 고정비를 **공헌이익률**(매출 1원당 남는 공헌이익)로 나눠 구합니다.\n\n1. 공헌이익률 = 1 − 변동비율 = 1 − 0.6 = 0.4\n2. 손익분기점 매출액 = 300 ÷ 0.4\n3. 답: **750억 원**\n4. 검산: 750 × 0.4 = 300 = 고정비 → 영업이익 0\n\n**틀린 선지**\n- 500억 원: 고정비를 변동비율(0.6)로 나눈 값입니다. 공헌이익률로 나눠야 합니다.\n- 480억 원: 고정비에 1.6을 곱한 값으로, 공식과 다릅니다.\n- 180억 원: 고정비에 변동비율을 곱한 값입니다.\n- 1,000억 원: 고정비를 0.3으로 나눈 값으로, 공헌이익률을 잘못 넣었습니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "손익분기점",
+      "공헌이익률"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        4,
+        5
+      ],
+      "intermediate": [
+        1,
+        4,
+        5
+      ],
+      "advanced": [
+        1,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "credit-analyst-financial-analysis-0018",
+    "certId": "credit-analyst",
+    "subjectId": "credit-analysis",
+    "chapterId": "financial-analysis",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "고정비 300억 원, 공헌이익률 40%인 기업이 영업이익 100억 원을 내려면 매출액이 얼마여야 하는가?",
+    "choices": [
+      "750억 원",
+      "1,000억 원",
+      "250억 원",
+      "500억 원",
+      "400억 원"
+    ],
+    "answer": 2,
+    "oneLineConcept": "목표 매출액 = (고정비 + 목표 영업이익) ÷ 공헌이익률",
+    "explanation": "목표이익이 있으면 고정비에 목표 영업이익을 더한 금액만큼 공헌이익을 벌어야 합니다.\n\n1. 필요한 공헌이익 = 고정비 + 목표 영업이익 = 300 + 100 = 400\n2. 필요한 매출액 = 400 ÷ 0.4\n3. 답: **1,000억 원**\n4. 검산: 1,000 × 0.4 = 400 → 400 − 300 = 100 (목표 영업이익)\n\n**틀린 선지**\n- 750억 원: 목표이익을 빼고 계산한 손익분기점 매출액(300 ÷ 0.4)입니다.\n- 250억 원: 목표이익 100만 공헌이익률로 나눈 값입니다. 고정비를 빠뜨렸습니다.\n- 500억 원: (300 − 100) ÷ 0.4로, 목표이익을 더하지 않고 뺐습니다.\n- 400억 원: 필요한 공헌이익(300 + 100)을 매출액으로 착각한 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "손익분기점",
+      "목표이익"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "credit-analyst-financial-analysis-0019",
+    "certId": "credit-analyst",
+    "subjectId": "credit-analysis",
+    "chapterId": "financial-analysis",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "어느 기업의 현재 매출액이 1,000억 원, 손익분기점 매출액이 750억 원이다. 이 기업의 영업레버리지도(DOL)는? (판매가격·변동비율·고정비는 일정하다)",
+    "choices": [
+      "1.33",
+      "0.75",
+      "4.0",
+      "3.0",
+      "0.25"
+    ],
+    "answer": 3,
+    "oneLineConcept": "DOL = 1 ÷ 안전한계율",
+    "explanation": "공헌이익률과 고정비가 일정하면 **영업레버리지도는 안전한계율의 역수**입니다. (안전한계율 = 매출이 손익분기점보다 얼마나 여유 있는지의 비율)\n\n1. 안전한계율 = (매출액 − 손익분기점 매출액) ÷ 매출액 = (1,000 − 750) ÷ 1,000 = 25%\n2. DOL = 1 ÷ 0.25\n3. 답: **4.0**\n4. 검산: 공헌이익률을 a라 하면 고정비 = 750a, 공헌이익 = 1,000a, 영업이익 = 250a → DOL = 1,000a ÷ 250a = 4\n\n**틀린 선지**\n- 1.33: 매출액을 손익분기점 매출액으로 나눈 값(1,000 ÷ 750)입니다.\n- 0.25: 안전한계율(25%)을 그대로 쓴 값입니다. 그 역수가 DOL입니다.\n- 0.75: 손익분기점 매출액을 현재 매출액으로 나눈 값(750 ÷ 1,000)입니다.\n- 3.0: 750 ÷ 250으로, 분자를 공헌이익이 아니라 손익분기점 매출로 넣은 값입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "영업레버리지",
+      "안전한계율"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        5
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        5
+      ]
+    }
+  },
+  {
+    "id": "credit-analyst-financial-analysis-0020",
+    "certId": "credit-analyst",
+    "subjectId": "credit-analysis",
+    "chapterId": "financial-analysis",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "어느 기업의 이자보상배율이 0.8배로 나타났다. 이에 대한 해석으로 가장 알맞은 것은?",
+    "choices": [
+      "영업이익만으로는 그해 이자비용을 다 갚지 못한다.",
+      "영업이익이 이자비용보다 20% 많다.",
+      "당기순이익이 이자비용의 80%만큼 늘었다.",
+      "부채비율이 80%라는 뜻이다.",
+      "단기 지급능력(유동비율)이 매우 좋다."
+    ],
+    "answer": 1,
+    "oneLineConcept": "이자보상배율 1 미만 = 영업이익 < 이자비용",
+    "explanation": "이자보상배율 = 영업이익 ÷ 이자비용입니다.\n\n- 0.8배라는 것은 영업이익이 이자비용의 80%밖에 안 된다는 뜻입니다.\n- 즉 **영업으로 번 돈으로 이자도 다 내지 못하는** 상태로, 1배 미만이 계속되면 신용위험이 크다고 봅니다.\n\n**틀린 선지**\n- 영업이익이 이자비용보다 20% 많다.: 1배를 넘어야 영업이익이 이자보다 많습니다. 0.8배는 오히려 20% 부족한 상태입니다.\n- 부채비율이 80%라는 뜻이다.: 부채비율은 부채 ÷ 자기자본으로, 이자보상배율과 다른 비율입니다.\n- 당기순이익이 이자비용의 80%만큼 늘었다.: 이자보상배율은 증가율이 아니라 영업이익과 이자비용의 배수입니다.\n- 단기 지급능력(유동비율)이 매우 좋다.: 유동비율은 유동자산 ÷ 유동부채로, 이자보상배율로는 알 수 없습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "이자보상배율",
+      "해석"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "credit-analyst-financial-analysis-0021",
+    "certId": "credit-analyst",
+    "subjectId": "credit-analysis",
+    "chapterId": "financial-analysis",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "유동자산 300억 원, 유동부채 200억 원인 기업이 현금 100억 원으로 매입채무 100억 원을 갚았다. 갚은 뒤 유동비율은?",
+    "choices": [
+      "300%",
+      "100%",
+      "200%",
+      "150%",
+      "50%"
+    ],
+    "answer": 3,
+    "oneLineConcept": "유동비율 100% 초과 시 같은 금액을 함께 줄이면 비율 상승",
+    "explanation": "현금(유동자산)과 매입채무(유동부채)가 같은 금액만큼 함께 줄어듭니다.\n\n1. 갚은 뒤 유동자산 = 300 − 100 = 200\n2. 갚은 뒤 유동부채 = 200 − 100 = 100\n3. 유동비율 = 200 ÷ 100 × 100 = **200%**\n4. 확인: 유동비율이 100%보다 큰 기업은 유동자산과 유동부채를 같은 금액만큼 줄이면 비율이 올라갑니다.\n\n**틀린 선지**\n- 150%: 거래 전 유동비율입니다. 같은 금액이 줄어도 비율은 변합니다.\n- 100%: 현금만 줄고 매입채무는 그대로라고 본 값(200 ÷ 200)입니다.\n- 300%: 현금은 그대로 두고 유동부채만 줄였다고 본 값(300 ÷ 100)입니다. 현금도 함께 줄어듭니다.\n- 50%: 유동부채를 유동자산으로 나눈 값(100 ÷ 200)으로, 분자와 분모가 바뀌었습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "유동비율",
+      "거래분석"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "credit-analyst-financial-analysis-0022",
+    "certId": "credit-analyst",
+    "subjectId": "credit-analysis",
+    "chapterId": "financial-analysis",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "유동비율이 120%인 기업에서 다음 거래가 일어날 때, 유동비율을 낮추는 거래는?",
+    "choices": [
+      "매출채권을 현금으로 회수했다.",
+      "현금으로 매입채무를 갚았다.",
+      "유상증자로 현금을 받았다.",
+      "단기차입금을 빌려 현금으로 받았다.",
+      "장기차입금을 빌려 현금으로 받았다."
+    ],
+    "answer": 4,
+    "oneLineConcept": "유동비율>100%면 유동자산·부채 같은 액수 증가 시 비율 하락",
+    "explanation": "유동비율이 100%보다 클 때 분자(유동자산)와 분모(유동부채)에 **같은 금액을 더하면** 비율은 100% 쪽으로 내려갑니다.\n\n1. 예: 유동자산 120, 유동부채 100 (120%)\n2. 단기차입금 20을 빌려 현금으로 받으면: 140 ÷ 120 ≒ 116.7%\n3. 따라서 유동비율이 **낮아집니다.**\n\n**틀린 선지**\n- 현금으로 매입채무를 갚았다.: 양쪽에서 같은 금액을 빼면 유동비율이 100% 초과일 때 오히려 올라갑니다 (예: 100 ÷ 80 = 125%).\n- 장기차입금을 빌려 현금으로 받았다.: 현금(유동자산)만 늘고 장기차입금은 비유동부채라 유동비율이 올라갑니다.\n- 유상증자로 현금을 받았다.: 현금만 늘고 유동부채는 그대로라 유동비율이 올라갑니다.\n- 매출채권을 현금으로 회수했다.: 유동자산 안에서 매출채권이 현금으로 바뀐 것뿐이라 유동비율은 변하지 않습니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "유동비율",
+      "거래분석"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        4,
+        5
+      ],
+      "advanced": [
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "credit-analyst-financial-analysis-0023",
+    "certId": "credit-analyst",
+    "subjectId": "credit-analysis",
+    "chapterId": "financial-analysis",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "전기 매출액이 800억 원, 당기 매출액이 1,000억 원인 기업의 매출액증가율은?",
+    "choices": [
+      "25%",
+      "80%",
+      "125%",
+      "20%",
+      "200%"
+    ],
+    "answer": 1,
+    "oneLineConcept": "매출액증가율 = (당기 − 전기) ÷ 전기 × 100",
+    "explanation": "**매출액증가율**은 성장성 비율로, 작년보다 매출이 몇 % 늘었는지 봅니다.\n\n1. 공식: (당기 매출 − 전기 매출) ÷ 전기 매출 × 100\n2. 대입: (1,000 − 800) ÷ 800 × 100 = 200 ÷ 800 × 100\n3. 답: **25%** (검산: 800 × 1.25 = 1,000)\n\n**틀린 선지**\n- 20%: 늘어난 200을 당기 매출 1,000으로 나눈 값입니다. 기준은 전기 매출입니다.\n- 80%: 전기 매출을 당기 매출로 나눈 값(800 ÷ 1,000)입니다.\n- 125%: 당기 매출을 전기 매출로 나눈 값(1,000 ÷ 800)으로, 증가율이 아니라 배수입니다.\n- 200%: 늘어난 금액(200억 원)을 %로 착각한 것입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "매출액증가율",
+      "성장성비율"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "credit-analyst-financial-analysis-0024",
+    "certId": "credit-analyst",
+    "subjectId": "credit-analysis",
+    "chapterId": "financial-analysis",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "부채비율(부채 ÷ 자기자본)이 150%인 기업의 자기자본비율(자기자본 ÷ 총자산)은?",
+    "choices": [
+      "66.7%",
+      "40%",
+      "150%",
+      "60%",
+      "250%"
+    ],
+    "answer": 2,
+    "oneLineConcept": "자기자본비율 = 1 ÷ (1 + 부채비율)",
+    "explanation": "자기자본을 100으로 두고 풀면 쉽습니다.\n\n1. 자기자본 = 100이면 부채 = 150 (부채비율 150%)\n2. 총자산 = 자기자본 + 부채 = 100 + 150 = 250\n3. 자기자본비율 = 100 ÷ 250 × 100 = **40%**\n4. 검산: 1 ÷ (1 + 1.5) = 0.4\n\n**틀린 선지**\n- 60%: 부채 ÷ 총자산(150 ÷ 250)으로 구한 부채의존도입니다.\n- 66.7%: 자기자본 ÷ 부채(100 ÷ 150)로, 분모가 틀렸습니다.\n- 150%: 부채비율을 그대로 쓴 값입니다.\n- 250%: 총자산 ÷ 자기자본(자기자본승수 2.5)을 %로 착각한 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "자기자본비율",
+      "부채비율"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "credit-analyst-financial-analysis-0025",
+    "certId": "credit-analyst",
+    "subjectId": "credit-analysis",
+    "chapterId": "financial-analysis",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "총자산 1,000억 원 가운데 단기·장기차입금과 사채를 합한 차입금이 300억 원이다. 차입금의존도는? (차입금의존도 = 차입금 ÷ 총자산 × 100)",
+    "choices": [
+      "300억 원",
+      "70%",
+      "42.9%",
+      "23.1%",
+      "30%"
+    ],
+    "answer": 5,
+    "oneLineConcept": "차입금의존도 = 차입금 ÷ 총자산 × 100",
+    "explanation": "**차입금의존도**는 총자산 가운데 이자를 내야 하는 빚(차입금·사채)으로 조달한 몫입니다. 높을수록 이자 부담이 큽니다.\n\n1. 공식: 차입금 ÷ 총자산 × 100\n2. 대입: 300 ÷ 1,000 × 100\n3. 답: **30%**\n\n**틀린 선지**\n- 42.9%: 차입금을 총자산에서 차입금을 뺀 700으로 나눈 값입니다.\n- 70%: 총자산 가운데 차입금이 아닌 몫(700 ÷ 1,000)입니다.\n- 300억 원: 차입금 금액을 그대로 쓴 것으로, 비율이 아닙니다.\n- 23.1%: 차입금을 1,300(총자산 + 차입금)으로 나눈 값으로, 분모가 틀렸습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "차입금의존도",
+      "안정성비율"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        5
+      ],
+      "intermediate": [
+        2,
+        3,
+        5
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        5
+      ]
+    }
+  },
+  {
+    "id": "credit-analyst-financial-analysis-0026",
+    "certId": "credit-analyst",
+    "subjectId": "credit-analysis",
+    "chapterId": "financial-analysis",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "재무비율에 대한 설명으로 옳지 않은 것은?",
+    "choices": [
+      "다른 조건이 같다면 고정비 비중이 클수록 영업레버리지도가 크다.",
+      "부채비율이 높을수록 채권자 입장에서 원리금을 돌려받기가 더 안전하다.",
+      "매출채권회전율이 높을수록 외상대금을 회수하는 기간이 짧다.",
+      "당좌비율은 유동자산에서 재고자산을 빼고 계산하므로 유동비율보다 보수적인 지표다.",
+      "이자보상배율이 높을수록 영업이익으로 이자를 갚을 여력이 크다."
+    ],
+    "answer": 2,
+    "oneLineConcept": "부채비율이 높을수록 채권자의 안전성은 낮아진다",
+    "explanation": "부채비율(부채 ÷ 자기자본)이 높다는 것은 **자기자본이라는 완충장치가 얇다**는 뜻입니다. 손실이 나면 채권자 몫까지 위험해지므로, 채권자 입장에서는 부채비율이 **낮을수록** 안전합니다.\n\n따라서 '부채비율이 높을수록 채권자에게 더 안전하다'는 설명이 옳지 않습니다.\n\n**틀린 선지**\n- 당좌비율은 유동자산에서 재고자산을 빼고 계산하므로 유동비율보다 보수적인 지표다.: 옳은 설명입니다. 재고자산은 팔아야 현금이 되므로 빼고 봅니다.\n- 이자보상배율이 높을수록 영업이익으로 이자를 갚을 여력이 크다.: 옳은 설명입니다. 이자보상배율 = 영업이익 ÷ 이자비용입니다.\n- 매출채권회전율이 높을수록 외상대금을 회수하는 기간이 짧다.: 옳은 설명입니다. 회전일수 = 365 ÷ 회전율이므로 회전율이 높으면 일수가 짧습니다.\n- 다른 조건이 같다면 고정비 비중이 클수록 영업레버리지도가 크다.: 옳은 설명입니다. 고정비가 크면 매출 변화에 영업이익이 더 크게 흔들립니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "재무비율 해석",
+      "부채비율"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "credit-analyst-financial-analysis-0027",
+    "certId": "credit-analyst",
+    "subjectId": "credit-analysis",
+    "chapterId": "financial-analysis",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "비유동자산 600억 원, 자기자본 400억 원, 비유동부채 350억 원인 기업의 비유동장기적합률은? (비유동장기적합률 = 비유동자산 ÷ (자기자본 + 비유동부채) × 100)",
+    "choices": [
+      "80%",
+      "60%",
+      "150%",
+      "125%",
+      "171.4%"
+    ],
+    "answer": 1,
+    "oneLineConcept": "비유동장기적합률 = 비유동자산 ÷ (자기자본 + 비유동부채)",
+    "explanation": "**비유동장기적합률**은 오래 묶이는 자산(비유동자산)을 오래 쓸 수 있는 돈(자기자본 + 비유동부채)으로 마련했는지 보는 안정성 비율입니다. 100% 이하이면 장기자금으로 장기자산을 다 마련한 것입니다.\n\n1. 장기자금 = 400 + 350 = 750\n2. 비유동장기적합률 = 600 ÷ 750 × 100\n3. 답: **80%**\n\n**틀린 선지**\n- 150%: 자기자본만 분모로 쓴 비유동비율(600 ÷ 400)입니다.\n- 171.4%: 비유동부채만 분모로 쓴 값(600 ÷ 350)입니다.\n- 125%: 장기자금을 비유동자산으로 나눈 값(750 ÷ 600)으로, 분자와 분모가 바뀌었습니다.\n- 60%: 비유동자산을 1,000으로 나눈 값으로, 분모가 틀렸습니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "비유동장기적합률",
+      "안정성비율"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        5
+      ],
+      "advanced": [
+        1,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "credit-analyst-financial-analysis-0028",
+    "certId": "credit-analyst",
+    "subjectId": "credit-analysis",
+    "chapterId": "financial-analysis",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "당기순이익 75억 원, 기초 자기자본 400억 원, 기말 자기자본 600억 원인 기업의 ROE는? (평균 자기자본 기준)",
+    "choices": [
+      "37.5%",
+      "7.5%",
+      "12.5%",
+      "18.75%",
+      "15%"
+    ],
+    "answer": 5,
+    "oneLineConcept": "평균 자기자본 = (기초 + 기말) ÷ 2",
+    "explanation": "문제에서 **평균 자기자본 기준**이라고 했으므로 기초와 기말의 평균을 분모로 씁니다.\n\n1. 평균 자기자본 = (400 + 600) ÷ 2 = 500\n2. ROE = 75 ÷ 500 × 100\n3. 답: **15%**\n4. 검산: 500 × 0.15 = 75\n\n**틀린 선지**\n- 12.5%: 기말 자기자본(600)만 쓴 값입니다.\n- 18.75%: 기초 자기자본(400)만 쓴 값입니다.\n- 7.5%: 기초와 기말을 더한 1,000을 그대로 분모로 쓴 값입니다.\n- 37.5%: 자기자본 증가분(600 − 400 = 200)으로 나눈 값입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "ROE",
+      "평균값"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        5
+      ],
+      "intermediate": [
+        3,
+        4,
+        5
+      ],
+      "advanced": [
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "credit-analyst-financial-analysis-0029",
+    "certId": "credit-analyst",
+    "subjectId": "credit-analysis",
+    "chapterId": "financial-analysis",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "재고자산회전일수 60일, 매출채권회전일수 45일, 매입채무회전일수 30일인 기업의 현금전환주기는?",
+    "choices": [
+      "105일",
+      "15일",
+      "135일",
+      "75일",
+      "45일"
+    ],
+    "answer": 4,
+    "oneLineConcept": "현금전환주기 = 재고일수 + 매출채권일수 − 매입채무일수",
+    "explanation": "**현금전환주기**는 원재료 값을 치른 뒤 판매대금을 받기까지 현금이 묶여 있는 기간입니다.\n\n1. 영업순환주기 = 재고자산회전일수 + 매출채권회전일수 = 60 + 45 = 105일\n2. 현금전환주기 = 영업순환주기 − 매입채무회전일수 = 105 − 30\n3. 답: **75일**\n\n현금전환주기가 길수록 운전자본(일상 영업에 묶이는 돈)이 많이 필요합니다.\n\n**틀린 선지**\n- 105일: 매입채무회전일수를 빼지 않은 영업순환주기입니다.\n- 135일: 매입채무회전일수를 빼지 않고 더한 값입니다.\n- 15일: 재고일수에서 매출채권일수를 빼는 등 공식과 다른 계산입니다.\n- 45일: 매출채권회전일수만 쓴 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "현금전환주기",
+      "활동성비율"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  }
+]
