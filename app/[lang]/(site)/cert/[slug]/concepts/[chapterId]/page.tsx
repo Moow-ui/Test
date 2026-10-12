@@ -5,7 +5,7 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { JsonLd } from "@/components/JsonLd";
 import { Stars } from "@/components/Stars";
 import { StaticQuestion } from "@/components/StaticQuestion";
-import { ConceptByline, ConceptCards, ConceptCompare, ConceptPoints } from "@/components/concepts/ConceptParts";
+import { ConceptByline, ConceptCards, ConceptCompare, ConceptFigures, ConceptPoints } from "@/components/concepts/ConceptParts";
 import { IssuerNotice } from "@/components/cert/IssuerNotice";
 import { getCertificationIn, getConcepts, getQuestions, type CertConcepts } from "@/lib/data";
 import { fmt, getMessages, isLocale, localeCountry, localePath } from "@/lib/i18n";
@@ -119,6 +119,8 @@ export default async function ConceptChapterPage({ params }: Props) {
         </h2>
         <ConceptCards locale={lang} concepts={entry.concepts} />
       </section>
+
+      {entry.figures && <ConceptFigures locale={lang} figures={entry.figures} />}
 
       <ConceptPoints locale={lang} points={entry.points} />
 

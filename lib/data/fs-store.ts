@@ -22,6 +22,11 @@ export const fsStore: DataStore = {
     if (!fs.existsSync(full)) return null;
     return JSON.parse(fs.readFileSync(full, "utf8"));
   },
+  async readText(file) {
+    const full = abs(file);
+    if (!fs.existsSync(full)) return null;
+    return fs.readFileSync(full, "utf8");
+  },
 };
 
 // ───────── 쓰기 (scripts 전용) ─────────
@@ -30,10 +35,4 @@ export function writeDataJson(file: string, value: unknown): void {
   const full = abs(file);
   fs.mkdirSync(path.dirname(full), { recursive: true });
   fs.writeFileSync(full, `${JSON.stringify(value, null, 2)}\n`);
-}
-
-/** data 폴더의 파일을 다른 곳으로 복사한다 (문제 그림 → public) */
-export function copyDataFile(file: string, target: string): void {
-  fs.mkdirSync(path.dirname(target), { recursive: true });
-  fs.copyFileSync(abs(file), target);
 }

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { Markdown } from "@/components/Markdown";
+import { QuestionImage } from "@/components/QuestionImage";
 import { ChapterNotesLink } from "@/components/quiz/ChapterNotesLink";
 import { QuestionBadges } from "@/components/quiz/QuestionBadges";
 import { useQuestions } from "@/lib/data/client";
@@ -119,6 +120,7 @@ export function NotesView({ cert }: { cert: { id: string; name: string; subjects
                   <span className="text-sm font-bold text-ink-sub">{locationOf(q)}</span>
                 </div>
                 <h2 className="mt-2 whitespace-pre-wrap text-lg font-bold leading-normal">{q.stem}</h2>
+                {q.imageSrc && <QuestionImage src={q.imageSrc} alt={q.imageAlt ?? ""} />}
                 <ol className="mt-2 space-y-2">
                   {q.choices.map((choice, ci) => {
                     const n = ci + 1;

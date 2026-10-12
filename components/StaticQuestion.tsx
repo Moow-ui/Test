@@ -1,4 +1,5 @@
 import { Markdown } from "@/components/Markdown";
+import { QuestionImage } from "@/components/QuestionImage";
 import { Stars } from "@/components/Stars";
 import { QuestionBadges } from "@/components/quiz/QuestionBadges";
 import { circled } from "@/lib/format";
@@ -40,6 +41,7 @@ export function StaticQuestion({
       <h3 className="mt-2 whitespace-pre-wrap text-lg font-bold leading-normal">
         {fmt(m.question.numbered, { n: number })} {question.stem}
       </h3>
+      {question.imageSrc && <QuestionImage src={question.imageSrc} alt={question.imageAlt ?? ""} />}
       <ol className="mt-2 space-y-2 text-lg">
         {question.choices.map((choice, i) => (
           <li key={i}>

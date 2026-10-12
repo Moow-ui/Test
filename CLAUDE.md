@@ -44,11 +44,11 @@
 
 ```
 data/certs/{country}/{slug}/
-  meta.json                   자격증 정보 (시행기관 issuer, 자격 종류 certType, 시험 구성, 선지 수, 합격 기준, 운영진 학습 팁 studyTips, 출처)
+  meta.json                   자격증 정보 (시행기관 issuer, 자격 종류 certType, 시험 구성, 선지 수, 합격 기준, 운영진 학습 팁 studyTips, 그림 필요도 visualNeed, 출처)
   chapters.json               과목·단원·중요도·출제 비중
   questions/{chapterId}.json  단원별 문제 (파일당 최대 300문항, 넘으면 -2, -3)
   exams/{year}-{round}.json   실전 모의고사 구성
-  assets/                     문제 그림
+  assets/                     문제·개념 그림 (SVG 만. 빌드 때 문제 파일 안에 넣어 배포 파일 수가 늘지 않는다)
 data/cert-queue.json          추가할 자격증 대기 목록 (나라별 응시자 수 순, 시행기관·기출 공개 여부 메모)
 data/review-queue/            검수 대기 목록
 reports/{YYYY-MM}/            작업 리포트 (월별 폴더)
@@ -104,6 +104,9 @@ scripts/                   validate-data, build-data, import-questions, convert-
 - 문제는 작성과 분리된 검증(다시 풀기·재계산·최신 기준 확인)을 통과한 것만 게시한다. 확신이 없는 문제는 `data/review-queue/` 에 보관.
 - 검증을 통과한 문제는 `reviewedAt` 을 적어 넣는다 (자동으로 "검수 완료" 표시).
 - **공개 기출을 구할 수 있으면 반드시 문제 구성에 넣는다** ([docs/daily-routine.md](docs/daily-routine.md) 2-1). 출제는 기출과 예상문제를 반씩 섞는다.
+- **그림 (2026-10-12 결정)**: `meta.json` 의 `visualNeed`(high·medium·none)에 따라 새 자격증에 그림 문제·개념 그림을 넣고 ([docs/add-cert.md](docs/add-cert.md) 4-1),
+  기존 자격증은 새벽 루틴이 맨 끝에 하루 1건씩 그림을 보강한다 ([docs/daily-routine.md](docs/daily-routine.md) 2-2, 기록 [reports/image-progress.md](reports/image-progress.md)). 그림 규칙은 [docs/data-rules.md](docs/data-rules.md) 8장.
+  그림을 못 만들어도 루틴 실패가 아니다.
 - 문제 검증 다음에 운영진 학습 팁 3개(`meta.json` 의 `studyTips`)를 쓴다. 후기란·활동 표시는 새 자격증에도 저절로 붙는다 (코드를 고치지 않는다).
 
 ## 명령어

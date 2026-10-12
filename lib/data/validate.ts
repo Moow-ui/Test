@@ -31,6 +31,7 @@ import {
   questionsDir,
 } from "./paths";
 import type { DataStore } from "./store";
+import { checkSvg } from "../svg";
 
 /**
  * /data 폴더 전체 검사 (npm run validate, 빌드 전에 자동 실행).
@@ -136,6 +137,17 @@ export async function validateData(store: DataStore): Promise<ValidationResult> 
       errors.push(...checkCertDetail(detail));
       const chapterIds = detail.subjects.flatMap((s) => s.chapters.map((c) => c.id));
 
+      // ── assets/ (선택): 문제·개념 그림. SVG 만, 안전·크기 검사 (lib/svg.ts)
+      const assets = new Set(await store.list(assetsDir(country, slug)));
+      for (const name of assets) {
+        const file = `${assetsDir(country, slug)}/${name}`;
+        if (!/^[a-z0-9-]+\.svg$/.test(name)) {
+          errors.push(`${file} → 그림은 영문 소문자·숫자·- 로 된 이름의 .svg 파일만 둘 수 있습니다`);
+          continue;
+        }
+        for (const m of checkSvg((await store.readText(file)) ?? "")) errors.push(`${file} → ${m}`);
+      }
+
       // ── concepts.json (선택): 단원 id 가 chapters.json 에 있어야 한다
       const conceptsRaw = await store.readJson(conceptsFile(country, slug));
       if (conceptsRaw !== null) {
@@ -148,11 +160,12 @@ export async function validateData(store: DataStore): Promise<ValidationResult> 
             // 요약 노트(P16): 게시되는(verifiedAt 이 있는) 단원은 개요(summary)가 있어야 한다
             if (chapter.verifiedAt && !chapter.summary)
               errors.push(`${conceptsFile(country, slug)} → ${id}: 게시 단원에 summary(개요)가 없습니다`);
+            for (const fig of chapter.figures ?? []) {
+              if (!assets.has(fig.image)) errors.push(`${conceptsFile(country, slug)} → ${id}: 그림 파일이 없습니다 (assets/${fig.image})`);
+            }
           }
         }
       }
-      const assets = new Set(await store.list(assetsDir(country, slug)));
-
       // ── questions/{chapterId}.json, {chapterId}-2.json …
       const questions: Question[] = [];
       for (const name of questionFiles) {

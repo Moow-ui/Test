@@ -7,7 +7,8 @@
 | 기간 | 2026-10-02 시작. **종료일 없음. 중지·속도 변경은 [routine-status.md](routine-status.md) 로만 정한다** |
 | 애드센스 신청 | 2026-10-29 (루틴과 별개 일정. 이날 이후에도 루틴은 그대로 계속한다) |
 | 진행 기록 | 새벽 [reports/routine-progress.md](../reports/routine-progress.md) · 오후 [reports/routine-progress-pm.md](../reports/routine-progress-pm.md) |
-| 자격증 추가 절차 | [add-cert.md](add-cert.md) A 의 1~9 |
+| 자격증 추가 절차 | [add-cert.md](add-cert.md) A 의 1~9 (4-1 그림 포함) |
+| 그림 보강 | 새벽 루틴 맨 끝에 하루 1건 (아래 "2-2. 그림 보강"). 진행 기록 [reports/image-progress.md](../reports/image-progress.md) |
 
 이 문서는 루틴이 매번 읽고 그대로 따르는 지시문이다. 실행하는 쪽은 이전 실행을 기억하지 못하므로
 상태는 전부 `reports/routine-progress.md` 와 git 에 남긴다.
@@ -148,6 +149,28 @@ Cloudflare 배포 파일 수 한도(`docs/routine-status.md`)에 가까워지면
 6. **meta.json**: `sources` 에 시험문제지·최종정답·이용 조건 공지 페이지를 적고, `examInfo.format`·FAQ 에 "공개 기출과 AI 예상문제가 함께 들어 있다"는 사실을 적는다.
 7. **기록**: 리포트와 진행 기록에 "기출 N / AI N"을 적는다. 기출을 넣지 못했으면 "기출 미수록 사유"(비공개·접속 불가·판독 실패·이용 조건 불가)를 적는다.
 
+## 2-2. 그림 보강 (새벽 루틴만, 하루 1건)
+
+결정: 2026-10-12 회장. 이미 게시한 자격증에 그림(회로도·표지판·수신호 등)을 **하루 1건씩** 더한다. 규칙은 [data-rules.md](data-rules.md) 8장.
+
+- **언제**: 새벽 루틴이 그날의 자격증 추가(또는 보강 모드)와 진행 기록 커밋을 **모두 마친 뒤 맨 끝에** 한다. 오후 루틴은 하지 않는다.
+  `docs/routine-status.md` 의 "그림 보강"이 "진행"이 아니면 하지 않는다.
+- **이 일은 자격증 추가보다 뒤다.** 사용량·시간이 모자라면 하지 않고 끝낸다. 하지 못하거나 실패해도 루틴 실패로 세지 않고, 재시도·건너뜀 목록에도 넣지 않는다.
+- 그림은 배포 파일 수를 늘리지 않으므로 **보강 모드인 날에도 한다.**
+
+1. **고르기**: 먼저 게시 중인 자격증 가운데 `visualNeed` 가 `high`·`medium` 인데 `reports/image-progress.md` 의 "다음 할 일"과 "기록"에 한 번도 없는 자격증이 있으면,
+   그 자격증에서 그림이 필요한 단원([data-rules.md](data-rules.md) 8장 "그림이 필요한 단원 고르기")을 모두 "다음 할 일" 끝에 덧붙인다 (`high` 먼저, 그다음 `medium`).
+   이미 목록에 있는 자격증이라도 그 자격증의 마지막 항목을 끝냈는데 그림이 필요한 단원이 더 남았으면 다음 단원을 끝에 덧붙인다. 그다음 "다음 할 일" 맨 위 항목을 한다. 비어 있으면 게시 중인 자격증 가운데 `visualNeed: "high"` → `"medium"` 순서로,
+   그림이 들어간 단원이 가장 적은 자격증의 그림이 필요한 단원 하나를 고른다.
+2. **만들기 (1건 = 단원 1개)**: 그 단원에 **그림 문제 5~10개**를 새로 쓰고(id 는 `npm run questions:add` 가 붙인다), 개념 정리에 그 단원이 있으면 **개념 그림 1개**를 `figures` 에 넣는다.
+   기존 문제에 그림을 붙이지 않는다 (붙이려면 `version` 을 올리고 다시 검증해야 한다).
+3. **검증**: [add-cert.md](add-cert.md) A-5 그대로 + 그림을 PNG 로 캡처해 별도 에이전트가 눈으로 보고 다시 푼다. 통과한 문제만 `reviewedAt`(오늘 날짜)을 적어 넣는다.
+   개념 그림도 같은 에이전트가 그 단원 `concepts`·`compare` 와 맞는지 본다. 틀리면 넣지 않는다.
+   결과는 `reports/{YYYY-MM}/verify-images-{slug}-{chapterId}.md` (작성 N · 통과 N · 탈락 N).
+4. **검사**: `npm run validate && npm test && npm run build`. 통과하면 커밋 1개 `images: add {slug} {chapterId}` → `git pull --rebase origin main` → push.
+   실패하면 그 변경만 되돌리고 `reports/image-progress.md` 의 "메모"에 사유를 적는다.
+5. **기록**: `reports/image-progress.md` 의 표에 한 줄을 덧붙이고, 끝낸 항목을 "다음 할 일"에서 뺀다. 같은 커밋에 넣는다.
+
 ## 3. 진행 기록 (새벽 `reports/routine-progress.md` · 오후 `reports/routine-progress-pm.md`)
 
 실행이 끝나면 (둘 다 실패했어도) 자기 루틴의 표에 한 줄을 덧붙인다. 기존 행은 고치지 않는다.
@@ -171,3 +194,4 @@ Cloudflare 배포 파일 수 한도(`docs/routine-status.md`)에 가까워지면
 ## 4. 마지막 보고
 
 추가된 자격증, 실패·건너뜀, 누적 자격증 수, 후보 보충 여부(남은 후보 수: 한국 N · 미국 N)를 짧게 적는다.
+새벽 루틴은 그림 보강 결과(`{slug} {chapterId} 그림 문제 N개` 또는 "그림 보강 안 함: 사유")도 한 줄 적는다.

@@ -9,7 +9,7 @@
 | 파일 | 역할 |
 |---|---|
 | `lib/data/index.ts` | 서버·빌드용 읽기 함수 (`getCertList`, `getCertification`, `getQuestions` …) |
-| `lib/data/store.ts` | 저장 방식과의 경계 (`DataStore`: `list`, `readJson`) |
+| `lib/data/store.ts` | 저장 방식과의 경계 (`DataStore`: `list`, `readJson`, `readText`) |
 | `lib/data/fs-store.ts` | 지금의 저장 방식: `/data` 폴더의 파일 |
 | `lib/data/paths.ts` | 폴더·파일·문제 id·배포 주소 규칙 (문자열만, `fs` 없음) |
 | `lib/data/client.ts` | 브라우저에서 문제 불러오기 (`useQuestionPool`, `useQuestions`, `fetchQuestions`) |
@@ -28,6 +28,9 @@
   - `/data/{slug}/questions.json` — 그 자격증의 문제 전체 (원본 단원 파일들을 합친 것)
   - 브라우저는 목록으로 먼저 문제를 뽑고, 문제 내용은 **자격증 파일 하나**에서 꺼낸다 (한 번 받으면 다른 단원도 다시 받지 않는다).
   - 원본(`data/certs/…/questions/{단원}.json`, 단원별·파일당 300문항)은 그대로다. 합치는 것은 내보낼 때뿐이다.
+  - **그림**(`assets/*.svg`)은 따로 내보내지 않는다. `lib/data` 의 `getDisplayQuestionFiles`·`getQuestions`·`getConcepts` 가 SVG 를 data: 주소(`imageSrc`, 개념 그림은 `src`)로 바꿔 붙이고,
+    문제 파일·페이지 안에 함께 들어간다 (배포 파일 수가 늘지 않는다). 원본을 고쳐 쓰는 스크립트는 `getQuestionFiles`(그림 주소 없음)를 쓴다.
+    화면은 `components/QuestionImage.tsx` 의 `<img>` 로만 그린다 (흰 바탕 `figure-bg`, 높이 제한). SVG 검사는 `lib/svg.ts` (`npm run validate`). 규칙은 `docs/data-rules.md` 8장.
   - 이유: Cloudflare 무료 요금제는 배포 한 번에 정적 파일 20,000개까지라, 자격증당 파일 수를 줄인다 (자격증 1개 ≈ 40개, 2026-10-09 기준).
   - 배포 파일 수는 `npm run check:deploy-size` 로 본다 (미리 만든 페이지 수 + `public/` + `.next/static/`). 한도는 `docs/routine-status.md` 의 "배포 파일 한도" 값.
     한도 - 1,000 개를 넘으면 루틴이 보강 모드로 바뀐다 (`docs/daily-routine.md` 0-1).

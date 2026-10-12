@@ -38,6 +38,9 @@
  *                 비워 두면 "검수 전"(unverified). 문제를 고칠 때(--update)는 다시 검증한 날짜를 적는다
  *   reviewStatus  적지 않아도 된다 (reviewedAt 이 있으면 verified, 없으면 unverified)
  *   tags          태그 (| 로 구분)
+ *   image         문제 그림 파일 이름 (자격증 폴더 assets/ 안의 .svg, 선택)
+ *   imageAlt      그림을 말로 설명한 글 (image 가 있으면 필수. 정답을 알려 주는 말은 쓰지 않는다)
+ *   imageSource   그림 출처 (image 가 있으면 필수): self (직접 그림) 또는 public|원본 이름|이용 조건
  *   retired       true 면 출제 중단
  *   levelLock     true 면 선지를 줄일 수 없는 문제 ("옳지 않은 것은?" 등. 초급·중급에서 제외). 비워 두면 자동 판단
  *   distractorOrder  오답 번호를 그럴듯한 순서로 (예: 2|4|1). 초급은 정답 + 첫 번째, 중급은 + 두 번째 오답을 남긴다.
@@ -166,6 +169,15 @@ function text(value: unknown): string {
   return value === undefined || value === null ? "" : String(value).trim();
 }
 
+/** 그림 출처: JSON 이면 객체 그대로, CSV 면 "self" 또는 "public|원본 이름|이용 조건" */
+function imageSourceOf(value: unknown): unknown {
+  if (value && typeof value === "object") return value;
+  const raw = text(value);
+  if (!raw) return undefined;
+  const [kind, title, license] = raw.split("|").map((t) => t.trim());
+  return { kind, ...(title ? { title } : {}), ...(license ? { license } : {}) };
+}
+
 function numberOrUndefined(value: unknown): number | undefined {
   const t = text(value);
   if (t === "") return undefined;
@@ -262,6 +274,8 @@ function toCandidate(raw: Raw, detail: CertDetail, old?: Question): Raw {
     ...(reviewedAt ? { reviewedAt } : {}),
     tags,
     ...(text(raw.image) ? { image: text(raw.image) } : {}),
+    ...(text(raw.imageAlt) ? { imageAlt: text(raw.imageAlt) } : {}),
+    ...(imageSourceOf(raw.imageSource) ? { imageSource: imageSourceOf(raw.imageSource) } : {}),
     ...reducedFields(raw, text(raw.stem), choices, numberOrUndefined(raw.answer), old),
     ...(retiredText === "true" || retiredText === "1" ? { retired: true } : {}),
   };
