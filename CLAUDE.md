@@ -119,6 +119,7 @@ npm run validate       /data 전체 검사 (스키마, id 중복·형식, 정답
 npm run build:data     data/ → public/data/ 정적 문제 파일 만들기
 npm run questions:add  문제 넣기·고치기 (CSV/JSON → 검증 → 단원별 파일, id 자동)
 npm run choices:convert  값이 없는 문제에 choicesByLevel·levelLock 채우기 (난이도별 선지 수)
+npm run images:render -- {slug}  그림 검증용 PNG 만들기 (assets/*.svg → reports/images-png/{slug}/)
 npm run check:cert -- {slug}  자격증 게시 기준 검사 (초급·중급·고급 각 30문제 이상, 실전 1회분 이상)
 npm run check:meta     빌드 결과의 title·description 중복, noindex, sitemap, hreflang 검사
 npm run check:deploy-size  빌드 결과의 Cloudflare 배포 파일 수 (한도 근처면 "모드: 보강")
