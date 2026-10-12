@@ -166,8 +166,8 @@ Cloudflare 배포 파일 수 한도(`docs/routine-status.md`)에 가까워지면
 2. **만들기 (1건 = 단원 1개)**: 그 단원에 **그림 문제 5~10개**를 새로 쓰고(id 는 `npm run questions:add` 가 붙인다), 개념 정리에 그 단원이 있으면 **개념 그림 1개**를 `figures` 에 넣는다.
    기존 문제에 그림을 붙이지 않는다 (붙이려면 `version` 을 올리고 다시 검증해야 한다).
 3. **검증**: [add-cert.md](add-cert.md) A-5 그대로 + `npm run images:render -- {slug}` 로 만든 PNG 를 별도 에이전트가 눈으로 보고 다시 푼다. 통과한 문제만 `reviewedAt`(오늘 날짜)을 적어 넣는다.
-   개념 그림도 같은 에이전트가 그 단원 `concepts`·`compare` 와 맞는지 본다. 틀리면 넣지 않는다.
-   결과는 `reports/{YYYY-MM}/verify-images-{slug}-{chapterId}.md` (작성 N · 통과 N · 탈락 N).
+   그림마다 [data-rules.md](data-rules.md) 8장 "그림 검증 체크리스트"(문제 그림 ①~④, 개념 그림 ①②③⑤)를 모두 확인한다. 하나라도 FAIL 이면 넣지 않는다.
+   결과는 `reports/{YYYY-MM}/verify-images-{slug}-{chapterId}.md` (작성 N · 통과 N · 탈락 N, 그림마다 체크리스트 결과).
 4. **검사**: `npm run validate && npm test && npm run build`. 통과하면 커밋 1개 `images: add {slug} {chapterId}` → `git pull --rebase origin main` → push.
    실패하면 그 변경만 되돌리고 `reports/image-progress.md` 의 "메모"에 사유를 적는다.
 5. **기록**: `reports/image-progress.md` 의 표에 한 줄을 덧붙이고, 끝낸 항목을 "다음 할 일"에서 뺀다. 같은 커밋에 넣는다.
