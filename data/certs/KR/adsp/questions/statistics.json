@@ -1,0 +1,974 @@
+[
+  {
+    "id": "adsp-statistics-0001",
+    "certId": "adsp",
+    "subjectId": "data-analysis",
+    "chapterId": "statistics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "모집단을 성별·연령대처럼 서로 겹치지 않는 여러 집단(층)으로 나눈 뒤, 각 집단에서 무작위로 표본을 뽑는 방법은?",
+    "choices": [
+      "계통 추출법",
+      "층화 추출법",
+      "집락(군집) 추출법",
+      "단순 랜덤 추출법"
+    ],
+    "answer": 2,
+    "oneLineConcept": "층화=층마다 랜덤 추출, 집락=집단을 통째로 추출",
+    "explanation": "**층화 추출법**은 모집단을 성질이 비슷한 층으로 나누고, 각 층에서 무작위로 뽑는 방법입니다. 층 안은 비슷하고 층끼리는 다릅니다.\n\n- 단순 랜덤 추출: 모집단 전체에서 제비뽑기처럼 무작위로 뽑음\n- 계통 추출: 번호를 매긴 뒤 일정 간격(예: 10번째마다)으로 뽑음\n- 집락 추출: 모집단을 여러 집단(예: 동네)으로 나누고, 몇 개 집단을 골라 그 안을 모두 조사\n\n**틀린 선지**\n- 집락 추출법: 집단 자체를 골라 그 집단 전체를 조사합니다. 각 집단에서 조금씩 뽑는 것이 아닙니다.\n- 계통 추출법: 일정한 간격으로 뽑는 방법입니다.\n- 단순 랜덤 추출법: 집단을 나누지 않고 전체에서 무작위로 뽑습니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "표본추출",
+      "층화추출"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "adsp-statistics-0002",
+    "certId": "adsp",
+    "subjectId": "data-analysis",
+    "chapterId": "statistics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "섭씨온도처럼 값 사이의 간격은 의미가 있지만 '절대적인 0'이 없어서 '20도는 10도보다 두 배 덥다'고 말할 수 없는 척도는?",
+    "choices": [
+      "명목척도",
+      "순서척도(서열척도)",
+      "구간척도(등간척도)",
+      "비율척도"
+    ],
+    "answer": 3,
+    "oneLineConcept": "척도: 명목 → 순서 → 구간(0 없음) → 비율(절대 0)",
+    "explanation": "척도는 네 가지입니다.\n\n- 명목척도: 이름·구분만 (예: 성별, 혈액형)\n- 순서척도: 순서만 의미 (예: 만족도 1~5, 학년)\n- **구간척도**: 간격이 일정하지만 절대 0이 없음 (예: 섭씨온도, 물가지수) → 더하기·빼기만 의미\n- 비율척도: 절대 0이 있음 (예: 무게, 키, 소득) → 곱하기·나누기도 의미\n\n0도는 '온도가 없다'는 뜻이 아니므로 섭씨온도는 구간척도입니다.\n\n**틀린 선지**\n- 비율척도: 절대 0이 있어 '두 배'라고 말할 수 있는 척도입니다.\n- 순서척도: 순서만 있고 간격이 일정하지 않습니다.\n- 명목척도: 순서도 없이 이름으로만 구분합니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "척도",
+      "구간척도"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "adsp-statistics-0003",
+    "certId": "adsp",
+    "subjectId": "data-analysis",
+    "chapterId": "statistics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "가설검정에서 귀무가설이 실제로는 참인데도 귀무가설을 기각하는 잘못을 무엇이라고 하는가?",
+    "choices": [
+      "제1종 오류",
+      "검정력",
+      "제2종 오류",
+      "신뢰수준"
+    ],
+    "answer": 1,
+    "oneLineConcept": "1종 오류=참인 귀무가설 기각(α), 2종 오류=거짓인 귀무가설 채택(β)",
+    "explanation": "가설검정의 두 가지 오류는 다음과 같습니다.\n\n- **제1종 오류**: 귀무가설이 참인데 기각함. 그 최대 허용 확률이 유의수준 α\n- 제2종 오류: 귀무가설이 거짓인데 채택함. 그 확률이 β\n- 검정력 = 1 − β: 거짓인 귀무가설을 제대로 기각할 확률\n\n**틀린 선지**\n- 제2종 오류: 거짓인 귀무가설을 받아들이는 잘못입니다.\n- 검정력: 오류가 아니라 올바르게 기각할 확률입니다.\n- 신뢰수준: 구간추정에서 쓰는 1 − α 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "가설검정",
+      "제1종오류"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "adsp-statistics-0004",
+    "certId": "adsp",
+    "subjectId": "data-analysis",
+    "chapterId": "statistics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "유의수준 0.05에서 가설검정을 했더니 p-값이 0.03으로 나왔다. 올바른 결론은?",
+    "choices": [
+      "귀무가설이 참일 확률이 3%이므로 귀무가설을 채택한다",
+      "p-값이 유의수준보다 작으므로 귀무가설을 채택한다",
+      "p-값이 유의수준보다 작으므로 귀무가설을 기각한다",
+      "대립가설이 참일 확률이 97%이다"
+    ],
+    "answer": 3,
+    "oneLineConcept": "p-값 < 유의수준 → 귀무가설 기각",
+    "explanation": "**p-값**은 귀무가설이 맞다고 가정했을 때, 지금처럼(또는 더 극단적으로) 결과가 나올 확률입니다.\n\n1. 판단 기준: p-값 < 유의수준(α) 이면 귀무가설 기각\n2. 0.03 < 0.05 → 귀무가설을 **기각**하고 대립가설을 채택합니다.\n\n**틀린 선지**\n- 귀무가설을 채택: p-값이 유의수준보다 작으면 채택이 아니라 기각합니다.\n- 대립가설이 참일 확률 97%: p-값은 가설이 참일 확률이 아닙니다.\n- 귀무가설이 참일 확률 3%: 역시 p-값을 가설의 확률로 잘못 해석한 것이고, 결론도 기각이어야 합니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "가설검정",
+      "p-value"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "adsp-statistics-0005",
+    "certId": "adsp",
+    "subjectId": "data-analysis",
+    "chapterId": "statistics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "일정한 시간이나 공간 안에서 드물게 일어나는 사건의 횟수(예: 한 시간 동안 걸려 오는 고객 불만 전화 수)를 나타내는 데 알맞은 확률분포는?",
+    "choices": [
+      "포아송 분포",
+      "기하 분포",
+      "이항 분포",
+      "지수 분포"
+    ],
+    "answer": 1,
+    "oneLineConcept": "단위 시간·공간의 사건 횟수 = 포아송 분포",
+    "explanation": "**포아송 분포**는 정해진 시간·공간 안에서 어떤 사건이 몇 번 일어나는지를 나타내는 이산형 분포입니다. 평균과 분산이 같다(λ)는 특징이 있습니다.\n\n- 이항 분포: n번 시행 중 성공 횟수 (시행 횟수가 정해져 있음)\n- 기하 분포: 처음 성공할 때까지의 시행 횟수\n- 지수 분포: 사건이 일어날 때까지 걸리는 **시간** (연속형)\n\n**틀린 선지**\n- 이항 분포: 시행 횟수 n이 정해진 상황에서 성공 횟수를 셉니다.\n- 지수 분포: 횟수가 아니라 다음 사건까지의 대기 시간을 나타냅니다.\n- 기하 분포: 첫 성공까지 몇 번 시행하는지를 나타냅니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "확률분포",
+      "포아송분포"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "adsp-statistics-0006",
+    "certId": "adsp",
+    "subjectId": "data-analysis",
+    "chapterId": "statistics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "확률변수 X의 확률분포가 다음과 같을 때 기댓값 E(X)는?\n\nX = 0 일 확률 0.2\nX = 1 일 확률 0.5\nX = 2 일 확률 0.3",
+    "choices": [
+      "0.49",
+      "1.0",
+      "1.1",
+      "1.7"
+    ],
+    "answer": 3,
+    "oneLineConcept": "기댓값 E(X) = Σ x × P(x)",
+    "explanation": "1. 공식: E(X) = Σ (값 × 그 값의 확률)\n2. 대입: 0 × 0.2 + 1 × 0.5 + 2 × 0.3\n3. 계산: 0 + 0.5 + 0.6 = **1.1**\n\n검산: 확률의 합 0.2 + 0.5 + 0.3 = 1 이므로 분포가 올바릅니다.\n\n**틀린 선지**\n- 1.0: 값 0, 1, 2의 단순 평균입니다. 확률을 곱하지 않았습니다.\n- 1.7: E(X²) = 0 + 0.5 + 4 × 0.3 = 1.7 입니다. 기댓값이 아닙니다.\n- 0.49: 분산 1.7 − 1.1² = 0.49 입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "기댓값",
+      "확률분포"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "adsp-statistics-0007",
+    "certId": "adsp",
+    "subjectId": "data-analysis",
+    "chapterId": "statistics",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "확률변수 X의 확률분포가 다음과 같을 때 분산 Var(X)는?\n\nX = 1 일 확률 0.3\nX = 2 일 확률 0.4\nX = 3 일 확률 0.3",
+    "choices": [
+      "0.36",
+      "0.6",
+      "2.0",
+      "4.6"
+    ],
+    "answer": 2,
+    "oneLineConcept": "분산 Var(X) = E(X²) − {E(X)}²",
+    "explanation": "1. 기댓값: E(X) = 1 × 0.3 + 2 × 0.4 + 3 × 0.3 = 0.3 + 0.8 + 0.9 = 2.0\n2. 제곱의 기댓값: E(X²) = 1 × 0.3 + 4 × 0.4 + 9 × 0.3 = 0.3 + 1.6 + 2.7 = 4.6\n3. 분산: Var(X) = 4.6 − 2.0² = 4.6 − 4.0 = **0.6**\n\n검산(편차 제곱 이용): (1−2)² × 0.3 + (2−2)² × 0.4 + (3−2)² × 0.3 = 0.3 + 0 + 0.3 = 0.6\n\n**틀린 선지**\n- 4.6: E(X²)입니다. 기댓값의 제곱을 빼야 합니다.\n- 2.0: 기댓값 E(X)입니다.\n- 0.36: 분산 0.6을 한 번 더 제곱한 값입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "분산",
+      "확률분포"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "adsp-statistics-0008",
+    "certId": "adsp",
+    "subjectId": "data-analysis",
+    "chapterId": "statistics",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "어느 공장에서 기계 A가 전체 제품의 60%, 기계 B가 40%를 만든다. 기계 A 제품의 불량률은 2%, 기계 B 제품의 불량률은 5%이다. 무작위로 고른 제품이 불량일 때, 이 제품이 기계 A에서 만들어졌을 확률은?",
+    "choices": [
+      "0.012",
+      "0.375",
+      "0.6",
+      "0.625"
+    ],
+    "answer": 2,
+    "oneLineConcept": "베이즈 정리: P(A|불량) = P(A)P(불량|A) ÷ P(불량)",
+    "explanation": "1. 공식(베이즈 정리): P(A | 불량) = P(A) × P(불량 | A) ÷ P(불량)\n2. A에서 나온 불량 비율: 0.6 × 0.02 = 0.012\n3. B에서 나온 불량 비율: 0.4 × 0.05 = 0.020\n4. 전체 불량률: 0.012 + 0.020 = 0.032\n5. P(A | 불량) = 0.012 ÷ 0.032 = **0.375**\n\n검산: B일 확률 0.020 ÷ 0.032 = 0.625 이고, 0.375 + 0.625 = 1 입니다.\n\n**틀린 선지**\n- 0.6: 불량 여부를 모를 때 기계 A 제품일 확률(사전확률)입니다.\n- 0.625: 불량품이 기계 B에서 나왔을 확률입니다.\n- 0.012: A에서 만들어졌으면서 불량일 확률(결합확률)입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "베이즈정리",
+      "조건부확률"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "adsp-statistics-0009",
+    "certId": "adsp",
+    "subjectId": "data-analysis",
+    "chapterId": "statistics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "어느 시험의 평균이 70점, 표준편차가 10점이다. 85점을 받은 사람의 표준화 점수(Z점수)는?",
+    "choices": [
+      "−1.5",
+      "0.85",
+      "1.5",
+      "15"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Z = (값 − 평균) ÷ 표준편차",
+    "explanation": "1. 공식: Z = (X − 평균) ÷ 표준편차\n2. 대입: (85 − 70) ÷ 10\n3. 계산: 15 ÷ 10 = **1.5**\n\n뜻: 평균보다 표준편차 1.5개만큼 높은 점수입니다.\n\n검산: 70 + 1.5 × 10 = 85\n\n**틀린 선지**\n- 15: 평균과의 차이(85 − 70)만 구하고 표준편차로 나누지 않았습니다.\n- 0.85: 85를 100으로 나눈 값으로, Z점수가 아닙니다.\n- −1.5: 평균보다 낮은 55점일 때의 Z점수입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "표준화",
+      "Z점수"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "adsp-statistics-0010",
+    "certId": "adsp",
+    "subjectId": "data-analysis",
+    "chapterId": "statistics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "모표준편차가 10인 모집단에서 표본 100개를 뽑았더니 표본평균이 50이었다. 모평균에 대한 95% 신뢰구간은? (Z값 1.96 사용)",
+    "choices": [
+      "48.36 ~ 51.64",
+      "30.40 ~ 69.60",
+      "49.80 ~ 50.20",
+      "48.04 ~ 51.96"
+    ],
+    "answer": 4,
+    "oneLineConcept": "신뢰구간 = 표본평균 ± Z × σ/√n",
+    "explanation": "1. 공식: 표본평균 ± Z × (σ ÷ √n)\n2. 표준오차: σ ÷ √n = 10 ÷ √100 = 10 ÷ 10 = 1\n3. 오차 한계: 1.96 × 1 = 1.96\n4. 신뢰구간: 50 − 1.96 = 48.04, 50 + 1.96 = 51.96 → **48.04 ~ 51.96**\n\n검산: 구간의 가운데 (48.04 + 51.96) ÷ 2 = 50 = 표본평균\n\n**틀린 선지**\n- 30.40 ~ 69.60: √n으로 나누지 않고 1.96 × 10 = 19.6을 쓴 결과입니다.\n- 49.80 ~ 50.20: 표준오차를 10 ÷ 100 = 0.1로 잘못 계산한 결과입니다.\n- 48.36 ~ 51.64: 90% 신뢰구간(Z ≈ 1.64)에 해당합니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "신뢰구간",
+      "구간추정"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "adsp-statistics-0011",
+    "certId": "adsp",
+    "subjectId": "data-analysis",
+    "chapterId": "statistics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "모집단의 분포(정규분포 등)에 대한 가정을 하지 않고, 관측값의 순위나 부호를 이용해 검정하는 방법을 통틀어 무엇이라고 하는가?",
+    "choices": [
+      "독립표본 t-검정",
+      "분산분석",
+      "모수 검정",
+      "비모수 검정"
+    ],
+    "answer": 4,
+    "oneLineConcept": "비모수 검정 = 분포 가정 없이 순위·부호 이용",
+    "explanation": "**비모수 검정**은 모집단이 정규분포를 따른다는 등의 가정 없이, 값의 순위(크기 순서)나 부호(+, −)를 써서 검정합니다. 표본이 작거나 분포 가정이 어려울 때 씁니다.\n\n- 예: 부호 검정, 윌콕슨 부호순위 검정, 만-위트니 U 검정, 크루스칼-왈리스 검정, 스피어만 순위상관\n\n**틀린 선지**\n- 모수 검정: 모집단 분포에 대한 가정(정규성 등)을 두고 평균·분산 같은 모수를 검정합니다.\n- 독립표본 t-검정: 정규분포를 가정하는 모수 검정입니다.\n- 분산분석: 정규성과 등분산을 가정하는 모수 검정입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "비모수검정"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "adsp-statistics-0012",
+    "certId": "adsp",
+    "subjectId": "data-analysis",
+    "chapterId": "statistics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "두 변수 X와 Y의 공분산이 12, X의 표준편차가 3, Y의 표준편차가 5일 때 피어슨 상관계수는?",
+    "choices": [
+      "2.4",
+      "0.8",
+      "1.25",
+      "4"
+    ],
+    "answer": 2,
+    "oneLineConcept": "상관계수 r = 공분산 ÷ (X 표준편차 × Y 표준편차)",
+    "explanation": "1. 공식: r = Cov(X, Y) ÷ (Sx × Sy)\n2. 대입: 12 ÷ (3 × 5)\n3. 계산: 12 ÷ 15 = **0.8**\n\n상관계수는 −1부터 1 사이 값이며, 0.8은 강한 양의 상관입니다.\n\n검산: 0.8 × 3 × 5 = 12 = 공분산\n\n**틀린 선지**\n- 2.4: 12 ÷ 5로 Y 표준편차만 나눈 값입니다.\n- 1.25: 15 ÷ 12로 거꾸로 나눈 값이며, 상관계수는 1을 넘을 수 없습니다.\n- 4: 12 ÷ 3으로 X 표준편차만 나눈 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "상관계수",
+      "공분산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "adsp-statistics-0013",
+    "certId": "adsp",
+    "subjectId": "data-analysis",
+    "chapterId": "statistics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "고객 만족도 순위와 재구매 의향 순위처럼 두 변수가 모두 순서(서열)척도일 때, 두 변수의 관계를 알아보는 데 알맞은 상관계수는?",
+    "choices": [
+      "스피어만 순위상관계수",
+      "변동계수",
+      "결정계수",
+      "피어슨 상관계수"
+    ],
+    "answer": 1,
+    "oneLineConcept": "서열척도 = 스피어만, 구간·비율척도 = 피어슨",
+    "explanation": "상관계수는 자료의 척도에 따라 고릅니다.\n\n- 피어슨 상관계수: 구간·비율척도(연속형 수치)의 **선형** 관계\n- **스피어만 순위상관계수**: 순서(서열)척도, 또는 값을 순위로 바꿔 계산. 비선형이라도 한쪽이 커질 때 다른 쪽도 커지는(단조) 관계를 볼 수 있음\n\n**틀린 선지**\n- 피어슨 상관계수: 수치형 자료의 선형 관계에 씁니다.\n- 결정계수: 회귀모형이 종속변수 변동을 얼마나 설명하는지 나타내는 값입니다.\n- 변동계수: 표준편차를 평균으로 나눈 값으로 상대적 흩어짐을 나타냅니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "상관분석",
+      "스피어만"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "adsp-statistics-0014",
+    "certId": "adsp",
+    "subjectId": "data-analysis",
+    "chapterId": "statistics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "R에서 두 변수 x, y에 대해 다음 결과를 얻었다. 해석으로 옳은 것은? (유의수준 0.05)\n\ncor.test(x, y)\n\n        Pearson's product-moment correlation\n\ndata:  x and y\nt = 15.496, df = 8, p-value = 2.993e-07\nalternative hypothesis: true correlation is not equal to 0\n95 percent confidence interval:\n 0.9304127 0.9962829\nsample estimates:\n      cor \n0.9837476",
+    "choices": [
+      "두 변수 사이에는 통계적으로 유의한 강한 양의 상관관계가 있다",
+      "p-값이 매우 작으므로 '상관계수가 0'이라는 귀무가설을 채택한다",
+      "상관계수의 95% 신뢰구간에 0이 포함된다",
+      "상관계수가 0.98이므로 x가 y의 원인이라고 결론 내릴 수 있다"
+    ],
+    "answer": 1,
+    "oneLineConcept": "cor.test: p-값 < 0.05면 상관계수 ≠ 0 (유의)",
+    "explanation": "결과를 순서대로 읽습니다.\n\n1. cor = 0.98: 1에 가까운 강한 양의 상관\n2. p-value = 2.993e-07 = 0.0000002993 → 0.05보다 훨씬 작음\n3. 귀무가설(상관계수 = 0)을 기각 → 상관관계가 통계적으로 유의함\n4. 95% 신뢰구간 0.930 ~ 0.996 에 0이 없음 → 같은 결론\n\n**틀린 선지**\n- 귀무가설 채택: p-값이 유의수준보다 작으면 귀무가설을 기각합니다.\n- x가 y의 원인: 상관관계는 함께 움직인다는 뜻일 뿐, 원인과 결과를 보여 주지 않습니다.\n- 신뢰구간에 0 포함: 구간이 0.930 ~ 0.996으로 0을 포함하지 않습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "상관분석",
+      "cor.test",
+      "R출력"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "adsp-statistics-0015",
+    "certId": "adsp",
+    "subjectId": "data-analysis",
+    "chapterId": "statistics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "R에서 공부 시간(hours)으로 시험 점수(score)를 예측하는 회귀분석을 해 다음 결과를 얻었다. 공부 시간이 10시간인 학생의 예측 점수는?\n\nsummary(lm(score ~ hours, data = study))\n\nCoefficients:\n            Estimate Std. Error t value Pr(>|t|)    \n(Intercept)  42.5000     2.9271  14.520 4.78e-08 ***\nhours         4.8000     0.3545  13.539 9.32e-08 ***\n---\nResidual standard error: 4.240 on 10 degrees of freedom\nMultiple R-squared:  0.9483,\tAdjusted R-squared:  0.9431 \nF-statistic: 183.3 on 1 and 10 DF,  p-value: 9.32e-08",
+    "choices": [
+      "47.3",
+      "48.0",
+      "90.5",
+      "94.8"
+    ],
+    "answer": 3,
+    "oneLineConcept": "회귀식 = 절편 + 기울기 × x (Estimate 열 사용)",
+    "explanation": "회귀계수는 Estimate(추정값) 열에서 읽습니다.\n\n1. 회귀식: score = 42.5 + 4.8 × hours\n2. 대입: 42.5 + 4.8 × 10\n3. 계산: 42.5 + 48.0 = **90.5**\n\n뜻: 공부 시간이 1시간 늘 때마다 점수가 평균 4.8점 오른다고 예측합니다. 결정계수(R²) 0.9483은 점수 변동의 약 94.8%를 이 모형이 설명한다는 뜻입니다.\n\n**틀린 선지**\n- 48.0: 기울기 × 10만 계산하고 절편 42.5를 더하지 않았습니다.\n- 47.3: 공부 시간을 10이 아니라 1로 넣은 값(42.5 + 4.8)입니다.\n- 94.8: 결정계수 0.9483을 백분율로 바꾼 값입니다. 예측 점수가 아닙니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "회귀분석",
+      "lm",
+      "R출력"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "adsp-statistics-0016",
+    "certId": "adsp",
+    "subjectId": "data-analysis",
+    "chapterId": "statistics",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "R에서 다중회귀분석을 해 다음 결과를 얻었다. 해석으로 옳지 않은 것은? (유의수준 0.05)\n\nsummary(lm(y ~ x1 + x2 + x3, data = df))\n\nCoefficients:\n            Estimate Std. Error t value Pr(>|t|)    \n(Intercept)  19.5958     4.6298   4.232 0.000254 ***\nx1            1.3415     0.1086  12.354 2.19e-12 ***\nx2            3.5363     0.5202   6.797 3.25e-07 ***\nx3            0.6946     0.7684   0.904    0.374    \n---\nResidual standard error: 6.536 on 26 degrees of freedom\nMultiple R-squared:  0.8975,\tAdjusted R-squared:  0.8857 \nF-statistic:  75.9 on 3 and 26 DF,  p-value: 5.47e-13",
+    "choices": [
+      "다른 변수가 같을 때 x1이 1 늘면 y는 약 1.34 늘어난다",
+      "x3는 유의수준 0.05에서 통계적으로 유의하지 않다",
+      "F-검정의 p-값이 매우 작으므로 회귀모형은 통계적으로 유의하다",
+      "결정계수로 보아 이 모형은 y 변동의 약 10%만 설명한다"
+    ],
+    "answer": 4,
+    "oneLineConcept": "다중회귀 결과: 계수 t검정·모형 F검정·결정계수",
+    "explanation": "결과를 하나씩 확인합니다.\n\n1. 결정계수 Multiple R-squared = 0.8975 → y 변동의 약 **89.75%**를 설명합니다. '약 10%만 설명'은 설명하지 못하는 부분(1 − 0.8975 ≈ 0.10)과 헷갈린 것이므로 옳지 않습니다.\n2. x3의 p-값 0.374 > 0.05 → 유의하지 않음 (옳음)\n3. F-statistic의 p-value 5.47e-13 < 0.05 → 모형 전체가 유의함 (옳음)\n4. x1의 Estimate 1.3415 → 다른 변수가 같을 때 x1이 1 늘면 y가 약 1.34 늘어남 (옳음)\n\n**틀린 선지**\n- x3는 유의하지 않다: 옳은 해석입니다.\n- 모형은 유의하다: 옳은 해석입니다.\n- x1이 1 늘면 y는 약 1.34 늘어난다: 옳은 해석입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "다중회귀",
+      "lm",
+      "R출력"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "adsp-statistics-0017",
+    "certId": "adsp",
+    "subjectId": "data-analysis",
+    "chapterId": "statistics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "회귀분석의 기본 가정 가운데 '잔차(실제값 − 예측값)의 분산이 독립변수 값에 관계없이 일정해야 한다'는 가정은?",
+    "choices": [
+      "선형성",
+      "정규성",
+      "독립성",
+      "등분산성"
+    ],
+    "answer": 4,
+    "oneLineConcept": "회귀 가정: 선형성·독립성·등분산성·비상관성·정규성",
+    "explanation": "회귀분석의 주요 가정은 다음과 같습니다.\n\n- 선형성: 독립변수와 종속변수가 직선 관계\n- 독립성: 잔차끼리 서로 독립 (영향을 주고받지 않음)\n- **등분산성**: 잔차의 분산(퍼진 정도)이 고르게 일정\n- 비상관성: 잔차끼리 상관이 없음\n- 정규성(정상성): 잔차가 정규분포를 따름\n\n**틀린 선지**\n- 독립성: 잔차끼리 서로 영향을 주지 않는다는 가정입니다.\n- 정규성: 잔차가 정규분포 모양이라는 가정입니다.\n- 선형성: 두 변수가 직선 관계라는 가정입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "회귀분석",
+      "가정",
+      "등분산성"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "adsp-statistics-0018",
+    "certId": "adsp",
+    "subjectId": "data-analysis",
+    "chapterId": "statistics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "다중회귀분석에서 독립변수끼리 강한 상관관계가 있어 회귀계수 추정이 불안정해지는 문제로, 보통 분산팽창요인(VIF)이 10을 넘으면 의심하는 것은?",
+    "choices": [
+      "다중공선성",
+      "이분산성",
+      "과소적합",
+      "자기상관"
+    ],
+    "answer": 1,
+    "oneLineConcept": "다중공선성 = 독립변수끼리 강한 상관, VIF > 10",
+    "explanation": "**다중공선성**은 독립변수들끼리 서로 강하게 관련되어 있어서, 각 변수의 영향을 따로 떼어 내기 어려운 문제입니다.\n\n- 증상: 계수의 표준오차가 커지고, 부호가 이상하게 나오기도 함\n- 진단: 분산팽창요인(VIF)이 10보다 크면 문제가 있다고 봄\n- 대처: 관련 변수 하나를 빼거나, 주성분분석·능형회귀 등을 씀\n\n**틀린 선지**\n- 자기상관: 시간 순서상 잔차끼리 상관이 있는 문제입니다.\n- 이분산성: 잔차의 분산이 일정하지 않은 문제입니다.\n- 과소적합: 모형이 너무 단순해 데이터의 패턴을 잡지 못하는 문제입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "회귀분석",
+      "다중공선성",
+      "VIF"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "adsp-statistics-0019",
+    "certId": "adsp",
+    "subjectId": "data-analysis",
+    "chapterId": "statistics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "회귀분석의 변수 선택 방법 가운데, 모든 독립변수를 넣은 모형에서 시작해 가장 덜 중요한 변수를 하나씩 빼 나가는 방법은?",
+    "choices": [
+      "전진 선택법",
+      "후진 제거법",
+      "단계적 선택법",
+      "모든 가능한 조합 비교법"
+    ],
+    "answer": 2,
+    "oneLineConcept": "전진=하나씩 추가, 후진=하나씩 제거, 단계적=추가·제거 반복",
+    "explanation": "변수 선택 방법은 다음과 같습니다.\n\n- 전진 선택법: 변수 없이 시작해 중요한 변수를 하나씩 **추가**\n- **후진 제거법**: 모든 변수로 시작해 덜 중요한 변수를 하나씩 **제거**\n- 단계적 선택법: 추가와 제거를 번갈아 하며, 이미 넣은 변수도 다시 빼 볼 수 있음\n\nR의 step() 함수는 AIC가 작아지는 방향으로 변수를 고릅니다(AIC는 작을수록 좋은 모형).\n\n**틀린 선지**\n- 전진 선택법: 빈 모형에서 변수를 하나씩 더합니다.\n- 단계적 선택법: 추가와 제거를 함께 합니다.\n- 모든 가능한 조합 비교법: 변수의 모든 조합을 만들어 비교하는 방법으로, 하나씩 빼는 방법이 아닙니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "변수선택",
+      "후진제거법"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "adsp-statistics-0020",
+    "certId": "adsp",
+    "subjectId": "data-analysis",
+    "chapterId": "statistics",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "R에서 두 그룹(A, B)의 평균 점수를 비교해 다음 결과를 얻었다. 유의수준 0.05에서의 해석으로 옳은 것은?\n\nt.test(score ~ group, data = d)\n\n        Welch Two Sample t-test\n\ndata:  score by group\nt = -4.4313, df = 18, p-value = 0.0003224\nalternative hypothesis: true difference in means between group A and group B is not equal to 0\n95 percent confidence interval:\n -8.844662 -3.155338\nsample estimates:\nmean in group A mean in group B \n           69.5            75.5",
+    "choices": [
+      "평균 차이의 95% 신뢰구간에 0이 포함되어 있다",
+      "p-값이 0.05보다 작으므로 두 그룹의 평균이 같다고 판단한다",
+      "t 값이 음수이므로 검정 결과를 해석할 수 없다",
+      "두 그룹의 평균은 다르다고 판단하며, B 그룹 평균이 약 6점 높다"
+    ],
+    "answer": 4,
+    "oneLineConcept": "t.test: p-값 < α → 평균 차이 유의, 신뢰구간에 0 없음",
+    "explanation": "결과를 순서대로 읽습니다.\n\n1. 귀무가설: 두 그룹 평균 차이 = 0\n2. p-value = 0.0003224 < 0.05 → 귀무가설 **기각** → 평균이 다르다\n3. 평균: A 69.5, B 75.5 → 차이 69.5 − 75.5 = −6 (B가 6점 높음)\n4. 차이의 95% 신뢰구간 −8.84 ~ −3.16 에 0이 없음 → 같은 결론\n\nt 값이 음수인 것은 A − B 순서로 계산해 A가 더 작기 때문입니다.\n\n**틀린 선지**\n- 평균이 같다고 판단: p-값이 작으면 '같다'는 귀무가설을 기각합니다.\n- t 값이 음수라 해석 불가: 음수는 차이의 방향(A가 작음)을 뜻할 뿐입니다.\n- 신뢰구간에 0 포함: −8.84 ~ −3.16은 모두 음수라 0을 포함하지 않습니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "t검정",
+      "t.test",
+      "R출력"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "adsp-statistics-0021",
+    "certId": "adsp",
+    "subjectId": "data-analysis",
+    "chapterId": "statistics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "성별과 신제품 선호 여부를 조사해 다음 교차표를 얻었다. 두 변수가 서로 독립이라고 가정할 때, '남자·선호' 칸의 기대도수는?\n\n          선호  비선호  합계\n남자        30      20     50\n여자        15      35     50\n합계        45      55    100",
+    "choices": [
+      "22.5",
+      "25",
+      "27.5",
+      "30"
+    ],
+    "answer": 1,
+    "oneLineConcept": "기대도수 = 행 합계 × 열 합계 ÷ 전체 합계",
+    "explanation": "카이제곱 독립성 검정에서 기대도수는 '두 변수가 독립일 때 기대되는 칸의 수'입니다.\n\n1. 공식: 기대도수 = (그 행의 합계 × 그 열의 합계) ÷ 전체 합계\n2. 대입: 남자 합계 50, 선호 합계 45, 전체 100\n3. 계산: 50 × 45 ÷ 100 = **22.5**\n\n검산: 남자·비선호 기대도수는 50 × 55 ÷ 100 = 27.5 이고, 22.5 + 27.5 = 50 = 남자 합계\n\n**틀린 선지**\n- 30: 실제로 관측된 도수(관측도수)입니다.\n- 25: 전체 100을 네 칸으로 똑같이 나눈 값입니다.\n- 27.5: 남자·비선호 칸의 기대도수입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "카이제곱검정",
+      "기대도수",
+      "교차분석"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "adsp-statistics-0022",
+    "certId": "adsp",
+    "subjectId": "data-analysis",
+    "chapterId": "statistics",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "R에서 세 그룹의 평균을 비교하는 일원배치 분산분석을 해 다음 결과를 얻었다. (가)에 들어갈 F 값은?\n\nsummary(aov(y ~ group, data = d))\n\n            Df Sum Sq Mean Sq F value   Pr(>F)    \ngroup        2     70    35.0     (가) 0.000729 ***\nResiduals   12     30     2.5",
+    "choices": [
+      "2.33",
+      "14.0",
+      "28.0",
+      "35.0"
+    ],
+    "answer": 2,
+    "oneLineConcept": "F = 그룹 간 평균제곱 ÷ 잔차(그룹 내) 평균제곱",
+    "explanation": "분산분석의 F 값은 두 평균제곱(Mean Sq)의 비율입니다.\n\n1. 평균제곱 = 제곱합 ÷ 자유도\n   - 그룹 간: 70 ÷ 2 = 35.0\n   - 잔차: 30 ÷ 12 = 2.5\n2. F = 35.0 ÷ 2.5 = **14.0**\n3. p-값 0.000729 < 0.05 → 세 그룹 가운데 적어도 한 그룹의 평균이 다름\n\n검산: 2.5 × 14 = 35\n\n**틀린 선지**\n- 2.33: 제곱합끼리 나눈 값(70 ÷ 30)입니다. 평균제곱으로 나눠야 합니다.\n- 35.0: 그룹 간 평균제곱 자체입니다.\n- 28.0: 그룹 간 제곱합 70을 잔차 평균제곱 2.5로 나눈 값입니다. 분자도 평균제곱(35.0)이어야 합니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "분산분석",
+      "aov",
+      "R출력"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "adsp-statistics-0023",
+    "certId": "adsp",
+    "subjectId": "data-analysis",
+    "chapterId": "statistics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "R에서 표준화한 변수 4개로 주성분분석을 해 다음 결과를 얻었다. 누적 기여율(설명 비율)이 80% 이상이 되도록 주성분을 고른다면 몇 개를 쓰는가?\n\nsummary(prcomp(d, scale. = TRUE))\n\nImportance of components:\n                          PC1    PC2    PC3    PC4\nStandard deviation     1.5492 0.9798 0.6325 0.4899\nProportion of Variance 0.6000 0.2400 0.1000 0.0600\nCumulative Proportion  0.6000 0.8400 0.9400 1.0000",
+    "choices": [
+      "1개",
+      "2개",
+      "3개",
+      "4개"
+    ],
+    "answer": 2,
+    "oneLineConcept": "주성분 개수: 누적 기여율(Cumulative Proportion) 80% 이상",
+    "explanation": "주성분 개수는 **Cumulative Proportion(누적 기여율)** 줄을 봅니다.\n\n1. PC1까지: 0.60 → 60% (80% 미만)\n2. PC2까지: 0.60 + 0.24 = 0.84 → 84% (80% 이상)\n3. 따라서 주성분 **2개**로 전체 변동의 84%를 설명할 수 있습니다.\n\n검산: 분산 = 표준편차², PC1: 1.5492² ≈ 2.4, 4개 변수 전체 분산 4 중 2.4 ÷ 4 = 0.60\n\n**틀린 선지**\n- 1개: 누적 60%로 80%에 못 미칩니다.\n- 3개: 2개만으로 이미 80%를 넘으므로 더 쓸 필요가 없습니다.\n- 4개: 변수 수와 같아 차원을 줄이는 의미가 없습니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "주성분분석",
+      "prcomp",
+      "R출력"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "adsp-statistics-0024",
+    "certId": "adsp",
+    "subjectId": "data-analysis",
+    "chapterId": "statistics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "다차원척도법(MDS)에서 개체 사이의 실제 거리와 그림(저차원 공간) 위의 거리가 얼마나 잘 맞는지를 나타내며, 0에 가까울수록 잘 맞는 적합도 지표는?",
+    "choices": [
+      "고유값(Eigenvalue)",
+      "실루엣 계수",
+      "스트레스(Stress) 값",
+      "결정계수(R²)"
+    ],
+    "answer": 3,
+    "oneLineConcept": "MDS 적합도 = 스트레스 값(0에 가까울수록 좋음)",
+    "explanation": "**다차원척도법**은 개체 사이의 거리(비슷한 정도)를 2차원 같은 낮은 차원의 그림에 점으로 나타내는 방법입니다.\n\n- 적합도는 **스트레스 값**으로 판단합니다.\n- 0이면 완벽하게 맞고, 값이 클수록 실제 거리와 그림 위 거리가 맞지 않는다는 뜻입니다.\n- R에서는 계량적 MDS에 cmdscale(), 순서척도 자료의 비계량적 MDS에 isoMDS()를 씁니다.\n\n**틀린 선지**\n- 고유값: 주성분분석에서 각 주성분이 설명하는 분산 크기입니다.\n- 실루엣 계수: 군집분석이 잘 되었는지 보는 지표로, 1에 가까울수록 좋습니다.\n- 결정계수: 회귀모형의 설명력이며 1에 가까울수록 좋습니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "다차원척도법",
+      "스트레스"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "adsp-statistics-0025",
+    "certId": "adsp",
+    "subjectId": "data-analysis",
+    "chapterId": "statistics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "시계열 자료가 정상성을 만족하지 않고 '평균'이 시간에 따라 일정하지 않을 때, 정상 시계열로 바꾸기 위해 주로 쓰는 방법은?",
+    "choices": [
+      "로그 변환",
+      "이동평균 그래프 그리기",
+      "차분(Differencing)",
+      "표본 수 늘리기"
+    ],
+    "answer": 3,
+    "oneLineConcept": "평균이 일정하지 않으면 차분, 분산이 일정하지 않으면 변환",
+    "explanation": "**정상성**은 시계열의 평균과 분산이 시간에 따라 변하지 않는 성질입니다. 정상성을 만족해야 대부분의 시계열 모형을 쓸 수 있습니다.\n\n- 평균이 일정하지 않음(추세 있음) → **차분**: 현재 값 − 바로 전 값\n- 분산이 일정하지 않음(퍼짐이 커짐) → **변환**: 로그 변환 등\n\n**틀린 선지**\n- 로그 변환: 분산이 일정하지 않을 때 씁니다.\n- 이동평균 그래프: 추세를 눈으로 보는 방법일 뿐, 정상 시계열로 바꾸는 방법이 아닙니다.\n- 표본 수 늘리기: 정상성 문제를 해결하지 못합니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "시계열",
+      "정상성",
+      "차분"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "adsp-statistics-0026",
+    "certId": "adsp",
+    "subjectId": "data-analysis",
+    "chapterId": "statistics",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "ARIMA(0, 1, 2) 모형에 대한 설명으로 옳은 것은?",
+    "choices": [
+      "한 번 차분하면 MA(2) 모형이 된다",
+      "차분하지 않은 ARMA(1, 2) 모형이다",
+      "두 번 차분하면 MA(1) 모형이 된다",
+      "한 번 차분하면 AR(2) 모형이 된다"
+    ],
+    "answer": 1,
+    "oneLineConcept": "ARIMA(p, d, q): p=AR 차수, d=차분 횟수, q=MA 차수",
+    "explanation": "ARIMA(p, d, q)의 세 숫자는 다음을 뜻합니다.\n\n- p: 자기회귀(AR) 차수\n- d: 차분 횟수\n- q: 이동평균(MA) 차수\n\nARIMA(0, 1, 2)는 p = 0, d = 1, q = 2 이므로, **한 번 차분하면 MA(2) 모형**이 됩니다. 이런 모형을 IMA(1, 2)라고도 합니다.\n\n**틀린 선지**\n- AR(2): AR 차수 p는 0입니다. 2는 MA 차수입니다.\n- 두 번 차분: 차분 횟수 d는 1입니다.\n- 차분하지 않은 ARMA(1, 2): 가운데 숫자 1은 차분 횟수이지 AR 차수가 아닙니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "시계열",
+      "ARIMA"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "adsp-statistics-0027",
+    "certId": "adsp",
+    "subjectId": "data-analysis",
+    "chapterId": "statistics",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "어떤 정상 시계열의 자기상관함수(ACF)는 시차가 커질수록 천천히 줄어들고, 부분자기상관함수(PACF)는 시차 2까지 뚜렷하다가 시차 3부터 0에 가깝게 끊겼다. 알맞은 모형은?",
+    "choices": [
+      "MA(2)",
+      "AR(3)",
+      "MA(3)",
+      "AR(2)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "AR(p): PACF가 p 다음에 절단, MA(q): ACF가 q 다음에 절단",
+    "explanation": "ACF와 PACF 모양으로 모형을 고릅니다.\n\n- **AR(p) 모형**: ACF는 천천히 줄어들고, PACF는 시차 p 다음부터 끊김(절단)\n- MA(q) 모형: PACF는 천천히 줄어들고, ACF는 시차 q 다음부터 끊김\n\n이 문제는 PACF가 시차 2까지 남고 3부터 끊겼으므로 p = 2, 즉 **AR(2)**입니다.\n\n**틀린 선지**\n- MA(2): MA 모형이라면 PACF가 아니라 ACF가 끊겨야 합니다.\n- AR(3): 시차 3부터 끊겼으므로 마지막으로 뚜렷한 시차는 2입니다.\n- MA(3): 끊긴 함수(PACF)와 시차가 모두 맞지 않습니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "시계열",
+      "ACF",
+      "PACF"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  }
+]

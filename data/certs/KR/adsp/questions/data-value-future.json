@@ -1,0 +1,280 @@
+[
+  {
+    "id": "adsp-data-value-future-0001",
+    "certId": "adsp",
+    "subjectId": "data-understanding",
+    "chapterId": "data-value-future",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "빅데이터의 특징을 나타내는 3V는 규모(Volume), 다양성(Variety)과 무엇인가?",
+    "choices": [
+      "가치(Value)",
+      "정확성(Veracity)",
+      "시각화(Visualization)",
+      "속도(Velocity)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "빅데이터 3V = Volume·Variety·Velocity",
+    "explanation": "빅데이터의 기본 특징 **3V**는 다음과 같습니다.\n\n- Volume(규모): 데이터 양이 매우 많음\n- Variety(다양성): 정형·반정형·비정형 등 형태가 다양함\n- **Velocity(속도)**: 데이터가 매우 빠르게 생기고, 빠르게 처리해야 함\n\n여기에 Value(가치)나 Veracity(정확성)를 더해 4V, 5V로 말하기도 합니다.\n\n**틀린 선지**\n- 가치(Value): 3V에 더해 4V를 말할 때 들어가는 요소입니다.\n- 정확성(Veracity): 3V에 더해 4V·5V를 말할 때 쓰는 요소입니다.\n- 시각화(Visualization): 3V에 들어가지 않습니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "빅데이터",
+      "3V"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "adsp-data-value-future-0002",
+    "certId": "adsp",
+    "subjectId": "data-understanding",
+    "chapterId": "data-value-future",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "빅데이터 시대에 데이터 처리·분석 방식에 일어난 본질적인 변화로 옳지 않은 것은?",
+    "choices": [
+      "표본 조사에서 전수 조사로",
+      "상관관계에서 인과관계 중심으로",
+      "질에서 양으로",
+      "사전 처리에서 사후 처리로"
+    ],
+    "answer": 2,
+    "oneLineConcept": "빅데이터 변화: 사후처리·전수조사·양·상관관계",
+    "explanation": "빅데이터가 가져온 네 가지 본질적인 변화는 다음과 같습니다.\n\n- 사전 처리 → **사후 처리**: 필요한 정보만 골라 모으지 않고, 일단 많이 모은 뒤 나중에 조합해 숨은 정보를 찾음\n- 표본 조사 → **전수 조사**: 데이터 수집·처리 비용이 낮아져 전체를 분석\n- 질 → **양**: 데이터가 많아지면 일부 오류가 있어도 전체 결과는 좋아짐\n- 인과관계 → **상관관계**: '왜'보다 '무엇이 함께 일어나는지'를 보고 빠르게 판단\n\n따라서 '상관관계에서 인과관계로'는 방향이 거꾸로 되어 옳지 않습니다.\n\n**틀린 선지**\n- 사전 처리에서 사후 처리로: 옳은 설명입니다.\n- 표본 조사에서 전수 조사로: 옳은 설명입니다.\n- 질에서 양으로: 옳은 설명입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "빅데이터",
+      "본질적변화"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "adsp-data-value-future-0003",
+    "certId": "adsp",
+    "subjectId": "data-understanding",
+    "chapterId": "data-value-future",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "빅데이터 시대의 위기 요인 가운데 '사생활 침해'에 대한 통제 방안으로 가장 알맞은 것은?",
+    "choices": [
+      "알고리즈미스트가 알고리즘의 판단을 해석하게 한다",
+      "개인정보 제공자에게 받는 사전 동의 절차를 늘린다",
+      "개인정보 제공자의 '동의'에서 개인정보 사용자의 '책임'으로 바꾼다",
+      "결과 기반 책임 원칙을 고수한다"
+    ],
+    "answer": 3,
+    "oneLineConcept": "사생활 침해 → 동의제에서 책임제로",
+    "explanation": "빅데이터의 세 가지 위기 요인과 통제 방안은 짝으로 기억합니다.\n\n- **사생활 침해** → 개인정보 제공자의 '동의'에서 사용자의 '책임'으로 전환 (데이터를 쓰는 쪽이 책임을 짐)\n- 책임 원칙 훼손 → 결과 기반 책임 원칙 고수 (예측만으로 처벌하지 않음)\n- 데이터 오용 → 알고리즘 접근 허용, 알고리즈미스트가 해석·구제\n\n데이터가 수많은 목적으로 재사용되는 상황에서 매번 동의를 받는 방식은 효과가 떨어지기 때문에, 사용자의 책임을 강조합니다.\n\n**틀린 선지**\n- 사전 동의 절차를 늘린다: 빅데이터 환경에서는 동의만으로 보호하기 어려워 책임 중심으로 바꾸는 것이 통제 방안입니다.\n- 결과 기반 책임 원칙: '책임 원칙 훼손'에 대한 통제 방안입니다.\n- 알고리즈미스트: '데이터 오용'에 대한 통제 방안입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "위기요인",
+      "사생활침해"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "adsp-data-value-future-0004",
+    "certId": "adsp",
+    "subjectId": "data-understanding",
+    "chapterId": "data-value-future",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "범죄 예측 프로그램이 '범죄를 저지를 가능성이 높다'고 판단했다는 이유만으로, 아직 아무 잘못을 하지 않은 사람에게 불이익을 주는 경우가 생길 수 있다. 이는 빅데이터 시대의 어떤 위기 요인에 해당하는가?",
+    "choices": [
+      "데이터 오용",
+      "데이터 독점",
+      "사생활 침해",
+      "책임 원칙 훼손"
+    ],
+    "answer": 4,
+    "oneLineConcept": "예측만으로 처벌 = 책임 원칙 훼손",
+    "explanation": "**책임 원칙 훼손**은 실제로 한 행동이 아니라 '앞으로 할 것 같다'는 예측 결과 때문에 사람이 불이익을 받는 위험입니다. 민주 사회는 잘못한 행동에 대해서만 책임을 묻는 것이 원칙이기 때문입니다.\n\n- 통제 방안: 결과 기반 책임 원칙을 고수 (행동의 결과를 보고 책임을 물음)\n\n**틀린 선지**\n- 데이터 오용: 데이터나 분석 결과가 잘못 쓰이거나, 잘못된 지표로 피해를 보는 경우입니다.\n- 사생활 침해: 개인정보가 목적 외로 쓰여 사생활이 드러나는 위험입니다.\n- 데이터 독점: 세 가지 위기 요인(사생활 침해·책임 원칙 훼손·데이터 오용)에 들어가지 않습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "위기요인",
+      "책임원칙훼손"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "adsp-data-value-future-0005",
+    "certId": "adsp",
+    "subjectId": "data-understanding",
+    "chapterId": "data-value-future",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "빅데이터 분석에 쓰인 알고리즘 때문에 부당하게 피해를 본 사람을 돕기 위해, 알고리즘을 해석하고 피해자를 구제하는 일을 하는 전문 인력은?",
+    "choices": [
+      "데이터 엔지니어",
+      "데이터 스튜어드(Data Steward)",
+      "알고리즈미스트(Algorithmist)",
+      "시스템 관리자"
+    ],
+    "answer": 3,
+    "oneLineConcept": "알고리즘 피해 구제 전문가 = 알고리즈미스트",
+    "explanation": "**알고리즈미스트**는 '데이터 오용' 위기에 대한 통제 방안으로 등장한 전문 인력입니다. 컴퓨터와 수학, 통계학, 비즈니스 지식을 갖추고 알고리즘의 판단 과정을 해석해, 알고리즘 때문에 부당하게 피해를 본 사람을 구제합니다.\n\n**틀린 선지**\n- 데이터 스튜어드: 데이터 항목별로 품질과 표준을 관리하는 책임자입니다.\n- 데이터 엔지니어: 데이터 수집·저장·처리 시스템을 만드는 사람입니다.\n- 시스템 관리자: 서버·장비를 운영하는 사람입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "알고리즈미스트",
+      "데이터오용"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "adsp-data-value-future-0006",
+    "certId": "adsp",
+    "subjectId": "data-understanding",
+    "chapterId": "data-value-future",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "빅데이터 활용 기본 테크닉 가운데 '택배 차량을 어떻게 배치해야 운송 비용을 가장 줄일 수 있을까?'처럼, 여러 후보 답을 세대마다 반복해서 개선하며 최적의 답을 찾아가는 방법은?",
+    "choices": [
+      "유전 알고리즘(Genetic Algorithm)",
+      "연관규칙 학습",
+      "감정 분석",
+      "회귀분석"
+    ],
+    "answer": 1,
+    "oneLineConcept": "최적화 문제(차량 배치) = 유전 알고리즘",
+    "explanation": "**유전 알고리즘**은 생물의 진화(선택·교배·돌연변이)를 흉내 내어, 여러 후보 답을 세대마다 조금씩 개선하면서 최적의 답을 찾아가는 방법입니다. 차량 배치, 일정 짜기처럼 '가장 좋은 조합'을 찾는 문제에 씁니다.\n\n- 연관규칙 학습: '커피를 사는 사람은 빵도 많이 사는가?'\n- 회귀분석: '나이가 구매 차종에 어떤 영향을 주는가?'\n- 감정 분석: '새 정책에 대한 고객의 반응이 긍정인가 부정인가?'\n\n**틀린 선지**\n- 연관규칙 학습: 함께 일어나는 항목(같이 사는 상품)을 찾는 방법입니다.\n- 회귀분석: 한 변수가 다른 변수에 주는 영향을 수치로 알아보는 방법입니다.\n- 감정 분석: 글에 담긴 긍정·부정 감정을 분석하는 방법입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "빅데이터활용",
+      "유전알고리즘"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "adsp-data-value-future-0007",
+    "certId": "adsp",
+    "subjectId": "data-understanding",
+    "chapterId": "data-value-future",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "학생 개개인의 키 대신 '학과 전체 학생의 키 합계는 ○○cm, 평균은 ○○cm'처럼 합계·평균 값만 보여 주어 개인을 알아볼 수 없게 하는 비식별화 기법은?",
+    "choices": [
+      "데이터 마스킹",
+      "총계 처리",
+      "범주화",
+      "가명 처리"
+    ],
+    "answer": 2,
+    "oneLineConcept": "개별값 대신 합계·평균 = 총계 처리",
+    "explanation": "개인정보 비식별화 기법은 다음과 같습니다.\n\n- **총계 처리**: 개별 값 대신 합계·평균 같은 통계값을 보여 줌 (예: 학과 학생 키 합계 350cm)\n- 범주화: 정확한 값을 구간으로 바꿈 (예: 35세 → 30대)\n- 가명 처리: 이름 등 식별자를 다른 값으로 바꿈 (예: 홍길동 → 임꺽정)\n- 데이터 마스킹: 일부를 가림 (예: 홍길동 → 홍○○)\n- 데이터값 삭제: 식별에 쓰이는 값을 지움\n\n**틀린 선지**\n- 범주화: 값을 구간으로 묶는 기법입니다. 합계·평균으로 바꾸는 것이 아닙니다.\n- 가명 처리: 이름 같은 식별자를 다른 이름으로 바꾸는 기법입니다.\n- 데이터 마스킹: 값의 일부를 ○나 * 로 가리는 기법입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "비식별화",
+      "총계처리"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "adsp-data-value-future-0008",
+    "certId": "adsp",
+    "subjectId": "data-understanding",
+    "chapterId": "data-value-future",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "빅데이터의 가치를 미리 정확히 계산하기 어려운 이유 가운데, '처음 모을 때와 다른 목적으로 데이터를 다시 쓰거나 다른 데이터와 합쳐 쓰게 된다'는 것과 관계 깊은 것은?",
+    "choices": [
+      "새로운 가치 창출",
+      "데이터 활용 방식(재사용·재조합·다목적 활용)",
+      "데이터 저장 비용의 증가",
+      "분석 기술의 발전"
+    ],
+    "answer": 2,
+    "oneLineConcept": "가치 산정 어려움: 활용 방식·새 가치 창출·분석 기술 발전",
+    "explanation": "빅데이터의 가치 산정이 어려운 이유는 세 가지입니다.\n\n- **데이터 활용 방식**: 재사용, 재조합(다른 데이터와 결합), 다목적용 개발 때문에 누가 언제 어떻게 쓸지 미리 알기 어려움\n- 새로운 가치 창출: 기존에 없던 가치를 만들어 내므로 가치를 미리 재기 어려움\n- 분석 기술 발전: 지금은 가치 없는 데이터도 새 분석 기법이 나오면 가치가 생김\n\n**틀린 선지**\n- 새로운 가치 창출: 데이터가 전에 없던 가치를 만든다는 이유로, 재사용·재조합과는 다른 항목입니다.\n- 분석 기술의 발전: 기술이 발전하면 지금 쓸모없는 데이터도 가치가 생긴다는 이유입니다.\n- 데이터 저장 비용의 증가: 오히려 저장 비용이 낮아진 것이 빅데이터 등장 배경입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "빅데이터가치",
+      "가치산정"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  }
+]

@@ -1,0 +1,349 @@
+[
+  {
+    "id": "adsp-master-plan-0001",
+    "certId": "adsp",
+    "subjectId": "analysis-planning",
+    "chapterId": "master-plan",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "분석 과제를 시급성(현재·미래)과 난이도(어려움·쉬움)로 나눈 포트폴리오 사분면에서 가장 먼저 추진하는 과제는?",
+    "choices": [
+      "시급성이 높고(현재) 난이도가 어려운 과제",
+      "시급성이 낮고(미래) 난이도가 쉬운 과제",
+      "시급성이 낮고(미래) 난이도가 어려운 과제",
+      "시급성이 높고(현재) 난이도가 쉬운 과제"
+    ],
+    "answer": 4,
+    "oneLineConcept": "가장 먼저: 시급(현재)+쉬움(3사분면)",
+    "explanation": "포트폴리오 사분면에서는 **지금 당장 필요하고(시급성 높음), 쉽게 할 수 있는(난이도 쉬움)** 과제를 가장 먼저 추진합니다. 이 영역을 보통 3사분면이라고 부릅니다.\n\n- 시급성 높음 + 쉬움 → 가장 먼저\n- 시급성 낮음 + 어려움 → 가장 나중\n- 나머지 두 영역은 시급성과 난이도 중 무엇을 더 중시하느냐에 따라 순서가 달라집니다.\n\n**틀린 선지**\n- 시급성 높고 어려운 과제: 중요하지만 바로 하기 어려워 난이도를 낮춘 뒤 추진합니다.\n- 시급성 낮고 쉬운 과제: 쉽지만 당장 필요하지 않아 뒤로 밀립니다.\n- 시급성 낮고 어려운 과제: 가장 나중에 추진합니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "우선순위",
+      "포트폴리오사분면"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "adsp-master-plan-0002",
+    "certId": "adsp",
+    "subjectId": "analysis-planning",
+    "chapterId": "master-plan",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "분석 과제의 우선순위를 시급성과 난이도로 평가할 때, '난이도'를 판단하는 기준으로 가장 알맞은 것은?",
+    "choices": [
+      "데이터를 얻고 저장·가공하는 비용과 분석을 적용하는 비용, 현재 기업의 분석 수준",
+      "과제를 끝내야 하는 시점이 현재인지 미래인지",
+      "분석 결과가 경영진의 관심을 얼마나 끌 수 있는지",
+      "전략적 중요도와 목표 가치(KPI)에 미치는 영향"
+    ],
+    "answer": 1,
+    "oneLineConcept": "시급성=전략적 중요도·목표가치, 난이도=비용·분석 수준",
+    "explanation": "포트폴리오 사분면의 두 축은 다음 기준으로 판단합니다.\n\n- 시급성: 전략적 중요도가 핵심 기준이며, 목표 가치(KPI)를 함께 봅니다. 지금 당장 필요한지(현재) 나중에 해도 되는지(미래)로 나눕니다.\n- **난이도**: 데이터를 얻고 저장·가공하는 비용, 분석을 적용하는 비용, 그리고 현재 기업의 분석 수준을 보고 쉬운지(Easy) 어려운지(Difficult) 판단합니다.\n\n**틀린 선지**\n- 전략적 중요도와 목표 가치: 시급성을 판단하는 기준입니다.\n- 현재인지 미래인지: 시급성 축의 구분입니다.\n- 경영진의 관심: 난이도를 판단하는 기준이 아닙니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "우선순위",
+      "난이도"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "adsp-master-plan-0003",
+    "certId": "adsp",
+    "subjectId": "analysis-planning",
+    "chapterId": "master-plan",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "분석 과제의 우선순위를 ROI(투자 대비 효과) 관점에서 평가할 때, 투자 비용이 아니라 '비즈니스 효과' 쪽에 해당하는 빅데이터 요소는?",
+    "choices": [
+      "다양성(Variety)",
+      "속도(Velocity)",
+      "규모(Volume)",
+      "가치(Value)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "ROI 관점: 투자비용=3V, 비즈니스 효과=Value",
+    "explanation": "ROI 관점에서 빅데이터의 4V를 나누면 다음과 같습니다.\n\n- 투자 비용(Investment) 요소: Volume(규모), Variety(다양성), Velocity(속도) → 데이터를 모으고 처리하는 데 드는 비용과 관련\n- **비즈니스 효과(Return) 요소: Value(가치)** → 분석 결과로 얻는 효과\n\n**틀린 선지**\n- 속도: 데이터 처리 속도를 맞추는 데 드는 투자 비용 요소입니다.\n- 규모: 데이터 저장·처리 비용과 관련된 투자 비용 요소입니다.\n- 다양성: 여러 형태 데이터를 다루는 비용과 관련된 투자 비용 요소입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "ROI",
+      "4V"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "adsp-master-plan-0004",
+    "certId": "adsp",
+    "subjectId": "analysis-planning",
+    "chapterId": "master-plan",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "분석 로드맵을 3단계로 세울 때 마지막 단계는?",
+    "choices": [
+      "데이터 분석 확산 및 고도화",
+      "데이터 분석 체계 도입",
+      "데이터 분석 유효성 검증",
+      "분석 과제 발굴"
+    ],
+    "answer": 1,
+    "oneLineConcept": "로드맵: 체계 도입 → 유효성 검증 → 확산 및 고도화",
+    "explanation": "분석 로드맵은 보통 다음 세 단계로 세웁니다.\n\n1. 데이터 분석 체계 도입: 분석 기회 발굴, 과제 정의, 로드맵 수립\n2. 데이터 분석 유효성 검증: 분석 알고리즘 설계, 시범 과제(파일럿) 수행으로 효과 확인\n3. **데이터 분석 확산 및 고도화**: 검증된 분석을 업무 시스템에 적용하고 전사로 넓힘\n\n**틀린 선지**\n- 유효성 검증: 두 번째 단계입니다.\n- 체계 도입: 첫 번째 단계입니다.\n- 분석 과제 발굴: 첫 단계(체계 도입)에서 하는 일입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "분석로드맵"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "adsp-master-plan-0005",
+    "certId": "adsp",
+    "subjectId": "analysis-planning",
+    "chapterId": "master-plan",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "데이터 분석 거버넌스 체계의 구성 요소에 해당하지 않는 것은?",
+    "choices": [
+      "데이터(Data)",
+      "프로세스(Process)",
+      "마케팅 채널(Marketing Channel)",
+      "조직(Organization)"
+    ],
+    "answer": 3,
+    "oneLineConcept": "분석 거버넌스 5요소: 조직·프로세스·시스템·데이터·인력",
+    "explanation": "데이터 분석 거버넌스 체계는 다음 다섯 가지로 구성됩니다.\n\n- 조직(Organization): 분석 기획·관리·추진 조직\n- 프로세스(Process): 과제 기획·운영 프로세스\n- 시스템(System): 분석 관련 IT 시스템·프로그램\n- 데이터(Data): 데이터 거버넌스\n- 분석 교육·변화 관리(Human Resource): 인력 육성\n\n'마케팅 채널'은 구성 요소가 아닙니다.\n\n**틀린 선지**\n- 조직: 구성 요소입니다.\n- 프로세스: 구성 요소입니다.\n- 데이터: 구성 요소입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "분석거버넌스"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "adsp-master-plan-0006",
+    "certId": "adsp",
+    "subjectId": "analysis-planning",
+    "chapterId": "master-plan",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "분석 성숙도 모델에서 '활용' 단계 바로 다음에 오는 단계는?",
+    "choices": [
+      "도입",
+      "확산",
+      "정착",
+      "최적화"
+    ],
+    "answer": 2,
+    "oneLineConcept": "분석 성숙도: 도입 → 활용 → 확산 → 최적화",
+    "explanation": "분석 성숙도는 4단계로 나눕니다.\n\n1. 도입: 분석을 시작해 환경과 시스템을 갖춤\n2. 활용: 분석 결과를 실제 업무에 적용\n3. **확산**: 전사 차원에서 분석을 관리하고 공유\n4. 최적화: 분석으로 혁신과 성과 향상에 기여\n\n**틀린 선지**\n- 최적화: 확산 다음, 마지막 단계입니다.\n- 도입: 첫 단계입니다.\n- 정착: 성숙도 단계 이름이 아니라, 준비도·성숙도 사분면 분석의 유형 이름(정착형)입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "분석성숙도"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "adsp-master-plan-0007",
+    "certId": "adsp",
+    "subjectId": "analysis-planning",
+    "chapterId": "master-plan",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "분석 준비도와 분석 성숙도로 기업을 네 유형으로 나눌 때, 분석 준비도는 높지만 분석 성숙도는 낮은 기업은?",
+    "choices": [
+      "준비형",
+      "정착형",
+      "도입형",
+      "확산형"
+    ],
+    "answer": 3,
+    "oneLineConcept": "준비도↑성숙도↓=도입형, 준비도↓성숙도↑=정착형",
+    "explanation": "준비도(Readiness)와 성숙도(Maturity)를 두 축으로 나눈 네 유형은 다음과 같습니다.\n\n- 준비형: 준비도 낮음, 성숙도 낮음 → 사전 준비가 필요\n- **도입형: 준비도 높음, 성숙도 낮음** → 준비는 되어 있어 바로 분석을 도입할 수 있음\n- 정착형: 준비도 낮음, 성숙도 높음 → 이미 일부 활용 중이나 체계 정착이 필요\n- 확산형: 준비도 높음, 성숙도 높음 → 전사로 넓히는 단계\n\n**틀린 선지**\n- 정착형: 준비도는 낮지만 성숙도가 높은 경우입니다. 반대로 외우지 않게 주의하세요.\n- 준비형: 둘 다 낮은 경우입니다.\n- 확산형: 둘 다 높은 경우입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "분석준비도",
+      "분석성숙도",
+      "사분면분석"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "adsp-master-plan-0008",
+    "certId": "adsp",
+    "subjectId": "analysis-planning",
+    "chapterId": "master-plan",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "분석 전문 인력을 현업 부서에 직접 배치해 업무를 수행하게 함으로써, 분석 결과를 빠르게 실무에 적용하고 전사적으로 좋은 사례를 공유할 수 있는 분석 조직 구조는?",
+    "choices": [
+      "집중 구조",
+      "분산 구조",
+      "외부 위탁 구조",
+      "기능 구조"
+    ],
+    "answer": 2,
+    "oneLineConcept": "분석 조직: 집중형·기능형·분산형",
+    "explanation": "분석 조직 구조는 세 가지입니다.\n\n- 집중 구조: 별도 분석 전담 조직이 전사 분석 업무를 맡음. 현업 부서와 업무가 겹칠(이원화) 수 있음\n- 기능 구조: 각 현업 부서가 직접 분석. 전사적 관점의 분석이 어려움\n- **분산 구조**: 분석 조직 인력을 현업 부서에 배치. 신속한 실무 적용, 베스트 프랙티스 공유 가능, 부서 분석 업무와 역할 분담이 명확해야 함\n\n**틀린 선지**\n- 집중 구조: 전담 조직이 한곳에 모여 일하는 구조입니다.\n- 기능 구조: 별도 분석 조직 없이 각 부서가 자체적으로 분석하는 구조입니다.\n- 외부 위탁 구조: 교재의 세 가지 분석 조직 구조에 들어가지 않습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "분석조직"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "adsp-master-plan-0009",
+    "certId": "adsp",
+    "subjectId": "analysis-planning",
+    "chapterId": "master-plan",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "분석 준비도(Readiness) 진단 영역 가운데 '분석 문화' 영역의 진단 항목으로 알맞은 것은?",
+    "choices": [
+      "사실에 근거한 의사결정, 관리자의 데이터 중시, 경영진의 직관보다 데이터 활용",
+      "운영 시스템 데이터 통합, EAI·ETL 등 데이터 유통 체계",
+      "업무별 적합한 분석 기법 사용, 분석 기법 라이브러리",
+      "분석 전문가 직무 존재, 분석 전문가 교육 훈련 프로그램"
+    ],
+    "answer": 1,
+    "oneLineConcept": "준비도 6영역: 업무파악·인력조직·분석기법·분석데이터·분석문화·IT인프라",
+    "explanation": "분석 준비도는 여섯 영역으로 진단합니다.\n\n- 분석 업무 파악\n- 인력 및 조직: 분석 전문가 직무, 교육 훈련 프로그램 등\n- 분석 기법: 업무별 적합한 기법 사용, 기법 라이브러리 등\n- 분석 데이터: 데이터 충분성·신뢰성·적시성 등\n- **분석 문화**: 사실에 근거한 의사결정, 관리자의 데이터 중시, 회의 등에서 데이터 활용, 직관보다 데이터 활용\n- IT 인프라: 운영 시스템 데이터 통합, EAI·ETL 등 유통 체계, 분석 환경\n\n**틀린 선지**\n- 데이터 통합·EAI·ETL: IT 인프라 영역입니다.\n- 분석 전문가 직무·교육 프로그램: 인력 및 조직 영역입니다.\n- 분석 기법 사용·라이브러리: 분석 기법 영역입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "분석준비도",
+      "분석문화"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "adsp-master-plan-0010",
+    "certId": "adsp",
+    "subjectId": "analysis-planning",
+    "chapterId": "master-plan",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "데이터 거버넌스 체계 가운데 데이터 표준 용어 설정, 명명 규칙 수립, 메타데이터 구축, 데이터 사전 구축 등의 업무를 하는 것은?",
+    "choices": [
+      "데이터 저장소 관리",
+      "표준화 활동",
+      "데이터 관리 체계",
+      "데이터 표준화"
+    ],
+    "answer": 4,
+    "oneLineConcept": "데이터 거버넌스: 표준화·관리 체계·저장소 관리·표준화 활동",
+    "explanation": "데이터 거버넌스 체계는 네 가지로 이루어집니다.\n\n- **데이터 표준화**: 표준 용어 설정, 명명 규칙, 메타데이터 구축, 데이터 사전 구축\n- 데이터 관리 체계: 메타데이터와 데이터 사전의 관리 원칙 수립, 항목별 관리 책임자 지정\n- 데이터 저장소 관리(Repository): 메타데이터·표준 데이터를 관리하는 전사 저장소 구성\n- 표준화 활동: 표준 준수 여부 점검(모니터링), 교육, 개선\n\n**틀린 선지**\n- 데이터 관리 체계: 관리 원칙과 책임자를 정하는 것입니다.\n- 데이터 저장소 관리: 표준 데이터를 담는 저장소를 구성·관리하는 것입니다.\n- 표준화 활동: 정해진 표준을 잘 지키는지 점검·개선하는 것입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "데이터거버넌스",
+      "데이터표준화"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  }
+]

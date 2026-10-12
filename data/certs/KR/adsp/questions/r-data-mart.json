@@ -1,0 +1,464 @@
+[
+  {
+    "id": "adsp-r-data-mart-0001",
+    "certId": "adsp",
+    "subjectId": "data-analysis",
+    "chapterId": "r-data-mart",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "R에서 다음 코드를 실행했을 때 출력되는 결과는?\n\nx <- c(1, \"a\", TRUE)\nclass(x)",
+    "choices": [
+      "\"logical\"",
+      "\"character\"",
+      "\"numeric\"",
+      "\"list\""
+    ],
+    "answer": 2,
+    "oneLineConcept": "벡터는 한 가지 자료형만 — 섞이면 문자형으로 바뀜",
+    "explanation": "R의 벡터(c 함수로 만든 자료)에는 **한 가지 자료형만** 들어갈 수 있습니다. 서로 다른 자료형을 섞으면 더 넓은 쪽으로 자동 변환됩니다.\n\n- 변환 순서: 논리형(logical) → 숫자형(numeric) → 문자형(character)\n- 문자 \"a\"가 들어 있으므로 1과 TRUE도 문자 \"1\", \"TRUE\"로 바뀝니다.\n- 따라서 class(x)의 결과는 \"character\"입니다.\n\n**틀린 선지**\n- \"numeric\": 숫자만 있을 때의 결과입니다. 문자 \"a\"가 있으면 문자형이 됩니다.\n- \"logical\": TRUE/FALSE만 있을 때의 결과입니다.\n- \"list\": 여러 자료형을 그대로 담으려면 c()가 아니라 list()를 써야 합니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "R기초",
+      "벡터",
+      "자료형"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "adsp-r-data-mart-0002",
+    "certId": "adsp",
+    "subjectId": "data-analysis",
+    "chapterId": "r-data-mart",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "R에서 다음 코드를 실행했을 때 출력되는 결과는?\n\nx <- c(10, 20, 30, 40, 50)\nx[-2]",
+    "choices": [
+      "10 30 40 50",
+      "20",
+      "10 20 30 40",
+      "40"
+    ],
+    "answer": 1,
+    "oneLineConcept": "R 인덱스 앞의 마이너스(-)는 그 위치를 뺀다는 뜻",
+    "explanation": "R에서 대괄호 안에 **음수 번호**를 쓰면 그 위치의 원소를 **빼고** 나머지를 보여 줍니다.\n\n1. x는 10, 20, 30, 40, 50 (위치 1~5)\n2. x[-2]는 2번째 원소(20)를 뺀 나머지\n3. 결과: 10 30 40 50\n\n참고로 R의 위치 번호는 0이 아니라 1부터 시작합니다.\n\n**틀린 선지**\n- 40: 파이썬처럼 '뒤에서 두 번째'로 착각한 결과입니다. R에서는 음수가 '제외'를 뜻합니다.\n- 20: x[2]의 결과입니다.\n- 10 20 30 40: 마지막 원소를 뺀 결과(x[-5])입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "R기초",
+      "인덱싱"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "adsp-r-data-mart-0003",
+    "certId": "adsp",
+    "subjectId": "data-analysis",
+    "chapterId": "r-data-mart",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "R에서 다음 코드를 실행했을 때 출력되는 결과는?\n\nm <- matrix(1:6, nrow = 2)\nm[1, 3]",
+    "choices": [
+      "6",
+      "3",
+      "2",
+      "5"
+    ],
+    "answer": 4,
+    "oneLineConcept": "matrix()는 기본적으로 열(세로) 방향으로 채움",
+    "explanation": "matrix() 함수는 따로 정하지 않으면(byrow = FALSE) 숫자를 **열 방향(위에서 아래로)**으로 채웁니다.\n\n1. 1:6을 2행으로 열 방향으로 채우면\n   - 1열: 1, 2\n   - 2열: 3, 4\n   - 3열: 5, 6\n2. m[1, 3]은 1행 3열의 값 → **5**\n\n검산: 2행 3열(m[2, 3])은 6입니다.\n\n**틀린 선지**\n- 3: byrow = TRUE로 행 방향(1행: 1 2 3)으로 채웠을 때의 1행 3열 값입니다.\n- 6: 2행 3열의 값입니다.\n- 2: 2행 1열의 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "R기초",
+      "행렬"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "adsp-r-data-mart-0004",
+    "certId": "adsp",
+    "subjectId": "data-analysis",
+    "chapterId": "r-data-mart",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "R에서 다음 코드를 실행했을 때 출력되는 결과는?\n\nm <- matrix(1:6, nrow = 2)\napply(m, 1, sum)",
+    "choices": [
+      "6 15",
+      "21",
+      "9 12",
+      "3 7 11"
+    ],
+    "answer": 3,
+    "oneLineConcept": "apply(X, 1, 함수)=행별, apply(X, 2, 함수)=열별",
+    "explanation": "apply(행렬, MARGIN, 함수)에서 MARGIN이 **1이면 행(가로)별**, 2이면 열(세로)별로 함수를 적용합니다.\n\n1. 행렬은 열 방향으로 채워져\n   - 1행: 1, 3, 5\n   - 2행: 2, 4, 6\n2. 행별 합계\n   - 1행: 1 + 3 + 5 = 9\n   - 2행: 2 + 4 + 6 = 12\n3. 결과: 9 12\n\n검산: 9 + 12 = 21 = 1부터 6까지의 합\n\n**틀린 선지**\n- 3 7 11: 열별 합계(apply(m, 2, sum))입니다.\n- 6 15: 행 방향(byrow = TRUE)으로 채웠다고 착각했을 때의 행별 합계입니다.\n- 21: 전체 합계(sum(m))입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "R기초",
+      "apply"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "adsp-r-data-mart-0005",
+    "certId": "adsp",
+    "subjectId": "data-analysis",
+    "chapterId": "r-data-mart",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "R에서 rep(1:3, each = 2)를 실행했을 때 출력되는 결과는?",
+    "choices": [
+      "1 1 2 2 3 3",
+      "2 2 2",
+      "1 2 3",
+      "1 2 3 1 2 3"
+    ],
+    "answer": 1,
+    "oneLineConcept": "rep(each=) 원소별 반복, rep(times=) 전체 반복",
+    "explanation": "rep() 함수는 값을 반복합니다.\n\n- each = 2: **원소 하나하나를 두 번씩** 반복 → 1 1 2 2 3 3\n- times = 2: 전체 묶음을 두 번 반복 → 1 2 3 1 2 3\n\n**틀린 선지**\n- 1 2 3 1 2 3: rep(1:3, times = 2)의 결과입니다.\n- 1 2 3: 반복하지 않은 원래 값입니다.\n- 2 2 2: rep(2, 3)처럼 2를 세 번 반복한 결과입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "R기초",
+      "rep"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "adsp-r-data-mart-0006",
+    "certId": "adsp",
+    "subjectId": "data-analysis",
+    "chapterId": "r-data-mart",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "R에서 다음 코드를 실행했을 때 출력되는 결과는?\n\nx <- c(2, 4, NA, 6)\nmean(x, na.rm = TRUE)",
+    "choices": [
+      "0",
+      "3",
+      "4",
+      "NA"
+    ],
+    "answer": 3,
+    "oneLineConcept": "na.rm = TRUE면 결측값(NA)을 빼고 계산",
+    "explanation": "NA는 R에서 **결측값**(값이 비어 있음)을 뜻합니다.\n\n1. na.rm = TRUE는 'NA를 빼고 계산하라'는 옵션\n2. NA를 빼면 2, 4, 6 → 3개\n3. 평균 = (2 + 4 + 6) ÷ 3 = 12 ÷ 3 = **4**\n\n**틀린 선지**\n- NA: na.rm 옵션 없이 mean(x)만 실행했을 때의 결과입니다.\n- 3: 합계 12를 NA까지 포함한 4개로 나눈 잘못된 계산입니다.\n- 0: NA를 0으로 바꾼다고 해도 평균은 0이 아닙니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "결측값",
+      "NA",
+      "na.rm"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "adsp-r-data-mart-0007",
+    "certId": "adsp",
+    "subjectId": "data-analysis",
+    "chapterId": "r-data-mart",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "데이터 마트를 만들 때 '주 구매 매장', '근무 시간대 구매 여부'처럼 분석가가 특정 조건이나 함수로 새 의미를 부여해 만든 변수로, 주관적일 수 있어 논리적 타당성을 갖춰야 하는 변수는?",
+    "choices": [
+      "요약변수",
+      "더미변수",
+      "목표변수",
+      "파생변수"
+    ],
+    "answer": 4,
+    "oneLineConcept": "요약변수=종합·집계(재활용 높음), 파생변수=의미 부여(주관적)",
+    "explanation": "데이터 마트의 변수는 두 가지를 구분합니다.\n\n- 요약변수: 수집한 정보를 분석 목적에 맞게 **종합·집계**한 변수. 예) 기간별 구매 금액·횟수, 상품별 구매 순위. 많은 모델에 공통으로 쓸 수 있어 재활용성이 높음\n- **파생변수**: 분석가가 **특정 조건이나 함수로 의미를 부여**한 변수. 예) 주 구매 매장, 근무 시간 구매자, 주 활동 지역. 주관적일 수 있으므로 논리적 타당성이 필요함\n\n**틀린 선지**\n- 요약변수: 단순 집계 변수로, 분석가의 해석이 덜 들어갑니다.\n- 목표변수: 모델이 맞히려는 결과 변수(종속변수)입니다.\n- 더미변수: 범주형 값을 0과 1로 바꾼 변수입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "데이터마트",
+      "파생변수"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "adsp-r-data-mart-0008",
+    "certId": "adsp",
+    "subjectId": "data-analysis",
+    "chapterId": "r-data-mart",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "R에서 데이터를 melt() 함수로 '식별자 – 변수 – 값' 형태로 녹인 뒤, cast() 함수로 원하는 모양의 표로 다시 짜는 데 쓰는 패키지는?",
+    "choices": [
+      "plyr",
+      "reshape",
+      "data.table",
+      "sqldf"
+    ],
+    "answer": 2,
+    "oneLineConcept": "melt·cast = reshape 패키지",
+    "explanation": "**reshape** 패키지는 데이터 모양을 바꾸는 데 씁니다.\n\n1. melt(): 넓은 표를 '식별자(id) – 변수 – 값'의 긴 형태로 녹임\n2. cast(): 녹인 데이터를 원하는 행·열 구조로 다시 짬 (요약 함수도 적용 가능)\n\n**틀린 선지**\n- sqldf: R에서 SQL 문장으로 데이터를 다루는 패키지입니다.\n- plyr: 데이터를 나누고(split) 함수를 적용한 뒤(apply) 다시 합치는(combine) 패키지입니다.\n- data.table: 키(key)를 이용해 큰 데이터를 빠르게 검색·처리하는 패키지입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "데이터마트",
+      "reshape"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "adsp-r-data-mart-0009",
+    "certId": "adsp",
+    "subjectId": "data-analysis",
+    "chapterId": "r-data-mart",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "데이터 프레임 df에 대해 sqldf(\"select * from df where age >= 30\")와 같은 행을 고르는 R 명령은?",
+    "choices": [
+      "df[df$age >= 30, \"age\"]",
+      "df[, df$age >= 30]",
+      "subset(df, age > 30)",
+      "subset(df, age >= 30)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "sqldf: R에서 SQL 사용, where 조건 = subset 조건",
+    "explanation": "sqldf는 R 데이터 프레임에 SQL 문장을 쓸 수 있게 해 주는 패키지입니다.\n\n- select * : 모든 열을 가져옴\n- where age >= 30 : age가 30 **이상**인 행만 고름\n- 같은 일을 R 기본 함수로 하면 subset(df, age >= 30) 또는 df[df$age >= 30, ] 입니다.\n\n**틀린 선지**\n- subset(df, age > 30): 30 '초과'라서 age가 정확히 30인 행이 빠집니다.\n- df[df$age >= 30, \"age\"]: 행은 맞지만 age 열 하나만 가져옵니다. select * 는 모든 열입니다.\n- df[, df$age >= 30]: 조건을 행이 아니라 열 자리에 넣어 잘못된 결과가 나옵니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "sqldf",
+      "subset"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "adsp-r-data-mart-0010",
+    "certId": "adsp",
+    "subjectId": "data-analysis",
+    "chapterId": "r-data-mart",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "결측값 처리 방법 가운데 '다중 대치법(Multiple Imputation)'에 대한 설명으로 옳은 것은?",
+    "choices": [
+      "결측값을 여러 번 대치해 완전한 데이터셋을 여러 개 만들고, 각각 분석한 뒤 결과를 결합한다",
+      "결측값을 그 변수의 평균값 하나로 채운 뒤 분석한다",
+      "결측값이 하나라도 있는 행을 모두 지우고 남은 자료로 분석한다",
+      "비슷한 특성을 가진 다른 응답자의 값으로 결측값을 한 번 채운다"
+    ],
+    "answer": 1,
+    "oneLineConcept": "다중 대치: 대치 → 분석 → 결합 3단계",
+    "explanation": "**다중 대치법**은 결측값을 한 번만 채우지 않고 여러 번 채워 불확실성까지 반영하는 방법입니다.\n\n1. 대치(Imputation): 결측값을 여러 번 추정해 완전한 데이터셋을 m개 만듦\n2. 분석(Analysis): 각 데이터셋을 따로 분석\n3. 결합(Combination): 여러 분석 결과를 하나로 합침\n\nR에서는 Amelia 같은 패키지로 할 수 있습니다.\n\n**틀린 선지**\n- 평균값 하나로 채움: 평균 대치법입니다. 쉽지만 분산(퍼짐)이 작게 추정되는 문제가 있습니다.\n- 결측 행을 모두 지움: 완전 분석법입니다. 자료가 많이 줄어 효율이 떨어질 수 있습니다.\n- 비슷한 응답자 값으로 한 번 채움: 단순 확률 대치법(핫덱 대치 등)입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "결측값",
+      "다중대치법"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "adsp-r-data-mart-0011",
+    "certId": "adsp",
+    "subjectId": "data-analysis",
+    "chapterId": "r-data-mart",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "어떤 변수의 1사분위수(Q1)가 20, 3사분위수(Q3)가 40이다. 사분위수 범위(IQR)를 이용해 Q1 − 1.5×IQR보다 작거나 Q3 + 1.5×IQR보다 큰 값을 이상값으로 판정할 때, 이상값에 해당하는 것은?",
+    "choices": [
+      "−5",
+      "55",
+      "65",
+      "72"
+    ],
+    "answer": 4,
+    "oneLineConcept": "이상값 기준: Q1−1.5IQR 미만, Q3+1.5IQR 초과",
+    "explanation": "1. IQR = Q3 − Q1 = 40 − 20 = 20\n2. 1.5 × IQR = 1.5 × 20 = 30\n3. 아래 기준 = Q1 − 30 = 20 − 30 = −10\n4. 위 기준 = Q3 + 30 = 40 + 30 = 70\n5. −10 이상 70 이하는 정상 범위 → 72는 70보다 크므로 **이상값**\n\n검산: 72 − 40 = 32 로, 30보다 큽니다.\n\n**틀린 선지**\n- 65: 70 이하라서 정상 범위입니다.\n- −5: −10 이상이라서 정상 범위입니다.\n- 55: 70 이하라서 정상 범위입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "이상값",
+      "IQR",
+      "사분위수"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "adsp-r-data-mart-0012",
+    "certId": "adsp",
+    "subjectId": "data-analysis",
+    "chapterId": "r-data-mart",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "R에서 다음 결과를 얻었다. 이에 대한 설명으로 옳지 않은 것은?\n\nx <- c(1, 2, 3, 3, 4, 6, 7, 7, 9, 20)\nsummary(x)\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n    1.0     3.0     5.0     6.2     7.0    20.0",
+    "choices": [
+      "평균이 중앙값보다 커서 오른쪽으로 꼬리가 긴 분포로 볼 수 있다",
+      "상자그림 기준(Q3 + 1.5×IQR 초과)으로 최댓값 20은 이상값이다",
+      "중앙값은 평균과 같은 6.2이다",
+      "사분위수 범위(IQR)는 4이다"
+    ],
+    "answer": 3,
+    "oneLineConcept": "summary(): 최솟값·Q1·중앙값·평균·Q3·최댓값",
+    "explanation": "summary() 결과를 하나씩 읽습니다.\n\n1. IQR = 3rd Qu. − 1st Qu. = 7.0 − 3.0 = 4\n2. 위 기준 = 7.0 + 1.5 × 4 = 13 → 최댓값 20은 13보다 커서 이상값\n3. 평균 6.2 > 중앙값 5.0 → 큰 값(20)이 평균을 끌어올린 오른쪽 꼬리 분포\n4. 6.2는 평균(Mean)이고 중앙값(Median)은 **5.0**입니다. 따라서 '중앙값은 평균과 같은 6.2'는 옳지 않습니다.\n\n검산: 값을 크기순으로 놓으면 가운데 두 값은 4와 6이므로 중앙값 = (4 + 6) ÷ 2 = 5.0입니다.\n\n**틀린 선지**\n- IQR은 4: 옳은 설명입니다.\n- 최댓값 20은 이상값: 옳은 설명입니다.\n- 오른쪽 꼬리 분포: 옳은 설명입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "summary",
+      "이상값",
+      "R출력"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "adsp-r-data-mart-0013",
+    "certId": "adsp",
+    "subjectId": "data-analysis",
+    "chapterId": "r-data-mart",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "이상값을 지우지 않고, 정해 둔 상한값보다 큰 값은 상한값으로, 하한값보다 작은 값은 하한값으로 바꿔 처리하는 방법은?",
+    "choices": [
+      "절단(Trimming)",
+      "조정(Winsorizing)",
+      "평균 대치",
+      "정규화(Normalization)"
+    ],
+    "answer": 2,
+    "oneLineConcept": "이상값 처리: 절단=삭제, 조정=경계값으로 바꿈",
+    "explanation": "이상값 처리 방법은 크게 두 가지입니다.\n\n- 절단(Trimming): 이상값이 있는 자료를 **삭제**함\n- **조정(Winsorizing)**: 이상값을 상한·하한 **경계값으로 바꿈** (자료 수는 그대로)\n\n**틀린 선지**\n- 절단: 이상값을 지우는 방법입니다.\n- 평균 대치: 주로 결측값을 평균으로 채우는 방법입니다.\n- 정규화: 변수 값의 범위를 0~1 등으로 맞추는 변환입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "이상값",
+      "조정"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+]

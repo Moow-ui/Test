@@ -1,0 +1,475 @@
+[
+  {
+    "id": "adsp-analysis-planning-basics-0001",
+    "certId": "adsp",
+    "subjectId": "analysis-planning",
+    "chapterId": "analysis-planning-basics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "분석 주제 유형에서 '분석할 대상(무엇을)'은 알고 있지만 '분석 방법(어떻게)'을 모를 때 쓰는 접근 방식은?",
+    "choices": [
+      "최적화(Optimization)",
+      "발견(Discovery)",
+      "통찰(Insight)",
+      "솔루션(Solution)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "대상 O·방법 X = 솔루션",
+    "explanation": "분석 주제 유형은 대상과 방법을 아는지(Known) 모르는지(Un-Known)로 나눕니다.\n\n- 대상 앎 + 방법 앎 → 최적화(Optimization)\n- 대상 앎 + 방법 모름 → **솔루션(Solution)**: 해결 방법을 찾아냄\n- 대상 모름 + 방법 앎 → 통찰(Insight)\n- 대상 모름 + 방법 모름 → 발견(Discovery)\n\n**틀린 선지**\n- 최적화: 대상과 방법을 모두 알 때 개선하는 방식입니다.\n- 통찰: 대상은 모르고 방법만 알 때 쓰는 방식입니다.\n- 발견: 대상과 방법을 모두 모를 때 쓰는 방식입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "분석주제유형",
+      "솔루션"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "adsp-analysis-planning-basics-0002",
+    "certId": "adsp",
+    "subjectId": "analysis-planning",
+    "chapterId": "analysis-planning-basics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "분석 대상도, 분석 방법도 모두 정해지지 않은 상태에서 새로운 분석 주제 자체를 찾아 나서는 분석 주제 유형은?",
+    "choices": [
+      "발견(Discovery)",
+      "솔루션(Solution)",
+      "통찰(Insight)",
+      "최적화(Optimization)"
+    ],
+    "answer": 1,
+    "oneLineConcept": "대상 X·방법 X = 발견",
+    "explanation": "분석 대상과 방법이 모두 정해지지 않았다면, 먼저 무엇을 분석할지부터 찾아야 합니다. 이것이 **발견(Discovery)** 접근입니다.\n\n- 최적화: 대상 앎·방법 앎\n- 솔루션: 대상 앎·방법 모름\n- 통찰: 대상 모름·방법 앎\n- 발견: 대상 모름·방법 모름\n\n**틀린 선지**\n- 통찰: 분석 방법은 알지만 대상이 명확하지 않을 때입니다.\n- 솔루션: 대상은 알지만 방법을 모를 때입니다.\n- 최적화: 대상과 방법을 모두 알 때입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "분석주제유형",
+      "발견"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "adsp-analysis-planning-basics-0003",
+    "certId": "adsp",
+    "subjectId": "analysis-planning",
+    "chapterId": "analysis-planning-basics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "분석 기획에서 과제를 빠르게 해결해 성과를 보여 주는 단기적 접근(Quick-Win)의 특징으로 가장 알맞은 것은?",
+    "choices": [
+      "Problem Definition (문제 자체를 정의한다)",
+      "Speed & Test (빠르게 만들고 시험해 본다)",
+      "Long Term View (긴 안목으로 본다)",
+      "Accuracy & Deploy (정확도를 높여 전사에 적용한다)"
+    ],
+    "answer": 2,
+    "oneLineConcept": "과제 단위(단기): Speed&Test, 마스터 플랜(중장기): Accuracy&Deploy",
+    "explanation": "분석 기획은 목표 시점에 따라 두 가지 접근으로 나뉩니다.\n\n| 구분 | 과제 중심(단기) | 마스터 플랜(중장기) |\n|---|---|---|\n| 1차 목표 | Speed & Test | Accuracy & Deploy |\n| 과제 유형 | Quick-Win | Long Term View |\n| 접근 방식 | Problem Solving | Problem Definition |\n\n단기 접근은 당장 풀어야 할 과제를 빨리 해결하고 시험해 보는 데 초점을 둡니다.\n\n**틀린 선지**\n- Accuracy & Deploy: 중장기 마스터 플랜 접근의 목표입니다.\n- Problem Definition: 중장기 접근의 방식입니다. 단기는 Problem Solving입니다.\n- Long Term View: 중장기 접근의 과제 유형입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "분석기획",
+      "QuickWin"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "adsp-analysis-planning-basics-0004",
+    "certId": "adsp",
+    "subjectId": "analysis-planning",
+    "chapterId": "analysis-planning-basics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "KDD(데이터베이스에서의 지식 발견) 분석 절차를 순서대로 나열한 것은?",
+    "choices": [
+      "데이터셋 선택 → 데이터 전처리 → 데이터 마이닝 → 데이터 변환 → 결과 평가",
+      "데이터셋 선택 → 데이터 변환 → 데이터 전처리 → 데이터 마이닝 → 결과 평가",
+      "데이터셋 선택 → 데이터 전처리 → 데이터 변환 → 데이터 마이닝 → 결과 평가",
+      "데이터 전처리 → 데이터셋 선택 → 데이터 변환 → 데이터 마이닝 → 결과 평가"
+    ],
+    "answer": 3,
+    "oneLineConcept": "KDD: 선택 → 전처리 → 변환 → 마이닝 → 해석·평가",
+    "explanation": "KDD 분석 절차는 5단계입니다.\n\n1. 데이터셋 선택(Selection): 분석 목적에 맞는 데이터를 고름\n2. 데이터 전처리(Preprocessing): 잡음·이상값·결측값을 찾아 정리\n3. 데이터 변환(Transformation): 변수 선택, 차원 축소 등으로 분석하기 좋게 바꿈\n4. 데이터 마이닝(Data Mining): 알고리즘으로 패턴을 찾음\n5. 결과 평가(Interpretation/Evaluation): 결과를 해석하고 평가\n\n'먼저 정리(전처리)하고, 그다음 모양을 바꾼다(변환)'로 기억하세요.\n\n**틀린 선지**\n- 변환이 전처리보다 앞: 전처리로 데이터를 정리한 뒤에 변환합니다.\n- 전처리가 선택보다 앞: 데이터를 먼저 골라야 전처리를 할 수 있습니다.\n- 마이닝 뒤에 변환: 변환은 마이닝 전에 합니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "KDD",
+      "분석방법론"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "adsp-analysis-planning-basics-0005",
+    "certId": "adsp",
+    "subjectId": "analysis-planning",
+    "chapterId": "analysis-planning-basics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "CRISP-DM 분석 방법론의 6단계 가운데 '모델링' 바로 앞 단계는?",
+    "choices": [
+      "업무 이해",
+      "평가",
+      "데이터 준비",
+      "데이터 이해"
+    ],
+    "answer": 3,
+    "oneLineConcept": "CRISP-DM: 업무이해→데이터이해→데이터준비→모델링→평가→전개",
+    "explanation": "CRISP-DM은 6단계로 이루어집니다.\n\n1. 업무 이해(Business Understanding)\n2. 데이터 이해(Data Understanding)\n3. **데이터 준비(Data Preparation)**\n4. 모델링(Modeling)\n5. 평가(Evaluation)\n6. 전개(Deployment)\n\n데이터를 정제·통합해 분석용 데이터셋을 만드는 '데이터 준비'를 마친 뒤 모델링을 합니다. 단계 사이는 필요하면 앞뒤로 오갈 수 있습니다.\n\n**틀린 선지**\n- 데이터 이해: 데이터 준비보다 한 단계 앞입니다.\n- 업무 이해: 첫 번째 단계입니다.\n- 평가: 모델링 다음 단계입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "CRISP-DM"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "adsp-analysis-planning-basics-0006",
+    "certId": "adsp",
+    "subjectId": "analysis-planning",
+    "chapterId": "analysis-planning-basics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "CRISP-DM의 마지막 단계인 '전개(Deployment)'에서 하는 일로 가장 알맞은 것은?",
+    "choices": [
+      "분석 기법 선택, 모델 작성, 모델 평가",
+      "전개 계획 수립, 모니터링과 유지보수 계획 수립, 프로젝트 종료 보고서 작성",
+      "데이터 정제, 데이터 통합, 데이터 포맷팅",
+      "초기 데이터 수집, 데이터 탐색, 데이터 품질 확인"
+    ],
+    "answer": 2,
+    "oneLineConcept": "전개 단계 = 실제 적용·모니터링·종료 보고",
+    "explanation": "CRISP-DM의 각 단계에서 하는 일은 다음과 같습니다.\n\n- 데이터 이해: 초기 데이터 수집, 데이터 기술 분석, 탐색, 품질 확인\n- 데이터 준비: 데이터 선택, 정제, 통합, 포맷팅\n- 모델링: 기법 선택, 테스트 계획, 모델 작성, 모델 평가\n- 평가: 분석 결과 평가, 모델링 과정 평가, 모델 적용성 평가\n- **전개**: 전개 계획 수립, 모니터링·유지보수 계획 수립, 종료 보고서 작성, 프로젝트 리뷰\n\n**틀린 선지**\n- 기법 선택·모델 작성: 모델링 단계의 일입니다.\n- 데이터 정제·통합: 데이터 준비 단계의 일입니다.\n- 초기 데이터 수집·품질 확인: 데이터 이해 단계의 일입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "CRISP-DM",
+      "전개"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "adsp-analysis-planning-basics-0007",
+    "certId": "adsp",
+    "subjectId": "analysis-planning",
+    "chapterId": "analysis-planning-basics",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "빅데이터 분석 방법론은 단계(Phase) – 태스크(Task) – 스텝(Step)의 3계층으로 구성된다. 이 가운데 입력 자료, 처리 및 도구, 출력 자료로 이루어진 가장 작은 단위 프로세스는?",
+    "choices": [
+      "스텝(Step)",
+      "태스크(Task)",
+      "프로세스 그룹(Process Group)",
+      "단계(Phase)"
+    ],
+    "answer": 1,
+    "oneLineConcept": "단계 → 태스크 → 스텝(입력·처리·출력 단위)",
+    "explanation": "빅데이터 분석 방법론의 3계층은 다음과 같습니다.\n\n- 단계(Phase): 가장 큰 단위. 단계마다 기준선(Baseline)으로 설정해 버전 관리\n- 태스크(Task): 단계를 이루는 단위 활동. 물리적·논리적 단위로 품질 검토 대상\n- **스텝(Step)**: 가장 작은 단위. 입력 자료(Input), 처리 및 도구(Process & Tool), 출력 자료(Output)로 구성된 단위 프로세스(WBS의 워크 패키지)\n\n**틀린 선지**\n- 태스크: 여러 스텝을 묶은 중간 단위 활동입니다.\n- 단계: 가장 큰 단위입니다.\n- 프로세스 그룹: 빅데이터 분석 방법론의 3계층에 들어가지 않습니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "빅데이터분석방법론",
+      "계층"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "adsp-analysis-planning-basics-0008",
+    "certId": "adsp",
+    "subjectId": "analysis-planning",
+    "chapterId": "analysis-planning-basics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "분석 프로젝트의 위험에 대응하는 방법 가운데, 보험에 들거나 외부 업체에 맡기는 것처럼 위험의 영향을 다른 쪽으로 넘기는 방법은?",
+    "choices": [
+      "회피(Avoid)",
+      "완화(Mitigate)",
+      "수용(Accept)",
+      "전이(Transfer)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "위험 대응 4가지: 회피·전이·완화·수용",
+    "explanation": "프로젝트 위험 대응 방법은 네 가지입니다.\n\n- 회피(Avoid): 위험이 생기지 않도록 계획 자체를 바꿈\n- **전이(Transfer)**: 보험·외부 위탁 등으로 위험의 영향을 제3자에게 넘김\n- 완화(Mitigate): 위험이 생길 가능성이나 피해 크기를 줄임\n- 수용(Accept): 위험을 그대로 받아들이고 생기면 대응함\n\n**틀린 선지**\n- 완화: 위험의 가능성이나 영향을 줄이는 것이지, 다른 쪽에 넘기는 것이 아닙니다.\n- 회피: 위험이 생기는 원인 자체를 없애는 것입니다.\n- 수용: 위험을 그대로 받아들이는 것입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "위험대응",
+      "빅데이터분석방법론"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "adsp-analysis-planning-basics-0009",
+    "certId": "adsp",
+    "subjectId": "analysis-planning",
+    "chapterId": "analysis-planning-basics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "하향식(Top-down) 분석 과제 발굴 절차에서 '문제 정의' 바로 다음에 오는 단계는?",
+    "choices": [
+      "문제 탐색",
+      "타당성 검토",
+      "해결 방안 탐색",
+      "프로토타이핑"
+    ],
+    "answer": 3,
+    "oneLineConcept": "하향식: 문제 탐색 → 문제 정의 → 해결방안 탐색 → 타당성 검토",
+    "explanation": "하향식 접근법은 문제가 주어졌을 때 해법을 찾아가는 방식이며, 다음 순서로 진행합니다.\n\n1. 문제 탐색(Problem Discovery)\n2. 문제 정의(Problem Definition): 비즈니스 문제를 데이터 문제로 바꿈\n3. **해결 방안 탐색(Solution Search)**: 어떤 데이터·분석 기법으로 풀지 찾음\n4. 타당성 검토(Feasibility Study): 경제적 타당성, 데이터·기술적 타당성 검토\n\n**틀린 선지**\n- 타당성 검토: 해결 방안 탐색 다음, 마지막 단계입니다.\n- 문제 탐색: 문제 정의보다 앞의 첫 단계입니다.\n- 프로토타이핑: 상향식 접근에서 쓰는 방법입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "하향식접근",
+      "분석과제발굴"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "adsp-analysis-planning-basics-0010",
+    "certId": "adsp",
+    "subjectId": "analysis-planning",
+    "chapterId": "analysis-planning-basics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "문제를 미리 정의하기 어려울 때, 가지고 있는 데이터 자체를 먼저 살펴보고 비지도 학습 등을 활용해 새로운 문제나 가치를 찾아내는 분석 과제 발굴 방식은?",
+    "choices": [
+      "폭포수 모델",
+      "상향식(Bottom-up) 접근법",
+      "하향식(Top-down) 접근법",
+      "분석 마스터 플랜"
+    ],
+    "answer": 2,
+    "oneLineConcept": "문제 정의가 어려울 때 데이터에서 출발 = 상향식",
+    "explanation": "**상향식 접근법**은 문제가 무엇인지 미리 정하기 어려울 때 데이터를 먼저 들여다보며 문제를 찾는 방식입니다.\n\n- 'Why(왜)'보다 'What(무엇이 보이는가)'에서 출발\n- 목표값(정답) 없이 패턴을 찾는 비지도 학습을 많이 씀 (예: 군집분석, 연관분석)\n- 디자인 사고의 발산(Diverge) 단계와 연결됨\n\n**틀린 선지**\n- 하향식 접근법: 문제가 주어진 상태에서 해법을 찾아가는 방식입니다.\n- 폭포수 모델: 단계를 차례로 진행하는 방법론 모델입니다.\n- 분석 마스터 플랜: 중장기 분석 과제를 계획하는 것입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "상향식접근",
+      "분석과제발굴"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "adsp-analysis-planning-basics-0011",
+    "certId": "adsp",
+    "subjectId": "analysis-planning",
+    "chapterId": "analysis-planning-basics",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "분석 기회 발굴의 범위를 넓히기 위한 관점 가운데 '경쟁자 확대 관점'에서 살펴보는 영역으로 묶은 것은?",
+    "choices": [
+      "내부 역량, 파트너와 네트워크",
+      "사회, 기술, 경제, 환경, 정치",
+      "고객, 채널, 영향자",
+      "대체재, 경쟁자, 신규 진입자"
+    ],
+    "answer": 4,
+    "oneLineConcept": "경쟁자 확대 관점 = 대체재·경쟁자·신규 진입자",
+    "explanation": "분석 기회 발굴 범위를 넓히는 관점은 다음과 같습니다.\n\n- 거시적 관점: 사회·기술·경제·환경·정치(STEEP)\n- **경쟁자 확대 관점**: 대체재, 경쟁자, 신규 진입자\n- 시장 니즈 탐색 관점: 고객, 채널, 영향자\n- 역량 재해석 관점: 내부 역량, 파트너와 네트워크\n\n**틀린 선지**\n- 고객, 채널, 영향자: 시장 니즈 탐색 관점입니다.\n- 내부 역량, 파트너와 네트워크: 역량 재해석 관점입니다.\n- 사회·기술·경제·환경·정치: 거시적 관점(STEEP)입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "분석기회발굴",
+      "경쟁자확대"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "adsp-analysis-planning-basics-0012",
+    "certId": "adsp",
+    "subjectId": "analysis-planning",
+    "chapterId": "analysis-planning-basics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "하향식 접근의 문제 탐색에서 비즈니스 모델 캔버스를 단순화해 살펴보는 영역에 해당하지 않는 것은?",
+    "choices": [
+      "경쟁사",
+      "업무",
+      "규제와 감사",
+      "고객"
+    ],
+    "answer": 1,
+    "oneLineConcept": "비즈니스 모델 탐색 5영역: 업무·제품·고객·규제와 감사·지원 인프라",
+    "explanation": "비즈니스 모델 캔버스를 단순화하면 다음 다섯 영역으로 문제를 탐색합니다.\n\n- 업무(Operation)\n- 제품(Product)\n- 고객(Customer)\n- 규제와 감사(Regulation & Audit)\n- 지원 인프라(IT & Human Resource)\n\n'경쟁사'는 이 다섯 영역에 들어가지 않습니다. 경쟁사·대체재·신규 진입자는 분석 기회를 넓히는 '경쟁자 확대 관점'에서 따로 살펴봅니다.\n\n**틀린 선지**\n- 업무: 다섯 영역에 포함됩니다.\n- 고객: 다섯 영역에 포함됩니다.\n- 규제와 감사: 다섯 영역에 포함됩니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "비즈니스모델캔버스",
+      "문제탐색"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "adsp-analysis-planning-basics-0013",
+    "certId": "adsp",
+    "subjectId": "analysis-planning",
+    "chapterId": "analysis-planning-basics",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "분석 프로젝트에서 고려할 특성 가운데, 모델을 여러 번 반복 적용했을 때 결과의 편차가 작아 일관되게 나오는 정도를 뜻하는 것은?",
+    "choices": [
+      "속도(Speed)",
+      "분석 복잡도(Analytic Complexity)",
+      "정밀도(Precision)",
+      "정확도(Accuracy)"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Accuracy=실제와의 차이 작음, Precision=반복 시 편차 작음",
+    "explanation": "분석 프로젝트에서는 정확도와 정밀도를 구분합니다.\n\n- 정확도(Accuracy): 모델 결과와 실제 값의 차이가 작은 정도\n- **정밀도(Precision)**: 모델을 반복해 썼을 때 결과가 흩어지지 않고 일관된 정도\n\n두 가지는 서로 트레이드오프(하나를 높이면 다른 하나가 낮아지는 관계)가 되는 경우가 많습니다. 분석 결과를 활용하는 쪽에서는 정확도가, 안정성 측면에서는 정밀도가 중요합니다.\n\n**틀린 선지**\n- 정확도: 실제 값과 얼마나 가까운지를 뜻합니다.\n- 분석 복잡도: 모델이 얼마나 복잡한지를 뜻하며, 정확도와 해석 용이성 사이의 균형을 고려합니다.\n- 속도: 분석 결과가 언제 필요한지(실시간 등)를 뜻합니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "분석프로젝트",
+      "정밀도"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "adsp-analysis-planning-basics-0014",
+    "certId": "adsp",
+    "subjectId": "analysis-planning",
+    "chapterId": "analysis-planning-basics",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "분석 프로젝트 관리에서 참고하는 프로젝트 관리 지침(KS A ISO 21500)의 관리 영역에 해당하지 않는 것은?",
+    "choices": [
+      "조달",
+      "마케팅",
+      "이해관계자",
+      "리스크"
+    ],
+    "answer": 2,
+    "oneLineConcept": "ISO 21500 관리 영역 10가지(통합·이해관계자·범위·자원·시간·원가·리스크·품질·조달·의사소통)",
+    "explanation": "KS A ISO 21500의 프로젝트 관리 영역은 다음 10가지입니다.\n\n- 통합, 이해관계자, 범위, 자원, 시간\n- 원가, 리스크, 품질, 조달, 의사소통\n\n'마케팅'은 프로젝트 관리 영역에 들어가지 않습니다.\n\n**틀린 선지**\n- 이해관계자: 관리 영역에 포함됩니다.\n- 조달: 관리 영역에 포함됩니다. 분석 프로젝트에서는 외부 데이터 구매, 클라우드 활용 등이 해당합니다.\n- 리스크: 관리 영역에 포함됩니다.",
+    "frequency": 2,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "프로젝트관리",
+      "ISO21500"
+    ],
+    "levelLock": true
+  }
+]
