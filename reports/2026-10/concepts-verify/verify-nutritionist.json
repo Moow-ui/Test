@@ -1,0 +1,94 @@
+{
+  "cert": "nutritionist",
+  "checkedAt": "2026-10-12",
+  "by": "separate verifier AI",
+  "chapters": {
+    "macronutrients": {
+      "verdict": "PASS (re-verified; history: FAIL, PASS)",
+      "problems": [
+        "concepts[6] '에너지와 기초대사량': numeric card (4·4·9·7 kcal/g) has no \"source\" → add source, e.g. {\"org\": \"2025 한국인 영양소 섭취기준(보건복지부·한국영양학회) / Atwater 에너지 환산계수\", \"year\": 2025}. Content itself is correct."
+      ]
+    },
+    "vitamins-minerals": {
+      "verdict": "PASS",
+      "problems": []
+    },
+    "lifecycle-nutrition": {
+      "verdict": "PASS",
+      "problems": []
+    },
+    "biochemistry": {
+      "verdict": "PASS",
+      "problems": []
+    },
+    "nutrition-education": {
+      "verdict": "PASS",
+      "problems": []
+    },
+    "diet-therapy-1": {
+      "verdict": "PASS (re-verified; history: FAIL, PASS)",
+      "problems": [
+        "concepts[5] '식품교환표' source: year 2026 is wrong — the current edition is the 2023 개정 식품교환표 (대한당뇨병학회·대한영양사협회·한국영양학회 등; 1교환단위 기준 영양량은 2010판과 동일하게 유지되어 곡류군 23g·2g·100kcal, 채소군 3g·2g·20kcal 은 맞음) → change source to {\"org\": \"식품교환표 2023 개정판(대한당뇨병학회·대한영양사협회·한국영양학회 등)\", \"year\": 2023}.",
+        "Checked OK (no change needed): 대한비만학회 2022(8판) is still the latest edition; BMI 25 / 허리둘레 남 90·여 85 maintained (학회 2025 춘계학술대회에서 BMI 25 유지 재확인). 대한당뇨병학회 2025 진료지침 진단 기준(126 / 200 / 6.5% / 증상+200)과 저혈당 15~20g·15분 재측정 맞음."
+      ]
+    },
+    "diet-therapy-2": {
+      "verdict": "PASS (re-verified; history: FAIL, PASS)",
+      "problems": [
+        "concepts[0] '고혈압과 DASH 식사' source: 대한고혈압학회 '고혈압 진료지침 2026' (제64회 춘계학술대회, 2026년 공개, 4년 만의 개정)이 최신판이므로 2022는 구판 → source를 {\"org\": \"대한고혈압학회 고혈압 진료지침 2026\", \"year\": 2026}로 변경. 진단 기준 140/90mmHg 이상은 2026판에서도 유지되어 본문 수치는 그대로 두면 됨 (2026판은 이완기단독고혈압 분류 신설, 고위험군 목표혈압 130/80 미만)."
+      ]
+    },
+    "physiology": {
+      "verdict": "PASS (re-verified; history: FAIL, PASS)",
+      "problems": [
+        "concepts[0] '활동전위와 나트륨-칼륨 펌프': numeric card (Na+ 3개 밖으로 / K+ 2개 안으로) has no \"source\" → add a source, e.g. {\"org\": \"Guyton and Hall Textbook of Medical Physiology / 인체생리학 표준 교재\", \"year\": 2026}. Content itself is correct.",
+        "(minor, not a FAIL reason) concepts[2] '헤모글로빈 산소해리곡선': '(보어 효과)' is attached to the whole list (온도·2,3-BPG 포함). Strictly, the Bohr effect is the CO2/pH (H+) effect only → move it: '이산화탄소 증가·pH 저하에 의한 오른쪽 이동을 보어 효과라고 합니다.'"
+      ]
+    },
+    "food-components": {
+      "verdict": "PASS (re-verified; history: FAIL, FAIL, PASS)",
+      "problems": [
+        "concepts[1] '전분의 호화·노화·호정화': numeric card (수분 30~60%, 0~5℃, 160℃ 이상, tip의 60℃ 이상·수분 15% 이하) has no \"source\" → add a source, e.g. {\"org\": \"조리원리·식품학 표준 교재(영양사 국가시험 출제기준 식품학 및 조리원리)\", \"year\": 2026}. Figures are the standard textbook values and are correct.",
+        "Checked OK: 수분활성도 세균>효모>곰팡이, 마이야르·캐러멜화·아스코르브산 갈변 분류, 산패 촉진 요인, 맛의 대비·억제·상쇄, 열전달·전자레인지 설명.",
+        "concepts[0] 수분활성도(Aw): 정의에 수치('0에서 1 사이')가 있는데 source 가 없음 → 다른 카드와 같은 source {\"org\": \"식품학·조리원리 표준 교재 (영양사 국가시험 출제범위 식품학 및 조리원리)\", \"year\": 2026} 추가"
+      ]
+    },
+    "plant-foods": {
+      "verdict": "PASS (re-verified; history: FAIL, FAIL, PASS)",
+      "problems": [
+        "concepts[0] '멥쌀과 찹쌀' (아밀로오스 약 20%·아밀로펙틴 약 80%), concepts[4] '펙틴 젤리화' (당 60~65%), concepts[5] '향신 채소의 매운맛 성분' (tip: 약 40℃) are numeric cards without \"source\" → add a source to each, e.g. {\"org\": \"조리원리·식품학 표준 교재(영양사 국가시험 출제기준 식품학 및 조리원리)\", \"year\": 2026}. Values themselves are correct.",
+        "Checked OK: 글리아딘(점성·신장성)/글루테닌(탄성), 밀가루 용도, 클로로필·안토시아닌·안토잔틴 산/알칼리 색, 두부 응고제, 트립신 저해제, 알긴산·한천·카라기난, 만니톨, 에르고스테롤→D2.",
+        "concepts[6] 해조류와 버섯 definition: '홍조류(우뭇가사리)에는 한천과 카라기난이 많습니다' — 카라기난의 대표 원료는 진두발(Irish moss)이고 우뭇가사리는 한천 원료라, '우뭇가사리에서 얻는 것' 문항에서 카라기난을 고르게 할 수 있음 → '홍조류에는 한천(우뭇가사리)과 카라기난(진두발)이 많습니다'로 수정"
+      ]
+    },
+    "animal-foods": {
+      "verdict": "PASS (re-verified; history: FAIL, PASS)",
+      "problems": [
+        "concepts[3] '달걀의 신선도와 응고' (흰자 약 60℃, 노른자 약 65℃) and concepts[5] '우유 단백질의 응고' (카제인 약 80%, pH 4.6) are numeric cards without \"source\" → add a source, e.g. {\"org\": \"조리원리·식품학 표준 교재(영양사 국가시험 출제기준 식품학 및 조리원리)\", \"year\": 2026}. Values are correct.",
+        "Checked OK: concepts[6] '우유 살균 방법' matches 식품의 기준 및 규격(식약처 고시 제2026-55호, 2026.10.1 시행) 유가공품 공통 제조·가공기준: 저온장시간 63~65℃ 30분, 고온단시간 72~75℃ 15~20초, 초고온순간 130~150℃ 0.5~5초 (유크림류만 65~68℃/74~76℃로 따로 정함 — 우유 카드에는 해당 없음). Source label correct.",
+        "Checked OK: 사후경직·숙성, 미오글로빈 색 변화, 단백질 분해효소, TMA, 녹변(황화철), 기포성·유화성, 카제인/유청 응고."
+      ]
+    },
+    "foodservice-management": {
+      "verdict": "PASS",
+      "problems": [
+        "Checked OK: 급식 체계 4가지, 발주량 공식과 예시(50÷0.8×200=12.5kg), 경쟁입찰/수의계약, ABC 관리, 원가 구성, 손익분기점 공식과 예시(300만÷0.4=750만), 직무기술서/명세서. Number-bearing cards are formulas with worked arithmetic, not sourced facts."
+      ]
+    },
+    "food-hygiene": {
+      "verdict": "PASS",
+      "problems": [
+        "Checked OK: 노로바이러스 '중심온도 85℃에서 1분 이상' matches 식약처 노로바이러스 예방수칙 (식약처 보도 반복 확인). 「식품의 기준 및 규격」 2026.10.1 시행 개정(신설 제6. 식품접객업소·집단급식소 조리식품 기준)에는 수치 가열기준이 없고 '중심부까지 충분히 익혀야 한다'만 있어 충돌 없음.",
+        "Checked OK: HACCP 준비 5단계·7원칙 명칭과 순서, 감염형/독소형, 자연독, 기생충 중간숙주, 소독제 설명."
+      ]
+    },
+    "nutrition-laws": {
+      "verdict": "PASS",
+      "problems": [
+        "Re-fetched law.go.kr DRF on 2026-10-12 and checked against current text: 국민영양관리법(2024.7.3 시행) 제7조(기본계획 5년, 국민건강증진정책심의위원회 심의), 제15조, 제15조의2(합격 무효·3회 범위 응시 제한), 제16조(결격사유 4가지, 취소 후 1년), 제17조(업무 7가지), 제18조(면허증 대여 금지), 제19조(명칭 사용 금지), 제20조의2(최초 면허 후 3년마다 신고), 제21조(결격 1~3호는 필수 취소, 정지 중 업무·정지 3회 이상 취소 가능, 6개월 이내 정지 사유 2가지, 청문, 미신고 시 효력 정지); 같은 법 시행규칙 제18조(협회 위탁, 2년마다 6시간 이상, 대상 6곳).",
+        "식품위생법(2026.10.8 시행) 제2조제12호, 제52조(예외: 운영자 본인 영양사, 100명 미만 산업체, 조리사가 영양사 면허 — 카드의 '등' 표기로 충분), 제52조제2항 직무 5가지, 제56조(집단급식소 조리사·영양사 1년마다), 제86조, 제87조(2025.10.1 개정으로 기후에너지환경부), 제88조(144시간); 시행령 제2조(1회 50명 이상); 시행규칙 제84조(식약처장 지정 기관, 6시간), 별표(영하 18도 이하) — 모두 일치.",
+        "학교급식법 제4조·제7조·제8조·제15조, 같은 법 시행령 제8조(영양교사 직무), 국민건강증진법 제16조(질병관리청장, 보건복지부장관과 협의), 원산지표시법 시행령 제3조제5항·제4조, 식품표시광고법 시행규칙 제6조(9개 영양성분) — 모두 일치. Note: DRF 학교급식법 text is the 2027.2.20 시행 version, but the articles cited (4·7①·8·15) are unchanged in substance from the current one."
+      ]
+    }
+  }
+}

@@ -1,0 +1,777 @@
+[
+  {
+    "id": "nutritionist-food-components-0001",
+    "certId": "nutritionist",
+    "subjectId": "food-science-cooking",
+    "chapterId": "food-components",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "식품의 수분활성도(Aw)를 바르게 정의한 것은?",
+    "choices": [
+      "식품의 평형상대습도에 100을 곱한 값",
+      "순수한 물의 수증기압을 식품의 수증기압으로 나눈 값",
+      "식품 전체 무게에 대한 수분 무게의 비율",
+      "식품의 수증기압을 같은 온도에서 순수한 물의 수증기압으로 나눈 값",
+      "식품 속 결합수의 양을 자유수의 양으로 나눈 값"
+    ],
+    "answer": 4,
+    "oneLineConcept": "수분활성도 = 식품 수증기압 ÷ 순수한 물 수증기압",
+    "explanation": "수분활성도는 식품 속 물이 미생물이나 화학반응에 얼마나 자유롭게 쓰일 수 있는지를 나타내는 값입니다. 식품의 수증기압을 같은 온도의 순수한 물의 수증기압으로 나누어 구하므로 0에서 1 사이 값이 됩니다. 순수한 물은 1이고, 소금이나 설탕을 많이 넣으면 값이 낮아집니다.\n\n**틀린 선지**\n- 식품 전체 무게에 대한 수분 무게의 비율: 이것은 수분함량이며 수분활성도와 다른 개념입니다.\n- 순수한 물의 수증기압을 식품의 수증기압으로 나눈 값: 분자와 분모가 바뀌었습니다. 이렇게 계산하면 1보다 큰 값이 나옵니다.\n- 식품 속 결합수의 양을 자유수의 양으로 나눈 값: 수분활성도는 수증기압으로 구하며, 결합수와 자유수의 비율이 아닙니다.\n- 식품의 평형상대습도에 100을 곱한 값: 평형상대습도(%)를 100으로 나누어야 수분활성도가 됩니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "수분활성도",
+      "수분"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ],
+      "advanced": [
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "nutritionist-food-components-0002",
+    "certId": "nutritionist",
+    "subjectId": "food-science-cooking",
+    "chapterId": "food-components",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "일반적으로 증식하는 데 가장 높은 수분활성도가 필요한 미생물은?",
+    "choices": [
+      "효모",
+      "내건성 곰팡이",
+      "세균",
+      "내삼투압성 효모",
+      "곰팡이"
+    ],
+    "answer": 3,
+    "oneLineConcept": "필요한 수분활성도: 세균 > 효모 > 곰팡이",
+    "explanation": "미생물이 자라려면 일정 이상의 수분활성도가 필요합니다. 보통 세균은 약 0.91, 효모는 약 0.88, 곰팡이는 약 0.80 이상이 필요합니다. 그래서 잼이나 건조식품처럼 수분활성도가 낮은 식품에서는 세균보다 곰팡이가 먼저 핍니다.\n\n**틀린 선지**\n- 효모: 효모는 세균보다 낮은 수분활성도(약 0.88)에서도 증식합니다.\n- 곰팡이: 곰팡이는 약 0.80 정도의 낮은 수분활성도에서도 자랍니다.\n- 내건성 곰팡이: 마른 환경에 강한 곰팡이로, 약 0.65에서도 자랄 수 있습니다.\n- 내삼투압성 효모: 설탕이 많은 곳에서도 자라는 효모로, 약 0.60에서도 증식합니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "수분활성도",
+      "미생물"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        5
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        5
+      ]
+    }
+  },
+  {
+    "id": "nutritionist-food-components-0003",
+    "certId": "nutritionist",
+    "subjectId": "food-science-cooking",
+    "chapterId": "food-components",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "전분의 노화(굳어짐)가 가장 잘 일어나는 조건은?",
+    "choices": [
+      "수분 15% 이하, 온도 60℃ 이상",
+      "수분 80% 이상, 온도 60℃ 이상",
+      "수분 30~60%, 온도 -20℃ 이하",
+      "수분 10% 이하, 실온",
+      "수분 30~60%, 온도 0~5℃"
+    ],
+    "answer": 5,
+    "oneLineConcept": "노화 최적: 수분 30~60%, 냉장온도(0~5℃)",
+    "explanation": "호화된 전분이 식으면서 분자들이 다시 규칙적으로 모여 딱딱해지는 것을 노화라고 합니다. 수분이 30~60% 정도이고 냉장고 온도(0~5℃)일 때 가장 빨리 일어납니다. 밥이나 떡을 냉장고에 넣으면 빨리 굳는 이유가 이것입니다.\n\n**틀린 선지**\n- 수분 30~60%, 온도 -20℃ 이하: -20℃ 이하로 급속 냉동하면 물이 얼어 노화가 오히려 억제됩니다.\n- 수분 10% 이하, 실온: 수분이 15% 이하로 적으면 전분 분자가 움직이기 어려워 노화가 잘 일어나지 않습니다.\n- 수분 15% 이하, 온도 60℃ 이상: 건조하고 따뜻하게 보관하면 노화가 억제됩니다.\n- 수분 80% 이상, 온도 60℃ 이상: 수분이 많고 온도가 높으면 노화가 느립니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "전분",
+      "노화"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        5
+      ],
+      "intermediate": [
+        3,
+        4,
+        5
+      ],
+      "advanced": [
+        1,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "nutritionist-food-components-0004",
+    "certId": "nutritionist",
+    "subjectId": "food-science-cooking",
+    "chapterId": "food-components",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "아밀로펙틴에서 가지(곁사슬)가 갈라지는 부분을 이루는 결합은?",
+    "choices": [
+      "β-1,3 글리코시드 결합",
+      "α-1,6 글리코시드 결합",
+      "펩타이드 결합",
+      "β-1,4 글리코시드 결합",
+      "α-1,4 글리코시드 결합"
+    ],
+    "answer": 2,
+    "oneLineConcept": "아밀로펙틴: 직선 α-1,4 + 가지 α-1,6",
+    "explanation": "전분은 아밀로스와 아밀로펙틴으로 이루어집니다. 아밀로스는 포도당이 α-1,4 결합으로 길게 이어진 직선 모양이고, 아밀로펙틴은 여기에 α-1,6 결합으로 가지가 붙은 나뭇가지 모양입니다. 찹쌀처럼 아밀로펙틴이 많으면 찰기가 강합니다.\n\n**틀린 선지**\n- α-1,4 글리코시드 결합: 포도당이 일직선으로 이어지는 부분의 결합으로, 가지 부분이 아닙니다.\n- β-1,4 글리코시드 결합: 셀룰로오스를 이루는 결합으로, 전분에는 없습니다.\n- β-1,3 글리코시드 결합: 일부 버섯·곡류 베타글루칸에 있는 결합으로, 아밀로펙틴 가지와 관계없습니다.\n- 펩타이드 결합: 아미노산끼리 이어지는 단백질의 결합입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "전분",
+      "탄수화물"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        5
+      ],
+      "intermediate": [
+        2,
+        4,
+        5
+      ],
+      "advanced": [
+        1,
+        2,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "nutritionist-food-components-0005",
+    "certId": "nutritionist",
+    "subjectId": "food-science-cooking",
+    "chapterId": "food-components",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "전분에 물을 넣지 않고 160℃ 이상의 건열로 가열하여 물에 녹는 덱스트린이 생기는 현상은?",
+    "choices": [
+      "캐러멜화",
+      "호화",
+      "호정화",
+      "당화",
+      "노화"
+    ],
+    "answer": 3,
+    "oneLineConcept": "호정화 = 물 없이 건열 → 덱스트린 (뻥튀기·미숫가루)",
+    "explanation": "호정화는 전분을 물 없이 160℃ 이상으로 볶거나 구울 때 전분 사슬이 끊어져 덱스트린이 되는 현상입니다. 덱스트린은 물에 잘 녹고 소화가 잘됩니다. 뻥튀기, 미숫가루, 빵 껍질, 갈색 루(roux)가 예입니다.\n\n**틀린 선지**\n- 호화: 호화는 전분에 물을 넣고 가열하여 풀처럼 되는 현상입니다.\n- 캐러멜화: 캐러멜화는 당류를 높은 온도로 가열해 갈색으로 변하는 현상입니다.\n- 노화: 노화는 호화된 전분이 식으면서 다시 굳는 현상입니다.\n- 당화: 당화는 효소나 산으로 전분을 엿당·포도당 같은 당으로 분해하는 것입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "전분",
+      "호정화"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        5
+      ]
+    }
+  },
+  {
+    "id": "nutritionist-food-components-0006",
+    "certId": "nutritionist",
+    "subjectId": "food-science-cooking",
+    "chapterId": "food-components",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "유지의 자동산화(산패)를 억제하는 물질은?",
+    "choices": [
+      "자외선",
+      "구리 이온",
+      "토코페롤(비타민 E)",
+      "철 이온",
+      "리놀렌산"
+    ],
+    "answer": 3,
+    "oneLineConcept": "토코페롤은 천연 항산화제",
+    "explanation": "기름은 산소와 만나 서서히 산화되어 냄새가 나고 맛이 나빠지는데, 이를 산패라고 합니다. 토코페롤(비타민 E)은 자기가 먼저 산화되면서 기름의 산화를 막아 주는 천연 항산화제입니다. 빛, 열, 금속 이온, 불포화도가 높은 지방산은 산패를 촉진합니다.\n\n**틀린 선지**\n- 철 이온: 철 같은 금속 이온은 산화를 촉진합니다.\n- 구리 이온: 구리 이온은 산화를 강하게 촉진하는 금속입니다.\n- 자외선: 빛, 특히 자외선은 산화를 시작하게 만드는 촉진 요인입니다.\n- 리놀렌산: 이중결합이 많은 불포화지방산이라 오히려 산화되기 쉽습니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "지질",
+      "산패",
+      "항산화제"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "nutritionist-food-components-0007",
+    "certId": "nutritionist",
+    "subjectId": "food-science-cooking",
+    "chapterId": "food-components",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "유지의 불포화 정도(이중결합이 얼마나 많은지)를 나타내는 지표는?",
+    "choices": [
+      "비누화가",
+      "요오드가",
+      "아세틸가",
+      "과산화물가",
+      "산가"
+    ],
+    "answer": 2,
+    "oneLineConcept": "요오드가 높음 = 이중결합 많음 = 불포화도 높음",
+    "explanation": "요오드가는 유지 100g에 결합하는 요오드의 g 수입니다. 요오드는 이중결합에 붙기 때문에 요오드가가 높을수록 불포화지방산이 많은 유지입니다. 들기름·아마인유처럼 요오드가가 높은 기름은 산화되기 쉽습니다.\n\n**틀린 선지**\n- 비누화가: 비누화가는 유지를 이루는 지방산의 분자 크기(길이)를 알려 줍니다.\n- 산가: 산가는 유리지방산의 양으로, 유지의 품질 저하 정도를 봅니다.\n- 과산화물가: 과산화물가는 산패 초기에 생긴 과산화물의 양을 봅니다.\n- 아세틸가: 아세틸가는 유지 속 수산기(-OH)를 가진 지방산의 양을 봅니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "지질",
+      "유지 지표"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        5
+      ],
+      "advanced": [
+        1,
+        2,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "nutritionist-food-components-0008",
+    "certId": "nutritionist",
+    "subjectId": "food-science-cooking",
+    "chapterId": "food-components",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "비누화가가 높은 유지에 대한 설명으로 옳은 것은?",
+    "choices": [
+      "불포화지방산이 많다",
+      "탄소 수가 많은 고분자 지방산이 많다",
+      "유리지방산이 많아 품질이 떨어졌다",
+      "탄소 수가 적은 저분자 지방산이 많다",
+      "과산화물이 많이 생겨 산패가 진행되었다"
+    ],
+    "answer": 4,
+    "oneLineConcept": "비누화가는 지방산 분자량과 반비례",
+    "explanation": "비누화가는 유지 1g을 비누화하는 데 필요한 수산화칼륨(KOH)의 mg 수입니다. 같은 1g 안에 작은 지방산이 많을수록 더 많은 KOH가 필요하므로, 비누화가가 높으면 저분자 지방산이 많은 유지입니다. 버터나 야자유가 비누화가가 높은 편입니다.\n\n**틀린 선지**\n- 탄소 수가 많은 고분자 지방산이 많다: 반대입니다. 분자가 클수록 같은 무게당 지방산 개수가 적어 비누화가가 낮아집니다.\n- 불포화지방산이 많다: 불포화도는 요오드가로 판단합니다.\n- 유리지방산이 많아 품질이 떨어졌다: 유리지방산의 양은 산가로 판단합니다.\n- 과산화물이 많이 생겨 산패가 진행되었다: 산패 초기의 과산화물 양은 과산화물가로 판단합니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "지질",
+      "유지 지표"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "nutritionist-food-components-0009",
+    "certId": "nutritionist",
+    "subjectId": "food-science-cooking",
+    "chapterId": "food-components",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "단백질이 열이나 산 등으로 변성될 때 일어나는 변화로 옳은 것은?",
+    "choices": [
+      "물에 녹는 정도(용해도)가 커진다",
+      "펩타이드 결합이 끊어져 아미노산으로 분해된다",
+      "소화효소가 작용하기 어려워져 소화가 나빠진다",
+      "아미노산 배열(1차 구조)은 그대로이고 입체 구조가 바뀐다",
+      "점도가 낮아진다"
+    ],
+    "answer": 4,
+    "oneLineConcept": "변성: 1차 구조 유지, 2·3·4차 구조 변화",
+    "explanation": "단백질 변성은 열, 산, 알칼리, 염, 교반 등에 의해 단백질의 접힌 입체 구조가 풀리는 현상입니다. 아미노산이 이어진 순서(1차 구조)는 바뀌지 않습니다. 변성되면 용해도는 줄고 점도는 커지며, 효소의 작용을 잘 받아 소화가 쉬워지고 생물학적 활성은 잃습니다.\n\n**틀린 선지**\n- 펩타이드 결합이 끊어져 아미노산으로 분해된다: 이것은 가수분해(소화)이며, 변성에서는 펩타이드 결합이 끊어지지 않습니다.\n- 물에 녹는 정도(용해도)가 커진다: 변성되면 안쪽의 소수성 부분이 드러나 용해도는 보통 줄어듭니다.\n- 소화효소가 작용하기 어려워져 소화가 나빠진다: 풀린 구조에 효소가 잘 닿아 일반적으로 소화가 더 잘됩니다.\n- 점도가 낮아진다: 변성되면 분자가 풀리고 엉켜 점도는 보통 높아집니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "단백질",
+      "변성"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "nutritionist-food-components-0010",
+    "certId": "nutritionist",
+    "subjectId": "food-science-cooking",
+    "chapterId": "food-components",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "시금치를 식초와 함께 오래 가열하면 누런 갈색으로 변한다. 이 변화에 대한 설명으로 옳은 것은?",
+    "choices": [
+      "클로로필이 안토시아닌으로 바뀐다",
+      "알칼리에 의해 피톨기가 떨어져 클로로필리드가 된다",
+      "클로로필의 마그네슘이 수소 이온으로 바뀌어 페오피틴이 된다",
+      "카로티노이드가 산에 의해 분해되어 갈색이 된다",
+      "클로로필의 마그네슘이 구리 이온으로 바뀌어 구리 클로로필이 된다"
+    ],
+    "answer": 3,
+    "oneLineConcept": "클로로필 + 산 → 페오피틴(녹갈색)",
+    "explanation": "녹색 채소의 클로로필은 가운데에 마그네슘을 가지고 있습니다. 산이 있으면 이 마그네슘이 수소 이온으로 바뀌면서 누런 갈색의 페오피틴이 됩니다. 그래서 시금치 나물에 식초를 넣거나 뚜껑을 덮고 오래 데치면 색이 누렇게 됩니다.\n\n**틀린 선지**\n- 클로로필의 마그네슘이 구리 이온으로 바뀌어 구리 클로로필이 된다: 구리 클로로필은 오히려 선명한 녹색을 띠며, 산과 함께 가열한 결과가 아닙니다.\n- 알칼리에 의해 피톨기가 떨어져 클로로필리드가 된다: 식초는 산이며, 클로로필리드는 선명한 녹색을 띱니다.\n- 클로로필이 안토시아닌으로 바뀐다: 클로로필이 다른 색소인 안토시아닌으로 바뀌지는 않습니다.\n- 카로티노이드가 산에 의해 분해되어 갈색이 된다: 카로티노이드는 산과 열에 비교적 안정하며, 변색의 원인이 아닙니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "색소",
+      "클로로필"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        5
+      ],
+      "intermediate": [
+        2,
+        3,
+        5
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        5
+      ]
+    }
+  },
+  {
+    "id": "nutritionist-food-components-0011",
+    "certId": "nutritionist",
+    "subjectId": "food-science-cooking",
+    "chapterId": "food-components",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "사과를 깎아 두면 갈색으로 변하는 현상과 가장 관계가 깊은 효소는?",
+    "choices": [
+      "리폭시게나아제",
+      "프로테아제",
+      "펙티나아제",
+      "아밀레이스",
+      "폴리페놀 산화효소"
+    ],
+    "answer": 5,
+    "oneLineConcept": "과일 효소적 갈변 = 폴리페놀 산화효소",
+    "explanation": "사과·배·바나나 등을 자르면 세포 속 폴리페놀 물질이 공기 중 산소와 만나고, 폴리페놀 산화효소가 이를 산화시켜 갈색 물질을 만듭니다. 이를 효소적 갈변이라고 합니다. 소금물이나 설탕물에 담그거나 레몬즙을 뿌리면 갈변을 줄일 수 있습니다.\n\n**틀린 선지**\n- 리폭시게나아제: 불포화지방산을 산화시켜 콩 비린내 등을 만드는 효소입니다.\n- 아밀레이스: 전분을 분해하는 효소입니다.\n- 프로테아제: 단백질을 분해하는 효소입니다.\n- 펙티나아제: 펙틴을 분해해 과일을 무르게 하는 효소입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "갈변",
+      "효소"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        5
+      ],
+      "intermediate": [
+        1,
+        4,
+        5
+      ],
+      "advanced": [
+        1,
+        2,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "nutritionist-food-components-0012",
+    "certId": "nutritionist",
+    "subjectId": "food-science-cooking",
+    "chapterId": "food-components",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "마이야르 반응(아미노-카보닐 반응)에 대한 설명으로 옳은 것은?",
+    "choices": [
+      "pH가 높을수록(알칼리성일수록) 반응이 빨라진다",
+      "온도가 낮을수록 빨리 일어난다",
+      "아황산염을 넣으면 반응이 촉진된다",
+      "수분활성도가 1.0에 가까울수록 가장 빠르게 일어난다",
+      "효소가 있어야만 일어난다"
+    ],
+    "answer": 1,
+    "oneLineConcept": "마이야르 반응: 비효소적, 알칼리·고온에서 촉진",
+    "explanation": "마이야르 반응은 환원당과 아미노기를 가진 물질이 효소 없이 반응해 갈색 물질과 구수한 향을 만드는 반응입니다. 온도가 높을수록, pH가 알칼리 쪽일수록 빨라지고, 수분이 너무 많거나 너무 적지 않은 중간 정도일 때 가장 활발합니다. 빵 껍질, 간장·된장의 색이 대표적인 예입니다.\n\n**틀린 선지**\n- 수분활성도가 1.0에 가까울수록 가장 빠르게 일어난다: 물이 너무 많으면 반응 물질이 묽어져 느려지며, 중간 수분 상태에서 가장 활발합니다.\n- 효소가 있어야만 일어난다: 마이야르 반응은 효소 없이 일어나는 비효소적 갈변입니다.\n- 온도가 낮을수록 빨리 일어난다: 온도가 높을수록 반응이 빨라집니다.\n- 아황산염을 넣으면 반응이 촉진된다: 아황산염은 마이야르 반응을 억제하는 물질입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "갈변",
+      "마이야르 반응"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        4,
+        5
+      ],
+      "advanced": [
+        1,
+        2,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "nutritionist-food-components-0013",
+    "certId": "nutritionist",
+    "subjectId": "food-science-cooking",
+    "chapterId": "food-components",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "단팥죽에 소금을 조금 넣으면 단맛이 더 강하게 느껴지는 현상은?",
+    "choices": [
+      "맛의 대비",
+      "맛의 억제",
+      "맛의 변조",
+      "맛의 상승",
+      "맛의 피로"
+    ],
+    "answer": 1,
+    "oneLineConcept": "맛의 대비: 다른 맛이 섞여 주된 맛이 강해짐",
+    "explanation": "맛의 대비는 주된 맛에 다른 맛을 조금 섞었을 때 주된 맛이 더 강하게 느껴지는 현상입니다. 단팥죽에 소금을 약간 넣으면 단맛이 강해지고, 설탕물에 소금을 조금 넣어도 같은 효과가 납니다.\n\n**틀린 선지**\n- 맛의 억제: 서로 다른 맛이 섞여 한쪽 맛이 약해지는 현상입니다. 커피에 설탕을 넣어 쓴맛이 줄어드는 경우입니다.\n- 맛의 상승: 같은 계통의 맛을 섞을 때 더 강해지는 현상입니다. 소금과 단맛은 다른 맛입니다.\n- 맛의 변조: 앞에 먹은 음식 때문에 다음 음식 맛이 다르게 느껴지는 현상입니다.\n- 맛의 피로: 같은 맛을 계속 먹으면 그 맛을 덜 느끼게 되는 현상입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "맛",
+      "맛의 현상"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "nutritionist-food-components-0014",
+    "certId": "nutritionist",
+    "subjectId": "food-science-cooking",
+    "chapterId": "food-components",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "생강의 매운맛을 내는 주요 성분은?",
+    "choices": [
+      "시니그린",
+      "알리신",
+      "피페린",
+      "진저롤",
+      "캡사이신"
+    ],
+    "answer": 4,
+    "oneLineConcept": "생강 진저롤·쇼가올, 고추 캡사이신, 후추 피페린",
+    "explanation": "생강의 매운맛은 진저롤이라는 성분 때문입니다. 생강을 말리거나 가열하면 진저롤 일부가 쇼가올로 바뀌어 더 맵게 느껴지기도 합니다. 향신채소마다 매운맛 성분이 다르므로 짝지어 기억해 두면 좋습니다.\n\n**틀린 선지**\n- 캡사이신: 고추의 매운맛 성분입니다.\n- 피페린: 후추의 매운맛 성분입니다.\n- 알리신: 마늘의 매운맛과 냄새 성분입니다.\n- 시니그린: 겨자·고추냉이의 매운맛을 만드는 원래 물질입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "맛",
+      "매운맛"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        4,
+        5
+      ],
+      "intermediate": [
+        3,
+        4,
+        5
+      ],
+      "advanced": [
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "nutritionist-food-components-0015",
+    "certId": "nutritionist",
+    "subjectId": "food-science-cooking",
+    "chapterId": "food-components",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "다음 중 유중수적형(W/O, 기름 속에 물방울이 퍼진 형태) 유화식품은?",
+    "choices": [
+      "생크림",
+      "버터",
+      "우유",
+      "아이스크림",
+      "마요네즈"
+    ],
+    "answer": 2,
+    "oneLineConcept": "W/O: 버터·마가린 / O/W: 우유·마요네즈·크림",
+    "explanation": "유화식품은 물과 기름이 섞여 있는 식품입니다. 물 속에 기름방울이 퍼져 있으면 수중유적형(O/W), 기름 속에 물방울이 퍼져 있으면 유중수적형(W/O)이라고 합니다. 버터와 마가린이 대표적인 유중수적형입니다.\n\n**틀린 선지**\n- 마요네즈: 마요네즈는 식초(물) 속에 기름방울이 퍼진 수중유적형입니다.\n- 우유: 우유는 물 속에 지방구가 퍼진 수중유적형입니다.\n- 생크림: 생크림도 수중유적형입니다.\n- 아이스크림: 아이스크림 원료도 수중유적형 유화액입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "물성",
+      "유화"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        5
+      ],
+      "intermediate": [
+        2,
+        3,
+        5
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        5
+      ]
+    }
+  },
+  {
+    "id": "nutritionist-food-components-0016",
+    "certId": "nutritionist",
+    "subjectId": "food-science-cooking",
+    "chapterId": "food-components",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "청국장이나 낫토를 젓가락으로 들어 올리면 실처럼 길게 늘어나는 성질은?",
+    "choices": [
+      "바이센베르크 효과",
+      "예사성",
+      "점성",
+      "가소성",
+      "탄성"
+    ],
+    "answer": 2,
+    "oneLineConcept": "예사성 = 실처럼 늘어나는 성질 (낫토·달걀흰자)",
+    "explanation": "예사성은 점성이 있는 물질에 젓가락을 넣었다 들어 올릴 때 실처럼 늘어나는 성질입니다. 청국장, 낫토, 달걀흰자에서 볼 수 있습니다. 식품의 물성(레올로지) 용어는 실제 식품 예와 함께 기억하면 쉽습니다.\n\n**틀린 선지**\n- 바이센베르크 효과: 연유 등을 막대로 저을 때 액체가 막대를 타고 올라가는 성질입니다.\n- 가소성: 힘을 주면 모양이 바뀌고 힘을 빼도 그 모양을 유지하는 성질로, 버터가 예입니다.\n- 탄성: 눌렀다가 힘을 빼면 원래 모양으로 돌아오는 성질입니다.\n- 점성: 액체가 흐를 때 생기는 저항(끈끈함) 자체를 말하며, 실처럼 늘어나는 성질과는 구별됩니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "물성",
+      "레올로지"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ],
+      "advanced": [
+        1,
+        2,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "nutritionist-food-components-0017",
+    "certId": "nutritionist",
+    "subjectId": "food-science-cooking",
+    "chapterId": "food-components",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "전자레인지로 식품을 가열하는 원리로 옳은 것은?",
+    "choices": [
+      "뜨거운 판에 식품이 직접 닿아 열이 전해진다",
+      "뜨거운 공기가 순환하며 식품 겉면부터 데운다",
+      "숯불처럼 적외선이 식품 표면을 데운다",
+      "수증기가 식품 표면에서 물로 바뀌며 열을 낸다",
+      "마이크로파가 식품 속 물 분자를 진동시켜 열이 생긴다"
+    ],
+    "answer": 5,
+    "oneLineConcept": "전자레인지 = 마이크로파 → 물 분자 진동 → 마찰열",
+    "explanation": "전자레인지는 약 2,450MHz의 마이크로파를 쏘아 식품 속 물 분자를 빠르게 흔들고, 이때 생기는 마찰열로 식품을 데웁니다. 식품 내부에서 직접 열이 생기므로 조리 시간이 짧습니다. 다만 수분이 날아가기 쉽고 겉면이 갈색으로 변하지 않습니다.\n\n**틀린 선지**\n- 뜨거운 공기가 순환하며 식품 겉면부터 데운다: 이것은 대류에 의한 가열로, 오븐의 원리입니다.\n- 뜨거운 판에 식품이 직접 닿아 열이 전해진다: 이것은 전도에 의한 가열로, 프라이팬의 원리입니다.\n- 숯불처럼 적외선이 식품 표면을 데운다: 이것은 복사(적외선) 가열로, 석쇠구이의 원리입니다.\n- 수증기가 식품 표면에서 물로 바뀌며 열을 낸다: 이것은 찜의 원리입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "조리",
+      "열전달"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        5
+      ],
+      "intermediate": [
+        1,
+        2,
+        5
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        5
+      ]
+    }
+  },
+  {
+    "id": "nutritionist-food-components-0018",
+    "certId": "nutritionist",
+    "subjectId": "food-science-cooking",
+    "chapterId": "food-components",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "전분의 호화에 대한 설명으로 옳은 것은?",
+    "choices": [
+      "수분이 적을수록 호화가 잘된다",
+      "설탕을 많이 넣을수록 호화가 빨라진다",
+      "쌀 전분이 감자 전분보다 낮은 온도에서 호화된다",
+      "산을 넣으면 점도가 더 높아진다",
+      "알칼리성에서 호화가 촉진된다"
+    ],
+    "answer": 5,
+    "oneLineConcept": "호화 촉진: 수분↑, 온도↑, 알칼리, 큰 전분 입자",
+    "explanation": "호화는 전분에 물을 넣고 가열하면 전분 입자가 물을 먹고 부풀어 풀처럼 되는 현상입니다. 수분이 많을수록, 온도가 높을수록, 알칼리성일수록, 전분 입자가 클수록 호화가 잘됩니다. 설탕을 많이 넣거나 산을 넣으면 호화가 방해되거나 점도가 낮아집니다.\n\n**틀린 선지**\n- 설탕을 많이 넣을수록 호화가 빨라진다: 설탕은 물을 끌어당겨 전분이 쓸 물을 줄이므로 많이 넣으면 호화가 늦어집니다.\n- 산을 넣으면 점도가 더 높아진다: 산은 전분 사슬을 끊어 점도를 낮춥니다.\n- 수분이 적을수록 호화가 잘된다: 호화에는 물이 필요하므로 수분이 많을수록 잘됩니다.\n- 쌀 전분이 감자 전분보다 낮은 온도에서 호화된다: 감자 같은 서류 전분이 쌀 같은 곡류 전분보다 낮은 온도에서 호화됩니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "전분",
+      "호화"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        5
+      ],
+      "intermediate": [
+        2,
+        4,
+        5
+      ],
+      "advanced": [
+        1,
+        2,
+        4,
+        5
+      ]
+    }
+  }
+]
