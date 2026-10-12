@@ -23,6 +23,7 @@
    - 실전 문제풀이 는 과목마다 문제가 실제 문항 수(`questionCount`) 이상 있어야 열린다. 모자라면 "문제 준비 중"으로 나온다.
    - 문제마다 `choicesByLevel`(초급·중급에 남길 선지) 또는 `levelLock` 이 있어야 한다 ([data-rules.md](data-rules.md) 의 "난이도별 선지 수").
 4-1. **그림 (2026-10-12 부터)**: `visualNeed` 에 따라 그림 문제와 개념 그림을 만든다. 규칙은 [data-rules.md](data-rules.md) 8장, 본보기는 `data/certs/KR/electrician-craftsman/` 의 직류회로 단원(`assets/`, 문제 `dc-circuit-0001`~`0006`).
+   - 어느 단원에 넣을지는 [data-rules.md](data-rules.md) 8장 "그림이 필요한 단원 고르기"로 단원마다 판단한다.
    - `high`: 그림이 가장 필요한 단원 **최대 3개**에 단원마다 그림 문제 3개 + 개념 그림 1개.
    - `medium`: 그림이 가장 필요한 단원 **1개**에 그림 문제 3개 + 개념 그림 1개. `none`: 만들지 않는다.
    - 나머지 단원은 매일 조금씩 보강한다 ([daily-routine.md](daily-routine.md) "2-2. 그림 보강").
