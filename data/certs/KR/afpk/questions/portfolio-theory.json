@@ -1,0 +1,279 @@
+[
+  {
+    "id": "afpk-portfolio-theory-0001",
+    "certId": "afpk",
+    "subjectId": "investment",
+    "chapterId": "portfolio-theory",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "어느 주식의 경기 상황별 예상 수익률이 다음과 같을 때 기대수익률은?\n\n- 호황(확률 30%): 20%\n- 보통(확률 50%): 10%\n- 불황(확률 20%): −10%",
+    "choices": [
+      "13%",
+      "6.7%",
+      "9%",
+      "11%"
+    ],
+    "answer": 3,
+    "oneLineConcept": "기대수익률 = Σ(확률 × 수익률)",
+    "explanation": "기대수익률은 각 상황의 수익률에 그 확률을 곱해 모두 더합니다.\n\n1. 호황: 0.3 × 20% = 6%\n2. 보통: 0.5 × 10% = 5%\n3. 불황: 0.2 × (−10%) = −2%\n4. 합계: 6% + 5% − 2% = **9%**\n\n**틀린 선지**\n- 6.7%: 확률을 무시하고 세 수익률을 단순 평균((20+10−10)÷3)한 값입니다.\n- 11%: 불황의 −2%를 빼지 않은 값(6% + 5%)입니다.\n- 13%: 불황 수익률의 부호를 +로 계산한 값(6% + 5% + 2%)입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "기대수익률"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "afpk-portfolio-theory-0002",
+    "certId": "afpk",
+    "subjectId": "investment",
+    "chapterId": "portfolio-theory",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "기대수익률이 10%인 주식A에 60%, 기대수익률이 5%인 채권B에 40%를 투자한 포트폴리오의 기대수익률은?",
+    "choices": [
+      "7.5%",
+      "8%",
+      "15%",
+      "7%"
+    ],
+    "answer": 2,
+    "oneLineConcept": "포트폴리오 기대수익률 = 투자비중 × 기대수익률의 합",
+    "explanation": "포트폴리오의 기대수익률은 각 자산의 기대수익률을 투자 비중으로 가중평균합니다.\n\n1. 주식A: 0.6 × 10% = 6%\n2. 채권B: 0.4 × 5% = 2%\n3. 합계: 6% + 2% = **8%**\n\n**틀린 선지**\n- 7.5%: 비중을 무시하고 두 수익률을 단순 평균((10+5)÷2)한 값입니다.\n- 7%: 비중을 거꾸로 적용한 값(0.4 × 10% + 0.6 × 5%)입니다.\n- 15%: 두 수익률을 그냥 더한 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "포트폴리오 기대수익률"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "afpk-portfolio-theory-0003",
+    "certId": "afpk",
+    "subjectId": "investment",
+    "chapterId": "portfolio-theory",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "두 자산으로 포트폴리오를 만들 때 위험(표준편차)을 줄이는 분산투자 효과가 가장 큰 경우는 두 자산 수익률의 상관계수가 얼마일 때인가?",
+    "choices": [
+      "+1",
+      "+0.5",
+      "0",
+      "−1"
+    ],
+    "answer": 4,
+    "oneLineConcept": "상관계수 −1일 때 분산효과 최대, +1이면 없음",
+    "explanation": "**상관계수**는 두 자산이 함께 움직이는 정도를 −1에서 +1 사이 숫자로 나타냅니다.\n\n- +1: 똑같이 움직임 → 분산투자 효과가 **없음**\n- 0: 서로 관계없이 움직임 → 어느 정도 효과 있음\n- **−1**: 정반대로 움직임 → 효과가 **가장 큼** (비중을 잘 맞추면 위험을 0까지 줄일 수 있음)\n\n**틀린 선지**\n- 0: 효과는 있지만 −1보다 작습니다.\n- +0.5: 비슷하게 움직이는 편이라 효과가 작습니다.\n- +1: 완전히 같이 움직여 분산효과가 전혀 없습니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "상관계수",
+      "분산투자"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "afpk-portfolio-theory-0004",
+    "certId": "afpk",
+    "subjectId": "investment",
+    "chapterId": "portfolio-theory",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "표준편차가 30%인 자산A와 40%인 자산B에 50%씩 투자한 포트폴리오의 표준편차는? (두 자산 수익률의 상관계수는 0이다)",
+    "choices": [
+      "17.5%",
+      "25%",
+      "5%",
+      "35%"
+    ],
+    "answer": 2,
+    "oneLineConcept": "상관계수 0이면 분산 = wA²σA² + wB²σB²",
+    "explanation": "두 자산 포트폴리오의 분산 공식은 다음과 같습니다.\n\n1. 공식: 분산 = wA²σA² + wB²σB² + 2·wA·wB·ρ·σA·σB\n2. 상관계수 ρ = 0이므로 마지막 항은 0입니다.\n3. 대입: 0.5² × 30² + 0.5² × 40² = 0.25 × 900 + 0.25 × 1,600 = 225 + 400 = 625\n4. 표준편차 = √625 = **25%**\n5. 검산: 25² = 625 ✔\n\n**틀린 선지**\n- 35%: 상관계수가 +1일 때 값(두 표준편차의 가중평균 0.5×30 + 0.5×40)입니다.\n- 5%: 상관계수가 −1일 때 값(|0.5×30 − 0.5×40|)입니다.\n- 17.5%: 두 표준편차의 단순 평균을 다시 2로 나눈 값으로, 공식과 관계없습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "포트폴리오 표준편차",
+      "상관계수"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "afpk-portfolio-theory-0005",
+    "certId": "afpk",
+    "subjectId": "investment",
+    "chapterId": "portfolio-theory",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "무위험이자율이 3%, 시장포트폴리오의 기대수익률이 8%, 주식A의 베타가 1.2일 때 CAPM(자본자산가격결정모형)에 따른 주식A의 요구수익률은?",
+    "choices": [
+      "12.6%",
+      "9.6%",
+      "9%",
+      "6%"
+    ],
+    "answer": 3,
+    "oneLineConcept": "CAPM: 요구수익률 = 무위험이자율 + 베타 × (시장수익률 − 무위험이자율)",
+    "explanation": "1. 공식: 요구수익률 = Rf + β × (Rm − Rf)\n2. 시장위험프리미엄: 8% − 3% = 5%\n3. 대입: 3% + 1.2 × 5% = 3% + 6% = **9%**\n4. 검산: 베타가 1보다 크므로 시장 기대수익률 8%보다 높아야 합니다 ✔\n\n**틀린 선지**\n- 9.6%: 시장 기대수익률에 베타를 곱한 값(8% × 1.2)으로, 무위험이자율 처리가 틀렸습니다.\n- 6%: 위험프리미엄(1.2 × 5%)만 구하고 무위험이자율 3%를 더하지 않았습니다.\n- 12.6%: 시장수익률에서 무위험이자율을 빼지 않고 계산한 값(3% + 1.2 × 8%)입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "CAPM",
+      "베타"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "afpk-portfolio-theory-0006",
+    "certId": "afpk",
+    "subjectId": "investment",
+    "chapterId": "portfolio-theory",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "무위험이자율이 2%일 때 다음 펀드 가운데 샤프지수(Sharpe ratio)가 가장 높은 것은?\n\n- 펀드A: 수익률 12%, 표준편차 15%\n- 펀드B: 수익률 10%, 표준편차 8%\n- 펀드C: 수익률 14%, 표준편차 20%\n- 펀드D: 수익률 9%, 표준편차 5%",
+    "choices": [
+      "펀드D",
+      "펀드A",
+      "펀드B",
+      "펀드C"
+    ],
+    "answer": 1,
+    "oneLineConcept": "샤프지수 = (수익률 − 무위험이자율) ÷ 표준편차",
+    "explanation": "**샤프지수**는 위험(표준편차) 한 단위당 얼마나 초과수익을 냈는지 보여 줍니다. 클수록 좋습니다.\n\n1. 공식: (수익률 − 무위험이자율) ÷ 표준편차\n2. 펀드A: (12 − 2) ÷ 15 = 0.67\n3. 펀드B: (10 − 2) ÷ 8 = 1.00\n4. 펀드C: (14 − 2) ÷ 20 = 0.60\n5. 펀드D: (9 − 2) ÷ 5 = **1.40** → 가장 높음\n\n**틀린 선지**\n- 펀드B: 1.00으로 두 번째입니다.\n- 펀드A: 0.67로 수익률은 높지만 위험도 커서 샤프지수가 낮습니다.\n- 펀드C: 수익률은 가장 높지만 표준편차가 커서 0.60으로 가장 낮습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "샤프지수",
+      "성과평가"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "afpk-portfolio-theory-0007",
+    "certId": "afpk",
+    "subjectId": "investment",
+    "chapterId": "portfolio-theory",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "여러 종목에 나누어 투자해도 없앨 수 없는 위험은?",
+    "choices": [
+      "특정 기업의 파업·소송 위험",
+      "체계적 위험(시장위험)",
+      "특정 기업 경영진 교체 위험",
+      "비체계적 위험(개별기업 위험)"
+    ],
+    "answer": 2,
+    "oneLineConcept": "분산투자로 못 없애는 위험 = 체계적 위험",
+    "explanation": "총위험은 두 가지로 나뉩니다.\n\n- **체계적 위험**: 금리, 경기, 환율처럼 시장 전체에 영향을 주는 위험. 종목을 아무리 늘려도 **없앨 수 없습니다**. 베타로 측정합니다.\n- 비체계적 위험: 특정 기업에만 생기는 위험. 종목 수를 늘리면 줄일 수 있습니다.\n\n**틀린 선지**\n- 비체계적 위험: 분산투자로 줄일 수 있습니다.\n- 특정 기업의 파업·소송 위험: 개별 기업 위험이므로 분산투자로 줄일 수 있습니다.\n- 경영진 교체 위험: 개별 기업 위험이므로 분산투자로 줄일 수 있습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "체계적 위험",
+      "분산투자"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "afpk-portfolio-theory-0008",
+    "certId": "afpk",
+    "subjectId": "investment",
+    "chapterId": "portfolio-theory",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "현대포트폴리오 이론과 CAPM에 대한 적절한 설명으로만 모두 묶인 것은?\n\n가. 효율적 투자선 위의 포트폴리오는 같은 위험 수준에서 기대수익률이 가장 높은 포트폴리오이다.\n나. 증권시장선(SML)보다 위쪽에 있는 주식은 기대수익률이 요구수익률보다 낮아 고평가된 것이다.\n다. 베타가 1보다 큰 주식은 시장 전체보다 수익률 변동이 큰 편이다.",
+    "choices": [
+      "가, 나",
+      "가, 다",
+      "나, 다",
+      "가, 나, 다"
+    ],
+    "answer": 2,
+    "oneLineConcept": "SML 위쪽 = 과소평가(매수), 아래쪽 = 과대평가",
+    "explanation": "- 가: 옳습니다. 효율적 투자선은 같은 위험에서 수익이 가장 높은(같은 수익에서 위험이 가장 낮은) 포트폴리오들을 이은 선입니다.\n- 다: 옳습니다. 베타가 1보다 크면 시장이 1% 움직일 때 평균적으로 1%보다 크게 움직입니다.\n- 나: 틀립니다. SML **위쪽**에 있다는 것은 기대수익률이 요구수익률보다 **높다**는 뜻이므로 **과소평가**(싸다)된 주식입니다.\n\n따라서 '가, 다'가 정답입니다.\n\n**틀린 선지**\n- 가, 나: 나는 틀린 설명입니다.\n- 나, 다: 나는 틀린 설명입니다.\n- 가, 나, 다: 나가 틀렸으므로 모두 묶을 수 없습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "효율적 투자선",
+      "증권시장선",
+      "베타"
+    ],
+    "levelLock": true
+  }
+]

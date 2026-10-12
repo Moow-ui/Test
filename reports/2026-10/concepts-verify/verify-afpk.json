@@ -1,0 +1,207 @@
+{
+  "cert": "afpk",
+  "checkedAt": "2026-10-12",
+  "by": "separate verifier AI",
+  "chapters": {
+    "fp-understanding": {
+      "verdict": "PASS",
+      "problems": []
+    },
+    "fp-basic-tasks": {
+      "verdict": "PASS",
+      "problems": []
+    },
+    "fp-process": {
+      "verdict": "PASS",
+      "problems": [
+        "source '한국재무설계협회 업무수행기준' → 기관명은 2026.2 변경된 법인명과 맞음(https://www.mydaily.co.kr/page/view/2026022411162554615). 수정 불필요."
+      ]
+    },
+    "consumer-credit-debt": {
+      "verdict": "PASS (re-verified; history: PASS)",
+      "problems": []
+    },
+    "behavioral-finance": {
+      "verdict": "PASS",
+      "problems": []
+    },
+    "fp-communication": {
+      "verdict": "PASS",
+      "problems": []
+    },
+    "consumer-protection": {
+      "verdict": "PASS",
+      "problems": []
+    },
+    "fp-ethics": {
+      "verdict": "PASS (re-verified; history: FAIL)",
+      "problems": []
+    },
+    "retirement-overview": {
+      "verdict": "PASS",
+      "problems": []
+    },
+    "retirement-income": {
+      "verdict": "PASS",
+      "problems": []
+    },
+    "retirement-execution": {
+      "verdict": "PASS",
+      "problems": []
+    },
+    "public-pension": {
+      "verdict": "PASS (re-verified; history: PASS)",
+      "problems": []
+    },
+    "occupational-pension": {
+      "verdict": "PASS",
+      "problems": []
+    },
+    "personal-pension": {
+      "verdict": "PASS (re-verified; history: PASS)",
+      "problems": []
+    },
+    "retirement-withdrawal": {
+      "verdict": "PASS (re-verified; history: PASS)",
+      "problems": [
+        "concepts[주택연금].tip '55세 · 공시가 12억 · 평생 거주' → '평생 거주'가 가입 요건(실거주)처럼 읽혀 오해 소지. 근거: 한국주택금융공사 가입요건(가입자 또는 배우자 실거주) → 고칠 문장: '55세 · 공시가 12억 · 실거주'."
+      ]
+    },
+    "re-overview": {
+      "verdict": "PASS",
+      "problems": []
+    },
+    "re-market": {
+      "verdict": "PASS",
+      "problems": []
+    },
+    "re-rights": {
+      "verdict": "PASS (re-verified; history: PASS)",
+      "problems": []
+    },
+    "re-transaction": {
+      "verdict": "PASS",
+      "problems": []
+    },
+    "re-public-law": {
+      "verdict": "PASS",
+      "problems": []
+    },
+    "re-investment": {
+      "verdict": "PASS (re-verified; history: FAIL)",
+      "problems": []
+    },
+    "estate-overview": {
+      "verdict": "PASS",
+      "problems": []
+    },
+    "inheritance-law": {
+      "verdict": "PASS (re-verified; history: PASS, FAIL)",
+      "problems": [
+        "points 3번째 '배우자는 피대습자가 사망한 경우에만 대습상속' → '상속개시 전에'가 빠져 있음(본문 summary·concepts 와 표현 통일). 근거: 민법 제1003조 제2항(2026.3.17 시행 개정), https://www.lawtimes.co.kr/news/articleView.html?idxno=218712 → '배우자는 피대습자가 상속개시 전에 사망한 경우에만 대습상속한다는 점을 기억하세요.'",
+        "concepts '기여분·특별수익' definition '재산 증가에 기여한' → 법문은 '상당한 기간 동거·간호 그 밖의 방법으로 특별히 부양하거나 재산의 유지 또는 증가에 특별히 기여한' 공동상속인(제1008조의2). → '피상속인을 오랫동안 함께 살며 돌보는 등 특별히 부양하거나 재산을 지키거나 늘리는 데 특별히 기여한 상속인은 기여분을 더 받고, …'",
+        "concepts '한정승인 vs 포기' '포기한 사람의 몫은 다른 상속인에게 돌아갑니다' → 맞지만(제1043조), 요청된 2023 대법원 전원합의체(2023.3.23. 2020그42) 내용이 단원에 없음. 시험 빈출이므로 추가 권장 → '피상속인의 배우자와 자녀가 있는데 자녀 전원이 포기하면, 손자녀가 아니라 배우자가 단독상속인이 됩니다(대법원 2023.3.23. 2020그42 전원합의체).'",
+        "concepts '승인·포기 기간' → 예외 누락으로 '항상' 처럼 읽힐 수 있음. 채무가 재산보다 많다는 사실을 중대한 과실 없이 몰랐다면 그 사실을 안 날부터 3개월 안에 특별한정승인 가능(제1019조 제3항), 가정법원이 기간을 늘릴 수 있음(제1019조 제1항 단서). → 끝에 '다만 빚이 더 많은 것을 큰 잘못 없이 몰랐다면 안 날부터 3개월 안에 한정승인할 수 있습니다(특별한정승인).' 추가 권장.",
+        "summary 3번째 문단·concepts '상속권 상실 선고' → 청구권자·기간이 빠짐. 피상속인이 유언으로 뜻을 밝히면 유언집행자가, 유언이 없으면 공동상속인 등이 상속인이 된 사실을 안 날부터 6개월 안에 가정법원에 청구(제1004조의2). 또 2026.3.17 개정으로 대상이 부모(직계존속)에서 모든 상속인으로 넓어졌다는 점을 적으면 오래된 자료와 혼동을 줄임. 근거: https://www.lawtimes.co.kr/news/articleView.html?idxno=216658 → definition 끝에 '유언집행자나 공동상속인이 청구하며, 2026년 3월 개정으로 부모뿐 아니라 모든 상속인이 대상입니다.' 추가 권장.",
+        "모든 concepts 의 source {org:'민법', year:2026} → 기관이 아니라 법령 이름이고 조문 번호가 없음. → {org:'민법(법무부 소관, 국가법령정보센터)', year:2026} 형식에 조문(제1000조, 제1001조·제1003조, 제1009조, 제1019조·제1026조, 제1041조~제1043조, 제1008조·제1008조의2, 제1004조의2)과 '2026.3.17 시행' 표기 권장."
+      ]
+    },
+    "will-forced-share": {
+      "verdict": "PASS (re-verified; history: PASS)",
+      "problems": [
+        "concepts[유류분 비율] → 사실은 맞음. '2024년 헌재 위헌 결정 후 민법에서 삭제(2024.9.20)'로 보충 가능. 또 2026.3.17 개정으로 유류분 반환은 가액반환이 원칙이 되고 상속권 상실 선고를 받으면 유류분도 잃는다는 점을 points 에 추가 제안. 근거: https://lawtalknews.co.kr/article/6CFYLROIXTCS , https://hwaon.com/bbs/board.php?bo_table=news&wr_id=80"
+      ]
+    },
+    "inheritance-gift-tax": {
+      "verdict": "PASS (re-verified; history: PASS)",
+      "problems": []
+    },
+    "estate-tax-strategy": {
+      "verdict": "PASS (re-verified; history: PASS)",
+      "problems": []
+    },
+    "risk-insurance": {
+      "verdict": "PASS (re-verified; history: PASS)",
+      "problems": []
+    },
+    "social-security": {
+      "verdict": "PASS (re-verified; history: PASS)",
+      "problems": []
+    },
+    "life-insurance": {
+      "verdict": "PASS",
+      "problems": []
+    },
+    "third-insurance": {
+      "verdict": "PASS",
+      "problems": []
+    },
+    "non-life-insurance": {
+      "verdict": "PASS",
+      "problems": []
+    },
+    "invest-basics": {
+      "verdict": "PASS (re-verified; history: PASS)",
+      "problems": []
+    },
+    "macroeconomics": {
+      "verdict": "PASS",
+      "problems": []
+    },
+    "portfolio-theory": {
+      "verdict": "PASS",
+      "problems": []
+    },
+    "stock-bond": {
+      "verdict": "PASS",
+      "problems": []
+    },
+    "fund-structured": {
+      "verdict": "PASS",
+      "problems": []
+    },
+    "invest-strategy": {
+      "verdict": "PASS",
+      "problems": []
+    },
+    "alternative-assets": {
+      "verdict": "PASS",
+      "problems": []
+    },
+    "tax-overview": {
+      "verdict": "PASS (re-verified; history: PASS)",
+      "problems": []
+    },
+    "income-tax": {
+      "verdict": "PASS",
+      "problems": []
+    },
+    "corporate-tax": {
+      "verdict": "PASS (re-verified; history: PASS)",
+      "problems": []
+    },
+    "vat": {
+      "verdict": "PASS (re-verified; history: FAIL)",
+      "problems": [
+        "summary[1]·concepts[간이과세자] '직전 연도 공급대가 1억 400만 원 미만' → 맞지만 부동산임대업·과세유흥장소는 4,800만 원 기준이라는 예외가 있음. '(부동산임대업 등은 4,800만 원)'을 괄호로 덧붙이길 제안. 근거: 부가가치세법 시행령 제109조."
+      ]
+    },
+    "financial-asset-tax": {
+      "verdict": "PASS (re-verified; history: PASS)",
+      "problems": [
+        "concepts[Gross-up] 10% → 2026년 지급분 기준으로 맞음. 개정 소득세법으로 2027.1.1 이후 지급분부터 11%가 되므로 '(2027년 지급분부터 11%)' 보충 제안. 근거: https://investpension.miraeasset.com/contents/view.do?idx=25311",
+        "points[ISA 200만·400만 원] → 현행 기준이지만 ISA 개편안이 논의 중이므로 '시험 회차의 기준 법령 확인' 문구 추가 제안."
+      ]
+    },
+    "real-estate-tax": {
+      "verdict": "PASS (re-verified; history: PASS)",
+      "problems": [
+        "compare 납부 시기 '7월·9월(주택은 반씩 나눠 냄)' → 주택분 세액이 20만 원 이하이면 7월에 한꺼번에 낼 수 있음. '(세액 20만 원 이하는 7월 한 번)' 보충 제안. 근거: 지방세법 제115조."
+      ]
+    },
+    "retirement-income-tax": {
+      "verdict": "PASS (re-verified; history: PASS)",
+      "problems": []
+    }
+  }
+}
