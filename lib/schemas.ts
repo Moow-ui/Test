@@ -147,6 +147,34 @@ export const certContentSchema = z.object({
   faqs: z.array(faqSchema).min(3).max(5),
 });
 
+/** 그림 필요도 (meta.json 의 visualNeed) */
+export const VISUAL_NEEDS = ["high", "medium", "none"] as const;
+
+/**
+ * 그림 출처 (assets/ 의 그림마다). 직접 그린 그림은 self, 공개 자료를 옮긴 그림은 public (title 과 license 를 적는다).
+ * 교재·문제집·다른 사이트의 그림은 쓰지 않는다 (docs/data-rules.md 8장).
+ */
+export const imageSourceSchema = z.object({
+  kind: z.enum(["self", "public"]),
+  /** public 일 때: 원본 이름 (예: "MUTCD 2009 Edition, FHWA") */
+  title: z.string().min(1).optional(),
+  /** public 일 때: 이용 조건 (예: "미국 연방정부 저작물(public domain)") */
+  license: z.string().min(1).optional(),
+}).refine((src) => src.kind === "self" || (!!src.title && !!src.license), {
+  message: "공개 자료(public) 그림은 title(원본 이름)과 license(이용 조건)를 적어야 합니다",
+});
+
+/** 개념 정리 단원 그림 (concepts.json 의 figures) */
+export const conceptFigureSchema = z.object({
+  /** assets/ 안의 SVG 파일 이름 */
+  image: z.string().regex(/^[a-z0-9-]+\.svg$/),
+  /** 그림을 말로 설명한 글 (화면 읽기·검색용). 그림을 못 봐도 내용을 알 수 있게 */
+  alt: z.string().min(10).max(300),
+  /** 그림 아래 한 줄 설명 */
+  caption: z.string().min(2).max(120),
+  source: imageSourceSchema,
+});
+
 /**
  * 운영진 학습 팁 3개 (자격증 페이지의 후기란 바로 위 상자. 화면에 "운영진 작성"으로 표시한다).
  * 각 2~4문장. 그 자격증의 출제기준·단원 데이터에 근거해 쓰고, 확인할 수 없는 합격률·통계는 쓰지 않는다.
@@ -214,6 +242,12 @@ export const certMetaSchema = certSummarySchema.extend({
   /** 운영진 학습 팁. 문제가 있는 자격증에는 반드시 있어야 한다 (npm run validate 가 검사) */
   studyTips: studyTipsSchema.optional(),
   sources: z.array(sourceRefSchema).optional(),
+  /**
+   * 그림이 얼마나 필요한 자격증인가 (docs/data-rules.md 8장). 루틴이 그림 문제·개념 그림을 몇 개 만들지 정하는 데 쓴다.
+   * high = 표지판·회로도·수신호처럼 그림 없이는 공부가 어려움, medium = 일부 단원에 도움, none = 거의 필요 없음.
+   * 적지 않으면 아직 정하지 않은 것 (화면에는 영향 없음).
+   */
+  visualNeed: z.enum(VISUAL_NEEDS).optional(),
 });
 
 /**
@@ -280,6 +314,8 @@ export const conceptChapterSchema = z.object({
   /** 자주 나오는 포인트 */
   points: z.array(z.string().min(5).max(200)).min(2).max(6),
   compare: conceptCompareSchema.optional(),
+  /** 단원 그림 (선택, 최대 2개). 표지판·회로도처럼 그림으로 봐야 이해되는 단원에만 넣는다 */
+  figures: z.array(conceptFigureSchema).min(1).max(2).optional(),
 });
 
 /**
@@ -320,6 +356,8 @@ export const certQueueSchema = z
       /** 공개된 문제·자료의 이용 조건 메모 (저작권, 허락 필요 여부) */
       usageNote: z.string().min(1),
       note: z.string().optional(),
+      /** 그림 필요도 (적지 않아도 된다. 자격증을 추가할 때 meta.json 의 visualNeed 로 옮긴다) */
+      visualNeed: z.enum(VISUAL_NEEDS).optional(),
     }),
   )
   .superRefine((queue, ctx) => {
@@ -437,8 +475,15 @@ export const questionSchema = z
       .regex(/^\d{4}-\d{2}-\d{2}$/)
       .optional(),
     tags: z.array(z.string()).default([]),
-    /** 문제 그림 파일 이름 (자격증 폴더의 assets/ 안) */
-    image: z.string().min(1).optional(),
+    /** 문제 그림 파일 이름 (자격증 폴더의 assets/ 안의 SVG). 화면에서 문제 글 바로 아래에 나온다 */
+    image: z
+      .string()
+      .regex(/^[a-z0-9-]+\.svg$/, "그림 파일은 영문 소문자·숫자·- 로 된 .svg 이름이어야 합니다")
+      .optional(),
+    /** 그림을 말로 설명한 글 (화면 읽기·검색용). image 가 있으면 반드시 적는다. 정답을 알려 주는 말은 쓰지 않는다 */
+    imageAlt: z.string().min(10).max(300).optional(),
+    /** 그림 출처. image 가 있으면 반드시 적는다 */
+    imageSource: imageSourceSchema.optional(),
     /**
      * 난이도 카드별로 남길 선지 번호 (정답 + 가장 그럴듯한 오답). 초급 2개, 중급 3개, 고급 4개.
      * 선지를 모두 보여 주는 난이도는 적지 않는다 (4지선다면 basic·intermediate 만).
@@ -498,6 +543,20 @@ export const questionSchema = z
         code: "custom",
         path: ["reviewedAt"],
         message: "reviewedAt 이 있으면 reviewStatus 는 verified 여야 합니다",
+      });
+    }
+    if (q.image && (!q.imageAlt || !q.imageSource)) {
+      ctx.addIssue({
+        code: "custom",
+        path: ["image"],
+        message: "그림(image)이 있는 문제는 imageAlt(그림 설명)와 imageSource(출처)를 적어야 합니다",
+      });
+    }
+    if (!q.image && (q.imageAlt || q.imageSource)) {
+      ctx.addIssue({
+        code: "custom",
+        path: ["imageAlt"],
+        message: "imageAlt·imageSource 는 그림(image)이 있는 문제에만 적습니다",
       });
     }
     if (new Set(q.choices).size !== q.choices.length) {

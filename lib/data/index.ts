@@ -13,7 +13,8 @@ import type {
   Subject,
 } from "../types";
 import { fsStore } from "./fs-store";
-import { chaptersFile, conceptsFile, countryDir, metaFile, questionsDir } from "./paths";
+import { svgDataUri } from "../svg";
+import { assetsDir, chaptersFile, conceptsFile, countryDir, metaFile, questionsDir } from "./paths";
 import type { DataStore } from "./store";
 
 /**
@@ -96,6 +97,40 @@ export function getQuestionFiles(certId: string): Promise<QuestionFile[]> {
   });
 }
 
+/**
+ * assets/ 의 SVG 그림을 화면용 data: 주소로 바꾼다 (없으면 null).
+ * 그림을 따로 배포하지 않고 문제 파일·페이지 안에 넣는다 (Cloudflare 배포 파일 수를 늘리지 않기 위해서).
+ */
+function loadImage(cert: LoadedCert, name: string): Promise<string | null> {
+  return cached(`image:${cert.meta.id}:${name}`, async () => {
+    const svg = await store.readText(`${assetsDir(cert.meta.country, cert.meta.id)}/${name}`);
+    return svg === null ? null : svgDataUri(svg);
+  });
+}
+
+/**
+ * 화면에 보낼 문제 파일: 그림이 있는 문제에 imageSrc 를 붙인다.
+ * 원본을 고쳐 쓰는 스크립트(questions:add 등)는 getQuestionFiles 를 써서 imageSrc 가 원본에 들어가지 않게 한다.
+ */
+export function getDisplayQuestionFiles(certId: string): Promise<QuestionFile[]> {
+  return cached(`display-files:${certId}`, async () => {
+    const cert = await findCert(certId);
+    const files = await getQuestionFiles(certId);
+    if (!cert) return files;
+    return Promise.all(
+      files.map(async (f) => ({
+        stem: f.stem,
+        questions: await Promise.all(
+          f.questions.map(async (q) => {
+            const src = q.image ? await loadImage(cert, q.image) : null;
+            return src ? { ...q, imageSrc: src } : q;
+          }),
+        ),
+      })),
+    );
+  });
+}
+
 /** 지금 출제되는 문제인가: 출제 중단이 아니고, 기출이면 최근 10년 안 (lib/past.ts) */
 function isActive(q: Question): boolean {
   return !q.retired && (q.source !== "past" || !q.pastInfo || isWithinPastWindow(q.pastInfo.year));
@@ -103,7 +138,7 @@ function isActive(q: Question): boolean {
 
 /** 자격증의 전체 문제 (지금 출제되는 것만) */
 export async function getQuestions(certId: string): Promise<Question[]> {
-  return (await getQuestionFiles(certId)).flatMap((f) => f.questions).filter(isActive);
+  return (await getDisplayQuestionFiles(certId)).flatMap((f) => f.questions).filter(isActive);
 }
 
 /**
@@ -228,7 +263,18 @@ export function getConcepts(certId: string): Promise<CertConcepts | null> {
     for (const subject of cert.subjects) {
       for (const chapter of subject.chapters) {
         const c = file.chapters[chapter.id];
-        if (c?.verifiedAt) chapters.push({ ...c, id: chapter.id, verifiedAt: c.verifiedAt });
+        if (!c?.verifiedAt) continue;
+        const figures = c.figures
+          ? (
+              await Promise.all(
+                c.figures.map(async (fig) => {
+                  const src = await loadImage(cert, fig.image);
+                  return src ? { ...fig, src } : null;
+                }),
+              )
+            ).filter((fig) => fig !== null)
+          : undefined;
+        chapters.push({ ...c, figures: figures?.length ? figures : undefined, id: chapter.id, verifiedAt: c.verifiedAt });
       }
     }
     if (chapters.length === 0) return null;

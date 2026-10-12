@@ -6,6 +6,7 @@ import type {
   certSummarySchema,
   chapterSchema,
   conceptChapterSchema,
+  conceptFigureSchema,
   conceptsFileSchema,
   examInfoSchema,
   faqSchema,
@@ -17,6 +18,7 @@ import type {
   LEVELS,
   NOTES_AUTHORS,
   SOURCES,
+  VISUAL_NEEDS,
 } from "./schemas";
 
 export type CertType = (typeof CERT_TYPES)[number];
@@ -24,6 +26,7 @@ export type Country = (typeof COUNTRIES)[number];
 export type Level = (typeof LEVELS)[number];
 export type Source = (typeof SOURCES)[number];
 export type NotesAuthor = (typeof NOTES_AUTHORS)[number];
+export type VisualNeed = (typeof VISUAL_NEEDS)[number];
 
 export type Chapter = z.infer<typeof chapterSchema>;
 export type Subject = z.infer<typeof subjectSchema>;
@@ -34,9 +37,15 @@ export type StudyTips = z.infer<typeof studyTipsSchema>;
 export type CertSummary = z.infer<typeof certSummarySchema>;
 export type CertMeta = z.infer<typeof certMetaSchema>;
 export type CertDetail = z.infer<typeof certDetailSchema>;
-export type Question = z.infer<typeof questionSchema>;
+/**
+ * 문제 한 건. imageSrc 는 원본 파일에는 없고, 화면에 보낼 때 lib/data 가 assets/ 의 SVG 를 읽어 붙인다
+ * (data: 주소. 그림을 따로 배포하지 않아 Cloudflare 배포 파일 수가 늘지 않는다).
+ */
+export type Question = z.infer<typeof questionSchema> & { imageSrc?: string };
 export type ConceptsFile = z.infer<typeof conceptsFileSchema>;
-export type ConceptChapter = z.infer<typeof conceptChapterSchema>;
+export type ConceptFigure = z.infer<typeof conceptFigureSchema> & { src: string };
+/** 개념 정리 단원 하나. figures 에는 화면에 쓸 그림 주소(src)가 붙어 있다 (lib/data) */
+export type ConceptChapter = Omit<z.infer<typeof conceptChapterSchema>, "figures"> & { figures?: ConceptFigure[] };
 
 /**
  * 자격증 한 건.

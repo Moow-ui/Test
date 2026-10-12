@@ -9,6 +9,7 @@ import { LogoMark } from "@/components/LogoMark";
 import { TopBar } from "@/components/TopBar";
 import { ChapterNotesLink } from "@/components/quiz/ChapterNotesLink";
 import { Markdown } from "@/components/Markdown";
+import { QuestionImage } from "@/components/QuestionImage";
 import { REVIEWS_ANCHOR } from "@/components/reviews/ReviewSection";
 import { visibleChoices } from "@/lib/choices";
 import { circled, formatScore } from "@/lib/format";
@@ -247,6 +248,7 @@ export function ResultView({
                     </span>
                   </summary>
                   <div className="space-y-2 px-4 pb-4">
+                    {q.imageSrc && <QuestionImage src={q.imageSrc} alt={q.imageAlt ?? ""} />}
                     <ol className="space-y-2">
                       {visibleChoices(q, level).map((original, ci) => (
                         <li key={original} className={original === q.answer ? "font-bold" : ""}>

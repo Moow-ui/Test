@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { QuestionImage } from "@/components/QuestionImage";
 import { Stars } from "@/components/Stars";
 import { fmt, getMessages, type Locale } from "@/lib/i18n";
 import type { Certification, ConceptChapter } from "@/lib/types";
@@ -102,6 +103,23 @@ export function ConceptPoints({ locale, points }: { locale: Locale; points: stri
   );
 }
 
+/** 단원 그림 (있을 때만). 표지판·회로도처럼 그림으로 봐야 이해되는 단원 */
+export function ConceptFigures({ locale, figures }: { locale: Locale; figures: NonNullable<ConceptChapter["figures"]> }) {
+  const m = getMessages(locale).concepts;
+  return (
+    <section aria-labelledby="figures-title">
+      <h2 id="figures-title" className="text-lg font-bold">
+        {m.figures}
+      </h2>
+      <div className="card mt-4 space-y-4 p-4">
+        {figures.map((fig) => (
+          <QuestionImage key={fig.image} src={fig.src} alt={fig.alt} caption={fig.caption} />
+        ))}
+      </div>
+    </section>
+  );
+}
+
 /** 헷갈리는 것 비교표 (있을 때만). 좁은 화면에서는 표 안에서만 옆으로 밀린다 */
 export function ConceptCompare({ locale, compare }: { locale: Locale; compare: NonNullable<ConceptChapter["compare"]> }) {
   const m = getMessages(locale).concepts;
@@ -165,7 +183,7 @@ export function ConceptNote({
   href: string;
   importance: number;
   weight: number;
-  entry: Pick<ConceptChapter, "summary" | "concepts" | "points">;
+  entry: Pick<ConceptChapter, "summary" | "concepts" | "points" | "figures">;
 }) {
   const m = getMessages(locale).concepts;
   return (
@@ -199,6 +217,10 @@ export function ConceptNote({
           </div>
         ))}
       </dl>
+
+      {entry.figures?.map((fig) => (
+        <QuestionImage key={fig.image} src={fig.src} alt={fig.alt} caption={fig.caption} />
+      ))}
 
       <p className="mt-6 text-sm font-bold text-accent">{m.notePoints}</p>
       <ul className="mt-2 list-disc space-y-1 pl-6">

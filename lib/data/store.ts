@@ -11,4 +11,6 @@ export interface DataStore {
   list(dir: string): Promise<string[]>;
   /** JSON 파일 내용. 파일이 없으면 null */
   readJson(file: string): Promise<unknown | null>;
+  /** 글자 파일 내용 (SVG 그림 등). 파일이 없으면 null */
+  readText(file: string): Promise<string | null>;
 }

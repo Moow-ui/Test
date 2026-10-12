@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { Markdown } from "@/components/Markdown";
+import { QuestionImage } from "@/components/QuestionImage";
 import { ChapterNotesLink } from "@/components/quiz/ChapterNotesLink";
 import { CreditButton, isReviewed } from "@/components/quiz/QuestionBadges";
 import { ReportForm } from "@/components/quiz/ReportForm";
@@ -241,6 +242,7 @@ export function ExamScreen({
           <h2 className="mt-2 whitespace-pre-wrap font-bold leading-normal">
             {index + 1}. {question.stem}
           </h2>
+          {question.imageSrc && <QuestionImage src={question.imageSrc} alt={question.imageAlt ?? ""} />}
 
           <ol className="mt-4 space-y-2">
             {shown.map((original, i) => {

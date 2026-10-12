@@ -7,7 +7,7 @@
  *     concepts.json               개념 정리 (선택. 검증을 통과한 단원만 페이지가 생긴다)
  *     questions/{chapterId}.json  단원별 문제 (파일당 최대 300문항, 넘으면 {chapterId}-2.json, -3.json)
  *     exams/{year}-{round}.json   실전 모의고사 구성
- *     assets/                     문제 그림
+ *     assets/                     문제·개념 그림 (SVG. 빌드 때 문제 파일·페이지 안에 넣는다)
  *   data/cert-queue.json          추가할 자격증 대기 목록
  *   data/review-queue/            검수 대기 목록
  *   data/legacy-question-ids.json 새 id 규칙 이전에 만든 문제 id (바꾸지 않는다)
@@ -75,5 +75,4 @@ export const publicPoolPath = (slug: string) => `${slug}/pool.json`;
 export const publicQuestionsPath = (slug: string) => `${slug}/questions.json`;
 /** 홈 "오늘의 1문제" 일정표 (나라별, lib/daily.ts) */
 export const publicDailyPath = (country: string) => `daily/${country.toLowerCase()}.json`;
-export const publicAssetPath = (slug: string, name: string) => `${slug}/assets/${name}`;
 export const publicDataUrl = (relative: string) => `/data/${relative}`;
