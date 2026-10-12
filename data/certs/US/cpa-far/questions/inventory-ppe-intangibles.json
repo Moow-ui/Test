@@ -1,0 +1,507 @@
+[
+  {
+    "id": "cpa-far-inventory-ppe-intangibles-0001",
+    "certId": "cpa-far",
+    "subjectId": "balance-sheet-accounts",
+    "chapterId": "inventory-ppe-intangibles",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A company uses a periodic FIFO system. Beginning inventory is 100 units at $10. It buys 200 units at $12. It sells 220 units. What is ending inventory?",
+    "choices": [
+      "$960",
+      "$800",
+      "$880",
+      "$2,440"
+    ],
+    "answer": 1,
+    "oneLineConcept": "FIFO: ending inventory = most recent costs",
+    "explanation": "Under FIFO, the first units bought are the first sold, so the units left are the newest ones.\n\n1. Units available: 100 + 200 = 300\n2. Units left: 300 − 220 = 80\n3. Ending inventory: 80 × $12 = $960\n\nCheck: COGS = $1,000 + 120 × $12 = $2,440; $2,440 + $960 = $3,400 = total cost available.\n\n**Wrong choices**\n- $800: This uses the oldest $10 cost, which is LIFO thinking; under FIFO the oldest units are sold first.\n- $880: This uses an average-type cost of $11, not FIFO.\n- $2,440: This is cost of goods sold, not ending inventory.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "inventory",
+      "FIFO"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-inventory-ppe-intangibles-0002",
+    "certId": "cpa-far",
+    "subjectId": "balance-sheet-accounts",
+    "chapterId": "inventory-ppe-intangibles",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A company uses FIFO. One inventory item cost $50. Its expected selling price is $60, and the costs to finish and sell it are $15. At what amount should the item be reported?",
+    "choices": [
+      "$50",
+      "$60",
+      "$45",
+      "$35"
+    ],
+    "answer": 3,
+    "oneLineConcept": "FIFO/average: lower of cost and net realizable value",
+    "explanation": "Inventory measured with FIFO or average cost is reported at the lower of cost and net realizable value (NRV). NRV is the selling price minus reasonable costs to complete and sell.\n\n1. NRV: $60 − $15 = $45\n2. Lower of $50 cost and $45 NRV = $45\n\n**Wrong choices**\n- $50: Inventory must be written down when net realizable value is below cost.\n- $60: Inventory is never written up to selling price.\n- $35: Only the costs to finish and sell are subtracted; there is no normal profit deduction under the lower of cost and NRV rule.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "inventory",
+      "LCNRV"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-inventory-ppe-intangibles-0003",
+    "certId": "cpa-far",
+    "subjectId": "balance-sheet-accounts",
+    "chapterId": "inventory-ppe-intangibles",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A company buys a machine for $50,000. It also pays $3,000 sales tax, $1,200 freight, and $800 installation. While installing it, its own workers damage a part, which costs $500 to repair. What cost should be capitalized for the machine?",
+    "choices": [
+      "$55,000",
+      "$55,500",
+      "$53,000",
+      "$50,000"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Capitalize costs needed to get the asset ready for use",
+    "explanation": "An asset's cost includes the price plus all normal costs needed to get it in place and ready to use. Costs from mistakes or accidents are expensed.\n\n1. Price: $50,000\n2. Sales tax + freight + installation: $3,000 + $1,200 + $800 = $5,000\n3. Capitalized cost = $55,000\n\nThe $500 repair is an expense.\n\n**Wrong choices**\n- $55,500: Repairing damage the company caused does not make the machine more useful; it is an expense.\n- $53,000: Freight and installation are needed to get the machine ready to use and must be capitalized.\n- $50,000: Sales tax, freight, and installation are all part of the machine's cost.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "PP&E",
+      "capitalization"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-inventory-ppe-intangibles-0004",
+    "certId": "cpa-far",
+    "subjectId": "balance-sheet-accounts",
+    "chapterId": "inventory-ppe-intangibles",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "On July 1 of Year 1, a company buys equipment for $60,000. It expects a 6-year life and a $6,000 salvage value, and it uses straight-line depreciation. What depreciation expense should it record for Year 1 (calendar year)?",
+    "choices": [
+      "$9,000",
+      "$5,000",
+      "$4,500",
+      "$10,000"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Straight-line: (cost − salvage) ÷ life, prorated",
+    "explanation": "Straight-line depreciation spreads cost minus salvage evenly over the useful life. A partial first year gets only the months used.\n\n1. Depreciable base: $60,000 − $6,000 = $54,000\n2. Yearly amount: $54,000 ÷ 6 = $9,000\n3. Year 1 (6 months): $9,000 × 6/12 = $4,500\n\n**Wrong choices**\n- $9,000: This is a full year of depreciation, but the equipment was used for only half of Year 1.\n- $5,000: Salvage value must be subtracted before computing depreciation.\n- $10,000: This ignores salvage value and charges a full year.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "depreciation",
+      "straight-line"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-inventory-ppe-intangibles-0005",
+    "certId": "cpa-far",
+    "subjectId": "balance-sheet-accounts",
+    "chapterId": "inventory-ppe-intangibles",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which cost should a manufacturer expense as research and development?",
+    "choices": [
+      "Routine quality-control testing during normal production",
+      "Designing and testing a prototype before production starts",
+      "Buying a patent from an outside party for use in current products",
+      "Legal fees to successfully defend an existing patent"
+    ],
+    "answer": 2,
+    "oneLineConcept": "R&D (no alternative future use) is expensed as incurred",
+    "explanation": "Research and development costs, such as designing, building, and testing prototypes before commercial production, are expensed as they are incurred. Routine production work and the cost of buying intangible assets are not R&D.\n\n**Wrong choices**\n- Routine quality-control testing during normal production: Routine testing in production is a manufacturing cost, not R&D.\n- Buying a patent from an outside party for use in current products: A purchased patent with ongoing use is an intangible asset and is capitalized.\n- Legal fees to successfully defend an existing patent: Legal costs to defend a patent are capitalized under U.S. GAAP when the defense succeeds, not treated as R&D.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "R&D",
+      "intangibles"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-inventory-ppe-intangibles-0006",
+    "certId": "cpa-far",
+    "subjectId": "balance-sheet-accounts",
+    "chapterId": "inventory-ppe-intangibles",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A company buys a machine for $50,000 with a $5,000 salvage value and a 5-year life. It uses double-declining-balance depreciation. What is depreciation expense in Year 2?",
+    "choices": [
+      "$10,800",
+      "$20,000",
+      "$9,000",
+      "$12,000"
+    ],
+    "answer": 4,
+    "oneLineConcept": "DDB: 2 × straight-line rate × beginning book value",
+    "explanation": "Double-declining balance uses twice the straight-line rate on the book value at the start of each year. Salvage is ignored in the calculation, but book value cannot go below salvage.\n\n1. Rate: 2 × (1 ÷ 5) = 40%\n2. Year 1: $50,000 × 40% = $20,000; book value $30,000\n3. Year 2: $30,000 × 40% = $12,000\n\nCheck: book value after Year 2 is $18,000, still above $5,000 salvage.\n\n**Wrong choices**\n- $10,800: Double-declining balance applies the rate to book value without first subtracting salvage.\n- $20,000: This is Year 1 depreciation.\n- $9,000: This is straight-line depreciation: ($50,000 − $5,000) ÷ 5.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "depreciation",
+      "double-declining balance"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-inventory-ppe-intangibles-0007",
+    "certId": "cpa-far",
+    "subjectId": "balance-sheet-accounts",
+    "chapterId": "inventory-ppe-intangibles",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A machine used in operations has a carrying amount of $400,000. Because of a drop in demand, the company tests it for impairment. Its undiscounted future cash flows are $380,000 and its fair value is $300,000. What impairment loss should be recognized?",
+    "choices": [
+      "$20,000",
+      "$100,000",
+      "$0",
+      "$80,000"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Held-and-used asset: recoverability test, then fair value",
+    "explanation": "For property held and used, there are two steps. First, if the carrying amount is more than undiscounted future cash flows, the asset is not recoverable. Second, the loss is carrying amount minus fair value.\n\n1. Recoverability: $400,000 > $380,000, so impaired\n2. Loss: $400,000 − $300,000 = $100,000\n\n**Wrong choices**\n- $20,000: The undiscounted cash flows are only used to decide whether there is an impairment; the loss is measured with fair value.\n- $0: The carrying amount is above the undiscounted cash flows, so the asset is not recoverable and a loss is required.\n- $80,000: This is the difference between undiscounted cash flows and fair value, which is not how the loss is measured.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "impairment",
+      "PP&E"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-inventory-ppe-intangibles-0008",
+    "certId": "cpa-far",
+    "subjectId": "balance-sheet-accounts",
+    "chapterId": "inventory-ppe-intangibles",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Equipment cost $80,000. On January 1, accumulated depreciation was $48,000. Annual straight-line depreciation is $8,000. The company sells the equipment on June 30 for $26,000. What gain or loss is reported on the sale?",
+    "choices": [
+      "A $6,000 loss",
+      "A $2,000 gain",
+      "A $54,000 loss",
+      "A $2,000 loss"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Update depreciation to sale date, then compare to proceeds",
+    "explanation": "Before recording a sale, depreciation is brought up to date. The gain or loss is the proceeds minus the book value.\n\n1. Depreciation Jan 1–June 30: $8,000 × 6/12 = $4,000\n2. Accumulated depreciation: $48,000 + $4,000 = $52,000\n3. Book value: $80,000 − $52,000 = $28,000\n4. Result: $26,000 − $28,000 = −$2,000 (loss)\n\n**Wrong choices**\n- A $6,000 loss: This skips the depreciation for the first half of the year, which must be recorded before the sale.\n- A $2,000 gain: The sale price is below the book value, so the result is a loss.\n- A $54,000 loss: This compares the sale price with original cost and ignores accumulated depreciation.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "disposal",
+      "PP&E"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-inventory-ppe-intangibles-0009",
+    "certId": "cpa-far",
+    "subjectId": "balance-sheet-accounts",
+    "chapterId": "inventory-ppe-intangibles",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A company uses the periodic weighted-average method. Beginning inventory is 200 units at $5. Purchases are 300 units at $6 and 500 units at $7. It sells 600 units. What is cost of goods sold?",
+    "choices": [
+      "$3,780",
+      "$3,500",
+      "$4,100",
+      "$2,520"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Weighted average: total cost ÷ total units",
+    "explanation": "Periodic weighted average uses one average cost for all units available in the period.\n\n1. Total cost: $1,000 + $1,800 + $3,500 = $6,300\n2. Total units: 200 + 300 + 500 = 1,000\n3. Average cost: $6,300 ÷ 1,000 = $6.30\n4. COGS: 600 × $6.30 = $3,780\n\nCheck: ending inventory 400 × $6.30 = $2,520; $3,780 + $2,520 = $6,300.\n\n**Wrong choices**\n- $3,500: This is FIFO cost of goods sold, using the oldest costs first.\n- $4,100: This is LIFO cost of goods sold, using the newest costs first.\n- $2,520: This is ending inventory (400 units), not cost of goods sold.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "inventory",
+      "weighted average"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-inventory-ppe-intangibles-0010",
+    "certId": "cpa-far",
+    "subjectId": "balance-sheet-accounts",
+    "chapterId": "inventory-ppe-intangibles",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A company builds a warehouse for its own use. Weighted-average accumulated expenditures for the year are $1,000,000. It has a $600,000 construction loan at 8%. Its other debt has a weighted-average rate of 10%. Total interest incurred during the year is $200,000. How much interest should be capitalized?",
+    "choices": [
+      "$100,000",
+      "$80,000",
+      "$88,000",
+      "$200,000"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Capitalize avoidable interest, capped at actual interest",
+    "explanation": "Interest capitalized is the interest that could have been avoided if the asset had not been built. Use the specific loan rate first, then the average rate on other debt, and never capitalize more than actual interest.\n\n1. Specific loan: $600,000 × 8% = $48,000\n2. Remaining: ($1,000,000 − $600,000) × 10% = $40,000\n3. Avoidable interest: $48,000 + $40,000 = $88,000\n4. Compare with actual $200,000: capitalize the lower, $88,000\n\n**Wrong choices**\n- $100,000: The specific construction loan rate (8%) must be used first for the part of expenditures it covers.\n- $80,000: Only $600,000 is covered by the 8% loan; the other $400,000 uses the 10% rate.\n- $200,000: Only avoidable interest is capitalized, which is less than total interest incurred here.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "interest capitalization",
+      "PP&E"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-inventory-ppe-intangibles-0011",
+    "certId": "cpa-far",
+    "subjectId": "balance-sheet-accounts",
+    "chapterId": "inventory-ppe-intangibles",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A public company tests goodwill for impairment. One reporting unit has a carrying amount of $1,500,000, including $200,000 of goodwill. The fair value of the reporting unit is $1,350,000. What goodwill impairment loss should be recognized?",
+    "choices": [
+      "$150,000",
+      "$200,000",
+      "$50,000",
+      "$0"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Goodwill loss = carrying amount − fair value (max goodwill)",
+    "explanation": "Under current GAAP (one-step test), a goodwill impairment equals the amount by which the reporting unit's carrying amount exceeds its fair value. The loss cannot be more than the goodwill balance.\n\n1. Excess: $1,500,000 − $1,350,000 = $150,000\n2. Limit: goodwill of $200,000\n3. Loss = $150,000 (less than the limit)\n\n**Wrong choices**\n- $200,000: The loss is the amount by which carrying amount exceeds fair value, not the whole goodwill balance.\n- $50,000: This subtracts the excess from goodwill instead of recording the excess as the loss.\n- $0: Carrying amount is above fair value, so an impairment exists.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "goodwill",
+      "impairment"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-inventory-ppe-intangibles-0012",
+    "certId": "cpa-far",
+    "subjectId": "balance-sheet-accounts",
+    "chapterId": "inventory-ppe-intangibles",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A company owns a trademark with an indefinite useful life. Its carrying amount is $300,000. Undiscounted future cash flows from the trademark are $350,000, and its fair value is $260,000. What impairment loss should be recognized?",
+    "choices": [
+      "$0",
+      "$90,000",
+      "$40,000",
+      "$300,000"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Indefinite-lived intangible: compare carrying amount with FV",
+    "explanation": "An indefinite-lived intangible asset (other than goodwill) is not amortized. It is tested by comparing its carrying amount directly with fair value, without a recoverability step.\n\n1. Carrying amount: $300,000\n2. Fair value: $260,000\n3. Loss: $300,000 − $260,000 = $40,000\n\n**Wrong choices**\n- $0: The undiscounted cash flow test is for long-lived assets held and used; indefinite-lived intangibles compare fair value directly.\n- $90,000: This compares undiscounted cash flows with fair value, which has no meaning in this test.\n- $300,000: The trademark is written down to fair value, not written off entirely.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "intangibles",
+      "impairment"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-inventory-ppe-intangibles-0013",
+    "certId": "cpa-far",
+    "subjectId": "balance-sheet-accounts",
+    "chapterId": "inventory-ppe-intangibles",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A company uses LIFO. For one item, LIFO cost is $20, replacement cost is $14, selling price is $25, costs to sell are $5, and the normal profit margin is $4. Under the lower of cost or market rule, at what amount per unit should the item be reported?",
+    "choices": [
+      "$14",
+      "$16",
+      "$20",
+      "$25"
+    ],
+    "answer": 2,
+    "oneLineConcept": "LIFO: lower of cost or market (ceiling/floor)",
+    "explanation": "LIFO and retail inventory still use lower of cost or market. Market is replacement cost, but it cannot be above NRV (ceiling) or below NRV minus normal profit (floor).\n\n1. Ceiling (NRV): $25 − $5 = $20\n2. Floor: $20 − $4 = $16\n3. Replacement cost $14 is below the floor, so market = $16\n4. Lower of cost $20 and market $16 = $16\n\n**Wrong choices**\n- $14: Replacement cost is below the floor (NRV minus normal profit), so market is set at the floor.\n- $20: Market ($16) is lower than cost ($20), so the item must be written down.\n- $25: Selling price is never used as the reported amount for inventory.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "inventory",
+      "LCM",
+      "LIFO"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-inventory-ppe-intangibles-0014",
+    "certId": "cpa-far",
+    "subjectId": "balance-sheet-accounts",
+    "chapterId": "inventory-ppe-intangibles",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A machine cost $100,000, with no salvage value and a 10-year life, depreciated straight-line. After 4 years, the company decides the machine will last only 4 more years and will have a $4,000 salvage value. What is depreciation expense in Year 5?",
+    "choices": [
+      "$12,000",
+      "$15,000",
+      "$10,000",
+      "$14,000"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Change in estimate: spread remaining book value forward",
+    "explanation": "A change in useful life or salvage value is a change in estimate. It is not applied to past years; the remaining book value is spread over the remaining life.\n\n1. Accumulated depreciation after 4 years: $10,000 × 4 = $40,000\n2. Book value: $100,000 − $40,000 = $60,000\n3. Year 5 depreciation: ($60,000 − $4,000) ÷ 4 = $14,000\n\n**Wrong choices**\n- $12,000: This spreads the change over the whole life instead of using the remaining book value.\n- $15,000: This forgets to subtract the new $4,000 salvage value.\n- $10,000: A change in estimate must be applied going forward; the old amount cannot be kept.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "depreciation",
+      "change in estimate"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  }
+]

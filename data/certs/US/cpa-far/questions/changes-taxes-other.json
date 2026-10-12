@@ -1,0 +1,730 @@
+[
+  {
+    "id": "cpa-far-changes-taxes-other-0001",
+    "certId": "cpa-far",
+    "subjectId": "select-transactions",
+    "chapterId": "changes-taxes-other",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A company changes its depreciation method from double-declining balance to straight-line. How is this change reported?",
+    "choices": [
+      "Retrospectively, by restating all prior periods presented",
+      "Prospectively, as a change in estimate effected by a change in principle",
+      "As a prior-period adjustment to beginning retained earnings",
+      "As a cumulative-effect amount in current-year income"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Depreciation method change = prospective",
+    "explanation": "A change in depreciation method is treated as a change in accounting estimate effected by a change in accounting principle. Because it cannot be separated from a change in estimate, it is applied prospectively: the remaining book value is depreciated with the new method from now on.\n\n**Wrong choices**\n- Retrospective restatement: this is for most changes in accounting principle, but not depreciation method changes.\n- Prior-period adjustment: this is for correcting errors.\n- Cumulative effect in income: this older approach is not used under current GAAP.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "accounting changes",
+      "depreciation method"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-changes-taxes-other-0002",
+    "certId": "cpa-far",
+    "subjectId": "select-transactions",
+    "chapterId": "changes-taxes-other",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A company finds that it made a material error in last year's issued financial statements. How should it correct the error?",
+    "choices": [
+      "Report the correction in current-year income as an unusual item",
+      "Correct it prospectively in current and future periods only",
+      "Disclose it in the notes without changing any amounts",
+      "Restate the prior-period statements and adjust the beginning retained earnings of the earliest period shown"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Material prior error = restatement",
+    "explanation": "A material error in previously issued statements is corrected by restatement. Prior periods shown are corrected, and the effect on earlier periods is recorded as an adjustment to the opening retained earnings of the earliest period presented.\n\n**Wrong choices**\n- Current-year income: correcting an old error through current income would distort this year's results.\n- Prospective: prospective treatment is for changes in estimate, not errors.\n- Disclose only: a material error must be corrected in the amounts, not just disclosed.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "error correction",
+      "restatement"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-changes-taxes-other-0003",
+    "certId": "cpa-far",
+    "subjectId": "select-transactions",
+    "chapterId": "changes-taxes-other",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A company is being sued. Its lawyers say a loss is probable, and the loss can be reasonably estimated at $200,000. How should the company report this?",
+    "choices": [
+      "Accrue a $200,000 liability and loss, and disclose the matter",
+      "Disclose the lawsuit in the notes only",
+      "Do nothing until the case is settled",
+      "Record the loss only if the company has insurance"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Probable and estimable loss = accrue",
+    "explanation": "A loss contingency is accrued (recorded) when it is both probable and reasonably estimable. Both conditions are met, so the company records a $200,000 loss and liability and also discloses the nature of the matter.\n\n**Wrong choices**\n- Disclose only: disclosure alone is for losses that are reasonably possible, or probable but not estimable.\n- Wait until settled: GAAP requires recording the loss now because both conditions are met.\n- Only if insured: insurance does not decide whether the loss is recorded.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "contingencies",
+      "loss contingency"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-changes-taxes-other-0004",
+    "certId": "cpa-far",
+    "subjectId": "select-transactions",
+    "chapterId": "changes-taxes-other",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A lawsuit loss is probable. The lawyers estimate the loss will be between $100,000 and $300,000, with no amount in the range more likely than any other. How much should be accrued?",
+    "choices": [
+      "$200,000",
+      "$300,000",
+      "$100,000",
+      "$0"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Range with no best estimate: accrue the minimum",
+    "explanation": "When a loss is probable and only a range can be estimated, the company accrues the best estimate in the range. If no amount is better than another, it accrues the minimum of the range, which is $100,000, and discloses the possible additional loss of up to $200,000.\n\n**Wrong choices**\n- $200,000: the midpoint is not used under US GAAP when no amount is a better estimate.\n- $300,000: the maximum is not required; the extra possible loss is disclosed.\n- $0: a probable loss that can be estimated as a range must still be accrued.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "contingencies",
+      "range of loss"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-changes-taxes-other-0005",
+    "certId": "cpa-far",
+    "subjectId": "select-transactions",
+    "chapterId": "changes-taxes-other",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A company holds shares that trade on a major stock exchange. It measures them at fair value using the exchange's closing price for those same shares. Which level of the fair value hierarchy is this input?",
+    "choices": [
+      "Level 2",
+      "Level 3",
+      "Level 1",
+      "Level 4"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Quoted price, identical asset, active market = Level 1",
+    "explanation": "Level 1 inputs are quoted prices in active markets for identical assets. A closing exchange price for the very same shares fits this exactly.\n\n**Wrong choices**\n- Level 2: this is for observable inputs other than Level 1 prices, such as prices for similar assets.\n- Level 3: this is for unobservable inputs, such as the company's own models.\n- Level 4: the hierarchy has only three levels.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "fair value",
+      "hierarchy"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-changes-taxes-other-0006",
+    "certId": "cpa-far",
+    "subjectId": "select-transactions",
+    "chapterId": "changes-taxes-other",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A company's year ends December 31. On January 20, before the statements are issued, a fire destroys one of its warehouses. The warehouse was in good condition at year-end. How should the company report this?",
+    "choices": [
+      "Disclose it in the notes without adjusting the year-end amounts",
+      "Reduce the warehouse's carrying amount in the year-end balance sheet",
+      "Record a loss in the year just ended",
+      "Ignore it because it happened after year-end"
+    ],
+    "answer": 1,
+    "oneLineConcept": "New condition after year-end = disclose, don't adjust",
+    "explanation": "The fire is a nonrecognized subsequent event because the condition (the fire) did not exist at the balance sheet date. The year-end amounts are not changed, but a material event like this is disclosed so readers are not misled.\n\n**Wrong choices**\n- Reduce the carrying amount: year-end amounts are adjusted only for conditions that existed at year-end.\n- Record a loss in the year just ended: the loss belongs to the new year, when the fire happened.\n- Ignore it: a material subsequent event must be disclosed.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "subsequent events",
+      "nonrecognized"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-changes-taxes-other-0007",
+    "certId": "cpa-far",
+    "subjectId": "select-transactions",
+    "chapterId": "changes-taxes-other",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which item creates a permanent difference between book income and taxable income?",
+    "choices": [
+      "Using faster depreciation for tax than for books",
+      "A warranty expense accrued for books but deducted for tax when paid",
+      "Rent collected in advance that is taxed when received",
+      "Interest earned on tax-exempt municipal bonds"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Tax-exempt interest is a permanent difference",
+    "explanation": "A permanent difference is an item that is counted for books but never for tax (or the reverse). Municipal bond interest is book income but is never taxed, so it never reverses and creates no deferred tax.\n\n**Wrong choices**\n- Faster tax depreciation: this is a temporary difference that reverses over the asset's life.\n- Warranty accrual: this is a temporary difference that reverses when the warranty is paid.\n- Rent received in advance: this is a temporary difference that reverses when the rent is earned for books.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "income taxes",
+      "permanent difference"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-changes-taxes-other-0008",
+    "certId": "cpa-far",
+    "subjectId": "select-transactions",
+    "chapterId": "changes-taxes-other",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "At year-end, a machine's book value is $60,000 higher than its tax basis because of faster tax depreciation. The enacted tax rate for all future years is 25%. What deferred tax amount should be reported?",
+    "choices": [
+      "Deferred tax asset of $15,000",
+      "Deferred tax liability of $15,000",
+      "Deferred tax liability of $60,000",
+      "No deferred tax, because the difference is permanent"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Book basis > tax basis on asset = DTL",
+    "explanation": "When an asset's book value is higher than its tax basis, the company will pay more tax in the future when the difference reverses, so it records a deferred tax liability.\n1. Deferred tax liability = $60,000 x 25% = $15,000\n\n**Wrong choices**\n- Deferred tax asset: an asset with book value above tax basis leads to future taxable amounts, so it is a liability.\n- $60,000 liability: this is the temporary difference itself, not the tax on it.\n- No deferred tax: depreciation differences reverse over time, so they are temporary.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "income taxes",
+      "deferred tax liability"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-changes-taxes-other-0009",
+    "certId": "cpa-far",
+    "subjectId": "select-transactions",
+    "chapterId": "changes-taxes-other",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A company has accrued a $40,000 warranty liability that will be deducted for tax next year when paid. The current tax rate is 25%, but a new law already enacted sets the rate at 20% starting next year. What deferred tax asset should be reported?",
+    "choices": [
+      "$10,000",
+      "$8,000",
+      "$2,000",
+      "$40,000"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Use the enacted rate for the reversal year",
+    "explanation": "Deferred taxes use the enacted tax rate expected to apply when the difference reverses. The warranty will be deducted next year, when the enacted rate is 20%.\n1. Deferred tax asset = $40,000 x 20% = $8,000\n\n**Wrong choices**\n- $10,000: this uses the current 25% rate instead of the enacted future rate.\n- $2,000: this uses only the 5% rate change.\n- $40,000: this is the temporary difference, not the tax effect.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "income taxes",
+      "enacted rate",
+      "deferred tax asset"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-changes-taxes-other-0010",
+    "certId": "cpa-far",
+    "subjectId": "select-transactions",
+    "chapterId": "changes-taxes-other",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A machine cost $100,000, has no salvage value, and was depreciated straight-line over 10 years. At the start of Year 5, the company decides the machine will last only 3 more years. What is Year 5 depreciation?",
+    "choices": [
+      "$10,000",
+      "$14,286",
+      "$15,000",
+      "$20,000"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Change in useful life: spread book value over new life",
+    "explanation": "A change in useful life is a change in estimate, applied prospectively. The remaining book value is spread over the remaining life.\n1. Accumulated depreciation after 4 years = $10,000 x 4 = $40,000\n2. Book value = $100,000 - $40,000 = $60,000\n3. Year 5 depreciation = $60,000 / 3 = $20,000\n\n**Wrong choices**\n- $10,000: this keeps the old 10-year life.\n- $14,286: this divides the original cost by a 7-year total life, as if restating past years.\n- $15,000: this divides the book value by 4 years instead of the 3 remaining years.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "accounting changes",
+      "change in estimate",
+      "depreciation"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-changes-taxes-other-0011",
+    "certId": "cpa-far",
+    "subjectId": "select-transactions",
+    "chapterId": "changes-taxes-other",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A company has deferred tax assets of $80,000. Based on available evidence, it is more likely than not that $20,000 of them will not be realized. What net deferred tax asset should be reported?",
+    "choices": [
+      "$60,000",
+      "$80,000",
+      "$20,000",
+      "$0"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Valuation allowance for the part not likely realized",
+    "explanation": "A valuation allowance is recorded when it is more likely than not (over 50%) that some of a deferred tax asset will not be realized.\n1. Valuation allowance = $20,000\n2. Net deferred tax asset = $80,000 - $20,000 = $60,000\n\n**Wrong choices**\n- $80,000: this ignores the needed valuation allowance.\n- $20,000: this is the allowance amount, not the net asset.\n- $0: only the part not expected to be realized is reduced, not the whole asset.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "income taxes",
+      "valuation allowance"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-changes-taxes-other-0012",
+    "certId": "cpa-far",
+    "subjectId": "select-transactions",
+    "chapterId": "changes-taxes-other",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "At December 31, a company accrued $100,000 for a probable lawsuit loss that began last year. On February 10, before the statements are issued, the case settles for $150,000. How should the December 31 statements report this?",
+    "choices": [
+      "Keep the $100,000 accrual and disclose the settlement only",
+      "Record the extra $50,000 loss in next year's statements only",
+      "Increase the accrued liability to $150,000 at December 31",
+      "Reverse the accrual because the case is now settled"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Condition existed at year-end = adjust the statements",
+    "explanation": "The lawsuit existed at year-end, so the settlement gives better evidence about a condition that already existed. This is a recognized subsequent event, and the year-end liability is adjusted to the settlement amount of $150,000 (an extra $50,000 loss).\n\n**Wrong choices**\n- Disclose only: disclosure without adjusting is for conditions that arose after year-end.\n- Next year only: the condition existed at year-end, so the year just ended is adjusted.\n- Reverse the accrual: the amount is still owed at year-end; settlement confirms it.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "subsequent events",
+      "recognized",
+      "contingencies"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-changes-taxes-other-0013",
+    "certId": "cpa-far",
+    "subjectId": "select-transactions",
+    "chapterId": "changes-taxes-other",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which is an example of a Level 2 input in the fair value hierarchy?",
+    "choices": [
+      "A quoted price in an active market for the identical asset",
+      "A company's own forecast of future cash flows that market data cannot confirm",
+      "A quoted price in an active market for a similar (not identical) asset",
+      "The original purchase price paid for the asset several years ago"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Level 2 = observable, but not identical-asset quotes",
+    "explanation": "Level 2 inputs are observable but are not quoted prices for the identical asset in an active market. A quoted price for a similar asset is observable, so it is a typical Level 2 input.\n\n**Wrong choices**\n- Identical asset quote: this is a Level 1 input.\n- Own forecast not confirmed by market data: this is an unobservable Level 3 input.\n- Original purchase price: historical cost is not a fair value input.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "fair value",
+      "hierarchy",
+      "Level 2"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-changes-taxes-other-0014",
+    "certId": "cpa-far",
+    "subjectId": "select-transactions",
+    "chapterId": "changes-taxes-other",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "In Year 2, a company discovers that it forgot to record $40,000 of depreciation in Year 1. Year 2 financial statements are presented alone (not comparative). Ignoring income taxes, how should the error be corrected?",
+    "choices": [
+      "Decrease beginning Year 2 retained earnings by $40,000 as a prior-period adjustment",
+      "Add $40,000 to Year 2 depreciation expense",
+      "Spread the $40,000 over Year 2 and future years",
+      "Disclose the error in the notes without changing any amounts"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Prior error correction = adjust beginning retained earnings",
+    "explanation": "Correcting a prior-period error is a prior-period adjustment. With single-year statements, the adjustment goes to beginning retained earnings of Year 2: retained earnings goes down $40,000 and accumulated depreciation goes up $40,000. Year 2 income shows only Year 2 depreciation.\n\n**Wrong choices**\n- Add to Year 2 expense: this would wrongly put a Year 1 cost into Year 2 income.\n- Spread over future years: prospective treatment is for changes in estimate, not errors.\n- Disclose only: a material error must be corrected in the amounts.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "error correction",
+      "prior-period adjustment"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-changes-taxes-other-0015",
+    "certId": "cpa-far",
+    "subjectId": "select-transactions",
+    "chapterId": "changes-taxes-other",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A company has pretax book income of $500,000. This includes $20,000 of tax-exempt municipal bond interest. Tax depreciation is $40,000 more than book depreciation. The enacted tax rate is 25% for all years. What is total income tax expense?",
+    "choices": [
+      "$110,000",
+      "$125,000",
+      "$130,000",
+      "$120,000"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Tax expense = current + deferred; permanent items excluded",
+    "explanation": "Total tax expense is current tax plus deferred tax. The municipal interest is never taxed, while the depreciation difference only shifts tax to later years.\n1. Taxable income = $500,000 - $20,000 - $40,000 = $440,000\n2. Current tax = $440,000 x 25% = $110,000\n3. Deferred tax expense = $40,000 x 25% = $10,000\n4. Total = $110,000 + $10,000 = $120,000\nCheck: ($500,000 - $20,000) x 25% = $120,000.\n\n**Wrong choices**\n- $110,000: this is only the current tax and leaves out deferred tax expense.\n- $125,000: this taxes the tax-exempt interest, which is a permanent difference.\n- $130,000: this adds the depreciation difference to income instead of treating it as temporary.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "income taxes",
+      "tax expense",
+      "temporary difference"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-changes-taxes-other-0016",
+    "certId": "cpa-far",
+    "subjectId": "select-transactions",
+    "chapterId": "changes-taxes-other",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "At the start of Year 2, a company changes its inventory method from LIFO to FIFO. Comparative statements for Year 1 and Year 2 are presented. Inventory at January 1, Year 1 would have been $50,000 higher under FIFO. The tax rate is 25%. How is this effect reported?",
+    "choices": [
+      "As a $50,000 increase to January 1, Year 1 retained earnings",
+      "As a $37,500 increase to January 1, Year 1 retained earnings",
+      "As a $37,500 gain in Year 2 net income",
+      "Prospectively, with no adjustment to prior periods"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Principle change: retrospective, net of tax",
+    "explanation": "A change from LIFO to FIFO is a change in accounting principle, applied retrospectively. The effect on periods before those shown is recorded, net of tax, in opening retained earnings of the earliest period presented.\n1. Pretax effect = $50,000\n2. Tax effect = $50,000 x 25% = $12,500\n3. Net effect = $50,000 - $12,500 = $37,500 increase to January 1, Year 1 retained earnings\n\n**Wrong choices**\n- $50,000 increase: the adjustment to retained earnings is net of tax.\n- $37,500 gain in Year 2 income: cumulative effects of principle changes do not go through current income.\n- Prospectively: prospective treatment is for changes in estimate; inventory method changes are retrospective.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "accounting changes",
+      "change in principle",
+      "retrospective"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-changes-taxes-other-0017",
+    "certId": "cpa-far",
+    "subjectId": "select-transactions",
+    "chapterId": "changes-taxes-other",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A company overstated its Year 1 ending inventory by $10,000. The error was never found. Ignoring taxes, what is the effect on Year 2?",
+    "choices": [
+      "Year 2 net income is overstated by $10,000, and Year 2 ending retained earnings is overstated",
+      "Year 2 net income is understated by $10,000, and Year 2 ending retained earnings is correct",
+      "Year 2 net income is correct, and Year 2 ending retained earnings is overstated by $10,000",
+      "Year 2 net income is understated by $10,000, and Year 2 ending retained earnings is understated"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Inventory errors reverse (counterbalance) in the next year",
+    "explanation": "An inventory error corrects itself over two years.\n1. Year 1: ending inventory too high makes cost of goods sold too low, so Year 1 income is overstated by $10,000.\n2. Year 2: beginning inventory is too high, so cost of goods sold is too high and Year 2 income is understated by $10,000.\n3. Over both years the errors cancel, so retained earnings at the end of Year 2 is correct.\n\n**Wrong choices**\n- Year 2 income overstated: the high beginning inventory raises Year 2 cost of goods sold, which lowers income.\n- Year 2 income correct, retained earnings overstated: this describes the end of Year 1, not Year 2.\n- Retained earnings understated: the Year 1 overstatement and Year 2 understatement cancel out.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "error correction",
+      "inventory error",
+      "counterbalancing"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-changes-taxes-other-0018",
+    "certId": "cpa-far",
+    "subjectId": "select-transactions",
+    "chapterId": "changes-taxes-other",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "At year-end, a company has a $90,000 taxable temporary difference that will reverse equally ($30,000 per year) over the next three years. Enacted tax rates for those years are 25%, 25%, and 20%. What deferred tax liability should be reported?",
+    "choices": [
+      "$22,500",
+      "$18,000",
+      "$7,500",
+      "$21,000"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Schedule reversals and apply each year's enacted rate",
+    "explanation": "Deferred taxes use the enacted rate for the year each part of the difference reverses.\n1. Year 1 reversal: $30,000 x 25% = $7,500\n2. Year 2 reversal: $30,000 x 25% = $7,500\n3. Year 3 reversal: $30,000 x 20% = $6,000\n4. Total deferred tax liability = $7,500 + $7,500 + $6,000 = $21,000\n\n**Wrong choices**\n- $22,500: this applies 25% to all three years, ignoring the lower Year 3 rate.\n- $18,000: this applies 20% to all three years.\n- $7,500: this covers only the first year's reversal.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "income taxes",
+      "enacted rate",
+      "scheduling"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-changes-taxes-other-0019",
+    "certId": "cpa-far",
+    "subjectId": "select-transactions",
+    "chapterId": "changes-taxes-other",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "At year-end, a company has three matters: (a) a lawsuit with a probable loss reasonably estimated at $200,000, (b) a dispute with a reasonably possible loss estimated at $300,000, and (c) a lawsuit it filed with a probable gain of $100,000. What total liability should be accrued for these matters?",
+    "choices": [
+      "$200,000",
+      "$400,000",
+      "$500,000",
+      "$100,000"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Accrue probable losses only; never accrue gains",
+    "explanation": "Only loss contingencies that are probable and reasonably estimable are accrued.\n1. (a) Probable and estimable: accrue $200,000\n2. (b) Reasonably possible: disclose only, accrue $0\n3. (c) Gain contingency: not recognized until realized, so it does not reduce the liability\n4. Total accrued liability = $200,000\n\n**Wrong choices**\n- $400,000: this adds the reasonably possible loss and subtracts the gain; neither belongs in the accrual.\n- $500,000: reasonably possible losses are disclosed, not accrued.\n- $100,000: a gain contingency cannot be netted against a loss accrual.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "contingencies",
+      "gain contingency"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-changes-taxes-other-0020",
+    "certId": "cpa-far",
+    "subjectId": "select-transactions",
+    "chapterId": "changes-taxes-other",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "At the start of the year, a company has a deferred tax liability of $40,000 from a $200,000 taxable temporary difference taxed at an enacted 20% rate. During the year a new law is enacted raising the future rate to 25%. The temporary difference is unchanged. How is the rate change recorded?",
+    "choices": [
+      "Increase the deferred tax liability by $10,000 and adjust beginning retained earnings",
+      "Make no change until the new rate actually takes effect",
+      "Increase the deferred tax liability by $10,000 and record it in income tax expense from continuing operations this year",
+      "Increase the deferred tax liability by $50,000 through income tax expense"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Rate change hits continuing operations in year enacted",
+    "explanation": "Deferred tax balances are remeasured when a new rate is enacted, and the effect goes to income tax expense from continuing operations in that period.\n1. New liability = $200,000 x 25% = $50,000\n2. Old liability = $40,000\n3. Increase = $50,000 - $40,000 = $10,000\n\n**Wrong choices**\n- Adjust retained earnings: a tax rate change is a change in estimate, not a restatement.\n- Wait until effective: the change is recorded when the law is enacted.\n- Increase by $50,000: $50,000 is the new total balance; the increase is only $10,000.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "income taxes",
+      "rate change"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+]

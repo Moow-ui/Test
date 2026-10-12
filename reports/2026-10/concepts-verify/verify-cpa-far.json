@@ -1,0 +1,43 @@
+{
+  "cert": "cpa-far",
+  "checkedAt": "2026-10-12",
+  "by": "separate verifier AI",
+  "chapters": {
+    "fs-presentation": {
+      "verdict": "PASS",
+      "problems": []
+    },
+    "not-for-profit": {
+      "verdict": "PASS",
+      "problems": []
+    },
+    "state-local-government": {
+      "verdict": "PASS",
+      "problems": []
+    },
+    "cash-receivables-investments": {
+      "verdict": "PASS",
+      "problems": []
+    },
+    "inventory-ppe-intangibles": {
+      "verdict": "PASS",
+      "problems": []
+    },
+    "liabilities-debt-equity": {
+      "verdict": "PASS",
+      "problems": []
+    },
+    "revenue-leases": {
+      "verdict": "PASS",
+      "problems": []
+    },
+    "changes-taxes-other": {
+      "verdict": "PASS",
+      "problems": []
+    }
+  },
+  "notes": [
+    "Minor (not FAIL): fund-categories card cited GASB 34 only; custodial funds come from GASB 84 → source changed to 'GASB Statements 34 and 84'.",
+    "After PASS: 9 strings shortened only to meet schema length limits (summary ≤600, definition ≤300, term ≤40) — two summaries split into extra paragraphs, wording trimmed; no facts added or changed."
+  ]
+}

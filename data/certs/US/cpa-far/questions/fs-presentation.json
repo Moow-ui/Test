@@ -1,0 +1,655 @@
+[
+  {
+    "id": "cpa-far-fs-presentation-0001",
+    "certId": "cpa-far",
+    "subjectId": "financial-reporting",
+    "chapterId": "fs-presentation",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Lake Co. reports net income of $50,000. Depreciation expense was $8,000. Accounts receivable increased by $5,000 and accounts payable increased by $3,000. Using the indirect method, what is net cash provided by operating activities?",
+    "choices": [
+      "$60,000",
+      "$50,000",
+      "$56,000",
+      "$40,000"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Indirect method: add noncash items, adjust working capital",
+    "explanation": "Start with net income and remove noncash items and working capital effects.\n\n1. Net income: $50,000\n2. Add depreciation (noncash): +$8,000 → $58,000\n3. Subtract increase in receivables (sales not yet collected): −$5,000 → $53,000\n4. Add increase in payables (costs not yet paid): +$3,000 → $56,000\n\nCheck: 50,000 + 8,000 − 5,000 + 3,000 = 56,000.\n\n**Wrong choices**\n- $60,000: This reverses the signs of both working capital changes: an increase in receivables lowers cash, and an increase in payables raises it.\n- $50,000: This subtracts the increase in payables. A payables increase means cash was not yet paid, so it is added back.\n- $40,000: This subtracts depreciation. Depreciation is a noncash expense and is added back to net income.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "cash flows",
+      "indirect method"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-fs-presentation-0002",
+    "certId": "cpa-far",
+    "subjectId": "financial-reporting",
+    "chapterId": "fs-presentation",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Under US GAAP, how is cash paid for interest on a company's bank loan classified in the statement of cash flows?",
+    "choices": [
+      "Financing activities",
+      "Operating activities",
+      "Either operating or financing, as chosen by company policy",
+      "Investing activities"
+    ],
+    "answer": 2,
+    "oneLineConcept": "US GAAP: interest paid is an operating cash flow",
+    "explanation": "Under US GAAP, interest paid and interest received are both operating cash flows because interest expense and interest income are part of net income. Only the repayment of the loan principal is a financing cash outflow.\n\n**Wrong choices**\n- Financing activities: Repaying loan principal is financing, but interest paid is an operating cash flow under US GAAP.\n- Either operating or financing, as chosen by company policy: A policy choice for interest paid is allowed under IFRS, not under US GAAP.\n- Investing activities: Investing covers buying and selling long-term assets and investments, not paying interest.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "cash flows",
+      "classification"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-fs-presentation-0003",
+    "certId": "cpa-far",
+    "subjectId": "financial-reporting",
+    "chapterId": "fs-presentation",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which of the following cash flows is reported as an investing activity in a for-profit company's statement of cash flows?",
+    "choices": [
+      "Cash paid for dividends to shareholders",
+      "Cash received from issuing bonds",
+      "Cash paid to buy new equipment",
+      "Cash paid to suppliers for inventory"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Buying/selling long-term assets = investing",
+    "explanation": "Investing activities are cash flows from buying and selling long-term assets (such as equipment, land, and buildings) and investments in other entities, and from making and collecting loans. Buying equipment is a classic investing outflow.\n\n**Wrong choices**\n- Cash paid for dividends to shareholders: Dividends paid are payments to owners, which are financing activities.\n- Cash received from issuing bonds: Borrowing money by issuing bonds is a financing activity.\n- Cash paid to suppliers for inventory: Buying inventory is part of normal operations, so it is an operating activity.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "cash flows",
+      "classification"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-fs-presentation-0004",
+    "certId": "cpa-far",
+    "subjectId": "financial-reporting",
+    "chapterId": "fs-presentation",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which of the following items is reported in other comprehensive income (OCI), not in net income?",
+    "choices": [
+      "Unrealized holding gain on trading debt securities",
+      "Unrealized holding gain on available-for-sale debt securities",
+      "Unrealized holding gain on equity securities with a readily determinable fair value",
+      "Gain on the sale of equipment"
+    ],
+    "answer": 2,
+    "oneLineConcept": "AFS debt unrealized gains/losses go to OCI",
+    "explanation": "Unrealized gains and losses on available-for-sale (AFS) debt securities are reported in other comprehensive income and build up in accumulated OCI until the securities are sold. Other common OCI items include foreign currency translation adjustments and certain pension amounts.\n\n**Wrong choices**\n- Unrealized holding gain on trading debt securities: Changes in fair value of trading securities go straight to net income.\n- Unrealized holding gain on equity securities with a readily determinable fair value: Under current GAAP, fair value changes on such equity securities are reported in net income.\n- Gain on the sale of equipment: A realized gain on selling equipment is reported in net income.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "comprehensive income",
+      "OCI"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-fs-presentation-0005",
+    "certId": "cpa-far",
+    "subjectId": "financial-reporting",
+    "chapterId": "fs-presentation",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A company sold a component that qualifies as a discontinued operation. Where are the results of the discontinued operation reported in the income statement?",
+    "choices": [
+      "In a separate section after income from continuing operations, net of tax",
+      "Within operating expenses as part of continuing operations",
+      "In other comprehensive income",
+      "As an adjustment to beginning retained earnings"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Discontinued ops: separate line, net of tax",
+    "explanation": "Results of a discontinued operation (its operating income or loss and any gain or loss on disposal) are shown as a separate line below income from continuing operations. The amount is shown net of income tax, so the tax on it is not included in continuing income tax expense.\n\n**Wrong choices**\n- Within operating expenses as part of continuing operations: Discontinued operations are kept out of continuing operations so readers can see the ongoing business.\n- In other comprehensive income: Discontinued operations are part of net income, not OCI.\n- As an adjustment to beginning retained earnings: Only error corrections and certain changes in principle adjust beginning retained earnings; discontinued operations are reported in the current income statement.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "discontinued operations",
+      "income statement"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-fs-presentation-0006",
+    "certId": "cpa-far",
+    "subjectId": "financial-reporting",
+    "chapterId": "fs-presentation",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Under an agreement with its lender, a company must keep $500,000 of cash in a separate account to repay bonds that are due in five years. How should this cash be classified on the balance sheet?",
+    "choices": [
+      "As a noncurrent asset",
+      "As a current asset included in cash and cash equivalents",
+      "As a reduction of bonds payable",
+      "As a reserve within stockholders' equity"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Cash restricted for long-term use is noncurrent",
+    "explanation": "Cash that is restricted for a long-term purpose, such as repaying debt that is due beyond one year, is classified as a noncurrent asset. It is not available for current operations, so it is not reported with current cash.\n\n**Wrong choices**\n- As a current asset included in cash and cash equivalents: The cash cannot be used for current operations and is tied to debt due in five years, so it is not a current asset.\n- As a reduction of bonds payable: Assets and liabilities are not offset here; the bonds are still owed until paid.\n- As a reserve within stockholders' equity: The money is an asset of the company, not part of equity.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "balance sheet",
+      "classification",
+      "restricted cash"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-fs-presentation-0007",
+    "certId": "cpa-far",
+    "subjectId": "financial-reporting",
+    "chapterId": "fs-presentation",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Ridge Co. uses the direct method. For the year, cost of goods sold was $300,000. Inventory increased by $20,000 and accounts payable to suppliers increased by $15,000. How much cash did Ridge pay to suppliers?",
+    "choices": [
+      "$320,000",
+      "$285,000",
+      "$305,000",
+      "$335,000"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Cash to suppliers = COGS + inv. increase − AP increase",
+    "explanation": "Work from cost of goods sold to purchases, then from purchases to cash paid.\n\n1. Purchases = COGS + inventory increase = 300,000 + 20,000 = $320,000\n2. Cash paid = purchases − increase in payables = 320,000 − 15,000 = $305,000\n\nCheck: 300,000 + 20,000 − 15,000 = 305,000.\n\n**Wrong choices**\n- $320,000: This is purchases. It ignores that part of the purchases was not yet paid because payables increased.\n- $285,000: This subtracts the inventory increase instead of adding it.\n- $335,000: This adds the payables increase. A higher payable means less cash was paid, so it is subtracted.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "cash flows",
+      "direct method"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-fs-presentation-0008",
+    "certId": "cpa-far",
+    "subjectId": "financial-reporting",
+    "chapterId": "fs-presentation",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Hill Co. had sales on account of $500,000 for the year. Accounts receivable were $60,000 at the beginning of the year and $45,000 at the end. There were no write-offs. How much cash did Hill collect from customers?",
+    "choices": [
+      "$485,000",
+      "$500,000",
+      "$545,000",
+      "$515,000"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Cash collected = sales + decrease in A/R",
+    "explanation": "Cash collected equals sales plus what was owed at the start, minus what is still owed at the end.\n\n1. Beginning receivables + sales = 60,000 + 500,000 = $560,000\n2. Less ending receivables: 560,000 − 45,000 = $515,000\n\nCheck: receivables fell by 15,000, so cash collected is 500,000 + 15,000 = 515,000.\n\n**Wrong choices**\n- $485,000: This subtracts the decrease in receivables. A decrease means extra old balances were collected, so it is added.\n- $500,000: This equals sales and ignores the change in receivables.\n- $545,000: This adds the beginning receivables but then subtracts only the $15,000 change, not the $45,000 still owed at year-end.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "cash flows",
+      "direct method"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-fs-presentation-0009",
+    "certId": "cpa-far",
+    "subjectId": "financial-reporting",
+    "chapterId": "fs-presentation",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Stone Co. reported net income of $100,000, including depreciation expense of $15,000. During the year it sold equipment with a carrying amount of $30,000 for $42,000 cash. There were no other adjustments. What is net cash provided by operating activities using the indirect method?",
+    "choices": [
+      "$127,000",
+      "$115,000",
+      "$157,000",
+      "$103,000"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Subtract gains on asset sales in indirect method",
+    "explanation": "The gain on sale is in net income, but the $42,000 cash received is reported in investing activities, so the gain is removed from operating cash flow.\n\n1. Gain on sale = 42,000 − 30,000 = $12,000\n2. Operating cash flow = 100,000 + 15,000 − 12,000 = $103,000\n\nCheck: the $42,000 proceeds appear once, as an investing inflow.\n\n**Wrong choices**\n- $127,000: This adds the gain. A gain increases net income but the related cash is investing, so the gain is subtracted.\n- $115,000: This leaves the gain in operating cash flow; the $12,000 gain must be removed.\n- $157,000: This adds the full sale proceeds. Proceeds from selling equipment are an investing inflow, not operating.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "cash flows",
+      "indirect method",
+      "gain on sale"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-fs-presentation-0010",
+    "certId": "cpa-far",
+    "subjectId": "financial-reporting",
+    "chapterId": "fs-presentation",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "For the year, Pine Co. reported net income of $80,000. It also had an unrealized gain on available-for-sale debt securities of $6,000 (net of tax), a foreign currency translation loss of $2,000 (net of tax), and declared cash dividends of $10,000. What is Pine's total comprehensive income?",
+    "choices": [
+      "$74,000",
+      "$88,000",
+      "$86,000",
+      "$84,000"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Comprehensive income = net income + OCI (no dividends)",
+    "explanation": "Comprehensive income is net income plus other comprehensive income. Dividends are not an expense or a loss; they reduce retained earnings directly.\n\n1. OCI = 6,000 − 2,000 = $4,000\n2. Comprehensive income = 80,000 + 4,000 = $84,000\n\nCheck: dividends of 10,000 are left out completely.\n\n**Wrong choices**\n- $74,000: This subtracts dividends. Dividends are distributions to owners and are not part of comprehensive income.\n- $88,000: This adds the translation loss instead of subtracting it.\n- $86,000: This includes the gain but leaves out the translation loss.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "comprehensive income",
+      "OCI"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-fs-presentation-0011",
+    "certId": "cpa-far",
+    "subjectId": "financial-reporting",
+    "chapterId": "fs-presentation",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Oak Corp. had beginning retained earnings of $400,000. During the year it reported net income of $90,000, declared and paid cash dividends of $30,000, and declared and issued a small (10%) stock dividend recorded at a fair value of $20,000. What is ending retained earnings?",
+    "choices": [
+      "$460,000",
+      "$440,000",
+      "$490,000",
+      "$510,000"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Ending RE = beginning + NI − cash and stock dividends",
+    "explanation": "Both cash dividends and stock dividends reduce retained earnings. A small stock dividend is recorded at the fair value of the shares issued.\n\n1. 400,000 + 90,000 = $490,000\n2. Less cash dividends: 490,000 − 30,000 = $460,000\n3. Less stock dividend: 460,000 − 20,000 = $440,000\n\nCheck: 400,000 + 90,000 − 30,000 − 20,000 = 440,000.\n\n**Wrong choices**\n- $460,000: This leaves out the stock dividend. A small stock dividend moves its fair value out of retained earnings.\n- $490,000: This ignores both dividends.\n- $510,000: This adds the stock dividend instead of subtracting it.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "changes in equity",
+      "retained earnings",
+      "dividends"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-fs-presentation-0012",
+    "certId": "cpa-far",
+    "subjectId": "financial-reporting",
+    "chapterId": "fs-presentation",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A company bought land by signing a $100,000 long-term note payable to the seller. No cash changed hands. How is this reported in the statement of cash flows?",
+    "choices": [
+      "Disclosed as a noncash investing and financing activity, not in the body of the statement",
+      "As a $100,000 investing outflow and a $100,000 financing inflow",
+      "As a $100,000 investing outflow only",
+      "It is not reported or disclosed anywhere"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Noncash investing/financing: disclose separately",
+    "explanation": "Buying land with a note is a significant investing and financing transaction, but it does not use cash. It is left out of the body of the statement and disclosed separately (in a schedule or in the notes). When the note is later paid, that cash payment is a financing outflow.\n\n**Wrong choices**\n- As a $100,000 investing outflow and a $100,000 financing inflow: No cash moved, so nothing goes in the body of the cash flow statement.\n- As a $100,000 investing outflow only: No cash was paid for the land, so there is no investing outflow.\n- It is not reported or disclosed anywhere: Significant noncash investing and financing transactions must be disclosed.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "cash flows",
+      "noncash activities"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-fs-presentation-0013",
+    "certId": "cpa-far",
+    "subjectId": "financial-reporting",
+    "chapterId": "fs-presentation",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Elm Co. reports net income of $120,000. Other data: depreciation $25,000; amortization of discount on bonds payable $2,000; loss on sale of equipment $5,000; inventory increased $10,000; prepaid expenses decreased $3,000; accounts payable decreased $8,000; income taxes payable increased $4,000. What is net cash provided by operating activities (indirect method)?",
+    "choices": [
+      "$141,000",
+      "$137,000",
+      "$157,000",
+      "$131,000"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Add noncash items/losses; adjust each working capital line",
+    "explanation": "Add back noncash expenses and losses, then adjust for changes in current operating assets and liabilities.\n\n1. Start: 120,000\n2. Add depreciation 25,000, discount amortization 2,000, loss 5,000 → 152,000\n3. Inventory increase −10,000 → 142,000\n4. Prepaid decrease +3,000 → 145,000\n5. Payables decrease −8,000 → 137,000\n6. Taxes payable increase +4,000 → 141,000\n\nCheck: 120 + 25 + 2 + 5 − 10 + 3 − 8 + 4 = 141 (thousand).\n\n**Wrong choices**\n- $137,000: This subtracts the bond discount amortization. It is a noncash part of interest expense and is added back.\n- $157,000: This adds the decrease in payables. Paying down payables uses cash, so it is subtracted.\n- $131,000: This subtracts the loss on sale. A loss lowered net income without using operating cash, so it is added back.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "cash flows",
+      "indirect method"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-fs-presentation-0014",
+    "certId": "cpa-far",
+    "subjectId": "financial-reporting",
+    "chapterId": "fs-presentation",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "During the year, Fox Co. sold a component that qualifies as a discontinued operation. Before tax, the component had an operating loss of $50,000 for the year and the sale produced a loss on disposal of $30,000. The income tax rate is 25%. What amount is reported as loss from discontinued operations, net of tax?",
+    "choices": [
+      "$60,000",
+      "$80,000",
+      "$37,500",
+      "$20,000"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Disc. ops = (operating result + disposal) × (1 − tax rate)",
+    "explanation": "Both the component's operating loss for the year and the loss on disposal are part of discontinued operations, and the total is shown net of tax.\n\n1. Pre-tax loss = 50,000 + 30,000 = $80,000\n2. Tax benefit = 80,000 × 25% = $20,000\n3. Net loss = 80,000 − 20,000 = $60,000\n\nCheck: 80,000 × 75% = 60,000.\n\n**Wrong choices**\n- $80,000: This is the pre-tax total. Discontinued operations are reported net of tax.\n- $37,500: This includes only the operating loss, net of tax; the disposal loss also belongs in discontinued operations.\n- $20,000: This is the tax benefit, not the net loss.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "discontinued operations",
+      "income taxes"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-fs-presentation-0015",
+    "certId": "cpa-far",
+    "subjectId": "financial-reporting",
+    "chapterId": "fs-presentation",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Gray Co. reported income tax expense of $40,000. Income taxes payable decreased from $10,000 to $6,000, and the deferred tax liability increased by $5,000. No other tax accounts changed. How much cash did Gray pay for income taxes?",
+    "choices": [
+      "$44,000",
+      "$31,000",
+      "$41,000",
+      "$39,000"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Cash taxes = current tax expense + decrease in payable",
+    "explanation": "First remove the deferred part of tax expense to get the current (payable) part, then adjust for the change in taxes payable.\n\n1. Current tax expense = 40,000 − 5,000 = $35,000\n2. Payable fell by 4,000, so extra cash was paid: 35,000 + 4,000 = $39,000\n\nCheck: beginning payable 10,000 + current expense 35,000 − cash paid 39,000 = ending payable 6,000.\n\n**Wrong choices**\n- $44,000: This ignores the deferred tax increase. That part of expense is not owed now and was not paid.\n- $31,000: This adds the payable decrease the wrong way; a lower payable means more cash was paid.\n- $41,000: This adds the deferred tax increase instead of subtracting it.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "cash flows",
+      "income taxes",
+      "direct method"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-fs-presentation-0016",
+    "certId": "cpa-far",
+    "subjectId": "financial-reporting",
+    "chapterId": "fs-presentation",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Birch Co. reported interest expense of $50,000. This amount includes $3,000 of bond discount amortization. Interest payable increased by $2,000 during the year. How much cash did Birch pay for interest?",
+    "choices": [
+      "$45,000",
+      "$49,000",
+      "$51,000",
+      "$55,000"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Cash interest = expense − discount amort. − AP increase",
+    "explanation": "Discount amortization is interest expense that is not paid in cash, and an increase in interest payable is expense not yet paid.\n\n1. 50,000 − 3,000 (discount amortization) = $47,000\n2. 47,000 − 2,000 (increase in payable) = $45,000\n\nCheck: 45,000 + 3,000 + 2,000 = 50,000 of expense.\n\n**Wrong choices**\n- $49,000: This adds the increase in interest payable. Interest that is still owed was not paid, so it is subtracted.\n- $51,000: This adds the discount amortization instead of subtracting it.\n- $55,000: This adds both items; both actually reduce the cash paid.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "cash flows",
+      "interest",
+      "bonds"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-fs-presentation-0017",
+    "certId": "cpa-far",
+    "subjectId": "financial-reporting",
+    "chapterId": "fs-presentation",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "During the year, Cedar Co. issued common stock for $200,000 cash, paid cash dividends of $50,000 (another $10,000 of dividends was declared but not yet paid at year-end), repaid $80,000 of bond principal, bought its own shares as treasury stock for $30,000, and bought available-for-sale debt securities for $40,000. What is net cash provided by financing activities?",
+    "choices": [
+      "$40,000",
+      "$30,000",
+      "$0",
+      "$70,000"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Financing = owner and lender cash flows only",
+    "explanation": "Financing activities are cash flows with owners and lenders.\n\n1. Stock issued: +200,000\n2. Dividends paid in cash: −50,000\n3. Bond principal repaid: −80,000\n4. Treasury stock bought: −30,000\n5. Net = 200,000 − 50,000 − 80,000 − 30,000 = $40,000\n\nCheck: the AFS purchase (investing) and unpaid dividends (no cash) are excluded.\n\n**Wrong choices**\n- $30,000: This also subtracts the $10,000 of dividends that were declared but not paid. Only cash paid counts.\n- $0: This also subtracts the purchase of securities. Buying investments is an investing activity.\n- $70,000: This leaves out the treasury stock purchase. Buying back own shares is a financing outflow.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "cash flows",
+      "financing activities"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-fs-presentation-0018",
+    "certId": "cpa-far",
+    "subjectId": "financial-reporting",
+    "chapterId": "fs-presentation",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Maple Corp. had net income of $530,000. It had 100,000 common shares outstanding on January 1 and issued 20,000 more common shares on July 1. It also has cumulative preferred stock with an annual dividend of $35,000; no preferred dividends were declared this year. What is basic earnings per share for the year?",
+    "choices": [
+      "$4.13",
+      "$4.50",
+      "$4.82",
+      "$4.42"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Basic EPS: subtract cumulative pref. dividend; weight shares",
+    "explanation": "Basic EPS = (net income − preferred dividends) ÷ weighted-average common shares. For cumulative preferred stock, one year's dividend is subtracted even if it was not declared.\n\n1. Income to common = 530,000 − 35,000 = $495,000\n2. Weighted shares = 100,000 + (20,000 × 6/12) = 110,000\n3. EPS = 495,000 ÷ 110,000 = $4.50\n\nCheck: 110,000 × 4.50 = 495,000.\n\n**Wrong choices**\n- $4.13: This uses year-end shares. The new shares were outstanding only half the year, so a weighted average is used.\n- $4.82: This does not subtract the cumulative preferred dividend, which is deducted whether or not declared.\n- $4.42: This makes both errors: no preferred dividend deduction and year-end shares.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "earnings per share",
+      "income statement"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+]

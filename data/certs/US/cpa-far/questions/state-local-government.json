@@ -1,0 +1,438 @@
+[
+  {
+    "id": "cpa-far-state-local-government-0001",
+    "certId": "cpa-far",
+    "subjectId": "financial-reporting",
+    "chapterId": "state-local-government",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which measurement focus and basis of accounting do governmental funds (such as the general fund) use in their fund financial statements?",
+    "choices": [
+      "Economic resources measurement focus and accrual basis",
+      "Current financial resources measurement focus and modified accrual basis",
+      "Current financial resources measurement focus and full accrual basis",
+      "Economic resources measurement focus and cash basis"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Gov. funds: current fin. resources + modified accrual",
+    "explanation": "Governmental funds focus on near-term spendable resources, so they use the current financial resources measurement focus and the modified accrual basis. Revenues are recognized when measurable and available, and capital assets and long-term debt are not reported in these funds.\n\n**Wrong choices**\n- Economic resources measurement focus and accrual basis: This is used in government-wide statements and proprietary funds, not governmental funds.\n- Current financial resources measurement focus and full accrual basis: Governmental funds pair the current financial resources focus with the modified accrual basis.\n- Economic resources measurement focus and cash basis: No GAAP fund statement uses the cash basis.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "measurement focus",
+      "governmental funds"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-state-local-government-0002",
+    "certId": "cpa-far",
+    "subjectId": "financial-reporting",
+    "chapterId": "state-local-government",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A city operates a water utility that charges residents and businesses user fees intended to cover its costs. Which fund type should the city use for the utility?",
+    "choices": [
+      "Internal service fund",
+      "Enterprise fund",
+      "Special revenue fund",
+      "Custodial fund"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Fees charged to the public → enterprise fund",
+    "explanation": "Enterprise funds are proprietary funds for activities that charge fees to outside users, such as water, sewer, and transit services. They use the economic resources measurement focus and the accrual basis, like a business.\n\n**Wrong choices**\n- Internal service fund: Internal service funds sell goods or services mainly to other departments of the same government, not to the public.\n- Special revenue fund: Special revenue funds account for restricted or committed revenue sources, not fee-based business activities.\n- Custodial fund: Custodial funds hold resources for others; they are fiduciary, not business-type.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "fund types",
+      "proprietary funds"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-state-local-government-0003",
+    "certId": "cpa-far",
+    "subjectId": "financial-reporting",
+    "chapterId": "state-local-government",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which funds are excluded from a state or local government's government-wide financial statements?",
+    "choices": [
+      "Fiduciary funds",
+      "Enterprise funds",
+      "Internal service funds",
+      "Capital projects funds"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Government-wide statements exclude fiduciary funds",
+    "explanation": "Government-wide statements report the government's own resources. Fiduciary funds hold resources for others (such as pension trusts and custodial funds), so they cannot be used to support the government's programs and are reported only in the fiduciary fund statements.\n\n**Wrong choices**\n- Enterprise funds: Enterprise funds are reported in the business-type activities column.\n- Internal service funds: Internal service funds are usually folded into governmental activities.\n- Capital projects funds: Capital projects funds are governmental funds and are included in governmental activities.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "government-wide statements",
+      "fiduciary funds"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-state-local-government-0004",
+    "certId": "cpa-far",
+    "subjectId": "financial-reporting",
+    "chapterId": "state-local-government",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A town's general fund budget is adopted with estimated revenues of $900,000 and appropriations of $850,000. Which entry records the budget?",
+    "choices": [
+      "Debit Appropriations $850,000; debit Budgetary Fund Balance $50,000; credit Estimated Revenues $900,000",
+      "Debit Cash $900,000; credit Revenues $900,000",
+      "Debit Estimated Revenues $900,000; credit Appropriations $850,000; credit Budgetary Fund Balance $50,000",
+      "Debit Estimated Revenues $900,000; credit Appropriations $900,000"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Budget entry: Dr Est. Revenues, Cr Appropriations",
+    "explanation": "Estimated revenues are debited and appropriations are credited. The difference is the planned surplus and is credited to budgetary fund balance.\n\n1. Estimated revenues: Dr 900,000\n2. Appropriations: Cr 850,000\n3. Budgetary fund balance: Cr 900,000 − 850,000 = 50,000\n\nCheck: debits 900,000 = credits 850,000 + 50,000.\n\n**Wrong choices**\n- Debit Appropriations $850,000; debit Budgetary Fund Balance $50,000; credit Estimated Revenues $900,000: This reverses the entry; estimated revenues are debited and appropriations are credited.\n- Debit Cash $900,000; credit Revenues $900,000: Adopting a budget is not an actual revenue or cash transaction.\n- Debit Estimated Revenues $900,000; credit Appropriations $900,000: Appropriations are $850,000; the $50,000 difference goes to budgetary fund balance.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "budgetary accounting",
+      "general fund"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-state-local-government-0005",
+    "certId": "cpa-far",
+    "subjectId": "financial-reporting",
+    "chapterId": "state-local-government",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A county levied $1,000,000 of property taxes for the current year. During the year it collected $900,000. It expects to collect $40,000 within 60 days after year-end, $30,000 later than that, and $30,000 will never be collected. What property tax revenue is reported in the general fund?",
+    "choices": [
+      "$970,000",
+      "$900,000",
+      "$1,000,000",
+      "$940,000"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Modified accrual property tax: collected + within 60 days",
+    "explanation": "Under modified accrual, property tax revenue must be measurable and available. Available generally means collected during the year or within 60 days after year-end.\n\n1. Collected during year: 900,000\n2. Collected within 60 days: +40,000\n3. Revenue = $940,000\n\nCheck: the $30,000 collected later is a deferred inflow, and the $30,000 uncollectible is never revenue.\n\n**Wrong choices**\n- $970,000: This is the full accrual amount used in the government-wide statements; it includes taxes not collected soon enough to be available.\n- $900,000: This counts only cash collected and ignores amounts available within 60 days.\n- $1,000,000: This is the gross levy and ignores both uncollectible and late amounts.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "property taxes",
+      "modified accrual",
+      "revenue recognition"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-state-local-government-0006",
+    "certId": "cpa-far",
+    "subjectId": "financial-reporting",
+    "chapterId": "state-local-government",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A city's general fund pays $40,000 cash for a new police car. How is this reported?",
+    "choices": [
+      "General fund: $40,000 capital asset; government-wide statements: $40,000 expense",
+      "Both statements: $40,000 expense",
+      "General fund: $40,000 expenditure; government-wide statements: $40,000 capital asset",
+      "Both statements: $40,000 capital asset"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Capital outlay: fund expenditure, gov-wide asset",
+    "explanation": "The general fund uses modified accrual and reports the cash spent as a capital outlay expenditure. The government-wide statements use full accrual, so the car is reported as a capital asset and depreciated over its life.\n\n**Wrong choices**\n- General fund: $40,000 capital asset; government-wide statements: $40,000 expense: Governmental funds do not report capital assets, and the government-wide statements capitalize the car rather than expense it.\n- Both statements: $40,000 expense: The government-wide statements use full accrual and report the car as a capital asset.\n- Both statements: $40,000 capital asset: The general fund records an expenditure because cash left the fund.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "capital assets",
+      "government-wide statements",
+      "governmental funds"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-state-local-government-0007",
+    "certId": "cpa-far",
+    "subjectId": "financial-reporting",
+    "chapterId": "state-local-government",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A city issues $5,000,000 of general obligation bonds at par to build a new library. The proceeds are recorded in a capital projects fund. How are the proceeds reported in the capital projects fund?",
+    "choices": [
+      "As revenue",
+      "As a long-term liability",
+      "As an other financing source",
+      "As a deferred inflow of resources"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Bond proceeds in gov. funds = other financing source",
+    "explanation": "Governmental funds report bond proceeds as an other financing source, which increases fund balance. The $5,000,000 liability is reported in the government-wide statement of net position, not in the fund.\n\n**Wrong choices**\n- As revenue: Borrowed money is not revenue.\n- As a long-term liability: Governmental funds do not report long-term debt; it appears only in the government-wide statements.\n- As a deferred inflow of resources: Bond proceeds are not a deferred inflow.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "long-term debt",
+      "capital projects fund",
+      "other financing sources"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-state-local-government-0008",
+    "certId": "cpa-far",
+    "subjectId": "financial-reporting",
+    "chapterId": "state-local-government",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A town's general fund issued a purchase order for supplies estimated at $12,000 and recorded an encumbrance. The supplies later arrived with an invoice of $12,300. What expenditure is recorded when the invoice is received?",
+    "choices": [
+      "$12,300",
+      "$12,000",
+      "$300",
+      "$24,300"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Expenditure = actual invoice; reverse the encumbrance",
+    "explanation": "An encumbrance is a budgetary record of an expected cost. When the goods arrive, the encumbrance is reversed at the estimated amount and the expenditure is recorded at the actual amount.\n\n1. Reverse encumbrance: 12,000\n2. Record expenditure: 12,300\n\nCheck: the 300 difference just means actual cost was higher than estimated.\n\n**Wrong choices**\n- $12,000: The expenditure is the actual invoice amount, not the encumbered estimate.\n- $300: The difference is not the expenditure; the full invoice is.\n- $24,300: The encumbrance is reversed, not added to the expenditure.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "encumbrances",
+      "budgetary accounting"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-state-local-government-0009",
+    "certId": "cpa-far",
+    "subjectId": "financial-reporting",
+    "chapterId": "state-local-government",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A city's total governmental fund balances are $2,000,000. Other data: governmental capital assets, net of depreciation, $5,000,000; general obligation bonds payable $3,000,000; accrued interest on the bonds not reported in the funds $50,000; internal service fund net position (included in governmental activities) $200,000. What is net position of governmental activities?",
+    "choices": [
+      "$4,200,000",
+      "$3,950,000",
+      "$7,150,000",
+      "$4,150,000"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Reconcile: fund balance + capital assets − LT debt ± ISF",
+    "explanation": "Start with fund balances, then add or subtract items that appear only in the government-wide statements.\n\n1. Fund balances: 2,000,000\n2. Add capital assets: +5,000,000 → 7,000,000\n3. Less bonds: −3,000,000 → 4,000,000\n4. Less accrued interest: −50,000 → 3,950,000\n5. Add internal service fund: +200,000 → 4,150,000\n\nCheck: 2,000 + 5,000 − 3,000 − 50 + 200 = 4,150 (thousand).\n\n**Wrong choices**\n- $4,200,000: This leaves out the accrued interest, which is a government-wide liability.\n- $3,950,000: This leaves out the internal service fund net position, which is added to governmental activities.\n- $7,150,000: This leaves out the bonds payable, which must be subtracted.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "reconciliation",
+      "government-wide statements"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-state-local-government-0010",
+    "certId": "cpa-far",
+    "subjectId": "financial-reporting",
+    "chapterId": "state-local-government",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "The net change in fund balances of a city's governmental funds is a $100,000 increase. During the year: capital outlay expenditures were $600,000; depreciation on governmental capital assets was $150,000; bond principal repayments were $200,000; and new bonds were issued for $1,000,000 at par. Ignoring other items, what is the change in net position of governmental activities?",
+    "choices": [
+      "$450,000 increase",
+      "$250,000 decrease",
+      "$750,000 increase",
+      "$100,000 increase"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Fund change → net position: reverse capital & debt flows",
+    "explanation": "Capital outlay and debt repayment are expenditures in the funds but not expenses government-wide; depreciation and bond proceeds work the other way.\n\n1. Start: +100,000\n2. Add capital outlay: +600,000 → 700,000\n3. Less depreciation: −150,000 → 550,000\n4. Add principal repaid: +200,000 → 750,000\n5. Less bond proceeds: −1,000,000 → −250,000\n\nCheck: 100 + 600 − 150 + 200 − 1,000 = −250 (thousand).\n\n**Wrong choices**\n- $450,000 increase: This reverses each adjustment's direction.\n- $750,000 increase: This leaves out the $1,000,000 bond proceeds, which raise fund balance but are a liability in the government-wide statements.\n- $100,000 increase: This makes no reconciling adjustments.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "reconciliation",
+      "change in net position"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-state-local-government-0011",
+    "certId": "cpa-far",
+    "subjectId": "financial-reporting",
+    "chapterId": "state-local-government",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A state awards a city a $300,000 reimbursement-type grant: the city is paid only for allowable costs it incurs. During the year, the city incurred $180,000 of allowable costs and received $100,000 of cash from the state. All other requirements are met. What grant revenue is reported in the government-wide statements?",
+    "choices": [
+      "$100,000",
+      "$180,000",
+      "$300,000",
+      "$0"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Reimbursement grant: revenue as allowable costs incurred",
+    "explanation": "For a reimbursement-type grant, incurring allowable costs is an eligibility requirement. Under full accrual, revenue equals allowable costs incurred.\n\n1. Allowable costs incurred: 180,000\n2. Cash received: 100,000\n3. Receivable from state: 180,000 − 100,000 = 80,000\n4. Revenue = $180,000\n\n**Wrong choices**\n- $100,000: Revenue is not limited to cash received; the state owes for all allowable costs incurred.\n- $300,000: The full award is not revenue until the allowable costs are incurred.\n- $0: Revenue is recognized as allowable costs are incurred, not when the whole grant is finished.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "nonexchange revenue",
+      "grants"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-state-local-government-0012",
+    "certId": "cpa-far",
+    "subjectId": "financial-reporting",
+    "chapterId": "state-local-government",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A city receives sales taxes collected by the state on its behalf. For the year ended December 31, sales taxes on January–November sales of $900,000 were received during the year. Sales taxes of $80,000 on December sales were received the following March. What sales tax revenue is reported in the government-wide statement of activities for the year?",
+    "choices": [
+      "$980,000",
+      "$900,000",
+      "$80,000",
+      "$1,060,000"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Derived tax revenue: recognize when the sale occurs",
+    "explanation": "Sales taxes are derived tax revenues. In the government-wide statements (full accrual), they are recognized when the underlying sale takes place, regardless of when the cash arrives.\n\n1. January–November: 900,000\n2. December sales: +80,000\n3. Revenue = $980,000\n\nCheck: the $80,000 is a receivable at December 31.\n\n**Wrong choices**\n- $900,000: This counts only cash received. Full accrual recognizes the tax when the sale happens.\n- $80,000: This counts only the December taxes.\n- $1,060,000: This double counts the December taxes.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "nonexchange revenue",
+      "sales taxes",
+      "government-wide statements"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+]

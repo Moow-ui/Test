@@ -1,0 +1,505 @@
+[
+  {
+    "id": "cpa-far-liabilities-debt-equity-0001",
+    "certId": "cpa-far",
+    "subjectId": "balance-sheet-accounts",
+    "chapterId": "liabilities-debt-equity",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A company pays its employees $10,000 every Friday for a 5-day work week (Monday to Friday). The fiscal year ends on a Wednesday. What amount of accrued salaries should the company report at year-end?",
+    "choices": [
+      "$4,000",
+      "$6,000",
+      "$10,000",
+      "$2,000"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Accrue expenses incurred but not yet paid",
+    "explanation": "Salaries earned by employees but not yet paid at year-end are an accrued liability.\n\n1. Daily salaries: $10,000 ÷ 5 = $2,000\n2. Days worked but unpaid: Monday, Tuesday, Wednesday = 3\n3. Accrued salaries: 3 × $2,000 = $6,000\n\n**Wrong choices**\n- $4,000: This counts only 2 days; Monday, Tuesday, and Wednesday are all unpaid at year-end.\n- $10,000: A full week has not been worked by year-end.\n- $2,000: This is only one day of salaries.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "accrued liabilities"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-liabilities-debt-equity-0002",
+    "certId": "cpa-far",
+    "subjectId": "balance-sheet-accounts",
+    "chapterId": "liabilities-debt-equity",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "When are bonds issued at a premium (above face value)?",
+    "choices": [
+      "When the bonds' stated interest rate is lower than the market interest rate",
+      "When the stated rate equals the market rate",
+      "When the bonds have a longer maturity than usual",
+      "When the bonds' stated interest rate is higher than the market interest rate"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Stated rate > market rate → premium",
+    "explanation": "Investors are willing to pay more than face value when the bond pays more interest than they could earn elsewhere at the market rate. That extra price is the premium, which is amortized over the bond's life.\n\n**Wrong choices**\n- When the bonds' stated interest rate is lower than the market interest rate: In that case, investors pay less than face value, so the bonds sell at a discount.\n- When the stated rate equals the market rate: Equal rates mean the bonds sell at face value (par).\n- When the bonds have a longer maturity than usual: Maturity length alone does not create a premium; the rate difference does.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "bonds",
+      "premium"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-liabilities-debt-equity-0003",
+    "certId": "cpa-far",
+    "subjectId": "balance-sheet-accounts",
+    "chapterId": "liabilities-debt-equity",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A company issues 1,000 shares of $1 par value common stock for $25 cash per share. How is the $25,000 recorded in equity?",
+    "choices": [
+      "Common stock $1,000 and additional paid-in capital $24,000",
+      "Common stock $25,000",
+      "Common stock $24,000 and additional paid-in capital $1,000",
+      "Common stock $1,000 and retained earnings $24,000"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Stock issue: par to common stock, excess to APIC",
+    "explanation": "When stock is issued, the common stock account gets the par value of the shares. Any amount received above par goes to additional paid-in capital.\n\n1. Common stock: 1,000 × $1 = $1,000\n2. APIC: $25,000 − $1,000 = $24,000\n\n**Wrong choices**\n- Common stock $25,000: Only the par value goes to the common stock account; the rest is additional paid-in capital.\n- Common stock $24,000 and additional paid-in capital $1,000: The amounts are reversed; common stock is shares × par value.\n- Common stock $1,000 and retained earnings $24,000: Money received from owners is paid-in capital, not retained earnings.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "stock issuance",
+      "equity"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-liabilities-debt-equity-0004",
+    "certId": "cpa-far",
+    "subjectId": "balance-sheet-accounts",
+    "chapterId": "liabilities-debt-equity",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "On which date does a corporation record a liability for a cash dividend?",
+    "choices": [
+      "The date of record",
+      "The payment date",
+      "The declaration date",
+      "The end of the fiscal year"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Cash dividend liability arises at declaration",
+    "explanation": "Once the board of directors declares a cash dividend, the company has a legal obligation to pay it. It debits retained earnings and credits dividends payable on the declaration date.\n\n**Wrong choices**\n- The date of record: No entry is made on the record date; it only decides who receives the dividend.\n- The payment date: On the payment date, the existing liability is paid off; it was created earlier.\n- The end of the fiscal year: The liability arises when the board declares the dividend, whatever the time of year.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "dividends"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-liabilities-debt-equity-0005",
+    "certId": "cpa-far",
+    "subjectId": "balance-sheet-accounts",
+    "chapterId": "liabilities-debt-equity",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A company buys back 500 shares of its own common stock for $30 per share and holds them as treasury stock (cost method). What is the effect of this purchase?",
+    "choices": [
+      "Total stockholders' equity decreases by $15,000",
+      "Total assets increase by $15,000",
+      "Common stock decreases by $15,000",
+      "A $15,000 loss is reported in net income"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Treasury stock (cost) is a contra-equity account",
+    "explanation": "Under the cost method, the company debits treasury stock for the price paid and credits cash. Treasury stock is subtracted from total equity.\n\n1. Cost: 500 × $30 = $15,000\n2. Effect: cash −$15,000 and equity −$15,000\n\n**Wrong choices**\n- Total assets increase by $15,000: Treasury stock is not an asset; cash goes down and equity goes down.\n- Common stock decreases by $15,000: Under the cost method, the common stock account is not changed; a separate contra-equity account is used.\n- A $15,000 loss is reported in net income: Transactions in a company's own shares never create income or loss.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "treasury stock"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-liabilities-debt-equity-0006",
+    "certId": "cpa-far",
+    "subjectId": "balance-sheet-accounts",
+    "chapterId": "liabilities-debt-equity",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "On January 1, a company issues $500,000 face value, 5-year bonds with a 6% stated rate paid annually on December 31. The bonds sell for $460,000 to yield 8%. Using the effective interest method, what is interest expense for the first year?",
+    "choices": [
+      "$30,000",
+      "$40,000",
+      "$36,800",
+      "$6,800"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Interest expense = carrying amount × market rate",
+    "explanation": "Under the effective interest method, interest expense equals the bond's carrying amount times the market rate at issue. The difference from cash paid amortizes the discount.\n\n1. Interest expense: $460,000 × 8% = $36,800\n2. Cash paid: $500,000 × 6% = $30,000\n3. Discount amortized: $6,800\n\nCheck: new carrying amount $466,800 moves toward $500,000.\n\n**Wrong choices**\n- $30,000: This is the cash interest paid, not interest expense under the effective interest method.\n- $40,000: Effective interest is applied to the carrying amount ($460,000), not the face value.\n- $6,800: This is the discount amortization, which is only part of the expense.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "bonds",
+      "discount",
+      "effective interest"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-liabilities-debt-equity-0007",
+    "certId": "cpa-far",
+    "subjectId": "balance-sheet-accounts",
+    "chapterId": "liabilities-debt-equity",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "On January 1, a company issues $200,000 face value bonds with a 10% stated rate paid annually. The bonds sell for $215,000 to yield 8%. Using the effective interest method, what is the carrying amount of the bonds at December 31 of the first year?",
+    "choices": [
+      "$215,000",
+      "$212,200",
+      "$217,800",
+      "$200,000"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Premium amortization lowers carrying amount",
+    "explanation": "With a premium, cash interest is larger than interest expense. The difference reduces the premium and the carrying amount.\n\n1. Interest expense: $215,000 × 8% = $17,200\n2. Cash paid: $200,000 × 10% = $20,000\n3. Premium amortized: $20,000 − $17,200 = $2,800\n4. Carrying amount: $215,000 − $2,800 = $212,200\n\n**Wrong choices**\n- $215,000: The premium must be amortized each year, so the carrying amount goes down.\n- $217,800: Premium amortization reduces the carrying amount; it does not increase it.\n- $200,000: Face value is reached only at maturity.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "bonds",
+      "premium",
+      "effective interest"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-liabilities-debt-equity-0008",
+    "certId": "cpa-far",
+    "subjectId": "balance-sheet-accounts",
+    "chapterId": "liabilities-debt-equity",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A company has bonds with a face value of $1,000,000 and an unamortized discount of $30,000. It retires all of the bonds early by paying the call price of 101. What gain or loss is reported on the extinguishment?",
+    "choices": [
+      "A $10,000 loss",
+      "A $30,000 loss",
+      "A $30,000 gain",
+      "A $40,000 loss"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Extinguishment: price paid vs net carrying amount",
+    "explanation": "When debt is retired early, the gain or loss is the difference between the amount paid and the debt's net carrying amount. It is reported in income.\n\n1. Carrying amount: $1,000,000 − $30,000 = $970,000\n2. Price paid: $1,000,000 × 1.01 = $1,010,000\n3. Loss: $1,010,000 − $970,000 = $40,000\n\n**Wrong choices**\n- A $10,000 loss: This compares the price with face value and ignores the unamortized discount.\n- A $30,000 loss: This only counts the unamortized discount and ignores the call premium paid.\n- A $30,000 gain: The company pays more than the carrying amount, so it is a loss, not a gain.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "debt extinguishment",
+      "bonds"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-liabilities-debt-equity-0009",
+    "certId": "cpa-far",
+    "subjectId": "balance-sheet-accounts",
+    "chapterId": "liabilities-debt-equity",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A company has 100,000 shares of $1 par common stock outstanding. The market price is $15 per share. It declares and issues a 10% stock dividend. By how much does retained earnings decrease?",
+    "choices": [
+      "$10,000",
+      "$150,000",
+      "$0",
+      "$1,500,000"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Small stock dividend: recorded at fair value",
+    "explanation": "A small stock dividend (less than about 20–25% of shares) is recorded at the shares' fair value. Retained earnings goes down and paid-in capital goes up by the same amount, so total equity does not change.\n\n1. New shares: 100,000 × 10% = 10,000\n2. Amount: 10,000 × $15 = $150,000\n3. Split: common stock $10,000, APIC $140,000\n\n**Wrong choices**\n- $10,000: Par value is used for large stock dividends; a small stock dividend (under about 20–25%) uses fair value.\n- $0: A small stock dividend moves an amount from retained earnings to paid-in capital.\n- $1,500,000: Only the 10,000 new shares are recorded, not all 100,000 shares.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "stock dividends",
+      "retained earnings"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-liabilities-debt-equity-0010",
+    "certId": "cpa-far",
+    "subjectId": "balance-sheet-accounts",
+    "chapterId": "liabilities-debt-equity",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which item should a company report as a current liability on its December 31 balance sheet?",
+    "choices": [
+      "A deferred tax liability expected to reverse next year",
+      "Bonds payable that mature in 3 years",
+      "A note payable due in 18 months",
+      "The part of a long-term note's principal that is due within the next 12 months"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Current liability: due within 1 year or operating cycle",
+    "explanation": "Current liabilities are obligations expected to be paid within one year or the operating cycle, whichever is longer. The current portion of long-term debt is split out and shown as current. Deferred taxes are always shown as noncurrent.\n\n**Wrong choices**\n- A deferred tax liability expected to reverse next year: Under current GAAP, all deferred tax liabilities are classified as noncurrent.\n- Bonds payable that mature in 3 years: They are not due within one year, so they are noncurrent.\n- A note payable due in 18 months: It is due after more than one year (or operating cycle), so it is noncurrent.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "debt classification",
+      "current liabilities"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-liabilities-debt-equity-0011",
+    "certId": "cpa-far",
+    "subjectId": "balance-sheet-accounts",
+    "chapterId": "liabilities-debt-equity",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Using the cost method, a company buys 1,000 of its own shares at $20 each. Later it reissues 600 shares at $25 each and then the remaining 400 shares at $14 each. There was no paid-in capital from treasury stock before. What is the balance of paid-in capital from treasury stock after both reissues?",
+    "choices": [
+      "$600",
+      "$3,000",
+      "$0",
+      "$5,400"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Treasury reissue: excess to APIC; shortfall cuts APIC first",
+    "explanation": "When treasury stock is reissued above cost, the excess goes to paid-in capital from treasury stock. When reissued below cost, the shortfall first reduces that paid-in capital, and only any remainder reduces retained earnings.\n\n1. First reissue: 600 × ($25 − $20) = +$3,000\n2. Second reissue: 400 × ($14 − $20) = −$2,400\n3. Balance: $3,000 − $2,400 = $600\n\n**Wrong choices**\n- $3,000: This records the gain from the first reissue but forgets that the second reissue's shortfall reduces it.\n- $0: The $3,000 balance is larger than the $2,400 shortfall, so $600 remains; nothing is charged to retained earnings.\n- $5,400: A reissue below cost reduces paid-in capital; it does not add to it.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "treasury stock",
+      "APIC"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-liabilities-debt-equity-0012",
+    "certId": "cpa-far",
+    "subjectId": "balance-sheet-accounts",
+    "chapterId": "liabilities-debt-equity",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A company declares a property dividend of land to its shareholders. The land's carrying amount is $40,000, and its fair value on the declaration date is $55,000. What gain is recognized, and by how much is retained earnings reduced by the dividend?",
+    "choices": [
+      "Gain of $15,000; dividend of $40,000",
+      "No gain; dividend of $40,000",
+      "Gain of $15,000; dividend of $55,000",
+      "No gain; dividend of $55,000"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Property dividend: remeasure to FV, dividend at FV",
+    "explanation": "For a property dividend, the company first adjusts the asset to its fair value on the declaration date and records a gain or loss. The dividend is then recorded at fair value.\n\n1. Gain: $55,000 − $40,000 = $15,000\n2. Dividend (reduces retained earnings): $55,000\n\n**Wrong choices**\n- Gain of $15,000; dividend of $40,000: The dividend is recorded at fair value after the asset is remeasured, so it is $55,000.\n- No gain; dividend of $40,000: The asset must first be remeasured to fair value, which creates a gain.\n- No gain; dividend of $55,000: Recording the dividend at fair value requires recognizing the $15,000 increase as a gain.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "property dividends",
+      "dividends"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-liabilities-debt-equity-0013",
+    "certId": "cpa-far",
+    "subjectId": "balance-sheet-accounts",
+    "chapterId": "liabilities-debt-equity",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Bonds with a face value of $100,000 and a 6% stated rate pay interest semiannually on January 1 and July 1. The company issues them at face value on April 1. How much cash does the company receive from the buyers on April 1?",
+    "choices": [
+      "$101,500",
+      "$100,000",
+      "$103,000",
+      "$98,500"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Issued between interest dates: buyer pays accrued interest",
+    "explanation": "When bonds are sold between interest dates, the buyer pays the price plus interest that has built up since the last interest date. On the next interest date, the company pays a full period's interest, so the net expense is correct.\n\n1. Accrued interest: $100,000 × 6% × 3/12 = $1,500\n2. Cash received: $100,000 + $1,500 = $101,500\n\nCheck: July 1 payment is $3,000; net interest expense = $3,000 − $1,500 = $1,500 for April–June.\n\n**Wrong choices**\n- $100,000: Buyers also pay interest accrued since the last interest date, because they will receive a full 6 months of interest on July 1.\n- $103,000: This is 6 months of interest; only 3 months (January 1 to April 1) has accrued.\n- $98,500: Accrued interest is added to the price the buyers pay, not subtracted.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "bonds",
+      "accrued interest"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-liabilities-debt-equity-0014",
+    "certId": "cpa-far",
+    "subjectId": "balance-sheet-accounts",
+    "chapterId": "liabilities-debt-equity",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Retained earnings at the beginning of the year is $500,000. During the year: net income is $120,000; cash dividends declared are $30,000; a small stock dividend is recorded at fair value of $20,000. The company also discovers that prior-year depreciation was understated; the correction is $10,000 net of tax. What is retained earnings at year-end?",
+    "choices": [
+      "$570,000",
+      "$580,000",
+      "$560,000",
+      "$610,000"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Prior-period error adjusts beginning retained earnings",
+    "explanation": "A correction of a prior-period error is not part of current income. It adjusts the opening balance of retained earnings.\n\n1. Beginning balance: $500,000\n2. Error correction (net of tax): −$10,000 → restated $490,000\n3. Net income: +$120,000\n4. Cash dividends: −$30,000\n5. Stock dividend: −$20,000\n6. Ending balance = $560,000\n\n**Wrong choices**\n- $570,000: This ignores the prior-period error correction, which reduces beginning retained earnings.\n- $580,000: This ignores the small stock dividend, which moves $20,000 out of retained earnings.\n- $610,000: Both cash and stock dividends reduce retained earnings.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "retained earnings",
+      "error correction"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+]

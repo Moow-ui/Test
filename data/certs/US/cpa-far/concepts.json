@@ -1,0 +1,771 @@
+{
+  "by": "ai",
+  "chapters": {
+    "fs-presentation": {
+      "verifiedAt": "2026-10-12",
+      "summary": [
+        "This chapter is about the set of reports a business gives to outside readers such as lenders and investors. A complete set includes a balance sheet, an income statement, a statement of comprehensive income, a statement of changes in equity, a statement of cash flows, and the notes. Each report answers a different question: what the company owns and owes, how it performed, how its owners' stake changed, and where its cash came from and went.",
+        "On the balance sheet, assets and liabilities are split into current and noncurrent. An item is current if it will be used up, collected, or paid within one year or one operating cycle, whichever is longer. Comprehensive income adds certain gains and losses that skip net income, called other comprehensive income, such as unrealized gains and losses on available-for-sale debt securities and foreign currency translation adjustments. Companies may show it in one continuous statement or in two statements placed back to back.",
+        "The statement of cash flows sorts every cash movement into operating, investing, or financing activities. Under US GAAP, interest paid, interest received, and dividends received are operating, while dividends paid are financing. Operating cash flow can be shown by the direct method or the indirect method, and the indirect method starts from net income and removes noncash items like depreciation. Large noncash deals, such as buying a building by signing a note, are disclosed rather than shown as cash flows."
+      ],
+      "concepts": [
+        {
+          "term": "Current vs. noncurrent",
+          "definition": "Current assets are expected to be turned into cash, sold, or used up within one year or the operating cycle, whichever is longer. Current liabilities are those expected to be paid in that same period, usually with current assets.",
+          "tip": "Ask: will this be settled within the next year (or a longer operating cycle)? If yes, it is current.",
+          "source": {
+            "org": "FASB ASC 210",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Other comprehensive income (OCI)",
+          "definition": "Gains and losses reported outside net income and collected in accumulated other comprehensive income in equity. Examples: unrealized gains and losses on available-for-sale debt securities, foreign currency translation adjustments, certain pension amounts, and the effective part of cash flow hedges.",
+          "tip": "Unrealized gains on equity securities and trading securities go to net income, not OCI.",
+          "source": {
+            "org": "FASB ASC 220",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Statement of comprehensive income format",
+          "definition": "Net income and OCI may be shown in one continuous statement, or in two separate but consecutive statements. Either way, total comprehensive income must be shown.",
+          "tip": "Showing OCI only in the statement of changes in equity is not allowed.",
+          "source": {
+            "org": "FASB ASC 220",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Cash flow classes",
+          "definition": "Operating covers the day-to-day business. Investing covers buying and selling long-term assets and investments and making loans. Financing covers borrowing and repaying debt, issuing stock, buying back stock, and paying dividends.",
+          "tip": "Interest paid, interest received, and dividends received are operating; dividends paid are financing.",
+          "source": {
+            "org": "FASB ASC 230",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Indirect method",
+          "definition": "Operating cash flow is found by starting with net income, adding back noncash expenses like depreciation, removing gains and adding losses on sales of assets, and adjusting for changes in working-capital accounts.",
+          "tip": "An increase in accounts receivable is subtracted; an increase in accounts payable is added.",
+          "source": {
+            "org": "FASB ASC 230",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Noncash investing and financing",
+          "definition": "Significant deals that involve no cash, such as acquiring equipment by issuing a note or converting bonds into stock. They are left out of the cash flow categories and disclosed separately.",
+          "tip": "If no cash moved, it does not appear in the three sections of the statement.",
+          "source": {
+            "org": "FASB ASC 230",
+            "year": 2026
+          }
+        }
+      ],
+      "points": [
+        "A complete set of statements includes notes; the notes are part of the statements, not an extra.",
+        "Current means within one year or the operating cycle, whichever is longer.",
+        "AFS debt unrealized gains and losses go to OCI; equity security changes generally go to net income.",
+        "Dividends paid are financing; interest paid is operating under US GAAP.",
+        "The indirect method adds back depreciation and adjusts for working-capital changes."
+      ],
+      "compare": {
+        "title": "Direct vs. indirect method",
+        "columns": [
+          "Item",
+          "Direct method",
+          "Indirect method"
+        ],
+        "rows": [
+          [
+            "Starting point",
+            "Cash collected from customers and cash paid out by type",
+            "Net income"
+          ],
+          [
+            "Depreciation",
+            "Not shown (no cash)",
+            "Added back to net income"
+          ],
+          [
+            "Reconciliation of net income to operating cash flow",
+            "Still required",
+            "Is the operating section itself"
+          ]
+        ]
+      }
+    },
+    "not-for-profit": {
+      "verifiedAt": "2026-10-12",
+      "summary": [
+        "This chapter covers private not-for-profit organizations such as charities, private colleges, and hospitals. Their statements are a statement of financial position, a statement of activities, a statement of cash flows, and an analysis of expenses by function and nature. Because there are no owners, the equity section is called net assets.",
+        "Net assets are split into two classes: with donor restrictions and without donor restrictions. When a donor's purpose or time restriction is met, the amount is released and moved from with donor restrictions to without donor restrictions. Unconditional promises to give are recorded as revenue when made, even before cash arrives, but conditional promises are not recorded until the conditions are met.",
+        "Expenses are always reported as decreases in net assets without donor restrictions. The organization must show expenses by function, such as program services, management and general, and fundraising, and by nature, such as salaries and rent, in one place. Contributed services are recorded only if they create or improve nonfinancial assets or need specialized skills the organization would otherwise buy."
+      ],
+      "concepts": [
+        {
+          "term": "Two classes of net assets",
+          "definition": "Net assets with donor restrictions carry a donor-imposed limit on use or timing, including permanent endowments. Net assets without donor restrictions are free for the board to use, even if the board itself sets them aside.",
+          "tip": "A board designation does not create a donor restriction; it stays without donor restrictions.",
+          "source": {
+            "org": "FASB ASC 958-210",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Unconditional promise to give",
+          "definition": "A donor's promise with no barrier to overcome. It is recognized as contribution revenue and a receivable when made, measured at fair value; long-term promises are usually measured at present value.",
+          "tip": "A promise to pay in future years is treated as time-restricted unless the donor says otherwise.",
+          "source": {
+            "org": "FASB ASC 958-605",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Conditional promise to give",
+          "definition": "A promise that has both a barrier the organization must overcome and a right of return or release for the donor. It is not recognized until the barrier is overcome.",
+          "tip": "Both pieces are needed: a barrier and a right of return or release.",
+          "source": {
+            "org": "FASB ASC 958-605",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Release from restriction",
+          "definition": "When a donor's purpose is fulfilled or the time passes, net assets are reclassified from with donor restrictions to without donor restrictions in the statement of activities.",
+          "tip": "The expense is recorded in without donor restrictions; the release shows the matching amount moving over.",
+          "source": {
+            "org": "FASB ASC 958-205",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Expenses by function and nature",
+          "definition": "All NFPs report expenses by function (program services and supporting activities such as management and general and fundraising) and by nature, in one location: the face of a statement, the notes, or a separate statement.",
+          "tip": "Expenses are reported only in net assets without donor restrictions.",
+          "source": {
+            "org": "FASB ASC 958-720",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Contributed services",
+          "definition": "Volunteer services are recorded as revenue only if they create or enhance nonfinancial assets, or require specialized skills, are provided by people with those skills, and would otherwise be purchased.",
+          "tip": "General volunteers stuffing envelopes are not recorded; a volunteer electrician doing needed work is.",
+          "source": {
+            "org": "FASB ASC 958-605",
+            "year": 2026
+          }
+        }
+      ],
+      "points": [
+        "Only two net asset classes: with donor restrictions and without donor restrictions.",
+        "Unconditional promises are revenue when made; conditional promises wait until the barrier is met.",
+        "Expenses go only in net assets without donor restrictions.",
+        "Function and nature analysis is required for all NFPs.",
+        "Board-designated funds remain without donor restrictions."
+      ],
+      "compare": {
+        "title": "Unconditional vs. conditional promise",
+        "columns": [
+          "Item",
+          "Unconditional promise",
+          "Conditional promise"
+        ],
+        "rows": [
+          [
+            "What it has",
+            "No barrier",
+            "A barrier plus a right of return or release"
+          ],
+          [
+            "When recognized",
+            "When the promise is made",
+            "When the barrier is overcome"
+          ],
+          [
+            "Cash received in advance",
+            "Contribution revenue",
+            "Refundable advance (liability)"
+          ]
+        ]
+      }
+    },
+    "state-local-government": {
+      "verifiedAt": "2026-10-12",
+      "summary": [
+        "This chapter explains how states, cities, counties, and school districts report. A government keeps its records in separate funds, each a self-balancing set of accounts for a purpose. The annual report has two layers: fund financial statements, which show each major fund, and government-wide statements, which show the government as a whole.",
+        "Governmental funds, such as the general fund and special revenue funds, use the current financial resources measurement focus and the modified accrual basis. Revenue is recognized when it is measurable and available, meaning collected soon enough to pay this period's bills, and expenditures are recognized when the liability is incurred, with exceptions like debt service on long-term debt recorded when due. Capital assets and long-term debt are not reported in governmental fund balance sheets.",
+        "Government-wide statements use the economic resources measurement focus and full accrual accounting, much like a business. They include capital assets, depreciation, and long-term debt. Because the two layers use different rules, a reconciliation explains the differences, such as capital outlays that are expenditures in the funds but assets government-wide, and bond proceeds that are an other financing source in the funds but a liability government-wide."
+      ],
+      "concepts": [
+        {
+          "term": "Fund categories",
+          "definition": "Governmental funds (general, special revenue, capital projects, debt service, permanent), proprietary funds (enterprise and internal service), and fiduciary funds (such as pension trust and custodial funds).",
+          "tip": "Fiduciary funds hold resources for others and are left out of the government-wide statements.",
+          "source": {
+            "org": "GASB Statements 34 and 84",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Modified accrual basis",
+          "definition": "Used by governmental funds. Revenues are recognized when measurable and available to pay current-period liabilities. Expenditures are generally recognized when the fund liability is incurred.",
+          "tip": "Long-term debt principal and interest are generally recorded as expenditures when due.",
+          "source": {
+            "org": "GASB Statement No. 34",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Government-wide statements",
+          "definition": "The statement of net position and the statement of activities, prepared on the economic resources focus and full accrual basis. They report governmental activities and business-type activities separately.",
+          "tip": "Capital assets and long-term debt of governmental funds appear here, not in fund statements.",
+          "source": {
+            "org": "GASB Statement No. 34",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Fund balance classes",
+          "definition": "Governmental fund balance is reported as nonspendable, restricted, committed, assigned, and unassigned. Only the general fund normally reports a positive unassigned amount.",
+          "tip": "Committed comes from the government's highest decision-making body; restricted comes from outside parties or law.",
+          "source": {
+            "org": "GASB Statement No. 54",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Reconciliation items",
+          "definition": "Common items that explain the move from governmental fund balances to government-wide net position: capital assets added, depreciation, long-term debt and its repayment, and revenues not yet available.",
+          "tip": "Bond proceeds are an other financing source in the funds but a liability in government-wide statements.",
+          "source": {
+            "org": "GASB Statement No. 34",
+            "year": 2026
+          }
+        }
+      ],
+      "points": [
+        "Governmental funds: current financial resources focus, modified accrual.",
+        "Proprietary funds and government-wide statements: economic resources focus, full accrual.",
+        "Fiduciary funds are not included in government-wide statements.",
+        "Buying a capital asset is an expenditure in a governmental fund but an asset government-wide.",
+        "Fund balance has five classes, from nonspendable to unassigned."
+      ],
+      "compare": {
+        "title": "Governmental funds vs. government-wide statements",
+        "columns": [
+          "Item",
+          "Governmental funds",
+          "Government-wide"
+        ],
+        "rows": [
+          [
+            "Measurement focus",
+            "Current financial resources",
+            "Economic resources"
+          ],
+          [
+            "Basis of accounting",
+            "Modified accrual",
+            "Full accrual"
+          ],
+          [
+            "Capital assets",
+            "Expenditure when bought",
+            "Asset, then depreciated"
+          ],
+          [
+            "Bond issued",
+            "Other financing source",
+            "Long-term liability"
+          ]
+        ]
+      }
+    },
+    "cash-receivables-investments": {
+      "verifiedAt": "2026-10-12",
+      "summary": [
+        "This chapter covers the most liquid assets: cash, money owed by customers, and investments in other companies' debt and stock. Cash includes currency and bank balances available for use, while cash equivalents are short-term, highly liquid investments with original maturities of three months or less. A bank reconciliation brings the bank's balance and the company's book balance to the same correct figure.",
+        "Receivables are reported at the amount expected to be collected. Under the current expected credit loss model, a company estimates losses over the whole life of the receivable from the start and records them in an allowance account, rather than waiting until a loss is probable. Writing off a specific bad account reduces both the receivable and the allowance, so it does not change the net amount.",
+        "Debt securities are classified as trading, available-for-sale, or held-to-maturity. Trading securities are at fair value with changes in net income, available-for-sale are at fair value with changes in other comprehensive income, and held-to-maturity are at amortized cost. Equity securities are generally measured at fair value with changes in net income, but an investor with significant influence, usually presumed at 20 to 50 percent ownership, uses the equity method."
+      ],
+      "concepts": [
+        {
+          "term": "Cash equivalents",
+          "definition": "Short-term, highly liquid investments that are readily convertible to known amounts of cash and have an original maturity of three months or less when bought, such as Treasury bills and money market funds.",
+          "tip": "Original maturity counts from the purchase date, not from the balance sheet date.",
+          "source": {
+            "org": "FASB ASC 305",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Bank reconciliation",
+          "definition": "Bank side adjusts for deposits in transit and outstanding checks. Book side adjusts for items the company has not yet recorded, such as bank fees, interest earned, NSF checks, and collections by the bank.",
+          "tip": "Only book-side adjustments need journal entries."
+        },
+        {
+          "term": "Expected credit losses (CECL)",
+          "definition": "For receivables and other financial assets at amortized cost, the company records an allowance for lifetime expected credit losses using past events, current conditions, and reasonable forecasts.",
+          "tip": "Write-offs reduce the receivable and the allowance; net receivable stays the same.",
+          "source": {
+            "org": "FASB ASC 326",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Debt security categories",
+          "definition": "Trading: fair value, changes to net income. Available-for-sale: fair value, unrealized changes to OCI. Held-to-maturity: amortized cost, for securities the company has the intent and ability to hold to maturity.",
+          "tip": "Interest income on all three uses the effective interest method for any premium or discount.",
+          "source": {
+            "org": "FASB ASC 320",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Equity securities",
+          "definition": "Generally measured at fair value with changes in net income. An equity security without a readily determinable fair value may use the measurement alternative: cost less impairment, adjusted for observable price changes.",
+          "tip": "There is no available-for-sale category for equity securities.",
+          "source": {
+            "org": "FASB ASC 321",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Equity method",
+          "definition": "Used when the investor has significant influence, presumed at 20 to 50 percent of voting stock. The investment rises by the investor's share of the investee's income and falls by dividends received.",
+          "tip": "Dividends from an equity-method investee reduce the investment; they are not income.",
+          "source": {
+            "org": "FASB ASC 323",
+            "year": 2026
+          }
+        }
+      ],
+      "points": [
+        "Cash equivalents have an original maturity of three months or less.",
+        "Outstanding checks and deposits in transit are bank-side items with no journal entry.",
+        "CECL records lifetime expected losses at the start, not when a loss becomes probable.",
+        "AFS debt: fair value with unrealized changes in OCI; HTM: amortized cost.",
+        "Equity securities generally go to fair value through net income.",
+        "Equity method: share of income increases the investment, dividends decrease it."
+      ],
+      "compare": {
+        "title": "Trading vs. available-for-sale debt securities",
+        "columns": [
+          "Item",
+          "Trading",
+          "Available-for-sale"
+        ],
+        "rows": [
+          [
+            "Balance sheet amount",
+            "Fair value",
+            "Fair value"
+          ],
+          [
+            "Unrealized gain or loss",
+            "Net income",
+            "Other comprehensive income"
+          ],
+          [
+            "When sold",
+            "Gain or loss in net income",
+            "Amount in OCI is reclassified to net income"
+          ]
+        ]
+      }
+    },
+    "inventory-ppe-intangibles": {
+      "verifiedAt": "2026-10-12",
+      "summary": [
+        "This chapter covers the long-lived and operating assets that a business uses to make sales: inventory, property, plant, and equipment, and intangible assets. The common question for all three is what goes into cost, how that cost is moved to expense, and what happens if the asset loses value.",
+        "Inventory cost includes the price paid plus costs to get the goods ready for sale, such as freight-in. Cost flow methods include FIFO, LIFO, and average cost. Inventory measured by FIFO or average cost is carried at the lower of cost and net realizable value, while LIFO and the retail method still use lower of cost or market.",
+        "Property, plant, and equipment is recorded at all costs needed to get the asset ready for its intended use, including freight, installation, and testing, and is then depreciated over its useful life. If events suggest an asset held and used may not be recoverable, the company compares its carrying amount with undiscounted future cash flows; if those are lower, it writes the asset down to fair value.",
+        "Intangibles with finite lives are amortized, while goodwill and indefinite-life intangibles are not amortized but are tested for impairment, though private companies may elect to amortize goodwill. Research and development costs are generally expensed as incurred."
+      ],
+      "concepts": [
+        {
+          "term": "Lower of cost and net realizable value",
+          "definition": "For inventory measured by FIFO or average cost, inventory is written down if net realizable value (estimated selling price less reasonably predictable costs of completion, disposal, and transport) falls below cost.",
+          "tip": "LIFO and retail inventory method use lower of cost or market instead.",
+          "source": {
+            "org": "FASB ASC 330",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Capitalized PP&E costs",
+          "definition": "Cost includes the purchase price and all costs needed to bring the asset to the condition and location for its intended use, such as freight, installation, site preparation, and testing. Interest during construction of qualifying assets is also capitalized.",
+          "tip": "Routine repairs and maintenance are expensed.",
+          "source": {
+            "org": "FASB ASC 360",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Impairment of assets held and used",
+          "definition": "Step 1: if the carrying amount is more than the sum of undiscounted future cash flows, the asset is not recoverable. Step 2: the loss equals carrying amount minus fair value.",
+          "tip": "Once written down, a held-and-used asset cannot be written back up under US GAAP.",
+          "source": {
+            "org": "FASB ASC 360",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Goodwill",
+          "definition": "The excess of the price paid in a business combination over the fair value of identifiable net assets acquired. It is not amortized and is tested for impairment at least annually; the loss is the amount by which a reporting unit's carrying amount exceeds its fair value, up to the goodwill amount.",
+          "tip": "A private company may elect to amortize goodwill, generally over ten years or less.",
+          "source": {
+            "org": "FASB ASC 350",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Finite vs. indefinite-life intangibles",
+          "definition": "Finite-life intangibles such as patents are amortized over their useful lives. Indefinite-life intangibles such as some trademarks are not amortized and are tested for impairment.",
+          "tip": "Internally developed intangibles are generally expensed; purchased ones are capitalized.",
+          "source": {
+            "org": "FASB ASC 350",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Research and development",
+          "definition": "R&D costs are generally expensed as incurred. Equipment with alternative future uses is capitalized and its depreciation is R&D expense.",
+          "tip": "Software developed for sale and internal-use software follow their own capitalization rules.",
+          "source": {
+            "org": "FASB ASC 730",
+            "year": 2026
+          }
+        }
+      ],
+      "points": [
+        "FIFO and average cost: lower of cost and net realizable value; LIFO and retail: lower of cost or market.",
+        "Freight-in is part of inventory cost; freight-out is a selling expense.",
+        "Capitalize costs to get PP&E ready for use; expense ordinary repairs.",
+        "Impairment recoverability test uses undiscounted cash flows; the loss uses fair value.",
+        "Goodwill is not amortized for public companies; it is tested for impairment."
+      ],
+      "compare": {
+        "title": "Capitalize vs. expense",
+        "columns": [
+          "Item",
+          "Capitalize",
+          "Expense"
+        ],
+        "rows": [
+          [
+            "Freight and installation of new machine",
+            "Yes",
+            "No"
+          ],
+          [
+            "Routine repairs",
+            "No",
+            "Yes"
+          ],
+          [
+            "Research and development",
+            "Only equipment with alternative future uses",
+            "R&D costs generally"
+          ]
+        ]
+      }
+    },
+    "liabilities-debt-equity": {
+      "verifiedAt": "2026-10-12",
+      "summary": [
+        "This chapter covers what a business owes and what its owners own. Liabilities range from short-term items like accounts payable and accrued wages to long-term bonds and notes. Equity covers stock issued, retained earnings, treasury stock, and dividends.",
+        "Bonds are recorded at the cash received, which is the present value of the future payments at the market rate. When the stated rate is below the market rate, the bonds sell at a discount; when above, at a premium. Interest expense each period equals the carrying amount times the market rate at issuance, which is the effective interest method, and debt issuance costs reduce the carrying amount of the debt. When debt is paid off early, the difference between the amount paid and the carrying amount is a gain or loss in income.",
+        "In equity, buying back the company's own shares under the cost method records treasury stock at the price paid, which reduces total equity. Cash dividends reduce retained earnings and become a liability on the declaration date. Stock dividends only move amounts within equity: a small stock dividend is recorded at fair value, and a large one at par value, so total equity does not change."
+      ],
+      "concepts": [
+        {
+          "term": "Effective interest method",
+          "definition": "Interest expense equals the bond's carrying amount at the start of the period times the market rate at issuance. The cash paid is face value times the stated rate. The difference amortizes the discount or premium.",
+          "tip": "A discount makes interest expense larger than the cash paid; a premium makes it smaller.",
+          "source": {
+            "org": "FASB ASC 835-30",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Debt issuance costs",
+          "definition": "Costs to issue debt, such as underwriting and legal fees, are shown as a direct reduction of the debt's carrying amount and amortized as interest expense.",
+          "tip": "They are not shown as a separate asset for term debt.",
+          "source": {
+            "org": "FASB ASC 835-30",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Extinguishment of debt",
+          "definition": "When debt is retired before maturity, the difference between the reacquisition price and the net carrying amount is recognized as a gain or loss in income in the period of extinguishment.",
+          "tip": "Update the carrying amount for amortization up to the retirement date first.",
+          "source": {
+            "org": "FASB ASC 470-50",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Short-term debt to be refinanced",
+          "definition": "Short-term debt can be classified as noncurrent if the company intends to refinance it on a long-term basis and shows the ability to do so, such as by actually refinancing before the statements are issued or by a qualifying financing agreement.",
+          "tip": "Intent alone is not enough; ability must also be shown.",
+          "source": {
+            "org": "FASB ASC 470-10",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Treasury stock (cost method)",
+          "definition": "Reacquired shares are debited to treasury stock at cost, a contra-equity account. On reissue above cost, the excess goes to additional paid-in capital; below cost, the shortfall reduces paid-in capital from treasury stock and then retained earnings.",
+          "tip": "Gains and losses on treasury stock never go to net income.",
+          "source": {
+            "org": "FASB ASC 505-30",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Stock dividends and splits",
+          "definition": "A small stock dividend (generally under 20 to 25 percent of shares outstanding) is recorded at fair value; a large one is recorded at par. A stock split changes the number of shares and par per share with no entry to equity amounts.",
+          "tip": "Stock dividends do not change total equity.",
+          "source": {
+            "org": "FASB ASC 505-20",
+            "year": 2026
+          }
+        }
+      ],
+      "points": [
+        "Bond price equals the present value of interest and face value at the market rate.",
+        "Interest expense = carrying amount x market rate at issuance.",
+        "Debt issuance costs reduce the carrying amount of the debt.",
+        "Gain or loss on early retirement = reacquisition price minus net carrying amount.",
+        "Treasury stock reduces equity and creates no income statement gain or loss.",
+        "Small stock dividends at fair value, large at par."
+      ],
+      "compare": {
+        "title": "Cash dividend vs. stock dividend",
+        "columns": [
+          "Item",
+          "Cash dividend",
+          "Stock dividend"
+        ],
+        "rows": [
+          [
+            "Effect on total equity",
+            "Decreases",
+            "No change"
+          ],
+          [
+            "Liability at declaration",
+            "Dividends payable",
+            "None (stock dividend distributable is equity)"
+          ],
+          [
+            "Retained earnings",
+            "Decreases by cash amount",
+            "Decreases by fair value (small) or par (large)"
+          ]
+        ]
+      }
+    },
+    "revenue-leases": {
+      "verifiedAt": "2026-10-12",
+      "summary": [
+        "This chapter covers two standards that shape most business transactions: revenue from contracts with customers and leases. Revenue follows one five-step model for all industries, and lease accounting puts nearly all leases on the lessee's balance sheet.",
+        "The five revenue steps are: identify the contract, identify the separate performance obligations, determine the transaction price, allocate the price to the obligations based on standalone selling prices, and recognize revenue when or as each obligation is satisfied. Variable consideration is included in the price only to the extent a significant reversal of revenue is not probable. Revenue is recognized over time when certain criteria are met; otherwise it is recognized at the point control passes to the customer.",
+        "A lessee records a right-of-use asset and a lease liability for both finance and operating leases, except where it elects not to for short-term leases of 12 months or less. A lease is a finance lease if any one of five criteria is met, such as ownership transfer or a lease term for the major part of the asset's remaining economic life. A finance lease shows interest expense and amortization separately, while an operating lease shows one straight-line lease cost."
+      ],
+      "concepts": [
+        {
+          "term": "Five-step revenue model",
+          "definition": "1) Identify the contract. 2) Identify performance obligations. 3) Determine the transaction price. 4) Allocate the price to the obligations. 5) Recognize revenue when or as each obligation is satisfied.",
+          "tip": "Revenue follows transfer of control, not receipt of cash.",
+          "source": {
+            "org": "FASB ASC 606",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Performance obligation",
+          "definition": "A promise to transfer a good or service that is distinct: the customer can benefit from it alone or with readily available resources, and it is separately identifiable from other promises in the contract.",
+          "tip": "A standard assurance warranty is not a separate obligation; a warranty sold as extra service is.",
+          "source": {
+            "org": "FASB ASC 606",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Allocation by standalone selling price",
+          "definition": "The transaction price is split among performance obligations in proportion to their standalone selling prices. If a price is not observable, it is estimated.",
+          "tip": "Allocate any discount proportionally unless it clearly relates to specific items.",
+          "source": {
+            "org": "FASB ASC 606",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Variable consideration",
+          "definition": "Amounts that can change, such as bonuses, rebates, and penalties, are estimated using expected value or most likely amount, and included only to the extent a significant revenue reversal is not probable.",
+          "tip": "This limit is often called the constraint.",
+          "source": {
+            "org": "FASB ASC 606",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Finance lease criteria (lessee)",
+          "definition": "A lease is a finance lease if any one applies: ownership transfers; a purchase option is reasonably certain to be used; the term is a major part of the asset's remaining life; payments' present value is substantially all of fair value; or the asset is so specialized the lessor has no other use.",
+          "tip": "If none applies, the lessee has an operating lease.",
+          "source": {
+            "org": "FASB ASC 842",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Lessee measurement",
+          "definition": "The lease liability is the present value of unpaid lease payments. The right-of-use asset is the liability plus prepaid lease payments and initial direct costs, less lease incentives received.",
+          "tip": "A lessee uses the rate implicit in the lease if readily determinable, otherwise its incremental borrowing rate.",
+          "source": {
+            "org": "FASB ASC 842",
+            "year": 2026
+          }
+        }
+      ],
+      "points": [
+        "Revenue: contract, obligations, price, allocation, recognition.",
+        "Allocate price by relative standalone selling prices.",
+        "Variable consideration is constrained to avoid a significant reversal.",
+        "Both lessee lease types put a right-of-use asset and lease liability on the balance sheet.",
+        "Short-term leases of 12 months or less may be kept off the balance sheet by election.",
+        "Finance lease: interest plus amortization; operating lease: single straight-line cost."
+      ],
+      "compare": {
+        "title": "Finance lease vs. operating lease (lessee)",
+        "columns": [
+          "Item",
+          "Finance lease",
+          "Operating lease"
+        ],
+        "rows": [
+          [
+            "Balance sheet",
+            "Right-of-use asset and lease liability",
+            "Right-of-use asset and lease liability"
+          ],
+          [
+            "Income statement",
+            "Interest expense plus amortization expense",
+            "Single lease cost, generally straight-line"
+          ],
+          [
+            "Cash flows: principal portion",
+            "Financing",
+            "Operating"
+          ]
+        ]
+      }
+    },
+    "changes-taxes-other": {
+      "verifiedAt": "2026-10-12",
+      "summary": [
+        "This chapter gathers several topics that cut across many accounts: accounting changes and error corrections, contingencies, income taxes, fair value measurement, and subsequent events. Each one is about timing and judgment: when and how to reflect information in the statements.",
+        "A change in accounting principle is generally applied retrospectively, recasting prior periods shown. A change in accounting estimate, such as a new useful life, is applied prospectively in the current and future periods. A change in depreciation method is treated as a change in estimate effected by a change in principle, so it is also prospective. Correction of an error in previously issued statements is a restatement of prior periods.",
+        "A loss contingency is accrued when a loss is probable and can be reasonably estimated, and disclosed when only reasonably possible; gain contingencies are not recognized until realized. Income tax expense is current tax plus deferred tax. Deferred tax assets and liabilities come from temporary differences between book and tax bases, measured at enacted tax rates for the years they reverse, and are classified as noncurrent.",
+        "A valuation allowance reduces deferred tax assets when it is more likely than not that some will not be realized. Fair value is an exit price measured with a three-level input hierarchy, and subsequent events are either recognized, when they give evidence about conditions that existed at the balance sheet date, or only disclosed, when the condition arose afterward."
+      ],
+      "concepts": [
+        {
+          "term": "Types of accounting changes",
+          "definition": "Change in principle: generally retrospective. Change in estimate: prospective. Change in reporting entity: retrospective. Error correction in previously issued statements: restatement of prior periods, with an adjustment to opening retained earnings for the earliest period shown.",
+          "tip": "A change in depreciation method is treated like a change in estimate, so it is prospective.",
+          "source": {
+            "org": "FASB ASC 250",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Loss contingencies",
+          "definition": "Accrue if probable and reasonably estimable. Disclose if reasonably possible, or if probable but not estimable. Remote losses generally need no disclosure, except certain guarantees. If a range is estimated and no amount is better, accrue the low end.",
+          "tip": "Gain contingencies are not recorded until realized.",
+          "source": {
+            "org": "FASB ASC 450",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Deferred taxes",
+          "definition": "Temporary differences create deferred tax liabilities (future taxable amounts) or deferred tax assets (future deductible amounts), measured at enacted rates expected to apply when they reverse. Permanent differences create no deferred tax.",
+          "tip": "Deferred tax assets and liabilities are all classified as noncurrent.",
+          "source": {
+            "org": "FASB ASC 740",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Valuation allowance",
+          "definition": "A deferred tax asset is reduced by a valuation allowance if it is more likely than not (above 50 percent likelihood) that some or all of it will not be realized.",
+          "tip": "Do not use expected future rate changes that are not yet enacted.",
+          "source": {
+            "org": "FASB ASC 740",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Fair value hierarchy",
+          "definition": "Fair value is the price to sell an asset or transfer a liability in an orderly transaction between market participants. Level 1: quoted prices for identical items in active markets. Level 2: other observable inputs. Level 3: unobservable inputs.",
+          "tip": "Fair value is an exit price, not the price paid to buy.",
+          "source": {
+            "org": "FASB ASC 820",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Subsequent events",
+          "definition": "Recognized subsequent events give more evidence about conditions that existed at the balance sheet date, such as a customer bankruptcy revealing an existing receivable problem, and are adjusted for. Nonrecognized events come from conditions arising later, such as a fire; disclose them if material.",
+          "tip": "Ask whether the condition already existed on the balance sheet date.",
+          "source": {
+            "org": "FASB ASC 855",
+            "year": 2026
+          }
+        }
+      ],
+      "points": [
+        "Principle change: retrospective; estimate change: prospective; error: restate.",
+        "Accrue a loss contingency only if probable and reasonably estimable.",
+        "Deferred taxes use enacted rates and are classified as noncurrent.",
+        "Valuation allowance uses the more-likely-than-not threshold.",
+        "Fair value Level 1 inputs are quoted prices for identical items in active markets.",
+        "Recognized subsequent events relate to conditions at the balance sheet date."
+      ],
+      "compare": {
+        "title": "Temporary vs. permanent differences",
+        "columns": [
+          "Item",
+          "Temporary difference",
+          "Permanent difference"
+        ],
+        "rows": [
+          [
+            "Reverses in later years",
+            "Yes",
+            "No"
+          ],
+          [
+            "Creates deferred tax",
+            "Yes",
+            "No"
+          ],
+          [
+            "Example",
+            "Faster tax depreciation than book depreciation",
+            "Tax-exempt municipal bond interest"
+          ]
+        ]
+      }
+    }
+  }
+}

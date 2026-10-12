@@ -1,0 +1,435 @@
+[
+  {
+    "id": "cpa-far-not-for-profit-0001",
+    "certId": "cpa-far",
+    "subjectId": "financial-reporting",
+    "chapterId": "not-for-profit",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Under current US GAAP for not-for-profit entities, the statement of financial position reports net assets in which classes?",
+    "choices": [
+      "Unrestricted, temporarily restricted, and permanently restricted net assets",
+      "Operating net assets and capital net assets",
+      "Current net assets and noncurrent net assets",
+      "Net assets without donor restrictions and net assets with donor restrictions"
+    ],
+    "answer": 4,
+    "oneLineConcept": "NFP net assets: with vs. without donor restrictions",
+    "explanation": "Not-for-profit entities report two classes of net assets: without donor restrictions and with donor restrictions. Board-designated amounts are still net assets without donor restrictions, because only donors can impose restrictions.\n\n**Wrong choices**\n- Unrestricted, temporarily restricted, and permanently restricted net assets: These three classes were replaced by two classes for NFPs.\n- Operating net assets and capital net assets: These are not the required net asset classes.\n- Current net assets and noncurrent net assets: Net assets are classified by donor restrictions, not by current or noncurrent.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "net assets",
+      "financial position"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-not-for-profit-0002",
+    "certId": "cpa-far",
+    "subjectId": "financial-reporting",
+    "chapterId": "not-for-profit",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "In Year 1, a donor makes an unconditional written promise to give a charity $10,000 cash in Year 2. The donor places no purpose restriction on the gift. How does the charity report this in Year 1?",
+    "choices": [
+      "As contribution revenue that increases net assets without donor restrictions",
+      "As contribution revenue that increases net assets with donor restrictions",
+      "No revenue until the cash is received in Year 2",
+      "Disclosure in the notes only, with no amount recognized"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Future-year unconditional pledge = time-restricted revenue",
+    "explanation": "An unconditional promise to give is recognized as a receivable and contribution revenue when the promise is received. Cash due in a future period is treated as time-restricted, so it increases net assets with donor restrictions until the time arrives.\n\n**Wrong choices**\n- As contribution revenue that increases net assets without donor restrictions: Because the cash is not due until a later year, the promise carries an implied time restriction.\n- No revenue until the cash is received in Year 2: Unconditional promises to give are recognized when received, not when collected.\n- Disclosure in the notes only, with no amount recognized: Only conditional promises are left unrecognized; this promise is unconditional.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "contributions",
+      "promises to give"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-not-for-profit-0003",
+    "certId": "cpa-far",
+    "subjectId": "financial-reporting",
+    "chapterId": "not-for-profit",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A donor promises a museum $50,000 only if the museum first raises $50,000 from other donors by year-end. If the museum fails, it receives nothing. At year-end the museum has raised $20,000 from others. How should the museum report the $50,000 promise?",
+    "choices": [
+      "Recognize $50,000 contribution revenue with donor restrictions",
+      "Recognize $20,000 contribution revenue in proportion to funds raised",
+      "Do not recognize it as revenue until the condition is met",
+      "Recognize $50,000 contribution revenue without donor restrictions"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Conditional promise: no revenue until barrier met",
+    "explanation": "A promise is conditional when it has a barrier that must be overcome and a right of return or release. The matching requirement is a barrier, and the donor is released if it is not met. The museum recognizes revenue only when it substantially meets the condition.\n\n**Wrong choices**\n- Recognize $50,000 contribution revenue with donor restrictions: A conditional promise (with a barrier and a right to walk away) is not revenue until the barrier is overcome.\n- Recognize $20,000 contribution revenue in proportion to funds raised: The promise is all-or-nothing; partial progress does not create revenue.\n- Recognize $50,000 contribution revenue without donor restrictions: The condition has not been met, so no revenue is recognized.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "contributions",
+      "conditional promises"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-not-for-profit-0004",
+    "certId": "cpa-far",
+    "subjectId": "financial-reporting",
+    "chapterId": "not-for-profit",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which donated service should a not-for-profit entity recognize as contribution revenue?",
+    "choices": [
+      "Volunteers answer phones during a fundraising drive",
+      "Volunteers serve meals at the entity's shelter",
+      "A licensed CPA prepares the entity's accounting records, work the entity would otherwise pay for",
+      "Board members attend monthly board meetings"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Recognize services needing specialized skills",
+    "explanation": "Contributed services are recognized only if they (a) create or enhance a nonfinancial asset, or (b) require specialized skills, are provided by people with those skills, and would normally have to be purchased if not donated. A CPA doing accounting work meets the second test.\n\n**Wrong choices**\n- Volunteers answer phones during a fundraising drive: This work does not need specialized skills and does not create a nonfinancial asset.\n- Volunteers serve meals at the entity's shelter: Serving meals does not require specialized skills, so it is not recognized.\n- Board members attend monthly board meetings: Board service is not a specialized skill the entity would normally buy.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "contributed services",
+      "contributions"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-not-for-profit-0005",
+    "certId": "cpa-far",
+    "subjectId": "financial-reporting",
+    "chapterId": "not-for-profit",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A not-for-profit entity reports expenses by function. What are the main functional categories?",
+    "choices": [
+      "Salaries, rent, and supplies",
+      "Operating and nonoperating expenses",
+      "Restricted and unrestricted expenses",
+      "Program services and supporting services (management and general, and fundraising)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Functions: program vs. supporting (M&G, fundraising)",
+    "explanation": "A functional classification shows why money was spent. Program services carry out the mission. Supporting services include management and general and fundraising. NFPs must also show the relationship between functional and natural expenses in one place (on the face, a separate statement, or the notes).\n\n**Wrong choices**\n- Salaries, rent, and supplies: These are natural classifications (expenses by type), not functional ones.\n- Operating and nonoperating expenses: These are not the required functional categories.\n- Restricted and unrestricted expenses: All expenses reduce net assets without donor restrictions; they are not classified by restriction.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "functional expenses",
+      "statement of activities"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-not-for-profit-0006",
+    "certId": "cpa-far",
+    "subjectId": "financial-reporting",
+    "chapterId": "not-for-profit",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "During the year, a charity received $100,000 of donor-restricted gifts for its literacy program. It spent $60,000 on the literacy program during the year. There were no other restricted activities. What is the net change in net assets with donor restrictions for the year?",
+    "choices": [
+      "$100,000 increase",
+      "$40,000 increase",
+      "$60,000 decrease",
+      "$60,000 increase"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Release from restriction moves net assets out",
+    "explanation": "Restricted gifts increase net assets with donor restrictions. When the money is spent for the stated purpose, the restriction is met and the amount is reclassified (released) to net assets without donor restrictions, where the expense is reported.\n\n1. Restricted gifts: +100,000\n2. Released when spent: −60,000\n3. Net change = +40,000\n\nCheck: 40,000 is still waiting to be spent on literacy.\n\n**Wrong choices**\n- $100,000 increase: This ignores the release of $60,000 when the restriction was met.\n- $60,000 decrease: This counts the release but leaves out the $100,000 of new restricted gifts.\n- $60,000 increase: This treats the spending as the restricted increase; restricted gifts were $100,000 and $60,000 was released.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "net assets released",
+      "statement of activities"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-not-for-profit-0007",
+    "certId": "cpa-far",
+    "subjectId": "financial-reporting",
+    "chapterId": "not-for-profit",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "In a not-for-profit entity's statement of activities, in which net asset class are expenses reported?",
+    "choices": [
+      "In whichever class provided the resources used",
+      "Always as decreases in net assets with donor restrictions",
+      "Always as decreases in net assets without donor restrictions",
+      "Split between classes in proportion to revenue"
+    ],
+    "answer": 3,
+    "oneLineConcept": "NFP expenses: always in 'without donor restrictions'",
+    "explanation": "Expenses are always reported as decreases in net assets without donor restrictions. If restricted resources pay for the expense, the amount is first released from net assets with donor restrictions, and then the expense is reported in the unrestricted column.\n\n**Wrong choices**\n- In whichever class provided the resources used: Spending restricted money first releases it to the unrestricted class; the expense itself is unrestricted.\n- Always as decreases in net assets with donor restrictions: Expenses are never reported in the restricted class.\n- Split between classes in proportion to revenue: There is no proportional split; expenses are reported in one class.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "statement of activities",
+      "expenses"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-not-for-profit-0008",
+    "certId": "cpa-far",
+    "subjectId": "financial-reporting",
+    "chapterId": "not-for-profit",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "In Year 1, a donor makes an unconditional promise to give a charity $50,000, payable at the end of Year 3. The present value of the promise at the date of the promise is $42,000. What amount of contribution revenue does the charity recognize in Year 1 for this promise?",
+    "choices": [
+      "$50,000",
+      "$0",
+      "$8,000",
+      "$42,000"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Long-term pledges at present value",
+    "explanation": "Unconditional promises to give that are due in more than one year are recognized at present value. The $42,000 is contribution revenue with donor restrictions (time restriction). In later years, the discount of $8,000 is recognized over time as additional contribution revenue, not as interest income.\n\nCheck: 42,000 + 8,000 of later accretion = 50,000 face.\n\n**Wrong choices**\n- $50,000: Long-term promises are measured at present value, not the face amount.\n- $0: Unconditional promises are recognized when received, even if paid later.\n- $8,000: This is the discount, which is recognized over time, not the revenue at the start.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "promises to give",
+      "present value"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-not-for-profit-0009",
+    "certId": "cpa-far",
+    "subjectId": "financial-reporting",
+    "chapterId": "not-for-profit",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A not-for-profit entity receives $300,000 in cash from a donor who requires that it be used to build a new community center. How is the receipt reported in the statement of cash flows?",
+    "choices": [
+      "As an operating activity",
+      "As a financing activity",
+      "As an investing activity",
+      "Only as a noncash disclosure"
+    ],
+    "answer": 2,
+    "oneLineConcept": "NFP: cash gifts for long-term purposes = financing",
+    "explanation": "For NFPs, cash contributions that donors restrict for long-term purposes (such as buying or building long-lived assets, or adding to endowments) are financing inflows. When the entity later pays to build the center, that payment is an investing outflow.\n\n**Wrong choices**\n- As an operating activity: Contributions restricted to long-term purposes, such as buildings, are not operating cash flows.\n- As an investing activity: Investing covers the later purchase or construction of the building, not the receipt of the gift.\n- Only as a noncash disclosure: Cash was received, so it is reported in the body of the statement.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "cash flows",
+      "contributions"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-not-for-profit-0010",
+    "certId": "cpa-far",
+    "subjectId": "financial-reporting",
+    "chapterId": "not-for-profit",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "For the year, a charity had: contributions without donor restrictions $300,000; contributions with donor restrictions $90,000; net assets released from restrictions $70,000; program service expenses $250,000; management and general expenses $40,000; and fundraising expenses $30,000. What is the change in net assets without donor restrictions?",
+    "choices": [
+      "$50,000 increase",
+      "$20,000 decrease",
+      "$80,000 increase",
+      "$140,000 increase"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Unrestricted change = gifts + releases − expenses",
+    "explanation": "Net assets without donor restrictions increase from unrestricted contributions and from releases, and decrease by all expenses.\n\n1. Increases: 300,000 + 70,000 = $370,000\n2. Expenses: 250,000 + 40,000 + 30,000 = $320,000\n3. Change = 370,000 − 320,000 = $50,000 increase\n\nCheck: the $90,000 restricted gifts are reported only in net assets with donor restrictions.\n\n**Wrong choices**\n- $20,000 decrease: This ignores the $70,000 released from restrictions, which adds to unrestricted net assets.\n- $80,000 increase: This leaves out fundraising expenses, which are part of total expenses.\n- $140,000 increase: This also counts the $90,000 of restricted contributions, which belong to the other class.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "statement of activities",
+      "net assets released"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-not-for-profit-0011",
+    "certId": "cpa-far",
+    "subjectId": "financial-reporting",
+    "chapterId": "not-for-profit",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "During the year a charity received: $100,000 cash with no donor restrictions; rewiring of its building by a licensed electrician who donated the work (fair value $8,000); volunteer help at a fundraising dinner (fair value of time $5,000); donated stock with a fair value of $20,000 on the date of the gift (the donor paid $12,000 for it); and a $25,000 promise that depends on a matching condition not yet met. What is total contribution revenue for the year?",
+    "choices": [
+      "$133,000",
+      "$120,000",
+      "$153,000",
+      "$128,000"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Gifts at FV; qualifying services only; no conditional",
+    "explanation": "Recognize unconditional gifts at fair value, recognize only qualifying services, and leave out conditional promises.\n\n1. Cash: 100,000\n2. Electrician (specialized skill, would be purchased): 8,000\n3. Stock at fair value: 20,000\n4. Fundraising volunteers: 0\n5. Conditional promise: 0\n6. Total = 100,000 + 8,000 + 20,000 = $128,000\n\n**Wrong choices**\n- $133,000: This includes the fundraising volunteers. Their work needs no specialized skills, so it is not recognized.\n- $120,000: This values the stock at the donor's cost. Donated assets are recorded at fair value.\n- $153,000: This includes the conditional promise, which is not revenue until the condition is met.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "contributions",
+      "contributed services",
+      "conditional promises"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-not-for-profit-0012",
+    "certId": "cpa-far",
+    "subjectId": "financial-reporting",
+    "chapterId": "not-for-profit",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A charity spends $40,000 on a mailing that contains both an educational message about its mission and a request for donations. The mailing meets the purpose and content criteria for joint costs, but it fails the audience criterion. How should the $40,000 be reported?",
+    "choices": [
+      "$20,000 as program expense and $20,000 as fundraising expense",
+      "All $40,000 as program expense",
+      "All $40,000 as fundraising expense",
+      "All $40,000 as management and general expense"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Joint costs: fail any criterion → all fundraising",
+    "explanation": "Costs of an activity that combines fundraising with program or management and general content can be allocated only if the purpose, audience, and content criteria are all met. If any one criterion fails, all the joint costs are reported as fundraising expense.\n\n**Wrong choices**\n- $20,000 as program expense and $20,000 as fundraising expense: Allocating joint costs is allowed only when all three criteria (purpose, audience, content) are met.\n- All $40,000 as program expense: Failing a criterion pushes the costs to fundraising, not to program.\n- All $40,000 as management and general expense: The costs relate to a fundraising appeal, not general administration.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "joint costs",
+      "functional expenses"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+]

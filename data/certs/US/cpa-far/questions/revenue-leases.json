@@ -1,0 +1,737 @@
+[
+  {
+    "id": "cpa-far-revenue-leases-0001",
+    "certId": "cpa-far",
+    "subjectId": "select-transactions",
+    "chapterId": "revenue-leases",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Under ASC 606, revenue is recognized in five steps. What is the third step?",
+    "choices": [
+      "Identify the performance obligations in the contract",
+      "Allocate the transaction price to the performance obligations",
+      "Determine the transaction price",
+      "Recognize revenue when a performance obligation is satisfied"
+    ],
+    "answer": 3,
+    "oneLineConcept": "ASC 606 step 3 = determine the transaction price",
+    "explanation": "The five steps are, in order: (1) identify the contract, (2) identify the performance obligations, (3) determine the transaction price, (4) allocate the price to the performance obligations, and (5) recognize revenue when (or as) each obligation is satisfied. So the third step is working out how much the entity expects to receive.\n\n**Wrong choices**\n- Identify the performance obligations: this is the second step.\n- Allocate the transaction price: this is the fourth step; you must know the price before you can split it.\n- Recognize revenue: this is the fifth and last step.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "ASC 606",
+      "five steps"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-revenue-leases-0002",
+    "certId": "cpa-far",
+    "subjectId": "select-transactions",
+    "chapterId": "revenue-leases",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Under ASC 606, when should a company recognize revenue for a promised good?",
+    "choices": [
+      "When control of the good transfers to the customer",
+      "When the company receives cash from the customer",
+      "When the contract is signed by both parties",
+      "When the company finishes making the good"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Revenue is recognized when control transfers",
+    "explanation": "ASC 606 is a control-based model. Revenue is recognized when (or as) the company satisfies a performance obligation by transferring control of the good or service to the customer. Signing, producing, or collecting cash alone do not trigger revenue.\n\n**Wrong choices**\n- When cash is received: collection timing does not decide revenue; cash received early is a contract liability.\n- When the contract is signed: signing creates the contract (step 1) but nothing has been delivered yet.\n- When production is finished: the good is still the company's until control passes to the customer.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "ASC 606",
+      "control"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-revenue-leases-0003",
+    "certId": "cpa-far",
+    "subjectId": "select-transactions",
+    "chapterId": "revenue-leases",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Under ASC 606, a promised good or service is a distinct performance obligation when which conditions are met?",
+    "choices": [
+      "The customer can benefit from it, even if it is highly dependent on other promises in the same contract",
+      "The company sells it separately at least once a year",
+      "It is shown as a separate line on the customer's invoice",
+      "The customer can benefit from it alone or with readily available resources, and it is separately identifiable from other promises in the contract"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Distinct = can benefit + separately identifiable",
+    "explanation": "A good or service is distinct only when both tests are met. First, the customer can benefit from it on its own or together with resources that are readily available. Second, the promise is separately identifiable in the contract, meaning it is not highly dependent on or integrated with other promises.\n\n**Wrong choices**\n- Benefit even if highly dependent: this meets only the first test; heavy integration fails the second test.\n- Sold separately once a year: separate sales can show the first test is met but are not a required condition.\n- Separate invoice line: how an invoice is laid out does not decide what the performance obligations are.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "ASC 606",
+      "performance obligation",
+      "distinct"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-revenue-leases-0004",
+    "certId": "cpa-far",
+    "subjectId": "select-transactions",
+    "chapterId": "revenue-leases",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A company sells equipment and a one-year service plan together for $900. The standalone selling price of the equipment is $600 and of the service plan is $400. How much of the $900 is allocated to the equipment?",
+    "choices": [
+      "$600",
+      "$540",
+      "$500",
+      "$360"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Allocate price by relative standalone selling prices",
+    "explanation": "The transaction price is split in proportion to each item's standalone selling price.\n1. Total standalone selling prices = $600 + $400 = $1,000\n2. Equipment share = $600 / $1,000 = 60%\n3. Allocated to equipment = $900 x 60% = $540\nCheck: service plan gets $900 x 40% = $360, and $540 + $360 = $900.\n\n**Wrong choices**\n- $600: this is the full standalone price; the $100 discount must be shared by both items.\n- $500: this splits the price equally, which ignores the relative standalone prices.\n- $360: this is the amount allocated to the service plan, not the equipment.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "ASC 606",
+      "allocation",
+      "standalone selling price"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-revenue-leases-0005",
+    "certId": "cpa-far",
+    "subjectId": "select-transactions",
+    "chapterId": "revenue-leases",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "An online marketplace sells a third-party seller's product to a customer for $200. The marketplace never controls the product, the seller ships it directly, and the marketplace keeps a 15% fee. How much revenue should the marketplace recognize?",
+    "choices": [
+      "$200",
+      "$30",
+      "$170",
+      "$0"
+    ],
+    "answer": 2,
+    "oneLineConcept": "An agent recognizes revenue net (its fee only)",
+    "explanation": "The marketplace does not control the product before it reaches the customer, so it is an agent. An agent recognizes only its fee or commission as revenue.\n1. Fee = $200 x 15% = $30\nCheck: the seller (the principal) keeps $200 - $30 = $170.\n\n**Wrong choices**\n- $200: gross revenue is for a principal that controls the product before transfer.\n- $170: this is the amount passed on to the seller, not the marketplace's revenue.\n- $0: the marketplace has earned its fee once it arranges the sale, so revenue is not zero.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "ASC 606",
+      "principal vs agent"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-revenue-leases-0006",
+    "certId": "cpa-far",
+    "subjectId": "select-transactions",
+    "chapterId": "revenue-leases",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Under ASC 842, how does a lessee generally recognize expense for an operating lease in the income statement?",
+    "choices": [
+      "As interest expense on the lease liability plus separate amortization of the right-of-use asset",
+      "As rent expense equal to the cash paid each period",
+      "As one expense for the total payments at the lease start date",
+      "As a single lease cost, generally on a straight-line basis over the lease term"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Operating lease = single straight-line lease cost",
+    "explanation": "For an operating lease, the lessee still records a right-of-use asset and a lease liability on the balance sheet. In the income statement, however, it shows a single lease cost that is generally spread evenly (straight-line) over the lease term.\n\n**Wrong choices**\n- Interest plus amortization: this two-part pattern is for a finance lease.\n- Cash paid each period: if payments are uneven, cash paid differs from the straight-line cost.\n- All at the start date: lease cost is spread over the lease term, not expensed up front.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "ASC 842",
+      "operating lease",
+      "lessee"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-revenue-leases-0007",
+    "certId": "cpa-far",
+    "subjectId": "select-transactions",
+    "chapterId": "revenue-leases",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Under ASC 842, which fact by itself makes a lease a finance lease for the lessee?",
+    "choices": [
+      "The lease transfers ownership of the asset to the lessee by the end of the lease term",
+      "The lease term is half of the asset's remaining economic life",
+      "The present value of the lease payments is 60% of the asset's fair value",
+      "The asset is a standard model that the lessor can easily lease to someone else"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Ownership transfer is a finance lease criterion",
+    "explanation": "A lessee classifies a lease as a finance lease if any one of five criteria is met: ownership transfer, a purchase option reasonably certain to be exercised, a term for the major part of the asset's remaining economic life, payments with a present value equal to substantially all of fair value, or a specialized asset with no other use to the lessor. Ownership transfer meets the first criterion.\n\n**Wrong choices**\n- Half of economic life: 50% is not a major part of the economic life (75% is a common threshold).\n- PV is 60% of fair value: this is not substantially all of fair value (90% is a common threshold).\n- Standard asset easily re-leased: this is the opposite of the specialized-asset criterion.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "ASC 842",
+      "lease classification",
+      "finance lease"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-revenue-leases-0008",
+    "certId": "cpa-far",
+    "subjectId": "select-transactions",
+    "chapterId": "revenue-leases",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A contractor signs a $1,000,000 fixed-price contract and recognizes revenue over time using costs incurred to measure progress. Estimated total cost is $800,000. In Year 1, costs incurred are $200,000. How much revenue is recognized in Year 1?",
+    "choices": [
+      "$200,000",
+      "$50,000",
+      "$250,000",
+      "$0"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Cost-to-cost: revenue = % complete x contract price",
+    "explanation": "Under the cost-to-cost input method, progress equals costs incurred divided by total estimated costs.\n1. Progress = $200,000 / $800,000 = 25%\n2. Revenue = $1,000,000 x 25% = $250,000\nCheck: gross profit = $250,000 - $200,000 = $50,000, which is 25% of the total expected profit of $200,000.\n\n**Wrong choices**\n- $200,000: this is the cost incurred, not the revenue.\n- $50,000: this is the Year 1 gross profit, not revenue.\n- $0: that would wait until completion, which is not allowed when revenue is recognized over time.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "ASC 606",
+      "over time",
+      "cost-to-cost"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-revenue-leases-0009",
+    "certId": "cpa-far",
+    "subjectId": "select-transactions",
+    "chapterId": "revenue-leases",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A company sells 100 units at $50 each (cost $30 each) with a right of return. Based on experience, it expects 5 units to be returned and the constraint does not limit this estimate. How much revenue should it recognize at the time of sale?",
+    "choices": [
+      "$5,000",
+      "$4,500",
+      "$4,750",
+      "$2,850"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Right of return: no revenue for expected returns",
+    "explanation": "Revenue is not recognized for goods expected to be returned; a refund liability is recorded instead.\n1. Units expected to be kept = 100 - 5 = 95\n2. Revenue = 95 x $50 = $4,750\n3. Refund liability = 5 x $50 = $250\nCheck: $4,750 + $250 = $5,000 total billed.\n\n**Wrong choices**\n- $5,000: this ignores the expected returns.\n- $4,500: this removes 10 units instead of the 5 expected.\n- $2,850: this is the cost of the 95 units, not revenue.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "ASC 606",
+      "right of return",
+      "variable consideration"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-revenue-leases-0010",
+    "certId": "cpa-far",
+    "subjectId": "select-transactions",
+    "chapterId": "revenue-leases",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A lessee signs a 5-year lease with payments of $10,000 at the end of each year. The discount rate is 6%. The present value of an ordinary annuity of 1 for 5 periods at 6% is 4.2124, and of an annuity due is 4.4651. What is the initial lease liability?",
+    "choices": [
+      "$42,124",
+      "$44,651",
+      "$50,000",
+      "$32,124"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Lease liability = PV of remaining lease payments",
+    "explanation": "The lease liability is the present value of the lease payments not yet paid. Payments are at the end of each year, so the ordinary annuity factor is used.\n1. Lease liability = $10,000 x 4.2124 = $42,124\nCheck: the liability is less than the $50,000 total payments because of discounting.\n\n**Wrong choices**\n- $44,651: this uses the annuity-due factor, which is for payments at the start of each period.\n- $50,000: this is the undiscounted total; ASC 842 requires present value.\n- $32,124: this subtracts one payment, which is only right when the first payment is made at commencement.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "ASC 842",
+      "lease liability",
+      "present value"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-revenue-leases-0011",
+    "certId": "cpa-far",
+    "subjectId": "select-transactions",
+    "chapterId": "revenue-leases",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "At lease commencement, a lessee's lease liability is $80,000. The lessee also paid $5,000 of lease payments before commencement, paid $2,000 of initial direct costs, and received a $3,000 lease incentive from the lessor. What is the right-of-use asset?",
+    "choices": [
+      "$80,000",
+      "$87,000",
+      "$90,000",
+      "$84,000"
+    ],
+    "answer": 4,
+    "oneLineConcept": "ROU asset = liability + prepaid + IDC - incentives",
+    "explanation": "The right-of-use asset starts with the lease liability, adds lease payments made before commencement and initial direct costs, and subtracts lease incentives received.\n1. $80,000 + $5,000 + $2,000 = $87,000\n2. $87,000 - $3,000 = $84,000\n\n**Wrong choices**\n- $80,000: this ignores the prepaid payments, direct costs, and incentive.\n- $87,000: this forgets to subtract the $3,000 incentive received.\n- $90,000: this adds the incentive instead of subtracting it.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "ASC 842",
+      "right-of-use asset"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-revenue-leases-0012",
+    "certId": "cpa-far",
+    "subjectId": "select-transactions",
+    "chapterId": "revenue-leases",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A lessee classifies a 5-year equipment lease as a finance lease. Ownership does not transfer, and there is no purchase option. The lease liability and right-of-use asset are each $50,000 at commencement. Payments of $12,523 are made at the end of each year, and the rate is 8%. The equipment's useful life is 8 years. What is total lease expense in Year 1?",
+    "choices": [
+      "$12,523",
+      "$14,000",
+      "$10,000",
+      "$10,250"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Finance lease: interest + ROU amortization",
+    "explanation": "A finance lease has two expenses: interest on the lease liability and amortization of the right-of-use asset. Ownership does not transfer, so the asset is amortized over the shorter of the lease term (5 years) and useful life (8 years).\n1. Interest = $50,000 x 8% = $4,000\n2. Amortization = $50,000 / 5 = $10,000\n3. Total = $4,000 + $10,000 = $14,000\n\n**Wrong choices**\n- $12,523: this is the cash payment, which is the operating-lease idea of expense.\n- $10,000: this is only the amortization and leaves out interest.\n- $10,250: this amortizes over the 8-year useful life ($6,250) plus interest; the 5-year lease term is shorter and must be used.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "ASC 842",
+      "finance lease",
+      "lessee"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-revenue-leases-0013",
+    "certId": "cpa-far",
+    "subjectId": "select-transactions",
+    "chapterId": "revenue-leases",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A lessee signs a 3-year operating lease. The lessor gives a rent-free first year, and the lessee pays $15,000 in Year 2 and $15,000 in Year 3. How much lease cost does the lessee recognize in Year 1?",
+    "choices": [
+      "$0",
+      "$10,000",
+      "$15,000",
+      "$30,000"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Operating lease cost is straight-line, even with free rent",
+    "explanation": "Operating lease cost is spread evenly over the lease term, even when payments are uneven.\n1. Total payments = $0 + $15,000 + $15,000 = $30,000\n2. Lease cost per year = $30,000 / 3 = $10,000\nCheck: $10,000 x 3 years = $30,000.\n\n**Wrong choices**\n- $0: free rent does not mean zero cost; the cost is spread over all 3 years.\n- $15,000: this is a later year's cash payment, not the straight-line cost.\n- $30,000: this records all payments in one year.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "ASC 842",
+      "operating lease",
+      "straight-line"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-revenue-leases-0014",
+    "certId": "cpa-far",
+    "subjectId": "select-transactions",
+    "chapterId": "revenue-leases",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A retailer sells goods made by a supplier. Which fact best shows that the retailer is the principal (and reports revenue gross)?",
+    "choices": [
+      "The retailer earns a fixed commission on each sale",
+      "The supplier is responsible for delivering the goods and fixing any problems",
+      "The retailer can return any unsold goods to the supplier at no cost",
+      "The retailer holds the goods in inventory before sale and sets the selling price"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Principal controls the good before transfer",
+    "explanation": "A company is the principal when it controls the good before it is transferred to the customer. Signs of control include being mainly responsible for fulfilling the promise, carrying inventory risk, and having discretion over the price. Holding inventory and setting the price point to control.\n\n**Wrong choices**\n- Fixed commission: earning a set commission is a typical sign of an agent.\n- Supplier fulfills the promise: this means the supplier, not the retailer, controls the goods.\n- Free return of unsold goods: this removes inventory risk, which points toward agent.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "ASC 606",
+      "principal vs agent"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-revenue-leases-0015",
+    "certId": "cpa-far",
+    "subjectId": "select-transactions",
+    "chapterId": "revenue-leases",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A builder's contract has a fixed price of $100,000 plus a performance bonus. The builder estimates: 20% chance of no bonus, 50% chance of a $10,000 bonus, and 30% chance of a $20,000 bonus. It concludes the expected value method best predicts the amount and the constraint does not limit the estimate. What is the transaction price?",
+    "choices": [
+      "$111,000",
+      "$110,000",
+      "$120,000",
+      "$100,000"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Expected value = probability-weighted sum",
+    "explanation": "Variable consideration is estimated with the expected value method here, so each outcome is weighted by its probability.\n1. 20% x $0 = $0\n2. 50% x $10,000 = $5,000\n3. 30% x $20,000 = $6,000\n4. Expected bonus = $11,000\n5. Transaction price = $100,000 + $11,000 = $111,000\n\n**Wrong choices**\n- $110,000: this uses the most likely amount ($10,000), but the stem says expected value is used.\n- $120,000: this assumes the largest bonus will be earned.\n- $100,000: this leaves out variable consideration even though the constraint does not limit it.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "ASC 606",
+      "variable consideration",
+      "expected value"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-revenue-leases-0016",
+    "certId": "cpa-far",
+    "subjectId": "select-transactions",
+    "chapterId": "revenue-leases",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A contractor recognizes revenue over time on a $2,000,000 contract using cost-to-cost. Year 1: costs incurred $400,000, estimated total cost $1,600,000. Year 2: cumulative costs incurred $1,050,000, revised estimated total cost $1,750,000. How much revenue is recognized in Year 2?",
+    "choices": [
+      "$1,200,000",
+      "$812,500",
+      "$700,000",
+      "$650,000"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Change in estimate: cumulative catch-up in current year",
+    "explanation": "Progress is re-measured each year with the newest cost estimate, and Year 2 revenue is cumulative revenue minus revenue already recognized.\n1. Year 1 revenue = $400,000 / $1,600,000 = 25%; 25% x $2,000,000 = $500,000\n2. Year 2 progress = $1,050,000 / $1,750,000 = 60%\n3. Cumulative revenue = 60% x $2,000,000 = $1,200,000\n4. Year 2 revenue = $1,200,000 - $500,000 = $700,000\n\n**Wrong choices**\n- $1,200,000: this is cumulative revenue; Year 1 revenue must be subtracted.\n- $812,500: this uses the old $1,600,000 estimate; the revised estimate must be used.\n- $650,000: this is the Year 2 cost incurred, not revenue.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "ASC 606",
+      "over time",
+      "change in estimate"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-revenue-leases-0017",
+    "certId": "cpa-far",
+    "subjectId": "select-transactions",
+    "chapterId": "revenue-leases",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A company regularly sells products A, B, and C separately for $400, $300, and $300. It also regularly sells B and C together for $500. A customer buys A, B, and C together for $900. How much of the $900 is allocated to product A?",
+    "choices": [
+      "$360",
+      "$300",
+      "$400",
+      "$450"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Discount goes only to the items it relates to",
+    "explanation": "Normally a discount is spread by relative standalone prices, but when clear evidence shows the whole discount belongs to certain items, it is allocated only to them.\n1. Total standalone prices = $400 + $300 + $300 = $1,000; discount = $1,000 - $900 = $100\n2. B and C are regularly sold together at $500 instead of $600, a $100 discount, which matches the contract discount\n3. So the whole discount goes to B and C, and A gets its full standalone price of $400\nCheck: $400 + $500 = $900.\n\n**Wrong choices**\n- $360: this spreads the discount proportionally, which ignores the evidence about B and C.\n- $300: this is the full discount taken from A ($400 - $100), the opposite of the evidence.\n- $450: this splits $900 equally between A and the B-C bundle.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "ASC 606",
+      "allocation",
+      "discount"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-revenue-leases-0018",
+    "certId": "cpa-far",
+    "subjectId": "select-transactions",
+    "chapterId": "revenue-leases",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A lessee leases equipment with a fair value of $100,000 and remaining economic life of 10 years. The lease term is 6 years, ownership does not transfer, there is no purchase option, and the asset is not specialized. Payments are $20,000 at the start of each year, and the rate is 8%. The present value of an annuity due of 1 for 6 periods at 8% is 4.9927. The lessee uses the common 75% and 90% thresholds. How should the lease be classified?",
+    "choices": [
+      "Finance lease, because the present value of the lease payments is substantially all of the fair value",
+      "Operating lease, because the lease term is less than 75% of the economic life",
+      "Finance lease, because the lease term is a major part of the economic life",
+      "Operating lease, because ownership does not transfer to the lessee"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Any one finance criterion met = finance lease",
+    "explanation": "Meeting any one of the five criteria makes it a finance lease.\n1. PV of payments = $20,000 x 4.9927 = $99,854\n2. $99,854 / $100,000 = about 99.9%, which is at least 90%, so it is substantially all of fair value\n3. Lease term = 6 / 10 = 60%, which is below 75%, so that test fails, but only one test needs to pass\n\n**Wrong choices**\n- Operating, term under 75%: failing one test does not matter when another test is met.\n- Finance, term is major part: 60% is below the 75% threshold, so this reason is wrong.\n- Operating, no ownership transfer: ownership transfer is only one of five tests.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "ASC 842",
+      "lease classification",
+      "present value"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-revenue-leases-0019",
+    "certId": "cpa-far",
+    "subjectId": "select-transactions",
+    "chapterId": "revenue-leases",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A lessee's lease requires 4 payments of $10,000 at the start of each year; the first is paid at commencement. The rate is 10%, and the present value of an annuity due of 1 for 4 periods at 10% is 3.4869. What is the lease liability balance at the end of Year 1 (rounded to the nearest dollar)?",
+    "choices": [
+      "$24,869",
+      "$34,869",
+      "$28,356",
+      "$27,356"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Pay first, then accrue interest on the remaining balance",
+    "explanation": "The first payment at commencement reduces the liability right away, and interest is charged on what is left.\n1. Initial liability = $10,000 x 3.4869 = $34,869\n2. After first payment = $34,869 - $10,000 = $24,869\n3. Year 1 interest = $24,869 x 10% = $2,487\n4. End of Year 1 = $24,869 + $2,487 = $27,356\nCheck: this equals the PV of the 3 remaining payments at year-end ($10,000 x 2.7355 rounded).\n\n**Wrong choices**\n- $24,869: this leaves out the Year 1 interest.\n- $34,869: this is the starting balance, before the payment and interest.\n- $28,356: this charges interest on the full $34,869 before taking out the first payment.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "ASC 842",
+      "lease liability",
+      "annuity due"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-revenue-leases-0020",
+    "certId": "cpa-far",
+    "subjectId": "select-transactions",
+    "chapterId": "revenue-leases",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A franchisor grants a 5-year franchise for an upfront fee of $50,000 plus a royalty of 5% of the franchisee's sales. The license gives access to the franchisor's brand, which the franchisor keeps supporting (symbolic IP), and it is the only performance obligation. Year 1 franchisee sales are $400,000. How much revenue does the franchisor recognize in Year 1?",
+    "choices": [
+      "$70,000",
+      "$30,000",
+      "$50,000",
+      "$10,000"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Symbolic IP: over time; royalties as sales occur",
+    "explanation": "A license to symbolic IP is a right to access, so the upfront fee is recognized over the license term. Sales-based royalties are recognized when the franchisee's sales happen.\n1. Upfront fee per year = $50,000 / 5 = $10,000\n2. Royalties = $400,000 x 5% = $20,000\n3. Total Year 1 revenue = $10,000 + $20,000 = $30,000\n\n**Wrong choices**\n- $70,000: this recognizes the entire upfront fee at once, which is only for a right to use.\n- $50,000: this is the upfront fee alone, recognized at once, and ignores royalties.\n- $10,000: this leaves out the $20,000 of royalties earned in Year 1.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "ASC 606",
+      "licenses",
+      "royalties"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+]

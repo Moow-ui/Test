@@ -1,0 +1,507 @@
+[
+  {
+    "id": "cpa-far-cash-receivables-investments-0001",
+    "certId": "cpa-far",
+    "subjectId": "balance-sheet-accounts",
+    "chapterId": "cash-receivables-investments",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which item should a company include in cash and cash equivalents on its balance sheet?",
+    "choices": [
+      "A U.S. Treasury bill bought 2 months before it matures",
+      "A 1-year certificate of deposit bought on the day it was issued",
+      "A customer's postdated check",
+      "Postage stamps on hand"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Cash equivalents: original maturity of 3 months or less",
+    "explanation": "Cash equivalents are very liquid investments that will turn into a known amount of cash soon. The rule of thumb is that the original maturity, counted from the day the company buys it, is 3 months or less. A Treasury bill bought 2 months before maturity meets this test.\n\n**Wrong choices**\n- A 1-year certificate of deposit bought on the day it was issued: Its original maturity to the company is more than 3 months, so it is a short-term investment, not a cash equivalent.\n- A customer's postdated check: A postdated check cannot be cashed yet, so it is a receivable.\n- Postage stamps on hand: Stamps are a prepaid expense (supplies), not cash.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "cash equivalents",
+      "balance sheet"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-cash-receivables-investments-0002",
+    "certId": "cpa-far",
+    "subjectId": "balance-sheet-accounts",
+    "chapterId": "cash-receivables-investments",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "The bank statement shows a balance of $20,000 on June 30. Deposits in transit are $3,000 and outstanding checks are $4,500. The bank also charged a $50 service fee that the company has not yet recorded. What is the correct cash balance on June 30?",
+    "choices": [
+      "$18,450",
+      "$21,500",
+      "$18,500",
+      "$27,500"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Bank side: + deposits in transit, − outstanding checks",
+    "explanation": "Start from the bank balance and fix items the bank does not know about yet.\n\n1. Bank balance: $20,000\n2. Add deposits in transit: +$3,000\n3. Subtract outstanding checks: −$4,500\n4. Correct cash = $18,500\n\nCheck: the service fee is already in the bank balance, so it only affects the book side.\n\n**Wrong choices**\n- $18,450: The $50 service fee is already deducted in the bank balance. It is a book-side adjustment, so it is not subtracted again from the bank balance.\n- $21,500: This adds the outstanding checks and subtracts the deposits in transit, which is backwards.\n- $27,500: Outstanding checks must be subtracted, not added.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "bank reconciliation",
+      "cash"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-cash-receivables-investments-0003",
+    "certId": "cpa-far",
+    "subjectId": "balance-sheet-accounts",
+    "chapterId": "cash-receivables-investments",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A company's cash account (book balance) shows $15,000. The bank statement shows: a customer's $600 check returned for insufficient funds (NSF), a $2,000 note receivable the bank collected for the company, and a $40 service charge. None of these has been recorded by the company. What is the correct cash balance?",
+    "choices": [
+      "$16,960",
+      "$16,360",
+      "$14,360",
+      "$17,640"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Book side: add bank collections, subtract NSF and fees",
+    "explanation": "Items the bank already recorded but the company has not are adjusted on the book side.\n\n1. Book balance: $15,000\n2. Add note collected by bank: +$2,000\n3. Subtract NSF check: −$600\n4. Subtract service charge: −$40\n5. Correct cash = $16,360\n\nCheck: $15,000 + $2,000 − $640 = $16,360.\n\n**Wrong choices**\n- $16,960: This forgets to subtract the $600 NSF check, which the company can no longer count as cash.\n- $14,360: The note collected by the bank increases cash; it should be added, not subtracted.\n- $17,640: The NSF check and service charge reduce cash; they should be subtracted.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "bank reconciliation",
+      "NSF check"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-cash-receivables-investments-0004",
+    "certId": "cpa-far",
+    "subjectId": "balance-sheet-accounts",
+    "chapterId": "cash-receivables-investments",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Under current U.S. GAAP (ASC 326), how does a company measure the allowance for credit losses on its trade accounts receivable?",
+    "choices": [
+      "Only losses that are probable and have already been incurred at the balance sheet date",
+      "Expected credit losses for the next 12 months only",
+      "No allowance; bad debts are expensed only when an account is written off",
+      "Expected credit losses over the full life of the receivables, recorded starting when the receivables are first recognized"
+    ],
+    "answer": 4,
+    "oneLineConcept": "CECL: lifetime expected credit losses from day one",
+    "explanation": "The current expected credit loss (CECL) model requires an allowance for the losses the company expects over the whole life of its receivables. The estimate uses past experience, current conditions, and reasonable forecasts, and it starts when the receivable is recorded.\n\n**Wrong choices**\n- Only losses that are probable and have already been incurred at the balance sheet date: This is the old incurred-loss model that ASC 326 (CECL) replaced.\n- Expected credit losses for the next 12 months only: A 12-month expected loss is part of the international (IFRS 9) model, not U.S. CECL.\n- No allowance; bad debts are expensed only when an account is written off: The direct write-off method is not allowed under GAAP when losses are material.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "CECL",
+      "allowance for credit losses"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-cash-receivables-investments-0005",
+    "certId": "cpa-far",
+    "subjectId": "balance-sheet-accounts",
+    "chapterId": "cash-receivables-investments",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A company owns 2% of another company's common stock. The shares trade on a stock exchange. Where does the company report an increase in the shares' fair value during the year?",
+    "choices": [
+      "In other comprehensive income",
+      "In net income",
+      "Nowhere until the shares are sold",
+      "Directly in retained earnings"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Equity securities (no influence): fair value through NI",
+    "explanation": "Equity securities that the company does not have significant influence over, and that have a readily determinable fair value, are carried at fair value. Both unrealized gains and losses go into net income each period.\n\n**Wrong choices**\n- In other comprehensive income: OCI treatment was removed for equity securities; it is still used for available-for-sale debt securities, not stock.\n- Nowhere until the shares are sold: Equity securities with a readily determinable fair value are remeasured to fair value every reporting date.\n- Directly in retained earnings: Fair value changes go through the income statement first; they are not posted straight to retained earnings.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "equity securities",
+      "fair value"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-cash-receivables-investments-0006",
+    "certId": "cpa-far",
+    "subjectId": "balance-sheet-accounts",
+    "chapterId": "cash-receivables-investments",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "At year-end, a company's accounts receivable total $200,000. Its aging analysis shows expected credit losses of $9,000. Because of write-offs during the year, the allowance for credit losses has a $1,500 debit balance before adjustment. What credit loss expense should the company record?",
+    "choices": [
+      "$9,000",
+      "$7,500",
+      "$1,500",
+      "$10,500"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Expense = target allowance − current balance",
+    "explanation": "With an aging (balance-sheet) approach, the ending allowance must equal the expected loss. The expense is whatever amount is needed to reach that target.\n\n1. Target allowance (credit): $9,000\n2. Current balance: $1,500 debit\n3. Expense needed = $9,000 + $1,500 = $10,500\n\nCheck: −$1,500 + $10,500 = $9,000 credit balance.\n\n**Wrong choices**\n- $9,000: This ignores the $1,500 debit balance that must first be brought back to zero.\n- $7,500: This treats the $1,500 debit balance as if it were a credit balance.\n- $1,500: This only clears the debit balance and does not build the needed $9,000 allowance.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "allowance for credit losses",
+      "aging"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-cash-receivables-investments-0007",
+    "certId": "cpa-far",
+    "subjectId": "balance-sheet-accounts",
+    "chapterId": "cash-receivables-investments",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "On January 1, a company buys 30% of the common stock of an investee for $300,000, which equals 30% of the investee's book value. The company has significant influence. During the year, the investee earns net income of $100,000 and pays dividends of $40,000. What is the investment's carrying amount at December 31?",
+    "choices": [
+      "$318,000",
+      "$330,000",
+      "$288,000",
+      "$300,000"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Equity method: + share of income, − share of dividends",
+    "explanation": "Under the equity method, the investment goes up by the investor's share of investee income and down by its share of dividends received.\n\n1. Cost: $300,000\n2. Share of income: 30% × $100,000 = +$30,000\n3. Share of dividends: 30% × $40,000 = −$12,000\n4. Carrying amount = $318,000\n\n**Wrong choices**\n- $330,000: This adds the share of income but forgets that dividends reduce the investment.\n- $288,000: This subtracts dividends but forgets to add the share of income.\n- $300,000: Under the equity method the investment changes with the investee's income and dividends; it does not stay at cost.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "equity method",
+      "investments"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-cash-receivables-investments-0008",
+    "certId": "cpa-far",
+    "subjectId": "balance-sheet-accounts",
+    "chapterId": "cash-receivables-investments",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "On January 1, a company sells land and receives a $100,000 non-interest-bearing note due in 2 years. The market interest rate for this type of note is 10%. The present value of $1 for 2 periods at 10% is 0.826. How much interest income should the company report on the note in the first year?",
+    "choices": [
+      "$10,000",
+      "$17,400",
+      "$8,260",
+      "$0"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Non-interest-bearing note: record at PV, earn the discount",
+    "explanation": "A note with no stated interest is recorded at its present value, and the difference from face value is earned as interest over time.\n\n1. Present value: $100,000 × 0.826 = $82,600\n2. Year 1 interest: $82,600 × 10% = $8,260\n\nCheck: Year 2 interest is ($82,600 + $8,260) × 10% = $9,086; total ≈ $17,346, which is about the $17,400 discount (difference is factor rounding).\n\n**Wrong choices**\n- $10,000: Interest is earned on the note's present value ($82,600), not on the $100,000 face amount.\n- $17,400: This is the total discount for both years, not the first year's interest.\n- $0: A non-interest-bearing note still has interest built in; the discount is earned as interest income over time.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "notes receivable",
+      "present value"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-cash-receivables-investments-0009",
+    "certId": "cpa-far",
+    "subjectId": "balance-sheet-accounts",
+    "chapterId": "cash-receivables-investments",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "On January 1, a company buys $100,000 face value bonds for $96,000 and classifies them as held-to-maturity. The bonds pay 7% interest once a year on December 31. The effective (market) rate at purchase is 8%. Using the effective interest method, what is the bonds' carrying amount at December 31 of the first year?",
+    "choices": [
+      "$96,680",
+      "$96,000",
+      "$95,320",
+      "$100,000"
+    ],
+    "answer": 1,
+    "oneLineConcept": "HTM bonds: amortized cost via effective interest",
+    "explanation": "Held-to-maturity debt is carried at amortized cost. Each year, interest income is the carrying amount times the effective rate, and the difference from the cash received reduces the discount.\n\n1. Interest income: $96,000 × 8% = $7,680\n2. Cash received: $100,000 × 7% = $7,000\n3. Discount amortized: $7,680 − $7,000 = $680\n4. Carrying amount: $96,000 + $680 = $96,680\n\n**Wrong choices**\n- $96,000: The discount must be amortized each year, so the carrying amount moves up toward face value.\n- $95,320: Amortizing a discount increases the carrying amount; it does not decrease it.\n- $100,000: Held-to-maturity bonds are carried at amortized cost, and face value is only reached at maturity.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "held-to-maturity",
+      "effective interest"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-cash-receivables-investments-0010",
+    "certId": "cpa-far",
+    "subjectId": "balance-sheet-accounts",
+    "chapterId": "cash-receivables-investments",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A company buys a debt security at its $50,000 face value and classifies it as available-for-sale. At year-end, its fair value is $47,000. The decline is caused only by higher market interest rates (no credit loss), and the company does not intend to sell it. How is the $3,000 decline reported?",
+    "choices": [
+      "As an unrealized loss in net income",
+      "It is not recorded; the security stays at $50,000",
+      "As an unrealized loss in other comprehensive income",
+      "As a direct reduction of retained earnings"
+    ],
+    "answer": 3,
+    "oneLineConcept": "AFS debt: non-credit fair value changes go to OCI",
+    "explanation": "Available-for-sale debt securities are shown at fair value. Changes in fair value that are not caused by credit losses are reported in other comprehensive income until the security is sold.\n\n**Wrong choices**\n- As an unrealized loss in net income: Net income is used for trading securities and for credit losses, but this decline is not credit-related.\n- It is not recorded; the security stays at $50,000: Available-for-sale securities are reported at fair value on the balance sheet.\n- As a direct reduction of retained earnings: Unrealized AFS changes go to accumulated other comprehensive income, not retained earnings.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "available-for-sale",
+      "OCI"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-cash-receivables-investments-0011",
+    "certId": "cpa-far",
+    "subjectId": "balance-sheet-accounts",
+    "chapterId": "cash-receivables-investments",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "In Year 1, a company buys 1,000 shares of a listed company's stock at $40 per share (no significant influence). At the end of Year 1, the price is $46. In Year 2, the company sells all the shares for $44 per share. What amount does the company report in Year 2 net income from these shares?",
+    "choices": [
+      "A $4,000 gain",
+      "A $2,000 loss",
+      "A $6,000 gain",
+      "No gain or loss"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Equity securities: Year 2 result runs from last fair value",
+    "explanation": "Equity securities are remeasured to fair value through net income every year, so the gain up to Year 1's fair value was already in Year 1 income.\n\n1. Year 1 gain: (46 − 40) × 1,000 = $6,000 (reported in Year 1)\n2. Year 2 result: (44 − 46) × 1,000 = −$2,000\n\nCheck: $6,000 − $2,000 = $4,000 total gain over both years = (44 − 40) × 1,000.\n\n**Wrong choices**\n- A $4,000 gain: This compares the sale price with the original cost, but the $6,000 increase was already reported in Year 1 income.\n- A $6,000 gain: This is the Year 1 fair value gain, not the Year 2 result.\n- No gain or loss: The price fell from $46 to $44 during Year 2, so a loss is reported.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "equity securities",
+      "fair value"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-cash-receivables-investments-0012",
+    "certId": "cpa-far",
+    "subjectId": "balance-sheet-accounts",
+    "chapterId": "cash-receivables-investments",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "On January 1, a company pays $500,000 for 25% of an investee and gains significant influence. The investee's net assets have a book value of $1,600,000. The $100,000 excess over book value relates to equipment that is undervalued and has a 10-year remaining life. During the year, the investee earns $200,000 and pays $80,000 in dividends. What is the investment's carrying amount at December 31?",
+    "choices": [
+      "$530,000",
+      "$540,000",
+      "$460,000",
+      "$520,000"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Equity method: amortize excess cost on depreciable assets",
+    "explanation": "Under the equity method, extra cost paid for undervalued equipment is depreciated, and that depreciation reduces the investor's share of income.\n\n1. Excess: $500,000 − 25% × $1,600,000 = $100,000\n2. Share of income: 25% × $200,000 = $50,000\n3. Excess depreciation: $100,000 ÷ 10 = −$10,000\n4. Share of dividends: 25% × $80,000 = −$20,000\n5. Carrying amount: $500,000 + $50,000 − $10,000 − $20,000 = $520,000\n\n**Wrong choices**\n- $530,000: This forgets the yearly depreciation of the $100,000 excess related to equipment.\n- $540,000: This ignores the dividends received, which reduce the investment.\n- $460,000: This subtracts all $80,000 of dividends instead of the investor's 25% share.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "equity method",
+      "excess cost"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-cash-receivables-investments-0013",
+    "certId": "cpa-far",
+    "subjectId": "balance-sheet-accounts",
+    "chapterId": "cash-receivables-investments",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A company holds an available-for-sale debt security with an amortized cost of $100,000. At year-end, its fair value is $88,000. Of the $12,000 decline, the company estimates that $5,000 is caused by expected credit losses. The company does not intend to sell and will probably not have to sell before recovery. How is the decline reported?",
+    "choices": [
+      "$12,000 in other comprehensive income",
+      "$5,000 in net income and $7,000 in other comprehensive income",
+      "$12,000 in net income",
+      "$7,000 in net income and $5,000 in other comprehensive income"
+    ],
+    "answer": 2,
+    "oneLineConcept": "AFS debt: credit loss to NI (allowance), rest to OCI",
+    "explanation": "Under ASC 326, a credit loss on an available-for-sale debt security is recorded through an allowance and charged to net income. The rest of the fair value decline, caused by factors like interest rates, goes to other comprehensive income.\n\n1. Total decline: $100,000 − $88,000 = $12,000\n2. Credit loss (net income): $5,000\n3. Non-credit part (OCI): $12,000 − $5,000 = $7,000\n\n**Wrong choices**\n- $12,000 in other comprehensive income: The credit-related part of the decline must go through net income through an allowance.\n- $12,000 in net income: Only the credit-related part goes to net income when the company does not intend to sell.\n- $7,000 in net income and $5,000 in other comprehensive income: This reverses the split: credit loss goes to net income, the rest to OCI.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "available-for-sale",
+      "credit loss",
+      "CECL"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cpa-far-cash-receivables-investments-0014",
+    "certId": "cpa-far",
+    "subjectId": "balance-sheet-accounts",
+    "chapterId": "cash-receivables-investments",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A company's book balance of cash is $10,000. While reconciling, it finds: (1) a check to a supplier that cleared the bank for $450 was recorded in the books as $540; (2) the bank credited $30 of interest; (3) a customer's $200 check was returned NSF. What is the correct cash balance?",
+    "choices": [
+      "$9,740",
+      "$10,120",
+      "$10,320",
+      "$9,920"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Book errors and bank items both adjust the book balance",
+    "explanation": "All three items are things the books do not show correctly yet, so each adjusts the book balance.\n\n1. Book balance: $10,000\n2. Recording error: $540 − $450 = +$90 (too much was deducted)\n3. Interest earned: +$30\n4. NSF check: −$200\n5. Correct cash = $9,920\n\n**Wrong choices**\n- $9,740: The book error overstated payments by $90, so $90 must be added back, not subtracted.\n- $10,120: This forgets to subtract the $200 NSF check.\n- $10,320: The NSF check reduces cash; it must be subtracted, not added.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-12",
+    "tags": [
+      "bank reconciliation",
+      "errors"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  }
+]
