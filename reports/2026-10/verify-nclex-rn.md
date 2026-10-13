@@ -19,6 +19,12 @@
 | ecg-strip-vf.svg | PASS | PASS | PASS | ④ PASS |
 | ecg-strip-asystole.svg | PASS | PASS | PASS | ④ PASS |
 | ecg-strip-afib.svg | PASS | PASS | PASS | ④ PASS |
-| ecg-rhythms-compare.svg | PASS | PASS | PASS | ⑤ PASS |
+| ecg-rhythms-compare.svg | PASS | PASS | PASS | ⑤ PASS (개념 정리 2차 검증에서 단원 글과 대조) |
 
 - 그림 문제 다시 풀기 3/3 일치. 문제 그림·imageAlt 에 리듬 이름을 쓰지 않음(정답 노출 없음)
+
+## 개념 정리
+
+- 10단원 작성 → 1차 분리 검증 PASS 3 / FAIL 7 (요약 문단에 카드·포인트에 없는 사실, Joint Commission 2026 National Performance Goals 명칭, 선별검사 = 2차 예방 표현 과장, 혈당 수치 출처 누락, 근거 없는 표현)
+- 고친 뒤 새 검증 에이전트 2차 검증: 10/10 PASS, 개념 그림(ecg-rhythms-compare.svg) ①②③⑤ PASS
+- 기록: reports/2026-10/concepts-verify/verify-nclex-rn.json
