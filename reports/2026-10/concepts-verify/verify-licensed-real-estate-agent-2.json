@@ -1,0 +1,113 @@
+{
+  "slug": "licensed-real-estate-agent-2",
+  "concepts-kr-1": {
+    "broker-qualification": {
+      "result": "PASS",
+      "issues": []
+    },
+    "office-operation": {
+      "result": "PASS",
+      "issues": []
+    },
+    "brokerage-duties": {
+      "result": "PASS",
+      "issues": []
+    },
+    "supervision-penalty": {
+      "result": "PASS",
+      "issues": []
+    },
+    "transaction-report": {
+      "result": "PASS",
+      "issues": []
+    },
+    "brokerage-practice": {
+      "result": "PASS",
+      "issues": [
+        "(참고, 사실 오류 아님) summary 2문단 '농지를 취득하려면 원칙적으로 시·구·읍·면의 장에게서 농지취득자격증명을 발급받아야 합니다.' → 내용은 맞음(농지법 제8조제1항)이나 카드·포인트·비교표에 없는 사실이 summary 에만 있음(3-1장 '카드·포인트와 같은 사실만') → 문장을 빼거나 농지취득자격증명 카드(source: 농지법(농림축산식품부) 2026) 추가 권장"
+      ]
+    },
+    "land-planning": {
+      "result": "PASS",
+      "issues": [
+        "(참고, 사실 오류 아님) summary 2·3문단의 광역도시계획 정의, 용도지구 종류(경관·고도·방화·방재·보호·취락·개발진흥), 용도구역 중 수산자원보호구역은 카드·포인트에 없는 사실(새 수치는 없음, 내용은 국토계획법 제2조제1호·제37조제1항·제40조와 일치) → 용도지구 카드를 추가하거나 summary 에서 줄이는 것 권장"
+      ]
+    },
+    "urban-development": {
+      "result": "PASS",
+      "issues": []
+    }
+  },
+  "concepts-kr-2": {
+    "urban-renewal": {
+      "result": "PASS",
+      "issues": []
+    },
+    "building-act": {
+      "result": "PASS",
+      "issues": []
+    },
+    "housing-act": {
+      "result": "FAIL",
+      "issues": [
+        "concepts '사업계획승인' 및 summary 3문단 '미만이면 특별시장·광역시장·특별자치시장·특별자치도지사·시장·군수가 승인' → 현행 승인권자 열거에서 통합특별시장이 빠짐 → 대지면적 10만㎡ 미만: 특별시장·통합특별시장·광역시장·특별자치시장·특별자치도지사 또는 시장·군수 (주택법 제15조제1항제2호, 2026.3.5 개정)"
+      ]
+    },
+    "farmland-act": {
+      "result": "PASS",
+      "issues": []
+    },
+    "cadastral-records": {
+      "result": "FAIL",
+      "issues": [
+        "compare '지적공부별 주요 등록사항' 열 제목 '고유한 등록사항' 아래 '토지대장·임야대장: 지목, 면적, 소유자', '지적도·임야도: 지목, 경계' → 지목은 대장과 도면 모두의 등록사항이고, 소유자는 공유지연명부·대지권등록부에도 등록되므로 '고유한' 등록사항이 아님 → 대장에만 있는 것은 면적, 도면에만 있는 것은 경계 (공간정보관리법 제71조제1항~제3항, 제72조). 열 제목을 '주요 등록사항'으로 바꾸거나 고유 항목만 남길 것(대장: 면적 / 도면: 경계 / 공유지연명부: 소유권 지분 / 대지권등록부: 대지권 비율 / 경계점좌표등록부: 좌표)"
+      ]
+    },
+    "registration-act": {
+      "result": "PASS",
+      "issues": []
+    },
+    "local-tax": {
+      "result": "PASS",
+      "issues": []
+    },
+    "national-tax": {
+      "result": "PASS",
+      "issues": []
+    }
+  },
+  "concepts-kr-3": {
+    "housing-act": {
+      "result": "FAIL",
+      "issues": [
+        "분양가상한제 tip '공공택지는 언제나 적용' → 공공택지라도 도시형 생활주택, 경제자유구역·관광특구 일부 공동주택, 공공 참여 정비사업 주택 등은 분양가상한제를 적용하지 않음 → '공공택지는 원칙적으로 적용(도시형 생활주택 등 예외 있음)'으로 고쳐야 함 (주택법 제57조제2항)"
+      ]
+    },
+    "cadastral-records": {
+      "result": "FAIL",
+      "issues": [
+        "compare 표 '지적공부별 고유한 등록사항' 중 '공유지연명부 → 그 장부에만 있는 등록사항: 소유권 지분' → 소유권 지분은 대지권등록부에도 등록되므로 공유지연명부에만 있는 사항이 아님 → 공유지연명부·대지권등록부 모두 소유권 지분을 등록 (공간정보관리법 제71조제2항제3호, 같은 법 시행규칙 제68조제4항제6호). 표에서 이 행을 빼거나 '소유권 지분(대지권등록부에도 있음)'으로 고칠 것"
+      ]
+    },
+    "brokerage-practice": {
+      "result": "PASS",
+      "issues": []
+    },
+    "land-planning": {
+      "result": "PASS",
+      "issues": []
+    }
+  },
+  "concepts-kr-4": {
+    "housing-act": {
+      "result": "PASS",
+      "issues": []
+    },
+    "cadastral-records": {
+      "result": "PASS",
+      "issues": [
+        "(사실 오류 아님, 권고) summary 2문단 '지번은 지적소관청이 지번부여지역별로 차례대로 붙이고' → 내용은 맞음(법 제66조제1항)이나 카드·포인트에 없는 사실 → 지번 부여를 카드에 넣거나 summary 에서 빼면 3-1장 '카드·포인트와 같은 사실만' 규칙에 맞음"
+      ]
+    }
+  }
+}
