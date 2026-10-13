@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { isWithinPastWindow } from "../past";
-import { COUNTRIES, certMetaSchema, certSummarySchema, chaptersFileSchema, conceptsFileSchema, questionSchema } from "../schemas";
+import { COUNTRIES, certMetaSchema, certQueueSchema, certSummarySchema, chaptersFileSchema, conceptsFileSchema, questionSchema } from "../schemas";
 import type {
   CertListItem,
   CertMeta,
@@ -14,7 +14,7 @@ import type {
 } from "../types";
 import { fsStore } from "./fs-store";
 import { svgDataUri } from "../svg";
-import { assetsDir, chaptersFile, conceptsFile, countryDir, metaFile, questionsDir } from "./paths";
+import { CERT_QUEUE_FILE, assetsDir, chaptersFile, conceptsFile, countryDir, metaFile, questionsDir } from "./paths";
 import type { DataStore } from "./store";
 
 /**
@@ -200,6 +200,19 @@ export async function getAddedLog(country: Country): Promise<AddedLogEntry[]> {
     byDate.set(meta.addedAt, [...(byDate.get(meta.addedAt) ?? []), { id: meta.id, name: meta.name }]);
   }
   return [...byDate].sort(([a], [b]) => b.localeCompare(a)).map(([date, certs]) => ({ date, certs }));
+}
+
+export interface SplitInProgress {
+  name: string;
+  startedAt: string;
+}
+
+/** 이틀에 나눠 진행 중인 자격증 (data/cert-queue.json 의 split). 시작한 날이 최근인 것이 위. "기록" 페이지용 */
+export async function getSplitInProgress(country: Country): Promise<SplitInProgress[]> {
+  const queue = certQueueSchema.parse((await store.readJson(CERT_QUEUE_FILE)) ?? []);
+  return queue
+    .flatMap((item) => (item.country === country && item.split ? [{ name: item.name, startedAt: item.split.startedAt }] : []))
+    .sort((a, b) => b.startedAt.localeCompare(a.startedAt));
 }
 
 /** 자격증 한 건 (없으면 null) */

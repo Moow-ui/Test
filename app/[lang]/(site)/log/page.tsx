@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getAddedLog } from "@/lib/data";
-import { LOCALES, getMessages, isLocale, localeCountry, localePath } from "@/lib/i18n";
+import { getAddedLog, getSplitInProgress } from "@/lib/data";
+import { LOCALES, fmt, getMessages, isLocale, localeCountry, localePath } from "@/lib/i18n";
 import { noindexMetadata } from "@/lib/seo";
 
 type Props = { params: Promise<{ lang: string }> };
@@ -17,16 +17,31 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return noindexMetadata(lang, getMessages(lang).seo.addedLog, "/log", { shared: "/log" });
 }
 
-/** 자격증 추가 기록 (사이트 하단 "기록"). 날짜는 meta.json 의 addedAt */
+/** 자격증 추가 기록 (사이트 하단 "기록"). 날짜는 meta.json 의 addedAt. 이틀에 나눠 진행 중인 자격증은 cert-queue.json 의 split */
 export default async function AddedLogPage({ params }: Props) {
   const { lang } = await params;
   if (!isLocale(lang)) notFound();
   const m = getMessages(lang).addedLog;
   const log = await getAddedLog(localeCountry(lang));
+  const inProgress = await getSplitInProgress(localeCountry(lang));
   return (
     <div className="mx-auto max-w-3xl space-y-4">
       <h1 className="text-xl font-bold">{m.title}</h1>
       <p className="text-ink-sub">{m.intro}</p>
+      {inProgress.length > 0 && (
+        <section className="space-y-2 rounded border border-line-soft p-4">
+          <h2 className="text-lg font-bold">{m.splitTitle}</h2>
+          <p className="text-ink-sub">{m.splitIntro}</p>
+          <ul className="space-y-1">
+            {inProgress.map((item) => (
+              <li key={item.name} className="flex flex-col gap-1 sm:flex-row sm:gap-4">
+                <span className="font-bold">{item.name}</span>
+                <span className="tabular-nums text-ink-sub">{fmt(m.splitStarted, { date: item.startedAt })}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
       {log.length === 0 && <p>{m.empty}</p>}
       <ul className="divide-y divide-line-soft border-y border-line-soft">
         {log.map((entry) => (

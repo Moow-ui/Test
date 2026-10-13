@@ -358,6 +358,16 @@ export const certQueueSchema = z
       note: z.string().optional(),
       /** 그림 필요도 (적지 않아도 된다. 자격증을 추가할 때 meta.json 의 visualNeed 로 옮긴다) */
       visualNeed: z.enum(VISUAL_NEEDS).optional(),
+      /**
+       * 무거운 자격증을 이틀에 나눠 진행 중일 때만 적는다 (docs/daily-routine.md 1-2).
+       * 시작한 날(한국시간)과 맡은 루틴. 게시하면 이 항목째 대기 목록에서 빠진다. 사이트 "기록" 페이지에 "진행 중"으로 나온다
+       */
+      split: z
+        .object({
+          startedAt: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+          routine: z.enum(["am", "pm"]),
+        })
+        .optional(),
     }),
   )
   .superRefine((queue, ctx) => {

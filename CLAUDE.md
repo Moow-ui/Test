@@ -101,6 +101,7 @@ scripts/                   validate-data, build-data, import-questions, convert-
 - 절차는 [docs/daily-routine.md](docs/daily-routine.md), 진행 기록은 [reports/routine-progress.md](reports/routine-progress.md)(새벽)·[reports/routine-progress-pm.md](reports/routine-progress-pm.md)(오후).
 - 배포 파일 수가 Cloudflare 한도 근처면(`npm run check:deploy-size` → "모드: 보강") 새 자격증 대신 기존 자격증의 문제를 보강한다 ([docs/daily-routine.md](docs/daily-routine.md) 0-1). 매일 업데이트는 계속된다.
 - 후보(`data/cert-queue.json`)가 한 나라에서 10개 이하로 줄면 새벽 루틴이 그 나라 후보를 10개 보충한다 ([docs/daily-routine.md](docs/daily-routine.md) 1-1).
+- **무거운 자격증(기출 60문항 이상·법령 과목 3개 이상·250문항 이상)은 이틀에 나눠서 한다** ([docs/daily-routine.md](docs/daily-routine.md) 1-2). 진행 중에는 `cert-queue.json` 의 `split` 으로 사이트 "기록" 페이지에 "이틀에 나누어 진행 중"이 나온다.
 - 문제는 작성과 분리된 검증(다시 풀기·재계산·최신 기준 확인)을 통과한 것만 게시한다. 확신이 없는 문제는 `data/review-queue/` 에 보관.
 - 검증을 통과한 문제는 `reviewedAt` 을 적어 넣는다 (자동으로 "검수 완료" 표시).
 - **공개 기출을 구할 수 있으면 반드시 문제 구성에 넣는다** ([docs/daily-routine.md](docs/daily-routine.md) 2-1). 출제는 기출과 예상문제를 반씩 섞는다.
