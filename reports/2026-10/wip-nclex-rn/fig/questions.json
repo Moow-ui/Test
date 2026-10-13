@@ -1,0 +1,122 @@
+[
+ {
+  "subjectId": "physiological-integrity",
+  "chapterId": "physiological-adaptation",
+  "source": "predicted",
+  "imageSource": {
+   "kind": "self"
+  },
+  "level": "intermediate",
+  "image": "ecg-strip-vf.svg",
+  "imageAlt": "Lead II rhythm strip, about 5 seconds on ECG grid paper. The line is made of fast, chaotic up-and-down waves of changing size and shape. There are no P waves, no QRS complexes and no flat baseline.",
+  "stem": "A nurse finds a client unresponsive in bed. The client is not breathing normally and has no carotid pulse. The nurse calls for help and starts chest compressions. When the defibrillator pads are placed, the monitor shows the strip below. What should the nurse do next?",
+  "choices": [
+   "Perform synchronized cardioversion",
+   "Deliver an unsynchronized shock (defibrillation) as soon as possible",
+   "Give amiodarone 300 mg IV push before any shock",
+   "Give atropine 1 mg IV push"
+  ],
+  "answer": 2,
+  "choicesByLevel": {
+   "basic": [
+    1,
+    2
+   ],
+   "intermediate": [
+    1,
+    2,
+    3
+   ]
+  },
+  "oneLineConcept": "Pulseless client + ventricular fibrillation = defibrillate right away",
+  "explanation": "The strip shows **ventricular fibrillation (VF)**: fast, chaotic waves of different sizes with no P waves and no QRS complexes. The heart is only quivering, so it pumps no blood. That is why the client has no pulse.\n\nVF is a **shockable rhythm** (VF and pulseless ventricular tachycardia are the two shockable rhythms in adult cardiac arrest). The most important treatment is an **unsynchronized shock (defibrillation)** as soon as the defibrillator is ready. Keep doing high-quality CPR until the moment of the shock, then restart CPR right away for 2 minutes before the next rhythm check. Every minute without a shock lowers the chance of survival.\n\n**Wrong choices**\n- *Synchronized cardioversion*: the machine waits for a QRS complex to time the shock. VF has no QRS, so the shock may never fire. Cardioversion is for unstable rhythms that still have a pulse.\n- *Amiodarone before any shock*: amiodarone is given only for VF that continues after shocks (shock-refractory VF). It never replaces or delays the first shock.\n- *Atropine*: atropine treats a slow heart rate (bradycardia) with a pulse. It has no role in VF.",
+  "frequency": 5,
+  "tags": [
+   "ECG",
+   "ventricular fibrillation",
+   "cardiac arrest",
+   "defibrillation",
+   "ACLS"
+  ]
+ },
+ {
+  "subjectId": "physiological-integrity",
+  "chapterId": "physiological-adaptation",
+  "source": "predicted",
+  "imageSource": {
+   "kind": "self"
+  },
+  "level": "advanced",
+  "image": "ecg-strip-asystole.svg",
+  "imageAlt": "Lead II rhythm strip, about 5 seconds on ECG grid paper. The line is almost flat, with only a very slight slow drift and tiny ripples. There are no P waves, no QRS complexes and no other waves.",
+  "stem": "A client in cardiac arrest is receiving high-quality CPR. At the rhythm check, the monitor shows the strip below. The nurse confirms the leads and pads are connected, the gain (size setting) is turned up, and the same picture appears in a second lead. The client still has no pulse and IV access is in place. Which action should the nurse anticipate next?",
+  "choices": [
+   "Deliver an unsynchronized shock at the highest energy setting",
+   "Begin transcutaneous pacing",
+   "Continue high-quality CPR and give epinephrine 1 mg IV as soon as possible",
+   "Give atropine 1 mg IV push"
+  ],
+  "answer": 3,
+  "choicesByLevel": {
+   "basic": [
+    1,
+    3
+   ],
+   "intermediate": [
+    1,
+    2,
+    3
+   ]
+  },
+  "oneLineConcept": "Asystole is not shockable: CPR plus epinephrine as soon as possible",
+  "explanation": "The strip shows **asystole**: a nearly flat line with no P waves and no QRS complexes. The heart has no electrical activity. Because the nurse already checked the leads, the gain and a second lead, this is a true flat line and not a loose wire.\n\nAsystole is a **non-shockable rhythm**. Treatment in current adult cardiac arrest guidelines:\n1. Continue high-quality CPR with as few pauses as possible.\n2. Give **epinephrine 1 mg IV/IO as soon as possible**, then every 3 to 5 minutes.\n3. Check the rhythm every 2 minutes and look for reversible causes (the \"H's and T's\", such as low oxygen, low blood volume or high potassium).\n\n**Wrong choices**\n- *Unsynchronized shock*: a shock works by resetting chaotic electrical activity (VF or pulseless VT). In asystole there is no activity to reset, so a shock does not help and interrupts CPR.\n- *Transcutaneous pacing*: pacing is used for symptomatic slow rhythms with a pulse. It is not recommended for asystole in cardiac arrest.\n- *Atropine*: atropine is used for symptomatic bradycardia with a pulse. It was removed from the cardiac arrest steps because it did not improve survival.",
+  "frequency": 4,
+  "tags": [
+   "ECG",
+   "asystole",
+   "cardiac arrest",
+   "epinephrine",
+   "ACLS"
+  ]
+ },
+ {
+  "subjectId": "physiological-integrity",
+  "chapterId": "physiological-adaptation",
+  "source": "predicted",
+  "imageSource": {
+   "kind": "self"
+  },
+  "level": "intermediate",
+  "image": "ecg-strip-afib.svg",
+  "imageAlt": "Lead II rhythm strip, about 5 seconds on ECG grid paper. Narrow, tall QRS complexes appear at uneven, unpredictable spacing. Between them the baseline is wavy and uneven, and no clear P wave comes before any QRS complex.",
+  "stem": "A 72-year-old client reports feeling a \"fluttering\" in the chest. The client is alert, BP is 128/76 mm Hg, and the pulse is irregular at about 90/min. The monitor shows the strip below. Which interpretation and teaching point is correct?",
+  "choices": [
+   "Ventricular tachycardia; prepare the client for immediate defibrillation",
+   "Sinus arrhythmia, a normal variant; no special teaching is needed",
+   "Atrial flutter; teach that cutting down on caffeine is the main treatment",
+   "Atrial fibrillation; teach about taking the prescribed anticoagulant to lower the risk of stroke"
+  ],
+  "answer": 4,
+  "choicesByLevel": {
+   "basic": [
+    3,
+    4
+   ],
+   "intermediate": [
+    2,
+    3,
+    4
+   ]
+  },
+  "oneLineConcept": "AFib: irregular narrow QRS, no P waves; stroke risk so anticoagulation",
+  "explanation": "The strip shows **atrial fibrillation (AFib)**:\n1. The QRS complexes are narrow, but the space between them changes with no pattern (\"irregularly irregular\").\n2. There are **no P waves**. Instead the baseline between beats is wavy (fibrillatory waves), because the upper chambers (atria) only quiver.\n\nWhen the atria quiver, blood pools and can form a clot. The clot can travel to the brain and cause a **stroke**. That is why many clients with AFib take an anticoagulant (blood thinner). This client is stable (alert, normal BP), so the priority is teaching: take the anticoagulant exactly as prescribed, do not skip doses, report bleeding (black stools, blood in urine, easy bruising), and know the warning signs of stroke.\n\n**Wrong choices**\n- *Ventricular tachycardia*: VT has wide, fast, regular QRS complexes. This strip has narrow QRS complexes, and the client is alert with a pulse, so defibrillation is not indicated.\n- *Sinus arrhythmia*: sinus arrhythmia has a normal P wave before every QRS. This strip has no P waves.\n- *Atrial flutter*: flutter shows regular \"saw-tooth\" waves and usually a regular rate. Also, caffeine reduction is not the main treatment.",
+  "frequency": 5,
+  "tags": [
+   "ECG",
+   "atrial fibrillation",
+   "anticoagulation",
+   "stroke prevention",
+   "client teaching"
+  ]
+ }
+]
