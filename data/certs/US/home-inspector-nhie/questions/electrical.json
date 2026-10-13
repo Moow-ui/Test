@@ -1,0 +1,885 @@
+[
+  {
+    "id": "home-inspector-nhie-electrical-0001",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "electrical",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Under common model codes, which location typically needs GFCI protection for its 125-volt receptacles?",
+    "choices": [
+      "Clothes closets",
+      "Hallway ceiling lights",
+      "Bedrooms",
+      "Bathrooms"
+    ],
+    "answer": 4,
+    "oneLineConcept": "GFCI: bathrooms, kitchens, garages, outdoors, wet areas",
+    "explanation": "GFCI (ground-fault circuit interrupter) protection is required where water and electricity are likely to meet. Common locations include bathrooms, kitchen countertops, garages, outdoors, crawlspaces, unfinished basements, laundry areas, and near sinks.\n\n**Wrong choices**\n- Bedrooms: Bedrooms commonly need AFCI protection, not GFCI.\n- Hallway ceiling lights: Hallway lighting is not a typical GFCI location.\n- Clothes closets: Closets are not a typical GFCI receptacle location.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "GFCI",
+      "receptacles"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-electrical-0002",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "electrical",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What does a GFCI device mainly protect against?",
+    "choices": [
+      "Fires caused by arcing in the wiring",
+      "Electric shock from current leaking to ground",
+      "Power surges from lightning",
+      "Overloaded circuits"
+    ],
+    "answer": 2,
+    "oneLineConcept": "GFCI protects people from shock",
+    "explanation": "A GFCI compares the current going out on the hot wire with the current coming back on the neutral. If a small amount (about 5 milliamps) is missing, it may be flowing through a person to ground, so the GFCI shuts off power quickly to prevent a serious shock.\n\n**Wrong choices**\n- Fires caused by arcing in the wiring: That is the job of an AFCI.\n- Power surges from lightning: Surge protectors handle surges.\n- Overloaded circuits: Overloads are handled by breakers and fuses.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "GFCI",
+      "shock"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-electrical-0003",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "electrical",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "An AFCI device is mainly designed to reduce the risk of:",
+    "choices": [
+      "Water heater overheating",
+      "Shock in wet locations",
+      "Fires caused by arcing faults",
+      "Low voltage"
+    ],
+    "answer": 3,
+    "oneLineConcept": "AFCI protects against arcing fires",
+    "explanation": "An AFCI (arc-fault circuit interrupter) senses the electrical pattern of arcing, such as from a damaged cord or loose connection, and shuts off the circuit before a fire can start. AFCIs are commonly required for bedroom and living area circuits.\n\n**Wrong choices**\n- Shock in wet locations: That is the job of a GFCI.\n- Low voltage: AFCIs do not correct voltage.\n- Water heater overheating: Water heaters have their own high-limit controls.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "AFCI",
+      "fire safety"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-electrical-0004",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "electrical",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A \"double tap\" in an electrical panel usually means:",
+    "choices": [
+      "Two wires under one breaker terminal that is made for only one",
+      "Two ground rods for the service",
+      "Two electrical panels in one house",
+      "Two breakers fitted on one bus stab, like a tandem breaker"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Double tap = two wires on a one-wire terminal",
+    "explanation": "Most breaker terminals are made to clamp one wire. When two wires are put under one, one of them may be loose, which can cause overheating and arcing. Inspectors report double taps unless the breaker is listed for two conductors.\n\n**Wrong choices**\n- Two breakers fitted on one bus stab, like a tandem breaker: Listed tandem breakers are allowed in panels designed for them.\n- Two electrical panels in one house: Having a subpanel is not a double tap.\n- Two ground rods for the service: Two ground rods are common and not a defect.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "panel",
+      "double tap"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-electrical-0005",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "electrical",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A 14-gauge copper branch circuit wire is typically protected by a breaker no larger than:",
+    "choices": [
+      "30 amps",
+      "15 amps",
+      "40 amps",
+      "20 amps"
+    ],
+    "answer": 2,
+    "oneLineConcept": "14 AWG Cu = 15 A, 12 AWG = 20 A, 10 AWG = 30 A",
+    "explanation": "Breakers protect the wire. Common sizes for copper branch circuits are: 14-gauge on a 15-amp breaker, 12-gauge on a 20-amp breaker, and 10-gauge on a 30-amp breaker. A breaker that is too large lets the wire overheat before it trips.\n\n**Wrong choices**\n- 20 amps: 20 amps is typical for 12-gauge copper.\n- 30 amps: 30 amps is typical for 10-gauge copper.\n- 40 amps: This is far too large and the wire could overheat.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "wire size",
+      "overcurrent protection"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-electrical-0006",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "electrical",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Reverse polarity at a receptacle means:",
+    "choices": [
+      "The receptacle is installed upside down",
+      "The ground wire is missing",
+      "The breaker is turned off",
+      "The hot and neutral wires are connected to the wrong terminals"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Reverse polarity = hot and neutral swapped",
+    "explanation": "Receptacles are made so the narrow slot is hot and the wider slot is neutral. When the wires are swapped, devices like lamps may have live parts even when switched off, which is a shock hazard. A plug-in tester shows this condition.\n\n**Wrong choices**\n- The ground wire is missing: A missing ground is called an open ground.\n- The receptacle is installed upside down: Mounting direction is not polarity.\n- The breaker is turned off: No power is not reverse polarity.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "receptacles",
+      "polarity"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-electrical-0007",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "electrical",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which electrical condition is a common safety defect?",
+    "choices": [
+      "A breaker labeled in the panel directory",
+      "A covered junction box that is accessible",
+      "A GFCI receptacle in a bathroom",
+      "A junction box with no cover and exposed wire splices"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Junction boxes need covers",
+    "explanation": "Wire splices must be inside a box with a cover. Open boxes leave live connections exposed to touch and damage and let sparks escape. Inspectors report missing covers and splices outside of boxes.\n\n**Wrong choices**\n- A breaker labeled in the panel directory: Labeling is a good practice.\n- A covered junction box that is accessible: Covered, accessible boxes are correct.\n- A GFCI receptacle in a bathroom: This is correct protection.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "junction box",
+      "safety"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-electrical-0008",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "electrical",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Single-strand aluminum branch circuit wiring, common in some homes from the mid-1960s to the 1970s, is a concern mainly because:",
+    "choices": [
+      "It attracts lightning",
+      "It carries more current than copper of the same size",
+      "Connections can loosen and overheat, raising fire risk",
+      "It cannot be used on any 240-volt circuits"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Old solid aluminum branch wiring risks hot connections",
+    "explanation": "Solid aluminum wire expands and contracts more than copper and oxidizes at connections. Over time, terminals can loosen, overheat, and start fires. Inspectors report it and recommend evaluation by a licensed electrician familiar with approved repair methods.\n\n**Wrong choices**\n- It carries more current than copper of the same size: Aluminum carries less current than the same size copper.\n- It cannot be used on any 240-volt circuits: Stranded aluminum is still widely used for larger 240-volt feeders.\n- It attracts lightning: Wire metal type does not attract lightning.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "aluminum wiring",
+      "fire safety"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-electrical-0009",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "electrical",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Knob-and-tube wiring is a concern mainly because it:",
+    "choices": [
+      "Uses plastic-jacketed cable",
+      "Is old, has no equipment ground, and can overheat if covered by insulation",
+      "Is the newest type of wiring",
+      "Is always GFCI protected"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Knob-and-tube: old, ungrounded, heat-sensitive",
+    "explanation": "Knob-and-tube wiring runs separate hot and neutral wires on ceramic supports. It has no ground wire, its insulation may be brittle, and it was designed to shed heat to open air, so burying it in insulation can be risky. Many insurers also have concerns. Inspectors recommend evaluation by an electrician.\n\n**Wrong choices**\n- Is the newest type of wiring: Knob-and-tube is very old, used roughly before the 1940s.\n- Uses plastic-jacketed cable: It uses single wires on ceramic knobs and tubes.\n- Is always GFCI protected: It is not automatically GFCI protected.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "knob and tube",
+      "old wiring"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-electrical-0010",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "electrical",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Under common electrical codes, a residential electrical panel should not be located in:",
+    "choices": [
+      "A clothes closet",
+      "An unfinished basement",
+      "A garage wall",
+      "A utility room"
+    ],
+    "answer": 1,
+    "oneLineConcept": "No panels in clothes closets (or bathrooms)",
+    "explanation": "Panels need clear working space and should not be near easily burned materials. Common electrical codes do not allow panels in clothes closets or bathrooms. A panel in a closet should be reported.\n\n**Wrong choices**\n- A utility room: Utility rooms are common panel locations.\n- A garage wall: Garages are common panel locations.\n- An unfinished basement: Basements are common panel locations.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "panel",
+      "location"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-electrical-0011",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "electrical",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A three-slot receptacle tests as \"open ground.\" This means:",
+    "choices": [
+      "A GFCI has tripped",
+      "The receptacle has no power",
+      "The ground slot is not connected to an equipment ground",
+      "The hot and neutral wires are reversed"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Open ground = 3-slot receptacle without a ground",
+    "explanation": "Three-slot receptacles suggest a grounding path, so an open ground is misleading and removes protection for grounded appliances. It often happens when three-slot receptacles replace two-slot ones on older, ungrounded wiring. Common fixes include running a ground or adding GFCI protection with proper labels.\n\n**Wrong choices**\n- The hot and neutral wires are reversed: That is reverse polarity.\n- The receptacle has no power: An open ground receptacle can still have power.\n- A GFCI has tripped: A tripped GFCI shows as no power, not open ground.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "receptacles",
+      "grounding"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-electrical-0012",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "electrical",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Under common electrical codes, overhead service drop wires over a residential driveway typically need at least how much clearance above it?",
+    "choices": [
+      "18 feet",
+      "12 feet",
+      "6 feet",
+      "10 feet"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Service drop clearance: 10 ft walks, 12 ft driveways, 18 ft streets",
+    "explanation": "Common electrical code clearances for overhead service conductors are about 10 feet above finished grade and sidewalks, 12 feet above residential driveways, and 18 feet above public streets. Low service wires are a safety hazard and should be reported to the utility or an electrician.\n\n**Wrong choices**\n- 10 feet: 10 feet is the typical minimum over areas reached only by pedestrians, such as sidewalks.\n- 18 feet: 18 feet is the typical minimum over public streets and roads.\n- 6 feet: This is far too low; vehicles could hit the wires.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "service drop",
+      "clearance"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-electrical-0013",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "electrical",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Under common electrical codes, the clear working space in front of a residential panel is typically at least how deep?",
+    "choices": [
+      "36 inches",
+      "12 inches",
+      "30 inches",
+      "24 inches"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Panel working space: 30 in. wide, 36 in. deep",
+    "explanation": "Electricians need room to work safely. Common electrical codes typically require a clear space at least 30 inches wide (or the width of the panel if wider), 36 inches deep, and about 6-1/2 feet high in front of the panel. Shelves, water heaters, or storage in this space should be reported.\n\n**Wrong choices**\n- 30 inches: 30 inches is the typical minimum width of the working space.\n- 24 inches: This is less than the typical requirement.\n- 12 inches: This is far too little room to work safely.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "panel",
+      "working space"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-electrical-0014",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "electrical",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "In a subpanel (not the main service panel), neutral and ground wires should typically be:",
+    "choices": [
+      "Twisted together with wire nuts",
+      "Connected only to a separate ground rod, with no ground wire back to the main panel",
+      "Bonded together, the same as in the main panel",
+      "Kept separate, with the neutral bar isolated from the panel cabinet"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Subpanels: neutrals isolated, grounds bonded to cabinet",
+    "explanation": "Neutral and ground are bonded together only at the main service disconnect. In a subpanel, the neutral bar is isolated and the grounds go to a separate bar bonded to the cabinet. If they are bonded in the subpanel, normal neutral current can flow on ground paths and metal parts.\n\n**Wrong choices**\n- Bonded together, the same as in the main panel: Neutral and ground are bonded only at the main service disconnect.\n- Connected only to a separate ground rod, with no ground wire back to the main panel: A ground rod alone does not provide the fault path an equipment ground wire provides.\n- Twisted together with wire nuts: This mixes neutral and ground and is not acceptable.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "subpanel",
+      "grounding",
+      "bonding"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-electrical-0015",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "electrical",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A 30-amp breaker protects a circuit wired with 12-gauge copper. What is the concern?",
+    "choices": [
+      "The breaker is too small and will trip too often",
+      "The breaker is too large for the wire, so the wire can overheat before the breaker trips",
+      "No issue, because 12-gauge is rated for 30 amps",
+      "It causes reverse polarity"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Oversized breaker = overheating wire risk",
+    "explanation": "12-gauge copper branch wiring is typically protected at 20 amps. A 30-amp breaker allows more current than the wire can safely carry, so the wire can overheat and start a fire before the breaker trips. This should be corrected by an electrician.\n\n**Wrong choices**\n- The breaker is too small and will trip too often: The breaker is too large, not too small.\n- No issue, because 12-gauge is rated for 30 amps: 12-gauge copper is typically limited to 20 amps.\n- It causes reverse polarity: Breaker size has nothing to do with polarity.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "overcurrent protection",
+      "wire size"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-electrical-0016",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "electrical",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "What is the purpose of a drip loop at the overhead service entrance?",
+    "choices": [
+      "To ground the service",
+      "To reduce voltage drop",
+      "To provide extra wire for a future larger service",
+      "To let rainwater drip off the wires before it can run into the service head"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Drip loops keep water out of the service head",
+    "explanation": "Service wires sag below the service head (weatherhead) before rising into it. Water running along the wires drips off at the low point instead of following the wires into the service head and down into the meter or panel.\n\n**Wrong choices**\n- To provide extra wire for a future larger service: Drip loops are for water control, not spare length.\n- To ground the service: Drip loops do not ground anything.\n- To reduce voltage drop: A loop has no effect on voltage drop.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "service entrance",
+      "drip loop"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-electrical-0017",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "electrical",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "All of the following are locations where GFCI protection is commonly required in a home EXCEPT:",
+    "choices": [
+      "Bedroom receptacles",
+      "Outdoor receptacles",
+      "Kitchen countertop receptacles",
+      "Garage receptacles"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Bedrooms are AFCI locations, not typical GFCI locations",
+    "explanation": "GFCI protection is commonly required in wet or grounded areas: bathrooms, kitchen countertops, garages, outdoors, crawlspaces, unfinished basements, and laundry areas. Bedroom circuits commonly require AFCI protection instead.\n\n**Wrong choices**\n- Kitchen countertop receptacles: These commonly require GFCI protection.\n- Garage receptacles: These commonly require GFCI protection.\n- Outdoor receptacles: These commonly require GFCI protection.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "GFCI",
+      "AFCI"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "home-inspector-nhie-electrical-0018",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "electrical",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A ground rod for a residential electrical service is typically at least how long?",
+    "choices": [
+      "2 feet",
+      "4 feet",
+      "8 feet",
+      "20 feet"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Ground rods: typically at least 8 ft long",
+    "explanation": "Ground rods connect the electrical system to the earth. Under common electrical codes, rod electrodes are typically at least 8 feet long and driven fully into the soil. Often two rods are installed, spaced apart.\n\n**Wrong choices**\n- 4 feet: 4 feet is too short for a typical ground rod.\n- 2 feet: This is far too short.\n- 20 feet: This is much longer than the typical requirement.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "grounding",
+      "ground rod"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-electrical-0019",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "electrical",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Scorched insulation and melted plastic at a breaker inside a panel most likely indicates:",
+    "choices": [
+      "Only past moisture, with no heat involved",
+      "A properly working AFCI",
+      "Normal wear for an older panel",
+      "Overheating from a loose connection or overload; refer to a licensed electrician"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Scorch or melt marks in a panel = overheating hazard",
+    "explanation": "Heat damage in a panel means a connection has been overheating, usually from a loose terminal, a damaged breaker, or overloading. This can lead to fire. The inspector should report it as a safety concern and recommend prompt evaluation by a licensed electrician.\n\n**Wrong choices**\n- A properly working AFCI: AFCIs do not scorch the panel.\n- Normal wear for an older panel: Burn marks are never normal.\n- Only past moisture, with no heat involved: Melted plastic shows heat, not just moisture.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "panel",
+      "overheating",
+      "safety"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-electrical-0020",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "electrical",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A plug-in tester shows a receptacle as correctly wired, but inside the box a jumper wire connects the neutral terminal to the ground terminal. This is called:",
+    "choices": [
+      "A bootleg (false) ground, which is a hazard",
+      "Reverse polarity",
+      "A double tap",
+      "A proper equipment ground"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Neutral jumped to ground = bootleg ground",
+    "explanation": "A bootleg ground jumps the neutral to the ground terminal so a tester reads \"correct.\" But the ground is not a separate path. If the neutral opens, metal parts of plugged-in equipment can become energized. It should be corrected by a licensed electrician.\n\n**Wrong choices**\n- A proper equipment ground: The neutral is not a ground path; this only fools the tester.\n- Reverse polarity: Reverse polarity is hot and neutral swapped.\n- A double tap: A double tap is two wires under one breaker terminal.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "receptacles",
+      "grounding",
+      "bootleg ground"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-electrical-0021",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "electrical",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Under common electrical codes, overhead service conductors typically must stay at least how far from a window that can be opened (measured to the side or below)?",
+    "choices": [
+      "10 feet",
+      "1 foot",
+      "3 feet",
+      "6 inches"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Service wires: about 3 ft from openable windows",
+    "explanation": "People can reach out of open windows, doors, porches, and decks. Common electrical codes typically require overhead service conductors to stay at least 3 feet from windows that open, doors, porches, and similar places. Wires above the top of a window are an exception.\n\n**Wrong choices**\n- 1 foot: This is too close; a person could reach the wires.\n- 10 feet: 10 feet is a typical vertical clearance above grade, not window clearance.\n- 6 inches: This is far too close.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "service drop",
+      "clearance"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-electrical-0022",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "electrical",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Each of the following is a defect commonly reported at a main electrical panel EXCEPT:",
+    "choices": [
+      "Open knockouts or missing filler plates in the dead front cover",
+      "A complete, legible circuit directory",
+      "Rust and water stains inside the cabinet",
+      "A breaker terminal with two wires that is listed for only one"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Common panel defects: openings, double taps, water",
+    "explanation": "Common panel defects include openings in the cover that expose live parts, double taps, water entry and rust, overheated parts, and wrong wire or breaker sizes. A complete, readable circuit directory is good practice, not a defect.\n\n**Wrong choices**\n- Open knockouts or missing filler plates in the dead front cover: Openings expose live parts and should be closed.\n- A breaker terminal with two wires that is listed for only one: This is a double tap.\n- Rust and water stains inside the cabinet: This shows water entry, which can damage parts.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "panel",
+      "defects"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "home-inspector-nhie-electrical-0023",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "electrical",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A subpanel inside a house is fed by a cable with two hots and a neutral, but no separate ground wire. What is the concern?",
+    "choices": [
+      "The subpanel will hold too many circuits",
+      "There is no equipment grounding conductor back to the main panel; refer to a licensed electrician",
+      "The neutral will carry too little current",
+      "This is the standard required feed for all subpanels"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Subpanels need 4 wires: 2 hots, neutral, ground",
+    "explanation": "Under current common electrical codes, a subpanel is typically fed with two hot wires, a neutral, and a separate equipment ground. Without the ground, the neutral and ground cannot be separated at the subpanel, and there is no proper fault path. An electrician should evaluate.\n\n**Wrong choices**\n- This is the standard required feed for all subpanels: Subpanels typically need a four-wire feed: two hots, a neutral, and a ground.\n- The neutral will carry too little current: Neutral current is not the issue.\n- The subpanel will hold too many circuits: The number of circuits is not related to the missing ground.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "subpanel",
+      "grounding"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-electrical-0024",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "electrical",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Which repair for single-strand aluminum branch wiring is widely accepted as a long-term fix at connections?",
+    "choices": [
+      "Using standard wire nuts made only for copper",
+      "Wrapping each connection with electrical tape",
+      "Adding copper pigtails with a listed method such as COPALUM crimps or AlumiConn connectors",
+      "Coating the wires with antioxidant paste only"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Aluminum wiring fix: listed copper pigtail methods",
+    "explanation": "Recognized repairs for old solid aluminum branch wiring include rewiring with copper, or attaching short copper pigtails at each connection using a listed method such as COPALUM crimp connectors or AlumiConn connectors. The work should be done by a qualified electrician.\n\n**Wrong choices**\n- Using standard wire nuts made only for copper: Ordinary wire nuts are not suitable for aluminum-to-copper splices.\n- Wrapping each connection with electrical tape: Tape does nothing to stop loosening or overheating.\n- Coating the wires with antioxidant paste only: Paste alone does not solve the connection problem.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "aluminum wiring",
+      "repairs"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-electrical-0025",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "electrical",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "At a typical home's service, the voltage between the two hot legs is about 240 volts. The voltage between each hot leg and the neutral should be about:",
+    "choices": [
+      "120 volts",
+      "208 volts",
+      "240 volts",
+      "0 volts"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Home service: 240 V hot-to-hot, 120 V hot-to-neutral",
+    "explanation": "A typical home gets split-phase power: two hot legs and a neutral.\n\n1. Hot leg to hot leg: about 240 volts (for ranges, dryers, AC)\n2. Each hot leg to neutral: half of that, about 120 volts (for lights and receptacles)\n\nCheck: 120 + 120 = 240.\n\n**Wrong choices**\n- 240 volts: 240 volts is measured between the two hot legs, not hot to neutral.\n- 208 volts: 208 volts is common in three-phase commercial systems.\n- 0 volts: A hot leg to neutral always has voltage when the power is on.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "service",
+      "voltage"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+]
