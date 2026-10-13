@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "allow": [
+      "Bash(git status *)",
+      "Bash(git diff *)",
+      "Bash(git log *)",
+      "Bash(git fetch *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git pull --rebase *)",
+      "Bash(git push origin HEAD:main)",
+      "Bash(git push -u origin routine/wip-*)",
+      "Bash(git push origin routine/wip-*)",
+      "Bash(git push origin --delete routine/wip-*)",
+      "Bash(git worktree *)",
+      "Bash(git checkout *)",
+      "Bash(git stash *)",
+      "Bash(git restore *)",
+      "Bash(npm ci)",
+      "Bash(npm test *)",
+      "Bash(npm test)",
+      "Bash(npm run *)",
+      "Bash(npx tsx *)",
+      "Bash(npx wrangler deploy --dry-run *)",
+      "Bash(python3 *)",
+      "Bash(curl *)",
+      "Bash(pdftoppm *)",
+      "Bash(pdfinfo *)",
+      "Bash(rm -rf /tmp/claude-0/*)"
+    ],
+    "deny": [
+      "Bash(git push --force *)",
+      "Bash(git push -f *)",
+      "Bash(git push * --force *)",
+      "Bash(git push * --force)",
+      "Bash(git push * -f)",
+      "Bash(git push * --force-with-lease *)",
+      "Bash(git push * --force-with-lease)"
+    ]
+  }
+}
