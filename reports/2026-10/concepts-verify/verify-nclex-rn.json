@@ -1,0 +1,119 @@
+{
+  "slug": "nclex-rn",
+  "round1": {
+    "management-of-care": {
+      "result": "FAIL",
+      "issues": [
+        "summary[0] 'These ideas show up in almost every NCLEX question' → unverifiable, exaggerated claim (Management of Care is roughly 15-21% of the NCSBN RN test plan) → remove it or say 'these ideas are tested often'.",
+        "summary[1] 'an acute problem comes before a chronic one' → summary adds a fact that is not in any card or point → add it to the Priority setting card/points or remove it from the summary."
+      ]
+    },
+    "safety-infection-control": {
+      "result": "FAIL",
+      "issues": [
+        "concepts 'Two client identifiers' source {org: 'The Joint Commission (National Patient Safety Goals)', year: 2026} → out of date: from 1 Jan 2026 the Joint Commission replaced the NPSGs for hospitals and critical access hospitals with National Performance Goals (NPGs). Patient identification (two identifiers) is still required → change the source to 'The Joint Commission (National Performance Goals)', 2026.",
+        "summary[2] 'Sterile technique keeps an area free of all germs, while clean technique only lowers their number.' → summary adds a fact that is not in any card or point (asepsis is not covered) → add an asepsis card/point or remove the sentence."
+      ]
+    },
+    "lifespan-care": {
+      "result": "PASS",
+      "issues": []
+    },
+    "prevention-screening": {
+      "result": "FAIL",
+      "issues": [
+        "points 'Sort actions into primary, secondary or tertiary prevention; screening is always secondary.' → 'always' goes too far. Screening is usually called secondary prevention, but some screening finds risk factors or precancer before disease starts (for example, removing a polyp during colon cancer screening), which counts as primary prevention → say 'screening is usually secondary prevention'.",
+        "summary[2] 'Changing habits works best when you use the client's own goals and remove barriers one at a time.' → summary adds a claim that is not in any card or point ('client's own goals', 'one at a time') → remove it or support it with a card/point. The only matching point is 'remove barriers such as pain before teaching'."
+      ]
+    },
+    "therapeutic-communication": {
+      "result": "FAIL",
+      "issues": [
+        "summary[1] 'Open-ended questions, reflecting feelings, restating, clarifying and quiet presence invite the client to talk.' → 'restating', 'clarifying' and 'quiet presence (silence)' are not in any card or point, so the summary adds facts → add them to a card or cut the summary down to open-ended questions and reflecting feelings.",
+        "summary[1] 'Responses that block talk include ... agreeing or disagreeing.' → 'agreeing or disagreeing' (approval/disapproval) is not in the Non-therapeutic responses card, which lists 'talking about yourself' instead → make the summary and the card match.",
+        "concepts 'Mandatory reporting' 'Nurses are required to report suspected abuse or neglect of children and of vulnerable older or dependent adults to the proper agency.' → mostly right, but who must report elder or dependent-adult abuse depends on state law (child abuse reporting is required in every state). This is advisory and is not the reason for the FAIL → consider adding 'as required by state law'."
+      ]
+    },
+    "mental-health": {
+      "result": "FAIL",
+      "issues": [
+        "summary[1] 'Keep the area free of harmful objects and stay close as ordered.' → 'stay close as ordered' (close observation for a client at suicide risk) is a new nursing action that is not in any card or point → add it to the Suicide risk assessment card or remove it from the summary."
+      ]
+    },
+    "basic-care-comfort": {
+      "result": "PASS",
+      "issues": []
+    },
+    "pharmacological-therapies": {
+      "result": "PASS",
+      "issues": []
+    },
+    "reduction-of-risk": {
+      "result": "FAIL",
+      "issues": [
+        "concepts 'Glucose and platelets' 'Fasting blood glucose is commonly cited as about 70 to 99 mg/dL.' → the number is right (normal fasting glucose is <100 mg/dL under the ADA Standards of Care), but this card gives a guideline number and has no source → add source {org: 'American Diabetes Association (Standards of Care in Diabetes)', year: 2026}. The potassium and sodium range cards also give no reference; consider adding a reference source for them too."
+      ]
+    },
+    "physiological-adaptation": {
+      "result": "FAIL",
+      "issues": [
+        "summary[2] 'Atrial fibrillation raises stroke risk.' → summary adds a fact that is not in any card, point or compare row → add an atrial fibrillation card/point or remove the sentence.",
+        "concepts 'Shockable and non-shockable rhythms' source {org: 'American Heart Association', year: 2026} → the current AHA guideline is the 2025 AHA Guidelines for CPR and ECC. The content is correct → consider year 2025, or label it as checked in 2026."
+      ]
+    }
+  },
+  "round2_after_fix": {
+    "management-of-care": {
+      "result": "PASS",
+      "issues": []
+    },
+    "safety-infection-control": {
+      "result": "PASS",
+      "issues": []
+    },
+    "lifespan-care": {
+      "result": "PASS",
+      "issues": []
+    },
+    "prevention-screening": {
+      "result": "PASS",
+      "issues": []
+    },
+    "therapeutic-communication": {
+      "result": "PASS",
+      "issues": []
+    },
+    "mental-health": {
+      "result": "PASS",
+      "issues": [
+        "Advisory (not blocking): summary says a client with a plan and means is at high risk; cards/points say to ask about plan and means but do not state 'high risk' outright. Consider adding it to the suicide card."
+      ]
+    },
+    "basic-care-comfort": {
+      "result": "PASS",
+      "issues": []
+    },
+    "pharmacological-therapies": {
+      "result": "PASS",
+      "issues": []
+    },
+    "reduction-of-risk": {
+      "result": "PASS",
+      "issues": [
+        "Advisory (not blocking): Potassium and Sodium cards give reference ranges without a source while the Glucose/platelets card has one; ranges are lab reference values ('commonly cited', labs vary), not guideline numbers, so acceptable, but adding a source would be consistent."
+      ]
+    },
+    "physiological-adaptation": {
+      "result": "PASS",
+      "issues": [
+        "Advisory (not blocking): 'Early signs of shock' lists cool, pale skin; early distributive/septic shock can present with warm, flushed skin. Accurate for hypovolemic/cardiogenic shock as commonly taught; could say 'often cool, pale skin'."
+      ]
+    },
+    "_figure": {
+      "1": "PASS",
+      "2": "PASS",
+      "3": "PASS",
+      "5": "PASS"
+    }
+  }
+}
