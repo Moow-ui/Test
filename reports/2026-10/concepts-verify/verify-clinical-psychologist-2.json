@@ -1,0 +1,130 @@
+{
+  "slug": "clinical-psychologist-2",
+  "checkedAt": "2026-10-13",
+  "chapters": {
+    "developmental-psychology": {
+      "result": "PASS",
+      "issues": []
+    },
+    "personality-psychology": {
+      "result": "PASS",
+      "issues": [
+        {
+          "severity": "minor",
+          "text": "승화는 ... 가장 성숙한 방어기제로 꼽힙니다.",
+          "problem": "(차단 사유 아님) 베일런트 분류에서 승화는 이타주의·유머·억제·예견과 함께 성숙한 방어기제 중 하나다. '가장'은 교재마다 다르지만 '꼽힙니다'로 완화되어 있다.",
+          "fix": "원하면 '성숙한 방어기제의 대표로 꼽힙니다'로 바꾼다."
+        }
+      ]
+    },
+    "learning-cognition": {
+      "result": "PASS",
+      "issues": []
+    },
+    "research-methods": {
+      "result": "PASS",
+      "issues": []
+    },
+    "social-psychology": {
+      "result": "PASS",
+      "issues": []
+    },
+    "abnormal-basics": {
+      "result": "PASS",
+      "issues": []
+    },
+    "mood-anxiety-disorders": {
+      "result": "FAIL",
+      "issues": [
+        {
+          "text": "조증 삽화는 최소 1주, 경조증 삽화는 최소 4일 이어져야 합니다. (summary 3번째 문단·points·compare 표 '삽화 최소 기간: 조증 1주')",
+          "problem": "DSM-5-TR 조증 삽화 기준 A는 '최소 1주, 거의 매일 하루 대부분 지속, 또는 입원이 필요한 경우 기간과 상관없음'이다. 예외를 빼고 '최소 1주 이어져야 한다'고 단정하면 공식 기준과 어긋나고, 이 예외는 시험에 자주 나온다.",
+          "fix": "'조증 삽화는 최소 1주(입원이 필요할 만큼 심하면 기간과 상관없음), 경조증 삽화는 최소 연속 4일 이어져야 합니다.' compare 표도 '조증 1주(입원 시 기간 무관)'로 고친다."
+        }
+      ]
+    },
+    "other-disorders": {
+      "result": "PASS",
+      "issues": [
+        {
+          "severity": "minor",
+          "text": "물질 사용 장애의 내성과 금단 카드",
+          "problem": "(차단 사유 아님) DSM 진단 기준에 들어가는 개념인데 이 카드만 source가 없다. 내용은 맞다.",
+          "fix": "source {\"org\":\"미국정신의학회 DSM-5-TR\",\"year\":2022} 추가."
+        }
+      ]
+    },
+    "testing-basics": {
+      "result": "PASS",
+      "issues": []
+    },
+    "intelligence-tests": {
+      "result": "PASS",
+      "issues": [
+        {
+          "severity": "minor",
+          "text": "비네 검사 시절에는 정신연령을 생활연령으로 나누어 100을 곱한 비율 IQ를 썼습니다.",
+          "problem": "(차단 사유 아님) 비네-시몽 검사(1905·1908)는 정신연령만 썼고, 비율 IQ는 슈테른(1912)이 제안해 터먼의 스탠퍼드-비네(1916)가 처음 썼다. 카드 tip은 정확하지만 요약 문장이 약간 느슨하다.",
+          "fix": "'스탠퍼드-비네 검사 초기판은 정신연령을 생활연령으로 나누어 100을 곱한 비율 IQ를 썼습니다.'"
+        }
+      ]
+    },
+    "personality-tests": {
+      "result": "PASS",
+      "issues": [
+        {
+          "severity": "minor",
+          "text": "상승 기준 T점수 / MMPI 임상 척도 10개 카드",
+          "problem": "(차단 사유 아님) 공식 검사 기준(T 65, 척도 번호·이름)을 적은 카드인데 source가 없다. 내용은 맞다.",
+          "fix": "source 추가 예: {\"org\":\"MMPI-2 매뉴얼(Butcher 외) / 한국판 MMPI-2\",\"year\":1989 또는 2005}"
+        }
+      ]
+    },
+    "neuro-other-tests": {
+      "result": "PASS",
+      "issues": []
+    },
+    "clinical-overview": {
+      "result": "PASS",
+      "issues": []
+    },
+    "assessment-basics": {
+      "result": "PASS",
+      "issues": []
+    },
+    "therapy-basics": {
+      "result": "PASS",
+      "issues": []
+    },
+    "consultation-ethics": {
+      "result": "PASS",
+      "issues": []
+    },
+    "clinical-specialties": {
+      "result": "PASS",
+      "issues": []
+    },
+    "counseling-basics": {
+      "result": "PASS",
+      "issues": []
+    },
+    "counseling-theories": {
+      "result": "PASS",
+      "issues": []
+    },
+    "counseling-practice": {
+      "result": "PASS",
+      "issues": []
+    },
+    "addiction-special-counseling": {
+      "result": "PASS",
+      "issues": []
+    }
+  },
+  "rounds": [
+    "1차: 20/21 PASS, FAIL mood-anxiety-disorders(조증 삽화 기간 예외 누락). 사소 지적 3단원(intelligence-tests·personality-tests·other-disorders) 수정",
+    "2차(수정 4단원만): 3 PASS, FAIL mood-anxiety-disorders(지속성 우울장애 '거의 매일' → '우울한 날이 더 많은')",
+    "3차(mood + 출처 연도를 바꾼 personality-tests): mood PASS, personality-tests FAIL(MMPI-A 를 MMPI-2 매뉴얼 출처로 묶음 → MMPI-2 로 한정)",
+    "4차(personality-tests): PASS. 최종 21/21 PASS, verifiedAt 2026-10-13"
+  ]
+}

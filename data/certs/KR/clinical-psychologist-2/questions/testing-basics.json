@@ -1,0 +1,211 @@
+[
+  {
+    "id": "clinical-psychologist-2-testing-basics-0001",
+    "certId": "clinical-psychologist-2",
+    "subjectId": "psychological-testing",
+    "chapterId": "testing-basics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "같은 검사를 같은 사람들에게 일정한 시간 간격을 두고 두 번 실시하여, 두 점수의 일치 정도로 구하는 신뢰도는?",
+    "choices": [
+      "동형검사 신뢰도",
+      "내적 합치도",
+      "검사-재검사 신뢰도",
+      "반분 신뢰도"
+    ],
+    "answer": 3,
+    "oneLineConcept": "같은 검사를 두 번 실시해 구하면 검사-재검사 신뢰도이다.",
+    "explanation": "신뢰도는 검사가 얼마나 일관되고 안정되게 측정하는지를 뜻합니다. 검사-재검사 신뢰도는 같은 검사를 같은 사람들에게 시간 간격을 두고 다시 실시해 두 점수가 얼마나 비슷한지 봅니다. 간격이 너무 짧으면 앞의 답을 기억하는 영향이, 너무 길면 실제 특성이 변하는 영향이 생길 수 있습니다.\n\n**틀린 선지**\n- 동형검사 신뢰도: 내용과 난이도가 같은 두 개의 다른 검사(동형검사)를 실시해 구하는 신뢰도입니다.\n- 반분 신뢰도: 한 번 실시한 검사를 두 부분으로 나누어 두 점수의 관계로 구하는 신뢰도입니다.\n- 내적 합치도: 문항들이 서로 얼마나 일관되게 같은 것을 재는지로 구하는 신뢰도로, 크론바흐 알파가 대표적입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "신뢰도",
+      "검사-재검사"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "clinical-psychologist-2-testing-basics-0002",
+    "certId": "clinical-psychologist-2",
+    "subjectId": "psychological-testing",
+    "chapterId": "testing-basics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "검사가 원래 측정하려고 한 것을 실제로 제대로 측정하고 있는 정도를 무엇이라 하는가?",
+    "choices": [
+      "타당도",
+      "변별도",
+      "신뢰도",
+      "규준"
+    ],
+    "answer": 1,
+    "oneLineConcept": "타당도는 재려는 것을 제대로 재는 정도, 신뢰도는 일관성이다.",
+    "explanation": "타당도는 '이 검사가 정말 재려는 것을 재고 있는가'에 대한 답입니다. 예를 들어 우울 검사라면 실제 우울 정도를 재야 타당합니다. 신뢰도가 낮으면 타당도도 높을 수 없지만, 신뢰도가 높다고 해서 반드시 타당한 것은 아닙니다.\n\n**틀린 선지**\n- 신뢰도: 얼마나 일관되게 측정하는지를 뜻합니다. 일관되더라도 엉뚱한 것을 잴 수 있으므로 타당도와는 다릅니다.\n- 규준: 개인의 점수를 비교할 수 있도록 대표 집단의 점수 분포를 정리한 기준입니다.\n- 변별도: 문항이 잘하는 사람과 못하는 사람을 얼마나 잘 구별하는지를 뜻합니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "타당도",
+      "신뢰도"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "clinical-psychologist-2-testing-basics-0003",
+    "certId": "clinical-psychologist-2",
+    "subjectId": "psychological-testing",
+    "chapterId": "testing-basics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "표준점수 가운데 T점수의 평균과 표준편차는?",
+    "choices": [
+      "평균 5, 표준편차 2",
+      "평균 50, 표준편차 10",
+      "평균 100, 표준편차 15",
+      "평균 0, 표준편차 1"
+    ],
+    "answer": 2,
+    "oneLineConcept": "T점수는 평균 50, 표준편차 10 이다.",
+    "explanation": "표준점수는 원점수를 평균과 표준편차를 이용해 같은 잣대로 바꾼 점수입니다. 기본이 되는 Z점수는 평균 0, 표준편차 1 이고, T점수는 음수와 소수점을 없애기 위해 'T = 50 + 10 × Z' 로 바꾼 점수로 평균 50, 표준편차 10 입니다. MMPI 같은 성격검사에서 T점수를 씁니다.\n\n**틀린 선지**\n- 평균 100, 표준편차 15: 웩슬러 지능검사의 편차 IQ 기준입니다.\n- 평균 0, 표준편차 1: Z점수의 기준입니다.\n- 평균 5, 표준편차 2: 스테나인(9등급 표준점수)의 기준입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "표준점수",
+      "T점수"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "clinical-psychologist-2-testing-basics-0004",
+    "certId": "clinical-psychologist-2",
+    "subjectId": "psychological-testing",
+    "chapterId": "testing-basics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "어떤 사람의 Z점수가 1.5 일 때, 이를 T점수로 바꾸면 얼마인가?",
+    "choices": [
+      "65",
+      "60",
+      "122.5",
+      "70"
+    ],
+    "answer": 1,
+    "oneLineConcept": "T = 50 + 10 × Z 이다.",
+    "explanation": "T점수는 Z점수에 10 을 곱하고 50 을 더해 구합니다.\n\n1. 공식: T = 50 + 10 × Z\n2. 10 × 1.5 = 15\n3. 50 + 15 = 65\n4. 검산: (65 − 50) ÷ 10 = 1.5 로 처음 Z점수와 같습니다.\n\n**틀린 선지**\n- 60: Z점수 1.0 에 해당하는 T점수입니다.\n- 70: Z점수 2.0 에 해당하는 T점수입니다.\n- 122.5: 편차 IQ(평균 100, 표준편차 15)로 바꾼 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "표준점수",
+      "T점수",
+      "Z점수",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "clinical-psychologist-2-testing-basics-0005",
+    "certId": "clinical-psychologist-2",
+    "subjectId": "psychological-testing",
+    "chapterId": "testing-basics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "한 검사가 이론적으로 관련 있는 검사와는 높은 상관을 보이고(수렴), 관련 없는 검사와는 낮은 상관을 보이는지(변별) 확인하는 것은 주로 어떤 타당도의 증거인가?",
+    "choices": [
+      "내용 타당도",
+      "구성(구인) 타당도",
+      "공인 타당도",
+      "예언 타당도"
+    ],
+    "answer": 2,
+    "oneLineConcept": "수렴·변별 타당도는 구성 타당도의 증거이다.",
+    "explanation": "구성(구인) 타당도는 검사가 '불안', '지능'처럼 눈에 보이지 않는 이론적 개념을 제대로 재고 있는지를 봅니다. 그 증거로, 같은 개념을 재는 다른 검사와는 상관이 높아야 하고(수렴 타당도), 다른 개념을 재는 검사와는 상관이 낮아야 합니다(변별 타당도). 요인분석도 구성 타당도를 확인하는 방법입니다.\n\n**틀린 선지**\n- 내용 타당도: 문항이 측정하려는 내용 영역을 골고루 대표하는지 전문가가 판단하는 타당도입니다.\n- 공인 타당도: 같은 시점에 이미 인정받은 기준(다른 검사 등)과의 관계를 보는 준거 타당도입니다.\n- 예언 타당도: 검사 점수가 앞으로의 행동이나 성과를 얼마나 잘 예측하는지 보는 준거 타당도입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "타당도",
+      "구성 타당도",
+      "수렴·변별"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "clinical-psychologist-2-testing-basics-0006",
+    "certId": "clinical-psychologist-2",
+    "subjectId": "psychological-testing",
+    "chapterId": "testing-basics",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "검사의 신뢰도에 대한 설명으로 옳지 않은 것은?",
+    "choices": [
+      "반분 신뢰도는 스피어만-브라운 공식으로 전체 검사의 신뢰도를 교정한다",
+      "검사-재검사 간격이 너무 짧으면 기억·연습 효과 때문에 신뢰도가 높게 추정될 수 있다",
+      "다른 조건이 같다면 문항 수가 많아질수록 신뢰도는 낮아진다",
+      "응답자들이 서로 비슷해 점수 범위가 좁으면 신뢰도 계수가 낮게 나오는 경향이 있다"
+    ],
+    "answer": 3,
+    "oneLineConcept": "좋은 문항을 늘리면 신뢰도는 대체로 높아진다.",
+    "explanation": "같은 성격의 좋은 문항이 많을수록 우연히 생기는 오차가 서로 상쇄되어 신뢰도는 대체로 높아집니다. 따라서 '문항 수가 많아질수록 신뢰도가 낮아진다'는 설명은 옳지 않습니다. 반분 신뢰도에서 스피어만-브라운 공식으로 교정하는 이유도, 검사를 반으로 나누면 문항 수가 줄어 신뢰도가 실제보다 낮게 나오기 때문입니다.\n\n**틀린 선지**\n- 응답자들이 서로 비슷해 점수 범위가 좁으면 신뢰도 계수가 낮게 나오는 경향이 있다: 옳은 설명입니다. 점수 분산이 작으면 상관계수가 낮아집니다.\n- 검사-재검사 간격이 너무 짧으면 기억·연습 효과 때문에 신뢰도가 높게 추정될 수 있다: 옳은 설명입니다.\n- 반분 신뢰도는 스피어만-브라운 공식으로 전체 검사의 신뢰도를 교정한다: 옳은 설명입니다. 반으로 나누면 문항 수가 줄어 신뢰도가 낮게 나오기 때문입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "신뢰도",
+      "신뢰도 영향 요인"
+    ],
+    "levelLock": true
+  }
+]
