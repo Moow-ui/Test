@@ -1,0 +1,703 @@
+[
+  {
+    "id": "nclex-rn-pharmacological-therapies-0001",
+    "certId": "nclex-rn",
+    "subjectId": "physiological-integrity",
+    "chapterId": "pharmacological-therapies",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A client receiving a continuous IV heparin infusion develops bleeding from the gums and new blood in the urine. The provider stops the heparin. Which medication does the nurse expect to be ordered to reverse the heparin?",
+    "choices": [
+      "Flumazenil",
+      "Naloxone",
+      "Protamine sulfate",
+      "Vitamin K (phytonadione)"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Protamine sulfate reverses heparin; vitamin K reverses warfarin",
+    "explanation": "Heparin is a high-alert blood thinner. When a client on heparin shows signs of serious bleeding, the drug is stopped and **protamine sulfate** may be given. Protamine binds to heparin in the blood and makes it inactive within minutes.\n\nIt helps to remember the pairs:\n1. Heparin → protamine sulfate\n2. Warfarin → vitamin K (phytonadione)\n3. Opioids → naloxone\n4. Benzodiazepines → flumazenil\n\n**Wrong choices**\n- \"Vitamin K\": this reverses warfarin, not heparin. It works slowly, over hours.\n- \"Naloxone\": reverses opioids such as morphine. It has no effect on bleeding.\n- \"Flumazenil\": reverses benzodiazepines such as lorazepam. It has no effect on bleeding.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "heparin",
+      "antidote",
+      "high-alert drugs"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "nclex-rn-pharmacological-therapies-0002",
+    "certId": "nclex-rn",
+    "subjectId": "physiological-integrity",
+    "chapterId": "pharmacological-therapies",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A client is taking warfarin at home to prevent clots from atrial fibrillation. Which lab test does the nurse use to check whether the warfarin dose is working safely?",
+    "choices": [
+      "Activated partial thromboplastin time (aPTT)",
+      "Platelet count",
+      "International normalized ratio (INR)",
+      "Serum potassium"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Warfarin is monitored with the INR (PT/INR)",
+    "explanation": "Warfarin slows the liver's use of vitamin K to make clotting factors. Its effect is measured with the **prothrombin time (PT)**, reported as the **INR** (international normalized ratio). The INR lets results be compared between labs. The provider sets the target INR for each client, and the dose is adjusted to keep the client in that range.\n\nAn INR above the target means a higher bleeding risk. An INR below the target means the client is less protected from clots.\n\n**Wrong choices**\n- \"aPTT\": this is used to monitor IV heparin, not warfarin. Mixing up these two tests is a common error.\n- \"Platelet count\": important to watch with heparin (for heparin-induced thrombocytopenia), but it does not show warfarin's effect.\n- \"Serum potassium\": not related to warfarin's effect on clotting.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "warfarin",
+      "INR",
+      "lab values"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "nclex-rn-pharmacological-therapies-0003",
+    "certId": "nclex-rn",
+    "subjectId": "physiological-integrity",
+    "chapterId": "pharmacological-therapies",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "The nurse is about to give oral digoxin to an adult client with heart failure. Which action is most important right before giving the dose?",
+    "choices": [
+      "Weigh the client on the bedside scale",
+      "Check the fingerstick blood glucose",
+      "Count the apical pulse for 1 full minute",
+      "Check the blood pressure in both arms"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Before digoxin, count the apical pulse for a full 60 seconds",
+    "explanation": "Digoxin slows the heart rate and makes each heartbeat stronger. Because it slows the heart, the nurse listens to the **apical pulse** (over the heart, at the apex) for **one full minute** before every dose. A common rule for adults is to hold the dose and notify the provider if the apical pulse is below 60 beats per minute, unless the provider has given a different limit.\n\nA full minute is needed because clients on digoxin often have irregular rhythms, and a 15- or 30-second count can be wrong.\n\n**Wrong choices**\n- \"Blood pressure in both arms\": blood pressure is useful, but it is not the key check for digoxin.\n- \"Weigh the client\": daily weight is good for heart failure, but it is not the safety check right before digoxin.\n- \"Fingerstick blood glucose\": this is the check before insulin, not digoxin.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "digoxin",
+      "high-alert drugs",
+      "assessment"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "nclex-rn-pharmacological-therapies-0004",
+    "certId": "nclex-rn",
+    "subjectId": "physiological-integrity",
+    "chapterId": "pharmacological-therapies",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A client received IV morphine for pain after surgery 30 minutes ago. Which finding requires the nurse's immediate action?",
+    "choices": [
+      "Report of mild itching on the arms",
+      "Respiratory rate of 8 breaths per minute",
+      "Pain rated 3 on a 0-to-10 scale",
+      "No bowel movement since surgery yesterday"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Slow breathing is the most dangerous opioid side effect",
+    "explanation": "Opioids such as morphine can slow down the breathing center in the brain. This is called **respiratory depression**, and it is the most dangerous side effect. An adult breathing only **8 times per minute** is not getting enough air. The nurse acts right away: tries to wake the client, checks oxygen saturation, stops any further opioid, and gets help. Naloxone may be needed.\n\nThe nurse usually checks **sedation level** too, because heavy sleepiness often comes before slow breathing.\n\n**Wrong choices**\n- \"Mild itching\": common and bothersome, but not life-threatening.\n- \"No bowel movement since yesterday\": constipation is expected with opioids and is managed over time, not as an emergency.\n- \"Pain rated 3\": this shows the medicine is working.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "opioids",
+      "respiratory depression",
+      "priority"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "nclex-rn-pharmacological-therapies-0005",
+    "certId": "nclex-rn",
+    "subjectId": "physiological-integrity",
+    "chapterId": "pharmacological-therapies",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A client with diabetes is prescribed insulin lispro (a rapid-acting insulin) before breakfast. When should the nurse give this insulin?",
+    "choices": [
+      "Within 15 minutes before the meal, with the tray ready",
+      "Only if the blood glucose is over 300 mg/dL",
+      "One hour before the meal",
+      "At bedtime, no matter when meals are eaten"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Rapid-acting insulin is given within about 15 minutes of a meal",
+    "explanation": "Insulin lispro starts to work in about **15 minutes**. So it is given **within 15 minutes before a meal** (or right at the start of the meal), and the nurse makes sure the food is actually there. If the insulin is given and the meal is delayed, blood sugar can drop too low (hypoglycemia).\n\n**Wrong choices**\n- \"One hour before the meal\": too early. The insulin would start lowering blood sugar long before food arrives.\n- \"At bedtime\": rapid-acting insulin is matched to meals. Long-acting insulin is the type often given once a day.\n- \"Only if glucose is over 300\": a scheduled mealtime dose is given as prescribed; it is not saved for very high readings.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "insulin",
+      "high-alert drugs",
+      "diabetes"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "nclex-rn-pharmacological-therapies-0006",
+    "certId": "nclex-rn",
+    "subjectId": "physiological-integrity",
+    "chapterId": "pharmacological-therapies",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "The nurse starts a transfusion of packed red blood cells. What should the nurse do during the first 15 minutes of the transfusion?",
+    "choices": [
+      "Speed up the rate so the unit finishes sooner",
+      "Run the blood through the same line as a dextrose (D5W) infusion",
+      "Leave the room and return to check in 1 hour",
+      "Stay with the client and watch closely for signs of a reaction"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Stay with the client for the first 15 minutes of a transfusion",
+    "explanation": "The most serious transfusion reactions, such as a reaction from the wrong blood type, usually show up **early**, often within the first 15 minutes. So the nurse starts the blood slowly and **stays with the client** during this time, watching for fever, chills, back pain, trouble breathing, hives, or a drop in blood pressure. Vital signs are taken before the transfusion and again at about 15 minutes.\n\n**Wrong choices**\n- \"Same line as dextrose\": only normal saline (0.9% sodium chloride) is used with blood. Dextrose can damage red blood cells.\n- \"Return in 1 hour\": leaving during the riskiest time is unsafe.\n- \"Speed up the rate\": the rate is kept slow at first so a reaction can be caught before much blood is given.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "blood transfusion",
+      "safety"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "nclex-rn-pharmacological-therapies-0007",
+    "certId": "nclex-rn",
+    "subjectId": "physiological-integrity",
+    "chapterId": "pharmacological-therapies",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A client began taking lisinopril for high blood pressure last week. Which finding requires the nurse's immediate action?",
+    "choices": [
+      "Feeling light-headed when standing up quickly",
+      "Blood pressure of 128/78 mm Hg",
+      "Swelling of the lips and tongue",
+      "A dry, tickling cough"
+    ],
+    "answer": 3,
+    "oneLineConcept": "ACE inhibitor + lip/tongue swelling = angioedema, an emergency",
+    "explanation": "Lisinopril is an **ACE inhibitor** (a blood pressure medicine whose generic name ends in \"-pril\"). A rare but dangerous side effect is **angioedema**: swelling of the lips, tongue, face, or throat. The swelling can block the airway. The nurse acts right away: checks the airway and breathing, gets help, and the drug is stopped.\n\n**Wrong choices**\n- \"A dry, tickling cough\": a common, annoying side effect. It should be reported, but it is not an emergency.\n- \"Light-headed when standing\": can happen when starting a blood pressure drug. The nurse teaches the client to get up slowly.\n- \"128/78 mm Hg\": shows the medicine is working.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "ACE inhibitors",
+      "adverse effects",
+      "airway"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "nclex-rn-pharmacological-therapies-0008",
+    "certId": "nclex-rn",
+    "subjectId": "physiological-integrity",
+    "chapterId": "pharmacological-therapies",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Before giving a medication, which action best confirms that the nurse has the right client?",
+    "choices": [
+      "Check the room and bed number on the medication record",
+      "Ask the client to state their full name and date of birth and compare with the wristband",
+      "Read the name on the sign above the bed",
+      "Ask the client, \"Are you Mr. Lee?\""
+    ],
+    "answer": 2,
+    "oneLineConcept": "Use two client identifiers; room number is never an identifier",
+    "explanation": "The **right client** is the first of the medication \"rights.\" The nurse uses **two identifiers**, such as the client's full name and date of birth, and compares them with the wristband and the medication record. Asking the client to **say** the information is safer than asking a yes/no question, because a confused or hard-of-hearing client may just say \"yes.\"\n\n**Wrong choices**\n- \"Room and bed number\": clients move rooms. A location is never an identifier.\n- \"Are you Mr. Lee?\": a yes/no question invites a wrong \"yes.\"\n- \"Sign above the bed\": signs may be out of date and are not tied to the client's body like a wristband.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "medication rights",
+      "client identification",
+      "safety"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "nclex-rn-pharmacological-therapies-0009",
+    "certId": "nclex-rn",
+    "subjectId": "physiological-integrity",
+    "chapterId": "pharmacological-therapies",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A child is prescribed amoxicillin 400 mg by mouth. The pharmacy supplies amoxicillin oral suspension 250 mg per 5 mL. How many milliliters should the nurse give?",
+    "choices": [
+      "8 mL",
+      "10 mL",
+      "6.25 mL",
+      "1.6 mL"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Dose ÷ have × volume: 400 ÷ 250 × 5 mL = 8 mL",
+    "explanation": "Use the formula **(dose ordered ÷ dose on hand) × volume on hand**.\n\n1. Dose ordered = 400 mg. Dose on hand = 250 mg in 5 mL.\n2. 400 ÷ 250 = 1.6\n3. 1.6 × 5 mL = **8 mL**\n\nCheck: 250 mg is in 5 mL, so 500 mg would be in 10 mL. 400 mg is a bit less than 500 mg, so the answer must be a bit less than 10 mL. 8 mL fits.\n\n**Wrong choices**\n- \"1.6 mL\": this is only the ratio (400 ÷ 250). It forgot to multiply by 5 mL.\n- \"6.25 mL\": this comes from flipping the fraction (250 ÷ 400 × 10). It is less than the dose needed.\n- \"10 mL\": this would be 500 mg, more than ordered.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "dosage calculation",
+      "oral liquid"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "nclex-rn-pharmacological-therapies-0010",
+    "certId": "nclex-rn",
+    "subjectId": "physiological-integrity",
+    "chapterId": "pharmacological-therapies",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A client has been on a continuous IV heparin infusion for 6 days. Which finding requires follow-up by the nurse?",
+    "choices": [
+      "Platelet count dropped from 250,000/mm³ at admission to 95,000/mm³",
+      "Oral temperature of 98.6°F (37°C)",
+      "Hemoglobin of 13.5 g/dL, unchanged from admission",
+      "aPTT of 70 seconds (target range per protocol: 60 to 80 seconds)"
+    ],
+    "answer": 1,
+    "oneLineConcept": "A large platelet drop on heparin suggests HIT; report it",
+    "explanation": "Heparin can cause **heparin-induced thrombocytopenia (HIT)**. In HIT, the immune system reacts to heparin, platelets fall, and, oddly, the client is at **higher** risk of dangerous clots. HIT usually appears about 5 to 10 days after heparin is started. A drop in platelets of about half or more, like 250,000 to 95,000, is a warning sign. The nurse reports it promptly; the provider will usually stop all heparin (including flushes) and choose another blood thinner.\n\n**Wrong choices**\n- \"aPTT 70 seconds (target 60–80)\": this is inside the target range given in the order, so the dose is working as planned.\n- \"Hemoglobin 13.5, unchanged\": a stable hemoglobin suggests no hidden bleeding.\n- \"98.6°F\": a normal temperature.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "heparin",
+      "HIT",
+      "lab values"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "nclex-rn-pharmacological-therapies-0011",
+    "certId": "nclex-rn",
+    "subjectId": "physiological-integrity",
+    "chapterId": "pharmacological-therapies",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "The nurse teaches a client who will take warfarin at home. Which statement by the client shows that the teaching was understood?",
+    "choices": [
+      "\"I can take aspirin when I have a headache.\"",
+      "\"I will keep the amount of leafy green vegetables I eat about the same each week.\"",
+      "\"If I forget a dose, I will take two pills the next day.\"",
+      "\"I will stop eating all green vegetables while I take this medicine.\""
+    ],
+    "answer": 2,
+    "oneLineConcept": "On warfarin, keep vitamin K intake steady; don't double doses",
+    "explanation": "Leafy green vegetables (spinach, kale, collards) are high in **vitamin K**, which works against warfarin. The client does **not** need to avoid them. What matters is eating about the **same amount** from week to week, so the dose stays balanced and the INR stays steady.\n\n**Wrong choices**\n- \"Stop eating all green vegetables\": not needed, and suddenly cutting vitamin K can make the INR go too high.\n- \"Take two pills the next day\": doubling a dose can raise the bleeding risk. The client should follow the provider's instructions for a missed dose and not double up.\n- \"Aspirin for a headache\": aspirin also raises bleeding risk. Clients on warfarin should check with the provider before taking aspirin or other over-the-counter pain medicines such as ibuprofen.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "warfarin",
+      "client teaching",
+      "diet"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "nclex-rn-pharmacological-therapies-0012",
+    "certId": "nclex-rn",
+    "subjectId": "physiological-integrity",
+    "chapterId": "pharmacological-therapies",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A client who takes digoxin reports nausea, poor appetite, and seeing yellow-green halos around lights. Today's serum potassium is 3.1 mEq/L (reference range 3.5 to 5.0 mEq/L). What should the nurse do?",
+    "choices": [
+      "Give the digoxin with food to reduce the nausea",
+      "Hold the digoxin and report the findings to the provider",
+      "Give the digoxin and recheck the pulse in 1 hour",
+      "Ask the client to drink extra water and give the dose"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Vision halos + nausea + low potassium = possible digoxin toxicity",
+    "explanation": "These are classic signs of **digoxin toxicity**: stomach upset (nausea, poor appetite) and vision changes (yellow-green halos, blurred vision). **Low potassium** makes digoxin toxicity more likely, because digoxin works more strongly on the heart when potassium is low. This can lead to dangerous heart rhythms.\n\nThe safe action is to **hold the dose** and report the symptoms and the potassium level. The provider will likely order a digoxin level and treat the low potassium.\n\n**Wrong choices**\n- \"Give with food\": treats the nausea but ignores the cause. More digoxin could make the toxicity worse.\n- \"Give and recheck the pulse\": giving the dose first adds to the problem.\n- \"Drink extra water and give the dose\": water does not fix digoxin toxicity or low potassium.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "digoxin",
+      "toxicity",
+      "potassium"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "nclex-rn-pharmacological-therapies-0013",
+    "certId": "nclex-rn",
+    "subjectId": "physiological-integrity",
+    "chapterId": "pharmacological-therapies",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A client was given IV naloxone for opioid-related slow breathing after surgery. The client is now awake with a respiratory rate of 14 breaths per minute. What is most important for the nurse to do next?",
+    "choices": [
+      "Let the client sleep and check back at the next routine vital-sign time in 4 hours",
+      "Keep checking the breathing and sedation level closely, because naloxone may wear off before the opioid does",
+      "Give a second dose of naloxone now to prevent a relapse",
+      "Restart the opioid pump at the same settings right away"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Naloxone can wear off before the opioid; keep monitoring",
+    "explanation": "Naloxone works fast, but its effect is **short** (often 30 to 90 minutes). Many opioids last longer than that. So the client can become sleepy and breathe slowly **again** after the naloxone wears off. The nurse keeps a close watch on respiratory rate, oxygen saturation, and sedation level, and has more naloxone ready if ordered.\n\nNaloxone also reverses pain relief, so the nurse checks pain and works with the provider on a safer pain plan.\n\n**Wrong choices**\n- \"Check back in 4 hours\": this is the time when breathing can slow down again unnoticed.\n- \"Restart at the same settings\": those settings already caused respiratory depression. The provider must review the plan.\n- \"Second dose now\": the client is breathing well now. Extra naloxone can cause severe pain and withdrawal symptoms and is not needed at this moment.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "opioids",
+      "naloxone",
+      "monitoring"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "nclex-rn-pharmacological-therapies-0014",
+    "certId": "nclex-rn",
+    "subjectId": "physiological-integrity",
+    "chapterId": "pharmacological-therapies",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Ten minutes after a unit of packed red blood cells was started, the client reports chills and low back pain. The temperature has risen from 98.6°F (37°C) to 101.2°F (38.4°C). What should the nurse do first?",
+    "choices": [
+      "Give acetaminophen as ordered for fever",
+      "Stop the transfusion",
+      "Slow the transfusion rate and recheck in 15 minutes",
+      "Call the blood bank to report the reaction"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Suspected transfusion reaction: stop the blood first",
+    "explanation": "Chills, fever, and back pain early in a transfusion suggest a **transfusion reaction**, possibly a serious one where the body attacks the donor red blood cells. The first action is always to **stop the transfusion** so no more blood enters the body.\n\nAfter stopping it, the nurse:\n1. Keeps the IV open with normal saline using new tubing.\n2. Stays with the client and checks vital signs.\n3. Notifies the provider and the blood bank.\n4. Sends the blood bag and tubing back, and collects blood and urine samples as directed.\n\n**Wrong choices**\n- \"Slow the rate\": the client would still be receiving the blood that may be causing the reaction.\n- \"Give acetaminophen\": may be ordered later, but it does not stop the cause.\n- \"Call the blood bank\": this is needed, but after the transfusion is stopped.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "blood transfusion",
+      "transfusion reaction",
+      "priority"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "nclex-rn-pharmacological-therapies-0015",
+    "certId": "nclex-rn",
+    "subjectId": "physiological-integrity",
+    "chapterId": "pharmacological-therapies",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "An adult family member is staying with a client who uses a patient-controlled analgesia (PCA) pump after surgery. Which statement by the family member requires follow-up by the nurse?",
+    "choices": [
+      "\"The pump has a lockout, so she can't get more than the set amount.\"",
+      "\"I'll call the nurse if she seems very hard to wake up.\"",
+      "\"I'll press the button for my mother while she sleeps so she doesn't wake up in pain.\"",
+      "\"She should press the button when she starts to feel pain coming on.\""
+    ],
+    "answer": 3,
+    "oneLineConcept": "Only the client presses the PCA button (no PCA by proxy)",
+    "explanation": "A PCA pump is safe because of a simple rule: **only the client presses the button**. If the client becomes too sleepy from the medicine, they stop pressing it, and the dose stops. When a family member presses the button for a sleeping client (called \"PCA by proxy\"), this safety check is lost, and the client can get too much opioid and stop breathing well.\n\nThe nurse explains this to the family and reinforces it.\n\n**Wrong choices** (these statements are correct, so they need no follow-up)\n- \"Press when pain starts coming on\": correct. Treating pain early works better.\n- \"The pump has a lockout\": correct. The pump limits how often and how much can be given, though this does not make proxy pressing safe.\n- \"Call the nurse if she is hard to wake\": correct. Heavy sleepiness is an early warning sign.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "pain management",
+      "PCA",
+      "family teaching"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "nclex-rn-pharmacological-therapies-0016",
+    "certId": "nclex-rn",
+    "subjectId": "physiological-integrity",
+    "chapterId": "pharmacological-therapies",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A heparin infusion is prescribed at 1,000 units per hour. The bag contains heparin 25,000 units in 250 mL of D5W. At what rate should the nurse set the infusion pump?",
+    "choices": [
+      "4 mL/hour",
+      "25 mL/hour",
+      "10 mL/hour",
+      "40 mL/hour"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Find concentration, then rate = dose per hour ÷ units per mL",
+    "explanation": "Work out how many units are in each milliliter, then find how many milliliters give 1,000 units.\n\n1. Concentration: 25,000 units ÷ 250 mL = **100 units per mL**.\n2. Rate: 1,000 units/hour ÷ 100 units/mL = **10 mL/hour**.\n\nCheck: 10 mL/hour × 100 units/mL = 1,000 units/hour. Correct.\n\nHeparin is a **high-alert** drug, so it always runs on an infusion pump, and many facilities require a second nurse to check the calculation and pump settings.\n\n**Wrong choices**\n- \"4 mL/hour\": this comes from dividing 1,000 by 250, mixing up units and volume.\n- \"25 mL/hour\": this would give 2,500 units per hour, more than twice the dose.\n- \"40 mL/hour\": this would give 4,000 units per hour, a dangerous overdose.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "dosage calculation",
+      "heparin",
+      "IV therapy"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "nclex-rn-pharmacological-therapies-0017",
+    "certId": "nclex-rn",
+    "subjectId": "physiological-integrity",
+    "chapterId": "pharmacological-therapies",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Enoxaparin 1 mg/kg subcutaneously every 12 hours is prescribed for a client who weighs 154 lb. The enoxaparin is supplied in a prefilled syringe of 80 mg/0.8 mL. How many milliliters should the nurse give?",
+    "choices": [
+      "0.8 mL",
+      "0.56 mL",
+      "1.54 mL",
+      "0.7 mL"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Convert lb to kg (÷2.2), then dose ÷ concentration",
+    "explanation": "This is a weight-based dose, so first change pounds to kilograms.\n\n1. 154 lb ÷ 2.2 = **70 kg**\n2. Dose: 1 mg/kg × 70 kg = **70 mg**\n3. Concentration: 80 mg ÷ 0.8 mL = 100 mg per mL\n4. Volume: 70 mg ÷ 100 mg/mL = **0.7 mL**\n\nThe nurse expels the extra 0.1 mL from the prefilled syringe before giving the injection, following the product directions.\n\n**Wrong choices**\n- \"0.56 mL\": this comes from multiplying 0.7 by 0.8 by mistake.\n- \"0.8 mL\": this is the whole syringe, 80 mg, which is more than ordered.\n- \"1.54 mL\": this uses the weight in pounds instead of kilograms (154 mg), more than double the dose.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "dosage calculation",
+      "weight-based dosing",
+      "anticoagulants"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "nclex-rn-pharmacological-therapies-0018",
+    "certId": "nclex-rn",
+    "subjectId": "physiological-integrity",
+    "chapterId": "pharmacological-therapies",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A client is prescribed insulin glargine 20 units and insulin lispro 6 units, both due now by subcutaneous injection. How should the nurse give these insulins?",
+    "choices": [
+      "Mix both in the same syringe and give them by IV push",
+      "Give them as two separate injections",
+      "Draw up the glargine first, then the lispro, in the same syringe",
+      "Draw up the lispro first, then the glargine, in the same syringe"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Insulin glargine is never mixed with other insulins",
+    "explanation": "Insulin **glargine** is a long-acting insulin designed to release slowly over about 24 hours. It must **not be mixed** with any other insulin in the same syringe, because mixing can change how it is absorbed. So glargine and lispro are given as **two separate injections**.\n\nThe \"clear before cloudy\" rule (draw regular insulin before NPH) applies only to insulins that are allowed to be mixed, such as regular insulin and NPH. Glargine is clear but still cannot be mixed.\n\n**Wrong choices**\n- \"Lispro first, then glargine, same syringe\": this mixes glargine, which is not allowed.\n- \"Glargine first, then lispro, same syringe\": same problem; the order does not make it safe.\n- \"IV push\": the order is for subcutaneous injection. Glargine is not given IV.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "insulin",
+      "high-alert drugs",
+      "medication administration"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "nclex-rn-pharmacological-therapies-0019",
+    "certId": "nclex-rn",
+    "subjectId": "physiological-integrity",
+    "chapterId": "pharmacological-therapies",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A client with chest pain has a new prescription for sublingual nitroglycerin. Which information should make the nurse hold the dose and notify the provider?",
+    "choices": [
+      "The client took sildenafil 12 hours ago",
+      "Blood pressure is 132/80 mm Hg",
+      "The client had a headache after a previous nitroglycerin dose",
+      "Heart rate is 88 beats per minute"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Nitrates + PDE-5 inhibitors (e.g., sildenafil) can crash the BP",
+    "explanation": "Sildenafil (and similar drugs such as tadalafil) are **PDE-5 inhibitors**, used for erectile dysfunction and some lung conditions. Both they and nitroglycerin widen blood vessels. Taken close together, they can cause a **sudden, severe drop in blood pressure**. Nitrates are generally avoided within **24 hours** of sildenafil (and longer, about 48 hours, for tadalafil). The nurse holds the nitroglycerin and tells the provider, who will choose another treatment for the chest pain.\n\n**Wrong choices**\n- \"132/80 mm Hg\": an acceptable blood pressure for giving nitroglycerin.\n- \"Headache after a previous dose\": a common, expected side effect, not a reason to hold.\n- \"Heart rate 88\": normal.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "nitroglycerin",
+      "drug interactions",
+      "cardiac"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+]

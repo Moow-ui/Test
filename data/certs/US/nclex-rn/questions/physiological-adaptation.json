@@ -1,0 +1,725 @@
+[
+  {
+    "id": "nclex-rn-physiological-adaptation-0001",
+    "certId": "nclex-rn",
+    "subjectId": "physiological-integrity",
+    "chapterId": "physiological-adaptation",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A client with type 1 diabetes reports feeling shaky and sweaty. The fingerstick glucose is 58 mg/dL. The client is awake and able to swallow. What should the nurse do first?",
+    "choices": [
+      "Give glucagon by injection",
+      "Give 50% dextrose by IV push",
+      "Give 15 grams of a fast-acting carbohydrate, such as 4 ounces of fruit juice",
+      "Recheck the glucose in 1 hour"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Awake hypoglycemic client: 15 g fast carbs, recheck in 15 min",
+    "explanation": "A glucose below 70 mg/dL is **hypoglycemia** (low blood sugar). For a client who is **awake and can swallow**, the first step is the \"**15-15 rule**\":\n1. Give about **15 grams of fast-acting carbohydrate** (for example, 4 ounces of juice or regular soda, or glucose tablets).\n2. Recheck the glucose in **15 minutes**.\n3. Repeat if it is still low. Once it is normal, give a snack or meal if the next meal is not soon.\n\n**Wrong choices**\n- \"50% dextrose IV\": used when the client cannot swallow safely or is unconscious and has IV access.\n- \"Glucagon injection\": used when the client cannot swallow and there is no IV access.\n- \"Recheck in 1 hour\": waiting without treatment lets the sugar drop further and can lead to seizures or loss of consciousness.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "hypoglycemia",
+      "diabetes",
+      "priority"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "nclex-rn-physiological-adaptation-0002",
+    "certId": "nclex-rn",
+    "subjectId": "physiological-integrity",
+    "chapterId": "physiological-adaptation",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A client's serum potassium is 6.8 mEq/L (reference range 3.5 to 5.0 mEq/L). Which change on the heart monitor does the nurse expect?",
+    "choices": [
+      "Sawtooth flutter waves",
+      "A completely irregular rhythm with no P waves",
+      "Tall, peaked T waves",
+      "Prominent U waves"
+    ],
+    "answer": 3,
+    "oneLineConcept": "High potassium → tall peaked T waves; low potassium → U waves",
+    "explanation": "Potassium affects the electrical activity of the heart. When potassium is **high (hyperkalemia)**, an early and well-known ECG sign is **tall, narrow, peaked T waves**. As the level rises higher, the P waves flatten, the QRS widens, and dangerous rhythms or cardiac arrest can occur.\n\nWhen potassium is **low (hypokalemia)**, the T waves flatten and **U waves** may appear.\n\n**Wrong choices**\n- \"Prominent U waves\": a sign of low potassium, the opposite problem.\n- \"Sawtooth flutter waves\": describes atrial flutter, not a potassium change.\n- \"Irregular rhythm with no P waves\": describes atrial fibrillation, not the classic sign of high potassium.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "electrolytes",
+      "potassium",
+      "ECG"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "nclex-rn-physiological-adaptation-0003",
+    "certId": "nclex-rn",
+    "subjectId": "physiological-integrity",
+    "chapterId": "physiological-adaptation",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A client is brought to the emergency department with sudden weakness of the left arm and a drooping face. Which information is most important for the nurse to obtain right away?",
+    "choices": [
+      "The time the client was last known to be normal",
+      "The date of the client's last flu vaccine",
+      "The client's usual diet",
+      "Whether any family members have had a stroke"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Stroke: find out when the client was last known well",
+    "explanation": "Sudden one-sided weakness and facial droop are signs of a **stroke**. For an ischemic stroke (caused by a clot), clot-dissolving medicine and clot-removal procedures can only be used within certain **time windows**. Treatment decisions start from **the time the client was last known to be normal** (\"last known well\"). If the client woke up with symptoms, the last known well time is when they went to sleep.\n\nThe nurse also checks the blood glucose quickly, since low blood sugar can look like a stroke.\n\n**Wrong choices**\n- \"Usual diet\": useful later, but it does not guide emergency treatment.\n- \"Family history of stroke\": a risk factor, but it does not change what is done right now.\n- \"Last flu vaccine\": not related to emergency stroke care.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "stroke",
+      "emergency",
+      "neurological"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "nclex-rn-physiological-adaptation-0004",
+    "certId": "nclex-rn",
+    "subjectId": "physiological-integrity",
+    "chapterId": "physiological-adaptation",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "An adult has burns to the entire front and back of both legs. Using the rule of nines, what percentage of total body surface area is burned?",
+    "choices": [
+      "36%",
+      "27%",
+      "45%",
+      "18%"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Rule of nines: each whole leg is 18% of the body",
+    "explanation": "The **rule of nines** quickly estimates how much skin is burned in an adult. The body is divided into areas worth about 9% or multiples of 9%:\n- Head and neck: 9%\n- Each arm: 9%\n- Front of the trunk: 18%; back of the trunk: 18%\n- **Each leg (front and back): 18%**\n- Groin area: 1%\n\nBoth whole legs: 18% + 18% = **36%**.\n\n**Wrong choices**\n- \"18%\": this is only one whole leg, or the front of both legs.\n- \"27%\": does not match any combination of whole legs.\n- \"45%\": too high; this would include more than both legs.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "burns",
+      "rule of nines"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "nclex-rn-physiological-adaptation-0005",
+    "certId": "nclex-rn",
+    "subjectId": "physiological-integrity",
+    "chapterId": "physiological-adaptation",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which finding should the nurse expect in a client with a low serum calcium level (hypocalcemia)?",
+    "choices": [
+      "Twitching of the face when the cheek in front of the ear is tapped",
+      "Muscle weakness with decreased reflexes",
+      "Constipation with very high thirst",
+      "Slow, deep reflexes and drowsiness"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Hypocalcemia: tingling, twitching, positive Chvostek sign",
+    "explanation": "Calcium helps keep nerves and muscles calm. When calcium is **low**, nerves become **over-excited**. Signs include tingling around the mouth and fingers, muscle cramps, and spasms. Two classic tests:\n- **Chvostek sign**: tapping the cheek in front of the ear makes the face twitch.\n- **Trousseau sign**: inflating a blood pressure cuff on the arm causes a hand spasm.\n\n**Wrong choices**\n- \"Muscle weakness with decreased reflexes\": fits **high** calcium, when nerves are slowed down.\n- \"Constipation with high thirst\": also fits high calcium.\n- \"Slow reflexes and drowsiness\": fits high calcium or high magnesium, not low calcium.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "electrolytes",
+      "calcium",
+      "assessment"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "nclex-rn-physiological-adaptation-0006",
+    "certId": "nclex-rn",
+    "subjectId": "physiological-integrity",
+    "chapterId": "physiological-adaptation",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which finding most directly points to left-sided heart failure?",
+    "choices": [
+      "Fluid in the abdomen (ascites)",
+      "Swelling of the ankles",
+      "Crackles in the lungs with shortness of breath",
+      "An enlarged liver"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Left-sided failure backs up into the lungs; right-sided into the body",
+    "explanation": "Think of where the blood backs up.\n- The **left** side of the heart receives blood from the **lungs**. When it fails, blood backs up into the lungs: **crackles**, shortness of breath, cough, and trouble breathing when lying flat.\n- The **right** side receives blood from the **body**. When it fails, blood backs up into the body: ankle swelling, enlarged liver, fluid in the abdomen, and swollen neck veins.\n\nMany clients have both, but crackles are the sign most directly linked to the left side.\n\n**Wrong choices**\n- \"Swelling of the ankles\": a sign of right-sided failure.\n- \"Enlarged liver\": a sign of right-sided failure.\n- \"Ascites\": a sign of right-sided failure.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "heart failure",
+      "cardiac",
+      "assessment"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "nclex-rn-physiological-adaptation-0007",
+    "certId": "nclex-rn",
+    "subjectId": "physiological-integrity",
+    "chapterId": "physiological-adaptation",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A client who received a large dose of opioid has these arterial blood gas results:\n\n- pH 7.30 (normal 7.35 to 7.45)\n- PaCO₂ 55 mm Hg (normal 35 to 45)\n- HCO₃⁻ 25 mEq/L (normal 22 to 26)\n\nHow should the nurse interpret these results?",
+    "choices": [
+      "Respiratory alkalosis",
+      "Respiratory acidosis",
+      "Metabolic alkalosis",
+      "Metabolic acidosis"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Low pH + high CO2 + normal HCO3 = uncompensated respiratory acidosis",
+    "explanation": "Read the blood gas in steps.\n1. **pH 7.30** is low → **acidosis**.\n2. **PaCO₂ 55** is high. CO₂ acts like an acid, and high CO₂ matches the low pH → the cause is **respiratory**.\n3. **HCO₃⁻ 25** is normal → the kidneys have not yet compensated.\n\nResult: **respiratory acidosis** (uncompensated). This fits the story: opioids slow breathing, so CO₂ builds up in the blood.\n\n**Wrong choices**\n- \"Respiratory alkalosis\": would have a high pH and low CO₂, as with fast breathing.\n- \"Metabolic acidosis\": would have a low pH with a **low** bicarbonate.\n- \"Metabolic alkalosis\": would have a high pH with a **high** bicarbonate.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "acid-base",
+      "ABG",
+      "respiratory"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "nclex-rn-physiological-adaptation-0008",
+    "certId": "nclex-rn",
+    "subjectId": "physiological-integrity",
+    "chapterId": "physiological-adaptation",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A client with diabetic ketoacidosis (DKA) is receiving a continuous IV regular insulin infusion. Which lab value must the nurse monitor most closely during this treatment?",
+    "choices": [
+      "Serum albumin",
+      "Serum potassium",
+      "Serum calcium",
+      "Hemoglobin"
+    ],
+    "answer": 2,
+    "oneLineConcept": "IV insulin drives potassium into cells; watch K+ closely in DKA",
+    "explanation": "Insulin moves glucose **and potassium** from the blood into the cells. In DKA, the blood potassium may look normal or even high at first, but the body's total potassium is often low. Once IV insulin starts, potassium moves into the cells quickly and the blood level can **drop fast**. Low potassium can cause dangerous heart rhythms.\n\nSo potassium is checked often (as ordered), the client is usually on a heart monitor, and potassium is added to the IV fluids when needed. Blood glucose is also checked often.\n\n**Wrong choices**\n- \"Serum calcium\": not the key electrolyte affected by insulin therapy.\n- \"Hemoglobin\": not directly changed by insulin.\n- \"Serum albumin\": a nutrition and liver marker that changes slowly; not the focus during DKA treatment.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "DKA",
+      "potassium",
+      "insulin"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "nclex-rn-physiological-adaptation-0009",
+    "certId": "nclex-rn",
+    "subjectId": "physiological-integrity",
+    "chapterId": "physiological-adaptation",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A client with pneumonia has a temperature of 101.8°F (38.8°C), heart rate 118, respiratory rate 26, blood pressure 96/58 mm Hg, and new confusion. The provider suspects sepsis and prescribes several orders, including an IV antibiotic. Which order should be completed before the first antibiotic dose is given, as long as it does not cause a delay?",
+    "choices": [
+      "Insert an indwelling urinary catheter",
+      "Obtain a chest X-ray",
+      "Draw blood cultures",
+      "Collect a stool sample"
+    ],
+    "answer": 3,
+    "oneLineConcept": "In sepsis, draw blood cultures before the first antibiotic",
+    "explanation": "In sepsis, the body has a severe reaction to an infection, which can damage organs and lower blood pressure. Treatment must start quickly. **Blood cultures** are drawn **before the first antibiotic** whenever this can be done without delaying the antibiotic. If the antibiotic is given first, it may kill some bacteria in the sample, and the lab may not be able to identify the germ. Knowing the germ helps the provider choose the best antibiotic later.\n\n**Wrong choices**\n- \"Chest X-ray\": helpful, but the antibiotic should not wait for it, and it is not affected by the antibiotic.\n- \"Urinary catheter\": may help measure urine output, but it is not needed before the antibiotic.\n- \"Stool sample\": not related to this client's suspected source (pneumonia).",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "sepsis",
+      "infection",
+      "priority"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "nclex-rn-physiological-adaptation-0010",
+    "certId": "nclex-rn",
+    "subjectId": "physiological-integrity",
+    "chapterId": "physiological-adaptation",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "The heart monitor of a client shows an irregularly irregular rhythm with no clear P waves and a ventricular rate of about 110 beats per minute. The QRS complexes are narrow. Which rhythm does the nurse identify?",
+    "choices": [
+      "Atrial fibrillation",
+      "Atrial flutter",
+      "Sinus tachycardia",
+      "Ventricular tachycardia"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Irregularly irregular + no P waves = atrial fibrillation",
+    "explanation": "In **atrial fibrillation (AFib)**, the upper chambers quiver instead of beating. On the monitor, this shows as:\n- **No clear P waves** (often a wavy baseline instead)\n- An **irregularly irregular** rhythm (no pattern in the spacing of beats)\n- Usually narrow QRS complexes\n\nAFib raises the risk of **stroke**, because blood can pool and clot in the quivering atria.\n\n**Wrong choices**\n- \"Atrial flutter\": shows regular **sawtooth** waves between QRS complexes, and the rhythm is often regular.\n- \"Sinus tachycardia\": a fast but **regular** rhythm with a normal P wave before every QRS.\n- \"Ventricular tachycardia\": a fast rhythm with **wide** QRS complexes.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "dysrhythmias",
+      "ECG",
+      "cardiac"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "nclex-rn-physiological-adaptation-0011",
+    "certId": "nclex-rn",
+    "subjectId": "physiological-integrity",
+    "chapterId": "physiological-adaptation",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A client's serum sodium is 124 mEq/L (reference range 135 to 145 mEq/L). The client is mildly confused. Which action is the priority for the nurse?",
+    "choices": [
+      "Start seizure precautions",
+      "Encourage the client to walk in the hallway alone",
+      "Provide a low-sodium diet",
+      "Encourage the client to drink extra water"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Low sodium can swell the brain; protect against seizures",
+    "explanation": "Low sodium (**hyponatremia**) lets water move into brain cells, causing them to swell. Early signs include headache, nausea, and confusion. As sodium drops further, the client can have **seizures**. Because this client is already confused, **seizure precautions** and safety measures come first, while the provider treats the cause (often with fluid restriction or specific IV fluids).\n\n**Wrong choices**\n- \"Drink extra water\": extra water dilutes the sodium even more.\n- \"Low-sodium diet\": would lower the sodium further.\n- \"Walk alone\": a confused client is at risk of falling and could have a seizure while walking.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "electrolytes",
+      "sodium",
+      "safety"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "nclex-rn-physiological-adaptation-0012",
+    "certId": "nclex-rn",
+    "subjectId": "physiological-integrity",
+    "chapterId": "physiological-adaptation",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A client in the emergency department is having a severe asthma attack. Which finding suggests the client's condition is getting worse?",
+    "choices": [
+      "Wheezing can no longer be heard, and the client is too short of breath to speak",
+      "Wheezing is heard only when breathing out after an inhaler treatment",
+      "Respiratory rate has decreased from 28 to 20 breaths per minute, and the client is talking in full sentences",
+      "Peak flow has improved compared with arrival"
+    ],
+    "answer": 1,
+    "oneLineConcept": "A 'silent chest' in asthma means very little air is moving",
+    "explanation": "Wheezing is the sound of air moving through narrowed airways. If the wheezing **stops** while the client still looks very short of breath, it can mean the airways are so tight that **almost no air is moving**. This \"**silent chest**\" is an emergency sign that the client may soon stop breathing. Being unable to speak, confusion, and falling oxygen levels are other warning signs.\n\n**Wrong choices**\n- \"Wheezing only on breathing out after an inhaler\": a sign of improvement; the airways are opening.\n- \"Peak flow improved\": means more air is moving.\n- \"RR down to 20 and speaking in full sentences\": a sign of improvement, not fatigue, because the client can talk easily.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "respiratory distress",
+      "asthma",
+      "assessment"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "nclex-rn-physiological-adaptation-0013",
+    "certId": "nclex-rn",
+    "subjectId": "physiological-integrity",
+    "chapterId": "physiological-adaptation",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "The nurse finds a client unresponsive with no pulse. The heart monitor shows a fast, regular rhythm with wide QRS complexes and no visible P waves. CPR has been started and a defibrillator is in the room. Which treatment is indicated for this rhythm?",
+    "choices": [
+      "Synchronized cardioversion",
+      "IV atropine",
+      "IV adenosine",
+      "Defibrillation (unsynchronized shock)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Pulseless ventricular tachycardia is treated with defibrillation",
+    "explanation": "A fast, regular rhythm with **wide QRS complexes** is **ventricular tachycardia (VT)**. Because the client has **no pulse**, this is **pulseless VT**, a form of cardiac arrest. Pulseless VT and ventricular fibrillation are the two \"shockable\" rhythms. Treatment is high-quality CPR and **defibrillation** (an unsynchronized shock) as soon as possible.\n\n**Wrong choices**\n- \"Synchronized cardioversion\": used for VT **with a pulse** when the client is unstable. The shock is timed to the QRS, but in pulseless VT there is no time to wait.\n- \"IV adenosine\": used for certain fast narrow-complex rhythms (such as SVT) in a client with a pulse.\n- \"IV atropine\": used for slow heart rates with a pulse, not for cardiac arrest from VT.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "dysrhythmias",
+      "cardiac arrest",
+      "emergency"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "nclex-rn-physiological-adaptation-0014",
+    "certId": "nclex-rn",
+    "subjectId": "physiological-integrity",
+    "chapterId": "physiological-adaptation",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "An adult who weighs 80 kg has burns over 30% of total body surface area. The provider orders IV lactated Ringer's using the formula 4 mL × kg × %TBSA over 24 hours, with half of the total given in the first 8 hours after the burn. What hourly rate should the nurse run during the first 8 hours?",
+    "choices": [
+      "600 mL/hour",
+      "400 mL/hour",
+      "300 mL/hour",
+      "1,200 mL/hour"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Fluid formula: total, take half, divide by 8 hours",
+    "explanation": "Follow the formula in the order.\n\n1. Total for 24 hours: 4 mL × 80 kg × 30 = **9,600 mL**\n2. Half in the first 8 hours: 9,600 ÷ 2 = **4,800 mL**\n3. Hourly rate: 4,800 mL ÷ 8 hours = **600 mL/hour**\n\nThe 8 hours are counted from the **time of the burn**, not from arrival at the hospital. The nurse then adjusts fluids as ordered based on urine output and vital signs.\n\n**Wrong choices**\n- \"300 mL/hour\": half of the correct rate; it divides the 8-hour amount by 16 hours.\n- \"400 mL/hour\": the full 24-hour total spread evenly over 24 hours; it ignores the \"half in 8 hours\" part.\n- \"1,200 mL/hour\": the full total divided by 8 hours; it gives twice the ordered rate.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "burns",
+      "fluid resuscitation",
+      "dosage calculation"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "nclex-rn-physiological-adaptation-0015",
+    "certId": "nclex-rn",
+    "subjectId": "physiological-integrity",
+    "chapterId": "physiological-adaptation",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A client has been vomiting for 3 days. The arterial blood gas results are:\n\n- pH 7.50 (normal 7.35 to 7.45)\n- PaCO₂ 47 mm Hg (normal 35 to 45)\n- HCO₃⁻ 34 mEq/L (normal 22 to 26)\n\nHow should the nurse interpret these results?",
+    "choices": [
+      "Respiratory acidosis, fully compensated",
+      "Metabolic acidosis, uncompensated",
+      "Metabolic alkalosis, partially compensated",
+      "Respiratory alkalosis, partially compensated"
+    ],
+    "answer": 3,
+    "oneLineConcept": "High pH, high HCO3, high CO2: partly compensated metabolic alkalosis",
+    "explanation": "Read the blood gas in steps.\n1. **pH 7.50** is high → **alkalosis**.\n2. **HCO₃⁻ 34** is high. Bicarbonate is a base, and high base matches the high pH → the cause is **metabolic**. This fits the story: vomiting removes stomach acid.\n3. **PaCO₂ 47** is also high. The lungs are slowing breathing to hold on to CO₂ (an acid) to bring the pH back down. This is compensation.\n4. The pH is still outside the normal range → **partially** compensated.\n\n**Wrong choices**\n- \"Respiratory acidosis, fully compensated\": the pH would be normal or low-normal, not 7.50.\n- \"Metabolic acidosis, uncompensated\": the pH would be low with low bicarbonate.\n- \"Respiratory alkalosis, partially compensated\": the PaCO₂ would be low, not high.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "acid-base",
+      "ABG",
+      "fluid and electrolytes"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "nclex-rn-physiological-adaptation-0016",
+    "certId": "nclex-rn",
+    "subjectId": "physiological-integrity",
+    "chapterId": "physiological-adaptation",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A client admitted with a head injury is being monitored closely. Which set of findings is most important for the nurse to report immediately as a sign of rising intracranial pressure?",
+    "choices": [
+      "BP 98/62 mm Hg, HR 116, and RR 24",
+      "BP 124/78 mm Hg, HR 92, and RR 20 with a headache rated 4 out of 10",
+      "BP 172/58 mm Hg, HR 50, and irregular breathing",
+      "BP 136/84 mm Hg, HR 82, and RR 18"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Cushing triad: widening pulse pressure, slow HR, irregular breathing",
+    "explanation": "When pressure inside the skull rises, the brain stem is squeezed. A late, very serious sign is the **Cushing triad**:\n1. **Rising systolic blood pressure with a widening pulse pressure** (172/58: the gap between top and bottom numbers is 114)\n2. **Slow heart rate** (bradycardia, here 50)\n3. **Irregular breathing**\n\nThis means the brain may be about to herniate. The nurse reports it at once. Earlier signs to watch for include a change in level of consciousness, restlessness, and pupil changes.\n\n**Wrong choices**\n- \"98/62, HR 116, RR 24\": low BP with fast heart rate suggests shock (such as bleeding), not rising intracranial pressure.\n- \"136/84, HR 82, RR 18\": within acceptable ranges.\n- \"124/78, HR 92, RR 20, mild headache\": a mild headache is expected after a head injury; the vital signs are stable.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "increased intracranial pressure",
+      "neurological",
+      "vital signs"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "nclex-rn-physiological-adaptation-0017",
+    "certId": "nclex-rn",
+    "subjectId": "physiological-integrity",
+    "chapterId": "physiological-adaptation",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A nurse finds a client unresponsive in bed. The client is not breathing normally and has no carotid pulse. The nurse calls for help and starts chest compressions. When the defibrillator pads are placed, the monitor shows the strip below. What should the nurse do next?",
+    "choices": [
+      "Perform synchronized cardioversion",
+      "Deliver an unsynchronized shock (defibrillation) as soon as possible",
+      "Give amiodarone 300 mg IV push before any shock",
+      "Give atropine 1 mg IV push"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Pulseless client + ventricular fibrillation = defibrillate right away",
+    "explanation": "The strip shows **ventricular fibrillation (VF)**: fast, chaotic waves of different sizes with no P waves and no QRS complexes. The heart is only quivering, so it pumps no blood. That is why the client has no pulse.\n\nVF is a **shockable rhythm** (VF and pulseless ventricular tachycardia are the two shockable rhythms in adult cardiac arrest). The most important treatment is an **unsynchronized shock (defibrillation)** as soon as the defibrillator is ready. Keep doing high-quality CPR until the moment of the shock, then restart CPR right away for 2 minutes before the next rhythm check. Every minute without a shock lowers the chance of survival.\n\n**Wrong choices**\n- *Synchronized cardioversion*: the machine waits for a QRS complex to time the shock. VF has no QRS, so the shock may never fire. Cardioversion is for unstable rhythms that still have a pulse.\n- *Amiodarone before any shock*: amiodarone is given only for VF that continues after shocks (shock-refractory VF). It never replaces or delays the first shock.\n- *Atropine*: atropine treats a slow heart rate (bradycardia) with a pulse. It has no role in VF.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "ECG",
+      "ventricular fibrillation",
+      "cardiac arrest",
+      "defibrillation",
+      "ACLS"
+    ],
+    "image": "ecg-strip-vf.svg",
+    "imageAlt": "Lead II rhythm strip, about 5 seconds on ECG grid paper. The line is made of fast, chaotic up-and-down waves of changing size and shape. There are no P waves, no QRS complexes and no flat baseline.",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "nclex-rn-physiological-adaptation-0018",
+    "certId": "nclex-rn",
+    "subjectId": "physiological-integrity",
+    "chapterId": "physiological-adaptation",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A client in cardiac arrest is receiving high-quality CPR. At the rhythm check, the monitor shows the strip below. The nurse confirms the leads and pads are connected, the gain (size setting) is turned up, and the same picture appears in a second lead. The client still has no pulse and IV access is in place. Which action should the nurse anticipate next?",
+    "choices": [
+      "Deliver an unsynchronized shock at the highest energy setting",
+      "Begin transcutaneous pacing",
+      "Continue high-quality CPR and give epinephrine 1 mg IV as soon as possible",
+      "Give atropine 1 mg IV push"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Asystole is not shockable: CPR plus epinephrine as soon as possible",
+    "explanation": "The strip shows **asystole**: a nearly flat line with no P waves and no QRS complexes. The heart has no electrical activity. Because the nurse already checked the leads, the gain and a second lead, this is a true flat line and not a loose wire.\n\nAsystole is a **non-shockable rhythm**. Treatment in current adult cardiac arrest guidelines:\n1. Continue high-quality CPR with as few pauses as possible.\n2. Give **epinephrine 1 mg IV/IO as soon as possible**, then every 3 to 5 minutes.\n3. Check the rhythm every 2 minutes and look for reversible causes (the \"H's and T's\", such as low oxygen, low blood volume or high potassium).\n\n**Wrong choices**\n- *Unsynchronized shock*: a shock works by resetting chaotic electrical activity (VF or pulseless VT). In asystole there is no activity to reset, so a shock does not help and interrupts CPR.\n- *Transcutaneous pacing*: pacing is used for symptomatic slow rhythms with a pulse. It is not recommended for asystole in cardiac arrest.\n- *Atropine*: atropine is used for symptomatic bradycardia with a pulse. It was removed from the cardiac arrest steps because it did not improve survival.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "ECG",
+      "asystole",
+      "cardiac arrest",
+      "epinephrine",
+      "ACLS"
+    ],
+    "image": "ecg-strip-asystole.svg",
+    "imageAlt": "Lead II rhythm strip, about 5 seconds on ECG grid paper. The line is almost flat, with only a very slight slow drift and tiny ripples. There are no P waves, no QRS complexes and no other waves.",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "nclex-rn-physiological-adaptation-0019",
+    "certId": "nclex-rn",
+    "subjectId": "physiological-integrity",
+    "chapterId": "physiological-adaptation",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A 72-year-old client reports feeling a \"fluttering\" in the chest. The client is alert, BP is 128/76 mm Hg, and the pulse is irregular at about 90/min. The monitor shows the strip below. Which interpretation and teaching point is correct?",
+    "choices": [
+      "Ventricular tachycardia; prepare the client for immediate defibrillation",
+      "Sinus arrhythmia, a normal variant; no special teaching is needed",
+      "Atrial flutter; teach that cutting down on caffeine is the main treatment",
+      "Atrial fibrillation; teach about taking the prescribed anticoagulant to lower the risk of stroke"
+    ],
+    "answer": 4,
+    "oneLineConcept": "AFib: irregular narrow QRS, no P waves; stroke risk so anticoagulation",
+    "explanation": "The strip shows **atrial fibrillation (AFib)**:\n1. The QRS complexes are narrow, but the space between them changes with no pattern (\"irregularly irregular\").\n2. There are **no P waves**. Instead the baseline between beats is wavy (fibrillatory waves), because the upper chambers (atria) only quiver.\n\nWhen the atria quiver, blood pools and can form a clot. The clot can travel to the brain and cause a **stroke**. That is why many clients with AFib take an anticoagulant (blood thinner). This client is stable (alert, normal BP), so the priority is teaching: take the anticoagulant exactly as prescribed, do not skip doses, report bleeding (black stools, blood in urine, easy bruising), and know the warning signs of stroke.\n\n**Wrong choices**\n- *Ventricular tachycardia*: VT has wide, fast, regular QRS complexes. This strip has narrow QRS complexes, and the client is alert with a pulse, so defibrillation is not indicated.\n- *Sinus arrhythmia*: sinus arrhythmia has a normal P wave before every QRS. This strip has no P waves.\n- *Atrial flutter*: flutter shows regular \"saw-tooth\" waves and usually a regular rate. Also, caffeine reduction is not the main treatment.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "ECG",
+      "atrial fibrillation",
+      "anticoagulation",
+      "stroke prevention",
+      "client teaching"
+    ],
+    "image": "ecg-strip-afib.svg",
+    "imageAlt": "Lead II rhythm strip, about 5 seconds on ECG grid paper. Narrow, tall QRS complexes appear at uneven, unpredictable spacing. Between them the baseline is wavy and uneven, and no clear P wave comes before any QRS complex.",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  }
+]
