@@ -1,0 +1,1065 @@
+[
+  {
+    "id": "home-inspector-nhie-reporting-0001",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "reporting",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A well-written defect statement in a home inspection report should typically include:",
+    "choices": [
+      "A guarantee of the repair cost",
+      "What was found, why it matters, and what should be done next",
+      "Only a photo, with no written comment",
+      "The inspector's opinion of the asking price"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Defect = observation + implication + recommendation",
+    "explanation": "A clear defect statement has three parts: what the inspector saw and where (observation), why it matters (implication), and what to do about it (recommendation, often including who should do it). This helps the client understand and act.\n\n**Wrong choices**\n- Only a photo, with no written comment: Photos help, but the client also needs a description, the reason it matters, and a recommendation.\n- The inspector's opinion of the asking price: Price opinions are outside the inspector's role.\n- A guarantee of the repair cost: Inspectors do not guarantee repair costs.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "report writing",
+      "narratives"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-reporting-0002",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "reporting",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which finding is best classified as a safety hazard rather than routine maintenance?",
+    "choices": [
+      "A missing guard on a second-floor deck",
+      "Peeling paint on exterior trim",
+      "A dripping faucet",
+      "A dirty furnace filter"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Fall hazards are safety issues, not maintenance",
+    "explanation": "Reports often sort findings into safety hazards, major defects, and maintenance items. A missing guard on a raised deck creates a serious fall risk, so it is a safety hazard. Filters, paint, and drips are maintenance or minor repairs.\n\n**Wrong choices**\n- A dirty furnace filter: This is routine maintenance.\n- Peeling paint on exterior trim: This is maintenance unless lead paint is a separate concern.\n- A dripping faucet: This is a minor repair.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "prioritizing",
+      "safety"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-reporting-0003",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "reporting",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "When an inspector finds a likely structural problem beyond the scope of a general inspection, the report should:",
+    "choices": [
+      "Give an exact repair design",
+      "Leave it out to avoid worrying the client",
+      "Recommend evaluation by a qualified specialist, such as a structural engineer",
+      "Promise the problem is minor"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Refer problems beyond scope to qualified specialists",
+    "explanation": "A home inspector is a generalist. When a condition needs deeper evaluation, such as possible structural movement, the report should describe it and recommend evaluation by the right specialist. The inspector should not guess at the cause or the fix.\n\n**Wrong choices**\n- Promise the problem is minor: The inspector cannot know this without further evaluation.\n- Give an exact repair design: Designing repairs is beyond the inspector's role.\n- Leave it out to avoid worrying the client: Hiding findings fails the client.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "referral",
+      "specialists"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-reporting-0004",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "reporting",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "In common inspection standards, a \"material defect\" is generally:",
+    "choices": [
+      "Something the seller already repaired",
+      "A defect only in building materials, not in systems",
+      "Any cosmetic flaw",
+      "A problem that significantly affects the property's value or poses an unreasonable risk to people"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Material defect: significant impact on value or safety",
+    "explanation": "Standards of practice generally define a material defect as a specific problem with a system or component that would have a significant adverse effect on the value of the property, or that poses an unreasonable risk to people. Normal wear and cosmetic items usually are not material defects.\n\n**Wrong choices**\n- Any cosmetic flaw: Cosmetic flaws usually are not material defects.\n- A defect only in building materials, not in systems: The term covers systems and components too.\n- Something the seller already repaired: A completed repair is not a current defect.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "terms",
+      "material defect"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-reporting-0005",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "reporting",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Photos in an inspection report are most useful when they:",
+    "choices": [
+      "Show only the home's best features",
+      "Replace written descriptions entirely",
+      "Clearly show the condition and are matched to the written finding",
+      "Mainly show people at the inspection"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Photos support, not replace, written findings",
+    "explanation": "Good photos show the problem clearly, often with a close-up and a wider shot for location. Each photo should be tied to the written comment so the client knows what they are looking at and what to do.\n\n**Wrong choices**\n- Replace written descriptions entirely: Photos support the text; they do not replace explanation and recommendations.\n- Show only the home's best features: The report is about condition, including problems.\n- Mainly show people at the inspection: People photos do not document conditions.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "photos",
+      "report writing"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-reporting-0006",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "reporting",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "The crawlspace could not be entered because the access was blocked by stored items. The report should:",
+    "choices": [
+      "State it was not inspected, explain why, and recommend inspection once it is accessible",
+      "Describe it as if it were inspected",
+      "Leave the crawlspace out of the report",
+      "Say it is in good condition"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Report what was not inspected and why",
+    "explanation": "Limitations are part of the findings. When an area or system cannot be inspected, the report should say so, explain why (blocked, unsafe, locked, etc.), and recommend inspecting it once the problem is removed. This protects the client and the inspector.\n\n**Wrong choices**\n- Leave the crawlspace out of the report: The client needs to know an area was not inspected.\n- Describe it as if it were inspected: This would be false and misleading.\n- Say it is in good condition: The inspector has no basis for this.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "limitations",
+      "report writing"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-reporting-0007",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "reporting",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which wording is best for a client report?",
+    "choices": [
+      "Ceiling bad.",
+      "Everything is fine; nothing to worry about.",
+      "Possible H2O intrusion of indeterminate etiology.",
+      "Water stains on the kitchen ceiling below the upstairs bathroom; recommend a qualified plumber find the source and repair."
+    ],
+    "answer": 4,
+    "oneLineConcept": "Use plain, specific language with a clear action",
+    "explanation": "Clients are not tradespeople. Good report language is plain, specific about location and condition, and gives a clear next step. Avoid jargon, vague comments, and false reassurance.\n\n**Wrong choices**\n- Ceiling bad.: This is too vague; it does not say where, what, why, or what to do.\n- Possible H2O intrusion of indeterminate etiology.: Jargon makes the finding hard to understand.\n- Everything is fine; nothing to worry about.: This ignores a visible finding.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "report writing",
+      "plain language"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-reporting-0008",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "reporting",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "When a condition is minor and appears stable, an appropriate recommendation may be:",
+    "choices": [
+      "Ignore it and leave it out of the report",
+      "Monitor it and repair if it gets worse",
+      "Tell the buyer to cancel the purchase",
+      "Replace it immediately at any cost"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Minor stable items: monitor and repair as needed",
+    "explanation": "Not every finding needs urgent action. For minor, stable conditions such as small shrinkage cracks, a reasonable recommendation is to monitor and repair if the condition changes. The inspector should still describe it clearly.\n\n**Wrong choices**\n- Replace it immediately at any cost: This overstates a minor issue.\n- Ignore it and leave it out of the report: Minor items should still be reported.\n- Tell the buyer to cancel the purchase: Advising on the purchase decision is not the inspector's role.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "recommendations",
+      "monitor"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-reporting-0009",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "reporting",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What is the main purpose of a summary section in an inspection report?",
+    "choices": [
+      "To highlight the most important findings so the client sees them quickly",
+      "To replace the full report",
+      "To list only cosmetic issues",
+      "To give an estimate of the home's value"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Summaries highlight key findings; full report still governs",
+    "explanation": "Many reports include a summary of the most significant findings, such as safety hazards and major defects. It helps the client focus, but it does not replace the full report, which contains all findings, details, and limitations.\n\n**Wrong choices**\n- To replace the full report: The full report holds details and limitations the client needs.\n- To list only cosmetic issues: The summary focuses on significant items.\n- To give an estimate of the home's value: Value is an appraiser's job.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "report structure",
+      "summary"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-reporting-0010",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "reporting",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "In standards of practice, \"describe\" means to:",
+    "choices": [
+      "Repair the component",
+      "Estimate the cost of a repair",
+      "Guess the exact age of the house",
+      "Report a system or component by its type, material, or other observed features"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Describe = identify type, material, or features",
+    "explanation": "Standards of practice use specific words. \"Describe\" means to report a system or component by its type or other observed characteristics, such as \"asphalt shingle roof\" or \"gas forced-air furnace,\" so the client knows what they have.\n\n**Wrong choices**\n- Estimate the cost of a repair: Cost estimates are not part of \"describe.\"\n- Repair the component: Inspectors do not repair.\n- Guess the exact age of the house: Describing does not mean guessing the age.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "terms",
+      "standards of practice"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-reporting-0011",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "reporting",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A water heater shows rust at the base and is near the end of its typical service life. What is the best report approach?",
+    "choices": [
+      "State that it will fail on a specific date",
+      "Report the condition, recommend budgeting for replacement, and have a plumber evaluate it",
+      "Leave it out because it works today",
+      "Describe it as new"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Aging equipment: report and suggest budgeting",
+    "explanation": "Inspectors cannot predict when equipment will fail, but they can report signs of age and wear. Saying the unit is near the end of its typical life, noting rust, and recommending evaluation and budgeting for replacement helps the client plan.\n\n**Wrong choices**\n- Leave it out because it works today: Working today does not mean it will keep working; the client should know.\n- State that it will fail on a specific date: No one can predict an exact failure date.\n- Describe it as new: This would be false.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "service life",
+      "recommendations"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-reporting-0012",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "reporting",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which item is usually outside the scope of a home inspection report?",
+    "choices": [
+      "Noting that the crawlspace was blocked",
+      "Describing the roof covering",
+      "Estimating the cost of repairs",
+      "Reporting a missing GFCI where it is expected"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Repair cost estimates are outside standard scope",
+    "explanation": "Typical standards of practice do not require inspectors to estimate repair costs. Costs vary with contractors and choices, and estimates can be misleading. Clients should get quotes from qualified contractors.\n\n**Wrong choices**\n- Describing the roof covering: This is typically included.\n- Reporting a missing GFCI where it is expected: This is typically included.\n- Noting that the crawlspace was blocked: Limitations are typically reported.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "scope",
+      "standards of practice"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-reporting-0013",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "reporting",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A ceiling stain reads dry with a moisture meter on inspection day. Which report statement is best?",
+    "choices": [
+      "The leak has been permanently fixed",
+      "Stain was dry at the time of inspection; source not determined; recommend asking the seller about past leaks and monitoring",
+      "There is an active leak",
+      "Stains are cosmetic and never matter"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Dry stain: report facts, don't assume fixed or active",
+    "explanation": "Inspectors report what they observe and test. A dry stain may be from a past, repaired leak or one that only leaks in certain weather. The report should state the facts and recommend sensible next steps, without claiming more than was found.\n\n**Wrong choices**\n- The leak has been permanently fixed: Dry today does not prove a leak was fixed.\n- There is an active leak: The meter shows dry, so this overstates the finding.\n- Stains are cosmetic and never matter: Stains can point to leaks and should be reported.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "moisture",
+      "report writing"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-reporting-0014",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "reporting",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which finding should usually get the highest priority in a report?",
+    "choices": [
+      "Signs of carbon monoxide spillage at a gas water heater",
+      "Worn carpet in a hallway",
+      "Missing caulk at the kitchen backsplash",
+      "A loose cabinet door"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Life-safety issues (like CO) come first",
+    "explanation": "Reports should help clients see what matters most. Life-safety issues like possible carbon monoxide spillage come first, then major defects, then maintenance and cosmetic items.\n\n**Wrong choices**\n- Worn carpet in a hallway: This is cosmetic.\n- A loose cabinet door: This is minor.\n- Missing caulk at the kitchen backsplash: This is minor maintenance.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "prioritizing",
+      "safety",
+      "carbon monoxide"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-reporting-0015",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "reporting",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "An inspector writes: \"GFCI did not trip when tested at the garage receptacle.\" What key part of the defect statement is missing?",
+    "choices": [
+      "The color of the receptacle",
+      "The brand of the panel",
+      "Why it matters and what the client should do",
+      "Nothing; it is complete"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Add the implication and recommendation",
+    "explanation": "The comment gives the observation but not the implication or recommendation. A better version: \"GFCI at the garage receptacle did not trip when tested. This leaves people unprotected from shock. Recommend a licensed electrician repair or replace it.\"\n\n**Wrong choices**\n- The brand of the panel: Panel brand does not help explain this finding.\n- The color of the receptacle: Color is not important here.\n- Nothing; it is complete: It states the observation only, without the implication or recommendation.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "report writing",
+      "narratives"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-reporting-0016",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "reporting",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "An inspector sees an unusual condition and is not sure whether it is a defect. What is the best approach?",
+    "choices": [
+      "Tell the client verbally but leave it out of the report",
+      "Call it a major defect to be safe",
+      "Leave it out because the inspector is unsure",
+      "Report what was seen and recommend evaluation by a qualified specialist"
+    ],
+    "answer": 4,
+    "oneLineConcept": "When unsure: describe and refer",
+    "explanation": "Inspectors are not expected to know everything. When a condition is unclear, the best practice is to describe it objectively in the report and recommend evaluation by the appropriate specialist.\n\n**Wrong choices**\n- Tell the client verbally but leave it out of the report: The written report is the record; verbal-only comments are easily lost or disputed.\n- Leave it out because the inspector is unsure: Uncertainty is a reason to refer, not to omit.\n- Call it a major defect to be safe: Overstating can mislead the client.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "referral",
+      "uncertainty"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-reporting-0017",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "reporting",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which is the best implication statement for a downspout that empties right at the foundation?",
+    "choices": [
+      "Water discharged at the foundation can lead to wet basements or foundation damage",
+      "The gutters look unfinished",
+      "The house will collapse soon",
+      "This is required by all local laws"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Implication explains realistic consequences",
+    "explanation": "The implication tells the client why a finding matters, in realistic terms. Overstating (\"collapse\") or understating (\"looks unfinished\") misleads the client.\n\n**Wrong choices**\n- This is required by all local laws: This is not an implication and is not accurate.\n- The gutters look unfinished: Appearance is not the main issue.\n- The house will collapse soon: This greatly overstates the risk.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "report writing",
+      "implication"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-reporting-0018",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "reporting",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which wording keeps a report objective?",
+    "choices": [
+      "This is the worst deck I have ever seen",
+      "The seller obviously tried to hide this rot",
+      "The builder was careless",
+      "Wood at the base of the deck post is soft when probed"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Report observations, not blame or emotion",
+    "explanation": "Objective writing describes what was observed and tested, without guessing at motives or blaming people. This keeps the report fair, professional, and defensible.\n\n**Wrong choices**\n- The seller obviously tried to hide this rot: This guesses at someone's intent.\n- This is the worst deck I have ever seen: This is opinion and emotion, not observation.\n- The builder was careless: This blames a party rather than describing the condition.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "report writing",
+      "objectivity"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-reporting-0019",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "reporting",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "All of the following belong in a clear defect narrative EXCEPT:",
+    "choices": [
+      "The location of the defect",
+      "A statement blaming the seller for the defect",
+      "Why the defect matters",
+      "A recommended action or type of specialist"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Narratives: location, implication, recommendation — no blame",
+    "explanation": "A good narrative tells where the problem is, what it is, why it matters, and what to do. Blaming a person is not objective and does not help the client.\n\n**Wrong choices**\n- The location of the defect: Location helps the client and contractor find it.\n- Why the defect matters: The implication helps the client understand it.\n- A recommended action or type of specialist: The recommendation tells the client what to do.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "report writing",
+      "narratives"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "home-inspector-nhie-reporting-0020",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "reporting",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Heavy snow covered the roof on inspection day. The report should:",
+    "choices": [
+      "Say the inspector shoveled the roof to finish",
+      "Leave out any mention of the roof",
+      "State that the roof covering could not be fully inspected because of snow and recommend inspection when it is visible",
+      "Report that the roof is in good condition"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Weather limits must be stated in the report",
+    "explanation": "Weather can keep parts of a house from being inspected. Snow-covered roofs, frozen ground, or low temperatures that prevent AC testing should be stated as limitations, with a recommendation to inspect when conditions allow.\n\n**Wrong choices**\n- Report that the roof is in good condition: The inspector could not see the roof, so this would be unsupported.\n- Leave out any mention of the roof: The client needs to know about this limitation.\n- Say the inspector shoveled the roof to finish: Clearing snow from a roof is unsafe and not required.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "limitations",
+      "weather"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-reporting-0021",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "reporting",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A buyer asks which problems to deal with first. Which way of organizing the report helps most?",
+    "choices": [
+      "Listing findings alphabetically",
+      "Grouping findings by safety hazards, major repairs, and maintenance items",
+      "Listing findings by the order in which the inspector walked the house only",
+      "Listing only the cosmetic items"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Group findings by importance",
+    "explanation": "Clients often need to decide quickly. Grouping or marking findings by importance, such as safety, major repair, and maintenance, helps them see what needs attention first.\n\n**Wrong choices**\n- Listing findings by the order in which the inspector walked the house only: This order may bury important items among minor ones.\n- Listing findings alphabetically: Alphabetical order says nothing about importance.\n- Listing only the cosmetic items: Safety and major items matter most.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "prioritizing",
+      "report structure"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-reporting-0022",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "reporting",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Under most standards of practice, the inspector must provide the inspection results as:",
+    "choices": [
+      "A written report",
+      "A verbal walk-through only",
+      "A text message summary only",
+      "A video with no written report"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Standards call for a written report",
+    "explanation": "Standards of practice require a written report that describes the systems and reports deficiencies and limitations. Verbal discussions, texts, and videos may help, but the written report is the official record.\n\n**Wrong choices**\n- A verbal walk-through only: A walk-through is helpful but does not replace the written report.\n- A text message summary only: A short text is not a full report.\n- A video with no written report: Standards call for a written report.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "standards of practice",
+      "written report"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-reporting-0023",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "reporting",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A furnace's burner flames are disturbed when the blower starts. The report should refer the client to:",
+    "choices": [
+      "A roofing contractor",
+      "A pest control company",
+      "A structural engineer",
+      "A qualified HVAC contractor"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Match the referral to the system",
+    "explanation": "Referrals should go to the right trade. Possible heat exchanger problems are evaluated by a qualified HVAC contractor. Matching the specialist to the system helps the client get the right answer quickly.\n\n**Wrong choices**\n- A structural engineer: Structural engineers evaluate framing and foundations, not furnaces.\n- A roofing contractor: Roofers do not service furnaces.\n- A pest control company: Pests are not involved.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "referral",
+      "HVAC"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-reporting-0024",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "reporting",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A 1/8-inch vertical crack with no offset is found in a dry poured concrete foundation wall. Which report statement is best?",
+    "choices": [
+      "Not worth mentioning",
+      "Major structural failure; foundation replacement needed",
+      "Typical shrinkage-type crack with no displacement; recommend sealing to limit water entry and monitoring",
+      "The crack proves the house is sinking"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Report minor cracks accurately, without alarm",
+    "explanation": "Good reporting matches the language to the condition. A small vertical crack with no offset and no water is typical of concrete shrinkage. Stating that, recommending sealing, and suggesting monitoring is accurate without causing needless alarm.\n\n**Wrong choices**\n- Not worth mentioning: Visible cracks should still be reported so the client can monitor them.\n- Major structural failure; foundation replacement needed: This greatly overstates a common, minor crack.\n- The crack proves the house is sinking: A single vertical crack with no offset does not prove settlement.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "report writing",
+      "foundation",
+      "cracks"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-reporting-0025",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "reporting",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Why is report language such as \"the roof will last 10 more years\" risky?",
+    "choices": [
+      "It sounds like a guarantee of future performance, which an inspection cannot provide",
+      "Roofs always fail within 5 years",
+      "Inspectors must give an exact lifespan by law",
+      "Ten years is too short for any roof"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Avoid statements that sound like guarantees",
+    "explanation": "A home inspection reports conditions on the day of the inspection. It is not a warranty. Promising future performance can mislead clients and create liability. Safer language describes age, condition, and typical life ranges, with a recommendation to budget or evaluate.\n\n**Wrong choices**\n- Inspectors must give an exact lifespan by law: Standards do not require exact lifespans.\n- Roofs always fail within 5 years: This is not true.\n- Ten years is too short for any roof: The length is not the issue; the promise is.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "liability",
+      "report writing"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-reporting-0026",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "reporting",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Each of the following is a good reason to recommend evaluation by a specialist EXCEPT:",
+    "choices": [
+      "Suspected backdrafting at a gas appliance",
+      "A burned-out light bulb in a hallway",
+      "Possible structural movement",
+      "Signs of a sewer line problem"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Refer complex or hazardous issues, not simple maintenance",
+    "explanation": "Specialists are needed for conditions that require deeper testing or expertise, such as structural movement, combustion problems, or underground sewer issues. A burned-out bulb is simple maintenance the owner can handle.\n\n**Wrong choices**\n- Possible structural movement: This needs evaluation by a structural professional.\n- Suspected backdrafting at a gas appliance: This needs a qualified HVAC contractor.\n- Signs of a sewer line problem: This needs a plumber, often with a camera.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "referral",
+      "specialists"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "home-inspector-nhie-reporting-0027",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "reporting",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "During the walk-through, the inspector told the client a stain was \"nothing,\" but the written report says \"recommend roofer evaluation.\" What is the best practice?",
+    "choices": [
+      "Treat verbal comments as overriding the report",
+      "Tell the client to ignore the report",
+      "Delete the finding from the report",
+      "Make sure verbal comments match the written report, which is the official record"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Keep verbal comments consistent with the written report",
+    "explanation": "Conflicting messages confuse clients and cause disputes. The written report is the official record of the inspection. Inspectors should make sure what they say on site matches what they write, and correct any mismatch.\n\n**Wrong choices**\n- Treat verbal comments as overriding the report: The written report governs; verbal comments are easily misremembered.\n- Delete the finding from the report: Removing a valid finding fails the client.\n- Tell the client to ignore the report: This undermines the purpose of the report.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "communication",
+      "report writing"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-reporting-0028",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "reporting",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "In one bathroom, the inspector finds stains under the sink, a loose toilet, and a soft floor near the tub. What is the best way to report these?",
+    "choices": [
+      "As no issue, since the fixtures work",
+      "As a structural failure of the whole house",
+      "As signs of possible ongoing leaks and hidden damage, with a recommendation for a plumber to evaluate and repair and for the subfloor to be checked",
+      "As separate cosmetic items"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Connect related findings to show the bigger picture",
+    "explanation": "Several small findings in one area can point to one bigger problem. Here, they suggest water leaking around the fixtures and possibly rotting the subfloor. Reporting them together helps the client understand the real risk.\n\n**Wrong choices**\n- As separate cosmetic items: Together they point to a moisture problem, which is more than cosmetic.\n- As a structural failure of the whole house: This overstates the findings.\n- As no issue, since the fixtures work: Working fixtures can still leak.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "analysis",
+      "moisture",
+      "report writing"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-reporting-0029",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "reporting",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Which recommendation is the most actionable for the client?",
+    "choices": [
+      "Recommend a licensed electrician evaluate and correct the double-tapped breaker in the main panel",
+      "Recommend further evaluation",
+      "Fix as needed",
+      "Recommend that someone check it"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Good recommendations say what, where, and who",
+    "explanation": "An actionable recommendation names the condition, its location, and the type of qualified professional who should handle it. Vague phrases leave the client unsure of the next step.\n\n**Wrong choices**\n- Recommend further evaluation: This does not say what, where, or by whom.\n- Recommend that someone check it: This is too vague to act on.\n- Fix as needed: This gives no clear direction.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "recommendations",
+      "report writing"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-reporting-0030",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "reporting",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "The inspector sees a freshly painted patch on one area of a basement wall. What is the best way to report it?",
+    "choices": [
+      "Leave it out because paint is cosmetic",
+      "State that there is definitely a leak behind the paint",
+      "Scrape off the paint to see what is underneath",
+      "Note the recently painted area, explain it may hide past moisture or cracks, and suggest asking the seller about it"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Report conditions that may conceal defects",
+    "explanation": "Fresh paint, patching, or stored items in one spot can hide past problems. Inspectors cannot remove finishes, but they can report what they see, explain why it may matter, and suggest asking the seller and checking disclosures.\n\n**Wrong choices**\n- State that there is definitely a leak behind the paint: The inspector cannot confirm what is behind the paint.\n- Scrape off the paint to see what is underneath: This is invasive and outside the scope.\n- Leave it out because paint is cosmetic: Fresh patching in a basement can be a clue worth reporting.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "concealment",
+      "report writing"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  }
+]

@@ -1,0 +1,900 @@
+[
+  {
+    "id": "home-inspector-nhie-heating-cooling-0001",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "heating-cooling",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A dirty furnace filter most commonly causes:",
+    "choices": [
+      "Lower electric bills",
+      "Carbon monoxide in the water heater",
+      "Higher airflow through the ducts",
+      "Reduced airflow and lower efficiency"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Dirty filters reduce airflow and efficiency",
+    "explanation": "The filter catches dust before it reaches the blower and coil. A clogged filter restricts airflow, makes the system run longer, can overheat a furnace, and can freeze an AC coil. Changing filters is routine maintenance that inspectors commonly recommend.\n\n**Wrong choices**\n- Higher airflow through the ducts: A dirty filter blocks air; it does not increase it.\n- Lower electric bills: Restricted airflow makes the system work harder, often raising bills.\n- Carbon monoxide in the water heater: The filter has nothing to do with the water heater.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "filter",
+      "maintenance"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-heating-cooling-0002",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "heating-cooling",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A cracked heat exchanger in a gas furnace is a concern mainly because it can:",
+    "choices": [
+      "Let combustion gases, including carbon monoxide, mix with the house air",
+      "Increase the water pressure",
+      "Cause the air conditioner coil to freeze",
+      "Make the furnace run more quietly"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Cracked heat exchanger = carbon monoxide risk",
+    "explanation": "The heat exchanger keeps burner gases separate from the air blown through the house. If it cracks, combustion gases, including carbon monoxide, can enter the living space. Suspected cracks call for evaluation by a qualified HVAC contractor.\n\n**Wrong choices**\n- Cause the air conditioner coil to freeze: Coil freezing is an airflow or refrigerant issue.\n- Make the furnace run more quietly: Noise is not the concern.\n- Increase the water pressure: The heat exchanger has nothing to do with water pressure.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "furnace",
+      "heat exchanger",
+      "carbon monoxide"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-heating-cooling-0003",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "heating-cooling",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A condensing (90%+ efficient) gas furnace typically vents through:",
+    "choices": [
+      "Single-wall metal pipe that ends in the attic",
+      "Plastic pipe, such as PVC, and has a condensate drain",
+      "No vent at all",
+      "A masonry chimney with no liner"
+    ],
+    "answer": 2,
+    "oneLineConcept": "High-efficiency furnaces: plastic vent + condensate drain",
+    "explanation": "Condensing furnaces pull so much heat from the exhaust that water condenses out of it. The cool, wet exhaust is vented through plastic pipe (often PVC) as the maker allows, and the condensate water is drained away. Older, mid-efficiency furnaces vent hot gases through metal vents or chimneys.\n\n**Wrong choices**\n- A masonry chimney with no liner: Condensing furnace exhaust is cool and wet and would damage an unlined chimney.\n- Single-wall metal pipe that ends in the attic: Venting into an attic is never acceptable.\n- No vent at all: All fuel-burning furnaces need venting.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "furnace",
+      "venting",
+      "condensing"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-heating-cooling-0004",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "heating-cooling",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "In heating mode, a heat pump works by:",
+    "choices": [
+      "Using only electric strip heat at all times",
+      "Pumping hot water through the ducts",
+      "Moving heat from the outdoor air into the house using refrigerant",
+      "Burning gas in the outdoor unit"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Heat pumps move heat; they don't burn fuel",
+    "explanation": "A heat pump is an air conditioner that can run in reverse. In heating mode, refrigerant picks up heat from outdoor air (even cold air) and releases it inside. A reversing valve switches between heating and cooling. Electric strips provide backup heat.\n\n**Wrong choices**\n- Using only electric strip heat at all times: Strip heat is backup; the heat pump mainly moves heat with refrigerant.\n- Burning gas in the outdoor unit: Heat pumps do not burn fuel.\n- Pumping hot water through the ducts: Ducts carry air, not water.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "heat pump"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-heating-cooling-0005",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "heating-cooling",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Why does an air conditioner's indoor coil need a condensate drain?",
+    "choices": [
+      "To cool the compressor",
+      "To drain refrigerant",
+      "To clean the air filter",
+      "Cooling pulls water out of the air, and it must be drained away"
+    ],
+    "answer": 4,
+    "oneLineConcept": "AC coils make water that must drain away",
+    "explanation": "Warm, humid air passing over the cold indoor coil gives up moisture, just like a cold glass sweats. This water drips into a pan and runs out a condensate line. A clogged or disconnected line can cause water damage.\n\n**Wrong choices**\n- To drain refrigerant: Refrigerant stays sealed inside the system.\n- To cool the compressor: The compressor is in the outdoor unit.\n- To clean the air filter: The drain has nothing to do with the filter.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "air conditioning",
+      "condensate"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-heating-cooling-0006",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "heating-cooling",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "An AC outdoor condenser is crowded by shrubs and a fence. Why is this a concern?",
+    "choices": [
+      "It keeps the unit from rusting",
+      "It restricts airflow and reduces efficiency",
+      "It is required by codes to hide the unit",
+      "It protects the unit and improves cooling"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Condensers need open space for airflow",
+    "explanation": "The outdoor unit gets rid of the heat removed from the house by blowing air across its coil. Plants, fences, and debris close to the unit restrict this airflow, so it runs hotter and less efficiently. Makers specify clearances; inspectors often recommend trimming back vegetation.\n\n**Wrong choices**\n- It protects the unit and improves cooling: Blocking airflow makes cooling worse.\n- It is required by codes to hide the unit: There is no such general code requirement.\n- It keeps the unit from rusting: Shrubs do not prevent rust.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "air conditioning",
+      "condenser",
+      "clearance"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-heating-cooling-0007",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "heating-cooling",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "During a typical home inspection, how does the inspector check the heating and cooling equipment?",
+    "choices": [
+      "By operating it with normal controls, such as the thermostat",
+      "By adding refrigerant to test the charge",
+      "By adjusting the gas valve pressure",
+      "By taking the furnace apart to see the heat exchanger"
+    ],
+    "answer": 1,
+    "oneLineConcept": "HVAC is tested with normal operating controls",
+    "explanation": "Standards of practice require inspectors to operate heating and cooling systems with normal controls, such as the thermostat, and observe them. Dismantling, adjusting, or servicing equipment is outside the scope and is left to HVAC technicians.\n\n**Wrong choices**\n- By taking the furnace apart to see the heat exchanger: Standards do not require dismantling equipment.\n- By adjusting the gas valve pressure: That is service work, not inspection.\n- By adding refrigerant to test the charge: Charging refrigerant is technician work.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "standards of practice",
+      "HVAC"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-heating-cooling-0008",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "heating-cooling",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Rust and water stains on top of a furnace below an AC coil most likely come from:",
+    "choices": [
+      "The thermostat",
+      "A dirty return air filter alone",
+      "A leaking or clogged condensate drain at the coil",
+      "A leaking gas line"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Rust on furnace below coil = condensate leak",
+    "explanation": "The AC coil sits above the furnace and makes water when cooling. If its drain pan or drain line leaks or clogs, water drips onto the furnace, causing rust and damage to controls and the heat exchanger. Inspectors report it and recommend HVAC service.\n\n**Wrong choices**\n- A leaking gas line: Gas leaks do not leave water stains.\n- A dirty return air filter alone: A filter does not leak water by itself.\n- The thermostat: The thermostat has no water.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "condensate",
+      "furnace",
+      "rust"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-heating-cooling-0009",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "heating-cooling",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A gas furnace should typically have:",
+    "choices": [
+      "A shutoff that can only be reached by cutting into the wall",
+      "A shutoff only at the gas meter",
+      "No shutoff, so it cannot be turned off by accident",
+      "An accessible manual gas shutoff valve near the appliance"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Gas appliances need an accessible shutoff nearby",
+    "explanation": "Each gas appliance typically needs its own manual shutoff valve that is accessible and in the same room, close to the appliance (commonly within 6 feet). This lets the gas be shut off for service or emergencies without turning off the whole house.\n\n**Wrong choices**\n- A shutoff only at the gas meter: A shutoff near the appliance is needed in addition to the meter valve.\n- A shutoff that can only be reached by cutting into the wall: Shutoffs must be accessible.\n- No shutoff, so it cannot be turned off by accident: A shutoff is needed for service and emergencies.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "gas",
+      "shutoff valve"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-heating-cooling-0010",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "heating-cooling",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A natural gas burner flame on a furnace should normally be:",
+    "choices": [
+      "Tall, lazy, and yellow",
+      "Absent while the burner is calling for heat",
+      "Mostly blue and steady",
+      "Bright orange and smoky"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Normal gas flames are blue and steady",
+    "explanation": "A properly adjusted natural gas burner has a crisp, mostly blue flame. Yellow, floating, or smoky flames can mean incomplete combustion, which can produce soot and carbon monoxide. Flame problems should be referred to an HVAC contractor.\n\n**Wrong choices**\n- Tall, lazy, and yellow: Yellow, lazy flames point to poor combustion.\n- Bright orange and smoky: This shows incomplete combustion.\n- Absent while the burner is calling for heat: No flame means the burner is not working.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "furnace",
+      "burner",
+      "combustion"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-heating-cooling-0011",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "heating-cooling",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A heating duct in the attic that has come apart is a concern because:",
+    "choices": [
+      "It matters only in summer",
+      "It increases furnace efficiency",
+      "It improves attic ventilation as required",
+      "Heated or cooled air is lost into the attic and rooms get less airflow"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Disconnected ducts waste conditioned air",
+    "explanation": "When a duct separates in an attic or crawlspace, conditioned air blows into an unconditioned space. Rooms on that run get less heating or cooling, energy is wasted, and in cooling season the moist air can cause condensation. It should be reconnected and sealed.\n\n**Wrong choices**\n- It improves attic ventilation as required: Ducts are not attic vents; disconnected ducts waste energy.\n- It increases furnace efficiency: It lowers system efficiency.\n- It matters only in summer: It wastes energy in both seasons.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "ducts",
+      "distribution"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-heating-cooling-0012",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "heating-cooling",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "On a split-system air conditioner, which refrigerant line is normally insulated?",
+    "choices": [
+      "The larger suction line",
+      "Neither line",
+      "The thermostat wire",
+      "The smaller liquid line"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Insulate the larger, cold suction line",
+    "explanation": "Two copper lines connect the indoor and outdoor units. The larger suction line carries cold refrigerant gas back to the compressor and should be insulated to prevent sweating and heat gain. Missing or damaged insulation is a common finding.\n\n**Wrong choices**\n- The smaller liquid line: The smaller liquid line is warm and usually not insulated.\n- Neither line: The suction line should be insulated to prevent sweating and energy loss.\n- The thermostat wire: Thermostat wire is not a refrigerant line.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "air conditioning",
+      "refrigerant lines"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-heating-cooling-0013",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "heating-cooling",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A residential hot-water (hydronic) boiler's pressure relief valve is typically set at:",
+    "choices": [
+      "80 psi",
+      "30 psi",
+      "5 psi",
+      "150 psi"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Hydronic boiler relief valves are typically 30 psi",
+    "explanation": "Residential hot-water boilers usually run around 12 to 15 psi when cold. The pressure relief valve is typically set at 30 psi to protect the boiler. Its discharge pipe should be routed safely, like a water heater TPR line.\n\n**Wrong choices**\n- 150 psi: 150 psi is the typical setting for a water heater TPR valve.\n- 5 psi: This is below normal boiler operating pressure.\n- 80 psi: This is higher than typical residential hydronic boiler relief settings.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "boiler",
+      "relief valve"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-heating-cooling-0014",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "heating-cooling",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "On a working central air conditioner, the temperature difference between the return air and the supply air at the indoor unit is commonly expected to be about:",
+    "choices": [
+      "40 to 50 °F",
+      "0 °F",
+      "2 to 5 °F",
+      "14 to 22 °F"
+    ],
+    "answer": 4,
+    "oneLineConcept": "AC temperature split rule of thumb: about 14-22 °F",
+    "explanation": "A common rule of thumb is that air leaving the indoor coil should be about 14 to 22 °F cooler than the air entering it. A much smaller or larger difference may point to refrigerant, airflow, or other problems. Inspectors who measure this report results outside the range and recommend HVAC evaluation.\n\n**Wrong choices**\n- 2 to 5 °F: This small a drop suggests the system is not cooling well.\n- 40 to 50 °F: This is far larger than normal and may point to low airflow or a problem.\n- 0 °F: No difference means no cooling.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "air conditioning",
+      "temperature split"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-heating-cooling-0015",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "heating-cooling",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A single-wall vent connector from a gas furnace or water heater to a chimney should typically:",
+    "choices": [
+      "Include a dip to collect condensation",
+      "Slope down toward the chimney",
+      "Rise toward the chimney at least 1/4 inch per foot",
+      "Run level with no slope"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Vent connectors rise at least 1/4 in. per foot",
+    "explanation": "Natural-draft appliances depend on hot exhaust rising up the vent. Under common fuel gas codes, the vent connector typically must slope upward toward the chimney or vent at least 1/4 inch per foot, with secure joints and no dips.\n\n**Wrong choices**\n- Run level with no slope: Level runs slow the draft and can let gases spill.\n- Slope down toward the chimney: Hot gases rise; a downward slope works against the draft.\n- Include a dip to collect condensation: Dips trap gases and hurt the draft.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "venting",
+      "vent connector"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-heating-cooling-0016",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "heating-cooling",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Under common mechanical codes, return air for a forced-air system typically should not be taken from:",
+    "choices": [
+      "A bathroom or a garage",
+      "A living room",
+      "A hallway",
+      "A bedroom"
+    ],
+    "answer": 1,
+    "oneLineConcept": "No return air from bathrooms, kitchens, or garages",
+    "explanation": "Return ducts pull air back to the furnace and spread it through the house. Common mechanical codes do not allow return air from bathrooms, kitchens, garages, or rooms with fuel-burning appliances, because odors, moisture, car exhaust, or combustion gases would be spread to the living space.\n\n**Wrong choices**\n- A bedroom: Bedrooms commonly have return air openings.\n- A hallway: Hallways are common return locations.\n- A living room: Living rooms are common return locations.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "return air",
+      "ducts"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-heating-cooling-0017",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "heating-cooling",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A gas furnace in a small closet gets its combustion air from indoors. Common codes typically call for two openings into the closet located:",
+    "choices": [
+      "One in the middle of the door only",
+      "One within 12 inches of the top and one within 12 inches of the bottom",
+      "Both near the ceiling",
+      "Both near the floor"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Combustion air: one high and one low opening",
+    "explanation": "Fuel-burning appliances need air for combustion and to help the vent draw. In a confined space using indoor air, common fuel gas codes typically require two openings: one within 12 inches of the top and one within 12 inches of the bottom. A closed closet without openings can starve the burner.\n\n**Wrong choices**\n- Both near the floor: Two low openings do not let air circulate as required.\n- Both near the ceiling: Two high openings do not meet the usual arrangement.\n- One in the middle of the door only: A single mid-height opening is not the usual two-opening method.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "combustion air",
+      "furnace"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-heating-cooling-0018",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "heating-cooling",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Each of the following is a sign of a possible venting or backdraft problem at a gas water heater or furnace EXCEPT:",
+    "choices": [
+      "Moisture dripping from the draft hood",
+      "Smoke from a test drawn steadily into the draft hood",
+      "Melted plastic on parts near the draft hood",
+      "Rust and scorch marks around the draft hood"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Backdraft signs: scorching, rust, melting at draft hood",
+    "explanation": "When a natural-draft appliance spills exhaust instead of sending it up the vent, the hot, moist gases scorch, rust, and melt nearby parts. Smoke pulled steadily into the draft hood during a test shows the vent is drawing correctly.\n\n**Wrong choices**\n- Rust and scorch marks around the draft hood: These are signs of hot gases spilling out.\n- Moisture dripping from the draft hood: Water from spilling exhaust condenses and drips.\n- Melted plastic on parts near the draft hood: Melted parts show hot exhaust is spilling.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "venting",
+      "backdraft",
+      "water heater"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "home-inspector-nhie-heating-cooling-0019",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "heating-cooling",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "On a heat pump thermostat, the \"emergency heat\" setting typically:",
+    "choices": [
+      "Shuts off all heat",
+      "Runs the outdoor unit at double speed",
+      "Runs the backup heat (often electric strips) without the outdoor unit",
+      "Turns on the air conditioner"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Emergency heat = backup heat only, no compressor",
+    "explanation": "Emergency heat is for when the outdoor unit cannot run. It uses the backup heat source, commonly electric resistance strips, which costs more to run. Inspectors usually test heat pumps in their normal modes and note whether backup heat works.\n\n**Wrong choices**\n- Runs the outdoor unit at double speed: Emergency heat shuts the outdoor unit out of the heating process.\n- Turns on the air conditioner: It is a heating setting.\n- Shuts off all heat: It provides heat.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "heat pump",
+      "emergency heat"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-heating-cooling-0020",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "heating-cooling",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A gas furnace with an ignition source is installed in an attached garage. Unless it is listed as resistant to igniting flammable vapors, under common codes it typically must be raised how far above the garage floor?",
+    "choices": [
+      "36 inches",
+      "12 inches",
+      "6 inches",
+      "18 inches"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Garage gas appliances: ignition source 18 in. above floor",
+    "explanation": "Gasoline vapors are heavier than air and collect near the floor. Under common codes, appliances with an ignition source in a garage typically must have the burner and ignition source at least 18 inches above the floor, unless listed as flammable-vapor ignition resistant. They also need protection from vehicle damage.\n\n**Wrong choices**\n- 6 inches: This is not high enough to keep the burner above most gasoline vapors.\n- 36 inches: This is more than the typical requirement.\n- 12 inches: This is less than the typical requirement.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "garage",
+      "furnace",
+      "ignition source"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-heating-cooling-0021",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "heating-cooling",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A single-wall metal vent connector for a typical listed gas appliance with a draft hood should typically be kept at least how far from combustible materials?",
+    "choices": [
+      "6 inches",
+      "18 inches",
+      "0 inches",
+      "1 inch"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Single-wall gas vent connector: about 6 in. clearance",
+    "explanation": "Single-wall vent pipe gets much hotter on the outside than double-wall Type B vent. Under common fuel gas codes, single-wall connectors for typical listed gas appliances with draft hoods need about 6 inches of clearance to combustibles, while Type B vent typically needs about 1 inch. Too little clearance can char wood over time.\n\n**Wrong choices**\n- 1 inch: About 1 inch is the typical clearance for listed Type B double-wall vent, not single-wall pipe.\n- 0 inches: Single-wall pipe gets hot and must not touch combustibles.\n- 18 inches: This is more than the typical value for this case.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "venting",
+      "clearance",
+      "vent connector"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-heating-cooling-0022",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "heating-cooling",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "When the furnace blower starts, the burner flames flicker and roll out toward the front of the burner area. This most strongly suggests:",
+    "choices": [
+      "Normal operation of a gas furnace",
+      "Low refrigerant in the air conditioner",
+      "A clean, new filter",
+      "A possible cracked or leaking heat exchanger; recommend evaluation by an HVAC contractor"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Flames disturbed when blower starts = heat exchanger concern",
+    "explanation": "The blower moves house air around the outside of the heat exchanger. If there is a crack or hole, blower air can push into the combustion area, making the flames flicker or roll out. This is a warning sign of a possible carbon monoxide hazard and needs evaluation.\n\n**Wrong choices**\n- Normal operation of a gas furnace: Flames should not be disturbed by the blower.\n- A clean, new filter: Filter condition does not make flames dance when the blower starts.\n- Low refrigerant in the air conditioner: Refrigerant does not affect furnace flames.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "furnace",
+      "heat exchanger",
+      "flame"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-heating-cooling-0023",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "heating-cooling",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Why do many inspectors avoid running central air conditioning when the outdoor temperature is below about 60 °F?",
+    "choices": [
+      "Running it in cold weather can damage the compressor, and makers set low-temperature limits",
+      "The thermostat cannot be set low enough",
+      "It is against the law",
+      "The furnace will shut off permanently"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Don't run AC below maker's outdoor temperature limit",
+    "explanation": "In cold weather, refrigerant may not boil off fully and liquid can return to the compressor, damaging it. Many manufacturers limit cooling operation below about 60 to 65 °F outdoors. Inspectors note in the report that the AC was not tested because of low outdoor temperature.\n\n**Wrong choices**\n- The thermostat cannot be set low enough: Thermostats can usually be set low enough; the concern is equipment damage.\n- The furnace will shut off permanently: Running AC does not shut off the furnace permanently.\n- It is against the law: It is a manufacturer and equipment issue, not a legal one.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "air conditioning",
+      "limitations"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-heating-cooling-0024",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "heating-cooling",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "On a steam boiler, what does the sight glass show?",
+    "choices": [
+      "The steam pressure in psi",
+      "The water level in the boiler",
+      "The flue gas temperature",
+      "The fuel level in the tank"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Steam boiler sight glass shows water level",
+    "explanation": "Steam boilers must keep the right water level. The sight glass (gauge glass) shows it. Too little water can damage the boiler, so steam boilers also have a low-water cutoff that shuts off the burner. A dirty or empty sight glass should be reported.\n\n**Wrong choices**\n- The steam pressure in psi: Pressure is shown on the pressure gauge.\n- The flue gas temperature: The sight glass shows water, not flue temperature.\n- The fuel level in the tank: Fuel tanks have their own gauges.",
+    "frequency": 2,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "boiler",
+      "steam"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-heating-cooling-0025",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "heating-cooling",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "On a closed hydronic heating system, what does the expansion tank do?",
+    "choices": [
+      "Removes air through the chimney",
+      "Adds fresh water constantly",
+      "Absorbs the extra water volume as the water heats, limiting pressure rise",
+      "Stores extra hot water for showers"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Expansion tank absorbs heated water expansion",
+    "explanation": "Water expands when heated. In a closed hydronic system, the expansion tank gives that extra volume somewhere to go so pressure does not climb to the relief valve setting. A waterlogged tank can make the relief valve open often.\n\n**Wrong choices**\n- Removes air through the chimney: Air is removed with air vents or separators, not the chimney.\n- Stores extra hot water for showers: Boiler water is separate from household hot water.\n- Adds fresh water constantly: The fill valve adds water only as needed.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "boiler",
+      "expansion tank"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  }
+]

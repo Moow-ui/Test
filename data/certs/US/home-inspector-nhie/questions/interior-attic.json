@@ -1,0 +1,792 @@
+[
+  {
+    "id": "home-inspector-nhie-interior-attic-0001",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "interior-attic",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Under common model codes, smoke alarms are typically required:",
+    "choices": [
+      "Only in the kitchen",
+      "Only in the garage",
+      "In each bedroom, outside each sleeping area, and on each level of the home",
+      "Only outside sleeping areas"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Smoke alarms: each bedroom, outside sleeping areas, each level",
+    "explanation": "Under common model codes, smoke alarms are typically required inside each sleeping room, outside each sleeping area near the bedrooms, and on every level, including basements. Missing or non-working alarms should be reported as a safety concern.\n\n**Wrong choices**\n- Only outside sleeping areas: Alarms are also typically required inside each bedroom and on each level.\n- Only in the kitchen: Kitchens are actually a poor spot due to cooking false alarms.\n- Only in the garage: Garages are not the typical required location.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "smoke alarms",
+      "safety"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-interior-attic-0002",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "interior-attic",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Carbon monoxide alarms are typically required in homes that have:",
+    "choices": [
+      "Fuel-burning appliances or an attached garage",
+      "Solar panels",
+      "Only electric heat and no garage",
+      "A swimming pool"
+    ],
+    "answer": 1,
+    "oneLineConcept": "CO alarms: needed with fuel-burning appliances or attached garage",
+    "explanation": "Carbon monoxide is an invisible, odorless gas from burning fuel. Under common model codes, CO alarms are typically required outside sleeping areas in homes with fuel-burning appliances or attached garages. Inspectors report missing alarms.\n\n**Wrong choices**\n- Only electric heat and no garage: All-electric homes without attached garages usually do not have a CO source.\n- A swimming pool: A pool is not a CO source.\n- Solar panels: Solar panels do not produce CO.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "carbon monoxide",
+      "alarms"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-interior-attic-0003",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "interior-attic",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Attic ventilation mainly helps to:",
+    "choices": [
+      "Remove heat and moisture from the attic",
+      "Heat the living space",
+      "Raise indoor humidity",
+      "Bring rain in to cool the shingles"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Attic vents remove heat and moisture",
+    "explanation": "Attic vents let outside air move through the attic, usually in at the soffits and out near the ridge. In summer this removes heat; in winter it carries away moisture that leaks up from the house, which helps prevent condensation, mold, and ice dams.\n\n**Wrong choices**\n- Raise indoor humidity: Ventilation reduces attic moisture; it is not meant to humidify the house.\n- Heat the living space: Ventilation does not heat the house.\n- Bring rain in to cool the shingles: Vents are designed to keep rain out.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "attic",
+      "ventilation"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-interior-attic-0004",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "interior-attic",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Where should a bathroom exhaust fan discharge?",
+    "choices": [
+      "Into the wall cavity",
+      "Into the crawlspace",
+      "Into the attic",
+      "To the outdoors"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Bath fans must exhaust outdoors",
+    "explanation": "Bathroom fans remove moisture from showers and baths. If the duct ends in the attic, wall, or crawlspace, that moisture causes condensation, mold, and rot. Fans should be ducted to a proper exterior termination with a damper.\n\n**Wrong choices**\n- Into the attic: This puts moisture in the attic, leading to mold and rot.\n- Into the wall cavity: This traps moisture inside the wall.\n- Into the crawlspace: This adds moisture under the house.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "exhaust fan",
+      "ventilation"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-interior-attic-0005",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "interior-attic",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Attic insulation pushed tight against the roof deck at the eaves, covering the soffit vents, causes:",
+    "choices": [
+      "A stronger roof",
+      "Lower attic moisture",
+      "Blocked airflow into the attic",
+      "Better attic ventilation"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Keep insulation off soffit vents (use baffles)",
+    "explanation": "Soffit vents bring outside air into the attic. Insulation stuffed against them blocks this airflow, which can lead to heat and moisture build-up. Baffles (vent chutes) keep a clear air path between insulation and the roof deck.\n\n**Wrong choices**\n- Better attic ventilation: Covering the intake vents blocks airflow.\n- Lower attic moisture: Less airflow usually means more moisture.\n- A stronger roof: Insulation adds no strength.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "attic",
+      "insulation",
+      "ventilation"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-interior-attic-0006",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "interior-attic",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Under the IRC, a handrail is typically required on stairs with how many or more risers?",
+    "choices": [
+      "2",
+      "4",
+      "6",
+      "10"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Handrails typically required at 4 or more risers",
+    "explanation": "Under the IRC, stairs with four or more risers typically need a handrail on at least one side. Handrails help prevent falls, which are one of the most common causes of injury at home.\n\n**Wrong choices**\n- 2: Two risers do not typically trigger a handrail requirement.\n- 6: A handrail is typically required before six risers.\n- 10: This is far more than the typical trigger.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "stairs",
+      "handrail"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-interior-attic-0007",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "interior-attic",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Under the IRC, handrail height measured from the stair tread nosing is typically:",
+    "choices": [
+      "40 to 44 inches",
+      "30 to 32 inches",
+      "34 to 38 inches",
+      "24 to 28 inches"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Handrail height: typically 34-38 in.",
+    "explanation": "Under the IRC, handrails are typically 34 to 38 inches high, measured straight up from the front edge (nosing) of the treads. They also need to be graspable and continuous for the full flight.\n\n**Wrong choices**\n- 30 to 32 inches: This is lower than the typical range.\n- 40 to 44 inches: This is higher than the typical range.\n- 24 to 28 inches: This is much too low for adults.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "stairs",
+      "handrail"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-interior-attic-0008",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "interior-attic",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What is the purpose of a fireplace hearth extension?",
+    "choices": [
+      "To protect the floor in front of the firebox from sparks and embers",
+      "To carry smoke up the chimney",
+      "To store firewood",
+      "To support the chimney"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Hearth extensions protect floors from embers",
+    "explanation": "Sparks, logs, and embers can fall or pop out of a fireplace. The hearth extension is a noncombustible surface (like brick, stone, or tile) in front of and beside the opening that protects the floor. Cracked or too-small hearths should be reported.\n\n**Wrong choices**\n- To support the chimney: The chimney has its own foundation.\n- To carry smoke up the chimney: The flue carries smoke.\n- To store firewood: It is a fire safety surface, not storage.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "fireplace",
+      "hearth"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-interior-attic-0009",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "interior-attic",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Heavy creosote buildup in a wood-burning chimney flue is a concern because:",
+    "choices": [
+      "It insulates the flue and saves energy",
+      "It can catch fire and cause a chimney fire",
+      "It keeps rain out of the chimney",
+      "It improves the draft"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Creosote buildup can cause chimney fires",
+    "explanation": "Burning wood leaves creosote, a tar-like residue, inside the flue. Thick creosote can ignite and burn very hot, cracking flue liners and spreading fire to the house. Inspectors recommend cleaning and evaluation by a qualified chimney sweep.\n\n**Wrong choices**\n- It insulates the flue and saves energy: Creosote is a fire hazard, not useful insulation.\n- It improves the draft: Buildup narrows the flue and hurts the draft.\n- It keeps rain out of the chimney: A chimney cap does that.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "fireplace",
+      "chimney",
+      "creosote"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-interior-attic-0010",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "interior-attic",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "The door between an attached garage and the house typically should be:",
+    "choices": [
+      "A screen door",
+      "A hollow-core interior door",
+      "A door with a pet door cut into it",
+      "Solid wood or steel at least 1-3/8 inches thick, or a 20-minute fire-rated door"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Garage-to-house door: solid 1-3/8 in. or 20-minute rated",
+    "explanation": "Garages hold cars, fuel, and chemicals, so the wall and door between the garage and the house slow the spread of fire and fumes. Under common model codes, that door is typically solid wood or solid/honeycomb-core steel at least 1-3/8 inches thick, or a 20-minute fire-rated door.\n\n**Wrong choices**\n- A hollow-core interior door: Hollow-core doors burn through quickly.\n- A door with a pet door cut into it: A pet door weakens the fire separation.\n- A screen door: A screen door gives no fire protection.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "garage",
+      "fire separation",
+      "doors"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-interior-attic-0011",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "interior-attic",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Under the IRC, an attic access opening is typically at least:",
+    "choices": [
+      "22 by 30 inches",
+      "18 by 24 inches",
+      "12 by 12 inches",
+      "36 by 48 inches"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Attic access: typically 22 x 30 in.",
+    "explanation": "Under the IRC, an attic access opening is typically at least 22 by 30 inches, with enough headroom above it. Small or blocked access can prevent the attic from being inspected, which should be stated in the report.\n\n**Wrong choices**\n- 18 by 24 inches: 18 by 24 inches is the typical size for a crawlspace floor access.\n- 12 by 12 inches: This is too small for a person to pass through.\n- 36 by 48 inches: This is larger than the typical minimum.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "attic",
+      "access"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-interior-attic-0012",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "interior-attic",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Under the IRC, the sill of a bedroom emergency escape window is typically no more than how high above the floor?",
+    "choices": [
+      "60 inches",
+      "48 inches",
+      "44 inches",
+      "36 inches"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Emergency escape window sill: typically max 44 in.",
+    "explanation": "Bedrooms need an emergency escape and rescue opening, usually a window. Under the IRC, the bottom of the clear opening is typically no more than 44 inches above the floor, so people can climb out and firefighters can climb in.\n\n**Wrong choices**\n- 48 inches: This is higher than the typical maximum.\n- 36 inches: 36 inches is lower than the maximum; the typical limit is 44 inches.\n- 60 inches: This would be too high for many people to climb out.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "egress",
+      "windows",
+      "bedrooms"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-interior-attic-0013",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "interior-attic",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "In one flight of stairs, the difference between the tallest and shortest riser typically should not be more than:",
+    "choices": [
+      "1 inch",
+      "3/8 inch",
+      "1/16 inch",
+      "2 inches"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Riser heights in a flight: max 3/8 in. variation",
+    "explanation": "People set their stride on the first few steps. A step that is taller or shorter than the rest catches feet and causes falls. Under the IRC, risers (and treads) in a flight typically must not vary by more than 3/8 inch.\n\n**Wrong choices**\n- 1 inch: A 1-inch difference is a serious tripping hazard.\n- 1/16 inch: This is stricter than the typical rule.\n- 2 inches: This is far too much variation.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "stairs",
+      "risers"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-interior-attic-0014",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "interior-attic",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Under the IRC, minimum headroom over residential stairs is typically:",
+    "choices": [
+      "7 feet 6 inches",
+      "6 feet",
+      "5 feet 10 inches",
+      "6 feet 8 inches"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Stair headroom: typically 6 ft 8 in.",
+    "explanation": "Headroom is measured straight up from a line along the tread nosings. Under the IRC, stairways typically need at least 6 feet 8 inches of headroom to avoid head injuries.\n\n**Wrong choices**\n- 6 feet: This is lower than the typical minimum.\n- 7 feet 6 inches: This is more than the typical minimum.\n- 5 feet 10 inches: This is far too low.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "stairs",
+      "headroom"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-interior-attic-0015",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "interior-attic",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "All of the following are commonly reported as interior safety concerns EXCEPT:",
+    "choices": [
+      "Balcony guard openings 6 inches wide",
+      "A pet door installed in the garage-to-house door",
+      "A graspable handrail running the full length of a stairway",
+      "No smoke alarms in the bedrooms"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Interior safety: alarms, fire doors, guards",
+    "explanation": "Common interior safety findings include missing smoke or CO alarms, weakened garage fire separation, and guards with wide openings. A graspable, continuous handrail is correct and helps prevent falls.\n\n**Wrong choices**\n- No smoke alarms in the bedrooms: Missing smoke alarms are a safety concern.\n- A pet door installed in the garage-to-house door: This weakens the fire separation.\n- Balcony guard openings 6 inches wide: Wide openings let children fall through.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "safety",
+      "interior"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "home-inspector-nhie-interior-attic-0016",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "interior-attic",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A freestanding kitchen range should have:",
+    "choices": [
+      "An anti-tip bracket so it does not tip forward when the oven door is loaded",
+      "Its own chimney",
+      "A water supply line",
+      "A GFCI built into the cord"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Freestanding ranges need anti-tip brackets",
+    "explanation": "A child standing on an open oven door can tip a freestanding range over, along with hot pots. Makers require an anti-tip bracket that locks a rear leg to the floor or wall. Inspectors often check for it and report it if missing.\n\n**Wrong choices**\n- A GFCI built into the cord: A GFCI cord is not the typical range requirement.\n- A water supply line: Ranges do not need water.\n- Its own chimney: Ranges do not need a chimney.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "appliances",
+      "range",
+      "safety"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-interior-attic-0017",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "interior-attic",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Recessed lights that are not IC-rated are buried in attic insulation. Why is this a concern?",
+    "choices": [
+      "They block sound",
+      "They use more water",
+      "They make the attic too cold",
+      "They can overheat and become a fire hazard"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Non-IC recessed lights must not touch insulation",
+    "explanation": "\"IC\" means rated for insulation contact. Lights without this rating need clearance from insulation so heat can escape. When buried, they can overheat and start a fire. Inspectors report this and recommend correction by a qualified electrician.\n\n**Wrong choices**\n- They make the attic too cold: The concern is heat, not cold.\n- They use more water: Lights do not use water.\n- They block sound: Sound is not the concern.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "recessed lights",
+      "insulation",
+      "fire safety"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-interior-attic-0018",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "interior-attic",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Under the IRC, the minimum net clear opening for a bedroom emergency escape window on an upper floor is typically:",
+    "choices": [
+      "5.0 square feet",
+      "5.7 square feet",
+      "8 square feet",
+      "3.3 square feet"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Escape openings: 5.7 sq ft (5.0 at grade floor)",
+    "explanation": "Under the IRC, emergency escape and rescue openings typically need a net clear opening of at least 5.7 square feet, with 5.0 square feet allowed at grade-floor level. The clear opening is typically at least 24 inches high and 20 inches wide, with the sill no more than 44 inches above the floor.\n\n**Wrong choices**\n- 5.0 square feet: 5.0 square feet is the typical minimum for a ground-floor (grade floor) opening.\n- 3.3 square feet: This is too small for a firefighter with gear.\n- 8 square feet: This is more than the typical minimum.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "egress",
+      "windows"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-interior-attic-0019",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "interior-attic",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "In winter, frost and mold appear on the roof sheathing right around a bathroom fan housing in the attic. This most likely means:",
+    "choices": [
+      "The shingles are too dark",
+      "The fan is venting moist air into the attic",
+      "The roof is over-ventilated",
+      "The attic has too much insulation"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Moisture around a fan housing = fan venting into attic",
+    "explanation": "A bathroom fan that is not ducted outdoors, or whose duct has come loose, blows warm, wet air into the attic. In cold weather, that moisture freezes or condenses on the nearby roof sheathing, leading to mold and rot. The duct should be connected to an exterior termination.\n\n**Wrong choices**\n- The attic has too much insulation: Insulation is not the source of a local moisture spot.\n- The roof is over-ventilated: Too much ventilation would dry the attic.\n- The shingles are too dark: Shingle color does not cause frost around one fan.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "exhaust fan",
+      "attic",
+      "moisture"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-interior-attic-0020",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "interior-attic",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Under common model codes, the basic attic ventilation rule (before allowed reductions) is 1 square foot of net free vent area for every how many square feet of attic floor?",
+    "choices": [
+      "150",
+      "50",
+      "1,000",
+      "300"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Attic venting: 1/150, reducible to 1/300 in some cases",
+    "explanation": "Under common model codes, attics typically need 1 square foot of net free ventilation area for every 150 square feet of attic floor. This can typically be reduced to 1 per 300 when certain conditions are met, such as balanced high and low vents.\n\n1. Example: a 1,500 sq ft attic at 1/150 needs 1,500 ÷ 150 = 10 sq ft of net free vent area.\n2. At 1/300 it would need 1,500 ÷ 300 = 5 sq ft.\n\n**Wrong choices**\n- 300: 1 per 300 is the typical reduced ratio allowed when certain conditions are met.\n- 50: This would be far more venting than typically required.\n- 1,000: This would be far too little venting.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "attic",
+      "ventilation",
+      "calculation"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-interior-attic-0021",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "interior-attic",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Vented decorative gas logs are installed in a wood-burning fireplace. What is typically required at the damper?",
+    "choices": [
+      "The damper must be kept fully closed during use",
+      "A sealed glass door with no venting",
+      "A clamp or stop that keeps the damper from fully closing",
+      "The damper must be removed along with the chimney"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Vented gas logs: damper must stay open",
+    "explanation": "Vented gas logs produce exhaust that must go up the chimney. Common codes and makers typically require the damper to be permanently fixed open, often with a clamp, so it cannot be closed by mistake. Inspectors report missing damper clamps.\n\n**Wrong choices**\n- The damper must be kept fully closed during use: A closed damper would send combustion gases into the room.\n- The damper must be removed along with the chimney: The chimney is still needed to vent the logs.\n- A sealed glass door with no venting: Vented gas logs need the chimney open.",
+    "frequency": 2,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "fireplace",
+      "gas logs"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "home-inspector-nhie-interior-attic-0022",
+    "certId": "home-inspector-nhie",
+    "subjectId": "home-inspection",
+    "chapterId": "interior-attic",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Glass in a window next to a bathtub, with its bottom edge less than 60 inches above the tub floor, typically needs to be:",
+    "choices": [
+      "Ordinary annealed glass",
+      "Mirrored glass",
+      "Single-pane plate glass",
+      "Safety glazing (tempered or laminated)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Glass near tubs and showers must be safety glazing",
+    "explanation": "People can slip in a tub or shower and fall against nearby glass. Under common model codes, glazing in walls around tubs and showers, when its bottom edge is less than 60 inches above the standing surface, is a hazardous location and typically needs safety glazing such as tempered or laminated glass.\n\n**Wrong choices**\n- Ordinary annealed glass: Ordinary glass breaks into sharp, dangerous pieces.\n- Single-pane plate glass: Plate glass is not safety glazing.\n- Mirrored glass: Mirror coating does not make glass safe.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-13",
+    "tags": [
+      "safety glazing",
+      "bathroom"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  }
+]
