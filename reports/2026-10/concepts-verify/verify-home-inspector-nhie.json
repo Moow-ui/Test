@@ -1,0 +1,66 @@
+{
+  "slug": "home-inspector-nhie",
+  "checkedAt": "2026-10-13",
+  "chapters": {
+    "site-exterior": {
+      "result": "PASS",
+      "issues": [
+        "Minor: 'Deck guards' — the 4-inch sphere rule is the general guard opening; guards on the open sides of stairs allow 4 3/8 in (IRC R312.1.3). Optional: add 'except on stairs'."
+      ]
+    },
+    "roof-systems": {
+      "result": "PASS",
+      "issues": [
+        "Disputed claim stated as fact: Step flashing tip 'One piece per shingle course. A single long strip is a red flag.' 2021 IRC R905.2.8.3 allows base flashing at a sidewall to be 'continuous or step flashing'; step flashing is what shingle manufacturers require. Suggested fix: 'One piece per shingle course. Shingle makers call for step flashing, so a single long strip is worth noting.'"
+      ]
+    },
+    "structure-foundation": {
+      "result": "PASS",
+      "issues": [
+        "Minor: the 'Footing' card states a code requirement (bottom below frost depth, IRC R403.1.4.1) but has no source. No number is involved, so this is optional."
+      ]
+    },
+    "electrical": {
+      "result": "FAIL",
+      "issues": [
+        "Factual error against the cited edition (NEC 2023): GFCI card says 'it is typically required in bathrooms, garages, outdoors, crawlspaces, unfinished basements, kitchen countertops, and near sinks.' Since NEC 2020, 210.8(A) covers all basements, finished or not. In NEC 2023 it covers all kitchen receptacles, not just countertops, plus laundry areas. Fix: 'Under the National Electrical Code it is typically required in bathrooms, garages, outdoors, crawlspaces, basements, kitchens, laundry areas, and near sinks.' Also change the compare row 'baths, kitchen counters, garages, outdoors' to 'baths, kitchens, basements, garages, outdoors'."
+      ]
+    },
+    "heating-cooling": {
+      "result": "PASS",
+      "issues": [
+        "Minor: the summary and 'Refrigerant lines' card ('The larger, insulated line is the cool suction line...') describe only cooling mode. In a heat pump running in heating mode, the large line carries hot vapor. Suggested: add 'in cooling mode'."
+      ]
+    },
+    "plumbing": {
+      "result": "PASS",
+      "issues": []
+    },
+    "interior-attic": {
+      "result": "PASS",
+      "issues": [
+        "Minor overstatement: 'Bathroom fans, kitchen exhaust, and clothes dryers must vent to the outside.' IRC M1503.1 has an exception for listed ductless range hoods. Suggested: 'Bathroom fans, ducted kitchen exhaust, and clothes dryers must vent to the outside.'",
+        "Minor: the Handrail tip 'guards at least 36 inches' does not apply to guards on the open sides of stairs, which may be 34 in (R312.1.2).",
+        "Minor: the 'Exhaust to the outdoors' card states a code requirement (IRC M1501.1/M1502.2) without a source. It has no number, so this is optional."
+      ]
+    },
+    "reporting": {
+      "result": "PASS",
+      "issues": []
+    },
+    "professional-responsibilities": {
+      "result": "PASS",
+      "issues": [
+        "Minor wording: in the compare row 'Who hires', the code inspection column says 'Local building department'. The department performs the inspection; nobody hires it. Suggested label: 'Who performs it' (home inspection: 'An inspector hired by the client')."
+      ]
+    }
+  },
+  "figures": {
+    "concept-trap-seal.svg": {
+      "1": "PASS - clean line drawing with legible labels and leader lines; nothing overlaps.",
+      "2": "PASS - U-shaped P-trap, weir at the outlet's inner bottom, sanitary-tee junction to the stack, vent arrow up and drain arrow down; the trap arm slopes down to the stack.",
+      "3": "PASS - water surface is level with the weir; the seal-depth bracket runs from the weir to the top of the dip; the trap arm slopes downward; the vent goes to open air and the drain to the sewer.",
+      "5": "PASS - matches the Trap/Trap weir/Trap arm/Vent cards and points, and fits the alt text and caption ('seal water stands level with the weir')."
+    }
+  }
+}
