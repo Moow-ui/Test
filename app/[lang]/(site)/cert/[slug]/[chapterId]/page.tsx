@@ -91,10 +91,10 @@ export default async function ChapterPage({ params }: Props) {
           {titleLines.length === 2 ? (
             <>
               <span className="block text-lg font-normal text-ink-sub">{titleLines[0]}</span>{" "}
-              <span className="mt-1 block text-2xl font-bold leading-tight">{titleLines[1]}</span>
+              <span className="mt-1 block text-xl font-bold leading-tight sm:text-2xl">{titleLines[1]}</span>
             </>
           ) : (
-            <span className="block text-2xl font-bold leading-tight">{meta.h1}</span>
+            <span className="block text-xl font-bold leading-tight sm:text-2xl">{meta.h1}</span>
           )}
         </h1>
       </header>
