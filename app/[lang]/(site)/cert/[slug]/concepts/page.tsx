@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { JsonLd } from "@/components/JsonLd";
 import { Stars } from "@/components/Stars";
-import { ConceptByline, ConceptNote } from "@/components/concepts/ConceptParts";
+import { ConceptByline, ConceptNote, ExamSummary } from "@/components/concepts/ConceptParts";
 import { IssuerNotice } from "@/components/cert/IssuerNotice";
 import { getCertificationIn, getConcepts } from "@/lib/data";
 import { fmt, getMessages, isLocale, localeCountry, localePath } from "@/lib/i18n";
@@ -150,6 +150,9 @@ export default async function ConceptsPage({ params }: Props) {
           );
         })}
       </section>
+
+      {/* 시험 정보(형태·문항 수·시간·합격 기준·출처): 본문을 다 본 뒤 아래쪽에 */}
+      <ExamSummary locale={lang} cert={cert} />
 
       <div className="flex flex-col gap-2 sm:flex-row">
         <Link href={`${certPath}/quiz?level=basic&count=5&subject=all`} className="btn btn-primary btn-lg">
