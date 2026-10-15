@@ -58,8 +58,9 @@ export default async function ConceptsPage({ params }: Props) {
         ]}
       />
 
-      <header className="space-y-4">
-        <h1 className="text-xl font-bold leading-snug sm:text-2xl">{meta.h1}</h1>
+      {/* 제목: 단원 페이지들과 같은 모양 (가운데 맞춤, 고르게 줄바꿈, 아래 구분선) */}
+      <header className="border-b border-line-soft pb-6 text-center">
+        <h1 className="text-balance text-xl font-bold leading-tight sm:text-2xl">{meta.h1}</h1>
       </header>
 
       {/* 단원 목차: 과목별, 중요도 ★ 와 과목 안 출제 비중(추정) */}
