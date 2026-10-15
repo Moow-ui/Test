@@ -60,7 +60,6 @@ export default async function ConceptsPage({ params }: Props) {
 
       <header className="space-y-4">
         <h1 className="text-xl font-bold leading-snug sm:text-2xl">{meta.h1}</h1>
-        <ConceptByline locale={lang} by={concepts.by} />
         <ExamSummary locale={lang} cert={cert} />
         <Link href={`${certPath}/quiz?level=basic&count=5&subject=all`} className="btn btn-primary btn-lg w-full sm:w-auto">
           {fmt(m.concepts.solve5, { name: cert.name })}
@@ -156,6 +155,8 @@ export default async function ConceptsPage({ params }: Props) {
       </div>
 
       <IssuerNotice locale={lang} cert={cert} />
+
+      <ConceptByline locale={lang} by={concepts.by} />
     </article>
   );
 }

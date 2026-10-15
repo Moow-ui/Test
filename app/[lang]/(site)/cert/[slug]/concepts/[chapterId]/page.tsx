@@ -98,7 +98,6 @@ export default async function ConceptChapterPage({ params }: Props) {
           {m.common.importance} <Stars value={chapter.importance} /> ·{" "}
           {fmt(m.concepts.weightEstimated, { n: chapter.examWeight })}
         </p>
-        <ConceptByline locale={lang} by={concepts.by} />
       </header>
 
       {/* 개요: 요약 노트와 같은 글 (P16) */}
@@ -174,6 +173,8 @@ export default async function ConceptChapterPage({ params }: Props) {
       </nav>
 
       <IssuerNotice locale={lang} cert={cert} />
+
+      <ConceptByline locale={lang} by={concepts.by} />
     </article>
   );
 }

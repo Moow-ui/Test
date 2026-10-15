@@ -9,16 +9,14 @@ import type { Certification, ConceptChapter } from "@/lib/types";
  * 서버 컴포넌트라 본문이 HTML 로 그대로 나간다. 상자 안에 상자를 넣지 않고 여백으로 나눈다.
  */
 
-/** 작성 주체 배지 + 한 줄 안내: "AI 작성 · 검수 완료" */
+/** 작성 주체 안내: "AI 작성 · 검수 완료" + 한 줄 설명. 페이지 맨 아래 작은 회색 글씨로 둔다 */
 export function ConceptByline({ locale, by }: { locale: Locale; by: "ai" | "staff" }) {
   const m = getMessages(locale).concepts;
   return (
-    <div className="space-y-2">
-      <span className="inline-flex rounded-full bg-ok-soft px-3 py-1 text-sm font-bold text-ok">
-        {by === "staff" ? m.byStaff : m.byAiVerified}
-      </span>
-      {by === "ai" && <p className="text-sm text-ink-sub">{m.byInfo}</p>}
-    </div>
+    <p className="text-sm text-ink-sub">
+      {by === "staff" ? m.byStaff : m.byAiVerified}
+      {by === "ai" && <> · {m.byInfo}</>}
+    </p>
   );
 }
 
