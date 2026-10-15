@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { JsonLd } from "@/components/JsonLd";
 import { Stars } from "@/components/Stars";
-import { ConceptByline, ConceptNote, ExamSummary } from "@/components/concepts/ConceptParts";
+import { ConceptByline, ConceptNote } from "@/components/concepts/ConceptParts";
 import { IssuerNotice } from "@/components/cert/IssuerNotice";
 import { getCertificationIn, getConcepts } from "@/lib/data";
 import { fmt, getMessages, isLocale, localeCountry, localePath } from "@/lib/i18n";
@@ -58,12 +58,18 @@ export default async function ConceptsPage({ params }: Props) {
         ]}
       />
 
-      <header className="space-y-4">
-        <h1 className="text-xl font-bold leading-snug sm:text-2xl">{meta.h1}</h1>
-        <ExamSummary locale={lang} cert={cert} />
-        <Link href={`${certPath}/quiz?level=basic&count=5&subject=all`} className="btn btn-primary btn-lg w-full sm:w-auto">
-          {fmt(m.concepts.solve5, { name: cert.name })}
-        </Link>
+      {/* 제목: 가운데 맞춤 두 줄 ("{자격증}" / "개념 정리"), 아래 구분선 */}
+      <header className="border-b border-line-soft pb-6 text-center">
+        <h1 className="text-balance text-xl font-bold leading-tight sm:text-2xl">
+          {meta.h1.startsWith(`${cert.name} `) ? (
+            <>
+              <span className="block">{cert.name}</span>{" "}
+              <span className="block">{meta.h1.slice(cert.name.length + 1)}</span>
+            </>
+          ) : (
+            meta.h1
+          )}
+        </h1>
       </header>
 
       {/* 단원 목차: 과목별, 중요도 ★ 와 과목 안 출제 비중(추정) */}
