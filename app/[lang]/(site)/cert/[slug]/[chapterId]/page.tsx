@@ -56,6 +56,10 @@ export default async function ChapterPage({ params }: Props) {
   const shown = pickChapterRepresentatives(cert.subjects, questions, chapter.id);
   const meta = chapterMeta(lang, cert, subject, chapter, hasPast);
   const mainMeta = certMainMeta(lang, cert);
+  // 제목 "{시험명} {단원} 핵심정리" 를 시험명 / 나머지 두 줄로 나눈다 (시험명으로 시작하지 않으면 한 줄)
+  const titleLines = meta.h1.startsWith(`${cert.name} `)
+    ? [cert.name, meta.h1.slice(cert.name.length + 1)]
+    : [meta.h1];
   const expected = Math.max(1, Math.round((subject.questionCount * chapter.examWeight) / 100));
 
   const allChapters = cert.subjects.flatMap((s) => s.chapters.map((c) => ({ subject: s, chapter: c })));
@@ -81,8 +85,18 @@ export default async function ChapterPage({ params }: Props) {
         ]}
       />
 
-      <header className="space-y-4">
-        <h1 className="text-xl font-bold leading-snug sm:text-2xl">{meta.h1}</h1>
+      {/* 제목은 두 줄로: 위 작은 줄 = 시험 이름, 아래 큰 줄 = "{단원} 핵심정리". 가운데 맞춤, 아래 소제목과 구분되게 크게 + 구분선 */}
+      <header className="border-b border-line-soft pb-6 text-center">
+        <h1 className="text-balance">
+          {titleLines.length === 2 ? (
+            <>
+              <span className="block text-lg font-normal text-ink-sub">{titleLines[0]}</span>{" "}
+              <span className="mt-1 block text-2xl font-bold leading-tight">{titleLines[1]}</span>
+            </>
+          ) : (
+            <span className="block text-2xl font-bold leading-tight">{meta.h1}</span>
+          )}
+        </h1>
       </header>
 
       {chapter.keyPoints.length > 0 && (
@@ -118,7 +132,7 @@ export default async function ChapterPage({ params }: Props) {
         </dl>
         <p>{chapter.summary}</p>
         {hasConcept && (
-          <Link href={`${certPath}/concepts/${chapter.id}`} className="btn btn-lg w-full">
+          <Link href={`${certPath}/concepts/${chapter.id}`} className="btn btn-primary btn-lg w-full">
             {fmt(m.concepts.seeChapter, { name: chapter.name })}
           </Link>
         )}
