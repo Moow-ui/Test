@@ -41,8 +41,6 @@
   --primary-hover: #9a3412;
   --primary-soft: #fff1e6;
   --accent: #b93d0a;
-  /* 중요도 별 (accent 와 같은 주황. 링크를 회색으로 바꾼 화면(.muted-accent)에서도 별은 주황 그대로) */
-  --star: #b93d0a;
   /* 주황·난이도 색 바탕 위의 글자 */
   --on-primary: #ffffff;
   /* 정답 · 오답 */
@@ -82,7 +80,6 @@
   --primary-hover: #9a3412;
   --primary-soft: #3a2417;
   --accent: #fdba74;
-  --star: #fdba74;
   --on-primary: #ffffff;
   --ok: #86efac;
   --ok-soft: #153a26;
@@ -168,7 +165,6 @@
   --color-primary-hover: var(--primary-hover);
   --color-primary-soft: var(--primary-soft);
   --color-accent: var(--accent);
-  --color-star: var(--star);
   --color-focus: var(--focus);
   --color-ok: var(--ok);
   --color-ok-soft: var(--ok-soft);

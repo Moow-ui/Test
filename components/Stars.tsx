@@ -11,7 +11,7 @@ export function Stars({ value }: { value: number }) {
     <span
       role="img"
       aria-label={fmt(m.starsLabel, { label: m.importance, value: v })}
-      className="whitespace-nowrap font-bold tracking-tight text-star"
+      className="whitespace-nowrap font-bold tracking-tight text-accent"
     >
       {"★".repeat(v)}
       {"☆".repeat(5 - v)}

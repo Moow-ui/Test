@@ -66,21 +66,12 @@ export default async function ChapterPage({ params }: Props) {
   const certPath = mainMeta.path;
   // 이 단원의 개념 정리(검증 통과)가 있으면 그 페이지로 가는 링크를 둔다
   const hasConcept = !!(await getConcepts(cert.id))?.chapters.some((c) => c.id === chapter.id);
-  // 핵심정리 작성 주체: 운영진 작성 / AI 작성 · 운영진 검수 / AI 작성 · 운영진 검수 전 (맨 아래 작은 안내문)
+  // 핵심정리 작성 주체: 운영진 작성 / AI 작성 · 운영진 검수 / AI 작성 · 운영진 검수 전
   const notesBy =
     cert.notes.by === "staff" ? m.chapter.byStaff : cert.notes.reviewedAt ? m.chapter.byAiReviewed : m.chapter.byAi;
-  // 과목이 하나뿐인 시험은 과목 이름·문항 수 없이 "매회 약 N문항"
-  const weightText = fmt(cert.subjects.length === 1 ? m.chapter.metaWeightSingle : m.chapter.metaWeight, {
-    subject: subject.name,
-    total: subject.questionCount,
-    expected,
-    weight: chapter.examWeight,
-  });
 
-  // 순서: 브레드크럼 → 제목 → 메타 한 줄 → 요약 → 꼭 외울 것 → 문제 풀기(CTA) → 개념 정리 링크 → 대표 문제·다른 단원 → 작성 안내
-  // 주황은 별과 CTA 버튼에만 쓴다 (.muted-accent: 링크는 회색 + 밑줄). 섹션 사이 여백은 space-y-8 하나로 맞춘다
   return (
-    <article className="muted-accent mx-auto max-w-3xl space-y-8">
+    <article className="mx-auto max-w-3xl space-y-6">
       <Breadcrumbs
         label={m.nav.breadcrumb}
         crumbs={[
@@ -90,13 +81,34 @@ export default async function ChapterPage({ params }: Props) {
         ]}
       />
 
-      <header className="space-y-2">
+      <header className="space-y-4">
+        <div className="flex flex-wrap items-center justify-between gap-2">
+          <p className="font-bold text-ink-sub">{fmt(m.chapter.eyebrow, { cert: cert.name, subject: subject.name })}</p>
+          <span className="rounded-full bg-surface-2 px-3 py-1 text-sm font-bold text-ink-sub">{notesBy}</span>
+        </div>
         <h1 className="text-xl font-bold leading-snug sm:text-2xl">{meta.h1}</h1>
-        <p className="text-sm text-ink-sub">
-          <Stars value={chapter.importance} /> {fmt(m.chapter.metaImportance, { n: chapter.importance })} ·{" "}
-          {weightText}
-        </p>
-        <p className="pt-2">{chapter.summary}</p>
+        <dl className="card grid gap-x-4 gap-y-2 p-4 sm:grid-cols-[7rem_1fr] sm:p-4">
+          <dt className="font-bold text-ink-sub">{m.common.importance}</dt>
+          <dd>
+            <Stars value={chapter.importance} />{" "}
+            <span className="font-bold">{fmt(m.chapter.importanceValue, { n: chapter.importance })}</span>
+          </dd>
+          <dt className="font-bold text-ink-sub">{m.chapter.weight}</dt>
+          <dd className="font-bold">
+            {fmt(m.chapter.weightValue, {
+              subject: subject.name,
+              total: subject.questionCount,
+              expected,
+              weight: chapter.examWeight,
+            })}
+          </dd>
+        </dl>
+        <p>{chapter.summary}</p>
+        {hasConcept && (
+          <Link href={`${certPath}/concepts/${chapter.id}`} className="link inline-flex min-h-11 items-center">
+            {fmt(m.concepts.seeChapter, { name: chapter.name })}
+          </Link>
+        )}
       </header>
 
       {chapter.keyPoints.length > 0 && (
@@ -110,26 +122,6 @@ export default async function ChapterPage({ params }: Props) {
             ))}
           </ul>
         </section>
-      )}
-
-      {(quizCount > 0 || hasConcept) && (
-        <div className="space-y-4">
-          {quizCount > 0 && (
-            <Link
-              href={`${certPath}/quiz?chapter=${chapter.id}&count=${quizCount}`}
-              className="btn btn-primary btn-lg w-full"
-            >
-              {hasPast ? m.chapter.practicePast : m.chapter.practice}
-            </Link>
-          )}
-          {hasConcept && (
-            <p className="text-center text-sm">
-              <Link href={`${certPath}/concepts/${chapter.id}`} className="link inline-flex min-h-11 items-center">
-                {m.chapter.moreConcepts}
-              </Link>
-            </p>
-          )}
-        </div>
       )}
 
       {shown.length > 0 && (
@@ -147,6 +139,20 @@ export default async function ChapterPage({ params }: Props) {
               chapterImportance={chapter.importance}
             />
           ))}
+        </section>
+      )}
+
+      {quizCount > 0 && (
+        <section aria-label={m.chapter.solveLabel} className="rounded-2xl bg-primary-soft p-4">
+          <p className="font-bold">{m.chapter.solveHint}</p>
+          <div className="mt-4 flex flex-col gap-2 sm:flex-row">
+            <Link href={`${certPath}/quiz?chapter=${chapter.id}&count=${quizCount}`} className="btn btn-primary btn-lg">
+              {fmt(m.chapter.solveN, { name: chapter.name, n: quizCount })}
+            </Link>
+            <Link href={`${certPath}/quiz?level=basic&count=5&subject=${subject.id}`} className="btn btn-lg">
+              {fmt(m.chapter.solveN, { name: subject.name, n: 5 })}
+            </Link>
+          </div>
         </section>
       )}
 
@@ -185,8 +191,6 @@ export default async function ChapterPage({ params }: Props) {
       </nav>
 
       <IssuerNotice locale={lang} cert={cert} />
-
-      <p className="text-sm text-ink-sub">{notesBy}</p>
     </article>
   );
 }

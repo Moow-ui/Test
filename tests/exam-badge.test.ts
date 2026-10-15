@@ -124,9 +124,7 @@ describe("시험 화면 출처 배지", () => {
     answerFirstChoice();
     click(button("다음"));
     answerFirstChoice();
-    // 글자 크기는 상단 "Aa" 버튼을 눌러 연 팝오버 안에 있다
-    click(container.querySelector('button[aria-label="글씨·화면 설정"]')!);
-    const sizes = [...container.querySelectorAll('[role="group"][aria-label="글씨 크기"] button')];
+    const sizes = [...container.querySelectorAll('[role="group"] button')];
     expect(sizes.length).toBeGreaterThan(1);
     for (const size of sizes) {
       click(size);

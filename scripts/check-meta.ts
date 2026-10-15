@@ -3,7 +3,7 @@
  *   npm run build  →  npm run check:meta
  *
  * 검사 항목
- *   1. 색인 대상 페이지의 title·description·H1 이 서로 중복되지 않는가 (단원 페이지 H1 은 제외)
+ *   1. 색인 대상 페이지의 title·description·H1 이 서로 중복되지 않는가
  *   2. 색인 대상 페이지에 canonical 과 H1(1개)이 있는가
  *   3. noindex 페이지(준비 중·풀이 화면 등)가 sitemap.xml 에 들어 있지 않은가
  *   4. 색인 대상 페이지가 sitemap.xml 에 빠짐없이 들어 있는가
@@ -118,14 +118,7 @@ function findDuplicates(label: string, pick: (p: Page) => string): void {
 }
 findDuplicates("title", (p) => p.title);
 findDuplicates("description", (p) => p.description);
-// 단원 핵심정리 페이지의 H1 은 "{단원명} 핵심정리"로 짧게 둔다 (시험명은 브레드크럼·title·description 에 있다).
-// 여러 자격증에 같은 이름의 단원(예: 도로교통법)이 있어 H1 이 겹칠 수 있으므로 H1 중복 검사에서만 뺀다
-const CERT_SUBPAGES = new Set(["concepts", "notes", "past", "quiz", "cbt"]);
-function isChapterRoute(route: string): boolean {
-  const parts = route.split("/").filter(Boolean);
-  return parts.length === 4 && parts[1] === "cert" && !CERT_SUBPAGES.has(parts[3]);
-}
-findDuplicates("H1", (p) => (isChapterRoute(p.route) ? `${p.route}#chapter` : (p.h1[0] ?? "")));
+findDuplicates("H1", (p) => p.h1[0] ?? "");
 
 // 2) canonical, H1 개수
 for (const p of indexable) {

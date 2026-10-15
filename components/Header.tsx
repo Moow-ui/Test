@@ -4,7 +4,7 @@ import { LogoMark } from "./LogoMark";
 import { TopBar } from "./TopBar";
 import { HeaderAccount } from "./auth/HeaderAccount";
 
-/** 일반 화면의 상단 막대: 사이트 이름 · 오답노트 · 로그인 / (오른쪽) 화면 설정 "Aa" */
+/** 일반 화면의 상단 막대: 사이트 이름 · 오답노트 · 로그인 / (오른쪽) 글자 크기 · 어둡게 */
 export function Header({ locale }: { locale: Locale }) {
   const m = getMessages(locale);
   return (
