@@ -87,6 +87,23 @@ export default async function ChapterPage({ params }: Props) {
           <span className="rounded-full bg-surface-2 px-3 py-1 text-sm font-bold text-ink-sub">{notesBy}</span>
         </div>
         <h1 className="text-xl font-bold leading-snug sm:text-2xl">{meta.h1}</h1>
+      </header>
+
+      {chapter.keyPoints.length > 0 && (
+        <section aria-labelledby="keypoints-title">
+          <h2 id="keypoints-title" className="text-xl font-bold">
+            {fmt(m.chapter.keyPointsTitle, { name: chapter.name })}
+          </h2>
+          <ul className="card mt-2 list-disc space-y-2 p-4 pl-8">
+            {chapter.keyPoints.map((point) => (
+              <li key={point}>{point}</li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {/* 중요도·출제 비중 상자와 단원 소개는 "꼭 외우세요" 아래에 둔다 */}
+      <div className="space-y-4">
         <dl className="card grid gap-x-4 gap-y-2 p-4 sm:grid-cols-[7rem_1fr] sm:p-4">
           <dt className="font-bold text-ink-sub">{m.common.importance}</dt>
           <dd>
@@ -109,20 +126,7 @@ export default async function ChapterPage({ params }: Props) {
             {fmt(m.concepts.seeChapter, { name: chapter.name })}
           </Link>
         )}
-      </header>
-
-      {chapter.keyPoints.length > 0 && (
-        <section aria-labelledby="keypoints-title">
-          <h2 id="keypoints-title" className="text-xl font-bold">
-            {fmt(m.chapter.keyPointsTitle, { name: chapter.name })}
-          </h2>
-          <ul className="card mt-2 list-disc space-y-2 p-4 pl-8">
-            {chapter.keyPoints.map((point) => (
-              <li key={point}>{point}</li>
-            ))}
-          </ul>
-        </section>
-      )}
+      </div>
 
       {shown.length > 0 && (
         <section aria-labelledby="questions-title" className="space-y-4">
