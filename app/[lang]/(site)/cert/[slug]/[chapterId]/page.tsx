@@ -100,11 +100,12 @@ export default async function ChapterPage({ params }: Props) {
       </header>
 
       {chapter.keyPoints.length > 0 && (
-        <section aria-labelledby="keypoints-title">
-          <h2 id="keypoints-title" className="text-xl font-bold">
+        // 개념 정리 페이지의 "개요" 상자와 같은 모양: 왼쪽 주황 줄 + 상자 안 주황 제목
+        <section aria-labelledby="keypoints-title" className="card space-y-2 border-l-4 border-l-primary p-6">
+          <h2 id="keypoints-title" className="text-lg font-bold text-accent">
             {fmt(m.chapter.keyPointsTitle, { name: chapter.name })}
           </h2>
-          <ul className="card mt-2 list-disc space-y-2 p-4 pl-8">
+          <ul className="list-disc space-y-2 pl-6">
             {chapter.keyPoints.map((point) => (
               <li key={point}>{point}</li>
             ))}

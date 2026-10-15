@@ -78,6 +78,11 @@ export default async function ConceptChapterPage({ params }: Props) {
   const prev = neighbor(concepts.chapters[index - 1]);
   const next = neighbor(concepts.chapters[index + 1]);
 
+  // 제목 "{시험명} {단원} 개념 정리" 를 시험명 / 나머지 두 줄로 나눈다 (시험명으로 시작하지 않으면 한 줄)
+  const titleLines = meta.h1.startsWith(`${cert.name} `)
+    ? [cert.name, meta.h1.slice(cert.name.length + 1)]
+    : [meta.h1];
+
   return (
     <article className="mx-auto max-w-3xl space-y-8">
       <JsonLd data={articleJsonLd(lang, meta, entry.verifiedAt)} />
@@ -91,9 +96,18 @@ export default async function ConceptChapterPage({ params }: Props) {
         ]}
       />
 
-      <header className="space-y-4">
-        <p className="text-sm text-ink-sub">{fmt(m.concepts.eyebrowChapter, { cert: cert.name, subject: subject.name })}</p>
-        <h1 className="text-xl font-bold leading-snug sm:text-2xl">{meta.h1}</h1>
+      {/* 제목은 두 줄로: 위 작은 줄 = 시험 이름, 아래 큰 줄 = "{단원} 개념 정리". 가운데 맞춤 + 아래 구분선 (단원 핵심정리 페이지와 같은 모양) */}
+      <header className="space-y-4 border-b border-line-soft pb-6 text-center">
+        <h1 className="text-balance">
+          {titleLines.length === 2 ? (
+            <>
+              <span className="block text-lg font-normal text-ink-sub">{titleLines[0]}</span>{" "}
+              <span className="mt-1 block text-2xl font-bold leading-tight">{titleLines[1]}</span>
+            </>
+          ) : (
+            <span className="block text-2xl font-bold leading-tight">{meta.h1}</span>
+          )}
+        </h1>
         <p className="text-sm text-ink-sub">
           {m.common.importance} <Stars value={chapter.importance} /> ·{" "}
           {fmt(m.concepts.weightEstimated, { n: chapter.examWeight })}
@@ -166,7 +180,7 @@ export default async function ConceptChapterPage({ params }: Props) {
           )}
         </div>
         <p>
-          <Link href={overview.path} className="link inline-flex min-h-11 items-center">
+          <Link href={overview.path} className="btn btn-primary btn-lg w-full">
             {fmt(m.concepts.toOverview, { cert: cert.name })}
           </Link>
         </p>
