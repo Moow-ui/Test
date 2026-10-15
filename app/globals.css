@@ -2,10 +2,10 @@
 /* 색·글자 크기·굵기·간격·모서리는 디자인 토큰 파일 하나에만 (app/tokens.css) */
 @import "./tokens.css";
 
-/* 다크모드는 <html class="dark"> 로 켠다 (상단의 "어둡게" 버튼) */
+/* 다크모드는 <html class="dark"> 로 켠다 (상단 "Aa" 팝오버의 "어둡게") */
 @custom-variant dark (&:where(.dark, .dark *));
 
-/* 글자 크기 3단계 (상단의 "가 가 가"): 기본 18px. rem 단위로 적은 모든 글자가 함께 커진다. 여백은 px(8px 단위)라 그대로 */
+/* 글자 크기 3단계 (상단 "Aa" 팝오버의 작게·보통·크게): 기본 18px. rem 단위로 적은 모든 글자가 함께 커진다. 여백은 px(8px 단위)라 그대로 */
 html {
   font-size: 18px;
   -webkit-text-size-adjust: 100%;
@@ -76,6 +76,14 @@ summary::-webkit-details-marker {
     font-weight: 600;
     text-decoration: underline;
     text-underline-offset: 3px;
+  }
+  /*
+   * 주황을 CTA 버튼·별에만 쓰는 화면 (단원 핵심정리): 이 안에서는 링크·글자 강조는 회색, 기출 배지 같은 옅은 주황 면은 회색 면으로.
+   * 주 버튼(.btn-primary, --primary)과 별(--star)은 그대로 주황이다.
+   */
+  .muted-accent {
+    --accent: var(--ink-sub);
+    --primary-soft: var(--surface-2);
   }
 
   /*

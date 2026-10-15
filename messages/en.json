@@ -48,12 +48,15 @@
     "fontButton": "Text size: {size}",
     "sample": "A",
     "sizes": {
-      "md": "Normal",
-      "lg": "Large",
-      "xl": "Extra large"
+      "md": "Small",
+      "lg": "Medium",
+      "xl": "Large"
     },
     "light": "Light",
-    "dark": "Dark"
+    "dark": "Dark",
+    "menu": "Text & display settings",
+    "menuIcon": "Aa",
+    "theme": "Display"
   },
   "common": {
     "show": "▼ Show",
@@ -196,23 +199,22 @@
     "seeConceptLabel": "{name} concepts"
   },
   "chapter": {
-    "eyebrow": "{cert} · {subject}",
-    "importanceValue": "({n} / 5)",
-    "weight": "Weight",
-    "weightValue": "About {expected} of {total} {subject} questions ({weight}%)",
+    "metaImportance": "Importance {n}/5",
+    "metaWeightSingle": "About {expected} questions per exam ({weight}%)",
+    "metaWeight": "About {expected} of {total} {subject} questions ({weight}%)",
     "keyPointsTitle": "{name}: must-know points",
+    "practicePast": "Practice past questions from this unit →",
+    "practice": "Practice questions from this unit →",
+    "moreConcepts": "Read the full concept review",
     "questionsTitle": "{name}: {n} sample questions",
-    "solveLabel": "Practice",
-    "solveHint": "Test yourself.",
-    "solveN": "{name}: {n} questions →",
     "otherLabel": "Other units",
     "prev": "← Previous: {name}",
     "next": "Next: {name} →",
     "othersTitle": "Other units in {subject}",
     "back": "Back to {cert} exam outline →",
-    "byAiReviewed": "Written by AI · Reviewed by staff",
-    "byAi": "Written by AI · Not yet reviewed by staff",
-    "byStaff": "Written by staff"
+    "byStaff": "Written by our staff.",
+    "byAiReviewed": "Written by AI and reviewed by our staff.",
+    "byAi": "Written by AI. Not yet reviewed by our staff."
   },
   "past": {
     "crumbPast": "Past questions",
@@ -549,7 +551,6 @@
     "deleteConfirm": "Delete this review? This cannot be undone."
   },
   "concepts": {
-    "seeChapter": "📖 See {name} concepts →",
     "coreTitle": "Key concepts",
     "h1": "{name} Concept Review",
     "chapterH1": "{name}: {chapter} Concepts",
@@ -625,7 +626,7 @@
     "chapter": {
       "title": "{name} {chapter}: Summary & {kind} | {brand}",
       "description": "Key points and sample questions for '{chapter}' in the {subject} section of {name}. Weight in section {weight}%, importance {importance}/5. {summary}",
-      "h1": "{name} {chapter} Summary",
+      "h1": "{chapter}: Summary",
       "kindPast": "Past Questions",
       "kindPredicted": "Practice Questions"
     },

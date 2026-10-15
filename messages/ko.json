@@ -48,12 +48,15 @@
     "fontButton": "글씨 {size}",
     "sample": "가",
     "sizes": {
-      "md": "보통",
-      "lg": "크게",
-      "xl": "아주 크게"
+      "md": "작게",
+      "lg": "보통",
+      "xl": "크게"
     },
     "light": "밝게",
-    "dark": "어둡게"
+    "dark": "어둡게",
+    "menu": "글씨·화면 설정",
+    "menuIcon": "Aa",
+    "theme": "화면"
   },
   "common": {
     "show": "▼ 보기",
@@ -196,23 +199,22 @@
     "seeConceptLabel": "{name} 개념 보기"
   },
   "chapter": {
-    "eyebrow": "{cert} 필기 · {subject} 과목",
-    "importanceValue": "({n} / 5)",
-    "weight": "출제 비중",
-    "weightValue": "{subject} {total}문항 중 약 {expected}문항 ({weight}%)",
+    "metaImportance": "중요도 {n}/5",
+    "metaWeightSingle": "매회 약 {expected}문항 ({weight}%)",
+    "metaWeight": "{subject} {total}문항 중 약 {expected}문항 ({weight}%)",
     "keyPointsTitle": "{name}, 이것만은 꼭 외우세요",
+    "practicePast": "이 단원 기출 풀어보기 →",
+    "practice": "이 단원 문제 풀어보기 →",
+    "moreConcepts": "개념 정리 자세히 보기",
     "questionsTitle": "{name} 대표 문제 {n}개",
-    "solveLabel": "문제 풀기",
-    "solveHint": "직접 풀어서 확인해 보세요.",
-    "solveN": "{name} {n}문제 풀기 →",
     "otherLabel": "다른 단원",
     "prev": "← 이전 단원: {name}",
     "next": "다음 단원: {name} →",
     "othersTitle": "{subject} 과목의 다른 단원",
     "back": "{cert} 출제 분석으로 돌아가기 →",
-    "byAiReviewed": "AI 작성 · 운영진 검수",
-    "byAi": "AI 작성 · 운영진 검수 전",
-    "byStaff": "운영진 작성"
+    "byStaff": "운영진이 작성했습니다.",
+    "byAiReviewed": "AI가 작성했으며 운영진이 검수했습니다.",
+    "byAi": "AI가 작성했으며 운영진 검수 전입니다."
   },
   "past": {
     "crumbPast": "기출문제",
@@ -549,7 +551,6 @@
     "deleteConfirm": "이 후기를 삭제할까요? 되돌릴 수 없습니다."
   },
   "concepts": {
-    "seeChapter": "📖 {name} 개념 정리 보기 →",
     "coreTitle": "핵심 개념",
     "h1": "{name} 개념 정리",
     "chapterH1": "{name} {chapter} 개념 정리",
@@ -625,7 +626,7 @@
     "chapter": {
       "title": "{name} {chapter} 핵심정리·{kind} | {brand}",
       "description": "{name} {subject} 과목 '{chapter}' 단원의 핵심 정리와 대표 문제입니다. 과목 내 출제 비중 {weight}%, 중요도 {importance}/5. {summary}",
-      "h1": "{name} {chapter} 핵심정리",
+      "h1": "{chapter} 핵심정리",
       "kindPast": "기출문제",
       "kindPredicted": "예상문제"
     },

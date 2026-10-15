@@ -3,7 +3,7 @@ import { DisplayControls } from "./DisplayControls";
 
 /**
  * 모든 화면 맨 위의 막대 하나: 왼쪽은 화면마다 다르고(사이트 이름·메뉴, 시험 화면은 나가기),
- * 오른쪽은 늘 같은 자리에 글자 크기·어둡게 버튼.
+ * 오른쪽은 늘 같은 자리에 화면 설정("Aa": 글자 크기·어둡게) 버튼.
  * 글자 크기 설정과 상관없이 높이가 일정하도록 안쪽은 px 단위를 쓴다.
  */
 export function TopBar({ children, wide = false }: { children: ReactNode; wide?: boolean }) {
