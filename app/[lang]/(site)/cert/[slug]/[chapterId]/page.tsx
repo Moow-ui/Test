@@ -82,10 +82,6 @@ export default async function ChapterPage({ params }: Props) {
       />
 
       <header className="space-y-4">
-        <div className="flex flex-wrap items-center justify-between gap-2">
-          <p className="font-bold text-ink-sub">{fmt(m.chapter.eyebrow, { cert: cert.name, subject: subject.name })}</p>
-          <span className="rounded-full bg-surface-2 px-3 py-1 text-sm font-bold text-ink-sub">{notesBy}</span>
-        </div>
         <h1 className="text-xl font-bold leading-snug sm:text-2xl">{meta.h1}</h1>
       </header>
 
@@ -195,6 +191,9 @@ export default async function ChapterPage({ params }: Props) {
       </nav>
 
       <IssuerNotice locale={lang} cert={cert} />
+
+      {/* 작성 주체 안내는 맨 아래 작은 회색 글씨로 (AI·운영진이 쓴 글은 그렇다고 표시한다) */}
+      <p className="text-sm text-ink-sub">{notesBy}</p>
     </article>
   );
 }
