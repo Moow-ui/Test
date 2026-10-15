@@ -2,7 +2,7 @@ import Link from "next/link";
 import { QuestionImage } from "@/components/QuestionImage";
 import { Stars } from "@/components/Stars";
 import { fmt, getMessages, type Locale } from "@/lib/i18n";
-import type { ConceptChapter } from "@/lib/types";
+import type { Certification, ConceptChapter } from "@/lib/types";
 
 /**
  * 개념 정리 화면(/cert/{slug}/concepts, /cert/{slug}/concepts/{단원})의 공통 부품.
@@ -17,6 +17,38 @@ export function ConceptByline({ locale, by }: { locale: Locale; by: "ai" | "staf
       {by === "staff" ? m.byStaff : m.byAiVerified}
       {by === "ai" && <> · {m.byInfo}</>}
     </p>
+  );
+}
+
+/** 시험 방식 설명의 첫 마디만 ("객관식 4지 택일형, 컴퓨터로 보는 CBT 방식" → "객관식 4지 택일형") */
+function shortFormat(format: string): string {
+  return format.split(/[,.]/)[0].trim();
+}
+
+/** 시험 정보 상자 (개념 정리 전체 페이지 아래쪽): 시험 형태 · 과목 수·문항 수 · 시간 / 합격 기준 / 출처(시행기관 · 확인 연도) */
+export function ExamSummary({ locale, cert }: { locale: Locale; cert: Certification }) {
+  const m = getMessages(locale).concepts;
+  const info = cert.examInfo;
+  if (!info) return null;
+  const pass = info.passCriteria;
+  const year = Number((cert.updatedAt ?? "").slice(0, 4)) || null;
+  return (
+    <section aria-label={m.summaryLabel} className="card space-y-2 p-6">
+      <p className="text-lg font-bold">
+        {fmt(m.summary, {
+          format: shortFormat(info.format),
+          subjects: cert.subjects.length,
+          total: info.totalQuestions,
+          minutes: info.timeLimitMinutes,
+        })}
+      </p>
+      <p className="font-bold">
+        {pass.subjectMinScore === null
+          ? fmt(m.passAvg, { avg: pass.averageScore })
+          : fmt(m.passWithMin, { avg: pass.averageScore, min: pass.subjectMinScore })}
+      </p>
+      {year && <p className="text-sm text-ink-sub">{fmt(m.sourceLine, { org: cert.issuer.name, year })}</p>}
+    </section>
   );
 }
 
