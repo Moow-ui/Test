@@ -118,7 +118,7 @@ export default async function ChapterPage({ params }: Props) {
         </dl>
         <p>{chapter.summary}</p>
         {hasConcept && (
-          <Link href={`${certPath}/concepts/${chapter.id}`} className="link inline-flex min-h-11 items-center">
+          <Link href={`${certPath}/concepts/${chapter.id}`} className="btn btn-lg w-full">
             {fmt(m.concepts.seeChapter, { name: chapter.name })}
           </Link>
         )}
