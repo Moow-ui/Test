@@ -434,5 +434,138 @@
         3
       ]
     }
+  },
+  {
+    "id": "driver-license-written-signals-signs-0013",
+    "certId": "driver-license-written",
+    "subjectId": "driving-test",
+    "chapterId": "signals-signs",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "그림의 안전표지가 있는 곳에서 바른 운전 방법은?",
+    "choices": [
+      "속도를 줄여 천천히 지나가면 된다",
+      "다른 차나 사람이 없으면 멈추지 않고 지나가도 된다",
+      "정지선 직전에서 반드시 일시정지한 뒤 안전을 확인하고 진행한다",
+      "이 앞에서는 주차와 정차만 할 수 없다"
+    ],
+    "answer": 3,
+    "oneLineConcept": "빨간 팔각형 '정지' 표지 = 반드시 일시정지한 뒤 확인하고 진행",
+    "explanation": "빨간 바탕의 팔각형에 '정지 STOP'이 적힌 표지는 **일시정지** 규제표지입니다. 이 표지가 있는 곳에서는 다른 차가 보이지 않아도 정지선(정지선이 없으면 교차로) 직전에서 바퀴를 완전히 멈춘 뒤, 좌우를 살피고 진행합니다.\n\n**틀린 선지**\n- 속도를 줄여 천천히 지나가면 된다: 이것은 '천천히(서행)' 표지의 뜻입니다. 정지 표지에서는 완전히 멈춰야 합니다.\n- 다른 차나 사람이 없으면 멈추지 않고 지나가도 된다: 주변에 아무도 없어도 반드시 일시정지해야 합니다.\n- 이 앞에서는 주차와 정차만 할 수 없다: 주정차 금지 표지의 뜻입니다. 정지 표지는 멈췄다가 가라는 뜻입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-17",
+    "tags": [
+      "규제표지",
+      "일시정지",
+      "그림"
+    ],
+    "image": "sign-regulatory-stop.svg",
+    "imageAlt": "흰 테두리가 둘린 빨간 바탕의 팔각형 표지판이다. 가운데에 흰 글자로 큰 한글 두 글자가 있고, 그 아래에 영어 대문자 네 글자가 적혀 있다",
+    "imageSource": {
+      "kind": "public",
+      "title": "도로교통법 시행규칙 별표6 안전표지",
+      "license": "법령(저작권법 제7조 보호받지 못하는 저작물)을 다시 그림"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "driver-license-written-signals-signs-0014",
+    "certId": "driver-license-written",
+    "subjectId": "driving-test",
+    "chapterId": "signals-signs",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "그림의 안전표지가 뜻하는 것은?",
+    "choices": [
+      "이 도로는 한쪽 방향으로만 다니는 일방통행 도로이다",
+      "차는 직진하여야 한다",
+      "직진을 금지한다",
+      "앞쪽에 오르막 경사가 있다"
+    ],
+    "answer": 2,
+    "oneLineConcept": "파란 원에 흰 위쪽 화살표 = 직진하라는 지시표지",
+    "explanation": "파란 바탕의 원 안에 흰 화살표가 위쪽을 가리키는 표지는 **직진 지시표지**입니다. 지시표지는 파란 바탕으로 '이렇게 하시오'라는 통행 방법을 알려 주며, 이 표지는 차가 직진해야 한다는 뜻입니다.\n\n**틀린 선지**\n- 이 도로는 한쪽 방향으로만 다니는 일방통행 도로이다: 일방통행 표지는 화살표와 함께 '일방통행' 글자가 적힌 표지입니다.\n- 직진을 금지한다: 금지는 빨간 테두리의 규제표지가 나타냅니다. 파란 바탕은 지시입니다.\n- 앞쪽에 오르막 경사가 있다: 오르막 경사는 노란 삼각형의 주의표지로 알립니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-17",
+    "tags": [
+      "지시표지",
+      "직진",
+      "그림"
+    ],
+    "image": "sign-mandatory-straight.svg",
+    "imageAlt": "흰 테두리가 둘린 파란 바탕의 원형 표지판이다. 원 가운데에 굵은 흰 화살표 하나가 곧게 위쪽을 가리키고 있으며 글자는 없다",
+    "imageSource": {
+      "kind": "public",
+      "title": "도로교통법 시행규칙 별표6 안전표지",
+      "license": "법령(저작권법 제7조 보호받지 못하는 저작물)을 다시 그림"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "driver-license-written-signals-signs-0015",
+    "certId": "driver-license-written",
+    "subjectId": "driving-test",
+    "chapterId": "signals-signs",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "그림의 안전표지는 어느 종류의 안전표지인가?",
+    "choices": [
+      "주의표지",
+      "지시표지",
+      "보조표지",
+      "규제표지"
+    ],
+    "answer": 4,
+    "oneLineConcept": "역삼각형 '천천히(서행)' 표지는 원형이 아니어도 규제표지",
+    "explanation": "빨간 테두리의 **역삼각형**에 '천천히 SLOW'가 적힌 표지는 **서행 규제표지**입니다. 규제표지는 빨간 테두리의 원형이 많지만, 서행 표지(역삼각형)와 일시정지 표지(빨간 팔각형)처럼 원형이 아닌 것도 있습니다. 차가 속도를 줄여 천천히 가도록 통행을 제한하므로 규제표지입니다.\n\n**틀린 선지**\n- 주의표지: 주의표지는 노란 바탕에 꼭짓점이 위로 향한 삼각형입니다. 그림은 흰 바탕에 꼭짓점이 아래로 향합니다.\n- 지시표지: 지시표지는 파란 바탕입니다.\n- 보조표지: 보조표지는 다른 표지 아래에 붙어 시간·거리 등을 보충하는 표지입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-17",
+    "tags": [
+      "규제표지",
+      "서행",
+      "표지 종류",
+      "그림"
+    ],
+    "image": "sign-regulatory-slow.svg",
+    "imageAlt": "빨간 테두리가 있는 흰 바탕의 삼각형 표지판으로, 꼭짓점 하나가 아래를 향하고 위쪽이 평평하다. 안쪽 위에 검은 한글 세 글자, 그 아래에 검은 영어 대문자 네 글자가 적혀 있다",
+    "imageSource": {
+      "kind": "public",
+      "title": "도로교통법 시행규칙 별표6 안전표지",
+      "license": "법령(저작권법 제7조 보호받지 못하는 저작물)을 다시 그림"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
   }
 ]
