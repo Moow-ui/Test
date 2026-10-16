@@ -1,0 +1,21 @@
+{
+  "chapters": {
+    "signs-signals-markings": { "result": "PASS", "issues": [] },
+    "right-of-way-intersections": { "result": "PASS", "issues": [] },
+    "speed-passing-parking": { "result": "PASS", "issues": [] },
+    "safe-driving": {
+      "result": "PASS",
+      "issues": [
+        "(optional, not a FAIL) 'If you cannot move over, slow down.' → correct but vague; PennDOT Move Over page says pass at no more than 20 mph below the posted limit → could add 'to at least 20 mph below the posted limit' with the existing PennDOT Move Over source."
+      ]
+    },
+    "licensing-gdl": {
+      "result": "PASS",
+      "issues": [
+        "(optional, not a FAIL) 'To get it you pass a vision screening and the 18-question knowledge test, answering at least 15 correctly.' → omits the required physical exam form (DL-180) and parent/guardian consent for under 18 → could say 'Along with a physical exam form and, if under 18, parent or guardian consent, you pass a vision screening and ...'."
+      ]
+    },
+    "alcohol-laws-points": { "result": "PASS", "issues": [] }
+  },
+  "figure": { "sign-shapes-chart.svg": "①PASS ②PASS ③PASS ⑤PASS" }
+}
