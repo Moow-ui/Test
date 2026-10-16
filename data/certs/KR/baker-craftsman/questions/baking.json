@@ -1,0 +1,427 @@
+[
+  {
+    "id": "baker-craftsman-baking-0001",
+    "certId": "baker-craftsman",
+    "subjectId": "written",
+    "chapterId": "baking",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "반죽을 오븐에 넣은 초기에 반죽이 갑자기 크게 부풀어 오르는 현상은?",
+    "choices": [
+      "오븐 라이즈",
+      "노화",
+      "오븐 스프링",
+      "캐러멜화"
+    ],
+    "answer": 3,
+    "oneLineConcept": "오븐 스프링 = 굽기 초기에 반죽이 급히 부푸는 것",
+    "explanation": "**오븐 스프링**은 굽기 초기에 반죽 속 가스가 열을 받아 팽창하고, 녹아 있던 가스와 알코올이 기체로 바뀌면서 반죽이 갑자기 부푸는 현상입니다. 반죽 속 온도가 오르면 이스트가 죽고 반죽이 굳어 부풀기가 멈춥니다.\n\n**틀린 선지**\n- 오븐 라이즈: 반죽 속 온도가 아직 낮을 때 이스트가 계속 활동해 조금씩 부푸는 것으로, 갑자기 크게 부푸는 현상과는 구별합니다.\n- 노화: 구운 빵이 시간이 지나며 딱딱해지는 현상입니다.\n- 캐러멜화: 당이 높은 열에 갈색으로 변하는 현상입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-17",
+    "tags": [
+      "굽기",
+      "오븐스프링"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "baker-craftsman-baking-0002",
+    "certId": "baker-craftsman",
+    "subjectId": "written",
+    "chapterId": "baking",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "굽는 동안 전분이 물을 흡수해 부풀고 익어 부드럽게 소화되기 쉬운 상태가 되는 현상은?",
+    "choices": [
+      "노화",
+      "산패",
+      "유화",
+      "호화"
+    ],
+    "answer": 4,
+    "oneLineConcept": "호화 = 전분 + 물 + 열 → 익어 부드러워짐",
+    "explanation": "날 전분은 단단하고 소화가 잘 되지 않습니다. 물과 열을 만나 전분 알갱이가 물을 흡수해 부풀고 익는 것을 **호화**라고 합니다. 빵 속이 익어 부드러워지는 것이 이 때문입니다.\n\n**틀린 선지**\n- 노화: 익은 전분이 식으면서 다시 딱딱해지는 현상으로, 호화와 반대입니다.\n- 산패: 기름이 상해 냄새·맛이 나빠지는 현상입니다.\n- 유화: 기름과 물이 고르게 섞이는 현상입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-17",
+    "tags": [
+      "굽기",
+      "전분",
+      "호화"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "baker-craftsman-baking-0003",
+    "certId": "baker-craftsman",
+    "subjectId": "written",
+    "chapterId": "baking",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "반죽을 수증기로 익히는 방법(찌기)으로 만드는 대표 제품은?",
+    "choices": [
+      "찐빵",
+      "도넛",
+      "바게트",
+      "식빵"
+    ],
+    "answer": 1,
+    "oneLineConcept": "찌기 = 수증기로 익힘 (찐빵·호빵)",
+    "explanation": "찌기는 끓는 물에서 나오는 **수증기의 열**로 반죽을 익히는 방법입니다. 껍질이 갈색으로 변하지 않고 촉촉하게 익어 찐빵·호빵 같은 제품에 씁니다.\n\n**틀린 선지**\n- 도넛: 기름에 튀겨서 익히는 제품입니다.\n- 바게트: 오븐에서 굽는 제품입니다.\n- 식빵: 오븐에서 굽는 제품입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-17",
+    "tags": [
+      "익히기",
+      "찌기"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "baker-craftsman-baking-0004",
+    "certId": "baker-craftsman",
+    "subjectId": "written",
+    "chapterId": "baking",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "식빵 반죽 500g을 구웠더니 빵의 무게가 450g이 되었다. 굽기 손실률은?",
+    "choices": [
+      "5%",
+      "10%",
+      "11.1%",
+      "50%"
+    ],
+    "answer": 2,
+    "oneLineConcept": "굽기 손실률 = (반죽 − 빵) ÷ 반죽 × 100",
+    "explanation": "굽기 손실은 굽는 동안 수분 등이 날아가 줄어든 무게입니다. 굽기 전 반죽 무게를 기준으로 나눕니다.\n\n1. 줄어든 무게: 500 − 450 = 50g\n2. 손실률 = 50 ÷ 500 × 100\n3. 답: **10%**\n\n검산: 500 × 0.9 = 450g\n\n**틀린 선지**\n- 5%: 계산과 맞지 않는 값입니다.\n- 11.1%: 줄어든 무게를 굽기 전 반죽이 아니라 구운 뒤 빵 무게(450g)로 나눈 값입니다.\n- 50%: 줄어든 무게 50g을 그대로 %로 적은 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-17",
+    "tags": [
+      "굽기손실",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "baker-craftsman-baking-0005",
+    "certId": "baker-craftsman",
+    "subjectId": "written",
+    "chapterId": "baking",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "설탕 같은 당이 단독으로 높은 온도에서 가열되어 갈색으로 변하고 향이 나는 반응은?",
+    "choices": [
+      "메일라드 반응",
+      "캐러멜화 반응",
+      "호화",
+      "유화"
+    ],
+    "answer": 2,
+    "oneLineConcept": "캐러멜화 = 당만 고온 가열 → 갈색",
+    "explanation": "**캐러멜화**는 당이 혼자 높은 온도에서 분해되며 갈색으로 변하고 고소한 향을 내는 반응입니다. 빵 껍질 색은 캐러멜화와 메일라드 반응이 함께 만듭니다.\n\n**틀린 선지**\n- 메일라드 반응: 당과 아미노산(단백질)이 함께 반응해 갈색이 되는 것으로, 당만으로 일어나는 반응이 아닙니다.\n- 호화: 전분이 물과 열로 익는 현상입니다.\n- 유화: 기름과 물이 섞이는 현상입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-17",
+    "tags": [
+      "굽기",
+      "갈색화"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "baker-craftsman-baking-0006",
+    "certId": "baker-craftsman",
+    "subjectId": "written",
+    "chapterId": "baking",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "빵 껍질에서 환원당과 아미노산(단백질)이 함께 반응해 갈색과 고소한 향을 만드는 반응은?",
+    "choices": [
+      "캐러멜화 반응",
+      "효소적 갈변",
+      "메일라드 반응",
+      "호화"
+    ],
+    "answer": 3,
+    "oneLineConcept": "메일라드 = 환원당 + 아미노산 → 갈색·향",
+    "explanation": "**메일라드 반응**은 환원당과 아미노산이 열을 받아 갈색 물질과 향을 만드는 반응입니다. 캐러멜화보다 낮은 온도에서도 일어나며, 우유·달걀이 들어간 빵의 껍질 색이 진한 이유 중 하나입니다.\n\n**틀린 선지**\n- 캐러멜화 반응: 당만 단독으로 높은 열에서 갈색이 되는 반응입니다.\n- 효소적 갈변: 사과를 깎으면 갈색이 되는 것처럼 효소가 일으키는 갈변입니다.\n- 호화: 전분이 물과 열로 익는 현상으로 갈색 반응이 아닙니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-17",
+    "tags": [
+      "굽기",
+      "갈색화"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "baker-craftsman-baking-0007",
+    "certId": "baker-craftsman",
+    "subjectId": "written",
+    "chapterId": "baking",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "도넛을 튀길 때 알맞은 기름 온도는?",
+    "choices": [
+      "120~130°C",
+      "150~160°C",
+      "180~195°C",
+      "230~240°C"
+    ],
+    "answer": 3,
+    "oneLineConcept": "도넛 튀김 기름 온도 = 180~195°C",
+    "explanation": "도넛은 보통 **180~195°C**의 기름에서 튀깁니다. 온도가 낮으면 기름을 많이 먹고, 너무 높으면 겉만 타고 속이 덜 익습니다.\n\n**틀린 선지**\n- 120~130°C: 너무 낮아 기름을 많이 먹고 늦게 익습니다.\n- 150~160°C: 낮은 편이라 기름을 많이 흡수하기 쉽습니다.\n- 230~240°C: 너무 높아 겉은 타고 속은 덜 익기 쉬우며 기름도 빨리 나빠집니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-17",
+    "tags": [
+      "익히기",
+      "튀기기",
+      "도넛"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "baker-craftsman-baking-0008",
+    "certId": "baker-craftsman",
+    "subjectId": "written",
+    "chapterId": "baking",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "도넛이 기름을 지나치게 많이 흡수하는 원인으로 옳은 것은?",
+    "choices": [
+      "튀김 기름의 온도가 너무 높다",
+      "튀기는 시간이 매우 짧다",
+      "반죽의 수분이 적다",
+      "튀김 기름의 온도가 너무 낮다"
+    ],
+    "answer": 4,
+    "oneLineConcept": "흡유 과다 원인: 낮은 기름 온도, 긴 튀김 시간",
+    "explanation": "기름 온도가 낮으면 겉이 빨리 굳지 않고 튀기는 시간도 길어져 **기름을 많이 흡수**합니다. 반죽에 수분·설탕·유지가 많거나 반죽이 질 때도 흡유가 늘어납니다.\n\n**틀린 선지**\n- 튀김 기름의 온도가 너무 높다: 온도가 높으면 겉이 빨리 굳어 기름 흡수는 오히려 줄고 겉이 타기 쉽습니다.\n- 튀기는 시간이 매우 짧다: 튀기는 시간이 길수록 기름을 많이 흡수합니다.\n- 반죽의 수분이 적다: 반죽의 수분이 많을 때 기름을 많이 흡수합니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-17",
+    "tags": [
+      "익히기",
+      "튀기기",
+      "도넛"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "baker-craftsman-baking-0009",
+    "certId": "baker-craftsman",
+    "subjectId": "written",
+    "chapterId": "baking",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "빵을 낮은 온도에서 너무 오래 구웠을 때(오버 베이킹) 나타나는 결과는?",
+    "choices": [
+      "수분이 많이 빠져 껍질이 두껍고 노화가 빨라진다",
+      "속이 덜 익어 끈적거린다",
+      "수분이 많이 남아 주저앉기 쉽다",
+      "껍질이 얇고 색이 옅다"
+    ],
+    "answer": 1,
+    "oneLineConcept": "오버 베이킹 → 수분 손실↑, 두꺼운 껍질, 빠른 노화",
+    "explanation": "낮은 온도에서 오래 구우면(**오버 베이킹**) 수분이 많이 날아가 **껍질이 두껍고 속이 건조해져 빨리 딱딱해집니다**(노화). 반대로 높은 온도에서 짧게 구우면(언더 베이킹) 속이 덜 익고 주저앉기 쉽습니다.\n\n**틀린 선지**\n- 속이 덜 익어 끈적거린다: 높은 온도에서 짧게 구웠을 때(언더 베이킹)의 결과입니다.\n- 수분이 많이 남아 주저앉기 쉽다: 언더 베이킹의 결과입니다.\n- 껍질이 얇고 색이 옅다: 굽는 시간이 짧을 때의 결과에 가깝습니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-17",
+    "tags": [
+      "굽기",
+      "제품평가"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "baker-craftsman-baking-0010",
+    "certId": "baker-craftsman",
+    "subjectId": "written",
+    "chapterId": "baking",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "굽는 동안 반죽 속 온도가 오르면서 이스트가 죽어 활동을 멈추는 온도로 알맞은 것은?",
+    "choices": [
+      "약 30°C",
+      "약 40°C",
+      "약 60°C",
+      "약 120°C"
+    ],
+    "answer": 3,
+    "oneLineConcept": "이스트는 약 60°C 전후에서 죽는다",
+    "explanation": "오븐에서 반죽 속 온도가 오르면 이스트는 한동안 더 활발해졌다가 **약 60°C 전후**에서 죽습니다. 이 무렵 전분 호화와 단백질 응고가 진행되며 빵의 형태가 굳습니다.\n\n**틀린 선지**\n- 약 30°C: 이스트가 가장 활발한 온도 범위에 가깝습니다.\n- 약 40°C: 발효실보다 조금 높은 온도로, 이스트가 아직 살아 있습니다.\n- 약 120°C: 이스트는 이보다 훨씬 낮은 온도에서 이미 죽습니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-17",
+    "tags": [
+      "굽기",
+      "이스트"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "baker-craftsman-baking-0011",
+    "certId": "baker-craftsman",
+    "subjectId": "written",
+    "chapterId": "baking",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "설탕·유지가 많은 고율배합이고 반죽 양이 많은 빵을 굽는 방법으로 알맞은 것은?",
+    "choices": [
+      "높은 온도에서 짧게 굽는다",
+      "낮은 온도에서 오래 굽는다",
+      "저율배합 빵과 같은 온도·시간으로 굽는다",
+      "처음부터 끝까지 오븐의 가장 높은 온도로 굽는다"
+    ],
+    "answer": 2,
+    "oneLineConcept": "고율배합·많은 양 → 낮은 온도에서 오래",
+    "explanation": "설탕·유지가 많은 **고율배합**은 껍질 색이 빨리 나고, 반죽 양이 많으면 속까지 익는 데 시간이 걸립니다. 그래서 **낮은 온도에서 오래** 굽습니다. 저율배합이고 양이 적으면 높은 온도에서 짧게 굽습니다.\n\n**틀린 선지**\n- 높은 온도에서 짧게 굽는다: 저율배합이고 반죽 양이 적은 빵을 굽는 방법입니다.\n- 저율배합 빵과 같은 온도·시간으로 굽는다: 배합과 반죽 양에 따라 온도와 시간을 바꿔야 합니다.\n- 처음부터 끝까지 오븐의 가장 높은 온도로 굽는다: 겉만 타고 속은 덜 익습니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-17",
+    "tags": [
+      "굽기"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "baker-craftsman-baking-0012",
+    "certId": "baker-craftsman",
+    "subjectId": "written",
+    "chapterId": "baking",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "튀김 기름을 빨리 나빠지게(산패) 하는 요인이 아닌 것은?",
+    "choices": [
+      "높은 온도(열)",
+      "물(수분)",
+      "공기 속의 산소",
+      "빛을 막고 서늘한 곳에 보관하기"
+    ],
+    "answer": 4,
+    "oneLineConcept": "기름을 나쁘게 하는 4가지: 열·물·산소·이물질",
+    "explanation": "튀김 기름을 나쁘게 하는 요인은 **열(온도), 물(수분), 공기(산소), 이물질**입니다. 빛을 막고 서늘한 곳에 보관하는 것은 오히려 기름이 나빠지는 것을 늦추는 방법이므로 요인이 아닙니다.\n\n**틀린 선지**\n- 높은 온도(열): 기름을 빨리 나빠지게 하는 요인입니다.\n- 물(수분): 기름을 분해해 나빠지게 하는 요인입니다.\n- 공기 속의 산소: 기름을 산화시켜 나빠지게 하는 요인입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-17",
+    "tags": [
+      "익히기",
+      "튀기기",
+      "유지"
+    ],
+    "levelLock": true
+  }
+]

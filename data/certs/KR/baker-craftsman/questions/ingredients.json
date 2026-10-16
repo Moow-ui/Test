@@ -1,0 +1,997 @@
+[
+  {
+    "id": "baker-craftsman-ingredients-0001",
+    "certId": "baker-craftsman",
+    "subjectId": "written",
+    "chapterId": "ingredients",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "일반 식빵을 만들 때 주로 쓰는 밀가루는?",
+    "choices": [
+      "강력분",
+      "중력분",
+      "박력분",
+      "듀럼밀 세몰리나"
+    ],
+    "answer": 1,
+    "oneLineConcept": "제빵용 밀가루 = 단백질이 많은 강력분",
+    "explanation": "빵은 글루텐(밀 단백질이 물과 만나 생기는 그물 구조)이 가스를 붙잡아야 부풉니다. 그래서 단백질이 많아 글루텐이 많이 생기는 **강력분**을 씁니다.\n\n**틀린 선지**\n- 중력분: 단백질 양이 중간이라 주로 국수(면)를 만들 때 씁니다.\n- 박력분: 단백질이 적어 글루텐이 약하게 생기므로 케이크·과자에 씁니다.\n- 듀럼밀 세몰리나: 듀럼밀을 거칠게 빻은 가루로 주로 파스타를 만들 때 씁니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-17",
+    "tags": [
+      "밀가루",
+      "강력분"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "baker-craftsman-ingredients-0002",
+    "certId": "baker-craftsman",
+    "subjectId": "written",
+    "chapterId": "ingredients",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "밀가루에 물을 넣고 반죽할 때 글루텐을 만드는 두 가지 단백질은?",
+    "choices": [
+      "알부민과 글로불린",
+      "글리아딘과 글루테닌",
+      "카세인과 유청단백질",
+      "미오신과 액틴"
+    ],
+    "answer": 2,
+    "oneLineConcept": "글루텐 = 글리아딘 + 글루테닌 + 물",
+    "explanation": "밀가루 속 **글리아딘**과 **글루테닌**이 물을 만나 치대어지면 서로 얽혀 글루텐이 됩니다. 글리아딘은 잘 늘어나는 성질(신장성)과 끈기를, 글루테닌은 되돌아가려는 힘(탄력성)을 줍니다.\n\n**틀린 선지**\n- 알부민과 글로불린: 물이나 소금물에 녹는 단백질로, 밀가루에 조금 들어 있지만 글루텐을 만들지는 않습니다.\n- 카세인과 유청단백질: 우유에 들어 있는 단백질입니다.\n- 미오신과 액틴: 고기(근육)에 들어 있는 단백질입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-17",
+    "tags": [
+      "밀가루",
+      "글루텐"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "baker-craftsman-ingredients-0003",
+    "certId": "baker-craftsman",
+    "subjectId": "written",
+    "chapterId": "ingredients",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "베이커스 퍼센트(Baker's %)로 배합표를 쓸 때 100%의 기준이 되는 재료는?",
+    "choices": [
+      "전체 재료의 무게",
+      "물",
+      "밀가루",
+      "설탕"
+    ],
+    "answer": 3,
+    "oneLineConcept": "베이커스 퍼센트 = 밀가루를 100%로 놓고 계산",
+    "explanation": "베이커스 퍼센트는 **밀가루 무게를 100%** 로 놓고, 나머지 재료를 밀가루에 대한 비율로 적는 방법입니다. 밀가루 양만 바뀌어도 다른 재료를 쉽게 다시 계산할 수 있어 빵 배합표에 씁니다.\n\n**틀린 선지**\n- 전체 재료의 무게: 전체 재료 무게를 100%로 하는 것은 트루 퍼센트(True %)입니다.\n- 물: 물은 밀가루를 기준으로 몇 %를 넣는지 나타내는 재료입니다.\n- 설탕: 설탕도 밀가루 기준으로 비율을 적는 재료입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-17",
+    "tags": [
+      "배합표",
+      "베이커스퍼센트"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "baker-craftsman-ingredients-0004",
+    "certId": "baker-craftsman",
+    "subjectId": "written",
+    "chapterId": "ingredients",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "밀가루 1,000g에 설탕을 베이커스 퍼센트로 6% 넣으려고 한다. 필요한 설탕의 양은?",
+    "choices": [
+      "6g",
+      "60g",
+      "160g",
+      "600g"
+    ],
+    "answer": 2,
+    "oneLineConcept": "재료 무게 = 밀가루 무게 × 비율(%) ÷ 100",
+    "explanation": "베이커스 퍼센트는 밀가루가 기준이므로 밀가루 무게에 비율을 곱합니다.\n\n1. 공식: 설탕 무게 = 밀가루 무게 × 설탕 비율 ÷ 100\n2. 숫자 넣기: 1,000 × 6 ÷ 100\n3. 답: **60g**\n\n검산: 60 ÷ 1,000 × 100 = 6(%)\n\n**틀린 선지**\n- 6g: 6%를 6g으로 착각한 값입니다. 밀가루 1,000g의 6%는 60g입니다.\n- 160g: 계산과 관계없는 값입니다.\n- 600g: 1,000g의 60%에 해당하는 값으로, 소수점 자리를 잘못 옮긴 것입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-17",
+    "tags": [
+      "배합표",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "baker-craftsman-ingredients-0005",
+    "certId": "baker-craftsman",
+    "subjectId": "written",
+    "chapterId": "ingredients",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "빵 반죽을 부풀게 하는 제빵용 이스트(효모)의 학명은?",
+    "choices": [
+      "락토바실러스 불가리쿠스",
+      "아스페르길루스 오리제",
+      "바실러스 서브틸리스",
+      "사카로마이세스 세레비시에"
+    ],
+    "answer": 4,
+    "oneLineConcept": "제빵용 이스트 = 사카로마이세스 세레비시에",
+    "explanation": "제빵용 이스트의 학명은 **사카로마이세스 세레비시에**입니다. 반죽 속 당을 먹고 이산화탄소와 알코올을 만들어 반죽을 부풀리고 빵에 향을 줍니다.\n\n**틀린 선지**\n- 락토바실러스 불가리쿠스: 요구르트를 만드는 젖산균(유산균)입니다.\n- 아스페르길루스 오리제: 누룩·된장을 만드는 누룩곰팡이입니다.\n- 바실러스 서브틸리스: 빵 속을 끈적이게 만드는 로프균(고초균)으로, 빵을 상하게 하는 균입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-17",
+    "tags": [
+      "이스트"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "baker-craftsman-ingredients-0006",
+    "certId": "baker-craftsman",
+    "subjectId": "written",
+    "chapterId": "ingredients",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "물의 경도(물속 칼슘·마그네슘의 양)로 보아 제빵에 가장 알맞은 물은?",
+    "choices": [
+      "연수",
+      "아연수",
+      "아경수",
+      "경수"
+    ],
+    "answer": 3,
+    "oneLineConcept": "제빵에 알맞은 물 = 아경수",
+    "explanation": "물은 경도에 따라 연수 → 아연수 → 아경수 → 경수로 나눕니다. 제빵에는 미네랄이 알맞게 들어 있어 글루텐을 적당히 단단하게 하고 이스트 영양도 되는 **아경수**가 가장 알맞습니다.\n\n**틀린 선지**\n- 연수: 단물이라 글루텐이 약해져 반죽이 끈적이고 처지기 쉽습니다.\n- 아연수: 연수에 가까운 물로, 반죽이 다소 연해집니다.\n- 경수: 센물이라 반죽이 질겨지고 발효가 늦어집니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-17",
+    "tags": [
+      "물",
+      "경도"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "baker-craftsman-ingredients-0007",
+    "certId": "baker-craftsman",
+    "subjectId": "written",
+    "chapterId": "ingredients",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "달걀노른자에 들어 있어 기름과 물이 잘 섞이게 해 주는 유화 성분은?",
+    "choices": [
+      "레시틴",
+      "카세인",
+      "펙틴",
+      "글루텐"
+    ],
+    "answer": 1,
+    "oneLineConcept": "노른자의 유화제 = 레시틴",
+    "explanation": "노른자에는 **레시틴**이 들어 있습니다. 레시틴은 기름과 물 양쪽에 붙는 성질이 있어 둘을 고르게 섞어 줍니다(유화). 그래서 노른자는 천연 유화제로 쓰입니다.\n\n**틀린 선지**\n- 카세인: 우유의 주된 단백질입니다.\n- 펙틴: 과일에 들어 있어 잼을 굳게 하는 성분입니다.\n- 글루텐: 밀가루 단백질이 물과 만나 생기는 그물 구조입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-17",
+    "tags": [
+      "달걀",
+      "유화"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "baker-craftsman-ingredients-0008",
+    "certId": "baker-craftsman",
+    "subjectId": "written",
+    "chapterId": "ingredients",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "다음 당 가운데 단맛(감미도)이 가장 강한 것은?",
+    "choices": [
+      "설탕(자당)",
+      "과당",
+      "포도당",
+      "맥아당(엿당)"
+    ],
+    "answer": 2,
+    "oneLineConcept": "단맛 세기: 과당 > 설탕 > 포도당 > 맥아당 > 유당",
+    "explanation": "설탕의 단맛을 100으로 놓고 비교하면 **과당**이 가장 달고, 그다음이 설탕, 포도당, 맥아당 순서입니다. 우유의 유당(젖당)은 단맛이 가장 약한 편입니다.\n\n**틀린 선지**\n- 설탕(자당): 단맛의 기준(100)이 되는 당으로, 과당보다 덜 답니다.\n- 포도당: 설탕보다 단맛이 약합니다.\n- 맥아당(엿당): 단맛이 약한 편이라 설탕의 절반에도 못 미칩니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-17",
+    "tags": [
+      "당류",
+      "감미도"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "baker-craftsman-ingredients-0009",
+    "certId": "baker-craftsman",
+    "subjectId": "written",
+    "chapterId": "ingredients",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "지방(지질) 1g이 내는 열량은?",
+    "choices": [
+      "4kcal",
+      "7kcal",
+      "9kcal",
+      "12kcal"
+    ],
+    "answer": 3,
+    "oneLineConcept": "열량: 탄수화물·단백질 4kcal, 지방 9kcal (1g당)",
+    "explanation": "영양소 1g이 내는 열량은 탄수화물 4kcal, 단백질 4kcal, **지방 9kcal**입니다. 버터·쇼트닝처럼 유지가 많은 빵은 열량이 높아집니다.\n\n**틀린 선지**\n- 4kcal: 탄수화물과 단백질 1g의 열량입니다.\n- 7kcal: 알코올 1g의 열량입니다.\n- 12kcal: 해당하는 영양소가 없는 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-17",
+    "tags": [
+      "영양",
+      "열량"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "baker-craftsman-ingredients-0010",
+    "certId": "baker-craftsman",
+    "subjectId": "written",
+    "chapterId": "ingredients",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "제빵 재료를 계량하는 방법으로 가장 알맞은 것은?",
+    "choices": [
+      "가루 재료는 컵으로 부피를 재어 계량한다",
+      "이스트와 소금은 한 그릇에 함께 담아 계량한다",
+      "물을 포함한 모든 재료를 저울로 무게를 달아 계량한다",
+      "적은 양의 재료는 눈대중으로 넣는다"
+    ],
+    "answer": 3,
+    "oneLineConcept": "제빵 재료는 물까지 모두 저울로 무게 계량",
+    "explanation": "제빵에서는 정확도를 위해 **물까지 포함한 모든 재료를 저울로 무게를 달아** 계량합니다. 배합표대로 정확히 재야 같은 품질의 빵을 계속 만들 수 있습니다.\n\n**틀린 선지**\n- 가루 재료는 컵으로 부피를 재어 계량한다: 가루는 담는 방법에 따라 부피당 무게가 달라지므로 부피 계량은 정확하지 않습니다.\n- 이스트와 소금은 한 그릇에 함께 담아 계량한다: 소금이 이스트에 직접 닿으면 이스트 활동이 약해지므로 따로 담습니다.\n- 적은 양의 재료는 눈대중으로 넣는다: 이스트·소금처럼 적게 넣는 재료일수록 조금만 틀려도 결과가 크게 달라집니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-17",
+    "tags": [
+      "계량"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "baker-craftsman-ingredients-0011",
+    "certId": "baker-craftsman",
+    "subjectId": "written",
+    "chapterId": "ingredients",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "칼슘의 흡수를 돕고, 부족하면 뼈가 약해지는 구루병이 생기는 비타민은?",
+    "choices": [
+      "비타민 A",
+      "비타민 C",
+      "비타민 B1",
+      "비타민 D"
+    ],
+    "answer": 4,
+    "oneLineConcept": "비타민 D = 칼슘 흡수, 부족하면 구루병",
+    "explanation": "**비타민 D**는 칼슘이 몸에 잘 흡수되도록 돕습니다. 부족하면 뼈가 약해지는 구루병이 생깁니다. 비타민 D는 기름에 녹는 지용성 비타민(A·D·E·K)에 속합니다.\n\n**틀린 선지**\n- 비타민 A: 부족하면 밤에 잘 보이지 않는 야맹증이 생깁니다.\n- 비타민 C: 부족하면 잇몸에서 피가 나는 괴혈병이 생깁니다.\n- 비타민 B1: 부족하면 각기병이 생깁니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-17",
+    "tags": [
+      "영양",
+      "비타민"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "baker-craftsman-ingredients-0012",
+    "certId": "baker-craftsman",
+    "subjectId": "written",
+    "chapterId": "ingredients",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "글루텐을 이루는 단백질 가운데 반죽에 탄력성(늘인 뒤 되돌아가려는 힘)을 주는 것은?",
+    "choices": [
+      "글루테닌",
+      "글리아딘",
+      "글로불린",
+      "알부민"
+    ],
+    "answer": 1,
+    "oneLineConcept": "글루테닌 = 탄력성, 글리아딘 = 신장성·점성",
+    "explanation": "글루텐은 두 단백질이 역할을 나눕니다. **글루테닌**은 탄력성을 주어 반죽이 힘 있게 버티게 하고, 글리아딘은 신장성과 점성을 주어 반죽이 잘 늘어나게 합니다.\n\n**틀린 선지**\n- 글리아딘: 글루텐에 잘 늘어나는 성질(신장성)과 끈기(점성)를 주는 단백질입니다.\n- 글로불린: 물에 녹지 않고 소금물에 녹는 단백질로, 글루텐을 만들지 않습니다.\n- 알부민: 물에 녹는 단백질로, 글루텐을 만들지 않습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-17",
+    "tags": [
+      "밀가루",
+      "글루텐"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "baker-craftsman-ingredients-0013",
+    "certId": "baker-craftsman",
+    "subjectId": "written",
+    "chapterId": "ingredients",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "밀가루에 밀 껍질(밀기울)이 얼마나 섞였는지를 보여 주어 밀가루 등급을 나누는 기준이 되는 성분은?",
+    "choices": [
+      "수분",
+      "회분",
+      "지방",
+      "전분"
+    ],
+    "answer": 2,
+    "oneLineConcept": "밀가루 등급 기준 = 회분(껍질이 많을수록 높음)",
+    "explanation": "**회분**은 태우고 남는 무기질의 양입니다. 무기질은 밀 껍질 쪽에 많아서, 껍질이 많이 섞인 밀가루일수록 회분이 높고 색이 어둡습니다. 그래서 회분으로 밀가루의 등급을 나눕니다.\n\n**틀린 선지**\n- 수분: 수분은 보관 중 변질과 관계가 있지만 등급을 나누는 기준은 아닙니다.\n- 지방: 밀가루에는 지방이 조금 들어 있지만 등급 기준이 아닙니다.\n- 전분: 전분은 밀가루의 대부분을 차지하는 성분으로 등급 기준이 아닙니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-17",
+    "tags": [
+      "밀가루",
+      "회분"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "baker-craftsman-ingredients-0014",
+    "certId": "baker-craftsman",
+    "subjectId": "written",
+    "chapterId": "ingredients",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "이스트가 분해하지 못해 반죽에 남아 있다가 빵 껍질 색을 내는 데 도움을 주는 우유 속의 당은?",
+    "choices": [
+      "맥아당(엿당)",
+      "설탕(자당)",
+      "유당(젖당)",
+      "포도당"
+    ],
+    "answer": 3,
+    "oneLineConcept": "유당은 이스트가 못 먹어 남아 껍질 색을 낸다",
+    "explanation": "이스트에는 유당을 분해하는 효소(락타아제)가 없습니다. 그래서 **유당(젖당)**은 발효 뒤에도 반죽에 남아 있다가 굽는 동안 갈색으로 변해 껍질 색을 진하게 합니다.\n\n**틀린 선지**\n- 맥아당(엿당): 이스트가 가진 말타아제가 포도당으로 분해해 발효에 씁니다.\n- 설탕(자당): 이스트가 가진 인베르타아제가 포도당과 과당으로 분해해 발효에 씁니다.\n- 포도당: 이스트가 바로 발효에 쓰는 당입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-17",
+    "tags": [
+      "이스트",
+      "우유",
+      "당류"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "baker-craftsman-ingredients-0015",
+    "certId": "baker-craftsman",
+    "subjectId": "written",
+    "chapterId": "ingredients",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "이스트에 들어 있는 효소 인베르타아제가 설탕(자당)을 분해하면 생기는 것은?",
+    "choices": [
+      "포도당과 포도당",
+      "알코올과 이산화탄소",
+      "포도당과 갈락토오스",
+      "포도당과 과당"
+    ],
+    "answer": 4,
+    "oneLineConcept": "인베르타아제: 설탕 → 포도당 + 과당",
+    "explanation": "설탕은 포도당과 과당이 붙은 당입니다. 이스트의 **인베르타아제**가 이를 **포도당과 과당**으로 나누면, 다른 효소(치마아제)가 이것을 다시 알코올과 이산화탄소로 바꾸어 반죽을 부풀립니다.\n\n**틀린 선지**\n- 포도당과 포도당: 맥아당을 분해했을 때 생기는 것으로, 말타아제가 하는 일입니다.\n- 알코올과 이산화탄소: 포도당·과당을 발효시켜 생기는 것으로, 치마아제가 하는 일입니다.\n- 포도당과 갈락토오스: 유당(젖당)을 이루는 당입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-17",
+    "tags": [
+      "이스트",
+      "효소"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "baker-craftsman-ingredients-0016",
+    "certId": "baker-craftsman",
+    "subjectId": "written",
+    "chapterId": "ingredients",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "맥아당(엿당)을 이루는 단당류는?",
+    "choices": [
+      "포도당 2분자",
+      "포도당과 과당",
+      "포도당과 갈락토오스",
+      "과당 2분자"
+    ],
+    "answer": 1,
+    "oneLineConcept": "맥아당 = 포도당 + 포도당",
+    "explanation": "이당류는 단당류 두 개가 붙은 것입니다. **맥아당은 포도당 2분자**, 설탕은 포도당 + 과당, 유당은 포도당 + 갈락토오스로 되어 있습니다.\n\n**틀린 선지**\n- 포도당과 과당: 설탕(자당)을 이루는 당입니다.\n- 포도당과 갈락토오스: 유당(젖당)을 이루는 당입니다.\n- 과당 2분자: 맥아당과 관계없는 조합입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-17",
+    "tags": [
+      "당류"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "baker-craftsman-ingredients-0017",
+    "certId": "baker-craftsman",
+    "subjectId": "written",
+    "chapterId": "ingredients",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "센물(경수)로 빵 반죽을 할 때의 조치로 알맞은 것은?",
+    "choices": [
+      "이스트푸드 사용량을 늘린다",
+      "이스트 사용량을 늘린다",
+      "반죽에 넣는 물의 양을 줄인다",
+      "소금 사용량을 늘린다"
+    ],
+    "answer": 2,
+    "oneLineConcept": "경수 → 반죽 질기고 발효 느림 → 이스트 늘림",
+    "explanation": "경수는 미네랄이 많아 글루텐이 지나치게 단단해지고 발효가 늦어집니다. 그래서 **이스트 사용량을 늘리고**, 맥아를 넣거나 물을 조금 늘려 반죽을 맞춥니다. 반대로 연수일 때는 물을 줄이고 이스트푸드·소금을 늘립니다.\n\n**틀린 선지**\n- 이스트푸드 사용량을 늘린다: 이스트푸드에는 물을 단단하게 하는 칼슘염이 들어 있어, 연수를 쓸 때 늘리는 조치입니다.\n- 반죽에 넣는 물의 양을 줄인다: 연수일 때 반죽이 질어지므로 물을 줄입니다. 경수는 오히려 물을 늘립니다.\n- 소금 사용량을 늘린다: 소금은 글루텐을 더 단단하게 하므로 연수일 때 쓰는 조치입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-17",
+    "tags": [
+      "물",
+      "경도"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "baker-craftsman-ingredients-0018",
+    "certId": "baker-craftsman",
+    "subjectId": "written",
+    "chapterId": "ingredients",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "제빵 개량제에서 산화제로 쓰여 글루텐을 단단하게 해 주는 것은?",
+    "choices": [
+      "글루타티온",
+      "시스테인",
+      "아스코르브산(비타민 C)",
+      "프로테아제"
+    ],
+    "answer": 3,
+    "oneLineConcept": "산화제(아스코르브산) = 글루텐 강화",
+    "explanation": "산화제는 글루텐 구조를 단단하게 해 반죽이 가스를 잘 붙잡게 합니다. 대표적인 것이 **아스코르브산(비타민 C)**입니다. 반대로 시스테인·글루타티온 같은 환원제는 글루텐을 부드럽게 합니다.\n\n**틀린 선지**\n- 글루타티온: 글루텐을 약하게 만드는 환원성 물질입니다.\n- 시스테인: 글루텐을 부드럽게 하는 환원제입니다.\n- 프로테아제: 단백질을 분해하는 효소로, 글루텐을 약하게 합니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-17",
+    "tags": [
+      "개량제",
+      "산화제"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "baker-craftsman-ingredients-0019",
+    "certId": "baker-craftsman",
+    "subjectId": "written",
+    "chapterId": "ingredients",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "빵 반죽에 탈지분유를 넣었을 때 나타나는 효과로 옳은 것은?",
+    "choices": [
+      "발효 중 반죽의 pH(산도) 변화가 커진다",
+      "빵 껍질 색이 옅어진다",
+      "글루텐이 약해진다",
+      "반죽의 흡수율(넣을 수 있는 물의 양)이 높아진다"
+    ],
+    "answer": 4,
+    "oneLineConcept": "분유: 흡수율↑, 완충작용, 껍질 색 진하게",
+    "explanation": "탈지분유의 단백질은 물을 잘 붙잡아 **반죽의 흡수율을 높입니다**. 또 발효 중 pH가 급하게 바뀌지 않게 막아 주고(완충작용), 유당이 남아 껍질 색을 진하게 하며 영양도 보탭니다.\n\n**틀린 선지**\n- 발효 중 반죽의 pH(산도) 변화가 커진다: 분유는 완충제 역할을 해서 pH 변화를 오히려 작게 합니다.\n- 빵 껍질 색이 옅어진다: 분유의 유당이 남아 갈색으로 변하므로 껍질 색이 진해집니다.\n- 글루텐이 약해진다: 분유는 글루텐을 강하게 해 반죽이 잘 버티게 합니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-17",
+    "tags": [
+      "우유",
+      "분유"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "baker-craftsman-ingredients-0020",
+    "certId": "baker-craftsman",
+    "subjectId": "written",
+    "chapterId": "ingredients",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "빵 100g에 탄수화물 50g, 단백질 8g, 지방 5g이 들어 있을 때 이 빵의 열량은?",
+    "choices": [
+      "252kcal",
+      "267kcal",
+      "277kcal",
+      "315kcal"
+    ],
+    "answer": 3,
+    "oneLineConcept": "열량 = 탄수화물×4 + 단백질×4 + 지방×9",
+    "explanation": "영양소마다 1g당 열량이 다르므로 따로 곱해서 더합니다.\n\n1. 탄수화물: 50 × 4 = 200kcal\n2. 단백질: 8 × 4 = 32kcal\n3. 지방: 5 × 9 = 45kcal\n4. 합계: 200 + 32 + 45 = **277kcal**\n\n검산: 277 − 45 − 32 = 200 (탄수화물 열량과 같음)\n\n**틀린 선지**\n- 252kcal: 세 영양소를 모두 4kcal로 계산한 값입니다. 지방은 9kcal입니다.\n- 267kcal: 지방을 7kcal로 잘못 계산한 값입니다. 7kcal는 알코올의 열량입니다.\n- 315kcal: 세 영양소 무게를 더해 5를 곱한 값으로, 맞는 계산법이 아닙니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-17",
+    "tags": [
+      "영양",
+      "열량",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "baker-craftsman-ingredients-0021",
+    "certId": "baker-craftsman",
+    "subjectId": "written",
+    "chapterId": "ingredients",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "액체 상태의 식물성 기름에 수소를 첨가해 쇼트닝·마가린처럼 굳히는 처리를 무엇이라고 하는가?",
+    "choices": [
+      "경화",
+      "유화",
+      "산패",
+      "호화"
+    ],
+    "answer": 1,
+    "oneLineConcept": "수소 첨가로 기름을 굳힘 = 경화(경화유)",
+    "explanation": "액체 기름에 니켈을 촉매로 수소를 붙이면 기름이 단단해집니다. 이것을 **경화**라고 하고, 이렇게 만든 기름을 경화유라고 합니다. 쇼트닝과 마가린이 대표적입니다.\n\n**틀린 선지**\n- 유화: 기름과 물을 고르게 섞는 것입니다.\n- 산패: 기름이 산소 등으로 상해 냄새·맛이 나빠지는 것입니다.\n- 호화: 전분이 물과 열을 만나 풀처럼 되는 것입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-17",
+    "tags": [
+      "유지"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "baker-craftsman-ingredients-0022",
+    "certId": "baker-craftsman",
+    "subjectId": "written",
+    "chapterId": "ingredients",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "밀가루 100%, 물 63%, 이스트 2%, 소금 2%, 설탕 5%, 유지 4%, 탈지분유 3%인 배합으로 반죽 3,580g을 만들려고 한다. 필요한 밀가루의 양은?",
+    "choices": [
+      "1,790g",
+      "2,000g",
+      "2,200g",
+      "3,580g"
+    ],
+    "answer": 2,
+    "oneLineConcept": "밀가루 무게 = 반죽 총무게 ÷ 총배합률(%) × 100",
+    "explanation": "모든 재료 비율을 더한 총배합률로 반죽 무게를 나누면 밀가루 무게가 나옵니다.\n\n1. 총배합률: 100 + 63 + 2 + 2 + 5 + 4 + 3 = 179(%)\n2. 밀가루 무게 = 3,580 ÷ 179 × 100\n3. 3,580 ÷ 179 = 20, 20 × 100 = **2,000g**\n\n검산: 2,000 × 1.79 = 3,580g\n\n**틀린 선지**\n- 1,790g: 반죽 무게를 그냥 반으로 나눈 값입니다.\n- 2,200g: 총배합률을 잘못 더했을 때 나올 수 있는 값입니다.\n- 3,580g: 반죽 전체 무게를 밀가루 무게로 착각한 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-17",
+    "tags": [
+      "배합표",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "baker-craftsman-ingredients-0023",
+    "certId": "baker-craftsman",
+    "subjectId": "written",
+    "chapterId": "ingredients",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "밀가루 단백질에 부족해 밀가루 음식의 영양가를 떨어뜨리는 필수아미노산(제한아미노산)은?",
+    "choices": [
+      "메티오닌",
+      "리신",
+      "류신",
+      "글루탐산"
+    ],
+    "answer": 2,
+    "oneLineConcept": "밀가루의 제한아미노산 = 리신",
+    "explanation": "밀가루 단백질에는 필수아미노산인 **리신**이 부족합니다. 그래서 우유·달걀처럼 리신이 많은 재료를 함께 쓰면 빵의 단백질 영양가가 좋아집니다.\n\n**틀린 선지**\n- 메티오닌: 콩(대두) 단백질에 부족한 아미노산입니다.\n- 류신: 밀가루에 비교적 넉넉하게 들어 있는 필수아미노산입니다.\n- 글루탐산: 밀 단백질에 많이 들어 있고, 필수아미노산이 아닙니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-17",
+    "tags": [
+      "영양",
+      "아미노산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "baker-craftsman-ingredients-0024",
+    "certId": "baker-craftsman",
+    "subjectId": "written",
+    "chapterId": "ingredients",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "죽은 이스트 세포에서 나와 글루텐을 약하게 하고 반죽을 끈적이게 만드는 물질은?",
+    "choices": [
+      "아스코르브산",
+      "레시틴",
+      "글루타티온",
+      "프로피온산"
+    ],
+    "answer": 3,
+    "oneLineConcept": "죽은 이스트의 글루타티온 = 글루텐 약화",
+    "explanation": "오래되거나 잘못 보관해 죽은 이스트 세포에서는 **글루타티온**이 나옵니다. 글루타티온은 환원 작용으로 글루텐을 끊어 반죽을 늘어지고 끈적이게 만듭니다. 그래서 이스트는 신선한 것을 씁니다.\n\n**틀린 선지**\n- 아스코르브산: 글루텐을 단단하게 하는 산화제입니다.\n- 레시틴: 노른자 등에 들어 있는 유화제입니다.\n- 프로피온산: 곰팡이를 막는 보존료(프로피온산칼슘)의 성분입니다.",
+    "frequency": 2,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-17",
+    "tags": [
+      "이스트",
+      "환원제"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "baker-craftsman-ingredients-0025",
+    "certId": "baker-craftsman",
+    "subjectId": "written",
+    "chapterId": "ingredients",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "달걀 1개가 껍질 포함 60g이고 껍질 10%, 노른자 30%, 흰자 60%로 되어 있다. 이 달걀 10개에서 얻을 수 있는 흰자의 양은?",
+    "choices": [
+      "180g",
+      "300g",
+      "360g",
+      "540g"
+    ],
+    "answer": 3,
+    "oneLineConcept": "재료 무게 = 전체 무게 × 비율",
+    "explanation": "먼저 전체 무게를 구한 뒤 흰자 비율을 곱합니다.\n\n1. 달걀 전체 무게: 60g × 10개 = 600g\n2. 흰자 양: 600 × 60 ÷ 100 = **360g**\n\n검산: 껍질 60g + 노른자 180g + 흰자 360g = 600g\n\n**틀린 선지**\n- 180g: 노른자의 양(600g × 30%)입니다.\n- 300g: 전체의 절반으로 계산한 값입니다.\n- 540g: 껍질을 뺀 노른자와 흰자를 합친 양(600g × 90%)입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-17",
+    "tags": [
+      "달걀",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "baker-craftsman-ingredients-0026",
+    "certId": "baker-craftsman",
+    "subjectId": "written",
+    "chapterId": "ingredients",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "제빵에서 소금의 역할로 옳지 않은 것은?",
+    "choices": [
+      "글루텐을 단단하게 하여 반죽을 강하게 한다",
+      "잡균이 늘어나는 것을 억제한다",
+      "이스트의 발효를 촉진하여 발효 시간을 줄인다",
+      "빵의 맛을 좋게 한다"
+    ],
+    "answer": 3,
+    "oneLineConcept": "소금은 이스트 발효를 억제한다(촉진 아님)",
+    "explanation": "소금은 글루텐을 단단하게 하고, 잡균을 억제하며, 맛을 냅니다. 하지만 이스트에는 삼투압으로 부담을 주어 **발효를 늦춥니다**. 촉진한다는 설명이 틀렸습니다.\n\n**틀린 선지**\n- 글루텐을 단단하게 하여 반죽을 강하게 한다: 소금의 맞는 역할입니다.\n- 잡균이 늘어나는 것을 억제한다: 소금의 맞는 역할입니다.\n- 빵의 맛을 좋게 한다: 소금의 맞는 역할입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-17",
+    "tags": [
+      "소금"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "baker-craftsman-ingredients-0027",
+    "certId": "baker-craftsman",
+    "subjectId": "written",
+    "chapterId": "ingredients",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "곧은 사슬 모양의 전분 성분으로, 요오드 용액을 떨어뜨리면 청색(파란색)으로 변하는 것은?",
+    "choices": [
+      "아밀로펙틴",
+      "덱스트린",
+      "셀룰로오스",
+      "아밀로오스"
+    ],
+    "answer": 4,
+    "oneLineConcept": "아밀로오스 = 곧은 사슬, 요오드 반응 청색",
+    "explanation": "전분은 곧은 사슬의 **아밀로오스**와 가지가 많은 아밀로펙틴으로 되어 있습니다. 요오드 반응에서 아밀로오스는 청색, 아밀로펙틴은 적자색을 띱니다.\n\n**틀린 선지**\n- 아밀로펙틴: 가지가 많은 사슬 모양으로, 요오드 반응에서 적자색(붉은 보라색)을 띱니다.\n- 덱스트린: 전분이 잘게 분해된 것으로, 청색 반응을 보이지 않습니다.\n- 셀룰로오스: 식물 세포벽을 이루는 섬유질로, 전분 성분이 아닙니다.",
+    "frequency": 2,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-17",
+    "tags": [
+      "전분",
+      "기초재료과학"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "baker-craftsman-ingredients-0028",
+    "certId": "baker-craftsman",
+    "subjectId": "written",
+    "chapterId": "ingredients",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "엿기름(맥아)을 빵 반죽에 넣었을 때의 효과로 옳은 것은?",
+    "choices": [
+      "전분을 분해해 이스트가 먹을 당을 늘려 발효를 돕는다",
+      "글루텐을 단단하게 묶어 반죽을 질기게 한다",
+      "반죽을 알칼리성으로 만든다",
+      "곰팡이가 피는 것을 막는다"
+    ],
+    "answer": 1,
+    "oneLineConcept": "맥아의 아밀라아제 → 전분을 당으로 → 발효 도움",
+    "explanation": "엿기름에는 전분을 분해하는 효소(**아밀라아제**)가 들어 있습니다. 전분이 맥아당 같은 당으로 바뀌면 이스트가 먹을 것이 늘어 발효가 잘 되고, 남은 당은 껍질 색을 내는 데도 도움을 줍니다.\n\n**틀린 선지**\n- 글루텐을 단단하게 묶어 반죽을 질기게 한다: 맥아는 글루텐을 단단하게 하는 재료가 아닙니다. 그것은 산화제의 역할입니다.\n- 반죽을 알칼리성으로 만든다: 맥아는 반죽의 pH를 알칼리로 바꾸는 재료가 아닙니다.\n- 곰팡이가 피는 것을 막는다: 곰팡이를 막는 것은 프로피온산칼슘 같은 보존료입니다.",
+    "frequency": 2,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-17",
+    "tags": [
+      "맥아",
+      "효소"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+]

@@ -1,0 +1,836 @@
+[
+  {
+    "id": "baker-craftsman-hygiene-0001",
+    "certId": "baker-craftsman",
+    "subjectId": "written",
+    "chapterId": "hygiene",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "식품위생법에서 '식품'은 모든 음식물을 말한다. 다만 식품에서 빠지는 것은?",
+    "choices": [
+      "의약으로 섭취하는 것",
+      "가공하지 않은 농산물",
+      "외국에서 수입한 음식물",
+      "소금·간장 같은 조미료"
+    ],
+    "answer": 1,
+    "oneLineConcept": "식품 = 모든 음식물(의약으로 먹는 것 제외)",
+    "explanation": "식품위생법은 식품을 '모든 음식물(**의약으로 섭취하는 것은 제외**)'로 정합니다. 약으로 먹는 것은 약사 관련 법에서 따로 다룹니다.\n\n**틀린 선지**\n- 가공하지 않은 농산물: 가공하지 않은 농산물도 먹는 음식물이므로 식품에 들어갑니다.\n- 외국에서 수입한 음식물: 수입한 음식물도 식품에 들어갑니다.\n- 소금·간장 같은 조미료: 조미료도 음식물이므로 식품에 들어갑니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-17",
+    "tags": [
+      "식품위생법"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "baker-craftsman-hygiene-0002",
+    "certId": "baker-craftsman",
+    "subjectId": "written",
+    "chapterId": "hygiene",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "손에 곪은 상처가 있는 사람이 크림빵을 만들었을 때 옮기 쉬운 독소형 식중독균은?",
+    "choices": [
+      "살모넬라균",
+      "황색포도상구균",
+      "장염비브리오균",
+      "노로바이러스"
+    ],
+    "answer": 2,
+    "oneLineConcept": "곪은 상처 → 황색포도상구균(독소 엔테로톡신)",
+    "explanation": "**황색포도상구균**은 곪은 상처에 많이 있으며, 음식 속에서 엔테로톡신이라는 독소를 만듭니다. 이 독소는 열에 강해 끓여도 잘 없어지지 않으므로, 손에 상처가 있으면 제품을 직접 만지지 않습니다.\n\n**틀린 선지**\n- 살모넬라균: 달걀·닭고기 등으로 옮는 감염형 식중독균입니다.\n- 장염비브리오균: 바닷물에 사는 균으로 날 어패류로 옮는 감염형 식중독균입니다.\n- 노로바이러스: 겨울철 굴 등으로 옮는 바이러스이며, 곪은 상처와는 관계가 적습니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-17",
+    "tags": [
+      "식중독",
+      "독소형"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "baker-craftsman-hygiene-0003",
+    "certId": "baker-craftsman",
+    "subjectId": "written",
+    "chapterId": "hygiene",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "감자 싹이나 초록색으로 변한 감자 껍질에 들어 있는 자연독은?",
+    "choices": [
+      "테트로도톡신",
+      "무스카린",
+      "솔라닌",
+      "아미그달린"
+    ],
+    "answer": 3,
+    "oneLineConcept": "감자 싹 = 솔라닌",
+    "explanation": "감자 싹과 초록색 껍질에는 **솔라닌**이라는 자연독이 있습니다. 싹과 초록 부분은 넉넉히 도려내고 씁니다.\n\n**틀린 선지**\n- 테트로도톡신: 복어의 독입니다.\n- 무스카린: 독버섯의 독입니다.\n- 아미그달린: 덜 익은 매실 등의 씨에 들어 있는 독입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-17",
+    "tags": [
+      "식중독",
+      "자연독"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "baker-craftsman-hygiene-0004",
+    "certId": "baker-craftsman",
+    "subjectId": "written",
+    "chapterId": "hygiene",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "흐르는 물에 비누로 손을 씻을 때 권장하는 손 씻는 시간은?",
+    "choices": [
+      "5초 이상",
+      "10초 이상",
+      "30초 이상",
+      "3분 이상"
+    ],
+    "answer": 3,
+    "oneLineConcept": "손 씻기 = 비누로 30초 이상",
+    "explanation": "손은 흐르는 물에 비누로 **30초 이상** 손바닥·손등·손가락 사이·손톱 밑까지 꼼꼼히 씻습니다. 화장실을 다녀온 뒤, 날 재료를 만진 뒤에는 반드시 씻습니다.\n\n**틀린 선지**\n- 5초 이상: 너무 짧아 손의 세균이 충분히 없어지지 않습니다.\n- 10초 이상: 여전히 짧습니다.\n- 3분 이상: 권장 시간보다 지나치게 깁니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-17",
+    "tags": [
+      "개인위생",
+      "손씻기"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "baker-craftsman-hygiene-0005",
+    "certId": "baker-craftsman",
+    "subjectId": "written",
+    "chapterId": "hygiene",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "빵에 섞여 들어간 금속 조각·유리 조각 같은 이물은 어떤 위해요소에 속하는가?",
+    "choices": [
+      "화학적 위해요소",
+      "생물학적 위해요소",
+      "영양적 위해요소",
+      "물리적 위해요소"
+    ],
+    "answer": 4,
+    "oneLineConcept": "금속·유리 이물 = 물리적 위해요소",
+    "explanation": "HACCP에서는 위해요소를 **생물학적**(세균·바이러스 등), **화학적**(세척제·농약·중금속 등), **물리적**(금속·유리·돌 조각 등)으로 나눕니다. 금속 조각은 물리적 위해요소이며, 금속검출기 등으로 관리합니다.\n\n**틀린 선지**\n- 화학적 위해요소: 세척제 찌꺼기·농약·중금속처럼 화학 물질에 의한 위해입니다.\n- 생물학적 위해요소: 세균·바이러스·곰팡이·기생충처럼 살아 있는 것에 의한 위해입니다.\n- 영양적 위해요소: HACCP에서 나누는 위해요소 종류가 아닙니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-17",
+    "tags": [
+      "HACCP",
+      "위해요소"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "baker-craftsman-hygiene-0006",
+    "certId": "baker-craftsman",
+    "subjectId": "written",
+    "chapterId": "hygiene",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "식품안전관리인증기준(HACCP)의 7원칙 가운데 가장 먼저 하는 것은?",
+    "choices": [
+      "위해요소 분석",
+      "중요관리점(CCP) 결정",
+      "한계기준 설정",
+      "검증 절차 수립"
+    ],
+    "answer": 1,
+    "oneLineConcept": "HACCP 7원칙의 첫째 = 위해요소 분석",
+    "explanation": "HACCP 7원칙은 **위해요소 분석** → 중요관리점 결정 → 한계기준 설정 → 모니터링 체계 확립 → 개선조치 방법 수립 → 검증 절차 수립 → 문서화·기록 유지 순서입니다.\n\n**틀린 선지**\n- 중요관리점(CCP) 결정: 위해요소 분석 다음인 두 번째 원칙입니다.\n- 한계기준 설정: 세 번째 원칙입니다.\n- 검증 절차 수립: 여섯 번째 원칙입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-17",
+    "tags": [
+      "HACCP"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "baker-craftsman-hygiene-0007",
+    "certId": "baker-craftsman",
+    "subjectId": "written",
+    "chapterId": "hygiene",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "작업장에 쥐가 들어오지 못하도록 막는 일을 무엇이라고 하는가?",
+    "choices": [
+      "방충",
+      "방서",
+      "방습",
+      "방화"
+    ],
+    "answer": 2,
+    "oneLineConcept": "방서 = 쥐 막기, 방충 = 해충 막기",
+    "explanation": "**방서**는 쥐를 막는 일입니다. 쥐는 렙토스피라증 같은 병을 옮기므로 출입구·배수구·구멍을 막고 먹이가 될 음식물 찌꺼기를 남기지 않습니다. 해충을 막는 일은 방충이라고 합니다.\n\n**틀린 선지**\n- 방충: 파리·바퀴벌레 같은 해충을 막는 일입니다.\n- 방습: 습기를 막는 일입니다.\n- 방화: 불이 나는 것을 막는 일입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-17",
+    "tags": [
+      "방충방서"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "baker-craftsman-hygiene-0008",
+    "certId": "baker-craftsman",
+    "subjectId": "written",
+    "chapterId": "hygiene",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "손이나 작업대·기구를 소독할 때 흔히 쓰는 에틸알코올의 농도는?",
+    "choices": [
+      "약 30%",
+      "약 50%",
+      "약 70%",
+      "약 100%(무수 알코올)"
+    ],
+    "answer": 3,
+    "oneLineConcept": "소독용 알코올 = 약 70% 에틸알코올",
+    "explanation": "소독용으로는 **약 70%** 에틸알코올을 씁니다. 이 정도 농도가 균의 단백질을 잘 굳혀 살균력이 좋습니다. 상처 부위나 젖은 손에서는 효과가 떨어집니다.\n\n**틀린 선지**\n- 약 30%: 농도가 너무 낮아 살균력이 약합니다.\n- 약 50%: 살균에 쓰는 일반적인 농도보다 낮습니다.\n- 약 100%(무수 알코올): 물이 없으면 오히려 균 속으로 잘 스며들지 못하고 빨리 날아가 살균력이 떨어집니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-17",
+    "tags": [
+      "소독제"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "baker-craftsman-hygiene-0009",
+    "certId": "baker-craftsman",
+    "subjectId": "written",
+    "chapterId": "hygiene",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "작업장에서 교차오염을 막는 방법으로 알맞은 것은?",
+    "choices": [
+      "도마 하나로 모든 재료를 손질한다",
+      "같은 장갑을 낀 채 쓰레기와 제품을 만진다",
+      "날 재료와 다 만든 제품의 작업 구역과 도구를 나누어 쓴다",
+      "청소 도구를 작업대 위에 둔다"
+    ],
+    "answer": 3,
+    "oneLineConcept": "교차오염 방지 = 구역·도구 분리",
+    "explanation": "교차오염은 오염된 것에서 깨끗한 것으로 균이 옮겨 가는 것입니다. **날 재료와 완제품의 작업 구역·도구를 나누고**, 손과 장갑을 자주 바꾸며, 청소 도구는 따로 보관해 막습니다.\n\n**틀린 선지**\n- 도마 하나로 모든 재료를 손질한다: 날 재료의 균이 완제품으로 옮겨 갈 수 있습니다.\n- 같은 장갑을 낀 채 쓰레기와 제품을 만진다: 쓰레기의 균이 제품으로 옮겨 갑니다.\n- 청소 도구를 작업대 위에 둔다: 청소 도구의 오염이 작업대로 옮겨 갑니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-17",
+    "tags": [
+      "개인위생",
+      "교차오염"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "baker-craftsman-hygiene-0010",
+    "certId": "baker-craftsman",
+    "subjectId": "written",
+    "chapterId": "hygiene",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "송풍기(팬)로 뜨거운 바람을 오븐 안에 돌려 고르게 굽는 오븐은?",
+    "choices": [
+      "데크 오븐",
+      "터널 오븐",
+      "전자레인지",
+      "컨벡션 오븐"
+    ],
+    "answer": 4,
+    "oneLineConcept": "컨벡션 오븐 = 팬으로 열풍 순환",
+    "explanation": "**컨벡션 오븐**은 팬으로 뜨거운 바람을 돌려 열이 고르게 전달되므로 굽는 시간이 짧고 색이 고르게 납니다. 데크 오븐은 단마다 굽고, 터널 오븐은 대량 생산에 씁니다.\n\n**틀린 선지**\n- 데크 오븐: 선반(단)마다 열선이 있어 바닥과 위의 열로 굽는 오븐입니다.\n- 터널 오븐: 컨베이어로 반죽이 지나가며 구워지는 대량 생산용 오븐입니다.\n- 전자레인지: 전자파로 음식 속 물을 데우는 기기로, 빵을 굽는 오븐이 아닙니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-17",
+    "tags": [
+      "설비기기",
+      "오븐"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "baker-craftsman-hygiene-0011",
+    "certId": "baker-craftsman",
+    "subjectId": "written",
+    "chapterId": "hygiene",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "달걀·닭고기 등으로 옮고, 균이 몸속에서 늘어나 병을 일으키는 감염형 식중독균은?",
+    "choices": [
+      "살모넬라균",
+      "황색포도상구균",
+      "클로스트리디움 보툴리눔",
+      "바실러스 서브틸리스"
+    ],
+    "answer": 1,
+    "oneLineConcept": "살모넬라 = 달걀·닭고기, 감염형",
+    "explanation": "**살모넬라균**은 달걀·닭고기·육류에서 잘 옮는 감염형 식중독균입니다. 열에 약해 충분히 익히면 죽으므로, 달걀이 들어가는 크림은 잘 익히고 차게 보관합니다.\n\n**틀린 선지**\n- 황색포도상구균: 음식 속에서 만든 독소로 병을 일으키는 독소형 식중독균입니다.\n- 클로스트리디움 보툴리눔: 산소가 없는 곳에서 신경 독소를 만드는 독소형 식중독균입니다.\n- 바실러스 서브틸리스: 빵을 끈적하게 만드는 로프균으로 식중독균의 대표 예가 아닙니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-17",
+    "tags": [
+      "식중독",
+      "감염형"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "baker-craftsman-hygiene-0012",
+    "certId": "baker-craftsman",
+    "subjectId": "written",
+    "chapterId": "hygiene",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "다음 경구감염병 가운데 세균이 원인인 것은?",
+    "choices": [
+      "A형 간염",
+      "장티푸스",
+      "폴리오(소아마비)",
+      "노로바이러스 감염증"
+    ],
+    "answer": 2,
+    "oneLineConcept": "세균성 경구감염병: 장티푸스·콜레라·세균성 이질",
+    "explanation": "경구감염병(입으로 옮는 감염병) 가운데 **장티푸스**, 콜레라, 세균성 이질, 파라티푸스는 세균이 원인입니다. A형 간염과 폴리오는 바이러스가 원인입니다.\n\n**틀린 선지**\n- A형 간염: 바이러스가 원인입니다.\n- 폴리오(소아마비): 바이러스가 원인입니다.\n- 노로바이러스 감염증: 이름 그대로 바이러스가 원인입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-17",
+    "tags": [
+      "감염병"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "baker-craftsman-hygiene-0013",
+    "certId": "baker-craftsman",
+    "subjectId": "written",
+    "chapterId": "hygiene",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "역성비누(양성비누)로 손을 소독하는 방법으로 옳은 것은?",
+    "choices": [
+      "보통 비누와 섞어서 함께 쓴다",
+      "역성비누를 쓴 뒤 보통 비누로 씻어 낸다",
+      "보통 비누로 먼저 씻어 헹군 뒤 역성비누를 쓴다",
+      "끓는 물에 녹여 쓴다"
+    ],
+    "answer": 3,
+    "oneLineConcept": "보통 비누 먼저 → 헹굼 → 역성비누",
+    "explanation": "역성비누는 살균력이 강하지만 세척력은 약하고, 보통 비누와 섞이면 효과가 떨어집니다. 그래서 **보통 비누로 먼저 때를 씻어 헹군 뒤** 역성비누를 씁니다.\n\n**틀린 선지**\n- 보통 비누와 섞어서 함께 쓴다: 보통 비누와 섞으면 역성비누의 살균력이 떨어집니다.\n- 역성비누를 쓴 뒤 보통 비누로 씻어 낸다: 순서가 거꾸로입니다. 보통 비누가 역성비누의 효과를 없앱니다.\n- 끓는 물에 녹여 쓴다: 역성비누는 끓여 쓰는 소독제가 아닙니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-17",
+    "tags": [
+      "소독제",
+      "개인위생"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "baker-craftsman-hygiene-0014",
+    "certId": "baker-craftsman",
+    "subjectId": "written",
+    "chapterId": "hygiene",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "수분활성도(미생물이 쓸 수 있는 물의 정도)가 낮은 식품에서도 가장 잘 자라는 미생물은?",
+    "choices": [
+      "효모",
+      "세균",
+      "젖산균",
+      "곰팡이"
+    ],
+    "answer": 4,
+    "oneLineConcept": "물 필요량: 세균 > 효모 > 곰팡이",
+    "explanation": "미생물이 자라는 데 필요한 물은 **세균 > 효모 > 곰팡이** 순서로 많습니다. 곰팡이는 물이 적어도 자라므로 마른 빵이나 과자에도 곰팡이가 필 수 있습니다.\n\n**틀린 선지**\n- 효모: 곰팡이보다는 더 많은 물이 필요합니다.\n- 세균: 자라는 데 가장 많은 물이 필요합니다.\n- 젖산균: 세균의 한 종류라 물이 많이 필요합니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-17",
+    "tags": [
+      "미생물"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "baker-craftsman-hygiene-0015",
+    "certId": "baker-craftsman",
+    "subjectId": "written",
+    "chapterId": "hygiene",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "식품첨가물의 기준과 규격을 정하여 고시하는 사람은?",
+    "choices": [
+      "식품의약품안전처장",
+      "보건복지부장관",
+      "시·도지사",
+      "시장·군수·구청장"
+    ],
+    "answer": 1,
+    "oneLineConcept": "식품첨가물 기준·규격 고시 = 식약처장",
+    "explanation": "식품위생법에 따라 식품첨가물의 제조·사용 방법 기준과 성분 규격은 **식품의약품안전처장**이 정해 고시합니다. 기준에 맞지 않는 첨가물은 쓰거나 팔 수 없습니다.\n\n**틀린 선지**\n- 보건복지부장관: 식품첨가물 기준·규격을 고시하는 사람이 아닙니다.\n- 시·도지사: 기준을 정하는 사람이 아니라 지역에서 영업을 관리하는 쪽입니다.\n- 시장·군수·구청장: 기준을 정하는 사람이 아니라 지역에서 영업을 관리하는 쪽입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-17",
+    "tags": [
+      "식품위생법",
+      "식품첨가물"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "baker-craftsman-hygiene-0016",
+    "certId": "baker-craftsman",
+    "subjectId": "written",
+    "chapterId": "hygiene",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "유지의 산화를 막아 산패를 늦추는 산화방지제는?",
+    "choices": [
+      "프로피온산칼슘",
+      "BHT(디부틸히드록시톨루엔)",
+      "글리세린지방산에스테르",
+      "탄산수소나트륨"
+    ],
+    "answer": 2,
+    "oneLineConcept": "산화방지제 = BHT·BHA·토코페롤",
+    "explanation": "**BHT**와 BHA, 토코페롤(비타민 E)은 유지가 산소와 반응하는 것을 늦추는 산화방지제입니다. 보존료(곰팡이 억제), 유화제, 팽창제와 쓰임을 구별해 외웁니다.\n\n**틀린 선지**\n- 프로피온산칼슘: 곰팡이를 막는 보존료입니다.\n- 글리세린지방산에스테르: 기름과 물을 섞어 주는 유화제입니다.\n- 탄산수소나트륨: 가스를 내어 부풀리는 팽창제입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-17",
+    "tags": [
+      "식품첨가물"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "baker-craftsman-hygiene-0017",
+    "certId": "baker-craftsman",
+    "subjectId": "written",
+    "chapterId": "hygiene",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "나선형(갈고리) 훅이 달려 있어 프랑스빵처럼 된 반죽을 반죽하기에 알맞은 믹서는?",
+    "choices": [
+      "수직형 믹서",
+      "에어 믹서",
+      "스파이럴 믹서",
+      "핸드 블렌더"
+    ],
+    "answer": 3,
+    "oneLineConcept": "스파이럴 믹서 = 나선형 훅, 된 반죽용",
+    "explanation": "**스파이럴 믹서**는 나선형 훅이 돌며 반죽을 치대므로 프랑스빵·독일빵처럼 된 반죽이나 글루텐을 충분히 발전시켜야 하는 반죽에 알맞습니다.\n\n**틀린 선지**\n- 수직형 믹서: 소규모 작업장에서 과자·빵 반죽에 두루 쓰는 믹서로, 된 반죽 전용이 아닙니다.\n- 에어 믹서: 공기를 넣어 거품을 내는 과자 반죽용 믹서입니다.\n- 핸드 블렌더: 소스 등을 갈거나 섞는 작은 기구입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-17",
+    "tags": [
+      "설비기기",
+      "믹서"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "baker-craftsman-hygiene-0018",
+    "certId": "baker-craftsman",
+    "subjectId": "written",
+    "chapterId": "hygiene",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "식품을 만들거나 다루는 일을 하는 사람(식품위생 분야 종사자)이 받아야 하는 건강진단의 주기는?",
+    "choices": [
+      "6개월마다 1회",
+      "1년마다 1회",
+      "2년마다 1회",
+      "3년마다 1회"
+    ],
+    "answer": 2,
+    "oneLineConcept": "식품위생 분야 종사자 건강진단 = 1년마다",
+    "explanation": "식품위생 분야 종사자는 **1년마다 1회** 건강진단을 받아야 합니다. 장티푸스·파라티푸스·폐결핵 등을 검사하며, 감염병에 걸린 사람은 식품을 다루는 일을 할 수 없습니다.\n\n**틀린 선지**\n- 6개월마다 1회: 법에서 정한 주기보다 짧습니다.\n- 2년마다 1회: 법에서 정한 주기보다 깁니다.\n- 3년마다 1회: 법에서 정한 주기보다 깁니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-17",
+    "tags": [
+      "식품위생법",
+      "개인위생"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "baker-craftsman-hygiene-0019",
+    "certId": "baker-craftsman",
+    "subjectId": "written",
+    "chapterId": "hygiene",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "HACCP 적용 12절차 가운데 가장 먼저 하는 것은?",
+    "choices": [
+      "위해요소 분석",
+      "제품설명서 작성",
+      "공정흐름도 작성",
+      "HACCP팀 구성"
+    ],
+    "answer": 4,
+    "oneLineConcept": "HACCP 12절차의 첫째 = HACCP팀 구성",
+    "explanation": "HACCP 12절차는 준비 5단계(**HACCP팀 구성** → 제품설명서 작성 → 용도 확인 → 공정흐름도 작성 → 공정흐름도 현장 확인)와 7원칙(위해요소 분석부터 문서화·기록 유지까지)으로 이루어집니다.\n\n**틀린 선지**\n- 위해요소 분석: 7원칙의 첫 단계이며, 12절차에서는 준비 단계 5개 뒤인 여섯 번째입니다.\n- 제품설명서 작성: HACCP팀을 구성한 다음 두 번째로 합니다.\n- 공정흐름도 작성: 준비 단계의 네 번째입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-17",
+    "tags": [
+      "HACCP"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "baker-craftsman-hygiene-0020",
+    "certId": "baker-craftsman",
+    "subjectId": "written",
+    "chapterId": "hygiene",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "식중독 환자를 진단한 의사나 한의사는 누구에게 보고해야 하는가?",
+    "choices": [
+      "관할 특별자치시장·시장·군수·구청장",
+      "식품의약품안전처장",
+      "보건복지부장관",
+      "관할 경찰서장"
+    ],
+    "answer": 1,
+    "oneLineConcept": "식중독 진단 의사 → 시장·군수·구청장에게 보고",
+    "explanation": "식품위생법에 따라 식중독 환자나 의심 환자를 진단한 의사·한의사는 **관할 특별자치시장·시장·군수·구청장**에게 바로 보고해야 합니다. 보고를 받은 시장·군수·구청장은 식품의약품안전처장 등에게 알립니다.\n\n**틀린 선지**\n- 식품의약품안전처장: 의사가 직접 보고하는 대상이 아닙니다. 시장·군수·구청장이 보고를 받아 식약처장 등에게 알립니다.\n- 보건복지부장관: 의사가 직접 보고하는 대상이 아닙니다.\n- 관할 경찰서장: 식중독 보고 대상이 아닙니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-17",
+    "tags": [
+      "식품위생법",
+      "식중독"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "baker-craftsman-hygiene-0021",
+    "certId": "baker-craftsman",
+    "subjectId": "written",
+    "chapterId": "hygiene",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "뼈가 약해지고 심한 통증이 생기는 이타이이타이병의 원인 물질은?",
+    "choices": [
+      "수은",
+      "카드뮴",
+      "납",
+      "비소"
+    ],
+    "answer": 2,
+    "oneLineConcept": "이타이이타이병 = 카드뮴, 미나마타병 = 수은",
+    "explanation": "**카드뮴**에 오염된 물과 쌀을 오래 먹으면 뼈가 약해지고 아픈 이타이이타이병이 생깁니다. 수은은 미나마타병의 원인입니다. 둘 다 화학적 식중독(중금속)에 속합니다.\n\n**틀린 선지**\n- 수은: 미나마타병의 원인 물질입니다.\n- 납: 빈혈·신경 장애 등을 일으키는 중금속이지만 이타이이타이병의 원인은 아닙니다.\n- 비소: 피부 이상·위장 장애 등을 일으키는 독성 물질입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-17",
+    "tags": [
+      "식중독",
+      "화학적"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "baker-craftsman-hygiene-0022",
+    "certId": "baker-craftsman",
+    "subjectId": "written",
+    "chapterId": "hygiene",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "다음 가운데 사람과 동물이 함께 걸리는 인수공통감염병이 아닌 것은?",
+    "choices": [
+      "탄저",
+      "브루셀라증(파상열)",
+      "결핵",
+      "장티푸스"
+    ],
+    "answer": 4,
+    "oneLineConcept": "인수공통: 탄저·브루셀라·결핵 / 장티푸스는 아님",
+    "explanation": "인수공통감염병은 동물과 사람이 함께 걸리는 감염병으로 탄저, 브루셀라증, 결핵, 야토병 등이 있습니다. **장티푸스**는 사람에게서 사람으로 옮는 경구감염병이므로 인수공통감염병이 아닙니다.\n\n**틀린 선지**\n- 탄저: 소·양 등에서 사람에게 옮는 인수공통감염병입니다.\n- 브루셀라증(파상열): 소·돼지·양 등에서 사람에게 옮는 인수공통감염병입니다.\n- 결핵: 소의 결핵이 우유 등을 통해 사람에게 옮을 수 있는 인수공통감염병입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-17",
+    "tags": [
+      "감염병"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "baker-craftsman-hygiene-0023",
+    "certId": "baker-craftsman",
+    "subjectId": "written",
+    "chapterId": "hygiene",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "자연독 식중독의 원인 식품과 독성분의 연결이 틀린 것은?",
+    "choices": [
+      "복어 - 테트로도톡신",
+      "감자 싹 - 솔라닌",
+      "독버섯 - 무스카린",
+      "섭조개 - 고시폴"
+    ],
+    "answer": 4,
+    "oneLineConcept": "섭조개 = 삭시톡신, 고시폴 = 목화씨",
+    "explanation": "섭조개(홍합)의 독은 **삭시톡신**입니다. 고시폴은 목화씨의 독이므로 '섭조개 - 고시폴'이 틀린 연결입니다. 복어는 테트로도톡신, 감자 싹은 솔라닌, 독버섯은 무스카린이 맞습니다.\n\n**틀린 선지**\n- 복어 - 테트로도톡신: 맞는 연결입니다.\n- 감자 싹 - 솔라닌: 맞는 연결입니다.\n- 독버섯 - 무스카린: 맞는 연결입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-17",
+    "tags": [
+      "식중독",
+      "자연독"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "baker-craftsman-hygiene-0024",
+    "certId": "baker-craftsman",
+    "subjectId": "written",
+    "chapterId": "hygiene",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "미생물을 크기가 큰 것부터 작은 것 순서로 바르게 늘어놓은 것은?",
+    "choices": [
+      "효모 > 곰팡이 > 세균 > 바이러스",
+      "곰팡이 > 세균 > 효모 > 바이러스",
+      "곰팡이 > 효모 > 세균 > 바이러스",
+      "바이러스 > 세균 > 효모 > 곰팡이"
+    ],
+    "answer": 3,
+    "oneLineConcept": "미생물 크기: 곰팡이 > 효모 > 세균 > 바이러스",
+    "explanation": "미생물의 크기는 **곰팡이 > 효모 > 세균 > 바이러스** 순서입니다. 바이러스는 가장 작아 일반 현미경으로 보이지 않고, 살아 있는 세포 안에서만 늘어납니다.\n\n**틀린 선지**\n- 효모 > 곰팡이 > 세균 > 바이러스: 곰팡이가 효모보다 큽니다.\n- 곰팡이 > 세균 > 효모 > 바이러스: 효모가 세균보다 큽니다.\n- 바이러스 > 세균 > 효모 > 곰팡이: 순서가 완전히 거꾸로입니다. 바이러스가 가장 작습니다.",
+    "frequency": 2,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-17",
+    "tags": [
+      "미생물"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+]
