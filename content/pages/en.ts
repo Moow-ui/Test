@@ -125,13 +125,15 @@ No system is perfectly secure, but we collect very little so there is very littl
 - **A login cookie** to keep you signed in (only if you log in; up to 30 days).
 - **A language cookie** to remember whether you chose English or Korean.
 - **Browser local storage** for your practice history, review list, text size, and light/dark setting.
+- **Analytics cookies** from Google Analytics, to count visits and see which pages are used (up to 2 years).
 - **Advertising cookies**, when ads are shown. We use Google AdSense. Google and its partners may use cookies to show ads based on your prior visits to this site and other sites.
 
 **Your choices**
 
 1. Turn off personalized ads from Google at adssettings.google.com.
 2. Opt out of personalized ads from many other ad companies at aboutads.info/choices.
-3. Block or delete cookies in your browser settings. Practice still works with cookies blocked, though you may not stay logged in.
+3. Opt out of Google Analytics with the browser add-on at tools.google.com/dlpage/gaoptout.
+4. Block or delete cookies in your browser settings. Practice still works with cookies blocked, though you may not stay logged in.
 
 We do not pass your username, display name, or study records to advertisers.`,
       },
@@ -141,6 +143,7 @@ We do not pass your username, display name, or study records to advertisers.`,
 
 - **Cloudflare, Inc.** hosts the site and the account database. Account information and study records are stored on Cloudflare's infrastructure, and Cloudflare processes connection data such as IP addresses to deliver and protect the site.
 - **Google LLC (Google AdSense)** serves advertising, as described above.
+- **Google LLC (Google Analytics)** collects visit statistics (pages viewed, device and browser type, approximate region) through cookies so we can improve the site. We do not send your username, display name, or study records.
 
 We may also disclose information if required by law.`,
       },

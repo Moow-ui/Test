@@ -23,7 +23,7 @@ export interface InfoPage {
 export type InfoPages = Record<InfoPageId, InfoPage>;
 
 /** 시행일 = 마지막으로 고친 날 (sitemap 의 lastmod 에도 쓴다) */
-export const INFO_UPDATED = "2026-10-02";
+export const INFO_UPDATED = "2026-10-17";
 
 const PAGES: Record<Locale, InfoPages> = { ko: koPages, en: enPages };
 

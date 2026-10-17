@@ -49,3 +49,12 @@ export const ADSENSE_CLIENT = adsenseNumber ? `ca-pub-${adsenseNumber}` : null;
 
 /** 광고 자리 미리보기. NEXT_PUBLIC_SHOW_AD_SLOTS=1 이면 광고 id 가 없어도 자리를 점선 상자로 보여 준다 */
 export const SHOW_AD_SLOTS = process.env.NEXT_PUBLIC_SHOW_AD_SLOTS === "1";
+
+/**
+ * Google 애널리틱스(GA4) 측정 ID ("G-…"). 공개되는 값이라 코드에 적어 둔다.
+ * 환경변수 NEXT_PUBLIC_GA_ID 가 있으면 그 값이 우선하고, "off" 로 두면 태그를 넣지 않는다.
+ * 개발 서버(npm run dev)에서는 방문 기록이 섞이지 않게 넣지 않는다.
+ */
+const gaRaw = (process.env.NEXT_PUBLIC_GA_ID ?? "G-ZMWJDYDG6V").trim();
+export const GA_MEASUREMENT_ID: string | null =
+  process.env.NODE_ENV === "production" && /^G-[A-Z0-9]+$/.test(gaRaw) ? gaRaw : null;

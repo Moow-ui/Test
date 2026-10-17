@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import "pretendard/dist/web/variable/pretendardvariable-dynamic-subset.css";
 import "../globals.css";
 import { FontLoader } from "@/components/FontLoader";
+import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 import { SyncManager } from "@/components/auth/SyncManager";
 import { LOCALES, brandName, getMessages, isLocale } from "@/lib/i18n";
 import { homeMeta, toMetadata } from "@/lib/seo";
@@ -68,6 +69,7 @@ export default async function RootLayout({ children, params }: Props) {
         {children}
         <FontLoader />
         <SyncManager />
+        <GoogleAnalytics />
       </body>
     </html>
   );
