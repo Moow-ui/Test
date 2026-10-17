@@ -5,6 +5,7 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Stars } from "@/components/Stars";
 import { StaticQuestion } from "@/components/StaticQuestion";
 import { IssuerNotice } from "@/components/cert/IssuerNotice";
+import { InspectedBadge } from "@/components/cert/InspectedBadge";
 import { ANALYSIS_ANCHOR } from "@/components/cert/anchors";
 import { getCertificationIn, getConcepts, getQuestions } from "@/lib/data";
 import { fmt, getMessages, isLocale, localeCountry, localePath } from "@/lib/i18n";
@@ -97,6 +98,7 @@ export default async function ChapterPage({ params }: Props) {
             <span className="block text-xl font-bold leading-tight sm:text-2xl">{meta.h1}</span>
           )}
         </h1>
+        <InspectedBadge lang={lang} />
       </header>
 
       {chapter.keyPoints.length > 0 && (
