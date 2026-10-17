@@ -5,8 +5,8 @@
  * 회장이 "오늘은 검사 못 했다"고 알려 주면 그날을 SKIPPED_DATES 에 적는다 → 그 전에 검사한 날짜가 그대로 나온다.
  */
 
-/** 표시하는 언어. 회장이 검사하는 쪽만 적는다 (미국 사이트는 검사하지 않으므로 표시하지 않는다) */
-export const INSPECTED_LOCALES: readonly ("ko" | "en")[] = ["ko"];
+/** 표시하는 언어. 회장이 검사하는 쪽만 적는다 (한국·미국 모두 매일 검사한다, 2026-10-17 확인) */
+export const INSPECTED_LOCALES: readonly ("ko" | "en")[] = ["ko", "en"];
 
 /** 검사하지 못한 날 (YYYY-MM-DD, 한국시간) */
 export const SKIPPED_DATES: readonly string[] = [];
