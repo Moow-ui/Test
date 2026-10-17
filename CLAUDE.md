@@ -98,7 +98,7 @@ scripts/                   validate-data, build-data, import-questions, convert-
 ## 매일 자격증 추가 루틴 (2026-10-02 시작)
 
 - 매일 한국시간 새벽 04:30(새벽 루틴)에 클라우드 루틴이 한국 1개 + 미국 1개를 추가한다.
-  오후 13:54(오후 루틴)는 **2026-10-13부터 잠정 중지**(무기한, 사용량 절약). 규칙을 고칠 때는 오후 루틴 쪽도 계속 같이 고친다.
+  오후 13:54(오후 루틴)는 **2026-10-13부터 중지** (2026-10-17 결정: 앞으로 새벽 루틴만 계속). 규칙을 고칠 때는 오후 루틴 쪽도 계속 같이 고친다.
 - **종료일 없음. 중지·속도 변경은 [docs/routine-status.md](docs/routine-status.md) 로만 정한다.**
 - 애드센스 신청(2026-10-29)은 루틴과 별개 일정이다.
 - 절차는 [docs/daily-routine.md](docs/daily-routine.md), 진행 기록은 [reports/routine-progress.md](reports/routine-progress.md)(새벽)·[reports/routine-progress-pm.md](reports/routine-progress-pm.md)(오후).

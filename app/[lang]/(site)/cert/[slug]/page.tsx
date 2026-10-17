@@ -56,7 +56,8 @@ export default async function CertPage({ params }: Props) {
   const allCerts = await getCertList(country);
   const related = cert.relatedCertIds
     .map((id) => allCerts.find((c) => c.id === id))
-    .filter((c) => c !== undefined);
+    .filter((c) => c !== undefined)
+    .filter((c) => c.ready); // "준비 중" 자격증은 관련 목록에서 숨긴다
 
   const questions = await getQuestions(cert.id);
   const scopes = ["all", ...cert.subjects.map((s) => s.id)];

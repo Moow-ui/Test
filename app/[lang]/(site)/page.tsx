@@ -18,10 +18,11 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
   const m = getMessages(lang);
 
   // 그 나라의 자격증만 보여 준다 (번역이 아니라 나라별 별도 콘텐츠)
-  const certs = await getCertList(localeCountry(lang));
+  // 목록·검색에는 풀 수 있는 자격증만 싣는다. "준비 중"(문제 없음)은 숨기고, 문제가 생기면 저절로 나타난다
+  const certs = (await getCertList(localeCountry(lang))).filter((c) => c.ready);
   // 개념 정리(검증 통과 단원)가 있는 자격증 → 목록 카드의 "개념" 배지
   const conceptIds = (
-    await Promise.all(certs.filter((c) => c.ready).map(async (c) => ((await getConcepts(c.id)) ? c.id : null)))
+    await Promise.all(certs.map(async (c) => ((await getConcepts(c.id)) ? c.id : null)))
   ).filter((id): id is string => !!id);
 
   return (
@@ -50,8 +51,8 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
       <CertSearch certs={certs} />
 
       {/* 풀 수 있는 자격증이 있을 때만 */}
-      {certs.some((c) => c.ready) && <DailyQuestion />}
-      {certs.some((c) => c.ready) && <QuickStart certs={certs} />}
+      {certs.length > 0 && <DailyQuestion />}
+      {certs.length > 0 && <QuickStart certs={certs} />}
 
       {/* 전체 자격증 목록: 검색엔진이 모든 자격증 페이지를 찾을 수 있게 카드 링크를 서버 HTML 에 모두 그린다 */}
       <CertGrid certs={certs} conceptIds={conceptIds} />
