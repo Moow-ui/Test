@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-18",
+  "cert": "dmv-permit-illinois",
+  "chapters": {
+    "signs-signals-markings": {
+      "result": "PASS",
+      "issues": [
+        "(optional, not a FAIL) 'If signals are dark, treat the intersection like a four-way stop.' → matches Illinois Secretary of State guidance reported in the press (first to stop goes first), but no statute text was found. It contains no number, so this is not a FAIL."
+      ]
+    },
+    "right-of-way-intersections": { "result": "PASS", "issues": [] },
+    "speed-passing-parking": { "result": "PASS", "issues": [] },
+    "safe-driving": {
+      "result": "PASS",
+      "issues": [
+        "(optional, not a FAIL) 'Phones while driving' source is 625 ILCS 5/12-610.2 (hand-held ban), but the sentence 'Drivers under 19 may not use a phone at all, even hands-free, except in an emergency.' comes from 625 ILCS 5/12-610.1(b) → could cite '625 ILCS 5/12-610.1 and 12-610.2'. The fact itself is correct (Illinois Legal Aid, rev. 2026-03)."
+      ]
+    },
+    "licensing-gdl": { "result": "PASS", "issues": [] },
+    "alcohol-laws-penalties": { "result": "PASS", "issues": [] }
+  },
+  "checked": {
+    "11-601": "30 mph urban, 15 mph alley, 55 mph other highways (ILGA text)",
+    "11-605": "20 mph on school days when children are present (with signs posted)",
+    "11-1303": "hydrant 15 ft, crosswalk 20 ft, flashing signal/stop/yield/traffic signal 30 ft, fire station driveway 20 ft, nearest rail 50 ft",
+    "11-804": "100 ft in business/residence district, 200 ft elsewhere (municipal codes that copy 11-804)",
+    "12-201": "sunset to sunrise, wipers needed, 1000 ft visibility",
+    "12-210": "500 ft oncoming, 300 ft following",
+    "11-1201": "15 to 50 ft from nearest rail",
+    "11-1414": "4+ lanes with at least 2 each way: opposite direction need not stop",
+    "11-907(c)": "Scott's Law: due caution, change lanes if possible, or reduce speed",
+    "6-107": "permit 9 months, 50 h incl. 10 night, adult 21+, curfew 10pm/11pm-6am under 18, 1 passenger under 20 for 12 months or until 18 (siblings, step-siblings, children, stepchildren excepted)",
+    "6-208.1": "first offender 6 months fail / 12 months refuse, effective 46th day",
+    "11-501.8": "under 21 any trace of alcohol: suspension",
+    "92 IAC 1030.80": "minimum 35 questions, 80% correct"
+  },
+  "figure": { "sign-colors-chart.svg": "①PASS ②PASS ③PASS ⑤PASS" },
+  "questionRecheck": {
+    "question": "Illinois Class D written test: at least 35 questions, 80% correct; on 35 questions how many correct to pass?",
+    "answer": "3) 28 (35 x 0.8 = 28)",
+    "premise": "Matches 92 Ill. Adm. Code 1030.80(b): 'a minimum of 35 questions, of which 80% must be answered correctly'."
+  }
+}

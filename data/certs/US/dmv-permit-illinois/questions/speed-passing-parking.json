@@ -1,0 +1,530 @@
+[
+  {
+    "id": "dmv-permit-illinois-speed-passing-parking-0001",
+    "certId": "dmv-permit-illinois",
+    "subjectId": "knowledge",
+    "chapterId": "speed-passing-parking",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "In Illinois, what is the speed limit in an urban district (a city or town area) when no other limit is posted?",
+    "choices": [
+      "25 mph",
+      "30 mph",
+      "35 mph",
+      "45 mph"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Illinois urban district default: 30 mph",
+    "explanation": "In Illinois, the speed limit in an **urban district** is **30 mph** unless a different limit is posted.\n\n**Wrong choices**\n- 25 mph: 25 mph is not the Illinois urban default.\n- 35 mph: 35 mph is not the Illinois urban default.\n- 45 mph: 45 mph is too fast for the urban default.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-18",
+    "tags": [
+      "speed limits",
+      "Illinois law"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-illinois-speed-passing-parking-0002",
+    "certId": "dmv-permit-illinois",
+    "subjectId": "knowledge",
+    "chapterId": "speed-passing-parking",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "On a school day when children are present, what is the speed limit in an Illinois school zone?",
+    "choices": [
+      "15 mph",
+      "20 mph",
+      "25 mph",
+      "30 mph"
+    ],
+    "answer": 2,
+    "oneLineConcept": "School zone: 20 mph when children are present",
+    "explanation": "In Illinois, the speed limit in a **school zone** is **20 mph** on school days when children are present. Signs mark the school zone.\n\n**Wrong choices**\n- 15 mph: 15 mph is the alley limit, not the school zone limit.\n- 25 mph: 25 mph is not the Illinois school zone limit.\n- 30 mph: 30 mph is the urban district default, not the school zone limit.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-18",
+    "tags": [
+      "school zone",
+      "speed limits"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-illinois-speed-passing-parking-0003",
+    "certId": "dmv-permit-illinois",
+    "subjectId": "knowledge",
+    "chapterId": "speed-passing-parking",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "How close to a fire hydrant may you park in Illinois?",
+    "choices": [
+      "No closer than 5 feet",
+      "No closer than 10 feet",
+      "No closer than 15 feet",
+      "No closer than 30 feet"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Park at least 15 feet from a fire hydrant",
+    "explanation": "You may **not park within 15 feet of a fire hydrant**. Firefighters need room to reach it quickly.\n\n**Wrong choices**\n- No closer than 5 feet: 5 feet is far too close.\n- No closer than 10 feet: 10 feet is still too close. The rule is 15 feet.\n- No closer than 30 feet: 30 feet is the distance for a stop sign, not a hydrant.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-18",
+    "tags": [
+      "parking",
+      "fire hydrant"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-illinois-speed-passing-parking-0004",
+    "certId": "dmv-permit-illinois",
+    "subjectId": "knowledge",
+    "chapterId": "speed-passing-parking",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "How close to a crosswalk at an intersection may you park?",
+    "choices": [
+      "No closer than 10 feet",
+      "No closer than 20 feet",
+      "No closer than 30 feet",
+      "No closer than 50 feet"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Park at least 20 feet from a crosswalk",
+    "explanation": "You may **not park within 20 feet of a crosswalk** at an intersection. Parked cars too close to a crosswalk hide people who are crossing.\n\n**Wrong choices**\n- No closer than 10 feet: 10 feet is too close.\n- No closer than 30 feet: 30 feet is the rule for stop signs and traffic signals.\n- No closer than 50 feet: 50 feet is the rule for railroad crossings.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-18",
+    "tags": [
+      "parking",
+      "crosswalk"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-illinois-speed-passing-parking-0005",
+    "certId": "dmv-permit-illinois",
+    "subjectId": "knowledge",
+    "chapterId": "speed-passing-parking",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "In Illinois, what is the speed limit in an alley when no other limit is posted?",
+    "choices": [
+      "10 mph",
+      "15 mph",
+      "20 mph",
+      "25 mph"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Alley speed limit: 15 mph",
+    "explanation": "Illinois law sets the speed limit in an **alley** at **15 mph** unless a different limit is posted. Alleys are narrow and people may walk out from garages or yards.\n\n**Wrong choices**\n- 10 mph: 10 mph is not the legal limit for alleys.\n- 20 mph: 20 mph is the school zone limit.\n- 25 mph: 25 mph is too fast for an alley.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-18",
+    "tags": [
+      "speed limits",
+      "alley"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-illinois-speed-passing-parking-0006",
+    "certId": "dmv-permit-illinois",
+    "subjectId": "knowledge",
+    "chapterId": "speed-passing-parking",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "On which side should you normally pass another vehicle?",
+    "choices": [
+      "On the left",
+      "On the right shoulder",
+      "On whichever side has more room",
+      "Only on the right"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Pass on the left",
+    "explanation": "You should normally **pass on the left**. Pass on the right only in the few cases the law allows, such as when there are two or more lanes going your way, and never on the shoulder.\n\n**Wrong choices**\n- On the right shoulder: Driving on the shoulder to pass is not allowed.\n- On whichever side has more room: Room alone does not decide. Passing is normally on the left.\n- Only on the right: Passing on the right is allowed only in limited cases.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-18",
+    "tags": [
+      "passing"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-illinois-speed-passing-parking-0007",
+    "certId": "dmv-permit-illinois",
+    "subjectId": "knowledge",
+    "chapterId": "speed-passing-parking",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "When is it NOT safe to pass on a two-lane road?",
+    "choices": [
+      "When you can see far ahead on a straight road",
+      "When a broken yellow line is on your side",
+      "When you are on a hill or curve and cannot see oncoming traffic",
+      "When the car ahead is going well under the limit"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Never pass on hills or curves you cannot see past",
+    "explanation": "Do **not pass on a hill or curve** where you **cannot see far enough ahead**. An oncoming car could appear with no time to get back into your lane.\n\n**Wrong choices**\n- When you can see far ahead on a straight road: A long, clear view ahead is when passing may be safe.\n- When a broken yellow line is on your side: A broken yellow line on your side allows passing when it is safe.\n- When the car ahead is going well under the limit: A slow car ahead may be passed if the road is clear and passing is allowed.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-18",
+    "tags": [
+      "passing",
+      "hills and curves"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-illinois-speed-passing-parking-0008",
+    "certId": "dmv-permit-illinois",
+    "subjectId": "knowledge",
+    "chapterId": "speed-passing-parking",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "In Illinois, outside an urban district, what is the general speed limit on most highways when no other limit is posted?",
+    "choices": [
+      "45 mph",
+      "50 mph",
+      "55 mph",
+      "75 mph"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Illinois default outside urban districts: 55 mph",
+    "explanation": "Outside an urban district, Illinois sets a general limit of **55 mph** on most highways unless a different limit is posted. Some highways, such as interstates, have higher posted limits. Always obey the posted sign.\n\n**Wrong choices**\n- 45 mph: 45 mph is not the Illinois default.\n- 50 mph: 50 mph is not the Illinois default.\n- 75 mph: 75 mph is not a default limit in Illinois.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-18",
+    "tags": [
+      "speed limits",
+      "Illinois law"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-illinois-speed-passing-parking-0009",
+    "certId": "dmv-permit-illinois",
+    "subjectId": "knowledge",
+    "chapterId": "speed-passing-parking",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "How far from a stop sign must you stay when parking on the side you approach from?",
+    "choices": [
+      "10 feet",
+      "15 feet",
+      "20 feet",
+      "30 feet"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Park at least 30 feet before a stop sign",
+    "explanation": "Do **not park within 30 feet** of a stop sign, yield sign, flashing signal, or traffic signal on the side you approach from. Drivers need to see the sign or light clearly.\n\n**Wrong choices**\n- 10 feet: 10 feet is too close.\n- 15 feet: 15 feet is the fire hydrant rule.\n- 20 feet: 20 feet is the crosswalk rule.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-18",
+    "tags": [
+      "parking",
+      "stop sign"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-illinois-speed-passing-parking-0010",
+    "certId": "dmv-permit-illinois",
+    "subjectId": "knowledge",
+    "chapterId": "speed-passing-parking",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "How close to the nearest rail of a railroad crossing may you park?",
+    "choices": [
+      "No closer than 15 feet",
+      "No closer than 30 feet",
+      "No closer than 50 feet",
+      "No closer than 100 feet"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Park at least 50 feet from a railroad crossing",
+    "explanation": "You may **not park within 50 feet of the nearest rail** of a railroad crossing.\n\n**Wrong choices**\n- No closer than 15 feet: 15 feet is the fire hydrant rule.\n- No closer than 30 feet: 30 feet is the stop sign rule.\n- No closer than 100 feet: 100 feet is more than the law requires.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-18",
+    "tags": [
+      "parking",
+      "railroad crossing"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-illinois-speed-passing-parking-0011",
+    "certId": "dmv-permit-illinois",
+    "subjectId": "knowledge",
+    "chapterId": "speed-passing-parking",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "How close to the driveway entrance of a fire station may you park on the same side of the street?",
+    "choices": [
+      "No closer than 10 feet",
+      "No closer than 20 feet",
+      "No closer than 50 feet",
+      "No closer than 100 feet"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Park at least 20 feet from a fire station driveway",
+    "explanation": "On the same side of the street, do **not park within 20 feet of a fire station driveway**. On the opposite side, the limit is 75 feet when signs are posted. Fire trucks need room to get out fast.\n\n**Wrong choices**\n- No closer than 10 feet: 10 feet is too close.\n- No closer than 50 feet: 50 feet is the railroad crossing rule.\n- No closer than 100 feet: 100 feet is more than the law requires.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-18",
+    "tags": [
+      "parking",
+      "fire station"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-illinois-speed-passing-parking-0012",
+    "certId": "dmv-permit-illinois",
+    "subjectId": "knowledge",
+    "chapterId": "speed-passing-parking",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Another car is passing you on a two-lane road. What should you do?",
+    "choices": [
+      "Speed up so it cannot pass",
+      "Move to the left to block it",
+      "Brake hard right away",
+      "Stay in your lane and do not speed up"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Being passed: keep right, do not speed up",
+    "explanation": "When another driver is passing you, **stay in your lane and do not speed up**. Let the other car get back into the lane safely.\n\n**Wrong choices**\n- Speed up so it cannot pass: Speeding up while being passed is dangerous and against the law.\n- Move to the left to block it: Blocking a passing car can cause a head-on crash.\n- Brake hard right away: Braking hard can cause a rear-end crash. Just keep a steady speed.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-18",
+    "tags": [
+      "passing"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-illinois-speed-passing-parking-0013",
+    "certId": "dmv-permit-illinois",
+    "subjectId": "knowledge",
+    "chapterId": "speed-passing-parking",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "The posted speed limit is 30 mph, but it is snowing hard and you can barely see. What speed is safe and legal?",
+    "choices": [
+      "30 mph, because that is the limit",
+      "A slower speed that lets you stop safely in the conditions",
+      "35 mph, to get out of the storm faster",
+      "Any speed, as long as your hazard lights are on"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Drive slower than the limit in bad conditions",
+    "explanation": "The posted limit is the **most** you may drive in good conditions. In snow, rain, fog, or heavy traffic, you must drive at a **slower speed that lets you stop safely**. You can get a ticket for driving too fast for conditions even under the limit.\n\n**Wrong choices**\n- 30 mph, because that is the limit: The limit is for good conditions. In a heavy snowstorm 30 mph can be too fast.\n- 35 mph, to get out of the storm faster: Going over the limit is never safer.\n- Any speed, as long as your hazard lights are on: Hazard lights do not make high speed safe or legal.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-18",
+    "tags": [
+      "speed",
+      "bad weather"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-illinois-speed-passing-parking-0014",
+    "certId": "dmv-permit-illinois",
+    "subjectId": "knowledge",
+    "chapterId": "speed-passing-parking",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Which of these is NOT against Illinois parking rules?",
+    "choices": [
+      "Parking 10 feet from a fire hydrant",
+      "Parking 25 feet from a crosswalk at an intersection",
+      "Parking 40 feet from the nearest rail of a railroad crossing",
+      "Parking 20 feet before a stop sign"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Hydrant 15, crosswalk 20, stop sign 30, railroad 50 ft",
+    "explanation": "Remember the Illinois parking distances: **15 feet** from a fire hydrant, **20 feet** from a crosswalk at an intersection, **30 feet** from a stop sign, and **50 feet** from a railroad crossing. Only **25 feet from a crosswalk** meets the rule.\n\n**Wrong choices**\n- Parking 10 feet from a fire hydrant: 10 feet is closer than the 15 feet required for a hydrant.\n- Parking 40 feet from the nearest rail of a railroad crossing: 40 feet is closer than the 50 feet required for a railroad crossing.\n- Parking 20 feet before a stop sign: 20 feet is closer than the 30 feet required before a stop sign.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-18",
+    "tags": [
+      "parking",
+      "Illinois law"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "dmv-permit-illinois-speed-passing-parking-0015",
+    "certId": "dmv-permit-illinois",
+    "subjectId": "knowledge",
+    "chapterId": "speed-passing-parking",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "You park facing downhill next to a curb. Which way should you turn your front wheels?",
+    "choices": [
+      "Straight ahead",
+      "Away from the curb (to the left)",
+      "Toward the curb (to the right)",
+      "It does not matter if you set the parking brake"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Downhill with a curb: wheels toward the curb",
+    "explanation": "When parking **downhill**, turn your front wheels **toward the curb**. If the car rolls, the curb will stop it. Always set the parking brake too.\n\n**Wrong choices**\n- Straight ahead: Straight wheels let the car roll into traffic.\n- Away from the curb (to the left): Turning away from the curb is for parking uphill with a curb.\n- It does not matter if you set the parking brake: The parking brake can fail. Turning the wheels is a second safety step.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-18",
+    "tags": [
+      "parking",
+      "hills"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+]
