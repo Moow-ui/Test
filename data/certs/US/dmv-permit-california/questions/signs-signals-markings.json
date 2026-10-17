@@ -479,5 +479,227 @@
       "turns"
     ],
     "levelLock": true
+  },
+  {
+    "id": "dmv-permit-california-signs-signals-markings-0017",
+    "certId": "dmv-permit-california",
+    "subjectId": "knowledge-test",
+    "chapterId": "signs-signals-markings",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "You see this sign facing you. What should you do?",
+    "choices": [
+      "Keep driving slowly and leave the road at the next exit",
+      "You are going against traffic: pull to the side, stop, and turn around when it is safe",
+      "Stop and wait for a flagger to wave you through"
+    ],
+    "answer": 2,
+    "oneLineConcept": "WRONG WAY sign: you are driving against traffic, so turn around safely",
+    "explanation": "A red and white **WRONG WAY** sign means you have entered a road or ramp **against the flow of traffic**. Oncoming cars are headed straight at you. Pull to the side of the road and stop, then **turn around or back out when it is safe**. These signs are often posted with DO NOT ENTER signs at freeway off-ramps.\n\n**Wrong answers**\n- Keep driving slowly and leave the road at the next exit: Every second you keep going, you are driving into oncoming traffic. Get out of the traffic lane right away.\n- Stop and wait for a flagger to wave you through: Flaggers work in road work zones. This sign is not about road work, and you must not go forward at all.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-18",
+    "tags": [
+      "wrong way",
+      "regulatory signs"
+    ],
+    "image": "wrong-way.svg",
+    "imageAlt": "A red horizontal rectangle sign with a white border. Two lines of large white capital letters read WRONG on the top line and WAY on the bottom line.",
+    "imageSource": {
+      "kind": "public",
+      "title": "MUTCD sign R5-1a (Wrong Way)",
+      "license": "U.S. federal government work (public domain)"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-california-signs-signals-markings-0018",
+    "certId": "dmv-permit-california",
+    "subjectId": "knowledge-test",
+    "chapterId": "signs-signals-markings",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What does this yellow warning sign tell you?",
+    "choices": [
+      "The road ahead is winding, with several curves",
+      "The road can be slippery when it is wet, so slow down",
+      "Cars ahead are stopped because of a crash"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Car with wavy tracks = road is slippery when wet",
+    "explanation": "This diamond-shaped yellow sign shows a car with **wavy skid marks** behind it. It warns that the road becomes **slippery when wet**. In rain, slow down, do not brake or turn suddenly, and leave more space ahead. Roads are most slippery in the first rain after a dry spell, when oil rises to the surface.\n\n**Wrong answers**\n- The road ahead is winding, with several curves: A winding road sign shows one curvy arrow, not a car with skid marks.\n- Cars ahead are stopped because of a crash: No standard yellow sign shows a crash. The skid marks mean the surface may make your tires slide.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-18",
+    "tags": [
+      "slippery when wet",
+      "warning signs"
+    ],
+    "image": "slippery-when-wet.svg",
+    "imageAlt": "A yellow diamond-shaped sign with a black border. It shows the back of a black car, and below the car are two black wavy lines that wiggle like tire tracks.",
+    "imageSource": {
+      "kind": "public",
+      "title": "MUTCD sign W8-5 (Slippery When Wet)",
+      "license": "U.S. federal government work (public domain)"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-california-signs-signals-markings-0019",
+    "certId": "dmv-permit-california",
+    "subjectId": "knowledge-test",
+    "chapterId": "signs-signals-markings",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "You see this sign ahead on the road you are traveling. What does it warn you about?",
+    "choices": [
+      "Your own lane ends, so you must move into the lane next to you",
+      "Traffic from another road or lane will join your road ahead, so watch for vehicles moving in",
+      "A side road crosses your road ahead, and cross traffic must stop"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Merge sign: another lane of traffic joins yours ahead",
+    "explanation": "This yellow warning sign shows a **straight arrow** with a **second line joining it from the side**. It means **two streams of traffic going the same way will merge** into one ahead, such as at a freeway on-ramp. Watch for vehicles entering your road, keep a steady speed, and leave room for them to merge. Drivers entering the road must fit into a safe gap.\n\n**Wrong answers**\n- Your own lane ends, so you must move into the lane next to you: That is the lane ends sign, which shows two lines getting closer together, with one bending in.\n- A side road crosses your road ahead, and cross traffic must stop: A crossroad sign shows a plus (+) shape. The merging line here joins in the same direction; it does not cross.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-18",
+    "tags": [
+      "merge",
+      "warning signs"
+    ],
+    "image": "merge-sign.svg",
+    "imageAlt": "A yellow diamond-shaped sign with a black border. A thick black arrow points straight up. A shorter curved black line rises from the lower right and joins the side of the arrow.",
+    "imageSource": {
+      "kind": "public",
+      "title": "MUTCD sign W4-1 (Merge)",
+      "license": "U.S. federal government work (public domain)"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-california-signs-signals-markings-0020",
+    "certId": "dmv-permit-california",
+    "subjectId": "knowledge-test",
+    "chapterId": "signs-signals-markings",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "What does this white sign tell you to do?",
+    "choices": [
+      "Turn right at the next intersection",
+      "Stay to the right of the traffic island or obstacle ahead",
+      "The right lane is for slower traffic only"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Keep Right sign: pass on the right side of the island or divider",
+    "explanation": "This is the **KEEP RIGHT** sign. A white rectangle with black symbols is a **regulatory sign**: it gives a rule you must obey. The black rounded shape is a **traffic island, median, or other obstacle**, and the arrow shows you must **pass to the right of it**. You often see it at the start of a raised median or a divider.\n\n**Wrong answers**\n- Turn right at the next intersection: The arrow does not turn onto another street. It only moves over and keeps going forward past the obstacle.\n- The right lane is for slower traffic only: That rule is shown with words (SLOWER TRAFFIC KEEP RIGHT), not with this symbol.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-18",
+    "tags": [
+      "keep right",
+      "regulatory signs"
+    ],
+    "image": "keep-right.svg",
+    "imageAlt": "A white vertical rectangle sign with a black border. Near the lower left is a long black rounded shape. A black arrow starts at the top, bends to the right, and points straight down beside the shape.",
+    "imageSource": {
+      "kind": "public",
+      "title": "MUTCD sign R4-7 (Keep Right)",
+      "license": "U.S. federal government work (public domain)"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-california-signs-signals-markings-0021",
+    "certId": "dmv-permit-california",
+    "subjectId": "knowledge-test",
+    "chapterId": "signs-signals-markings",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "You are driving on a one-way road and see this sign. What does it mean?",
+    "choices": [
+      "You have turned the wrong way, and you must turn around at once",
+      "The road ahead has two lanes going your way, so you may pass on either side",
+      "The road ahead becomes two-way, so oncoming traffic will be on your left"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Two-way traffic sign: oncoming traffic ahead shares the road",
+    "explanation": "This yellow diamond with **one arrow pointing up and one pointing down** is the **TWO-WAY TRAFFIC** sign. It warns that a one-way road or a divided road is about to change into a **road with traffic moving in both directions**. Stay to the right of the center line, and expect oncoming vehicles on your left. Do not pass unless the markings allow it.\n\n**Wrong answers**\n- You have turned the wrong way, and you must turn around at once: Wrong-way driving is shown by red and white WRONG WAY and DO NOT ENTER signs. A yellow sign is only a warning about the road ahead.\n- The road ahead has two lanes going your way, so you may pass on either side: The arrows point in opposite directions, so the two lanes go opposite ways. The sign is about oncoming traffic, not extra lanes for passing.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-18",
+    "tags": [
+      "two-way traffic",
+      "warning signs"
+    ],
+    "image": "two-way-traffic.svg",
+    "imageAlt": "A yellow diamond-shaped sign with a black border. It has two black vertical arrows side by side. The left arrow points down and the right arrow points up.",
+    "imageSource": {
+      "kind": "public",
+      "title": "MUTCD sign W6-3 (Two-Way Traffic)",
+      "license": "U.S. federal government work (public domain)"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-california-signs-signals-markings-0022",
+    "certId": "dmv-permit-california",
+    "subjectId": "knowledge-test",
+    "chapterId": "signs-signals-markings",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "You are driving in the right lane of a two-lane road and see this sign. What does it tell you?",
+    "choices": [
+      "Traffic from a road on the right will join your lane ahead",
+      "The road ahead curves to the left",
+      "The right lane ends ahead, so you must merge left into the remaining lane"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Lane ends sign: the lane on the bent-line side ends, so merge over",
+    "explanation": "This yellow diamond shows **two lines that get closer together**: the left line goes straight, and the **right line bends in** toward it. It is the **LANE ENDS** (lane reduction) sign. Here, the **right lane ends**, so drivers in it must signal, check traffic, and **merge left** into a safe gap. Drivers in the left lane should leave room for them.\n\n**Wrong answers**\n- Traffic from a road on the right will join your lane ahead: That is the merge sign, which shows an arrow with a second line joining from the side. Here no traffic enters; your lane runs out.\n- The road ahead curves to the left: A curve sign shows one bent arrow. Here only one edge bends while the other stays straight, so the road narrows rather than curves.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-18",
+    "tags": [
+      "lane ends",
+      "warning signs"
+    ],
+    "image": "lane-ends.svg",
+    "imageAlt": "A yellow diamond-shaped sign with a black border. It shows two thick black vertical lines. The left line goes straight up. The right line starts farther away, then bends toward the left line and goes up close beside it.",
+    "imageSource": {
+      "kind": "public",
+      "title": "MUTCD sign W4-2 (Lane Ends)",
+      "license": "U.S. federal government work (public domain)"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ]
+    }
   }
 ]
