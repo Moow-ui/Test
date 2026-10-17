@@ -1,6 +1,7 @@
 import { initOpenNextCloudflareForDev } from "@opennextjs/cloudflare";
 import type { NextConfig } from "next";
 import { DOMAIN } from "./config/brand";
+import { kstDate } from "./lib/inspection";
 
 /** 언어 경로가 생기기 전의 주소. 모두 한국어 주소(/ko/...)로 옮겼다 */
 const LEGACY_PATHS = ["/cert/:path*", "/notes", "/profile"];
@@ -15,6 +16,10 @@ const OLD_ADMIN_PATHS = ["/admin/reports", "/ko/admin/reports", "/en/admin/repor
 const WORKERS_DEV_HOST = ".*\\.workers\\.dev";
 
 const nextConfig: NextConfig = {
+  // 제목 아래 "검사 완료" 날짜 = 빌드한 날 (한국시간). 모든 페이지가 같은 날짜를 쓰도록 빌드 시작 때 한 번 정한다 (config/inspection.ts)
+  env: {
+    INSPECTION_BUILD_DATE: kstDate(new Date()),
+  },
   // OG 이미지가 쓰는 글꼴만 서버 묶음에 넣는다.
   // /data 는 넣지 않는다: 모든 페이지는 빌드 때 만들어지고, 문제는 정적 파일(public/data)로 배포한다.
   // (Worker 는 코드 크기 제한이 있어 자격증이 늘면 배포가 막힌다)
