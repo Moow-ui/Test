@@ -25,6 +25,7 @@
 | 2026-10-12 (월) | KR electrical-industrial-engineer · US cdl-air-brakes | 245/0 | 0% | 9 | 9 | 18 | 모드: 추가 (배포 파일 1,296 / 한도 20,000). 기출 0 / AI 245 (전기산업기사 135·CDL Air Brakes 110). 기출 미수록 사유: 전기산업기사는 CBT 문제은행 비공개·예전 공개 문제는 공단 저작권(이용 조건 불가), CDL Air Brakes 는 주 DMV 문제은행 비공개. 다시 풀기 245/245 일치(수정 후 통과 5: KEC 조건 누락 3·CDL 매뉴얼 판별 연도 차이 1·계산 가정 1). 시험 구성: 큐넷 종목 정보(jmCd 2140, 오늘은 q-net 직접 접속 가능)·NY DMV CDL-10 Section 1·5 원문(dmv.ny.gov 직접 다운로드)·WA DOL(25문항·20개 합격, 검색 결과로 확인). 전기설비기술기준은 law.go.kr 공개 API 로 받은 현행 KEC 전문(2026-01-05 시행)과 문항·개념 정리 조문 대조. 개념 정리 1차 FAIL(전기산업기사 4/18·CDL 2/4) → 수정·재검증(KEC 는 4차까지) 전 단원 PASS. 후보 남은 수 한국 86 · 미국 86(보충 없음). 배포 확인 200 (두 자격증 페이지·questions.json·개념 정리) |
 | 2026-10-13 (화) | KR licensed-real-estate-agent-2 · US nclex-rn | 315/1 | 0.3% | 10 | 10 | 20 | 모드: 추가 (배포 파일 1,571 / 한도 20,000). 기출 119 / AI 194 (공인중개사 2차 기출 119·AI 66, NCLEX-RN AI 128). 공인중개사 2차는 큐넷이 공개한 2025년 제36회 2차 시험문제지·최종정답(공공누리 제1유형 출처표시, 게시판에 'AI 학습용 데이터 이용 시 자유 이용' 문구 함께 표기)을 수록: 120문항 중 1교시 33번은 2026-08-11 확인·설명서 서식 개정으로 현행 정답이 선지에 없어 제외. NCLEX-RN 기출 미수록 사유: NCSBN 문항 비공개(기밀). 다시 풀기 KR 185/185·US 129/129 일치(수정 후 통과 KR 5: 해설 3·옮겨 적기 2, US 1: 선지 문장). 탈락 1: NCLEX 공기색전 자세 문항(근거 제한) data/review-queue/nclex-rn.json 보관. 법령은 law.go.kr 공개 API 현행 원문·별표(국토계획법 시행령 별표24·주택법 시행령 별표4)와 대조. 개념 정리 1차 FAIL(공인중개사 2차 2/16·NCLEX 7/10) → 수정·재검증 전 단원 PASS. NCLEX 그림: 심전도 문제 그림 3·개념 그림 1(visualNeed medium), 체크리스트 전부 PASS. 실행 중 세션 한도로 한 번 멈춤 → routine/wip-* 브랜치에서 이어서 완료(docs/daily-routine.md 0-2 적용). 허가 요청 거절로 멈춘 뒤 회장 승인으로 .claude/settings.json(루틴 명령 허가·강제 push 금지) 추가. ncsbn.org·nclex.com 직접 접속 불가라 2026 NCLEX-RN Test Plan 은 검색 결과로 확인, q-net·law.go.kr 은 직접 접속. 후보 남은 수 한국 83 · 미국 84(보충 없음). 그림 보강 안 함(주간 사용량 한도 근처). 배포 확인 200 (두 자격증 페이지·questions.json·개념 정리) |
 | 2026-10-17 (토) | KR baker-craftsman · US dmv-permit-pennsylvania | 203/0 | 0% | 11 | 11 | 22 | 모드: 추가 (배포 파일 1,719 / 한도 20,000). 기출 0 / AI 203 (제빵기능사 115·PA Permit 88). 기출 미수록 사유: 제빵기능사는 필기 CBT 문제은행 비공개·예전 공개 문제는 공단 저작권(이용 조건 불가), PA Permit 은 PennDOT 문제은행 비공개. 다시 풀기 KR 115/115·US 88/88 일치(US 수정 후 통과 3: 그림 PNG 잘림 → SVG width·height 추가 후 체크리스트 재검증 PASS). 시험 구성: 큐넷 종목 정보(jmCd 7893)·출제기준(2026.1.1~2027.12.31, 큐넷 보고서 화면 직접 확인), pa.gov Knowledge Test(18문항·15개 합격) — pa.gov 는 직접 접속 불가(프록시 403)라 검색 결과로 확인. PA 그림: 표지판 문제 그림 3·개념 그림 1(visualNeed high, MUTCD 퍼블릭 도메인), 체크리스트 전부 PASS. 개념 정리 1차 검증 전 단원 PASS(KR 6·US 6). US 는 글자 수 제한(300자)으로 문장을 줄인 7곳을 다시 검증해 1곳(Move Over 조건 '2개 이상' 빠짐) 고친 뒤 PASS. 후보 남은 수 한국 81 · 미국 82(보충 없음). 2026-10-14~16 은 예약 지시에 따른 일시 중지. 배포 확인 200 (두 자격증 페이지·questions.json·개념 정리) |
+| 2026-10-18 (일) | KR confectioner-craftsman · US dmv-permit-illinois | 213/2 | 0.9% | 12 | 12 | 24 | 모드: 추가 (배포 파일 1,761 / 한도 20,000). 기출 0 / AI 211 (제과기능사 118·Illinois Permit 93). 기출 미수록 사유: 제과기능사는 필기 CBT 문제은행 비공개·예전 공개 문제는 공단 저작권(이용 조건 불가), Illinois Permit 은 SOS 문제은행 비공개. 다시 풀기 KR 118/118·US 95/95 일치(US 수정 후 통과 1: 합격선 문항을 92 Ill. Adm. Code 1030.80 문구 '최소 35문항·80%'로 고쳐 재검증). 탈락 2: 21세 미만 무관용 첫 위반 정지 기간(3·6개월)이 2차 자료로만 확인돼 data/review-queue/dmv-permit-illinois.json 보관(개념 정리에서도 해당 수치 삭제). 시험 구성: 큐넷 종목 정보(jmCd 7892)·출제기준(2026.1.1~2027.12.31, 큐넷 보고서 화면을 브라우저로 직접 확인), 92 Ill. Adm. Code 1030.80(law.cornell.edu) — ilsos.gov·ilga.gov 는 직접 접속 불가라 법령 수치는 검색 결과로 확인. Illinois 그림: 표지판 문제 그림 3·개념 그림 1(visualNeed high, MUTCD 퍼블릭 도메인), 체크리스트 전부 PASS. 개념 정리 1차 검증 전 단원 PASS(KR 6·US 6). 후보 남은 수 한국 80 · 미국 81(보충 없음). 배포 확인 200 (두 자격증 페이지·questions.json·개념 정리) |
 
 ## 상태
 
@@ -33,7 +34,7 @@
 - 건너뜀: 없음
 - 이어서 할 작업: 없음
 - 미실행: 2026-10-08·10-09 (사용량 한도 소진으로 루틴이 시작되지 않음), 2026-10-14~16 (예약 지시의 일시 중지 날짜)
-- 회장 확인 필요: 끝난 작업 브랜치 routine/wip-nclex-rn · routine/wip-licensed-real-estate-agent-2 · routine/wip-dmv-permit-pennsylvania · routine/wip-baker-craftsman 을 지우지 못함(실행 환경의 git 프록시가 원격 브랜치 삭제를 거절). GitHub 에서 직접 지워 주세요
+- 회장 확인 필요: 끝난 작업 브랜치 routine/wip-nclex-rn · routine/wip-licensed-real-estate-agent-2 · routine/wip-dmv-permit-pennsylvania · routine/wip-baker-craftsman · routine/wip-confectioner-craftsman · routine/wip-dmv-permit-illinois 를 지우지 못함(실행 환경의 git 프록시가 원격 브랜치 삭제를 거절). GitHub 에서 직접 지워 주세요
 - 루틴 밖 특별 추가: 2026-10-12 저녁 회장 요청으로 KR adsp · afpk · credit-analyst 3개를 같은 절차(분리 검증 포함)로 추가 ([기록](2026-10/extra-2026-10-12.md)). 루틴의 누적 수·진행 표에는 넣지 않는다. adsp 는 대기 목록에서 뺐고 afpk·credit-analyst 는 원래 대기 목록에 없었다
 
 ## 주간 요약
@@ -51,3 +52,9 @@
 - 이번 주 추가: 10개 (한국 5 · 미국 5), 누적 16개 (한국 8 · 미국 8). 10-08·10-09 는 사용량 한도로 미실행
 - 검증 탈락률: 0.3% (작성 1,014 / 탈락 3)
 - 회장 확인 필요: 미국 시험 공식 사이트(officialasvab.com 등)와 law.go.kr 이 실행 환경에서 직접 열리지 않아 검색 결과로 확인 중. 허용 도메인 추가를 검토해 주세요
+
+### 3주차 (2026-10-12 ~ 10-18)
+
+- 이번 주 추가: 8개 (한국 4 · 미국 4), 누적 24개 (한국 12 · 미국 12). 10-14~16 은 예약 지시에 따른 일시 중지
+- 검증 탈락률: 0.3% (작성 976 / 탈락 3)
+- 회장 확인 필요: 끝난 routine/wip-* 브랜치 6개를 GitHub 에서 직접 지워 주세요. ilsos.gov·ilga.gov·pa.gov 같은 미국 주 정부 사이트가 실행 환경에서 열리지 않아 법령 수치는 검색 결과로 확인 중 — 허용 도메인 추가 검토 요청
