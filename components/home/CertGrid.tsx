@@ -165,23 +165,25 @@ export function CertGrid({ certs }: { certs: CertListItem[]; conceptIds?: string
       {shown.length === 0 ? (
         <p className="card mt-4 p-4 font-bold">{m.filterNone}</p>
       ) : (
-        // 분야별로 묶은 목록 (분야 = meta.json 의 field, 자격증이 많은 분야부터). 칸 수는 화면 폭에 따라 1·2·3
-        <div className="card mt-4 columns-1 gap-8 p-4 sm:columns-2 sm:p-6 lg:columns-3">
+        // 분야별로 묶은 목록 (분야 = meta.json 의 field, 자격증이 많은 분야부터). 분야마다 상자 하나. 칸 수는 화면 폭에 따라 1·2·3
+        <div className="mt-4 columns-1 gap-4 sm:columns-2 lg:columns-3">
           {fields.map((field) => {
             const inField = certs.filter((c) => c.field === field);
             const visible = inField.some((c) => shown.includes(c));
             return (
-              <section key={field} hidden={!visible} className="mb-6 break-inside-avoid">
-                <h3 className="border-b border-line-soft pb-2 text-sm font-bold text-ink-sub">
+              <section key={field} hidden={!visible} className="card mb-4 break-inside-avoid overflow-hidden">
+                <h3 className="flex items-center justify-between border-b border-card-line bg-surface-2 px-4 py-2 font-bold text-ink">
                   {field}
-                  <span className="ml-2 font-normal">{inField.filter((c) => shown.includes(c)).length}</span>
+                  <span className="text-sm font-bold text-ink-sub">
+                    {fmt(m.certCount, { n: inField.filter((c) => shown.includes(c)).length })}
+                  </span>
                 </h3>
-                <ul>
+                <ul className="divide-y divide-line-soft">
                   {inField.map((c) => (
                     <li key={c.id} hidden={!shown.includes(c)}>
                       <Link
                         href={localePath(locale, `/cert/${c.id}`)}
-                        className={`flex min-h-12 items-center justify-between gap-3 rounded-lg px-2 py-2 hover:bg-primary-soft ${
+                        className={`flex min-h-14 items-center justify-between gap-3 px-4 py-2 hover:bg-primary-soft ${
                           c.ready ? "text-ink" : "text-ink-sub"
                         }`}
                       >
