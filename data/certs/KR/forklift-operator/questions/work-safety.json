@@ -163,5 +163,41 @@
         4
       ]
     }
+  },
+  {
+    "id": "forklift-operator-work-safety-0001",
+    "certId": "forklift-operator",
+    "subjectId": "safety",
+    "chapterId": "work-safety",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "나무, 종이, 섬유처럼 타고 나면 재가 남는 물질에 불이 붙은 화재는 어떤 급의 화재인가?",
+    "choices": [
+      "B급 화재",
+      "C급 화재",
+      "D급 화재",
+      "A급 화재"
+    ],
+    "answer": 4,
+    "oneLineConcept": "나무·종이·섬유가 타는 일반 화재는 A급",
+    "explanation": "화재는 타는 물질에 따라 나눕니다. **A급은 일반 화재(나무·종이·섬유)**, B급은 유류 화재, C급은 전기 화재, D급은 금속 화재입니다. A급 화재는 물을 뿌려 온도를 낮추는 방법이 잘 듣습니다.\n\n**틀린 선지**\n- ① B급 화재: 휘발유·경유 같은 기름이 타는 유류 화재입니다.\n- ② C급 화재: 전기가 흐르는 설비에서 나는 전기 화재입니다.\n- ③ D급 화재: 마그네슘 같은 금속 가루가 타는 금속 화재입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-18",
+    "tags": [
+      "화재",
+      "화재 분류"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
   }
 ]
