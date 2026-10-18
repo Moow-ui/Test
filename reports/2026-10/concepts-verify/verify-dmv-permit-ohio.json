@@ -1,0 +1,117 @@
+{
+  "date": "2026-10-19",
+  "verifiedAtCandidate": "2026-10-19",
+  "cert": "dmv-permit-ohio",
+  "chapters": {
+    "regulatory-signs": {
+      "result": "PASS",
+      "issues": []
+    },
+    "warning-signs": {
+      "result": "PASS",
+      "issues": [
+        "(optional, not a FAIL) Cards 'Advisory speed plaque' and 'No passing zone pennant' have no source. They hold no number or statute, but could cite 'Manual on Uniform Traffic Control Devices (FHWA), 2023' like the other sign cards."
+      ]
+    },
+    "signals-markings": {
+      "result": "FAIL",
+      "issues": [
+        "Format: card 'Steady yellow' states a legal meaning ('Warns that the green movement is ending and a red light comes next.') but has no source → add source { org: 'Ohio Revised Code 4511.13', year: 2026 } (ORC 4511.13(B)(1), eff. 2025-06-30).",
+        "Format: card 'Passing lines' states legal rules ('Double solid yellow: no passing in either direction. ... Solid yellow on your side: you may not pass.') but has no source → add source { org: 'Ohio Revised Code 4511.31', year: 2026 } (or MUTCD 2023). (optional) Ohio-specific exception in ORC 4511.31(B): passing in a no-passing zone is allowed when the slower vehicle is going less than half the speed limit, you can pass without exceeding the speed limit, and there is enough clear sight distance; could be added as one sentence."
+      ],
+      "recheck": {
+        "date": "2026-10-19",
+        "result": "PASS",
+        "issues": [
+          "Both first-round fixes applied: 'Steady yellow' now cites ORC 4511.13 (matches 4511.13(B)(1)); 'Passing lines' now cites ORC 4511.31. All other sentences match 4511.13, 4511.132 and MUTCD 2023. Format OK (4 summary paragraphs, 7 cards all sourced, 6 points).",
+          "(optional, not a FAIL) ORC 4511.31(B) half-speed-limit exception still not mentioned; card 'Steady red and turn on red' says a steady red arrow forbids the turn — 4511.13(C)(2)(b) allows it where a sign permits turning on the red arrow."
+        ]
+      }
+    },
+    "right-of-way": {
+      "result": "PASS",
+      "issues": [
+        "(optional, not a FAIL) Summary 'For stopped vehicles with flashing lights, move over a lane if safe, or slow down.' → ORC 4511.213(A) covers only listed stationary vehicles (public safety, emergency, road service, waste collection, PUCO inspection, highway maintenance) with flashing lights; could read 'For stopped emergency, road service, waste collection, or highway maintenance vehicles with flashing lights, ...'. The card itself is correct."
+      ]
+    },
+    "speed-passing-parking": {
+      "result": "FAIL",
+      "issues": [
+        "Summary: 'Unless another limit is posted, the limit is 20 mph in a school zone during school hours, ...' → ORC 4511.21(B)(1)(a): 20 mph applies 'in school zones during school recess and while children are going to or leaving school during the opening or closing hours, and when twenty miles per hour school speed limit signs are erected' — not all school hours. Correction: '20 mph in a posted school zone during recess and while children are going to or leaving school'.",
+        "Card 'Default speed limits' definition: '20 mph school zone during school hours' → same correction ('20 mph in a posted school zone during recess and when children are arriving or leaving'), source ORC 4511.21(B)(1)(a).",
+        "Point: 'School zone during school hours: 20 mph.' → 'School zone during recess or when children are arriving or leaving: 20 mph.' (ORC 4511.21(B)(1)(a))."
+      ],
+      "recheck": {
+        "date": "2026-10-19",
+        "result": "PASS",
+        "issues": [
+          "School-zone wording fixed in summary, 'Default speed limits' card and point: '20 mph ... during recess and while children are arriving or leaving, where school speed signs are posted' matches ORC 4511.21(B)(1)(a). Other numbers re-checked against 4511.21(B)(2),(3),(5),(7),(14), 4511.27, 4511.28, 4511.29, 4511.30, 4511.68(A), 4511.69(A): all correct. Format OK (4 paragraphs, 7 sourced cards, 6 points)."
+        ]
+      },
+      "recheck2": {
+        "date": "2026-10-19",
+        "result": "PASS",
+        "issues": [
+          "Reworded card 'Default speed limits' re-checked sentence by sentence against ORC 4511.21(B) (codes.ohio.gov): school zone 20 mph at recess/arrival/leaving with signs = (B)(1)(a); alley 15 = (B)(7); other municipal streets 25 = (B)(2); state route in municipality outside business district 35 = (B)(3); outside municipalities 55 = (B)(5); rural freeway 70 = (B)(14). Tip '20 school, 25 town, 55 country, 70 rural freeway' consistent. Source ORC 4511.21 correct.",
+          "(optional, not a FAIL) Simplified 'unless posted' defaults omit narrower exceptions (e.g. (B)(6) 50 mph state routes outside urban districts, (B)(10) 60 mph two-lane state routes); acceptable for a card."
+        ]
+      }
+    },
+    "safe-driving": {
+      "result": "PASS",
+      "issues": []
+    },
+    "permit-probationary": {
+      "result": "FAIL",
+      "issues": [
+        "Card 'Getting a probationary license': source is only 'Ohio Revised Code 4507.071', but the driver education and '50 hours of driving practice, including at least 10 at night' requirements are in ORC 4507.21(B)(1)-(2), not 4507.071 → source should be 'Ohio Revised Code 4507.071 and 4507.21'.",
+        "Same card: 'Drivers under 18 must finish driver education and complete 50 hours ...' → since House Bill 54 (136th GA, 2025) ORC 4507.21(B) applies these to every applicant under 21 (BMV 'Temporary Permit – Ages 18-20' page also requires it). Still true for under-18, but correct to 'Drivers under 21 must finish driver education and complete 50 hours of driving practice, including at least 10 at night.' The summary sentence 'a driver under 18 must hold the permit at least 6 months, finish driver education, and complete 50 hours ...' is true as written (the 6-month hold applies to probationary licenses under 18, ORC 4507.071(A)); optional to add 'under 21' for the training part.",
+        "(optional, not a FAIL) Summary/card phone rule lists exceptions 'except in an emergency or when stopped outside a lane of travel'; ORC 4511.205(B)(3) also exempts a navigation device used voice-operated/hands-free without manipulating it. Could add 'or hands-free navigation'."
+      ],
+      "recheck": {
+        "date": "2026-10-19",
+        "result": "PASS",
+        "issues": [
+          "Card 'Getting a probationary license' now cites ORC 4507.071 and 4507.21 and says 'Every new driver under 21' must finish driver training and 50 hours incl. 10 at night — matches 4507.21(B)(1)-(2); 6-month permit hold for under 18 matches 4507.071(A). Permit (4507.05 A, C, F(2)), probationary night/passenger limits (4507.071 B), phone ban $150 + 60 days (4511.205 A, C) all correct. Format OK (4 paragraphs, 6 sourced cards, 6 points).",
+          "(optional, not a FAIL) Summary phone exceptions still omit hands-free navigation (ORC 4511.205(B)(3))."
+        ]
+      }
+    },
+    "ovi-laws": {
+      "result": "PASS",
+      "issues": []
+    }
+  },
+  "checked": {
+    "4511.43": "stop at stop line / crosswalk / point of view; yield: collision after passing yield sign without stopping = prima-facie failure to yield",
+    "4511.13": "(eff. 2025-06-30, HB 54) right on red and left one-way→one-way after stop unless prohibited or red arrow; red arrow turn only if a device permits; local authorities/ODOT may prohibit turn on red; flashing red = stop sign; flashing yellow arrow: yield to oncoming and pedestrians",
+    "4511.132": "dark/unclear signal: stop, yield, proceed with ordinary care",
+    "4511.25": "slower traffic right lane except passing, left turn, intended route",
+    "4511.41/42/44/46/431": "left yields right; left turn yields to oncoming; entering from non-roadway yields to all; crosswalk half-roadway rule, no passing car stopped at crosswalk; stop before sidewalk in business/residence district",
+    "4511.75": "stop at least 10 ft; 4+ lanes oncoming need not stop",
+    "4511.45": "pull to right edge clear of intersection and stop",
+    "4511.213": "listed stationary vehicles; 2+ lanes same direction: change lanes if possible, else slow down",
+    "4511.21": "assured clear distance; 20 school (recess/arrival/dismissal, signs), 25 municipal, 35 state routes in municipality outside business district, 15 alleys, 55 outside municipalities, 70 rural freeways",
+    "4511.27/28/29/30": "3 ft bicycle; overtaken vehicle gives way right, no speed increase; pass on right only for left-turner or 2+ lanes, never off roadway; return before 200 ft of oncoming; no left side within 100 ft of intersection/RR crossing, hill crest/curve",
+    "4511.31": "no-passing zones by signs/markings; exception (B) for vehicle < half speed limit",
+    "4511.68": "hydrant 10, crosswalk at intersection 20, stop/yield/signal 30, nearest rail 50; sidewalk, crosswalk, bridge, bicycle lane",
+    "4511.69": "within 12 inches of right curb",
+    "4513.03": "sunset-sunrise, 1000 ft, wipers due to precipitation; no parking lights only",
+    "4511.39": "signal continuously last 100 ft; signal before sudden stop/slowdown",
+    "4511.81": "under 4 or under 40 lb child restraint; under 8 and under 4'9\" booster",
+    "4511.62": "stop 15-50 ft from nearest rail; never through/around/under gate",
+    "4511.38/4511.70/4511.661": "no backing on freeway except rest area/official duty/emergency; door on traffic side only when safe; unattended: engine off, key out, brake, wheels to curb on grade",
+    "4507.05": "(eff. 2026-03-20) TIPIC at 15y6m, valid 1 year; under 16 eligible adult (parent/guardian/custodian/driving instructor); 16+ licensed driver 21+; no prohibited alcohol; belts; under 18 no midnight-6 a.m. without parent/guardian/custodian",
+    "4507.071": "probationary at 16 after 6-month permit; first 12 months midnight-6 a.m., 1 non-family passenger; after 12 months 1-5 a.m.; work/school/religious documentation exceptions",
+    "4507.21": "(eff. 2026-03-20) driver training + 50 h incl. 10 night affidavit for applicants under 21",
+    "4511.205": "permit under 18 and probationary: no wireless device in any manner; $150 + 60-day suspension first offense; exceptions emergency, stationary outside lane, hands-free navigation",
+    "4511.19": "0.08 adult, 0.02 under 21; first OVI: 3 consecutive days jail or 3-day DIP, fine $565-$1,075, suspension 1 to 3 years",
+    "4511.191 / 4510.02": "implied consent; first refusal class C = 1 year; first failed test class E = 3 months; 10-year look-back",
+    "OAC 4501:1-1-08": "two written parts of at least 20 questions each (laws; signs), 75% each — supports 'half of the test is about signs'",
+    "bmv.ohio.gov (dl-gdl)": "40 multiple-choice questions, 75% to pass, wait at least 24 hours after failing; permit at 15 years 6 months",
+    "MUTCD 2023": "octagon STOP only, downward triangle YIELD only; pentagon school; fluorescent yellow-green school/ped/bike; orange work zone; round RR advance warning; pennant on left side; TWLTL solid outer + broken inner yellow"
+  },
+  "figure": {
+    "warning-sign-kinds.svg": "①PASS (large labels, legible at PNG size) ②PASS (yellow diamond, orange diamond, fluorescent yellow-green pentagon, round yellow RR crossing W10-1, yellow right-pointing pennant W14-3 with black borders) ③PASS ⑤PASS (matches warning-signs concepts, compare rows, alt and caption)"
+  }
+}
