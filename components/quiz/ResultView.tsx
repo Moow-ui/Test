@@ -20,8 +20,9 @@ import { startSession } from "@/lib/storage";
 import type { Question, QuizLevel } from "@/lib/types";
 import { useMessages } from "@/lib/use-messages";
 import type { QuizCert } from "./QuizRunner";
+import { ScoreRing } from "./ScoreRing";
 
-/** 이 문항 수보다 적게 풀었으면 합격 판정은 "참고용"이라고 알려 준다 */
+/** 이 문항 수보다 적게 풀었으면 합격·불합격 판정을 하지 않는다 (사용자 결정 2026-10-18: 5문제 연습에 "합격선 미달"은 기운 빠진다) */
 const RELIABLE_QUESTION_COUNT = 20;
 
 /**
@@ -71,8 +72,10 @@ export function ResultView({
 
   const graded = gradeQuiz(questions, answers);
   const summary = summarize(graded, cert);
-  const verdict = summary.verdict;
+  // 문항 수가 적은 연습이면 판정을 숨긴다 (합격 기준 안내 한 줄만)
+  const verdict = summary.total >= RELIABLE_QUESTION_COUNT ? summary.verdict : null;
   const wrong = graded.filter((g) => !g.correct);
+  const skippedCount = wrong.filter((w) => w.chosen === null).length;
   // 오답노트에는 채점하는 순간 "답을 골라서 틀린 문제"만 자동으로 담긴다 (lib/storage.ts 의 addWrongNotes)
   const savedCount = wrong.filter((w) => w.chosen !== null).length;
   const criteria = cert.examInfo.passCriteria;
@@ -105,41 +108,59 @@ export function ResultView({
         <h1 className="text-xl font-bold">{m.title}</h1>
       </header>
 
-      {/* 점수: 큰 숫자 "60점" + 작게 "3/5 정답", 그 아래 합격선 한 줄. 긴 합격 기준은 ⓘ 를 눌러야 보인다 */}
-      <section aria-label={m.scoreLabel} className="card p-6">
-        <p className="flex flex-wrap items-baseline gap-x-4 gap-y-2">
+      {/* 점수: 원형 게이지(가운데 "60점 · 3/5") + 오른쪽에 맞음·틀림·안 푼 문제, 합격 판정(문항이 충분할 때만) */}
+      <section aria-label={m.scoreLabel} className="card flex flex-col items-center gap-4 p-6 sm:flex-row sm:items-center sm:gap-8">
+        <ScoreRing
+          score={summary.score}
+          tone={verdict ? (verdict.passed ? "ok" : "bad") : "primary"}
+          marker={verdict ? criteria.averageScore : undefined}
+          label={fmt(m.ringAria, { n: formatScore(summary.score), total: summary.total, correct: summary.correct })}
+        >
           <span className="text-2xl font-bold">{fmt(m.score, { n: formatScore(summary.score) })}</span>
-          <span className="text-lg">{fmt(m.correctShort, { total: summary.total, correct: summary.correct })}</span>
-        </p>
+          <span className="text-sm text-ink-sub">{fmt(m.correctShort, { total: summary.total, correct: summary.correct })}</span>
+        </ScoreRing>
 
-        {verdict && (
-          <details className="mt-4">
-            <summary className="flex min-h-11 items-center gap-2">
-              <span className={`min-w-0 text-lg font-bold ${verdict.passed ? "text-ok" : "text-bad"}`}>
-                {verdict.passed ? m.pass : m.fail} ({passLine})
-              </span>
-              <span
-                className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-[20px] leading-none text-ink-sub hover:bg-surface-2"
-                title={m.criteriaButton}
-              >
-                <span aria-hidden="true">ⓘ</span>
-                <span className="sr-only">{m.criteriaButton}</span>
-              </span>
-            </summary>
-            <p className="mt-2 text-sm">{fmt(m.criteria, { text: criteria.description })}</p>
-          </details>
-        )}
-        {verdict && verdict.failedSubjects.length > 0 && (
-          <p className="mt-2 font-bold text-bad">
-            {fmt(m.failedSubjects, {
-              list: verdict.failedSubjects
-                .map((s) => fmt(m.failedItem, { name: s.name, score: formatScore(s.score) }))
-                .join(all.common.listSeparator),
-              min: verdict.subjectMinScore ?? 0,
-            })}
+        <div className="w-full min-w-0 space-y-2 text-center sm:text-left">
+          <p className="text-lg font-bold">
+            {fmt(m.breakdown, { ok: summary.correct, ng: wrong.length - skippedCount })}
+            {skippedCount > 0 && <span className="text-ink-sub">{fmt(m.breakdownSkip, { n: skippedCount })}</span>}
           </p>
-        )}
-        {verdict && summary.total < RELIABLE_QUESTION_COUNT && <p className="mt-2 text-sm text-ink-sub">{m.fewQuestions}</p>}
+
+          {verdict ? (
+            <>
+              <details>
+                <summary className="flex min-h-11 items-center justify-center gap-2 sm:justify-start">
+                  <span className={`min-w-0 text-lg font-bold ${verdict.passed ? "text-ok" : "text-bad"}`}>
+                    {verdict.passed ? m.pass : m.fail} ({passLine})
+                  </span>
+                  <span
+                    className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-[20px] leading-none text-ink-sub hover:bg-surface-2"
+                    title={m.criteriaButton}
+                  >
+                    <span aria-hidden="true">ⓘ</span>
+                    <span className="sr-only">{m.criteriaButton}</span>
+                  </span>
+                </summary>
+                <p className="mt-2 text-sm">{fmt(m.criteria, { text: criteria.description })}</p>
+              </details>
+              {verdict.failedSubjects.length > 0 && (
+                <p className="font-bold text-bad">
+                  {fmt(m.failedSubjects, {
+                    list: verdict.failedSubjects
+                      .map((s) => fmt(m.failedItem, { name: s.name, score: formatScore(s.score) }))
+                      .join(all.common.listSeparator),
+                    min: verdict.subjectMinScore ?? 0,
+                  })}
+                </p>
+              )}
+              <p className="text-sm text-ink-sub">{fmt(m.markerNote, { line: passLine })}</p>
+            </>
+          ) : (
+            <p className="text-sm text-ink-sub">
+              {fmt(m.practiceNote, { n: summary.total })} {fmt(m.passInfo, { line: passLine })}
+            </p>
+          )}
+        </div>
       </section>
 
       <section aria-labelledby="by-subject-title">
@@ -245,8 +266,10 @@ export function ResultView({
               <li key={q.id}>
                 <details className="card">
                   <summary className="flex min-h-14 items-center gap-2 p-4">
-                    <span className={`shrink-0 font-bold ${g.correct ? "text-ok" : "text-bad"}`}>
-                      {g.correct ? m.ok : m.ng}
+                    <span
+                      className={`shrink-0 font-bold ${g.correct ? "text-ok" : g.chosen === null ? "text-ink-sub" : "text-bad"}`}
+                    >
+                      {g.correct ? m.ok : g.chosen === null ? m.skipped : m.ng}
                     </span>
                     <span className="flex-1 whitespace-pre-wrap font-bold">
                       {i + 1}. {q.stem}
