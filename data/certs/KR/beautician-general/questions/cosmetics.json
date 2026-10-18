@@ -1,0 +1,389 @@
+[
+  {
+    "id": "beautician-general-cosmetics-0001",
+    "certId": "beautician-general",
+    "subjectId": "written",
+    "chapterId": "cosmetics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "화장품과 의약품을 비교할 때, 화장품의 사용 대상은?",
+    "choices": [
+      "환자",
+      "정상인",
+      "의사의 처방을 받은 사람",
+      "영유아만"
+    ],
+    "answer": 2,
+    "oneLineConcept": "화장품 = 정상인, 의약품 = 환자",
+    "explanation": "화장품은 **정상인**이 몸을 깨끗하고 아름답게 하기 위해 오래 쓰는 물품으로, 인체에 대한 작용이 경미해야 합니다. 병을 치료하려고 **환자**가 쓰는 것은 의약품입니다.\n\n**틀린 선지**\n- 환자: 환자가 치료를 위해 쓰는 것은 의약품입니다.\n- 의사의 처방을 받은 사람: 처방을 받아 쓰는 것은 의약품입니다.\n- 영유아만: 화장품은 나이와 관계없이 정상인 누구나 씁니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-19",
+    "tags": [
+      "화장품 기초",
+      "정의"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "beautician-general-cosmetics-0002",
+    "certId": "beautician-general",
+    "subjectId": "written",
+    "chapterId": "cosmetics",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "화장품이 갖추어야 할 4대 요건에 해당하지 않는 것은?",
+    "choices": [
+      "안전성",
+      "안정성",
+      "사용성",
+      "치료성"
+    ],
+    "answer": 4,
+    "oneLineConcept": "화장품 4대 요건: 안전성·안정성·사용성·유효성",
+    "explanation": "화장품의 4대 요건은 **안전성**(피부에 해가 없음), **안정성**(변질·변색이 없음), **사용성**(쓰기 편함), **유효성**(보습·미백 같은 효과)입니다. 병을 고치는 **치료성은 의약품**의 요건입니다.\n\n**틀린 선지**\n- 안전성: 4대 요건에 해당합니다.\n- 안정성: 4대 요건에 해당합니다.\n- 사용성: 4대 요건에 해당합니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-19",
+    "tags": [
+      "화장품 기초",
+      "4대 요건"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "beautician-general-cosmetics-0003",
+    "certId": "beautician-general",
+    "subjectId": "written",
+    "chapterId": "cosmetics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "계면활성제를 피부 자극이 강한 것부터 순서대로 나열한 것은?",
+    "choices": [
+      "양이온 > 음이온 > 양쪽성 > 비이온",
+      "음이온 > 양이온 > 비이온 > 양쪽성",
+      "비이온 > 양쪽성 > 음이온 > 양이온",
+      "양쪽성 > 양이온 > 음이온 > 비이온"
+    ],
+    "answer": 1,
+    "oneLineConcept": "자극: 양이온 > 음이온 > 양쪽성 > 비이온",
+    "explanation": "계면활성제의 피부 자극은 **양이온 > 음이온 > 양쪽성 > 비이온** 순서입니다.\n\n1. 양이온: 살균·정전기 방지 (헤어린스)\n2. 음이온: 세정·거품 (샴푸)\n3. 양쪽성: 자극이 적음 (베이비 샴푸)\n4. 비이온: 자극이 가장 적음 (기초화장품)\n\n**틀린 선지**\n- 음이온 > 양이온 > 비이온 > 양쪽성: 양이온과 음이온, 비이온과 양쪽성의 순서가 바뀌었습니다.\n- 비이온 > 양쪽성 > 음이온 > 양이온: 자극이 약한 것부터 나열한 순서입니다.\n- 양쪽성 > 양이온 > 음이온 > 비이온: 양쪽성은 자극이 적은 편이라 맨 앞이 될 수 없습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-19",
+    "tags": [
+      "화장품 원료",
+      "계면활성제"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "beautician-general-cosmetics-0004",
+    "certId": "beautician-general",
+    "subjectId": "written",
+    "chapterId": "cosmetics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "샴푸에 많이 쓰이며 세정력과 거품을 내는 힘이 좋은 계면활성제는?",
+    "choices": [
+      "양이온 계면활성제",
+      "음이온 계면활성제",
+      "비이온 계면활성제",
+      "양쪽성 계면활성제"
+    ],
+    "answer": 2,
+    "oneLineConcept": "샴푸(세정·거품) = 음이온 계면활성제",
+    "explanation": "**음이온 계면활성제**는 때를 씻어 내는 힘과 거품이 좋아 **샴푸·비누·클렌징폼**에 많이 씁니다.\n\n**틀린 선지**\n- 양이온 계면활성제: 살균·정전기 방지 작용이 있어 헤어린스에 씁니다.\n- 비이온 계면활성제: 자극이 가장 적어 기초화장품의 유화제로 씁니다.\n- 양쪽성 계면활성제: 자극이 적어 베이비 샴푸 등에 쓰지만 세정력은 음이온보다 약합니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-19",
+    "tags": [
+      "화장품 원료",
+      "계면활성제"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "beautician-general-cosmetics-0005",
+    "certId": "beautician-general",
+    "subjectId": "written",
+    "chapterId": "cosmetics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "헤어린스에 쓰이며 살균 작용과 정전기 방지 작용이 있는 계면활성제는?",
+    "choices": [
+      "음이온 계면활성제",
+      "비이온 계면활성제",
+      "양쪽성 계면활성제",
+      "양이온 계면활성제"
+    ],
+    "answer": 4,
+    "oneLineConcept": "린스(정전기 방지·살균) = 양이온 계면활성제",
+    "explanation": "**양이온 계면활성제**는 모발에 잘 달라붙어 **정전기를 막고 모발을 부드럽게** 하며 **살균** 작용도 있어 헤어린스·컨디셔너에 씁니다. 대신 피부 자극은 가장 강합니다.\n\n**틀린 선지**\n- 음이온 계면활성제: 세정·거품이 좋아 샴푸에 씁니다.\n- 비이온 계면활성제: 자극이 적어 기초화장품에 씁니다.\n- 양쪽성 계면활성제: 자극이 적어 베이비 샴푸 등에 씁니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-19",
+    "tags": [
+      "화장품 원료",
+      "계면활성제"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "beautician-general-cosmetics-0006",
+    "certId": "beautician-general",
+    "subjectId": "written",
+    "chapterId": "cosmetics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "물 속에 기름 방울이 고루 퍼져 있는 유화 형태로, 로션 같은 제품에 많은 것은?",
+    "choices": [
+      "O/W형(수중유형)",
+      "W/O형(유중수형)",
+      "가용화",
+      "분산"
+    ],
+    "answer": 1,
+    "oneLineConcept": "O/W형 = 물 속에 기름 (수중유형)",
+    "explanation": "**O/W형(수중유형)**은 물(W) 속에 기름(O) 방울이 퍼진 형태로, 산뜻하고 흡수가 빨라 **로션·에센스**에 많습니다. 반대로 기름 속에 물이 퍼진 **W/O형(유중수형)**은 무겁고 보습력이 좋아 콜드크림 등에 씁니다.\n\n**틀린 선지**\n- W/O형(유중수형): 기름 속에 물 방울이 퍼진 형태입니다.\n- 가용화: 적은 양의 기름을 물에 투명하게 녹이는 기술입니다.\n- 분산: 고체 가루를 액체에 고루 퍼뜨리는 기술입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-19",
+    "tags": [
+      "화장품 제조",
+      "유화"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "beautician-general-cosmetics-0007",
+    "certId": "beautician-general",
+    "subjectId": "written",
+    "chapterId": "cosmetics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "화장수나 향수처럼 적은 양의 기름 성분을 물에 투명하게 녹이는 기술은?",
+    "choices": [
+      "유화",
+      "분산",
+      "가용화",
+      "중화"
+    ],
+    "answer": 3,
+    "oneLineConcept": "가용화 = 투명하게 녹임 (화장수·향수)",
+    "explanation": "**가용화**는 적은 양의 기름 성분을 계면활성제로 물에 **투명하게** 녹이는 기술로, 화장수·향수·헤어토닉에 씁니다. 유화는 많은 양의 기름을 섞어 우윳빛이 됩니다.\n\n**틀린 선지**\n- 유화: 기름과 물을 섞어 우윳빛(불투명)으로 만드는 기술입니다.\n- 분산: 고체 가루를 액체에 퍼뜨리는 기술(파운데이션 등)입니다.\n- 중화: 산과 알칼리가 만나 중성이 되는 반응입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-19",
+    "tags": [
+      "화장품 제조",
+      "가용화"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "beautician-general-cosmetics-0008",
+    "certId": "beautician-general",
+    "subjectId": "written",
+    "chapterId": "cosmetics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "자외선 차단제에 적힌 SPF는 주로 무엇을 막는 정도를 나타내는가?",
+    "choices": [
+      "자외선 A",
+      "가시광선",
+      "적외선",
+      "자외선 B"
+    ],
+    "answer": 4,
+    "oneLineConcept": "SPF = 자외선 B 차단, PA = 자외선 A 차단",
+    "explanation": "**SPF**는 일광화상을 일으키는 **자외선 B**를 막는 정도를 숫자로 나타냅니다. **자외선 A**를 막는 정도는 **PA(PA+~PA++++)**로 표시합니다.\n\n**틀린 선지**\n- 자외선 A: 자외선 A 차단 정도는 PA로 표시합니다.\n- 가시광선: 눈에 보이는 빛으로 SPF와 관계가 없습니다.\n- 적외선: 열을 내는 빛으로 SPF와 관계가 없습니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-19",
+    "tags": [
+      "화장품의 종류와 기능",
+      "자외선 차단"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    },
+    "version": 2
+  },
+  {
+    "id": "beautician-general-cosmetics-0009",
+    "certId": "beautician-general",
+    "subjectId": "written",
+    "chapterId": "cosmetics",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "향수를 향료의 함량(부향률)이 높은 것부터 순서대로 나열한 것은?",
+    "choices": [
+      "오드코롱 > 오드뚜왈렛 > 오드퍼퓸 > 퍼퓸",
+      "퍼퓸 > 오드퍼퓸 > 오드뚜왈렛 > 오드코롱",
+      "오드퍼퓸 > 퍼퓸 > 오드코롱 > 오드뚜왈렛",
+      "퍼퓸 > 오드뚜왈렛 > 오드퍼퓸 > 오드코롱"
+    ],
+    "answer": 2,
+    "oneLineConcept": "부향률: 퍼퓸 > 오드퍼퓸 > 오드뚜왈렛 > 오드코롱",
+    "explanation": "향수는 향료가 많을수록 향이 진하고 오래갑니다. 부향률은 **퍼퓸 > 오드퍼퓸 > 오드뚜왈렛 > 오드코롱** 순서입니다. 오드코롱은 향이 가볍고 지속 시간이 짧습니다.\n\n**틀린 선지**\n- 오드코롱 > 오드뚜왈렛 > 오드퍼퓸 > 퍼퓸: 낮은 것부터 나열한 순서입니다.\n- 오드퍼퓸 > 퍼퓸 > 오드코롱 > 오드뚜왈렛: 퍼퓸이 가장 진하므로 오드퍼퓸이 맨 앞일 수 없습니다.\n- 퍼퓸 > 오드뚜왈렛 > 오드퍼퓸 > 오드코롱: 오드퍼퓸과 오드뚜왈렛의 순서가 바뀌었습니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-19",
+    "tags": [
+      "화장품의 종류와 기능",
+      "향수"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "beautician-general-cosmetics-0010",
+    "certId": "beautician-general",
+    "subjectId": "written",
+    "chapterId": "cosmetics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "화장품법의 기능성 화장품에 해당하는 것은?",
+    "choices": [
+      "피부를 촉촉하게만 해 주는 보습 크림",
+      "피부 미백에 도움을 주는 화장품",
+      "좋은 향기만 내는 향수",
+      "메이크업을 지우는 클렌징 오일"
+    ],
+    "answer": 2,
+    "oneLineConcept": "기능성 화장품 예: 미백·주름 개선·자외선 차단",
+    "explanation": "기능성 화장품은 **미백, 주름 개선, 자외선 차단**, 모발 색 변화(염모), 탈모 증상 완화 등 법으로 정한 기능을 가진 화장품입니다. 단순한 보습·세정·향은 일반 화장품입니다.\n\n**틀린 선지**\n- 피부를 촉촉하게만 해 주는 보습 크림: 보습만 하는 크림은 일반 기초화장품입니다.\n- 좋은 향기만 내는 향수: 향을 내는 제품은 일반 화장품입니다.\n- 메이크업을 지우는 클렌징 오일: 세정용 제품은 일반 화장품입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-19",
+    "tags": [
+      "화장품의 종류와 기능",
+      "기능성 화장품"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "beautician-general-cosmetics-0011",
+    "certId": "beautician-general",
+    "subjectId": "written",
+    "chapterId": "cosmetics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "수분을 끌어당겨 피부를 촉촉하게 하는 보습제로 화장품에 널리 쓰이는 것은?",
+    "choices": [
+      "글리세린",
+      "파라벤",
+      "에탄올",
+      "이산화티타늄"
+    ],
+    "answer": 1,
+    "oneLineConcept": "보습제 대표 = 글리세린",
+    "explanation": "**글리세린**은 공기 중 수분을 끌어당겨 붙잡는 **보습제**로 거의 모든 기초화장품에 들어갑니다.\n\n**틀린 선지**\n- 파라벤: 미생물이 자라지 못하게 하는 방부제입니다.\n- 에탄올: 청량감·수렴 효과를 주며, 많이 쓰면 오히려 피부를 건조하게 합니다.\n- 이산화티타늄: 자외선을 반사·산란시키는 자외선 차단 성분입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-19",
+    "tags": [
+      "화장품 원료",
+      "보습제"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+]
