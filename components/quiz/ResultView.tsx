@@ -45,7 +45,9 @@ export function ResultHeader() {
   );
 }
 
-/** 결과 화면: 점수, 과목별 정답률, 합격 기준 대비 판정, 약점 단원, 다시 풀기·오답노트 */
+/**
+ * 결과 화면 순서 (사용자 결정 2026-10-18): 점수(원형 게이지 + 바로 할 일 버튼 2개) → 문제별 결과 → 과목별(과목 2개 이상) → 다시 볼 것 → 그 밖의 링크.
+ */
 export function ResultView({
   cert,
   label,
@@ -83,7 +85,12 @@ export function ResultView({
       if (graded[i].correct) return;
       const chapter = cert.subjects.find((s) => s.id === q.subjectId)?.chapters.find((c) => c.id === q.chapterId);
       const key = chapter?.id ?? q.chapterId;
-      const group = groups.get(key) ?? { id: key, name: chapter?.name ?? "", importance: chapter?.importance ?? 0, concepts: [] };
+      const group = groups.get(key) ?? {
+        id: key,
+        name: chapter?.name ?? "",
+        importance: chapter?.importance ?? 0,
+        concepts: [],
+      };
       group.concepts.push(q.oneLineConcept);
       groups.set(key, group);
     });
@@ -124,58 +131,127 @@ export function ResultView({
       </header>
 
       {/* 점수: 원형 게이지(가운데 "60점 · 3/5") + 오른쪽에 맞음·틀림·안 푼 문제, 합격 판정(문항이 충분할 때만) */}
-      <section aria-label={m.scoreLabel} className="card flex flex-col items-center gap-4 p-6 sm:flex-row sm:items-center sm:gap-8">
-        <ScoreRing
-          score={summary.score}
-          tone={verdict ? (verdict.passed ? "ok" : "bad") : "primary"}
-          marker={verdict ? criteria.averageScore : undefined}
-          label={fmt(m.ringAria, { n: formatScore(summary.score), total: summary.total, correct: summary.correct })}
-        >
-          <span className="text-2xl font-bold">{fmt(m.score, { n: formatScore(summary.score) })}</span>
-          <span className="text-sm text-ink-sub">{fmt(m.correctShort, { total: summary.total, correct: summary.correct })}</span>
-        </ScoreRing>
+      <section aria-label={m.scoreLabel} className="card p-6">
+        <div className="flex flex-col items-center gap-4 sm:flex-row sm:items-center sm:gap-8">
+          <ScoreRing
+            score={summary.score}
+            tone={verdict ? (verdict.passed ? "ok" : "bad") : "primary"}
+            marker={verdict ? criteria.averageScore : undefined}
+            label={fmt(m.ringAria, { n: formatScore(summary.score), total: summary.total, correct: summary.correct })}
+          >
+            <span className="text-2xl font-bold">{fmt(m.score, { n: formatScore(summary.score) })}</span>
+            <span className="text-sm text-ink-sub">
+              {fmt(m.correctShort, { total: summary.total, correct: summary.correct })}
+            </span>
+          </ScoreRing>
 
-        <div className="w-full min-w-0 space-y-2 text-center sm:text-left">
-          <p className="text-lg font-bold">
-            {fmt(m.breakdown, { ok: summary.correct, ng: wrong.length - skippedCount })}
-            {skippedCount > 0 && <span className="text-ink-sub">{fmt(m.breakdownSkip, { n: skippedCount })}</span>}
-          </p>
-
-          {verdict ? (
-            <>
-              <details>
-                <summary className="flex min-h-11 items-center justify-center gap-2 sm:justify-start">
-                  <span className={`min-w-0 text-lg font-bold ${verdict.passed ? "text-ok" : "text-bad"}`}>
-                    {verdict.passed ? m.pass : m.fail} ({passLine})
-                  </span>
-                  <span
-                    className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-[20px] leading-none text-ink-sub hover:bg-surface-2"
-                    title={m.criteriaButton}
-                  >
-                    <span aria-hidden="true">ⓘ</span>
-                    <span className="sr-only">{m.criteriaButton}</span>
-                  </span>
-                </summary>
-                <p className="mt-2 text-sm">{fmt(m.criteria, { text: criteria.description })}</p>
-              </details>
-              {verdict.failedSubjects.length > 0 && (
-                <p className="font-bold text-bad">
-                  {fmt(m.failedSubjects, {
-                    list: verdict.failedSubjects
-                      .map((s) => fmt(m.failedItem, { name: s.name, score: formatScore(s.score) }))
-                      .join(all.common.listSeparator),
-                    min: verdict.subjectMinScore ?? 0,
-                  })}
-                </p>
-              )}
-              <p className="text-sm text-ink-sub">{fmt(m.markerNote, { line: passLine })}</p>
-            </>
-          ) : (
-            <p className="text-sm text-ink-sub">
-              {fmt(m.practiceNote, { n: summary.total })} {fmt(m.passInfo, { line: passLine })}
+          <div className="w-full min-w-0 space-y-2 text-center sm:text-left">
+            <p className="text-lg font-bold">
+              {fmt(m.breakdown, { ok: summary.correct, ng: wrong.length - skippedCount })}
+              {skippedCount > 0 && <span className="text-ink-sub">{fmt(m.breakdownSkip, { n: skippedCount })}</span>}
             </p>
-          )}
+
+            {verdict ? (
+              <>
+                <details>
+                  <summary className="flex min-h-11 items-center justify-center gap-2 sm:justify-start">
+                    <span className={`min-w-0 text-lg font-bold ${verdict.passed ? "text-ok" : "text-bad"}`}>
+                      {verdict.passed ? m.pass : m.fail} ({passLine})
+                    </span>
+                    <span
+                      className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-[20px] leading-none text-ink-sub hover:bg-surface-2"
+                      title={m.criteriaButton}
+                    >
+                      <span aria-hidden="true">ⓘ</span>
+                      <span className="sr-only">{m.criteriaButton}</span>
+                    </span>
+                  </summary>
+                  <p className="mt-2 text-sm">{fmt(m.criteria, { text: criteria.description })}</p>
+                </details>
+                {verdict.failedSubjects.length > 0 && (
+                  <p className="font-bold text-bad">
+                    {fmt(m.failedSubjects, {
+                      list: verdict.failedSubjects
+                        .map((s) => fmt(m.failedItem, { name: s.name, score: formatScore(s.score) }))
+                        .join(all.common.listSeparator),
+                      min: verdict.subjectMinScore ?? 0,
+                    })}
+                  </p>
+                )}
+                <p className="text-sm text-ink-sub">{fmt(m.markerNote, { line: passLine })}</p>
+              </>
+            ) : (
+              <p className="text-sm text-ink-sub">
+                {fmt(m.practiceNote, { n: summary.total })} {fmt(m.passInfo, { line: passLine })}
+              </p>
+            )}
+          </div>
         </div>
+
+        {/* 바로 할 일 큰 버튼 2개: 틀린 문제 다시 풀기(주황) · 새 문제로 다시 풀기. 나머지는 맨 아래 작은 링크 */}
+        <div className={`mt-6 grid gap-2 ${wrong.length > 0 ? "sm:grid-cols-2" : ""}`}>
+          {wrong.length > 0 && (
+            <button type="button" className="btn btn-primary btn-lg" onClick={retryWrong}>
+              {fmt(m.retryWrong, { n: wrong.length })}
+            </button>
+          )}
+          {againAction}
+        </div>
+      </section>
+
+      <section aria-labelledby="review-title" className="cv">
+        <h2 id="review-title" className="text-lg font-bold">
+          {m.review}
+        </h2>
+        <ol className="card mt-2 divide-y divide-line-soft overflow-hidden">
+          {questions.map((q, i) => {
+            const g = graded[i];
+            return (
+              <li key={q.id}>
+                <details>
+                  <summary className="flex min-h-14 items-center gap-3 p-4 hover:bg-primary-soft">
+                    <span
+                      className={`shrink-0 rounded-full px-3 py-1 text-sm font-bold ${
+                        g.correct
+                          ? "bg-ok-soft text-ok"
+                          : g.chosen === null
+                            ? "bg-surface-2 text-ink-sub"
+                            : "bg-bad-soft text-bad"
+                      }`}
+                    >
+                      {g.correct ? m.ok : g.chosen === null ? m.skipped : m.ng}
+                    </span>
+                    <span className="flex-1 whitespace-pre-wrap font-bold leading-snug">
+                      {i + 1}. {q.stem}
+                    </span>
+                    <span className="shrink-0 text-sm font-bold text-accent">
+                      <FoldMark />
+                    </span>
+                  </summary>
+                  <div className="space-y-2 px-4 pb-4">
+                    {q.imageSrc && <QuestionImage src={q.imageSrc} alt={q.imageAlt ?? ""} />}
+                    <ol className="space-y-2">
+                      {visibleChoices(q, level).map((original, ci) => (
+                        <li key={original} className={original === q.answer ? "font-bold" : ""}>
+                          {circled(ci + 1)} {q.choices[original - 1]}
+                          {original === q.answer && <span className="ml-2 text-ok">{m.answerMark}</span>}
+                          {original === g.chosen && original !== q.answer && (
+                            <span className="ml-2 font-bold text-bad">{m.myChoiceMark}</span>
+                          )}
+                        </li>
+                      ))}
+                    </ol>
+                    <p>
+                      <span className="font-bold">{all.common.keyConcept}</span> {q.oneLineConcept}
+                    </p>
+                    <Markdown text={q.explanation} />
+                    {!g.correct && <ChapterNotesLink certId={cert.id} subjects={cert.subjects} question={q} />}
+                  </div>
+                </details>
+              </li>
+            );
+          })}
+        </ol>
       </section>
 
       {/* 과목별: 과목마다 작은 원형 게이지 (과목이 둘 이상일 때만). 과락이면 빨간 고리 + "과락" */}
@@ -226,7 +302,9 @@ export function ResultView({
                   <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
                     <span className="font-bold">
                       {g.name}
-                      <span className="ml-2 text-sm font-normal text-ink-sub">{fmt(m.chapterWrong, { n: g.concepts.length })}</span>
+                      <span className="ml-2 text-sm font-normal text-ink-sub">
+                        {fmt(m.chapterWrong, { n: g.concepts.length })}
+                      </span>
                     </span>
                     <Link href={`${certPath}/${g.id}`} className="link text-sm">
                       {m.viewSummary}
@@ -249,79 +327,31 @@ export function ResultView({
         )}
       </section>
 
-      <section aria-label={m.next} className="grid gap-2 sm:grid-cols-2">
-        {wrong.length > 0 && (
-          <button type="button" className="btn btn-primary btn-lg" onClick={retryWrong}>
-            {fmt(m.retryWrong, { n: wrong.length })}
-          </button>
-        )}
+      {/* 그 밖에 할 일: 작은 링크 한 줄 (오답노트 · 자격증 페이지 · 후기) */}
+      <nav
+        aria-label={m.next}
+        className="card flex flex-wrap items-center justify-center gap-x-6 gap-y-2 p-4 font-bold"
+      >
         {savedCount > 0 && (
-          <Link href={`${certPath}/notes`} className="btn btn-lg">
+          <Link href={`${certPath}/notes`} className="link-quiet inline-flex min-h-11 items-center">
             {fmt(m.saved, { n: savedCount })}
           </Link>
         )}
-        {againAction}
-        <Link href={certPath} className="btn btn-lg">
+        <Link href={certPath} className="link-quiet inline-flex min-h-11 items-center">
           {fmt(m.toCert, { name: cert.name })}
         </Link>
-        <Link href={`${certPath}#${REVIEWS_ANCHOR}`} className="btn btn-lg">
+        <Link href={`${certPath}#${REVIEWS_ANCHOR}`} className="link-quiet inline-flex min-h-11 items-center">
           {m.writeReview}
         </Link>
-      </section>
-
-      <section aria-labelledby="review-title" className="cv">
-        <h2 id="review-title" className="text-xl font-bold">
-          {m.review}
-        </h2>
-        <ol className="mt-2 space-y-2">
-          {questions.map((q, i) => {
-            const g = graded[i];
-            return (
-              <li key={q.id}>
-                <details className="card">
-                  <summary className="flex min-h-14 items-center gap-2 p-4">
-                    <span
-                      className={`shrink-0 font-bold ${g.correct ? "text-ok" : g.chosen === null ? "text-ink-sub" : "text-bad"}`}
-                    >
-                      {g.correct ? m.ok : g.chosen === null ? m.skipped : m.ng}
-                    </span>
-                    <span className="flex-1 whitespace-pre-wrap font-bold">
-                      {i + 1}. {q.stem}
-                    </span>
-                    <span className="shrink-0 text-sm font-bold text-accent">
-                      <FoldMark />
-                    </span>
-                  </summary>
-                  <div className="space-y-2 px-4 pb-4">
-                    {q.imageSrc && <QuestionImage src={q.imageSrc} alt={q.imageAlt ?? ""} />}
-                    <ol className="space-y-2">
-                      {visibleChoices(q, level).map((original, ci) => (
-                        <li key={original} className={original === q.answer ? "font-bold" : ""}>
-                          {circled(ci + 1)} {q.choices[original - 1]}
-                          {original === q.answer && <span className="ml-2 text-ok">{m.answerMark}</span>}
-                          {original === g.chosen && original !== q.answer && (
-                            <span className="ml-2 font-bold text-bad">{m.myChoiceMark}</span>
-                          )}
-                        </li>
-                      ))}
-                    </ol>
-                    <p>
-                      <span className="font-bold">{all.common.keyConcept}</span> {q.oneLineConcept}
-                    </p>
-                    <Markdown text={q.explanation} />
-                    {!g.correct && <ChapterNotesLink certId={cert.id} subjects={cert.subjects} question={q} />}
-                  </div>
-                </details>
-              </li>
-            );
-          })}
-        </ol>
-      </section>
+      </nav>
 
       {/* 시험 화면에는 하단 안내(Footer)가 없어서 약관 링크를 여기에 둔다 */}
-      <nav aria-label={all.nav.legalMenu} className="no-print flex flex-wrap justify-center gap-x-4 gap-y-2 text-sm">
+      <nav
+        aria-label={all.nav.legalMenu}
+        className="no-print flex flex-wrap justify-center gap-x-4 gap-y-2 text-sm text-ink-sub"
+      >
         {(["terms", "privacy", "disclaimer"] as const).map((id) => (
-          <Link key={id} href={localePath(locale, `/${id}`)} className="link">
+          <Link key={id} href={localePath(locale, `/${id}`)} className="link-quiet">
             {all.nav[id]}
           </Link>
         ))}
