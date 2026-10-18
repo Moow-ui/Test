@@ -615,7 +615,11 @@
     "subjectSeparator": ", ",
     "certMain": {
       "title": "{name} Practice Questions & Exam Outline | {brand}",
-      "description": "{name}: {total} questions ({subjects}). See how each section is weighted, then practice Easy, Medium, or Hard questions five at a time. Free, no login.",
+      "descriptions": [
+        "Ace your {name} on the first try. Free interactive CBT practice test with instant scoring and no sign-up required.",
+        "Ace your {name} on the first try. Free CBT practice test with instant scoring, no sign-up.",
+        "Ace your {name}: free CBT practice test, no sign-up."
+      ],
       "h1": "{name}"
     },
     "certSoon": {
@@ -639,14 +643,26 @@
     },
     "conceptChapter": {
       "title": "{name} {chapter} Concepts - Key Points | {brand}",
-      "description": "{n} key concepts from the {name} {subject} unit '{chapter}', with definitions and memory tips. {first}"
+      "descriptions": [
+        "Master {name} {chapter} core concepts in 5 minutes. Skip the fluff and review key points built for last-minute prep!",
+        "Master {name} {chapter} core concepts in 5 minutes. Key points built for last-minute prep!",
+        "Master {name} {chapter} core concepts in 5 minutes."
+      ]
     },
     "chapter": {
       "title": "{name} {chapter}: Summary & {kind} | {brand}",
-      "description": "Key points and sample questions for '{chapter}' in the {subject} section of {name}. Weight in section {weight}%, importance {importance}/5. {summary}",
+      "descriptions": [
+        "Accounts for {weightLabel}! Work through high-yield {name} {chapter} {kind} with instant answers and explanations.",
+        "Accounts for {weightShort}! High-yield {name} {chapter} {kind} with instant answers and explanations.",
+        "Accounts for {weightShort}! {name} {chapter} {kind} with instant answers.",
+        "Accounts for {weightShort}! {name} {chapter} questions with instant answers."
+      ],
       "h1": "{name} {chapter} Summary",
       "kindPast": "Past Questions",
-      "kindPredicted": "Practice Questions"
+      "kindPredicted": "Practice Questions",
+      "weightAll": "{weight}% of the exam",
+      "weightInSubject": "{weight}% of the {subject} section",
+      "weightInSubjectShort": "{weight}% of its section"
     },
     "notes": {
       "title": "Review List | {brand}",

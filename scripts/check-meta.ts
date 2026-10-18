@@ -9,11 +9,13 @@
  *   4. 색인 대상 페이지가 sitemap.xml 에 빠짐없이 들어 있는가
  *   5. 기출·단원 페이지의 HTML 에 대표 문제의 정답·해설 텍스트가 들어 있는가
  *   6. 모든 페이지에 hreflang(ko, en, x-default)이 있고, <html lang> 과 사이트 이름이 주소의 언어와 맞는가
+ *   7. (주의만) 자격증 페이지 description 이 검색 결과에서 잘리지 않는 길이인가
  */
 import fs from "node:fs";
 import path from "node:path";
 import { CIRCLED as CIRCLED_NUMBERS } from "../lib/format";
 import { LOCALES, brandName, getMessages, isLocale, type Locale } from "../lib/i18n";
+import { DESCRIPTION_MAX_WIDTH, textWidth } from "../lib/seo";
 
 const APP_DIR = path.join(process.cwd(), ".next", "server", "app");
 
@@ -119,6 +121,15 @@ function findDuplicates(label: string, pick: (p: Page) => string): void {
 findDuplicates("title", (p) => p.title);
 findDuplicates("description", (p) => p.description);
 findDuplicates("H1", (p) => p.h1[0] ?? "");
+
+// 1-1) 자격증 페이지 description 길이 (넘치면 검색 결과에서 "…"으로 잘린다. 막지는 않고 알려만 준다)
+for (const p of indexable) {
+  if (!p.route.includes("/cert/") || !p.description) continue;
+  const width = textWidth(p.description);
+  if (width > DESCRIPTION_MAX_WIDTH) {
+    warnings.push(`description 이 길어 잘릴 수 있음 (${width}/${DESCRIPTION_MAX_WIDTH}): ${p.route}`);
+  }
+}
 
 // 2) canonical, H1 개수
 for (const p of indexable) {

@@ -615,7 +615,11 @@
     "subjectSeparator": "·",
     "certMain": {
       "title": "{name} 필기 예상문제·출제경향 | {brand}",
-      "description": "{name} 필기 {total}문항({subjects})의 과목별 출제 비중과 단원별 중요도를 확인하고, 초급·중급·고급 문제를 5문제부터 바로 풀어 보세요. 로그인 없이 무료입니다.",
+      "descriptions": [
+        "{name} 필기 단번에 합격! 로그인 없이 바로 시작하는 무료 CBT 실전 모의고사. 맞춤 문제 풀이와 자동 오답노트로 합격률을 높이세요.",
+        "{name} 단번에 합격! 로그인 없이 바로 시작하는 무료 CBT 실전 모의고사. 맞춤 풀이와 자동 오답노트로 합격률을 높이세요.",
+        "{name} 단번에 합격! 로그인 없이 무료 CBT 실전 모의고사, 자동 오답노트로 합격률을 높이세요."
+      ],
       "h1": "{name} 풀기"
     },
     "certSoon": {
@@ -639,14 +643,26 @@
     },
     "conceptChapter": {
       "title": "{name} {chapter} 개념 정리 - 핵심 요약 | {brand}",
-      "description": "{name} {subject} 과목 '{chapter}' 단원의 핵심 개념 {n}개를 정의와 외우는 요령으로 정리했습니다. {first}"
+      "descriptions": [
+        "아직도 {chapter} 암기가 헷갈리시나요? {name} 시험에 꼭 나오는 핵심 개념 정리와 암기 요령으로 함정 문제를 완벽 대비하세요.",
+        "아직도 {chapter} 암기가 헷갈리시나요? {name} 핵심 개념 정리와 암기 요령으로 함정 문제를 대비하세요.",
+        "{chapter} 암기가 헷갈린다면? {name} 핵심 개념 정리와 암기 요령을 5분 만에 보세요."
+      ]
     },
     "chapter": {
       "title": "{name} {chapter} 핵심정리·{kind} | {brand}",
-      "description": "{name} {subject} 과목 '{chapter}' 단원의 핵심 정리와 대표 문제입니다. 과목 내 출제 비중 {weight}%, 중요도 {importance}/5. {summary}",
+      "descriptions": [
+        "{weightLabel}! {name} {chapter} 파트 핵심정리와 시험 포인트 요약부터 대표 {kind}까지 한 번에 풀고 5분 만에 마스터하세요.",
+        "{weightShort}! {name} {chapter} 핵심정리부터 대표 {kind}까지 한 번에 풀고 5분 만에 마스터하세요.",
+        "{weightShort}! {name} {chapter} 핵심정리와 대표 {kind}를 5분 만에 끝내세요.",
+        "{weightShort}! {name} {chapter} 핵심정리와 대표 문제를 5분 만에 풀어 보세요."
+      ],
       "h1": "{name} {chapter} 핵심정리",
       "kindPast": "기출문제",
-      "kindPredicted": "예상문제"
+      "kindPredicted": "예상문제",
+      "weightAll": "출제 비중 {weight}%",
+      "weightInSubject": "{subject} 과목 출제 비중 {weight}%",
+      "weightInSubjectShort": "과목 내 출제 비중 {weight}%"
     },
     "notes": {
       "title": "오답노트 | {brand}",

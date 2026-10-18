@@ -20,6 +20,40 @@ export interface PageMeta {
 
 const OG_LOCALE: Record<Locale, string> = { ko: "ko_KR", en: "en_US" };
 
+/**
+ * 검색 결과에서 설명이 "…"으로 잘리지 않는 최대 너비.
+ * 한글·한자 1칸, 영문·숫자·기호·띄어쓰기 0.5칸으로 센다 (한국어 80자, 영어 약 160자).
+ */
+export const DESCRIPTION_MAX_WIDTH = 80;
+
+/** 검색 결과에 보이는 글자 너비 (한글 1, 그 밖 0.5) */
+export function textWidth(text: string): number {
+  let width = 0;
+  for (const ch of text) width += /[\u1100-\u11ff\u2e80-\u9fff\uac00-\ud7af\uf900-\ufaff\uff00-\uffef]/.test(ch) ? 1 : 0.5;
+  return width;
+}
+
+/** 단원명 끝의 괄호 설명을 뺀 이름 (예: "민사특별법 (주택·상가 임대차, …)" → "민사특별법") */
+function withoutTrailingParen(name: string): string {
+  return name.replace(/\s*\([^()]*\)\s*$/, "").trim() || name;
+}
+
+/**
+ * 설명 문구 틀(긴 것부터 짧은 것 순서)과 변수 묶음(바꿀 값이 적은 것부터)을 차례로 넣어 보고,
+ * 너비 안에 들어오는 첫 문구를 고른다. 모두 넘치면 가장 짧은 문구를 쓴다.
+ */
+function fitDescription(templates: readonly string[], varsList: Record<string, string | number>[]): string {
+  let shortest = "";
+  for (const vars of varsList) {
+    for (const template of templates) {
+      const text = fmt(template, vars);
+      if (textWidth(text) <= DESCRIPTION_MAX_WIDTH) return text;
+      if (!shortest || textWidth(text) < textWidth(shortest)) shortest = text;
+    }
+  }
+  return shortest;
+}
+
 /** 홈 */
 export function homeMeta(locale: Locale): PageMeta {
   const m = getMessages(locale);
@@ -53,7 +87,7 @@ export function certMainMeta(locale: Locale, cert: Certification): PageMeta {
   };
   return {
     title: fmt(m.certMain.title, vars),
-    description: fmt(m.certMain.description, vars),
+    description: fitDescription(m.certMain.descriptions, [vars]),
     h1: fmt(m.certMain.h1, vars),
     path,
   };
@@ -86,7 +120,12 @@ export function chapterMeta(
   hasPast: boolean,
 ): PageMeta {
   const m = getMessages(locale).seo.chapter;
+  // examWeight 는 과목 안에서의 비중이다. 과목이 하나뿐이면 시험 전체 비중과 같으므로 과목명을 붙이지 않는다
+  const single = cert.subjects.length === 1;
+  const weightVars = { subject: subject.name, weight: chapter.examWeight };
   const vars = {
+    weightLabel: fmt(single ? m.weightAll : m.weightInSubject, weightVars),
+    weightShort: fmt(single ? m.weightAll : m.weightInSubjectShort, weightVars),
     name: cert.name,
     subject: subject.name,
     chapter: chapter.name,
@@ -98,7 +137,7 @@ export function chapterMeta(
   };
   return {
     title: fmt(m.title, vars),
-    description: fmt(m.description, vars),
+    description: fitDescription(m.descriptions, [vars, { ...vars, chapter: withoutTrailingParen(chapter.name) }]),
     h1: fmt(m.h1, vars),
     path: localePath(locale, `/cert/${cert.id}/${chapter.id}`),
   };
@@ -136,7 +175,10 @@ export function conceptChapterMeta(
   };
   return {
     title: fmt(m.seo.conceptChapter.title, vars),
-    description: fmt(m.seo.conceptChapter.description, vars),
+    description: fitDescription(m.seo.conceptChapter.descriptions, [
+      vars,
+      { ...vars, chapter: withoutTrailingParen(chapter.name) },
+    ]),
     h1: fmt(m.concepts.chapterH1, vars),
     path: localePath(locale, `/cert/${cert.id}/concepts/${chapter.id}`),
   };

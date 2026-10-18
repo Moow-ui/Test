@@ -14,7 +14,15 @@ import {
   localePath,
   pickLocale,
 } from "@/lib/i18n";
-import { certMainMeta, homeMeta, languageAlternates } from "@/lib/seo";
+import {
+  DESCRIPTION_MAX_WIDTH,
+  certMainMeta,
+  chapterMeta,
+  conceptChapterMeta,
+  homeMeta,
+  languageAlternates,
+  textWidth,
+} from "@/lib/seo";
 
 /** 객체의 모든 키 경로 ("a.b.c"). 배열은 길이까지 비교한다 */
 function keyPaths(value: unknown, prefix = ""): string[] {
@@ -156,6 +164,42 @@ describe("나라별 자격증", () => {
     expect(certMainMeta("ko", kr!).title.endsWith(`| ${BRAND.ko.name}`)).toBe(true);
     expect(certMainMeta("en", us!).title.endsWith(`| ${BRAND.en.name}`)).toBe(true);
     expect(certMainMeta("ko", kr!).path).toBe("/ko/cert/forklift-operator");
+  });
+});
+
+describe("description 길이", () => {
+  it("한글은 1칸, 영문·숫자·기호는 0.5칸으로 센다", () => {
+    expect(textWidth("한국사")).toBe(3);
+    expect(textWidth("ab 1%")).toBe(2.5);
+  });
+
+  it("자격증 메인·단원·개념 정리 description 은 잘리지 않는 길이이고 자격증명·단원명이 들어간다", async () => {
+    for (const [lang, country] of [["ko", "KR"], ["en", "US"]] as const) {
+      for (const cert of await getReadyCertifications(country)) {
+        const main = certMainMeta(lang, cert).description;
+        expect(textWidth(main), main).toBeLessThanOrEqual(DESCRIPTION_MAX_WIDTH);
+        expect(main).toContain(cert.name);
+        for (const subject of cert.subjects) {
+          for (const chapter of subject.chapters) {
+            for (const d of [
+              chapterMeta(lang, cert, subject, chapter, false).description,
+              conceptChapterMeta(lang, cert, subject, chapter, 1, "").description,
+            ]) {
+              expect(textWidth(d), d).toBeLessThanOrEqual(DESCRIPTION_MAX_WIDTH);
+              expect(d).toContain(cert.name);
+              expect(d).toContain(chapter.name.replace(/\s*\([^()]*\)\s*$/, ""));
+            }
+          }
+        }
+      }
+    }
+  });
+
+  it("과목이 여럿이면 과목 내 출제 비중이라고 밝힌다", async () => {
+    const multi = (await getReadyCertifications("KR")).find((c) => c.subjects.length > 1)!;
+    const subject = multi.subjects[0];
+    const d = chapterMeta("ko", multi, subject, subject.chapters[0], false).description;
+    expect(d).toMatch(new RegExp(`(${subject.name} 과목|과목 내) 출제 비중 ${subject.chapters[0].examWeight}%`));
   });
 });
 
