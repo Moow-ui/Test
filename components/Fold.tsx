@@ -14,10 +14,20 @@ export function FoldMark() {
   );
 }
 
-/** 눌러야 펼쳐지는 묶음. 접혀 있어도 내용은 HTML 에 들어 있어 검색엔진이 읽을 수 있다 */
-export function Fold({ id, title, children }: { id?: string; title: string; children: ReactNode }) {
+/** 눌러야 펼쳐지는 묶음. 접혀 있어도 내용은 HTML 에 들어 있어 검색엔진이 읽을 수 있다. defaultOpen 이면 펼친 채로 시작 */
+export function Fold({
+  id,
+  title,
+  defaultOpen = false,
+  children,
+}: {
+  id?: string;
+  title: string;
+  defaultOpen?: boolean;
+  children: ReactNode;
+}) {
   return (
-    <details id={id} className="card scroll-mt-4">
+    <details id={id} open={defaultOpen} className="card scroll-mt-4">
       <summary className="flex min-h-14 items-center justify-between gap-2 px-4 sm:px-4">
         <h2 className="font-bold">{title}</h2>
         <span className="shrink-0 text-sm font-bold text-accent">

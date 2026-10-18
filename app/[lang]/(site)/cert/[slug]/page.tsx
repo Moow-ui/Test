@@ -146,7 +146,7 @@ export default async function CertPage({ params }: Props) {
         </p>
       )}
 
-      {/* 시험 정보·출제 분석은 아래에 접어 둔다 (내용은 HTML 에 그대로 있음) */}
+      {/* 시험 정보는 접어 두고, 출제 분석은 펼쳐 둔다 (사용자 결정 2026-10-18). 내용은 HTML 에 그대로 있음 */}
       {examInfo && (
         <div className="space-y-2 pt-4">
           <Fold title={m.cert.examInfo}>
@@ -182,7 +182,7 @@ export default async function CertPage({ params }: Props) {
             </dl>
           </Fold>
 
-          <Fold id={ANALYSIS_ANCHOR} title={m.cert.analysis}>
+          <Fold id={ANALYSIS_ANCHOR} title={m.cert.analysis} defaultOpen>
             <AnalysisPanel
               certId={cert.id}
               subjects={cert.subjects}
