@@ -1,0 +1,531 @@
+[
+  {
+    "id": "dmv-permit-ohio-signals-markings-0001",
+    "certId": "dmv-permit-ohio",
+    "subjectId": "signs",
+    "chapterId": "signals-markings",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What must you do at a steady red traffic light?",
+    "choices": [
+      "Stop and stay stopped until the light turns green, unless a turn on red is allowed",
+      "Slow down and go if no one is coming",
+      "Stop only if a police officer is present",
+      "Go if the car ahead of you went"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Steady red: stop and stay stopped",
+    "explanation": "A **steady red** light means **stop** at the stop line (or before the crosswalk or intersection) and **stay stopped** until the light turns green. In Ohio you may turn right on red, or left from a one-way street onto another one-way street, after a full stop if no sign forbids it.\n\n**Wrong choices**\n- Slow down and go if no one is coming: A steady red light is not a yield. You must stop.\n- Stop only if a police officer is present: The rule applies at all times, not only when police are present.\n- Go if the car ahead of you went: Each driver must stop for the red light.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-19",
+    "tags": [
+      "traffic signals",
+      "red light"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-ohio-signals-markings-0002",
+    "certId": "dmv-permit-ohio",
+    "subjectId": "signs",
+    "chapterId": "signals-markings",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What does a steady yellow traffic light mean?",
+    "choices": [
+      "The light is about to turn red, so stop if you can do so safely",
+      "Pedestrians may now cross in front of you",
+      "The signal is broken, so treat it as a STOP sign",
+      "Speed up to get through before it turns red"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Steady yellow: red is coming, stop if safe",
+    "explanation": "A **steady yellow** light warns that the green is ending and **red is coming next**. Stop if you can do so safely. If you are already too close to stop safely, go through with care.\n\n**Wrong choices**\n- Pedestrians may now cross in front of you: A steady yellow light tells pedestrians not to start crossing.\n- The signal is broken, so treat it as a STOP sign: A broken signal shows no lights or a confusing mix. Steady yellow is a normal warning.\n- Speed up to get through before it turns red: Speeding up to beat the light is dangerous.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-19",
+    "tags": [
+      "traffic signals",
+      "yellow light"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-ohio-signals-markings-0003",
+    "certId": "dmv-permit-ohio",
+    "subjectId": "signs",
+    "chapterId": "signals-markings",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What does a flashing red traffic light mean?",
+    "choices": [
+      "Slow down and go with caution without stopping",
+      "Stop and wait for the light to turn green",
+      "The light is about to turn green",
+      "Stop, then go when safe, just as at a STOP sign"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Flashing red = STOP sign",
+    "explanation": "A **flashing red** light means the same as a **STOP sign**. **Come to a full stop**, yield to traffic and pedestrians, and go when it is safe.\n\n**Wrong choices**\n- Slow down and go with caution without stopping: Going with caution without stopping is what a flashing yellow light allows.\n- Stop and wait for the light to turn green: You do not wait for green. After stopping, go when it is safe.\n- The light is about to turn green: A flashing red light does not mean the light is about to change.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-19",
+    "tags": [
+      "traffic signals",
+      "flashing red"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-ohio-signals-markings-0004",
+    "certId": "dmv-permit-ohio",
+    "subjectId": "signs",
+    "chapterId": "signals-markings",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What does a flashing yellow traffic light mean?",
+    "choices": [
+      "Come to a full stop, then go",
+      "Stop and wait for a green light",
+      "Slow down and go through with caution",
+      "The road is closed ahead"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Flashing yellow: proceed with caution",
+    "explanation": "A **flashing yellow** light means **slow down and go with caution**. You do not need to stop, but you must yield to pedestrians and vehicles already in the intersection.\n\n**Wrong choices**\n- Come to a full stop, then go: A full stop is required by a flashing red light, not a flashing yellow light.\n- Stop and wait for a green light: A flashing yellow light does not require you to wait for green.\n- The road is closed ahead: A flashing yellow light does not mean the road is closed.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-19",
+    "tags": [
+      "traffic signals",
+      "flashing yellow"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-ohio-signals-markings-0005",
+    "certId": "dmv-permit-ohio",
+    "subjectId": "signs",
+    "chapterId": "signals-markings",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What do yellow lines on the road separate?",
+    "choices": [
+      "Lanes of traffic moving in the same direction",
+      "Traffic moving in opposite directions",
+      "Parking spaces",
+      "Bicycle lanes from car lanes"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Yellow lines: opposite directions",
+    "explanation": "**Yellow lines** separate traffic moving in **opposite directions**. If you see a yellow line on your left, oncoming traffic is on the other side of it.\n\n**Wrong choices**\n- Lanes of traffic moving in the same direction: Lanes moving in the same direction are separated by white lines.\n- Parking spaces: Parking spaces are usually marked with white lines.\n- Bicycle lanes from car lanes: Bicycle lanes are marked with white lines and bicycle symbols.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-19",
+    "tags": [
+      "pavement markings",
+      "yellow lines"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-ohio-signals-markings-0006",
+    "certId": "dmv-permit-ohio",
+    "subjectId": "signs",
+    "chapterId": "signals-markings",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "What do white lines between lanes tell you?",
+    "choices": [
+      "The lanes are for buses only",
+      "Passing is never allowed",
+      "The lanes carry traffic moving in opposite directions",
+      "The lanes carry traffic moving in the same direction"
+    ],
+    "answer": 4,
+    "oneLineConcept": "White lane lines: same direction",
+    "explanation": "**White lines** separate lanes of traffic moving in the **same direction**. A broken white line means you may change lanes when it is safe. A solid white line means lane changes are discouraged.\n\n**Wrong choices**\n- The lanes are for buses only: Bus-only lanes are marked with signs and words. Plain white lines do not mean bus only.\n- Passing is never allowed: Broken white lines allow lane changes when safe.\n- The lanes carry traffic moving in opposite directions: Opposite directions are separated by yellow lines.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-19",
+    "tags": [
+      "pavement markings",
+      "white lines"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-ohio-signals-markings-0007",
+    "certId": "dmv-permit-ohio",
+    "subjectId": "signs",
+    "chapterId": "signals-markings",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "You reach an intersection where the traffic signal shows no lights at all. What must you do?",
+    "choices": [
+      "Slow down, but do not stop unless you see a police officer",
+      "Go through without slowing, because the signal is off",
+      "Turn around and find another route",
+      "Stop, yield to traffic in or near the intersection, and go when safe, as at a STOP sign"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Dark signal: stop and yield as at a STOP sign",
+    "explanation": "Ohio law says that when a signal shows **no lights** (or a confusing mix of lights), you must **stop** at the stop line, crosswalk, or intersection edge, **yield** to vehicles in the intersection or close enough to be a hazard, and then **go with care**. Treat it like a STOP sign.\n\n**Wrong choices**\n- Slow down, but do not stop unless you see a police officer: You must stop even if no officer is there.\n- Go through without slowing, because the signal is off: A dark signal does not give you the right of way.\n- Turn around and find another route: You do not need to turn around. Stop, yield, and then continue.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-19",
+    "tags": [
+      "traffic signals",
+      "signal outage"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-ohio-signals-markings-0008",
+    "certId": "dmv-permit-ohio",
+    "subjectId": "signs",
+    "chapterId": "signals-markings",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "What does a steady green arrow signal mean?",
+    "choices": [
+      "The arrow is about to turn red, so stop",
+      "You may turn only after coming to a full stop",
+      "You may move in the direction of the arrow, still yielding to pedestrians and vehicles lawfully in the intersection",
+      "You must wait until oncoming traffic has a red light before turning"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Green arrow: go the way of the arrow, with care",
+    "explanation": "A **steady green arrow** allows you to **make the movement shown** by the arrow. You must still **yield to pedestrians** in the crosswalk and to vehicles **already in the intersection**.\n\n**Wrong choices**\n- The arrow is about to turn red, so stop: A steady yellow arrow, not a green one, warns that the arrow is ending.\n- You may turn only after coming to a full stop: A full stop is not required on a green arrow.\n- You must wait until oncoming traffic has a red light before turning: You do not have to watch for the oncoming light. The green arrow already gives you the turn.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-19",
+    "tags": [
+      "traffic signals",
+      "green arrow"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-ohio-signals-markings-0009",
+    "certId": "dmv-permit-ohio",
+    "subjectId": "signs",
+    "chapterId": "signals-markings",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "You want to turn left and the signal shows a flashing yellow arrow. What should you do?",
+    "choices": [
+      "Turn left right away, because you have the right of way",
+      "Go straight only, because left turns are not allowed",
+      "Turn left only after yielding to oncoming traffic and pedestrians",
+      "Stop and wait for a steady green arrow"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Flashing yellow arrow: turn only after yielding",
+    "explanation": "A **flashing yellow arrow** allows the turn **with caution**. You must **yield to oncoming traffic** close enough to be a hazard and **to pedestrians** in the crosswalk, then turn when it is safe.\n\n**Wrong choices**\n- Turn left right away, because you have the right of way: A flashing yellow arrow does not give you the right of way.\n- Go straight only, because left turns are not allowed: Left turns are allowed after yielding.\n- Stop and wait for a steady green arrow: You may turn without waiting for a green arrow if it is safe.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-19",
+    "tags": [
+      "traffic signals",
+      "flashing yellow arrow"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-ohio-signals-markings-0010",
+    "certId": "dmv-permit-ohio",
+    "subjectId": "signs",
+    "chapterId": "signals-markings",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "What does a double solid yellow center line mean?",
+    "choices": [
+      "Passing is allowed only for traffic on the right side",
+      "Passing is allowed for traffic on both sides",
+      "No passing in either direction",
+      "The road is one way"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Double solid yellow: no passing either way",
+    "explanation": "A **double solid yellow** line means **passing is not allowed in either direction**. Do not cross it to pass. You may cross it only to turn left into a driveway or road when it is safe.\n\n**Wrong choices**\n- Passing is allowed only for traffic on the right side: Neither side may pass across a double solid yellow line.\n- Passing is allowed for traffic on both sides: Passing would be allowed only where the line on your side is broken.\n- The road is one way: A yellow center line means traffic moves in both directions.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-19",
+    "tags": [
+      "pavement markings",
+      "no passing"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-ohio-signals-markings-0011",
+    "certId": "dmv-permit-ohio",
+    "subjectId": "signs",
+    "chapterId": "signals-markings",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "You are stopped at a red light on a one-way street and want to turn left onto another one-way street. No sign forbids it. What does Ohio law allow?",
+    "choices": [
+      "You may turn left without stopping if no one is coming",
+      "You may turn left only if a green arrow appears for the cross street",
+      "You may turn left after a full stop, yielding as you would at a STOP sign",
+      "You must wait for a green light, because left turns on red are never allowed"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Left on red: only one-way onto one-way, after a full stop",
+    "explanation": "Ohio law allows a turn on a **steady red** light after a **full stop** in two cases: a **right turn**, or a **left turn from a one-way street onto another one-way street**. After stopping, yield to pedestrians and traffic, just as at a STOP sign. A sign can forbid the turn.\n\n**Wrong choices**\n- You may turn left without stopping if no one is coming: Every turn on red requires a full stop first.\n- You may turn left only if a green arrow appears for the cross street: The arrow for the cross street does not control your turn.\n- You must wait for a green light, because left turns on red are never allowed: Left turns on red are allowed in this one-way to one-way case.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-19",
+    "tags": [
+      "traffic signals",
+      "turn on red"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-ohio-signals-markings-0012",
+    "certId": "dmv-permit-ohio",
+    "subjectId": "signs",
+    "chapterId": "signals-markings",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "The signal for your lane shows a steady red arrow pointing left. What does it mean?",
+    "choices": [
+      "Do not make the left turn shown by the arrow; stay stopped until a signal allows it",
+      "Go straight only after a full stop",
+      "Stop, then turn left when the way is clear",
+      "Turn left with caution after yielding"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Steady red arrow: no turn in that direction",
+    "explanation": "A **steady red arrow** means you **may not make the movement** shown by the arrow. Stay stopped at the stop line until a signal (such as a green arrow) allows the turn.\n\n**Wrong choices**\n- Go straight only after a full stop: The red arrow controls the turn. Going straight depends on the signal for straight traffic.\n- Stop, then turn left when the way is clear: Stopping and then turning is allowed on a red arrow only where a sign permits it.\n- Turn left with caution after yielding: Turning after yielding is what a flashing yellow arrow allows.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-19",
+    "tags": [
+      "traffic signals",
+      "red arrow"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-ohio-signals-markings-0013",
+    "certId": "dmv-permit-ohio",
+    "subjectId": "signs",
+    "chapterId": "signals-markings",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "The center line has a broken yellow line on your side and a solid yellow line on the other side. What does this mean?",
+    "choices": [
+      "You may pass when it is safe, but drivers on the other side may not",
+      "No one may pass in either direction",
+      "Everyone may pass, because one line is broken",
+      "Drivers on the other side may pass, but you may not"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Broken line on your side: you may pass when safe",
+    "explanation": "With **two yellow lines**, the line **on your side** controls you. A **broken** line on your side means **you may pass when it is safe**. The **solid** line on the other side means drivers coming the other way **may not** pass.\n\n**Wrong choices**\n- No one may pass in either direction: No passing in either direction is a double solid yellow line.\n- Everyone may pass, because one line is broken: Drivers on the side with the solid line may not pass.\n- Drivers on the other side may pass, but you may not: This reverses the rule. The broken line is on your side.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-19",
+    "tags": [
+      "pavement markings",
+      "passing"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-ohio-signals-markings-0014",
+    "certId": "dmv-permit-ohio",
+    "subjectId": "signs",
+    "chapterId": "signals-markings",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A center lane has a solid yellow line and a broken yellow line on each side, with left-turn arrows in both directions. How may you use this lane?",
+    "choices": [
+      "Only for buses and emergency vehicles",
+      "As a passing lane for traffic in both directions",
+      "As a regular travel lane during rush hour",
+      "Only to make a left turn, and drivers from both directions share it"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Two-way left-turn lane: left turns only, shared",
+    "explanation": "This is a **two-way left-turn lane**. Drivers from **both directions** use it **only to turn left**. Enter it close to where you will turn, watch for drivers coming the other way in the same lane, and turn when it is safe.\n\n**Wrong choices**\n- Only for buses and emergency vehicles: Bus and emergency lanes have special signs and markings.\n- As a passing lane for traffic in both directions: The lane is not for passing.\n- As a regular travel lane during rush hour: It is not a travel lane for driving along the road.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-19",
+    "tags": [
+      "pavement markings",
+      "left turn lane"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-ohio-signals-markings-0015",
+    "certId": "dmv-permit-ohio",
+    "subjectId": "signs",
+    "chapterId": "signals-markings",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Which of these does NOT require you to come to a stop?",
+    "choices": [
+      "A flashing yellow light",
+      "A steady red light",
+      "A flashing red light",
+      "A traffic signal showing no lights at all"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Only flashing yellow lets you go without stopping",
+    "explanation": "A **flashing yellow** light means **go with caution**, and you do not have to stop unless you need to yield. A steady red light, a flashing red light, and a dark signal all require you to **stop**.\n\n**Wrong choices**\n- A steady red light: A steady red light requires you to stop and stay stopped.\n- A flashing red light: A flashing red light means stop, as at a STOP sign.\n- A traffic signal showing no lights at all: Ohio law says to stop at a signal showing no lights, then yield and go when safe.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-19",
+    "tags": [
+      "traffic signals"
+    ],
+    "levelLock": true
+  }
+]
