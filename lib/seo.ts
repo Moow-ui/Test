@@ -105,7 +105,7 @@ export function certPastMeta(
   const vars = { name: cert.name, spaced: cert.spacedName, shown: shownCount, brand: brandName(locale) };
   return {
     title: fmt(t.title, vars),
-    description: fmt(t.description, vars),
+    description: fitDescription(t.descriptions, [vars]),
     h1: fmt(t.h1, vars),
     path: localePath(locale, `/cert/${cert.id}/past`),
   };

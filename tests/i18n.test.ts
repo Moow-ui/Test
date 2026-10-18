@@ -18,6 +18,7 @@ import {
   DESCRIPTION_MAX_WIDTH,
   certMainMeta,
   chapterMeta,
+  certPastMeta,
   conceptChapterMeta,
   homeMeta,
   languageAlternates,
@@ -173,12 +174,17 @@ describe("description 길이", () => {
     expect(textWidth("ab 1%")).toBe(2.5);
   });
 
-  it("자격증 메인·단원·개념 정리 description 은 잘리지 않는 길이이고 자격증명·단원명이 들어간다", async () => {
+  it("자격증 메인·기출·단원·개념 정리 description 은 잘리지 않는 길이이고 자격증명·단원명이 들어간다", async () => {
     for (const [lang, country] of [["ko", "KR"], ["en", "US"]] as const) {
       for (const cert of await getReadyCertifications(country)) {
         const main = certMainMeta(lang, cert).description;
         expect(textWidth(main), main).toBeLessThanOrEqual(DESCRIPTION_MAX_WIDTH);
         expect(main).toContain(cert.name);
+        for (const hasPast of [true, false]) {
+          const past = certPastMeta(lang, cert, hasPast, 10).description;
+          expect(textWidth(past), past).toBeLessThanOrEqual(DESCRIPTION_MAX_WIDTH);
+          expect(past).toContain(cert.name);
+        }
         for (const subject of cert.subjects) {
           for (const chapter of subject.chapters) {
             for (const d of [
