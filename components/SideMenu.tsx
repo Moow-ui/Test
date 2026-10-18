@@ -40,10 +40,11 @@ const ROW = "flex min-h-14 w-full items-center gap-3 rounded-lg px-3 text-[18px]
 /**
  * 상단 막대 왼쪽의 "메뉴" 버튼 + 누르면 왼쪽에서 나오는 메뉴판 (모든 화면 크기에서 여닫기 방식).
  * - 움직이는 효과 없이 바로 열고 닫는다. 닫기 버튼·바깥(어두운 부분)·Esc·메뉴 안 링크로 닫힌다.
- * - 열려 있는 동안 뒤 화면은 스크롤되지 않는다. 문제 풀이·결과 화면에는 넣지 않는다 (Header.tsx 에서만 쓴다).
+ * - 열려 있는 동안 뒤 화면은 스크롤되지 않는다. 문제 풀이 화면에는 넣지 않는다 (일반 화면 Header.tsx 와 풀이 결과 화면 ResultHeader 에서 쓴다).
+ * - certs(자격증 id·이름)를 주지 않으면(풀이 결과 화면) "최근 공부한 자격증" 묶음은 숨긴다.
  * - 휴대폰에서는 상단 막대에 자리가 없어 "어둡게" 버튼을 이 안에 둔다 (PC 는 상단 막대에 그대로 있다).
  */
-export function SideMenu({ certs }: { certs: MenuCert[] }) {
+export function SideMenu({ certs = [] }: { certs?: MenuCert[] }) {
   const { locale, m } = useMessages();
   const t = m.menu;
   const auth = useAuth();

@@ -6,6 +6,7 @@ import type { ReactNode } from "react";
 import { AdSlot } from "@/components/AdSlot";
 import { FoldMark } from "@/components/Fold";
 import { LogoMark } from "@/components/LogoMark";
+import { SideMenu } from "@/components/SideMenu";
 import { TopBar } from "@/components/TopBar";
 import { ChapterNotesLink } from "@/components/quiz/ChapterNotesLink";
 import { Markdown } from "@/components/Markdown";
@@ -23,12 +24,19 @@ import type { QuizCert } from "./QuizRunner";
 /** 이 문항 수보다 적게 풀었으면 합격 판정은 "참고용"이라고 알려 준다 */
 const RELIABLE_QUESTION_COUNT = 20;
 
-/** 결과 화면 맨 위: 다른 화면과 같은 상단 막대 (왼쪽 사이트 이름 → 메인, 오른쪽 글자 크기·어둡게). 풀이 중인 시험 화면에는 사이트 이름을 두지 않는다 */
+/**
+ * 결과 화면 맨 위: 다른 화면과 같은 상단 막대 (왼쪽 메뉴 버튼·사이트 이름 → 메인, 오른쪽 글자 크기·어둡게).
+ * 휴대폰에서는 일반 화면처럼 "어둡게"를 메뉴 안으로 옮긴다. 풀이 중인 시험 화면에는 메뉴·사이트 이름을 두지 않는다
+ */
 export function ResultHeader() {
   const { locale, brand } = useMessages();
   return (
-    <TopBar>
-      <Link href={localePath(locale)} className="inline-flex min-h-11 items-center gap-2 text-[22px] font-bold tracking-tight text-accent">
+    <TopBar themeInMenu>
+      <SideMenu />
+      <Link
+        href={localePath(locale)}
+        className="inline-flex min-h-11 items-center gap-2 text-[18px] font-bold tracking-tight text-accent sm:text-[22px]"
+      >
         <LogoMark size={28} />
         {brand}
       </Link>
