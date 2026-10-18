@@ -13,6 +13,7 @@
 | 회장이 오래 자리를 비운 뒤 돌아왔을 때 점검 | [docs/return-checklist.md](docs/return-checklist.md) |
 | 데이터 폴더·스키마·문제 id·콘텐츠 정책 | [docs/data-rules.md](docs/data-rules.md) |
 | 코드 구조, 화면·다국어·출제·SEO·로그인·배포 규칙 | [docs/code-rules.md](docs/code-rules.md) |
+| 화면 변경을 되돌리기 | [docs/rollback.md](docs/rollback.md) |
 
 ## 기본
 

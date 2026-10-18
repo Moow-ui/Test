@@ -6,14 +6,23 @@ import { DisplayControls } from "./DisplayControls";
  * 오른쪽은 늘 같은 자리에 글자 크기·어둡게 버튼.
  * 글자 크기 설정과 상관없이 높이가 일정하도록 안쪽은 px 단위를 쓴다.
  */
-export function TopBar({ children, wide = false }: { children: ReactNode; wide?: boolean }) {
+export function TopBar({
+  children,
+  wide = false,
+  themeInMenu = false,
+}: {
+  children: ReactNode;
+  wide?: boolean;
+  /** true: 휴대폰에서 "어둡게" 버튼을 숨긴다 (메뉴 안에 있는 일반 화면) */
+  themeInMenu?: boolean;
+}) {
   return (
     <header className="no-print bg-surface">
       <div
         className={`mx-auto flex h-16 w-full items-center justify-between gap-2 px-3 sm:px-4 ${wide ? "max-w-6xl" : "max-w-5xl"}`}
       >
         <div className="flex min-w-0 items-center gap-2 whitespace-nowrap text-[16px] sm:gap-4">{children}</div>
-        <DisplayControls />
+        <DisplayControls themeInMenu={themeInMenu} />
       </div>
     </header>
   );

@@ -17,7 +17,7 @@ const SAMPLE_SIZE: Record<string, string> = {
  * 모든 화면(일반 화면·문제 풀이·결과)의 상단 막대 오른쪽에 같은 모양으로 놓는다 (components/TopBar.tsx).
  * 고른 값은 저장되어 다른 화면·다음 방문에도 그대로다 (lib/storage.ts). 테마는 처음엔 기기 설정을 따른다.
  */
-export function DisplayControls() {
+export function DisplayControls({ themeInMenu = false }: { themeInMenu?: boolean }) {
   const font = useFontScale();
   const theme = useTheme();
   const m = useMessages().m.display;
@@ -51,7 +51,7 @@ export function DisplayControls() {
       <button
         type="button"
         onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-        className="h-11 rounded-lg bg-surface-2 px-2 text-[16px] font-bold text-ink hover:bg-primary-soft sm:px-4"
+        className={`h-11 rounded-lg bg-surface-2 px-2 ${themeInMenu ? "max-sm:hidden" : ""} text-[16px] font-bold text-ink hover:bg-primary-soft sm:px-4`}
       >
         {theme === "dark" ? m.light : m.dark}
       </button>

@@ -98,7 +98,7 @@ export function CertGrid({ certs, conceptIds }: { certs: CertListItem[]; concept
   );
 
   return (
-    <nav aria-labelledby="all-certs-title" className="pt-8">
+    <nav id="all-certs" aria-labelledby="all-certs-title" className="scroll-mt-4 pt-8">
       <div className="flex flex-wrap items-center justify-between gap-2">
         <h2 id="all-certs-title" className="text-lg font-bold">
           {m.allCerts}
