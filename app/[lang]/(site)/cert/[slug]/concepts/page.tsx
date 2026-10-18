@@ -5,6 +5,7 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { JsonLd } from "@/components/JsonLd";
 import { Stars } from "@/components/Stars";
 import { ConceptByline, ConceptNote, ExamSummary } from "@/components/concepts/ConceptParts";
+import { NoteNavigator } from "@/components/concepts/NoteNavigator";
 import { IssuerNotice } from "@/components/cert/IssuerNotice";
 import { InspectedBadge } from "@/components/cert/InspectedBadge";
 import { getCertificationIn, getConcepts } from "@/lib/data";
@@ -46,6 +47,16 @@ export default async function ConceptsPage({ params }: Props) {
   const meta = conceptsMeta(lang, cert, concepts.chapters.length);
   const certPath = certMainMeta(lang, cert).path;
   const byId = new Map(concepts.chapters.map((c) => [c.id, c]));
+  // 요약 노트 위에 붙는 "지금 보는 단원 · 단원 이동" 막대용 목록 (노트가 있는 단원만, 화면 순서대로)
+  const navChapters = cert.subjects.flatMap((subject, si) =>
+    subject.chapters
+      .map((chapter, ci) => ({
+        id: chapter.id,
+        label: `${fmt(m.concepts.chapterNo, { s: si + 1, c: ci + 1 })} ${chapter.name}`,
+        subject: `${fmt(m.concepts.subjectNo, { n: si + 1 })} · ${subject.name}`,
+      }))
+      .filter((c) => byId.has(c.id)),
+  );
 
   return (
     <article className="mx-auto max-w-3xl space-y-8">
@@ -122,6 +133,8 @@ export default async function ConceptsPage({ params }: Props) {
         <h2 id="note-title" className="text-xl font-bold">
           {m.concepts.noteTitle}
         </h2>
+        {/* 요약 노트 영역 안에서만 화면 위에 붙는다 (지금 단원 · 위치 · 단원 이동) */}
+        <NoteNavigator chapters={navChapters} />
         {cert.subjects.map((subject, si) => {
           const chapters = subject.chapters
             .map((chapter, ci) => ({ chapter, no: fmt(m.concepts.chapterNo, { s: si + 1, c: ci + 1 }) }))

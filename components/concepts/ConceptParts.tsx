@@ -185,7 +185,7 @@ export function ConceptNote({
 }) {
   const m = getMessages(locale).concepts;
   return (
-    <article id={id} aria-labelledby={`${id}-title`} className="scroll-mt-4 border-t border-card-line px-4 py-6 sm:px-6">
+    <article id={id} aria-labelledby={`${id}-title`} className="scroll-mt-24 border-t border-card-line px-4 py-6 sm:px-6">
       <h4 id={`${id}-title`} className="text-lg font-bold leading-snug">
         <Link href={href} className="link">
           {number} {name}
