@@ -210,19 +210,22 @@ export function ResultView({
               <li key={q.id}>
                 <details>
                   <summary className="flex min-h-14 items-center gap-3 p-4 hover:bg-primary-soft">
-                    <span
-                      className={`shrink-0 rounded-full px-3 py-1 text-sm font-bold ${
-                        g.correct
-                          ? "bg-ok-soft text-ok"
-                          : g.chosen === null
-                            ? "bg-surface-2 text-ink-sub"
-                            : "bg-bad-soft text-bad"
-                      }`}
-                    >
-                      {g.correct ? m.ok : g.chosen === null ? m.skipped : m.ng}
-                    </span>
-                    <span className="flex-1 whitespace-pre-wrap font-bold leading-snug">
-                      {i + 1}. {q.stem}
+                    {/* 휴대폰: 배지가 문제 위 한 줄, PC: 배지가 문제 왼쪽 (문제 글이 좁아지지 않게) */}
+                    <span className="flex min-w-0 flex-1 flex-col items-start gap-1 sm:flex-row sm:items-center sm:gap-3">
+                      <span
+                        className={`shrink-0 rounded-full px-3 py-1 text-sm font-bold ${
+                          g.correct
+                            ? "bg-ok-soft text-ok"
+                            : g.chosen === null
+                              ? "bg-surface-2 text-ink-sub"
+                              : "bg-bad-soft text-bad"
+                        }`}
+                      >
+                        {g.correct ? m.ok : g.chosen === null ? m.skipped : m.ng}
+                      </span>
+                      <span className="min-w-0 flex-1 whitespace-pre-wrap font-bold leading-snug">
+                        {i + 1}. {q.stem}
+                      </span>
                     </span>
                     <span className="shrink-0 text-sm font-bold text-accent">
                       <FoldMark />
