@@ -503,5 +503,40 @@
       "hygiene"
     ],
     "levelLock": true
+  },
+  {
+    "id": "esthetician-nic-theory-makeup-products-0016",
+    "certId": "esthetician-nic-theory",
+    "subjectId": "skin-care-services",
+    "chapterId": "makeup-products",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Where should you test foundation color?",
+    "choices": [
+      "On the back of the hand",
+      "On the forearm",
+      "On the jawline",
+      "On the forehead"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Test on jaw",
+    "explanation": "Jaw shows face and neck blend.\n\n**Wrong choices**\n- On the back of the hand: The hand is often a different shade from the face and neck.\n- On the forearm: The forearm is often a different shade from the face and neck.\n- On the forehead: The forehead does not show how the foundation blends into the neck.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-18",
+    "tags": [
+      "foundation"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
   }
 ]
