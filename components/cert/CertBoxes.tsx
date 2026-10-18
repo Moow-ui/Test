@@ -66,6 +66,11 @@ export function CertBoxes({ certId, ready, subjects, counts, choiceCounts, cbt, 
   const [count, setCount] = useState<number>(DEFAULT_QUIZ_COUNT);
   const session = useStored<QuizSession | null>(STORAGE_KEYS.session(certId), null);
   const certPath = localePath(locale, `/cert/${certId}`);
+  // 맨 위 "바로 시작": 마지막으로 고른 난이도(없으면 초급)로 전체 범위 5문제. 문제가 모자라면 초급으로, 그래도 모자라면 숨긴다
+  const stored = useStored<string | null>(STORAGE_KEYS.lastLevel, null);
+  const quickLevel: QuizLevel = stored === "intermediate" || stored === "advanced" ? stored : "basic";
+  const quick = [quickLevel, "basic" as QuizLevel].find((l) => (counts[l].all ?? 0) >= DEFAULT_QUIZ_COUNT) ?? null;
+  const inProgress = isInProgress(session);
 
   // 이 자격증을 "최근 공부한 자격증"으로 기록한다 (홈의 바로 풀기 버튼용)
   useEffect(() => {
@@ -85,6 +90,32 @@ export function CertBoxes({ certId, ready, subjects, counts, choiceCounts, cbt, 
 
   return (
     <div className="space-y-2">
+      {/* 이 화면의 주인공 버튼 하나: 풀던 문제가 있으면 "이어서 풀기", 없으면 "바로 시작" */}
+      {ready && (inProgress || quick) && (
+        <div className="space-y-2 pb-4">
+          {inProgress && (
+            <Link href={`${certPath}/quiz`} className="btn btn-primary btn-lg w-full">
+              {fmt(m.cert.resume, { current: session.currentIndex + 1, total: session.questionIds.length })}
+            </Link>
+          )}
+          {quick && (
+            <>
+              <Link
+                href={`${certPath}/quiz?level=${quick}&count=${DEFAULT_QUIZ_COUNT}&subject=all`}
+                onClick={() => setLastLevel(quick)}
+                className={`btn btn-lg w-full ${inProgress ? "" : "btn-primary"}`}
+              >
+                {fmt(m.cert.quickStart, { level: m.levels[quick], n: DEFAULT_QUIZ_COUNT })}
+              </Link>
+              <p className="text-center text-sm text-ink-sub">
+                {fmt(m.cert.quickStartInfo, { choices: choiceCounts[quick] })}
+              </p>
+            </>
+          )}
+        </div>
+      )}
+
+      {ready && <p className="pt-2 font-bold text-ink-sub">{m.cert.chooseLevel}</p>}
       <div className="grid grid-cols-3 gap-2">
         {LEVELS.map((id) => {
           const active = level === id;
@@ -213,12 +244,6 @@ export function CertBoxes({ certId, ready, subjects, counts, choiceCounts, cbt, 
         showConcepts && <ConceptsLink />
       )}
 
-      {/* 풀던 문제가 남아 있을 때만 보인다 */}
-      {isInProgress(session) && (
-        <Link href={`${certPath}/quiz`} className="btn w-full">
-          {fmt(m.cert.resume, { current: session.currentIndex + 1, total: session.questionIds.length })}
-        </Link>
-      )}
     </div>
   );
 }
