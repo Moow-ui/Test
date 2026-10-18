@@ -616,6 +616,11 @@ export const guideSchema = z.object({
   updatedAt: dateSchema.optional(),
   /** 글 속 정보의 기준일 (출처를 확인한 날) */
   basisDate: dateSchema,
+  /**
+   * 이 날짜가 지나면 글의 정보(일정 등)가 지난 것이다. 일정(schedule) 글은 꼭 적는다 (그 회차의 마지막 날짜, 보통 합격자 발표일).
+   * 지나면 화면에 "지난 일정" 안내가 붙고 검색 색인·sitemap 에서 빠진다.
+   */
+  validUntil: dateSchema.optional(),
   /** 관련 자격증 slug (같은 나라 자격증만). 글 아래에 문제풀이 바로가기가 붙는다 */
   certIds: z.array(z.string().min(1)).max(6).default([]),
   /** 첫 문단 */

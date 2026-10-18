@@ -1,5 +1,6 @@
 import { INFO_PAGE_IDS, INFO_UPDATED } from "@/content/pages";
 import { getConcepts, getGuides, getReadyCertifications } from "./data";
+import { isGuideExpired } from "./guide-quality";
 import { LOCALES, localeCountry, localePath, type Locale } from "./i18n";
 import { languageAlternates } from "./seo";
 import { absoluteUrl } from "./site";
@@ -62,8 +63,8 @@ export async function sitemapEntries(locale: Locale): Promise<SitemapEntry[]> {
     }
   }
 
-  // 합격 가이드 (글이 있는 언어만)
-  const guides = await getGuides(locale);
+  // 수험 정보 (글이 있는 언어만). 지난 일정 글은 noindex 라서 넣지 않는다
+  const guides = (await getGuides(locale)).filter((g) => !isGuideExpired(g));
   if (guides.length > 0) {
     const listPath = localePath(locale, "/guide");
     entries.push({ path: listPath, lastModified: guides[0].publishedAt, changeFrequency: "weekly", priority: 0.7 });

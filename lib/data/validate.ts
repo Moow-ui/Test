@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { GUIDE_MAX_SIMILARITY, guideSimilarity } from "../guide-quality";
 import {
   COUNTRIES,
   LEVELS,
@@ -254,10 +255,11 @@ export async function validateData(store: DataStore): Promise<ValidationResult> 
   // slug 는 나라가 달라도 겹치면 안 된다 (문제 id·배포 파일 주소가 slug 로 시작한다)
   errors.push(...checkCertList(metas));
 
-  // 합격 가이드 (data/guides/{lang}/{slug}.json)
+  // 수험 정보 글 (data/guides/{lang}/{slug}.json)
   const guideCounts: string[] = [];
   for (const [lang, country] of Object.entries(GUIDE_LANG_COUNTRY)) {
     const titles = new Set<string>();
+    const checked: Array<{ name: string; guide: z.infer<typeof guideSchema> }> = [];
     let n = 0;
     for (const name of await store.list(guidesDir(lang))) {
       const where = `guides/${lang}/${name}`;
@@ -272,10 +274,18 @@ export async function validateData(store: DataStore): Promise<ValidationResult> 
       }
       n++;
       errors.push(...checkGuide(parsed.data, name, lang, country, metas, titles).map((e) => `${where}: ${e}`));
+      // 같은 언어의 다른 글과 문장이 많이 겹치면 막는다 (구글이 돌려쓴 대량 AI 글로 보지 않게)
+      for (const other of checked) {
+        const sim = guideSimilarity(parsed.data, other.guide);
+        if (sim >= GUIDE_MAX_SIMILARITY) {
+          errors.push(`${where}: ${other.name} 와 문장이 너무 많이 겹친다 (유사도 ${sim.toFixed(2)} / 기준 ${GUIDE_MAX_SIMILARITY} 미만). 다른 각도로 새로 써야 한다`);
+        }
+      }
+      checked.push({ name, guide: parsed.data });
     }
     guideCounts.push(`${lang} ${n}편`);
   }
-  lines.push(`\n[합격 가이드] ${guideCounts.join(" · ")}`);
+  lines.push(`\n[수험 정보] ${guideCounts.join(" · ")}`);
 
   if (queue.length > 0) {
     lines.push(
@@ -306,6 +316,8 @@ function checkGuide(
   titles.add(guide.title);
   if (guide.updatedAt && guide.updatedAt < guide.publishedAt) errors.push("updatedAt 이 publishedAt 보다 앞선다");
   if (guide.basisDate > (guide.updatedAt ?? guide.publishedAt)) errors.push("basisDate(정보 기준일)가 글 날짜보다 늦다");
+  if (guide.category === "schedule" && !guide.validUntil) errors.push("일정(schedule) 글은 validUntil(일정이 끝나는 날)을 적어야 한다");
+  if (guide.validUntil && guide.validUntil < guide.publishedAt) errors.push("validUntil 이 publishedAt 보다 앞선다");
   for (const id of guide.certIds) {
     const meta = metas.find((m) => m.id === id);
     if (!meta) errors.push(`certIds: 없는 자격증 ${id}`);

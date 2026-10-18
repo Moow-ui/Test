@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { GuideList, type GuideListItem } from "@/components/guide/GuideList";
 import { getCertificationIn, getGuides } from "@/lib/data";
 import { guideTexts, readingMinutes } from "@/lib/format";
+import { isGuideExpired } from "@/lib/guide-quality";
 import { LOCALES, getMessages, isLocale, localeCountry, localePath } from "@/lib/i18n";
 import { GUIDE_CATEGORIES } from "@/lib/schemas";
 import { guideListMeta, toMetadata } from "@/lib/seo";
@@ -19,7 +21,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { lang } = await params;
   if (!isLocale(lang)) return {};
   const guides = await getGuides(lang);
-  return toMetadata(lang, guideListMeta(lang), { noindex: guides.length === 0 });
+  return toMetadata(lang, guideListMeta(lang), {
+    noindex: guides.length === 0,
+  });
 }
 
 /** 수험 정보 목록 (새 글이 위). 글은 data/guides/{lang}/ — 매일 00:52 루틴이 1편씩 추가한다 */
@@ -42,6 +46,7 @@ export default async function GuideListPage({ params }: Props) {
         publishedAt: g.publishedAt,
         minutes: readingMinutes(guideTexts(g), lang),
         certName: cert?.name,
+        expired: isGuideExpired(g),
       };
     }),
   );
@@ -59,6 +64,22 @@ export default async function GuideListPage({ params }: Props) {
         <h1 className="text-2xl font-bold sm:text-3xl">{meta.h1}</h1>
         <p className="text-ink-sub">{m.guide.listIntro}</p>
       </header>
+      {/* 작성 원칙: AI 작성 사실과 출처 기준을 먼저 밝힌다 */}
+      <section aria-labelledby="policy-title" className="rounded-xl border border-line bg-surface px-5 py-4 text-sm">
+        <h2 id="policy-title" className="font-bold">
+          {m.guide.policyTitle}
+        </h2>
+        <ul className="mt-2 list-disc space-y-1 pl-5 text-ink-sub">
+          {m.guide.policy.map((line) => (
+            <li key={line}>{line}</li>
+          ))}
+        </ul>
+        <p className="mt-2">
+          <Link href={localePath(lang, "/contact")} className="link">
+            {m.guide.reportError}
+          </Link>
+        </p>
+      </section>
       {items.length === 0 ? (
         <p className="card p-6 text-ink-sub">{m.guide.empty}</p>
       ) : (

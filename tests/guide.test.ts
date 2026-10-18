@@ -1,6 +1,7 @@
 /** 합격 가이드: 스키마·최소 분량 검사 */
 import { describe, expect, it } from "vitest";
 import { readingMinutes } from "@/lib/format";
+import { GUIDE_MAX_SIMILARITY, guideSimilarity, isGuideExpired } from "@/lib/guide-quality";
 import { guideSchema } from "@/lib/schemas";
 
 const body = "가".repeat(300);
@@ -45,5 +46,26 @@ describe("수험 정보 읽는 시간", () => {
   });
   it("영어는 220단어당 1분", () => {
     expect(readingMinutes([Array(440).fill("word").join(" ")], "en")).toBe(2);
+  });
+});
+
+describe("수험 정보 품질 보호", () => {
+  it("자격증 이름만 바꾼 글은 유사도가 기준을 넘는다", () => {
+    const a = { ...base, intro: "지게차 필기는 장비 구조부터 공부하고 법규 숫자는 마지막에 몰아서 본다. " + body };
+    const b = { ...a, intro: a.intro.replaceAll("지게차", "굴착기") };
+    expect(guideSimilarity(a, b)).toBeGreaterThanOrEqual(GUIDE_MAX_SIMILARITY);
+  });
+  it("내용이 다른 글은 기준 아래", () => {
+    const a = { title: "가", intro: "유압 펌프는 기름을 보내고 밸브는 방향과 압력을 조절한다.", sections: [] };
+    const b = { title: "나", intro: "원서 접수는 큐넷에서 하고 신분증을 꼭 챙긴다. 시험장에는 일찍 간다.", sections: [] };
+    expect(guideSimilarity(a, b)).toBeLessThan(GUIDE_MAX_SIMILARITY);
+  });
+  it("validUntil 이 지나면 지난 글", () => {
+    expect(isGuideExpired({ validUntil: "2026-10-10" }, "2026-10-18")).toBe(true);
+    expect(isGuideExpired({ validUntil: "2026-10-18" }, "2026-10-18")).toBe(false);
+    expect(isGuideExpired({}, "2030-01-01")).toBe(false);
+  });
+  it("일정 글은 스키마상 validUntil 을 받을 수 있다", () => {
+    expect(guideSchema.safeParse({ ...base, category: "schedule", validUntil: "2026-11-30" }).success).toBe(true);
   });
 });

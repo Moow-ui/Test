@@ -15,6 +15,8 @@ export interface GuideListItem {
   publishedAt: string;
   minutes: number;
   certName?: string;
+  /** 일정이 지난 글 */
+  expired?: boolean;
 }
 
 /** 주소 끝의 #c=분류 (글 머리의 분류 이름을 누르면 그 분류만 보이게 열린다) */
@@ -24,7 +26,15 @@ const HASH = "#c=";
  * 수험 정보 목록 (블로그 글 목록 모양): 위에 분류 탭, 아래에 글 줄.
  * 글 줄 = 분류 · 제목 · 요약 두 줄 · 날짜·읽는 시간·관련 자격증, 오른쪽에 분류 그림 네모. 줄 전체를 누를 수 있다.
  */
-export function GuideList({ items, listPath, categories }: { items: GuideListItem[]; listPath: string; categories: GuideCategory[] }) {
+export function GuideList({
+  items,
+  listPath,
+  categories,
+}: {
+  items: GuideListItem[];
+  listPath: string;
+  categories: GuideCategory[];
+}) {
   const { m } = useMessages();
   const t = m.guide;
   const [selected, setSelected] = useState<GuideCategory | "all">("all");
@@ -67,25 +77,37 @@ export function GuideList({ items, listPath, categories }: { items: GuideListIte
           {tabs.map((c) => tab(c, t.categories[c], counts.get(c) ?? 0))}
         </div>
       )}
-      <p className="text-sm text-ink-sub">{fmt(t.count, { n: shown.length })}</p>
-      <ul className="divide-y divide-line-soft border-y border-line-soft">
-        {shown.map((g) => (
-          <li key={g.slug}>
-            <Link href={`${listPath}/${g.slug}`} className="group flex items-start gap-4 py-5">
-              <div className="min-w-0 flex-1 space-y-1">
-                <p className="text-sm font-bold text-accent">{t.categories[g.category]}</p>
-                <h2 className="line-clamp-2 text-lg font-bold leading-snug group-hover:underline">{g.title}</h2>
-                <p className="line-clamp-2 text-ink-sub">{g.description}</p>
-                <p className="text-sm tabular-nums text-ink-sub">
-                  {g.publishedAt} · {fmt(t.readTime, { n: g.minutes })}
-                  {g.certName && <> · {g.certName}</>}
-                </p>
-              </div>
-              <CategoryTile category={g.category} className="mt-1 size-20 sm:size-24" />
-            </Link>
-          </li>
-        ))}
-      </ul>
+      <div className="card overflow-hidden">
+        <p className="border-b border-line px-5 py-3 text-sm font-bold text-ink-sub">
+          {fmt(t.count, { n: shown.length })}
+        </p>
+        <ul className="divide-y divide-line">
+          {shown.map((g) => (
+            <li key={g.slug}>
+              <Link
+                href={`${listPath}/${g.slug}`}
+                className="group flex items-start gap-4 px-5 py-5 hover:bg-surface-2"
+              >
+                <div className="min-w-0 flex-1 space-y-1">
+                  <p className="flex flex-wrap items-center gap-2 text-sm font-bold">
+                    <span className="text-accent">{t.categories[g.category]}</span>
+                    {g.expired && (
+                      <span className="rounded-md bg-surface-2 px-2 py-0.5 text-ink-sub">{t.expiredBadge}</span>
+                    )}
+                  </p>
+                  <h2 className="line-clamp-2 text-lg font-bold leading-snug group-hover:underline">{g.title}</h2>
+                  <p className="line-clamp-2 text-ink-sub">{g.description}</p>
+                  <p className="text-sm tabular-nums text-ink-sub">
+                    {g.publishedAt} · {fmt(t.readTime, { n: g.minutes })}
+                    {g.certName && <> · {g.certName}</>}
+                  </p>
+                </div>
+                <CategoryTile category={g.category} className="mt-1 size-20 sm:size-24" />
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 }
