@@ -12,7 +12,7 @@ import { InspectedBadge } from "@/components/cert/InspectedBadge";
 import { RelatedCerts } from "@/components/cert/RelatedCerts";
 import { StudyTips } from "@/components/cert/StudyTips";
 import { ReviewSection } from "@/components/reviews/ReviewSection";
-import { getCertList, getCertificationIn, getConcepts, getQuestions } from "@/lib/data";
+import { getCertList, getCertificationIn, getConcepts, getGuidesForCert, getQuestions } from "@/lib/data";
 import { pastCredit } from "@/lib/format";
 import { fmt, getMessages, isLocale, localeCountry, localePath, writtenVars } from "@/lib/i18n";
 import { levelChoiceCount } from "@/lib/choices";
@@ -54,6 +54,7 @@ export default async function CertPage({ params }: Props) {
 
   const meta = certMainMeta(lang, cert);
   const allCerts = await getCertList(country);
+  const guides = await getGuidesForCert(lang, cert.id);
   const related = cert.relatedCertIds
     .map((id) => allCerts.find((c) => c.id === id))
     .filter((c) => c !== undefined)
@@ -195,6 +196,24 @@ export default async function CertPage({ params }: Props) {
 
       {/* 운영진 학습 팁(운영진 작성). 이용자 후기와 섞지 않고 따로 둔다 */}
       {cert.studyTips && <StudyTips locale={lang} certName={cert.name} tips={cert.studyTips} />}
+
+      {/* 이 자격증을 다룬 시험 준비 안내 글 (글이 있을 때만) */}
+      {guides.length > 0 && (
+        <section aria-labelledby="cert-guides" className="space-y-2">
+          <h2 id="cert-guides" className="text-lg font-bold">
+            {m.guide.certRelated}
+          </h2>
+          <ul className="space-y-2">
+            {guides.map((g) => (
+              <li key={g.slug}>
+                <Link href={localePath(lang, `/guide/${g.slug}`)} className="link">
+                  {g.title}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
 
       {/* 읽을거리(출제 경향·자격증 소개·자주 묻는 질문)는 맨 아래에 작게 접어 둔다 */}
       {content && (

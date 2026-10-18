@@ -14,7 +14,7 @@
 | 데이터 폴더·스키마·문제 id·콘텐츠 정책 | [docs/data-rules.md](docs/data-rules.md) |
 | 코드 구조, 화면·다국어·출제·SEO·로그인·배포 규칙 | [docs/code-rules.md](docs/code-rules.md) |
 | 화면 변경을 되돌리기 | [docs/rollback.md](docs/rollback.md) |
-| 합격 가이드 글 쓰기 (매일 00:52 루틴) | [docs/daily-guide.md](docs/daily-guide.md) |
+| 수험 정보 글 쓰기 (매일 00:52 루틴) | [docs/daily-guide.md](docs/daily-guide.md) |
 
 ## 기본
 
@@ -116,10 +116,10 @@ scripts/                   validate-data, build-data, import-questions, convert-
   그림을 못 만들어도 루틴 실패가 아니다.
 - 문제 검증 다음에 운영진 학습 팁 3개(`meta.json` 의 `studyTips`)를 쓴다. 후기란·활동 표시는 새 자격증에도 저절로 붙는다 (코드를 고치지 않는다).
 
-## 합격 가이드 (2026-10-18 개설)
+## 수험 정보 (2026-10-18 개설, 주소 /{lang}/guide)
 
-- `/ko/guide` 에 자격증 준비 정보 글을 싣는다. 글 = `data/guides/{lang}/{slug}.json` 파일 하나 (목록·sitemap·화면 자동).
-- 매일 한국시간 00:52 클라우드 루틴이 1편씩 쓴다. **자격증 추가 루틴과 완전히 별개**이며, 그 루틴들을 방해하지 않는 규칙(사용량 30% 미만이면 건너뜀, 03:30 이후 push 금지, 글 파일·기록 외 수정 금지)은 [docs/daily-guide.md](docs/daily-guide.md) 0장.
+- 메뉴 이름 "수험 정보"(영어 "Exam Info"). 자격증 준비 정보 글을 싣는다. 글 = `data/guides/{lang}/{slug}.json` 파일 하나 (목록·sitemap·화면·자격증 페이지 링크 자동).
+- 매일 한국시간 00:52 클라우드 루틴이 1편씩 쓴다 (한국어 주 3편, 영어 주 4편). **자격증 추가 루틴과 완전히 별개이고 새벽 루틴이 항상 우선**이며, 방해하지 않는 규칙(사용량 30% 미만이면 건너뜀, 03:30 이후 push 금지, 글 파일·기록 외 수정 금지)은 [docs/daily-guide.md](docs/daily-guide.md) 0장.
 - 자격증 추가 루틴은 `data/guides/`·`reports/guide-progress.md` 를 고치지 않는다.
 
 ## 명령어
