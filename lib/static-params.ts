@@ -1,4 +1,4 @@
-import { getCertList, getConcepts, getReadyCertifications } from "./data";
+import { getCertList, getConcepts, getGuides, getReadyCertifications } from "./data";
 import { LOCALES, localeCountry } from "./i18n";
 
 /**
@@ -62,5 +62,12 @@ export async function conceptChapterParams(): Promise<Array<{ lang: string; slug
       }
     }
   }
+  return result;
+}
+
+/** 수험 정보 글 화면·썸네일: data/guides/{lang}/ 에 있는 글 */
+export async function guideParams(): Promise<Array<{ lang: string; slug: string }>> {
+  const result = [];
+  for (const lang of LOCALES) for (const g of await getGuides(lang)) result.push({ lang, slug: g.slug });
   return result;
 }

@@ -8,7 +8,7 @@ import { guideTexts, readingMinutes } from "@/lib/format";
 import { isGuideExpired } from "@/lib/guide-quality";
 import { LOCALES, getMessages, isLocale, localeCountry, localePath } from "@/lib/i18n";
 import { GUIDE_CATEGORIES } from "@/lib/schemas";
-import { guideListMeta, toMetadata } from "@/lib/seo";
+import { guideListMeta, siteOgImagePath, toMetadata } from "@/lib/seo";
 
 type Props = { params: Promise<{ lang: string }> };
 
@@ -23,6 +23,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const guides = await getGuides(lang);
   return toMetadata(lang, guideListMeta(lang), {
     noindex: guides.length === 0,
+    ogImagePath: siteOgImagePath(lang),
   });
 }
 

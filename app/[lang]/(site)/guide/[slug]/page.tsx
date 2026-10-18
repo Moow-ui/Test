@@ -9,8 +9,9 @@ import { CategoryIcon } from "@/components/guide/CategoryIcon";
 import { getCertificationIn, getGuide, getGuides } from "@/lib/data";
 import { guideTexts, readingMinutes } from "@/lib/format";
 import { isGuideExpired } from "@/lib/guide-quality";
-import { LOCALES, brandName, fmt, getMessages, isLocale, localeCountry, localePath } from "@/lib/i18n";
-import { faqJsonLd, guideJsonLd, guideListMeta, guideMeta, toMetadata } from "@/lib/seo";
+import { brandName, fmt, getMessages, isLocale, localeCountry, localePath } from "@/lib/i18n";
+import { faqJsonLd, guideJsonLd, guideListMeta, guideMeta, guideOgImagePath, toMetadata } from "@/lib/seo";
+import { guideParams } from "@/lib/static-params";
 
 type Props = { params: Promise<{ lang: string; slug: string }> };
 
@@ -18,11 +19,7 @@ type Props = { params: Promise<{ lang: string; slug: string }> };
 export const dynamicParams = false;
 
 /** 모든 언어의 주소를 한꺼번에 돌려준다 (lib/static-params.ts 와 같은 이유) */
-export async function generateStaticParams() {
-  const result: Array<{ lang: string; slug: string }> = [];
-  for (const lang of LOCALES) for (const g of await getGuides(lang)) result.push({ lang, slug: g.slug });
-  return result;
-}
+export const generateStaticParams = guideParams;
 
 async function load(lang: string, slug: string) {
   if (!isLocale(lang)) return null;
@@ -37,6 +34,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   // 일정이 지난 글은 화면에는 남기되 검색 색인에서 뺀다 (지난 정보가 검색에 걸리지 않게)
   return toMetadata(found.lang, guideMeta(found.lang, found.guide), {
     noindex: isGuideExpired(found.guide),
+    ogImagePath: guideOgImagePath(found.lang, found.guide.slug),
   });
 }
 
@@ -125,6 +123,16 @@ export default async function GuidePage({ params }: Props) {
             <strong className="tabular-nums">{fmt(t.basis, { date: guide.basisDate })}</strong> · {t.basisNote}
           </p>
         </header>
+
+        {/* 대표 그림 (검색 썸네일과 같은 그림. 글 제목으로 자동으로 그려진다). 빌드 때 만든 PNG 를 그대로 쓴다 */}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={guideOgImagePath(lang, guide.slug)}
+          alt={meta.h1}
+          width={1200}
+          height={630}
+          className="h-auto w-full rounded-lg"
+        />
 
         <div className="guide-prose">
           <Markdown text={guide.intro} />

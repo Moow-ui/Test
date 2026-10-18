@@ -341,6 +341,16 @@ export function certOgImagePath(locale: Locale, certId: string): string {
   return localePath(locale, `/cert/${certId}/opengraph-image`);
 }
 
+/** 수험 정보 글 썸네일 주소 (app/[lang]/guide/[slug]/opengraph-image.tsx). 글 맨 위 그림과 검색 썸네일이 같이 쓴다 */
+export function guideOgImagePath(locale: Locale, slug: string): string {
+  return localePath(locale, `/guide/${slug}/opengraph-image`);
+}
+
+/** 사이트 기본 썸네일 주소 (app/[lang]/opengraph-image.tsx). 수험 정보 목록처럼 따로 그림이 없는 페이지가 쓴다 */
+export function siteOgImagePath(locale: Locale): string {
+  return localePath(locale, "/opengraph-image");
+}
+
 /** 합격 가이드 목록 */
 export function guideListMeta(locale: Locale): PageMeta {
   const m = getMessages(locale);
@@ -369,5 +379,6 @@ export function guideJsonLd(locale: Locale, meta: PageMeta, guide: Guide) {
   return {
     ...articleJsonLd(locale, meta, guide.updatedAt ?? guide.publishedAt),
     datePublished: guide.publishedAt,
+    image: absoluteUrl(guideOgImagePath(locale, guide.slug)),
   };
 }

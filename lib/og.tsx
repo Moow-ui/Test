@@ -20,6 +20,44 @@ function loadFonts(): Promise<[Buffer, Buffer]> {
   return fonts;
 }
 
+// 브랜드 주황 (app/tokens.css 의 --primary, --primary-soft 와 같은 값). 흰 글자 대비 5.2:1
+const BRAND = "#c2410c";
+const BRAND_SOFT = "#fff1e6";
+const ON_BRAND = "#ffffff";
+
+/** 제목 길이에 맞춘 글자 크기 (수험 정보 글 제목은 60자까지라 여러 줄로 내려간다) */
+function titleFontSize(title: string): number {
+  const n = title.length;
+  if (n <= 9) return 116;
+  if (n <= 14) return 96;
+  if (n <= 24) return 76;
+  if (n <= 40) return 64;
+  return 56;
+}
+
+/** 로고 마크 (components/LogoMark.tsx 와 같은 모양). 주황 바탕 위라 색을 뒤집어 흰 네모 안에 주황 달을 그린다 */
+function OgLogo({ size }: { size: number }) {
+  return (
+    <svg viewBox="0 0 64 64" width={size} height={size}>
+      <rect width="64" height="64" rx="14" fill={ON_BRAND} />
+      <circle cx="29" cy="34" r="19" fill={BRAND} />
+      <circle cx="37" cy="27" r="15" fill={ON_BRAND} />
+      <path
+        d="M24 35 L31 42 L52 15"
+        fill="none"
+        stroke={BRAND}
+        strokeWidth="7"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
+/**
+ * 공유·검색 썸네일 (1200×630). 홈·자격증·수험 정보 글이 같은 틀을 쓴다.
+ * 주황 바탕 · 왼쪽 위 로고와 사이트 이름 · 오른쪽 위 분류 꼬리표 · 가운데 큰 제목 · 아래 한 줄 소개.
+ */
 export async function renderOgImage({
   brand,
   tagline,
@@ -32,10 +70,10 @@ export async function renderOgImage({
   tagline: string;
   eyebrow: string;
   title: string;
-  subtitle: string;
+  /** 제목 아래 작은 줄 (없으면 생략) */
+  subtitle?: string;
 }): Promise<ImageResponse> {
   const [bold, regular] = await loadFonts();
-  const titleSize = title.length > 14 ? 76 : title.length > 9 ? 96 : 116;
 
   return new ImageResponse(
     (
@@ -46,20 +84,23 @@ export async function renderOgImage({
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
-          background: "#17224f",
-          color: "#ffffff",
-          padding: "64px 72px",
+          background: BRAND,
+          color: ON_BRAND,
+          padding: "60px 72px",
           fontFamily: "Pretendard",
         }}
       >
         <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-          <div style={{ display: "flex", fontSize: 44, fontWeight: 700 }}>{brand}</div>
+          <div style={{ display: "flex", alignItems: "center" }}>
+            <OgLogo size={68} />
+            <div style={{ display: "flex", fontSize: 44, fontWeight: 700, marginLeft: 20 }}>{brand}</div>
+          </div>
           <div
             style={{
               display: "flex",
               fontSize: 30,
-              background: "#ffffff",
-              color: "#17224f",
+              background: BRAND_SOFT,
+              color: BRAND,
               padding: "8px 24px",
               borderRadius: 999,
               fontWeight: 700,
@@ -70,10 +111,12 @@ export async function renderOgImage({
         </div>
 
         <div style={{ display: "flex", flexDirection: "column" }}>
-          <div style={{ display: "flex", fontSize: titleSize, fontWeight: 700, lineHeight: 1.15 }}>
+          <div style={{ display: "flex", fontSize: titleFontSize(title), fontWeight: 700, lineHeight: 1.2, wordBreak: "keep-all" }}>
             {title}
           </div>
-          <div style={{ display: "flex", fontSize: 44, marginTop: 20, fontWeight: 400 }}>{subtitle}</div>
+          {subtitle ? (
+            <div style={{ display: "flex", fontSize: 40, marginTop: 20, fontWeight: 400 }}>{subtitle}</div>
+          ) : null}
         </div>
 
         <div style={{ display: "flex", fontSize: 32, fontWeight: 400 }}>{tagline}</div>
