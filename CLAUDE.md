@@ -121,7 +121,7 @@ scripts/                   validate-data, build-data, import-questions, convert-
 - 메뉴 이름 "수험 정보"(영어 "Exam Info"). 자격증 준비 정보 글을 싣는다. 글 = `data/guides/{lang}/{slug}.json` 파일 하나 (목록·sitemap·화면·자격증 페이지 링크 자동).
 - 매일 한국시간 23:00 클라우드 루틴이 1편씩 쓴다 (한국어 주 3편, 영어 주 4편). **자격증 추가 루틴과 완전히 별개이고 새벽 루틴이 항상 우선**이며, 방해하지 않는 규칙(사용량 30% 미만이면 건너뜀, 03:30 이후 push 금지, 글 파일·기록 외 수정 금지)은 [docs/daily-guide.md](docs/daily-guide.md) 0장.
 - **구글 품질 보호가 최우선** ([docs/daily-guide.md](docs/daily-guide.md) 0-1): 같은 언어 글끼리 문장이 많이 겹치면 `npm run validate` 가 막는다. 일정 글은 `validUntil` 필수(지나면 "지난 일정" 안내 + noindex·sitemap 제외).
-  **사람 확인 없이 계속 진행한다** (2026-10-18 결정). 실패가 반복되면 `reports/guide-progress.md` 에 `자동 중지` 를 적고 7일 쉰 뒤 스스로 다시 시작하고, 기존 글의 오류를 찾으면 그날은 그 글을 고친다. 완전히 멈추려면 `docs/daily-guide.md` 상단 표의 상태를 "중지"로 바꾼다.
+  **사람 확인 없이 계속 진행한다** (2026-10-18 결정). 실패가 반복되면 `reports/guide-progress.md` 에 `자동 중지` 를 적고 7일 쉰 뒤 스스로 다시 시작하고, 기존 글의 오류를 찾으면 `오류 발견` 으로 기록만 하고 계속 간다 (고치는 것은 회장이 돌아온 뒤). 완전히 멈추려면 `docs/daily-guide.md` 상단 표의 상태를 "중지"로 바꾼다.
 - 자격증 추가 루틴은 `data/guides/`·`reports/guide-progress.md` 를 고치지 않는다.
 
 ## 명령어

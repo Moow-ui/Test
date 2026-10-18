@@ -18,6 +18,7 @@ Claude 에게는 **"docs/return-checklist.md 대로 점검해 줘"** 라고만 �
 - `npm run build` → `npm run check:deploy-size`: 지금 "추가"인지 "보강"인지, 언제 보강 모드로 바뀌었는지
 - 루틴 3개의 마지막 실행 결과 (실패가 이어지면 원인: 사용량 한도 / 모델 종료 / 기타)
 - `routine/wip-*`, `routine/maint-*` 브랜치에 남은 작업
+- `reports/guide-progress.md`(수험 정보, 2026-10-18 추가): `오류 발견` 행이 있으면 그 글을 공식 출처대로 고친다 (루틴은 기존 글을 고치지 못한다). `자동 중지` 가 잦았는지도 본다
 
 ## 2. 정해야 할 것 (회장)
 
