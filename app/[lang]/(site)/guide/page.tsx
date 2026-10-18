@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   });
 }
 
-/** 수험 정보 목록 (새 글이 위). 글은 data/guides/{lang}/ — 매일 00:52 루틴이 1편씩 추가한다 */
+/** 수험 정보 목록 (새 글이 위). 글은 data/guides/{lang}/ — 매일 23:32 루틴이 1편씩 추가한다 */
 export default async function GuideListPage({ params }: Props) {
   const { lang } = await params;
   if (!isLocale(lang)) notFound();
