@@ -18,10 +18,6 @@
 
 export const CERTS_DIR = "certs";
 export const CERT_QUEUE_FILE = "cert-queue.json";
-/** 합격 가이드: data/guides/{lang}/{slug}.json */
-export const GUIDES_DIR = "guides";
-export const guidesDir = (lang: string) => `${GUIDES_DIR}/${lang}`;
-export const guideFile = (lang: string, slug: string) => `${guidesDir(lang)}/${slug}.json`;
 export const LEGACY_IDS_FILE = "legacy-question-ids.json";
 
 export const countryDir = (country: string) => `${CERTS_DIR}/${country}`;

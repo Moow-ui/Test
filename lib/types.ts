@@ -10,7 +10,6 @@ import type {
   conceptsFileSchema,
   examInfoSchema,
   faqSchema,
-  guideSchema,
   questionSchema,
   studyTipsSchema,
   subjectSchema,
@@ -85,6 +84,3 @@ export interface PoolItem extends QuestionKey {
 
 /** 풀이 화면 난이도 카드 (초급/중급/고급) */
 export type QuizLevel = Level;
-
-export type Guide = z.infer<typeof guideSchema>;
-export type GuideCategory = Guide["category"];

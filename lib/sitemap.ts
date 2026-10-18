@@ -1,5 +1,5 @@
 import { INFO_PAGE_IDS, INFO_UPDATED } from "@/content/pages";
-import { getConcepts, getGuides, getReadyCertifications } from "./data";
+import { getConcepts, getReadyCertifications } from "./data";
 import { LOCALES, localeCountry, localePath, type Locale } from "./i18n";
 import { languageAlternates } from "./seo";
 import { absoluteUrl } from "./site";
@@ -59,21 +59,6 @@ export async function sitemapEntries(locale: Locale): Promise<SitemapEntry[]> {
           priority: 0.6,
         });
       }
-    }
-  }
-
-  // 합격 가이드 (글이 있는 언어만)
-  const guides = await getGuides(locale);
-  if (guides.length > 0) {
-    const listPath = localePath(locale, "/guide");
-    entries.push({ path: listPath, lastModified: guides[0].publishedAt, changeFrequency: "weekly", priority: 0.7 });
-    for (const g of guides) {
-      entries.push({
-        path: `${listPath}/${g.slug}`,
-        lastModified: g.updatedAt ?? g.publishedAt,
-        changeFrequency: "monthly",
-        priority: 0.6,
-      });
     }
   }
 

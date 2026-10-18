@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { LOCALES, brandName, fmt, getMessages, localePath, otherLocale, writtenVars, type Locale } from "./i18n";
 import { absoluteUrl } from "./site";
-import type { Certification, Chapter, Faq, Guide, Subject } from "./types";
+import type { Certification, Chapter, Faq, Subject } from "./types";
 
 /**
  * 검색 노출용 문구 규칙.
@@ -339,35 +339,4 @@ export function noindexMetadata(
  */
 export function certOgImagePath(locale: Locale, certId: string): string {
   return localePath(locale, `/cert/${certId}/opengraph-image`);
-}
-
-/** 합격 가이드 목록 */
-export function guideListMeta(locale: Locale): PageMeta {
-  const m = getMessages(locale);
-  const vars = { brand: brandName(locale) };
-  return {
-    title: fmt(m.seo.guideList.title, vars),
-    description: fmt(m.seo.guideList.description, vars),
-    h1: m.guide.listTitle,
-    path: localePath(locale, "/guide"),
-  };
-}
-
-/** 합격 가이드 글 하나 */
-export function guideMeta(locale: Locale, guide: Guide): PageMeta {
-  const m = getMessages(locale);
-  return {
-    title: fmt(m.seo.guide.title, { title: guide.title, brand: brandName(locale) }),
-    description: guide.description,
-    h1: guide.title,
-    path: localePath(locale, `/guide/${guide.slug}`),
-  };
-}
-
-/** 합격 가이드 Article 구조화 데이터 (작성일·수정일을 따로 적는다) */
-export function guideJsonLd(locale: Locale, meta: PageMeta, guide: Guide) {
-  return {
-    ...articleJsonLd(locale, meta, guide.updatedAt ?? guide.publishedAt),
-    datePublished: guide.publishedAt,
-  };
 }

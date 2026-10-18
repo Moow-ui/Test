@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { isWithinPastWindow } from "../past";
-import { COUNTRIES, certMetaSchema, certQueueSchema, certSummarySchema, chaptersFileSchema, conceptsFileSchema, guideSchema, questionSchema } from "../schemas";
+import { COUNTRIES, certMetaSchema, certQueueSchema, certSummarySchema, chaptersFileSchema, conceptsFileSchema, questionSchema } from "../schemas";
 import type {
   CertListItem,
   CertMeta,
@@ -8,14 +8,13 @@ import type {
   Certification,
   ConceptChapter,
   Country,
-  Guide,
   PoolItem,
   Question,
   Subject,
 } from "../types";
 import { fsStore } from "./fs-store";
 import { svgDataUri } from "../svg";
-import { CERT_QUEUE_FILE, assetsDir, chaptersFile, conceptsFile, countryDir, guideFile, guidesDir, metaFile, questionsDir } from "./paths";
+import { CERT_QUEUE_FILE, assetsDir, chaptersFile, conceptsFile, countryDir, metaFile, questionsDir } from "./paths";
 import type { DataStore } from "./store";
 
 /**
@@ -296,30 +295,4 @@ export function getConcepts(certId: string): Promise<CertConcepts | null> {
     const verifiedAt = chapters.map((c) => c.verifiedAt).sort().at(-1)!;
     return { by: file.by, chapters, verifiedAt };
   });
-}
-
-/**
- * 합격 가이드 (data/guides/{lang}/{slug}.json). 새 글이 위로 (publishedAt 내림차순, 같은 날이면 slug 순).
- * 빌드한 날(한국시간)보다 미래 날짜의 글은 아직 보여 주지 않는다.
- */
-export function getGuides(lang: string): Promise<Guide[]> {
-  return cached(`guides:${lang}`, async () => {
-    const today = new Date(Date.now() + 9 * 3600_000).toISOString().slice(0, 10);
-    const result: Guide[] = [];
-    for (const name of await store.list(guidesDir(lang))) {
-      if (!name.endsWith(".json")) continue;
-      const guide = guideSchema.parse(await store.readJson(guideFile(lang, name.slice(0, -5))));
-      if (guide.publishedAt <= today) result.push(guide);
-    }
-    return result.sort((a, b) => b.publishedAt.localeCompare(a.publishedAt) || a.slug.localeCompare(b.slug));
-  });
-}
-
-export async function getGuide(lang: string, slug: string): Promise<Guide | null> {
-  return (await getGuides(lang)).find((g) => g.slug === slug) ?? null;
-}
-
-/** 이 자격증을 다룬 가이드 (자격증 페이지의 "관련 합격 가이드") */
-export async function getGuidesForCert(lang: string, certId: string, limit = 3): Promise<Guide[]> {
-  return (await getGuides(lang)).filter((g) => g.certIds.includes(certId)).slice(0, limit);
 }

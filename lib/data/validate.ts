@@ -8,7 +8,6 @@ import {
   chaptersFileSchema,
   conceptsFileSchema,
   examSetSchema,
-  guideSchema,
   questionSchema,
 } from "../schemas";
 import { mockExamShortage } from "../quiz-engine";
@@ -26,8 +25,6 @@ import {
   conceptsFile,
   countryDir,
   examsDir,
-  guideFile,
-  guidesDir,
   isQuestionIdFor,
   metaFile,
   questionFileStem,
@@ -254,29 +251,6 @@ export async function validateData(store: DataStore): Promise<ValidationResult> 
   // slug 는 나라가 달라도 겹치면 안 된다 (문제 id·배포 파일 주소가 slug 로 시작한다)
   errors.push(...checkCertList(metas));
 
-  // 합격 가이드 (data/guides/{lang}/{slug}.json)
-  const guideCounts: string[] = [];
-  for (const [lang, country] of Object.entries(GUIDE_LANG_COUNTRY)) {
-    const titles = new Set<string>();
-    let n = 0;
-    for (const name of await store.list(guidesDir(lang))) {
-      const where = `guides/${lang}/${name}`;
-      if (!name.endsWith(".json")) {
-        errors.push(`${where}: 가이드 폴더에는 .json 파일만 둔다`);
-        continue;
-      }
-      const parsed = guideSchema.safeParse(await store.readJson(guideFile(lang, name.slice(0, -5))));
-      if (!parsed.success) {
-        errors.push(...issues(parsed.error).map((e) => `${where}: ${e}`));
-        continue;
-      }
-      n++;
-      errors.push(...checkGuide(parsed.data, name, lang, country, metas, titles).map((e) => `${where}: ${e}`));
-    }
-    guideCounts.push(`${lang} ${n}편`);
-  }
-  lines.push(`\n[합격 가이드] ${guideCounts.join(" · ")}`);
-
   if (queue.length > 0) {
     lines.push(
       `\n[대기 목록] ${COUNTRIES.map((c) => `${c} ${queue.filter((item) => item.country === c).length}개`).join(" · ")}`,
@@ -284,39 +258,4 @@ export async function validateData(store: DataStore): Promise<ValidationResult> 
   }
 
   return { errors, lines, certCount: metas.length, questionCount };
-}
-
-/** 가이드 언어 → 그 언어가 다루는 나라 (관련 자격증은 같은 나라만) */
-const GUIDE_LANG_COUNTRY = { ko: "KR", en: "US" } as const;
-
-/** 본문 최소 글자 수 (띄어쓰기 제외). 얕은 글이 올라가지 않게 막는다 */
-export const GUIDE_MIN_CHARS: Record<string, number> = { ko: 1200, en: 2400 };
-
-function checkGuide(
-  guide: z.infer<typeof guideSchema>,
-  fileName: string,
-  lang: string,
-  country: string,
-  metas: CertMeta[],
-  titles: Set<string>,
-): string[] {
-  const errors: string[] = [];
-  if (fileName !== `${guide.slug}.json`) errors.push(`파일 이름이 slug 와 다르다 (${guide.slug}.json 이어야 한다)`);
-  if (titles.has(guide.title)) errors.push(`제목이 다른 가이드와 같다: ${guide.title}`);
-  titles.add(guide.title);
-  if (guide.updatedAt && guide.updatedAt < guide.publishedAt) errors.push("updatedAt 이 publishedAt 보다 앞선다");
-  if (guide.basisDate > (guide.updatedAt ?? guide.publishedAt)) errors.push("basisDate(정보 기준일)가 글 날짜보다 늦다");
-  for (const id of guide.certIds) {
-    const meta = metas.find((m) => m.id === id);
-    if (!meta) errors.push(`certIds: 없는 자격증 ${id}`);
-    else if (meta.country !== country) errors.push(`certIds: ${id} 는 ${meta.country} 자격증이다 (${lang} 가이드는 ${country} 만)`);
-  }
-  const headings = guide.sections.map((sec) => sec.heading);
-  if (new Set(headings).size !== headings.length) errors.push("소제목이 겹친다");
-  for (const src of guide.sources) if (!src.url.startsWith("https://")) errors.push(`sources: https 주소만 쓴다 (${src.url})`);
-  const text = [guide.intro, ...guide.sections.map((sec) => sec.body)].join("").replace(/\s/g, "");
-  const min = GUIDE_MIN_CHARS[lang] ?? 1200;
-  if (text.length < min) errors.push(`본문이 너무 짧다 (${text.length}자 / 최소 ${min}자, 띄어쓰기 제외)`);
-  if (/<[a-z][^>]*>/i.test(JSON.stringify(guide))) errors.push("HTML 태그를 쓰지 않는다 (Markdown 표시기 문법만)");
-  return errors;
 }
