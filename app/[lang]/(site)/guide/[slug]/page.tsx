@@ -3,9 +3,12 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { JsonLd } from "@/components/JsonLd";
+import { LogoMark } from "@/components/LogoMark";
 import { Markdown } from "@/components/Markdown";
+import { CategoryIcon } from "@/components/guide/CategoryIcon";
 import { getCertificationIn, getGuide, getGuides } from "@/lib/data";
-import { LOCALES, fmt, getMessages, isLocale, localeCountry, localePath } from "@/lib/i18n";
+import { guideTexts, readingMinutes } from "@/lib/format";
+import { LOCALES, brandName, fmt, getMessages, isLocale, localeCountry, localePath } from "@/lib/i18n";
 import { faqJsonLd, guideJsonLd, guideListMeta, guideMeta, toMetadata } from "@/lib/seo";
 
 type Props = { params: Promise<{ lang: string; slug: string }> };
@@ -34,8 +37,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 /**
- * 합격 가이드 글: 제목·날짜·정보 기준일 → 첫 문단 → 소제목별 본문 → 자주 묻는 질문
- * → 관련 자격증 문제 풀기 → 확인한 출처 → 작성 주체 표시 → 다른 가이드.
+ * 수험 정보 글 (블로그 글 모양):
+ * 분류 → 제목 → 글쓴이 줄(사이트·AI 작성·날짜·읽는 시간) → 정보 기준일 → 목차 → 본문 → 문제 풀기 → 자주 묻는 질문
+ * → 확인한 출처 → 이전 글·다음 글 → 같은 분류의 다른 글 → 목록으로.
  */
 export default async function GuidePage({ params }: Props) {
   const { lang: rawLang, slug } = await params;
@@ -46,11 +50,21 @@ export default async function GuidePage({ params }: Props) {
   const t = m.guide;
   const meta = guideMeta(lang, guide);
   const list = guideListMeta(lang);
+  const minutes = readingMinutes(guideTexts(guide), lang);
 
   const certs = (
     await Promise.all(guide.certIds.map((id) => getCertificationIn(localeCountry(lang), id)))
   ).filter((c) => c !== null);
-  const others = (await getGuides(lang)).filter((g) => g.slug !== guide.slug).slice(0, 5);
+
+  // 목록은 새 글이 위: 바로 아래가 이전 글, 바로 위가 다음 글
+  const all = await getGuides(lang);
+  const at = all.findIndex((g) => g.slug === guide.slug);
+  const older = all[at + 1];
+  const newer = at > 0 ? all[at - 1] : undefined;
+  const others = all.filter((g) => g.slug !== guide.slug);
+  const sameCategory = others.filter((g) => g.category === guide.category).slice(0, 5);
+  const moreList = sameCategory.length > 0 ? sameCategory : others.slice(0, 5);
+  const moreTitle = sameCategory.length > 0 ? fmt(t.sameCategory, { category: t.categories[guide.category] }) : t.moreTitle;
 
   return (
     <article className="mx-auto max-w-3xl space-y-8">
@@ -65,57 +79,77 @@ export default async function GuidePage({ params }: Props) {
         ]}
       />
 
-      <header className="space-y-3 border-b border-line-soft pb-6">
-        <p className="text-sm font-bold text-accent">{t.categories[guide.category]}</p>
-        <h1 className="text-balance text-xl font-bold leading-tight sm:text-2xl">{meta.h1}</h1>
-        <p className="text-sm tabular-nums text-ink-sub">
-          {fmt(t.published, { date: guide.publishedAt })}
-          {guide.updatedAt && guide.updatedAt !== guide.publishedAt && <> · {fmt(t.updated, { date: guide.updatedAt })}</>}
-          {" · "}
-          {fmt(t.basis, { date: guide.basisDate })}
+      {/* 글 머리: 분류 · 제목 · 글쓴이 줄 · 정보 기준일 */}
+      <header className="space-y-4 border-b border-line pb-6">
+        <Link href={`${list.path}#c=${guide.category}`} className="link-quiet inline-flex min-h-10 items-center gap-2 text-accent">
+          <CategoryIcon category={guide.category} size={20} />
+          {t.categories[guide.category]}
+        </Link>
+        <h1 className="text-balance text-2xl font-bold leading-snug sm:text-3xl">{meta.h1}</h1>
+        <div className="flex items-center gap-3">
+          <LogoMark size={44} />
+          <div className="min-w-0 flex-1">
+            <p className="flex flex-wrap items-center gap-2 font-bold">
+              {brandName(lang)}
+              <span className="rounded-md border border-line px-2 py-0.5 text-sm font-bold text-ink-sub">{t.aiBadge}</span>
+            </p>
+            <p className="text-sm tabular-nums text-ink-sub">
+              {fmt(t.published, { date: guide.publishedAt })}
+              {guide.updatedAt && guide.updatedAt !== guide.publishedAt && <> · {fmt(t.updated, { date: guide.updatedAt })}</>}
+              {" · "}
+              {fmt(t.readTime, { n: minutes })}
+            </p>
+          </div>
+        </div>
+        <p className="rounded-lg bg-surface-2 px-4 py-3 text-sm">
+          <strong className="tabular-nums">{fmt(t.basis, { date: guide.basisDate })}</strong> · {t.basisNote}
         </p>
       </header>
 
-      <div className="text-lg">
+      <div className="text-lg leading-8">
         <Markdown text={guide.intro} />
       </div>
 
+      {/* 목차 */}
+      <nav aria-labelledby="toc-title" className="card space-y-2 p-5">
+        <h2 id="toc-title" className="font-bold">
+          {t.toc}
+        </h2>
+        <ol className="list-decimal space-y-1 pl-6">
+          {guide.sections.map((section, i) => (
+            <li key={section.heading}>
+              <a href={`#s${i}`} className="link-quiet underline-offset-2 hover:underline">
+                {section.heading}
+              </a>
+            </li>
+          ))}
+        </ol>
+      </nav>
+
       {guide.sections.map((section, i) => (
-        <section key={section.heading} aria-labelledby={`s${i}`} className="space-y-3">
-          <h2 id={`s${i}`} className="text-lg font-bold sm:text-xl">
+        <section key={section.heading} aria-labelledby={`s${i}`} className="space-y-4">
+          <h2 id={`s${i}`} className="scroll-mt-24 border-l-4 border-primary pl-3 text-xl font-bold leading-snug">
             {section.heading}
           </h2>
-          <Markdown text={section.body} />
+          <div className="text-lg leading-8">
+            <Markdown text={section.body} />
+          </div>
         </section>
       ))}
 
-      {guide.faq && guide.faq.length > 0 && (
-        <section aria-labelledby="faq-title" className="space-y-3">
-          <h2 id="faq-title" className="text-lg font-bold sm:text-xl">
-            {t.faqTitle}
-          </h2>
-          <dl className="space-y-4">
-            {guide.faq.map((f) => (
-              <div key={f.question} className="card space-y-2 p-4">
-                <dt className="font-bold">{f.question}</dt>
-                <dd>{f.answer}</dd>
-              </div>
-            ))}
-          </dl>
-        </section>
-      )}
-
+      {/* 읽은 뒤 바로 문제 풀기 */}
       {certs.length > 0 && (
-        <section aria-labelledby="related-title" className="space-y-3">
-          <h2 id="related-title" className="text-lg font-bold sm:text-xl">
+        <section aria-labelledby="related-title" className="space-y-3 rounded-2xl bg-primary-soft p-5">
+          <h2 id="related-title" className="text-lg font-bold">
             {t.relatedTitle}
           </h2>
+          <p>{t.ctaBody}</p>
           <div className="grid gap-2 sm:grid-cols-2">
             {certs.map((c, i) => (
               <Link
                 key={c.id}
                 href={localePath(lang, `/cert/${c.id}`)}
-                className={i === 0 ? "btn btn-primary btn-lg" : "btn btn-lg"}
+                className={i === 0 ? "btn btn-primary btn-lg" : "btn btn-lg bg-surface"}
               >
                 {fmt(t.solve, { name: c.name })}
               </Link>
@@ -124,7 +158,23 @@ export default async function GuidePage({ params }: Props) {
         </section>
       )}
 
-      <section aria-labelledby="sources-title" className="space-y-2 text-sm">
+      {guide.faq && guide.faq.length > 0 && (
+        <section aria-labelledby="faq-title" className="space-y-3">
+          <h2 id="faq-title" className="border-l-4 border-primary pl-3 text-xl font-bold">
+            {t.faqTitle}
+          </h2>
+          <dl className="space-y-4">
+            {guide.faq.map((f) => (
+              <div key={f.question} className="card space-y-2 p-4">
+                <dt className="font-bold">Q. {f.question}</dt>
+                <dd>{f.answer}</dd>
+              </div>
+            ))}
+          </dl>
+        </section>
+      )}
+
+      <section aria-labelledby="sources-title" className="space-y-2 border-t border-line pt-6 text-sm">
         <h2 id="sources-title" className="text-base font-bold">
           {t.sourcesTitle}
         </h2>
@@ -141,27 +191,48 @@ export default async function GuidePage({ params }: Props) {
         <p className="text-ink-sub">{t.byline}</p>
       </section>
 
-      {others.length > 0 && (
-        <nav aria-labelledby="more-title" className="space-y-3 border-t border-line-soft pt-6">
+      {/* 이전 글 · 다음 글 */}
+      {(older || newer) && (
+        <nav aria-label={t.prevNextLabel} className="divide-y divide-line-soft border-y border-line">
+          {newer && (
+            <Link href={`${list.path}/${newer.slug}`} className="group flex gap-3 py-4">
+              <span className="w-16 shrink-0 text-sm font-bold text-ink-sub">{t.next}</span>
+              <span className="min-w-0 flex-1 font-bold group-hover:underline">{newer.title}</span>
+            </Link>
+          )}
+          {older && (
+            <Link href={`${list.path}/${older.slug}`} className="group flex gap-3 py-4">
+              <span className="w-16 shrink-0 text-sm font-bold text-ink-sub">{t.prev}</span>
+              <span className="min-w-0 flex-1 font-bold group-hover:underline">{older.title}</span>
+            </Link>
+          )}
+        </nav>
+      )}
+
+      {/* 같은 분류의 다른 글 (없으면 최근 글) */}
+      {moreList.length > 0 && (
+        <nav aria-labelledby="more-title" className="space-y-3">
           <h2 id="more-title" className="text-lg font-bold">
-            {t.moreTitle}
+            {moreTitle}
           </h2>
-          <ul className="space-y-2">
-            {others.map((g) => (
+          <ul className="divide-y divide-line-soft">
+            {moreList.map((g) => (
               <li key={g.slug}>
-                <Link href={`${list.path}/${g.slug}`} className="link">
-                  {g.title}
+                <Link href={`${list.path}/${g.slug}`} className="group flex items-baseline gap-3 py-3">
+                  <span className="min-w-0 flex-1 group-hover:underline">{g.title}</span>
+                  <span className="shrink-0 text-sm tabular-nums text-ink-sub">{g.publishedAt}</span>
                 </Link>
               </li>
             ))}
           </ul>
-          <p>
-            <Link href={list.path} className="btn w-full">
-              {t.toList}
-            </Link>
-          </p>
         </nav>
       )}
+
+      <p>
+        <Link href={list.path} className="btn w-full">
+          {t.toList}
+        </Link>
+      </p>
     </article>
   );
 }

@@ -59,3 +59,22 @@ export function roundedCount(n: number, locale: "ko" | "en", step?: number): str
   const text = value.toLocaleString(locale === "ko" ? "ko-KR" : "en-US");
   return unit === 1 ? text : `${text}+`;
 }
+
+/**
+ * 글 읽는 시간(분, 올림). 한국어는 띄어쓰기 뺀 500자, 영어는 220단어를 1분으로 친다.
+ * 수험 정보 목록·글 머리의 "약 N분"에 쓴다.
+ */
+export function readingMinutes(texts: string[], locale: string): number {
+  const all = texts.join("\n");
+  const units = locale === "ko" ? all.replace(/\s/g, "").length / 500 : all.split(/\s+/).filter(Boolean).length / 220;
+  return Math.max(1, Math.ceil(units));
+}
+
+/** 수험 정보 글 하나의 본문(첫 문단·소제목별 본문·자주 묻는 질문) */
+export function guideTexts(guide: {
+  intro: string;
+  sections: Array<{ body: string }>;
+  faq?: Array<{ question: string; answer: string }>;
+}): string[] {
+  return [guide.intro, ...guide.sections.map((s) => s.body), ...(guide.faq ?? []).flatMap((f) => [f.question, f.answer])];
+}

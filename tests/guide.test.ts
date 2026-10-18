@@ -1,5 +1,6 @@
 /** 합격 가이드: 스키마·최소 분량 검사 */
 import { describe, expect, it } from "vitest";
+import { readingMinutes } from "@/lib/format";
 import { guideSchema } from "@/lib/schemas";
 
 const body = "가".repeat(300);
@@ -34,5 +35,15 @@ describe("합격 가이드 스키마", () => {
   it("slug 는 영문 소문자·숫자·하이픈만", () => {
     expect(guideSchema.safeParse({ ...base, slug: "지게차" }).success).toBe(false);
     expect(guideSchema.safeParse({ ...base, slug: "Bad_Slug" }).success).toBe(false);
+  });
+});
+
+describe("수험 정보 읽는 시간", () => {
+  it("한국어는 띄어쓰기 뺀 500자당 1분(올림), 최소 1분", () => {
+    expect(readingMinutes(["가".repeat(1001)], "ko")).toBe(3);
+    expect(readingMinutes(["짧은 글"], "ko")).toBe(1);
+  });
+  it("영어는 220단어당 1분", () => {
+    expect(readingMinutes([Array(440).fill("word").join(" ")], "en")).toBe(2);
   });
 });
