@@ -23,6 +23,14 @@
 | 2026-10-18 | ⑩ 홈 목록 문제 수 어림값(90+, 150+) · 총 문제 수(3,700+) | 〃 | `ui: rounded question counts on home list` |
 | 2026-10-18 | ⑪ 홈 목록 분야마다 상자로 경계 뚜렷하게 | 〃 | `ui: boxed field groups on home list` |
 
+| 2026-10-18 | ⑫ 풀이 결과 화면에도 메뉴 버튼 | `backup/before-result-page-2026-10-18` | `ui: side menu on result page` |
+| 2026-10-18 | ⑬ 결과 점수 원형 게이지 · 맞음/틀림/안 푼 문제 · 짧은 연습은 합격 판정 숨김 | 〃 | `ui: score ring and skipped count on result page` |
+| 2026-10-18 | ⑭ "틀린 핵심 개념"+"약한 단원" → "다시 볼 것" · 과목별 작은 원형 게이지(과목 2개 이상) | 〃 | `ui: merge review sections on result page` |
+| 2026-10-18 | ⑮ 결과 화면 순서·버튼 정리 · 문제별 결과 모양 통일 (+ 다듬기 2개) | 〃 | `ui: result page order and actions`, `ui: result rows keep question width on phones`, `ui: steady chapter link in result review box` |
+
+⑫는 따로 되돌릴 수 있다. ⑬~⑮는 같은 파일(결과 화면)을 고쳐서 하나만 되돌리면 충돌할 수 있으니, 되돌릴 때는 ⑮(다듬기 2개 포함) → ⑭ → ⑬ 순서로 뒤에서부터 한다.
+결과 화면 전체를 이전으로 돌리려면 ⑮·⑭·⑬을 그 순서로 모두 되돌린다.
+
 ①②③은 서로 따로 되돌릴 수 있다. ⑨~⑪도 하나씩 따로 되돌릴 수 있다. ④~⑧도 하나씩 따로 되돌릴 수 있다. 셋 다 되돌릴 때는 ③ → ② → ① 순서로 한다 (②와 ③은 같은 파일을 고쳐서, 거꾸로 하면 충돌할 수 있다).
 
 ## 방법 1 (추천) — 그 변경만 취소
