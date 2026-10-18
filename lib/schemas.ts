@@ -593,3 +593,43 @@ export const questionSchema = z
       ctx.addIssue({ code: "custom", path: ["choicesByLevel"], message });
     }
   });
+
+// ───────── 합격 가이드 (data/guides/{lang}/{slug}.json) ─────────
+
+/** 가이드 분류. 요일별로 돌아가며 쓴다 (docs/daily-guide.md) */
+export const GUIDE_CATEGORIES = ["schedule", "pass-guide", "change", "exam-tips", "career", "concept"] as const;
+
+/**
+ * 합격 가이드 글 하나. 매일 새벽 루틴이 1편씩 쓴다.
+ * 일정·응시료·합격률 같은 수치는 sources 에서 확인한 것만 쓰고, basisDate(정보 기준일)를 화면에 보여 준다.
+ */
+export const guideSchema = z.object({
+  /** 주소 /{lang}/guide/{slug}. 파일 이름과 같아야 하고 바꾸지 않는다 */
+  slug: z.string().regex(/^[a-z0-9]+(-[a-z0-9]+)*$/).max(80),
+  /** 검색 결과 제목 (사이트 이름은 자동으로 붙는다) */
+  title: z.string().min(8).max(60),
+  /** 검색 결과 설명 */
+  description: z.string().min(20).max(160),
+  category: z.enum(GUIDE_CATEGORIES),
+  publishedAt: dateSchema,
+  /** 내용을 고친 날 (없으면 publishedAt) */
+  updatedAt: dateSchema.optional(),
+  /** 글 속 정보의 기준일 (출처를 확인한 날) */
+  basisDate: dateSchema,
+  /** 관련 자격증 slug (같은 나라 자격증만). 글 아래에 문제풀이 바로가기가 붙는다 */
+  certIds: z.array(z.string().min(1)).max(6).default([]),
+  /** 첫 문단 */
+  intro: z.string().min(40),
+  /** 본문 (body 는 Markdown 표시기 문법: 문단, **굵게**, "- " 목록, "1. " 번호 목록) */
+  sections: z
+    .array(z.object({ heading: z.string().min(2).max(60), body: z.string().min(60) }))
+    .min(3)
+    .max(10),
+  faq: z.array(faqSchema).max(5).optional(),
+  /** 확인한 출처 (공식 출처 우선) */
+  sources: z
+    .array(z.object({ title: z.string().min(2), url: z.string().url(), checkedAt: dateSchema }))
+    .min(1),
+  /** 쓴 주체. 지금은 AI 작성만 있다 (화면에 "AI 작성 · 운영진 관리"로 표시) */
+  by: z.enum(["ai", "staff"]).default("ai"),
+});
