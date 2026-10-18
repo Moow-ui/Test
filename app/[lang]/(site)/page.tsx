@@ -1,7 +1,6 @@
 import { notFound } from "next/navigation";
 import { AdSlot } from "@/components/AdSlot";
 import { JsonLd } from "@/components/JsonLd";
-import { LogoMark } from "@/components/LogoMark";
 import { CertGrid } from "@/components/home/CertGrid";
 import { CertSearch } from "@/components/home/CertSearch";
 import { DailyQuestion } from "@/components/home/DailyQuestion";
@@ -39,8 +38,8 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
       />
 
       {/* 순서: 제목 → 검색창(바로 아래 오늘의 1문제) → 최근 공부한 자격증(첫 방문이면 많이 찾는 자격증) → 맨 아래 전체 목록 */}
-      <div className="flex flex-col items-center gap-4 pt-4 text-center sm:pt-8">
-        <LogoMark size={56} />
+      {/* 로고는 상단 막대에 이미 있어 여기에는 두지 않는다 */}
+      <div className="flex flex-col items-center gap-4 pt-6 text-center sm:pt-12">
         <h1 className="text-xl font-bold leading-snug tracking-tight sm:text-2xl">
           {m.home.h1a}
           <br />
