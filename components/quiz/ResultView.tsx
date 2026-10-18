@@ -139,8 +139,9 @@ export function ResultView({
             marker={verdict ? criteria.averageScore : undefined}
             label={fmt(m.ringAria, { n: formatScore(summary.score), total: summary.total, correct: summary.correct })}
           >
-            <span className="text-2xl font-bold">{fmt(m.score, { n: formatScore(summary.score) })}</span>
-            <span className="text-sm text-ink-sub">
+            {/* PC(640px 이상)는 글자 크기 설정을 키우면 고리와 겹쳐서 px 로 고정한다. 휴대폰은 그대로 (사용자 결정 2026-10-18) */}
+            <span className="text-2xl font-bold sm:text-[30px]">{fmt(m.score, { n: formatScore(summary.score) })}</span>
+            <span className="text-sm text-ink-sub sm:text-[13px]">
               {fmt(m.correctShort, { total: summary.total, correct: summary.correct })}
             </span>
           </ScoreRing>
@@ -275,7 +276,7 @@ export function ResultView({
                     tone={failed ? "bad" : "primary"}
                     label={fmt(m.subjectAria, { name: s.name, score: formatScore(s.score) })}
                   >
-                    <span className="text-lg font-bold">{formatScore(s.score)}%</span>
+                    <span className="text-lg font-bold sm:text-[20px]">{formatScore(s.score)}%</span>
                   </ScoreRing>
                   <span className="text-sm font-bold leading-snug">{s.name}</span>
                   <span className="text-sm text-ink-sub">
