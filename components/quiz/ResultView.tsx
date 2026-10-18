@@ -302,17 +302,12 @@ export function ResultView({
             <ul className="mt-4 divide-y divide-line-soft">
               {reviewGroups.map((g) => (
                 <li key={g.id} className="py-3 first:pt-0 last:pb-0">
-                  <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
-                    <span className="font-bold">
-                      {g.name}
-                      <span className="ml-2 text-sm font-normal text-ink-sub">
-                        {fmt(m.chapterWrong, { n: g.concepts.length })}
-                      </span>
+                  <p className="font-bold">
+                    {g.name}
+                    <span className="ml-2 text-sm font-normal text-ink-sub">
+                      {fmt(m.chapterWrong, { n: g.concepts.length })}
                     </span>
-                    <Link href={`${certPath}/${g.id}`} className="link text-sm">
-                      {m.viewSummary}
-                    </Link>
-                  </div>
+                  </p>
                   <ul className="mt-2 space-y-1">
                     {g.concepts.map((c, i) => (
                       <li key={i} className="flex gap-2">
@@ -323,6 +318,10 @@ export function ResultView({
                       </li>
                     ))}
                   </ul>
+                  {/* 링크는 늘 개념 목록 아래 한 줄 (단원 이름 길이에 따라 자리가 바뀌지 않게) */}
+                  <Link href={`${certPath}/${g.id}`} className="link mt-2 inline-flex min-h-9 items-center text-sm">
+                    {m.viewSummary}
+                  </Link>
                 </li>
               ))}
             </ul>
