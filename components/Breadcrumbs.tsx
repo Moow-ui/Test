@@ -19,7 +19,7 @@ export function Breadcrumbs({ crumbs, label }: { crumbs: Crumb[]; label: string 
                   </span>
                 ) : (
                   <>
-                    <Link href={c.path} className="link">
+                    <Link href={c.path} className="link-quiet">
                       {c.name}
                     </Link>
                     <span aria-hidden="true">›</span>

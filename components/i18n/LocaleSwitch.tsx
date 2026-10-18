@@ -10,7 +10,7 @@ export function LocaleSwitch() {
   return (
     <>
       {LOCALES.filter((l) => l !== current).map((l) => (
-        <a key={l} href={localePath(l)} hrefLang={l} lang={l} className="link" onClick={() => rememberLocale(l)}>
+        <a key={l} href={localePath(l)} hrefLang={l} lang={l} className="link-quiet" onClick={() => rememberLocale(l)}>
           {getMessages(l).nav.languageName} · {brandName(l)}
         </a>
       ))}

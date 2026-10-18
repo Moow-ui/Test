@@ -26,7 +26,7 @@ export async function Header({ locale }: { locale: Locale }) {
         <LogoMark size={28} />
         {brandName(locale)}
       </Link>
-      <Link href={localePath(locale, "/notes")} className="hidden font-bold text-ink underline underline-offset-4 sm:inline">
+      <Link href={localePath(locale, "/notes")} className="link-quiet hidden font-bold text-ink sm:inline">
         {m.nav.notes}
       </Link>
       <HeaderAccount />

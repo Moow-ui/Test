@@ -21,21 +21,21 @@ export async function Footer({ locale }: { locale: Locale }) {
         <p>{m.site.notice}</p>
         <p>{m.site.officialInfo}</p>
         <nav aria-label={m.nav.footerMenu} className="flex flex-wrap gap-x-4 gap-y-2 pt-2">
-          <Link href={localePath(locale)} className="link">
+          <Link href={localePath(locale)} className="link-quiet">
             {m.nav.certList}
           </Link>
-          <Link href={localePath(locale, "/notes")} className="link">
+          <Link href={localePath(locale, "/notes")} className="link-quiet">
             {m.nav.notes}
           </Link>
           {/* 아주 좁은 휴대폰(360px)에서는 상단 막대에 로그인 자리가 없어 여기에도 둔다 */}
-          <Link href={localePath(locale, "/profile")} className="link">
+          <Link href={localePath(locale, "/profile")} className="link-quiet">
             {m.nav.profile}
           </Link>
           <LocaleSwitch />
         </nav>
         <nav aria-label={m.nav.legalMenu} className="flex flex-wrap gap-x-4 gap-y-2">
           {INFO_PAGE_IDS.map((id) => (
-            <Link key={id} href={localePath(locale, `/${id}`)} className="link">
+            <Link key={id} href={localePath(locale, `/${id}`)} className="link-quiet">
               {m.nav[id]}
             </Link>
           ))}
@@ -47,7 +47,7 @@ export async function Footer({ locale }: { locale: Locale }) {
         <p>{fmt(m.site.copyright, { year: new Date().getFullYear(), brand })}</p>
         {/* 자격증 추가 기록. 운영자 확인용이라 아주 작게 둔다 */}
         <p className="text-xs">
-          <Link href={localePath(locale, "/log")} className="link">
+          <Link href={localePath(locale, "/log")} className="link-quiet">
             {m.nav.addedLog}
           </Link>
         </p>
