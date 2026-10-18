@@ -24,7 +24,7 @@ export function StudyTips({ locale, certName, tips }: { locale: Locale; certName
         {items.map((item) => (
           <div key={item.label}>
             <dt className="font-bold">{item.label}</dt>
-            <dd className="mt-2 text-sm">{item.text}</dd>
+            <dd className="mt-2 max-w-[68ch] text-sm">{item.text}</dd>
           </div>
         ))}
       </dl>
