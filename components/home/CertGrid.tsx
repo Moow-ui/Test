@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useId, useState } from "react";
+import { roundedCount } from "@/lib/format";
 import { certKind, fmt, localePath } from "@/lib/i18n";
 import { GRADE_FILTER_ORDER } from "@/lib/schemas";
 import type { CertListItem } from "@/lib/types";
@@ -102,7 +103,16 @@ export function CertGrid({ certs }: { certs: CertListItem[]; conceptIds?: string
       <div className="flex flex-wrap items-center justify-between gap-2">
         <h2 id="all-certs-title" className="text-lg font-bold">
           {m.allCerts}
-          <span className="ml-2 text-sm font-bold text-ink-sub">{fmt(m.certCount, { n: shown.length })}</span>
+          <span className="ml-2 text-sm font-bold text-ink-sub">
+            {fmt(m.certCount, { n: shown.length })} ·{" "}
+            {fmt(m.totalQuestions, {
+              n: roundedCount(
+                shown.reduce((sum, c) => sum + (c.ready ? c.questionCount : 0), 0),
+                locale,
+                100,
+              ),
+            })}
+          </span>
         </h2>
         <button
           type="button"
@@ -181,7 +191,7 @@ export function CertGrid({ certs }: { certs: CertListItem[]; conceptIds?: string
                         </span>
                         <span className="shrink-0 text-sm text-ink-sub tabular-nums">
                           {c.ready
-                            ? fmt(m.questionCount, { n: c.questionCount.toLocaleString(locale === "ko" ? "ko-KR" : "en-US") })
+                            ? fmt(m.questionCount, { n: roundedCount(c.questionCount, locale) })
                             : all.common.comingSoon}
                         </span>
                       </Link>

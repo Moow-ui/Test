@@ -48,3 +48,14 @@ export function formatClock(totalSec: number): string {
 export function formatScore(score: number): string {
   return String(Math.round(score));
 }
+
+/**
+ * 문제 수를 어림해서 "100+" 처럼 보여 준다 (실제 값보다 크게 쓰지 않도록 항상 내림).
+ * 100 이상은 50 단위(150+), 10~99 는 10 단위(90+), 10 미만은 그대로. step 을 주면 그 단위로 (홈 목록 총 문제 수는 100 단위).
+ */
+export function roundedCount(n: number, locale: "ko" | "en", step?: number): string {
+  const unit = step && n >= step ? step : n >= 100 ? 50 : n >= 10 ? 10 : 1;
+  const value = Math.floor(n / unit) * unit;
+  const text = value.toLocaleString(locale === "ko" ? "ko-KR" : "en-US");
+  return unit === 1 ? text : `${text}+`;
+}
