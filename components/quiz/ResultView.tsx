@@ -76,6 +76,21 @@ export function ResultView({
   const verdict = summary.total >= RELIABLE_QUESTION_COUNT ? summary.verdict : null;
   const wrong = graded.filter((g) => !g.correct);
   const skippedCount = wrong.filter((w) => w.chosen === null).length;
+  // "다시 볼 것": 틀린 문제의 핵심 개념을 단원별로 묶는다 (많이 틀린 단원 → 중요한 단원 순)
+  const reviewGroups = (() => {
+    const groups = new Map<string, { id: string; name: string; importance: number; concepts: string[] }>();
+    questions.forEach((q, i) => {
+      if (graded[i].correct) return;
+      const chapter = cert.subjects.find((s) => s.id === q.subjectId)?.chapters.find((c) => c.id === q.chapterId);
+      const key = chapter?.id ?? q.chapterId;
+      const group = groups.get(key) ?? { id: key, name: chapter?.name ?? "", importance: chapter?.importance ?? 0, concepts: [] };
+      group.concepts.push(q.oneLineConcept);
+      groups.set(key, group);
+    });
+    return [...groups.values()].sort((a, b) => b.concepts.length - a.concepts.length || b.importance - a.importance);
+  })();
+  // 과목별 정답률은 과목이 둘 이상일 때만 (하나면 위의 점수와 같다)
+  const showSubjects = summary.bySubject.length > 1;
   // 오답노트에는 채점하는 순간 "답을 골라서 틀린 문제"만 자동으로 담긴다 (lib/storage.ts 의 addWrongNotes)
   const savedCount = wrong.filter((w) => w.chosen !== null).length;
   const criteria = cert.examInfo.passCriteria;
@@ -163,75 +178,74 @@ export function ResultView({
         </div>
       </section>
 
-      <section aria-labelledby="by-subject-title">
-        <h2 id="by-subject-title" className="text-xl font-bold">
-          {m.bySubject}
-        </h2>
-        <ul className="mt-2 space-y-2">
-          {summary.bySubject.map((s) => {
-            const failed = verdict?.failedSubjects.some((f) => f.id === s.id);
-            return (
-              <li key={s.id} className="card p-4">
-                <div className="flex flex-wrap items-baseline justify-between gap-2">
-                  <span className="font-bold">{s.name}</span>
-                  <span className="font-bold">
-                    {fmt(m.subjectScore, { correct: s.correct, total: s.total, score: formatScore(s.score) })}
-                    {failed && <span className="ml-2 text-bad">{m.failedTag}</span>}
-                  </span>
-                </div>
-                <div
-                  role="img"
-                  aria-label={fmt(m.subjectAria, { name: s.name, score: formatScore(s.score) })}
-                  className="mt-2 h-3 overflow-hidden rounded-full bg-surface-2"
-                >
-                  <div className="h-full bg-primary" style={{ width: `${s.score}%` }} />
-                </div>
-              </li>
-            );
-          })}
-        </ul>
-      </section>
-
-      {wrong.length > 0 && (
-        <section aria-labelledby="concepts-title" className="rounded-2xl bg-primary-soft p-6">
-          <h2 id="concepts-title" className="text-xl font-bold">
-            {m.concepts}
+      {/* 과목별: 과목마다 작은 원형 게이지 (과목이 둘 이상일 때만). 과락이면 빨간 고리 + "과락" */}
+      {showSubjects && (
+        <section aria-labelledby="by-subject-title" className="card p-6">
+          <h2 id="by-subject-title" className="text-lg font-bold">
+            {m.bySubject}
           </h2>
-          <p className="mt-2 text-sm">{m.conceptsHint}</p>
-          <ol className="mt-2 list-decimal space-y-2 pl-6">
-            {questions
-              .filter((q, i) => !graded[i].correct)
-              .map((q) => (
-                <li key={q.id} className="font-bold">
-                  {q.oneLineConcept}
+          <ul className="mt-4 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
+            {summary.bySubject.map((s) => {
+              const failed = verdict?.failedSubjects.some((f) => f.id === s.id);
+              return (
+                <li key={s.id} className="flex flex-col items-center gap-2 text-center">
+                  <ScoreRing
+                    score={s.score}
+                    size={96}
+                    stroke={10}
+                    tone={failed ? "bad" : "primary"}
+                    label={fmt(m.subjectAria, { name: s.name, score: formatScore(s.score) })}
+                  >
+                    <span className="text-lg font-bold">{formatScore(s.score)}%</span>
+                  </ScoreRing>
+                  <span className="text-sm font-bold leading-snug">{s.name}</span>
+                  <span className="text-sm text-ink-sub">
+                    {fmt(m.correctShort, { total: s.total, correct: s.correct })}
+                    {failed && <span className="ml-2 font-bold text-bad">{m.failedTag}</span>}
+                  </span>
                 </li>
-              ))}
-          </ol>
+              );
+            })}
+          </ul>
         </section>
       )}
 
-      <section aria-labelledby="weak-title">
-        <h2 id="weak-title" className="text-xl font-bold">
-          {m.weak}
+      {/* 다시 볼 것: 틀린 핵심 개념(단원별 묶음) + 그 단원 핵심정리 링크. 예전 "틀린 핵심 개념"·"약한 단원" 두 칸을 합친 것 */}
+      <section aria-labelledby="to-review-title" className="card border-l-[6px] border-l-primary p-6">
+        <h2 id="to-review-title" className="text-lg font-bold">
+          {m.toReview}
         </h2>
-        {summary.weakChapters.length === 0 ? (
-          <p className="card mt-2 p-4 font-bold">{m.noWrong}</p>
+        {reviewGroups.length === 0 ? (
+          <p className="mt-2 font-bold">{m.noWrong}</p>
         ) : (
-          <ol className="mt-2 space-y-2">
-            {summary.weakChapters.map((c, i) => (
-              <li key={c.id} className="card flex flex-wrap items-center justify-between gap-2 p-4">
-                <span>
-                  <span className="font-bold">{i + 1}. {c.name}</span>
-                  <span className="ml-2 text-sm font-bold text-ink-sub">
-                    {fmt(m.chapterScore, { total: c.total, correct: c.correct, score: formatScore(c.score) })}
-                  </span>
-                </span>
-                <Link href={`${certPath}/${c.id}`} className="link">
-                  {m.viewSummary}
-                </Link>
-              </li>
-            ))}
-          </ol>
+          <>
+            <p className="mt-1 text-sm text-ink-sub">{m.toReviewHint}</p>
+            <ul className="mt-4 divide-y divide-line-soft">
+              {reviewGroups.map((g) => (
+                <li key={g.id} className="py-3 first:pt-0 last:pb-0">
+                  <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+                    <span className="font-bold">
+                      {g.name}
+                      <span className="ml-2 text-sm font-normal text-ink-sub">{fmt(m.chapterWrong, { n: g.concepts.length })}</span>
+                    </span>
+                    <Link href={`${certPath}/${g.id}`} className="link text-sm">
+                      {m.viewSummary}
+                    </Link>
+                  </div>
+                  <ul className="mt-2 space-y-1">
+                    {g.concepts.map((c, i) => (
+                      <li key={i} className="flex gap-2">
+                        <span aria-hidden="true" className="text-accent">
+                          •
+                        </span>
+                        <span>{c}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </li>
+              ))}
+            </ul>
+          </>
         )}
       </section>
 
