@@ -42,18 +42,7 @@ export function DailyQuestion() {
       </div>
 
       {!daily || !q ? (
-        // 불러오는 동안: 문제 자리만 회색 막대로 잡아 둔다 (움직이지 않음). 글자는 화면 읽기 프로그램용
-        <div className="mt-4 space-y-2" aria-busy="true">
-          <p className="sr-only">{m.dailyLoading}</p>
-          <div aria-hidden="true" className="space-y-2">
-            <div className="h-7 w-40 rounded-full bg-surface-2" />
-            <div className="h-5 w-full rounded bg-surface-2" />
-            <div className="h-5 w-2/3 rounded bg-surface-2" />
-            <div className="h-12 rounded-lg bg-surface-2" />
-            <div className="h-12 rounded-lg bg-surface-2" />
-            <div className="h-12 rounded-lg bg-surface-2" />
-          </div>
-        </div>
+        <p className="mt-4 text-ink-sub">{m.dailyLoading}</p>
       ) : (
         <>
           <div className="mt-2 flex flex-wrap items-center gap-2 text-sm">
