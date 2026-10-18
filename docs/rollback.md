@@ -28,7 +28,7 @@
 | 2026-10-18 | ⑭ "틀린 핵심 개념"+"약한 단원" → "다시 볼 것" · 과목별 작은 원형 게이지(과목 2개 이상) | 〃 | `ui: merge review sections on result page` |
 | 2026-10-18 | ⑮ 결과 화면 순서·버튼 정리 · 문제별 결과 모양 통일 (+ 다듬기 2개) | 〃 | `ui: result page order and actions`, `ui: result rows keep question width on phones`, `ui: steady chapter link in result review box` |
 
-| 2026-10-18 | ⑯ 개념 정리 요약 노트 위 "지금 보는 단원 · 단원 이동" 막대 | `backup/before-result-page-2026-10-18` 이후 | `ui: chapter navigator on concepts page` |
+| 2026-10-18 | ⑯ 개념 정리 요약 노트 위 "지금 보는 단원 · 단원 이동" 막대 | `backup/before-concepts-nav-2026-10-18` | `ui: chapter navigator on concepts page` |
 
 ⑫는 따로 되돌릴 수 있다. ⑯도 따로 되돌릴 수 있다. ⑬~⑮는 같은 파일(결과 화면)을 고쳐서 하나만 되돌리면 충돌할 수 있으니, 되돌릴 때는 커밋이 생긴 반대 순서로 한다: `ui: ring text fixed size on PC`(⑬의 마지막 커밋, 가장 나중에 생김)를 먼저 → ⑮(다듬기 2개 포함) → ⑭ → ⑬.
 결과 화면 전체를 이전으로 돌리려면 ⑮·⑭·⑬을 그 순서로 모두 되돌린다.
