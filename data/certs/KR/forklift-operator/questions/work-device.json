@@ -140,5 +140,77 @@
         4
       ]
     }
+  },
+  {
+    "id": "forklift-operator-work-device-0002",
+    "certId": "forklift-operator",
+    "subjectId": "structure",
+    "chapterId": "work-device",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "지게차에서 포크 위의 화물이 운전석 쪽(마스트 뒤쪽)으로 떨어지는 것을 막아 주는 장치는?",
+    "choices": [
+      "평형추(카운터웨이트)",
+      "백레스트",
+      "틸트 실린더",
+      "오버헤드 가드"
+    ],
+    "answer": 2,
+    "oneLineConcept": "화물이 운전석 쪽으로 떨어지는 것을 막는 것은 백레스트",
+    "explanation": "**백레스트**는 포크 뒤쪽에 세워진 받침 틀입니다. 화물을 포크에 깊숙이 실어 백레스트에 닿게 하면, 마스트를 뒤로 기울여도 화물이 운전석 쪽으로 넘어오지 않습니다.\n\n**틀린 선지**\n- ① 평형추(카운터웨이트): 지게차 맨 뒤에 단 무거운 쇳덩이로, 화물을 들었을 때 앞으로 넘어지지 않게 균형을 잡습니다.\n- ③ 틸트 실린더: 마스트를 앞뒤로 기울이는 실린더입니다.\n- ④ 오버헤드 가드: 운전석 위를 덮는 지붕 모양의 틀로, 위에서 떨어지는 물건으로부터 운전자의 머리를 지킵니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-18",
+    "tags": [
+      "작업장치",
+      "백레스트"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "forklift-operator-work-device-0003",
+    "certId": "forklift-operator",
+    "subjectId": "structure",
+    "chapterId": "work-device",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "지게차 맨 뒤쪽에 달아, 포크에 화물을 들었을 때 지게차가 앞으로 넘어지지 않도록 균형을 잡아 주는 무거운 쇳덩이는?",
+    "choices": [
+      "리프트 체인",
+      "핑거보드",
+      "평형추(카운터웨이트)",
+      "백레스트"
+    ],
+    "answer": 3,
+    "oneLineConcept": "앞으로 넘어지지 않게 뒤에서 무게를 잡아 주는 것은 평형추",
+    "explanation": "지게차는 앞바퀴를 받침점으로 하여 앞쪽의 화물과 뒤쪽의 무게가 시소처럼 균형을 이룹니다. 그래서 차체 뒤쪽에 **평형추(카운터웨이트)**를 달아 화물을 들어도 앞으로 넘어지지 않게 합니다. 이런 지게차를 '카운터밸런스형'이라고 부릅니다.\n\n**틀린 선지**\n- ① 리프트 체인: 리프트 실린더의 힘을 받아 포크를 끌어 올리는 쇠사슬입니다.\n- ② 핑거보드: 포크를 끼워 다는 판으로, 마스트를 따라 오르내립니다.\n- ④ 백레스트: 화물이 운전석 쪽으로 떨어지는 것을 막는 받침 틀입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-18",
+    "tags": [
+      "작업장치",
+      "평형추"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
   }
 ]

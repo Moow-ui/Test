@@ -163,5 +163,41 @@
         3
       ]
     }
+  },
+  {
+    "id": "forklift-operator-electric-0003",
+    "certId": "forklift-operator",
+    "subjectId": "structure",
+    "chapterId": "electric",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "전기 회로에 정해진 값보다 큰 전류(과전류)가 흐르면 스스로 녹아 끊어져서 배선과 전기 장치를 보호하는 부품은?",
+    "choices": [
+      "릴레이",
+      "퓨즈",
+      "다이오드",
+      "전압 조정기"
+    ],
+    "answer": 2,
+    "oneLineConcept": "과전류가 흐르면 녹아 끊어져 회로를 지키는 것은 퓨즈",
+    "explanation": "**퓨즈**는 회로 중간에 넣는 가는 금속 조각입니다. 합선 등으로 큰 전류가 흐르면 열 때문에 먼저 녹아 끊어져서, 전선이 타거나 장치가 망가지는 것을 막아 줍니다. 퓨즈가 끊어지면 원인을 찾아 고친 뒤 **같은 용량**의 퓨즈로 바꿉니다.\n\n**틀린 선지**\n- ① 릴레이: 작은 전류로 큰 전류를 켜고 끄는 전기 스위치입니다.\n- ③ 다이오드: 전류를 한쪽 방향으로만 흐르게 하는 부품입니다.\n- ④ 전압 조정기: 발전기에서 나오는 전압을 일정하게 맞추는 장치입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-18",
+    "tags": [
+      "전기장치",
+      "퓨즈"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   }
 ]

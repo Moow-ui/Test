@@ -164,5 +164,41 @@
         3
       ]
     }
+  },
+  {
+    "id": "forklift-operator-safety-signs-0001",
+    "certId": "forklift-operator",
+    "subjectId": "safety",
+    "chapterId": "safety-signs",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "산업안전보건 표지 가운데 '비상구', '응급구호' 처럼 위치나 방향을 알려 주는 녹색 바탕의 표지는?",
+    "choices": [
+      "금지 표지",
+      "경고 표지",
+      "안내 표지",
+      "지시 표지"
+    ],
+    "answer": 3,
+    "oneLineConcept": "녹색 바탕으로 비상구·응급구호를 알리는 것은 안내 표지",
+    "explanation": "산업안전보건 표지는 색으로 구분합니다. **금지는 빨간색, 경고는 노란색, 지시는 파란색, 안내는 녹색**입니다. 비상구·응급구호·들것처럼 위치나 방향을 알려 주는 표지는 녹색의 **안내 표지**입니다.\n\n**틀린 선지**\n- ① 금지 표지: 빨간 원과 빗금으로 '출입 금지', '금연' 같은 행동을 막는 표지입니다.\n- ② 경고 표지: 노란 바탕의 삼각형 등으로 '고압 전기', '낙하물' 같은 위험을 알리는 표지입니다.\n- ④ 지시 표지: 파란 원 안에 흰 그림으로 '안전모 착용' 같은 보호구 착용을 알리는 표지입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-18",
+    "tags": [
+      "안전표지",
+      "안내 표지"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
   }
 ]
