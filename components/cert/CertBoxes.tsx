@@ -21,19 +21,19 @@ const LEVELS: QuizLevel[] = ["basic", "intermediate", "advanced"];
 
 /**
  * 난이도 박스 색 (P15): 초급 초록 · 중급 파랑 · 고급 보라 · 실전 먹색. 색만으로 구분하지 않도록 글자(초급/보기 2개)는 그대로 둔다.
- * 고르기 전은 연한 바탕 + 같은 색 테두리, 고른 박스는 진한 바탕 + 흰 글자. 색 값은 app/tokens.css 의 lv-*.
+ * 고르기 전은 흰 상자 + 얇은 회색 테두리 + 위쪽 색 띠 + 색 글자(색은 조금만), 고른 박스는 진한 바탕 + 흰 글자. 색 값은 app/tokens.css 의 lv-*.
  */
 const LEVEL_STYLE: Record<QuizLevel, { idle: string; active: string }> = {
   basic: {
-    idle: "border-lv-basic-ink bg-lv-basic-soft text-lv-basic-ink",
+    idle: "border-card-line border-t-lv-basic bg-surface text-lv-basic-ink hover:bg-lv-basic-soft",
     active: "border-lv-basic bg-lv-basic text-on-primary",
   },
   intermediate: {
-    idle: "border-lv-mid-ink bg-lv-mid-soft text-lv-mid-ink",
+    idle: "border-card-line border-t-lv-mid bg-surface text-lv-mid-ink hover:bg-lv-mid-soft",
     active: "border-lv-mid bg-lv-mid text-on-primary",
   },
   advanced: {
-    idle: "border-lv-adv-ink bg-lv-adv-soft text-lv-adv-ink",
+    idle: "border-card-line border-t-lv-adv bg-surface text-lv-adv-ink hover:bg-lv-adv-soft",
     active: "border-lv-adv bg-lv-adv text-on-primary",
   },
 };
@@ -96,12 +96,12 @@ export function CertBoxes({ certId, ready, subjects, counts, choiceCounts, cbt, 
               aria-expanded={active}
               aria-controls="level-detail"
               onClick={() => setLevel(active ? null : id)}
-              className={`flex min-h-32 flex-col items-center justify-center gap-2 rounded-2xl border-2 text-xl font-bold shadow-card sm:min-h-40 sm:text-2xl ${
+              className={`flex min-h-32 flex-col items-center justify-center gap-2 rounded-2xl border border-t-[6px] text-xl font-bold shadow-card sm:min-h-40 sm:text-2xl ${
                 !ready ? "border-card-line bg-surface-2 text-ink-sub" : active ? LEVEL_STYLE[id].active : LEVEL_STYLE[id].idle
               }`}
             >
               {m.levels[id]}
-              <span className="text-sm font-normal sm:text-base">{fmt(m.cert.choiceCount, { n: choiceCounts[id] })}</span>
+              <span className="text-sm font-normal text-current opacity-90 sm:text-base">{fmt(m.cert.choiceCount, { n: choiceCounts[id] })}</span>
             </button>
           );
         })}
@@ -179,13 +179,13 @@ export function CertBoxes({ certId, ready, subjects, counts, choiceCounts, cbt, 
       {cbt ? (
         <Link
           href={`${certPath}/cbt`}
-          className="flex min-h-20 flex-wrap items-center justify-between gap-x-4 gap-y-1 rounded-2xl border-2 border-lv-cbt-ink bg-lv-cbt-soft px-6 py-2 text-lv-cbt-ink shadow-card hover:bg-lv-cbt hover:text-on-primary"
+          className="flex min-h-20 flex-wrap items-center justify-between gap-x-4 gap-y-1 rounded-2xl border border-l-[6px] border-card-line border-l-lv-cbt bg-surface px-6 py-2 text-ink shadow-card hover:bg-lv-cbt-soft"
         >
           <span className="text-lg font-bold">{m.cert.cbt}</span>
-          <span>{fmt(m.cert.cbtInfo, { n: cbt.questionCount, min: cbt.minutes, choices: cbt.choiceCount })}</span>
+          <span className="text-ink-sub">{fmt(m.cert.cbtInfo, { n: cbt.questionCount, min: cbt.minutes, choices: cbt.choiceCount })}</span>
         </Link>
       ) : (
-        <div className="flex min-h-20 flex-wrap items-center justify-between gap-x-4 gap-y-1 rounded-2xl border-2 border-card-line bg-surface-2 px-6 py-2 text-ink-sub">
+        <div className="flex min-h-20 flex-wrap items-center justify-between gap-x-4 gap-y-1 rounded-2xl border border-card-line bg-surface-2 px-6 py-2 text-ink-sub">
           <span className="text-lg font-bold">{m.cert.cbt}</span>
           <span>{m.cert.cbtNotReady}</span>
         </div>
@@ -195,19 +195,19 @@ export function CertBoxes({ certId, ready, subjects, counts, choiceCounts, cbt, 
       {concepts ? (
         <Link
           href={concepts.href}
-          className="flex flex-col gap-2 rounded-2xl border-2 border-primary bg-primary-soft p-4 text-ink shadow-card hover:bg-surface sm:flex-row sm:items-center sm:justify-between sm:px-6"
+          className="flex flex-col gap-2 rounded-2xl border border-l-[6px] border-card-line border-l-primary bg-surface p-4 text-ink shadow-card hover:bg-primary-soft sm:flex-row sm:items-center sm:justify-between sm:px-6"
         >
           <span className="min-w-0">
             <span className="flex flex-wrap items-center gap-2">
               <span className="text-lg font-bold text-accent">{m.cert.conceptsCardTitle}</span>
-              <span className="rounded-full bg-surface px-3 py-1 text-sm font-bold text-ink-sub">{m.concepts.byAiVerified}</span>
+              <span className="rounded-full bg-surface-2 px-3 py-1 text-sm font-bold text-ink-sub">{m.concepts.byAiVerified}</span>
             </span>
-            <span className="mt-1 block text-sm">{m.cert.conceptsCardDesc}</span>
+            <span className="mt-1 block text-sm text-ink-sub">{m.cert.conceptsCardDesc}</span>
             <span className="mt-1 block text-sm font-bold text-ink-sub">
               {fmt(m.cert.conceptsCardCount, { subjects: concepts.subjects, chapters: concepts.chapters })}
             </span>
           </span>
-          <span className="btn btn-primary shrink-0">{m.cert.conceptsCardGo}</span>
+          <span className="btn shrink-0">{m.cert.conceptsCardGo}</span>
         </Link>
       ) : (
         showConcepts && <ConceptsLink />
