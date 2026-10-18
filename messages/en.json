@@ -710,6 +710,13 @@
     "notice": {
       "title": "Notices | {brand}",
       "description": "Notices from {brand}."
+    },
+    "guideList": {
+      "title": "Certification Exam Guides | {brand}",
+      "description": "Exam dates, study strategies, exam outline changes, and test-day tips for certification candidates."
+    },
+    "guide": {
+      "title": "{title} | {brand}"
     }
   },
   "og": {
@@ -743,7 +750,8 @@
     "log": "Update log",
     "qna": "Q&A",
     "notice": "Notices",
-    "more": "About"
+    "more": "About",
+    "guide": "Exam Guides"
   },
   "pending": {
     "qna": {
@@ -760,5 +768,31 @@
   "certText": {
     "written": "",
     "writtenPrefix": ""
+  },
+  "guide": {
+    "listTitle": "Exam Guides",
+    "listIntro": "Exam dates, study strategies, exam outline changes, and test-day tips. Newest first.",
+    "empty": "No guides yet.",
+    "breadcrumb": "Exam Guides",
+    "published": "Published {date}",
+    "updated": "Updated {date}",
+    "basis": "Information as of {date}",
+    "byline": "Written with AI · maintained by our team. Always confirm dates and fees with the official exam provider.",
+    "sourcesTitle": "Sources checked",
+    "checkedAt": "checked {date}",
+    "faqTitle": "Frequently asked questions",
+    "relatedTitle": "Practice related exams",
+    "solve": "Practice {name}",
+    "moreTitle": "More exam guides",
+    "toList": "See all exam guides",
+    "certRelated": "Related exam guides",
+    "categories": {
+      "schedule": "Exam dates",
+      "pass-guide": "Pass guide",
+      "change": "Outline & rule changes",
+      "exam-tips": "Test-day tips",
+      "career": "Career use",
+      "concept": "Key concepts"
+    }
   }
 }

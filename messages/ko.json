@@ -710,6 +710,13 @@
     "notice": {
       "title": "공지사항 | {brand}",
       "description": "{brand} 공지사항입니다."
+    },
+    "guideList": {
+      "title": "자격증 합격 가이드 | {brand}",
+      "description": "시험 일정, 합격 전략, 출제기준 변경, 시험장 팁까지 자격증 준비에 필요한 정보를 매일 정리합니다."
+    },
+    "guide": {
+      "title": "{title} | {brand}"
     }
   },
   "og": {
@@ -743,7 +750,8 @@
     "log": "자격증 추가 기록",
     "qna": "질문 & 답변",
     "notice": "공지사항",
-    "more": "안내"
+    "more": "안내",
+    "guide": "합격 가이드"
   },
   "pending": {
     "qna": {
@@ -760,5 +768,31 @@
   "certText": {
     "written": " 필기",
     "writtenPrefix": "필기 "
+  },
+  "guide": {
+    "listTitle": "합격 가이드",
+    "listIntro": "자격증 준비에 필요한 시험 일정, 공부 전략, 출제기준 변경, 시험장 팁을 정리합니다. 새 글이 위에 있습니다.",
+    "empty": "아직 글이 없습니다.",
+    "breadcrumb": "합격 가이드",
+    "published": "{date} 작성",
+    "updated": "{date} 수정",
+    "basis": "정보 기준일 {date}",
+    "byline": "AI 작성 · 운영진 관리. 일정·응시료 같은 공식 정보는 시행기관 공고에서 꼭 다시 확인하세요.",
+    "sourcesTitle": "확인한 출처",
+    "checkedAt": "{date} 확인",
+    "faqTitle": "자주 묻는 질문",
+    "relatedTitle": "관련 자격증 문제 풀기",
+    "solve": "{name} 문제 풀기",
+    "moreTitle": "다른 합격 가이드",
+    "toList": "합격 가이드 전체 보기",
+    "certRelated": "관련 합격 가이드",
+    "categories": {
+      "schedule": "시험 일정",
+      "pass-guide": "합격 가이드",
+      "change": "출제기준·법령 변경",
+      "exam-tips": "시험장 팁",
+      "career": "자격증 활용",
+      "concept": "핵심 개념"
+    }
   }
 }
