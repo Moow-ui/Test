@@ -212,3 +212,18 @@ details[open] > summary .when-closed {
     content-visibility: visible;
   }
 }
+
+/* 수험 정보 글 본문: 기본 글자 크기, 넉넉한 줄 간격, 줄 끝 정돈 (내용은 data/guides 그대로) */
+.guide-prose {
+  font-size: var(--text-base);
+  line-height: 1.85;
+  letter-spacing: -0.01em;
+  text-wrap: pretty;
+  overflow-wrap: break-word;
+}
+.guide-prose li {
+  padding-left: 0.15em;
+}
+.guide-prose li::marker {
+  color: var(--ink-sub);
+}

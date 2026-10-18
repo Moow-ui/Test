@@ -126,7 +126,7 @@ export default async function GuidePage({ params }: Props) {
           </p>
         </header>
 
-        <div className="text-lg leading-8">
+        <div className="guide-prose">
           <Markdown text={guide.intro} />
         </div>
 
@@ -148,10 +148,10 @@ export default async function GuidePage({ params }: Props) {
 
         {guide.sections.map((section, i) => (
           <section key={section.heading} aria-labelledby={`s${i}`} className="space-y-4">
-            <h2 id={`s${i}`} className="scroll-mt-24 border-l-4 border-primary pl-3 text-xl font-bold leading-snug">
+            <h2 id={`s${i}`} className="scroll-mt-24 border-l-4 border-primary pl-3 text-lg font-bold leading-snug">
               {section.heading}
             </h2>
-            <div className="text-lg leading-8">
+            <div className="guide-prose">
               <Markdown text={section.body} />
             </div>
           </section>
@@ -180,10 +180,10 @@ export default async function GuidePage({ params }: Props) {
 
         {guide.faq && guide.faq.length > 0 && (
           <section aria-labelledby="faq-title" className="space-y-3">
-            <h2 id="faq-title" className="border-l-4 border-primary pl-3 text-xl font-bold">
+            <h2 id="faq-title" className="border-l-4 border-primary pl-3 text-lg font-bold">
               {t.faqTitle}
             </h2>
-            <dl className="divide-y divide-line border-y border-line">
+            <dl className="guide-prose divide-y divide-line border-y border-line">
               {guide.faq.map((f) => (
                 <div key={f.question} className="space-y-2 py-4">
                   <dt className="font-bold">Q. {f.question}</dt>

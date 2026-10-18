@@ -64,12 +64,17 @@ export default async function GuideListPage({ params }: Props) {
         <h1 className="text-2xl font-bold sm:text-3xl">{meta.h1}</h1>
         <p className="text-ink-sub">{m.guide.listIntro}</p>
       </header>
-      {/* 작성 원칙: AI 작성 사실과 출처 기준을 먼저 밝힌다 */}
-      <section aria-labelledby="policy-title" className="rounded-xl border border-line bg-surface px-5 py-4 text-sm">
-        <h2 id="policy-title" className="font-bold">
+      {items.length === 0 ? (
+        <p className="card p-6 text-ink-sub">{m.guide.empty}</p>
+      ) : (
+        <GuideList items={items} listPath={meta.path} categories={[...GUIDE_CATEGORIES]} />
+      )}
+      {/* 작성 원칙: 글 목록 아래 회색 상자 (글과 구분) */}
+      <section aria-labelledby="policy-title" className="rounded-xl bg-surface-2 px-5 py-4 text-sm text-ink-sub">
+        <h2 id="policy-title" className="font-bold text-ink">
           {m.guide.policyTitle}
         </h2>
-        <ul className="mt-2 list-disc space-y-1 pl-5 text-ink-sub">
+        <ul className="mt-2 list-disc space-y-1 pl-5">
           {m.guide.policy.map((line) => (
             <li key={line}>{line}</li>
           ))}
@@ -80,11 +85,6 @@ export default async function GuideListPage({ params }: Props) {
           </Link>
         </p>
       </section>
-      {items.length === 0 ? (
-        <p className="card p-6 text-ink-sub">{m.guide.empty}</p>
-      ) : (
-        <GuideList items={items} listPath={meta.path} categories={[...GUIDE_CATEGORIES]} />
-      )}
     </div>
   );
 }
