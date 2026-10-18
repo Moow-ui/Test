@@ -96,7 +96,7 @@ export default async function GuidePage({ params }: Props) {
             <CategoryIcon category={guide.category} size={20} />
             {t.categories[guide.category]}
           </Link>
-          <h1 className="text-balance text-2xl font-bold leading-snug sm:text-3xl">{meta.h1}</h1>
+          <h1 className="text-pretty text-xl font-bold leading-snug sm:text-balance sm:text-3xl">{meta.h1}</h1>
           <div className="flex items-center gap-3">
             <LogoMark size={44} />
             <div className="min-w-0 flex-1">
