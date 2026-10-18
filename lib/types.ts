@@ -60,6 +60,8 @@ export interface Certification extends CertSummary {
   /** 단원 핵심정리 작성 주체와 운영진 검수 날짜 (chapters.json 의 notesBy·notesReviewedAt) */
   notes: { by: NotesAuthor; reviewedAt: string | null };
   updatedAt: string | null;
+  /** 문구에 "필기"를 붙이는 시험인가 (meta.json 의 writtenExam) */
+  writtenExam: boolean;
   /** 과목·단원 데이터와 문제가 모두 있어 풀이가 가능한가 */
   ready: boolean;
 }

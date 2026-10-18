@@ -13,9 +13,9 @@ import {
   localeCountry,
   localePath,
   pickLocale,
+  writtenVars,
 } from "@/lib/i18n";
 import {
-  DESCRIPTION_MAX_WIDTH,
   certMainMeta,
   chapterMeta,
   certPastMeta,
@@ -46,7 +46,13 @@ describe("messages", () => {
   });
 
   it("같은 키의 문구는 같은 {변수}를 쓴다", () => {
-    const vars = (s: string) => (s.match(/\{\w+\}/g) ?? []).sort().join(",");
+    // {written}·{writtenPrefix} 는 한국어의 "필기" 자리라 영어 문구에는 없다 (lib/i18n.ts writtenVars)
+    const KO_ONLY = new Set(["{written}", "{writtenPrefix}"]);
+    const vars = (s: string) =>
+      (s.match(/\{\w+\}/g) ?? [])
+        .filter((v) => !KO_ONLY.has(v))
+        .sort()
+        .join(",");
     const walk = (a: unknown, b: unknown, at: string): void => {
       if (typeof a === "string" && typeof b === "string") {
         expect(vars(b), at).toBe(vars(a));
@@ -174,29 +180,26 @@ describe("description 길이", () => {
     expect(textWidth("ab 1%")).toBe(2.5);
   });
 
-  it("자격증 메인·기출·단원·개념 정리 description 은 잘리지 않는 길이이고 자격증명·단원명이 들어간다", async () => {
+  // 길이(잘림)는 막지 않는다. 이름이 아주 긴 자격증 때문에 매일 루틴의 자격증 추가가 멈추면 안 되므로
+  // 넘치는 페이지는 빌드 후 check:meta 가 "주의"로만 알려 준다.
+  it("자격증 메인·기출·단원·개념 정리 description 에 자격증명·단원명이 들어가고 변수가 남지 않는다", async () => {
     for (const [lang, country] of [["ko", "KR"], ["en", "US"]] as const) {
       for (const cert of await getReadyCertifications(country)) {
-        const main = certMainMeta(lang, cert).description;
-        expect(textWidth(main), main).toBeLessThanOrEqual(DESCRIPTION_MAX_WIDTH);
-        expect(main).toContain(cert.name);
-        for (const hasPast of [true, false]) {
-          const past = certPastMeta(lang, cert, hasPast, 10).description;
-          expect(textWidth(past), past).toBeLessThanOrEqual(DESCRIPTION_MAX_WIDTH);
-          expect(past).toContain(cert.name);
-        }
+        const texts = [certMainMeta(lang, cert).description, certPastMeta(lang, cert, true, 10).description];
+        for (const t of texts) expect(t).toContain(cert.name);
         for (const subject of cert.subjects) {
           for (const chapter of subject.chapters) {
             for (const d of [
               chapterMeta(lang, cert, subject, chapter, false).description,
               conceptChapterMeta(lang, cert, subject, chapter, 1, "").description,
             ]) {
-              expect(textWidth(d), d).toBeLessThanOrEqual(DESCRIPTION_MAX_WIDTH);
+              texts.push(d);
               expect(d).toContain(cert.name);
               expect(d).toContain(chapter.name.replace(/\s*\([^()]*\)\s*$/, ""));
             }
           }
         }
+        for (const t of texts) expect(t, t).not.toMatch(/\{\w+\}/);
       }
     }
   });
@@ -206,6 +209,25 @@ describe("description 길이", () => {
     const subject = multi.subjects[0];
     const d = chapterMeta("ko", multi, subject, subject.chapters[0], false).description;
     expect(d).toMatch(new RegExp(`(${subject.name} 과목|과목 내) 출제 비중 ${subject.chapters[0].examWeight}%`));
+  });
+});
+
+describe("필기 표기 (meta.json writtenExam)", () => {
+  it("필기·실기 구분이 없는 시험은 제목·설명에 '필기'를 넣지 않고, 그 밖의 시험은 넣는다", async () => {
+    const certs = await getReadyCertifications("KR");
+    const none = certs.find((c) => !c.writtenExam)!;
+    const written = certs.find((c) => c.writtenExam)!;
+    for (const meta of [certMainMeta("ko", none), certPastMeta("ko", none, false, 10)]) {
+      expect(meta.title + meta.description).not.toContain("필기");
+      expect(meta.title + meta.description).not.toMatch(/\{\w+\}/);
+    }
+    expect(certMainMeta("ko", written).title).toContain(`${written.name} 필기`);
+  });
+
+  it("writtenVars: 영어와 writtenExam=false 는 빈칸", () => {
+    expect(writtenVars("ko", true)).toEqual({ written: " 필기", writtenPrefix: "필기 " });
+    expect(writtenVars("ko", false)).toEqual({ written: "", writtenPrefix: "" });
+    expect(writtenVars("en", true)).toEqual({ written: "", writtenPrefix: "" });
   });
 });
 

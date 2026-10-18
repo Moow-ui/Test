@@ -48,6 +48,7 @@ public/data/                      빌드 때 자동으로 만든다 (git 에 올
 | `studyTips` | 운영진 학습 팁 3개 `{ studyOrder(공부 순서), hardChapters(자주 틀리는 단원), examDay(시험 당일 팁) }`. 각 2~4문장. 문제가 있는 자격증에는 필수 |
 | `sources[]` | 정보의 출처 `{ title, url? }` (공식 출제기준 등) |
 | `visualNeed` | (선택) 그림 필요도 `high`·`medium`·`none`. 루틴이 그림을 몇 개 만들지 정하는 기준 (8장). 새 자격증에는 적는다 |
+| `writtenExam` | (선택, 기본 true) 시험이 필기·실기로 나뉘어 "필기"라고 부르는가. 필기·실기 구분이 없는 한국 시험(한능검 등)만 `false` → 제목·설명·공유 이미지에서 "필기"를 뺀다 |
 
 - "준비 중" 자격증은 `id`~`order` 까지만 있으면 된다.
 - `chapters.json` 이 있으면 `examInfo` 와 `updatedAt` 이 반드시 있어야 한다.

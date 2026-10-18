@@ -248,6 +248,11 @@ export const certMetaSchema = certSummarySchema.extend({
    * 적지 않으면 아직 정하지 않은 것 (화면에는 영향 없음).
    */
   visualNeed: z.enum(VISUAL_NEEDS).optional(),
+  /**
+   * 시험이 필기·실기(또는 1차·2차 면접 등)로 나뉘어 "필기"라고 부르는가. 기본 true.
+   * 한능검·공인중개사·영양사처럼 필기·실기 구분이 없는 시험은 false 로 적는다 (제목·설명·공유 이미지에서 "필기"를 뺀다).
+   */
+  writtenExam: z.boolean().default(true),
 });
 
 /**

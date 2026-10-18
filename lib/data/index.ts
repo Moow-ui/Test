@@ -229,6 +229,7 @@ export async function getCertification(id: string): Promise<Certification | null
     studyTips: cert.meta.studyTips ?? null,
     notes: cert.notes,
     updatedAt: hasDetail ? (cert.meta.updatedAt ?? null) : null,
+    writtenExam: cert.meta.writtenExam,
     ready: item.ready,
   };
 }

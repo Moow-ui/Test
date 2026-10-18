@@ -5,7 +5,7 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { StaticQuestion } from "@/components/StaticQuestion";
 import { IssuerNotice } from "@/components/cert/IssuerNotice";
 import { getCertificationIn, getQuestions } from "@/lib/data";
-import { fmt, getMessages, isLocale, localeCountry, localePath } from "@/lib/i18n";
+import { fmt, getMessages, isLocale, localeCountry, localePath, writtenVars } from "@/lib/i18n";
 import { pickCertRepresentatives } from "@/lib/representative";
 import { certMainMeta, certOgImagePath, certPastMeta, toMetadata } from "@/lib/seo";
 import { readyCertParams } from "@/lib/static-params";
@@ -51,6 +51,7 @@ export default async function PastPage({ params }: Props) {
   const certPath = mainMeta.path;
   const sep = m.common.listSeparator;
   const vars = {
+    ...writtenVars(lang, cert.writtenExam),
     name: cert.name,
     spaced: cert.spacedName,
     short: cert.shortNames[0] ?? cert.name,

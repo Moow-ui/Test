@@ -88,6 +88,15 @@ export function certKind(m: Messages, cert: { grade?: string; certType: CertType
   return cert.grade ?? m.certTypes[cert.certType];
 }
 
+/**
+ * 자격증 문구의 {written}(" 필기")·{writtenPrefix}("필기 ") 값.
+ * 필기·실기 구분이 없는 시험(meta.json 의 writtenExam: false)과 영어 화면은 빈칸이다.
+ */
+export function writtenVars(locale: Locale, writtenExam: boolean): { written: string; writtenPrefix: string } {
+  const t = getMessages(locale).certText;
+  return writtenExam ? { written: t.written, writtenPrefix: t.writtenPrefix } : { written: "", writtenPrefix: "" };
+}
+
 /** "{n}문제" + { n: 5 } → "5문제" */
 export function fmt(template: string, vars: Record<string, string | number>): string {
   return template.replace(/\{(\w+)\}/g, (whole, key: string) => (key in vars ? String(vars[key]) : whole));

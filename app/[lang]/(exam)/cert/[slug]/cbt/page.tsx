@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { CbtRunner } from "@/components/cbt/CbtRunner";
 import { getCertificationIn } from "@/lib/data";
-import { getMessages, isLocale, localeCountry } from "@/lib/i18n";
+import { getMessages, isLocale, localeCountry, writtenVars } from "@/lib/i18n";
 import { noindexMetadata } from "@/lib/seo";
 import { readyCertParams } from "@/lib/static-params";
 
@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const cert = await getCertificationIn(localeCountry(lang), slug);
   if (!cert) return {};
   return noindexMetadata(lang, getMessages(lang).seo.cbt, `/cert/${cert.id}/cbt`, {
-    vars: { name: cert.name },
+    vars: { name: cert.name, ...writtenVars(lang, cert.writtenExam) },
   });
 }
 

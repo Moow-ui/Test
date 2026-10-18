@@ -14,7 +14,7 @@ import { StudyTips } from "@/components/cert/StudyTips";
 import { ReviewSection } from "@/components/reviews/ReviewSection";
 import { getCertList, getCertificationIn, getConcepts, getQuestions } from "@/lib/data";
 import { pastCredit } from "@/lib/format";
-import { fmt, getMessages, isLocale, localeCountry, localePath } from "@/lib/i18n";
+import { fmt, getMessages, isLocale, localeCountry, localePath, writtenVars } from "@/lib/i18n";
 import { levelChoiceCount } from "@/lib/choices";
 import { countAvailable, mockExamShortage } from "@/lib/quiz-engine";
 import { certMainMeta, certOgImagePath, certPastMeta, faqJsonLd, toMetadata } from "@/lib/seo";
@@ -205,7 +205,7 @@ export default async function CertPage({ params }: Props) {
           </summary>
           <div className="mt-2 space-y-6">
             <section className="space-y-2">
-              <h2 className="font-bold">{fmt(m.cert.trendTitle, { name: cert.name })}</h2>
+              <h2 className="font-bold">{fmt(m.cert.trendTitle, { name: cert.name, ...writtenVars(lang, cert.writtenExam) })}</h2>
               <p>{content.trendSummary}</p>
               <p>{content.studyTip}</p>
               {cert.ready && (

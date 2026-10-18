@@ -1,5 +1,5 @@
 import { getCertificationIn } from "@/lib/data";
-import { brandName, certKind, DEFAULT_LOCALE, fmt, getMessages, isLocale, localeCountry } from "@/lib/i18n";
+import { brandName, certKind, DEFAULT_LOCALE, fmt, getMessages, isLocale, localeCountry, writtenVars } from "@/lib/i18n";
 import { OG_CONTENT_TYPE, OG_SIZE, renderOgImage } from "@/lib/og";
 import { certParams } from "@/lib/static-params";
 
@@ -25,13 +25,14 @@ export default async function Image({ params }: { params: Promise<{ lang: string
       subtitle: m.og.homeSubtitle,
     });
   }
+  const written = writtenVars(locale, cert.writtenExam);
   return renderOgImage({
     ...common,
     eyebrow: fmt(m.og.certEyebrow, { kind: certKind(m, cert), field: cert.field }),
     title: cert.name,
     subtitle:
       cert.ready && cert.examInfo
-        ? fmt(m.og.certSubtitle, { n: cert.examInfo.totalQuestions })
-        : m.og.certSoon,
+        ? fmt(m.og.certSubtitle, { n: cert.examInfo.totalQuestions, ...written })
+        : fmt(m.og.certSoon, written),
   });
 }

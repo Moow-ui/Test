@@ -122,6 +122,13 @@ findDuplicates("title", (p) => p.title);
 findDuplicates("description", (p) => p.description);
 findDuplicates("H1", (p) => p.h1[0] ?? "");
 
+// 1-0) 문구 틀의 {변수}가 채워지지 않고 남아 있으면 오류
+for (const p of indexable) {
+  for (const [label, value] of [["title", p.title], ["description", p.description], ["H1", p.h1[0] ?? ""]] as const) {
+    if (/\{\w+\}/.test(value)) errors.push(`${label} 에 채워지지 않은 {변수}: ${p.route} "${value}"`);
+  }
+}
+
 // 1-1) 자격증 페이지 description 길이 (넘치면 검색 결과에서 "…"으로 잘린다. 막지는 않고 알려만 준다)
 for (const p of indexable) {
   if (!p.route.includes("/cert/") || !p.description) continue;

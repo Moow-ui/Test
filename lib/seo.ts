@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { LOCALES, brandName, fmt, getMessages, localePath, otherLocale, type Locale } from "./i18n";
+import { LOCALES, brandName, fmt, getMessages, localePath, otherLocale, writtenVars, type Locale } from "./i18n";
 import { absoluteUrl } from "./site";
 import type { Certification, Chapter, Faq, Subject } from "./types";
 
@@ -71,7 +71,7 @@ export function certMainMeta(locale: Locale, cert: Certification): PageMeta {
   const brand = brandName(locale);
   const path = localePath(locale, `/cert/${cert.id}`);
   if (!cert.ready || !cert.examInfo) {
-    const vars = { name: cert.name, brand };
+    const vars = { name: cert.name, brand, ...writtenVars(locale, cert.writtenExam) };
     return {
       title: fmt(m.certSoon.title, vars),
       description: fmt(m.certSoon.description, vars),
@@ -82,6 +82,7 @@ export function certMainMeta(locale: Locale, cert: Certification): PageMeta {
   const vars = {
     name: cert.name,
     brand,
+    ...writtenVars(locale, cert.writtenExam),
     total: cert.examInfo.totalQuestions,
     subjects: cert.subjects.map((s) => s.name).join(m.subjectSeparator),
   };
@@ -102,7 +103,13 @@ export function certPastMeta(
 ): PageMeta {
   const m = getMessages(locale).seo;
   const t = hasPast ? m.past : m.pastType;
-  const vars = { name: cert.name, spaced: cert.spacedName, shown: shownCount, brand: brandName(locale) };
+  const vars = {
+    name: cert.name,
+    spaced: cert.spacedName,
+    shown: shownCount,
+    brand: brandName(locale),
+    ...writtenVars(locale, cert.writtenExam),
+  };
   return {
     title: fmt(t.title, vars),
     description: fitDescription(t.descriptions, [vars]),
@@ -146,7 +153,13 @@ export function chapterMeta(
 /** 자격증 개념 정리 (단원 목차 + 단원별 핵심 개념) */
 export function conceptsMeta(locale: Locale, cert: Certification, chapterCount: number): PageMeta {
   const m = getMessages(locale);
-  const vars = { name: cert.name, subjects: cert.subjects.length, chapters: chapterCount, brand: brandName(locale) };
+  const vars = {
+    name: cert.name,
+    subjects: cert.subjects.length,
+    chapters: chapterCount,
+    brand: brandName(locale),
+    ...writtenVars(locale, cert.writtenExam),
+  };
   return {
     title: fmt(m.seo.concepts.title, vars),
     description: fmt(m.seo.concepts.description, vars),
