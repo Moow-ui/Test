@@ -24,7 +24,7 @@
 | 2026-10-18 | ⑪ 홈 목록 분야마다 상자로 경계 뚜렷하게 | 〃 | `ui: boxed field groups on home list` |
 
 | 2026-10-18 | ⑫ 풀이 결과 화면에도 메뉴 버튼 | `backup/before-result-page-2026-10-18` | `ui: side menu on result page` |
-| 2026-10-18 | ⑬ 결과 점수 원형 게이지 · 맞음/틀림/안 푼 문제 · 짧은 연습은 합격 판정 숨김 | 〃 | `ui: score ring and skipped count on result page` |
+| 2026-10-18 | ⑬ 결과 점수 원형 게이지 · 맞음/틀림/안 푼 문제 · 짧은 연습은 합격 판정 숨김 | 〃 | `ui: score ring and skipped count on result page`, `ui: ring text fixed size on PC` |
 | 2026-10-18 | ⑭ "틀린 핵심 개념"+"약한 단원" → "다시 볼 것" · 과목별 작은 원형 게이지(과목 2개 이상) | 〃 | `ui: merge review sections on result page` |
 | 2026-10-18 | ⑮ 결과 화면 순서·버튼 정리 · 문제별 결과 모양 통일 (+ 다듬기 2개) | 〃 | `ui: result page order and actions`, `ui: result rows keep question width on phones`, `ui: steady chapter link in result review box` |
 
