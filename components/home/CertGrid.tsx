@@ -43,9 +43,9 @@ function writeFilter(f: Filter): void {
 /**
  * 홈 맨 아래 "전체 자격증 목록" (P15): 카드 격자 + 제목 오른쪽 [분류] 단추.
  * 카드는 서버 HTML 에 모두 들어 있다 (검색엔진이 모든 자격증 페이지를 찾을 수 있게). 필터는 화면에서 숨기기만 한다.
- * 준비된 자격증이 앞(getCertList 순서), "준비 중"은 회색 카드 + 작은 배지. 개념 정리가 있는 자격증은 "개념" 배지.
+ * 분야별 묶음(분야 제목 아래 자격증 이름·종류·문제 수 한 줄씩). "준비 중"은 회색 글자 + "준비 중".
  */
-export function CertGrid({ certs, conceptIds }: { certs: CertListItem[]; conceptIds: string[] }) {
+export function CertGrid({ certs }: { certs: CertListItem[]; conceptIds?: string[] }) {
   const { locale, m: all } = useMessages();
   const m = all.home;
   const panelId = useId();
@@ -155,31 +155,43 @@ export function CertGrid({ certs, conceptIds }: { certs: CertListItem[]; concept
       {shown.length === 0 ? (
         <p className="card mt-4 p-4 font-bold">{m.filterNone}</p>
       ) : (
-        <ul className="mt-4 grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3">
-          {certs.map((c) => (
-            <li key={c.id} hidden={!shown.includes(c)}>
-              <Link
-                href={localePath(locale, `/cert/${c.id}`)}
-                className={`flex min-h-20 h-full flex-col justify-center gap-1 rounded-2xl border px-4 py-2 hover:border-primary ${
-                  c.ready
-                    ? "border-card-line bg-surface text-ink shadow-card"
-                    : "border-card-line bg-surface-2 text-ink-sub"
-                }`}
-              >
-                <span className="font-bold leading-snug">{c.name}</span>
-                <span className="flex flex-wrap items-center gap-2 text-sm">
-                  <span className={c.ready ? "text-ink-sub" : ""}>{certKind(all, c)}</span>
-                  {c.ready && conceptIds.includes(c.id) && (
-                    <span className="rounded-full bg-primary-soft px-2 font-bold text-accent">{m.conceptBadge}</span>
-                  )}
-                  {!c.ready && (
-                    <span className="rounded-full bg-surface px-2 font-bold text-ink-sub">{all.common.comingSoon}</span>
-                  )}
-                </span>
-              </Link>
-            </li>
-          ))}
-        </ul>
+        // 분야별로 묶은 목록 (분야 = meta.json 의 field, 자격증이 많은 분야부터). 칸 수는 화면 폭에 따라 1·2·3
+        <div className="card mt-4 columns-1 gap-8 p-4 sm:columns-2 sm:p-6 lg:columns-3">
+          {fields.map((field) => {
+            const inField = certs.filter((c) => c.field === field);
+            const visible = inField.some((c) => shown.includes(c));
+            return (
+              <section key={field} hidden={!visible} className="mb-6 break-inside-avoid">
+                <h3 className="border-b border-line-soft pb-2 text-sm font-bold text-ink-sub">
+                  {field}
+                  <span className="ml-2 font-normal">{inField.filter((c) => shown.includes(c)).length}</span>
+                </h3>
+                <ul>
+                  {inField.map((c) => (
+                    <li key={c.id} hidden={!shown.includes(c)}>
+                      <Link
+                        href={localePath(locale, `/cert/${c.id}`)}
+                        className={`flex min-h-12 items-center justify-between gap-3 rounded-lg px-2 py-2 hover:bg-primary-soft ${
+                          c.ready ? "text-ink" : "text-ink-sub"
+                        }`}
+                      >
+                        <span className="min-w-0">
+                          <span className="block font-bold leading-snug">{c.name}</span>
+                          <span className="block text-sm text-ink-sub">{certKind(all, c)}</span>
+                        </span>
+                        <span className="shrink-0 text-sm text-ink-sub tabular-nums">
+                          {c.ready
+                            ? fmt(m.questionCount, { n: c.questionCount.toLocaleString(locale === "ko" ? "ko-KR" : "en-US") })
+                            : all.common.comingSoon}
+                        </span>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            );
+          })}
+        </div>
       )}
     </nav>
   );
