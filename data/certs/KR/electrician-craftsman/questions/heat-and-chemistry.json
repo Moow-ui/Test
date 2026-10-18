@@ -35,5 +35,41 @@
         4
       ]
     }
+  },
+  {
+    "id": "electrician-craftsman-heat-and-chemistry-0001",
+    "certId": "electrician-craftsman",
+    "subjectId": "electric-theory",
+    "chapterId": "heat-and-chemistry",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "서로 다른 두 금속을 이어 붙여 고리를 만들고, 두 접합점의 온도를 다르게 하면 기전력(전압)이 생겨 전류가 흐르는 현상은?",
+    "choices": [
+      "펠티에 효과",
+      "톰슨 효과",
+      "홀 효과",
+      "제벡 효과"
+    ],
+    "answer": 4,
+    "oneLineConcept": "두 금속 접합점의 온도 차로 전압이 생기는 것은 제벡 효과",
+    "explanation": "**제벡 효과**는 '온도 차 → 전기'입니다. 이 원리를 이용한 것이 온도를 재는 **열전대(열전쌍)**입니다. 거꾸로 '전기 → 온도 차(한쪽은 열이 나고 한쪽은 차가워짐)'는 펠티에 효과입니다.\n\n**틀린 선지**\n- ① 펠티에 효과: 서로 다른 두 금속의 접합점에 전류를 흘리면 열을 내거나 흡수하는 현상으로, 제벡 효과의 반대입니다.\n- ② 톰슨 효과: 같은 금속이라도 부분마다 온도가 다를 때 전류를 흘리면 열을 내거나 흡수하는 현상입니다.\n- ③ 홀 효과: 전류가 흐르는 도체에 자기장을 걸면 옆 방향으로 전압이 생기는 현상입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-18",
+    "tags": [
+      "열전 효과",
+      "제벡 효과"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
   }
 ]
