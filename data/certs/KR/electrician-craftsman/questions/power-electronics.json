@@ -71,5 +71,41 @@
         4
       ]
     }
+  },
+  {
+    "id": "electrician-craftsman-power-electronics-0001",
+    "certId": "electrician-craftsman",
+    "subjectId": "electric-machines",
+    "chapterId": "power-electronics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "교류(AC)를 직류(DC)로 바꾸는 장치는?",
+    "choices": [
+      "인버터",
+      "변압기",
+      "사이클로컨버터",
+      "정류기(컨버터)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "교류를 직류로 바꾸는 장치는 정류기(컨버터)",
+    "explanation": "**정류기(컨버터)**는 다이오드 등을 써서 교류를 한 방향으로만 흐르는 직류로 바꿉니다. 반대로 직류를 교류로 바꾸는 장치는 **인버터**입니다. 두 장치는 짝으로 자주 출제되니 '교류 → 직류 = 정류기, 직류 → 교류 = 인버터'로 외워 둡니다.\n\n**틀린 선지**\n- ① 인버터: 직류를 교류로 바꾸는 장치로, 반대 방향입니다.\n- ② 변압기: 교류의 전압 크기를 바꾸는 장치로, 교류는 그대로 교류입니다.\n- ③ 사이클로컨버터: 교류를 주파수가 다른 교류로 바로 바꾸는 장치입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-18",
+    "tags": [
+      "전력변환",
+      "정류기"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
   }
 ]

@@ -72,5 +72,41 @@
         3
       ]
     }
+  },
+  {
+    "id": "electrician-craftsman-three-phase-ac-0001",
+    "certId": "electrician-craftsman",
+    "subjectId": "electric-theory",
+    "chapterId": "three-phase-ac",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "평형 3상 교류에서 각 상의 전압은 서로 몇 도씩 위상(시간상의 차이)이 벌어져 있는가?",
+    "choices": [
+      "60°",
+      "120°",
+      "90°",
+      "180°"
+    ],
+    "answer": 2,
+    "oneLineConcept": "평형 3상 교류는 각 상이 120°씩 차이 난다",
+    "explanation": "3상 교류는 크기와 주파수가 같은 교류 3개를 묶은 것입니다. 한 바퀴(360°)를 3개가 똑같이 나누므로 각 상은 **360° ÷ 3 = 120°**씩 차이를 두고 차례로 최댓값이 됩니다.\n\n**틀린 선지**\n- ① 60°: 360°를 6으로 나눈 값으로, 3상의 상 차이가 아닙니다.\n- ③ 90°: 360°를 4로 나눈 값으로, 3상의 상 차이가 아닙니다.\n- ④ 180°: 서로 정반대(반 바퀴) 차이로, 단상에서 +와 −가 뒤바뀐 관계입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-18",
+    "tags": [
+      "3상 교류",
+      "위상차"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
   }
 ]

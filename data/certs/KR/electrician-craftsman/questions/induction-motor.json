@@ -146,5 +146,41 @@
         3
       ]
     }
+  },
+  {
+    "id": "electrician-craftsman-induction-motor-0001",
+    "certId": "electrician-craftsman",
+    "subjectId": "electric-machines",
+    "chapterId": "induction-motor",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "3상 유도전동기에서 회전자가 회전자기장의 속도(동기속도)보다 얼마나 늦게 도는지를 비율로 나타낸 것은?",
+    "choices": [
+      "역률",
+      "효율",
+      "슬립",
+      "전압 변동률"
+    ],
+    "answer": 3,
+    "oneLineConcept": "동기속도보다 늦게 도는 정도를 나타낸 비율은 슬립",
+    "explanation": "유도전동기의 회전자는 회전자기장보다 **조금 늦게** 돌아야 전류가 유도되어 힘이 생깁니다. 이 늦은 정도를 **슬립**이라고 합니다.\n\n1. 슬립 s = (동기속도 − 회전자 속도) ÷ 동기속도\n2. 예: 동기속도 1800rpm, 회전자 속도 1746rpm 이면 s = 54 ÷ 1800 = 0.03 (3%)\n3. 검산: 1800 × (1 − 0.03) = 1746rpm 으로 맞습니다.\n\n**틀린 선지**\n- ① 역률: 전기가 실제로 일을 하는 데 쓰이는 비율(유효전력 ÷ 피상전력)입니다.\n- ② 효율: 들어간 전력에 비해 나온 출력의 비율입니다.\n- ④ 전압 변동률: 주로 변압기·발전기에서 부하에 따라 전압이 변하는 정도를 나타냅니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-18",
+    "tags": [
+      "유도전동기",
+      "슬립"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   }
 ]

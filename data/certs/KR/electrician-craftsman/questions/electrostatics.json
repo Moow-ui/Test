@@ -108,5 +108,41 @@
         4
       ]
     }
+  },
+  {
+    "id": "electrician-craftsman-electrostatics-0001",
+    "certId": "electrician-craftsman",
+    "subjectId": "electric-theory",
+    "chapterId": "electrostatics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "정전용량이 4μF와 6μF인 콘덴서 2개를 병렬로 연결했을 때 합성 정전용량은 몇 μF인가?",
+    "choices": [
+      "10μF",
+      "2.4μF",
+      "24μF",
+      "5μF"
+    ],
+    "answer": 1,
+    "oneLineConcept": "콘덴서 병렬 합성은 그대로 더한다",
+    "explanation": "콘덴서의 합성은 저항과 반대입니다. **병렬은 그대로 더하고**, 직렬은 (곱 ÷ 합)으로 계산합니다.\n\n1. 병렬이므로 그대로 더합니다: 4 + 6 = 10μF\n2. 검산: 병렬로 이으면 전기를 모으는 판이 넓어지는 것과 같아서, 합성값은 가장 큰 6μF보다 커야 합니다. 10μF 는 6μF보다 크므로 맞습니다.\n\n**틀린 선지**\n- ② 2.4μF: (4 × 6) ÷ (4 + 6) = 2.4 로, 직렬로 연결했을 때의 값입니다.\n- ③ 24μF: 두 값을 곱한 것으로, 맞는 계산 방법이 아닙니다.\n- ④ 5μF: 두 값의 평균으로, 맞는 계산 방법이 아닙니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-18",
+    "tags": [
+      "콘덴서",
+      "병렬 합성"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   }
 ]
