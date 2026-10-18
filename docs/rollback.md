@@ -8,6 +8,11 @@
 | 날짜 | 변경 | 백업 브랜치 (변경 직전 상태) | 변경 커밋 메시지 |
 |---|---|---|---|
 | 2026-10-18 | 왼쪽 메뉴(☰ 메뉴 버튼·메뉴판) + 질문 & 답변·공지사항 빈 페이지 | `backup/before-side-menu-2026-10-18` | `ui: add side menu` |
+| 2026-10-18 | ① 메뉴성 링크 밑줄 빼기 (상단 막대·현재 위치·하단 안내) | `backup/before-calm-design-2026-10-18` | `ui: quiet nav links` |
+| 2026-10-18 | ② 자격증 화면 상자 색·테두리 줄이기 (초급·중급·고급·실전·개념 정리) | 〃 | `ui: calmer cert boxes` |
+| 2026-10-18 | ③ 자격증 화면 맨 위 "초급 5문제 바로 시작" 버튼 | 〃 | `ui: quick start button on cert page` |
+
+①②③은 서로 따로 되돌릴 수 있다. 셋 다 되돌릴 때는 ③ → ② → ① 순서로 한다 (②와 ③은 같은 파일을 고쳐서, 거꾸로 하면 충돌할 수 있다).
 
 ## 방법 1 (추천) — 그 변경만 취소
 
@@ -15,13 +20,13 @@
 
 ```
 git fetch origin main && git checkout main && git pull origin main
-git log --oneline --grep "ui: add side menu"      # 커밋 번호 확인
+git log --oneline --grep "ui: add side menu"      # 커밋 번호 확인 (따옴표 안은 위 표의 커밋 메시지)
 git revert <커밋 번호>                              # 취소 커밋이 새로 생긴다
 npm test && npm run build
 git push origin main
 ```
 
-Claude 에게는 "메뉴 추가한 거 되돌려 줘 (docs/rollback.md)" 라고 하면 된다.
+Claude 에게는 "메뉴 추가한 거 되돌려 줘", "상자 색 바꾼 것만 되돌려 줘 (docs/rollback.md)" 처럼 말하면 된다.
 
 ## 방법 2 — 변경 직전과 비교만 하기
 
