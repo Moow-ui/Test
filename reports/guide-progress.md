@@ -5,3 +5,4 @@
 | 날짜 | 언어 | 분류 | 자격증 | slug | 출처 수 | 결과 | 비고 |
 |---|---|---|---|---|---|---|---|
 | 2026-10-18 | ko | pass-guide | forklift-operator | forklift-operator-written-study-plan | 1 | 게시 | 첫 글 (섹션 개설과 함께 직접 작성) |
+| 2026-10-19 | ko | change | computer-literacy-1 | computer-literacy-2027-exam-criteria-changes | 4 | 게시 | 대한상의 2027~2029 출제기준·1·2급 대조표 기준 (2급 함께 다룸) |
