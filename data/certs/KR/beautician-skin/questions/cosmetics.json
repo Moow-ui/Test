@@ -1,0 +1,519 @@
+[
+  {
+    "id": "beautician-skin-cosmetics-0001",
+    "certId": "beautician-skin",
+    "subjectId": "written",
+    "chapterId": "cosmetics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "화장품법에서 말하는 화장품은 인체에 대한 작용이 어떠한 것인가?",
+    "choices": [
+      "경미한 것",
+      "강력한 것",
+      "질병을 치료하는 것",
+      "부작용을 감수해야 하는 것"
+    ],
+    "answer": 1,
+    "oneLineConcept": "화장품 = 인체에 대한 작용이 경미한 것",
+    "explanation": "화장품법에서 **화장품**은 인체를 깨끗하게 하고 아름답게 꾸미거나 피부·모발의 건강을 지키기 위해 바르는 물품으로, **인체에 대한 작용이 경미한 것**을 말합니다. 질병의 치료·예방에 쓰는 것은 의약품입니다.\n\n**틀린 선지**\n- 강력한 것: 작용이 강한 것은 화장품이 아닙니다.\n- 질병을 치료하는 것: 질병 치료는 의약품의 목적입니다.\n- 부작용을 감수해야 하는 것: 화장품은 오래 써도 안전해야 합니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "화장품 정의"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "beautician-skin-cosmetics-0002",
+    "certId": "beautician-skin",
+    "subjectId": "written",
+    "chapterId": "cosmetics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "물에 기름이 작은 방울로 퍼져 있는 유화 형태는?",
+    "choices": [
+      "W/O형",
+      "O/W형",
+      "분산",
+      "가용화"
+    ],
+    "answer": 2,
+    "oneLineConcept": "O/W형 = 물 속에 기름(수중유형)",
+    "explanation": "**O/W형(수중유형)**은 물(W) 속에 기름(O) 방울이 퍼져 있는 형태입니다. 산뜻하고 잘 퍼지며 물로 잘 씻깁니다. 로션이나 산뜻한 크림이 여기에 속합니다.\n\n**틀린 선지**\n- W/O형: 기름 속에 물 방울이 퍼진 형태(유중수형)입니다.\n- 분산: 고체 가루를 액체에 고르게 퍼뜨린 형태입니다.\n- 가용화: 적은 양의 기름을 물에 투명하게 녹인 상태입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "유화"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "beautician-skin-cosmetics-0003",
+    "certId": "beautician-skin",
+    "subjectId": "written",
+    "chapterId": "cosmetics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "적은 양의 기름 성분(향료 등)을 계면활성제로 물에 투명하게 녹이는 기술은?",
+    "choices": [
+      "유화",
+      "분산",
+      "가용화",
+      "침전"
+    ],
+    "answer": 3,
+    "oneLineConcept": "가용화 = 소량 기름을 물에 투명하게(화장수·향수)",
+    "explanation": "**가용화**는 적은 양의 기름 성분을 계면활성제로 물에 녹여 **투명한** 상태로 만드는 기술입니다. 화장수, 향수, 에센스처럼 투명한 제품을 만들 때 씁니다.\n\n**틀린 선지**\n- 유화: 물과 기름을 섞어 우윳빛으로 만드는 기술입니다(로션·크림).\n- 분산: 고체 가루를 액체에 고르게 퍼뜨리는 기술입니다(파운데이션 등).\n- 침전: 녹아 있던 물질이 가라앉는 현상으로 제조 기술이 아닙니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "제조 기술"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "beautician-skin-cosmetics-0004",
+    "certId": "beautician-skin",
+    "subjectId": "written",
+    "chapterId": "cosmetics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "피부 자극이 가장 적어 기초 화장품에 많이 쓰는 계면활성제는?",
+    "choices": [
+      "양이온성",
+      "음이온성",
+      "양쪽성",
+      "비이온성"
+    ],
+    "answer": 4,
+    "oneLineConcept": "자극: 양이온 > 음이온 > 양쪽성 > 비이온",
+    "explanation": "계면활성제의 피부 자극은 **양이온성 > 음이온성 > 양쪽성 > 비이온성** 순서입니다. **비이온성**은 자극이 가장 적어 크림·로션 같은 기초 화장품에 많이 씁니다.\n\n**틀린 선지**\n- 양이온성: 자극이 가장 강하며 살균력이 있어 헤어린스 등에 씁니다.\n- 음이온성: 세정력과 거품이 좋아 비누·샴푸에 씁니다.\n- 양쪽성: 자극이 적은 편이라 유아용 샴푸 등에 쓰지만 비이온성보다는 자극이 있습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "계면활성제"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "beautician-skin-cosmetics-0005",
+    "certId": "beautician-skin",
+    "subjectId": "written",
+    "chapterId": "cosmetics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "피부에 수분을 붙잡아 촉촉하게 하는 보습제(습윤제)에 속하는 것은?",
+    "choices": [
+      "글리세린",
+      "파라벤",
+      "에탄올",
+      "이산화티타늄"
+    ],
+    "answer": 1,
+    "oneLineConcept": "보습제 = 글리세린·히알루론산 등",
+    "explanation": "**글리세린**은 공기 중이나 피부의 수분을 끌어당겨 붙잡는 대표적인 보습제(습윤제)입니다. 히알루론산, 프로필렌글리콜 등도 보습제로 씁니다.\n\n**틀린 선지**\n- 파라벤: 미생물이 자라는 것을 막는 방부제입니다.\n- 에탄올: 청량감을 주고 성분을 녹이는 용제로, 많이 쓰면 오히려 피부를 건조하게 합니다.\n- 이산화티타늄: 자외선을 반사·산란시키는 자외선 차단 성분입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "화장품 원료",
+      "보습제"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "beautician-skin-cosmetics-0006",
+    "certId": "beautician-skin",
+    "subjectId": "written",
+    "chapterId": "cosmetics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "화장품에 들어가는 파라벤의 주된 역할은?",
+    "choices": [
+      "보습",
+      "방부(미생물 증식 억제)",
+      "자외선 차단",
+      "색을 냄"
+    ],
+    "answer": 2,
+    "oneLineConcept": "파라벤 = 방부제",
+    "explanation": "**파라벤**은 화장품이 쓰는 동안 세균이나 곰팡이로 변질되지 않도록 미생물이 자라는 것을 막는 **방부제**입니다.\n\n**틀린 선지**\n- 보습: 보습은 글리세린 같은 습윤제의 역할입니다.\n- 자외선 차단: 자외선 차단은 이산화티타늄 같은 성분의 역할입니다.\n- 색을 냄: 색을 내는 것은 색소(안료·염료)의 역할입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "화장품 원료",
+      "방부제"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "beautician-skin-cosmetics-0007",
+    "certId": "beautician-skin",
+    "subjectId": "written",
+    "chapterId": "cosmetics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "향수 가운데 향료 농도(부향률)가 가장 높은 것은?",
+    "choices": [
+      "오드코롱",
+      "오드뚜왈렛",
+      "퍼퓸",
+      "샤워코롱"
+    ],
+    "answer": 3,
+    "oneLineConcept": "부향률 가장 높음 = 퍼퓸",
+    "explanation": "향수는 향료가 얼마나 들어 있는지(부향률)에 따라 나눕니다. **퍼퓸**이 가장 진하고 오래가며, 그다음 오드퍼퓸, 오드뚜왈렛, 오드코롱, 샤워코롱 순으로 옅어집니다.\n\n**틀린 선지**\n- 오드코롱: 퍼퓸·오드퍼퓸·오드뚜왈렛보다 옅습니다.\n- 오드뚜왈렛: 퍼퓸·오드퍼퓸보다 옅습니다.\n- 샤워코롱: 가장 옅은 편으로 샤워 뒤 가볍게 뿌립니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "향수"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "beautician-skin-cosmetics-0008",
+    "certId": "beautician-skin",
+    "subjectId": "written",
+    "chapterId": "cosmetics",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "향수를 부향률이 높은 것부터 순서대로 바르게 나열한 것은?",
+    "choices": [
+      "오드코롱 > 오드뚜왈렛 > 오드퍼퓸 > 퍼퓸",
+      "오드퍼퓸 > 퍼퓸 > 오드코롱 > 오드뚜왈렛",
+      "퍼퓸 > 오드뚜왈렛 > 오드퍼퓸 > 오드코롱",
+      "퍼퓸 > 오드퍼퓸 > 오드뚜왈렛 > 오드코롱"
+    ],
+    "answer": 4,
+    "oneLineConcept": "퍼퓸 > 오드퍼퓸 > 오드뚜왈렛 > 오드코롱",
+    "explanation": "부향률(향료 농도)은 **퍼퓸 > 오드퍼퓸 > 오드뚜왈렛 > 오드코롱** 순서입니다. 부향률이 높을수록 향이 진하고 오래갑니다.\n\n**틀린 선지**\n- 오드코롱 > 오드뚜왈렛 > 오드퍼퓸 > 퍼퓸: 거꾸로 나열한 것입니다.\n- 오드퍼퓸 > 퍼퓸 > 오드코롱 > 오드뚜왈렛: 퍼퓸이 오드퍼퓸보다 진하고, 오드뚜왈렛이 오드코롱보다 진합니다.\n- 퍼퓸 > 오드뚜왈렛 > 오드퍼퓸 > 오드코롱: 오드퍼퓸이 오드뚜왈렛보다 진합니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "향수"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "beautician-skin-cosmetics-0009",
+    "certId": "beautician-skin",
+    "subjectId": "written",
+    "chapterId": "cosmetics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "에센셜 오일의 사용 방법으로 옳은 것은?",
+    "choices": [
+      "원액을 피부에 직접 넓게 바른다",
+      "캐리어 오일에 희석해서 쓴다",
+      "햇빛이 잘 드는 투명한 병에 보관한다",
+      "마시면 효과가 더 좋다"
+    ],
+    "answer": 2,
+    "oneLineConcept": "에센셜 오일 = 캐리어 오일에 희석, 갈색 병에 보관",
+    "explanation": "**에센셜 오일**은 식물에서 얻은 진한 향 성분이라 원액은 자극이 강합니다. **캐리어 오일에 희석**해 쓰고, 처음 쓸 때는 작은 부위에 시험해 봅니다. 빛과 열에 변하기 쉬워 갈색 유리병에 담아 서늘한 곳에 보관합니다.\n\n**틀린 선지**\n- 원액을 피부에 직접 넓게 바른다: 원액은 자극이 강해 피부 트러블을 일으킬 수 있습니다.\n- 햇빛이 잘 드는 투명한 병에 보관한다: 빛에 변질되므로 빛을 막는 갈색 병에 보관합니다.\n- 마시면 효과가 더 좋다: 에센셜 오일은 마시지 않습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "에센셜 오일"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "beautician-skin-cosmetics-0010",
+    "certId": "beautician-skin",
+    "subjectId": "written",
+    "chapterId": "cosmetics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "에센셜 오일을 희석하는 데 쓰는 캐리어 오일에 속하는 것은?",
+    "choices": [
+      "라벤더 오일",
+      "티트리 오일",
+      "페퍼민트 오일",
+      "호호바 오일"
+    ],
+    "answer": 4,
+    "oneLineConcept": "캐리어 오일 = 호호바·스위트 아몬드·포도씨 등",
+    "explanation": "**캐리어 오일**은 에센셜 오일을 희석해 피부에 전달하는 식물성 오일입니다. **호호바 오일**, 스위트 아몬드 오일, 포도씨 오일 등이 있습니다.\n\n**틀린 선지**\n- 라벤더 오일: 에센셜 오일입니다.\n- 티트리 오일: 에센셜 오일입니다.\n- 페퍼민트 오일: 에센셜 오일입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "캐리어 오일"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "beautician-skin-cosmetics-0011",
+    "certId": "beautician-skin",
+    "subjectId": "written",
+    "chapterId": "cosmetics",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "기능성 화장품이 도움을 주는 기능에 해당하지 않는 것은?",
+    "choices": [
+      "체지방을 분해해 몸무게를 줄임",
+      "피부 미백",
+      "주름 개선",
+      "자외선으로부터 피부 보호"
+    ],
+    "answer": 1,
+    "oneLineConcept": "기능성 화장품 = 미백·주름 개선·자외선 차단 등",
+    "explanation": "**기능성 화장품**은 화장품법에 따라 피부 미백, 주름 개선, 자외선 차단 등에 도움을 주는 제품입니다. 체지방을 분해해 몸무게를 줄이는 것은 화장품의 기능이 아닙니다.\n\n**틀린 선지**\n- 피부 미백: 맞는 기능입니다.\n- 주름 개선: 맞는 기능입니다.\n- 자외선으로부터 피부 보호: 맞는 기능입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "기능성 화장품"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "beautician-skin-cosmetics-0012",
+    "certId": "beautician-skin",
+    "subjectId": "written",
+    "chapterId": "cosmetics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "자외선 차단제의 SPF는 주로 어떤 자외선을 막는 정도를 나타내는가?",
+    "choices": [
+      "적외선",
+      "UV-A",
+      "UV-B",
+      "UV-C"
+    ],
+    "answer": 3,
+    "oneLineConcept": "SPF = UV-B 차단 지수, PA = UV-A",
+    "explanation": "**SPF**는 주로 일광화상을 일으키는 **UV-B**를 막는 정도를 숫자로 나타냅니다. UV-A를 막는 정도는 PA로 표시합니다.\n\n**틀린 선지**\n- UV-A: UV-A 차단 정도는 PA로 나타냅니다.\n- UV-C: 대부분 오존층에서 흡수되어 차단제 표시 대상이 아닙니다.\n- 적외선: 적외선은 자외선 차단 지수와 관계가 없습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "자외선 차단"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "beautician-skin-cosmetics-0013",
+    "certId": "beautician-skin",
+    "subjectId": "written",
+    "chapterId": "cosmetics",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "자외선을 반사하거나 흩어지게 해서 막는 물리적(무기) 자외선 차단 성분은?",
+    "choices": [
+      "이산화티타늄",
+      "글리세린",
+      "파라벤",
+      "히알루론산"
+    ],
+    "answer": 1,
+    "oneLineConcept": "물리적 차단 = 이산화티타늄·산화아연(반사·산란)",
+    "explanation": "**이산화티타늄**과 산화아연은 피부 위에서 자외선을 **반사하거나 흩어지게 해서** 막는 물리적(무기) 자외선 차단 성분입니다. 자극이 적은 편이지만 하얗게 뜨는 백탁이 생길 수 있습니다.\n\n**틀린 선지**\n- 글리세린: 보습제입니다.\n- 파라벤: 방부제입니다.\n- 히알루론산: 보습 성분입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "자외선 차단"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "beautician-skin-cosmetics-0014",
+    "certId": "beautician-skin",
+    "subjectId": "written",
+    "chapterId": "cosmetics",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "주름 개선 기능성 화장품의 성분으로 알맞은 것은?",
+    "choices": [
+      "알부틴",
+      "레티놀",
+      "이산화티타늄",
+      "글리세린"
+    ],
+    "answer": 2,
+    "oneLineConcept": "주름 개선 = 레티놀·아데노신, 미백 = 알부틴 등",
+    "explanation": "**레티놀**(비타민 A 계열)과 아데노신은 주름 개선 기능성 화장품의 대표 성분입니다. 알부틴은 미백 성분입니다.\n\n**틀린 선지**\n- 알부틴: 멜라닌 생성을 억제하는 미백 성분입니다.\n- 이산화티타늄: 자외선 차단 성분입니다.\n- 글리세린: 보습 성분입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "기능성 화장품"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "beautician-skin-cosmetics-0015",
+    "certId": "beautician-skin",
+    "subjectId": "written",
+    "chapterId": "cosmetics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "기초 화장품에 속하는 것은?",
+    "choices": [
+      "파운데이션",
+      "네일 에나멜",
+      "화장수",
+      "립스틱"
+    ],
+    "answer": 3,
+    "oneLineConcept": "기초 화장품 = 세안·정돈·보호(화장수·로션·크림)",
+    "explanation": "**기초 화장품**은 피부를 깨끗이 하고(세안), 정돈하고, 보호하는 제품입니다. **화장수**, 로션, 에센스, 크림이 여기에 속합니다.\n\n**틀린 선지**\n- 립스틱: 색조(메이크업) 화장품입니다.\n- 파운데이션: 색조(메이크업) 화장품입니다.\n- 네일 에나멜: 네일 화장품입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "화장품 분류"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  }
+]

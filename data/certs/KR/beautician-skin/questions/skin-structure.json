@@ -1,0 +1,609 @@
+[
+  {
+    "id": "beautician-skin-skin-structure-0001",
+    "certId": "beautician-skin",
+    "subjectId": "written",
+    "chapterId": "skin-structure",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "그림은 피부를 세로로 자른 모습이다. B층의 이름은?",
+    "choices": [
+      "표피",
+      "진피",
+      "피하조직",
+      "기저층"
+    ],
+    "answer": 2,
+    "oneLineConcept": "피부: 표피 → 진피 → 피하조직",
+    "explanation": "피부는 바깥에서부터 **표피 → 진피 → 피하조직** 세 층입니다. 그림에서 맨 위의 얇은 층(A)이 표피, 물결 모양 섬유가 있는 두꺼운 가운데 층(B)이 **진피**, 둥근 지방세포가 가득한 맨 아래층(C)이 피하조직입니다. 진피에는 콜라겐과 엘라스틴 같은 섬유가 있어 피부를 튼튼하고 탄력 있게 합니다.\n\n**틀린 선지**\n- 표피: 피부 맨 바깥의 얇은 층(그림의 A)입니다.\n- 피하조직: 지방세포가 모인 맨 아래층(그림의 C)입니다.\n- 기저층: 표피 안의 가장 아래층입니다. 그림의 B처럼 두꺼운 섬유층이 아닙니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "피부 구조",
+      "그림"
+    ],
+    "image": "skin-layers-abc.svg",
+    "imageAlt": "피부를 세로로 자른 단면 그림. 피부 표면 바로 아래의 얇은 층에 A, 그 아래 물결 모양 섬유가 그려진 두꺼운 층에 B, 맨 아래 둥근 세포가 가득 찬 층에 C 표시가 있다",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "beautician-skin-skin-structure-0002",
+    "certId": "beautician-skin",
+    "subjectId": "written",
+    "chapterId": "skin-structure",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "그림은 표피를 크게 확대한 모습이다. 진피와 맞닿은 맨 아래층 A에 대한 설명으로 옳은 것은?",
+    "choices": [
+      "죽은 세포가 쌓여 있다가 떨어져 나간다",
+      "손바닥과 발바닥에만 뚜렷하게 있다",
+      "세포 분열로 새 세포를 만들고 멜라닌세포가 있다",
+      "케라토하이알린 과립이 있는 납작한 세포층이다"
+    ],
+    "answer": 3,
+    "oneLineConcept": "기저층 = 새 세포 생성, 멜라닌세포",
+    "explanation": "표피는 바깥에서부터 각질층 → 투명층 → 과립층 → 유극층 → **기저층**입니다. 진피와 맞닿은 맨 아래 A가 기저층으로, 세포 분열로 **새 세포를 만들고** 피부색을 내는 **멜라닌세포**가 있습니다. 여기서 생긴 세포가 위로 밀려 올라가 결국 각질층이 됩니다.\n\n**틀린 선지**\n- 죽은 세포가 쌓여 있다가 떨어져 나간다: 맨 위의 각질층에 대한 설명입니다.\n- 손바닥과 발바닥에만 뚜렷하게 있다: 얇고 밝은 투명층에 대한 설명입니다.\n- 케라토하이알린 과립이 있는 납작한 세포층이다: 점이 든 납작한 세포층인 과립층에 대한 설명입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "피부 구조",
+      "표피",
+      "그림"
+    ],
+    "image": "epidermis-layer-a.svg",
+    "imageAlt": "표피를 확대한 그림. 위의 피부 표면부터 납작한 선이 겹친 층, 얇고 밝은 층, 작은 점이 든 납작한 세포층, 둥근 세포가 여러 줄 쌓인 두꺼운 층, 길쭉한 세포가 한 줄로 늘어선 층이 차례로 있고 그 아래가 진피이다. 한 줄로 늘어선 맨 아래층에 A 표시가 있다",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "beautician-skin-skin-structure-0003",
+    "certId": "beautician-skin",
+    "subjectId": "written",
+    "chapterId": "skin-structure",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "그림에서 진피 아래쪽에 실타래처럼 감겨 있고 관이 피부 표면에 직접 열려 있는 A의 주된 역할은?",
+    "choices": [
+      "피지를 내보내 피부와 털에 윤기를 준다",
+      "겨드랑이 등에서 체취의 원인이 되는 땀을 낸다",
+      "온몸에서 땀을 내보내 체온을 조절한다",
+      "털을 세워 소름이 돋게 한다"
+    ],
+    "answer": 3,
+    "oneLineConcept": "에크린 한선 = 피부 표면에 직접 열림, 체온 조절",
+    "explanation": "A는 관이 털구멍(모낭)이 아니라 **피부 표면에 직접 열리는 땀샘**, 곧 **에크린 한선**입니다. 에크린 한선은 온몸에 퍼져 있고, 땀을 내보내 땀이 마르면서 열을 빼앗아 **체온을 조절**합니다. 그림의 B는 모낭 옆에 붙은 피지선입니다.\n\n**틀린 선지**\n- 피지를 내보내 피부와 털에 윤기를 준다: 모낭 옆에 붙은 피지선(그림의 B)의 역할입니다.\n- 겨드랑이 등에서 체취의 원인이 되는 땀을 낸다: 아포크린 한선의 역할입니다. 아포크린 한선은 관이 피부 표면이 아니라 모낭으로 열립니다.\n- 털을 세워 소름이 돋게 한다: 모낭에 붙은 작은 근육(입모근)의 역할입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "피부 부속기관",
+      "한선",
+      "그림"
+    ],
+    "image": "skin-glands-ab.svg",
+    "imageAlt": "피부를 세로로 자른 그림. 가운데에 비스듬한 털과 모낭이 있고, 모낭 왼쪽 위에 붙은 주머니 모양 구조에 B 표시가 있다. 오른쪽 진피 아래쪽에는 실타래처럼 감긴 관이 있고 그 관이 위로 이어져 피부 표면에 열려 있으며, 감긴 부분에 A 표시가 있다",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "beautician-skin-skin-structure-0004",
+    "certId": "beautician-skin",
+    "subjectId": "written",
+    "chapterId": "skin-structure",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "표피 가운데 죽은 세포가 겹겹이 쌓여 있다가 때처럼 떨어져 나가는 층은?",
+    "choices": [
+      "기저층",
+      "각질층",
+      "유극층",
+      "과립층"
+    ],
+    "answer": 2,
+    "oneLineConcept": "각질층 = 죽은 세포층, 때처럼 떨어짐",
+    "explanation": "**각질층**은 표피의 가장 바깥층으로, 핵이 없는 죽은 세포가 겹겹이 쌓여 있습니다. 외부 자극을 막고 수분이 날아가는 것을 막다가 오래되면 때처럼 떨어져 나갑니다.\n\n**틀린 선지**\n- 기저층: 표피 맨 아래에서 새 세포를 만드는 층입니다.\n- 유극층: 표피에서 가장 두꺼운 층으로 살아 있는 세포가 있습니다.\n- 과립층: 각질층 아래쪽에 있으며 과립이 있는 층입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "피부 구조",
+      "표피"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "beautician-skin-skin-structure-0005",
+    "certId": "beautician-skin",
+    "subjectId": "written",
+    "chapterId": "skin-structure",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "피부색을 정하는 색소인 멜라닌을 만드는 세포는?",
+    "choices": [
+      "섬유아세포",
+      "랑게르한스세포",
+      "머켈세포",
+      "멜라닌세포"
+    ],
+    "answer": 4,
+    "oneLineConcept": "멜라닌 생성 = 기저층의 멜라닌세포",
+    "explanation": "**멜라닌세포**는 표피 기저층에 있으며 멜라닌 색소를 만들어 주변 세포에 나누어 줍니다. 멜라닌은 피부색을 정하고 자외선을 흡수해 피부를 보호합니다.\n\n**틀린 선지**\n- 섬유아세포: 진피에서 콜라겐과 엘라스틴을 만드는 세포입니다.\n- 랑게르한스세포: 표피에서 면역을 맡는 세포입니다.\n- 머켈세포: 기저층에서 촉각을 느끼는 세포입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "피부 구조",
+      "멜라닌"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "beautician-skin-skin-structure-0006",
+    "certId": "beautician-skin",
+    "subjectId": "written",
+    "chapterId": "skin-structure",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "표피의 기저층에 있으며 촉각(만지는 느낌)을 느끼는 데 관여하는 세포는?",
+    "choices": [
+      "머켈세포",
+      "랑게르한스세포",
+      "각질형성세포",
+      "비만세포"
+    ],
+    "answer": 1,
+    "oneLineConcept": "머켈세포 = 촉각세포(기저층)",
+    "explanation": "**머켈세포**는 표피 기저층에 있으며 신경 끝과 연결되어 **촉각**을 느끼는 데 관여합니다. 그래서 촉각세포라고도 부릅니다.\n\n**틀린 선지**\n- 랑게르한스세포: 표피에서 면역을 맡는 세포입니다.\n- 각질형성세포: 표피의 대부분을 이루며 각질을 만드는 세포입니다.\n- 비만세포: 진피 등에 있으며 히스타민을 내어 알레르기 반응에 관여하는 세포입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "피부 구조",
+      "표피 세포"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "beautician-skin-skin-structure-0007",
+    "certId": "beautician-skin",
+    "subjectId": "written",
+    "chapterId": "skin-structure",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "진피에서 피부가 늘어났다가 다시 돌아오게 하는 탄력을 주는 섬유는?",
+    "choices": [
+      "콜라겐(교원섬유)",
+      "엘라스틴(탄력섬유)",
+      "케라틴",
+      "멜라닌"
+    ],
+    "answer": 2,
+    "oneLineConcept": "엘라스틴(탄력섬유) = 피부 탄력",
+    "explanation": "**엘라스틴(탄력섬유)**은 고무줄처럼 늘어났다가 다시 돌아오는 성질이 있어 피부에 **탄력**을 줍니다. 콜라겐(교원섬유)은 피부를 튼튼하게 받쳐 줍니다.\n\n**틀린 선지**\n- 콜라겐(교원섬유): 피부를 튼튼하게 받쳐 주는 섬유입니다. 탄력의 주역은 엘라스틴입니다.\n- 케라틴: 각질·털·손톱을 이루는 단백질입니다.\n- 멜라닌: 피부색을 내는 색소입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "피부 구조",
+      "진피"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "beautician-skin-skin-structure-0008",
+    "certId": "beautician-skin",
+    "subjectId": "written",
+    "chapterId": "skin-structure",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "진피의 대부분을 차지해 피부를 튼튼하게 받쳐 주며, 나이가 들면 줄어들어 주름의 원인이 되는 섬유는?",
+    "choices": [
+      "엘라스틴",
+      "케라틴",
+      "콜라겐",
+      "히알루론산"
+    ],
+    "answer": 3,
+    "oneLineConcept": "콜라겐(교원섬유) = 진피의 주성분, 줄면 주름",
+    "explanation": "**콜라겐(교원섬유)**은 진피의 대부분을 차지하는 단단한 섬유로, 피부를 튼튼하게 받쳐 주고 수분을 붙잡습니다. 나이가 들거나 햇빛을 많이 받으면 콜라겐이 줄어 피부가 처지고 주름이 생깁니다.\n\n**틀린 선지**\n- 엘라스틴: 탄력을 주는 섬유로, 진피에서 차지하는 양은 콜라겐보다 훨씬 적습니다.\n- 케라틴: 표피의 각질, 털, 손톱을 이루는 단백질입니다.\n- 히알루론산: 섬유가 아니라 섬유 사이를 채우며 수분을 붙잡는 물질입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "피부 구조",
+      "진피"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "beautician-skin-skin-structure-0009",
+    "certId": "beautician-skin",
+    "subjectId": "written",
+    "chapterId": "skin-structure",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "진피 가운데 표피와 맞닿아 물결 모양으로 솟아 있고 모세혈관이 많은 층은?",
+    "choices": [
+      "기저층",
+      "과립층",
+      "망상층",
+      "유두층"
+    ],
+    "answer": 4,
+    "oneLineConcept": "진피 위쪽 물결 모양 = 유두층",
+    "explanation": "진피는 위쪽의 **유두층**과 아래쪽의 **망상층**으로 나뉩니다. 유두층은 표피 쪽으로 물결처럼 솟아 있고 모세혈관이 많아 표피에 영양을 줍니다. 망상층은 그물처럼 얽힌 섬유가 많은 두꺼운 층입니다.\n\n**틀린 선지**\n- 망상층: 진피 아래쪽의 그물 모양 섬유층입니다.\n- 기저층: 표피의 맨 아래층입니다. 진피가 아닙니다.\n- 과립층: 표피에 있는 층입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "피부 구조",
+      "진피"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "beautician-skin-skin-structure-0010",
+    "certId": "beautician-skin",
+    "subjectId": "written",
+    "chapterId": "skin-structure",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "피지선이 없는 부위는?",
+    "choices": [
+      "이마",
+      "코",
+      "손바닥과 발바닥",
+      "두피"
+    ],
+    "answer": 3,
+    "oneLineConcept": "피지선 없음 = 손바닥·발바닥",
+    "explanation": "**피지선**은 대부분 털이 나는 모낭에 붙어 있어 온몸에 퍼져 있지만, **손바닥과 발바닥**에는 없습니다. 이마·코·두피처럼 피지선이 많은 곳은 번들거리기 쉽습니다.\n\n**틀린 선지**\n- 이마: 이마는 피지선이 많은 부위입니다.\n- 코: 코는 피지선이 많은 부위입니다.\n- 두피: 두피는 피지선이 많은 부위입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "피부 부속기관",
+      "피지선"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "beautician-skin-skin-structure-0011",
+    "certId": "beautician-skin",
+    "subjectId": "written",
+    "chapterId": "skin-structure",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "아포크린 한선에 대한 설명으로 옳은 것은?",
+    "choices": [
+      "겨드랑이 등 일부 부위에 있고, 땀이 세균에 분해되면 체취의 원인이 된다",
+      "온몸에 퍼져 있으며 체온 조절이 주된 역할이다",
+      "손바닥과 발바닥에만 있다",
+      "피지를 만들어 피부에 윤기를 준다"
+    ],
+    "answer": 1,
+    "oneLineConcept": "아포크린 한선 = 겨드랑이 등, 체취",
+    "explanation": "**아포크린 한선**은 겨드랑이, 유두 주위, 외음부처럼 일부 부위에 있고 관이 모낭으로 열립니다. 사춘기 이후 활발해지며, 땀이 세균에 분해되면 **체취**가 납니다.\n\n**틀린 선지**\n- 온몸에 퍼져 있으며 체온 조절이 주된 역할이다: 에크린 한선에 대한 설명입니다.\n- 손바닥과 발바닥에만 있다: 아포크린 한선은 겨드랑이 등에 있습니다. 손바닥·발바닥에는 에크린 한선이 많습니다.\n- 피지를 만들어 피부에 윤기를 준다: 피지선에 대한 설명입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "피부 부속기관",
+      "한선"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "beautician-skin-skin-structure-0012",
+    "certId": "beautician-skin",
+    "subjectId": "written",
+    "chapterId": "skin-structure",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "피하조직의 역할로 거리가 먼 것은?",
+    "choices": [
+      "체온이 빠져나가지 않게 막는다",
+      "바깥 충격을 줄여 준다",
+      "지방으로 에너지를 저장한다",
+      "멜라닌을 만들어 자외선을 막는다"
+    ],
+    "answer": 4,
+    "oneLineConcept": "피하조직 = 보온·충격 완화·에너지 저장",
+    "explanation": "**피하조직**은 진피 아래의 지방층으로, 체온이 빠져나가지 않게 막고(보온), 바깥 충격을 줄이며, 지방 형태로 에너지를 저장합니다. 멜라닌을 만드는 것은 표피 기저층의 멜라닌세포입니다.\n\n**틀린 선지**\n- 체온이 빠져나가지 않게 막는다: 맞는 역할입니다.\n- 바깥 충격을 줄여 준다: 맞는 역할입니다.\n- 지방으로 에너지를 저장한다: 맞는 역할입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "피부 구조",
+      "피하조직"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "beautician-skin-skin-structure-0013",
+    "certId": "beautician-skin",
+    "subjectId": "written",
+    "chapterId": "skin-structure",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "피부의 기능으로 옳지 않은 것은?",
+    "choices": [
+      "햇빛을 받아 비타민 D를 만든다",
+      "혈액세포를 만든다",
+      "바깥 자극과 세균으로부터 몸을 보호한다",
+      "땀을 내어 체온을 조절한다"
+    ],
+    "answer": 2,
+    "oneLineConcept": "피부 기능 = 보호·체온조절·비타민 D 합성·감각 등",
+    "explanation": "피부는 몸을 **보호**하고, 땀과 혈관으로 **체온을 조절**하며, 자외선을 받아 **비타민 D**를 만들고, 감각을 느끼고, 노폐물을 내보내는 일을 합니다. 혈액세포를 만드는 곳은 뼈 속의 골수입니다.\n\n**틀린 선지**\n- 바깥 자극과 세균으로부터 몸을 보호한다: 맞는 기능입니다.\n- 땀을 내어 체온을 조절한다: 맞는 기능입니다.\n- 햇빛을 받아 비타민 D를 만든다: 맞는 기능입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "피부 기능"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "beautician-skin-skin-structure-0014",
+    "certId": "beautician-skin",
+    "subjectId": "written",
+    "chapterId": "skin-structure",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "케라토하이알린 과립이 있고, 바깥 물질이 들어오거나 몸속 수분이 빠져나가는 것을 막는 방어막이 있는 표피의 층은?",
+    "choices": [
+      "유극층",
+      "각질층",
+      "과립층",
+      "기저층"
+    ],
+    "answer": 3,
+    "oneLineConcept": "과립층 = 케라토하이알린 과립, 수분 방어막",
+    "explanation": "**과립층**은 각질층과 유극층 사이에 있는 층으로, 세포 안에 케라토하이알린 과립이 생기며 각질이 만들어지기 시작합니다. 과립층에는 바깥 물질이 들어오거나 몸속 수분이 빠져나가는 것을 막는 방어막(레인 방어막)이 있습니다.\n\n**틀린 선지**\n- 유극층: 표피에서 가장 두꺼운 층으로, 랑게르한스세포가 있습니다.\n- 각질층: 죽은 세포가 쌓인 맨 바깥층입니다.\n- 기저층: 새 세포를 만드는 맨 아래층입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "피부 구조",
+      "표피"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "beautician-skin-skin-structure-0015",
+    "certId": "beautician-skin",
+    "subjectId": "written",
+    "chapterId": "skin-structure",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "각질층의 수분을 붙잡아 두는 천연보습인자(NMF)를 이루는 성분 가운데 가장 많은 것은?",
+    "choices": [
+      "아미노산",
+      "콜라겐",
+      "멜라닌",
+      "엘라스틴"
+    ],
+    "answer": 1,
+    "oneLineConcept": "천연보습인자(NMF) 주성분 = 아미노산",
+    "explanation": "**천연보습인자(NMF)**는 각질층 안에서 수분을 붙잡아 피부를 촉촉하게 하는 물질입니다. 여러 성분 가운데 **아미노산**이 가장 많고, 젖산, 요소 등이 함께 들어 있습니다.\n\n**틀린 선지**\n- 콜라겐: 진피의 섬유 단백질입니다. 각질층의 천연보습인자 성분이 아닙니다.\n- 멜라닌: 피부색을 내는 색소입니다.\n- 엘라스틴: 진피의 탄력섬유입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "피부 구조",
+      "보습"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "beautician-skin-skin-structure-0016",
+    "certId": "beautician-skin",
+    "subjectId": "written",
+    "chapterId": "skin-structure",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "손톱과 발톱, 털을 이루는 주된 단백질은?",
+    "choices": [
+      "콜라겐",
+      "케라틴",
+      "엘라스틴",
+      "멜라닌"
+    ],
+    "answer": 2,
+    "oneLineConcept": "손발톱·털 = 케라틴",
+    "explanation": "**케라틴**은 단단한 단백질로 각질, 털, 손톱과 발톱을 이룹니다.\n\n**틀린 선지**\n- 콜라겐: 진피를 이루는 섬유 단백질입니다.\n- 엘라스틴: 진피의 탄력섬유입니다.\n- 멜라닌: 색을 내는 색소로 단백질 구조물의 주성분이 아닙니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "피부 부속기관",
+      "손발톱"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "beautician-skin-skin-structure-0017",
+    "certId": "beautician-skin",
+    "subjectId": "written",
+    "chapterId": "skin-structure",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "피부를 바깥에서 안쪽 순서로 바르게 나열한 것은?",
+    "choices": [
+      "피하조직 → 진피 → 표피",
+      "진피 → 표피 → 피하조직",
+      "표피 → 피하조직 → 진피",
+      "표피 → 진피 → 피하조직"
+    ],
+    "answer": 4,
+    "oneLineConcept": "피부: 표피 → 진피 → 피하조직",
+    "explanation": "피부는 바깥에서부터 **표피 → 진피 → 피하조직** 순서입니다. 얇은 표피가 몸을 덮고, 그 아래 섬유가 많은 진피가 받치며, 맨 아래 지방이 많은 피하조직이 있습니다.\n\n**틀린 선지**\n- 진피 → 표피 → 피하조직: 진피는 표피 아래에 있습니다.\n- 표피 → 피하조직 → 진피: 피하조직은 맨 아래층입니다.\n- 피하조직 → 진피 → 표피: 안쪽에서 바깥쪽으로 거꾸로 나열한 것입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "피부 구조"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  }
+]
