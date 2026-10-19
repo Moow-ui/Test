@@ -1113,5 +1113,293 @@
         2
       ]
     }
+  },
+  {
+    "id": "cdl-air-brakes-system-parts-0039",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "system-parts",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "The picture shows the inside of an S-cam drum brake. What is part A?",
+    "choices": [
+      "Return spring",
+      "S-cam",
+      "Brake drum"
+    ],
+    "answer": 2,
+    "oneLineConcept": "The S-cam sits between the shoe ends and spreads the shoes",
+    "explanation": "In an S-cam drum brake, the **S-cam** sits between the upper ends of the two brake shoes. It is called an S-cam because it is shaped like the letter \"S\". When you press the brake pedal, the camshaft turns the S-cam, and the S-cam forces the brake shoes apart and against the inside of the brake drum.\n\nIn this picture: A is the S-cam, B is a brake shoe with its lining, C is the return spring, and D is the brake drum.\n\n**Wrong choices**\n- Return spring: That is part C, the zigzag spring between the shoes. It pulls the shoes away from the drum when you let off the brakes.\n- Brake drum: That is part D, the outer ring. The wheel is bolted to the drum, and the shoes press against the inside of it.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "S-cam",
+      "foundation brakes",
+      "figure"
+    ],
+    "image": "scam-drum-brake-letters.svg",
+    "imageAlt": "Inside view of a drum brake. A thick outer ring (D) surrounds two curved brake shoes with gray linings; B points to the left shoe. At the top, between the upper ends of the shoes, is a small curved part on a shaft (A). Just below it, a zigzag part (C) joins the two shoes. A pin sits at the bottom.",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-system-parts-0040",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "system-parts",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "The picture shows the parts of an S-cam brake that are outside the drum. When you press the brake pedal, air goes into part A. What is part C?",
+    "choices": [
+      "Slack adjuster",
+      "Brake chamber",
+      "Return spring"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Push rod moves the slack adjuster, which twists the camshaft",
+    "explanation": "When you press the brake pedal, air goes into the **brake chamber** (A). The air pressure pushes the **push rod** (B) out. The push rod moves the **slack adjuster** (C), a lever on the end of the camshaft. Moving the slack adjuster twists the camshaft, which turns the S-cam inside the drum and presses the brake shoes against the drum.\n\nOrder to remember: brake chamber, push rod, slack adjuster, camshaft, S-cam, shoes.\n\n**Wrong choices**\n- Brake chamber: That is part A, where the air goes in.\n- Return spring: It is inside the drum, between the brake shoes, and pulls the shoes back when you release the brakes. It is not the lever on the camshaft.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "slack adjuster",
+      "S-cam",
+      "figure"
+    ],
+    "image": "scam-brake-linkage-letters.svg",
+    "imageAlt": "A round can (A) on the right has an air line marked Air in. A straight rod (B) comes out of its left side and connects to the top of an upright lever (C). The bottom of the lever is fixed on the end of a shaft labeled Camshaft, which runs back to a part labeled S-cam (inside the drum).",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-system-parts-0041",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "system-parts",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "In this simple air brake diagram, what is part B?",
+    "choices": [
+      "Safety relief valve",
+      "Foot valve (brake pedal)",
+      "Governor"
+    ],
+    "answer": 3,
+    "oneLineConcept": "The governor tells the compressor when to pump",
+    "explanation": "The **governor** is mounted on the air compressor and controls when the compressor pumps air into the tanks. It watches the tank pressure (the dashed line in the picture). When tank pressure rises to the cut-out level (about 125 psi), it stops the compressor from pumping. When pressure falls to the cut-in level (about 100 psi), it lets the compressor pump again.\n\nIn this diagram: A is the air compressor (driven by the engine), B is the governor, C is an air storage tank, D is the foot valve (brake pedal), and E are the brake chambers.\n\n**Wrong choices**\n- Safety relief valve: It is installed on the first air tank, not on the compressor. It lets air out if tank pressure gets too high.\n- Foot valve (brake pedal): That is part D, the part with the pedal. It sends air from the tanks to the brakes.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "governor",
+      "air system",
+      "figure"
+    ],
+    "image": "air-system-flow-letters.svg",
+    "imageAlt": "Diagram: an engine drives part A. Part B is a small box mounted on top of A, and a dashed line runs from B to the top of part C, a long rounded tank. A pipe runs from A into C. From C a pipe goes to part D, which has a pedal. From D the pipe branches to two parts marked E.",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-system-parts-0042",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "system-parts",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Part B is at the very bottom of the air tank. What is it for?",
+    "choices": [
+      "Letting air out if tank pressure gets too high",
+      "Draining water and compressor oil out of the tank",
+      "Showing how much air pressure is in the tank"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Drain valve at the tank bottom removes water and oil",
+    "explanation": "Part B is the **drain valve**. Compressed air usually has some water and some compressor oil in it. They collect at the bottom of the tank, so every air tank has a drain valve at the bottom. Water in the system can freeze in cold weather and make the brakes fail. A manual drain is opened with a quarter turn or by pulling a cable, and you must drain the tanks completely at the end of each day of driving.\n\n**Wrong choices**\n- Letting air out if tank pressure gets too high: That is the job of the safety relief valve (part A, on top of the first tank).\n- Showing how much air pressure is in the tank: That is the job of the supply pressure gauge in the cab.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "air tank drains",
+      "figure"
+    ],
+    "image": "air-tank-valves-letters.svg",
+    "imageAlt": "An air tank lying on its side. A pipe from the compressor enters on the left, and a pipe to the brakes leaves on the right. Part A is a valve on top of the tank. Part B is a small valve with a short handle at the very bottom of the tank.",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-system-parts-0043",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "system-parts",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Part A is on the first tank that the air compressor pumps air into. According to the CDL manual, this valve is usually set to open at about what pressure?",
+    "choices": [
+      "100 psi",
+      "125 psi",
+      "150 psi"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Safety relief valve on the first tank opens at about 150 psi",
+    "explanation": "Part A is the **safety relief valve**. It is installed in the first tank the air compressor pumps air into, and it protects the tank and the rest of the system from too much pressure. It is usually set to open at **150 psi**. If the safety valve lets air out, something is wrong (for example, with the governor). Have a mechanic fix it.\n\n**Wrong choices**\n- 100 psi: This is about the governor cut-in pressure, where the compressor starts pumping again.\n- 125 psi: This is about the governor cut-out pressure, where the compressor stops pumping. The safety valve is set higher than this, so it only opens if something is wrong.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "safety valve",
+      "figure"
+    ],
+    "image": "air-tank-valves-letters.svg",
+    "imageAlt": "An air tank lying on its side. A pipe from the compressor enters on the left, and a pipe to the brakes leaves on the right. Part A is a valve on top of the tank. Part B is a small valve with a short handle at the very bottom of the tank.",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-system-parts-0044",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "system-parts",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "The engine is running, and tank pressure has gone down because you have been using the brakes. The supply pressure gauge now reads 100 psi, as shown. According to the CDL manual, what should the governor do at about this pressure?",
+    "choices": [
+      "Stop the compressor from pumping air",
+      "Let the compressor start pumping air again",
+      "Open the safety valve to let air out"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Governor cut-in about 100 psi: compressor starts pumping",
+    "explanation": "The gauge reads **100 psi**. This is about the **cut-in** pressure. When tank pressure falls to the cut-in level, the governor lets the air compressor start pumping air into the tanks again.\n\n1. Cut-out: about 125 psi. The governor stops the compressor.\n2. Cut-in: about 100 psi. The governor lets the compressor pump again.\n\nTip: \"Out at the top (125), in at the bottom (100).\"\n\n**Wrong choices**\n- Stop the compressor from pumping air: That happens at the cut-out pressure, about 125 psi.\n- Open the safety valve to let air out: The safety valve on the first tank is usually set to open at about 150 psi, and only opens when something is wrong. The governor does not open it.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "governor",
+      "cut-in",
+      "gauge",
+      "figure"
+    ],
+    "image": "supply-gauge-100-psi.svg",
+    "imageAlt": "A round air pressure gauge marked PSI, with numbers from 0 to 160 in steps of 20 and small marks every 10 and every 5. The needle points exactly at 100.",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-system-parts-0045",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "system-parts",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "You are driving a newer truck. The supply pressure gauge reads about 50 psi, as shown, and the needle is still falling. According to the CDL manual, which statement is true?",
+    "choices": [
+      "The low air pressure warning should already be on, so stop safely right away",
+      "The spring brakes should already be fully on",
+      "The governor should be about to stop the compressor"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Low air warning must come on before pressure falls below 60 psi",
+    "explanation": "The gauge reads about **50 psi**, which is below 60 psi.\n\n1. A low air pressure warning you can see (usually a red light, often with a buzzer) must come on **before** tank pressure falls below **60 psi**. So at 50 psi it should already be on.\n2. When the warning comes on, bring the vehicle to a safe stop right away, while you can still control the brakes.\n3. Do not wait for the spring brakes to come on by themselves. On tractors and straight trucks they come fully on when pressure drops to about **20 to 45 psi** (typically 20 to 30 psi).\n\n**Wrong choices**\n- The spring brakes should already be fully on: 50 psi is still above the 20 to 45 psi range where they come fully on. You cannot count on them yet.\n- The governor should be about to stop the compressor: The governor stops the compressor at the cut-out pressure, about 125 psi, not when pressure is low.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "low air warning",
+      "spring brakes",
+      "gauge",
+      "figure"
+    ],
+    "image": "supply-gauge-50-psi.svg",
+    "imageAlt": "A round air pressure gauge marked PSI, with numbers from 0 to 160 in steps of 20 and small marks every 10 and every 5. The needle points halfway between 40 and 60, at the 50 mark.",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "cdl-air-brakes-system-parts-0046",
+    "certId": "cdl-air-brakes",
+    "subjectId": "air-brakes",
+    "chapterId": "system-parts",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "On a newer air brake vehicle, there is a yellow, diamond-shaped push-pull knob like this one in the cab. What happens when you pull it out?",
+    "choices": [
+      "It releases the parking brakes",
+      "It supplies air to the trailer",
+      "It puts on the parking brakes (spring brakes)"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Yellow diamond knob: pull out to park, push in to release",
+    "explanation": "On newer vehicles with air brakes, the **parking brake control** is a **yellow, diamond-shaped push-pull knob**. **Pull it out** to put on the parking brakes (spring brakes). **Push it in** to release them. Use the parking brakes whenever you park.\n\nRemember: never push the brake pedal down while the spring brakes are on. The springs and the air pressure together can damage the brakes.\n\n**Wrong choices**\n- It releases the parking brakes: It works the other way. Pushing the knob in releases them.\n- It supplies air to the trailer: The trailer air supply has its own control (red), not this yellow knob.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "parking brake control",
+      "spring brakes",
+      "figure"
+    ],
+    "image": "parking-brake-knob.svg",
+    "imageAlt": "Front view: a yellow knob shaped like a diamond (a square standing on one corner) on a gray dash panel. Side view: the knob sits on a short stem coming out of the dash. An arrow pointing toward the dash says Push in, and an arrow pointing away from the dash says Pull out.",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ]
+    }
   }
 ]
