@@ -1,0 +1,508 @@
+[
+  {
+    "id": "dmv-permit-georgia-dui-points-0001",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "rules",
+    "chapterId": "dui-points",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A driver 21 or older is considered under the influence of alcohol in Georgia at what blood alcohol concentration (BAC)?",
+    "choices": [
+      "0.10 or more",
+      "0.15 or more",
+      "0.08 or more",
+      "0.02 or more"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Age 21+: 0.08 BAC",
+    "explanation": "A driver **21 or older** is considered under the influence of alcohol at a **BAC of 0.08 or more**. You can also be charged at a lower level if alcohol or drugs make you a less safe driver.\n\n**Wrong choices**\n- 0.10 or more: 0.10 is higher than Georgia's limit.\n- 0.15 or more: 0.15 is much higher than Georgia's limit.\n- 0.02 or more: 0.02 is the limit for drivers under 21.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "dui",
+      "bac"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-dui-points-0002",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "rules",
+    "chapterId": "dui-points",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A driver under 21 is considered under the influence of alcohol in Georgia at what BAC?",
+    "choices": [
+      "0.04 or more",
+      "0.05 or more",
+      "0.08 or more",
+      "0.02 or more"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Under 21: 0.02 BAC",
+    "explanation": "A driver **under 21** is considered under the influence at a **BAC of 0.02 or more**, which can come from a very small amount of alcohol.\n\n**Wrong choices**\n- 0.04 or more: 0.04 is the limit for drivers of commercial motor vehicles.\n- 0.05 or more: 0.05 is not the Georgia limit for drivers under 21.\n- 0.08 or more: 0.08 is the limit for drivers 21 and older.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "dui",
+      "under 21"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-dui-points-0003",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "rules",
+    "chapterId": "dui-points",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "What is the BAC limit for a person driving a commercial motor vehicle (CMV) in Georgia?",
+    "choices": [
+      "0.04",
+      "0.02",
+      "0.08",
+      "0.10"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Commercial vehicle: 0.04 BAC",
+    "explanation": "Driving a **commercial motor vehicle** with a **BAC of 0.04 or higher** leads to disqualification of commercial driving privileges. This limit is half of the adult limit of 0.08.\n\n**Wrong choices**\n- 0.02: 0.02 is the limit for drivers under 21.\n- 0.08: 0.08 is the limit for adult drivers of regular vehicles.\n- 0.10: 0.10 is higher than any of these Georgia limits.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "dui",
+      "commercial vehicles"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-dui-points-0004",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "rules",
+    "chapterId": "dui-points",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "What happens if you refuse a state-administered chemical test for alcohol or drugs in Georgia?",
+    "choices": [
+      "You get a warning on the first refusal",
+      "Your license is suspended for 30 days",
+      "Your license is suspended for at least one year",
+      "Nothing, because the test is optional"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Refusing the test: at least 1-year suspension",
+    "explanation": "Under Georgia's **implied consent** law, driving means you agree to state chemical tests of your blood, breath, urine, or other bodily substances. If you **refuse**, your license is **suspended for at least one year**, and the refusal may be used as evidence at trial.\n\n**Wrong choices**\n- You get a warning on the first refusal: There is no warning for a first refusal.\n- Your license is suspended for 30 days: The suspension is at least one year, not 30 days.\n- Nothing, because the test is optional: The test is not optional under implied consent. Refusing brings a suspension.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "implied consent",
+      "suspension"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-dui-points-0005",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "rules",
+    "chapterId": "dui-points",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "How many points within 24 months will cause a Georgia driver's license to be suspended?",
+    "choices": [
+      "12 points",
+      "15 points",
+      "20 points",
+      "10 points"
+    ],
+    "answer": 2,
+    "oneLineConcept": "15 points in 24 months = suspension",
+    "explanation": "Georgia **suspends** the license of a person who collects **15 or more points within 24 months**. When a license is suspended for points, the point total goes back to zero.\n\n**Wrong choices**\n- 12 points: 12 points is below the limit.\n- 20 points: 20 points is more than the limit. Suspension starts at 15.\n- 10 points: 10 points is below the limit.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "points",
+      "suspension"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-dui-points-0006",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "rules",
+    "chapterId": "dui-points",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A driver under 18 builds up points on the driving record. How many points within 12 months cause a suspension?",
+    "choices": [
+      "6 points",
+      "2 points",
+      "4 points",
+      "15 points"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Under 18: 4 points in 12 months = suspension",
+    "explanation": "A driver **under 18** is suspended after collecting **4 or more points within 12 months**. Adults are suspended at 15 points in 24 months.\n\n**Wrong choices**\n- 6 points: 6 points is more than the limit. Suspension starts at 4.\n- 2 points: 2 points is less than the limit for drivers under 18.\n- 15 points: 15 points in 24 months is the adult rule.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "points",
+      "under 18"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-dui-points-0007",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "rules",
+    "chapterId": "dui-points",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "How many points are added for speeding 24 to 33 mph over the posted limit in Georgia?",
+    "choices": [
+      "6 points",
+      "3 points",
+      "2 points",
+      "4 points"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Speeding 24 to 33 over: 4 points",
+    "explanation": "Georgia points for speeding: **15 to 18 mph over: 2 points**; **19 to 23 over: 3 points**; **24 to 33 over: 4 points**; **34 or more over: 6 points**. A 4-point violation also suspends a driver under 21.\n\n**Wrong choices**\n- 6 points: 6 points is for 34 mph or more over.\n- 3 points: 3 points is for 19 to 23 mph over.\n- 2 points: 2 points is for 15 to 18 mph over.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "points",
+      "speeding"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-dui-points-0008",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "rules",
+    "chapterId": "dui-points",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "How many points does Georgia add for unlawfully passing a stopped school bus?",
+    "choices": [
+      "3 points",
+      "6 points",
+      "4 points",
+      "2 points"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Passing a stopped school bus: 6 points",
+    "explanation": "**Unlawfully passing a school bus** is one of the most serious point violations: **6 points**. Aggressive driving and speeding 34 mph or more over the limit are also 6 points.\n\n**Wrong choices**\n- 3 points: 3 points is for violations such as disobeying a traffic-control device.\n- 4 points: 4 points is for reckless driving or improper passing on a hill or curve.\n- 2 points: 2 points is for violations such as speeding 15 to 18 mph over.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "points",
+      "school bus"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-dui-points-0009",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "rules",
+    "chapterId": "dui-points",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "How can a licensed Georgia driver reduce the points on their record?",
+    "choices": [
+      "Finish a certified 6-hour driver improvement course to remove up to 7 points, once every 5 years",
+      "Wait 6 months and all points disappear",
+      "Take the knowledge test again",
+      "Pay an extra fee to erase all points at any time"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Points reduction: 6-hour course, up to 7 points, once per 5 years",
+    "explanation": "A licensed Georgia resident may ask the DDS to **reduce points by up to 7**, **once every 5 years**, by completing a certified **6-hour driver improvement (defensive driving) course** and sending in the original certificate.\n\n**Wrong choices**\n- Wait 6 months and all points disappear: Points do not disappear after 6 months.\n- Take the knowledge test again: Retaking the knowledge test does not remove points.\n- Pay an extra fee to erase all points at any time: Points cannot be erased by paying a fee.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "points",
+      "driver improvement"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-dui-points-0010",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "rules",
+    "chapterId": "dui-points",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Your doctor prescribed a medicine that makes you drowsy. Can you be charged with driving under the influence if it makes you unsafe to drive?",
+    "choices": [
+      "Yes; a prescription is not a defense if the medicine makes you unsafe to drive",
+      "No; prescribed medicine is always legal to drive with",
+      "No; DUI laws apply only to alcohol",
+      "Only if you also drank alcohol"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Impairing prescription drugs can still be DUI",
+    "explanation": "Georgia's DUI law covers **alcohol, drugs (prescription or illegal), and any other substance** that impairs your ability to drive safely. **Having a prescription is not a defense** if the medicine makes you unsafe.\n\n**Wrong choices**\n- No; prescribed medicine is always legal to drive with: Legal medicine can still impair you, and driving impaired is illegal.\n- No; DUI laws apply only to alcohol: DUI laws cover drugs and other substances, not only alcohol.\n- Only if you also drank alcohol: Alcohol is not needed. An impairing drug alone is enough.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "dui",
+      "drugs"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-dui-points-0011",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "rules",
+    "chapterId": "dui-points",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A 19-year-old is convicted of a first DUI with a BAC of 0.05. What is the license suspension?",
+    "choices": [
+      "At least 3 years",
+      "At least 30 days",
+      "No suspension, because the BAC was under 0.08",
+      "At least 6 months"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Under 21 first DUI at 0.02 to under 0.08: at least 6 months",
+    "explanation": "For a driver **under 21**, a **first DUI** with a **BAC of 0.02 or more but less than 0.08** brings a suspension of **at least 6 months** (12 months if the driver has certain earlier convictions). A BAC of 0.08 or more, or a refusal, brings **at least 12 months**. No limited permit is available.\n\n**Wrong choices**\n- At least 3 years: 3 years is not the first-offense suspension for this BAC.\n- At least 30 days: 30 days is far shorter than the minimum suspension.\n- No suspension, because the BAC was under 0.08: For drivers under 21, the limit is 0.02, so 0.05 is a DUI.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "dui",
+      "under 21",
+      "suspension"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-dui-points-0012",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "rules",
+    "chapterId": "dui-points",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "You are in a crash. When must you notify the police right away?",
+    "choices": [
+      "Only if someone is killed",
+      "Only if the damage is more than $5,000",
+      "If anyone is hurt or killed, or if property damage is more than $500",
+      "Only if the other driver asks you to"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Report a crash: injury, death, or damage over $500",
+    "explanation": "After a crash, **stop** in a safe place and **notify the nearest law enforcement agency immediately** if **anyone is injured or killed** or **property damage is more than $500**. Give your name, address, plate number, and license number to the others involved.\n\n**Wrong choices**\n- Only if someone is killed: Injuries must be reported too, not only deaths.\n- Only if the damage is more than $5,000: The damage amount is $500, not $5,000.\n- Only if the other driver asks you to: The duty to report does not depend on the other driver.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "crashes",
+      "reporting"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-dui-points-0013",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "rules",
+    "chapterId": "dui-points",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A driver is going 66 mph in a 45 mph zone and is convicted of speeding. How many points are added?",
+    "choices": [
+      "4 points",
+      "3 points",
+      "2 points",
+      "6 points"
+    ],
+    "answer": 2,
+    "oneLineConcept": "21 mph over falls in 19 to 23: 3 points",
+    "explanation": "Find how far over the limit the driver was, then match it to Georgia's point ranges.\n\n1. Speed over the limit: 66 - 45 = **21 mph over**.\n2. Point ranges: 15 to 18 over = 2 points; **19 to 23 over = 3 points**; 24 to 33 over = 4 points; 34 or more over = 6 points.\n3. 21 is between 19 and 23, so the driver gets **3 points**.\n4. Check: 45 + 21 = 66, which matches the speed in the question.\n\n**Wrong choices**\n- 4 points: 4 points is for 24 to 33 mph over. 21 mph over is lower.\n- 2 points: 2 points is for 15 to 18 mph over. 21 mph over is higher.\n- 6 points: 6 points is for 34 mph or more over.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "points",
+      "speeding",
+      "calculation"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-dui-points-0014",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "rules",
+    "chapterId": "dui-points",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which of these describes the offense of aggressive driving in Georgia?",
+    "choices": [
+      "Driving with the intent to annoy, harass, intimidate, injure, or obstruct another person",
+      "Forgetting to signal once",
+      "Driving 5 mph over the speed limit",
+      "Driving below the minimum speed"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Aggressive driving = driving with intent to harass or harm",
+    "explanation": "**Aggressive driving** means operating a vehicle **with the intent to annoy, harass, molest, intimidate, injure, or obstruct** another person, for example by tailgating or blocking others on purpose. It is a serious misdemeanor and is worth **6 points**.\n\n**Wrong choices**\n- Forgetting to signal once: A single missed signal is a minor violation, not aggressive driving.\n- Driving 5 mph over the speed limit: Minor speeding is a speeding violation, not aggressive driving.\n- Driving below the minimum speed: Driving too slowly is a different violation.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "aggressive driving",
+      "points"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  }
+]

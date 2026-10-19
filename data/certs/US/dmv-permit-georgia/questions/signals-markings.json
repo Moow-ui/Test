@@ -1,0 +1,701 @@
+[
+  {
+    "id": "dmv-permit-georgia-signals-markings-0001",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "signs",
+    "chapterId": "signals-markings",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What should you do at a flashing red traffic light?",
+    "choices": [
+      "Stop completely, then go when it is safe, as at a stop sign",
+      "Slow down and go through with caution without stopping",
+      "Speed up to clear the intersection",
+      "Stop and wait until the light turns green"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Flashing red = treat it like a STOP sign",
+    "explanation": "A **flashing red light** means the same as a **STOP sign**. Come to a **complete stop**, yield to pedestrians and other vehicles, and go when it is safe.\n\n**Wrong choices**\n- Slow down and go through with caution without stopping: Going through without stopping is what a flashing yellow light allows, not a flashing red one.\n- Speed up to clear the intersection: Speeding up at any red light is dangerous and illegal.\n- Stop and wait until the light turns green: A flashing red light does not turn green. You go after stopping and yielding.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "traffic signals",
+      "flashing red"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-signals-markings-0002",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "signs",
+    "chapterId": "signals-markings",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What does a flashing yellow traffic light mean?",
+    "choices": [
+      "The light is about to turn green",
+      "Stop completely, then go when it is safe",
+      "The intersection is closed",
+      "Slow down and go ahead with caution"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Flashing yellow = slow down and use caution",
+    "explanation": "A **flashing yellow light** means **slow down** and **use caution** as you go through the intersection. You do not have to stop unless traffic or pedestrians require it.\n\n**Wrong choices**\n- The light is about to turn green: A flashing yellow light does not count down to green. It stays a caution signal.\n- Stop completely, then go when it is safe: A full stop is what a flashing red light requires.\n- The intersection is closed: A flashing yellow light does not close the intersection. You may go through carefully.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "traffic signals",
+      "flashing yellow"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-signals-markings-0003",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "signs",
+    "chapterId": "signals-markings",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "You reach an intersection where the traffic signal is completely dark because of a power outage. What must you do?",
+    "choices": [
+      "Go through, because the main road always has the right of way",
+      "Wait until a police officer arrives",
+      "Treat it as if there is a stop sign in every direction",
+      "Treat it as a flashing yellow light and slow down"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Dark signal = all-way stop",
+    "explanation": "If a traffic signal is **not working at all**, Georgia law says **all drivers** must treat the intersection as if **stop signs** were posted in **every direction**. Stop, take turns, and yield.\n\n**Wrong choices**\n- Go through, because the main road always has the right of way: No road gets the right of way automatically at a dark signal. Every driver must stop.\n- Wait until a police officer arrives: You do not wait for an officer. Stop, then go in turn when it is safe.\n- Treat it as a flashing yellow light and slow down: A dark signal is treated like stop signs, not like a flashing yellow light.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "traffic signals",
+      "signal outage"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-signals-markings-0004",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "signs",
+    "chapterId": "signals-markings",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What does a steady yellow traffic light mean?",
+    "choices": [
+      "You may go only if you are turning right",
+      "The light is about to turn red, so slow down and prepare to stop",
+      "Stop and wait for a flashing green light",
+      "Speed up to get through before it turns red"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Steady yellow = red is coming, prepare to stop",
+    "explanation": "A **steady yellow light** warns that the signal is changing **from green to red**. **Slow down and prepare to stop** if you can do so safely.\n\n**Wrong choices**\n- You may go only if you are turning right: The yellow light is not a special signal for right turns.\n- Stop and wait for a flashing green light: Georgia signals do not use a flashing green light. You wait for the next green.\n- Speed up to get through before it turns red: Speeding up to beat the light is dangerous.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "traffic signals",
+      "yellow light"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-signals-markings-0005",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "signs",
+    "chapterId": "signals-markings",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "What does a flashing yellow arrow pointing left mean?",
+    "choices": [
+      "You may turn left after yielding to oncoming traffic and pedestrians",
+      "You may not turn left until the arrow turns green",
+      "The left lane is closed ahead",
+      "Oncoming traffic must stop for your left turn"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Flashing yellow arrow: left turn allowed, but yield",
+    "explanation": "A **flashing yellow arrow** means you **may turn left**, but you must **yield** first. **Oncoming traffic still has a green light**, and pedestrians may be crossing.\n\n**Wrong choices**\n- You may not turn left until the arrow turns green: You do not have to wait for a green arrow. You may turn when there is a safe gap.\n- The left lane is closed ahead: Lane closures are shown by signs or a red X, not a flashing yellow arrow.\n- Oncoming traffic must stop for your left turn: Oncoming traffic does not stop. It still has a green light.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "traffic signals",
+      "left turn"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-signals-markings-0006",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "signs",
+    "chapterId": "signals-markings",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Your light turns green, but a pedestrian is still crossing in front of you. What should you do?",
+    "choices": [
+      "Drive around the pedestrian slowly",
+      "Go, because the green light gives you the right of way",
+      "Wait until the pedestrian has cleared, then go when it is safe",
+      "Honk so the pedestrian hurries"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Green means go only after yielding",
+    "explanation": "A **green light** lets you go **only after** you stop for pedestrians and yield to vehicles **still in the intersection**. Wait until the way is clear.\n\n**Wrong choices**\n- Drive around the pedestrian slowly: Driving around a pedestrian in a crosswalk is dangerous and not allowed.\n- Go, because the green light gives you the right of way: A green light does not give you the right to hit or rush people still crossing.\n- Honk so the pedestrian hurries: Honking can scare a pedestrian. Simply wait.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "traffic signals",
+      "pedestrians"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-signals-markings-0007",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "signs",
+    "chapterId": "signals-markings",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "You are driving the car marked YOU in the picture. What do the center lines tell you?",
+    "choices": [
+      "You may pass when the way ahead is clear",
+      "You may not pass from your lane here",
+      "The road ends ahead",
+      "Oncoming traffic may not pass, but you may"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Solid yellow on your side = no passing for you",
+    "explanation": "When a **solid yellow line** is on **your side** of the center, passing is **not allowed** from your lane. The **broken** line is on the other side, so oncoming drivers may pass when it is safe.\n\n**Wrong choices**\n- You may pass when the way ahead is clear: The solid line on your side means you may not pass, even if the road looks clear.\n- The road ends ahead: Center lines show passing rules. They do not show where a road ends.\n- Oncoming traffic may not pass, but you may: This is reversed. The broken line is on the oncoming side, so they may pass, not you.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "pavement markings",
+      "no passing"
+    ],
+    "image": "no-passing-markings.svg",
+    "imageAlt": "Top view of a two-lane road with traffic going in opposite directions. A car labeled YOU is in the right-hand lane facing up the page. In the center are two yellow lines: a solid yellow line next to your lane and a broken yellow line next to the other lane.",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-signals-markings-0008",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "signs",
+    "chapterId": "signals-markings",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "What is the center lane shown in the picture used for?",
+    "choices": [
+      "Passing slower vehicles in either direction",
+      "Parking and loading",
+      "Emergency vehicles only",
+      "Only for making left turns, by traffic from either direction"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Center turn lane: left turns only",
+    "explanation": "This is a **two-way left turn lane**. It is bordered by **solid yellow lines on the outside** and **broken yellow lines on the inside**, with turn arrows pointing both ways. Georgia law allows it **only for left turns**, and drivers from **both directions** use it.\n\n**Wrong choices**\n- Passing slower vehicles in either direction: Passing in the center turn lane is not allowed. It is only for turning left.\n- Parking and loading: You may not park or load in a travel or turn lane.\n- Emergency vehicles only: The lane is for any driver making a left turn, not only emergency vehicles.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "pavement markings",
+      "center turn lane"
+    ],
+    "image": "center-turn-lane.svg",
+    "imageAlt": "Top view of a three-lane road. The middle lane is bordered on each outer side by a solid yellow line with a broken yellow line just inside it. Two white curved arrows in the middle lane point in opposite directions.",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-signals-markings-0009",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "signs",
+    "chapterId": "signals-markings",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "How far before your left turn may you drive in a center two-way left turn lane?",
+    "choices": [
+      "No more than 300 feet",
+      "Up to 1 mile",
+      "No more than 100 feet",
+      "No more than 500 feet"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Enter the center turn lane within 300 feet of the turn",
+    "explanation": "Georgia law lets you use the center turn lane **only to turn left**. You may enter it **no more than 300 feet** before the place where you will turn. Watch for drivers from the other direction who may enter it too.\n\n**Wrong choices**\n- Up to 1 mile: Driving a mile in the center lane would turn it into a travel lane, which is not allowed.\n- No more than 100 feet: 100 feet is shorter than the rule. You may enter within 300 feet.\n- No more than 500 feet: 500 feet is too far. The limit is 300 feet.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "center turn lane",
+      "left turn"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-signals-markings-0010",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "signs",
+    "chapterId": "signals-markings",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Signals hang over each lane of a road as shown. What does the red X over the right lane mean?",
+    "choices": [
+      "Clear out of that lane soon because it is about to close",
+      "You may drive in that lane only to turn left",
+      "That lane is a toll lane",
+      "You may not drive in that lane in your direction"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Red X over a lane = do not drive in that lane",
+    "explanation": "Lane control signals hang **over each lane**. A **green arrow** means you may travel in that lane. A **steady red X** means **no travel in that lane** in your direction, because traffic may be coming the other way.\n\n**Wrong choices**\n- Clear out of that lane soon because it is about to close: Clearing out of a lane is what a steady yellow X means. A red X means you may not be in the lane at all.\n- You may drive in that lane only to turn left: A left turn lane signal is a flashing yellow X, not a red X.\n- That lane is a toll lane: Toll lanes are marked with guide signs, not a red X.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "lane control signals",
+      "reversible lanes"
+    ],
+    "image": "lane-control-x.svg",
+    "imageAlt": "Three square black signal faces hang over a three-lane road, one above each lane. Over the left and middle lanes are green arrows pointing down. Over the right lane is a red X.",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-signals-markings-0011",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "signs",
+    "chapterId": "signals-markings",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "On a road with reversible lanes, the signal over your lane shows a steady yellow X. What should you do?",
+    "choices": [
+      "Move out of that lane, because it is about to change",
+      "Keep driving in the lane, because yellow means caution only",
+      "Stop in the lane until it turns green",
+      "Turn left from that lane right away"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Steady yellow X: clear the lane",
+    "explanation": "Over reversible lanes, a **steady yellow X** means **clear the lane**: move out safely because it is about to close to your direction. A **flashing yellow X** means the lane is for left turns, and a **red X** means do not drive in it.\n\n**Wrong choices**\n- Keep driving in the lane, because yellow means caution only: Staying in the lane is unsafe. Traffic may soon use it from the other direction.\n- Stop in the lane until it turns green: Stopping in a travel lane can cause a crash. Change lanes instead.\n- Turn left from that lane right away: Left turns are shown by a flashing yellow X, not a steady one.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "lane control signals",
+      "reversible lanes"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-signals-markings-0012",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "signs",
+    "chapterId": "signals-markings",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "On a two-lane road, the center line is a broken yellow line. What does it mean?",
+    "choices": [
+      "Only traffic in your direction may pass",
+      "The road is one-way",
+      "Passing is allowed in either direction when it is safe",
+      "Passing is not allowed in either direction"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Broken yellow center line: passing allowed when safe",
+    "explanation": "A **broken yellow center line** on a two-lane road means drivers in **either direction may pass** when the way is clear and it is safe.\n\n**Wrong choices**\n- Only traffic in your direction may pass: One-sided passing is shown by a solid line on one side and a broken line on the other.\n- The road is one-way: Yellow center lines separate traffic going in opposite directions, so the road is two-way.\n- Passing is not allowed in either direction: No passing in either direction is shown by two solid yellow lines.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "pavement markings",
+      "center line"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-signals-markings-0013",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "signs",
+    "chapterId": "signals-markings",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "What do white dashed lines between lanes tell you?",
+    "choices": [
+      "They separate traffic moving in opposite directions",
+      "They separate lanes of traffic moving in the same direction",
+      "They mark a no passing zone",
+      "They mark the edge of the road"
+    ],
+    "answer": 2,
+    "oneLineConcept": "White lane lines: same direction",
+    "explanation": "**White dashed lane lines** separate **lanes going the same direction**. You may change lanes across them when it is safe. **Yellow** lines separate traffic going in **opposite** directions.\n\n**Wrong choices**\n- They separate traffic moving in opposite directions: Opposite directions are separated by yellow center lines.\n- They mark a no passing zone: No passing zones are marked by solid yellow lines.\n- They mark the edge of the road: The edge of the road is marked by a solid white edge line.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "pavement markings",
+      "lane lines"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-signals-markings-0014",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "signs",
+    "chapterId": "signals-markings",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Two solid white lines separate your lane from the lane next to it. What do they mean?",
+    "choices": [
+      "You may not change lanes across them",
+      "You may change lanes when it is safe",
+      "They mark a bicycle lane you may drive in",
+      "You may cross them only to pass"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Double solid white: no lane change",
+    "explanation": "**Double white lines** show where you may or may not move into the next lane. When they are **dashed**, you may cross. When they are **solid**, **lane changes are prohibited**.\n\n**Wrong choices**\n- You may change lanes when it is safe: Changing lanes when safe is allowed across dashed lines, not solid double white lines.\n- They mark a bicycle lane you may drive in: Bicycle lanes are marked with a single solid white line and bike symbols. You may not drive in them.\n- You may cross them only to pass: Crossing to pass is still a lane change, and solid double white lines forbid it.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "pavement markings",
+      "double white lines"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-signals-markings-0015",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "signs",
+    "chapterId": "signals-markings",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "You see a triangle-shaped area of diagonal yellow lines painted on the road ahead. What does it mean?",
+    "choices": [
+      "It is a passing lane for faster traffic",
+      "It is a waiting area for left turns",
+      "The road narrows or there is an obstruction, so keep to the right of the markings",
+      "It is a place where you may park briefly"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Diagonal yellow striping: narrowing or obstruction, keep right",
+    "explanation": "**Diagonal yellow lines** inside a triangle-shaped area warn that the **road is narrowing** or there is an **obstruction**. Do not drive on them. **Always keep to the right** of these markings.\n\n**Wrong choices**\n- It is a passing lane for faster traffic: You may not drive on the striped area at all.\n- It is a waiting area for left turns: A left turn lane has turn arrows and lane lines, not diagonal striping.\n- It is a place where you may park briefly: Parking on painted striping in the road is not allowed.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "pavement markings",
+      "striping"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-signals-markings-0016",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "signs",
+    "chapterId": "signals-markings",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "You are walking and the pedestrian signal begins to flash DON'T WALK (or a flashing hand) while you are halfway across. What should you do?",
+    "choices": [
+      "Start running diagonally across traffic",
+      "Finish crossing the street",
+      "Go back to the curb you started from",
+      "Stop and wait in the middle of the road"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Flashing DON'T WALK: don't start, but finish if already crossing",
+    "explanation": "A **flashing DON'T WALK** signal means **do not start** crossing. If you have **already started**, **finish crossing** the street. Drivers must still let you clear the crosswalk.\n\n**Wrong choices**\n- Start running diagonally across traffic: Running at an angle across traffic is unsafe. Keep to the crosswalk.\n- Go back to the curb you started from: Turning back can leave you in the road longer. The rule is to finish crossing.\n- Stop and wait in the middle of the road: Standing in the middle of the road is dangerous.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "pedestrian signals",
+      "crosswalk"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-signals-markings-0017",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "signs",
+    "chapterId": "signals-markings",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "At a pedestrian hybrid beacon, the two red lights begin to flash back and forth after a pedestrian pressed the button. What must a driver do?",
+    "choices": [
+      "Slow down and drive through without stopping",
+      "Stop and wait until the beacon goes dark",
+      "Speed up before the lights turn solid red",
+      "Stop completely, then go once pedestrians have cleared the crosswalk"
+    ],
+    "answer": 4,
+    "oneLineConcept": "PHB alternating flashing red: stop, go when crosswalk is clear",
+    "explanation": "A **pedestrian hybrid beacon** stays **dark** until a pedestrian presses the button. It then shows flashing yellow, solid yellow, and **double solid red** (stop). Next come **alternating flashing red** lights: **come to a full stop** and **go when pedestrians have cleared the crosswalk**.\n\n**Wrong choices**\n- Slow down and drive through without stopping: Flashing red requires a full stop first.\n- Stop and wait until the beacon goes dark: You do not have to wait for the beacon to go dark. During flashing red you may go after stopping if the crosswalk is clear.\n- Speed up before the lights turn solid red: Speeding up at red signals is illegal and dangerous.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "pedestrian hybrid beacon",
+      "traffic signals"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-signals-markings-0018",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "signs",
+    "chapterId": "signals-markings",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "There is a white stop line painted across your lane at a STOP sign. Where should you stop?",
+    "choices": [
+      "In the crosswalk",
+      "Behind the white stop line",
+      "Wherever you can see best, even past the line",
+      "Right next to the stop sign, past the line"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Stop line: stop behind it",
+    "explanation": "A **stop line** is a white line across your lane. When it is there, you must **stop behind the line**, not at the sign or signal itself.\n\n**Wrong choices**\n- In the crosswalk: Stopping in the crosswalk blocks pedestrians.\n- Wherever you can see best, even past the line: When a stop line is painted, you stop at the line first. You may then creep forward to look if needed.\n- Right next to the stop sign, past the line: The sign may be past the line. You stop at the line when there is one.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "pavement markings",
+      "stop line"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-signals-markings-0019",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "signs",
+    "chapterId": "signals-markings",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A bicycle lane runs along the right side of the road. When may you drive across it?",
+    "choices": [
+      "Only to make a turn, after yielding to any bicyclists in it",
+      "When you need to park briefly",
+      "Whenever you need to pass a slower car on the right",
+      "Any time traffic in your lane is slow"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Bike lane: cross only to turn, yield to riders",
+    "explanation": "Drivers may **not drive or park** in a bicycle lane. You may **cross it only to make a turn**, and you must **yield to bicyclists** who are in it.\n\n**Wrong choices**\n- When you need to park briefly: Parking in a bike lane is not allowed, even briefly.\n- Whenever you need to pass a slower car on the right: Passing on the right in a bike lane is not allowed.\n- Any time traffic in your lane is slow: Slow traffic does not let you use the bike lane.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "bicycle lane",
+      "pavement markings"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  }
+]

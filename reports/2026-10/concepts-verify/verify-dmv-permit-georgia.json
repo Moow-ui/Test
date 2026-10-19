@@ -1,0 +1,27 @@
+{
+  "cert": "dmv-permit-georgia",
+  "date": "2026-10-20",
+  "sourceChecked": "Georgia Drivers' Manual 2023-2024 (dds.georgia.gov/document/document/ga-drivers-manual-2023-2024/download, latest linked from the DDS manuals page); MUTCD 2023",
+  "chapters": {
+    "regulatory-signs": {"result": "PASS", "issues": [
+      "Note only: 'Half of the Georgia knowledge exam is the Road Signs test, and it is given in English only.' → matches manual (Road Signs 20 questions + Road Rules 20 questions, signs test in English only) → Manual p.12"
+    ]},
+    "warning-signs": {"result": "PASS", "issues": [
+      "Note only: concept 'A plate under the crossbuck shows the number of tracks.' → MUTCD uses the plate only where there are two or more tracks; summary already says 'sometimes'. Consider 'may show' for consistency → MUTCD R15-2P"
+    ]},
+    "signals-markings": {"result": "PASS", "issues": []},
+    "right-of-way": {"result": "PASS", "issues": []},
+    "speed-passing-parking": {"result": "PASS", "issues": []},
+    "safe-driving": {"result": "PASS", "issues": []},
+    "teen-licensing": {"result": "PASS", "issues": []},
+    "dui-points": {"result": "PASS", "issues": [
+      "Note only: BAC card 'Driving a commercial motor vehicle at 0.04 or more leads to disqualification.' → fact is correct (O.C.G.A. 40-6-391(i); 49 CFR 383.51) but the cited Georgia Drivers' Manual (DUI section) does not state 0.04; consider citing the Georgia CDL Manual / O.C.G.A. 40-6-391",
+      "Note only (all chapters): sources say year 2026 but the current manual linked from DDS is the 2023-2024 edition; all checked numbers match that edition"
+    ]}
+  },
+  "figures": {
+    "sign-shapes": {"c1": "PASS", "c2": "PASS", "c3": "PASS", "c5": "PASS", "note": "Octagon/triangle/upright and wide rectangle/diamond/pentagon (fluorescent yellow-green)/round RR match MUTCD shapes and colors; matches alt and summary."},
+    "railroad-crossing-signs": {"c1": "PASS", "c2": "PASS", "c3": "PASS", "c5": "PASS", "note": "W10-1 round sign, R15-1 crossbuck with R15-2P '2 TRACKS' plate, and RXR pavement marking correct; matches compare table and caption."},
+    "center-line-types": {"c1": "PASS", "c2": "PASS", "c3": "PASS", "c5": "PASS", "note": "Right-hand traffic orientation correct (southbound on left, northbound on right); in panel 2 the broken line is on the southbound side, so label 'Passing only from the broken-line side' is right; consistent with compare table."}
+  }
+}

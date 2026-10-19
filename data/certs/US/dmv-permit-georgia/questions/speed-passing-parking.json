@@ -1,0 +1,638 @@
+[
+  {
+    "id": "dmv-permit-georgia-speed-passing-parking-0001",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "rules",
+    "chapterId": "speed-passing-parking",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "If no speed limit sign is posted, what is the speed limit in a Georgia urban or residential district?",
+    "choices": [
+      "45 mph",
+      "30 mph",
+      "25 mph",
+      "35 mph"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Urban or residential district: 30 mph",
+    "explanation": "When no other limit is posted, Georgia's general limit is **30 mph** in any **urban or residential district**. Always watch for signs that set a different limit.\n\n**Wrong choices**\n- 45 mph: 45 mph is not a general Georgia limit for these areas.\n- 25 mph: 25 mph is lower than Georgia's general limit here, which is 30 mph.\n- 35 mph: 35 mph is Georgia's general limit for unpaved county roads.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "speed limits"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-speed-passing-parking-0002",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "rules",
+    "chapterId": "speed-passing-parking",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Unless another limit is posted, what is the speed limit on a rural interstate in Georgia?",
+    "choices": [
+      "75 mph",
+      "65 mph",
+      "70 mph",
+      "55 mph"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Rural interstate: 70 mph",
+    "explanation": "Georgia's general limits are **70 mph** on a **rural interstate** and **65 mph** on an **urban interstate** or a multi-lane divided highway, unless signs say otherwise.\n\n**Wrong choices**\n- 75 mph: 75 mph is above Georgia's general limits.\n- 65 mph: 65 mph is the general limit on urban interstates and multi-lane divided highways.\n- 55 mph: 55 mph is the general limit for roads not listed elsewhere.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "speed limits",
+      "interstate"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-speed-passing-parking-0003",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "rules",
+    "chapterId": "speed-passing-parking",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Unless another limit is posted, what is the speed limit on an urban interstate or a multi-lane divided highway in Georgia?",
+    "choices": [
+      "65 mph",
+      "60 mph",
+      "55 mph",
+      "70 mph"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Urban interstate or multi-lane divided highway: 65 mph",
+    "explanation": "On an **urban interstate** or a **multi-lane divided highway**, Georgia's general limit is **65 mph**. The higher **70 mph** limit applies to **rural** interstates.\n\n**Wrong choices**\n- 60 mph: 60 mph is not one of Georgia's general limits.\n- 55 mph: 55 mph is the general limit for other areas.\n- 70 mph: 70 mph is the general limit on rural interstates.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "speed limits",
+      "interstate"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-speed-passing-parking-0004",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "rules",
+    "chapterId": "speed-passing-parking",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Unless another limit is posted, what is the speed limit on an unpaved county road in Georgia?",
+    "choices": [
+      "55 mph",
+      "35 mph",
+      "45 mph",
+      "25 mph"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Unpaved county road: 35 mph",
+    "explanation": "Georgia's general limit on an **unpaved county road** is **35 mph**, unless a sign shows another limit. Dirt and gravel roads give your tires less grip, so drive slower when needed.\n\n**Wrong choices**\n- 55 mph: 55 mph is the general limit for other areas, not unpaved county roads.\n- 45 mph: 45 mph is higher than Georgia's general limit for unpaved county roads.\n- 25 mph: 25 mph is lower than Georgia's general limit for unpaved county roads.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "speed limits",
+      "unpaved road"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-speed-passing-parking-0005",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "rules",
+    "chapterId": "speed-passing-parking",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "On a Georgia road that is not an interstate, not a divided highway, not unpaved, and not in an urban or residential district, what is the general speed limit if none is posted?",
+    "choices": [
+      "45 mph",
+      "65 mph",
+      "70 mph",
+      "55 mph"
+    ],
+    "answer": 4,
+    "oneLineConcept": "All other areas: 55 mph",
+    "explanation": "Georgia's general limit is **55 mph in all other areas** that are not urban or residential districts, unpaved county roads, interstates, or multi-lane divided highways.\n\n**Wrong choices**\n- 45 mph: 45 mph is not one of Georgia's general limits.\n- 65 mph: 65 mph is for urban interstates and multi-lane divided highways.\n- 70 mph: 70 mph is for rural interstates only.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "speed limits"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-speed-passing-parking-0006",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "rules",
+    "chapterId": "speed-passing-parking",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Under Georgia's Super Speeder law, which driver is a Super Speeder?",
+    "choices": [
+      "Only a driver caught speeding three times in one year",
+      "A driver convicted of going 75 mph or more on a two-lane road, or 85 mph or more on any road",
+      "A driver convicted of going 65 mph or more on any road",
+      "Any driver convicted of going 10 mph over the limit"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Super Speeder: 75+ on two-lane road or 85+ anywhere",
+    "explanation": "A **Super Speeder** is a driver **convicted** of speeding at **75 mph or more on a two-lane road**, or **85 mph or more on any road** in Georgia. A **$200 state fee** is added on top of the local fine.\n\n**Wrong choices**\n- Only a driver caught speeding three times in one year: One conviction at the listed speeds is enough. There is no three-ticket rule.\n- A driver convicted of going 65 mph or more on any road: 65 mph is too low. The law uses 75 mph on two-lane roads and 85 mph on any road.\n- Any driver convicted of going 10 mph over the limit: Going 10 mph over is a speeding ticket, but it does not make you a Super Speeder by itself.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "super speeder",
+      "speeding"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-speed-passing-parking-0007",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "rules",
+    "chapterId": "speed-passing-parking",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A driver is convicted as a Super Speeder. Besides the local fine, what does Georgia add, and what happens if it is not paid on time?",
+    "choices": [
+      "A $200 state fee; if it is not paid on time, the license is suspended and a $50 reinstatement fee is added",
+      "A $500 state fee; the car is taken away if it is not paid",
+      "No extra fee; only 2 points are added",
+      "A $50 state fee; nothing more happens if it is not paid"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Super Speeder: $200 state fee, unpaid = suspension",
+    "explanation": "A Super Speeder pays a **$200 state fee** in addition to the local fine. If the fee is **not paid on time**, the **license is suspended** and an extra **$50 reinstatement fee** is charged.\n\n**Wrong choices**\n- A $500 state fee; the car is taken away if it is not paid: The state fee is $200, and the penalty for not paying is license suspension, not losing the car.\n- No extra fee; only 2 points are added: There is a $200 state fee on top of the local fine.\n- A $50 state fee; nothing more happens if it is not paid: The state fee is $200, not $50, and failing to pay leads to suspension.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "super speeder",
+      "fees"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-speed-passing-parking-0008",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "rules",
+    "chapterId": "speed-passing-parking",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "You are passing on a two-lane road. Before you return to the right lane, how much space must there be between you and any oncoming vehicle?",
+    "choices": [
+      "More than 50 feet",
+      "More than 500 feet",
+      "More than 100 feet",
+      "More than 200 feet"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Finish passing before oncoming traffic is within 200 feet",
+    "explanation": "You must finish passing and be back in the right lane **before** the passing zone ends, before an intersection, and **before oncoming traffic comes within 200 feet** of you.\n\n**Wrong choices**\n- More than 50 feet: 50 feet is far too close for a vehicle coming toward you.\n- More than 500 feet: 500 feet is safer still, but the legal rule is 200 feet.\n- More than 100 feet: 100 feet is not enough. The rule is 200 feet.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "passing",
+      "two-lane road"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-speed-passing-parking-0009",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "rules",
+    "chapterId": "speed-passing-parking",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "On a two-lane road, within what distance of a railroad crossing, bridge, or tunnel is passing not allowed?",
+    "choices": [
+      "500 feet",
+      "200 feet",
+      "100 feet",
+      "50 feet"
+    ],
+    "answer": 3,
+    "oneLineConcept": "No passing within 100 feet of a crossing, bridge, or tunnel",
+    "explanation": "On a two-lane road, passing is **not allowed within 100 feet** of a **railroad crossing**, or of a **bridge, viaduct, or tunnel**. It is also not allowed on hills or curves where you cannot see oncoming traffic.\n\n**Wrong choices**\n- 500 feet: 500 feet is not the rule for passing near crossings or bridges.\n- 200 feet: 200 feet is the distance for oncoming traffic when passing, not for crossings and bridges.\n- 50 feet: 50 feet is shorter than the rule. The no passing distance is 100 feet.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "passing",
+      "railroad",
+      "bridge"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-speed-passing-parking-0010",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "rules",
+    "chapterId": "speed-passing-parking",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Another driver is passing you on a two-lane road. What should you do?",
+    "choices": [
+      "Move to the center of the road",
+      "Keep your lane and do not speed up; slowing slightly helps",
+      "Brake hard to let the driver in",
+      "Speed up so the other driver cannot get ahead"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Being passed: never speed up",
+    "explanation": "When someone passes you, stay in your lane and **do not speed up** until the pass is complete. It is courteous to **slow down slightly** to make the pass easier and safer.\n\n**Wrong choices**\n- Move to the center of the road: Moving toward the center can cause a crash with the passing vehicle.\n- Brake hard to let the driver in: Hard braking can cause a rear-end crash. A slight slowdown is enough.\n- Speed up so the other driver cannot get ahead: It is against the law to speed up before the passing driver has completely passed you.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "passing",
+      "being passed"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-speed-passing-parking-0011",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "rules",
+    "chapterId": "speed-passing-parking",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "How close to a fire hydrant may you park in Georgia?",
+    "choices": [
+      "No closer than 15 feet",
+      "No closer than 30 feet",
+      "No closer than 5 feet",
+      "No closer than 10 feet"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Fire hydrant: park at least 15 feet away",
+    "explanation": "Georgia law does not let you park **within 15 feet of a fire hydrant**, except for a moment to pick up or drop off passengers. Firefighters need room to reach it.\n\n**Wrong choices**\n- No closer than 30 feet: 30 feet is the rule for stop signs, yield signs, and traffic signals, not hydrants.\n- No closer than 5 feet: 5 feet is far too close to a hydrant.\n- No closer than 10 feet: 10 feet is too close. Georgia's rule is 15 feet.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "parking",
+      "fire hydrant"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-speed-passing-parking-0012",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "rules",
+    "chapterId": "speed-passing-parking",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "How close to a crosswalk at an intersection may you park?",
+    "choices": [
+      "No closer than 10 feet",
+      "No closer than 50 feet",
+      "No closer than 20 feet",
+      "No closer than 15 feet"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Crosswalk at an intersection: 20 feet",
+    "explanation": "You may not park **within 20 feet of a crosswalk** at an intersection. A parked car there would hide people crossing from other drivers.\n\n**Wrong choices**\n- No closer than 10 feet: 10 feet is too close. The rule is 20 feet.\n- No closer than 50 feet: 50 feet is the rule for a railroad crossing.\n- No closer than 15 feet: 15 feet is the rule for a fire hydrant.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "parking",
+      "crosswalk"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-speed-passing-parking-0013",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "rules",
+    "chapterId": "speed-passing-parking",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "How close to a stop sign, yield sign, or traffic signal may you park?",
+    "choices": [
+      "No closer than 15 feet",
+      "No closer than 75 feet",
+      "No closer than 20 feet",
+      "No closer than 30 feet"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Stop sign, yield sign, or signal: 30 feet",
+    "explanation": "You may not park **within 30 feet of a stop sign, yield sign, or traffic control signal**. A parked car there could block drivers' view of the sign or signal.\n\n**Wrong choices**\n- No closer than 15 feet: 15 feet is the rule for a fire hydrant.\n- No closer than 75 feet: 75 feet is the rule across the street from a fire station driveway.\n- No closer than 20 feet: 20 feet is the rule for a crosswalk at an intersection.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "parking",
+      "stop sign"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-speed-passing-parking-0014",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "rules",
+    "chapterId": "speed-passing-parking",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "How close to a railroad crossing may you park in Georgia?",
+    "choices": [
+      "No closer than 15 feet",
+      "No closer than 50 feet",
+      "No closer than 100 feet",
+      "No closer than 30 feet"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Railroad crossing: park at least 50 feet away",
+    "explanation": "Do not park **within 50 feet of a railroad crossing**. This is the largest of the common parking distances, so keep it apart from the 15, 20, and 30 foot rules.\n\n**Wrong choices**\n- No closer than 15 feet: 15 feet is the rule for a fire hydrant.\n- No closer than 100 feet: 100 feet is the no passing distance near a railroad crossing, not the parking distance.\n- No closer than 30 feet: 30 feet is the rule for stop signs, yield signs, and signals.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "parking",
+      "railroad"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-speed-passing-parking-0015",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "rules",
+    "chapterId": "speed-passing-parking",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Across the street from a fire station driveway, how close may you park?",
+    "choices": [
+      "No closer than 30 feet",
+      "No closer than 20 feet",
+      "No closer than 75 feet",
+      "No closer than 50 feet"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Opposite a fire station driveway: 75 feet",
+    "explanation": "On the **same side** as a fire station driveway you may not park within **20 feet**. On the **opposite side** of the street, the distance is **75 feet**, so fire trucks have room to swing out.\n\n**Wrong choices**\n- No closer than 30 feet: 30 feet is the rule for stop signs, yield signs, and signals.\n- No closer than 20 feet: 20 feet is the rule on the same side as the fire station driveway.\n- No closer than 50 feet: 50 feet is the rule for railroad crossings.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "parking",
+      "fire station"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-speed-passing-parking-0016",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "rules",
+    "chapterId": "speed-passing-parking",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Which of these is NOT a place where Georgia law forbids parking?",
+    "choices": [
+      "40 feet from a fire hydrant on a street with no signs",
+      "On a bridge",
+      "On a sidewalk",
+      "Inside an intersection"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Parking is banned on sidewalks, in intersections, on bridges",
+    "explanation": "Parking is never allowed **on a sidewalk**, **within an intersection**, or **on a bridge or overpass**. A spot **40 feet from a fire hydrant** is beyond the 15-foot limit, so it is the only choice that is not forbidden.\n\n**Wrong choices**\n- On a bridge: Parking on a bridge or overpass is forbidden.\n- On a sidewalk: Parking on a sidewalk is forbidden.\n- Inside an intersection: Parking inside an intersection is forbidden.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "parking"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "dmv-permit-georgia-speed-passing-parking-0017",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "rules",
+    "chapterId": "speed-passing-parking",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "When may you pass another vehicle on the right?",
+    "choices": [
+      "Any time traffic ahead is slow, using the shoulder",
+      "Whenever the vehicle ahead is going under the speed limit, using the shoulder",
+      "Never, under any condition",
+      "When it is making a left turn and there is enough room, or on a road with two or more lanes going your way"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Pass on the right only with room or on multi-lane roads",
+    "explanation": "You may pass on the right when the vehicle ahead is **making or about to make a left turn** and there is **enough pavement** for both of you, or on a road with **two or more lanes** going your direction. **Never** pass on the **shoulder**.\n\n**Wrong choices**\n- Any time traffic ahead is slow, using the shoulder: Passing on the shoulder is not allowed.\n- Whenever the vehicle ahead is going under the speed limit, using the shoulder: A slow vehicle does not make it legal to use the shoulder.\n- Never, under any condition: Passing on the right is allowed in these two cases.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "passing",
+      "pass on right"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-speed-passing-parking-0018",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "rules",
+    "chapterId": "speed-passing-parking",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Your car has broken down on a highway. If you cannot get it off the road, how much clear view of it should other drivers have?",
+    "choices": [
+      "1 mile in each direction",
+      "50 feet in each direction",
+      "200 feet in each direction",
+      "500 feet in each direction"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Disabled car: leave a clear view for 200 feet each way",
+    "explanation": "It is against the law to park on a highway. If your vehicle is **disabled**, try hard to move it **off the road**, leaving a free lane and a **clear view of your vehicle for 200 feet in each direction**.\n\n**Wrong choices**\n- 1 mile in each direction: 1 mile is not the rule.\n- 50 feet in each direction: 50 feet is not enough warning for drivers at highway speed.\n- 500 feet in each direction: 500 feet is not the stated rule. Georgia uses 200 feet.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "parking",
+      "disabled vehicle"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  }
+]

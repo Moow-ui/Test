@@ -1,0 +1,684 @@
+[
+  {
+    "id": "dmv-permit-georgia-safe-driving-0001",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "rules",
+    "chapterId": "safe-driving",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "When must you turn on your headlights in Georgia?",
+    "choices": [
+      "From half an hour after sunset to half an hour before sunrise, and any time it is raining",
+      "Only after full dark, when street lights come on",
+      "Only when it is foggy",
+      "Only on highways at night"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Headlights: 30 min after sunset to 30 min before sunrise, and rain",
+    "explanation": "You must use headlights from **one-half hour after sunset** to **one-half hour before sunrise**, at **any time it is raining**, and whenever **visibility is low**.\n\n**Wrong choices**\n- Only after full dark, when street lights come on: Waiting for full dark is too late. The rule starts half an hour after sunset.\n- Only when it is foggy: Fog is only one case. Night and rain also require headlights.\n- Only on highways at night: The rule applies on every road, not only highways.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "headlights"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-safe-driving-0002",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "rules",
+    "chapterId": "safe-driving",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "You are using your high beams on a dark road. When must you switch to low beams for an oncoming vehicle?",
+    "choices": [
+      "Only after it has passed you",
+      "When it is within 1,000 feet",
+      "When it is within 100 feet",
+      "When the oncoming vehicle is within 500 feet"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Dim high beams within 500 feet of oncoming traffic",
+    "explanation": "Dim (lower) your headlights when you are **within 500 feet of an oncoming vehicle**, so you do not blind its driver. Also use low beams on lighted roads and in rain, fog, snow, or smoke.\n\n**Wrong choices**\n- Only after it has passed you: Waiting until it passes would blind the other driver.\n- When it is within 1,000 feet: 1,000 feet is not the rule. You must dim within 500 feet.\n- When it is within 100 feet: 100 feet is too late. The other driver would already be blinded.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "headlights",
+      "high beams"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-safe-driving-0003",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "rules",
+    "chapterId": "safe-driving",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "To check your following distance, you count \"one-thousand-one, one-thousand-two\" after the car ahead passes a pole. You reach the pole before you finish counting. What does that mean?",
+    "choices": [
+      "You are at a safe distance",
+      "You are following too closely",
+      "The car ahead is speeding",
+      "You are driving too slowly"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Pass the mark before \"one-thousand-two\": too close",
+    "explanation": "Watch the car ahead pass a fixed point, then count **\"one-thousand-one, one-thousand-two.\"** If you pass the same point **before you finish**, you are **following too closely**. Leave even more space at night, in bad weather, and in heavy traffic.\n\n**Wrong choices**\n- You are at a safe distance: Reaching the mark before you finish counting means there is not enough space.\n- The car ahead is speeding: The count tells you about your gap, not the other driver's speed.\n- You are driving too slowly: The count checks the gap, not your speed compared with the speed limit.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "following distance"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-safe-driving-0004",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "rules",
+    "chapterId": "safe-driving",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "How much following distance should you leave behind a motorcycle?",
+    "choices": [
+      "Two seconds, the same as a car",
+      "Half a second",
+      "One second",
+      "Three or four seconds"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Behind a motorcycle: 3 to 4 seconds",
+    "explanation": "Leave **three or four seconds** of following distance behind a motorcycle. The rider needs room to move or stop in an emergency, and in dry conditions a motorcycle can stop **faster than a car**.\n\n**Wrong choices**\n- Two seconds, the same as a car: A motorcycle needs more room than the basic two-second gap.\n- Half a second: Half a second gives you almost no time to react.\n- One second: One second is far too close behind any vehicle.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "motorcycles",
+      "following distance"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-safe-driving-0005",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "rules",
+    "chapterId": "safe-driving",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What is the least amount of space Georgia law requires between your vehicle and a bicycle when you pass it?",
+    "choices": [
+      "10 feet",
+      "3 feet",
+      "1 foot",
+      "2 feet"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Pass a bicycle with at least 3 feet",
+    "explanation": "When you pass a bicyclist, Georgia law requires **at least 3 feet** between your vehicle and the bicycle **at all times**. Move to a lane not next to the bicycle if you can.\n\n**Wrong choices**\n- 10 feet: 10 feet is more room, but the legal minimum is 3 feet.\n- 1 foot: 1 foot is far too close and against the law.\n- 2 feet: 2 feet is still less than the legal minimum.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "bicycles",
+      "passing"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-safe-driving-0006",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "rules",
+    "chapterId": "safe-driving",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "You are on a road posted at 45 mph and cannot safely change lanes to pass a bicyclist. To what speed must you slow down before passing?",
+    "choices": [
+      "40 mph or slower",
+      "25 mph or slower",
+      "35 mph or slower",
+      "15 mph or slower"
+    ],
+    "answer": 3,
+    "oneLineConcept": "No lane change: slow to limit minus 10 or 25 mph, whichever is more",
+    "explanation": "If you cannot move to a lane not next to the bicycle, slow to **at least 10 mph below the posted limit or 25 mph, whichever is more**, and pass with **at least 3 feet** of space.\n\n1. Posted limit minus 10 mph: 45 - 10 = **35 mph**.\n2. Compare with 25 mph: 35 mph is more than 25 mph.\n3. Use the larger number, so slow to **35 mph** or slower.\n4. Check: 35 is 10 below 45, and it is not below 25, so the rule is met.\n\n**Wrong choices**\n- 40 mph or slower: 40 mph is only 5 mph below the limit. You must slow at least 10 mph below it.\n- 25 mph or slower: 25 mph is used only when it is more than the limit minus 10. Here 35 is more, so 35 mph is the speed to reach.\n- 15 mph or slower: 15 mph is not the rule. The rule compares the limit minus 10 with 25 mph.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "bicycles",
+      "passing",
+      "calculation"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-safe-driving-0007",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "rules",
+    "chapterId": "safe-driving",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "On a wet road, at about what speed can partial hydroplaning begin for a typical passenger car?",
+    "choices": [
+      "As low as 35 mph",
+      "Only above 55 mph",
+      "Only above 70 mph",
+      "As low as 15 mph"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Partial hydroplaning can start around 35 mph",
+    "explanation": "**Hydroplaning** means your tires ride on a layer of water. In a typical car, **partial hydroplaning can begin at about 35 mph**, and by about **55 mph** the tires may lose all contact with the road. **Slow down** when water is on the road.\n\n**Wrong choices**\n- Only above 55 mph: Tires may lose all contact at about 55 mph, but partial hydroplaning starts sooner.\n- Only above 70 mph: Waiting until 70 mph to worry is far too late.\n- As low as 15 mph: At 15 mph most tires can still channel water away.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "hydroplaning",
+      "wet roads"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-safe-driving-0008",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "rules",
+    "chapterId": "safe-driving",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "When is a road usually the most slippery during a rain?",
+    "choices": [
+      "Rain does not change how slippery the road is",
+      "Only after the rain stops",
+      "During the first half-hour of rain",
+      "After it has rained for several hours"
+    ],
+    "answer": 3,
+    "oneLineConcept": "First half-hour of rain is the most slippery",
+    "explanation": "The **first half-hour of rain** is the most dangerous time. Water mixes with **oil and other chemicals** on the road and makes it **very slippery** until more rain washes them away.\n\n**Wrong choices**\n- Rain does not change how slippery the road is: Rain makes roads slippery, especially at first.\n- Only after the rain stops: The danger starts when the rain begins, not after it stops.\n- After it has rained for several hours: After a long rain, much of the oil has been washed off.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "wet roads",
+      "rain"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-safe-driving-0009",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "rules",
+    "chapterId": "safe-driving",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Your car starts to skid on a slick road. What should you do first?",
+    "choices": [
+      "Speed up to regain grip",
+      "Ease your foot off the gas and steer in the direction of the skid",
+      "Turn the wheel sharply the opposite way",
+      "Slam on the brakes as hard as you can"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Skid: ease off the gas, steer the way of the skid",
+    "explanation": "If you start to skid, **ease your foot off the accelerator** and **turn the steering wheel in the direction of the skid**. Once you have control again, brake lightly and steer to a safe place.\n\n**Wrong choices**\n- Speed up to regain grip: Speeding up adds power to wheels that have already lost grip.\n- Turn the wheel sharply the opposite way: A sharp turn the other way can spin the car.\n- Slam on the brakes as hard as you can: Hard braking makes a skid worse because the tires lose even more grip.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "skids",
+      "vehicle control"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-safe-driving-0010",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "rules",
+    "chapterId": "safe-driving",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Under Georgia law, who in a passenger vehicle must wear a seat belt?",
+    "choices": [
+      "Only people in the back seat",
+      "Only riders under 8",
+      "Only the driver",
+      "Everyone in the front seat, and every rider under 18 in any seat"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Seat belts: all front seat riders and everyone under 18",
+    "explanation": "Georgia requires a seat belt for **every person in the front seat** and for **every rider under 18** in **any seat**. Georgia's belt law is **primary**: an officer can stop you just for this.\n\n**Wrong choices**\n- Only people in the back seat: Front seat riders must always wear a belt.\n- Only riders under 8: Children under 8 need a child restraint, and all riders under 18 need a belt.\n- Only the driver: Front seat passengers must also be belted, not only the driver.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "seat belts"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-safe-driving-0011",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "rules",
+    "chapterId": "safe-driving",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Children under what age must ride in a child passenger restraint suited to their height and weight?",
+    "choices": [
+      "Under 8 years old",
+      "Under 16 years old",
+      "Under 12 years old",
+      "Under 4 years old"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Child restraint: under 8",
+    "explanation": "Georgia requires a driver to properly restrain **every child under 8** in a **child passenger restraint** that fits the child's height and weight (taxis and public transit are excepted).\n\n**Wrong choices**\n- Under 16 years old: Riders under 18 need seat belts, but the child seat rule is for children under 8.\n- Under 12 years old: Age 12 is not the child restraint cutoff in Georgia.\n- Under 4 years old: The rule covers more than children under 4. It runs until age 8.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "child restraints"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-safe-driving-0012",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "rules",
+    "chapterId": "safe-driving",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Under Georgia's Hands-Free law, which of these is against the law while driving?",
+    "choices": [
+      "Using a phone that sits in a mounted holder for navigation",
+      "Talking to a passenger",
+      "Talking through a wireless earpiece",
+      "Holding your phone in your hand to talk"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Hands-Free law: don't hold or support a phone",
+    "explanation": "Georgia's **Hands-Free law** says a driver may **not hold or support** a phone with **any part of the body**. You may talk through an **earpiece, headphones, or a wireless or mounted** device.\n\n**Wrong choices**\n- Using a phone that sits in a mounted holder for navigation: A mounted phone used for navigation is allowed.\n- Talking to a passenger: Talking to a passenger is not covered by the Hands-Free law.\n- Talking through a wireless earpiece: A wireless earpiece is allowed because you are not holding the phone.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "hands-free law",
+      "distracted driving"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-safe-driving-0013",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "rules",
+    "chapterId": "safe-driving",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A driver is convicted of a first violation of Georgia's Hands-Free law. What is the penalty?",
+    "choices": [
+      "2 points and a fine of no more than $100",
+      "1 point and a fine of no more than $50",
+      "3 points and a fine of no more than $150",
+      "No points and a warning only"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Hands-Free 1st conviction: 1 point, up to $50",
+    "explanation": "Hands-Free law penalties grow with each conviction: **1st: 1 point, up to $50**; 2nd: 2 points, up to $100; 3rd or more: 3 points, up to $150.\n\n**Wrong choices**\n- 2 points and a fine of no more than $100: 2 points and up to $100 is the penalty for a second conviction.\n- 3 points and a fine of no more than $150: 3 points and up to $150 is the penalty for a third or later conviction.\n- No points and a warning only: A conviction is not just a warning. It brings a fine and a point.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "hands-free law",
+      "points"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-safe-driving-0014",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "rules",
+    "chapterId": "safe-driving",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "You are driving beside a large truck. You cannot see the truck driver's face in the truck's side mirror. What does that mean?",
+    "choices": [
+      "The truck driver probably cannot see you, so you are in a blind spot",
+      "The truck is about to turn left",
+      "You are at a safe following distance",
+      "The truck driver can see you clearly"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Can't see the driver in the mirror: they can't see you",
+    "explanation": "Trucks have large blind spots called **No-Zones** on the sides, in front, and behind. If you **cannot see the driver's face in the side mirror**, the driver **cannot see you**. Pass or drop back instead of staying beside the truck.\n\n**Wrong choices**\n- The truck is about to turn left: The mirror view tells you about blind spots, not about turns.\n- You are at a safe following distance: Being beside a truck has nothing to do with following distance, and you are in a danger zone.\n- The truck driver can see you clearly: This is backwards. If you cannot see the driver, the driver cannot see you.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "trucks",
+      "no-zone"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-safe-driving-0015",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "rules",
+    "chapterId": "safe-driving",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A front tire blows out while you are driving. What should you do?",
+    "choices": [
+      "Speed up to keep the car straight",
+      "Swerve onto the shoulder immediately",
+      "Grip the wheel firmly, ease off the gas, and let the car slow before moving to the shoulder",
+      "Brake hard right away to stop as fast as possible"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Blowout: hold the wheel, ease off the gas, slow down",
+    "explanation": "In a blowout, **don't panic**. **Grip the steering wheel firmly**, **take your foot off the accelerator**, and let the car slow. Brake **lightly** only if needed, and move to the shoulder **after the car has slowed greatly**.\n\n**Wrong choices**\n- Speed up to keep the car straight: Speeding up makes the car harder to control.\n- Swerve onto the shoulder immediately: Swerving at speed can roll or spin the car.\n- Brake hard right away to stop as fast as possible: Hard braking can make you lose control after a blowout.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "emergencies",
+      "tire blowout"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-safe-driving-0016",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "rules",
+    "chapterId": "safe-driving",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "You miss your exit on an expressway. What should you do?",
+    "choices": [
+      "Back up on the shoulder to the exit",
+      "Stop on the shoulder and wait for a gap",
+      "Go on to the next exit",
+      "Make a U-turn through the median"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Missed exit: go to the next one, never back up",
+    "explanation": "Backing up on an expressway is **never allowed**. If you miss your exit, **keep going to the next exit** and find your way back from there.\n\n**Wrong choices**\n- Back up on the shoulder to the exit: Backing up on an expressway is prohibited in all cases.\n- Stop on the shoulder and wait for a gap: Stopping on the shoulder is only for emergencies. A missed exit is not one.\n- Make a U-turn through the median: Crossing the median is illegal except at an authorized opening.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "expressway",
+      "exits"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-safe-driving-0017",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "rules",
+    "chapterId": "safe-driving",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "You are in an expressway acceleration lane. A solid white line separates it from the travel lane, forming a triangle-shaped gore area. What must you do?",
+    "choices": [
+      "Stay in the acceleration lane until the solid white line ends, then merge",
+      "Cross the solid line right away to merge sooner",
+      "Drive on the striped gore area to pass slow cars",
+      "Stop at the end of the ramp and wait for a gap"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Do not cross the solid white gore line",
+    "explanation": "The **gore** is the area between an acceleration lane and the travel lane, bordered by **solid white lines**. Drivers entering the expressway may **not cross** the solid line and must **keep driving in the acceleration lane until the line ends**, then merge.\n\n**Wrong choices**\n- Cross the solid line right away to merge sooner: Crossing the solid gore line is against the law.\n- Drive on the striped gore area to pass slow cars: Driving on the gore area is not allowed.\n- Stop at the end of the ramp and wait for a gap: Stopping at the end of a ramp can cause a crash. Use the acceleration lane to match speed.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "expressway",
+      "merging",
+      "gore"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-safe-driving-0018",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "rules",
+    "chapterId": "safe-driving",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which headlights should you use when driving in heavy fog?",
+    "choices": [
+      "High beams",
+      "Parking lights only",
+      "Hazard lights while moving",
+      "Low beams"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Fog: low beams",
+    "explanation": "In fog, **dim your headlights** to **low beams**. High beams reflect off the fog and make it **harder** to see. Do not drive with only your parking lights or hazard lights on, and slow down.\n\n**Wrong choices**\n- High beams: High beams create glare in fog and cut your view.\n- Parking lights only: Parking lights are not enough to see or be seen.\n- Hazard lights while moving: The manual says not to drive with hazard lights on in fog.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "fog",
+      "headlights"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-safe-driving-0019",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "rules",
+    "chapterId": "safe-driving",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A deer suddenly runs into the road in front of you. What is the safest action?",
+    "choices": [
+      "Swerve sharply into the other lane",
+      "Slow down as much as possible and stay in your lane rather than swerving",
+      "Swerve onto the shoulder",
+      "Speed up to get past before it moves"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Deer in the road: brake, don't swerve",
+    "explanation": "If a deer runs in front of you, **slow down as much as possible** and **do not swerve**. Swerving can send you into another vehicle or off the road, which is often worse than hitting the deer. Deer often travel in groups, so expect more.\n\n**Wrong choices**\n- Swerve sharply into the other lane: Swerving into another lane can cause a head-on or side crash.\n- Swerve onto the shoulder: Swerving onto the shoulder can make you leave the road or roll over.\n- Speed up to get past before it moves: Speeding up increases the force of any crash.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "animals",
+      "deer"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  }
+]

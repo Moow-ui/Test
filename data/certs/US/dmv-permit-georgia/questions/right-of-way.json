@@ -1,0 +1,604 @@
+[
+  {
+    "id": "dmv-permit-georgia-right-of-way-0001",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "rules",
+    "chapterId": "right-of-way",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Two vehicles reach an intersection with no signs or signals at about the same time. Who must yield?",
+    "choices": [
+      "The driver on the right yields to the driver on the left",
+      "The driver going faster yields",
+      "The larger vehicle always goes first",
+      "The driver on the left yields to the driver on the right"
+    ],
+    "answer": 4,
+    "oneLineConcept": "No signs, same time: left yields to right",
+    "explanation": "At an intersection with **no stop signs, yield signs, or signals**, when two vehicles arrive **at the same time**, the driver **on the left must yield** to the driver **on the right**.\n\n**Wrong choices**\n- The driver on the right yields to the driver on the left: This is backwards. The driver on the right goes first.\n- The driver going faster yields: Speed does not decide who goes first.\n- The larger vehicle always goes first: Vehicle size does not give anyone the right of way.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "right of way",
+      "intersection"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-right-of-way-0002",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "rules",
+    "chapterId": "right-of-way",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "You are turning left at an intersection. A car is coming straight through from the opposite direction. Who has the right of way?",
+    "choices": [
+      "Whichever driver honks first",
+      "You, because you got to the intersection first",
+      "The oncoming car going straight",
+      "You, because you have your turn signal on"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Left turn: yield to oncoming traffic",
+    "explanation": "When you **turn left** at an intersection or into a driveway or alley, you must **yield to all traffic coming from the opposite direction**, including bicycles, and to pedestrians crossing.\n\n**Wrong choices**\n- Whichever driver honks first: Honking never decides the right of way.\n- You, because you got to the intersection first: Arriving first does not let you turn across oncoming traffic.\n- You, because you have your turn signal on: A turn signal shows what you plan to do. It does not give you the right of way.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "right of way",
+      "left turn"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-right-of-way-0003",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "rules",
+    "chapterId": "right-of-way",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "At a four-way stop, you and a car on your right stop at about the same time. What should you do?",
+    "choices": [
+      "Go first, because you are on the left",
+      "Wait until all four directions are empty",
+      "Let the car on your right go first",
+      "Go at the same time as the other car"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Four-way stop tie: yield to the right",
+    "explanation": "At a four-way stop, vehicles go in **\"first to arrive, first to go\"** order, after yielding to pedestrians. If two vehicles arrive **at about the same time**, **yield to the vehicle on your right**.\n\n**Wrong choices**\n- Go first, because you are on the left: The driver on the left yields, so you should wait.\n- Wait until all four directions are empty: You do not need every direction to be empty. Take your turn when it comes.\n- Go at the same time as the other car: Going at the same time can cause a crash.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "right of way",
+      "four-way stop"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-right-of-way-0004",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "rules",
+    "chapterId": "right-of-way",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "You are pulling out of a private driveway onto a street. What must you do?",
+    "choices": [
+      "Stop and yield to pedestrians and vehicles already on the sidewalk and street",
+      "Stop only if a sign tells you to",
+      "Honk and then pull out",
+      "Pull out slowly; traffic on the street must make room for you"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Leaving a driveway: stop and yield",
+    "explanation": "When you enter a road from an **alley, driveway, or private road**, you must **stop** before the sidewalk area and **yield** to all pedestrians and vehicles already traveling on the sidewalk or road.\n\n**Wrong choices**\n- Stop only if a sign tells you to: You must stop and yield even when no sign is posted.\n- Honk and then pull out: Honking does not give you the right of way.\n- Pull out slowly; traffic on the street must make room for you: Traffic on the street has the right of way. You must wait for a safe gap.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "right of way",
+      "driveway"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-right-of-way-0005",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "rules",
+    "chapterId": "right-of-way",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "An ambulance with flashing lights and a siren is coming up behind you. What should you do?",
+    "choices": [
+      "Speed up to stay ahead of it",
+      "Stop right where you are, even in the middle of an intersection",
+      "Keep going at the same speed in your lane",
+      "Pull over to the right side of the road and stop, without blocking an intersection"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Emergency vehicle: pull right and stop",
+    "explanation": "When an emergency vehicle uses its lights and siren, **slow down, move to the shoulder** or as far **right** as you can, and **stop**. Do not stop in a way that **blocks an intersection** or the vehicle's turn.\n\n**Wrong choices**\n- Speed up to stay ahead of it: Racing ahead of an emergency vehicle is dangerous and illegal.\n- Stop right where you are, even in the middle of an intersection: Stopping in an intersection can block the emergency vehicle's path.\n- Keep going at the same speed in your lane: You must get out of its way, not keep driving normally.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "emergency vehicles",
+      "right of way"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-right-of-way-0006",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "rules",
+    "chapterId": "right-of-way",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A school bus ahead turns on its flashing yellow lights. What does this tell you?",
+    "choices": [
+      "The bus is pulling away, so you may pass it",
+      "The bus is getting ready to stop, so slow down and be prepared to stop",
+      "You must stop right now, even though the stop arm is not out",
+      "The bus has broken down"
+    ],
+    "answer": 2,
+    "oneLineConcept": "School bus flashing yellow: get ready to stop",
+    "explanation": "A school bus driver turns on **flashing yellow lights** when **preparing to stop** to load or unload children. **Slow down, be ready to stop**, and watch for children near the road. When the **red lights flash** and the stop arm comes out, you must stop.\n\n**Wrong choices**\n- The bus is pulling away, so you may pass it: Yellow lights mean the bus is about to stop, not that it is leaving.\n- You must stop right now, even though the stop arm is not out: The legal stop comes with the red lights and stop arm. Yellow means prepare to stop.\n- The bus has broken down: Yellow lights on a school bus are a warning about stopping, not a breakdown signal.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "school bus",
+      "right of way"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-right-of-way-0007",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "rules",
+    "chapterId": "right-of-way",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "On a two-lane road with no median, a school bus coming toward you stops with its red lights flashing and stop arm out. What must you do?",
+    "choices": [
+      "Stop, even though you are going the other way",
+      "Stop only if you see children",
+      "Honk and pass on the right",
+      "Slow down and pass carefully because you are on the other side"
+    ],
+    "answer": 1,
+    "oneLineConcept": "No median: both directions stop for the bus",
+    "explanation": "When a school bus is stopped with **red lights flashing** and the **stop arm out**, it is **illegal to pass** it. On a road **without a median**, traffic in **both directions** must stop.\n\n**Wrong choices**\n- Stop only if you see children: You must stop whether or not you can see children.\n- Honk and pass on the right: Passing a stopped school bus in any way is illegal.\n- Slow down and pass carefully because you are on the other side: Being on the other side does not matter when there is no median. You must stop.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "school bus",
+      "stopping"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-right-of-way-0008",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "rules",
+    "chapterId": "right-of-way",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "You are on a highway divided by a median. A school bus on the other side of the median stops with its red lights flashing. What does Georgia law require of you?",
+    "choices": [
+      "You must stop only if the bus is in the lane next to the median",
+      "You must slow to 10 mph",
+      "You must stop until the bus moves again",
+      "You do not have to stop, but watch for children near the road"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Divided by a median: opposite side need not stop",
+    "explanation": "On a highway **divided by a median**, only vehicles going the **same direction** as the stopped bus must stop. Traffic on the **opposite side** of the median does **not** have to stop, but should stay alert for children walking or crossing.\n\n**Wrong choices**\n- You must stop only if the bus is in the lane next to the median: The bus's lane position does not change the rule. The median does.\n- You must slow to 10 mph: There is no 10 mph rule for this situation.\n- You must stop until the bus moves again: Stopping is required for traffic on the bus's side of the median, not for you.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "school bus",
+      "divided highway"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-right-of-way-0009",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "rules",
+    "chapterId": "right-of-way",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "You have stopped for a school bus that is loading children. When may you go again?",
+    "choices": [
+      "As soon as the stop arm starts to fold in",
+      "When the bus moves again or turns off its signals, and all children have cleared the road",
+      "As soon as the last child steps onto the bus",
+      "After waiting 30 seconds"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Stay stopped until signals off and road is clear",
+    "explanation": "After stopping for a school bus, **stay stopped** until the bus **starts moving or turns off its warning signals**, **and** all loading or unloading children have **cleared the roadway**.\n\n**Wrong choices**\n- As soon as the stop arm starts to fold in: You must wait until the signals are off and the road is clear, not just until the arm starts moving.\n- As soon as the last child steps onto the bus: Other children may still be near the road. Wait for the signals to stop and the road to be clear.\n- After waiting 30 seconds: There is no fixed waiting time. The rule depends on the signals and the children.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "school bus",
+      "stopping"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-right-of-way-0010",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "rules",
+    "chapterId": "right-of-way",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A police car with flashing lights is stopped on the shoulder of a four-lane highway, and you are in the lane next to it. What does Georgia's Move Over law require?",
+    "choices": [
+      "Keep your speed and lane, since the police car is off the road",
+      "Speed up to get past quickly",
+      "Move over one lane if you safely can; if not, slow down below the speed limit and be ready to stop",
+      "Stop in your lane until the police car leaves"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Move Over: change lanes, or slow below the limit",
+    "explanation": "Georgia's **Move Over law** protects people working beside the road. **Move over to the next lane** if you can do it safely. If you **cannot** move over, **slow down below the speed limit** and **be prepared to stop**.\n\n**Wrong choices**\n- Keep your speed and lane, since the police car is off the road: Staying in the next lane at full speed is what the law is meant to stop.\n- Speed up to get past quickly: Speeding up puts the officer at even more risk.\n- Stop in your lane until the police car leaves: Stopping in a travel lane can cause a crash. Move over or slow down instead.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "move over law",
+      "emergency vehicles"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-right-of-way-0011",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "rules",
+    "chapterId": "right-of-way",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Georgia's Move Over law protects vehicles stopped beside the road. Which of these is NOT covered by the law?",
+    "choices": [
+      "A private car parked on the shoulder with no flashing lights",
+      "A sanitation truck with active workers and flashing lights",
+      "A tow truck showing flashing lights",
+      "A utility service truck showing flashing lights"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Move Over covers emergency, tow, sanitation, utility vehicles",
+    "explanation": "The **Move Over law** covers **emergency vehicles** (including police, fire, ambulance, and wreckers), **active sanitation** vehicles, and **utility service** vehicles that show **flashing lights** or use cones. A private car with **no flashing lights** is not covered, though you should still be careful.\n\n**Wrong choices**\n- A sanitation truck with active workers and flashing lights: Active sanitation workers and their vehicles are covered by the law.\n- A tow truck showing flashing lights: A wrecker (tow truck) with flashing lights is covered by the law.\n- A utility service truck showing flashing lights: Utility service vehicles with flashing lights are covered by the law.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "move over law"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "dmv-permit-georgia-right-of-way-0012",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "rules",
+    "chapterId": "right-of-way",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "At a crosswalk with no traffic signal, a pedestrian is crossing in the lane next to yours on your half of the road. What must you do?",
+    "choices": [
+      "Keep going, because the pedestrian is not in your lane",
+      "Stop and stay stopped until the pedestrian has passed your half of the road",
+      "Honk so the pedestrian stops",
+      "Slow down and drive around the pedestrian"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Pedestrian on your half of the road: stop and stay stopped",
+    "explanation": "Georgia law says you must **stop and remain stopped** for a pedestrian in a crosswalk who is **on your half of the roadway** (all lanes going your direction), or who is within **one lane** of your half.\n\n**Wrong choices**\n- Keep going, because the pedestrian is not in your lane: Your half of the road means all the lanes going your way, not only your lane.\n- Honk so the pedestrian stops: Honking does not give you the right of way. Pedestrians in crosswalks have it.\n- Slow down and drive around the pedestrian: Driving around a person in a crosswalk is dangerous and illegal.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "pedestrians",
+      "crosswalk"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-right-of-way-0013",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "rules",
+    "chapterId": "right-of-way",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "On a multi-lane road, you stop to let a pedestrian use a crosswalk. About how far before the crosswalk should you stop?",
+    "choices": [
+      "At least 50 feet before it",
+      "Right on the crosswalk line",
+      "At least 10 feet before it",
+      "At least 3 feet before it"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Multi-lane road: stop 10 feet before the crosswalk",
+    "explanation": "On a **multi-lane** road, stop **at least 10 feet before** the crosswalk. This lets drivers in the **next lane see the pedestrian** too, so they stop instead of hitting someone they could not see.\n\n**Wrong choices**\n- At least 50 feet before it: 50 feet is farther than needed and may confuse other drivers.\n- Right on the crosswalk line: Stopping right at the line can hide the pedestrian from drivers in the next lane.\n- At least 3 feet before it: 3 feet is too close to give other drivers a clear view.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "pedestrians",
+      "crosswalk",
+      "multi-lane road"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-right-of-way-0014",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "rules",
+    "chapterId": "right-of-way",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A person crossing the street is carrying a white cane. What should you do?",
+    "choices": [
+      "Go first if you have a green light",
+      "Honk to let the person know you are there",
+      "Drive around the person slowly",
+      "Stop and give the person the right of way"
+    ],
+    "answer": 4,
+    "oneLineConcept": "White cane or guide dog: always yield",
+    "explanation": "People who use a **white cane** or a **guide dog** are often blind or have low vision. You must **give them the right of way at all times**. Stop and wait until they are safely across.\n\n**Wrong choices**\n- Go first if you have a green light: A blind pedestrian has the right of way even when your light is green.\n- Honk to let the person know you are there: Honking can confuse or frighten a blind pedestrian.\n- Drive around the person slowly: Driving around the person is dangerous. Stop and wait.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "pedestrians",
+      "blind pedestrians"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-right-of-way-0015",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "rules",
+    "chapterId": "right-of-way",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "You are entering a single-lane roundabout. Who has the right of way?",
+    "choices": [
+      "Vehicles already circling in the roundabout",
+      "The largest vehicle",
+      "You, because you are entering from the right",
+      "Vehicles waiting to enter"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Roundabout: yield to traffic already inside",
+    "explanation": "When you enter a roundabout, **yield to all traffic already circulating** in it, then merge into a gap. Traffic in a roundabout always moves **counterclockwise**, and you enter and exit to the **right**.\n\n**Wrong choices**\n- The largest vehicle: Vehicle size does not decide the right of way.\n- You, because you are entering from the right: Entering drivers must yield. Being on the right does not change that.\n- Vehicles waiting to enter: Drivers waiting to enter must yield to those already inside.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "roundabout",
+      "right of way"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-right-of-way-0016",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "rules",
+    "chapterId": "right-of-way",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A fire truck with its siren on is answering an alarm. If you are driving behind it, how close may you follow?",
+    "choices": [
+      "No closer than 1,000 feet",
+      "No closer than 100 feet",
+      "No closer than 50 feet",
+      "No closer than 200 feet"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Follow a fire truck no closer than 200 feet",
+    "explanation": "Unless you are on official business, you may not follow a fire truck answering an alarm, or another emergency vehicle, **closer than 200 feet**. You also may not park within **500 feet** of a fire truck stopped at a fire.\n\n**Wrong choices**\n- No closer than 1,000 feet: 1,000 feet is not the rule. You must stay back at least 200 feet.\n- No closer than 100 feet: 100 feet is still too close. The rule is 200 feet.\n- No closer than 50 feet: 50 feet is far too close. The rule is 200 feet.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "emergency vehicles",
+      "following distance"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-georgia-right-of-way-0017",
+    "certId": "dmv-permit-georgia",
+    "subjectId": "rules",
+    "chapterId": "right-of-way",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A car in the lane next to you has stopped at a marked crosswalk. You cannot see why. What must you do?",
+    "choices": [
+      "Pass it carefully at a slower speed",
+      "Change lanes behind it and pass on the other side",
+      "Do not pass it; slow down and be ready to stop for a pedestrian",
+      "Honk and pass if you have a green light"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Never pass a car stopped for a crosswalk",
+    "explanation": "When a vehicle is **stopped at a crosswalk** to let a pedestrian cross, drivers coming from behind **must not pass** it. A pedestrian you **cannot see** may be stepping out in front of it.\n\n**Wrong choices**\n- Pass it carefully at a slower speed: Passing at any speed is not allowed here. A hidden pedestrian may be in the crosswalk.\n- Change lanes behind it and pass on the other side: Passing it on another side is still passing a vehicle stopped for a pedestrian.\n- Honk and pass if you have a green light: A green light does not make it safe or legal to pass a car stopped for a pedestrian.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-20",
+    "tags": [
+      "pedestrians",
+      "passing"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+]
