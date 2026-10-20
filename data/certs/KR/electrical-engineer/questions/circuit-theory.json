@@ -460,5 +460,350 @@
         3
       ]
     }
+  },
+  {
+    "id": "electrical-engineer-circuit-theory-0007",
+    "certId": "electrical-engineer",
+    "subjectId": "circuit-control",
+    "chapterId": "circuit-theory",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "그림과 같이 교류 100V 전원에 저항 R = 8Ω, 유도 리액턴스 XL = 10Ω, 용량 리액턴스 XC = 4Ω 이 직렬로 연결되어 있다. 회로에 흐르는 전류는 몇 A 인가?",
+    "choices": [
+      "12.5A",
+      "약 4.5A",
+      "10A",
+      "약 6.2A"
+    ],
+    "answer": 3,
+    "oneLineConcept": "R-L-C 직렬: Z = √(R² + (XL − XC)²), 전류 = 전압 ÷ Z",
+    "explanation": "코일(XL)과 콘덴서(XC)는 서로 반대 방향으로 작용하므로, 직렬 회로에서는 두 리액턴스(교류를 방해하는 정도)를 **빼서** 씁니다. 그다음 저항과 직각삼각형처럼 합칩니다.\n\n1. 남는 리액턴스: X = XL − XC = 10 − 4 = 6Ω\n2. 임피던스(교류 전체 저항): Z = √(8² + 6²) = √(64 + 36) = √100 = 10Ω\n3. 전류: I = V ÷ Z = 100 ÷ 10 = 10A\n\n검산: 10A × 10Ω = 100V 로 전원 전압과 같습니다.\n\n**틀린 선지**\n- 12.5A: 저항 8Ω 하나로만 나눈 값(100 ÷ 8)입니다. 리액턴스도 전류를 방해하므로 함께 넣어야 합니다.\n- 약 4.5A: 8 + 10 + 4 = 22Ω 처럼 모두 그냥 더한 값입니다. 교류에서는 저항과 리액턴스를 그냥 더하지 않습니다.\n- 약 6.2A: 두 리액턴스를 더해 14Ω 으로 계산한 값(100 ÷ √(8² + 14²))입니다. 코일과 콘덴서는 서로 상쇄되므로 빼야 합니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "R-L-C 직렬",
+      "임피던스",
+      "계산",
+      "그림"
+    ],
+    "image": "ac-rlc-series-8-10-4-100v.svg",
+    "imageAlt": "교류 전원 100V 에 저항 R = 8Ω, 코일(유도 리액턴스 XL = 10Ω), 콘덴서(용량 리액턴스 XC = 4Ω)가 한 줄로(직렬로) 이어진 닫힌 회로",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-engineer-circuit-theory-0008",
+    "certId": "electrical-engineer",
+    "subjectId": "circuit-control",
+    "chapterId": "circuit-theory",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "그림과 같이 저항 R = 6Ω, 유도 리액턴스 XL = 12Ω, 용량 리액턴스 XC = 4Ω 이 직렬로 연결된 교류 회로의 역률은?",
+    "choices": [
+      "0.8",
+      "0.6",
+      "0.5",
+      "약 0.35"
+    ],
+    "answer": 2,
+    "oneLineConcept": "역률 cosθ = R ÷ Z, 직렬 R-L-C 의 X 는 XL − XC",
+    "explanation": "**역률**(전원이 보낸 전력 중 실제로 일하는 몫의 비율)은 저항 ÷ 임피던스(교류 전체 저항)입니다. 직렬 회로에서 코일과 콘덴서의 리액턴스는 빼서 씁니다.\n\n1. 남는 리액턴스: X = XL − XC = 12 − 4 = 8Ω\n2. 임피던스: Z = √(6² + 8²) = √(36 + 64) = √100 = 10Ω\n3. 역률: cosθ = R ÷ Z = 6 ÷ 10 = 0.6\n\n검산: 직각삼각형의 세 변이 6 : 8 : 10 이므로 밑변 ÷ 빗변 = 0.6 이 맞습니다.\n\n**틀린 선지**\n- 0.8: 리액턴스 ÷ 임피던스(8 ÷ 10)입니다. 이것은 역률이 아니라 무효율(sinθ)입니다.\n- 0.5: 저항을 유도 리액턴스로만 나눈 값(6 ÷ 12)입니다. 콘덴서를 빼먹었고, 임피던스로 나누지도 않았습니다.\n- 약 0.35: 두 리액턴스를 더해 16Ω 으로 계산한 값(6 ÷ √(6² + 16²))입니다. 직렬에서는 XL 과 XC 를 빼야 합니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "R-L-C 직렬",
+      "역률",
+      "계산",
+      "그림"
+    ],
+    "image": "ac-rlc-series-6-12-4.svg",
+    "imageAlt": "교류 전원에 저항 R = 6Ω, 코일(유도 리액턴스 XL = 12Ω), 콘덴서(용량 리액턴스 XC = 4Ω)가 한 줄로(직렬로) 이어진 닫힌 회로",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-engineer-circuit-theory-0009",
+    "certId": "electrical-engineer",
+    "subjectId": "circuit-control",
+    "chapterId": "circuit-theory",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "그림과 같이 교류 120V 전원에 저항 R = 15Ω, 유도 리액턴스 XL = 10Ω, 용량 리액턴스 XC = 20Ω 이 병렬로 연결되어 있다. 전원에서 흘러나오는 전체 전류 I 는 몇 A 인가?",
+    "choices": [
+      "10A",
+      "26A",
+      "약 19.7A",
+      "14A"
+    ],
+    "answer": 1,
+    "oneLineConcept": "R-L-C 병렬: I = √(IR² + (IL − IC)²)",
+    "explanation": "**병렬** 회로는 모든 소자에 같은 전압(120V)이 걸립니다. 소자마다 전류를 구한 뒤, 코일 전류와 콘덴서 전류는 서로 반대 방향이라 **빼고**, 저항 전류와는 직각삼각형처럼 합칩니다.\n\n1. 저항 전류: IR = 120 ÷ 15 = 8A\n2. 코일 전류: IL = 120 ÷ 10 = 12A\n3. 콘덴서 전류: IC = 120 ÷ 20 = 6A\n4. 남는 무효 전류: IL − IC = 12 − 6 = 6A\n5. 전체 전류: I = √(8² + 6²) = √(64 + 36) = √100 = 10A\n\n검산: 8 : 6 : 10 은 직각삼각형(3 : 4 : 5 의 2배)이므로 맞습니다.\n\n**틀린 선지**\n- 26A: 세 전류를 그냥 더한 값(8 + 12 + 6)입니다. 교류 전류는 방향(위상)이 달라 그냥 더하지 않습니다.\n- 약 19.7A: 코일과 콘덴서 전류를 더해 18A 로 계산한 값(√(8² + 18²))입니다. 두 전류는 서로 상쇄되므로 빼야 합니다.\n- 14A: 저항 전류 8A 와 남는 무효 전류 6A 를 그냥 더한 값입니다. 두 전류는 직각 방향이라 제곱해서 더한 뒤 루트를 씌워야 합니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "R-L-C 병렬",
+      "전류",
+      "계산",
+      "그림"
+    ],
+    "image": "ac-rlc-parallel-15-10-20-120v.svg",
+    "imageAlt": "교류 전원 120V 의 양 끝에 저항 R = 15Ω, 코일(유도 리액턴스 XL = 10Ω), 콘덴서(용량 리액턴스 XC = 20Ω)가 나란히(병렬로) 연결되어 있고, 전원에서 나오는 전체 전류를 I 로 표시한 회로",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-engineer-circuit-theory-0010",
+    "certId": "electrical-engineer",
+    "subjectId": "circuit-control",
+    "chapterId": "circuit-theory",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "그림과 같이 기전력 100V, 내부 저항 r = 5Ω 인 전원에 가변 저항 RL 을 연결했다. RL 을 조절해 RL 에서 소비되는 전력이 가장 클 때, 그 최대 전력은 몇 W 인가?",
+    "choices": [
+      "2000W",
+      "1000W",
+      "약 444W",
+      "500W"
+    ],
+    "answer": 4,
+    "oneLineConcept": "최대 전력 전달: RL = r 일 때 Pmax = E² ÷ (4r)",
+    "explanation": "부하 저항이 전원의 내부 저항과 **같을 때** 부하에 가장 큰 전력이 전달됩니다(최대 전력 전달 조건).\n\n1. 최대 전력 조건: RL = r = 5Ω\n2. 회로 전체 저항: 5 + 5 = 10Ω\n3. 전류: I = 100 ÷ 10 = 10A\n4. 부하 전력: P = I² × RL = 10² × 5 = 500W\n\n검산: 공식 Pmax = E² ÷ (4r) = 100² ÷ (4 × 5) = 10000 ÷ 20 = 500W 로 같습니다.\n\n**틀린 선지**\n- 2000W: 부하 없이 내부 저항만 있다고 보고 계산한 값(100² ÷ 5)입니다.\n- 1000W: 전원 전체가 내보내는 전력(100V × 10A)입니다. 이 가운데 절반(500W)은 내부 저항에서 열로 사라지고, 부하에는 나머지 절반만 갑니다.\n- 약 444W: 부하를 내부 저항의 2배(10Ω)로 잡았을 때의 전력입니다. 부하는 내부 저항과 같아야 전력이 가장 큽니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "최대 전력 전달",
+      "계산",
+      "그림"
+    ],
+    "image": "max-power-100v-5ohm.svg",
+    "imageAlt": "점선 상자로 묶은 전원 안에 기전력 100V 전지와 내부 저항 r = 5Ω 이 직렬로 있고, 전원의 두 단자에 화살표가 그어진 가변 저항 RL 이 연결된 회로",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-engineer-circuit-theory-0011",
+    "certId": "electrical-engineer",
+    "subjectId": "circuit-control",
+    "chapterId": "circuit-theory",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "그림의 회로를 단자 a-b 에서 본 테브난 등가 회로로 바꿀 때, 등가 전압 Vth 와 등가 저항 Rth 는? (전지의 내부 저항은 무시한다)",
+    "choices": [
+      "24V, 4Ω",
+      "8V, 4Ω",
+      "8V, 11Ω",
+      "8V, 2Ω"
+    ],
+    "answer": 2,
+    "oneLineConcept": "테브난: Vth = 단자 열린 전압, Rth = 전원 단락 후 단자에서 본 저항",
+    "explanation": "**테브난의 정리**는 복잡한 회로를 \"전압원 하나 + 저항 하나\"로 바꾸는 방법입니다.\n- 등가 전압 Vth: a-b 단자를 열어 둔 채 잰 전압\n- 등가 저항 Rth: 전지를 전선으로 바꾼(단락한) 뒤 a-b 에서 본 저항\n\n등가 전압 구하기\n1. a-b 가 열려 있으므로 2Ω 에는 전류가 흐르지 않습니다. 그래서 a-b 전압 = 3Ω 양 끝 전압입니다.\n2. 6Ω 과 3Ω 이 24V 를 나눠 가집니다: Vth = 24 × 3 ÷ (6 + 3) = 8V\n\n등가 저항 구하기\n3. 전지를 단락하면 6Ω 과 3Ω 이 병렬이 됩니다: (6 × 3) ÷ (6 + 3) = 18 ÷ 9 = 2Ω\n4. 여기에 2Ω 이 직렬로 붙습니다: Rth = 2 + 2 = 4Ω\n\n검산: 6Ω 에 걸리는 전압은 24 × 6 ÷ 9 = 16V 이고, 16 + 8 = 24V 로 전지 전압과 맞습니다.\n\n**틀린 선지**\n- 24V, 4Ω: 전지 전압을 그대로 쓴 것입니다. 6Ω 이 전압의 일부(16V)를 가져가므로 단자 전압은 8V 입니다.\n- 8V, 11Ω: 저항 셋을 모두 직렬로 더한 값(6 + 3 + 2)입니다. 전지를 단락하면 6Ω 과 3Ω 은 병렬이 됩니다.\n- 8V, 2Ω: 6Ω 과 3Ω 의 병렬 값만 쓰고 단자 쪽 2Ω 을 빼먹었습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "테브난의 정리",
+      "등가 회로",
+      "계산",
+      "그림"
+    ],
+    "image": "thevenin-24v-6-3-2.svg",
+    "imageAlt": "24V 전지의 + 쪽에서 6Ω 저항을 지나 접속점에 이르고, 그 접속점과 아래 선 사이에 3Ω 저항이 연결되어 있다. 접속점에서 다시 2Ω 저항을 지나 단자 a 로 나가고, 아래 선은 단자 b 로 이어진다",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-engineer-circuit-theory-0012",
+    "certId": "electrical-engineer",
+    "subjectId": "circuit-control",
+    "chapterId": "circuit-theory",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "그림의 브리지 회로에서 24V 전지가 내보내는 전체 전류는 몇 A 인가? (전지의 내부 저항은 무시한다)",
+    "choices": [
+      "4A",
+      "약 2.7A",
+      "6A",
+      "약 1.3A"
+    ],
+    "answer": 3,
+    "oneLineConcept": "브리지 평형(마주 보는 변의 곱이 같음)이면 가운데 저항은 없는 셈",
+    "explanation": "먼저 브리지가 **평형**(가운데 저항에 전류가 흐르지 않는 상태)인지 봅니다. 평형 조건은 **마주 보는 변끼리 곱한 값이 같은 것**입니다.\n\n1. 평형 확인: 2Ω × 8Ω = 16, 4Ω × 4Ω = 16 → 같으므로 평형입니다.\n2. 그래서 가운데 5Ω 에는 전류가 흐르지 않아 없는 것으로 봅니다.\n3. 위쪽 길: 2 + 4 = 6Ω, 아래쪽 길: 4 + 8 = 12Ω\n4. 두 길은 병렬: (6 × 12) ÷ (6 + 12) = 72 ÷ 18 = 4Ω\n5. 전체 전류: I = 24 ÷ 4 = 6A\n\n검산: 위쪽 길 전류 24 ÷ 6 = 4A, 아래쪽 길 전류 24 ÷ 12 = 2A, 합하면 6A 로 같습니다.\n\n**틀린 선지**\n- 4A: 위쪽 길(6Ω)로 흐르는 전류만 구한 값입니다. 아래쪽 길 전류 2A 도 더해야 합니다.\n- 약 2.7A: 합성저항 4Ω 에 가운데 5Ω 을 더해 9Ω 으로 계산한 값(24 ÷ 9)입니다. 평형이면 가운데 저항에는 전류가 흐르지 않습니다.\n- 약 1.3A: 네 변의 저항을 모두 직렬로 더해 18Ω 으로 계산한 값(24 ÷ 18)입니다. 위쪽 길과 아래쪽 길은 병렬입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "브리지 평형",
+      "합성저항",
+      "계산",
+      "그림"
+    ],
+    "image": "bridge-2-4-4-8-5-24v.svg",
+    "imageAlt": "마름모 모양의 브리지 회로. 왼쪽 꼭짓점에서 위 꼭짓점까지 2Ω, 위에서 오른쪽까지 4Ω, 왼쪽에서 아래 꼭짓점까지 4Ω, 아래에서 오른쪽까지 8Ω 이고, 위와 아래 꼭짓점 사이에 5Ω, 왼쪽과 오른쪽 꼭짓점 사이에 24V 전지가 연결되어 있다",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "electrical-engineer-circuit-theory-0013",
+    "certId": "electrical-engineer",
+    "subjectId": "circuit-control",
+    "chapterId": "circuit-theory",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "그림과 같이 10V 전지, 스위치 S, 저항 R = 10kΩ, 콘덴서 C = 100μF 가 직렬로 연결되어 있다. 이 회로의 시정수는 몇 초인가?",
+    "choices": [
+      "1초",
+      "0.1초",
+      "1,000초",
+      "10초"
+    ],
+    "answer": 1,
+    "oneLineConcept": "R-C 회로의 시정수 τ = R × C (단위를 Ω·F 로 바꿔 곱한다)",
+    "explanation": "**시정수**(과도 현상이 얼마나 빨리 끝나는지 나타내는 값)는 R-C 회로에서 τ = R × C 입니다. 전지 전압(10V)은 시정수와 관계가 없습니다. 단위를 기본 단위로 바꾼 뒤 곱하는 것이 핵심입니다.\n\n1. 저항: 10kΩ = 10 × 1,000 = 10,000Ω\n2. 정전용량: 100μF = 100 × 0.000001 = 0.0001F\n3. 시정수: τ = 10,000 × 0.0001 = 1초\n\n검산: 10⁴ × 10⁻⁴ = 10⁰ = 1 이므로 1초가 맞습니다.\n\n**틀린 선지**\n- 0.1초: 100μF 를 0.00001F 로 0 을 하나 더 붙여 잘못 바꾼 값입니다.\n- 1,000초: 단위를 바꾸지 않고 숫자만 곱한 값(10 × 100)입니다.\n- 10초: 10kΩ 을 100,000Ω 으로 0 을 하나 더 붙여 잘못 바꾼 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "과도 현상",
+      "시정수",
+      "R-C 회로",
+      "계산",
+      "그림"
+    ],
+    "image": "rc-transient-10v-10k-100uf.svg",
+    "imageAlt": "10V 전지, 열린 스위치 S, 저항 R = 10kΩ, 콘덴서 C = 100μF 가 한 줄로(직렬로) 이어진 회로",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "electrical-engineer-circuit-theory-0014",
+    "certId": "electrical-engineer",
+    "subjectId": "circuit-control",
+    "chapterId": "circuit-theory",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "그림과 같이 100V 전지, 스위치 S, 저항 R = 20Ω, 코일 L = 4H 가 직렬로 연결되어 있다. 스위치 S 를 닫고 0.2초가 지났을 때 회로에 흐르는 전류는 약 몇 A 인가? (e⁻¹ ≈ 0.368 로 계산한다)",
+    "choices": [
+      "5A",
+      "약 1.84A",
+      "2.5A",
+      "약 3.16A"
+    ],
+    "answer": 4,
+    "oneLineConcept": "R-L 회로: i = (E ÷ R)(1 − e^(−t/τ)), τ = L ÷ R",
+    "explanation": "스위치를 닫으면 코일이 전류의 변화를 막기 때문에 전류가 0 에서 천천히 늘어납니다. 이때 전류는 i = (E ÷ R) × (1 − e^(−t/τ)) 입니다.\n\n1. 다 커졌을 때의 전류(정상 전류): E ÷ R = 100 ÷ 20 = 5A\n2. 시정수: τ = L ÷ R = 4 ÷ 20 = 0.2초\n3. 지난 시간 0.2초는 시정수 1개와 같으므로 t/τ = 1\n4. 전류: i = 5 × (1 − e⁻¹) = 5 × (1 − 0.368) = 5 × 0.632 = 3.16A\n\n검산: 시정수만큼 지나면 정상 전류의 약 63.2% 에 이릅니다. 5A 의 63.2% 는 약 3.16A 로 같습니다.\n\n**틀린 선지**\n- 5A: 시간이 충분히 지나 다 커졌을 때의 전류입니다. 0.2초 뒤에는 아직 거기까지 가지 못합니다.\n- 약 1.84A: 5 × 0.368 로 계산한 값입니다. 이것은 전류가 줄어드는 경우(스위치를 끊을 때)에 남아 있는 전류입니다.\n- 2.5A: 정상 전류의 절반입니다. 시정수 1개만큼 지나면 절반이 아니라 약 63.2% 가 됩니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "과도 현상",
+      "시정수",
+      "R-L 회로",
+      "계산",
+      "그림"
+    ],
+    "image": "rl-transient-100v-20-4h.svg",
+    "imageAlt": "100V 전지, 열린 스위치 S, 저항 R = 20Ω, 코일 L = 4H 가 한 줄로(직렬로) 이어진 회로",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
   }
 ]
