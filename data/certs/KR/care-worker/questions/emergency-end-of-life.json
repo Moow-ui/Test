@@ -1,0 +1,581 @@
+[
+  {
+    "id": "care-worker-emergency-end-of-life-0001",
+    "certId": "care-worker",
+    "subjectId": "practical",
+    "chapterId": "emergency-end-of-life",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "쓰러진 대상자의 어깨를 두드려도 반응이 없고 정상적인 호흡이 없다. 가장 먼저 할 일은?",
+    "choices": [
+      "깨어날 때까지 지켜보며 기다린다",
+      "119에 신고하고 자동심장충격기를 가져오게 한 뒤 가슴압박을 시작한다",
+      "등을 세게 두드려 깨운다",
+      "물을 먹여 정신을 차리게 한다",
+      "가족에게 먼저 전화해 허락을 받는다"
+    ],
+    "answer": 2,
+    "oneLineConcept": "반응·호흡 없음 → 119 → 가슴압박",
+    "explanation": "반응이 없고 정상 호흡이 없으면 심정지로 보고 **119 신고와 자동심장충격기 요청** 뒤 **바로 가슴압박**을 시작합니다. 심정지는 시간이 지날수록 살릴 가능성이 줄어듭니다.\n\n**틀린 선지**\n- 깨어날 때까지 지켜보며 기다린다: 심정지는 몇 분 안에 뇌 손상이 시작되어 바로 행동해야 합니다.\n- 등을 세게 두드려 깨운다: 반응·호흡이 없으면 가슴압박이 필요합니다.\n- 물을 먹여 정신을 차리게 한다: 의식이 없는 사람에게 물을 먹이면 기도가 막힙니다.\n- 가족에게 먼저 전화해 허락을 받는다: 시간이 늦어지면 생명이 위험합니다. 119가 먼저입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "심폐소생술"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        4,
+        5
+      ],
+      "advanced": [
+        1,
+        2,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "care-worker-emergency-end-of-life-0002",
+    "certId": "care-worker",
+    "subjectId": "practical",
+    "chapterId": "emergency-end-of-life",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "성인에게 가슴압박을 할 때 속도와 깊이로 옳은 것은?",
+    "choices": [
+      "분당 30회, 약 3cm 깊이",
+      "분당 60~80회, 약 2cm 깊이",
+      "분당 100~120회, 약 5cm 깊이",
+      "분당 150회 이상, 약 10cm 깊이",
+      "분당 200회, 약 1cm 깊이"
+    ],
+    "answer": 3,
+    "oneLineConcept": "가슴압박 = 분당 100~120회, 약 5cm",
+    "explanation": "한국 심폐소생술 가이드라인에 따라 성인 가슴압박은 **가슴뼈 아래쪽 절반**을 **분당 100~120회** 속도로 **약 5cm 깊이**로 누르고, 누른 뒤에는 가슴이 완전히 올라오게 합니다.\n\n**틀린 선지**\n- 분당 30회, 약 3cm 깊이: 너무 느리고 얕습니다.\n- 분당 60~80회, 약 2cm 깊이: 너무 느리고 얕아 피가 충분히 돌지 않습니다.\n- 분당 150회 이상, 약 10cm 깊이: 너무 빠르고 깊어 효과가 떨어지고 다칠 수 있습니다.\n- 분당 200회, 약 1cm 깊이: 너무 빠르고 얕습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "심폐소생술",
+      "가슴압박"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "care-worker-emergency-end-of-life-0003",
+    "certId": "care-worker",
+    "subjectId": "practical",
+    "chapterId": "emergency-end-of-life",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "식사 중 대상자가 목을 움켜쥐고 말을 못 하며 숨을 쉬지 못한다. 가장 적절한 처치는?",
+    "choices": [
+      "손가락을 깊이 넣어 무조건 빼낸다",
+      "등을 쓰다듬으며 진정시킨다",
+      "물을 마시게 해 음식을 내려보낸다",
+      "바로 눕혀 쉬게 한다",
+      "대상자 뒤에서 배꼽과 명치 사이를 위로 밀어 올린다(하임리히법)"
+    ],
+    "answer": 5,
+    "oneLineConcept": "말·숨 못 쉼 = 하임리히법",
+    "explanation": "목을 움켜쥐고 **말을 못 하고 숨을 못 쉬면** 기도가 완전히 막힌 것입니다. 대상자 뒤에서 **배꼽과 명치 사이를 주먹으로 감싸 위로 세게 밀어 올리는 하임리히법**을 이물질이 나오거나 의식을 잃을 때까지 반복합니다. 의식을 잃으면 119에 알리고 심폐소생술을 합니다.\n\n**틀린 선지**\n- 손가락을 깊이 넣어 무조건 빼낸다: 보이지 않는 이물질을 손가락으로 찾으면 더 깊이 밀려 들어갈 수 있습니다.\n- 등을 쓰다듬으며 진정시킨다: 부드럽게 쓰다듬는 것으로는 이물질이 나오지 않습니다.\n- 물을 마시게 해 음식을 내려보낸다: 숨을 못 쉬는 상태에서 물을 마시면 더 막힙니다.\n- 바로 눕혀 쉬게 한다: 눕혀 두면 기도가 계속 막혀 있습니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "기도 폐쇄",
+      "하임리히법"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        5
+      ],
+      "intermediate": [
+        1,
+        3,
+        5
+      ],
+      "advanced": [
+        1,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "care-worker-emergency-end-of-life-0004",
+    "certId": "care-worker",
+    "subjectId": "practical",
+    "chapterId": "emergency-end-of-life",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "음식이 목에 걸린 대상자가 심하게 기침을 하고 있다. 요양보호사의 대처로 옳은 것은?",
+    "choices": [
+      "기침을 계속하도록 격려하며 지켜본다",
+      "물을 마시게 한다",
+      "등을 뒤로 젖히게 한다",
+      "입에 손가락을 넣어 빼낸다",
+      "바로 하임리히법을 한다"
+    ],
+    "answer": 1,
+    "oneLineConcept": "기침 가능 → 기침하게 격려",
+    "explanation": "기도가 부분적으로 막혀 **기침을 할 수 있으면 기침을 계속하게** 합니다. 기침이 약해지거나 말을 못 하고 숨을 못 쉬게 되면 그때 하임리히법을 합니다.\n\n**틀린 선지**\n- 물을 마시게 한다: 물이 기도로 넘어가 더 위험할 수 있습니다.\n- 등을 뒤로 젖히게 한다: 젖히면 이물질이 더 깊이 들어갈 수 있습니다.\n- 입에 손가락을 넣어 빼낸다: 손가락이 이물질을 더 밀어 넣을 수 있습니다.\n- 바로 하임리히법을 한다: 기침을 할 수 있으면 기침이 이물질을 빼내는 가장 좋은 방법입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "기도 폐쇄"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        5
+      ],
+      "intermediate": [
+        1,
+        2,
+        5
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        5
+      ]
+    }
+  },
+  {
+    "id": "care-worker-emergency-end-of-life-0005",
+    "certId": "care-worker",
+    "subjectId": "practical",
+    "chapterId": "emergency-end-of-life",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "대상자가 뜨거운 국을 쏟아 손등이 붉어지고 따갑다고 한다. 가장 먼저 할 일은?",
+    "choices": [
+      "기름을 발라 열을 막는다",
+      "흐르는 시원한 물로 화상 부위를 식힌다",
+      "물집이 생기면 바늘로 터뜨린다",
+      "얼음을 직접 오래 대고 있는다",
+      "된장이나 치약을 바른다"
+    ],
+    "answer": 2,
+    "oneLineConcept": "화상 = 흐르는 찬물로 식히기",
+    "explanation": "화상을 입으면 **흐르는 시원한 물로 열을 식히는 것**이 먼저입니다. 된장, 치약, 기름은 바르지 않고, 물집은 터뜨리지 않으며, 깨끗한 천으로 덮고 보고합니다.\n\n**틀린 선지**\n- 기름을 발라 열을 막는다: 기름은 열을 가두고 감염 위험을 높입니다.\n- 물집이 생기면 바늘로 터뜨린다: 물집을 터뜨리면 감염됩니다.\n- 얼음을 직접 오래 대고 있는다: 얼음을 직접 오래 대면 동상처럼 피부가 상할 수 있습니다.\n- 된장이나 치약을 바른다: 민간요법은 감염과 손상을 일으킬 수 있습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "화상"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        5
+      ],
+      "intermediate": [
+        2,
+        4,
+        5
+      ],
+      "advanced": [
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "care-worker-emergency-end-of-life-0006",
+    "certId": "care-worker",
+    "subjectId": "practical",
+    "chapterId": "emergency-end-of-life",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "대상자가 갑자기 몸을 떨며 경련을 일으킨다. 요양보호사의 대처로 옳은 것은?",
+    "choices": [
+      "찬물을 얼굴에 뿌려 깨운다",
+      "떨지 않도록 팔다리를 꽉 붙잡는다",
+      "혀를 깨물지 않게 숟가락을 입에 넣는다",
+      "주변의 위험한 물건을 치우고 경련이 멈추면 옆으로 눕힌다",
+      "물을 먹여 진정시킨다"
+    ],
+    "answer": 4,
+    "oneLineConcept": "경련 = 붙잡지 말고 치우고, 멈추면 옆으로",
+    "explanation": "경련 중에는 **억지로 붙잡거나 입에 물건을 넣지 말고**, 머리 아래를 받치고 **주변 위험한 물건을 치웁니다**. 경련이 멈추면 **옆으로 눕혀** 침이나 토한 것이 기도로 들어가지 않게 하고, 경련 시간과 모습을 기록해 보고합니다.\n\n**틀린 선지**\n- 찬물을 얼굴에 뿌려 깨운다: 경련을 멈추게 하지 못하고 위험할 수 있습니다.\n- 떨지 않도록 팔다리를 꽉 붙잡는다: 억지로 붙잡으면 뼈나 근육이 다칠 수 있습니다.\n- 혀를 깨물지 않게 숟가락을 입에 넣는다: 입에 물건을 넣으면 치아가 부러지거나 기도가 막힐 수 있습니다.\n- 물을 먹여 진정시킨다: 의식이 흐린 상태에서 물을 먹이면 사레가 들립니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "경련"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ],
+      "advanced": [
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "care-worker-emergency-end-of-life-0007",
+    "certId": "care-worker",
+    "subjectId": "practical",
+    "chapterId": "emergency-end-of-life",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "대상자가 넘어진 뒤 엉덩이 쪽이 매우 아프다며 다리를 움직이지 못한다. 가장 적절한 대처는?",
+    "choices": [
+      "억지로 일으키지 말고 편한 자세로 두고 도움을 요청한다",
+      "아픈 다리를 주물러 풀어 준다",
+      "아픈 다리를 쭉 펴서 맞춰 준다",
+      "바로 부축해 일으켜 걷게 한다",
+      "혼자 침대로 들어 옮긴다"
+    ],
+    "answer": 1,
+    "oneLineConcept": "골절 의심 = 움직이지 말고 도움 요청",
+    "explanation": "넘어진 뒤 심한 통증으로 움직이지 못하면 **골절**을 의심합니다. **억지로 일으키거나 움직이지 말고** 그 자리에서 편한 자세로 두며, 119나 관리책임자에게 도움을 요청합니다. 노인의 엉덩이 쪽 통증은 고관절 골절일 수 있습니다.\n\n**틀린 선지**\n- 아픈 다리를 주물러 풀어 준다: 골절 부위를 주무르면 손상이 커집니다.\n- 아픈 다리를 쭉 펴서 맞춰 준다: 뼈를 맞추는 것은 의료인이 할 일입니다.\n- 바로 부축해 일으켜 걷게 한다: 골절이 있으면 움직일 때 더 크게 다칩니다.\n- 혼자 침대로 들어 옮긴다: 잘못 옮기면 손상이 커집니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "낙상",
+      "골절"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "care-worker-emergency-end-of-life-0008",
+    "certId": "care-worker",
+    "subjectId": "practical",
+    "chapterId": "emergency-end-of-life",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "대상자의 손가락이 칼에 베여 피가 난다. 가장 적절한 처치는?",
+    "choices": [
+      "상처를 손톱으로 벌려 씻는다",
+      "손가락을 심장보다 낮게 내린다",
+      "깨끗한 거즈나 천으로 상처를 직접 눌러 지혈한다",
+      "흙이나 휴지 조각을 뿌린다",
+      "피가 멈출 때까지 그대로 둔다"
+    ],
+    "answer": 3,
+    "oneLineConcept": "출혈 = 직접 눌러 지혈",
+    "explanation": "피가 나면 **깨끗한 거즈나 천으로 상처를 직접 눌러** 지혈하고, 가능하면 **상처 부위를 심장보다 높게** 올립니다. 피가 멈추지 않거나 상처가 깊으면 보고합니다.\n\n**틀린 선지**\n- 상처를 손톱으로 벌려 씻는다: 상처를 벌리면 더 다치고 출혈이 늘어납니다.\n- 손가락을 심장보다 낮게 내린다: 상처 부위는 심장보다 높이 올리면 출혈이 줄어듭니다.\n- 흙이나 휴지 조각을 뿌린다: 흙이나 휴지 조각은 감염을 일으킵니다.\n- 피가 멈출 때까지 그대로 둔다: 눌러 주어야 빨리 멈춥니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "출혈"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        3,
+        4,
+        5
+      ],
+      "advanced": [
+        1,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "care-worker-emergency-end-of-life-0009",
+    "certId": "care-worker",
+    "subjectId": "practical",
+    "chapterId": "emergency-end-of-life",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "임종이 가까운 대상자 곁에서 요양보호사가 주의할 점으로 옳은 것은?",
+    "choices": [
+      "방을 어둡게 하고 아무도 들어오지 못하게 한다",
+      "가족과 이별하지 못하게 한다",
+      "입술이 말라도 그냥 둔다",
+      "의식이 없으니 곁에서 무슨 말을 해도 괜찮다",
+      "청각은 마지막까지 남아 있으므로 곁에서 다정하게 말을 건넨다"
+    ],
+    "answer": 5,
+    "oneLineConcept": "임종 = 청각은 마지막까지 남는다",
+    "explanation": "임종 직전에도 **청각은 마지막까지 남아 있다고 알려져** 있습니다. 대상자 곁에서는 말을 조심하고, 다정하게 말을 건네며, 가족이 마지막 인사를 할 수 있도록 돕습니다.\n\n**틀린 선지**\n- 방을 어둡게 하고 아무도 들어오지 못하게 한다: 가족이 함께 있을 수 있게 돕습니다.\n- 가족과 이별하지 못하게 한다: 가족이 마지막 인사를 하도록 돕습니다.\n- 입술이 말라도 그냥 둔다: 입술과 입안을 촉촉하게 관리합니다.\n- 의식이 없으니 곁에서 무슨 말을 해도 괜찮다: 청각은 마지막까지 남아 들을 수 있으니 말을 조심합니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "임종",
+      "감각"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        4,
+        5
+      ],
+      "intermediate": [
+        1,
+        4,
+        5
+      ],
+      "advanced": [
+        1,
+        2,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "id": "care-worker-emergency-end-of-life-0010",
+    "certId": "care-worker",
+    "subjectId": "practical",
+    "chapterId": "emergency-end-of-life",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "임종이 가까워졌을 때 나타나는 변화로 옳은 것은?",
+    "choices": [
+      "손발이 따뜻해지고 혈색이 좋아진다",
+      "손발이 차가워지고 호흡이 불규칙해진다",
+      "소변량이 늘어난다",
+      "식욕이 크게 늘어난다",
+      "의식이 점점 더 또렷해진다"
+    ],
+    "answer": 2,
+    "oneLineConcept": "임종 징후 = 손발 차가움, 불규칙한 호흡",
+    "explanation": "임종이 가까워지면 **손발이 차가워지고 피부색이 변하며**, **호흡이 불규칙해지고**, 의식이 흐려지며, 먹고 마시는 양과 소변량이 줄어듭니다. 변화가 보이면 관리책임자와 가족에게 알립니다.\n\n**틀린 선지**\n- 손발이 따뜻해지고 혈색이 좋아진다: 피가 몸의 중심으로 몰려 손발은 차가워집니다.\n- 소변량이 늘어난다: 소변량은 줄어듭니다.\n- 식욕이 크게 늘어난다: 먹고 마시는 양이 줄어듭니다.\n- 의식이 점점 더 또렷해진다: 의식이 점점 흐려집니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "임종",
+      "징후"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "care-worker-emergency-end-of-life-0011",
+    "certId": "care-worker",
+    "subjectId": "practical",
+    "chapterId": "emergency-end-of-life",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "임종을 맞은 대상자의 가족을 돕는 방법으로 가장 적절한 것은?",
+    "choices": [
+      "빨리 잊으라고 말한다",
+      "울지 말라고 다그친다",
+      "가족에게 대상자의 마지막 모습을 보지 못하게 한다",
+      "가족이 슬픔을 충분히 표현하도록 곁에서 들어 준다",
+      "요양보호사의 종교 의식을 권한다"
+    ],
+    "answer": 4,
+    "oneLineConcept": "가족 지지 = 슬픔을 표현하게 들어 주기",
+    "explanation": "가족이 **슬픔을 충분히 표현하도록** 곁에서 들어 주고, 대상자와 이별할 시간을 갖게 돕습니다. 가족의 종교와 문화를 존중합니다.\n\n**틀린 선지**\n- 빨리 잊으라고 말한다: 슬픔을 억누르게 하는 말입니다.\n- 울지 말라고 다그친다: 슬픔은 자연스러운 감정입니다.\n- 가족에게 대상자의 마지막 모습을 보지 못하게 한다: 가족이 이별할 기회를 빼앗습니다.\n- 요양보호사의 종교 의식을 권한다: 가족의 종교와 문화를 존중해야 합니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "임종",
+      "가족 지지"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "care-worker-emergency-end-of-life-0012",
+    "certId": "care-worker",
+    "subjectId": "practical",
+    "chapterId": "emergency-end-of-life",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "응급 상황에서 요양보호사의 행동으로 옳지 않은 것은?",
+    "choices": [
+      "먼저 주변이 안전한지 살핀다",
+      "필요하면 바로 119에 신고한다",
+      "침착하게 대상자를 안심시킨다",
+      "의식이 없는 대상자에게 정신이 들도록 물이나 음식을 먹인다",
+      "대상자의 상태와 처치 내용을 기록하고 보고한다"
+    ],
+    "answer": 4,
+    "oneLineConcept": "의식 없는 사람에게 먹이지 않는다",
+    "explanation": "의식이 없는 사람에게 **물이나 음식을 먹이면 기도가 막혀** 매우 위험합니다. 응급 상황에서는 주변 안전 확인 → 119 신고 → 할 수 있는 응급처치 → 기록과 보고 순서로 침착하게 행동합니다.\n\n**틀린 선지**\n- 먼저 주변이 안전한지 살핀다: 맞는 행동입니다.\n- 필요하면 바로 119에 신고한다: 맞는 행동입니다.\n- 침착하게 대상자를 안심시킨다: 맞는 행동입니다.\n- 대상자의 상태와 처치 내용을 기록하고 보고한다: 맞는 행동입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "응급처치",
+      "원칙"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "care-worker-emergency-end-of-life-0013",
+    "certId": "care-worker",
+    "subjectId": "practical",
+    "chapterId": "emergency-end-of-life",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "자동심장충격기(AED)를 사용할 때 옳은 것은?",
+    "choices": [
+      "분석 중에도 대상자를 계속 흔든다",
+      "패드를 옷 위에 붙인다",
+      "전원을 켜고 음성 안내에 따라 패드를 붙인다",
+      "자동심장충격기를 쓰는 동안 119 신고는 하지 않는다",
+      "전기충격 버튼을 누를 때 대상자를 붙잡고 있는다"
+    ],
+    "answer": 3,
+    "oneLineConcept": "AED = 전원 켜고 음성 안내대로",
+    "explanation": "자동심장충격기는 **전원을 켜고 음성 안내에 따라** 맨가슴에 패드를 붙입니다. 심장 리듬을 분석하거나 전기충격을 줄 때는 **아무도 대상자에게 닿지 않게** 하고, 충격 뒤에는 바로 가슴압박을 다시 합니다.\n\n**틀린 선지**\n- 분석 중에도 대상자를 계속 흔든다: 분석 중에는 대상자에게서 떨어져야 정확합니다.\n- 패드를 옷 위에 붙인다: 패드는 맨가슴 피부에 붙여야 합니다.\n- 자동심장충격기를 쓰는 동안 119 신고는 하지 않는다: 119 신고는 반드시 함께 합니다.\n- 전기충격 버튼을 누를 때 대상자를 붙잡고 있는다: 충격 때 대상자에게 닿아 있으면 위험합니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "자동심장충격기"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ],
+      "advanced": [
+        1,
+        2,
+        3,
+        5
+      ]
+    }
+  },
+  {
+    "id": "care-worker-emergency-end-of-life-0014",
+    "certId": "care-worker",
+    "subjectId": "practical",
+    "chapterId": "emergency-end-of-life",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "대상자가 임종한 뒤 요양보호사의 돌봄으로 옳은 것은?",
+    "choices": [
+      "대상자의 물건을 동료들과 나눈다",
+      "몸을 깨끗이 하고 바른 자세로 눕혀 가족이 마지막 인사를 하게 돕는다",
+      "가족이 오지 못하게 문을 잠근다",
+      "가족이 오기 전에 서둘러 옷을 모두 정리해 버린다",
+      "몸을 아무렇게나 둔다"
+    ],
+    "answer": 2,
+    "oneLineConcept": "임종 후 = 고인 존중, 가족이 인사하도록",
+    "explanation": "임종 뒤에는 고인을 존중하여 **몸을 깨끗이 하고 바른 자세로 눕히며**, 가족이 마지막 인사를 할 수 있게 돕습니다. 유품은 가족에게 정확히 전달합니다.\n\n**틀린 선지**\n- 대상자의 물건을 동료들과 나눈다: 고인의 물건은 가족에게 전합니다.\n- 가족이 오지 못하게 문을 잠근다: 가족이 마지막 인사를 하도록 돕습니다.\n- 가족이 오기 전에 서둘러 옷을 모두 정리해 버린다: 유품은 가족과 함께 정리합니다.\n- 몸을 아무렇게나 둔다: 고인을 존중해 바른 자세로 눕힙니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "임종 후 돌봄"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        4,
+        5
+      ],
+      "advanced": [
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  }
+]
