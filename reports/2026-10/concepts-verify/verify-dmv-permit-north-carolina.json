@@ -1,0 +1,40 @@
+{
+  "cert": "dmv-permit-north-carolina",
+  "date": "2026-10-21",
+  "sourceChecked": "North Carolina Driver's Handbook PDF (ncdot.gov nc-driver-handbook.pdf, back cover 'Revised May 2025', file modified 2026-09-10; Ch.1 pp.12-14, Ch.2 pp.31-33, Ch.3 pp.34-36, Ch.4 pp.43-79, Ch.5 pp.80-88, Ch.6 pp.89-93); NCDMV pages level1.aspx / level2.aspx / level3.aspx (fetched 2026-10-20, incl. DEC removal from 2026-10-01 under SL 2026-46); G.S. 20-142.1 (text reprinted in handbook p.60); G.S. 20-157(f) via S.L. 2012-14 (ncleg.gov unreachable from this session, so handbook p.49 used for the current text); MUTCD 2023 (R1-1, R1-2, R2-1, R4-1, R4-16, W14-3, Part 3 markings). 19A NCAC 03B .0201 could not be loaded (Cornell returned the index page only). It is cited only in meta.json, not in concepts.json.",
+  "chapters": {
+    "regulatory-signs": {"result": "PASS", "issues": [
+      "Note only: 'Rectangular or square signs, normally black and white or red and white ... such as NO U-TURN or KEEP RIGHT EXCEPT TO PASS' repeats the handbook's short list phrase. The fact is correct; the wording could be changed a little → Handbook Ch.5 p.83"
+    ]},
+    "warning-signs": {"result": "PASS", "issues": [
+      "Note only: summary 'a small sign under it shows how many tracks there are' and the compare row 'Small sign under the crossbuck' say this without a condition. The handbook and MUTCD R15-2P use that sign only when there are two or more tracks (the concept card already says 'if there is more than one track'). Consider 'when there is more than one track' → Handbook Ch.5 p.84; MUTCD 8B.03"
+    ]},
+    "guide-signs": {"result": "PASS", "issues": [
+      "Note only: 'Odd-numbered highways generally run north and south. Even-numbered highways generally run east and west.' is word-for-word the handbook sentence (15 words). The fact is correct; reword for fresh wording → Handbook Ch.5 p.85"
+    ]},
+    "signals-markings": {"result": "PASS", "issues": []},
+    "right-of-way": {"result": "PASS", "issues": [
+      "Note only: summary 'The law never gives you the right of way; it only says who must yield.' is not in the NC handbook. The handbook itself says emergency vehicles and pedestrians 'have the right of way', and this chapter's own card says 'the vehicle on the right has the right of way'. Consider removing it or softening it to 'Even with the right of way, be ready to yield to avoid a crash' → Handbook Ch.4 pp.46-48, 57",
+      "Note only: the summary adds 'When you leave a driveway, stop and yield to all vehicles and pedestrians', which is correct but not in the concepts or points → Handbook Ch.4 p.57"
+    ]},
+    "speed-passing-parking": {"result": "PASS", "issues": [
+      "Note only: the turn-signal card 'Where the speed limit is 45 mph or more, signal at least the last 200 feet before turning' is nearly word-for-word the handbook. This is acceptable for a legal rule, but could be reworded → Handbook Ch.4 p.69"
+    ]},
+    "safe-driving": {"result": "PASS", "issues": [
+      "Note only: the summary adds facts that are not in the concepts or points: 'two to ten times as far' on wet roads, 'slickest in the first minutes of rain', 'In fog, use low beams', and the wheels-off-pavement steps. All are correct (Handbook Ch.4 pp.72-73, 77). Consider adding one card or point for them",
+      "Note only: the Hydroplaning card (30 mph) and the Truck No-Zones card (20 ft / 200 ft) have numbers but no source. Add Handbook Ch.4 p.72 and Ch.6 pp.91-92"
+    ]},
+    "teen-licensing": {"result": "PASS", "issues": [
+      "Note only: the compare row 'Level 3 full provisional license | Minimum age 16' matches NCDMV level3.aspx ('Be 16 to 17 years old'). In practice the earliest age is about 16 and a half, because Level 2 must be held 6 months. Consider '16 (after 6 months at Level 2)' → G.S. 20-11(f); NCDMV level3.aspx",
+      "Note only: the 'Level 3 full provisional' card has a legal number (six months) but no source. Add Handbook Ch.1 p.13 / NCDMV level3.aspx"
+    ]},
+    "dwi-points": {"result": "PASS", "issues": [
+      "Note only: tip 'School bus pass costs the most: 5 points' — aggressive driving is also 5 points. Consider 'one of the highest' → Handbook Ch.3 p.34"
+    ]}
+  },
+  "figures": {
+    "regulatory-sign-types.svg": "① PASS ② PASS ③ PASS ⑤ PASS",
+    "no-passing-signs.svg": "① PASS ② PASS ③ PASS ⑤ PASS",
+    "yellow-white-lines.svg": "① PASS ② PASS ③ PASS ⑤ PASS (Note: no PNG in reports/images-png yet; checked by rendering it at 360px)"
+  }
+}

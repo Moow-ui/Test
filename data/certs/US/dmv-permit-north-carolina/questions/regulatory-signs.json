@@ -1,0 +1,616 @@
+[
+  {
+    "id": "dmv-permit-north-carolina-regulatory-signs-0001",
+    "certId": "dmv-permit-north-carolina",
+    "subjectId": "signs",
+    "chapterId": "regulatory-signs",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What must you do when you come to this sign?",
+    "choices": [
+      "Slow down and let traffic on the other road go first, stopping only if needed",
+      "Stop only if a police officer is present",
+      "Come to a full stop every time, even if no one is coming",
+      "Speed up to merge ahead of the other traffic"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Yield sign: slow down, give way, stop only if needed",
+    "explanation": "This red and white triangle with its point at the bottom is the **YIELD** sign. **Slow down** and **give the right of way** to traffic on the road you are entering. If that traffic is close, **stop and wait** for it to pass.\n\n**Wrong choices**\n- Come to a full stop every time, even if no one is coming: A full stop every time is required at a STOP sign, not a YIELD sign.\n- Speed up to merge ahead of the other traffic: Speeding up to cut in front of traffic is the opposite of yielding.\n- Stop only if a police officer is present: The sign applies at all times, whether or not an officer is there.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "regulatory signs",
+      "yield"
+    ],
+    "image": "yield.svg",
+    "imageAlt": "A sign shaped like a triangle with one point at the bottom. It has a wide red border, a white center, and red capital letters across the top part.",
+    "imageSource": {
+      "kind": "public",
+      "title": "MUTCD (FHWA) sign R1-2",
+      "license": "U.S. federal government work, public domain"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-north-carolina-regulatory-signs-0002",
+    "certId": "dmv-permit-north-carolina",
+    "subjectId": "signs",
+    "chapterId": "regulatory-signs",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What does this sign tell you to do?",
+    "choices": [
+      "Keep to the right of the island or obstacle ahead",
+      "The right lane ends ahead",
+      "Traffic will merge from the right",
+      "Turn right at the next intersection"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Keep Right sign: pass to the right of the island",
+    "explanation": "This white rule sign shows an arrow going around the **right side** of a dark island. It means **keep to the right** of the median, island, or obstacle ahead. Because it is a white rectangle, it is a **rule you must obey**.\n\n**Wrong choices**\n- Turn right at the next intersection: A turn sign would show an arrow bending sharply to the right, not passing an obstacle.\n- The right lane ends ahead: A lane-ending warning is a yellow diamond, not a white rectangle.\n- Traffic will merge from the right: A merge warning is a yellow diamond showing a lane joining the road.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "regulatory signs",
+      "keep right"
+    ],
+    "image": "keep-right.svg",
+    "imageAlt": "An upright white rectangular sign with a black border. On the left is a tall black oval shape. A thick black arrow starts at the bottom, angles to the right of the oval, and points straight up.",
+    "imageSource": {
+      "kind": "public",
+      "title": "MUTCD (FHWA) sign R4-7",
+      "license": "U.S. federal government work, public domain"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-north-carolina-regulatory-signs-0003",
+    "certId": "dmv-permit-north-carolina",
+    "subjectId": "signs",
+    "chapterId": "regulatory-signs",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What does this sign mean?",
+    "choices": [
+      "The road curves to the left ahead",
+      "Left turns are allowed only on a green arrow",
+      "Left lane must turn left",
+      "You may not turn left here"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Red circle and slash over a left arrow: no left turn",
+    "explanation": "A **red circle with a slash** means the action shown is **not allowed**. Here the symbol is a **left-turn arrow**, so you **may not turn left** at this place.\n\n**Wrong choices**\n- Left turns are allowed only on a green arrow: The sign does not mention signals or arrows; it forbids the turn.\n- The road curves to the left ahead: A curve warning is a yellow diamond, not a white square with a red circle.\n- Left lane must turn left: A lane-use sign shows arrows over lanes without a red circle and slash.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "regulatory signs",
+      "turns"
+    ],
+    "image": "no-left-turn.svg",
+    "imageAlt": "A white square sign with a black border. A black arrow goes up and then bends to the left. A red circle surrounds the arrow, and a red diagonal line crosses over it from the upper left to the lower right.",
+    "imageSource": {
+      "kind": "public",
+      "title": "MUTCD (FHWA) sign R3-2",
+      "license": "U.S. federal government work, public domain"
+    },
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-north-carolina-regulatory-signs-0004",
+    "certId": "dmv-permit-north-carolina",
+    "subjectId": "signs",
+    "chapterId": "regulatory-signs",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which sign shape is used only for STOP signs?",
+    "choices": [
+      "Diamond",
+      "Triangle",
+      "Octagon (eight sides)",
+      "Pentagon (five sides)"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Eight-sided octagon = STOP only",
+    "explanation": "The **octagon**, a sign with **eight sides**, is used **only for STOP signs**. You can know it is a STOP sign from its shape even from behind or when it is covered with snow.\n\n**Wrong choices**\n- Triangle: The triangle with its point down is used for YIELD.\n- Diamond: Diamonds are used for warning signs.\n- Pentagon (five sides): The five-sided shape is used for school zone and school crossing signs.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "sign shapes",
+      "stop"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-north-carolina-regulatory-signs-0005",
+    "certId": "dmv-permit-north-carolina",
+    "subjectId": "signs",
+    "chapterId": "regulatory-signs",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What colors are used on a YIELD sign?",
+    "choices": [
+      "Green and white",
+      "Black and yellow",
+      "Red and white",
+      "Orange and black"
+    ],
+    "answer": 3,
+    "oneLineConcept": "YIELD sign: red and white triangle",
+    "explanation": "The YIELD sign is a **triangle** with its point at the bottom, colored **red and white**, with the word YIELD in large letters.\n\n**Wrong choices**\n- Black and yellow: Black on yellow is used for general warning signs.\n- Green and white: Green and white is used for guide signs that give directions.\n- Orange and black: Black on orange is used for work zone signs.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "sign colors",
+      "yield"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-north-carolina-regulatory-signs-0006",
+    "certId": "dmv-permit-north-carolina",
+    "subjectId": "signs",
+    "chapterId": "regulatory-signs",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "When you reach a STOP sign, what does the law require?",
+    "choices": [
+      "Stop only at night",
+      "Slow down and roll through if no one is coming",
+      "Come to a full stop and go only when the way is clear",
+      "Stop only if there are pedestrians"
+    ],
+    "answer": 3,
+    "oneLineConcept": "STOP sign: full stop every time",
+    "explanation": "At a STOP sign the law requires a **full stop**. Do not move again until you are **sure the way is clear**.\n\n**Wrong choices**\n- Slow down and roll through if no one is coming: Rolling through without stopping is illegal even if the road looks empty.\n- Stop only if there are pedestrians: You must stop whether or not people are crossing.\n- Stop only at night: The sign applies at every hour of the day.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "stop",
+      "intersections"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-north-carolina-regulatory-signs-0007",
+    "certId": "dmv-permit-north-carolina",
+    "subjectId": "signs",
+    "chapterId": "regulatory-signs",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "At an intersection with a STOP sign but no stop line and no marked crosswalk, where should you stop?",
+    "choices": [
+      "In the middle of the intersection",
+      "Before entering the intersection, where you can see the cross street",
+      "Fifty feet before the sign",
+      "Right beside the STOP sign, even if you cannot see"
+    ],
+    "answer": 2,
+    "oneLineConcept": "No stop line or crosswalk: stop where you can see cross traffic",
+    "explanation": "Stop at a marked stop line if there is one. If there is **no stop line or marked crosswalk**, stop **before entering the intersection** at a point where you **can see the intersecting street**.\n\n**Wrong choices**\n- In the middle of the intersection: Stopping inside the intersection blocks cross traffic and is unsafe.\n- Right beside the STOP sign, even if you cannot see: The goal is to stop where you can see; the sign's exact spot does not matter if your view is blocked.\n- Fifty feet before the sign: There is no rule to stop fifty feet before the sign.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "stop",
+      "intersections"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-north-carolina-regulatory-signs-0008",
+    "certId": "dmv-permit-north-carolina",
+    "subjectId": "signs",
+    "chapterId": "regulatory-signs",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What kind of information do white rectangular signs with black letters usually give?",
+    "choices": [
+      "Traffic rules you must obey, such as speed limits",
+      "Nearby hospitals and gas stations",
+      "Directions to cities",
+      "Hazards ahead, such as curves"
+    ],
+    "answer": 1,
+    "oneLineConcept": "White rectangles: rule (regulatory) signs",
+    "explanation": "Rectangular and square signs that are **black and white** (or red and white) show **speed limits and other rules**, such as NO U-TURN. Failing to obey them is a **traffic violation**.\n\n**Wrong choices**\n- Directions to cities: Directions to cities are shown on green guide signs.\n- Nearby hospitals and gas stations: Services such as hospitals are shown on blue signs.\n- Hazards ahead, such as curves: Hazards ahead are shown on yellow diamond warning signs.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "sign shapes",
+      "regulatory signs"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-north-carolina-regulatory-signs-0009",
+    "certId": "dmv-permit-north-carolina",
+    "subjectId": "signs",
+    "chapterId": "regulatory-signs",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What does a red circle with a slash over a symbol mean?",
+    "choices": [
+      "The action shown is not allowed",
+      "There is a hazard ahead",
+      "The action shown is allowed only at night",
+      "The action shown is recommended"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Red circle with slash: the action is not allowed",
+    "explanation": "A **red circle with a slash** over a symbol means the action in the symbol is **prohibited**, such as a left turn or a U-turn.\n\n**Wrong choices**\n- The action shown is allowed only at night: The sign does not limit the rule to certain hours.\n- The action shown is recommended: A slash forbids the action; it does not recommend it.\n- There is a hazard ahead: Hazards ahead are shown on yellow diamond warning signs.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "regulatory signs",
+      "symbols"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-north-carolina-regulatory-signs-0010",
+    "certId": "dmv-permit-north-carolina",
+    "subjectId": "signs",
+    "chapterId": "regulatory-signs",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "You are stopped at a steady red light and want to turn right. There is no sign about turning. What may you do?",
+    "choices": [
+      "Wait for the green light, because turns on red are never allowed",
+      "Turn right only if a green arrow appears",
+      "Turn right after a complete stop, yielding to traffic and pedestrians",
+      "Turn right without stopping if the road is clear"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Right on red: allowed after a full stop unless a sign forbids",
+    "explanation": "Unless a **NO TURN ON RED** sign is posted, you may **turn right on a steady red light** after a **complete stop**. You must **yield** to other traffic and to pedestrians using or starting to cross the intersection.\n\n**Wrong choices**\n- Turn right without stopping if the road is clear: You must come to a complete stop before turning on red.\n- Wait for the green light, because turns on red are never allowed: Right turns on red are allowed unless a sign forbids them.\n- Turn right only if a green arrow appears: A green arrow is not needed for a right turn on red after a full stop.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "red light",
+      "turns"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-north-carolina-regulatory-signs-0011",
+    "certId": "dmv-permit-north-carolina",
+    "subjectId": "signs",
+    "chapterId": "regulatory-signs",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A sign reads KEEP RIGHT EXCEPT TO PASS. What does it mean on a highway with two or more lanes your way?",
+    "choices": [
+      "Trucks must use the right lane, but cars may use any lane",
+      "Passing is not allowed on this road",
+      "Drive in the left lane unless you are turning right",
+      "Stay in the right lane and use the left lane only to pass"
+    ],
+    "answer": 4,
+    "oneLineConcept": "KEEP RIGHT EXCEPT TO PASS: left lane is for passing",
+    "explanation": "This black and white **rule sign** means you should **drive in the right lane** and use the **left lane only to pass**. North Carolina also says slower drivers on multi-lane highways should stay in the right lane unless passing or turning left.\n\n**Wrong choices**\n- Drive in the left lane unless you are turning right: The sign says the opposite: keep right, not left.\n- Passing is not allowed on this road: The sign allows passing; it tells you which lane to pass in.\n- Trucks must use the right lane, but cars may use any lane: The sign applies to all drivers, not only to trucks.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "regulatory signs",
+      "lane use"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "dmv-permit-north-carolina-regulatory-signs-0012",
+    "certId": "dmv-permit-north-carolina",
+    "subjectId": "signs",
+    "chapterId": "regulatory-signs",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "The handbook says a STOP sign is usually posted how far from the intersection?",
+    "choices": [
+      "300 to 500 feet",
+      "100 to 200 feet",
+      "Exactly 10 feet",
+      "6 to 50 feet"
+    ],
+    "answer": 4,
+    "oneLineConcept": "STOP sign usually 6 to 50 feet from the intersection",
+    "explanation": "The **STOP sign** is usually posted **6 to 50 feet** from the intersection. Because it can be some distance from the cross street, stop where the stop line, crosswalk, or your view of the cross street tells you to.\n\n**Wrong choices**\n- 100 to 200 feet: The handbook gives 6 to 50 feet, which is much closer than this.\n- Exactly 10 feet: The handbook gives a range of 6 to 50 feet, not one fixed distance.\n- 300 to 500 feet: The handbook gives 6 to 50 feet, which is much closer than this.",
+    "frequency": 2,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "stop",
+      "intersections"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-north-carolina-regulatory-signs-0013",
+    "certId": "dmv-permit-north-carolina",
+    "subjectId": "signs",
+    "chapterId": "regulatory-signs",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "You approach a YIELD sign and traffic on the cross road is close. What should you do?",
+    "choices": [
+      "Stop and wait for the traffic to pass before you enter",
+      "Speed up to enter the gap quickly",
+      "Go first because you reached the sign first",
+      "Sound your horn and enter slowly"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Yield: stop and wait if cross traffic is close",
+    "explanation": "At a **YIELD** sign you must slow down and **give the right of way**. Whether you stop depends on the other traffic. If it is close, **stop and wait** for it to pass so you do not interfere with it.\n\n**Wrong choices**\n- Go first because you reached the sign first: Reaching the sign first does not give you the right of way.\n- Sound your horn and enter slowly: The horn does not give you permission to enter in front of traffic.\n- Speed up to enter the gap quickly: Speeding up into a small gap forces other drivers to brake.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "yield",
+      "right of way"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-north-carolina-regulatory-signs-0014",
+    "certId": "dmv-permit-north-carolina",
+    "subjectId": "signs",
+    "chapterId": "regulatory-signs",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A parking space has a sign with the wheelchair symbol. What does it mean?",
+    "choices": [
+      "A hospital is nearby",
+      "The space is reserved for vehicles with a disability plate or placard",
+      "Parking for delivery vans only",
+      "Parking for anyone for up to 15 minutes"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Handicap parking: only with a disability plate or placard",
+    "explanation": "The **handicap parking sign** shows that a space is **reserved** for people who qualify and **display a handicap license plate or a dashboard placard**. Parking there without one is against the law.\n\n**Wrong choices**\n- Parking for delivery vans only: The sign does not set aside the space for deliveries.\n- Parking for anyone for up to 15 minutes: The sign does not allow short-term parking for others.\n- A hospital is nearby: Hospitals are shown on blue service signs along the road, not on parking space signs.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "regulatory signs",
+      "parking"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-north-carolina-regulatory-signs-0015",
+    "certId": "dmv-permit-north-carolina",
+    "subjectId": "signs",
+    "chapterId": "regulatory-signs",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "You are stopped at a red light where a NO TURN ON RED sign is posted. Cross traffic and pedestrians are clear. What must you do before turning right?",
+    "choices": [
+      "Turn only if the driver behind you honks",
+      "Turn after slowing down because no one is coming",
+      "Turn after a full stop because the way is clear",
+      "Wait until the light turns green"
+    ],
+    "answer": 4,
+    "oneLineConcept": "NO TURN ON RED: wait for green even if clear",
+    "explanation": "A **NO TURN ON RED** sign takes away the usual right-on-red rule. Even when the way is clear, you must **wait for the green light** before turning.\n\n**Wrong choices**\n- Turn after a full stop because the way is clear: A full stop is enough only when no sign forbids turning on red.\n- Turn after slowing down because no one is coming: Slowing down is never enough on a red light; here you may not turn at all.\n- Turn only if the driver behind you honks: Another driver's horn does not change the sign's rule.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "red light",
+      "turns",
+      "regulatory signs"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-north-carolina-regulatory-signs-0016",
+    "certId": "dmv-permit-north-carolina",
+    "subjectId": "signs",
+    "chapterId": "regulatory-signs",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Which statement about regulatory signs is NOT correct?",
+    "choices": [
+      "They tell you about laws you must obey",
+      "Speed limit signs are regulatory signs",
+      "Ignoring them is a violation of traffic law",
+      "They are mostly yellow diamonds"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Regulatory signs are rectangles or squares, not yellow diamonds",
+    "explanation": "Regulatory signs state **rules you must obey**, such as speed limits. They are usually **rectangles or squares in black and white or red and white**. **Yellow diamonds are warning signs**, so that statement is the one that is not correct.\n\n**Wrong choices**\n- They tell you about laws you must obey: This is correct: regulatory signs state traffic laws.\n- Speed limit signs are regulatory signs: This is correct: a speed limit sign is a regulatory sign.\n- Ignoring them is a violation of traffic law: This is correct: failing to obey them breaks traffic law.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "regulatory signs",
+      "sign shapes"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "dmv-permit-north-carolina-regulatory-signs-0017",
+    "certId": "dmv-permit-north-carolina",
+    "subjectId": "signs",
+    "chapterId": "regulatory-signs",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "You see an octagon-shaped sign from behind as you approach an intersection on the cross road. What can you tell?",
+    "choices": [
+      "Traffic on the other road must stop there",
+      "A railroad crossing is ahead",
+      "Traffic on the other road must yield",
+      "Your road has a school zone"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Octagon shape seen from behind is still a STOP sign",
+    "explanation": "Only STOP signs are **octagons**, so you can tell from the **shape alone**, even from the back, that drivers on that road **must stop**. This helps you predict what other drivers should do, but still watch for anyone who does not stop.\n\n**Wrong choices**\n- Traffic on the other road must yield: A yield sign is a triangle, not an octagon.\n- Your road has a school zone: School signs have five sides, not eight.\n- A railroad crossing is ahead: Railroad advance warning signs are round.",
+    "frequency": 2,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "sign shapes",
+      "stop"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+]
