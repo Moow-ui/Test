@@ -1,0 +1,627 @@
+[
+  {
+    "id": "dmv-permit-north-carolina-right-of-way-0001",
+    "certId": "dmv-permit-north-carolina",
+    "subjectId": "rules",
+    "chapterId": "right-of-way",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Two vehicles reach an intersection with no signs or signals at the same time. Who has the right of way?",
+    "choices": [
+      "The vehicle on the left",
+      "The larger vehicle",
+      "The vehicle on the right",
+      "The faster vehicle"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Same time, no signs: vehicle on the right goes first",
+    "explanation": "At an intersection without signs or signals, a vehicle **already in** the intersection goes first. When two vehicles arrive **at the same time**, the **vehicle on the right** has the right of way.\n\n**Wrong choices**\n- The vehicle on the left: The driver on the left must yield to the driver on the right.\n- The faster vehicle: Speed does not give anyone the right of way.\n- The larger vehicle: Vehicle size does not give anyone the right of way.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "intersections",
+      "right of way"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-north-carolina-right-of-way-0002",
+    "certId": "dmv-permit-north-carolina",
+    "subjectId": "rules",
+    "chapterId": "right-of-way",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A school bus is stopped ahead with its stop arm out and red lights flashing on a two-lane road. You are coming from the opposite direction. What must you do?",
+    "choices": [
+      "Stop and stay stopped until the stop arm is pulled in, the lights stop flashing, and the bus starts to move",
+      "Stop only if children are in the road",
+      "Keep going, because only traffic behind the bus must stop",
+      "Slow down and pass carefully"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Two-lane road: both directions stop for a school bus",
+    "explanation": "On a **two-lane road**, traffic from **both directions** must stop for a school bus that is loading or unloading. Stay stopped until the **stop arm is withdrawn**, the **red lights are turned off**, and the **bus starts moving**.\n\n**Wrong choices**\n- Slow down and pass carefully: You may not pass a school bus showing its stop arm.\n- Stop only if children are in the road: You must stop whether or not you see children; they may run out suddenly.\n- Keep going, because only traffic behind the bus must stop: On a two-lane road, traffic in both directions must stop.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "school bus"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-north-carolina-right-of-way-0003",
+    "certId": "dmv-permit-north-carolina",
+    "subjectId": "rules",
+    "chapterId": "right-of-way",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "An ambulance with flashing lights and siren is coming toward you. What should you do?",
+    "choices": [
+      "Speed up to get out of its way",
+      "Stop in your lane right where you are",
+      "Drive to the right edge of the road and stop until it passes",
+      "Keep driving at the same speed"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Emergency vehicle: pull to the right edge and stop",
+    "explanation": "When an **emergency vehicle** with lights and siren approaches from **ahead or behind**, drive to the **right-hand curb or edge** and **stop completely**. Stay stopped until it passes or an officer tells you to move.\n\n**Wrong choices**\n- Keep driving at the same speed: You must yield and stop, not keep driving.\n- Stop in your lane right where you are: Stopping in the lane can block the emergency vehicle.\n- Speed up to get out of its way: Speeding up is dangerous and does not clear the way.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "emergency vehicles"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-north-carolina-right-of-way-0004",
+    "certId": "dmv-permit-north-carolina",
+    "subjectId": "rules",
+    "chapterId": "right-of-way",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "You are leaving a private driveway to enter a street. What must you do?",
+    "choices": [
+      "Yield only to vehicles, not pedestrians",
+      "Stop and yield to all vehicles and pedestrians",
+      "Honk to warn traffic that you are coming out",
+      "Enter quickly if you see a gap"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Leaving a driveway: stop and yield to everyone",
+    "explanation": "When you **exit a private driveway**, you must **stop** and **yield to all other vehicles and pedestrians** before entering the street.\n\n**Wrong choices**\n- Enter quickly if you see a gap: You must stop first, not just look for a gap.\n- Yield only to vehicles, not pedestrians: Pedestrians on the sidewalk also have the right of way.\n- Honk to warn traffic that you are coming out: Honking does not give you the right of way.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "right of way",
+      "driveways"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-north-carolina-right-of-way-0005",
+    "certId": "dmv-permit-north-carolina",
+    "subjectId": "rules",
+    "chapterId": "right-of-way",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "In which direction does traffic move in a roundabout?",
+    "choices": [
+      "Counterclockwise",
+      "Whichever way is shortest to your exit",
+      "Either way",
+      "Clockwise"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Roundabouts: counterclockwise",
+    "explanation": "Everyone in a roundabout travels **counterclockwise**, to the right around the center island. Drivers entering **yield** to vehicles and bicycles **already in** the roundabout.\n\n**Wrong choices**\n- Clockwise: Driving clockwise would put you head-on with traffic.\n- Either way: All traffic must go the same way around.\n- Whichever way is shortest to your exit: You must go around the circle counterclockwise even if your exit is to the left.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "roundabouts"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-north-carolina-right-of-way-0006",
+    "certId": "dmv-permit-north-carolina",
+    "subjectId": "rules",
+    "chapterId": "right-of-way",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "At an intersection without traffic signals, a pedestrian is crossing in an unmarked crosswalk. What should you do?",
+    "choices": [
+      "Drive around the pedestrian",
+      "Go first, because the crosswalk is not painted",
+      "Yield to the pedestrian",
+      "Honk so the pedestrian hurries"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Pedestrians have the right of way in marked or unmarked crosswalks",
+    "explanation": "At intersections **without signals**, pedestrians have the **right of way** in **marked crosswalks** and in **unmarked crosswalks**, which are the imaginary extensions of the sidewalks across the street.\n\n**Wrong choices**\n- Go first, because the crosswalk is not painted: An unmarked crosswalk still gives pedestrians the right of way.\n- Honk so the pedestrian hurries: Honking to hurry a pedestrian is unsafe and rude.\n- Drive around the pedestrian: Driving around a person in a crosswalk is dangerous.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "pedestrians"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-north-carolina-right-of-way-0007",
+    "certId": "dmv-permit-north-carolina",
+    "subjectId": "rules",
+    "chapterId": "right-of-way",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "You are turning left at an intersection and an oncoming car is going straight. Who must wait?",
+    "choices": [
+      "The oncoming car",
+      "You, the driver turning left",
+      "Whoever arrived second",
+      "Neither; both may go"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Left turn yields to oncoming traffic going straight",
+    "explanation": "When one driver goes straight and the other wants to turn left, the **driver turning left must wait** until the turn can be made safely. The driver **going straight** has the right of way.\n\n**Wrong choices**\n- The oncoming car: The oncoming driver going straight has the right of way.\n- Whoever arrived second: Arrival order does not change this rule.\n- Neither; both may go: Both going at once would cause a crash.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "intersections",
+      "turns"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-north-carolina-right-of-way-0008",
+    "certId": "dmv-permit-north-carolina",
+    "subjectId": "rules",
+    "chapterId": "right-of-way",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "At a railroad crossing, who has the right of way?",
+    "choices": [
+      "Emergency vehicles",
+      "Vehicles on the larger road",
+      "The train",
+      "The first vehicle to arrive"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Trains always have the right of way",
+    "explanation": "**Trains always have the right of way** over all highway traffic, **including** police, fire, and ambulance vehicles. A train cannot stop quickly or turn.\n\n**Wrong choices**\n- Emergency vehicles: Even emergency vehicles must yield to trains.\n- The first vehicle to arrive: Arrival order does not matter; the train goes first.\n- Vehicles on the larger road: Road size does not matter at a railroad crossing.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "railroad"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-north-carolina-right-of-way-0009",
+    "certId": "dmv-permit-north-carolina",
+    "subjectId": "rules",
+    "chapterId": "right-of-way",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A school bus is stopped with its stop arm out on a four-lane road with no median. You are coming from the opposite direction. What must you do?",
+    "choices": [
+      "Keep going, because there are four lanes",
+      "Slow to 15 mph and pass",
+      "Stop only if you are in the lane closest to the bus",
+      "Stop, because traffic from both directions must stop"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Four lanes, no median: both directions stop",
+    "explanation": "On a **four-lane roadway without a median separation**, traffic from **both directions** must stop for a school bus that is loading or unloading.\n\n**Wrong choices**\n- Keep going, because there are four lanes: Four lanes alone do not excuse oncoming traffic; a median or center turn lane on a road of four or more lanes does.\n- Slow to 15 mph and pass: You may not pass at any speed while the bus shows its stop signal.\n- Stop only if you are in the lane closest to the bus: All lanes in both directions must stop on this kind of road.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "school bus"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-north-carolina-right-of-way-0010",
+    "certId": "dmv-permit-north-carolina",
+    "subjectId": "rules",
+    "chapterId": "right-of-way",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A school bus is stopped with its stop arm out on a divided highway of four lanes with a median. You are on the other side of the median, going the opposite way. What must you do?",
+    "choices": [
+      "You do not have to stop; only traffic following the bus must stop",
+      "Stop and then pass at 10 mph",
+      "Pull onto the median and wait",
+      "Stop until the bus moves"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Divided 4+ lane highway with median: only traffic behind the bus stops",
+    "explanation": "On a **divided highway of four lanes or more with a median**, **only traffic following the bus** must stop. Oncoming traffic on the other side of the median may continue with care.\n\n**Wrong choices**\n- Stop until the bus moves: Oncoming traffic does not have to stop on this kind of divided highway.\n- Stop and then pass at 10 mph: There is no rule to stop and then pass at 10 mph.\n- Pull onto the median and wait: Driving onto the median is unsafe and not required.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "school bus"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-north-carolina-right-of-way-0011",
+    "certId": "dmv-permit-north-carolina",
+    "subjectId": "rules",
+    "chapterId": "right-of-way",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "An emergency vehicle is stopped within 12 feet of the road with its lights flashing. You are on a highway with two lanes going your way and you are in the lane next to it. What does the Move Over law require?",
+    "choices": [
+      "Stop beside the emergency vehicle",
+      "Keep your lane and speed",
+      "Move into a lane that is not next to the emergency vehicle and stay there until you are past it",
+      "Honk to warn the crew"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Move Over: change to a lane away from the stopped vehicle",
+    "explanation": "On a highway with **at least two lanes** in your direction, you must **move into a lane that is not next to** the parked emergency or service vehicle and **stay there until safely past** it.\n\n**Wrong choices**\n- Keep your lane and speed: The law requires you to move over when you have two lanes going your way.\n- Stop beside the emergency vehicle: Stopping in the lane is not required and can cause a crash.\n- Honk to warn the crew: Honking does not protect the crew.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "move over",
+      "emergency vehicles"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-north-carolina-right-of-way-0012",
+    "certId": "dmv-permit-north-carolina",
+    "subjectId": "rules",
+    "chapterId": "right-of-way",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "An emergency vehicle is stopped on the shoulder with its lights on. You are on a road with only one lane going your way. What must you do?",
+    "choices": [
+      "Keep your normal speed",
+      "Slow down and drive at a reduced, safe speed until you are past it",
+      "Stop until the emergency vehicle leaves",
+      "Cross the center line to give more room"
+    ],
+    "answer": 2,
+    "oneLineConcept": "One lane your way: slow down to pass a stopped emergency vehicle",
+    "explanation": "With **only one lane** in your direction, the Move Over law requires you to **slow down** and drive at a **reduced, safe speed** until you are **completely past** the emergency vehicle.\n\n**Wrong choices**\n- Cross the center line to give more room: The law does not tell you to cross into oncoming traffic.\n- Stop until the emergency vehicle leaves: You do not have to stop and wait for it to leave.\n- Keep your normal speed: Keeping your normal speed breaks the Move Over law.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "move over",
+      "emergency vehicles"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-north-carolina-right-of-way-0013",
+    "certId": "dmv-permit-north-carolina",
+    "subjectId": "rules",
+    "chapterId": "right-of-way",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A railroad crossing signal is flashing and a train is coming. Where must you stop?",
+    "choices": [
+      "At least 100 feet from the tracks",
+      "Within 50 feet but no closer than 15 feet from the nearest rail",
+      "Right on the tracks, so you can go as soon as it passes",
+      "Within 5 feet of the tracks"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Railroad stop: 15 to 50 feet from the nearest rail",
+    "explanation": "North Carolina law (G.S. 20-142.1) says to stop **within 50 feet but not less than 15 feet** from the **nearest rail**, and not to go until it is safe.\n\n**Wrong choices**\n- Right on the tracks, so you can go as soon as it passes: Never stop on the tracks for any reason.\n- At least 100 feet from the tracks: The law sets 50 feet as the farthest point, not 100 feet.\n- Within 5 feet of the tracks: Stopping that close to the rail is too close; the train may hit you.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "railroad"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-north-carolina-right-of-way-0014",
+    "certId": "dmv-permit-north-carolina",
+    "subjectId": "rules",
+    "chapterId": "right-of-way",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "You are approaching a roundabout. Who has the right of way?",
+    "choices": [
+      "The largest vehicle",
+      "Vehicles entering the roundabout",
+      "Vehicles and bicycles already in the roundabout",
+      "The vehicle on the right of the entry lane"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Roundabout: yield to traffic already inside",
+    "explanation": "As you enter, **yield** to any vehicles or bicyclists **already in** the roundabout. Drivers inside do **not** yield to those approaching.\n\n**Wrong choices**\n- Vehicles entering the roundabout: Entering drivers must yield, not go first.\n- The largest vehicle: Size does not give anyone the right of way.\n- The vehicle on the right of the entry lane: The usual yield-to-the-right rule does not apply at a roundabout entry.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "roundabouts"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-north-carolina-right-of-way-0015",
+    "certId": "dmv-permit-north-carolina",
+    "subjectId": "rules",
+    "chapterId": "right-of-way",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "On which of these roads must traffic from BOTH directions stop for a stopped school bus?",
+    "choices": [
+      "A road of four or more lanes with a center turning lane",
+      "A two-lane road with a center turning lane",
+      "A divided highway of six lanes with a median",
+      "A divided highway of four lanes with a median"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Two-lane road with center turn lane: both directions stop",
+    "explanation": "On a **two-lane road with a center turning lane**, traffic from **both directions** must stop. On roads of **four or more lanes** with a **median** or a **center turning lane**, only traffic **following** the bus must stop.\n\n**Wrong choices**\n- A divided highway of four lanes with a median: On a divided highway of four lanes with a median, only traffic behind the bus stops.\n- A road of four or more lanes with a center turning lane: On four or more lanes with a center turning lane, only traffic behind the bus stops.\n- A divided highway of six lanes with a median: On a divided highway of six lanes with a median, only traffic behind the bus stops.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "school bus"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-north-carolina-right-of-way-0016",
+    "certId": "dmv-permit-north-carolina",
+    "subjectId": "rules",
+    "chapterId": "right-of-way",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Which of these is NOT allowed near a fire or emergency scene?",
+    "choices": [
+      "Pulling to the right for a fire truck using its siren",
+      "Staying more than one block away from fire trucks answering an alarm",
+      "Driving over a fire hose",
+      "Parking more than 100 feet from an emergency vehicle stopped at a crash"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Never drive over a fire hose",
+    "explanation": "You must **never drive over a fire hose**. You should also pull right and stop for emergency vehicles, stay **at least one block** from fire trucks answering an alarm, and **not park within 100 feet** of an emergency vehicle stopped at a crash.\n\n**Wrong choices**\n- Pulling to the right for a fire truck using its siren: This is allowed and required: pull right for emergency vehicles.\n- Staying more than one block away from fire trucks answering an alarm: This is allowed: you must not drive or park closer than one block.\n- Parking more than 100 feet from an emergency vehicle stopped at a crash: This is allowed: the rule only forbids parking within 100 feet.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "emergency vehicles"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "dmv-permit-north-carolina-right-of-way-0017",
+    "certId": "dmv-permit-north-carolina",
+    "subjectId": "rules",
+    "chapterId": "right-of-way",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "You are on a four-lane limited-access highway with a center median. An emergency vehicle with lights and siren is coming toward you on the other side of the median. What must you do?",
+    "choices": [
+      "Cross the median to give it room",
+      "You do not have to stop, because it is on the other side of the median",
+      "Pull to the right edge and stop",
+      "Stop in the left lane"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Four-lane limited-access with median: opposite side need not stop",
+    "explanation": "All vehicles must normally yield to an approaching emergency vehicle, but this **does not apply** to vehicles going the **opposite direction** on a **four-lane limited-access highway with a center median**. Stay alert and keep driving with care.\n\n**Wrong choices**\n- Pull to the right edge and stop: That is the rule on most roads, but not here, where a median separates you.\n- Stop in the left lane: Stopping in a travel lane on a highway is dangerous.\n- Cross the median to give it room: Crossing the median is dangerous and illegal.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "emergency vehicles"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-north-carolina-right-of-way-0018",
+    "certId": "dmv-permit-north-carolina",
+    "subjectId": "rules",
+    "chapterId": "right-of-way",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "The light turns green, but a pedestrian is still finishing crossing in front of you. What must you do?",
+    "choices": [
+      "Go, because you have a green light",
+      "Drive slowly around the pedestrian",
+      "Let the pedestrian finish crossing safely before you go",
+      "Honk so the pedestrian moves faster"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Let pedestrians finish crossing even after the light changes",
+    "explanation": "If the signal changes while a **pedestrian is still in the street**, drivers must **allow the pedestrian to finish crossing safely**. A green light never permits you to drive into a person.\n\n**Wrong choices**\n- Go, because you have a green light: A green light does not let you drive into a pedestrian.\n- Honk so the pedestrian moves faster: Honking to hurry someone is unsafe.\n- Drive slowly around the pedestrian: Driving around a person in the street is dangerous.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "pedestrians"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+]

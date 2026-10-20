@@ -1,0 +1,592 @@
+[
+  {
+    "id": "dmv-permit-north-carolina-speed-passing-parking-0001",
+    "certId": "dmv-permit-north-carolina",
+    "subjectId": "rules",
+    "chapterId": "speed-passing-parking",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Unless a sign says otherwise, what is the speed limit in North Carolina cities and towns?",
+    "choices": [
+      "35 mph",
+      "25 mph",
+      "45 mph",
+      "55 mph"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Default city and town limit: 35 mph",
+    "explanation": "Unless otherwise posted, the speed limit in **cities and towns** is **35 mph**. Outside cities and towns it is **55 mph**.\n\n**Wrong choices**\n- 25 mph: 25 mph is not North Carolina's general limit in cities and towns.\n- 45 mph: 45 mph is the maximum speed for a school bus, not the city limit.\n- 55 mph: 55 mph is the general limit outside cities and towns.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "speed limits"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-north-carolina-speed-passing-parking-0002",
+    "certId": "dmv-permit-north-carolina",
+    "subjectId": "rules",
+    "chapterId": "speed-passing-parking",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Unless a sign says otherwise, what is the speed limit outside cities and towns?",
+    "choices": [
+      "50 mph",
+      "55 mph",
+      "45 mph",
+      "65 mph"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Default limit outside cities and towns: 55 mph",
+    "explanation": "Unless otherwise posted, the speed limit **outside cities and towns** is **55 mph**. The highest limit that may be posted on **interstates** is **70 mph**.\n\n**Wrong choices**\n- 45 mph: 45 mph is the maximum for a school bus.\n- 50 mph: 50 mph is not North Carolina's general rural limit.\n- 65 mph: 65 mph is not the general limit; higher limits must be posted.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "speed limits"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-north-carolina-speed-passing-parking-0003",
+    "certId": "dmv-permit-north-carolina",
+    "subjectId": "rules",
+    "chapterId": "speed-passing-parking",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What is the two-second rule?",
+    "choices": [
+      "Stop for two seconds at a STOP sign",
+      "Stay at least two seconds behind the vehicle ahead of you",
+      "Wait two seconds after a light turns green before you go",
+      "Signal for two seconds before changing lanes"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Two-second rule: following distance",
+    "explanation": "Allow **two seconds** between the time the **vehicle ahead** passes a point and the time **you** reach that point. Leave **more space** in bad weather or at higher speeds.\n\n**Wrong choices**\n- Wait two seconds after a light turns green before you go: The rule is about following distance, not starting at a green light.\n- Signal for two seconds before changing lanes: Turn signals must be given in advance, measured in feet, not seconds.\n- Stop for two seconds at a STOP sign: A STOP sign requires a full stop until the way is clear, not a set time.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "following distance"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-north-carolina-speed-passing-parking-0004",
+    "certId": "dmv-permit-north-carolina",
+    "subjectId": "rules",
+    "chapterId": "speed-passing-parking",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "When another vehicle is passing you, what should you do?",
+    "choices": [
+      "Brake hard to let the driver pass",
+      "Speed up so the other driver cannot cut in",
+      "Move toward the right and do not speed up",
+      "Move to the left to block the pass"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Being passed: keep right and do not speed up",
+    "explanation": "When you are being passed, you must **help the other driver pass**. Move to the **right side** of your lane and **never increase your speed**.\n\n**Wrong choices**\n- Speed up so the other driver cannot cut in: Speeding up while being passed is illegal and can cause a crash.\n- Move to the left to block the pass: Blocking a passing driver is dangerous.\n- Brake hard to let the driver pass: Braking hard can cause a rear-end crash; just hold your speed.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "passing"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-north-carolina-speed-passing-parking-0005",
+    "certId": "dmv-permit-north-carolina",
+    "subjectId": "rules",
+    "chapterId": "speed-passing-parking",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "How close to a fire hydrant may you park?",
+    "choices": [
+      "No closer than 30 feet",
+      "No closer than 5 feet",
+      "No closer than 15 feet",
+      "No closer than 10 feet"
+    ],
+    "answer": 3,
+    "oneLineConcept": "No parking within 15 feet of a fire hydrant",
+    "explanation": "Do **not park within 15 feet** of a **fire hydrant** or the entrance to a **fire station**.\n\n**Wrong choices**\n- No closer than 5 feet: 5 feet is too close; the limit is 15 feet.\n- No closer than 10 feet: 10 feet is too close; the limit is 15 feet.\n- No closer than 30 feet: The North Carolina limit is 15 feet, not 30 feet.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "parking"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-north-carolina-speed-passing-parking-0006",
+    "certId": "dmv-permit-north-carolina",
+    "subjectId": "rules",
+    "chapterId": "speed-passing-parking",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "How fast may you drive when backing up?",
+    "choices": [
+      "No more than 10 mph",
+      "No more than 5 mph",
+      "No more than 15 mph",
+      "Any speed if the way is clear"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Back up slowly, no more than 10 mph",
+    "explanation": "Back up **very slowly, not more than 10 mph**, because a car is harder to control and stop in reverse. Steer with your left hand and **look over your right shoulder** through the back window.\n\n**Wrong choices**\n- No more than 5 mph: Backing slowly is wise, but the handbook's limit is 10 mph.\n- No more than 15 mph: 15 mph is faster than the handbook allows when backing.\n- Any speed if the way is clear: There is a limit on backing speed even when the way looks clear.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "backing"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-north-carolina-speed-passing-parking-0007",
+    "certId": "dmv-permit-north-carolina",
+    "subjectId": "rules",
+    "chapterId": "speed-passing-parking",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "On which side of the road should you park, except on a one-way street?",
+    "choices": [
+      "The right side",
+      "The left side",
+      "In the center",
+      "Either side"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Park on the right side except on one-way streets",
+    "explanation": "Always **park on the right side** of the road, **except on one-way streets**, where you may park on either side if allowed.\n\n**Wrong choices**\n- The left side: Parking on the left faces you against traffic on a two-way street.\n- Either side: On two-way roads, you must use the right side.\n- In the center: Parking in the center of the road is not allowed.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "parking"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-north-carolina-speed-passing-parking-0008",
+    "certId": "dmv-permit-north-carolina",
+    "subjectId": "rules",
+    "chapterId": "speed-passing-parking",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "On a hill or curve, how far ahead must you be able to see before you may pass?",
+    "choices": [
+      "At least 1,000 feet",
+      "At least 300 feet",
+      "At least 500 feet",
+      "At least 200 feet"
+    ],
+    "answer": 3,
+    "oneLineConcept": "No passing on a hill or curve without 500 feet of view",
+    "explanation": "Passing is unsafe and usually illegal **on any curve or hill** where you **cannot see at least 500 feet** ahead.\n\n**Wrong choices**\n- At least 200 feet: 200 feet is far too short to pass safely.\n- At least 300 feet: 300 feet is not the handbook's figure; it is 500 feet.\n- At least 1,000 feet: The handbook sets 500 feet, not 1,000 feet.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "passing"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-north-carolina-speed-passing-parking-0009",
+    "certId": "dmv-permit-north-carolina",
+    "subjectId": "rules",
+    "chapterId": "speed-passing-parking",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "When you pass another vehicle, how much room must you leave to its left?",
+    "choices": [
+      "At least one car length",
+      "At least 1 foot",
+      "At least 5 feet",
+      "At least 2 feet"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Pass at least 2 feet to the left",
+    "explanation": "The law requires the passing driver to pass **at least two feet to the left** of the vehicle being passed. You have not passed safely if that vehicle must **slow down** to let you back in.\n\n**Wrong choices**\n- At least 1 foot: 1 foot is less than the law requires.\n- At least 5 feet: The handbook's figure is 2 feet, not 5 feet.\n- At least one car length: The rule is measured in feet to the side, not car lengths.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "passing"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-north-carolina-speed-passing-parking-0010",
+    "certId": "dmv-permit-north-carolina",
+    "subjectId": "rules",
+    "chapterId": "speed-passing-parking",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "How close to the curb line of an intersecting street may you park?",
+    "choices": [
+      "No closer than 15 feet",
+      "No closer than 25 feet",
+      "No closer than 10 feet",
+      "No closer than 50 feet"
+    ],
+    "answer": 2,
+    "oneLineConcept": "No parking within 25 feet of an intersecting street's curb line",
+    "explanation": "Do **not park within 25 feet** of the **curb line of an intersecting street**. If there is no curb, stay **15 feet** from the intersecting right of way lines.\n\n**Wrong choices**\n- No closer than 10 feet: 10 feet is too close; the limit is 25 feet.\n- No closer than 15 feet: 15 feet applies only where there is no curb.\n- No closer than 50 feet: The handbook sets 25 feet, not 50 feet.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "parking",
+      "intersections"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-north-carolina-speed-passing-parking-0011",
+    "certId": "dmv-permit-north-carolina",
+    "subjectId": "rules",
+    "chapterId": "speed-passing-parking",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "The speed limit is 45 mph. How far before a turn must you signal?",
+    "choices": [
+      "At least 200 feet",
+      "At least 100 feet",
+      "At least 500 feet",
+      "At least 50 feet"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Limit 45 mph or more: signal at least 200 feet before turning",
+    "explanation": "Signal at least the **last 100 feet** before turning or stopping. Where the **speed limit is 45 mph or more**, signal at least the **last 200 feet** before turning.\n\n**Wrong choices**\n- At least 50 feet: 50 feet is not enough warning at any speed.\n- At least 100 feet: 100 feet is the minimum where the limit is under 45 mph.\n- At least 500 feet: The handbook sets at least 200 feet at 45 mph or more.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "turn signals"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-north-carolina-speed-passing-parking-0012",
+    "certId": "dmv-permit-north-carolina",
+    "subjectId": "rules",
+    "chapterId": "speed-passing-parking",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "When may you park on the shoulder of a highway?",
+    "choices": [
+      "Never",
+      "Any time you turn on your hazard lights",
+      "Only if approaching drivers from both directions can see your vehicle from at least 200 feet away",
+      "Only at night"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Shoulder parking needs 200 feet of view from both directions",
+    "explanation": "You may not park on the traveled part of a highway. Parking on the **shoulder** is also against the law **unless** drivers from **both directions** can see the vehicle from at least **200 feet** away.\n\n**Wrong choices**\n- Never: Shoulder parking is allowed when the 200-foot view rule is met.\n- Any time you turn on your hazard lights: Hazard lights do not make illegal parking legal.\n- Only at night: The rule applies day and night.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "parking"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-north-carolina-speed-passing-parking-0013",
+    "certId": "dmv-permit-north-carolina",
+    "subjectId": "rules",
+    "chapterId": "speed-passing-parking",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "You are on a multi-lane highway and driving slower than the posted speed limit. Which lane should you use?",
+    "choices": [
+      "Any lane",
+      "The far left lane",
+      "The far right lane, unless passing or turning left",
+      "The center turn lane"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Slower than the limit: use the right lane",
+    "explanation": "When you are **slower than the posted speed limit** on a multi-lane highway, drive in the **extreme right lane** unless you are **passing, turning left**, or avoiding something in the road.\n\n**Wrong choices**\n- The far left lane: The left lanes are for passing.\n- Any lane: Slower traffic must keep to the right.\n- The center turn lane: The center turn lane is only for left turns.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "lane use",
+      "speed"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-north-carolina-speed-passing-parking-0014",
+    "certId": "dmv-permit-north-carolina",
+    "subjectId": "rules",
+    "chapterId": "speed-passing-parking",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "In which of these situations is passing on the right allowed?",
+    "choices": [
+      "On a two-lane road when the car ahead is slow",
+      "Any time the right lane is empty on a two-lane road",
+      "On the shoulder when traffic is stopped",
+      "When the vehicle ahead is in a left-turn lane"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Passing on the right: only in special cases",
+    "explanation": "Passing on the right is illegal except in special cases: on highways with **at least two lanes each way**, on **one-way streets**, when passing a vehicle **in a left-turn lane**, or when you are in a **lane set aside for right turns**.\n\n**Wrong choices**\n- On a two-lane road when the car ahead is slow: A slow car on a two-lane road must be passed on the left, when safe.\n- On the shoulder when traffic is stopped: Driving on the shoulder to pass is not allowed.\n- Any time the right lane is empty on a two-lane road: A two-lane road has only one lane each way, so you may not pass on the right.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "passing"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-north-carolina-speed-passing-parking-0015",
+    "certId": "dmv-permit-north-carolina",
+    "subjectId": "rules",
+    "chapterId": "speed-passing-parking",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Where should you NOT pass another vehicle?",
+    "choices": [
+      "On a straight road with a broken yellow line on your side and clear view",
+      "On a multi-lane highway with two lanes going your way",
+      "On a one-way street with several lanes when it is safe",
+      "At a railroad crossing"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Never pass at a railroad crossing",
+    "explanation": "Passing is unsafe and usually illegal **at railroad crossings**, at intersections in cities and towns, at marked rural intersections, on hills or curves without 500 feet of view, and where there is a **solid yellow line in your lane**.\n\n**Wrong choices**\n- On a straight road with a broken yellow line on your side and clear view: This is a place where passing is allowed when safe.\n- On a multi-lane highway with two lanes going your way: Passing is allowed here when safe.\n- On a one-way street with several lanes when it is safe: Passing is allowed here when safe.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "passing",
+      "railroad"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "dmv-permit-north-carolina-speed-passing-parking-0016",
+    "certId": "dmv-permit-north-carolina",
+    "subjectId": "rules",
+    "chapterId": "speed-passing-parking",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "On a three-lane highway with a center lane, when may you use the center lane to pass?",
+    "choices": [
+      "Any time it is empty",
+      "Only where the center lane is marked for passing in your direction",
+      "Never",
+      "Only at night"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Three-lane highway: pass only where the center lane is marked for you",
+    "explanation": "On **three-lane highways**, you must not pass except in the **center lane**, and only where the center lane is **marked for passing in your direction**. An exception is passing a vehicle in the center lane that is turning left.\n\n**Wrong choices**\n- Any time it is empty: An empty center lane may still be marked for the other direction.\n- Never: Passing is allowed when the center lane is marked for your direction.\n- Only at night: The rule does not depend on the time of day.",
+    "frequency": 2,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "passing",
+      "lane use"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-north-carolina-speed-passing-parking-0017",
+    "certId": "dmv-permit-north-carolina",
+    "subjectId": "rules",
+    "chapterId": "speed-passing-parking",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A car ahead of you is pulling out of a parallel parking space. What should you do?",
+    "choices": [
+      "Speed up to pass before it pulls out",
+      "Slow down and be ready to stop",
+      "Honk and keep going",
+      "Swerve into the oncoming lane"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Car pulling out ahead: slow down and be ready to stop",
+    "explanation": "If a vehicle ahead is **pulling out of a parallel parking space**, **slow down and be prepared to stop**. When you are the one pulling out, check for traffic and give a **left-turn signal**.\n\n**Wrong choices**\n- Speed up to pass before it pulls out: Speeding up may cause a crash if the driver pulls out.\n- Honk and keep going: Honking does not stop the other car from moving.\n- Swerve into the oncoming lane: Swerving into oncoming traffic is dangerous.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-21",
+    "tags": [
+      "parking",
+      "defensive driving"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+]
