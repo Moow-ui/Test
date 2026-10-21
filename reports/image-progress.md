@@ -40,6 +40,8 @@
 31. US home-inspector-nhie · electrical (분전반·배선 구조)
 32. KR forest-engineer · torrent-dam (사방댐 구조)
 33. KR adsp · data-mining (의사결정나무·덴드로그램)
+34. US dmv-permit-michigan · guide-signs (노선 표지·안내 표지, MUTCD)
+35. KR care-worker · emergency-end-of-life (심폐소생술 손 위치·회복 자세)
 
 ## 기록
 
