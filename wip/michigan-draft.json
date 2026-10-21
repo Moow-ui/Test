@@ -1,0 +1,3308 @@
+[
+ {
+  "subjectId": "signs",
+  "chapterId": "regulatory-signs",
+  "source": "predicted",
+  "level": "basic",
+  "stem": "What does this sign tell you?",
+  "choices": [
+   "Stop, then go ahead when the way is clear",
+   "The road is closed for construction ahead",
+   "The road ahead is one-way in your direction",
+   "You must not drive into the road or ramp where it is posted"
+  ],
+  "answer": 4,
+  "oneLineConcept": "DO NOT ENTER: you may not drive in where it is posted",
+  "explanation": "This is the **DO NOT ENTER** sign: a red circle with a white bar on a white square. You are **not allowed to enter** where it is posted. You often see it at freeway exit ramps, so drivers do not go up the ramp the wrong way.\n\n**Wrong choices**\n- Stop, then go ahead when the way is clear: That is what a STOP sign means. STOP signs are red octagons, not a red circle with a white bar.\n- The road is closed for construction ahead: Construction and maintenance signs are orange.\n- The road ahead is one-way in your direction: A one-way sign is a black and white arrow sign. This sign forbids entry instead.",
+  "frequency": 5,
+  "tags": [
+   "regulatory signs",
+   "do not enter"
+  ],
+  "distractorOrder": "1|3|2",
+  "image": "do-not-enter.svg",
+  "imageAlt": "A white square sign. Inside is a large red circle with a wide white horizontal bar across its middle. White capital words appear above and below the bar.",
+  "imageSource": {
+   "kind": "public",
+   "title": "MUTCD sign R5-1 (FHWA)",
+   "license": "U.S. federal government work, public domain"
+  }
+ },
+ {
+  "subjectId": "signs",
+  "chapterId": "regulatory-signs",
+  "source": "predicted",
+  "level": "basic",
+  "stem": "What does this sign mean?",
+  "choices": [
+   "U-turns are allowed when no traffic is coming",
+   "You may not make a U-turn here",
+   "Keep to the left of the island ahead",
+   "The road ahead has a sharp hairpin curve"
+  ],
+  "answer": 2,
+  "oneLineConcept": "Red circle and slash over a U-turn arrow: no U-turns",
+  "explanation": "Red on a sign means **stop or not allowed**. A red circle with a slash across a **U-turn arrow** means **U-turns are prohibited** at this place.\n\n**Wrong choices**\n- U-turns are allowed when no traffic is coming: A red circle and slash forbids the action at all times, not only when traffic is present.\n- Keep to the left of the island ahead: A keep-left sign shows an arrow passing an obstacle and has no red circle or slash.\n- The road ahead has a sharp hairpin curve: Curve warnings are yellow diamond signs, not white signs with a red circle.",
+  "frequency": 4,
+  "tags": [
+   "regulatory signs",
+   "u-turn"
+  ],
+  "distractorOrder": "1|4|3",
+  "image": "no-u-turn.svg",
+  "imageAlt": "A white square sign with a black border. A black arrow goes up, bends over the top like an upside-down U, and points back down. A red circle surrounds the arrow and a red diagonal line crosses it from upper left to lower right.",
+  "imageSource": {
+   "kind": "public",
+   "title": "MUTCD sign R3-4 (FHWA)",
+   "license": "U.S. federal government work, public domain"
+  }
+ },
+ {
+  "subjectId": "signs",
+  "chapterId": "regulatory-signs",
+  "source": "predicted",
+  "level": "intermediate",
+  "stem": "You are stopped at a red light and this sign is posted at the corner. What may you do?",
+  "choices": [
+   "Turn right only once the light turns green",
+   "Turn right after a full stop if the way is clear",
+   "Not turn right here, even after the light turns green",
+   "Turn right only if no pedestrians are in the crosswalk"
+  ],
+  "answer": 3,
+  "oneLineConcept": "Red circle and slash over a right arrow: no right turn",
+  "explanation": "This is the **NO RIGHT TURN** sign. The red circle and slash over a right-turn arrow mean **right turns are prohibited** here, whatever color the light shows. Go straight or turn left if that is allowed.\n\n**Wrong choices**\n- Turn right only once the light turns green: The sign does not depend on the light. Right turns are not allowed here on any color.\n- Turn right after a full stop if the way is clear: That is the normal right turn on red. This sign bans right turns at this corner completely.\n- Turn right only if no pedestrians are in the crosswalk: Pedestrians do not change the rule. The turn itself is prohibited.",
+  "frequency": 4,
+  "tags": [
+   "regulatory signs",
+   "turns"
+  ],
+  "distractorOrder": "2|1|4",
+  "image": "no-right-turn.svg",
+  "imageAlt": "A white square sign with a black border. A black arrow points up and then bends to the right. A red circle surrounds the arrow and a red diagonal line crosses it from upper left to lower right.",
+  "imageSource": {
+   "kind": "public",
+   "title": "MUTCD sign R3-1 (FHWA)",
+   "license": "U.S. federal government work, public domain"
+  }
+ },
+ {
+  "subjectId": "signs",
+  "chapterId": "regulatory-signs",
+  "source": "predicted",
+  "level": "basic",
+  "stem": "Which sign is the only one with eight sides (an octagon)?",
+  "choices": [
+   "Railroad crossing ahead",
+   "YIELD",
+   "STOP",
+   "School zone"
+  ],
+  "answer": 3,
+  "oneLineConcept": "Octagon (eight sides) is used only for STOP",
+  "explanation": "A sign's **shape** is a clue to its meaning. The **octagon** is used only for the **STOP** sign, so you can recognize it even from behind or when it is covered with snow.\n\n**Wrong choices**\n- Railroad crossing ahead: The railroad advance warning sign is round.\n- YIELD: The YIELD sign is a triangle with its point down.\n- School zone: School signs are five-sided (pentagon).",
+  "frequency": 5,
+  "tags": [
+   "sign shapes",
+   "stop"
+  ],
+  "distractorOrder": "2|1|4"
+ },
+ {
+  "subjectId": "signs",
+  "chapterId": "regulatory-signs",
+  "source": "predicted",
+  "level": "basic",
+  "stem": "What do regulatory signs tell you?",
+  "choices": [
+   "Where to find gas, food, and lodging",
+   "The traffic laws you must obey, such as speed limits and turn rules",
+   "Directions to cities and towns",
+   "Hazards or changes in the road ahead"
+  ],
+  "answer": 2,
+  "oneLineConcept": "Regulatory signs state laws: speed, turns, movement",
+  "explanation": "**Regulatory signs** tell you about **specific laws**. They control the **speed and movement** of traffic. They are usually **rectangles** in white and black, red and white, or red, white, and black.\n\n**Wrong choices**\n- Where to find gas, food, and lodging: Services are shown on blue signs.\n- Directions to cities and towns: Directions are given on green guide signs.\n- Hazards or changes in the road ahead: That is the job of warning signs, which are usually yellow.",
+  "frequency": 5,
+  "tags": [
+   "regulatory signs"
+  ],
+  "distractorOrder": "4|3|1"
+ },
+ {
+  "subjectId": "signs",
+  "chapterId": "regulatory-signs",
+  "source": "predicted",
+  "level": "basic",
+  "stem": "On a traffic sign, what does the color red mean?",
+  "choices": [
+   "Services such as gas or lodging",
+   "Places of recreation or cultural interest",
+   "Stop, or that something is not allowed",
+   "Caution for construction or maintenance work"
+  ],
+  "answer": 3,
+  "oneLineConcept": "Red on a sign: stop, prohibited, forbidden",
+  "explanation": "Sign colors carry meaning. **Red** means **stop, prohibited, or forbidden**. That is why STOP, YIELD, DO NOT ENTER, and the circle-and-slash symbol all use red.\n\n**Wrong choices**\n- Services such as gas or lodging: That is blue.\n- Places of recreation or cultural interest: That is brown.\n- Caution for construction or maintenance work: That is orange.",
+  "frequency": 4,
+  "tags": [
+   "sign colors"
+  ],
+  "distractorOrder": "4|1|2"
+ },
+ {
+  "subjectId": "signs",
+  "chapterId": "regulatory-signs",
+  "source": "predicted",
+  "level": "basic",
+  "stem": "What must you do at a STOP sign?",
+  "choices": [
+   "Come to a complete stop and check for traffic before going",
+   "Tap the horn and go through slowly",
+   "Slow down and go on if no one is coming",
+   "Stop only if other vehicles are at the intersection"
+  ],
+  "answer": 1,
+  "oneLineConcept": "STOP sign: full stop every time, then go when clear",
+  "explanation": "At a **STOP sign** you must come to a **complete stop** and **check for traffic** before you go on. This is required **every time**, even if no other vehicles are in sight.\n\n**Wrong choices**\n- Tap the horn and go through slowly: The horn does not replace a full stop.\n- Slow down and go on if no one is coming: Slowing without stopping is what you may do at a YIELD sign, not a STOP sign.\n- Stop only if other vehicles are at the intersection: You must stop every time, even when the road looks empty.",
+  "frequency": 5,
+  "tags": [
+   "stop sign"
+  ],
+  "distractorOrder": "3|4|2"
+ },
+ {
+  "subjectId": "signs",
+  "chapterId": "regulatory-signs",
+  "source": "predicted",
+  "level": "basic",
+  "stem": "You come to a YIELD sign. What should you do?",
+  "choices": [
+   "Come to a full stop every time",
+   "Keep your speed, because other drivers must yield to you",
+   "Stop only when a pedestrian is waiting",
+   "Slow down, check for traffic, and be ready to stop"
+  ],
+  "answer": 4,
+  "oneLineConcept": "YIELD: slow, check, let others go first, stop if needed",
+  "explanation": "At a **YIELD** sign, **slow down**, **check for traffic**, and **be prepared to stop**. Let vehicles crossing your path go first. If the way is clear, you may go on without a full stop.\n\n**Wrong choices**\n- Come to a full stop every time: A full stop every time is the rule at a STOP sign. At YIELD you stop only when needed.\n- Keep your speed, because other drivers must yield to you: The sign is telling you to give way to others, not the other way around.\n- Stop only when a pedestrian is waiting: You must yield to vehicles as well as pedestrians.",
+  "frequency": 5,
+  "tags": [
+   "yield sign"
+  ],
+  "distractorOrder": "1|2|3"
+ },
+ {
+  "subjectId": "signs",
+  "chapterId": "regulatory-signs",
+  "source": "predicted",
+  "level": "basic",
+  "stem": "What shape are most regulatory (rule) signs?",
+  "choices": [
+   "Diamond",
+   "Round",
+   "Pentagon",
+   "Rectangle"
+  ],
+  "answer": 4,
+  "oneLineConcept": "Most rule signs are rectangles",
+  "explanation": "Regulatory signs are **usually rectangular**. A **vertical rectangle** stands for **law**. Shape helps you know what kind of message a sign carries before you can read it.\n\n**Wrong choices**\n- Diamond: Diamonds are used for warning signs.\n- Round: The round sign is the railroad advance warning sign.\n- Pentagon: The five-sided pentagon is used for school signs.",
+  "frequency": 3,
+  "tags": [
+   "regulatory signs",
+   "sign shapes"
+  ],
+  "distractorOrder": "1|3|2"
+ },
+ {
+  "subjectId": "signs",
+  "chapterId": "regulatory-signs",
+  "source": "predicted",
+  "level": "basic",
+  "stem": "A sign shows a symbol inside a red circle with a red slash across it. What does that mean?",
+  "choices": [
+   "The action shown is allowed only at night",
+   "The action shown is allowed if you are careful",
+   "The action shown is not allowed",
+   "The action shown is recommended"
+  ],
+  "answer": 3,
+  "oneLineConcept": "Red circle with slash: that action is prohibited",
+  "explanation": "Red on a sign means **prohibited or forbidden**. When a **red circle and slash** cover a symbol, such as a turn arrow or a truck, the **action shown is not allowed** at that place.\n\n**Wrong choices**\n- The action shown is allowed only at night: The sign gives no time limit; it forbids the action.\n- The action shown is allowed if you are careful: Red means stop or prohibited, so the action is not allowed at all.\n- The action shown is recommended: A recommendation would not use the red prohibition symbol.",
+  "frequency": 4,
+  "tags": [
+   "regulatory signs",
+   "prohibition"
+  ],
+  "distractorOrder": "2|4|1"
+ },
+ {
+  "subjectId": "signs",
+  "chapterId": "regulatory-signs",
+  "source": "predicted",
+  "level": "basic",
+  "stem": "A sign shows a truck inside a red circle with a red slash across it. What does it mean?",
+  "choices": [
+   "A truck stop is ahead",
+   "Trucks are not allowed on this road",
+   "Trucks may be entering the road ahead",
+   "Trucks must use the right lane"
+  ],
+  "answer": 2,
+  "oneLineConcept": "Truck in red circle and slash: no trucks allowed",
+  "explanation": "The red circle and slash mean **not allowed**. With a **truck** symbol, the sign tells you that **trucks may not drive** where it is posted.\n\n**Wrong choices**\n- A truck stop is ahead: Services are shown on blue signs.\n- Trucks may be entering the road ahead: A warning about trucks entering would be a yellow diamond, not a red prohibition symbol.\n- Trucks must use the right lane: A lane rule would show lanes or words, not a red circle and slash.",
+  "frequency": 3,
+  "tags": [
+   "regulatory signs",
+   "trucks"
+  ],
+  "distractorOrder": "3|1|4"
+ },
+ {
+  "subjectId": "signs",
+  "chapterId": "regulatory-signs",
+  "source": "predicted",
+  "level": "intermediate",
+  "stem": "Your light is red and a NO TURN ON RED sign is posted. You want to turn right. What should you do?",
+  "choices": [
+   "Turn only if the car behind you honks",
+   "Turn if no pedestrians are in the crosswalk",
+   "Wait for the green light before turning",
+   "Stop fully, then turn if the way is clear"
+  ],
+  "answer": 3,
+  "oneLineConcept": "NO TURN ON RED: wait for green to turn",
+  "explanation": "Normally you may turn right on red after a full stop, yielding to traffic and pedestrians. A **NO TURN ON RED** sign **prohibits** that. You must **wait for the green light** before turning.\n\n**Wrong choices**\n- Turn only if the car behind you honks: Other drivers' horns never change the rule.\n- Turn if no pedestrians are in the crosswalk: The sign forbids the turn on red whether or not people are crossing.\n- Stop fully, then turn if the way is clear: That is allowed only where turning on red is not banned. This sign bans it.",
+  "frequency": 4,
+  "tags": [
+   "regulatory signs",
+   "turn on red"
+  ],
+  "distractorOrder": "4|2|1"
+ },
+ {
+  "subjectId": "signs",
+  "chapterId": "regulatory-signs",
+  "source": "predicted",
+  "level": "intermediate",
+  "stem": "At a STOP sign there is no stop line and no crosswalk. Where should you stop?",
+  "choices": [
+   "At a point where you can see approaching traffic without pulling into the intersection",
+   "Partly inside the intersection so you can see better",
+   "Right beside the sign post, even if you cannot see cross traffic",
+   "Anywhere, as long as your wheels stop turning"
+  ],
+  "answer": 1,
+  "oneLineConcept": "No line or crosswalk: stop where you can see, before the intersection",
+  "explanation": "Stop at the **stop line** or **crosswalk** if there is one. If there is neither, stop at a point where you can **see all approaching traffic** without having to **pull into the intersection**.\n\n**Wrong choices**\n- Partly inside the intersection so you can see better: You must not pull into the intersection to look.\n- Right beside the sign post, even if you cannot see cross traffic: You need a spot where you can see traffic coming, not just the sign's location.\n- Anywhere, as long as your wheels stop turning: Where you stop matters for safety and for other road users.",
+  "frequency": 4,
+  "tags": [
+   "stop sign",
+   "stop line"
+  ],
+  "distractorOrder": "3|2|4"
+ },
+ {
+  "subjectId": "signs",
+  "chapterId": "regulatory-signs",
+  "source": "predicted",
+  "level": "intermediate",
+  "stem": "You see a sign reading WRONG WAY. What does it mean?",
+  "choices": [
+   "The road ahead is one-way in your direction",
+   "You should turn around using the median crossover",
+   "You are driving into oncoming traffic and must get out safely and quickly",
+   "You missed your exit and should back up on the shoulder"
+  ],
+  "answer": 3,
+  "oneLineConcept": "WRONG WAY: you are against traffic; get out safely now",
+  "explanation": "A **WRONG WAY** sign means you have entered a lane of **oncoming traffic**. Leave it the **safest and quickest** way you can. These signs, along with DO NOT ENTER, are often posted on **freeway exit ramps**.\n\n**Wrong choices**\n- The road ahead is one-way in your direction: WRONG WAY means you are going against the traffic, not with it.\n- You should turn around using the median crossover: Median crossovers are only for emergency and road agency vehicles.\n- You missed your exit and should back up on the shoulder: You should never back up on a freeway. Go to the next exit instead.",
+  "frequency": 4,
+  "tags": [
+   "wrong way",
+   "freeway"
+  ],
+  "distractorOrder": "4|1|2"
+ },
+ {
+  "subjectId": "signs",
+  "chapterId": "regulatory-signs",
+  "source": "predicted",
+  "level": "intermediate",
+  "stem": "Which color pattern marks a regulatory sign, telling you what is legally allowed or prohibited?",
+  "choices": [
+   "Green and white",
+   "Yellow and black",
+   "Black and white",
+   "Blue and white"
+  ],
+  "answer": 3,
+  "oneLineConcept": "Black and white signs: regulatory, a law",
+  "explanation": "In Michigan's color list, **black** and **white** both stand for **regulatory** messages: what is **legally allowed or prohibited**. Speed limit and ONE WAY signs are examples.\n\n**Wrong choices**\n- Green and white: Green signs give directions and guidance.\n- Yellow and black: Yellow means caution or a general warning.\n- Blue and white: Blue signs show services and hospitality.",
+  "frequency": 3,
+  "tags": [
+   "sign colors"
+  ],
+  "distractorOrder": "2|1|4"
+ },
+ {
+  "subjectId": "signs",
+  "chapterId": "regulatory-signs",
+  "source": "predicted",
+  "level": "intermediate",
+  "stem": "A sign over the road shows arrows that tell which lanes may turn left. What kind of sign is it?",
+  "choices": [
+   "A warning sign about a curve ahead",
+   "A service sign for a left-side rest area",
+   "A guide sign that only suggests a lane",
+   "A regulatory sign that you must obey"
+  ],
+  "answer": 4,
+  "oneLineConcept": "Lane-use arrow signs are rules, not advice",
+  "explanation": "Signs that show which **lanes allow left turns** are **regulatory**. They control traffic movement, so you **must follow them**. Pick your lane early and turn only from a lane the sign allows.\n\n**Wrong choices**\n- A warning sign about a curve ahead: Curve warnings are yellow diamonds.\n- A service sign for a left-side rest area: Service signs are blue and show symbols like gas or food.\n- A guide sign that only suggests a lane: Lane-use signs are rules, not suggestions.",
+  "frequency": 3,
+  "tags": [
+   "lane use",
+   "regulatory signs"
+  ],
+  "distractorOrder": "3|1|2"
+ },
+ {
+  "subjectId": "signs",
+  "chapterId": "regulatory-signs",
+  "source": "predicted",
+  "level": "intermediate",
+  "stem": "A white rule sign shows an arrow going around the left side of a dark island shape. What does it require?",
+  "choices": [
+   "Pass only to the left of the island or obstacle ahead",
+   "Turn left at the next intersection",
+   "The left lane ends ahead",
+   "Traffic is merging from the left"
+  ],
+  "answer": 1,
+  "oneLineConcept": "KEEP LEFT: pass only on the left side of the obstacle",
+  "explanation": "This is the **KEEP LEFT** sign. Traffic must **pass only to the left-hand side** of the island or obstruction. Because it is a white rule sign, it is a **law you must obey**.\n\n**Wrong choices**\n- Turn left at the next intersection: A turn sign would show an arrow bending sharply, not passing an island.\n- The left lane ends ahead: A lane-ending warning is a yellow diamond sign.\n- Traffic is merging from the left: Merge warnings are yellow diamonds.",
+  "frequency": 3,
+  "tags": [
+   "keep left",
+   "regulatory signs"
+  ],
+  "distractorOrder": "2|3|4"
+ },
+ {
+  "subjectId": "signs",
+  "chapterId": "regulatory-signs",
+  "source": "predicted",
+  "level": "advanced",
+  "stem": "A sign reads SPEED LIMIT 50, but the road is wet and foggy. How fast may you legally drive?",
+  "choices": [
+   "No faster than is careful and prudent for the conditions, which may be well below 50 mph",
+   "At least 45 mph, because slow driving is illegal",
+   "Exactly 50 mph, to keep traffic moving",
+   "Up to 55 mph, because small overages are allowed"
+  ],
+  "answer": 1,
+  "oneLineConcept": "Posted limit is a maximum; drive slower when conditions require",
+  "explanation": "Michigan's **Basic Speed Law** says you must drive at a **careful and prudent** speed for the conditions, so you can **stop within the clear distance ahead**. That speed is **never faster** than the posted limit and may be **slower** in rain, fog, or traffic.\n\n**Wrong choices**\n- At least 45 mph, because slow driving is illegal: No such minimum applies here. Conditions may require a much lower speed.\n- Exactly 50 mph, to keep traffic moving: The posted limit is a maximum, not a required speed.\n- Up to 55 mph, because small overages are allowed: You may never go faster than the posted limit.",
+  "frequency": 4,
+  "tags": [
+   "speed limit",
+   "basic speed law"
+  ],
+  "distractorOrder": "3|4|2"
+ },
+ {
+  "subjectId": "signs",
+  "chapterId": "regulatory-signs",
+  "source": "predicted",
+  "level": "advanced",
+  "stem": "On a freeway you pass your exit. A median crossover ahead has an AUTHORIZED VEHICLES ONLY sign. What should you do?",
+  "choices": [
+   "Stop on the shoulder and wait for help",
+   "Drive to the next exit, get off, and re-enter the freeway going the other way",
+   "Use the crossover if no traffic is coming",
+   "Back up slowly on the shoulder to your exit"
+  ],
+  "answer": 2,
+  "oneLineConcept": "Missed exit: go on to the next exit; never use the crossover",
+  "explanation": "The **AUTHORIZED VEHICLES ONLY** sign means only **law enforcement, emergency, or maintenance** vehicles may use the median crossover. If you miss an exit, **never back up, turn around, or use a crossover**. **Drive to the next exit** and come back.\n\n**Wrong choices**\n- Stop on the shoulder and wait for help: Stopping on a freeway is only for emergencies.\n- Use the crossover if no traffic is coming: Only police, emergency, and maintenance vehicles may use it, whatever the traffic.\n- Back up slowly on the shoulder to your exit: Never back up on a freeway.",
+  "frequency": 4,
+  "tags": [
+   "freeway",
+   "median crossover"
+  ],
+  "distractorOrder": "3|4|1"
+ },
+ {
+  "subjectId": "signs",
+  "chapterId": "regulatory-signs",
+  "source": "predicted",
+  "level": "advanced",
+  "stem": "Which of these is a regulatory sign rather than a warning sign?",
+  "choices": [
+   "A yellow diamond showing a lane merging",
+   "A yellow pennant reading NO PASSING ZONE",
+   "An orange diamond reading ROAD WORK AHEAD",
+   "A white rectangle reading DO NOT PASS"
+  ],
+  "answer": 4,
+  "oneLineConcept": "DO NOT PASS (white rectangle) is a rule; the pennant warns",
+  "explanation": "The **DO NOT PASS** sign is a **white rectangle**, so it is **regulatory**: it prohibits passing. The yellow **pennant** also concerns passing, but it is a **warning sign**. Yellow and orange diamonds are warnings too.\n\n**Wrong choices**\n- A yellow diamond showing a lane merging: Yellow diamonds are warning signs.\n- A yellow pennant reading NO PASSING ZONE: The pennant is a warning sign. It is yellow and posted on the left side of the road.\n- An orange diamond reading ROAD WORK AHEAD: Orange diamonds are construction warning signs.",
+  "frequency": 3,
+  "tags": [
+   "regulatory signs",
+   "passing"
+  ],
+  "distractorOrder": "2|1|3"
+ },
+ {
+  "subjectId": "signs",
+  "chapterId": "regulatory-signs",
+  "source": "predicted",
+  "level": "advanced",
+  "stem": "Near a freeway entrance you see a DO NOT ENTER sign and a WRONG WAY sign on one of two ramps. What does that tell you?",
+  "choices": [
+   "That ramp is closed only during construction hours",
+   "Only trucks may use that ramp",
+   "That ramp carries traffic leaving the freeway, so you must not drive onto it",
+   "You may use the ramp slowly with your hazard lights on"
+  ],
+  "answer": 3,
+  "oneLineConcept": "DO NOT ENTER and WRONG WAY mark an exit ramp: do not go up it",
+  "explanation": "An **exit ramp** is often right next to an **entrance ramp**. **DO NOT ENTER** and **WRONG WAY** signs are posted so drivers do not go up the exit ramp **against traffic**. Look for them, and use the ramp marked as the **entrance**.\n\n**Wrong choices**\n- That ramp is closed only during construction hours: Construction closures use orange signs, and these signs apply at all times.\n- Only trucks may use that ramp: The signs forbid all traffic from entering that way.\n- You may use the ramp slowly with your hazard lights on: Hazard lights never make it legal to drive against traffic.",
+  "frequency": 3,
+  "tags": [
+   "freeway ramps",
+   "do not enter"
+  ],
+  "distractorOrder": "1|2|4"
+ },
+ {
+  "subjectId": "signs",
+  "chapterId": "regulatory-signs",
+  "source": "predicted",
+  "level": "advanced",
+  "stem": "Which of these signs gives a rule you must obey?",
+  "choices": [
+   "A SPEED LIMIT sign",
+   "A NO TURN ON RED sign",
+   "A ONE WAY sign",
+   "All of the above"
+  ],
+  "answer": 4,
+  "oneLineConcept": "Speed limit, no turn on red, and one way are all rule signs",
+  "explanation": "All three are **regulatory signs**. A **SPEED LIMIT** sign sets the legal top speed, **NO TURN ON RED** prohibits turning on red, and **ONE WAY** means all lanes flow in the same direction. Each one is a **law**, not a suggestion.\n\n**Wrong choices**\n- A SPEED LIMIT sign: This is a rule sign, but it is not the only one listed.\n- A NO TURN ON RED sign: This is a rule sign, but it is not the only one listed.\n- A ONE WAY sign: This is a rule sign, but it is not the only one listed.",
+  "frequency": 3,
+  "tags": [
+   "regulatory signs"
+  ],
+  "levelLock": true
+ },
+ {
+  "subjectId": "signs",
+  "chapterId": "warning-signs",
+  "source": "predicted",
+  "level": "basic",
+  "stem": "What does this sign warn you about?",
+  "choices": [
+   "Railroad tracks run beside the road, with no crossing",
+   "The road is closed ahead",
+   "An intersection with a four-way stop is ahead",
+   "A railroad crossing is ahead"
+  ],
+  "answer": 4,
+  "oneLineConcept": "Round yellow sign with X and two Rs: railroad crossing ahead",
+  "explanation": "The only **round** sign is the **railroad advance warning sign**. It warns that a **railroad crossing is ahead**. Slow down, look and listen for trains, and be ready to stop.\n\n**Wrong choices**\n- Railroad tracks run beside the road, with no crossing: This sign warns that you will cross tracks ahead.\n- The road is closed ahead: Road closures do not use this round sign.\n- An intersection with a four-way stop is ahead: An intersection warning is a yellow diamond. The round yellow sign is used only for railroads.",
+  "frequency": 5,
+  "tags": [
+   "railroad",
+   "warning signs"
+  ],
+  "distractorOrder": "3|1|2",
+  "image": "railroad-advance-warning.svg",
+  "imageAlt": "A round yellow sign with a black border. A large black X crosses the whole sign, and a black capital letter R sits in the left space and in the right space between the arms of the X.",
+  "imageSource": {
+   "kind": "public",
+   "title": "MUTCD sign W10-1 (FHWA)",
+   "license": "U.S. federal government work, public domain"
+  }
+ },
+ {
+  "subjectId": "signs",
+  "chapterId": "warning-signs",
+  "source": "predicted",
+  "level": "intermediate",
+  "stem": "You pass this sign and a train is coming. Where must you stop?",
+  "choices": [
+   "No closer than 15 feet and no farther than 50 feet from the tracks",
+   "Right at the edge of the nearest rail",
+   "At least 100 feet back from the tracks",
+   "At the sign itself, wherever it is posted"
+  ],
+  "answer": 1,
+  "oneLineConcept": "Train coming: stop 15 to 50 feet from the tracks",
+  "explanation": "When a train is coming, every vehicle must stop **no more than 50 feet** and **no less than 15 feet** from the tracks. Trains **overhang the rails by at least three feet** on each side, and cargo may stick out even farther.\n\n**Wrong choices**\n- Right at the edge of the nearest rail: Trains overhang the tracks by at least three feet, so stopping right at the rail is dangerous.\n- At least 100 feet back from the tracks: The law sets a range of 15 to 50 feet.\n- At the sign itself, wherever it is posted: The sign is posted well before the crossing; you stop near the tracks, 15 to 50 feet away.",
+  "frequency": 5,
+  "tags": [
+   "railroad",
+   "stopping distance"
+  ],
+  "distractorOrder": "2|3|4",
+  "image": "railroad-advance-warning.svg",
+  "imageAlt": "A round yellow sign with a black border. A large black X crosses the whole sign, and a black capital letter R sits in the left space and in the right space between the arms of the X.",
+  "imageSource": {
+   "kind": "public",
+   "title": "MUTCD sign W10-1 (FHWA)",
+   "license": "U.S. federal government work, public domain"
+  }
+ },
+ {
+  "subjectId": "signs",
+  "chapterId": "warning-signs",
+  "source": "predicted",
+  "level": "basic",
+  "stem": "What does this five-sided sign tell you?",
+  "choices": [
+   "A bus stop is ahead",
+   "A hiking trail crosses ahead",
+   "You are near a school or school crossing; watch for children",
+   "Pedestrians are not allowed on this road"
+  ],
+  "answer": 3,
+  "oneLineConcept": "Pentagon (five sides): school area or crossing",
+  "explanation": "The **pentagon** shape is used for **school** signs, and **fluorescent yellow-green** is the color for school, pedestrian, and bicycle cautions. Drive carefully, watch for **children**, and obey any **school crossing guard**.\n\n**Wrong choices**\n- A bus stop is ahead: Bus stops are not shown with this five-sided sign.\n- A hiking trail crosses ahead: Recreation signs are brown.\n- Pedestrians are not allowed on this road: A ban would use a red circle and slash, not a yellow-green pentagon.",
+  "frequency": 5,
+  "tags": [
+   "school",
+   "warning signs"
+  ],
+  "distractorOrder": "1|4|2",
+  "image": "school-sign.svg",
+  "imageAlt": "A five-sided sign shaped like a house with a pointed top. It is fluorescent yellow-green with a black border and shows black figures of two children walking.",
+  "imageSource": {
+   "kind": "public",
+   "title": "MUTCD sign S1-1 (FHWA)",
+   "license": "U.S. federal government work, public domain"
+  }
+ },
+ {
+  "subjectId": "signs",
+  "chapterId": "warning-signs",
+  "source": "predicted",
+  "level": "intermediate",
+  "stem": "On which side of the road is this sign posted?",
+  "choices": [
+   "Over the center of the road on a frame",
+   "The right side of the road, beside the shoulder",
+   "On the back of slow-moving vehicles",
+   "The left side of the road"
+  ],
+  "answer": 4,
+  "oneLineConcept": "No-passing pennant: yellow, on the left side of the road",
+  "explanation": "The **pennant**-shaped sign is the **NO PASSING ZONE** warning. It is **yellow** and placed on the **left side** of the road, where a driver looking to pass will see it. It warns that conditions make **passing dangerous**.\n\n**Wrong choices**\n- Over the center of the road on a frame: It is mounted at the left roadside, not overhead.\n- The right side of the road, beside the shoulder: Most signs are on the right, but this pennant is placed on the left so drivers about to pass see it.\n- On the back of slow-moving vehicles: The emblem on slow vehicles is an orange triangle, not this pennant.",
+  "frequency": 4,
+  "tags": [
+   "no passing",
+   "pennant"
+  ],
+  "distractorOrder": "2|1|3",
+  "image": "no-passing-pennant.svg",
+  "imageAlt": "A yellow sign shaped like a sideways triangle (a pennant) with its point toward the right and a black border. Three lines of black capital letters read NO, PASSING, ZONE.",
+  "imageSource": {
+   "kind": "public",
+   "title": "MUTCD sign W14-3 (FHWA)",
+   "license": "U.S. federal government work, public domain"
+  }
+ },
+ {
+  "subjectId": "signs",
+  "chapterId": "warning-signs",
+  "source": "predicted",
+  "level": "basic",
+  "stem": "Most warning signs have which shape and color?",
+  "choices": [
+   "A yellow diamond with black letters or symbols",
+   "A red octagon with white letters",
+   "A green rectangle with white letters",
+   "A white rectangle with black letters"
+  ],
+  "answer": 1,
+  "oneLineConcept": "Warning signs: mostly yellow diamonds",
+  "explanation": "The **diamond** shape means **warning**, and **yellow** means **caution or general warning**. These signs tell you about a **hazard or change** ahead, such as a curve, a merge, or a crossing.\n\n**Wrong choices**\n- A red octagon with white letters: That is the STOP sign.\n- A green rectangle with white letters: That is a guide sign giving directions.\n- A white rectangle with black letters: That is the usual look of a regulatory (rule) sign.",
+  "frequency": 5,
+  "tags": [
+   "warning signs",
+   "sign shapes"
+  ],
+  "distractorOrder": "4|3|2"
+ },
+ {
+  "subjectId": "signs",
+  "chapterId": "warning-signs",
+  "source": "predicted",
+  "level": "basic",
+  "stem": "What do orange diamond signs mean?",
+  "choices": [
+   "A school zone is ahead",
+   "Construction or maintenance work is ahead",
+   "Gas and food are available at the next exit",
+   "A recreation area is nearby"
+  ],
+  "answer": 2,
+  "oneLineConcept": "Orange signs: construction or maintenance zone",
+  "explanation": "**Orange** means **caution for construction or maintenance**. Work zone warning signs are **diamonds** with black letters on orange (or yellow). Part of a lane, a whole lane, or the whole road may be blocked.\n\n**Wrong choices**\n- A school zone is ahead: School signs are fluorescent yellow-green.\n- Gas and food are available at the next exit: Service signs are blue.\n- A recreation area is nearby: Recreation signs are brown.",
+  "frequency": 5,
+  "tags": [
+   "work zone",
+   "sign colors"
+  ],
+  "distractorOrder": "1|4|3"
+ },
+ {
+  "subjectId": "signs",
+  "chapterId": "warning-signs",
+  "source": "predicted",
+  "level": "basic",
+  "stem": "What are fluorescent pink signs used for?",
+  "choices": [
+   "School and pedestrian crossings",
+   "Hospitals and other services",
+   "Long-term road construction",
+   "An incident, emergency, or other unplanned event"
+  ],
+  "answer": 4,
+  "oneLineConcept": "Fluorescent pink: incident or emergency on the road",
+  "explanation": "**Fluorescent pink** signs mark an **incident, emergency, or unplanned event**, such as a crash that has blocked traffic. They help guide you **around or through** the area.\n\n**Wrong choices**\n- School and pedestrian crossings: Those use fluorescent yellow-green.\n- Hospitals and other services: Services use blue signs.\n- Long-term road construction: Construction signs are orange.",
+  "frequency": 3,
+  "tags": [
+   "sign colors",
+   "incident"
+  ],
+  "distractorOrder": "3|1|2"
+ },
+ {
+  "subjectId": "signs",
+  "chapterId": "warning-signs",
+  "source": "predicted",
+  "level": "basic",
+  "stem": "Fluorescent yellow-green signs warn about what?",
+  "choices": [
+   "Road construction",
+   "Schools, pedestrians, or bicycles",
+   "Freeway exits",
+   "Railroad crossings"
+  ],
+  "answer": 2,
+  "oneLineConcept": "Yellow-green: school, pedestrian, or bicycle caution",
+  "explanation": "**Fluorescent yellow-green** is used for **school, pedestrian, or bicycle** cautions. The bright color helps these signs stand out so you watch for **people walking or riding**.\n\n**Wrong choices**\n- Road construction: Construction signs are orange.\n- Freeway exits: Exit information is on green guide signs.\n- Railroad crossings: The railroad advance sign is round and yellow.",
+  "frequency": 4,
+  "tags": [
+   "sign colors",
+   "school"
+  ],
+  "distractorOrder": "4|1|3"
+ },
+ {
+  "subjectId": "signs",
+  "chapterId": "warning-signs",
+  "source": "predicted",
+  "level": "basic",
+  "stem": "What does an orange triangle on the back of a vehicle mean?",
+  "choices": [
+   "It is a slow-moving vehicle that cannot go faster than 25 mph",
+   "It is driven by a student driver",
+   "It is an emergency vehicle",
+   "It is carrying hazardous materials"
+  ],
+  "answer": 1,
+  "oneLineConcept": "Orange triangle: slow-moving vehicle, 25 mph or less",
+  "explanation": "**Slow-moving vehicles** cannot travel faster than **25 mph**. Examples are Amish buggies, farm machinery, and construction equipment. They show an **orange triangle** on the back. Be patient; the driver will usually pull over when possible.\n\n**Wrong choices**\n- It is driven by a student driver: The emblem marks the vehicle's speed limit, not the driver.\n- It is an emergency vehicle: Emergency vehicles use flashing lights and sirens.\n- It is carrying hazardous materials: The orange triangle shows limited speed, not cargo.",
+  "frequency": 4,
+  "tags": [
+   "slow-moving vehicle"
+  ],
+  "distractorOrder": "4|3|2"
+ },
+ {
+  "subjectId": "signs",
+  "chapterId": "warning-signs",
+  "source": "predicted",
+  "level": "basic",
+  "stem": "What should you do when you see a deer crossing sign?",
+  "choices": [
+   "Pull over and wait for deer to cross",
+   "Slow down and watch for deer, especially at dawn and dusk",
+   "Flash your high beams and honk to scare deer away",
+   "Speed up to get through the area quickly"
+  ],
+  "answer": 2,
+  "oneLineConcept": "Deer sign: slow down and stay alert, especially dawn and dusk",
+  "explanation": "**Deer crossing** signs warn that deer often cross there. **Slow down** and stay alert, especially at **dawn and dusk** and in **fall and spring**. If you see one deer, expect **others nearby**.\n\n**Wrong choices**\n- Pull over and wait for deer to cross: The sign warns you to watch; it does not tell you to stop.\n- Flash your high beams and honk to scare deer away: Horns, high beams, and deer whistles do not keep deer away.\n- Speed up to get through the area quickly: Higher speed gives you less time to react.",
+  "frequency": 4,
+  "tags": [
+   "deer",
+   "warning signs"
+  ],
+  "distractorOrder": "1|3|4"
+ },
+ {
+  "subjectId": "signs",
+  "chapterId": "warning-signs",
+  "source": "predicted",
+  "level": "basic",
+  "stem": "Where is a crossbuck (white X-shaped sign) placed?",
+  "choices": [
+   "At the start of a school zone",
+   "Before a narrow bridge",
+   "Well before the crossing, as an early warning",
+   "At the railroad crossing itself"
+  ],
+  "answer": 4,
+  "oneLineConcept": "Crossbuck: marks the railroad crossing itself",
+  "explanation": "The **crossbuck** is the white X-shaped sign that marks a **railroad crossing** right at the tracks. At crossings without lights or gates, it may come with a **YIELD or STOP** sign.\n\n**Wrong choices**\n- At the start of a school zone: School signs are five-sided.\n- Before a narrow bridge: A crossbuck is used only at railroad crossings.\n- Well before the crossing, as an early warning: The early warning is the round yellow sign; the crossbuck stands at the tracks.",
+  "frequency": 4,
+  "tags": [
+   "railroad",
+   "crossbuck"
+  ],
+  "distractorOrder": "3|1|2"
+ },
+ {
+  "subjectId": "signs",
+  "chapterId": "warning-signs",
+  "source": "predicted",
+  "level": "intermediate",
+  "stem": "In a work zone, a construction worker signals you to stop, but the traffic light ahead is green. What should you do?",
+  "choices": [
+   "Go, because the green light controls traffic",
+   "Follow the worker's directions and stop",
+   "Slow down but keep going if the lane looks clear",
+   "Honk and drive around the worker"
+  ],
+  "answer": 2,
+  "oneLineConcept": "Work zone: obey workers directing traffic, even over a signal",
+  "explanation": "**Construction workers** have the **authority to direct traffic** in work zones. Follow their directions **even if they conflict** with a sign or signal. Watch closely for workers and moving equipment.\n\n**Wrong choices**\n- Go, because the green light controls traffic: In a work zone, the worker's directions come first, even over a signal.\n- Slow down but keep going if the lane looks clear: You must obey the worker's signal to stop.\n- Honk and drive around the worker: That puts the worker and you in danger and breaks the law.",
+  "frequency": 4,
+  "tags": [
+   "work zone",
+   "flagger"
+  ],
+  "distractorOrder": "1|3|4"
+ },
+ {
+  "subjectId": "signs",
+  "chapterId": "warning-signs",
+  "source": "predicted",
+  "level": "intermediate",
+  "stem": "What happens to fines for moving violations in Michigan work zones?",
+  "choices": [
+   "They are the same as anywhere else",
+   "They are doubled",
+   "They apply only to trucks",
+   "They are waived if no workers are present"
+  ],
+  "answer": 2,
+  "oneLineConcept": "Work zone moving violations: fines doubled",
+  "explanation": "**Fines are doubled** for all **moving violations** in work zones. Drivers caught **speeding** in a construction zone also get **more points** on their record.\n\n**Wrong choices**\n- They are the same as anywhere else: Michigan doubles fines for moving violations in work zones.\n- They apply only to trucks: The higher fines apply to all drivers.\n- They are waived if no workers are present: No such exception exists for the fine increase.",
+  "frequency": 3,
+  "tags": [
+   "work zone",
+   "fines"
+  ],
+  "distractorOrder": "1|4|3"
+ },
+ {
+  "subjectId": "signs",
+  "chapterId": "warning-signs",
+  "source": "predicted",
+  "level": "intermediate",
+  "stem": "Two lanes merge into one in a construction zone. How should you merge?",
+  "choices": [
+   "Follow the signs that show when and how to merge",
+   "Stay in the closing lane and push in at the last second",
+   "Always merge at the very first sign, no matter what",
+   "Use the shoulder to get past the merge"
+  ],
+  "answer": 1,
+  "oneLineConcept": "Work zone merge: follow the signs and workers",
+  "explanation": "When lanes merge in a construction zone, **barrels and signs** mark the merging lane. Projects use **different merge plans**, and they can change as work goes on, so **follow the signs**, lane markings, and any **workers' hand signals**.\n\n**Wrong choices**\n- Stay in the closing lane and push in at the last second: Forcing your way in is unsafe; follow the posted plan.\n- Always merge at the very first sign, no matter what: Projects use different merge plans, so the signs, not a fixed habit, tell you when.\n- Use the shoulder to get past the merge: Driving on the shoulder to pass is not allowed.",
+  "frequency": 4,
+  "tags": [
+   "work zone",
+   "merging"
+  ],
+  "distractorOrder": "3|2|4"
+ },
+ {
+  "subjectId": "signs",
+  "chapterId": "warning-signs",
+  "source": "predicted",
+  "level": "intermediate",
+  "stem": "A road maintenance vehicle ahead is showing flashing green lights. What should you do?",
+  "choices": [
+   "Stop and wait until the lights go off",
+   "Slow down and drive with caution",
+   "Go ahead at normal speed, since green means go",
+   "Pass quickly to get away from it"
+  ],
+  "answer": 2,
+  "oneLineConcept": "Green flashing lights on road crews: slow down, use caution",
+  "explanation": "State and local road agencies may add **flashing green lights** to maintenance vehicles. They are lit **only when road work is happening**. When you see them, **slow down and drive with caution**. Green was chosen because it can be seen from far away.\n\n**Wrong choices**\n- Stop and wait until the lights go off: You need to slow down and use caution, not stop.\n- Go ahead at normal speed, since green means go: On a maintenance vehicle, green lights mean road work is happening.\n- Pass quickly to get away from it: Speeding past road work is dangerous.",
+  "frequency": 3,
+  "tags": [
+   "maintenance vehicles"
+  ],
+  "distractorOrder": "3|1|4"
+ },
+ {
+  "subjectId": "signs",
+  "chapterId": "warning-signs",
+  "source": "predicted",
+  "level": "intermediate",
+  "stem": "A yellow diamond sign shows a car with wavy tire tracks behind it. What does it warn?",
+  "choices": [
+   "The road is closed to cars",
+   "A winding road with many curves is ahead",
+   "A car wash entrance is ahead",
+   "The road can become slippery when wet"
+  ],
+  "answer": 4,
+  "oneLineConcept": "Skidding car symbol: slippery when wet",
+  "explanation": "This is the **SLIPPERY WHEN WET** sign. The road surface can become **slippery in bad weather**, so **slow down** and drive carefully. Remember that roads are most slippery during the **first half hour** of rain.\n\n**Wrong choices**\n- The road is closed to cars: A closure is not a yellow diamond with a car symbol.\n- A winding road with many curves is ahead: Curve signs show a bending arrow or line, not a skidding car.\n- A car wash entrance is ahead: Warning signs are about road hazards, not businesses.",
+  "frequency": 3,
+  "tags": [
+   "slippery",
+   "warning signs"
+  ],
+  "distractorOrder": "2|1|3"
+ },
+ {
+  "subjectId": "signs",
+  "chapterId": "warning-signs",
+  "source": "predicted",
+  "level": "advanced",
+  "stem": "A warning sign says the right lane ends and you must merge left. You are in the right lane. What must you do?",
+  "choices": [
+   "Use the shoulder after your lane ends",
+   "Merge left and yield to traffic already in the left lane",
+   "Speed up and cut in, because left-lane drivers must let you in",
+   "Keep going; the left lane will merge into yours"
+  ],
+  "answer": 2,
+  "oneLineConcept": "Your lane ends: merge over and yield to the through lane",
+  "explanation": "When your **lane is ending**, you must **merge** into the next lane and **yield the right of way** to the traffic already in it. Adjust your speed early so you can merge safely.\n\n**Wrong choices**\n- Use the shoulder after your lane ends: Driving on the shoulder is not a way to get past a lane ending.\n- Speed up and cut in, because left-lane drivers must let you in: The driver whose lane ends is the one who must yield.\n- Keep going; the left lane will merge into yours: Your lane is the one ending, so you must move over.",
+  "frequency": 4,
+  "tags": [
+   "lane ends",
+   "merging"
+  ],
+  "distractorOrder": "3|4|1"
+ },
+ {
+  "subjectId": "signs",
+  "chapterId": "warning-signs",
+  "source": "predicted",
+  "level": "advanced",
+  "stem": "A railroad crossing has a crossbuck and a STOP sign, but no train is in sight. What must you do?",
+  "choices": [
+   "Slow down and cross if you see no train",
+   "Stop only if bells are ringing",
+   "Stop anyway, then cross only when you are sure no train is coming",
+   "Stop only if you are driving a bus or truck"
+  ],
+  "answer": 3,
+  "oneLineConcept": "STOP sign at the tracks: always stop, train or no train",
+  "explanation": "If there is a **STOP sign** at a railroad crossing, you **must stop** **whether or not a train is in sight**. Look both ways down the tracks and go only when **all tracks are clear**.\n\n**Wrong choices**\n- Slow down and cross if you see no train: A STOP sign at a crossing requires a full stop whether or not a train is visible.\n- Stop only if bells are ringing: This crossing has no bells; the STOP sign itself requires the stop.\n- Stop only if you are driving a bus or truck: The STOP sign applies to every driver.",
+  "frequency": 4,
+  "tags": [
+   "railroad",
+   "stop sign"
+  ],
+  "distractorOrder": "1|2|4"
+ },
+ {
+  "subjectId": "signs",
+  "chapterId": "warning-signs",
+  "source": "predicted",
+  "level": "advanced",
+  "stem": "What does a passive railroad crossing have?",
+  "choices": [
+   "Gates that work only at night",
+   "A crossing guard on duty at all times",
+   "Bells and lights but no signs",
+   "Signs and pavement markings, but no flashing lights or gates"
+  ],
+  "answer": 4,
+  "oneLineConcept": "Passive crossing: signs and markings only, no lights or gates",
+  "explanation": "A **passive** crossing has **no flashing lights or gates**. It uses **advance warning signs**, **pavement markings**, and **crossbucks**, sometimes with a YIELD or STOP sign. You must **look both ways** yourself and **yield to any train**.\n\n**Wrong choices**\n- Gates that work only at night: Gates make a crossing active, at any hour.\n- A crossing guard on duty at all times: Passive crossings rely on signs, not people.\n- Bells and lights but no signs: Bells and lights are active warnings.",
+  "frequency": 3,
+  "tags": [
+   "railroad",
+   "passive crossing"
+  ],
+  "distractorOrder": "1|2|3"
+ },
+ {
+  "subjectId": "signs",
+  "chapterId": "warning-signs",
+  "source": "predicted",
+  "level": "advanced",
+  "stem": "Which of these statements about Michigan work zones is NOT true?",
+  "choices": [
+   "Construction workers may direct traffic",
+   "Fines for moving violations are doubled",
+   "Speeding there can add more points to your record",
+   "You may ignore a worker's signal if the light is green"
+  ],
+  "answer": 4,
+  "oneLineConcept": "Workers' directions come first in a work zone",
+  "explanation": "Workers **may direct traffic**, and their directions must be followed **even if they conflict** with a signal. Fines for moving violations are **doubled**, and speeding there brings **more points**. So ignoring a worker because the light is green is **not true**.\n\n**Wrong choices**\n- Construction workers may direct traffic: This is true; workers have authority to direct traffic.\n- Fines for moving violations are doubled: This is true; work zone fines are doubled.\n- Speeding there can add more points to your record: This is true; work zone speeding brings increased points.",
+  "frequency": 3,
+  "tags": [
+   "work zone"
+  ],
+  "levelLock": true
+ },
+ {
+  "subjectId": "signs",
+  "chapterId": "guide-signs",
+  "source": "predicted",
+  "level": "basic",
+  "stem": "What do green signs give you?",
+  "choices": [
+   "Directions and guidance",
+   "Warnings about hazards",
+   "Traffic laws you must obey",
+   "Services such as gas and food"
+  ],
+  "answer": 1,
+  "oneLineConcept": "Green signs: directions and guidance",
+  "explanation": "**Green** stands for **directions and guidance**. Green signs tell you the way to towns, which **exit** to take, and how far you have to go.\n\n**Wrong choices**\n- Warnings about hazards: Warnings are yellow (or orange in work zones).\n- Traffic laws you must obey: Rule signs are white with black or red.\n- Services such as gas and food: Services are shown on blue signs.",
+  "frequency": 5,
+  "tags": [
+   "sign colors",
+   "guide signs"
+  ],
+  "distractorOrder": "4|2|3"
+ },
+ {
+  "subjectId": "signs",
+  "chapterId": "guide-signs",
+  "source": "predicted",
+  "level": "basic",
+  "stem": "What do blue signs show?",
+  "choices": [
+   "Directions to towns",
+   "Road construction ahead",
+   "Parks and historic sites",
+   "Services such as gas, food, lodging, and rest areas"
+  ],
+  "answer": 4,
+  "oneLineConcept": "Blue signs: services and hospitality",
+  "explanation": "**Blue** means **service or hospitality**. A blue sign with a gas pump shows **gas stations**, and other blue signs point to food, lodging, or **rest areas** with restrooms.\n\n**Wrong choices**\n- Directions to towns: Directions are on green signs.\n- Road construction ahead: Construction signs are orange.\n- Parks and historic sites: Those are on brown signs.",
+  "frequency": 4,
+  "tags": [
+   "sign colors",
+   "services"
+  ],
+  "distractorOrder": "1|3|2"
+ },
+ {
+  "subjectId": "signs",
+  "chapterId": "guide-signs",
+  "source": "predicted",
+  "level": "basic",
+  "stem": "What do brown signs point to?",
+  "choices": [
+   "Recreation and cultural places, such as parks",
+   "Detours around road work",
+   "Schools and crosswalks",
+   "Hospitals and police stations"
+  ],
+  "answer": 1,
+  "oneLineConcept": "Brown signs: recreation and cultural interest",
+  "explanation": "**Brown** signs tell you about places of **recreation or cultural interest**, such as a **national park**, a campground, or a historic site.\n\n**Wrong choices**\n- Detours around road work: Detour and work zone signs are orange.\n- Schools and crosswalks: School signs are fluorescent yellow-green.\n- Hospitals and police stations: Services like these are shown in blue.",
+  "frequency": 4,
+  "tags": [
+   "sign colors",
+   "recreation"
+  ],
+  "distractorOrder": "4|2|3"
+ },
+ {
+  "subjectId": "signs",
+  "chapterId": "guide-signs",
+  "source": "predicted",
+  "level": "basic",
+  "stem": "A blue sign shows a gas pump symbol. What does it tell you?",
+  "choices": [
+   "A fuel spill is on the road ahead",
+   "Gas stations are available nearby",
+   "A truck weigh station is ahead",
+   "Fueling is not allowed here"
+  ],
+  "answer": 2,
+  "oneLineConcept": "Blue gas pump sign: gas station nearby",
+  "explanation": "A **blue** sign is a **service** sign. The **gas pump** symbol tells you where to find a **gas station**, usually at the next exit.\n\n**Wrong choices**\n- A fuel spill is on the road ahead: Hazards are shown on yellow or pink signs, not blue.\n- A truck weigh station is ahead: The symbol shows a fuel pump for drivers' use.\n- Fueling is not allowed here: A ban would use a red circle and slash.",
+  "frequency": 3,
+  "tags": [
+   "services"
+  ],
+  "distractorOrder": "1|4|3"
+ },
+ {
+  "subjectId": "signs",
+  "chapterId": "guide-signs",
+  "source": "predicted",
+  "level": "basic",
+  "stem": "What kind of road is marked by an Interstate route marker?",
+  "choices": [
+   "A freeway in the Interstate highway system",
+   "A road inside a state park",
+   "A local city street",
+   "A county road"
+  ],
+  "answer": 1,
+  "oneLineConcept": "Interstate marker: an Interstate freeway",
+  "explanation": "Route markers identify **federal, state, and county** road systems. The **Interstate** marker shows that the road is an **Interstate freeway**. U.S. highways, Michigan state highways, and county roads each have **their own marker**.\n\n**Wrong choices**\n- A road inside a state park: Park roads are not marked with Interstate shields.\n- A local city street: City streets use street-name signs.\n- A county road: County roads have their own county route marker.",
+  "frequency": 4,
+  "tags": [
+   "route markers"
+  ],
+  "distractorOrder": "4|2|3"
+ },
+ {
+  "subjectId": "signs",
+  "chapterId": "guide-signs",
+  "source": "predicted",
+  "level": "basic",
+  "stem": "Michigan state highways are numbered with which letter in front, as in the route marker for highway 32?",
+  "choices": [
+   "US (US-32)",
+   "H (H-32)",
+   "M (M-32)",
+   "S (S-32)"
+  ],
+  "answer": 3,
+  "oneLineConcept": "Michigan state highways: M- numbers, like M-32",
+  "explanation": "Michigan's **state highways** carry the letter **M**, such as **M-32**, on the **state route marker**. U.S. highways and Interstate freeways use **different markers**.\n\n**Wrong choices**\n- US (US-32): US is used for U.S. highways, which are federal routes with their own marker.\n- H (H-32): Michigan does not use H for its state highways.\n- S (S-32): Michigan does not use S for its state highways.",
+  "frequency": 3,
+  "tags": [
+   "route markers",
+   "state highways"
+  ],
+  "distractorOrder": "1|4|2"
+ },
+ {
+  "subjectId": "signs",
+  "chapterId": "guide-signs",
+  "source": "predicted",
+  "level": "intermediate",
+  "stem": "Route markers are used for which road systems?",
+  "choices": [
+   "Only state highways",
+   "Federal, state, and county roads",
+   "Only county roads",
+   "Only Interstate and U.S. highways; state and county roads use street-name signs"
+  ],
+  "answer": 2,
+  "oneLineConcept": "Route markers: federal, state, and county roads",
+  "explanation": "There are **route markers** for **federal, state, and county** road systems: the **Interstate**, **U.S. highway**, **state highway**, and **county route** markers. Each has its own design so you can tell what kind of road you are on.\n\n**Wrong choices**\n- Only state highways: Federal and county routes also have markers.\n- Only county roads: Federal and state routes also have markers.\n- Only Interstate and U.S. highways; state and county roads use street-name signs: State highways and county roads have route markers too.",
+  "frequency": 3,
+  "tags": [
+   "route markers"
+  ],
+  "distractorOrder": "4|1|3"
+ },
+ {
+  "subjectId": "signs",
+  "chapterId": "guide-signs",
+  "source": "predicted",
+  "level": "intermediate",
+  "stem": "A blue sign at a railroad crossing lists a phone number and a crossing ID number. When should you use it?",
+  "choices": [
+   "To tell the railroad about a vehicle stuck on the tracks or a broken crossing signal",
+   "To ask the railroad for driving directions",
+   "To buy passenger train tickets",
+   "To report a parking problem near the station"
+  ],
+  "answer": 1,
+  "oneLineConcept": "Blue ENS sign: call the railroad about crossing emergencies",
+  "explanation": "The blue **Emergency Notification System (ENS)** sign gives a **phone number** and the crossing's **ID number**. Use it to tell the railroad about an **emergency** or a **warning device that is not working**, such as a car stuck on the tracks. Railroad officials may be able to slow or stop trains.\n\n**Wrong choices**\n- To ask the railroad for driving directions: The sign is for emergencies and signal problems only.\n- To buy passenger train tickets: It is an emergency notification sign, not a ticket line.\n- To report a parking problem near the station: It is for emergencies at the crossing.",
+  "frequency": 4,
+  "tags": [
+   "railroad",
+   "emergency notification"
+  ],
+  "distractorOrder": "2|3|4"
+ },
+ {
+  "subjectId": "signs",
+  "chapterId": "guide-signs",
+  "source": "predicted",
+  "level": "intermediate",
+  "stem": "You are getting off a freeway at an exit. When should you start to slow down?",
+  "choices": [
+   "After you are fully in the deceleration (exit) lane",
+   "Only after you reach the bottom of the ramp",
+   "On the freeway, before you move into the exit lane",
+   "After you stop on the shoulder to read the signs"
+  ],
+  "answer": 1,
+  "oneLineConcept": "Exiting: slow down only once you are in the exit lane",
+  "explanation": "Watch the **exit signs** for the lane to use and **signal early**. **Avoid slowing down on the freeway.** Wait until you are **fully in the deceleration lane**, then slow down gradually.\n\n**Wrong choices**\n- Only after you reach the bottom of the ramp: Many ramps have sharp curves, so you need to slow down in the exit lane.\n- On the freeway, before you move into the exit lane: Slowing on the freeway itself can cause a rear-end crash.\n- After you stop on the shoulder to read the signs: Never stop on a freeway except in an emergency.",
+  "frequency": 4,
+  "tags": [
+   "freeway exits"
+  ],
+  "distractorOrder": "3|2|4"
+ },
+ {
+  "subjectId": "signs",
+  "chapterId": "guide-signs",
+  "source": "predicted",
+  "level": "intermediate",
+  "stem": "A sign on a freeway exit ramp shows a speed of 25 mph. Why should you follow it?",
+  "choices": [
+   "It applies only to trucks",
+   "It applies only when the ramp is wet",
+   "It is the minimum speed on the ramp",
+   "Many ramps have sharp curves, and that speed is the safe limit for the ramp"
+  ],
+  "answer": 4,
+  "oneLineConcept": "Obey the posted exit ramp speed; ramps can curve sharply",
+  "explanation": "**Exit ramps** often have **sharp curves**. The posted **exit ramp speed** tells you how fast you can safely take the ramp. Slow down to it in the **deceleration lane**.\n\n**Wrong choices**\n- It applies only to trucks: The ramp speed applies to all vehicles.\n- It applies only when the ramp is wet: The ramp speed applies in all conditions.\n- It is the minimum speed on the ramp: It is the top safe speed for the ramp, not a minimum.",
+  "frequency": 3,
+  "tags": [
+   "freeway exits",
+   "ramp speed"
+  ],
+  "distractorOrder": "1|3|2"
+ },
+ {
+  "subjectId": "signs",
+  "chapterId": "guide-signs",
+  "source": "predicted",
+  "level": "advanced",
+  "stem": "A freeway lane is marked as an HOV lane during rush hour. Who may use it during those hours?",
+  "choices": [
+   "Only buses and taxis",
+   "Vehicles with two or more people inside, and motorcycles",
+   "Any vehicle at any time",
+   "Only vehicles with three or more people"
+  ],
+  "answer": 2,
+  "oneLineConcept": "HOV lane hours: 2+ occupants; motorcycles any time",
+  "explanation": "**High Occupancy Vehicle (HOV)** lanes are used during **peak hours** such as rush hour. During those hours a vehicle needs **two or more occupants**. **Motorcycles** may use them **at any time**, and outside the posted hours **everyone** may use them.\n\n**Wrong choices**\n- Only buses and taxis: Any vehicle with two or more occupants may use it.\n- Any vehicle at any time: During its hours the lane is limited; it opens to all only outside those hours.\n- Only vehicles with three or more people: Michigan HOV lanes need two or more occupants.",
+  "frequency": 3,
+  "tags": [
+   "HOV lanes"
+  ],
+  "distractorOrder": "4|3|1"
+ },
+ {
+  "subjectId": "signs",
+  "chapterId": "guide-signs",
+  "source": "predicted",
+  "level": "advanced",
+  "stem": "Which pairing of sign color and meaning is NOT correct?",
+  "choices": [
+   "Green: directions",
+   "Blue: services",
+   "Brown: recreation",
+   "Orange: school zones"
+  ],
+  "answer": 4,
+  "oneLineConcept": "Orange is construction; school signs are yellow-green",
+  "explanation": "**Green** gives directions, **blue** shows services, and **brown** marks recreation and cultural sites. **Orange** is for **construction and maintenance**, not schools. School signs are **fluorescent yellow-green**.\n\n**Wrong choices**\n- Green: directions: This pairing is correct.\n- Blue: services: This pairing is correct.\n- Brown: recreation: This pairing is correct.",
+  "frequency": 3,
+  "tags": [
+   "sign colors"
+  ],
+  "levelLock": true
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "signals-markings",
+  "source": "predicted",
+  "level": "basic",
+  "stem": "On a Michigan traffic signal, where is the red light?",
+  "choices": [
+   "It changes from signal to signal",
+   "In the middle",
+   "At the bottom",
+   "At the top"
+  ],
+  "answer": 4,
+  "oneLineConcept": "Red light is at the top of the signal",
+  "explanation": "**Red** is at the **top** of a traffic signal in Michigan. Red means **stop** behind the crosswalk or stop line.\n\n**Wrong choices**\n- It changes from signal to signal: Red is at the top of traffic signals in Michigan.\n- In the middle: In Michigan the red light is at the top, not the middle.\n- At the bottom: In Michigan the red light is at the top, not the bottom.",
+  "frequency": 4,
+  "tags": [
+   "traffic signals"
+  ],
+  "distractorOrder": "3|2|1"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "signals-markings",
+  "source": "predicted",
+  "level": "basic",
+  "stem": "What does a steady yellow light mean?",
+  "choices": [
+   "The light is about to turn red; stop if you can do so safely",
+   "Speed up to get through before it turns red",
+   "Stop only if a police officer is present",
+   "Keep going; yellow is part of the green phase"
+  ],
+  "answer": 1,
+  "oneLineConcept": "Steady yellow: red is next; stop if you safely can",
+  "explanation": "A **steady yellow** light means the signal is **about to turn red**. You are **required to stop** if you can do it safely. If you cannot stop safely, **do not speed up**; drive cautiously through the intersection.\n\n**Wrong choices**\n- Speed up to get through before it turns red: Speeding up on yellow is unsafe. Stop if you can, or go through carefully if you cannot stop safely.\n- Stop only if a police officer is present: The rule applies whether or not police are there.\n- Keep going; yellow is part of the green phase: Yellow warns that red is coming, and you are required to stop if you safely can.",
+  "frequency": 5,
+  "tags": [
+   "traffic signals",
+   "yellow light"
+  ],
+  "distractorOrder": "2|4|3"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "signals-markings",
+  "source": "predicted",
+  "level": "basic",
+  "stem": "Which signal must you treat the same way as a STOP sign?",
+  "choices": [
+   "A steady yellow arrow",
+   "A flashing yellow light",
+   "A flashing red light",
+   "A steady green arrow"
+  ],
+  "answer": 3,
+  "oneLineConcept": "Flashing red = STOP sign: full stop, go when clear",
+  "explanation": "A **flashing red** light means come to a **full stop**, then **go when the road is clear**, just as at a **STOP sign**.\n\n**Wrong choices**\n- A steady yellow arrow: A yellow arrow warns that red is coming.\n- A flashing yellow light: Flashing yellow means go ahead carefully; no stop is required.\n- A steady green arrow: A green arrow lets you go in its direction.",
+  "frequency": 5,
+  "tags": [
+   "flashing red"
+  ],
+  "distractorOrder": "2|4|1"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "signals-markings",
+  "source": "predicted",
+  "level": "basic",
+  "stem": "Your light at an intersection is flashing yellow. What should you do?",
+  "choices": [
+   "Go ahead carefully, checking traffic in both directions",
+   "Speed up, because red is coming next",
+   "Turn around, because the intersection is closed",
+   "Stop and wait for the light to turn green"
+  ],
+  "answer": 1,
+  "oneLineConcept": "Flashing yellow: slow down and go carefully",
+  "explanation": "A **flashing yellow** light means **proceed carefully** through the intersection. **Scan across traffic in both directions** and be ready to yield.\n\n**Wrong choices**\n- Speed up, because red is coming next: Flashing yellow is not about to change; it means go with care.\n- Turn around, because the intersection is closed: The intersection is open; you just need to be careful.\n- Stop and wait for the light to turn green: Flashing yellow does not require a stop; it calls for care.",
+  "frequency": 5,
+  "tags": [
+   "flashing yellow"
+  ],
+  "distractorOrder": "4|2|3"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "signals-markings",
+  "source": "predicted",
+  "level": "basic",
+  "stem": "White lines on the road separate what?",
+  "choices": [
+   "Freeways from local streets",
+   "Lanes of traffic going in the same direction",
+   "Traffic going in opposite directions",
+   "The left edge of a one-way road"
+  ],
+  "answer": 2,
+  "oneLineConcept": "White lines: lanes going the same way",
+  "explanation": "**White lines** separate **lanes moving in the same direction**. A **solid white line** also marks the **right edge** of the road.\n\n**Wrong choices**\n- Freeways from local streets: Lane lines do not separate road types.\n- Traffic going in opposite directions: That is the job of yellow lines.\n- The left edge of a one-way road: On a one-way road or divided highway, the left edge is marked with a solid yellow line.",
+  "frequency": 5,
+  "tags": [
+   "pavement markings",
+   "white lines"
+  ],
+  "distractorOrder": "3|1|4"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "signals-markings",
+  "source": "predicted",
+  "level": "basic",
+  "stem": "Yellow lines on the road separate what?",
+  "choices": [
+   "Lanes going in the same direction",
+   "Traffic going in opposite directions",
+   "Parking spaces from traffic lanes",
+   "Bicycle lanes from car lanes"
+  ],
+  "answer": 2,
+  "oneLineConcept": "Yellow lines: traffic going opposite ways",
+  "explanation": "**Yellow lines** separate traffic moving in **opposite directions**. They can be **solid**, **broken**, or mark a **center turn lane**. On a one-way road or divided highway, a solid yellow line marks the **left edge**.\n\n**Wrong choices**\n- Lanes going in the same direction: Same-direction lanes are separated by white lines.\n- Parking spaces from traffic lanes: That is not the purpose of yellow center lines.\n- Bicycle lanes from car lanes: Bike lanes use their own markings and signs.",
+  "frequency": 5,
+  "tags": [
+   "pavement markings",
+   "yellow lines"
+  ],
+  "distractorOrder": "1|3|4"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "signals-markings",
+  "source": "predicted",
+  "level": "basic",
+  "stem": "The lit arrow on this left-turn signal is flashing. What may you do?",
+  "choices": [
+   "Turn left after yielding to oncoming traffic and pedestrians",
+   "Turn left freely, because oncoming traffic is stopped",
+   "Go straight only",
+   "Stop; left turns are not allowed now"
+  ],
+  "answer": 1,
+  "oneLineConcept": "Flashing yellow arrow: turn left only after yielding",
+  "explanation": "With a **flashing yellow arrow**, you may **turn left** when **oncoming traffic, which has a green light, is clear**. Make sure there is a **safe gap** and **no pedestrians or bicyclists** crossing before you turn.\n\n**Wrong choices**\n- Turn left freely, because oncoming traffic is stopped: That is what a solid green arrow means. With a flashing yellow arrow, oncoming traffic has a green light.\n- Go straight only: This signal head controls left turns.\n- Stop; left turns are not allowed now: A solid red arrow means stop. A flashing yellow arrow allows the turn after yielding.",
+  "frequency": 5,
+  "tags": [
+   "flashing yellow arrow",
+   "left turns"
+  ],
+  "distractorOrder": "2|4|3",
+  "image": "flashing-yellow-arrow.svg",
+  "imageAlt": "A vertical traffic signal with four round lenses, each with a left-pointing arrow. From top to bottom the arrows are red, yellow, yellow, and green. Only the third lens, a yellow arrow, is lit, with short lines around it showing that it is flashing.",
+  "imageSource": {
+   "kind": "self"
+  }
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "signals-markings",
+  "source": "predicted",
+  "level": "basic",
+  "stem": "What is the center lane in this picture used for?",
+  "choices": [
+   "Merging into traffic from a side street to wait",
+   "Left turns, by traffic from either direction",
+   "Parking for deliveries",
+   "Passing slower vehicles"
+  ],
+  "answer": 2,
+  "oneLineConcept": "Center left-turn lane: only for left turns, both directions",
+  "explanation": "A **left turn only center lane** is marked by a **solid yellow line on each outside edge** and **broken yellow lines on the inside edges**. Drivers from **either direction** use it only to **turn left**. Using it to **pass** or as a **merge lane** is **illegal**.\n\n**Wrong choices**\n- Merging into traffic from a side street to wait: Using this lane as a merge lane is illegal.\n- Parking for deliveries: This is a turn lane, not a parking space.\n- Passing slower vehicles: Using this lane to pass is illegal and dangerous.",
+  "frequency": 4,
+  "tags": [
+   "center turn lane"
+  ],
+  "distractorOrder": "4|1|3",
+  "image": "center-left-turn-lane.svg",
+  "imageAlt": "Top view of a road with one lane each way and a middle lane. Each edge of the middle lane has a solid yellow line on the outside and a broken yellow line on the inside. Two white curved arrows in the middle lane face opposite directions, each bending to one side. A car is in each outer lane.",
+  "imageSource": {
+   "kind": "self"
+  }
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "signals-markings",
+  "source": "predicted",
+  "level": "intermediate",
+  "stem": "You are the car labeled YOU and want to go north on Highway B. Left turns are not allowed at the intersection. How do you make this turn?",
+  "choices": [
+   "Turn right onto Highway B, then make a U-turn on Highway B",
+   "Make a U-turn in the middle of the intersection",
+   "Turn left from Highway A at the intersection when it is clear",
+   "Go straight through, turn left into the median crossover, then turn right onto Highway B"
+  ],
+  "answer": 4,
+  "oneLineConcept": "Michigan Left: go past, U-turn at crossover, then turn right",
+  "explanation": "A **Michigan Left** (indirect left turn) replaces the normal left turn. Traffic on Highway A **continues past the intersection**, turns **left into the median crossover**, then, when traffic clears, turns left onto Highway A going back and **turns right onto Highway B**.\n\n**Wrong choices**\n- Turn right onto Highway B, then make a U-turn on Highway B: Highway B has no median crossover here. For traffic on Highway A, the crossover is on Highway A past the intersection.\n- Make a U-turn in the middle of the intersection: That is also a left movement at the intersection and is not allowed.\n- Turn left from Highway A at the intersection when it is clear: The sign prohibits a direct left turn there.",
+  "frequency": 5,
+  "tags": [
+   "michigan left"
+  ],
+  "distractorOrder": "3|1|2",
+  "image": "michigan-left.svg",
+  "imageAlt": "Top view, north up. Divided Highway A runs left to right with a grass median; two-way Highway B crosses it. A car labeled YOU moves right in the lower roadway, before the intersection. A no-left-turn sign is at the intersection. Past it, a median crossover links both sides of Highway A.",
+  "imageSource": {
+   "kind": "self"
+  }
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "signals-markings",
+  "source": "predicted",
+  "level": "intermediate",
+  "stem": "What does a single broken yellow center line on a two-way road mean?",
+  "choices": [
+   "Both lanes go the same direction",
+   "You may pass when it is safe to do so",
+   "No passing in either direction",
+   "It marks the right edge of the road"
+  ],
+  "answer": 2,
+  "oneLineConcept": "Broken yellow center line: passing allowed when safe",
+  "explanation": "A **single broken yellow line** usually marks the **center** of a **two-way** road where a vehicle **may pass if it is safe**. Check that the left lane is clear far enough ahead before passing.\n\n**Wrong choices**\n- Both lanes go the same direction: Same-direction lanes use white lines.\n- No passing in either direction: That is a double solid yellow line.\n- It marks the right edge of the road: The right edge is marked with a solid white line.",
+  "frequency": 4,
+  "tags": [
+   "yellow lines",
+   "passing"
+  ],
+  "distractorOrder": "3|1|4"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "signals-markings",
+  "source": "predicted",
+  "level": "intermediate",
+  "stem": "The center line has a solid yellow line on your side and a broken yellow line on the other side. May you pass?",
+  "choices": [
+   "Yes, if no oncoming traffic is in sight",
+   "Yes, but only to pass a bicycle",
+   "No, you may not cross the line to pass",
+   "Yes, because the broken line applies to both lanes"
+  ],
+  "answer": 3,
+  "oneLineConcept": "Solid yellow on your side: do not cross it to pass",
+  "explanation": "If a **solid yellow line** is on **your side** of the center line, **do not cross it to pass**. Drivers on the side with the **broken** line may pass when it is safe.\n\n**Wrong choices**\n- Yes, if no oncoming traffic is in sight: A solid yellow line on your side forbids passing even when the road looks clear.\n- Yes, but only to pass a bicycle: This question is about passing a vehicle across the line; the solid line on your side means do not pass.\n- Yes, because the broken line applies to both lanes: The broken line applies to drivers on the other side only.",
+  "frequency": 5,
+  "tags": [
+   "yellow lines",
+   "no passing"
+  ],
+  "distractorOrder": "1|4|2"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "signals-markings",
+  "source": "predicted",
+  "level": "intermediate",
+  "stem": "What does a double solid white line between two lanes mean?",
+  "choices": [
+   "It marks the edge of a bicycle lane",
+   "You may cross it with care to change lanes",
+   "Traffic on each side goes opposite ways, and passing is not allowed",
+   "Traffic on both sides goes the same way, but you may not cross the line"
+  ],
+  "answer": 4,
+  "oneLineConcept": "Double solid white: same direction, no crossing",
+  "explanation": "A **double solid white line** shows a travel path where traffic goes the **same direction on both sides**, but **crossing the line is prohibited**. Stay in your lane until the line ends.\n\n**Wrong choices**\n- It marks the edge of a bicycle lane: Bike lanes use their own markings and signs.\n- You may cross it with care to change lanes: Crossing a double solid white line is prohibited.\n- Traffic on each side goes opposite ways, and passing is not allowed: Opposite-direction traffic is separated by yellow lines, not white.",
+  "frequency": 3,
+  "tags": [
+   "white lines"
+  ],
+  "distractorOrder": "3|2|1"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "signals-markings",
+  "source": "predicted",
+  "level": "intermediate",
+  "stem": "What does a steady green arrow mean?",
+  "choices": [
+   "The arrow is about to change; stop",
+   "Oncoming traffic is stopped; go in the arrow's direction, still yielding to pedestrians",
+   "Turn only if no cars are behind you",
+   "Yield to oncoming traffic before turning"
+  ],
+  "answer": 2,
+  "oneLineConcept": "Steady green arrow: protected turn; still yield to pedestrians",
+  "explanation": "A **steady green arrow** means traffic **coming toward you is stopped**. This is a **protected turn**. You may go in the **arrow's direction** with caution, but you must still **yield to pedestrians** in the intersection.\n\n**Wrong choices**\n- The arrow is about to change; stop: A yellow arrow warns of a change, not a green one.\n- Turn only if no cars are behind you: Cars behind you do not affect the arrow's meaning.\n- Yield to oncoming traffic before turning: That describes a flashing yellow arrow. With a steady green arrow, oncoming traffic is stopped.",
+  "frequency": 4,
+  "tags": [
+   "green arrow"
+  ],
+  "distractorOrder": "4|1|3"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "signals-markings",
+  "source": "predicted",
+  "level": "intermediate",
+  "stem": "Your light turns green, but a pedestrian who started on the WALK signal is still in the crosswalk. What should you do?",
+  "choices": [
+   "Honk to hurry the pedestrian",
+   "Drive slowly around the pedestrian",
+   "Wait and let the pedestrian finish crossing",
+   "Go, because the green light gives you the right of way"
+  ],
+  "answer": 3,
+  "oneLineConcept": "Pedestrian still in crosswalk: wait, even on green",
+  "explanation": "When the **WALK** signal starts **flashing**, people already in the crosswalk should **finish crossing**. As a driver, you must **yield to pedestrians in the crosswalk**, **even when your light is green**.\n\n**Wrong choices**\n- Honk to hurry the pedestrian: Honking can startle people and does not give you the right to go.\n- Drive slowly around the pedestrian: You must wait until the crosswalk is clear.\n- Go, because the green light gives you the right of way: Drivers must yield to pedestrians in the crosswalk even on a green light.",
+  "frequency": 4,
+  "tags": [
+   "pedestrian signals"
+  ],
+  "distractorOrder": "4|1|2"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "signals-markings",
+  "source": "predicted",
+  "level": "advanced",
+  "stem": "At a five-section (doghouse) signal, only the green ball is lit, not the green arrow. You want to turn left. What may you do?",
+  "choices": [
+   "Wait; you may turn only when the green arrow comes on",
+   "Turn right instead; left turns are closed",
+   "Turn left once oncoming traffic has cleared",
+   "Turn left right away; oncoming traffic is stopped"
+  ],
+  "answer": 3,
+  "oneLineConcept": "Doghouse green ball: turn after oncoming traffic clears",
+  "explanation": "The **5-section-head** or **doghouse** signal has red, yellow, and green lights plus a yellow and a green **turn arrow**. A **green arrow** gives a **protected turn**. With only the **green light**, you may complete your turn **when oncoming traffic has cleared**.\n\n**Wrong choices**\n- Wait; you may turn only when the green arrow comes on: A green light lets you turn after oncoming traffic clears.\n- Turn right instead; left turns are closed: Left turns are allowed after yielding.\n- Turn left right away; oncoming traffic is stopped: That is true only when the green arrow is lit.",
+  "frequency": 3,
+  "tags": [
+   "doghouse signal",
+   "left turns"
+  ],
+  "distractorOrder": "4|1|2"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "signals-markings",
+  "source": "predicted",
+  "level": "advanced",
+  "stem": "On a flashing yellow arrow signal, the solid yellow arrow comes on while you are already in the intersection waiting to turn left, and no conflicting traffic is present. What should you do?",
+  "choices": [
+   "Go straight instead of turning",
+   "Stop and wait in the intersection for the next cycle",
+   "Back up behind the stop line",
+   "Complete your left turn"
+  ],
+  "answer": 4,
+  "oneLineConcept": "Solid yellow arrow while in the intersection: finish the turn",
+  "explanation": "A **solid yellow arrow** warns that the left-turn signal is **about to turn red**. If you are **approaching**, you must stop. If you are **already in the intersection** and there is **no conflicting traffic**, you may **complete your left turn**.\n\n**Wrong choices**\n- Go straight instead of turning: Changing your path at the last moment can confuse other drivers.\n- Stop and wait in the intersection for the next cycle: If you are already in the intersection and it is clear, you should finish the turn.\n- Back up behind the stop line: Backing up in an intersection is dangerous.",
+  "frequency": 3,
+  "tags": [
+   "flashing yellow arrow",
+   "yellow arrow"
+  ],
+  "distractorOrder": "2|3|1"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "signals-markings",
+  "source": "predicted",
+  "level": "advanced",
+  "stem": "A traffic signal is not working and no officer is directing traffic. What should you do?",
+  "choices": [
+   "Stop fully, yield to vehicles already there, and yield to the vehicle on your right if you arrive together",
+   "Treat it like a flashing yellow and go carefully",
+   "Cut through a corner parking lot to avoid the intersection",
+   "Go if you are on the busier road"
+  ],
+  "answer": 1,
+  "oneLineConcept": "Signal out: full stop, yield, car on the right goes first",
+  "explanation": "If a traffic signal is **not working** and no officer is present, **come to a complete stop** and **yield to vehicles already at the intersection**. If you arrive **at the same time**, yield to the vehicle **on your right**.\n\n**Wrong choices**\n- Treat it like a flashing yellow and go carefully: A dead signal calls for a full stop, not just caution.\n- Cut through a corner parking lot to avoid the intersection: It is illegal to drive across private or public property to avoid a traffic control device.\n- Go if you are on the busier road: The busier road does not get the right of way.",
+  "frequency": 4,
+  "tags": [
+   "signal not working"
+  ],
+  "distractorOrder": "2|4|3"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "signals-markings",
+  "source": "predicted",
+  "level": "advanced",
+  "stem": "Which of the following is illegal to do in a bicycle lane?",
+  "choices": [
+   "Drive in it to pass slower cars",
+   "Use it as a right-turn lane",
+   "Park in it to make a delivery",
+   "All of the above"
+  ],
+  "answer": 4,
+  "oneLineConcept": "Bike lanes: no driving, passing, right turns, or parking",
+  "explanation": "A **bicycle lane** is **reserved for bicyclists**. It is **illegal** to use it for **driving, passing, making right turns, parking**, or as a **pull-over** to wait or make a delivery. A **green** bike lane marks a likely **conflict point**, so take extra care when turning.\n\n**Wrong choices**\n- Drive in it to pass slower cars: This is illegal, but it is not the only illegal choice.\n- Use it as a right-turn lane: This is illegal, but it is not the only illegal choice.\n- Park in it to make a delivery: This is illegal, but it is not the only illegal choice.",
+  "frequency": 3,
+  "tags": [
+   "bicycle lanes"
+  ],
+  "levelLock": true
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "right-of-way",
+  "source": "predicted",
+  "level": "basic",
+  "stem": "When must you stop for a school bus?",
+  "choices": [
+   "Whenever the bus is slowing down",
+   "When its red overhead lights are flashing",
+   "When its yellow hazard lights are flashing",
+   "Only when you can see children near the bus"
+  ],
+  "answer": 2,
+  "oneLineConcept": "School bus red lights flashing: stop",
+  "explanation": "**Flashing red overhead lights** mean the bus is **picking up or dropping off** passengers. **Stop** and stay stopped until the red lights **turn off** or the bus moves again. **Flashing yellow overhead lights** mean **be prepared to stop**.\n\n**Wrong choices**\n- Whenever the bus is slowing down: A slowing bus alone does not require a stop.\n- When its yellow hazard lights are flashing: Yellow hazard lights mean go ahead with caution.\n- Only when you can see children near the bus: You must stop for the red lights whether or not you see children.",
+  "frequency": 5,
+  "tags": [
+   "school bus"
+  ],
+  "distractorOrder": "3|4|1"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "right-of-way",
+  "source": "predicted",
+  "level": "basic",
+  "stem": "How far from a school bus with flashing red lights must you stop?",
+  "choices": [
+   "At least 10 feet",
+   "At least 100 feet",
+   "At least 20 feet",
+   "At least 5 feet"
+  ],
+  "answer": 3,
+  "oneLineConcept": "Stop at least 20 feet from a bus with red lights",
+  "explanation": "Stop **at least 20 feet** from a school bus with its **red overhead lights flashing**. Children may dart into the street, so stay alert. Fines for not stopping are **double** the normal amount.\n\n**Wrong choices**\n- At least 10 feet: Michigan requires at least 20 feet.\n- At least 100 feet: The legal minimum is 20 feet.\n- At least 5 feet: That is far too close; the law says 20 feet.",
+  "frequency": 5,
+  "tags": [
+   "school bus",
+   "distance"
+  ],
+  "distractorOrder": "1|4|2"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "right-of-way",
+  "source": "predicted",
+  "level": "basic",
+  "stem": "An ambulance with flashing lights and siren comes up behind you. What should you do?",
+  "choices": [
+   "Speed up to stay ahead of it",
+   "Pull over to the right edge of the road, clear of intersections, and stop",
+   "Stop right where you are, even in an intersection",
+   "Keep driving at the same speed"
+  ],
+  "answer": 2,
+  "oneLineConcept": "Siren and lights: pull right, clear of intersections, stop",
+  "explanation": "When an emergency vehicle approaches with **lights and siren**, **pull over to the right edge** of the road, **clear of intersections**, and **stop** until it passes. Keep a foot on the brake so its driver sees your brake lights, and watch for **more than one** emergency vehicle.\n\n**Wrong choices**\n- Speed up to stay ahead of it: You must get out of its way, not race it.\n- Stop right where you are, even in an intersection: Stopping inside an intersection can block the ambulance.\n- Keep driving at the same speed: You must yield the right of way and stop.",
+  "frequency": 5,
+  "tags": [
+   "emergency vehicles"
+  ],
+  "distractorOrder": "3|1|4"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "right-of-way",
+  "source": "predicted",
+  "level": "basic",
+  "stem": "When must you yield to a pedestrian in a marked crosswalk?",
+  "choices": [
+   "Only when your light is red",
+   "Only if the crosswalk is at an intersection",
+   "Only if the pedestrian is a child",
+   "Always, even if your light is green"
+  ],
+  "answer": 4,
+  "oneLineConcept": "Pedestrians in a crosswalk: yield, even on green",
+  "explanation": "You must **yield to pedestrians** in a **marked crosswalk**, at an intersection or **midblock**, **even if your light is green**. Take extra care around children, older people, and people with disabilities.\n\n**Wrong choices**\n- Only when your light is red: You must yield even on green.\n- Only if the crosswalk is at an intersection: You must also yield at marked midblock crosswalks.\n- Only if the pedestrian is a child: You must yield to all pedestrians in the crosswalk.",
+  "frequency": 5,
+  "tags": [
+   "pedestrians",
+   "crosswalk"
+  ],
+  "distractorOrder": "1|3|2"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "right-of-way",
+  "source": "predicted",
+  "level": "basic",
+  "stem": "You are turning left on a green light. Whom must you yield to?",
+  "choices": [
+   "Only vehicles behind you",
+   "No one, because your light is green",
+   "Oncoming traffic",
+   "Only trucks and buses"
+  ],
+  "answer": 3,
+  "oneLineConcept": "Left turn on green: yield to oncoming traffic",
+  "explanation": "Drivers **turning left** must **yield to oncoming traffic**, including on a **green light**. Wait until **all oncoming traffic has cleared**. Watch especially for **motorcycles and bicycles**, whose speed is easy to misjudge.\n\n**Wrong choices**\n- Only vehicles behind you: The danger is from oncoming vehicles, not ones behind.\n- No one, because your light is green: A green light does not give a left-turning driver the right of way over oncoming traffic.\n- Only trucks and buses: You must yield to all oncoming traffic.",
+  "frequency": 5,
+  "tags": [
+   "left turns"
+  ],
+  "distractorOrder": "2|1|4"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "right-of-way",
+  "source": "predicted",
+  "level": "basic",
+  "stem": "As a driver, to whom must you yield?",
+  "choices": [
+   "A pedestrian using a white cane or guide dog",
+   "A pedestrian crossing from a driveway or alley",
+   "A pedestrian who entered the crosswalk before the signal changed",
+   "All of the above"
+  ],
+  "answer": 4,
+  "oneLineConcept": "Yield to pedestrians in all of these situations",
+  "explanation": "Michigan law requires you to **yield** to a pedestrian with a **white cane or guide dog**, to a pedestrian crossing from an **alley, driveway, building, or private road**, and to one who **entered the crosswalk before the signal changed**. Avoid honking or revving near people who are blind.\n\n**Wrong choices**\n- A pedestrian using a white cane or guide dog: You must yield here, but this is not the only correct situation.\n- A pedestrian crossing from a driveway or alley: You must yield here, but this is not the only correct situation.\n- A pedestrian who entered the crosswalk before the signal changed: You must yield here, but this is not the only correct situation.",
+  "frequency": 4,
+  "tags": [
+   "pedestrians"
+  ],
+  "levelLock": true
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "right-of-way",
+  "source": "predicted",
+  "level": "basic",
+  "stem": "When you enter a roundabout, whom must you yield to?",
+  "choices": [
+   "Traffic already in the roundabout, coming from your left",
+   "Traffic waiting to enter from your right",
+   "No one; entering traffic has the right of way",
+   "Only large trucks"
+  ],
+  "answer": 1,
+  "oneLineConcept": "Roundabout: yield to traffic from the left, already circling",
+  "explanation": "Traffic in a roundabout moves **counterclockwise** around the center island. When entering, **yield to traffic approaching from the left**, including bicyclists and pedestrians. **Vehicles in the roundabout have the right of way.** Never make a left turn to enter.\n\n**Wrong choices**\n- Traffic waiting to enter from your right: Vehicles already circling have the right of way, and they come from your left.\n- No one; entering traffic has the right of way: Vehicles in the roundabout have the right of way.\n- Only large trucks: You must yield to all traffic in the roundabout, including bicyclists and pedestrians.",
+  "frequency": 4,
+  "tags": [
+   "roundabouts"
+  ],
+  "distractorOrder": "2|3|4"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "right-of-way",
+  "source": "predicted",
+  "level": "basic",
+  "stem": "At a railroad crossing the lights are flashing and the gates are down, but you do not see a train. What should you do?",
+  "choices": [
+   "Cross if you look both ways and see nothing",
+   "Stay stopped until the gates go up and the lights stop flashing",
+   "Drive under the gate arms if there is room",
+   "Drive around the gates carefully"
+  ],
+  "answer": 2,
+  "oneLineConcept": "Gates down or lights flashing: stop and wait",
+  "explanation": "Stop when the **bells ring**, the **lights flash**, or the **gate is down or moving**. **Never** drive through, around, or under an activated crossing. After the train passes, wait until the **gates rise**, the **lights and bells stop**, and you are sure **all tracks are clear**.\n\n**Wrong choices**\n- Cross if you look both ways and see nothing: The warning devices are on because a train is coming.\n- Drive under the gate arms if there is room: Never go under lowered gates.\n- Drive around the gates carefully: Never drive through, around, or under an activated crossing system.",
+  "frequency": 5,
+  "tags": [
+   "railroad",
+   "gates"
+  ],
+  "distractorOrder": "4|1|3"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "right-of-way",
+  "source": "predicted",
+  "level": "intermediate",
+  "stem": "At a four-way stop, you and another driver stop at the same time. The other car is on your right. Who should go first?",
+  "choices": [
+   "Whoever honks first",
+   "Whichever vehicle is larger",
+   "The other car, because the driver on the left yields to the one on the right",
+   "You, because the car on the right yields to the left"
+  ],
+  "answer": 3,
+  "oneLineConcept": "Four-way stop tie: left yields to right",
+  "explanation": "At a **four-way stop**, the driver who **stopped first goes first**. If two vehicles arrive **at the same time**, the vehicle **on the left yields** to the vehicle **on its right**.\n\n**Wrong choices**\n- Whoever honks first: The horn does not give the right of way.\n- Whichever vehicle is larger: Vehicle size does not decide the right of way.\n- You, because the car on the right yields to the left: It is the other way around.",
+  "frequency": 5,
+  "tags": [
+   "four-way stop"
+  ],
+  "distractorOrder": "4|2|1"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "right-of-way",
+  "source": "predicted",
+  "level": "intermediate",
+  "stem": "You are on a highway divided by a grass median. A school bus on the other side has its red lights flashing. What must you do?",
+  "choices": [
+   "Speed up to pass before children cross",
+   "You do not have to stop, but watch carefully as you pass",
+   "Stop at least 20 feet from the bus",
+   "Pull onto the shoulder and stop"
+  ],
+  "answer": 2,
+  "oneLineConcept": "Divided by a median: other side need not stop for the bus",
+  "explanation": "You do **not** have to stop for a school bus on the **other side** of a highway **divided by a barrier**, such as a **concrete or grass median** or island. Vehicles on the **same side** as the bus **must stop**.\n\n**Wrong choices**\n- Speed up to pass before children cross: Speeding near a school bus is never safe.\n- Stop at least 20 feet from the bus: That rule applies to vehicles on the same side. A barrier or median means the other side need not stop.\n- Pull onto the shoulder and stop: No stop is required on the other side of a divided highway.",
+  "frequency": 4,
+  "tags": [
+   "school bus",
+   "divided highway"
+  ],
+  "distractorOrder": "3|4|1"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "right-of-way",
+  "source": "predicted",
+  "level": "intermediate",
+  "stem": "A police car is stopped on the shoulder with its lights flashing. What does Michigan law require?",
+  "choices": [
+   "Stop behind the police car",
+   "Keep your normal speed since it is on the shoulder",
+   "Slow to at least 10 mph below the posted limit and move over a lane if it is safe",
+   "Slow to 10 mph below the limit, but never change lanes"
+  ],
+  "answer": 3,
+  "oneLineConcept": "Stopped emergency vehicle: slow 10 mph below limit, move over",
+  "explanation": "When you see a **stopped emergency vehicle** with lights flashing, slow to **at least 10 mph below the posted limit** and **move over a lane** if traffic and conditions allow. If you cannot move over, slow down and leave as much space as you can.\n\n**Wrong choices**\n- Stop behind the police car: You are not required to stop; you must slow down and move over.\n- Keep your normal speed since it is on the shoulder: You must slow down even though it is off the road.\n- Slow to 10 mph below the limit, but never change lanes: You should move over a lane when traffic and conditions allow.",
+  "frequency": 5,
+  "tags": [
+   "move over",
+   "emergency vehicles"
+  ],
+  "distractorOrder": "4|1|2"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "right-of-way",
+  "source": "predicted",
+  "level": "intermediate",
+  "stem": "How far behind a moving emergency vehicle with flashing lights and siren must you stay?",
+  "choices": [
+   "At least 500 feet",
+   "At least 100 feet",
+   "At least 200 feet",
+   "At least 50 feet"
+  ],
+  "answer": 1,
+  "oneLineConcept": "Stay 500 feet behind a moving emergency vehicle",
+  "explanation": "Stay **at least 500 feet** behind a **moving** emergency vehicle with **flashing lights and siren**. **Never pass** one unless its driver or a police officer tells you to.\n\n**Wrong choices**\n- At least 100 feet: That is too close; stay 500 feet back.\n- At least 200 feet: The law requires at least 500 feet.\n- At least 50 feet: That is far too close; stay 500 feet back.",
+  "frequency": 4,
+  "tags": [
+   "emergency vehicles",
+   "following distance"
+  ],
+  "distractorOrder": "3|2|4"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "right-of-way",
+  "source": "predicted",
+  "level": "intermediate",
+  "stem": "A funeral procession is going through an intersection. Which statement is true?",
+  "choices": [
+   "You must pull over and stop when you see one",
+   "It has no special right of way",
+   "It has the right of way over all vehicles except fire trucks, ambulances, and police",
+   "You may cut through it if you are careful"
+  ],
+  "answer": 3,
+  "oneLineConcept": "Funeral procession: right of way except fire, ambulance, police",
+  "explanation": "**Funeral processions** have the **right of way** over all other vehicles **except fire trucks, ambulances, and police vehicles**. Vehicles in the procession show an **orange flag**. It is a **civil infraction** to cut through one, but you are **not required to pull over**.\n\n**Wrong choices**\n- You must pull over and stop when you see one: Be respectful, but you are not required to pull over.\n- It has no special right of way: Funeral processions do have the right of way over most vehicles.\n- You may cut through it if you are careful: Cutting through a funeral procession is a civil infraction.",
+  "frequency": 3,
+  "tags": [
+   "funeral procession"
+  ],
+  "distractorOrder": "1|4|2"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "right-of-way",
+  "source": "predicted",
+  "level": "intermediate",
+  "stem": "At a T-intersection with no signs or signals, who has the right of way?",
+  "choices": [
+   "Whoever is going faster",
+   "The vehicle on the left",
+   "Vehicles on the through road",
+   "Vehicles on the road that ends"
+  ],
+  "answer": 3,
+  "oneLineConcept": "T-intersection: yield to traffic on the through road",
+  "explanation": "At a **T-intersection** without signals or signs, **yield the right of way** to vehicles on the **through road**. Stop if needed and wait for a safe gap.\n\n**Wrong choices**\n- Whoever is going faster: Speed never decides the right of way.\n- The vehicle on the left: At a T-intersection, the through road has the right of way.\n- Vehicles on the road that ends: The road that ends must yield to the through road.",
+  "frequency": 3,
+  "tags": [
+   "T-intersection"
+  ],
+  "distractorOrder": "4|1|2"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "right-of-way",
+  "source": "predicted",
+  "level": "advanced",
+  "stem": "Your car stalls on the tracks. The crossing lights start flashing and the gates come down. What should you do first?",
+  "choices": [
+   "Keep trying to restart the engine",
+   "Get everyone out and far away from the tracks, then call 911",
+   "Call the number on the blue sign before leaving the car",
+   "Stay in the car with seat belts buckled"
+  ],
+  "answer": 2,
+  "oneLineConcept": "Stalled on tracks, gates activated: get out now, then call 911",
+  "explanation": "Once the lights and gates activate or you hear the train horn, you have **about 20 seconds**. **Immediately** get everyone **out** and **as far from the tracks** as possible, then **call 911**. If the signals are **not** on, get out and call the railroad's number on the **blue Emergency Notification Sign**.\n\n**Wrong choices**\n- Keep trying to restart the engine: You have only about 20 seconds; leave the car immediately.\n- Call the number on the blue sign before leaving the car: That is the step when the signals are NOT on. With the gates coming down, get out first.\n- Stay in the car with seat belts buckled: Staying in a car on the tracks is deadly.",
+  "frequency": 5,
+  "tags": [
+   "railroad",
+   "stuck on tracks"
+  ],
+  "distractorOrder": "3|1|4"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "right-of-way",
+  "source": "predicted",
+  "level": "advanced",
+  "stem": "Traffic is backed up just past a railroad crossing. When may you cross the tracks?",
+  "choices": [
+   "Whenever the lights are not flashing, even if you must stop on the tracks",
+   "As soon as the vehicle ahead has crossed",
+   "Only when there is room for your vehicle to clear the far side of the tracks by at least 6 feet",
+   "Any time you cannot see a train"
+  ],
+  "answer": 3,
+  "oneLineConcept": "Cross only if you can clear the tracks by 6 feet",
+  "explanation": "**Never stop on railroad tracks.** If traffic is backed up near a crossing, do not cross unless there is enough room for your vehicle to **completely clear the far side** of the tracks by **at least 6 feet**.\n\n**Wrong choices**\n- Whenever the lights are not flashing, even if you must stop on the tracks: Never stop on railroad tracks.\n- As soon as the vehicle ahead has crossed: The car ahead may stop and leave you stuck on the tracks.\n- Any time you cannot see a train: Always expect a train; you need room to clear the tracks.",
+  "frequency": 4,
+  "tags": [
+   "railroad",
+   "traffic backup"
+  ],
+  "distractorOrder": "2|1|4"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "right-of-way",
+  "source": "predicted",
+  "level": "advanced",
+  "stem": "Unless a crossing is clearly marked otherwise, which vehicles must stop at railroad crossings even when there is no stop sign or signal?",
+  "choices": [
+   "Pickup trucks pulling trailers",
+   "School buses, vehicles carrying passengers for hire, and vehicles carrying hazardous materials",
+   "Motorcycles and mopeds",
+   "All passenger cars"
+  ],
+  "answer": 2,
+  "oneLineConcept": "Buses, for-hire passengers, hazmat: always stop at tracks",
+  "explanation": "Unless clearly marked otherwise, **school buses**, vehicles carrying **passengers for hire**, **gasoline trucks**, and other vehicles carrying **hazardous materials** must **stop and make sure no train is coming** at every crossing. Be ready to stop behind them.\n\n**Wrong choices**\n- Pickup trucks pulling trailers: They are not on the list unless they carry hazardous materials.\n- Motorcycles and mopeds: They are not on the list of vehicles that must always stop.\n- All passenger cars: Cars stop when signs, signals, or an approaching train require it.",
+  "frequency": 3,
+  "tags": [
+   "railroad",
+   "special vehicles"
+  ],
+  "distractorOrder": "4|3|1"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "right-of-way",
+  "source": "predicted",
+  "level": "advanced",
+  "stem": "You are inside a roundabout when an emergency vehicle with a siren approaches. What should you do?",
+  "choices": [
+   "Stop right where you are inside the circle",
+   "Pull onto the center island",
+   "Do not stop in the roundabout; leave at the nearest exit, pull to the right, and stop",
+   "Keep circling until it has gone by"
+  ],
+  "answer": 3,
+  "oneLineConcept": "Siren in a roundabout: exit at the next exit, then pull over",
+  "explanation": "If an emergency vehicle approaches while you are in a roundabout, **do not stop** in it. **Leave at the nearest exit**, **pull over to the right**, and **stop** to let the emergency vehicle pass.\n\n**Wrong choices**\n- Stop right where you are inside the circle: Stopping in the roundabout can block the emergency vehicle.\n- Pull onto the center island: Never drive onto the center island.\n- Keep circling until it has gone by: Leave at the nearest exit instead.",
+  "frequency": 4,
+  "tags": [
+   "roundabouts",
+   "emergency vehicles"
+  ],
+  "distractorOrder": "1|4|2"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "speed-passing-parking",
+  "source": "predicted",
+  "level": "basic",
+  "stem": "Unless a different limit is posted, what is the speed limit in a platted subdivision?",
+  "choices": [
+   "15 mph",
+   "25 mph",
+   "45 mph",
+   "35 mph"
+  ],
+  "answer": 2,
+  "oneLineConcept": "Platted subdivisions and condo complexes: 25 mph",
+  "explanation": "Under the Michigan Vehicle Code, the speed limit is **25 mph** in **platted subdivisions** and **condominium complexes** unless posted otherwise. Watch for posted limits near **parks, schools, and hospitals**.\n\n**Wrong choices**\n- 15 mph: 15 mph is for mobile home parks and some municipal parks.\n- 45 mph: 45 mph is the posted limit in many work zones.\n- 35 mph: The standard limit in a platted subdivision is 25 mph.",
+  "frequency": 4,
+  "tags": [
+   "speed limits"
+  ],
+  "distractorOrder": "1|4|3"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "speed-passing-parking",
+  "source": "predicted",
+  "level": "basic",
+  "stem": "Unless posted otherwise, what is the maximum speed limit on Michigan freeways?",
+  "choices": [
+   "70 mph",
+   "60 mph",
+   "65 mph",
+   "75 mph"
+  ],
+  "answer": 1,
+  "oneLineConcept": "Freeways: 70 mph maximum, 55 mph minimum",
+  "explanation": "On Michigan **freeways**, the limit is **70 mph maximum** and **55 mph minimum** unless posted otherwise. **School buses and trucks** are limited to **65 mph**.\n\n**Wrong choices**\n- 60 mph: The standard freeway maximum is 70 mph.\n- 65 mph: 65 mph is the limit for trucks and school buses on those freeways.\n- 75 mph: The standard freeway maximum is 70 mph.",
+  "frequency": 5,
+  "tags": [
+   "speed limits",
+   "freeway"
+  ],
+  "distractorOrder": "3|4|2"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "speed-passing-parking",
+  "source": "predicted",
+  "level": "basic",
+  "stem": "Unless posted otherwise, what is the minimum speed on Michigan freeways?",
+  "choices": [
+   "There is no minimum speed",
+   "45 mph",
+   "40 mph",
+   "55 mph"
+  ],
+  "answer": 4,
+  "oneLineConcept": "Freeway minimum speed: 55 mph",
+  "explanation": "Michigan freeways have a **55 mph minimum** and a **70 mph maximum** unless posted otherwise. If you drive near the minimum on a freeway with three or more lanes, stay in the lane with **slower traffic**.\n\n**Wrong choices**\n- There is no minimum speed: Freeways have a 55 mph minimum unless posted otherwise.\n- 45 mph: The freeway minimum is 55 mph.\n- 40 mph: The freeway minimum is 55 mph.",
+  "frequency": 4,
+  "tags": [
+   "speed limits",
+   "minimum speed"
+  ],
+  "distractorOrder": "2|3|1"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "speed-passing-parking",
+  "source": "predicted",
+  "level": "basic",
+  "stem": "Unless posted otherwise, what is the speed limit on a Michigan highway that is not a freeway?",
+  "choices": [
+   "55 mph",
+   "45 mph",
+   "65 mph",
+   "50 mph"
+  ],
+  "answer": 1,
+  "oneLineConcept": "Non-freeway highways and streets: 55 mph unless posted",
+  "explanation": "Unless otherwise posted, the limit is **55 mph** on **highways and streets that are not freeways** (lower limits apply in places like subdivisions and mobile home parks). Always obey a posted sign and the **Basic Speed Law**.\n\n**Wrong choices**\n- 45 mph: 45 mph is a common work zone limit, not the general highway limit.\n- 65 mph: 65 mph is the truck and school bus limit on 70 mph freeways.\n- 50 mph: The general limit is 55 mph.",
+  "frequency": 4,
+  "tags": [
+   "speed limits"
+  ],
+  "distractorOrder": "2|3|4"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "speed-passing-parking",
+  "source": "predicted",
+  "level": "basic",
+  "stem": "How close to a fire hydrant may you park?",
+  "choices": [
+   "No closer than 30 feet",
+   "No closer than 5 feet",
+   "No closer than 15 feet",
+   "No closer than 10 feet"
+  ],
+  "answer": 3,
+  "oneLineConcept": "Do not park within 15 feet of a fire hydrant",
+  "explanation": "Never park **within 15 feet of a fire hydrant**. Firefighters need clear access to it.\n\n**Wrong choices**\n- No closer than 30 feet: 30 feet is the rule for stop signs and traffic lights.\n- No closer than 5 feet: That is far too close; the rule is 15 feet.\n- No closer than 10 feet: Michigan requires 15 feet.",
+  "frequency": 5,
+  "tags": [
+   "parking",
+   "fire hydrant"
+  ],
+  "distractorOrder": "4|2|1"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "speed-passing-parking",
+  "source": "predicted",
+  "level": "basic",
+  "stem": "You are parking downhill next to a curb. Which way should you turn your front wheels?",
+  "choices": [
+   "It does not matter if the parking brake is set",
+   "Toward the curb",
+   "Straight ahead",
+   "Away from the curb"
+  ],
+  "answer": 2,
+  "oneLineConcept": "Downhill with a curb: wheels toward the curb",
+  "explanation": "When parking **downhill**, turn your wheels **toward the curb**. **Uphill**, turn them **away** from the curb. With **no curb**, turn them so the car will **not roll into traffic**. **Always set the parking brake.**\n\n**Wrong choices**\n- It does not matter if the parking brake is set: Turn the wheels and set the parking brake every time.\n- Straight ahead: Straight wheels could let the car roll into traffic.\n- Away from the curb: That is for parking uphill with a curb.",
+  "frequency": 5,
+  "tags": [
+   "parking on a hill"
+  ],
+  "distractorOrder": "4|3|1"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "speed-passing-parking",
+  "source": "predicted",
+  "level": "basic",
+  "stem": "Another driver is passing you. What should you do?",
+  "choices": [
+   "Speed up so the other driver cannot get ahead",
+   "Keep a steady speed and let the driver finish passing",
+   "Flash your high beams at the driver",
+   "Pull onto the shoulder and stop"
+  ],
+  "answer": 2,
+  "oneLineConcept": "Being passed: do not speed up; let them finish",
+  "explanation": "If you are **being passed**, **do not speed up** or race the other driver. **Allow** them to **complete the pass safely**.\n\n**Wrong choices**\n- Speed up so the other driver cannot get ahead: Do not increase your speed or race a passing driver.\n- Flash your high beams at the driver: Flashing your lights can distract the other driver.\n- Pull onto the shoulder and stop: You do not need to stop; just do not speed up.",
+  "frequency": 4,
+  "tags": [
+   "being passed"
+  ],
+  "distractorOrder": "1|4|3"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "speed-passing-parking",
+  "source": "predicted",
+  "level": "basic",
+  "stem": "When you park along a curb, what is the greatest distance your car may be from it?",
+  "choices": [
+   "36 inches",
+   "24 inches",
+   "18 inches",
+   "12 inches"
+  ],
+  "answer": 4,
+  "oneLineConcept": "Park no more than 12 inches from the curb",
+  "explanation": "Never park **more than 12 inches from the curb**; the curb should never be more than a **foot** from your parked car. When parallel parking, aim for **6 to 12 inches**.\n\n**Wrong choices**\n- 36 inches: That is far beyond the 12-inch limit.\n- 24 inches: That is twice the legal limit.\n- 18 inches: Michigan law says never more than 12 inches.",
+  "frequency": 3,
+  "tags": [
+   "parking",
+   "curb"
+  ],
+  "distractorOrder": "3|2|1"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "speed-passing-parking",
+  "source": "predicted",
+  "level": "intermediate",
+  "stem": "You may not pass within how many feet of an intersection or railroad crossing?",
+  "choices": [
+   "50 feet",
+   "100 feet",
+   "500 feet",
+   "200 feet"
+  ],
+  "answer": 2,
+  "oneLineConcept": "No passing within 100 feet of an intersection or rail crossing",
+  "explanation": "Do **not pass** within **100 feet** of an **intersection or railroad crossing**, or when your view is blocked within **100 feet** of a **bridge, viaduct, or tunnel**.\n\n**Wrong choices**\n- 50 feet: The no-passing distance is 100 feet.\n- 500 feet: The no-passing distance near intersections and crossings is 100 feet.\n- 200 feet: 200 feet is how far from oncoming vehicles you must be back in your lane.",
+  "frequency": 5,
+  "tags": [
+   "passing",
+   "no passing"
+  ],
+  "distractorOrder": "1|4|3"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "speed-passing-parking",
+  "source": "predicted",
+  "level": "intermediate",
+  "stem": "When passing on a two-lane road, you must be back in your lane before you get within how far of an oncoming vehicle?",
+  "choices": [
+   "200 feet",
+   "500 feet",
+   "100 feet",
+   "50 feet"
+  ],
+  "answer": 1,
+  "oneLineConcept": "Finish passing before you are within 200 feet of oncoming traffic",
+  "explanation": "You must **return to your lane** before you get within **200 feet** of any **oncoming vehicle**. Do not cut back in until you can see the **entire vehicle** you passed in your **rearview mirror**.\n\n**Wrong choices**\n- 500 feet: The rule is 200 feet.\n- 100 feet: 100 feet is the no-passing distance near intersections and railroad crossings.\n- 50 feet: That is far too close.",
+  "frequency": 4,
+  "tags": [
+   "passing",
+   "two-lane road"
+  ],
+  "distractorOrder": "3|4|2"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "speed-passing-parking",
+  "source": "predicted",
+  "level": "intermediate",
+  "stem": "You may not park within how many feet of a stop sign, traffic light, or flashing beacon?",
+  "choices": [
+   "15 feet",
+   "20 feet",
+   "30 feet",
+   "50 feet"
+  ],
+  "answer": 3,
+  "oneLineConcept": "No parking within 30 feet of a stop sign or signal",
+  "explanation": "Never park **within 30 feet** of a **stop sign, traffic light, or flashing beacon**, including a warning sign. A parked car there can **block other drivers' view** of the sign or signal.\n\n**Wrong choices**\n- 15 feet: 15 feet is the rule for fire hydrants.\n- 20 feet: 20 feet is the rule for marked crosswalks.\n- 50 feet: 50 feet is the rule for the nearest rail of a railroad crossing.",
+  "frequency": 4,
+  "tags": [
+   "parking",
+   "stop sign"
+  ],
+  "distractorOrder": "1|2|4"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "speed-passing-parking",
+  "source": "predicted",
+  "level": "intermediate",
+  "stem": "How close to a marked crosswalk may you park?",
+  "choices": [
+   "No closer than 20 feet",
+   "No closer than 15 feet",
+   "No closer than 30 feet",
+   "No closer than 10 feet"
+  ],
+  "answer": 1,
+  "oneLineConcept": "No parking within 20 feet of a marked crosswalk",
+  "explanation": "Do not park **within 20 feet of a marked crosswalk**, or **within 15 feet of an intersection** if there is no crosswalk. Never park **in** an intersection, crosswalk, or bike lane.\n\n**Wrong choices**\n- No closer than 15 feet: 15 feet applies to an intersection when there is no crosswalk.\n- No closer than 30 feet: 30 feet applies to stop signs and traffic lights.\n- No closer than 10 feet: The rule is 20 feet.",
+  "frequency": 4,
+  "tags": [
+   "parking",
+   "crosswalk"
+  ],
+  "distractorOrder": "2|3|4"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "speed-passing-parking",
+  "source": "predicted",
+  "level": "intermediate",
+  "stem": "When is passing on the right allowed?",
+  "choices": [
+   "Whenever oncoming traffic blocks the left side of a two-lane road",
+   "When the vehicle ahead is turning left and there is room without leaving the pavement",
+   "When the car ahead is slow and the shoulder is wide",
+   "Never, under any circumstances"
+  ],
+  "answer": 2,
+  "oneLineConcept": "Pass on the right only in set cases, never on the shoulder",
+  "explanation": "Passing on the right is allowed **only in certain cases**: when the vehicle ahead is **turning left** and there is room, on a **one-way street** with more than one lane, on roads with **two or more lanes each way**, or where the road is **widened for passing**. **Never** drive on the **shoulder** to pass.\n\n**Wrong choices**\n- Whenever oncoming traffic blocks the left side of a two-lane road: Passing on the right is allowed only in specific cases.\n- When the car ahead is slow and the shoulder is wide: You may never use the shoulder or drive off the road to pass.\n- Never, under any circumstances: Michigan allows passing on the right in certain cases.",
+  "frequency": 4,
+  "tags": [
+   "passing on the right"
+  ],
+  "distractorOrder": "3|1|4"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "speed-passing-parking",
+  "source": "predicted",
+  "level": "intermediate",
+  "stem": "On a Michigan freeway posted at 70 mph, what is the limit for trucks and school buses?",
+  "choices": [
+   "70 mph",
+   "65 mph",
+   "55 mph",
+   "60 mph"
+  ],
+  "answer": 2,
+  "oneLineConcept": "Trucks and school buses on 70 mph freeways: 65 mph",
+  "explanation": "On freeways with a **70 mph** limit, **school buses and trucks** are restricted to **65 mph**. On freeways with limits **below 70 mph**, they are restricted to **55 mph**. Expect slower heavy vehicles and pass them with care.\n\n**Wrong choices**\n- 70 mph: Trucks and school buses are limited to less than cars on these freeways.\n- 55 mph: 55 mph applies to them only on freeways with limits below 70 mph.\n- 60 mph: The limit for them is 65 mph.",
+  "frequency": 3,
+  "tags": [
+   "speed limits",
+   "trucks"
+  ],
+  "distractorOrder": "3|1|4"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "speed-passing-parking",
+  "source": "predicted",
+  "level": "advanced",
+  "stem": "In which situation is passing allowed?",
+  "choices": [
+   "Passing a bicyclist in a no-passing zone, when it is safe",
+   "Passing while a school bus has its red lights flashing",
+   "Passing within 100 feet of a railroad crossing",
+   "Passing a car that has stopped at a crosswalk for a pedestrian"
+  ],
+  "answer": 1,
+  "oneLineConcept": "You may pass a bicyclist in a no-passing zone if safe",
+  "explanation": "Michigan allows you to **pass a bicyclist in a no-passing zone** as long as it is **safe**, leaving at least **3 feet**. Passing is **prohibited** past a vehicle **stopped for a pedestrian**, within **100 feet of a railroad crossing**, and when a **school bus has red lights flashing**.\n\n**Wrong choices**\n- Passing while a school bus has its red lights flashing: Passing is prohibited while the bus's red lights flash.\n- Passing within 100 feet of a railroad crossing: Passing there is prohibited.\n- Passing a car that has stopped at a crosswalk for a pedestrian: Never pass a vehicle stopped for a pedestrian.",
+  "frequency": 4,
+  "tags": [
+   "passing",
+   "bicyclists"
+  ],
+  "distractorOrder": "4|3|2"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "speed-passing-parking",
+  "source": "predicted",
+  "level": "advanced",
+  "stem": "How close to the nearest rail of a railroad crossing may you park?",
+  "choices": [
+   "No closer than 100 feet",
+   "No closer than 15 feet",
+   "No closer than 30 feet",
+   "No closer than 50 feet"
+  ],
+  "answer": 4,
+  "oneLineConcept": "No parking within 50 feet of the nearest rail",
+  "explanation": "Never park **within 50 feet** of the **nearest rail** of a railroad crossing. Other key parking distances: **15 feet** from a hydrant, **20 feet** from a marked crosswalk, and **30 feet** from a stop sign or signal.\n\n**Wrong choices**\n- No closer than 100 feet: The parking rule at a railroad crossing is 50 feet.\n- No closer than 15 feet: 15 feet is the fire hydrant rule.\n- No closer than 30 feet: 30 feet is the stop sign and traffic light rule.",
+  "frequency": 3,
+  "tags": [
+   "parking",
+   "railroad"
+  ],
+  "distractorOrder": "2|3|1"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "speed-passing-parking",
+  "source": "predicted",
+  "level": "advanced",
+  "stem": "Across the street from a fire station driveway, where marked, how close may you park to the driveway?",
+  "choices": [
+   "No closer than 20 feet",
+   "No closer than 75 feet",
+   "No closer than 30 feet",
+   "No closer than 50 feet"
+  ],
+  "answer": 2,
+  "oneLineConcept": "Fire station: 20 ft same side, 75 ft other side if marked",
+  "explanation": "Do not park **within 20 feet** of a **fire station driveway** on the **same side** of the street, or, when marked, **within 75 feet** of the driveway on the **other side**. Fire trucks need room to swing out.\n\n**Wrong choices**\n- No closer than 20 feet: 20 feet is the rule on the same side of the street.\n- No closer than 30 feet: The other-side rule, when marked, is 75 feet.\n- No closer than 50 feet: The other-side rule, when marked, is 75 feet.",
+  "frequency": 3,
+  "tags": [
+   "parking",
+   "fire station"
+  ],
+  "distractorOrder": "1|3|4"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "speed-passing-parking",
+  "source": "predicted",
+  "level": "advanced",
+  "stem": "Where is parking NOT allowed?",
+  "choices": [
+   "On a bridge or in a tunnel, unless posted otherwise",
+   "Within 500 feet of a fire or a crash",
+   "At a transit stop",
+   "All of the above"
+  ],
+  "answer": 4,
+  "oneLineConcept": "No parking on bridges, near fires or crashes, or at transit stops",
+  "explanation": "Michigan law lists many places you may **never park**, including **on or under a bridge** (unless posted), in a **tunnel**, **within 500 feet of a fire or crash**, and **at a transit stop**. Local rules may be **stricter** than state law.\n\n**Wrong choices**\n- On a bridge or in a tunnel, unless posted otherwise: Parking is not allowed here, but other choices are also correct.\n- Within 500 feet of a fire or a crash: Parking is not allowed here, but other choices are also correct.\n- At a transit stop: Parking is not allowed here, but other choices are also correct.",
+  "frequency": 3,
+  "tags": [
+   "parking"
+  ],
+  "levelLock": true
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "safe-driving",
+  "source": "predicted",
+  "level": "basic",
+  "stem": "In normal conditions, what following distance should you keep behind the vehicle ahead?",
+  "choices": [
+   "Half a second, as long as you are paying attention",
+   "1 to 2 seconds",
+   "At least 3 to 4 seconds",
+   "10 seconds in all conditions"
+  ],
+  "answer": 3,
+  "oneLineConcept": "Keep a 3 to 4 second following distance",
+  "explanation": "Keep a **3- to 4-second** following distance. When the car ahead passes a fixed point, count \"one-thousand one, one-thousand two, one-thousand three.\" If you reach the point first, you are **too close**. Increase to **6 seconds or more** at higher speeds or in bad conditions.\n\n**Wrong choices**\n- Half a second, as long as you are paying attention: That leaves almost no time to react.\n- 1 to 2 seconds: That is too close to stop safely.\n- 10 seconds in all conditions: The rule is 3 to 4 seconds, increased in bad conditions.",
+  "frequency": 5,
+  "tags": [
+   "following distance"
+  ],
+  "distractorOrder": "2|1|4"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "safe-driving",
+  "source": "predicted",
+  "level": "basic",
+  "stem": "When you pass a bicyclist, how much space must you leave?",
+  "choices": [
+   "At least 18 inches",
+   "At least 2 feet",
+   "At least 1 foot",
+   "At least 3 feet"
+  ],
+  "answer": 4,
+  "oneLineConcept": "Give bicyclists at least 3 feet when passing",
+  "explanation": "Michigan law requires **at least 3 feet** between your vehicle and a **bicyclist** when passing. If that is not practical, pass at a safe distance and speed, which may mean waiting. Do not return to your lane until **well clear** of the bike.\n\n**Wrong choices**\n- At least 18 inches: That is far too close; the law says 3 feet.\n- At least 2 feet: Michigan law requires at least 3 feet.\n- At least 1 foot: That is far too close.",
+  "frequency": 5,
+  "tags": [
+   "bicyclists"
+  ],
+  "distractorOrder": "2|3|1"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "safe-driving",
+  "source": "predicted",
+  "level": "basic",
+  "stem": "A deer jumps onto the road and a crash cannot be avoided. What should you do?",
+  "choices": [
+   "Brake firmly, hold the wheel with both hands, and stay in your lane",
+   "Flash your high beams and honk to scare it off",
+   "Speed up to get past the deer",
+   "Swerve hard to miss the deer"
+  ],
+  "answer": 1,
+  "oneLineConcept": "Unavoidable deer crash: brake, hold the wheel, stay in lane",
+  "explanation": "If a deer crash **cannot be avoided**: **do not veer**; **stay in your lane**, **brake firmly**, **hold the steering wheel with both hands**, and come to a **controlled stop**. Then steer well off the road.\n\n**Wrong choices**\n- Flash your high beams and honk to scare it off: Gimmicks like flashing lights and horns do not keep deer away.\n- Speed up to get past the deer: Speeding up makes the crash worse.\n- Swerve hard to miss the deer: Swerving can send you into other traffic or off the road. Do not veer for deer.",
+  "frequency": 5,
+  "tags": [
+   "deer"
+  ],
+  "distractorOrder": "4|3|2"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "safe-driving",
+  "source": "predicted",
+  "level": "basic",
+  "stem": "At what times of day should you be especially alert for deer?",
+  "choices": [
+   "Only late at night",
+   "Midday",
+   "Only during rush hour",
+   "Dawn and dusk"
+  ],
+  "answer": 4,
+  "oneLineConcept": "Watch for deer at dawn and dusk",
+  "explanation": "Be especially alert for deer at **dawn and dusk**, and especially in **fall and spring**, though crashes can happen at any time of year. If you see one deer, **slow down**; others are probably nearby.\n\n**Wrong choices**\n- Only late at night: Dawn and dusk are the times to be most alert.\n- Midday: Deer are most often on the move at dawn and dusk.\n- Only during rush hour: Deer activity does not follow traffic patterns.",
+  "frequency": 4,
+  "tags": [
+   "deer"
+  ],
+  "distractorOrder": "2|1|3"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "safe-driving",
+  "source": "predicted",
+  "level": "basic",
+  "stem": "Which lights should you use when driving in fog?",
+  "choices": [
+   "Low-beam headlights",
+   "High-beam headlights",
+   "Parking lights only",
+   "No lights, so you are not blinded by glare"
+  ],
+  "answer": 1,
+  "oneLineConcept": "Fog: drive slowly with low beams",
+  "explanation": "In **fog**, **drive slowly**, use **low-beam headlights**, and be ready to stop quickly. If fog gets so thick you **cannot see**, **pull off the road**, turn on your **four-way flashers**, and wait.\n\n**Wrong choices**\n- High-beam headlights: High beams reflect off fog and make it harder to see.\n- Parking lights only: It is illegal to use only parking lights when headlights are needed.\n- No lights, so you are not blinded by glare: Lights help other drivers see you.",
+  "frequency": 5,
+  "tags": [
+   "fog",
+   "headlights"
+  ],
+  "distractorOrder": "2|3|4"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "safe-driving",
+  "source": "predicted",
+  "level": "basic",
+  "stem": "You must dim your high beams within how far of an oncoming vehicle?",
+  "choices": [
+   "200 feet",
+   "500 feet",
+   "1,000 feet",
+   "100 feet"
+  ],
+  "answer": 2,
+  "oneLineConcept": "No high beams within 500 feet of oncoming traffic",
+  "explanation": "It is illegal to use or even flash **high beams** within **500 feet** of an **oncoming vehicle**. Also dim your lights for **pedestrians and cyclists**, and do not use high beams **behind** other vehicles.\n\n**Wrong choices**\n- 200 feet: The legal distance is 500 feet.\n- 1,000 feet: The law sets 500 feet.\n- 100 feet: That is far too close; dim at 500 feet.",
+  "frequency": 5,
+  "tags": [
+   "headlights",
+   "high beams"
+  ],
+  "distractorOrder": "1|4|3"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "safe-driving",
+  "source": "predicted",
+  "level": "basic",
+  "stem": "When rain begins to fall, when are roads most slippery?",
+  "choices": [
+   "Only after several hours of rain",
+   "Only after the rain stops",
+   "During the first half hour",
+   "Only when puddles form"
+  ],
+  "answer": 3,
+  "oneLineConcept": "Rain: roads slickest in the first half hour",
+  "explanation": "When it begins to rain, roads are **most slippery during the first half hour**, because **oil** from vehicles has not yet washed away. **Slow down** and allow **at least twice** the normal following distance.\n\n**Wrong choices**\n- Only after several hours of rain: Roads are most slippery early, while oil is still on the surface.\n- Only after the rain stops: The first half hour of rain is the most dangerous.\n- Only when puddles form: The danger comes from oil on the road early in the rain, not from puddles.",
+  "frequency": 4,
+  "tags": [
+   "rain",
+   "slippery roads"
+  ],
+  "distractorOrder": "1|2|4"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "safe-driving",
+  "source": "predicted",
+  "level": "intermediate",
+  "stem": "Your car begins to skid. What should you do first?",
+  "choices": [
+   "Press the accelerator to regain traction",
+   "Slam on the brakes",
+   "Turn the wheel sharply the opposite way",
+   "Take your foot off the accelerator and steer where you want to go"
+  ],
+  "answer": 4,
+  "oneLineConcept": "Skid: ease off the gas, steer where you want to go",
+  "explanation": "If your vehicle **skids**, **take your foot off the accelerator** and turn the front wheels **only enough** to point them **where you want to go**. Be ready for a **second skid** the other way, then straighten the wheels.\n\n**Wrong choices**\n- Press the accelerator to regain traction: Take your foot off the accelerator.\n- Slam on the brakes: Hard braking can make a skid worse.\n- Turn the wheel sharply the opposite way: Turn only as much as needed to point where you want to go.",
+  "frequency": 4,
+  "tags": [
+   "skids"
+  ],
+  "distractorOrder": "2|3|1"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "safe-driving",
+  "source": "predicted",
+  "level": "intermediate",
+  "stem": "In an emergency stop with anti-lock brakes, how should you brake?",
+  "choices": [
+   "Let up on the brake when you feel vibration",
+   "Brake gently so the wheels do not lock",
+   "Pump the brake pedal quickly",
+   "Press hard and firmly, keep the pressure on, and steer; pulsing is normal"
+  ],
+  "answer": 4,
+  "oneLineConcept": "ABS: hard, steady pressure and steer; pulsing is normal",
+  "explanation": "With **anti-lock brakes**, apply the brake with **hard, firm pressure** from the start and **keep it** until you stop, while you **steer**. You may feel or hear **pulsing**, which is **normal**. Without ABS, brake just hard enough not to lock the wheels.\n\n**Wrong choices**\n- Let up on the brake when you feel vibration: Vibration or pulsing is normal; keep pressing.\n- Brake gently so the wheels do not lock: With anti-lock brakes, use hard, firm pressure from the start.\n- Pump the brake pedal quickly: Pumping is not how anti-lock brakes are used; hold firm pressure.",
+  "frequency": 4,
+  "tags": [
+   "anti-lock brakes"
+  ],
+  "distractorOrder": "3|1|2"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "safe-driving",
+  "source": "predicted",
+  "level": "intermediate",
+  "stem": "A car at 55 mph can stop in about 130 feet. About how far does a commercial truck at the same speed need to stop?",
+  "choices": [
+   "About 130 feet, the same as a car",
+   "About 200 feet",
+   "About 400 feet",
+   "About 1,000 feet"
+  ],
+  "answer": 3,
+  "oneLineConcept": "At 55 mph: car about 130 ft to stop, truck about 400 ft",
+  "explanation": "A passenger vehicle at **55 mph** can stop in about **130 feet**, but a **commercial vehicle** takes about **400 feet**. **Never cut in** front of a truck or force it to stop suddenly.\n\n**Wrong choices**\n- About 130 feet, the same as a car: Trucks are heavier and need much more distance.\n- About 200 feet: A truck needs about 400 feet.\n- About 1,000 feet: About 400 feet is the figure for a truck at 55 mph.",
+  "frequency": 4,
+  "tags": [
+   "trucks",
+   "stopping distance"
+  ],
+  "distractorOrder": "1|2|4"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "safe-driving",
+  "source": "predicted",
+  "level": "intermediate",
+  "stem": "You are following a horse-drawn buggy. How should you drive?",
+  "choices": [
+   "Honk so the driver knows you want to pass",
+   "Rev your engine to warn the horse",
+   "Slow to 15 to 20 mph and stay at least 20 feet behind",
+   "Stay close behind so drivers behind you can see the buggy"
+  ],
+  "answer": 3,
+  "oneLineConcept": "Horse or buggy: 15 to 20 mph, 20 feet back, no horn",
+  "explanation": "When following a **horse and rider** or a **horse-drawn buggy**, slow to **15 to 20 mph** and stay **at least 20 feet** back. **Never honk or rev the engine**; pass with caution when safe.\n\n**Wrong choices**\n- Honk so the driver knows you want to pass: Loud noises can startle horses.\n- Rev your engine to warn the horse: Revving can startle the horse.\n- Stay close behind so drivers behind you can see the buggy: Following too close can spook the horse.",
+  "frequency": 3,
+  "tags": [
+   "horse and buggy"
+  ],
+  "distractorOrder": "4|1|2"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "safe-driving",
+  "source": "predicted",
+  "level": "intermediate",
+  "stem": "On a long freeway trip, how often should you take a break if you feel tired?",
+  "choices": [
+   "A 10-minute break at least every two hours",
+   "A 30-minute break every four hours",
+   "Drink coffee instead of stopping",
+   "Only when you start to fall asleep"
+  ],
+  "answer": 1,
+  "oneLineConcept": "Fatigue: stop for 10 minutes at least every two hours",
+  "explanation": "**Fatigue** is one of the greatest dangers on freeways. If you feel tired, take a **10-minute break at least every two hours**. **Do not rely on coffee** or stay-awake drugs, and let someone else drive if needed.\n\n**Wrong choices**\n- A 30-minute break every four hours: The advice is a 10-minute break at least every two hours.\n- Drink coffee instead of stopping: Do not rely on coffee or stay-awake drugs.\n- Only when you start to fall asleep: By then it may be too late; take regular breaks.",
+  "frequency": 3,
+  "tags": [
+   "fatigue"
+  ],
+  "distractorOrder": "2|4|3"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "safe-driving",
+  "source": "predicted",
+  "level": "advanced",
+  "stem": "Which motorcycles may legally be driven on freeways?",
+  "choices": [
+   "Any motorcycle, regardless of engine size",
+   "Only motorcycles with a sidecar",
+   "Motorcycles of 50cc or more",
+   "Motorcycles with an engine of 125cc or more"
+  ],
+  "answer": 4,
+  "oneLineConcept": "Motorcycles 125cc+ may use freeways; 124cc or less may not",
+  "explanation": "Motorcycles with engines of **125cc or greater** may use **freeways and limited-access highways**. **Small motorcycles of 124cc or less**, **mopeds**, **bicycles**, pedestrians, and slow-moving vehicles are **not allowed** on freeways.\n\n**Wrong choices**\n- Any motorcycle, regardless of engine size: Motorcycles of 124cc or less are not allowed on freeways.\n- Only motorcycles with a sidecar: Engine size, not a sidecar, is the rule.\n- Motorcycles of 50cc or more: The minimum is 125cc.",
+  "frequency": 3,
+  "tags": [
+   "motorcycles",
+   "freeway"
+  ],
+  "distractorOrder": "1|3|2"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "safe-driving",
+  "source": "predicted",
+  "level": "advanced",
+  "stem": "An oncoming vehicle is in your lane. What is the best response?",
+  "choices": [
+   "Speed up to get past it",
+   "Stop in your lane and wait",
+   "Swerve left into the oncoming lane",
+   "Tap the horn if there is time, brake, and steer toward the right edge"
+  ],
+  "answer": 4,
+  "oneLineConcept": "Oncoming car in your lane: horn, brake, escape right",
+  "explanation": "If an oncoming vehicle is in your lane: **tap the horn** if there is time, **brake hard** (without locking the wheels if you have no ABS), and look for an **escape route on the right**. **Try not to go left**; the other driver may move back into the proper lane.\n\n**Wrong choices**\n- Speed up to get past it: Speeding up reduces your time and options.\n- Stop in your lane and wait: Look for an escape to the right instead.\n- Swerve left into the oncoming lane: The other driver may return to their lane, so avoid going left.",
+  "frequency": 4,
+  "tags": [
+   "oncoming vehicle"
+  ],
+  "distractorOrder": "3|2|1"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "safe-driving",
+  "source": "predicted",
+  "level": "advanced",
+  "stem": "Your car breaks down on a freeway. What is the safest thing to do?",
+  "choices": [
+   "Pull as far off the road as possible, turn on the flashers, and stay inside with your seat belt on",
+   "Stand behind the car to wave traffic around it",
+   "Walk along the freeway to the next exit for help",
+   "Leave the car in the lane with the flashers on"
+  ],
+  "answer": 1,
+  "oneLineConcept": "Breakdown: pull far off, flashers on, stay buckled inside",
+  "explanation": "If your car becomes disabled, **pull as far off** the traveled road as possible, turn on your **four-way flashers**, and **stay inside** with your **seat belt fastened**. Walking on a **freeway** is **dangerous and illegal**.\n\n**Wrong choices**\n- Stand behind the car to wave traffic around it: Standing near traffic puts you at risk.\n- Walk along the freeway to the next exit for help: Walking on a freeway is dangerous and illegal.\n- Leave the car in the lane with the flashers on: Get as far off the traveled road as possible.",
+  "frequency": 4,
+  "tags": [
+   "disabled vehicle"
+  ],
+  "distractorOrder": "3|2|4"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "safe-driving",
+  "source": "predicted",
+  "level": "advanced",
+  "stem": "Which of these is NOT safe or legal when sharing the road with motorcyclists?",
+  "choices": [
+   "Leaving at least 3 to 4 seconds of following space",
+   "Passing using the next lane when it is safe",
+   "Driving beside a motorcyclist in the same lane",
+   "Checking your blind spot before changing lanes"
+  ],
+  "answer": 3,
+  "oneLineConcept": "Never share a lane with or pass a motorcycle in its lane",
+  "explanation": "It is **illegal** to **drive beside** a motorcyclist or **pass** one **in the same lane**. Pass using an **adjacent lane** when safe and legal, keep **3 to 4 seconds** of space, and **check blind spots** before changing lanes.\n\n**Wrong choices**\n- Leaving at least 3 to 4 seconds of following space: This is safe; 3 to 4 seconds is the recommended space.\n- Passing using the next lane when it is safe: This is the correct way to pass a motorcycle.\n- Checking your blind spot before changing lanes: This is a safe habit that prevents crashes with riders.",
+  "frequency": 4,
+  "tags": [
+   "motorcycles"
+  ],
+  "levelLock": true
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "gdl-licensing",
+  "source": "predicted",
+  "level": "basic",
+  "stem": "What is the youngest age to get a Level 1 Learner's License?",
+  "choices": [
+   "14 years, 9 months",
+   "16 years",
+   "15 years",
+   "14 years, 8 months"
+  ],
+  "answer": 1,
+  "oneLineConcept": "Level 1 Learner's License: at least 14 years, 9 months",
+  "explanation": "To apply for a **Level 1 Learner's License**, you must be **at least 14 years, 9 months** old, have finished **Segment 1**, and visit the office with a **parent or legal guardian**.\n\n**Wrong choices**\n- 16 years: 16 is the minimum age for a Level 2 Intermediate License.\n- 15 years: 15 is the minimum age for the driving skills test.\n- 14 years, 8 months: That is the minimum age to start Segment 1 of driver education.",
+  "frequency": 5,
+  "tags": [
+   "level 1",
+   "age"
+  ],
+  "distractorOrder": "4|3|2"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "gdl-licensing",
+  "source": "predicted",
+  "level": "basic",
+  "stem": "With a Level 1 Learner's License, who must be with you when you drive?",
+  "choices": [
+   "Any passenger age 16 or older",
+   "Any licensed driver age 18 or older",
+   "A licensed parent, guardian, or designated licensed adult age 21 or older, in the front seat",
+   "No one, during daylight hours"
+  ],
+  "answer": 3,
+  "oneLineConcept": "Level 1: always with a licensed parent or designated adult 21+",
+  "explanation": "A **Level 1** driver may drive only with a **licensed parent, guardian, or designated licensed adult age 21 or older** seated in the **front seat**. A designated adult needs a **signed letter** from the parent or guardian.\n\n**Wrong choices**\n- Any passenger age 16 or older: The supervisor must be a licensed adult 21 or older.\n- Any licensed driver age 18 or older: The supervisor must be 21 or older and a parent, guardian, or designated adult.\n- No one, during daylight hours: Level 1 drivers must always be supervised.",
+  "frequency": 5,
+  "tags": [
+   "level 1",
+   "supervision"
+  ],
+  "distractorOrder": "2|1|4"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "gdl-licensing",
+  "source": "predicted",
+  "level": "basic",
+  "stem": "How long is a Temporary Instruction Permit (TIP) valid?",
+  "choices": [
+   "180 days",
+   "90 days",
+   "30 days",
+   "One year"
+  ],
+  "answer": 1,
+  "oneLineConcept": "Temporary Instruction Permit (TIP): valid 180 days",
+  "explanation": "A **TIP** is valid for **180 days**. It lets a new adult driver **practice with a licensed adult** before the driving skills test. It is issued to people who were **never licensed**, who hold a **foreign license**, or whose license expired **at least four years** ago.\n\n**Wrong choices**\n- 90 days: A TIP lasts 180 days.\n- 30 days: 30 days is the minimum practice time before the skills test.\n- One year: A TIP lasts 180 days.",
+  "frequency": 4,
+  "tags": [
+   "TIP",
+   "permit"
+  ],
+  "distractorOrder": "3|2|4"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "gdl-licensing",
+  "source": "predicted",
+  "level": "basic",
+  "stem": "Before taking the driving skills test, how much supervised driving must a teen log?",
+  "choices": [
+   "At least 40 hours, including 5 at night",
+   "At least 30 hours, including 2 at night",
+   "At least 50 hours, including 10 at night",
+   "At least 20 hours, with no night driving"
+  ],
+  "answer": 3,
+  "oneLineConcept": "Skills test needs 50 supervised hours, 10 at night",
+  "explanation": "Before the **driving skills test**, a teen must log **at least 50 hours** of supervised driving, **including 10 hours at night**. Starting **Segment 2** requires a log of **30 hours**, including 2 at night.\n\n**Wrong choices**\n- At least 40 hours, including 5 at night: The skills test requires 50 hours, 10 at night.\n- At least 30 hours, including 2 at night: That is the log needed to start Segment 2, not the skills test.\n- At least 20 hours, with no night driving: Night practice is required.",
+  "frequency": 5,
+  "tags": [
+   "supervised driving"
+  ],
+  "distractorOrder": "2|1|4"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "gdl-licensing",
+  "source": "predicted",
+  "level": "basic",
+  "stem": "During which hours may a Level 2 driver not drive, unless an exception applies?",
+  "choices": [
+   "10 p.m. to 5 a.m.",
+   "Midnight to 5 a.m.",
+   "9 p.m. to 6 a.m.",
+   "11 p.m. to 6 a.m."
+  ],
+  "answer": 1,
+  "oneLineConcept": "Level 2: no driving 10 p.m. to 5 a.m. (with exceptions)",
+  "explanation": "A **Level 2 Intermediate** driver may not drive between **10 p.m. and 5 a.m.**, unless with a **parent, guardian, or designated licensed adult 21 or older**, or driving for **work** or an **authorized activity**.\n\n**Wrong choices**\n- Midnight to 5 a.m.: The restriction begins at 10 p.m.\n- 9 p.m. to 6 a.m.: The restricted hours are 10 p.m. to 5 a.m.\n- 11 p.m. to 6 a.m.: The restricted hours are 10 p.m. to 5 a.m.",
+  "frequency": 5,
+  "tags": [
+   "level 2",
+   "night driving"
+  ],
+  "distractorOrder": "2|3|4"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "gdl-licensing",
+  "source": "predicted",
+  "level": "intermediate",
+  "stem": "Before taking the driving skills test, how long must a teen have held a Level 1 Learner's License?",
+  "choices": [
+   "At least six months",
+   "At least three months",
+   "At least 30 days",
+   "At least 12 months"
+  ],
+  "answer": 1,
+  "oneLineConcept": "Skills test: Level 1 held at least six months",
+  "explanation": "To take the **driving skills test**, a teen must be **at least 15**, have finished **Segment 2**, logged **50 hours** (10 at night), and held the **Level 1** license for **at least six months**.\n\n**Wrong choices**\n- At least three months: Three months is the minimum to start Segment 2.\n- At least 30 days: 30 days is the practice rule for new adult drivers with a TIP.\n- At least 12 months: The rule is six months.",
+  "frequency": 4,
+  "tags": [
+   "level 1",
+   "skills test"
+  ],
+  "distractorOrder": "2|3|4"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "gdl-licensing",
+  "source": "predicted",
+  "level": "intermediate",
+  "stem": "What is the passenger rule for a Level 2 driver?",
+  "choices": [
+   "No passengers at all",
+   "No more than one passenger under age 21, unless an exception applies",
+   "Up to three passengers under 21",
+   "Any number of passengers if all wear seat belts"
+  ],
+  "answer": 2,
+  "oneLineConcept": "Level 2: at most one passenger under 21 (with exceptions)",
+  "explanation": "A **Level 2** driver may not carry **more than one passenger under 21**, unless a **parent, guardian, or designated adult 21+** is in the vehicle, the passengers are **immediate family**, or the trip is for **work** or an **authorized activity**.\n\n**Wrong choices**\n- No passengers at all: Passengers are allowed; the limit is on passengers under 21.\n- Up to three passengers under 21: Only one passenger under 21 is allowed.\n- Any number of passengers if all wear seat belts: Seat belts do not change the passenger limit.",
+  "frequency": 4,
+  "tags": [
+   "level 2",
+   "passengers"
+  ],
+  "distractorOrder": "1|3|4"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "gdl-licensing",
+  "source": "predicted",
+  "level": "intermediate",
+  "stem": "You are 25 and have never been licensed. After getting your TIP, how long must you practice before taking the driving skills test?",
+  "choices": [
+   "At least 180 days",
+   "At least 7 days",
+   "At least 30 days",
+   "At least 6 months"
+  ],
+  "answer": 3,
+  "oneLineConcept": "New adult drivers: practice 30 days on a TIP first",
+  "explanation": "New drivers **18 or older** get a **TIP** after passing the **vision**, **written knowledge**, and **road sign** tests. They must **practice at least 30 days** with a licensed adult before taking the **driving skills test**.\n\n**Wrong choices**\n- At least 180 days: 180 days is how long a TIP is valid, not the practice minimum.\n- At least 7 days: The minimum is 30 days.\n- At least 6 months: Six months is a teen Level 1 rule.",
+  "frequency": 4,
+  "tags": [
+   "TIP",
+   "adult drivers"
+  ],
+  "distractorOrder": "1|4|2"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "gdl-licensing",
+  "source": "predicted",
+  "level": "intermediate",
+  "stem": "A driver under age 21 gets a Michigan license. When does it expire?",
+  "choices": [
+   "On the driver's 21st birthday",
+   "Four years after it is issued",
+   "On the driver's 18th birthday",
+   "Every 12 years"
+  ],
+  "answer": 1,
+  "oneLineConcept": "Under 21: license expires on your 21st birthday",
+  "explanation": "A Michigan driver's license is **usually valid for four years** and expires on your **birthday**. If you are **under 21**, it expires on your **21st birthday**.\n\n**Wrong choices**\n- Four years after it is issued: Most licenses last about four years, but a license for someone under 21 expires on the 21st birthday.\n- On the driver's 18th birthday: Graduated licensing ends at 18, but the license runs to age 21.\n- Every 12 years: 12 years is how often you must renew in person.",
+  "frequency": 3,
+  "tags": [
+   "license expiration"
+  ],
+  "distractorOrder": "2|3|4"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "gdl-licensing",
+  "source": "predicted",
+  "level": "advanced",
+  "stem": "Which set of requirements qualifies a teen for a Level 3 Full License?",
+  "choices": [
+   "At least 16, Level 2 held 3 months, and 90 days with a clean record",
+   "At least 17, Level 2 held 6 months, and 12 straight months with no violation, at-fault crash, or suspension",
+   "At least 16, with a Level 1 license held 6 months",
+   "At least 17, Level 2 held 6 months, and 6 clean months"
+  ],
+  "answer": 2,
+  "oneLineConcept": "Level 3: age 17+, Level 2 for 6 months, 12 clean months",
+  "explanation": "For a **Level 3 Full License**, you must be **at least 17**, have held **Level 2 for six months**, and driven **12 consecutive months** with **no moving violation, at-fault crash, suspension, or GDL violation**. It is issued **automatically** if parents have authorized it.\n\n**Wrong choices**\n- At least 16, Level 2 held 3 months, and 90 days with a clean record: Those numbers are too low; Level 3 needs age 17, six months, and 12 clean months.\n- At least 16, with a Level 1 license held 6 months: Those are the Level 2 requirements, not Level 3.\n- At least 17, Level 2 held 6 months, and 6 clean months: The clean-record period is 12 consecutive months.",
+  "frequency": 3,
+  "tags": [
+   "level 3"
+  ],
+  "distractorOrder": "1|3|4"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "gdl-licensing",
+  "source": "predicted",
+  "level": "advanced",
+  "stem": "A Level 2 driver finishes a work shift at 11:30 p.m. and drives home alone. Is this allowed?",
+  "choices": [
+   "No, Level 2 drivers may never drive after 10 p.m.",
+   "Only with a written note from the employer in the car",
+   "Only if a passenger age 18 or older rides along",
+   "Yes, because driving to or from work is an exception to the night rule"
+  ],
+  "answer": 4,
+  "oneLineConcept": "Level 2 night limit has a work exception",
+  "explanation": "The Level 2 **10 p.m. to 5 a.m.** restriction does **not** apply when driving **in the course of employment** or **to or from work** or an **authorized activity**, or when a **parent or designated adult 21+** is along.\n\n**Wrong choices**\n- No, Level 2 drivers may never drive after 10 p.m.: Driving to or from employment is a listed exception.\n- Only with a written note from the employer in the car: The rule does not mention an employer note.\n- Only if a passenger age 18 or older rides along: No passenger is needed when driving to or from work, and a supervising adult would have to be 21 or older anyway.",
+  "frequency": 3,
+  "tags": [
+   "level 2",
+   "exceptions"
+  ],
+  "distractorOrder": "1|3|2"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "gdl-licensing",
+  "source": "predicted",
+  "level": "advanced",
+  "stem": "With a Level 1 or Level 2 license, which phone use is legal while driving?",
+  "choices": [
+   "Making a hands-free call to a friend",
+   "Answering a parent's call with voice commands",
+   "Calling 9-1-1 to report a crash",
+   "None of the above"
+  ],
+  "answer": 3,
+  "oneLineConcept": "Kelsey's Law: GDL 1 and 2 drivers may make emergency calls only",
+  "explanation": "Under **Kelsey's Law**, drivers with a **Level 1 or Level 2** license may **not make or receive non-emergency calls**, even **hands-free**. They **may** use a phone to call **9-1-1** or report an **emergency** such as a crash.\n\n**Wrong choices**\n- Making a hands-free call to a friend: Non-emergency calls are banned for Level 1 and 2 drivers, even hands-free.\n- Answering a parent's call with voice commands: Answering a non-emergency call is banned, even by voice command.\n- None of the above: Emergency calls are allowed, so this is not correct.",
+  "frequency": 4,
+  "tags": [
+   "Kelsey's Law",
+   "phones"
+  ],
+  "levelLock": true
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "alcohol-points",
+  "source": "predicted",
+  "level": "basic",
+  "stem": "At what blood alcohol content (BAC) is a driver age 21 or older operating while intoxicated (OWI)?",
+  "choices": [
+   "0.08 or higher",
+   "0.05 or higher",
+   "0.10 or higher",
+   "0.02 or higher"
+  ],
+  "answer": 1,
+  "oneLineConcept": "OWI: BAC of 0.08 or more",
+  "explanation": "In Michigan, a driver with a **BAC of 0.08 or more** is **operating while intoxicated (OWI)**. A BAC of **0.17 or more** brings **higher \"super drunk\" penalties**. Even **one drink** can slow your reactions.\n\n**Wrong choices**\n- 0.05 or higher: The OWI level is 0.08, though even one drink can impair you.\n- 0.10 or higher: Michigan's OWI level is 0.08.\n- 0.02 or higher: The OWI level for drivers 21 and older is 0.08.",
+  "frequency": 5,
+  "tags": [
+   "BAC",
+   "OWI"
+  ],
+  "distractorOrder": "3|2|4"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "alcohol-points",
+  "source": "predicted",
+  "level": "basic",
+  "stem": "How much alcohol may a driver under 21 have in their body?",
+  "choices": [
+   "Less than 0.05",
+   "Less than 0.08",
+   "Less than 0.02",
+   "None; any amount is illegal"
+  ],
+  "answer": 4,
+  "oneLineConcept": "Under 21: zero tolerance for any alcohol",
+  "explanation": "Michigan has **zero tolerance** for drivers **under 21**: **any bodily alcohol content** is illegal. A violation adds **4 points**, and refusing a preliminary breath test under 21 adds **2 points**.\n\n**Wrong choices**\n- Less than 0.05: Any amount is illegal for drivers under 21.\n- Less than 0.08: 0.08 is the OWI level for adults; under 21 any amount is illegal.\n- Less than 0.02: Michigan has zero tolerance; any bodily alcohol content is illegal under 21.",
+  "frequency": 5,
+  "tags": [
+   "zero tolerance",
+   "under 21"
+  ],
+  "distractorOrder": "3|1|2"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "alcohol-points",
+  "source": "predicted",
+  "level": "basic",
+  "stem": "What is the only thing that sobers a person up?",
+  "choices": [
+   "Fresh air and exercise",
+   "Time",
+   "Black coffee",
+   "A cold shower"
+  ],
+  "answer": 2,
+  "oneLineConcept": "Only time sobers you up",
+  "explanation": "Many people think **coffee, a cold shower, exercise, or fresh air** can sober them up. They cannot. **The only thing that sobers you up is time.** Plan a **designated driver** ahead of time.\n\n**Wrong choices**\n- Fresh air and exercise: These do not remove alcohol from your body.\n- Black coffee: Coffee may make you feel awake but does not remove alcohol.\n- A cold shower: A shower does not lower your alcohol level.",
+  "frequency": 5,
+  "tags": [
+   "alcohol",
+   "sobering up"
+  ],
+  "distractorOrder": "3|4|1"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "alcohol-points",
+  "source": "predicted",
+  "level": "basic",
+  "stem": "Which drink has about the same amount of alcohol as a 12-ounce can of beer?",
+  "choices": [
+   "A 5-ounce glass of whiskey",
+   "A 12-ounce glass of wine",
+   "A 5-ounce glass of wine",
+   "Two 12-ounce cans of beer"
+  ],
+  "answer": 3,
+  "oneLineConcept": "12 oz beer = 5 oz wine = 1.5 oz whiskey",
+  "explanation": "A **12-ounce beer**, a **5-ounce glass of wine**, and a **1.5-ounce shot of whiskey** all contain the **same amount of alcohol**. The effects are the same whichever you drink.\n\n**Wrong choices**\n- A 5-ounce glass of whiskey: A standard shot of whiskey is 1.5 ounces.\n- A 12-ounce glass of wine: A standard serving of wine is 5 ounces.\n- Two 12-ounce cans of beer: That is twice as much alcohol.",
+  "frequency": 4,
+  "tags": [
+   "alcohol",
+   "standard drink"
+  ],
+  "distractorOrder": "2|1|4"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "alcohol-points",
+  "source": "predicted",
+  "level": "basic",
+  "stem": "Under Michigan law, who must wear a seat belt?",
+  "choices": [
+   "Only children under 8",
+   "Only the driver",
+   "The driver and all front-seat passengers, plus all passengers under 16 in any seat",
+   "Only people riding on freeways"
+  ],
+  "answer": 3,
+  "oneLineConcept": "Seat belts: everyone in front, and all riders under 16",
+  "explanation": "Michigan requires **everyone in the front seat**, including the driver, and **all passengers under 16** in **any seat** to be buckled. An officer may **stop a vehicle** if people are not properly buckled.\n\n**Wrong choices**\n- Only children under 8: Children under 8 need a car seat or booster; others must also buckle up.\n- Only the driver: Front-seat passengers and all passengers under 16 must also be buckled.\n- Only people riding on freeways: The law applies on all roads.",
+  "frequency": 5,
+  "tags": [
+   "seat belts"
+  ],
+  "distractorOrder": "2|1|4"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "alcohol-points",
+  "source": "predicted",
+  "level": "basic",
+  "stem": "How long do points stay on your Michigan driving record?",
+  "choices": [
+   "Seven years",
+   "Two years from the date of conviction",
+   "One year from the date of the ticket",
+   "Permanently"
+  ],
+  "answer": 2,
+  "oneLineConcept": "Points stay two years from conviction",
+  "explanation": "Points go on your record **only after a conviction** for a moving violation. They stay for **two years from the conviction date**. Most **convictions** themselves stay on your record for **at least seven years**.\n\n**Wrong choices**\n- Seven years: Seven years is how long most convictions stay on the record, not the points.\n- One year from the date of the ticket: Points stay two years and count from conviction.\n- Permanently: Only certain convictions, such as impaired driving, stay permanently; points last two years.",
+  "frequency": 5,
+  "tags": [
+   "points"
+  ],
+  "distractorOrder": "3|1|4"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "alcohol-points",
+  "source": "predicted",
+  "level": "intermediate",
+  "stem": "Until when must a child ride in a car seat or booster seat in Michigan?",
+  "choices": [
+   "Until age 4",
+   "Until age 12",
+   "Until age 8 or 4 feet 9 inches tall, whichever comes first",
+   "Until age 6, if they weigh at least 40 pounds"
+  ],
+  "answer": 3,
+  "oneLineConcept": "Car seat or booster until age 8 or 4 ft 9 in",
+  "explanation": "Children must ride in a **car seat or booster** until they are **8 years old** or **4 feet 9 inches tall**, whichever comes first. Children **under 4** must ride in the **rear seat** if there is one. A **rear-facing** seat may go in front only if the **passenger air bag is off**.\n\n**Wrong choices**\n- Until age 4: Children under 4 must ride in the back seat when possible, but car seats are required longer.\n- Until age 12: Age 12 and under is a suggestion for rear-seat riding, not the car seat rule.\n- Until age 6, if they weigh at least 40 pounds: The rule is age 8 or 4 feet 9 inches.",
+  "frequency": 4,
+  "tags": [
+   "child safety seats"
+  ],
+  "distractorOrder": "1|2|4"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "alcohol-points",
+  "source": "predicted",
+  "level": "intermediate",
+  "stem": "What does Michigan's implied consent law mean?",
+  "choices": [
+   "Police need your written permission for any test",
+   "You may refuse a chemical test with no penalty",
+   "It applies only to commercial drivers",
+   "By getting a license, you agree to a chemical test, and refusing leads to a license suspension"
+  ],
+  "answer": 4,
+  "oneLineConcept": "Implied consent: refuse a chemical test, lose your license",
+  "explanation": "Under **implied consent**, all drivers are considered to have **agreed to a chemical test** when they **apply for or renew** their license. **Refusing** results in a **license suspension** and **6 points**.\n\n**Wrong choices**\n- Police need your written permission for any test: Your consent is already given when you apply for or renew your license.\n- You may refuse a chemical test with no penalty: Refusing brings a license suspension and 6 points.\n- It applies only to commercial drivers: It applies to all drivers.",
+  "frequency": 4,
+  "tags": [
+   "implied consent",
+   "chemical test"
+  ],
+  "distractorOrder": "2|1|3"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "alcohol-points",
+  "source": "predicted",
+  "level": "intermediate",
+  "stem": "At what BAC do Michigan's higher high-BAC (\"super drunk\") penalties apply?",
+  "choices": [
+   "0.17 or higher",
+   "0.15 or higher",
+   "0.20 or higher",
+   "0.10 or higher"
+  ],
+  "answer": 1,
+  "oneLineConcept": "High BAC (\"super drunk\"): 0.17 or more",
+  "explanation": "A BAC of **0.08** is **OWI**. At **0.17 or more**, Michigan's **high-BAC** law adds **tougher penalties**. Drivers **under 21** may have **no** alcohol at all.\n\n**Wrong choices**\n- 0.15 or higher: The high-BAC level is 0.17.\n- 0.20 or higher: The penalties start at 0.17.\n- 0.10 or higher: The high-BAC level is 0.17.",
+  "frequency": 4,
+  "tags": [
+   "high BAC"
+  ],
+  "distractorOrder": "2|4|3"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "alcohol-points",
+  "source": "predicted",
+  "level": "intermediate",
+  "stem": "Outside a work zone, how many points are added for driving 16 mph or more over the speed limit?",
+  "choices": [
+   "6 points",
+   "4 points",
+   "2 points",
+   "3 points"
+  ],
+  "answer": 2,
+  "oneLineConcept": "16+ mph over the limit: 4 points",
+  "explanation": "Under the general point system, speeding **6 to 10 mph** over is **2 points**, **11 to 15 mph** over is **3 points**, and **16 mph or more** over is **4 points**. Work zones have their own, higher schedule.\n\n**Wrong choices**\n- 6 points: 6 points is for the most serious offenses, such as reckless driving.\n- 2 points: 2 points is for 6 to 10 mph over.\n- 3 points: 3 points is for 11 to 15 mph over.",
+  "frequency": 4,
+  "tags": [
+   "points",
+   "speeding"
+  ],
+  "distractorOrder": "4|3|1"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "alcohol-points",
+  "source": "predicted",
+  "level": "intermediate",
+  "stem": "Under Michigan's hands-free law, which phone use is allowed for a fully licensed adult driver?",
+  "choices": [
+   "Scrolling social media on a phone in a mount",
+   "Holding the phone to talk while driving",
+   "Using voice or hands-free mode after a single tap to start it",
+   "Typing an address into the GPS by hand while moving"
+  ],
+  "answer": 3,
+  "oneLineConcept": "Hands-free law: no holding; voice mode with one tap is OK",
+  "explanation": "Michigan's **hands-free law** (in effect since **June 30, 2023**) bans **holding or manually using** a phone while driving, including **reading, texting, and calls**. You may use **voice or hands-free mode** after a **single tap** to start or end a function, and you may always call to report an **emergency**.\n\n**Wrong choices**\n- Scrolling social media on a phone in a mount: Reading or posting to social media is not allowed while driving.\n- Holding the phone to talk while driving: Holding a phone while driving is illegal.\n- Typing an address into the GPS by hand while moving: GPS use is allowed only if you do not enter information by hand.",
+  "frequency": 4,
+  "tags": [
+   "hands-free law",
+   "phones"
+  ],
+  "distractorOrder": "2|4|1"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "alcohol-points",
+  "source": "predicted",
+  "level": "advanced",
+  "stem": "You are caught driving 12 mph over the posted limit in a work zone. How many points are added?",
+  "choices": [
+   "4 points",
+   "3 points",
+   "5 points",
+   "2 points"
+  ],
+  "answer": 1,
+  "oneLineConcept": "Work zone, 11-15 mph over: 4 points",
+  "explanation": "Work zones have **higher point values**: **3 points** for 10 mph or less over, **4 points** for **more than 10 but not more than 15** mph over, and **5 points** for more than 15 mph over. Fines are also **doubled**.\n\n**Wrong choices**\n- 3 points: 3 points is the work-zone figure for 10 mph or less over, and the general figure for 11 to 15 over.\n- 5 points: 5 points is for more than 15 mph over in a work zone.\n- 2 points: Work zones carry more points than the general schedule.",
+  "frequency": 4,
+  "tags": [
+   "points",
+   "work zone"
+  ],
+  "distractorOrder": "2|4|3"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "alcohol-points",
+  "source": "predicted",
+  "level": "advanced",
+  "stem": "Which of these violations carries 6 points?",
+  "choices": [
+   "Refusing to take a chemical alcohol test",
+   "Having an open alcohol container in the vehicle",
+   "Careless driving",
+   "Drag racing"
+  ],
+  "answer": 1,
+  "oneLineConcept": "Refusing a chemical test: 6 points",
+  "explanation": "**Six-point** violations include **refusing a chemical test**, **OWI**, **reckless driving**, **fleeing police**, and **failing to stop and identify yourself at a crash**. **Drag racing** is 4 points, **careless driving** is 3, and an **open container** is 2.\n\n**Wrong choices**\n- Having an open alcohol container in the vehicle: An open container is 2 points.\n- Careless driving: Careless driving is 3 points.\n- Drag racing: Drag racing is 4 points.",
+  "frequency": 4,
+  "tags": [
+   "points"
+  ],
+  "distractorOrder": "3|4|2"
+ },
+ {
+  "subjectId": "rules",
+  "chapterId": "alcohol-points",
+  "source": "predicted",
+  "level": "advanced",
+  "stem": "In which situation may the Secretary of State require a driver reexamination?",
+  "choices": [
+   "You have 12 or more points within two years",
+   "You had three or more crashes with injury or damage in two years",
+   "You were convicted of violating the restrictions on your license",
+   "All of the above"
+  ],
+  "answer": 4,
+  "oneLineConcept": "12+ points, 3+ crashes in 2 years, or restriction violations",
+  "explanation": "A **driver reexamination** may be required if you have **12 or more points** in **two years**, **three or more crashes** with injury or property damage in **two years**, or a **conviction for violating license restrictions**, among other reasons. **Probationary and GDL** drivers may be called in after just **one or two** violations.\n\n**Wrong choices**\n- You have 12 or more points within two years: This is a reason for reexamination, but not the only one listed.\n- You had three or more crashes with injury or damage in two years: This is a reason for reexamination, but not the only one listed.\n- You were convicted of violating the restrictions on your license: This is a reason for reexamination, but not the only one listed.",
+  "frequency": 3,
+  "tags": [
+   "reexamination",
+   "points"
+  ],
+  "levelLock": true
+ }
+]
