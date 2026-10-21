@@ -3,46 +3,78 @@
   "date": "2026-10-21",
   "sourceChecked": "Michigan Department of State 'What Every Driver Must Know' (SOS-133, Rev. 10/2025), extracted text /tmp/claude-0/mi/wedmk.txt (Ch.1 pp.3-9, Ch.2 pp.13-15, Ch.4 pp.24-39, Ch.5 pp.41-51, Ch.6 pp.53-57, Ch.7 pp.60-65); Michigan Vehicle Code MCL 257.625 (0.08 OWI, 0.17 high BAC, under 21 any bodily alcohol content) and MCL 257.602b (hands-free law, effective 2023-06-30), both as cited in concepts.json; MUTCD 2023 for sign shapes and colors. Verbatim check: handbook columns split and compared by word n-grams.",
   "chapters": {
-    "regulatory-signs": {"result": "PASS", "issues": [
-      "Note only: summary 'Some shapes belong to only one sign, so you can recognize them even when the words are hidden by snow or seen from behind' is not in the handbook. The idea that STOP and YIELD shapes are only used for those signs is MUTCD. The snow and back-of-sign reason is not in the handbook. Consider removing the reason → Handbook Ch.5 p.41",
-      "Note only: summary 'The handbook lists nine basic shapes' gives a number that is not in this chapter's cards or points (only in the figure alt). Consider adding a point → Handbook Ch.5 p.41",
-      "Note only: the 'Red circle and slash' card is not in the handbook. The handbook only says 'Red: Stop/prohibited/forbidden' and shows NO U-TURN and NO TRUCKS signs. The fact is correct (MUTCD 2A). → Handbook Ch.5 pp.42, 44",
-      "Note only: the 'Basic Speed Law' card is about speed, not signs, and is repeated in speed-passing-parking. Consider moving it → Handbook Ch.4 p.26"
-    ]},
-    "warning-signs": {"result": "PASS", "issues": [
-      "Note only: the 'Work zone signs' card says 'Orange diamond signs'. The handbook says construction warning signs are diamonds with black letters 'on an orange or yellow background'. → Handbook Ch.4 p.26",
-      "Note only: the pennant tip 'The pennant faces the passing lane side' is unclear. The handbook says only that it stands on the left side of the road. Consider 'It stands on the left side, facing your passing lane' or removing the tip → Handbook Ch.5 p.45 (#40)"
-    ]},
-    "guide-signs": {"result": "PASS", "issues": [
-      "Note only: the 'Blue signs' card lists 'food, lodging'. The handbook examples are only gas pump and rest area. The fact is correct (MUTCD 2J) → Handbook Ch.5 pp.42, 44",
-      "Note only: the Emergency Notification tip 'Stuck on the tracks with no train coming: call this number, then 911' leaves out the first step. The handbook says first get everyone out of the vehicle and away from the tracks, then call. Consider 'Get everyone out, then call this number, then 911' → Handbook Ch.4 pp.36-37"
-    ]},
-    "signals-markings": {"result": "PASS", "issues": [
-      "Note only: compare row 'Solid red | Oncoming traffic: Moving' is not in the handbook. During a red arrow, oncoming traffic may have a green light, but it is not always moving. Consider '—' or 'May have a green light' → Handbook Ch.5 p.50"
-    ]},
-    "right-of-way": {"result": "FAIL", "issues": [
-      "Misleading: point 'School buses, for-hire passenger vehicles, and hazmat vehicles stop at every crossing.' The handbook says they must stop 'unless clearly marked otherwise' (exempt crossings). Change to '...must stop at railroad crossings unless clearly marked otherwise' → Handbook Ch.4 p.36",
-      "Fix (verbatim): the 'Divided highway exception' card copies 18 words in a row from the handbook ('on the other side of a highway divided by a barrier ... such as a concrete or grass median'). Reword, for example 'If a concrete or grass median separates you from the bus, you do not have to stop' → Handbook Ch.4 p.28",
-      "Note only: summary 'At a T-intersection, traffic on the through road goes first' leaves out the handbook's condition 'without any signals or signs' → Handbook Ch.4 p.30",
-      "Note only: the 'Railroad crossing' card says 'Do not cross unless your vehicle can clear the far side by at least 6 feet'. In the handbook, this rule is for a crossing where traffic may be backed up. It is fine as a general rule, but you could add 'when traffic is backed up' → Handbook Ch.4 p.36"
-    ]},
-    "speed-passing-parking": {"result": "PASS", "issues": [
-      "Note only: the 'No-passing zones' card says 'or on a hill or curve'. The handbook says 'approaching a hill or curve that prevents you from seeing oncoming traffic clearly'. Consider adding 'where you cannot see ahead' → Handbook Ch.4 p.32"
-    ]},
-    "safe-driving": {"result": "PASS", "issues": [
-      "Note only: summary 'add more at higher speeds, at night, and in bad weather'. The handbook says to add following distance 'when speeds are increased, or during adverse driving conditions'. 'At night' is not stated. Consider removing it → Handbook Ch.7 p.64"
-    ]},
-    "gdl-licensing": {"result": "PASS", "issues": [
-      "Note only: the 'Driving skills test (teens)' card leaves out the requirement of no convictions, civil infractions, suspensions or at-fault crashes in the 90 days before the test. It is correct but incomplete → Handbook Ch.1 pp.5, 8"
-    ]},
-    "alcohol-points": {"result": "PASS", "issues": [
-      "Note only: the BAC numbers (0.08, 0.17, under 21 any bodily alcohol content) are not in the handbook. They are correct under MCL 257.625(1), (1)(c), (6), and the card has a source (MSP/OHSP). Consider citing MCL 257.625 directly. The tip word 'super drunk' is the common name for Michigan's high-BAC law.",
-      "Note only: the 'Hands-free law' date 'June 30, 2023' is not in the handbook. It is correct (MCL 257.602b as amended by PA 2023-41/42/43), and the card has a source."
-    ]}
+    "regulatory-signs": {
+      "result": "PASS",
+      "issues": [
+        "Note only: summary 'Some shapes belong to only one sign, so you can recognize them even when the words are hidden by snow or seen from behind' is not in the handbook. The idea that STOP and YIELD shapes are only used for those signs is MUTCD. The snow and back-of-sign reason is not in the handbook. Consider removing the reason → Handbook Ch.5 p.41",
+        "Note only: summary 'The handbook lists nine basic shapes' gives a number that is not in this chapter's cards or points (only in the figure alt). Consider adding a point → Handbook Ch.5 p.41",
+        "Note only: the 'Red circle and slash' card is not in the handbook. The handbook only says 'Red: Stop/prohibited/forbidden' and shows NO U-TURN and NO TRUCKS signs. The fact is correct (MUTCD 2A). → Handbook Ch.5 pp.42, 44",
+        "Note only: the 'Basic Speed Law' card is about speed, not signs, and is repeated in speed-passing-parking. Consider moving it → Handbook Ch.4 p.26"
+      ]
+    },
+    "warning-signs": {
+      "result": "PASS",
+      "issues": [
+        "Note only: the 'Work zone signs' card says 'Orange diamond signs'. The handbook says construction warning signs are diamonds with black letters 'on an orange or yellow background'. → Handbook Ch.4 p.26",
+        "Note only: the pennant tip 'The pennant faces the passing lane side' is unclear. The handbook says only that it stands on the left side of the road. Consider 'It stands on the left side, facing your passing lane' or removing the tip → Handbook Ch.5 p.45 (#40)"
+      ]
+    },
+    "guide-signs": {
+      "result": "PASS",
+      "issues": [
+        "Note only: the 'Blue signs' card lists 'food, lodging'. The handbook examples are only gas pump and rest area. The fact is correct (MUTCD 2J) → Handbook Ch.5 pp.42, 44",
+        "Note only: the Emergency Notification tip 'Stuck on the tracks with no train coming: call this number, then 911' leaves out the first step. The handbook says first get everyone out of the vehicle and away from the tracks, then call. Consider 'Get everyone out, then call this number, then 911' → Handbook Ch.4 pp.36-37"
+      ]
+    },
+    "signals-markings": {
+      "result": "PASS",
+      "issues": [
+        "Note only: compare row 'Solid red | Oncoming traffic: Moving' is not in the handbook. During a red arrow, oncoming traffic may have a green light, but it is not always moving. Consider '—' or 'May have a green light' → Handbook Ch.5 p.50"
+      ]
+    },
+    "right-of-way": {
+      "result": "FAIL",
+      "issues": [
+        "Misleading: point 'School buses, for-hire passenger vehicles, and hazmat vehicles stop at every crossing.' The handbook says they must stop 'unless clearly marked otherwise' (exempt crossings). Change to '...must stop at railroad crossings unless clearly marked otherwise' → Handbook Ch.4 p.36",
+        "Fix (verbatim): the 'Divided highway exception' card copies 18 words in a row from the handbook ('on the other side of a highway divided by a barrier ... such as a concrete or grass median'). Reword, for example 'If a concrete or grass median separates you from the bus, you do not have to stop' → Handbook Ch.4 p.28",
+        "Note only: summary 'At a T-intersection, traffic on the through road goes first' leaves out the handbook's condition 'without any signals or signs' → Handbook Ch.4 p.30",
+        "Note only: the 'Railroad crossing' card says 'Do not cross unless your vehicle can clear the far side by at least 6 feet'. In the handbook, this rule is for a crossing where traffic may be backed up. It is fine as a general rule, but you could add 'when traffic is backed up' → Handbook Ch.4 p.36"
+      ]
+    },
+    "speed-passing-parking": {
+      "result": "PASS",
+      "issues": [
+        "Note only: the 'No-passing zones' card says 'or on a hill or curve'. The handbook says 'approaching a hill or curve that prevents you from seeing oncoming traffic clearly'. Consider adding 'where you cannot see ahead' → Handbook Ch.4 p.32"
+      ]
+    },
+    "safe-driving": {
+      "result": "PASS",
+      "issues": [
+        "Note only: summary 'add more at higher speeds, at night, and in bad weather'. The handbook says to add following distance 'when speeds are increased, or during adverse driving conditions'. 'At night' is not stated. Consider removing it → Handbook Ch.7 p.64"
+      ]
+    },
+    "gdl-licensing": {
+      "result": "PASS",
+      "issues": [
+        "Note only: the 'Driving skills test (teens)' card leaves out the requirement of no convictions, civil infractions, suspensions or at-fault crashes in the 90 days before the test. It is correct but incomplete → Handbook Ch.1 pp.5, 8"
+      ]
+    },
+    "alcohol-points": {
+      "result": "PASS",
+      "issues": [
+        "Note only: the BAC numbers (0.08, 0.17, under 21 any bodily alcohol content) are not in the handbook. They are correct under MCL 257.625(1), (1)(c), (6), and the card has a source (MSP/OHSP). Consider citing MCL 257.625 directly. The tip word 'super drunk' is the common name for Michigan's high-BAC law.",
+        "Note only: the 'Hands-free law' date 'June 30, 2023' is not in the handbook. It is correct (MCL 257.602b as amended by PA 2023-41/42/43), and the card has a source."
+      ]
+    }
   },
   "figures": {
     "sign-shapes.svg": "① PASS ② PASS (octagon STOP, point-down red/white YIELD, yellow diamond, yellow-green pentagon, yellow pennant, green guide rectangle, white vertical regulatory rectangle, round yellow sign with X and two R letters, white crossbuck) ③ PASS ⑤ PASS (matches alt/caption and the handbook's nine shapes)",
     "warning-sign-colors.svg": "① PASS ② PASS (RR advance warning has X and two R letters; slow-moving vehicle emblem is an orange triangle with red border) ③ PASS ⑤ PASS (matches compare table and alt). Note: the slow-moving vehicle emblem is not an MUTCD sign, but the figure source names only MUTCD",
     "lane-lines.svg": "① PASS ② PASS (yellow center line for two-way traffic, solid yellow on the no-passing side, broken white between same-direction lanes, yellow left edge / white right edge) ③ PASS ⑤ PASS (matches alt, caption and the 'Yellow and white lines' card)"
+  },
+  "recheck": {
+    "date": "2026-10-22",
+    "result": "PASS",
+    "scope": "right-of-way points[5]·concepts[1], regulatory-signs summary[0], guide-signs concepts[4], signals-markings compare, speed-passing-parking concepts[2], safe-driving summary[0] 를 고친 뒤 별도 에이전트가 핸드북과 다시 대조, 8곳 모두 PASS. right-of-way 단원 PASS 로 바뀜. warning-sign-colors 그림은 R 두 글자를 더한 뒤 1차 개념 검증에서 체크리스트 ①②③⑤ PASS."
   }
 }

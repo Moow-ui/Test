@@ -36,3 +36,9 @@
 
 - 기출 0 / AI 149.
 - 기출 미수록 사유: Michigan Department of State 는 실제 시험 문제은행을 공개하지 않는다. 핸드북의 Safe Driving Knowledge Test(샘플 문항)는 michigan.gov 이용 정책이 복제·2차적 저작물 작성을 사전 서면 허락 없이 금지해 이용 조건 불가.
+
+## 개념 정리
+
+- 9단원 1차 검증: 8 PASS, right-of-way FAIL(철도 건널목 정지 대상에서 "따로 표시가 없으면" 조건 빠짐, 분리대 예외 카드가 핸드북 문장과 18단어 같음).
+- 고친 곳(그 단원과 검증 의견의 사소한 표현 5곳: 눈·뒤에서 본 표지 문장, 파란 표지 팁, 화살표 신호 비교표, 언덕·커브 추월 금지 조건, 야간 차간 거리)을 별도 에이전트가 다시 확인해 모두 PASS → 9단원 `verifiedAt` 2026-10-22.
+- 개념 그림 3장(sign-shapes·warning-sign-colors·lane-lines) ①②③⑤ PASS. 검증 기록 `reports/2026-10/concepts-verify/verify-dmv-permit-michigan.json`.
