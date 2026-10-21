@@ -1,0 +1,632 @@
+[
+  {
+    "id": "dmv-permit-michigan-right-of-way-0001",
+    "certId": "dmv-permit-michigan",
+    "subjectId": "rules",
+    "chapterId": "right-of-way",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "When must you stop for a school bus?",
+    "choices": [
+      "Whenever the bus is slowing down",
+      "When its red overhead lights are flashing",
+      "When its yellow hazard lights are flashing",
+      "Only when you can see children near the bus"
+    ],
+    "answer": 2,
+    "oneLineConcept": "School bus red lights flashing: stop",
+    "explanation": "**Flashing red overhead lights** mean the bus is **picking up or dropping off** passengers. **Stop** and stay stopped until the red lights **turn off** or the bus moves again. **Flashing yellow overhead lights** mean **be prepared to stop**.\n\n**Wrong choices**\n- Whenever the bus is slowing down: A slowing bus alone does not require a stop.\n- When its yellow hazard lights are flashing: Yellow hazard lights mean go ahead with caution.\n- Only when you can see children near the bus: You must stop for the red lights whether or not you see children.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-22",
+    "tags": [
+      "school bus"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-michigan-right-of-way-0002",
+    "certId": "dmv-permit-michigan",
+    "subjectId": "rules",
+    "chapterId": "right-of-way",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "How far from a school bus with flashing red lights must you stop?",
+    "choices": [
+      "At least 10 feet",
+      "At least 100 feet",
+      "At least 20 feet",
+      "At least 5 feet"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Stop at least 20 feet from a bus with red lights",
+    "explanation": "Stop **at least 20 feet** from a school bus with its **red overhead lights flashing**. Children may dart into the street, so stay alert. Fines for not stopping are **double** the normal amount.\n\n**Wrong choices**\n- At least 10 feet: Michigan requires at least 20 feet.\n- At least 100 feet: The legal minimum is 20 feet.\n- At least 5 feet: That is far too close; the law says 20 feet.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-22",
+    "tags": [
+      "school bus",
+      "distance"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-michigan-right-of-way-0003",
+    "certId": "dmv-permit-michigan",
+    "subjectId": "rules",
+    "chapterId": "right-of-way",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "An ambulance with flashing lights and siren comes up behind you. What should you do?",
+    "choices": [
+      "Speed up to stay ahead of it",
+      "Pull over to the right edge of the road, clear of intersections, and stop",
+      "Stop right where you are, even in an intersection",
+      "Keep driving at the same speed"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Siren and lights: pull right, clear of intersections, stop",
+    "explanation": "When an emergency vehicle approaches with **lights and siren**, **pull over to the right edge** of the road, **clear of intersections**, and **stop** until it passes. Keep a foot on the brake so its driver sees your brake lights, and watch for **more than one** emergency vehicle.\n\n**Wrong choices**\n- Speed up to stay ahead of it: You must get out of its way, not race it.\n- Stop right where you are, even in an intersection: Stopping inside an intersection can block the ambulance.\n- Keep driving at the same speed: You must yield the right of way and stop.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-22",
+    "tags": [
+      "emergency vehicles"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-michigan-right-of-way-0004",
+    "certId": "dmv-permit-michigan",
+    "subjectId": "rules",
+    "chapterId": "right-of-way",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "When must you yield to a pedestrian in a marked crosswalk?",
+    "choices": [
+      "Only when your light is red",
+      "Only if the crosswalk is at an intersection",
+      "Only if the pedestrian is a child",
+      "Always, even if your light is green"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Pedestrians in a crosswalk: yield, even on green",
+    "explanation": "You must **yield to pedestrians** in a **marked crosswalk**, at an intersection or **midblock**, **even if your light is green**. Take extra care around children, older people, and people with disabilities.\n\n**Wrong choices**\n- Only when your light is red: You must yield even on green.\n- Only if the crosswalk is at an intersection: You must also yield at marked midblock crosswalks.\n- Only if the pedestrian is a child: You must yield to all pedestrians in the crosswalk.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-22",
+    "tags": [
+      "pedestrians",
+      "crosswalk"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-michigan-right-of-way-0005",
+    "certId": "dmv-permit-michigan",
+    "subjectId": "rules",
+    "chapterId": "right-of-way",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "You are turning left on a green light. Whom must you yield to?",
+    "choices": [
+      "Only vehicles behind you",
+      "No one, because your light is green",
+      "Oncoming traffic",
+      "Only trucks and buses"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Left turn on green: yield to oncoming traffic",
+    "explanation": "Drivers **turning left** must **yield to oncoming traffic**, including on a **green light**. Wait until **all oncoming traffic has cleared**. Watch especially for **motorcycles and bicycles**, whose speed is easy to misjudge.\n\n**Wrong choices**\n- Only vehicles behind you: The danger is from oncoming vehicles, not ones behind.\n- No one, because your light is green: A green light does not give a left-turning driver the right of way over oncoming traffic.\n- Only trucks and buses: You must yield to all oncoming traffic.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-22",
+    "tags": [
+      "left turns"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-michigan-right-of-way-0006",
+    "certId": "dmv-permit-michigan",
+    "subjectId": "rules",
+    "chapterId": "right-of-way",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "As a driver, to whom must you yield?",
+    "choices": [
+      "A pedestrian using a white cane or guide dog",
+      "A pedestrian crossing from a driveway or alley",
+      "A pedestrian who entered the crosswalk before the signal changed",
+      "All of the above"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Yield to pedestrians in all of these situations",
+    "explanation": "Michigan law requires you to **yield** to a pedestrian with a **white cane or guide dog**, to a pedestrian crossing from an **alley, driveway, building, or private road**, and to one who **entered the crosswalk before the signal changed**. Avoid honking or revving near people who are blind.\n\n**Wrong choices**\n- A pedestrian using a white cane or guide dog: You must yield here, but this is not the only correct situation.\n- A pedestrian crossing from a driveway or alley: You must yield here, but this is not the only correct situation.\n- A pedestrian who entered the crosswalk before the signal changed: You must yield here, but this is not the only correct situation.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-22",
+    "tags": [
+      "pedestrians"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "dmv-permit-michigan-right-of-way-0007",
+    "certId": "dmv-permit-michigan",
+    "subjectId": "rules",
+    "chapterId": "right-of-way",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "When you enter a roundabout, whom must you yield to?",
+    "choices": [
+      "Traffic already in the roundabout, coming from your left",
+      "Traffic waiting to enter from your right",
+      "No one; entering traffic has the right of way",
+      "Only large trucks"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Roundabout: yield to traffic from the left, already circling",
+    "explanation": "Traffic in a roundabout moves **counterclockwise** around the center island. When entering, **yield to traffic approaching from the left**, including bicyclists and pedestrians. **Vehicles in the roundabout have the right of way.** Never make a left turn to enter.\n\n**Wrong choices**\n- Traffic waiting to enter from your right: Vehicles already circling have the right of way, and they come from your left.\n- No one; entering traffic has the right of way: Vehicles in the roundabout have the right of way.\n- Only large trucks: You must yield to all traffic in the roundabout, including bicyclists and pedestrians.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-22",
+    "tags": [
+      "roundabouts"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-michigan-right-of-way-0008",
+    "certId": "dmv-permit-michigan",
+    "subjectId": "rules",
+    "chapterId": "right-of-way",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "At a railroad crossing the lights are flashing and the gates are down, but you do not see a train. What should you do?",
+    "choices": [
+      "Cross if you look both ways and see nothing",
+      "Stay stopped until the gates go up and the lights stop flashing",
+      "Drive under the gate arms if there is room",
+      "Drive around the gates carefully"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Gates down or lights flashing: stop and wait",
+    "explanation": "Stop when the **bells ring**, the **lights flash**, or the **gate is down or moving**. **Never** drive through, around, or under an activated crossing. After the train passes, wait until the **gates rise**, the **lights and bells stop**, and you are sure **all tracks are clear**.\n\n**Wrong choices**\n- Cross if you look both ways and see nothing: The warning devices are on because a train is coming.\n- Drive under the gate arms if there is room: Never go under lowered gates.\n- Drive around the gates carefully: Never drive through, around, or under an activated crossing system.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-22",
+    "tags": [
+      "railroad",
+      "gates"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-michigan-right-of-way-0009",
+    "certId": "dmv-permit-michigan",
+    "subjectId": "rules",
+    "chapterId": "right-of-way",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "At a four-way stop, you and another driver stop at the same time. The other car is on your right. Who should go first?",
+    "choices": [
+      "Whoever honks first",
+      "Whichever vehicle is larger",
+      "The other car, because the driver on the left yields to the one on the right",
+      "You, because the car on the right yields to the left"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Four-way stop tie: left yields to right",
+    "explanation": "At a **four-way stop**, the driver who **stopped first goes first**. If two vehicles arrive **at the same time**, the vehicle **on the left yields** to the vehicle **on its right**.\n\n**Wrong choices**\n- Whoever honks first: The horn does not give the right of way.\n- Whichever vehicle is larger: Vehicle size does not decide the right of way.\n- You, because the car on the right yields to the left: It is the other way around.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-22",
+    "tags": [
+      "four-way stop"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-michigan-right-of-way-0010",
+    "certId": "dmv-permit-michigan",
+    "subjectId": "rules",
+    "chapterId": "right-of-way",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "You are on a highway divided by a grass median. A school bus on the other side has its red lights flashing. What must you do?",
+    "choices": [
+      "Speed up to pass before children cross",
+      "You do not have to stop, but watch carefully as you pass",
+      "Stop at least 20 feet from the bus",
+      "Pull onto the shoulder and stop"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Divided by a median: other side need not stop for the bus",
+    "explanation": "You do **not** have to stop for a school bus on the **other side** of a highway **divided by a barrier**, such as a **concrete or grass median** or island. Vehicles on the **same side** as the bus **must stop**.\n\n**Wrong choices**\n- Speed up to pass before children cross: Speeding near a school bus is never safe.\n- Stop at least 20 feet from the bus: That rule applies to vehicles on the same side. A barrier or median means the other side need not stop.\n- Pull onto the shoulder and stop: No stop is required on the other side of a divided highway.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-22",
+    "tags": [
+      "school bus",
+      "divided highway"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-michigan-right-of-way-0011",
+    "certId": "dmv-permit-michigan",
+    "subjectId": "rules",
+    "chapterId": "right-of-way",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A police car is stopped on the shoulder with its lights flashing. What does Michigan law require?",
+    "choices": [
+      "Stop behind the police car",
+      "Keep your normal speed since it is on the shoulder",
+      "Slow to at least 10 mph below the posted limit and move over a lane if it is safe",
+      "Slow to 10 mph below the limit, but never change lanes"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Stopped emergency vehicle: slow 10 mph below limit, move over",
+    "explanation": "When you see a **stopped emergency vehicle** with lights flashing, slow to **at least 10 mph below the posted limit** and **move over a lane** if traffic and conditions allow. If you cannot move over, slow down and leave as much space as you can.\n\n**Wrong choices**\n- Stop behind the police car: You are not required to stop; you must slow down and move over.\n- Keep your normal speed since it is on the shoulder: You must slow down even though it is off the road.\n- Slow to 10 mph below the limit, but never change lanes: You should move over a lane when traffic and conditions allow.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-22",
+    "tags": [
+      "move over",
+      "emergency vehicles"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-michigan-right-of-way-0012",
+    "certId": "dmv-permit-michigan",
+    "subjectId": "rules",
+    "chapterId": "right-of-way",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "How far behind a moving emergency vehicle with flashing lights and siren must you stay?",
+    "choices": [
+      "At least 500 feet",
+      "At least 100 feet",
+      "At least 200 feet",
+      "At least 50 feet"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Stay 500 feet behind a moving emergency vehicle",
+    "explanation": "Stay **at least 500 feet** behind a **moving** emergency vehicle with **flashing lights and siren**. **Never pass** one unless its driver or a police officer tells you to.\n\n**Wrong choices**\n- At least 100 feet: That is too close; stay 500 feet back.\n- At least 200 feet: The law requires at least 500 feet.\n- At least 50 feet: That is far too close; stay 500 feet back.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-22",
+    "tags": [
+      "emergency vehicles",
+      "following distance"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-michigan-right-of-way-0013",
+    "certId": "dmv-permit-michigan",
+    "subjectId": "rules",
+    "chapterId": "right-of-way",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A funeral procession is going through an intersection. Which statement is true?",
+    "choices": [
+      "You must pull over and stop when you see one",
+      "It has no special right of way",
+      "It has the right of way over all vehicles except fire trucks, ambulances, and police",
+      "You may cut through it if you are careful"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Funeral procession: right of way except fire, ambulance, police",
+    "explanation": "**Funeral processions** have the **right of way** over all other vehicles **except fire trucks, ambulances, and police vehicles**. Vehicles in the procession show an **orange flag**. It is a **civil infraction** to cut through one, but you are **not required to pull over**.\n\n**Wrong choices**\n- You must pull over and stop when you see one: Be respectful, but you are not required to pull over.\n- It has no special right of way: Funeral processions do have the right of way over most vehicles.\n- You may cut through it if you are careful: Cutting through a funeral procession is a civil infraction.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-22",
+    "tags": [
+      "funeral procession"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-michigan-right-of-way-0014",
+    "certId": "dmv-permit-michigan",
+    "subjectId": "rules",
+    "chapterId": "right-of-way",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "At a T-intersection with no signs or signals, who has the right of way?",
+    "choices": [
+      "Whoever is going faster",
+      "The vehicle on the left",
+      "Vehicles on the through road",
+      "Vehicles on the road that ends"
+    ],
+    "answer": 3,
+    "oneLineConcept": "T-intersection: yield to traffic on the through road",
+    "explanation": "At a **T-intersection** without signals or signs, **yield the right of way** to vehicles on the **through road**. Stop if needed and wait for a safe gap.\n\n**Wrong choices**\n- Whoever is going faster: Speed never decides the right of way.\n- The vehicle on the left: At a T-intersection, the through road has the right of way.\n- Vehicles on the road that ends: The road that ends must yield to the through road.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-22",
+    "tags": [
+      "T-intersection"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-michigan-right-of-way-0015",
+    "certId": "dmv-permit-michigan",
+    "subjectId": "rules",
+    "chapterId": "right-of-way",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Your car stalls on the tracks. The crossing lights start flashing and the gates come down. What should you do first?",
+    "choices": [
+      "Keep trying to restart the engine",
+      "Get everyone out and far away from the tracks, then call 911",
+      "Call the number on the blue sign before leaving the car",
+      "Stay in the car with seat belts buckled"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Stalled on tracks, gates activated: get out now, then call 911",
+    "explanation": "Once the lights and gates activate or you hear the train horn, you have **about 20 seconds**. **Immediately** get everyone **out** and **as far from the tracks** as possible, then **call 911**. If the signals are **not** on, get out and call the railroad's number on the **blue Emergency Notification Sign**.\n\n**Wrong choices**\n- Keep trying to restart the engine: You have only about 20 seconds; leave the car immediately.\n- Call the number on the blue sign before leaving the car: That is the step when the signals are NOT on. With the gates coming down, get out first.\n- Stay in the car with seat belts buckled: Staying in a car on the tracks is deadly.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-22",
+    "tags": [
+      "railroad",
+      "stuck on tracks"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-michigan-right-of-way-0016",
+    "certId": "dmv-permit-michigan",
+    "subjectId": "rules",
+    "chapterId": "right-of-way",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Traffic is backed up just past a railroad crossing. When may you cross the tracks?",
+    "choices": [
+      "Whenever the lights are not flashing, even if you must stop on the tracks",
+      "As soon as the vehicle ahead has crossed",
+      "Only when there is room for your vehicle to clear the far side of the tracks by at least 6 feet",
+      "Any time you cannot see a train"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Cross only if you can clear the tracks by 6 feet",
+    "explanation": "**Never stop on railroad tracks.** If traffic is backed up near a crossing, do not cross unless there is enough room for your vehicle to **completely clear the far side** of the tracks by **at least 6 feet**.\n\n**Wrong choices**\n- Whenever the lights are not flashing, even if you must stop on the tracks: Never stop on railroad tracks.\n- As soon as the vehicle ahead has crossed: The car ahead may stop and leave you stuck on the tracks.\n- Any time you cannot see a train: Always expect a train; you need room to clear the tracks.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-22",
+    "tags": [
+      "railroad",
+      "traffic backup"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-michigan-right-of-way-0017",
+    "certId": "dmv-permit-michigan",
+    "subjectId": "rules",
+    "chapterId": "right-of-way",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Unless a crossing is clearly marked otherwise, which vehicles must stop at railroad crossings even when there is no stop sign or signal?",
+    "choices": [
+      "Pickup trucks pulling trailers",
+      "School buses, vehicles carrying passengers for hire, and vehicles carrying hazardous materials",
+      "Motorcycles and mopeds",
+      "All passenger cars"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Buses, for-hire passengers, hazmat: always stop at tracks",
+    "explanation": "Unless clearly marked otherwise, **school buses**, vehicles carrying **passengers for hire**, **gasoline trucks**, and other vehicles carrying **hazardous materials** must **stop and make sure no train is coming** at every crossing. Be ready to stop behind them.\n\n**Wrong choices**\n- Pickup trucks pulling trailers: They are not on the list unless they carry hazardous materials.\n- Motorcycles and mopeds: They are not on the list of vehicles that must always stop.\n- All passenger cars: Cars stop when signs, signals, or an approaching train require it.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-22",
+    "tags": [
+      "railroad",
+      "special vehicles"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-michigan-right-of-way-0018",
+    "certId": "dmv-permit-michigan",
+    "subjectId": "rules",
+    "chapterId": "right-of-way",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "You are inside a roundabout when an emergency vehicle with a siren approaches. What should you do?",
+    "choices": [
+      "Stop right where you are inside the circle",
+      "Pull onto the center island",
+      "Do not stop in the roundabout; leave at the nearest exit, pull to the right, and stop",
+      "Keep circling until it has gone by"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Siren in a roundabout: exit at the next exit, then pull over",
+    "explanation": "If an emergency vehicle approaches while you are in a roundabout, **do not stop** in it. **Leave at the nearest exit**, **pull over to the right**, and **stop** to let the emergency vehicle pass.\n\n**Wrong choices**\n- Stop right where you are inside the circle: Stopping in the roundabout can block the emergency vehicle.\n- Pull onto the center island: Never drive onto the center island.\n- Keep circling until it has gone by: Leave at the nearest exit instead.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-22",
+    "tags": [
+      "roundabouts",
+      "emergency vehicles"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  }
+]
