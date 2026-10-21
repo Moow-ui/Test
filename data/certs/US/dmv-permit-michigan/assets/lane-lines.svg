@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 500" width="720" height="500">
+<rect width="720" height="500" fill="#fff"/>
+<text x="20" y="30" font-family="sans-serif" font-size="20" font-weight="bold" fill="#111">Two-way road: yellow center line</text>
+<rect x="0" y="44" width="720" height="140" fill="#8f8f8f"/>
+<line x1="0" y1="50" x2="720" y2="50" stroke="#fff" stroke-width="4"/>
+<line x1="0" y1="178" x2="720" y2="178" stroke="#fff" stroke-width="4"/>
+<line x1="0" y1="110" x2="720" y2="110" stroke="#F2B800" stroke-width="4" stroke-dasharray="26 18"/>
+<line x1="380" y1="119" x2="720" y2="119" stroke="#F2B800" stroke-width="4"/>
+<polygon points="660,72 620,72 620,64 604,78 620,92 620,84 660,84" fill="#fff"/>
+<polygon points="60,142 100,142 100,134 116,148 100,162 100,154 60,154" fill="#fff"/>
+<text x="20" y="212" font-family="sans-serif" font-size="17" fill="#111">Left part: broken yellow only. You may pass when it is safe.</text>
+<text x="20" y="236" font-family="sans-serif" font-size="17" fill="#111">Right part: solid yellow on the lower lane's side. That lane may not pass.</text>
+<text x="20" y="290" font-family="sans-serif" font-size="20" font-weight="bold" fill="#111">Same direction: white lane lines</text>
+<rect x="0" y="304" width="720" height="140" fill="#8f8f8f"/>
+<line x1="0" y1="310" x2="720" y2="310" stroke="#F2B800" stroke-width="4"/>
+<line x1="0" y1="438" x2="720" y2="438" stroke="#fff" stroke-width="4"/>
+<line x1="0" y1="374" x2="720" y2="374" stroke="#fff" stroke-width="4" stroke-dasharray="26 18"/>
+<polygon points="60,336 100,336 100,328 116,342 100,356 100,348 60,348" fill="#fff"/>
+<polygon points="60,402 100,402 100,394 116,408 100,422 100,414 60,414" fill="#fff"/>
+<text x="20" y="464" font-family="sans-serif" font-size="17" fill="#111">Broken white: separates lanes going the same way.</text>
+<text x="20" y="488" font-family="sans-serif" font-size="17" fill="#111">One-way road: solid white marks the right edge, solid yellow the left edge.</text>
+</svg>
