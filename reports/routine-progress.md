@@ -38,7 +38,7 @@
 - 건너뜀: 없음
 - 이어서 할 작업: social-worker-1 2일차(이틀 나눔) — `routine/wip-social-worker-1` 의 wip/README-day2.md: 기출 198문항 분리 검증(원문 대조·다시 풀기·해설 검토), 3교시 실전 75 채울 예상문제, 개념 정리 8단원·분리 검증, 학습 팁, 검사·게시
 - 미실행: 2026-10-08·10-09 (사용량 한도 소진으로 루틴이 시작되지 않음), 2026-10-14~16 (예약 지시의 일시 중지 날짜)
-- 회장 확인 필요: 끝난 작업 브랜치 routine/wip-nclex-rn · routine/wip-licensed-real-estate-agent-2 · routine/wip-dmv-permit-pennsylvania · routine/wip-baker-craftsman · routine/wip-confectioner-craftsman · routine/wip-dmv-permit-illinois · routine/wip-dmv-permit-ohio · routine/wip-beautician-general · routine/wip-dmv-permit-georgia · routine/wip-beautician-skin · routine/wip-care-worker · routine/wip-dmv-permit-north-carolina · routine/wip-dmv-permit-michigan 를 지우지 못함(실행 환경의 git 프록시가 원격 브랜치 삭제를 거절). GitHub 에서 직접 지워 주세요
+- 회장 확인 필요: 끝난 작업 브랜치 routine/wip-nclex-rn · routine/wip-licensed-real-estate-agent-2 · routine/wip-dmv-permit-pennsylvania · routine/wip-baker-craftsman · routine/wip-confectioner-craftsman · routine/wip-dmv-permit-illinois · routine/wip-dmv-permit-ohio · routine/wip-beautician-general · routine/wip-dmv-permit-georgia · routine/wip-beautician-skin · routine/wip-care-worker · routine/wip-dmv-permit-north-carolina · routine/wip-dmv-permit-michigan · routine/wip-images-industrial-safety-engineer 를 지우지 못함(실행 환경의 git 프록시가 원격 브랜치 삭제를 거절). GitHub 에서 직접 지워 주세요
 - 루틴 밖 특별 추가: 2026-10-12 저녁 회장 요청으로 KR adsp · afpk · credit-analyst 3개를 같은 절차(분리 검증 포함)로 추가 ([기록](2026-10/extra-2026-10-12.md)). 루틴의 누적 수·진행 표에는 넣지 않는다. adsp 는 대기 목록에서 뺐고 afpk·credit-analyst 는 원래 대기 목록에 없었다
 
 ## 주간 요약
