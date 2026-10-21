@@ -1,0 +1,789 @@
+[
+  {
+    "id": "dmv-permit-michigan-regulatory-signs-0001",
+    "certId": "dmv-permit-michigan",
+    "subjectId": "signs",
+    "chapterId": "regulatory-signs",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What does this sign tell you?",
+    "choices": [
+      "Stop, then go ahead when the way is clear",
+      "The road is closed for construction ahead",
+      "The road ahead is one-way in your direction",
+      "You must not drive into the road or ramp where it is posted"
+    ],
+    "answer": 4,
+    "oneLineConcept": "DO NOT ENTER: you may not drive in where it is posted",
+    "explanation": "This is the **DO NOT ENTER** sign: a red circle with a white bar on a white square. You are **not allowed to enter** where it is posted. You often see it at freeway exit ramps, so drivers do not go up the ramp the wrong way.\n\n**Wrong choices**\n- Stop, then go ahead when the way is clear: That is what a STOP sign means. STOP signs are red octagons, not a red circle with a white bar.\n- The road is closed for construction ahead: Construction and maintenance signs are orange.\n- The road ahead is one-way in your direction: A one-way sign is a black and white arrow sign. This sign forbids entry instead.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-22",
+    "tags": [
+      "regulatory signs",
+      "do not enter"
+    ],
+    "image": "do-not-enter.svg",
+    "imageAlt": "A white square sign. Inside is a large red circle with a wide white horizontal bar across its middle. White capital words appear above and below the bar.",
+    "imageSource": {
+      "kind": "public",
+      "title": "MUTCD sign R5-1 (FHWA)",
+      "license": "U.S. federal government work, public domain"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-michigan-regulatory-signs-0002",
+    "certId": "dmv-permit-michigan",
+    "subjectId": "signs",
+    "chapterId": "regulatory-signs",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What does this sign mean?",
+    "choices": [
+      "U-turns are allowed when no traffic is coming",
+      "You may not make a U-turn here",
+      "Keep to the left of the island ahead",
+      "The road ahead has a sharp hairpin curve"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Red circle and slash over a U-turn arrow: no U-turns",
+    "explanation": "Red on a sign means **stop or not allowed**. A red circle with a slash across a **U-turn arrow** means **U-turns are prohibited** at this place.\n\n**Wrong choices**\n- U-turns are allowed when no traffic is coming: A red circle and slash forbids the action at all times, not only when traffic is present.\n- Keep to the left of the island ahead: A keep-left sign shows an arrow passing an obstacle and has no red circle or slash.\n- The road ahead has a sharp hairpin curve: Curve warnings are yellow diamond signs, not white signs with a red circle.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-22",
+    "tags": [
+      "regulatory signs",
+      "u-turn"
+    ],
+    "image": "no-u-turn.svg",
+    "imageAlt": "A white square sign with a black border. A black arrow goes up, bends over the top like an upside-down U, and points back down. A red circle surrounds the arrow and a red diagonal line crosses it from upper left to lower right.",
+    "imageSource": {
+      "kind": "public",
+      "title": "MUTCD sign R3-4 (FHWA)",
+      "license": "U.S. federal government work, public domain"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-michigan-regulatory-signs-0003",
+    "certId": "dmv-permit-michigan",
+    "subjectId": "signs",
+    "chapterId": "regulatory-signs",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "You are stopped at a red light and this sign is posted at the corner. What may you do?",
+    "choices": [
+      "Turn right only once the light turns green",
+      "Turn right after a full stop if the way is clear",
+      "Not turn right here, even after the light turns green",
+      "Turn right only if no pedestrians are in the crosswalk"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Red circle and slash over a right arrow: no right turn",
+    "explanation": "This is the **NO RIGHT TURN** sign. The red circle and slash over a right-turn arrow mean **right turns are prohibited** here, whatever color the light shows. Go straight or turn left if that is allowed.\n\n**Wrong choices**\n- Turn right only once the light turns green: The sign does not depend on the light. Right turns are not allowed here on any color.\n- Turn right after a full stop if the way is clear: That is the normal right turn on red. This sign bans right turns at this corner completely.\n- Turn right only if no pedestrians are in the crosswalk: Pedestrians do not change the rule. The turn itself is prohibited.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-22",
+    "tags": [
+      "regulatory signs",
+      "turns"
+    ],
+    "image": "no-right-turn.svg",
+    "imageAlt": "A white square sign with a black border. A black arrow points up and then bends to the right. A red circle surrounds the arrow and a red diagonal line crosses it from upper left to lower right.",
+    "imageSource": {
+      "kind": "public",
+      "title": "MUTCD sign R3-1 (FHWA)",
+      "license": "U.S. federal government work, public domain"
+    },
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-michigan-regulatory-signs-0004",
+    "certId": "dmv-permit-michigan",
+    "subjectId": "signs",
+    "chapterId": "regulatory-signs",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which sign is the only one with eight sides (an octagon)?",
+    "choices": [
+      "Railroad crossing ahead",
+      "YIELD",
+      "STOP",
+      "School zone"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Octagon (eight sides) is used only for STOP",
+    "explanation": "A sign's **shape** is a clue to its meaning. The **octagon** is used only for the **STOP** sign, so you can recognize it even from behind or when it is covered with snow.\n\n**Wrong choices**\n- Railroad crossing ahead: The railroad advance warning sign is round.\n- YIELD: The YIELD sign is a triangle with its point down.\n- School zone: School signs are five-sided (pentagon).",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-22",
+    "tags": [
+      "sign shapes",
+      "stop"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-michigan-regulatory-signs-0005",
+    "certId": "dmv-permit-michigan",
+    "subjectId": "signs",
+    "chapterId": "regulatory-signs",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What do regulatory signs tell you?",
+    "choices": [
+      "Where to find gas, food, and lodging",
+      "The traffic laws you must obey, such as speed limits and turn rules",
+      "Directions to cities and towns",
+      "Hazards or changes in the road ahead"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Regulatory signs state laws: speed, turns, movement",
+    "explanation": "**Regulatory signs** tell you about **specific laws**. They control the **speed and movement** of traffic. They are usually **rectangles** in white and black, red and white, or red, white, and black.\n\n**Wrong choices**\n- Where to find gas, food, and lodging: Services are shown on blue signs.\n- Directions to cities and towns: Directions are given on green guide signs.\n- Hazards or changes in the road ahead: That is the job of warning signs, which are usually yellow.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-22",
+    "tags": [
+      "regulatory signs"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-michigan-regulatory-signs-0006",
+    "certId": "dmv-permit-michigan",
+    "subjectId": "signs",
+    "chapterId": "regulatory-signs",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "On a traffic sign, what does the color red mean?",
+    "choices": [
+      "Services such as gas or lodging",
+      "Places of recreation or cultural interest",
+      "Stop, or that something is not allowed",
+      "Caution for construction or maintenance work"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Red on a sign: stop, prohibited, forbidden",
+    "explanation": "Sign colors carry meaning. **Red** means **stop, prohibited, or forbidden**. That is why STOP, YIELD, DO NOT ENTER, and the circle-and-slash symbol all use red.\n\n**Wrong choices**\n- Services such as gas or lodging: That is blue.\n- Places of recreation or cultural interest: That is brown.\n- Caution for construction or maintenance work: That is orange.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-22",
+    "tags": [
+      "sign colors"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-michigan-regulatory-signs-0007",
+    "certId": "dmv-permit-michigan",
+    "subjectId": "signs",
+    "chapterId": "regulatory-signs",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What must you do at a STOP sign?",
+    "choices": [
+      "Come to a complete stop and check for traffic before going",
+      "Tap the horn and go through slowly",
+      "Slow down and go on if no one is coming",
+      "Stop only if other vehicles are at the intersection"
+    ],
+    "answer": 1,
+    "oneLineConcept": "STOP sign: full stop every time, then go when clear",
+    "explanation": "At a **STOP sign** you must come to a **complete stop** and **check for traffic** before you go on. This is required **every time**, even if no other vehicles are in sight.\n\n**Wrong choices**\n- Tap the horn and go through slowly: The horn does not replace a full stop.\n- Slow down and go on if no one is coming: Slowing without stopping is what you may do at a YIELD sign, not a STOP sign.\n- Stop only if other vehicles are at the intersection: You must stop every time, even when the road looks empty.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-22",
+    "tags": [
+      "stop sign"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-michigan-regulatory-signs-0008",
+    "certId": "dmv-permit-michigan",
+    "subjectId": "signs",
+    "chapterId": "regulatory-signs",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "You come to a YIELD sign. What should you do?",
+    "choices": [
+      "Come to a full stop every time",
+      "Keep your speed, because other drivers must yield to you",
+      "Stop only when a pedestrian is waiting",
+      "Slow down, check for traffic, and be ready to stop"
+    ],
+    "answer": 4,
+    "oneLineConcept": "YIELD: slow, check, let others go first, stop if needed",
+    "explanation": "At a **YIELD** sign, **slow down**, **check for traffic**, and **be prepared to stop**. Let vehicles crossing your path go first. If the way is clear, you may go on without a full stop.\n\n**Wrong choices**\n- Come to a full stop every time: A full stop every time is the rule at a STOP sign. At YIELD you stop only when needed.\n- Keep your speed, because other drivers must yield to you: The sign is telling you to give way to others, not the other way around.\n- Stop only when a pedestrian is waiting: You must yield to vehicles as well as pedestrians.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-22",
+    "tags": [
+      "yield sign"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-michigan-regulatory-signs-0009",
+    "certId": "dmv-permit-michigan",
+    "subjectId": "signs",
+    "chapterId": "regulatory-signs",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What shape are most regulatory (rule) signs?",
+    "choices": [
+      "Diamond",
+      "Round",
+      "Pentagon",
+      "Rectangle"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Most rule signs are rectangles",
+    "explanation": "Regulatory signs are **usually rectangular**. A **vertical rectangle** stands for **law**. Shape helps you know what kind of message a sign carries before you can read it.\n\n**Wrong choices**\n- Diamond: Diamonds are used for warning signs.\n- Round: The round sign is the railroad advance warning sign.\n- Pentagon: The five-sided pentagon is used for school signs.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-22",
+    "tags": [
+      "regulatory signs",
+      "sign shapes"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-michigan-regulatory-signs-0010",
+    "certId": "dmv-permit-michigan",
+    "subjectId": "signs",
+    "chapterId": "regulatory-signs",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A sign shows a symbol inside a red circle with a red slash across it. What does that mean?",
+    "choices": [
+      "The action shown is allowed only at night",
+      "The action shown is allowed if you are careful",
+      "The action shown is not allowed",
+      "The action shown is recommended"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Red circle with slash: that action is prohibited",
+    "explanation": "Red on a sign means **prohibited or forbidden**. When a **red circle and slash** cover a symbol, such as a turn arrow or a truck, the **action shown is not allowed** at that place.\n\n**Wrong choices**\n- The action shown is allowed only at night: The sign gives no time limit; it forbids the action.\n- The action shown is allowed if you are careful: Red means stop or prohibited, so the action is not allowed at all.\n- The action shown is recommended: A recommendation would not use the red prohibition symbol.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-22",
+    "tags": [
+      "regulatory signs",
+      "prohibition"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-michigan-regulatory-signs-0011",
+    "certId": "dmv-permit-michigan",
+    "subjectId": "signs",
+    "chapterId": "regulatory-signs",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A sign shows a truck inside a red circle with a red slash across it. What does it mean?",
+    "choices": [
+      "A truck stop is ahead",
+      "Trucks are not allowed on this road",
+      "Trucks may be entering the road ahead",
+      "Trucks must use the right lane"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Truck in red circle and slash: no trucks allowed",
+    "explanation": "The red circle and slash mean **not allowed**. With a **truck** symbol, the sign tells you that **trucks may not drive** where it is posted.\n\n**Wrong choices**\n- A truck stop is ahead: Services are shown on blue signs.\n- Trucks may be entering the road ahead: A warning about trucks entering would be a yellow diamond, not a red prohibition symbol.\n- Trucks must use the right lane: A lane rule would show lanes or words, not a red circle and slash.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-22",
+    "tags": [
+      "regulatory signs",
+      "trucks"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-michigan-regulatory-signs-0012",
+    "certId": "dmv-permit-michigan",
+    "subjectId": "signs",
+    "chapterId": "regulatory-signs",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Your light is red and a NO TURN ON RED sign is posted. You want to turn right. What should you do?",
+    "choices": [
+      "Turn only if the car behind you honks",
+      "Turn if no pedestrians are in the crosswalk",
+      "Wait for the green light before turning",
+      "Stop fully, then turn if the way is clear"
+    ],
+    "answer": 3,
+    "oneLineConcept": "NO TURN ON RED: wait for green to turn",
+    "explanation": "Normally you may turn right on red after a full stop, yielding to traffic and pedestrians. A **NO TURN ON RED** sign **prohibits** that. You must **wait for the green light** before turning.\n\n**Wrong choices**\n- Turn only if the car behind you honks: Other drivers' horns never change the rule.\n- Turn if no pedestrians are in the crosswalk: The sign forbids the turn on red whether or not people are crossing.\n- Stop fully, then turn if the way is clear: That is allowed only where turning on red is not banned. This sign bans it.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-22",
+    "tags": [
+      "regulatory signs",
+      "turn on red"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-michigan-regulatory-signs-0013",
+    "certId": "dmv-permit-michigan",
+    "subjectId": "signs",
+    "chapterId": "regulatory-signs",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "At a STOP sign there is no stop line and no crosswalk. Where should you stop?",
+    "choices": [
+      "At a point where you can see approaching traffic without pulling into the intersection",
+      "Partly inside the intersection so you can see better",
+      "Right beside the sign post, even if you cannot see cross traffic",
+      "Anywhere, as long as your wheels stop turning"
+    ],
+    "answer": 1,
+    "oneLineConcept": "No line or crosswalk: stop where you can see, before the intersection",
+    "explanation": "Stop at the **stop line** or **crosswalk** if there is one. If there is neither, stop at a point where you can **see all approaching traffic** without having to **pull into the intersection**.\n\n**Wrong choices**\n- Partly inside the intersection so you can see better: You must not pull into the intersection to look.\n- Right beside the sign post, even if you cannot see cross traffic: You need a spot where you can see traffic coming, not just the sign's location.\n- Anywhere, as long as your wheels stop turning: Where you stop matters for safety and for other road users.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-22",
+    "tags": [
+      "stop sign",
+      "stop line"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-michigan-regulatory-signs-0014",
+    "certId": "dmv-permit-michigan",
+    "subjectId": "signs",
+    "chapterId": "regulatory-signs",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "You see a sign reading WRONG WAY. What does it mean?",
+    "choices": [
+      "The road ahead is one-way in your direction",
+      "You should turn around using the median crossover",
+      "You are driving into oncoming traffic and must get out safely and quickly",
+      "You missed your exit and should back up on the shoulder"
+    ],
+    "answer": 3,
+    "oneLineConcept": "WRONG WAY: you are against traffic; get out safely now",
+    "explanation": "A **WRONG WAY** sign means you have entered a lane of **oncoming traffic**. Leave it the **safest and quickest** way you can. These signs, along with DO NOT ENTER, are often posted on **freeway exit ramps**.\n\n**Wrong choices**\n- The road ahead is one-way in your direction: WRONG WAY means you are going against the traffic, not with it.\n- You should turn around using the median crossover: Median crossovers are only for emergency and road agency vehicles.\n- You missed your exit and should back up on the shoulder: You should never back up on a freeway. Go to the next exit instead.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-22",
+    "tags": [
+      "wrong way",
+      "freeway"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-michigan-regulatory-signs-0015",
+    "certId": "dmv-permit-michigan",
+    "subjectId": "signs",
+    "chapterId": "regulatory-signs",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which color pattern marks a regulatory sign, telling you what is legally allowed or prohibited?",
+    "choices": [
+      "Green and white",
+      "Yellow and black",
+      "Black and white",
+      "Blue and white"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Black and white signs: regulatory, a law",
+    "explanation": "In Michigan's color list, **black** and **white** both stand for **regulatory** messages: what is **legally allowed or prohibited**. Speed limit and ONE WAY signs are examples.\n\n**Wrong choices**\n- Green and white: Green signs give directions and guidance.\n- Yellow and black: Yellow means caution or a general warning.\n- Blue and white: Blue signs show services and hospitality.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-22",
+    "tags": [
+      "sign colors"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-michigan-regulatory-signs-0016",
+    "certId": "dmv-permit-michigan",
+    "subjectId": "signs",
+    "chapterId": "regulatory-signs",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A sign over the road shows arrows that tell which lanes may turn left. What kind of sign is it?",
+    "choices": [
+      "A warning sign about a curve ahead",
+      "A service sign for a left-side rest area",
+      "A guide sign that only suggests a lane",
+      "A regulatory sign that you must obey"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Lane-use arrow signs are rules, not advice",
+    "explanation": "Signs that show which **lanes allow left turns** are **regulatory**. They control traffic movement, so you **must follow them**. Pick your lane early and turn only from a lane the sign allows.\n\n**Wrong choices**\n- A warning sign about a curve ahead: Curve warnings are yellow diamonds.\n- A service sign for a left-side rest area: Service signs are blue and show symbols like gas or food.\n- A guide sign that only suggests a lane: Lane-use signs are rules, not suggestions.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-22",
+    "tags": [
+      "lane use",
+      "regulatory signs"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-michigan-regulatory-signs-0017",
+    "certId": "dmv-permit-michigan",
+    "subjectId": "signs",
+    "chapterId": "regulatory-signs",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A white rule sign shows an arrow going around the left side of a dark island shape. What does it require?",
+    "choices": [
+      "Pass only to the left of the island or obstacle ahead",
+      "Turn left at the next intersection",
+      "The left lane ends ahead",
+      "Traffic is merging from the left"
+    ],
+    "answer": 1,
+    "oneLineConcept": "KEEP LEFT: pass only on the left side of the obstacle",
+    "explanation": "This is the **KEEP LEFT** sign. Traffic must **pass only to the left-hand side** of the island or obstruction. Because it is a white rule sign, it is a **law you must obey**.\n\n**Wrong choices**\n- Turn left at the next intersection: A turn sign would show an arrow bending sharply, not passing an island.\n- The left lane ends ahead: A lane-ending warning is a yellow diamond sign.\n- Traffic is merging from the left: Merge warnings are yellow diamonds.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-22",
+    "tags": [
+      "keep left",
+      "regulatory signs"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-michigan-regulatory-signs-0018",
+    "certId": "dmv-permit-michigan",
+    "subjectId": "signs",
+    "chapterId": "regulatory-signs",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A sign reads SPEED LIMIT 50, but the road is wet and foggy. How fast may you legally drive?",
+    "choices": [
+      "No faster than is careful and prudent for the conditions, which may be well below 50 mph",
+      "At least 45 mph, because slow driving is illegal",
+      "Exactly 50 mph, to keep traffic moving",
+      "Up to 55 mph, because small overages are allowed"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Posted limit is a maximum; drive slower when conditions require",
+    "explanation": "Michigan's **Basic Speed Law** says you must drive at a **careful and prudent** speed for the conditions, so you can **stop within the clear distance ahead**. That speed is **never faster** than the posted limit and may be **slower** in rain, fog, or traffic.\n\n**Wrong choices**\n- At least 45 mph, because slow driving is illegal: No such minimum applies here. Conditions may require a much lower speed.\n- Exactly 50 mph, to keep traffic moving: The posted limit is a maximum, not a required speed.\n- Up to 55 mph, because small overages are allowed: You may never go faster than the posted limit.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-22",
+    "tags": [
+      "speed limit",
+      "basic speed law"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-michigan-regulatory-signs-0019",
+    "certId": "dmv-permit-michigan",
+    "subjectId": "signs",
+    "chapterId": "regulatory-signs",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "On a freeway you pass your exit. A median crossover ahead has an AUTHORIZED VEHICLES ONLY sign. What should you do?",
+    "choices": [
+      "Stop on the shoulder and wait for help",
+      "Drive to the next exit, get off, and re-enter the freeway going the other way",
+      "Use the crossover if no traffic is coming",
+      "Back up slowly on the shoulder to your exit"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Missed exit: go on to the next exit; never use the crossover",
+    "explanation": "The **AUTHORIZED VEHICLES ONLY** sign means only **law enforcement, emergency, or maintenance** vehicles may use the median crossover. If you miss an exit, **never back up, turn around, or use a crossover**. **Drive to the next exit** and come back.\n\n**Wrong choices**\n- Stop on the shoulder and wait for help: Stopping on a freeway is only for emergencies.\n- Use the crossover if no traffic is coming: Only police, emergency, and maintenance vehicles may use it, whatever the traffic.\n- Back up slowly on the shoulder to your exit: Never back up on a freeway.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-22",
+    "tags": [
+      "freeway",
+      "median crossover"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-michigan-regulatory-signs-0020",
+    "certId": "dmv-permit-michigan",
+    "subjectId": "signs",
+    "chapterId": "regulatory-signs",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Which of these is a regulatory sign rather than a warning sign?",
+    "choices": [
+      "A yellow diamond showing a lane merging",
+      "A yellow pennant reading NO PASSING ZONE",
+      "An orange diamond reading ROAD WORK AHEAD",
+      "A white rectangle reading DO NOT PASS"
+    ],
+    "answer": 4,
+    "oneLineConcept": "DO NOT PASS (white rectangle) is a rule; the pennant warns",
+    "explanation": "The **DO NOT PASS** sign is a **white rectangle**, so it is **regulatory**: it prohibits passing. The yellow **pennant** also concerns passing, but it is a **warning sign**. Yellow and orange diamonds are warnings too.\n\n**Wrong choices**\n- A yellow diamond showing a lane merging: Yellow diamonds are warning signs.\n- A yellow pennant reading NO PASSING ZONE: The pennant is a warning sign. It is yellow and posted on the left side of the road.\n- An orange diamond reading ROAD WORK AHEAD: Orange diamonds are construction warning signs.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-22",
+    "tags": [
+      "regulatory signs",
+      "passing"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-michigan-regulatory-signs-0021",
+    "certId": "dmv-permit-michigan",
+    "subjectId": "signs",
+    "chapterId": "regulatory-signs",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Near a freeway entrance you see a DO NOT ENTER sign and a WRONG WAY sign on one of two ramps. What does that tell you?",
+    "choices": [
+      "That ramp is closed only during construction hours",
+      "Only trucks may use that ramp",
+      "That ramp carries traffic leaving the freeway, so you must not drive onto it",
+      "You may use the ramp slowly with your hazard lights on"
+    ],
+    "answer": 3,
+    "oneLineConcept": "DO NOT ENTER and WRONG WAY mark an exit ramp: do not go up it",
+    "explanation": "An **exit ramp** is often right next to an **entrance ramp**. **DO NOT ENTER** and **WRONG WAY** signs are posted so drivers do not go up the exit ramp **against traffic**. Look for them, and use the ramp marked as the **entrance**.\n\n**Wrong choices**\n- That ramp is closed only during construction hours: Construction closures use orange signs, and these signs apply at all times.\n- Only trucks may use that ramp: The signs forbid all traffic from entering that way.\n- You may use the ramp slowly with your hazard lights on: Hazard lights never make it legal to drive against traffic.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-22",
+    "tags": [
+      "freeway ramps",
+      "do not enter"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "dmv-permit-michigan-regulatory-signs-0022",
+    "certId": "dmv-permit-michigan",
+    "subjectId": "signs",
+    "chapterId": "regulatory-signs",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Which of these signs gives a rule you must obey?",
+    "choices": [
+      "A SPEED LIMIT sign",
+      "A NO TURN ON RED sign",
+      "A ONE WAY sign",
+      "All of the above"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Speed limit, no turn on red, and one way are all rule signs",
+    "explanation": "All three are **regulatory signs**. A **SPEED LIMIT** sign sets the legal top speed, **NO TURN ON RED** prohibits turning on red, and **ONE WAY** means all lanes flow in the same direction. Each one is a **law**, not a suggestion.\n\n**Wrong choices**\n- A SPEED LIMIT sign: This is a rule sign, but it is not the only one listed.\n- A NO TURN ON RED sign: This is a rule sign, but it is not the only one listed.\n- A ONE WAY sign: This is a rule sign, but it is not the only one listed.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-22",
+    "tags": [
+      "regulatory signs"
+    ],
+    "levelLock": true
+  }
+]
