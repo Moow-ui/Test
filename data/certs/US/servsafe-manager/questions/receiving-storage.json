@@ -1,0 +1,710 @@
+[
+  {
+    "id": "servsafe-manager-receiving-storage-0001",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "receiving-storage",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What is the maximum internal temperature for receiving cold TCS food, such as raw chicken?",
+    "choices": [
+      "32°F (0°C)",
+      "41°F (5°C)",
+      "45°F (7°C)",
+      "50°F (10°C)"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Receive cold TCS food at 41°F or lower",
+    "explanation": "Cold **TCS food** (time/temperature control for safety food) should be received at **41°F (5°C) or lower**, unless a different temperature is allowed for that item.\n\n**Wrong choices**\n- 45°F (7°C): 45°F is allowed for a few items, such as milk (then cooled to 41°F within 4 hours) and shell eggs (air temperature), not for cold TCS food in general.\n- 50°F (10°C): 50°F is too warm for cold TCS food.\n- 32°F (0°C): 32°F is the freezing point of water. Cold food does not have to be that cold.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "receiving",
+      "temperature"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-receiving-storage-0002",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "receiving-storage",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Live shellfish (such as oysters) may be received at an air temperature of up to 45°F (7°C) and an internal temperature of up to 50°F (10°C). What must happen next?",
+    "choices": [
+      "Serve them within six hours without cooling",
+      "Cool them to 41°F (5°C) or lower within four hours",
+      "Cook them within one hour",
+      "Freeze them right away"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Live shellfish: 45°F air/50°F internal, cool to 41°F within 4 h",
+    "explanation": "Live shellfish can be received at an **air temperature of 45°F (7°C)** and an **internal temperature no higher than 50°F (10°C)**. Once received, they must be **cooled to 41°F (5°C) or lower within four hours**.\n\n**Wrong choices**\n- Cook them within one hour: There is no one-hour cooking rule. The food must be cooled.\n- Freeze them right away: Live shellfish are kept alive and cold, not frozen.\n- Serve them within six hours without cooling: They must be cooled to 41°F or lower.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "receiving",
+      "shellfish"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-receiving-storage-0003",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "receiving-storage",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "How long must shellstock identification tags for live shellfish be kept?",
+    "choices": [
+      "7 days after the container is opened",
+      "90 days from the date the last shellfish was sold or served from the container",
+      "Until the next health inspection",
+      "30 days from the date of delivery"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Shellstock tags: keep 90 days after last sold/served",
+    "explanation": "Shellstock tags must stay on the container until the last shellfish is used and then be **kept for 90 days** from the date the last shellfish was sold or served from it. The tags help trace the source if there is an outbreak.\n\n**Wrong choices**\n- 30 days from the date of delivery: 30 days is too short.\n- 7 days after the container is opened: 7 days is the ready-to-eat food holding limit, not the tag rule.\n- Until the next health inspection: The rule is a fixed 90 days, not tied to inspections.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "shellstock tags"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-receiving-storage-0004",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "receiving-storage",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Hot TCS food delivered to the operation should have an internal temperature of at least",
+    "choices": [
+      "165°F (74°C)",
+      "135°F (57°C)",
+      "120°F (49°C)",
+      "100°F (38°C)"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Receive hot TCS food at 135°F or higher",
+    "explanation": "Hot TCS food should be received at **135°F (57°C) or higher**. Food between 41°F and 135°F is in the temperature danger zone.\n\n**Wrong choices**\n- 120°F (49°C): 120°F is in the temperature danger zone.\n- 100°F (38°C): 100°F is in the temperature danger zone, where germs grow fast.\n- 165°F (74°C): 165°F is a cooking and reheating temperature, not the receiving minimum for hot food.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "receiving",
+      "temperature"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-receiving-storage-0005",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "receiving-storage",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which shipment should be rejected?",
+    "choices": [
+      "Canned food with clean labels and no dents",
+      "Cold chicken that is at 38°F (3°C)",
+      "Frozen food that is frozen solid",
+      "Frozen food with large ice crystals on it and in the packaging"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Ice crystals on frozen food = thawed and refrozen → reject",
+    "explanation": "**Large ice crystals** or frozen liquids on frozen food or in the package can mean the food **thawed and was refrozen** (time-temperature abuse). Reject it. Also reject cans with swollen ends, leaks, rust, or dents on the seams.\n\n**Wrong choices**\n- Frozen food that is frozen solid: Frozen food should be frozen solid; this is acceptable.\n- Cold chicken that is at 38°F (3°C): 38°F is below 41°F and is acceptable.\n- Canned food with clean labels and no dents: Clean, undamaged cans are acceptable.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "receiving",
+      "rejecting"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-receiving-storage-0006",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "receiving-storage",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What is the safest way to check the temperature of a delivery of raw ground beef?",
+    "choices": [
+      "Touch the package to see if it feels cold",
+      "Read the temperature on the delivery truck's display",
+      "Check the use-by date on the label",
+      "Insert the thermometer stem or probe into the thickest part of the food"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Check meat temperature in the thickest part",
+    "explanation": "To check the temperature of meat, poultry, and fish, insert the **thermometer stem or probe into the thickest part** of the food (usually the center).\n\n**Wrong choices**\n- Touch the package to see if it feels cold: Touch does not give an accurate temperature.\n- Read the temperature on the delivery truck's display: The truck's air temperature is not the food's temperature.\n- Check the use-by date on the label: A date does not show the food's temperature.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "thermometer"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-receiving-storage-0007",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "receiving-storage",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "What is the correct top-to-bottom order for storing raw food in a refrigerator?",
+    "choices": [
+      "Seafood, whole cuts of beef and pork, ground meat and ground fish, whole and ground poultry",
+      "Whole cuts of beef and pork, seafood, poultry, ground meat",
+      "Poultry, ground meat, whole cuts of beef and pork, seafood",
+      "Ground meat, poultry, seafood, whole cuts of beef and pork"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Store raw food by minimum cooking temperature; poultry on bottom",
+    "explanation": "Store raw meat, poultry, and seafood **by minimum internal cooking temperature**, with the food that needs the **highest** cooking temperature on the **bottom**. Ready-to-eat food goes on top. Order: **seafood (145°F)**, **whole cuts of beef and pork (145°F)**, **ground meat and ground fish (155°F)**, **whole and ground poultry (165°F)**.\n\n**Wrong choices**\n- Poultry, ground meat, whole cuts of beef and pork, seafood: This is upside down. Poultry should be on the bottom.\n- Ground meat, poultry, seafood, whole cuts of beef and pork: Poultry above other raw food can drip onto it.\n- Whole cuts of beef and pork, seafood, poultry, ground meat: Poultry needs the highest cooking temperature, so it goes on the bottom.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "storage order",
+      "cross-contamination"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-receiving-storage-0008",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "receiving-storage",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "How far off the floor should food be stored?",
+    "choices": [
+      "At least 2 inches (5 centimeters)",
+      "It may be stored on the floor if it is in a box",
+      "At least 1 inch (2.5 centimeters)",
+      "At least 6 inches (15 centimeters)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Store food at least 6 inches off the floor",
+    "explanation": "Store food **at least 6 inches (15 cm) off the floor** and away from walls. This helps cleaning and keeps pests and moisture away.\n\n**Wrong choices**\n- At least 1 inch (2.5 centimeters): 1 inch is too low.\n- At least 2 inches (5 centimeters): 2 inches is too low.\n- It may be stored on the floor if it is in a box: Food in boxes must also be stored off the floor.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "storage"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-receiving-storage-0009",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "receiving-storage",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "What does the FIFO method mean?",
+    "choices": [
+      "Food is stored in the order it was cooked",
+      "Frozen items are used first",
+      "Fresh items are used first",
+      "Food stored first is used first"
+    ],
+    "answer": 4,
+    "oneLineConcept": "FIFO = first in, first out",
+    "explanation": "**FIFO (first-in, first-out)** means food items with the earliest use-by or expiration dates are used before items with later dates. Store new deliveries behind older ones.\n\n**Wrong choices**\n- Fresh items are used first: FIFO uses older stock first, as long as it is still safe.\n- Frozen items are used first: FIFO is about the date food was stored, not whether it is frozen.\n- Food is stored in the order it was cooked: FIFO is a rotation method for using food, not a storage order by cooking.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "FIFO"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-receiving-storage-0010",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "receiving-storage",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Ready-to-eat TCS food prepared in-house can be stored for a maximum of how many days if held at 41°F (5°C) or lower?",
+    "choices": [
+      "30 days",
+      "14 days",
+      "3 days",
+      "7 days"
+    ],
+    "answer": 4,
+    "oneLineConcept": "RTE TCS food at 41°F: 7 days maximum; day of prep = day 1",
+    "explanation": "Ready-to-eat TCS food prepared in-house can be stored for up to **7 days** at **41°F (5°C) or lower**. The day the food was prepared counts as **day 1**, and it must be labeled with the date it must be used or thrown out.\n\n**Wrong choices**\n- 3 days: 3 days is shorter than the limit.\n- 14 days: 14 days is too long.\n- 30 days: 30 days is far too long.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "date marking"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-receiving-storage-0011",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "receiving-storage",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Potato salad was prepared on October 1 and stored at 41°F (5°C). What is the last day it may be used?",
+    "choices": [
+      "October 4",
+      "October 8",
+      "October 14",
+      "October 7"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Day of prep is day 1 → 7th day is the use-by",
+    "explanation": "Ready-to-eat TCS food can be held for **7 days** at 41°F (5°C) or lower, and the day it was made is **day 1**.\n1. October 1 = day 1\n2. October 7 = day 7\n3. So it must be used or thrown out by **October 7**.\n\n**Wrong choices**\n- October 8: Counting October 1 as day 1, day 7 is October 7, not October 8.\n- October 4: That is only 4 days.\n- October 14: 14 days is beyond the 7-day limit.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "date marking"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-receiving-storage-0012",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "receiving-storage",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Where should cleaning chemicals be stored?",
+    "choices": [
+      "Next to the flour in dry storage",
+      "In empty food containers",
+      "In a separate area away from food, utensils, and equipment",
+      "On a shelf above the prep table"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Store chemicals away from and below food",
+    "explanation": "Store chemicals in their original labeled containers in a **separate area away from food**, utensils, and equipment. If they must be in the same area, store them **below** and away from food.\n\n**Wrong choices**\n- On a shelf above the prep table: Chemicals above food can spill or leak into it.\n- Next to the flour in dry storage: Chemicals must not be stored next to food.\n- In empty food containers: Never put chemicals in food containers.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "chemicals"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-receiving-storage-0013",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "receiving-storage",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "What should a manager do with a food item that has been recalled by the manufacturer?",
+    "choices": [
+      "Use it quickly before the recall takes effect",
+      "Mix it with other food so it is used up",
+      "Remove it from inventory, label it so it is not used, and follow the vendor's instructions",
+      "Serve it if it looks and smells normal"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Recall: pull, separate, label 'Do not use', follow vendor directions",
+    "explanation": "When a food is **recalled**, find it in inventory, **remove it** from use, store it separately, label it so staff will not use it (for example, \"Do not use\" and \"Do not discard\"), tell staff, and **follow the vendor's or manufacturer's instructions** for returning or discarding it.\n\n**Wrong choices**\n- Use it quickly before the recall takes effect: Recalled food must not be used at all.\n- Serve it if it looks and smells normal: Recalled food can be unsafe even if it looks normal.\n- Mix it with other food so it is used up: Mixing spreads the hazard.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "recalls"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-receiving-storage-0014",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "receiving-storage",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Which is a sign of time-temperature abuse in a delivery of dry or packaged food?",
+    "choices": [
+      "A can with no dents",
+      "A box that arrives dry and clean",
+      "A package that is swollen or leaking",
+      "A package with an intact label"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Swollen or leaking packages = reject",
+    "explanation": "Reject packaged food that is **swollen, leaking, torn, or punctured**, or has broken cartons or seals. Swelling can mean bacteria are growing and making gas.\n\n**Wrong choices**\n- A package with an intact label: An intact label is a good sign.\n- A box that arrives dry and clean: A clean, dry box is acceptable.\n- A can with no dents: An undamaged can is acceptable.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "receiving"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-receiving-storage-0015",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "receiving-storage",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which food must be received at 41°F (5°C) or lower internal temperature, unless otherwise specified by law?",
+    "choices": [
+      "Unopened canned tuna",
+      "Unopened bags of flour",
+      "Fresh fish",
+      "Dry rice"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Fresh fish is TCS food: receive at 41°F or lower",
+    "explanation": "**Fresh fish** is a TCS food and must be received at **41°F (5°C) or lower**. Shelf-stable foods such as canned goods, dry rice, and flour do not need cold holding before they are opened or cooked.\n\n**Wrong choices**\n- Unopened canned tuna: Unopened canned food is shelf-stable and not received cold.\n- Dry rice: Dry rice is not TCS food until it is cooked.\n- Unopened bags of flour: Flour is a dry food stored at room temperature.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "TCS food"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-receiving-storage-0016",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "receiving-storage",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Fish that will be served raw or undercooked (except certain species) must be frozen first to destroy parasites. How long must parasite-destruction records be kept?",
+    "choices": [
+      "1 year",
+      "30 days",
+      "7 days",
+      "90 days from the time of sale or service"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Keep parasite-destruction (freezing) records 90 days",
+    "explanation": "Fish that will be served raw or undercooked must usually be **frozen to destroy parasites** (for example, at -4°F [-20°C] or lower for 7 days). If the operation does the freezing, it must **keep records for 90 days** from the time the fish is sold or served.\n\n**Wrong choices**\n- 7 days: 7 days is far too short.\n- 30 days: 30 days is too short.\n- 1 year: The Food Code rule is 90 days.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "parasites",
+      "records"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-receiving-storage-0017",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "receiving-storage",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which supplier is an approved source?",
+    "choices": [
+      "A neighbor who sells home-canned vegetables",
+      "A supplier with the lowest prices",
+      "A friend who hunts deer",
+      "A supplier that has been inspected and meets all applicable laws"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Approved source = inspected and meets laws",
+    "explanation": "All food must come from **approved, reputable suppliers** that have been **inspected** and meet applicable local, state, and federal laws. Home-canned or home-prepared food is not allowed.\n\n**Wrong choices**\n- A neighbor who sells home-canned vegetables: Home-canned food is not from an approved source.\n- A supplier with the lowest prices: Price does not make a supplier approved.\n- A friend who hunts deer: Wild game must be inspected and come from an approved source.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "approved source"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-receiving-storage-0018",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "receiving-storage",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A delivery truck arrives while the kitchen is busy. What is the best practice?",
+    "choices": [
+      "Ask the driver to put everything in the walk-in without checking",
+      "Plan deliveries for off-peak hours so items can be inspected and stored right away",
+      "Store everything without checking it",
+      "Leave the delivery on the loading dock until the rush is over"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Schedule deliveries off-peak; inspect and store promptly",
+    "explanation": "Good receiving practice: **schedule deliveries for off-peak hours**, have trained staff ready, **inspect** food right away, and **store** it quickly, with cold and frozen items put away first.\n\n**Wrong choices**\n- Leave the delivery on the loading dock until the rush is over: Leaving food on the dock exposes it to time-temperature abuse.\n- Store everything without checking it: Every delivery should be inspected before it is accepted.\n- Ask the driver to put everything in the walk-in without checking: Staff must inspect deliveries; drivers do not do this for you.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "receiving"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-receiving-storage-0019",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "receiving-storage",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Shell eggs may be received at an air temperature of up to",
+    "choices": [
+      "50°F (10°C)",
+      "55°F (13°C)",
+      "41°F (5°C)",
+      "45°F (7°C)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Shell eggs: receive at an air temperature of 45°F or lower",
+    "explanation": "**Shell eggs** may be received at an **air temperature of 45°F (7°C) or lower**. They should have clean, unbroken shells.\n\n**Wrong choices**\n- 41°F (5°C): 41°F is the general rule for cold TCS food, but shell eggs are allowed up to 45°F air temperature.\n- 50°F (10°C): 50°F is too warm.\n- 55°F (13°C): 55°F is too warm.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "receiving",
+      "eggs"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-receiving-storage-0020",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "receiving-storage",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A walk-in cooler has raw chicken stored on the top shelf above ready-to-eat salad. What is the main risk?",
+    "choices": [
+      "There is no risk if both are in the same cooler",
+      "The chicken will freeze on the top shelf",
+      "The salad will spoil faster because it is lower",
+      "Juices from the chicken can drip onto the salad and contaminate it"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Raw poultry above RTE food = cross-contamination",
+    "explanation": "Raw poultry stored above ready-to-eat food can **drip** and contaminate it. Ready-to-eat food goes on top; raw poultry goes on the **bottom shelf**.\n\n**Wrong choices**\n- The salad will spoil faster because it is lower: Shelf height does not make salad spoil faster.\n- The chicken will freeze on the top shelf: Shelf position does not freeze food in a cooler.\n- There is no risk if both are in the same cooler: There is a cross-contamination risk.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "cross-contamination",
+      "storage"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  }
+]

@@ -1,0 +1,530 @@
+[
+  {
+    "id": "servsafe-manager-service-display-0001",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "service-display",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Hot TCS food being held for service must be kept at",
+    "choices": [
+      "100°F (38°C) or higher",
+      "120°F (49°C) or higher",
+      "165°F (74°C) or higher at all times",
+      "135°F (57°C) or higher"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Hot holding 135°F or higher",
+    "explanation": "**Hot-held TCS food** must stay at **135°F (57°C) or higher**. Hot-holding equipment is not designed to reheat food.\n\n**Wrong choices**\n- 120°F (49°C) or higher: 120°F is in the temperature danger zone.\n- 100°F (38°C) or higher: 100°F is in the temperature danger zone.\n- 165°F (74°C) or higher at all times: 165°F is a cooking and reheating temperature. Hot holding needs 135°F or higher.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "holding"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-service-display-0002",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "service-display",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Cold TCS food being held for service must be kept at",
+    "choices": [
+      "41°F (5°C) or lower",
+      "50°F (10°C) or lower",
+      "45°F (7°C) or lower",
+      "32°F (0°C) or lower"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Cold holding 41°F or lower",
+    "explanation": "**Cold-held TCS food** must stay at **41°F (5°C) or lower**.\n\n**Wrong choices**\n- 45°F (7°C) or lower: 45°F is too warm for cold holding.\n- 50°F (10°C) or lower: 50°F is in the temperature danger zone.\n- 32°F (0°C) or lower: Food does not have to be frozen; 41°F or lower is enough.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "holding"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-service-display-0003",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "service-display",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "How often should the temperature of held TCS food be checked at minimum?",
+    "choices": [
+      "Only when food is first put out",
+      "Once a day",
+      "Every 8 hours",
+      "At least every 4 hours"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Check held food at least every 4 hours",
+    "explanation": "ServSafe teaches checking the internal temperature of held food **at least every 4 hours**. Food not at the right temperature must be thrown out. Checking **every 2 hours** leaves time to take corrective action.\n\n**Wrong choices**\n- Once a day: Once a day is not enough to catch problems.\n- Only when food is first put out: Food must be checked during holding as well.\n- Every 8 hours: 8 hours is too long.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "holding"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-service-display-0004",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "service-display",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A server needs to fill a guest's glass with ice. What is the correct way?",
+    "choices": [
+      "Scoop the ice with the guest's glass",
+      "Use a clean ice scoop or tongs",
+      "Scoop the ice with a coffee cup",
+      "Pick up the ice with bare hands"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Ice: use scoop/tongs, never glass or hands",
+    "explanation": "Ice is a ready-to-eat food. Use a **clean ice scoop or tongs** to get ice. Never use a glass (it can break), and never use bare hands. Store the scoop outside the ice in a clean container.\n\n**Wrong choices**\n- Scoop the ice with the guest's glass: Glass can break in the ice and become a physical hazard.\n- Pick up the ice with bare hands: Bare-hand contact with ice (a ready-to-eat food) is not allowed.\n- Scoop the ice with a coffee cup: A cup can chip or break and is not an ice scoop.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "ice",
+      "service"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-service-display-0005",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "service-display",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which item may be re-served to another guest?",
+    "choices": [
+      "An opened bottle of salad dressing from a guest's table",
+      "A garnish returned on a guest's plate",
+      "Bread from a guest's bread basket",
+      "Unopened, prepackaged crackers in good condition"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Re-serve only unopened, packaged food in good condition",
+    "explanation": "Food served to one guest generally must **not be re-served** to another. You may re-serve **unopened, prepackaged food** in good condition, such as packets of condiments or crackers.\n\n**Wrong choices**\n- Bread from a guest's bread basket: Bread from one guest's table must not be re-served.\n- A garnish returned on a guest's plate: Returned garnishes must be thrown out.\n- An opened bottle of salad dressing from a guest's table: Opened condiments from a table should not be re-served.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "re-serving"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-service-display-0006",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "service-display",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "What must guests do when they return to a self-service buffet for more food?",
+    "choices": [
+      "Reuse their dirty plate",
+      "Wash their plate in the restroom",
+      "Take a clean plate",
+      "Ask a server to wipe their plate with a towel"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Self-service refills: clean plate every time",
+    "explanation": "Guests must not reuse dirty plates or utensils at a self-service area. Post signs telling them to **take a clean plate** each time they return.\n\n**Wrong choices**\n- Reuse their dirty plate: Dirty plates can contaminate the buffet utensils and food.\n- Wash their plate in the restroom: This is not a safe or practical method.\n- Ask a server to wipe their plate with a towel: Wiping does not clean and sanitize the plate.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "self-service"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-service-display-0007",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "service-display",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What protects food on a self-service buffet from guests' coughs and sneezes?",
+    "choices": [
+      "Gloves",
+      "A hairnet",
+      "A thermometer",
+      "A sneeze guard"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Sneeze guards protect self-service food",
+    "explanation": "**Sneeze guards** are clear barriers placed over self-service food. They protect food from guests' coughs and sneezes.\n\n**Wrong choices**\n- A hairnet: A hairnet is for staff, not for the buffet.\n- Gloves: Gloves protect food from hands, not from sneezes.\n- A thermometer: A thermometer checks temperature but does not shield food.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "self-service"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-service-display-0008",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "service-display",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Food is delivered to an off-site catering event. What must be on the label?",
+    "choices": [
+      "A use-by date and time, plus reheating and service instructions",
+      "The price of the food",
+      "Only the name of the chef",
+      "Only the restaurant's logo"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Off-site food: label with use-by date/time and handling instructions",
+    "explanation": "Food sent **off-site** should be labeled with a **use-by date and time** and **reheating and service instructions**. Keep hot food at 135°F (57°C) or higher and cold food at 41°F (5°C) or lower in insulated containers.\n\n**Wrong choices**\n- Only the name of the chef: The chef's name is not enough.\n- The price of the food: Price is not a food safety label requirement.\n- Only the restaurant's logo: A logo is not a food safety label.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "off-site service"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-service-display-0009",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "service-display",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Why should servers hold glasses by the base or stem and plates by the bottom or edge?",
+    "choices": [
+      "To keep the glass from getting cold",
+      "To carry more items at once",
+      "To keep fingerprints off for appearance only",
+      "To avoid touching surfaces that will contact the guest's food or mouth"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Handle dishes so hands do not touch food-contact surfaces",
+    "explanation": "Servers should hold **glasses by the middle, bottom, or stem**, **plates by the bottom or edge**, and **flatware by the handle**. This keeps hands off surfaces that touch the guest's food or mouth.\n\n**Wrong choices**\n- To keep fingerprints off for appearance only: Appearance matters, but the main reason is food safety.\n- To keep the glass from getting cold: Temperature of the glass is not the reason.\n- To carry more items at once: Carrying more is not the food safety reason.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "service"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-service-display-0010",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "service-display",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Hot food in a steam table drops to 120°F (49°C). The last check, 4 hours ago, showed 140°F (60°C). What should the manager do?",
+    "choices": [
+      "Add fresh hot food to the same pan",
+      "Throw the food out",
+      "Turn up the steam table and keep serving",
+      "Serve it quickly in the next 30 minutes"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Held food below 135°F for unknown time beyond limits → discard",
+    "explanation": "If hot food falls below **135°F (57°C)** and you cannot show it has been out of temperature for **less than 2 hours**, throw it out. Here the last good check was 4 hours ago. Checking every 2 hours allows time to reheat food (to 165°F for 15 seconds) before it must be thrown out.\n\n**Wrong choices**\n- Turn up the steam table and keep serving: Holding equipment should not be used to reheat food, and the food may have been in the danger zone too long.\n- Serve it quickly in the next 30 minutes: The food is unsafe and should be thrown out.\n- Add fresh hot food to the same pan: Mixing old and new food is not safe.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "holding",
+      "corrective action"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-service-display-0011",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "service-display",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "How should servers carry utensils for a guest's table?",
+    "choices": [
+      "In their apron pockets",
+      "By the handles",
+      "By the parts that touch food",
+      "Bundled in their bare hands by the eating ends"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Hold flatware by the handle",
+    "explanation": "Hold **flatware and utensils by the handles**, never by the parts that touch food or the guest's mouth.\n\n**Wrong choices**\n- By the parts that touch food: Touching food-contact parts can contaminate them.\n- In their apron pockets: Pockets are not clean storage for utensils.\n- Bundled in their bare hands by the eating ends: Hands should not touch the eating ends.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "service"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-service-display-0012",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "service-display",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which practice is correct for serving utensils used in food that is being held on a line?",
+    "choices": [
+      "Store them in a container of room-temperature water",
+      "Store them on a dirty towel on the counter",
+      "Store them in the food with the handle extended above the container rim",
+      "Store them in the apron pocket between uses"
+    ],
+    "answer": 3,
+    "oneLineConcept": "In-use utensils: in the food with the handle out",
+    "explanation": "Between uses, serving utensils may be stored **in the food with the handle extended above the rim**, on a clean and sanitized surface, or in running water or water kept at 135°F (57°C) or higher.\n\n**Wrong choices**\n- Store them in a container of room-temperature water: Utensils may be stored in running water or in water at 135°F or higher, not room-temperature water.\n- Store them on a dirty towel on the counter: A dirty towel can contaminate them.\n- Store them in the apron pocket between uses: Pockets are not a clean place for utensils.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "utensils"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-service-display-0013",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "service-display",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Food that was served at a buffet but not eaten should be",
+    "choices": [
+      "Mixed into fresh food for the next buffet",
+      "Thrown out, unless it is unopened, prepackaged food in good condition",
+      "Given to staff to serve to other guests",
+      "Cooled and served again the next day"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Don't re-serve exposed buffet food",
+    "explanation": "Food that was put out for guests at a self-service area has been exposed. Do not re-serve it; only **unopened, prepackaged food** in good condition may be re-served.\n\n**Wrong choices**\n- Cooled and served again the next day: Food exposed to guests must not be re-served.\n- Mixed into fresh food for the next buffet: Mixing exposed food with fresh food is not safe.\n- Given to staff to serve to other guests: Food served to guests must not be re-served.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "self-service",
+      "re-serving"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-service-display-0014",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "service-display",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which practice is correct when using ice to keep cold food on a buffet?",
+    "choices": [
+      "Let melted water collect around the food",
+      "Keep the ice drained and keep food containers set into the ice",
+      "Put raw meat directly on top of the ice next to salad",
+      "Use the same ice later in drinks"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Ice for cooling food is never used in drinks",
+    "explanation": "When using ice to keep food cold, keep food containers set into the ice and let the ice drain. **Ice used to cool food must not be used as an ingredient** or in drinks.\n\n**Wrong choices**\n- Use the same ice later in drinks: Ice used to keep food cold must not be used as an ingredient.\n- Put raw meat directly on top of the ice next to salad: Raw meat must not touch ready-to-eat food.\n- Let melted water collect around the food: Standing water can contaminate food; ice should drain.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "ice"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-service-display-0015",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "service-display",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Which practice keeps food safe in a vending machine?",
+    "choices": [
+      "Turn off the refrigeration at night to save power",
+      "Check use-by dates and throw out food past its date",
+      "Leave TCS food in a machine without temperature control for 12 hours",
+      "Repackage leftovers from the kitchen into vending trays without labels"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Vending: check dates, keep TCS food at temperature",
+    "explanation": "In vending operations, **check use-by dates** often and throw out expired food, keep TCS food at the right temperature, and sell food only in its original packaging or labeled containers.\n\n**Wrong choices**\n- Leave TCS food in a machine without temperature control for 12 hours: TCS food must be kept at the right temperature.\n- Repackage leftovers from the kitchen into vending trays without labels: Food in vending machines must be labeled.\n- Turn off the refrigeration at night to save power: Cold TCS food must stay at 41°F or lower at all times.",
+    "frequency": 2,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "vending"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  }
+]

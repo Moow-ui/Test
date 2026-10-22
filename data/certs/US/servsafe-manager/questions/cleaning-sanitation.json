@@ -1,0 +1,603 @@
+[
+  {
+    "id": "servsafe-manager-cleaning-sanitation-0001",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "cleaning-sanitation",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What is the difference between cleaning and sanitizing?",
+    "choices": [
+      "They mean the same thing",
+      "Sanitizing is done before cleaning",
+      "Cleaning removes food and dirt; sanitizing reduces germs to safe levels",
+      "Cleaning kills germs; sanitizing removes dirt"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Clean = remove dirt; sanitize = reduce germs to safe level",
+    "explanation": "**Cleaning** removes food and other dirt from a surface. **Sanitizing** reduces the number of germs on a clean surface to **safe levels**. A surface must be cleaned and rinsed before it can be sanitized.\n\n**Wrong choices**\n- Cleaning kills germs; sanitizing removes dirt: This is reversed.\n- They mean the same thing: They are two different steps.\n- Sanitizing is done before cleaning: Sanitizing is done after cleaning and rinsing.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "cleaning",
+      "sanitizing"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-cleaning-sanitation-0002",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "cleaning-sanitation",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What is the correct order of steps for cleaning and sanitizing a food-contact surface?",
+    "choices": [
+      "Scrape, wash, rinse, sanitize, air-dry",
+      "Wash, sanitize, rinse, air-dry",
+      "Sanitize, wash, rinse, dry with a towel",
+      "Rinse, sanitize, scrape, air-dry"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Scrape → wash → rinse → sanitize → air-dry",
+    "explanation": "To clean and sanitize a surface:\n1. **Scrape** or remove food from the surface.\n2. **Wash** the surface.\n3. **Rinse** the surface.\n4. **Sanitize** the surface.\n5. Allow the surface to **air-dry**.\n\n**Wrong choices**\n- Sanitize, wash, rinse, dry with a towel: Sanitizing comes after washing and rinsing, and towels should not be used to dry.\n- Wash, sanitize, rinse, air-dry: The rinse comes before sanitizing.\n- Rinse, sanitize, scrape, air-dry: Scraping comes first.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "cleaning",
+      "sanitizing"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-cleaning-sanitation-0003",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "cleaning-sanitation",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "If a food-contact surface is in constant use, how often must it be cleaned and sanitized?",
+    "choices": [
+      "Only when it looks dirty",
+      "Once a day",
+      "At least every 4 hours",
+      "Every 8 hours"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Surfaces in constant use: clean and sanitize every 4 hours",
+    "explanation": "Food-contact surfaces must be cleaned and sanitized after each use, before working with a different type of food, after interruptions, and **at least every 4 hours if they are in constant use**.\n\n**Wrong choices**\n- Once a day: Once a day is not enough for surfaces in constant use.\n- Every 8 hours: 8 hours is too long.\n- Only when it looks dirty: Germs can be present even when a surface looks clean.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "cleaning",
+      "sanitizing"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-cleaning-sanitation-0004",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "cleaning-sanitation",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "What is the correct order of the sinks in a three-compartment sink?",
+    "choices": [
+      "Sanitize, wash, rinse",
+      "Rinse, wash, sanitize",
+      "Wash, rinse, sanitize",
+      "Wash, sanitize, rinse"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Three-compartment sink: wash → rinse → sanitize, then air-dry",
+    "explanation": "In a **three-compartment sink**, scrape items first, then: sink 1 **wash** (detergent and water at least 110°F [43°C]), sink 2 **rinse**, sink 3 **sanitize**. Then **air-dry** the items.\n\n**Wrong choices**\n- Rinse, wash, sanitize: Washing comes first.\n- Sanitize, wash, rinse: Sanitizing comes last.\n- Wash, sanitize, rinse: The rinse removes soap before sanitizing.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "three-compartment sink"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-cleaning-sanitation-0005",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "cleaning-sanitation",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "When sanitizing items with hot water in a three-compartment sink, the water must be at least",
+    "choices": [
+      "212°F (100°C), with items soaked for 5 minutes",
+      "135°F (57°C), with items soaked for 10 seconds",
+      "171°F (77°C), with items soaked for at least 30 seconds",
+      "110°F (43°C), with items soaked for 30 seconds"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Hot-water sanitizing (manual): 171°F for 30 s",
+    "explanation": "For **hot-water sanitizing** in a sink, items must be soaked in water at least **171°F (77°C) for 30 seconds**.\n\n**Wrong choices**\n- 135°F (57°C), with items soaked for 10 seconds: 135°F is too low for hot-water sanitizing.\n- 110°F (43°C), with items soaked for 30 seconds: 110°F is the minimum for the wash water, not for sanitizing.\n- 212°F (100°C), with items soaked for 5 minutes: Boiling is not required.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "sanitizing"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-cleaning-sanitation-0006",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "cleaning-sanitation",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which factor affects how well a chemical sanitizer works?",
+    "choices": [
+      "The color of the sanitizer bucket",
+      "The brand of the cleaning cloth",
+      "The time of day it is used",
+      "Concentration"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Sanitizer works by concentration, temperature, time, hardness, pH",
+    "explanation": "Factors that affect a chemical sanitizer include **concentration**, **temperature**, **contact time**, **water hardness**, and **pH**. Check concentration with a **test kit**.\n\n**Wrong choices**\n- The color of the sanitizer bucket: Bucket color does not affect how the sanitizer works.\n- The brand of the cleaning cloth: The cloth brand is not a factor.\n- The time of day it is used: Time of day is not a factor.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "sanitizer"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-cleaning-sanitation-0007",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "cleaning-sanitation",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "How should a manager check that a chemical sanitizer solution is at the right concentration?",
+    "choices": [
+      "Use a sanitizer test kit made for that sanitizer",
+      "Smell the solution",
+      "Look at the color of the water",
+      "Add more sanitizer each hour to be safe"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Check sanitizer strength with a test kit",
+    "explanation": "Use a **test kit** designed for the sanitizer to check its concentration. Change the solution when it is dirty or when the concentration drops below the required level.\n\n**Wrong choices**\n- Smell the solution: Smell does not show concentration.\n- Look at the color of the water: Color does not show concentration.\n- Add more sanitizer each hour to be safe: Too much sanitizer can be unsafe and can damage surfaces.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "sanitizer",
+      "test kit"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-cleaning-sanitation-0008",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "cleaning-sanitation",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Where should wiping cloths used for wiping counters be stored between uses?",
+    "choices": [
+      "Over the shoulder",
+      "In an apron pocket",
+      "On the counter",
+      "In a sanitizer solution"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Wet wiping cloths are stored in sanitizer solution",
+    "explanation": "Wet wiping cloths should be **stored in a sanitizer solution** between uses. Change the solution as needed and keep cloths for raw meat separate.\n\n**Wrong choices**\n- On the counter: Leaving them on the counter can spread germs.\n- In an apron pocket: Pockets are not a clean place for cloths.\n- Over the shoulder: Cloths on the shoulder touch clothes and hair.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "wiping cloths"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-cleaning-sanitation-0009",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "cleaning-sanitation",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Why should clean and sanitized items be air-dried instead of dried with a towel?",
+    "choices": [
+      "Air-drying makes the sanitizer stronger",
+      "Towels are too expensive",
+      "Air-drying cools the items to 41°F",
+      "Towels can recontaminate the items"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Air-dry; towels can add germs",
+    "explanation": "Clean and sanitized items should **air-dry** on a clean, dry surface. Drying with a towel can put germs back onto them.\n\n**Wrong choices**\n- Air-drying makes the sanitizer stronger: Air-drying does not make the sanitizer stronger.\n- Towels are too expensive: Cost is not the reason.\n- Air-drying cools the items to 41°F: Air-drying does not cool items to a set temperature.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "air-drying"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-cleaning-sanitation-0010",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "cleaning-sanitation",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Where should mop water be dumped?",
+    "choices": [
+      "In a service sink or a curbed cleaning facility with a floor drain",
+      "In the prep sink",
+      "In a handwashing sink",
+      "In the three-compartment sink"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Dump mop water in a service sink",
+    "explanation": "Dirty mop water should be dumped in a **service sink** (mop sink) or a curbed cleaning facility with a floor drain, never in a handwashing, prep, or dishwashing sink.\n\n**Wrong choices**\n- In a handwashing sink: Handwashing sinks must be used only for washing hands.\n- In the prep sink: Dirty water must not go into a food prep sink.\n- In the three-compartment sink: This sink is for dishes and utensils.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "cleaning tools"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-cleaning-sanitation-0011",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "cleaning-sanitation",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "What should be done with tableware and utensils stored in the open in a dining room?",
+    "choices": [
+      "Store them on the floor under the bus station",
+      "Leave them face up so they air-dry",
+      "Stack them wet so they stay moist",
+      "Store them inverted or covered to protect them from contamination"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Store clean tableware inverted or covered, 6 inches off the floor",
+    "explanation": "Clean and sanitized tableware and utensils should be stored at least 6 inches off the floor and **inverted (upside down) or covered** to protect them from dust and germs.\n\n**Wrong choices**\n- Leave them face up so they air-dry: Face-up items can collect dust and germs.\n- Stack them wet so they stay moist: Wet stacking can trap moisture and germs.\n- Store them on the floor under the bus station: Items must never be stored on the floor.",
+    "frequency": 2,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "storage of tableware"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-cleaning-sanitation-0012",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "cleaning-sanitation",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What document gives information about a chemical's hazards and how to use it safely?",
+    "choices": [
+      "The food's nutrition label",
+      "Safety Data Sheet (SDS)",
+      "The delivery invoice",
+      "The restaurant menu"
+    ],
+    "answer": 2,
+    "oneLineConcept": "SDS = chemical hazard and safe-use information",
+    "explanation": "A **Safety Data Sheet (SDS)** describes a chemical's hazards, how to use and store it safely, and what to do in an emergency. Employees have a right to see SDS for the chemicals they use.\n\n**Wrong choices**\n- The food's nutrition label: A nutrition label is for food, not chemicals.\n- The delivery invoice: An invoice shows what was bought, not how to use a chemical safely.\n- The restaurant menu: A menu is for guests.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "chemicals",
+      "SDS"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-cleaning-sanitation-0013",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "cleaning-sanitation",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A high-temperature dishwasher is being used. What must be true of the final sanitizing rinse?",
+    "choices": [
+      "It must be at least 120°F (49°C)",
+      "It must use cold water",
+      "It must be at least 135°F (57°C)",
+      "It must reach at least 180°F (82°C), unless the machine label lists a different temperature"
+    ],
+    "answer": 4,
+    "oneLineConcept": "High-temperature dishwasher final rinse: at least 180°F",
+    "explanation": "In a **high-temperature dishwasher**, the final sanitizing rinse must be at least **180°F (82°C)** (165°F [74°C] for stationary-rack, single-temperature machines). Always follow the manufacturer's label.\n\n**Wrong choices**\n- It must be at least 120°F (49°C): 120°F is too low for a high-temperature machine.\n- It must be at least 135°F (57°C): 135°F is too low.\n- It must use cold water: Cold water does not sanitize in a high-temperature machine.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "dishwasher"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-cleaning-sanitation-0014",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "cleaning-sanitation",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Which is part of a master cleaning schedule?",
+    "choices": [
+      "The weekly menu prices",
+      "The names of the restaurant's suppliers",
+      "What should be cleaned, who should clean it, when, and how",
+      "Guest reservation times"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Master cleaning schedule = what, who, when, how",
+    "explanation": "A **master cleaning schedule** lists **what** should be cleaned, **who** should clean it, **when** it should be cleaned, and **how** it should be cleaned.\n\n**Wrong choices**\n- The weekly menu prices: Prices are not part of a cleaning schedule.\n- The names of the restaurant's suppliers: Supplier lists are not part of the cleaning schedule.\n- Guest reservation times: Reservations are not part of the cleaning schedule.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "cleaning program"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-cleaning-sanitation-0015",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "cleaning-sanitation",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "How should a clean-up of vomit or diarrhea in the dining room be handled?",
+    "choices": [
+      "Cover it with a tablecloth until closing",
+      "Ask a guest to help clean it",
+      "Follow a written cleanup plan that includes separating the area, using protective equipment, and disinfecting",
+      "Wipe it with a dry paper towel and continue service"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Vomit/diarrhea cleanup: written plan, PPE, disinfect",
+    "explanation": "The Food Code requires a **written plan** for cleaning up **vomit and diarrhea**. The plan covers how to contain and remove the material, protect staff with personal protective equipment (like gloves and masks), and **disinfect** the area, because germs such as Norovirus spread easily.\n\n**Wrong choices**\n- Wipe it with a dry paper towel and continue service: This does not remove germs such as Norovirus.\n- Cover it with a tablecloth until closing: Covering it does not clean it and exposes guests.\n- Ask a guest to help clean it: Trained staff must clean it.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "vomit cleanup"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-cleaning-sanitation-0016",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "cleaning-sanitation",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Which pest-control approach is recommended in food establishments?",
+    "choices": [
+      "Have staff spray store-bought pesticides in the kitchen",
+      "Leave doors open so pests can leave",
+      "Only act when a guest sees a pest",
+      "Integrated pest management (IPM) with a licensed pest control operator"
+    ],
+    "answer": 4,
+    "oneLineConcept": "IPM: deny access, food, and shelter; work with a licensed PCO",
+    "explanation": "**Integrated pest management (IPM)** combines **denying pests access** (sealing gaps, closing doors), **denying food and shelter** (good cleaning and storage), and **working with a licensed pest control operator (PCO)** to get rid of pests.\n\n**Wrong choices**\n- Have staff spray store-bought pesticides in the kitchen: Staff should not apply pesticides; a licensed operator should.\n- Leave doors open so pests can leave: Open doors let pests in.\n- Only act when a guest sees a pest: Pest control must be ongoing and preventive.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "pest control",
+      "IPM"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-cleaning-sanitation-0017",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "cleaning-sanitation",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which is a sign of a cockroach infestation?",
+    "choices": [
+      "Tracks in dust on the floor",
+      "Shredded paper nests",
+      "Gnaw marks on wood only",
+      "A strong, oily odor and droppings that look like grains of black pepper"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Cockroach signs: oily odor, pepper-like droppings, egg cases",
+    "explanation": "Signs of **cockroaches** include a **strong, oily odor**, **droppings that look like black pepper**, and capsule-shaped egg cases. Gnaw marks, nests, and tracks are signs of **rodents**.\n\n**Wrong choices**\n- Gnaw marks on wood only: Gnaw marks are a sign of rodents.\n- Shredded paper nests: Nests made of shredded paper are a sign of rodents.\n- Tracks in dust on the floor: Tracks are usually a sign of rodents.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "pests"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  }
+]

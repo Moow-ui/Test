@@ -1,0 +1,69 @@
+{
+  "cert": "servsafe-manager",
+  "date": "2026-10-23",
+  "sourceChecked": "U.S. FDA Food Code 2022; CDC risk factors; FASTER Act (sesame)",
+  "chapters": {
+    "food-safety-management": {
+      "result": "PASS",
+      "problems": [],
+      "recheck": {
+        "result": "PASS",
+        "note": "PIC wording / ServSafe holding-check wording edited and re-verified"
+      }
+    },
+    "hygiene-health": {
+      "result": "FAIL",
+      "problems": [
+        {
+          "sentence": "Wounds on the hand are covered with a bandage and then a glove or finger cot.",
+          "fix": "Food Code 2-201.13(H): a hand or wrist wound is covered with an impermeable cover (a bandage or finger cot), and then a single-use glove is worn over it. The glove is always required; a finger cot cannot replace it. Suggested: \"Wounds on the hand or wrist are covered with an impermeable cover, such as a bandage or finger cot, and then a single-use glove.\""
+        },
+        {
+          "sentence": "Hand or wrist wound: bandage plus glove or finger cot.",
+          "fix": "\"Hand or wrist wound: impermeable cover (bandage or finger cot) plus a single-use glove over it.\""
+        },
+        {
+          "sentence": "A diagnosed food handler is excluded, and the manager reports it.",
+          "fix": "Not every diagnosis means exclusion (Food Code 2-201.12). Hepatitis A or Salmonella Typhi: exclude. Norovirus, Shigella or STEC with no symptoms: restrict (general population) or exclude (high-risk population). Nontyphoidal Salmonella with no symptoms: restrict. The person in charge must notify the regulatory authority of any of these diagnoses (2-201.11(B)). Suggested: \"A diagnosed food handler is excluded or restricted depending on the illness and the population served, and the person in charge reports it to the regulatory authority.\""
+        }
+      ],
+      "recheck": {
+        "result": "PASS",
+        "note": "wound cover, reportable illness, exclusion sentences fixed; re-verified by a separate agent (two rounds)"
+      }
+    },
+    "receiving-storage": {
+      "result": "PASS",
+      "problems": []
+    },
+    "preparation-cooking": {
+      "result": "PASS",
+      "problems": []
+    },
+    "service-display": {
+      "result": "PASS",
+      "problems": [],
+      "recheck": {
+        "result": "PASS",
+        "note": "PIC wording / ServSafe holding-check wording edited and re-verified"
+      }
+    },
+    "cleaning-sanitation": {
+      "result": "PASS",
+      "problems": []
+    },
+    "facilities-equipment": {
+      "result": "FAIL",
+      "problems": [
+        {
+          "sentence": "In these cases the manager stops service and follows the emergency plan, contacting the regulatory authority if needed.",
+          "fix": "Food Code 8-404.11(A): when there is an imminent health hazard, the permit holder must stop operations right away AND notify the regulatory authority. Notification is required, not 'if needed'. Operations may continue only if the regulatory authority agrees under an approved emergency plan (8-404.11(B)). Suggested: \"In these cases the manager stops service right away and notifies the regulatory authority, then follows the approved emergency plan.\""
+        }
+      ],
+      "recheck": {
+        "result": "PASS",
+        "note": "'notify the regulatory authority' fix re-verified"
+      }
+    }
+  }
+}

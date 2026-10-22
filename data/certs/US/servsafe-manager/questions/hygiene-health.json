@@ -1,0 +1,624 @@
+[
+  {
+    "id": "servsafe-manager-hygiene-health-0001",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "hygiene-health",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "How long should the whole handwashing process take?",
+    "choices": [
+      "At least 5 seconds",
+      "At least 2 minutes",
+      "At least 20 seconds",
+      "At least 10 seconds"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Handwashing at least 20 seconds; scrub 10-15 seconds",
+    "explanation": "The whole **handwashing** process should take **at least 20 seconds**. Scrubbing hands and arms with soap should last 10 to 15 seconds.\n\n**Wrong choices**\n- At least 5 seconds: 5 seconds is far too short to remove germs.\n- At least 10 seconds: Scrubbing alone should last 10 to 15 seconds, but the whole process takes at least 20 seconds.\n- At least 2 minutes: Two minutes is not required. At least 20 seconds is the standard.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "handwashing"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-hygiene-health-0002",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "hygiene-health",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What is the correct first step in handwashing?",
+    "choices": [
+      "Dry hands with a single-use paper towel",
+      "Scrub hands with soap for 10 to 15 seconds",
+      "Rinse hands under running water",
+      "Wet hands and arms with running warm water"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Wet → soap → scrub 10-15 s → rinse → dry",
+    "explanation": "Handwashing steps:\n1. **Wet** hands and arms with running warm water.\n2. Apply **soap**.\n3. **Scrub** hands and arms for 10 to 15 seconds, including between fingers and under nails.\n4. **Rinse** under running water.\n5. **Dry** with a single-use paper towel or a hand dryer.\n\n**Wrong choices**\n- Scrub hands with soap for 10 to 15 seconds: You scrub after wetting your hands and applying soap.\n- Dry hands with a single-use paper towel: Drying comes near the end.\n- Rinse hands under running water: Rinsing comes after scrubbing.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "handwashing"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-hygiene-health-0003",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "hygiene-health",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "How should hand antiseptic (hand sanitizer) be used by a food handler?",
+    "choices": [
+      "Whenever hands look clean",
+      "Only after washing hands, never in place of handwashing",
+      "Only before touching raw meat",
+      "In place of handwashing when the sink is busy"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Hand sanitizer is never a substitute for handwashing",
+    "explanation": "**Hand antiseptics** can be used **after** washing hands, but they **never replace handwashing**. Let the sanitizer dry before touching food or equipment.\n\n**Wrong choices**\n- In place of handwashing when the sink is busy: Hand sanitizer does not replace handwashing.\n- Only before touching raw meat: Sanitizer is not a substitute for washing at any time.\n- Whenever hands look clean: Clean-looking hands can still carry germs; washing comes first.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "hand antiseptic"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-hygiene-health-0004",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "hygiene-health",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "When must food handlers change single-use gloves?",
+    "choices": [
+      "Never, if they are washed between tasks",
+      "Only after taking out the garbage",
+      "As soon as they become dirty or torn",
+      "Only at the end of the shift"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Change gloves when dirty/torn, between tasks, after 4 hours",
+    "explanation": "Change single-use gloves **as soon as they become dirty or torn**, **before starting a different task**, **after an interruption** (like answering the phone), **after handling raw meat, seafood, or poultry and before handling ready-to-eat food**, and, following ServSafe guidance, **after four hours of continuous use** on the same task.\n\n**Wrong choices**\n- Only at the end of the shift: Gloves must be changed much more often than once a shift.\n- Only after taking out the garbage: That is one time, but not the only one.\n- Never, if they are washed between tasks: Single-use gloves must not be washed and reused.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "gloves"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-hygiene-health-0005",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "hygiene-health",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A food handler has been slicing turkey for sandwiches for four hours without a break. Following ServSafe guidance, what should they do?",
+    "choices": [
+      "Rinse the gloves in sanitizer and keep working",
+      "Put a second pair of gloves over the first pair",
+      "Keep working; gloves are only changed when torn",
+      "Change gloves"
+    ],
+    "answer": 4,
+    "oneLineConcept": "ServSafe: change gloves after 4 hours of continuous use",
+    "explanation": "ServSafe teaches that when doing the same task continuously, food handlers should **change gloves at least every four hours**. They should also wash their hands before putting on new gloves.\n\n**Wrong choices**\n- Rinse the gloves in sanitizer and keep working: Single-use gloves must never be washed and reused.\n- Keep working; gloves are only changed when torn: ServSafe guidance also calls for changing gloves after four hours of continuous use.\n- Put a second pair of gloves over the first pair: Double gloving does not replace changing gloves.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "gloves"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-hygiene-health-0006",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "hygiene-health",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which illness or symptom requires a food handler to be excluded from the operation and reported to the regulatory authority?",
+    "choices": [
+      "Jaundice that started within the last seven days",
+      "Mild seasonal allergies",
+      "A runny nose with no fever",
+      "A healed cut covered with a bandage and glove"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Jaundice within 7 days of onset: exclude and report",
+    "explanation": "**Jaundice** (yellow skin or eyes) can be a sign of Hepatitis A. A food handler with jaundice that started within the last **seven days** must be **excluded** from the operation, and the manager must **report** it to the regulatory authority.\n\n**Wrong choices**\n- A runny nose with no fever: A runny nose alone does not require exclusion.\n- A healed cut covered with a bandage and glove: A covered wound is managed by covering it, not by exclusion.\n- Mild seasonal allergies: Allergies are not a foodborne illness symptom.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "exclusion",
+      "jaundice"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-hygiene-health-0007",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "hygiene-health",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A food handler calls in with vomiting and diarrhea. When may they generally return to work?",
+    "choices": [
+      "After 7 days, no matter what",
+      "After they have had no symptoms for 2 hours",
+      "As soon as they feel well enough to work",
+      "After they have had no symptoms for at least 24 hours"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Vomiting/diarrhea: exclude; return after 24 h symptom-free",
+    "explanation": "Food handlers with **vomiting or diarrhea** must be **excluded**. In general they can return after they have had **no symptoms for at least 24 hours** or have a written medical release.\n\n**Wrong choices**\n- As soon as they feel well enough to work: Feeling better is not enough. They need 24 hours without symptoms (or a medical note).\n- After they have had no symptoms for 2 hours: Two hours is far too short.\n- After 7 days, no matter what: Seven days applies to jaundice, not to vomiting and diarrhea.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "exclusion"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-hygiene-health-0008",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "hygiene-health",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Which of these illnesses, when diagnosed in a food handler, must be reported to the regulatory authority?",
+    "choices": [
+      "Shigellosis (Shigella spp.)",
+      "Seasonal flu without vomiting or diarrhea",
+      "The common cold",
+      "A sprained wrist"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Report the Big 6: Norovirus, Hep A, Shigella, STEC, Salmonella",
+    "explanation": "The Food Code lists illnesses that food handlers must report to the person in charge: **Norovirus**, **Hepatitis A**, **Shigella spp.**, **Shiga toxin-producing E. coli**, **Salmonella Typhi** (typhoid fever), and **nontyphoidal Salmonella**. When a food handler is diagnosed with one of these, the person in charge must **notify the regulatory authority** and exclude or restrict the worker as the Food Code requires (for example, Hepatitis A and Salmonella Typhi mean exclusion).\n\n**Wrong choices**\n- The common cold: A cold is not on the list of reportable foodborne illnesses.\n- Seasonal flu without vomiting or diarrhea: Influenza is not one of the reportable foodborne illnesses in the Food Code.\n- A sprained wrist: An injury is not a foodborne illness.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "reportable illness",
+      "Big 6"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-hygiene-health-0009",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "hygiene-health",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A food handler has a sore throat with a fever and works in a restaurant that does not serve a high-risk population. What should the manager do?",
+    "choices": [
+      "Let them work as usual if they wear gloves",
+      "Send them to wash dishes with exposed food nearby",
+      "Exclude them and report to the health department",
+      "Restrict the food handler from working with or around food"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Sore throat with fever: restrict (exclude if high-risk population)",
+    "explanation": "A food handler with a **sore throat and fever** must be **restricted** from working with or around food. If the operation mainly serves a **high-risk population**, the food handler must be **excluded**.\n\n**Wrong choices**\n- Let them work as usual if they wear gloves: Gloves do not reduce the risk enough; they must be restricted.\n- Exclude them and report to the health department: Exclusion is required when the operation serves a high-risk population, not in this case.\n- Send them to wash dishes with exposed food nearby: They should not work around exposed food.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "restriction"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-hygiene-health-0010",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "hygiene-health",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which jewelry may a food handler wear on the hands or arms while preparing food?",
+    "choices": [
+      "A watch",
+      "A ring with a stone",
+      "A plain band ring",
+      "A bracelet"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Only a plain band ring on hands/arms",
+    "explanation": "While preparing food, food handlers should not wear rings (except a **plain band**), bracelets, watches, or other jewelry on the hands and arms. Jewelry can hold germs and fall into food.\n\n**Wrong choices**\n- A watch: Watches can hold germs and fall into food.\n- A bracelet: Bracelets are not allowed.\n- A ring with a stone: Rings with stones can hide germs and the stone can fall into food.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "jewelry"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-hygiene-health-0011",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "hygiene-health",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A food handler has an infected cut on the hand. What must they do?",
+    "choices": [
+      "Cover it with an impermeable cover, such as a bandage or finger cot, and wear a single-use glove over it",
+      "Cover it with a bandage only",
+      "Leave it open so it can dry",
+      "Put hand sanitizer on it and keep working"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Hand/wrist wound: impermeable cover + single-use glove over it",
+    "explanation": "A wound on the **hand or wrist** must be covered with an **impermeable cover** (such as a bandage or finger cot), and a **single-use glove** must be worn over it. A wound on the arm needs an impermeable cover, and a wound elsewhere on the body needs a dry, tight-fitting bandage.\n\n**Wrong choices**\n- Leave it open so it can dry: An open infected wound can spread germs to food.\n- Cover it with a bandage only: On the hand or wrist, a single-use glove must also be worn over the impermeable cover.\n- Put hand sanitizer on it and keep working: Sanitizer does not cover the wound.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "wounds"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-hygiene-health-0012",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "hygiene-health",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Where may employees eat, drink, or use tobacco?",
+    "choices": [
+      "In the prep area if they are on break",
+      "Anywhere in the kitchen if they wear gloves",
+      "In designated areas away from food prep and storage",
+      "In the dry storage room"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Eat, drink, smoke only in designated areas",
+    "explanation": "Employees should eat, drink, smoke, or chew gum or tobacco only in **designated areas** where food will not be contaminated. A covered drink with a straw or handle may be allowed in prep areas if it is kept away from food and equipment.\n\n**Wrong choices**\n- In the prep area if they are on break: Eating in prep areas can contaminate food and surfaces.\n- Anywhere in the kitchen if they wear gloves: Gloves do not make eating in the kitchen safe.\n- In the dry storage room: Storage areas are not allowed for eating or tobacco use.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "eating and drinking"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-hygiene-health-0013",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "hygiene-health",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Which practice is NOT allowed when handling ready-to-eat food, unless the regulatory authority has approved it?",
+    "choices": [
+      "Using single-use gloves",
+      "Using deli tissue",
+      "Using tongs",
+      "Touching it with bare hands"
+    ],
+    "answer": 4,
+    "oneLineConcept": "No bare-hand contact with ready-to-eat food",
+    "explanation": "The Food Code does not allow **bare-hand contact with ready-to-eat food** unless the operation has approval from the regulatory authority. Use **utensils**, **deli tissue**, or **single-use gloves** instead.\n\n**Wrong choices**\n- Using deli tissue: Deli tissue is an approved way to handle ready-to-eat food.\n- Using tongs: Tongs are an approved utensil.\n- Using single-use gloves: Gloves are an approved barrier.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "bare-hand contact"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "servsafe-manager-hygiene-health-0014",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "hygiene-health",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which practice is part of good personal hygiene for a food handler?",
+    "choices": [
+      "Wearing nail polish while preparing food",
+      "Wearing a hair restraint, such as a hat or hairnet",
+      "Wearing the same dirty apron into the restroom",
+      "Wiping hands on an apron"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Good hygiene: hair restraint, clean clothes, short nails",
+    "explanation": "Good personal hygiene includes **wearing a clean hair restraint**, keeping fingernails short and clean, wearing clean clothes, and taking off aprons before leaving the prep area.\n\n**Wrong choices**\n- Wiping hands on an apron: Wiping hands on an apron can spread germs. Wash hands instead.\n- Wearing nail polish while preparing food: Nail polish can flake into food. It is allowed only with intact gloves.\n- Wearing the same dirty apron into the restroom: Aprons should be taken off before using the restroom.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "personal hygiene"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-hygiene-health-0015",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "hygiene-health",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "When must a food handler wash hands?",
+    "choices": [
+      "Only when hands look dirty",
+      "After touching hair, face, or body",
+      "Only after using the restroom",
+      "Only before starting a shift"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Wash after touching body, restroom, raw meat, chemicals, garbage",
+    "explanation": "Food handlers must wash hands **before** preparing food and putting on gloves, and **after** using the restroom; handling raw meat, seafood, or poultry; **touching the hair, face, or body**; sneezing or coughing; eating or drinking; handling chemicals or garbage; and clearing tables.\n\n**Wrong choices**\n- Only before starting a shift: Handwashing is needed many times during a shift.\n- Only after using the restroom: The restroom is one time, but not the only one.\n- Only when hands look dirty: Hands can carry germs even when they look clean.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "handwashing"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-hygiene-health-0016",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "hygiene-health",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What should a food handler do right after sneezing into their hands?",
+    "choices": [
+      "Wash their hands",
+      "Wipe their hands on a towel",
+      "Put on gloves without washing",
+      "Keep working if they feel fine"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Wash hands after sneezing or coughing",
+    "explanation": "Sneezing or coughing can put germs on the hands. Food handlers must **wash their hands** right after sneezing, coughing, or using a tissue.\n\n**Wrong choices**\n- Wipe their hands on a towel: Wiping does not remove germs.\n- Put on gloves without washing: Hands must be washed before putting on gloves.\n- Keep working if they feel fine: Sneezing can put germs on the hands, so they must wash.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "handwashing"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-hygiene-health-0017",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "hygiene-health",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What should food handlers wear to keep hair out of food?",
+    "choices": [
+      "A headband only, with long hair loose",
+      "Nothing, if the hair is clean",
+      "Hair spray only",
+      "A clean hat or hairnet"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Wear a clean hat or hair restraint",
+    "explanation": "Food handlers must wear a **clean hat or other hair restraint**, such as a hairnet. Food handlers with facial hair should also wear a beard restraint.\n\n**Wrong choices**\n- A headband only, with long hair loose: Loose hair can still fall into food.\n- Nothing, if the hair is clean: Clean hair can still fall into food.\n- Hair spray only: Hair spray does not stop hair from falling.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "hair restraint"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-hygiene-health-0018",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "hygiene-health",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A food handler wants to take a break to smoke. What must they do before going back to work with food?",
+    "choices": [
+      "Use hand sanitizer only",
+      "Put on a new apron only",
+      "Nothing, if they did not touch food",
+      "Wash their hands"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Wash hands after smoking, eating, or drinking",
+    "explanation": "After smoking, eating, drinking, or chewing gum, food handlers must **wash their hands** before going back to work.\n\n**Wrong choices**\n- Use hand sanitizer only: Hand sanitizer does not replace handwashing.\n- Put on a new apron only: A clean apron does not clean the hands.\n- Nothing, if they did not touch food: Smoking puts hands near the mouth, so washing is required.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "handwashing"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  }
+]

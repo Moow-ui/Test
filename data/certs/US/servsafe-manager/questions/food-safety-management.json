@@ -1,0 +1,532 @@
+[
+  {
+    "id": "servsafe-manager-food-safety-management-0001",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "food-safety-management",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Under the FDA Food Code, who must be present in a food establishment during all hours of operation?",
+    "choices": [
+      "A registered dietitian",
+      "A person in charge (PIC) who can show food safety knowledge",
+      "A licensed health inspector",
+      "The owner of the business"
+    ],
+    "answer": 2,
+    "oneLineConcept": "A person in charge must be on site during all hours",
+    "explanation": "The Food Code says a **person in charge (PIC)** must be present during all hours of operation. The PIC must be able to show food safety knowledge, for example by being a **certified food protection manager**, and the Food Code expects at least one supervisor or manager to hold that certification.\n\n**Wrong choices**\n- A licensed health inspector: Inspectors visit on a schedule; they do not stay during all hours of operation.\n- The owner of the business: The owner does not have to be there. Someone must be the person in charge each shift.\n- A registered dietitian: A dietitian is not required by the Food Code to be present.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "person in charge"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-food-safety-management-0002",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "food-safety-management",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What is the main goal of active managerial control?",
+    "choices": [
+      "To train staff on customer service",
+      "To lower food costs in the kitchen",
+      "To control the most common risk factors for foodborne illness",
+      "To prepare for the health inspector's visit only"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Active managerial control = control the CDC risk factors",
+    "explanation": "**Active managerial control** means the manager takes steps every day to control the **most common risk factors** for foodborne illness, such as buying food from unsafe sources, cooking food incorrectly, holding food at the wrong temperature, using contaminated equipment, and poor personal hygiene.\n\n**Wrong choices**\n- To lower food costs in the kitchen: Cost control is good business, but it is not the goal of active managerial control.\n- To prepare for the health inspector's visit only: Active managerial control works every day, not only before an inspection.\n- To train staff on customer service: Customer service training is not the focus. The focus is food safety risk factors.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "active managerial control"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-food-safety-management-0003",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "food-safety-management",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which of these is one of the five most common risk factors for foodborne illness identified by the CDC?",
+    "choices": [
+      "Using a gas stove instead of an electric stove",
+      "Serving food in large portions",
+      "Serving food on paper plates",
+      "Holding food at incorrect temperatures"
+    ],
+    "answer": 4,
+    "oneLineConcept": "CDC risk factors include incorrect holding temperatures",
+    "explanation": "The CDC lists five common risk factors: **purchasing food from unsafe sources**, **failing to cook food correctly**, **holding food at incorrect temperatures**, **using contaminated equipment**, and **practicing poor personal hygiene**.\n\n**Wrong choices**\n- Serving food on paper plates: Paper plates are not a risk factor for foodborne illness.\n- Using a gas stove instead of an electric stove: The type of stove does not matter. Cooking food to the right temperature matters.\n- Serving food in large portions: Portion size is not a food safety risk factor.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "risk factors",
+      "CDC"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-food-safety-management-0004",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "food-safety-management",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "In a HACCP plan, what is the first principle?",
+    "choices": [
+      "Establish corrective actions",
+      "Determine critical control points",
+      "Conduct a hazard analysis",
+      "Keep records"
+    ],
+    "answer": 3,
+    "oneLineConcept": "HACCP principle 1 = hazard analysis",
+    "explanation": "HACCP has seven principles in this order:\n1. Conduct a hazard analysis\n2. Determine critical control points (CCPs)\n3. Establish critical limits\n4. Establish monitoring procedures\n5. Identify corrective actions\n6. Verify that the system works\n7. Establish procedures for record keeping and documentation\n\n**Wrong choices**\n- Determine critical control points: This is the second principle. You must find the hazards first.\n- Establish corrective actions: Corrective actions are the fifth principle.\n- Keep records: Record keeping is the last principle.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "HACCP"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-food-safety-management-0005",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "food-safety-management",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "In a HACCP plan, \"Cook chicken breasts to at least 165°F (74°C) for less than 1 second\" is an example of which principle?",
+    "choices": [
+      "A critical limit",
+      "Verification",
+      "A corrective action",
+      "Monitoring"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Critical limit = the minimum or maximum value at a CCP",
+    "explanation": "A **critical limit** is the minimum or maximum value that must be met at a critical control point to prevent, remove, or reduce a hazard. A cooking temperature and time is a typical critical limit.\n\n**Wrong choices**\n- A corrective action: A corrective action is what you do when a critical limit is not met, such as cooking longer.\n- Monitoring: Monitoring is how you check the limit, such as taking the temperature with a thermometer.\n- Verification: Verification checks that the whole plan works, such as reviewing logs.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "HACCP",
+      "critical limit"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-food-safety-management-0006",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "food-safety-management",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A cook checks the internal temperature of a roast and finds it has not reached its critical limit. The cook keeps cooking it until it does. In HACCP, keeping it cooking is which principle?",
+    "choices": [
+      "Record keeping",
+      "Verification",
+      "Corrective action",
+      "Hazard analysis"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Corrective action = what you do when a critical limit is not met",
+    "explanation": "When monitoring shows that a **critical limit was not met**, you take a **corrective action**. Continuing to cook until the food reaches the right temperature is a common corrective action.\n\n**Wrong choices**\n- Verification: Verification is a later check that the plan works, like a manager reviewing temperature logs.\n- Hazard analysis: Hazard analysis happens when the plan is written, not during cooking.\n- Record keeping: The cook may record it, but continuing to cook is the action that fixes the problem.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "HACCP",
+      "corrective action"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-food-safety-management-0007",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "food-safety-management",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A manager reviews the temperature logs each week and checks that thermometers are calibrated. Which HACCP principle is this?",
+    "choices": [
+      "Establishing critical limits",
+      "Monitoring",
+      "Identifying critical control points",
+      "Verification"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Verification = checking that the HACCP plan works",
+    "explanation": "**Verification** means checking that the HACCP plan is working as intended. Reviewing monitoring logs, checking corrective actions, and making sure thermometers are calibrated are all verification steps.\n\n**Wrong choices**\n- Monitoring: Monitoring is taking the temperature itself. Reviewing logs afterward checks that the plan is working.\n- Establishing critical limits: Critical limits are set when the plan is written.\n- Identifying critical control points: CCPs are chosen during planning, not during weekly reviews.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "HACCP",
+      "verification"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-food-safety-management-0008",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "food-safety-management",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What is a foodborne-illness outbreak?",
+    "choices": [
+      "A food item is past its use-by date",
+      "A health inspector finds a violation",
+      "One person feels sick after eating out",
+      "Two or more people get the same illness after eating the same food"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Outbreak = 2+ people, same illness, same food",
+    "explanation": "An **outbreak** happens when **two or more people** have the same symptoms after eating the same food, and an investigation confirms the food was the source.\n\n**Wrong choices**\n- One person feels sick after eating out: One person is not an outbreak. An outbreak needs two or more people.\n- A food item is past its use-by date: An expired date is a quality or safety concern, but it is not an outbreak.\n- A health inspector finds a violation: A violation is not an outbreak.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "outbreak"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-food-safety-management-0009",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "food-safety-management",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which group is at higher risk for foodborne illness?",
+    "choices": [
+      "Preschool-age children",
+      "High school athletes",
+      "Healthy adults aged 20 to 40",
+      "Restaurant employees"
+    ],
+    "answer": 1,
+    "oneLineConcept": "High-risk: young children, older adults, weak immune systems",
+    "explanation": "**High-risk populations** include preschool-age children (their immune systems are not fully built), older adults (immune systems weaken with age), and people with weakened immune systems, such as people with cancer or HIV, transplant recipients, and people taking certain medicines.\n\n**Wrong choices**\n- Healthy adults aged 20 to 40: Healthy adults have stronger immune systems than high-risk groups.\n- High school athletes: Healthy teenagers are not in the high-risk group.\n- Restaurant employees: Working in a restaurant does not make a person high-risk.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "high-risk populations"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-food-safety-management-0010",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "food-safety-management",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A food establishment that mainly serves a highly susceptible population, such as a nursing home, should NOT serve which item?",
+    "choices": [
+      "Fully cooked chicken soup",
+      "Canned fruit from an approved supplier",
+      "Raw seed sprouts",
+      "Pasteurized milk"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Highly susceptible: no raw sprouts or raw/undercooked animal food",
+    "explanation": "For **highly susceptible populations**, the Food Code does not allow raw seed sprouts, unpasteurized juice or milk, and raw or undercooked meat, seafood, and eggs (with limited exceptions). These foods carry a higher risk of illness.\n\n**Wrong choices**\n- Fully cooked chicken soup: Fully cooked food that reaches its required temperature is fine to serve.\n- Pasteurized milk: Pasteurized milk is the safe choice for this group.\n- Canned fruit from an approved supplier: Canned food from an approved source is safe.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "highly susceptible populations"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-food-safety-management-0011",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "food-safety-management",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Why do managers train staff on food safety?",
+    "choices": [
+      "So staff can write the HACCP plan alone",
+      "So staff know the correct procedures and why they matter",
+      "So the operation never needs a health inspection",
+      "Because training replaces the need for supervision"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Training = staff know the procedure and the reason",
+    "explanation": "Food safety **training** helps employees learn the right way to do each task and why it matters. Managers should also **monitor** staff and **retrain** them when needed.\n\n**Wrong choices**\n- So the operation never needs a health inspection: Training does not replace inspections.\n- Because training replaces the need for supervision: Managers still need to watch staff and correct them.\n- So staff can write the HACCP plan alone: Writing a HACCP plan is a management job, not the goal of staff training.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "training"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-food-safety-management-0012",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "food-safety-management",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A guest says they got sick after eating at your restaurant. What should the manager do FIRST?",
+    "choices": [
+      "Listen, take notes on what the guest ate and their symptoms, and follow the operation's illness-complaint procedure",
+      "Throw away all food in the kitchen right away",
+      "Offer a refund and close the complaint without notes",
+      "Tell the guest it could not have been your food"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Illness complaint: record details and follow the procedure",
+    "explanation": "When a guest reports an illness, the manager should stay calm, **collect details** (contact information, what and when they ate, symptoms, and when symptoms started), follow the operation's procedure, and **contact the regulatory authority** if an outbreak is suspected. Set aside any suspected food and label it \"Do not use\" and \"Do not discard.\"\n\n**Wrong choices**\n- Tell the guest it could not have been your food: Arguing with the guest is not helpful and may hide a real problem.\n- Throw away all food in the kitchen right away: Throwing away everything destroys the evidence the health department may need.\n- Offer a refund and close the complaint without notes: Without notes you cannot investigate or report the problem.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "foodborne illness complaint"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-food-safety-management-0013",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "food-safety-management",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Which is an example of a consumer advisory?",
+    "choices": [
+      "A menu note that eating raw or undercooked meat, seafood, or eggs may increase the risk of foodborne illness",
+      "A sign telling staff to wash their hands",
+      "A sign that lists the restaurant's hours",
+      "A label with the date food was prepared"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Consumer advisory = disclosure + reminder about raw/undercooked food",
+    "explanation": "If the menu includes raw or undercooked TCS food of animal origin (meat, seafood, eggs), the Food Code requires a **consumer advisory**: a disclosure that identifies these items and a **reminder** that eating them may increase the risk of foodborne illness.\n\n**Wrong choices**\n- A sign telling staff to wash their hands: A handwashing sign is for employees, not a consumer advisory.\n- A label with the date food was prepared: A date label is for food rotation, not a warning to guests.\n- A sign that lists the restaurant's hours: Business hours are not a food safety advisory.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "consumer advisory"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-food-safety-management-0014",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "food-safety-management",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which hazard is a biological hazard?",
+    "choices": [
+      "Sanitizer that splashed into food",
+      "A fish bone",
+      "Glass from a broken light bulb",
+      "Norovirus"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Biological = germs (bacteria, viruses, parasites, fungi, toxins)",
+    "explanation": "There are three kinds of food safety hazards: **biological** (bacteria, viruses, parasites, fungi, and toxins), **chemical** (cleaners, sanitizers, polishes, and toxic metals), and **physical** (glass, metal, bone, dirt). **Norovirus** is a virus, so it is a biological hazard.\n\n**Wrong choices**\n- Glass from a broken light bulb: Glass is a physical hazard.\n- Sanitizer that splashed into food: Sanitizer is a chemical hazard.\n- A fish bone: A bone is a physical hazard.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "hazards"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "servsafe-manager-food-safety-management-0015",
+    "certId": "servsafe-manager",
+    "subjectId": "servsafe-manager",
+    "chapterId": "food-safety-management",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which of these processes requires a variance from the regulatory authority?",
+    "choices": [
+      "Cooling soup in an ice-water bath",
+      "Cooking ground beef",
+      "Curing food",
+      "Thawing food in the refrigerator"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Special processes such as curing or smoking need a variance",
+    "explanation": "A **variance** is a document from the regulatory authority that allows a requirement to be waived or changed. Under the Food Code, special processes such as **curing food**, **smoking food as a way to preserve it**, using food additives to make food shelf-stable, custom-processing animals, sprouting seeds, and some **reduced-oxygen packaging (ROP)** need a variance and often a HACCP plan.\n\n**Wrong choices**\n- Cooking ground beef: Cooking ground beef to the right temperature is a normal process and needs no variance.\n- Cooling soup in an ice-water bath: An ice-water bath is a normal cooling method.\n- Thawing food in the refrigerator: Refrigerator thawing is the normal safe method.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "variance",
+      "special processes"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+]
