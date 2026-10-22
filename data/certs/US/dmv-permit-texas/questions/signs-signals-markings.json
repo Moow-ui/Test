@@ -610,5 +610,357 @@
         4
       ]
     }
+  },
+  {
+    "id": "dmv-permit-texas-signs-signals-markings-0018",
+    "certId": "dmv-permit-texas",
+    "subjectId": "knowledge-test",
+    "chapterId": "signs-signals-markings",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "You see this sign on the road ahead. What does it tell you?",
+    "choices": [
+      "A stop sign is ahead, so be ready to stop",
+      "You may keep going without stopping",
+      "A railroad crossing is ahead",
+      "The road ahead is closed"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Stop-sign symbol on a yellow diamond = a stop sign is coming up",
+    "explanation": "This yellow diamond is the **Stop Ahead** warning sign. It tells you there is a **stop sign ahead** that may be hard to see, such as past a curve or hill. Slow down and be ready to come to a full stop.\n\n**Wrong choices**\n- You may keep going without stopping: The sign warns you that you will have to stop soon. It does not let you skip the stop.\n- A railroad crossing is ahead: A railroad crossing ahead is shown by a round yellow sign with an X and the letters RR.\n- The road ahead is closed: A closed road is marked with a ROAD CLOSED sign or barricades, not with this warning sign.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "signs",
+      "warning signs",
+      "stop ahead"
+    ],
+    "image": "stop-ahead.svg",
+    "imageAlt": "A yellow diamond-shaped sign with a black border. In the upper part is a small red eight-sided shape with a white edge. Below it is a black arrow pointing straight up.",
+    "imageSource": {
+      "kind": "public",
+      "title": "MUTCD sign W3-1 (Stop Ahead)",
+      "license": "U.S. federal government work (public domain)"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-texas-signs-signals-markings-0019",
+    "certId": "dmv-permit-texas",
+    "subjectId": "knowledge-test",
+    "chapterId": "signs-signals-markings",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What does this yellow warning sign mean?",
+    "choices": [
+      "A school crossing is ahead",
+      "There is a traffic signal ahead",
+      "A railroad crossing with lights is ahead",
+      "A fire station is ahead"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Traffic-light symbol on a yellow diamond = a signal is coming up",
+    "explanation": "This yellow diamond is the **Signal Ahead** warning sign. It tells you there is a **traffic light ahead** that you may not see in time, for example around a curve. Slow down and be ready to stop if the light is yellow or red.\n\n**Wrong choices**\n- A school crossing is ahead: A school crossing is shown by a five-sided sign with people walking on it.\n- A railroad crossing with lights is ahead: A railroad crossing ahead is shown by a round yellow sign with an X and RR, not by a traffic-light symbol.\n- A fire station is ahead: There is no traffic-light symbol for a fire station. This sign is about a traffic signal.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "signs",
+      "warning signs",
+      "traffic signals"
+    ],
+    "image": "signal-ahead.svg",
+    "imageAlt": "A yellow diamond-shaped sign with a black border. In the middle is a tall black box with three round lights stacked top to bottom: red, yellow, and green.",
+    "imageSource": {
+      "kind": "public",
+      "title": "MUTCD sign W3-3 (Signal Ahead)",
+      "license": "U.S. federal government work (public domain)"
+    },
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-texas-signs-signals-markings-0020",
+    "certId": "dmv-permit-texas",
+    "subjectId": "knowledge-test",
+    "chapterId": "signs-signals-markings",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "You are coming up to this sign at a railroad track. What does it mean?",
+    "choices": [
+      "This is a railroad crossing; yield to any train",
+      "Trains must stop here for cars",
+      "A railroad crossing is about a mile away",
+      "The tracks are no longer used, so you may cross without looking"
+    ],
+    "answer": 1,
+    "oneLineConcept": "White X-shaped crossbuck = tracks are here; yield to trains",
+    "explanation": "This white X-shaped sign is the **crossbuck**. It is placed **at the railroad crossing itself**. Treat it like a yield sign: slow down, look and listen both ways, and **yield to any train**. If a train is coming, stop before the tracks.\n\n**Wrong choices**\n- Trains must stop here for cars: Trains cannot stop quickly and always have the right of way. Drivers must yield to trains.\n- A railroad crossing is about a mile away: The round yellow sign with an X and RR is the warning placed before you reach a crossing. The crossbuck is at the tracks.\n- The tracks are no longer used, so you may cross without looking: Never assume tracks are unused. Always look and listen for a train before you cross.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "signs",
+      "railroad crossing",
+      "crossbuck"
+    ],
+    "image": "crossbuck.svg",
+    "imageAlt": "Two long white boards with black borders cross each other in the shape of an X. The words on the boards read RAIL, ROAD, and CROSSING.",
+    "imageSource": {
+      "kind": "public",
+      "title": "MUTCD sign R15-1 (Crossbuck)",
+      "license": "U.S. federal government work (public domain)"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-texas-signs-signals-markings-0021",
+    "certId": "dmv-permit-texas",
+    "subjectId": "knowledge-test",
+    "chapterId": "signs-signals-markings",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "You are driving on a highway and see this sign. What should you expect?",
+    "choices": [
+      "Your lane is ending, so you must leave the road",
+      "Traffic may enter your road from the right, so be ready to let it merge safely",
+      "The road splits into two ways ahead",
+      "You must stop for cars coming from the right"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Merge sign = cars may join your lane from the side; make room",
+    "explanation": "This yellow diamond is the **Merge** warning sign. The straight arrow is your road, and the curved line is another road joining it. It warns that **traffic may enter your road from the side**. Watch for those cars and adjust your speed or change lanes, if safe, so they can merge smoothly.\n\n**Wrong choices**\n- Your lane is ending, so you must leave the road: A lane that ends is shown by a different sign (Lane Ends or Right Lane Ends). This sign shows another road joining yours.\n- The road splits into two ways ahead: A road that splits into two is not shown by one line joining a straight arrow.\n- You must stop for cars coming from the right: This is a warning sign, not a stop sign. You do not stop; you watch for merging traffic.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "signs",
+      "warning signs",
+      "merge"
+    ],
+    "image": "merge.svg",
+    "imageAlt": "A yellow diamond-shaped sign with a black border. A thick black arrow points straight up. A second curved black line comes up from the lower right and joins the side of the arrow.",
+    "imageSource": {
+      "kind": "public",
+      "title": "MUTCD sign W4-1 (Merge)",
+      "license": "U.S. federal government work (public domain)"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-texas-signs-signals-markings-0022",
+    "certId": "dmv-permit-texas",
+    "subjectId": "knowledge-test",
+    "chapterId": "signs-signals-markings",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "What does this yellow warning sign mean?",
+    "choices": [
+      "A divided highway ends ahead",
+      "A narrow bridge is ahead",
+      "A divided highway begins ahead; keep to the right of the median",
+      "The road ahead is for trucks only"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Road splitting around a median = divided highway begins; keep right",
+    "explanation": "This yellow diamond is the **Divided Highway** warning sign. The road lines spread apart around a center island, which means a **divided highway begins ahead**. A median will separate you from oncoming traffic, so **keep to the right** of it.\n\n**Wrong choices**\n- A divided highway ends ahead: When a divided highway ends, the sign shows the two sides coming back together around the end of the median.\n- A narrow bridge is ahead: A narrow bridge is shown by lines that come closer together, not by a road that splits around a median.\n- The road ahead is for trucks only: This sign does not limit the road to trucks. It warns about a change in the road layout.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "signs",
+      "warning signs",
+      "divided highway"
+    ],
+    "image": "divided-highway-begins.svg",
+    "imageAlt": "A yellow diamond-shaped sign with a black border. Two black lines come up from the bottom side by side, then bend outward and continue up. Between their upper parts is a solid black island with a rounded bottom.",
+    "imageSource": {
+      "kind": "public",
+      "title": "MUTCD sign W6-1 (Divided Highway)",
+      "license": "U.S. federal government work (public domain)"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-texas-signs-signals-markings-0023",
+    "certId": "dmv-permit-texas",
+    "subjectId": "knowledge-test",
+    "chapterId": "signs-signals-markings",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "You see this sign as you come up to a crossroad. What does it warn you about?",
+    "choices": [
+      "A hospital is ahead",
+      "A four-way stop is ahead",
+      "Another road crosses your road ahead",
+      "A railroad crossing is ahead"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Plus sign on a yellow diamond = another road crosses ahead",
+    "explanation": "This yellow diamond is the **Cross Road** warning sign. The black **plus shape** shows that **another road crosses your road ahead**. Slow down and watch for vehicles entering or crossing from the left and right.\n\n**Wrong choices**\n- A hospital is ahead: Hospital signs are blue guide signs with an H. They are not yellow diamonds.\n- A four-way stop is ahead: This sign does not tell you who must stop. A four-way stop is shown with stop signs and an ALL WAY plate.\n- A railroad crossing is ahead: A railroad crossing ahead is shown by a round yellow sign with an X and RR.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "signs",
+      "warning signs",
+      "intersection"
+    ],
+    "image": "cross-road.svg",
+    "imageAlt": "A yellow diamond-shaped sign with a black border. In the middle is a large black plus shape: one thick bar goes straight up and down, and another thick bar of the same size goes straight across.",
+    "imageSource": {
+      "kind": "public",
+      "title": "MUTCD sign W2-1 (Cross Road)",
+      "license": "U.S. federal government work (public domain)"
+    },
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-texas-signs-signals-markings-0024",
+    "certId": "dmv-permit-texas",
+    "subjectId": "knowledge-test",
+    "chapterId": "signs-signals-markings",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "This white sign stands at the end of a traffic island in the middle of the road. What must you do?",
+    "choices": [
+      "Pass the island on its left side",
+      "Pass the island on its right side",
+      "Stop before the island, then go",
+      "Make a U-turn around the island"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Arrow passing right of the black island = keep right of it",
+    "explanation": "This white rectangle is the **Keep Right** sign, a **regulatory** sign (a rule you must obey). The black shape is the island or median, and the arrow goes past its **right side**. You must **keep to the right** of the island.\n\n**Wrong choices**\n- Pass the island on its left side: Going left of the island would put you on the wrong side of the road, into oncoming traffic.\n- Stop before the island, then go: The sign has no stop message. It tells you which side to pass on.\n- Make a U-turn around the island: The arrow goes straight past the island. It does not curve back around it.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "signs",
+      "regulatory signs",
+      "keep right"
+    ],
+    "image": "keep-right.svg",
+    "imageAlt": "A white vertical rectangle sign with a black border. On the left side is a tall black rounded shape like an island. A thick black arrow starts at the bottom, bends past the side of the island, and points straight up.",
+    "imageSource": {
+      "kind": "public",
+      "title": "MUTCD sign R4-7 (Keep Right)",
+      "license": "U.S. federal government work (public domain)"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-texas-signs-signals-markings-0025",
+    "certId": "dmv-permit-texas",
+    "subjectId": "knowledge-test",
+    "chapterId": "signs-signals-markings",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "You turn onto a ramp and see this sign facing you. What does it mean, and what should you do?",
+    "choices": [
+      "Traffic ahead is heavy, so slow down and keep going",
+      "You are going against traffic; safely pull over and turn around",
+      "You may use this ramp only in an emergency",
+      "Watch for workers on the ramp ahead"
+    ],
+    "answer": 2,
+    "oneLineConcept": "WRONG WAY facing you = going against traffic; turn around safely",
+    "explanation": "This red rectangle is the **WRONG WAY** sign. It faces drivers who are going the **wrong direction** on a one-way road or ramp. If you see it facing you, you are headed into oncoming traffic. **Do not keep going.** Pull over safely and turn around.\n\n**Wrong choices**\n- Traffic ahead is heavy, so slow down and keep going: This sign has nothing to do with heavy traffic. Keeping on would mean driving against traffic.\n- You may use this ramp only in an emergency: The sign does not allow emergency use. It means no one may travel this way.\n- Watch for workers on the ramp ahead: Work zones use orange signs. A red WRONG WAY sign means you are going the wrong direction.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-23",
+    "tags": [
+      "signs",
+      "regulatory signs",
+      "wrong way"
+    ],
+    "image": "wrong-way.svg",
+    "imageAlt": "A red horizontal rectangle sign with a thin white border. Large white capital letters fill the sign in two lines.",
+    "imageSource": {
+      "kind": "public",
+      "title": "MUTCD sign R5-1a (Wrong Way)",
+      "license": "U.S. federal government work (public domain)"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   }
 ]

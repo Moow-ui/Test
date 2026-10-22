@@ -1,0 +1,76 @@
+{
+  "file": "tx-import.json",
+  "certId": "dmv-permit-texas",
+  "written": [
+    "data/certs/US/dmv-permit-texas/questions/signs-signals-markings.json"
+  ],
+  "total": 8,
+  "passed": 1,
+  "failed": 7,
+  "newIds": [
+    "dmv-permit-texas-signs-signals-markings-0018"
+  ],
+  "errors": [
+    {
+      "row": 2,
+      "id": "",
+      "stem": "What does this yellow warning sign mean?",
+      "errors": [
+        "choicesByLevel: choicesByLevel.intermediate: 1~4 사이의 번호를 작은 것부터 겹치지 않게 적습니다"
+      ]
+    },
+    {
+      "row": 3,
+      "id": "",
+      "stem": "You are coming up to this sign at a rail",
+      "errors": [
+        "choicesByLevel: choicesByLevel.intermediate: 1~4 사이의 번호를 작은 것부터 겹치지 않게 적습니다"
+      ]
+    },
+    {
+      "row": 4,
+      "id": "",
+      "stem": "You are driving on a highway and see thi",
+      "errors": [
+        "choicesByLevel: choicesByLevel.intermediate: 1~4 사이의 번호를 작은 것부터 겹치지 않게 적습니다",
+        "choicesByLevel: choicesByLevel.basic: 1~4 사이의 번호를 작은 것부터 겹치지 않게 적습니다"
+      ]
+    },
+    {
+      "row": 5,
+      "id": "",
+      "stem": "What does this yellow warning sign mean?",
+      "errors": [
+        "choicesByLevel: choicesByLevel.intermediate: 1~4 사이의 번호를 작은 것부터 겹치지 않게 적습니다",
+        "choicesByLevel: choicesByLevel.basic: 1~4 사이의 번호를 작은 것부터 겹치지 않게 적습니다"
+      ]
+    },
+    {
+      "row": 6,
+      "id": "",
+      "stem": "You see this sign as you come up to a cr",
+      "errors": [
+        "choicesByLevel: choicesByLevel.intermediate: 1~4 사이의 번호를 작은 것부터 겹치지 않게 적습니다",
+        "choicesByLevel: choicesByLevel.basic: 1~4 사이의 번호를 작은 것부터 겹치지 않게 적습니다"
+      ]
+    },
+    {
+      "row": 7,
+      "id": "",
+      "stem": "This white sign stands at the end of a t",
+      "errors": [
+        "choicesByLevel: choicesByLevel.intermediate: 1~4 사이의 번호를 작은 것부터 겹치지 않게 적습니다",
+        "choicesByLevel: choicesByLevel.basic: 1~4 사이의 번호를 작은 것부터 겹치지 않게 적습니다"
+      ]
+    },
+    {
+      "row": 8,
+      "id": "",
+      "stem": "You turn onto a ramp and see this sign f",
+      "errors": [
+        "choicesByLevel: choicesByLevel.intermediate: 1~4 사이의 번호를 작은 것부터 겹치지 않게 적습니다",
+        "choicesByLevel: choicesByLevel.basic: 1~4 사이의 번호를 작은 것부터 겹치지 않게 적습니다"
+      ]
+    }
+  ]
+}
