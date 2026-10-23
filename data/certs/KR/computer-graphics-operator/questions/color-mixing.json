@@ -1,0 +1,867 @@
+[
+  {
+    "id": "computer-graphics-operator-color-mixing-0001",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "color-mixing",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "그림은 빛의 3원색(R·G·B)을 겹쳐 비춘 가법혼합을 나타낸 것이다. (가) 부분에 나타나는 색은?",
+    "choices": [
+      "노랑(Y)",
+      "시안(C)",
+      "마젠타(M)",
+      "흰색(W)"
+    ],
+    "answer": 1,
+    "oneLineConcept": "가법혼합: R+G=노랑, G+B=시안, B+R=마젠타",
+    "explanation": "빛의 혼합(가법혼합)에서는 두 빛을 섞은 색이 다음과 같습니다.\n\n1. 빨강(R) + 초록(G) = 노랑(Y)\n2. 초록(G) + 파랑(B) = 시안(C)\n3. 파랑(B) + 빨강(R) = 마젠타(M)\n4. 세 빛을 모두 섞으면 흰색(W)\n\n(가)는 R 과 G 만 겹친 부분이므로 노랑입니다.\n\n**틀린 선지**\n- 시안(C): 시안은 G 와 B 가 겹친 (나) 부분의 색입니다.\n- 마젠타(M): 마젠타는 R 과 B 가 겹친 (다) 부분의 색입니다.\n- 흰색(W): 흰색은 세 빛이 모두 겹친 (라) 부분의 색입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "가법혼합",
+      "그림 문제"
+    ],
+    "image": "additive-mixing-regions.svg",
+    "imageAlt": "세 원이 서로 겹쳐 있는 그림. 왼쪽 위 원에 R, 오른쪽 위 원에 G, 아래쪽 원에 B 라고 적혀 있다. R 과 G 두 원만 겹친 위쪽 부분에 (가), G 와 B 두 원만 겹친 오른쪽 아래 부분에 (나), R 과 B 두 원만 겹친 왼쪽 아래 부분에 (다), 세 원이 모두 겹친 가운데 부분에 (라) 표시가 있다",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-color-mixing-0002",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "color-mixing",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "그림은 색료의 3원색(C·M·Y)을 겹쳐 칠한 감법혼합을 나타낸 것이다. (나) 부분에 나타나는 색은?",
+    "choices": [
+      "파랑",
+      "초록",
+      "빨강",
+      "검정"
+    ],
+    "answer": 3,
+    "oneLineConcept": "감법혼합: C+M=파랑, M+Y=빨강, Y+C=초록",
+    "explanation": "색료의 혼합(감법혼합)에서는 두 색을 섞은 색이 다음과 같습니다.\n\n1. 시안(C) + 마젠타(M) = 파랑\n2. 마젠타(M) + 노랑(Y) = 빨강\n3. 노랑(Y) + 시안(C) = 초록\n4. 세 색을 모두 섞으면 검정에 가까운 색\n\n(나)는 M 과 Y 만 겹친 부분이므로 빨강입니다.\n\n**틀린 선지**\n- 파랑: 파랑은 C 와 M 이 겹친 (가) 부분의 색입니다.\n- 초록: 초록은 C 와 Y 가 겹친 (다) 부분의 색입니다.\n- 검정: 검정에 가까운 색은 세 색이 모두 겹친 (라) 부분의 색입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "감법혼합",
+      "그림 문제"
+    ],
+    "image": "subtractive-mixing-regions.svg",
+    "imageAlt": "세 원이 서로 겹쳐 있는 그림. 왼쪽 위 원에 C, 오른쪽 위 원에 M, 아래쪽 원에 Y 라고 적혀 있다. C 와 M 두 원만 겹친 위쪽 부분에 (가), M 과 Y 두 원만 겹친 오른쪽 아래 부분에 (나), C 와 Y 두 원만 겹친 왼쪽 아래 부분에 (다), 세 원이 모두 겹친 가운데 부분에 (라) 표시가 있다",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-color-mixing-0003",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "color-mixing",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "그림은 먼셀의 10색상환이다. 노랑(Y)과 보색 관계에 있는 색상의 위치는?",
+    "choices": [
+      "(가)",
+      "(나)",
+      "(다)",
+      "(라)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "먼셀 10색상환에서 Y 의 보색은 PB(남색)",
+    "explanation": "보색은 색상환에서 서로 정반대편에 있는 색입니다. 그림의 10색상환은 R 부터 시계 방향으로 R, YR, Y, GY, G, BG, B, PB, P, RP 순서입니다.\n\n1. (가)는 YR(주황), (나)는 GY(연두), (다)는 BG(청록), (라)는 PB(남색) 자리입니다.\n2. Y 에서 원의 중심을 지나 반대편에 있는 점은 PB 입니다.\n3. 따라서 Y 의 보색 위치는 (라)입니다.\n\n**틀린 선지**\n- (가): YR(주황) 자리로, Y 의 바로 옆에 있는 유사색입니다.\n- (나): GY(연두) 자리로, Y 의 바로 옆에 있는 유사색입니다.\n- (다): BG(청록) 자리로, R(빨강)의 보색 위치입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "색상환",
+      "보색",
+      "그림 문제"
+    ],
+    "image": "munsell-hue-circle-positions.svg",
+    "imageAlt": "먼셀 10색상환을 나타낸 원. 원 위에 같은 간격으로 10개의 점이 있고, 맨 위부터 시계 방향으로 R, (가), Y, (나), G, (다), B, (라), P, RP 라고 적혀 있다. 원의 가운데에 중심점이 있다",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-color-mixing-0004",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "color-mixing",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "색의 3속성으로 바르게 짝지은 것은?",
+    "choices": [
+      "색상·온도·무게",
+      "명도·광택·질감",
+      "채도·크기·위치",
+      "색상·명도·채도"
+    ],
+    "answer": 4,
+    "oneLineConcept": "색의 3속성은 색상·명도·채도",
+    "explanation": "색은 세 가지 성질로 설명합니다. 색상은 빨강·노랑처럼 색의 종류, 명도는 밝고 어두운 정도, 채도는 맑고 탁한 정도(선명함)입니다.\n\n**틀린 선지**\n- 색상·온도·무게: 온도감·무게감은 색이 주는 느낌이지 3속성이 아닙니다.\n- 명도·광택·질감: 광택과 질감은 물체 표면의 성질입니다.\n- 채도·크기·위치: 크기와 위치는 색의 속성이 아닙니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "색의 3속성"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-color-mixing-0005",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "color-mixing",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "색의 밝고 어두운 정도를 나타내는 속성은?",
+    "choices": [
+      "보색",
+      "채도",
+      "명도",
+      "색상"
+    ],
+    "answer": 3,
+    "oneLineConcept": "밝고 어두운 정도는 명도",
+    "explanation": "명도는 색의 밝기 단계입니다. 흰색에 가까울수록 명도가 높고, 검정에 가까울수록 명도가 낮습니다. 사람의 눈은 세 속성 가운데 명도 차이에 가장 민감합니다.\n\n**틀린 선지**\n- 색상: 빨강·노랑처럼 색의 종류를 구별하는 속성입니다.\n- 채도: 색의 맑고 탁한 정도(선명함)입니다.\n- 보색: 색상환에서 마주 보는 색의 관계로, 속성 이름이 아닙니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "색의 3속성",
+      "명도"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-color-mixing-0006",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "color-mixing",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "색의 맑고 탁한 정도, 즉 색 기운이 얼마나 순수하고 선명한지를 나타내는 속성은?",
+    "choices": [
+      "색온도",
+      "색상",
+      "채도",
+      "명도"
+    ],
+    "answer": 3,
+    "oneLineConcept": "맑고 탁한 정도는 채도",
+    "explanation": "채도는 색의 선명한 정도입니다. 다른 색이 섞이지 않은 순색이 채도가 가장 높고, 흰색·검정·회색이 섞일수록 채도가 낮아집니다.\n\n**틀린 선지**\n- 명도: 밝고 어두운 정도입니다.\n- 색상: 색의 종류입니다.\n- 색온도: 빛의 색을 온도(K)로 나타낸 것으로 3속성이 아닙니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "색의 3속성",
+      "채도"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-color-mixing-0007",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "color-mixing",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "흰색·회색·검정 같은 무채색이 가지고 있는 속성은?",
+    "choices": [
+      "색상과 채도만 가진다",
+      "색상·명도·채도를 모두 가진다",
+      "채도만 가진다",
+      "명도만 가진다"
+    ],
+    "answer": 4,
+    "oneLineConcept": "무채색은 명도만 있다",
+    "explanation": "무채색은 색 기운이 없는 색이라 색상과 채도가 없고 밝기(명도)만 다릅니다. 색상·명도·채도를 모두 가진 색은 유채색입니다.\n\n**틀린 선지**\n- 채도만 가진다: 무채색은 채도가 0 이라 채도 차이가 없습니다.\n- 색상과 채도만 가진다: 무채색에는 색상과 채도가 없습니다.\n- 색상·명도·채도를 모두 가진다: 세 속성을 모두 가진 것은 유채색입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "무채색",
+      "색의 3속성"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-color-mixing-0008",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "color-mixing",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "여러 색의 빛을 겹쳐 비출수록 점점 밝아지는 혼합 방식은?",
+    "choices": [
+      "병치혼합",
+      "감법혼합",
+      "회전혼합",
+      "가법혼합"
+    ],
+    "answer": 4,
+    "oneLineConcept": "빛을 섞을수록 밝아지는 것이 가법혼합",
+    "explanation": "가법혼합은 빛의 혼합으로, 빛이 더해질수록 밝아집니다. 빛의 3원색 빨강(R)·초록(G)·파랑(B)을 모두 섞으면 흰색에 가까워집니다. 모니터·무대 조명이 이 원리를 씁니다.\n\n**틀린 선지**\n- 회전혼합: 원판을 빠르게 돌려 색이 섞여 보이는 중간혼합으로, 밝기가 평균이 됩니다.\n- 병치혼합: 작은 색점을 나란히 놓아 섞여 보이는 중간혼합으로, 밝기가 평균이 됩니다.\n- 감법혼합: 물감·잉크 같은 색료의 혼합으로, 섞을수록 어두워집니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "가법혼합"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-color-mixing-0009",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "color-mixing",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "인쇄 잉크나 물감에서 기본이 되는 색료의 3원색은?",
+    "choices": [
+      "빨강·초록·파랑",
+      "빨강·노랑·검정",
+      "주황·초록·보라",
+      "시안·마젠타·노랑"
+    ],
+    "answer": 4,
+    "oneLineConcept": "색료의 3원색은 시안·마젠타·노랑",
+    "explanation": "색료(물감·잉크)의 3원색은 시안(C), 마젠타(M), 노랑(Y)입니다. 이 세 색을 섞어 여러 색을 만들며, 인쇄에서는 진한 검정을 위해 검정(K)을 더해 CMYK 4색으로 인쇄합니다.\n\n**틀린 선지**\n- 빨강·초록·파랑: 이것은 빛의 3원색(RGB)입니다.\n- 빨강·노랑·검정: 검정은 3원색이 아니라 인쇄에서 덧붙이는 색입니다.\n- 주황·초록·보라: 원색을 섞어 만든 2차색 계열입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "감법혼합",
+      "3원색"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-color-mixing-0010",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "color-mixing",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "물감이나 잉크를 섞을수록 나타나는 변화로 옳은 것은?",
+    "choices": [
+      "명도는 높아지고 채도는 그대로이다",
+      "명도와 채도가 모두 높아진다",
+      "색상만 바뀌고 명도는 그대로이다",
+      "명도와 채도가 모두 낮아진다"
+    ],
+    "answer": 4,
+    "oneLineConcept": "감법혼합은 섞을수록 어둡고 탁해진다",
+    "explanation": "색료의 혼합(감법혼합)은 섞을수록 빛을 흡수하는 성분이 늘어나 반사되는 빛이 줄어듭니다. 그래서 혼합할수록 명도가 낮아지고, 색도 탁해져 채도도 낮아집니다.\n\n**틀린 선지**\n- 명도는 높아지고 채도는 그대로이다: 색료를 섞으면 명도가 낮아집니다.\n- 색상만 바뀌고 명도는 그대로이다: 색료를 섞으면 명도도 낮아집니다.\n- 명도와 채도가 모두 높아진다: 섞을수록 밝아지는 것은 빛의 혼합(가법혼합)입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "감법혼합"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-color-mixing-0011",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "color-mixing",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "점묘화나 여러 색실로 짠 직물처럼 작은 색점들이 나란히 놓여 멀리서 보면 섞인 색으로 보이는 혼합은?",
+    "choices": [
+      "감법혼합",
+      "계시혼합",
+      "병치혼합",
+      "회전혼합"
+    ],
+    "answer": 3,
+    "oneLineConcept": "작은 색점을 나란히 놓아 섞여 보이면 병치혼합",
+    "explanation": "병치혼합은 색을 실제로 섞지 않고 작은 점이나 선을 촘촘하게 나란히 놓아, 눈에서 섞여 보이게 하는 중간혼합입니다. 쇠라의 점묘화와 직물이 대표적인 예입니다.\n\n**틀린 선지**\n- 감법혼합: 물감·잉크를 실제로 섞는 혼합입니다.\n- 계시혼합: 시간 차를 두고 색이 이어서 보이는 것을 말하며, 회전혼합과 관련된 말입니다.\n- 회전혼합: 색을 칠한 원판을 빠르게 돌려 섞여 보이게 하는 것입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "중간혼합",
+      "병치혼합"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-color-mixing-0012",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "color-mixing",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "여러 색을 칠한 원판(맥스웰 원판)을 빠르게 돌렸을 때 색이 섞여 보이는 혼합은?",
+    "choices": [
+      "감법혼합",
+      "가법혼합",
+      "회전혼합",
+      "병치혼합"
+    ],
+    "answer": 3,
+    "oneLineConcept": "원판을 돌려 섞여 보이면 회전혼합",
+    "explanation": "회전혼합은 색을 칠한 팽이나 원판을 빠르게 돌려 눈에서 색이 섞여 보이게 하는 중간혼합입니다. 섞여 보이는 색의 밝기는 원래 색들 밝기의 중간(평균)이 됩니다.\n\n**틀린 선지**\n- 감법혼합: 물감·잉크를 실제로 섞는 혼합입니다.\n- 병치혼합: 작은 색점을 나란히 놓아 섞여 보이게 하는 것입니다.\n- 가법혼합: 여러 빛을 겹쳐 비추는 혼합으로, 원판을 돌리는 것이 아닙니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "중간혼합",
+      "회전혼합"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-color-mixing-0013",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "color-mixing",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "흰색과 검정을 반씩 칠한 원판을 빠르게 돌리면 어떻게 보이는가?",
+    "choices": [
+      "중간 밝기의 회색으로 보인다",
+      "빨간색으로 보인다",
+      "흰색으로 보인다",
+      "검정으로 보인다"
+    ],
+    "answer": 1,
+    "oneLineConcept": "회전혼합의 밝기는 두 색의 평균",
+    "explanation": "회전혼합은 중간혼합이므로, 섞여 보이는 색의 명도는 원래 색들 명도의 평균이 됩니다. 흰색과 검정을 같은 면적으로 칠해 돌리면 그 중간 밝기인 회색으로 보입니다.\n\n**틀린 선지**\n- 검정으로 보인다: 색료를 섞는 감법혼합이 아니므로 더 어두워지지 않습니다.\n- 빨간색으로 보인다: 무채색끼리 섞여 보이므로 색 기운이 생기지 않습니다.\n- 흰색으로 보인다: 빛이 더해지는 가법혼합이 아니므로 더 밝아지지 않습니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "중간혼합",
+      "회전혼합"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-color-mixing-0014",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "color-mixing",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "빛의 혼합(가법혼합)에서 서로 보색인 두 빛을 알맞은 비율로 겹쳐 비추면 어떤 색이 되는가?",
+    "choices": [
+      "보라",
+      "흰색",
+      "갈색",
+      "검정"
+    ],
+    "answer": 2,
+    "oneLineConcept": "보색 빛을 섞으면 흰색(무채색)",
+    "explanation": "가법혼합에서 보색 관계의 두 빛은 합쳐서 빛의 3원색을 모두 갖추게 됩니다. 예를 들어 빨강(R) 빛과 시안(G+B) 빛을 겹치면 R·G·B 가 모두 모여 흰색이 됩니다.\n\n**틀린 선지**\n- 갈색: 빛의 보색 혼합 결과가 아닙니다.\n- 보라: 보라는 빨강과 파랑 빛 계열의 혼합에 가깝고, 보색 혼합의 결과가 아닙니다.\n- 검정: 빛을 더하면 밝아지므로 검정이 되지 않습니다. 색료의 보색 혼합은 어두운 무채색이 됩니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "가법혼합",
+      "보색"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-color-mixing-0015",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "color-mixing",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "물감에서 서로 보색인 두 색을 섞으면 어떤 결과가 되는가?",
+    "choices": [
+      "채도가 높아져 더 선명해진다",
+      "두 색 중 밝은 색만 남는다",
+      "흰색에 가까워진다",
+      "회색이나 검정에 가까운 무채색이 된다"
+    ],
+    "answer": 4,
+    "oneLineConcept": "색료의 보색 혼합은 회색·검정에 가까운 무채색",
+    "explanation": "색료에서 보색끼리 섞으면 서로의 색 기운을 없애 회색이나 검정에 가까운 어두운 무채색이 됩니다. 그래서 조색할 때 채도를 낮추려면 보색을 아주 조금씩 넣습니다.\n\n**틀린 선지**\n- 흰색에 가까워진다: 흰색이 되는 것은 빛(가법혼합)의 보색 혼합입니다.\n- 두 색 중 밝은 색만 남는다: 두 색이 섞여 무채색 쪽으로 바뀝니다.\n- 채도가 높아져 더 선명해진다: 보색을 섞으면 색 기운이 줄어 채도가 낮아집니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "감법혼합",
+      "보색"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-color-mixing-0016",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "color-mixing",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "빛의 3원색 중 두 가지를 섞어 만든 색(노랑·시안·마젠타)과 색료의 3원색 사이의 관계로 옳은 것은?",
+    "choices": [
+      "빛의 2차색이 색료의 2차색과 같다",
+      "둘 사이에는 아무 관계가 없다",
+      "빛의 2차색은 모두 무채색이다",
+      "빛의 2차색이 색료의 3원색과 같다"
+    ],
+    "answer": 4,
+    "oneLineConcept": "빛의 2차색(Y·C·M) = 색료의 3원색",
+    "explanation": "빛의 3원색을 두 개씩 섞으면 노랑(R+G), 시안(G+B), 마젠타(B+R)가 됩니다. 이 세 색이 바로 색료의 3원색입니다. 반대로 색료의 3원색을 두 개씩 섞으면 빨강·초록·파랑, 즉 빛의 3원색이 됩니다.\n\n**틀린 선지**\n- 빛의 2차색은 모두 무채색이다: 노랑·시안·마젠타는 유채색입니다.\n- 빛의 2차색이 색료의 2차색과 같다: 색료의 2차색은 빨강·초록·파랑으로 빛의 3원색과 같습니다.\n- 둘 사이에는 아무 관계가 없다: 서로의 2차색이 상대의 원색이 되는 관계가 있습니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "가법혼합",
+      "감법혼합"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-color-mixing-0017",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "color-mixing",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "목표색보다 조색한 색의 채도가 너무 높을 때 채도를 낮추는 방법으로 알맞은 것은?",
+    "choices": [
+      "물만 계속 넣는다",
+      "형광 안료를 넣는다",
+      "보색이나 같은 밝기의 회색을 조금씩 넣는다",
+      "같은 색의 순색을 더 넣는다"
+    ],
+    "answer": 3,
+    "oneLineConcept": "채도를 낮추려면 보색이나 회색을 조금씩",
+    "explanation": "채도는 다른 색 기운이 섞일수록 낮아집니다. 보색을 조금 넣거나 비슷한 밝기의 회색을 섞으면 색상과 명도는 크게 바꾸지 않으면서 채도를 낮출 수 있습니다. 한 번에 많이 넣지 말고 조금씩 넣으며 비교합니다.\n\n**틀린 선지**\n- 같은 색의 순색을 더 넣는다: 순색을 더하면 채도가 오히려 높아집니다.\n- 형광 안료를 넣는다: 형광 안료는 색을 더 선명하게 만듭니다.\n- 물만 계속 넣는다: 물은 농도를 묽게 할 뿐, 원하는 채도 보정이 되지 않습니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "색차 보정",
+      "채도"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-color-mixing-0018",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "color-mixing",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "물감으로 조색한 색이 목표색보다 어두울 때 명도를 높이는 방법으로 알맞은 것은?",
+    "choices": [
+      "흰색을 조금씩 넣는다",
+      "진한 남색을 넣는다",
+      "검정을 조금씩 넣는다",
+      "보색을 조금씩 넣는다"
+    ],
+    "answer": 1,
+    "oneLineConcept": "색료의 명도를 높이려면 흰색을 조금씩",
+    "explanation": "물감에서 명도를 높이려면 흰색을 조금씩 섞습니다. 흰색을 넣으면 밝아지는 대신 채도는 낮아지므로, 목표색과 비교하면서 소량씩 넣어야 합니다.\n\n**틀린 선지**\n- 진한 남색을 넣는다: 어두운 색을 넣으면 명도가 낮아집니다.\n- 검정을 조금씩 넣는다: 검정을 넣으면 명도가 더 낮아집니다.\n- 보색을 조금씩 넣는다: 보색은 채도를 낮추고 어둡게 만듭니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "색차 보정",
+      "명도"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-color-mixing-0019",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "color-mixing",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "두 색의 분광 반사율(빛을 반사하는 성질)이 서로 다른데도 특정한 조명 아래에서는 같은 색으로 보이는 현상은?",
+    "choices": [
+      "연색성",
+      "색순응",
+      "조건등색(메타메리즘)",
+      "색의 동화"
+    ],
+    "answer": 3,
+    "oneLineConcept": "분광이 달라도 특정 조명에서 같아 보이면 조건등색",
+    "explanation": "조건등색(메타메리즘)은 서로 다른 두 색이 어떤 조명에서는 같아 보이다가 조명이 바뀌면 달라 보이는 현상입니다. 그래서 조색한 색은 여러 조명(예: 낮빛, 형광등) 아래에서 목표색과 비교해 확인해야 합니다.\n\n**틀린 선지**\n- 색의 동화: 주변 색에 가까워 보이는 현상입니다.\n- 연색성: 조명이 물체의 색을 얼마나 자연스럽게 보이게 하는지의 성질입니다.\n- 색순응: 조명이 바뀌어도 눈이 적응해 물체 색을 비슷하게 느끼는 현상입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "조색 검사",
+      "조건등색"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-color-mixing-0020",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "color-mixing",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "색채 표준이 갖추어야 할 조건 가운데, '같은 기준으로 언제 어디서나 같은 색을 다시 만들어 낼 수 있어야 한다'는 것은?",
+    "choices": [
+      "재현성",
+      "주관성",
+      "유행성",
+      "독창성"
+    ],
+    "answer": 1,
+    "oneLineConcept": "색채 표준은 같은 색을 다시 만들 수 있어야(재현성)",
+    "explanation": "색채 표준은 누구나 같은 색을 정확히 전달하고 다시 만들 수 있게 하는 기준입니다. 이를 위해 객관적이고 과학적이며, 체계적으로 배열되어 있고, 언제든 같은 색을 다시 만들 수 있어야(재현성) 합니다.\n\n**틀린 선지**\n- 주관성: 표준은 개인의 느낌이 아닌 객관적인 기준이어야 합니다.\n- 유행성: 유행에 따라 바뀌면 표준의 역할을 할 수 없습니다.\n- 독창성: 표준은 남과 다른 것이 아니라 함께 쓰는 공통 기준이어야 합니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "색채 표준"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-color-mixing-0021",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "color-mixing",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "색채 표준의 조건으로 거리가 먼 것은?",
+    "choices": [
+      "보는 사람의 기분에 따라 색 이름을 다르게 정해야 한다",
+      "색의 표기가 국제적으로 통용될 수 있어야 한다",
+      "색이 일정한 간격으로 체계적으로 배열되어야 한다",
+      "같은 색을 다시 만들어 낼 수 있어야 한다"
+    ],
+    "answer": 1,
+    "oneLineConcept": "색채 표준은 객관성·체계성·재현성·국제 호환이 조건",
+    "explanation": "색채 표준은 누구에게나 같은 의미로 전달되는 공통 기준입니다. 그래서 국제적으로 통할 것, 체계적인 배열, 재현성, 객관성을 갖추어야 합니다. 보는 사람에 따라 달라지는 주관적 기준은 표준이 될 수 없습니다.\n\n**틀린 선지**\n- 색이 일정한 간격으로 체계적으로 배열되어야 한다: 체계적인 배열은 색채 표준의 조건입니다.\n- 같은 색을 다시 만들어 낼 수 있어야 한다: 재현성은 색채 표준의 조건입니다.\n- 색의 표기가 국제적으로 통용될 수 있어야 한다: 국제적 호환성은 색채 표준의 조건입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "색채 표준"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "computer-graphics-operator-color-mixing-0022",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "color-mixing",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "순색에 회색을 섞어 만든, 맑지 않고 탁한 느낌의 색을 무엇이라 하는가?",
+    "choices": [
+      "순색",
+      "탁색",
+      "암청색",
+      "명청색"
+    ],
+    "answer": 2,
+    "oneLineConcept": "순색+회색은 탁색, 순색+흰색은 명청색",
+    "explanation": "순색에 흰색만 섞으면 맑고 밝은 명청색, 검정만 섞으면 맑고 어두운 암청색이 됩니다. 회색을 섞으면 흰색과 검정이 함께 들어가 탁한 느낌의 탁색이 됩니다.\n\n**틀린 선지**\n- 명청색: 순색에 흰색을 섞은 맑고 밝은 색입니다.\n- 암청색: 순색에 검정을 섞은 맑고 어두운 색입니다.\n- 순색: 다른 색이 섞이지 않은 가장 선명한 색입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "색의 분류",
+      "탁색"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-color-mixing-0023",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "color-mixing",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "색상환에서 서로 정반대편에 마주 보고 있는 두 색의 관계를 무엇이라 하는가?",
+    "choices": [
+      "동일색",
+      "무채색",
+      "유사색",
+      "보색"
+    ],
+    "answer": 4,
+    "oneLineConcept": "색상환에서 마주 보는 색은 보색",
+    "explanation": "보색은 색상환에서 서로 반대편에 있는 색입니다. 나란히 놓으면 서로를 더 선명하게 보이게 하고, 물감으로 섞으면 무채색에 가까워집니다.\n\n**틀린 선지**\n- 동일색: 같은 색상 안에서 밝기나 채도만 다른 색입니다.\n- 무채색: 흰색·회색·검정처럼 색 기운이 없는 색입니다.\n- 유사색: 색상환에서 서로 가까이 있는 색입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "보색",
+      "색상환"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-color-mixing-0024",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "color-mixing",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "빛의 혼합에서 빨강(R) 빛과 섞었을 때 흰색이 되는 보색 빛은?",
+    "choices": [
+      "시안(C)",
+      "노랑(Y)",
+      "마젠타(M)",
+      "초록(G)"
+    ],
+    "answer": 1,
+    "oneLineConcept": "빨강 빛의 보색은 시안(G+B)",
+    "explanation": "빨강(R) 빛에 무엇을 더해야 R·G·B 가 모두 갖춰지는지 생각합니다.\n\n1. 흰색 = R + G + B\n2. 빨강(R)에 부족한 빛은 초록(G)과 파랑(B)입니다.\n3. G + B = 시안(C)\n\n따라서 빨강 빛의 보색 빛은 시안입니다.\n\n**틀린 선지**\n- 마젠타(M): 마젠타는 R+B 이므로 빨강과 섞어도 초록(G)이 없어 흰색이 되지 않습니다.\n- 초록(G): 초록만 더하면 파랑(B)이 없어 노랑이 됩니다.\n- 노랑(Y): 노랑은 R+G 이므로 빨강과 섞어도 파랑(B)이 없어 흰색이 되지 않습니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "가법혼합",
+      "보색"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+]

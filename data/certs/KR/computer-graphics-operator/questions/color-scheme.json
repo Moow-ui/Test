@@ -1,0 +1,927 @@
+[
+  {
+    "id": "computer-graphics-operator-color-scheme-0001",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "color-scheme",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "먼셀 표색계로 '5Y 8/12' 라고 적힌 색에서 8 이 나타내는 것은?",
+    "choices": [
+      "채도",
+      "색온도",
+      "명도",
+      "색상"
+    ],
+    "answer": 3,
+    "oneLineConcept": "먼셀 표기 H V/C: 색상 명도/채도",
+    "explanation": "먼셀 표기는 'H V/C', 즉 색상(Hue) 명도(Value)/채도(Chroma) 순서로 적습니다.\n\n1. 5Y: 색상(노랑 계열의 대표 색상)\n2. 8: 명도(빗금 앞)\n3. 12: 채도(빗금 뒤)\n\n**틀린 선지**\n- 색상: 색상은 맨 앞의 5Y 입니다.\n- 채도: 채도는 빗금 뒤의 12 입니다.\n- 색온도: 먼셀 표기에는 색온도가 들어가지 않습니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "먼셀",
+      "색표시법"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-color-scheme-0002",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "color-scheme",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "먼셀 색상환의 기본이 되는 5가지 주요 색상으로 옳은 것은?",
+    "choices": [
+      "시안·마젠타·노랑·검정·흰색",
+      "빨강·주황·노랑·초록·파랑",
+      "빨강·노랑·초록·파랑·보라",
+      "빨강·초록·파랑·흰색·검정"
+    ],
+    "answer": 3,
+    "oneLineConcept": "먼셀 기본 5색상은 R·Y·G·B·P",
+    "explanation": "먼셀 색상환은 빨강(R)·노랑(Y)·초록(G)·파랑(B)·보라(P) 다섯 가지를 기본으로 하고, 그 사이에 YR·GY·BG·PB·RP 를 넣어 10색상을 만듭니다.\n\n**틀린 선지**\n- 시안·마젠타·노랑·검정·흰색: 인쇄 잉크와 무채색으로, 먼셀 기본 색상이 아닙니다.\n- 빨강·초록·파랑·흰색·검정: 빛의 3원색과 무채색입니다.\n- 빨강·주황·노랑·초록·파랑: 주황(YR)은 기본 5색 사이에 넣은 중간 색상이고, 보라가 빠졌습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "먼셀",
+      "색상환"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-color-scheme-0003",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "color-scheme",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "먼셀 표색계에서 명도 0 에 해당하는 색은?",
+    "choices": [
+      "이상적인 흰색",
+      "중간 회색",
+      "이상적인 검정",
+      "가장 선명한 빨강"
+    ],
+    "answer": 3,
+    "oneLineConcept": "먼셀 명도는 0(검정)~10(흰색)",
+    "explanation": "먼셀 표색계의 명도는 이상적인 검정을 0, 이상적인 흰색을 10 으로 두고 그 사이를 나눕니다. 숫자가 클수록 밝은 색입니다.\n\n**틀린 선지**\n- 가장 선명한 빨강: 선명함은 명도가 아니라 채도로 나타냅니다.\n- 이상적인 흰색: 흰색은 명도 10 입니다.\n- 중간 회색: 중간 회색은 명도 5 근처입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "먼셀",
+      "명도"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-color-scheme-0004",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "color-scheme",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "모든 색을 흰색(W)·검정(B)·순색(C)의 혼합량으로 나타내며 그 합을 항상 100% 로 보는 표색계는?",
+    "choices": [
+      "오스트발트 표색계",
+      "먼셀 표색계",
+      "PCCS",
+      "관용색명"
+    ],
+    "answer": 1,
+    "oneLineConcept": "오스트발트: W + B + C = 100%",
+    "explanation": "오스트발트 표색계는 모든 색이 흰색량·검정량·순색량으로 이루어지며 그 합이 100% 라고 봅니다. 같은 색상의 색들을 순색·흰색·검정을 꼭짓점으로 하는 삼각형(등색상 삼각형)에 배열합니다.\n\n**틀린 선지**\n- PCCS: 명도와 채도를 묶은 톤(색조) 개념이 특징인 일본의 표색계입니다.\n- 관용색명: 예부터 써 온 색 이름으로 표색계가 아닙니다.\n- 먼셀 표색계: 색상·명도·채도의 3속성으로 색을 나타냅니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "오스트발트",
+      "표색계"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-color-scheme-0005",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "color-scheme",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "오스트발트 표색계의 색입체 모양으로 옳은 것은?",
+    "choices": [
+      "정육면체",
+      "두 원뿔의 밑면을 맞붙인 모양(복원추체)",
+      "원통 모양",
+      "나무처럼 불규칙한 모양"
+    ],
+    "answer": 2,
+    "oneLineConcept": "오스트발트 색입체는 복원추체(팽이) 모양",
+    "explanation": "오스트발트 표색계는 등색상 삼각형을 무채색 축을 중심으로 돌려 배열하므로, 위아래가 뾰족한 두 원뿔을 맞붙인 모양(복원추체)이 됩니다. 반면 먼셀 색입체는 색상마다 최고 채도가 달라 나무처럼 울퉁불퉁한 모양입니다.\n\n**틀린 선지**\n- 원통 모양: 오스트발트 색입체의 모양이 아닙니다.\n- 나무처럼 불규칙한 모양: 먼셀 색입체의 모양입니다.\n- 정육면체: 오스트발트 색입체의 모양이 아닙니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "오스트발트",
+      "색입체"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-color-scheme-0006",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "color-scheme",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "NCS 표기 'S 2030-Y90R' 에서 20 이 나타내는 것은?",
+    "choices": [
+      "색상",
+      "명도 단계",
+      "검은색도(검정의 양)",
+      "유채색도(순색의 양)"
+    ],
+    "answer": 3,
+    "oneLineConcept": "NCS 2030: 검은색도 20%, 유채색도 30%",
+    "explanation": "NCS 는 헤링의 6가지 기본색(흰색·검정·노랑·빨강·파랑·초록)을 바탕으로 한 스웨덴의 표색계입니다.\n\n1. 20: 검은색도(검정이 차지하는 양)\n2. 30: 유채색도(순색이 차지하는 양)\n3. Y90R: 색상(노랑에 빨강이 90% 섞인 색상)\n\n**틀린 선지**\n- 색상: 색상은 붙임표 뒤의 Y90R 입니다.\n- 명도 단계: NCS 는 먼셀처럼 명도 숫자를 따로 쓰지 않습니다.\n- 유채색도(순색의 양): 유채색도는 뒤의 두 자리인 30 입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "NCS",
+      "색표시법"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-color-scheme-0007",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "color-scheme",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "명도와 채도를 하나로 묶은 '톤(색조)' 개념을 중심으로 색을 분류해 배색에 쓰기 편하게 만든 일본의 표색계는?",
+    "choices": [
+      "NCS",
+      "PCCS",
+      "오스트발트",
+      "CIE"
+    ],
+    "answer": 2,
+    "oneLineConcept": "톤(색조) 개념이 특징인 표색계는 PCCS",
+    "explanation": "PCCS 는 일본색채연구소가 만든 표색계로, 명도와 채도를 합친 '톤'으로 색을 묶습니다. 비비드(선명한), 페일(아주 연한) 같은 톤 이름을 써서 배색 계획에 편리합니다.\n\n**틀린 선지**\n- CIE: 빛의 측정값으로 색을 수치화한 국제 표색계입니다.\n- 오스트발트: 흰색·검정·순색의 혼합량으로 색을 나타냅니다.\n- NCS: 스웨덴의 표색계로, 검은색도·유채색도로 색을 나타냅니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "PCCS",
+      "톤"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-color-scheme-0008",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "color-scheme",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "살구색·하늘색·밤색처럼 동물·식물·광물 등의 이름을 빌려 예부터 관습적으로 불러 온 색 이름은?",
+    "choices": [
+      "계통색명",
+      "기본색명",
+      "관용색명",
+      "먼셀 기호"
+    ],
+    "answer": 3,
+    "oneLineConcept": "관습적으로 부르는 고유한 색 이름은 관용색명",
+    "explanation": "관용색명은 오래전부터 사람들이 써 온 고유한 색 이름입니다. 떠올리기 쉽지만 사람마다 생각하는 색이 조금씩 다를 수 있습니다. 반면 계통색명은 기본색명에 수식어를 붙여 체계적으로 부릅니다.\n\n**틀린 선지**\n- 기본색명: 빨강·노랑 같은 기본이 되는 색 이름입니다.\n- 먼셀 기호: 5R 4/14 같은 숫자 기호로 색 이름이 아닙니다.\n- 계통색명: '연한 노랑'처럼 기본색명에 수식어를 붙여 체계적으로 부르는 이름입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "색명법",
+      "관용색명"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-color-scheme-0009",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "color-scheme",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "다음 중 계통색명에 해당하는 것은?",
+    "choices": [
+      "하늘색",
+      "올리브색",
+      "연한 파랑",
+      "밤색"
+    ],
+    "answer": 3,
+    "oneLineConcept": "계통색명 = 수식어 + 기본색명",
+    "explanation": "계통색명은 기본색명(빨강·파랑 등) 앞에 '연한', '어두운', '흐린' 같은 명도·채도 수식어나 '노란', '푸른' 같은 색상 수식어를 붙여 색을 체계적으로 나타냅니다. '연한 파랑'이 이 방식입니다.\n\n**틀린 선지**\n- 하늘색: 하늘에서 따온 관용색명입니다.\n- 올리브색: 올리브 열매에서 따온 관용색명입니다.\n- 밤색: 밤 열매에서 따온 관용색명입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "색명법",
+      "계통색명"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-color-scheme-0010",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "color-scheme",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "멀리서도 글자가 가장 잘 보이는(명시성이 높은) 배색은?",
+    "choices": [
+      "검정 바탕에 노란 글자",
+      "남색 바탕에 보라 글자",
+      "빨강 바탕에 같은 밝기의 초록 글자",
+      "회색 바탕에 같은 밝기의 초록 글자"
+    ],
+    "answer": 1,
+    "oneLineConcept": "명시성은 바탕과의 명도 차이가 클수록 높다",
+    "explanation": "명시성(시인성)은 멀리서도 잘 보이는 정도입니다. 바탕색과 글자색의 명도 차이가 클수록 높아집니다. 가장 어두운 검정과 밝은 노랑은 명도 차이가 커서 명시성이 매우 높아 경고 표지에 많이 씁니다.\n\n**틀린 선지**\n- 회색 바탕에 같은 밝기의 초록 글자: 명도가 같으면 경계가 흐릿해 잘 보이지 않습니다.\n- 빨강 바탕에 같은 밝기의 초록 글자: 색상 차이가 커도 명도가 같으면 글자 경계가 아른거려 읽기 어렵습니다.\n- 남색 바탕에 보라 글자: 둘 다 어두운 색이라 명도 차이가 작아 잘 보이지 않습니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "명시성",
+      "배색"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-color-scheme-0011",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "color-scheme",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "여러 색 가운데 저절로 눈길을 끄는 성질(주목성)이 가장 높은 색은?",
+    "choices": [
+      "연한 하늘색",
+      "선명한 빨강",
+      "탁한 올리브색",
+      "회색"
+    ],
+    "answer": 2,
+    "oneLineConcept": "주목성은 고채도 난색(빨강 등)이 높다",
+    "explanation": "주목성은 의도하지 않아도 사람의 눈길을 끄는 정도입니다. 채도가 높은 따뜻한 색, 특히 빨강·주황·노랑이 주목성이 높아 위험 표시나 할인 광고에 많이 쓰입니다.\n\n**틀린 선지**\n- 탁한 올리브색: 채도가 낮은 색은 주목성이 낮습니다.\n- 연한 하늘색: 연하고 차가운 색은 주목성이 낮습니다.\n- 회색: 무채색은 채도가 없어 눈길을 덜 끕니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "주목성",
+      "색의 기능"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-color-scheme-0012",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "color-scheme",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "가는 줄무늬로 그린 회색이 흰 줄 사이에서는 더 밝게, 검은 줄 사이에서는 더 어둡게 보이는 것처럼 주변 색에 가까워 보이는 현상은?",
+    "choices": [
+      "색순응",
+      "잔상",
+      "색의 동화",
+      "색의 대비"
+    ],
+    "answer": 3,
+    "oneLineConcept": "주변 색을 닮아 보이면 동화",
+    "explanation": "색의 동화는 대비와 반대로, 어떤 색이 주변 색에 가까워 보이는 현상입니다. 무늬가 가늘고 촘촘할수록 잘 일어나며 '베졸드 효과' 또는 '전파 효과'라고도 합니다.\n\n**틀린 선지**\n- 잔상: 색을 본 뒤 그 색이 사라져도 감각이 남는 현상입니다.\n- 색순응: 조명에 눈이 적응해 색을 비슷하게 느끼는 현상입니다.\n- 색의 대비: 주변 색과의 차이가 더 크게 느껴지는 현상으로, 동화와 반대입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "색의 지각",
+      "동화"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-color-scheme-0013",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "color-scheme",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "선명한 빨강을 한참 바라본 뒤 흰 벽을 보면 잠시 나타나는 색은?",
+    "choices": [
+      "빨강",
+      "노랑",
+      "검정",
+      "청록 계열"
+    ],
+    "answer": 4,
+    "oneLineConcept": "음성 잔상은 원래 색의 보색으로 나타난다",
+    "explanation": "한 색을 오래 보다가 눈을 돌리면 그 색의 보색 계열이 잠시 보이는데, 이를 음성 잔상(보색 잔상)이라고 합니다. 빨강의 보색 계열인 청록이 보입니다. 수술복이 청록색인 것도 이 잔상을 줄이기 위해서입니다.\n\n**틀린 선지**\n- 노랑: 노랑은 빨강의 보색이 아닙니다.\n- 검정: 유채색을 본 잔상은 보색 계열의 유채색으로 나타납니다.\n- 빨강: 같은 색이 그대로 남는 것은 양성 잔상으로, 한참 본 뒤 흰 벽에서는 보색 잔상이 나타납니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "색의 지각",
+      "잔상"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-color-scheme-0014",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "color-scheme",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "한 색을 본 뒤 곧바로 다른 색을 보았을 때, 앞서 본 색의 영향으로 뒤의 색이 다르게 느껴지는 대비는?",
+    "choices": [
+      "계시대비",
+      "연변대비",
+      "명도대비",
+      "동시대비"
+    ],
+    "answer": 1,
+    "oneLineConcept": "시간 차를 두고 생기는 대비는 계시대비",
+    "explanation": "대비는 동시대비와 계시대비로 나눕니다. 동시대비는 두 색을 동시에 나란히 볼 때 생기고, 계시대비는 시간 차를 두고 이어서 볼 때 앞의 색(잔상)의 영향으로 생깁니다.\n\n**틀린 선지**\n- 명도대비: 밝기 차이 때문에 생기는 동시대비의 한 종류입니다.\n- 동시대비: 두 색을 동시에 나란히 볼 때 생기는 대비입니다.\n- 연변대비: 두 색이 맞닿은 경계 부분에서 대비가 강하게 느껴지는 현상입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "색의 대비",
+      "계시대비"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-color-scheme-0015",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "color-scheme",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "밝기가 다른 회색 띠를 차례로 붙여 놓으면, 각 띠가 맞닿은 경계 부분에서 밝기 차이가 더 강하게 느껴지는 현상은?",
+    "choices": [
+      "동화",
+      "연변대비",
+      "색순응",
+      "계시대비"
+    ],
+    "answer": 2,
+    "oneLineConcept": "색의 경계에서 대비가 강해지는 것은 연변대비",
+    "explanation": "연변대비는 두 색이 맞닿은 가장자리에서 대비 효과가 더 강하게 나타나는 현상입니다. 밝은 띠 옆의 경계는 더 밝게, 어두운 띠 옆의 경계는 더 어둡게 느껴집니다.\n\n**틀린 선지**\n- 계시대비: 시간 차를 두고 이어서 볼 때 생기는 대비입니다.\n- 동화: 주변 색에 가까워 보이는 현상으로, 차이가 강해지는 것과 반대입니다.\n- 색순응: 조명에 눈이 적응하는 현상입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "색의 대비",
+      "연변대비"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-color-scheme-0016",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "color-scheme",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "따뜻한 느낌을 주는 난색에 해당하는 색은?",
+    "choices": [
+      "파랑",
+      "청록",
+      "주황",
+      "남색"
+    ],
+    "answer": 3,
+    "oneLineConcept": "난색은 빨강·주황·노랑 계열",
+    "explanation": "색은 느낌에 따라 난색과 한색으로 나눕니다. 빨강·주황·노랑 같은 난색은 따뜻하고 활동적인 느낌을, 파랑·청록·남색 같은 한색은 차갑고 차분한 느낌을 줍니다. 초록과 보라는 중성색입니다.\n\n**틀린 선지**\n- 청록: 차가운 느낌의 한색입니다.\n- 남색: 차가운 느낌의 한색입니다.\n- 파랑: 대표적인 한색입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "색의 심리",
+      "난색"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-color-scheme-0017",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "color-scheme",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "같은 크기의 정사각형을 칠했을 때 가장 크게 보이는(팽창해 보이는) 색은?",
+    "choices": [
+      "흰색",
+      "검정",
+      "남색",
+      "짙은 회색"
+    ],
+    "answer": 1,
+    "oneLineConcept": "밝은 색은 팽창해 보이고 어두운 색은 수축해 보인다",
+    "explanation": "명도가 높은 밝은 색은 실제보다 커 보이고(팽창색), 명도가 낮은 어두운 색은 작아 보입니다(수축색). 그래서 같은 크기라도 흰색이 가장 크게 보입니다.\n\n**틀린 선지**\n- 짙은 회색: 명도가 낮아 작아 보입니다.\n- 검정: 명도가 가장 낮아 작아 보이는 수축색입니다.\n- 남색: 어두운 한색이라 작아 보입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "색의 심리",
+      "팽창"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-color-scheme-0018",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "color-scheme",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "같은 크기·같은 재질의 상자라도 색에 따라 무겁거나 가볍게 느껴지는데, 이 무게감에 가장 크게 영향을 주는 속성은?",
+    "choices": [
+      "색상",
+      "광택",
+      "채도",
+      "명도"
+    ],
+    "answer": 4,
+    "oneLineConcept": "색의 무게감은 명도가 결정한다",
+    "explanation": "색의 무게감은 주로 명도에 따라 달라집니다. 밝은 색은 가볍게, 어두운 색은 무겁게 느껴집니다. 그래서 무거운 짐 상자를 밝은 색으로 칠하면 덜 무겁게 느낍니다.\n\n**틀린 선지**\n- 광택: 광택은 색의 속성이 아니라 표면의 성질입니다.\n- 색상: 색상은 따뜻함·차가움 느낌에 더 크게 영향을 줍니다.\n- 채도: 채도는 화려함·수수함 느낌에 더 크게 영향을 줍니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "색의 심리",
+      "무게감"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-color-scheme-0019",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "color-scheme",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "해 질 무렵 주위가 어두워지면 빨간 꽃은 어둡게 보이고 파란 꽃은 상대적으로 밝게 보이는 현상은?",
+    "choices": [
+      "베졸드 효과",
+      "메타메리즘",
+      "색순응",
+      "푸르킨예 현상"
+    ],
+    "answer": 4,
+    "oneLineConcept": "어두워지면 파랑 계열이 상대적으로 잘 보이는 것은 푸르킨예 현상",
+    "explanation": "밝은 곳에서 어두운 곳으로 바뀌면 눈은 빛에 민감한 다른 세포를 쓰게 되어 파장이 짧은 파랑 계열을 상대적으로 더 밝게 느낍니다. 이것을 푸르킨예 현상이라고 합니다. 그래서 어두운 곳의 비상 표시에는 파랑·초록 계열이 유리합니다.\n\n**틀린 선지**\n- 베졸드 효과: 가는 무늬에서 주변 색을 닮아 보이는 동화 현상입니다.\n- 메타메리즘: 분광이 다른 두 색이 특정 조명에서 같아 보이는 조건등색입니다.\n- 색순응: 조명 색에 눈이 적응해 물체 색을 비슷하게 느끼는 현상입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "색의 지각",
+      "푸르킨예"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-color-scheme-0020",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "color-scheme",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "같은 색상 안에서 밝은 파랑과 어두운 파랑처럼 톤(명도·채도) 차이를 크게 두어 조합하는 배색은?",
+    "choices": [
+      "보색 배색",
+      "톤인톤 배색",
+      "세퍼레이션 배색",
+      "톤온톤 배색"
+    ],
+    "answer": 4,
+    "oneLineConcept": "같은 색상, 톤 차이 크게 = 톤온톤",
+    "explanation": "톤온톤은 '톤을 겹친다'는 뜻으로, 같은 색상(또는 아주 가까운 색상)에서 밝기 차이를 크게 두는 배색입니다. 통일감이 있으면서도 단조롭지 않습니다.\n\n**틀린 선지**\n- 세퍼레이션 배색: 두 색 사이에 다른 색을 끼워 넣어 분리하는 배색입니다.\n- 보색 배색: 색상환에서 반대편 색끼리 조합하는 배색입니다.\n- 톤인톤 배색: 톤은 비슷하게 맞추고 색상을 다양하게 쓰는 배색입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "배색",
+      "톤온톤"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-color-scheme-0021",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "color-scheme",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "파스텔 톤처럼 톤은 비슷하게 맞추고 색상은 여러 가지로 다르게 조합하는 배색은?",
+    "choices": [
+      "톤인톤 배색",
+      "톤온톤 배색",
+      "악센트 배색",
+      "그러데이션 배색"
+    ],
+    "answer": 1,
+    "oneLineConcept": "같은 톤, 다른 색상 = 톤인톤",
+    "explanation": "톤인톤은 같은 톤 안에서 색상을 바꿔 조합하는 배색입니다. 명도와 채도가 비슷해 부드럽고 통일된 느낌을 주면서 색상 변화로 다채로움을 더합니다.\n\n**틀린 선지**\n- 톤온톤 배색: 같은 색상에서 톤 차이를 크게 두는 배색입니다.\n- 그러데이션 배색: 색이 단계적으로 조금씩 변하도록 늘어놓는 배색입니다.\n- 악센트 배색: 단조로운 배색에 작은 면적의 강조색을 넣는 배색입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "배색",
+      "톤인톤"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-color-scheme-0022",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "color-scheme",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "두 색이 비슷해 경계가 흐리거나, 반대로 너무 강하게 부딪칠 때 그 사이에 흰색·검정 같은 다른 색을 끼워 넣는 배색은?",
+    "choices": [
+      "그러데이션 배색",
+      "세퍼레이션 배색",
+      "톤온톤 배색",
+      "레피티션 배색"
+    ],
+    "answer": 2,
+    "oneLineConcept": "두 색 사이에 분리색을 넣는 것이 세퍼레이션",
+    "explanation": "세퍼레이션은 '분리'라는 뜻으로, 두 색 사이에 무채색이나 금색·은색 같은 분리색을 넣어 경계를 또렷하게 하거나 강한 대비를 누그러뜨리는 배색입니다.\n\n**틀린 선지**\n- 그러데이션 배색: 색이 점점 변하도록 배열하는 배색입니다.\n- 레피티션 배색: 두 가지 이상의 색을 일정한 단위로 반복하는 배색입니다.\n- 톤온톤 배색: 같은 색상에서 톤 차이를 두는 배색입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "배색",
+      "세퍼레이션"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-color-scheme-0023",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "color-scheme",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "'따뜻한-차가운', '부드러운-딱딱한' 같은 형용사 축 위에 색이나 배색의 느낌을 배치해 비교하는 도구는?",
+    "choices": [
+      "색채 이미지 스케일",
+      "그레이 스케일",
+      "색상환",
+      "히스토그램"
+    ],
+    "answer": 1,
+    "oneLineConcept": "색의 느낌을 형용사 좌표에 놓은 것이 색채 이미지 스케일",
+    "explanation": "색채 이미지 스케일은 색이 주는 느낌을 형용사로 된 두 축 위에 배치한 지도입니다. '고급스러운', '경쾌한' 같은 이미지 낱말과 색을 연결해 콘셉트에 맞는 배색을 고르는 데 씁니다.\n\n**틀린 선지**\n- 색상환: 색상을 둥글게 늘어놓은 그림입니다.\n- 히스토그램: 자료의 분포를 막대로 나타낸 그래프입니다.\n- 그레이 스케일: 흰색에서 검정까지의 회색 단계입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "색채이미지 스케일"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-color-scheme-0024",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "color-scheme",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "색 공간에서 색들 사이의 거리와 면적 비를 계산하고, 미도(M = O/C, 질서 요소/복잡성 요소)로 조화를 수치화한 색채 조화론은?",
+    "choices": [
+      "문-스펜서의 조화론",
+      "슈브뢸의 조화론",
+      "비렌의 조화론",
+      "저드의 조화론"
+    ],
+    "answer": 1,
+    "oneLineConcept": "미도 M = O/C 로 조화를 계산한 것은 문-스펜서",
+    "explanation": "문과 스펜서는 먼셀 색 공간을 바탕으로 조화와 부조화를 정량적으로 설명했습니다. 동일·유사·대비 관계는 조화로, 그 사이의 애매한 관계는 부조화로 보았고, 미도(M = O/C)를 계산해 값이 클수록 조화롭다고 했습니다.\n\n**틀린 선지**\n- 저드의 조화론: 질서·친근감·공통성·명료성의 네 가지 원리로 조화를 정리했습니다.\n- 슈브뢸의 조화론: 유사와 대비의 조화를 경험적으로 정리했습니다.\n- 비렌의 조화론: 순색·흰색·검정을 잇는 색 삼각형으로 조화를 설명했습니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "색채 조화",
+      "문-스펜서"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-color-scheme-0025",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "color-scheme",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "비상구 안내 표지처럼 '안전·대피·안내'의 뜻을 나타낼 때 쓰는 안전색은?",
+    "choices": [
+      "초록",
+      "파랑",
+      "노랑",
+      "빨강"
+    ],
+    "answer": 1,
+    "oneLineConcept": "안전색: 초록은 안전·안내, 빨강은 금지·소화",
+    "explanation": "안전색은 정해진 뜻을 빠르게 전달하는 색입니다. 빨강은 금지·정지·소화 설비, 노랑은 경고·주의, 초록은 안전·대피·안내, 파랑은 지시(꼭 따라야 할 행동)를 나타냅니다. 비상구 표지가 초록인 이유입니다.\n\n**틀린 선지**\n- 노랑: 경고·주의를 나타냅니다.\n- 파랑: 지시(의무 행동)를 나타냅니다.\n- 빨강: 금지·정지·소화 설비를 나타냅니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "색의 기능",
+      "안전색"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-color-scheme-0026",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "color-scheme",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "저드(Judd)가 정리한 색채 조화의 원리에 해당하지 않는 것은?",
+    "choices": [
+      "무작위의 원리",
+      "질서의 원리",
+      "친근감의 원리",
+      "명료성의 원리"
+    ],
+    "answer": 1,
+    "oneLineConcept": "저드 조화 원리: 질서·친근감·공통성·명료성",
+    "explanation": "저드는 색채 조화를 네 가지 원리로 정리했습니다. 규칙적으로 고른 색이 조화롭다는 질서의 원리, 익숙한 색이 조화롭다는 친근감의 원리, 공통 요소가 있으면 조화롭다는 공통성(동류성)의 원리, 관계가 분명하면 조화롭다는 명료성의 원리입니다.\n\n**틀린 선지**\n- 친근감의 원리: 저드의 조화 원리에 해당합니다.\n- 명료성의 원리: 저드의 조화 원리에 해당합니다.\n- 질서의 원리: 저드의 조화 원리에 해당합니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "색채 조화",
+      "저드"
+    ],
+    "levelLock": true
+  }
+]
