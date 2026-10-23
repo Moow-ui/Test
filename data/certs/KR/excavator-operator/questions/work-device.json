@@ -308,5 +308,259 @@
       "붐"
     ],
     "levelLock": true
+  },
+  {
+    "id": "excavator-operator-work-device-0010",
+    "certId": "excavator-operator",
+    "subjectId": "excavator",
+    "chapterId": "work-device",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "그림에서 암(디퍼 스틱)을 가리키는 것은?",
+    "choices": [
+      "(가)",
+      "(나)",
+      "(다)",
+      "(라)"
+    ],
+    "answer": 2,
+    "oneLineConcept": "암은 붐 끝과 버킷 사이를 잇는 팔",
+    "explanation": "작업장치는 상부 회전체 쪽에서부터 붐 → 암 → 버킷 순서로 이어집니다. 암(디퍼 스틱)은 붐 끝에 핀으로 연결되어 아래로 내려오고, 그 끝에 버킷이 달립니다. 그림에서 붐 끝과 버킷 사이에 있는 팔은 (나)입니다.\n\n**틀린 선지**\n- (가): 상부 회전체에 붙어 작업장치 전체를 들고 내리는 붐입니다.\n- (다): 암 끝에 달려 흙을 퍼 담는 버킷입니다.\n- (라): 상부 회전체 뒤쪽에 달린 카운터웨이트(평형추)입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "작업장치",
+      "암",
+      "그림"
+    ],
+    "image": "excavator-parts-mark.svg",
+    "imageAlt": "오른쪽을 향한 크롤러 굴착기의 옆모습입니다. (가)·(나)·(다)는 앞쪽 작업장치의 서로 다른 부분을, (라)는 상부 회전체의 한 부분을 지시선으로 가리킵니다.",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "excavator-operator-work-device-0011",
+    "certId": "excavator-operator",
+    "subjectId": "excavator",
+    "chapterId": "work-device",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "그림의 (라) 부분이 하는 주된 역할은?",
+    "choices": [
+      "작업할 때 장비가 앞쪽으로 넘어지지 않게 무게 균형을 잡는다.",
+      "엔진 냉각수의 열을 공기 중으로 내보낸다.",
+      "작업장치를 움직이는 작동유를 담아 둔다.",
+      "상부 회전체를 좌우로 돌려 준다."
+    ],
+    "answer": 1,
+    "oneLineConcept": "카운터웨이트는 뒤쪽에서 앞쪽 작업장치와 무게 균형을 잡는다",
+    "explanation": "(라)는 상부 회전체 맨 뒤에 붙은 무거운 덩어리인 카운터웨이트(평형추)입니다. 앞쪽의 붐·암·버킷과 퍼 올린 흙의 무게 때문에 장비가 앞으로 쏠리는 것을 뒤쪽 무게로 맞춰 주어 장비가 넘어지지 않게 합니다.\n\n**틀린 선지**\n- 엔진 냉각수의 열을 공기 중으로 내보낸다.: 라디에이터가 하는 일입니다.\n- 작업장치를 움직이는 작동유를 담아 둔다.: 작동유 탱크가 하는 일입니다.\n- 상부 회전체를 좌우로 돌려 준다.: 선회(스윙) 장치가 하는 일입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "굴착기 구조",
+      "카운터웨이트",
+      "그림"
+    ],
+    "image": "excavator-parts-mark.svg",
+    "imageAlt": "오른쪽을 향한 크롤러 굴착기의 옆모습입니다. (가)·(나)·(다)는 앞쪽 작업장치의 서로 다른 부분을, (라)는 상부 회전체의 한 부분을 지시선으로 가리킵니다.",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "excavator-operator-work-device-0012",
+    "certId": "excavator-operator",
+    "subjectId": "excavator",
+    "chapterId": "work-device",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "그림에서 버킷 실린더를 가리키는 것은?",
+    "choices": [
+      "(가)",
+      "(나)",
+      "(다)",
+      "(라)"
+    ],
+    "answer": 3,
+    "oneLineConcept": "버킷 실린더는 암을 따라 붙어 버킷을 움직인다",
+    "explanation": "붐·암·버킷은 각각 따로 있는 유압 실린더가 밀고 당겨서 움직입니다. 버킷 실린더는 암 위쪽에 붙어 암을 따라 내려가고, 끝이 연결 고리(링크)를 거쳐 버킷에 이어집니다. 그림에서 암을 따라 버킷 쪽으로 내려가는 실린더는 (다)입니다.\n\n**틀린 선지**\n- (가): 상부 회전체 앞쪽과 붐 아랫면 사이에 있는 붐 실린더입니다.\n- (나): 붐 윗면에서 암 위쪽 끝까지 이어진 암 실린더입니다.\n- (라): 트랙으로 이동하는 하부 주행체로, 실린더가 아닙니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "작업장치",
+      "유압 실린더",
+      "그림"
+    ],
+    "image": "excavator-cylinders-mark.svg",
+    "imageAlt": "오른쪽을 향한 크롤러 굴착기의 옆모습입니다. (가)·(나)·(다)는 작업장치에 달린 서로 다른 유압 실린더를, (라)는 장비 아래쪽 부분을 지시선으로 가리킵니다.",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "excavator-operator-work-device-0013",
+    "certId": "excavator-operator",
+    "subjectId": "excavator",
+    "chapterId": "work-device",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "그림의 (가) 실린더를 늘이면(로드가 밀려 나오면) 어떻게 움직이는가?",
+    "choices": [
+      "버킷이 몸 쪽으로 오므라진다.",
+      "암이 몸 쪽으로 당겨진다.",
+      "상부 회전체가 옆으로 돈다.",
+      "붐이 위로 들어 올려진다."
+    ],
+    "answer": 4,
+    "oneLineConcept": "붐 실린더가 늘어나면 붐이 올라간다",
+    "explanation": "(가)는 상부 회전체 앞쪽과 붐 아랫면 사이에 있는 붐 실린더입니다.\n1. 실린더 아래쪽 끝은 상부 회전체에, 위쪽 끝은 붐 아랫면에 핀으로 붙어 있습니다.\n2. 실린더가 늘어나면 붐 아랫면을 위로 밀어 올립니다.\n3. 붐은 상부 회전체에 붙은 핀을 중심으로 돌면서 위로 들립니다.\n\n확인: 실린더가 줄어들면 반대로 붐이 내려갑니다.\n\n**틀린 선지**\n- 버킷이 몸 쪽으로 오므라진다.: 버킷은 암을 따라 붙은 버킷 실린더가 움직입니다.\n- 암이 몸 쪽으로 당겨진다.: 암은 붐 위쪽의 암 실린더가 움직입니다.\n- 상부 회전체가 옆으로 돈다.: 회전은 실린더가 아니라 선회(스윙) 장치가 합니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "작업장치",
+      "붐",
+      "유압 실린더",
+      "그림"
+    ],
+    "image": "excavator-cylinders-mark.svg",
+    "imageAlt": "오른쪽을 향한 크롤러 굴착기의 옆모습입니다. (가)·(나)·(다)는 작업장치에 달린 서로 다른 유압 실린더를, (라)는 장비 아래쪽 부분을 지시선으로 가리킵니다.",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "excavator-operator-work-device-0014",
+    "certId": "excavator-operator",
+    "subjectId": "excavator",
+    "chapterId": "work-device",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "그림의 (다) 실린더가 직접 움직이는 부분은?",
+    "choices": [
+      "버킷",
+      "암",
+      "붐",
+      "하부 주행체"
+    ],
+    "answer": 1,
+    "oneLineConcept": "버킷 실린더는 링크를 거쳐 버킷을 오므리고 편다",
+    "explanation": "(다)는 암을 따라 붙어 있는 버킷 실린더입니다. 실린더 위쪽 끝은 암에 붙어 있고, 아래쪽 끝은 연결 고리(링크)를 거쳐 버킷에 이어집니다. 그래서 이 실린더가 늘고 줄면 암은 그대로 있고 버킷만 오므라지거나 펴집니다.\n\n**틀린 선지**\n- 암: 암은 붐 위에 있는 암 실린더가 움직입니다. (다)는 암에 붙어 있을 뿐 암을 움직이지 않습니다.\n- 붐: 붐은 상부 회전체와 붐 아랫면 사이의 붐 실린더가 움직입니다.\n- 하부 주행체: 하부 주행체는 주행 장치로 이동하며, 작업장치 실린더와 관계가 없습니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "작업장치",
+      "버킷",
+      "유압 실린더",
+      "그림"
+    ],
+    "image": "excavator-cylinders-mark.svg",
+    "imageAlt": "오른쪽을 향한 크롤러 굴착기의 옆모습입니다. (가)·(나)·(다)는 작업장치에 달린 서로 다른 유압 실린더를, (라)는 장비 아래쪽 부분을 지시선으로 가리킵니다.",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "excavator-operator-work-device-0015",
+    "certId": "excavator-operator",
+    "subjectId": "excavator",
+    "chapterId": "work-device",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "그림 A~D 중 조개 껍데기처럼 두 쪽이 벌어졌다 오므라지는 크램셸(클램셸)은?",
+    "choices": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer": 2,
+    "oneLineConcept": "크램셸은 두 쪽 버킷을 벌렸다 오므려 흙을 집어 올린다",
+    "explanation": "크램셸은 두 쪽으로 나뉜 버킷을 조개처럼 벌렸다가 오므려 흙을 집어 올리는 장치로, 좁은 곳을 수직으로 깊게 팔 때 씁니다. 그림에서 두 쪽이 마주 보는 집게 모양인 B가 크램셸입니다.\n\n**틀린 선지**\n- A: 끝에 투스(이빨)가 달린 한 덩어리 통이므로 일반 버킷입니다.\n- C: 갈고리 하나로 단단한 땅을 긁어 일으키는 리퍼입니다.\n- D: 끝이 뾰족한 막대(치즐)로 바위·콘크리트를 두드려 깨는 브레이커입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "작업장치",
+      "크램셸",
+      "그림"
+    ],
+    "image": "excavator-attachments-mark.svg",
+    "imageAlt": "굴착기에 다는 작업 장치 네 가지를 A~D로 나란히 그린 그림입니다. A는 끝에 이빨이 달린 통 모양, B는 두 쪽이 마주 보는 집게 모양, C는 갈고리 하나 모양, D는 끝이 뾰족한 막대 모양입니다.",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   }
 ]
