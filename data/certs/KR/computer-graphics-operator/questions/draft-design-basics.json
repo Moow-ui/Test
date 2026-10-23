@@ -1,0 +1,830 @@
+[
+  {
+    "id": "computer-graphics-operator-draft-design-basics-0001",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "draft-design-basics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "최종 결정을 하기 전에 의뢰인에게 보여 주고 고르게 하려고 여러 방향으로 만든 디자인 안을 무엇이라 하는가?",
+    "choices": [
+      "교정지",
+      "인쇄 필름",
+      "시안",
+      "원고"
+    ],
+    "answer": 3,
+    "oneLineConcept": "시안은 확정 전에 제시하는 디자인 안",
+    "explanation": "시안은 디자인을 확정하기 전에 의뢰인에게 보여 주는 시험 디자인입니다. 보통 방향이 다른 몇 가지 안을 만들어 의견을 듣고, 고른 안을 다듬어 최종 디자인으로 완성합니다.\n\n**틀린 선지**\n- 교정지: 인쇄 직전에 글자·색 오류를 확인하려고 뽑는 시험 인쇄물입니다.\n- 원고: 디자인에 들어갈 글이나 자료 자체입니다.\n- 인쇄 필름: 인쇄판을 만들기 위한 출력물로, 디자인 안이 아닙니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "시안",
+      "시안 제작"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-draft-design-basics-0002",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "draft-design-basics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "레이아웃 그리드에서 단(칼럼)과 단 사이의 빈 간격을 무엇이라 하는가?",
+    "choices": [
+      "모듈",
+      "베이스라인",
+      "거터",
+      "마진"
+    ],
+    "answer": 3,
+    "oneLineConcept": "단과 단 사이 간격은 거터",
+    "explanation": "그리드는 지면을 단과 칸으로 나눈 배치의 틀입니다. 단과 단 사이의 좁은 간격을 거터, 지면 가장자리와 본문 영역 사이의 여백을 마진이라고 합니다.\n\n**틀린 선지**\n- 모듈: 그리드를 가로세로로 나눠 생긴 하나하나의 칸입니다.\n- 베이스라인: 글자가 놓이는 기준선입니다.\n- 마진: 지면 가장자리와 본문 영역 사이의 바깥 여백입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "레이아웃",
+      "그리드"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-draft-design-basics-0003",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "draft-design-basics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "지면의 가장자리에서 본문이 들어가는 영역까지 비워 둔 바깥쪽 여백을 무엇이라 하는가?",
+    "choices": [
+      "행간",
+      "마진",
+      "커닝",
+      "거터"
+    ],
+    "answer": 2,
+    "oneLineConcept": "지면 가장자리의 바깥 여백은 마진",
+    "explanation": "마진은 종이 가장자리와 글·그림이 들어가는 판면 사이의 여백입니다. 마진을 알맞게 두면 지면이 답답하지 않고, 재단할 때 내용이 잘리는 것도 막을 수 있습니다.\n\n**틀린 선지**\n- 거터: 단과 단 사이의 간격입니다.\n- 행간: 글줄과 글줄 사이의 간격입니다.\n- 커닝: 특정 두 글자 사이의 간격을 조정하는 것입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "레이아웃",
+      "마진"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-draft-design-basics-0004",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "draft-design-basics",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "세로 방향의 단(칼럼)뿐 아니라 가로 방향으로도 나누어 바둑판처럼 같은 크기의 칸을 만든 그리드는?",
+    "choices": [
+      "원고 그리드",
+      "계층 그리드",
+      "모듈 그리드",
+      "칼럼 그리드"
+    ],
+    "answer": 3,
+    "oneLineConcept": "가로세로로 나눈 칸의 그리드는 모듈 그리드",
+    "explanation": "모듈 그리드는 칼럼을 가로로도 나누어 작은 칸(모듈)을 여러 개 만든 그리드입니다. 사진·표·글이 많이 섞인 잡지나 카탈로그처럼 복잡한 지면을 정리하는 데 알맞습니다.\n\n**틀린 선지**\n- 원고 그리드: 큰 직사각형 하나에 글을 채우는 가장 단순한 그리드로, 단행본 본문에 씁니다.\n- 칼럼 그리드: 세로 단으로만 나눈 그리드입니다.\n- 계층 그리드: 일정한 칸 대신 내용의 중요도에 따라 영역을 자유롭게 나눈 그리드입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "레이아웃",
+      "그리드"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-draft-design-basics-0005",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "draft-design-basics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "포스터처럼 글과 그림이 함께 있는 지면에서 사람의 시선이 왼쪽 위 → 오른쪽 위 → 왼쪽 아래 → 오른쪽 아래로 움직이는 흐름은?",
+    "choices": [
+      "X형",
+      "I형",
+      "O형",
+      "Z형"
+    ],
+    "answer": 4,
+    "oneLineConcept": "지면에서 시선은 Z형으로 흐르기 쉽다",
+    "explanation": "가로쓰기 문화에서는 시선이 왼쪽 위에서 시작해 오른쪽으로, 다시 왼쪽 아래를 거쳐 오른쪽 아래로 Z자처럼 움직이는 경향이 있습니다. 그래서 중요한 제목은 왼쪽 위에, 행동을 이끄는 문구는 오른쪽 아래에 두는 경우가 많습니다.\n\n**틀린 선지**\n- O형: 원을 그리는 시선 흐름은 일반적인 지면의 읽기 흐름으로 쓰지 않습니다.\n- I형: 위에서 아래로 곧게 내려가는 흐름으로, 설명한 움직임과 다릅니다.\n- X형: 대각선이 교차하는 흐름으로, 설명한 움직임과 다릅니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "레이아웃",
+      "시선 흐름"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-draft-design-basics-0006",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "draft-design-basics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "지면에서 아무것도 놓지 않고 비워 둔 공간으로, 답답함을 덜고 중요한 요소에 시선을 모아 주는 것은?",
+    "choices": [
+      "여백(화이트 스페이스)",
+      "거터",
+      "별색",
+      "분판"
+    ],
+    "answer": 1,
+    "oneLineConcept": "여백은 답답함을 줄이고 시선을 모은다",
+    "explanation": "여백(화이트 스페이스)은 글·그림이 없는 빈 공간입니다. 단순히 남은 공간이 아니라, 요소를 돋보이게 하고 읽기 편하게 만드는 중요한 디자인 요소입니다.\n\n**틀린 선지**\n- 거터: 단과 단 사이의 좁은 간격만을 가리킵니다.\n- 분판: 인쇄용으로 색을 판별로 나누는 것입니다.\n- 별색: 4원색 이외에 따로 만든 인쇄 잉크입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "레이아웃",
+      "여백"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-draft-design-basics-0007",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "draft-design-basics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "글자 획의 끝에 작은 돌기(삐침)가 있는 영문 서체 계열은?",
+    "choices": [
+      "세리프체",
+      "스크립트체",
+      "모노스페이스체",
+      "산세리프체"
+    ],
+    "answer": 1,
+    "oneLineConcept": "획 끝에 돌기가 있으면 세리프체",
+    "explanation": "세리프는 획 끝의 작은 돌기를 말합니다. 세리프가 있는 서체를 세리프체, 없는 서체를 산세리프체('없다'는 뜻의 sans)라고 합니다. 세리프체는 긴 본문에, 산세리프체는 제목이나 화면용으로 많이 씁니다.\n\n**틀린 선지**\n- 산세리프체: 돌기가 없는 서체입니다.\n- 스크립트체: 손글씨처럼 이어 쓴 필기체 계열입니다.\n- 모노스페이스체: 모든 글자의 폭이 같은 서체입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "타이포그래피",
+      "서체 분류"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-draft-design-basics-0008",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "draft-design-basics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "붓글씨의 부리 모양이 남아 있어 영문 세리프체와 비슷한 성격을 가지며, 책 본문에 많이 쓰이는 한글 서체는?",
+    "choices": [
+      "굴림체",
+      "고딕체(돋움체)",
+      "그래픽체",
+      "명조체(바탕체)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "명조체(바탕체)는 부리가 있는 본문용 한글 서체",
+    "explanation": "명조체(바탕체)는 붓으로 쓴 획의 맺음(부리)이 남아 있고 가로획이 가늘고 세로획이 굵습니다. 오래 읽어도 편해 책·신문 본문에 많이 씁니다. 고딕체(돋움체)는 획 굵기가 고르고 부리가 없어 산세리프체와 비슷합니다.\n\n**틀린 선지**\n- 그래픽체: 제목·광고용으로 모양을 꾸민 서체입니다.\n- 고딕체(돋움체): 부리가 없고 굵기가 고른 서체로, 산세리프체와 비슷합니다.\n- 굴림체: 획 끝을 둥글게 다듬은 서체로 부리가 없습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "타이포그래피",
+      "한글 서체"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-draft-design-basics-0009",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "draft-design-basics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "글자 크기를 나타내는 단위인 1포인트(pt)는 약 얼마인가?",
+    "choices": [
+      "1/2 인치",
+      "1 인치",
+      "1/72 인치",
+      "1/12 인치"
+    ],
+    "answer": 3,
+    "oneLineConcept": "1포인트는 1/72 인치(약 0.35mm)",
+    "explanation": "디지털 출판에서 쓰는 1포인트는 1인치의 72분의 1로, 약 0.35mm 입니다. 12포인트가 1파이카이고, 6파이카가 1인치입니다.\n\n**틀린 선지**\n- 1/12 인치: 1/12 인치는 1파이카(12포인트)에 해당합니다.\n- 1/2 인치: 36포인트에 해당하는 크기입니다.\n- 1 인치: 72포인트에 해당하는 크기입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "타이포그래피",
+      "포인트"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-draft-design-basics-0010",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "draft-design-basics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "타이포그래피에서 글줄과 글줄 사이의 간격을 가리키는 말은?",
+    "choices": [
+      "커닝",
+      "행간",
+      "자간",
+      "어센더"
+    ],
+    "answer": 2,
+    "oneLineConcept": "글줄과 글줄 사이 간격은 행간(레딩)",
+    "explanation": "행간(레딩)은 줄과 줄 사이의 간격입니다. 너무 좁으면 윗줄과 아랫줄이 붙어 읽기 힘들고, 너무 넓으면 글이 흩어져 보입니다. 자간은 글자와 글자 사이의 간격입니다.\n\n**틀린 선지**\n- 어센더: 소문자에서 x 높이 위로 올라가는 부분입니다.\n- 자간: 글자와 글자 사이의 간격입니다.\n- 커닝: 특정 두 글자 사이 간격만 따로 조정하는 것입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "타이포그래피",
+      "행간"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-draft-design-basics-0011",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "draft-design-basics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "'AV', 'To' 처럼 특정 두 글자가 만날 때 사이가 넓어 보이는 것을 고치려고 그 두 글자 사이만 따로 간격을 조정하는 것은?",
+    "choices": [
+      "트래킹",
+      "정렬",
+      "레딩",
+      "커닝"
+    ],
+    "answer": 4,
+    "oneLineConcept": "특정 두 글자 사이 조정은 커닝",
+    "explanation": "커닝은 특정 글자 쌍의 간격을 하나하나 조정하는 것입니다. 'A'와 'V'처럼 모양 때문에 틈이 벌어져 보이는 글자 사이를 좁혀 고르게 보이게 합니다.\n\n**틀린 선지**\n- 트래킹: 단어나 문장 전체의 글자 간격을 한꺼번에 일정하게 조정하는 것입니다.\n- 레딩: 글줄과 글줄 사이의 간격입니다.\n- 정렬: 글줄을 왼쪽·가운데·오른쪽 등에 맞추는 것입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "타이포그래피",
+      "커닝"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-draft-design-basics-0012",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "draft-design-basics",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "선택한 단어나 문단 전체의 글자 간격을 한꺼번에 똑같은 양만큼 넓히거나 좁히는 것은?",
+    "choices": [
+      "들여쓰기",
+      "행간 조정",
+      "트래킹",
+      "커닝"
+    ],
+    "answer": 3,
+    "oneLineConcept": "전체 글자 간격을 일정하게 조정하는 것은 트래킹",
+    "explanation": "트래킹은 여러 글자에 걸쳐 간격을 균일하게 바꾸는 것입니다. 두 글자 사이만 따로 조정하는 커닝과 구별합니다. 제목을 넓게 펼치거나 본문을 조금 촘촘하게 할 때 씁니다.\n\n**틀린 선지**\n- 들여쓰기: 문단 첫 줄의 시작 위치를 안쪽으로 옮기는 것입니다.\n- 커닝: 특정 두 글자 사이만 따로 조정하는 것입니다.\n- 행간 조정: 글줄 사이의 위아래 간격을 바꾸는 것입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "타이포그래피",
+      "트래킹"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-draft-design-basics-0013",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "draft-design-basics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "글줄의 왼쪽과 오른쪽 끝이 모두 반듯하게 맞도록 하는 정렬로, 단어 사이 간격이 고르지 않게 될 수 있는 것은?",
+    "choices": [
+      "오른끝 맞추기",
+      "양끝 맞추기",
+      "왼끝 맞추기",
+      "가운데 맞추기"
+    ],
+    "answer": 2,
+    "oneLineConcept": "좌우 끝을 모두 맞추면 양끝 맞추기",
+    "explanation": "양끝 맞추기는 글줄의 양쪽 끝을 모두 단의 경계에 맞춥니다. 신문·책처럼 반듯해 보이지만, 줄마다 단어 사이 간격을 늘리거나 줄여 맞추므로 간격이 고르지 않거나 빈틈이 생길 수 있습니다.\n\n**틀린 선지**\n- 오른끝 맞추기: 오른쪽만 맞추고 왼쪽 끝은 들쭉날쭉합니다.\n- 왼끝 맞추기: 왼쪽만 맞추고 오른쪽 끝은 들쭉날쭉합니다.\n- 가운데 맞추기: 글줄을 가운데에 모으고 양쪽 끝이 들쭉날쭉합니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "타이포그래피",
+      "정렬"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-draft-design-basics-0014",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "draft-design-basics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "영문 활자에서 대부분의 글자가 올라앉는 보이지 않는 기준선은?",
+    "choices": [
+      "디센더 라인",
+      "캡 하이트",
+      "베이스라인",
+      "x 하이트"
+    ],
+    "answer": 3,
+    "oneLineConcept": "글자가 놓이는 기준선은 베이스라인",
+    "explanation": "베이스라인은 글자가 올라앉는 기준선입니다. 대문자와 소문자 대부분의 아랫부분이 이 선에 맞춰 놓이며, g·p·y 같은 글자의 꼬리만 이 선 아래로 내려갑니다.\n\n**틀린 선지**\n- x 하이트: 베이스라인에서 소문자 x 윗부분까지의 높이입니다.\n- 캡 하이트: 베이스라인에서 대문자 윗부분까지의 높이입니다.\n- 디센더 라인: 베이스라인 아래로 내려가는 부분이 닿는 선입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "타이포그래피",
+      "글자 구조"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-draft-design-basics-0015",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "draft-design-basics",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "영문 소문자 g, p, y 에서 베이스라인 아래로 내려가는 부분을 무엇이라 하는가?",
+    "choices": [
+      "디센더",
+      "어센더",
+      "카운터",
+      "세리프"
+    ],
+    "answer": 1,
+    "oneLineConcept": "베이스라인 아래로 내려가는 부분은 디센더",
+    "explanation": "디센더는 베이스라인 아래로 내려가는 획입니다. 반대로 b, d, h 처럼 x 높이 위로 올라가는 획은 어센더라고 합니다.\n\n**틀린 선지**\n- 어센더: x 높이 위로 올라가는 부분입니다(b, d, h 등).\n- 세리프: 획 끝의 작은 돌기입니다.\n- 카운터: o, e 처럼 글자 안의 둘러싸인 빈 공간입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "타이포그래피",
+      "글자 구조"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-draft-design-basics-0016",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "draft-design-basics",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "영문 서체에서 베이스라인부터 소문자 x 의 윗부분까지의 높이로, 같은 포인트라도 서체마다 글자가 크거나 작아 보이게 하는 요소는?",
+    "choices": [
+      "x 하이트",
+      "거터",
+      "캡 하이트",
+      "행간"
+    ],
+    "answer": 1,
+    "oneLineConcept": "x 하이트가 클수록 같은 크기라도 커 보인다",
+    "explanation": "x 하이트는 소문자 x 의 높이입니다. 같은 포인트 크기라도 x 하이트가 큰 서체는 소문자가 더 크게 보여 작은 크기에서도 읽기 쉽습니다.\n\n**틀린 선지**\n- 거터: 그리드에서 단과 단 사이의 간격입니다.\n- 캡 하이트: 대문자의 높이로, 소문자 크기를 결정하는 요소가 아닙니다.\n- 행간: 글줄 사이의 간격입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "타이포그래피",
+      "글자 구조"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-draft-design-basics-0017",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "draft-design-basics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "배색에서 가장 넓은 면적을 차지해 디자인 전체의 인상을 결정하는 색은?",
+    "choices": [
+      "보조색",
+      "주조색",
+      "잔상색",
+      "강조색"
+    ],
+    "answer": 2,
+    "oneLineConcept": "가장 넓은 면적의 색은 주조색",
+    "explanation": "컬러 아트워크에서 색은 역할에 따라 나눕니다. 주조색은 가장 넓은 면적을 차지해 전체 분위기를 정하고, 보조색은 주조색을 도우며, 강조색은 작은 면적으로 시선을 끄는 포인트 역할을 합니다.\n\n**틀린 선지**\n- 잔상색: 색을 본 뒤 남는 잔상과 관련된 말로, 배색의 역할 구분이 아닙니다.\n- 강조색: 작은 면적으로 시선을 끄는 색입니다.\n- 보조색: 주조색을 받쳐 주는 두 번째 색입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "컬러 아트워크",
+      "주조색"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-draft-design-basics-0018",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "draft-design-basics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "작은 면적에 쓰여 화면에 변화를 주고 시선을 끄는 포인트 역할을 하는 색은?",
+    "choices": [
+      "주조색",
+      "강조색",
+      "무채색",
+      "바탕색"
+    ],
+    "answer": 2,
+    "oneLineConcept": "작은 면적으로 시선을 끄는 색은 강조색",
+    "explanation": "강조색(액센트 컬러)은 전체에서 차지하는 면적은 작지만 눈에 띄게 쓰여 시선을 모으는 색입니다. 주조색과 대비되는 색을 고르면 효과가 큽니다.\n\n**틀린 선지**\n- 바탕색: 배경에 쓰이는 넓은 면적의 색입니다.\n- 무채색: 흰색·회색·검정처럼 색 기운이 없는 색을 말하며, 역할 이름이 아닙니다.\n- 주조색: 가장 넓은 면적을 차지하는 기본색입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "컬러 아트워크",
+      "강조색"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-draft-design-basics-0019",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "draft-design-basics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "인쇄에서 CMYK 4원색을 섞어 만들지 않고, 미리 정해진 색으로 따로 조색해 쓰는 잉크는?",
+    "choices": [
+      "원색 잉크",
+      "별색(스폿 컬러)",
+      "망점",
+      "형광 모니터색"
+    ],
+    "answer": 2,
+    "oneLineConcept": "4원색 밖의 따로 만든 잉크는 별색",
+    "explanation": "별색은 회사 로고색처럼 정확한 색을 내야 하거나 금색·은색·형광색처럼 4원색으로 만들 수 없는 색을 표현할 때 쓰는 잉크입니다. 색 견본 번호로 지정해 같은 색을 다시 낼 수 있습니다.\n\n**틀린 선지**\n- 원색 잉크: 시안·마젠타·노랑·검정의 4원색 잉크 자체를 말합니다.\n- 망점: 인쇄에서 농도를 점의 크기로 표현하는 작은 점입니다.\n- 형광 모니터색: 화면의 RGB 색으로, 인쇄 잉크가 아닙니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "컬러 아트워크",
+      "별색"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-draft-design-basics-0020",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "draft-design-basics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "상자 모양 패키지의 시안을 만들 때, 입체를 평면으로 펼쳐 접는 선과 자르는 선을 표시한 도면은?",
+    "choices": [
+      "와이어프레임",
+      "썸네일",
+      "그리드",
+      "전개도"
+    ],
+    "answer": 4,
+    "oneLineConcept": "입체 포장을 평면으로 펼친 도면은 전개도",
+    "explanation": "패키지 같은 입체 제작물은 평면으로 펼친 전개도 위에 디자인을 배치합니다. 접는 선과 재단선을 구분해 표시하고, 각 면이 접혔을 때 어떤 방향이 될지 확인해야 합니다.\n\n**틀린 선지**\n- 썸네일: 작게 여러 장 그린 초기 스케치입니다.\n- 그리드: 지면을 칸으로 나눈 배치의 틀입니다.\n- 와이어프레임: 웹·앱 화면 요소의 배치를 그린 설계도입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "시안 입체 제작물",
+      "전개도"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-draft-design-basics-0021",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "draft-design-basics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "책자나 카탈로그 시안에서 실제와 같은 크기·쪽수·접는 순서로 만들어 페이지 흐름과 넘김을 확인하는 견본은?",
+    "choices": [
+      "무드보드",
+      "전개도",
+      "색 견본",
+      "더미(가제본)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "더미는 실제 크기로 만든 책자 견본",
+    "explanation": "더미(가제본)는 책자를 실제 크기와 쪽 순서로 묶어 본 견본입니다. 페이지가 이어지는 흐름, 펼침면의 배치, 넘기는 느낌을 미리 점검할 수 있습니다.\n\n**틀린 선지**\n- 전개도: 입체 포장을 평면으로 펼친 도면입니다.\n- 무드보드: 분위기 자료를 모은 판입니다.\n- 색 견본: 색만 확인하는 견본으로, 페이지 흐름은 볼 수 없습니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "시안 제작",
+      "더미"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-draft-design-basics-0022",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "draft-design-basics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "하나의 기본 디자인을 바탕으로 색·크기·배치 등을 조금씩 바꾸어 여러 개의 안을 만드는 것은?",
+    "choices": [
+      "트리밍",
+      "베리에이션",
+      "분판",
+      "캘리브레이션"
+    ],
+    "answer": 2,
+    "oneLineConcept": "기본안을 바꿔 여러 안을 만드는 것이 베리에이션",
+    "explanation": "디자인 베리에이션은 기본 디자인의 핵심은 유지하면서 색, 크기, 배치, 글꼴 등을 바꿔 여러 가지 안을 만드는 작업입니다. 비교를 통해 가장 알맞은 안을 고를 수 있습니다.\n\n**틀린 선지**\n- 트리밍: 사진의 필요 없는 부분을 잘라 내는 것입니다.\n- 분판: 인쇄용으로 색을 판별로 나누는 작업입니다.\n- 캘리브레이션: 모니터·프린터의 색을 기준에 맞게 조정하는 것입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "베리에이션",
+      "디자인 베리에이션"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "computer-graphics-operator-draft-design-basics-0023",
+    "certId": "computer-graphics-operator",
+    "subjectId": "visual-design-graphics",
+    "chapterId": "draft-design-basics",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "디자인 발상의 출발점이 되어 여러 곳에 반복·변형되며 전체 디자인에 통일감을 주는 핵심 형태나 이미지는?",
+    "choices": [
+      "비주얼 모티브",
+      "바코드",
+      "캡션",
+      "재단선"
+    ],
+    "answer": 1,
+    "oneLineConcept": "비주얼 모티브는 반복·변형되는 핵심 형태",
+    "explanation": "비주얼 모티브는 디자인의 바탕이 되는 형태·무늬·이미지입니다. 하나의 모티브를 크기·색·방향을 바꿔 여러 매체에 적용하면 서로 다른 제작물도 한 가족처럼 보이게 됩니다.\n\n**틀린 선지**\n- 바코드: 상품 정보를 기계가 읽도록 만든 막대 기호입니다.\n- 캡션: 사진이나 그림에 붙는 짧은 설명 글입니다.\n- 재단선: 인쇄물을 자를 위치를 표시한 선입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "시안 개발",
+      "비주얼 모티브"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  }
+]
