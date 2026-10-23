@@ -1,0 +1,540 @@
+[
+  {
+    "id": "ged-math-ratios-percents-0001",
+    "certId": "ged-math",
+    "subjectId": "quantitative",
+    "chapterId": "ratios-percents",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Bottled water is sold in four pack sizes: 12 bottles for $5.40, 18 bottles for $7.38, 24 bottles for $10.32, and 30 bottles for $13.80. Which pack has the lowest price per bottle?",
+    "choices": [
+      "30 bottles for $13.80",
+      "18 bottles for $7.38",
+      "12 bottles for $5.40",
+      "24 bottles for $10.32"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Unit price = total price ÷ number of units",
+    "explanation": "1. 12-pack: $5.40 ÷ 12 = $0.45 per bottle.\n2. 18-pack: $7.38 ÷ 18 = $0.41 per bottle.\n3. 24-pack: $10.32 ÷ 24 = $0.43 per bottle.\n4. 30-pack: $13.80 ÷ 30 = $0.46 per bottle.\n5. The lowest is $0.41, the 18-pack.\n\nCheck: 18 × $0.41 = $7.38.\n\n**Wrong choices**\n- 30 bottles for $13.80: The 30-pack is the biggest, but it costs $0.46 per bottle, the highest of all.\n- 12 bottles for $5.40: The 12-pack has the lowest total price, but it costs $0.45 per bottle.\n- 24 bottles for $10.32: The 24-pack costs $0.43 per bottle, more than the 18-pack.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "unit price",
+      "unit rate"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "ged-math-ratios-percents-0002",
+    "certId": "ged-math",
+    "subjectId": "quantitative",
+    "chapterId": "ratios-percents",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A delivery driver travels 186 miles in 3 hours at a steady speed. What is her speed in miles per hour?",
+    "choices": [
+      "93",
+      "52",
+      "62",
+      "558"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Speed = distance ÷ time",
+    "explanation": "1. Speed = distance ÷ time.\n2. 186 ÷ 3 = 62 miles per hour.\n\nCheck: 62 × 3 = 186 miles.\n\n**Wrong choices**\n- 558: 558 multiplies distance by time instead of dividing.\n- 93: 93 divides by 2 instead of by 3.\n- 52: 52 drops a step in the division; 52 × 3 = 156, not 186.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "speed",
+      "unit rate"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "ged-math-ratios-percents-0003",
+    "certId": "ged-math",
+    "subjectId": "quantitative",
+    "chapterId": "ratios-percents",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A restaurant bill is $45.00. You want to leave an 18% tip. How much is the tip?",
+    "choices": [
+      "$8.10",
+      "$53.10",
+      "$0.81",
+      "$2.50"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Percent of a number: change % to a decimal and multiply",
+    "explanation": "1. Change 18% to a decimal: 18% = 0.18.\n2. Multiply: 0.18 × $45.00 = $8.10.\n\nCheck: 10% of $45 is $4.50, so 20% is $9.00. 18% should be a little less than $9.00, and $8.10 is.\n\n**Wrong choices**\n- $0.81: $0.81 uses 0.018 instead of 0.18; the decimal point was moved one place too far.\n- $2.50: $2.50 divides 45 by 18 instead of finding 18% of 45.\n- $53.10: $53.10 is the bill plus the tip, not the tip alone.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "percent",
+      "tip"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "ged-math-ratios-percents-0004",
+    "certId": "ged-math",
+    "subjectId": "quantitative",
+    "chapterId": "ratios-percents",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A drill costs $60.00. The sales tax rate is 7.5%. What is the total cost including tax?",
+    "choices": [
+      "$60.45",
+      "$55.50",
+      "$64.50",
+      "$4.50"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Total with tax = price + (tax rate × price)",
+    "explanation": "1. Change 7.5% to a decimal: 0.075.\n2. Tax: 0.075 × $60.00 = $4.50.\n3. Total: $60.00 + $4.50 = $64.50.\n\nCheck: $60.00 × 1.075 = $64.50.\n\n**Wrong choices**\n- $4.50: $4.50 is the tax only; it must be added to the price.\n- $60.45: $60.45 uses 0.0075 (which is 0.75%) instead of 0.075.\n- $55.50: $55.50 subtracts the tax instead of adding it.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "sales tax",
+      "percent"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "ged-math-ratios-percents-0005",
+    "certId": "ged-math",
+    "subjectId": "quantitative",
+    "chapterId": "ratios-percents",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "On a road map, 1 inch stands for 20 miles. Two towns are 3.5 inches apart on the map. What is the actual distance between the towns?",
+    "choices": [
+      "0.175 miles",
+      "23.5 miles",
+      "70 miles",
+      "5.71 miles"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Actual size = map length × scale",
+    "explanation": "1. Each inch on the map is 20 miles.\n2. 3.5 × 20 = 70 miles.\n\nCheck: 3 inches is 60 miles and half an inch is 10 miles. 60 + 10 = 70 miles.\n\n**Wrong choices**\n- 5.71 miles: 5.71 miles divides 20 by 3.5 instead of multiplying.\n- 23.5 miles: 23.5 miles adds 3.5 and 20 instead of multiplying.\n- 0.175 miles: 0.175 miles divides 3.5 by 20 instead of multiplying.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "scale",
+      "map"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "ged-math-ratios-percents-0006",
+    "certId": "ged-math",
+    "subjectId": "quantitative",
+    "chapterId": "ratios-percents",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Three gallons of paint cover 1,050 square feet of wall. At the same rate, how many gallons are needed to cover 1,750 square feet?",
+    "choices": [
+      "5 gallons",
+      "3.5 gallons",
+      "6 gallons",
+      "1.8 gallons"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Find the rate per one unit, then scale up",
+    "explanation": "1. Coverage per gallon: 1,050 ÷ 3 = 350 square feet.\n2. Gallons needed: 1,750 ÷ 350 = 5 gallons.\n\nCheck: Set up a proportion: 3/1,050 = x/1,750. Cross-multiply: 1,050x = 5,250, so x = 5.\n\n**Wrong choices**\n- 1.8 gallons: 1.8 gallons flips the proportion (1,050 ÷ 1,750 × 3); the bigger wall must need more paint, not less.\n- 3.5 gallons: 3.5 gallons would cover only 3.5 × 350 = 1,225 square feet.\n- 6 gallons: 6 gallons would cover 6 × 350 = 2,100 square feet, more than needed.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "proportion",
+      "paint"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "ged-math-ratios-percents-0007",
+    "certId": "ged-math",
+    "subjectId": "quantitative",
+    "chapterId": "ratios-percents",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Monthly rent went up from $1,200 to $1,290. What was the percent increase?",
+    "choices": [
+      "7.0%",
+      "90%",
+      "9%",
+      "7.5%"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Percent change = (new − old) ÷ old × 100",
+    "explanation": "1. Amount of increase: $1,290 − $1,200 = $90.\n2. Divide by the original amount: 90 ÷ 1,200 = 0.075.\n3. Change to a percent: 0.075 × 100 = 7.5%.\n\nCheck: 7.5% of $1,200 is $90, and $1,200 + $90 = $1,290.\n\n**Wrong choices**\n- 7.0%: 7.0% divides by the new rent ($1,290) instead of the original rent; 90 ÷ 1,290 is about 0.070.\n- 9%: 9% treats the $90 increase as if it were 9 percent.\n- 90%: 90% uses the dollar increase as the percent without dividing by the original rent.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "percent increase"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "ged-math-ratios-percents-0008",
+    "certId": "ged-math",
+    "subjectId": "quantitative",
+    "chapterId": "ratios-percents",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A jacket is priced at $80. It is on sale for 25% off, and then 6% sales tax is added to the sale price. What is the final cost?",
+    "choices": [
+      "$60.00",
+      "$64.80",
+      "$63.60",
+      "$84.80"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Take the discount first, then add tax to the sale price",
+    "explanation": "1. Discount: 25% of $80 = $20. Sale price: $80 − $20 = $60.\n2. Tax: 6% of $60 = $3.60.\n3. Final cost: $60 + $3.60 = $63.60.\n\nCheck: $80 × 0.75 × 1.06 = $63.60.\n\n**Wrong choices**\n- $64.80: $64.80 combines the percents into 19% off the original price; the tax is taken on the sale price, not on $80.\n- $60.00: $60.00 is the sale price before tax.\n- $84.80: $84.80 adds tax to the original price and forgets the discount.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "discount",
+      "sales tax"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "ged-math-ratios-percents-0009",
+    "certId": "ged-math",
+    "subjectId": "quantitative",
+    "chapterId": "ratios-percents",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Dana borrows $2,500 at a simple interest rate of 4% per year for 3 years. How much interest will she pay? (Use I = Prt.)",
+    "choices": [
+      "$30,000",
+      "$2,800",
+      "$100",
+      "$300"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Simple interest I = P × r × t, with r as a decimal",
+    "explanation": "1. P = $2,500, r = 4% = 0.04, t = 3 years.\n2. I = 2,500 × 0.04 × 3.\n3. 2,500 × 0.04 = 100; 100 × 3 = $300.\n\nCheck: $100 of interest each year for 3 years is $300.\n\n**Wrong choices**\n- $30,000: $30,000 uses 4 instead of 0.04 for the rate.\n- $100: $100 is the interest for only one year.\n- $2,800: $2,800 is the total she pays back (loan plus interest), not the interest.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "simple interest"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "ged-math-ratios-percents-0010",
+    "certId": "ged-math",
+    "subjectId": "quantitative",
+    "chapterId": "ratios-percents",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A salesperson earns a weekly base pay of $400 plus a 5% commission on her sales. This week her sales were $8,600. What is her total pay for the week?",
+    "choices": [
+      "$430",
+      "$830",
+      "$4,700",
+      "$9,000"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Total pay = base pay + (commission rate × sales)",
+    "explanation": "1. Commission: 5% of $8,600 = 0.05 × 8,600 = $430.\n2. Total pay: $400 + $430 = $830.\n\nCheck: 1% of $8,600 is $86, so 5% is 5 × $86 = $430. $430 + $400 = $830.\n\n**Wrong choices**\n- $430: $430 is the commission only; the $400 base pay must be added.\n- $4,700: $4,700 uses 0.5 (50%) instead of 0.05 for 5%.\n- $9,000: $9,000 adds the base pay to the total sales; she does not earn all of her sales.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "commission",
+      "percent"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "ged-math-ratios-percents-0011",
+    "certId": "ged-math",
+    "subjectId": "quantitative",
+    "chapterId": "ratios-percents",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A pump moves water at 15 gallons per minute. How many hours will it take to fill a 4,500-gallon tank?",
+    "choices": [
+      "300 hours",
+      "5 hours",
+      "67,500 hours",
+      "50 hours"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Find the time in minutes, then ÷ 60 for hours",
+    "explanation": "1. Minutes needed: 4,500 ÷ 15 = 300 minutes.\n2. Change to hours: 300 ÷ 60 = 5 hours.\n\nCheck: 15 gallons × 60 minutes = 900 gallons per hour. 900 × 5 = 4,500 gallons.\n\n**Wrong choices**\n- 300 hours: 300 is the time in minutes; it still has to be changed to hours.\n- 50 hours: 50 hours divides 300 minutes by 6 instead of 60.\n- 67,500 hours: 67,500 multiplies 4,500 by 15 instead of dividing.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "unit conversion",
+      "rate"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "ged-math-ratios-percents-0012",
+    "certId": "ged-math",
+    "subjectId": "quantitative",
+    "chapterId": "ratios-percents",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A store lowers the price of a $150 tool by 20%. A month later it raises the new price by 20%. Compared with the original $150, what is the overall change?",
+    "choices": [
+      "A 4% increase",
+      "No change",
+      "A 4% decrease",
+      "A 2% decrease"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Each percent is taken of the current price, not the original",
+    "explanation": "1. After the 20% decrease: 20% of $150 = $30, so the price is $150 − $30 = $120.\n2. After the 20% increase: 20% of $120 = $24, so the price is $120 + $24 = $144.\n3. Overall change: $144 − $150 = −$6.\n4. Percent change: 6 ÷ 150 = 0.04 = 4% decrease.\n\nCheck: $150 × 0.8 × 1.2 = $150 × 0.96 = $144, which is 96% of the original, a 4% drop.\n\n**Wrong choices**\n- No change: The two changes do not cancel, because the 20% increase is taken of the smaller price ($120).\n- A 4% increase: The final price ($144) is lower than $150, so it cannot be an increase.\n- A 2% decrease: The drop is $6 out of $150, which is 4%, not 2%.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "percent change",
+      "successive percents"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "ged-math-ratios-percents-0013",
+    "certId": "ged-math",
+    "subjectId": "quantitative",
+    "chapterId": "ratios-percents",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "On a floor plan, 1/4 inch stands for 1 foot. A rectangular room measures 3 1/2 inches by 4 inches on the plan. What is the actual area of the room?",
+    "choices": [
+      "56 square feet",
+      "14 square feet",
+      "896 square feet",
+      "224 square feet"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Convert each length with the scale, then find area",
+    "explanation": "1. Each inch on the plan is 4 feet (because 1/4 inch = 1 foot).\n2. Actual length: 3 1/2 × 4 = 14 feet.\n3. Actual width: 4 × 4 = 16 feet.\n4. Area: 14 × 16 = 224 square feet.\n\nCheck: The plan area is 3.5 × 4 = 14 square inches. Areas grow by the scale squared (4 × 4 = 16), and 14 × 16 = 224.\n\n**Wrong choices**\n- 56 square feet: 56 square feet multiplies the plan area by 4 only once; area grows by 4 × 4 = 16.\n- 896 square feet: 896 square feet multiplies by 4 one time too many (224 × 4).\n- 14 square feet: 14 is the area on the plan in square inches, not the real room.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "scale drawing",
+      "area"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "ged-math-ratios-percents-0014",
+    "certId": "ged-math",
+    "subjectId": "quantitative",
+    "chapterId": "ratios-percents",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A conveyor belt moves at 22 feet per second. What is this speed in miles per hour? (1 mile = 5,280 feet)",
+    "choices": [
+      "0.25 miles per hour",
+      "15 miles per hour",
+      "1,320 miles per hour",
+      "79,200 miles per hour"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Convert seconds to hours and feet to miles step by step",
+    "explanation": "1. Feet per hour: 22 × 3,600 seconds = 79,200 feet per hour.\n2. Miles per hour: 79,200 ÷ 5,280 = 15 miles per hour.\n\nCheck: 15 miles per hour = 15 × 5,280 = 79,200 feet per hour. 79,200 ÷ 3,600 = 22 feet per second.\n\n**Wrong choices**\n- 0.25 miles per hour: 0.25 changes seconds to minutes only (22 × 60 ÷ 5,280); an hour has 3,600 seconds.\n- 1,320 miles per hour: 1,320 is the speed in feet per minute (22 × 60), not miles per hour.\n- 79,200 miles per hour: 79,200 is the speed in feet per hour; it still has to be divided by 5,280.",
+    "frequency": 2,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "unit conversion",
+      "speed"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "ged-math-ratios-percents-0015",
+    "certId": "ged-math",
+    "subjectId": "quantitative",
+    "chapterId": "ratios-percents",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A hardware store buys a ladder for $40. It marks the price up 60%. Later the ladder goes on sale at 25% off the marked price. What is the sale price?",
+    "choices": [
+      "$64",
+      "$54",
+      "$46",
+      "$48"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Markup on cost first, then the discount on the new price",
+    "explanation": "1. Markup: 60% of $40 = $24. Marked price: $40 + $24 = $64.\n2. Discount: 25% of $64 = $16.\n3. Sale price: $64 − $16 = $48.\n\nCheck: $40 × 1.6 × 0.75 = $48.\n\n**Wrong choices**\n- $54: $54 subtracts the percents first (60% − 25% = 35%) and adds 35% to $40; the 25% is taken of $64, not $40.\n- $64: $64 is the marked price before the sale.\n- $46: $46 would be about 15% off the marked price, not 25%.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "markup",
+      "markdown"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  }
+]

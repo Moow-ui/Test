@@ -1,0 +1,433 @@
+[
+  {
+    "id": "ged-math-quadratics-0001",
+    "certId": "ged-math",
+    "subjectId": "algebraic",
+    "chapterId": "quadratics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Solve: x² = 49",
+    "choices": [
+      "x = 2,401",
+      "x = 7 or x = −7",
+      "x = 24.5 or x = −24.5",
+      "x = 7 only"
+    ],
+    "answer": 2,
+    "oneLineConcept": "x² = k has two answers: positive and negative √k",
+    "explanation": "1. Take the square root of both sides.\n2. Both 7 × 7 and (−7) × (−7) equal 49.\n3. So x = 7 or x = −7.\n\nCheck: 7² = 49 and (−7)² = 49.\n\n**Wrong choices**\n- x = 7 only: x = 7 only misses the negative answer; (−7)² is also 49.\n- x = 24.5 or x = −24.5: x = 24.5 or x = −24.5 divides 49 by 2 instead of taking the square root.\n- x = 2,401: x = 2,401 squares 49 instead of taking its square root.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "square root method"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "ged-math-quadratics-0002",
+    "certId": "ged-math",
+    "subjectId": "algebraic",
+    "chapterId": "quadratics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Solve: (x − 3)(x + 5) = 0",
+    "choices": [
+      "x = −3 or x = 5",
+      "x = 3 or x = 5",
+      "x = −3 or x = −5",
+      "x = 3 or x = −5"
+    ],
+    "answer": 4,
+    "oneLineConcept": "If a product is 0, set each factor equal to 0",
+    "explanation": "1. Set each factor equal to 0.\n2. x − 3 = 0 gives x = 3.\n3. x + 5 = 0 gives x = −5.\n\nCheck: (3 − 3)(3 + 5) = 0 × 8 = 0, and (−5 − 3)(−5 + 5) = −8 × 0 = 0.\n\n**Wrong choices**\n- x = −3 or x = 5: x = −3 or x = 5 takes the numbers with the signs shown in the factors; the signs must be reversed.\n- x = 3 or x = 5: x = 3 or x = 5 gets the sign of the second answer wrong; 5 + 5 is not 0.\n- x = −3 or x = −5: x = −3 or x = −5 gets the sign of the first answer wrong; −3 − 3 is not 0.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "zero product property"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "ged-math-quadratics-0003",
+    "certId": "ged-math",
+    "subjectId": "algebraic",
+    "chapterId": "quadratics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Solve: x² − 7x + 12 = 0",
+    "choices": [
+      "x = 2 or x = 6",
+      "x = 1 or x = 12",
+      "x = −3 or x = −4",
+      "x = 3 or x = 4"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Factor, then set each factor equal to zero",
+    "explanation": "1. Find two numbers that multiply to 12 and add to −7: −3 and −4.\n2. Factor: (x − 3)(x − 4) = 0.\n3. x = 3 or x = 4.\n\nCheck: 3² − 7(3) + 12 = 9 − 21 + 12 = 0, and 4² − 7(4) + 12 = 16 − 28 + 12 = 0.\n\n**Wrong choices**\n- x = −3 or x = −4: x = −3 or x = −4 uses the numbers from the factors without reversing the signs; (−3)² − 7(−3) + 12 = 42.\n- x = 2 or x = 6: x = 2 or x = 6 multiply to 12 but add to 8, not 7; 2² − 14 + 12 = 2.\n- x = 1 or x = 12: x = 1 or x = 12 multiply to 12 but add to 13; 1 − 7 + 12 = 6.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "factoring",
+      "solve quadratic"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "ged-math-quadratics-0004",
+    "certId": "ged-math",
+    "subjectId": "algebraic",
+    "chapterId": "quadratics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What is the value of y = x² − 4x + 1 when x = −2?",
+    "choices": [
+      "5",
+      "−3",
+      "13",
+      "−11"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Use parentheses: (−2)² = +4 and −4(−2) = +8",
+    "explanation": "1. Substitute: y = (−2)² − 4(−2) + 1.\n2. (−2)² = 4.\n3. −4 × (−2) = +8.\n4. y = 4 + 8 + 1 = 13.\n\nCheck: Put x = −2 into the calculator with parentheses: (−2)² − 4 × (−2) + 1 = 13.\n\n**Wrong choices**\n- −3: −3 treats −4(−2) as −8; a negative times a negative is positive.\n- 5: 5 treats (−2)² as −4; a negative number squared is positive.\n- −11: −11 makes both sign mistakes: −4 − 8 + 1.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "evaluate quadratic",
+      "negative numbers"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "ged-math-quadratics-0005",
+    "certId": "ged-math",
+    "subjectId": "algebraic",
+    "chapterId": "quadratics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Solve: 3x² = 75",
+    "choices": [
+      "x = 5 or x = −5",
+      "x = 25 or x = −25",
+      "x = 5 only",
+      "x = 8.66 or x = −8.66"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Get x² alone first, then take the square root",
+    "explanation": "1. Divide both sides by 3: x² = 25.\n2. Take the square root: x = 5 or x = −5.\n\nCheck: 3 × 5² = 3 × 25 = 75, and 3 × (−5)² = 75.\n\n**Wrong choices**\n- x = 25 or x = −25: x = 25 or x = −25 stops at x² = 25 and forgets the square root.\n- x = 5 only: x = 5 only misses the negative answer.\n- x = 8.66 or x = −8.66: x = 8.66 or x = −8.66 takes the square root of 75 before dividing by 3.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "square root method"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "ged-math-quadratics-0006",
+    "certId": "ged-math",
+    "subjectId": "algebraic",
+    "chapterId": "quadratics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Use the quadratic formula to solve 2x² + 3x − 2 = 0. (x = [−b ± √(b² − 4ac)] / 2a)",
+    "choices": [
+      "x = 1 or x = −4",
+      "x = 1/4 or x = −1",
+      "x = 1/2 or x = −2",
+      "x = −1/2 or x = 2"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Quadratic formula: a, b, c from ax² + bx + c = 0",
+    "explanation": "1. a = 2, b = 3, c = −2.\n2. b² − 4ac = 9 − 4(2)(−2) = 9 + 16 = 25. √25 = 5.\n3. x = (−3 + 5) / 4 = 2/4 = 1/2.\n4. x = (−3 − 5) / 4 = −8/4 = −2.\n\nCheck: Factor: 2x² + 3x − 2 = (2x − 1)(x + 2), which is 0 when x = 1/2 or x = −2.\n\n**Wrong choices**\n- x = −1/2 or x = 2: x = −1/2 or x = 2 uses +b instead of −b at the start of the formula.\n- x = 1 or x = −4: x = 1 or x = −4 divides by 2 instead of 2a = 4.\n- x = 1/4 or x = −1: x = 1/4 or x = −1 divides by 8 (4a) instead of 2a = 4.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "quadratic formula"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "ged-math-quadratics-0007",
+    "certId": "ged-math",
+    "subjectId": "algebraic",
+    "chapterId": "quadratics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A rectangular garden is 4 feet longer than it is wide. Its area is 96 square feet. What is the width of the garden?",
+    "choices": [
+      "10 feet",
+      "12 feet",
+      "24 feet",
+      "8 feet"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Write w(w + 4) = area, set to 0, and factor",
+    "explanation": "1. Let w = width. Length = w + 4.\n2. Area: w(w + 4) = 96, so w² + 4w − 96 = 0.\n3. Factor: (w + 12)(w − 8) = 0.\n4. w = 8 or w = −12. A width cannot be negative, so w = 8 feet.\n\nCheck: 8 × 12 = 96 square feet, and 12 is 4 more than 8.\n\n**Wrong choices**\n- 12 feet: 12 feet is the length, not the width.\n- 24 feet: 24 feet divides the area by 4; the 4 is the difference between length and width, not a side.\n- 10 feet: A 10-foot width gives a 14-foot length and an area of 140 square feet.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "word problem",
+      "area",
+      "factoring"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "ged-math-quadratics-0008",
+    "certId": "ged-math",
+    "subjectId": "algebraic",
+    "chapterId": "quadratics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Solve: x² + 6x = 16",
+    "choices": [
+      "x = 0 or x = −6",
+      "x = 2 or x = −8",
+      "x = 16 or x = 10",
+      "x = −2 or x = 8"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Move everything to one side so it equals 0 before factoring",
+    "explanation": "1. Subtract 16 from both sides: x² + 6x − 16 = 0.\n2. Find two numbers that multiply to −16 and add to 6: 8 and −2.\n3. Factor: (x + 8)(x − 2) = 0.\n4. x = −8 or x = 2.\n\nCheck: 2² + 6(2) = 4 + 12 = 16, and (−8)² + 6(−8) = 64 − 48 = 16.\n\n**Wrong choices**\n- x = −2 or x = 8: x = −2 or x = 8 reverses both signs; (−2)² + 6(−2) = −8, not 16.\n- x = 0 or x = −6: x = 0 or x = −6 solves x² + 6x = 0, forgetting the 16.\n- x = 16 or x = 10: x = 16 or x = 10 sets x = 16 and x + 6 = 16, which only works when the right side is 0.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "set equal to zero",
+      "factoring"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "ged-math-quadratics-0009",
+    "certId": "ged-math",
+    "subjectId": "algebraic",
+    "chapterId": "quadratics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "The product of two consecutive positive whole numbers is 132. If n is the smaller number, which equation can be used to find n?",
+    "choices": [
+      "n² = 132",
+      "n(n + 1) = 132",
+      "n + (n + 1) = 132",
+      "n(n + 2) = 132"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Consecutive numbers: n and n + 1; product means multiply",
+    "explanation": "1. Consecutive whole numbers differ by 1, so the numbers are n and n + 1.\n2. \"Product\" means multiply: n(n + 1).\n3. Equation: n(n + 1) = 132.\n\nCheck: n = 11 works, because 11 × 12 = 132.\n\n**Wrong choices**\n- n + (n + 1) = 132: n + (n + 1) = 132 adds the numbers; the problem says product.\n- n² = 132: n² = 132 multiplies the smaller number by itself, not by the next number.\n- n(n + 2) = 132: n(n + 2) = 132 is for consecutive even or odd numbers, which differ by 2.",
+    "frequency": 2,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "write quadratic",
+      "consecutive integers"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "ged-math-quadratics-0010",
+    "certId": "ged-math",
+    "subjectId": "algebraic",
+    "chapterId": "quadratics",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A ball is kicked straight up from the ground. Its height in feet after t seconds is h = −16t² + 64t. After how many seconds does it land back on the ground?",
+    "choices": [
+      "4 seconds",
+      "2 seconds",
+      "64 seconds",
+      "16 seconds"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Ground level means h = 0; factor out the common term",
+    "explanation": "1. On the ground, h = 0: −16t² + 64t = 0.\n2. Factor: −16t(t − 4) = 0.\n3. t = 0 (when it is kicked) or t = 4.\n4. It lands after 4 seconds.\n\nCheck: h = −16(4)² + 64(4) = −256 + 256 = 0.\n\n**Wrong choices**\n- 2 seconds: At 2 seconds the ball is at its highest point (64 feet), not on the ground.\n- 64 seconds: 64 is the greatest height in feet, not a time.\n- 16 seconds: At 16 seconds the formula gives a large negative height, so the ball landed well before that.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "projectile",
+      "factoring",
+      "context"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "ged-math-quadratics-0011",
+    "certId": "ged-math",
+    "subjectId": "algebraic",
+    "chapterId": "quadratics",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Solve x² − 4x − 1 = 0 using the quadratic formula. (x = [−b ± √(b² − 4ac)] / 2a)",
+    "choices": [
+      "x = 4 ± √5",
+      "x = 2 ± √5",
+      "x = 2 ± √3",
+      "x = −2 ± √5"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Simplify √(b² − 4ac), then divide every term by 2a",
+    "explanation": "1. a = 1, b = −4, c = −1.\n2. b² − 4ac = 16 − 4(1)(−1) = 16 + 4 = 20.\n3. √20 = √(4 × 5) = 2√5.\n4. x = (4 ± 2√5) / 2 = 2 ± √5.\n\nCheck: (2 + √5)² − 4(2 + √5) − 1 = (9 + 4√5) − 8 − 4√5 − 1 = 0.\n\n**Wrong choices**\n- x = −2 ± √5: x = −2 ± √5 uses b instead of −b; since b = −4, −b is +4.\n- x = 2 ± √3: x = 2 ± √3 subtracts 4 instead of adding it under the root (16 − 4 = 12); −4ac is +4 here.\n- x = 4 ± √5: x = 4 ± √5 divides only the square root part by 2; both parts must be divided.",
+    "frequency": 2,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "quadratic formula",
+      "irrational roots"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "ged-math-quadratics-0012",
+    "certId": "ged-math",
+    "subjectId": "algebraic",
+    "chapterId": "quadratics",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A square photo is placed in a frame that adds a 2-inch border on every side. The framed photo is a square with an area of 100 square inches. What is the side length of the photo itself?",
+    "choices": [
+      "8 inches",
+      "9.8 inches",
+      "10 inches",
+      "6 inches"
+    ],
+    "answer": 4,
+    "oneLineConcept": "A border on both sides adds twice its width to each side",
+    "explanation": "1. Let s = photo side. The border adds 2 inches on each side, so the framed side is s + 4.\n2. (s + 4)² = 100.\n3. s + 4 = 10 (a length must be positive).\n4. s = 6 inches.\n\nCheck: A 6-inch photo plus 2 inches on each side is 10 inches, and 10² = 100.\n\n**Wrong choices**\n- 8 inches: 8 inches adds the 2-inch border to only one side.\n- 10 inches: 10 inches is the side of the framed square, not the photo.\n- 9.8 inches: 9.8 inches takes √96, subtracting the border from the area instead of from the side.",
+    "frequency": 2,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "write quadratic",
+      "square",
+      "context"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  }
+]

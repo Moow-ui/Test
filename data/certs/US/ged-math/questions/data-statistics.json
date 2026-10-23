@@ -1,0 +1,535 @@
+[
+  {
+    "id": "ged-math-data-statistics-0001",
+    "certId": "ged-math",
+    "subjectId": "quantitative",
+    "chapterId": "data-statistics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A driver made these numbers of deliveries over 5 days: 7, 10, 12, 19, 22. What is the mean (average) number of deliveries per day?",
+    "choices": [
+      "14",
+      "12",
+      "15",
+      "70"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Mean = total of the values ÷ number of values",
+    "explanation": "1. Add the values: 7 + 10 + 12 + 19 + 22 = 70.\n2. Divide by the number of days: 70 ÷ 5 = 14.\n\nCheck: 14 × 5 = 70, which matches the total.\n\n**Wrong choices**\n- 12: 12 is the median (the middle value), not the mean.\n- 15: 15 is the range (22 − 7), not the mean.\n- 70: 70 is the total; it still has to be divided by 5.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "mean"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "ged-math-data-statistics-0002",
+    "certId": "ged-math",
+    "subjectId": "quantitative",
+    "chapterId": "data-statistics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Six workers scored 82, 75, 97, 68, 88, and 79 on a safety test. What is the median score?",
+    "choices": [
+      "79",
+      "81.5",
+      "82.5",
+      "80.5"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Median: order the data; even count = average two middles",
+    "explanation": "1. Put the scores in order: 68, 75, 79, 82, 88, 97.\n2. There are 6 scores, so there are two middle values: 79 and 82.\n3. Median = (79 + 82) ÷ 2 = 161 ÷ 2 = 80.5.\n\nCheck: Three scores (68, 75, 79) are below 80.5 and three (82, 88, 97) are above it.\n\n**Wrong choices**\n- 81.5: 81.5 is the mean (489 ÷ 6), not the median.\n- 82.5: 82.5 averages the two middle numbers of the unordered list (97 and 68); the data must be put in order first.\n- 79: 79 is only one of the two middle values; with an even count you average both.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "median",
+      "even number of values"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "ged-math-data-statistics-0003",
+    "certId": "ged-math",
+    "subjectId": "quantitative",
+    "chapterId": "data-statistics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A shoe store sold these sizes in one hour: 9, 10, 9, 11, 8, 10, 9, 12. What is the mode?",
+    "choices": [
+      "9.75",
+      "10",
+      "9",
+      "4"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Mode = the value that appears most often",
+    "explanation": "1. Count each size: 8 appears once, 9 appears 3 times, 10 appears 2 times, 11 once, 12 once.\n2. The size that appears most often is 9.\n\nCheck: No other size appears 3 or more times.\n\n**Wrong choices**\n- 10: 10 appears only twice; 9 appears three times.\n- 9.75: 9.75 is the mean (78 ÷ 8), not the mode.\n- 4: 4 is the range (12 − 8), not the mode.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "mode"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "ged-math-data-statistics-0004",
+    "certId": "ged-math",
+    "subjectId": "quantitative",
+    "chapterId": "data-statistics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "The high temperatures for five days were 54°F, 61°F, 48°F, 70°F, and 66°F. What is the range of these temperatures?",
+    "choices": [
+      "22 degrees",
+      "16 degrees",
+      "59.8 degrees",
+      "70 degrees"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Range = largest value − smallest value",
+    "explanation": "1. Largest value: 70. Smallest value: 48.\n2. Range = 70 − 48 = 22 degrees.\n\nCheck: Every temperature lies between 48 and 70, a spread of 22 degrees.\n\n**Wrong choices**\n- 16 degrees: 16 degrees subtracts the first temperature listed (54) from the highest (70); the range uses the smallest value, 48.\n- 70 degrees: 70 is the highest value, not the range.\n- 59.8 degrees: 59.8 is the mean (299 ÷ 5), not the range.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "range"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "ged-math-data-statistics-0005",
+    "certId": "ged-math",
+    "subjectId": "quantitative",
+    "chapterId": "data-statistics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A bag holds 5 red, 3 blue, and 4 green marbles. One marble is picked without looking. What is the probability that it is blue?",
+    "choices": [
+      "1/12",
+      "3/4",
+      "1/4",
+      "1/3"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Probability = favorable outcomes ÷ total outcomes",
+    "explanation": "1. Total marbles: 5 + 3 + 4 = 12.\n2. Blue marbles: 3.\n3. Probability = 3/12 = 1/4.\n\nCheck: 1/4 of 12 marbles is 3 marbles, the number of blue ones.\n\n**Wrong choices**\n- 1/3: 1/3 compares blue to the other marbles (3 out of 9) instead of to all 12.\n- 3/4: 3/4 is the probability of NOT picking blue.\n- 1/12: 1/12 is the chance of picking one particular marble, but there are 3 blue ones.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "probability"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "ged-math-data-statistics-0006",
+    "certId": "ged-math",
+    "subjectId": "quantitative",
+    "chapterId": "data-statistics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A food truck recorded its sales for four days: Monday $40, Tuesday $55, Wednesday $35, Thursday $70. What percent of the four-day total came from Thursday?",
+    "choices": [
+      "50%",
+      "25%",
+      "70%",
+      "35%"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Percent of total = part ÷ whole × 100",
+    "explanation": "1. Total sales: 40 + 55 + 35 + 70 = $200.\n2. Thursday's share: 70 ÷ 200 = 0.35.\n3. 0.35 × 100 = 35%.\n\nCheck: 35% of $200 is $70.\n\n**Wrong choices**\n- 70%: 70% uses Thursday's dollar amount as the percent without dividing by the total.\n- 25%: 25% assumes each of the 4 days had an equal share.\n- 50%: 50% is too high; half of $200 would be $100, not $70.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "percent of total",
+      "table"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "ged-math-data-statistics-0007",
+    "certId": "ged-math",
+    "subjectId": "quantitative",
+    "chapterId": "data-statistics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "To earn a certificate, a trainee needs an average of exactly 85 on five quizzes. Her first four scores are 80, 90, 78, and 88. What score does she need on the fifth quiz?",
+    "choices": [
+      "84",
+      "89",
+      "85",
+      "91"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Missing value = (mean × count) − sum of the others",
+    "explanation": "1. Total needed: 85 × 5 = 425.\n2. Sum so far: 80 + 90 + 78 + 88 = 336.\n3. Fifth score: 425 − 336 = 89.\n\nCheck: (80 + 90 + 78 + 88 + 89) ÷ 5 = 425 ÷ 5 = 85.\n\n**Wrong choices**\n- 85: 85 would give a total of 421 and an average of 84.2.\n- 84: 84 is the average of the first four scores, not the score she needs.\n- 91: 91 would give a total of 427 and an average of 85.4.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "mean",
+      "missing value"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "ged-math-data-statistics-0008",
+    "certId": "ged-math",
+    "subjectId": "quantitative",
+    "chapterId": "data-statistics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "In a training course, tests count for 60% of the grade and homework counts for 40%. Jamal has a test average of 75 and a homework average of 90. What is his course grade?",
+    "choices": [
+      "81",
+      "165",
+      "82.5",
+      "84"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Weighted average: multiply each score by its weight, add",
+    "explanation": "1. Tests: 0.60 × 75 = 45.\n2. Homework: 0.40 × 90 = 36.\n3. Course grade: 45 + 36 = 81.\n\nCheck: The grade should be closer to 75 than to 90, because tests count more. 81 is.\n\n**Wrong choices**\n- 82.5: 82.5 is the plain average of 75 and 90; it ignores the weights.\n- 84: 84 switches the weights (40% for tests and 60% for homework).\n- 165: 165 adds the two averages without using the weights.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "weighted average"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "ged-math-data-statistics-0009",
+    "certId": "ged-math",
+    "subjectId": "quantitative",
+    "chapterId": "data-statistics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A survey asked 20 households how many children live there. Results: 3 households have 0 children, 5 have 1 child, 8 have 2 children, and 4 have 3 children. What is the mean number of children per household?",
+    "choices": [
+      "1.65",
+      "8.25",
+      "1.5",
+      "2"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Mean from counts: Σ(value × count) ÷ total count",
+    "explanation": "1. Total children: 0 × 3 + 1 × 5 + 2 × 8 + 3 × 4 = 0 + 5 + 16 + 12 = 33.\n2. Total households: 3 + 5 + 8 + 4 = 20.\n3. Mean: 33 ÷ 20 = 1.65.\n\nCheck: 1.65 × 20 = 33 children.\n\n**Wrong choices**\n- 1.5: 1.5 averages the values 0, 1, 2, 3 without counting how many households have each.\n- 8.25: 8.25 divides the 33 children by the 4 groups instead of by the 20 households.\n- 2: 2 is the mode (the most common answer), not the mean.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "mean",
+      "frequency table"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "ged-math-data-statistics-0010",
+    "certId": "ged-math",
+    "subjectId": "quantitative",
+    "chapterId": "data-statistics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A sandwich shop offers 4 kinds of bread, 5 kinds of meat, and 3 kinds of cheese. A sandwich has one of each. How many different sandwiches are possible?",
+    "choices": [
+      "60",
+      "15",
+      "12",
+      "20"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Counting: multiply the number of choices at each step",
+    "explanation": "1. For each step, multiply the number of choices.\n2. 4 × 5 × 3 = 60 sandwiches.\n\nCheck: With one bread there are 5 × 3 = 15 meat-and-cheese pairs. Four breads give 4 × 15 = 60.\n\n**Wrong choices**\n- 12: 12 adds the choices (4 + 5 + 3) instead of multiplying.\n- 20: 20 counts only bread and meat (4 × 5) and leaves out the cheese.\n- 15: 15 counts only meat and cheese (5 × 3) and leaves out the bread.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "counting",
+      "fundamental counting principle"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "ged-math-data-statistics-0011",
+    "certId": "ged-math",
+    "subjectId": "quantitative",
+    "chapterId": "data-statistics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "You flip a fair coin and roll a standard six-sided number cube. What is the probability of getting heads and a 6?",
+    "choices": [
+      "1/12",
+      "1/6",
+      "2/3",
+      "1/8"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Independent events \"and\": multiply the probabilities",
+    "explanation": "1. P(heads) = 1/2.\n2. P(6) = 1/6.\n3. Both happen: 1/2 × 1/6 = 1/12.\n\nCheck: There are 2 × 6 = 12 equally likely outcomes, and only one of them is heads with a 6.\n\n**Wrong choices**\n- 2/3: 2/3 adds the probabilities (1/2 + 1/6); \"and\" for independent events means multiply.\n- 1/8: 1/8 has no basis; there are 12 possible outcomes, not 8.\n- 1/6: 1/6 is the chance of rolling a 6 alone, without also getting heads.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "probability",
+      "independent events"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "ged-math-data-statistics-0012",
+    "certId": "ged-math",
+    "subjectId": "quantitative",
+    "chapterId": "data-statistics",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A box holds 6 fuses: 4 good and 2 bad. A worker takes out 2 fuses, one after the other, without putting the first one back. What is the probability that both fuses are bad?",
+    "choices": [
+      "1/3",
+      "1/9",
+      "2/15",
+      "1/15"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Without replacement: the second pick has one fewer item",
+    "explanation": "1. First fuse bad: 2/6 = 1/3.\n2. After one bad fuse is taken out, 1 bad fuse is left among 5: 1/5.\n3. Both bad: 1/3 × 1/5 = 1/15.\n\nCheck: There are 15 possible pairs of fuses (6 × 5 ÷ 2), and only 1 pair has both bad fuses.\n\n**Wrong choices**\n- 1/9: 1/9 multiplies 1/3 × 1/3, as if the first fuse were put back.\n- 1/3: 1/3 is only the chance that the first fuse is bad.\n- 2/15: 2/15 doubles the correct answer; the order of the two bad fuses does not create a second way.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "probability",
+      "without replacement"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "ged-math-data-statistics-0013",
+    "certId": "ged-math",
+    "subjectId": "quantitative",
+    "chapterId": "data-statistics",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A supervisor must choose 3 workers from a crew of 7 to form a safety committee. The order of choosing does not matter. How many different committees are possible?",
+    "choices": [
+      "21",
+      "210",
+      "35",
+      "343"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Order does not matter: combinations = (7 × 6 × 5) ÷ (3 × 2 × 1)",
+    "explanation": "1. If order mattered: 7 × 6 × 5 = 210 ways.\n2. Each group of 3 people can be ordered 3 × 2 × 1 = 6 ways, and these are the same committee.\n3. Committees: 210 ÷ 6 = 35.\n\nCheck: Choosing the 4 people who are NOT on the committee gives the same count: (7 × 6 × 5 × 4) ÷ (4 × 3 × 2 × 1) = 840 ÷ 24 = 35.\n\n**Wrong choices**\n- 210: 210 counts different orders of the same 3 people as different committees.\n- 21: 21 is the number of ways to choose 2 people, not 3.\n- 343: 343 (7 × 7 × 7) lets the same person be picked more than once.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "combinations"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "ged-math-data-statistics-0014",
+    "certId": "ged-math",
+    "subjectId": "quantitative",
+    "chapterId": "data-statistics",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A crew of 6 workers needs one driver, one loader, and one checker. Each worker can hold at most one of these jobs. In how many different ways can the three jobs be filled?",
+    "choices": [
+      "120",
+      "20",
+      "216",
+      "18"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Order matters (different jobs): 6 × 5 × 4",
+    "explanation": "1. Driver: 6 choices.\n2. Loader: 5 choices left.\n3. Checker: 4 choices left.\n4. Total: 6 × 5 × 4 = 120 ways.\n\nCheck: There are 20 possible groups of 3 people, and each group can be assigned to the 3 jobs in 3 × 2 × 1 = 6 ways. 20 × 6 = 120.\n\n**Wrong choices**\n- 20: 20 counts groups of 3 people but ignores that the jobs are different.\n- 216: 216 (6 × 6 × 6) lets one worker hold more than one job.\n- 18: 18 multiplies 6 workers by 3 jobs; that does not count the different ways to fill the jobs.",
+    "frequency": 2,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "permutations"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "ged-math-data-statistics-0015",
+    "certId": "ged-math",
+    "subjectId": "quantitative",
+    "chapterId": "data-statistics",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A box plot shows the commute times (in minutes) of workers at a plant. The left whisker starts at 5, the box runs from 12 to 30, the line inside the box is at 21, and the right whisker ends at 40. What is the interquartile range (the spread of the middle half of the data)?",
+    "choices": [
+      "35 minutes",
+      "18 minutes",
+      "21 minutes",
+      "9 minutes"
+    ],
+    "answer": 2,
+    "oneLineConcept": "IQR = upper quartile − lower quartile (box length)",
+    "explanation": "1. The box goes from the lower quartile (12) to the upper quartile (30).\n2. IQR = 30 − 12 = 18 minutes.\n\nCheck: The middle half of the workers have commutes between 12 and 30 minutes, an 18-minute spread.\n\n**Wrong choices**\n- 35 minutes: 35 minutes is the range (40 − 5), which uses the whisker ends.\n- 21 minutes: 21 minutes is the median, the line inside the box.\n- 9 minutes: 9 minutes is the distance from the lower quartile to the median (21 − 12), only half the box.",
+    "frequency": 2,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "box plot",
+      "interquartile range"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+]
