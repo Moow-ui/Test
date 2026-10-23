@@ -1,0 +1,4465 @@
+[
+  {
+    "subjectId": "quantitative",
+    "chapterId": "number-sense",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which list puts these numbers in order from least to greatest?\n\n0.65, 5/8, 0.58, 3/5",
+    "choices": [
+      "0.58, 3/5, 5/8, 0.65",
+      "3/5, 5/8, 0.58, 0.65",
+      "0.58, 0.65, 3/5, 5/8",
+      "0.65, 5/8, 3/5, 0.58"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Change every number to a decimal before comparing",
+    "explanation": "1. Change the fractions to decimals: 3/5 = 0.6 and 5/8 = 0.625.\n2. Now compare four decimals: 0.65, 0.625, 0.58, 0.6.\n3. From least to greatest: 0.58, 0.6, 0.625, 0.65.\n4. Write them in their original form: 0.58, 3/5, 5/8, 0.65.\n\nCheck: 0.58 < 0.60 < 0.625 < 0.65, so each number is bigger than the one before it.\n\n**Wrong choices**\n- 3/5, 5/8, 0.58, 0.65: 3/5 (0.6) is larger than 0.58, so 3/5 cannot come first.\n- 0.58, 0.65, 3/5, 5/8: This lists the decimals first and the fractions after, but 3/5 (0.6) and 5/8 (0.625) are smaller than 0.65.\n- 0.65, 5/8, 3/5, 0.58: This is the right order but backward: it goes from greatest to least.",
+    "frequency": 4,
+    "tags": [
+      "ordering",
+      "fractions",
+      "decimals"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "number-sense",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A board is 8 3/4 feet long. A carpenter cuts off a piece 2 5/8 feet long. How long is the board that is left?",
+    "choices": [
+      "11 3/8 feet",
+      "6 1/8 feet",
+      "6 2/4 feet",
+      "6 3/8 feet"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Use a common denominator before subtracting fractions",
+    "explanation": "1. Write 3/4 with a denominator of 8: 3/4 = 6/8, so 8 3/4 = 8 6/8.\n2. Subtract the whole numbers: 8 − 2 = 6.\n3. Subtract the fractions: 6/8 − 5/8 = 1/8.\n4. The board left is 6 1/8 feet.\n\nCheck: 6 1/8 + 2 5/8 = 8 6/8 = 8 3/4 feet, the original length.\n\n**Wrong choices**\n- 11 3/8 feet: 11 3/8 feet comes from adding the two lengths instead of subtracting.\n- 6 2/4 feet: 6 2/4 feet comes from subtracting the tops and the bottoms of the fractions separately, which is not how fractions work.\n- 6 3/8 feet: 6 3/8 feet treats 3/4 as a whole 1 before subtracting 5/8; 3/4 must be changed to 6/8, not 1.",
+    "frequency": 4,
+    "tags": [
+      "fractions",
+      "mixed numbers",
+      "measurement"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "number-sense",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What is the greatest common factor (largest number that divides both evenly) of 36 and 60?",
+    "choices": [
+      "6",
+      "180",
+      "12",
+      "4"
+    ],
+    "answer": 3,
+    "oneLineConcept": "GCF = the largest number that divides both numbers",
+    "explanation": "1. Factors of 36: 1, 2, 3, 4, 6, 9, 12, 18, 36.\n2. Factors of 60: 1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30, 60.\n3. The largest number in both lists is 12.\n\nCheck: 36 ÷ 12 = 3 and 60 ÷ 12 = 5, both whole numbers, and 3 and 5 share no other factor.\n\n**Wrong choices**\n- 6: 6 divides both numbers, but it is not the largest; 12 also divides both.\n- 180: 180 is the least common multiple, not the greatest common factor.\n- 4: 4 divides both numbers, but it is not the largest common factor.",
+    "frequency": 4,
+    "tags": [
+      "factors",
+      "GCF"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "number-sense",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "One shuttle bus leaves the terminal every 12 minutes. Another leaves every 18 minutes. Both leave together at 8:00 a.m. When is the next time they leave together?",
+    "choices": [
+      "8:30 a.m.",
+      "8:06 a.m.",
+      "11:36 a.m.",
+      "8:36 a.m."
+    ],
+    "answer": 4,
+    "oneLineConcept": "Things that repeat line up again at the LCM",
+    "explanation": "1. List multiples of 12: 12, 24, 36, 48 ...\n2. List multiples of 18: 18, 36, 54 ...\n3. The least common multiple is 36 minutes.\n4. 8:00 a.m. + 36 minutes = 8:36 a.m.\n\nCheck: 36 ÷ 12 = 3 trips and 36 ÷ 18 = 2 trips, so both buses are at the terminal at 8:36.\n\n**Wrong choices**\n- 8:30 a.m.: 8:30 a.m. adds 12 and 18; 30 minutes is not a multiple of 12 or 18.\n- 8:06 a.m.: 8:06 a.m. uses the greatest common factor (6), but neither bus leaves after only 6 minutes.\n- 11:36 a.m.: 11:36 a.m. multiplies 12 × 18 = 216 minutes; that is a common time, but not the first one.",
+    "frequency": 3,
+    "tags": [
+      "multiples",
+      "LCM",
+      "time"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "number-sense",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "At 6 a.m. the temperature was −8°F. By 2 p.m. it was 15°F. How many degrees did the temperature rise?",
+    "choices": [
+      "23 degrees",
+      "7 degrees",
+      "−23 degrees",
+      "8 degrees"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Change = new − old, even with negative numbers",
+    "explanation": "1. Rise = later temperature − earlier temperature.\n2. 15 − (−8) = 15 + 8 = 23.\n3. The temperature rose 23 degrees.\n\nCheck: Count on a number line: from −8 up to 0 is 8 degrees, and from 0 up to 15 is 15 more. 8 + 15 = 23.\n\n**Wrong choices**\n- 7 degrees: 7 degrees comes from 15 − 8, which ignores that −8 is below zero.\n- −23 degrees: A rise is a positive change; −23 has the wrong sign.\n- 8 degrees: 8 degrees only counts the rise from −8 up to 0.",
+    "frequency": 4,
+    "tags": [
+      "negative numbers",
+      "distance on number line"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "number-sense",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What is the value of 18 − 3 × (2 + 4) ÷ 9?",
+    "choices": [
+      "10",
+      "16",
+      "0",
+      "2"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Parentheses, exponents, × and ÷, then + and −",
+    "explanation": "1. Parentheses first: 2 + 4 = 6.\n2. Multiply and divide from left to right: 3 × 6 = 18, then 18 ÷ 9 = 2.\n3. Subtract last: 18 − 2 = 16.\n\nCheck: On a calculator that follows the order of operations, 18 − 3 × 6 ÷ 9 also gives 16.\n\n**Wrong choices**\n- 10: 10 works strictly left to right: (18 − 3) × 6 ÷ 9. Subtraction must wait until multiplication and division are done.\n- 0: 0 subtracts 3 × 6 from 18 first and then divides by 9; the division belongs to the 3 × 6 part only.\n- 2: 2 is only the value of 3 × 6 ÷ 9; it still has to be subtracted from 18.",
+    "frequency": 5,
+    "tags": [
+      "order of operations"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "number-sense",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A factory makes 2.4 × 10⁵ bolts per day. At this rate, how many bolts does it make in 30 days?",
+    "choices": [
+      "7.2 × 10⁵",
+      "7.2 × 10⁷",
+      "7.2 × 10⁶",
+      "2.4003 × 10⁵"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Multiply the numbers, then add the powers of 10",
+    "explanation": "1. Write 30 as 3 × 10¹.\n2. Multiply the front numbers: 2.4 × 3 = 7.2.\n3. Multiply the powers of 10: 10⁵ × 10¹ = 10⁶.\n4. The total is 7.2 × 10⁶ bolts.\n\nCheck: 240,000 × 30 = 7,200,000, which is 7.2 × 10⁶.\n\n**Wrong choices**\n- 7.2 × 10⁵: 7.2 × 10⁵ multiplies by 3 instead of 30; it forgets the factor of 10 in 30.\n- 7.2 × 10⁷: 7.2 × 10⁷ adds two to the power of 10, but 30 has only one factor of 10.\n- 2.4003 × 10⁵: 2.4003 × 10⁵ adds 30 to 240,000 instead of multiplying.",
+    "frequency": 3,
+    "tags": [
+      "scientific notation"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "number-sense",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "What is the value of (2³)² × 2⁻⁴?",
+    "choices": [
+      "2",
+      "32",
+      "1,024",
+      "4"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Power of a power: multiply exponents; same base: add",
+    "explanation": "1. Power of a power: (2³)² = 2^(3 × 2) = 2⁶.\n2. Same base multiplied: 2⁶ × 2⁻⁴ = 2^(6 + (−4)) = 2².\n3. 2² = 4.\n\nCheck: (2³)² = 8² = 64, and 2⁻⁴ = 1/16. 64 × 1/16 = 4.\n\n**Wrong choices**\n- 2: 2 adds the exponents 3 and 2 inside the power (getting 2⁵) instead of multiplying them.\n- 32: 32 squares the exponent 3 to get 2⁹; the rule is to multiply 3 × 2.\n- 1,024: 1,024 treats −4 as +4 and gets 2¹⁰.",
+    "frequency": 3,
+    "tags": [
+      "exponents",
+      "rules of exponents"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "number-sense",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "For which value of x is the expression 12 / (x − 5) undefined?",
+    "choices": [
+      "x = 5",
+      "x = 0",
+      "x = −5",
+      "x = 12"
+    ],
+    "answer": 1,
+    "oneLineConcept": "A fraction is undefined when its denominator is 0",
+    "explanation": "1. Division by zero is undefined, so find where the bottom equals 0.\n2. x − 5 = 0.\n3. x = 5.\n\nCheck: With x = 5 the expression becomes 12 / 0, which has no value.\n\n**Wrong choices**\n- x = 0: With x = 0 the expression is 12 / (−5) = −2.4, which is defined.\n- x = −5: With x = −5 the expression is 12 / (−10) = −1.2, which is defined.\n- x = 12: With x = 12 the expression is 12 / 7, which is defined. A top of 12 does not cause a problem.",
+    "frequency": 2,
+    "tags": [
+      "undefined expressions",
+      "division by zero"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "number-sense",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A square rug has an area of 81 square feet. A cube-shaped storage box has a volume of 64 cubic feet. How much longer is one side of the rug than one edge of the box?",
+    "choices": [
+      "1 foot",
+      "5 feet",
+      "17 feet",
+      "13 feet"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Square side = √area; cube edge = ∛volume",
+    "explanation": "1. Side of the square rug: √81 = 9 feet.\n2. Edge of the cube box: ∛64 = 4 feet (because 4 × 4 × 4 = 64).\n3. Difference: 9 − 4 = 5 feet.\n\nCheck: 9 × 9 = 81 square feet and 4 × 4 × 4 = 64 cubic feet.\n\n**Wrong choices**\n- 1 foot: 1 foot uses the square root of 64 (8) for the box; a cube needs the cube root.\n- 17 feet: 17 feet subtracts the area and volume (81 − 64) instead of comparing lengths.\n- 13 feet: 13 feet adds the two lengths instead of finding the difference.",
+    "frequency": 3,
+    "tags": [
+      "square roots",
+      "cube roots"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "number-sense",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A worker earns $18.50 per hour for the first 40 hours of a week and 1.5 times that rate for overtime. Last week he worked 46 hours. What was his total pay before deductions?",
+    "choices": [
+      "$851.00",
+      "$860.00",
+      "$906.50",
+      "$1,276.50"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Pay regular and overtime hours at their own rates",
+    "explanation": "1. Regular pay: 40 × $18.50 = $740.00.\n2. Overtime rate: 1.5 × $18.50 = $27.75 per hour.\n3. Overtime hours: 46 − 40 = 6. Overtime pay: 6 × $27.75 = $166.50.\n4. Total: $740.00 + $166.50 = $906.50.\n\nCheck: Think of it as 46 regular hours ($851.00) plus an extra half rate for 6 hours (6 × $9.25 = $55.50). $851.00 + $55.50 = $906.50.\n\n**Wrong choices**\n- $851.00: $851.00 pays all 46 hours at the regular rate and leaves out the overtime extra.\n- $860.00: $860.00 adds $1.50 to the hourly rate instead of multiplying the rate by 1.5.\n- $1,276.50: $1,276.50 pays all 46 hours at the overtime rate; only the 6 hours over 40 get the higher rate.",
+    "frequency": 4,
+    "tags": [
+      "decimals",
+      "paycheck",
+      "overtime"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "number-sense",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "An electrician has three rolls of cable that are 30 feet, 45 feet, and 75 feet long. She wants to cut all of them into pieces of the same length, as long as possible, with nothing left over. How many pieces will she have in all?",
+    "choices": [
+      "15 pieces",
+      "30 pieces",
+      "3 pieces",
+      "10 pieces"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Longest equal piece with no waste = the GCF",
+    "explanation": "1. The longest piece that divides all three lengths is their greatest common factor.\n2. GCF of 30, 45, and 75 is 15 feet.\n3. Pieces: 30 ÷ 15 = 2, 45 ÷ 15 = 3, 75 ÷ 15 = 5.\n4. Total: 2 + 3 + 5 = 10 pieces.\n\nCheck: 10 pieces × 15 feet = 150 feet, and 30 + 45 + 75 = 150 feet of cable.\n\n**Wrong choices**\n- 15 pieces: 15 is the length of each piece in feet, not the number of pieces.\n- 30 pieces: 30 pieces uses 5-foot pieces; 5 feet divides all three, but it is not the longest possible length.\n- 3 pieces: 3 is the number of rolls, not the number of pieces.",
+    "frequency": 3,
+    "tags": [
+      "GCF",
+      "word problem"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "number-sense",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "What is the value of 64^(2/3)?",
+    "choices": [
+      "16",
+      "42.67",
+      "8",
+      "4"
+    ],
+    "answer": 1,
+    "oneLineConcept": "a^(m/n): take the n-th root, then raise to m",
+    "explanation": "1. The bottom of the exponent (3) means take the cube root: ∛64 = 4.\n2. The top of the exponent (2) means square the result: 4² = 16.\n\nCheck: Do it in the other order: 64² = 4,096, and ∛4,096 = 16 because 16 × 16 × 16 = 4,096.\n\n**Wrong choices**\n- 42.67: 42.67 multiplies 64 by 2/3; an exponent is not a multiplier.\n- 8: 8 is the square root of 64; the exponent 2/3 calls for a cube root, then squaring.\n- 4: 4 is only the cube root; it still needs to be squared.",
+    "frequency": 2,
+    "tags": [
+      "rational exponents",
+      "roots"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "number-sense",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "On a number line, point A is at −3 1/2 and point B is at 2 3/4. What is the distance between A and B?",
+    "choices": [
+      "3/4",
+      "6 1/4",
+      "−6 1/4",
+      "5 1/4"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Distance = absolute value of the difference",
+    "explanation": "1. Distance = |B − A|.\n2. B − A = 2 3/4 − (−3 1/2) = 2 3/4 + 3 1/2.\n3. 2 3/4 + 3 2/4 = 5 5/4 = 6 1/4.\n4. The distance is 6 1/4 units.\n\nCheck: From −3 1/2 to 0 is 3 1/2 units, and from 0 to 2 3/4 is 2 3/4 units. 3 1/2 + 2 3/4 = 6 1/4.\n\n**Wrong choices**\n- 3/4: 3/4 subtracts 2 3/4 from 3 1/2, as if both points were on the same side of 0.\n- −6 1/4: A distance is never negative; −6 1/4 has the wrong sign.\n- 5 1/4: 5 1/4 adds the whole numbers but forgets that 1/2 + 3/4 is more than 1.",
+    "frequency": 3,
+    "tags": [
+      "distance on number line",
+      "absolute value",
+      "mixed numbers"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "number-sense",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A truck's fuel tank holds 30 gallons and starts full. On Monday the driver uses 2/5 of the full tank. On Tuesday he uses 1/3 of what is left after Monday. How many gallons are left after Tuesday?",
+    "choices": [
+      "8 gallons",
+      "6 gallons",
+      "12 gallons",
+      "18 gallons"
+    ],
+    "answer": 3,
+    "oneLineConcept": "\"Of what is left\" means multiply the remaining amount",
+    "explanation": "1. Monday: 2/5 × 30 = 12 gallons used. Left: 30 − 12 = 18 gallons.\n2. Tuesday: 1/3 × 18 = 6 gallons used. Left: 18 − 6 = 12 gallons.\n\nCheck: After Monday 3/5 remains, and after Tuesday 2/3 of that remains. 30 × 3/5 × 2/3 = 12 gallons.\n\n**Wrong choices**\n- 8 gallons: 8 gallons takes 1/3 of the full 30 gallons on Tuesday, but the problem says 1/3 of what was left.\n- 6 gallons: 6 gallons is the amount used on Tuesday, not the amount left.\n- 18 gallons: 18 gallons is what was left after Monday only.",
+    "frequency": 3,
+    "tags": [
+      "fractions",
+      "multi-step"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "ratios-percents",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Bottled water is sold in four pack sizes: 12 bottles for $5.40, 18 bottles for $7.38, 24 bottles for $10.32, and 30 bottles for $13.80. Which pack has the lowest price per bottle?",
+    "choices": [
+      "30 bottles for $13.80",
+      "12 bottles for $5.40",
+      "24 bottles for $10.32",
+      "18 bottles for $7.38"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Unit price = total price ÷ number of units",
+    "explanation": "1. 12-pack: $5.40 ÷ 12 = $0.45 per bottle.\n2. 18-pack: $7.38 ÷ 18 = $0.41 per bottle.\n3. 24-pack: $10.32 ÷ 24 = $0.43 per bottle.\n4. 30-pack: $13.80 ÷ 30 = $0.46 per bottle.\n5. The lowest is $0.41, the 18-pack.\n\nCheck: 18 × $0.41 = $7.38.\n\n**Wrong choices**\n- 30 bottles for $13.80: The 30-pack is the biggest, but it costs $0.46 per bottle, the highest of all.\n- 12 bottles for $5.40: The 12-pack has the lowest total price, but it costs $0.45 per bottle.\n- 24 bottles for $10.32: The 24-pack costs $0.43 per bottle, more than the 18-pack.",
+    "frequency": 4,
+    "tags": [
+      "unit price",
+      "unit rate"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "ratios-percents",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A delivery driver travels 186 miles in 3 hours at a steady speed. What is her speed in miles per hour?",
+    "choices": [
+      "62",
+      "558",
+      "93",
+      "52"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Speed = distance ÷ time",
+    "explanation": "1. Speed = distance ÷ time.\n2. 186 ÷ 3 = 62 miles per hour.\n\nCheck: 62 × 3 = 186 miles.\n\n**Wrong choices**\n- 558: 558 multiplies distance by time instead of dividing.\n- 93: 93 divides by 2 instead of by 3.\n- 52: 52 drops a step in the division; 52 × 3 = 156, not 186.",
+    "frequency": 4,
+    "tags": [
+      "speed",
+      "unit rate"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "ratios-percents",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A restaurant bill is $45.00. You want to leave an 18% tip. How much is the tip?",
+    "choices": [
+      "$0.81",
+      "$8.10",
+      "$2.50",
+      "$53.10"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Percent of a number: change % to a decimal and multiply",
+    "explanation": "1. Change 18% to a decimal: 18% = 0.18.\n2. Multiply: 0.18 × $45.00 = $8.10.\n\nCheck: 10% of $45 is $4.50, so 20% is $9.00. 18% should be a little less than $9.00, and $8.10 is.\n\n**Wrong choices**\n- $0.81: $0.81 uses 0.018 instead of 0.18; the decimal point was moved one place too far.\n- $2.50: $2.50 divides 45 by 18 instead of finding 18% of 45.\n- $53.10: $53.10 is the bill plus the tip, not the tip alone.",
+    "frequency": 5,
+    "tags": [
+      "percent",
+      "tip"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "ratios-percents",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A drill costs $60.00. The sales tax rate is 7.5%. What is the total cost including tax?",
+    "choices": [
+      "$4.50",
+      "$60.45",
+      "$64.50",
+      "$55.50"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Total with tax = price + (tax rate × price)",
+    "explanation": "1. Change 7.5% to a decimal: 0.075.\n2. Tax: 0.075 × $60.00 = $4.50.\n3. Total: $60.00 + $4.50 = $64.50.\n\nCheck: $60.00 × 1.075 = $64.50.\n\n**Wrong choices**\n- $4.50: $4.50 is the tax only; it must be added to the price.\n- $60.45: $60.45 uses 0.0075 (which is 0.75%) instead of 0.075.\n- $55.50: $55.50 subtracts the tax instead of adding it.",
+    "frequency": 4,
+    "tags": [
+      "sales tax",
+      "percent"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "ratios-percents",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "On a road map, 1 inch stands for 20 miles. Two towns are 3.5 inches apart on the map. What is the actual distance between the towns?",
+    "choices": [
+      "5.71 miles",
+      "23.5 miles",
+      "0.175 miles",
+      "70 miles"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Actual size = map length × scale",
+    "explanation": "1. Each inch on the map is 20 miles.\n2. 3.5 × 20 = 70 miles.\n\nCheck: 3 inches is 60 miles and half an inch is 10 miles. 60 + 10 = 70 miles.\n\n**Wrong choices**\n- 5.71 miles: 5.71 miles divides 20 by 3.5 instead of multiplying.\n- 23.5 miles: 23.5 miles adds 3.5 and 20 instead of multiplying.\n- 0.175 miles: 0.175 miles divides 3.5 by 20 instead of multiplying.",
+    "frequency": 4,
+    "tags": [
+      "scale",
+      "map"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "ratios-percents",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Three gallons of paint cover 1,050 square feet of wall. At the same rate, how many gallons are needed to cover 1,750 square feet?",
+    "choices": [
+      "5 gallons",
+      "1.8 gallons",
+      "3.5 gallons",
+      "6 gallons"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Find the rate per one unit, then scale up",
+    "explanation": "1. Coverage per gallon: 1,050 ÷ 3 = 350 square feet.\n2. Gallons needed: 1,750 ÷ 350 = 5 gallons.\n\nCheck: Set up a proportion: 3/1,050 = x/1,750. Cross-multiply: 1,050x = 5,250, so x = 5.\n\n**Wrong choices**\n- 1.8 gallons: 1.8 gallons flips the proportion (1,050 ÷ 1,750 × 3); the bigger wall must need more paint, not less.\n- 3.5 gallons: 3.5 gallons would cover only 3.5 × 350 = 1,225 square feet.\n- 6 gallons: 6 gallons would cover 6 × 350 = 2,100 square feet, more than needed.",
+    "frequency": 4,
+    "tags": [
+      "proportion",
+      "paint"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "ratios-percents",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Monthly rent went up from $1,200 to $1,290. What was the percent increase?",
+    "choices": [
+      "7.0%",
+      "7.5%",
+      "9%",
+      "90%"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Percent change = (new − old) ÷ old × 100",
+    "explanation": "1. Amount of increase: $1,290 − $1,200 = $90.\n2. Divide by the original amount: 90 ÷ 1,200 = 0.075.\n3. Change to a percent: 0.075 × 100 = 7.5%.\n\nCheck: 7.5% of $1,200 is $90, and $1,200 + $90 = $1,290.\n\n**Wrong choices**\n- 7.0%: 7.0% divides by the new rent ($1,290) instead of the original rent; 90 ÷ 1,290 is about 0.070.\n- 9%: 9% treats the $90 increase as if it were 9 percent.\n- 90%: 90% uses the dollar increase as the percent without dividing by the original rent.",
+    "frequency": 5,
+    "tags": [
+      "percent increase"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "ratios-percents",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A jacket is priced at $80. It is on sale for 25% off, and then 6% sales tax is added to the sale price. What is the final cost?",
+    "choices": [
+      "$64.80",
+      "$60.00",
+      "$63.60",
+      "$84.80"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Take the discount first, then add tax to the sale price",
+    "explanation": "1. Discount: 25% of $80 = $20. Sale price: $80 − $20 = $60.\n2. Tax: 6% of $60 = $3.60.\n3. Final cost: $60 + $3.60 = $63.60.\n\nCheck: $80 × 0.75 × 1.06 = $63.60.\n\n**Wrong choices**\n- $64.80: $64.80 combines the percents into 19% off the original price; the tax is taken on the sale price, not on $80.\n- $60.00: $60.00 is the sale price before tax.\n- $84.80: $84.80 adds tax to the original price and forgets the discount.",
+    "frequency": 4,
+    "tags": [
+      "discount",
+      "sales tax"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "ratios-percents",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Dana borrows $2,500 at a simple interest rate of 4% per year for 3 years. How much interest will she pay? (Use I = Prt.)",
+    "choices": [
+      "$30,000",
+      "$100",
+      "$2,800",
+      "$300"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Simple interest I = P × r × t, with r as a decimal",
+    "explanation": "1. P = $2,500, r = 4% = 0.04, t = 3 years.\n2. I = 2,500 × 0.04 × 3.\n3. 2,500 × 0.04 = 100; 100 × 3 = $300.\n\nCheck: $100 of interest each year for 3 years is $300.\n\n**Wrong choices**\n- $30,000: $30,000 uses 4 instead of 0.04 for the rate.\n- $100: $100 is the interest for only one year.\n- $2,800: $2,800 is the total she pays back (loan plus interest), not the interest.",
+    "frequency": 4,
+    "tags": [
+      "simple interest"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "ratios-percents",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A salesperson earns a weekly base pay of $400 plus a 5% commission on her sales. This week her sales were $8,600. What is her total pay for the week?",
+    "choices": [
+      "$830",
+      "$430",
+      "$4,700",
+      "$9,000"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Total pay = base pay + (commission rate × sales)",
+    "explanation": "1. Commission: 5% of $8,600 = 0.05 × 8,600 = $430.\n2. Total pay: $400 + $430 = $830.\n\nCheck: 1% of $8,600 is $86, so 5% is 5 × $86 = $430. $430 + $400 = $830.\n\n**Wrong choices**\n- $430: $430 is the commission only; the $400 base pay must be added.\n- $4,700: $4,700 uses 0.5 (50%) instead of 0.05 for 5%.\n- $9,000: $9,000 adds the base pay to the total sales; she does not earn all of her sales.",
+    "frequency": 3,
+    "tags": [
+      "commission",
+      "percent"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "ratios-percents",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A pump moves water at 15 gallons per minute. How many hours will it take to fill a 4,500-gallon tank?",
+    "choices": [
+      "300 hours",
+      "5 hours",
+      "50 hours",
+      "67,500 hours"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Find the time in minutes, then ÷ 60 for hours",
+    "explanation": "1. Minutes needed: 4,500 ÷ 15 = 300 minutes.\n2. Change to hours: 300 ÷ 60 = 5 hours.\n\nCheck: 15 gallons × 60 minutes = 900 gallons per hour. 900 × 5 = 4,500 gallons.\n\n**Wrong choices**\n- 300 hours: 300 is the time in minutes; it still has to be changed to hours.\n- 50 hours: 50 hours divides 300 minutes by 6 instead of 60.\n- 67,500 hours: 67,500 multiplies 4,500 by 15 instead of dividing.",
+    "frequency": 3,
+    "tags": [
+      "unit conversion",
+      "rate"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "ratios-percents",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A store lowers the price of a $150 tool by 20%. A month later it raises the new price by 20%. Compared with the original $150, what is the overall change?",
+    "choices": [
+      "No change",
+      "A 4% increase",
+      "A 4% decrease",
+      "A 2% decrease"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Each percent is taken of the current price, not the original",
+    "explanation": "1. After the 20% decrease: 20% of $150 = $30, so the price is $150 − $30 = $120.\n2. After the 20% increase: 20% of $120 = $24, so the price is $120 + $24 = $144.\n3. Overall change: $144 − $150 = −$6.\n4. Percent change: 6 ÷ 150 = 0.04 = 4% decrease.\n\nCheck: $150 × 0.8 × 1.2 = $150 × 0.96 = $144, which is 96% of the original, a 4% drop.\n\n**Wrong choices**\n- No change: The two changes do not cancel, because the 20% increase is taken of the smaller price ($120).\n- A 4% increase: The final price ($144) is lower than $150, so it cannot be an increase.\n- A 2% decrease: The drop is $6 out of $150, which is 4%, not 2%.",
+    "frequency": 3,
+    "tags": [
+      "percent change",
+      "successive percents"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "ratios-percents",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "On a floor plan, 1/4 inch stands for 1 foot. A rectangular room measures 3 1/2 inches by 4 inches on the plan. What is the actual area of the room?",
+    "choices": [
+      "56 square feet",
+      "896 square feet",
+      "14 square feet",
+      "224 square feet"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Convert each length with the scale, then find area",
+    "explanation": "1. Each inch on the plan is 4 feet (because 1/4 inch = 1 foot).\n2. Actual length: 3 1/2 × 4 = 14 feet.\n3. Actual width: 4 × 4 = 16 feet.\n4. Area: 14 × 16 = 224 square feet.\n\nCheck: The plan area is 3.5 × 4 = 14 square inches. Areas grow by the scale squared (4 × 4 = 16), and 14 × 16 = 224.\n\n**Wrong choices**\n- 56 square feet: 56 square feet multiplies the plan area by 4 only once; area grows by 4 × 4 = 16.\n- 896 square feet: 896 square feet multiplies by 4 one time too many (224 × 4).\n- 14 square feet: 14 is the area on the plan in square inches, not the real room.",
+    "frequency": 3,
+    "tags": [
+      "scale drawing",
+      "area"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "ratios-percents",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A conveyor belt moves at 22 feet per second. What is this speed in miles per hour? (1 mile = 5,280 feet)",
+    "choices": [
+      "15 miles per hour",
+      "0.25 miles per hour",
+      "1,320 miles per hour",
+      "79,200 miles per hour"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Convert seconds to hours and feet to miles step by step",
+    "explanation": "1. Feet per hour: 22 × 3,600 seconds = 79,200 feet per hour.\n2. Miles per hour: 79,200 ÷ 5,280 = 15 miles per hour.\n\nCheck: 15 miles per hour = 15 × 5,280 = 79,200 feet per hour. 79,200 ÷ 3,600 = 22 feet per second.\n\n**Wrong choices**\n- 0.25 miles per hour: 0.25 changes seconds to minutes only (22 × 60 ÷ 5,280); an hour has 3,600 seconds.\n- 1,320 miles per hour: 1,320 is the speed in feet per minute (22 × 60), not miles per hour.\n- 79,200 miles per hour: 79,200 is the speed in feet per hour; it still has to be divided by 5,280.",
+    "frequency": 2,
+    "tags": [
+      "unit conversion",
+      "speed"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "ratios-percents",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A hardware store buys a ladder for $40. It marks the price up 60%. Later the ladder goes on sale at 25% off the marked price. What is the sale price?",
+    "choices": [
+      "$54",
+      "$48",
+      "$64",
+      "$46"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Markup on cost first, then the discount on the new price",
+    "explanation": "1. Markup: 60% of $40 = $24. Marked price: $40 + $24 = $64.\n2. Discount: 25% of $64 = $16.\n3. Sale price: $64 − $16 = $48.\n\nCheck: $40 × 1.6 × 0.75 = $48.\n\n**Wrong choices**\n- $54: $54 subtracts the percents first (60% − 25% = 35%) and adds 35% to $40; the 25% is taken of $64, not $40.\n- $64: $64 is the marked price before the sale.\n- $46: $46 would be about 15% off the marked price, not 25%.",
+    "frequency": 3,
+    "tags": [
+      "markup",
+      "markdown"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "geometry-2d",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A rectangular room is 12 feet wide and 15 feet long. How many square feet of carpet are needed to cover the floor?",
+    "choices": [
+      "54",
+      "27",
+      "180",
+      "360"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Rectangle area A = l × w",
+    "explanation": "1. Area of a rectangle: A = length × width.\n2. A = 15 × 12 = 180 square feet.\n\nCheck: 10 × 15 = 150 and 2 × 15 = 30. 150 + 30 = 180.\n\n**Wrong choices**\n- 54: 54 is the perimeter (2 × 12 + 2 × 15), the distance around the room.\n- 27: 27 adds the length and width instead of multiplying.\n- 360: 360 doubles the area; there is no need to multiply by 2.",
+    "frequency": 5,
+    "tags": [
+      "area",
+      "rectangle"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "geometry-2d",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A rectangular garden is 18 feet long and 10 feet wide. How many feet of fencing are needed to go all the way around it?",
+    "choices": [
+      "28 feet",
+      "180 feet",
+      "46 feet",
+      "56 feet"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Rectangle perimeter P = 2l + 2w",
+    "explanation": "1. Perimeter: P = 2l + 2w.\n2. P = 2 × 18 + 2 × 10 = 36 + 20 = 56 feet.\n\nCheck: Walk around the garden: 18 + 10 + 18 + 10 = 56 feet.\n\n**Wrong choices**\n- 28 feet: 28 feet covers only one length and one width, which is half the way around.\n- 180 feet: 180 is the area in square feet, not the distance around.\n- 46 feet: 46 feet leaves out one of the 10-foot sides.",
+    "frequency": 4,
+    "tags": [
+      "perimeter",
+      "rectangle"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "geometry-2d",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A triangular sign has a base of 14 inches and a height of 9 inches. What is its area?",
+    "choices": [
+      "63 square inches",
+      "126 square inches",
+      "23 square inches",
+      "31.5 square inches"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Triangle area A = 1/2 × b × h",
+    "explanation": "1. Area of a triangle: A = 1/2 × base × height.\n2. A = 1/2 × 14 × 9 = 7 × 9 = 63 square inches.\n\nCheck: A rectangle 14 by 9 has area 126. A triangle with the same base and height is half of that: 63.\n\n**Wrong choices**\n- 126 square inches: 126 square inches forgets the 1/2 in the triangle formula.\n- 23 square inches: 23 adds the base and height instead of multiplying.\n- 31.5 square inches: 31.5 square inches takes half twice (1/2 × 1/2 × 14 × 9).",
+    "frequency": 4,
+    "tags": [
+      "area",
+      "triangle"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "geometry-2d",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A circular patio has a radius of 5 feet. What is its area? Use 3.14 for π.",
+    "choices": [
+      "31.4 square feet",
+      "78.5 square feet",
+      "15.7 square feet",
+      "314 square feet"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Circle area A = π × r²",
+    "explanation": "1. Area of a circle: A = πr².\n2. r² = 5 × 5 = 25.\n3. A = 3.14 × 25 = 78.5 square feet.\n\nCheck: 3 × 25 = 75, and the answer should be a bit more than 75. 78.5 fits.\n\n**Wrong choices**\n- 31.4 square feet: 31.4 is the circumference (2 × 3.14 × 5), the distance around, not the area.\n- 15.7 square feet: 15.7 multiplies π by r without squaring r.\n- 314 square feet: 314 uses the diameter (10) in place of the radius: 3.14 × 10².",
+    "frequency": 4,
+    "tags": [
+      "circle",
+      "area"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "geometry-2d",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A round table has a diameter of 4 feet. What is the distance around the edge of the table? Use 3.14 for π.",
+    "choices": [
+      "25.12 feet",
+      "50.24 feet",
+      "12.56 feet",
+      "6.28 feet"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Circumference C = π × d = 2 × π × r",
+    "explanation": "1. Circumference: C = πd.\n2. C = 3.14 × 4 = 12.56 feet.\n\nCheck: Using C = 2πr with r = 2: 2 × 3.14 × 2 = 12.56 feet.\n\n**Wrong choices**\n- 25.12 feet: 25.12 feet uses 4 as the radius; 4 feet is the diameter.\n- 50.24 feet: 50.24 is π × 4², the area if the radius were 4, not a distance around.\n- 6.28 feet: 6.28 feet uses π × r, which is only half the circumference.",
+    "frequency": 4,
+    "tags": [
+      "circle",
+      "circumference"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "geometry-2d",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "The bottom of a ladder is 5 feet from a wall. The top of the ladder touches the wall 12 feet above the ground. How long is the ladder?",
+    "choices": [
+      "17 feet",
+      "169 feet",
+      "7 feet",
+      "13 feet"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Right triangle: a² + b² = c²",
+    "explanation": "1. The wall, the ground, and the ladder form a right triangle. The ladder is the longest side, c.\n2. a² + b² = c²: 5² + 12² = 25 + 144 = 169.\n3. c = √169 = 13 feet.\n\nCheck: 13² = 169 = 25 + 144.\n\n**Wrong choices**\n- 17 feet: 17 feet adds 5 and 12; the sides must be squared first.\n- 169 feet: 169 is c², not c. Take the square root.\n- 7 feet: 7 feet subtracts 5 from 12; the ladder must be longer than either side.",
+    "frequency": 5,
+    "tags": [
+      "Pythagorean theorem",
+      "ladder"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "geometry-2d",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A rectangular rug has an area of 96 square feet. Its width is 8 feet. What is the perimeter of the rug?",
+    "choices": [
+      "40 feet",
+      "20 feet",
+      "104 feet",
+      "12 feet"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Find the missing side from the area, then the perimeter",
+    "explanation": "1. Length = area ÷ width = 96 ÷ 8 = 12 feet.\n2. Perimeter: 2 × 12 + 2 × 8 = 24 + 16 = 40 feet.\n\nCheck: 12 × 8 = 96 square feet, matching the given area.\n\n**Wrong choices**\n- 20 feet: 20 feet is only one length plus one width (12 + 8), half the perimeter.\n- 104 feet: 104 adds the area and the width, which mixes different units.\n- 12 feet: 12 feet is the length of the rug, not the distance around it.",
+    "frequency": 4,
+    "tags": [
+      "area",
+      "perimeter",
+      "missing side"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "geometry-2d",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A backyard is shaped like a trapezoid. The two parallel sides are 20 feet and 30 feet long, and the distance between them is 12 feet. What is the area? (Trapezoid: A = 1/2 × h × (b₁ + b₂))",
+    "choices": [
+      "600 square feet",
+      "300 square feet",
+      "62 square feet",
+      "240 square feet"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Trapezoid area = 1/2 × height × (sum of bases)",
+    "explanation": "1. Add the parallel sides: 20 + 30 = 50 feet.\n2. Multiply by the height: 50 × 12 = 600.\n3. Take half: 600 ÷ 2 = 300 square feet.\n\nCheck: The average base is (20 + 30) ÷ 2 = 25 feet, and 25 × 12 = 300.\n\n**Wrong choices**\n- 600 square feet: 600 square feet forgets the 1/2 in the formula.\n- 62 square feet: 62 adds the numbers (20 + 30 + 12) instead of using the area formula.\n- 240 square feet: 240 square feet uses only the shorter side (20 × 12).",
+    "frequency": 3,
+    "tags": [
+      "trapezoid",
+      "area",
+      "formula sheet"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "geometry-2d",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "The circumference of a bicycle wheel is 94.2 inches. What is the diameter of the wheel? Use 3.14 for π.",
+    "choices": [
+      "15 inches",
+      "47.1 inches",
+      "30 inches",
+      "60 inches"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Diameter = circumference ÷ π",
+    "explanation": "1. C = πd, so d = C ÷ π.\n2. d = 94.2 ÷ 3.14 = 30 inches.\n\nCheck: 3.14 × 30 = 94.2 inches.\n\n**Wrong choices**\n- 15 inches: 15 inches is the radius (half the diameter).\n- 47.1 inches: 47.1 inches is half the circumference, not the diameter.\n- 60 inches: 60 inches doubles the diameter; 3.14 × 60 = 188.4, not 94.2.",
+    "frequency": 3,
+    "tags": [
+      "circle",
+      "diameter from circumference"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "geometry-2d",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A countertop is a 10-foot by 6-foot rectangle with a half circle attached to one 6-foot end (the 6-foot side is the diameter of the half circle). What is the total area of the countertop? Use 3.14 for π.",
+    "choices": [
+      "88.26 square feet",
+      "116.52 square feet",
+      "69.42 square feet",
+      "74.13 square feet"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Composite area: add the area of each simple shape",
+    "explanation": "1. Rectangle: 10 × 6 = 60 square feet.\n2. The half circle has diameter 6, so its radius is 3. Full circle area: 3.14 × 3² = 28.26. Half circle: 28.26 ÷ 2 = 14.13 square feet.\n3. Total: 60 + 14.13 = 74.13 square feet.\n\nCheck: The half circle must be smaller than a 6 × 3 rectangle (18 square feet). 14.13 is, so the total is reasonable.\n\n**Wrong choices**\n- 88.26 square feet: 88.26 square feet adds a full circle instead of a half circle.\n- 116.52 square feet: 116.52 square feet uses 6 as the radius; 6 feet is the diameter.\n- 69.42 square feet: 69.42 adds π × r (9.42) instead of the half circle's area.",
+    "frequency": 3,
+    "tags": [
+      "composite figure",
+      "semicircle",
+      "area"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "geometry-2d",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A TV screen is a rectangle with a diagonal of 50 inches and a width of 40 inches. What is the height of the screen?",
+    "choices": [
+      "30 inches",
+      "10 inches",
+      "64 inches",
+      "900 inches"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Missing leg: b² = c² − a²",
+    "explanation": "1. The width, height, and diagonal form a right triangle; the diagonal is the longest side c.\n2. b² = c² − a² = 50² − 40² = 2,500 − 1,600 = 900.\n3. b = √900 = 30 inches.\n\nCheck: 30² + 40² = 900 + 1,600 = 2,500 = 50².\n\n**Wrong choices**\n- 10 inches: 10 inches subtracts 40 from 50 without squaring.\n- 64 inches: 64 inches adds the squares (2,500 + 1,600) and takes the root, but the diagonal is already the longest side.\n- 900 inches: 900 is the height squared; take the square root.",
+    "frequency": 4,
+    "tags": [
+      "Pythagorean theorem",
+      "missing leg"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "geometry-2d",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "An L-shaped floor is a 20-foot by 14-foot rectangle with a 6-foot by 5-foot corner cut out. Tile costs $3 per square foot. How much will the tile cost for the whole floor?",
+    "choices": [
+      "$840",
+      "$750",
+      "$660",
+      "$204"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Composite area: big rectangle minus the cut-out piece",
+    "explanation": "1. Full rectangle: 20 × 14 = 280 square feet.\n2. Cut-out corner: 6 × 5 = 30 square feet.\n3. Floor area: 280 − 30 = 250 square feet.\n4. Cost: 250 × $3 = $750.\n\nCheck: $750 ÷ $3 = 250 square feet, and 250 + 30 = 280 = 20 × 14.\n\n**Wrong choices**\n- $840: $840 tiles the full 20 × 14 rectangle and ignores the cut-out corner.\n- $660: $660 subtracts the cut-out area twice (280 − 60 = 220 square feet).\n- $204: $204 uses the perimeter (68 feet) instead of the area.",
+    "frequency": 3,
+    "tags": [
+      "composite figure",
+      "area",
+      "cost"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "geometry-2d",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A lawn sprinkler waters a circle with an area of 1,256 square feet. What is the radius of the circle? Use 3.14 for π.",
+    "choices": [
+      "400 feet",
+      "200 feet",
+      "20 feet",
+      "40 feet"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Radius from area: r = √(A ÷ π)",
+    "explanation": "1. A = πr², so r² = A ÷ π.\n2. r² = 1,256 ÷ 3.14 = 400.\n3. r = √400 = 20 feet.\n\nCheck: 3.14 × 20² = 3.14 × 400 = 1,256 square feet.\n\n**Wrong choices**\n- 400 feet: 400 is r²; take the square root to get r.\n- 200 feet: 200 feet divides 400 by 2 instead of taking the square root.\n- 40 feet: 40 feet is the diameter, twice the radius.",
+    "frequency": 3,
+    "tags": [
+      "circle",
+      "radius from area"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "geometry-2d",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A rectangular parking lot is 45 yards wide and 60 yards long. Instead of walking along two sides from one corner to the opposite corner, a worker walks straight across the diagonal. How many yards shorter is the diagonal path?",
+    "choices": [
+      "75 yards",
+      "105 yards",
+      "15 yards",
+      "30 yards"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Diagonal of a rectangle = √(l² + w²)",
+    "explanation": "1. Path along two sides: 45 + 60 = 105 yards.\n2. Diagonal: √(45² + 60²) = √(2,025 + 3,600) = √5,625 = 75 yards.\n3. Savings: 105 − 75 = 30 yards.\n\nCheck: 45, 60, 75 is the 3-4-5 triangle times 15, so 75 is correct.\n\n**Wrong choices**\n- 75 yards: 75 yards is the length of the diagonal, not how much shorter it is.\n- 105 yards: 105 yards is the length of the path along two sides.\n- 15 yards: 15 yards subtracts 45 from 60, which has nothing to do with the diagonal.",
+    "frequency": 3,
+    "tags": [
+      "Pythagorean theorem",
+      "diagonal",
+      "word problem"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "geometry-2d",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A rectangular deck is 3 feet longer than it is wide. Its perimeter is 46 feet. What is its area?",
+    "choices": [
+      "130 square feet",
+      "23 square feet",
+      "132.25 square feet",
+      "46 square feet"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Use the perimeter to find the sides, then the area",
+    "explanation": "1. Let w = width. Length = w + 3.\n2. Perimeter: 2w + 2(w + 3) = 46, so 4w + 6 = 46.\n3. 4w = 40, so w = 10 feet. Length = 13 feet.\n4. Area: 10 × 13 = 130 square feet.\n\nCheck: 2 × 10 + 2 × 13 = 20 + 26 = 46 feet.\n\n**Wrong choices**\n- 23 square feet: 23 is half the perimeter (length + width), not the area.\n- 132.25 square feet: 132.25 square feet treats the deck as a square with sides of 11.5 feet, but the sides differ by 3 feet.\n- 46 square feet: 46 is the perimeter in feet, not the area.",
+    "frequency": 3,
+    "tags": [
+      "perimeter",
+      "area",
+      "algebra"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "geometry-3d",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A shipping box is 12 inches long, 8 inches wide, and 5 inches high. What is its volume?",
+    "choices": [
+      "25 cubic inches",
+      "480 cubic inches",
+      "96 cubic inches",
+      "392 cubic inches"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Rectangular prism volume V = l × w × h",
+    "explanation": "1. V = length × width × height.\n2. V = 12 × 8 × 5 = 96 × 5 = 480 cubic inches.\n\nCheck: 8 × 5 = 40, and 40 × 12 = 480.\n\n**Wrong choices**\n- 25 cubic inches: 25 adds the three measurements instead of multiplying.\n- 96 cubic inches: 96 is the area of the bottom (12 × 8); it still has to be multiplied by the height.\n- 392 cubic inches: 392 is the surface area (2lw + 2lh + 2wh), the outside covering, not the space inside.",
+    "frequency": 5,
+    "tags": [
+      "volume",
+      "rectangular prism"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "geometry-3d",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A cylindrical water tank has a radius of 3 feet and a height of 10 feet. What is its volume? Use 3.14 for π.",
+    "choices": [
+      "94.2 cubic feet",
+      "188.4 cubic feet",
+      "282.6 cubic feet",
+      "1,130.4 cubic feet"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Cylinder volume V = π × r² × h",
+    "explanation": "1. V = πr²h.\n2. r² = 3 × 3 = 9.\n3. V = 3.14 × 9 × 10 = 282.6 cubic feet.\n\nCheck: The base circle has area 3.14 × 9 = 28.26 square feet. 28.26 × 10 = 282.6.\n\n**Wrong choices**\n- 94.2 cubic feet: 94.2 forgets to square the radius (3.14 × 3 × 10).\n- 188.4 cubic feet: 188.4 is 2πrh, the area of the curved side, not the volume.\n- 1,130.4 cubic feet: 1,130.4 uses 6 (the diameter) as the radius.",
+    "frequency": 4,
+    "tags": [
+      "volume",
+      "cylinder"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "geometry-3d",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A cube-shaped box has edges 4 inches long. What is the total surface area of the box?",
+    "choices": [
+      "64 square inches",
+      "16 square inches",
+      "48 square inches",
+      "96 square inches"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Cube surface area = 6 faces × (edge × edge)",
+    "explanation": "1. Each face is a square: 4 × 4 = 16 square inches.\n2. A cube has 6 faces: 6 × 16 = 96 square inches.\n\nCheck: Use SA = 2lw + 2lh + 2wh with all sides 4: 32 + 32 + 32 = 96.\n\n**Wrong choices**\n- 64 square inches: 64 is the volume (4 × 4 × 4) in cubic inches, not the surface area.\n- 16 square inches: 16 square inches is the area of only one face.\n- 48 square inches: 48 square inches counts only 3 of the 6 faces.",
+    "frequency": 3,
+    "tags": [
+      "surface area",
+      "cube"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "geometry-3d",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A right prism has a triangular base with an area of 15 square inches. The prism is 8 inches tall. What is its volume? (Right prism: V = Bh, where B is the area of the base.)",
+    "choices": [
+      "120 cubic inches",
+      "60 cubic inches",
+      "40 cubic inches",
+      "23 cubic inches"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Any right prism: volume = base area × height",
+    "explanation": "1. V = Bh, where B is the base area.\n2. V = 15 × 8 = 120 cubic inches.\n\nCheck: 120 ÷ 8 = 15, the base area.\n\n**Wrong choices**\n- 60 cubic inches: 60 takes half of Bh; the 1/2 is already included in the triangle's base area.\n- 40 cubic inches: 40 uses 1/3 × Bh, the formula for a pyramid, not a prism.\n- 23 cubic inches: 23 adds 15 and 8 instead of multiplying.",
+    "frequency": 3,
+    "tags": [
+      "volume",
+      "right prism"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "geometry-3d",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A paper cone cup has a radius of 3 inches and a height of 8 inches. What is its volume? Use 3.14 for π. (Cone: V = 1/3 × π × r² × h)",
+    "choices": [
+      "226.08 cubic inches",
+      "75.36 cubic inches",
+      "25.12 cubic inches",
+      "113.04 cubic inches"
+    ],
+    "answer": 2,
+    "oneLineConcept": "A cone holds 1/3 of a cylinder with the same base and height",
+    "explanation": "1. r² = 3 × 3 = 9.\n2. π × r² × h = 3.14 × 9 × 8 = 226.08.\n3. Divide by 3: 226.08 ÷ 3 = 75.36 cubic inches.\n\nCheck: 1/3 × 9 × 8 = 24, and 3.14 × 24 = 75.36.\n\n**Wrong choices**\n- 226.08 cubic inches: 226.08 cubic inches forgets to divide by 3; that is a cylinder's volume.\n- 25.12 cubic inches: 25.12 does not square the radius (1/3 × 3.14 × 3 × 8).\n- 113.04 cubic inches: 113.04 divides by 2 instead of by 3.",
+    "frequency": 3,
+    "tags": [
+      "volume",
+      "cone"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "geometry-3d",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "An aquarium shaped like a rectangular box holds 4,320 cubic inches. Its base is 24 inches long and 15 inches wide. How tall is the aquarium?",
+    "choices": [
+      "180 inches",
+      "288 inches",
+      "12 inches",
+      "4,281 inches"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Height = volume ÷ (length × width)",
+    "explanation": "1. Base area: 24 × 15 = 360 square inches.\n2. Height: 4,320 ÷ 360 = 12 inches.\n\nCheck: 24 × 15 × 12 = 360 × 12 = 4,320 cubic inches.\n\n**Wrong choices**\n- 180 inches: 180 divides the volume by the length only (4,320 ÷ 24).\n- 288 inches: 288 divides the volume by the width only (4,320 ÷ 15).\n- 4,281 inches: 4,281 subtracts the length and width from the volume.",
+    "frequency": 3,
+    "tags": [
+      "rectangular prism",
+      "missing height"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "geometry-3d",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A ball has a radius of 3 inches. What is its volume? Use 3.14 for π. (Sphere: V = 4/3 × π × r³)",
+    "choices": [
+      "37.68 cubic inches",
+      "339.12 cubic inches",
+      "84.78 cubic inches",
+      "113.04 cubic inches"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Sphere volume V = 4/3 × π × r³",
+    "explanation": "1. r³ = 3 × 3 × 3 = 27.\n2. π × r³ = 3.14 × 27 = 84.78.\n3. Multiply by 4/3: 84.78 × 4 ÷ 3 = 113.04 cubic inches.\n\nCheck: 4/3 × 27 = 36, and 36 × 3.14 = 113.04.\n\n**Wrong choices**\n- 37.68 cubic inches: 37.68 squares the radius instead of cubing it.\n- 339.12 cubic inches: 339.12 multiplies by 4 but forgets to divide by 3.\n- 84.78 cubic inches: 84.78 leaves out the 4/3 in the formula.",
+    "frequency": 2,
+    "tags": [
+      "volume",
+      "sphere"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "geometry-3d",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A stone monument is a pyramid with a square base 6 feet on each side and a height of 10 feet. What is its volume? (Pyramid: V = 1/3 × B × h)",
+    "choices": [
+      "120 cubic feet",
+      "360 cubic feet",
+      "180 cubic feet",
+      "20 cubic feet"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Pyramid volume = 1/3 × base area × height",
+    "explanation": "1. Base area: B = 6 × 6 = 36 square feet.\n2. B × h = 36 × 10 = 360.\n3. V = 1/3 × 360 = 120 cubic feet.\n\nCheck: A box with the same base and height would hold 360 cubic feet; a pyramid holds one-third of that.\n\n**Wrong choices**\n- 360 cubic feet: 360 cubic feet forgets the 1/3; that is a box with the same base and height.\n- 180 cubic feet: 180 cubic feet takes 1/2 instead of 1/3.\n- 20 cubic feet: 20 cubic feet uses 6 for the base area instead of 6 × 6.",
+    "frequency": 2,
+    "tags": [
+      "volume",
+      "pyramid"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "geometry-3d",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A cylindrical can holds 471 cubic centimeters. Its radius is 5 centimeters. What is its height? Use 3.14 for π.",
+    "choices": [
+      "30 centimeters",
+      "6 centimeters",
+      "3 centimeters",
+      "12 centimeters"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Height = volume ÷ (π × r²)",
+    "explanation": "1. V = πr²h, so h = V ÷ (πr²).\n2. πr² = 3.14 × 25 = 78.5 square centimeters.\n3. h = 471 ÷ 78.5 = 6 centimeters.\n\nCheck: 3.14 × 25 × 6 = 78.5 × 6 = 471 cubic centimeters.\n\n**Wrong choices**\n- 30 centimeters: 30 centimeters divides by π × r (15.7) without squaring the radius.\n- 3 centimeters: 3 centimeters divides by 2πr² (157); the volume formula has only πr².\n- 12 centimeters: 12 centimeters doubles the height; 78.5 × 12 = 942, not 471.",
+    "frequency": 3,
+    "tags": [
+      "cylinder",
+      "missing height"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "geometry-3d",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A grain bin is a cylinder with a radius of 4 feet and a height of 10 feet, topped by a cone with the same radius and a height of 3 feet. What is the total volume of the bin? Use 3.14 for π.",
+    "choices": [
+      "653.12 cubic feet",
+      "502.4 cubic feet",
+      "552.64 cubic feet",
+      "2,210.56 cubic feet"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Composite solid: add the volume of each part",
+    "explanation": "1. Cylinder: 3.14 × 4² × 10 = 3.14 × 16 × 10 = 502.4 cubic feet.\n2. Cone: 1/3 × 3.14 × 4² × 3 = 3.14 × 16 = 50.24 cubic feet.\n3. Total: 502.4 + 50.24 = 552.64 cubic feet.\n\nCheck: The cone is 1/3 as tall in effect (3 ÷ 3 = 1 foot of cylinder), so the total is like a cylinder 11 feet tall: 3.14 × 16 × 11 = 552.64.\n\n**Wrong choices**\n- 653.12 cubic feet: 653.12 cubic feet forgets the 1/3 in the cone formula.\n- 502.4 cubic feet: 502.4 cubic feet is the cylinder only; the cone on top is left out.\n- 2,210.56 cubic feet: 2,210.56 cubic feet uses 8 feet (the diameter) as the radius.",
+    "frequency": 2,
+    "tags": [
+      "composite solid",
+      "cylinder",
+      "cone"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "geometry-3d",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A closed cylindrical tank has a radius of 2 feet and a height of 5 feet. How many square feet of outside surface need paint, including the top and bottom? Use 3.14 for π. (Cylinder: SA = 2πrh + 2πr²)",
+    "choices": [
+      "62.8 square feet",
+      "75.36 square feet",
+      "226.08 square feet",
+      "87.92 square feet"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Cylinder surface = curved side + two circle ends",
+    "explanation": "1. Curved side: 2πrh = 2 × 3.14 × 2 × 5 = 62.8 square feet.\n2. Two ends: 2πr² = 2 × 3.14 × 4 = 25.12 square feet.\n3. Total: 62.8 + 25.12 = 87.92 square feet.\n\nCheck: Each end is 3.14 × 4 = 12.56; 62.8 + 12.56 + 12.56 = 87.92.\n\n**Wrong choices**\n- 62.8 square feet: 62.8 square feet is the curved side only; the top and bottom are left out.\n- 75.36 square feet: 75.36 square feet adds only one end (62.8 + 12.56); a closed tank has two.\n- 226.08 square feet: 226.08 square feet uses 4 feet (the diameter) as the radius.",
+    "frequency": 2,
+    "tags": [
+      "surface area",
+      "cylinder"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "data-statistics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A driver made these numbers of deliveries over 5 days: 7, 10, 12, 19, 22. What is the mean (average) number of deliveries per day?",
+    "choices": [
+      "14",
+      "12",
+      "15",
+      "70"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Mean = total of the values ÷ number of values",
+    "explanation": "1. Add the values: 7 + 10 + 12 + 19 + 22 = 70.\n2. Divide by the number of days: 70 ÷ 5 = 14.\n\nCheck: 14 × 5 = 70, which matches the total.\n\n**Wrong choices**\n- 12: 12 is the median (the middle value), not the mean.\n- 15: 15 is the range (22 − 7), not the mean.\n- 70: 70 is the total; it still has to be divided by 5.",
+    "frequency": 5,
+    "tags": [
+      "mean"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "data-statistics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Six workers scored 82, 75, 97, 68, 88, and 79 on a safety test. What is the median score?",
+    "choices": [
+      "81.5",
+      "80.5",
+      "82.5",
+      "79"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Median: order the data; even count = average two middles",
+    "explanation": "1. Put the scores in order: 68, 75, 79, 82, 88, 97.\n2. There are 6 scores, so there are two middle values: 79 and 82.\n3. Median = (79 + 82) ÷ 2 = 161 ÷ 2 = 80.5.\n\nCheck: Three scores (68, 75, 79) are below 80.5 and three (82, 88, 97) are above it.\n\n**Wrong choices**\n- 81.5: 81.5 is the mean (489 ÷ 6), not the median.\n- 82.5: 82.5 averages the two middle numbers of the unordered list (97 and 68); the data must be put in order first.\n- 79: 79 is only one of the two middle values; with an even count you average both.",
+    "frequency": 5,
+    "tags": [
+      "median",
+      "even number of values"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "data-statistics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A shoe store sold these sizes in one hour: 9, 10, 9, 11, 8, 10, 9, 12. What is the mode?",
+    "choices": [
+      "10",
+      "9.75",
+      "9",
+      "4"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Mode = the value that appears most often",
+    "explanation": "1. Count each size: 8 appears once, 9 appears 3 times, 10 appears 2 times, 11 once, 12 once.\n2. The size that appears most often is 9.\n\nCheck: No other size appears 3 or more times.\n\n**Wrong choices**\n- 10: 10 appears only twice; 9 appears three times.\n- 9.75: 9.75 is the mean (78 ÷ 8), not the mode.\n- 4: 4 is the range (12 − 8), not the mode.",
+    "frequency": 4,
+    "tags": [
+      "mode"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "data-statistics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "The high temperatures for five days were 54°F, 61°F, 48°F, 70°F, and 66°F. What is the range of these temperatures?",
+    "choices": [
+      "16 degrees",
+      "70 degrees",
+      "59.8 degrees",
+      "22 degrees"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Range = largest value − smallest value",
+    "explanation": "1. Largest value: 70. Smallest value: 48.\n2. Range = 70 − 48 = 22 degrees.\n\nCheck: Every temperature lies between 48 and 70, a spread of 22 degrees.\n\n**Wrong choices**\n- 16 degrees: 16 degrees subtracts the first temperature listed (54) from the highest (70); the range uses the smallest value, 48.\n- 70 degrees: 70 is the highest value, not the range.\n- 59.8 degrees: 59.8 is the mean (299 ÷ 5), not the range.",
+    "frequency": 4,
+    "tags": [
+      "range"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "data-statistics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A bag holds 5 red, 3 blue, and 4 green marbles. One marble is picked without looking. What is the probability that it is blue?",
+    "choices": [
+      "1/4",
+      "1/3",
+      "3/4",
+      "1/12"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Probability = favorable outcomes ÷ total outcomes",
+    "explanation": "1. Total marbles: 5 + 3 + 4 = 12.\n2. Blue marbles: 3.\n3. Probability = 3/12 = 1/4.\n\nCheck: 1/4 of 12 marbles is 3 marbles, the number of blue ones.\n\n**Wrong choices**\n- 1/3: 1/3 compares blue to the other marbles (3 out of 9) instead of to all 12.\n- 3/4: 3/4 is the probability of NOT picking blue.\n- 1/12: 1/12 is the chance of picking one particular marble, but there are 3 blue ones.",
+    "frequency": 5,
+    "tags": [
+      "probability"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "data-statistics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A food truck recorded its sales for four days: Monday $40, Tuesday $55, Wednesday $35, Thursday $70. What percent of the four-day total came from Thursday?",
+    "choices": [
+      "70%",
+      "35%",
+      "25%",
+      "50%"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Percent of total = part ÷ whole × 100",
+    "explanation": "1. Total sales: 40 + 55 + 35 + 70 = $200.\n2. Thursday's share: 70 ÷ 200 = 0.35.\n3. 0.35 × 100 = 35%.\n\nCheck: 35% of $200 is $70.\n\n**Wrong choices**\n- 70%: 70% uses Thursday's dollar amount as the percent without dividing by the total.\n- 25%: 25% assumes each of the 4 days had an equal share.\n- 50%: 50% is too high; half of $200 would be $100, not $70.",
+    "frequency": 4,
+    "tags": [
+      "percent of total",
+      "table"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "data-statistics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "To earn a certificate, a trainee needs an average of exactly 85 on five quizzes. Her first four scores are 80, 90, 78, and 88. What score does she need on the fifth quiz?",
+    "choices": [
+      "85",
+      "84",
+      "89",
+      "91"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Missing value = (mean × count) − sum of the others",
+    "explanation": "1. Total needed: 85 × 5 = 425.\n2. Sum so far: 80 + 90 + 78 + 88 = 336.\n3. Fifth score: 425 − 336 = 89.\n\nCheck: (80 + 90 + 78 + 88 + 89) ÷ 5 = 425 ÷ 5 = 85.\n\n**Wrong choices**\n- 85: 85 would give a total of 421 and an average of 84.2.\n- 84: 84 is the average of the first four scores, not the score she needs.\n- 91: 91 would give a total of 427 and an average of 85.4.",
+    "frequency": 4,
+    "tags": [
+      "mean",
+      "missing value"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "data-statistics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "In a training course, tests count for 60% of the grade and homework counts for 40%. Jamal has a test average of 75 and a homework average of 90. What is his course grade?",
+    "choices": [
+      "82.5",
+      "84",
+      "165",
+      "81"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Weighted average: multiply each score by its weight, add",
+    "explanation": "1. Tests: 0.60 × 75 = 45.\n2. Homework: 0.40 × 90 = 36.\n3. Course grade: 45 + 36 = 81.\n\nCheck: The grade should be closer to 75 than to 90, because tests count more. 81 is.\n\n**Wrong choices**\n- 82.5: 82.5 is the plain average of 75 and 90; it ignores the weights.\n- 84: 84 switches the weights (40% for tests and 60% for homework).\n- 165: 165 adds the two averages without using the weights.",
+    "frequency": 3,
+    "tags": [
+      "weighted average"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "data-statistics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A survey asked 20 households how many children live there. Results: 3 households have 0 children, 5 have 1 child, 8 have 2 children, and 4 have 3 children. What is the mean number of children per household?",
+    "choices": [
+      "1.65",
+      "1.5",
+      "8.25",
+      "2"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Mean from counts: Σ(value × count) ÷ total count",
+    "explanation": "1. Total children: 0 × 3 + 1 × 5 + 2 × 8 + 3 × 4 = 0 + 5 + 16 + 12 = 33.\n2. Total households: 3 + 5 + 8 + 4 = 20.\n3. Mean: 33 ÷ 20 = 1.65.\n\nCheck: 1.65 × 20 = 33 children.\n\n**Wrong choices**\n- 1.5: 1.5 averages the values 0, 1, 2, 3 without counting how many households have each.\n- 8.25: 8.25 divides the 33 children by the 4 groups instead of by the 20 households.\n- 2: 2 is the mode (the most common answer), not the mean.",
+    "frequency": 3,
+    "tags": [
+      "mean",
+      "frequency table"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "data-statistics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A sandwich shop offers 4 kinds of bread, 5 kinds of meat, and 3 kinds of cheese. A sandwich has one of each. How many different sandwiches are possible?",
+    "choices": [
+      "12",
+      "60",
+      "20",
+      "15"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Counting: multiply the number of choices at each step",
+    "explanation": "1. For each step, multiply the number of choices.\n2. 4 × 5 × 3 = 60 sandwiches.\n\nCheck: With one bread there are 5 × 3 = 15 meat-and-cheese pairs. Four breads give 4 × 15 = 60.\n\n**Wrong choices**\n- 12: 12 adds the choices (4 + 5 + 3) instead of multiplying.\n- 20: 20 counts only bread and meat (4 × 5) and leaves out the cheese.\n- 15: 15 counts only meat and cheese (5 × 3) and leaves out the bread.",
+    "frequency": 3,
+    "tags": [
+      "counting",
+      "fundamental counting principle"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "data-statistics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "You flip a fair coin and roll a standard six-sided number cube. What is the probability of getting heads and a 6?",
+    "choices": [
+      "2/3",
+      "1/8",
+      "1/12",
+      "1/6"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Independent events \"and\": multiply the probabilities",
+    "explanation": "1. P(heads) = 1/2.\n2. P(6) = 1/6.\n3. Both happen: 1/2 × 1/6 = 1/12.\n\nCheck: There are 2 × 6 = 12 equally likely outcomes, and only one of them is heads with a 6.\n\n**Wrong choices**\n- 2/3: 2/3 adds the probabilities (1/2 + 1/6); \"and\" for independent events means multiply.\n- 1/8: 1/8 has no basis; there are 12 possible outcomes, not 8.\n- 1/6: 1/6 is the chance of rolling a 6 alone, without also getting heads.",
+    "frequency": 3,
+    "tags": [
+      "probability",
+      "independent events"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "data-statistics",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A box holds 6 fuses: 4 good and 2 bad. A worker takes out 2 fuses, one after the other, without putting the first one back. What is the probability that both fuses are bad?",
+    "choices": [
+      "1/9",
+      "1/3",
+      "2/15",
+      "1/15"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Without replacement: the second pick has one fewer item",
+    "explanation": "1. First fuse bad: 2/6 = 1/3.\n2. After one bad fuse is taken out, 1 bad fuse is left among 5: 1/5.\n3. Both bad: 1/3 × 1/5 = 1/15.\n\nCheck: There are 15 possible pairs of fuses (6 × 5 ÷ 2), and only 1 pair has both bad fuses.\n\n**Wrong choices**\n- 1/9: 1/9 multiplies 1/3 × 1/3, as if the first fuse were put back.\n- 1/3: 1/3 is only the chance that the first fuse is bad.\n- 2/15: 2/15 doubles the correct answer; the order of the two bad fuses does not create a second way.",
+    "frequency": 3,
+    "tags": [
+      "probability",
+      "without replacement"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "data-statistics",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A supervisor must choose 3 workers from a crew of 7 to form a safety committee. The order of choosing does not matter. How many different committees are possible?",
+    "choices": [
+      "35",
+      "210",
+      "21",
+      "343"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Order does not matter: combinations = (7 × 6 × 5) ÷ (3 × 2 × 1)",
+    "explanation": "1. If order mattered: 7 × 6 × 5 = 210 ways.\n2. Each group of 3 people can be ordered 3 × 2 × 1 = 6 ways, and these are the same committee.\n3. Committees: 210 ÷ 6 = 35.\n\nCheck: Choosing the 4 people who are NOT on the committee gives the same count: (7 × 6 × 5 × 4) ÷ (4 × 3 × 2 × 1) = 840 ÷ 24 = 35.\n\n**Wrong choices**\n- 210: 210 counts different orders of the same 3 people as different committees.\n- 21: 21 is the number of ways to choose 2 people, not 3.\n- 343: 343 (7 × 7 × 7) lets the same person be picked more than once.",
+    "frequency": 3,
+    "tags": [
+      "combinations"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "data-statistics",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A crew of 6 workers needs one driver, one loader, and one checker. Each worker can hold at most one of these jobs. In how many different ways can the three jobs be filled?",
+    "choices": [
+      "20",
+      "120",
+      "216",
+      "18"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Order matters (different jobs): 6 × 5 × 4",
+    "explanation": "1. Driver: 6 choices.\n2. Loader: 5 choices left.\n3. Checker: 4 choices left.\n4. Total: 6 × 5 × 4 = 120 ways.\n\nCheck: There are 20 possible groups of 3 people, and each group can be assigned to the 3 jobs in 3 × 2 × 1 = 6 ways. 20 × 6 = 120.\n\n**Wrong choices**\n- 20: 20 counts groups of 3 people but ignores that the jobs are different.\n- 216: 216 (6 × 6 × 6) lets one worker hold more than one job.\n- 18: 18 multiplies 6 workers by 3 jobs; that does not count the different ways to fill the jobs.",
+    "frequency": 2,
+    "tags": [
+      "permutations"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "quantitative",
+    "chapterId": "data-statistics",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A box plot shows the commute times (in minutes) of workers at a plant. The left whisker starts at 5, the box runs from 12 to 30, the line inside the box is at 21, and the right whisker ends at 40. What is the interquartile range (the spread of the middle half of the data)?",
+    "choices": [
+      "35 minutes",
+      "21 minutes",
+      "18 minutes",
+      "9 minutes"
+    ],
+    "answer": 3,
+    "oneLineConcept": "IQR = upper quartile − lower quartile (box length)",
+    "explanation": "1. The box goes from the lower quartile (12) to the upper quartile (30).\n2. IQR = 30 − 12 = 18 minutes.\n\nCheck: The middle half of the workers have commutes between 12 and 30 minutes, an 18-minute spread.\n\n**Wrong choices**\n- 35 minutes: 35 minutes is the range (40 − 5), which uses the whisker ends.\n- 21 minutes: 21 minutes is the median, the line inside the box.\n- 9 minutes: 9 minutes is the distance from the lower quartile to the median (21 − 12), only half the box.",
+    "frequency": 2,
+    "tags": [
+      "box plot",
+      "interquartile range"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "algebraic",
+    "chapterId": "expressions-polynomials",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Simplify: 4x + 7 − 2x + 3",
+    "choices": [
+      "6x + 10",
+      "12x",
+      "2x + 4",
+      "2x + 10"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Combine x-terms with x-terms, numbers with numbers",
+    "explanation": "1. Group the like terms: (4x − 2x) + (7 + 3).\n2. 4x − 2x = 2x.\n3. 7 + 3 = 10.\n4. The result is 2x + 10.\n\nCheck: Try x = 1. The original is 4 + 7 − 2 + 3 = 12, and 2(1) + 10 = 12.\n\n**Wrong choices**\n- 6x + 10: 6x + 10 adds 4x and 2x, but the 2x is being subtracted.\n- 12x: 12x combines numbers and x-terms together; only like terms can be combined.\n- 2x + 4: 2x + 4 subtracts 3 from 7, but the 3 is being added.",
+    "frequency": 5,
+    "tags": [
+      "like terms",
+      "simplify"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "subjectId": "algebraic",
+    "chapterId": "expressions-polynomials",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What is the value of 3a² − 2b when a = 4 and b = 5?",
+    "choices": [
+      "38",
+      "134",
+      "14",
+      "58"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Substitute, then square before you multiply",
+    "explanation": "1. Substitute: 3(4)² − 2(5).\n2. Exponent first: 4² = 16.\n3. Multiply: 3 × 16 = 48 and 2 × 5 = 10.\n4. Subtract: 48 − 10 = 38.\n\nCheck: 3 × 4 × 4 = 48, and 48 − 10 = 38.\n\n**Wrong choices**\n- 134: 134 squares 3 × 4 = 12 to get 144; only a is squared, not 3a.\n- 14: 14 treats a² as 2 × a (8), so 3 × 8 − 10 = 14.\n- 58: 58 adds 2b instead of subtracting it.",
+    "frequency": 4,
+    "tags": [
+      "evaluate",
+      "exponents"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "algebraic",
+    "chapterId": "expressions-polynomials",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A plumber charges a $65 visit fee plus $40 for each hour of work. Which expression gives the total charge for h hours?",
+    "choices": [
+      "40 + 65h",
+      "65 + 40h",
+      "105h",
+      "65h + 40h"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Fixed fee + (rate × number of hours)",
+    "explanation": "1. The $65 fee is charged once, so it stays as 65.\n2. The $40 is charged for each hour, so it is 40 × h = 40h.\n3. Total: 65 + 40h.\n\nCheck: For 2 hours, 65 + 40(2) = $145, which is $65 + $40 + $40.\n\n**Wrong choices**\n- 40 + 65h: 40 + 65h charges $65 for each hour and $40 once, which is backward.\n- 105h: 105h charges both amounts every hour, but the visit fee is charged only once.\n- 65h + 40h: 65h + 40h also charges the visit fee every hour.",
+    "frequency": 5,
+    "tags": [
+      "word to symbol",
+      "linear expression"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "algebraic",
+    "chapterId": "expressions-polynomials",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which expression is equal to −3(2x − 5)?",
+    "choices": [
+      "−6x − 15",
+      "−6x − 5",
+      "−6x + 15",
+      "6x + 15"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Distribute the sign too: −3 × −5 = +15",
+    "explanation": "1. Multiply −3 by each term inside the parentheses.\n2. −3 × 2x = −6x.\n3. −3 × (−5) = +15.\n4. Result: −6x + 15.\n\nCheck: Try x = 1. −3(2 − 5) = −3(−3) = 9, and −6(1) + 15 = 9.\n\n**Wrong choices**\n- −6x − 15: −6x − 15 forgets that a negative times a negative is positive.\n- −6x − 5: −6x − 5 multiplies only the first term by −3.\n- 6x + 15: 6x + 15 drops the negative sign on the first term.",
+    "frequency": 4,
+    "tags": [
+      "distributive property",
+      "negative numbers"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "algebraic",
+    "chapterId": "expressions-polynomials",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Multiply: (x + 4)(x − 3)",
+    "choices": [
+      "x² − 12",
+      "x² + 7x − 12",
+      "x² − x − 12",
+      "x² + x − 12"
+    ],
+    "answer": 4,
+    "oneLineConcept": "FOIL: First, Outer, Inner, Last, then combine",
+    "explanation": "1. First: x × x = x².\n2. Outer: x × (−3) = −3x.\n3. Inner: 4 × x = 4x.\n4. Last: 4 × (−3) = −12.\n5. Combine: x² − 3x + 4x − 12 = x² + x − 12.\n\nCheck: Try x = 2. (2 + 4)(2 − 3) = 6 × (−1) = −6, and 4 + 2 − 12 = −6.\n\n**Wrong choices**\n- x² − 12: x² − 12 multiplies only the first terms and the last terms; the middle terms are missing.\n- x² + 7x − 12: x² + 7x − 12 uses +3 instead of −3 for the middle term (4 + 3 = 7).\n- x² − x − 12: x² − x − 12 has the middle sign backward: −3x + 4x is +x, not −x.",
+    "frequency": 4,
+    "tags": [
+      "multiply binomials",
+      "FOIL"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "subjectId": "algebraic",
+    "chapterId": "expressions-polynomials",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Simplify: (5x² + 3x − 2) − (2x² − 4x + 6)",
+    "choices": [
+      "3x² + 7x − 8",
+      "3x² − x + 4",
+      "3x² + 7x + 4",
+      "3x² − x − 8"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Subtracting: change the sign of every term in the second",
+    "explanation": "1. Change the sign of each term in the second polynomial: −2x² + 4x − 6.\n2. Add: (5x² − 2x²) + (3x + 4x) + (−2 − 6).\n3. Result: 3x² + 7x − 8.\n\nCheck: Try x = 1. First: 5 + 3 − 2 = 6. Second: 2 − 4 + 6 = 4. 6 − 4 = 2, and 3 + 7 − 8 = 2.\n\n**Wrong choices**\n- 3x² − x + 4: 3x² − x + 4 changes the sign of only the first term of the second polynomial.\n- 3x² + 7x + 4: 3x² + 7x + 4 forgets to change the sign of the +6.\n- 3x² − x − 8: 3x² − x − 8 forgets to change the sign of the −4x.",
+    "frequency": 3,
+    "tags": [
+      "subtract polynomials"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "algebraic",
+    "chapterId": "expressions-polynomials",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Factor: x² − 5x − 14",
+    "choices": [
+      "(x + 7)(x − 2)",
+      "(x − 7)(x + 2)",
+      "(x − 7)(x − 2)",
+      "(x − 14)(x + 1)"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Find two numbers that multiply to c and add to b",
+    "explanation": "1. Find two numbers that multiply to −14 and add to −5.\n2. −7 × 2 = −14 and −7 + 2 = −5.\n3. So x² − 5x − 14 = (x − 7)(x + 2).\n\nCheck: (x − 7)(x + 2) = x² + 2x − 7x − 14 = x² − 5x − 14.\n\n**Wrong choices**\n- (x + 7)(x − 2): (x + 7)(x − 2) gives a middle term of +5x.\n- (x − 7)(x − 2): (x − 7)(x − 2) gives +14 at the end and −9x in the middle.\n- (x − 14)(x + 1): (x − 14)(x + 1) gives a middle term of −13x.",
+    "frequency": 4,
+    "tags": [
+      "factoring",
+      "trinomial"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "algebraic",
+    "chapterId": "expressions-polynomials",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which expression is equal to 6x³ − 9x²?",
+    "choices": [
+      "3x(2x − 3)",
+      "3x²(2x − 9)",
+      "3x²(2x − 3)",
+      "3x³(2 − 3x)"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Factor out the GCF of the numbers and of the variables",
+    "explanation": "1. The GCF of 6 and 9 is 3.\n2. The GCF of x³ and x² is x².\n3. Take out 3x²: 6x³ ÷ 3x² = 2x and 9x² ÷ 3x² = 3.\n4. Result: 3x²(2x − 3).\n\nCheck: Multiply back: 3x² × 2x = 6x³ and 3x² × 3 = 9x².\n\n**Wrong choices**\n- 3x(2x − 3): 3x(2x − 3) multiplies back to 6x² − 9x; the powers of x are too low.\n- 3x²(2x − 9): 3x²(2x − 9) multiplies back to 6x³ − 27x²; the 9 was not divided by 3.\n- 3x³(2 − 3x): 3x³(2 − 3x) multiplies back to 6x³ − 9x⁴; the second term has the wrong power.",
+    "frequency": 3,
+    "tags": [
+      "factoring",
+      "greatest common factor"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "algebraic",
+    "chapterId": "expressions-polynomials",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Simplify (x² − 9) / (x + 3), for x ≠ −3.",
+    "choices": [
+      "x + 3",
+      "x² − 3",
+      "x − 9",
+      "x − 3"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Factor the top, then cancel the common factor",
+    "explanation": "1. Factor the top as a difference of squares: x² − 9 = (x − 3)(x + 3).\n2. Cancel the common factor (x + 3).\n3. Result: x − 3.\n\nCheck: Try x = 5. (25 − 9) ÷ (5 + 3) = 16 ÷ 8 = 2, and 5 − 3 = 2.\n\n**Wrong choices**\n- x + 3: x + 3 is the factor that cancels out, not what is left.\n- x² − 3: x² − 3 divides only the 9 by 3; you cannot cancel parts of a sum.\n- x − 9: x − 9 cancels x² with x, which is not allowed in a sum.",
+    "frequency": 3,
+    "tags": [
+      "rational expressions",
+      "simplify",
+      "difference of squares"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "subjectId": "algebraic",
+    "chapterId": "expressions-polynomials",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A rectangle's length is 3 more than twice its width, w. Which expression gives the area of the rectangle?",
+    "choices": [
+      "2w² + 3w",
+      "2w + 3",
+      "6w + 6",
+      "2w² + 3"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Area = width × length; distribute w over the length",
+    "explanation": "1. Length = 2w + 3.\n2. Area = width × length = w(2w + 3).\n3. Distribute: w × 2w + w × 3 = 2w² + 3w.\n\nCheck: If w = 2, the length is 7 and the area is 14. 2(2)² + 3(2) = 8 + 6 = 14.\n\n**Wrong choices**\n- 2w + 3: 2w + 3 is the length, not the area.\n- 6w + 6: 6w + 6 is the perimeter: 2w + 2(2w + 3).\n- 2w² + 3: 2w² + 3 multiplies only the first term by w; w must multiply the 3 as well.",
+    "frequency": 3,
+    "tags": [
+      "word to symbol",
+      "polynomial",
+      "area"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "algebraic",
+    "chapterId": "expressions-polynomials",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A print shop charges a $120 setup fee plus $2 per flyer. The average cost per flyer for n flyers is (120 + 2n) / n. What is the average cost per flyer for 40 flyers?",
+    "choices": [
+      "$3",
+      "$5",
+      "$200",
+      "$2"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Evaluate the top and bottom, then divide",
+    "explanation": "1. Top: 120 + 2(40) = 120 + 80 = 200.\n2. Bottom: 40.\n3. 200 ÷ 40 = $5 per flyer.\n\nCheck: 40 flyers at $5 each is $200, which equals the $120 fee plus 40 × $2.\n\n**Wrong choices**\n- $3: $3 spreads only the setup fee over the flyers (120 ÷ 40) and forgets the $2 per flyer.\n- $200: $200 is the total cost; it still has to be divided by 40.\n- $2: $2 is only the per-flyer charge and leaves out the setup fee.",
+    "frequency": 3,
+    "tags": [
+      "rational expressions",
+      "evaluate",
+      "average cost"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "algebraic",
+    "chapterId": "expressions-polynomials",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Expand: (2x − 3)²",
+    "choices": [
+      "4x² + 9",
+      "4x² − 6x + 9",
+      "4x² − 12x + 9",
+      "4x² − 9"
+    ],
+    "answer": 3,
+    "oneLineConcept": "(a − b)² = a² − 2ab + b²; do not square each term",
+    "explanation": "1. (2x − 3)² = (2x − 3)(2x − 3).\n2. First: 2x × 2x = 4x².\n3. Outer and inner: 2x × (−3) + (−3) × 2x = −6x − 6x = −12x.\n4. Last: (−3) × (−3) = 9.\n5. Result: 4x² − 12x + 9.\n\nCheck: Try x = 1. (2 − 3)² = 1, and 4 − 12 + 9 = 1.\n\n**Wrong choices**\n- 4x² + 9: 4x² + 9 squares each term and leaves out the middle term.\n- 4x² − 6x + 9: 4x² − 6x + 9 counts the middle product only once; it appears twice.\n- 4x² − 9: 4x² − 9 is (2x − 3)(2x + 3), not (2x − 3)².",
+    "frequency": 3,
+    "tags": [
+      "square of a binomial"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "algebraic",
+    "chapterId": "expressions-polynomials",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Simplify: 3/x + 5/(2x)",
+    "choices": [
+      "8/(3x)",
+      "11/(2x²)",
+      "15/(2x²)",
+      "11/(2x)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Get a common denominator, then add the tops",
+    "explanation": "1. The common denominator is 2x.\n2. Rewrite 3/x as 6/(2x).\n3. Add the tops: 6/(2x) + 5/(2x) = 11/(2x).\n\nCheck: Try x = 1. 3 + 5/2 = 5.5, and 11/2 = 5.5.\n\n**Wrong choices**\n- 8/(3x): 8/(3x) adds the tops and adds the bottoms, which is not how fractions are added.\n- 11/(2x²): 11/(2x²) multiplies the denominators x and 2x; the smallest common denominator is 2x.\n- 15/(2x²): 15/(2x²) multiplies the fractions instead of adding them.",
+    "frequency": 2,
+    "tags": [
+      "rational expressions",
+      "add fractions"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "subjectId": "algebraic",
+    "chapterId": "expressions-polynomials",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Simplify (x² − 4x) / (x² − 16), for x ≠ 4 and x ≠ −4.",
+    "choices": [
+      "x / (x + 4)",
+      "x / (x − 4)",
+      "x / 4",
+      "1 / (x + 4)"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Factor top and bottom completely before canceling",
+    "explanation": "1. Factor the top: x² − 4x = x(x − 4).\n2. Factor the bottom: x² − 16 = (x − 4)(x + 4).\n3. Cancel the common factor (x − 4).\n4. Result: x / (x + 4).\n\nCheck: Try x = 2. (4 − 8) ÷ (4 − 16) = −4 ÷ −12 = 1/3, and 2 ÷ 6 = 1/3.\n\n**Wrong choices**\n- x / (x − 4): x / (x − 4) cancels the (x + 4) factor, but (x + 4) is not on the top.\n- x / 4: x / 4 cancels the x² terms and the x's separately; you can only cancel whole factors.\n- 1 / (x + 4): 1 / (x + 4) also cancels the x on top, but there is no x factor on the bottom.",
+    "frequency": 2,
+    "tags": [
+      "rational expressions",
+      "factoring"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "algebraic",
+    "chapterId": "linear-equations",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Solve for x: 5x − 8 = 27",
+    "choices": [
+      "x = 3.8",
+      "x = 7",
+      "x = 35",
+      "x = 5.4"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Undo subtraction first, then undo multiplication",
+    "explanation": "1. Add 8 to both sides: 5x = 35.\n2. Divide both sides by 5: x = 7.\n\nCheck: 5(7) − 8 = 35 − 8 = 27.\n\n**Wrong choices**\n- x = 3.8: x = 3.8 subtracts 8 instead of adding it: (27 − 8) ÷ 5.\n- x = 35: x = 35 is the value of 5x; it still has to be divided by 5.\n- x = 5.4: x = 5.4 divides 27 by 5 and ignores the −8.",
+    "frequency": 5,
+    "tags": [
+      "two-step equation"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "algebraic",
+    "chapterId": "linear-equations",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Solve for x: x/4 + 3 = 10",
+    "choices": [
+      "x = 52",
+      "x = 7",
+      "x = 28",
+      "x = 1.75"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Subtract 3, then multiply both sides by 4",
+    "explanation": "1. Subtract 3 from both sides: x/4 = 7.\n2. Multiply both sides by 4: x = 28.\n\nCheck: 28 ÷ 4 + 3 = 7 + 3 = 10.\n\n**Wrong choices**\n- x = 52: x = 52 adds 3 instead of subtracting it: (10 + 3) × 4.\n- x = 7: x = 7 is the value of x/4, not x.\n- x = 1.75: x = 1.75 divides 7 by 4 instead of multiplying.",
+    "frequency": 4,
+    "tags": [
+      "two-step equation",
+      "division"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "algebraic",
+    "chapterId": "linear-equations",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Solve for x: 3(x − 4) = 2x + 5",
+    "choices": [
+      "x = 9",
+      "x = −7",
+      "x = 3.4",
+      "x = 17"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Distribute first, then gather x-terms on one side",
+    "explanation": "1. Distribute: 3x − 12 = 2x + 5.\n2. Subtract 2x from both sides: x − 12 = 5.\n3. Add 12 to both sides: x = 17.\n\nCheck: Left side: 3(17 − 4) = 3 × 13 = 39. Right side: 2(17) + 5 = 39.\n\n**Wrong choices**\n- x = 9: x = 9 multiplies only the x by 3 and leaves −4 as is.\n- x = −7: x = −7 moves the −12 to the other side without changing its sign.\n- x = 3.4: x = 3.4 adds 2x to 3x instead of subtracting it.",
+    "frequency": 4,
+    "tags": [
+      "distributive property",
+      "variables on both sides"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "subjectId": "algebraic",
+    "chapterId": "linear-equations",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A taxi charges $3.00 to start plus $2.50 per mile. A ride costs $28.00. How many miles long was the ride?",
+    "choices": [
+      "10 miles",
+      "11.2 miles",
+      "12.4 miles",
+      "25 miles"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Write fixed fee + rate × miles = total, then solve",
+    "explanation": "1. Equation: 3 + 2.50m = 28.\n2. Subtract 3: 2.50m = 25.\n3. Divide by 2.50: m = 10 miles.\n\nCheck: $3.00 + 10 × $2.50 = $3.00 + $25.00 = $28.00.\n\n**Wrong choices**\n- 11.2 miles: 11.2 miles divides $28 by $2.50 and forgets to take out the $3.00 start fee.\n- 12.4 miles: 12.4 miles adds the $3.00 fee instead of subtracting it.\n- 25 miles: 25 is the dollar amount for the miles; it still has to be divided by $2.50.",
+    "frequency": 4,
+    "tags": [
+      "word problem",
+      "linear equation"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "algebraic",
+    "chapterId": "linear-equations",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Maria has $240 saved and adds $35 each week. Which equation can be used to find w, the number of weeks until she has $590?",
+    "choices": [
+      "35 + 240w = 590",
+      "240 + 35w = 590",
+      "240w + 35w = 590",
+      "590 + 35w = 240"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Starting amount + (weekly amount × weeks) = goal",
+    "explanation": "1. She starts with $240.\n2. Each week adds $35, so after w weeks she has added 35w.\n3. Total: 240 + 35w = 590.\n\nCheck: Solving gives 35w = 350, so w = 10 weeks. 240 + 35 × 10 = 590.\n\n**Wrong choices**\n- 35 + 240w = 590: 35 + 240w = 590 adds $240 each week, which switches the two amounts.\n- 240w + 35w = 590: 240w + 35w = 590 multiplies her starting savings by the weeks, but she has the $240 only once.\n- 590 + 35w = 240: 590 + 35w = 240 starts with the goal and ends with the savings, which is backward.",
+    "frequency": 4,
+    "tags": [
+      "write equation",
+      "savings"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "algebraic",
+    "chapterId": "linear-equations",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Solve the system for x:\ny = 2x\nx + y = 21",
+    "choices": [
+      "x = 10.5",
+      "x = 14",
+      "x = 7",
+      "x = 21"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Substitution: put the expression for y into the other equation",
+    "explanation": "1. Replace y with 2x in the second equation: x + 2x = 21.\n2. Combine: 3x = 21.\n3. Divide: x = 7.\n\nCheck: y = 2(7) = 14, and 7 + 14 = 21.\n\n**Wrong choices**\n- x = 10.5: x = 10.5 divides 21 by 2, as if x and y were equal.\n- x = 14: x = 14 is the value of y, not x.\n- x = 21: x = 21 is the sum of x and y, not x alone.",
+    "frequency": 4,
+    "tags": [
+      "system of equations",
+      "substitution"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "algebraic",
+    "chapterId": "linear-equations",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Solve for x: (2/3)x − 5 = 7",
+    "choices": [
+      "x = 8",
+      "x = 3",
+      "x = 12",
+      "x = 18"
+    ],
+    "answer": 4,
+    "oneLineConcept": "To undo × 2/3, multiply by its reciprocal 3/2",
+    "explanation": "1. Add 5 to both sides: (2/3)x = 12.\n2. Multiply both sides by 3/2: x = 12 × 3/2 = 18.\n\nCheck: (2/3)(18) − 5 = 12 − 5 = 7.\n\n**Wrong choices**\n- x = 8: x = 8 multiplies 12 by 2/3 again instead of by 3/2.\n- x = 3: x = 3 subtracts 5 instead of adding it: (7 − 5) × 3/2.\n- x = 12: x = 12 is the value of (2/3)x, not x.",
+    "frequency": 4,
+    "tags": [
+      "fraction coefficient"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "subjectId": "algebraic",
+    "chapterId": "linear-equations",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Solve for x: 0.4x + 2.6 = 0.9x − 1.4",
+    "choices": [
+      "x = 8",
+      "x = 2.4",
+      "x = −8",
+      "x = 4"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Move x-terms to one side, numbers to the other",
+    "explanation": "1. Subtract 0.4x from both sides: 2.6 = 0.5x − 1.4.\n2. Add 1.4 to both sides: 4.0 = 0.5x.\n3. Divide by 0.5: x = 8.\n\nCheck: Left: 0.4(8) + 2.6 = 3.2 + 2.6 = 5.8. Right: 0.9(8) − 1.4 = 7.2 − 1.4 = 5.8.\n\n**Wrong choices**\n- x = 2.4: x = 2.4 subtracts 1.4 instead of adding it: (2.6 − 1.4) ÷ 0.5.\n- x = −8: x = −8 has a sign error; with x = −8 the left side is −0.6 and the right side is −8.6.\n- x = 4: x = 4 is the value of 0.5x; it still has to be divided by 0.5.",
+    "frequency": 3,
+    "tags": [
+      "decimals",
+      "variables on both sides"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "algebraic",
+    "chapterId": "linear-equations",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A theater sold 50 tickets. Adult tickets cost $12 and child tickets cost $7. Total sales were $500. How many adult tickets were sold?",
+    "choices": [
+      "20",
+      "30",
+      "25",
+      "35"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Two unknowns: write a count equation and a money equation",
+    "explanation": "1. Let a = adult tickets. Child tickets = 50 − a.\n2. Money equation: 12a + 7(50 − a) = 500.\n3. Distribute: 12a + 350 − 7a = 500.\n4. Combine: 5a + 350 = 500, so 5a = 150 and a = 30.\n\nCheck: 30 adults × $12 = $360 and 20 children × $7 = $140. $360 + $140 = $500.\n\n**Wrong choices**\n- 20: 20 is the number of child tickets.\n- 25: 25 adult tickets would bring in 25 × $12 + 25 × $7 = $475, not $500.\n- 35: 35 adult tickets would bring in 35 × $12 + 15 × $7 = $525, not $500.",
+    "frequency": 4,
+    "tags": [
+      "system of equations",
+      "word problem",
+      "tickets"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "algebraic",
+    "chapterId": "linear-equations",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "The perimeter of a rectangle is P = 2l + 2w. Which equation is solved for w?",
+    "choices": [
+      "w = P − l",
+      "w = (P − l) / 2",
+      "w = (P − 2l) / 2",
+      "w = (P + 2l) / 2"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Isolate w the same way you would with numbers",
+    "explanation": "1. Start: P = 2l + 2w.\n2. Subtract 2l from both sides: P − 2l = 2w.\n3. Divide both sides by 2: w = (P − 2l) / 2.\n\nCheck: For a 10 by 4 rectangle, P = 28. (28 − 2 × 10) ÷ 2 = 8 ÷ 2 = 4, the width.\n\n**Wrong choices**\n- w = P − l: w = P − l drops both 2s; with P = 28 and l = 10 it gives 18, not 4.\n- w = (P − l) / 2: w = (P − l) / 2 subtracts only one length; it gives 9 instead of 4.\n- w = (P + 2l) / 2: w = (P + 2l) / 2 adds 2l instead of subtracting it.",
+    "frequency": 3,
+    "tags": [
+      "literal equation",
+      "formula"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "algebraic",
+    "chapterId": "linear-equations",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Phone plan A costs $30 a month plus $0.10 per minute. Plan B costs $18 a month plus $0.25 per minute. For how many minutes in a month do the two plans cost the same?",
+    "choices": [
+      "120 minutes",
+      "48 minutes",
+      "30 minutes",
+      "80 minutes"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Set the two cost expressions equal and solve",
+    "explanation": "1. Equation: 30 + 0.10m = 18 + 0.25m.\n2. Subtract 18 and 0.10m from both sides: 12 = 0.15m.\n3. Divide by 0.15: m = 80 minutes.\n\nCheck: Plan A: 30 + 0.10 × 80 = $38. Plan B: 18 + 0.25 × 80 = $38.\n\n**Wrong choices**\n- 120 minutes: 120 minutes divides 12 by 0.10 only; at 120 minutes plan A costs $42 and plan B costs $48.\n- 48 minutes: 48 minutes divides 12 by 0.25 only; at 48 minutes plan A costs $34.80 and plan B costs $30.\n- 30 minutes: At 30 minutes plan A costs $33.00 and plan B costs $25.50, so they are not equal.",
+    "frequency": 3,
+    "tags": [
+      "word problem",
+      "compare plans"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "subjectId": "algebraic",
+    "chapterId": "linear-equations",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "What is the solution (x, y) of this system?\n3x + 2y = 16\n5x − 2y = 8",
+    "choices": [
+      "(3, 3.5)",
+      "(3, 7)",
+      "(4, 2)",
+      "(2, 5)"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Elimination: add the equations so one variable cancels",
+    "explanation": "1. Add the two equations: the +2y and −2y cancel, giving 8x = 24.\n2. Divide: x = 3.\n3. Put x = 3 into the first equation: 9 + 2y = 16, so 2y = 7 and y = 3.5.\n\nCheck: Second equation: 5(3) − 2(3.5) = 15 − 7 = 8.\n\n**Wrong choices**\n- (3, 7): (3, 7) finds 2y = 7 but forgets to divide by 2.\n- (4, 2): (4, 2) works in the first equation, but 5(4) − 2(2) = 16, not 8.\n- (2, 5): (2, 5) works in the first equation, but 5(2) − 2(5) = 0, not 8.",
+    "frequency": 3,
+    "tags": [
+      "system of equations",
+      "elimination"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "algebraic",
+    "chapterId": "linear-equations",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A coffee shop mixes beans that cost $8 per pound with beans that cost $14 per pound. It wants 30 pounds of a blend worth $10 per pound. How many pounds of the $8 beans should it use?",
+    "choices": [
+      "10 pounds",
+      "20 pounds",
+      "15 pounds",
+      "25 pounds"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Pounds equation + dollar-value equation, then solve",
+    "explanation": "1. Let x = pounds of $8 beans. Then 30 − x = pounds of $14 beans.\n2. Total value: 8x + 14(30 − x) = 10 × 30 = 300.\n3. Distribute: 8x + 420 − 14x = 300.\n4. Combine: −6x = −120, so x = 20 pounds.\n\nCheck: 20 × $8 = $160 and 10 × $14 = $140. $160 + $140 = $300, and $300 ÷ 30 = $10 per pound.\n\n**Wrong choices**\n- 10 pounds: 10 pounds is the amount of $14 beans.\n- 15 pounds: Using 15 pounds of each gives (15 × 8 + 15 × 14) ÷ 30 = $11 per pound, not $10.\n- 25 pounds: 25 pounds of $8 beans gives $270 for 30 pounds, which is $9 per pound.",
+    "frequency": 2,
+    "tags": [
+      "system of equations",
+      "mixture"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "algebraic",
+    "chapterId": "linear-equations",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Solve for x: (x + 2)/3 = (x − 4)/2",
+    "choices": [
+      "x = 6",
+      "x = −16",
+      "x = 16",
+      "x = 8"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Cross-multiply, then distribute to every term",
+    "explanation": "1. Cross-multiply: 2(x + 2) = 3(x − 4).\n2. Distribute: 2x + 4 = 3x − 12.\n3. Subtract 2x: 4 = x − 12.\n4. Add 12: x = 16.\n\nCheck: (16 + 2)/3 = 18/3 = 6 and (16 − 4)/2 = 12/2 = 6.\n\n**Wrong choices**\n- x = 6: x = 6 forgets to distribute on both sides (2x + 2 = 3x − 4).\n- x = −16: x = −16 makes a sign error in the last step; (−16 + 2)/3 is not equal to (−16 − 4)/2.\n- x = 8: x = 8 distributes on the left but not on the right (2x + 4 = 3x − 4).",
+    "frequency": 2,
+    "tags": [
+      "proportion",
+      "fractions on both sides"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "algebraic",
+    "chapterId": "linear-equations",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Two trucks leave the same warehouse at the same time and drive in opposite directions. One drives at 50 miles per hour and the other at 70 miles per hour. After how many hours will they be 480 miles apart?",
+    "choices": [
+      "24 hours",
+      "9.6 hours",
+      "2 hours",
+      "4 hours"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Opposite directions: the distances add (d = rt)",
+    "explanation": "1. Each hour the distance between them grows by 50 + 70 = 120 miles.\n2. Equation: 120t = 480.\n3. t = 480 ÷ 120 = 4 hours.\n\nCheck: In 4 hours, one truck goes 200 miles and the other 280 miles. 200 + 280 = 480.\n\n**Wrong choices**\n- 24 hours: 24 hours uses the difference of the speeds (20); that would be for trucks going the same direction.\n- 9.6 hours: 9.6 hours uses only the slower truck's speed.\n- 2 hours: After 2 hours they are only 240 miles apart.",
+    "frequency": 3,
+    "tags": [
+      "distance = rate × time",
+      "word problem"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "subjectId": "algebraic",
+    "chapterId": "inequalities",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Solve: 2x + 5 > 17",
+    "choices": [
+      "x > 6",
+      "x < 6",
+      "x > 11",
+      "x > 12"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Solve an inequality like an equation (same steps)",
+    "explanation": "1. Subtract 5 from both sides: 2x > 12.\n2. Divide both sides by 2: x > 6.\n\nCheck: Try x = 7: 2(7) + 5 = 19, which is greater than 17. Try x = 6: 17 is not greater than 17, so 6 itself is not included.\n\n**Wrong choices**\n- x < 6: x < 6 flips the sign, but you only flip when multiplying or dividing by a negative number.\n- x > 11: x > 11 adds 5 instead of subtracting it: (17 + 5) ÷ 2.\n- x > 12: x > 12 forgets to divide by 2.",
+    "frequency": 4,
+    "tags": [
+      "solve inequality"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "algebraic",
+    "chapterId": "inequalities",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Solve: −3x ≤ 12",
+    "choices": [
+      "x ≤ −4",
+      "x ≥ −4",
+      "x ≥ 4",
+      "x ≤ 4"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Dividing by a negative number flips the inequality sign",
+    "explanation": "1. Divide both sides by −3.\n2. Because you divide by a negative number, flip the sign: ≤ becomes ≥.\n3. 12 ÷ (−3) = −4, so x ≥ −4.\n\nCheck: Try x = 0: −3(0) = 0, and 0 ≤ 12 is true. 0 is greater than −4, so it fits x ≥ −4.\n\n**Wrong choices**\n- x ≤ −4: x ≤ −4 forgets to flip the sign; x = −5 gives 15, which is not ≤ 12.\n- x ≥ 4: x ≥ 4 drops the negative sign from the answer; x = 0 works but is not ≥ 4.\n- x ≤ 4: x ≤ 4 has the wrong number and the wrong direction.",
+    "frequency": 5,
+    "tags": [
+      "dividing by a negative",
+      "flip sign"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "algebraic",
+    "chapterId": "inequalities",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A number line shows a closed (filled-in) circle at 3 and shading that goes to the left. Which inequality does it show?",
+    "choices": [
+      "x < 3",
+      "x ≥ 3",
+      "x ≤ 3",
+      "x > 3"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Closed circle = included (≤ or ≥); left = less than",
+    "explanation": "1. A closed circle means 3 is included, so the sign has an \"or equal to\" part.\n2. Shading to the left means numbers less than 3.\n3. Together: x ≤ 3.\n\nCheck: 3 and every number below 3 (such as 0 or −2) are shaded, and x ≤ 3 includes all of them.\n\n**Wrong choices**\n- x < 3: x < 3 would use an open circle, because 3 is not included.\n- x ≥ 3: x ≥ 3 would shade to the right.\n- x > 3: x > 3 would use an open circle and shade to the right.",
+    "frequency": 3,
+    "tags": [
+      "number line",
+      "graph of inequality"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "algebraic",
+    "chapterId": "inequalities",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A freight elevator can carry at most 2,000 pounds. A worker who weighs 180 pounds rides with b boxes that weigh 40 pounds each. Which inequality shows the safe number of boxes?",
+    "choices": [
+      "180 + 40b ≥ 2,000",
+      "180 + 40b < 2,000",
+      "40 + 180b ≤ 2,000",
+      "180 + 40b ≤ 2,000"
+    ],
+    "answer": 4,
+    "oneLineConcept": "\"At most\" means less than or equal to (≤)",
+    "explanation": "1. Total weight = worker + boxes = 180 + 40b.\n2. \"At most 2,000\" means the total can be 2,000 or less: ≤ 2,000.\n3. Inequality: 180 + 40b ≤ 2,000.\n\nCheck: With 45 boxes the total is exactly 180 + 1,800 = 1,980 pounds, which is allowed.\n\n**Wrong choices**\n- 180 + 40b ≥ 2,000: ≥ means \"at least,\" which would require the load to be 2,000 pounds or more.\n- 180 + 40b < 2,000: < leaves out exactly 2,000 pounds, but \"at most\" allows 2,000.\n- 40 + 180b ≤ 2,000: 40 + 180b switches the numbers, as if each box weighed 180 pounds.",
+    "frequency": 4,
+    "tags": [
+      "write inequality",
+      "at most"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "subjectId": "algebraic",
+    "chapterId": "inequalities",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Solve: 5x − 7 ≥ 3x + 9",
+    "choices": [
+      "x ≥ 8",
+      "x ≥ 1",
+      "x ≤ 8",
+      "x ≥ 16"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Gather x-terms on one side; flip only for negatives",
+    "explanation": "1. Subtract 3x from both sides: 2x − 7 ≥ 9.\n2. Add 7 to both sides: 2x ≥ 16.\n3. Divide by 2 (a positive number, so no flip): x ≥ 8.\n\nCheck: Try x = 8: 5(8) − 7 = 33 and 3(8) + 9 = 33, and 33 ≥ 33 is true.\n\n**Wrong choices**\n- x ≥ 1: x ≥ 1 subtracts 7 from 9 instead of adding 7 to 9.\n- x ≤ 8: x ≤ 8 flips the sign, but 2 is positive, so no flip is needed.\n- x ≥ 16: x ≥ 16 forgets to divide by 2.",
+    "frequency": 3,
+    "tags": [
+      "variables on both sides"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "algebraic",
+    "chapterId": "inequalities",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A group has $150 to rent a party room. The room costs $45 plus $7 per guest. What is the greatest number of guests the group can invite?",
+    "choices": [
+      "21",
+      "15",
+      "27",
+      "16"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Write fee + rate × guests ≤ budget, then solve",
+    "explanation": "1. Inequality: 45 + 7g ≤ 150.\n2. Subtract 45: 7g ≤ 105.\n3. Divide by 7: g ≤ 15.\n4. The greatest number of guests is 15.\n\nCheck: 45 + 7 × 15 = 45 + 105 = $150, exactly the budget.\n\n**Wrong choices**\n- 21: 21 divides $150 by $7 and forgets the $45 room fee.\n- 27: 27 adds the $45 fee to the budget instead of subtracting it.\n- 16: 16 guests cost 45 + 112 = $157, which is over the $150 budget.",
+    "frequency": 4,
+    "tags": [
+      "word problem",
+      "budget"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "algebraic",
+    "chapterId": "inequalities",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which value of x makes 4 − 2x < 10 true?",
+    "choices": [
+      "x = −3",
+      "x = −4",
+      "x = −2",
+      "x = −5"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Solve, or plug each value in and test it",
+    "explanation": "1. Subtract 4: −2x < 6.\n2. Divide by −2 and flip the sign: x > −3.\n3. Of the values given, only −2 is greater than −3.\n\nCheck: 4 − 2(−2) = 4 + 4 = 8, and 8 < 10 is true.\n\n**Wrong choices**\n- x = −3: x = −3 gives 4 + 6 = 10, and 10 < 10 is false.\n- x = −4: x = −4 gives 4 + 8 = 12, which is not less than 10.\n- x = −5: x = −5 gives 4 + 10 = 14, which is not less than 10.",
+    "frequency": 3,
+    "tags": [
+      "solution of inequality",
+      "test values"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "algebraic",
+    "chapterId": "inequalities",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Solve: −x/3 + 4 > 6",
+    "choices": [
+      "x > −6",
+      "x < 6",
+      "x > 6",
+      "x < −6"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Multiplying by a negative number flips the sign",
+    "explanation": "1. Subtract 4: −x/3 > 2.\n2. Multiply both sides by −3 and flip the sign: x < −6.\n\nCheck: Try x = −9: −(−9)/3 + 4 = 3 + 4 = 7, and 7 > 6 is true. −9 is less than −6, so it fits.\n\n**Wrong choices**\n- x > −6: x > −6 forgets to flip the sign; x = 0 fits it but gives 4, which is not > 6.\n- x < 6: x < 6 loses the negative sign; x = 0 fits it but does not work.\n- x > 6: x > 6 has both the wrong sign on 6 and the wrong direction; x = 9 gives 1, not more than 6.",
+    "frequency": 2,
+    "tags": [
+      "negative coefficient",
+      "fractions"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "subjectId": "algebraic",
+    "chapterId": "inequalities",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A sales rep earns $500 a month plus 8% commission on sales. She wants to earn at least $1,300 this month. What is the least amount of sales she needs?",
+    "choices": [
+      "$10,000",
+      "$16,250",
+      "$6,250",
+      "$1,000"
+    ],
+    "answer": 1,
+    "oneLineConcept": "\"At least\" means ≥; solve base + rate × sales ≥ goal",
+    "explanation": "1. Inequality: 500 + 0.08s ≥ 1,300.\n2. Subtract 500: 0.08s ≥ 800.\n3. Divide by 0.08: s ≥ 10,000.\n4. She needs at least $10,000 in sales.\n\nCheck: 8% of $10,000 is $800, and $500 + $800 = $1,300.\n\n**Wrong choices**\n- $16,250: $16,250 divides the full $1,300 by 0.08 and forgets the $500 base pay.\n- $6,250: $6,250 divides only the $500 base pay by 0.08.\n- $1,000: $1,000 divides 800 by 0.8, which is 80%, not 8%.",
+    "frequency": 3,
+    "tags": [
+      "word problem",
+      "commission",
+      "at least"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "algebraic",
+    "chapterId": "inequalities",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A trainee scored 78, 85, and 90 on three tests. She needs an average of at least 85 on all four tests. What is the lowest score she can get on the fourth test?",
+    "choices": [
+      "85",
+      "87",
+      "90",
+      "82"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Needed total = average × count; subtract what you have",
+    "explanation": "1. Total needed: 85 × 4 = 340.\n2. Points so far: 78 + 85 + 90 = 253.\n3. Fourth test: 340 − 253 = 87, so she needs at least 87.\n\nCheck: (78 + 85 + 90 + 87) ÷ 4 = 340 ÷ 4 = 85.\n\n**Wrong choices**\n- 85: 85 gives a total of 338 and an average of 84.5, which is below 85.\n- 90: 90 is enough, but it is not the lowest score that works.\n- 82: 82 gives a total of 335 and an average of 83.75.",
+    "frequency": 3,
+    "tags": [
+      "average",
+      "at least"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "algebraic",
+    "chapterId": "quadratics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Solve: x² = 49",
+    "choices": [
+      "x = 7 only",
+      "x = 24.5 or x = −24.5",
+      "x = 7 or x = −7",
+      "x = 2,401"
+    ],
+    "answer": 3,
+    "oneLineConcept": "x² = k has two answers: positive and negative √k",
+    "explanation": "1. Take the square root of both sides.\n2. Both 7 × 7 and (−7) × (−7) equal 49.\n3. So x = 7 or x = −7.\n\nCheck: 7² = 49 and (−7)² = 49.\n\n**Wrong choices**\n- x = 7 only: x = 7 only misses the negative answer; (−7)² is also 49.\n- x = 24.5 or x = −24.5: x = 24.5 or x = −24.5 divides 49 by 2 instead of taking the square root.\n- x = 2,401: x = 2,401 squares 49 instead of taking its square root.",
+    "frequency": 4,
+    "tags": [
+      "square root method"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "algebraic",
+    "chapterId": "quadratics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Solve: (x − 3)(x + 5) = 0",
+    "choices": [
+      "x = −3 or x = 5",
+      "x = 3 or x = 5",
+      "x = −3 or x = −5",
+      "x = 3 or x = −5"
+    ],
+    "answer": 4,
+    "oneLineConcept": "If a product is 0, set each factor equal to 0",
+    "explanation": "1. Set each factor equal to 0.\n2. x − 3 = 0 gives x = 3.\n3. x + 5 = 0 gives x = −5.\n\nCheck: (3 − 3)(3 + 5) = 0 × 8 = 0, and (−5 − 3)(−5 + 5) = −8 × 0 = 0.\n\n**Wrong choices**\n- x = −3 or x = 5: x = −3 or x = 5 takes the numbers with the signs shown in the factors; the signs must be reversed.\n- x = 3 or x = 5: x = 3 or x = 5 gets the sign of the second answer wrong; 5 + 5 is not 0.\n- x = −3 or x = −5: x = −3 or x = −5 gets the sign of the first answer wrong; −3 − 3 is not 0.",
+    "frequency": 4,
+    "tags": [
+      "zero product property"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "subjectId": "algebraic",
+    "chapterId": "quadratics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Solve: x² − 7x + 12 = 0",
+    "choices": [
+      "x = 3 or x = 4",
+      "x = −3 or x = −4",
+      "x = 2 or x = 6",
+      "x = 1 or x = 12"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Factor, then set each factor equal to zero",
+    "explanation": "1. Find two numbers that multiply to 12 and add to −7: −3 and −4.\n2. Factor: (x − 3)(x − 4) = 0.\n3. x = 3 or x = 4.\n\nCheck: 3² − 7(3) + 12 = 9 − 21 + 12 = 0, and 4² − 7(4) + 12 = 16 − 28 + 12 = 0.\n\n**Wrong choices**\n- x = −3 or x = −4: x = −3 or x = −4 uses the numbers from the factors without reversing the signs; (−3)² − 7(−3) + 12 = 42.\n- x = 2 or x = 6: x = 2 or x = 6 multiply to 12 but add to 8, not 7; 2² − 14 + 12 = 2.\n- x = 1 or x = 12: x = 1 or x = 12 multiply to 12 but add to 13; 1 − 7 + 12 = 6.",
+    "frequency": 4,
+    "tags": [
+      "factoring",
+      "solve quadratic"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "algebraic",
+    "chapterId": "quadratics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What is the value of y = x² − 4x + 1 when x = −2?",
+    "choices": [
+      "−3",
+      "13",
+      "5",
+      "−11"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Use parentheses: (−2)² = +4 and −4(−2) = +8",
+    "explanation": "1. Substitute: y = (−2)² − 4(−2) + 1.\n2. (−2)² = 4.\n3. −4 × (−2) = +8.\n4. y = 4 + 8 + 1 = 13.\n\nCheck: Put x = −2 into the calculator with parentheses: (−2)² − 4 × (−2) + 1 = 13.\n\n**Wrong choices**\n- −3: −3 treats −4(−2) as −8; a negative times a negative is positive.\n- 5: 5 treats (−2)² as −4; a negative number squared is positive.\n- −11: −11 makes both sign mistakes: −4 − 8 + 1.",
+    "frequency": 3,
+    "tags": [
+      "evaluate quadratic",
+      "negative numbers"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "algebraic",
+    "chapterId": "quadratics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Solve: 3x² = 75",
+    "choices": [
+      "x = 25 or x = −25",
+      "x = 5 only",
+      "x = 5 or x = −5",
+      "x = 8.66 or x = −8.66"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Get x² alone first, then take the square root",
+    "explanation": "1. Divide both sides by 3: x² = 25.\n2. Take the square root: x = 5 or x = −5.\n\nCheck: 3 × 5² = 3 × 25 = 75, and 3 × (−5)² = 75.\n\n**Wrong choices**\n- x = 25 or x = −25: x = 25 or x = −25 stops at x² = 25 and forgets the square root.\n- x = 5 only: x = 5 only misses the negative answer.\n- x = 8.66 or x = −8.66: x = 8.66 or x = −8.66 takes the square root of 75 before dividing by 3.",
+    "frequency": 3,
+    "tags": [
+      "square root method"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "algebraic",
+    "chapterId": "quadratics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Use the quadratic formula to solve 2x² + 3x − 2 = 0. (x = [−b ± √(b² − 4ac)] / 2a)",
+    "choices": [
+      "x = −1/2 or x = 2",
+      "x = 1 or x = −4",
+      "x = 1/4 or x = −1",
+      "x = 1/2 or x = −2"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Quadratic formula: a, b, c from ax² + bx + c = 0",
+    "explanation": "1. a = 2, b = 3, c = −2.\n2. b² − 4ac = 9 − 4(2)(−2) = 9 + 16 = 25. √25 = 5.\n3. x = (−3 + 5) / 4 = 2/4 = 1/2.\n4. x = (−3 − 5) / 4 = −8/4 = −2.\n\nCheck: Factor: 2x² + 3x − 2 = (2x − 1)(x + 2), which is 0 when x = 1/2 or x = −2.\n\n**Wrong choices**\n- x = −1/2 or x = 2: x = −1/2 or x = 2 uses +b instead of −b at the start of the formula.\n- x = 1 or x = −4: x = 1 or x = −4 divides by 2 instead of 2a = 4.\n- x = 1/4 or x = −1: x = 1/4 or x = −1 divides by 8 (4a) instead of 2a = 4.",
+    "frequency": 3,
+    "tags": [
+      "quadratic formula"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "subjectId": "algebraic",
+    "chapterId": "quadratics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A rectangular garden is 4 feet longer than it is wide. Its area is 96 square feet. What is the width of the garden?",
+    "choices": [
+      "8 feet",
+      "12 feet",
+      "24 feet",
+      "10 feet"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Write w(w + 4) = area, set to 0, and factor",
+    "explanation": "1. Let w = width. Length = w + 4.\n2. Area: w(w + 4) = 96, so w² + 4w − 96 = 0.\n3. Factor: (w + 12)(w − 8) = 0.\n4. w = 8 or w = −12. A width cannot be negative, so w = 8 feet.\n\nCheck: 8 × 12 = 96 square feet, and 12 is 4 more than 8.\n\n**Wrong choices**\n- 12 feet: 12 feet is the length, not the width.\n- 24 feet: 24 feet divides the area by 4; the 4 is the difference between length and width, not a side.\n- 10 feet: A 10-foot width gives a 14-foot length and an area of 140 square feet.",
+    "frequency": 3,
+    "tags": [
+      "word problem",
+      "area",
+      "factoring"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "algebraic",
+    "chapterId": "quadratics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Solve: x² + 6x = 16",
+    "choices": [
+      "x = −2 or x = 8",
+      "x = 2 or x = −8",
+      "x = 0 or x = −6",
+      "x = 16 or x = 10"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Move everything to one side so it equals 0 before factoring",
+    "explanation": "1. Subtract 16 from both sides: x² + 6x − 16 = 0.\n2. Find two numbers that multiply to −16 and add to 6: 8 and −2.\n3. Factor: (x + 8)(x − 2) = 0.\n4. x = −8 or x = 2.\n\nCheck: 2² + 6(2) = 4 + 12 = 16, and (−8)² + 6(−8) = 64 − 48 = 16.\n\n**Wrong choices**\n- x = −2 or x = 8: x = −2 or x = 8 reverses both signs; (−2)² + 6(−2) = −8, not 16.\n- x = 0 or x = −6: x = 0 or x = −6 solves x² + 6x = 0, forgetting the 16.\n- x = 16 or x = 10: x = 16 or x = 10 sets x = 16 and x + 6 = 16, which only works when the right side is 0.",
+    "frequency": 3,
+    "tags": [
+      "set equal to zero",
+      "factoring"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "algebraic",
+    "chapterId": "quadratics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "The product of two consecutive positive whole numbers is 132. If n is the smaller number, which equation can be used to find n?",
+    "choices": [
+      "n + (n + 1) = 132",
+      "n² = 132",
+      "n(n + 1) = 132",
+      "n(n + 2) = 132"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Consecutive numbers: n and n + 1; product means multiply",
+    "explanation": "1. Consecutive whole numbers differ by 1, so the numbers are n and n + 1.\n2. \"Product\" means multiply: n(n + 1).\n3. Equation: n(n + 1) = 132.\n\nCheck: n = 11 works, because 11 × 12 = 132.\n\n**Wrong choices**\n- n + (n + 1) = 132: n + (n + 1) = 132 adds the numbers; the problem says product.\n- n² = 132: n² = 132 multiplies the smaller number by itself, not by the next number.\n- n(n + 2) = 132: n(n + 2) = 132 is for consecutive even or odd numbers, which differ by 2.",
+    "frequency": 2,
+    "tags": [
+      "write quadratic",
+      "consecutive integers"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "algebraic",
+    "chapterId": "quadratics",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A ball is kicked straight up from the ground. Its height in feet after t seconds is h = −16t² + 64t. After how many seconds does it land back on the ground?",
+    "choices": [
+      "2 seconds",
+      "64 seconds",
+      "16 seconds",
+      "4 seconds"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Ground level means h = 0; factor out the common term",
+    "explanation": "1. On the ground, h = 0: −16t² + 64t = 0.\n2. Factor: −16t(t − 4) = 0.\n3. t = 0 (when it is kicked) or t = 4.\n4. It lands after 4 seconds.\n\nCheck: h = −16(4)² + 64(4) = −256 + 256 = 0.\n\n**Wrong choices**\n- 2 seconds: At 2 seconds the ball is at its highest point (64 feet), not on the ground.\n- 64 seconds: 64 is the greatest height in feet, not a time.\n- 16 seconds: At 16 seconds the formula gives a large negative height, so the ball landed well before that.",
+    "frequency": 3,
+    "tags": [
+      "projectile",
+      "factoring",
+      "context"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "subjectId": "algebraic",
+    "chapterId": "quadratics",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Solve x² − 4x − 1 = 0 using the quadratic formula. (x = [−b ± √(b² − 4ac)] / 2a)",
+    "choices": [
+      "x = 2 ± √5",
+      "x = −2 ± √5",
+      "x = 2 ± √3",
+      "x = 4 ± √5"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Simplify √(b² − 4ac), then divide every term by 2a",
+    "explanation": "1. a = 1, b = −4, c = −1.\n2. b² − 4ac = 16 − 4(1)(−1) = 16 + 4 = 20.\n3. √20 = √(4 × 5) = 2√5.\n4. x = (4 ± 2√5) / 2 = 2 ± √5.\n\nCheck: (2 + √5)² − 4(2 + √5) − 1 = (9 + 4√5) − 8 − 4√5 − 1 = 0.\n\n**Wrong choices**\n- x = −2 ± √5: x = −2 ± √5 uses b instead of −b; since b = −4, −b is +4.\n- x = 2 ± √3: x = 2 ± √3 subtracts 4 instead of adding it under the root (16 − 4 = 12); −4ac is +4 here.\n- x = 4 ± √5: x = 4 ± √5 divides only the square root part by 2; both parts must be divided.",
+    "frequency": 2,
+    "tags": [
+      "quadratic formula",
+      "irrational roots"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "algebraic",
+    "chapterId": "quadratics",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A square photo is placed in a frame that adds a 2-inch border on every side. The framed photo is a square with an area of 100 square inches. What is the side length of the photo itself?",
+    "choices": [
+      "8 inches",
+      "6 inches",
+      "10 inches",
+      "9.8 inches"
+    ],
+    "answer": 2,
+    "oneLineConcept": "A border on both sides adds twice its width to each side",
+    "explanation": "1. Let s = photo side. The border adds 2 inches on each side, so the framed side is s + 4.\n2. (s + 4)² = 100.\n3. s + 4 = 10 (a length must be positive).\n4. s = 6 inches.\n\nCheck: A 6-inch photo plus 2 inches on each side is 10 inches, and 10² = 100.\n\n**Wrong choices**\n- 8 inches: 8 inches adds the 2-inch border to only one side.\n- 10 inches: 10 inches is the side of the framed square, not the photo.\n- 9.8 inches: 9.8 inches takes √96, subtracting the border from the area instead of from the side.",
+    "frequency": 2,
+    "tags": [
+      "write quadratic",
+      "square",
+      "context"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "algebraic",
+    "chapterId": "graphs-functions",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "The grid shows four labeled points, A, B, C, and D. Which point is located at (−3, 2)?",
+    "choices": [
+      "Point A",
+      "Point C",
+      "Point B",
+      "Point D"
+    ],
+    "answer": 3,
+    "oneLineConcept": "(x, y): move left/right for x first, then up/down for y",
+    "explanation": "1. In (−3, 2), the first number is x and the second is y.\n2. x = −3: move 3 units to the left of the origin.\n3. y = 2: move 2 units up.\n4. That spot is point B.\n\nCheck: Point B is in the upper-left section, where x is negative and y is positive, which matches (−3, 2).\n\n**Wrong choices**\n- Point A: Point A is at (2, −3); it switches the x and y values.\n- Point C: Point C is at (3, 2); its x-value is positive, not −3.\n- Point D: Point D is at (−3, −2); its y-value is negative, not 2.",
+    "frequency": 4,
+    "tags": [
+      "coordinate plane",
+      "plotting points"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    },
+    "image": "ged-points-quadrants.svg",
+    "imageAlt": "Coordinate grid from −5 to 5 on both axes with four labeled dots: A is 2 right and 3 down from the origin, B is 3 left and 2 up, C is 3 right and 2 up, and D is 3 left and 2 down.",
+    "imageSource": {
+      "kind": "self"
+    }
+  },
+  {
+    "subjectId": "algebraic",
+    "chapterId": "graphs-functions",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What is the slope of the line that passes through the points (1, 3) and (4, 12)?",
+    "choices": [
+      "1/3",
+      "−3",
+      "5",
+      "3"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Slope = (y₂ − y₁) / (x₂ − x₁)",
+    "explanation": "1. Slope = (y₂ − y₁) / (x₂ − x₁).\n2. Change in y: 12 − 3 = 9.\n3. Change in x: 4 − 1 = 3.\n4. Slope = 9 / 3 = 3.\n\nCheck: Starting at (1, 3), go right 1 and up 3 three times: (2, 6), (3, 9), (4, 12).\n\n**Wrong choices**\n- 1/3: 1/3 puts the change in x over the change in y; slope is rise over run.\n- −3: −3 has the wrong sign; y goes up as x goes up, so the slope is positive.\n- 5: 5 adds the y-values (12 + 3) instead of subtracting them.",
+    "frequency": 5,
+    "tags": [
+      "slope",
+      "two points"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "subjectId": "algebraic",
+    "chapterId": "graphs-functions",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What are the slope and the y-intercept of the line y = −2x + 5?",
+    "choices": [
+      "Slope −2, y-intercept 5",
+      "Slope 5, y-intercept −2",
+      "Slope 2, y-intercept 5",
+      "Slope −2, y-intercept −5"
+    ],
+    "answer": 1,
+    "oneLineConcept": "In y = mx + b, m is the slope and b is the y-intercept",
+    "explanation": "1. Compare with y = mx + b.\n2. The number multiplied by x is m = −2, the slope.\n3. The number added on is b = 5, the y-intercept.\n\nCheck: When x = 0, y = −2(0) + 5 = 5, so the line crosses the y-axis at (0, 5).\n\n**Wrong choices**\n- Slope 5, y-intercept −2: Slope 5, y-intercept −2 switches the two numbers.\n- Slope 2, y-intercept 5: Slope 2 drops the negative sign; the line goes down from left to right.\n- Slope −2, y-intercept −5: The y-intercept is +5, not −5; at x = 0, y = 5.",
+    "frequency": 5,
+    "tags": [
+      "slope-intercept form"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "algebraic",
+    "chapterId": "graphs-functions",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "If f(x) = 3x − 7, what is f(5)?",
+    "choices": [
+      "22",
+      "8",
+      "1",
+      "15"
+    ],
+    "answer": 2,
+    "oneLineConcept": "f(5) means replace x with 5",
+    "explanation": "1. Replace x with 5: f(5) = 3(5) − 7.\n2. 3 × 5 = 15.\n3. 15 − 7 = 8.\n\nCheck: 8 + 7 = 15, and 15 ÷ 3 = 5, so working backward gets back to x = 5.\n\n**Wrong choices**\n- 22: 22 adds 7 instead of subtracting it.\n- 1: 1 adds 3 and 5 instead of multiplying them (3 + 5 − 7).\n- 15: 15 forgets to subtract 7.",
+    "frequency": 4,
+    "tags": [
+      "function notation",
+      "evaluate"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "algebraic",
+    "chapterId": "graphs-functions",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "In which quadrant of the coordinate plane is the point (−4, −6)?",
+    "choices": [
+      "Quadrant IV",
+      "Quadrant II",
+      "Quadrant III",
+      "Quadrant I"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Quadrants go I, II, III, IV counterclockwise from upper right",
+    "explanation": "1. x = −4 is negative, so the point is left of the y-axis.\n2. y = −6 is negative, so the point is below the x-axis.\n3. Left and below is the lower-left section, Quadrant III.\n\nCheck: Quadrant I has (+, +), II has (−, +), III has (−, −), IV has (+, −).\n\n**Wrong choices**\n- Quadrant IV: Quadrant IV has positive x and negative y, the lower right.\n- Quadrant II: Quadrant II has negative x and positive y, the upper left.\n- Quadrant I: Quadrant I has positive x and positive y, the upper right.",
+    "frequency": 3,
+    "tags": [
+      "quadrants",
+      "coordinate plane"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "algebraic",
+    "chapterId": "graphs-functions",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which set of ordered pairs represents a function (each input x has exactly one output y)?",
+    "choices": [
+      "{(1, 4), (1, 5), (2, 6)}",
+      "{(2, 3), (3, 4), (2, 5)}",
+      "{(0, 1), (4, 2), (0, 3)}",
+      "{(1, 4), (2, 4), (3, 5)}"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Function: no x-value is paired with two different y-values",
+    "explanation": "1. Look for any x-value that appears twice with different y-values.\n2. In {(1, 4), (2, 4), (3, 5)}, the x-values 1, 2, and 3 each appear once.\n3. Two inputs sharing the same output (4) is allowed.\n4. So this set is a function.\n\nCheck: Each x-value in this set leads to only one y-value.\n\n**Wrong choices**\n- {(1, 4), (1, 5), (2, 6)}: {(1, 4), (1, 5), (2, 6)} pairs x = 1 with both 4 and 5.\n- {(2, 3), (3, 4), (2, 5)}: {(2, 3), (3, 4), (2, 5)} pairs x = 2 with both 3 and 5.\n- {(0, 1), (4, 2), (0, 3)}: {(0, 1), (4, 2), (0, 3)} pairs x = 0 with both 1 and 3.",
+    "frequency": 3,
+    "tags": [
+      "function",
+      "ordered pairs"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "subjectId": "algebraic",
+    "chapterId": "graphs-functions",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "The graph shows a line through the marked points (0, −1) and (3, 5). What is the slope of the line?",
+    "choices": [
+      "2",
+      "1/2",
+      "−2",
+      "6"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Slope = rise ÷ run between two points on the line",
+    "explanation": "1. Rise (change in y): 5 − (−1) = 6.\n2. Run (change in x): 3 − 0 = 3.\n3. Slope = 6 ÷ 3 = 2.\n\nCheck: From (0, −1), go right 1 and up 2 three times: (1, 1), (2, 3), (3, 5).\n\n**Wrong choices**\n- 1/2: 1/2 puts the run over the rise; slope is rise over run.\n- −2: −2 has the wrong sign; the line goes up from left to right.\n- 6: 6 is only the rise; it still has to be divided by the run, 3.",
+    "frequency": 4,
+    "tags": [
+      "slope",
+      "graph"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    },
+    "image": "ged-line-two-points.svg",
+    "imageAlt": "Coordinate grid from −6 to 6 on both axes. A straight line rises from lower left to upper right and passes through two marked dots labeled (0, −1) and (3, 5).",
+    "imageSource": {
+      "kind": "self"
+    }
+  },
+  {
+    "subjectId": "algebraic",
+    "chapterId": "graphs-functions",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "The graph shows the total cost of hiring a repair worker for different numbers of hours. The marked points are (0, 40), (2, 90), and (4, 140). How much does each additional hour cost?",
+    "choices": [
+      "$40",
+      "$25",
+      "$45",
+      "$35"
+    ],
+    "answer": 2,
+    "oneLineConcept": "In a cost graph, the slope is the cost per hour",
+    "explanation": "1. The cost per hour is the slope of the line.\n2. From (0, 40) to (2, 90): rise = 90 − 40 = 50, run = 2 − 0 = 2.\n3. Slope = 50 ÷ 2 = $25 per hour.\n\nCheck: From (2, 90) to (4, 140): 50 ÷ 2 = 25. The rate is the same, $25 per hour.\n\n**Wrong choices**\n- $40: $40 is the starting fee (the y-intercept), charged before any hours of work.\n- $45: $45 divides $90 by 2 hours and includes the starting fee in the hourly rate.\n- $35: $35 divides $140 by 4 hours and includes the starting fee in the hourly rate.",
+    "frequency": 4,
+    "tags": [
+      "slope as rate",
+      "graph",
+      "y-intercept"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    },
+    "image": "ged-cost-hours.svg",
+    "imageAlt": "Line graph with hours (0 to 6) on the horizontal axis and total cost in dollars (0 to 200) on the vertical axis. A straight line starts on the cost axis and rises to the right through three marked dots labeled (0, 40), (2, 90), and (4, 140).",
+    "imageSource": {
+      "kind": "self"
+    }
+  },
+  {
+    "subjectId": "algebraic",
+    "chapterId": "graphs-functions",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which equation describes the line with slope 3 that passes through the point (2, 1)?",
+    "choices": [
+      "y = 3x + 5",
+      "y = 3x − 7",
+      "y = 3x − 5",
+      "y = 3x + 1"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Point-slope: y − y₁ = m(x − x₁), then solve for y",
+    "explanation": "1. Point-slope form: y − 1 = 3(x − 2).\n2. Distribute: y − 1 = 3x − 6.\n3. Add 1 to both sides: y = 3x − 5.\n\nCheck: At x = 2, y = 3(2) − 5 = 1, so the line passes through (2, 1).\n\n**Wrong choices**\n- y = 3x + 5: y = 3x + 5 uses the wrong signs in point-slope form: y + 1 = 3(x + 2).\n- y = 3x − 7: y = 3x − 7 subtracts 1 instead of adding it in the last step.\n- y = 3x + 1: y = 3x + 1 uses the point's y-value as the y-intercept; at x = 2 it gives y = 7.",
+    "frequency": 4,
+    "tags": [
+      "point-slope form",
+      "equation of a line"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "algebraic",
+    "chapterId": "graphs-functions",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which equation describes the line through (−1, 4) and (3, −4)?",
+    "choices": [
+      "y = −2x + 6",
+      "y = −(1/2)x + 3.5",
+      "y = 2x + 6",
+      "y = −2x + 2"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Find the slope first, then use one point to find b",
+    "explanation": "1. Slope: (−4 − 4) / (3 − (−1)) = −8 / 4 = −2.\n2. Use (−1, 4) in y = −2x + b: 4 = −2(−1) + b = 2 + b, so b = 2.\n3. Equation: y = −2x + 2.\n\nCheck: At x = 3, y = −2(3) + 2 = −4, so (3, −4) is on the line.\n\n**Wrong choices**\n- y = −2x + 6: y = −2x + 6 uses x = 1 instead of x = −1 when finding b; it does not pass through (−1, 4).\n- y = −(1/2)x + 3.5: y = −(1/2)x + 3.5 uses run over rise for the slope.\n- y = 2x + 6: y = 2x + 6 has the wrong sign on the slope; it does not pass through (3, −4).",
+    "frequency": 3,
+    "tags": [
+      "equation from two points"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "subjectId": "algebraic",
+    "chapterId": "graphs-functions",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "What is the slope of a line perpendicular to y = (2/3)x + 1?",
+    "choices": [
+      "−3/2",
+      "2/3",
+      "3/2",
+      "−2/3"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Perpendicular slope: flip the fraction and change the sign",
+    "explanation": "1. The given slope is 2/3.\n2. Flip it: 3/2.\n3. Change the sign: −3/2.\n\nCheck: Perpendicular slopes multiply to −1: (2/3) × (−3/2) = −1.\n\n**Wrong choices**\n- 2/3: 2/3 is the same slope, which gives a parallel line, not a perpendicular one.\n- 3/2: 3/2 flips the fraction but forgets to change the sign.\n- −2/3: −2/3 changes the sign but forgets to flip the fraction.",
+    "frequency": 3,
+    "tags": [
+      "perpendicular lines",
+      "slope"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "algebraic",
+    "chapterId": "graphs-functions",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Car A's distance is given by d = 52t (d in miles, t in hours). A table for Car B shows it traveled 110 miles in 2 hours and 275 miles in 5 hours. Which car is faster, and by how much?",
+    "choices": [
+      "Car A, by 3 miles per hour",
+      "Car B, by 3 miles per hour",
+      "Both cars go the same speed",
+      "Car B, by 6 miles per hour"
+    ],
+    "answer": 2,
+    "oneLineConcept": "The unit rate (slope) is the speed; compare unit rates",
+    "explanation": "1. Car A's speed is the number in front of t: 52 miles per hour.\n2. Car B's speed: 110 ÷ 2 = 55 miles per hour (and 275 ÷ 5 = 55).\n3. 55 − 52 = 3, so Car B is faster by 3 miles per hour.\n\nCheck: In 5 hours, Car A goes 52 × 5 = 260 miles and Car B goes 275 miles, 15 miles more, which is 3 miles per hour.\n\n**Wrong choices**\n- Car A, by 3 miles per hour: Car A goes 52 miles per hour, which is slower than Car B's 55.\n- Both cars go the same speed: The speeds are 52 and 55 miles per hour, which are not the same.\n- Car B, by 6 miles per hour: 6 is the difference in miles after 2 hours (110 − 104), not per hour.",
+    "frequency": 3,
+    "tags": [
+      "compare rates",
+      "proportional relationship"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "algebraic",
+    "chapterId": "graphs-functions",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A table shows the height of a ball over time.\nTime (seconds): 0, 1, 2, 3, 4\nHeight (feet): 0, 48, 64, 48, 0\nWhat is the greatest height of the ball, and when does it happen?",
+    "choices": [
+      "48 feet at 1 second",
+      "64 feet at 4 seconds",
+      "64 feet at 2 seconds",
+      "48 feet at 3 seconds"
+    ],
+    "answer": 3,
+    "oneLineConcept": "The maximum is the greatest output value in the table",
+    "explanation": "1. Look for the largest height in the table: 64 feet.\n2. Find its time: 2 seconds.\n3. The heights go up before 2 seconds and down after, so 64 feet is the maximum.\n\nCheck: The table is symmetric around 2 seconds (48 at 1 and 3, 0 at 0 and 4), which is where the top of the path is.\n\n**Wrong choices**\n- 48 feet at 1 second: 48 feet at 1 second is on the way up; the ball keeps rising after that.\n- 64 feet at 4 seconds: At 4 seconds the height is 0, so 64 feet at 4 seconds does not match the table.\n- 48 feet at 3 seconds: 48 feet at 3 seconds is on the way down, below the 64-foot peak.",
+    "frequency": 3,
+    "tags": [
+      "key features",
+      "maximum",
+      "table"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "algebraic",
+    "chapterId": "graphs-functions",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Function f is shown in a table: x = 0, 1, 2, 3 gives f(x) = 5, 8, 11, 14. Function g is g(x) = 4x − 1. Which statement is true?",
+    "choices": [
+      "f has the greater rate of change, and f has the greater y-intercept.",
+      "g has the greater rate of change, and g has the greater y-intercept.",
+      "f has the greater rate of change, and g has the greater y-intercept.",
+      "g has the greater rate of change, and f has the greater y-intercept."
+    ],
+    "answer": 4,
+    "oneLineConcept": "Rate of change = slope; y-intercept = value at x = 0",
+    "explanation": "1. f: each time x goes up 1, f(x) goes up 3. Rate of change = 3. At x = 0, f(0) = 5, so the y-intercept is 5.\n2. g(x) = 4x − 1: rate of change = 4, y-intercept = −1.\n3. 4 > 3, so g has the greater rate of change.\n4. 5 > −1, so f has the greater y-intercept.\n\nCheck: g(3) = 11 and f(3) = 14, but by x = 10, g(10) = 39 and f(10) = 35. g starts lower but grows faster.\n\n**Wrong choices**\n- f has the greater rate of change, and f has the greater y-intercept.: f grows by 3 each step and g by 4, so f does not have the greater rate of change.\n- g has the greater rate of change, and g has the greater y-intercept.: g's y-intercept is −1, which is less than f's 5.\n- f has the greater rate of change, and g has the greater y-intercept.: Both parts are reversed: g grows faster, and f starts higher.",
+    "frequency": 3,
+    "tags": [
+      "compare functions",
+      "rate of change",
+      "y-intercept"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "subjectId": "algebraic",
+    "chapterId": "graphs-functions",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "The water left in a tank is W = 500 − 20t, where W is in gallons and t is the number of minutes since draining began. After how many minutes will the tank be empty?",
+    "choices": [
+      "25 minutes",
+      "480 minutes",
+      "20 minutes",
+      "10,000 minutes"
+    ],
+    "answer": 1,
+    "oneLineConcept": "\"Empty\" means W = 0; solve for t",
+    "explanation": "1. Empty means W = 0: 0 = 500 − 20t.\n2. Add 20t to both sides: 20t = 500.\n3. Divide: t = 25 minutes.\n\nCheck: W = 500 − 20 × 25 = 500 − 500 = 0 gallons.\n\n**Wrong choices**\n- 480 minutes: 480 is the water left after 1 minute (500 − 20), not a time.\n- 20 minutes: 20 is the draining rate in gallons per minute, not the time to empty.\n- 10,000 minutes: 10,000 multiplies 500 by 20 instead of dividing.",
+    "frequency": 3,
+    "tags": [
+      "interpret linear model",
+      "x-intercept"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "algebraic",
+    "chapterId": "graphs-functions",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Which equation describes the line that is perpendicular to y = 2x + 3 and passes through the point (4, 1)?",
+    "choices": [
+      "y = 2x − 7",
+      "y = −(1/2)x + 3",
+      "y = −(1/2)x + 1",
+      "y = (1/2)x − 1"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Use the negative reciprocal slope, then point-slope form",
+    "explanation": "1. The given slope is 2, so the perpendicular slope is −1/2.\n2. Point-slope: y − 1 = −(1/2)(x − 4).\n3. Distribute: y − 1 = −(1/2)x + 2.\n4. Add 1: y = −(1/2)x + 3.\n\nCheck: At x = 4, y = −2 + 3 = 1. Slopes 2 and −1/2 multiply to −1.\n\n**Wrong choices**\n- y = 2x − 7: y = 2x − 7 passes through (4, 1) but has slope 2, so it is parallel, not perpendicular.\n- y = −(1/2)x + 1: y = −(1/2)x + 1 makes a sign error when distributing; at x = 4 it gives y = −1.\n- y = (1/2)x − 1: y = (1/2)x − 1 passes through (4, 1) but forgets to change the sign of the slope.",
+    "frequency": 3,
+    "tags": [
+      "perpendicular lines",
+      "equation of a line"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "subjectId": "algebraic",
+    "chapterId": "graphs-functions",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Where does the graph of f(x) = x² − 2x − 8 cross the x-axis?",
+    "choices": [
+      "At (−4, 0) and (2, 0)",
+      "At (0, −8) only",
+      "At (4, 0) and (−2, 0)",
+      "At (8, 0) and (−1, 0)"
+    ],
+    "answer": 3,
+    "oneLineConcept": "x-intercepts: set f(x) = 0 and solve",
+    "explanation": "1. The graph crosses the x-axis where f(x) = 0: x² − 2x − 8 = 0.\n2. Factor: (x − 4)(x + 2) = 0.\n3. x = 4 or x = −2, so the points are (4, 0) and (−2, 0).\n\nCheck: f(4) = 16 − 8 − 8 = 0 and f(−2) = 4 + 4 − 8 = 0.\n\n**Wrong choices**\n- At (−4, 0) and (2, 0): (−4, 0) and (2, 0) reverse the signs; f(2) = 4 − 4 − 8 = −8, not 0.\n- At (0, −8) only: (0, −8) is where the graph crosses the y-axis, not the x-axis.\n- At (8, 0) and (−1, 0): (8, 0) and (−1, 0) use factors of −8 that do not add to −2; f(8) = 40.",
+    "frequency": 2,
+    "tags": [
+      "x-intercepts",
+      "quadratic function"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+]
