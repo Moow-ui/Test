@@ -1,0 +1,507 @@
+[
+  {
+    "id": "ged-math-expressions-polynomials-0001",
+    "certId": "ged-math",
+    "subjectId": "algebraic",
+    "chapterId": "expressions-polynomials",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Simplify: 4x + 7 − 2x + 3",
+    "choices": [
+      "2x + 10",
+      "12x",
+      "6x + 10",
+      "2x + 4"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Combine x-terms with x-terms, numbers with numbers",
+    "explanation": "1. Group the like terms: (4x − 2x) + (7 + 3).\n2. 4x − 2x = 2x.\n3. 7 + 3 = 10.\n4. The result is 2x + 10.\n\nCheck: Try x = 1. The original is 4 + 7 − 2 + 3 = 12, and 2(1) + 10 = 12.\n\n**Wrong choices**\n- 6x + 10: 6x + 10 adds 4x and 2x, but the 2x is being subtracted.\n- 12x: 12x combines numbers and x-terms together; only like terms can be combined.\n- 2x + 4: 2x + 4 subtracts 3 from 7, but the 3 is being added.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "like terms",
+      "simplify"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "ged-math-expressions-polynomials-0002",
+    "certId": "ged-math",
+    "subjectId": "algebraic",
+    "chapterId": "expressions-polynomials",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What is the value of 3a² − 2b when a = 4 and b = 5?",
+    "choices": [
+      "38",
+      "58",
+      "134",
+      "14"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Substitute, then square before you multiply",
+    "explanation": "1. Substitute: 3(4)² − 2(5).\n2. Exponent first: 4² = 16.\n3. Multiply: 3 × 16 = 48 and 2 × 5 = 10.\n4. Subtract: 48 − 10 = 38.\n\nCheck: 3 × 4 × 4 = 48, and 48 − 10 = 38.\n\n**Wrong choices**\n- 134: 134 squares 3 × 4 = 12 to get 144; only a is squared, not 3a.\n- 14: 14 treats a² as 2 × a (8), so 3 × 8 − 10 = 14.\n- 58: 58 adds 2b instead of subtracting it.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "evaluate",
+      "exponents"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "ged-math-expressions-polynomials-0003",
+    "certId": "ged-math",
+    "subjectId": "algebraic",
+    "chapterId": "expressions-polynomials",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A plumber charges a $65 visit fee plus $40 for each hour of work. Which expression gives the total charge for h hours?",
+    "choices": [
+      "40 + 65h",
+      "65h + 40h",
+      "105h",
+      "65 + 40h"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Fixed fee + (rate × number of hours)",
+    "explanation": "1. The $65 fee is charged once, so it stays as 65.\n2. The $40 is charged for each hour, so it is 40 × h = 40h.\n3. Total: 65 + 40h.\n\nCheck: For 2 hours, 65 + 40(2) = $145, which is $65 + $40 + $40.\n\n**Wrong choices**\n- 40 + 65h: 40 + 65h charges $65 for each hour and $40 once, which is backward.\n- 105h: 105h charges both amounts every hour, but the visit fee is charged only once.\n- 65h + 40h: 65h + 40h also charges the visit fee every hour.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "word to symbol",
+      "linear expression"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "ged-math-expressions-polynomials-0004",
+    "certId": "ged-math",
+    "subjectId": "algebraic",
+    "chapterId": "expressions-polynomials",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which expression is equal to −3(2x − 5)?",
+    "choices": [
+      "−6x − 15",
+      "−6x + 15",
+      "−6x − 5",
+      "6x + 15"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Distribute the sign too: −3 × −5 = +15",
+    "explanation": "1. Multiply −3 by each term inside the parentheses.\n2. −3 × 2x = −6x.\n3. −3 × (−5) = +15.\n4. Result: −6x + 15.\n\nCheck: Try x = 1. −3(2 − 5) = −3(−3) = 9, and −6(1) + 15 = 9.\n\n**Wrong choices**\n- −6x − 15: −6x − 15 forgets that a negative times a negative is positive.\n- −6x − 5: −6x − 5 multiplies only the first term by −3.\n- 6x + 15: 6x + 15 drops the negative sign on the first term.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "distributive property",
+      "negative numbers"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "ged-math-expressions-polynomials-0005",
+    "certId": "ged-math",
+    "subjectId": "algebraic",
+    "chapterId": "expressions-polynomials",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Multiply: (x + 4)(x − 3)",
+    "choices": [
+      "x² + 7x − 12",
+      "x² − 12",
+      "x² − x − 12",
+      "x² + x − 12"
+    ],
+    "answer": 4,
+    "oneLineConcept": "FOIL: First, Outer, Inner, Last, then combine",
+    "explanation": "1. First: x × x = x².\n2. Outer: x × (−3) = −3x.\n3. Inner: 4 × x = 4x.\n4. Last: 4 × (−3) = −12.\n5. Combine: x² − 3x + 4x − 12 = x² + x − 12.\n\nCheck: Try x = 2. (2 + 4)(2 − 3) = 6 × (−1) = −6, and 4 + 2 − 12 = −6.\n\n**Wrong choices**\n- x² − 12: x² − 12 multiplies only the first terms and the last terms; the middle terms are missing.\n- x² + 7x − 12: x² + 7x − 12 uses +3 instead of −3 for the middle term (4 + 3 = 7).\n- x² − x − 12: x² − x − 12 has the middle sign backward: −3x + 4x is +x, not −x.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "multiply binomials",
+      "FOIL"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "ged-math-expressions-polynomials-0006",
+    "certId": "ged-math",
+    "subjectId": "algebraic",
+    "chapterId": "expressions-polynomials",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Simplify: (5x² + 3x − 2) − (2x² − 4x + 6)",
+    "choices": [
+      "3x² + 7x + 4",
+      "3x² + 7x − 8",
+      "3x² − x − 8",
+      "3x² − x + 4"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Subtracting: change the sign of every term in the second",
+    "explanation": "1. Change the sign of each term in the second polynomial: −2x² + 4x − 6.\n2. Add: (5x² − 2x²) + (3x + 4x) + (−2 − 6).\n3. Result: 3x² + 7x − 8.\n\nCheck: Try x = 1. First: 5 + 3 − 2 = 6. Second: 2 − 4 + 6 = 4. 6 − 4 = 2, and 3 + 7 − 8 = 2.\n\n**Wrong choices**\n- 3x² − x + 4: 3x² − x + 4 changes the sign of only the first term of the second polynomial.\n- 3x² + 7x + 4: 3x² + 7x + 4 forgets to change the sign of the +6.\n- 3x² − x − 8: 3x² − x − 8 forgets to change the sign of the −4x.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "subtract polynomials"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "ged-math-expressions-polynomials-0007",
+    "certId": "ged-math",
+    "subjectId": "algebraic",
+    "chapterId": "expressions-polynomials",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Factor: x² − 5x − 14",
+    "choices": [
+      "(x + 7)(x − 2)",
+      "(x − 14)(x + 1)",
+      "(x − 7)(x + 2)",
+      "(x − 7)(x − 2)"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Find two numbers that multiply to c and add to b",
+    "explanation": "1. Find two numbers that multiply to −14 and add to −5.\n2. −7 × 2 = −14 and −7 + 2 = −5.\n3. So x² − 5x − 14 = (x − 7)(x + 2).\n\nCheck: (x − 7)(x + 2) = x² + 2x − 7x − 14 = x² − 5x − 14.\n\n**Wrong choices**\n- (x + 7)(x − 2): (x + 7)(x − 2) gives a middle term of +5x.\n- (x − 7)(x − 2): (x − 7)(x − 2) gives +14 at the end and −9x in the middle.\n- (x − 14)(x + 1): (x − 14)(x + 1) gives a middle term of −13x.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "factoring",
+      "trinomial"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "ged-math-expressions-polynomials-0008",
+    "certId": "ged-math",
+    "subjectId": "algebraic",
+    "chapterId": "expressions-polynomials",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which expression is equal to 6x³ − 9x²?",
+    "choices": [
+      "3x³(2 − 3x)",
+      "3x²(2x − 3)",
+      "3x(2x − 3)",
+      "3x²(2x − 9)"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Factor out the GCF of the numbers and of the variables",
+    "explanation": "1. The GCF of 6 and 9 is 3.\n2. The GCF of x³ and x² is x².\n3. Take out 3x²: 6x³ ÷ 3x² = 2x and 9x² ÷ 3x² = 3.\n4. Result: 3x²(2x − 3).\n\nCheck: Multiply back: 3x² × 2x = 6x³ and 3x² × 3 = 9x².\n\n**Wrong choices**\n- 3x(2x − 3): 3x(2x − 3) multiplies back to 6x² − 9x; the powers of x are too low.\n- 3x²(2x − 9): 3x²(2x − 9) multiplies back to 6x³ − 27x²; the 9 was not divided by 3.\n- 3x³(2 − 3x): 3x³(2 − 3x) multiplies back to 6x³ − 9x⁴; the second term has the wrong power.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "factoring",
+      "greatest common factor"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "ged-math-expressions-polynomials-0009",
+    "certId": "ged-math",
+    "subjectId": "algebraic",
+    "chapterId": "expressions-polynomials",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Simplify (x² − 9) / (x + 3), for x ≠ −3.",
+    "choices": [
+      "x + 3",
+      "x² − 3",
+      "x − 3",
+      "x − 9"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Factor the top, then cancel the common factor",
+    "explanation": "1. Factor the top as a difference of squares: x² − 9 = (x − 3)(x + 3).\n2. Cancel the common factor (x + 3).\n3. Result: x − 3.\n\nCheck: Try x = 5. (25 − 9) ÷ (5 + 3) = 16 ÷ 8 = 2, and 5 − 3 = 2.\n\n**Wrong choices**\n- x + 3: x + 3 is the factor that cancels out, not what is left.\n- x² − 3: x² − 3 divides only the 9 by 3; you cannot cancel parts of a sum.\n- x − 9: x − 9 cancels x² with x, which is not allowed in a sum.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "rational expressions",
+      "simplify",
+      "difference of squares"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "ged-math-expressions-polynomials-0010",
+    "certId": "ged-math",
+    "subjectId": "algebraic",
+    "chapterId": "expressions-polynomials",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A rectangle's length is 3 more than twice its width, w. Which expression gives the area of the rectangle?",
+    "choices": [
+      "2w² + 3w",
+      "2w + 3",
+      "2w² + 3",
+      "6w + 6"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Area = width × length; distribute w over the length",
+    "explanation": "1. Length = 2w + 3.\n2. Area = width × length = w(2w + 3).\n3. Distribute: w × 2w + w × 3 = 2w² + 3w.\n\nCheck: If w = 2, the length is 7 and the area is 14. 2(2)² + 3(2) = 8 + 6 = 14.\n\n**Wrong choices**\n- 2w + 3: 2w + 3 is the length, not the area.\n- 6w + 6: 6w + 6 is the perimeter: 2w + 2(2w + 3).\n- 2w² + 3: 2w² + 3 multiplies only the first term by w; w must multiply the 3 as well.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "word to symbol",
+      "polynomial",
+      "area"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "ged-math-expressions-polynomials-0011",
+    "certId": "ged-math",
+    "subjectId": "algebraic",
+    "chapterId": "expressions-polynomials",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A print shop charges a $120 setup fee plus $2 per flyer. The average cost per flyer for n flyers is (120 + 2n) / n. What is the average cost per flyer for 40 flyers?",
+    "choices": [
+      "$5",
+      "$200",
+      "$3",
+      "$2"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Evaluate the top and bottom, then divide",
+    "explanation": "1. Top: 120 + 2(40) = 120 + 80 = 200.\n2. Bottom: 40.\n3. 200 ÷ 40 = $5 per flyer.\n\nCheck: 40 flyers at $5 each is $200, which equals the $120 fee plus 40 × $2.\n\n**Wrong choices**\n- $3: $3 spreads only the setup fee over the flyers (120 ÷ 40) and forgets the $2 per flyer.\n- $200: $200 is the total cost; it still has to be divided by 40.\n- $2: $2 is only the per-flyer charge and leaves out the setup fee.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "rational expressions",
+      "evaluate",
+      "average cost"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "ged-math-expressions-polynomials-0012",
+    "certId": "ged-math",
+    "subjectId": "algebraic",
+    "chapterId": "expressions-polynomials",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Expand: (2x − 3)²",
+    "choices": [
+      "4x² − 12x + 9",
+      "4x² − 9",
+      "4x² − 6x + 9",
+      "4x² + 9"
+    ],
+    "answer": 1,
+    "oneLineConcept": "(a − b)² = a² − 2ab + b²; do not square each term",
+    "explanation": "1. (2x − 3)² = (2x − 3)(2x − 3).\n2. First: 2x × 2x = 4x².\n3. Outer and inner: 2x × (−3) + (−3) × 2x = −6x − 6x = −12x.\n4. Last: (−3) × (−3) = 9.\n5. Result: 4x² − 12x + 9.\n\nCheck: Try x = 1. (2 − 3)² = 1, and 4 − 12 + 9 = 1.\n\n**Wrong choices**\n- 4x² + 9: 4x² + 9 squares each term and leaves out the middle term.\n- 4x² − 6x + 9: 4x² − 6x + 9 counts the middle product only once; it appears twice.\n- 4x² − 9: 4x² − 9 is (2x − 3)(2x + 3), not (2x − 3)².",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "square of a binomial"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "ged-math-expressions-polynomials-0013",
+    "certId": "ged-math",
+    "subjectId": "algebraic",
+    "chapterId": "expressions-polynomials",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Simplify: 3/x + 5/(2x)",
+    "choices": [
+      "15/(2x²)",
+      "11/(2x²)",
+      "11/(2x)",
+      "8/(3x)"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Get a common denominator, then add the tops",
+    "explanation": "1. The common denominator is 2x.\n2. Rewrite 3/x as 6/(2x).\n3. Add the tops: 6/(2x) + 5/(2x) = 11/(2x).\n\nCheck: Try x = 1. 3 + 5/2 = 5.5, and 11/2 = 5.5.\n\n**Wrong choices**\n- 8/(3x): 8/(3x) adds the tops and adds the bottoms, which is not how fractions are added.\n- 11/(2x²): 11/(2x²) multiplies the denominators x and 2x; the smallest common denominator is 2x.\n- 15/(2x²): 15/(2x²) multiplies the fractions instead of adding them.",
+    "frequency": 2,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "rational expressions",
+      "add fractions"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "ged-math-expressions-polynomials-0014",
+    "certId": "ged-math",
+    "subjectId": "algebraic",
+    "chapterId": "expressions-polynomials",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Simplify (x² − 4x) / (x² − 16), for x ≠ 4 and x ≠ −4.",
+    "choices": [
+      "x / (x − 4)",
+      "x / 4",
+      "1 / (x + 4)",
+      "x / (x + 4)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Factor top and bottom completely before canceling",
+    "explanation": "1. Factor the top: x² − 4x = x(x − 4).\n2. Factor the bottom: x² − 16 = (x − 4)(x + 4).\n3. Cancel the common factor (x − 4).\n4. Result: x / (x + 4).\n\nCheck: Try x = 2. (4 − 8) ÷ (4 − 16) = −4 ÷ −12 = 1/3, and 2 ÷ 6 = 1/3.\n\n**Wrong choices**\n- x / (x − 4): x / (x − 4) cancels the (x + 4) factor, but (x + 4) is not on the top.\n- x / 4: x / 4 cancels the x² terms and the x's separately; you can only cancel whole factors.\n- 1 / (x + 4): 1 / (x + 4) also cancels the x on top, but there is no x factor on the bottom.",
+    "frequency": 2,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "rational expressions",
+      "factoring"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  }
+]

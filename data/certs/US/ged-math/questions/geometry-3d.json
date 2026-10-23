@@ -1,0 +1,399 @@
+[
+  {
+    "id": "ged-math-geometry-3d-0001",
+    "certId": "ged-math",
+    "subjectId": "quantitative",
+    "chapterId": "geometry-3d",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A shipping box is 12 inches long, 8 inches wide, and 5 inches high. What is its volume?",
+    "choices": [
+      "392 cubic inches",
+      "96 cubic inches",
+      "25 cubic inches",
+      "480 cubic inches"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Rectangular prism volume V = l × w × h",
+    "explanation": "1. V = length × width × height.\n2. V = 12 × 8 × 5 = 96 × 5 = 480 cubic inches.\n\nCheck: 8 × 5 = 40, and 40 × 12 = 480.\n\n**Wrong choices**\n- 25 cubic inches: 25 adds the three measurements instead of multiplying.\n- 96 cubic inches: 96 is the area of the bottom (12 × 8); it still has to be multiplied by the height.\n- 392 cubic inches: 392 is the surface area (2lw + 2lh + 2wh), the outside covering, not the space inside.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "volume",
+      "rectangular prism"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "ged-math-geometry-3d-0002",
+    "certId": "ged-math",
+    "subjectId": "quantitative",
+    "chapterId": "geometry-3d",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A cylindrical water tank has a radius of 3 feet and a height of 10 feet. What is its volume? Use 3.14 for π.",
+    "choices": [
+      "94.2 cubic feet",
+      "1,130.4 cubic feet",
+      "188.4 cubic feet",
+      "282.6 cubic feet"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Cylinder volume V = π × r² × h",
+    "explanation": "1. V = πr²h.\n2. r² = 3 × 3 = 9.\n3. V = 3.14 × 9 × 10 = 282.6 cubic feet.\n\nCheck: The base circle has area 3.14 × 9 = 28.26 square feet. 28.26 × 10 = 282.6.\n\n**Wrong choices**\n- 94.2 cubic feet: 94.2 forgets to square the radius (3.14 × 3 × 10).\n- 188.4 cubic feet: 188.4 is 2πrh, the area of the curved side, not the volume.\n- 1,130.4 cubic feet: 1,130.4 uses 6 (the diameter) as the radius.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "volume",
+      "cylinder"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "ged-math-geometry-3d-0003",
+    "certId": "ged-math",
+    "subjectId": "quantitative",
+    "chapterId": "geometry-3d",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A cube-shaped box has edges 4 inches long. What is the total surface area of the box?",
+    "choices": [
+      "64 square inches",
+      "96 square inches",
+      "16 square inches",
+      "48 square inches"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Cube surface area = 6 faces × (edge × edge)",
+    "explanation": "1. Each face is a square: 4 × 4 = 16 square inches.\n2. A cube has 6 faces: 6 × 16 = 96 square inches.\n\nCheck: Use SA = 2lw + 2lh + 2wh with all sides 4: 32 + 32 + 32 = 96.\n\n**Wrong choices**\n- 64 square inches: 64 is the volume (4 × 4 × 4) in cubic inches, not the surface area.\n- 16 square inches: 16 square inches is the area of only one face.\n- 48 square inches: 48 square inches counts only 3 of the 6 faces.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "surface area",
+      "cube"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "ged-math-geometry-3d-0004",
+    "certId": "ged-math",
+    "subjectId": "quantitative",
+    "chapterId": "geometry-3d",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A right prism has a triangular base with an area of 15 square inches. The prism is 8 inches tall. What is its volume? (Right prism: V = Bh, where B is the area of the base.)",
+    "choices": [
+      "120 cubic inches",
+      "40 cubic inches",
+      "23 cubic inches",
+      "60 cubic inches"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Any right prism: volume = base area × height",
+    "explanation": "1. V = Bh, where B is the base area.\n2. V = 15 × 8 = 120 cubic inches.\n\nCheck: 120 ÷ 8 = 15, the base area.\n\n**Wrong choices**\n- 60 cubic inches: 60 takes half of Bh; the 1/2 is already included in the triangle's base area.\n- 40 cubic inches: 40 uses 1/3 × Bh, the formula for a pyramid, not a prism.\n- 23 cubic inches: 23 adds 15 and 8 instead of multiplying.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "volume",
+      "right prism"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "ged-math-geometry-3d-0005",
+    "certId": "ged-math",
+    "subjectId": "quantitative",
+    "chapterId": "geometry-3d",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A paper cone cup has a radius of 3 inches and a height of 8 inches. What is its volume? Use 3.14 for π. (Cone: V = 1/3 × π × r² × h)",
+    "choices": [
+      "25.12 cubic inches",
+      "113.04 cubic inches",
+      "226.08 cubic inches",
+      "75.36 cubic inches"
+    ],
+    "answer": 4,
+    "oneLineConcept": "A cone holds 1/3 of a cylinder with the same base and height",
+    "explanation": "1. r² = 3 × 3 = 9.\n2. π × r² × h = 3.14 × 9 × 8 = 226.08.\n3. Divide by 3: 226.08 ÷ 3 = 75.36 cubic inches.\n\nCheck: 1/3 × 9 × 8 = 24, and 3.14 × 24 = 75.36.\n\n**Wrong choices**\n- 226.08 cubic inches: 226.08 cubic inches forgets to divide by 3; that is a cylinder's volume.\n- 25.12 cubic inches: 25.12 does not square the radius (1/3 × 3.14 × 3 × 8).\n- 113.04 cubic inches: 113.04 divides by 2 instead of by 3.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "volume",
+      "cone"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "ged-math-geometry-3d-0006",
+    "certId": "ged-math",
+    "subjectId": "quantitative",
+    "chapterId": "geometry-3d",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "An aquarium shaped like a rectangular box holds 4,320 cubic inches. Its base is 24 inches long and 15 inches wide. How tall is the aquarium?",
+    "choices": [
+      "180 inches",
+      "12 inches",
+      "288 inches",
+      "4,281 inches"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Height = volume ÷ (length × width)",
+    "explanation": "1. Base area: 24 × 15 = 360 square inches.\n2. Height: 4,320 ÷ 360 = 12 inches.\n\nCheck: 24 × 15 × 12 = 360 × 12 = 4,320 cubic inches.\n\n**Wrong choices**\n- 180 inches: 180 divides the volume by the length only (4,320 ÷ 24).\n- 288 inches: 288 divides the volume by the width only (4,320 ÷ 15).\n- 4,281 inches: 4,281 subtracts the length and width from the volume.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "rectangular prism",
+      "missing height"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "ged-math-geometry-3d-0007",
+    "certId": "ged-math",
+    "subjectId": "quantitative",
+    "chapterId": "geometry-3d",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A ball has a radius of 3 inches. What is its volume? Use 3.14 for π. (Sphere: V = 4/3 × π × r³)",
+    "choices": [
+      "339.12 cubic inches",
+      "113.04 cubic inches",
+      "84.78 cubic inches",
+      "37.68 cubic inches"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Sphere volume V = 4/3 × π × r³",
+    "explanation": "1. r³ = 3 × 3 × 3 = 27.\n2. π × r³ = 3.14 × 27 = 84.78.\n3. Multiply by 4/3: 84.78 × 4 ÷ 3 = 113.04 cubic inches.\n\nCheck: 4/3 × 27 = 36, and 36 × 3.14 = 113.04.\n\n**Wrong choices**\n- 37.68 cubic inches: 37.68 squares the radius instead of cubing it.\n- 339.12 cubic inches: 339.12 multiplies by 4 but forgets to divide by 3.\n- 84.78 cubic inches: 84.78 leaves out the 4/3 in the formula.",
+    "frequency": 2,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "volume",
+      "sphere"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "ged-math-geometry-3d-0008",
+    "certId": "ged-math",
+    "subjectId": "quantitative",
+    "chapterId": "geometry-3d",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A stone monument is a pyramid with a square base 6 feet on each side and a height of 10 feet. What is its volume? (Pyramid: V = 1/3 × B × h)",
+    "choices": [
+      "120 cubic feet",
+      "360 cubic feet",
+      "20 cubic feet",
+      "180 cubic feet"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Pyramid volume = 1/3 × base area × height",
+    "explanation": "1. Base area: B = 6 × 6 = 36 square feet.\n2. B × h = 36 × 10 = 360.\n3. V = 1/3 × 360 = 120 cubic feet.\n\nCheck: A box with the same base and height would hold 360 cubic feet; a pyramid holds one-third of that.\n\n**Wrong choices**\n- 360 cubic feet: 360 cubic feet forgets the 1/3; that is a box with the same base and height.\n- 180 cubic feet: 180 cubic feet takes 1/2 instead of 1/3.\n- 20 cubic feet: 20 cubic feet uses 6 for the base area instead of 6 × 6.",
+    "frequency": 2,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "volume",
+      "pyramid"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "ged-math-geometry-3d-0009",
+    "certId": "ged-math",
+    "subjectId": "quantitative",
+    "chapterId": "geometry-3d",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A cylindrical can holds 471 cubic centimeters. Its radius is 5 centimeters. What is its height? Use 3.14 for π.",
+    "choices": [
+      "12 centimeters",
+      "30 centimeters",
+      "6 centimeters",
+      "3 centimeters"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Height = volume ÷ (π × r²)",
+    "explanation": "1. V = πr²h, so h = V ÷ (πr²).\n2. πr² = 3.14 × 25 = 78.5 square centimeters.\n3. h = 471 ÷ 78.5 = 6 centimeters.\n\nCheck: 3.14 × 25 × 6 = 78.5 × 6 = 471 cubic centimeters.\n\n**Wrong choices**\n- 30 centimeters: 30 centimeters divides by π × r (15.7) without squaring the radius.\n- 3 centimeters: 3 centimeters divides by 2πr² (157); the volume formula has only πr².\n- 12 centimeters: 12 centimeters doubles the height; 78.5 × 12 = 942, not 471.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "cylinder",
+      "missing height"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "ged-math-geometry-3d-0010",
+    "certId": "ged-math",
+    "subjectId": "quantitative",
+    "chapterId": "geometry-3d",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A grain bin is a cylinder with a radius of 4 feet and a height of 10 feet, topped by a cone with the same radius and a height of 3 feet. What is the total volume of the bin? Use 3.14 for π.",
+    "choices": [
+      "653.12 cubic feet",
+      "2,210.56 cubic feet",
+      "502.4 cubic feet",
+      "552.64 cubic feet"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Composite solid: add the volume of each part",
+    "explanation": "1. Cylinder: 3.14 × 4² × 10 = 3.14 × 16 × 10 = 502.4 cubic feet.\n2. Cone: 1/3 × 3.14 × 4² × 3 = 3.14 × 16 = 50.24 cubic feet.\n3. Total: 502.4 + 50.24 = 552.64 cubic feet.\n\nCheck: The cone is 1/3 as tall in effect (3 ÷ 3 = 1 foot of cylinder), so the total is like a cylinder 11 feet tall: 3.14 × 16 × 11 = 552.64.\n\n**Wrong choices**\n- 653.12 cubic feet: 653.12 cubic feet forgets the 1/3 in the cone formula.\n- 502.4 cubic feet: 502.4 cubic feet is the cylinder only; the cone on top is left out.\n- 2,210.56 cubic feet: 2,210.56 cubic feet uses 8 feet (the diameter) as the radius.",
+    "frequency": 2,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "composite solid",
+      "cylinder",
+      "cone"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "ged-math-geometry-3d-0011",
+    "certId": "ged-math",
+    "subjectId": "quantitative",
+    "chapterId": "geometry-3d",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A closed cylindrical tank has a radius of 2 feet and a height of 5 feet. How many square feet of outside surface need paint, including the top and bottom? Use 3.14 for π. (Cylinder: SA = 2πrh + 2πr²)",
+    "choices": [
+      "226.08 square feet",
+      "87.92 square feet",
+      "75.36 square feet",
+      "62.8 square feet"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Cylinder surface = curved side + two circle ends",
+    "explanation": "1. Curved side: 2πrh = 2 × 3.14 × 2 × 5 = 62.8 square feet.\n2. Two ends: 2πr² = 2 × 3.14 × 4 = 25.12 square feet.\n3. Total: 62.8 + 25.12 = 87.92 square feet.\n\nCheck: Each end is 3.14 × 4 = 12.56; 62.8 + 12.56 + 12.56 = 87.92.\n\n**Wrong choices**\n- 62.8 square feet: 62.8 square feet is the curved side only; the top and bottom are left out.\n- 75.36 square feet: 75.36 square feet adds only one end (62.8 + 12.56); a closed tank has two.\n- 226.08 square feet: 226.08 square feet uses 4 feet (the diameter) as the radius.",
+    "frequency": 2,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "surface area",
+      "cylinder"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  }
+]

@@ -1,0 +1,545 @@
+[
+  {
+    "id": "ged-math-number-sense-0001",
+    "certId": "ged-math",
+    "subjectId": "quantitative",
+    "chapterId": "number-sense",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which list puts these numbers in order from least to greatest?\n\n0.65, 5/8, 0.58, 3/5",
+    "choices": [
+      "3/5, 5/8, 0.58, 0.65",
+      "0.65, 5/8, 3/5, 0.58",
+      "0.58, 0.65, 3/5, 5/8",
+      "0.58, 3/5, 5/8, 0.65"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Change every number to a decimal before comparing",
+    "explanation": "1. Change the fractions to decimals: 3/5 = 0.6 and 5/8 = 0.625.\n2. Now compare four decimals: 0.65, 0.625, 0.58, 0.6.\n3. From least to greatest: 0.58, 0.6, 0.625, 0.65.\n4. Write them in their original form: 0.58, 3/5, 5/8, 0.65.\n\nCheck: 0.58 < 0.60 < 0.625 < 0.65, so each number is bigger than the one before it.\n\n**Wrong choices**\n- 3/5, 5/8, 0.58, 0.65: 3/5 (0.6) is larger than 0.58, so 3/5 cannot come first.\n- 0.58, 0.65, 3/5, 5/8: This lists the decimals first and the fractions after, but 3/5 (0.6) and 5/8 (0.625) are smaller than 0.65.\n- 0.65, 5/8, 3/5, 0.58: This is the right order but backward: it goes from greatest to least.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "ordering",
+      "fractions",
+      "decimals"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "ged-math-number-sense-0002",
+    "certId": "ged-math",
+    "subjectId": "quantitative",
+    "chapterId": "number-sense",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A board is 8 3/4 feet long. A carpenter cuts off a piece 2 5/8 feet long. How long is the board that is left?",
+    "choices": [
+      "6 2/4 feet",
+      "11 3/8 feet",
+      "6 1/8 feet",
+      "6 3/8 feet"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Use a common denominator before subtracting fractions",
+    "explanation": "1. Write 3/4 with a denominator of 8: 3/4 = 6/8, so 8 3/4 = 8 6/8.\n2. Subtract the whole numbers: 8 − 2 = 6.\n3. Subtract the fractions: 6/8 − 5/8 = 1/8.\n4. The board left is 6 1/8 feet.\n\nCheck: 6 1/8 + 2 5/8 = 8 6/8 = 8 3/4 feet, the original length.\n\n**Wrong choices**\n- 11 3/8 feet: 11 3/8 feet comes from adding the two lengths instead of subtracting.\n- 6 2/4 feet: 6 2/4 feet comes from subtracting the tops and the bottoms of the fractions separately, which is not how fractions work.\n- 6 3/8 feet: 6 3/8 feet treats 3/4 as a whole 1 before subtracting 5/8; 3/4 must be changed to 6/8, not 1.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "fractions",
+      "mixed numbers",
+      "measurement"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "ged-math-number-sense-0003",
+    "certId": "ged-math",
+    "subjectId": "quantitative",
+    "chapterId": "number-sense",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What is the greatest common factor (largest number that divides both evenly) of 36 and 60?",
+    "choices": [
+      "180",
+      "4",
+      "6",
+      "12"
+    ],
+    "answer": 4,
+    "oneLineConcept": "GCF = the largest number that divides both numbers",
+    "explanation": "1. Factors of 36: 1, 2, 3, 4, 6, 9, 12, 18, 36.\n2. Factors of 60: 1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30, 60.\n3. The largest number in both lists is 12.\n\nCheck: 36 ÷ 12 = 3 and 60 ÷ 12 = 5, both whole numbers, and 3 and 5 share no other factor.\n\n**Wrong choices**\n- 6: 6 divides both numbers, but it is not the largest; 12 also divides both.\n- 180: 180 is the least common multiple, not the greatest common factor.\n- 4: 4 divides both numbers, but it is not the largest common factor.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "factors",
+      "GCF"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "ged-math-number-sense-0004",
+    "certId": "ged-math",
+    "subjectId": "quantitative",
+    "chapterId": "number-sense",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "One shuttle bus leaves the terminal every 12 minutes. Another leaves every 18 minutes. Both leave together at 8:00 a.m. When is the next time they leave together?",
+    "choices": [
+      "8:30 a.m.",
+      "8:06 a.m.",
+      "8:36 a.m.",
+      "11:36 a.m."
+    ],
+    "answer": 3,
+    "oneLineConcept": "Things that repeat line up again at the LCM",
+    "explanation": "1. List multiples of 12: 12, 24, 36, 48 ...\n2. List multiples of 18: 18, 36, 54 ...\n3. The least common multiple is 36 minutes.\n4. 8:00 a.m. + 36 minutes = 8:36 a.m.\n\nCheck: 36 ÷ 12 = 3 trips and 36 ÷ 18 = 2 trips, so both buses are at the terminal at 8:36.\n\n**Wrong choices**\n- 8:30 a.m.: 8:30 a.m. adds 12 and 18; 30 minutes is not a multiple of 12 or 18.\n- 8:06 a.m.: 8:06 a.m. uses the greatest common factor (6), but neither bus leaves after only 6 minutes.\n- 11:36 a.m.: 11:36 a.m. multiplies 12 × 18 = 216 minutes; that is a common time, but not the first one.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "multiples",
+      "LCM",
+      "time"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "ged-math-number-sense-0005",
+    "certId": "ged-math",
+    "subjectId": "quantitative",
+    "chapterId": "number-sense",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "At 6 a.m. the temperature was −8°F. By 2 p.m. it was 15°F. How many degrees did the temperature rise?",
+    "choices": [
+      "7 degrees",
+      "8 degrees",
+      "23 degrees",
+      "−23 degrees"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Change = new − old, even with negative numbers",
+    "explanation": "1. Rise = later temperature − earlier temperature.\n2. 15 − (−8) = 15 + 8 = 23.\n3. The temperature rose 23 degrees.\n\nCheck: Count on a number line: from −8 up to 0 is 8 degrees, and from 0 up to 15 is 15 more. 8 + 15 = 23.\n\n**Wrong choices**\n- 7 degrees: 7 degrees comes from 15 − 8, which ignores that −8 is below zero.\n- −23 degrees: A rise is a positive change; −23 has the wrong sign.\n- 8 degrees: 8 degrees only counts the rise from −8 up to 0.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "negative numbers",
+      "distance on number line"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "ged-math-number-sense-0006",
+    "certId": "ged-math",
+    "subjectId": "quantitative",
+    "chapterId": "number-sense",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What is the value of 18 − 3 × (2 + 4) ÷ 9?",
+    "choices": [
+      "2",
+      "10",
+      "0",
+      "16"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Parentheses, exponents, × and ÷, then + and −",
+    "explanation": "1. Parentheses first: 2 + 4 = 6.\n2. Multiply and divide from left to right: 3 × 6 = 18, then 18 ÷ 9 = 2.\n3. Subtract last: 18 − 2 = 16.\n\nCheck: On a calculator that follows the order of operations, 18 − 3 × 6 ÷ 9 also gives 16.\n\n**Wrong choices**\n- 10: 10 works strictly left to right: (18 − 3) × 6 ÷ 9. Subtraction must wait until multiplication and division are done.\n- 0: 0 subtracts 3 × 6 from 18 first and then divides by 9; the division belongs to the 3 × 6 part only.\n- 2: 2 is only the value of 3 × 6 ÷ 9; it still has to be subtracted from 18.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "order of operations"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "ged-math-number-sense-0007",
+    "certId": "ged-math",
+    "subjectId": "quantitative",
+    "chapterId": "number-sense",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A factory makes 2.4 × 10⁵ bolts per day. At this rate, how many bolts does it make in 30 days?",
+    "choices": [
+      "7.2 × 10⁷",
+      "7.2 × 10⁵",
+      "7.2 × 10⁶",
+      "2.4003 × 10⁵"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Multiply the numbers, then add the powers of 10",
+    "explanation": "1. Write 30 as 3 × 10¹.\n2. Multiply the front numbers: 2.4 × 3 = 7.2.\n3. Multiply the powers of 10: 10⁵ × 10¹ = 10⁶.\n4. The total is 7.2 × 10⁶ bolts.\n\nCheck: 240,000 × 30 = 7,200,000, which is 7.2 × 10⁶.\n\n**Wrong choices**\n- 7.2 × 10⁵: 7.2 × 10⁵ multiplies by 3 instead of 30; it forgets the factor of 10 in 30.\n- 7.2 × 10⁷: 7.2 × 10⁷ adds two to the power of 10, but 30 has only one factor of 10.\n- 2.4003 × 10⁵: 2.4003 × 10⁵ adds 30 to 240,000 instead of multiplying.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "scientific notation"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "ged-math-number-sense-0008",
+    "certId": "ged-math",
+    "subjectId": "quantitative",
+    "chapterId": "number-sense",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "What is the value of (2³)² × 2⁻⁴?",
+    "choices": [
+      "1,024",
+      "32",
+      "2",
+      "4"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Power of a power: multiply exponents; same base: add",
+    "explanation": "1. Power of a power: (2³)² = 2^(3 × 2) = 2⁶.\n2. Same base multiplied: 2⁶ × 2⁻⁴ = 2^(6 + (−4)) = 2².\n3. 2² = 4.\n\nCheck: (2³)² = 8² = 64, and 2⁻⁴ = 1/16. 64 × 1/16 = 4.\n\n**Wrong choices**\n- 2: 2 adds the exponents 3 and 2 inside the power (getting 2⁵) instead of multiplying them.\n- 32: 32 squares the exponent 3 to get 2⁹; the rule is to multiply 3 × 2.\n- 1,024: 1,024 treats −4 as +4 and gets 2¹⁰.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "exponents",
+      "rules of exponents"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "ged-math-number-sense-0009",
+    "certId": "ged-math",
+    "subjectId": "quantitative",
+    "chapterId": "number-sense",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "For which value of x is the expression 12 / (x − 5) undefined?",
+    "choices": [
+      "x = 0",
+      "x = 12",
+      "x = 5",
+      "x = −5"
+    ],
+    "answer": 3,
+    "oneLineConcept": "A fraction is undefined when its denominator is 0",
+    "explanation": "1. Division by zero is undefined, so find where the bottom equals 0.\n2. x − 5 = 0.\n3. x = 5.\n\nCheck: With x = 5 the expression becomes 12 / 0, which has no value.\n\n**Wrong choices**\n- x = 0: With x = 0 the expression is 12 / (−5) = −2.4, which is defined.\n- x = −5: With x = −5 the expression is 12 / (−10) = −1.2, which is defined.\n- x = 12: With x = 12 the expression is 12 / 7, which is defined. A top of 12 does not cause a problem.",
+    "frequency": 2,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "undefined expressions",
+      "division by zero"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "ged-math-number-sense-0010",
+    "certId": "ged-math",
+    "subjectId": "quantitative",
+    "chapterId": "number-sense",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A square rug has an area of 81 square feet. A cube-shaped storage box has a volume of 64 cubic feet. How much longer is one side of the rug than one edge of the box?",
+    "choices": [
+      "17 feet",
+      "1 foot",
+      "5 feet",
+      "13 feet"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Square side = √area; cube edge = ∛volume",
+    "explanation": "1. Side of the square rug: √81 = 9 feet.\n2. Edge of the cube box: ∛64 = 4 feet (because 4 × 4 × 4 = 64).\n3. Difference: 9 − 4 = 5 feet.\n\nCheck: 9 × 9 = 81 square feet and 4 × 4 × 4 = 64 cubic feet.\n\n**Wrong choices**\n- 1 foot: 1 foot uses the square root of 64 (8) for the box; a cube needs the cube root.\n- 17 feet: 17 feet subtracts the area and volume (81 − 64) instead of comparing lengths.\n- 13 feet: 13 feet adds the two lengths instead of finding the difference.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "square roots",
+      "cube roots"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "ged-math-number-sense-0011",
+    "certId": "ged-math",
+    "subjectId": "quantitative",
+    "chapterId": "number-sense",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A worker earns $18.50 per hour for the first 40 hours of a week and 1.5 times that rate for overtime. Last week he worked 46 hours. What was his total pay before deductions?",
+    "choices": [
+      "$1,276.50",
+      "$860.00",
+      "$906.50",
+      "$851.00"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Pay regular and overtime hours at their own rates",
+    "explanation": "1. Regular pay: 40 × $18.50 = $740.00.\n2. Overtime rate: 1.5 × $18.50 = $27.75 per hour.\n3. Overtime hours: 46 − 40 = 6. Overtime pay: 6 × $27.75 = $166.50.\n4. Total: $740.00 + $166.50 = $906.50.\n\nCheck: Think of it as 46 regular hours ($851.00) plus an extra half rate for 6 hours (6 × $9.25 = $55.50). $851.00 + $55.50 = $906.50.\n\n**Wrong choices**\n- $851.00: $851.00 pays all 46 hours at the regular rate and leaves out the overtime extra.\n- $860.00: $860.00 adds $1.50 to the hourly rate instead of multiplying the rate by 1.5.\n- $1,276.50: $1,276.50 pays all 46 hours at the overtime rate; only the 6 hours over 40 get the higher rate.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "decimals",
+      "paycheck",
+      "overtime"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "ged-math-number-sense-0012",
+    "certId": "ged-math",
+    "subjectId": "quantitative",
+    "chapterId": "number-sense",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "An electrician has three rolls of cable that are 30 feet, 45 feet, and 75 feet long. She wants to cut all of them into pieces of the same length, as long as possible, with nothing left over. How many pieces will she have in all?",
+    "choices": [
+      "15 pieces",
+      "30 pieces",
+      "10 pieces",
+      "3 pieces"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Longest equal piece with no waste = the GCF",
+    "explanation": "1. The longest piece that divides all three lengths is their greatest common factor.\n2. GCF of 30, 45, and 75 is 15 feet.\n3. Pieces: 30 ÷ 15 = 2, 45 ÷ 15 = 3, 75 ÷ 15 = 5.\n4. Total: 2 + 3 + 5 = 10 pieces.\n\nCheck: 10 pieces × 15 feet = 150 feet, and 30 + 45 + 75 = 150 feet of cable.\n\n**Wrong choices**\n- 15 pieces: 15 is the length of each piece in feet, not the number of pieces.\n- 30 pieces: 30 pieces uses 5-foot pieces; 5 feet divides all three, but it is not the longest possible length.\n- 3 pieces: 3 is the number of rolls, not the number of pieces.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "GCF",
+      "word problem"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "ged-math-number-sense-0013",
+    "certId": "ged-math",
+    "subjectId": "quantitative",
+    "chapterId": "number-sense",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "What is the value of 64^(2/3)?",
+    "choices": [
+      "16",
+      "4",
+      "8",
+      "42.67"
+    ],
+    "answer": 1,
+    "oneLineConcept": "a^(m/n): take the n-th root, then raise to m",
+    "explanation": "1. The bottom of the exponent (3) means take the cube root: ∛64 = 4.\n2. The top of the exponent (2) means square the result: 4² = 16.\n\nCheck: Do it in the other order: 64² = 4,096, and ∛4,096 = 16 because 16 × 16 × 16 = 4,096.\n\n**Wrong choices**\n- 42.67: 42.67 multiplies 64 by 2/3; an exponent is not a multiplier.\n- 8: 8 is the square root of 64; the exponent 2/3 calls for a cube root, then squaring.\n- 4: 4 is only the cube root; it still needs to be squared.",
+    "frequency": 2,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "rational exponents",
+      "roots"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "ged-math-number-sense-0014",
+    "certId": "ged-math",
+    "subjectId": "quantitative",
+    "chapterId": "number-sense",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "On a number line, point A is at −3 1/2 and point B is at 2 3/4. What is the distance between A and B?",
+    "choices": [
+      "−6 1/4",
+      "6 1/4",
+      "5 1/4",
+      "3/4"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Distance = absolute value of the difference",
+    "explanation": "1. Distance = |B − A|.\n2. B − A = 2 3/4 − (−3 1/2) = 2 3/4 + 3 1/2.\n3. 2 3/4 + 3 2/4 = 5 5/4 = 6 1/4.\n4. The distance is 6 1/4 units.\n\nCheck: From −3 1/2 to 0 is 3 1/2 units, and from 0 to 2 3/4 is 2 3/4 units. 3 1/2 + 2 3/4 = 6 1/4.\n\n**Wrong choices**\n- 3/4: 3/4 subtracts 2 3/4 from 3 1/2, as if both points were on the same side of 0.\n- −6 1/4: A distance is never negative; −6 1/4 has the wrong sign.\n- 5 1/4: 5 1/4 adds the whole numbers but forgets that 1/2 + 3/4 is more than 1.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "distance on number line",
+      "absolute value",
+      "mixed numbers"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "ged-math-number-sense-0015",
+    "certId": "ged-math",
+    "subjectId": "quantitative",
+    "chapterId": "number-sense",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A truck's fuel tank holds 30 gallons and starts full. On Monday the driver uses 2/5 of the full tank. On Tuesday he uses 1/3 of what is left after Monday. How many gallons are left after Tuesday?",
+    "choices": [
+      "18 gallons",
+      "6 gallons",
+      "8 gallons",
+      "12 gallons"
+    ],
+    "answer": 4,
+    "oneLineConcept": "\"Of what is left\" means multiply the remaining amount",
+    "explanation": "1. Monday: 2/5 × 30 = 12 gallons used. Left: 30 − 12 = 18 gallons.\n2. Tuesday: 1/3 × 18 = 6 gallons used. Left: 18 − 6 = 12 gallons.\n\nCheck: After Monday 3/5 remains, and after Tuesday 2/3 of that remains. 30 × 3/5 × 2/3 = 12 gallons.\n\n**Wrong choices**\n- 8 gallons: 8 gallons takes 1/3 of the full 30 gallons on Tuesday, but the problem says 1/3 of what was left.\n- 6 gallons: 6 gallons is the amount used on Tuesday, not the amount left.\n- 18 gallons: 18 gallons is what was left after Monday only.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-24",
+    "tags": [
+      "fractions",
+      "multi-step"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  }
+]

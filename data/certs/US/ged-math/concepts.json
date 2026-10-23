@@ -1,0 +1,640 @@
+{
+  "by": "ai",
+  "chapters": {
+    "number-sense": {
+      "verifiedAt": "2026-10-24",
+      "summary": [
+        "This chapter covers the number skills that sit underneath every other math question: comparing and ordering fractions and decimals, finding factors and multiples, working with exponents and roots, using absolute value, and doing multi-step arithmetic with positive and negative numbers. On the GED test a calculator is provided for most questions, but not all of them, so these skills need to work by hand as well.",
+        "To compare numbers written in different forms, change them all to one form first, usually decimals. Factors are numbers that divide evenly into a number, and multiples are what you get when you multiply it by a whole number (1, 2, 3, ...). The greatest common factor helps with cutting things into equal pieces, while the least common multiple tells you when repeating events line up again.",
+        "Exponents count repeated multiplication. When the same base is multiplied, the exponents are added, and a power raised to a power multiplies the exponents. For a number that is zero or positive, a square root undoes squaring; a cube root undoes cubing for any number. Absolute value is a distance from zero, so it is never negative, and the distance between two numbers on a number line is the absolute value of their difference.",
+        "For long calculations, follow the order of operations: parentheses, exponents, multiplication and division from left to right, and then addition and subtraction from left to right. A fraction with zero on the bottom has no value, so it is called undefined."
+      ],
+      "concepts": [
+        {
+          "term": "Order of operations",
+          "definition": "Work inside parentheses first, then exponents, then multiplication and division from left to right, then addition and subtraction from left to right.",
+          "tip": "Do not simply work left to right; multiplication and division come before addition and subtraction."
+        },
+        {
+          "term": "GCF and LCM",
+          "definition": "The greatest common factor (GCF) is the largest number that divides two numbers evenly. The least common multiple (LCM) is the smallest positive number that both numbers divide into evenly.",
+          "tip": "Equal pieces with no waste: GCF. Schedules lining up again: LCM."
+        },
+        {
+          "term": "Rules of exponents",
+          "definition": "Same base multiplied: add the exponents. Power of a power: multiply the exponents. A negative exponent means one over the positive power, such as 2⁻² = 1/4. A fraction exponent like 2/3 means a cube root, then squaring.",
+          "tip": "Check a rule by writing the multiplication out once."
+        },
+        {
+          "term": "Square and cube roots",
+          "definition": "The square root of a number is the non-negative number you square to get it (√49 = 7, even though (−7)² is also 49). The cube root is what you cube to get it (∛64 = 4).",
+          "tip": "A square's side is √area; a cube's edge is ∛volume."
+        },
+        {
+          "term": "Absolute value and distance",
+          "definition": "Absolute value is the distance of a number from 0, written |x|. It is never negative. The distance between two numbers a and b on a number line is |a − b|.",
+          "tip": "From −8 to 15 is 8 + 15 = 23 units."
+        },
+        {
+          "term": "Undefined expressions",
+          "definition": "Division by zero has no value. An expression such as 12 / (x − 5) is undefined when its bottom equals zero, here at x = 5.",
+          "tip": "Set the denominator equal to 0 to find where it is undefined."
+        }
+      ],
+      "points": [
+        "Change fractions to decimals before ordering a mixed list.",
+        "Subtracting a negative number is the same as adding a positive one.",
+        "To multiply in scientific notation, multiply the front numbers and add the powers of 10. If the front number is 10 or more, move the decimal left and add 1 to the power (20 × 10⁵ = 2 × 10⁶).",
+        "Read word problems for \"of what is left\": that amount, not the original, gets multiplied."
+      ],
+      "compare": {
+        "title": "GCF and LCM",
+        "columns": [
+          "Item",
+          "GCF",
+          "LCM"
+        ],
+        "rows": [
+          [
+            "Meaning",
+            "Largest number that divides both",
+            "Smallest positive number both divide into"
+          ],
+          [
+            "Example (12 and 18)",
+            "6",
+            "36"
+          ],
+          [
+            "Typical use",
+            "Cutting into equal, largest pieces",
+            "When repeating schedules meet again"
+          ]
+        ]
+      }
+    },
+    "ratios-percents": {
+      "verifiedAt": "2026-10-24",
+      "summary": [
+        "This chapter covers rates, ratios, proportions, scale drawings, unit conversions, and percent problems such as tax, tips, discounts, markups, commissions, percent change, and simple interest. The GED assessment targets name real-world percent problems such as tips, commissions, and percent increase and decrease.",
+        "A unit rate tells how much of one thing for one unit of another, such as dollars per ounce or miles per hour. To compare prices, divide each total price by the number of units and pick the smallest. A proportion sets two equal ratios side by side, and cross-multiplying solves for the missing value. Scale drawings work the same way: multiply each drawing length by the scale to get the real length.",
+        "To find a percent of a number, change the percent to a decimal and multiply. Percent change is the amount of change divided by the original amount. When two percents are applied one after the other, such as a discount and then tax, the second percent is taken of the new amount, not the original.",
+        "Simple interest uses the formula I = Prt from the formula sheet, where P is the amount borrowed or saved, r is the yearly rate as a decimal, and t is the time in years."
+      ],
+      "concepts": [
+        {
+          "term": "Unit rate",
+          "definition": "An amount per one unit, found by dividing. Examples: price ÷ number of items, miles ÷ hours.",
+          "tip": "For the best buy, compare the price per unit, not the total price."
+        },
+        {
+          "term": "Proportion",
+          "definition": "Two equal ratios, such as 3/1,050 = x/1,750. Cross-multiply and divide to find the missing number.",
+          "tip": "Keep the same units on top in both ratios."
+        },
+        {
+          "term": "Percent of a number",
+          "definition": "Change the percent to a decimal by moving the decimal point two places left (18% = 0.18), then multiply.",
+          "tip": "10% is easy to find in your head; use it to check your answer."
+        },
+        {
+          "term": "Percent change",
+          "definition": "Percent change = (new − old) ÷ old × 100. A positive result is an increase and a negative result is a decrease.",
+          "tip": "Always divide by the original (old) amount."
+        },
+        {
+          "term": "Simple interest",
+          "definition": "I = Prt, where I = interest, P = principal (amount borrowed or saved), r = yearly rate as a decimal, t = time in years. The total owed is P + I.",
+          "tip": "Use 0.04 for 4%, not 4.",
+          "source": {
+            "org": "GED Testing Service (Mathematics Formula Sheet)",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Unit conversion",
+          "definition": "Multiply or divide by a conversion fact one step at a time, such as 60 minutes = 1 hour or 5,280 feet = 1 mile.",
+          "tip": "Write the units next to each number so you can see them cancel."
+        }
+      ],
+      "points": [
+        "A discount and a markup of the same percent do not cancel out.",
+        "Total with tax = price × (1 + tax rate); sale price = price × (1 − discount rate).",
+        "Area on a scale drawing grows by the scale factor squared.",
+        "Commission pay = base pay + rate × sales."
+      ]
+    },
+    "geometry-2d": {
+      "verifiedAt": "2026-10-24",
+      "summary": [
+        "This chapter covers flat shapes: the perimeter (distance around) and area (space inside) of rectangles, squares, triangles, parallelograms, trapezoids, circles, and shapes made by combining them. It also covers the Pythagorean theorem for right triangles. The GED formula sheet lists these formulas, so the main job is choosing the right one and putting in the right numbers.",
+        "Perimeter is measured in plain units such as feet, while area is measured in square units such as square feet. A triangle's area is half of base times height. For a circle, the radius is the distance from the center to the edge and the diameter is twice the radius. The circumference is the distance around the circle, and the test uses 3.14 for pi.",
+        "For a composite shape, split it into simple shapes, find each area, and add them, or subtract a piece that has been cut out. When an area or perimeter is given, you can work backward to find a missing side or radius.",
+        "In a right triangle, the two shorter sides (legs) and the longest side (hypotenuse) are linked by a² + b² = c². This is useful for ladders, ramps, diagonals of rectangles, and TV screen sizes."
+      ],
+      "concepts": [
+        {
+          "term": "Rectangle and square",
+          "definition": "Rectangle: A = lw and P = 2l + 2w. Square: A = s² and P = 4s.",
+          "tip": "Area is inside (square units); perimeter is around (plain units).",
+          "source": {
+            "org": "GED Testing Service (Mathematics Formula Sheet)",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Triangle, parallelogram, trapezoid",
+          "definition": "Triangle: A = 1/2 bh. Parallelogram: A = bh. Trapezoid: A = 1/2 h(b₁ + b₂). The height is always measured straight up from the base.",
+          "tip": "Do not forget the 1/2 for triangles and trapezoids.",
+          "source": {
+            "org": "GED Testing Service (Mathematics Formula Sheet)",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Circle",
+          "definition": "Area A = πr². Circumference C = 2πr or C = πd. Use π ≈ 3.14. The diameter is twice the radius.",
+          "tip": "Check whether the problem gives the radius or the diameter.",
+          "source": {
+            "org": "GED Testing Service (Mathematics Formula Sheet)",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Pythagorean theorem",
+          "definition": "In a right triangle, a² + b² = c², where c is the longest side, across from the right angle.",
+          "tip": "To find a shorter side, subtract: b² = c² − a².",
+          "source": {
+            "org": "GED Testing Service (Mathematics Formula Sheet)",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Composite figures",
+          "definition": "A shape made of simpler shapes. Find each area and add them, or subtract the area of a cut-out part.",
+          "tip": "A half circle has half the area of the full circle with the same radius."
+        }
+      ],
+      "points": [
+        "Working backward: r = √(A ÷ π) and d = C ÷ π.",
+        "Common right triangles: 3-4-5, 5-12-13, and their multiples such as 6-8-10.",
+        "The hypotenuse is always the longest side, so it must be longer than either leg.",
+        "When a perimeter is given with a relationship between sides, write an equation for the width first."
+      ],
+      "compare": {
+        "title": "Area and circumference of a circle",
+        "columns": [
+          "Item",
+          "Area",
+          "Circumference"
+        ],
+        "rows": [
+          [
+            "Formula",
+            "πr²",
+            "2πr or πd"
+          ],
+          [
+            "Measures",
+            "Space inside",
+            "Distance around"
+          ],
+          [
+            "Units",
+            "Square units",
+            "Plain units"
+          ],
+          [
+            "Radius 5 (π = 3.14)",
+            "78.5",
+            "31.4"
+          ]
+        ]
+      }
+    },
+    "geometry-3d": {
+      "verifiedAt": "2026-10-24",
+      "summary": [
+        "This chapter covers solid shapes: rectangular boxes, right prisms, cylinders, pyramids, cones, spheres, and solids built from them. You will find volume (how much a shape holds) and surface area (how much material covers the outside), and you will work backward to find a missing height, radius, or side. The GED formula sheet lists all of these formulas.",
+        "Volume is measured in cubic units, such as cubic feet. For any prism or cylinder, the volume is the area of the base times the height. A pyramid or cone with the same base and height holds exactly one-third of that amount. A sphere uses its own formula, four-thirds times pi times the radius cubed.",
+        "Surface area adds up the areas of all the outside faces. For a closed cylinder, that means the curved side plus the two circular ends. For a composite solid, such as a cylinder with a cone on top, find the volume of each part and add them."
+      ],
+      "concepts": [
+        {
+          "term": "Rectangular prism",
+          "definition": "V = lwh. SA = 2lw + 2lh + 2wh. A cube is a prism with all edges equal.",
+          "tip": "Height = volume ÷ (length × width).",
+          "source": {
+            "org": "GED Testing Service (Mathematics Formula Sheet)",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Right prism and cylinder",
+          "definition": "Right prism: V = Bh and SA = ph + 2B, where B is the base area and p is the base perimeter. Cylinder: V = πr²h and SA = 2πrh + 2πr².",
+          "tip": "Volume of any prism or cylinder = base area × height.",
+          "source": {
+            "org": "GED Testing Service (Mathematics Formula Sheet)",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Pyramid and cone",
+          "definition": "Pyramid: V = 1/3 Bh and SA = 1/2 ps + B. Cone: V = 1/3 πr²h and SA = πrs + πr², where s is the slant height.",
+          "tip": "Pointed solids hold one-third of the matching prism or cylinder.",
+          "source": {
+            "org": "GED Testing Service (Mathematics Formula Sheet)",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Sphere",
+          "definition": "V = 4/3 πr³ and SA = 4πr². Use π ≈ 3.14.",
+          "tip": "Volume uses r cubed; surface area uses r squared.",
+          "source": {
+            "org": "GED Testing Service (Mathematics Formula Sheet)",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Volume vs. surface area",
+          "definition": "Volume measures what fits inside (cubic units). Surface area measures the outside covering (square units).",
+          "tip": "Filling or holding: volume. Painting or wrapping: surface area."
+        }
+      ],
+      "points": [
+        "Watch for diameter given in place of radius.",
+        "For a closed cylinder, include both circular ends in the surface area.",
+        "Composite solid volume = sum of the volumes of its parts.",
+        "To find a missing height, divide the volume by the base area."
+      ]
+    },
+    "data-statistics": {
+      "verifiedAt": "2026-10-24",
+      "summary": [
+        "This chapter covers reading data from tables, bar graphs, circle graphs, dot plots, box plots, and scatter plots, and describing data with the mean, median, mode, and range. It also covers weighted averages, counting the number of possible outcomes, and finding probabilities.",
+        "The mean is the total divided by the number of values. The median is the middle value after the data are put in order; with an even number of values it is the mean of the two middle values. The mode is the value that appears most often, and the range is the largest value minus the smallest. A box plot shows the middle half of the data inside the box, and the length of the box is the interquartile range.",
+        "A weighted average multiplies each value by its weight before adding. When a needed average is given, multiply it by the number of values to get the total needed, then subtract the values you already have to find the missing one.",
+        "To count choices made in steps, multiply the number of options at each step. When order matters, as with different jobs, the count is a permutation; when order does not matter, as with a committee, divide out the repeated orders to get a combination. Probability is the number of favorable outcomes divided by the total number of equally likely outcomes."
+      ],
+      "concepts": [
+        {
+          "term": "Mean and median",
+          "definition": "Mean = total of the values ÷ number of values. Median = middle value of the ordered data, or the mean of the two middle values when the count is even.",
+          "tip": "Always put the data in order before finding the median.",
+          "source": {
+            "org": "GED Testing Service (Mathematics Formula Sheet)",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Mode and range",
+          "definition": "The mode is the most frequent value. The range is the largest value minus the smallest value.",
+          "tip": "Range uses the smallest and largest values, not the first and last in the list."
+        },
+        {
+          "term": "Weighted average",
+          "definition": "Multiply each value by its weight (or count), add the results, and divide by the total weight.",
+          "tip": "If weights are percents that add to 100%, just multiply and add."
+        },
+        {
+          "term": "Counting principle",
+          "definition": "If one choice has m options and another has n options, there are m × n ways to make both choices.",
+          "tip": "Multiply, do not add, the options at each step."
+        },
+        {
+          "term": "Permutations and combinations",
+          "definition": "Permutation: order matters (6 × 5 × 4 ways to fill 3 different jobs from 6 people). Combination: order does not matter, so divide by the number of ways to arrange the chosen group.",
+          "tip": "Different roles: permutation. Same role (a team): combination."
+        },
+        {
+          "term": "Probability",
+          "definition": "Probability = favorable outcomes ÷ total equally likely outcomes. For two independent events both happening, multiply their probabilities. Without replacement, the second pick has one fewer item.",
+          "tip": "Probability is always between 0 and 1."
+        }
+      ],
+      "points": [
+        "Missing value = (needed average × number of values) − sum of the known values.",
+        "In a box plot, the line inside the box is the median, and the box length is the interquartile range.",
+        "Mean from a frequency table: multiply each value by its count, then divide by the total count.",
+        "\"And\" for independent events means multiply; \"not\" means 1 minus the probability."
+      ],
+      "compare": {
+        "title": "Permutation and combination",
+        "columns": [
+          "Item",
+          "Permutation",
+          "Combination"
+        ],
+        "rows": [
+          [
+            "Order matters?",
+            "Yes",
+            "No"
+          ],
+          [
+            "Example",
+            "Driver, loader, checker from 6 workers",
+            "A 3-person committee from 7 workers"
+          ],
+          [
+            "Count",
+            "6 × 5 × 4 = 120",
+            "(7 × 6 × 5) ÷ (3 × 2 × 1) = 35"
+          ]
+        ]
+      }
+    },
+    "expressions-polynomials": {
+      "verifiedAt": "2026-10-24",
+      "summary": [
+        "This chapter covers algebraic expressions: writing them from word descriptions, evaluating them by substituting numbers, combining like terms, and adding, subtracting, multiplying, and factoring polynomials. It also covers simple rational expressions, which are fractions with variables in them.",
+        "Like terms have the same variable raised to the same power, and only like terms can be combined. The distributive property multiplies the number outside the parentheses by every term inside, and the sign goes along. When one polynomial is subtracted from another, the sign of every term in the second polynomial changes.",
+        "To multiply two binomials, multiply each term in the first by each term in the second, often remembered as FOIL (first, outer, inner, last), and then combine like terms. Factoring reverses multiplication: take out the greatest common factor first, then look for two numbers that multiply to the constant term and add to the middle coefficient.",
+        "A rational expression is simplified by factoring the top and bottom and canceling a common factor. Only whole factors cancel, never single terms in a sum. To add rational expressions, rewrite them with a common denominator first."
+      ],
+      "concepts": [
+        {
+          "term": "Like terms",
+          "definition": "Terms with the same variable and exponent, such as 4x and −2x. Add or subtract their numbers and keep the variable part.",
+          "tip": "x and x² are not like terms."
+        },
+        {
+          "term": "Distributive property",
+          "definition": "a(b + c) = ab + ac. Multiply the outside number by every term inside, keeping track of signs.",
+          "tip": "−3(2x − 5) = −6x + 15, because negative × negative is positive."
+        },
+        {
+          "term": "Multiplying binomials (FOIL)",
+          "definition": "Multiply First, Outer, Inner, and Last terms, then combine like terms. (a − b)² = a² − 2ab + b².",
+          "tip": "A squared binomial always has a middle term."
+        },
+        {
+          "term": "Factoring",
+          "definition": "Write an expression as a product. Take out the GCF first, then factor trinomials like x² + bx + c into (x + m)(x + n), where m × n = c and m + n = b. A difference of squares a² − b² = (a − b)(a + b).",
+          "tip": "Multiply your factors back to check."
+        },
+        {
+          "term": "Rational expressions",
+          "definition": "Fractions with variables. Simplify by factoring and canceling common factors. Add by using a common denominator.",
+          "tip": "Test your simplified answer with a small number such as x = 2."
+        }
+      ],
+      "points": [
+        "When subtracting polynomials, change the sign of every term in the second one.",
+        "Evaluate with parentheses around substituted negative numbers.",
+        "A fixed fee is added once; a per-unit charge is multiplied by the variable.",
+        "You cannot cancel terms that are added or subtracted, only factors."
+      ]
+    },
+    "linear-equations": {
+      "verifiedAt": "2026-10-24",
+      "summary": [
+        "This chapter covers solving one-variable linear equations, including ones with fractions, decimals, parentheses, and variables on both sides. It also covers writing equations from real situations, solving a formula for one letter, and solving systems of two equations in two unknowns.",
+        "An equation is a balance, so whatever is done to one side must be done to the other. Clear parentheses with the distributive property, collect the variable terms on one side and the numbers on the other, and then divide by the number in front of the variable. Always check by putting the answer back into the original equation.",
+        "In word problems, a fixed amount is added once and a rate is multiplied by the unknown. When two quantities are unknown, such as adult and child tickets, write one equation for the count and one for the money. A system can be solved by substitution, where one equation is put into the other, or by elimination, where the equations are added so one variable cancels."
+      ],
+      "concepts": [
+        {
+          "term": "Solving a linear equation",
+          "definition": "Undo operations in reverse order: first addition or subtraction, then multiplication or division. Do the same step to both sides.",
+          "tip": "Check by substituting your answer into the original equation."
+        },
+        {
+          "term": "Fraction coefficients",
+          "definition": "To undo multiplying by a fraction such as 2/3, multiply both sides by its reciprocal, 3/2.",
+          "tip": "Or multiply every term by the denominator to clear fractions first."
+        },
+        {
+          "term": "Literal equations",
+          "definition": "Formulas with several letters, such as P = 2l + 2w. Solve for one letter using the same steps as with numbers.",
+          "tip": "Test your rearranged formula with simple numbers."
+        },
+        {
+          "term": "Substitution method",
+          "definition": "Solve one equation for a variable and put that expression into the other equation.",
+          "tip": "Best when one equation already says y = ... or x = ...."
+        },
+        {
+          "term": "Elimination method",
+          "definition": "Add or subtract the equations (after multiplying if needed) so one variable cancels.",
+          "tip": "Best when one variable has opposite numbers in front, such as +2y and −2y."
+        },
+        {
+          "term": "Distance formula",
+          "definition": "d = rt (distance = rate × time). Objects moving apart in opposite directions add their speeds.",
+          "tip": "Make sure the time and rate units match.",
+          "source": {
+            "org": "GED Testing Service (Mathematics Formula Sheet)",
+            "year": 2026
+          }
+        }
+      ],
+      "points": [
+        "Distribute before moving terms across the equal sign.",
+        "Two plans cost the same when their cost expressions are set equal.",
+        "Answer the question asked; a system gives two values but the question may want only one.",
+        "Cross-multiply to solve two equal fractions, then distribute to every term."
+      ]
+    },
+    "inequalities": {
+      "verifiedAt": "2026-10-24",
+      "summary": [
+        "This chapter covers linear inequalities in one variable: solving them, showing their solutions on a number line, and writing them from real situations with words such as \"at least\" and \"at most.\"",
+        "An inequality is solved with the same steps as an equation, with one extra rule: when both sides are multiplied or divided by a negative number, the inequality sign flips. On a number line, a closed circle means the endpoint is included (≤ or ≥) and an open circle means it is not (< or >). Shading to the right shows greater values and shading to the left shows smaller values.",
+        "In word problems, \"at most\" and \"no more than\" mean ≤, while \"at least\" and \"no less than\" mean ≥. When the answer must be a whole number, such as a number of guests, round in the direction that keeps the inequality true."
+      ],
+      "concepts": [
+        {
+          "term": "Flipping the sign",
+          "definition": "Multiplying or dividing both sides by a negative number reverses the inequality: < becomes >, and ≤ becomes ≥.",
+          "tip": "Adding or subtracting a negative number does not flip the sign."
+        },
+        {
+          "term": "Number line graphs",
+          "definition": "Closed circle: the endpoint is included (≤, ≥). Open circle: the endpoint is not included (<, >). Shade the side that contains the solutions.",
+          "tip": "x ≤ 3 has a closed circle at 3 and shading to the left."
+        },
+        {
+          "term": "Key words",
+          "definition": "\"At most,\" \"no more than,\" \"maximum\": ≤. \"At least,\" \"no less than,\" \"minimum\": ≥. \"More than\": >. \"Less than\": <.",
+          "tip": "Picture the limit: an elevator limit is a ceiling, so use ≤."
+        },
+        {
+          "term": "Testing a value",
+          "definition": "Substitute a number into the original inequality. If the statement is true, the number is a solution.",
+          "tip": "Test a value on each side of your boundary to check the direction."
+        }
+      ],
+      "points": [
+        "Solve like an equation, then decide whether the sign flips.",
+        "For \"greatest number of guests,\" round down so the budget is not exceeded.",
+        "For \"least score needed,\" use the total needed minus the points already earned.",
+        "Check the endpoint: it works only with ≤ or ≥."
+      ],
+      "compare": {
+        "title": "Open and closed circles",
+        "columns": [
+          "Symbol",
+          "Circle",
+          "Endpoint included?"
+        ],
+        "rows": [
+          [
+            "< or >",
+            "Open",
+            "No"
+          ],
+          [
+            "≤ or ≥",
+            "Closed (filled in)",
+            "Yes"
+          ]
+        ]
+      }
+    },
+    "quadratics": {
+      "verifiedAt": "2026-10-24",
+      "summary": [
+        "This chapter covers quadratic equations, which have an x² term. You will solve them by taking square roots, by factoring, and by using the quadratic formula, and you will write quadratic equations for situations involving area, consecutive numbers, and objects thrown in the air.",
+        "Before factoring, move every term to one side so the equation equals zero. If a product equals zero, at least one factor must be zero, so each factor is set equal to zero and solved. An equation such as x² = 49 has two answers, 7 and −7, because both square to 49.",
+        "When an equation does not factor easily, use the quadratic formula from the formula sheet. Identify a, b, and c from the standard form ax² + bx + c = 0 and substitute carefully, especially when b or c is negative. In real situations, throw away answers that make no sense, such as a negative length."
+      ],
+      "concepts": [
+        {
+          "term": "Standard form",
+          "definition": "A quadratic equation in standard form is ax² + bx + c = 0 (the formula sheet writes the function as y = ax² + bx + c).",
+          "tip": "Move all terms to one side before factoring or using the formula.",
+          "source": {
+            "org": "GED Testing Service (Mathematics Formula Sheet)",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Zero product property",
+          "definition": "If (x − 3)(x + 5) = 0, then x − 3 = 0 or x + 5 = 0, so x = 3 or x = −5.",
+          "tip": "The answers have the opposite signs of the numbers in the factors."
+        },
+        {
+          "term": "Square root method",
+          "definition": "When the equation is x² = k, x = √k or x = −√k. Get x² alone first.",
+          "tip": "Do not forget the negative answer."
+        },
+        {
+          "term": "Quadratic formula",
+          "definition": "x = [−b ± √(b² − 4ac)] / 2a. The part under the root, b² − 4ac, is computed first.",
+          "tip": "If b is negative, −b is positive.",
+          "source": {
+            "org": "GED Testing Service (Mathematics Formula Sheet)",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Quadratics in context",
+          "definition": "Area problems (w × (w + 4) = 96), consecutive numbers (n(n + 1) = 132), and heights of thrown objects (h = −16t² + 64t) lead to quadratic equations.",
+          "tip": "Keep only answers that make sense, such as positive lengths and times."
+        }
+      ],
+      "points": [
+        "Set the equation equal to zero before factoring.",
+        "Check each answer by substituting it back into the original equation.",
+        "For a thrown object, \"lands\" or \"hits the ground\" means height = 0.",
+        "Divide every part of the numerator by 2a when simplifying the quadratic formula."
+      ]
+    },
+    "graphs-functions": {
+      "verifiedAt": "2026-10-24",
+      "summary": [
+        "This chapter covers the coordinate plane, slope, equations of lines, parallel and perpendicular lines, function notation, and reading key features of graphs and tables. Many of the algebra targets in the GED assessment guide involve graphs and functions.",
+        "A point (x, y) is plotted by moving x units left or right and then y units up or down from the origin. The four quadrants are numbered counterclockwise starting from the upper right. Slope measures steepness: rise over run, or the change in y divided by the change in x. A line going up from left to right has a positive slope.",
+        "In slope-intercept form, y = mx + b, m is the slope and b is the y-intercept, where the line crosses the y-axis. In real situations, the slope is a rate such as dollars per hour, and the y-intercept is a starting amount such as a flat fee. The point-slope form, y − y₁ = m(x − x₁), writes the equation of a line from one point and a slope. Parallel lines have equal slopes, and perpendicular slopes are negative reciprocals.",
+        "A function gives exactly one output for each input. Function notation f(5) means put 5 in for x. Key features of a graph include its intercepts, where it rises or falls, and its highest or lowest point. To compare two functions shown in different ways, find each one's rate of change and starting value."
+      ],
+      "concepts": [
+        {
+          "term": "Slope",
+          "definition": "m = (y₂ − y₁) / (x₂ − x₁), the rise divided by the run. Positive slopes go up to the right, negative slopes go down.",
+          "tip": "Subtract the y-values and x-values in the same order.",
+          "source": {
+            "org": "GED Testing Service (Mathematics Formula Sheet)",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Slope-intercept form",
+          "definition": "y = mx + b, where m is the slope and b is the y-intercept (the value of y when x = 0).",
+          "tip": "In a cost formula, m is the rate and b is the starting fee.",
+          "source": {
+            "org": "GED Testing Service (Mathematics Formula Sheet)",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Point-slope form",
+          "definition": "y − y₁ = m(x − x₁) gives the line with slope m through the point (x₁, y₁).",
+          "tip": "Distribute and solve for y to change it to y = mx + b.",
+          "source": {
+            "org": "GED Testing Service (Mathematics Formula Sheet)",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Parallel and perpendicular",
+          "definition": "Parallel lines have the same slope. Perpendicular lines have slopes that are negative reciprocals, such as 2/3 and −3/2, which multiply to −1.",
+          "tip": "Flip the fraction and change the sign."
+        },
+        {
+          "term": "Function",
+          "definition": "A rule that gives exactly one output for each input. A table or set of pairs is not a function if one x-value has two different y-values.",
+          "tip": "Two inputs sharing the same output is allowed."
+        },
+        {
+          "term": "Key features",
+          "definition": "x-intercepts (where y = 0), y-intercept (where x = 0), intervals where the graph increases or decreases, and maximum or minimum points.",
+          "tip": "For a table, the maximum is the largest output value."
+        }
+      ],
+      "points": [
+        "Quadrant I (+, +), II (−, +), III (−, −), IV (+, −).",
+        "Slope is rise over run, never run over rise.",
+        "In a proportional relationship (y = kx), the unit rate k is the slope.",
+        "To compare functions, find each one's rate of change and its value at x = 0."
+      ],
+      "compare": {
+        "title": "Parallel and perpendicular lines",
+        "columns": [
+          "Item",
+          "Parallel",
+          "Perpendicular"
+        ],
+        "rows": [
+          [
+            "Slopes",
+            "Equal",
+            "Negative reciprocals"
+          ],
+          [
+            "Example for slope 2/3",
+            "2/3",
+            "−3/2"
+          ],
+          [
+            "Product of slopes",
+            "Not used",
+            "−1"
+          ]
+        ]
+      },
+      "figures": [
+        {
+          "image": "ged-slope-concept.svg",
+          "alt": "Coordinate grid from −6 to 6 with the line y = (2/3)x + 1. The point (0, 1) on the y-axis is labeled as the y-intercept. A dashed path goes from (0, 1) 3 units right, labeled run = 3, then 2 units up to (3, 3), labeled rise = 2. A note reads slope = rise ÷ run = 2/3.",
+          "caption": "Slope is rise over run between two points, and the y-intercept is where the line crosses the y-axis.",
+          "source": {
+            "kind": "self"
+          }
+        }
+      ]
+    }
+  }
+}

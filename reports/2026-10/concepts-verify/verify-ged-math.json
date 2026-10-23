@@ -1,0 +1,75 @@
+{
+  "slug": "ged-math",
+  "date": "2026-10-24",
+  "method": "Separate agent re-checked every sentence against the GED Assessment Guide / formula sheet and standard math",
+  "chapters": {
+    "number-sense": {
+      "result": "FAIL",
+      "notes": "All math correct (exponent rules, 2^-2 = 1/4, fractional exponent, roots, |a - b|, -8 to 15 = 23, GCF 6 / LCM 36 for 12 and 18, undefined at x = 5, scientific notation). Summary is prose and matches the cards. Test claim 'the first few questions are answered without a calculator' is not in ag.txt (it says only that the calculator is provided for 'most of the items'); ged.com could not be reached (HTTP 503) to confirm the position of the non-calculator items.",
+      "fixes": [
+        "summary[0] last sentence: replace 'On the GED test the first few questions are answered without a calculator, so these skills need to work by hand as well.' with 'On the GED test a calculator is provided for most questions, but not all of them, so these skills need to work by hand as well.'"
+      ]
+    },
+    "ratios-percents": {
+      "result": "FAIL",
+      "notes": "Math correct: unit rate, proportion, percent to decimal, percent change formula, I = Prt matches formula sheet (I = interest, P = principal, r = rate, t = time), price x (1 + tax) / (1 - discount), scale area grows by factor squared, commission. Summary prose consistent with cards. Claim 'These are among the most common real-life questions on the GED Mathematical Reasoning test' is a frequency claim not supported by ag.txt (which gives no per-topic frequency; it only lists Q.3 targets incl. tips, commissions, percent increase/decrease).",
+      "fixes": [
+        "summary[0] second sentence: replace 'These are among the most common real-life questions on the GED Mathematical Reasoning test.' with 'The GED assessment targets name real-world percent problems such as tips, commissions, and percent increase and decrease.'"
+      ]
+    },
+    "geometry-2d": {
+      "result": "PASS",
+      "notes": "All formulas match the formula sheet (square, rectangle, parallelogram, triangle, trapezoid, circle A = pi r^2, C = 2 pi r or pi d, pi ~ 3.14, a^2 + b^2 = c^2). Radius 5 row: 78.5 and 31.4 correct. Working-backward formulas and triples correct. Summary prose consistent. Minor style: 'measured straight up from the base' could read 'measured straight up from the base, at a right angle to it' but is acceptable plain English.",
+      "fixes": []
+    },
+    "geometry-3d": {
+      "result": "PASS",
+      "notes": "Rectangular prism, right prism (SA = ph + 2B, V = Bh), cylinder, pyramid (SA = 1/2 ps + B, V = 1/3 Bh), cone (SA = pi r s + pi r^2, V = 1/3 pi r^2 h), sphere (SA = 4 pi r^2, V = 4/3 pi r^3) all match the formula sheet. 'Formula sheet lists all of these formulas' is true. One-third rule, units, composite volume correct.",
+      "fixes": []
+    },
+    "data-statistics": {
+      "result": "PASS",
+      "notes": "Mean/median definitions match the formula sheet wording. Mode, range, box plot (middle half, IQR), weighted average, missing-value method, counting principle, 6x5x4 = 120, C(7,3) = 35, independent events, complement all correct. Summary prose consistent with cards and compare table.",
+      "fixes": []
+    },
+    "expressions-polynomials": {
+      "result": "PASS",
+      "notes": "Like terms, distributive property, -3(2x - 5) = -6x + 15, FOIL, (a - b)^2, trinomial factoring rule, difference of squares, rational expressions (cancel factors not terms) all correct. Summary prose consistent.",
+      "fixes": []
+    },
+    "linear-equations": {
+      "result": "PASS",
+      "notes": "Balance method, reciprocal for fraction coefficients, literal equations, substitution and elimination correct. d = rt matches formula sheet. Systems by substitution/elimination within assessment target A.2.d. Summary prose consistent.",
+      "fixes": []
+    },
+    "inequalities": {
+      "result": "PASS",
+      "notes": "Sign-flip rule (only multiply/divide by a negative), open/closed circles, shading, key words, rounding direction, testing values all correct. Summary and compare table consistent.",
+      "fixes": []
+    },
+    "quadratics": {
+      "result": "PASS",
+      "notes": "Standard form and quadratic formula match the formula sheet (y = ax^2 + bx + c; x = [-b +/- sqrt(b^2 - 4ac)]/2a). Zero product, square-root method, context examples (w(w+4) = 96 gives w = 8; n(n+1) = 132 gives n = 11; h = -16t^2 + 64t) valid. Summary prose consistent.",
+      "fixes": []
+    },
+    "graphs-functions": {
+      "result": "FAIL",
+      "notes": "Math all correct: slope formula, y = mx + b, point-slope form match the formula sheet; quadrants, parallel/perpendicular (2/3 and -3/2, product -1), function definition, key features consistent with A.5/A.7 targets. Figure alt/caption match the image and cards. Claim 'It is the largest part of the algebra questions on the GED test' is not supported by ag.txt (it gives only 45% quantitative / 55% algebraic, no per-topic share); the site's own examWeight is not an official figure.",
+      "fixes": [
+        "summary[0] second sentence: replace 'It is the largest part of the algebra questions on the GED test.' with 'Many of the algebra targets in the GED assessment guide involve graphs and functions.'"
+      ]
+    }
+  },
+  "figures": {
+    "ged-slope-concept.svg": "1 PASS 2 PASS 3 PASS 5 PASS (tick labels drawn last with white halo, so the line passing the x-axis -2 label does not hide it; line y = (2/3)x + 1 runs (-6,-3) to (6,5) correctly; run 3 from (0,1), rise 2 to (3,3); matches alt text and slope/slope-intercept cards)"
+  },
+  "figureRecheck": {
+    "ged-line-two-points.svg": "1 PASS (all tick labels and point labels (0, -1), (3, 5) legible; the line crosses near the y-axis -2 label but the label is drawn on top with a white halo)"
+  },
+  "recheck": {
+    "number-sense": "2026-10-24 시험 관련 문장·과학적 표기법·배수 정의 → 고친 뒤 재검증 FAIL(제곱근·최소공배수·과학적 표기법 자리올림) → 다시 고친 뒤 3차 재검증 PASS",
+    "ratios-percents": "2026-10-24 시험 관련 문장 고친 뒤 재검증 PASS",
+    "graphs-functions": "2026-10-24 시험 관련 문장 고친 뒤 재검증 PASS"
+  },
+  "final": "10개 단원 모두 PASS"
+}
