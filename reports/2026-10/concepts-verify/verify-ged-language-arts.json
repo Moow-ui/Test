@@ -1,0 +1,64 @@
+{
+  "cert": "ged-language-arts",
+  "date": "2026-10-25",
+  "sourceChecked": "ged.com Test Subjects (https://www.ged.com/en/curriculum.html: RLA 150 min incl. 3 min instructions, 3 sections, 1 written essay with 45 min, 10-min break between parts 2 and 3, MC + drag and drop, select an area, drop down; 145 out of 200 on each test), RLA page (https://www.ged.com/en/curriculum/language-arts.html: informational and literary excerpts, sample MC question, essay analyzing two passages), Assessment Guide for Educators: RLA PDF (cover dated June 2016, contains 'Note on the March 2016 Edition': 75% informational / 25% literary, no stand-alone items, MC has four options, drop-down editing passages 350-450 words drawn primarily from workplace and community documents, literary questions 'focus minimally' on literary elements, ER 45 min separately timed, reporting categories 35/45/20, targets R.2-R.9, L.1.1-L.1.9, L.2.1-L.2.4). Grammar/punctuation rules checked against mainstream edited American English usage.",
+  "chapters": {
+    "informational-texts": { "result": "PASS", "problems": [] },
+    "literary-texts": { "result": "PASS", "problems": [] },
+    "word-meaning-structure": { "result": "PASS", "problems": [] },
+    "argument-analysis": { "result": "PASS", "problems": [] },
+    "grammar-usage": {
+      "result": "FAIL",
+      "problems": [
+        {
+          "sentence": "The rules include commonly confused words, subject-verb agreement, pronoun use, verb tense, and formal usage.",
+          "fix": "Verb tense is not a GED editing target. The Assessment Guide's L.1.1-L.2.4 list does not name it, and the 2002-to-current crosswalk maps the old verb-tense skill only to the subject-verb agreement targets. Either drop 'verb tense' from the list of rules GED editing questions test, or present it separately as general review (e.g., 'This chapter also reviews verb tense, which helps you check whole sentences')."
+        },
+        {
+          "sentence": "A quick test is to expand a contraction: if it is or they are does not fit the sentence, the contraction is wrong.",
+          "fix": "it's also means 'it has' (It's been a long week), so this test gives the wrong result there. Write: 'expand the contraction: if it is / it has or they are does not fit the sentence, the contraction is wrong.' Apply the same change to the concept tip ('Expand the contraction. If it is or they are does not fit...') and to the concept definition 'it's (it is)', which should read 'it's (it is or it has)'. That matches the chapter's own point and compare table."
+        },
+        {
+          "sentence": "Words that sound alike but differ in meaning: ... affect (verb) and effect (noun).",
+          "fix": "Add 'usually': 'affect (usually a verb: to change something) and effect (usually a noun: a result)'. effect can be a verb (to effect change) and affect can be a noun in psychology."
+        }
+      ]
+    },
+    "sentence-structure": { "result": "PASS", "problems": [] },
+    "capitalization-punctuation": {
+      "result": "FAIL",
+      "problems": [
+        {
+          "sentence": "Words that add extra information and can be removed without breaking the sentence, such as an appositive or a which clause. They are set off with commas on both sides.",
+          "fix": "This is true only when the extra information is in the middle of the sentence. At the end, one comma is enough (I spoke with Mr. Lopez, our new safety director.). Write: 'They are set off with commas: one on each side when they are in the middle of a sentence.' The chapter's own point already says 'in the middle of a sentence'. Qualify the summary sentence 'on both sides of extra information such as an appositive ... or a which clause' in the same way."
+        },
+        {
+          "sentence": "Never put a comma right after and, or between a verb and its first item.",
+          "fix": "This is too absolute: a comma after and is correct before an interrupter (and, as a result, the store closed). Limit it to lists: 'In a list, do not put a comma right after the final and, or between a verb and its first item.'"
+        }
+      ]
+    }
+  },
+  "metaProblems": [
+    {
+      "field": "content.faqs[3].answer",
+      "sentence": "GED Testing Service does not publish its test questions.",
+      "fix": "This is misleading: ged.com publishes sample questions (the RLA page shows a sample multiple-choice question) and sells official practice tests. Write: 'GED Testing Service does not release the questions used on the real test (ged.com shows only sample and official practice questions).'"
+    },
+    {
+      "field": "sources[2].title",
+      "sentence": "Assessment Guide for Educators: Reasoning Through Language Arts, March 2016 edition",
+      "fix": "Minor: the PDF cover is dated June 2016, although it contains a 'Note on the March 2016 Edition'. Consider 'March 2016 edition (cover dated June 2016)'. Not a factual error in the content claims."
+    },
+    {
+      "field": "examInfo.passCriteria.description",
+      "sentence": "The real test is scored on a scale of 100 to 200, and you pass with 145 or higher.",
+      "fix": "The ged.com curriculum page cited in sources says only '145 out of 200'. The 100-200 range is widely published by GED Testing Service but is not on the cited pages. Either cite a ged.com scores page or say '145 out of 200'. Treat this as an advisory, not a wrong claim."
+    }
+  ],
+  "notes": [
+    "In concepts.json, the source.year on the 'Informational vs. literary texts' and 'GED essay' concepts is 2026, while the Assessment Guide is a 2016 document. If year means the publication year, use 2016 for the guide (the Test Subjects page fits 2026 as the year it was checked).",
+    "All other examInfo, content, faqs, trendSummary, and studyTips claims match ged.com and the Assessment Guide: 150 min, 3 sections, 45-min essay timed on its own, 10-min break between parts 2 and 3, question types, 75/25 passages, 35/45/20 categories, every item tied to a passage, and no question count published on the site.",
+    "No sentence copies GED or textbook text word for word. The modifier example (almost fixed all) and 'try and' are original rewordings of the guide's examples. Readability is plain English throughout."
+  ]
+}
