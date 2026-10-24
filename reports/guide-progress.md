@@ -10,3 +10,4 @@
 | 2026-10-21 | ko | career | industrial-safety-engineer | industrial-safety-engineer-safety-manager-qualification | 3 | 게시 | 국가법령정보센터 산업안전보건법 시행령(2026. 8. 1. 시행) 제16~19·24조, 별표 3(2024. 6. 25. 개정)·별표 4(2024. 3. 12. 개정) 기준 |
 | 2026-10-22 | en | pass-guide | notary-california | california-notary-exam-passing-score-study-plan | 5 | 게시 | schedule 확인 안 됨 → 다음 차례 (미국 일정 공고처 CPS HR 접속 불가). CA SOS 체크리스트 4쪽·Notary Public Handbook 2026년 1월판 기준 |
 | 2026-10-23 | en | change | uscis-civics-test | uscis-civics-test-2008-vs-2025-version-changes | 5 | 게시 | USCIS Policy Manual Vol.12 Part E Ch.2(2026-10-02 기준)·2025 Civics Test 페이지·M-1778(09/25)·Check for Test Updates 기준 (2008판 vs 2025판, 접수일 2025-10-20 기준) |
+| 2026-10-24 | en | exam-tips | cdl-general-knowledge | cdl-after-knowledge-test-clp-to-skills-test-steps | 5 | 게시 | eCFR 49 CFR 383.25·383.71·383.113·383.133·383.135·380.603·380.609(eCFR 2026-10-22 기준 최신본) 기준. 필기 합격 → CLP(14일·1년) → ELDT → 실기 3단계 순서 |
