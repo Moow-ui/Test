@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 555" width="440" height="555">
+<rect x="0" y="0" width="440" height="555" fill="#fff"/>
+<g fill="none" stroke="#111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<text x="30" y="30" text-anchor="start" font-size="17" font-weight="bold" font-family="sans-serif" fill="#111" stroke="none">자기 유지 회로 — 버튼을 놓아도 동작 유지</text>
+<polyline points="30,70 30,200"/>
+<polyline points="410,70 410,200"/>
+<text x="30" y="62" text-anchor="middle" font-size="15" font-family="sans-serif" fill="#111" stroke="none">(+)</text>
+<text x="410" y="62" text-anchor="middle" font-size="15" font-family="sans-serif" fill="#111" stroke="none">(−)</text>
+<polyline points="30,110 91,110"/>
+<polyline points="109,110 171,110"/>
+<polyline points="189,110 323,110"/>
+<polyline points="357,110 410,110"/>
+<polyline points="140,110 140,170 171,170"/>
+<polyline points="189,170 230,170 230,110"/>
+<circle cx="140" cy="110" r="4" fill="#111" stroke="none"/>
+<circle cx="230" cy="110" r="4" fill="#111" stroke="none"/>
+<polyline points="91,97 91,123"/>
+<polyline points="109,97 109,123"/>
+<polyline points="85,125 115,95"/>
+<text x="100" y="88" text-anchor="middle" font-size="16" font-family="sans-serif" fill="#111" stroke="none">정지</text>
+<polyline points="171,97 171,123"/>
+<polyline points="189,97 189,123"/>
+<text x="180" y="88" text-anchor="middle" font-size="16" font-family="sans-serif" fill="#111" stroke="none">기동</text>
+<polyline points="171,157 171,183"/>
+<polyline points="189,157 189,183"/>
+<circle cx="340" cy="110" r="17" fill="#fff"/>
+<text x="340" y="116" text-anchor="middle" font-size="16" font-family="sans-serif" fill="#111" stroke="none">R</text>
+<text x="250" y="176" text-anchor="start" font-size="14" font-family="sans-serif" fill="#111" stroke="none">← R 의 a 접점</text>
+<text x="30" y="232" text-anchor="start" font-size="14" font-family="sans-serif" fill="#111" stroke="none">기동 버튼을 한 번 눌렀다 떼도 R 의 자기 접점으로 계속 동작</text>
+<polyline points="20,255 420,255"/>
+<text x="30" y="290" text-anchor="start" font-size="17" font-weight="bold" font-family="sans-serif" fill="#111" stroke="none">인터록 회로 — 동시 동작 막기</text>
+<polyline points="30,330 30,480"/>
+<polyline points="410,330 410,480"/>
+<text x="30" y="322" text-anchor="middle" font-size="15" font-family="sans-serif" fill="#111" stroke="none">(+)</text>
+<text x="410" y="322" text-anchor="middle" font-size="15" font-family="sans-serif" fill="#111" stroke="none">(−)</text>
+<polyline points="30,370 101,370"/>
+<polyline points="119,370 201,370"/>
+<polyline points="219,370 323,370"/>
+<polyline points="357,370 410,370"/>
+<polyline points="101,357 101,383"/>
+<polyline points="119,357 119,383"/>
+<text x="110" y="348" text-anchor="middle" font-size="16" font-family="sans-serif" fill="#111" stroke="none">기동1</text>
+<polyline points="201,357 201,383"/>
+<polyline points="219,357 219,383"/>
+<polyline points="195,385 225,355"/>
+<text x="210" y="348" text-anchor="middle" font-size="16" font-family="sans-serif" fill="#111" stroke="none">R2</text>
+<circle cx="340" cy="370" r="17" fill="#fff"/>
+<text x="340" y="376" text-anchor="middle" font-size="16" font-family="sans-serif" fill="#111" stroke="none">R1</text>
+<polyline points="30,450 101,450"/>
+<polyline points="119,450 201,450"/>
+<polyline points="219,450 323,450"/>
+<polyline points="357,450 410,450"/>
+<polyline points="101,437 101,463"/>
+<polyline points="119,437 119,463"/>
+<text x="110" y="428" text-anchor="middle" font-size="16" font-family="sans-serif" fill="#111" stroke="none">기동2</text>
+<polyline points="201,437 201,463"/>
+<polyline points="219,437 219,463"/>
+<polyline points="195,465 225,435"/>
+<text x="210" y="428" text-anchor="middle" font-size="16" font-family="sans-serif" fill="#111" stroke="none">R1</text>
+<circle cx="340" cy="450" r="17" fill="#fff"/>
+<text x="340" y="456" text-anchor="middle" font-size="16" font-family="sans-serif" fill="#111" stroke="none">R2</text>
+<text x="30" y="512" text-anchor="start" font-size="14" font-family="sans-serif" fill="#111" stroke="none">상대 릴레이의 b 접점을 넣어, 한쪽이 동작하면</text>
+<text x="30" y="534" text-anchor="start" font-size="14" font-family="sans-serif" fill="#111" stroke="none">다른 쪽은 동작하지 못함 (예: 전동기 정회전과 역회전)</text>
+</g>
+</svg>
