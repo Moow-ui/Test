@@ -7,39 +7,41 @@
 
 같은 종류가 이어지지 않게 나라·분야를 섞었다. 새로 추가된 `high` 자격증은 이 목록 끝에 덧붙인다.
 
-1. US cdl-general-knowledge · vehicle-inspection
-2. KR electrician-craftsman · ac-circuit (교류회로)
-3. US dmv-permit-florida · signs-signals-markings
-4. KR electrical-industrial-engineer · ac-circuit (직류·교류 회로)
-5. KR construction-safety-engineer · fall-temporary (추락 방지와 가설 구조물)
-6. US dmv-permit-new-york · road-signs
-7. KR industrial-safety-industrial-engineer · safety-organization (보호구·안전표지)
-8. US dmv-permit-pennsylvania · signs-signals-markings (MUTCD 표지판 추가)
-9. US dmv-permit-illinois · signs-signals-markings (MUTCD 표지판 추가)
-10. US dmv-permit-ohio · regulatory-signs (MUTCD 규제 표지)
-11. US dmv-permit-ohio · signals-markings (신호·노면 표시)
-12. KR word-processor · doc-writing (교정부호 모양)
-13. KR programming-craftsman · computer-structure (논리 회로)
-14. US asvab · electricity (회로도)
-15. KR information-processing-engineer · data-structure (트리·그래프)
-16. KR computer-literacy-1 · formulas (엑셀 화면·표)
-17. US asvab · mechanics (도르래·지레)
-18. KR computer-literacy-2 · formulas (엑셀 화면·표)
-19. US mblex · muscles-attachments (근육 위치)
-20. KR korean-history-advanced · three-kingdoms (지도)
-21. US nasm-cpt · anatomy-biomechanics (인체 부위·운동면)
-22. US esthetician-nic-theory · anatomy-physiology (피부·인체 구조)
-23. KR beautician-general · haircut (커트 형태·시술 각도)
-24. KR beautician-skin · anatomy (뼈·근육 위치)
-25. US dmv-permit-georgia · warning-signs (MUTCD 표지판 추가)
-26. US dmv-permit-north-carolina · warning-signs (MUTCD 표지판 추가)
-27. US home-inspector-nhie · electrical (분전반·배선 구조)
-28. KR forest-engineer · torrent-dam (사방댐 구조)
-29. KR adsp · data-mining (의사결정나무·덴드로그램)
-30. US dmv-permit-michigan · guide-signs (노선 표지·안내 표지, MUTCD)
-31. KR care-worker · emergency-end-of-life (심폐소생술 손 위치·회복 자세)
-32. KR computer-graphics-operator · color-scheme (배색: 표색계·색상환)
-33. US ged-math · geometry-2d (Perimeter, Area, and the Pythagorean Theorem)
+1. KR electrician-craftsman · ac-circuit (교류회로)
+2. US dmv-permit-florida · signs-signals-markings
+3. KR electrical-industrial-engineer · ac-circuit (직류·교류 회로)
+4. KR construction-safety-engineer · fall-temporary (추락 방지와 가설 구조물)
+5. US dmv-permit-new-york · road-signs
+6. KR industrial-safety-industrial-engineer · safety-organization (보호구·안전표지)
+7. US dmv-permit-pennsylvania · signs-signals-markings (MUTCD 표지판 추가)
+8. US dmv-permit-illinois · signs-signals-markings (MUTCD 표지판 추가)
+9. US dmv-permit-ohio · regulatory-signs (MUTCD 규제 표지)
+10. US dmv-permit-ohio · signals-markings (신호·노면 표시)
+11. KR word-processor · doc-writing (교정부호 모양)
+12. KR programming-craftsman · computer-structure (논리 회로)
+13. US asvab · electricity (회로도)
+14. KR information-processing-engineer · data-structure (트리·그래프)
+15. KR computer-literacy-1 · formulas (엑셀 화면·표)
+16. US asvab · mechanics (도르래·지레)
+17. KR computer-literacy-2 · formulas (엑셀 화면·표)
+18. US mblex · muscles-attachments (근육 위치)
+19. KR korean-history-advanced · three-kingdoms (지도)
+20. US nasm-cpt · anatomy-biomechanics (인체 부위·운동면)
+21. US esthetician-nic-theory · anatomy-physiology (피부·인체 구조)
+22. KR beautician-general · haircut (커트 형태·시술 각도)
+23. KR beautician-skin · anatomy (뼈·근육 위치)
+24. US dmv-permit-georgia · warning-signs (MUTCD 표지판 추가)
+25. US dmv-permit-north-carolina · warning-signs (MUTCD 표지판 추가)
+26. US home-inspector-nhie · electrical (분전반·배선 구조)
+27. KR forest-engineer · torrent-dam (사방댐 구조)
+28. KR adsp · data-mining (의사결정나무·덴드로그램)
+29. US dmv-permit-michigan · guide-signs (노선 표지·안내 표지, MUTCD)
+30. KR care-worker · emergency-end-of-life (심폐소생술 손 위치·회복 자세)
+31. KR computer-graphics-operator · color-scheme (배색: 표색계·색상환)
+32. US ged-math · geometry-2d (Perimeter, Area, and the Pythagorean Theorem)
+33. KR hazardous-materials-craftsman · transport (운반용기·이동탱크 표지 모양)
+34. US ged-science · earth-systems (물·암석 순환 흐름)
+35. KR hazardous-materials-industrial-engineer · transport (운반용기·이동탱크 표지 모양)
 
 ## 기록
 
@@ -55,6 +57,7 @@
 | 2026-10-23 | US dmv-permit-texas · signs-signals-markings | 8/8 | 1 | MUTCD 표지 8종(W3-1 stop ahead, W3-3 signal ahead, R15-1 crossbuck, W4-1 merge, W6-1 divided highway, W2-1 cross road, R4-7 keep right, R5-1a wrong way, 퍼블릭 도메인) 그림 문제 + 개념 그림 1(표지 모양). 체크리스트 전부 PASS |
 | 2026-10-24 | KR excavator-operator · work-device | 6/6 | 1 | 굴착기 옆모습(붐·암·버킷·카운터웨이트 표시), 붐·암·버킷 실린더 위치, 작업장치 4종(버킷·크램셸·리퍼·브레이커) 그림 문제 6개 + 개념 그림 1(각 부분 이름), 직접 그림. 체크리스트 전부 PASS. 게시한 medium 자격증 computer-graphics-operator·ged-math 의 다음 그림 단원을 다음 할 일 끝에 덧붙임 |
 | 2026-10-25 | KR fire-facility-engineer-electrical · control-logic | 8/8 | 1 | NOR 기호, XOR 진리표, AND·OR 회로식, A + A'B 간소화, 드모르간(NAND), a 접점 병렬, 자기 유지, 인터록 그림 문제 8개 + 개념 그림 1(자기 유지와 인터록), 직접 그림. 체크리스트 전부 PASS. 오늘 게시한 hazardous-materials-craftsman(medium)은 게시 때 facility-maintenance 그림을 넣었고 다른 단원은 8장 기준 그림 필요가 애매해 목록에 넣지 않음, ged-language-arts 는 none |
+| 2026-10-26 | US cdl-general-knowledge · vehicle-inspection | 8/8 | 1 | 타이어 홈 깊이 자(3/32인치, 2문항)·판스프링 8장 중 2장 부러짐·휠 너트 녹 자국·핸들 유격 3인치·순회 점검 평면도·측면 표시등(2문항) (직접 그림, NY CDL-10 Section 2 대조). 개념 그림: 타이어 홈 최소 깊이. 1차 2장 ①(글자 닿음·받침판이 9번째 판처럼 보임) → 고친 뒤 재검증 PASS. [리포트](2026-10/verify-images-cdl-general-knowledge-vehicle-inspection.md) |
 
 ## 메모 (실패·보류 사유)
 

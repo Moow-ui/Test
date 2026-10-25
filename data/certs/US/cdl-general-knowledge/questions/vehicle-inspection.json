@@ -290,5 +290,296 @@
         2
       ]
     }
+  },
+  {
+    "id": "cdl-general-knowledge-vehicle-inspection-0011",
+    "certId": "cdl-general-knowledge",
+    "subjectId": "general-knowledge",
+    "chapterId": "vehicle-inspection",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "You measure a major groove on a front (steering) tire. The picture shows the result: 3/32 inch. What does this mean?",
+    "choices": [
+      "The tire is fine because it has more than 2/32 inch",
+      "The tire is fine as long as no fabric shows",
+      "The tire is too worn because front tires need at least 4/32 inch"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Front tires need at least 4/32 inch of tread in every major groove",
+    "explanation": "Front (steering) tires need **at least 4/32 inch** of tread depth in every major groove. The picture shows a groove only 3/32 inch deep, which is less than 4/32 inch. So this front tire is too worn and should be replaced before you drive.\n\nThe front tires steer the vehicle, so the rule for them is stricter than for the other tires.\n\n**Wrong choices**\n- The tire is fine because it has more than 2/32 inch: 2/32 inch is the minimum for the other tires, not for the front tires.\n- The tire is fine as long as no fabric shows: Showing fabric is a separate defect. A tire can still be too worn before any fabric shows.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-26",
+    "tags": [
+      "tire tread",
+      "front tires",
+      "figure"
+    ],
+    "image": "tread-depth-3-32.svg",
+    "imageAlt": "Cut-away drawing of a tire tread with one groove. A ruler next to it is marked in 32nds of an inch from 0 at the tread surface down to 8. Dashed lines show the groove bottom lines up with the 3 mark. Text below: Groove depth measured: 3/32 inch.",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cdl-general-knowledge-vehicle-inspection-0012",
+    "certId": "cdl-general-knowledge",
+    "subjectId": "general-knowledge",
+    "chapterId": "vehicle-inspection",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "This time you measure a major groove on a rear drive tire, not a front tire. The picture shows the result: 3/32 inch. What does this mean?",
+    "choices": [
+      "It meets the minimum, because tires other than the front tires need at least 2/32 inch",
+      "It is too worn, because every tire needs at least 4/32 inch",
+      "It is too worn, because drive tires need at least 6/32 inch"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Tires other than the front tires need at least 2/32 inch of tread",
+    "explanation": "Front tires need at least 4/32 inch of tread, but **all other tires need at least 2/32 inch**. A rear drive tire is not a front tire, so its minimum is 2/32 inch. The groove in the picture is 3/32 inch deep, which is more than 2/32 inch, so it meets the minimum.\n\nMore tread is always better, especially in rain and snow, so keep checking it.\n\n**Wrong choices**\n- It is too worn, because every tire needs at least 4/32 inch: The 4/32 inch rule is only for the front (steering) tires.\n- It is too worn, because drive tires need at least 6/32 inch: The manual does not set a 6/32 inch rule. Tires other than the front tires need 2/32 inch.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-26",
+    "tags": [
+      "tire tread",
+      "figure"
+    ],
+    "image": "tread-depth-3-32.svg",
+    "imageAlt": "Cut-away drawing of a tire tread with one groove. A ruler next to it is marked in 32nds of an inch from 0 at the tread surface down to 8. Dashed lines show the groove bottom lines up with the 3 mark. Text below: Groove depth measured: 3/32 inch.",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "cdl-general-knowledge-vehicle-inspection-0013",
+    "certId": "cdl-general-knowledge",
+    "subjectId": "general-knowledge",
+    "chapterId": "vehicle-inspection",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "The picture shows a leaf spring assembly with 8 leaves. Two leaves are broken, but the main (top) leaf is not broken and no leaf is missing. What happens to this vehicle?",
+    "choices": [
+      "It may keep driving, because the main leaf is not broken",
+      "It is put out of service until the spring is repaired",
+      "It may keep driving if the broken leaves are fixed within 30 days"
+    ],
+    "answer": 2,
+    "oneLineConcept": "A quarter or more broken leaves in a spring means out of service",
+    "explanation": "A vehicle is put **out of service** if one-fourth or more of the leaves in any spring assembly are broken.\n\n1. The spring has 8 leaves.\n2. One-fourth of 8 is 2.\n3. Two leaves are broken, so one-fourth of the leaves are broken.\n\nThat meets the out-of-service rule, so the vehicle must be repaired before it is driven. A missing leaf or a broken main leaf would also put it out of service, even if only one leaf were affected.\n\n**Wrong choices**\n- It may keep driving, because the main leaf is not broken: A broken main leaf is only one of the out-of-service conditions. One-fourth or more broken leaves is another one.\n- It may keep driving if the broken leaves are fixed within 30 days: Out of service means the vehicle cannot be driven until it is repaired. There is no 30-day grace period.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-26",
+    "tags": [
+      "suspension",
+      "leaf spring",
+      "out of service",
+      "figure"
+    ],
+    "image": "leaf-spring-2-of-8-broken.svg",
+    "imageAlt": "Side view of a leaf spring made of 8 stacked steel leaves, longest on top with an eye at each end, held by two U-bolts in the middle. Two of the lower leaves each have a gap and are labeled broken. A note says the top leaf is the main leaf.",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "cdl-general-knowledge-vehicle-inspection-0014",
+    "certId": "cdl-general-knowledge",
+    "subjectId": "general-knowledge",
+    "chapterId": "vehicle-inspection",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "During the walk-around, you see streaks of rust coming from one lug nut, as in the picture. What should you do?",
+    "choices": [
+      "Test that lug nut with a wrench, because it may be loose",
+      "Wipe the rust off so the wheel looks clean",
+      "Ignore it, because rust on wheels is normal"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Rust streaks at a lug nut can mean it is loose; test it with a wrench",
+    "explanation": "Rust around wheel nuts **may mean the nuts are loose**. During the walk-around, the manual says to use a wrench to test rust-streaked lug nuts. A loose lug nut can let the wheel come off.\n\nAlso, after a tire has been changed, stop a short while later and check the nuts again.\n\n**Wrong choices**\n- Wipe the rust off so the wheel looks clean: Cleaning the rust hides the warning sign and does not fix a loose nut.\n- Ignore it, because rust on wheels is normal: Rust streaks from a lug nut are a sign of a possible problem and must be checked.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-26",
+    "tags": [
+      "wheels",
+      "lug nuts",
+      "walk-around",
+      "figure"
+    ],
+    "image": "wheel-lug-nut-rust-streaks.svg",
+    "imageAlt": "Side view of a truck wheel with 10 six-sided lug nuts in a circle around the hub. Dotted streaks run down from one lug nut on the right side and are labeled streaks (rust). Another nut is labeled lug nut.",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "cdl-general-knowledge-vehicle-inspection-0015",
+    "certId": "cdl-general-knowledge",
+    "subjectId": "general-knowledge",
+    "chapterId": "vehicle-inspection",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "You check steering play on a 20-inch steering wheel. As the picture shows, the rim moves 3 inches before the front wheels start to move. What does this mean?",
+    "choices": [
+      "It is normal, because up to 4 inches of play is allowed",
+      "It is normal for a vehicle with power steering",
+      "There is too much play, which can make the vehicle hard to steer"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Over 10 degrees (about 2 in. on a 20-inch wheel) is too much play",
+    "explanation": "Steering wheel play of **more than 10 degrees** can make the vehicle hard to steer. On a 20-inch steering wheel, 10 degrees is about **2 inches** of movement at the rim.\n\nIn the picture, the rim moves 3 inches before the front wheels move. That is more than 2 inches, so there is too much play. Have the steering system checked before driving.\n\n**Wrong choices**\n- It is normal, because up to 4 inches of play is allowed: The limit is about 2 inches at the rim of a 20-inch wheel, not 4 inches.\n- It is normal for a vehicle with power steering: The play rule is the same with power steering. With power steering, you also check the hoses, pump, and fluid level.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-26",
+    "tags": [
+      "steering",
+      "steering wheel play",
+      "figure"
+    ],
+    "image": "steering-wheel-3-inch-play.svg",
+    "imageAlt": "A round steering wheel labeled 20-inch steering wheel, with three spokes. At the top of the rim, a start mark and an end mark are joined by a curved arrow labeled rim moves 3 inches. Text below: Front wheels have not moved yet.",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cdl-general-knowledge-vehicle-inspection-0016",
+    "certId": "cdl-general-knowledge",
+    "subjectId": "general-knowledge",
+    "chapterId": "vehicle-inspection",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "In Step 5 of the seven-step inspection, the walk-around checks the left front side (A) first and then the front of the vehicle. Using the picture, which area do you check next?",
+    "choices": [
+      "The rear (C)",
+      "The right side (B)",
+      "The left side again, at A"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Walk order: left front, front, right side, right rear, rear, left side",
+    "explanation": "The manual's walk-around goes around the vehicle in one direction so nothing is missed. The order is:\n\n1. Left front side\n2. Front\n3. Right side\n4. Right rear\n5. Rear\n6. Left side\n\nSo after the front, you go to the **right side (B)**. There you check the right front wheel the same way as the left front, plus the fuel tanks, the visible parts under the vehicle, and cargo securement.\n\n**Wrong choices**\n- The rear (C): The rear comes after the right side and the right rear.\n- The left side again, at A: The left side is checked last, after the rear.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-26",
+    "tags": [
+      "seven-step inspection",
+      "walk-around",
+      "figure"
+    ],
+    "image": "walk-around-top-view.svg",
+    "imageAlt": "Top view of a straight truck with the front at the top. The cab has a windshield and the driver's seat on the left. Circle A is beside the left front, circle B is beside the middle of the right side, and circle C is behind the rear.",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "cdl-general-knowledge-vehicle-inspection-0017",
+    "certId": "cdl-general-knowledge",
+    "subjectId": "general-knowledge",
+    "chapterId": "vehicle-inspection",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "The picture shows the right side of a straight truck. During the walk-around, what color should side-marker light B, at the rear end of the side, be?",
+    "choices": [
+      "White",
+      "Amber",
+      "Red"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Side-marker lights are red at the rear and amber everywhere else",
+    "explanation": "During the walk-around, side-marker lights must be clean, working, and the proper color: **red at the rear, others amber**. Light B is at the rear end of the side, so it should be **red**.\n\nSide-marker reflectors follow the same rule: red at the rear, others amber.\n\n**Wrong choices**\n- White: White is not a side-marker color. White is allowed on turn signals that face forward.\n- Amber: Amber is for the side-marker lights that are not at the rear, such as light A.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-26",
+    "tags": [
+      "lights",
+      "side-marker lights",
+      "walk-around",
+      "figure"
+    ],
+    "image": "side-marker-lights-a-b.svg",
+    "imageAlt": "Right side view of a straight truck, front on the left and rear on the right. Two small lights sit low on the side of the cargo box: A near the front end of the box and B at the rear end. A note says A and B are side-marker lights.",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cdl-general-knowledge-vehicle-inspection-0018",
+    "certId": "cdl-general-knowledge",
+    "subjectId": "general-knowledge",
+    "chapterId": "vehicle-inspection",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "The picture shows the right side of a straight truck. Side-marker light A is on the side near the front end of the cargo box, not at the rear. What color should light A be?",
+    "choices": [
+      "Amber",
+      "Red",
+      "Blue"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Side-marker lights that are not at the rear are amber",
+    "explanation": "The manual says side-marker lights must be the proper color: **red at the rear, others amber**. Light A is not at the rear, so it should be **amber**.\n\nOnly the side-marker lights at the rear (like light B) are red.\n\n**Wrong choices**\n- Red: Red is only for the side-marker lights at the rear.\n- Blue: Blue is not a side-marker light color.",
+    "frequency": 2,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-26",
+    "tags": [
+      "lights",
+      "side-marker lights",
+      "walk-around",
+      "figure"
+    ],
+    "image": "side-marker-lights-a-b.svg",
+    "imageAlt": "Right side view of a straight truck, front on the left and rear on the right. Two small lights sit low on the side of the cargo box: A near the front end of the box and B at the rear end. A note says A and B are side-marker lights.",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ]
+    }
   }
 ]
