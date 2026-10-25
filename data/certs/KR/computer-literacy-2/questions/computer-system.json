@@ -198,5 +198,112 @@
       "운영체제"
     ],
     "levelLock": true
+  },
+  {
+    "id": "computer-literacy-2-computer-system-0001",
+    "certId": "computer-literacy-2",
+    "subjectId": "computer-general",
+    "chapterId": "computer-system",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "다음 기억 용량 단위 중 가장 큰 것은?",
+    "choices": [
+      "GB(기가바이트)",
+      "MB(메가바이트)",
+      "TB(테라바이트)",
+      "KB(킬로바이트)"
+    ],
+    "answer": 3,
+    "oneLineConcept": "기억 용량은 KB → MB → GB → TB 순으로 커진다",
+    "explanation": "기억 용량 단위는 **KB < MB < GB < TB** 순서로 커집니다. 한 단계 올라갈 때마다 약 1,024배가 됩니다. 따라서 이 가운데 가장 큰 단위는 **TB(테라바이트)** 입니다.\n\n**틀린 선지**\n- ① GB(기가바이트): GB 는 TB 보다 한 단계 작습니다(1TB = 1,024GB).\n- ② MB(메가바이트): MB 는 GB 보다도 작은 단위입니다.\n- ④ KB(킬로바이트): KB 는 이 가운데 가장 작은 단위입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-25",
+    "tags": [
+      "기억 용량 단위"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "computer-literacy-2-computer-system-0002",
+    "certId": "computer-literacy-2",
+    "subjectId": "computer-general",
+    "chapterId": "computer-system",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "컴퓨터의 ROM에 저장되어 있으며, 전원을 켜면 하드웨어를 점검하고 기본적인 입출력을 담당하는 프로그램은?",
+    "choices": [
+      "바이오스(BIOS)",
+      "레지스터",
+      "채널",
+      "가상 메모리"
+    ],
+    "answer": 1,
+    "oneLineConcept": "바이오스(BIOS)는 ROM에 들어 있는 기본 입출력 프로그램",
+    "explanation": "**바이오스(BIOS)** 는 '기본 입출력 시스템'이라는 뜻입니다. ROM에 들어 있어 전원이 꺼져도 지워지지 않고, 컴퓨터를 켜면 가장 먼저 실행되어 하드웨어를 점검하고 운영체제를 불러옵니다. 이처럼 ROM에 넣어 둔 프로그램을 펌웨어라고 합니다.\n\n**틀린 선지**\n- ② 레지스터: CPU 안에 있는 아주 빠른 임시 기억장치입니다. 프로그램이 아닙니다.\n- ③ 채널: CPU 대신 입출력 작업을 맡아 처리하는 장치입니다.\n- ④ 가상 메모리: 하드디스크 같은 보조기억장치의 일부를 주기억장치처럼 쓰는 방법입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-25",
+    "tags": [
+      "바이오스",
+      "ROM"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "computer-literacy-2-computer-system-0003",
+    "certId": "computer-literacy-2",
+    "subjectId": "computer-general",
+    "chapterId": "computer-system",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "CPU 안에 있으며, 처리 중인 명령이나 데이터를 잠시 기억하는 가장 빠른 기억장치는?",
+    "choices": [
+      "레지스터",
+      "캐시 메모리",
+      "주기억장치(RAM)",
+      "가상 메모리"
+    ],
+    "answer": 1,
+    "oneLineConcept": "레지스터는 CPU 안의 가장 빠른 임시 기억장치",
+    "explanation": "**레지스터** 는 CPU 안에 있는 아주 작은 기억장치로, 지금 처리하고 있는 명령과 데이터를 잠깐 담아 둡니다. 기억장치의 속도는 **레지스터 > 캐시 메모리 > 주기억장치 > 보조기억장치** 순으로 빠릅니다.\n\n**틀린 선지**\n- ② 캐시 메모리: CPU 와 주기억장치 사이의 속도 차이를 줄이는 장치로, 레지스터보다는 느립니다.\n- ③ 주기억장치(RAM): 실행할 프로그램을 올려 두는 곳으로, 레지스터·캐시보다 느립니다.\n- ④ 가상 메모리: 보조기억장치를 주기억장치처럼 쓰는 방법이라 가장 느린 쪽에 속합니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-25",
+    "tags": [
+      "레지스터",
+      "기억장치"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   }
 ]

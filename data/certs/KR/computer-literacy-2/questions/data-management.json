@@ -153,5 +153,76 @@
       "정렬"
     ],
     "levelLock": true
+  },
+  {
+    "id": "computer-literacy-2-data-management-0001",
+    "certId": "computer-literacy-2",
+    "subjectId": "spreadsheet",
+    "chapterId": "data-management",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "엑셀에서 열 머리글에 목록 단추를 만들어, 원하는 조건에 맞는 행만 화면에 보이게 하고 나머지 행은 숨기는 기능은?",
+    "choices": [
+      "부분합",
+      "목표값 찾기",
+      "자동 필터",
+      "통합"
+    ],
+    "answer": 3,
+    "oneLineConcept": "자동 필터는 조건에 맞는 행만 보이고 나머지는 숨긴다",
+    "explanation": "**자동 필터** 를 켜면 각 열 제목 옆에 목록 단추(▼)가 생깁니다. 이 단추에서 조건을 고르면 그 조건에 맞는 행만 보이고 나머지 행은 잠시 숨겨집니다. 데이터가 지워지는 것은 아닙니다.\n\n**틀린 선지**\n- ① 부분합: 같은 항목끼리 묶어 합계·평균 등을 계산해 넣는 기능입니다.\n- ② 목표값 찾기: 원하는 결과값이 나오도록 입력값을 거꾸로 찾는 기능입니다.\n- ④ 통합: 여러 범위의 데이터를 하나로 모아 합계 등을 계산하는 기능입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-25",
+    "tags": [
+      "자동 필터",
+      "필터"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "computer-literacy-2-data-management-0002",
+    "certId": "computer-literacy-2",
+    "subjectId": "spreadsheet",
+    "chapterId": "data-management",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "셀에 1부터 100 사이의 정수만 입력할 수 있게 제한하고, 잘못된 값을 넣으면 오류 메시지가 나타나게 하는 기능은?",
+    "choices": [
+      "조건부 서식",
+      "데이터 유효성 검사",
+      "고급 필터",
+      "텍스트 나누기"
+    ],
+    "answer": 2,
+    "oneLineConcept": "데이터 유효성 검사는 셀에 들어갈 값을 미리 제한한다",
+    "explanation": "**데이터 유효성 검사** 는 셀에 입력할 수 있는 값의 종류와 범위(정수, 날짜, 목록 등)를 미리 정해 두는 기능입니다. 정해진 범위를 벗어난 값을 넣으면 오류 메시지가 나타나 입력을 막습니다.\n\n**틀린 선지**\n- ① 조건부 서식: 조건에 맞는 셀의 글자색·배경색 등 모양을 바꾸는 기능입니다. 입력을 막지는 않습니다.\n- ③ 고급 필터: 조건에 맞는 행만 골라 보여 주거나 다른 곳에 복사하는 기능입니다.\n- ④ 텍스트 나누기: 한 셀에 쉼표 등으로 이어진 내용을 여러 열로 나누는 기능입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-25",
+    "tags": [
+      "데이터 유효성 검사"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   }
 ]

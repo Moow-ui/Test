@@ -248,5 +248,148 @@
         4
       ]
     }
+  },
+  {
+    "id": "computer-literacy-2-formulas-0001",
+    "certId": "computer-literacy-2",
+    "subjectId": "spreadsheet",
+    "chapterId": "formulas",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "=LEFT(\"컴퓨터활용능력\", 3) 의 결과는?",
+    "choices": [
+      "컴퓨터",
+      "활용",
+      "능력",
+      "컴퓨터활"
+    ],
+    "answer": 1,
+    "oneLineConcept": "LEFT(문자열, 개수)는 왼쪽부터 개수만큼 글자를 꺼낸다",
+    "explanation": "**LEFT** 함수는 글자의 **왼쪽부터** 정한 개수만큼 잘라 냅니다. \"컴퓨터활용능력\"의 왼쪽부터 3글자를 꺼내면 **컴퓨터** 가 됩니다. 한글도 한 글자를 1개로 셉니다.\n\n**틀린 선지**\n- ② 활용: 가운데 글자를 꺼낸 결과로, MID 함수를 써야 나옵니다.\n- ③ 능력: 오른쪽 2글자로, RIGHT(\"컴퓨터활용능력\", 2) 의 결과입니다.\n- ④ 컴퓨터활: 왼쪽 4글자이므로 개수를 4로 써야 나옵니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-25",
+    "tags": [
+      "문자 함수",
+      "LEFT"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "computer-literacy-2-formulas-0002",
+    "certId": "computer-literacy-2",
+    "subjectId": "spreadsheet",
+    "chapterId": "formulas",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "엑셀에서 어떤 값을 0으로 나누는 수식을 입력했을 때 나타나는 오류 값은?",
+    "choices": [
+      "#N/A",
+      "#NAME?",
+      "#VALUE!",
+      "#DIV/0!"
+    ],
+    "answer": 4,
+    "oneLineConcept": "#DIV/0! 은 0으로 나누었을 때 나오는 오류",
+    "explanation": "**#DIV/0!** 은 '0으로 나눔(DIVide by 0)'이라는 뜻입니다. =10/0 처럼 0으로 나누거나, 나누는 셀이 비어 있을 때 나타납니다.\n\n**틀린 선지**\n- ① #N/A: 찾는 값이 없을 때(예: VLOOKUP 에서 값을 못 찾음) 나오는 오류입니다.\n- ② #NAME?: 함수 이름을 잘못 썼을 때 나오는 오류입니다.\n- ③ #VALUE!: 숫자가 와야 할 곳에 문자를 넣는 등 인수의 종류가 틀렸을 때 나오는 오류입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-25",
+    "tags": [
+      "오류 값"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "computer-literacy-2-formulas-0003",
+    "certId": "computer-literacy-2",
+    "subjectId": "spreadsheet",
+    "chapterId": "formulas",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "=ROUNDUP(12.341, 1) 의 결과는?",
+    "choices": [
+      "12.4",
+      "12.3",
+      "13",
+      "12.34"
+    ],
+    "answer": 1,
+    "oneLineConcept": "ROUNDUP(수, 1)은 소수 첫째 자리까지 남기고 무조건 올린다",
+    "explanation": "**ROUNDUP** 은 무조건 **올림** 하는 함수입니다. 뒤의 숫자 1은 '소수 첫째 자리까지 남긴다'는 뜻입니다.\n\n1. 12.341 에서 소수 첫째 자리까지 남기면 12.3 이 됩니다.\n2. 뒤에 남은 0.041 이 있으므로 올려서 **12.4** 가 됩니다.\n\n**틀린 선지**\n- ② 12.3: 내림한 결과로, ROUNDDOWN(12.341, 1) 이나 ROUND(12.341, 1) 의 결과입니다.\n- ③ 13: 일의 자리까지 올린 결과로, ROUNDUP(12.341, 0) 의 결과입니다.\n- ④ 12.34: 소수 둘째 자리까지 남긴 결과입니다. ROUNDUP(12.341, 2) 를 써야 나옵니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-25",
+    "tags": [
+      "반올림 함수",
+      "ROUNDUP"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "computer-literacy-2-formulas-0004",
+    "certId": "computer-literacy-2",
+    "subjectId": "spreadsheet",
+    "chapterId": "formulas",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A1:A5 에 80, 55, 90, 70, 60 이 차례로 입력되어 있다. =COUNTIF(A1:A5, \">=70\") 의 결과는?",
+    "choices": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2,
+    "oneLineConcept": "COUNTIF(범위, 조건)은 조건에 맞는 셀의 개수를 센다",
+    "explanation": "**COUNTIF** 는 범위에서 조건에 맞는 셀이 몇 개인지 세는 함수입니다. 조건 \">=70\" 은 '70 이상'이라는 뜻이므로 70 도 포함됩니다.\n\n1. 70 이상인 값: 80, 90, 70\n2. 개수는 **3** 입니다.\n\n**틀린 선지**\n- ① 2: 70 을 빼고 '70 초과(>70)'로 센 결과입니다. >= 는 같은 값도 포함합니다.\n- ③ 4: 70 이상인 값은 80, 90, 70 세 개뿐입니다. 60 은 70 보다 작습니다.\n- ④ 5: 범위 안의 전체 셀 개수입니다. 조건에 맞는 것만 세어야 합니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-25",
+    "tags": [
+      "COUNTIF",
+      "조건 함수"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   }
 ]

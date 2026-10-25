@@ -69,5 +69,41 @@
         4
       ]
     }
+  },
+  {
+    "id": "computer-literacy-2-chart-print-0001",
+    "certId": "computer-literacy-2",
+    "subjectId": "spreadsheet",
+    "chapterId": "chart-print",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "여러 쪽으로 인쇄할 때 표의 제목 행을 모든 쪽의 맨 위에 똑같이 인쇄하려면, [페이지 설정]의 [시트] 탭에서 어느 항목을 지정해야 하는가?",
+    "choices": [
+      "눈금선",
+      "인쇄 영역",
+      "반복할 열",
+      "반복할 행"
+    ],
+    "answer": 4,
+    "oneLineConcept": "[반복할 행]에 제목 행을 지정하면 모든 쪽 위에 인쇄된다",
+    "explanation": "[페이지 설정] → [시트] 탭의 **반복할 행** 에 제목이 있는 행(예: $1:$1)을 지정하면, 인쇄되는 모든 쪽의 맨 위에 그 행이 똑같이 찍힙니다. 표가 길어도 쪽마다 제목을 볼 수 있습니다.\n\n**틀린 선지**\n- ① 눈금선: 셀 사이의 회색 선을 함께 인쇄할지 정하는 항목입니다.\n- ② 인쇄 영역: 시트에서 인쇄할 범위만 정하는 항목입니다.\n- ③ 반복할 열: 모든 쪽의 왼쪽에 같은 열을 반복해 인쇄하는 항목입니다. 맨 위 제목 행에는 [반복할 행]을 씁니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-25",
+    "tags": [
+      "페이지 설정",
+      "인쇄"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
   }
 ]
