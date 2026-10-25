@@ -141,5 +141,112 @@
         4
       ]
     }
+  },
+  {
+    "id": "notary-california-other-notarial-acts-0006",
+    "certId": "notary-california",
+    "subjectId": "notarial-acts",
+    "chapterId": "other-notarial-acts",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "When does California law have a notary certify copies from the notary's own journal?",
+    "choices": [
+      "Only when the signer named in the entry pays a $15 fee",
+      "Whenever any member of the public asks",
+      "When the Secretary of State asks in writing, or when a subpoena or court order calls for copies",
+      "Never, under any circumstances"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Certified journal copies: Secretary of State or court",
+    "explanation": "Government Code section 8205(b)(1) says a notary must give the Secretary of State certified copies of the journal when asked in writing. Section 8206(e) says that when a notary receives a subpoena duces tecum or a court order, the notary must let the journal be examined and copied in the notary's presence and certify those copies if asked.\n\n**Wrong choices**\n- Only when the signer named in the entry pays a $15 fee: No such rule exists. The $15 fee for certifying a copy is for a power of attorney, not a journal.\n- Whenever any member of the public asks: A member of the public who sends a written request gets a photocopy of the line item, at no more than 30 cents per page. It is not a certified copy.\n- Never, under any circumstances: The law requires certified copies for the Secretary of State, and under a subpoena or court order when requested.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-25",
+    "tags": [
+      "certified copy",
+      "journal"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "notary-california-other-notarial-acts-0007",
+    "certId": "notary-california",
+    "subjectId": "notarial-acts",
+    "chapterId": "other-notarial-acts",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which of these is one of a notary public's duties under Government Code section 8205?",
+    "choices": [
+      "Certifying copies of birth certificates",
+      "Taking depositions and affidavits",
+      "Choosing which kind of legal document a client needs",
+      "Preparing wills for clients"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Notaries take depositions and affidavits",
+    "explanation": "Government Code section 8205(a) lists these duties:\n1. Taking acknowledgments and proofs of documents.\n2. Taking depositions and affidavits, and giving oaths and affirmations.\n3. Certifying copies of powers of attorney.\nProtesting unpaid bills of exchange is a duty only for a notary who works for a financial institution, while on the job.\n\n**Wrong choices**\n- Certifying copies of birth certificates: Notaries may not certify copies of birth records. Only the State Registrar, local registrars, and county recorders may.\n- Choosing which kind of legal document a client needs: Selecting or deciding the kind of legal document is the practice of law.\n- Preparing wills for clients: Preparing legal documents is the practice of law, which notaries may not do.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-25",
+    "tags": [
+      "notary powers"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "notary-california-other-notarial-acts-0008",
+    "certId": "notary-california",
+    "subjectId": "notarial-acts",
+    "chapterId": "other-notarial-acts",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A couple asks a California notary to perform their wedding. The notary is not a priest, minister, rabbi, or other person authorized by the Family Code to perform marriages. What should the notary do?",
+    "choices": [
+      "Perform the ceremony and complete an acknowledgment",
+      "Perform the ceremony and record it in the journal",
+      "Explain that a notary commission alone does not allow the notary to perform a marriage",
+      "Perform the ceremony if two witnesses are present"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Notary commission alone: no marriages",
+    "explanation": "The Notary Public Handbook says a notary may perform a marriage only if the notary is also one of the persons authorized under Family Code sections 400 to 402, such as a priest, minister, or rabbi. Being a notary is not enough.\n\n**Wrong choices**\n- Perform the ceremony and complete an acknowledgment: An acknowledgment does not give a notary the power to marry people.\n- Perform the ceremony and record it in the journal: A journal entry does not make the marriage allowed.\n- Perform the ceremony if two witnesses are present: Witnesses do not give a notary the power to perform a marriage.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-25",
+    "tags": [
+      "notary powers",
+      "marriage"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
   }
 ]

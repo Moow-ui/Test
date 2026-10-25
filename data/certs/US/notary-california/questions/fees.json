@@ -381,5 +381,41 @@
       "fees"
     ],
     "levelLock": true
+  },
+  {
+    "id": "notary-california-fees-0013",
+    "certId": "notary-california",
+    "subjectId": "misconduct-fees",
+    "chapterId": "fees",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which of these services has a maximum fee listed in Government Code section 8211?",
+    "choices": [
+      "Giving immigration advice",
+      "Certifying a copy of a power of attorney",
+      "Preparing a grant deed for a client",
+      "Certifying a copy of a birth certificate"
+    ],
+    "answer": 2,
+    "oneLineConcept": "POA copy certification: up to $15",
+    "explanation": "Government Code section 8211(e) sets a maximum fee of $15 for certifying a copy of a power of attorney under Probate Code section 4307. Section 8211 also lists acknowledgments, oaths and jurats, and depositions.\n\n**Wrong choices**\n- Giving immigration advice: This is not a notary service. A notary who is not an attorney may not give legal advice.\n- Preparing a grant deed for a client: Preparing legal documents is the practice of law, which notaries may not do. Section 8211 lists no fee for it.\n- Certifying a copy of a birth certificate: Notaries may not certify copies of birth records. Only the State Registrar, local registrars, and county recorders may.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-25",
+    "tags": [
+      "fees",
+      "power of attorney"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
   }
 ]

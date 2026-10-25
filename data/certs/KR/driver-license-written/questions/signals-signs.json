@@ -567,5 +567,93 @@
         4
       ]
     }
+  },
+  {
+    "id": "driver-license-written-signals-signs-0016",
+    "certId": "driver-license-written",
+    "subjectId": "driving-test",
+    "chapterId": "signals-signs",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "그림의 안전표지가 뜻하는 것은?",
+    "choices": [
+      "앞쪽에 철길건널목이 있으니 주의하라",
+      "신호기가 없는 교차로이니 일시정지하라",
+      "신호기의 신호와 관계없이 진행할 수 있다",
+      "앞쪽에 신호기가 있으니 주의하라"
+    ],
+    "answer": 4,
+    "oneLineConcept": "노란 삼각형 안 신호등 그림 = 앞에 신호기가 있다는 주의표지",
+    "explanation": "노란 바탕에 빨간 테두리의 삼각형은 **주의표지**입니다. 그 안에 빨강·노랑·초록 등이 달린 신호등이 그려져 있으므로, 앞쪽에 **신호기가 있으니 주의하라**는 뜻입니다. 미리 속도를 줄이고 신호를 볼 준비를 합니다.\n\n**틀린 선지**\n- 앞쪽에 철길건널목이 있으니 주의하라: 철길건널목 주의표지에는 기차 그림이 있습니다.\n- 신호기가 없는 교차로이니 일시정지하라: 그림은 신호기가 '있다'는 것을 알립니다. 일시정지를 지시하는 표지도 아닙니다.\n- 신호기의 신호와 관계없이 진행할 수 있다: 신호기가 있으면 그 신호를 따라야 합니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-25",
+    "tags": [
+      "주의표지",
+      "신호기",
+      "그림"
+    ],
+    "image": "sign-caution-traffic-signal.svg",
+    "imageAlt": "빨간 테두리가 있는 노란 바탕의 정삼각형 표지판이다. 가운데에 검은 세로 상자가 있고, 그 안에 위에서부터 빨간색, 노란색, 초록색 동그라미가 하나씩 세로로 놓여 있다",
+    "imageSource": {
+      "kind": "public",
+      "title": "도로교통법 시행규칙 별표6 안전표지",
+      "license": "법령(저작권법 제7조 보호받지 못하는 저작물)을 다시 그림"
+    },
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "driver-license-written-signals-signs-0017",
+    "certId": "driver-license-written",
+    "subjectId": "driving-test",
+    "chapterId": "signals-signs",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "그림의 안전표지가 뜻하는 것은?",
+    "choices": [
+      "앞쪽에서 왼쪽 도로가 합류한다",
+      "앞쪽 도로가 오른쪽으로 굽어 있다",
+      "앞쪽에서 오른쪽 도로가 합류한다",
+      "차는 도로의 오른쪽으로 통행하여야 한다"
+    ],
+    "answer": 3,
+    "oneLineConcept": "노란 삼각형에 오른쪽에서 붙는 선 = 우합류도로 주의표지",
+    "explanation": "노란 바탕에 빨간 테두리의 삼각형이므로 **주의표지**입니다. 굵은 세로 선(지금 달리는 도로)에 **오른쪽 아래에서 올라오는 선**이 붙어 있으므로, 앞쪽에서 오른쪽 도로가 합류한다는 **우합류도로** 표지입니다. 오른쪽에서 들어오는 차에 주의합니다.\n\n**틀린 선지**\n- 앞쪽에서 왼쪽 도로가 합류한다: 좌합류도로 표지는 붙는 선이 왼쪽에 그려져 있습니다.\n- 앞쪽 도로가 오른쪽으로 굽어 있다: 우로 굽은 도로 표지는 도로 한 줄이 오른쪽으로 꺾인 모양이며, 다른 도로가 붙지 않습니다.\n- 차는 도로의 오른쪽으로 통행하여야 한다: 통행 방법을 정하는 것은 파란 바탕의 지시표지입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-25",
+    "tags": [
+      "주의표지",
+      "합류",
+      "그림"
+    ],
+    "image": "sign-caution-right-merge.svg",
+    "imageAlt": "빨간 테두리가 있는 노란 바탕의 정삼각형 표지판이다. 가운데에 위쪽 끝이 뾰족한 굵은 검은 세로 막대가 있고, 그 오른쪽 아래에서 45도로 비스듬히 올라온 조금 가는 검은 곧은 막대가 세로 막대의 아래쪽 중간에 붙어 있다",
+    "imageSource": {
+      "kind": "public",
+      "title": "도로교통법 시행규칙 별표6 안전표지",
+      "license": "법령(저작권법 제7조 보호받지 못하는 저작물)을 다시 그림"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   }
 ]

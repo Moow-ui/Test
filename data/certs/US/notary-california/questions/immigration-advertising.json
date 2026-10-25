@@ -280,5 +280,77 @@
       "advertising"
     ],
     "levelLock": true
+  },
+  {
+    "id": "notary-california-immigration-advertising-0012",
+    "certId": "notary-california",
+    "subjectId": "immigration-foreign-language",
+    "chapterId": "immigration-advertising",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A notary who is not an attorney advertises notary services in Vietnamese on a sign. What must be posted with the advertisement?",
+    "choices": [
+      "The notary's home address and date of birth",
+      "A statement that the notary can help with immigration matters",
+      "A notice in English only saying the notary is licensed",
+      "A notice in English and Vietnamese that says \"I am not an attorney and, therefore, cannot give legal advice about immigration or any other legal matters\" and lists the fees set by law"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Foreign-language ad: two-language notice + fees",
+    "explanation": "Under Government Code section 8219.5(a), a notary who is not an attorney and advertises notary services in another language must post a notice in English and in that language. The notice has two parts:\n1. The statement \"I am not an attorney and, therefore, cannot give legal advice about immigration or any other legal matters.\"\n2. The fees that the law allows a notary to charge.\n\n**Wrong choices**\n- The notary's home address and date of birth: The law does not require these.\n- A statement that the notary can help with immigration matters: This is not the required notice, and it could mislead people.\n- A notice in English only saying the notary is licensed: The notice must be in English and in the other language, and it must say the notary is not an attorney and list the fees.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-25",
+    "tags": [
+      "foreign language",
+      "advertising"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "notary-california-immigration-advertising-0013",
+    "certId": "notary-california",
+    "subjectId": "immigration-foreign-language",
+    "chapterId": "immigration-advertising",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "When must a notary who is not an attorney post the \"I am not an attorney\" notice?",
+    "choices": [
+      "Only when the notary charges the maximum fee",
+      "Only when the notary advertises in English",
+      "When the notary advertises notary services in a language other than English by signs or other written advertising",
+      "Only when the notary works for a bank"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Notice rule: written ads in another language",
+    "explanation": "Under Government Code section 8219.5(a), the notice is required when a notary who is not an attorney advertises notary services in a language other than English by signs or other written communication. A single desk plaque is the only exception.\n\n**Wrong choices**\n- Only when the notary charges the maximum fee: The fee amount does not decide when the rule applies.\n- Only when the notary advertises in English: The rule covers advertising in a language other than English.\n- Only when the notary works for a bank: The notary's employer does not matter.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-25",
+    "tags": [
+      "foreign language",
+      "advertising"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
   }
 ]

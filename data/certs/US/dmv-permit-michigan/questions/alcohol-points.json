@@ -451,5 +451,41 @@
       "points"
     ],
     "levelLock": true
+  },
+  {
+    "id": "dmv-permit-michigan-alcohol-points-0014",
+    "certId": "dmv-permit-michigan",
+    "subjectId": "rules",
+    "chapterId": "alcohol-points",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A driver under 21 has been drinking alcohol (not as part of a religious service). Under Michigan's zero tolerance law, which statement is true?",
+    "choices": [
+      "Driving is legal if the BAC is below 0.08",
+      "Driving is legal if the BAC is below 0.05",
+      "Driving is legal if the BAC is below 0.04",
+      "Driving with any bodily alcohol content from drinking is illegal"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Under 21: any alcohol in the body from drinking is illegal",
+    "explanation": "Michigan has **zero tolerance** for drivers **under 21**. The law forbids driving with **any bodily alcohol content**, which includes **any presence of alcohol in the body from drinking** (the only exception is alcohol taken as part of a religious service). A violation adds **4 points**, and refusing a preliminary breath test under 21 adds **2 points**.\n\n**Wrong choices**\n- Driving is legal if the BAC is below 0.08: 0.08 is the OWI level for adults; under 21 any amount from drinking is illegal.\n- Driving is legal if the BAC is below 0.05: There is no 0.05 allowance for drivers under 21.\n- Driving is legal if the BAC is below 0.04: There is no 0.04 allowance for drivers under 21; any amount from drinking is illegal.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-25",
+    "tags": [
+      "zero tolerance",
+      "under 21"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
   }
 ]

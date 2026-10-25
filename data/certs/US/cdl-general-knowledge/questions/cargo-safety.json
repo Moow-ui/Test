@@ -173,5 +173,36 @@
         2
       ]
     }
+  },
+  {
+    "id": "cdl-general-knowledge-cargo-safety-0007",
+    "certId": "cdl-general-knowledge",
+    "subjectId": "general-knowledge",
+    "chapterId": "cargo-safety",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Under the federal cargo securement rule (49 CFR 393.110), a single 40-foot article on a flatbed is blocked against forward movement by a headerboard. What is the minimum number of tiedowns?",
+    "choices": [
+      "2",
+      "4",
+      "5"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Blocked in front: one tiedown per 10 feet (40 ft = 4)",
+    "explanation": "When an article is **blocked in front** by a headerboard, bulkhead, or other blocking, the federal rule requires **at least one tiedown for every 10 feet of article length** (or part of 10 feet).\n\n1. 40 feet ÷ 10 feet = **4 tiedowns**\n2. This matches the CDL manual rule of one tiedown for each 10 feet of cargo.\n\n**Wrong choices**\n- 2: Two is the minimum for an article longer than 5 feet when it is not blocked, but a 40-foot article blocked in front needs one tiedown for every 10 feet.\n- 5: Five is the count for a 40-foot article that is **not** blocked in front (2 tiedowns for the first 10 feet, plus 1 for each 10 feet after that: 2 + 3 = 5).",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-25",
+    "tags": [
+      "tiedowns",
+      "calculation",
+      "49 CFR 393.110"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ]
+    }
   }
 ]

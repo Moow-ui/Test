@@ -386,5 +386,40 @@
         4
       ]
     }
+  },
+  {
+    "id": "notary-california-seal-changes-records-0012",
+    "certId": "notary-california",
+    "subjectId": "administrative-procedures",
+    "chapterId": "seal-changes-records",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Under Government Code section 8213.5, when may a notary use a post office box as the principal place of business or residence?",
+    "choices": [
+      "Only if the county clerk approves the box",
+      "Only if the notary pays the Secretary of State an extra filing fee",
+      "Only if the notary also gives the Secretary of State a physical street address as the principal place of residence",
+      "Whenever the notary wants, because any mailing address is acceptable"
+    ],
+    "answer": 3,
+    "oneLineConcept": "P.O. box only with a physical street address",
+    "explanation": "Government Code section 8213.5 says a notary may not use a post office box or a commercial mail receiving agency as the principal place of business or residence, unless the notary also gives the Secretary of State a physical street address as the principal place of residence.\n\n**Wrong choices**\n- Only if the county clerk approves the box: The county clerk does not approve addresses. The rule is about what the notary gives the Secretary of State.\n- Only if the notary pays the Secretary of State an extra filing fee: No fee makes a box acceptable. There is no fee for an address change.\n- Whenever the notary wants, because any mailing address is acceptable: A post office box alone is not enough. A physical street address is also required.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-25",
+    "tags": [
+      "address change"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
   }
 ]

@@ -244,5 +244,42 @@
       "타당도 척도"
     ],
     "levelLock": true
+  },
+  {
+    "id": "clinical-psychologist-2-personality-tests-0008",
+    "certId": "clinical-psychologist-2",
+    "subjectId": "psychological-testing",
+    "chapterId": "personality-tests",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "원판 MMPI 는 T점수 70 이상을 높은 점수로 보았다. 재표준화된 MMPI-2 에서 임상척도가 임상적으로 의미 있게 높다고 보는 일반적인 T점수 기준은?",
+    "choices": [
+      "40점 이상",
+      "50점 이상",
+      "65점 이상",
+      "80점 이상"
+    ],
+    "answer": 3,
+    "oneLineConcept": "MMPI-2 임상척도는 T 65 이상을 임상적 상승으로 본다.",
+    "explanation": "MMPI-2 는 점수를 평균 50, 표준편차 10 인 T점수로 바꾸어 해석합니다. 원판 MMPI 는 T 70 을 기준으로 썼지만, MMPI-2 에서 새 규준을 만들면서 기준이 **T 65 이상**으로 낮아졌습니다. 그래서 MMPI-2 에서는 T 65 이상이면 임상적으로 의미 있게 높다고 봅니다.\n\n**틀린 선지**\n- 50점 이상: T점수 50 은 평균이므로 높다고 볼 수 없습니다.\n- 80점 이상: 매우 높은 수준이지만 일반적인 상승 기준은 아닙니다.\n- 40점 이상: 평균(50)보다 낮은 점수이므로 상승 기준이 될 수 없습니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-25",
+    "tags": [
+      "MMPI-2",
+      "T점수",
+      "해석 기준"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
   }
 ]
