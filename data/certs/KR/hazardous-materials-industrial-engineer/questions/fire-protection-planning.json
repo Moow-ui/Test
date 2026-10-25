@@ -1,0 +1,488 @@
+[
+  {
+    "id": "hazardous-materials-industrial-engineer-fire-protection-planning-0001",
+    "certId": "hazardous-materials-industrial-engineer",
+    "subjectId": "fire-prevention-extinguishing",
+    "chapterId": "fire-protection-planning",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "제조소등의 소화설비 기준에서 위험물은 지정수량의 몇 배를 1소요단위로 하는가?",
+    "choices": [
+      "5배",
+      "1배",
+      "100배",
+      "10배"
+    ],
+    "answer": 4,
+    "oneLineConcept": "위험물의 소요단위 = 지정수량의 10배당 1단위",
+    "explanation": "소요단위는 소화설비를 얼마나 갖춰야 하는지 정하는 기준입니다. 위험물안전관리법 시행규칙 별표 17에서 위험물은 지정수량의 10배를 1소요단위로 합니다.\n\n**틀린 선지**\n- 100배: 100배가 아니라 10배가 1소요단위입니다.\n- 5배: 법령에 정한 값이 아닙니다.\n- 1배: 지정수량 그 자체가 1소요단위인 것은 아닙니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-26",
+    "tags": [
+      "소요단위"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "hazardous-materials-industrial-engineer-fire-protection-planning-0002",
+    "certId": "hazardous-materials-industrial-engineer",
+    "subjectId": "fire-prevention-extinguishing",
+    "chapterId": "fire-protection-planning",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "외벽이 내화구조인 위험물 저장소 건축물의 연면적이 450㎡일 때 소요단위는?",
+    "choices": [
+      "3단위",
+      "4.5단위",
+      "9단위",
+      "6단위"
+    ],
+    "answer": 1,
+    "oneLineConcept": "저장소 건축물: 내화구조 150㎡ · 그 밖 75㎡ = 1소요단위",
+    "explanation": "건축물의 소요단위는 제조소·취급소와 저장소, 외벽이 내화구조인지에 따라 기준 면적이 다릅니다.\n\n1. 외벽 내화구조 저장소 → 연면적 150㎡ = 1소요단위\n2. 450 ÷ 150 = 3단위\n3. 검산: 3 × 150 = 450㎡ 로 맞습니다.\n\n**틀린 선지**\n- 4.5단위: 제조소·취급소 기준(100㎡)으로 나눈 값입니다. 저장소는 150㎡가 1단위입니다.\n- 6단위: 외벽이 내화구조가 아닌 저장소 기준(75㎡)으로 나눈 값입니다.\n- 9단위: 외벽이 내화구조가 아닌 제조소 기준(50㎡)으로 나눈 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-26",
+    "tags": [
+      "소요단위 계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "hazardous-materials-industrial-engineer-fire-protection-planning-0003",
+    "certId": "hazardous-materials-industrial-engineer",
+    "subjectId": "fire-prevention-extinguishing",
+    "chapterId": "fire-protection-planning",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "옥내소화전이 가장 많이 설치된 층에 3개가 설치된 제조소의 옥내소화전설비 수원의 양은 최소 몇 ㎥ 이상이어야 하는가?",
+    "choices": [
+      "23.4㎥",
+      "40.5㎥",
+      "7.8㎥",
+      "39㎥"
+    ],
+    "answer": 1,
+    "oneLineConcept": "옥내소화전 수원 = 설치 개수(최대 5개) × 7.8㎥",
+    "explanation": "위험물안전관리법 시행규칙 별표 17에서 옥내소화전 수원은 가장 많이 설치된 층의 설치 개수(5개 이상이면 5개)에 7.8㎥ 를 곱한 양 이상입니다.\n\n1. 설치 개수 3개 (5개 미만이므로 그대로)\n2. 수원 = 3 × 7.8 = 23.4㎥\n\n**틀린 선지**\n- 39㎥: 설치 개수와 관계없이 5개로 계산한 값입니다. 5개 미만이면 실제 설치 개수로 계산합니다.\n- 7.8㎥: 소화전 1개분만 계산한 값입니다.\n- 40.5㎥: 옥외소화전 기준(13.5㎥)을 곱한 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-26",
+    "tags": [
+      "옥내소화전",
+      "수원 계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "hazardous-materials-industrial-engineer-fire-protection-planning-0004",
+    "certId": "hazardous-materials-industrial-engineer",
+    "subjectId": "fire-prevention-extinguishing",
+    "chapterId": "fire-protection-planning",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "옥외소화전 6개가 설치된 제조소의 옥외소화전설비 수원의 양은 최소 몇 ㎥ 이상이어야 하는가?",
+    "choices": [
+      "81㎥",
+      "46.8㎥",
+      "31.2㎥",
+      "54㎥"
+    ],
+    "answer": 4,
+    "oneLineConcept": "옥외소화전 수원 = 설치 개수(최대 4개) × 13.5㎥",
+    "explanation": "옥외소화전 수원은 설치 개수(4개 이상이면 4개)에 13.5㎥ 를 곱한 양 이상입니다(시행규칙 별표 17).\n\n1. 설치 개수 6개 → 4개로 계산\n2. 수원 = 4 × 13.5 = 54㎥\n3. 검산: 13.5 × 4 = 27 × 2 = 54 로 맞습니다.\n\n**틀린 선지**\n- 81㎥: 6개를 모두 곱한 값입니다. 4개 이상이면 4개로 계산합니다.\n- 46.8㎥: 옥내소화전 기준(7.8㎥)으로 6개를 곱한 값입니다.\n- 31.2㎥: 옥내소화전 기준(7.8㎥)으로 4개를 곱한 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-26",
+    "tags": [
+      "옥외소화전",
+      "수원 계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "hazardous-materials-industrial-engineer-fire-protection-planning-0005",
+    "certId": "hazardous-materials-industrial-engineer",
+    "subjectId": "fire-prevention-extinguishing",
+    "chapterId": "fire-protection-planning",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "제조소등에 설치하는 스프링클러설비는 헤드 끝부분의 방사압력이 몇 kPa 이상이고 방수량이 1분당 몇 L 이상이어야 하는가? (살수밀도 특례는 적용하지 않는다)",
+    "choices": [
+      "350kPa 이상, 260L 이상",
+      "100kPa 이상, 80L 이상",
+      "350kPa 이상, 450L 이상",
+      "100kPa 이상, 260L 이상"
+    ],
+    "answer": 2,
+    "oneLineConcept": "스프링클러 100kPa·80L/분 · 옥내소화전 350kPa·260L/분 · 옥외소화전 350kPa·450L/분",
+    "explanation": "위험물안전관리법 시행규칙 별표 17에서 스프링클러설비는 정해진 개수의 헤드를 동시에 사용할 때 각 끝부분의 방사압력 100kPa 이상, 방수량 1분당 80L 이상이어야 합니다.\n\n**틀린 선지**\n- 350kPa 이상, 260L 이상: 옥내소화전설비의 기준입니다.\n- 350kPa 이상, 450L 이상: 옥외소화전설비의 기준입니다.\n- 100kPa 이상, 260L 이상: 압력은 맞지만 방수량은 옥내소화전 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-26",
+    "tags": [
+      "스프링클러설비"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "hazardous-materials-industrial-engineer-fire-protection-planning-0006",
+    "certId": "hazardous-materials-industrial-engineer",
+    "subjectId": "fire-prevention-extinguishing",
+    "chapterId": "fire-protection-planning",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "폐쇄형 스프링클러헤드 50개가 설치된 제조소의 스프링클러설비 수원의 양은 최소 몇 ㎥ 이상이어야 하는가?",
+    "choices": [
+      "48㎥",
+      "234㎥",
+      "120㎥",
+      "72㎥"
+    ],
+    "answer": 4,
+    "oneLineConcept": "폐쇄형 스프링클러 수원 = 30개(미만이면 설치 개수) × 2.4㎥",
+    "explanation": "폐쇄형 스프링클러헤드를 쓰는 설비의 수원은 30개(설치 개수가 30개 미만이면 그 개수)에 2.4㎥ 를 곱한 양 이상입니다(시행규칙 별표 17).\n\n1. 설치 50개 → 30개로 계산\n2. 수원 = 30 × 2.4 = 72㎥\n\n**틀린 선지**\n- 120㎥: 50개를 모두 곱한 값입니다. 폐쇄형은 30개(30개 미만이면 그 개수)로 계산합니다.\n- 234㎥: 옥내소화전 기준(7.8㎥)을 30개에 곱한 값입니다.\n- 48㎥: 20개로 잘못 계산한 값입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-26",
+    "tags": [
+      "스프링클러설비",
+      "수원 계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "hazardous-materials-industrial-engineer-fire-protection-planning-0007",
+    "certId": "hazardous-materials-industrial-engineer",
+    "subjectId": "fire-prevention-extinguishing",
+    "chapterId": "fire-protection-planning",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "방사구역의 표면적이 150㎡인 물분무소화설비의 수원은 최소 몇 ㎥ 이상이어야 하는가? (방사구역은 하나이다)",
+    "choices": [
+      "180㎥",
+      "45㎥",
+      "90㎥",
+      "3㎥"
+    ],
+    "answer": 3,
+    "oneLineConcept": "물분무 수원 = 표면적 × 20L/㎡·분 × 30분",
+    "explanation": "물분무소화설비의 수원은 방사구역 표면적 1㎡ 당 1분에 20L 씩 30분간 방사할 수 있는 양 이상입니다(시행규칙 별표 17).\n\n1. 150㎡ × 20L/분 = 3,000L/분\n2. 3,000L/분 × 30분 = 90,000L\n3. 90,000L = 90㎥\n\n**틀린 선지**\n- 3㎥: 1분 동안의 양만 계산한 값입니다. 30분간 방사할 수 있어야 합니다.\n- 45㎥: 15분으로 계산한 값입니다.\n- 180㎥: 60분으로 계산한 값입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-26",
+    "tags": [
+      "물분무소화설비",
+      "수원 계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "hazardous-materials-industrial-engineer-fire-protection-planning-0008",
+    "certId": "hazardous-materials-industrial-engineer",
+    "subjectId": "fire-prevention-extinguishing",
+    "chapterId": "fire-protection-planning",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "용량 8L 인 소화전용(轉用)물통 1개의 능력단위는?",
+    "choices": [
+      "0.3",
+      "1.0",
+      "1.5",
+      "0.5"
+    ],
+    "answer": 1,
+    "oneLineConcept": "물통 8L 0.3 · 마른 모래 50L 0.5 · 팽창질석 160L 1.0 · 수조 80L 1.5",
+    "explanation": "위험물안전관리법 시행규칙 별표 17은 기타 소화설비의 능력단위를 정하고 있습니다. 소화전용물통 8L 는 0.3, 수조 80L(물통 3개 포함)는 1.5, 수조 190L(물통 6개 포함)는 2.5, 마른 모래 50L 는 0.5, 팽창질석·팽창진주암 160L 는 1.0 입니다.\n\n**틀린 선지**\n- 0.5: 마른 모래 50L(삽 1개 포함)의 능력단위입니다.\n- 1.0: 팽창질석 160L(삽 1개 포함)의 능력단위입니다.\n- 1.5: 소화전용물통 3개를 포함한 수조 80L 의 능력단위입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-26",
+    "tags": [
+      "능력단위"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "hazardous-materials-industrial-engineer-fire-protection-planning-0009",
+    "certId": "hazardous-materials-industrial-engineer",
+    "subjectId": "fire-prevention-extinguishing",
+    "chapterId": "fire-protection-planning",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "화재가 났을 때 이를 알릴 수 있는 경보설비를 설치해야 하는 제조소등의 기준은?",
+    "choices": [
+      "지정수량의 5배 이상을 저장·취급하는 모든 제조소등",
+      "지정수량의 10배 이상을 저장·취급하는 제조소등(이동탱크저장소는 제외)",
+      "지정수량의 100배 이상을 저장·취급하는 제조소등",
+      "지정수량과 관계없이 모든 제조소등"
+    ],
+    "answer": 2,
+    "oneLineConcept": "경보설비: 지정수량 10배 이상 제조소등 (이동탱크저장소 제외)",
+    "explanation": "위험물안전관리법 시행규칙 제42조는 지정수량의 10배 이상의 위험물을 저장 또는 취급하는 제조소등(이동탱크저장소 제외)에 경보설비를 설치하도록 정합니다. 경보설비에는 자동화재탐지설비, 자동화재속보설비, 비상경보설비, 확성장치, 비상방송설비가 있습니다.\n\n**틀린 선지**\n- 지정수량의 100배 이상을 저장·취급하는 제조소등: 100배는 옥내저장소 자동화재탐지설비 대상 기준 중 하나입니다. 경보설비 자체는 10배 이상이면 설치합니다.\n- 지정수량의 5배 이상을 저장·취급하는 모든 제조소등: 법령의 기준은 10배 이상입니다.\n- 지정수량과 관계없이 모든 제조소등: 지정수량 10배 미만이거나 이동탱크저장소이면 의무가 아닙니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-26",
+    "tags": [
+      "경보설비"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "hazardous-materials-industrial-engineer-fire-protection-planning-0010",
+    "certId": "hazardous-materials-industrial-engineer",
+    "subjectId": "fire-prevention-extinguishing",
+    "chapterId": "fire-protection-planning",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "제조소 또는 일반취급소에 자동화재탐지설비를 설치해야 하는 연면적 기준은?",
+    "choices": [
+      "연면적 150㎡ 초과",
+      "연면적 300㎡ 이상",
+      "연면적 1,000㎡ 이상",
+      "연면적 500㎡ 이상"
+    ],
+    "answer": 4,
+    "oneLineConcept": "자동화재탐지설비: 제조소·일반취급소 연면적 500㎡ 이상 등",
+    "explanation": "위험물안전관리법 시행규칙 별표 17은 제조소·일반취급소 가운데 연면적이 500㎡ 이상인 것, 옥내에서 지정수량 100배 이상을 취급하는 것 등에 자동화재탐지설비를 설치하도록 정하고 있습니다.\n\n**틀린 선지**\n- 연면적 1,000㎡ 이상: 1,000㎡ 이상은 소화난이도등급 Ⅰ 제조소의 기준입니다.\n- 연면적 150㎡ 초과: 150㎡ 초과는 옥내저장소 저장창고의 기준입니다.\n- 연면적 300㎡ 이상: 법령에 정한 값이 아닙니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-26",
+    "tags": [
+      "자동화재탐지설비"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "hazardous-materials-industrial-engineer-fire-protection-planning-0011",
+    "certId": "hazardous-materials-industrial-engineer",
+    "subjectId": "fire-prevention-extinguishing",
+    "chapterId": "fire-protection-planning",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "제조소등에 설치하는 자동화재탐지설비에서 하나의 경계구역의 면적과 한 변의 길이 기준은? (광전식분리형 감지기는 쓰지 않고, 출입구에서 내부 전체가 보이지 않는 경우)",
+    "choices": [
+      "1,000㎡ 이하, 한 변 100m 이하",
+      "600㎡ 이하, 한 변 50m 이하",
+      "600㎡ 이하, 한 변 100m 이하",
+      "500㎡ 이하, 한 변 50m 이하"
+    ],
+    "answer": 2,
+    "oneLineConcept": "경계구역: 600㎡ 이하·한 변 50m 이하 (특례 1,000㎡·100m)",
+    "explanation": "위험물안전관리법 시행규칙 별표 17에서 자동화재탐지설비의 하나의 경계구역은 600㎡ 이하, 한 변의 길이는 50m(광전식분리형 감지기는 100m) 이하로 합니다. 주요 출입구에서 내부 전체를 볼 수 있으면 면적을 1,000㎡ 이하로 할 수 있습니다.\n\n**틀린 선지**\n- 500㎡ 이하, 한 변 50m 이하: 500㎡ 는 두 개 층에 걸칠 수 있는 경계구역의 면적 조건입니다.\n- 1,000㎡ 이하, 한 변 100m 이하: 1,000㎡ 는 주요 출입구에서 내부 전체를 볼 수 있을 때의 특례입니다.\n- 600㎡ 이하, 한 변 100m 이하: 한 변 100m 는 광전식분리형 감지기를 설치할 때의 기준입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-26",
+    "tags": [
+      "자동화재탐지설비",
+      "경계구역"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "hazardous-materials-industrial-engineer-fire-protection-planning-0012",
+    "certId": "hazardous-materials-industrial-engineer",
+    "subjectId": "fire-prevention-extinguishing",
+    "chapterId": "fire-protection-planning",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "주유취급소 건축물의 2층 이상을 점포나 휴게음식점으로 사용할 때 설치해야 하는 피난설비는?",
+    "choices": [
+      "피난사다리",
+      "구조대",
+      "완강기",
+      "유도등"
+    ],
+    "answer": 4,
+    "oneLineConcept": "주유취급소 2층 이상 점포·휴게음식점·전시장 → 유도등 (비상전원 필요)",
+    "explanation": "위험물안전관리법 시행규칙 별표 17은 주유취급소 가운데 건축물의 2층 이상을 점포·휴게음식점 또는 전시장으로 쓰는 곳에, 2층 이상에서 부지 밖으로 통하는 출입구와 그 통로·계단·출입구에 유도등을 설치하도록 정합니다. 옥내주유취급소에도 유도등을 설치하며, 유도등에는 비상전원을 둡니다.\n\n**틀린 선지**\n- 완강기: 법령의 위험물 제조소등 피난설비 기준에는 유도등을 정하고 있습니다.\n- 구조대: 위험물 제조소등 피난설비 기준에서 정한 설비가 아닙니다.\n- 피난사다리: 위험물 제조소등 피난설비 기준에서 정한 설비가 아닙니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-26",
+    "tags": [
+      "피난설비",
+      "주유취급소"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "hazardous-materials-industrial-engineer-fire-protection-planning-0013",
+    "certId": "hazardous-materials-industrial-engineer",
+    "subjectId": "fire-prevention-extinguishing",
+    "chapterId": "fire-protection-planning",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "소화난이도등급 Ⅰ에 해당하는 제조소의 기준으로 옳은 것은?",
+    "choices": [
+      "지반면에서 3m 이상 높이에 위험물 취급설비가 있는 것",
+      "연면적 500㎡ 이상인 것",
+      "연면적 1,000㎡ 이상인 것",
+      "지정수량의 10배 이상인 것"
+    ],
+    "answer": 3,
+    "oneLineConcept": "소화난이도 Ⅰ 제조소: 연면적 1,000㎡↑ · 지정수량 100배↑ · 취급설비 높이 6m↑ 등",
+    "explanation": "위험물안전관리법 시행규칙 별표 17에서 소화난이도등급 Ⅰ 에 해당하는 제조소·일반취급소는 연면적 1,000㎡ 이상인 것, 지정수량 100배 이상인 것(고인화점위험물만 100℃ 미만으로 취급하는 것 등 제외), 지반면에서 6m 이상 높이에 위험물 취급설비가 있는 것 등입니다.\n\n**틀린 선지**\n- 연면적 500㎡ 이상인 것: 500㎡ 이상은 자동화재탐지설비를 설치해야 하는 기준입니다.\n- 지정수량의 10배 이상인 것: 10배 이상은 경보설비·피뢰침 등의 기준입니다. 소화난이도등급 Ⅰ 은 100배 이상입니다.\n- 지반면에서 3m 이상 높이에 위험물 취급설비가 있는 것: 높이 기준은 6m 이상입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-26",
+    "tags": [
+      "소화난이도등급"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "hazardous-materials-industrial-engineer-fire-protection-planning-0014",
+    "certId": "hazardous-materials-industrial-engineer",
+    "subjectId": "fire-prevention-extinguishing",
+    "chapterId": "fire-protection-planning",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "위험물안전관리법령상 소화설비의 적응성으로 옳지 않은 것은?",
+    "choices": [
+      "철분·금속분·마그네슘 화재에는 물분무소화설비가 적응성이 있다",
+      "제6류 위험물 화재에는 옥내소화전설비가 적응성이 있다",
+      "전기설비 화재에는 불활성가스소화설비가 적응성이 있다",
+      "제3류 금수성물품 화재에는 탄산수소염류 분말소화설비가 적응성이 있다"
+    ],
+    "answer": 1,
+    "oneLineConcept": "철분·금속분·마그네슘: 물을 쓰는 소화설비는 적응성 없음",
+    "explanation": "철분·금속분·마그네슘은 물과 만나면 수소를 내므로 물을 쓰는 소화설비(옥내·옥외소화전, 스프링클러, 물분무 등)는 적응성이 없습니다. 위험물안전관리법 시행규칙 별표 17에서는 탄산수소염류 분말, 건조사, 팽창질석·팽창진주암처럼 물을 쓰지 않는 것에만 적응성 표시가 있습니다.\n\n**틀린 선지**\n- 제6류 위험물 화재에는 옥내소화전설비가 적응성이 있다: 옳은 설명입니다.\n- 전기설비 화재에는 불활성가스소화설비가 적응성이 있다: 옳은 설명입니다.\n- 제3류 금수성물품 화재에는 탄산수소염류 분말소화설비가 적응성이 있다: 옳은 설명입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-26",
+    "tags": [
+      "소화설비 적응성"
+    ],
+    "levelLock": true
+  }
+]

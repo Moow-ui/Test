@@ -1,0 +1,277 @@
+[
+  {
+    "id": "hazardous-materials-industrial-engineer-acids-and-bases-0001",
+    "certId": "hazardous-materials-industrial-engineer",
+    "subjectId": "physical-chemical-properties",
+    "chapterId": "acids-and-bases",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "아레니우스의 정의에 따른 산(酸)은 어떤 물질인가?",
+    "choices": [
+      "물에 녹아 수산화이온(OH⁻)을 내는 물질",
+      "물에 녹아 수소이온(H⁺)을 내는 물질",
+      "물에 전혀 녹지 않는 물질",
+      "전자를 내주는 물질"
+    ],
+    "answer": 2,
+    "oneLineConcept": "아레니우스: 산 = H⁺ 를 냄, 염기 = OH⁻ 를 냄",
+    "explanation": "아레니우스는 물에 녹아 수소이온(H⁺)을 내는 물질을 산, 수산화이온(OH⁻)을 내는 물질을 염기라고 정의했습니다. 예를 들어 염산(HCl)은 물에서 H⁺ 와 Cl⁻ 로 나뉘므로 산입니다.\n\n**틀린 선지**\n- 물에 녹아 수산화이온(OH⁻)을 내는 물질: 수산화이온을 내는 물질은 염기입니다.\n- 전자를 내주는 물질: 전자를 내주는 것은 산화되는 물질(환원제)의 성질입니다.\n- 물에 전혀 녹지 않는 물질: 아레니우스의 정의는 물에 녹았을 때를 기준으로 합니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-26",
+    "tags": [
+      "산과 염기"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "hazardous-materials-industrial-engineer-acids-and-bases-0002",
+    "certId": "hazardous-materials-industrial-engineer",
+    "subjectId": "physical-chemical-properties",
+    "chapterId": "acids-and-bases",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "25℃에서 중성인 수용액의 pH는?",
+    "choices": [
+      "1",
+      "7",
+      "0",
+      "14"
+    ],
+    "answer": 2,
+    "oneLineConcept": "pH 7 중성, 7보다 작으면 산성, 크면 염기성",
+    "explanation": "25℃의 순수한 물에서는 수소이온 농도가 10⁻⁷ mol/L 이므로 pH 가 7입니다. pH 가 7보다 작으면 산성, 7보다 크면 염기성입니다.\n\n**틀린 선지**\n- 14: pH 14는 매우 강한 염기성입니다.\n- 0: pH 0은 매우 강한 산성입니다.\n- 1: pH 1은 강한 산성입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-26",
+    "tags": [
+      "pH"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "hazardous-materials-industrial-engineer-acids-and-bases-0003",
+    "certId": "hazardous-materials-industrial-engineer",
+    "subjectId": "physical-chemical-properties",
+    "chapterId": "acids-and-bases",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "수소이온 농도 [H⁺]가 0.001mol/L인 수용액의 pH는?",
+    "choices": [
+      "11",
+      "4",
+      "3",
+      "0.001"
+    ],
+    "answer": 3,
+    "oneLineConcept": "pH = −log[H⁺]",
+    "explanation": "pH 는 수소이온 농도의 상용로그에 음의 부호를 붙인 값입니다.\n\n1. [H⁺] = 0.001 = 10⁻³ mol/L\n2. pH = −log(10⁻³) = 3\n3. 검산: pH 3 이면 7보다 작으므로 산성으로 맞습니다.\n\n**틀린 선지**\n- 11: pOH 를 pH 로 착각했거나 14에서 뺀 값입니다. 수소이온 농도로 바로 구하면 3입니다.\n- 4: 자릿수를 하나 잘못 센 값입니다. 0.001 = 10⁻³ 입니다.\n- 0.001: pH 는 농도 자체가 아니라 농도의 상용로그에 음의 부호를 붙인 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-26",
+    "tags": [
+      "pH 계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "hazardous-materials-industrial-engineer-acids-and-bases-0004",
+    "certId": "hazardous-materials-industrial-engineer",
+    "subjectId": "physical-chemical-properties",
+    "chapterId": "acids-and-bases",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "25℃에서 0.01mol/L 수산화나트륨(NaOH) 수용액의 pH는? (NaOH 는 물에서 모두 이온으로 나뉜다고 본다)",
+    "choices": [
+      "13",
+      "12",
+      "2",
+      "10"
+    ],
+    "answer": 2,
+    "oneLineConcept": "염기의 pH = 14 − pOH",
+    "explanation": "염기 용액은 먼저 수산화이온 농도로 pOH 를 구한 뒤 14에서 뺍니다.\n\n1. [OH⁻] = 0.01 = 10⁻² mol/L\n2. pOH = −log(10⁻²) = 2\n3. pH = 14 − 2 = 12\n4. 검산: pH 12 는 7보다 크므로 염기성으로 맞습니다.\n\n**틀린 선지**\n- 2: 2는 pOH 입니다. pH = 14 − pOH 로 바꿔야 합니다.\n- 10: 농도의 자릿수를 잘못 잡은 값입니다. 0.01 = 10⁻² 입니다.\n- 13: 0.1mol/L 일 때의 pH 입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-26",
+    "tags": [
+      "pH 계산",
+      "pOH"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "hazardous-materials-industrial-engineer-acids-and-bases-0005",
+    "certId": "hazardous-materials-industrial-engineer",
+    "subjectId": "physical-chemical-properties",
+    "chapterId": "acids-and-bases",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "0.1mol/L 염산(HCl) 100mL를 완전히 중화하는 데 필요한 0.2mol/L 수산화나트륨(NaOH) 수용액의 부피는?",
+    "choices": [
+      "200mL",
+      "100mL",
+      "50mL",
+      "25mL"
+    ],
+    "answer": 3,
+    "oneLineConcept": "중화: 산의 H⁺ 몰수 = 염기의 OH⁻ 몰수 (NV = N'V')",
+    "explanation": "중화는 산의 H⁺ 와 염기의 OH⁻ 가 같은 몰수만큼 만나 물이 되는 반응입니다. HCl 과 NaOH 는 모두 1가이므로 몰농도 × 부피가 같으면 됩니다.\n\n1. 0.1 × 100 = 0.2 × V\n2. V = 10 ÷ 0.2 = 50mL\n3. 검산: HCl 0.01몰, NaOH 0.2 × 0.05L = 0.01몰 로 같습니다.\n\n**틀린 선지**\n- 200mL: 농도 비를 거꾸로 곱한 값입니다. 진한 염기일수록 적은 양이 듭니다.\n- 100mL: 농도가 같을 때의 값입니다. NaOH 가 2배 진하므로 절반이면 됩니다.\n- 25mL: 필요한 양의 절반입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-26",
+    "tags": [
+      "중화",
+      "중화 적정"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "hazardous-materials-industrial-engineer-acids-and-bases-0006",
+    "certId": "hazardous-materials-industrial-engineer",
+    "subjectId": "physical-chemical-properties",
+    "chapterId": "acids-and-bases",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "NH₃ + H₂O → NH₄⁺ + OH⁻ 반응에서 브뢴스테드–로리의 정의로 볼 때 물(H₂O)의 역할은?",
+    "choices": [
+      "양성자(H⁺)를 내주므로 산이다",
+      "양성자(H⁺)를 받으므로 염기이다",
+      "반응에 참여하지 않는 촉매이다",
+      "전자쌍을 받으므로 염기이다"
+    ],
+    "answer": 1,
+    "oneLineConcept": "브뢴스테드: H⁺ 를 주면 산, 받으면 염기",
+    "explanation": "브뢴스테드–로리 정의에서는 양성자(H⁺)를 주는 쪽이 산, 받는 쪽이 염기입니다. 이 반응에서 물은 H⁺ 하나를 암모니아에 주고 자신은 OH⁻ 가 되므로 산으로 작용합니다. 암모니아는 H⁺ 를 받아 NH₄⁺ 가 되므로 염기입니다.\n\n**틀린 선지**\n- 양성자(H⁺)를 받으므로 염기이다: 양성자를 받는 것은 암모니아입니다. 물은 H⁺ 를 내주고 OH⁻ 가 됩니다.\n- 전자쌍을 받으므로 염기이다: 전자쌍을 받는 물질은 루이스 정의의 산이고, 이 반응에서 물의 역할 설명으로도 맞지 않습니다.\n- 반응에 참여하지 않는 촉매이다: 물은 H⁺ 를 내주고 OH⁻ 로 바뀌므로 반응에 직접 참여합니다.",
+    "frequency": 2,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-26",
+    "tags": [
+      "브뢴스테드 산",
+      "암모니아"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "hazardous-materials-industrial-engineer-acids-and-bases-0007",
+    "certId": "hazardous-materials-industrial-engineer",
+    "subjectId": "physical-chemical-properties",
+    "chapterId": "acids-and-bases",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "아세트산나트륨(CH₃COONa)을 물에 녹인 수용액의 성질은?",
+    "choices": [
+      "완전한 중성",
+      "약한 염기성",
+      "강한 산성",
+      "약한 산성"
+    ],
+    "answer": 2,
+    "oneLineConcept": "약산 + 강염기의 염 → 가수분해로 염기성",
+    "explanation": "아세트산나트륨은 약한 산(아세트산)과 강한 염기(수산화나트륨)가 만나 생긴 염입니다. 물에 녹으면 아세트산 이온 일부가 물과 반응(가수분해)해 OH⁻ 를 만들어 약한 염기성을 띱니다.\n\n**틀린 선지**\n- 약한 산성: 약한 산성을 띠는 것은 강산과 약염기로 된 염(예: 염화암모늄)입니다.\n- 완전한 중성: 강산과 강염기로 된 염(예: 염화나트륨)이 중성입니다.\n- 강한 산성: 아세트산나트륨은 산성을 띠지 않습니다.",
+    "frequency": 2,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-26",
+    "tags": [
+      "염",
+      "가수분해"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "hazardous-materials-industrial-engineer-acids-and-bases-0008",
+    "certId": "hazardous-materials-industrial-engineer",
+    "subjectId": "physical-chemical-properties",
+    "chapterId": "acids-and-bases",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "산(酸)의 일반적인 성질로 옳지 않은 것은?",
+    "choices": [
+      "아연 같은 금속과 반응해 수소 기체를 낸다",
+      "페놀프탈레인 용액을 붉게 바꾼다",
+      "염기와 중화반응하여 염과 물을 만든다",
+      "푸른 리트머스 종이를 붉게 바꾼다"
+    ],
+    "answer": 2,
+    "oneLineConcept": "페놀프탈레인은 염기성에서 붉은색, 산성에서는 색이 없다",
+    "explanation": "페놀프탈레인은 염기성 용액에서 붉은색이 되고 산성·중성에서는 색이 없습니다. 그래서 '산이 페놀프탈레인을 붉게 바꾼다'는 설명이 틀렸습니다.\n\n**틀린 선지**\n- 푸른 리트머스 종이를 붉게 바꾼다: 산의 성질로 옳은 설명입니다.\n- 아연 같은 금속과 반응해 수소 기체를 낸다: 산의 성질로 옳은 설명입니다.\n- 염기와 중화반응하여 염과 물을 만든다: 산의 성질로 옳은 설명입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-26",
+    "tags": [
+      "산의 성질",
+      "지시약"
+    ],
+    "levelLock": true
+  }
+]

@@ -1,0 +1,281 @@
+[
+  {
+    "id": "hazardous-materials-industrial-engineer-accident-response-0001",
+    "certId": "hazardous-materials-industrial-engineer",
+    "subjectId": "fire-prevention-extinguishing",
+    "chapterId": "accident-response",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "작업장에서 인화성 액체가 새어 나오는 것을 발견했을 때 가장 먼저 해야 할 행동으로 알맞은 것은?",
+    "choices": [
+      "새어 나온 액체를 걸레로 닦은 뒤 불을 피워 말린다",
+      "물을 많이 뿌려 하수구로 흘려보낸다",
+      "다른 사람에게 알리지 않고 혼자 조용히 처리한다",
+      "주변의 불씨(점화원)를 없애고 사람을 대피시키며 즉시 알린다"
+    ],
+    "answer": 4,
+    "oneLineConcept": "누출 초동조치: 점화원 제거 → 대피 → 신고 → 확산 방지",
+    "explanation": "인화성 액체가 새면 증기가 퍼져 작은 불꽃에도 불이 붙을 수 있습니다. 그래서 먼저 불씨가 될 만한 것을 없애고, 사람을 안전한 곳으로 대피시키며, 관리자와 소방서에 알립니다. 그다음 흡착포·모래 등으로 퍼지는 것을 막습니다.\n\n**틀린 선지**\n- 새어 나온 액체를 걸레로 닦은 뒤 불을 피워 말린다: 증기에 불이 붙어 큰불이 날 수 있는 매우 위험한 행동입니다.\n- 물을 많이 뿌려 하수구로 흘려보낸다: 물에 녹지 않는 액체는 물에 떠서 더 넓게 퍼지고, 하수구로 들어가면 다른 곳에서 불이 날 수 있습니다.\n- 다른 사람에게 알리지 않고 혼자 조용히 처리한다: 사고는 즉시 알려 여러 사람이 함께 대응해야 합니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-26",
+    "tags": [
+      "초동조치",
+      "누출"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "hazardous-materials-industrial-engineer-accident-response-0002",
+    "certId": "hazardous-materials-industrial-engineer",
+    "subjectId": "fire-prevention-extinguishing",
+    "chapterId": "accident-response",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "제조소등에서 위험물이 유출되는 사고가 났을 때 그 제조소등의 관계인이 해야 하는 일로 위험물안전관리법에 정한 것은?",
+    "choices": [
+      "운영을 계속하면서 상황을 지켜본다",
+      "다음 정기점검 때 점검 결과와 함께 보고한다",
+      "즉시 그리고 지속적으로 유출·확산을 막고 유출된 위험물을 제거하는 응급조치를 한다",
+      "소방서의 허가를 받을 때까지 아무 조치도 하지 않고 기다린다"
+    ],
+    "answer": 3,
+    "oneLineConcept": "법 제27조: 관계인은 즉시·지속적으로 유출·확산 방지 응급조치",
+    "explanation": "위험물안전관리법 제27조는 제조소등에서 위험물 유출 등의 사고가 나면 관계인이 즉시 그리고 지속적으로 유출과 확산을 막고, 유출된 위험물을 제거하는 등 재해를 막기 위한 응급조치를 하도록 정하고 있습니다. 관계인이 이를 하지 않으면 소방본부장·소방서장이 응급조치를 명할 수 있습니다.\n\n**틀린 선지**\n- 소방서의 허가를 받을 때까지 아무 조치도 하지 않고 기다린다: 법은 관계인에게 즉시 응급조치를 하도록 정하고 있습니다. 기다리면 피해가 커집니다.\n- 다음 정기점검 때 점검 결과와 함께 보고한다: 사고는 그 자리에서 바로 대응해야 합니다. 정기점검과는 관계가 없습니다.\n- 운영을 계속하면서 상황을 지켜본다: 유출을 그대로 두면 화재·폭발로 이어질 수 있습니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-26",
+    "tags": [
+      "응급조치",
+      "위험물안전관리법"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "hazardous-materials-industrial-engineer-accident-response-0003",
+    "certId": "hazardous-materials-industrial-engineer",
+    "subjectId": "fire-prevention-extinguishing",
+    "chapterId": "accident-response",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "제조소등에서 위험물이 유출되는 사태를 발견한 사람은 즉시 그 사실을 어디에 통보해야 하는가?",
+    "choices": [
+      "고용노동부 장관에게만",
+      "한국산업인력공단",
+      "소방서, 경찰서 또는 그 밖의 관계기관",
+      "관할 시·도의회"
+    ],
+    "answer": 3,
+    "oneLineConcept": "유출 사태 발견자 → 즉시 소방서·경찰서 등에 통보 (법 제27조)",
+    "explanation": "위험물안전관리법 제27조 제2항은 위험물 유출 등의 사태를 발견한 사람이 즉시 그 사실을 소방서, 경찰서 또는 그 밖의 관계기관에 통보하도록 정하고 있습니다. 빠른 통보가 피해를 줄입니다.\n\n**틀린 선지**\n- 한국산업인력공단: 한국산업인력공단은 자격시험을 시행하는 기관으로 사고 통보 대상이 아닙니다.\n- 고용노동부 장관에게만: 법은 소방서·경찰서 등 가까운 관계기관에 바로 알리도록 정하고 있습니다.\n- 관할 시·도의회: 의회는 사고 통보 대상이 아닙니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-26",
+    "tags": [
+      "통보",
+      "위험물안전관리법"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "hazardous-materials-industrial-engineer-accident-response-0004",
+    "certId": "hazardous-materials-industrial-engineer",
+    "subjectId": "fire-prevention-extinguishing",
+    "chapterId": "accident-response",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "화재 현장 가까이에서 강한 복사열로부터 몸을 보호하기 위해 입는 보호복은?",
+    "choices": [
+      "방열복",
+      "일반 작업복",
+      "방진복",
+      "우비"
+    ],
+    "answer": 1,
+    "oneLineConcept": "복사열 차단 = 방열복",
+    "explanation": "방열복은 겉면이 열을 반사하는 재질로 되어 있어 화재의 강한 복사열로부터 몸을 보호합니다. 위험물 화재처럼 열이 센 현장에서 진화·구조 작업을 할 때 입습니다.\n\n**틀린 선지**\n- 방진복: 방진복은 먼지를 막는 옷으로 열을 막지 못합니다.\n- 우비: 우비는 비를 막는 옷으로 열에 녹을 수 있습니다.\n- 일반 작업복: 일반 작업복은 강한 복사열을 막지 못합니다.",
+    "frequency": 2,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-26",
+    "tags": [
+      "보호구",
+      "방열복"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "hazardous-materials-industrial-engineer-accident-response-0005",
+    "certId": "hazardous-materials-industrial-engineer",
+    "subjectId": "fire-prevention-extinguishing",
+    "chapterId": "accident-response",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "산소가 부족하거나 유독가스 농도가 높은 밀폐 공간에 들어갈 때 사용해야 하는 호흡용 보호구는?",
+    "choices": [
+      "일반 면 마스크",
+      "방진마스크",
+      "방독마스크",
+      "공기호흡기"
+    ],
+    "answer": 4,
+    "oneLineConcept": "산소 결핍·고농도 유독가스 → 공기호흡기(자급식)",
+    "explanation": "공기호흡기는 등에 멘 용기의 압축공기를 마시는 장비라 주변 공기와 관계없이 숨을 쉴 수 있습니다. 방독마스크는 주변 공기를 걸러 마시는 방식이라 산소 자체가 부족한 곳에서는 쓰면 안 됩니다.\n\n**틀린 선지**\n- 방독마스크: 방독마스크는 정화통으로 유해가스를 걸러 줄 뿐 산소를 공급하지 못하므로 산소가 부족한 곳에서는 쓸 수 없습니다.\n- 방진마스크: 방진마스크는 먼지만 걸러 줍니다.\n- 일반 면 마스크: 면 마스크는 가스와 산소 결핍을 전혀 막지 못합니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-26",
+    "tags": [
+      "보호구",
+      "공기호흡기"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "hazardous-materials-industrial-engineer-accident-response-0006",
+    "certId": "hazardous-materials-industrial-engineer",
+    "subjectId": "fire-prevention-extinguishing",
+    "chapterId": "accident-response",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "위험물을 차량으로 운반하는 도중 위험물이 현저하게 새는 등 재난이 생길 우려가 있을 때 해야 할 일로 법령에 정한 것은?",
+    "choices": [
+      "차량을 그 자리에 두고 운전자가 먼저 자리를 떠난다",
+      "응급조치를 하는 동시에 가까운 소방관서 그 밖의 관계기관에 통보한다",
+      "새는 위험물을 길가 배수로에 모두 쏟아 버린다",
+      "목적지까지 빨리 가서 그곳에서 처리한다"
+    ],
+    "answer": 2,
+    "oneLineConcept": "운반 중 누출 → 응급조치 + 가까운 소방관서 등에 통보",
+    "explanation": "위험물안전관리법 시행규칙 별표 19(운반 기준)는 운반 도중 위험물이 현저하게 새는 등 재난 발생 우려가 있으면 응급조치를 강구하는 동시에 가까운 소방관서 그 밖의 관계기관에 통보하도록 정하고 있습니다. 이동탱크저장소로 운송할 때도 같은 취지의 기준(별표 21)이 있습니다.\n\n**틀린 선지**\n- 목적지까지 빨리 가서 그곳에서 처리한다: 새는 상태로 계속 달리면 위험물이 도로에 퍼져 사고가 커집니다.\n- 차량을 그 자리에 두고 운전자가 먼저 자리를 떠난다: 응급조치와 통보 없이 떠나면 안 됩니다.\n- 새는 위험물을 길가 배수로에 모두 쏟아 버린다: 위험물을 버리면 화재·환경오염 사고로 이어집니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-26",
+    "tags": [
+      "운반 중 사고",
+      "응급조치"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "hazardous-materials-industrial-engineer-accident-response-0007",
+    "certId": "hazardous-materials-industrial-engineer",
+    "subjectId": "fire-prevention-extinguishing",
+    "chapterId": "accident-response",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "탄화칼슘을 보관하는 창고 지붕에서 빗물이 새어 들어가 가스 냄새가 날 때의 조치로 가장 알맞은 것은?",
+    "choices": [
+      "전등 스위치를 켜서 창고 안을 확인한다",
+      "문과 창을 모두 닫아 가스를 가둔다",
+      "물을 더 뿌려 생긴 가스를 물에 녹인다",
+      "불씨를 없애고 환기하며, 물이 더 닿지 않도록 막는다"
+    ],
+    "answer": 4,
+    "oneLineConcept": "금수성 물질 + 물 → 가연성 가스 → 점화원 차단·환기·물 차단",
+    "explanation": "탄화칼슘(제3류 금수성 물질)은 물과 반응해 불이 잘 붙는 아세틸렌을 냅니다. 이때는 불꽃이 생길 일을 하지 말고, 환기로 가스를 빼내며, 물이 더 닿지 않도록 막는 것이 우선입니다.\n\n1. CaC₂ + 2H₂O → Ca(OH)₂ + C₂H₂\n\n**틀린 선지**\n- 물을 더 뿌려 생긴 가스를 물에 녹인다: 탄화칼슘은 물과 반응해 아세틸렌을 냅니다. 물을 더 뿌리면 가스가 더 많이 생깁니다.\n- 전등 스위치를 켜서 창고 안을 확인한다: 스위치를 켤 때 생기는 작은 불꽃이 가스에 불을 붙일 수 있습니다.\n- 문과 창을 모두 닫아 가스를 가둔다: 가스가 고이면 폭발할 수 있는 농도가 됩니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-26",
+    "tags": [
+      "금수성 물질",
+      "아세틸렌",
+      "초동조치"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "hazardous-materials-industrial-engineer-accident-response-0008",
+    "certId": "hazardous-materials-industrial-engineer",
+    "subjectId": "fire-prevention-extinguishing",
+    "chapterId": "accident-response",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "인화성 액체 누출 사고 현장의 초동조치로 옳지 않은 것은?",
+    "choices": [
+      "흡착포나 마른 모래로 누출된 액체가 퍼지지 않게 막는다",
+      "주변의 화기와 불꽃이 생기는 작업을 즉시 멈춘다",
+      "바람을 등지고(바람이 불어오는 쪽에서) 현장에 접근한다",
+      "환기팬이 작동하는지 보려고 누출 장소의 전기 스위치를 여러 번 켜고 끈다"
+    ],
+    "answer": 4,
+    "oneLineConcept": "누출 현장에서는 스위치 조작도 점화원이 된다",
+    "explanation": "전기 스위치를 켜고 끌 때 접점에서 작은 불꽃(스파크)이 생깁니다. 인화성 증기가 차 있는 곳에서는 이 불꽃이 점화원이 되어 폭발할 수 있으므로 스위치를 조작하지 않습니다.\n\n**틀린 선지**\n- 바람을 등지고(바람이 불어오는 쪽에서) 현장에 접근한다: 옳은 조치입니다. 증기를 마시지 않고 접근할 수 있습니다.\n- 흡착포나 마른 모래로 누출된 액체가 퍼지지 않게 막는다: 옳은 조치입니다.\n- 주변의 화기와 불꽃이 생기는 작업을 즉시 멈춘다: 옳은 조치입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-26",
+    "tags": [
+      "초동조치",
+      "점화원"
+    ],
+    "levelLock": true
+  }
+]

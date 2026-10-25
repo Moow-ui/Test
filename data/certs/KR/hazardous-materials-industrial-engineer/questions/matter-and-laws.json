@@ -1,0 +1,387 @@
+[
+  {
+    "id": "hazardous-materials-industrial-engineer-matter-and-laws-0001",
+    "certId": "hazardous-materials-industrial-engineer",
+    "subjectId": "physical-chemical-properties",
+    "chapterId": "matter-and-laws",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "온도가 일정할 때 일정한 양의 기체에 가하는 압력을 2배로 높이면 기체의 부피는 어떻게 되는가?",
+    "choices": [
+      "처음 부피의 1/2로 줄어든다",
+      "처음 부피의 2배로 늘어난다",
+      "변하지 않는다",
+      "처음 부피의 4배로 늘어난다"
+    ],
+    "answer": 1,
+    "oneLineConcept": "보일의 법칙: 온도 일정 → 압력 × 부피 = 일정",
+    "explanation": "온도가 일정하면 기체의 압력과 부피를 곱한 값은 늘 같습니다(보일의 법칙). 그래서 압력이 2배가 되면 부피는 절반이 됩니다.\n\n1. P₁V₁ = P₂V₂\n2. P₂ = 2P₁ 이므로 V₂ = P₁V₁ ÷ 2P₁ = V₁ ÷ 2\n3. 검산: 2P₁ × (V₁/2) = P₁V₁ 으로 처음과 같습니다.\n\n**틀린 선지**\n- 처음 부피의 2배로 늘어난다: 압력과 부피는 반대로 움직입니다. 압력을 높이면 부피는 줄어듭니다.\n- 변하지 않는다: 온도가 같아도 압력이 바뀌면 부피가 바뀝니다.\n- 처음 부피의 4배로 늘어난다: 늘어나지도 않고, 4배라는 관계도 없습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-26",
+    "tags": [
+      "보일의 법칙",
+      "기체 법칙"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "hazardous-materials-industrial-engineer-matter-and-laws-0002",
+    "certId": "hazardous-materials-industrial-engineer",
+    "subjectId": "physical-chemical-properties",
+    "chapterId": "matter-and-laws",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "압력이 일정할 때 27℃에서 부피가 10L인 기체를 127℃로 가열하면 부피는 약 몇 L가 되는가?",
+    "choices": [
+      "약 47.0L",
+      "약 7.5L",
+      "약 13.3L",
+      "20L"
+    ],
+    "answer": 3,
+    "oneLineConcept": "샤를의 법칙: 압력 일정 → 부피는 절대온도에 비례",
+    "explanation": "압력이 일정하면 기체의 부피는 절대온도(섭씨온도 + 273)에 비례합니다(샤를의 법칙).\n\n1. T₁ = 27 + 273 = 300K, T₂ = 127 + 273 = 400K\n2. V₂ = V₁ × T₂ ÷ T₁ = 10 × 400 ÷ 300 ≒ 13.3L\n3. 검산: 13.3 ÷ 400 ≒ 10 ÷ 300 ≒ 0.033 으로 비율이 같습니다.\n\n**틀린 선지**\n- 약 47.0L: 섭씨온도(127÷27)를 그대로 나누면 안 됩니다. 반드시 절대온도(K)로 바꿔 계산합니다.\n- 약 7.5L: 온도를 높이면 부피는 늘어납니다. 비율을 거꾸로 곱한 값입니다.\n- 20L: 온도가 2배가 된 것이 아니므로 부피도 2배가 되지 않습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-26",
+    "tags": [
+      "샤를의 법칙",
+      "절대온도"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "hazardous-materials-industrial-engineer-matter-and-laws-0003",
+    "certId": "hazardous-materials-industrial-engineer",
+    "subjectId": "physical-chemical-properties",
+    "chapterId": "matter-and-laws",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "2기압, 27℃에서 산소(O₂) 64g이 차지하는 부피는 약 몇 L인가? (기체상수 R = 0.082 atm·L/mol·K, 원자량 O 16)",
+    "choices": [
+      "약 12.3L",
+      "44.8L",
+      "약 24.6L",
+      "약 49.2L"
+    ],
+    "answer": 3,
+    "oneLineConcept": "이상기체 상태방정식 PV = nRT",
+    "explanation": "이상기체 상태방정식 PV = nRT 로 부피를 구합니다.\n\n1. 몰수 n = 64 ÷ 32 = 2몰 (O₂ 분자량 32)\n2. 절대온도 T = 27 + 273 = 300K\n3. V = nRT ÷ P = 2 × 0.082 × 300 ÷ 2 = 24.6L\n4. 검산: 2 × 24.6 = 49.2, 2 × 0.082 × 300 = 49.2 로 양쪽이 같습니다.\n\n**틀린 선지**\n- 약 49.2L: 압력 2기압으로 나누는 단계를 빠뜨린 값입니다.\n- 44.8L: 표준상태(0℃, 1기압)에서 2몰의 부피입니다. 문제의 온도·압력과 다릅니다.\n- 약 12.3L: 몰수를 1몰로 잘못 잡은 값입니다. 64g은 2몰입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-26",
+    "tags": [
+      "이상기체 상태방정식",
+      "몰 계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "hazardous-materials-industrial-engineer-matter-and-laws-0004",
+    "certId": "hazardous-materials-industrial-engineer",
+    "subjectId": "physical-chemical-properties",
+    "chapterId": "matter-and-laws",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "같은 온도와 압력에서 수소(H₂)의 확산 속도는 산소(O₂)의 확산 속도의 몇 배인가? (원자량 H 1, O 16)",
+    "choices": [
+      "1/4배",
+      "2배",
+      "16배",
+      "4배"
+    ],
+    "answer": 4,
+    "oneLineConcept": "그레이엄의 법칙: 확산 속도는 분자량의 제곱근에 반비례",
+    "explanation": "기체가 퍼지는 속도는 분자량의 제곱근에 반비례합니다(그레이엄의 법칙). 가벼운 기체일수록 빨리 퍼집니다.\n\n1. 수소 분자량 2, 산소 분자량 32\n2. 속도의 비 = √(32 ÷ 2) = √16 = 4\n3. 검산: 4² = 16 = 32 ÷ 2 로 맞습니다.\n\n**틀린 선지**\n- 16배: 분자량의 비(32 ÷ 2 = 16)를 그대로 쓴 값입니다. 확산 속도는 분자량의 제곱근에 반비례합니다.\n- 2배: 제곱근을 한 번 더 취하거나 계산을 잘못한 값입니다.\n- 1/4배: 가벼운 기체가 더 빨리 퍼지므로 수소가 더 빠릅니다. 거꾸로 된 값입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-26",
+    "tags": [
+      "그레이엄의 법칙",
+      "확산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "hazardous-materials-industrial-engineer-matter-and-laws-0005",
+    "certId": "hazardous-materials-industrial-engineer",
+    "subjectId": "physical-chemical-properties",
+    "chapterId": "matter-and-laws",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "물(H₂O) 36g은 몇 몰인가? (원자량 H 1, O 16)",
+    "choices": [
+      "1몰",
+      "3몰",
+      "0.5몰",
+      "2몰"
+    ],
+    "answer": 4,
+    "oneLineConcept": "몰수 = 질량 ÷ 분자량",
+    "explanation": "몰수는 질량을 분자량으로 나누어 구합니다.\n\n1. 물의 분자량 = 1 × 2 + 16 = 18\n2. 몰수 = 36 ÷ 18 = 2몰\n3. 검산: 2몰 × 18g = 36g 으로 맞습니다.\n\n**틀린 선지**\n- 1몰: 물 1몰은 18g입니다. 36g은 그 두 배입니다.\n- 3몰: 물의 분자량을 12로 잘못 잡은 값입니다.\n- 0.5몰: 질량과 분자량을 거꾸로 나눈 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-26",
+    "tags": [
+      "몰",
+      "분자량"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "hazardous-materials-industrial-engineer-matter-and-laws-0006",
+    "certId": "hazardous-materials-industrial-engineer",
+    "subjectId": "physical-chemical-properties",
+    "chapterId": "matter-and-laws",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "어떤 기체의 밀도가 표준상태(0℃, 1기압)에서 1.25g/L일 때 이 기체의 분자량은 얼마인가?",
+    "choices": [
+      "44",
+      "32",
+      "22.4",
+      "28"
+    ],
+    "answer": 4,
+    "oneLineConcept": "분자량 = 표준상태 밀도(g/L) × 22.4L",
+    "explanation": "표준상태에서 기체 1몰은 22.4L를 차지합니다. 그래서 1L의 질량(밀도)에 22.4를 곱하면 1몰의 질량, 곧 분자량이 됩니다.\n\n1. 분자량 = 1.25g/L × 22.4L = 28\n2. 검산: 28 ÷ 22.4 = 1.25 로 맞습니다. (질소 N₂ 의 분자량이 28입니다.)\n\n**틀린 선지**\n- 32: 산소의 분자량입니다. 밀도 1.25g/L 로 계산하면 28이 나옵니다.\n- 22.4: 1몰의 부피(22.4L)를 분자량으로 착각한 값입니다.\n- 44: 이산화탄소의 분자량입니다. 이산화탄소의 표준상태 밀도는 약 1.96g/L입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-26",
+    "tags": [
+      "기체 밀도",
+      "분자량"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "hazardous-materials-industrial-engineer-matter-and-laws-0007",
+    "certId": "hazardous-materials-industrial-engineer",
+    "subjectId": "physical-chemical-properties",
+    "chapterId": "matter-and-laws",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "질소 3몰과 산소 1몰을 섞은 혼합기체의 전체 압력이 4기압일 때 산소의 분압은 몇 기압인가?",
+    "choices": [
+      "0.25기압",
+      "2기압",
+      "1기압",
+      "3기압"
+    ],
+    "answer": 3,
+    "oneLineConcept": "돌턴의 분압 법칙: 분압 = 전체 압력 × 몰분율",
+    "explanation": "섞인 기체에서 각 기체가 내는 압력(분압)은 그 기체가 차지하는 몰수의 비율(몰분율)에 비례합니다(돌턴의 분압 법칙).\n\n1. 전체 몰수 = 3 + 1 = 4몰\n2. 산소의 몰분율 = 1 ÷ 4 = 0.25\n3. 산소의 분압 = 4기압 × 0.25 = 1기압\n4. 검산: 질소 3기압 + 산소 1기압 = 4기압 으로 전체 압력과 같습니다.\n\n**틀린 선지**\n- 3기압: 질소의 분압입니다. 질소는 전체 4몰 중 3몰을 차지합니다.\n- 2기압: 두 기체가 압력을 똑같이 나눈다고 본 값입니다. 분압은 몰수에 비례합니다.\n- 0.25기압: 몰분율(1/4)만 구하고 전체 압력을 곱하지 않은 값입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-26",
+    "tags": [
+      "분압",
+      "돌턴의 법칙"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "hazardous-materials-industrial-engineer-matter-and-laws-0008",
+    "certId": "hazardous-materials-industrial-engineer",
+    "subjectId": "physical-chemical-properties",
+    "chapterId": "matter-and-laws",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "나트륨(Na)과 염소(Cl)가 만나 염화나트륨(NaCl)이 될 때 이루어지는 화학 결합은?",
+    "choices": [
+      "이온결합",
+      "수소결합",
+      "금속결합",
+      "공유결합"
+    ],
+    "answer": 1,
+    "oneLineConcept": "금속 + 비금속 → 전자를 주고받는 이온결합",
+    "explanation": "나트륨은 전자 1개를 내주어 양이온(Na⁺)이 되고, 염소는 그 전자를 받아 음이온(Cl⁻)이 됩니다. 이렇게 양이온과 음이온이 전기적으로 끌어당겨 생기는 결합이 이온결합입니다.\n\n**틀린 선지**\n- 공유결합: 공유결합은 비금속 원자끼리 전자를 함께 쓰는 결합입니다. 금속인 나트륨과 비금속인 염소는 전자를 주고받습니다.\n- 금속결합: 금속결합은 금속 원자끼리의 결합입니다. 염소는 금속이 아닙니다.\n- 수소결합: 수소결합은 분자와 분자 사이에 작용하는 힘이고, 수소가 있어야 합니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-26",
+    "tags": [
+      "화학 결합",
+      "이온결합"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "hazardous-materials-industrial-engineer-matter-and-laws-0009",
+    "certId": "hazardous-materials-industrial-engineer",
+    "subjectId": "physical-chemical-properties",
+    "chapterId": "matter-and-laws",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "물(H₂O)이 분자량이 비슷한 다른 물질(예: 메테인, 분자량 16)보다 끓는점이 훨씬 높은 주된 이유는?",
+    "choices": [
+      "물의 분자량이 매우 크기 때문",
+      "물이 이온결합 물질이기 때문",
+      "물 분자 안에 금속결합이 있기 때문",
+      "물 분자 사이에 수소결합이 있기 때문"
+    ],
+    "answer": 4,
+    "oneLineConcept": "수소결합이 있으면 끓는점이 높아진다 (물·암모니아·플루오린화수소)",
+    "explanation": "물 분자의 수소는 이웃한 물 분자의 산소와 강하게 끌어당깁니다. 이 힘을 수소결합이라 합니다. 분자끼리 떨어지려면 이 힘을 끊을 열이 더 필요하므로 끓는점이 높아집니다.\n\n**틀린 선지**\n- 물이 이온결합 물질이기 때문: 물은 산소와 수소가 전자를 함께 쓰는 공유결합 분자입니다.\n- 물 분자 안에 금속결합이 있기 때문: 물에는 금속 원자가 없어 금속결합이 없습니다.\n- 물의 분자량이 매우 크기 때문: 물의 분자량은 18로 작습니다. 분자량 때문이 아닙니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-26",
+    "tags": [
+      "수소결합",
+      "끓는점"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "hazardous-materials-industrial-engineer-matter-and-laws-0010",
+    "certId": "hazardous-materials-industrial-engineer",
+    "subjectId": "physical-chemical-properties",
+    "chapterId": "matter-and-laws",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "드라이아이스나 나프탈렌처럼 고체가 액체를 거치지 않고 바로 기체로 변하는 현상은?",
+    "choices": [
+      "응고",
+      "융해",
+      "승화",
+      "기화"
+    ],
+    "answer": 3,
+    "oneLineConcept": "승화: 고체 ↔ 기체 (액체를 거치지 않음)",
+    "explanation": "고체가 액체 상태를 거치지 않고 곧바로 기체가 되는 변화를 승화라고 합니다. 드라이아이스(고체 이산화탄소), 나프탈렌, 아이오딘이 대표적인 예입니다.\n\n**틀린 선지**\n- 융해: 융해는 고체가 녹아 액체가 되는 현상입니다.\n- 기화: 기화는 액체가 기체로 되는 현상입니다.\n- 응고: 응고는 액체가 굳어 고체가 되는 현상입니다.",
+    "frequency": 2,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-26",
+    "tags": [
+      "상태 변화",
+      "승화"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "hazardous-materials-industrial-engineer-matter-and-laws-0011",
+    "certId": "hazardous-materials-industrial-engineer",
+    "subjectId": "physical-chemical-properties",
+    "chapterId": "matter-and-laws",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "기체의 성질에 대한 설명으로 옳지 않은 것은?",
+    "choices": [
+      "압력이 일정하면 절대온도가 높아질수록 부피는 늘어난다",
+      "같은 조건에서 기체의 확산 속도는 분자량에 비례한다",
+      "온도가 일정하면 압력이 높아질수록 부피는 줄어든다",
+      "같은 온도·압력에서 같은 부피의 기체에는 같은 수의 분자가 들어 있다"
+    ],
+    "answer": 2,
+    "oneLineConcept": "확산 속도는 분자량의 제곱근에 '반비례'",
+    "explanation": "기체가 퍼지는 속도는 분자량의 제곱근에 반비례합니다(그레이엄의 법칙). 무거운 기체일수록 느리게 퍼집니다. 그래서 '분자량에 비례한다'는 설명이 틀렸습니다.\n\n**틀린 선지**\n- 온도가 일정하면 압력이 높아질수록 부피는 줄어든다: 보일의 법칙으로 옳은 설명입니다.\n- 압력이 일정하면 절대온도가 높아질수록 부피는 늘어난다: 샤를의 법칙으로 옳은 설명입니다.\n- 같은 온도·압력에서 같은 부피의 기체에는 같은 수의 분자가 들어 있다: 아보가드로의 법칙으로 옳은 설명입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-26",
+    "tags": [
+      "기체 법칙"
+    ],
+    "levelLock": true
+  }
+]
