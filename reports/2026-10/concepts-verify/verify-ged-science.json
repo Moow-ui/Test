@@ -1,0 +1,73 @@
+{
+  "slug": "ged-science",
+  "date": "2026-10-26",
+  "method": "Separate agent re-checked every sentence against the GED Science Assessment Guide for Educators (ged.com PDF, content topics L.a-ES.c and focusing themes) and standard current science",
+  "chapters": {
+    "human-body": {
+      "result": "PASS",
+      "notes": "Body systems, homeostasis/negative feedback (insulin, sweating, skin vessels narrowing), 9/4/4 Calories per gram, vitamins/minerals/water have no Calories, pathogens and routes, vaccine vs antibiotic all correct. 'Human Health and Living Systems theme' matches the guide's focusing themes; L.a.1-L.a.4 examples (muscular+skeletal, sweating, calories, airborne/bloodborne, vaccination/sanitation) match. Compare table (airborne flu/colds, bloodborne hepatitis B/HIV, food and water) is an acceptable simplification.",
+      "fixes": []
+    },
+    "energy-for-life": {
+      "result": "PASS",
+      "notes": "Photosynthesis and respiration equations, chloroplast/chlorophyll, mitochondria (plant and animal cells), lactic acid fermentation in muscle, yeast making alcohol + CO2, balanced equation 6CO2 per glucose all correct. Matches L.b.1 (photosynthesis, respiration, fermentation). Lamp-distance experiment fits SP.2 investigation design.",
+      "fixes": []
+    },
+    "ecosystems": {
+      "result": "PASS",
+      "notes": "Producer/consumer/decomposer, arrow direction food -> eater, 10% rule (10,000 -> 1,000 -> 100 -> 10), energy lost as heat, carrying capacity, symbiosis definitions, invasive species, mark-recapture proportion, habitat destruction all correct. Matches L.c.1-L.c.5 (energy pyramids, food webs, carrying capacity, symbiosis, invasive species). Figure alt and caption match the image.",
+      "fixes": []
+    },
+    "cell-structure": {
+      "result": "PASS",
+      "notes": "Cell theory three parts, membrane, nucleus, ribosomes, mitochondria, plant cell wall/chloroplasts, enzymes as proteins with optimum temperature and heat denaturation, levels of organization, mitosis 2 identical / meiosis 46 -> 23 correct; matches L.d.1-L.d.3. Minor (not a fail): 'Meiosis: 4 sex cells' is the standard textbook simplification; in human females one meiosis yields one egg plus polar bodies. Could add 'four cells' wording if desired.",
+      "fixes": []
+    },
+    "heredity": {
+      "result": "PASS",
+      "notes": "DNA/genes/chromosomes, central dogma, alleles one from each parent, dominant/recessive, genotype/phenotype, Pp x Pp = 1:2:1 (25% recessive), Pp x pp = 50/50, mutations as source of new alleles, meiosis mixing alleles, Siamese cat temperature-dependent expression all correct. Punnett squares, pedigree charts and Siamese cat example are named in L.e.2-L.e.3, so 'GED questions often ask...' is supported.",
+      "fixes": []
+    },
+    "evolution": {
+      "result": "PASS",
+      "notes": "Natural selection requirements (inherited variation, differential survival/reproduction), antibiotic resistance, peppered moth, artificial selection, homologous limbs, cladogram reading, speciation by isolation all correct. Matches L.f.1-L.f.3 (cladograms, selection requirements, speciation).",
+      "fixes": []
+    },
+    "energy-waves": {
+      "result": "PASS",
+      "notes": "Conservation of energy, PE = mgh, flashlight chemical -> electrical -> light/heat, efficiency, renewable vs nonrenewable, conduction/convection/radiation, heat vs temperature, exo/endothermic, v = f x lambda, EM spectrum order radio -> gamma, UV and sunburn, sound needs a medium all correct. 'Energy and Related Systems theme' matches the guide; P.a.1-P.a.5 examples match.",
+      "fixes": []
+    },
+    "motion-forces": {
+      "result": "PASS",
+      "notes": "Physics all correct: speed, acceleration, momentum (light fast object can exceed heavy slow one), Newton's three laws, mass vs weight with g = 9.8, equal fall rate without air, friction, work, power, six simple machines, mechanical advantage. Matches P.b.1-P.b.3. Opening frequency claim 'Most GED questions here give a formula...' is not stated in the guide; the guide says only that the stimuli provide necessary details about formulas. 2nd check (2026-10-26): Fix applied; summary[0] now reads 'On the GED test, a question gives you any formula it needs, so practice using a formula and reading motion from a table or graph.' This is supported by the Assessment Guide for Educators (Science), which states the stimuli 'provide necessary details about scientific graphic elements, formulas, and other key principles' and that test-takers are not expected to have in-depth knowledge of each subtopic, and by ged.com/en/curriculum/science.html ('not a memorization test'; read graphs and charts). SP.7.b 'Apply formulas from scientific theories' and P.b.1-P.b.3 match the practice advice and topics. Every other sentence re-checked: speed, acceleration (change in speed/velocity over time, acceptable simplification), momentum, Newton's laws, mass vs weight (kg, N, g about 9.8 m/s2), equal fall rate without air, friction, work (J), power (W), six simple machines, mechanical advantage, distance-time table and interval average speed points all correct.",
+      "fixes": [
+        "summary[0] second sentence: replace 'Most GED questions here give a formula and ask you to use it, or ask you to read motion from a table or graph.' with 'On the GED test, a question gives you any formula it needs, so practice using a formula and reading motion from a table or graph.'"
+      ]
+    },
+    "chemistry-matter": {
+      "result": "PASS",
+      "notes": "Atom structure and charges, physical vs chemical change and signs, chemical vs physical properties, density and floating, layering of immiscible liquids, displacement volume, balancing (coefficients only), conservation of mass in a sealed bag, limiting reactant, solvent/solute, solubility rises with temperature for most solids, saturation all correct. Matches P.c.1-P.c.4. 'You do not need to memorize the periodic table' is consistent with the guide (broad familiarity; stimuli provide needed details).",
+      "fixes": []
+    },
+    "earth-resources-hazards": {
+      "result": "PASS",
+      "notes": "Water, carbon and nitrogen cycles, fossil fuel origin and nonrenewability, renewable resources, sustainable groundwater use, hazard mitigation (codes, raised homes, levees, dunes, wetlands), strong earthquakes rarer than weak ones, rate calculation all correct. Matches ES.a.1-ES.a.3.",
+      "fixes": []
+    },
+    "earth-systems": {
+      "result": "PASS",
+      "notes": "78% N2 / 21% O2, layer order troposphere-stratosphere-mesosphere-thermosphere, ozone absorbs UV, greenhouse gases trap heat, high -> low pressure wind, Gulf Stream mildness, coral bleaching, crust/mantle/liquid outer core/solid inner core, plate boundaries, mid-ocean ridges make new crust, physical vs chemical weathering all correct. Matches ES.b.1-ES.b.4. Minor (not a fail): strictly the lithosphere (crust plus uppermost mantle) is broken into plates; 'crust is broken into tectonic plates' is the usual simplification and the guide itself lists crust and tectonic plates together.",
+      "fixes": []
+    },
+    "space-earth-history": {
+      "result": "PASS",
+      "notes": "Sun is a star among billions in the Milky Way, Sun-like star -> red giant -> white dwarf (only massive stars -> neutron star/black hole), rotation ~24 h causes day/night, axial tilt causes seasons, perihelion in early January, Moon main cause of tides with smaller Sun contribution, eclipse geometry, farther planets take longer to orbit, superposition, half-life (2 half-lives -> 1/4) all correct. Matches ES.c.1-ES.c.3.",
+      "fixes": []
+    }
+  },
+  "figures": {
+    "ged-energy-pyramid.svg": "1 PASS 2 PASS 3 PASS 5 PASS (four labelled bands, no clipped or overlapping text, readable when scaled; producers at the broad base and tertiary consumers at the top is the conventional layout; 10,000 -> 1,000 -> 100 -> 10 kcal is the 10% rule exactly; alt text and caption match the image and the ecosystems 10 percent rule card; only cosmetic note: large empty margin below the drawing)"
+  },
+  "final": "12개 단원 중 11개 PASS, 1개 FAIL (motion-forces: 시험 관련 빈도 문장)"
+}
