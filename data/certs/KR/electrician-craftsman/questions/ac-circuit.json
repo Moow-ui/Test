@@ -173,5 +173,346 @@
       "개념"
     ],
     "levelLock": true
+  },
+  {
+    "id": "electrician-craftsman-ac-circuit-0001",
+    "certId": "electrician-craftsman",
+    "subjectId": "electric-theory",
+    "chapterId": "ac-circuit",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "그림과 같은 사인파 교류 전압의 주파수는 몇 Hz인가?",
+    "choices": [
+      "50Hz",
+      "60Hz",
+      "100Hz",
+      "20Hz"
+    ],
+    "answer": 1,
+    "oneLineConcept": "주파수 = 1 ÷ 주기. 파형이 한 바퀴 도는 시간이 주기",
+    "explanation": "그래프에서 파형이 위로 한 번, 아래로 한 번 움직여 처음 모양으로 돌아오기까지 걸린 시간이 **주기**(한 번 반복하는 데 걸리는 시간)입니다. **주파수**(1초 동안 반복하는 횟수)는 주기를 뒤집은 값입니다.\n\n1. 그림에서 한 번 반복하는 데 걸린 시간: 0에서 20ms까지 → 주기 T = 20ms\n2. 단위 바꾸기: 20ms = 0.02초 (1ms는 1/1000초)\n3. 주파수: f = 1 ÷ T = 1 ÷ 0.02\n4. 답: f = 50Hz\n\n검산: 50Hz면 한 번에 1 ÷ 50 = 0.02초 = 20ms가 걸리므로 그림과 같습니다.\n\n**틀린 선지**\n- 60Hz: 우리나라 전기의 주파수를 그대로 고른 값입니다. 이 그림의 주기 20ms와는 맞지 않습니다(60Hz의 주기는 약 16.7ms).\n- 100Hz: 위쪽 반만 그려진 10ms를 주기로 잘못 본 값입니다. 반 바퀴는 주기가 아닙니다.\n- 20Hz: 20ms의 숫자 20을 그대로 쓴 값입니다. 주기를 초로 바꾸고 뒤집어야 합니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-27",
+    "tags": [
+      "주기",
+      "주파수",
+      "파형",
+      "계산"
+    ],
+    "image": "ac-sine-period-20ms.svg",
+    "imageAlt": "세로축 v, 가로축 시간 t인 사인파 그래프. 0에서 출발해 위로 올라갔다가 10ms에서 가로축을 지나 아래로 내려가고, 20ms에서 다시 가로축으로 돌아와 한 번의 반복이 끝난다. 가로축에 10ms와 20ms 눈금이 표시되어 있다",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "electrician-craftsman-ac-circuit-0002",
+    "certId": "electrician-craftsman",
+    "subjectId": "electric-theory",
+    "chapterId": "ac-circuit",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "그림과 같은 사인파 교류 전압의 실효값은 약 몇 V인가?",
+    "choices": [
+      "약 71V",
+      "약 90V",
+      "약 100V",
+      "약 200V"
+    ],
+    "answer": 3,
+    "oneLineConcept": "실효값 = 최댓값 ÷ √2 (약 1.414로 나눈다)",
+    "explanation": "그림에서 141V는 파형 꼭대기의 높이, 곧 **최댓값**입니다. 보통 교류의 크기라고 말하는 **실효값**(같은 일을 하는 직류 값으로 바꾼 크기)은 최댓값을 √2(약 1.414)로 나누어 구합니다.\n\n1. 공식: 실효값 = 최댓값 ÷ √2\n2. 숫자 대입: 141 ÷ 1.414\n3. 답: 약 100V\n\n검산: 100 × 1.414 = 141.4 이므로 최댓값 141V와 맞습니다.\n\n**틀린 선지**\n- 약 71V: 최댓값을 2로 나눈 값(141 ÷ 2)입니다. 2가 아니라 √2로 나눠야 합니다.\n- 약 90V: 평균값(최댓값의 약 0.637배)입니다. 실효값과 평균값은 다릅니다.\n- 약 200V: √2로 나누지 않고 곱한 값(141 × 1.414)입니다. 실효값은 최댓값보다 작습니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-27",
+    "tags": [
+      "실효값",
+      "최댓값",
+      "파형",
+      "계산"
+    ],
+    "image": "ac-sine-peak-141v.svg",
+    "imageAlt": "세로축 v, 가로축 시간 t인 사인파 그래프. 파형 꼭대기 높이에서 세로축까지 점선이 그어져 있고, 그 높이가 141V라고 적혀 있다. 파형은 0에서 출발해 위로 한 번, 아래로 한 번 움직인다",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrician-craftsman-ac-circuit-0003",
+    "certId": "electrician-craftsman",
+    "subjectId": "electric-theory",
+    "chapterId": "ac-circuit",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "그림은 어떤 교류 회로에 걸린 전압 v와 흐르는 전류 i의 파형이다. 이 회로의 부하로 알맞은 것은?",
+    "choices": [
+      "저항(R)만 있는 회로",
+      "코일(L)만 있는 회로",
+      "콘덴서(C)만 있는 회로",
+      "저항과 콘덴서가 직렬인 회로"
+    ],
+    "answer": 2,
+    "oneLineConcept": "코일은 전류가 90° 늦고, 콘덴서는 전류가 90° 빠르다",
+    "explanation": "그림에서 전류 i의 꼭대기는 전압 v의 꼭대기보다 1/4주기(90°) **오른쪽**, 곧 시간이 더 지난 뒤에 나옵니다. 전류가 전압보다 90° **늦은**(지상) 것입니다.\n\n1. 저항만 있으면: 전압과 전류가 같이 움직입니다(위상차 0°).\n2. 코일만 있으면: 전류가 전압보다 90° 늦습니다.\n3. 콘덴서만 있으면: 전류가 전압보다 90° 빠릅니다(진상).\n4. 그림은 전류가 정확히 90° 늦으므로 코일(L)만 있는 회로입니다.\n\n외우는 법: '코일은 늦고(L은 Late), 콘덴서는 빠르다'.\n\n**틀린 선지**\n- 저항(R)만 있는 회로: 전압과 전류의 꼭대기가 같은 자리에 나와야 합니다. 그림처럼 어긋나지 않습니다.\n- 콘덴서(C)만 있는 회로: 전류가 전압보다 90° 먼저(왼쪽에) 나옵니다. 그림과 방향이 반대입니다.\n- 저항과 콘덴서가 직렬인 회로: 전류가 전압보다 빠르고, 그 차이도 0°와 90° 사이입니다. 늦지도 않고 딱 90°도 아닙니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-27",
+    "tags": [
+      "위상",
+      "코일",
+      "콘덴서",
+      "파형"
+    ],
+    "image": "ac-phase-current-lags-90.svg",
+    "imageAlt": "가로축은 시간 t. 실선은 전압 v, 점선은 전류 i의 사인파이며 전류의 높이가 더 낮다. 전류 i의 꼭대기가 전압 v의 꼭대기보다 1/4주기(90°)만큼 오른쪽, 곧 시간상 뒤에 나타나며, 두 꼭대기 사이에 오른쪽을 가리키는 화살표와 90°가 적혀 있다",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "electrician-craftsman-ac-circuit-0004",
+    "certId": "electrician-craftsman",
+    "subjectId": "electric-theory",
+    "chapterId": "ac-circuit",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "그림과 같은 R-L-C 직렬 회로에 교류 200V를 가했다. 회로에 흐르는 전류는 몇 A인가?",
+    "choices": [
+      "25A",
+      "20A",
+      "약 12.4A",
+      "약 9.1A"
+    ],
+    "answer": 2,
+    "oneLineConcept": "R-L-C 직렬: Z = √(R² + (XL − XC)²), 전류 = 전압 ÷ Z",
+    "explanation": "코일과 콘덴서는 서로 반대로 작용하므로, 리액턴스(교류에서 코일·콘덴서가 전류를 막는 정도)는 큰 쪽에서 작은 쪽을 **뺍니다**. 그다음 직각삼각형처럼 임피던스를 구합니다.\n\n1. 리액턴스 차: XL − XC = 10 − 4 = 6Ω\n2. 임피던스: Z = √(8² + 6²) = √(64 + 36) = √100 = 10Ω\n3. 전류: I = V ÷ Z = 200 ÷ 10\n4. 답: I = 20A\n\n검산: 저항 전압 20 × 8 = 160V, 리액턴스 전압 20 × 6 = 120V. √(160² + 120²) = √(25600 + 14400) = √40000 = 200V 로 전원 전압과 같습니다.\n\n**틀린 선지**\n- 25A: 저항 8Ω만 보고 200 ÷ 8로 계산한 값입니다. 코일·콘덴서를 빠뜨렸습니다.\n- 약 12.4A: XL과 XC를 빼지 않고 더해서(10 + 4 = 14) Z = √(64 + 196) ≈ 16.1Ω으로 계산한 값입니다.\n- 약 9.1A: 세 값을 그냥 더해(8 + 10 + 4 = 22Ω) 200 ÷ 22로 계산한 값입니다. 교류에서는 단순히 더하지 않습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-27",
+    "tags": [
+      "임피던스",
+      "RLC 직렬",
+      "계산"
+    ],
+    "image": "ac-rlc-series-8-10-4-200v.svg",
+    "imageAlt": "교류 전원 200V에 저항 R = 8Ω, 코일 XL = 10Ω, 콘덴서 XC = 4Ω이 한 줄로(직렬로) 이어진 닫힌 회로",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "electrician-craftsman-ac-circuit-0005",
+    "certId": "electrician-craftsman",
+    "subjectId": "electric-theory",
+    "chapterId": "ac-circuit",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "그림은 어떤 R-L 직렬 회로의 임피던스 삼각형이다. 이 회로의 역률(cosθ)은?",
+    "choices": [
+      "0.8",
+      "1.33",
+      "0.75",
+      "0.6"
+    ],
+    "answer": 4,
+    "oneLineConcept": "역률 cosθ = R ÷ Z (밑변 ÷ 빗변)",
+    "explanation": "**임피던스 삼각형**은 저항 R을 밑변, 유도 리액턴스 XL을 높이, 임피던스 Z를 빗변으로 그린 직각삼각형입니다. **역률**(보낸 전력 가운데 실제로 일한 전력의 비율)은 R ÷ Z 입니다.\n\n1. 공식: cosθ = R ÷ Z\n2. 숫자 대입: cosθ = 12 ÷ 20\n3. 답: cosθ = 0.6\n\n검산: 12² + 16² = 144 + 256 = 400 = 20² 이므로 삼각형 숫자가 맞고, 0.6 × 20 = 12Ω으로 저항과 같습니다.\n\n**틀린 선지**\n- 0.8: XL ÷ Z(16 ÷ 20)입니다. 이 값은 역률이 아니라 무효율(sinθ)입니다.\n- 1.33: XL ÷ R(16 ÷ 12)입니다. 역률은 1보다 클 수 없습니다.\n- 0.75: R ÷ XL(12 ÷ 16)입니다. 나누는 기준은 빗변인 Z입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-27",
+    "tags": [
+      "역률",
+      "임피던스 삼각형",
+      "계산"
+    ],
+    "image": "ac-impedance-triangle-12-16-20.svg",
+    "imageAlt": "직각삼각형. 밑변은 R = 12Ω, 세로 변은 XL = 16Ω, 빗변은 Z = 20Ω이고, 밑변과 빗변 사이의 각이 θ로 표시되어 있다. 직각은 밑변과 세로 변이 만나는 곳에 있다",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrician-craftsman-ac-circuit-0006",
+    "certId": "electrician-craftsman",
+    "subjectId": "electric-theory",
+    "chapterId": "ac-circuit",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "그림은 R-L-C 직렬 회로에서 각 부분에 걸린 전압을 화살표(페이저)로 나타낸 것이다. 전원 전압 V의 크기는 몇 V인가?",
+    "choices": [
+      "140V",
+      "약 171V",
+      "220V",
+      "100V"
+    ],
+    "answer": 4,
+    "oneLineConcept": "위·아래 반대 방향 전압은 빼고, 가로와는 직각삼각형으로 합친다",
+    "explanation": "**페이저**(전압·전류의 크기와 방향을 화살표로 나타낸 그림)에서 코일 전압 VL은 위쪽, 콘덴서 전압 VC는 아래쪽이라 서로 반대입니다. 그래서 먼저 빼고, 남은 값과 저항 전압 VR을 직각삼각형처럼 합칩니다.\n\n1. 위·아래 전압 차: VL − VC = 120 − 40 = 80V (위쪽)\n2. 전원 전압: V = √(VR² + 80²) = √(60² + 80²)\n3. 계산: √(3600 + 6400) = √10000\n4. 답: V = 100V\n\n검산: 60 : 80 : 100 은 3 : 4 : 5 직각삼각형과 같은 비율이므로 맞습니다.\n\n**틀린 선지**\n- 140V: 60 + 80 처럼 직각 방향의 전압을 그냥 더한 값입니다. 직각인 화살표는 제곱해서 더한 뒤 제곱근을 씌워야 합니다.\n- 약 171V: VL과 VC를 빼지 않고 더해(120 + 40 = 160) √(60² + 160²)로 계산한 값입니다.\n- 220V: 세 전압을 모두 그냥 더한 값(60 + 120 + 40)입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-27",
+    "tags": [
+      "페이저",
+      "RLC 직렬",
+      "전압",
+      "계산"
+    ],
+    "image": "ac-phasor-rlc-60-120-40v.svg",
+    "imageAlt": "한 점에서 화살표 세 개가 출발한다. 오른쪽(가로, 전류 I 기준 방향)으로 저항 전압 VR = 60V, 위쪽으로 코일 전압 VL = 120V, 아래쪽으로 콘덴서 전압 VC = 40V 화살표가 있다. 전원 전압 V의 화살표는 그려져 있지 않다",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrician-craftsman-ac-circuit-0007",
+    "certId": "electrician-craftsman",
+    "subjectId": "electric-theory",
+    "chapterId": "ac-circuit",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "그림과 같이 교류 120V에 저항 30Ω과 유도 리액턴스 40Ω의 코일을 병렬로 연결했다. 전원에서 흐르는 전체 전류는 몇 A인가?",
+    "choices": [
+      "1A",
+      "약 2.4A",
+      "5A",
+      "7A"
+    ],
+    "answer": 3,
+    "oneLineConcept": "R-L 병렬: 가지 전류를 각각 구해 √(IR² + IL²)",
+    "explanation": "병렬 회로는 두 가지에 같은 전압이 걸립니다. 가지마다 전류를 구한 뒤, 저항 전류와 코일 전류는 방향이 90° 다르므로 직각삼각형처럼 합칩니다.\n\n1. 저항 쪽 전류: IR = 120 ÷ 30 = 4A\n2. 코일 쪽 전류: IL = 120 ÷ 40 = 3A\n3. 전체 전류: I = √(4² + 3²) = √(16 + 9) = √25\n4. 답: I = 5A\n\n검산: 병렬 임피던스 Z = (30 × 40) ÷ √(30² + 40²) = 1200 ÷ 50 = 24Ω, 120 ÷ 24 = 5A 로 같습니다.\n\n**틀린 선지**\n- 1A: 두 전류를 뺀 값(4 − 3)입니다.\n- 약 2.4A: 직렬로 착각해 Z = √(30² + 40²) = 50Ω, 120 ÷ 50으로 계산한 값입니다.\n- 7A: 두 전류를 그냥 더한 값(4 + 3)입니다. 직류라면 맞지만 교류의 저항 전류와 코일 전류는 90° 어긋나 있어 그냥 더하지 않습니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-27",
+    "tags": [
+      "R-L 병렬",
+      "전류",
+      "계산"
+    ],
+    "image": "ac-rl-parallel-30-40-120v.svg",
+    "imageAlt": "교류 전원 120V의 양 끝에 저항 R = 30Ω과 코일 XL = 40Ω이 나란히(병렬로) 연결된 회로. 위·아래 연결점은 검은 점으로 표시되어 있다",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrician-craftsman-ac-circuit-0008",
+    "certId": "electrician-craftsman",
+    "subjectId": "electric-theory",
+    "chapterId": "ac-circuit",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "그림과 같은 R-C 직렬 회로에 교류 100V를 가했다. 저항 R 양 끝에 걸리는 전압은 몇 V인가?",
+    "choices": [
+      "80V",
+      "60V",
+      "100V",
+      "약 57V"
+    ],
+    "answer": 1,
+    "oneLineConcept": "임피던스로 전류를 구한 뒤, 저항 전압 = 전류 × R",
+    "explanation": "먼저 회로 전체의 임피던스와 전류를 구하고, 그 전류에 저항값을 곱합니다.\n\n1. 임피던스: Z = √(R² + XC²) = √(40² + 30²) = √(1600 + 900) = √2500 = 50Ω\n2. 전류: I = 100 ÷ 50 = 2A\n3. 저항 전압: VR = I × R = 2 × 40\n4. 답: VR = 80V\n\n검산: 콘덴서 전압은 2 × 30 = 60V. √(80² + 60²) = √(6400 + 3600) = √10000 = 100V 로 전원 전압과 같습니다.\n\n**틀린 선지**\n- 60V: 콘덴서 양 끝의 전압입니다. 묻는 것은 저항 전압입니다.\n- 100V: 전원 전압 전체입니다. 직렬이라 전원 전압이 저항과 콘덴서에 나뉘어 걸립니다.\n- 약 57V: 직류처럼 100 × 40 ÷ (40 + 30)으로 나눈 값입니다. 교류에서는 R과 XC를 그냥 더하지 않습니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-27",
+    "tags": [
+      "R-C 직렬",
+      "임피던스",
+      "전압",
+      "계산"
+    ],
+    "image": "ac-rc-series-40-30-100v.svg",
+    "imageAlt": "교류 전원 100V에 저항 R = 40Ω과 콘덴서 XC = 30Ω이 한 줄로(직렬로) 이어진 닫힌 회로. 저항은 위쪽 선에, 콘덴서는 오른쪽 선에 있다",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
   }
 ]
