@@ -1,0 +1,96 @@
+{
+  "slug": "ged-social-studies",
+  "date": "2026-10-27",
+  "method": "Separate agent re-checked every sentence (summary, concepts, points, compare, figures) against the U.S. Constitution text (constitution.congress.gov), GED Social Studies content weighting (Civics and Government 50%, U.S. History 20%, Economics 15%, Geography 15%), FDIC deposit insurance rules, Census urban-share series, and standard U.S. history and economics references; figure PNG viewed and SVG geometry recomputed",
+  "chapters": {
+    "government-principles": {
+      "result": "PASS",
+      "notes": "Direct vs representative democracy, parliamentary (PM from legislature) vs presidential, monarchy usually inherited, totalitarianism, natural rights ('unalienable', 'endowed by their Creator'), consent of the governed / popular sovereignty, rule of law, majority rule with minority rights, federalism vs separation of powers all correct. Federalist No. 51 paraphrase ('enable the government to control the governed; and in the next place oblige it to control itself') is accurate and not copied. 'The Constitution creates no hereditary offices' correct (Art. I sec. 9 bars titles of nobility). Compare table examples acceptable. 'GED questions often give you a short passage' is a stimulus description consistent with GED primary-source use, not a statistic.",
+      "fixes": []
+    },
+    "us-government-structure": {
+      "result": "PASS",
+      "notes": "Civics and Government is 50% of GED Social Studies, so 'about half' / 'biggest topic' is supported. Senate 2 per state 6-year terms, House by population 2-year terms, President 4-year terms; veto override 2/3 of both chambers (Art. I sec. 7); Senate advice and consent on judges and Cabinet (Art. II sec. 2); Marbury v. Madison (1803); House impeaches, Senate tries, 2/3 of members present to convict (Art. I sec. 3); amendment 2/3 propose + 3/4 ratify, 'usually' correctly hedges the convention route (Art. V); Tenth Amendment; Speaker leads House, VP is President of the Senate; federal/state/concurrent power examples and checks table all correct.",
+      "fixes": []
+    },
+    "rights-liberties": {
+      "result": "PASS",
+      "notes": "Bill of Rights = first ten amendments, ratified 1791. 1st (five freedoms, establishment clause), 2nd, 4th (warrant usually needed), 5th (self-incrimination, double jeopardy, due process), 6th (speedy public trial, impartial jury, counsel), 8th (excessive bail/fines, cruel and unusual) correct. True threats unprotected; Tinker v. Des Moines 1969 (substantial disruption standard); Miranda v. Arizona 1966 rests on the Fifth; voting age 18 = 26th Amendment; only citizens serve on federal juries and vote in federal elections (28 U.S.C. 1865, 18 U.S.C. 611) correct.",
+      "fixes": []
+    },
+    "parties-elections": {
+      "result": "PASS",
+      "notes": "Electors = senators + representatives, D.C. gets 3 (23rd Amendment), 538 total, 270 to win; no majority -> House chooses (12th Amendment). 15th race, 19th sex, 24th poll tax in federal elections, 26th age 18 correct. Presidential qualifications 35 / natural-born / 14 years' residence (Art. II sec. 1) correct. Primaries, interest groups, loaded language definitions fine.",
+      "fixes": []
+    },
+    "public-policy": {
+      "result": "PASS",
+      "notes": "Definitions of public policy, regulation, fact vs opinion, correlation vs causation, before/after evidence with similar conditions are correct general reasoning content; no unverifiable statistics.",
+      "fixes": []
+    },
+    "founding-documents": {
+      "result": "PASS",
+      "notes": "Magna Carta 1215, Mayflower Compact 1620, Declaration 1776 drafted mainly by Jefferson with grievances, Articles of Confederation (no direct taxing power), Constitution 1787, Bill of Rights 1791, Washington's Farewell Address 1796 warning against permanent alliances, Louisiana Purchase 1803 from France roughly doubling the nation all correct. Paraphrases, not copied text.",
+      "fixes": []
+    },
+    "settlement-expansion": {
+      "result": "PASS",
+      "notes": "Columbian Exchange after 1492 (corn/potatoes to Europe, horses/smallpox to Americas), disease as largest single cause of Native population decline (scholarly consensus), Manifest Destiny 1840s (term coined 1845), Indian Removal Act 1830 Southeast -> west of the Mississippi and Trail of Tears, Homestead Act 1862 160 acres / 5 years all correct.",
+      "fixes": []
+    },
+    "civil-war-civil-rights": {
+      "result": "PASS",
+      "notes": "Civil War 1861-1865; 13th 1865, 14th 1868, 15th 1870; Jim Crow, poll taxes, literacy tests; Plessy 1896, Brown 1954; Civil Rights Act 1964, Voting Rights Act 1965; Seneca Falls 1848, 19th Amendment 1920; Gettysburg 'four score and seven' (87 years before 1863 = 1776) all correct.",
+      "fixes": []
+    },
+    "world-wars-cold-war": {
+      "result": "PASS",
+      "notes": "Senate rejected Treaty of Versailles, U.S. never joined League of Nations; Pearl Harbor December 7, 1941; Axis Germany/Italy/Japan; about 120,000 people of Japanese ancestry interned, about two-thirds citizens ('most' correct); Truman Doctrine 1947 containment; Marshall Plan economic aid vs NATO military alliance; Soviet collapse 1991 all correct.",
+      "fixes": []
+    },
+    "economic-concepts": {
+      "result": "PASS",
+      "notes": "Opportunity cost, incentives, entrepreneurs, profit = revenue - costs, revenue = price x quantity, monopoly, specialization/productivity, comparative advantage (lowest opportunity cost) all correct.",
+      "fixes": []
+    },
+    "micro-macro": {
+      "result": "PASS",
+      "notes": "Everything else correct: equilibrium, surplus above / shortage below equilibrium, demand shift right raises price and quantity, GDP final goods and services, inflation/deflation, fiscal (Congress, President) vs monetary (Federal Reserve) policy, Fed raises rates to slow inflation, tariff. One formula is wrong for half its cases.",
+      "fixes": [
+        "points[1]: 'Surplus or shortage size = quantity supplied minus quantity demanded at that price.' gives a negative number for a shortage (shortage = quantity demanded - quantity supplied). Replace with 'Surplus = quantity supplied minus quantity demanded; shortage = quantity demanded minus quantity supplied (both at that price).' Source: standard definition, matches this chapter's own concept card 'Price below: shortage (demand > supply).'"
+      ],
+      "firstResult": "FAIL",
+      "fix": "points[1] surplus/shortage sentence rewritten (shortage = quantity demanded minus quantity supplied)",
+      "recheck": "2026-10-27 new agent: PASS"
+    },
+    "consumer-economics": {
+      "result": "PASS",
+      "notes": "Revolving vs installment credit correct; simple interest $1,000 x 3% x 2 = $60 correct; FDIC $250,000 per depositor, per insured bank, per ownership category, deposits not stocks (fdic.gov) correct; Truth in Lending Act requires disclosure of APR and finance charge correct.",
+      "fixes": []
+    },
+    "economic-history": {
+      "result": "PASS",
+      "notes": "Exploration motives, Industrial Revolution from the 1700s and urbanization, Great Depression after 1929 crash, New Deal and Social Security 1935, Great Society = LBJ, Square Deal = Theodore Roosevelt, WWII production ending Depression-era unemployment (about 1.2% in 1944) all correct.",
+      "fixes": []
+    },
+    "environment-society": {
+      "result": "PASS",
+      "notes": "Nile/Egypt, Tigris-Euphrates/Mesopotamia, Athens direct democracy, Roman Republic representatives, renewable vs nonrenewable, deforestation effects correct. Sustainability sentence is a paraphrase of the Brundtland definition, not a verbatim copy.",
+      "fixes": []
+    },
+    "regions-geographic-tools": {
+      "result": "PASS",
+      "notes": "Latitude/longitude, scale 3.5 x 50 = 175 miles, contour lines close = steep, region types, border types (Rio Grande physical), density 30,000,000 / 150,000 = 200 per sq mi all correct.",
+      "fixes": []
+    },
+    "human-migration": {
+      "result": "PASS",
+      "notes": "Emigration/immigration, push/pull, Great Migration about 1910-1970, diffusion, assimilation, diaspora correct. 'Share of Americans living in urban areas roughly doubled from 1900 to 2010' verified: Census 39.6% (1900) -> 80.7% (2010).",
+      "fixes": []
+    }
+  },
+  "figures": {
+    "ged-ss-surplus-shortage.svg": "1 PASS 2 PASS 3 PASS 5 PASS (all labels readable, nothing clipped or overlapping; Price on vertical axis, Quantity on horizontal, upward Supply and downward Demand is the standard convention; recomputed geometry: lines cross at the Equilibrium dot (260,220), at the high price line the demand point (x=170) is left of supply (x=350) = surplus, at the low price line supply (x=170) is left of demand (x=350) = shortage, so both gaps are correctly placed; alt text and caption match the image and the chapter's 'Surplus and shortage' card; cosmetic only: empty margin below the drawing in the PNG)"
+  },
+  "final": "16개 단원 중 15개 PASS, 1개 FAIL (micro-macro: 부족량 계산식 부호)"
+}
