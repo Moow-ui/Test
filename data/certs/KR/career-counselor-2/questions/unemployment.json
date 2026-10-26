@@ -1,0 +1,378 @@
+[
+  {
+    "id": "career-counselor-2-unemployment-0001",
+    "certId": "career-counselor-2",
+    "subjectId": "labor-market",
+    "chapterId": "unemployment",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "일자리와 구직자가 서로를 찾는 데 시간이 걸려 일시적으로 생기는 실업은?",
+    "choices": [
+      "경기적 실업",
+      "구조적 실업",
+      "계절적 실업",
+      "마찰적 실업"
+    ],
+    "answer": 4,
+    "oneLineConcept": "마찰적 실업 = 정보 부족·이동 과정의 일시적 실업",
+    "explanation": "마찰적 실업은 일자리는 있지만 구직자와 기업이 서로에 대한 정보를 얻고 연결되기까지 시간이 걸려 생깁니다. 이직하거나 처음 일자리를 찾는 과정에서 자연스럽게 생기며, 구인·구직 정보 제공을 늘리면 줄일 수 있습니다.\n\n**틀린 선지**\n- 구조적 실업: 산업구조나 기술 변화로 기술이 맞지 않아 생기는 실업입니다.\n- 경기적 실업: 경기 침체로 일자리가 줄어 생기는 실업입니다.\n- 계절적 실업: 계절에 따라 일이 줄어드는 업종에서 생기는 실업입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-27",
+    "tags": [
+      "실업",
+      "마찰적실업"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "career-counselor-2-unemployment-0002",
+    "certId": "career-counselor-2",
+    "subjectId": "labor-market",
+    "chapterId": "unemployment",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "산업구조의 변화나 기술 발전으로 근로자가 가진 기술과 기업이 원하는 기술이 맞지 않아 생기는 실업은?",
+    "choices": [
+      "경기적 실업",
+      "잠재적 실업",
+      "구조적 실업",
+      "마찰적 실업"
+    ],
+    "answer": 3,
+    "oneLineConcept": "구조적 실업 = 기술·지역 불일치, 대책은 직업훈련",
+    "explanation": "구조적 실업은 사양 산업에서 일하던 사람이 새로 성장하는 산업이 요구하는 기술을 갖추지 못했을 때 생기며, 오래 계속되는 경향이 있습니다. 직업훈련과 직업전환 교육, 지역 간 이동 지원이 주요 대책입니다.\n\n**틀린 선지**\n- 마찰적 실업: 정보 부족으로 일시적으로 생기는 실업입니다.\n- 경기적 실업: 경기 침체로 생기는 실업입니다.\n- 잠재적 실업: 겉으로는 일하고 있지만 생산성이 매우 낮은 상태입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-27",
+    "tags": [
+      "실업",
+      "구조적실업"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "career-counselor-2-unemployment-0003",
+    "certId": "career-counselor-2",
+    "subjectId": "labor-market",
+    "chapterId": "unemployment",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "경기가 나빠져 상품에 대한 수요(총수요)가 줄어들면서 생기는 실업은?",
+    "choices": [
+      "마찰적 실업",
+      "구조적 실업",
+      "계절적 실업",
+      "경기적 실업"
+    ],
+    "answer": 4,
+    "oneLineConcept": "경기적 실업 = 총수요 부족, 대책은 총수요 확대",
+    "explanation": "경기적 실업은 경기 침체기에 기업의 생산이 줄어 노동수요가 줄면서 생깁니다. 케인스가 강조한 비자발적 실업이 대표적이며, 정부 지출 확대나 금리 인하 같은 총수요 확대 정책으로 줄일 수 있습니다.\n\n**틀린 선지**\n- 마찰적 실업: 경기와 관계없이 정보 부족으로 생기는 실업입니다.\n- 구조적 실업: 산업구조 변화로 생기는 실업입니다.\n- 계절적 실업: 계절에 따라 생기는 실업입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-27",
+    "tags": [
+      "실업",
+      "경기적실업"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "career-counselor-2-unemployment-0004",
+    "certId": "career-counselor-2",
+    "subjectId": "labor-market",
+    "chapterId": "unemployment",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "마찰적 실업을 줄이는 대책으로 가장 알맞은 것은?",
+    "choices": [
+      "농한기에 지역 일자리 사업을 연다",
+      "새 기술에 맞는 직업훈련을 확대한다",
+      "정부 지출을 늘려 총수요를 키운다",
+      "구인·구직 정보망을 넓혀 일자리 정보를 빠르게 제공한다"
+    ],
+    "answer": 4,
+    "oneLineConcept": "실업 유형별 대책: 마찰적-정보, 구조적-훈련, 경기적-총수요",
+    "explanation": "마찰적 실업은 정보가 부족해 생기므로 공공 고용서비스와 취업정보망을 늘리고 직업안내를 강화하여 구직 기간을 줄이는 것이 효과적입니다.\n\n**틀린 선지**\n- 정부 지출을 늘려 총수요를 키운다: 경기적 실업에 대한 대책입니다.\n- 새 기술에 맞는 직업훈련을 확대한다: 구조적 실업에 대한 대책입니다.\n- 농한기에 지역 일자리 사업을 연다: 계절적 실업에 대한 대책입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-27",
+    "tags": [
+      "실업",
+      "실업대책"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "career-counselor-2-unemployment-0005",
+    "certId": "career-counselor-2",
+    "subjectId": "labor-market",
+    "chapterId": "unemployment",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "경기적 실업에 대한 대책으로 가장 알맞은 것은?",
+    "choices": [
+      "사양 산업 근로자에게 전직훈련을 실시한다",
+      "구인·구직 정보 제공을 늘린다",
+      "실업률 통계 발표를 중단한다",
+      "정부 지출을 늘리고 금리를 낮추어 총수요를 늘린다"
+    ],
+    "answer": 4,
+    "oneLineConcept": "경기적 실업 대책 = 재정·금융 정책으로 총수요 확대",
+    "explanation": "경기적 실업은 경제 전체의 수요 부족에서 생기므로 재정 정책(공공사업, 정부 지출 확대, 감세)과 금융 정책(금리 인하, 통화량 증가)으로 총수요를 늘려 고용을 회복시키는 것이 대책입니다.\n\n**틀린 선지**\n- 구인·구직 정보 제공을 늘린다: 마찰적 실업에 대한 대책입니다.\n- 사양 산업 근로자에게 전직훈련을 실시한다: 구조적 실업에 대한 대책입니다.\n- 실업률 통계 발표를 중단한다: 실업을 줄이는 대책이 아닙니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-27",
+    "tags": [
+      "실업",
+      "실업대책"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "career-counselor-2-unemployment-0006",
+    "certId": "career-counselor-2",
+    "subjectId": "labor-market",
+    "chapterId": "unemployment",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "겉으로는 일하고 있지만 생산성이 매우 낮아 사실상 실업과 다름없는 상태를 무엇이라 하는가?",
+    "choices": [
+      "잠재적 실업(위장실업)",
+      "마찰적 실업",
+      "탐색적 실업",
+      "자발적 실업"
+    ],
+    "answer": 1,
+    "oneLineConcept": "잠재적 실업 = 취업 상태지만 한계생산성이 매우 낮음",
+    "explanation": "잠재적 실업(위장실업)은 통계상 취업자로 잡히지만, 일을 그만두어도 전체 생산량에 거의 변화가 없을 만큼 생산성이 낮은 상태입니다. 일감이 부족한 영세 농업이나 가족 사업에서 많이 볼 수 있습니다.\n\n**틀린 선지**\n- 자발적 실업: 현재 임금 수준에서 스스로 일하지 않기로 한 실업입니다.\n- 마찰적 실업: 일자리를 옮기는 과정의 일시적 실업입니다.\n- 탐색적 실업: 더 좋은 일자리를 찾으며 머무는 실업으로 실제로 일하지 않는 상태입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-27",
+    "tags": [
+      "실업",
+      "잠재적실업"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "career-counselor-2-unemployment-0007",
+    "certId": "career-counselor-2",
+    "subjectId": "labor-market",
+    "chapterId": "unemployment",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "지금의 임금 수준에서 일할 의사가 없어 스스로 실업 상태로 있는 것은?",
+    "choices": [
+      "구조적 실업",
+      "자발적 실업",
+      "경기적 실업",
+      "비자발적 실업"
+    ],
+    "answer": 2,
+    "oneLineConcept": "자발적 = 일할 의사 없음 / 비자발적 = 의사 있어도 일자리 없음",
+    "explanation": "자발적 실업은 현재의 임금과 근로조건에서 일하기를 원하지 않아 생기는 실업으로, 더 좋은 일자리를 찾는 탐색 과정의 실업도 여기에 포함해 설명하기도 합니다. 비자발적 실업은 일할 의사와 능력이 있는데도 일자리가 없어 생기는 실업입니다.\n\n**틀린 선지**\n- 비자발적 실업: 현재 임금으로 일할 의사가 있는데도 일자리를 얻지 못한 실업입니다.\n- 경기적 실업: 총수요 부족으로 생기는 비자발적 실업입니다.\n- 구조적 실업: 기술 불일치로 생기는 실업입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-27",
+    "tags": [
+      "실업",
+      "자발적실업"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "career-counselor-2-unemployment-0008",
+    "certId": "career-counselor-2",
+    "subjectId": "labor-market",
+    "chapterId": "unemployment",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "필립스 곡선이 나타내는 관계로 옳은 것은?",
+    "choices": [
+      "실업률과 경제성장률 사이의 비례 관계",
+      "임금과 노동시간 사이의 관계",
+      "실업률과 물가(임금)상승률 사이의 상충(반비례) 관계",
+      "교육 수준과 임금 사이의 관계"
+    ],
+    "answer": 3,
+    "oneLineConcept": "필립스 곡선 = 실업률↓ ↔ 물가상승률↑",
+    "explanation": "필립스 곡선은 실업률이 낮을수록 임금(물가)상승률이 높고, 실업률이 높을수록 임금(물가)상승률이 낮다는 반비례 관계를 보여 줍니다. 그래서 단기적으로는 실업과 물가를 동시에 낮추기 어렵다는 정책적 의미가 있습니다.\n\n**틀린 선지**\n- 실업률과 경제성장률 사이의 비례 관계: 경제성장률과 실업률의 관계는 오쿤의 법칙에서 다룹니다.\n- 임금과 노동시간 사이의 관계: 노동공급곡선에서 다루는 관계입니다.\n- 교육 수준과 임금 사이의 관계: 인적자본이론에서 다루는 관계입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-27",
+    "tags": [
+      "실업",
+      "필립스곡선"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "career-counselor-2-unemployment-0009",
+    "certId": "career-counselor-2",
+    "subjectId": "labor-market",
+    "chapterId": "unemployment",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "경기 침체로 일자리 찾기를 포기한 구직단념자가 늘어나면 공식 실업률은 어떻게 나타날 수 있는가?",
+    "choices": [
+      "구직단념자는 15세 이상 인구에서 빠지므로 실업률과 관계없다",
+      "구직단념자는 취업자로 분류되므로 실업률이 낮아진다",
+      "구직단념자는 실업자로 분류되므로 실업률이 크게 높아진다",
+      "구직단념자는 비경제활동인구로 분류되므로 실업률이 실제보다 낮게 나타날 수 있다"
+    ],
+    "answer": 4,
+    "oneLineConcept": "실망실업자(구직단념자) 증가 → 실업률 과소평가",
+    "explanation": "실업자는 일할 능력과 의사가 있고 적극적으로 일자리를 찾은 사람입니다. 구직을 포기하면 비경제활동인구로 옮겨 가므로 실업자 수와 경제활동인구가 함께 줄어 실업률이 실제 고용 사정보다 좋게 보일 수 있습니다. 그래서 고용률 같은 다른 지표를 함께 봅니다.\n\n**틀린 선지**\n- 구직단념자는 실업자로 분류되므로 실업률이 크게 높아진다: 구직활동을 하지 않으면 실업자가 아니라 비경제활동인구입니다.\n- 구직단념자는 취업자로 분류되므로 실업률이 낮아진다: 일을 하지 않으므로 취업자가 아닙니다.\n- 구직단념자는 15세 이상 인구에서 빠지므로 실업률과 관계없다: 15세 이상 인구에는 그대로 포함됩니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-27",
+    "tags": [
+      "실업",
+      "구직단념자"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "career-counselor-2-unemployment-0010",
+    "certId": "career-counselor-2",
+    "subjectId": "labor-market",
+    "chapterId": "unemployment",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "케인스(Keynes)학파가 비자발적 실업의 주된 원인으로 보는 것은?",
+    "choices": [
+      "직업정보의 부족",
+      "실업급여의 지급",
+      "유효수요(총수요)의 부족",
+      "산업구조의 변화"
+    ],
+    "answer": 3,
+    "oneLineConcept": "케인스: 유효수요 부족 → 비자발적 실업",
+    "explanation": "케인스는 임금이 쉽게 내려가지 않는 상황에서 경제 전체의 유효수요(실제 구매력이 뒷받침된 수요)가 부족하면, 일할 의사가 있어도 일자리를 얻지 못하는 비자발적 실업이 생긴다고 보았습니다. 그래서 정부가 재정 지출 등으로 수요를 늘려야 한다고 주장했습니다.\n\n**틀린 선지**\n- 실업급여의 지급: 실업급여가 구직 기간을 늘린다는 주장은 다른 학파의 관점입니다.\n- 직업정보의 부족: 마찰적 실업의 원인입니다.\n- 산업구조의 변화: 구조적 실업의 원인입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-27",
+    "tags": [
+      "실업",
+      "실업이론"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "career-counselor-2-unemployment-0011",
+    "certId": "career-counselor-2",
+    "subjectId": "labor-market",
+    "chapterId": "unemployment",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "적극적 노동시장정책에 해당하지 않는 것은?",
+    "choices": [
+      "공공 고용서비스로 직업상담과 취업알선을 하는 것",
+      "취약계층을 고용한 기업에 고용장려금을 지원하는 것",
+      "실업자에게 생계를 위한 실업급여를 지급하는 것",
+      "실업자에게 직업훈련을 실시하는 것"
+    ],
+    "answer": 3,
+    "oneLineConcept": "적극적 = 훈련·고용서비스·고용보조금 / 소극적 = 실업급여 등 소득지원",
+    "explanation": "적극적 노동시장정책은 실업자가 일자리를 얻도록 직접 돕는 정책으로 직업훈련, 직업상담과 취업알선, 고용장려금, 직접 일자리 창출 등이 있습니다. 실업급여처럼 실직 기간의 생계를 지원하는 것은 소극적 노동시장정책에 해당합니다.\n\n**틀린 선지**\n- 실업자에게 직업훈련을 실시하는 것: 적극적 노동시장정책입니다.\n- 공공 고용서비스로 직업상담과 취업알선을 하는 것: 적극적 노동시장정책입니다.\n- 취약계층을 고용한 기업에 고용장려금을 지원하는 것: 적극적 노동시장정책입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-27",
+    "tags": [
+      "실업대책",
+      "노동시장정책"
+    ],
+    "levelLock": true
+  }
+]
