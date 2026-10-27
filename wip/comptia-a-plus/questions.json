@@ -1,0 +1,2953 @@
+[
+  {
+    "subjectId": "core-1",
+    "chapterId": "mobile-devices",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A customer wants to pay at a store by holding a phone a few centimeters from the card reader. Which wireless technology does this use?",
+    "choices": [
+      "Wi-Fi",
+      "Cellular data",
+      "NFC",
+      "Bluetooth"
+    ],
+    "answer": 3,
+    "oneLineConcept": "NFC = touch-range link used for tap-to-pay",
+    "explanation": "NFC (near-field communication) works only when two devices are a few centimeters apart. That very short range makes it a good fit for contactless payments and quick tap-to-share actions.\n\n**Wrong choices**\n- Wi-Fi: Wi-Fi connects devices to a network, not to a store card reader by touch.\n- Cellular data: Cellular data connects the phone to the carrier's network over long distances, not to a nearby card reader.\n- Bluetooth: Bluetooth links accessories such as headsets across a room after pairing. Tap-to-pay uses a much shorter-range link.",
+    "frequency": 4,
+    "tags": [
+      "NFC",
+      "mobile payments",
+      "wireless"
+    ],
+    "distractorOrder": "4|1|2"
+  },
+  {
+    "subjectId": "core-1",
+    "chapterId": "mobile-devices",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A technician is adding memory to a laptop. Which type of memory module does a typical laptop use?",
+    "choices": [
+      "SO-DIMM",
+      "PCIe x16 card",
+      "M.2 card",
+      "DIMM"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Laptop memory = SO-DIMM",
+    "explanation": "Laptops use SO-DIMM (small outline DIMM) memory modules. They do the same job as desktop DIMMs but are shorter so they fit inside a thin case. The memory generation, such as DDR4 or DDR5, must also match the laptop.\n\n**Wrong choices**\n- PCIe x16 card: A PCIe x16 slot holds desktop expansion cards such as graphics cards, not memory.\n- M.2 card: An M.2 slot is mainly used for SSD storage drives, not for main memory.\n- DIMM: A DIMM is the full-size memory module used in desktop PCs. It does not fit a laptop memory slot.",
+    "frequency": 4,
+    "tags": [
+      "laptop",
+      "RAM",
+      "SO-DIMM"
+    ],
+    "distractorOrder": "4|3|2"
+  },
+  {
+    "subjectId": "core-1",
+    "chapterId": "mobile-devices",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A field technician needs internet access on a laptop at a site with no Wi-Fi. The technician's phone has a strong cellular data signal. What is the quickest way to get the laptop online?",
+    "choices": [
+      "Connect the laptop to the phone with a DisplayPort cable",
+      "Pair the laptop and phone with NFC",
+      "Turn on airplane mode on the phone",
+      "Turn on the phone's mobile hotspot and connect the laptop to it"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Hotspot shares a phone's cellular data",
+    "explanation": "A mobile hotspot (also called tethering) lets a phone share its cellular data connection with other devices, usually over Wi-Fi. The laptop simply joins the phone's Wi-Fi network.\n\n**Wrong choices**\n- Connect the laptop to the phone with a DisplayPort cable: DisplayPort carries video to a monitor. It does not share a network connection.\n- Pair the laptop and phone with NFC: NFC works only at touch range and is used for things like payments, not for sharing an internet connection.\n- Turn on airplane mode on the phone: Airplane mode turns off the phone's radios, including cellular data, so it would remove the only internet connection.",
+    "frequency": 4,
+    "tags": [
+      "hotspot",
+      "tethering",
+      "cellular"
+    ],
+    "distractorOrder": "2|3|1"
+  },
+  {
+    "subjectId": "core-1",
+    "chapterId": "mobile-devices",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A user bought a new phone, and their wireless headset will not connect to it. The headset worked with the old phone. What should the technician try first?",
+    "choices": [
+      "Turn on NFC and hold the headset against a card reader",
+      "Reset the phone to factory settings",
+      "Put the headset in pairing mode and pair it from the phone's Bluetooth settings",
+      "Turn on the phone's mobile hotspot"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Bluetooth devices must be paired first",
+    "explanation": "Bluetooth devices only work together after they are paired. The headset was paired with the old phone, not the new one. Putting the headset in pairing (discoverable) mode and selecting it in the new phone's Bluetooth settings links the two.\n\n**Wrong choices**\n- Turn on NFC and hold the headset against a card reader: NFC is used for touch-range actions like payments, and a card reader plays no part in connecting a headset.\n- Reset the phone to factory settings: A factory reset erases the phone and is far too drastic as a first step. The new phone has simply never been paired with the headset.\n- Turn on the phone's mobile hotspot: A hotspot shares cellular data over Wi-Fi. It has nothing to do with connecting a Bluetooth headset.",
+    "frequency": 5,
+    "tags": [
+      "Bluetooth",
+      "pairing",
+      "accessories"
+    ],
+    "distractorOrder": "2|4|1"
+  },
+  {
+    "subjectId": "core-1",
+    "chapterId": "mobile-devices",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A technician notices that a laptop's case is bulging and the touchpad is pushed up because the battery has swollen. What should the technician do?",
+    "choices": [
+      "Stop using the laptop, remove the battery safely, and replace it",
+      "Fully drain and recharge the battery to reset it",
+      "Keep using the laptop until the battery stops charging",
+      "Tighten the case screws to press the battery flat"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Swollen battery = stop using and replace",
+    "explanation": "A swollen lithium-ion battery has failed inside and can catch fire. The safe action is to power off the device, stop using it, remove the battery carefully without bending or puncturing it, replace it, and recycle the old one according to local rules.\n\n**Wrong choices**\n- Fully drain and recharge the battery to reset it: Charging cycles do not fix swelling. The battery is damaged and must be replaced.\n- Keep using the laptop until the battery stops charging: A swollen battery is a fire and safety risk. Waiting for it to fail could make the situation dangerous.\n- Tighten the case screws to press the battery flat: Pressing on a swollen lithium-ion battery can puncture it and cause a fire.",
+    "frequency": 4,
+    "tags": [
+      "battery",
+      "safety",
+      "laptop"
+    ],
+    "distractorOrder": "3|4|2"
+  },
+  {
+    "subjectId": "core-1",
+    "chapterId": "mobile-devices",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A technician replaced a cracked laptop screen. Now the laptop gets a weak Wi-Fi signal, while other laptops in the same room have full signal. What is the most likely cause?",
+    "choices": [
+      "The laptop's memory module is loose",
+      "The wireless router is set to channel 11",
+      "Bluetooth is turned off on the laptop",
+      "The Wi-Fi antenna wires in the display were not reconnected or were damaged"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Laptop Wi-Fi antennas run through the display",
+    "explanation": "In most laptops, the Wi-Fi antenna wires run up into the display lid. A screen replacement means working right next to them, so a wire that was pinched, damaged, or left unplugged is the most likely cause. The fact that only this laptop is affected, and only after the repair, points to the repair itself.\n\n**Wrong choices**\n- The laptop's memory module is loose: Loose memory causes boot or stability problems, not a weak wireless signal.\n- The wireless router is set to channel 11: Other laptops in the same room have full signal, so the router's settings are not the problem.\n- Bluetooth is turned off on the laptop: Bluetooth is a separate radio. Turning it off does not weaken Wi-Fi.",
+    "frequency": 3,
+    "tags": [
+      "laptop",
+      "Wi-Fi antenna",
+      "display repair"
+    ],
+    "distractorOrder": "2|3|1"
+  },
+  {
+    "subjectId": "core-1",
+    "chapterId": "mobile-devices",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A company wants to require passcodes on all company phones, push work apps to them, and wipe a phone if it is lost. Which solution fits best?",
+    "choices": [
+      "Virtual private network (VPN)",
+      "Mobile device management (MDM)",
+      "Remote Desktop Protocol (RDP)",
+      "Near-field communication (NFC)"
+    ],
+    "answer": 2,
+    "oneLineConcept": "MDM pushes policies, apps, and remote wipe",
+    "explanation": "Mobile device management (MDM) lets a company enroll phones and tablets and control them centrally. It can enforce passcodes and encryption, install or remove work apps, and remotely lock or wipe a lost device.\n\n**Wrong choices**\n- Virtual private network (VPN): A VPN encrypts network traffic, but it cannot enforce passcodes, install apps, or wipe a lost phone.\n- Remote Desktop Protocol (RDP): RDP lets you control a Windows desktop remotely. It is not used to manage phone settings or wipe phones.\n- Near-field communication (NFC): NFC is a touch-range wireless link for things like payments. It is not a management tool.",
+    "frequency": 4,
+    "tags": [
+      "MDM",
+      "mobile security",
+      "remote wipe"
+    ],
+    "distractorOrder": "1|4|3"
+  },
+  {
+    "subjectId": "core-1",
+    "chapterId": "mobile-devices",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "An employee uses a laptop at a desk with two monitors, a wired network connection, a full-size keyboard, and a mouse. The employee wants to connect all of them by plugging in just one cable or connector. What should the technician provide?",
+    "choices": [
+      "A KVM switch",
+      "A Bluetooth adapter",
+      "A USB flash drive",
+      "A docking station"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Docking station = one connection to many devices",
+    "explanation": "A docking station connects to the laptop through one connection and provides ports for monitors, network, keyboard, mouse, and often power. When the user leaves, they unplug one connector and take the laptop.\n\n**Wrong choices**\n- A KVM switch: A KVM switch lets several computers share one keyboard, monitor, and mouse. It does not turn one laptop connection into many ports.\n- A Bluetooth adapter: Bluetooth can connect a keyboard and mouse, but not wired monitors or a wired network.\n- A USB flash drive: A flash drive stores files. It does not connect monitors or a network.",
+    "frequency": 3,
+    "tags": [
+      "docking station",
+      "laptop",
+      "accessories"
+    ],
+    "distractorOrder": "1|2|3"
+  },
+  {
+    "subjectId": "core-1",
+    "chapterId": "mobile-devices",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A user says that when they type the letters U, I, and O on their laptop, the numbers 4, 5, and 6 appear instead. The laptop has no separate number pad. What is the most likely cause?",
+    "choices": [
+      "The keyboard ribbon cable is loose",
+      "A keylogger is installed on the laptop",
+      "Num Lock is turned on, so part of the keyboard acts as a number pad",
+      "The keyboard language layout is set incorrectly"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Laptop letters typing numbers = Num Lock on",
+    "explanation": "Many laptops without a separate number pad have a hidden number pad on the letter keys, such as U, I, O for 4, 5, 6. When Num Lock is turned on, those keys type numbers. Turning Num Lock off, often with the Fn key, fixes the problem.\n\n**Wrong choices**\n- The keyboard ribbon cable is loose: A loose cable usually makes keys stop working completely, not type different characters.\n- A keylogger is installed on the laptop: A keylogger secretly records keystrokes. It does not change which characters appear on screen.\n- The keyboard language layout is set incorrectly: A wrong layout usually swaps symbols or a few letters, not a neat block of letter keys turning into numbers.",
+    "frequency": 3,
+    "tags": [
+      "laptop",
+      "keyboard",
+      "Num Lock"
+    ],
+    "distractorOrder": "4|1|2"
+  },
+  {
+    "subjectId": "core-1",
+    "chapterId": "mobile-devices",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "After a phone was dropped, the display shows a clear image, but one part of the screen no longer responds to touch. Which part most likely needs to be replaced?",
+    "choices": [
+      "The digitizer",
+      "The battery",
+      "The LCD or OLED display panel",
+      "The Wi-Fi antenna"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Touch not responding = digitizer",
+    "explanation": "The digitizer is the touch-sensing layer on top of the display. It turns finger touches into input. If the picture is fine but part of the screen ignores touch, the digitizer is the most likely damaged part.\n\n**Wrong choices**\n- The battery: A damaged battery causes power or charging problems, not a dead touch area while the screen works.\n- The LCD or OLED display panel: The image is still clear, so the display panel itself is working. The problem is with touch input.\n- The Wi-Fi antenna: The Wi-Fi antenna affects wireless signal, not touch response.",
+    "frequency": 3,
+    "tags": [
+      "digitizer",
+      "touchscreen",
+      "mobile repair"
+    ],
+    "distractorOrder": "3|2|4"
+  },
+  {
+    "subjectId": "core-1",
+    "chapterId": "networking",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which port does HTTPS use by default?",
+    "choices": [
+      "80",
+      "3389",
+      "22",
+      "443"
+    ],
+    "answer": 4,
+    "oneLineConcept": "HTTPS = TCP port 443",
+    "explanation": "HTTPS is web traffic protected by encryption, and it uses port 443 by default. Plain HTTP uses port 80. Remember the pair: 80 for HTTP, 443 for HTTPS.\n\n**Wrong choices**\n- 80: Port 80 is used by HTTP, the unencrypted version of web traffic.\n- 3389: Port 3389 is used by Remote Desktop Protocol (RDP).\n- 22: Port 22 is used by SSH for secure remote command-line access.",
+    "frequency": 5,
+    "tags": [
+      "ports",
+      "HTTPS",
+      "protocols"
+    ],
+    "distractorOrder": "1|3|2"
+  },
+  {
+    "subjectId": "core-1",
+    "chapterId": "networking",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A technician needs a secure, encrypted command-line connection to manage a Linux server remotely. Which protocol should the technician use?",
+    "choices": [
+      "Telnet",
+      "FTP",
+      "SSH",
+      "RDP"
+    ],
+    "answer": 3,
+    "oneLineConcept": "SSH (port 22) = encrypted remote command line",
+    "explanation": "SSH (Secure Shell) uses port 22 and encrypts the whole session, including the login. It is the standard way to manage Linux servers and network devices from the command line.\n\n**Wrong choices**\n- Telnet: Telnet also gives remote command-line access, but it sends everything, including passwords, in plain text.\n- FTP: FTP transfers files. It is not used for a remote command line, and basic FTP is not encrypted.\n- RDP: RDP gives a graphical remote desktop, mainly for Windows, not a command-line session to a Linux server.",
+    "frequency": 5,
+    "tags": [
+      "SSH",
+      "remote access",
+      "ports"
+    ],
+    "distractorOrder": "1|4|2"
+  },
+  {
+    "subjectId": "core-1",
+    "chapterId": "networking",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A user's Windows PC cannot reach the internet. The technician sees that its IP address is 169.254.10.5. What does this address mean?",
+    "choices": [
+      "The DNS server is not answering",
+      "The PC has a correctly set static IP address",
+      "The PC has a public internet address from the ISP",
+      "The PC could not get an address from a DHCP server and gave itself one"
+    ],
+    "answer": 4,
+    "oneLineConcept": "169.254.x.x (APIPA) = DHCP failed",
+    "explanation": "When a Windows PC is set to get an address automatically but no DHCP server answers, it assigns itself an APIPA address in the 169.254.x.x range. With this address it can only talk to nearby devices on the same network, so it cannot reach the internet. Check the cable or Wi-Fi link and the DHCP server.\n\n**Wrong choices**\n- The DNS server is not answering: A DNS problem stops names from resolving, but it does not cause the PC to give itself a 169.254 address.\n- The PC has a correctly set static IP address: A 169.254 address is assigned automatically when DHCP fails. It is not a normal static address.\n- The PC has a public internet address from the ISP: 169.254.x.x is a link-local (APIPA) range. It is never a public internet address.",
+    "frequency": 5,
+    "tags": [
+      "APIPA",
+      "DHCP",
+      "IP addressing"
+    ],
+    "distractorOrder": "1|2|3"
+  },
+  {
+    "subjectId": "core-1",
+    "chapterId": "networking",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which network device connects a home or office network to the internet service provider's network and forwards traffic between the two networks?",
+    "choices": [
+      "Wireless access point",
+      "Switch",
+      "Patch panel",
+      "Router"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Router = forwards traffic between networks",
+    "explanation": "A router connects different networks and decides where to send traffic based on IP addresses. In a home or small office, it sits between the local network and the internet provider's network.\n\n**Wrong choices**\n- Wireless access point: An access point adds Wi-Fi to an existing network. It does not route between networks.\n- Switch: A switch connects devices within the same network. It does not route traffic between different networks.\n- Patch panel: A patch panel is a passive connection point for cables. It does not forward traffic on its own.",
+    "frequency": 4,
+    "tags": [
+      "router",
+      "network devices"
+    ],
+    "distractorOrder": "2|1|3"
+  },
+  {
+    "subjectId": "core-1",
+    "chapterId": "networking",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which network service translates a name such as www.example.com into an IP address?",
+    "choices": [
+      "SMTP",
+      "DHCP",
+      "DNS",
+      "LDAP"
+    ],
+    "answer": 3,
+    "oneLineConcept": "DNS turns names into IP addresses",
+    "explanation": "DNS (Domain Name System) works like a phone book for networks. It turns names that people remember into the IP addresses computers use. DNS uses port 53.\n\n**Wrong choices**\n- SMTP: SMTP sends email. It does not translate names into addresses.\n- DHCP: DHCP hands out IP addresses to devices. It does not look up names.\n- LDAP: LDAP is used to look up users and objects in a directory, not to turn web names into IP addresses.",
+    "frequency": 5,
+    "tags": [
+      "DNS",
+      "network services"
+    ],
+    "distractorOrder": "2|1|4"
+  },
+  {
+    "subjectId": "core-1",
+    "chapterId": "networking",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A technician needs to find which cable at a patch panel leads to a certain wall jack in an office. Which tool should the technician use?",
+    "choices": [
+      "Crimper",
+      "Punchdown tool",
+      "Loopback plug",
+      "Toner probe"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Toner probe traces which cable is which",
+    "explanation": "A toner probe has two parts. The tone generator connects to the cable at the wall jack and sends a signal down it. The technician then moves the probe across the patch panel until it picks up the tone, which shows the matching cable.\n\n**Wrong choices**\n- Crimper: A crimper attaches RJ45 plugs to the ends of network cables. It does not trace cables.\n- Punchdown tool: A punchdown tool presses wires into a patch panel or keystone jack. It does not find which cable is which.\n- Loopback plug: A loopback plug tests whether a network port can send and receive. It does not trace a cable through a wall.",
+    "frequency": 4,
+    "tags": [
+      "toner probe",
+      "network tools",
+      "cabling"
+    ],
+    "distractorOrder": "1|2|3"
+  },
+  {
+    "subjectId": "core-1",
+    "chapterId": "networking",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "An email program sends outgoing messages to the mail server. Which protocol does it use to send them?",
+    "choices": [
+      "SNMP",
+      "POP3",
+      "IMAP",
+      "SMTP"
+    ],
+    "answer": 4,
+    "oneLineConcept": "SMTP sends mail; POP3 and IMAP receive it",
+    "explanation": "SMTP (Simple Mail Transfer Protocol), port 25, sends email from a client to a server and between mail servers. To receive mail, clients use POP3 (port 110) or IMAP (port 143).\n\n**Wrong choices**\n- SNMP: SNMP is used to monitor network devices. It has nothing to do with sending email.\n- POP3: POP3 is used to download email from the server to the device, not to send mail.\n- IMAP: IMAP is used to read and manage email that stays on the server, not to send mail.",
+    "frequency": 4,
+    "tags": [
+      "SMTP",
+      "email",
+      "ports"
+    ],
+    "distractorOrder": "3|2|1"
+  },
+  {
+    "subjectId": "core-1",
+    "chapterId": "networking",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A technician is setting up several 2.4 GHz wireless access points in one building and wants to avoid channel overlap. Which set of channels should be used?",
+    "choices": [
+      "6, 7, and 8",
+      "1, 6, and 11",
+      "1, 2, and 3",
+      "2, 4, and 6"
+    ],
+    "answer": 2,
+    "oneLineConcept": "2.4 GHz non-overlapping channels: 1, 6, 11",
+    "explanation": "Channels in the 2.4 GHz band are close together and each one is wide enough to spill into its neighbors. Channels 1, 6, and 11 are far enough apart that they do not overlap, so nearby access points on those channels interfere with each other less.\n\n**Wrong choices**\n- 6, 7, and 8: These channels are side by side and overlap almost completely.\n- 1, 2, and 3: These channels sit right next to each other and overlap heavily in the 2.4 GHz band.\n- 2, 4, and 6: These channels are only two apart, so they still overlap with each other.",
+    "frequency": 4,
+    "tags": [
+      "Wi-Fi",
+      "2.4 GHz",
+      "channels"
+    ],
+    "distractorOrder": "3|4|1"
+  },
+  {
+    "subjectId": "core-1",
+    "chapterId": "networking",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A firewall must allow users to browse both secure and non-secure websites. Which two ports must be allowed?",
+    "choices": [
+      "53 and 3389",
+      "21 and 22",
+      "25 and 110",
+      "80 and 443"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Web: HTTP 80 and HTTPS 443",
+    "explanation": "Non-secure websites use HTTP on port 80, and secure websites use HTTPS on port 443. Allowing both ports lets users open either kind of site.\n\n**Wrong choices**\n- 53 and 3389: Port 53 is DNS, which browsing needs but is not web traffic itself, and 3389 is Remote Desktop.\n- 21 and 22: Ports 21 and 22 are used by FTP and SSH, not web browsing.\n- 25 and 110: Ports 25 and 110 are used by SMTP and POP3 for email, not web browsing.",
+    "frequency": 4,
+    "tags": [
+      "ports",
+      "HTTP",
+      "HTTPS",
+      "firewall"
+    ],
+    "distractorOrder": "1|2|3"
+  },
+  {
+    "subjectId": "core-1",
+    "chapterId": "networking",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which of the following is a private IPv4 address that can be used inside an office network?",
+    "choices": [
+      "172.32.1.1",
+      "11.0.0.5",
+      "192.169.1.1",
+      "172.20.5.10"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Private: 10.x, 172.16-31.x, 192.168.x",
+    "explanation": "There are three private IPv4 ranges: 10.0.0.0 to 10.255.255.255, 172.16.0.0 to 172.31.255.255, and 192.168.0.0 to 192.168.255.255. 172.20.5.10 falls inside the 172.16 to 172.31 range, so it is private.\n\n**Wrong choices**\n- 172.32.1.1: The private 172 range is only 172.16.0.0 to 172.31.255.255. 172.32 is just outside it, so it is a public address.\n- 11.0.0.5: The private range is 10.x.x.x. 11.x.x.x is a public range.\n- 192.169.1.1: The private range is 192.168.x.x. 192.169 is outside it and is public.",
+    "frequency": 4,
+    "tags": [
+      "IP addressing",
+      "private addresses",
+      "IPv4"
+    ],
+    "distractorOrder": "1|3|2"
+  },
+  {
+    "subjectId": "core-1",
+    "chapterId": "networking",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which transport protocol sets up a connection, checks that data arrives, and resends lost pieces?",
+    "choices": [
+      "ARP",
+      "TCP",
+      "UDP",
+      "ICMP"
+    ],
+    "answer": 2,
+    "oneLineConcept": "TCP = reliable, connection-oriented",
+    "explanation": "TCP (Transmission Control Protocol) is connection-oriented. It sets up a session, numbers the data, confirms delivery, and resends anything that is lost. UDP skips these checks, so it is quicker and is used for things like streaming and DNS lookups.\n\n**Wrong choices**\n- ARP: ARP finds the MAC address that belongs to an IP address on the local network. It does not deliver data.\n- UDP: UDP sends data without setting up a connection or checking delivery. That makes it faster but less reliable.\n- ICMP: ICMP carries error and test messages such as ping. It does not deliver application data reliably.",
+    "frequency": 4,
+    "tags": [
+      "TCP",
+      "UDP",
+      "protocols"
+    ],
+    "distractorOrder": "3|4|1"
+  },
+  {
+    "subjectId": "core-1",
+    "chapterId": "networking",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A small office wants to mount wireless access points on the ceiling where there are no power outlets. Each access point should get both power and network from one cable. What should the technician install?",
+    "choices": [
+      "A hub",
+      "A patch panel",
+      "A cable modem",
+      "A Power over Ethernet (PoE) switch"
+    ],
+    "answer": 4,
+    "oneLineConcept": "PoE sends power and data on one Ethernet cable",
+    "explanation": "Power over Ethernet (PoE) carries electrical power along with network data on a normal Ethernet cable. A PoE switch (or a PoE injector) can power devices like access points, phones, and cameras where there is no outlet.\n\n**Wrong choices**\n- A hub: A hub only repeats network traffic to every port. It does not send power over the cable.\n- A patch panel: A patch panel organizes cables but does not provide power or switching.\n- A cable modem: A cable modem connects to the internet provider's cable line. It does not power access points.",
+    "frequency": 3,
+    "tags": [
+      "PoE",
+      "switch",
+      "access point"
+    ],
+    "distractorOrder": "1|2|3"
+  },
+  {
+    "subjectId": "core-1",
+    "chapterId": "networking",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A user can ping a web server by its IP address but cannot open it by its host name. What should the technician check first?",
+    "choices": [
+      "The network cable on the user's PC",
+      "The DHCP lease on the user's PC",
+      "The DNS server settings on the user's PC",
+      "The default gateway setting"
+    ],
+    "answer": 3,
+    "oneLineConcept": "IP works but name fails = DNS problem",
+    "explanation": "Here is how to narrow it down:\n1. The ping by IP address works, so the cable, IP address, and gateway are fine.\n2. Only the name fails, and turning a name into an address is the job of DNS.\n3. So the next thing to check is which DNS server the PC uses and whether it answers.\n\n**Wrong choices**\n- The network cable on the user's PC: The ping by IP proves the cable and network link are working.\n- The DHCP lease on the user's PC: The PC already has a working address, since the ping by IP succeeds. DHCP is not the issue.\n- The default gateway setting: The ping by IP address reached the server, so traffic is already leaving the local network. The gateway is working.",
+    "frequency": 5,
+    "tags": [
+      "DNS",
+      "troubleshooting",
+      "ping"
+    ],
+    "distractorOrder": "4|2|1"
+  },
+  {
+    "subjectId": "core-1",
+    "chapterId": "networking",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Two office networks are separated by a firewall. Users on one network must open Windows file shares on a server in the other network. Which port must the firewall allow?",
+    "choices": [
+      "445",
+      "389",
+      "3389",
+      "143"
+    ],
+    "answer": 1,
+    "oneLineConcept": "SMB file sharing = port 445",
+    "explanation": "Windows file and printer sharing uses SMB (Server Message Block), which runs on TCP port 445. Without that port, users cannot reach shared folders on the other network.\n\n**Wrong choices**\n- 389: Port 389 is LDAP, which is used for directory lookups, not file sharing.\n- 3389: Port 3389 is Remote Desktop. It lets users control a desktop, not open file shares.\n- 143: Port 143 is IMAP for reading email, not for file shares.",
+    "frequency": 4,
+    "tags": [
+      "SMB",
+      "ports",
+      "file sharing"
+    ],
+    "distractorOrder": "3|2|4"
+  },
+  {
+    "subjectId": "core-1",
+    "chapterId": "networking",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "All of the following protocols send data, including passwords, in plain text EXCEPT:",
+    "choices": [
+      "SSH",
+      "Telnet",
+      "HTTP",
+      "FTP"
+    ],
+    "answer": 1,
+    "oneLineConcept": "SSH encrypts; Telnet, HTTP, and FTP do not",
+    "explanation": "SSH encrypts the whole session, so someone capturing the traffic cannot read the password or commands. Telnet, HTTP, and basic FTP send data in plain text, which is why they should be replaced by secure choices such as SSH, HTTPS, and secure file transfer methods.\n\n**Wrong choices**\n- Telnet: Telnet sends everything in plain text, including login passwords.\n- HTTP: HTTP does not encrypt pages or form data, so passwords sent with it can be read.\n- FTP: Basic FTP sends usernames, passwords, and files without encryption.",
+    "frequency": 4,
+    "tags": [
+      "security",
+      "protocols",
+      "SSH"
+    ],
+    "levelLock": true
+  },
+  {
+    "subjectId": "core-1",
+    "chapterId": "hardware",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "The figure shows how data and parity blocks are laid out on a disk array. Which RAID level does it show?",
+    "choices": [
+      "RAID 0",
+      "RAID 6",
+      "RAID 10",
+      "RAID 5"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Striping + one parity block per stripe = RAID 5",
+    "explanation": "Look at each row (stripe). Each one has data blocks spread across the disks plus exactly one parity block, and the parity block moves to a different disk in each row. Striping with distributed parity is RAID 5. If one disk fails, the missing data can be rebuilt from the other blocks and the parity.\n\n**Wrong choices**\n- RAID 0: RAID 0 stripes data with no parity at all. The figure has parity blocks.\n- RAID 6: RAID 6 keeps two parity blocks in every stripe. The figure has only one parity block per row.\n- RAID 10: RAID 10 keeps identical copies of data on mirrored pairs. The figure has no duplicate blocks, only one parity block per row.",
+    "frequency": 5,
+    "tags": [
+      "RAID",
+      "storage"
+    ],
+    "distractorOrder": "2|3|1",
+    "image": "aplus-raid-array-four-disks.svg",
+    "imageAlt": "Four disks side by side, each labeled 2 TB. Each disk holds four blocks in rows. Row A: A1, A2, A3, Ap. Row B: B1, B2, Bp, B3. Row C: C1, Cp, C2, C3. Row D: Dp, D1, D2, D3. Blocks ending in p are shaded parity blocks; the others are data blocks.",
+    "imageSource": {
+      "kind": "self"
+    }
+  },
+  {
+    "subjectId": "core-1",
+    "chapterId": "hardware",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What is the main advantage of a solid-state drive (SSD) over a traditional hard disk drive (HDD)?",
+    "choices": [
+      "It is much faster because it has no moving parts",
+      "It keeps data only while the power is on",
+      "It needs to be defragmented every week",
+      "It always costs less per gigabyte"
+    ],
+    "answer": 1,
+    "oneLineConcept": "SSD = no moving parts, much faster",
+    "explanation": "An SSD stores data on flash memory chips instead of spinning platters and a moving read/write head. With no moving parts, it reads and writes much faster, uses less power, and handles bumps better than an HDD.\n\n**Wrong choices**\n- It keeps data only while the power is on: That describes RAM. Both SSDs and HDDs keep data when the power is off.\n- It needs to be defragmented every week: SSDs do not need regular defragmenting. Their speed does not depend on where data sits.\n- It always costs less per gigabyte: SSDs usually cost more per gigabyte than HDDs, especially at large sizes.",
+    "frequency": 4,
+    "tags": [
+      "SSD",
+      "HDD",
+      "storage"
+    ],
+    "distractorOrder": "4|2|3"
+  },
+  {
+    "subjectId": "core-1",
+    "chapterId": "hardware",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which computer component holds the data that programs are working on right now and loses it when the power is turned off?",
+    "choices": [
+      "Firmware (BIOS/UEFI) chip",
+      "RAM",
+      "Hard disk drive",
+      "SSD"
+    ],
+    "answer": 2,
+    "oneLineConcept": "RAM is fast, temporary (volatile) memory",
+    "explanation": "RAM (random access memory) is the computer's short-term working space. It is very fast, but it is volatile, which means it is cleared when the power goes off. Files that must be kept are saved to storage such as an SSD or HDD.\n\n**Wrong choices**\n- Firmware (BIOS/UEFI) chip: The firmware chip keeps its contents without power so the computer can start.\n- Hard disk drive: A hard disk drive stores data long term on spinning platters and keeps it without power.\n- SSD: An SSD stores data long term and keeps it when the power is off.",
+    "frequency": 4,
+    "tags": [
+      "RAM",
+      "memory"
+    ],
+    "distractorOrder": "4|3|1"
+  },
+  {
+    "subjectId": "core-1",
+    "chapterId": "hardware",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Pages from a laser printer come out with toner that smears or rubs off when touched. Which part is most likely failing?",
+    "choices": [
+      "Paper pickup roller",
+      "Imaging drum",
+      "Fuser",
+      "Toner cartridge low on toner"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Toner rubs off = fuser not bonding it",
+    "explanation": "In a laser printer, the fuser uses heat and pressure to melt the toner and bond it to the paper. If the fuser is failing or not hot enough, the toner sits loose on the page and smears or rubs off.\n\n**Wrong choices**\n- Paper pickup roller: A worn pickup roller causes paper jams or failed feeding, not smeared toner.\n- Imaging drum: A damaged drum usually causes marks or lines that repeat down the page, not toner that rubs off.\n- Toner cartridge low on toner: Low toner makes prints faded or light. The toner that is printed still sticks to the page.",
+    "frequency": 4,
+    "tags": [
+      "printers",
+      "laser printer",
+      "fuser"
+    ],
+    "distractorOrder": "2|4|1"
+  },
+  {
+    "subjectId": "core-1",
+    "chapterId": "hardware",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A technician needs one cable to send digital video and audio from a PC to a TV. Which connector should the technician use?",
+    "choices": [
+      "VGA",
+      "HDMI",
+      "SATA",
+      "RJ45"
+    ],
+    "answer": 2,
+    "oneLineConcept": "HDMI carries digital video and audio",
+    "explanation": "HDMI carries digital video and audio on one cable, which is why it is common on TVs, monitors, and PCs. VGA is an older analog video-only connector.\n\n**Wrong choices**\n- VGA: VGA carries analog video only. It does not carry audio.\n- SATA: SATA connects storage drives inside a computer, not displays.\n- RJ45: RJ45 is the connector on network cables. It does not carry video to a TV.",
+    "frequency": 4,
+    "tags": [
+      "cables",
+      "HDMI",
+      "video"
+    ],
+    "distractorOrder": "1|4|3"
+  },
+  {
+    "subjectId": "core-1",
+    "chapterId": "hardware",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which motherboard chip securely stores encryption keys, is used by BitLocker, and is required in version 2.0 for Windows 11?",
+    "choices": [
+      "GPU",
+      "NVMe drive",
+      "CMOS battery",
+      "TPM"
+    ],
+    "answer": 4,
+    "oneLineConcept": "TPM stores encryption keys; Windows 11 needs TPM 2.0",
+    "explanation": "A TPM (Trusted Platform Module) is a security chip on or built into the motherboard. It stores encryption keys safely and checks that the startup process has not been changed. BitLocker uses it, and Windows 11 requires TPM 2.0.\n\n**Wrong choices**\n- GPU: The GPU draws graphics on the screen. It does not hold encryption keys.\n- NVMe drive: An NVMe drive stores files. The keys that protect an encrypted drive are kept in the TPM, not on the drive itself.\n- CMOS battery: The CMOS battery keeps the clock and firmware settings when the PC is unplugged. It does not store encryption keys.",
+    "frequency": 4,
+    "tags": [
+      "TPM",
+      "firmware",
+      "security hardware"
+    ],
+    "distractorOrder": "3|1|2"
+  },
+  {
+    "subjectId": "core-1",
+    "chapterId": "hardware",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A small business has two drives in a server and wants an exact copy of all data on the second drive in case the first one fails. Which RAID level should be used?",
+    "choices": [
+      "RAID 5",
+      "RAID 1",
+      "RAID 0",
+      "RAID 10"
+    ],
+    "answer": 2,
+    "oneLineConcept": "RAID 1 = mirroring on two drives",
+    "explanation": "RAID 1 (mirroring) writes the same data to two drives at the same time. If one drive fails, the other still has everything. It needs only two drives, and the usable space equals one drive.\n\n**Wrong choices**\n- RAID 5: RAID 5 also protects data, but it needs at least three drives.\n- RAID 0: RAID 0 splits data across drives for speed and keeps no copy. If one drive fails, all data is lost.\n- RAID 10: RAID 10 needs at least four drives.",
+    "frequency": 5,
+    "tags": [
+      "RAID",
+      "mirroring"
+    ],
+    "distractorOrder": "1|3|4"
+  },
+  {
+    "subjectId": "core-1",
+    "chapterId": "hardware",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "The figure shows a disk array. Each disk is 2 TB. How much usable storage space does this array provide?",
+    "choices": [
+      "4 TB",
+      "2 TB",
+      "6 TB",
+      "8 TB"
+    ],
+    "answer": 3,
+    "oneLineConcept": "RAID 5 usable space = (n - 1) x disk size",
+    "explanation": "In each row, three blocks hold data and one holds parity. Parity takes up the space of one whole disk.\n1. Number of disks: 4\n2. Disks' worth of space used for parity: 1\n3. Usable space = (4 - 1) x 2 TB = 6 TB\nCheck: 8 TB total - 2 TB for parity = 6 TB.\n\n**Wrong choices**\n- 4 TB: 4 TB would be half the total, which is how mirroring works. This array uses parity, not mirroring.\n- 2 TB: 2 TB is the size of one disk. The array stores data on more than one disk.\n- 8 TB: 8 TB is the total raw size of all four disks. Part of the space holds parity, so it cannot all be used for data.",
+    "frequency": 5,
+    "tags": [
+      "RAID",
+      "storage capacity"
+    ],
+    "distractorOrder": "4|1|2",
+    "image": "aplus-raid-array-four-disks.svg",
+    "imageAlt": "Four disks side by side, each labeled 2 TB. Each disk holds four blocks in rows. Row A: A1, A2, A3, Ap. Row B: B1, B2, Bp, B3. Row C: C1, Cp, C2, C3. Row D: Dp, D1, D2, D3. Blocks ending in p are shaded parity blocks; the others are data blocks.",
+    "imageSource": {
+      "kind": "self"
+    }
+  },
+  {
+    "subjectId": "core-1",
+    "chapterId": "hardware",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A technician installed a new CPU cooler. Now the CPU overheats within minutes. The fan is spinning. What did the technician most likely forget?",
+    "choices": [
+      "Applying thermal paste between the CPU and the cooler",
+      "Updating the chipset driver",
+      "Installing a higher-wattage power supply",
+      "Installing more RAM"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Thermal paste moves heat from CPU to cooler",
+    "explanation": "Thermal paste fills the tiny gaps between the CPU and the cooler's base so heat can flow into the heatsink. Without it, the air gaps trap heat and the CPU overheats even though the fan is spinning.\n\n**Wrong choices**\n- Updating the chipset driver: A chipset driver does not move heat away from the CPU. The overheating started right after the cooler was installed.\n- Installing a higher-wattage power supply: A bigger power supply does not help the cooler carry heat away from the CPU.\n- Installing more RAM: Adding memory does not cool the CPU.",
+    "frequency": 4,
+    "tags": [
+      "CPU",
+      "cooling",
+      "thermal paste"
+    ],
+    "distractorOrder": "2|4|3"
+  },
+  {
+    "subjectId": "core-1",
+    "chapterId": "hardware",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A technician is installing two identical DDR4 memory modules in a motherboard with four memory slots. How should the technician install them to use dual-channel mode?",
+    "choices": [
+      "One module now, and the second after the first one is tested for a month",
+      "In the first slot only, one stacked behind the other",
+      "In any two slots, because the operating system turns on dual channel",
+      "In the paired slots that the motherboard manual lists for dual channel"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Dual channel needs modules in the paired slots",
+    "explanation": "Dual-channel mode lets the memory controller use two modules at the same time for more speed. It works only when matching modules are placed in the correct pair of slots. Slot pairs differ between boards, so check the motherboard manual. Many boards mark the pairs with colors.\n\n**Wrong choices**\n- One module now, and the second after the first one is tested for a month: There is no reason to wait. Both modules should go in together in the correct paired slots.\n- In the first slot only, one stacked behind the other: Each slot holds only one module. Stacking modules is not possible.\n- In any two slots, because the operating system turns on dual channel: Dual channel depends on which slots the modules are in. The operating system does not set it up.",
+    "frequency": 3,
+    "tags": [
+      "RAM",
+      "dual channel",
+      "motherboard"
+    ],
+    "distractorOrder": "3|2|1"
+  },
+  {
+    "subjectId": "core-1",
+    "chapterId": "hardware",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A user wants the fastest possible storage for a new M.2 slot that supports both kinds of M.2 drives. Which type of drive should the technician choose?",
+    "choices": [
+      "A 7,200 RPM hard disk drive",
+      "An NVMe SSD",
+      "A SATA M.2 SSD",
+      "A USB 2.0 flash drive"
+    ],
+    "answer": 2,
+    "oneLineConcept": "NVMe uses PCIe and is faster than SATA",
+    "explanation": "NVMe SSDs talk to the computer over the PCIe bus, which is much faster than SATA. Many M.2 slots support both SATA and NVMe drives, and NVMe is the faster choice.\n\n**Wrong choices**\n- A 7,200 RPM hard disk drive: A hard disk drive uses spinning platters, is much slower than any SSD, and does not fit an M.2 slot.\n- A SATA M.2 SSD: A SATA SSD fits the M.2 slot, but it is limited by the slower SATA interface.\n- A USB 2.0 flash drive: USB 2.0 is very slow and does not plug into an M.2 slot.",
+    "frequency": 4,
+    "tags": [
+      "NVMe",
+      "M.2",
+      "SSD"
+    ],
+    "distractorOrder": "3|1|4"
+  },
+  {
+    "subjectId": "core-1",
+    "chapterId": "hardware",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A technician adds up the power needs of all the parts in a new desktop and gets about 450 watts. Which power supply is the best choice?",
+    "choices": [
+      "A 400 W power supply",
+      "A 450 W power supply",
+      "A 650 W power supply",
+      "A 300 W power supply"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Choose a power supply above total load, with headroom",
+    "explanation": "The power supply must provide more power than the parts use.\n1. The parts need about 450 W.\n2. Only one choice is higher than 450 W: 650 W.\n3. The extra room handles short power spikes and future upgrades.\n\n**Wrong choices**\n- A 400 W power supply: 400 W is less than the parts need, so the system may shut down or become unstable.\n- A 450 W power supply: 450 W matches the total exactly, leaving no extra room for power spikes or future upgrades.\n- A 300 W power supply: 300 W is far below what the parts need.",
+    "frequency": 3,
+    "tags": [
+      "power supply",
+      "wattage"
+    ],
+    "distractorOrder": "2|1|4"
+  },
+  {
+    "subjectId": "core-1",
+    "chapterId": "hardware",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "All of the following statements about RAID 0 are true EXCEPT:",
+    "choices": [
+      "It keeps the data safe if one drive fails",
+      "Its usable space equals the total of all drives",
+      "It splits data across the drives to improve speed",
+      "It needs at least two drives"
+    ],
+    "answer": 1,
+    "oneLineConcept": "RAID 0 = speed with no fault tolerance",
+    "explanation": "RAID 0 (striping) splits data across two or more drives so they can read and write together. It keeps no copies and no parity, so if any one drive fails, all the data in the array is lost. That is why RAID 0 has no fault tolerance.\n\n**Wrong choices**\n- Its usable space equals the total of all drives: This is true. RAID 0 uses no space for copies or parity.\n- It splits data across the drives to improve speed: This is true. Striping lets the drives work at the same time.\n- It needs at least two drives: This is true. RAID 0 stripes data across two or more drives.",
+    "frequency": 4,
+    "tags": [
+      "RAID",
+      "RAID 0"
+    ],
+    "levelLock": true
+  },
+  {
+    "subjectId": "core-1",
+    "chapterId": "hardware",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "The figure shows a disk array. Each disk is 4 TB. How much usable storage space does this array provide?",
+    "choices": [
+      "8 TB",
+      "12 TB",
+      "16 TB",
+      "4 TB"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Mirrored pairs, striped (RAID 10) = half the total",
+    "explanation": "Each block appears on both disks of a pair, so each pair holds one disk's worth of data. The data is then spread across the two pairs.\n1. Each pair: 4 TB usable (one copy on each disk)\n2. Two pairs: 2 x 4 TB = 8 TB\nCheck: total raw space is 4 x 4 TB = 16 TB, and half of that is 8 TB.\n\n**Wrong choices**\n- 12 TB: 12 TB would be the answer for parity across four disks. This array stores two full copies of each block instead.\n- 16 TB: 16 TB is the total raw size of all four disks. Half of it holds copies.\n- 4 TB: 4 TB is the size of one disk. Data is spread across both pairs, so the array holds more than one disk's worth.",
+    "frequency": 4,
+    "tags": [
+      "RAID",
+      "storage capacity"
+    ],
+    "distractorOrder": "2|3|4",
+    "image": "aplus-raid-array-two-pairs.svg",
+    "imageAlt": "Four disks, each labeled 4 TB. Disks 1 and 2 are bracketed as Pair 1 and both hold blocks A1, A3, A5. Disks 3 and 4 are bracketed as Pair 2 and both hold blocks A2, A4, A6. A note says A1 to A6 are data blocks of one file, in order.",
+    "imageSource": {
+      "kind": "self"
+    }
+  },
+  {
+    "subjectId": "core-1",
+    "chapterId": "hardware",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A server needs a disk array that keeps working if any two drives fail at the same time. Which RAID level meets this need?",
+    "choices": [
+      "RAID 5",
+      "RAID 1 with two drives",
+      "RAID 10",
+      "RAID 6"
+    ],
+    "answer": 4,
+    "oneLineConcept": "RAID 6 = double parity, survives any two failures",
+    "explanation": "RAID 6 stores two separate parity blocks in each stripe. It needs at least four drives and gives (n - 2) drives of usable space. Because of the double parity, it can rebuild the data after any two drives fail.\n\n**Wrong choices**\n- RAID 5: RAID 5 has one parity block per stripe and survives only one drive failure.\n- RAID 1 with two drives: A two-drive mirror is lost if both drives fail.\n- RAID 10: RAID 10 survives one failure in each mirrored pair. If both drives in the same pair fail, the data is lost, so it does not cover any two drives.",
+    "frequency": 4,
+    "tags": [
+      "RAID",
+      "RAID 6",
+      "fault tolerance"
+    ],
+    "distractorOrder": "3|1|2"
+  },
+  {
+    "subjectId": "core-1",
+    "chapterId": "hardware",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A small business owner says, \"Our server uses RAID 1, so we do not need backups.\" What is the best response?",
+    "choices": [
+      "RAID 1 is a backup only if the drives are the same brand",
+      "Backups are only needed with RAID 0",
+      "RAID 1 is a full backup because every file is on two drives",
+      "RAID protects against a drive failure, but not against deleted files, ransomware, or damage that is copied to both drives"
+    ],
+    "answer": 4,
+    "oneLineConcept": "RAID is not a backup",
+    "explanation": "RAID keeps a server running when a drive fails. It does not keep older copies of data. If a user deletes a file, ransomware encrypts it, or a program corrupts it, the change is written to every drive in the array right away. Separate backups, ideally with one copy off-site, are still needed.\n\n**Wrong choices**\n- RAID 1 is a backup only if the drives are the same brand: The drive brand does not change what RAID does. It is still not a backup.\n- Backups are only needed with RAID 0: Every RAID level needs separate backups, because RAID does not protect against deletion or malware.\n- RAID 1 is a full backup because every file is on two drives: Both drives always hold the same data. If a file is deleted or encrypted on one, it is deleted or encrypted on both.",
+    "frequency": 4,
+    "tags": [
+      "RAID",
+      "backups"
+    ],
+    "distractorOrder": "3|1|2"
+  },
+  {
+    "subjectId": "core-1",
+    "chapterId": "virtualization-cloud",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which type of hypervisor runs directly on the computer hardware without a general-purpose operating system underneath?",
+    "choices": [
+      "Type 1 hypervisor",
+      "Type 2 hypervisor",
+      "Container runtime",
+      "Web browser"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Type 1 = bare metal; Type 2 = on top of an OS",
+    "explanation": "A Type 1 hypervisor, also called a bare-metal hypervisor, is installed directly on the hardware. It is common on servers in data centers because it has less overhead. A Type 2 hypervisor runs inside a normal operating system.\n\n**Wrong choices**\n- Type 2 hypervisor: A Type 2 hypervisor runs as an app on top of an operating system such as Windows or macOS.\n- Container runtime: A container runtime runs containers that share the host operating system. It still needs that operating system.\n- Web browser: A web browser is an application. It does not run virtual machines on bare hardware.",
+    "frequency": 4,
+    "tags": [
+      "hypervisor",
+      "virtualization"
+    ],
+    "distractorOrder": "2|3|4"
+  },
+  {
+    "subjectId": "core-1",
+    "chapterId": "virtualization-cloud",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A company uses web-based email and office apps. Employees just sign in through a browser, and the provider manages the servers and the software. Which cloud service model is this?",
+    "choices": [
+      "IaaS",
+      "Type 1 hypervisor",
+      "SaaS",
+      "PaaS"
+    ],
+    "answer": 3,
+    "oneLineConcept": "SaaS = finished software over the internet",
+    "explanation": "Software as a Service (SaaS) delivers ready-to-use software over the internet. The provider runs everything behind it, and the customer simply signs in and uses it. Web email and online office apps are common examples.\n\n**Wrong choices**\n- IaaS: IaaS rents virtual servers and storage, and the customer manages the operating system and apps.\n- Type 1 hypervisor: A hypervisor runs virtual machines. It is not a cloud service model.\n- PaaS: PaaS gives developers a platform to build and run their own apps. Here the company uses finished apps.",
+    "frequency": 4,
+    "tags": [
+      "cloud",
+      "SaaS"
+    ],
+    "distractorOrder": "4|1|2"
+  },
+  {
+    "subjectId": "core-1",
+    "chapterId": "virtualization-cloud",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A technician wants to try a new operating system on a Windows desktop without changing or removing the installed Windows system. What is the best approach?",
+    "choices": [
+      "Run the new operating system in a virtual machine using a Type 2 hypervisor",
+      "Set up dual boot by changing the drive's partitions",
+      "Format the drive and install the new operating system",
+      "Set up RAID 1 with a second drive"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Test an OS safely in a VM",
+    "explanation": "A Type 2 hypervisor runs as an app on the existing Windows desktop. Inside it, the technician can create a virtual machine and install the new operating system there. The real Windows installation stays untouched, and the VM can be deleted when testing is done.\n\n**Wrong choices**\n- Set up dual boot by changing the drive's partitions: Dual boot changes the partitions on the drive and the boot setup, which can risk the existing system.\n- Format the drive and install the new operating system: Formatting erases the existing Windows installation.\n- Set up RAID 1 with a second drive: RAID 1 copies data between drives. It does not let you run a second operating system.",
+    "frequency": 4,
+    "tags": [
+      "virtual machine",
+      "hypervisor",
+      "testing"
+    ],
+    "distractorOrder": "2|3|4"
+  },
+  {
+    "subjectId": "core-1",
+    "chapterId": "virtualization-cloud",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "An online store's cloud system automatically adds servers when holiday traffic rises and removes them when traffic falls. Which cloud feature is this?",
+    "choices": [
+      "High availability",
+      "Metered utilization",
+      "File synchronization",
+      "Rapid elasticity"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Rapid elasticity = scale up and down with demand",
+    "explanation": "Rapid elasticity means cloud resources can grow quickly when demand rises and shrink when it falls, often automatically. The store gets extra servers for busy times without owning them all year.\n\n**Wrong choices**\n- High availability: High availability keeps a service running through failures. It does not mean growing and shrinking with demand.\n- Metered utilization: Metered use means you pay for what you use. It does not describe adding and removing servers as demand changes.\n- File synchronization: File synchronization keeps files the same across devices. It does not add servers.",
+    "frequency": 3,
+    "tags": [
+      "cloud",
+      "elasticity"
+    ],
+    "distractorOrder": "2|1|3"
+  },
+  {
+    "subjectId": "core-1",
+    "chapterId": "virtualization-cloud",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A technician installs virtual machine software on a new PC. When starting a VM, an error says hardware virtualization is not available. What should the technician do?",
+    "choices": [
+      "Turn off Secure Boot in the UEFI/BIOS settings",
+      "Install a Type 1 hypervisor inside the virtual machine",
+      "Add more RAM to the PC",
+      "Turn on CPU virtualization support (such as Intel VT-x or AMD-V) in the UEFI/BIOS settings"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Enable VT-x or AMD-V in firmware for VMs",
+    "explanation": "Most CPUs have built-in virtualization support, called Intel VT-x or AMD-V, but it is often turned off by default. Virtual machine software needs it. Turning it on in the UEFI/BIOS settings and restarting fixes this error.\n\n**Wrong choices**\n- Turn off Secure Boot in the UEFI/BIOS settings: Secure Boot checks that startup software is trusted. It is not the setting that makes hardware virtualization available.\n- Install a Type 1 hypervisor inside the virtual machine: The VM will not even start, so installing anything inside it is not possible, and it would not fix the missing feature.\n- Add more RAM to the PC: More memory helps run more VMs, but it does not turn on the CPU's virtualization feature.",
+    "frequency": 4,
+    "tags": [
+      "virtualization",
+      "UEFI",
+      "VT-x"
+    ],
+    "distractorOrder": "1|3|2"
+  },
+  {
+    "subjectId": "core-1",
+    "chapterId": "virtualization-cloud",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A company rents virtual servers, storage, and networking from a cloud provider. The company's own staff install and manage the operating systems and applications. Which cloud service model is this?",
+    "choices": [
+      "Community cloud",
+      "IaaS",
+      "PaaS",
+      "SaaS"
+    ],
+    "answer": 2,
+    "oneLineConcept": "IaaS = rent infrastructure, manage your own OS",
+    "explanation": "Infrastructure as a Service (IaaS) gives the customer raw building blocks such as virtual servers, storage, and networks. The customer is still responsible for the operating systems, apps, and data running on them.\n\n**Wrong choices**\n- Community cloud: Community cloud is a deployment model (who shares the cloud), not a service model.\n- PaaS: With PaaS, the provider manages the operating system and platform, and the customer only deploys its own code.\n- SaaS: With SaaS, the customer just uses finished software and manages no servers at all.",
+    "frequency": 4,
+    "tags": [
+      "cloud",
+      "IaaS"
+    ],
+    "distractorOrder": "3|4|1"
+  },
+  {
+    "subjectId": "core-1",
+    "chapterId": "virtualization-cloud",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A developer wants to package an application with only the files and libraries it needs, sharing the host operating system's kernel instead of running a full guest operating system. What should the developer use?",
+    "choices": [
+      "A Type 1 hypervisor",
+      "Virtual desktop infrastructure (VDI)",
+      "A container",
+      "A virtual machine"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Containers share the host OS kernel",
+    "explanation": "A container holds an app and everything it needs, but it shares the host's operating system kernel. That makes containers smaller and quicker to start than virtual machines, which each run a complete operating system.\n\n**Wrong choices**\n- A Type 1 hypervisor: A hypervisor runs full virtual machines, each with its own operating system.\n- Virtual desktop infrastructure (VDI): VDI delivers whole user desktops from a server. It is not a way to package one app.\n- A virtual machine: A virtual machine runs a full guest operating system, which is heavier than what the developer wants.",
+    "frequency": 3,
+    "tags": [
+      "containers",
+      "virtualization"
+    ],
+    "distractorOrder": "4|1|2"
+  },
+  {
+    "subjectId": "core-1",
+    "chapterId": "virtualization-cloud",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A hospital keeps patient records on a private cloud in its own data center, but it runs its public website on a public cloud provider, and the two are connected. Which cloud deployment model is this?",
+    "choices": [
+      "Hybrid cloud",
+      "Private cloud",
+      "Community cloud",
+      "Public cloud"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Hybrid = private plus public, connected",
+    "explanation": "A hybrid cloud combines two or more cloud types, such as a private cloud and a public cloud, that work together. It lets an organization keep sensitive data in-house while using a public provider for other services.\n\n**Wrong choices**\n- Private cloud: Only part of the setup is private. The website runs on a public cloud.\n- Community cloud: A community cloud is shared by several organizations with the same needs. Here one hospital mixes its own cloud with a public one.\n- Public cloud: Only part of the setup is public. The patient records stay in a private cloud.",
+    "frequency": 3,
+    "tags": [
+      "cloud",
+      "deployment models"
+    ],
+    "distractorOrder": "3|2|4"
+  },
+  {
+    "subjectId": "core-1",
+    "chapterId": "virtualization-cloud",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Several government agencies with the same security and compliance rules share one cloud built just for them. Which cloud deployment model is this?",
+    "choices": [
+      "Private cloud",
+      "Community cloud",
+      "Public cloud",
+      "Hybrid cloud"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Community cloud = shared by groups with common needs",
+    "explanation": "A community cloud is shared by several organizations that have the same needs, such as the same laws or security rules. They share the cost while keeping the cloud limited to their group.\n\n**Wrong choices**\n- Private cloud: A private cloud serves a single organization, not several agencies.\n- Public cloud: A public cloud is open to any customer, not built for one group with shared rules.\n- Hybrid cloud: A hybrid cloud mixes private and public clouds for one organization. Here several organizations share one cloud.",
+    "frequency": 3,
+    "tags": [
+      "cloud",
+      "deployment models"
+    ],
+    "distractorOrder": "4|1|3"
+  },
+  {
+    "subjectId": "core-1",
+    "chapterId": "hw-network-troubleshooting",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "According to the CompTIA troubleshooting steps, what should a technician do first?",
+    "choices": [
+      "Identify the problem",
+      "Test the theory to determine the cause",
+      "Document findings, actions, and outcomes",
+      "Establish a theory of probable cause"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Step 1 = identify the problem",
+    "explanation": "The CompTIA troubleshooting steps start with identifying the problem: talk to the user, find out what changed, try to repeat the problem, and back up data before making changes. Only then does the technician form and test a theory.\n\n**Wrong choices**\n- Test the theory to determine the cause: Testing comes after a theory has been formed.\n- Document findings, actions, and outcomes: Documenting is the last step, after the problem is fixed and verified.\n- Establish a theory of probable cause: A theory comes second, after the technician has gathered information about the problem.",
+    "frequency": 5,
+    "tags": [
+      "troubleshooting steps"
+    ],
+    "distractorOrder": "4|2|3"
+  },
+  {
+    "subjectId": "core-1",
+    "chapterId": "hw-network-troubleshooting",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Every morning, a PC that is unplugged overnight shows the wrong date and time, and the firmware settings are back to defaults. What is the most likely cause?",
+    "choices": [
+      "The hard drive is failing",
+      "The CMOS battery is dead",
+      "The power supply is failing",
+      "The time zone is set wrong in Windows"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Clock and settings reset = replace CMOS battery",
+    "explanation": "A small coin battery on the motherboard keeps the firmware clock and settings when the PC has no power. When that battery dies, the clock and settings reset every time the PC is unplugged. Replacing the battery fixes it.\n\n**Wrong choices**\n- The hard drive is failing: A failing drive causes slow access, errors, or noises. It does not reset the clock or firmware settings.\n- The power supply is failing: A failing power supply causes shutdowns or no power, not lost settings after the PC is unplugged.\n- The time zone is set wrong in Windows: A wrong time zone gives a time that is off by a set amount every day. It does not reset the firmware settings.",
+    "frequency": 5,
+    "tags": [
+      "CMOS battery",
+      "motherboard"
+    ],
+    "distractorOrder": "4|3|1"
+  },
+  {
+    "subjectId": "core-1",
+    "chapterId": "hw-network-troubleshooting",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A user's computer is slow, and the hard disk drive is making a repeated clicking sound. What should the technician do first?",
+    "choices": [
+      "Back up the user's data right away",
+      "Install the latest operating system updates",
+      "Ignore the sound because hard drives always click",
+      "Run a disk defragmenter to speed it up"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Clicking HDD = back up data first",
+    "explanation": "Clicking or grinding from a hard drive usually means it is failing mechanically. The drive could stop working at any time, so the first job is to copy the user's data to a safe place. Then the drive can be replaced.\n\n**Wrong choices**\n- Install the latest operating system updates: Updates will not fix a drive that is physically failing.\n- Ignore the sound because hard drives always click: A repeated clicking sound is a common warning that a hard drive is failing.\n- Run a disk defragmenter to speed it up: Defragmenting puts heavy work on a drive that may be failing and could finish it off before the data is saved.",
+    "frequency": 4,
+    "tags": [
+      "hard drive",
+      "backup",
+      "storage"
+    ],
+    "distractorOrder": "4|2|3"
+  },
+  {
+    "subjectId": "core-1",
+    "chapterId": "hw-network-troubleshooting",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A laser printer's pages are evenly light and faded across the whole page. What is the most likely cause?",
+    "choices": [
+      "The wrong printer driver is installed",
+      "The paper is jammed",
+      "The fuser is failing",
+      "The toner is low"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Evenly faded laser prints = low toner",
+    "explanation": "When a laser printer runs low on toner, there is not enough to cover the page, so everything prints light and faded. Replacing the toner cartridge is the usual fix.\n\n**Wrong choices**\n- The wrong printer driver is installed: A wrong driver usually prints strange characters or garbage, not evenly faded pages.\n- The paper is jammed: A paper jam stops printing. It does not make pages faded.\n- The fuser is failing: A failing fuser makes toner smear or rub off. The print is not usually evenly faded.",
+    "frequency": 4,
+    "tags": [
+      "printers",
+      "toner"
+    ],
+    "distractorOrder": "3|1|2"
+  },
+  {
+    "subjectId": "core-1",
+    "chapterId": "hw-network-troubleshooting",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A desktop PC shuts off by itself after about 20 minutes of gaming. After it sits for a while, it starts normally again. What should the technician check first?",
+    "choices": [
+      "The CMOS battery",
+      "The network cable",
+      "The fans and heatsinks for dust or failure",
+      "The amount of free disk space"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Shuts off under load, fine after cooling = overheating",
+    "explanation": "A PC that turns off after working hard for a while, then starts fine once it cools, is most likely overheating. Dust-clogged heatsinks, failed fans, or dried-out thermal paste are common causes. The PC shuts itself off to protect the parts.\n\n**Wrong choices**\n- The CMOS battery: A dead CMOS battery resets the clock and settings. It does not cause shutdowns under load.\n- The network cable: A loose network cable drops the internet connection but does not shut the PC off.\n- The amount of free disk space: Low disk space slows the PC down but does not make it turn off.",
+    "frequency": 5,
+    "tags": [
+      "overheating",
+      "cooling"
+    ],
+    "distractorOrder": "2|1|4"
+  },
+  {
+    "subjectId": "core-1",
+    "chapterId": "hw-network-troubleshooting",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A user reports no network connection on a desktop PC. The technician sees that the link light on the network port is off. What should the technician check first?",
+    "choices": [
+      "The motherboard, by replacing it",
+      "The network cable and its connections",
+      "The operating system, by reinstalling it",
+      "The DNS server settings"
+    ],
+    "answer": 2,
+    "oneLineConcept": "No link light = check the cable first",
+    "explanation": "The link light shows whether there is a physical connection. If it is off, start with the simplest cause: a loose, unplugged, or damaged cable, or a problem at the wall jack or switch port. Checking the obvious first saves time.\n\n**Wrong choices**\n- The motherboard, by replacing it: Replacing the motherboard is costly and should come only after simple checks like the cable.\n- The operating system, by reinstalling it: Reinstalling the operating system is drastic and does not address a missing physical link.\n- The DNS server settings: DNS problems stop names from working but do not turn off the link light.",
+    "frequency": 4,
+    "tags": [
+      "network troubleshooting",
+      "cabling"
+    ],
+    "distractorOrder": "4|3|1"
+  },
+  {
+    "subjectId": "core-1",
+    "chapterId": "hw-network-troubleshooting",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A technician has fixed a problem and confirmed that the whole system works. According to the CompTIA troubleshooting steps, what should the technician do last?",
+    "choices": [
+      "Document the findings, actions, and outcomes",
+      "Establish a theory of probable cause",
+      "Identify the problem",
+      "Test the theory to determine the cause"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Last step = document findings, actions, outcomes",
+    "explanation": "The final troubleshooting step is to document what was found, what was done, and what the result was. Good notes help the next technician solve the same problem faster.\n\n**Wrong choices**\n- Establish a theory of probable cause: Forming a theory happens near the start of troubleshooting.\n- Identify the problem: Identifying the problem is the first step, not the last.\n- Test the theory to determine the cause: Testing the theory happens earlier, before the fix is made.",
+    "frequency": 5,
+    "tags": [
+      "troubleshooting steps",
+      "documentation"
+    ],
+    "distractorOrder": "4|2|3"
+  },
+  {
+    "subjectId": "core-1",
+    "chapterId": "hw-network-troubleshooting",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A technician has established a theory of probable cause. According to the CompTIA troubleshooting steps, what should the technician do next?",
+    "choices": [
+      "Verify full system functionality",
+      "Establish a plan of action and implement the solution",
+      "Document findings, actions, and outcomes",
+      "Test the theory to determine the cause"
+    ],
+    "answer": 4,
+    "oneLineConcept": "After a theory: test it",
+    "explanation": "The steps in order are: identify the problem, establish a theory, test the theory, establish a plan and implement the fix, verify full system functionality, and document. So after forming a theory, the technician tests it to see whether it is the real cause.\n\n**Wrong choices**\n- Verify full system functionality: Verifying comes after the fix has been put in place.\n- Establish a plan of action and implement the solution: The plan comes after the theory has been tested and confirmed.\n- Document findings, actions, and outcomes: Documenting is the final step.",
+    "frequency": 5,
+    "tags": [
+      "troubleshooting steps"
+    ],
+    "distractorOrder": "2|1|3"
+  },
+  {
+    "subjectId": "core-1",
+    "chapterId": "hw-network-troubleshooting",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A technician tests a theory about why a PC will not boot, and the test shows the theory was wrong. What should the technician do next?",
+    "choices": [
+      "Replace the motherboard to be safe",
+      "Document the problem as solved and close the ticket",
+      "Put the fix in place anyway",
+      "Establish a new theory or escalate the problem"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Theory not confirmed = new theory or escalate",
+    "explanation": "If testing does not confirm the theory, the technician goes back and forms a new theory. If the technician has run out of ideas or lacks the access or skills needed, the problem should be escalated to someone who can help.\n\n**Wrong choices**\n- Replace the motherboard to be safe: Replacing parts without a confirmed cause wastes time and money.\n- Document the problem as solved and close the ticket: The problem is not solved, so closing the ticket would leave the user without a working PC.\n- Put the fix in place anyway: The test showed the theory was wrong, so a fix based on it would not solve the problem.",
+    "frequency": 4,
+    "tags": [
+      "troubleshooting steps",
+      "escalation"
+    ],
+    "distractorOrder": "3|2|1"
+  },
+  {
+    "subjectId": "core-1",
+    "chapterId": "hw-network-troubleshooting",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A technician installed a new graphics card in a desktop. The PC's fans and lights turn on, but the monitor stays black. What is the most likely cause?",
+    "choices": [
+      "The monitor cable is still plugged into the motherboard's video port instead of the new card",
+      "The hard drive has failed",
+      "The new graphics card needs a driver before any picture appears",
+      "The CMOS battery has died"
+    ],
+    "answer": 1,
+    "oneLineConcept": "New graphics card: plug the monitor into the card",
+    "explanation": "When a separate graphics card is installed, many systems turn off the motherboard's built-in video. If the monitor cable is still in the motherboard's port, the screen stays black. Moving the cable to the graphics card's port is the simple fix.\n\n**Wrong choices**\n- The hard drive has failed: A failed drive would still show startup screens or an error message. The monitor would not stay black.\n- The new graphics card needs a driver before any picture appears: Even without a driver, a basic picture appears during startup. A totally black screen points to the connection.\n- The CMOS battery has died: A dead CMOS battery causes clock and settings problems, not a black screen right after a graphics card install.",
+    "frequency": 4,
+    "tags": [
+      "display",
+      "graphics card"
+    ],
+    "distractorOrder": "3|4|2"
+  },
+  {
+    "subjectId": "core-1",
+    "chapterId": "hw-network-troubleshooting",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Users near an office break room lose their 2.4 GHz Wi-Fi connection whenever the microwave oven is running. Their devices also support 5 GHz. What is the best fix?",
+    "choices": [
+      "Replace the users' network cables",
+      "Turn off DHCP on the access point",
+      "Lower the wireless security to WEP",
+      "Connect those devices to the 5 GHz band"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Microwaves interfere with 2.4 GHz Wi-Fi",
+    "explanation": "Microwave ovens work in the same 2.4 GHz range as many Wi-Fi networks and can drown out the signal while they run. The 5 GHz band is not affected by them, so moving the devices to 5 GHz avoids the interference.\n\n**Wrong choices**\n- Replace the users' network cables: The users are on Wi-Fi, so their network cables are not involved.\n- Turn off DHCP on the access point: Without DHCP, devices would not get addresses, making the problem worse.\n- Lower the wireless security to WEP: Security settings do not change interference from a microwave, and WEP is unsafe.",
+    "frequency": 3,
+    "tags": [
+      "Wi-Fi",
+      "interference"
+    ],
+    "distractorOrder": "3|1|2"
+  },
+  {
+    "subjectId": "core-1",
+    "chapterId": "hw-network-troubleshooting",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Several users see an \"IP address conflict\" message. What is the most likely cause?",
+    "choices": [
+      "The DNS server is down",
+      "Two devices are using the same IP address, such as a static address inside the DHCP range",
+      "A patch cable is damaged",
+      "A website's security certificate has expired"
+    ],
+    "answer": 2,
+    "oneLineConcept": "IP conflict = same address on two devices",
+    "explanation": "An IP address conflict means two devices on the network are using the same address. A common cause is a device with a static (manually set) address that falls inside the range the DHCP server also hands out. The fix is to give static devices addresses outside the DHCP range or reserve them.\n\n**Wrong choices**\n- The DNS server is down: A DNS outage stops names from resolving. It does not cause duplicate IP address warnings.\n- A patch cable is damaged: A damaged cable causes a lost or unreliable connection, not an address conflict message.\n- A website's security certificate has expired: An expired certificate causes browser warnings, not IP address conflicts.",
+    "frequency": 4,
+    "tags": [
+      "IP addressing",
+      "DHCP"
+    ],
+    "distractorOrder": "1|3|4"
+  },
+  {
+    "subjectId": "core-1",
+    "chapterId": "hw-network-troubleshooting",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which of the following is NOT part of the \"identify the problem\" step of the CompTIA troubleshooting steps?",
+    "choices": [
+      "Implement the solution",
+      "Back up data before making changes",
+      "Identify any recent changes to the system",
+      "Question the user about the symptoms"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Identify the problem = gather info, check changes, back up",
+    "explanation": "In the identify-the-problem step, the technician gathers information: asks the user questions, checks for recent changes, tries to repeat the problem, and backs up data. Implementing a solution comes much later, after a theory has been tested and a plan of action is ready.\n\n**Wrong choices**\n- Back up data before making changes: This belongs in the first step. Data should be safe before any changes are made.\n- Identify any recent changes to the system: This belongs in the first step. Recent changes are often the cause.\n- Question the user about the symptoms: This belongs in the first step. The user can describe what happened.",
+    "frequency": 4,
+    "tags": [
+      "troubleshooting steps"
+    ],
+    "levelLock": true
+  },
+  {
+    "subjectId": "core-1",
+    "chapterId": "hw-network-troubleshooting",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A server's RAID 5 array of four drives shows a \"degraded\" status. One drive has failed, but the server is still running and users can reach their files. What should the technician do?",
+    "choices": [
+      "Replace all four drives at once",
+      "Keep running as is, because RAID 5 has no risk now",
+      "Replace the failed drive soon so the array can rebuild",
+      "Delete the array and create a new one"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Degraded RAID 5: replace the failed drive and rebuild",
+    "explanation": "RAID 5 can keep working after one drive fails by rebuilding the missing data from parity. While it is degraded, though, it has no more protection. The technician should make sure backups are current and replace the failed drive soon so the array can rebuild onto it.\n\n**Wrong choices**\n- Replace all four drives at once: Only one drive has failed. Removing the working drives would break the array.\n- Keep running as is, because RAID 5 has no risk now: With one drive already failed, the array has no protection left. A second failure would lose the data.\n- Delete the array and create a new one: Deleting the array would erase the data. The array can be rebuilt with a replacement drive instead.",
+    "frequency": 4,
+    "tags": [
+      "RAID",
+      "storage troubleshooting"
+    ],
+    "distractorOrder": "2|4|1"
+  },
+  {
+    "subjectId": "core-1",
+    "chapterId": "hw-network-troubleshooting",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "All users on the third floor get 169.254.x.x addresses and cannot reach the network. Users on other floors get addresses from the same DHCP server and work normally. What is the most likely cause?",
+    "choices": [
+      "Every third-floor user has a misconfigured browser",
+      "The third-floor switch has lost its uplink connection to the rest of the network",
+      "The DNS server is down",
+      "The DHCP server is down"
+    ],
+    "answer": 2,
+    "oneLineConcept": "One area gets APIPA, others fine = local link problem",
+    "explanation": "Work it out step by step:\n1. A 169.254 address means the PC got no answer from a DHCP server.\n2. Other floors get addresses from the same server, so the server works.\n3. The problem is limited to one floor, so something between that floor and the server is broken, most likely the floor switch's uplink.\n\n**Wrong choices**\n- Every third-floor user has a misconfigured browser: A browser setting cannot change the IP address a PC receives.\n- The DNS server is down: DNS does not hand out IP addresses. A DNS outage would not cause 169.254 addresses.\n- The DHCP server is down: Users on other floors are still getting addresses from the same server, so it is working.",
+    "frequency": 4,
+    "tags": [
+      "APIPA",
+      "DHCP",
+      "network troubleshooting"
+    ],
+    "distractorOrder": "4|3|1"
+  },
+  {
+    "subjectId": "core-1",
+    "chapterId": "hw-network-troubleshooting",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "An older laptop works normally when plugged into its AC adapter. It shuts off right away when unplugged, and the battery icon shows 0% and \"not charging\" even after hours on the adapter. What is the most likely cause?",
+    "choices": [
+      "The CMOS battery is dead",
+      "The laptop battery has worn out and needs to be replaced",
+      "The display panel is damaged",
+      "The AC adapter is failing"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Runs on AC only, battery won't charge = replace battery",
+    "explanation": "Laptop batteries wear out over time. Here the AC adapter clearly works, because the laptop runs fine on it. The battery cannot hold or take a charge, so the laptop dies as soon as it is unplugged. Replacing the battery is the fix.\n\n**Wrong choices**\n- The CMOS battery is dead: The CMOS battery keeps the clock and settings. It does not power the laptop when unplugged.\n- The display panel is damaged: A damaged display affects the picture, not whether the laptop stays on without the adapter.\n- The AC adapter is failing: The laptop runs normally on the adapter, so the adapter is delivering power.",
+    "frequency": 3,
+    "tags": [
+      "laptop",
+      "battery",
+      "power"
+    ],
+    "distractorOrder": "4|1|3"
+  },
+  {
+    "subjectId": "core-2",
+    "chapterId": "operating-systems",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which Windows command shows a computer's IP address, subnet mask, and default gateway?",
+    "choices": [
+      "nslookup",
+      "tracert",
+      "ping",
+      "ipconfig"
+    ],
+    "answer": 4,
+    "oneLineConcept": "ipconfig shows IP settings",
+    "explanation": "ipconfig lists the network settings of each adapter, including IP address, subnet mask, and default gateway. ipconfig /all adds more detail, such as DNS servers and the MAC address.\n\n**Wrong choices**\n- nslookup: nslookup asks a DNS server about a name. It does not show the PC's IP settings.\n- tracert: tracert shows the path to a remote host, not the PC's own IP settings.\n- ping: ping tests whether another device can be reached. It does not list the PC's own settings.",
+    "frequency": 5,
+    "tags": [
+      "Windows commands",
+      "ipconfig"
+    ],
+    "distractorOrder": "3|2|1"
+  },
+  {
+    "subjectId": "core-2",
+    "chapterId": "operating-systems",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which Windows tool shows logs of system errors, warnings, and security events?",
+    "choices": [
+      "Disk Management",
+      "Event Viewer",
+      "Task Scheduler",
+      "Device Manager"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Event Viewer = Windows logs",
+    "explanation": "Event Viewer keeps logs of what happens in Windows, such as application errors, system warnings, and security events like sign-ins. It is a good place to look when you need to know what went wrong and when.\n\n**Wrong choices**\n- Disk Management: Disk Management manages drives and partitions, not logs.\n- Task Scheduler: Task Scheduler runs tasks at set times. It does not show the system's error logs.\n- Device Manager: Device Manager lists hardware and drivers. It does not keep the system's event logs.",
+    "frequency": 5,
+    "tags": [
+      "Windows tools",
+      "Event Viewer"
+    ],
+    "distractorOrder": "4|1|3"
+  },
+  {
+    "subjectId": "core-2",
+    "chapterId": "operating-systems",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A user's laptop runs Windows 11 Home. The laptop must be joined to the company's domain. What needs to happen?",
+    "choices": [
+      "Upgrade the laptop to Windows 11 Pro or a higher edition",
+      "Create a new local administrator account",
+      "Install Group Policy Editor from the internet",
+      "Turn on BitLocker"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Domain join needs Windows Pro or higher",
+    "explanation": "Windows Home editions cannot join a company domain. Pro and higher editions can, and they also add business features such as BitLocker and Group Policy Editor. The fix is to upgrade the edition.\n\n**Wrong choices**\n- Create a new local administrator account: A new local account does not give Windows Home the ability to join a domain.\n- Install Group Policy Editor from the internet: Domain join is a feature of the edition. Downloading a tool does not add it.\n- Turn on BitLocker: BitLocker encrypts the drive. It does not add the ability to join a domain, and Home does not include it.",
+    "frequency": 4,
+    "tags": [
+      "Windows editions",
+      "domain"
+    ],
+    "distractorOrder": "4|3|2"
+  },
+  {
+    "subjectId": "core-2",
+    "chapterId": "operating-systems",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which Linux command lists the files and folders in the current directory?",
+    "choices": [
+      "ls",
+      "cd",
+      "pwd",
+      "chmod"
+    ],
+    "answer": 1,
+    "oneLineConcept": "ls lists directory contents",
+    "explanation": "In Linux and macOS terminals, ls lists the files and folders in a directory. Common options include ls -l for details and ls -a to show hidden files.\n\n**Wrong choices**\n- cd: cd changes to a different directory. It does not list files.\n- pwd: pwd shows the full path of the current directory, not its contents.\n- chmod: chmod changes file permissions. It does not list files.",
+    "frequency": 4,
+    "tags": [
+      "Linux",
+      "commands"
+    ],
+    "distractorOrder": "3|2|4"
+  },
+  {
+    "subjectId": "core-2",
+    "chapterId": "operating-systems",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which built-in macOS feature makes regular backups to an external drive?",
+    "choices": [
+      "Keychain",
+      "Spotlight",
+      "Time Machine",
+      "FileVault"
+    ],
+    "answer": 3,
+    "oneLineConcept": "macOS backup = Time Machine",
+    "explanation": "Time Machine is the macOS backup tool. It copies files to an external drive or network location and keeps hourly, daily, and weekly versions so you can restore older copies.\n\n**Wrong choices**\n- Keychain: Keychain stores passwords and certificates, not file backups.\n- Spotlight: Spotlight searches for files and apps. It does not back them up.\n- FileVault: FileVault encrypts the Mac's drive. It does not make backups.",
+    "frequency": 4,
+    "tags": [
+      "macOS",
+      "backup"
+    ],
+    "distractorOrder": "4|1|2"
+  },
+  {
+    "subjectId": "core-2",
+    "chapterId": "operating-systems",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A user cannot copy a 6 GB video file to a USB flash drive that has 32 GB of free space. The drive is formatted with FAT32. Why does the copy fail?",
+    "choices": [
+      "The flash drive is full",
+      "Video files must be compressed before copying",
+      "Only administrators can copy video files",
+      "FAT32 cannot store a single file larger than 4 GB"
+    ],
+    "answer": 4,
+    "oneLineConcept": "FAT32 maximum file size = 4 GB",
+    "explanation": "FAT32 is an older file system that works with almost any device, but one file on it cannot be bigger than 4 GB. Reformatting the drive as exFAT or NTFS removes that limit. Formatting erases the drive, so copy off any files first.\n\n**Wrong choices**\n- The flash drive is full: The drive has 32 GB free, which is plenty of space for a 6 GB file.\n- Video files must be compressed before copying: Video files do not need to be compressed to copy. The file size limit is the issue.\n- Only administrators can copy video files: Copying a video file to a flash drive does not require administrator rights.",
+    "frequency": 5,
+    "tags": [
+      "file systems",
+      "FAT32"
+    ],
+    "distractorOrder": "1|3|2"
+  },
+  {
+    "subjectId": "core-2",
+    "chapterId": "operating-systems",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which Windows command scans protected system files and replaces damaged ones?",
+    "choices": [
+      "gpupdate",
+      "sfc /scannow",
+      "ipconfig /renew",
+      "chkdsk"
+    ],
+    "answer": 2,
+    "oneLineConcept": "sfc /scannow repairs Windows system files",
+    "explanation": "System File Checker (sfc) checks Windows system files. Running sfc /scannow from an administrator command prompt finds damaged or missing files and replaces them with good copies.\n\n**Wrong choices**\n- gpupdate: gpupdate applies Group Policy settings. It does not repair files.\n- ipconfig /renew: ipconfig /renew asks DHCP for a new IP address. It has nothing to do with system files.\n- chkdsk: chkdsk checks a disk's file system and surface for errors. It does not replace Windows system files.",
+    "frequency": 5,
+    "tags": [
+      "Windows commands",
+      "sfc"
+    ],
+    "distractorOrder": "4|1|3"
+  },
+  {
+    "subjectId": "core-2",
+    "chapterId": "operating-systems",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A user's PC is slow to start because many programs launch at sign-in. Where can the technician turn off these startup programs in Windows?",
+    "choices": [
+      "The Startup tab in Task Manager",
+      "Device Manager",
+      "Event Viewer",
+      "Disk Management"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Task Manager Startup tab controls startup apps",
+    "explanation": "Task Manager has a Startup tab (Startup apps in Windows 11) that lists programs that launch at sign-in. Disabling the ones the user does not need makes startup faster.\n\n**Wrong choices**\n- Device Manager: Device Manager controls hardware and drivers, not startup programs.\n- Event Viewer: Event Viewer shows logs. It does not turn startup programs on or off.\n- Disk Management: Disk Management manages drives and partitions, not startup programs.",
+    "frequency": 4,
+    "tags": [
+      "Windows tools",
+      "Task Manager"
+    ],
+    "distractorOrder": "3|2|4"
+  },
+  {
+    "subjectId": "core-2",
+    "chapterId": "operating-systems",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "On a Linux computer, a user runs a command to install software with apt and gets a \"permission denied\" error. What should the user do?",
+    "choices": [
+      "Use chmod to give everyone full permissions on all files",
+      "Restart the computer and try again",
+      "Run ls to list the files in the folder",
+      "Run the command again with sudo in front of it"
+    ],
+    "answer": 4,
+    "oneLineConcept": "sudo runs one command with admin rights",
+    "explanation": "Installing software changes system files, so it needs root (administrator) rights. Putting sudo in front of the command, such as sudo apt install, runs that one command with those rights after the user enters their password.\n\n**Wrong choices**\n- Use chmod to give everyone full permissions on all files: Opening up permissions on every file is a serious security risk and is not how software installs are allowed.\n- Restart the computer and try again: A restart does not give the user administrator rights.\n- Run ls to list the files in the folder: ls only lists files. It does not give the rights needed to install software.",
+    "frequency": 4,
+    "tags": [
+      "Linux",
+      "sudo",
+      "permissions"
+    ],
+    "distractorOrder": "1|3|2"
+  },
+  {
+    "subjectId": "core-2",
+    "chapterId": "operating-systems",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "An administrator changed a Group Policy setting and wants a Windows PC to apply it right away instead of waiting. Which command should be run on the PC?",
+    "choices": [
+      "gpupdate /force",
+      "sfc /scannow",
+      "chkdsk /f",
+      "gpresult /r"
+    ],
+    "answer": 1,
+    "oneLineConcept": "gpupdate /force applies policy now",
+    "explanation": "Windows applies Group Policy changes on a schedule. gpupdate /force tells the PC to apply all policy settings right now. To see which policies are in effect, use gpresult.\n\n**Wrong choices**\n- sfc /scannow: sfc repairs system files. It does not apply Group Policy.\n- chkdsk /f: chkdsk fixes file system errors on a disk. It does not apply Group Policy.\n- gpresult /r: gpresult shows which policies are applied. It does not apply new ones.",
+    "frequency": 4,
+    "tags": [
+      "Windows commands",
+      "Group Policy"
+    ],
+    "distractorOrder": "4|2|3"
+  },
+  {
+    "subjectId": "core-2",
+    "chapterId": "operating-systems",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A user needs a USB drive that works on both Windows and macOS and can store files larger than 4 GB. Which file system should the technician choose?",
+    "choices": [
+      "ext4",
+      "exFAT",
+      "NTFS",
+      "FAT32"
+    ],
+    "answer": 2,
+    "oneLineConcept": "exFAT = cross-platform with large files",
+    "explanation": "exFAT works on both Windows and macOS for reading and writing, and it does not have FAT32's 4 GB file size limit. That makes it a good choice for flash drives that move large files between different computers.\n\n**Wrong choices**\n- ext4: ext4 is a Linux file system that neither Windows nor macOS supports without extra software.\n- NTFS: macOS can read NTFS drives but cannot write to them by default, so the user could not save files from the Mac.\n- FAT32: FAT32 works on both systems but cannot store a file larger than 4 GB.",
+    "frequency": 4,
+    "tags": [
+      "file systems",
+      "exFAT"
+    ],
+    "distractorOrder": "3|4|1"
+  },
+  {
+    "subjectId": "core-2",
+    "chapterId": "operating-systems",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "After a driver update, a sound card stopped working. Which Windows tool should the technician use to roll back the driver?",
+    "choices": [
+      "Device Manager",
+      "Services",
+      "Event Viewer",
+      "Disk Management"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Device Manager = drivers (update, roll back, disable)",
+    "explanation": "Device Manager lists the hardware in the PC and its drivers. Opening the device's properties and using Roll Back Driver on the Driver tab returns to the driver that worked before the update.\n\n**Wrong choices**\n- Services: Services starts and stops background services. It does not manage drivers.\n- Event Viewer: Event Viewer can show driver errors, but it cannot roll a driver back.\n- Disk Management: Disk Management handles drives and partitions, not device drivers.",
+    "frequency": 4,
+    "tags": [
+      "Windows tools",
+      "drivers"
+    ],
+    "distractorOrder": "2|3|4"
+  },
+  {
+    "subjectId": "core-2",
+    "chapterId": "operating-systems",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A Mac user wants the whole startup drive encrypted so data is safe if the laptop is stolen. Which built-in macOS feature should the technician turn on?",
+    "choices": [
+      "BitLocker",
+      "Time Machine",
+      "Keychain",
+      "FileVault"
+    ],
+    "answer": 4,
+    "oneLineConcept": "macOS full-disk encryption = FileVault",
+    "explanation": "FileVault encrypts the Mac's startup drive. Without the user's password or recovery key, a thief cannot read the data, even by removing the drive.\n\n**Wrong choices**\n- BitLocker: BitLocker is the Windows drive encryption feature. It is not part of macOS.\n- Time Machine: Time Machine makes backups. It does not encrypt the startup drive.\n- Keychain: Keychain stores passwords, not full-drive encryption.",
+    "frequency": 4,
+    "tags": [
+      "macOS",
+      "encryption"
+    ],
+    "distractorOrder": "1|2|3"
+  },
+  {
+    "subjectId": "core-2",
+    "chapterId": "operating-systems",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A technician is checking whether an older PC can run Windows 11. Which of the following is NOT a Windows 11 requirement?",
+    "choices": [
+      "At least 64 GB of storage",
+      "A 5 GHz Wi-Fi adapter",
+      "TPM version 2.0",
+      "UEFI firmware that supports Secure Boot"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Windows 11 needs TPM 2.0, UEFI Secure Boot, 64 GB",
+    "explanation": "Microsoft lists hardware requirements for Windows 11, including TPM 2.0, UEFI firmware with Secure Boot support, and at least 64 GB of storage. A 5 GHz Wi-Fi adapter is not required; Windows 11 runs with wired networking or any supported wireless adapter.\n\n**Wrong choices**\n- At least 64 GB of storage: This is a requirement. Windows 11 needs 64 GB or more of storage.\n- TPM version 2.0: This is a requirement. Windows 11 needs a TPM 2.0 chip.\n- UEFI firmware that supports Secure Boot: This is a requirement. Windows 11 needs UEFI with Secure Boot support.",
+    "frequency": 3,
+    "tags": [
+      "Windows 11",
+      "requirements"
+    ],
+    "levelLock": true
+  },
+  {
+    "subjectId": "core-2",
+    "chapterId": "operating-systems",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A user can reach some websites but not one company server. The technician wants to see each router hop on the way to the server and where the traffic stops. Which Windows command should the technician use?",
+    "choices": [
+      "ping",
+      "nslookup",
+      "tracert",
+      "netstat"
+    ],
+    "answer": 3,
+    "oneLineConcept": "tracert shows each hop to a destination",
+    "explanation": "tracert lists each router (hop) that traffic passes through on the way to a destination. If the list stops at a certain hop, that shows where along the path the traffic is getting lost.\n\n**Wrong choices**\n- ping: ping shows whether the server answers, but it does not list the routers along the way.\n- nslookup: nslookup checks DNS name lookups. It does not show the network path.\n- netstat: netstat lists the PC's current network connections and listening ports, not the path to a server.",
+    "frequency": 4,
+    "tags": [
+      "Windows commands",
+      "tracert"
+    ],
+    "distractorOrder": "1|4|2"
+  },
+  {
+    "subjectId": "core-2",
+    "chapterId": "operating-systems",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A technician wants to check which IP address a DNS server returns for the name intranet.example.com. Which command should the technician use?",
+    "choices": [
+      "tracert",
+      "netstat",
+      "nslookup",
+      "ipconfig /flushdns"
+    ],
+    "answer": 3,
+    "oneLineConcept": "nslookup queries DNS",
+    "explanation": "nslookup sends a question to a DNS server and shows its answer, including the IP address for a name. It is a direct way to check whether DNS is giving the correct address.\n\n**Wrong choices**\n- tracert: tracert shows the path to a host. It does not show the DNS server's answer directly.\n- netstat: netstat lists network connections on the PC, not DNS lookups.\n- ipconfig /flushdns: ipconfig /flushdns clears the PC's saved DNS answers. It does not ask a DNS server for an address.",
+    "frequency": 4,
+    "tags": [
+      "Windows commands",
+      "DNS"
+    ],
+    "distractorOrder": "4|1|2"
+  },
+  {
+    "subjectId": "core-2",
+    "chapterId": "operating-systems",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A Linux administrator wrote a shell script called backup.sh but gets \"permission denied\" when running it as ./backup.sh. Which command lets the file run as a program?",
+    "choices": [
+      "grep backup backup.sh",
+      "chmod +x backup.sh",
+      "chown root backup.sh",
+      "ls -l backup.sh"
+    ],
+    "answer": 2,
+    "oneLineConcept": "chmod +x makes a file executable",
+    "explanation": "On Linux, a file can only run as a program if it has execute permission. chmod +x adds that permission. ls -l can then be used to confirm that an x now appears in the file's permissions.\n\n**Wrong choices**\n- grep backup backup.sh: grep searches for text inside the file. It does not change permissions.\n- chown root backup.sh: chown changes who owns the file. It does not give it permission to run.\n- ls -l backup.sh: ls -l shows the file's current permissions but does not change them.",
+    "frequency": 3,
+    "tags": [
+      "Linux",
+      "chmod",
+      "permissions"
+    ],
+    "distractorOrder": "3|1|4"
+  },
+  {
+    "subjectId": "core-2",
+    "chapterId": "operating-systems",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A technician installs a new second hard drive in a Windows PC. The drive does not appear in File Explorer, but Disk Management shows it as unallocated space. What should the technician do next?",
+    "choices": [
+      "Update the chipset driver",
+      "Replace the drive because it is faulty",
+      "Run sfc /scannow",
+      "Initialize the disk if needed, then create and format a new volume in Disk Management"
+    ],
+    "answer": 4,
+    "oneLineConcept": "New drive shows unallocated = create and format a volume",
+    "explanation": "A brand-new drive has no partitions, so File Explorer has nothing to show. In Disk Management, the technician initializes the disk if asked, then creates a new simple volume, gives it a drive letter, and formats it, usually with NTFS.\n\n**Wrong choices**\n- Update the chipset driver: Windows already detects the drive. The missing piece is a volume, not a driver.\n- Replace the drive because it is faulty: Disk Management can see the drive, so it is working. It just has no volume yet.\n- Run sfc /scannow: sfc repairs Windows system files. It does not prepare a new drive.",
+    "frequency": 3,
+    "tags": [
+      "Disk Management",
+      "storage"
+    ],
+    "distractorOrder": "2|3|1"
+  },
+  {
+    "subjectId": "core-2",
+    "chapterId": "security",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A user gets an email that looks like it is from their bank. It asks them to click a link and enter their password to \"verify the account.\" What kind of attack is this?",
+    "choices": [
+      "Phishing",
+      "Shoulder surfing",
+      "Vishing",
+      "Tailgating"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Phishing = fake email to steal information",
+    "explanation": "Phishing uses fake emails or websites that look real to trick people into giving up passwords or other information. Banks do not ask you to confirm your password through an email link. When in doubt, go to the site by typing its address yourself.\n\n**Wrong choices**\n- Shoulder surfing: Shoulder surfing is watching someone's screen or keyboard to steal information.\n- Vishing: Vishing is the same kind of trick done over a voice phone call, not email.\n- Tailgating: Tailgating is following someone through a secure door, not sending an email.",
+    "frequency": 5,
+    "tags": [
+      "social engineering",
+      "phishing"
+    ],
+    "distractorOrder": "3|4|2"
+  },
+  {
+    "subjectId": "core-2",
+    "chapterId": "security",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "An employee gets a phone call from someone who says they are from the IT help desk and asks for the employee's password to \"fix an account problem.\" What kind of attack is this?",
+    "choices": [
+      "Smishing",
+      "Whaling",
+      "Vishing",
+      "Phishing"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Vishing = voice phishing by phone",
+    "explanation": "Vishing (voice phishing) is a phone call that tries to trick someone into giving away information. A real help desk should never ask for your password. Hang up and call the help desk back on its known number.\n\n**Wrong choices**\n- Smishing: Smishing uses text messages, not voice calls.\n- Whaling: Whaling targets top executives, usually through tailored emails.\n- Phishing: Phishing usually means fake emails. A phone call is called vishing.",
+    "frequency": 4,
+    "tags": [
+      "social engineering",
+      "vishing"
+    ],
+    "distractorOrder": "1|4|2"
+  },
+  {
+    "subjectId": "core-2",
+    "chapterId": "security",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A person without a badge follows an employee through a secured door before it closes. What is this called?",
+    "choices": [
+      "Dumpster diving",
+      "Impersonation",
+      "Tailgating",
+      "Shoulder surfing"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Tailgating = following someone through a secure door",
+    "explanation": "Tailgating happens when an unauthorized person slips through a secured door behind someone who has access. Staff training and access control vestibules (two-door entry areas) help stop it.\n\n**Wrong choices**\n- Dumpster diving: Dumpster diving is searching trash for useful information.\n- Impersonation: Impersonation means pretending to be someone else, such as a repair person. Simply following someone through a door is tailgating.\n- Shoulder surfing: Shoulder surfing is watching a person's screen or keypad to steal information.",
+    "frequency": 4,
+    "tags": [
+      "physical security",
+      "tailgating"
+    ],
+    "distractorOrder": "2|4|1"
+  },
+  {
+    "subjectId": "core-2",
+    "chapterId": "security",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A user's files suddenly cannot be opened, and a message demands payment in cryptocurrency to unlock them. What type of malware is this?",
+    "choices": [
+      "Ransomware",
+      "Adware",
+      "Keylogger",
+      "Spyware"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Ransomware encrypts files and demands payment",
+    "explanation": "Ransomware encrypts a victim's files and demands money for the key. The best protection is good backups kept separate from the network, along with updates and careful email habits.\n\n**Wrong choices**\n- Adware: Adware shows unwanted ads. It does not encrypt files.\n- Keylogger: A keylogger records keystrokes. It does not lock files for ransom.\n- Spyware: Spyware secretly watches and reports what a user does. It does not lock files and demand payment.",
+    "frequency": 5,
+    "tags": [
+      "malware",
+      "ransomware"
+    ],
+    "distractorOrder": "4|2|3"
+  },
+  {
+    "subjectId": "core-2",
+    "chapterId": "security",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which wireless security setting gives the strongest protection on a new home or small office router?",
+    "choices": [
+      "An open network with MAC filtering",
+      "WPA3",
+      "WPA2 with TKIP",
+      "WEP"
+    ],
+    "answer": 2,
+    "oneLineConcept": "WPA3 is the strongest Wi-Fi security",
+    "explanation": "WPA3 is the newest Wi-Fi security standard and gives the strongest protection. If an older device cannot use WPA3, WPA2 with AES is the next choice. WEP and TKIP are outdated and should not be used.\n\n**Wrong choices**\n- An open network with MAC filtering: An open network has no encryption, and MAC addresses are easy to copy.\n- WPA2 with TKIP: WPA2 should use AES. TKIP is an older, weaker method.\n- WEP: WEP is very old and can be cracked quickly.",
+    "frequency": 5,
+    "tags": [
+      "wireless security",
+      "WPA3"
+    ],
+    "distractorOrder": "3|4|1"
+  },
+  {
+    "subjectId": "core-2",
+    "chapterId": "security",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which of the following is an example of multifactor authentication (MFA)?",
+    "choices": [
+      "A very long password",
+      "A password plus a code from an authenticator app on the user's phone",
+      "Two different passwords",
+      "A password plus an answer to a security question"
+    ],
+    "answer": 2,
+    "oneLineConcept": "MFA = different factor types (know, have, are)",
+    "explanation": "MFA requires proof from at least two different kinds of factors: something you know (a password), something you have (a phone or token), or something you are (a fingerprint). A password plus a phone code combines know and have.\n\n**Wrong choices**\n- A very long password: A long password is stronger, but it is still a single factor.\n- Two different passwords: Two passwords are both something you know, so this is one factor type.\n- A password plus an answer to a security question: Both are things the user knows, so this is still only one factor type.",
+    "frequency": 5,
+    "tags": [
+      "MFA",
+      "authentication"
+    ],
+    "distractorOrder": "4|3|1"
+  },
+  {
+    "subjectId": "core-2",
+    "chapterId": "security",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "An employee is about to step away from a desk for a few minutes. What is the best security practice?",
+    "choices": [
+      "Close all open programs and leave it signed in",
+      "Turn off only the monitor",
+      "Leave it as is, because the office is safe",
+      "Lock the screen, for example with Windows key + L"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Lock your screen when you step away",
+    "explanation": "Locking the screen keeps the session open but requires a password, PIN, or other sign-in to use it again. In Windows, the quickest way is Windows key + L.\n\n**Wrong choices**\n- Close all open programs and leave it signed in: Anyone could still sit down and use the signed-in account.\n- Turn off only the monitor: The computer is still signed in. Anyone can turn the monitor back on and use it.\n- Leave it as is, because the office is safe: Unattended, signed-in computers are an easy target, even in a trusted office.",
+    "frequency": 4,
+    "tags": [
+      "workstation security",
+      "screen lock"
+    ],
+    "distractorOrder": "2|1|3"
+  },
+  {
+    "subjectId": "core-2",
+    "chapterId": "security",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which security principle says that users should have only the access they need to do their jobs?",
+    "choices": [
+      "Single sign-on",
+      "Zero-day",
+      "Multifactor authentication",
+      "Least privilege"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Least privilege = only the access needed",
+    "explanation": "The principle of least privilege gives each user or program only the permissions needed for its job. For example, staff use standard accounts for daily work and use administrator rights only when truly needed. This limits the damage if an account is misused.\n\n**Wrong choices**\n- Single sign-on: Single sign-on lets users sign in once to reach many systems. It does not limit what they can access.\n- Zero-day: A zero-day is a flaw that has no fix yet. It is not an access principle.\n- Multifactor authentication: MFA strengthens sign-in. It does not decide how much access a user gets.",
+    "frequency": 5,
+    "tags": [
+      "least privilege",
+      "access control"
+    ],
+    "distractorOrder": "1|3|2"
+  },
+  {
+    "subjectId": "core-2",
+    "chapterId": "security",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which type of malware spreads by itself from computer to computer across a network, without a user opening a file?",
+    "choices": [
+      "Trojan",
+      "Worm",
+      "Virus",
+      "Rootkit"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Worm = spreads by itself across networks",
+    "explanation": "A worm copies itself across networks by using security holes, with no help from users. A virus needs a person to run or share an infected file. Keeping systems updated closes the holes worms use.\n\n**Wrong choices**\n- Trojan: A trojan hides inside software that looks useful and needs a user to install it.\n- Virus: A virus attaches to files or programs and spreads when users run or share them.\n- Rootkit: A rootkit hides deep in a system. Spreading across a network by itself is what a worm does.",
+    "frequency": 4,
+    "tags": [
+      "malware",
+      "worm"
+    ],
+    "distractorOrder": "3|1|4"
+  },
+  {
+    "subjectId": "core-2",
+    "chapterId": "security",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A user downloads a free game. It works, but it also quietly installs a program that lets an attacker control the computer remotely. What type of malware is this?",
+    "choices": [
+      "Worm",
+      "Ransomware",
+      "Trojan",
+      "Adware"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Trojan hides inside useful-looking software",
+    "explanation": "A trojan pretends to be something useful, such as a free game or tool, while it secretly installs harmful code. Remote access trojans give an attacker control of the computer. Only installing software from trusted sources helps prevent them.\n\n**Wrong choices**\n- Worm: A worm spreads by itself across a network. This malware came hidden inside something the user chose to install.\n- Ransomware: Ransomware encrypts files and demands payment, which did not happen here.\n- Adware: Adware shows unwanted ads. It does not give an attacker remote control.",
+    "frequency": 4,
+    "tags": [
+      "malware",
+      "trojan"
+    ],
+    "distractorOrder": "1|2|4"
+  },
+  {
+    "subjectId": "core-2",
+    "chapterId": "security",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "During malware removal on a Windows PC, why should the technician turn off System Restore?",
+    "choices": [
+      "So that restore points that may hold the malware are not used to put it back",
+      "To make the anti-malware scan run faster",
+      "Because System Restore deletes the user's personal files",
+      "Because anti-malware software cannot be installed while it is on"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Disable System Restore so infected restore points can't return",
+    "explanation": "Restore points made while the PC was infected can contain the malware. If someone later rolls back to one of them, the infection comes back. After cleaning the PC, the technician turns System Restore back on and creates a fresh, clean restore point.\n\n**Wrong choices**\n- To make the anti-malware scan run faster: Speed is not the reason. The concern is that infected restore points could bring the malware back.\n- Because System Restore deletes the user's personal files: System Restore does not delete personal documents.\n- Because anti-malware software cannot be installed while it is on: Anti-malware software can be installed with System Restore on.",
+    "frequency": 4,
+    "tags": [
+      "malware removal",
+      "System Restore"
+    ],
+    "distractorOrder": "2|3|4"
+  },
+  {
+    "subjectId": "core-2",
+    "chapterId": "security",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A technician confirms that a PC shows clear signs of malware. What should the technician do next?",
+    "choices": [
+      "Teach the user how to avoid malware",
+      "Quarantine the PC by disconnecting it from the network",
+      "Turn off System Restore",
+      "Reinstall the operating system right away"
+    ],
+    "answer": 2,
+    "oneLineConcept": "After confirming malware: quarantine the system",
+    "explanation": "Once malware is confirmed, the infected computer should be isolated so it cannot spread the malware or send out data. The usual next steps are: turn off System Restore in Windows, clean the system with updated tools, schedule scans and updates, turn System Restore back on with a new restore point, and educate the user.\n\n**Wrong choices**\n- Teach the user how to avoid malware: Educating the user is the final step, after the PC is clean.\n- Turn off System Restore: This comes right after quarantining. The infected PC should be cut off from the network first.\n- Reinstall the operating system right away: Reinstalling is a last resort and is not the next step after confirming symptoms.",
+    "frequency": 4,
+    "tags": [
+      "malware removal"
+    ],
+    "distractorOrder": "3|1|4"
+  },
+  {
+    "subjectId": "core-2",
+    "chapterId": "security",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "At a coffee shop, an attacker sets up a wireless access point with the same network name as the shop's real Wi-Fi to capture customers' traffic. What is this attack called?",
+    "choices": [
+      "Evil twin",
+      "Rogue DHCP server",
+      "Shoulder surfing",
+      "Dumpster diving"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Evil twin = fake Wi-Fi copying a real name",
+    "explanation": "An evil twin is a fake wireless access point that uses the same name as a trusted network. People connect to it by mistake, and the attacker can watch or change their traffic. Using a VPN on public Wi-Fi helps protect against it.\n\n**Wrong choices**\n- Rogue DHCP server: A rogue DHCP server hands out bad network settings. It is not a fake access point copying a network name.\n- Shoulder surfing: Shoulder surfing is watching someone's screen. It does not use a fake network.\n- Dumpster diving: Dumpster diving is searching through trash for information.",
+    "frequency": 4,
+    "tags": [
+      "wireless attacks",
+      "evil twin"
+    ],
+    "distractorOrder": "2|3|4"
+  },
+  {
+    "subjectId": "core-2",
+    "chapterId": "security",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "All of the following are good ways to secure a small office router EXCEPT:",
+    "choices": [
+      "Keep the default administrator password so support staff can log in easily",
+      "Update the router's firmware",
+      "Use WPA3, or WPA2 with AES",
+      "Turn off WPS"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Always change default router passwords",
+    "explanation": "Default administrator passwords are often published online, so anyone could log in to a router that still uses one. Changing the default password, updating firmware, turning off WPS, and using strong Wi-Fi encryption all make a router safer.\n\n**Wrong choices**\n- Update the router's firmware: This is a good practice. Updates fix security holes.\n- Use WPA3, or WPA2 with AES: This is a good practice. These give strong wireless encryption.\n- Turn off WPS: This is a good practice. WPS has known weaknesses.",
+    "frequency": 4,
+    "tags": [
+      "SOHO security",
+      "router"
+    ],
+    "levelLock": true
+  },
+  {
+    "subjectId": "core-2",
+    "chapterId": "security",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A user changes their passwords, but their accounts keep getting broken into. The technician finds a small device plugged in between the keyboard cable and the PC. What is the device most likely to be?",
+    "choices": [
+      "An evil twin",
+      "A USB Wi-Fi adapter",
+      "A rootkit",
+      "A hardware keylogger"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Device between keyboard and PC = hardware keylogger",
+    "explanation": "A hardware keylogger is a small device placed between the keyboard and the computer that records every keystroke, including new passwords. That explains why changing passwords did not help. The device should be removed and reported, and passwords changed again from a clean computer.\n\n**Wrong choices**\n- An evil twin: An evil twin is a fake wireless access point, not a device on the keyboard cable.\n- A USB Wi-Fi adapter: A Wi-Fi adapter connects to wireless networks. It would not sit between the keyboard and the PC.\n- A rootkit: A rootkit is malicious software hidden in the system, not a device plugged in between the keyboard and the PC.",
+    "frequency": 3,
+    "tags": [
+      "keylogger",
+      "physical security"
+    ],
+    "distractorOrder": "3|1|2"
+  },
+  {
+    "subjectId": "core-2",
+    "chapterId": "security",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A security scan finds malware that hides deep in the operating system, gets admin-level control, and hides its files from normal antivirus scans. What type of malware is this most likely to be?",
+    "choices": [
+      "Rootkit",
+      "Worm",
+      "Adware",
+      "Spyware"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Rootkit = hides deep with admin-level control",
+    "explanation": "A rootkit gains high-level (root or administrator) control and hides itself and other malware from normal tools. Removing it may need special scanning tools run outside the normal operating system, and sometimes a full reinstall is the safest fix.\n\n**Wrong choices**\n- Worm: A worm is known for spreading itself across networks, not for hiding deep in the system.\n- Adware: Adware shows unwanted ads and does not usually hide at a deep system level.\n- Spyware: Spyware watches and reports user activity. Hiding deep in the operating system with admin control is what defines a rootkit.",
+    "frequency": 3,
+    "tags": [
+      "malware",
+      "rootkit"
+    ],
+    "distractorOrder": "4|2|3"
+  },
+  {
+    "subjectId": "core-2",
+    "chapterId": "security",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A company's chief financial officer gets an email that uses her name, title, and a real upcoming deal to trick her into approving a wire transfer. Which term best describes this attack?",
+    "choices": [
+      "Smishing",
+      "Spear phishing",
+      "Whaling",
+      "Vishing"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Whaling = targeted phishing aimed at executives",
+    "explanation": "Whaling is a kind of spear phishing aimed at senior executives, the \"big fish.\" These emails are carefully tailored and often try to get money transfers or sensitive data. Checking unusual payment requests through a second channel, such as a phone call to a known number, helps stop it.\n\n**Wrong choices**\n- Smishing: Smishing uses text messages. This attack came by email.\n- Spear phishing: Spear phishing targets a specific person, but when the target is a top executive, the more exact term is whaling.\n- Vishing: Vishing uses phone calls. This attack came by email.",
+    "frequency": 3,
+    "tags": [
+      "social engineering",
+      "whaling"
+    ],
+    "distractorOrder": "2|4|1"
+  },
+  {
+    "subjectId": "core-2",
+    "chapterId": "security",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A company wants to donate old hard disk drives so they can be reused, but no one must be able to recover the old data from them. What is the best method?",
+    "choices": [
+      "Degauss the drives",
+      "Use drive-wiping software that overwrites all the data",
+      "Do a quick format",
+      "Delete the files and empty the Recycle Bin"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Reuse drives: wipe by overwriting",
+    "explanation": "Wiping software overwrites every part of the drive, so the old data cannot be read back, and the drive still works. Degaussing and physical destruction also stop recovery, but they leave the drive useless, which does not fit a donation.\n\n**Wrong choices**\n- Degauss the drives: Degaussing erases a hard drive with a strong magnet but also ruins it, so it could not be reused.\n- Do a quick format: A quick format only clears the index. The old data can still be recovered with free tools.\n- Delete the files and empty the Recycle Bin: Deleted files can usually be recovered until they are overwritten.",
+    "frequency": 3,
+    "tags": [
+      "data destruction",
+      "drive wiping"
+    ],
+    "distractorOrder": "1|3|4"
+  },
+  {
+    "subjectId": "core-2",
+    "chapterId": "software-troubleshooting",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A technician suspects that a driver or startup program is causing Windows problems. Which startup option loads Windows with only basic drivers and services?",
+    "choices": [
+      "UEFI/BIOS setup",
+      "Airplane mode",
+      "Safe Mode",
+      "Fast startup"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Safe Mode = Windows with minimal drivers",
+    "explanation": "Safe Mode starts Windows with only the basic drivers and services it needs. If the problem goes away in Safe Mode, a driver or startup program is the likely cause, and the technician can remove or update it from there.\n\n**Wrong choices**\n- UEFI/BIOS setup: UEFI/BIOS setup changes firmware settings. It does not start Windows with fewer drivers.\n- Airplane mode: Airplane mode only turns off wireless radios.\n- Fast startup: Fast startup speeds up booting. It does not limit which drivers load.",
+    "frequency": 5,
+    "tags": [
+      "Safe Mode",
+      "Windows troubleshooting"
+    ],
+    "distractorOrder": "1|2|4"
+  },
+  {
+    "subjectId": "core-2",
+    "chapterId": "software-troubleshooting",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A user's web browser keeps opening pop-up ads, and searches are sent to websites the user did not choose. What is the most likely cause?",
+    "choices": [
+      "Too little RAM",
+      "A failing network card",
+      "Malware, such as adware or a browser hijacker",
+      "A full printer queue"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Redirects and pop-ups = likely malware",
+    "explanation": "Unwanted pop-ups and searches that go to strange sites are classic signs of adware or a browser hijacker. The technician should scan with updated anti-malware tools and check the browser for unknown extensions and changed settings.\n\n**Wrong choices**\n- Too little RAM: Low memory makes the PC slow, not redirect searches.\n- A failing network card: A bad network card causes lost or slow connections, not pop-ups and redirected searches.\n- A full printer queue: A printer queue has nothing to do with browser behavior.",
+    "frequency": 5,
+    "tags": [
+      "malware symptoms",
+      "browser"
+    ],
+    "distractorOrder": "2|1|4"
+  },
+  {
+    "subjectId": "core-2",
+    "chapterId": "software-troubleshooting",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A user says their Windows PC has become very slow. Which tool should the technician open first to see which programs are using the most CPU and memory?",
+    "choices": [
+      "Disk Management",
+      "Task Manager",
+      "Device Manager",
+      "Event Viewer"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Task Manager shows live CPU, memory, and disk use",
+    "explanation": "Task Manager shows running programs and how much CPU, memory, disk, and network each one uses right now. Sorting by a column quickly shows which program is slowing the PC down.\n\n**Wrong choices**\n- Disk Management: Disk Management manages drives and partitions, not running programs.\n- Device Manager: Device Manager shows hardware and drivers, not which programs are using resources.\n- Event Viewer: Event Viewer shows logs of errors and events, not live CPU and memory use.",
+    "frequency": 5,
+    "tags": [
+      "Task Manager",
+      "performance"
+    ],
+    "distractorOrder": "4|3|1"
+  },
+  {
+    "subjectId": "core-2",
+    "chapterId": "software-troubleshooting",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Yesterday a user installed a new video driver. Since then, the PC freezes several times a day. What should the technician try first?",
+    "choices": [
+      "Turn off Windows Update permanently",
+      "Replace the video card",
+      "Roll back the video driver in Device Manager",
+      "Reinstall Windows"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Problem after driver update = roll back the driver",
+    "explanation": "When a problem begins right after a driver update, the simplest fix is to go back to the driver that worked. In Device Manager, open the device's properties and choose Roll Back Driver on the Driver tab.\n\n**Wrong choices**\n- Turn off Windows Update permanently: Turning off updates leaves the PC unprotected and does not undo the bad driver.\n- Replace the video card: The problems started with the new driver, so the card itself is not the first suspect.\n- Reinstall Windows: Reinstalling Windows is far more work than needed when one driver change caused the problem.",
+    "frequency": 4,
+    "tags": [
+      "drivers",
+      "Device Manager"
+    ],
+    "distractorOrder": "2|4|1"
+  },
+  {
+    "subjectId": "core-2",
+    "chapterId": "software-troubleshooting",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "On one PC, many well-known, trusted websites show security certificate warnings. Other PCs on the same network have no problem. What should the technician check first?",
+    "choices": [
+      "The amount of free disk space",
+      "The browser, by reinstalling it",
+      "The PC's date and time settings",
+      "The network card, by replacing it"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Many certificate errors = check date and time",
+    "explanation": "Security certificates are valid only between certain dates. If the PC's clock is far off, every certificate can look expired or not yet valid. Fixing the date and time, often by syncing with an internet time server, usually clears the warnings.\n\n**Wrong choices**\n- The amount of free disk space: Low disk space does not cause certificate warnings.\n- The browser, by reinstalling it: Reinstalling the browser is more work than needed. A wrong clock is a common and simple cause.\n- The network card, by replacing it: A network card problem stops connections. It does not cause certificate warnings.",
+    "frequency": 4,
+    "tags": [
+      "certificates",
+      "browser"
+    ],
+    "distractorOrder": "2|4|1"
+  },
+  {
+    "subjectId": "core-2",
+    "chapterId": "software-troubleshooting",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "An app on a user's phone keeps crashing after the latest app update. Other apps work fine. What should the technician try first?",
+    "choices": [
+      "Turn off Wi-Fi permanently",
+      "Force-close the app, then clear its cache or reinstall it",
+      "Reset the phone to factory settings",
+      "Replace the phone's battery"
+    ],
+    "answer": 2,
+    "oneLineConcept": "One app crashing = fix that app first",
+    "explanation": "When only one app has a problem, start with the least disruptive fixes for that app: close it fully, clear its cache, check for a newer update, or uninstall and reinstall it. Resetting the whole phone is saved for when nothing else works.\n\n**Wrong choices**\n- Turn off Wi-Fi permanently: Turning off Wi-Fi does not fix an app that crashes on its own.\n- Reset the phone to factory settings: A factory reset erases the whole phone and is a last resort when only one app has a problem.\n- Replace the phone's battery: The battery does not cause one app to crash while others work.",
+    "frequency": 4,
+    "tags": [
+      "mobile apps",
+      "troubleshooting"
+    ],
+    "distractorOrder": "3|4|1"
+  },
+  {
+    "subjectId": "core-2",
+    "chapterId": "software-troubleshooting",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A user is afraid that running System Restore will delete their documents and photos. Which statement is true?",
+    "choices": [
+      "System Restore reinstalls Windows from scratch",
+      "System Restore only restores email",
+      "System Restore rolls back system files, drivers, and settings but does not delete personal files",
+      "System Restore deletes all files created after the restore point"
+    ],
+    "answer": 3,
+    "oneLineConcept": "System Restore keeps personal files",
+    "explanation": "System Restore returns Windows system files, drivers, installed programs, and settings to the way they were at a restore point. It does not delete personal files like documents and photos. Programs installed after that point may need to be reinstalled.\n\n**Wrong choices**\n- System Restore reinstalls Windows from scratch: System Restore only returns system settings to an earlier point. It does not reinstall Windows.\n- System Restore only restores email: System Restore works on system files and settings, not email.\n- System Restore deletes all files created after the restore point: Personal files such as documents and photos are not removed. Only system changes are undone.",
+    "frequency": 4,
+    "tags": [
+      "System Restore"
+    ],
+    "distractorOrder": "4|1|2"
+  },
+  {
+    "subjectId": "core-2",
+    "chapterId": "software-troubleshooting",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "On a shared Windows PC, one user gets errors at sign-in and the desktop and Start menu do not load correctly. Other users on the same PC have no problems. What is the most likely fix?",
+    "choices": [
+      "Replace the hard drive",
+      "Rebuild the user's Windows profile",
+      "Update the firmware (BIOS/UEFI)",
+      "Reinstall Windows"
+    ],
+    "answer": 2,
+    "oneLineConcept": "One user broken, others fine = corrupted profile",
+    "explanation": "Each user has a separate profile that holds their settings and desktop. If only one user has problems, that profile is likely damaged. The technician backs up the user's files, creates a fresh profile, and copies the files back.\n\n**Wrong choices**\n- Replace the hard drive: A failing drive would affect all users, not just one.\n- Update the firmware (BIOS/UEFI): Firmware affects the whole PC, not one user's account.\n- Reinstall Windows: Other users work fine, so Windows itself is healthy. A reinstall is far more than needed.",
+    "frequency": 4,
+    "tags": [
+      "user profile",
+      "Windows troubleshooting"
+    ],
+    "distractorOrder": "4|1|3"
+  },
+  {
+    "subjectId": "core-2",
+    "chapterId": "software-troubleshooting",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "After a new network driver was installed, a Windows PC shows a blue screen (BSOD) every time it starts normally. What should the technician do?",
+    "choices": [
+      "Replace the motherboard",
+      "Start in Safe Mode and roll back or uninstall the new driver",
+      "Run ipconfig /renew",
+      "Defragment the hard drive"
+    ],
+    "answer": 2,
+    "oneLineConcept": "BSOD after new driver = Safe Mode, remove driver",
+    "explanation": "A blue screen right after a driver change points to that driver. Safe Mode loads only basic drivers, so Windows can start. From there the technician rolls back or uninstalls the new driver, then restarts normally.\n\n**Wrong choices**\n- Replace the motherboard: The blue screens began right after the driver install. The hardware is not the first suspect.\n- Run ipconfig /renew: ipconfig only renews network settings. It cannot fix a driver crashing Windows.\n- Defragment the hard drive: Defragmenting does not fix a faulty driver.",
+    "frequency": 4,
+    "tags": [
+      "BSOD",
+      "drivers",
+      "Safe Mode"
+    ],
+    "distractorOrder": "1|3|4"
+  },
+  {
+    "subjectId": "core-2",
+    "chapterId": "software-troubleshooting",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "After the latest Windows update, a business application crashes on every PC that installed it. The software vendor confirms the update causes the problem and says a fix is coming. What is the best action for now?",
+    "choices": [
+      "Reinstall Windows on every affected PC",
+      "Uninstall the business application",
+      "Uninstall that update and pause updates until the vendor's fix is ready",
+      "Turn off the firewall on every PC"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Bad update: uninstall it and pause updates",
+    "explanation": "Windows lets you uninstall a specific update and pause updates for a while. Removing the update that breaks the app gets users working again, and pausing stops it from installing again until the vendor's fix is ready.\n\n**Wrong choices**\n- Reinstall Windows on every affected PC: A reinstall is far more work than removing the one update that causes the problem.\n- Uninstall the business application: Users need the application. Removing it does not solve their problem.\n- Turn off the firewall on every PC: The firewall has nothing to do with this crash, and turning it off adds risk.",
+    "frequency": 3,
+    "tags": [
+      "Windows Update"
+    ],
+    "distractorOrder": "1|4|2"
+  },
+  {
+    "subjectId": "core-2",
+    "chapterId": "software-troubleshooting",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A user's phone shows ads on the home screen, uses far more data than usual, and has apps the user does not remember installing. What is the most likely cause?",
+    "choices": [
+      "The screen brightness is too high",
+      "The cell signal is weak",
+      "A malicious app is installed on the phone",
+      "The battery is getting old"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Unknown apps + ads + high data = mobile malware",
+    "explanation": "Ads in odd places, much higher data use, and apps the user did not install are common signs of mobile malware. The technician should remove unknown apps, check app permissions, update the phone, and run a trusted security scan.\n\n**Wrong choices**\n- The screen brightness is too high: Brightness affects battery life, not data use or ads.\n- The cell signal is weak: A weak signal causes dropped calls and slow data, not unknown apps and ads.\n- The battery is getting old: An old battery causes short battery life, not ads and unknown apps.",
+    "frequency": 4,
+    "tags": [
+      "mobile malware",
+      "mobile security"
+    ],
+    "distractorOrder": "4|2|1"
+  },
+  {
+    "subjectId": "core-2",
+    "chapterId": "software-troubleshooting",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which of the following is NOT a common sign of malware on a Windows PC?",
+    "choices": [
+      "Security software turns itself off",
+      "The screen turns off after a few minutes of no use",
+      "Pop-up ads appear even when no browser is open",
+      "The browser home page changes without the user doing it"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Screen sleep is a power setting, not malware",
+    "explanation": "Turning the screen off after a period of no use is a normal power-saving setting. Disabled security software, a changed browser home page, and pop-ups with no browser open are all common signs that malware may be present.\n\n**Wrong choices**\n- Security software turns itself off: This is a common sign. Malware often turns off security tools to protect itself.\n- Pop-up ads appear even when no browser is open: This is a common sign of adware.\n- The browser home page changes without the user doing it: This is a common sign of a browser hijacker.",
+    "frequency": 3,
+    "tags": [
+      "malware symptoms"
+    ],
+    "levelLock": true
+  },
+  {
+    "subjectId": "core-2",
+    "chapterId": "software-troubleshooting",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "An application will not work because a Windows service it needs fails to start. Event Viewer shows a logon failure for the service account, and its password was changed last week. What should the technician do?",
+    "choices": [
+      "Update the service account password in the service's properties",
+      "Run sfc /scannow",
+      "Reinstall Windows",
+      "Set the service's startup type to Disabled"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Service logon failure after password change = update it",
+    "explanation": "Services can run under a specific account and use that account's password to start. When the password changes, the service keeps trying the old one and fails to log on. Entering the new password on the Log On tab of the service's properties lets it start again.\n\n**Wrong choices**\n- Run sfc /scannow: sfc repairs system files. The problem is an old password, not damaged files.\n- Reinstall Windows: The cause is clear and small. A reinstall is not needed.\n- Set the service's startup type to Disabled: Disabling the service would stop it for good, and the application needs it running.",
+    "frequency": 3,
+    "tags": [
+      "Windows services",
+      "Event Viewer"
+    ],
+    "distractorOrder": "4|2|3"
+  },
+  {
+    "subjectId": "core-2",
+    "chapterId": "software-troubleshooting",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "After a power outage, a Windows PC will not boot and shows startup errors. The firmware still detects the drive. What should the technician try first?",
+    "choices": [
+      "Reset the CMOS settings",
+      "Replace the hard drive",
+      "Run Startup Repair from the Windows Recovery Environment",
+      "Reinstall all of the user's applications"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Windows won't boot = try Startup Repair",
+    "explanation": "A sudden power loss can damage the files Windows needs to start. The Windows Recovery Environment includes Startup Repair, which looks for and fixes common boot problems automatically. It is a good first step before more drastic fixes.\n\n**Wrong choices**\n- Reset the CMOS settings: The firmware is working and sees the drive. The problem is with Windows starting.\n- Replace the hard drive: The drive is detected, so it is likely fine. Damaged startup files are more likely after a power loss.\n- Reinstall all of the user's applications: Applications do not run until Windows boots, so they are not the problem.",
+    "frequency": 3,
+    "tags": [
+      "boot problems",
+      "Windows Recovery Environment"
+    ],
+    "distractorOrder": "2|1|4"
+  },
+  {
+    "subjectId": "core-2",
+    "chapterId": "software-troubleshooting",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A Windows PC keeps crashing. System Restore and Startup Repair did not help, and the user's files are already backed up. Which option fixes Windows with the least loss of data?",
+    "choices": [
+      "Reset this PC with the option to keep personal files",
+      "Run ipconfig /renew",
+      "Replace the motherboard",
+      "Format the drive and reinstall Windows"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Reset this PC can keep personal files",
+    "explanation": "Reset this PC reinstalls Windows. With the keep-my-files option, it keeps the user's personal files but removes installed apps and settings. It is less destructive than wiping the drive, which is why it is tried before a full format and reinstall.\n\n**Wrong choices**\n- Run ipconfig /renew: This only renews network settings and will not stop Windows from crashing.\n- Replace the motherboard: Nothing points to a hardware failure. The repairs tried so far are all for Windows software.\n- Format the drive and reinstall Windows: This also fixes Windows but erases everything on the drive, including personal files.",
+    "frequency": 3,
+    "tags": [
+      "Reset this PC",
+      "Windows recovery"
+    ],
+    "distractorOrder": "4|3|2"
+  },
+  {
+    "subjectId": "core-2",
+    "chapterId": "operational-procedures",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A technician is about to replace a memory module. What should the technician use to protect the parts from static electricity?",
+    "choices": [
+      "A magnetic screwdriver",
+      "Rubber-soled shoes on a carpet",
+      "A wool sweater",
+      "An ESD wrist strap connected to ground"
+    ],
+    "answer": 4,
+    "oneLineConcept": "ESD wrist strap protects parts from static",
+    "explanation": "Electrostatic discharge (ESD) is a sudden spark of static electricity that can damage computer parts, even when you cannot feel it. An ESD wrist strap connected to ground keeps you at the same charge as the computer so no spark jumps to the parts.\n\n**Wrong choices**\n- A magnetic screwdriver: Magnets do not protect against static electricity.\n- Rubber-soled shoes on a carpet: Walking on carpet can build up static, and rubber soles do not drain it away.\n- A wool sweater: Wool can build up static charge, which makes the problem worse.",
+    "frequency": 5,
+    "tags": [
+      "ESD",
+      "safety"
+    ],
+    "distractorOrder": "2|3|1"
+  },
+  {
+    "subjectId": "core-2",
+    "chapterId": "operational-procedures",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Before opening a desktop computer to replace a part, what should the technician do first?",
+    "choices": [
+      "Turn off only the monitor",
+      "Shut it down and unplug the power cord",
+      "Put it in sleep mode",
+      "Leave it plugged in and running to save time"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Power off and unplug before opening a PC",
+    "explanation": "Shutting down and unplugging the PC removes power from the parts. That protects the technician from shock and the parts from damage. Many power supplies keep a small standby power on the motherboard even when off, so unplugging matters.\n\n**Wrong choices**\n- Turn off only the monitor: Turning off the monitor leaves the computer itself powered.\n- Put it in sleep mode: A PC in sleep mode still has power inside it.\n- Leave it plugged in and running to save time: Working inside a running PC risks electric shock and damage to parts.",
+    "frequency": 5,
+    "tags": [
+      "safety"
+    ],
+    "distractorOrder": "4|3|1"
+  },
+  {
+    "subjectId": "core-2",
+    "chapterId": "operational-procedures",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A toner cartridge broke open and spilled toner. Where should the technician look for information about safe cleanup and disposal?",
+    "choices": [
+      "The change management request",
+      "The end-user license agreement (EULA)",
+      "The help desk ticket",
+      "The product's safety data sheet (SDS)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "SDS = safe handling and disposal of a product",
+    "explanation": "A safety data sheet (SDS) explains a product's hazards, how to handle and store it, how to clean up spills, how to dispose of it, and what first aid to give. Manufacturers provide one for products like toner.\n\n**Wrong choices**\n- The change management request: A change request plans system changes. It does not cover chemical safety.\n- The end-user license agreement (EULA): A EULA covers software license terms, not chemical safety.\n- The help desk ticket: A ticket records the problem and the work done. It does not give chemical safety steps.",
+    "frequency": 4,
+    "tags": [
+      "SDS",
+      "safety",
+      "environment"
+    ],
+    "distractorOrder": "2|1|3"
+  },
+  {
+    "subjectId": "core-2",
+    "chapterId": "operational-procedures",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A small electrical fire starts in a power strip. Which type of fire extinguisher is made for electrical fires?",
+    "choices": [
+      "Class K",
+      "Class A",
+      "Class C",
+      "A water extinguisher"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Electrical fires = Class C extinguisher",
+    "explanation": "Class C extinguishers are rated for electrical fires and do not conduct electricity. Many offices use multipurpose ABC extinguishers, which also cover Class C. Never use water on an electrical fire.\n\n**Wrong choices**\n- Class K: Class K extinguishers are for kitchen cooking oil and grease fires.\n- Class A: Class A extinguishers are for ordinary materials such as paper and wood. Some use water, which conducts electricity.\n- A water extinguisher: Water conducts electricity and can cause a serious shock on an electrical fire.",
+    "frequency": 4,
+    "tags": [
+      "fire safety"
+    ],
+    "distractorOrder": "2|1|4"
+  },
+  {
+    "subjectId": "core-2",
+    "chapterId": "operational-procedures",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which file extension is used for a Windows PowerShell script?",
+    "choices": [
+      ".ps1",
+      ".py",
+      ".bat",
+      ".sh"
+    ],
+    "answer": 1,
+    "oneLineConcept": ".ps1 = PowerShell script",
+    "explanation": "PowerShell scripts use the .ps1 extension. Other common script types are .bat for Windows batch files, .sh for Linux shell scripts, .py for Python, .js for JavaScript, and .vbs for VBScript.\n\n**Wrong choices**\n- .py: .py is a Python script.\n- .bat: .bat is a Windows batch file, an older type of script that runs in the command prompt.\n- .sh: .sh is a Linux or macOS shell script.",
+    "frequency": 4,
+    "tags": [
+      "scripting",
+      "PowerShell"
+    ],
+    "distractorOrder": "3|4|2"
+  },
+  {
+    "subjectId": "core-2",
+    "chapterId": "operational-procedures",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "An office wants its main server to keep running for a few minutes during a power outage so it can shut down safely. What should be installed?",
+    "choices": [
+      "A surge suppressor",
+      "An extension cord",
+      "An uninterruptible power supply (UPS)",
+      "A power strip"
+    ],
+    "answer": 3,
+    "oneLineConcept": "UPS = battery backup during outages",
+    "explanation": "A UPS (uninterruptible power supply) has a battery that takes over when the wall power fails. It gives equipment time to keep running briefly or shut down safely. Many UPS units also protect against surges.\n\n**Wrong choices**\n- A surge suppressor: A surge suppressor blocks power spikes, but it has no battery to keep equipment running during an outage.\n- An extension cord: An extension cord only carries power from an outlet. It does nothing during an outage.\n- A power strip: A power strip only adds outlets. It does not supply power during an outage.",
+    "frequency": 4,
+    "tags": [
+      "UPS",
+      "power"
+    ],
+    "distractorOrder": "1|4|2"
+  },
+  {
+    "subjectId": "core-2",
+    "chapterId": "operational-procedures",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A customer calls the help desk very upset because their computer stopped working before a deadline. What is the most professional first response?",
+    "choices": [
+      "Use detailed technical terms to show expertise",
+      "Listen without interrupting, then repeat the problem back to confirm it",
+      "Explain that the customer probably caused the problem",
+      "Put the customer on hold to take a personal call"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Listen actively, then restate the problem",
+    "explanation": "Letting the customer explain without interruption shows respect and gets the full story. Repeating the problem back confirms you understood it correctly. Then you can set clear expectations about what happens next.\n\n**Wrong choices**\n- Use detailed technical terms to show expertise: Jargon can confuse the customer. Plain language works better.\n- Explain that the customer probably caused the problem: Blaming the customer makes them more upset and does not solve anything.\n- Put the customer on hold to take a personal call: Taking personal calls while helping a customer is unprofessional.",
+    "frequency": 4,
+    "tags": [
+      "professionalism",
+      "communication"
+    ],
+    "distractorOrder": "3|1|4"
+  },
+  {
+    "subjectId": "core-2",
+    "chapterId": "operational-procedures",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which backup type copies all the files that have changed since the last full backup, so a restore needs only the full backup and the latest one of these?",
+    "choices": [
+      "Full",
+      "Synthetic full",
+      "Differential",
+      "Incremental"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Differential = changes since last full backup",
+    "explanation": "A differential backup copies everything that changed since the last full backup. Each one grows larger over the week, but a restore is simple: the full backup plus the most recent differential.\n\n**Wrong choices**\n- Full: A full backup copies everything, not just the changes.\n- Synthetic full: A synthetic full is built by combining earlier backups into a new full backup. It is not a backup of changes.\n- Incremental: An incremental backup copies only changes since the last backup of any kind, so a restore needs every incremental since the full.",
+    "frequency": 4,
+    "tags": [
+      "backups",
+      "differential"
+    ],
+    "distractorOrder": "4|1|2"
+  },
+  {
+    "subjectId": "core-2",
+    "chapterId": "operational-procedures",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A company runs a full backup every Sunday and an incremental backup every Monday through Thursday night. The server fails on Friday morning. Which backups are needed to restore all the data?",
+    "choices": [
+      "Sunday's full backup plus only Thursday's incremental",
+      "Only Sunday's full backup",
+      "Sunday's full backup plus the Monday, Tuesday, Wednesday, and Thursday incremental backups",
+      "Only Thursday's incremental backup"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Incremental restore = full + every incremental after it",
+    "explanation": "Work through the restore in order:\n1. Restore Sunday's full backup.\n2. Apply Monday's incremental, then Tuesday's, then Wednesday's.\n3. Apply Thursday's incremental last.\nEach incremental holds only the changes since the backup before it, so every one is needed.\n\n**Wrong choices**\n- Sunday's full backup plus only Thursday's incremental: Each incremental holds only one day's changes, so skipping Monday to Wednesday would lose those days.\n- Only Sunday's full backup: The full backup alone would lose all the changes made Monday to Thursday.\n- Only Thursday's incremental backup: Thursday's incremental holds only Thursday's changes.",
+    "frequency": 4,
+    "tags": [
+      "backups",
+      "incremental"
+    ],
+    "distractorOrder": "1|4|2"
+  },
+  {
+    "subjectId": "core-2",
+    "chapterId": "operational-procedures",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "What does the 3-2-1 backup rule recommend?",
+    "choices": [
+      "Three copies of the data, on two different types of media, with one copy off-site",
+      "Three backups a day, two each week, and one each month",
+      "Three passwords, two factors, and one administrator",
+      "Three servers, two firewalls, and one backup"
+    ],
+    "answer": 1,
+    "oneLineConcept": "3-2-1: 3 copies, 2 media types, 1 off-site",
+    "explanation": "The 3-2-1 rule is a simple guide for safe backups: keep three copies of important data, store them on two different types of media, and keep one copy off-site. An off-site copy protects against fire, theft, or ransomware at the main location.\n\n**Wrong choices**\n- Three backups a day, two each week, and one each month: The rule is about copies, media types, and location, not backup times.\n- Three passwords, two factors, and one administrator: That mixes up sign-in ideas. The 3-2-1 rule is about backups.\n- Three servers, two firewalls, and one backup: The rule describes backup copies, not network equipment.",
+    "frequency": 4,
+    "tags": [
+      "backups",
+      "3-2-1 rule"
+    ],
+    "distractorOrder": "2|4|3"
+  },
+  {
+    "subjectId": "core-2",
+    "chapterId": "operational-procedures",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "All of the following belong in a change request EXCEPT:",
+    "choices": [
+      "A rollback plan",
+      "A risk analysis",
+      "The scope of the change",
+      "The technician's personal login password"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Change requests include scope, risk, rollback plan",
+    "explanation": "A change request explains the purpose and scope of a change, the risks, the plan for doing it, how to roll it back, and who must approve it. Passwords should never be written in a change request or any other shared document.\n\n**Wrong choices**\n- A rollback plan: This belongs in a change request. It explains how to undo the change if it fails.\n- A risk analysis: This belongs in a change request. It describes what could go wrong.\n- The scope of the change: This belongs in a change request. It shows which systems and users are affected.",
+    "frequency": 4,
+    "tags": [
+      "change management"
+    ],
+    "levelLock": true
+  },
+  {
+    "subjectId": "core-2",
+    "chapterId": "operational-procedures",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A user wants to paste a customer list with names and account numbers into a free public AI chatbot to sort it. What is the best advice?",
+    "choices": [
+      "It is fine if the user signs in with a personal account",
+      "Do not paste confidential data into a public AI tool; use an approved tool or remove the sensitive data first",
+      "It is fine because AI chatbots never store what users type",
+      "It is fine as long as the user checks the results afterward"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Keep confidential data out of public AI tools",
+    "explanation": "Customer names and account numbers are private data. Public AI tools may store or review what users type, so pasting the list could expose it. The safe choices are to use a tool the company has approved for this data or to remove the private details first. AI answers should also be checked, because they can contain mistakes.\n\n**Wrong choices**\n- It is fine if the user signs in with a personal account: A personal account makes the risk worse, because company data leaves company control.\n- It is fine because AI chatbots never store what users type: Many public AI tools may keep or review what users enter, so private data could be exposed.\n- It is fine as long as the user checks the results afterward: Checking the results does not undo sharing private customer data with an outside service.",
+    "frequency": 3,
+    "tags": [
+      "AI",
+      "data privacy"
+    ],
+    "distractorOrder": "3|4|1"
+  },
+  {
+    "subjectId": "core-2",
+    "chapterId": "operational-procedures",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A technician must reach a user's Windows desktop over the internet to fix a problem. Which approach is the most secure?",
+    "choices": [
+      "Open port 3389 on the firewall to the internet",
+      "Use FTP to copy the user's files to the technician's PC",
+      "Connect with Remote Desktop through a VPN",
+      "Use Telnet to connect to the PC"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Remote Desktop over a VPN, not open to the internet",
+    "explanation": "Remote Desktop (RDP) gives full control of a Windows desktop. Exposing its port directly to the internet is risky. Connecting first to a VPN, which creates an encrypted tunnel into the company network, and then using Remote Desktop keeps the session protected.\n\n**Wrong choices**\n- Open port 3389 on the firewall to the internet: Leaving Remote Desktop open to the whole internet invites constant break-in attempts.\n- Use FTP to copy the user's files to the technician's PC: FTP only moves files, is not encrypted, and does not let the technician see the desktop.\n- Use Telnet to connect to the PC: Telnet sends everything in plain text and does not give a graphical desktop.",
+    "frequency": 4,
+    "tags": [
+      "remote access",
+      "RDP",
+      "VPN"
+    ],
+    "distractorOrder": "1|4|2"
+  },
+  {
+    "subjectId": "core-2",
+    "chapterId": "operational-procedures",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "During an approved maintenance window, a server update fails and the server will not work correctly. The window is about to end. What should the technician do?",
+    "choices": [
+      "Keep trying new fixes after the window ends",
+      "Follow the rollback plan to return the server to its previous state",
+      "Write it down in the documentation and do nothing else",
+      "Leave the server as is and fix it next week"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Failed change = follow the rollback plan",
+    "explanation": "Every approved change should include a rollback plan for this exact situation. Rolling back restores the working system before the window ends. The failure is then documented, and a new attempt goes through change approval again.\n\n**Wrong choices**\n- Keep trying new fixes after the window ends: Making unplanned changes outside the approved window breaks the change process and puts users at risk.\n- Write it down in the documentation and do nothing else: Documentation matters, but the server still needs to be returned to a working state.\n- Leave the server as is and fix it next week: Leaving a broken server hurts users and the business.",
+    "frequency": 4,
+    "tags": [
+      "change management",
+      "rollback"
+    ],
+    "distractorOrder": "1|4|3"
+  },
+  {
+    "subjectId": "core-2",
+    "chapterId": "operational-procedures",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A small business wants to install a program on ten office PCs. It bought one copy that was sold under a personal-use, single-user license. What should the technician tell the owner?",
+    "choices": [
+      "The business needs commercial licenses that cover all ten PCs",
+      "Licenses only matter for open-source software",
+      "Personal-use licenses can always be used for business",
+      "One license is fine because all ten PCs belong to the same company"
+    ],
+    "answer": 1,
+    "oneLineConcept": "License terms limit users, devices, and use type",
+    "explanation": "A software license sets how many people or devices may use a program and in what way. A personal-use, single-user license does not cover ten business PCs. The business should buy the right number of commercial licenses, or a volume license, to stay legal.\n\n**Wrong choices**\n- Licenses only matter for open-source software: Licenses matter for all software. Commercial software especially limits how many copies may be used.\n- Personal-use licenses can always be used for business: Personal-use licenses often do not allow business use. The license terms decide this.\n- One license is fine because all ten PCs belong to the same company: A single-user license covers one user or device, not ten.",
+    "frequency": 3,
+    "tags": [
+      "licensing",
+      "compliance"
+    ],
+    "distractorOrder": "4|3|2"
+  }
+]

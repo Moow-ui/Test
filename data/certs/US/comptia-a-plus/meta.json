@@ -1,6 +1,7 @@
 {
   "id": "comptia-a-plus",
   "country": "US",
+  "addedAt": "2026-10-28",
   "name": "CompTIA A+",
   "officialName": "CompTIA A+ Certification",
   "spacedName": "CompTIA A+",
@@ -19,5 +20,65 @@
     "url": "https://www.comptia.org"
   },
   "trademarkNotice": "CompTIA and A+ are registered trademarks of CompTIA, Inc.",
-  "order": 380
+  "order": 380,
+  "updatedAt": "2026-10-28",
+  "examInfo": {
+    "totalQuestions": 90,
+    "timeLimitMinutes": 90,
+    "format": "The real CompTIA A+ certification (version V15) is two separate exams: Core 1 (exam 220-1201) and Core 2 (exam 220-1202). CompTIA lists each exam as a maximum of 90 questions in 90 minutes, with multiple-choice (single and multiple response), drag-and-drop, and performance-based questions. You must pass both exams, and both must be from the same version. This practice exam is different: it is one 90-question, 90-minute mixed set with 45 Core 1 questions and 45 Core 2 questions, and it uses only single-answer multiple-choice questions with four choices. It has no performance-based or drag-and-drop questions. All questions on this site are original AI-written practice questions, not real exam questions.",
+    "choiceCount": 4,
+    "passCriteria": {
+      "averageScore": 75,
+      "subjectMinScore": null,
+      "shortLabel": "75% practice target",
+      "description": "CompTIA scores each real exam on a scale of 100 to 900. The passing score is 675 for Core 1 (220-1201) and 700 for Core 2 (220-1202). Scaled scores cannot be turned into a percent of questions correct, so this site uses 75% correct as a practice target only. It is not an official conversion."
+    }
+  },
+  "content": {
+    "eligibility": "CompTIA does not require any other certification before you take the A+ exams. CompTIA recommends about 12 months of hands-on experience in an IT support specialist role. You must pass both Core 1 (220-1201) and Core 2 (220-1202) to earn the certification.",
+    "intro": "CompTIA A+ is an entry-level certification for IT support and help desk work. It covers the everyday jobs of a support technician: setting up and fixing PCs, laptops, and mobile devices, connecting them to networks, supporting Windows, macOS, and Linux, keeping systems secure, and following safe and professional work habits. The current version, V15, has two exams. Core 1 focuses on hardware, networking, mobile devices, virtualization and cloud, and troubleshooting. Core 2 focuses on operating systems, security, software troubleshooting, and operational procedures.",
+    "trendSummary": "CompTIA publishes the domain weights for each V15 exam. On Core 1, Hardware and network troubleshooting is the largest domain at 28%, followed by Hardware (25%), Networking (23%), Mobile devices (13%), and Virtualization and cloud computing (11%). On Core 2, Operating systems and Security are 28% each, Software troubleshooting is 23%, and Operational procedures is 21%. Many questions are short help desk scenarios that ask what a technician should check or do next.",
+    "studyTip": "Study Core 1 and Core 2 as two separate exams, because you must pass each one. Spend the most time on the largest domains: troubleshooting and hardware on Core 1, and operating systems and security on Core 2. Learn the common port numbers, Windows tools and commands, and the troubleshooting steps by heart, then practice reading short scenarios and picking the most likely cause or the best next step.",
+    "faqs": [
+      {
+        "question": "How many exams do I need to pass for CompTIA A+?",
+        "answer": "Two. You must pass Core 1 (220-1201) and Core 2 (220-1202). CompTIA says both exams must be from the same version, which is currently V15."
+      },
+      {
+        "question": "What is the passing score for CompTIA A+?",
+        "answer": "CompTIA lists 675 for Core 1 and 700 for Core 2, on a scale of 100 to 900. These are scaled scores, not percentages, so this site uses 75% correct only as a practice target."
+      },
+      {
+        "question": "How long is each CompTIA A+ exam?",
+        "answer": "CompTIA lists each exam as a maximum of 90 questions in 90 minutes. The real exams include multiple-choice, drag-and-drop, and performance-based questions."
+      },
+      {
+        "question": "Is this practice exam the same as the real exam?",
+        "answer": "No. The real certification is two separate exams. This practice exam is one 90-question, 90-minute mixed set with 45 Core 1 and 45 Core 2 questions, and it has only single-answer multiple-choice questions, with no performance-based or drag-and-drop questions."
+      },
+      {
+        "question": "Are these real CompTIA A+ questions?",
+        "answer": "No. CompTIA keeps its exam questions confidential. Every question on this site is an original AI-written practice question based on the published exam domains, and some may contain errors. Please report anything that looks wrong."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "title": "CompTIA, A+ Core 1 (V15) exam page (exam 220-1201; launched March 25, 2025; maximum of 90 questions; 90 minutes; passing score 675 on a scale of 100-900; 12 months hands-on experience recommended; domain weights)",
+      "url": "https://www.comptia.org/en-us/certifications/a/core-1-v15/"
+    },
+    {
+      "title": "CompTIA, A+ Core 2 (V15) exam page (exam 220-1202; launched March 25, 2025; maximum of 90 questions; 90 minutes; passing score 700 on a scale of 100-900; domain weights)",
+      "url": "https://www.comptia.org/en-us/certifications/a/core-2-v15/"
+    },
+    {
+      "title": "CompTIA, A+ certification overview (two exams required; Core 1 and Core 2 must be from the same version; retirement usually three years after launch)",
+      "url": "https://www.comptia.org/certifications/a"
+    }
+  ],
+  "studyTips": {
+    "studyOrder": "Start with Core 1, and inside it begin with Hardware (25%) and Networking (23%), because Hardware and network troubleshooting (28%) builds on both. Finish Core 1 with Mobile devices (13%) and Virtualization and cloud computing (11%). For Core 2, study Operating systems and Security first (28% each), then Software troubleshooting (23%) and Operational procedures (21%).",
+    "hardChapters": "In Networking, port numbers and protocols are easy to mix up, so drill them until you can match each one quickly. In Hardware, RAID levels cause confusion: learn the minimum disk count and usable space for RAID 0, 1, 5, 6, and 10. In Security, practice telling similar attacks and malware types apart, such as phishing versus vishing and a virus versus a worm.",
+    "examDay": "Each real exam is a maximum of 90 questions in 90 minutes, so plan on about one minute per question. Performance-based questions can take longer, so if one question is eating your time, make your best choice and keep moving. Read every scenario for words like first, best, or most likely before you choose."
+  }
 }

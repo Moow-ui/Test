@@ -1,0 +1,118 @@
+{
+  "notesBy": "ai",
+  "subjects": [
+    {
+      "id": "core-1",
+      "name": "Core 1 (220-1201)",
+      "questionCount": 45,
+      "chapters": [
+        {
+          "id": "mobile-devices",
+          "name": "Mobile Devices",
+          "importance": 3,
+          "examWeight": 13,
+          "summary": "Laptop parts you can replace, mobile device accessories and ports, and how phones, tablets, and laptops connect to networks and other devices (Wi-Fi, Bluetooth, NFC, cellular, hotspots), plus syncing and basic mobile device management.",
+          "keyPoints": [
+            "Bluetooth devices must be paired before they work together.",
+            "NFC works only at a few centimeters and is used for tap-to-pay."
+          ]
+        },
+        {
+          "id": "networking",
+          "name": "Networking",
+          "importance": 4,
+          "examWeight": 23,
+          "summary": "TCP and UDP ports and protocols, common network devices, Wi-Fi standards and channels, IP addressing (private, APIPA, IPv6), network services such as DHCP and DNS, cable types, and networking tools.",
+          "keyPoints": [
+            "Know the common ports: 22 SSH, 53 DNS, 80 HTTP, 443 HTTPS, 3389 RDP.",
+            "An address starting with 169.254 means the computer did not get an address from DHCP."
+          ]
+        },
+        {
+          "id": "hardware",
+          "name": "Hardware",
+          "importance": 5,
+          "examWeight": 25,
+          "summary": "Cables and connectors, memory, storage drives and RAID, motherboards and firmware settings, CPUs and cooling, power supplies, and printers.",
+          "keyPoints": [
+            "RAID 5 needs at least 3 disks and gives (n - 1) disks of usable space.",
+            "SSDs have no moving parts; NVMe drives use the fast PCIe bus."
+          ]
+        },
+        {
+          "id": "virtualization-cloud",
+          "name": "Virtualization and Cloud Computing",
+          "importance": 2,
+          "examWeight": 11,
+          "summary": "Hypervisors and virtual machines, containers, desktop virtualization, cloud service models (IaaS, PaaS, SaaS), deployment models (public, private, hybrid, community), and cloud features such as elasticity and metered use.",
+          "keyPoints": [
+            "Type 1 hypervisors run on bare metal; Type 2 run on top of an operating system.",
+            "SaaS = finished software over the internet, such as web email."
+          ]
+        },
+        {
+          "id": "hw-network-troubleshooting",
+          "name": "Hardware and Network Troubleshooting",
+          "importance": 5,
+          "examWeight": 28,
+          "summary": "The CompTIA troubleshooting steps and how to apply them to problems with motherboards, RAM, CPUs, power, storage and RAID, displays, mobile devices, printers, and wired and wireless networks.",
+          "keyPoints": [
+            "Steps: identify the problem, form a theory, test it, plan and fix, verify, document.",
+            "Clock resets to a wrong date after power-off: suspect the CMOS battery."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "core-2",
+      "name": "Core 2 (220-1202)",
+      "questionCount": 45,
+      "chapters": [
+        {
+          "id": "operating-systems",
+          "name": "Operating Systems",
+          "importance": 5,
+          "examWeight": 28,
+          "summary": "Windows editions, installation and upgrades, Windows tools and command-line commands, Control Panel and Settings, file systems, and the basics of macOS and Linux.",
+          "keyPoints": [
+            "ipconfig shows IP settings; sfc /scannow repairs Windows system files.",
+            "FAT32 cannot store a single file larger than 4 GB; NTFS can."
+          ]
+        },
+        {
+          "id": "security",
+          "name": "Security",
+          "importance": 5,
+          "examWeight": 28,
+          "summary": "Physical security, logins and multifactor authentication, Windows security settings, wireless security, malware types and removal, social engineering attacks, and securing workstations, mobile devices, and SOHO networks.",
+          "keyPoints": [
+            "MFA uses two or more different factor types, such as a password plus a phone code.",
+            "Phishing uses email; vishing uses voice calls; smishing uses text messages."
+          ]
+        },
+        {
+          "id": "software-troubleshooting",
+          "name": "Software Troubleshooting",
+          "importance": 4,
+          "examWeight": 23,
+          "summary": "Fixing common Windows problems (slow performance, crashes, blue screens, boot and update failures), signs of malware on PCs and phones, mobile app problems, and tools such as Safe Mode and System Restore.",
+          "keyPoints": [
+            "Safe Mode loads only basic drivers and services so you can find the cause.",
+            "Pop-ups and browser redirects are common signs of malware."
+          ]
+        },
+        {
+          "id": "operational-procedures",
+          "name": "Operational Procedures",
+          "importance": 4,
+          "examWeight": 21,
+          "summary": "Ticketing and documentation, asset management, change management, backup and recovery, safety and ESD, environmental controls, privacy and licensing, professional communication, scripting basics, remote access, and safe use of AI tools.",
+          "keyPoints": [
+            "Every change needs a rollback plan and approval before it is made.",
+            "Wear an ESD wrist strap and unplug the PC before working inside it."
+          ]
+        }
+      ]
+    }
+  ]
+}
