@@ -1,0 +1,568 @@
+[
+  {
+    "id": "comptia-a-plus-hw-network-troubleshooting-0001",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-1",
+    "chapterId": "hw-network-troubleshooting",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "According to the CompTIA troubleshooting steps, what should a technician do first?",
+    "choices": [
+      "Identify the problem",
+      "Test the theory to determine the cause",
+      "Document findings, actions, and outcomes",
+      "Establish a theory of probable cause"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Step 1 = identify the problem",
+    "explanation": "The CompTIA troubleshooting steps start with identifying the problem: talk to the user, find out what changed, try to repeat the problem, and back up data before making changes. Only then does the technician form and test a theory.\n\n**Wrong choices**\n- Test the theory to determine the cause: Testing comes after a theory has been formed.\n- Document findings, actions, and outcomes: Documenting is the last step, after the problem is fixed and verified.\n- Establish a theory of probable cause: A theory comes second, after the technician has gathered information about the problem.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "troubleshooting steps"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-hw-network-troubleshooting-0002",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-1",
+    "chapterId": "hw-network-troubleshooting",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Every morning, a PC that is unplugged overnight shows the wrong date and time, and the firmware settings are back to defaults. What is the most likely cause?",
+    "choices": [
+      "The hard drive is failing",
+      "The CMOS battery is dead",
+      "The power supply is failing",
+      "The time zone is set wrong in Windows"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Clock and settings reset = replace CMOS battery",
+    "explanation": "A small coin battery on the motherboard keeps the firmware clock and settings when the PC has no power. When that battery dies, the clock and settings reset every time the PC is unplugged. Replacing the battery fixes it.\n\n**Wrong choices**\n- The hard drive is failing: A failing drive causes slow access, errors, or noises. It does not reset the clock or firmware settings.\n- The power supply is failing: A failing power supply causes shutdowns or no power, not lost settings after the PC is unplugged.\n- The time zone is set wrong in Windows: A wrong time zone gives a time that is off by a set amount every day. It does not reset the firmware settings.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "CMOS battery",
+      "motherboard"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-hw-network-troubleshooting-0003",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-1",
+    "chapterId": "hw-network-troubleshooting",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A user's computer is slow, and the hard disk drive is making a repeated clicking sound. What should the technician do first?",
+    "choices": [
+      "Back up the user's data right away",
+      "Install the latest operating system updates",
+      "Ignore the sound because hard drives always click",
+      "Run a disk defragmenter to speed it up"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Clicking HDD = back up data first",
+    "explanation": "Clicking or grinding from a hard drive usually means it is failing mechanically. The drive could stop working at any time, so the first job is to copy the user's data to a safe place. Then the drive can be replaced.\n\n**Wrong choices**\n- Install the latest operating system updates: Updates will not fix a drive that is physically failing.\n- Ignore the sound because hard drives always click: A repeated clicking sound is a common warning that a hard drive is failing.\n- Run a disk defragmenter to speed it up: Defragmenting puts heavy work on a drive that may be failing and could finish it off before the data is saved.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "hard drive",
+      "backup",
+      "storage"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-hw-network-troubleshooting-0004",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-1",
+    "chapterId": "hw-network-troubleshooting",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A laser printer's pages are evenly light and faded across the whole page. What is the most likely cause?",
+    "choices": [
+      "The wrong printer driver is installed",
+      "The paper is jammed",
+      "The fuser is failing",
+      "The toner is low"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Evenly faded laser prints = low toner",
+    "explanation": "When a laser printer runs low on toner, there is not enough to cover the page, so everything prints light and faded. Replacing the toner cartridge is the usual fix.\n\n**Wrong choices**\n- The wrong printer driver is installed: A wrong driver usually prints strange characters or garbage, not evenly faded pages.\n- The paper is jammed: A paper jam stops printing. It does not make pages faded.\n- The fuser is failing: A failing fuser makes toner smear or rub off. The print is not usually evenly faded.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "printers",
+      "toner"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-hw-network-troubleshooting-0005",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-1",
+    "chapterId": "hw-network-troubleshooting",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A desktop PC shuts off by itself after about 20 minutes of gaming. After it sits for a while, it starts normally again. What should the technician check first?",
+    "choices": [
+      "The CMOS battery",
+      "The network cable",
+      "The fans and heatsinks for dust or failure",
+      "The amount of free disk space"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Shuts off under load, fine after cooling = overheating",
+    "explanation": "A PC that turns off after working hard for a while, then starts fine once it cools, is most likely overheating. Dust-clogged heatsinks, failed fans, or dried-out thermal paste are common causes. The PC shuts itself off to protect the parts.\n\n**Wrong choices**\n- The CMOS battery: A dead CMOS battery resets the clock and settings. It does not cause shutdowns under load.\n- The network cable: A loose network cable drops the internet connection but does not shut the PC off.\n- The amount of free disk space: Low disk space slows the PC down but does not make it turn off.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "overheating",
+      "cooling"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-hw-network-troubleshooting-0006",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-1",
+    "chapterId": "hw-network-troubleshooting",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A user reports no network connection on a desktop PC. The technician sees that the link light on the network port is off. What should the technician check first?",
+    "choices": [
+      "The motherboard, by replacing it",
+      "The network cable and its connections",
+      "The operating system, by reinstalling it",
+      "The DNS server settings"
+    ],
+    "answer": 2,
+    "oneLineConcept": "No link light = check the cable first",
+    "explanation": "The link light shows whether there is a physical connection. If it is off, start with the simplest cause: a loose, unplugged, or damaged cable, or a problem at the wall jack or switch port. Checking the obvious first saves time.\n\n**Wrong choices**\n- The motherboard, by replacing it: Replacing the motherboard is costly and should come only after simple checks like the cable.\n- The operating system, by reinstalling it: Reinstalling the operating system is drastic and does not address a missing physical link.\n- The DNS server settings: DNS problems stop names from working but do not turn off the link light.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "network troubleshooting",
+      "cabling"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-hw-network-troubleshooting-0007",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-1",
+    "chapterId": "hw-network-troubleshooting",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A technician has fixed a problem and confirmed that the whole system works. According to the CompTIA troubleshooting steps, what should the technician do last?",
+    "choices": [
+      "Document the findings, actions, and outcomes",
+      "Establish a theory of probable cause",
+      "Identify the problem",
+      "Test the theory to determine the cause"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Last step = document findings, actions, outcomes",
+    "explanation": "The final troubleshooting step is to document what was found, what was done, and what the result was. Good notes help the next technician solve the same problem faster.\n\n**Wrong choices**\n- Establish a theory of probable cause: Forming a theory happens near the start of troubleshooting.\n- Identify the problem: Identifying the problem is the first step, not the last.\n- Test the theory to determine the cause: Testing the theory happens earlier, before the fix is made.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "troubleshooting steps",
+      "documentation"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-hw-network-troubleshooting-0008",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-1",
+    "chapterId": "hw-network-troubleshooting",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A technician has established a theory of probable cause. According to the CompTIA troubleshooting steps, what should the technician do next?",
+    "choices": [
+      "Verify full system functionality",
+      "Establish a plan of action and implement the solution",
+      "Document findings, actions, and outcomes",
+      "Test the theory to determine the cause"
+    ],
+    "answer": 4,
+    "oneLineConcept": "After a theory: test it",
+    "explanation": "The steps in order are: identify the problem, establish a theory, test the theory, establish a plan and implement the fix, verify full system functionality, and document. So after forming a theory, the technician tests it to see whether it is the real cause.\n\n**Wrong choices**\n- Verify full system functionality: Verifying comes after the fix has been put in place.\n- Establish a plan of action and implement the solution: The plan comes after the theory has been tested and confirmed.\n- Document findings, actions, and outcomes: Documenting is the final step.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "troubleshooting steps"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-hw-network-troubleshooting-0009",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-1",
+    "chapterId": "hw-network-troubleshooting",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A technician tests a theory about why a PC will not boot, and the test shows the theory was wrong. What should the technician do next?",
+    "choices": [
+      "Replace the motherboard to be safe",
+      "Document the problem as solved and close the ticket",
+      "Put the fix in place anyway",
+      "Establish a new theory or escalate the problem"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Theory not confirmed = new theory or escalate",
+    "explanation": "If testing does not confirm the theory, the technician goes back and forms a new theory. If the technician has run out of ideas or lacks the access or skills needed, the problem should be escalated to someone who can help.\n\n**Wrong choices**\n- Replace the motherboard to be safe: Replacing parts without a confirmed cause wastes time and money.\n- Document the problem as solved and close the ticket: The problem is not solved, so closing the ticket would leave the user without a working PC.\n- Put the fix in place anyway: The test showed the theory was wrong, so a fix based on it would not solve the problem.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "troubleshooting steps",
+      "escalation"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-hw-network-troubleshooting-0010",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-1",
+    "chapterId": "hw-network-troubleshooting",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A technician installed a new graphics card in a desktop. The PC's fans and lights turn on, but the monitor stays black. What is the most likely cause?",
+    "choices": [
+      "The monitor cable is still plugged into the motherboard's video port instead of the new card",
+      "The hard drive has failed",
+      "The new graphics card needs a driver before any picture appears",
+      "The CMOS battery has died"
+    ],
+    "answer": 1,
+    "oneLineConcept": "New graphics card: plug the monitor into the card",
+    "explanation": "When a separate graphics card is installed, many systems turn off the motherboard's built-in video. If the monitor cable is still in the motherboard's port, the screen stays black. Moving the cable to the graphics card's port is the simple fix.\n\n**Wrong choices**\n- The hard drive has failed: A failed drive would still show startup screens or an error message. The monitor would not stay black.\n- The new graphics card needs a driver before any picture appears: Even without a driver, a basic picture appears during startup. A totally black screen points to the connection.\n- The CMOS battery has died: A dead CMOS battery causes clock and settings problems, not a black screen right after a graphics card install.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "display",
+      "graphics card"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-hw-network-troubleshooting-0011",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-1",
+    "chapterId": "hw-network-troubleshooting",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Users near an office break room lose their 2.4 GHz Wi-Fi connection whenever the microwave oven is running. Their devices also support 5 GHz. What is the best fix?",
+    "choices": [
+      "Replace the users' network cables",
+      "Turn off DHCP on the access point",
+      "Lower the wireless security to WEP",
+      "Connect those devices to the 5 GHz band"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Microwaves interfere with 2.4 GHz Wi-Fi",
+    "explanation": "Microwave ovens work in the same 2.4 GHz range as many Wi-Fi networks and can drown out the signal while they run. The 5 GHz band is not affected by them, so moving the devices to 5 GHz avoids the interference.\n\n**Wrong choices**\n- Replace the users' network cables: The users are on Wi-Fi, so their network cables are not involved.\n- Turn off DHCP on the access point: Without DHCP, devices would not get addresses, making the problem worse.\n- Lower the wireless security to WEP: Security settings do not change interference from a microwave, and WEP is unsafe.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "Wi-Fi",
+      "interference"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-hw-network-troubleshooting-0012",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-1",
+    "chapterId": "hw-network-troubleshooting",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Several users see an \"IP address conflict\" message. What is the most likely cause?",
+    "choices": [
+      "The DNS server is down",
+      "Two devices are using the same IP address, such as a static address inside the DHCP range",
+      "A patch cable is damaged",
+      "A website's security certificate has expired"
+    ],
+    "answer": 2,
+    "oneLineConcept": "IP conflict = same address on two devices",
+    "explanation": "An IP address conflict means two devices on the network are using the same address. A common cause is a device with a static (manually set) address that falls inside the range the DHCP server also hands out. The fix is to give static devices addresses outside the DHCP range or reserve them.\n\n**Wrong choices**\n- The DNS server is down: A DNS outage stops names from resolving. It does not cause duplicate IP address warnings.\n- A patch cable is damaged: A damaged cable causes a lost or unreliable connection, not an address conflict message.\n- A website's security certificate has expired: An expired certificate causes browser warnings, not IP address conflicts.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "IP addressing",
+      "DHCP"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-hw-network-troubleshooting-0013",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-1",
+    "chapterId": "hw-network-troubleshooting",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which of the following is NOT part of the \"identify the problem\" step of the CompTIA troubleshooting steps?",
+    "choices": [
+      "Implement the solution",
+      "Back up data before making changes",
+      "Identify any recent changes to the system",
+      "Question the user about the symptoms"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Identify the problem = gather info, check changes, back up",
+    "explanation": "In the identify-the-problem step, the technician gathers information: asks the user questions, checks for recent changes, tries to repeat the problem, and backs up data. Implementing a solution comes much later, after a theory has been tested and a plan of action is ready.\n\n**Wrong choices**\n- Back up data before making changes: This belongs in the first step. Data should be safe before any changes are made.\n- Identify any recent changes to the system: This belongs in the first step. Recent changes are often the cause.\n- Question the user about the symptoms: This belongs in the first step. The user can describe what happened.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "troubleshooting steps"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "comptia-a-plus-hw-network-troubleshooting-0014",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-1",
+    "chapterId": "hw-network-troubleshooting",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A server's RAID 5 array of four drives shows a \"degraded\" status. One drive has failed, but the server is still running and users can reach their files. What should the technician do?",
+    "choices": [
+      "Replace all four drives at once",
+      "Keep running as is, because RAID 5 has no risk now",
+      "Replace the failed drive soon so the array can rebuild",
+      "Delete the array and create a new one"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Degraded RAID 5: replace the failed drive and rebuild",
+    "explanation": "RAID 5 can keep working after one drive fails by rebuilding the missing data from parity. While it is degraded, though, it has no more protection. The technician should make sure backups are current and replace the failed drive soon so the array can rebuild onto it.\n\n**Wrong choices**\n- Replace all four drives at once: Only one drive has failed. Removing the working drives would break the array.\n- Keep running as is, because RAID 5 has no risk now: With one drive already failed, the array has no protection left. A second failure would lose the data.\n- Delete the array and create a new one: Deleting the array would erase the data. The array can be rebuilt with a replacement drive instead.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "RAID",
+      "storage troubleshooting"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-hw-network-troubleshooting-0015",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-1",
+    "chapterId": "hw-network-troubleshooting",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "All users on the third floor get 169.254.x.x addresses and cannot reach the network. Users on other floors get addresses from the same DHCP server and work normally. What is the most likely cause?",
+    "choices": [
+      "Every third-floor user has a misconfigured browser",
+      "The third-floor switch has lost its uplink connection to the rest of the network",
+      "The DNS server is down",
+      "The DHCP server is down"
+    ],
+    "answer": 2,
+    "oneLineConcept": "One area gets APIPA, others fine = local link problem",
+    "explanation": "Work it out step by step:\n1. A 169.254 address means the PC got no answer from a DHCP server.\n2. Other floors get addresses from the same server, so the server works.\n3. The problem is limited to one floor, so something between that floor and the server is broken, most likely the floor switch's uplink.\n\n**Wrong choices**\n- Every third-floor user has a misconfigured browser: A browser setting cannot change the IP address a PC receives.\n- The DNS server is down: DNS does not hand out IP addresses. A DNS outage would not cause 169.254 addresses.\n- The DHCP server is down: Users on other floors are still getting addresses from the same server, so it is working.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "APIPA",
+      "DHCP",
+      "network troubleshooting"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-hw-network-troubleshooting-0016",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-1",
+    "chapterId": "hw-network-troubleshooting",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "An older laptop works normally when plugged into its AC adapter. It shuts off right away when unplugged, and the battery icon shows 0% and \"not charging\" even after hours on the adapter. What is the most likely cause?",
+    "choices": [
+      "The CMOS battery is dead",
+      "The laptop battery has worn out and needs to be replaced",
+      "The display panel is damaged",
+      "The AC adapter is failing"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Runs on AC only, battery won't charge = replace battery",
+    "explanation": "Laptop batteries wear out over time. Here the AC adapter clearly works, because the laptop runs fine on it. The battery cannot hold or take a charge, so the laptop dies as soon as it is unplugged. Replacing the battery is the fix.\n\n**Wrong choices**\n- The CMOS battery is dead: The CMOS battery keeps the clock and settings. It does not power the laptop when unplugged.\n- The display panel is damaged: A damaged display affects the picture, not whether the laptop stays on without the adapter.\n- The AC adapter is failing: The laptop runs normally on the adapter, so the adapter is delivering power.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "laptop",
+      "battery",
+      "power"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  }
+]

@@ -1,0 +1,531 @@
+[
+  {
+    "id": "comptia-a-plus-operational-procedures-0001",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-2",
+    "chapterId": "operational-procedures",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A technician is about to replace a memory module. What should the technician use to protect the parts from static electricity?",
+    "choices": [
+      "A magnetic screwdriver",
+      "Rubber-soled shoes on a carpet",
+      "A wool sweater",
+      "An ESD wrist strap connected to ground"
+    ],
+    "answer": 4,
+    "oneLineConcept": "ESD wrist strap protects parts from static",
+    "explanation": "Electrostatic discharge (ESD) is a sudden spark of static electricity that can damage computer parts, even when you cannot feel it. An ESD wrist strap connected to ground keeps you at the same charge as the computer so no spark jumps to the parts.\n\n**Wrong choices**\n- A magnetic screwdriver: Magnets do not protect against static electricity.\n- Rubber-soled shoes on a carpet: Walking on carpet can build up static, and rubber soles do not drain it away.\n- A wool sweater: Wool can build up static charge, which makes the problem worse.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "ESD",
+      "safety"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-operational-procedures-0002",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-2",
+    "chapterId": "operational-procedures",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Before opening a desktop computer to replace a part, what should the technician do first?",
+    "choices": [
+      "Turn off only the monitor",
+      "Shut it down and unplug the power cord",
+      "Put it in sleep mode",
+      "Leave it plugged in and running to save time"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Power off and unplug before opening a PC",
+    "explanation": "Shutting down and unplugging the PC removes power from the parts. That protects the technician from shock and the parts from damage. Many power supplies keep a small standby power on the motherboard even when off, so unplugging matters.\n\n**Wrong choices**\n- Turn off only the monitor: Turning off the monitor leaves the computer itself powered.\n- Put it in sleep mode: A PC in sleep mode still has power inside it.\n- Leave it plugged in and running to save time: Working inside a running PC risks electric shock and damage to parts.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "safety"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-operational-procedures-0003",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-2",
+    "chapterId": "operational-procedures",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A toner cartridge broke open and spilled toner. Where should the technician look for information about safe cleanup and disposal?",
+    "choices": [
+      "The change management request",
+      "The end-user license agreement (EULA)",
+      "The help desk ticket",
+      "The product's safety data sheet (SDS)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "SDS = safe handling and disposal of a product",
+    "explanation": "A safety data sheet (SDS) explains a product's hazards, how to handle and store it, how to clean up spills, how to dispose of it, and what first aid to give. Manufacturers provide one for products like toner.\n\n**Wrong choices**\n- The change management request: A change request plans system changes. It does not cover chemical safety.\n- The end-user license agreement (EULA): A EULA covers software license terms, not chemical safety.\n- The help desk ticket: A ticket records the problem and the work done. It does not give chemical safety steps.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "SDS",
+      "safety",
+      "environment"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-operational-procedures-0004",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-2",
+    "chapterId": "operational-procedures",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A small electrical fire starts in a power strip. Which type of fire extinguisher is made for electrical fires?",
+    "choices": [
+      "Class K",
+      "Class A",
+      "Class C",
+      "A water extinguisher"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Electrical fires = Class C extinguisher",
+    "explanation": "Class C extinguishers are rated for electrical fires and do not conduct electricity. Many offices use multipurpose ABC extinguishers, which also cover Class C. Never use water on an electrical fire.\n\n**Wrong choices**\n- Class K: Class K extinguishers are for kitchen cooking oil and grease fires.\n- Class A: Class A extinguishers are for ordinary materials such as paper and wood. Some use water, which conducts electricity.\n- A water extinguisher: Water conducts electricity and can cause a serious shock on an electrical fire.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "fire safety"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-operational-procedures-0005",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-2",
+    "chapterId": "operational-procedures",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which file extension is used for a Windows PowerShell script?",
+    "choices": [
+      ".ps1",
+      ".py",
+      ".bat",
+      ".sh"
+    ],
+    "answer": 1,
+    "oneLineConcept": ".ps1 = PowerShell script",
+    "explanation": "PowerShell scripts use the .ps1 extension. Other common script types are .bat for Windows batch files, .sh for Linux shell scripts, .py for Python, .js for JavaScript, and .vbs for VBScript.\n\n**Wrong choices**\n- .py: .py is a Python script.\n- .bat: .bat is a Windows batch file, an older type of script that runs in the command prompt.\n- .sh: .sh is a Linux or macOS shell script.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "scripting",
+      "PowerShell"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-operational-procedures-0006",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-2",
+    "chapterId": "operational-procedures",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "An office wants its main server to keep running for a few minutes during a power outage so it can shut down safely. What should be installed?",
+    "choices": [
+      "A surge suppressor",
+      "An extension cord",
+      "An uninterruptible power supply (UPS)",
+      "A power strip"
+    ],
+    "answer": 3,
+    "oneLineConcept": "UPS = battery backup during outages",
+    "explanation": "A UPS (uninterruptible power supply) has a battery that takes over when the wall power fails. It gives equipment time to keep running briefly or shut down safely. Many UPS units also protect against surges.\n\n**Wrong choices**\n- A surge suppressor: A surge suppressor blocks power spikes, but it has no battery to keep equipment running during an outage.\n- An extension cord: An extension cord only carries power from an outlet. It does nothing during an outage.\n- A power strip: A power strip only adds outlets. It does not supply power during an outage.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "UPS",
+      "power"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-operational-procedures-0007",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-2",
+    "chapterId": "operational-procedures",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A customer calls the help desk very upset because their computer stopped working before a deadline. What is the most professional first response?",
+    "choices": [
+      "Use detailed technical terms to show expertise",
+      "Listen without interrupting, then repeat the problem back to confirm it",
+      "Explain that the customer probably caused the problem",
+      "Put the customer on hold to take a personal call"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Listen actively, then restate the problem",
+    "explanation": "Letting the customer explain without interruption shows respect and gets the full story. Repeating the problem back confirms you understood it correctly. Then you can set clear expectations about what happens next.\n\n**Wrong choices**\n- Use detailed technical terms to show expertise: Jargon can confuse the customer. Plain language works better.\n- Explain that the customer probably caused the problem: Blaming the customer makes them more upset and does not solve anything.\n- Put the customer on hold to take a personal call: Taking personal calls while helping a customer is unprofessional.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "professionalism",
+      "communication"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-operational-procedures-0008",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-2",
+    "chapterId": "operational-procedures",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which backup type copies all the files that have changed since the last full backup, so a restore needs only the full backup and the latest one of these?",
+    "choices": [
+      "Full",
+      "Synthetic full",
+      "Differential",
+      "Incremental"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Differential = changes since last full backup",
+    "explanation": "A differential backup copies everything that changed since the last full backup. Each one grows larger over the week, but a restore is simple: the full backup plus the most recent differential.\n\n**Wrong choices**\n- Full: A full backup copies everything, not just the changes.\n- Synthetic full: A synthetic full is built by combining earlier backups into a new full backup. It is not a backup of changes.\n- Incremental: An incremental backup copies only changes since the last backup of any kind, so a restore needs every incremental since the full.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "backups",
+      "differential"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-operational-procedures-0009",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-2",
+    "chapterId": "operational-procedures",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A company runs a full backup every Sunday and an incremental backup every Monday through Thursday night. The server fails on Friday morning. Which backups are needed to restore all the data?",
+    "choices": [
+      "Sunday's full backup plus only Thursday's incremental",
+      "Only Sunday's full backup",
+      "Sunday's full backup plus the Monday, Tuesday, Wednesday, and Thursday incremental backups",
+      "Only Thursday's incremental backup"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Incremental restore = full + every incremental after it",
+    "explanation": "Work through the restore in order:\n1. Restore Sunday's full backup.\n2. Apply Monday's incremental, then Tuesday's, then Wednesday's.\n3. Apply Thursday's incremental last.\nEach incremental holds only the changes since the backup before it, so every one is needed.\n\n**Wrong choices**\n- Sunday's full backup plus only Thursday's incremental: Each incremental holds only one day's changes, so skipping Monday to Wednesday would lose those days.\n- Only Sunday's full backup: The full backup alone would lose all the changes made Monday to Thursday.\n- Only Thursday's incremental backup: Thursday's incremental holds only Thursday's changes.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "backups",
+      "incremental"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-operational-procedures-0010",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-2",
+    "chapterId": "operational-procedures",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "What does the 3-2-1 backup rule recommend?",
+    "choices": [
+      "Three copies of the data, on two different types of media, with one copy off-site",
+      "Three backups a day, two each week, and one each month",
+      "Three passwords, two factors, and one administrator",
+      "Three servers, two firewalls, and one backup"
+    ],
+    "answer": 1,
+    "oneLineConcept": "3-2-1: 3 copies, 2 media types, 1 off-site",
+    "explanation": "The 3-2-1 rule is a simple guide for safe backups: keep three copies of important data, store them on two different types of media, and keep one copy off-site. An off-site copy protects against fire, theft, or ransomware at the main location.\n\n**Wrong choices**\n- Three backups a day, two each week, and one each month: The rule is about copies, media types, and location, not backup times.\n- Three passwords, two factors, and one administrator: That mixes up sign-in ideas. The 3-2-1 rule is about backups.\n- Three servers, two firewalls, and one backup: The rule describes backup copies, not network equipment.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "backups",
+      "3-2-1 rule"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-operational-procedures-0011",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-2",
+    "chapterId": "operational-procedures",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "All of the following belong in a change request EXCEPT:",
+    "choices": [
+      "A rollback plan",
+      "A risk analysis",
+      "The scope of the change",
+      "The technician's personal login password"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Change requests include scope, risk, rollback plan",
+    "explanation": "A change request explains the purpose and scope of a change, the risks, the plan for doing it, how to roll it back, and who must approve it. Passwords should never be written in a change request or any other shared document.\n\n**Wrong choices**\n- A rollback plan: This belongs in a change request. It explains how to undo the change if it fails.\n- A risk analysis: This belongs in a change request. It describes what could go wrong.\n- The scope of the change: This belongs in a change request. It shows which systems and users are affected.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "change management"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "comptia-a-plus-operational-procedures-0012",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-2",
+    "chapterId": "operational-procedures",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A user wants to paste a customer list with names and account numbers into a free public AI chatbot to sort it. What is the best advice?",
+    "choices": [
+      "It is fine if the user signs in with a personal account",
+      "Do not paste confidential data into a public AI tool; use an approved tool or remove the sensitive data first",
+      "It is fine because AI chatbots never store what users type",
+      "It is fine as long as the user checks the results afterward"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Keep confidential data out of public AI tools",
+    "explanation": "Customer names and account numbers are private data. Public AI tools may store or review what users type, so pasting the list could expose it. The safe choices are to use a tool the company has approved for this data or to remove the private details first. AI answers should also be checked, because they can contain mistakes.\n\n**Wrong choices**\n- It is fine if the user signs in with a personal account: A personal account makes the risk worse, because company data leaves company control.\n- It is fine because AI chatbots never store what users type: Many public AI tools may keep or review what users enter, so private data could be exposed.\n- It is fine as long as the user checks the results afterward: Checking the results does not undo sharing private customer data with an outside service.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "AI",
+      "data privacy"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-operational-procedures-0013",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-2",
+    "chapterId": "operational-procedures",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A technician must reach a user's Windows desktop over the internet to fix a problem. Which approach is the most secure?",
+    "choices": [
+      "Open port 3389 on the firewall to the internet",
+      "Use FTP to copy the user's files to the technician's PC",
+      "Connect with Remote Desktop through a VPN",
+      "Use Telnet to connect to the PC"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Remote Desktop over a VPN, not open to the internet",
+    "explanation": "Remote Desktop (RDP) gives full control of a Windows desktop. Exposing its port directly to the internet is risky. Connecting first to a VPN, which creates an encrypted tunnel into the company network, and then using Remote Desktop keeps the session protected.\n\n**Wrong choices**\n- Open port 3389 on the firewall to the internet: Leaving Remote Desktop open to the whole internet invites constant break-in attempts.\n- Use FTP to copy the user's files to the technician's PC: FTP only moves files, is not encrypted, and does not let the technician see the desktop.\n- Use Telnet to connect to the PC: Telnet sends everything in plain text and does not give a graphical desktop.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "remote access",
+      "RDP",
+      "VPN"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-operational-procedures-0014",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-2",
+    "chapterId": "operational-procedures",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "During an approved maintenance window, a server update fails and the server will not work correctly. The window is about to end. What should the technician do?",
+    "choices": [
+      "Keep trying new fixes after the window ends",
+      "Follow the rollback plan to return the server to its previous state",
+      "Write it down in the documentation and do nothing else",
+      "Leave the server as is and fix it next week"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Failed change = follow the rollback plan",
+    "explanation": "Every approved change should include a rollback plan for this exact situation. Rolling back restores the working system before the window ends. The failure is then documented, and a new attempt goes through change approval again.\n\n**Wrong choices**\n- Keep trying new fixes after the window ends: Making unplanned changes outside the approved window breaks the change process and puts users at risk.\n- Write it down in the documentation and do nothing else: Documentation matters, but the server still needs to be returned to a working state.\n- Leave the server as is and fix it next week: Leaving a broken server hurts users and the business.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "change management",
+      "rollback"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-operational-procedures-0015",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-2",
+    "chapterId": "operational-procedures",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A small business wants to install a program on ten office PCs. It bought one copy that was sold under a personal-use, single-user license. What should the technician tell the owner?",
+    "choices": [
+      "The business needs commercial licenses that cover all ten PCs",
+      "Licenses only matter for open-source software",
+      "Personal-use licenses can always be used for business",
+      "One license is fine because all ten PCs belong to the same company"
+    ],
+    "answer": 1,
+    "oneLineConcept": "License terms limit users, devices, and use type",
+    "explanation": "A software license sets how many people or devices may use a program and in what way. A personal-use, single-user license does not cover ten business PCs. The business should buy the right number of commercial licenses, or a volume license, to stay legal.\n\n**Wrong choices**\n- Licenses only matter for open-source software: Licenses matter for all software. Commercial software especially limits how many copies may be used.\n- Personal-use licenses can always be used for business: Personal-use licenses often do not allow business use. The license terms decide this.\n- One license is fine because all ten PCs belong to the same company: A single-user license covers one user or device, not ten.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "licensing",
+      "compliance"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  }
+]

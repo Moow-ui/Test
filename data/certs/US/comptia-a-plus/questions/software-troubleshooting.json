@@ -1,0 +1,530 @@
+[
+  {
+    "id": "comptia-a-plus-software-troubleshooting-0001",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-2",
+    "chapterId": "software-troubleshooting",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A technician suspects that a driver or startup program is causing Windows problems. Which startup option loads Windows with only basic drivers and services?",
+    "choices": [
+      "UEFI/BIOS setup",
+      "Airplane mode",
+      "Safe Mode",
+      "Fast startup"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Safe Mode = Windows with minimal drivers",
+    "explanation": "Safe Mode starts Windows with only the basic drivers and services it needs. If the problem goes away in Safe Mode, a driver or startup program is the likely cause, and the technician can remove or update it from there.\n\n**Wrong choices**\n- UEFI/BIOS setup: UEFI/BIOS setup changes firmware settings. It does not start Windows with fewer drivers.\n- Airplane mode: Airplane mode only turns off wireless radios.\n- Fast startup: Fast startup speeds up booting. It does not limit which drivers load.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "Safe Mode",
+      "Windows troubleshooting"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-software-troubleshooting-0002",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-2",
+    "chapterId": "software-troubleshooting",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A user's web browser keeps opening pop-up ads, and searches are sent to websites the user did not choose. What is the most likely cause?",
+    "choices": [
+      "Too little RAM",
+      "A failing network card",
+      "Malware, such as adware or a browser hijacker",
+      "A full printer queue"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Redirects and pop-ups = likely malware",
+    "explanation": "Unwanted pop-ups and searches that go to strange sites are classic signs of adware or a browser hijacker. The technician should scan with updated anti-malware tools and check the browser for unknown extensions and changed settings.\n\n**Wrong choices**\n- Too little RAM: Low memory makes the PC slow, not redirect searches.\n- A failing network card: A bad network card causes lost or slow connections, not pop-ups and redirected searches.\n- A full printer queue: A printer queue has nothing to do with browser behavior.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "malware symptoms",
+      "browser"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-software-troubleshooting-0003",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-2",
+    "chapterId": "software-troubleshooting",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A user says their Windows PC has become very slow. Which tool should the technician open first to see which programs are using the most CPU and memory?",
+    "choices": [
+      "Disk Management",
+      "Task Manager",
+      "Device Manager",
+      "Event Viewer"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Task Manager shows live CPU, memory, and disk use",
+    "explanation": "Task Manager shows running programs and how much CPU, memory, disk, and network each one uses right now. Sorting by a column quickly shows which program is slowing the PC down.\n\n**Wrong choices**\n- Disk Management: Disk Management manages drives and partitions, not running programs.\n- Device Manager: Device Manager shows hardware and drivers, not which programs are using resources.\n- Event Viewer: Event Viewer shows logs of errors and events, not live CPU and memory use.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "Task Manager",
+      "performance"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-software-troubleshooting-0004",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-2",
+    "chapterId": "software-troubleshooting",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Yesterday a user installed a new video driver. Since then, the PC freezes several times a day. What should the technician try first?",
+    "choices": [
+      "Turn off Windows Update permanently",
+      "Replace the video card",
+      "Roll back the video driver in Device Manager",
+      "Reinstall Windows"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Problem after driver update = roll back the driver",
+    "explanation": "When a problem begins right after a driver update, the simplest fix is to go back to the driver that worked. In Device Manager, open the device's properties and choose Roll Back Driver on the Driver tab.\n\n**Wrong choices**\n- Turn off Windows Update permanently: Turning off updates leaves the PC unprotected and does not undo the bad driver.\n- Replace the video card: The problems started with the new driver, so the card itself is not the first suspect.\n- Reinstall Windows: Reinstalling Windows is far more work than needed when one driver change caused the problem.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "drivers",
+      "Device Manager"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-software-troubleshooting-0005",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-2",
+    "chapterId": "software-troubleshooting",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "On one PC, many well-known, trusted websites show security certificate warnings. Other PCs on the same network have no problem. What should the technician check first?",
+    "choices": [
+      "The amount of free disk space",
+      "The browser, by reinstalling it",
+      "The PC's date and time settings",
+      "The network card, by replacing it"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Many certificate errors = check date and time",
+    "explanation": "Security certificates are valid only between certain dates. If the PC's clock is far off, every certificate can look expired or not yet valid. Fixing the date and time, often by syncing with an internet time server, usually clears the warnings.\n\n**Wrong choices**\n- The amount of free disk space: Low disk space does not cause certificate warnings.\n- The browser, by reinstalling it: Reinstalling the browser is more work than needed. A wrong clock is a common and simple cause.\n- The network card, by replacing it: A network card problem stops connections. It does not cause certificate warnings.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "certificates",
+      "browser"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-software-troubleshooting-0006",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-2",
+    "chapterId": "software-troubleshooting",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "An app on a user's phone keeps crashing after the latest app update. Other apps work fine. What should the technician try first?",
+    "choices": [
+      "Turn off Wi-Fi permanently",
+      "Force-close the app, then clear its cache or reinstall it",
+      "Reset the phone to factory settings",
+      "Replace the phone's battery"
+    ],
+    "answer": 2,
+    "oneLineConcept": "One app crashing = fix that app first",
+    "explanation": "When only one app has a problem, start with the least disruptive fixes for that app: close it fully, clear its cache, check for a newer update, or uninstall and reinstall it. Resetting the whole phone is saved for when nothing else works.\n\n**Wrong choices**\n- Turn off Wi-Fi permanently: Turning off Wi-Fi does not fix an app that crashes on its own.\n- Reset the phone to factory settings: A factory reset erases the whole phone and is a last resort when only one app has a problem.\n- Replace the phone's battery: The battery does not cause one app to crash while others work.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "mobile apps",
+      "troubleshooting"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-software-troubleshooting-0007",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-2",
+    "chapterId": "software-troubleshooting",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A user is afraid that running System Restore will delete their documents and photos. Which statement is true?",
+    "choices": [
+      "System Restore reinstalls Windows from scratch",
+      "System Restore only restores email",
+      "System Restore rolls back system files, drivers, and settings but does not delete personal files",
+      "System Restore deletes all files created after the restore point"
+    ],
+    "answer": 3,
+    "oneLineConcept": "System Restore keeps personal files",
+    "explanation": "System Restore returns Windows system files, drivers, installed programs, and settings to the way they were at a restore point. It does not delete personal files like documents and photos. Programs installed after that point may need to be reinstalled.\n\n**Wrong choices**\n- System Restore reinstalls Windows from scratch: System Restore only returns system settings to an earlier point. It does not reinstall Windows.\n- System Restore only restores email: System Restore works on system files and settings, not email.\n- System Restore deletes all files created after the restore point: Personal files such as documents and photos are not removed. Only system changes are undone.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "System Restore"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-software-troubleshooting-0008",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-2",
+    "chapterId": "software-troubleshooting",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "On a shared Windows PC, one user gets errors at sign-in and the desktop and Start menu do not load correctly. Other users on the same PC have no problems. What is the most likely fix?",
+    "choices": [
+      "Replace the hard drive",
+      "Rebuild the user's Windows profile",
+      "Update the firmware (BIOS/UEFI)",
+      "Reinstall Windows"
+    ],
+    "answer": 2,
+    "oneLineConcept": "One user broken, others fine = corrupted profile",
+    "explanation": "Each user has a separate profile that holds their settings and desktop. If only one user has problems, that profile is likely damaged. The technician backs up the user's files, creates a fresh profile, and copies the files back.\n\n**Wrong choices**\n- Replace the hard drive: A failing drive would affect all users, not just one.\n- Update the firmware (BIOS/UEFI): Firmware affects the whole PC, not one user's account.\n- Reinstall Windows: Other users work fine, so Windows itself is healthy. A reinstall is far more than needed.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "user profile",
+      "Windows troubleshooting"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-software-troubleshooting-0009",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-2",
+    "chapterId": "software-troubleshooting",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "After a new network driver was installed, a Windows PC shows a blue screen (BSOD) every time it starts normally. What should the technician do?",
+    "choices": [
+      "Replace the motherboard",
+      "Start in Safe Mode and roll back or uninstall the new driver",
+      "Run ipconfig /renew",
+      "Defragment the hard drive"
+    ],
+    "answer": 2,
+    "oneLineConcept": "BSOD after new driver = Safe Mode, remove driver",
+    "explanation": "A blue screen right after a driver change points to that driver. Safe Mode loads only basic drivers, so Windows can start. From there the technician rolls back or uninstalls the new driver, then restarts normally.\n\n**Wrong choices**\n- Replace the motherboard: The blue screens began right after the driver install. The hardware is not the first suspect.\n- Run ipconfig /renew: ipconfig only renews network settings. It cannot fix a driver crashing Windows.\n- Defragment the hard drive: Defragmenting does not fix a faulty driver.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "BSOD",
+      "drivers",
+      "Safe Mode"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-software-troubleshooting-0010",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-2",
+    "chapterId": "software-troubleshooting",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "After the latest Windows update, a business application crashes on every PC that installed it. The software vendor confirms the update causes the problem and says a fix is coming. What is the best action for now?",
+    "choices": [
+      "Reinstall Windows on every affected PC",
+      "Uninstall the business application",
+      "Uninstall that update and pause updates until the vendor's fix is ready",
+      "Turn off the firewall on every PC"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Bad update: uninstall it and pause updates",
+    "explanation": "Windows lets you uninstall a specific update and pause updates for a while. Removing the update that breaks the app gets users working again, and pausing stops it from installing again until the vendor's fix is ready.\n\n**Wrong choices**\n- Reinstall Windows on every affected PC: A reinstall is far more work than removing the one update that causes the problem.\n- Uninstall the business application: Users need the application. Removing it does not solve their problem.\n- Turn off the firewall on every PC: The firewall has nothing to do with this crash, and turning it off adds risk.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "Windows Update"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-software-troubleshooting-0011",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-2",
+    "chapterId": "software-troubleshooting",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A user's phone shows ads on the home screen, uses far more data than usual, and has apps the user does not remember installing. What is the most likely cause?",
+    "choices": [
+      "The screen brightness is too high",
+      "The cell signal is weak",
+      "A malicious app is installed on the phone",
+      "The battery is getting old"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Unknown apps + ads + high data = mobile malware",
+    "explanation": "Ads in odd places, much higher data use, and apps the user did not install are common signs of mobile malware. The technician should remove unknown apps, check app permissions, update the phone, and run a trusted security scan.\n\n**Wrong choices**\n- The screen brightness is too high: Brightness affects battery life, not data use or ads.\n- The cell signal is weak: A weak signal causes dropped calls and slow data, not unknown apps and ads.\n- The battery is getting old: An old battery causes short battery life, not ads and unknown apps.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "mobile malware",
+      "mobile security"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-software-troubleshooting-0012",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-2",
+    "chapterId": "software-troubleshooting",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which of the following is NOT a common sign of malware on a Windows PC?",
+    "choices": [
+      "Security software turns itself off",
+      "The screen turns off after a few minutes of no use",
+      "Pop-up ads appear even when no browser is open",
+      "The browser home page changes without the user doing it"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Screen sleep is a power setting, not malware",
+    "explanation": "Turning the screen off after a period of no use is a normal power-saving setting. Disabled security software, a changed browser home page, and pop-ups with no browser open are all common signs that malware may be present.\n\n**Wrong choices**\n- Security software turns itself off: This is a common sign. Malware often turns off security tools to protect itself.\n- Pop-up ads appear even when no browser is open: This is a common sign of adware.\n- The browser home page changes without the user doing it: This is a common sign of a browser hijacker.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "malware symptoms"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "comptia-a-plus-software-troubleshooting-0013",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-2",
+    "chapterId": "software-troubleshooting",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "An application will not work because a Windows service it needs fails to start. Event Viewer shows a logon failure for the service account, and its password was changed last week. What should the technician do?",
+    "choices": [
+      "Update the service account password in the service's properties",
+      "Run sfc /scannow",
+      "Reinstall Windows",
+      "Set the service's startup type to Disabled"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Service logon failure after password change = update it",
+    "explanation": "Services can run under a specific account and use that account's password to start. When the password changes, the service keeps trying the old one and fails to log on. Entering the new password on the Log On tab of the service's properties lets it start again.\n\n**Wrong choices**\n- Run sfc /scannow: sfc repairs system files. The problem is an old password, not damaged files.\n- Reinstall Windows: The cause is clear and small. A reinstall is not needed.\n- Set the service's startup type to Disabled: Disabling the service would stop it for good, and the application needs it running.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "Windows services",
+      "Event Viewer"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-software-troubleshooting-0014",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-2",
+    "chapterId": "software-troubleshooting",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "After a power outage, a Windows PC will not boot and shows startup errors. The firmware still detects the drive. What should the technician try first?",
+    "choices": [
+      "Reset the CMOS settings",
+      "Replace the hard drive",
+      "Run Startup Repair from the Windows Recovery Environment",
+      "Reinstall all of the user's applications"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Windows won't boot = try Startup Repair",
+    "explanation": "A sudden power loss can damage the files Windows needs to start. The Windows Recovery Environment includes Startup Repair, which looks for and fixes common boot problems automatically. It is a good first step before more drastic fixes.\n\n**Wrong choices**\n- Reset the CMOS settings: The firmware is working and sees the drive. The problem is with Windows starting.\n- Replace the hard drive: The drive is detected, so it is likely fine. Damaged startup files are more likely after a power loss.\n- Reinstall all of the user's applications: Applications do not run until Windows boots, so they are not the problem.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "boot problems",
+      "Windows Recovery Environment"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-software-troubleshooting-0015",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-2",
+    "chapterId": "software-troubleshooting",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A Windows PC keeps crashing. System Restore and Startup Repair did not help, and the user's files are already backed up. Which option fixes Windows with the least loss of data?",
+    "choices": [
+      "Reset this PC with the option to keep personal files",
+      "Run ipconfig /renew",
+      "Replace the motherboard",
+      "Format the drive and reinstall Windows"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Reset this PC can keep personal files",
+    "explanation": "Reset this PC reinstalls Windows. With the keep-my-files option, it keeps the user's personal files but removes installed apps and settings. It is less destructive than wiping the drive, which is why it is tried before a full format and reinstall.\n\n**Wrong choices**\n- Run ipconfig /renew: This only renews network settings and will not stop Windows from crashing.\n- Replace the motherboard: Nothing points to a hardware failure. The repairs tried so far are all for Windows software.\n- Format the drive and reinstall Windows: This also fixes Windows but erases everything on the drive, including personal files.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "Reset this PC",
+      "Windows recovery"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  }
+]

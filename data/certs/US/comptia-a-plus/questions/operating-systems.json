@@ -1,0 +1,642 @@
+[
+  {
+    "id": "comptia-a-plus-operating-systems-0001",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-2",
+    "chapterId": "operating-systems",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which Windows command shows a computer's IP address, subnet mask, and default gateway?",
+    "choices": [
+      "nslookup",
+      "tracert",
+      "ping",
+      "ipconfig"
+    ],
+    "answer": 4,
+    "oneLineConcept": "ipconfig shows IP settings",
+    "explanation": "ipconfig lists the network settings of each adapter, including IP address, subnet mask, and default gateway. ipconfig /all adds more detail, such as DNS servers and the MAC address.\n\n**Wrong choices**\n- nslookup: nslookup asks a DNS server about a name. It does not show the PC's IP settings.\n- tracert: tracert shows the path to a remote host, not the PC's own IP settings.\n- ping: ping tests whether another device can be reached. It does not list the PC's own settings.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "Windows commands",
+      "ipconfig"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-operating-systems-0002",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-2",
+    "chapterId": "operating-systems",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which Windows tool shows logs of system errors, warnings, and security events?",
+    "choices": [
+      "Disk Management",
+      "Event Viewer",
+      "Task Scheduler",
+      "Device Manager"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Event Viewer = Windows logs",
+    "explanation": "Event Viewer keeps logs of what happens in Windows, such as application errors, system warnings, and security events like sign-ins. It is a good place to look when you need to know what went wrong and when.\n\n**Wrong choices**\n- Disk Management: Disk Management manages drives and partitions, not logs.\n- Task Scheduler: Task Scheduler runs tasks at set times. It does not show the system's error logs.\n- Device Manager: Device Manager lists hardware and drivers. It does not keep the system's event logs.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "Windows tools",
+      "Event Viewer"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-operating-systems-0003",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-2",
+    "chapterId": "operating-systems",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A user's laptop runs Windows 11 Home. The laptop must be joined to the company's domain. What needs to happen?",
+    "choices": [
+      "Upgrade the laptop to Windows 11 Pro or a higher edition",
+      "Create a new local administrator account",
+      "Install Group Policy Editor from the internet",
+      "Turn on BitLocker"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Domain join needs Windows Pro or higher",
+    "explanation": "Windows Home editions cannot join a company domain. Pro and higher editions can, and they also add business features such as BitLocker and Group Policy Editor. The fix is to upgrade the edition.\n\n**Wrong choices**\n- Create a new local administrator account: A new local account does not give Windows Home the ability to join a domain.\n- Install Group Policy Editor from the internet: Domain join is a feature of the edition. Downloading a tool does not add it.\n- Turn on BitLocker: BitLocker encrypts the drive. It does not add the ability to join a domain, and Home does not include it.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "Windows editions",
+      "domain"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-operating-systems-0004",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-2",
+    "chapterId": "operating-systems",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which Linux command lists the files and folders in the current directory?",
+    "choices": [
+      "ls",
+      "cd",
+      "pwd",
+      "chmod"
+    ],
+    "answer": 1,
+    "oneLineConcept": "ls lists directory contents",
+    "explanation": "In Linux and macOS terminals, ls lists the files and folders in a directory. Common options include ls -l for details and ls -a to show hidden files.\n\n**Wrong choices**\n- cd: cd changes to a different directory. It does not list files.\n- pwd: pwd shows the full path of the current directory, not its contents.\n- chmod: chmod changes file permissions. It does not list files.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "Linux",
+      "commands"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-operating-systems-0005",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-2",
+    "chapterId": "operating-systems",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which built-in macOS feature makes regular backups to an external drive?",
+    "choices": [
+      "Keychain",
+      "Spotlight",
+      "Time Machine",
+      "FileVault"
+    ],
+    "answer": 3,
+    "oneLineConcept": "macOS backup = Time Machine",
+    "explanation": "Time Machine is the macOS backup tool. It copies files to an external drive or network location and keeps hourly, daily, and weekly versions so you can restore older copies.\n\n**Wrong choices**\n- Keychain: Keychain stores passwords and certificates, not file backups.\n- Spotlight: Spotlight searches for files and apps. It does not back them up.\n- FileVault: FileVault encrypts the Mac's drive. It does not make backups.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "macOS",
+      "backup"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-operating-systems-0006",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-2",
+    "chapterId": "operating-systems",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A user cannot copy a 6 GB video file to a USB flash drive that has 32 GB of free space. The drive is formatted with FAT32. Why does the copy fail?",
+    "choices": [
+      "The flash drive is full",
+      "Video files must be compressed before copying",
+      "Only administrators can copy video files",
+      "FAT32 cannot store a single file larger than 4 GB"
+    ],
+    "answer": 4,
+    "oneLineConcept": "FAT32 maximum file size = 4 GB",
+    "explanation": "FAT32 is an older file system that works with almost any device, but one file on it cannot be bigger than 4 GB. Reformatting the drive as exFAT or NTFS removes that limit. Formatting erases the drive, so copy off any files first.\n\n**Wrong choices**\n- The flash drive is full: The drive has 32 GB free, which is plenty of space for a 6 GB file.\n- Video files must be compressed before copying: Video files do not need to be compressed to copy. The file size limit is the issue.\n- Only administrators can copy video files: Copying a video file to a flash drive does not require administrator rights.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "file systems",
+      "FAT32"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-operating-systems-0007",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-2",
+    "chapterId": "operating-systems",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which Windows command scans protected system files and replaces damaged ones?",
+    "choices": [
+      "gpupdate",
+      "sfc /scannow",
+      "ipconfig /renew",
+      "chkdsk"
+    ],
+    "answer": 2,
+    "oneLineConcept": "sfc /scannow repairs Windows system files",
+    "explanation": "System File Checker (sfc) checks Windows system files. Running sfc /scannow from an administrator command prompt finds damaged or missing files and replaces them with good copies.\n\n**Wrong choices**\n- gpupdate: gpupdate applies Group Policy settings. It does not repair files.\n- ipconfig /renew: ipconfig /renew asks DHCP for a new IP address. It has nothing to do with system files.\n- chkdsk: chkdsk checks a disk's file system and surface for errors. It does not replace Windows system files.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "Windows commands",
+      "sfc"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-operating-systems-0008",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-2",
+    "chapterId": "operating-systems",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A user's PC is slow to start because many programs launch at sign-in. Where can the technician turn off these startup programs in Windows?",
+    "choices": [
+      "Task Manager's startup list (Startup apps page in Windows 11, Startup tab in Windows 10)",
+      "Device Manager",
+      "Event Viewer",
+      "Disk Management"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Task Manager Startup tab controls startup apps",
+    "explanation": "Task Manager has a Startup tab (Startup apps in Windows 11) that lists programs that launch at sign-in. Disabling the ones the user does not need makes startup faster.\n\n**Wrong choices**\n- Device Manager: Device Manager controls hardware and drivers, not startup programs.\n- Event Viewer: Event Viewer shows logs. It does not turn startup programs on or off.\n- Disk Management: Disk Management manages drives and partitions, not startup programs.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "Windows tools",
+      "Task Manager"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-operating-systems-0009",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-2",
+    "chapterId": "operating-systems",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "On a Linux computer, a user runs a command to install software with apt and gets a \"permission denied\" error. What should the user do?",
+    "choices": [
+      "Use chmod to give everyone full permissions on all files",
+      "Restart the computer and try again",
+      "Run ls to list the files in the folder",
+      "Run the command again with sudo in front of it"
+    ],
+    "answer": 4,
+    "oneLineConcept": "sudo runs one command with admin rights",
+    "explanation": "Installing software changes system files, so it needs root (administrator) rights. Putting sudo in front of the command, such as sudo apt install, runs that one command with those rights after the user enters their password.\n\n**Wrong choices**\n- Use chmod to give everyone full permissions on all files: Opening up permissions on every file is a serious security risk and is not how software installs are allowed.\n- Restart the computer and try again: A restart does not give the user administrator rights.\n- Run ls to list the files in the folder: ls only lists files. It does not give the rights needed to install software.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "Linux",
+      "sudo",
+      "permissions"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-operating-systems-0010",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-2",
+    "chapterId": "operating-systems",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "An administrator changed a Group Policy setting and wants a Windows PC to apply it right away instead of waiting. Which command should be run on the PC?",
+    "choices": [
+      "gpupdate /force",
+      "sfc /scannow",
+      "chkdsk /f",
+      "gpresult /r"
+    ],
+    "answer": 1,
+    "oneLineConcept": "gpupdate /force applies policy now",
+    "explanation": "Windows applies Group Policy changes on a schedule. gpupdate /force tells the PC to apply all policy settings right now. To see which policies are in effect, use gpresult.\n\n**Wrong choices**\n- sfc /scannow: sfc repairs system files. It does not apply Group Policy.\n- chkdsk /f: chkdsk fixes file system errors on a disk. It does not apply Group Policy.\n- gpresult /r: gpresult shows which policies are applied. It does not apply new ones.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "Windows commands",
+      "Group Policy"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-operating-systems-0011",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-2",
+    "chapterId": "operating-systems",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A user needs a USB drive that works on both Windows and macOS and can store files larger than 4 GB. Which file system should the technician choose?",
+    "choices": [
+      "ext4",
+      "exFAT",
+      "NTFS",
+      "FAT32"
+    ],
+    "answer": 2,
+    "oneLineConcept": "exFAT = cross-platform with large files",
+    "explanation": "exFAT works on both Windows and macOS for reading and writing, and it does not have FAT32's 4 GB file size limit. That makes it a good choice for flash drives that move large files between different computers.\n\n**Wrong choices**\n- ext4: ext4 is a Linux file system that neither Windows nor macOS supports without extra software.\n- NTFS: macOS can read NTFS drives but cannot write to them by default, so the user could not save files from the Mac.\n- FAT32: FAT32 works on both systems but cannot store a file larger than 4 GB.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "file systems",
+      "exFAT"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-operating-systems-0012",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-2",
+    "chapterId": "operating-systems",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "After a driver update, a sound card stopped working. Which Windows tool should the technician use to roll back the driver?",
+    "choices": [
+      "Device Manager",
+      "Services",
+      "Event Viewer",
+      "Disk Management"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Device Manager = drivers (update, roll back, disable)",
+    "explanation": "Device Manager lists the hardware in the PC and its drivers. Opening the device's properties and using Roll Back Driver on the Driver tab returns to the driver that worked before the update.\n\n**Wrong choices**\n- Services: Services starts and stops background services. It does not manage drivers.\n- Event Viewer: Event Viewer can show driver errors, but it cannot roll a driver back.\n- Disk Management: Disk Management handles drives and partitions, not device drivers.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "Windows tools",
+      "drivers"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-operating-systems-0013",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-2",
+    "chapterId": "operating-systems",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A Mac user wants the whole startup drive encrypted so data is safe if the laptop is stolen. Which built-in macOS feature should the technician turn on?",
+    "choices": [
+      "BitLocker",
+      "Time Machine",
+      "Keychain",
+      "FileVault"
+    ],
+    "answer": 4,
+    "oneLineConcept": "macOS full-disk encryption = FileVault",
+    "explanation": "FileVault encrypts the Mac's startup drive. Without the user's password or recovery key, a thief cannot read the data, even by removing the drive.\n\n**Wrong choices**\n- BitLocker: BitLocker is the Windows drive encryption feature. It is not part of macOS.\n- Time Machine: Time Machine makes backups. It does not encrypt the startup drive.\n- Keychain: Keychain stores passwords, not full-drive encryption.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "macOS",
+      "encryption"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-operating-systems-0014",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-2",
+    "chapterId": "operating-systems",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A technician is checking whether an older PC can run Windows 11. Which of the following is NOT a Windows 11 requirement?",
+    "choices": [
+      "At least 64 GB of storage",
+      "A 5 GHz Wi-Fi adapter",
+      "TPM version 2.0",
+      "UEFI firmware that supports Secure Boot"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Windows 11 needs TPM 2.0, UEFI Secure Boot, 64 GB",
+    "explanation": "Microsoft lists hardware requirements for Windows 11, including TPM 2.0, UEFI firmware with Secure Boot support, and at least 64 GB of storage. A 5 GHz Wi-Fi adapter is not required; Windows 11 runs with wired networking or any supported wireless adapter.\n\n**Wrong choices**\n- At least 64 GB of storage: This is a requirement. Windows 11 needs 64 GB or more of storage.\n- TPM version 2.0: This is a requirement. Windows 11 needs a TPM 2.0 chip.\n- UEFI firmware that supports Secure Boot: This is a requirement. Windows 11 needs UEFI with Secure Boot support.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "Windows 11",
+      "requirements"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "comptia-a-plus-operating-systems-0015",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-2",
+    "chapterId": "operating-systems",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A user can reach some websites but not one company server. The technician wants to see each router hop on the way to the server and where the traffic stops. Which Windows command should the technician use?",
+    "choices": [
+      "ping",
+      "nslookup",
+      "tracert",
+      "netstat"
+    ],
+    "answer": 3,
+    "oneLineConcept": "tracert shows each hop to a destination",
+    "explanation": "tracert lists each router (hop) that traffic passes through on the way to a destination. If the list stops at a certain hop, that shows where along the path the traffic is getting lost.\n\n**Wrong choices**\n- ping: ping shows whether the server answers, but it does not list the routers along the way.\n- nslookup: nslookup checks DNS name lookups. It does not show the network path.\n- netstat: netstat lists the PC's current network connections and listening ports, not the path to a server.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "Windows commands",
+      "tracert"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-operating-systems-0016",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-2",
+    "chapterId": "operating-systems",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A technician wants to check which IP address a DNS server returns for the name intranet.example.com. Which command should the technician use?",
+    "choices": [
+      "tracert",
+      "netstat",
+      "nslookup",
+      "ipconfig /flushdns"
+    ],
+    "answer": 3,
+    "oneLineConcept": "nslookup queries DNS",
+    "explanation": "nslookup sends a question to a DNS server and shows its answer, including the IP address for a name. It is a direct way to check whether DNS is giving the correct address.\n\n**Wrong choices**\n- tracert: tracert shows the path to a host. It does not show the DNS server's answer directly.\n- netstat: netstat lists network connections on the PC, not DNS lookups.\n- ipconfig /flushdns: ipconfig /flushdns clears the PC's saved DNS answers. It does not ask a DNS server for an address.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "Windows commands",
+      "DNS"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-operating-systems-0017",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-2",
+    "chapterId": "operating-systems",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A Linux administrator wrote a shell script called backup.sh but gets \"permission denied\" when running it as ./backup.sh. Which command lets the file run as a program?",
+    "choices": [
+      "grep backup backup.sh",
+      "chmod +x backup.sh",
+      "chown root backup.sh",
+      "ls -l backup.sh"
+    ],
+    "answer": 2,
+    "oneLineConcept": "chmod +x makes a file executable",
+    "explanation": "On Linux, a file can only run as a program if it has execute permission. chmod +x adds that permission. ls -l can then be used to confirm that an x now appears in the file's permissions.\n\n**Wrong choices**\n- grep backup backup.sh: grep searches for text inside the file. It does not change permissions.\n- chown root backup.sh: chown changes who owns the file. It does not give it permission to run.\n- ls -l backup.sh: ls -l shows the file's current permissions but does not change them.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "Linux",
+      "chmod",
+      "permissions"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-operating-systems-0018",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-2",
+    "chapterId": "operating-systems",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A technician installs a new second hard drive in a Windows PC. The drive does not appear in File Explorer, but Disk Management shows it as unallocated space. What should the technician do next?",
+    "choices": [
+      "Update the chipset driver",
+      "Replace the drive because it is faulty",
+      "Run sfc /scannow",
+      "Initialize the disk if needed, then create and format a new volume in Disk Management"
+    ],
+    "answer": 4,
+    "oneLineConcept": "New drive shows unallocated = create and format a volume",
+    "explanation": "A brand-new drive has no partitions, so File Explorer has nothing to show. In Disk Management, the technician initializes the disk if asked, then creates a new simple volume, gives it a drive letter, and formats it, usually with NTFS.\n\n**Wrong choices**\n- Update the chipset driver: Windows already detects the drive. The missing piece is a volume, not a driver.\n- Replace the drive because it is faulty: Disk Management can see the drive, so it is working. It just has no volume yet.\n- Run sfc /scannow: sfc repairs Windows system files. It does not prepare a new drive.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "Disk Management",
+      "storage"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  }
+]

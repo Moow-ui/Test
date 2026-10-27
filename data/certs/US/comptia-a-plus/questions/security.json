@@ -1,0 +1,639 @@
+[
+  {
+    "id": "comptia-a-plus-security-0001",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-2",
+    "chapterId": "security",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A user gets an email that looks like it is from their bank. It asks them to click a link and enter their password to \"verify the account.\" What kind of attack is this?",
+    "choices": [
+      "Phishing",
+      "Shoulder surfing",
+      "Vishing",
+      "Tailgating"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Phishing = fake email to steal information",
+    "explanation": "Phishing uses fake emails or websites that look real to trick people into giving up passwords or other information. Banks do not ask you to confirm your password through an email link. When in doubt, go to the site by typing its address yourself.\n\n**Wrong choices**\n- Shoulder surfing: Shoulder surfing is watching someone's screen or keyboard to steal information.\n- Vishing: Vishing is the same kind of trick done over a voice phone call, not email.\n- Tailgating: Tailgating is following someone through a secure door, not sending an email.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "social engineering",
+      "phishing"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-security-0002",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-2",
+    "chapterId": "security",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "An employee gets a phone call from someone who says they are from the IT help desk and asks for the employee's password to \"fix an account problem.\" What kind of attack is this?",
+    "choices": [
+      "Smishing",
+      "Whaling",
+      "Vishing",
+      "Phishing"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Vishing = voice phishing by phone",
+    "explanation": "Vishing (voice phishing) is a phone call that tries to trick someone into giving away information. A real help desk should never ask for your password. Hang up and call the help desk back on its known number.\n\n**Wrong choices**\n- Smishing: Smishing uses text messages, not voice calls.\n- Whaling: Whaling targets top executives, usually through tailored emails.\n- Phishing: Phishing usually means fake emails. A phone call is called vishing.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "social engineering",
+      "vishing"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-security-0003",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-2",
+    "chapterId": "security",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A person without a badge follows an employee through a secured door before it closes. What is this called?",
+    "choices": [
+      "Dumpster diving",
+      "Impersonation",
+      "Tailgating",
+      "Shoulder surfing"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Tailgating = following someone through a secure door",
+    "explanation": "Tailgating happens when an unauthorized person slips through a secured door behind someone who has access. Staff training and access control vestibules (two-door entry areas) help stop it.\n\n**Wrong choices**\n- Dumpster diving: Dumpster diving is searching trash for useful information.\n- Impersonation: Impersonation means pretending to be someone else, such as a repair person. Simply following someone through a door is tailgating.\n- Shoulder surfing: Shoulder surfing is watching a person's screen or keypad to steal information.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "physical security",
+      "tailgating"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-security-0004",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-2",
+    "chapterId": "security",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A user's files suddenly cannot be opened, and a message demands payment in cryptocurrency to unlock them. What type of malware is this?",
+    "choices": [
+      "Ransomware",
+      "Adware",
+      "Keylogger",
+      "Spyware"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Ransomware encrypts files and demands payment",
+    "explanation": "Ransomware encrypts a victim's files and demands money for the key. The best protection is good backups kept separate from the network, along with updates and careful email habits.\n\n**Wrong choices**\n- Adware: Adware shows unwanted ads. It does not encrypt files.\n- Keylogger: A keylogger records keystrokes. It does not lock files for ransom.\n- Spyware: Spyware secretly watches and reports what a user does. It does not lock files and demand payment.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "malware",
+      "ransomware"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-security-0005",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-2",
+    "chapterId": "security",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which wireless security setting gives the strongest protection on a new home or small office router?",
+    "choices": [
+      "An open network with MAC filtering",
+      "WPA3",
+      "WPA2 with TKIP",
+      "WEP"
+    ],
+    "answer": 2,
+    "oneLineConcept": "WPA3 is the strongest Wi-Fi security",
+    "explanation": "WPA3 is the newest Wi-Fi security standard and gives the strongest protection. If an older device cannot use WPA3, WPA2 with AES is the next choice. WEP and TKIP are outdated and should not be used.\n\n**Wrong choices**\n- An open network with MAC filtering: An open network has no encryption, and MAC addresses are easy to copy.\n- WPA2 with TKIP: WPA2 should use AES. TKIP is an older, weaker method.\n- WEP: WEP is very old and can be cracked quickly.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "wireless security",
+      "WPA3"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-security-0006",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-2",
+    "chapterId": "security",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which of the following is an example of multifactor authentication (MFA)?",
+    "choices": [
+      "A very long password",
+      "A password plus a code from an authenticator app on the user's phone",
+      "Two different passwords",
+      "A password plus an answer to a security question"
+    ],
+    "answer": 2,
+    "oneLineConcept": "MFA = different factor types (know, have, are)",
+    "explanation": "MFA requires proof from at least two different kinds of factors: something you know (a password), something you have (a phone or token), or something you are (a fingerprint). A password plus a phone code combines know and have.\n\n**Wrong choices**\n- A very long password: A long password is stronger, but it is still a single factor.\n- Two different passwords: Two passwords are both something you know, so this is one factor type.\n- A password plus an answer to a security question: Both are things the user knows, so this is still only one factor type.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "MFA",
+      "authentication"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-security-0007",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-2",
+    "chapterId": "security",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "An employee is about to step away from a desk for a few minutes. What is the best security practice?",
+    "choices": [
+      "Close all open programs and leave it signed in",
+      "Turn off only the monitor",
+      "Leave it as is, because the office is safe",
+      "Lock the screen, for example with Windows key + L"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Lock your screen when you step away",
+    "explanation": "Locking the screen keeps the session open but requires a password, PIN, or other sign-in to use it again. In Windows, the quickest way is Windows key + L.\n\n**Wrong choices**\n- Close all open programs and leave it signed in: Anyone could still sit down and use the signed-in account.\n- Turn off only the monitor: The computer is still signed in. Anyone can turn the monitor back on and use it.\n- Leave it as is, because the office is safe: Unattended, signed-in computers are an easy target, even in a trusted office.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "workstation security",
+      "screen lock"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-security-0008",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-2",
+    "chapterId": "security",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which security principle says that users should have only the access they need to do their jobs?",
+    "choices": [
+      "Single sign-on",
+      "Zero-day",
+      "Multifactor authentication",
+      "Least privilege"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Least privilege = only the access needed",
+    "explanation": "The principle of least privilege gives each user or program only the permissions needed for its job. For example, staff use standard accounts for daily work and use administrator rights only when truly needed. This limits the damage if an account is misused.\n\n**Wrong choices**\n- Single sign-on: Single sign-on lets users sign in once to reach many systems. It does not limit what they can access.\n- Zero-day: A zero-day is a flaw that has no fix yet. It is not an access principle.\n- Multifactor authentication: MFA strengthens sign-in. It does not decide how much access a user gets.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "least privilege",
+      "access control"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-security-0009",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-2",
+    "chapterId": "security",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which type of malware spreads by itself from computer to computer across a network, without a user opening a file?",
+    "choices": [
+      "Trojan",
+      "Worm",
+      "Virus",
+      "Rootkit"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Worm = spreads by itself across networks",
+    "explanation": "A worm copies itself across networks by using security holes, with no help from users. A virus needs a person to run or share an infected file. Keeping systems updated closes the holes worms use.\n\n**Wrong choices**\n- Trojan: A trojan hides inside software that looks useful and needs a user to install it.\n- Virus: A virus attaches to files or programs and spreads when users run or share them.\n- Rootkit: A rootkit hides deep in a system. Spreading across a network by itself is what a worm does.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "malware",
+      "worm"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-security-0010",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-2",
+    "chapterId": "security",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A user downloads a free game. It works, but it also quietly installs a program that lets an attacker control the computer remotely. What type of malware is this?",
+    "choices": [
+      "Worm",
+      "Ransomware",
+      "Trojan",
+      "Adware"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Trojan hides inside useful-looking software",
+    "explanation": "A trojan pretends to be something useful, such as a free game or tool, while it secretly installs harmful code. Remote access trojans give an attacker control of the computer. Only installing software from trusted sources helps prevent them.\n\n**Wrong choices**\n- Worm: A worm spreads by itself across a network. This malware came hidden inside something the user chose to install.\n- Ransomware: Ransomware encrypts files and demands payment, which did not happen here.\n- Adware: Adware shows unwanted ads. It does not give an attacker remote control.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "malware",
+      "trojan"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-security-0011",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-2",
+    "chapterId": "security",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "During malware removal on a Windows PC, why should the technician turn off System Restore?",
+    "choices": [
+      "So that restore points that may hold the malware are not used to put it back",
+      "To make the anti-malware scan run faster",
+      "Because System Restore deletes the user's personal files",
+      "Because anti-malware software cannot be installed while it is on"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Disable System Restore so infected restore points can't return",
+    "explanation": "Restore points made while the PC was infected can contain the malware. If someone later rolls back to one of them, the infection comes back. After cleaning the PC, the technician turns System Restore back on and creates a fresh, clean restore point.\n\n**Wrong choices**\n- To make the anti-malware scan run faster: Speed is not the reason. The concern is that infected restore points could bring the malware back.\n- Because System Restore deletes the user's personal files: System Restore does not delete personal documents.\n- Because anti-malware software cannot be installed while it is on: Anti-malware software can be installed with System Restore on.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "malware removal",
+      "System Restore"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-security-0012",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-2",
+    "chapterId": "security",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A technician confirms that a PC shows clear signs of malware. What should the technician do next?",
+    "choices": [
+      "Teach the user how to avoid malware",
+      "Quarantine the PC by disconnecting it from the network",
+      "Turn off System Restore",
+      "Reinstall the operating system right away"
+    ],
+    "answer": 2,
+    "oneLineConcept": "After confirming malware: quarantine the system",
+    "explanation": "Once malware is confirmed, the infected computer should be isolated so it cannot spread the malware or send out data. The usual next steps are: turn off System Restore in Windows, clean the system with updated tools, schedule scans and updates, turn System Restore back on with a new restore point, and educate the user.\n\n**Wrong choices**\n- Teach the user how to avoid malware: Educating the user is the final step, after the PC is clean.\n- Turn off System Restore: This comes right after quarantining. The infected PC should be cut off from the network first.\n- Reinstall the operating system right away: Reinstalling is a last resort and is not the next step after confirming symptoms.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "malware removal"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-security-0013",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-2",
+    "chapterId": "security",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "At a coffee shop, an attacker sets up a wireless access point with the same network name as the shop's real Wi-Fi to capture customers' traffic. What is this attack called?",
+    "choices": [
+      "Evil twin",
+      "Rogue DHCP server",
+      "Shoulder surfing",
+      "Dumpster diving"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Evil twin = fake Wi-Fi copying a real name",
+    "explanation": "An evil twin is a fake wireless access point that uses the same name as a trusted network. People connect to it by mistake, and the attacker can watch or change their traffic. Using a VPN on public Wi-Fi helps protect against it.\n\n**Wrong choices**\n- Rogue DHCP server: A rogue DHCP server hands out bad network settings. It is not a fake access point copying a network name.\n- Shoulder surfing: Shoulder surfing is watching someone's screen. It does not use a fake network.\n- Dumpster diving: Dumpster diving is searching through trash for information.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "wireless attacks",
+      "evil twin"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-security-0014",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-2",
+    "chapterId": "security",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "All of the following are good ways to secure a small office router EXCEPT:",
+    "choices": [
+      "Keep the default administrator password so support staff can log in easily",
+      "Update the router's firmware",
+      "Use WPA3, or WPA2 with AES",
+      "Turn off WPS"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Always change default router passwords",
+    "explanation": "Default administrator passwords are often published online, so anyone could log in to a router that still uses one. Changing the default password, updating firmware, turning off WPS, and using strong Wi-Fi encryption all make a router safer.\n\n**Wrong choices**\n- Update the router's firmware: This is a good practice. Updates fix security holes.\n- Use WPA3, or WPA2 with AES: This is a good practice. These give strong wireless encryption.\n- Turn off WPS: This is a good practice. WPS has known weaknesses.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "SOHO security",
+      "router"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "comptia-a-plus-security-0015",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-2",
+    "chapterId": "security",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A user changes their passwords, but their accounts keep getting broken into. The technician finds a small device plugged in between the keyboard cable and the PC. What is the device most likely to be?",
+    "choices": [
+      "An evil twin",
+      "A USB Wi-Fi adapter",
+      "A rootkit",
+      "A hardware keylogger"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Device between keyboard and PC = hardware keylogger",
+    "explanation": "A hardware keylogger is a small device placed between the keyboard and the computer that records every keystroke, including new passwords. That explains why changing passwords did not help. The device should be removed and reported, and passwords changed again from a clean computer.\n\n**Wrong choices**\n- An evil twin: An evil twin is a fake wireless access point, not a device on the keyboard cable.\n- A USB Wi-Fi adapter: A Wi-Fi adapter connects to wireless networks. It would not sit between the keyboard and the PC.\n- A rootkit: A rootkit is malicious software hidden in the system, not a device plugged in between the keyboard and the PC.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "keylogger",
+      "physical security"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-security-0016",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-2",
+    "chapterId": "security",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A security scan finds malware that hides deep in the operating system, gets admin-level control, and hides its files from normal antivirus scans. What type of malware is this most likely to be?",
+    "choices": [
+      "Rootkit",
+      "Worm",
+      "Adware",
+      "Spyware"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Rootkit = hides deep with admin-level control",
+    "explanation": "A rootkit gains high-level (root or administrator) control and hides itself and other malware from normal tools. Removing it may need special scanning tools run outside the normal operating system, and sometimes a full reinstall is the safest fix.\n\n**Wrong choices**\n- Worm: A worm is known for spreading itself across networks, not for hiding deep in the system.\n- Adware: Adware shows unwanted ads and does not usually hide at a deep system level.\n- Spyware: Spyware watches and reports user activity. Hiding deep in the operating system with admin control is what defines a rootkit.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "malware",
+      "rootkit"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-security-0017",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-2",
+    "chapterId": "security",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A company's chief financial officer gets an email that uses her name, title, and a real upcoming deal to trick her into approving a wire transfer. Which term best describes this attack?",
+    "choices": [
+      "Smishing",
+      "Spear phishing",
+      "Whaling",
+      "Vishing"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Whaling = targeted phishing aimed at executives",
+    "explanation": "Whaling is a kind of spear phishing aimed at senior executives, the \"big fish.\" These emails are carefully tailored and often try to get money transfers or sensitive data. Checking unusual payment requests through a second channel, such as a phone call to a known number, helps stop it.\n\n**Wrong choices**\n- Smishing: Smishing uses text messages. This attack came by email.\n- Spear phishing: Spear phishing targets a specific person, but when the target is a top executive, the more exact term is whaling.\n- Vishing: Vishing uses phone calls. This attack came by email.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "social engineering",
+      "whaling"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-security-0018",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-2",
+    "chapterId": "security",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A company wants to donate old hard disk drives so they can be reused, but no one must be able to recover the old data from them. What is the best method?",
+    "choices": [
+      "Degauss the drives",
+      "Use drive-wiping software that overwrites all the data",
+      "Do a quick format",
+      "Delete the files and empty the Recycle Bin"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Reuse drives: wipe by overwriting",
+    "explanation": "Wiping software overwrites every part of the drive, so the old data cannot be read back, and the drive still works. Degaussing and physical destruction also stop recovery, but they leave the drive useless, which does not fit a donation.\n\n**Wrong choices**\n- Degauss the drives: Degaussing erases a hard drive with a strong magnet but also ruins it, so it could not be reused.\n- Do a quick format: A quick format only clears the index. The old data can still be recovered with free tools.\n- Delete the files and empty the Recycle Bin: Deleted files can usually be recovered until they are overwritten.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "data destruction",
+      "drive wiping"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+]

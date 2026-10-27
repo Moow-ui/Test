@@ -1,0 +1,328 @@
+[
+  {
+    "id": "comptia-a-plus-virtualization-cloud-0001",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-1",
+    "chapterId": "virtualization-cloud",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which type of hypervisor runs directly on the computer hardware without a general-purpose operating system underneath?",
+    "choices": [
+      "Type 1 hypervisor",
+      "Type 2 hypervisor",
+      "Container runtime",
+      "Web browser"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Type 1 = bare metal; Type 2 = on top of an OS",
+    "explanation": "A Type 1 hypervisor, also called a bare-metal hypervisor, is installed directly on the hardware. It is common on servers in data centers because it has less overhead. A Type 2 hypervisor runs inside a normal operating system.\n\n**Wrong choices**\n- Type 2 hypervisor: A Type 2 hypervisor runs as an app on top of an operating system such as Windows or macOS.\n- Container runtime: A container runtime runs containers that share the host operating system. It still needs that operating system.\n- Web browser: A web browser is an application. It does not run virtual machines on bare hardware.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "hypervisor",
+      "virtualization"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-virtualization-cloud-0002",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-1",
+    "chapterId": "virtualization-cloud",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A company uses web-based email and office apps. Employees just sign in through a browser, and the provider manages the servers and the software. Which cloud service model is this?",
+    "choices": [
+      "IaaS",
+      "Type 1 hypervisor",
+      "SaaS",
+      "PaaS"
+    ],
+    "answer": 3,
+    "oneLineConcept": "SaaS = finished software over the internet",
+    "explanation": "Software as a Service (SaaS) delivers ready-to-use software over the internet. The provider runs everything behind it, and the customer simply signs in and uses it. Web email and online office apps are common examples.\n\n**Wrong choices**\n- IaaS: IaaS rents virtual servers and storage, and the customer manages the operating system and apps.\n- Type 1 hypervisor: A hypervisor runs virtual machines. It is not a cloud service model.\n- PaaS: PaaS gives developers a platform to build and run their own apps. Here the company uses finished apps.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "cloud",
+      "SaaS"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-virtualization-cloud-0003",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-1",
+    "chapterId": "virtualization-cloud",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A technician wants to try a new operating system on a Windows desktop without changing or removing the installed Windows system. What is the best approach?",
+    "choices": [
+      "Run the new operating system in a virtual machine using a Type 2 hypervisor",
+      "Set up dual boot by changing the drive's partitions",
+      "Format the drive and install the new operating system",
+      "Set up RAID 1 with a second drive"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Test an OS safely in a VM",
+    "explanation": "A Type 2 hypervisor runs as an app on the existing Windows desktop. Inside it, the technician can create a virtual machine and install the new operating system there. The real Windows installation stays untouched, and the VM can be deleted when testing is done.\n\n**Wrong choices**\n- Set up dual boot by changing the drive's partitions: Dual boot changes the partitions on the drive and the boot setup, which can risk the existing system.\n- Format the drive and install the new operating system: Formatting erases the existing Windows installation.\n- Set up RAID 1 with a second drive: RAID 1 copies data between drives. It does not let you run a second operating system.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "virtual machine",
+      "hypervisor",
+      "testing"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-virtualization-cloud-0004",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-1",
+    "chapterId": "virtualization-cloud",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "An online store's cloud system automatically adds servers when holiday traffic rises and removes them when traffic falls. Which cloud feature is this?",
+    "choices": [
+      "High availability",
+      "Metered utilization",
+      "File synchronization",
+      "Rapid elasticity"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Rapid elasticity = scale up and down with demand",
+    "explanation": "Rapid elasticity means cloud resources can grow quickly when demand rises and shrink when it falls, often automatically. The store gets extra servers for busy times without owning them all year.\n\n**Wrong choices**\n- High availability: High availability keeps a service running through failures. It does not mean growing and shrinking with demand.\n- Metered utilization: Metered use means you pay for what you use. It does not describe adding and removing servers as demand changes.\n- File synchronization: File synchronization keeps files the same across devices. It does not add servers.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "cloud",
+      "elasticity"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-virtualization-cloud-0005",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-1",
+    "chapterId": "virtualization-cloud",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A technician installs virtual machine software on a new PC. When starting a VM, an error says hardware virtualization is not available. What should the technician do?",
+    "choices": [
+      "Turn off Secure Boot in the UEFI/BIOS settings",
+      "Install a Type 1 hypervisor inside the virtual machine",
+      "Add more RAM to the PC",
+      "Turn on CPU virtualization support (such as Intel VT-x or AMD-V) in the UEFI/BIOS settings"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Enable VT-x or AMD-V in firmware for VMs",
+    "explanation": "Most CPUs have built-in virtualization support, called Intel VT-x or AMD-V, but it is often turned off by default. Virtual machine software needs it. Turning it on in the UEFI/BIOS settings and restarting fixes this error.\n\n**Wrong choices**\n- Turn off Secure Boot in the UEFI/BIOS settings: Secure Boot checks that startup software is trusted. It is not the setting that makes hardware virtualization available.\n- Install a Type 1 hypervisor inside the virtual machine: The VM will not even start, so installing anything inside it is not possible, and it would not fix the missing feature.\n- Add more RAM to the PC: More memory helps run more VMs, but it does not turn on the CPU's virtualization feature.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "virtualization",
+      "UEFI",
+      "VT-x"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-virtualization-cloud-0006",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-1",
+    "chapterId": "virtualization-cloud",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A company rents virtual servers, storage, and networking from a cloud provider. The company's own staff install and manage the operating systems and applications. Which cloud service model is this?",
+    "choices": [
+      "Community cloud",
+      "IaaS",
+      "PaaS",
+      "SaaS"
+    ],
+    "answer": 2,
+    "oneLineConcept": "IaaS = rent infrastructure, manage your own OS",
+    "explanation": "Infrastructure as a Service (IaaS) gives the customer raw building blocks such as virtual servers, storage, and networks. The customer is still responsible for the operating systems, apps, and data running on them.\n\n**Wrong choices**\n- Community cloud: Community cloud is a deployment model (who shares the cloud), not a service model.\n- PaaS: With PaaS, the provider manages the operating system and platform, and the customer only deploys its own code.\n- SaaS: With SaaS, the customer just uses finished software and manages no servers at all.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "cloud",
+      "IaaS"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-virtualization-cloud-0007",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-1",
+    "chapterId": "virtualization-cloud",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A developer wants to package an application with only the files and libraries it needs, sharing the host operating system's kernel instead of running a full guest operating system. What should the developer use?",
+    "choices": [
+      "A Type 1 hypervisor",
+      "Virtual desktop infrastructure (VDI)",
+      "A container",
+      "A virtual machine"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Containers share the host OS kernel",
+    "explanation": "A container holds an app and everything it needs, but it shares the host's operating system kernel. That makes containers smaller and quicker to start than virtual machines, which each run a complete operating system.\n\n**Wrong choices**\n- A Type 1 hypervisor: A hypervisor runs full virtual machines, each with its own operating system.\n- Virtual desktop infrastructure (VDI): VDI delivers whole user desktops from a server. It is not a way to package one app.\n- A virtual machine: A virtual machine runs a full guest operating system, which is heavier than what the developer wants.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "containers",
+      "virtualization"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-virtualization-cloud-0008",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-1",
+    "chapterId": "virtualization-cloud",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A hospital keeps patient records on a private cloud in its own data center, but it runs its public website on a public cloud provider, and the two are connected. Which cloud deployment model is this?",
+    "choices": [
+      "Hybrid cloud",
+      "Private cloud",
+      "Community cloud",
+      "Public cloud"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Hybrid = private plus public, connected",
+    "explanation": "A hybrid cloud combines two or more cloud types, such as a private cloud and a public cloud, that work together. It lets an organization keep sensitive data in-house while using a public provider for other services.\n\n**Wrong choices**\n- Private cloud: Only part of the setup is private. The website runs on a public cloud.\n- Community cloud: A community cloud is shared by several organizations with the same needs. Here one hospital mixes its own cloud with a public one.\n- Public cloud: Only part of the setup is public. The patient records stay in a private cloud.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "cloud",
+      "deployment models"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-virtualization-cloud-0009",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-1",
+    "chapterId": "virtualization-cloud",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Several government agencies with the same security and compliance rules share one cloud built just for them. Which cloud deployment model is this?",
+    "choices": [
+      "Private cloud",
+      "Community cloud",
+      "Public cloud",
+      "Hybrid cloud"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Community cloud = shared by groups with common needs",
+    "explanation": "A community cloud is shared by several organizations that have the same needs, such as the same laws or security rules. They share the cost while keeping the cloud limited to their group.\n\n**Wrong choices**\n- Private cloud: A private cloud serves a single organization, not several agencies.\n- Public cloud: A public cloud is open to any customer, not built for one group with shared rules.\n- Hybrid cloud: A hybrid cloud mixes private and public clouds for one organization. Here several organizations share one cloud.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "cloud",
+      "deployment models"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  }
+]

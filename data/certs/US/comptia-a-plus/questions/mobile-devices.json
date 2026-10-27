@@ -1,0 +1,372 @@
+[
+  {
+    "id": "comptia-a-plus-mobile-devices-0001",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-1",
+    "chapterId": "mobile-devices",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A customer wants to pay at a store by holding a phone a few centimeters from the card reader. Which wireless technology does this use?",
+    "choices": [
+      "Wi-Fi",
+      "Cellular data",
+      "NFC",
+      "Bluetooth"
+    ],
+    "answer": 3,
+    "oneLineConcept": "NFC = touch-range link used for tap-to-pay",
+    "explanation": "NFC (near-field communication) works only when two devices are a few centimeters apart. That very short range makes it a good fit for contactless payments and quick tap-to-share actions.\n\n**Wrong choices**\n- Wi-Fi: Wi-Fi connects devices to a network, not to a store card reader by touch.\n- Cellular data: Cellular data connects the phone to the carrier's network over long distances, not to a nearby card reader.\n- Bluetooth: Bluetooth links accessories such as headsets across a room after pairing. Tap-to-pay uses a much shorter-range link.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "NFC",
+      "mobile payments",
+      "wireless"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-mobile-devices-0002",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-1",
+    "chapterId": "mobile-devices",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A technician is adding memory to a laptop. Which type of memory module does a typical laptop use?",
+    "choices": [
+      "SO-DIMM",
+      "PCIe x16 card",
+      "M.2 card",
+      "DIMM"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Laptop memory = SO-DIMM",
+    "explanation": "Laptops use SO-DIMM (small outline DIMM) memory modules. They do the same job as desktop DIMMs but are shorter so they fit inside a thin case. The memory generation, such as DDR4 or DDR5, must also match the laptop.\n\n**Wrong choices**\n- PCIe x16 card: A PCIe x16 slot holds desktop expansion cards such as graphics cards, not memory.\n- M.2 card: An M.2 slot is mainly used for SSD storage drives, not for main memory.\n- DIMM: A DIMM is the full-size memory module used in desktop PCs. It does not fit a laptop memory slot.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "laptop",
+      "RAM",
+      "SO-DIMM"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-mobile-devices-0003",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-1",
+    "chapterId": "mobile-devices",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A field technician needs internet access on a laptop at a site with no Wi-Fi. The technician's phone has a strong cellular data signal. What is the quickest way to get the laptop online?",
+    "choices": [
+      "Connect the laptop to the phone with a DisplayPort cable",
+      "Pair the laptop and phone with NFC",
+      "Turn on airplane mode on the phone",
+      "Turn on the phone's mobile hotspot and connect the laptop to it"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Hotspot shares a phone's cellular data",
+    "explanation": "A mobile hotspot (also called tethering) lets a phone share its cellular data connection with other devices, usually over Wi-Fi. The laptop simply joins the phone's Wi-Fi network.\n\n**Wrong choices**\n- Connect the laptop to the phone with a DisplayPort cable: DisplayPort carries video to a monitor. It does not share a network connection.\n- Pair the laptop and phone with NFC: NFC works only at touch range and is used for things like payments, not for sharing an internet connection.\n- Turn on airplane mode on the phone: Airplane mode turns off the phone's radios, including cellular data, so it would remove the only internet connection.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "hotspot",
+      "tethering",
+      "cellular"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-mobile-devices-0004",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-1",
+    "chapterId": "mobile-devices",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A user bought a new phone, and their wireless headset will not connect to it. The headset worked with the old phone. What should the technician try first?",
+    "choices": [
+      "Turn on NFC and hold the headset against a card reader",
+      "Reset the phone to factory settings",
+      "Put the headset in pairing mode and pair it from the phone's Bluetooth settings",
+      "Turn on the phone's mobile hotspot"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Bluetooth devices must be paired first",
+    "explanation": "Bluetooth devices only work together after they are paired. The headset was paired with the old phone, not the new one. Putting the headset in pairing (discoverable) mode and selecting it in the new phone's Bluetooth settings links the two.\n\n**Wrong choices**\n- Turn on NFC and hold the headset against a card reader: NFC is used for touch-range actions like payments, and a card reader plays no part in connecting a headset.\n- Reset the phone to factory settings: A factory reset erases the phone and is far too drastic as a first step. The new phone has simply never been paired with the headset.\n- Turn on the phone's mobile hotspot: A hotspot shares cellular data over Wi-Fi. It has nothing to do with connecting a Bluetooth headset.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "Bluetooth",
+      "pairing",
+      "accessories"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-mobile-devices-0005",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-1",
+    "chapterId": "mobile-devices",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A technician notices that a laptop's case is bulging and the touchpad is pushed up because the battery has swollen. What should the technician do?",
+    "choices": [
+      "Stop using the laptop, remove the battery safely, and replace it",
+      "Fully drain and recharge the battery to reset it",
+      "Keep using the laptop until the battery stops charging",
+      "Tighten the case screws to press the battery flat"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Swollen battery = stop using and replace",
+    "explanation": "A swollen lithium-ion battery has failed inside and can catch fire. The safe action is to power off the device, stop using it, remove the battery carefully without bending or puncturing it, replace it, and recycle the old one according to local rules.\n\n**Wrong choices**\n- Fully drain and recharge the battery to reset it: Charging cycles do not fix swelling. The battery is damaged and must be replaced.\n- Keep using the laptop until the battery stops charging: A swollen battery is a fire and safety risk. Waiting for it to fail could make the situation dangerous.\n- Tighten the case screws to press the battery flat: Pressing on a swollen lithium-ion battery can puncture it and cause a fire.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "battery",
+      "safety",
+      "laptop"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-mobile-devices-0006",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-1",
+    "chapterId": "mobile-devices",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A technician replaced a cracked laptop screen. Now the laptop gets a weak Wi-Fi signal, while other laptops in the same room have full signal. What is the most likely cause?",
+    "choices": [
+      "The laptop's memory module is loose",
+      "The wireless router is set to channel 11",
+      "Bluetooth is turned off on the laptop",
+      "The Wi-Fi antenna wires in the display were not reconnected or were damaged"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Laptop Wi-Fi antennas run through the display",
+    "explanation": "In most laptops, the Wi-Fi antenna wires run up into the display lid. A screen replacement means working right next to them, so a wire that was pinched, damaged, or left unplugged is the most likely cause. The fact that only this laptop is affected, and only after the repair, points to the repair itself.\n\n**Wrong choices**\n- The laptop's memory module is loose: Loose memory causes boot or stability problems, not a weak wireless signal.\n- The wireless router is set to channel 11: Other laptops in the same room have full signal, so the router's settings are not the problem.\n- Bluetooth is turned off on the laptop: Bluetooth is a separate radio. Turning it off does not weaken Wi-Fi.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "laptop",
+      "Wi-Fi antenna",
+      "display repair"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-mobile-devices-0007",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-1",
+    "chapterId": "mobile-devices",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A company wants to require passcodes on all company phones, push work apps to them, and wipe a phone if it is lost. Which solution fits best?",
+    "choices": [
+      "Virtual private network (VPN)",
+      "Mobile device management (MDM)",
+      "Remote Desktop Protocol (RDP)",
+      "Near-field communication (NFC)"
+    ],
+    "answer": 2,
+    "oneLineConcept": "MDM pushes policies, apps, and remote wipe",
+    "explanation": "Mobile device management (MDM) lets a company enroll phones and tablets and control them centrally. It can enforce passcodes and encryption, install or remove work apps, and remotely lock or wipe a lost device.\n\n**Wrong choices**\n- Virtual private network (VPN): A VPN encrypts network traffic, but it cannot enforce passcodes, install apps, or wipe a lost phone.\n- Remote Desktop Protocol (RDP): RDP lets you control a Windows desktop remotely. It is not used to manage phone settings or wipe phones.\n- Near-field communication (NFC): NFC is a touch-range wireless link for things like payments. It is not a management tool.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "MDM",
+      "mobile security",
+      "remote wipe"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-mobile-devices-0008",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-1",
+    "chapterId": "mobile-devices",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "An employee uses a laptop at a desk with two monitors, a wired network connection, a full-size keyboard, and a mouse. The employee wants to connect all of them by plugging in just one cable or connector. What should the technician provide?",
+    "choices": [
+      "A KVM switch",
+      "A Bluetooth adapter",
+      "A USB flash drive",
+      "A docking station"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Docking station = one connection to many devices",
+    "explanation": "A docking station connects to the laptop through one connection and provides ports for monitors, network, keyboard, mouse, and often power. When the user leaves, they unplug one connector and take the laptop.\n\n**Wrong choices**\n- A KVM switch: A KVM switch lets several computers share one keyboard, monitor, and mouse. It does not turn one laptop connection into many ports.\n- A Bluetooth adapter: Bluetooth can connect a keyboard and mouse, but not wired monitors or a wired network.\n- A USB flash drive: A flash drive stores files. It does not connect monitors or a network.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "docking station",
+      "laptop",
+      "accessories"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-mobile-devices-0009",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-1",
+    "chapterId": "mobile-devices",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A user says that when they type the letters U, I, and O on their laptop, the numbers 4, 5, and 6 appear instead. The laptop has no separate number pad. What is the most likely cause?",
+    "choices": [
+      "The keyboard ribbon cable is loose",
+      "A keylogger is installed on the laptop",
+      "Num Lock is turned on, so part of the keyboard acts as a number pad",
+      "The keyboard language layout is set incorrectly"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Laptop letters typing numbers = Num Lock on",
+    "explanation": "Many laptops without a separate number pad have a hidden number pad on the letter keys, such as U, I, O for 4, 5, 6. When Num Lock is turned on, those keys type numbers. Turning Num Lock off, often with the Fn key, fixes the problem.\n\n**Wrong choices**\n- The keyboard ribbon cable is loose: A loose cable usually makes keys stop working completely, not type different characters.\n- A keylogger is installed on the laptop: A keylogger secretly records keystrokes. It does not change which characters appear on screen.\n- The keyboard language layout is set incorrectly: A wrong layout usually swaps symbols or a few letters, not a neat block of letter keys turning into numbers.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "laptop",
+      "keyboard",
+      "Num Lock"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-mobile-devices-0010",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-1",
+    "chapterId": "mobile-devices",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "After a phone was dropped, the display shows a clear image, but one part of the screen no longer responds to touch. Which part most likely needs to be replaced?",
+    "choices": [
+      "The digitizer",
+      "The battery",
+      "The LCD or OLED display panel",
+      "The Wi-Fi antenna"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Touch not responding = digitizer",
+    "explanation": "The digitizer is the touch-sensing layer on top of the display. It turns finger touches into input. If the picture is fine but part of the screen ignores touch, the digitizer is the most likely damaged part.\n\n**Wrong choices**\n- The battery: A damaged battery causes power or charging problems, not a dead touch area while the screen works.\n- The LCD or OLED display panel: The image is still clear, so the display panel itself is working. The problem is with touch input.\n- The Wi-Fi antenna: The Wi-Fi antenna affects wireless signal, not touch response.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "digitizer",
+      "touchscreen",
+      "mobile repair"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+]

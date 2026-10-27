@@ -1,0 +1,596 @@
+{
+  "by": "ai",
+  "chapters": {
+    "mobile-devices": {
+      "summary": [
+        "This chapter is about laptops, phones, and tablets: which parts a technician can replace, which accessories and ports they use, and how they connect to networks and to each other. Questions are usually short scenarios, such as a user who cannot pair a headset or a laptop that needs more memory.",
+        "Many laptop parts can be swapped, such as the battery, keyboard, memory (small SO-DIMM modules), and M.2 storage drives. The Wi-Fi antenna wires usually run through the display, which is why a damaged lid can cause weak wireless signal. Always follow the maker's service steps, because laptop parts are small and often held by hidden screws and ribbon cables.",
+        "Mobile devices connect in several ways. Bluetooth links nearby accessories after a pairing step. NFC works only when devices nearly touch and is used for tap-to-pay. A hotspot shares a phone's cellular data connection with other devices over Wi-Fi. Companies use mobile device management (MDM) to push settings, apps, and security rules to phones they manage."
+      ],
+      "concepts": [
+        {
+          "term": "SO-DIMM",
+          "definition": "The small memory module used in most laptops and small PCs. It does the same job as a desktop DIMM but is shorter.",
+          "tip": "Laptop memory upgrade = SO-DIMM."
+        },
+        {
+          "term": "M.2",
+          "definition": "A small card-shaped slot and drive format used for SSDs in laptops and desktops. Some M.2 drives are SATA and some are faster NVMe drives.",
+          "tip": "Check which kind the slot supports before buying a drive."
+        },
+        {
+          "term": "Bluetooth pairing",
+          "definition": "The one-time step that links two Bluetooth devices so they trust each other. The accessory must be in pairing (discoverable) mode.",
+          "tip": "Headset will not connect? Put it in pairing mode and pair again."
+        },
+        {
+          "term": "NFC",
+          "definition": "Near-field communication: a very short-range wireless link (a few centimeters) used for contactless payment and quick tap-to-share.",
+          "tip": "Tap-to-pay = NFC."
+        },
+        {
+          "term": "Hotspot (tethering)",
+          "definition": "A phone shares its cellular data connection with other devices, usually over Wi-Fi.",
+          "tip": "Laptop needs internet in the field = use the phone's hotspot."
+        },
+        {
+          "term": "MDM",
+          "definition": "Mobile device management: software a company uses to enroll phones and tablets and push settings, apps, and security rules to them, including remote wipe.",
+          "tip": "Company needs to wipe a lost phone = MDM."
+        },
+        {
+          "term": "Docking station",
+          "definition": "A base that connects a laptop to monitors, a keyboard, a mouse, a network, and power through one connection.",
+          "tip": "One cable at the desk, full workstation."
+        }
+      ],
+      "points": [
+        "A swollen laptop or phone battery is a safety risk: stop using it and replace it.",
+        "Weak Wi-Fi on only one laptop after a screen repair can mean the antenna wires in the lid were damaged or disconnected.",
+        "Airplane mode turns off the device's wireless radios.",
+        "Bluetooth is for nearby accessories; NFC is for touch-range actions; cellular is for wide-area data."
+      ],
+      "compare": {
+        "title": "Mobile wireless connections",
+        "columns": [
+          "Connection",
+          "Typical range",
+          "Common use"
+        ],
+        "rows": [
+          [
+            "NFC",
+            "A few centimeters",
+            "Tap-to-pay, quick pairing"
+          ],
+          [
+            "Bluetooth",
+            "About a room",
+            "Headsets, keyboards, mice"
+          ],
+          [
+            "Wi-Fi",
+            "A home or office",
+            "Network and internet access"
+          ],
+          [
+            "Cellular",
+            "Wide area",
+            "Mobile data and calls"
+          ]
+        ]
+      },
+      "verifiedAt": "2026-10-28"
+    },
+    "networking": {
+      "summary": [
+        "This chapter covers how devices talk to each other on a network. You need to know common port numbers, the job of each network device, Wi-Fi basics, IP addressing, and the services that make a network work, such as DHCP and DNS. It is a big part of Core 1, and it is also the base for the troubleshooting chapter.",
+        "Each network service listens on a port number. For example, SSH uses 22, DNS uses 53, HTTP uses 80, HTTPS uses 443, and Remote Desktop uses 3389. TCP checks that data arrives and resends lost pieces, while UDP is faster but does not check, which suits things like streaming and DNS lookups.",
+        "DHCP hands out IP addresses automatically, and DNS turns names like www.example.com into IP addresses. If a Windows PC cannot reach a DHCP server, it gives itself an APIPA address that starts with 169.254 and can only talk to the local network. Private address ranges such as 192.168.x.x, 10.x.x.x, and 172.16.x.x to 172.31.x.x are used inside homes and offices.",
+        "Devices each have a role: a switch connects devices inside one network, a router connects different networks, an access point adds Wi-Fi, and a firewall filters traffic. Technicians use tools such as a cable tester, a crimper, a punchdown tool, a toner probe, and a Wi-Fi analyzer to build and check networks."
+      ],
+      "concepts": [
+        {
+          "term": "TCP vs. UDP",
+          "definition": "TCP is connection-based and resends lost data. UDP sends without checking delivery, so it is faster with less overhead.",
+          "tip": "Must arrive complete = TCP. Speed over perfection = UDP."
+        },
+        {
+          "term": "DHCP",
+          "definition": "A service that gives devices an IP address, subnet mask, default gateway, and DNS server automatically. Uses UDP ports 67 and 68.",
+          "tip": "No DHCP reply on Windows = 169.254.x.x address."
+        },
+        {
+          "term": "DNS",
+          "definition": "A service that translates host names into IP addresses. Uses port 53.",
+          "tip": "Can ping an IP but not a name = check DNS."
+        },
+        {
+          "term": "APIPA",
+          "definition": "Automatic Private IP Addressing. A Windows PC that cannot get a DHCP address gives itself an address in 169.254.0.0/16.",
+          "tip": "169.254 = DHCP problem."
+        },
+        {
+          "term": "Switch vs. router",
+          "definition": "A switch forwards traffic between devices on the same network using MAC addresses. A router forwards traffic between different networks using IP addresses.",
+          "tip": "Same network = switch. Between networks = router."
+        },
+        {
+          "term": "2.4 GHz vs. 5 GHz",
+          "definition": "2.4 GHz reaches farther and passes walls better but has fewer channels and more interference. 5 GHz is faster with more channels but shorter range.",
+          "tip": "In 2.4 GHz, use channels 1, 6, or 11 to avoid overlap."
+        },
+        {
+          "term": "Toner probe",
+          "definition": "A two-part tool: the tone generator puts a signal on a cable, and the probe finds which cable or wall jack carries it.",
+          "tip": "Which cable goes to which jack? = toner probe."
+        }
+      ],
+      "points": [
+        "Port pairs to know: FTP 20/21, SSH 22, Telnet 23, SMTP 25, DNS 53, DHCP 67/68, HTTP 80, POP3 110, IMAP 143, HTTPS 443, SMB 445, RDP 3389.",
+        "Telnet sends everything, including passwords, in plain text; SSH encrypts the session.",
+        "127.0.0.1 is the loopback address; pinging it tests the computer's own network stack.",
+        "A punchdown tool seats wires into a patch panel or keystone jack; a crimper attaches RJ45 plugs.",
+        "SNMP (161/162) is used to monitor network devices; LDAP (389) is used to query directory services."
+      ],
+      "compare": {
+        "title": "Secure and insecure protocols",
+        "columns": [
+          "Task",
+          "Insecure",
+          "Secure choice"
+        ],
+        "rows": [
+          [
+            "Remote command line",
+            "Telnet (23)",
+            "SSH (22)"
+          ],
+          [
+            "Web pages",
+            "HTTP (80)",
+            "HTTPS (443)"
+          ],
+          [
+            "Remote desktop over the internet",
+            "Open RDP (3389) to the internet",
+            "RDP through a VPN"
+          ]
+        ]
+      },
+      "verifiedAt": "2026-10-28"
+    },
+    "hardware": {
+      "summary": [
+        "This chapter covers the parts inside and around a computer: cables and connectors, memory, storage, motherboards, CPUs, power supplies, and printers. Many questions ask which part or cable fits a job, or how to set up storage so data is safe.",
+        "Memory (RAM) holds data the computer is working on and is cleared when power is off. Desktop memory modules are DIMMs and laptop modules are SO-DIMMs, and the module type must match the motherboard, such as DDR4 or DDR5. Installing matching modules in the right slots lets the board use dual-channel mode for better speed.",
+        "Storage keeps data when power is off. Hard disk drives (HDDs) use spinning platters, while solid-state drives (SSDs) have no moving parts and are much faster. NVMe SSDs use the PCIe bus and are faster than SATA SSDs. RAID combines several drives: RAID 0 stripes data for speed with no protection, RAID 1 mirrors two drives, RAID 5 stripes data with parity across at least three drives, RAID 6 uses two parity blocks across at least four drives, and RAID 10 stripes across mirrored pairs and needs at least four drives.",
+        "The power supply turns wall AC power into the DC voltages the parts need, and its wattage must cover all the parts. Firmware (BIOS or UEFI) settings control boot order, Secure Boot, the TPM chip, and virtualization support. Laser printers use a fuser to melt toner onto paper, so pages that smear mean the fuser needs attention."
+      ],
+      "concepts": [
+        {
+          "term": "RAID 0",
+          "definition": "Striping: data is split across two or more drives for speed. There is no redundancy, so one failed drive loses all the data.",
+          "tip": "RAID 0 = zero protection."
+        },
+        {
+          "term": "RAID 1",
+          "definition": "Mirroring: the same data is written to two drives. Usable space is one drive's size, and the array survives one drive failure.",
+          "tip": "RAID 1 = a copy on each drive."
+        },
+        {
+          "term": "RAID 5",
+          "definition": "Striping with distributed parity across at least 3 drives. Usable space is (number of drives - 1) x drive size. Survives one drive failure.",
+          "tip": "Lose one drive's worth of space to parity."
+        },
+        {
+          "term": "RAID 6 and RAID 10",
+          "definition": "RAID 6: two parity blocks, at least 4 drives, usable (n - 2) x size, survives two failures. RAID 10: striped mirrors, at least 4 drives, usable space is half.",
+          "tip": "RAID 6 = double parity. RAID 10 = mirrors plus speed."
+        },
+        {
+          "term": "NVMe",
+          "definition": "A fast storage interface for SSDs that uses the PCIe bus, often in an M.2 slot.",
+          "tip": "NVMe is faster than SATA."
+        },
+        {
+          "term": "TPM",
+          "definition": "Trusted Platform Module: a chip that stores encryption keys safely. BitLocker uses it, and Windows 11 requires TPM 2.0.",
+          "tip": "Drive encryption keys live in the TPM."
+        },
+        {
+          "term": "Fuser",
+          "definition": "The laser printer part that uses heat and pressure to bond toner to paper.",
+          "tip": "Toner rubs off the page = check the fuser."
+        }
+      ],
+      "points": [
+        "RAID is not a backup: deleted files and ransomware damage are copied to every drive in the array.",
+        "Usable RAID space: RAID 0 all, RAID 1 half, RAID 5 (n - 1), RAID 6 (n - 2), RAID 10 half.",
+        "Turn on hardware virtualization (Intel VT-x or AMD-V) in firmware before running virtual machines.",
+        "Choose a power supply with enough wattage for every part, plus some extra headroom.",
+        "Apply thermal paste between a CPU and its cooler so heat moves into the heatsink."
+      ],
+      "compare": {
+        "title": "RAID levels",
+        "columns": [
+          "Level",
+          "Minimum drives",
+          "Usable space",
+          "Drive failures it survives"
+        ],
+        "rows": [
+          [
+            "RAID 0",
+            "2",
+            "All",
+            "None"
+          ],
+          [
+            "RAID 1",
+            "2",
+            "Half",
+            "1"
+          ],
+          [
+            "RAID 5",
+            "3",
+            "(n - 1) x size",
+            "1"
+          ],
+          [
+            "RAID 6",
+            "4",
+            "(n - 2) x size",
+            "2"
+          ],
+          [
+            "RAID 10",
+            "4",
+            "Half",
+            "1 per mirrored pair"
+          ]
+        ]
+      },
+      "figures": [
+        {
+          "image": "aplus-raid-levels-compare.svg",
+          "alt": "Four panels showing how data blocks are laid out. RAID 0: two disks, blocks split between them. RAID 1: two disks with the same blocks. RAID 5: three disks with data and a shaded parity block that moves between disks. RAID 10: four disks in two mirrored pairs.",
+          "caption": "RAID 0 stripes, RAID 1 mirrors, RAID 5 adds parity, and RAID 10 stripes across mirrored pairs.",
+          "source": {
+            "kind": "self"
+          }
+        }
+      ],
+      "verifiedAt": "2026-10-28"
+    },
+    "virtualization-cloud": {
+      "summary": [
+        "This chapter explains how one physical computer can run many virtual computers, and how companies rent computing from cloud providers. It is the smallest part of Core 1, but the terms come up often in real help desk work.",
+        "A hypervisor is the software that runs virtual machines (VMs). A Type 1 hypervisor runs directly on the hardware and is used in data centers. A Type 2 hypervisor runs as an app on top of a normal operating system and is handy for testing on a desktop. VMs need enough CPU, memory, and storage on the host, and the CPU's virtualization support must be turned on in firmware. Containers are lighter: they share the host's operating system kernel and package only an app and what it needs.",
+        "Cloud services come in three main models. In Infrastructure as a Service (IaaS) you rent virtual servers and storage and manage the operating system yourself. In Platform as a Service (PaaS) you get a ready platform to run your own code. In Software as a Service (SaaS) you simply use finished software over the internet. Clouds can be public, private, hybrid (a mix), or community (shared by groups with the same needs). Key cloud features include rapid elasticity, which adds or removes resources as demand changes, and metered use, where you pay for what you use."
+      ],
+      "concepts": [
+        {
+          "term": "Type 1 hypervisor",
+          "definition": "Runs directly on the physical hardware (bare metal) with no general-purpose operating system underneath.",
+          "tip": "Data center servers = Type 1."
+        },
+        {
+          "term": "Type 2 hypervisor",
+          "definition": "Runs as an application on top of a normal operating system such as Windows or macOS.",
+          "tip": "Testing an OS on your desktop = Type 2."
+        },
+        {
+          "term": "Container",
+          "definition": "A lightweight package that holds an app and its files and shares the host's operating system kernel instead of running a full guest OS.",
+          "tip": "VM = whole computer. Container = just the app."
+        },
+        {
+          "term": "IaaS / PaaS / SaaS",
+          "definition": "IaaS rents servers, storage, and networks. PaaS gives a platform to build and run your own apps. SaaS delivers finished software you just use.",
+          "tip": "You manage the most in IaaS and the least in SaaS."
+        },
+        {
+          "term": "Rapid elasticity",
+          "definition": "The cloud adds resources when demand rises and removes them when demand falls, often automatically.",
+          "tip": "Busy holiday sales = scale out; quiet month = scale in."
+        },
+        {
+          "term": "VDI",
+          "definition": "Virtual desktop infrastructure: user desktops run as VMs on central servers and users connect to them over the network.",
+          "tip": "Desktop lives in the data center, not on the laptop."
+        }
+      ],
+      "points": [
+        "A VM will not start on a new PC if hardware virtualization is turned off in firmware.",
+        "Hybrid cloud mixes a private cloud or on-site systems with a public cloud.",
+        "Web email and online office apps are examples of SaaS.",
+        "A sandbox VM is a safe place to test updates or suspicious files without risking the real system."
+      ],
+      "compare": {
+        "title": "Cloud service models",
+        "columns": [
+          "Model",
+          "You get",
+          "You still manage"
+        ],
+        "rows": [
+          [
+            "IaaS",
+            "Virtual servers, storage, network",
+            "Operating system, apps, data"
+          ],
+          [
+            "PaaS",
+            "A ready platform to run code",
+            "Your apps and data"
+          ],
+          [
+            "SaaS",
+            "Finished software",
+            "Your data and user accounts"
+          ]
+        ]
+      },
+      "verifiedAt": "2026-10-28"
+    },
+    "hw-network-troubleshooting": {
+      "summary": [
+        "This is the largest part of Core 1. It asks you to use CompTIA's troubleshooting steps on real problems with PCs, laptops, phones, storage, printers, and networks. Most questions describe what a user sees and ask for the most likely cause or the best next step.",
+        "The troubleshooting steps are: identify the problem, establish a theory of probable cause, test the theory, establish a plan of action and put the fix in place, verify full system functionality and add preventive measures, and document what you found and did. While identifying the problem, ask the user questions, check for recent changes, and back up data before you change anything. If a theory turns out wrong, form a new one or escalate.",
+        "Some symptoms point clearly to a cause. A PC that shuts off after running for a while may be overheating. A clock that resets after power is removed points to the CMOS battery. Grinding or clicking from a hard drive warns of failure, so back up at once. On networks, a 169.254 address points to a DHCP problem, and being able to reach an IP address but not a name points to DNS."
+      ],
+      "concepts": [
+        {
+          "term": "Identify the problem",
+          "definition": "The first step: gather information from the user, find out what changed, duplicate the problem if you can, and back up data before making changes.",
+          "tip": "Ask what changed first."
+        },
+        {
+          "term": "Theory of probable cause",
+          "definition": "Your best guess about the cause. Start with the simple, obvious causes first, such as power and cables.",
+          "tip": "Question the obvious."
+        },
+        {
+          "term": "Verify and document",
+          "definition": "After the fix, confirm the whole system works and add preventive steps, then record the problem, the actions taken, and the result.",
+          "tip": "Last step = document."
+        },
+        {
+          "term": "CMOS battery",
+          "definition": "A small coin battery on the motherboard that keeps the firmware clock and settings when the PC is unplugged.",
+          "tip": "Wrong date after every power-off = replace the CMOS battery."
+        },
+        {
+          "term": "Overheating",
+          "definition": "Dust, failed fans, or dried thermal paste can make a PC shut off or slow down under load.",
+          "tip": "Shuts off after a while = check fans and dust."
+        },
+        {
+          "term": "Loopback plug",
+          "definition": "A connector that sends a port's output straight back into its input to test whether the network port works.",
+          "tip": "Test the NIC port itself = loopback plug."
+        }
+      ],
+      "points": [
+        "If a theory is not confirmed, form a new theory or escalate.",
+        "Faded laser prints usually mean low toner; smeared toner points to the fuser.",
+        "Limited or no connectivity with a 169.254 address: check the DHCP server and the cable or Wi-Fi link.",
+        "A degraded RAID 5 still works after one failed drive; replace the failed drive soon so the array can rebuild.",
+        "No display but the PC powers on: check the monitor input, cable, and that the cable is in the graphics card port."
+      ],
+      "verifiedAt": "2026-10-28"
+    },
+    "operating-systems": {
+      "summary": [
+        "This chapter is the largest part of Core 2 along with security. It covers Windows editions and installs, the built-in Windows tools, command-line commands, file systems, and the basics of macOS and Linux. Expect questions that ask which tool or command fits a task.",
+        "Windows Home and Pro differ in business features. Pro can join a domain, use Group Policy Editor, host Remote Desktop sessions, and use BitLocker drive encryption, while Home cannot. Useful tools include Task Manager for running apps and startup items, Event Viewer for logs, Device Manager for drivers, Disk Management for partitions, and Services for background services.",
+        "At the command line, ipconfig shows network settings, ping tests reachability, tracert shows the path to a host, chkdsk checks a disk, sfc /scannow repairs system files, and gpupdate /force applies Group Policy right away. NTFS is the main Windows file system and supports permissions and large files. FAT32 is widely compatible but cannot hold one file over 4 GB, and exFAT is a good choice for large files on flash drives.",
+        "On macOS, Time Machine makes backups, FileVault encrypts the disk, and Keychain stores passwords. On Linux, ls lists files, cd changes folders, chmod changes permissions, sudo runs a command with administrator rights, and apt or dnf installs software, depending on the distribution."
+      ],
+      "concepts": [
+        {
+          "term": "Home vs. Pro",
+          "definition": "Windows Pro adds business features that Home lacks, such as joining a domain, BitLocker, Group Policy Editor, and hosting Remote Desktop.",
+          "tip": "Needs a domain or BitLocker = Pro or higher."
+        },
+        {
+          "term": "Event Viewer",
+          "definition": "Windows tool that shows system, application, and security logs with errors and warnings.",
+          "tip": "What happened and when = Event Viewer."
+        },
+        {
+          "term": "sfc /scannow",
+          "definition": "System File Checker scans protected Windows system files and replaces damaged ones.",
+          "tip": "Corrupt system files = sfc."
+        },
+        {
+          "term": "NTFS, FAT32, exFAT",
+          "definition": "NTFS: Windows default with permissions and large files. FAT32: very compatible but 4 GB maximum file size. exFAT: for flash drives with large files.",
+          "tip": "Big file will not copy to a USB drive = FAT32 limit."
+        },
+        {
+          "term": "chmod and sudo",
+          "definition": "On Linux and macOS, chmod changes file permissions and sudo runs a single command with administrator (root) rights.",
+          "tip": "Permission denied for an admin task = sudo."
+        },
+        {
+          "term": "Time Machine",
+          "definition": "The built-in macOS backup tool that keeps hourly, daily, and weekly copies on an external drive.",
+          "tip": "Mac backup = Time Machine."
+        }
+      ],
+      "points": [
+        "ipconfig /release and /renew get a new DHCP address; ipconfig /flushdns clears the DNS cache.",
+        "Windows 11 requires TPM 2.0 and a UEFI system that supports Secure Boot.",
+        "Use Task Manager's Startup tab to stop apps from launching at sign-in.",
+        "gpupdate /force applies Group Policy changes now; gpresult shows which policies apply.",
+        "Disk Management creates, deletes, and formats partitions in Windows."
+      ],
+      "verifiedAt": "2026-10-28"
+    },
+    "security": {
+      "summary": [
+        "This chapter covers how to keep people, devices, and data safe. It ranges from locks and badges to passwords, multifactor authentication, Wi-Fi security, malware, and social engineering. It is as large as the operating systems chapter on Core 2.",
+        "Strong security starts with who you are. Multifactor authentication (MFA) asks for two or more different kinds of proof: something you know (a password), something you have (a phone or token), or something you are (a fingerprint). The principle of least privilege means each user gets only the access needed for the job. For Wi-Fi, use WPA3 or WPA2 with AES, change default router passwords, and keep firmware up to date.",
+        "Malware comes in many forms. Ransomware encrypts files and demands payment, a trojan hides inside software that looks useful, a worm spreads by itself across networks, a keylogger records keystrokes, and a rootkit hides deep in the system. Social engineering tricks people instead of machines: phishing by email, vishing by phone, smishing by text, and tailgating by following someone through a secured door.",
+        "When removing malware, first confirm the symptoms, then quarantine the infected system from the network. In Windows, turn off System Restore so old restore points do not bring the infection back, then clean the system with updated tools, schedule scans and updates, turn System Restore back on with a fresh restore point, and teach the user how to avoid the problem."
+      ],
+      "concepts": [
+        {
+          "term": "MFA",
+          "definition": "Multifactor authentication: proof from two or more different factor types, such as a password plus a code from a phone app.",
+          "tip": "Two passwords are still one factor."
+        },
+        {
+          "term": "Least privilege",
+          "definition": "Give each user or program only the permissions it needs to do its job, and no more.",
+          "tip": "Users do daily work as standard users, not administrators."
+        },
+        {
+          "term": "Ransomware",
+          "definition": "Malware that encrypts a victim's files and demands payment for the key.",
+          "tip": "Good offline backups are the best recovery plan."
+        },
+        {
+          "term": "Worm vs. virus",
+          "definition": "A virus attaches to files and spreads when they are run or shared. A worm spreads by itself across a network without user action.",
+          "tip": "Spreads alone = worm."
+        },
+        {
+          "term": "Phishing family",
+          "definition": "Phishing uses fake emails, spear phishing targets one person, whaling targets executives, vishing uses voice calls, and smishing uses text messages.",
+          "tip": "V = voice, S = SMS."
+        },
+        {
+          "term": "Tailgating",
+          "definition": "An unauthorized person follows an authorized person through a secure door.",
+          "tip": "Fix with an access control vestibule and staff training."
+        }
+      ],
+      "points": [
+        "Use WPA3 when every device supports it; avoid WEP and WPA with TKIP.",
+        "Disable System Restore during Windows malware removal so infected restore points are not reused.",
+        "Change default administrator usernames and passwords on routers and other devices.",
+        "Lock your screen (Windows key + L) whenever you leave your desk.",
+        "An evil twin is a fake Wi-Fi access point that copies a real network's name."
+      ],
+      "verifiedAt": "2026-10-28"
+    },
+    "software-troubleshooting": {
+      "summary": [
+        "This chapter is about fixing problems with Windows, apps, and mobile software, and spotting signs of malware. Questions describe a symptom, such as a slow PC or a crashing app, and ask what to check or which tool to use first.",
+        "For Windows problems, start with the least disruptive fix. Restart the computer or the app, check for updates, and look in Event Viewer for errors. Safe Mode starts Windows with only basic drivers and services, which helps show whether a driver or startup program is the cause. System Restore rolls system files and settings back to an earlier point without touching personal files. If one user's settings are damaged, rebuilding the user profile can help.",
+        "Malware often shows itself through browser redirects, pop-ups, a changed home page, missing files, strange accounts, or a security app that has been turned off. Certificate warnings on many trusted sites can mean the computer's date and time are wrong. On phones, apps that crash or drain the battery can often be fixed by updating, clearing the app's cache, or reinstalling the app."
+      ],
+      "concepts": [
+        {
+          "term": "Safe Mode",
+          "definition": "A startup mode that loads only basic drivers and services. If the problem disappears there, a driver or startup item is likely the cause.",
+          "tip": "Test without extras = Safe Mode."
+        },
+        {
+          "term": "System Restore",
+          "definition": "Rolls Windows system files, drivers, and settings back to a saved restore point. It does not delete personal documents.",
+          "tip": "Bad driver install yesterday = restore to before it."
+        },
+        {
+          "term": "Blue screen (BSOD)",
+          "definition": "A stop error when Windows hits a serious problem, often caused by a bad driver, failing hardware, or damaged system files.",
+          "tip": "Note the stop code and check recent driver changes."
+        },
+        {
+          "term": "Browser redirect",
+          "definition": "Searches or pages are sent to sites the user did not choose, a common sign of adware or other malware.",
+          "tip": "Unexpected sites plus pop-ups = scan for malware."
+        },
+        {
+          "term": "Rebuild profile",
+          "definition": "Create a fresh user profile when one user's settings are corrupted while other users work fine.",
+          "tip": "Only one user has the problem = suspect the profile."
+        }
+      ],
+      "points": [
+        "A slow PC: check Task Manager for programs using high CPU, memory, or disk.",
+        "Certificate errors on many sites: check the system date and time first.",
+        "If an update causes problems, you can uninstall that update or roll back the driver.",
+        "On mobile devices, force-stop and update a crashing app before resetting the whole device."
+      ],
+      "verifiedAt": "2026-10-28"
+    },
+    "operational-procedures": {
+      "summary": [
+        "This chapter covers how a professional technician works: tracking tickets, writing documentation, managing changes, making backups, working safely, protecting the environment and private data, and talking with customers. Many questions ask for the best or most professional action.",
+        "Good records make support easier. Tickets record the user, the problem, the steps taken, and the result. Asset tags and an inventory track equipment. Changes to systems follow change management: write a request with the purpose and scope, assess the risk, plan a rollback, get approval, and test before going live.",
+        "Backups protect data. A full backup copies everything. An incremental backup copies only what changed since the last backup of any kind, and a differential copies everything that changed since the last full backup. A common rule is 3-2-1: three copies of data, on two kinds of media, with one copy off-site. Test restores, because an untested backup may not work.",
+        "Safety comes first. Unplug equipment before opening it, use an ESD wrist strap to protect parts from static, and lift with your legs. Use a safety data sheet (SDS) to learn how to handle chemicals like toner. Protect private data, respect software licenses, explain things without jargon, and do not paste confidential company data into public AI tools."
+      ],
+      "concepts": [
+        {
+          "term": "Change management",
+          "definition": "A formal process for making changes: request, purpose, scope, risk analysis, rollback plan, approval, testing, and user acceptance.",
+          "tip": "No rollback plan = not ready."
+        },
+        {
+          "term": "Incremental vs. differential",
+          "definition": "Incremental copies changes since the last backup of any type. Differential copies all changes since the last full backup.",
+          "tip": "Restore incremental: full + every incremental. Differential: full + last differential."
+        },
+        {
+          "term": "3-2-1 backup rule",
+          "definition": "Keep three copies of data on two different types of media, with one copy off-site.",
+          "tip": "One copy must be somewhere else."
+        },
+        {
+          "term": "ESD",
+          "definition": "Electrostatic discharge: static electricity that can damage computer parts. Use a wrist strap and antistatic mat.",
+          "tip": "Strap on before you touch parts."
+        },
+        {
+          "term": "SDS",
+          "definition": "Safety data sheet: explains how to handle, store, and dispose of a product and what to do after exposure.",
+          "tip": "Toner spill? Read the SDS."
+        },
+        {
+          "term": "Script file types",
+          "definition": "Common script types: .bat (Windows batch), .ps1 (PowerShell), .vbs (VBScript), .sh (Linux shell), .py (Python), .js (JavaScript).",
+          "tip": "ps1 = PowerShell."
+        }
+      ],
+      "points": [
+        "Do not open a power supply; its capacitors can hold a dangerous charge even when unplugged.",
+        "Use a Class C fire extinguisher (or a multipurpose one rated for C) on electrical fires; never water.",
+        "A UPS keeps equipment running briefly during a power outage; a surge suppressor only blocks spikes.",
+        "Recycle batteries and toner cartridges according to local rules.",
+        "Do not put customer or company confidential data into public AI tools, and check AI answers before using them."
+      ],
+      "compare": {
+        "title": "Backup types",
+        "columns": [
+          "Type",
+          "What it copies",
+          "What a restore needs"
+        ],
+        "rows": [
+          [
+            "Full",
+            "Everything selected",
+            "The full backup only"
+          ],
+          [
+            "Incremental",
+            "Changes since the last backup of any type",
+            "Last full + every incremental since"
+          ],
+          [
+            "Differential",
+            "Changes since the last full backup",
+            "Last full + the latest differential"
+          ]
+        ]
+      },
+      "verifiedAt": "2026-10-28"
+    }
+  }
+}

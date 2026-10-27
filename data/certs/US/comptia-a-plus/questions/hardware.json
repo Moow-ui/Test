@@ -1,0 +1,591 @@
+[
+  {
+    "id": "comptia-a-plus-hardware-0001",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-1",
+    "chapterId": "hardware",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "The figure shows how data and parity blocks are laid out on a disk array. Which RAID level does it show?",
+    "choices": [
+      "RAID 0",
+      "RAID 6",
+      "RAID 10",
+      "RAID 5"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Striping + one parity block per stripe = RAID 5",
+    "explanation": "Look at each row (stripe). Each one has data blocks spread across the disks plus exactly one parity block, and the parity block moves to a different disk in each row. Striping with distributed parity is RAID 5. If one disk fails, the missing data can be rebuilt from the other blocks and the parity.\n\n**Wrong choices**\n- RAID 0: RAID 0 stripes data with no parity at all. The figure has parity blocks.\n- RAID 6: RAID 6 keeps two parity blocks in every stripe. The figure has only one parity block per row.\n- RAID 10: RAID 10 keeps identical copies of data on mirrored pairs. The figure has no duplicate blocks, only one parity block per row.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "RAID",
+      "storage"
+    ],
+    "image": "aplus-raid-array-four-disks.svg",
+    "imageAlt": "Four disks side by side, each labeled 2 TB. Each disk holds four blocks in rows. Row A: A1, A2, A3, Ap. Row B: B1, B2, Bp, B3. Row C: C1, Cp, C2, C3. Row D: Dp, D1, D2, D3. Blocks ending in p are shaded parity blocks; the others are data blocks.",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-hardware-0002",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-1",
+    "chapterId": "hardware",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What is the main advantage of a solid-state drive (SSD) over a traditional hard disk drive (HDD)?",
+    "choices": [
+      "It is much faster because it has no moving parts",
+      "It keeps data only while the power is on",
+      "It needs to be defragmented every week",
+      "It always costs less per gigabyte"
+    ],
+    "answer": 1,
+    "oneLineConcept": "SSD = no moving parts, much faster",
+    "explanation": "An SSD stores data on flash memory chips instead of spinning platters and a moving read/write head. With no moving parts, it reads and writes much faster, uses less power, and handles bumps better than an HDD.\n\n**Wrong choices**\n- It keeps data only while the power is on: That describes RAM. Both SSDs and HDDs keep data when the power is off.\n- It needs to be defragmented every week: SSDs do not need regular defragmenting. Their speed does not depend on where data sits.\n- It always costs less per gigabyte: SSDs usually cost more per gigabyte than HDDs, especially at large sizes.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "SSD",
+      "HDD",
+      "storage"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-hardware-0003",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-1",
+    "chapterId": "hardware",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which computer component holds the data that programs are working on right now and loses it when the power is turned off?",
+    "choices": [
+      "Firmware (BIOS/UEFI) chip",
+      "RAM",
+      "Hard disk drive",
+      "SSD"
+    ],
+    "answer": 2,
+    "oneLineConcept": "RAM is fast, temporary (volatile) memory",
+    "explanation": "RAM (random access memory) is the computer's short-term working space. It is very fast, but it is volatile, which means it is cleared when the power goes off. Files that must be kept are saved to storage such as an SSD or HDD.\n\n**Wrong choices**\n- Firmware (BIOS/UEFI) chip: The firmware chip keeps its contents without power so the computer can start.\n- Hard disk drive: A hard disk drive stores data long term on spinning platters and keeps it without power.\n- SSD: An SSD stores data long term and keeps it when the power is off.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "RAM",
+      "memory"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-hardware-0004",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-1",
+    "chapterId": "hardware",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Pages from a laser printer come out with toner that smears or rubs off when touched. Which part is most likely failing?",
+    "choices": [
+      "Paper pickup roller",
+      "Imaging drum",
+      "Fuser",
+      "Toner cartridge low on toner"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Toner rubs off = fuser not bonding it",
+    "explanation": "In a laser printer, the fuser uses heat and pressure to melt the toner and bond it to the paper. If the fuser is failing or not hot enough, the toner sits loose on the page and smears or rubs off.\n\n**Wrong choices**\n- Paper pickup roller: A worn pickup roller causes paper jams or failed feeding, not smeared toner.\n- Imaging drum: A damaged drum usually causes marks or lines that repeat down the page, not toner that rubs off.\n- Toner cartridge low on toner: Low toner makes prints faded or light. The toner that is printed still sticks to the page.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "printers",
+      "laser printer",
+      "fuser"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-hardware-0005",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-1",
+    "chapterId": "hardware",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A technician needs one cable to send digital video and audio from a PC to a TV. Which connector should the technician use?",
+    "choices": [
+      "VGA",
+      "HDMI",
+      "SATA",
+      "RJ45"
+    ],
+    "answer": 2,
+    "oneLineConcept": "HDMI carries digital video and audio",
+    "explanation": "HDMI carries digital video and audio on one cable, which is why it is common on TVs, monitors, and PCs. VGA is an older analog video-only connector.\n\n**Wrong choices**\n- VGA: VGA carries analog video only. It does not carry audio.\n- SATA: SATA connects storage drives inside a computer, not displays.\n- RJ45: RJ45 is the connector on network cables. It does not carry video to a TV.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "cables",
+      "HDMI",
+      "video"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-hardware-0006",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-1",
+    "chapterId": "hardware",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which motherboard chip securely stores encryption keys, is used by BitLocker, and is required in version 2.0 for Windows 11?",
+    "choices": [
+      "GPU",
+      "NVMe drive",
+      "CMOS battery",
+      "TPM"
+    ],
+    "answer": 4,
+    "oneLineConcept": "TPM stores encryption keys; Windows 11 needs TPM 2.0",
+    "explanation": "A TPM (Trusted Platform Module) is a security chip on or built into the motherboard. It stores encryption keys safely and checks that the startup process has not been changed. BitLocker uses it, and Windows 11 requires TPM 2.0.\n\n**Wrong choices**\n- GPU: The GPU draws graphics on the screen. It does not hold encryption keys.\n- NVMe drive: An NVMe drive stores files. The keys that protect an encrypted drive are kept in the TPM, not on the drive itself.\n- CMOS battery: The CMOS battery keeps the clock and firmware settings when the PC is unplugged. It does not store encryption keys.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "TPM",
+      "firmware",
+      "security hardware"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-hardware-0007",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-1",
+    "chapterId": "hardware",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A small business has two drives in a server and wants an exact copy of all data on the second drive in case the first one fails. Which RAID level should be used?",
+    "choices": [
+      "RAID 5",
+      "RAID 1",
+      "RAID 0",
+      "RAID 10"
+    ],
+    "answer": 2,
+    "oneLineConcept": "RAID 1 = mirroring on two drives",
+    "explanation": "RAID 1 (mirroring) writes the same data to two drives at the same time. If one drive fails, the other still has everything. It needs only two drives, and the usable space equals one drive.\n\n**Wrong choices**\n- RAID 5: RAID 5 also protects data, but it needs at least three drives.\n- RAID 0: RAID 0 splits data across drives for speed and keeps no copy. If one drive fails, all data is lost.\n- RAID 10: RAID 10 needs at least four drives.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "RAID",
+      "mirroring"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-hardware-0008",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-1",
+    "chapterId": "hardware",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "The figure shows a disk array. Each disk is 2 TB. How much usable storage space does this array provide?",
+    "choices": [
+      "4 TB",
+      "2 TB",
+      "6 TB",
+      "8 TB"
+    ],
+    "answer": 3,
+    "oneLineConcept": "RAID 5 usable space = (n - 1) x disk size",
+    "explanation": "In each row, three blocks hold data and one holds parity. Parity takes up the space of one whole disk.\n1. Number of disks: 4\n2. Disks' worth of space used for parity: 1\n3. Usable space = (4 - 1) x 2 TB = 6 TB\nCheck: 8 TB total - 2 TB for parity = 6 TB.\n\n**Wrong choices**\n- 4 TB: 4 TB would be half the total, which is how mirroring works. This array uses parity, not mirroring.\n- 2 TB: 2 TB is the size of one disk. The array stores data on more than one disk.\n- 8 TB: 8 TB is the total raw size of all four disks. Part of the space holds parity, so it cannot all be used for data.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "RAID",
+      "storage capacity"
+    ],
+    "image": "aplus-raid-array-four-disks.svg",
+    "imageAlt": "Four disks side by side, each labeled 2 TB. Each disk holds four blocks in rows. Row A: A1, A2, A3, Ap. Row B: B1, B2, Bp, B3. Row C: C1, Cp, C2, C3. Row D: Dp, D1, D2, D3. Blocks ending in p are shaded parity blocks; the others are data blocks.",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-hardware-0009",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-1",
+    "chapterId": "hardware",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A technician installed a new CPU cooler. Now the CPU overheats within minutes. The fan is spinning. What did the technician most likely forget?",
+    "choices": [
+      "Applying thermal paste between the CPU and the cooler",
+      "Updating the chipset driver",
+      "Installing a higher-wattage power supply",
+      "Installing more RAM"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Thermal paste moves heat from CPU to cooler",
+    "explanation": "Thermal paste fills the tiny gaps between the CPU and the cooler's base so heat can flow into the heatsink. Without it, the air gaps trap heat and the CPU overheats even though the fan is spinning.\n\n**Wrong choices**\n- Updating the chipset driver: A chipset driver does not move heat away from the CPU. The overheating started right after the cooler was installed.\n- Installing a higher-wattage power supply: A bigger power supply does not help the cooler carry heat away from the CPU.\n- Installing more RAM: Adding memory does not cool the CPU.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "CPU",
+      "cooling",
+      "thermal paste"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-hardware-0010",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-1",
+    "chapterId": "hardware",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A technician is installing two identical DDR4 memory modules in a motherboard with four memory slots. How should the technician install them to use dual-channel mode?",
+    "choices": [
+      "One module now, and the second after the first one is tested for a month",
+      "In the first slot only, one stacked behind the other",
+      "In any two slots, because the operating system turns on dual channel",
+      "In the paired slots that the motherboard manual lists for dual channel"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Dual channel needs modules in the paired slots",
+    "explanation": "Dual-channel mode lets the memory controller use two modules at the same time for more speed. It works only when matching modules are placed in the correct pair of slots. Slot pairs differ between boards, so check the motherboard manual. Many boards mark the pairs with colors.\n\n**Wrong choices**\n- One module now, and the second after the first one is tested for a month: There is no reason to wait. Both modules should go in together in the correct paired slots.\n- In the first slot only, one stacked behind the other: Each slot holds only one module. Stacking modules is not possible.\n- In any two slots, because the operating system turns on dual channel: Dual channel depends on which slots the modules are in. The operating system does not set it up.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "RAM",
+      "dual channel",
+      "motherboard"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-hardware-0011",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-1",
+    "chapterId": "hardware",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A user wants the fastest possible storage for a new M.2 slot that supports both kinds of M.2 drives. Which type of drive should the technician choose?",
+    "choices": [
+      "A 7,200 RPM hard disk drive",
+      "An NVMe SSD",
+      "A SATA M.2 SSD",
+      "A USB 2.0 flash drive"
+    ],
+    "answer": 2,
+    "oneLineConcept": "NVMe uses PCIe and is faster than SATA",
+    "explanation": "NVMe SSDs talk to the computer over the PCIe bus, which is much faster than SATA. Many M.2 slots support both SATA and NVMe drives, and NVMe is the faster choice.\n\n**Wrong choices**\n- A 7,200 RPM hard disk drive: A hard disk drive uses spinning platters, is much slower than any SSD, and does not fit an M.2 slot.\n- A SATA M.2 SSD: A SATA SSD fits the M.2 slot, but it is limited by the slower SATA interface.\n- A USB 2.0 flash drive: USB 2.0 is very slow and does not plug into an M.2 slot.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "NVMe",
+      "M.2",
+      "SSD"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-hardware-0012",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-1",
+    "chapterId": "hardware",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A technician adds up the power needs of all the parts in a new desktop and gets about 450 watts. Which power supply is the best choice?",
+    "choices": [
+      "A 400 W power supply",
+      "A 450 W power supply",
+      "A 650 W power supply",
+      "A 300 W power supply"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Choose a power supply above total load, with headroom",
+    "explanation": "The power supply must provide more power than the parts use.\n1. The parts need about 450 W.\n2. Only one choice is higher than 450 W: 650 W.\n3. The extra room handles short power spikes and future upgrades.\n\n**Wrong choices**\n- A 400 W power supply: 400 W is less than the parts need, so the system may shut down or become unstable.\n- A 450 W power supply: 450 W matches the total exactly, leaving no extra room for power spikes or future upgrades.\n- A 300 W power supply: 300 W is far below what the parts need.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "power supply",
+      "wattage"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-hardware-0013",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-1",
+    "chapterId": "hardware",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "All of the following statements about RAID 0 are true EXCEPT:",
+    "choices": [
+      "It keeps the data safe if one drive fails",
+      "Its usable space equals the total of all drives",
+      "It splits data across the drives to improve speed",
+      "It needs at least two drives"
+    ],
+    "answer": 1,
+    "oneLineConcept": "RAID 0 = speed with no fault tolerance",
+    "explanation": "RAID 0 (striping) splits data across two or more drives so they can read and write together. It keeps no copies and no parity, so if any one drive fails, all the data in the array is lost. That is why RAID 0 has no fault tolerance.\n\n**Wrong choices**\n- Its usable space equals the total of all drives: This is true. RAID 0 uses no space for copies or parity.\n- It splits data across the drives to improve speed: This is true. Striping lets the drives work at the same time.\n- It needs at least two drives: This is true. RAID 0 stripes data across two or more drives.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "RAID",
+      "RAID 0"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "comptia-a-plus-hardware-0014",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-1",
+    "chapterId": "hardware",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "The figure shows a disk array. Each disk is 4 TB. How much usable storage space does this array provide?",
+    "choices": [
+      "8 TB",
+      "12 TB",
+      "16 TB",
+      "4 TB"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Mirrored pairs, striped (RAID 10) = half the total",
+    "explanation": "Each block appears on both disks of a pair, so each pair holds one disk's worth of data. The data is then spread across the two pairs.\n1. Each pair: 4 TB usable (one copy on each disk)\n2. Two pairs: 2 x 4 TB = 8 TB\nCheck: total raw space is 4 x 4 TB = 16 TB, and half of that is 8 TB.\n\n**Wrong choices**\n- 12 TB: 12 TB would be the answer for parity across four disks. This array stores two full copies of each block instead.\n- 16 TB: 16 TB is the total raw size of all four disks. Half of it holds copies.\n- 4 TB: 4 TB is the size of one disk. Data is spread across both pairs, so the array holds more than one disk's worth.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "RAID",
+      "storage capacity"
+    ],
+    "image": "aplus-raid-array-two-pairs.svg",
+    "imageAlt": "Four disks, each labeled 4 TB. Disks 1 and 2 are bracketed as Pair 1 and both hold blocks A1, A3, A5. Disks 3 and 4 are bracketed as Pair 2 and both hold blocks A2, A4, A6. A note says A1 to A6 are data blocks of one file, in order.",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-hardware-0015",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-1",
+    "chapterId": "hardware",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A server needs a disk array that keeps working if any two drives fail at the same time. Which RAID level meets this need?",
+    "choices": [
+      "RAID 5",
+      "RAID 1 with two drives",
+      "RAID 10",
+      "RAID 6"
+    ],
+    "answer": 4,
+    "oneLineConcept": "RAID 6 = double parity, survives any two failures",
+    "explanation": "RAID 6 stores two separate parity blocks in each stripe. It needs at least four drives and gives (n - 2) drives of usable space. Because of the double parity, it can rebuild the data after any two drives fail.\n\n**Wrong choices**\n- RAID 5: RAID 5 has one parity block per stripe and survives only one drive failure.\n- RAID 1 with two drives: A two-drive mirror is lost if both drives fail.\n- RAID 10: RAID 10 survives one failure in each mirrored pair. If both drives in the same pair fail, the data is lost, so it does not cover any two drives.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "RAID",
+      "RAID 6",
+      "fault tolerance"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-hardware-0016",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-1",
+    "chapterId": "hardware",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A small business owner says, \"Our server uses RAID 1, so we do not need backups.\" What is the best response?",
+    "choices": [
+      "RAID 1 is a backup only if the drives are the same brand",
+      "Backups are only needed with RAID 0",
+      "RAID 1 is a full backup because every file is on two drives",
+      "RAID protects against a drive failure, but not against deleted files, ransomware, or damage that is copied to both drives"
+    ],
+    "answer": 4,
+    "oneLineConcept": "RAID is not a backup",
+    "explanation": "RAID keeps a server running when a drive fails. It does not keep older copies of data. If a user deletes a file, ransomware encrypts it, or a program corrupts it, the change is written to every drive in the array right away. Separate backups, ideally with one copy off-site, are still needed.\n\n**Wrong choices**\n- RAID 1 is a backup only if the drives are the same brand: The drive brand does not change what RAID does. It is still not a backup.\n- Backups are only needed with RAID 0: Every RAID level needs separate backups, because RAID does not protect against deletion or malware.\n- RAID 1 is a full backup because every file is on two drives: Both drives always hold the same data. If a file is deleted or encrypted on one, it is deleted or encrypted on both.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "RAID",
+      "backups"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  }
+]

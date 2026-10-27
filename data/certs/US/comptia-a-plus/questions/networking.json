@@ -1,0 +1,546 @@
+[
+  {
+    "id": "comptia-a-plus-networking-0001",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-1",
+    "chapterId": "networking",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which port does HTTPS use by default?",
+    "choices": [
+      "80",
+      "3389",
+      "22",
+      "443"
+    ],
+    "answer": 4,
+    "oneLineConcept": "HTTPS = TCP port 443",
+    "explanation": "HTTPS is web traffic protected by encryption, and it uses port 443 by default. Plain HTTP uses port 80. Remember the pair: 80 for HTTP, 443 for HTTPS.\n\n**Wrong choices**\n- 80: Port 80 is used by HTTP, the unencrypted version of web traffic.\n- 3389: Port 3389 is used by Remote Desktop Protocol (RDP).\n- 22: Port 22 is used by SSH for secure remote command-line access.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "ports",
+      "HTTPS",
+      "protocols"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-networking-0002",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-1",
+    "chapterId": "networking",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A technician needs a secure, encrypted command-line connection to manage a Linux server remotely. Which protocol should the technician use?",
+    "choices": [
+      "Telnet",
+      "FTP",
+      "SSH",
+      "RDP"
+    ],
+    "answer": 3,
+    "oneLineConcept": "SSH (port 22) = encrypted remote command line",
+    "explanation": "SSH (Secure Shell) uses port 22 and encrypts the whole session, including the login. It is the standard way to manage Linux servers and network devices from the command line.\n\n**Wrong choices**\n- Telnet: Telnet also gives remote command-line access, but it sends everything, including passwords, in plain text.\n- FTP: FTP transfers files. It is not used for a remote command line, and basic FTP is not encrypted.\n- RDP: RDP gives a graphical remote desktop, mainly for Windows, not a command-line session to a Linux server.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "SSH",
+      "remote access",
+      "ports"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-networking-0003",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-1",
+    "chapterId": "networking",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A user's Windows PC cannot reach the internet. The technician sees that its IP address is 169.254.10.5. What does this address mean?",
+    "choices": [
+      "The DNS server is not answering",
+      "The PC has a correctly set static IP address",
+      "The PC has a public internet address from the ISP",
+      "The PC could not get an address from a DHCP server and gave itself one"
+    ],
+    "answer": 4,
+    "oneLineConcept": "169.254.x.x (APIPA) = DHCP failed",
+    "explanation": "When a Windows PC is set to get an address automatically but no DHCP server answers, it assigns itself an APIPA address in the 169.254.x.x range. With this address it can only talk to nearby devices on the same network, so it cannot reach the internet. Check the cable or Wi-Fi link and the DHCP server.\n\n**Wrong choices**\n- The DNS server is not answering: A DNS problem stops names from resolving, but it does not cause the PC to give itself a 169.254 address.\n- The PC has a correctly set static IP address: A 169.254 address is assigned automatically when DHCP fails. It is not a normal static address.\n- The PC has a public internet address from the ISP: 169.254.x.x is a link-local (APIPA) range. It is never a public internet address.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "APIPA",
+      "DHCP",
+      "IP addressing"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-networking-0004",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-1",
+    "chapterId": "networking",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which network device connects a home or office network to the internet service provider's network and forwards traffic between the two networks?",
+    "choices": [
+      "Wireless access point",
+      "Switch",
+      "Patch panel",
+      "Router"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Router = forwards traffic between networks",
+    "explanation": "A router connects different networks and decides where to send traffic based on IP addresses. In a home or small office, it sits between the local network and the internet provider's network.\n\n**Wrong choices**\n- Wireless access point: An access point adds Wi-Fi to an existing network. It does not route between networks.\n- Switch: A switch connects devices within the same network. It does not route traffic between different networks.\n- Patch panel: A patch panel is a passive connection point for cables. It does not forward traffic on its own.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "router",
+      "network devices"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-networking-0005",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-1",
+    "chapterId": "networking",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which network service translates a name such as www.example.com into an IP address?",
+    "choices": [
+      "SMTP",
+      "DHCP",
+      "DNS",
+      "LDAP"
+    ],
+    "answer": 3,
+    "oneLineConcept": "DNS turns names into IP addresses",
+    "explanation": "DNS (Domain Name System) works like a phone book for networks. It turns names that people remember into the IP addresses computers use. DNS uses port 53.\n\n**Wrong choices**\n- SMTP: SMTP sends email. It does not translate names into addresses.\n- DHCP: DHCP hands out IP addresses to devices. It does not look up names.\n- LDAP: LDAP is used to look up users and objects in a directory, not to turn web names into IP addresses.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "DNS",
+      "network services"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-networking-0006",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-1",
+    "chapterId": "networking",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A technician needs to find which cable at a patch panel leads to a certain wall jack in an office. Which tool should the technician use?",
+    "choices": [
+      "Crimper",
+      "Punchdown tool",
+      "Loopback plug",
+      "Toner probe"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Toner probe traces which cable is which",
+    "explanation": "A toner probe has two parts. The tone generator connects to the cable at the wall jack and sends a signal down it. The technician then moves the probe across the patch panel until it picks up the tone, which shows the matching cable.\n\n**Wrong choices**\n- Crimper: A crimper attaches RJ45 plugs to the ends of network cables. It does not trace cables.\n- Punchdown tool: A punchdown tool presses wires into a patch panel or keystone jack. It does not find which cable is which.\n- Loopback plug: A loopback plug tests whether a network port can send and receive. It does not trace a cable through a wall.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "toner probe",
+      "network tools",
+      "cabling"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-networking-0007",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-1",
+    "chapterId": "networking",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "An email program sends outgoing messages to the mail server. Which protocol does it use to send them?",
+    "choices": [
+      "SNMP",
+      "POP3",
+      "IMAP",
+      "SMTP"
+    ],
+    "answer": 4,
+    "oneLineConcept": "SMTP sends mail; POP3 and IMAP receive it",
+    "explanation": "SMTP (Simple Mail Transfer Protocol), port 25, sends email from a client to a server and between mail servers. To receive mail, clients use POP3 (port 110) or IMAP (port 143).\n\n**Wrong choices**\n- SNMP: SNMP is used to monitor network devices. It has nothing to do with sending email.\n- POP3: POP3 is used to download email from the server to the device, not to send mail.\n- IMAP: IMAP is used to read and manage email that stays on the server, not to send mail.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "SMTP",
+      "email",
+      "ports"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-networking-0008",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-1",
+    "chapterId": "networking",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A technician is setting up several 2.4 GHz wireless access points in one building and wants to avoid channel overlap. Which set of channels should be used?",
+    "choices": [
+      "6, 7, and 8",
+      "1, 6, and 11",
+      "1, 2, and 3",
+      "2, 4, and 6"
+    ],
+    "answer": 2,
+    "oneLineConcept": "2.4 GHz non-overlapping channels: 1, 6, 11",
+    "explanation": "Channels in the 2.4 GHz band are close together and each one is wide enough to spill into its neighbors. Channels 1, 6, and 11 are far enough apart that they do not overlap, so nearby access points on those channels interfere with each other less.\n\n**Wrong choices**\n- 6, 7, and 8: These channels are side by side and overlap almost completely.\n- 1, 2, and 3: These channels sit right next to each other and overlap heavily in the 2.4 GHz band.\n- 2, 4, and 6: These channels are only two apart, so they still overlap with each other.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "Wi-Fi",
+      "2.4 GHz",
+      "channels"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-networking-0009",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-1",
+    "chapterId": "networking",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A firewall must allow users to browse both secure and non-secure websites. Which two ports must be allowed?",
+    "choices": [
+      "53 and 3389",
+      "21 and 22",
+      "25 and 110",
+      "80 and 443"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Web: HTTP 80 and HTTPS 443",
+    "explanation": "Non-secure websites use HTTP on port 80, and secure websites use HTTPS on port 443. Allowing both ports lets users open either kind of site.\n\n**Wrong choices**\n- 53 and 3389: Port 53 is DNS, which browsing needs but is not web traffic itself, and 3389 is Remote Desktop.\n- 21 and 22: Ports 21 and 22 are used by FTP and SSH, not web browsing.\n- 25 and 110: Ports 25 and 110 are used by SMTP and POP3 for email, not web browsing.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "ports",
+      "HTTP",
+      "HTTPS",
+      "firewall"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-networking-0010",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-1",
+    "chapterId": "networking",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which of the following is a private IPv4 address that can be used inside an office network?",
+    "choices": [
+      "172.32.1.1",
+      "11.0.0.5",
+      "192.169.1.1",
+      "172.20.5.10"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Private: 10.x, 172.16-31.x, 192.168.x",
+    "explanation": "There are three private IPv4 ranges: 10.0.0.0 to 10.255.255.255, 172.16.0.0 to 172.31.255.255, and 192.168.0.0 to 192.168.255.255. 172.20.5.10 falls inside the 172.16 to 172.31 range, so it is private.\n\n**Wrong choices**\n- 172.32.1.1: The private 172 range is only 172.16.0.0 to 172.31.255.255. 172.32 is just outside it, so it is a public address.\n- 11.0.0.5: The private range is 10.x.x.x. 11.x.x.x is a public range.\n- 192.169.1.1: The private range is 192.168.x.x. 192.169 is outside it and is public.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "IP addressing",
+      "private addresses",
+      "IPv4"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-networking-0011",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-1",
+    "chapterId": "networking",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which transport protocol sets up a connection, checks that data arrives, and resends lost pieces?",
+    "choices": [
+      "ARP",
+      "TCP",
+      "UDP",
+      "ICMP"
+    ],
+    "answer": 2,
+    "oneLineConcept": "TCP = reliable, connection-oriented",
+    "explanation": "TCP (Transmission Control Protocol) is connection-oriented. It sets up a session, numbers the data, confirms delivery, and resends anything that is lost. UDP skips these checks, so it is quicker and is used for things like streaming and DNS lookups.\n\n**Wrong choices**\n- ARP: ARP finds the MAC address that belongs to an IP address on the local network. It does not deliver data.\n- UDP: UDP sends data without setting up a connection or checking delivery. That makes it faster but less reliable.\n- ICMP: ICMP carries error and test messages such as ping. It does not deliver application data reliably.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "TCP",
+      "UDP",
+      "protocols"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-networking-0012",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-1",
+    "chapterId": "networking",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A small office wants to mount wireless access points on the ceiling where there are no power outlets. Each access point should get both power and network from one cable. What should the technician install?",
+    "choices": [
+      "A hub",
+      "A patch panel",
+      "A cable modem",
+      "A Power over Ethernet (PoE) switch"
+    ],
+    "answer": 4,
+    "oneLineConcept": "PoE sends power and data on one Ethernet cable",
+    "explanation": "Power over Ethernet (PoE) carries electrical power along with network data on a normal Ethernet cable. A PoE switch (or a PoE injector) can power devices like access points, phones, and cameras where there is no outlet.\n\n**Wrong choices**\n- A hub: A hub only repeats network traffic to every port. It does not send power over the cable.\n- A patch panel: A patch panel organizes cables but does not provide power or switching.\n- A cable modem: A cable modem connects to the internet provider's cable line. It does not power access points.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "PoE",
+      "switch",
+      "access point"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-networking-0013",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-1",
+    "chapterId": "networking",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A user can ping a web server by its IP address but cannot open it by its host name. What should the technician check first?",
+    "choices": [
+      "The network cable on the user's PC",
+      "The DHCP lease on the user's PC",
+      "The DNS server settings on the user's PC",
+      "The default gateway setting"
+    ],
+    "answer": 3,
+    "oneLineConcept": "IP works but name fails = DNS problem",
+    "explanation": "Here is how to narrow it down:\n1. The ping by IP address works, so the cable, IP address, and gateway are fine.\n2. Only the name fails, and turning a name into an address is the job of DNS.\n3. So the next thing to check is which DNS server the PC uses and whether it answers.\n\n**Wrong choices**\n- The network cable on the user's PC: The ping by IP proves the cable and network link are working.\n- The DHCP lease on the user's PC: The PC already has a working address, since the ping by IP succeeds. DHCP is not the issue.\n- The default gateway setting: The ping by IP address reached the server, so traffic is already leaving the local network. The gateway is working.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "DNS",
+      "troubleshooting",
+      "ping"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-networking-0014",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-1",
+    "chapterId": "networking",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Two office networks are separated by a firewall. Users on one network must open Windows file shares on a server in the other network. Which port must the firewall allow?",
+    "choices": [
+      "445",
+      "389",
+      "3389",
+      "143"
+    ],
+    "answer": 1,
+    "oneLineConcept": "SMB file sharing = port 445",
+    "explanation": "Windows file and printer sharing uses SMB (Server Message Block), which runs on TCP port 445. Without that port, users cannot reach shared folders on the other network.\n\n**Wrong choices**\n- 389: Port 389 is LDAP, which is used for directory lookups, not file sharing.\n- 3389: Port 3389 is Remote Desktop. It lets users control a desktop, not open file shares.\n- 143: Port 143 is IMAP for reading email, not for file shares.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "SMB",
+      "ports",
+      "file sharing"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "comptia-a-plus-networking-0015",
+    "certId": "comptia-a-plus",
+    "subjectId": "core-1",
+    "chapterId": "networking",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "All of the following protocols send data, including passwords, in plain text EXCEPT:",
+    "choices": [
+      "SSH",
+      "Telnet",
+      "HTTP",
+      "FTP"
+    ],
+    "answer": 1,
+    "oneLineConcept": "SSH encrypts; Telnet, HTTP, and FTP do not",
+    "explanation": "SSH encrypts the whole session, so someone capturing the traffic cannot read the password or commands. Telnet, HTTP, and basic FTP send data in plain text, which is why they should be replaced by secure choices such as SSH, HTTPS, and secure file transfer methods.\n\n**Wrong choices**\n- Telnet: Telnet sends everything in plain text, including login passwords.\n- HTTP: HTTP does not encrypt pages or form data, so passwords sent with it can be read.\n- FTP: Basic FTP sends usernames, passwords, and files without encryption.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "security",
+      "protocols",
+      "SSH"
+    ],
+    "levelLock": true
+  }
+]
