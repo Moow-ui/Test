@@ -1,0 +1,96 @@
+{
+  "slug": "korean-history-basic",
+  "date": "2026-10-28",
+  "round1": {
+    "chapters": {
+      "prehistory-ancient": {
+        "result": "PASS",
+        "notes": "All tools/periods, 범금 8조(3조항 전함, 살인-사형·상해-곡식 배상), 영고/동맹/무천, 민며느리제/책화, 천군·소도 correct. Advisory (not errors): summary1 '…문제가 자주 나옵니다' is an unquantified exam-frequency claim; summary3 '고조선이 무너진 뒤 … 부여·고구려… 자리 잡았고' is simplified (부여는 고조선 멸망 전부터 존재) — better '고조선 전후로'; '나라마다 … 제천 행사와 독특한 혼인 풍습' overgeneralizes (옥저는 기록된 제천 행사 없음)."
+      },
+      "three-kingdoms": {
+        "result": "PASS",
+        "notes": "근초고왕 4세기·평양성 공격, 광개토 왜 격퇴·능비(장수왕 건립), 장수왕 427 평양 천도·한성 함락, 법흥왕 율령·불교 공인, 진흥왕 한강·대가야·순수비·화랑도, 660/668/676, 신문왕, 발해 698 대조영·해동성국, 무령왕릉 벽돌무덤(남조 영향) all correct. Advisory: summary2 '법흥왕 때 불교를 받아들이고' — 전래는 눌지왕 때, 법흥왕은 '공인'이 정확 (points already say 공인). summary1 '가장 많이 나옵니다' is an unsupported frequency superlative — soften to '자주 나옵니다'."
+      },
+      "goryeo": {
+        "result": "PASS",
+        "notes": "918/936, 광종 노비안검법·과거제, 성종 시무 28조, 서희 1차 강동 6주, 강감찬 3차 귀주 대첩, 무신정변 12세기 후반, 강화 천도, 삼별초 강화→진도→제주, 공민왕 쌍성총관부·철령 이북·신돈, 팔만대장경 해인사 장경판전, 직지(현존 최고 금속활자본, 프랑스 국립도서관), 상감청자 all correct."
+      },
+      "joseon-early": {
+        "result": "PASS",
+        "notes": "위화도 회군→1392 건국→한양, 태종 호패법(16세 이상 남자)·신문고, 세종 업적, 경국대전 세조 착수·성종 완성, 임진왜란 1592·3대 대첩(한산도·진주 김시민·행주 권율), 광해군 중립 외교, 병자호란 1636 남한산성·삼전도 all correct. Advisory: summary1 '세종의 업적은 기본 시험에 가장 자주 나오는 내용 가운데 하나' is an unsupported frequency claim — soften. Summary lists 사림 as a core topic but chapter never covers it (not an error)."
+      },
+      "joseon-late": {
+        "result": "PASS",
+        "notes": "대동법(토지 기준, 광해군 경기도 처음), 영조 탕평비·균역법 2필→1필·청계천, 정조(영조 손자) 규장각·화성·신해통공, 상평통보, 정약용 목민심서·거중기, 박지원 열하일기, 김홍도 씨름·서당, 홍경래 1811(평안도 차별), 진주 1862 correct. Advisory: '사람이 곧 하늘'(인내천)은 최제우의 시천주에서 비롯되어 손병희(천도교) 때 정식화된 표현 — 기본 수준 교재 관행상 허용되나 '동학은 모든 사람이 평등하다는 생각(시천주·인내천)을 담았다'가 더 정확. '단골로 나옵니다' is a frequency claim — soften."
+      },
+      "modern-opening": {
+        "result": "PASS",
+        "notes": "흥선 대원군 경복궁 중건·서원 정리·병인(1866 프랑스)/신미(1871 미국)양요·척화비, 강화도 조약 1876(첫 근대·불평등 조약), 임오 1882, 갑신 1884 우정총국·3일·청군 개입, 동학 1894 전봉준·전주성·집강소·우금치, 갑오개혁 신분제 폐지, 1896 독립신문·독립 협회·독립문·만민 공동회, 1897 대한제국, 1905 을사늑약·통감부, 1907 국채 보상(대구), 1909 안중근 하얼빈·동양 평화론, 1910 all correct and order consistent."
+      },
+      "colonial": {
+        "result": "FAIL",
+        "notes": "ERROR 1 (chronology) summary4: '1930년대 후반부터 일제는 … 민족 말살 정책을 폈습니다. 이에 맞서 조선어 학회는 …, 신채호 같은 역사학자는 우리 역사를 지키려 애썼습니다.' — 신채호는 1928년 체포되어 1936년 2월 뤼순 감옥에서 사망했고 주요 사학 활동은 1900~1920년대이므로 1930년대 후반 민족 말살 정책에 '맞선' 인물이 아님. Fix: '이에 맞서 조선어 학회는 우리말 사전을 만들려 했습니다. 이보다 앞서 신채호·박은식 같은 역사학자는 민족주의 사학으로 우리 역사를 지키려 애썼습니다.' (또는 신채호를 빼고 '정인보 등은 조선학 운동을 펼쳤습니다'). ERROR 2 (minor) concept 한인 애국단: '윤봉길은 … 폭탄을 던져 일본군 장성들을 처단했습니다' — 사망한 장성은 시라카와 대장 1명(그 밖에 거류민단장 사망, 노무라·우에다 중장·시게미쓰 공사 등은 부상). Fix: '일본군 장성과 고관들을 죽이거나 크게 다치게 했습니다'. Rest correct: 헌병 경찰·토지 조사 사업, 3·1 운동→임시 정부(1919 상하이), 봉오동(홍범도)·청산리(김좌진·홍범도) 1920, 이봉창, 한국광복군 1940 충칭, 조선어 학회 맞춤법 통일안·큰사전, 6·10(1926), 광주 학생(1929, 3·1 이후 최대 규모 — 표준 교과서 서술)."
+      },
+      "contemporary": {
+        "result": "PASS",
+        "notes": "5·10 총선거(최초 보통 선거)→제헌 국회→8·15 정부 수립, 6·25 1950→인천 상륙→중국군 개입→1953 정전, 4·19(3·15 부정 선거, 이승만 퇴진), 5·18 1980(기록물 2011 세계 기록 유산), 6월 항쟁 1987→직선제, 경제 개발 5개년 계획, 1997 외환 위기 금 모으기, 7·4 공동 성명 1972(자주·평화·민족 대단결), 2000 첫 정상 회담·6·15 all correct. Advisory: summary1 '순서를 묻는 문제가 특히 자주 나옵니다' is an unsupported frequency claim — soften."
+      }
+    }
+  },
+  "round2": {
+    "chapters": {
+      "prehistory-ancient": {
+        "result": "PASS",
+        "notes": "All facts check out: 뗀석기/간석기/빗살무늬/가락바퀴/움집, 청동기 비파형 동검·거울·반달 돌칼·민무늬 토기·고인돌, 범금 8조 중 3조항 전함(살인-사형, 상해-곡식 배상), 영고·동맹·무천, 민며느리제(옥저)·서옥제(고구려), 책화(동예), 천군·소도(삼한)."
+      },
+      "three-kingdoms": {
+        "result": "PASS",
+        "notes": "근초고왕 4세기·마한 정복·평양성 공격, 광개토 대왕 왜 격퇴·장수왕이 세운 능비, 장수왕 427 국내성→평양 천도·475 한성 함락, 법흥왕 불교 공인·율령, 진흥왕 한강·대가야·순수비·화랑도, 660/668/676, 신문왕, 불국사·석굴암, 698 대조영·해동성국, 무령왕릉 남조 벽돌무덤: all correct. Minor (not a fail): '가야 = 낙동강 하류' fits 금관가야 중심 전기 가야; 대가야(고령)는 낙동강 서쪽 내륙이므로 '낙동강 하류와 그 서쪽 지역'이 더 정확."
+      },
+      "goryeo": {
+        "result": "FAIL",
+        "notes": "Facts all correct (918/936, 광종 노비안검법·과거제, 성종 시무 28조, 서희 1차·강동 6주, 강감찬 3차·귀주, 1170 무신정변, 강화 천도, 삼별초 강화도→진도→제주도, 공민왕 쌍성총관부·철령 이북·신돈, 팔만대장경 해인사, 직지 프랑스 국립 도서관, 상감 청자). FAIL only for unsupported exam-frequency claim: '기본 시험에서는 왕의 업적과 대표 인물, 문화유산을 묻는 문제가 많습니다.' Fix: '왕의 업적과 대표 인물, 문화유산을 짝지어 정리해 두면 좋습니다.'"
+      },
+      "joseon-early": {
+        "result": "PASS",
+        "notes": "위화도 회군(1388)→1392 건국→한양 천도, 태종 호패법(16세 이상 남자)·신문고, 세종 집현전·훈민정음·측우기·앙부일구·자격루·농사직설·4군 6진, 경국대전 세조 시작·성종 완성, 임진왜란 1592·한산도·진주(김시민)·행주(권율), 광해군 중립 외교, 병자호란 1636·남한산성·삼전도: all correct."
+      },
+      "joseon-late": {
+        "result": "PASS",
+        "notes": "대동법(토지 기준, 쌀·옷감·돈, 광해군 때 경기도), 영조 탕평비(성균관)·균역법 2필→1필·청계천, 정조(영조의 손자) 규장각·수원 화성·신해통공, 상평통보, 정약용 목민심서·거중기, 박지원 열하일기, 김홍도·신윤복 풍속화, 홍경래의 난 1811(평안도 차별), 임술 농민 봉기 1862, 최제우 동학 시천주(뒤에 인내천): all correct."
+      },
+      "colonial": {
+        "result": "FAIL",
+        "notes": "Facts correct (헌병 경찰·토지 조사 사업, 1919 3·1·상하이 임시 정부, 1920 봉오동 홍범도·청산리 김좌진+홍범도, 김구 한인 애국단·이봉창·윤봉길 1932 훙커우, 1940 충칭 한국광복군, 민족 말살·조선어 학회·정인보 조선학 운동, 1926 6·10, 1929 광주 학생 항일 운동 '3·1 운동 이후 최대 민족 운동'). FAIL for unsupported exam-frequency claim: '독립운동가와 그가 한 일을 짝짓는 문제가 많이 나옵니다.' Fix: '독립운동가와 그가 한 일을 짝지어 정리해 두면 좋습니다.' Also recommended: the last summary paragraph puts '1926년 6·10 만세 운동과 1929년 광주 학생 항일 운동도 일어났습니다.' right after the 1930s-late 민족 말살 정책 and '이에 맞서' sentence, which can read as if they were reactions to it; move this sentence before the 1930년대 후반 sentence (e.g. into the 1920s paragraph)."
+      },
+      "contemporary": {
+        "result": "PASS",
+        "notes": "1948 5·10 총선거(최초 보통 선거)·제헌 국회·8·15 정부 수립, 6·25 남침→낙동강→인천 상륙→중국군 개입→1953 정전, 1960 3·15→4·19·이승만 퇴진, 1980 5·18(기록물 2011 유네스코 세계기록유산), 1987 6월 민주 항쟁·직선제, 경제 개발 5개년 계획, 외환 위기 금 모으기, 1972 7·4 공동 성명(자주·평화·민족 대단결), 2000 첫 정상 회담·6·15: all correct."
+      }
+    }
+  },
+  "round3": {
+    "chapters": {
+      "goryeo": {
+        "result": "FAIL",
+        "notes": "Checked: 918 건국, 936 후백제 멸망·통일, 호족 혼인·북진, 광종 노비안검법(956)·과거제(958), 성종·최승로 시무 28조, 서희 1차 침입(993) 강동 6주, 강감찬 3차 침입 귀주 대첩(1019), 무신 정변 12세기 후반(1170), 몽골 침입·강화도 천도(1232), 강화 후 삼별초 항쟁(1270-1273, 강화도→진도→제주도), 공민왕 반원 개혁·쌍성총관부 공격 철령 이북 수복·신돈, 팔만대장경(몽골 침입기, 해인사 장경판전), 직지(1377 고려 말, 현존 최고 금속 활자본, 프랑스 국립 도서관), 상감 청자 -- all correct. No exam-frequency/statistics claims. ONE FAIL (misleading ordering) in compare row 3: [\"몽골\", \"강화도 천도, 삼별초 항쟁\", \"오랜 항쟁 끝에 강화, 원의 간섭\"] -- the cause->result layout implies 삼별초 항쟁 came before and led to 강화, but 삼별초 항쟁 began only AFTER 고려 정부가 몽골과 강화(1270 개경 환도) and lasted to 1273. FIX: columns 2/3 -> \"강화도 천도 후 오랜 항쟁\" / \"몽골과 강화(개경 환도) → 반대한 삼별초가 끝까지 항쟁 → 원의 간섭\" (or split into two rows: \"몽골 | 강화도 천도·장기 항쟁 | 몽골과 강화, 원의 간섭\" and \"몽골 | 삼별초 항쟁(강화 이후) | 진도·제주도에서 끝까지 저항\")."
+      },
+      "colonial": {
+        "result": "FAIL",
+        "notes": "Checked: 1910-1945 범위, 1910년대 헌병 경찰·토지 조사 사업, 3·1 운동(1919.3.1 민족 대표 독립 선언) → 같은 해 상하이 임시 정부, 통치 방식 변화 계기, 1920 봉오동(홍범도 대한 독립군)·청산리(김좌진 북로 군정서+홍범도 부대), 한인 애국단(김구, 상하이), 이봉창 일왕 폭탄 투척, 윤봉길 1932 훙커우 공원 의거, 1940 충칭 한국광복군, 6·10 만세 운동(1926), 광주 학생 항일 운동(1929, '3·1 운동 이후 최대 민족 운동'은 표준 교과서 표현), 조선어 학회 맞춤법 통일안·큰사전·회원 검거 -- correct. FAIL (chronology/causation error) in summary[3]: \"1930년대 후반부터 일제는 우리말 사용을 막고 이름을 일본식으로 바꾸게 하는 등 민족 말살 정책을 폈습니다. 이에 맞서 조선어 학회는 우리말 사전을 만들려 했고, 정인보 같은 학자들은 조선학 운동으로 우리 역사와 문화를 지키려 애썼습니다.\" -- '이에 맞서' presents these as responses to the late-1930s policy, but 사전 편찬 준비는 1929년(조선어사전편찬회)부터, 한글 맞춤법 통일안은 1933년, 조선학 운동은 1934년(정약용 서거 99주년 무렵)에 시작되어 민족 말살 정책(1937년 이후, 창씨개명 1940)보다 앞선다. FIX: \"1930년대 후반부터 일제는 우리말 사용을 막고 이름을 일본식으로 바꾸게 하는 등 민족 말살 정책을 폈습니다. 이보다 앞서 조선어 학회는 한글 맞춤법 통일안(1933)을 만들고 우리말 사전 편찬을 준비했으며, 정인보 같은 학자들은 1930년대 조선학 운동으로 우리 역사와 문화를 지키려 애썼습니다. 일제는 1942년 조선어 학회 회원들을 잡아들였습니다.\" (Minor, not a fail: summary[2] lists 1920→1932→1940 then '나라 안에서는' 1926·1929; dates are explicit, acceptable.)"
+      }
+    }
+  },
+  "round4": {
+    "chapters": {
+      "goryeo": {
+        "result": "PASS",
+        "notes": "All checked: 918 founding/936 unification, Wang Geon marriage alliances and northern expansion policy (Goguryeo succession); Gwangjong slave review act + first gwageo (958); Seongjong adopted Choe Seung-ro's 28-article memorial; Seo Hui 1st Khitan invasion (993) Gangdong 6 ju; Gang Gam-chan 3rd invasion Gwiju (1019); military coup 1170 (late 12th c.); Ganghwa capital move against Mongols; Sambyeolcho formed under military regime, Ganghwa->Jindo->Jeju, resisted until 1273; Gongmin attacked Ssangseong commandery to recover land north of Cheollyeong, employed Sin Don; Tripitaka Koreana carved during Mongol invasions, kept at Haeinsa Janggyeong Panjeon; Jikji printed in late Goryeo (1377) with metal type, oldest extant, in Bibliotheque nationale de France; inlaid celadon description correct. '약 500년' (474 yrs) acceptable approximation. Compare row order (truce -> Sambyeolcho to 1273 -> Yuan interference) matches standard textbook presentation. No exam-frequency or statistics claims."
+      },
+      "colonial": {
+        "result": "PASS",
+        "notes": "All checked: 1910-1945 scope; 1910s gendarme-police rule and land survey project; March 1 Movement 1919 -> Provisional Government in Shanghai same year, and change to 'cultural rule'; Bongodong (Jun 1920, Hong Beom-do's Korean Independence Army) and Cheongsanri (Oct 1920, Kim Jwa-jin's Northern Military Administration with Hong's units); Korean Patriotic Organization founded by Kim Gu in Shanghai, Lee Bong-chang bomb at Japanese emperor, Yun Bong-gil Hongkou Park 1932 (generals/officials killed or injured); Korean Liberation Army 1940 Chongqing; June 10 Movement 1926, Gwangju Student Movement 1929 (described as largest since March 1st, the standard textbook characterization); late-1930s assimilation policies (Korean language suppression, name change); Korean Language Society 1933 unified orthography and dictionary work; Joseon studies movement c.1934 with Jeong In-bo; 1942 Korean Language Society incident and dissolution. Para 3 lists 1926/1929 after 1940 but explicitly separated as domestic events with years, so not misleading. No exam-frequency or statistics claims."
+      }
+    }
+  }
+}
