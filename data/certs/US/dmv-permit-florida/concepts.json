@@ -61,7 +61,19 @@
           ["Flashing yellow", "Caution", "Slow down and go through with care"],
           ["Steady yellow", "Light is about to turn red", "Stop if you can do it safely"]
         ]
-      }
+      },
+      "figures": [
+        {
+          "image": "sign-shapes-colors.svg",
+          "alt": "Six labeled signs: a red eight-sided STOP sign, a red and white downward triangle reading YIELD, a yellow diamond, a yellow-green five-sided sign, an orange diamond, and a white rectangle reading SPEED LIMIT 55.",
+          "caption": "8 sides = stop, triangle down = yield, yellow diamond = warning, 5 sides = school, orange = work zone, white = rule.",
+          "source": {
+            "kind": "public",
+            "title": "MUTCD sign shapes and colors (R1-1, R1-2, W-series diamond, S1-1, work zone diamond, R2-1)",
+            "license": "US federal government work (public domain)"
+          }
+        }
+      ]
     },
     "right-of-way-turns": {
       "verifiedAt": "2026-10-04",

@@ -564,5 +564,357 @@
       "pavement markings"
     ],
     "levelLock": true
+  },
+  {
+    "id": "dmv-permit-florida-signs-signals-markings-0017",
+    "certId": "dmv-permit-florida",
+    "subjectId": "knowledge-test",
+    "chapterId": "signs-signals-markings",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What must you do when you see this sign?",
+    "choices": [
+      "Stop completely every time, even if no one is coming",
+      "Slow down and let other traffic and pedestrians go first, stopping if needed",
+      "Speed up so you can get ahead of the other cars",
+      "Keep going, because you have the right of way"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Red and white triangle pointing down = yield",
+    "explanation": "This is the **Yield** sign. It is the only sign shaped like a triangle pointing down. Slow down and let cars and pedestrians that are already there go first. If someone is coming, stop. If the way is clear, you may go without stopping.\n\n**Wrong choices**\n- Stop completely every time, even if no one is coming: A full stop every time is what a red eight-sided STOP sign requires. At a yield sign you stop only if you need to.\n- Speed up so you can get ahead of the other cars: Speeding up to get ahead of others is the opposite of yielding.\n- Keep going, because you have the right of way: The yield sign means the other traffic has the right of way, not you.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "signs",
+      "regulatory signs",
+      "yield"
+    ],
+    "image": "yield.svg",
+    "imageAlt": "A triangle with one point facing down. It has a wide red border and a white center. Red capital letters spell YIELD near the top.",
+    "imageSource": {
+      "kind": "public",
+      "title": "MUTCD R1-2 Yield sign",
+      "license": "US federal government work (public domain)"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-florida-signs-signals-markings-0018",
+    "certId": "dmv-permit-florida",
+    "subjectId": "knowledge-test",
+    "chapterId": "signs-signals-markings",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "This round yellow sign tells you what?",
+    "choices": [
+      "A crossroad is ahead",
+      "You have reached the tracks, and only trains may cross",
+      "A railroad crossing is ahead, so look, listen, and be ready to stop",
+      "The road ahead is closed"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Round yellow sign with X and RR = railroad crossing ahead",
+    "explanation": "This round yellow sign is the **Railroad Advance Warning** sign. It is placed before you reach the tracks. Slow down, look both ways, listen for a train, and be ready to stop.\n\n**Wrong choices**\n- A crossroad is ahead: A crossroad ahead is shown on a yellow diamond with a plus-shaped cross, not on a round sign with RR.\n- You have reached the tracks, and only trains may cross: This sign comes before the tracks. At the tracks themselves you see the white X-shaped crossbuck sign.\n- The road ahead is closed: A closed road is marked with a ROAD CLOSED sign or barricades.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "signs",
+      "warning signs",
+      "railroad"
+    ],
+    "image": "railroad-advance-warning.svg",
+    "imageAlt": "A round yellow sign with a black border. A large black X crosses the whole sign. A black letter R is on the left side of the X and another R is on the right side.",
+    "imageSource": {
+      "kind": "public",
+      "title": "MUTCD W10-1 Grade Crossing Advance Warning sign",
+      "license": "US federal government work (public domain)"
+    },
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-florida-signs-signals-markings-0019",
+    "certId": "dmv-permit-florida",
+    "subjectId": "knowledge-test",
+    "chapterId": "signs-signals-markings",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "You see this sign at the start of a street. What does it tell you?",
+    "choices": [
+      "The street has no way out, so you cannot drive through it",
+      "The road ends ahead and you must turn left or right",
+      "A one-way street begins here",
+      "The road is closed for construction"
+    ],
+    "answer": 1,
+    "oneLineConcept": "DEAD END = the street has no outlet",
+    "explanation": "This yellow diamond is the **Dead End** warning sign. The street has no other way out. If you drive in, you will have to turn around and come back the same way.\n\n**Wrong choices**\n- The road ends ahead and you must turn left or right: A road that ends at a cross street is shown by a different sign, such as a T-shaped symbol. A dead end has no cross street to turn onto.\n- A one-way street begins here: A one-way street is marked with a black and white ONE WAY arrow sign.\n- The road is closed for construction: Work zones use orange signs, and a closed road uses a ROAD CLOSED sign or barricades.",
+    "frequency": 2,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "signs",
+      "warning signs",
+      "dead end"
+    ],
+    "image": "dead-end.svg",
+    "imageAlt": "A yellow diamond-shaped sign with a black border. Two lines of large black capital letters read DEAD and END.",
+    "imageSource": {
+      "kind": "public",
+      "title": "MUTCD W14-1 Dead End sign",
+      "license": "US federal government work (public domain)"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-florida-signs-signals-markings-0020",
+    "certId": "dmv-permit-florida",
+    "subjectId": "knowledge-test",
+    "chapterId": "signs-signals-markings",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "You see this sign. What should you expect on the road ahead?",
+    "choices": [
+      "A bicycle shop is ahead",
+      "Only bicycles may use this road",
+      "Bicycles are not allowed on this road",
+      "Bicycle riders may be crossing or sharing the road, so watch for them"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Bicycle on a yellow diamond = watch for bicycle riders",
+    "explanation": "This yellow diamond is the **Bicycle** warning sign. Yellow diamonds warn you about something ahead. Here it means bicycle riders may cross or ride on the road. Slow down, watch for them, and give them room when you pass.\n\n**Wrong choices**\n- A bicycle shop is ahead: Businesses and services are shown on blue or brown guide signs, not on yellow warning signs.\n- Only bicycles may use this road: A sign that limits a road to bicycles only would be a white rule sign. Yellow signs only warn.\n- Bicycles are not allowed on this road: A sign that bans something shows a red circle with a slash across the picture. This sign has no red circle.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "signs",
+      "warning signs",
+      "bicycles"
+    ],
+    "image": "bicycle-crossing.svg",
+    "imageAlt": "A yellow diamond-shaped sign with a black border. In the center is a black side view of a bicycle with two wheels, a frame, a seat, and handlebars. There is no rider and no red circle.",
+    "imageSource": {
+      "kind": "public",
+      "title": "MUTCD W11-1 Bicycle Warning sign",
+      "license": "US federal government work (public domain)"
+    },
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-florida-signs-signals-markings-0021",
+    "certId": "dmv-permit-florida",
+    "subjectId": "knowledge-test",
+    "chapterId": "signs-signals-markings",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "What does this warning sign mean?",
+    "choices": [
+      "A gentle curve to the right is ahead",
+      "The road ahead makes a sharp turn to the right",
+      "You must turn right at the next intersection",
+      "The right lane ends ahead"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Arrow with a right-angle bend = sharp turn ahead",
+    "explanation": "This yellow diamond is the **Turn** warning sign. The arrow bends at a sharp right angle, so the road ahead turns sharply to the right. Slow down before the turn.\n\n**Wrong choices**\n- A gentle curve to the right is ahead: A gentle curve is shown by a curve sign, where the arrow bends smoothly instead of at a sharp corner.\n- You must turn right at the next intersection: Yellow diamonds warn about the road. A sign that orders you to turn would be a white rule sign.\n- The right lane ends ahead: A lane that ends is shown by two lines that come together, not by a bent arrow.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "signs",
+      "warning signs",
+      "turn"
+    ],
+    "image": "turn-right.svg",
+    "imageAlt": "A yellow diamond-shaped sign with a black border. A thick black arrow goes straight up from the bottom, then bends at a sharp square corner and points to the right.",
+    "imageSource": {
+      "kind": "public",
+      "title": "MUTCD W1-1 Turn sign",
+      "license": "US federal government work (public domain)"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-florida-signs-signals-markings-0022",
+    "certId": "dmv-permit-florida",
+    "subjectId": "knowledge-test",
+    "chapterId": "signs-signals-markings",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "What does this sign mean?",
+    "choices": [
+      "You may not turn right here",
+      "You must turn right here",
+      "You may turn right on a red light here",
+      "Traffic on the cross street goes only to the right"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Red circle with a slash = the action shown is not allowed",
+    "explanation": "This is the **No Right Turn** sign. It is a white rule sign. The red circle with a slash means the action shown inside is not allowed. The arrow turns right, so you may not turn right here.\n\n**Wrong choices**\n- You must turn right here: A sign that requires a right turn shows a black arrow with no red circle or slash.\n- You may turn right on a red light here: The red slash forbids the turn. It does not give you extra permission to turn on red.\n- Traffic on the cross street goes only to the right: One-way traffic is marked with a black and white ONE WAY arrow sign, not with a red circle and slash.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "signs",
+      "regulatory signs",
+      "turns"
+    ],
+    "image": "no-right-turn.svg",
+    "imageAlt": "A white square sign with a black border. A black arrow goes up from the bottom and then turns to point right. A red circle surrounds the arrow, and a red diagonal line runs from the upper left to the lower right across it.",
+    "imageSource": {
+      "kind": "public",
+      "title": "MUTCD R3-1 No Right Turn sign",
+      "license": "US federal government work (public domain)"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-florida-signs-signals-markings-0023",
+    "certId": "dmv-permit-florida",
+    "subjectId": "knowledge-test",
+    "chapterId": "signs-signals-markings",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "You are driving in the right lane of a road with two lanes going your way, and you see this sign. What should you do?",
+    "choices": [
+      "Pull onto the right shoulder and wait",
+      "Stay in your lane, because the left lane is the one that ends",
+      "Your lane is ending, so find a safe gap and merge into the left lane",
+      "Speed up and pass the cars in the left lane before your lane ends"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Right line bends into left line = right lane ends, merge left",
+    "explanation": "This yellow diamond is the **Lane Ends, Merge Left** sign. The left line goes straight, and the right line bends over toward it. That means the right lane is ending. Signal, find a safe gap, and merge into the left lane. Drivers in the left lane should help by letting you in.\n\n**Wrong choices**\n- Pull onto the right shoulder and wait: Stopping on the shoulder is not needed and can be dangerous. Merge with traffic instead.\n- Stay in your lane, because the left lane is the one that ends: The straight line is on the left, so the left lane continues. It is the right lane that ends.\n- Speed up and pass the cars in the left lane before your lane ends: Racing ahead to cut in is unsafe. Adjust your speed and merge smoothly into a safe gap.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "signs",
+      "warning signs",
+      "merging"
+    ],
+    "image": "lane-ends-merge-left.svg",
+    "imageAlt": "A yellow diamond-shaped sign with a black border. Two thick black lines run up the sign. The left line is straight. The right line starts straight at the bottom, then slants to the left and runs up close beside the left line.",
+    "imageSource": {
+      "kind": "public",
+      "title": "MUTCD W4-2 Lane Ends Merge Left sign",
+      "license": "US federal government work (public domain)"
+    },
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-florida-signs-signals-markings-0024",
+    "certId": "dmv-permit-florida",
+    "subjectId": "knowledge-test",
+    "chapterId": "signs-signals-markings",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "You see this yellow sign straight ahead of you where the road changes direction. What does it tell you?",
+    "choices": [
+      "This is a one-way street, and traffic goes only to the right",
+      "Move into the right lane",
+      "Keep right of a divider ahead",
+      "The road turns sharply to the right, so slow down and follow the arrow"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Large arrow on a wide yellow sign = sharp change in direction",
+    "explanation": "This wide yellow sign is the **Large Arrow** warning sign. It is placed where the road makes a sharp change in direction, often at the end of a road or the outside of a sharp turn. Slow down and turn the way the arrow points.\n\n**Wrong choices**\n- This is a one-way street, and traffic goes only to the right: A ONE WAY sign is black and white and has the words ONE WAY. Yellow signs warn about hazards.\n- Move into the right lane: Lane-use rules are shown on white rule signs. This yellow sign warns that the road itself turns.\n- Keep right of a divider ahead: Keep Right is a white rule sign showing an arrow passing to the right of an object.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-28",
+    "tags": [
+      "signs",
+      "warning signs",
+      "sharp turn"
+    ],
+    "image": "large-arrow.svg",
+    "imageAlt": "A wide yellow rectangle sign, about twice as wide as it is tall, with a black border. A single large black arrow with a thick shaft and a big arrowhead points to the right.",
+    "imageSource": {
+      "kind": "public",
+      "title": "MUTCD W1-6 Large Arrow (One Direction) sign",
+      "license": "US federal government work (public domain)"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
   }
 ]
