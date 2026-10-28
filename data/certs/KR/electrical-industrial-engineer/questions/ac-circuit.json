@@ -399,5 +399,347 @@
         3
       ]
     }
+  },
+  {
+    "id": "electrical-industrial-engineer-ac-circuit-0012",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "circuit-theory",
+    "chapterId": "ac-circuit",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "그림의 회로에서 전지로부터 흐르는 전체 전류는 몇 A인가?",
+    "choices": [
+      "1.8A",
+      "10A",
+      "5A",
+      "2.2A"
+    ],
+    "answer": 3,
+    "oneLineConcept": "병렬 먼저 합치고(곱/합) 직렬로 더한 뒤 I = V/R",
+    "explanation": "병렬 부분을 먼저 하나로 합친 뒤 직렬로 더합니다.\n\n1. 병렬 합성: 6 × 3 ÷ (6 + 3) = 18 ÷ 9 = 2Ω\n2. 전체 저항: 2 + 2 = 4Ω\n3. 전체 전류: I = 20 ÷ 4 = 5A\n\n검산: 2Ω에 걸리는 전압 5 × 2 = 10V, 병렬 부분 전압 5 × 2 = 10V, 합계 20V로 전지 전압과 같습니다.\n\n**틀린 선지**\n- 1.8A: 세 저항을 모두 직렬로 더한 값(20 ÷ 11)입니다. 6Ω과 3Ω은 병렬입니다.\n- 10A: 2Ω 하나만으로 나눈 값(20 ÷ 2)입니다.\n- 2.2A: 병렬 부분을 6 + 3 = 9Ω으로 잘못 더한 값(20 ÷ 9)입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "직병렬",
+      "옴의 법칙",
+      "계산",
+      "그림"
+    ],
+    "image": "dc-series-parallel-2-6-3-20v.svg",
+    "imageAlt": "20V 직류 전지에 2Ω 저항이 직렬로 이어지고, 그 뒤에 6Ω 저항과 3Ω 저항이 서로 병렬로 연결된 회로. 병렬 부분의 위아래 갈림점에 점이 찍혀 있다.",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-ac-circuit-0013",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "circuit-theory",
+    "chapterId": "ac-circuit",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "그림의 회로에서 3Ω 저항에 흐르는 전류는 몇 A인가?",
+    "choices": [
+      "5/3A(약 1.7A)",
+      "10/3A(약 3.3A)",
+      "2.5A",
+      "5A"
+    ],
+    "answer": 2,
+    "oneLineConcept": "병렬 전류는 저항에 반비례해 나뉜다",
+    "explanation": "1. 병렬 합성: 6 × 3 ÷ 9 = 2Ω, 전체 저항 2 + 2 = 4Ω\n2. 전체 전류: 20 ÷ 4 = 5A\n3. 병렬 부분 전압: 5 × 2 = 10V\n4. 3Ω 전류: 10 ÷ 3 = 10/3A ≈ 3.3A\n\n검산: 6Ω 전류 10 ÷ 6 = 5/3A, 두 전류의 합 10/3 + 5/3 = 5A로 전체 전류와 같습니다.\n\n**틀린 선지**\n- 5/3A(약 1.7A): 6Ω 저항에 흐르는 전류입니다.\n- 5A: 전체 전류입니다. 병렬 부분에서 전류가 나뉩니다.\n- 2.5A: 전류가 반씩 나뉜다고 본 값입니다. 저항이 다르면 똑같이 나뉘지 않습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "직병렬",
+      "분류",
+      "계산",
+      "그림"
+    ],
+    "image": "dc-series-parallel-2-6-3-20v.svg",
+    "imageAlt": "20V 직류 전지에 2Ω 저항이 직렬로 이어지고, 그 뒤에 6Ω 저항과 3Ω 저항이 서로 병렬로 연결된 회로. 병렬 부분의 위아래 갈림점에 점이 찍혀 있다.",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-ac-circuit-0014",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "circuit-theory",
+    "chapterId": "ac-circuit",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "그림의 R-L 직렬 회로에 흐르는 전류는 몇 A인가?",
+    "choices": [
+      "16.7A",
+      "12.5A",
+      "10A",
+      "7.1A"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Z = √(R² + XL²), I = V/Z",
+    "explanation": "1. 임피던스: Z = √(6² + 8²) = √(36 + 64) = √100 = 10Ω\n2. 전류: I = 100 ÷ 10 = 10A\n\n6·8·10 직각삼각형 숫자입니다.\n\n**틀린 선지**\n- 7.1A: 저항과 리액턴스를 그냥 더한 값(100 ÷ 14)입니다. 직각으로 합성해야 합니다.\n- 16.7A: 저항만으로 나눈 값(100 ÷ 6)입니다.\n- 12.5A: 리액턴스만으로 나눈 값(100 ÷ 8)입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "임피던스",
+      "R-L 직렬",
+      "계산",
+      "그림"
+    ],
+    "image": "ac-rl-series-6-8-100v.svg",
+    "imageAlt": "100V 교류 전원에 저항 R = 6Ω과 코일(유도 리액턴스 XL = 8Ω)이 직렬로 연결된 회로.",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-ac-circuit-0015",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "circuit-theory",
+    "chapterId": "ac-circuit",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "그림의 R-L 직렬 회로의 역률은?",
+    "choices": [
+      "0.8",
+      "1.0",
+      "0.75",
+      "0.6"
+    ],
+    "answer": 4,
+    "oneLineConcept": "역률 cosθ = R/Z",
+    "explanation": "역률은 저항을 임피던스로 나눈 값입니다.\n\n1. Z = √(6² + 8²) = 10Ω\n2. 역률: cosθ = R ÷ Z = 6 ÷ 10 = 0.6\n\n검산: 무효율 sinθ = 8 ÷ 10 = 0.8, 0.6² + 0.8² = 1.\n\n**틀린 선지**\n- 0.8: 리액턴스 쪽 비율(8 ÷ 10)로, 무효율 sinθ입니다.\n- 0.75: 저항 ÷ 리액턴스(6 ÷ 8)로 잘못 구한 값입니다.\n- 1.0: 저항만 있는 회로나 공진 회로의 역률입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "역률",
+      "R-L 직렬",
+      "계산",
+      "그림"
+    ],
+    "image": "ac-rl-series-6-8-100v.svg",
+    "imageAlt": "100V 교류 전원에 저항 R = 6Ω과 코일(유도 리액턴스 XL = 8Ω)이 직렬로 연결된 회로.",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-ac-circuit-0016",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "circuit-theory",
+    "chapterId": "ac-circuit",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "그림의 R-L-C 직렬 회로의 임피던스는 몇 Ω인가?",
+    "choices": [
+      "√205Ω(약 14.3Ω)",
+      "5Ω",
+      "17Ω",
+      "7Ω"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Z = √(R² + (XL − XC)²)",
+    "explanation": "코일과 콘덴서의 리액턴스는 방향이 반대라서 **빼서** 합칩니다.\n\n1. 합성 리액턴스: XL − XC = 9 − 5 = 4Ω\n2. 임피던스: Z = √(3² + 4²) = √25 = 5Ω\n\n**틀린 선지**\n- 17Ω: 세 값을 모두 더한 값입니다. 리액턴스는 서로 빼야 합니다.\n- 7Ω: 저항과 두 리액턴스의 차를 그냥 더한 값(3 + 4)입니다.\n- √205Ω(약 14.3Ω): XL과 XC를 더해 합성한 값(√(3² + 14²))입니다. XL과 XC는 서로 빼야 합니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "임피던스",
+      "R-L-C 직렬",
+      "계산",
+      "그림"
+    ],
+    "image": "ac-rlc-series-3-9-5-50v.svg",
+    "imageAlt": "50V 교류 전원에 저항 R = 3Ω, 코일 XL = 9Ω, 콘덴서 XC = 5Ω이 차례로 직렬 연결된 회로.",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-ac-circuit-0017",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "circuit-theory",
+    "chapterId": "ac-circuit",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "그림의 R-L-C 직렬 회로에서 소비되는 유효 전력은 몇 W인가?",
+    "choices": [
+      "300W",
+      "500W",
+      "400W",
+      "900W"
+    ],
+    "answer": 1,
+    "oneLineConcept": "유효 전력은 저항에서만 소비: P = I²R",
+    "explanation": "1. Z = √(3² + (9 − 5)²) = 5Ω\n2. 전류: I = 50 ÷ 5 = 10A\n3. 유효 전력: P = I²R = 10² × 3 = 300W\n\n검산: 피상 전력 50 × 10 = 500VA, 역률 3 ÷ 5 = 0.6, 500 × 0.6 = 300W.\n\n**틀린 선지**\n- 500W: 전압 × 전류(50 × 10)로 구한 피상 전력입니다.\n- 400W: 합성 리액턴스로 구한 무효 전력(10² × 4)입니다.\n- 900W: XL만으로 구한 값(10² × 9)입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "유효 전력",
+      "R-L-C 직렬",
+      "계산",
+      "그림"
+    ],
+    "image": "ac-rlc-series-3-9-5-50v.svg",
+    "imageAlt": "50V 교류 전원에 저항 R = 3Ω, 코일 XL = 9Ω, 콘덴서 XC = 5Ω이 차례로 직렬 연결된 회로.",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-ac-circuit-0018",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "circuit-theory",
+    "chapterId": "ac-circuit",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "그림의 R-C 병렬 회로에서 전원으로부터 흐르는 전체 전류는 몇 A인가?",
+    "choices": [
+      "1.7A",
+      "7A",
+      "1A",
+      "5A"
+    ],
+    "answer": 4,
+    "oneLineConcept": "병렬 R-C: I = √(IR² + IC²)",
+    "explanation": "병렬에서는 각 가지에 전원 전압 60V가 그대로 걸립니다.\n\n1. 저항 전류: IR = 60 ÷ 20 = 3A\n2. 콘덴서 전류: IC = 60 ÷ 15 = 4A\n3. 전체 전류: I = √(3² + 4²) = √25 = 5A\n\n두 전류는 위상이 90° 다르므로 직각으로 합성합니다.\n\n**틀린 선지**\n- 7A: 두 가지 전류를 그냥 더한 값(3 + 4)입니다. 위상이 90° 다르므로 직각으로 합성해야 합니다.\n- 1A: 두 전류의 차(4 − 3)입니다.\n- 1.7A: 20Ω과 15Ω을 직렬로 더해 나눈 값(60 ÷ 35)입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "R-C 병렬",
+      "계산",
+      "그림"
+    ],
+    "image": "ac-rc-parallel-20-15-60v.svg",
+    "imageAlt": "60V 교류 전원에 저항 R = 20Ω과 콘덴서(용량 리액턴스 XC = 15Ω)가 서로 병렬로 연결된 회로. 갈림점에 점이 찍혀 있다.",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "electrical-industrial-engineer-ac-circuit-0019",
+    "certId": "electrical-industrial-engineer",
+    "subjectId": "circuit-theory",
+    "chapterId": "ac-circuit",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "그림의 R-L-C 직렬 회로에 흐르는 전류는 몇 A인가?",
+    "choices": [
+      "20A",
+      "6.7A",
+      "4A",
+      "10A"
+    ],
+    "answer": 1,
+    "oneLineConcept": "XL = XC → 직렬 공진, Z = R",
+    "explanation": "XL과 XC가 10Ω으로 같아 서로 없어집니다. 이것이 **직렬 공진**입니다.\n\n1. 합성 리액턴스: 10 − 10 = 0Ω\n2. 임피던스: Z = √(5² + 0²) = 5Ω\n3. 전류: I = 100 ÷ 5 = 20A\n\n직렬 공진에서는 임피던스가 가장 작아 전류가 가장 큽니다.\n\n**틀린 선지**\n- 4A: 세 값을 모두 더한 25Ω으로 나눈 값입니다.\n- 10A: 리액턴스 10Ω 하나로 나눈 값입니다.\n- 6.7A: 저항과 리액턴스 하나를 더한 15Ω으로 나눈 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "직렬 공진",
+      "계산",
+      "그림"
+    ],
+    "image": "ac-rlc-resonance-5-10-10-100v.svg",
+    "imageAlt": "100V 교류 전원에 저항 R = 5Ω, 코일 XL = 10Ω, 콘덴서 XC = 10Ω이 차례로 직렬 연결된 회로.",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
   }
 ]
