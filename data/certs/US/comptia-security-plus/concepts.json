@@ -1,0 +1,256 @@
+{
+  "by": "ai",
+  "chapters": {
+    "general-security-concepts": {
+      "verifiedAt": "2026-10-29",
+      "summary": [
+        "This chapter covers the basic ideas the rest of Security+ is built on: the goals of security, the kinds of controls that protect systems, how changes are managed safely, and the basics of cryptography. Many questions simply check that you know what a term means and can pick the right one for a short scenario.",
+        "The CIA triad names three goals. Confidentiality keeps data secret from people who should not see it, integrity makes sure data is not changed without permission, and availability keeps systems and data ready when needed. Non-repudiation means someone cannot believably deny an action, which digital signatures provide. AAA stands for authentication (proving who you are), authorization (deciding what you may do), and accounting (recording what you did).",
+        "Controls are grouped by category (technical, managerial, operational, physical) and by type (preventive, deterrent, detective, corrective, compensating, directive). A warning sign is a deterrent, log review is detective, and a substitute used when the normal control is impossible is compensating. Zero trust means no request is trusted by default: a policy engine decides and a policy enforcement point allows or blocks. Change management uses approvals, testing, and a backout plan to undo a change that goes wrong.",
+        "Symmetric encryption such as AES uses one shared key and is fast. Asymmetric encryption such as RSA or ECC uses a key pair: encrypt with the recipient's public key, and sign with your own private key. Hashing is one-way and checks integrity; a salt makes identical passwords hash differently. In PKI, a certificate authority signs certificates, and OCSP checks one certificate's revocation status in real time. A TPM chip on the motherboard stores keys for features such as full-disk encryption."
+      ],
+      "concepts": [
+        {
+          "term": "CIA triad",
+          "definition": "Confidentiality (keep secret), integrity (keep unchanged), availability (keep usable).",
+          "tip": "Hash check = integrity"
+        },
+        {
+          "term": "AAA",
+          "definition": "Authentication proves identity, authorization grants permissions, accounting records activity.",
+          "tip": "Who → what → what was done"
+        },
+        {
+          "term": "Control types",
+          "definition": "Preventive stops, deterrent discourages, detective finds, corrective fixes, compensating substitutes, directive instructs.",
+          "tip": "Warning sign = deterrent"
+        },
+        {
+          "term": "Zero trust",
+          "definition": "Never trust by default; verify every request. The policy engine decides and the policy enforcement point enforces.",
+          "tip": "Engine decides, PEP enforces"
+        },
+        {
+          "term": "Symmetric vs asymmetric",
+          "definition": "Symmetric uses one shared key (AES). Asymmetric uses a public and private key pair (RSA, ECC).",
+          "tip": "AES = symmetric"
+        },
+        {
+          "term": "Digital signature",
+          "definition": "The sender encrypts a hash of the message with their private key; anyone checks it with the sender's public key. It gives integrity and non-repudiation.",
+          "tip": "Sign with your private key"
+        },
+        {
+          "term": "Hashing and salting",
+          "definition": "A hash is a one-way, fixed-length fingerprint. A salt is a random value added before hashing passwords.",
+          "tip": "Salt defeats rainbow tables"
+        }
+      ],
+      "points": [
+        "To keep a message secret for Bob, encrypt it with Bob's public key.",
+        "OCSP checks one certificate in real time; a CRL is a published list.",
+        "A backout plan explains how to undo a change.",
+        "Guards, locks, and fences are physical controls."
+      ]
+    },
+    "threats-vulnerabilities": {
+      "verifiedAt": "2026-10-29",
+      "summary": [
+        "This chapter is about who attacks, how they get in, what weaknesses they use, and how to reduce the risk. Questions often describe an attack in one or two sentences and ask you to name it, so focus on the clue words that separate similar attacks.",
+        "Threat actors differ by resources and motive. Organized crime mainly wants money, hacktivists want to promote a cause, and nation-states have large resources and run long, quiet spying campaigns. Shadow IT is technology employees use without approval. Social engineering tricks people: phishing uses email, vishing uses voice calls, smishing uses text messages, whaling targets executives, and tailgating means following someone through a secure door. Typosquatting uses look-alike domain names, and a supply chain attack compromises a vendor to reach its customers.",
+        "Malware types are told apart by behavior. Ransomware encrypts files for payment, a worm spreads by itself, a Trojan hides inside software that looks useful, a logic bomb waits for a trigger, and a rootkit hides deep in the system. Application attacks include SQL injection, cross-site scripting, directory traversal, buffer overflows, and race conditions. Network attacks include DDoS floods, on-path interception, evil twin access points, replay of captured data, and downgrade to weaker protocols. Password spraying tries one common password on many accounts.",
+        "A zero-day is a flaw with no patch yet. Common mitigations are patching, segmentation, and hardening (removing what is not needed and changing defaults). Indicators of compromise include privilege escalation and impossible travel, where one account logs in from places too far apart for the time between logins."
+      ],
+      "concepts": [
+        {
+          "term": "Social engineering by channel",
+          "definition": "Phishing is email, vishing is voice, smishing is text message, and whaling targets executives.",
+          "tip": "Voice = vishing"
+        },
+        {
+          "term": "Malware by behavior",
+          "definition": "Ransomware encrypts for payment, a worm self-spreads, a Trojan hides in useful-looking software, a logic bomb waits for a trigger, and a rootkit hides deep in the OS.",
+          "tip": "Spreads alone = worm"
+        },
+        {
+          "term": "Web application attacks",
+          "definition": "SQL injection sends database commands through input, XSS runs script in other users' browsers, and directory traversal uses ../ to reach other files.",
+          "tip": "../ = traversal"
+        },
+        {
+          "term": "Network attacks",
+          "definition": "DDoS floods a target, on-path intercepts traffic, replay resends captured data, and downgrade forces weaker protocols.",
+          "tip": "Many systems flood = DDoS"
+        },
+        {
+          "term": "Threat actors",
+          "definition": "Organized crime wants money, hacktivists want a cause, and nation-states run long, well-funded spying campaigns.",
+          "tip": "Money = organized crime"
+        },
+        {
+          "term": "Mitigations",
+          "definition": "Patching fixes known flaws, segmentation separates network parts, and hardening removes unneeded services and defaults.",
+          "tip": "Fewer services = smaller attack surface"
+        }
+      ],
+      "points": [
+        "Password spraying = one password, many accounts.",
+        "An evil twin copies the real Wi-Fi network name.",
+        "A zero-day has no patch yet.",
+        "Impossible travel suggests stolen credentials."
+      ]
+    },
+    "security-architecture": {
+      "verifiedAt": "2026-10-29",
+      "summary": [
+        "This chapter covers how systems are designed and placed so they stay secure and keep running. It includes cloud and other architecture models, secure network design, protecting data, and planning for recovery after failures or disasters.",
+        "In SaaS the provider delivers finished software, in PaaS it provides a platform to build apps, and in IaaS it provides virtual servers that the customer manages, including the guest operating system. Infrastructure as code defines systems in files so they deploy the same way every time. Industrial control systems run physical processes and are hard to patch, and air-gapped systems have no network connection at all. In virtualization, VM escape is a key risk.",
+        "Public servers belong in a screened subnet (DMZ). An IPS sits inline and can block attacks, while an IDS alerts. A fail-closed device blocks traffic when it fails. VPNs create encrypted tunnels for remote users, and zero trust network access gives access to specific applications after checking each user and device. Data can be at rest, in transit, or in use; protection methods include encryption, tokenization (random stand-in values with a secure vault), and masking (hiding part of the data). Data sovereignty means data is subject to the laws of the country where it is stored.",
+        "For resilience, a hot site can take over almost immediately, a warm site needs some setup, and a cold site has only space and power. RTO is how fast service must be restored, and RPO is how much data can be lost. To restore from differential backups you need the last full backup and the latest differential. A UPS provides short-term battery power, load balancing spreads traffic across servers, vendor diversity avoids a single shared flaw, and tabletop exercises test plans through discussion."
+      ],
+      "concepts": [
+        {
+          "term": "Cloud service models",
+          "definition": "SaaS: finished software. PaaS: platform to build apps. IaaS: virtual infrastructure; the customer patches the guest OS.",
+          "tip": "IaaS = you patch the OS"
+        },
+        {
+          "term": "Screened subnet (DMZ)",
+          "definition": "A separate zone between the internet and the internal network for public-facing servers.",
+          "tip": "Public web server goes here"
+        },
+        {
+          "term": "IDS vs IPS",
+          "definition": "An IDS detects and alerts; an IPS sits inline and can block.",
+          "tip": "IPS blocks"
+        },
+        {
+          "term": "Tokenization vs masking",
+          "definition": "Tokenization replaces data with a random token kept in a vault; masking hides part of the data, such as all but the last four digits.",
+          "tip": "**** 1234 = masking"
+        },
+        {
+          "term": "Recovery sites",
+          "definition": "Hot: ready almost immediately. Warm: some equipment, needs setup. Cold: space and power only.",
+          "tip": "Hot = fastest"
+        },
+        {
+          "term": "RTO and RPO",
+          "definition": "RTO is the maximum time to restore service; RPO is the maximum data loss measured in time.",
+          "tip": "RPO = data loss"
+        },
+        {
+          "term": "Backup restore",
+          "definition": "Full + differential: restore the last full and the latest differential. Full + incremental: restore the last full and every incremental after it.",
+          "tip": "Differential = full + latest"
+        }
+      ],
+      "points": [
+        "Fail-closed favors security; fail-open favors availability.",
+        "Data moving over a network is data in transit.",
+        "A UPS is short-term power; a generator is longer-term."
+      ]
+    },
+    "security-operations": {
+      "verifiedAt": "2026-10-29",
+      "summary": [
+        "This is the largest domain on the exam. It covers the daily work of keeping systems secure: managing identities and access, hardening and monitoring systems, handling vulnerabilities, using security tools, and responding to incidents.",
+        "Multifactor authentication combines different factor types: something you know, something you have, and something you are. Single sign-on lets a user log in once for many applications, and OAuth lets an app access data without the user's password. Least privilege gives only the access needed. RBAC grants access by job role, MAC uses labels and clearances that users cannot change, and privileged access management controls and records admin access.",
+        "A SIEM collects and correlates logs to raise alerts; a false positive is an alert for something harmless. DLP stops sensitive data from leaving, NAC checks device health before network access, EDR monitors endpoints and can isolate them, and a WAF blocks web attacks such as SQL injection and XSS. WPA3 is the strongest Wi-Fi security, and enterprise mode uses 802.1X with a RADIUS server for per-user logins. MDM manages and wipes mobile devices, and sandboxes run suspicious code in isolation.",
+        "Vulnerability scan results must be validated; a CVE ID names a known vulnerability, and a CVSS score of 9.0 to 10.0 is critical. The incident response process is preparation, detection, analysis, containment, eradication, recovery, and lessons learned. In forensics, chain of custody records who handled evidence, the most volatile data such as RAM is collected first, and a legal hold preserves data for a lawsuit. Old drives with sensitive data are best physically destroyed, and an asset inventory tracks what the organization owns."
+      ],
+      "concepts": [
+        {
+          "term": "MFA factors",
+          "definition": "Something you know (password), something you have (phone, token), something you are (fingerprint). MFA needs two different types.",
+          "tip": "Password + question is not MFA"
+        },
+        {
+          "term": "Access control models",
+          "definition": "RBAC uses job roles, MAC uses labels set by the system, and DAC lets the data owner decide.",
+          "tip": "Labels = MAC"
+        },
+        {
+          "term": "Security tools",
+          "definition": "SIEM correlates logs, DLP stops data leaving, NAC checks devices before access, EDR watches endpoints, and a WAF protects web apps.",
+          "tip": "Data leaving = DLP"
+        },
+        {
+          "term": "Wireless security",
+          "definition": "WPA3 is the current standard. Enterprise mode uses 802.1X and RADIUS for per-user logins.",
+          "tip": "Per-user Wi-Fi = Enterprise"
+        },
+        {
+          "term": "Incident response phases",
+          "definition": "Preparation, detection, analysis, containment, eradication, recovery, lessons learned.",
+          "tip": "Isolate the host = containment"
+        },
+        {
+          "term": "Forensics basics",
+          "definition": "Chain of custody tracks evidence handling, order of volatility collects RAM before disk, and a legal hold preserves data for litigation.",
+          "tip": "Most volatile first"
+        },
+        {
+          "term": "CVE and CVSS",
+          "definition": "A CVE ID names a known vulnerability. CVSS rates severity from 0 to 10; 9.0 to 10.0 is critical.",
+          "tip": "9.8 = critical",
+          "source": {
+            "org": "FIRST, CVSS v3.1 specification",
+            "year": 2019
+          }
+        }
+      ],
+      "points": [
+        "A false negative (a missed attack) is usually worse than a false positive.",
+        "SSH (port 22) replaces Telnet.",
+        "Deleting files does not securely erase a drive."
+      ]
+    },
+    "program-management": {
+      "verifiedAt": "2026-10-29",
+      "summary": [
+        "This chapter covers how an organization runs its security program: the documents that guide it, how risk is measured and handled, how vendors are checked, which laws and standards apply, and how audits and training keep the program honest.",
+        "Policies state high-level rules, standards set specific requirements, and procedures give step-by-step instructions. An acceptable use policy tells employees how they may use company systems. The data owner decides how data is classified and who may access it, while the custodian carries out the day-to-day care. Under privacy laws such as GDPR, the controller decides why and how personal data is processed and the processor handles it on the controller's behalf. Separation of duties keeps one person from completing a sensitive task alone.",
+        "The four risk responses are accept, avoid, transfer (for example, insurance), and mitigate. Inherent risk exists before controls and residual risk remains after them. A risk register lists risks, owners, and responses, and risk appetite describes how much risk the organization is willing to take. In quantitative analysis, SLE = asset value × exposure factor, ARO is the expected yearly frequency, and ALE = SLE × ARO. A business impact analysis identifies critical functions and the cost of disruption.",
+        "Vendors are checked with due diligence such as questionnaires and audit reports, and agreements include SLAs for service levels and NDAs for confidentiality. PCI DSS applies to card payments and HIPAA to U.S. health information; non-compliance can bring fines and reputation damage. Penetration tests run under written rules of engagement, and testers may have full information (known environment) or none (unknown environment). External audits give an independent attestation. Security awareness programs use phishing simulations and teach users to report suspicious messages."
+      ],
+      "concepts": [
+        {
+          "term": "Risk responses",
+          "definition": "Accept, avoid, transfer, mitigate. Insurance is transfer; stopping the activity is avoid.",
+          "tip": "Insurance = transfer"
+        },
+        {
+          "term": "Quantitative risk",
+          "definition": "SLE = asset value × exposure factor; ARO = times per year; ALE = SLE × ARO.",
+          "tip": "ALE = SLE × ARO"
+        },
+        {
+          "term": "Governance documents",
+          "definition": "Policy (what and why), standard (specific requirement), procedure (step-by-step how).",
+          "tip": "Steps = procedure"
+        },
+        {
+          "term": "Data roles",
+          "definition": "Owner decides classification and access; custodian carries out daily care; controller decides purpose of processing; processor acts for the controller.",
+          "tip": "Owner decides"
+        },
+        {
+          "term": "Vendor agreements",
+          "definition": "SLA sets service levels such as uptime; NDA keeps shared information confidential.",
+          "tip": "Uptime promise = SLA"
+        },
+        {
+          "term": "Compliance",
+          "definition": "PCI DSS covers payment card data; HIPAA covers U.S. health information.",
+          "tip": "Card data = PCI DSS"
+        }
+      ],
+      "points": [
+        "Residual risk is what remains after controls.",
+        "Rules of engagement give written permission and scope for a pen test.",
+        "Report suspicious emails; do not forward or reply."
+      ]
+    }
+  }
+}

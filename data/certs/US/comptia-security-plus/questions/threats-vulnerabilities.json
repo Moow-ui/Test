@@ -1,0 +1,1088 @@
+[
+  {
+    "id": "comptia-security-plus-threats-vulnerabilities-0001",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "threats-vulnerabilities",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "An attacker calls an employee pretending to be from the help desk and asks for the employee's password. What is this attack called?",
+    "choices": [
+      "Whaling",
+      "Smishing",
+      "Vishing",
+      "Phishing"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Voice call trick = vishing",
+    "explanation": "**Vishing** (voice phishing) uses phone calls to trick people into giving up information. Smishing uses text messages, and phishing usually uses email.\n\n**Wrong choices**\n- Smishing: Smishing uses text (SMS) messages.\n- Phishing: Phishing usually means fake emails or websites.\n- Whaling: Whaling targets senior executives, usually by email.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Social engineering"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-threats-vulnerabilities-0002",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "threats-vulnerabilities",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A text message says a package is waiting and asks the user to click a link and enter card details. What is this?",
+    "choices": [
+      "Watering hole attack",
+      "Tailgating",
+      "Smishing",
+      "Vishing"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Text message phishing = smishing",
+    "explanation": "**Smishing** is phishing by SMS text message. It often uses fake delivery or bank alerts with a link.\n\n**Wrong choices**\n- Vishing: Vishing uses voice calls.\n- Tailgating: Tailgating is following someone through a secure door.\n- Watering hole attack: A watering hole attack infects a website the targets often visit.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Social engineering"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-threats-vulnerabilities-0003",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "threats-vulnerabilities",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A phishing email is written specifically for a company's chief financial officer. What is this attack called?",
+    "choices": [
+      "Spam",
+      "Pharming",
+      "Smishing",
+      "Whaling"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Phishing aimed at top executives = whaling",
+    "explanation": "**Whaling** is a targeted phishing attack aimed at senior executives (\"big fish\") such as a CEO or CFO.\n\n**Wrong choices**\n- Spam: Spam is unwanted bulk email, not a targeted attack.\n- Smishing: Smishing uses text messages.\n- Pharming: Pharming redirects users from a real website to a fake one.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Social engineering"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-threats-vulnerabilities-0004",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "threats-vulnerabilities",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Someone without a badge follows an employee closely through a secured door before it closes. What is this called?",
+    "choices": [
+      "Tailgating",
+      "Shoulder surfing",
+      "Impersonation",
+      "Dumpster diving"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Following someone through a door = tailgating",
+    "explanation": "**Tailgating** (piggybacking) is getting into a secure area by following an authorized person. Access control vestibules (mantraps) and guards help stop it.\n\n**Wrong choices**\n- Shoulder surfing: Shoulder surfing is watching someone's screen or keyboard.\n- Dumpster diving: Dumpster diving is searching trash for information.\n- Impersonation: Impersonation is pretending to be someone else; the act described is following through a door.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Social engineering",
+      "Physical attacks"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-threats-vulnerabilities-0005",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "threats-vulnerabilities",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "An attacker registers the domain \"examp1e.com\" to trick users who mistype \"example.com\". What is this technique called?",
+    "choices": [
+      "Pharming",
+      "On-path attack",
+      "Typosquatting",
+      "Domain hijacking"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Look-alike misspelled domain = typosquatting",
+    "explanation": "**Typosquatting** (URL hijacking) uses domain names that look like real ones or match common typing mistakes to catch users.\n\n**Wrong choices**\n- Pharming: Pharming redirects traffic, for example by poisoning DNS, without relying on a typo.\n- Domain hijacking: Domain hijacking takes over the real domain's registration.\n- On-path attack: An on-path attack intercepts traffic between two parties.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Social engineering"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-threats-vulnerabilities-0006",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "threats-vulnerabilities",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which type of malware encrypts a victim's files and demands payment for the key?",
+    "choices": [
+      "Rootkit",
+      "Spyware",
+      "Ransomware",
+      "Adware"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Encrypt files + demand payment = ransomware",
+    "explanation": "**Ransomware** encrypts files or locks systems and demands a ransom. Good offline backups are the most important defense.\n\n**Wrong choices**\n- Spyware: Spyware secretly collects information.\n- Adware: Adware shows unwanted ads.\n- Rootkit: A rootkit hides deep in the system to keep hidden access.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Malware"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-threats-vulnerabilities-0007",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "threats-vulnerabilities",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which malware spreads by itself across a network without any user action?",
+    "choices": [
+      "Keylogger",
+      "Trojan",
+      "Virus",
+      "Worm"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Self-spreading over the network = worm",
+    "explanation": "A **worm** copies itself from system to system over the network without user help. A virus needs a host file and usually a user action.\n\n**Wrong choices**\n- Virus: A virus needs a user or host program to run before it spreads.\n- Trojan: A Trojan pretends to be useful software and needs the user to run it.\n- Keylogger: A keylogger records keystrokes; it does not spread by itself.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Malware"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-threats-vulnerabilities-0008",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "threats-vulnerabilities",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A user downloads a free game that also secretly installs a backdoor. What type of malware is this?",
+    "choices": [
+      "Worm",
+      "Trojan",
+      "Logic bomb",
+      "Ransomware"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Looks useful, hides malicious code = Trojan",
+    "explanation": "A **Trojan** looks like legitimate software but carries hidden malicious code, such as a remote access backdoor.\n\n**Wrong choices**\n- Worm: A worm spreads by itself; this one came hidden inside a program the user chose to install.\n- Logic bomb: A logic bomb waits for a trigger condition such as a date.\n- Ransomware: Ransomware encrypts files for payment.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Malware"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-threats-vulnerabilities-0009",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "threats-vulnerabilities",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Code left by a former employee deletes the payroll database on a set date. What is this called?",
+    "choices": [
+      "Spyware",
+      "Worm",
+      "Bloatware",
+      "Logic bomb"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Malicious code that waits for a trigger = logic bomb",
+    "explanation": "A **logic bomb** runs its harmful action only when a condition is met, such as a date or a user being removed from payroll.\n\n**Wrong choices**\n- Worm: A worm spreads by itself across networks.\n- Spyware: Spyware collects information.\n- Bloatware: Bloatware is unwanted preinstalled software.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Malware"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-threats-vulnerabilities-0010",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "threats-vulnerabilities",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Malware that hides itself deep in the operating system, often at the kernel level, to keep privileged access is called a:",
+    "choices": [
+      "Adware",
+      "Worm",
+      "Rootkit",
+      "Keylogger"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Hidden, kernel-level persistence = rootkit",
+    "explanation": "A **rootkit** hides its presence, often by changing the operating system itself, so it can keep administrator (root) access without being noticed.\n\n**Wrong choices**\n- Keylogger: A keylogger records keystrokes.\n- Adware: Adware displays ads.\n- Worm: A worm spreads over the network.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Malware"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-threats-vulnerabilities-0011",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "threats-vulnerabilities",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "An attacker tries one common password, such as \"Spring2026!\", against many different user accounts. What is this attack?",
+    "choices": [
+      "Password spraying",
+      "Dictionary attack against one account",
+      "Pass-the-hash",
+      "Brute force against one account"
+    ],
+    "answer": 1,
+    "oneLineConcept": "One password, many accounts = password spraying",
+    "explanation": "**Password spraying** tries a few common passwords across many accounts. It avoids lockouts that happen when many passwords are tried on one account.\n\n**Wrong choices**\n- Brute force against one account: Brute force tries many passwords against one account.\n- Dictionary attack against one account: A dictionary attack tries many listed words, usually on one account.\n- Pass-the-hash: Pass-the-hash reuses a stolen password hash.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Password attacks"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-threats-vulnerabilities-0012",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "threats-vulnerabilities",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A web form lets an attacker type ' OR 1=1 -- into the login box and get into the application. Which attack is this?",
+    "choices": [
+      "Directory traversal",
+      "Buffer overflow",
+      "SQL injection",
+      "Cross-site scripting"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Database commands in input = SQL injection",
+    "explanation": "**SQL injection** puts database commands into input fields. Input validation and parameterized queries (prepared statements) prevent it.\n\n**Wrong choices**\n- Cross-site scripting: XSS injects scripts that run in other users' browsers.\n- Buffer overflow: A buffer overflow writes past the end of a memory buffer.\n- Directory traversal: Directory traversal uses ../ to reach files outside the web folder.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Application attacks"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-threats-vulnerabilities-0013",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "threats-vulnerabilities",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "An attacker posts a comment containing a script that runs in the browsers of other users who view the page. Which attack is this?",
+    "choices": [
+      "Cross-site request forgery",
+      "Replay attack",
+      "SQL injection",
+      "Cross-site scripting (XSS)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Script runs in other users' browsers = XSS",
+    "explanation": "**Cross-site scripting** injects script into a web page so it runs in other visitors' browsers. Output encoding and input validation help prevent it.\n\n**Wrong choices**\n- SQL injection: SQL injection attacks the database, not other users' browsers.\n- Cross-site request forgery: CSRF tricks a logged-in user's browser into sending an unwanted request; it does not store a script on the page.\n- Replay attack: A replay attack resends captured valid data.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Application attacks"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-threats-vulnerabilities-0014",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "threats-vulnerabilities",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A request to a web server contains the path \"../../../etc/passwd\". What type of attack is being attempted?",
+    "choices": [
+      "Directory traversal",
+      "Buffer overflow",
+      "Cross-site scripting",
+      "SQL injection"
+    ],
+    "answer": 1,
+    "oneLineConcept": "../ in a path = directory traversal",
+    "explanation": "**Directory traversal** uses ../ sequences to move up the folder tree and read files outside the web root, such as /etc/passwd.\n\n**Wrong choices**\n- SQL injection: No database commands are in the request.\n- Cross-site scripting: No script is being injected.\n- Buffer overflow: The request is trying to move up folders, not overflow memory.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Application attacks"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-threats-vulnerabilities-0015",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "threats-vulnerabilities",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A program writes more data into a memory area than it was built to hold, which can let an attacker run code. What is this vulnerability?",
+    "choices": [
+      "Memory leak",
+      "Race condition",
+      "Integer rounding",
+      "Buffer overflow"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Too much data into memory = buffer overflow",
+    "explanation": "A **buffer overflow** writes past the end of a buffer and can overwrite nearby memory, sometimes letting an attacker run their own code. Input bounds checking prevents it.\n\n**Wrong choices**\n- Race condition: A race condition is a timing problem between two events.\n- Memory leak: A memory leak is memory that is never released; it does not overwrite nearby memory.\n- Integer rounding: Rounding does not overwrite memory.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Application attacks"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-threats-vulnerabilities-0016",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "threats-vulnerabilities",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A program checks a file's permissions and then opens the file a moment later. An attacker swaps the file in between. What type of flaw is this?",
+    "choices": [
+      "Buffer overflow",
+      "Privilege escalation through a default password",
+      "SQL injection",
+      "Time-of-check to time-of-use (TOCTOU) race condition"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Change between check and use = TOCTOU race condition",
+    "explanation": "A **TOCTOU race condition** happens when something changes between the moment it is checked and the moment it is used.\n\n**Wrong choices**\n- Buffer overflow: Nothing is written past a memory boundary.\n- SQL injection: No database input is involved.\n- Privilege escalation through a default password: No default password is involved.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Application attacks"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-threats-vulnerabilities-0017",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "threats-vulnerabilities",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Many compromised computers send traffic to one website at the same time so real users cannot reach it. What is this attack?",
+    "choices": [
+      "On-path attack",
+      "DNS zone transfer",
+      "Phishing",
+      "Distributed denial-of-service (DDoS)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Many systems flood one target = DDoS",
+    "explanation": "A **DDoS** attack uses many systems, often a botnet, to overwhelm a target so it is unavailable. It attacks availability.\n\n**Wrong choices**\n- On-path attack: An on-path attack intercepts traffic; it does not flood a site.\n- Phishing: Phishing tricks users; it does not flood a server.\n- DNS zone transfer: A zone transfer copies DNS records; it is not a flood.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Network attacks"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-threats-vulnerabilities-0018",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "threats-vulnerabilities",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "An attacker secretly places themselves between a user and a website and reads or changes the traffic. What is this called?",
+    "choices": [
+      "Replay attack",
+      "Denial of service",
+      "Bluesnarfing",
+      "On-path attack"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Attacker in the middle of the connection = on-path",
+    "explanation": "An **on-path attack** (formerly called man-in-the-middle) intercepts traffic between two parties and can read or change it. Encryption such as TLS helps prevent it.\n\n**Wrong choices**\n- Replay attack: A replay attack captures data and sends it again later.\n- Denial of service: DoS stops a service; it does not read traffic.\n- Bluesnarfing: Bluesnarfing steals data over Bluetooth.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Network attacks"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-threats-vulnerabilities-0019",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "threats-vulnerabilities",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "An attacker sets up a wireless access point with the same name as the company's Wi-Fi to trick users into connecting. What is this?",
+    "choices": [
+      "Jamming",
+      "Evil twin",
+      "Bluejacking",
+      "Rogue access point"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Fake AP copying the real network name = evil twin",
+    "explanation": "An **evil twin** is a fake access point using the same SSID as a real one so users connect to it and their traffic can be captured.\n\n**Wrong choices**\n- Rogue access point: A rogue AP is any unauthorized AP on the network; an evil twin specifically copies the real network's name to fool users.\n- Bluejacking: Bluejacking sends unwanted Bluetooth messages.\n- Jamming: Jamming blocks wireless signals with interference.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Wireless attacks"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-threats-vulnerabilities-0020",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "threats-vulnerabilities",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "An attacker captures a valid login token on the network and sends it again later to gain access. Which attack is this?",
+    "choices": [
+      "Replay attack",
+      "Downgrade attack",
+      "Brute force attack",
+      "Collision attack"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Resending captured valid data = replay",
+    "explanation": "A **replay attack** reuses captured valid data, such as a session token. Timestamps, nonces, and session expiry help defend against it.\n\n**Wrong choices**\n- Brute force attack: Brute force guesses credentials; it does not reuse a captured one.\n- Downgrade attack: A downgrade attack forces weaker protocols.\n- Collision attack: A collision attack finds two inputs with the same hash.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Network attacks"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-threats-vulnerabilities-0021",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "threats-vulnerabilities",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "An attacker forces a connection to use an older, weaker version of TLS that has known flaws. What is this called?",
+    "choices": [
+      "Downgrade attack",
+      "Replay attack",
+      "Pass-the-hash",
+      "Birthday attack"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Forcing weaker protocol = downgrade attack",
+    "explanation": "A **downgrade attack** tricks two systems into using an older, weaker protocol or cipher. Disabling old versions prevents it.\n\n**Wrong choices**\n- Birthday attack: A birthday attack looks for hash collisions.\n- Replay attack: A replay attack resends captured data.\n- Pass-the-hash: Pass-the-hash reuses a stolen password hash.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Cryptographic attacks"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-threats-vulnerabilities-0022",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "threats-vulnerabilities",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which threat actor is usually most motivated by money, such as through ransomware or fraud?",
+    "choices": [
+      "Nation-state",
+      "Hacktivist",
+      "Organized crime",
+      "Unskilled attacker"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Money motive = organized crime",
+    "explanation": "**Organized crime** groups mainly want financial gain. Hacktivists want to promote a cause, and nation-states mostly seek espionage or strategic advantage.\n\n**Wrong choices**\n- Hacktivist: Hacktivists are mainly driven by political or social causes.\n- Nation-state: Nation-states usually seek espionage or strategic goals.\n- Unskilled attacker: Unskilled attackers often act for fun or attention and use ready-made tools.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Threat actors"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-threats-vulnerabilities-0023",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "threats-vulnerabilities",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A group with large funding and advanced skills quietly stays inside a government network for months to spy. Which threat actor fits best?",
+    "choices": [
+      "Shadow IT",
+      "Nation-state",
+      "Hacktivist",
+      "Unskilled attacker"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Well funded, long-term spying = nation-state (APT)",
+    "explanation": "**Nation-state** actors have high resources and skills and often run long-term, stealthy campaigns called advanced persistent threats (APTs).\n\n**Wrong choices**\n- Unskilled attacker: Unskilled attackers lack the resources for long, stealthy campaigns.\n- Hacktivist: Hacktivists usually want publicity for a cause, not quiet long-term spying.\n- Shadow IT: Shadow IT is unapproved technology used by employees, not an outside attacker.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Threat actors"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-threats-vulnerabilities-0024",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "threats-vulnerabilities",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Employees set up their own cloud file-sharing accounts for work without IT approval. What is this called?",
+    "choices": [
+      "Shadow IT",
+      "Insider threat",
+      "Supply chain attack",
+      "Hacktivism"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Unapproved tech use inside a company = shadow IT",
+    "explanation": "**Shadow IT** is hardware, software, or cloud services used without IT department approval. It creates unmanaged risk.\n\n**Wrong choices**\n- Insider threat: An insider threat is someone inside who misuses access, usually on purpose; this is unapproved technology use.\n- Hacktivism: Hacktivism is attacking for a cause.\n- Supply chain attack: A supply chain attack compromises a vendor or product.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Threat actors"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-threats-vulnerabilities-0025",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "threats-vulnerabilities",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Attackers break into a software vendor and add malicious code to an update that customers then install. What is this?",
+    "choices": [
+      "Watering hole attack",
+      "Supply chain attack",
+      "Typosquatting",
+      "Brute force attack"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Compromise a vendor to reach its customers = supply chain attack",
+    "explanation": "A **supply chain attack** targets a trusted supplier, such as a software vendor, so the malicious code reaches many customers through normal updates.\n\n**Wrong choices**\n- Watering hole attack: A watering hole attack infects a website the target group visits.\n- Typosquatting: Typosquatting uses misspelled domain names.\n- Brute force attack: Brute force guesses passwords.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Threat vectors"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-threats-vulnerabilities-0026",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "threats-vulnerabilities",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A flaw that attackers exploit before the vendor knows about it or has released a patch is called a:",
+    "choices": [
+      "Misconfiguration",
+      "Legacy vulnerability",
+      "Zero-day vulnerability",
+      "False positive"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Unknown, unpatched flaw = zero-day",
+    "explanation": "A **zero-day** vulnerability is unknown to the vendor or has no patch yet, so defenders have had zero days to fix it.\n\n**Wrong choices**\n- Legacy vulnerability: Legacy systems are old systems; the term does not mean the flaw is unknown.\n- Misconfiguration: A misconfiguration is a setup mistake, not an unknown software flaw.\n- False positive: A false positive is an alert for something that is not actually a problem.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Vulnerabilities"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-threats-vulnerabilities-0027",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "threats-vulnerabilities",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which action best reduces the risk from a newly announced vulnerability in an operating system?",
+    "choices": [
+      "Rename the computer",
+      "Turn off screen savers",
+      "Apply the vendor's security patch",
+      "Change the desktop wallpaper"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Known vulnerability → patch",
+    "explanation": "**Patching** fixes known vulnerabilities. A good patch management process tests and deploys updates quickly.\n\n**Wrong choices**\n- Change the desktop wallpaper: This has no security effect.\n- Turn off screen savers: This does not fix the vulnerability.\n- Rename the computer: Renaming does not fix the flaw.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Mitigation"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-threats-vulnerabilities-0028",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "threats-vulnerabilities",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Splitting a network so that guest Wi-Fi cannot reach the payroll servers is an example of which mitigation?",
+    "choices": [
+      "Decommissioning",
+      "Encryption",
+      "Patching",
+      "Segmentation"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Separating network parts = segmentation",
+    "explanation": "**Segmentation** divides a network into parts (for example with VLANs and firewalls) so a problem in one part cannot easily spread to another.\n\n**Wrong choices**\n- Encryption: Encryption protects data but does not separate networks.\n- Patching: Patching fixes software flaws.\n- Decommissioning: Decommissioning removes old systems from use.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Mitigation"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-threats-vulnerabilities-0029",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "threats-vulnerabilities",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Removing unneeded services, closing unused ports, and changing default passwords on a server is called:",
+    "choices": [
+      "Fuzzing",
+      "Tokenization",
+      "Hardening",
+      "Sandboxing"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Reducing attack surface = hardening",
+    "explanation": "**Hardening** reduces a system's attack surface by removing what is not needed and changing insecure defaults.\n\n**Wrong choices**\n- Sandboxing: Sandboxing runs code in an isolated environment.\n- Fuzzing: Fuzzing sends random input to find bugs.\n- Tokenization: Tokenization replaces sensitive data with tokens.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Mitigation"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-threats-vulnerabilities-0030",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "threats-vulnerabilities",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "An attacker gains a regular user account and then exploits a flaw to get administrator rights. What is this called?",
+    "choices": [
+      "Credential stuffing",
+      "Privilege escalation",
+      "Lateral movement",
+      "Pivoting through a jump server"
+    ],
+    "answer": 2,
+    "oneLineConcept": "User → admin = privilege escalation",
+    "explanation": "**Privilege escalation** is gaining higher access rights than you were given, such as going from a normal user to an administrator.\n\n**Wrong choices**\n- Lateral movement: Lateral movement means moving to other systems, not gaining higher rights on one.\n- Pivoting through a jump server: A jump server is a legitimate admin tool, not this attack.\n- Credential stuffing: Credential stuffing reuses stolen username and password pairs on other sites.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Attack indicators"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-threats-vulnerabilities-0031",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "threats-vulnerabilities",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Login records show the same account signing in from New York and then from Singapore ten minutes later. What does this indicator suggest?",
+    "choices": [
+      "Impossible travel, suggesting the account may be compromised",
+      "Normal behavior for a remote worker",
+      "A DNS misconfiguration",
+      "A failed backup"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Two far-apart logins too close in time = impossible travel",
+    "explanation": "**Impossible travel** means one account logged in from places too far apart for the time between logins. It is a strong sign that credentials have been stolen.\n\n**Wrong choices**\n- Normal behavior for a remote worker: No one can travel that distance in ten minutes.\n- A DNS misconfiguration: DNS settings do not create this login pattern.\n- A failed backup: Backups are not related to login locations.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Attack indicators"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+]

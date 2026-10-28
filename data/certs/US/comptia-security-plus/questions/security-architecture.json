@@ -1,0 +1,846 @@
+[
+  {
+    "id": "comptia-security-plus-security-architecture-0001",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "security-architecture",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "In which cloud service model does the provider deliver complete, ready-to-use software, such as web email?",
+    "choices": [
+      "SaaS (Software as a Service)",
+      "On-premises",
+      "IaaS (Infrastructure as a Service)",
+      "PaaS (Platform as a Service)"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Finished software over the internet = SaaS",
+    "explanation": "In **SaaS**, the provider runs everything and the customer just uses the application. The customer still manages its own users and data.\n\n**Wrong choices**\n- IaaS (Infrastructure as a Service): IaaS gives virtual servers, storage, and networks that the customer manages.\n- PaaS (Platform as a Service): PaaS gives a platform for customers to build and run their own apps.\n- On-premises: On-premises systems are run in the company's own facility, not by a cloud provider.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Cloud models"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-security-architecture-0002",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "security-architecture",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Under the shared responsibility model for IaaS, who is usually responsible for patching the guest operating system on a virtual machine?",
+    "choices": [
+      "The internet service provider",
+      "The hardware manufacturer",
+      "The cloud provider",
+      "The customer"
+    ],
+    "answer": 4,
+    "oneLineConcept": "IaaS: customer patches the guest OS",
+    "explanation": "In **IaaS**, the provider is responsible for the physical data center, hardware, and virtualization layer. The **customer** manages the guest OS, applications, and data.\n\n**Wrong choices**\n- The cloud provider: In IaaS the provider secures the physical hosts and hypervisor, but the guest OS belongs to the customer.\n- The internet service provider: The ISP does not manage the customer's servers.\n- The hardware manufacturer: The manufacturer does not patch customer operating systems.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Cloud models",
+      "Shared responsibility"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-security-architecture-0003",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "security-architecture",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Defining servers and networks in configuration files so they can be deployed the same way every time is called:",
+    "choices": [
+      "Air gapping",
+      "Microservices",
+      "Serverless computing",
+      "Infrastructure as code (IaC)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Servers and networks defined in files = IaC",
+    "explanation": "**Infrastructure as code** describes infrastructure in files that can be versioned, reviewed, and deployed repeatedly, which reduces configuration mistakes.\n\n**Wrong choices**\n- Serverless computing: Serverless runs code without managing servers; it is not about defining infrastructure in files.\n- Microservices: Microservices split an application into small services.\n- Air gapping: Air gapping physically isolates a system from networks.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Architecture models"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-security-architecture-0004",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "security-architecture",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which systems control physical processes such as power plants and water treatment, and are often hard to patch?",
+    "choices": [
+      "Virtual desktop infrastructure",
+      "Industrial control systems (ICS/SCADA)",
+      "Content delivery networks",
+      "Customer relationship management systems"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Physical process control = ICS/SCADA",
+    "explanation": "**ICS and SCADA** systems run physical equipment in utilities and factories. They often run old software and must stay available, so they are commonly isolated with segmentation.\n\n**Wrong choices**\n- Content delivery networks: CDNs deliver web content; they do not control physical processes.\n- Virtual desktop infrastructure: VDI delivers desktops to users.\n- Customer relationship management systems: CRM systems store customer data.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Architecture models"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-security-architecture-0005",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "security-architecture",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A network that is physically disconnected from all other networks, including the internet, is said to be:",
+    "choices": [
+      "Clustered",
+      "Load balanced",
+      "Virtualized",
+      "Air-gapped"
+    ],
+    "answer": 4,
+    "oneLineConcept": "No physical connection to other networks = air gap",
+    "explanation": "An **air-gapped** system has no network connection to outside systems. It is used for very sensitive systems, but data moved by USB drives can still be a risk.\n\n**Wrong choices**\n- Load balanced: Load balancing spreads traffic across servers.\n- Virtualized: Virtualization runs many systems on one host.\n- Clustered: Clustering groups servers to work together.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Network design"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-security-architecture-0006",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "security-architecture",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Where should a company's public web server usually be placed so outside users can reach it without exposing the internal network?",
+    "choices": [
+      "Directly on an employee's laptop",
+      "In a screened subnet (DMZ)",
+      "On the same network as the HR database",
+      "Inside the internal network with no firewall"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Public-facing servers = screened subnet (DMZ)",
+    "explanation": "A **screened subnet** (DMZ) is a separate network zone between the internet and the internal network. Public servers sit there, and firewalls control traffic in both directions.\n\n**Wrong choices**\n- On the same network as the HR database: That would let attackers who reach the web server get close to sensitive data.\n- Directly on an employee's laptop: Laptops are not suitable public servers.\n- Inside the internal network with no firewall: This would expose the internal network.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Network design"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-security-architecture-0007",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "security-architecture",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A firewall device is set so that if it fails, it blocks all traffic. What is this called?",
+    "choices": [
+      "Load balancing",
+      "Fail-closed",
+      "Active-active",
+      "Fail-open"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Fails and blocks everything = fail-closed",
+    "explanation": "**Fail-closed** (fail-secure) favors security: on failure, traffic is blocked. **Fail-open** favors availability: on failure, traffic is allowed.\n\n**Wrong choices**\n- Fail-open: Fail-open lets all traffic through when the device fails.\n- Load balancing: Load balancing spreads traffic; it is not a failure mode.\n- Active-active: Active-active means two devices share traffic at the same time.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Network design"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-security-architecture-0008",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "security-architecture",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which device is placed inline and can block malicious traffic as it is detected?",
+    "choices": [
+      "Syslog server",
+      "Intrusion prevention system (IPS)",
+      "Intrusion detection system (IDS)",
+      "Network tap"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Inline and blocks = IPS; watches and alerts = IDS",
+    "explanation": "An **IPS** sits in the traffic path and can stop attacks. An **IDS** usually receives a copy of traffic and only alerts.\n\n**Wrong choices**\n- Intrusion detection system (IDS): An IDS watches and alerts but does not block traffic by itself.\n- Network tap: A tap copies traffic for monitoring; it does not block.\n- Syslog server: A syslog server collects logs.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Network devices"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-security-architecture-0009",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "security-architecture",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Remote employees need an encrypted connection to the company network over the internet. Which technology is designed for this?",
+    "choices": [
+      "VPN",
+      "VLAN",
+      "DNS",
+      "NAT"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Encrypted tunnel over the internet = VPN",
+    "explanation": "A **VPN** creates an encrypted tunnel across an untrusted network so remote users can safely reach internal resources. IPsec and TLS are common VPN protocols.\n\n**Wrong choices**\n- VLAN: A VLAN separates traffic inside a local network; it does not encrypt internet connections.\n- NAT: NAT translates addresses; it does not encrypt.\n- DNS: DNS resolves names to addresses.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Secure communication"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-security-architecture-0010",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "security-architecture",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Which approach checks the identity and device health of each user and gives access only to specific applications instead of the whole network?",
+    "choices": [
+      "Port mirroring",
+      "Flat network",
+      "Site-to-site VPN",
+      "Zero trust network access (ZTNA)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Per-application access after checks = ZTNA",
+    "explanation": "**ZTNA** applies zero trust to remote access: each request is checked and the user reaches only the applications they are allowed to use, not the whole network.\n\n**Wrong choices**\n- Site-to-site VPN: A site-to-site VPN joins whole networks together.\n- Flat network: A flat network has no segmentation at all.\n- Port mirroring: Port mirroring copies traffic for monitoring.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Secure communication",
+      "Zero trust"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-security-architecture-0011",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "security-architecture",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Customer credit card numbers are an example of which data type that needs strong protection?",
+    "choices": [
+      "Public data",
+      "Open-source code",
+      "Marketing brochures",
+      "Regulated financial data"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Card numbers = regulated financial data (PCI DSS)",
+    "explanation": "Card numbers are **regulated** financial data. Organizations that handle them must follow rules such as the PCI DSS standard.\n\n**Wrong choices**\n- Public data: Public data is meant to be shared freely.\n- Open-source code: Source code shared publicly is not regulated financial data.\n- Marketing brochures: Brochures are meant for the public.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Data types"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-security-architecture-0012",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "security-architecture",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A database replaces each real card number with a random value that has no mathematical link to the original; the real number is stored only in a secure vault. What is this?",
+    "choices": [
+      "Masking",
+      "Hashing",
+      "Tokenization",
+      "Steganography"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Random stand-in value + secure vault = tokenization",
+    "explanation": "**Tokenization** swaps sensitive data for a random token. The token is useless if stolen, and only the token vault can map it back.\n\n**Wrong choices**\n- Hashing: A hash is calculated from the original data, so it does have a mathematical link.\n- Masking: Masking hides part of the data, such as showing only the last four digits.\n- Steganography: Steganography hides data inside other files.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Data protection"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-security-architecture-0013",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "security-architecture",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A receipt shows a card number as **** **** **** 1234. What data protection method is this?",
+    "choices": [
+      "Masking",
+      "Encryption",
+      "Tokenization",
+      "Hashing"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Hiding part of the data = masking",
+    "explanation": "**Data masking** hides part of the data so people see only what they need, such as the last four digits.\n\n**Wrong choices**\n- Encryption: Encryption scrambles the whole value so it can be decrypted later.\n- Tokenization: Tokenization replaces the whole value with a token.\n- Hashing: Hashing turns the value into a fixed-length fingerprint.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Data protection"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-security-architecture-0014",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "security-architecture",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Data being sent from a laptop to a web server is in which state?",
+    "choices": [
+      "Data in transit",
+      "Data in use",
+      "Data in archive",
+      "Data at rest"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Moving across a network = data in transit",
+    "explanation": "Data has three states: **at rest** (stored), **in transit** (moving over a network), and **in use** (being processed). TLS protects data in transit.\n\n**Wrong choices**\n- Data at rest: Data at rest is stored on a disk or other storage.\n- Data in use: Data in use is being processed in memory.\n- Data in archive: Archived data is stored data, a form of data at rest.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Data states"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-security-architecture-0015",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "security-architecture",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Laws that require certain data to be stored inside a specific country relate to which concept?",
+    "choices": [
+      "Data retention",
+      "Data sovereignty",
+      "Data masking",
+      "Data classification"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Country's laws over where data lives = data sovereignty",
+    "explanation": "**Data sovereignty** means data is subject to the laws of the country where it is stored. Some laws require data to stay inside the country.\n\n**Wrong choices**\n- Data masking: Masking hides part of data.\n- Data retention: Retention is about how long data is kept.\n- Data classification: Classification is about labeling data by sensitivity.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Data protection"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-security-architecture-0016",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "security-architecture",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which backup site has power, network connections, and equipment ready with current data, so it can take over almost immediately?",
+    "choices": [
+      "Hot site",
+      "Mobile site",
+      "Warm site",
+      "Cold site"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Ready almost immediately = hot site",
+    "explanation": "A **hot site** is a fully equipped duplicate with current data. A **warm site** needs some setup, and a **cold site** has only space and basic utilities.\n\n**Wrong choices**\n- Cold site: A cold site has space and power but little or no equipment.\n- Warm site: A warm site has some equipment but needs time and data to be ready.\n- Mobile site: A mobile site is a portable facility that still needs setup.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Resilience",
+      "Recovery sites"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-security-architecture-0017",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "security-architecture",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A business says it can lose no more than 4 hours of data in a disaster. Which metric does this describe?",
+    "choices": [
+      "Mean time between failures (MTBF)",
+      "Recovery point objective (RPO)",
+      "Mean time to repair (MTTR)",
+      "Recovery time objective (RTO)"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Maximum acceptable data loss = RPO",
+    "explanation": "**RPO** is the maximum amount of data, measured in time, that can be lost. Backups must run at least this often. **RTO** is how fast systems must be back online.\n\n**Wrong choices**\n- Recovery time objective (RTO): RTO is how quickly service must be restored, not how much data may be lost.\n- Mean time between failures (MTBF): MTBF is the average time a device works before failing.\n- Mean time to repair (MTTR): MTTR is the average time to fix something.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Resilience"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-security-architecture-0018",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "security-architecture",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A system must be back online within 2 hours after an outage. Which metric is this?",
+    "choices": [
+      "Recovery point objective (RPO)",
+      "Annualized rate of occurrence (ARO)",
+      "Recovery time objective (RTO)",
+      "Mean time between failures (MTBF)"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Maximum time to restore = RTO",
+    "explanation": "**RTO** is the target time to restore a service after a disruption.\n\n**Wrong choices**\n- Recovery point objective (RPO): RPO is how much data can be lost.\n- Mean time between failures (MTBF): MTBF measures reliability, not a recovery target.\n- Annualized rate of occurrence (ARO): ARO is how often a risk is expected each year.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Resilience"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-security-architecture-0019",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "security-architecture",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A full backup runs on Sunday, and differential backups run Monday through Saturday. Data is lost on Thursday. What is needed to restore?",
+    "choices": [
+      "Sunday's full backup and every differential from Monday to Wednesday",
+      "Only Wednesday's differential",
+      "Only Sunday's full backup",
+      "Sunday's full backup and Wednesday's differential"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Differential restore = last full + latest differential",
+    "explanation": "A **differential** backup copies all changes since the last full backup. To restore, you need the **last full backup plus the most recent differential**. Incremental backups would need the full backup plus every incremental after it.\n\n**Wrong choices**\n- Sunday's full backup and every differential from Monday to Wednesday: Each differential already contains all changes since the full backup, so only the latest is needed.\n- Only Wednesday's differential: A differential needs the full backup it is based on.\n- Only Sunday's full backup: That would miss all changes made Monday to Wednesday.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Backups"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-security-architecture-0020",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "security-architecture",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which device keeps servers running for a short time during a power outage so they can shut down safely or switch to a generator?",
+    "choices": [
+      "Surge protector",
+      "UPS (uninterruptible power supply)",
+      "Load balancer",
+      "Power distribution unit without batteries"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Battery power during outages = UPS",
+    "explanation": "A **UPS** uses batteries to provide power for a short time during an outage. A generator provides longer-term power.\n\n**Wrong choices**\n- Surge protector: A surge protector only blocks voltage spikes.\n- Load balancer: A load balancer spreads network traffic.\n- Power distribution unit without batteries: A basic PDU distributes power but has no batteries.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Resilience",
+      "Power"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-security-architecture-0021",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "security-architecture",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Spreading incoming web traffic across several servers so that no single server is overloaded and one failure does not stop the service is called:",
+    "choices": [
+      "Snapshotting",
+      "Journaling",
+      "Load balancing",
+      "Air gapping"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Spread traffic across servers = load balancing",
+    "explanation": "**Load balancing** distributes traffic across multiple servers. It improves performance and availability, because the service keeps running if one server fails.\n\n**Wrong choices**\n- Air gapping: Air gapping isolates a system.\n- Journaling: Journaling records changes for recovery.\n- Snapshotting: Snapshots capture a point-in-time copy of a system.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Resilience"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-security-architecture-0022",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "security-architecture",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A team simulates a disaster by talking through their recovery plan around a table without touching any systems. What kind of test is this?",
+    "choices": [
+      "Tabletop exercise",
+      "Failover test",
+      "Full interruption test",
+      "Parallel processing test"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Discussion-only walk-through = tabletop exercise",
+    "explanation": "A **tabletop exercise** is a discussion-based test where participants walk through their roles in a scenario. It is low-cost and does not disrupt systems.\n\n**Wrong choices**\n- Failover test: A failover test actually switches to backup systems.\n- Parallel processing test: Parallel processing runs primary and backup systems at the same time.\n- Full interruption test: A full interruption test actually shuts down the primary site.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Resilience testing"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-security-architecture-0023",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "security-architecture",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A company buys firewalls from two different vendors so that one vendor's flaw does not affect both layers. What concept is this?",
+    "choices": [
+      "Single point of failure",
+      "Vendor lock-in",
+      "Shadow IT",
+      "Vendor diversity"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Different vendors for resilience = vendor diversity",
+    "explanation": "**Vendor diversity** (platform diversity) uses products from different suppliers so a single flaw or failure does not take down every layer.\n\n**Wrong choices**\n- Vendor lock-in: Lock-in is depending on one vendor.\n- Single point of failure: Using two vendors avoids a single point of failure.\n- Shadow IT: Shadow IT is unapproved technology use.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Resilience"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-security-architecture-0024",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "security-architecture",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "What is a key security concern specific to virtualization?",
+    "choices": [
+      "Monitors with low resolution",
+      "Users forgetting their passwords",
+      "VM escape, where an attacker breaks out of a virtual machine to reach the host",
+      "Printers running out of toner"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Breaking out of a VM to the host = VM escape",
+    "explanation": "**VM escape** is when code inside a virtual machine breaks out to the hypervisor or host, which could expose every other VM. Keeping hypervisors patched reduces this risk.\n\n**Wrong choices**\n- Users forgetting their passwords: This is a general issue, not specific to virtualization.\n- Printers running out of toner: This is not a virtualization security concern.\n- Monitors with low resolution: This is not a security concern.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Virtualization"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  }
+]

@@ -1,0 +1,842 @@
+[
+  {
+    "id": "comptia-security-plus-program-management-0001",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "program-management",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A company decides to buy cyber insurance to cover losses from a data breach. Which risk response is this?",
+    "choices": [
+      "Transfer",
+      "Mitigate",
+      "Avoid",
+      "Accept"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Insurance = risk transference",
+    "explanation": "**Transferring** risk moves the financial impact to another party, such as an insurer. The four common responses are accept, avoid, transfer, and mitigate.\n\n**Wrong choices**\n- Accept: Accepting means taking the risk without further action.\n- Avoid: Avoiding means stopping the risky activity altogether.\n- Mitigate: Mitigating means adding controls to reduce the risk.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Risk management"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-program-management-0002",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "program-management",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A company stops offering a risky online service completely because the risk is too high. Which risk response is this?",
+    "choices": [
+      "Mitigate",
+      "Avoid",
+      "Transfer",
+      "Accept"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Stop the activity = avoid",
+    "explanation": "**Avoiding** risk means not doing the activity that creates it.\n\n**Wrong choices**\n- Transfer: Transfer shifts the impact to another party, such as an insurer.\n- Accept: Accepting keeps the activity and the risk.\n- Mitigate: Mitigating keeps the activity but adds controls.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Risk management"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-program-management-0003",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "program-management",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A server is worth $20,000. A flood would destroy 50% of its value, and floods are expected once every 10 years. What is the annualized loss expectancy (ALE)?",
+    "choices": [
+      "$100,000",
+      "$2,000",
+      "$10,000",
+      "$1,000"
+    ],
+    "answer": 4,
+    "oneLineConcept": "ALE = SLE × ARO; SLE = asset value × exposure factor",
+    "explanation": "Work it out step by step:\n1. SLE = asset value × exposure factor = $20,000 × 0.5 = $10,000\n2. ARO = once every 10 years = 0.1 per year\n3. ALE = SLE × ARO = $10,000 × 0.1 = **$1,000**\n\nCheck: $1,000 a year × 10 years = $10,000, which is one flood's loss.\n\n**Wrong choices**\n- $10,000: That is the single loss expectancy, before multiplying by how often it happens each year.\n- $2,000: This uses the full asset value instead of the 50% exposure factor.\n- $100,000: This multiplies instead of using a yearly rate of 0.1.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Risk analysis"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-program-management-0004",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "program-management",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "In quantitative risk analysis, what does ARO stand for?",
+    "choices": [
+      "Accepted risk outcome: the risk left after controls",
+      "Annualized rate of occurrence: how many times a year a loss is expected",
+      "Asset recovery objective: how fast an asset must be restored",
+      "Average risk owner: the person who owns most risks"
+    ],
+    "answer": 2,
+    "oneLineConcept": "ARO = expected yearly frequency",
+    "explanation": "**ARO** is how often a loss is expected per year. Once every 4 years means ARO = 0.25. ALE = SLE × ARO.\n\n**Wrong choices**\n- Asset recovery objective: how fast an asset must be restored: That describes a recovery time target, not ARO.\n- Average risk owner: the person who owns most risks: This is not a risk analysis term.\n- Accepted risk outcome: the risk left after controls: Risk left after controls is residual risk.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Risk analysis"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-program-management-0005",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "program-management",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "After controls are put in place, the risk that still remains is called:",
+    "choices": [
+      "Risk appetite",
+      "Residual risk",
+      "Inherent risk",
+      "Risk transfer"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Risk left after controls = residual risk",
+    "explanation": "**Inherent risk** exists before controls. **Residual risk** is what remains afterward, and management decides whether it is acceptable.\n\n**Wrong choices**\n- Inherent risk: Inherent risk is the risk before any controls.\n- Risk appetite: Risk appetite is how much risk an organization is willing to take.\n- Risk transfer: Risk transfer is a response, not the remaining risk.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Risk management"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-program-management-0006",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "program-management",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which document lists identified risks, their owners, ratings, and planned responses?",
+    "choices": [
+      "Acceptable use policy",
+      "Risk register",
+      "Network diagram",
+      "Asset tag"
+    ],
+    "answer": 2,
+    "oneLineConcept": "List of risks with owners and responses = risk register",
+    "explanation": "A **risk register** tracks each risk, its likelihood and impact, the owner, and the chosen response.\n\n**Wrong choices**\n- Asset tag: An asset tag labels a piece of equipment.\n- Acceptable use policy: An AUP sets rules for using company systems.\n- Network diagram: A network diagram shows how systems connect.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Risk management"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-program-management-0007",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "program-management",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A business impact analysis (BIA) is mainly used to:",
+    "choices": [
+      "Identify critical business functions and the impact if they are disrupted",
+      "Choose the color scheme for security dashboards",
+      "Scan servers for missing patches",
+      "Test whether employees click phishing links"
+    ],
+    "answer": 1,
+    "oneLineConcept": "BIA = which functions matter most and what disruption costs",
+    "explanation": "A **business impact analysis** finds the most critical functions and what an outage would cost. It helps set targets such as RTO and RPO.\n\n**Wrong choices**\n- Test whether employees click phishing links: That is a phishing simulation.\n- Scan servers for missing patches: That is a vulnerability scan.\n- Choose the color scheme for security dashboards: That is not a security analysis.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Business impact analysis"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-program-management-0008",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "program-management",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which document sets out the rules for how employees may use company computers, email, and internet access?",
+    "choices": [
+      "Non-disclosure agreement",
+      "Memorandum of understanding",
+      "Acceptable use policy (AUP)",
+      "Service-level agreement"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Rules for using company systems = AUP",
+    "explanation": "An **acceptable use policy** tells users what they may and may not do with company systems and data.\n\n**Wrong choices**\n- Service-level agreement: An SLA sets service performance between a provider and customer.\n- Non-disclosure agreement: An NDA protects confidential information.\n- Memorandum of understanding: An MOU describes a general agreement between parties.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Governance"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-program-management-0009",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "program-management",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which is the best example of a procedure rather than a policy?",
+    "choices": [
+      "Step-by-step instructions for resetting a user's password",
+      "A rule that the company follows a security framework",
+      "A statement of management's commitment to security",
+      "A statement that all data must be protected according to its classification"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Policy = what and why; procedure = step-by-step how",
+    "explanation": "A **policy** states high-level goals and rules. **Standards** set specific requirements, and **procedures** give step-by-step instructions to carry them out.\n\n**Wrong choices**\n- A statement that all data must be protected according to its classification: That is a high-level policy statement.\n- A rule that the company follows a security framework: That is a governance or policy decision.\n- A statement of management's commitment to security: That is a policy statement.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Governance"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-program-management-0010",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "program-management",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "In data governance, who is usually accountable for deciding how a set of data is classified and who may access it?",
+    "choices": [
+      "Data owner",
+      "Data custodian",
+      "Data processor",
+      "Data subject"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Owner decides; custodian carries it out",
+    "explanation": "The **data owner**, usually a senior business leader, is accountable for the data and decides its classification and access. The **custodian** carries out the technical care.\n\n**Wrong choices**\n- Data custodian: The custodian handles day-to-day care such as backups and access setup, following the owner's decisions.\n- Data processor: A processor handles data on behalf of a controller.\n- Data subject: The data subject is the person the data is about.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Data roles"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-program-management-0011",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "program-management",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Under privacy laws such as GDPR, a company that decides why and how personal data is processed is called the:",
+    "choices": [
+      "Data subject",
+      "Data processor",
+      "Data custodian",
+      "Data controller"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Decides purpose and means = data controller",
+    "explanation": "The **controller** decides the purpose and means of processing personal data. A **processor**, such as a cloud payroll vendor, processes it on the controller's behalf.\n\n**Wrong choices**\n- Data processor: A processor handles data on the controller's behalf, following its instructions.\n- Data custodian: A custodian takes care of data storage and protection.\n- Data subject: The data subject is the person the data is about.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Privacy"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-program-management-0012",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "program-management",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which agreement defines the uptime and response times a vendor promises to deliver, often with penalties if missed?",
+    "choices": [
+      "Memorandum of understanding (MOU)",
+      "Non-disclosure agreement (NDA)",
+      "Master service agreement (MSA)",
+      "Service-level agreement (SLA)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Promised service levels = SLA",
+    "explanation": "An **SLA** sets measurable service levels, such as 99.9% uptime or a 4-hour response time, and what happens if they are not met.\n\n**Wrong choices**\n- Non-disclosure agreement (NDA): An NDA covers keeping information confidential.\n- Memorandum of understanding (MOU): An MOU is usually less formal and often not binding.\n- Master service agreement (MSA): An MSA sets general terms for future work; specific service levels are usually in an SLA.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Third-party risk"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-program-management-0013",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "program-management",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Before signing with a new cloud vendor, a company sends a questionnaire and reviews the vendor's security audit reports. What is this activity?",
+    "choices": [
+      "Penetration test of the vendor without permission",
+      "Vendor assessment (due diligence)",
+      "Incident containment",
+      "Data masking"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Checking a vendor before signing = due diligence",
+    "explanation": "**Due diligence** in vendor selection checks a supplier's security, for example with questionnaires, audit reports, and right-to-audit clauses.\n\n**Wrong choices**\n- Penetration test of the vendor without permission: Testing a vendor's systems without permission is not allowed.\n- Incident containment: Containment is part of incident response.\n- Data masking: Masking hides parts of data.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Third-party risk"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-program-management-0014",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "program-management",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Before a penetration test begins, which document sets what systems may be tested, when, and how?",
+    "choices": [
+      "Rules of engagement",
+      "Acceptable use policy",
+      "Data retention policy",
+      "Chain of custody"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Pen test scope and limits = rules of engagement",
+    "explanation": "The **rules of engagement** describe the scope, timing, allowed methods, and contacts for a penetration test, and give written permission.\n\n**Wrong choices**\n- Acceptable use policy: An AUP sets rules for employees' use of systems.\n- Chain of custody: Chain of custody tracks evidence handling.\n- Data retention policy: Retention policies set how long data is kept.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Audits and assessments"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-program-management-0015",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "program-management",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Penetration testers are given full details of the network and source code before testing. What kind of test is this?",
+    "choices": [
+      "Known environment (white box) test",
+      "Unknown environment (black box) test",
+      "Partially known environment (gray box) test",
+      "Tabletop exercise"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Full information = known environment (white box)",
+    "explanation": "In a **known environment** (white box) test, testers have full information. In an **unknown environment** (black box) test, they start with none, like an outside attacker.\n\n**Wrong choices**\n- Unknown environment (black box) test: In a black box test the testers get little or no information.\n- Partially known environment (gray box) test: Gray box testers get only some information.\n- Tabletop exercise: A tabletop exercise is a discussion, not a technical test.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Audits and assessments"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-program-management-0016",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "program-management",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A company sends fake phishing emails to its own staff and gives extra training to those who click. What is this?",
+    "choices": [
+      "A penetration test of the firewall",
+      "Phishing simulation for security awareness",
+      "A denial-of-service test",
+      "A real attack by organized crime"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Fake phishing to train staff = phishing campaign",
+    "explanation": "**Phishing simulations** test whether employees recognize phishing and help target training to those who need it. They are part of a **security awareness** program.\n\n**Wrong choices**\n- A real attack by organized crime: The company runs it on its own staff for training.\n- A denial-of-service test: No traffic flood is involved.\n- A penetration test of the firewall: This tests people, not the firewall.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Security awareness"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-program-management-0017",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "program-management",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "What should employees be trained to do when they receive a suspicious email?",
+    "choices": [
+      "Reply to the sender to ask if it is real",
+      "Forward it to all coworkers as a warning",
+      "Report it through the company's reporting process without clicking links",
+      "Open the attachment to check what it is"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Suspicious email → report, don't click",
+    "explanation": "Security awareness training teaches users to **report** suspicious messages through the official channel so the security team can investigate and warn others.\n\n**Wrong choices**\n- Forward it to all coworkers as a warning: Forwarding spreads the malicious email further.\n- Reply to the sender to ask if it is real: Replying confirms the address is active and may lead to more tricks.\n- Open the attachment to check what it is: Opening it may run malware.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Security awareness"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-program-management-0018",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "program-management",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Requiring that one person cannot both create a new vendor in the payment system and approve payments to that vendor is an example of:",
+    "choices": [
+      "Separation of duties",
+      "Least functionality",
+      "Mandatory vacation",
+      "Job rotation"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Split a critical task between people = separation of duties",
+    "explanation": "**Separation of duties** splits a sensitive process so no single person can commit and hide fraud alone.\n\n**Wrong choices**\n- Job rotation: Job rotation moves staff between roles over time.\n- Mandatory vacation: Mandatory vacation forces time off so others can spot fraud.\n- Least functionality: Least functionality removes unneeded features from systems.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Governance"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-program-management-0019",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "program-management",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A company that processes credit card payments must follow which standard?",
+    "choices": [
+      "GDPR",
+      "PCI DSS",
+      "HIPAA",
+      "SOX"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Card payments = PCI DSS",
+    "explanation": "The **Payment Card Industry Data Security Standard** applies to organizations that store, process, or transmit payment card data.\n\n**Wrong choices**\n- HIPAA: HIPAA covers health information in the United States.\n- GDPR: GDPR covers personal data of people in the EU.\n- SOX: SOX covers financial reporting by public companies.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Compliance"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-program-management-0020",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "program-management",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A U.S. hospital must protect patients' health records. Which law most directly applies?",
+    "choices": [
+      "SOX",
+      "PCI DSS",
+      "HIPAA",
+      "GDPR"
+    ],
+    "answer": 3,
+    "oneLineConcept": "U.S. health information = HIPAA",
+    "explanation": "**HIPAA** sets rules for protecting health information in the United States.\n\n**Wrong choices**\n- PCI DSS: PCI DSS is for payment card data.\n- GDPR: GDPR is the EU's personal data law.\n- SOX: SOX is about financial reporting.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Compliance"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-program-management-0021",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "program-management",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "What is a likely consequence when an organization fails to meet a required compliance standard?",
+    "choices": [
+      "Fines, loss of licenses, and damage to reputation",
+      "Lower insurance premiums",
+      "Automatic improvement in network speed",
+      "Exemption from future audits"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Non-compliance = fines, sanctions, reputation damage",
+    "explanation": "**Consequences of non-compliance** can include fines, sanctions, loss of a license or the right to process cards, contract problems, and harm to reputation.\n\n**Wrong choices**\n- Automatic improvement in network speed: Non-compliance does not improve performance.\n- Lower insurance premiums: Non-compliance usually raises costs, not lowers them.\n- Exemption from future audits: Non-compliance usually leads to more scrutiny.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Compliance"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-program-management-0022",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "program-management",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A company's risk appetite is described as \"conservative.\" What does that mean?",
+    "choices": [
+      "The company transfers every risk to insurers",
+      "The company prefers to take large risks for large rewards",
+      "The company ignores all risks",
+      "The company is willing to accept only a small amount of risk"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Conservative appetite = low willingness to take risk",
+    "explanation": "**Risk appetite** is how much risk an organization is willing to take to reach its goals. A **conservative** appetite accepts little risk.\n\n**Wrong choices**\n- The company ignores all risks: Ignoring risks is not a risk appetite.\n- The company prefers to take large risks for large rewards: That is an expansionary appetite.\n- The company transfers every risk to insurers: Risk appetite is about how much risk is accepted, not one response type.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Risk management"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-program-management-0023",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "program-management",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Which agreement is commonly signed to make sure a business partner keeps shared confidential information secret?",
+    "choices": [
+      "Non-disclosure agreement (NDA)",
+      "Service-level agreement (SLA)",
+      "Business partners agreement only about profit sharing",
+      "Acceptable use policy"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Keep shared information secret = NDA",
+    "explanation": "An **NDA** legally requires the parties to keep shared confidential information private.\n\n**Wrong choices**\n- Service-level agreement (SLA): An SLA is about service performance.\n- Business partners agreement only about profit sharing: Profit sharing does not protect confidentiality.\n- Acceptable use policy: An AUP is for employees' use of systems.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Third-party risk"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-program-management-0024",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "program-management",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A company hires an outside firm to check its controls and issue a formal report that customers can rely on. What is this?",
+    "choices": [
+      "Internal self-assessment",
+      "External audit with attestation",
+      "Vulnerability scan by the IT team",
+      "Phishing simulation"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Independent outside review = external audit/attestation",
+    "explanation": "An **external audit** is done by an independent party, which gives an **attestation** (formal statement) about the controls that others can trust.\n\n**Wrong choices**\n- Internal self-assessment: A self-assessment is done by the company itself and is not independent.\n- Vulnerability scan by the IT team: A scan finds technical flaws but is not a formal independent attestation.\n- Phishing simulation: A phishing simulation tests users.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Audits and assessments"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+]
