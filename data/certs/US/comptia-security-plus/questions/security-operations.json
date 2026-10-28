@@ -1,0 +1,1122 @@
+[
+  {
+    "id": "comptia-security-plus-security-operations-0001",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "security-operations",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which of these is an example of multifactor authentication?",
+    "choices": [
+      "A username plus a password",
+      "A password plus a security question",
+      "Two different passwords",
+      "A password plus a code from a phone authenticator app"
+    ],
+    "answer": 4,
+    "oneLineConcept": "MFA = two or more different factor types",
+    "explanation": "**Multifactor authentication** combines different types of factors: something you know (password), something you have (phone, token), and something you are (fingerprint).\n\n**Wrong choices**\n- A password plus a security question: Both are something you know, so this is one factor type used twice.\n- Two different passwords: Both are something you know.\n- A username plus a password: A username is not an authentication factor.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Identity and access"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-security-operations-0002",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "security-operations",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A fingerprint scan is which authentication factor?",
+    "choices": [
+      "Something you have",
+      "Something you know",
+      "Somewhere you are",
+      "Something you are"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Biometrics = something you are",
+    "explanation": "Biometrics such as fingerprints, face, and iris are **something you are**.\n\n**Wrong choices**\n- Something you know: Passwords and PINs are something you know.\n- Something you have: Phones, smart cards, and tokens are something you have.\n- Somewhere you are: Location is a separate attribute, not a fingerprint.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Identity and access"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-security-operations-0003",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "security-operations",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Users sign in once and can then reach many company applications without logging in again. What is this?",
+    "choices": [
+      "Account lockout",
+      "Password spraying",
+      "Multifactor authentication",
+      "Single sign-on (SSO)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "One login, many apps = SSO",
+    "explanation": "**Single sign-on** lets a user authenticate once and access many systems. SAML and OpenID Connect are common SSO standards.\n\n**Wrong choices**\n- Multifactor authentication: MFA uses multiple factor types; it does not by itself remove repeated logins.\n- Password spraying: Password spraying is an attack.\n- Account lockout: Lockout blocks an account after failed attempts.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Identity and access"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-security-operations-0004",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "security-operations",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which standard is commonly used to let a user approve a third-party app to access their data without giving the app their password?",
+    "choices": [
+      "RADIUS",
+      "LDAP",
+      "SNMP",
+      "OAuth"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Delegated authorization without sharing passwords = OAuth",
+    "explanation": "**OAuth** is an authorization framework that gives an app limited access to a user's data using tokens, without sharing the user's password.\n\n**Wrong choices**\n- LDAP: LDAP is a directory access protocol.\n- RADIUS: RADIUS is used for network access authentication.\n- SNMP: SNMP is used to manage network devices.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Identity and access"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-security-operations-0005",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "security-operations",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Giving each user only the access they need to do their job is the principle of:",
+    "choices": [
+      "Job rotation",
+      "Implicit trust",
+      "Least privilege",
+      "Separation of duties"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Only what you need = least privilege",
+    "explanation": "**Least privilege** limits each account to the minimum access required. It reduces damage if an account is misused or compromised.\n\n**Wrong choices**\n- Separation of duties: Separation of duties splits critical tasks among different people.\n- Implicit trust: Implicit trust is what zero trust avoids.\n- Job rotation: Job rotation moves people between roles over time.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Identity and access"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-security-operations-0006",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "security-operations",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "In which access control model do permissions depend on a user's job role, such as \"Nurse\" or \"Accountant\"?",
+    "choices": [
+      "Role-based access control (RBAC)",
+      "Rule-based access control",
+      "Discretionary access control (DAC)",
+      "Mandatory access control (MAC)"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Access by job role = RBAC",
+    "explanation": "In **RBAC**, permissions are given to roles, and users get access by being placed in roles. It is easy to manage in large organizations.\n\n**Wrong choices**\n- Mandatory access control (MAC): MAC uses security labels such as Secret or Top Secret.\n- Discretionary access control (DAC): In DAC the data owner decides who gets access.\n- Rule-based access control: Rule-based uses rules such as time of day, not job roles.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Access control models"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-security-operations-0007",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "security-operations",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "In which access control model are labels such as \"Secret\" and \"Top Secret\" assigned to data and clearances to users, and users cannot change the rules?",
+    "choices": [
+      "Role-based access control (RBAC)",
+      "Attribute-based access control (ABAC)",
+      "Mandatory access control (MAC)",
+      "Discretionary access control (DAC)"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Labels and clearances set by the system = MAC",
+    "explanation": "In **MAC**, the system enforces access based on labels and clearances, and users cannot override it. It is common in military and government systems.\n\n**Wrong choices**\n- Discretionary access control (DAC): In DAC the owner can change who has access.\n- Role-based access control (RBAC): RBAC uses job roles, not classification labels.\n- Attribute-based access control (ABAC): ABAC uses many attributes, such as department and time, not just fixed labels.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Access control models"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-security-operations-0008",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "security-operations",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A tool that gives administrators temporary, checked-out admin credentials and records their sessions is called:",
+    "choices": [
+      "Mobile device management (MDM)",
+      "Network access control (NAC)",
+      "Privileged access management (PAM)",
+      "Data loss prevention (DLP)"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Controlled, audited admin access = PAM",
+    "explanation": "**PAM** tools protect powerful accounts with features such as password vaulting, just-in-time access, and session recording.\n\n**Wrong choices**\n- Data loss prevention (DLP): DLP stops sensitive data from leaving the organization.\n- Mobile device management (MDM): MDM manages phones and tablets.\n- Network access control (NAC): NAC checks devices before they join the network.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Identity and access"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-security-operations-0009",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "security-operations",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which tool collects logs from many systems in one place and correlates events to raise security alerts?",
+    "choices": [
+      "SIEM",
+      "WAF",
+      "DLP",
+      "VPN"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Central logs + correlation + alerts = SIEM",
+    "explanation": "A **SIEM** (security information and event management) system gathers logs, correlates events across sources, and alerts analysts to possible incidents.\n\n**Wrong choices**\n- DLP: DLP watches for sensitive data leaving the organization.\n- VPN: A VPN creates encrypted tunnels.\n- WAF: A WAF filters web application traffic.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Monitoring"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-security-operations-0010",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "security-operations",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "An alert fires for malware, but investigation shows the file is safe. What is this called?",
+    "choices": [
+      "True negative",
+      "False positive",
+      "False negative",
+      "True positive"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Alert on something harmless = false positive",
+    "explanation": "A **false positive** is an alert for something that is not actually a threat. A **false negative**, missing a real attack, is usually more dangerous.\n\n**Wrong choices**\n- False negative: A false negative is a real attack that was not detected.\n- True positive: A true positive is a real attack that was correctly detected.\n- True negative: A true negative is a safe event correctly not alerted.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Monitoring"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-security-operations-0011",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "security-operations",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which tool is designed to stop employees from emailing or uploading sensitive data such as customer records outside the company?",
+    "choices": [
+      "Intrusion detection system",
+      "Load balancer",
+      "Honeypot",
+      "Data loss prevention (DLP)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Stop sensitive data leaving = DLP",
+    "explanation": "**DLP** tools inspect data in email, uploads, and devices, and can block or alert when sensitive information is about to leave the organization.\n\n**Wrong choices**\n- Intrusion detection system: An IDS looks for attacks on the network; it is not focused on outgoing sensitive data.\n- Load balancer: A load balancer spreads traffic.\n- Honeypot: A honeypot is a decoy for attackers.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Enterprise security"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-security-operations-0012",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "security-operations",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Before a laptop can join the corporate network, the network checks that it has current patches and antivirus. What technology does this?",
+    "choices": [
+      "Single sign-on (SSO)",
+      "Web application firewall (WAF)",
+      "Data loss prevention (DLP)",
+      "Network access control (NAC)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Device health check before network access = NAC",
+    "explanation": "**NAC** checks devices against a policy (patches, antivirus, configuration) before allowing them onto the network, and can place them in a quarantine network if they fail.\n\n**Wrong choices**\n- Data loss prevention (DLP): DLP is about data leaving, not checking devices before they connect.\n- Web application firewall (WAF): A WAF filters web application traffic.\n- Single sign-on (SSO): SSO is about user logins to applications.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Enterprise security"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-security-operations-0013",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "security-operations",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which tool is installed on laptops and servers to watch for suspicious behavior and let analysts isolate an infected device?",
+    "choices": [
+      "NAC",
+      "Proxy server",
+      "SIEM",
+      "EDR (endpoint detection and response)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Endpoint behavior monitoring + response = EDR",
+    "explanation": "**EDR** agents monitor endpoint activity, detect suspicious behavior, and let responders investigate and isolate devices. XDR extends this across more data sources.\n\n**Wrong choices**\n- NAC: NAC checks devices when they connect, but does not continuously investigate behavior on the device.\n- SIEM: A SIEM collects logs centrally; it is not an agent on each endpoint.\n- Proxy server: A proxy forwards web requests.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Enterprise security"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-security-operations-0014",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "security-operations",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which device filters traffic to and from a web application to block attacks such as SQL injection and cross-site scripting?",
+    "choices": [
+      "Network-layer firewall only",
+      "UPS",
+      "Web application firewall (WAF)",
+      "Switch"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Protects web apps from SQLi/XSS = WAF",
+    "explanation": "A **WAF** inspects HTTP traffic and blocks web application attacks such as SQL injection and XSS.\n\n**Wrong choices**\n- Network-layer firewall only: A basic firewall filters by address and port, not web application content.\n- Switch: A switch forwards frames on a local network.\n- UPS: A UPS supplies backup power.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Enterprise security"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-security-operations-0015",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "security-operations",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which wireless security protocol is the most secure choice for a new Wi-Fi network?",
+    "choices": [
+      "WPA",
+      "Open network with no encryption",
+      "WPA3",
+      "WEP"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Best Wi-Fi security today = WPA3",
+    "explanation": "**WPA3** is the current Wi-Fi security standard. It uses SAE instead of the older pre-shared key handshake, which makes offline password guessing much harder.\n\n**Wrong choices**\n- WEP: WEP is old and easily broken.\n- WPA: WPA (first version) is outdated.\n- Open network with no encryption: An open network has no encryption.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Wireless security"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-security-operations-0016",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "security-operations",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A company wants each employee to log into Wi-Fi with their own network username and password checked by a central server. What should it use?",
+    "choices": [
+      "WPA3-Personal with one shared password",
+      "WPA3-Enterprise with 802.1X and a RADIUS server",
+      "WEP with a long key",
+      "Hiding the network name (SSID)"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Per-user Wi-Fi login = Enterprise mode + 802.1X + RADIUS",
+    "explanation": "**Enterprise** mode uses **802.1X**, and the access point checks each user's credentials with a **RADIUS** server. Personal mode uses one shared passphrase.\n\n**Wrong choices**\n- WPA3-Personal with one shared password: Personal mode uses one shared password for everyone.\n- WEP with a long key: WEP is insecure no matter the key length.\n- Hiding the network name (SSID): Hiding the SSID does not provide user authentication.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Wireless security"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-security-operations-0017",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "security-operations",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A company lets employees use their own phones for work email. Which tool lets IT enforce a passcode and remotely wipe company data?",
+    "choices": [
+      "Network-based firewall",
+      "Mobile device management (MDM)",
+      "SIEM",
+      "Hardware security module"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Manage and wipe mobile devices = MDM",
+    "explanation": "**MDM** enforces policies on phones and tablets, such as passcodes and encryption, and can remotely wipe lost devices. This supports BYOD programs.\n\n**Wrong choices**\n- Network-based firewall: A firewall filters traffic; it does not manage phones.\n- Hardware security module: An HSM stores cryptographic keys.\n- SIEM: A SIEM collects and correlates logs.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Mobile security"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-security-operations-0018",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "security-operations",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Running a suspicious email attachment in an isolated environment to see what it does without risking real systems is called:",
+    "choices": [
+      "Fuzzing",
+      "Sandboxing",
+      "Hashing",
+      "Jailbreaking"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Isolated test environment = sandbox",
+    "explanation": "A **sandbox** is an isolated environment where untrusted code can run safely. Security tools use it to watch the behavior of suspicious files.\n\n**Wrong choices**\n- Fuzzing: Fuzzing sends random data to software to find bugs.\n- Hashing: Hashing creates a fingerprint of data.\n- Jailbreaking: Jailbreaking removes restrictions on a mobile device.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Application security"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-security-operations-0019",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "security-operations",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A security team uses a scanner that reports a vulnerability on a server, but the server is not actually affected. What should the team do next?",
+    "choices": [
+      "Ignore all future scan results",
+      "Validate the finding and mark it as a false positive if confirmed",
+      "Immediately shut down the server permanently",
+      "Turn off the vulnerability scanner"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Vulnerability scan results must be validated",
+    "explanation": "In **vulnerability management**, findings are analyzed and validated before action. A confirmed false positive is documented so it does not waste time again.\n\n**Wrong choices**\n- Ignore all future scan results: Scans are still needed; only this result was wrong.\n- Immediately shut down the server permanently: There is no confirmed problem.\n- Turn off the vulnerability scanner: Turning off scanning would hide real problems.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Vulnerability management"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-security-operations-0020",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "security-operations",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A vulnerability has a CVSS base score of 9.8. What does this tell the team?",
+    "choices": [
+      "It is a critical-severity vulnerability that should be fixed with high priority",
+      "It affects exactly 98 percent of systems",
+      "It is a low-severity issue that can wait",
+      "It has already been exploited at that company"
+    ],
+    "answer": 1,
+    "oneLineConcept": "CVSS 9.0–10.0 = critical",
+    "explanation": "The **Common Vulnerability Scoring System** rates severity from 0 to 10. Scores from 9.0 to 10.0 are **critical**, so the issue should be fixed quickly.\n\n**Wrong choices**\n- It is a low-severity issue that can wait: Scores near 10 are critical, not low.\n- It has already been exploited at that company: CVSS rates severity; it does not say the company was attacked.\n- It affects exactly 98 percent of systems: The score is a severity rating, not a percentage of systems.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Vulnerability management"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-security-operations-0021",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "security-operations",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A unique identifier such as CVE-2024-12345 refers to what?",
+    "choices": [
+      "A publicly known vulnerability",
+      "A specific malware family name",
+      "A firewall rule number",
+      "A software license key"
+    ],
+    "answer": 1,
+    "oneLineConcept": "CVE = ID for a publicly known vulnerability",
+    "explanation": "**CVE** (Common Vulnerabilities and Exposures) gives each publicly known vulnerability a unique ID so everyone can refer to the same flaw.\n\n**Wrong choices**\n- A specific malware family name: CVE identifies vulnerabilities, not malware families.\n- A firewall rule number: CVE has nothing to do with firewall rules.\n- A software license key: CVE is not a license.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Vulnerability management"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-security-operations-0022",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "security-operations",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "An analyst finds an infected server. Which action is containment?",
+    "choices": [
+      "Buying new antivirus licenses before any incident",
+      "Writing a report on what went wrong",
+      "Disconnecting the server from the network to stop the spread",
+      "Reimaging the server to remove the malware"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Stop the spread = containment",
+    "explanation": "**Containment** limits the damage, for example by isolating infected systems. **Eradication** then removes the cause, and **recovery** returns systems to normal.\n\n**Wrong choices**\n- Reimaging the server to remove the malware: Removing the malware is eradication.\n- Writing a report on what went wrong: That happens during lessons learned.\n- Buying new antivirus licenses before any incident: That is preparation.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Incident response"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-security-operations-0023",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "security-operations",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "After an incident is fully resolved, the team meets to discuss what happened and how to improve. Which phase is this?",
+    "choices": [
+      "Detection",
+      "Containment",
+      "Lessons learned",
+      "Preparation"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Review and improve after the incident = lessons learned",
+    "explanation": "The **lessons learned** phase reviews the incident and feeds improvements back into preparation.\n\n**Wrong choices**\n- Detection: Detection is spotting the incident.\n- Containment: Containment stops the incident from spreading.\n- Preparation: Preparation is done before incidents happen, though it uses lessons learned.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Incident response"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-security-operations-0024",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "security-operations",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "In digital forensics, a document that records every person who handled a piece of evidence and when is called:",
+    "choices": [
+      "Order of volatility",
+      "Legal hold",
+      "Acceptable use policy",
+      "Chain of custody"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Record of who handled evidence = chain of custody",
+    "explanation": "A **chain of custody** shows who collected, handled, and stored evidence, so it can be trusted in court.\n\n**Wrong choices**\n- Legal hold: A legal hold requires keeping data for a legal case; it does not track handlers.\n- Order of volatility: Order of volatility is the order to collect data based on how quickly it disappears.\n- Acceptable use policy: An AUP sets rules for how employees use systems.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Digital forensics"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-security-operations-0025",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "security-operations",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "When collecting evidence from a running computer, which should be collected first based on the order of volatility?",
+    "choices": [
+      "Printed reports",
+      "Contents of RAM (memory)",
+      "Data on the hard drive",
+      "Archived backup tapes"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Most volatile first = memory before disk",
+    "explanation": "The **order of volatility** says to collect the most short-lived data first. CPU cache and **RAM** disappear when power is lost, so they come before disk and backups.\n\n**Wrong choices**\n- Data on the hard drive: Disk data lasts longer than memory.\n- Archived backup tapes: Backups are among the least volatile.\n- Printed reports: Printed paper does not change.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Digital forensics"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-security-operations-0026",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "security-operations",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A company is told to keep all emails about a lawsuit and not delete them. What is this called?",
+    "choices": [
+      "Right to be forgotten",
+      "Data retention policy",
+      "Legal hold",
+      "Chain of custody"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Preserve data for litigation = legal hold",
+    "explanation": "A **legal hold** requires an organization to preserve relevant data for a legal matter, even if normal policy would delete it.\n\n**Wrong choices**\n- Chain of custody: Chain of custody tracks who handled evidence.\n- Data retention policy: A retention policy sets normal storage periods; a legal hold overrides it for a case.\n- Right to be forgotten: This is a privacy right to have data deleted.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Digital forensics"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-security-operations-0027",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "security-operations",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A security team writes a script that automatically disables accounts of employees who leave the company. What is a main benefit of this automation?",
+    "choices": [
+      "Faster and more consistent results with fewer human errors",
+      "It makes the system harder to update",
+      "It guarantees no attacks will succeed",
+      "It removes the need for any security policies"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Automation = speed, consistency, fewer mistakes",
+    "explanation": "**Automation and orchestration** speed up repeated tasks such as account deprovisioning and apply them the same way every time. A risk is that a bad script can repeat a mistake quickly.\n\n**Wrong choices**\n- It removes the need for any security policies: Automation still needs policies to follow.\n- It guarantees no attacks will succeed: No tool guarantees that.\n- It makes the system harder to update: Automation usually makes updates easier.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Automation"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-security-operations-0028",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "security-operations",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "When a company retires old hard drives that held sensitive data, what is the most secure way to make sure the data cannot be recovered?",
+    "choices": [
+      "Delete the files and empty the recycle bin",
+      "Quick-format the drives",
+      "Physically destroy the drives, for example by shredding",
+      "Rename all the folders"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Most secure disposal = physical destruction",
+    "explanation": "For sensitive data, **physical destruction** (shredding, crushing, incineration) makes recovery practically impossible. A certificate of destruction is often kept as proof.\n\n**Wrong choices**\n- Delete the files and empty the recycle bin: Deleted files can often be recovered.\n- Quick-format the drives: A quick format does not erase the data itself.\n- Rename all the folders: Renaming does not remove data.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Asset management"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-security-operations-0029",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "security-operations",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which document lists all hardware and software an organization owns, along with who is responsible for each item?",
+    "choices": [
+      "Network diagram only",
+      "Asset inventory",
+      "Incident report",
+      "Risk register"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Know what you own = asset inventory",
+    "explanation": "An **asset inventory** tracks each asset and its owner. You cannot protect what you do not know you have.\n\n**Wrong choices**\n- Incident report: An incident report describes a security event.\n- Risk register: A risk register lists risks, not every asset.\n- Network diagram only: A diagram shows connections but not full ownership details.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Asset management"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-security-operations-0030",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "security-operations",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A firewall has these rules, checked from top to bottom: 1) Allow TCP 443 from any to the web server, 2) Deny all. A user cannot reach the web server on TCP 80. Why?",
+    "choices": [
+      "Rule 2 denies all traffic not matched by rule 1, and port 80 is not allowed",
+      "Port 80 is always encrypted",
+      "Rule 1 blocks port 80 directly",
+      "Firewalls cannot filter by port"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Rules checked in order; implicit/explicit deny catches the rest",
+    "explanation": "Firewall rules are checked **in order**. Traffic to port 80 does not match rule 1 (443 only), so it falls to the **deny all** rule.\n\n**Wrong choices**\n- Rule 1 blocks port 80 directly: Rule 1 only allows port 443; it does not mention port 80.\n- Firewalls cannot filter by port: Firewalls commonly filter by port.\n- Port 80 is always encrypted: Port 80 is plain HTTP, and encryption does not change rule matching.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Firewall rules"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-security-operations-0031",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "security-operations",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which protocol should replace Telnet to manage network devices remotely in a secure way?",
+    "choices": [
+      "FTP",
+      "SNMPv1",
+      "HTTP",
+      "SSH"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Secure remote command line = SSH (port 22)",
+    "explanation": "**SSH** encrypts remote administration sessions. Telnet sends everything, including passwords, in clear text.\n\n**Wrong choices**\n- FTP: FTP transfers files without encryption.\n- HTTP: HTTP is not encrypted.\n- SNMPv1: SNMPv1 sends community strings in clear text.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Secure protocols"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-security-operations-0032",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "security-operations",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What is the correct first phase of the incident response process?",
+    "choices": [
+      "Preparation",
+      "Eradication",
+      "Lessons learned",
+      "Containment"
+    ],
+    "answer": 1,
+    "oneLineConcept": "IR starts with preparation; lessons learned comes last",
+    "explanation": "Incident response starts with **preparation** (plans, tools, training) before any incident happens. Then come detection, analysis, containment, eradication, recovery, and lessons learned.\n\n**Wrong choices**\n- Containment: Containment comes after an incident is detected and analyzed.\n- Lessons learned: Lessons learned is the final phase.\n- Eradication: Eradication removes the cause after containment.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Incident response"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  }
+]

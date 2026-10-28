@@ -1,0 +1,67 @@
+{
+  "notesBy": "ai",
+  "subjects": [
+    {
+      "id": "security-plus",
+      "name": "Security+ (SY0-701)",
+      "questionCount": 90,
+      "chapters": [
+        {
+          "id": "general-security-concepts",
+          "name": "General Security Concepts",
+          "importance": 3,
+          "examWeight": 12,
+          "summary": "Security control categories and types, the CIA triad, non-repudiation, AAA, zero trust, deception technology, change management, and cryptography (encryption, hashing, digital signatures, PKI, certificates).",
+          "keyPoints": [
+            "Confidentiality, integrity, and availability are the CIA triad.",
+            "Hashing is one-way; encryption can be reversed with the right key."
+          ]
+        },
+        {
+          "id": "threats-vulnerabilities",
+          "name": "Threats, Vulnerabilities, and Mitigations",
+          "importance": 4,
+          "examWeight": 22,
+          "summary": "Threat actors and motivations, threat vectors and social engineering, application and system vulnerabilities, indicators of malware, password, application, network, and cryptographic attacks, and mitigation techniques such as segmentation, patching, and hardening.",
+          "keyPoints": [
+            "Phishing is email; vishing is voice; smishing is text message.",
+            "Ransomware encrypts files and demands payment."
+          ]
+        },
+        {
+          "id": "security-architecture",
+          "name": "Security Architecture",
+          "importance": 3,
+          "examWeight": 18,
+          "summary": "Security implications of cloud, on-premises, virtualization, IoT, ICS/SCADA, and infrastructure as code; secure network design and placement of devices; data types and protection methods; and resilience, backups, and recovery sites.",
+          "keyPoints": [
+            "A hot site can take over almost immediately; a cold site has space and power but little else.",
+            "RTO is how fast you must recover; RPO is how much data you can afford to lose."
+          ]
+        },
+        {
+          "id": "security-operations",
+          "name": "Security Operations",
+          "importance": 5,
+          "examWeight": 28,
+          "summary": "Hardening and secure baselines, wireless and mobile security, asset management, vulnerability management, logging and monitoring (SIEM), firewalls, IDS/IPS, DLP, NAC, EDR, identity and access management, automation, incident response, and digital forensics.",
+          "keyPoints": [
+            "Incident response: preparation, detection, analysis, containment, eradication, recovery, lessons learned.",
+            "MFA combines two or more different factor types."
+          ]
+        },
+        {
+          "id": "program-management",
+          "name": "Security Program Management and Oversight",
+          "importance": 3,
+          "examWeight": 20,
+          "summary": "Security governance (policies, standards, procedures), risk management and business impact analysis, third-party risk and agreements, compliance and privacy, audits and penetration testing, and security awareness training.",
+          "keyPoints": [
+            "Risk responses: accept, avoid, transfer, mitigate.",
+            "ALE = SLE x ARO."
+          ]
+        }
+      ]
+    }
+  ]
+}

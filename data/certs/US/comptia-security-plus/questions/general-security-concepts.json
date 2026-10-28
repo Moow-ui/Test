@@ -1,0 +1,812 @@
+[
+  {
+    "id": "comptia-security-plus-general-security-concepts-0001",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "general-security-concepts",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which part of the CIA triad is protected when only authorized people can read a file?",
+    "choices": [
+      "Integrity",
+      "Availability",
+      "Non-repudiation",
+      "Confidentiality"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Confidentiality = only authorized people can see data",
+    "explanation": "**Confidentiality** keeps information secret from anyone who is not allowed to see it. Encryption and access controls are common ways to protect it.\n\n**Wrong choices**\n- Integrity: Integrity means data is not changed without authorization.\n- Availability: Availability means systems and data are there when needed.\n- Non-repudiation: Non-repudiation means someone cannot deny an action they took.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "CIA triad"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-general-security-concepts-0002",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "general-security-concepts",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A company stores a hash of each file so it can detect if a file is changed. Which security goal does this support?",
+    "choices": [
+      "Authorization",
+      "Availability",
+      "Integrity",
+      "Confidentiality"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Hash comparison = integrity check",
+    "explanation": "If even one bit of a file changes, its hash changes. Comparing hashes shows whether data was altered, which protects **integrity**.\n\n**Wrong choices**\n- Availability: Hashes do not keep systems running.\n- Confidentiality: A hash does not hide the file's contents.\n- Authorization: Authorization decides what a user may do.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "CIA triad",
+      "Hashing"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-general-security-concepts-0003",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "general-security-concepts",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A web server is kept running with redundant power and a backup server. Which part of the CIA triad does this mainly protect?",
+    "choices": [
+      "Availability",
+      "Confidentiality",
+      "Accounting",
+      "Integrity"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Redundancy = availability",
+    "explanation": "**Availability** means systems and data can be used when needed. Redundant power, backup servers, and failover all protect availability.\n\n**Wrong choices**\n- Integrity: Integrity is about data not being changed without permission.\n- Confidentiality: Confidentiality is about keeping data secret.\n- Accounting: Accounting is about recording what users do.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "CIA triad"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-general-security-concepts-0004",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "general-security-concepts",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A user sends a message signed with their private key. Later the user claims they never sent it. Which concept prevents this denial?",
+    "choices": [
+      "Least privilege",
+      "Non-repudiation",
+      "Obfuscation",
+      "Availability"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Digital signature = non-repudiation",
+    "explanation": "A digital signature made with a person's private key proves the message came from them. This **non-repudiation** means the sender cannot believably deny sending it.\n\n**Wrong choices**\n- Availability: Availability is about access to systems, not proof of who sent something.\n- Obfuscation: Obfuscation makes something harder to understand; it does not prove who acted.\n- Least privilege: Least privilege limits access rights; it does not prove authorship.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Non-repudiation",
+      "Digital signatures"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-general-security-concepts-0005",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "general-security-concepts",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "In AAA, which step answers the question \"What is this user allowed to do?\"",
+    "choices": [
+      "Authentication",
+      "Accounting",
+      "Authorization",
+      "Auditing"
+    ],
+    "answer": 3,
+    "oneLineConcept": "AAA: authenticate → authorize → account",
+    "explanation": "**AAA** stands for authentication (prove who you are), **authorization** (decide what you may do), and accounting (record what you did).\n\n**Wrong choices**\n- Authentication: Authentication proves who the user is.\n- Accounting: Accounting records what the user did.\n- Auditing: Auditing reviews records later; it does not grant permissions.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "AAA"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-general-security-concepts-0006",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "general-security-concepts",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A security guard and a locked server room door are examples of which control category?",
+    "choices": [
+      "Technical",
+      "Managerial",
+      "Physical",
+      "Operational"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Guards, locks, fences = physical controls",
+    "explanation": "**Physical** controls protect real-world spaces and equipment: guards, locks, fences, badges, and cameras.\n\n**Wrong choices**\n- Technical: Technical controls are built into hardware or software, such as firewalls.\n- Managerial: Managerial controls are policies and risk decisions.\n- Operational: Operational controls are day-to-day processes carried out by people, such as awareness training.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Control categories"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-general-security-concepts-0007",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "general-security-concepts",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A company requires a written risk assessment before any new system is approved. What control category is this?",
+    "choices": [
+      "Operational",
+      "Technical",
+      "Managerial",
+      "Physical"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Policies and risk assessments = managerial controls",
+    "explanation": "**Managerial** (administrative) controls are about planning and oversight: policies, risk assessments, and security planning.\n\n**Wrong choices**\n- Technical: Technical controls are enforced by systems, such as encryption or firewalls.\n- Physical: Physical controls protect places and equipment.\n- Operational: Operational controls are day-to-day tasks done by people, not the high-level policy and risk decisions.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Control categories"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-general-security-concepts-0008",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "general-security-concepts",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A warning sign that says \"Authorized personnel only - violators will be prosecuted\" is mainly which control type?",
+    "choices": [
+      "Deterrent",
+      "Corrective",
+      "Compensating",
+      "Detective"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Warning sign = deterrent",
+    "explanation": "A **deterrent** control discourages someone from trying an attack. A warning sign does not stop entry by itself but makes people think twice.\n\n**Wrong choices**\n- Detective: Detective controls find problems that are happening or have happened, such as logs or alarms.\n- Corrective: Corrective controls fix problems after they occur, such as restoring from backup.\n- Compensating: Compensating controls are substitutes used when a main control cannot be used.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Control types"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-general-security-concepts-0009",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "general-security-concepts",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Reviewing log files to find signs of an intrusion is which type of control?",
+    "choices": [
+      "Detective",
+      "Deterrent",
+      "Directive",
+      "Preventive"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Logs, alarms, cameras reviewed = detective",
+    "explanation": "**Detective** controls identify and record events that are happening or already happened. Log review, intrusion detection, and alarms are detective.\n\n**Wrong choices**\n- Preventive: Preventive controls stop an event before it happens, such as a firewall rule.\n- Deterrent: Deterrent controls discourage attackers, such as warning signs.\n- Directive: Directive controls tell people what to do, such as a policy.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Control types"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-general-security-concepts-0010",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "general-security-concepts",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "An old system cannot support multifactor authentication, so the company places it on an isolated network segment instead. What type of control is the isolation?",
+    "choices": [
+      "Compensating",
+      "Directive",
+      "Corrective",
+      "Deterrent"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Substitute control when the normal one cannot be used = compensating",
+    "explanation": "A **compensating** control is an alternative that reduces risk when the usual control cannot be used. Isolation stands in for the missing MFA.\n\n**Wrong choices**\n- Corrective: Corrective controls repair damage after an incident.\n- Deterrent: Deterrent controls discourage attackers.\n- Directive: Directive controls instruct people through policies or procedures.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Control types"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-general-security-concepts-0011",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "general-security-concepts",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which statement best describes a zero trust approach?",
+    "choices": [
+      "Trust all devices that are inside the company network",
+      "Trust users after they log in once each day",
+      "Trust any device that has antivirus installed",
+      "Never trust by default; verify every request no matter where it comes from"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Zero trust = verify every request",
+    "explanation": "**Zero trust** assumes no user or device is trusted just because of its location. Every access request is checked using identity, device health, and policy.\n\n**Wrong choices**\n- Trust all devices that are inside the company network: That is the old perimeter model that zero trust replaces.\n- Trust users after they log in once each day: Zero trust keeps checking each request, not just once a day.\n- Trust any device that has antivirus installed: Having antivirus alone does not grant trust.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Zero trust"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-general-security-concepts-0012",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "general-security-concepts",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "In a zero trust architecture, which component makes the decision to allow or deny access?",
+    "choices": [
+      "Implicit trust zone",
+      "Subject",
+      "Policy enforcement point",
+      "Policy engine"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Policy engine decides; enforcement point enforces",
+    "explanation": "In zero trust, the **policy engine** decides whether a request is allowed, the policy administrator passes on that decision, and the **policy enforcement point** allows or blocks the traffic.\n\n**Wrong choices**\n- Policy enforcement point: The enforcement point carries out the decision; it does not make it.\n- Implicit trust zone: Zero trust tries to make implicit trust zones as small as possible; a zone does not decide.\n- Subject: The subject is the user or system asking for access.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Zero trust"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-general-security-concepts-0013",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "general-security-concepts",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A fake server set up to attract attackers and watch what they do is called a:",
+    "choices": [
+      "Bastion host",
+      "Honeypot",
+      "Jump server",
+      "Proxy server"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Decoy system to study attackers = honeypot",
+    "explanation": "A **honeypot** is a decoy system with no real business value. Any activity on it is suspicious, so it helps defenders spot and study attackers.\n\n**Wrong choices**\n- Bastion host: A bastion host is a hardened server exposed to the internet on purpose to provide a service.\n- Jump server: A jump server is a controlled system used to reach other systems.\n- Proxy server: A proxy forwards requests on behalf of clients.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Deception"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-general-security-concepts-0014",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "general-security-concepts",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Before a firewall change is made, the change management process requires a backout plan. What is the purpose of a backout plan?",
+    "choices": [
+      "To permanently delete the old configuration",
+      "To return the system to its previous state if the change causes problems",
+      "To list who approved the change",
+      "To schedule the change during business hours"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Backout plan = how to undo a failed change",
+    "explanation": "A **backout plan** (rollback plan) explains how to undo a change and restore the previous working state if the change fails.\n\n**Wrong choices**\n- To list who approved the change: Approvals are recorded separately; that is not the backout plan.\n- To schedule the change during business hours: A backout plan is about undoing a change, not scheduling it.\n- To permanently delete the old configuration: The old configuration is kept so you can return to it.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Change management"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-general-security-concepts-0015",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "general-security-concepts",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which type of encryption uses the same key to encrypt and decrypt data?",
+    "choices": [
+      "Steganography",
+      "Asymmetric",
+      "Hashing",
+      "Symmetric"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Same key both ways = symmetric",
+    "explanation": "**Symmetric** encryption, such as AES, uses one shared secret key for both encrypting and decrypting. It is fast, but the key must be shared safely.\n\n**Wrong choices**\n- Asymmetric: Asymmetric encryption uses a public key and a private key.\n- Hashing: Hashing is one-way and has no decryption key.\n- Steganography: Steganography hides data inside other data; it is not a key type.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Encryption"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-general-security-concepts-0016",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "general-security-concepts",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which of these is a symmetric encryption algorithm?",
+    "choices": [
+      "AES",
+      "SHA-256",
+      "RSA",
+      "ECC"
+    ],
+    "answer": 1,
+    "oneLineConcept": "AES = symmetric",
+    "explanation": "**AES** (Advanced Encryption Standard) is a widely used symmetric algorithm. RSA and ECC are asymmetric, and SHA-256 is a hash.\n\n**Wrong choices**\n- RSA: RSA is asymmetric.\n- SHA-256: SHA-256 is a hashing algorithm.\n- ECC: ECC (elliptic curve cryptography) is asymmetric.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Encryption"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-general-security-concepts-0017",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "general-security-concepts",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Alice wants to send Bob a message that only Bob can read, using asymmetric encryption. Which key should Alice use to encrypt it?",
+    "choices": [
+      "Alice's public key",
+      "Bob's public key",
+      "Alice's private key",
+      "Bob's private key"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Encrypt for Bob = Bob's public key",
+    "explanation": "With asymmetric encryption, you encrypt with the **recipient's public key**. Only the matching private key, which Bob keeps secret, can decrypt it.\n\n**Wrong choices**\n- Bob's private key: Only Bob should ever have his private key.\n- Alice's private key: Encrypting with Alice's private key creates a signature anyone could check, not secrecy.\n- Alice's public key: Then only Alice could decrypt it.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Asymmetric encryption"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-general-security-concepts-0018",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "general-security-concepts",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "To create a digital signature, the sender encrypts the hash of the message with which key?",
+    "choices": [
+      "A shared symmetric key",
+      "The sender's private key",
+      "The sender's public key",
+      "The receiver's public key"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Sign with your private key; others verify with your public key",
+    "explanation": "A **digital signature** is made by hashing the message and encrypting the hash with the **sender's private key**. Anyone can check it with the sender's public key.\n\n**Wrong choices**\n- The receiver's public key: That is used to keep a message secret, not to sign it.\n- The sender's public key: The public key is used by others to check the signature.\n- A shared symmetric key: A shared key cannot prove which person signed.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Digital signatures"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-general-security-concepts-0019",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "general-security-concepts",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What is the main difference between hashing and encryption?",
+    "choices": [
+      "Hashing needs a private key, while encryption does not",
+      "Hashing hides data, while encryption only checks it",
+      "Hashing is one-way, while encryption can be reversed with the right key",
+      "Hashing makes data longer, while encryption makes it shorter"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Hash = one-way fingerprint; encryption = reversible",
+    "explanation": "A **hash** is a fixed-length fingerprint of data and cannot be turned back into the original. **Encryption** scrambles data so it can be unscrambled with the correct key.\n\n**Wrong choices**\n- Hashing needs a private key, while encryption does not: Hashing does not use a key to reverse the output.\n- Hashing makes data longer, while encryption makes it shorter: A hash is a fixed length; encryption output is about the size of the input.\n- Hashing hides data, while encryption only checks it: It is the other way: encryption hides data, and hashing checks integrity.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Hashing"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-general-security-concepts-0020",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "general-security-concepts",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A website owner wants browsers to trust its certificate. Who signs the certificate to make that trust possible?",
+    "choices": [
+      "The user's browser",
+      "A certificate authority (CA)",
+      "The domain name registrar",
+      "The website's own web server"
+    ],
+    "answer": 2,
+    "oneLineConcept": "CA signs certificates; browsers trust the CA",
+    "explanation": "In public key infrastructure (PKI), a **certificate authority** checks the requester and signs the certificate. Browsers trust certificates signed by CAs in their trusted root store.\n\n**Wrong choices**\n- The website's own web server: A self-signed certificate is not trusted by browsers by default.\n- The user's browser: The browser checks certificates; it does not sign them.\n- The domain name registrar: Registrars handle domain names, not certificate signing.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "PKI",
+      "Certificates"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-general-security-concepts-0021",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "general-security-concepts",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A browser needs to check, in real time, whether a single certificate has been revoked. Which method does this?",
+    "choices": [
+      "CSR",
+      "Key escrow",
+      "OCSP",
+      "CRL"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Real-time revocation check = OCSP",
+    "explanation": "The **Online Certificate Status Protocol (OCSP)** asks the CA's responder about one certificate's status right now. A CRL is a periodically published list of revoked certificates.\n\n**Wrong choices**\n- CRL: A certificate revocation list is a full list that is downloaded and checked, not a single real-time query.\n- CSR: A certificate signing request asks a CA to issue a certificate.\n- Key escrow: Key escrow stores a copy of keys with a trusted third party.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "PKI",
+      "Certificates"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-general-security-concepts-0022",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "general-security-concepts",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Adding a random value to each password before hashing it so that identical passwords produce different hashes is called:",
+    "choices": [
+      "Tokenization",
+      "Obfuscation",
+      "Salting",
+      "Key stretching"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Random value added before hashing = salt",
+    "explanation": "A **salt** is a random value added to each password before hashing. It makes identical passwords have different hashes and defeats precomputed rainbow tables.\n\n**Wrong choices**\n- Key stretching: Key stretching repeats hashing many times to slow down attacks; it is not the random value itself.\n- Tokenization: Tokenization replaces sensitive data with a token.\n- Obfuscation: Obfuscation makes code or data harder to read.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Hashing",
+      "Passwords"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "comptia-security-plus-general-security-concepts-0023",
+    "certId": "comptia-security-plus",
+    "subjectId": "security-plus",
+    "chapterId": "general-security-concepts",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which item is a trusted chip on a computer's motherboard that securely stores keys and supports features like full-disk encryption?",
+    "choices": [
+      "Hardware security module (HSM)",
+      "Trusted Platform Module (TPM)",
+      "Secure enclave on a web server",
+      "Key escrow service"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Motherboard key chip = TPM",
+    "explanation": "A **TPM** is a chip on the motherboard that stores keys securely and supports features such as full-disk encryption and secure boot checks.\n\n**Wrong choices**\n- Hardware security module (HSM): An HSM is a separate, usually network or plug-in device for managing many keys, not a chip on a PC motherboard.\n- Secure enclave on a web server: A secure enclave is a protected area of a processor, but the motherboard key chip described here is the TPM.\n- Key escrow service: Key escrow is a service that holds copies of keys.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-29",
+    "tags": [
+      "Cryptographic hardware"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+]

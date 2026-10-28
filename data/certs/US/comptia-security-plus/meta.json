@@ -1,12 +1,15 @@
 {
   "id": "comptia-security-plus",
   "country": "US",
+  "addedAt": "2026-10-29",
   "name": "CompTIA Security+",
   "officialName": "CompTIA Security+ Certification",
   "spacedName": "CompTIA Security+",
   "shortNames": [
     "Security+",
-    "Sec+"
+    "Sec+",
+    "Security Plus",
+    "SY0-701"
   ],
   "relatedCertIds": [
     "comptia-a-plus"
@@ -19,5 +22,65 @@
     "url": "https://www.comptia.org"
   },
   "trademarkNotice": "CompTIA and Security+ are registered trademarks of CompTIA, Inc.",
-  "order": 390
+  "order": 390,
+  "updatedAt": "2026-10-29",
+  "examInfo": {
+    "totalQuestions": 90,
+    "timeLimitMinutes": 90,
+    "format": "The real CompTIA Security+ exam (version V7, exam SY0-701) is one exam with a maximum of 90 questions in 90 minutes, mixing multiple-choice and performance-based questions. This practice exam is one 90-question, 90-minute set of single-answer multiple-choice questions with four choices, spread across the five exam domains by their published weights. It has no performance-based questions. All questions on this site are original AI-written practice questions, not real exam questions.",
+    "choiceCount": 4,
+    "passCriteria": {
+      "averageScore": 75,
+      "subjectMinScore": null,
+      "shortLabel": "75% practice target",
+      "description": "CompTIA scores Security+ on a scale of 100 to 900, and the passing score is 750. Scaled scores cannot be turned into a percent of questions correct, so this site uses 75% correct as a practice target only. It is not an official conversion."
+    }
+  },
+  "content": {
+    "eligibility": "CompTIA does not require any other certification before you take Security+. For V7 (SY0-701), CompTIA recommends CompTIA Network+ and two years of experience in a security or systems administrator job role.",
+    "intro": "CompTIA Security+ is a widely recognized entry-level cybersecurity certification. It checks that you can handle core security work: understanding security controls and cryptography, recognizing threats and attacks, securing networks and cloud systems, running day-to-day security operations such as monitoring, access management, and incident response, and supporting risk management, compliance, and security awareness. The current exam is V7 (SY0-701). It has a maximum of 90 questions in 90 minutes and a passing score of 750 on a scale of 100 to 900.",
+    "trendSummary": "CompTIA publishes the domain weights for Security+ V7 (SY0-701): Security operations is the largest domain at 28%, followed by Threats, vulnerabilities, and mitigations (22%), Security program management and oversight (20%), Security architecture (18%), and General security concepts (12%). CompTIA has announced Security+ V8 (SY0-801), expected to launch on or around November 17, 2026, with the same five domain areas but different weights and added coverage such as AI-related risks. V7 stays available in English until June 11, 2027.",
+    "studyTip": "Learn the vocabulary first: security control types, the CIA triad, common attacks, and the meaning of each acronym. Then spend the most time on Security operations, the largest domain, and practice reading short scenarios and choosing the best control, tool, or next step. Many questions ask what you should do first or what is the best choice, so compare all four choices before you answer.",
+    "faqs": [
+      {
+        "question": "What is the passing score for Security+?",
+        "answer": "CompTIA lists 750 on a scale of 100 to 900 for both V7 (SY0-701) and V8 (SY0-801). This is a scaled score, not a percent, so this site uses 75% correct only as a practice target."
+      },
+      {
+        "question": "How long is the Security+ exam?",
+        "answer": "CompTIA lists a maximum of 90 questions in 90 minutes. The real exam mixes multiple-choice and performance-based questions."
+      },
+      {
+        "question": "Which version should I study, V7 or V8?",
+        "answer": "V7 (SY0-701) is the current exam. CompTIA says V8 (SY0-801) is expected to launch on or around November 17, 2026, and that V7 retires for English on June 11, 2027. Both versions use the same five domain areas, so the core ideas here help with either, but check CompTIA's exam objectives for the version you will take."
+      },
+      {
+        "question": "Is this practice exam the same as the real exam?",
+        "answer": "No. This practice exam has only single-answer multiple-choice questions with four choices and no performance-based questions. It follows the published V7 domain weights."
+      },
+      {
+        "question": "Are these real CompTIA Security+ questions?",
+        "answer": "No. CompTIA keeps its exam questions confidential. Every question on this site is an original AI-written practice question based on the published exam objectives, and some may contain errors. Please report anything that looks wrong."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "title": "CompTIA, Security+ V7 exam page (exam SY0-701; launched November 7, 2023; maximum of 90 questions; 90 minutes; passing score 750 on a scale of 100-900; English retirement June 11, 2027; domain weights 12/22/18/28/20%)",
+      "url": "https://www.comptia.org/en-us/certifications/security/v7/"
+    },
+    {
+      "title": "CompTIA, Security+ V8 exam page (exam SY0-801; expected launch November 17, 2026; maximum of 90 questions; 90 minutes; passing score 750)",
+      "url": "https://www.comptia.org/en-us/certifications/security/v8/"
+    },
+    {
+      "title": "CompTIA, Security+ certification overview",
+      "url": "https://www.comptia.org/en-us/certifications/security/"
+    }
+  ],
+  "studyTips": {
+    "studyOrder": "Start with General security concepts (12%), because its terms, such as the CIA triad, control types, and encryption, appear in every other domain. Then study Security operations, the largest domain at 28%, followed by Threats, vulnerabilities, and mitigations (22%). Finish with Security program management and oversight (20%) and Security architecture (18%).",
+    "hardChapters": "In Threats, vulnerabilities, and mitigations, many attacks have similar names, so learn the one clue that separates them, such as voice for vishing and text for smishing. In Security operations, keep the incident response phases in order and know which tool does what: SIEM, DLP, NAC, EDR, and WAF. In Security program management, practice the ALE calculation (SLE times ARO) until you can do it quickly.",
+    "examDay": "The real exam is a maximum of 90 questions in 90 minutes, so plan on about one minute per question. Performance-based questions can take longer, so if one is eating your time, make your best choice and come back later. Watch for words like first, best, and most likely, and compare all four choices before you answer."
+  }
 }
