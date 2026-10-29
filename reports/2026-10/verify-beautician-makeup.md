@@ -17,4 +17,4 @@
 
 ## 개념 정리
 
-- 12단원: 1차 11 PASS · 1 FAIL(character-makeup: 크레이프 울과 생사를 같은 재료로 씀) → 고친 단원과 권고 문구를 반영한 hygiene-law 단원을 새 에이전트가 재검증. (concepts-verify/verify-beautician-makeup.json)
+- 12단원: 1차 11 PASS · 1 FAIL(character-makeup: 크레이프 울과 생사를 같은 재료로 씀) → 고친 단원과 권고 문구를 반영한 hygiene-law 단원을 새 에이전트가 재검증해 둘 다 PASS (12/12). 수염 문항도 다시 풀어 정답 하나로 일치. (concepts-verify/verify-beautician-makeup.json)
