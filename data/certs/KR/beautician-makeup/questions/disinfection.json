@@ -1,0 +1,297 @@
+[
+  {
+    "id": "beautician-makeup-disinfection-0001",
+    "certId": "beautician-makeup",
+    "subjectId": "written",
+    "chapterId": "disinfection",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "병원성 미생물뿐 아니라 포자까지 포함한 모든 미생물을 죽이는 것은?",
+    "choices": [
+      "소독",
+      "멸균",
+      "방부",
+      "세척"
+    ],
+    "answer": 2,
+    "oneLineConcept": "강도: 멸균 > 소독 > 방부",
+    "explanation": "**멸균**은 포자를 포함한 **모든 미생물**을 죽이는 것, **소독**은 병원성 미생물을 죽이거나 약하게 해 감염을 막는 것, **방부**는 미생물이 자라는 것을 억제하는 것입니다. 강도는 멸균 > 소독 > 방부입니다.\n\n**틀린 선지**\n- 소독: 소독은 병원성 미생물을 죽여 감염력을 없애는 것으로, 포자까지 죽이지는 못할 수 있습니다.\n- 방부: 방부는 미생물이 자라는 것을 막는 것입니다.\n- 세척: 세척은 더러움을 씻어 내는 것입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-30",
+    "tags": [
+      "소독의 정의"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "beautician-makeup-disinfection-0002",
+    "certId": "beautician-makeup",
+    "subjectId": "written",
+    "chapterId": "disinfection",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "소독약의 살균력을 비교하는 기준으로 쓰이는 소독약은?",
+    "choices": [
+      "과산화수소",
+      "크레졸",
+      "에탄올",
+      "석탄산(페놀)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "살균력 비교 기준 = 석탄산 계수",
+    "explanation": "소독약의 살균력은 **석탄산**을 기준으로 한 **석탄산 계수**로 비교합니다. 계수가 1보다 크면 석탄산보다 살균력이 강하다는 뜻입니다.\n\n**틀린 선지**\n- 에탄올: 에탄올은 흔한 소독약이지만 비교 기준은 아닙니다.\n- 과산화수소: 상처 소독에 쓰이지만 비교 기준은 아닙니다.\n- 크레졸: 석탄산과 비슷한 소독약이지만 기준은 석탄산입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-30",
+    "tags": [
+      "소독약"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "beautician-makeup-disinfection-0003",
+    "certId": "beautician-makeup",
+    "subjectId": "written",
+    "chapterId": "disinfection",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "미용 도구 소독에 흔히 쓰는 에탄올의 알맞은 농도는?",
+    "choices": [
+      "약 30%",
+      "약 10%",
+      "100%",
+      "약 70%"
+    ],
+    "answer": 4,
+    "oneLineConcept": "에탄올 소독 = 70%",
+    "explanation": "에탄올은 **70%** 정도일 때 살균력이 가장 좋습니다. 공중위생관리법 시행규칙의 소독 기준에서도 에탄올 수용액은 70%인 것을 씁니다.\n\n**틀린 선지**\n- 약 10%: 너무 묽어 살균력이 약합니다.\n- 약 30%: 살균력이 충분하지 않습니다.\n- 100%: 순수 알코올은 금방 날아가고 단백질 겉만 굳혀 오히려 살균력이 떨어집니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-30",
+    "tags": [
+      "소독약"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "beautician-makeup-disinfection-0004",
+    "certId": "beautician-makeup",
+    "subjectId": "written",
+    "chapterId": "disinfection",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "미생물을 크기가 큰 것부터 바르게 나열한 것은?",
+    "choices": [
+      "효모 > 곰팡이 > 리케차 > 세균 > 바이러스",
+      "곰팡이 > 효모 > 세균 > 리케차 > 바이러스",
+      "바이러스 > 세균 > 리케차 > 효모 > 곰팡이",
+      "세균 > 곰팡이 > 바이러스 > 효모 > 리케차"
+    ],
+    "answer": 2,
+    "oneLineConcept": "크기: 곰팡이 > 효모 > 세균 > 리케차 > 바이러스",
+    "explanation": "미생물의 크기는 **곰팡이 > 효모 > 세균 > 리케차 > 바이러스** 순서입니다. 바이러스는 가장 작아 살아 있는 세포 안에서만 늘어납니다.\n\n**틀린 선지**\n- 바이러스 > 세균 > 리케차 > 효모 > 곰팡이: 작은 것부터 나열한 것에 가깝고 순서도 틀렸습니다.\n- 세균 > 곰팡이 > 바이러스 > 효모 > 리케차: 순서가 뒤섞여 있습니다.\n- 효모 > 곰팡이 > 리케차 > 세균 > 바이러스: 곰팡이가 가장 큽니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-30",
+    "tags": [
+      "미생물 총론"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "beautician-makeup-disinfection-0005",
+    "certId": "beautician-makeup",
+    "subjectId": "written",
+    "chapterId": "disinfection",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "고압증기멸균법에 대한 설명으로 옳은 것은?",
+    "choices": [
+      "자외선을 쬐어 소독하는 방법이다",
+      "높은 압력의 수증기로 포자까지 죽일 수 있어 멸균 효과가 좋다",
+      "100℃ 이하의 물에 담가 끓이는 방법이다",
+      "소독약을 뿌려 닦는 방법이다"
+    ],
+    "answer": 2,
+    "oneLineConcept": "고압증기멸균 = 높은 압력·온도의 수증기로 포자까지",
+    "explanation": "**고압증기멸균법**은 압력을 높여 100℃ 보다 높은 온도의 **수증기**로 미생물과 **포자까지** 죽이는 방법으로, 멸균 효과가 매우 좋습니다.\n\n**틀린 선지**\n- 100℃ 이하의 물에 담가 끓이는 방법이다: 끓는 물에 담그는 것은 자비(열탕) 소독입니다.\n- 자외선을 쬐어 소독하는 방법이다: 자외선 소독은 따로 있습니다.\n- 소독약을 뿌려 닦는 방법이다: 화학적 소독 방법입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-30",
+    "tags": [
+      "소독 방법"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "beautician-makeup-disinfection-0006",
+    "certId": "beautician-makeup",
+    "subjectId": "written",
+    "chapterId": "disinfection",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "공중위생관리법 시행규칙에서 정한 미용기구 소독 기준 중 '열탕 소독'의 방법은?",
+    "choices": [
+      "섭씨 100℃ 이상의 물속에 10분 이상 끓여 준다",
+      "1㎠당 85㎼ 이상의 자외선을 20분 이상 쬐어 준다",
+      "섭씨 100℃ 이상의 건조한 열에 20분 이상 쐬어 준다",
+      "섭씨 60℃의 물에 5분 담가 둔다"
+    ],
+    "answer": 1,
+    "oneLineConcept": "열탕 = 100℃ 이상 물 10분 이상",
+    "explanation": "공중위생관리법 시행규칙(별표 3)의 미용기구 소독 기준에서 **열탕 소독**은 **100℃ 이상의 물속에 10분 이상** 끓여 주는 것입니다. 건열멸균·증기 소독은 100℃ 이상에서 20분 이상, 자외선 소독은 1㎠당 85㎼ 이상 20분 이상입니다.\n\n**틀린 선지**\n- 섭씨 60℃의 물에 5분 담가 둔다: 온도와 시간이 모두 부족합니다.\n- 섭씨 100℃ 이상의 건조한 열에 20분 이상 쐬어 준다: 이는 건열멸균 소독의 기준입니다.\n- 1㎠당 85㎼ 이상의 자외선을 20분 이상 쬐어 준다: 이는 자외선 소독의 기준입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-30",
+    "tags": [
+      "분야별 위생·소독"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "beautician-makeup-disinfection-0007",
+    "certId": "beautician-makeup",
+    "subjectId": "written",
+    "chapterId": "disinfection",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "공중위생관리법 시행규칙의 미용기구 소독 기준에서 크레졸 소독의 방법은?",
+    "choices": [
+      "크레졸 0.1% 수용액에 1분 담가 둔다",
+      "크레졸 70% 수용액에 10분 이상 담가 둔다",
+      "크레졸 3% 수용액에 10분 이상 담가 둔다",
+      "크레졸 원액을 뿌리고 바로 닦는다"
+    ],
+    "answer": 3,
+    "oneLineConcept": "석탄산수·크레졸수 = 3% 10분",
+    "explanation": "시행규칙 별표 3 에서 **석탄산수**와 **크레졸 소독**은 모두 **3% 수용액에 10분 이상** 담가 두는 방법입니다. 에탄올은 70% 수용액에 10분 이상 담그거나 적신 솜·거즈로 닦아 줍니다.\n\n**틀린 선지**\n- 크레졸 70% 수용액에 10분 이상 담가 둔다: 70% 는 에탄올 기준의 농도입니다.\n- 크레졸 0.1% 수용액에 1분 담가 둔다: 농도와 시간이 맞지 않습니다.\n- 크레졸 원액을 뿌리고 바로 닦는다: 기준에 맞지 않습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-30",
+    "tags": [
+      "분야별 위생·소독"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "beautician-makeup-disinfection-0008",
+    "certId": "beautician-makeup",
+    "subjectId": "written",
+    "chapterId": "disinfection",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "자외선 소독에 대한 설명으로 옳지 않은 것은?",
+    "choices": [
+      "자외선 소독기 안의 도구는 겹치지 않게 놓는다",
+      "1㎠당 85㎼ 이상의 자외선을 20분 이상 쬐어 준다",
+      "빛이 직접 닿는 표면만 소독된다",
+      "그림자가 지는 곳이나 도구 안쪽까지 고르게 소독된다"
+    ],
+    "answer": 4,
+    "oneLineConcept": "자외선 = 표면만, 85㎼/㎠ 20분",
+    "explanation": "자외선은 투과력이 약해 **빛이 직접 닿는 표면만** 소독되고 그림자 진 곳은 소독되지 않습니다. 시행규칙 기준은 **1㎠당 85㎼ 이상, 20분 이상**입니다.\n\n**틀린 선지**\n- 1㎠당 85㎼ 이상의 자외선을 20분 이상 쬐어 준다: 공중위생관리법 시행규칙의 기준입니다.\n- 빛이 직접 닿는 표면만 소독된다: 자외선은 투과력이 약합니다.\n- 자외선 소독기 안의 도구는 겹치지 않게 놓는다: 빛이 고르게 닿게 하기 위한 방법입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-30",
+    "tags": [
+      "소독 방법"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "beautician-makeup-disinfection-0009",
+    "certId": "beautician-makeup",
+    "subjectId": "written",
+    "chapterId": "disinfection",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "양이온 계면활성제로 냄새가 거의 없고 자극이 적어 손 소독에 쓰이는 것은?",
+    "choices": [
+      "승홍수",
+      "포르말린",
+      "석탄산",
+      "역성 비누"
+    ],
+    "answer": 4,
+    "oneLineConcept": "역성 비누 = 양이온 계면활성제, 손 소독",
+    "explanation": "**역성 비누**는 양이온 계면활성제로 냄새와 자극이 적어 손·식기 소독에 쓰입니다. 보통 비누(음이온)와 섞으면 효과가 떨어지므로 비누로 씻은 뒤 깨끗이 헹구고 씁니다.\n\n**틀린 선지**\n- 석탄산: 석탄산은 냄새와 자극이 강합니다.\n- 포르말린: 자극이 강한 기체 소독제입니다.\n- 승홍수: 독성이 강해 손 소독에 쓰지 않습니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-30",
+    "tags": [
+      "소독약"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  }
+]
