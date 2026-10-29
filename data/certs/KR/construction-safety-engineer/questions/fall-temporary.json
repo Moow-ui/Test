@@ -558,5 +558,48 @@
         3
       ]
     }
+  },
+  {
+    "id": "construction-safety-engineer-fall-temporary-0011",
+    "certId": "construction-safety-engineer",
+    "subjectId": "construction-safety",
+    "chapterId": "fall-temporary",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "그림은 높이 2.5m 인 말비계를 옆에서 본 모습이다. 지주부재와 수평면의 기울기 θ와 작업발판의 폭 W의 기준으로 옳은 것은?",
+    "choices": [
+      "θ 75도 이상, W 40cm 이상",
+      "θ 75도 이하, W 40cm 이상",
+      "θ 75도 이하, W 30cm 이상",
+      "θ 85도 이하, W 20cm 이상"
+    ],
+    "answer": 2,
+    "oneLineConcept": "말비계: 기울기 75도 이하, 높이 2m 넘으면 발판 폭 40cm 이상",
+    "explanation": "산업안전보건기준에 관한 규칙 제67조 기준입니다.\n\n1. θ: 지주부재와 수평면의 기울기는 **75도 이하**로 하고, 지주부재 사이를 고정하는 보조부재를 설치합니다(제2호). 너무 세우면 넘어지기 쉽습니다.\n2. W: 말비계 높이가 **2m 를 넘으면** 작업발판 폭을 **40cm 이상**으로 합니다(제3호). 그림은 2.5m 이므로 이 기준이 적용됩니다.\n\n**틀린 선지**\n- θ 75도 이상, W 40cm 이상: 기울기는 75도 '이상'이 아니라 '이하'입니다.\n- θ 75도 이하, W 30cm 이상: 2m 를 넘는 말비계의 발판 폭은 30cm 가 아니라 40cm 이상입니다.\n- θ 85도 이하, W 20cm 이상: 두 숫자 모두 기준과 다릅니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-30",
+    "tags": [
+      "말비계",
+      "기울기",
+      "작업발판",
+      "그림"
+    ],
+    "image": "fall-trestle-angle-width.svg",
+    "imageAlt": "말비계를 옆에서 본 그림. 위가 좁고 아래가 넓은 사다리꼴 모양으로 두 지주부재가 서 있고, 중간에 보조부재가 가로로 연결되어 있다. 맨 위에 작업발판이 놓여 있으며 발판의 폭은 W, 바닥에서 발판 윗면까지 높이는 2.5m, 지주부재와 바닥이 이루는 안쪽 각도는 θ로 표시되어 있다.",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   }
 ]
