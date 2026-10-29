@@ -1,0 +1,422 @@
+[
+  {
+    "id": "real-estate-salesperson-national-financing-settlement-0001",
+    "certId": "real-estate-salesperson-national",
+    "subjectId": "financing",
+    "chapterId": "financing-settlement",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "In a mortgage loan, the borrower is the:",
+    "choices": [
+      "Trustee",
+      "Mortgagor",
+      "Mortgagee",
+      "Beneficiary"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Mortgagor = borrower; mortgagee = lender",
+    "explanation": "The borrower gives the mortgage, so the borrower is the **mortgagor**. The lender receives it and is the **mortgagee**. With a **deed of trust**, the borrower is the trustor, the lender is the beneficiary, and a third party is the trustee.\n\n**Wrong choices**\n- Mortgagee: The mortgagee is the lender.\n- Trustee: A trustee holds title under a deed of trust.\n- Beneficiary: The beneficiary is the lender under a deed of trust.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-30",
+    "tags": [
+      "mortgage terms"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "real-estate-salesperson-national-financing-settlement-0002",
+    "certId": "real-estate-salesperson-national",
+    "subjectId": "financing",
+    "chapterId": "financing-settlement",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which loan clause lets the lender demand the full loan balance if the borrower sells the property?",
+    "choices": [
+      "Alienation (due-on-sale) clause",
+      "Prepayment clause",
+      "Defeasance clause",
+      "Acceleration clause"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Sale → due-on-sale (alienation) clause",
+    "explanation": "An **alienation (due-on-sale) clause** lets the lender call the whole loan due when the property is sold or transferred, which prevents a buyer from assuming the loan without permission. An **acceleration clause** makes the debt due when the borrower defaults.\n\n**Wrong choices**\n- Acceleration clause: An acceleration clause makes the debt due on default, such as missed payments.\n- Prepayment clause: A prepayment clause concerns paying the loan off early.\n- Defeasance clause: A defeasance clause requires the lender to release the lien when the loan is paid.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-30",
+    "tags": [
+      "mortgage clauses"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "real-estate-salesperson-national-financing-settlement-0003",
+    "certId": "real-estate-salesperson-national",
+    "subjectId": "financing",
+    "chapterId": "financing-settlement",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Fannie Mae and Freddie Mac are part of the:",
+    "choices": [
+      "Secondary mortgage market",
+      "FHA insurance program",
+      "Primary mortgage market",
+      "Federal Reserve System"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Secondary market buys loans from lenders",
+    "explanation": "In the **primary market**, lenders make loans to borrowers. In the **secondary market**, investors such as **Fannie Mae** and **Freddie Mac** buy those loans, giving lenders money to make more loans. **Ginnie Mae** guarantees securities backed by FHA and VA loans.\n\n**Wrong choices**\n- Primary mortgage market: The primary market is where lenders make loans to borrowers.\n- Federal Reserve System: They are not part of the Federal Reserve.\n- FHA insurance program: FHA is a government agency that insures loans.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-30",
+    "tags": [
+      "secondary market"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "real-estate-salesperson-national-financing-settlement-0004",
+    "certId": "real-estate-salesperson-national",
+    "subjectId": "financing",
+    "chapterId": "financing-settlement",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which type of loan is guaranteed (partly) by the U.S. Department of Veterans Affairs and may allow no down payment for eligible borrowers?",
+    "choices": [
+      "Conventional loan",
+      "FHA loan",
+      "Reverse mortgage",
+      "VA loan"
+    ],
+    "answer": 4,
+    "oneLineConcept": "VA = guaranteed, eligible veterans, often no down payment",
+    "explanation": "**VA loans** are partly **guaranteed** by the Department of Veterans Affairs for eligible veterans and service members, and may require **no down payment**. **FHA loans** are **insured** and need a low down payment plus mortgage insurance premium (MIP).\n\n**Wrong choices**\n- FHA loan: FHA loans are insured by the Federal Housing Administration and require a down payment.\n- Conventional loan: Conventional loans are not government guaranteed.\n- Reverse mortgage: A reverse mortgage lets older owners borrow against equity.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-30",
+    "tags": [
+      "government loans"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "real-estate-salesperson-national-financing-settlement-0005",
+    "certId": "real-estate-salesperson-national",
+    "subjectId": "financing",
+    "chapterId": "financing-settlement",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "On a conventional loan, private mortgage insurance (PMI) is usually required when the loan-to-value ratio is:",
+    "choices": [
+      "Exactly 60%",
+      "More than 80%",
+      "Less than 50%",
+      "Less than 80%"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Conventional loan > 80% LTV → PMI",
+    "explanation": "**Private mortgage insurance (PMI)** protects the lender. It is usually required on a conventional loan when the borrower puts down less than 20%, so the **LTV is above 80%**.\n\n**Wrong choices**\n- Less than 50%: Low LTV loans do not normally need PMI.\n- Exactly 60%: 60% LTV does not normally need PMI.\n- Less than 80%: PMI is required when the LTV is above 80%, not below.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-30",
+    "tags": [
+      "PMI"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "real-estate-salesperson-national-financing-settlement-0006",
+    "certId": "real-estate-salesperson-national",
+    "subjectId": "financing",
+    "chapterId": "financing-settlement",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A title company pays a salesperson $100 for each buyer the salesperson refers to it, without any services in return. This violates:",
+    "choices": [
+      "The Fair Housing Act",
+      "The Truth in Lending Act advertising rules",
+      "RESPA's ban on kickbacks for referrals",
+      "The Equal Credit Opportunity Act"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Referral fee for settlement services = RESPA violation",
+    "explanation": "**RESPA** prohibits kickbacks, fees, or anything of value given for referring settlement services (title, lending, escrow) on federally related mortgage loans. Payment must be for services actually performed.\n\n**Wrong choices**\n- The Equal Credit Opportunity Act: ECOA concerns discrimination in lending.\n- The Fair Housing Act: Fair housing concerns discrimination in housing.\n- The Truth in Lending Act advertising rules: TILA advertising rules cover credit terms in ads.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-30",
+    "tags": [
+      "RESPA"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "real-estate-salesperson-national-financing-settlement-0007",
+    "certId": "real-estate-salesperson-national",
+    "subjectId": "financing",
+    "chapterId": "financing-settlement",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A home loan ad says, \"Only 5% down!\" Under Truth in Lending (Regulation Z), what else must the ad state?",
+    "choices": [
+      "The seller's name and address",
+      "Nothing else, because a percentage is not a trigger term",
+      "The broker's commission rate",
+      "The terms of repayment and the annual percentage rate (APR)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Trigger term in an ad → disclose down payment, repayment terms, APR",
+    "explanation": "Under **Regulation Z**, specific credit terms in an ad are **trigger terms**, such as the amount or percentage of the down payment, the number of payments, the payment amount, or the finance charge. Using one requires the ad to also state the down payment, the **terms of repayment**, and the **APR**. General phrases like \"easy terms\" do not trigger these disclosures.\n\n**Wrong choices**\n- Nothing else, because a percentage is not a trigger term: A specific down payment amount or percentage is a trigger term.\n- The seller's name and address: The seller's identity is not a Regulation Z requirement.\n- The broker's commission rate: Commission is not a credit term.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-30",
+    "tags": [
+      "Regulation Z"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "real-estate-salesperson-national-financing-settlement-0008",
+    "certId": "real-estate-salesperson-national",
+    "subjectId": "financing",
+    "chapterId": "financing-settlement",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "The Equal Credit Opportunity Act (ECOA) prohibits lenders from discriminating based on:",
+    "choices": [
+      "The property's appraised value",
+      "The borrower's income",
+      "Marital status or age (if the applicant can legally contract)",
+      "The borrower's credit history"
+    ],
+    "answer": 3,
+    "oneLineConcept": "ECOA adds marital status, age, public assistance",
+    "explanation": "**ECOA** bars credit discrimination based on race, color, religion, national origin, sex, **marital status**, **age** (if old enough to contract), and receipt of public assistance. Lenders may still judge creditworthiness, such as income and credit history.\n\n**Wrong choices**\n- The borrower's credit history: Lenders may consider credit history.\n- The borrower's income: Lenders may consider income.\n- The property's appraised value: Lenders may consider value.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-30",
+    "tags": [
+      "ECOA"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "real-estate-salesperson-national-financing-settlement-0009",
+    "certId": "real-estate-salesperson-national",
+    "subjectId": "financing",
+    "chapterId": "financing-settlement",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "In a land contract (contract for deed), the buyer usually:",
+    "choices": [
+      "Receives legal title at closing",
+      "Takes possession and pays the seller in installments, but legal title stays with the seller until paid in full or as agreed",
+      "Must get a bank loan before moving in",
+      "Has no interest in the property until the last payment"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Land contract: seller keeps legal title; buyer has equitable title",
+    "explanation": "With a **land contract (contract for deed, installment sales contract)**, the **seller** provides financing and keeps **legal title**. The buyer (vendee) has possession and **equitable title** and receives the deed after paying as agreed.\n\n**Wrong choices**\n- Receives legal title at closing: Legal title stays with the seller under a land contract.\n- Must get a bank loan before moving in: The seller finances the sale.\n- Has no interest in the property until the last payment: The buyer has equitable title and possession.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-30",
+    "tags": [
+      "seller financing"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "real-estate-salesperson-national-financing-settlement-0010",
+    "certId": "real-estate-salesperson-national",
+    "subjectId": "financing",
+    "chapterId": "financing-settlement",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "In a lien theory state, a mortgage:",
+    "choices": [
+      "Transfers title to a trustee",
+      "Creates a lien on the property while the borrower keeps title",
+      "Gives legal title to the lender until paid",
+      "Cannot be foreclosed"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Lien theory: borrower holds title; title theory: lender holds title",
+    "explanation": "In a **lien theory** state, the borrower keeps title and the mortgage is a **lien**. In a **title theory** state, the lender (or a trustee) holds title until the loan is paid.\n\n**Wrong choices**\n- Gives legal title to the lender until paid: That describes title theory.\n- Transfers title to a trustee: That describes a deed of trust.\n- Cannot be foreclosed: Mortgages in lien theory states can be foreclosed, usually through the courts.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-30",
+    "tags": [
+      "lien theory"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "real-estate-salesperson-national-financing-settlement-0011",
+    "certId": "real-estate-salesperson-national",
+    "subjectId": "financing",
+    "chapterId": "financing-settlement",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which document shows a borrower's promise to repay a loan?",
+    "choices": [
+      "Deed",
+      "Mortgage",
+      "Promissory note",
+      "Closing Disclosure"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Note = promise to pay; mortgage = security",
+    "explanation": "The **promissory note** is the borrower's promise to repay the debt. The **mortgage** (or deed of trust) pledges the property as **security** for the note.\n\n**Wrong choices**\n- Deed: A deed transfers ownership of real property.\n- Mortgage: The mortgage pledges the property as security.\n- Closing Disclosure: The Closing Disclosure shows final loan costs.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-30",
+    "tags": [
+      "notes"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "real-estate-salesperson-national-financing-settlement-0012",
+    "certId": "real-estate-salesperson-national",
+    "subjectId": "financing",
+    "chapterId": "financing-settlement",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Under the TILA-RESPA Integrated Disclosure (TRID) rule, when must the borrower receive the Closing Disclosure?",
+    "choices": [
+      "Within 3 business days after closing",
+      "On the day of closing only",
+      "At least 10 days before applying for the loan",
+      "At least 3 business days before consummation (closing)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Closing Disclosure: 3 business days before closing",
+    "explanation": "Under **TRID**, the lender gives the **Loan Estimate** within **3 business days after application**, and the borrower must receive the **Closing Disclosure** at least **3 business days before closing**.\n\n**Wrong choices**\n- At least 10 days before applying for the loan: The Closing Disclosure is given near closing, not before applying.\n- Within 3 business days after closing: It must be given before closing.\n- On the day of closing only: Same-day delivery is too late.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-30",
+    "tags": [
+      "TRID"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  }
+]

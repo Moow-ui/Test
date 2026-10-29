@@ -1,0 +1,449 @@
+[
+  {
+    "id": "real-estate-salesperson-national-value-appraisal-0001",
+    "certId": "real-estate-salesperson-national",
+    "subjectId": "valuation",
+    "chapterId": "value-appraisal",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which appraisal approach is usually the most reliable for a single-family home?",
+    "choices": [
+      "Gross rent multiplier",
+      "Cost approach",
+      "Sales comparison approach",
+      "Income approach"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Single-family homes → sales comparison approach",
+    "explanation": "The **sales comparison (market data) approach** compares the subject home with similar homes that sold recently. Because buyers of homes compare homes this way, it is usually the most reliable approach for single-family homes.\n\n**Wrong choices**\n- Income approach: The income approach is best for rental and investment property.\n- Cost approach: The cost approach is best for new or special-purpose buildings.\n- Gross rent multiplier: A GRM is a quick income method, mostly for rental homes.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-30",
+    "tags": [
+      "appraisal approaches"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "real-estate-salesperson-national-value-appraisal-0002",
+    "certId": "real-estate-salesperson-national",
+    "subjectId": "valuation",
+    "chapterId": "value-appraisal",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "In the sales comparison approach, a comparable has a garage worth $10,000, but the subject property has no garage. The appraiser should:",
+    "choices": [
+      "Subtract $10,000 from the subject's value",
+      "Subtract $10,000 from the comparable's sale price",
+      "Add $10,000 to the comparable's sale price",
+      "Add $10,000 to the subject's value"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Comp better → subtract; comp poorer → add (CBS)",
+    "explanation": "Adjustments are always made to the **comparable**. Remember **CBS: Comparable Better, Subtract**. The comparable has a garage the subject lacks, so it is better, and $10,000 is subtracted from its sale price.\n\n**Wrong choices**\n- Add $10,000 to the comparable's sale price: You add only when the comparable lacks a feature the subject has.\n- Add $10,000 to the subject's value: Adjustments are made to the comparables, never to the subject.\n- Subtract $10,000 from the subject's value: Adjustments are made to the comparables, not the subject.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-30",
+    "tags": [
+      "sales comparison"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "real-estate-salesperson-national-value-appraisal-0003",
+    "certId": "real-estate-salesperson-national",
+    "subjectId": "valuation",
+    "chapterId": "value-appraisal",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which approach to value is most useful for a church or a new fire station?",
+    "choices": [
+      "Income approach",
+      "Gross rent multiplier",
+      "Cost approach",
+      "Sales comparison approach"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Special-purpose or new buildings → cost approach",
+    "explanation": "The **cost approach** estimates the cost to replace or reproduce the building, subtracts **depreciation**, and adds the **land value**. It is best for new buildings and **special-purpose** properties that rarely sell and produce no income.\n\n**Wrong choices**\n- Sales comparison approach: Churches and fire stations rarely sell, so few comparables exist.\n- Income approach: These buildings do not produce rental income.\n- Gross rent multiplier: A GRM needs rental income.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-30",
+    "tags": [
+      "cost approach"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "real-estate-salesperson-national-value-appraisal-0004",
+    "certId": "real-estate-salesperson-national",
+    "subjectId": "valuation",
+    "chapterId": "value-appraisal",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A busy highway was built next to a residential street, lowering home values. This loss of value is:",
+    "choices": [
+      "External (economic) obsolescence",
+      "Curable depreciation",
+      "Physical deterioration",
+      "Functional obsolescence"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Loss from outside the property = external obsolescence",
+    "explanation": "The three kinds of **depreciation** are physical deterioration, **functional obsolescence** (poor design, outdated features), and **external (economic) obsolescence** (factors outside the property, such as a new highway or a factory). External obsolescence is usually incurable.\n\n**Wrong choices**\n- Physical deterioration: Physical deterioration is wear and tear on the building itself.\n- Functional obsolescence: Functional obsolescence is an outdated design or feature inside the property.\n- Curable depreciation: External obsolescence is almost always incurable because it is outside the owner's control.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-30",
+    "tags": [
+      "depreciation"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "real-estate-salesperson-national-value-appraisal-0005",
+    "certId": "real-estate-salesperson-national",
+    "subjectId": "valuation",
+    "chapterId": "value-appraisal",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A four-bedroom home has only one bathroom. This is an example of:",
+    "choices": [
+      "Functional obsolescence",
+      "External obsolescence",
+      "Physical deterioration",
+      "Economic life"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Poor design or layout = functional obsolescence",
+    "explanation": "**Functional obsolescence** is a loss in value from poor design or outdated features, such as too few bathrooms for the number of bedrooms, or a bedroom you can reach only through another bedroom.\n\n**Wrong choices**\n- External obsolescence: External obsolescence comes from outside the property.\n- Physical deterioration: Physical deterioration is wear and tear, such as a worn roof.\n- Economic life: Economic life is the period a building adds value; it is not a type of depreciation.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-30",
+    "tags": [
+      "depreciation"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "real-estate-salesperson-national-value-appraisal-0006",
+    "certId": "real-estate-salesperson-national",
+    "subjectId": "valuation",
+    "chapterId": "value-appraisal",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "The principle of value stating that a buyer will not pay more for a property than the cost of an equally desirable substitute is:",
+    "choices": [
+      "Contribution",
+      "Regression",
+      "Substitution",
+      "Conformity"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Substitution = basis of sales comparison",
+    "explanation": "The principle of **substitution** says a buyer will not pay more than the cost of an equally good substitute. It is the basis of the sales comparison approach.\n\n**Wrong choices**\n- Conformity: Conformity says value is highest when homes are similar to each other.\n- Contribution: Contribution is about how much one feature adds to value.\n- Regression: Regression is when a better home loses value among poorer homes.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-30",
+    "tags": [
+      "principles of value"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "real-estate-salesperson-national-value-appraisal-0007",
+    "certId": "real-estate-salesperson-national",
+    "subjectId": "valuation",
+    "chapterId": "value-appraisal",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "The most expensive house in a neighborhood of much smaller homes is worth less than it would be in a neighborhood of similar homes. This illustrates:",
+    "choices": [
+      "Anticipation",
+      "Regression",
+      "Plottage",
+      "Progression"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Best house in the neighborhood → regression",
+    "explanation": "Under **regression**, a better property loses value when surrounded by lower-quality properties. **Progression** is the opposite: a modest home gains value from nicer homes around it.\n\n**Wrong choices**\n- Progression: Progression is when a lower-priced home gains value from better homes around it.\n- Anticipation: Anticipation is value based on expected future benefits.\n- Plottage: Plottage is the added value from combining lots.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-30",
+    "tags": [
+      "principles of value"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "real-estate-salesperson-national-value-appraisal-0008",
+    "certId": "real-estate-salesperson-national",
+    "subjectId": "valuation",
+    "chapterId": "value-appraisal",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which statement about market value and market price is correct?",
+    "choices": [
+      "Market price is what a property actually sold for, which may differ from market value",
+      "Market value is the amount the seller asks",
+      "Market price is set by the appraiser",
+      "They are always the same amount"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Price = what was paid; value = most probable price",
+    "explanation": "**Market value** is the most probable price a property should bring in a competitive, open market with informed buyers and sellers acting without pressure. **Market price** is what was actually paid, which may be different.\n\n**Wrong choices**\n- They are always the same amount: They can differ, for example in a forced sale or a sale between relatives.\n- Market value is the amount the seller asks: The asking price is the list price, not market value.\n- Market price is set by the appraiser: An appraiser estimates value; buyers and sellers set the price.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-30",
+    "tags": [
+      "value"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "real-estate-salesperson-national-value-appraisal-0009",
+    "certId": "real-estate-salesperson-national",
+    "subjectId": "valuation",
+    "chapterId": "value-appraisal",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "An investor wants a 10% capitalization rate. A building has net operating income of $45,000 a year. What value does the income approach indicate?",
+    "choices": [
+      "$405,000",
+      "$450,000",
+      "$4,500",
+      "$49,500"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Value = NOI ÷ cap rate",
+    "explanation": "Use the income formula:\n\n1. Value = Net operating income ÷ Cap rate.\n2. $45,000 ÷ 0.10 = **$450,000**.\n3. Check: $450,000 × 0.10 = $45,000.\n\n**Wrong choices**\n- $4,500: This divides by 10 instead of 0.10.\n- $49,500: This adds 10% to the income instead of capitalizing it.\n- $405,000: This subtracts 10% from $450,000 by mistake.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-30",
+    "tags": [
+      "income approach",
+      "math"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "real-estate-salesperson-national-value-appraisal-0010",
+    "certId": "real-estate-salesperson-national",
+    "subjectId": "valuation",
+    "chapterId": "value-appraisal",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "In the income approach, net operating income (NOI) is found by subtracting which of the following from effective gross income?",
+    "choices": [
+      "Mortgage principal and interest payments",
+      "Vacancy and collection losses only",
+      "Depreciation for income tax purposes",
+      "Operating expenses such as taxes, insurance, and maintenance"
+    ],
+    "answer": 4,
+    "oneLineConcept": "NOI = EGI − operating expenses (not debt service)",
+    "explanation": "1. Potential gross income − vacancy and collection loss = **effective gross income**.\n2. Effective gross income − **operating expenses** = **NOI**.\n\nMortgage payments (debt service) and income tax depreciation are not operating expenses.\n\n**Wrong choices**\n- Mortgage principal and interest payments: Debt service is not an operating expense and is not subtracted to find NOI.\n- Depreciation for income tax purposes: Tax depreciation is not an operating expense.\n- Vacancy and collection losses only: Vacancy is subtracted earlier, from potential gross income, to find effective gross income.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-30",
+    "tags": [
+      "income approach"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "real-estate-salesperson-national-value-appraisal-0011",
+    "certId": "real-estate-salesperson-national",
+    "subjectId": "valuation",
+    "chapterId": "value-appraisal",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A home rents for $1,500 a month. Similar homes sold for about 120 times their monthly rent. What is the estimated value using the gross rent multiplier?",
+    "choices": [
+      "$150,000",
+      "$180,000",
+      "$18,000",
+      "$1,620"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Value = monthly rent × GRM",
+    "explanation": "1. Value = Monthly rent × Gross rent multiplier.\n2. $1,500 × 120 = **$180,000**.\n3. Check: $180,000 ÷ $1,500 = 120.\n\n**Wrong choices**\n- $18,000: This drops a zero from the result.\n- $150,000: This uses 100 instead of 120 as the multiplier.\n- $1,620: This adds the multiplier to the rent instead of multiplying.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-30",
+    "tags": [
+      "GRM",
+      "math"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "real-estate-salesperson-national-value-appraisal-0012",
+    "certId": "real-estate-salesperson-national",
+    "subjectId": "valuation",
+    "chapterId": "value-appraisal",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A licensee prepares a report comparing a seller's home to recent nearby sales to help set a listing price. This is a:",
+    "choices": [
+      "Assessment",
+      "Title search",
+      "Comparative market analysis (CMA)",
+      "Appraisal"
+    ],
+    "answer": 3,
+    "oneLineConcept": "CMA = licensee's price opinion, not an appraisal",
+    "explanation": "A **comparative market analysis (CMA)** compares a home with recently sold, pending, and active listings to help set a price. It is not an appraisal, and licensees must not present it as one. A **broker price opinion (BPO)** is a similar estimate often requested by lenders.\n\n**Wrong choices**\n- Appraisal: An appraisal is done by a licensed or certified appraiser.\n- Assessment: An assessment is the value set by the tax assessor.\n- Title search: A title search examines ownership records.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-30",
+    "tags": [
+      "CMA"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "real-estate-salesperson-national-value-appraisal-0013",
+    "certId": "real-estate-salesperson-national",
+    "subjectId": "valuation",
+    "chapterId": "value-appraisal",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Which of the following is NOT one of the four characteristics that give a property value?",
+    "choices": [
+      "Location in a flood zone",
+      "Utility",
+      "Transferability",
+      "Demand"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Value needs DUST: Demand, Utility, Scarcity, Transferability",
+    "explanation": "The four characteristics of value are **D**emand, **U**tility, **S**carcity, and **T**ransferability (**DUST**). A flood zone location may affect value, but it is not one of the four characteristics.\n\n**Wrong choices**\n- Demand: Demand (desire backed by ability to pay) is one of the four.\n- Utility: Utility (usefulness) is one of the four.\n- Transferability: Transferability is one of the four.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-30",
+    "tags": [
+      "value"
+    ],
+    "levelLock": true
+  }
+]
