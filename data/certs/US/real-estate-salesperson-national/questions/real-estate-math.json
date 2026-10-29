@@ -1,0 +1,460 @@
+[
+  {
+    "id": "real-estate-salesperson-national-real-estate-math-0001",
+    "certId": "real-estate-salesperson-national",
+    "subjectId": "math",
+    "chapterId": "real-estate-math",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A rectangular lot is 150 feet by 290.4 feet. How many acres is it?",
+    "choices": [
+      "4.4 acres",
+      "1 acre",
+      "0.5 acre",
+      "2 acres"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Acres = square feet ÷ 43,560",
+    "explanation": "1. Area = 150 × 290.4 = 43,560 square feet.\n2. Acres = 43,560 ÷ 43,560 = **1 acre**.\n3. Remember: 1 acre = 43,560 square feet.\n\n**Wrong choices**\n- 2 acres: 2 acres would be 87,120 square feet.\n- 0.5 acre: 0.5 acre would be 21,780 square feet.\n- 4.4 acres: This divides by 10,000 instead of 43,560.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-30",
+    "tags": [
+      "area"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "real-estate-salesperson-national-real-estate-math-0002",
+    "certId": "real-estate-salesperson-national",
+    "subjectId": "math",
+    "chapterId": "real-estate-math",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A home sells for $300,000. The commission rate is 6%. What is the total commission?",
+    "choices": [
+      "$50,000",
+      "$18,000",
+      "$1,800",
+      "$180,000"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Commission = price × rate",
+    "explanation": "1. Commission = Sale price × Rate.\n2. $300,000 × 0.06 = **$18,000**.\n3. Check: $18,000 ÷ $300,000 = 0.06.\n\n**Wrong choices**\n- $1,800: This moves the decimal one place too far.\n- $180,000: This uses 60% instead of 6%.\n- $50,000: This divides the price by 6 instead of multiplying by 6%.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-30",
+    "tags": [
+      "commission"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "real-estate-salesperson-national-real-estate-math-0003",
+    "certId": "real-estate-salesperson-national",
+    "subjectId": "math",
+    "chapterId": "real-estate-math",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A salesperson's broker receives a 6% commission on a $250,000 sale. The salesperson gets 60% of the broker's share. How much does the salesperson earn?",
+    "choices": [
+      "$9,000",
+      "$15,000",
+      "$9,600",
+      "$6,000"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Total commission × agent's split",
+    "explanation": "1. Total commission = $250,000 × 0.06 = $15,000.\n2. Salesperson's share = $15,000 × 0.60 = **$9,000**.\n3. Check: broker keeps $15,000 − $9,000 = $6,000 (40%).\n\n**Wrong choices**\n- $15,000: $15,000 is the whole commission before the split.\n- $6,000: $6,000 is the broker's 40% share.\n- $9,600: This uses the wrong split amount.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-30",
+    "tags": [
+      "commission"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "real-estate-salesperson-national-real-estate-math-0004",
+    "certId": "real-estate-salesperson-national",
+    "subjectId": "math",
+    "chapterId": "real-estate-math",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A buyer is getting a loan with an 80% loan-to-value ratio on a $350,000 home. What is the loan amount?",
+    "choices": [
+      "$300,000",
+      "$280,000",
+      "$70,000",
+      "$350,000"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Loan = value × LTV",
+    "explanation": "1. Loan = Price (or appraised value, if lower) × LTV.\n2. $350,000 × 0.80 = **$280,000**.\n3. Down payment = $350,000 − $280,000 = $70,000.\n\n**Wrong choices**\n- $70,000: $70,000 is the 20% down payment.\n- $350,000: That is the full price, a 100% LTV.\n- $300,000: This is not 80% of $350,000.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-30",
+    "tags": [
+      "LTV",
+      "financing"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "real-estate-salesperson-national-real-estate-math-0005",
+    "certId": "real-estate-salesperson-national",
+    "subjectId": "math",
+    "chapterId": "real-estate-math",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A lender charges 2 discount points on a $200,000 loan. How much do the points cost?",
+    "choices": [
+      "$2,000",
+      "$40,000",
+      "$400",
+      "$4,000"
+    ],
+    "answer": 4,
+    "oneLineConcept": "1 point = 1% of the loan amount",
+    "explanation": "1. One discount point = 1% of the **loan amount** (not the price).\n2. 2 points = 2% × $200,000 = **$4,000**.\n\n**Wrong choices**\n- $400: This uses 0.2% instead of 2%.\n- $40,000: This uses 20% instead of 2%.\n- $2,000: This treats 2 points as 1%.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-30",
+    "tags": [
+      "points",
+      "financing"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "real-estate-salesperson-national-real-estate-math-0006",
+    "certId": "real-estate-salesperson-national",
+    "subjectId": "math",
+    "chapterId": "real-estate-math",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A home's assessed value is $180,000. The tax rate is 25 mills. What is the annual property tax?",
+    "choices": [
+      "$450",
+      "$4,500",
+      "$7,200",
+      "$45,000"
+    ],
+    "answer": 2,
+    "oneLineConcept": "1 mill = $1 per $1,000 = 0.001",
+    "explanation": "1. 25 mills = 25 ÷ 1,000 = 0.025.\n2. Tax = $180,000 × 0.025 = **$4,500**.\n3. Check: $180,000 ÷ 1,000 × 25 = $4,500.\n\n**Wrong choices**\n- $450: This uses 2.5 mills by mistake.\n- $45,000: This uses 25% instead of 25 mills.\n- $7,200: This does not use the mill rate correctly.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-30",
+    "tags": [
+      "property tax"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "real-estate-salesperson-national-real-estate-math-0007",
+    "certId": "real-estate-salesperson-national",
+    "subjectId": "math",
+    "chapterId": "real-estate-math",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A seller wants to net $190,000 after paying a 5% commission. Ignoring other costs, what is the lowest sale price that will do this?",
+    "choices": [
+      "$200,000",
+      "$199,500",
+      "$209,000",
+      "$180,500"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Price needed = desired net ÷ (1 − commission rate)",
+    "explanation": "1. The seller keeps 100% − 5% = 95% of the price.\n2. Price = $190,000 ÷ 0.95 = **$200,000**.\n3. Check: $200,000 − 5% ($10,000) = $190,000.\n\n**Wrong choices**\n- $199,500: This adds 5% of $190,000 instead of dividing by 0.95.\n- $180,500: This subtracts 5% instead of adding it back.\n- $209,000: This adds 10% instead of 5%.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-30",
+    "tags": [
+      "net to seller"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "real-estate-salesperson-national-real-estate-math-0008",
+    "certId": "real-estate-salesperson-national",
+    "subjectId": "math",
+    "chapterId": "real-estate-math",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Annual property taxes of $3,650 are paid in arrears. Closing is on April 10, and the seller owns the day of closing. Using a 365-day year, what is the seller's share?",
+    "choices": [
+      "$990 debit to the seller",
+      "$2,650 debit to the seller",
+      "$1,000 credit to the seller",
+      "$1,000 debit to the seller"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Arrears taxes → seller's days are a debit to seller, credit to buyer",
+    "explanation": "1. Daily tax = $3,650 ÷ 365 = $10 per day.\n2. Seller's days: Jan 31 + Feb 28 + Mar 31 + Apr 10 = 100 days.\n3. Seller's share = 100 × $10 = **$1,000**.\n4. The taxes have not been paid yet (arrears), so the seller owes this amount: **debit seller, credit buyer**.\n\n**Wrong choices**\n- $1,000 credit to the seller: Taxes paid in arrears are owed by the seller, so they are a debit to the seller.\n- $2,650 debit to the seller: $2,650 is the buyer's share of the year.\n- $990 debit to the seller: This leaves out the day of closing.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-30",
+    "tags": [
+      "prorations"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "real-estate-salesperson-national-real-estate-math-0009",
+    "certId": "real-estate-salesperson-national",
+    "subjectId": "math",
+    "chapterId": "real-estate-math",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A monthly payment is $1,200 for principal and interest, annual property taxes are $3,600, and annual homeowner's insurance is $1,200. What is the monthly PITI payment?",
+    "choices": [
+      "$1,600",
+      "$1,500",
+      "$6,000",
+      "$1,300"
+    ],
+    "answer": 1,
+    "oneLineConcept": "PITI = P&I + monthly taxes + monthly insurance",
+    "explanation": "1. Monthly taxes = $3,600 ÷ 12 = $300.\n2. Monthly insurance = $1,200 ÷ 12 = $100.\n3. PITI = $1,200 + $300 + $100 = **$1,600**.\n\n**Wrong choices**\n- $1,500: This adds only the monthly taxes.\n- $1,300: This adds only the monthly insurance.\n- $6,000: This adds annual tax and insurance to the monthly payment.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-30",
+    "tags": [
+      "PITI"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "real-estate-salesperson-national-real-estate-math-0010",
+    "certId": "real-estate-salesperson-national",
+    "subjectId": "math",
+    "chapterId": "real-estate-math",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A property earns $60,000 in effective gross income. Operating expenses are $15,000 and annual mortgage payments are $20,000. Using an 8% cap rate, what is the value?",
+    "choices": [
+      "$750,000",
+      "$562,500",
+      "$45,000",
+      "$312,500"
+    ],
+    "answer": 2,
+    "oneLineConcept": "NOI excludes mortgage payments; value = NOI ÷ cap rate",
+    "explanation": "1. NOI = $60,000 − $15,000 = $45,000 (mortgage payments are **not** subtracted).\n2. Value = $45,000 ÷ 0.08 = **$562,500**.\n3. Check: $562,500 × 0.08 = $45,000.\n\n**Wrong choices**\n- $312,500: This subtracts the mortgage payments, which are not operating expenses.\n- $750,000: This uses gross income instead of NOI.\n- $45,000: $45,000 is the NOI, not the value.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-30",
+    "tags": [
+      "cap rate"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "real-estate-salesperson-national-real-estate-math-0011",
+    "certId": "real-estate-salesperson-national",
+    "subjectId": "math",
+    "chapterId": "real-estate-math",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "An investor bought a property for $200,000 and sold it for $250,000. What was the percentage of profit based on the purchase price?",
+    "choices": [
+      "80%",
+      "50%",
+      "25%",
+      "20%"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Percent change = (new − old) ÷ old",
+    "explanation": "1. Profit = $250,000 − $200,000 = $50,000.\n2. Percent = $50,000 ÷ $200,000 = 0.25 = **25%**.\n\n**Wrong choices**\n- 20%: 20% is the profit divided by the sale price, not the purchase price.\n- 50%: This does not divide by the purchase price correctly.\n- 80%: 80% is the purchase price as a percent of the sale price.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-30",
+    "tags": [
+      "investment"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "real-estate-salesperson-national-real-estate-math-0012",
+    "certId": "real-estate-salesperson-national",
+    "subjectId": "math",
+    "chapterId": "real-estate-math",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A room is 12 feet by 15 feet. How many square yards of carpet are needed to cover the floor exactly?",
+    "choices": [
+      "180 square yards",
+      "60 square yards",
+      "9 square yards",
+      "20 square yards"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Square yards = square feet ÷ 9",
+    "explanation": "1. Area = 12 × 15 = 180 square feet.\n2. One square yard = 3 ft × 3 ft = 9 square feet.\n3. 180 ÷ 9 = **20 square yards**.\n\n**Wrong choices**\n- 180 square yards: 180 is the area in square feet.\n- 60 square yards: This divides by 3 instead of 9.\n- 9 square yards: This mixes up the conversion factor and the answer.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-30",
+    "tags": [
+      "area"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "real-estate-salesperson-national-real-estate-math-0013",
+    "certId": "real-estate-salesperson-national",
+    "subjectId": "math",
+    "chapterId": "real-estate-math",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A buyer's loan is $240,000 at 6% annual interest. What is the interest for the first month?",
+    "choices": [
+      "$1,440",
+      "$14,400",
+      "$120",
+      "$1,200"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Monthly interest = loan × annual rate ÷ 12",
+    "explanation": "1. Annual interest = $240,000 × 0.06 = $14,400.\n2. First month = $14,400 ÷ 12 = **$1,200**.\n\n**Wrong choices**\n- $14,400: $14,400 is a full year of interest.\n- $1,440: This uses 7.2% instead of 6%.\n- $120: This drops a zero.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-30",
+    "tags": [
+      "interest",
+      "financing"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  }
+]
