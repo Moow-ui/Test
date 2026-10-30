@@ -11,6 +11,7 @@
  *   data/cert-queue.json          추가할 자격증 대기 목록
  *   data/review-queue/            검수 대기 목록
  *   data/legacy-question-ids.json 새 id 규칙 이전에 만든 문제 id (바꾸지 않는다)
+ *   data/inspection.json          회장 검사 기록 ("검사 완료" 날짜, 오늘 검사할 자격증)
  *
  * 여기에는 경로 문자열만 둔다 (fs 를 쓰지 않으므로 화면 코드에서도 불러올 수 있다).
  * 경로는 모두 data 폴더 기준이고 구분자는 "/" 다.
@@ -23,6 +24,8 @@ export const GUIDES_DIR = "guides";
 export const guidesDir = (lang: string) => `${GUIDES_DIR}/${lang}`;
 export const guideFile = (lang: string, slug: string) => `${guidesDir(lang)}/${slug}.json`;
 export const LEGACY_IDS_FILE = "legacy-question-ids.json";
+/** 회장 검사 기록 ("검사 완료" 날짜) */
+export const INSPECTION_FILE = "inspection.json";
 
 export const countryDir = (country: string) => `${CERTS_DIR}/${country}`;
 export const certDir = (country: string, slug: string) => `${CERTS_DIR}/${country}/${slug}`;

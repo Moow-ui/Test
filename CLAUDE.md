@@ -24,8 +24,9 @@
 - Next.js 16 은 예전과 다르다. 코드를 쓰기 전에 `node_modules/next/dist/docs/` 를 확인한다.
 - 타겟: 40~50대 현장 근무자. 쉬는 시간 5~10분, PC·모바일 동등, 큰 글자, 높은 대비, 글자가 있는 버튼, 애니메이션 없음.
 - 로그인 없이 모든 기능을 쓸 수 있어야 한다.
-- 자격증 메인·개념 정리·단원 핵심정리 제목 아래 "검사 완료" 날짜(한국·미국 모두)는 회장이 매일 직접 검사한 날이다. 빌드한 날(한국시간)로 자동으로 바뀐다.
-  회장이 "오늘 검사 못 했다"고 하면 그날을 `config/inspection.ts` 의 `SKIPPED_DATES` 에 적는다.
+- 자격증 메인·개념 정리·단원 핵심정리 제목 아래 "검사 완료" 날짜(한국·미국 모두)는 회장이 그 자격증을 직접 검사한 날이다 (2026-10-30 결정: 하루 10개).
+  기록은 `data/inspection.json`. 새벽 루틴이 `npm run inspection:next` 로 어제 목록을 검사한 날로 적고 오늘 검사할 10개를 회장에게 알려 준다 ([docs/daily-routine.md](docs/daily-routine.md) 3-1).
+  새 자격증은 검사 전까지 날짜가 없고, 다음 목록 맨 앞에 들어간다. 회장이 "그날 검사 못 했다"고 하면 그날을 `config/inspection.ts` 의 `SKIPPED_DATES` 에 적는다.
 
 ## 가장 중요한 규칙 6가지
 
@@ -53,6 +54,7 @@ data/certs/{country}/{slug}/
   questions/{chapterId}.json  단원별 문제 (파일당 최대 300문항, 넘으면 -2, -3)
   exams/{year}-{round}.json   실전 모의고사 구성
   assets/                     문제·개념 그림 (SVG 만. 빌드 때 문제 파일 안에 넣어 배포 파일 수가 늘지 않는다)
+data/inspection.json          회장 검사 기록 ("검사 완료" 날짜, 오늘 검사할 10개)
 data/cert-queue.json          추가할 자격증 대기 목록 (나라별 응시자 수 순, 시행기관·기출 공개 여부 메모)
 data/review-queue/            검수 대기 목록
 reports/{YYYY-MM}/            작업 리포트 (월별 폴더)
@@ -138,5 +140,6 @@ npm run images:render -- {slug}  그림 검증용 PNG 만들기 (assets/*.svg �
 npm run check:cert -- {slug}  자격증 게시 기준 검사 (초급·중급·고급 각 30문제 이상, 실전 1회분 이상)
 npm run check:meta     빌드 결과의 title·description 중복, noindex, sitemap, hreflang 검사
 npm run check:deploy-size  빌드 결과의 Cloudflare 배포 파일 수 (한도 근처면 "모드: 보강")
+npm run inspection:next  회장 검사 목록 진행 (어제 10개 날짜 적기 + 오늘 검사할 10개 출력)
 npx wrangler deploy --dry-run   Cloudflare 배포 묶음 확인 (실제 배포는 push 하면 자동)
 ```

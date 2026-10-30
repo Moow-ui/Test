@@ -98,7 +98,7 @@ export default async function ChapterPage({ params }: Props) {
             <span className="block text-xl font-bold leading-tight sm:text-2xl">{meta.h1}</span>
           )}
         </h1>
-        <InspectedBadge lang={lang} />
+        <InspectedBadge lang={lang} certId={cert.id} />
       </header>
 
       {chapter.keyPoints.length > 0 && (

@@ -88,7 +88,7 @@ export default async function CertPage({ params }: Props) {
       <div className="text-center">
         <h1 className="text-xl font-bold leading-snug tracking-tight sm:text-2xl">{meta.h1}</h1>
         {cert.ready && cert.examInfo && <p className="mt-1 text-sm text-ink-sub">{m.cert.h1Sub}</p>}
-        <InspectedBadge lang={lang} />
+        <InspectedBadge lang={lang} certId={cert.id} />
       </div>
 
       {/* 가장 먼저 보이는 큰 박스: 초급 / 중급 / 고급, 그 아래 실전 문제풀이 */}

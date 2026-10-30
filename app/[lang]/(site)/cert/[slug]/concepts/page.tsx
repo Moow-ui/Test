@@ -82,7 +82,7 @@ export default async function ConceptsPage({ params }: Props) {
             meta.h1
           )}
         </h1>
-        <InspectedBadge lang={lang} />
+        <InspectedBadge lang={lang} certId={cert.id} />
       </header>
 
       {/* 단원 목차: 과목별, 중요도 ★ 와 과목 안 출제 비중(추정) */}

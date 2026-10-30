@@ -638,3 +638,15 @@ export const guideSchema = z.object({
   /** 쓴 주체. 지금은 AI 작성만 있다 (화면에 "AI 작성 · 운영진 관리"로 표시) */
   by: z.enum(["ai", "staff"]).default("ai"),
 });
+
+/**
+ * 회장 검사 기록 (data/inspection.json). 화면의 "검사 완료" 날짜는 여기서 나온다.
+ * 새벽 루틴이 `npm run inspection:next` 로 고친다 (docs/daily-routine.md 3-1).
+ */
+export const inspectionFileSchema = z.object({
+  /** 자격증 id → 회장이 마지막으로 검사한 날 (한국시간). 없는 자격증은 "검사 완료"를 표시하지 않는다 */
+  inspected: z.record(z.string(), dateSchema),
+  /** 루틴이 회장에게 알려 준 "오늘 검사할 자격증". 다음 루틴이 이 날짜로 inspected 를 고친다 */
+  today: z.object({ date: dateSchema, certs: z.array(z.string()) }).nullable(),
+});
+

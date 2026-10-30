@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { isWithinPastWindow } from "../past";
-import { COUNTRIES, certMetaSchema, certQueueSchema, certSummarySchema, chaptersFileSchema, conceptsFileSchema, guideSchema, questionSchema } from "../schemas";
+import { COUNTRIES, certMetaSchema, certQueueSchema, inspectionFileSchema, certSummarySchema, chaptersFileSchema, conceptsFileSchema, guideSchema, questionSchema } from "../schemas";
 import { isGuideExpired, kstToday } from "../guide-quality";
 import type {
   CertListItem,
@@ -16,7 +16,7 @@ import type {
 } from "../types";
 import { fsStore } from "./fs-store";
 import { svgDataUri } from "../svg";
-import { CERT_QUEUE_FILE, assetsDir, chaptersFile, conceptsFile, countryDir, guideFile, guidesDir, metaFile, questionsDir } from "./paths";
+import { CERT_QUEUE_FILE, INSPECTION_FILE, assetsDir, chaptersFile, conceptsFile, countryDir, guideFile, guidesDir, metaFile, questionsDir } from "./paths";
 import type { DataStore } from "./store";
 
 /**
@@ -251,6 +251,19 @@ export async function getReadyCertifications(country?: Country): Promise<Certifi
     if (cert) result.push(cert);
   }
   return result;
+}
+
+/** 회장 검사 기록 (data/inspection.json). 파일이 없으면 빈 기록 */
+export function getInspection() {
+  return cached("inspection", async () => {
+    const raw = await store.readJson(INSPECTION_FILE);
+    return inspectionFileSchema.parse(raw ?? { inspected: {}, today: null });
+  });
+}
+
+/** 회장이 그 자격증을 마지막으로 검사한 날 (YYYY-MM-DD). 기록이 없으면 null → "검사 완료"를 표시하지 않는다 */
+export async function getInspectedDate(certId: string): Promise<string | null> {
+  return (await getInspection()).inspected[certId] ?? null;
 }
 
 /** 이름만 빠르게 찾을 때 */

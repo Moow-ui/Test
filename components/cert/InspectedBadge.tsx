@@ -1,15 +1,15 @@
 import { Badge } from "@/components/Badge";
-import { INSPECTED_LOCALES, SKIPPED_DATES } from "@/config/inspection";
+import { INSPECTED_LOCALES } from "@/config/inspection";
+import { getInspectedDate } from "@/lib/data";
 import { fmt, getMessages, type Locale } from "@/lib/i18n";
-import { inspectedDate } from "@/lib/inspection";
 
 /**
  * 제목 아래 작은 초록 표시: "26년 10월 17일 검사 완료".
- * 날짜 = 빌드한 날(한국시간, next.config.ts 의 INSPECTION_BUILD_DATE)에서 검사 못 한 날을 뺀 가장 최근 날 (config/inspection.ts)
+ * 날짜 = 회장이 그 자격증을 마지막으로 검사한 날 (data/inspection.json, lib/inspection.ts). 기록이 없으면 표시하지 않는다.
  */
-export function InspectedBadge({ lang }: { lang: Locale }) {
+export async function InspectedBadge({ lang, certId }: { lang: Locale; certId: string }) {
   if (!INSPECTED_LOCALES.includes(lang)) return null;
-  const date = inspectedDate(process.env.INSPECTION_BUILD_DATE ?? "", SKIPPED_DATES);
+  const date = await getInspectedDate(certId);
   if (!date) return null;
   const [year, month, day] = date.split("-");
   const text = fmt(getMessages(lang).common.inspectedOn, {

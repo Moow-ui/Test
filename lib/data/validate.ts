@@ -10,6 +10,7 @@ import {
   conceptsFileSchema,
   examSetSchema,
   guideSchema,
+  inspectionFileSchema,
   questionSchema,
 } from "../schemas";
 import { mockExamShortage } from "../quiz-engine";
@@ -20,6 +21,7 @@ import {
   CERT_DIR_ENTRIES,
   CERT_QUEUE_FILE,
   EXAM_FILE_PATTERN,
+  INSPECTION_FILE,
   LEGACY_IDS_FILE,
   assetsDir,
   certDir,
@@ -286,6 +288,20 @@ export async function validateData(store: DataStore): Promise<ValidationResult> 
     guideCounts.push(`${lang} ${n}편`);
   }
   lines.push(`\n[수험 정보] ${guideCounts.join(" · ")}`);
+
+  // ── 회장 검사 기록 (data/inspection.json, "검사 완료" 날짜)
+  const inspectionRaw = await store.readJson(INSPECTION_FILE);
+  if (inspectionRaw !== null) {
+    const parsed = inspectionFileSchema.safeParse(inspectionRaw);
+    if (!parsed.success) for (const m of issues(parsed.error)) errors.push(`${INSPECTION_FILE} → ${m}`);
+    else {
+      const ids = new Set(metas.map((m) => m.id));
+      const unknown = Object.keys(parsed.data.inspected).filter((id) => !ids.has(id));
+      if (unknown.length > 0) errors.push(`${INSPECTION_FILE} → 없는 자격증: ${unknown.join(", ")} (npm run inspection:next 가 정리한다)`);
+      const today = parsed.data.today;
+      lines.push(`\n[검사 기록] ${Object.keys(parsed.data.inspected).length}개${today ? ` · ${today.date} 검사할 자격증 ${today.certs.length}개` : ""}`);
+    }
+  }
 
   if (queue.length > 0) {
     lines.push(
