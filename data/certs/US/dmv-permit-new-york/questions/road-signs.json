@@ -636,5 +636,357 @@
         3
       ]
     }
+  },
+  {
+    "id": "dmv-permit-new-york-road-signs-0019",
+    "certId": "dmv-permit-new-york",
+    "subjectId": "knowledge-test",
+    "chapterId": "road-signs",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What does this warning sign tell you?",
+    "choices": [
+      "A railroad crossing is just ahead",
+      "There is a traffic signal (traffic light) ahead",
+      "The traffic light ahead is broken, so treat it as a stop sign",
+      "You may turn right on red at the next corner"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Yellow diamond with a traffic light symbol = signal ahead",
+    "explanation": "This is the **Signal Ahead** sign. A yellow diamond is a warning sign, and the symbol shows a traffic light. It tells you there is a **traffic signal ahead**, often one you cannot see yet because of a curve or hill. Slow down and be ready to stop if the light is red or turns yellow.\n\n**Wrong choices**\n- A railroad crossing is just ahead: A railroad crossing is warned by a round yellow sign with an X and two R letters, not a traffic light symbol.\n- The traffic light ahead is broken, so treat it as a stop sign: The sign only warns that a signal is coming. It says nothing about the light being out of order.\n- You may turn right on red at the next corner: This is a warning sign, not a rule about turning. It does not give permission to turn.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-31",
+    "tags": [
+      "signs",
+      "warning signs",
+      "traffic signal"
+    ],
+    "image": "signal-ahead.svg",
+    "imageAlt": "A yellow diamond-shaped sign with a black border. In the center is a tall black box with three round lights stacked from top to bottom: red, yellow, and green.",
+    "imageSource": {
+      "kind": "public",
+      "title": "MUTCD W3-3 Signal Ahead sign",
+      "license": "US federal government work (public domain)"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-new-york-road-signs-0020",
+    "certId": "dmv-permit-new-york",
+    "subjectId": "knowledge-test",
+    "chapterId": "road-signs",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "You see this sign. What should you get ready to do?",
+    "choices": [
+      "Speed up, because the road ahead is clear",
+      "Change lanes to the left",
+      "Stop at a stop sign that is coming up ahead",
+      "Look for a place to park"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Yellow diamond with red stop shape and arrow = stop sign ahead",
+    "explanation": "This is the **Stop Ahead** sign. It is a yellow warning sign that shows the red eight-sided stop sign shape with an arrow pointing ahead. It tells you there is a **stop sign ahead** that may be hard to see. Slow down early so you can come to a full stop when you reach it.\n\n**Wrong choices**\n- Speed up, because the road ahead is clear: The sign warns that you will have to stop soon, so you should slow down, not speed up.\n- Change lanes to the left: The arrow points straight ahead. It does not tell you to change lanes.\n- Look for a place to park: The sign has nothing to do with parking. It warns of a stop ahead.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-31",
+    "tags": [
+      "signs",
+      "warning signs",
+      "stop ahead"
+    ],
+    "image": "stop-ahead.svg",
+    "imageAlt": "A yellow diamond-shaped sign with a black border. In the upper part is a red eight-sided shape with no writing. Below it, a thick black arrow points straight up toward the red shape.",
+    "imageSource": {
+      "kind": "public",
+      "title": "MUTCD W3-1 Stop Ahead sign",
+      "license": "US federal government work (public domain)"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-new-york-road-signs-0021",
+    "certId": "dmv-permit-new-york",
+    "subjectId": "knowledge-test",
+    "chapterId": "road-signs",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "You are driving on a highway and see this sign. What does it warn you about?",
+    "choices": [
+      "Your lane is about to end, and you must move left",
+      "The road divides into two separate roads ahead",
+      "Traffic from another road may enter your road from the right",
+      "You are coming to a sharp curve to the right"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Merge sign: traffic will join your road from the side shown",
+    "explanation": "This is the **Merging Traffic** (Merge) sign. The long arrow is your road, and the shorter curved line joining it from the right is another road or ramp. It warns that **traffic may enter your road from the right**. Watch for cars coming in, and be ready to adjust your speed or position so they can merge safely.\n\n**Wrong choices**\n- Your lane is about to end, and you must move left: A lane ends sign shows one lane line bending in toward the other with no separate road joining. Here a second road joins yours.\n- The road divides into two separate roads ahead: In this sign the lines come together, not apart.\n- You are coming to a sharp curve to the right: A curve sign shows one bent arrow. Here the main arrow goes straight up.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-31",
+    "tags": [
+      "signs",
+      "warning signs",
+      "merging"
+    ],
+    "image": "merging-traffic.svg",
+    "imageAlt": "A yellow diamond-shaped sign with a black border. A thick black arrow points straight up the middle of the sign. A thinner black line starts at the lower right and curves up and to the left until it joins the side of the straight arrow.",
+    "imageSource": {
+      "kind": "public",
+      "title": "MUTCD W4-1 Merge sign",
+      "license": "US federal government work (public domain)"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-new-york-road-signs-0022",
+    "certId": "dmv-permit-new-york",
+    "subjectId": "knowledge-test",
+    "chapterId": "road-signs",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What does this sign tell you about the road ahead?",
+    "choices": [
+      "The road you are on ends ahead, and you must turn left or right",
+      "A road crosses yours ahead, and you may go straight through",
+      "There is a hospital ahead",
+      "A side road joins from the right only"
+    ],
+    "answer": 1,
+    "oneLineConcept": "T symbol on a yellow diamond = your road ends at a T intersection",
+    "explanation": "This is the **T Intersection** sign. The upright line is the road you are on, and the bar across the top is the road it meets. It warns that **your road ends ahead** at a crossing road, so you will have to **turn left or right**. Slow down and be ready to stop or yield before you turn.\n\n**Wrong choices**\n- A road crosses yours ahead, and you may go straight through: A crossroad is shown with a plus sign (+). Here the upright line stops at the top bar, so you cannot go straight.\n- There is a hospital ahead: Hospital signs are blue service signs. This yellow diamond is a warning sign about the road shape.\n- A side road joins from the right only: A side road sign shows a short line on one side of a straight road. Here the bar goes both left and right, and your road ends at it.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-31",
+    "tags": [
+      "signs",
+      "warning signs",
+      "intersections"
+    ],
+    "image": "t-intersection.svg",
+    "imageAlt": "A yellow diamond-shaped sign with a black border. A thick black line runs up from the bottom of the sign and stops where it meets a thick black bar running left to right across the upper part, making the shape of a capital letter T.",
+    "imageSource": {
+      "kind": "public",
+      "title": "MUTCD W2-4 T Intersection sign",
+      "license": "US federal government work (public domain)"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-new-york-road-signs-0023",
+    "certId": "dmv-permit-new-york",
+    "subjectId": "knowledge-test",
+    "chapterId": "road-signs",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "You turn onto a ramp and see this sign facing you. What does it mean?",
+    "choices": [
+      "Drive slowly because the ramp is under construction",
+      "You may enter, but only if no other cars are coming",
+      "Stop, then continue when the way is clear",
+      "You are driving against traffic and must not go on"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Red WRONG WAY sign: you are driving against traffic",
+    "explanation": "This is the **WRONG WAY** sign. Red is used for signs that stop you or forbid something. If this sign faces you, you have entered a road or ramp **in the wrong direction** and traffic will come toward you. Do not keep going. Pull over safely and turn around, or leave the way you came when it is safe.\n\n**Wrong choices**\n- Drive slowly because the ramp is under construction: Work zone signs are orange. This red sign means you are going the wrong way.\n- You may enter, but only if no other cars are coming: You must not continue the wrong way at any time, even if the road looks empty.\n- Stop, then continue when the way is clear: That describes a STOP sign. After a WRONG WAY sign you must not continue in that direction.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-31",
+    "tags": [
+      "signs",
+      "regulatory signs",
+      "wrong way"
+    ],
+    "image": "wrong-way.svg",
+    "imageAlt": "A red rectangle sign, wider than it is tall, with a thin white border. Two lines of large white capital letters read WRONG and WAY.",
+    "imageSource": {
+      "kind": "public",
+      "title": "MUTCD R5-1a Wrong Way sign",
+      "license": "US federal government work (public domain)"
+    },
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-new-york-road-signs-0024",
+    "certId": "dmv-permit-new-york",
+    "subjectId": "knowledge-test",
+    "chapterId": "road-signs",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "You are about to turn onto a street that has this sign. Which way may traffic move on that street?",
+    "choices": [
+      "In both directions",
+      "Only in the direction the arrow points",
+      "Only in the direction opposite the arrow",
+      "Only buses may use the street"
+    ],
+    "answer": 2,
+    "oneLineConcept": "ONE WAY sign: traffic moves only in the direction of the arrow",
+    "explanation": "This is the **ONE WAY** sign. It is a regulatory sign, which means it states a rule you must obey. All traffic on that street must move **only in the direction the arrow points**. Turn so that you travel the same way as the arrow. Going the other way would put you head on against traffic.\n\n**Wrong choices**\n- In both directions: A one-way street carries traffic in a single direction only.\n- Only in the direction opposite the arrow: The arrow shows the way traffic goes. Driving against it means driving the wrong way.\n- Only buses may use the street: The sign says nothing about buses. It shows the direction of traffic for all vehicles.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-31",
+    "tags": [
+      "signs",
+      "regulatory signs",
+      "one way"
+    ],
+    "image": "one-way-right.svg",
+    "imageAlt": "A black rectangle sign, much wider than it is tall, with a thin white border. A large white arrow points to the right across the sign. Black capital letters inside the arrow read ONE WAY.",
+    "imageSource": {
+      "kind": "public",
+      "title": "MUTCD R6-1R One Way sign",
+      "license": "US federal government work (public domain)"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-new-york-road-signs-0025",
+    "certId": "dmv-permit-new-york",
+    "subjectId": "knowledge-test",
+    "chapterId": "road-signs",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "This sign is posted beside a two-lane road. Which statement about it is correct?",
+    "choices": [
+      "It is a warning sign, so passing is allowed if you are careful",
+      "It applies only to trucks and buses",
+      "It is a regulatory sign, and you must not pass other vehicles where it applies",
+      "It means you may pass only on the right"
+    ],
+    "answer": 3,
+    "oneLineConcept": "White rectangle DO NOT PASS = a rule: no passing",
+    "explanation": "This is the **DO NOT PASS** sign. White rectangular signs with black letters are **regulatory signs**: they state a rule you must obey, the same family as speed limit signs. This one means you **must not pass** other vehicles where it applies. It is different from the yellow pennant on the left side of the road, which is a warning sign that marks where a no passing zone begins.\n\n**Wrong choices**\n- It is a warning sign, so passing is allowed if you are careful: Warning signs are yellow. A white rectangle states a rule, and this rule says no passing.\n- It applies only to trucks and buses: The sign does not name any vehicle type, so it applies to all drivers.\n- It means you may pass only on the right: The sign forbids passing. It does not allow passing on the right instead.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-31",
+    "tags": [
+      "signs",
+      "regulatory signs",
+      "passing"
+    ],
+    "image": "do-not-pass.svg",
+    "imageAlt": "A white rectangle sign, taller than it is wide, with a black border. Three lines of large black capital letters read DO, NOT, and PASS.",
+    "imageSource": {
+      "kind": "public",
+      "title": "MUTCD R4-1 Do Not Pass sign",
+      "license": "US federal government work (public domain)"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-new-york-road-signs-0026",
+    "certId": "dmv-permit-new-york",
+    "subjectId": "knowledge-test",
+    "chapterId": "road-signs",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "You see this sign at an intersection. What does it mean?",
+    "choices": [
+      "Left turns are not allowed here",
+      "The road curves to the left ahead",
+      "You must turn left here",
+      "You may turn left only on a green arrow"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Turn arrow inside a red circle with a slash = that turn is not allowed",
+    "explanation": "This is the **No Left Turn** sign. A red circle with a red slash across a symbol means that action is **not allowed**. Here the symbol is an arrow turning left, so you **may not turn left** at this place. Go straight or turn right instead, and find another legal way to reach where you are going.\n\n**Wrong choices**\n- The road curves to the left ahead: Curve warnings are yellow diamond signs. A red circle and slash means something is forbidden.\n- You must turn left here: The slash crosses out the left turn. It forbids the turn; it does not require it.\n- You may turn left only on a green arrow: The sign does not mention a signal. It forbids the left turn here.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-31",
+    "tags": [
+      "signs",
+      "regulatory signs",
+      "turns"
+    ],
+    "image": "no-left-turn.svg",
+    "imageAlt": "A white square sign with a black border. A black arrow goes up from the bottom and then turns to point left. A red circle surrounds the arrow, and a red diagonal line runs from the upper left to the lower right across it.",
+    "imageSource": {
+      "kind": "public",
+      "title": "MUTCD R3-2 No Left Turn sign",
+      "license": "US federal government work (public domain)"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   }
 ]
