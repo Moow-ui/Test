@@ -1,0 +1,498 @@
+[
+  {
+    "id": "cna-nurse-aide-vital-signs-0001",
+    "certId": "cna-nurse-aide",
+    "subjectId": "physical-care",
+    "chapterId": "vital-signs",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What is the normal resting pulse rate for an adult?",
+    "choices": [
+      "60 to 100 beats per minute",
+      "100 to 140 beats per minute",
+      "12 to 20 beats per minute",
+      "40 to 60 beats per minute"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Adult pulse 60–100; report outside this range",
+    "explanation": "A normal adult resting pulse is **60 to 100 beats per minute**. Report a pulse below 60 or above 100, or one that is irregular, unless the nurse has told you that it is normal for that resident.\n\n**Wrong choices**\n- 100 to 140 beats per minute: Above 100 at rest is fast (tachycardia).\n- 12 to 20 beats per minute: 12 to 20 is the normal adult breathing rate, not the pulse.\n- 40 to 60 beats per minute: Below 60 is slow (bradycardia) for most adults.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-31",
+    "tags": [
+      "pulse",
+      "normal ranges"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "cna-nurse-aide-vital-signs-0002",
+    "certId": "cna-nurse-aide",
+    "subjectId": "physical-care",
+    "chapterId": "vital-signs",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What is the normal breathing (respiration) rate for an adult at rest?",
+    "choices": [
+      "12 to 20 breaths per minute",
+      "60 to 100 breaths per minute",
+      "4 to 8 breaths per minute",
+      "30 to 40 breaths per minute"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Adult respirations 12–20 per minute",
+    "explanation": "A normal adult breathes about **12 to 20 times per minute** at rest. Count one rise and one fall of the chest as one breath. Report breathing that is very fast, very slow, noisy, or labored.\n\n**Wrong choices**\n- 60 to 100 breaths per minute: 60 to 100 is the normal adult pulse range.\n- 4 to 8 breaths per minute: This is far too slow for a healthy adult.\n- 30 to 40 breaths per minute: This is far too fast for an adult at rest.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-31",
+    "tags": [
+      "respirations",
+      "normal ranges"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cna-nurse-aide-vital-signs-0003",
+    "certId": "cna-nurse-aide",
+    "subjectId": "physical-care",
+    "chapterId": "vital-signs",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which oral temperature is closest to the average normal adult value?",
+    "choices": [
+      "102.2°F (39°C)",
+      "96.0°F (35.6°C)",
+      "100.8°F (38.2°C)",
+      "98.6°F (37°C)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Average normal oral temperature: 98.6°F (37°C)",
+    "explanation": "The average normal oral temperature for adults is about **98.6°F (37°C)**, and normal readings vary a little from person to person. Older adults may have a slightly lower normal temperature, so a small rise can matter. Report readings above the normal range for that resident.\n\n**Wrong choices**\n- 102.2°F (39°C): This is a fever and should be reported.\n- 96.0°F (35.6°C): This is below the usual normal oral range.\n- 100.8°F (38.2°C): This is above the normal range and may be a fever.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-31",
+    "tags": [
+      "temperature"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "cna-nurse-aide-vital-signs-0004",
+    "certId": "cna-nurse-aide",
+    "subjectId": "physical-care",
+    "chapterId": "vital-signs",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which temperature site usually gives the lowest reading?",
+    "choices": [
+      "Oral",
+      "Axillary (armpit)",
+      "All sites give the same reading",
+      "Rectal"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Rectal highest, oral middle, axillary lowest",
+    "explanation": "Temperature differs by site. **Rectal** readings are usually the **highest**, **oral** is in the middle, and **axillary** (armpit) readings are usually the **lowest**. Always record which site you used.\n\n**Wrong choices**\n- Oral: Oral readings are usually between rectal and axillary readings.\n- All sites give the same reading: Readings differ by site.\n- Rectal: Rectal temperatures are usually the highest.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-31",
+    "tags": [
+      "temperature"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "cna-nurse-aide-vital-signs-0005",
+    "certId": "cna-nurse-aide",
+    "subjectId": "physical-care",
+    "chapterId": "vital-signs",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Where is the radial pulse taken?",
+    "choices": [
+      "On the side of the neck",
+      "On the top of the foot",
+      "On the inside of the elbow",
+      "On the inside of the wrist, on the thumb side"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Radial pulse: thumb side of the inner wrist",
+    "explanation": "The **radial pulse** is felt on the **thumb side of the inner wrist**. Use two or three fingertips, not your thumb, because your thumb has its own pulse.\n\n**Wrong choices**\n- On the side of the neck: That is the carotid pulse.\n- On the top of the foot: That is the pedal pulse.\n- On the inside of the elbow: That is the brachial pulse, used for blood pressure.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-31",
+    "tags": [
+      "pulse"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "cna-nurse-aide-vital-signs-0006",
+    "certId": "cna-nurse-aide",
+    "subjectId": "physical-care",
+    "chapterId": "vital-signs",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A resident's pulse feels irregular. How long should the aide count it?",
+    "choices": [
+      "30 seconds, then multiply by 2",
+      "A full 60 seconds",
+      "10 seconds, then multiply by 6",
+      "15 seconds, then multiply by 4"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Irregular pulse: count a full minute and report",
+    "explanation": "When a pulse is **irregular**, beats come at uneven times, so a short count multiplied up can be wrong. Count for **one full minute** and report the irregular rhythm to the nurse.\n\n**Wrong choices**\n- 30 seconds, then multiply by 2: A 30-second count is not reliable for an irregular pulse.\n- 10 seconds, then multiply by 6: A 10-second count is the least accurate for an irregular pulse.\n- 15 seconds, then multiply by 4: With an irregular rhythm, a short count can be far off.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-31",
+    "tags": [
+      "pulse"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "cna-nurse-aide-vital-signs-0007",
+    "certId": "cna-nurse-aide",
+    "subjectId": "physical-care",
+    "chapterId": "vital-signs",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which blood pressure reading is in the normal range for an adult?",
+    "choices": [
+      "150/96 mm Hg",
+      "136/88 mm Hg",
+      "182/112 mm Hg",
+      "116/76 mm Hg"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Normal BP: below 120/80 mm Hg",
+    "explanation": "Normal adult blood pressure is **below 120 systolic and below 80 diastolic**. Readings above that are elevated or high. Report readings that are higher or lower than usual for the resident, or that the nurse has asked you to report.\n\n**Wrong choices**\n- 150/96 mm Hg: This is high blood pressure.\n- 136/88 mm Hg: This reading is above normal (high blood pressure range).\n- 182/112 mm Hg: This is very high and needs to be reported right away.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-31",
+    "tags": [
+      "blood pressure",
+      "normal ranges"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "cna-nurse-aide-vital-signs-0008",
+    "certId": "cna-nurse-aide",
+    "subjectId": "physical-care",
+    "chapterId": "vital-signs",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "What can happen if a blood pressure cuff that is too small is used?",
+    "choices": [
+      "The reading may be falsely high",
+      "The reading may be falsely low",
+      "The reading will be exact but painful",
+      "The pulse will stop permanently"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Too-small cuff = falsely high blood pressure",
+    "explanation": "The cuff must be the right size for the arm. A cuff that is **too small** usually gives a **falsely high** reading, and one that is **too large** can give a falsely low reading.\n\n**Wrong choices**\n- The reading may be falsely low: A cuff that is too large, not too small, tends to give a low reading.\n- The reading will be exact but painful: A wrong-size cuff gives a wrong reading.\n- The pulse will stop permanently: A cuff does not stop the pulse permanently.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-31",
+    "tags": [
+      "blood pressure"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cna-nurse-aide-vital-signs-0009",
+    "certId": "cna-nurse-aide",
+    "subjectId": "physical-care",
+    "chapterId": "vital-signs",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Why does the aide keep fingers on the wrist after counting the pulse and then count respirations without telling the resident?",
+    "choices": [
+      "People often change how they breathe when they know it is being counted",
+      "Counting both at once is required by law",
+      "The resident is not allowed to know their vital signs",
+      "The pulse cannot be felt unless the resident holds still"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Count respirations without the resident noticing",
+    "explanation": "If residents know their breathing is being counted, they may breathe faster or slower without meaning to. Keeping your fingers on the wrist makes it look like you are still taking the pulse, so you get a **true respiration count**.\n\n**Wrong choices**\n- Counting both at once is required by law: No law requires this; it is done for accuracy.\n- The resident is not allowed to know their vital signs: Residents have the right to information about their health.\n- The pulse cannot be felt unless the resident holds still: The reason is accuracy of the breathing count.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-31",
+    "tags": [
+      "respirations"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "cna-nurse-aide-vital-signs-0010",
+    "certId": "cna-nurse-aide",
+    "subjectId": "physical-care",
+    "chapterId": "vital-signs",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which food should be counted as fluid intake?",
+    "choices": [
+      "A cup of gelatin",
+      "A boiled egg",
+      "Mashed potatoes",
+      "A slice of bread"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Foods liquid at room temp count as fluid intake",
+    "explanation": "Fluid intake includes anything that is **liquid at room temperature**: water, juice, milk, coffee, soup, ice cream, gelatin, and ice pops. Solid foods are not counted.\n\n**Wrong choices**\n- A boiled egg: An egg is a solid food.\n- Mashed potatoes: Mashed potatoes are a solid food.\n- A slice of bread: Bread is a solid food.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-31",
+    "tags": [
+      "intake and output"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "cna-nurse-aide-vital-signs-0011",
+    "certId": "cna-nurse-aide",
+    "subjectId": "physical-care",
+    "chapterId": "vital-signs",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A resident drinks 8 ounces of milk and 4 ounces of juice. Using 1 ounce = 30 mL, how many mL should be recorded?",
+    "choices": [
+      "120 mL",
+      "240 mL",
+      "360 mL",
+      "480 mL"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Intake: total ounces × 30 = mL",
+    "explanation": "Add the ounces, then change to mL:\n\n1. 8 oz + 4 oz = 12 oz\n2. 12 oz × 30 mL = **360 mL**\n3. Check: 240 mL (milk) + 120 mL (juice) = 360 mL\n\n**Wrong choices**\n- 120 mL: 120 mL is only the juice (4 × 30).\n- 240 mL: 240 mL is only the milk (8 × 30).\n- 480 mL: This uses 40 mL per ounce instead of 30.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-31",
+    "tags": [
+      "intake and output",
+      "math"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "cna-nurse-aide-vital-signs-0012",
+    "certId": "cna-nurse-aide",
+    "subjectId": "physical-care",
+    "chapterId": "vital-signs",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A resident who is usually talkative is suddenly confused and sleepy. What should the aide do?",
+    "choices": [
+      "Wait until tomorrow to see if it gets better",
+      "Report it to the nurse right away",
+      "Tell the resident's roommate to keep an eye on her",
+      "Write it in the notes at the end of the shift"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Sudden change in a resident: report right away",
+    "explanation": "A **sudden change** in alertness, behavior, or ability can be a sign of a serious problem such as infection or stroke. **Report changes to the nurse right away.**\n\n**Wrong choices**\n- Wait until tomorrow to see if it gets better: Waiting can delay treatment for a serious problem.\n- Tell the resident's roommate to keep an eye on her: The roommate is not responsible for her care, and this breaks privacy.\n- Write it in the notes at the end of the shift: A sudden change needs to be reported now, not hours later.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-31",
+    "tags": [
+      "reporting",
+      "observation"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "cna-nurse-aide-vital-signs-0013",
+    "certId": "cna-nurse-aide",
+    "subjectId": "physical-care",
+    "chapterId": "vital-signs",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A resident rates his pain as 8 on a scale of 0 to 10 but is smiling and talking. What should the aide do?",
+    "choices": [
+      "Give him a pain pill from the medicine cart",
+      "Report the resident's rating of 8 to the nurse",
+      "Record a lower number because he looks comfortable",
+      "Tell him to wait until the next meal"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Report the resident's own pain rating",
+    "explanation": "Pain is **whatever the resident says it is**. People show pain differently, and some smile through it. Record and **report the resident's own rating** to the nurse.\n\n**Wrong choices**\n- Give him a pain pill from the medicine cart: Giving medicine is not the nurse aide's role.\n- Record a lower number because he looks comfortable: Pain is what the resident says it is; the aide does not change the rating.\n- Tell him to wait until the next meal: Delaying the report leaves his pain untreated.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-31",
+    "tags": [
+      "pain",
+      "reporting"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "cna-nurse-aide-vital-signs-0014",
+    "certId": "cna-nurse-aide",
+    "subjectId": "physical-care",
+    "chapterId": "vital-signs",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "How should the aide weigh a resident to get accurate results from day to day?",
+    "choices": [
+      "At any time of day, as long as the scale is checked",
+      "With shoes on one day and off the next",
+      "On whichever scale is closest",
+      "At the same time of day, on the same scale, in similar clothing"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Weigh at the same time, same scale, same clothing",
+    "explanation": "To compare weights, use the **same scale**, at the **same time of day** (often before breakfast, after voiding), with **similar clothing**. Report a gain or loss to the nurse.\n\n**Wrong choices**\n- At any time of day, as long as the scale is checked: Weight changes over the day, so timing matters.\n- With shoes on one day and off the next: Clothing and shoes change the weight.\n- On whichever scale is closest: Different scales can give different readings.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-31",
+    "tags": [
+      "weight"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  }
+]

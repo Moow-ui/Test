@@ -1,0 +1,345 @@
+[
+  {
+    "id": "cna-nurse-aide-care-team-0001",
+    "certId": "cna-nurse-aide",
+    "subjectId": "role-of-aide",
+    "chapterId": "care-team",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Who supervises the nurse aide's work?",
+    "choices": [
+      "Another nurse aide",
+      "The dietitian",
+      "The resident's family",
+      "A licensed nurse"
+    ],
+    "answer": 4,
+    "oneLineConcept": "The nurse supervises the nurse aide",
+    "explanation": "Nurse aides work under the **supervision of a licensed nurse** (a registered nurse or licensed practical/vocational nurse). Ask the nurse when you have questions about your assignment.\n\n**Wrong choices**\n- Another nurse aide: Nurse aides work under the supervision of licensed nurses.\n- The dietitian: The dietitian plans diets but does not supervise nurse aides.\n- The resident's family: Family members do not supervise staff.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-31",
+    "tags": [
+      "chain of command"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "cna-nurse-aide-care-team-0002",
+    "certId": "cna-nurse-aide",
+    "subjectId": "role-of-aide",
+    "chapterId": "care-team",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Where does the nurse aide find out what care a resident needs?",
+    "choices": [
+      "The care plan and the assignment from the nurse",
+      "A coworker's memory from last week",
+      "The resident's roommate",
+      "The aide's own guess"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Follow the care plan and nurse's assignment",
+    "explanation": "The **care plan** is written by the care team and lists each resident's needs and goals. The nurse's **assignment** tells you what to do on your shift. Follow them and report what you observe.\n\n**Wrong choices**\n- A coworker's memory from last week: Care needs can change; use the current care plan.\n- The resident's roommate: The roommate does not decide the resident's care.\n- The aide's own guess: Care must follow the plan, not guesses.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-31",
+    "tags": [
+      "care plan"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cna-nurse-aide-care-team-0003",
+    "certId": "cna-nurse-aide",
+    "subjectId": "role-of-aide",
+    "chapterId": "care-team",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "The nurse asks the aide to do a task the aide has not been trained to do. What should the aide do?",
+    "choices": [
+      "Politely tell the nurse you have not been trained and ask for help or training",
+      "Do it anyway so the nurse is not upset",
+      "Refuse and leave the unit",
+      "Ask the resident how to do it"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Not trained for a task: tell the nurse, don't do it",
+    "explanation": "Never do a task you are **not trained** for or that is **outside your role**. Explain this to the nurse respectfully so the task can be reassigned or you can be trained.\n\n**Wrong choices**\n- Do it anyway so the nurse is not upset: Doing a task without training can harm the resident.\n- Refuse and leave the unit: Leaving can neglect residents; explain and ask for help instead.\n- Ask the resident how to do it: The resident cannot train you to do care safely.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-31",
+    "tags": [
+      "scope of practice",
+      "assignments"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cna-nurse-aide-care-team-0004",
+    "certId": "cna-nurse-aide",
+    "subjectId": "role-of-aide",
+    "chapterId": "care-team",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "At the start of a shift, what helps the aide manage time best?",
+    "choices": [
+      "Wait until residents call for help",
+      "Get the report, review the assignment, and plan care by the residents' needs",
+      "Start with the easiest tasks no matter what",
+      "Do all charting first, then give care"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Plan your shift from report and assignment",
+    "explanation": "Good **time management** starts with the **shift report** and **assignment**. Plan your work so urgent needs and scheduled care (such as meals and repositioning) are done on time, and stay flexible for changes.\n\n**Wrong choices**\n- Wait until residents call for help: Waiting means care is late and needs are missed.\n- Start with the easiest tasks no matter what: The most urgent needs should come first.\n- Do all charting first, then give care: Charting should be done as care is given, not before care.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-31",
+    "tags": [
+      "time management"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cna-nurse-aide-care-team-0005",
+    "certId": "cna-nurse-aide",
+    "subjectId": "role-of-aide",
+    "chapterId": "care-team",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Under federal rules, how much in-service training must nurse aides in nursing facilities receive each year, at a minimum?",
+    "choices": [
+      "12 hours",
+      "No training is required after certification",
+      "24 hours",
+      "4 hours"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Nurse aide in-service: at least 12 hours a year",
+    "explanation": "Under 42 CFR 483.95, nurse aide **in-service training** must be **at least 12 hours per year**, and must include **dementia management** and **resident abuse prevention** training.\n\n**Wrong choices**\n- No training is required after certification: Yearly in-service training is required.\n- 24 hours: Facilities may give more, but the federal minimum is less than this.\n- 4 hours: This is less than the federal minimum.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-31",
+    "tags": [
+      "in-service",
+      "federal rules"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "cna-nurse-aide-care-team-0006",
+    "certId": "cna-nurse-aide",
+    "subjectId": "role-of-aide",
+    "chapterId": "care-team",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which care team member helps a resident improve walking and leg strength?",
+    "choices": [
+      "Dietitian",
+      "Speech-language pathologist",
+      "Physical therapist",
+      "Social worker"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Physical therapist: walking and strength",
+    "explanation": "A **physical therapist** helps residents with **strength, walking, and moving**. Other team members include occupational therapists (daily living skills), speech-language pathologists (speech and swallowing), dietitians, and social workers.\n\n**Wrong choices**\n- Dietitian: A dietitian plans meals and nutrition.\n- Speech-language pathologist: A speech-language pathologist helps with speech and swallowing.\n- Social worker: A social worker helps with emotional, family, and financial needs.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-31",
+    "tags": [
+      "care team"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cna-nurse-aide-care-team-0007",
+    "certId": "cna-nurse-aide",
+    "subjectId": "role-of-aide",
+    "chapterId": "care-team",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which care team member usually evaluates a resident's swallowing problems?",
+    "choices": [
+      "Housekeeper",
+      "Physical therapist",
+      "Activities director",
+      "Speech-language pathologist"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Speech-language pathologist: speech and swallowing",
+    "explanation": "A **speech-language pathologist** evaluates and treats problems with **speech, language, and swallowing**, and may recommend thickened liquids or special feeding methods.\n\n**Wrong choices**\n- Housekeeper: A housekeeper cleans the environment.\n- Physical therapist: A physical therapist works on strength and walking.\n- Activities director: An activities director plans recreation.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-31",
+    "tags": [
+      "care team",
+      "dysphagia"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "cna-nurse-aide-care-team-0008",
+    "certId": "cna-nurse-aide",
+    "subjectId": "role-of-aide",
+    "chapterId": "care-team",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "An aide reported a resident's new bruise to the nurse, but nothing was done. What should the aide do next?",
+    "choices": [
+      "Tell the resident's roommate",
+      "Follow the chain of command and report to the next supervisor",
+      "Post about it on social media",
+      "Do nothing more, since the nurse was told"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Use the chain of command if concerns aren't addressed",
+    "explanation": "The **chain of command** is the order of authority in the facility. If a concern about a resident's safety is not addressed, report it to the **next person in charge**, such as the charge nurse or director of nursing.\n\n**Wrong choices**\n- Tell the resident's roommate: The roommate cannot address the problem.\n- Post about it on social media: This violates confidentiality and does not help the resident.\n- Do nothing more, since the nurse was told: If a concern about a resident is not addressed, the aide should take it higher.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-31",
+    "tags": [
+      "chain of command"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "cna-nurse-aide-care-team-0009",
+    "certId": "cna-nurse-aide",
+    "subjectId": "role-of-aide",
+    "chapterId": "care-team",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Why is the nurse aide's input important when the team plans a resident's care?",
+    "choices": [
+      "The aide makes the final decisions about care",
+      "The aide gives much of the direct daily care and can report what the resident does and needs",
+      "The aide decides the resident's diagnosis",
+      "The aide writes the doctor's orders"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Aides share observations that shape the care plan",
+    "explanation": "Nurse aides spend a lot of time with residents. Their **observations** about eating, sleeping, behavior, and abilities help the team make a **care plan** that fits the resident.\n\n**Wrong choices**\n- The aide makes the final decisions about care: The care team, led by licensed staff, makes decisions.\n- The aide decides the resident's diagnosis: Diagnosing is not the aide's role.\n- The aide writes the doctor's orders: Doctors and other licensed providers write orders.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-31",
+    "tags": [
+      "care plan"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "cna-nurse-aide-care-team-0010",
+    "certId": "cna-nurse-aide",
+    "subjectId": "role-of-aide",
+    "chapterId": "care-team",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Each of the following is good teamwork EXCEPT:",
+    "choices": [
+      "Helping coworkers when your own work is done",
+      "Arriving on time for your shift",
+      "Complaining about coworkers in front of residents",
+      "Giving a clear report to the next shift"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Keep conflicts away from residents",
+    "explanation": "Complaining about coworkers in front of residents is **unprofessional** and can worry residents. Helping others, giving a clear report, and being on time are all part of **good teamwork**.\n\n**Wrong choices**\n- Helping coworkers when your own work is done: Helping others supports good care.\n- Arriving on time for your shift: Being on time means residents are not left without care.\n- Giving a clear report to the next shift: A good report keeps care consistent.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-31",
+    "tags": [
+      "teamwork"
+    ],
+    "levelLock": true
+  }
+]

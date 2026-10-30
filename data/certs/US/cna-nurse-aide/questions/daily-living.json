@@ -1,0 +1,641 @@
+[
+  {
+    "id": "cna-nurse-aide-daily-living-0001",
+    "certId": "cna-nurse-aide",
+    "subjectId": "physical-care",
+    "chapterId": "daily-living",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A resident has weakness on the right side. When you help her put on a shirt, which arm should go into a sleeve first?",
+    "choices": [
+      "Whichever arm the aide finds easier",
+      "The left (strong) arm",
+      "The right (weak) arm",
+      "Both arms at the same time"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Dress the weak side first; undress the strong side first",
+    "explanation": "Dress the **weak** (affected) arm first and undress it **last**. The weak arm cannot bend or reach well, so it goes into the sleeve while the shirt is loose. The strong arm can then move into its sleeve easily.\n\n**Wrong choices**\n- Whichever arm the aide finds easier: The rule is based on the resident's weak side, not the aide's preference.\n- The left (strong) arm: The strong arm can bend and reach, so it goes in last and comes out first.\n- Both arms at the same time: Putting both arms in at once pulls on the weak arm and is hard to control.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-31",
+    "tags": [
+      "dressing",
+      "weak side"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "cna-nurse-aide-daily-living-0002",
+    "certId": "cna-nurse-aide",
+    "subjectId": "physical-care",
+    "chapterId": "daily-living",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Before helping a resident into a tub bath, what should the aide do first?",
+    "choices": [
+      "Add bath oil to the water",
+      "Leave the resident to undress alone",
+      "Fill the tub to the very top",
+      "Check the water temperature"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Check water temperature before any bath",
+    "explanation": "Older skin burns easily and some residents cannot feel heat well. Always **check the water temperature** with a bath thermometer or the inside of your wrist before the resident gets in. Many programs also let the resident test the water to make sure it is comfortable.\n\n**Wrong choices**\n- Add bath oil to the water: Bath oil makes the tub slippery and is not a safety step.\n- Leave the resident to undress alone: Staying close keeps the resident safe from falls.\n- Fill the tub to the very top: A very full tub can overflow and is not needed for a safe bath.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-31",
+    "tags": [
+      "bathing",
+      "safety"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "cna-nurse-aide-daily-living-0003",
+    "certId": "cna-nurse-aide",
+    "subjectId": "physical-care",
+    "chapterId": "daily-living",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "When giving mouth care to a resident who is unconscious, how should the resident be positioned?",
+    "choices": [
+      "Face down on the stomach",
+      "Sitting straight up in a chair",
+      "On the side, with the head turned to one side",
+      "Flat on the back with no pillow"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Unconscious mouth care: side-lying so fluid drains out",
+    "explanation": "An unconscious resident cannot swallow or cough well. Turning the resident **on the side with the head turned** lets fluid run out of the mouth instead of into the airway. Use only a small amount of liquid on a swab, and never put your fingers in the resident's mouth.\n\n**Wrong choices**\n- Face down on the stomach: Face down makes it hard to see the mouth and can block breathing.\n- Sitting straight up in a chair: An unconscious resident cannot sit safely in a chair.\n- Flat on the back with no pillow: Lying flat on the back lets fluid run into the throat and airway.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-31",
+    "tags": [
+      "mouth care",
+      "aspiration"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "cna-nurse-aide-daily-living-0004",
+    "certId": "cna-nurse-aide",
+    "subjectId": "physical-care",
+    "chapterId": "daily-living",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Why should the aide line the sink with a towel or put some water in it before cleaning a resident's dentures?",
+    "choices": [
+      "To make the dentures whiter",
+      "To keep the dentures from breaking if they are dropped",
+      "To soften the denture adhesive",
+      "To keep the cleaning water warm longer"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Line the sink so dropped dentures do not break",
+    "explanation": "Dentures are expensive and break easily if they hit a hard sink. A **towel or a little water in the sink** gives a soft landing if they slip. Clean them with cool or lukewarm water, because hot water can warp them.\n\n**Wrong choices**\n- To make the dentures whiter: Lining the sink has nothing to do with color.\n- To soften the denture adhesive: The towel or water does not soften adhesive.\n- To keep the cleaning water warm longer: Warm water is not the goal; hot water can actually warp dentures.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-31",
+    "tags": [
+      "dentures",
+      "mouth care"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "cna-nurse-aide-daily-living-0005",
+    "certId": "cna-nurse-aide",
+    "subjectId": "physical-care",
+    "chapterId": "daily-living",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Where should a resident's dentures be stored when they are not in the mouth?",
+    "choices": [
+      "In hot water in a cup by the sink",
+      "In the resident's drawer with no container",
+      "Dry, wrapped in a paper napkin",
+      "In cool or lukewarm water in a labeled denture cup"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Store dentures in a labeled cup with cool water",
+    "explanation": "Keep dentures **wet** in cool or lukewarm water (or the soaking solution the facility uses) in a **denture cup labeled with the resident's name**. This keeps them from drying out, warping, or getting lost.\n\n**Wrong choices**\n- In hot water in a cup by the sink: Hot water can warp dentures so they no longer fit.\n- In the resident's drawer with no container: Without a labeled cup they can be lost or damaged.\n- Dry, wrapped in a paper napkin: Dentures wrapped in napkins are easily thrown away, and they can dry out.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-31",
+    "tags": [
+      "dentures"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "cna-nurse-aide-daily-living-0006",
+    "certId": "cna-nurse-aide",
+    "subjectId": "physical-care",
+    "chapterId": "daily-living",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "When giving perineal care to a female resident, in which direction should the aide wipe?",
+    "choices": [
+      "From back to front",
+      "Back and forth with the same part of the washcloth",
+      "From front to back",
+      "In circles starting at the anus"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Perineal care: front to back, clean to dirty",
+    "explanation": "Wipe from **front to back** (from the urinary opening toward the anus) and use a clean part of the washcloth for each stroke. This moves from the **cleanest** area to the **dirtiest** area and helps prevent urinary tract infections.\n\n**Wrong choices**\n- From back to front: Wiping back to front carries germs from the anal area toward the urinary opening.\n- Back and forth with the same part of the washcloth: Reusing the same part of the cloth spreads germs.\n- In circles starting at the anus: Starting at the anus spreads germs to cleaner areas.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-31",
+    "tags": [
+      "perineal care",
+      "infection"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "cna-nurse-aide-daily-living-0007",
+    "certId": "cna-nurse-aide",
+    "subjectId": "physical-care",
+    "chapterId": "daily-living",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A resident with diabetes asks the nurse aide to cut her toenails. What should the aide do?",
+    "choices": [
+      "Not cut them, and tell the nurse about the request",
+      "File them down with a sharp metal tool",
+      "Soak her feet in very hot water first",
+      "Cut them straight across with clippers"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Do not cut toenails of residents with diabetes; tell nurse",
+    "explanation": "People with diabetes often have poor circulation and less feeling in their feet. A small cut can become a serious infection. Nurse aides **do not cut the toenails** of residents with diabetes or poor circulation; **report the request to the nurse**.\n\n**Wrong choices**\n- File them down with a sharp metal tool: A sharp tool can injure the skin and is not the aide's task here.\n- Soak her feet in very hot water first: People with diabetes may not feel heat well, so hot water can burn them.\n- Cut them straight across with clippers: Even careful cutting can cause a small cut that heals poorly in a person with diabetes.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-31",
+    "tags": [
+      "nail care",
+      "diabetes",
+      "scope"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "cna-nurse-aide-daily-living-0008",
+    "certId": "cna-nurse-aide",
+    "subjectId": "physical-care",
+    "chapterId": "daily-living",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A resident who eats in bed needs help at mealtime. How should the head of the bed be placed?",
+    "choices": [
+      "Raised so the resident sits up as straight as possible",
+      "Flat",
+      "Lower than the feet",
+      "Raised only a few inches"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Sit the resident upright for meals",
+    "explanation": "Sitting **upright** helps food and fluids go down the throat to the stomach instead of into the airway. Raise the head of the bed so the resident sits up as straight as possible, or help the resident sit in a chair, as the care plan allows.\n\n**Wrong choices**\n- Flat: Eating while lying flat greatly raises the risk of choking.\n- Lower than the feet: Having the head lower than the feet is unsafe for eating.\n- Raised only a few inches: A small raise still leaves the resident almost lying down, which makes choking more likely.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-31",
+    "tags": [
+      "feeding",
+      "aspiration"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "cna-nurse-aide-daily-living-0009",
+    "certId": "cna-nurse-aide",
+    "subjectId": "physical-care",
+    "chapterId": "daily-living",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which action is best when feeding a resident who cannot feed himself?",
+    "choices": [
+      "Stand over the resident while feeding",
+      "Give large spoonfuls so the meal goes faster",
+      "Offer small bites and let the resident choose which food comes next",
+      "Mix all the foods together to save time"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Small bites, sit at eye level, let resident choose",
+    "explanation": "Feed in **small bites**, give time to chew and swallow, and **sit at eye level**. Tell the resident what each food is and let him choose the order. This keeps the meal safe and keeps the resident's dignity.\n\n**Wrong choices**\n- Stand over the resident while feeding: Sitting at eye level is more respectful and lets you watch the resident swallow.\n- Give large spoonfuls so the meal goes faster: Large bites raise the risk of choking.\n- Mix all the foods together to save time: Mixing foods takes away the resident's choice and makes the meal less pleasant.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-31",
+    "tags": [
+      "feeding",
+      "dignity"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "cna-nurse-aide-daily-living-0010",
+    "certId": "cna-nurse-aide",
+    "subjectId": "physical-care",
+    "chapterId": "daily-living",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A resident who is blind is served a meal and can feed herself. What is the best way to help her?",
+    "choices": [
+      "Put all of the food in one bowl",
+      "Feed her yourself to be safe",
+      "Describe where each food is using the numbers on a clock face",
+      "Uncover the plate and leave the room"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Blind resident: use the clock method to describe food",
+    "explanation": "The **clock method** tells a resident who cannot see where foods are, such as 'meat at 6 o'clock, potatoes at 9 o'clock.' This lets her **feed herself** and stay independent.\n\n**Wrong choices**\n- Put all of the food in one bowl: This takes away the look and taste of a normal meal and her choices.\n- Feed her yourself to be safe: She can feed herself, so doing it for her takes away her independence.\n- Uncover the plate and leave the room: She will not know where the foods are.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-31",
+    "tags": [
+      "feeding",
+      "vision",
+      "independence"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cna-nurse-aide-daily-living-0011",
+    "certId": "cna-nurse-aide",
+    "subjectId": "physical-care",
+    "chapterId": "daily-living",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A resident's care plan says \"NPO.\" What does this mean?",
+    "choices": [
+      "Nothing by mouth",
+      "Clear liquids only",
+      "Push fluids",
+      "Soft foods only"
+    ],
+    "answer": 1,
+    "oneLineConcept": "NPO = nothing by mouth",
+    "explanation": "**NPO** comes from Latin words meaning **nothing by mouth**: no food and no drinks, often before a test or surgery. Remove the water pitcher if instructed, and tell the nurse if the resident asks for something.\n\n**Wrong choices**\n- Clear liquids only: Clear liquids are a different diet order.\n- Push fluids: 'Push fluids' means encourage extra drinking, the opposite of NPO.\n- Soft foods only: A soft diet is a separate diet order.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-31",
+    "tags": [
+      "diet",
+      "abbreviations"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cna-nurse-aide-daily-living-0012",
+    "certId": "cna-nurse-aide",
+    "subjectId": "physical-care",
+    "chapterId": "daily-living",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A resident with dysphagia (trouble swallowing) has an order for thickened liquids. Why are the liquids thickened?",
+    "choices": [
+      "Thick liquids move more slowly and are less likely to go into the airway",
+      "Thick liquids are easier to measure",
+      "Thick liquids have more vitamins",
+      "Thick liquids stop constipation"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Thickened liquids lower choking risk in dysphagia",
+    "explanation": "Thin liquids such as water move fast and can slip into the airway before the resident can swallow safely. **Thickened liquids** move more slowly, giving the resident time to swallow. Always serve liquids at the thickness the care plan orders.\n\n**Wrong choices**\n- Thick liquids are easier to measure: Measuring intake is not the reason for the order.\n- Thick liquids have more vitamins: Thickening is done for safe swallowing, not for nutrition.\n- Thick liquids stop constipation: Thickened liquids do not treat constipation.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-31",
+    "tags": [
+      "dysphagia",
+      "diet"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "cna-nurse-aide-daily-living-0013",
+    "certId": "cna-nurse-aide",
+    "subjectId": "physical-care",
+    "chapterId": "daily-living",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Where should a resident's urinary drainage bag be kept?",
+    "choices": [
+      "Below the level of the bladder, off the floor",
+      "On the bed above the resident's hip",
+      "On the resident's stomach",
+      "On the floor next to the bed"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Drainage bag below the bladder and off the floor",
+    "explanation": "Urine must drain **downhill**. Keep the bag **below the bladder** so urine cannot flow back, and keep it **off the floor** to keep it clean. Hang it on the bed frame, not on a side rail that moves.\n\n**Wrong choices**\n- On the bed above the resident's hip: Above the bladder, urine can flow back into the bladder and cause infection.\n- On the resident's stomach: This is above the bladder and lets urine flow back.\n- On the floor next to the bed: The floor is dirty, and germs can get onto the bag.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-31",
+    "tags": [
+      "catheter",
+      "infection"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "cna-nurse-aide-daily-living-0014",
+    "certId": "cna-nurse-aide",
+    "subjectId": "physical-care",
+    "chapterId": "daily-living",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "When giving catheter care, how should the aide clean the catheter tubing?",
+    "choices": [
+      "Pull the tube gently to check that it is secure",
+      "Start partway down the tube and wipe toward the body",
+      "Start at the urinary opening and wipe down the tube, away from the body",
+      "Disconnect the tubing from the bag and wash the ends"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Catheter care: wipe away from the body",
+    "explanation": "Germs travel up a catheter into the bladder. Clean **from the urinary opening outward**, a few inches down the tube, using a clean part of the cloth each time. Never pull on the catheter and do not open the closed drainage system.\n\n**Wrong choices**\n- Pull the tube gently to check that it is secure: Pulling can injure the resident.\n- Start partway down the tube and wipe toward the body: Wiping toward the body carries germs up to the urinary opening.\n- Disconnect the tubing from the bag and wash the ends: Opening the closed system lets germs in.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-31",
+    "tags": [
+      "catheter",
+      "perineal care"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "cna-nurse-aide-daily-living-0015",
+    "certId": "cna-nurse-aide",
+    "subjectId": "physical-care",
+    "chapterId": "daily-living",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Which observation about a resident's elimination should be reported to the nurse?",
+    "choices": [
+      "Pale yellow, clear urine",
+      "Urinating several times during the day",
+      "Black, tarry stool",
+      "A soft, formed bowel movement"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Report black, tarry stool and other abnormal output",
+    "explanation": "**Black, tarry stool** can be a sign of bleeding in the stomach or bowel and must be reported. Also report blood in urine or stool, dark or cloudy urine with a strong smell, pain when passing urine, and constipation or diarrhea.\n\n**Wrong choices**\n- Pale yellow, clear urine: This is the normal color of urine.\n- Urinating several times during the day: Passing urine several times a day is normal.\n- A soft, formed bowel movement: This is a normal stool.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-31",
+    "tags": [
+      "elimination",
+      "reporting"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "cna-nurse-aide-daily-living-0016",
+    "certId": "cna-nurse-aide",
+    "subjectId": "physical-care",
+    "chapterId": "daily-living",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A resident takes a blood thinner (anticoagulant) and needs a shave. Which razor should the aide use?",
+    "choices": [
+      "Any razor, as long as you go slowly",
+      "A straight razor",
+      "A disposable safety razor",
+      "An electric razor"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Residents on blood thinners: use an electric razor",
+    "explanation": "Blood thinners make cuts bleed longer. An **electric razor** does not cut the skin, so it is the safe choice for residents who take anticoagulants.\n\n**Wrong choices**\n- Any razor, as long as you go slowly: Going slowly does not remove the risk of a cut with a blade.\n- A straight razor: A straight razor is the most likely to cut the skin.\n- A disposable safety razor: A blade can nick the skin and cause bleeding that is hard to stop.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-31",
+    "tags": [
+      "shaving",
+      "safety"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "cna-nurse-aide-daily-living-0017",
+    "certId": "cna-nurse-aide",
+    "subjectId": "physical-care",
+    "chapterId": "daily-living",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which action best helps a resident get a good night's sleep?",
+    "choices": [
+      "Leave the bright overhead light on all night",
+      "Wake the resident each hour to ask if they are comfortable",
+      "Offer a cup of regular coffee at bedtime",
+      "Follow the resident's usual bedtime routine and keep the room quiet and dim"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Sleep: keep the usual routine, quiet room, dim light",
+    "explanation": "Sleep comes more easily with **familiar routines** such as a snack, washing up, or reading, and a **quiet, dim, comfortable** room. Help the resident use the toilet before bed and give a back rub if the care plan allows.\n\n**Wrong choices**\n- Leave the bright overhead light on all night: Bright light makes it harder to fall asleep.\n- Wake the resident each hour to ask if they are comfortable: Waking the resident without need breaks up sleep.\n- Offer a cup of regular coffee at bedtime: The caffeine in regular coffee keeps people awake.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-31",
+    "tags": [
+      "sleep",
+      "comfort"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "cna-nurse-aide-daily-living-0018",
+    "certId": "cna-nurse-aide",
+    "subjectId": "physical-care",
+    "chapterId": "daily-living",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "All of the following help prevent pressure injuries (bedsores) EXCEPT:",
+    "choices": [
+      "Keeping sheets smooth and free of wrinkles",
+      "Keeping the skin clean and dry",
+      "Rubbing hard over reddened bony areas",
+      "Repositioning the resident as often as the care plan says"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Never rub reddened bony areas; reposition and keep dry",
+    "explanation": "Pressure injuries form when pressure cuts off blood flow, often over bony areas such as the hips, tailbone, and heels. **Do not massage reddened bony areas**, because rubbing can damage the tissue more. Report redness to the nurse. Turning, clean and dry skin, and smooth linens all help.\n\n**Wrong choices**\n- Keeping sheets smooth and free of wrinkles: Wrinkles press into the skin, so smooth sheets are correct.\n- Keeping the skin clean and dry: Moisture damages skin, so keeping it clean and dry is correct.\n- Repositioning the resident as often as the care plan says: Regular turning relieves pressure and is correct.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-10-31",
+    "tags": [
+      "skin care",
+      "pressure injury"
+    ],
+    "levelLock": true
+  }
+]
