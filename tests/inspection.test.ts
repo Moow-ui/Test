@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { advanceInspection, kstDate, type InspectionFile } from "@/lib/inspection";
+import { advanceInspection, inspectionsPerDay, kstDate, type InspectionFile } from "@/lib/inspection";
 
 const ids = (n: number, from = 0) => Array.from({ length: n }, (_, i) => `c${String(i + from).padStart(3, "0")}`);
 const nextDay = (date: string) => new Date(Date.parse(`${date}T00:00:00Z`) + 86_400_000).toISOString().slice(0, 10);
@@ -40,6 +40,10 @@ describe("검사 완료 날짜", () => {
     expect(advanceInspection(file, ["a"], "2026-10-31", []).file.inspected).toEqual({ a: "2026-10-01" });
   });
 
+  it("하루 검사 수는 자격증 수에 따라 10·20·30·40개", () => {
+    expect([73, 99, 100, 149, 150, 199, 200, 500].map(inspectionsPerDay)).toEqual([10, 10, 20, 20, 30, 30, 40, 40]);
+  });
+
   it("매일 자격증이 늘어도 빠지는 자격증 없이 모두 차례가 온다", () => {
     let certs = ids(73);
     let file: InspectionFile = { inspected: Object.fromEntries(certs.map((id) => [id, "2026-10-30"])), today: null };
@@ -50,13 +54,13 @@ describe("검사 완료 날짜", () => {
       certs = [...certs, ...ids(2, 73 + (day - 1) * 2)]; // 하루 2개씩 추가
       file = advanceInspection(file, certs, date, []).file;
       const todays = file.today?.certs ?? [];
-      expect(todays).toHaveLength(10);
+      expect(todays).toHaveLength(inspectionsPerDay(certs.length));
       for (const id of todays) lastSeen.set(id, day);
       // 새 자격증은 추가된 날 바로 목록에 든다
       for (const id of certs.slice(-2)) expect(todays).toContain(id);
     }
-    // 마지막까지: 모든 자격증이 한 번 이상 차례가 왔고, 한 바퀴(자격증 수 ÷ 10일)보다 오래 밀린 것이 없다
-    const cycle = Math.ceil(certs.length / 10);
+    // 마지막까지: 모든 자격증이 한 번 이상 차례가 왔고, 한 바퀴(자격증 수 ÷ 하루 검사 수)보다 오래 밀린 것이 없다
+    const cycle = Math.ceil(certs.length / inspectionsPerDay(certs.length));
     for (const id of certs) {
       expect(lastSeen.has(id)).toBe(true);
       expect(200 - (lastSeen.get(id) ?? 0)).toBeLessThanOrEqual(cycle);
