@@ -1,0 +1,532 @@
+[
+  {
+    "id": "epa-608-small-appliance-techniques-0001",
+    "certId": "epa-608",
+    "subjectId": "type-1",
+    "chapterId": "small-appliance-techniques",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What is \"system-dependent\" (passive) recovery equipment?",
+    "choices": [
+      "Equipment that cleans refrigerant to reclaim standards",
+      "Equipment that uses the appliance's own compressor or pressure to move refrigerant out",
+      "Equipment with its own built-in compressor",
+      "Equipment that is permanently mounted on a rooftop"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Passive (system-dependent) uses the appliance",
+    "explanation": "**System-dependent** recovery equipment needs **help from the appliance**, such as its compressor or internal pressure, to remove refrigerant. **Self-contained** equipment has its own compressor and can work without the appliance's help.\n\n**Wrong choices**\n- Equipment that cleans refrigerant to reclaim standards: Reclaiming is done by certified reclaimers, not recovery equipment.\n- Equipment with its own built-in compressor: Equipment with its own compressor is self-contained (active) equipment.\n- Equipment that is permanently mounted on a rooftop: Mounting location does not define system-dependent equipment.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "system-dependent",
+      "recovery equipment"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-small-appliance-techniques-0002",
+    "certId": "epa-608",
+    "subjectId": "type-1",
+    "chapterId": "small-appliance-techniques",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A technician uses system-dependent (passive) recovery on a small appliance whose compressor does NOT work. What should be done?",
+    "choices": [
+      "Install an access valve on the low side only",
+      "Run the broken compressor anyway",
+      "Install an access valve on the high side only",
+      "Install access valves on both the high side and the low side"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Dead compressor + passive: valves on both sides",
+    "explanation": "When the compressor does not work, refrigerant cannot be pushed through the system. Installing access valves on **both the high and low sides** lets refrigerant come out of both parts of the system.\n\n**Wrong choices**\n- Install an access valve on the low side only: With only one valve, much of the refrigerant stays trapped.\n- Run the broken compressor anyway: A compressor that does not work cannot move refrigerant.\n- Install an access valve on the high side only: With only one valve, much of the refrigerant stays trapped.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "passive recovery",
+      "access valves"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-small-appliance-techniques-0003",
+    "certId": "epa-608",
+    "subjectId": "type-1",
+    "chapterId": "small-appliance-techniques",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A technician uses passive recovery on a small appliance whose compressor DOES work. What should the technician do?",
+    "choices": [
+      "Heat the recovery container",
+      "Open the system to the air first",
+      "Run the appliance's compressor to help push refrigerant into the container",
+      "Leave the compressor off for the whole recovery"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Working compressor + passive: run it",
+    "explanation": "With passive recovery, a **working compressor** in the appliance should be **run** to push the refrigerant out of the system and into the recovery container.\n\n**Wrong choices**\n- Heat the recovery container: Heating the container raises its pressure and slows recovery.\n- Open the system to the air first: Opening the system would vent refrigerant.\n- Leave the compressor off for the whole recovery: The working compressor helps move refrigerant, so it should be used.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "passive recovery",
+      "compressor"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-small-appliance-techniques-0004",
+    "certId": "epa-608",
+    "subjectId": "type-1",
+    "chapterId": "small-appliance-techniques",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Using passive recovery on a small appliance with a compressor that does not work, what helps release refrigerant trapped in the compressor oil?",
+    "choices": [
+      "Adding nitrogen to the recovery container",
+      "Cutting the suction line",
+      "Cooling the compressor with ice",
+      "Warming the compressor and striking it sharply with a rubber mallet"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Heat and tap the compressor to free refrigerant",
+    "explanation": "EPA's test topics list **heating and sharply striking the compressor** as a way to free refrigerant that is dissolved in the oil when the compressor does not run. A rubber mallet or similar tool is used.\n\n**Wrong choices**\n- Adding nitrogen to the recovery container: Adding nitrogen to the container does not release refrigerant from the oil.\n- Cutting the suction line: Cutting a line vents refrigerant and is illegal.\n- Cooling the compressor with ice: Cooling holds refrigerant in the oil instead of releasing it.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "passive recovery",
+      "techniques"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-small-appliance-techniques-0005",
+    "certId": "epa-608",
+    "subjectId": "type-1",
+    "chapterId": "small-appliance-techniques",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "When may a vacuum pump be used as part of a small appliance recovery setup?",
+    "choices": [
+      "To push refrigerant into a pressurized cylinder",
+      "To vent refrigerant outdoors",
+      "Never under any conditions",
+      "Only with a non-pressurized recovery container"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Vacuum pump only with non-pressurized container",
+    "explanation": "EPA lists using a **vacuum pump with a non-pressurized recovery container** as a passive recovery method for small appliances. A vacuum pump cannot safely push refrigerant into a pressurized cylinder.\n\n**Wrong choices**\n- To push refrigerant into a pressurized cylinder: A vacuum pump is not built to push against cylinder pressure.\n- To vent refrigerant outdoors: Venting is illegal.\n- Never under any conditions: EPA lists a vacuum pump with a non-pressurized container as one passive method.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "passive recovery",
+      "vacuum pump"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-small-appliance-techniques-0006",
+    "certId": "epa-608",
+    "subjectId": "type-1",
+    "chapterId": "small-appliance-techniques",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What should be done with solderless (piercing) access valves when the service job is finished?",
+    "choices": [
+      "Tighten them once a year",
+      "Remove them, because they tend to leak over time",
+      "Paint them to prevent rust",
+      "Leave them on for the next service call"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Remove piercing valves after service",
+    "explanation": "Solderless **piercing access valves** are meant for temporary use. They **tend to leak** over time, so EPA's test topics say to **remove** them when service is finished.\n\n**Wrong choices**\n- Tighten them once a year: Tightening does not fix the leak risk.\n- Paint them to prevent rust: Painting does not stop a piercing valve from leaking.\n- Leave them on for the next service call: Piercing valves can leak if left on.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "access valves",
+      "piercing valves"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-small-appliance-techniques-0007",
+    "certId": "epa-608",
+    "subjectId": "type-1",
+    "chapterId": "small-appliance-techniques",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A refrigerant's pressure is higher than the pressure-temperature (PT) chart shows for the measured temperature. What is a likely cause?",
+    "choices": [
+      "The system is low on charge",
+      "The refrigerant is very pure",
+      "The recovery container is too cold",
+      "Air or other noncondensables are in the refrigerant"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Pressure above PT chart = noncondensables",
+    "explanation": "Using **pressure and temperature** together can identify a refrigerant and detect **noncondensables**. If the pressure is **higher** than the PT chart value at that temperature, air or other noncondensables are likely present.\n\n**Wrong choices**\n- The system is low on charge: A low charge does not make a sample read above the chart pressure.\n- The refrigerant is very pure: Pure refrigerant would match the PT chart.\n- The recovery container is too cold: A cold container lowers pressure.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "noncondensables",
+      "PT chart"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-small-appliance-techniques-0008",
+    "certId": "epa-608",
+    "subjectId": "type-1",
+    "chapterId": "small-appliance-techniques",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which refrigerant is the common substitute for R-12 in household refrigerators?",
+    "choices": [
+      "R-22",
+      "R-410A",
+      "R-134a",
+      "R-123"
+    ],
+    "answer": 3,
+    "oneLineConcept": "R-134a replaced R-12 in household fridges",
+    "explanation": "EPA's test topics name **HFC-134a (R-134a)** as the likely substitute for **CFC-12 (R-12)**. Newer household refrigerators may also use isobutane (R-600a).\n\n**Wrong choices**\n- R-22: R-22 is an HCFC used mainly in air conditioning.\n- R-410A: R-410A is a high-pressure refrigerant for air conditioning.\n- R-123: R-123 is used in low-pressure chillers.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "substitutes",
+      "R-134a"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-small-appliance-techniques-0009",
+    "certId": "epa-608",
+    "subjectId": "type-1",
+    "chapterId": "small-appliance-techniques",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "What happens when refrigerant is exposed to an open flame or very hot surface?",
+    "choices": [
+      "It becomes nitrogen",
+      "It turns into harmless water vapor",
+      "It can break down into toxic and corrosive gases",
+      "Nothing; refrigerants are fully stable at any temperature"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Heated refrigerant breaks down into toxic gases",
+    "explanation": "At high temperatures, such as near a torch flame, refrigerants can **decompose** into dangerous products such as **hydrochloric and hydrofluoric acid**, and for some older refrigerants **phosgene gas**. Ventilate the work area and recover refrigerant before brazing.\n\n**Wrong choices**\n- It becomes nitrogen: Refrigerant does not turn into nitrogen.\n- It turns into harmless water vapor: Refrigerant does not turn into water vapor.\n- Nothing; refrigerants are fully stable at any temperature: Refrigerants break down at high temperatures.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "safety",
+      "decomposition"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "epa-608-small-appliance-techniques-0010",
+    "certId": "epa-608",
+    "subjectId": "type-1",
+    "chapterId": "small-appliance-techniques",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "What is the main safety concern when servicing a refrigerator that uses isobutane (R-600a)?",
+    "choices": [
+      "It reacts with water to form acid",
+      "It is flammable, so keep sparks and flames away",
+      "It is extremely toxic in tiny amounts",
+      "It is a very high-pressure refrigerant"
+    ],
+    "answer": 2,
+    "oneLineConcept": "R-600a and R-290 are flammable",
+    "explanation": "Hydrocarbon refrigerants such as **isobutane (R-600a)** and propane (R-290) are **flammable**. Follow the manufacturer's instructions, keep ignition sources away, and use tools rated for flammable refrigerants.\n\n**Wrong choices**\n- It reacts with water to form acid: This is not its main hazard.\n- It is extremely toxic in tiny amounts: Isobutane is not highly toxic; its main hazard is fire.\n- It is a very high-pressure refrigerant: Isobutane is not a very high-pressure refrigerant.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "safety",
+      "hydrocarbons",
+      "R-600a"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-small-appliance-techniques-0011",
+    "certId": "epa-608",
+    "subjectId": "type-1",
+    "chapterId": "small-appliance-techniques",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Why may system-dependent (passive) recovery be used on a household refrigerator but not on a large rooftop unit?",
+    "choices": [
+      "Rooftop units do not contain refrigerant",
+      "Passive recovery is only allowed outdoors",
+      "Rooftop units have no compressor",
+      "System-dependent equipment may not be used on appliances with a full charge over 15 pounds"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Passive recovery not allowed over 15 lb",
+    "explanation": "40 CFR 82.156(e) says **system-dependent** recovery equipment may not be used on appliances with a **full charge of more than 15 pounds**, unless it is a permanently attached pump-out unit. Household refrigerators hold far less.\n\n**Wrong choices**\n- Rooftop units do not contain refrigerant: Rooftop units do contain refrigerant.\n- Passive recovery is only allowed outdoors: There is no indoor or outdoor rule.\n- Rooftop units have no compressor: Rooftop units do have compressors.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "system-dependent",
+      "15 pounds"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-small-appliance-techniques-0012",
+    "certId": "epa-608",
+    "subjectId": "type-1",
+    "chapterId": "small-appliance-techniques",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What is \"self-contained\" (active) recovery equipment?",
+    "choices": [
+      "Equipment with its own compressor that can remove refrigerant without help from the appliance",
+      "A cylinder with no valves",
+      "A plastic bag used to catch refrigerant",
+      "Equipment that depends on the appliance's compressor"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Self-contained = own compressor",
+    "explanation": "**Self-contained** recovery equipment can remove refrigerant **without the help of parts in the appliance**, because it has its own compressor or pump. It can be used on appliances of any size.\n\n**Wrong choices**\n- A cylinder with no valves: A cylinder with no valves cannot be used for recovery.\n- A plastic bag used to catch refrigerant: Bags are sometimes used as passive containers, but they are not self-contained equipment.\n- Equipment that depends on the appliance's compressor: Depending on the appliance's compressor describes system-dependent equipment.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "self-contained",
+      "recovery equipment"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-small-appliance-techniques-0013",
+    "certId": "epa-608",
+    "subjectId": "type-1",
+    "chapterId": "small-appliance-techniques",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A technician is about to braze a line on a small appliance. What must be done first?",
+    "choices": [
+      "Heat the compressor with the torch",
+      "Open the line and let the refrigerant escape",
+      "Recover the refrigerant to the required level",
+      "Add more refrigerant so the pressure stays positive"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Recover before opening or brazing",
+    "explanation": "Before opening a small appliance, the technician must **recover the refrigerant** to the required level (80 or 90 percent, or 4 inches of mercury vacuum). This also prevents toxic decomposition from the torch's heat.\n\n**Wrong choices**\n- Heat the compressor with the torch: Heating with a torch before recovery creates a fire and decomposition hazard.\n- Open the line and let the refrigerant escape: Letting refrigerant escape is illegal venting.\n- Add more refrigerant so the pressure stays positive: Brazing on a charged system is dangerous and can break down refrigerant.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "recovery",
+      "brazing"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-small-appliance-techniques-0014",
+    "certId": "epa-608",
+    "subjectId": "type-1",
+    "chapterId": "small-appliance-techniques",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Before recovering from a small appliance, how can a technician identify the refrigerant inside?",
+    "choices": [
+      "Check the appliance nameplate and confirm with a pressure and temperature reading",
+      "Guess from the age of the appliance",
+      "Smell the refrigerant",
+      "Look at the color of the refrigerant"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Identify refrigerant: nameplate plus P-T check",
+    "explanation": "The **nameplate** lists the refrigerant. A **pressure and temperature** check against a PT chart can confirm it and show whether noncondensables are present. Never mix refrigerants in a recovery container.\n\n**Wrong choices**\n- Guess from the age of the appliance: Age alone does not tell you which refrigerant is inside.\n- Smell the refrigerant: Smelling refrigerant is unsafe and does not identify it.\n- Look at the color of the refrigerant: Most refrigerants have no color.",
+    "frequency": 2,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "refrigerant identification",
+      "PT chart"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-small-appliance-techniques-0015",
+    "certId": "epa-608",
+    "subjectId": "type-1",
+    "chapterId": "small-appliance-techniques",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "All of the following are passive (system-dependent) recovery practices for small appliances EXCEPT:",
+    "choices": [
+      "Using passive recovery on a 25-pound commercial system",
+      "Running the appliance's compressor if it works",
+      "Using a non-pressurized container with a vacuum pump",
+      "Installing access valves on both sides if the compressor does not work"
+    ],
+    "answer": 1,
+    "oneLineConcept": "No passive recovery over 15 lb",
+    "explanation": "System-dependent equipment may not be used on appliances with a full charge **over 15 pounds**, so using it on a 25-pound system is not allowed. The other practices are correct for small appliances.\n\n**Wrong choices**\n- Running the appliance's compressor if it works: Running a working compressor is correct for passive recovery.\n- Using a non-pressurized container with a vacuum pump: A non-pressurized container with a vacuum pump is one listed method.\n- Installing access valves on both sides if the compressor does not work: Access valves on both sides are correct when the compressor does not work.",
+    "frequency": 2,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "passive recovery"
+    ],
+    "levelLock": true
+  }
+]

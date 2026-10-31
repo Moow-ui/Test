@@ -1,0 +1,568 @@
+[
+  {
+    "id": "epa-608-small-appliance-rules-0001",
+    "certId": "epa-608",
+    "subjectId": "type-1",
+    "chapterId": "small-appliance-rules",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Under EPA rules, what is a \"small appliance\"?",
+    "choices": [
+      "A field-assembled split system with 15 pounds or less",
+      "Any appliance with less than 50 pounds of refrigerant",
+      "A factory-built, factory-charged, hermetically sealed appliance with 5 pounds of refrigerant or less",
+      "Any appliance that plugs into a wall outlet"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Small appliance: factory-sealed, 5 lb or less",
+    "explanation": "40 CFR 82.152 defines a **small appliance** as one that is **fully manufactured, charged, and hermetically sealed in a factory with 5 pounds or less** of refrigerant, such as household refrigerators, window air conditioners, dehumidifiers, and water coolers.\n\n**Wrong choices**\n- A field-assembled split system with 15 pounds or less: Field-assembled systems are not small appliances, and the limit is 5 pounds, not 15.\n- Any appliance with less than 50 pounds of refrigerant: 50 pounds is a leak repair threshold, not the small appliance limit.\n- Any appliance that plugs into a wall outlet: Plugging into an outlet does not make an appliance \"small\" under the rule.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "small appliance",
+      "definition"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-small-appliance-rules-0002",
+    "certId": "epa-608",
+    "subjectId": "type-1",
+    "chapterId": "small-appliance-rules",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which of these is a small appliance under EPA rules?",
+    "choices": [
+      "A window air conditioner",
+      "A 3-ton split-system central air conditioner",
+      "A packaged rooftop unit",
+      "A centrifugal chiller"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Window AC, fridge, dehumidifier = small appliances",
+    "explanation": "Small appliances include **window and room air conditioners**, household refrigerators and freezers, dehumidifiers, under-counter ice makers, vending machines, and drinking water coolers, as long as they are factory-sealed with 5 pounds or less.\n\n**Wrong choices**\n- A 3-ton split-system central air conditioner: A split system is assembled and charged in the field, so it is not a small appliance.\n- A packaged rooftop unit: Rooftop units usually hold more than 5 pounds and need Type II.\n- A centrifugal chiller: Chillers are large appliances (Type II or Type III).",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "small appliance",
+      "examples"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "epa-608-small-appliance-rules-0003",
+    "certId": "epa-608",
+    "subjectId": "type-1",
+    "chapterId": "small-appliance-rules",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A technician uses recovery equipment made after November 15, 1993, on a small appliance whose compressor works. How much refrigerant must be recovered?",
+    "choices": [
+      "80 percent",
+      "90 percent",
+      "100 percent",
+      "70 percent"
+    ],
+    "answer": 2,
+    "oneLineConcept": "New equipment + working compressor = 90%",
+    "explanation": "Under 40 CFR 82.156(b), with recovery equipment made **on or after November 15, 1993**, recover **90 percent** of the refrigerant if the appliance's **compressor works**, or 80 percent if it does not. Evacuating to 4 inches of mercury vacuum also meets the rule.\n\n**Wrong choices**\n- 80 percent: 80 percent applies when the compressor does not work or the equipment is older.\n- 100 percent: EPA does not require 100 percent recovery.\n- 70 percent: 70 percent is not a recovery requirement.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "recovery requirements",
+      "90 percent"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-small-appliance-rules-0004",
+    "certId": "epa-608",
+    "subjectId": "type-1",
+    "chapterId": "small-appliance-rules",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Using recovery equipment made after November 15, 1993, a technician works on a small appliance whose compressor does NOT run. How much refrigerant must be recovered?",
+    "choices": [
+      "90 percent",
+      "50 percent",
+      "75 percent",
+      "80 percent"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Compressor not working = 80%",
+    "explanation": "When the small appliance's **compressor is not working**, the requirement is **80 percent** recovery, even with newer equipment. Without a working compressor it is harder to push refrigerant out of the system.\n\n**Wrong choices**\n- 90 percent: 90 percent applies only when the compressor works.\n- 50 percent: 50 percent is far too low.\n- 75 percent: 75 percent is not a recovery requirement.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "recovery requirements",
+      "80 percent"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-small-appliance-rules-0005",
+    "certId": "epa-608",
+    "subjectId": "type-1",
+    "chapterId": "small-appliance-rules",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A technician uses recovery equipment made BEFORE November 15, 1993, on a small appliance. How much refrigerant must be recovered?",
+    "choices": [
+      "80 percent, whether or not the compressor works",
+      "70 percent",
+      "90 percent if the compressor works",
+      "No set amount for older equipment"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Pre-1993 equipment = 80% always",
+    "explanation": "For recovery equipment made **before November 15, 1993**, the rule is **80 percent** recovery from a small appliance, no matter whether the compressor runs.\n\n**Wrong choices**\n- 70 percent: 70 percent is not a recovery requirement.\n- 90 percent if the compressor works: The 90 percent rule applies only to equipment made on or after November 15, 1993.\n- No set amount for older equipment: Older equipment still has a set requirement.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "recovery requirements",
+      "1993"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "epa-608-small-appliance-rules-0006",
+    "certId": "epa-608",
+    "subjectId": "type-1",
+    "chapterId": "small-appliance-rules",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Instead of measuring a percentage, how else can a technician meet the small appliance recovery requirement?",
+    "choices": [
+      "Evacuate the appliance to 10 inches of mercury vacuum",
+      "Evacuate the appliance to 4 inches of mercury vacuum",
+      "Evacuate the appliance to 25 mm Hg absolute",
+      "Evacuate the appliance to 0 psig"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Small appliances: or pull to 4 in. Hg vacuum",
+    "explanation": "40 CFR 82.156(b)(3) lets technicians meet the small appliance rule by **evacuating to four inches of mercury vacuum** instead of proving 80 or 90 percent recovery.\n\n**Wrong choices**\n- Evacuate the appliance to 10 inches of mercury vacuum: 10 inches applies to some larger high- and medium-pressure appliances.\n- Evacuate the appliance to 25 mm Hg absolute: 25 mm Hg absolute applies to low-pressure appliances.\n- Evacuate the appliance to 0 psig: 0 psig is not enough for small appliance recovery.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "recovery requirements",
+      "4 inches"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-small-appliance-rules-0007",
+    "certId": "epa-608",
+    "subjectId": "type-1",
+    "chapterId": "small-appliance-rules",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Who must make sure refrigerant has been removed from a refrigerator at the end of the disposal chain, such as at a scrap yard?",
+    "choices": [
+      "The manufacturer of the refrigerator",
+      "No one; refrigerators are exempt from disposal rules",
+      "The original buyer of the refrigerator",
+      "The final processor, such as the scrap recycler or landfill operator"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Final processor must recover or get signed proof",
+    "explanation": "Under 40 CFR 82.155, the **final processor** (the last step in disposal, such as a scrap recycler or landfill) must either **recover the remaining refrigerant** or get a **signed statement or contract** showing it was properly recovered earlier.\n\n**Wrong choices**\n- The manufacturer of the refrigerator: The manufacturer is not the final processor.\n- No one; refrigerators are exempt from disposal rules: Small appliances are covered by the safe disposal rules.\n- The original buyer of the refrigerator: The original buyer is not responsible under the final processor rule.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "disposal",
+      "final processor"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-small-appliance-rules-0008",
+    "certId": "epa-608",
+    "subjectId": "type-1",
+    "chapterId": "small-appliance-rules",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "How long must a final processor keep signed statements showing refrigerant was recovered from small appliances?",
+    "choices": [
+      "5 years",
+      "1 year",
+      "3 years",
+      "Until the scrap metal is sold"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Final processor keeps statements 3 years",
+    "explanation": "40 CFR 82.155(c) requires the final processor to keep copies of all signed statements or contracts **on site for three years**, on paper or electronically.\n\n**Wrong choices**\n- 5 years: The rule says three years.\n- 1 year: One year is too short.\n- Until the scrap metal is sold: The records must be kept for a set time.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "disposal",
+      "recordkeeping"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "epa-608-small-appliance-rules-0009",
+    "certId": "epa-608",
+    "subjectId": "type-1",
+    "chapterId": "small-appliance-rules",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "What information must a signed statement given to a final processor include?",
+    "choices": [
+      "The technician's Social Security number",
+      "The price paid for the scrap",
+      "Only the brand of the appliance",
+      "The name and address of the person who recovered the refrigerant and the date it was recovered"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Signed statement: who recovered, address, date",
+    "explanation": "Under 40 CFR 82.155(b)(2), a signed statement must include the **name and address of the person who recovered** the refrigerant and the **date** it was recovered.\n\n**Wrong choices**\n- The technician's Social Security number: Social Security numbers are not required.\n- The price paid for the scrap: The scrap price is not part of the statement.\n- Only the brand of the appliance: The appliance brand is not what the rule asks for.",
+    "frequency": 2,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "disposal",
+      "signed statement"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-small-appliance-rules-0010",
+    "certId": "epa-608",
+    "subjectId": "type-1",
+    "chapterId": "small-appliance-rules",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A Type I-only test is given in a mail-in (open-book) format. What passing score is required?",
+    "choices": [
+      "84 percent",
+      "70 percent",
+      "90 percent",
+      "75 percent"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Mail-in Type I passing score = 84%",
+    "explanation": "Appendix D to Subpart F sets the passing score at **70 percent** for closed-book tests and **84 percent** for **mail-in Type I** tests. A mail-in Type I test cannot be used toward Universal certification.\n\n**Wrong choices**\n- 70 percent: 70 percent is the passing score for closed-book tests.\n- 90 percent: 90 percent is the small appliance recovery requirement, not a test score.\n- 75 percent: 75 percent is not an EPA passing score.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "certification",
+      "Type I test"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-small-appliance-rules-0011",
+    "certId": "epa-608",
+    "subjectId": "type-1",
+    "chapterId": "small-appliance-rules",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A technician passed an open-book (mail-in) Type I test. Can that test be used toward Universal certification?",
+    "choices": [
+      "Yes, if the Core section was also open-book",
+      "Yes, if passed with at least 70 percent",
+      "Yes, after one year of experience",
+      "No; Universal requires closed-book, proctored testing"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Open-book Type I cannot count toward Universal",
+    "explanation": "EPA rules say **mail-in Type I tests cannot be used toward Universal**, and EPA notes that a Core test taken open-book cannot be used for Universal either. Universal requires **closed-book, proctored** tests.\n\n**Wrong choices**\n- Yes, if the Core section was also open-book: EPA says open-book Core tests cannot be used for Universal either.\n- Yes, if passed with at least 70 percent: The score does not change the rule for open-book tests.\n- Yes, after one year of experience: Experience does not change the rule.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "certification",
+      "Universal"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-small-appliance-rules-0012",
+    "certId": "epa-608",
+    "subjectId": "type-1",
+    "chapterId": "small-appliance-rules",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "What must every small appliance (other than those using only exempt refrigerants) have so refrigerant can be removed?",
+    "choices": [
+      "A process stub",
+      "A sight glass",
+      "A permanent service valve on both sides",
+      "A pump-out unit"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Small appliances must have a process stub",
+    "explanation": "40 CFR 82.154(e) says small appliances must be sold with a **process stub**, a short length of tubing that gives access to the refrigerant and can be resealed after service.\n\n**Wrong choices**\n- A sight glass: A sight glass is not required for recovery.\n- A permanent service valve on both sides: Permanent service valves are not required on small appliances.\n- A pump-out unit: Pump-out units are used on some large appliances.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "process stub",
+      "small appliance"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "epa-608-small-appliance-rules-0013",
+    "certId": "epa-608",
+    "subjectId": "type-1",
+    "chapterId": "small-appliance-rules",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which certification type is needed to service small appliances such as household refrigerators?",
+    "choices": [
+      "Type I (or Universal)",
+      "No certification is needed",
+      "Type II",
+      "Type III"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Small appliances = Type I",
+    "explanation": "Under 40 CFR 82.161(a)(1)(i), people who maintain, service, or repair **small appliances** must be certified as **Type I** technicians (Universal also covers them).\n\n**Wrong choices**\n- No certification is needed: Servicing that opens the refrigerant circuit requires certification.\n- Type II: Type II is for high- and medium-pressure appliances other than small appliances.\n- Type III: Type III is for low-pressure appliances.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "certification types",
+      "Type I"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-small-appliance-rules-0014",
+    "certId": "epa-608",
+    "subjectId": "type-1",
+    "chapterId": "small-appliance-rules",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "All the refrigerant has already leaked out of a refrigerator before it reaches the scrap yard. What does the final processor need?",
+    "choices": [
+      "A new charge of refrigerant to prove the system holds pressure",
+      "A signed statement that the refrigerant leaked out and recovery is not possible",
+      "Nothing, because the appliance is empty",
+      "A photo of the refrigerator"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Already leaked out: get a signed statement",
+    "explanation": "Under 40 CFR 82.155(b)(2)(iii), if all the refrigerant leaked out, the final processor must get a **signed statement** that it **leaked out before delivery** and recovery is not possible. Cutting lines on purpose does not count as leaking out.\n\n**Wrong choices**\n- A new charge of refrigerant to prove the system holds pressure: Adding refrigerant is not required and makes no sense here.\n- Nothing, because the appliance is empty: The final processor still needs documentation.\n- A photo of the refrigerator: A photo is not the required document.",
+    "frequency": 2,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "disposal",
+      "signed statement"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-small-appliance-rules-0015",
+    "certId": "epa-608",
+    "subjectId": "type-1",
+    "chapterId": "small-appliance-rules",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "All of the following are small appliances under EPA rules EXCEPT:",
+    "choices": [
+      "A drinking water cooler",
+      "A household refrigerator",
+      "A dehumidifier",
+      "A split-system air conditioner charged in the field"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Field-charged systems are not small appliances",
+    "explanation": "A **split system charged in the field** is not factory-sealed, so it is not a small appliance and needs Type II. Refrigerators, dehumidifiers, and water coolers are factory-sealed small appliances.\n\n**Wrong choices**\n- A drinking water cooler: Drinking water coolers are listed as small appliances.\n- A household refrigerator: Household refrigerators are factory-sealed small appliances.\n- A dehumidifier: Dehumidifiers are listed as small appliances.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "small appliance",
+      "examples"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "epa-608-small-appliance-rules-0016",
+    "certId": "epa-608",
+    "subjectId": "type-1",
+    "chapterId": "small-appliance-rules",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A person is dismantling old refrigerators for scrap. Under EPA rules, does that person need Section 608 certification just to dispose of them?",
+    "choices": [
+      "Yes, Type II certification is required",
+      "No, but the refrigerant must still be properly recovered before disposal",
+      "Yes, Type I certification is required",
+      "No, and the refrigerant may be vented"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Disposal of small appliances: no cert, but recover",
+    "explanation": "40 CFR 82.161(a)(1)(vii) says people who **dispose** of small appliances are **not required to be certified**. However, the refrigerant must still be **recovered** to the 80/90 percent or 4-inch vacuum levels using certified equipment.\n\n**Wrong choices**\n- Yes, Type II certification is required: Type II does not apply to small appliances.\n- Yes, Type I certification is required: Certification is not required for disposal of small appliances, though recovery is still required.\n- No, and the refrigerant may be vented: Venting is never allowed.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "disposal",
+      "certification"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+]

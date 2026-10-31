@@ -1,0 +1,639 @@
+[
+  {
+    "id": "epa-608-high-pressure-leaks-0001",
+    "certId": "epa-608",
+    "subjectId": "type-2",
+    "chapterId": "high-pressure-leaks",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A comfort cooling system holds 80 pounds of R-22. Above what annual leak rate must the owner repair the leaks?",
+    "choices": [
+      "30 percent",
+      "20 percent",
+      "35 percent",
+      "10 percent"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Comfort cooling (50 lb+ ODS): 10% trigger",
+    "explanation": "Under 40 CFR 82.157(c), appliances with **50 or more pounds** of ozone-depleting refrigerant must be repaired when the leak rate is over **10 percent for comfort cooling** (and other appliances), 20 percent for commercial refrigeration, and 30 percent for industrial process refrigeration.\n\n**Wrong choices**\n- 30 percent: 30 percent is the trigger for industrial process refrigeration.\n- 20 percent: 20 percent is the trigger for commercial refrigeration.\n- 35 percent: 35 percent was an older trigger rate that no longer applies.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "leak rate",
+      "comfort cooling"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-high-pressure-leaks-0002",
+    "certId": "epa-608",
+    "subjectId": "type-2",
+    "chapterId": "high-pressure-leaks",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A supermarket refrigeration system holds 200 pounds of R-22. Above what annual leak rate must it be repaired?",
+    "choices": [
+      "30 percent",
+      "20 percent",
+      "15 percent",
+      "10 percent"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Commercial refrigeration: 20% trigger",
+    "explanation": "Supermarket and cold-storage systems are **commercial refrigeration**. With 50 or more pounds of ozone-depleting refrigerant, leaks must be repaired when the leak rate exceeds **20 percent** per year.\n\n**Wrong choices**\n- 30 percent: 30 percent is the trigger for industrial process refrigeration.\n- 15 percent: 15 percent was an older comfort cooling trigger.\n- 10 percent: 10 percent is the trigger for comfort cooling and other appliances.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "leak rate",
+      "commercial refrigeration"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-high-pressure-leaks-0003",
+    "certId": "epa-608",
+    "subjectId": "type-2",
+    "chapterId": "high-pressure-leaks",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "An industrial process refrigeration system holds 600 pounds of an HCFC. Above what annual leak rate must it be repaired?",
+    "choices": [
+      "10 percent",
+      "20 percent",
+      "30 percent",
+      "35 percent"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Industrial process refrigeration: 30% trigger",
+    "explanation": "For **industrial process refrigeration** (chemical plants, industrial ice machines, ice rinks, and similar), the leak repair trigger is **30 percent** per year for appliances with 50 or more pounds of ozone-depleting refrigerant.\n\n**Wrong choices**\n- 10 percent: 10 percent is the trigger for comfort cooling.\n- 20 percent: 20 percent is the trigger for commercial refrigeration.\n- 35 percent: 35 percent was the older trigger before the 2016 rule.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "leak rate",
+      "industrial process"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "epa-608-high-pressure-leaks-0004",
+    "certId": "epa-608",
+    "subjectId": "type-2",
+    "chapterId": "high-pressure-leaks",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Once an appliance is found leaking above its trigger rate, how long does the owner normally have to repair the leaks?",
+    "choices": [
+      "90 days",
+      "10 days",
+      "30 days",
+      "1 year"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Leak repair deadline: 30 days",
+    "explanation": "Under 40 CFR 82.157(d), leaks must be **repaired within 30 days** of adding refrigerant to an appliance that exceeds the trigger rate, or **120 days** if an **industrial process shutdown** is needed.\n\n**Wrong choices**\n- 90 days: 90 days is not the standard repair period.\n- 10 days: 10 days is the time limit for the follow-up verification test, not the repair.\n- 1 year: One year is the time to complete a retrofit or retirement plan.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "leak repair",
+      "deadline"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "epa-608-high-pressure-leaks-0005",
+    "certId": "epa-608",
+    "subjectId": "type-2",
+    "chapterId": "high-pressure-leaks",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Repairing a leak in an industrial process refrigeration system requires an industrial process shutdown. How long does the owner have to repair it?",
+    "choices": [
+      "120 days",
+      "30 days",
+      "60 days",
+      "180 days"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Industrial process shutdown: 120 days to repair",
+    "explanation": "When an **industrial process shutdown** is required, the 30-day repair period becomes **120 days**. More time may be allowed in limited cases, such as when parts are not available.\n\n**Wrong choices**\n- 30 days: 30 days is the normal period when no shutdown is needed.\n- 60 days: 60 days is not a repair deadline in the rule.\n- 180 days: 180 days is the outer limit for an extension when parts are not available.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "leak repair",
+      "industrial process"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "epa-608-high-pressure-leaks-0006",
+    "certId": "epa-608",
+    "subjectId": "type-2",
+    "chapterId": "high-pressure-leaks",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "After a leak repair, when must the follow-up verification test be done?",
+    "choices": [
+      "Within 30 days of the repair",
+      "Within 1 year of the repair",
+      "Within 10 days of the successful initial verification test (or of the system reaching normal operating conditions)",
+      "Within 24 hours of the repair"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Follow-up verification test: within 10 days",
+    "explanation": "40 CFR 82.157(e) requires an **initial verification test** to confirm the repair and a **follow-up verification test within 10 days** of the successful initial test, or within 10 days of the appliance reaching normal operating conditions if it was evacuated.\n\n**Wrong choices**\n- Within 30 days of the repair: 30 days is the repair period, not the follow-up test timing.\n- Within 1 year of the repair: One year is far too long.\n- Within 24 hours of the repair: The rule does not require it within 24 hours.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "verification test",
+      "leak repair"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-high-pressure-leaks-0007",
+    "certId": "epa-608",
+    "subjectId": "type-2",
+    "chapterId": "high-pressure-leaks",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "An owner decides to retire a leaking appliance instead of repairing it. What must be done?",
+    "choices": [
+      "Create a retirement plan within 30 days and finish it within 1 year",
+      "Retire it within 10 days with no plan",
+      "Nothing, as long as refrigerant is added each month",
+      "Send a letter to EPA within 1 year"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Retrofit/retire plan: 30 days, done within 1 year",
+    "explanation": "Under 40 CFR 82.157(h), an owner who chooses to retrofit or retire must create a **written plan within 30 days** and complete the work **within one year** of the plan's date, unless granted more time.\n\n**Wrong choices**\n- Retire it within 10 days with no plan: The rule requires a written plan, and 10 days is not the deadline.\n- Nothing, as long as refrigerant is added each month: Topping off a leaking appliance does not meet the rule.\n- Send a letter to EPA within 1 year: A letter to EPA is not the requirement.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "retrofit",
+      "retirement plan"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-high-pressure-leaks-0008",
+    "certId": "epa-608",
+    "subjectId": "type-2",
+    "chapterId": "high-pressure-leaks",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A commercial refrigeration appliance with 600 pounds of an ODS refrigerant has exceeded its leak rate. How often must leak inspections be done?",
+    "choices": [
+      "Once a year",
+      "Once every three months (quarterly) until it stays below the rate for four quarters in a row",
+      "Only when refrigerant is added",
+      "Once a month"
+    ],
+    "answer": 2,
+    "oneLineConcept": "500 lb+ commercial/IPR over the rate: quarterly",
+    "explanation": "Under 40 CFR 82.157(g), commercial and industrial process appliances with **500 or more pounds** that exceed the leak rate need **quarterly** leak inspections until they show no excess leaks for **four quarters in a row**. Smaller ones and comfort cooling need yearly inspections.\n\n**Wrong choices**\n- Once a year: Annual inspections apply to smaller commercial and industrial appliances and to comfort cooling.\n- Only when refrigerant is added: Inspections follow a set schedule after the leak rate is exceeded.\n- Once a month: Monthly inspections are not required by the rule.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "leak inspection"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-high-pressure-leaks-0009",
+    "certId": "epa-608",
+    "subjectId": "type-2",
+    "chapterId": "high-pressure-leaks",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "An appliance with 50 or more pounds of ODS refrigerant leaks 125 percent or more of its full charge in one calendar year. What must the owner do?",
+    "choices": [
+      "Notify the local fire department",
+      "Submit a report to EPA by March 1 of the next year",
+      "Nothing more than normal repairs",
+      "Shut the appliance down permanently that day"
+    ],
+    "answer": 2,
+    "oneLineConcept": "125% leak in a year: report to EPA by March 1",
+    "explanation": "40 CFR 82.157(j) says appliances with 50 or more pounds that leak **125 percent or more** of the full charge in a calendar year are **chronically leaking**. The owner must report to EPA **by March 1** of the following year, describing efforts to find and fix the leaks.\n\n**Wrong choices**\n- Notify the local fire department: The report goes to EPA, not the fire department.\n- Nothing more than normal repairs: A chronic leak report is required in addition to repairs.\n- Shut the appliance down permanently that day: The rule requires a report, not an immediate permanent shutdown.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "chronic leaks",
+      "reporting"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-high-pressure-leaks-0010",
+    "certId": "epa-608",
+    "subjectId": "type-2",
+    "chapterId": "high-pressure-leaks",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "For an appliance subject to leak repair rules, when must the owner calculate the leak rate?",
+    "choices": [
+      "Only when it is disposed of",
+      "Only when the appliance stops cooling",
+      "Once every 5 years",
+      "Each time refrigerant is added (with a few exceptions)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Calculate leak rate every time refrigerant is added",
+    "explanation": "Under 40 CFR 82.157(b), the owner must **calculate the leak rate every time refrigerant is added**, except right after a retrofit, a new installation, or a seasonal variance. The technician must give the owner a record of the amount added.\n\n**Wrong choices**\n- Only when it is disposed of: Disposal is not when leak rates are calculated.\n- Only when the appliance stops cooling: Waiting until the appliance fails is too late.\n- Once every 5 years: The rule requires a calculation each time refrigerant is added.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "leak rate",
+      "calculation"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-high-pressure-leaks-0011",
+    "certId": "epa-608",
+    "subjectId": "type-2",
+    "chapterId": "high-pressure-leaks",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "How long must records for appliances under the leak repair rules generally be kept?",
+    "choices": [
+      "Until the next service call",
+      "1 year",
+      "At least 3 years",
+      "6 months"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Leak repair records: keep 3 years",
+    "explanation": "40 CFR 82.157(l) says leak repair records, such as service records, leak inspections, and verification tests, must be kept for **at least three years**. Full charge records are kept until three years after the appliance is retired.\n\n**Wrong choices**\n- Until the next service call: Records must be kept for a set period.\n- 1 year: One year is too short.\n- 6 months: Six months is too short.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "recordkeeping",
+      "leak repair"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-high-pressure-leaks-0012",
+    "certId": "epa-608",
+    "subjectId": "type-2",
+    "chapterId": "high-pressure-leaks",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which is a common sign of a refrigerant leak in a high-pressure system?",
+    "choices": [
+      "Traces of oil around joints or fittings",
+      "A clean, dry condenser coil",
+      "Low noise from the compressor",
+      "Frost on the outside of the recovery cylinder"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Oil traces at joints = possible leak",
+    "explanation": "Refrigerant carries oil, so **oil traces** around joints, fittings, and hermetic compressor connections are a common sign of a leak. **Excessive superheat** is another sign.\n\n**Wrong choices**\n- A clean, dry condenser coil: A clean, dry coil is not a sign of a leak.\n- Low noise from the compressor: Compressor noise level is not a typical leak sign.\n- Frost on the outside of the recovery cylinder: Frost on a recovery cylinder is normal during recovery and is not a leak sign on the system.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "leak detection",
+      "signs"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-high-pressure-leaks-0013",
+    "certId": "epa-608",
+    "subjectId": "type-2",
+    "chapterId": "high-pressure-leaks",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "In a high-pressure system, what operating sign may point to a refrigerant leak?",
+    "choices": [
+      "Ice-cold liquid line",
+      "Very low superheat",
+      "Excessive superheat",
+      "High suction pressure"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Low charge from a leak → excessive superheat",
+    "explanation": "When refrigerant leaks out, less refrigerant reaches the evaporator. It boils off early and the vapor picks up extra heat, so **superheat becomes excessive**. EPA lists this as a sign of leakage in high-pressure systems.\n\n**Wrong choices**\n- Ice-cold liquid line: This is not a typical sign of a leak.\n- Very low superheat: Very low superheat often means overcharge or too much refrigerant flow, not a leak.\n- High suction pressure: A leak usually lowers suction pressure.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "leak detection",
+      "superheat"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-high-pressure-leaks-0014",
+    "certId": "epa-608",
+    "subjectId": "type-2",
+    "chapterId": "high-pressure-leaks",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "When pressurizing a high-pressure system to find a leak, which choice is best?",
+    "choices": [
+      "Oxygen",
+      "Pure refrigerant",
+      "Compressed air",
+      "Nitrogen alone"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Leak test gas: nitrogen best",
+    "explanation": "EPA's test topics rank leak test gases: **nitrogen alone is best**, nitrogen with a **trace amount of R-22** (as a tracer) is next, and that is better than using pure refrigerant. Never use oxygen or compressed air.\n\n**Wrong choices**\n- Oxygen: Oxygen can explode with oil.\n- Pure refrigerant: Using pure refrigerant releases refrigerant during the test; it is the least preferred choice.\n- Compressed air: Compressed air adds moisture and is unsafe.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "leak testing",
+      "nitrogen"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-high-pressure-leaks-0015",
+    "certId": "epa-608",
+    "subjectId": "type-2",
+    "chapterId": "high-pressure-leaks",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "When should a system be leak tested?",
+    "choices": [
+      "Never; the compressor will show any leaks",
+      "Only once a year in the spring",
+      "Before charging or recharging it with refrigerant",
+      "Only after the system has been fully charged"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Leak test before charging",
+    "explanation": "EPA's test topics stress the **need to leak test before charging or recharging** equipment, so refrigerant is not lost through a leak that could have been found first.\n\n**Wrong choices**\n- Never; the compressor will show any leaks: A compressor does not reveal leaks.\n- Only once a year in the spring: Leak testing is needed before charging, whatever the season.\n- Only after the system has been fully charged: Testing after charging wastes refrigerant if there is a leak.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "leak testing",
+      "charging"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-high-pressure-leaks-0016",
+    "certId": "epa-608",
+    "subjectId": "type-2",
+    "chapterId": "high-pressure-leaks",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A supermarket system holds 40 pounds of R-404A, an HFC blend with a high GWP. Under current EPA rules, at what annual leak rate must it be repaired?",
+    "choices": [
+      "Above 10 percent, because it is under 50 pounds",
+      "Never; leak repair rules apply only to ozone-depleting refrigerants",
+      "Above 35 percent, under the old rules",
+      "Above 20 percent, under 40 CFR Part 84 (since January 1, 2026)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "HFC 15 lb+ commercial refrigeration: 20% (Part 84)",
+    "explanation": "40 CFR 84.106 applies **since January 1, 2026** to appliances with **15 pounds or more** of refrigerant containing an HFC with a GWP above 53. It uses the same trigger rates: **20 percent** for commercial refrigeration, 30 percent for industrial process, and 10 percent for comfort cooling and others.\n\n**Wrong choices**\n- Above 10 percent, because it is under 50 pounds: 10 percent is the trigger for comfort cooling, not commercial refrigeration.\n- Never; leak repair rules apply only to ozone-depleting refrigerants: Since January 1, 2026, the Part 84 rule covers HFC appliances with 15 pounds or more.\n- Above 35 percent, under the old rules: 35 percent is an old trigger that no longer applies.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "leak repair",
+      "Part 84",
+      "HFC"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-high-pressure-leaks-0017",
+    "certId": "epa-608",
+    "subjectId": "type-2",
+    "chapterId": "high-pressure-leaks",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Under 40 CFR 82.157, the leak repair rules apply to appliances containing how much ozone-depleting (CFC or HCFC) refrigerant?",
+    "choices": [
+      "5 pounds or more",
+      "15 pounds or more",
+      "50 pounds or more",
+      "200 pounds or more"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Part 82 leak repair: 50 lb+ of ODS refrigerant",
+    "explanation": "40 CFR 82.157 applies to appliances with a **full charge of 50 or more pounds** of a CFC or HCFC refrigerant (or a blend containing one). Appliances with only substitute refrigerants are not covered by this section; HFC appliances now fall under Part 84.\n\n**Wrong choices**\n- 5 pounds or more: 5 pounds is the small appliance limit.\n- 15 pounds or more: 15 pounds is the threshold in the newer Part 84 rule for HFCs, not Part 82.\n- 200 pounds or more: 200 pounds is a break point in the evacuation table, not leak repair.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "leak repair",
+      "50 pounds"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "epa-608-high-pressure-leaks-0018",
+    "certId": "epa-608",
+    "subjectId": "type-2",
+    "chapterId": "high-pressure-leaks",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "All of the following are part of the leak repair rules for large ODS appliances EXCEPT:",
+    "choices": [
+      "A follow-up verification test",
+      "Keeping records of the refrigerant added",
+      "An initial verification test after the repair",
+      "Repairing leaks within 1 year of finding them"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Leak repair = 30 days, not 1 year",
+    "explanation": "Leaks above the trigger rate must be repaired within **30 days** (120 with an industrial process shutdown), not one year. One year is the time allowed to complete a retrofit or retirement plan.\n\n**Wrong choices**\n- A follow-up verification test: A follow-up verification test is required.\n- Keeping records of the refrigerant added: Service records showing refrigerant added are required.\n- An initial verification test after the repair: An initial verification test is required.",
+    "frequency": 2,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "leak repair"
+    ],
+    "levelLock": true
+  }
+]

@@ -1,0 +1,597 @@
+[
+  {
+    "id": "epa-608-refrigeration-cycle-0001",
+    "certId": "epa-608",
+    "subjectId": "core",
+    "chapterId": "refrigeration-cycle",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Look at the picture of a refrigeration cycle. At which numbered point is the refrigerant a high-pressure liquid?",
+    "choices": [
+      "Point 3",
+      "Point 2",
+      "Point 4",
+      "Point 1"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Condenser outlet (liquid line) = high-pressure liquid",
+    "explanation": "The **condenser** removes heat and turns the high-pressure vapor into a **high-pressure liquid**. That liquid flows through the liquid line to the metering device, which is **Point 2**.\n\n**Wrong choices**\n- Point 3: Point 3 is after the metering device, where the refrigerant is a low-pressure mix of liquid and vapor.\n- Point 4: Point 4 is the suction line from the evaporator, where the refrigerant is a low-pressure vapor.\n- Point 1: Point 1 is between the compressor and condenser, where the refrigerant is a high-pressure vapor.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "refrigeration cycle",
+      "refrigerant states",
+      "figure"
+    ],
+    "image": "refrigeration-cycle-points.svg",
+    "imageAlt": "Refrigeration loop with flow arrows: compressor (right), condenser (top), metering device (left), evaporator (bottom), back to compressor. Point 1: compressor to condenser. Point 2: condenser to metering device. Point 3: just after metering device. Point 4: evaporator to compressor.",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-refrigeration-cycle-0002",
+    "certId": "epa-608",
+    "subjectId": "core",
+    "chapterId": "refrigeration-cycle",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Look at the picture. Arrows show the direction of refrigerant flow, and part A squeezes low-pressure vapor into high-pressure vapor. What is part B?",
+    "choices": [
+      "Condenser",
+      "Accumulator",
+      "Metering device",
+      "Evaporator"
+    ],
+    "answer": 1,
+    "oneLineConcept": "After the compressor comes the condenser",
+    "explanation": "Part A is the **compressor**. Following the arrows, the hot high-pressure vapor goes next to part B, the **condenser**, where it gives off heat and becomes a liquid. Then comes the metering device (C) and the evaporator (D).\n\n**Wrong choices**\n- Accumulator: An accumulator would be in the suction line before the compressor, and it is not shown.\n- Metering device: The metering device is the small part where pressure drops (part C).\n- Evaporator: The evaporator is where low-pressure refrigerant absorbs heat; it comes after the metering device (part D).",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "refrigeration cycle",
+      "components",
+      "figure"
+    ],
+    "image": "refrigeration-cycle-parts.svg",
+    "imageAlt": "Refrigeration loop with arrows showing flow. Circle A on the right sends refrigerant up into box B at the top. From B the line runs down the left side to a small diamond C, then into box D at the bottom, then back up to A.",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-refrigeration-cycle-0003",
+    "certId": "epa-608",
+    "subjectId": "core",
+    "chapterId": "refrigeration-cycle",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Look at the picture of a manifold gauge set. Which hose is usually connected to the recovery machine, vacuum pump, or refrigerant cylinder?",
+    "choices": [
+      "Hose B (yellow, center)",
+      "Hose C (red)",
+      "Hose A (blue)",
+      "None of them; the center port stays capped"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Blue = low side, red = high side, yellow = center",
+    "explanation": "On a standard manifold, the **blue** hose and compound gauge connect to the **low side**, the **red** hose and gauge connect to the **high side**, and the **yellow center hose** goes to the recovery machine, vacuum pump, or refrigerant cylinder.\n\n**Wrong choices**\n- Hose C (red): The red hose goes with the high-side gauge and connects to the system's high side.\n- Hose A (blue): The blue hose goes with the low-side gauge and connects to the system's low side.\n- None of them; the center port stays capped: The center port is not left capped; it is the connection used for recovery, evacuation, and charging.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "gauges",
+      "manifold",
+      "figure"
+    ],
+    "image": "manifold-gauge-hoses.svg",
+    "imageAlt": "Manifold gauge set. Left: blue-ringed gauge labeled LOW SIDE, compound gauge. Right: red-ringed gauge labeled HIGH SIDE, pressure gauge. A valve knob on each end of the body. Three hoses below: Hose A blue (left), Hose B yellow (center), Hose C red (right).",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "epa-608-refrigeration-cycle-0004",
+    "certId": "epa-608",
+    "subjectId": "core",
+    "chapterId": "refrigeration-cycle",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "In which part of a refrigeration system does the refrigerant absorb heat from the space being cooled?",
+    "choices": [
+      "Receiver",
+      "Evaporator",
+      "Condenser",
+      "Compressor"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Evaporator absorbs heat; condenser rejects heat",
+    "explanation": "In the **evaporator**, low-pressure liquid refrigerant boils into vapor and **absorbs heat** from the air or water around it. That heat is later given off in the condenser.\n\n**Wrong choices**\n- Receiver: The receiver stores liquid refrigerant.\n- Condenser: The condenser gives off heat to the outside.\n- Compressor: The compressor raises the pressure of the vapor; it does not cool the space.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "refrigeration cycle",
+      "evaporator"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-refrigeration-cycle-0005",
+    "certId": "epa-608",
+    "subjectId": "core",
+    "chapterId": "refrigeration-cycle",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What does the compressor do in the refrigeration cycle?",
+    "choices": [
+      "Raises the pressure and temperature of refrigerant vapor",
+      "Removes moisture from the refrigerant",
+      "Lowers the pressure of the liquid before the evaporator",
+      "Turns liquid into vapor to absorb heat"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Compressor: low-pressure vapor in, high-pressure vapor out",
+    "explanation": "The **compressor** draws in low-pressure vapor and **compresses** it into a **high-pressure, high-temperature vapor**, which then goes to the condenser.\n\n**Wrong choices**\n- Removes moisture from the refrigerant: A filter-drier removes moisture.\n- Lowers the pressure of the liquid before the evaporator: The metering device lowers the pressure.\n- Turns liquid into vapor to absorb heat: Boiling liquid into vapor happens in the evaporator.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "refrigeration cycle",
+      "compressor"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-refrigeration-cycle-0006",
+    "certId": "epa-608",
+    "subjectId": "core",
+    "chapterId": "refrigeration-cycle",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "In what state should refrigerant be when it enters the compressor?",
+    "choices": [
+      "Low-pressure liquid",
+      "Low-pressure vapor",
+      "High-pressure vapor",
+      "High-pressure liquid"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Suction line carries low-pressure vapor",
+    "explanation": "Refrigerant leaves the evaporator and enters the compressor through the suction line as a **low-pressure vapor**. Liquid reaching the compressor (\"slugging\") can damage it.\n\n**Wrong choices**\n- Low-pressure liquid: Liquid entering a compressor can damage it, because liquid does not compress.\n- High-pressure vapor: High-pressure vapor is what leaves the compressor.\n- High-pressure liquid: High-pressure liquid leaves the condenser, not the evaporator.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "refrigeration cycle",
+      "refrigerant states"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-refrigeration-cycle-0007",
+    "certId": "epa-608",
+    "subjectId": "core",
+    "chapterId": "refrigeration-cycle",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "On a manifold gauge set, what color is normally used for the low-side gauge and hose?",
+    "choices": [
+      "Red",
+      "Blue",
+      "Green",
+      "Yellow"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Low side = blue",
+    "explanation": "By common practice, the **low-side** (compound) gauge and hose are **blue**, the high-side gauge and hose are **red**, and the center hose is **yellow**.\n\n**Wrong choices**\n- Red: Red is for the high side.\n- Green: Green is not the standard low-side color.\n- Yellow: Yellow is for the center (utility) hose.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "gauges",
+      "color code"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-refrigeration-cycle-0008",
+    "certId": "epa-608",
+    "subjectId": "core",
+    "chapterId": "refrigeration-cycle",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "What is special about a compound gauge?",
+    "choices": [
+      "It reads both pressure above atmosphere and vacuum below atmosphere",
+      "It measures the weight of refrigerant",
+      "It reads only very high pressures",
+      "It reads temperature and pressure of two refrigerants at once"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Compound gauge = pressure and vacuum",
+    "explanation": "A **compound gauge** reads **pressure (psig)** and **vacuum (inches of mercury)**. That is why it is used on the low side, which can drop below atmospheric pressure.\n\n**Wrong choices**\n- It measures the weight of refrigerant: Weight is measured with a scale.\n- It reads only very high pressures: Reading only high pressure describes a high-side gauge.\n- It reads temperature and pressure of two refrigerants at once: A compound gauge is not for two refrigerants at once, although its face may show temperature scales.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "gauges",
+      "compound gauge"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-refrigeration-cycle-0009",
+    "certId": "epa-608",
+    "subjectId": "core",
+    "chapterId": "refrigeration-cycle",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A gauge reads 50 psig. What is the pressure in psia (pounds per square inch absolute)?",
+    "choices": [
+      "64.7 psia",
+      "79.4 psia",
+      "50 psia",
+      "35.3 psia"
+    ],
+    "answer": 1,
+    "oneLineConcept": "psia = psig + 14.7",
+    "explanation": "A gauge reads zero at normal air pressure, so absolute pressure is gauge pressure **plus 14.7**.\n1. psia = psig + 14.7\n2. 50 + 14.7 = **64.7 psia**\n3. Check: 64.7 - 14.7 = 50 psig\n\n**Wrong choices**\n- 79.4 psia: This adds 14.7 twice.\n- 50 psia: Gauge pressure and absolute pressure are not the same.\n- 35.3 psia: This subtracts 14.7 instead of adding it.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "pressure",
+      "psig",
+      "psia"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-refrigeration-cycle-0010",
+    "certId": "epa-608",
+    "subjectId": "core",
+    "chapterId": "refrigeration-cycle",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What does it mean to \"recover\" refrigerant?",
+    "choices": [
+      "Clean it with filter-driers for reuse by the same owner",
+      "Release it slowly to the air",
+      "Remove it from a system and store it in an outside container, without testing or processing it",
+      "Clean it to meet the new-refrigerant purity standard"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Recover = remove and store, no processing",
+    "explanation": "To **recover** is to remove refrigerant in any condition from an appliance and **store it in an external container**, without necessarily testing or processing it.\n\n**Wrong choices**\n- Clean it with filter-driers for reuse by the same owner: Cleaning for reuse is recycling.\n- Release it slowly to the air: Releasing refrigerant is venting, which is illegal.\n- Clean it to meet the new-refrigerant purity standard: Meeting the purity standard is reclaiming.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "three Rs",
+      "recover"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-refrigeration-cycle-0011",
+    "certId": "epa-608",
+    "subjectId": "core",
+    "chapterId": "refrigeration-cycle",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "What does it mean to \"recycle\" refrigerant?",
+    "choices": [
+      "Send it to be destroyed",
+      "Reprocess it to AHRI 700 specifications and verify it by testing",
+      "Remove it and store it without any processing",
+      "Clean it for reuse, for example with oil separation and filter-driers, without meeting all reclaim specs"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Recycle = clean for same owner, no full test",
+    "explanation": "To **recycle** is to remove refrigerant and **clean it for reuse** in equipment of the same owner, usually with oil separation and filter-driers that reduce moisture, acid, and particles. It does **not** meet all reclamation requirements.\n\n**Wrong choices**\n- Send it to be destroyed: Destruction is a separate process.\n- Reprocess it to AHRI 700 specifications and verify it by testing: Reprocessing to full specifications with lab testing is reclaiming.\n- Remove it and store it without any processing: Removing and storing is recovering.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "three Rs",
+      "recycle"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-refrigeration-cycle-0012",
+    "certId": "epa-608",
+    "subjectId": "core",
+    "chapterId": "refrigeration-cycle",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "What does it mean to \"reclaim\" refrigerant?",
+    "choices": [
+      "Clean it with a filter-drier in the field",
+      "Remove it from the system into a recovery cylinder",
+      "Reprocess it to the AHRI 700-based purity specifications and verify by chemical analysis",
+      "Return it to the same system after a repair"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Reclaim = new-product purity, lab verified",
+    "explanation": "To **reclaim** is to reprocess refrigerant to **all** the purity specifications in Appendix A (based on AHRI Standard 700) and **verify** them with the required analysis. Only certified reclaimers may do this.\n\n**Wrong choices**\n- Clean it with a filter-drier in the field: Field cleaning is recycling.\n- Remove it from the system into a recovery cylinder: Removing it into a cylinder is recovering.\n- Return it to the same system after a repair: Returning it to the same system does not require reclaiming.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "three Rs",
+      "reclaim"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "epa-608-refrigeration-cycle-0013",
+    "certId": "epa-608",
+    "subjectId": "core",
+    "chapterId": "refrigeration-cycle",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Why is a system evacuated with a vacuum pump (dehydration) at the end of a repair, before charging?",
+    "choices": [
+      "To remove air and moisture from the system",
+      "To recover the remaining refrigerant",
+      "To test the compressor's oil level",
+      "To cool the system before startup"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Dehydration evacuation removes air and moisture",
+    "explanation": "After a repair, the system is evacuated to a deep vacuum to **remove air and moisture** (noncondensables and water). Moisture can form acids and freeze in the metering device. A **micron gauge** is used to measure the deep vacuum.\n\n**Wrong choices**\n- To recover the remaining refrigerant: Recovery must be done with recovery equipment, not by dehydration at the end of a repair.\n- To test the compressor's oil level: Evacuation does not check oil level.\n- To cool the system before startup: Evacuation is not for cooling.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "dehydration",
+      "evacuation"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "epa-608-refrigeration-cycle-0014",
+    "certId": "epa-608",
+    "subjectId": "core",
+    "chapterId": "refrigeration-cycle",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which change will speed up refrigerant recovery?",
+    "choices": [
+      "Using shorter hoses with a larger inside diameter",
+      "Keeping the recovery cylinder warm in the sun",
+      "Recovering only vapor from a system full of liquid",
+      "Using longer hoses with a smaller inside diameter"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Short, wide hoses recover faster",
+    "explanation": "Recovery speed depends on things like **hose length and diameter**, the size of the recovery equipment, and the temperature. **Shorter, larger-diameter hoses** have less restriction, so refrigerant moves faster.\n\n**Wrong choices**\n- Keeping the recovery cylinder warm in the sun: A warm recovery cylinder has higher pressure, which slows recovery.\n- Recovering only vapor from a system full of liquid: Recovering liquid first is faster when a lot of liquid is present.\n- Using longer hoses with a smaller inside diameter: Long, narrow hoses restrict flow and slow recovery.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "recovery speed",
+      "hoses"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-refrigeration-cycle-0015",
+    "certId": "epa-608",
+    "subjectId": "core",
+    "chapterId": "refrigeration-cycle",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Why must different refrigerants never be mixed in the same recovery cylinder?",
+    "choices": [
+      "Mixing makes the cylinder lighter and harder to weigh",
+      "Mixed refrigerant can be sold as a new blend",
+      "Mixing is fine as long as both are HFCs",
+      "A mixture may be impossible to reclaim and may have to be destroyed"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Never mix refrigerants in one cylinder",
+    "explanation": "Mixed refrigerants usually **cannot be separated or reclaimed**, so they may have to be destroyed at high cost. Use a separate, labeled recovery cylinder for each refrigerant.\n\n**Wrong choices**\n- Mixing makes the cylinder lighter and harder to weigh: Mixing does not make the cylinder lighter in any useful way.\n- Mixed refrigerant can be sold as a new blend: Mixed refrigerant cannot legally be sold as a new blend.\n- Mixing is fine as long as both are HFCs: Mixing two HFCs still creates a contaminated mixture.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "recovery",
+      "mixing refrigerants"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-refrigeration-cycle-0016",
+    "certId": "epa-608",
+    "subjectId": "core",
+    "chapterId": "refrigeration-cycle",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A system's high-side pressure is higher than normal for the condensing temperature. Which is a likely cause?",
+    "choices": [
+      "A dirty evaporator filter",
+      "Too little load on the evaporator",
+      "Air or other noncondensable gases in the system",
+      "A low refrigerant charge"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Noncondensables raise head pressure",
+    "explanation": "Air and other **noncondensables** collect in the condenser and do not condense. They take up space and add their own pressure, so **head pressure rises** above the normal pressure for the refrigerant at that temperature.\n\n**Wrong choices**\n- A dirty evaporator filter: A dirty evaporator filter lowers evaporator load and usually lowers pressures.\n- Too little load on the evaporator: Low load usually lowers pressures.\n- A low refrigerant charge: A low charge usually lowers system pressures.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "noncondensables",
+      "pressure"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  }
+]

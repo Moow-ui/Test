@@ -1,0 +1,389 @@
+[
+  {
+    "id": "epa-608-high-pressure-systems-0001",
+    "certId": "epa-608",
+    "subjectId": "type-2",
+    "chapterId": "high-pressure-systems",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which refrigerant is classified as a high-pressure refrigerant?",
+    "choices": [
+      "R-11",
+      "R-123",
+      "R-134a",
+      "R-410A"
+    ],
+    "answer": 4,
+    "oneLineConcept": "R-22, R-410A, R-407C = high-pressure",
+    "explanation": "40 CFR 82.152 defines a **high-pressure** appliance as one using a refrigerant with a liquid saturation pressure between **170 and 355 psia at 104°F**. Examples are **R-22, R-407A, R-407C, R-410A, and R-502**.\n\n**Wrong choices**\n- R-11: R-11 is a low-pressure refrigerant.\n- R-123: R-123 is a low-pressure refrigerant.\n- R-134a: R-134a is a medium-pressure refrigerant (still covered by Type II).",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "pressure classes",
+      "R-410A"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-high-pressure-systems-0002",
+    "certId": "epa-608",
+    "subjectId": "type-2",
+    "chapterId": "high-pressure-systems",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What is the job of the receiver in a high-pressure refrigeration system?",
+    "choices": [
+      "To absorb heat from the space",
+      "To remove air from the system",
+      "To compress vapor",
+      "To store liquid refrigerant"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Receiver stores high-pressure liquid",
+    "explanation": "The **receiver** sits after the condenser on the high side and **stores liquid refrigerant**. The refrigerant in it is a high-pressure liquid, which is why refrigerant can be pumped down into the receiver to isolate it.\n\n**Wrong choices**\n- To absorb heat from the space: Absorbing heat is the evaporator's job.\n- To remove air from the system: Removing air is done by evacuation or a purge unit.\n- To compress vapor: Compressing vapor is the compressor's job.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "components",
+      "receiver"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-high-pressure-systems-0003",
+    "certId": "epa-608",
+    "subjectId": "type-2",
+    "chapterId": "high-pressure-systems",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "What is the job of a suction-line accumulator?",
+    "choices": [
+      "To keep liquid refrigerant from reaching the compressor",
+      "To store extra oil for the condenser",
+      "To measure the refrigerant charge",
+      "To raise the pressure of the liquid line"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Accumulator protects compressor from liquid",
+    "explanation": "An **accumulator** is placed in the **suction line** before the compressor. It traps liquid refrigerant so only vapor reaches the compressor, protecting it from liquid slugging.\n\n**Wrong choices**\n- To store extra oil for the condenser: An accumulator is not an oil storage tank for the condenser.\n- To measure the refrigerant charge: It does not measure the charge.\n- To raise the pressure of the liquid line: It is on the low side and does not raise liquid line pressure.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "components",
+      "accumulator"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-high-pressure-systems-0004",
+    "certId": "epa-608",
+    "subjectId": "type-2",
+    "chapterId": "high-pressure-systems",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What is the best way to identify the refrigerant in a high-pressure appliance before recovering it?",
+    "choices": [
+      "Look at the color of the refrigerant lines",
+      "Smell the refrigerant",
+      "Read the nameplate on the appliance",
+      "Ask the building owner to guess"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Nameplate shows the refrigerant type",
+    "explanation": "The appliance **nameplate** lists the refrigerant type and charge. A pressure and temperature check with a PT chart can confirm it.\n\n**Wrong choices**\n- Look at the color of the refrigerant lines: Line color does not identify the refrigerant.\n- Smell the refrigerant: Smelling refrigerant is unsafe and does not identify it.\n- Ask the building owner to guess: A guess is not reliable.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "refrigerant identification",
+      "nameplate"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "epa-608-high-pressure-systems-0005",
+    "certId": "epa-608",
+    "subjectId": "type-2",
+    "chapterId": "high-pressure-systems",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A high-side gauge reads 100 psig. A PT chart lists pressures in psia. What value should be used on the chart?",
+    "choices": [
+      "114.7 psia",
+      "85.3 psia",
+      "100 psia",
+      "129.4 psia"
+    ],
+    "answer": 1,
+    "oneLineConcept": "psia = psig + 14.7",
+    "explanation": "EPA's test topics remind technicians to **add 14.7** to change gauge pressure into absolute pressure.\n1. psia = psig + 14.7\n2. 100 + 14.7 = **114.7 psia**\n3. Check: 114.7 - 14.7 = 100 psig\n\n**Wrong choices**\n- 85.3 psia: This subtracts 14.7 instead of adding it.\n- 100 psia: Gauge and absolute pressure are not equal.\n- 129.4 psia: This adds 14.7 twice.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "pressure",
+      "PT chart",
+      "psia"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "epa-608-high-pressure-systems-0006",
+    "certId": "epa-608",
+    "subjectId": "type-2",
+    "chapterId": "high-pressure-systems",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Can hydrocarbon refrigerants such as propane be used to retrofit an existing R-22 system?",
+    "choices": [
+      "No; hydrocarbons are not approved as retrofit refrigerants for these systems",
+      "Yes, but only in the winter",
+      "Yes, any hydrocarbon can be added on top of R-22",
+      "Yes, if the system holds less than 50 pounds"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Hydrocarbons not approved for retrofits",
+    "explanation": "EPA's Type II test topics include **the idea that hydrocarbons are not approved for retrofits**. Flammable refrigerants are allowed only in equipment designed for them.\n\n**Wrong choices**\n- Yes, but only in the winter: The season does not matter.\n- Yes, any hydrocarbon can be added on top of R-22: Adding a hydrocarbon to R-22 would mix refrigerants and create a fire hazard.\n- Yes, if the system holds less than 50 pounds: System size does not make a hydrocarbon retrofit acceptable.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "retrofit",
+      "hydrocarbons"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-high-pressure-systems-0007",
+    "certId": "epa-608",
+    "subjectId": "type-2",
+    "chapterId": "high-pressure-systems",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Why should a hermetic compressor never be energized while the system is under a deep vacuum?",
+    "choices": [
+      "It will clean the oil",
+      "The motor windings can be damaged",
+      "It will make the vacuum deeper and faster",
+      "It will recover the refrigerant automatically"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Never start a hermetic compressor under vacuum",
+    "explanation": "In a deep vacuum there is very little gas to cool the motor and insulate the terminals, so starting a **hermetic compressor under vacuum** can **damage the motor windings**. EPA lists this as a Type II safety topic.\n\n**Wrong choices**\n- It will clean the oil: It does not clean the oil.\n- It will make the vacuum deeper and faster: Running the compressor under vacuum risks damage and is not how a vacuum is pulled.\n- It will recover the refrigerant automatically: It does not perform recovery.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "safety",
+      "compressor",
+      "vacuum"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-high-pressure-systems-0008",
+    "certId": "epa-608",
+    "subjectId": "type-2",
+    "chapterId": "high-pressure-systems",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Under ASHRAE Standard 15, what safety device is needed in an equipment room for refrigeration machinery?",
+    "choices": [
+      "No device is needed if a window is open",
+      "A smoke detector only",
+      "A carbon monoxide detector only",
+      "A sensor that alarms on refrigerant leaks or low oxygen"
+    ],
+    "answer": 4,
+    "oneLineConcept": "ASHRAE 15: refrigerant or oxygen-deprivation sensor",
+    "explanation": "EPA's test topics note that **ASHRAE Standard 15** equipment room rules call for a **refrigerant or oxygen-deprivation sensor** with an alarm, because leaking refrigerant can push out oxygen.\n\n**Wrong choices**\n- No device is needed if a window is open: An open window does not meet the standard.\n- A smoke detector only: A smoke detector does not detect refrigerant.\n- A carbon monoxide detector only: A carbon monoxide detector does not detect refrigerant.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "safety",
+      "ASHRAE 15"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-high-pressure-systems-0009",
+    "certId": "epa-608",
+    "subjectId": "type-2",
+    "chapterId": "high-pressure-systems",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Which refrigerant would be used in a very high-pressure appliance?",
+    "choices": [
+      "R-134a",
+      "R-23",
+      "R-22",
+      "R-123"
+    ],
+    "answer": 2,
+    "oneLineConcept": "R-13, R-23, R-503 = very high-pressure",
+    "explanation": "A **very high-pressure** appliance uses a refrigerant with a critical temperature below 104°F or a liquid saturation pressure above 355 psia at 104°F. Examples are **R-13, R-23, R-503, R-508A, and R-508B**.\n\n**Wrong choices**\n- R-134a: R-134a is medium-pressure.\n- R-22: R-22 is high-pressure, not very high-pressure.\n- R-123: R-123 is low-pressure.",
+    "frequency": 2,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "pressure classes",
+      "very high-pressure"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-high-pressure-systems-0010",
+    "certId": "epa-608",
+    "subjectId": "type-2",
+    "chapterId": "high-pressure-systems",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "In which part of a high-pressure system is the refrigerant a low-pressure vapor?",
+    "choices": [
+      "The discharge line between the compressor and the condenser",
+      "The receiver",
+      "The liquid line between the condenser and the metering device",
+      "The suction line between the evaporator and the compressor"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Suction line = low-pressure vapor",
+    "explanation": "After the evaporator, the refrigerant is a **low-pressure vapor** in the **suction line** on its way to the compressor. The liquid line and receiver hold high-pressure liquid, and the discharge line carries high-pressure vapor.\n\n**Wrong choices**\n- The discharge line between the compressor and the condenser: The discharge line carries high-pressure vapor.\n- The receiver: The receiver holds high-pressure liquid.\n- The liquid line between the condenser and the metering device: The liquid line carries high-pressure liquid.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "refrigerant states",
+      "components"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-high-pressure-systems-0011",
+    "certId": "epa-608",
+    "subjectId": "type-2",
+    "chapterId": "high-pressure-systems",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "All of the following are high-pressure refrigerants EXCEPT:",
+    "choices": [
+      "R-123",
+      "R-22",
+      "R-410A",
+      "R-407C"
+    ],
+    "answer": 1,
+    "oneLineConcept": "R-123 is low-pressure (Type III)",
+    "explanation": "**R-123** is a **low-pressure** refrigerant used in chillers and is covered by Type III. R-22, R-410A, and R-407C are high-pressure refrigerants.\n\n**Wrong choices**\n- R-22: R-22 is listed as a high-pressure refrigerant.\n- R-410A: R-410A is listed as a high-pressure refrigerant.\n- R-407C: R-407C is listed as a high-pressure refrigerant.",
+    "frequency": 2,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "pressure classes"
+    ],
+    "levelLock": true
+  }
+]

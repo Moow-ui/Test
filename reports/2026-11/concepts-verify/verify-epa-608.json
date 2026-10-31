@@ -1,0 +1,60 @@
+{
+  "cert": "epa-608",
+  "date": "2026-11-01",
+  "chapters": {
+    "ozone-refrigerants": {
+      "result": "FAIL",
+      "issues": [
+        "points: \"HFCs have zero ODP but many have high GWP, so venting them is still illegal.\" -> The venting ban on HFCs does not come from their GWP. 40 CFR 82.154(a)(1) bans knowingly venting any non-exempt substitute refrigerant, whatever its GWP. Correction: \"HFCs have zero ODP, but venting them is still illegal under 40 CFR 82.154(a). Many also have a high GWP.\"",
+        "summary[0]: \"...why even ozone-safe refrigerants still may not be vented.\" -> This overstates the rule. 82.154(a)(1)(i)-(x) exempts some ozone-safe substitutes in listed end-uses (CO2, nitrogen, water, ammonia, and certain hydrocarbons such as R-600a/R-290 in listed uses). Correction: \"...why non-exempt substitute refrigerants such as HFCs still may not be vented.\""
+      ]
+    },
+    "clean-air-act-rules": {
+      "result": "PASS",
+      "issues": []
+    },
+    "refrigeration-cycle": {
+      "result": "PASS",
+      "issues": []
+    },
+    "safety-shipping": {
+      "result": "PASS",
+      "issues": []
+    },
+    "small-appliance-rules": {
+      "result": "PASS",
+      "issues": []
+    },
+    "small-appliance-techniques": {
+      "result": "PASS",
+      "issues": []
+    },
+    "high-pressure-leaks": {
+      "result": "PASS",
+      "issues": []
+    },
+    "high-pressure-recovery": {
+      "result": "PASS",
+      "issues": []
+    },
+    "high-pressure-systems": {
+      "result": "PASS",
+      "issues": []
+    },
+    "low-pressure-leaks": {
+      "result": "PASS",
+      "issues": []
+    },
+    "low-pressure-recovery": {
+      "result": "PASS",
+      "issues": []
+    },
+    "low-pressure-systems": {
+      "result": "PASS",
+      "issues": []
+    }
+  },
+  "figures": {
+    "refrigeration-cycle-overview.svg": "① PASS ② PASS ③ PASS ⑤ PASS"
+  }
+}
