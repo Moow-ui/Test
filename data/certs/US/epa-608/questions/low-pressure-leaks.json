@@ -1,0 +1,388 @@
+[
+  {
+    "id": "epa-608-low-pressure-leaks-0001",
+    "certId": "epa-608",
+    "subjectId": "type-3",
+    "chapterId": "low-pressure-leaks",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Most of a running low-pressure chiller is below atmospheric pressure. What happens when it has a leak?",
+    "choices": [
+      "The chiller pressure rises above 100 psig",
+      "Air and moisture leak into the system",
+      "Refrigerant sprays out of the leak at high pressure",
+      "Nothing, because low-pressure systems cannot leak"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Low-pressure leaks pull air and moisture in",
+    "explanation": "Because much of a low-pressure system runs **below atmospheric pressure (in a vacuum)**, a leak lets **air and moisture enter** the system. These noncondensables collect in the condenser and must be removed by the purge unit.\n\n**Wrong choices**\n- The chiller pressure rises above 100 psig: A leak does not raise pressure that high.\n- Refrigerant sprays out of the leak at high pressure: Parts of the system below atmospheric pressure draw air in rather than pushing refrigerant out.\n- Nothing, because low-pressure systems cannot leak: Low-pressure systems can and do leak.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "leaks",
+      "low-pressure",
+      "noncondensables"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-low-pressure-leaks-0002",
+    "certId": "epa-608",
+    "subjectId": "type-3",
+    "chapterId": "low-pressure-leaks",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "What is a common sign of a leak in a low-pressure chiller?",
+    "choices": [
+      "The rupture disc gets smaller",
+      "The condenser water gets colder",
+      "The purge unit runs much more than usual",
+      "The compressor oil turns blue"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Excessive purging = air leaking in",
+    "explanation": "Air that leaks in collects in the condenser, and the **purge unit** must run more to remove it. **Excessive purging** is a key sign of a leak in a low-pressure system.\n\n**Wrong choices**\n- The rupture disc gets smaller: Rupture discs do not shrink.\n- The condenser water gets colder: Condenser water temperature is not the usual leak sign.\n- The compressor oil turns blue: Oil color is not a standard leak sign.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "leaks",
+      "purge unit"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-low-pressure-leaks-0003",
+    "certId": "epa-608",
+    "subjectId": "type-3",
+    "chapterId": "low-pressure-leaks",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "What is the preferred way to raise the pressure of a low-pressure chiller for a leak test?",
+    "choices": [
+      "Use controlled hot water or a built-in heating/pressurization device",
+      "Use compressed air",
+      "Add R-22 until the pressure reaches 50 psig",
+      "Use oxygen"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Leak test pressure: hot water or heater first",
+    "explanation": "EPA lists the order of preference for pressurizing a low-pressure system for leak testing: **controlled hot water** or a **built-in system heating/pressurization device (such as Prevac)** first, then **nitrogen**.\n\n**Wrong choices**\n- Use compressed air: Compressed air brings in moisture and is unsafe.\n- Add R-22 until the pressure reaches 50 psig: Adding another refrigerant contaminates the charge and 50 psig is far too high.\n- Use oxygen: Oxygen can explode with oil.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "leak testing",
+      "low-pressure"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-low-pressure-leaks-0004",
+    "certId": "epa-608",
+    "subjectId": "type-3",
+    "chapterId": "low-pressure-leaks",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "What is the highest pressure normally used to leak test a low-pressure centrifugal chiller?",
+    "choices": [
+      "10 psig",
+      "100 psig",
+      "1 psig",
+      "50 psig"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Low-pressure chiller leak test: 10 psig max",
+    "explanation": "The rupture disc on a low-pressure chiller's evaporator is usually set at **15 psig**, so leak test pressure should **not exceed 10 psig** to avoid bursting it.\n\n**Wrong choices**\n- 100 psig: 100 psig is far too high for a low-pressure chiller.\n- 1 psig: 1 psig is lower than needed; the usual maximum is 10 psig.\n- 50 psig: 50 psig would burst the rupture disc.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "leak testing",
+      "10 psig"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-low-pressure-leaks-0005",
+    "certId": "epa-608",
+    "subjectId": "type-3",
+    "chapterId": "low-pressure-leaks",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A comfort cooling chiller holds 900 pounds of R-123. Above what annual leak rate must the owner repair the leaks?",
+    "choices": [
+      "15 percent",
+      "20 percent",
+      "10 percent",
+      "30 percent"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Comfort cooling chiller (HCFC): 10%",
+    "explanation": "R-123 is an HCFC, so this chiller falls under **40 CFR 82.157**. For **comfort cooling** appliances with 50 or more pounds, the leak repair trigger is **10 percent** per year.\n\n**Wrong choices**\n- 15 percent: 15 percent was an older comfort cooling trigger.\n- 20 percent: 20 percent is the trigger for commercial refrigeration.\n- 30 percent: 30 percent is the trigger for industrial process refrigeration.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "leak rate",
+      "comfort cooling"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-low-pressure-leaks-0006",
+    "certId": "epa-608",
+    "subjectId": "type-3",
+    "chapterId": "low-pressure-leaks",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A low-pressure chiller used for industrial process cooling holds 1,000 pounds of R-123. Above what annual leak rate must it be repaired?",
+    "choices": [
+      "35 percent",
+      "10 percent",
+      "20 percent",
+      "30 percent"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Industrial process refrigeration: 30%",
+    "explanation": "For **industrial process refrigeration** with 50 or more pounds of ozone-depleting refrigerant, the trigger leak rate is **30 percent** per year under 40 CFR 82.157(c).\n\n**Wrong choices**\n- 35 percent: 35 percent was the old trigger before the 2016 rule.\n- 10 percent: 10 percent is the trigger for comfort cooling.\n- 20 percent: 20 percent is the trigger for commercial refrigeration.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "leak rate",
+      "industrial process"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-low-pressure-leaks-0007",
+    "certId": "epa-608",
+    "subjectId": "type-3",
+    "chapterId": "low-pressure-leaks",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A comfort cooling chiller with an ODS refrigerant has exceeded its leak rate. How often must leak inspections be done afterward?",
+    "choices": [
+      "Once per calendar year until it stays below the rate for one year",
+      "Only when the purge unit alarms",
+      "Once a month",
+      "Once every three months for two years"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Comfort cooling over the rate: yearly inspections",
+    "explanation": "Under 40 CFR 82.157(g), **comfort cooling** and other appliances not in the commercial or industrial groups need a leak inspection **once per calendar year** until the leak rate stays below the trigger for **one year**.\n\n**Wrong choices**\n- Only when the purge unit alarms: Inspections follow a set schedule.\n- Once a month: Monthly inspections are not required.\n- Once every three months for two years: Quarterly inspections apply to commercial and industrial appliances with 500 pounds or more.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "leak inspection",
+      "comfort cooling"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-low-pressure-leaks-0008",
+    "certId": "epa-608",
+    "subjectId": "type-3",
+    "chapterId": "low-pressure-leaks",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A chiller with 50 or more pounds of ODS refrigerant leaked 125 percent of its full charge last calendar year. By what date must the owner report to EPA?",
+    "choices": [
+      "December 31 of this year",
+      "January 1 of this year",
+      "June 30 of this year",
+      "March 1 of this year"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Chronic leak report due March 1",
+    "explanation": "40 CFR 82.157(j) requires owners of appliances with 50 or more pounds that leak **125 percent or more** of their full charge in a calendar year to submit a report to EPA **by March 1** of the following year.\n\n**Wrong choices**\n- December 31 of this year: December 31 is too late.\n- January 1 of this year: January 1 is not the reporting deadline.\n- June 30 of this year: June 30 is too late.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "chronic leaks",
+      "reporting"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-low-pressure-leaks-0009",
+    "certId": "epa-608",
+    "subjectId": "type-3",
+    "chapterId": "low-pressure-leaks",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "An automatic leak detection system that senses refrigerant in the air can replace required leak inspections. At what concentration must it alert the owner?",
+    "choices": [
+      "100 parts per million",
+      "1,000 parts per million",
+      "5 percent by volume",
+      "10 parts per million"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Leak detector: detect 10 ppm, alert at 100 ppm",
+    "explanation": "Under 40 CFR 82.157(g)(4), an automatic leak detection system that senses refrigerant in air must **accurately detect 10 ppm** and **alert the owner at 100 ppm**, and it must be audited or calibrated every year.\n\n**Wrong choices**\n- 1,000 parts per million: 1,000 ppm is too high.\n- 5 percent by volume: 5 percent is far too high.\n- 10 parts per million: 10 ppm is the level the system must be able to detect accurately, not the alert level.",
+    "frequency": 2,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "automatic leak detection"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-low-pressure-leaks-0010",
+    "certId": "epa-608",
+    "subjectId": "type-3",
+    "chapterId": "low-pressure-leaks",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which refrigerant is a low-pressure refrigerant?",
+    "choices": [
+      "R-134a",
+      "R-123",
+      "R-22",
+      "R-410A"
+    ],
+    "answer": 2,
+    "oneLineConcept": "R-11, R-113, R-123 = low-pressure",
+    "explanation": "40 CFR 82.152 defines a **low-pressure** appliance as one using a refrigerant with a liquid saturation pressure **below 45 psia at 104°F**. Examples are **R-11, R-123, R-113, and R-245fa**.\n\n**Wrong choices**\n- R-134a: R-134a is a medium-pressure refrigerant.\n- R-22: R-22 is a high-pressure refrigerant.\n- R-410A: R-410A is a high-pressure refrigerant.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "pressure classes",
+      "R-123"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-low-pressure-leaks-0011",
+    "certId": "epa-608",
+    "subjectId": "type-3",
+    "chapterId": "low-pressure-leaks",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "All of the following are signs or causes of air entering a low-pressure chiller EXCEPT:",
+    "choices": [
+      "Higher than normal condenser pressure from noncondensables",
+      "A leaking gasket on the low side while running",
+      "Excessive purge unit run time",
+      "A leak in the system while it is pressurized above atmosphere during shutdown"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Air enters only where pressure is below atmosphere",
+    "explanation": "When the chiller is pressurized **above** atmosphere, a leak pushes refrigerant **out**; it does not let air in. While running below atmosphere, leaks draw air in, which raises condenser pressure and makes the purge unit run more.\n\n**Wrong choices**\n- Higher than normal condenser pressure from noncondensables: Air in the condenser raises condenser pressure.\n- A leaking gasket on the low side while running: A leaking low-side gasket lets air in while running.\n- Excessive purge unit run time: Excessive purging shows air is getting in.",
+    "frequency": 2,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "leaks",
+      "noncondensables"
+    ],
+    "levelLock": true
+  }
+]

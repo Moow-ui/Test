@@ -1,0 +1,460 @@
+[
+  {
+    "id": "epa-608-low-pressure-recovery-0001",
+    "certId": "epa-608",
+    "subjectId": "type-3",
+    "chapterId": "low-pressure-recovery",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "To what level must a low-pressure appliance be evacuated before it is opened for a major repair or disposal?",
+    "choices": [
+      "10 inches of mercury vacuum",
+      "0 psig",
+      "25 mm Hg absolute",
+      "4 inches of mercury vacuum"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Low-pressure appliances: 25 mm Hg absolute",
+    "explanation": "Table 1 in 40 CFR 82.156 requires **low-pressure** appliances to be evacuated to **25 mm Hg absolute**, which is a deep vacuum of about 29 inches of mercury.\n\n**Wrong choices**\n- 10 inches of mercury vacuum: 10 inches applies to some large high- and medium-pressure appliances.\n- 0 psig: 0 psig is for non-major repairs.\n- 4 inches of mercury vacuum: 4 inches applies to small appliances and older equipment on some appliances.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "evacuation levels",
+      "25 mm Hg"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "epa-608-low-pressure-recovery-0002",
+    "certId": "epa-608",
+    "subjectId": "type-3",
+    "chapterId": "low-pressure-recovery",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Does the required evacuation level for a low-pressure appliance change if the recovery equipment was made before November 15, 1993?",
+    "choices": [
+      "Yes; older equipment needs only 0 psig",
+      "Yes; older equipment needs only 4 inches of mercury vacuum",
+      "No; it is 25 mm Hg absolute for both older and newer equipment",
+      "Yes; older equipment needs 15 inches of mercury vacuum"
+    ],
+    "answer": 3,
+    "oneLineConcept": "25 mm Hg absolute: same for old and new equipment",
+    "explanation": "In Table 1, the level for **low-pressure appliances** is **25 mm Hg absolute** in **both** columns: equipment made before and on or after November 15, 1993.\n\n**Wrong choices**\n- Yes; older equipment needs only 0 psig: 0 psig is for non-major repairs.\n- Yes; older equipment needs only 4 inches of mercury vacuum: 4 inches applies to some medium- and high-pressure appliances with older equipment, not low-pressure ones.\n- Yes; older equipment needs 15 inches of mercury vacuum: 15 inches is for large medium-pressure appliances with newer equipment.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "evacuation levels",
+      "1993"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "epa-608-low-pressure-recovery-0003",
+    "certId": "epa-608",
+    "subjectId": "type-3",
+    "chapterId": "low-pressure-recovery",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "When recovering refrigerant from a low-pressure chiller, what should be removed first?",
+    "choices": [
+      "The liquid refrigerant",
+      "The water in the tubes",
+      "The vapor",
+      "The oil"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Low-pressure recovery: liquid first, then vapor",
+    "explanation": "Recovering **liquid first** speeds up the job because most of the refrigerant is liquid. After the liquid is out, the remaining **vapor** must also be recovered.\n\n**Wrong choices**\n- The water in the tubes: Water in the tubes should keep moving or be drained to prevent freezing; it is not recovered first.\n- The vapor: Vapor is recovered after the liquid.\n- The oil: Oil is not recovered first.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "recovery techniques",
+      "liquid recovery"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-low-pressure-recovery-0004",
+    "certId": "epa-608",
+    "subjectId": "type-3",
+    "chapterId": "low-pressure-recovery",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "After the liquid is removed from a large low-pressure chiller, why must the vapor also be recovered?",
+    "choices": [
+      "Vapor contains only air",
+      "A large amount of refrigerant remains as vapor in the big shell",
+      "Vapor can be vented legally from low-pressure systems",
+      "The rupture disc needs vapor to stay closed"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Big chillers hold many pounds as vapor",
+    "explanation": "A large chiller has a big volume, so a **significant amount of refrigerant** stays as **vapor** after the liquid is removed. EPA's test topics stress the need to recover vapor in addition to liquid.\n\n**Wrong choices**\n- Vapor contains only air: The vapor is mostly refrigerant, not just air.\n- Vapor can be vented legally from low-pressure systems: Venting refrigerant vapor is illegal.\n- The rupture disc needs vapor to stay closed: This is not why vapor is recovered.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "recovery techniques",
+      "vapor recovery"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "epa-608-low-pressure-recovery-0005",
+    "certId": "epa-608",
+    "subjectId": "type-3",
+    "chapterId": "low-pressure-recovery",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "During refrigerant recovery from a chiller, why should water be circulated through the tubes or drained?",
+    "choices": [
+      "To add moisture to the refrigerant",
+      "To keep the purge unit running",
+      "To keep the water in the tubes from freezing",
+      "To speed up the compressor"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Keep water moving to prevent tube freezing",
+    "explanation": "As pressure drops during recovery, the refrigerant gets very cold. If water sits still in the tubes it can **freeze and burst them**, so water should be **circulated or drained** during evacuation.\n\n**Wrong choices**\n- To add moisture to the refrigerant: Moisture in refrigerant is unwanted.\n- To keep the purge unit running: It is not done to run the purge unit.\n- To speed up the compressor: This step protects the tubes; it is not for the compressor.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "recovery techniques",
+      "freezing"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-low-pressure-recovery-0006",
+    "certId": "epa-608",
+    "subjectId": "type-3",
+    "chapterId": "low-pressure-recovery",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Before draining oil from a low-pressure chiller, to what temperature should the oil be heated?",
+    "choices": [
+      "212°F",
+      "130°F",
+      "32°F",
+      "70°F"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Heat oil to 130°F before draining",
+    "explanation": "Refrigerant dissolves in oil. EPA's test topics say to **heat the oil to 130°F** before removing it, which drives out more refrigerant so less is lost with the oil.\n\n**Wrong choices**\n- 212°F: 212°F is too hot and is not the guideline.\n- 32°F: Cold oil holds more refrigerant.\n- 70°F: 70°F leaves more refrigerant dissolved in the oil.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "oil",
+      "recovery techniques"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-low-pressure-recovery-0007",
+    "certId": "epa-608",
+    "subjectId": "type-3",
+    "chapterId": "low-pressure-recovery",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "For a non-major repair on a low-pressure chiller using a refrigerant that boils above 85°F at atmospheric pressure (such as R-113), how may the pressure be raised to atmospheric (0 psig) before opening?",
+    "choices": [
+      "Leave it in a vacuum and open it",
+      "Use compressed air",
+      "Use heat first, then nitrogen if needed to reach atmospheric pressure",
+      "Use nitrogen only, with no heat"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Low-pressure non-major repair: raise to 0 psig",
+    "explanation": "Under 40 CFR 82.156(a)(1)(ii), low-pressure appliances are **pressurized to 0 psig** before opening for a non-major repair. For refrigerants that boil **above 85°F** (such as R-113), use **heat** first and then **nitrogen** if needed. For refrigerants that boil at or below 85°F (such as R-11 and R-123), methods such as nitrogen that need later purging may not be used.\n\n**Wrong choices**\n- Leave it in a vacuum and open it: Opening under vacuum draws in air and moisture; the rule requires 0 psig.\n- Use compressed air: Compressed air is not an allowed method.\n- Use nitrogen only, with no heat: The rule says heat must be used first to raise pressure as much as possible.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "non-major repair",
+      "pressurizing"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-low-pressure-recovery-0008",
+    "certId": "epa-608",
+    "subjectId": "type-3",
+    "chapterId": "low-pressure-recovery",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "When recharging a low-pressure chiller after it has been evacuated, what should be added first?",
+    "choices": [
+      "Liquid refrigerant",
+      "Refrigerant vapor",
+      "Nitrogen",
+      "Oil"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Recharge with vapor first, then liquid",
+    "explanation": "Under a deep vacuum, liquid refrigerant would boil and become very cold, which can **freeze water in the tubes**. Charge **vapor first** until the pressure is high enough (above the saturation pressure for 32°F), and then add liquid.\n\n**Wrong choices**\n- Liquid refrigerant: Adding liquid first under a deep vacuum can make it boil and freeze the water in the tubes.\n- Nitrogen: Nitrogen is not used to start charging.\n- Oil: Oil is not added first in place of refrigerant.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "charging",
+      "freezing"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "epa-608-low-pressure-recovery-0009",
+    "certId": "epa-608",
+    "subjectId": "type-3",
+    "chapterId": "low-pressure-recovery",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Through which valve should a centrifugal chiller usually be charged?",
+    "choices": [
+      "The condenser water drain",
+      "The rupture disc",
+      "The purge unit vent",
+      "The evaporator charging valve"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Charge centrifugals through evaporator charging valve",
+    "explanation": "EPA's test topics say centrifugal chillers are charged through the **evaporator charging valve**, starting with vapor until the pressure is high enough to add liquid safely.\n\n**Wrong choices**\n- The condenser water drain: The water drain is not part of the refrigerant circuit.\n- The rupture disc: The rupture disc is a safety device, not a valve.\n- The purge unit vent: The purge vent is not a charging connection.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "charging",
+      "centrifugal"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-low-pressure-recovery-0010",
+    "certId": "epa-608",
+    "subjectId": "type-3",
+    "chapterId": "low-pressure-recovery",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "After reaching 25 mm Hg absolute, a technician waits and the chiller pressure rises. What should the technician do?",
+    "choices": [
+      "Open the chiller right away",
+      "Stop, because the pressure rise means the job is done",
+      "Continue recovery, because refrigerant is still boiling off from liquid or oil",
+      "Add nitrogen and vent it"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Pressure rise after recovery: keep recovering",
+    "explanation": "EPA's test topics say to **wait a few minutes** after reaching the required vacuum. If pressure **rises**, liquid refrigerant or refrigerant in the oil remains, so recovery should continue.\n\n**Wrong choices**\n- Open the chiller right away: Opening now would release refrigerant.\n- Stop, because the pressure rise means the job is done: A pressure rise means refrigerant is still there.\n- Add nitrogen and vent it: Venting is illegal.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "recovery techniques",
+      "pressure rise"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-low-pressure-recovery-0011",
+    "certId": "epa-608",
+    "subjectId": "type-3",
+    "chapterId": "low-pressure-recovery",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Which job on a low-pressure chiller counts as a major repair?",
+    "choices": [
+      "Leaving an opening of more than 4 square inches of flow area uncovered for more than 15 minutes",
+      "Replacing a pressure gauge in 5 minutes",
+      "Replacing a control circuit fuse",
+      "Tightening a flange bolt"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Major: >4 sq in. open for >15 minutes",
+    "explanation": "40 CFR 82.152 defines a **major** repair as removing the compressor, condenser, evaporator, or auxiliary heat exchange coil, **or** uncovering an opening of **more than 4 square inches of flow area for more than 15 minutes**.\n\n**Wrong choices**\n- Replacing a pressure gauge in 5 minutes: A short gauge change with a small opening is not major.\n- Replacing a control circuit fuse: A fuse is not part of the refrigerant circuit.\n- Tightening a flange bolt: Tightening a bolt removes no component.",
+    "frequency": 2,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "major repair",
+      "definition"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-low-pressure-recovery-0012",
+    "certId": "epa-608",
+    "subjectId": "type-3",
+    "chapterId": "low-pressure-recovery",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Standard atmospheric pressure is 29.9 inches of mercury, and 25 mm of mercury is about 1 inch. About how many inches of mercury vacuum is 25 mm Hg absolute?",
+    "choices": [
+      "About 29 inches of mercury vacuum",
+      "About 15 inches of mercury vacuum",
+      "About 25 inches of mercury vacuum",
+      "About 1 inch of mercury vacuum"
+    ],
+    "answer": 1,
+    "oneLineConcept": "25 mm Hg absolute ≈ 29 in. Hg vacuum",
+    "explanation": "Vacuum is measured down from atmospheric pressure.\n1. 25 mm Hg is about 1 inch of mercury (25.4 mm = 1 inch).\n2. Vacuum = 29.9 - 1 = about **28.9, or roughly 29 inches of mercury vacuum**.\n3. Check: 28.9 + 1 = 29.9 inches (atmospheric).\n\n**Wrong choices**\n- About 15 inches of mercury vacuum: 15 inches is much less deep.\n- About 25 inches of mercury vacuum: This treats 25 mm as if it were 25 inches.\n- About 1 inch of mercury vacuum: This confuses absolute pressure with vacuum.",
+    "frequency": 2,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "evacuation levels",
+      "conversion"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "epa-608-low-pressure-recovery-0013",
+    "certId": "epa-608",
+    "subjectId": "type-3",
+    "chapterId": "low-pressure-recovery",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "All of the following are correct practices when recovering from or recharging a low-pressure chiller EXCEPT:",
+    "choices": [
+      "Heating the oil to 130°F before draining it",
+      "Recovering liquid first, then vapor",
+      "Circulating or draining water in the tubes during recovery",
+      "Charging liquid first while the chiller is in a deep vacuum"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Low-pressure recharge: vapor first",
+    "explanation": "Charging **liquid first** under a deep vacuum can freeze the water in the tubes, so vapor must be added first. The other practices are all correct.\n\n**Wrong choices**\n- Heating the oil to 130°F before draining it: Heating oil to 130°F reduces refrigerant loss.\n- Recovering liquid first, then vapor: Recovering liquid then vapor is correct.\n- Circulating or draining water in the tubes during recovery: Keeping water moving prevents freezing.",
+    "frequency": 2,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "charging",
+      "recovery techniques"
+    ],
+    "levelLock": true
+  }
+]

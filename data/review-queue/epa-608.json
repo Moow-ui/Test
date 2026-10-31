@@ -1,0 +1,36 @@
+[
+  {
+    "subjectId": "type-3",
+    "chapterId": "low-pressure-recovery",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "What is the usual high-pressure cut-out setting for a recovery device used on a low-pressure appliance?",
+    "choices": [
+      "0 inches of mercury",
+      "100 psig",
+      "10 psig",
+      "300 psig"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Low-pressure recovery device cut-out: 10 psig",
+    "explanation": "Recovery devices used with low-pressure appliances commonly have a **high-pressure cut-out at about 10 psig**, which protects the low-pressure equipment and recovery vessel from overpressure. Follow the equipment maker's directions.\n\n**Wrong choices**\n- 0 inches of mercury: 0 inches of mercury is not a cut-out setting.\n- 100 psig: 100 psig is far above the level used for low-pressure recovery devices.\n- 300 psig: 300 psig is a high-pressure range.",
+    "frequency": 3,
+    "tags": [
+      "recovery equipment",
+      "cut-out"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    },
+    "certId": "epa-608",
+    "reviewNote": "2026-11-01 분리 검증: 저압 기기용 회수 장치 고압 차단값 10 psig 는 40 CFR Part 82 원문 근거가 없고 학습서 관행 수치뿐이라 보관"
+  }
+]

@@ -1,0 +1,316 @@
+[
+  {
+    "id": "epa-608-low-pressure-systems-0001",
+    "certId": "epa-608",
+    "subjectId": "type-3",
+    "chapterId": "low-pressure-systems",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What does the purge unit on a low-pressure chiller do?",
+    "choices": [
+      "Adds refrigerant automatically",
+      "Cools the compressor oil",
+      "Relieves pressure if the chiller gets too hot",
+      "Removes air and moisture (noncondensables) from the system"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Purge unit removes air and moisture",
+    "explanation": "Air and moisture leak into low-pressure chillers. The **purge unit** removes these **noncondensables** while returning as much refrigerant as possible to the system. High-efficiency purge units release very little refrigerant.\n\n**Wrong choices**\n- Adds refrigerant automatically: The purge unit does not charge refrigerant.\n- Cools the compressor oil: It does not cool the oil.\n- Relieves pressure if the chiller gets too hot: Pressure relief is the job of the rupture disc or relief valve.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "purge unit"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-low-pressure-systems-0002",
+    "certId": "epa-608",
+    "subjectId": "type-3",
+    "chapterId": "low-pressure-systems",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "From where in a low-pressure chiller does the purge unit take its sample?",
+    "choices": [
+      "The top of the condenser, where noncondensables collect",
+      "The oil sump",
+      "The water box",
+      "The bottom of the evaporator"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Purge pulls from top of condenser",
+    "explanation": "Air and other noncondensables are trapped at the **top of the condenser** because they do not condense. The purge unit draws from there to remove them.\n\n**Wrong choices**\n- The oil sump: The oil sump is not where noncondensables collect.\n- The water box: The water box holds water, not refrigerant.\n- The bottom of the evaporator: The bottom of the evaporator holds liquid refrigerant, not trapped air.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "purge unit",
+      "condenser"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-low-pressure-systems-0003",
+    "certId": "epa-608",
+    "subjectId": "type-3",
+    "chapterId": "low-pressure-systems",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "At what pressure is the rupture disc on a low-pressure chiller's evaporator usually set to burst?",
+    "choices": [
+      "15 psig",
+      "10 psig",
+      "50 psig",
+      "150 psig"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Rupture disc on low-pressure chiller: 15 psig",
+    "explanation": "The **rupture disc** protects the low-pressure chiller from overpressure and is usually set at **15 psig**. That is why leak test pressure is kept at **10 psig** or less.\n\n**Wrong choices**\n- 10 psig: 10 psig is the usual maximum leak test pressure, kept below the disc setting.\n- 50 psig: 50 psig is far above the usual setting.\n- 150 psig: 150 psig is a high-pressure range.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "rupture disc",
+      "safety"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "epa-608-low-pressure-systems-0004",
+    "certId": "epa-608",
+    "subjectId": "type-3",
+    "chapterId": "low-pressure-systems",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Under ASHRAE Standard 15, what is required in a machinery room with an R-123 chiller?",
+    "choices": [
+      "Only a first aid kit",
+      "Only a fire extinguisher",
+      "A window that stays open",
+      "A refrigerant sensor (detector) that sounds an alarm"
+    ],
+    "answer": 4,
+    "oneLineConcept": "R-123 machinery room needs refrigerant sensor",
+    "explanation": "EPA's Type III test topics state that **ASHRAE Standard 15** requires an equipment room **refrigerant sensor** for **R-123**, along with the oxygen-deprivation protection that applies to all refrigerants.\n\n**Wrong choices**\n- Only a first aid kit: A first aid kit alone does not meet this rule.\n- Only a fire extinguisher: A fire extinguisher alone does not meet this rule.\n- A window that stays open: An open window does not replace a refrigerant sensor.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "safety",
+      "ASHRAE 15",
+      "R-123"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-low-pressure-systems-0005",
+    "certId": "epa-608",
+    "subjectId": "type-3",
+    "chapterId": "low-pressure-systems",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "R-123 replaced which older CFC refrigerant in many low-pressure chillers?",
+    "choices": [
+      "R-12",
+      "R-502",
+      "R-22",
+      "R-11"
+    ],
+    "answer": 4,
+    "oneLineConcept": "R-123 (HCFC) replaced R-11 (CFC)",
+    "explanation": "**R-123**, an HCFC, became the common replacement for **R-11**, a CFC, in low-pressure centrifugal chillers. Both are low-pressure refrigerants.\n\n**Wrong choices**\n- R-12: R-12 is a medium-pressure CFC used in other equipment.\n- R-502: R-502 is a high-pressure blend.\n- R-22: R-22 is a high-pressure HCFC.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "refrigerants",
+      "R-123",
+      "R-11"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-low-pressure-systems-0006",
+    "certId": "epa-608",
+    "subjectId": "type-3",
+    "chapterId": "low-pressure-systems",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "While a low-pressure chiller is running, what is the pressure in its evaporator?",
+    "choices": [
+      "Below atmospheric pressure (a vacuum)",
+      "About 300 psig",
+      "Exactly 0 psig at all times",
+      "About 100 psig"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Low-pressure evaporator runs in a vacuum",
+    "explanation": "Low-pressure refrigerants such as R-123 boil at low temperatures only under **vacuum**, so the **evaporator runs below atmospheric pressure**. This is why leaks let air in.\n\n**Wrong choices**\n- About 300 psig: 300 psig is typical of high-pressure systems, not low-pressure chillers.\n- Exactly 0 psig at all times: The pressure is normally below 0 psig while running.\n- About 100 psig: 100 psig is far too high for a low-pressure evaporator.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "low-pressure",
+      "evaporator"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "epa-608-low-pressure-systems-0007",
+    "certId": "epa-608",
+    "subjectId": "type-3",
+    "chapterId": "low-pressure-systems",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A large R-123 leak happens in a closed machinery room. What is the main danger to a technician who enters?",
+    "choices": [
+      "Lack of oxygen, because refrigerant vapor pushes out the air",
+      "Electric shock from the refrigerant",
+      "Radiation exposure",
+      "Hearing damage from the leak noise"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Big leak in a room = oxygen deprivation",
+    "explanation": "Refrigerant vapor is heavier than air and can **displace oxygen**. Do not enter without checking the alarm and using a **self-contained breathing apparatus (SCBA)** if needed. Ventilate the room.\n\n**Wrong choices**\n- Electric shock from the refrigerant: Refrigerant does not cause electric shock.\n- Radiation exposure: Refrigerant is not radioactive.\n- Hearing damage from the leak noise: Noise is not the main danger.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "safety",
+      "oxygen deprivation"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "epa-608-low-pressure-systems-0008",
+    "certId": "epa-608",
+    "subjectId": "type-3",
+    "chapterId": "low-pressure-systems",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A low-pressure chiller holding R-123 is shut down in a 75°F room. What pressure is it most likely to show?",
+    "choices": [
+      "About 200 psig",
+      "About 100 psig",
+      "Slightly below atmospheric (a small vacuum)",
+      "Exactly 15 psig"
+    ],
+    "answer": 3,
+    "oneLineConcept": "R-123 at room temp: near 0 psig, slight vacuum",
+    "explanation": "R-123 boils at about 82°F at atmospheric pressure. At **75°F**, its saturation pressure is a little **below atmospheric**, so a shut-down chiller shows a slight vacuum. Use the pressure-temperature relationship of low-pressure refrigerants to judge readings.\n\n**Wrong choices**\n- About 200 psig: 200 psig is a high-pressure range.\n- About 100 psig: 100 psig is far too high for R-123 at room temperature.\n- Exactly 15 psig: 15 psig would be near the rupture disc setting.",
+    "frequency": 2,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "pressure-temperature",
+      "R-123"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "epa-608-low-pressure-systems-0009",
+    "certId": "epa-608",
+    "subjectId": "type-3",
+    "chapterId": "low-pressure-systems",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "All of the following are low-pressure refrigerants EXCEPT:",
+    "choices": [
+      "R-113",
+      "R-134a",
+      "R-11",
+      "R-123"
+    ],
+    "answer": 2,
+    "oneLineConcept": "R-134a is medium-pressure",
+    "explanation": "**R-134a** is listed as a **medium-pressure** refrigerant (covered by Type II). R-11, R-123, and R-113 are low-pressure refrigerants (Type III).\n\n**Wrong choices**\n- R-113: R-113 is a low-pressure refrigerant.\n- R-11: R-11 is a low-pressure refrigerant.\n- R-123: R-123 is a low-pressure refrigerant.",
+    "frequency": 2,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "pressure classes"
+    ],
+    "levelLock": true
+  }
+]
