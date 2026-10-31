@@ -1,17 +1,23 @@
 {
   "id": "epa-608",
   "country": "US",
-  "name": "EPA 608",
+  "addedAt": "2026-11-01",
+  "name": "EPA 608 Technician Certification",
   "officialName": "EPA Section 608 Technician Certification",
   "spacedName": "EPA 608",
   "shortNames": [
+    "EPA 608",
     "EPA 608 Universal",
+    "EPA 608 practice test",
+    "608 certification",
+    "Section 608",
     "HVAC certification",
-    "refrigerant certification"
+    "refrigerant certification",
+    "EPA Type I",
+    "EPA Type II",
+    "EPA Type III"
   ],
-  "relatedCertIds": [
-    "journeyman-electrician"
-  ],
+  "relatedCertIds": ["journeyman-electrician"],
   "field": "HVAC",
   "visualNeed": "medium",
   "certType": "federal-certification",
@@ -19,5 +25,122 @@
     "name": "U.S. Environmental Protection Agency (EPA)",
     "url": "https://www.epa.gov/section608"
   },
-  "order": 360
+  "trademarkNotice": "This practice resource is independent and is not affiliated with, endorsed by, or sponsored by the U.S. Environmental Protection Agency (EPA) or any EPA-approved certifying organization. EPA keeps the official test bank private and releases it only to approved certifying organizations. All questions here are original practice questions written from the public rules in 40 CFR Part 82, Subpart F and EPA's published test topics.",
+  "order": 360,
+  "updatedAt": "2026-11-01",
+  "examInfo": {
+    "totalQuestions": 100,
+    "timeLimitMinutes": 120,
+    "format": "The EPA Section 608 exam is given only by EPA-approved certifying organizations. It has four sections of 25 multiple-choice questions: Core, Type I (small appliances), Type II (high-pressure appliances), and Type III (low-pressure appliances). Each certification test has 25 Core questions plus 25 questions from each Type you want. The Universal test has all 100 questions. Type II, Type III, and Universal tests are closed-book and proctored. A Type I-only test may be given in a mail-in (open-book) format, but it cannot be used toward Universal. EPA rules do not set a time limit; each certifying organization sets its own. The 120-minute timer on this site is a practice setting for the 100-question Universal mock exam, not an official limit. Each question here has 4 answer choices with one correct answer.",
+    "choiceCount": 4,
+    "passCriteria": {
+      "averageScore": 70,
+      "subjectMinScore": 70,
+      "shortLabel": "70% in each section",
+      "description": "EPA rules set the passing score at 70 percent for the closed-book Type I, Type II, Type III, and Universal tests (84 percent for a mail-in Type I test). Universal can be earned in one sitting or by combining passing scores on separate tests, so this site checks each 25-question section on its own: you need at least 18 of 25 (70 percent) in Core and in each Type. Ask your certifying organization exactly how it grades and reports sections."
+    }
+  },
+  "content": {
+    "eligibility": "There are no education or experience requirements. Anyone who passes an EPA-approved test given by an EPA-approved certifying organization can be certified. Under EPA rules, a person who could release refrigerant while servicing, repairing, maintaining, or disposing of stationary refrigeration or air-conditioning equipment must be certified for that type of equipment. A registered apprentice may work without certification only while closely and continually supervised by a certified technician.",
+    "intro": "EPA Section 608 Technician Certification is required by the Clean Air Act for anyone who opens the refrigerant circuit of stationary air-conditioning and refrigeration equipment that uses CFC, HCFC, or most substitute refrigerants such as HFCs. The test has a Core section and three Type sections: Type I for small appliances, Type II for high-pressure appliances, and Type III for low-pressure appliances. Passing Core and all three Types gives Universal certification. Certification does not expire. This site has short practice sets by chapter and a 100-question Universal mock exam.",
+    "trendSummary": "Every test includes the 25-question Core section, which covers ozone depletion, the Clean Air Act and Montreal Protocol, Section 608 rules, substitute refrigerants and oils, the refrigeration cycle, the three Rs, recovery, dehydration, and safety. Type I focuses on small appliance recovery rules and techniques. Type II and Type III each cover leak detection, leak repair rules, recovery and evacuation requirements, refrigeration, and safety for their own equipment. The chapter splits within each section on this site are study estimates; EPA does not publish chapter weights.",
+    "studyTip": "Start with Core, because you must pass it for every certification. Then learn the number tables: small appliance recovery percentages for Type I, evacuation levels by appliance size and equipment date for Type II, and the 25 mm Hg absolute level for Type III. Leak repair trigger rates and the 30-day repair deadline appear in both Type II and Type III.",
+    "faqs": [
+      {
+        "question": "How many questions are on the EPA 608 exam?",
+        "answer": "Each section has 25 questions. A Type I, Type II, or Type III test has 25 Core questions plus 25 questions for that Type. The Universal test has 100 questions: Core plus Types I, II, and III."
+      },
+      {
+        "question": "What score do I need to pass?",
+        "answer": "EPA rules set the passing score at 70 percent for closed-book tests, which is 18 of 25 questions. A mail-in Type I test needs 84 percent. This site checks each section against 70 percent."
+      },
+      {
+        "question": "Is the EPA 608 test open book?",
+        "answer": "Type II, Type III, and Universal tests are closed-book and proctored. Only a Type I-only test may be given in a mail-in, open-book format, and it cannot be used toward Universal certification."
+      },
+      {
+        "question": "Does EPA 608 certification expire?",
+        "answer": "No. EPA says Section 608 technician certification does not expire. You must keep a copy of your certificate at your place of business. If you lose your card, contact the organization that certified you."
+      },
+      {
+        "question": "Are these real exam questions?",
+        "answer": "No. EPA keeps its test bank private and gives it only to approved certifying organizations. All questions here are original practice questions written from the public regulations and EPA's published test topics."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "title": "EPA — Section 608 Technician Certification (tests by equipment type, EPA-approved certifying organizations, certification does not expire)",
+      "url": "https://www.epa.gov/section608/section-608-technician-certification"
+    },
+    {
+      "title": "EPA — Section 608 Technician Certification Requirements (types of certification; open-book Core cannot be used for Universal; apprentices)",
+      "url": "https://www.epa.gov/section608/section-608-technician-certification-requirements"
+    },
+    {
+      "title": "EPA — Section 608 Technician Certification Test Topics (Core, Type 1, Type 2, Type 3)",
+      "url": "https://www.epa.gov/section608/test-topics"
+    },
+    {
+      "title": "eCFR — 40 CFR 82.161 Technician certification (Type I, II, III, Universal; at least 25 Core questions and 25 per technical group)",
+      "url": "https://www.ecfr.gov/current/title-40/part-82/section-82.161"
+    },
+    {
+      "title": "eCFR — Appendix D to 40 CFR Part 82, Subpart F (closed-book proctored tests, mail-in Type I, 100-question Universal, passing score 70 percent / 84 percent mail-in)",
+      "url": "https://www.ecfr.gov/current/title-40/part-82/subpart-F"
+    },
+    {
+      "title": "eCFR — 40 CFR 82.152 Definitions (small appliance, high-, medium-, low-, and very high-pressure appliance, major repair)",
+      "url": "https://www.ecfr.gov/current/title-40/part-82/section-82.152"
+    },
+    {
+      "title": "eCFR — 40 CFR 82.154 Prohibitions (venting prohibition, exempt substitutes, sales restriction, sale of used refrigerant)",
+      "url": "https://www.ecfr.gov/current/title-40/part-82/section-82.154"
+    },
+    {
+      "title": "eCFR — 40 CFR 82.155 Safe disposal of appliances (final processor, signed statements kept 3 years)",
+      "url": "https://www.ecfr.gov/current/title-40/part-82/section-82.155"
+    },
+    {
+      "title": "eCFR — 40 CFR 82.156 Proper evacuation of refrigerant from appliances (Table 1 evacuation levels, small appliance 80/90 percent)",
+      "url": "https://www.ecfr.gov/current/title-40/part-82/section-82.156"
+    },
+    {
+      "title": "eCFR — 40 CFR 82.157 Appliance maintenance and leak repair (appliances with 50 lb or more of ODS refrigerant; 20/30/10 percent leak rates; 30-day repair)",
+      "url": "https://www.ecfr.gov/current/title-40/part-82/section-82.157"
+    },
+    {
+      "title": "eCFR — 40 CFR 84.106 Leak repair (2024 Emissions Reduction and Reclamation rule: appliances with 15 lb or more of HFC refrigerant with GWP above 53, from January 1, 2026)",
+      "url": "https://www.ecfr.gov/current/title-40/part-84/section-84.106"
+    },
+    {
+      "title": "eCFR — 40 CFR 19.4 Civil monetary penalty inflation adjustment (Clean Air Act penalties)",
+      "url": "https://www.ecfr.gov/current/title-40/part-19/section-19.4"
+    },
+    {
+      "title": "EPA — Stationary Refrigeration Service Practice Requirements (evacuation levels, small appliances, reclamation)",
+      "url": "https://www.epa.gov/section608/stationary-refrigeration-service-practice-requirements"
+    },
+    {
+      "title": "EPA — Stationary Refrigeration Leak Repair Requirements",
+      "url": "https://www.epa.gov/section608/stationary-refrigeration-leak-repair-requirements"
+    },
+    {
+      "title": "EPA — Regulatory Updates: Section 608 Refrigerant Management Regulations (2020 rule removed substitutes from 82.157 leak repair)",
+      "url": "https://www.epa.gov/section608/regulatory-updates-section-608-refrigerant-management-regulations"
+    },
+    {
+      "title": "EPA — Phaseout of Class II Ozone-Depleting Substances (no production or import of HCFC-22 after 2020)",
+      "url": "https://www.epa.gov/ods-phaseout/phaseout-class-ii-ozone-depleting-substances"
+    },
+    {
+      "title": "EPA — Phaseout of Class I Ozone-Depleting Substances (production and import ban effective January 1, 1996)",
+      "url": "https://www.epa.gov/ods-phaseout/phaseout-class-i-ozone-depleting-substances"
+    }
+  ],
+  "studyTips": {
+    "studyOrder": "Study Core first, because every certification test includes the same 25 Core questions. In Core, begin with Clean Air Act and Section 608 Rules, the chapter with the largest share, and then learn the refrigeration cycle and the three Rs. After that, study the Type sections you need; for Universal, do Type II and Type III together because they cover the same topics for different equipment.",
+    "hardChapters": "In High-Pressure Recovery Requirements, the evacuation table is easy to mix up: the level depends on the pressure class, whether the charge is under or over 200 pounds, and whether the recovery equipment was made before or after November 15, 1993. In Small Appliance Recovery Rules, remember when 90 percent applies and when 80 percent applies. In the leak repair chapters, keep the three trigger rates (20, 30, and 10 percent) matched to the right type of equipment.",
+    "examDay": "Each section has 25 questions, and you need at least 18 correct in each one to reach 70 percent. Type II, Type III, and Universal tests are closed-book, so bring photo ID and nothing else to the testing desk. EPA sets no time limit, but your certifying organization may, so ask before you start and pace yourself across all sections."
+  }
 }

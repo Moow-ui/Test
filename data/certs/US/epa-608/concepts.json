@@ -1,0 +1,929 @@
+{
+  "by": "ai",
+  "chapters": {
+    "ozone-refrigerants": {
+      "summary": [
+        "This chapter explains why EPA controls refrigerants at all. You will learn how some refrigerants damage the ozone layer, how to tell the three main refrigerant families apart, and why even ozone-safe refrigerants still may not be vented. It also covers what to expect when a system is changed to a substitute refrigerant.",
+        "The ozone layer sits in the stratosphere and blocks much of the sun's ultraviolet (UV) light. CFCs and HCFCs are stable enough to drift up there, where strong UV light breaks them apart and frees chlorine. One chlorine atom can destroy many ozone molecules. Less ozone means more UV at ground level, which raises the risk of skin cancer and cataracts.",
+        "CFCs such as R-12 and R-11 contain chlorine and no hydrogen, so they have the highest ozone depletion potential (ODP). HCFCs such as R-22 and R-123 contain hydrogen too, so their ODP is lower. HFCs such as R-134a and R-410A contain no chlorine and have zero ODP, but many have a high global warming potential (GWP).",
+        "There is no true drop-in replacement for an older refrigerant. A retrofit may need a different oil, such as ester (POE) oil for HFCs instead of mineral or alkylbenzene oil. Some blends fractionate, which means their parts leak at different rates, so they are charged as a liquid."
+      ],
+      "concepts": [
+        {
+          "term": "CFC",
+          "definition": "Chlorofluorocarbon: a refrigerant made of chlorine, fluorine, and carbon, such as R-11 and R-12. It has the highest ozone depletion potential.",
+          "tip": "C-F-C: chlorine, no hydrogen. R-12 and R-11."
+        },
+        {
+          "term": "HCFC",
+          "definition": "Hydrochlorofluorocarbon: a refrigerant that contains hydrogen as well as chlorine, such as R-22 and R-123. It depletes ozone less than a CFC but still depletes it.",
+          "tip": "The H means it breaks down sooner. R-22, R-123."
+        },
+        {
+          "term": "HFC",
+          "definition": "Hydrofluorocarbon: a refrigerant with no chlorine, such as R-134a and R-410A. Its ozone depletion potential is zero, but many HFCs have a high global warming potential.",
+          "tip": "No chlorine, no ozone harm, but still no venting."
+        },
+        {
+          "term": "Ozone depletion potential (ODP)",
+          "definition": "A number comparing a chemical's harm to ozone with the harm from the same mass of CFC-11, which is set at 1.0.",
+          "tip": "Order: CFC > HCFC > HFC (zero)."
+        },
+        {
+          "term": "Fractionation",
+          "definition": "When the refrigerants in a blend leak or boil off at different rates, so the blend left behind no longer has its original makeup.",
+          "tip": "Fractionating blends: charge as a liquid."
+        },
+        {
+          "term": "Ester (POE) oil",
+          "definition": "A synthetic oil commonly used with HFC refrigerants such as R-134a. Older CFC and HCFC systems often use mineral or alkylbenzene oil.",
+          "tip": "HFC = ester oil; HCFC = often alkylbenzene.",
+          "source": {
+            "org": "EPA Section 608 Test Topics",
+            "year": 2026
+          }
+        }
+      ],
+      "points": [
+        "Chlorine is the ozone-destroying part of CFCs and HCFCs.",
+        "The ozone layer is in the stratosphere.",
+        "HFCs have zero ODP but many have high GWP, so venting them is still illegal.",
+        "There is no true drop-in substitute; retrofits may need an oil change.",
+        "Charge zeotropic (fractionating) blends as a liquid."
+      ],
+      "compare": {
+        "title": "Refrigerant families",
+        "columns": [
+          "Family",
+          "Contains chlorine?",
+          "Ozone depletion",
+          "Examples"
+        ],
+        "rows": [
+          [
+            "CFC",
+            "Yes",
+            "Highest",
+            "R-11, R-12"
+          ],
+          [
+            "HCFC",
+            "Yes",
+            "Lower",
+            "R-22, R-123"
+          ],
+          [
+            "HFC",
+            "No",
+            "Zero",
+            "R-134a, R-410A"
+          ]
+        ]
+      }
+    },
+    "clean-air-act-rules": {
+      "summary": [
+        "This chapter covers the laws behind Section 608. It explains the Montreal Protocol and the U.S. phaseout dates, the venting prohibition, who may buy refrigerant, when recovered refrigerant must be reclaimed, and which certification type each job needs. It ends with records, penalties, and the newer HFC leak repair rule.",
+        "The Montreal Protocol is the international treaty that phases out ozone-depleting substances. In the United States, production and import of CFCs ended on January 1, 1996, and production and import of R-22 ended in 2020. Existing refrigerant can still be used for service if it was made earlier or has been recovered and recycled or reclaimed.",
+        "No one may knowingly vent CFC, HCFC, or non-exempt substitute refrigerants such as HFCs while servicing or disposing of equipment. Only small de minimis releases during proper recovery are allowed. Refrigerant may be sold only to certified technicians or their employers, with a few exceptions such as small cans for car air conditioning. Used refrigerant sold to a new owner must be reclaimed by a certified reclaimer.",
+        "Type I covers small appliances, Type II covers high- and medium-pressure appliances, Type III covers low-pressure appliances, and Universal covers all three. Certification does not expire. Clean Air Act penalties are counted per day for each violation. Since January 1, 2026, a separate EPA rule (40 CFR Part 84) also requires leak repair on many appliances with 15 pounds or more of high-GWP HFC refrigerant."
+      ],
+      "concepts": [
+        {
+          "term": "Venting prohibition",
+          "definition": "The rule that no one maintaining, servicing, repairing, or disposing of an appliance may knowingly release CFC, HCFC, or non-exempt substitute refrigerant into the air.",
+          "tip": "No knowing release, at service or at disposal.",
+          "source": {
+            "org": "40 CFR 82.154(a) (EPA Section 608 rules)",
+            "year": 2026
+          }
+        },
+        {
+          "term": "De minimis release",
+          "definition": "A small release that happens during a good-faith attempt to recover refrigerant while following the required practices, such as when connecting or disconnecting hoses.",
+          "tip": "Tiny and unavoidable is OK; on purpose is not.",
+          "source": {
+            "org": "40 CFR 82.154(a)(2) (EPA Section 608 rules)",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Sales restriction",
+          "definition": "CFC, HCFC, and non-exempt substitute refrigerants may be sold only to certified technicians or to buyers who employ one, with exceptions such as MVAC cans of 2 pounds or less with a self-sealing valve.",
+          "tip": "No card, no cylinder.",
+          "source": {
+            "org": "40 CFR 82.154(c) (EPA Section 608 rules)",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Phaseout dates",
+          "definition": "Production and import of CFCs ended on January 1, 1996. Production and import of HCFC-22 (R-22) ended in 2020. All remaining HCFC production and import ends in 2030.",
+          "tip": "CFC 1996, R-22 2020.",
+          "source": {
+            "org": "EPA ODS phaseout pages (Clean Air Act Title VI)",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Certification types",
+          "definition": "Type I: small appliances. Type II: medium-, high-, and very high-pressure appliances. Type III: low-pressure appliances. Universal: all three. Certification does not expire.",
+          "tip": "I small, II high, III low.",
+          "source": {
+            "org": "40 CFR 82.161 (EPA Section 608 rules)",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Reclaimed refrigerant",
+          "definition": "Refrigerant reprocessed to the purity specifications in Appendix A (based on AHRI Standard 700) and verified by analysis. Required before used refrigerant is sold to a new owner.",
+          "tip": "New owner = reclaim first.",
+          "source": {
+            "org": "40 CFR 82.152, 82.154(d) (EPA Section 608 rules)",
+            "year": 2026
+          }
+        },
+        {
+          "term": "HFC leak repair (Part 84)",
+          "definition": "Since January 1, 2026, appliances with 15 pounds or more of refrigerant containing an HFC with a GWP above 53 must repair leaks above set rates. Residential and light commercial air conditioning is excluded.",
+          "tip": "Part 82: 50 lb ODS. Part 84: 15 lb HFC.",
+          "source": {
+            "org": "40 CFR 84.106 (AIM Act Emissions Reduction and Reclamation rule)",
+            "year": 2026
+          }
+        }
+      ],
+      "points": [
+        "Venting CFCs, HCFCs, and HFCs during service or disposal is illegal.",
+        "Nitrogen, carbon dioxide, and water may be released.",
+        "Refrigerant can go back into the same owner's equipment without reclaiming.",
+        "Keep a copy of your certificate at your place of business.",
+        "Disposal records for appliances with more than 5 and less than 50 pounds: keep 3 years.",
+        "Clean Air Act penalties are counted per day, per violation."
+      ]
+    },
+    "refrigeration-cycle": {
+      "summary": [
+        "This chapter reviews how a refrigeration system moves heat and how technicians measure and handle the refrigerant in it. You will follow the refrigerant around the cycle, read manifold gauges, change gauge pressure to absolute pressure, and learn the difference between recover, recycle, and reclaim.",
+        "The compressor squeezes low-pressure vapor into high-pressure vapor. In the condenser the vapor gives off heat and becomes a high-pressure liquid. The metering device drops the pressure, and in the evaporator the low-pressure refrigerant boils and absorbs heat. It returns to the compressor as a low-pressure vapor. The part from the compressor to the metering device is the high side; the rest is the low side.",
+        "On a manifold, the blue compound gauge and hose connect to the low side, the red gauge and hose to the high side, and the yellow center hose to the recovery machine, vacuum pump, or cylinder. A compound gauge reads both pressure and vacuum. To change gauge pressure (psig) to absolute pressure (psia), add 14.7.",
+        "To recover is to remove refrigerant and store it. To recycle is to clean it for reuse by the same owner. To reclaim is to bring it to new-product purity and prove it by testing. Shorter, wider hoses speed recovery, and refrigerants must never be mixed. After a repair, the system is evacuated to remove air and moisture before charging."
+      ],
+      "concepts": [
+        {
+          "term": "Compressor",
+          "definition": "The part that draws in low-pressure refrigerant vapor and pumps it out as high-pressure, high-temperature vapor.",
+          "tip": "Low-pressure vapor in, high-pressure vapor out."
+        },
+        {
+          "term": "Condenser",
+          "definition": "The coil where high-pressure vapor gives off heat and condenses into a high-pressure liquid.",
+          "tip": "Heat out, vapor becomes liquid."
+        },
+        {
+          "term": "Metering device",
+          "definition": "The part, such as an expansion valve or capillary tube, that drops the refrigerant's pressure before it enters the evaporator.",
+          "tip": "High side ends here; low side begins."
+        },
+        {
+          "term": "Evaporator",
+          "definition": "The coil where low-pressure liquid refrigerant boils into vapor and absorbs heat from the air or water being cooled.",
+          "tip": "Heat in, liquid becomes vapor."
+        },
+        {
+          "term": "Manifold gauge colors",
+          "definition": "Blue gauge and hose for the low side, red for the high side, and yellow for the center hose to the recovery machine, vacuum pump, or cylinder.",
+          "tip": "Blue low, red high, yellow center.",
+          "source": {
+            "org": "EPA Section 608 Test Topics",
+            "year": 2026
+          }
+        },
+        {
+          "term": "psig and psia",
+          "definition": "Gauge pressure (psig) reads zero at normal air pressure. Absolute pressure (psia) counts from a perfect vacuum, so psia equals psig plus 14.7.",
+          "tip": "Add 14.7 to go from psig to psia.",
+          "source": {
+            "org": "EPA Section 608 Test Topics",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Recover, recycle, reclaim",
+          "definition": "Recover: remove and store. Recycle: clean for reuse by the same owner without full testing. Reclaim: reprocess to AHRI 700-based purity and verify by analysis.",
+          "tip": "Only reclaimed refrigerant may go to a new owner.",
+          "source": {
+            "org": "40 CFR 82.152 (EPA Section 608 rules)",
+            "year": 2026
+          }
+        }
+      ],
+      "points": [
+        "The evaporator absorbs heat; the condenser gives it off.",
+        "Refrigerant leaves the condenser as a high-pressure liquid.",
+        "Refrigerant enters the compressor as a low-pressure vapor.",
+        "Dehydration evacuation removes air and moisture before charging.",
+        "Air (noncondensables) in a system raises head pressure.",
+        "Never mix different refrigerants in one recovery cylinder."
+      ],
+      "figures": [
+        {
+          "image": "refrigeration-cycle-overview.svg",
+          "alt": "Refrigeration loop: compressor on the right, condenser at the top with heat out, metering device on the left, evaporator at the bottom with heat in. Labels show high-pressure vapor, high-pressure liquid, low-pressure liquid plus vapor, and low-pressure vapor. A dashed line splits high and low sides.",
+          "caption": "Refrigerant states around the refrigeration cycle",
+          "source": {
+            "kind": "self"
+          }
+        }
+      ]
+    },
+    "safety-shipping": {
+      "summary": [
+        "This chapter covers how to protect yourself and others when handling refrigerant and cylinders. It explains the health risks of refrigerant, the protective equipment to wear, how to tell recovery cylinders from disposable ones, safe filling, safe leak testing, and how to label cylinders for shipping.",
+        "Most refrigerant vapor is heavier than air, so a large leak in a basement or closed room can push out oxygen and cause suffocation. Breathing high levels can also cause an irregular heartbeat. Liquid refrigerant can cause frostbite, so wear gloves and safety glasses. A self-contained breathing apparatus (SCBA) is for extreme cases such as a large leak in an enclosed area.",
+        "Recovery cylinders are refillable, DOT-approved, and painted gray with a yellow top. Never fill one more than 80 percent full of liquid, because the liquid expands as it warms. Disposable cylinders must never be refilled. Never heat a cylinder with an open flame.",
+        "Pressurize for leak tests with nitrogen, never oxygen or compressed air, and always use a pressure regulator and a relief valve. Before shipping, label the cylinder with the refrigerant type and the DOT hazard classification."
+      ],
+      "concepts": [
+        {
+          "term": "Recovery cylinder",
+          "definition": "A refillable, DOT-approved cylinder for recovered refrigerant, painted with a gray body and a yellow top.",
+          "tip": "Gray and yellow = recovery.",
+          "source": {
+            "org": "EPA Section 608 Test Topics",
+            "year": 2026
+          }
+        },
+        {
+          "term": "80 percent fill limit",
+          "definition": "A recovery cylinder should be filled no more than 80 percent full of liquid so there is room for the liquid to expand when it warms.",
+          "tip": "Use a scale or float switch; stop at 80%.",
+          "source": {
+            "org": "EPA Section 608 Test Topics",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Disposable cylinder",
+          "definition": "A one-trip cylinder for new refrigerant. It must never be refilled, and any refrigerant left inside must be recovered.",
+          "tip": "Disposable = never refill."
+        },
+        {
+          "term": "Nitrogen leak testing",
+          "definition": "Use dry nitrogen through a pressure regulator with a relief valve to pressurize a system for a leak test. Never use oxygen or compressed air.",
+          "tip": "Oxygen + oil = explosion risk.",
+          "source": {
+            "org": "EPA Section 608 Test Topics",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Oxygen deprivation",
+          "definition": "Refrigerant vapor is heavier than air and can displace oxygen in low or closed spaces, causing dizziness, unconsciousness, or death.",
+          "tip": "Big leak indoors: ventilate, SCBA if needed."
+        },
+        {
+          "term": "Shipping labels",
+          "definition": "A refrigerant cylinder being shipped must be labeled with the type of refrigerant and the Department of Transportation (DOT) hazard classification.",
+          "tip": "Name the refrigerant + DOT tag.",
+          "source": {
+            "org": "EPA Section 608 Test Topics",
+            "year": 2026
+          }
+        }
+      ],
+      "points": [
+        "Wear gloves and safety glasses; liquid refrigerant causes frostbite.",
+        "High vapor levels can cause irregular heartbeat.",
+        "Never heat a cylinder with an open flame.",
+        "SCBA is for large leaks in enclosed spaces."
+      ]
+    },
+    "small-appliance-rules": {
+      "summary": [
+        "This chapter covers the rules for small appliances, the equipment Type I technicians work on. You will learn what counts as a small appliance, how much refrigerant must be recovered, the special rules for Type I tests, and what happens to refrigerant when old appliances are scrapped.",
+        "A small appliance is fully built, charged, and hermetically sealed in a factory with 5 pounds of refrigerant or less. Examples are household refrigerators and freezers, window air conditioners, dehumidifiers, water coolers, and vending machines. A split system charged in the field is not a small appliance.",
+        "With recovery equipment made on or after November 15, 1993, recover 90 percent of the refrigerant if the appliance's compressor works, or 80 percent if it does not. With older equipment, recover 80 percent. Evacuating to 4 inches of mercury vacuum also meets the rule. Recovery equipment must be certified.",
+        "A Type I-only test may be given by mail. It needs 84 percent to pass and cannot count toward Universal. People who only dispose of small appliances do not need certification, but the refrigerant must still be recovered. The final processor, such as a scrap yard, must recover the refrigerant or keep signed statements for three years."
+      ],
+      "concepts": [
+        {
+          "term": "Small appliance",
+          "definition": "An appliance fully manufactured, charged, and hermetically sealed in a factory with 5 pounds of refrigerant or less.",
+          "tip": "Factory-sealed and 5 lb or less.",
+          "source": {
+            "org": "40 CFR 82.152 (EPA Section 608 rules)",
+            "year": 2026
+          }
+        },
+        {
+          "term": "90 percent rule",
+          "definition": "With recovery equipment made on or after November 15, 1993, recover 90 percent of the refrigerant when the small appliance's compressor works.",
+          "tip": "New machine + working compressor = 90%.",
+          "source": {
+            "org": "40 CFR 82.156(b) (EPA Section 608 rules)",
+            "year": 2026
+          }
+        },
+        {
+          "term": "80 percent rule",
+          "definition": "Recover 80 percent when the compressor does not work, or when using recovery equipment made before November 15, 1993.",
+          "tip": "Dead compressor or old machine = 80%.",
+          "source": {
+            "org": "40 CFR 82.156(b) (EPA Section 608 rules)",
+            "year": 2026
+          }
+        },
+        {
+          "term": "4-inch vacuum option",
+          "definition": "Instead of proving a percentage, a technician may evacuate a small appliance to 4 inches of mercury vacuum.",
+          "tip": "Small appliance: 4 in. Hg vacuum also OK.",
+          "source": {
+            "org": "40 CFR 82.156(b)(3) (EPA Section 608 rules)",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Final processor",
+          "definition": "The last person in the disposal chain, such as a scrap recycler or landfill. They must recover leftover refrigerant or get a signed statement or contract, and keep it 3 years.",
+          "tip": "Scrap yard: recover or get it in writing.",
+          "source": {
+            "org": "40 CFR 82.155 (EPA Section 608 rules)",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Mail-in Type I test",
+          "definition": "A Type I-only test may be given in a mail-in format. The passing score is 84 percent, and it cannot be used toward Universal certification.",
+          "tip": "Mail-in: 84%, no Universal.",
+          "source": {
+            "org": "40 CFR Part 82, Subpart F, Appendix D",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Process stub",
+          "definition": "A short length of tubing on a small appliance that gives access to the refrigerant and can be resealed after service. Small appliances must have one.",
+          "tip": "Small appliances come with a process stub.",
+          "source": {
+            "org": "40 CFR 82.152, 82.154(e) (EPA Section 608 rules)",
+            "year": 2026
+          }
+        }
+      ],
+      "points": [
+        "Window air conditioners and household refrigerators are small appliances.",
+        "A signed statement names who recovered the refrigerant, their address, and the date.",
+        "If all refrigerant leaked out, the final processor needs a signed statement saying so.",
+        "Type I certification is needed to service small appliances."
+      ],
+      "compare": {
+        "title": "Small appliance recovery requirements",
+        "columns": [
+          "Recovery equipment made",
+          "Compressor works",
+          "Compressor does not work"
+        ],
+        "rows": [
+          [
+            "Before Nov. 15, 1993",
+            "80%",
+            "80%"
+          ],
+          [
+            "On or after Nov. 15, 1993",
+            "90%",
+            "80%"
+          ],
+          [
+            "Either (alternative)",
+            "4 in. Hg vacuum",
+            "4 in. Hg vacuum"
+          ]
+        ]
+      }
+    },
+    "small-appliance-techniques": {
+      "summary": [
+        "This chapter covers how Type I technicians actually get refrigerant out of small appliances and how they stay safe while doing it. It compares self-contained and system-dependent recovery, explains how to handle a compressor that works or does not, and covers access valves, identifying refrigerants, and heat and fire hazards.",
+        "Self-contained (active) recovery equipment has its own compressor. System-dependent (passive) equipment relies on the appliance's compressor or pressure, and it may not be used on appliances with more than 15 pounds. If the appliance's compressor works, run it during passive recovery. If it does not, install access valves on both the high and low sides, and warm and sharply tap the compressor to free refrigerant from the oil. A vacuum pump may be used only with a non-pressurized container.",
+        "Solderless piercing valves tend to leak, so remove them when service is done. Read the nameplate to identify the refrigerant, and compare pressure and temperature with a PT chart. A pressure above the chart value points to air or other noncondensables. R-134a is the common replacement for R-12 in household refrigerators.",
+        "Refrigerant exposed to a flame or very hot surface can break down into toxic and corrosive gases, so recover it before brazing and keep the area ventilated. Hydrocarbon refrigerants such as isobutane (R-600a) are flammable, so keep sparks and flames away."
+      ],
+      "concepts": [
+        {
+          "term": "Self-contained recovery",
+          "definition": "Recovery equipment with its own compressor or pump that can remove refrigerant without help from the appliance.",
+          "tip": "Active = has its own compressor.",
+          "source": {
+            "org": "40 CFR 82.152 (EPA Section 608 rules)",
+            "year": 2026
+          }
+        },
+        {
+          "term": "System-dependent recovery",
+          "definition": "Passive recovery equipment that needs the appliance's own compressor or pressure. It may not be used on appliances with a full charge over 15 pounds.",
+          "tip": "Passive: 15 lb maximum.",
+          "source": {
+            "org": "40 CFR 82.152, 82.156(e) (EPA Section 608 rules)",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Access valves on both sides",
+          "definition": "When a small appliance's compressor does not work and passive recovery is used, access valves are installed on both the high and low sides.",
+          "tip": "Dead compressor: tap both sides.",
+          "source": {
+            "org": "EPA Section 608 Test Topics",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Piercing access valve",
+          "definition": "A solderless valve clamped onto tubing to reach the refrigerant. It tends to leak over time and should be removed after service.",
+          "tip": "Temporary only; take it off."
+        },
+        {
+          "term": "Noncondensables",
+          "definition": "Air and other gases that do not condense in the system. They make pressure read higher than the PT chart value for the temperature.",
+          "tip": "Pressure above chart = air inside.",
+          "source": {
+            "org": "EPA Section 608 Test Topics",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Decomposition",
+          "definition": "When refrigerant is heated by a flame or hot surface, it can break down into toxic and corrosive gases such as hydrochloric and hydrofluoric acid.",
+          "tip": "Recover before brazing.",
+          "source": {
+            "org": "EPA Section 608 Test Topics",
+            "year": 2026
+          }
+        }
+      ],
+      "points": [
+        "Working compressor with passive recovery: run it.",
+        "Warm and tap a dead compressor to release refrigerant from the oil.",
+        "Vacuum pump only with a non-pressurized container.",
+        "R-134a replaced R-12 in household refrigerators.",
+        "R-600a (isobutane) is flammable."
+      ]
+    },
+    "high-pressure-leaks": {
+      "summary": [
+        "This chapter covers finding and fixing leaks in high-pressure equipment and the leak repair rules for large appliances. It explains common signs of leaks, which gas to use for a leak test, the trigger leak rates, repair and testing deadlines, inspections, and records.",
+        "Oil traces around joints and fittings and excessive superheat are common signs of a leak. Always leak test before charging. Nitrogen alone is the best test gas; nitrogen with a trace of R-22 is next, and both are better than pure refrigerant.",
+        "Under 40 CFR 82.157, appliances with 50 pounds or more of CFC or HCFC refrigerant must be repaired when the yearly leak rate is over 20 percent for commercial refrigeration, 30 percent for industrial process refrigeration, or 10 percent for comfort cooling and others. Since January 1, 2026, 40 CFR Part 84 applies the same rates to many appliances with 15 pounds or more of high-GWP HFC refrigerant.",
+        "Leaks must be repaired within 30 days, or 120 days if an industrial process shutdown is needed, and confirmed by an initial and a follow-up verification test. An owner who will not repair must make a retrofit or retirement plan within 30 days and finish it within a year. The leak rate is calculated each time refrigerant is added, and records are kept at least 3 years."
+      ],
+      "concepts": [
+        {
+          "term": "Trigger leak rates",
+          "definition": "For appliances with 50 lb or more of ODS refrigerant: 20% commercial refrigeration, 30% industrial process refrigeration, 10% comfort cooling and other appliances, per 12 months.",
+          "tip": "Commercial 20, industrial 30, comfort 10.",
+          "source": {
+            "org": "40 CFR 82.157(c) (EPA Section 608 rules)",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Repair deadline",
+          "definition": "Leaks must be repaired within 30 days of adding refrigerant to an appliance over its trigger rate, or 120 days if an industrial process shutdown is required.",
+          "tip": "30 days; 120 with a shutdown.",
+          "source": {
+            "org": "40 CFR 82.157(d) (EPA Section 608 rules)",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Verification tests",
+          "definition": "An initial verification test confirms the repair before refrigerant is added back. A follow-up test is done within 10 days of the initial test or of reaching normal operating conditions.",
+          "tip": "Initial, then follow-up within 10 days.",
+          "source": {
+            "org": "40 CFR 82.157(e) (EPA Section 608 rules)",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Retrofit or retirement plan",
+          "definition": "If the owner will retrofit or retire instead of repair, a written plan is made within 30 days and the work is finished within one year of the plan's date.",
+          "tip": "Plan in 30 days, done in 1 year.",
+          "source": {
+            "org": "40 CFR 82.157(h) (EPA Section 608 rules)",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Chronically leaking appliance",
+          "definition": "An appliance with 50 lb or more that leaks 125% or more of its full charge in a calendar year. The owner must report to EPA by March 1 of the next year.",
+          "tip": "125% → report by March 1.",
+          "source": {
+            "org": "40 CFR 82.157(j) (EPA Section 608 rules)",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Leak inspections",
+          "definition": "After exceeding the rate, commercial and industrial appliances with 500 lb or more are inspected quarterly; smaller ones and comfort cooling, once per calendar year.",
+          "tip": "500 lb+: quarterly; others: yearly.",
+          "source": {
+            "org": "40 CFR 82.157(g) (EPA Section 608 rules)",
+            "year": 2026
+          }
+        },
+        {
+          "term": "HFC leak repair (Part 84)",
+          "definition": "Since January 1, 2026, appliances with 15 lb or more of refrigerant containing an HFC with a GWP above 53 follow the same 20/30/10 percent rates. Residential and light commercial AC is excluded.",
+          "tip": "HFC threshold is 15 lb, not 50.",
+          "source": {
+            "org": "40 CFR 84.106",
+            "year": 2026
+          }
+        }
+      ],
+      "points": [
+        "Signs of a leak: oil traces and excessive superheat.",
+        "Leak test with nitrogen before charging.",
+        "Calculate the leak rate each time refrigerant is added.",
+        "Leak repair records: keep at least 3 years."
+      ],
+      "compare": {
+        "title": "Trigger leak rates (per 12 months)",
+        "columns": [
+          "Appliance type",
+          "Leak rate"
+        ],
+        "rows": [
+          [
+            "Commercial refrigeration",
+            "20%"
+          ],
+          [
+            "Industrial process refrigeration",
+            "30%"
+          ],
+          [
+            "Comfort cooling and other appliances",
+            "10%"
+          ]
+        ]
+      }
+    },
+    "high-pressure-recovery": {
+      "summary": [
+        "This chapter covers how far high- and medium-pressure appliances must be evacuated before they are opened, and how to recover refrigerant quickly and cleanly. The required level depends on the appliance's pressure class, whether the charge is under or over 200 pounds, and when the recovery equipment was made.",
+        "With recovery equipment made on or after November 15, 1993, a high-pressure appliance under 200 pounds must reach 0 inches of mercury, and one with 200 pounds or more must reach 10 inches of mercury vacuum. Medium-pressure appliances need 10 inches under 200 pounds and 15 inches at 200 pounds or more. With older equipment, the levels are 0 or 4 inches. Very high-pressure appliances need 0 inches.",
+        "A non-major repair that is not followed by evacuation to the air needs only 0 psig, and an oil change needs 5 psig or less. A major repair removes the compressor, condenser, evaporator, or auxiliary heat exchange coil, or leaves an opening of more than 4 square inches open for more than 15 minutes. If leaks prevent reaching the level, isolate leaking parts and evacuate them as low as possible, no higher than 0 psig.",
+        "Recover liquid first, chill the recovery cylinder, or warm the appliance to speed recovery. After reaching the level, wait a few minutes; a pressure rise means refrigerant is still there. System-dependent equipment may not be used on appliances over 15 pounds. Clear the machine and change the filter before switching refrigerants."
+      ],
+      "concepts": [
+        {
+          "term": "Evacuation table",
+          "definition": "The required level before opening or disposal depends on pressure class, charge size (under or over 200 lb), and whether the recovery equipment was made before or after November 15, 1993.",
+          "tip": "Class, size, machine date.",
+          "source": {
+            "org": "40 CFR 82.156 Table 1 (EPA Section 608 rules)",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Major repair",
+          "definition": "Removing the compressor, condenser, evaporator, or auxiliary heat exchange coil, or uncovering an opening of more than 4 square inches of flow area for more than 15 minutes.",
+          "tip": "Big parts out = major.",
+          "source": {
+            "org": "40 CFR 82.152 (EPA Section 608 rules)",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Non-major repair level",
+          "definition": "If a repair is not major and is not followed by evacuation to the air, medium-, high-, and very high-pressure appliances need only be evacuated to 0 psig.",
+          "tip": "Non-major: 0 psig.",
+          "source": {
+            "org": "40 CFR 82.156(a)(1) (EPA Section 608 rules)",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Leaky system rule",
+          "definition": "If leaks prevent reaching the required level, isolate leaking parts, evacuate non-leaking parts normally, and evacuate leaking parts as low as possible, no higher than 0 psig.",
+          "tip": "Leaking: as low as you can, max 0 psig.",
+          "source": {
+            "org": "40 CFR 82.156(a)(2) (EPA Section 608 rules)",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Oil change level",
+          "definition": "Before opening for an oil change, the appliance or the isolated oil must be at no higher than 5 psig.",
+          "tip": "Oil change: 5 psig.",
+          "source": {
+            "org": "40 CFR 82.156(a)(1)(iii) (EPA Section 608 rules)",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Speeding recovery",
+          "definition": "Recover liquid first, chill the recovery cylinder, or heat the appliance (never with a flame) to raise the pressure difference.",
+          "tip": "Liquid first; cold cylinder, warm system.",
+          "source": {
+            "org": "EPA Section 608 Test Topics",
+            "year": 2026
+          }
+        }
+      ],
+      "points": [
+        "Wait a few minutes after reaching the level; a pressure rise means refrigerant remains.",
+        "System-dependent recovery: not over 15 pounds.",
+        "You may evacuate only an isolated part if its refrigerant is held in the receiver.",
+        "Clear the recovery machine and change the filter between refrigerants."
+      ],
+      "compare": {
+        "title": "Evacuation levels (inches of Hg vacuum)",
+        "columns": [
+          "Appliance",
+          "Equipment before Nov. 15, 1993",
+          "Equipment on or after Nov. 15, 1993"
+        ],
+        "rows": [
+          [
+            "Very high-pressure",
+            "0",
+            "0"
+          ],
+          [
+            "High-pressure, under 200 lb",
+            "0",
+            "0"
+          ],
+          [
+            "High-pressure, 200 lb or more",
+            "4",
+            "10"
+          ],
+          [
+            "Medium-pressure, under 200 lb",
+            "4",
+            "10"
+          ],
+          [
+            "Medium-pressure, 200 lb or more",
+            "4",
+            "15"
+          ],
+          [
+            "Low-pressure",
+            "25 mm Hg absolute",
+            "25 mm Hg absolute"
+          ]
+        ]
+      }
+    },
+    "high-pressure-systems": {
+      "summary": [
+        "This chapter covers the equipment and refrigerants Type II technicians work with and the safety points that go with them. It explains the pressure classes, the main system parts and the refrigerant state in each, how to identify a refrigerant, and why some actions can damage equipment.",
+        "EPA classes appliances by the refrigerant's liquid saturation pressure at 104°F. High-pressure refrigerants (170 to 355 psia) include R-22, R-407C, and R-410A. Medium-pressure (45 to 170 psia) includes R-134a and R-12. Very high-pressure includes R-23 and R-13. Type II covers all three of these classes.",
+        "The receiver stores high-pressure liquid after the condenser. The accumulator in the suction line keeps liquid away from the compressor. The suction line carries low-pressure vapor and the discharge line carries high-pressure vapor. Read the nameplate to identify the refrigerant, and add 14.7 to a gauge reading before using a PT chart in psia.",
+        "Never start a hermetic compressor while the system is in a deep vacuum, because the motor windings can be damaged. Hydrocarbons are not approved for retrofitting these systems. Under ASHRAE Standard 15, equipment rooms need a refrigerant or oxygen-deprivation sensor with an alarm."
+      ],
+      "concepts": [
+        {
+          "term": "High-pressure appliance",
+          "definition": "An appliance using a refrigerant with a liquid saturation pressure between 170 and 355 psia at 104°F, such as R-22, R-407A, R-407C, R-410A, and R-502.",
+          "tip": "R-22 and R-410A = high.",
+          "source": {
+            "org": "40 CFR 82.152 (EPA Section 608 rules)",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Medium-pressure appliance",
+          "definition": "An appliance using a refrigerant with a liquid saturation pressure between 45 and 170 psia at 104°F, such as R-12, R-114, R-124, R-134a, and R-500.",
+          "tip": "R-134a = medium (Type II).",
+          "source": {
+            "org": "40 CFR 82.152 (EPA Section 608 rules)",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Very high-pressure appliance",
+          "definition": "An appliance using a refrigerant with a critical temperature below 104°F or a liquid saturation pressure above 355 psia at 104°F, such as R-13, R-23, and R-503.",
+          "tip": "R-23, R-13 = very high.",
+          "source": {
+            "org": "40 CFR 82.152 (EPA Section 608 rules)",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Receiver",
+          "definition": "A tank on the high side, after the condenser, that stores high-pressure liquid refrigerant.",
+          "tip": "Receiver = liquid storage."
+        },
+        {
+          "term": "Accumulator",
+          "definition": "A tank in the suction line that traps liquid refrigerant so only vapor reaches the compressor.",
+          "tip": "Accumulator protects the compressor."
+        },
+        {
+          "term": "Hermetic compressor under vacuum",
+          "definition": "A hermetic compressor should never be energized while the system is in a deep vacuum, because the motor windings can be damaged.",
+          "tip": "No power under vacuum.",
+          "source": {
+            "org": "EPA Section 608 Test Topics",
+            "year": 2026
+          }
+        }
+      ],
+      "points": [
+        "Identify the refrigerant from the nameplate.",
+        "psia = psig + 14.7 when using a PT chart in absolute pressure.",
+        "Hydrocarbons are not approved for retrofits.",
+        "ASHRAE 15 equipment rooms need a refrigerant or oxygen-deprivation sensor."
+      ]
+    },
+    "low-pressure-leaks": {
+      "summary": [
+        "This chapter covers leaks in low-pressure chillers, which behave differently from leaks in other systems. You will learn why air gets in instead of refrigerant getting out, how to spot a leak, how to raise pressure safely for a leak test, and the leak repair rules for large chillers.",
+        "Low-pressure refrigerants such as R-11, R-123, and R-113 have a liquid saturation pressure below 45 psia at 104°F. Much of a running low-pressure chiller is below atmospheric pressure, so a leak lets air and moisture in. A purge unit that runs much more than usual is a key sign of a leak.",
+        "To leak test, raise the pressure first with controlled hot water or a built-in heating device, and use nitrogen only if needed. Do not go above 10 psig, because the rupture disc is usually set at 15 psig.",
+        "Chillers with 50 pounds or more of an ozone-depleting refrigerant such as R-123 must be repaired when the yearly leak rate is over 10 percent for comfort cooling or 30 percent for industrial process refrigeration. After exceeding the rate, comfort cooling chillers need a leak inspection once per calendar year. Leaking 125 percent or more of the charge in a year must be reported to EPA by March 1."
+      ],
+      "concepts": [
+        {
+          "term": "Low-pressure appliance",
+          "definition": "An appliance using a refrigerant with a liquid saturation pressure below 45 psia at 104°F, such as R-11, R-123, R-113, and R-245fa.",
+          "tip": "R-11, R-123, R-113 = low.",
+          "source": {
+            "org": "40 CFR 82.152 (EPA Section 608 rules)",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Leaks let air in",
+          "definition": "Parts of a running low-pressure chiller are below atmospheric pressure, so leaks pull air and moisture into the system instead of letting refrigerant out.",
+          "tip": "Excessive purging = leak."
+        },
+        {
+          "term": "Leak test pressurizing",
+          "definition": "Preferred: controlled hot water or a built-in heating/pressurization device. Next: nitrogen. Do not exceed 10 psig.",
+          "tip": "Heat first, nitrogen second, 10 psig max.",
+          "source": {
+            "org": "EPA Section 608 Test Topics",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Trigger leak rates",
+          "definition": "For appliances with 50 lb or more of ODS refrigerant: 10% comfort cooling, 30% industrial process refrigeration, 20% commercial refrigeration, per 12 months.",
+          "tip": "Comfort chiller: 10%.",
+          "source": {
+            "org": "40 CFR 82.157(c) (EPA Section 608 rules)",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Automatic leak detection",
+          "definition": "A system that senses refrigerant in air can replace periodic inspections if it detects 10 ppm, alerts at 100 ppm, and is audited or calibrated every year.",
+          "tip": "Detect 10 ppm, alarm at 100 ppm.",
+          "source": {
+            "org": "40 CFR 82.157(g)(4) (EPA Section 608 rules)",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Chronic leak report",
+          "definition": "Owners of appliances with 50 lb or more that leak 125% or more of the full charge in a calendar year must report to EPA by March 1 of the next year.",
+          "tip": "125% → March 1 report.",
+          "source": {
+            "org": "40 CFR 82.157(j) (EPA Section 608 rules)",
+            "year": 2026
+          }
+        }
+      ],
+      "points": [
+        "Rupture disc is usually set at 15 psig, so leak test at 10 psig or less.",
+        "Comfort cooling inspections after exceeding the rate: once per calendar year.",
+        "Leaks must be repaired within 30 days (120 with an industrial process shutdown).",
+        "When a chiller is pressurized above atmosphere, a leak pushes refrigerant out."
+      ]
+    },
+    "low-pressure-recovery": {
+      "summary": [
+        "This chapter covers how to remove refrigerant from a low-pressure chiller and how to recharge it without damage. It explains the required evacuation level, the order for recovering liquid and vapor, how to protect the tubes from freezing, how to handle oil, and how to pressurize for small repairs.",
+        "Low-pressure appliances must be evacuated to 25 mm Hg absolute, which is about 29 inches of mercury vacuum. The level is the same with older and newer recovery equipment. Recover the liquid first, then the vapor, because a large chiller holds a lot of refrigerant as vapor. Keep water moving through the tubes or drain it so it does not freeze, and heat the oil to 130°F before draining it.",
+        "For a non-major repair, the chiller is raised to 0 psig before opening. Use heat to raise the pressure; nitrogen may be added after heat only for refrigerants that boil above 85°F, such as R-113. After reaching the required vacuum, wait a few minutes; if pressure rises, keep recovering. Recovery devices for low-pressure use commonly cut out at about 10 psig.",
+        "When recharging after evacuation, add vapor first so the water in the tubes does not freeze, and then add liquid. Centrifugal chillers are charged through the evaporator charging valve."
+      ],
+      "concepts": [
+        {
+          "term": "25 mm Hg absolute",
+          "definition": "The required evacuation level for low-pressure appliances before major repair or disposal, for both older and newer recovery equipment.",
+          "tip": "Low-pressure: 25 mm Hg absolute (about 29 in. Hg vacuum).",
+          "source": {
+            "org": "40 CFR 82.156 Table 1 (EPA Section 608 rules)",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Liquid, then vapor",
+          "definition": "Recover liquid first to move most of the refrigerant quickly, then recover the large amount of vapor left in the shell.",
+          "tip": "Don't stop after the liquid.",
+          "source": {
+            "org": "EPA Section 608 Test Topics",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Tube freezing",
+          "definition": "As pressure drops, refrigerant gets very cold. Water in the tubes must be circulated or drained during recovery, and vapor must be charged first when recharging.",
+          "tip": "Keep water moving; vapor first.",
+          "source": {
+            "org": "EPA Section 608 Test Topics",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Heating oil to 130°F",
+          "definition": "Oil holds dissolved refrigerant. Heating it to 130°F before draining drives out more refrigerant.",
+          "tip": "Warm oil gives up refrigerant.",
+          "source": {
+            "org": "EPA Section 608 Test Topics",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Non-major repair pressurizing",
+          "definition": "Raise a low-pressure appliance to 0 psig before opening. Use heat. Nitrogen may be added after heat only if the refrigerant boils above 85°F at atmospheric pressure (for example R-113).",
+          "tip": "Heat, not nitrogen, for R-11 and R-123.",
+          "source": {
+            "org": "40 CFR 82.156(a)(1)(ii) (EPA Section 608 rules)",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Major repair",
+          "definition": "Removing the compressor, condenser, evaporator, or auxiliary heat exchange coil, or leaving an opening of more than 4 square inches of flow area for more than 15 minutes.",
+          "tip": "4 sq in. for 15 minutes = major.",
+          "source": {
+            "org": "40 CFR 82.152 (EPA Section 608 rules)",
+            "year": 2026
+          }
+        }
+      ],
+      "points": [
+        "A pressure rise after reaching the vacuum means refrigerant remains.",
+        "Charge centrifugal chillers through the evaporator charging valve.",
+        "Low-pressure recovery devices commonly cut out at about 10 psig."
+      ]
+    },
+    "low-pressure-systems": {
+      "summary": [
+        "This chapter covers how low-pressure chillers are built and the safety rules for the rooms they sit in. You will learn why they run in a vacuum, what the purge unit and rupture disc do, which refrigerants they use, and what to watch for during a large leak.",
+        "Low-pressure refrigerants such as R-123 boil at low temperatures only under vacuum, so the evaporator of a running chiller is below atmospheric pressure. R-123, an HCFC, replaced R-11, a CFC, in many of these chillers. R-123 boils at about 82°F at atmospheric pressure, so a shut-down chiller in a 75°F room shows a slight vacuum.",
+        "Air and moisture that leak in collect at the top of the condenser. The purge unit draws from there, removes the noncondensables, and returns refrigerant to the system. The rupture disc on the evaporator protects the chiller from overpressure and is usually set at 15 psig.",
+        "Refrigerant vapor is heavier than air and can displace oxygen in a closed machinery room. Under ASHRAE Standard 15, a machinery room with R-123 needs a refrigerant sensor with an alarm. Use a self-contained breathing apparatus for a large leak."
+      ],
+      "concepts": [
+        {
+          "term": "Purge unit",
+          "definition": "A device on a low-pressure chiller that removes air and moisture from the top of the condenser while returning refrigerant to the system.",
+          "tip": "Purge = gets air out.",
+          "source": {
+            "org": "EPA Section 608 Test Topics",
+            "year": 2026
+          }
+        },
+        {
+          "term": "Rupture disc",
+          "definition": "A safety disc on the chiller's evaporator that bursts to relieve pressure, usually set at 15 psig.",
+          "tip": "Disc 15 psig; leak test 10 psig."
+        },
+        {
+          "term": "R-123",
+          "definition": "An HCFC low-pressure refrigerant that replaced R-11 in many centrifugal chillers.",
+          "tip": "R-11 out, R-123 in."
+        },
+        {
+          "term": "Running in a vacuum",
+          "definition": "While running, the evaporator of a low-pressure chiller is below atmospheric pressure, so leaks pull air in.",
+          "tip": "Low side below 0 psig."
+        },
+        {
+          "term": "ASHRAE Standard 15",
+          "definition": "The safety standard for refrigeration machinery rooms. EPA's test topics note it calls for an oxygen-deprivation sensor for all refrigerants and a refrigerant sensor for R-123.",
+          "tip": "R-123 room: refrigerant sensor.",
+          "source": {
+            "org": "EPA Section 608 Test Topics",
+            "year": 2026
+          }
+        }
+      ],
+      "points": [
+        "Noncondensables collect at the top of the condenser.",
+        "R-134a is medium-pressure, not low-pressure.",
+        "A large leak in a closed room can cause oxygen deprivation."
+      ]
+    }
+  }
+}
