@@ -275,5 +275,348 @@
       "안전보건표지"
     ],
     "levelLock": true
+  },
+  {
+    "id": "industrial-safety-industrial-engineer-safety-organization-0009",
+    "certId": "industrial-safety-industrial-engineer",
+    "subjectId": "prevention",
+    "chapterId": "safety-organization",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "그림은 안전보건표지 네 가지의 기본 모양과 색만 나타낸 것이다. 비상구·응급구호처럼 위치나 설비를 알려 주는 ‘안내표지’의 모양은?",
+    "choices": [
+      "㉠",
+      "㉡",
+      "㉢",
+      "㉣"
+    ],
+    "answer": 2,
+    "oneLineConcept": "안내표지 = 녹색 (녹색 바탕에 흰 그림, 또는 흰 바탕에 녹색 모형)",
+    "explanation": "안내표지는 **녹색**을 씁니다. 응급구호표지·비상구처럼 **녹색 바탕에 흰색 그림**을 넣거나, 녹십자표지처럼 흰 바탕에 녹색 모형을 그립니다(산업안전보건법 시행규칙 별표7). 녹색의 색도기준은 2.5G 4/10 이고 용도는 ‘안내’입니다(별표8). 그래서 녹색 정사각형인 ㉡이 안내표지입니다.\n\n**틀린 선지**\n- ㉠: 흰 바탕에 빨간 원과 사선은 금지표지입니다.\n- ㉢: 노란 바탕에 검은 삼각형 테두리는 경고표지입니다.\n- ㉣: 파란 원 바탕(흰색 그림)은 지시표지입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "안전보건표지",
+      "안내표지",
+      "그림"
+    ],
+    "image": "sign-shapes-abcd-guidance.svg",
+    "imageAlt": "안전보건표지 모양 네 가지가 나란히 있다. ㉠ 흰 바탕에 빨간 원과 왼쪽 위에서 오른쪽 아래로 내려가는 빨간 사선, ㉡ 녹색으로 채운 정사각형, ㉢ 노란 바탕에 검은 테두리를 두른 삼각형, ㉣ 파란색으로 채운 원. 표지 안의 그림은 생략되어 있다.",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-industrial-engineer-safety-organization-0010",
+    "certId": "industrial-safety-industrial-engineer",
+    "subjectId": "prevention",
+    "chapterId": "safety-organization",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "그림과 같은 기본 모양을 쓰는 안전보건표지의 분류는?",
+    "choices": [
+      "경고표지",
+      "지시표지",
+      "금지표지",
+      "안내표지"
+    ],
+    "answer": 3,
+    "oneLineConcept": "금지표지 = 흰 바탕 + 빨간 원과 사선 + 검은 그림",
+    "explanation": "흰 바탕에 **빨간 원과 45도 사선**을 그린 모양은 **금지표지**입니다. 바탕은 흰색, 원과 사선은 빨간색, 안에 넣는 그림은 검은색입니다(산업안전보건법 시행규칙 별표7). 출입금지·보행금지·차량통행금지·사용금지·탑승금지·금연·화기금지·물체이동금지 8가지가 있습니다.\n\n**틀린 선지**\n- 경고표지: 노란 바탕에 검은 삼각형 테두리를 씁니다(화학물질 경고는 빨간 마름모).\n- 지시표지: 파란 원 바탕에 흰색 그림을 씁니다.\n- 안내표지: 녹색을 씁니다(녹색 바탕에 흰 그림 등).",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "안전보건표지",
+      "금지표지",
+      "그림"
+    ],
+    "image": "sign-shape-red-circle-slash.svg",
+    "imageAlt": "흰 바탕에 굵은 빨간 원이 있고, 원 안에 왼쪽 위에서 오른쪽 아래로 빨간 사선이 그어져 있다. 표지 안의 그림은 생략되어 있다.",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-industrial-engineer-safety-organization-0011",
+    "certId": "industrial-safety-industrial-engineer",
+    "subjectId": "prevention",
+    "chapterId": "safety-organization",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "그림과 같은 기본 모양(바탕 무색, 빨간 마름모 테두리)을 쓰는 경고표지는?",
+    "choices": [
+      "고압전기 경고",
+      "낙하물 경고",
+      "고온 경고",
+      "인화성물질 경고"
+    ],
+    "answer": 4,
+    "oneLineConcept": "화학물질 계열 경고 = 바탕 무색 + 빨간 마름모 (나머지 경고는 노란 삼각형)",
+    "explanation": "경고표지는 대부분 노란 바탕에 검은 삼각형이지만, **화학물질 계열 경고**는 다릅니다. 인화성물질·산화성물질·폭발성물질·급성독성물질·부식성물질 경고와 발암성·변이원성·생식독성·전신독성·호흡기과민성 물질 경고는 **바탕이 무색이고 기본모형(마름모)이 빨간색**입니다. 빨간색 대신 검은색도 쓸 수 있습니다(산업안전보건법 시행규칙 별표7). 그래서 **인화성물질 경고**가 이 모양입니다.\n\n**틀린 선지**\n- 고압전기 경고: 노란 바탕에 검은 삼각형 테두리를 씁니다.\n- 낙하물 경고: 노란 바탕에 검은 삼각형 테두리를 씁니다.\n- 고온 경고: 노란 바탕에 검은 삼각형 테두리를 씁니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "안전보건표지",
+      "경고표지",
+      "그림"
+    ],
+    "image": "sign-shape-red-diamond.svg",
+    "imageAlt": "흰 바탕에 굵은 빨간 테두리를 두른 마름모(꼭짓점이 위·아래·왼쪽·오른쪽을 향한 정사각형). 표지 안의 그림은 생략되어 있다.",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-industrial-engineer-safety-organization-0012",
+    "certId": "industrial-safety-industrial-engineer",
+    "subjectId": "prevention",
+    "chapterId": "safety-organization",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "그림은 ‘위험장소 경고’ 표지이다. 이 표지의 바탕색에 해당하는 색도기준은?",
+    "choices": [
+      "5Y 8.5/12",
+      "7.5R 4/14",
+      "2.5PB 4/10",
+      "2.5G 4/10"
+    ],
+    "answer": 1,
+    "oneLineConcept": "노란색 5Y 8.5/12 = 경고 (빨강 7.5R 4/14, 파랑 2.5PB 4/10, 녹색 2.5G 4/10)",
+    "explanation": "위험장소 경고 표지는 **노란 바탕**에 검은 삼각형 테두리와 검은 느낌표를 씁니다. 노란색의 색도기준은 **5Y 8.5/12** 이고 용도는 ‘경고’입니다. 화학물질 취급장소 말고 다른 곳의 위험 경고, 주의표지, 기계 방호물에 씁니다(산업안전보건법 시행규칙 별표8). 기호의 Y(Yellow)를 보면 노란색임을 알 수 있습니다.\n\n**틀린 선지**\n- 7.5R 4/14: 빨간색으로, 금지와 화학물질 취급장소의 경고에 씁니다.\n- 2.5PB 4/10: 파란색으로, 지시에 씁니다.\n- 2.5G 4/10: 녹색으로, 안내에 씁니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "안전보건표지",
+      "색도기준",
+      "경고표지",
+      "그림"
+    ],
+    "image": "sign-warning-danger-place.svg",
+    "imageAlt": "노란 바탕에 검은 테두리를 두른 정삼각형 표지. 가운데에 검은 느낌표(!)가 있다.",
+    "imageSource": {
+      "kind": "public",
+      "title": "산업안전보건법 시행규칙 별표6 안전보건표지 215 위험장소 경고",
+      "license": "법령의 별표 그림(저작권법 제7조에 따라 보호받지 못하는 저작물)"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-industrial-engineer-safety-organization-0013",
+    "certId": "industrial-safety-industrial-engineer",
+    "subjectId": "prevention",
+    "chapterId": "safety-organization",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "그림은 산업안전보건법 시행규칙에 정한 금지표지의 기본모형이다. 원의 바깥지름을 d라고 할 때, 사선의 폭 d₃ 는?",
+    "choices": [
+      "0.8d",
+      "0.1d",
+      "0.2d",
+      "0.05d"
+    ],
+    "answer": 2,
+    "oneLineConcept": "금지표지 기본모형: d₁ = 0.8d, d₃(사선 폭) = 0.1d, 사선 45도",
+    "explanation": "금지표지 기본모형의 크기 비율은 산업안전보건법 시행규칙 별표9에 정해져 있습니다.\n\n1. 바깥지름 d ≥ 0.025L (L은 표지를 알아봐야 하는 안전거리)\n2. 안지름 d₁ = 0.8d\n3. 사선의 폭 **d₃ = 0.1d**, 사선은 45도로 긋습니다.\n\n원 테두리 두께도 (d − 0.8d) ÷ 2 = 0.1d 로 사선 폭과 같습니다.\n\n**틀린 선지**\n- 0.8d: 사선 폭이 아니라 원의 안지름 d₁ 입니다.\n- 0.2d: 바깥지름과 안지름의 차이(d − d₁)이지 사선의 폭이 아닙니다.\n- 0.05d: 기본모형에 이런 비율은 없습니다.",
+    "frequency": 2,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "안전보건표지",
+      "기본모형",
+      "금지표지",
+      "그림"
+    ],
+    "image": "sign-prohibition-dimensions.svg",
+    "imageAlt": "빨간 원 안에 왼쪽 위에서 오른쪽 아래로 사선이 그어진 금지표지 기본모형. 오른쪽에 원의 바깥지름 d와 안쪽 지름 d₁이 세로 치수선으로 표시되고, 사선의 폭은 d₃, 사선과 수평선 사이의 각도는 45°로 표시되어 있다.",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-industrial-engineer-safety-organization-0014",
+    "certId": "industrial-safety-industrial-engineer",
+    "subjectId": "prevention",
+    "chapterId": "safety-organization",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "그림 표지와 같은 분류에 속하는 안전보건표지는?",
+    "choices": [
+      "출입금지",
+      "보안경 착용",
+      "낙하물 경고",
+      "비상구"
+    ],
+    "answer": 4,
+    "oneLineConcept": "녹색 바탕 흰 그림 = 안내표지 (응급구호·들것·세안장치·비상구 등)",
+    "explanation": "녹색 바탕에 흰 십자는 **응급구호표지**이고, **안내표지**에 속합니다. 안내표지는 녹십자표지·응급구호표지·들것·세안장치·비상용기구·비상구·좌측비상구·우측비상구 8가지입니다(산업안전보건법 시행규칙 별표6·별표7). 그래서 같은 분류는 **비상구**입니다.\n\n**틀린 선지**\n- 출입금지: 금지표지입니다(흰 바탕, 빨간 원과 사선).\n- 보안경 착용: 지시표지입니다(파란 원 바탕, 흰 그림).\n- 낙하물 경고: 경고표지입니다(노란 바탕, 검은 삼각형).",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "안전보건표지",
+      "안내표지",
+      "그림"
+    ],
+    "image": "sign-guidance-first-aid.svg",
+    "imageAlt": "녹색 정사각형 바탕 가운데에 흰색 십자(+)가 그려진 안전보건표지.",
+    "imageSource": {
+      "kind": "public",
+      "title": "산업안전보건법 시행규칙 별표6 안전보건표지 402 응급구호표지",
+      "license": "법령의 별표 그림(저작권법 제7조에 따라 보호받지 못하는 저작물)"
+    },
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-industrial-engineer-safety-organization-0015",
+    "certId": "industrial-safety-industrial-engineer",
+    "subjectId": "prevention",
+    "chapterId": "safety-organization",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "그림의 ㉠·㉡은 모두 경고표지의 기본 모양이다. 다음 중 ㉡이 아니라 ㉠ 모양을 쓰는 경고표지는?",
+    "choices": [
+      "급성독성물질 경고",
+      "부식성물질 경고",
+      "방사성물질 경고",
+      "폭발성물질 경고"
+    ],
+    "answer": 3,
+    "oneLineConcept": "마름모(빨강) = 인화성·산화성·폭발성·급성독성·부식성·발암성 등 물질 경고, 방사성물질은 노란 삼각형",
+    "explanation": "경고표지 15가지 가운데 **마름모(바탕 무색, 빨간 테두리)** 를 쓰는 것은 인화성물질·산화성물질·폭발성물질·급성독성물질·부식성물질 경고와 발암성·변이원성·생식독성·전신독성·호흡기과민성 물질 경고, 이렇게 6가지입니다. 나머지 9가지는 **노란 바탕에 검은 삼각형**을 씁니다(산업안전보건법 시행규칙 별표6·별표7).\n\n**방사성물질 경고**는 이름에 ‘물질’이 들어가 헷갈리지만 노란 삼각형(㉠)입니다.\n\n**틀린 선지**\n- 급성독성물질 경고: 마름모(㉡) 모양입니다.\n- 부식성물질 경고: 마름모(㉡) 모양입니다.\n- 폭발성물질 경고: 마름모(㉡) 모양입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "안전보건표지",
+      "경고표지",
+      "방사성물질",
+      "그림"
+    ],
+    "image": "sign-warning-two-shapes.svg",
+    "imageAlt": "경고표지의 기본 모양 두 가지. ㉠ 노란 바탕에 검은 테두리를 두른 삼각형, ㉡ 흰 바탕에 빨간 테두리를 두른 마름모. 표지 안의 그림은 생략되어 있다.",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "industrial-safety-industrial-engineer-safety-organization-0016",
+    "certId": "industrial-safety-industrial-engineer",
+    "subjectId": "prevention",
+    "chapterId": "safety-organization",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "그림과 같이 파란 원 바탕을 쓰는 안전보건표지에 해당하는 것은?",
+    "choices": [
+      "보안경 착용",
+      "화기금지",
+      "비상구",
+      "고온 경고"
+    ],
+    "answer": 1,
+    "oneLineConcept": "지시표지 = 파란 원 바탕 + 흰 그림 (보호구 착용 표지)",
+    "explanation": "파란 원 바탕에 흰색 그림을 넣는 표지는 **지시표지**입니다. ‘반드시 이것을 착용하라’는 뜻으로, 보안경·방독마스크·방진마스크·보안면·안전모·귀마개·안전화·안전장갑·안전복 착용 9가지가 있습니다(산업안전보건법 시행규칙 별표6·별표7). 파란색의 색도기준은 2.5PB 4/10, 용도는 ‘지시’입니다(별표8).\n\n**틀린 선지**\n- 화기금지: 금지표지로, 흰 바탕에 빨간 원과 사선을 씁니다.\n- 비상구: 안내표지로, 녹색 바탕에 흰 그림을 씁니다.\n- 고온 경고: 경고표지로, 노란 바탕에 검은 삼각형을 씁니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "안전보건표지",
+      "지시표지",
+      "그림"
+    ],
+    "image": "sign-shape-blue-circle.svg",
+    "imageAlt": "파란색으로 채운 원 하나. 표지 안의 그림은 생략되어 있다.",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
   }
 ]
