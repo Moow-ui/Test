@@ -1,0 +1,523 @@
+[
+  {
+    "id": "sqld-model-and-sql-0001",
+    "certId": "sqld",
+    "subjectId": "modeling",
+    "chapterId": "model-and-sql",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "테이블의 모든 속성이 더 이상 나눌 수 없는 하나의 값(원자값)만 가지도록 만드는 정규화 단계는?",
+    "choices": [
+      "제2정규형",
+      "제3정규형",
+      "BCNF",
+      "제1정규형"
+    ],
+    "answer": 4,
+    "oneLineConcept": "1정규형=원자값, 2정규형=부분 종속 제거, 3정규형=이행 종속 제거",
+    "explanation": "정규화 단계는 순서대로 외우면 쉽습니다.\n\n- **제1정규형**: 한 칸에 값이 하나(원자값). 반복되는 값을 없앤다\n- 제2정규형: 주식별자의 일부에만 종속된 속성(부분 함수 종속)을 없앤다\n- 제3정규형: 주식별자가 아닌 속성끼리의 종속(이행 함수 종속)을 없앤다\n- BCNF: 모든 결정자가 후보키가 되게 한다\n\n**틀린 선지**\n- 제2정규형: 부분 함수 종속을 없애는 단계로, 원자값은 그 전에 이미 만족해야 합니다.\n- 제3정규형: 이행 함수 종속을 없애는 단계입니다.\n- BCNF: 결정자가 모두 후보키가 되도록 하는 단계입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "정규화",
+      "제1정규형"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sqld-model-and-sql-0002",
+    "certId": "sqld",
+    "subjectId": "modeling",
+    "chapterId": "model-and-sql",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "복합 주식별자를 가진 테이블에서, 주식별자의 일부에만 종속된 속성(부분 함수 종속)을 분리하는 정규화 단계는?",
+    "choices": [
+      "제1정규형",
+      "제3정규형",
+      "제2정규형",
+      "제4정규형"
+    ],
+    "answer": 3,
+    "oneLineConcept": "부분 함수 종속 제거 = 제2정규형",
+    "explanation": "**제2정규형**은 주식별자 전체가 아니라 **일부에만 종속된 속성**을 다른 테이블로 떼어 내는 단계입니다. 예를 들어 주식별자가 (학번, 과목코드)인데 과목명이 과목코드만으로 정해지면, 과목명을 과목 테이블로 분리합니다.\n\n**틀린 선지**\n- 제1정규형: 원자값(한 칸에 값 하나)을 만드는 단계입니다.\n- 제3정규형: 일반 속성끼리의 종속(이행 함수 종속)을 없애는 단계입니다.\n- 제4정규형: 다치 종속을 없애는 단계로, 부분 함수 종속과는 다릅니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "정규화",
+      "제2정규형",
+      "부분 함수 종속"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "sqld-model-and-sql-0003",
+    "certId": "sqld",
+    "subjectId": "modeling",
+    "chapterId": "model-and-sql",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "다음 테이블은 제2정규형까지 만족한다. 이 테이블이 만족하지 못하는 정규형으로 가장 알맞은 것은?\n\n사원(사원번호, 사원명, 부서번호, 부서명)\n- 주식별자: 사원번호\n- 사원번호 → 부서번호, 부서번호 → 부서명",
+    "choices": [
+      "제3정규형",
+      "제1정규형",
+      "제2정규형",
+      "반정규형"
+    ],
+    "answer": 1,
+    "oneLineConcept": "A→B, B→C 처럼 일반 속성끼리 종속되면 제3정규형 위반",
+    "explanation": "사원번호가 부서번호를 정하고, 부서번호가 다시 부서명을 정합니다(사원번호 → 부서번호 → 부서명). 이렇게 주식별자가 아닌 속성(부서번호)이 다른 속성(부서명)을 정하는 것을 **이행 함수 종속**이라 하며, 이것을 없애야 **제3정규형**이 됩니다. 부서(부서번호, 부서명) 테이블을 따로 만들면 해결됩니다.\n\n**틀린 선지**\n- 제1정규형: 모든 칸에 값이 하나씩이라 이미 만족합니다.\n- 제2정규형: 문제에서 이미 만족한다고 했고, 주식별자가 사원번호 하나라 부분 함수 종속이 생길 수 없습니다.\n- 반정규형: 정규형의 한 단계가 아니라, 성능을 위해 일부러 중복을 허용하는 반정규화를 떠올리게 하는 말입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "정규화",
+      "제3정규형",
+      "이행 함수 종속"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "sqld-model-and-sql-0004",
+    "certId": "sqld",
+    "subjectId": "modeling",
+    "chapterId": "model-and-sql",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "다음 테이블에서 가장 먼저 해결해야 할 정규화 문제는?\n\n수강(학번, 과목코드, 성적, 과목명)\n- 주식별자: (학번, 과목코드)\n- (학번, 과목코드) → 성적, 과목코드 → 과목명",
+    "choices": [
+      "성적이 학번 하나에만 종속되어 제2정규형을 위반한다.",
+      "과목명이 주식별자의 일부(과목코드)에만 종속되어 제2정규형을 위반한다.",
+      "한 칸에 값이 여러 개 들어 있어 제1정규형을 위반한다.",
+      "과목명이 성적에 종속되어 제3정규형을 위반한다."
+    ],
+    "answer": 2,
+    "oneLineConcept": "복합키 일부(과목코드)→과목명 = 부분 종속 → 제2정규형 위반",
+    "explanation": "주식별자는 (학번, 과목코드) 두 속성입니다.\n\n1. 성적은 학번과 과목코드를 **모두** 알아야 정해지므로 문제가 없습니다.\n2. 과목명은 **과목코드 하나만** 알면 정해집니다 → 주식별자 일부에만 종속(부분 함수 종속)\n\n따라서 제2정규형을 위반하며, 과목(과목코드, 과목명) 테이블로 분리해야 합니다.\n\n**틀린 선지**\n- 성적이 학번 하나에만 종속되어 제2정규형을 위반한다: 성적은 (학번, 과목코드) 전체에 종속되어 있습니다.\n- 한 칸에 값이 여러 개 들어 있어 제1정규형을 위반한다: 주어진 내용에 한 칸에 여러 값이 들어간다는 조건이 없습니다.\n- 과목명이 성적에 종속되어 제3정규형을 위반한다: 주어진 종속 관계에 성적 → 과목명은 없습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "정규화",
+      "제2정규형"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sqld-model-and-sql-0005",
+    "certId": "sqld",
+    "subjectId": "modeling",
+    "chapterId": "model-and-sql",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "정규화를 하면 줄일 수 있는 문제로 가장 알맞은 것은?",
+    "choices": [
+      "조회할 때 필요한 조인 횟수",
+      "데이터를 넣고 고치고 지울 때 생기는 이상 현상",
+      "데이터베이스의 테이블 개수",
+      "SQL 문장의 길이"
+    ],
+    "answer": 2,
+    "oneLineConcept": "정규화 = 중복 제거 → 입력·수정·삭제 이상 감소 (대신 조인 증가)",
+    "explanation": "정규화는 중복 데이터를 없애 **입력 이상·수정 이상·삭제 이상**을 줄이는 작업입니다. 예를 들어 부서명이 사원 행마다 반복되면, 부서명을 바꿀 때 여러 행을 모두 고쳐야 하고 하나라도 빠뜨리면 데이터가 어긋납니다(수정 이상).\n\n**틀린 선지**\n- 조회할 때 필요한 조인 횟수: 정규화를 하면 테이블이 나뉘므로 조인은 오히려 늘어날 수 있습니다.\n- 데이터베이스의 테이블 개수: 테이블을 나누므로 보통 늘어납니다.\n- SQL 문장의 길이: 조인이 늘어 SQL 이 길어질 수 있습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "정규화",
+      "이상 현상"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "sqld-model-and-sql-0006",
+    "certId": "sqld",
+    "subjectId": "modeling",
+    "chapterId": "model-and-sql",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "반정규화에 대한 설명으로 옳지 않은 것은?",
+    "choices": [
+      "반정규화를 하면 데이터 무결성이 항상 더 좋아진다.",
+      "반정규화 전에 인덱스 조정·뷰·클러스터링 같은 다른 방법을 먼저 검토한다.",
+      "테이블 병합·분할, 중복 컬럼 추가, 파생 컬럼 추가 등이 반정규화 기법이다.",
+      "조회 성능을 높이기 위해 일부러 데이터 중복을 허용하는 것이다."
+    ],
+    "answer": 1,
+    "oneLineConcept": "반정규화 = 성능 위해 중복 허용, 대신 무결성 깨질 위험",
+    "explanation": "**반정규화**는 조회 성능을 높이기 위해 정규화된 모델에 일부러 중복을 넣는 작업입니다. 중복이 생기므로 여러 곳의 값을 맞춰야 하고, 잘못하면 데이터가 어긋나 **무결성이 깨질 위험이 커집니다.** '항상 더 좋아진다'는 설명이 틀렸습니다.\n\n**틀린 선지**\n- 반정규화 전에 인덱스 조정·뷰·클러스터링 같은 다른 방법을 먼저 검토한다: 옳은 설명입니다. 무결성 위험이 있어 다른 방법을 먼저 찾습니다.\n- 테이블 병합·분할, 중복 컬럼 추가, 파생 컬럼 추가 등이 반정규화 기법이다: 옳은 설명입니다.\n- 조회 성능을 높이기 위해 일부러 데이터 중복을 허용하는 것이다: 반정규화의 뜻 그대로입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "반정규화"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "sqld-model-and-sql-0007",
+    "certId": "sqld",
+    "subjectId": "modeling",
+    "chapterId": "model-and-sql",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "급여(SAL)가 3000, 상여(COMM)가 NULL 인 행에서 SAL + COMM 의 결과는?",
+    "choices": [
+      "NULL",
+      "오류가 발생한다",
+      "0",
+      "3000"
+    ],
+    "answer": 1,
+    "oneLineConcept": "NULL 이 섞인 산술 연산 결과는 NULL",
+    "explanation": "NULL 은 '값을 모름'이라는 뜻입니다. 모르는 값에 무엇을 더해도 결과를 알 수 없으므로 **NULL 이 들어간 산술 연산(+, −, ×, ÷)의 결과는 NULL** 입니다. 3000 을 얻으려면 NVL(COMM, 0) 처럼 NULL 을 0 으로 바꾼 뒤 더해야 합니다.\n\n**틀린 선지**\n- 오류가 발생한다: 오류 없이 NULL 이 결과로 나옵니다.\n- 0: NULL 연산 결과는 0 이 아니라 NULL 입니다.\n- 3000: NULL 을 0 처럼 계산했을 때의 값입니다. NULL 은 0 이 아닙니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "Null",
+      "산술 연산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sqld-model-and-sql-0008",
+    "certId": "sqld",
+    "subjectId": "modeling",
+    "chapterId": "model-and-sql",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "[T 테이블]\nID | C\n1  | 10\n2  | 20\n3  | NULL\n4  | 30\n\n다음 SQL 의 결과는?\n\nSELECT COUNT(*), COUNT(C), AVG(C) FROM T;",
+    "choices": [
+      "4, 3, 15",
+      "4, 4, 15",
+      "3, 3, 20",
+      "4, 3, 20"
+    ],
+    "answer": 4,
+    "oneLineConcept": "집계 함수는 NULL 을 빼고 계산, COUNT(*)만 모든 행",
+    "explanation": "1. COUNT(*): 행 전체를 세므로 **4**\n2. COUNT(C): C 가 NULL 이 아닌 행만 세므로 10, 20, 30 → **3**\n3. AVG(C): NULL 을 뺀 값만 평균 → (10 + 20 + 30) ÷ 3 = 60 ÷ 3 = **20**\n\n검산: NULL 을 0 으로 보면 60 ÷ 4 = 15 가 되지만, AVG 는 NULL 행을 빼고 나누므로 20 입니다.\n\n**틀린 선지**\n- 4, 3, 15: AVG 를 NULL 행까지 포함해 4로 나눈 값입니다. AVG 는 NULL 을 빼고 3으로 나눕니다.\n- 4, 4, 15: COUNT(C) 는 NULL 을 세지 않으므로 4가 아니라 3입니다.\n- 3, 3, 20: COUNT(*) 는 NULL 이 있는 행도 세므로 4입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "Null",
+      "집계 함수"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sqld-model-and-sql-0009",
+    "certId": "sqld",
+    "subjectId": "modeling",
+    "chapterId": "model-and-sql",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "부모-자식 관계로 연결된 두 테이블을 조인할 때 일반적으로 서로 같은지 비교하는 컬럼은?",
+    "choices": [
+      "자식 테이블의 기본키와 부모 테이블의 일반 컬럼",
+      "두 테이블의 모든 컬럼",
+      "두 테이블의 행 번호(ROWNUM)",
+      "부모 테이블의 기본키와 자식 테이블의 외래키"
+    ],
+    "answer": 4,
+    "oneLineConcept": "관계 = 부모 PK 와 자식 FK, 조인은 이 둘을 같게(=) 비교",
+    "explanation": "모델의 **관계**는 실제 테이블에서 **부모의 기본키(PK)와 자식의 외래키(FK)**로 만들어집니다. 그래서 두 테이블을 조인할 때는 보통 `부모.PK = 자식.FK` 조건을 씁니다. 예: `DEPT.DEPTNO = EMP.DEPTNO`\n\n**틀린 선지**\n- 자식 테이블의 기본키와 부모 테이블의 일반 컬럼: 관계를 연결하는 것은 부모의 기본키와 자식의 외래키입니다.\n- 두 테이블의 모든 컬럼: 모든 컬럼을 비교하면 원하는 결과가 나오지 않습니다. 관계를 만드는 키 컬럼만 비교합니다.\n- 두 테이블의 행 번호(ROWNUM): ROWNUM 은 조회할 때 붙는 순번이라 두 테이블을 연결하는 값이 아닙니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "관계와 조인",
+      "외래키"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sqld-model-and-sql-0010",
+    "certId": "sqld",
+    "subjectId": "modeling",
+    "chapterId": "model-and-sql",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "주문상세 테이블의 주식별자를 (주문번호, 상품번호) 대신 일련번호 하나로 바꾸었다. 이때 생길 수 있는 문제로 가장 알맞은 것은?",
+    "choices": [
+      "같은 주문번호·상품번호 조합이 중복으로 입력될 수 있다.",
+      "주문 테이블과 외래키로 연결할 수 없게 된다.",
+      "주문상세 행 수가 줄어든다.",
+      "주문번호로 주문상세를 조회할 수 없게 된다."
+    ],
+    "answer": 1,
+    "oneLineConcept": "인조식별자 단점: 중복 데이터 위험, 필요한 인덱스 증가",
+    "explanation": "일련번호 같은 **인조식별자**를 쓰면 키가 단순해지는 장점이 있지만, 일련번호만 다르면 **같은 주문·같은 상품이 두 번 들어가도 막을 수 없습니다.** 이를 막으려면 (주문번호, 상품번호)에 별도의 UNIQUE 인덱스를 더 만들어야 하므로 인덱스도 늘어납니다.\n\n**틀린 선지**\n- 주문 테이블과 외래키로 연결할 수 없게 된다: 주문번호를 일반 속성(외래키)으로 두면 계속 연결할 수 있습니다.\n- 주문상세 행 수가 줄어든다: 주식별자를 바꾼다고 데이터 행 수가 줄지 않습니다.\n- 주문번호로 주문상세를 조회할 수 없게 된다: 주문번호 컬럼은 그대로 남아 있으므로 조회할 수 있습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "본질식별자",
+      "인조식별자"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sqld-model-and-sql-0011",
+    "certId": "sqld",
+    "subjectId": "modeling",
+    "chapterId": "model-and-sql",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "업무적으로 만들어진 식별자는 아니지만, 원래 식별자가 너무 복잡해서 일련번호처럼 인위적으로 만든 식별자를 무엇이라 하는가?",
+    "choices": [
+      "보조식별자",
+      "인조식별자",
+      "외부식별자",
+      "본질식별자"
+    ],
+    "answer": 2,
+    "oneLineConcept": "본질식별자=업무에서 나온 키, 인조식별자=인위적으로 만든 키",
+    "explanation": "식별자는 업무에서 원래 생기는지에 따라 나뉩니다.\n\n- 본질식별자: 업무 흐름에서 자연스럽게 만들어지는 식별자 (예: 주문번호 + 상품번호)\n- **인조식별자**: 원래 식별자가 복잡해 일련번호처럼 인위적으로 만든 식별자\n\n**틀린 선지**\n- 보조식별자: 주식별자는 아니지만 인스턴스를 구별할 수 있는 식별자입니다.\n- 외부식별자: 다른 엔터티와의 관계로 넘어온 식별자입니다.\n- 본질식별자: 업무에 의해 자연스럽게 만들어진 식별자로, 인위적으로 만든 것이 아닙니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "인조식별자"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sqld-model-and-sql-0012",
+    "certId": "sqld",
+    "subjectId": "modeling",
+    "chapterId": "model-and-sql",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "NULL 에 대한 설명으로 옳지 않은 것은?",
+    "choices": [
+      "NULL 은 숫자 0 이나 공백 문자와 다르다.",
+      "값이 NULL 인 행을 찾으려면 IS NULL 을 쓴다.",
+      "NULL 과 숫자를 더하면 결과는 NULL 이다.",
+      "NULL = NULL 을 비교하면 결과는 참(TRUE)이다."
+    ],
+    "answer": 4,
+    "oneLineConcept": "NULL 과의 비교(=, <> 등)는 참도 거짓도 아닌 '알 수 없음'",
+    "explanation": "NULL 은 '모르는 값'이라서 **NULL 과 무엇을 비교해도 결과는 참도 거짓도 아닌 '알 수 없음(UNKNOWN)'** 입니다. NULL = NULL 도 마찬가지입니다. WHERE 절은 참인 행만 돌려주므로 `WHERE C = NULL` 은 아무 행도 찾지 못합니다.\n\n**틀린 선지**\n- NULL 은 숫자 0 이나 공백 문자와 다르다: 옳은 설명입니다. (Oracle 은 빈 문자열 ''을 NULL 로 다루는 점은 따로 기억하세요)\n- 값이 NULL 인 행을 찾으려면 IS NULL 을 쓴다: 옳은 설명입니다.\n- NULL 과 숫자를 더하면 결과는 NULL 이다: 옳은 설명입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "Null",
+      "비교 연산"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "sqld-model-and-sql-0013",
+    "certId": "sqld",
+    "subjectId": "modeling",
+    "chapterId": "model-and-sql",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "사원(사원번호, 사원명, 부서번호, 부서명) 테이블에서 사원번호 → 부서번호, 부서번호 → 부서명 의 종속이 있다. 제3정규형으로 바르게 나눈 것은? (밑줄 대신 '*'를 주식별자로 표시)",
+    "choices": [
+      "사원(*사원번호, 사원명, 부서번호), 부서(*부서번호, 부서명)",
+      "사원(*사원번호, *부서번호, 사원명, 부서명)",
+      "사원(*사원번호, 사원명, 부서명), 부서(*부서번호, 부서명)",
+      "사원(*사원번호, 사원명), 부서(*부서번호, 부서명)"
+    ],
+    "answer": 1,
+    "oneLineConcept": "이행 종속 B→C 는 (B, C) 테이블로 떼고, 원래 표엔 B 를 외래키로 남김",
+    "explanation": "이행 함수 종속(사원번호 → 부서번호 → 부서명)을 없애려면 **부서번호 → 부서명** 부분을 부서 테이블로 떼어 냅니다.\n\n1. 부서(*부서번호, 부서명) 를 새로 만든다\n2. 사원 테이블에는 부서명을 빼고 **부서번호를 외래키로 남긴다** → 사원(*사원번호, 사원명, 부서번호)\n\n부서번호를 남겨야 사원이 어느 부서인지 다시 찾아갈 수 있습니다.\n\n**틀린 선지**\n- 사원(*사원번호, *부서번호, 사원명, 부서명): 테이블을 나누지 않아 부서번호 → 부서명 종속이 그대로 남습니다.\n- 사원(*사원번호, 사원명, 부서명), 부서(*부서번호, 부서명): 사원에 부서번호가 없어 부서와 연결할 수 없고, 부서명이 두 곳에 중복됩니다.\n- 사원(*사원번호, 사원명), 부서(*부서번호, 부서명): 사원이 어느 부서에 속하는지 알 수 없게 되어 정보가 사라집니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "정규화",
+      "제3정규형",
+      "테이블 분해"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sqld-model-and-sql-0014",
+    "certId": "sqld",
+    "subjectId": "modeling",
+    "chapterId": "model-and-sql",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "학번을 알면 이름이 하나로 정해질 때 '학번 → 이름'으로 표시한다. 이때 학번을 무엇이라 하는가?",
+    "choices": [
+      "결정자",
+      "인스턴스",
+      "도메인",
+      "종속자"
+    ],
+    "answer": 1,
+    "oneLineConcept": "A → B 에서 A 는 결정자, B 는 종속자",
+    "explanation": "**함수 종속** A → B 는 'A 값을 알면 B 값이 하나로 정해진다'는 뜻입니다. 이때 A(학번)를 **결정자**, B(이름)를 **종속자**라고 합니다.\n\n**틀린 선지**\n- 인스턴스: 엔터티에 들어 있는 실제 데이터 한 건입니다.\n- 도메인: 한 속성이 가질 수 있는 값의 범위입니다.\n- 종속자: 화살표 오른쪽에 있는 이름이 종속자입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "함수 종속",
+      "결정자"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sqld-model-and-sql-0015",
+    "certId": "sqld",
+    "subjectId": "modeling",
+    "chapterId": "model-and-sql",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "제3정규형을 만족하더라도, 후보키가 아닌 결정자가 남아 있으면 이를 없애 '모든 결정자가 후보키'가 되도록 만드는 정규형은?",
+    "choices": [
+      "제2정규형",
+      "제5정규형",
+      "제4정규형",
+      "BCNF(보이스-코드 정규형)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "BCNF = 모든 결정자가 후보키",
+    "explanation": "**BCNF(보이스-코드 정규형)**는 제3정규형보다 한 단계 강한 정규형으로, 테이블 안의 **모든 결정자가 후보키**가 되어야 합니다. 후보키가 아닌 속성이 다른 속성을 정하고 있으면 그 부분을 분리합니다.\n\n**틀린 선지**\n- 제2정규형: 부분 함수 종속을 없애는 단계로, BCNF 보다 앞 단계입니다.\n- 제5정규형: 조인 종속을 없애는 단계입니다.\n- 제4정규형: 다치 종속(한 값이 여러 값의 묶음을 정하는 경우)을 없애는 단계입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "정규화",
+      "BCNF"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  }
+]

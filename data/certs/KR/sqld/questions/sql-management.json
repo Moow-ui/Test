@@ -1,0 +1,919 @@
+[
+  {
+    "id": "sqld-sql-management-0001",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-management",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "사용자에게 테이블 조회 권한을 주는 GRANT 문은 SQL 의 어느 종류에 속하는가?",
+    "choices": [
+      "DCL",
+      "DML",
+      "DDL",
+      "TCL"
+    ],
+    "answer": 1,
+    "oneLineConcept": "DML=데이터, DDL=구조, DCL=권한, TCL=트랜잭션",
+    "explanation": "SQL 문장은 하는 일에 따라 네 가지로 나뉩니다.\n\n- DML(데이터 조작어): SELECT, INSERT, UPDATE, DELETE, MERGE\n- DDL(데이터 정의어): CREATE, ALTER, DROP, RENAME, TRUNCATE\n- **DCL(데이터 제어어): GRANT, REVOKE** — 권한\n- TCL(트랜잭션 제어어): COMMIT, ROLLBACK, SAVEPOINT\n\n**틀린 선지**\n- DML: 데이터를 조회·입력·수정·삭제하는 명령입니다.\n- DDL: 테이블 같은 객체의 구조를 만들고 바꾸는 명령입니다.\n- TCL: COMMIT·ROLLBACK 처럼 트랜잭션을 다루는 명령입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "SQL 종류",
+      "DCL"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "sqld-sql-management-0002",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-management",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "테이블의 모든 행을 지우고 저장 공간을 처음 상태로 되돌리는 TRUNCATE TABLE 문은 SQL 의 어느 종류에 속하는가?",
+    "choices": [
+      "DML",
+      "DCL",
+      "TCL",
+      "DDL"
+    ],
+    "answer": 4,
+    "oneLineConcept": "TRUNCATE 는 DELETE 와 달리 DDL",
+    "explanation": "행을 지운다는 점은 DELETE 와 비슷하지만, **TRUNCATE** 는 테이블을 처음 만든 상태처럼 비우는 명령이라 **DDL** 로 분류합니다. 그래서 Oracle 에서는 실행하면 자동으로 COMMIT 되어 ROLLBACK 으로 되돌릴 수 없습니다.\n\n**틀린 선지**\n- DML: 행을 지우는 DELETE 가 DML 입니다. TRUNCATE 는 DDL 입니다.\n- DCL: 권한을 주고 빼는 GRANT·REVOKE 가 DCL 입니다.\n- TCL: COMMIT·ROLLBACK·SAVEPOINT 가 TCL 입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "SQL 종류",
+      "DDL",
+      "TRUNCATE"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sqld-sql-management-0003",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-management",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "지금까지 한 데이터 변경을 데이터베이스에 영구히 반영하는 명령은?",
+    "choices": [
+      "COMMIT",
+      "GRANT",
+      "SAVEPOINT",
+      "ROLLBACK"
+    ],
+    "answer": 1,
+    "oneLineConcept": "COMMIT=확정, ROLLBACK=취소, SAVEPOINT=중간 저장점",
+    "explanation": "**COMMIT** 은 트랜잭션 안에서 한 변경(INSERT·UPDATE·DELETE)을 **확정**해 영구히 저장합니다. COMMIT 한 뒤에는 ROLLBACK 으로 되돌릴 수 없습니다.\n\n**틀린 선지**\n- GRANT: 권한을 주는 DCL 명령입니다.\n- SAVEPOINT: 트랜잭션 중간에 되돌아갈 저장점을 만듭니다. 변경을 확정하지 않습니다.\n- ROLLBACK: 아직 COMMIT 하지 않은 변경을 취소합니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "SQL 종류",
+      "TCL"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sqld-sql-management-0004",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-management",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "트랜잭션의 성질 가운데 '트랜잭션 안의 작업은 모두 성공하거나 모두 취소되어야 하며, 일부만 반영되어서는 안 된다'는 것은?",
+    "choices": [
+      "지속성(Durability)",
+      "일관성(Consistency)",
+      "고립성(Isolation)",
+      "원자성(Atomicity)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "ACID: 원자성(전부 아니면 전무)·일관성·고립성·지속성",
+    "explanation": "트랜잭션의 네 가지 성질(ACID)입니다.\n\n- **원자성**: 전부 실행되거나 전부 취소됨 (All or Nothing)\n- 일관성: 실행 전후에 데이터베이스가 규칙에 맞는 상태를 유지\n- 고립성: 실행 중인 트랜잭션이 다른 트랜잭션의 영향을 받지 않음\n- 지속성: COMMIT 한 결과는 장애가 나도 영구히 남음\n\n**틀린 선지**\n- 지속성(Durability): 확정된 결과가 영구히 남아야 한다는 뜻입니다.\n- 일관성(Consistency): 트랜잭션 전후에 데이터가 규칙(제약조건 등)에 맞아야 한다는 뜻입니다.\n- 고립성(Isolation): 동시에 실행되는 트랜잭션끼리 서로 끼어들지 않아야 한다는 뜻입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "트랜잭션",
+      "ACID",
+      "원자성"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sqld-sql-management-0005",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-management",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "한 트랜잭션이 실행되는 동안 다른 트랜잭션이 그 중간 결과를 보거나 끼어들지 못해야 한다는 트랜잭션의 성질은?",
+    "choices": [
+      "일관성(Consistency)",
+      "지속성(Durability)",
+      "고립성(Isolation)",
+      "원자성(Atomicity)"
+    ],
+    "answer": 3,
+    "oneLineConcept": "고립성 = 동시에 실행되는 트랜잭션끼리 서로 간섭하지 않음",
+    "explanation": "**고립성(격리성)** 은 실행 중인 트랜잭션의 중간 결과를 다른 트랜잭션이 보거나 바꾸지 못하게 하는 성질입니다. 이것이 지켜지지 않으면 아직 확정되지 않은 데이터를 읽는 문제(Dirty Read) 등이 생깁니다.\n\n**틀린 선지**\n- 일관성(Consistency): 실행 전후에 데이터가 규칙에 맞아야 한다는 성질입니다.\n- 지속성(Durability): COMMIT 한 결과가 영구히 남아야 한다는 성질입니다.\n- 원자성(Atomicity): 모두 실행되거나 모두 취소되어야 한다는 성질입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "트랜잭션",
+      "ACID",
+      "고립성"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sqld-sql-management-0006",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-management",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "EMP 테이블에서 DEPTNO 가 10 인 사원의 SAL 을 10% 올리는 SQL 로 옳은 것은?",
+    "choices": [
+      "UPDATE SET SAL = SAL * 1.1 FROM EMP WHERE DEPTNO = 10;",
+      "UPDATE EMP SAL = SAL * 1.1 WHERE DEPTNO = 10;",
+      "UPDATE EMP SET SAL = SAL * 1.1 WHERE DEPTNO = 10;",
+      "MODIFY EMP SET SAL = SAL * 1.1 WHERE DEPTNO = 10;"
+    ],
+    "answer": 3,
+    "oneLineConcept": "UPDATE 테이블 SET 컬럼 = 값 WHERE 조건",
+    "explanation": "UPDATE 문의 형식은 **UPDATE 테이블 SET 컬럼 = 새 값 WHERE 조건;** 입니다. 10% 올리려면 원래 값에 1.1 을 곱합니다.\n\n**틀린 선지**\n- UPDATE SET SAL = SAL * 1.1 FROM EMP WHERE DEPTNO = 10;: UPDATE 바로 뒤에 테이블 이름이 와야 합니다.\n- UPDATE EMP SAL = SAL * 1.1 WHERE DEPTNO = 10;: SET 이 빠져 오류가 납니다.\n- MODIFY EMP SET SAL = SAL * 1.1 WHERE DEPTNO = 10;: 데이터를 고치는 명령은 MODIFY 가 아니라 UPDATE 입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "DML",
+      "UPDATE"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "sqld-sql-management-0007",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-management",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "테이블의 데이터뿐 아니라 테이블 구조(정의)까지 완전히 없애는 명령은?",
+    "choices": [
+      "DROP TABLE",
+      "TRUNCATE TABLE",
+      "DELETE FROM",
+      "ALTER TABLE"
+    ],
+    "answer": 1,
+    "oneLineConcept": "DELETE=행 삭제, TRUNCATE=전체 비움(구조 남음), DROP=구조까지 삭제",
+    "explanation": "세 가지 삭제 명령을 비교하면 다음과 같습니다.\n\n- DELETE: 조건에 맞는 행을 지움 (DML, ROLLBACK 가능)\n- TRUNCATE: 모든 행을 지우고 저장 공간을 비움, **테이블 구조는 남음** (DDL)\n- **DROP: 테이블 구조까지 완전히 없앰** (DDL)\n\n**틀린 선지**\n- TRUNCATE TABLE: 데이터는 모두 지우지만 테이블 구조는 남습니다.\n- DELETE FROM: 행만 지우며 구조는 그대로입니다.\n- ALTER TABLE: 테이블 구조를 바꾸는 명령으로, 테이블을 없애지 않습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "DROP",
+      "DELETE",
+      "TRUNCATE"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "sqld-sql-management-0008",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-management",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Oracle 에서 DELETE FROM T; 와 TRUNCATE TABLE T; 를 비교한 설명으로 옳은 것은?",
+    "choices": [
+      "TRUNCATE 는 실행 즉시 확정되어 ROLLBACK 으로 되돌릴 수 없다.",
+      "둘 다 테이블 구조까지 없앤다.",
+      "DELETE 는 실행 즉시 확정되어 ROLLBACK 으로 되돌릴 수 없다.",
+      "TRUNCATE 는 WHERE 절로 지울 행을 고를 수 있다."
+    ],
+    "answer": 1,
+    "oneLineConcept": "DELETE 는 ROLLBACK 가능, TRUNCATE 는 DDL 이라 자동 COMMIT (Oracle)",
+    "explanation": "**DELETE** 는 DML 이라 COMMIT 하기 전까지 ROLLBACK 으로 되돌릴 수 있습니다. **TRUNCATE** 는 DDL 이라 Oracle 에서는 실행하면 자동으로 COMMIT 되어 **되돌릴 수 없습니다.** TRUNCATE 는 WHERE 절 없이 모든 행을 지웁니다.\n\n**틀린 선지**\n- 둘 다 테이블 구조까지 없앤다: 둘 다 구조는 남깁니다. 구조까지 없애는 것은 DROP 입니다.\n- DELETE 는 실행 즉시 확정되어 ROLLBACK 으로 되돌릴 수 없다: DELETE 는 COMMIT 전이면 ROLLBACK 할 수 있습니다.\n- TRUNCATE 는 WHERE 절로 지울 행을 고를 수 있다: TRUNCATE 는 언제나 모든 행을 지웁니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "TRUNCATE",
+      "ROLLBACK"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sqld-sql-management-0009",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-management",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Oracle 에서 비어 있는 테이블 T(N NUMBER)에 다음을 차례로 실행했다. 마지막 SELECT 의 결과는?\n\nINSERT INTO T VALUES (1);\nSAVEPOINT SP1;\nINSERT INTO T VALUES (2);\nSAVEPOINT SP2;\nINSERT INTO T VALUES (3);\nROLLBACK TO SP1;\nINSERT INTO T VALUES (4);\nCOMMIT;\nSELECT SUM(N) FROM T;",
+    "choices": [
+      "4",
+      "5",
+      "7",
+      "10"
+    ],
+    "answer": 2,
+    "oneLineConcept": "ROLLBACK TO 저장점 = 그 저장점 뒤의 변경만 취소",
+    "explanation": "**ROLLBACK TO SP1** 은 SP1 을 만든 **뒤의** 변경만 취소합니다.\n\n1. 1 입력 → SP1 → 2 입력 → SP2 → 3 입력\n2. ROLLBACK TO SP1: SP1 뒤의 2, 3 입력이 취소됨 → 남은 값 1\n3. 4 입력 → COMMIT → 남은 값 1, 4\n4. SUM = 1 + 4 = **5**\n\n**틀린 선지**\n- 4: ROLLBACK TO SP1 이 1 까지 취소한다고 본 값입니다. 1 은 SP1 전에 넣었으므로 남습니다.\n- 7: ROLLBACK TO SP2 를 한 것처럼 2 를 남긴 값(1 + 2 + 4)입니다.\n- 10: ROLLBACK 을 하지 않은 것처럼 모두 더한 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "TCL",
+      "SAVEPOINT",
+      "ROLLBACK"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "sqld-sql-management-0010",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-management",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Oracle 에서 비어 있는 테이블 T 에 다음을 차례로 실행했다. 마지막 SELECT 의 결과는?\n\nINSERT INTO T VALUES (1);\nCREATE TABLE T2 (C NUMBER);\nINSERT INTO T VALUES (2);\nROLLBACK;\nSELECT COUNT(*) FROM T;",
+    "choices": [
+      "0",
+      "1",
+      "2",
+      "오류가 발생한다"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Oracle 은 DDL 실행 전후로 자동 COMMIT",
+    "explanation": "Oracle 에서 CREATE·ALTER·DROP 같은 **DDL 을 실행하면 그 전까지의 변경이 자동으로 COMMIT** 됩니다.\n\n1. 1 입력 → CREATE TABLE(DDL) 실행으로 자동 COMMIT → 1 확정\n2. 2 입력 → ROLLBACK 으로 2 만 취소\n3. 남은 행: 1 → COUNT = **1**\n\n**틀린 선지**\n- 0: ROLLBACK 이 1 입력까지 취소한다고 본 값입니다. 1 은 DDL 때문에 이미 확정되었습니다.\n- 2: ROLLBACK 을 하지 않은 것처럼 센 값입니다.\n- 오류가 발생한다: 모든 문장이 정상으로 실행됩니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "DDL",
+      "자동 COMMIT",
+      "Oracle"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "sqld-sql-management-0011",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-management",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "MERGE 문에서 ON 조건에 맞는 행이 대상 테이블에 없을 때 실행되는 부분은?",
+    "choices": [
+      "WHEN MATCHED THEN DELETE",
+      "WHEN NOT MATCHED THEN UPDATE",
+      "WHEN MATCHED THEN UPDATE",
+      "WHEN NOT MATCHED THEN INSERT"
+    ],
+    "answer": 4,
+    "oneLineConcept": "MERGE: 있으면(MATCHED) UPDATE, 없으면(NOT MATCHED) INSERT",
+    "explanation": "**MERGE** 는 원본 데이터를 대상 테이블에 합칠 때 씁니다.\n\n- WHEN MATCHED: ON 조건에 맞는 행이 대상에 **있으면** → 보통 UPDATE\n- **WHEN NOT MATCHED: 대상에 없으면 → INSERT**\n\n대상에 없는 행은 고칠 수 없으므로 새로 넣습니다.\n\n**틀린 선지**\n- WHEN MATCHED THEN DELETE: 역시 맞는 행이 있을 때의 처리입니다.\n- WHEN NOT MATCHED THEN UPDATE: 대상에 없는 행은 고칠 수 없어 이런 처리는 쓰지 않습니다.\n- WHEN MATCHED THEN UPDATE: 대상에 맞는 행이 있을 때 실행됩니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "DML",
+      "MERGE"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sqld-sql-management-0012",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-management",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "[TGT 테이블]\nID | V\n1  | 10\n2  | 20\n\n[SRC 테이블]\nID | V\n2  | 200\n3  | 300\n\n다음 MERGE 를 실행한 뒤 SELECT SUM(V) FROM TGT; 의 결과는?\n\nMERGE INTO TGT T\nUSING SRC S ON (T.ID = S.ID)\nWHEN MATCHED THEN UPDATE SET T.V = S.V\nWHEN NOT MATCHED THEN INSERT (ID, V) VALUES (S.ID, S.V);",
+    "choices": [
+      "210",
+      "330",
+      "510",
+      "530"
+    ],
+    "answer": 3,
+    "oneLineConcept": "MERGE: 같은 ID 는 원본 값으로 고치고, 없는 ID 는 새로 넣음",
+    "explanation": "1. ID 2: TGT 에 있음(MATCHED) → V 를 20 에서 200 으로 UPDATE\n2. ID 3: TGT 에 없음(NOT MATCHED) → (3, 300) INSERT\n3. ID 1: SRC 에 없으므로 그대로 10\n4. 결과 TGT: 10, 200, 300 → SUM = **510**\n\n**틀린 선지**\n- 210: UPDATE 만 하고 ID 3 의 INSERT 를 빠뜨린 값(10 + 200)입니다.\n- 330: UPDATE 를 빠뜨린 값(10 + 20 + 300)입니다.\n- 530: ID 2 를 고치지 않고 원본 행을 새로 더 넣은 값(10 + 20 + 200 + 300)입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "DML",
+      "MERGE",
+      "결과 계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sqld-sql-management-0013",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-management",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "기본키(PRIMARY KEY)와 UNIQUE 제약조건을 비교한 설명으로 옳은 것은?",
+    "choices": [
+      "기본키는 중복 값을 허용하고, UNIQUE 는 허용하지 않는다.",
+      "기본키는 NULL 을 허용하지 않지만, UNIQUE 는 NULL 을 허용한다.",
+      "기본키와 UNIQUE 모두 NULL 을 허용하지 않는다.",
+      "UNIQUE 는 NULL 을 허용하지 않지만, 기본키는 NULL 을 허용한다."
+    ],
+    "answer": 2,
+    "oneLineConcept": "PK = 중복 X + NULL X, UNIQUE = 중복 X, NULL 허용",
+    "explanation": "- **기본키(PRIMARY KEY)**: 중복 불가 + NULL 불가. 테이블에 하나만 만들 수 있음\n- **UNIQUE**: 중복 불가, 하지만 NULL 은 넣을 수 있음\n\n둘 다 중복을 막지만 NULL 을 허용하는지가 다릅니다.\n\n**틀린 선지**\n- 기본키는 중복 값을 허용하고, UNIQUE 는 허용하지 않는다: 기본키도 중복을 허용하지 않습니다.\n- 기본키와 UNIQUE 모두 NULL 을 허용하지 않는다: UNIQUE 컬럼에는 NULL 을 넣을 수 있습니다.\n- UNIQUE 는 NULL 을 허용하지 않지만, 기본키는 NULL 을 허용한다: 반대로 적은 설명입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "제약조건",
+      "PRIMARY KEY",
+      "UNIQUE"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sqld-sql-management-0014",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-management",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "회원 테이블의 '이름' 컬럼에 값이 반드시 들어가도록(빈 값을 막도록) 할 때 쓰는 제약조건은?",
+    "choices": [
+      "FOREIGN KEY",
+      "UNIQUE",
+      "CHECK",
+      "NOT NULL"
+    ],
+    "answer": 4,
+    "oneLineConcept": "NOT NULL = 반드시 값 입력, UNIQUE = 중복 금지",
+    "explanation": "**NOT NULL** 제약조건을 걸면 그 컬럼에 NULL 을 넣을 수 없어 값이 반드시 들어가야 합니다.\n\n**틀린 선지**\n- FOREIGN KEY: 다른 테이블의 기본키를 참조하게 하는 제약조건입니다.\n- UNIQUE: 중복을 막을 뿐 NULL 은 허용합니다.\n- CHECK: 넣을 수 있는 값의 조건(예: 나이 >= 0)을 정합니다. 빈 값을 막는 데는 NOT NULL 을 씁니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "제약조건",
+      "NOT NULL"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sqld-sql-management-0015",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-management",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "자식 테이블의 외래키를 ON DELETE CASCADE 옵션으로 만들었다. 부모 테이블의 행을 지우면 어떻게 되는가?",
+    "choices": [
+      "자식 테이블의 외래키 값이 NULL 로 바뀐다.",
+      "그 행을 참조하던 자식 테이블의 행도 함께 지워진다.",
+      "자식 행이 있으면 부모 행을 지울 수 없어 오류가 난다.",
+      "자식 테이블의 행은 그대로 남고 외래키 제약조건만 사라진다."
+    ],
+    "answer": 2,
+    "oneLineConcept": "CASCADE=자식도 삭제, SET NULL=자식 FK 를 NULL, 기본=삭제 거부",
+    "explanation": "**ON DELETE CASCADE** 는 부모 행을 지우면 **그 행을 참조하는 자식 행도 함께 지웁니다.**\n\n- ON DELETE SET NULL: 자식의 외래키를 NULL 로 바꿈\n- 옵션 없음(기본): 자식 행이 있으면 부모 행 삭제를 거부(오류)\n\n**틀린 선지**\n- 자식 테이블의 외래키 값이 NULL 로 바뀐다: ON DELETE SET NULL 일 때의 동작입니다.\n- 자식 행이 있으면 부모 행을 지울 수 없어 오류가 난다: 옵션을 주지 않았을 때의 기본 동작입니다.\n- 자식 테이블의 행은 그대로 남고 외래키 제약조건만 사라진다: 이런 동작을 하는 옵션은 없습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "외래키",
+      "ON DELETE CASCADE"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "sqld-sql-management-0016",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-management",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "[DEPT 테이블] DEPTNO 10, 20\n[EMP 테이블] (EMPNO, DEPTNO) = (1, 10), (2, 10), (3, 20)\nEMP.DEPTNO 는 DEPT.DEPTNO 를 참조하는 외래키이며 ON DELETE SET NULL 옵션이 있다.\n\nDELETE FROM DEPT WHERE DEPTNO = 10; 을 실행한 뒤 SELECT COUNT(DEPTNO) FROM EMP; 의 결과는?",
+    "choices": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "answer": 2,
+    "oneLineConcept": "ON DELETE SET NULL: 자식 행은 남고 외래키만 NULL",
+    "explanation": "1. 부서 10 을 지우면 ON DELETE SET NULL 에 따라 사원 1, 2 의 DEPTNO 가 **NULL** 로 바뀝니다 (행은 남음)\n2. EMP: (1, NULL), (2, NULL), (3, 20)\n3. COUNT(DEPTNO) 는 NULL 을 세지 않으므로 → **1**\n\n**틀린 선지**\n- 0: 사원 3 의 DEPTNO 20 은 그대로라 셉니다.\n- 2: 부서 10 의 사원 둘을 센 값으로, 그 값은 NULL 로 바뀌어 세지 않습니다.\n- 3: COUNT(*) 처럼 모든 행을 센 값입니다. COUNT(DEPTNO) 는 NULL 을 빼고 셉니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "외래키",
+      "ON DELETE SET NULL"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sqld-sql-management-0017",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-management",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Oracle 에서 EMP 테이블에 PHONE 컬럼(VARCHAR2(20))을 새로 추가하는 SQL 로 옳은 것은?",
+    "choices": [
+      "ALTER TABLE EMP MODIFY (PHONE VARCHAR2(20));",
+      "INSERT INTO EMP (PHONE VARCHAR2(20));",
+      "UPDATE TABLE EMP ADD (PHONE VARCHAR2(20));",
+      "ALTER TABLE EMP ADD (PHONE VARCHAR2(20));"
+    ],
+    "answer": 4,
+    "oneLineConcept": "컬럼 추가=ALTER TABLE … ADD, 컬럼 변경=MODIFY",
+    "explanation": "테이블 구조를 바꿀 때는 DDL 인 **ALTER TABLE** 을 씁니다.\n\n- 컬럼 추가: ALTER TABLE EMP **ADD** (PHONE VARCHAR2(20));\n- 컬럼 형식 변경: ALTER TABLE EMP MODIFY (…);\n- 컬럼 삭제: ALTER TABLE EMP DROP COLUMN PHONE;\n\n**틀린 선지**\n- ALTER TABLE EMP MODIFY (PHONE VARCHAR2(20));: 이미 있는 컬럼의 형식을 바꾸는 명령입니다. 없는 컬럼이면 오류가 납니다.\n- INSERT INTO EMP (PHONE VARCHAR2(20));: 행을 넣는 DML 이라 컬럼을 추가할 수 없습니다.\n- UPDATE TABLE EMP ADD (PHONE VARCHAR2(20));: UPDATE 는 데이터를 고치는 DML 이라 컬럼을 추가할 수 없습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "DDL",
+      "ALTER TABLE",
+      "ADD"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sqld-sql-management-0018",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-management",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Oracle 에서 EMP 테이블의 SAL 컬럼 이름을 SALARY 로 바꾸는 SQL 로 옳은 것은?",
+    "choices": [
+      "ALTER TABLE EMP RENAME COLUMN SAL TO SALARY;",
+      "ALTER TABLE EMP MODIFY SAL TO SALARY;",
+      "UPDATE EMP SET SAL = SALARY;",
+      "RENAME EMP.SAL TO SALARY;"
+    ],
+    "answer": 1,
+    "oneLineConcept": "컬럼 이름 변경 = ALTER TABLE … RENAME COLUMN 옛이름 TO 새이름",
+    "explanation": "컬럼 이름은 **ALTER TABLE 테이블 RENAME COLUMN 옛 이름 TO 새 이름;** 으로 바꿉니다. 테이블 이름 자체를 바꿀 때는 RENAME 옛테이블 TO 새테이블; 을 씁니다.\n\n**틀린 선지**\n- ALTER TABLE EMP MODIFY SAL TO SALARY;: MODIFY 는 컬럼의 형식이나 크기를 바꿀 때 쓰며 이런 형식은 없습니다.\n- UPDATE EMP SET SAL = SALARY;: 데이터를 고치는 문장이며, SALARY 컬럼이 없어 오류가 납니다.\n- RENAME EMP.SAL TO SALARY;: RENAME 문은 테이블 같은 객체 이름을 바꿀 때 씁니다. 컬럼 이름은 바꾸지 못합니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "DDL",
+      "RENAME COLUMN"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sqld-sql-management-0019",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-management",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "사용자 USER1 에게 EMP 테이블을 조회할 수 있는 권한을 주는 SQL 로 옳은 것은?",
+    "choices": [
+      "GRANT SELECT TO USER1 ON EMP;",
+      "REVOKE SELECT ON EMP TO USER1;",
+      "GRANT SELECT ON EMP TO USER1;",
+      "GRANT USER1 ON EMP SELECT;"
+    ],
+    "answer": 3,
+    "oneLineConcept": "GRANT 권한 ON 객체 TO 사용자 / REVOKE 권한 ON 객체 FROM 사용자",
+    "explanation": "권한을 줄 때는 **GRANT 권한 ON 객체 TO 사용자;** 형식입니다. 빼앗을 때는 REVOKE 권한 ON 객체 FROM 사용자; 를 씁니다.\n\n**틀린 선지**\n- GRANT SELECT TO USER1 ON EMP;: ON 객체가 TO 사용자 앞에 와야 합니다.\n- REVOKE SELECT ON EMP TO USER1;: REVOKE 는 권한을 빼앗는 명령이고, TO 가 아니라 FROM 을 씁니다.\n- GRANT USER1 ON EMP SELECT;: 순서가 맞지 않아 오류가 납니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "DCL",
+      "GRANT"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "sqld-sql-management-0020",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-management",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "GRANT SELECT ON EMP TO USER1 WITH GRANT OPTION; 에서 WITH GRANT OPTION 의 뜻은?",
+    "choices": [
+      "USER1 이 EMP 테이블의 구조를 바꿀 수 있다.",
+      "USER1 이 모든 테이블을 조회할 수 있다.",
+      "USER1 의 권한은 다음 접속 때 자동으로 사라진다.",
+      "USER1 이 받은 권한을 다른 사용자에게 다시 줄 수 있다."
+    ],
+    "answer": 4,
+    "oneLineConcept": "WITH GRANT OPTION = 받은 객체 권한을 남에게 다시 줄 수 있음",
+    "explanation": "**WITH GRANT OPTION** 을 붙여 권한을 주면, 받은 사용자(USER1)가 **그 권한을 다른 사용자에게 다시 줄 수 있습니다.** 붙이지 않으면 자기만 쓸 수 있습니다.\n\n**틀린 선지**\n- USER1 이 EMP 테이블의 구조를 바꿀 수 있다: 받은 권한은 SELECT(조회)뿐입니다. 구조 변경은 ALTER 권한이 필요합니다.\n- USER1 이 모든 테이블을 조회할 수 있다: ON EMP 로 EMP 테이블에만 준 권한입니다.\n- USER1 의 권한은 다음 접속 때 자동으로 사라진다: 권한은 REVOKE 하기 전까지 유지됩니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "DCL",
+      "WITH GRANT OPTION"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sqld-sql-management-0021",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-management",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "여러 권한을 하나로 묶어 이름을 붙여 두고, 사용자에게 한꺼번에 주거나 빼앗을 수 있게 하는 것은?",
+    "choices": [
+      "롤(ROLE)",
+      "시퀀스(SEQUENCE)",
+      "뷰(VIEW)",
+      "시노님(SYNONYM)"
+    ],
+    "answer": 1,
+    "oneLineConcept": "ROLE = 권한 묶음, 사용자 관리가 쉬워짐",
+    "explanation": "**롤(ROLE)** 은 여러 권한을 하나로 묶은 것입니다. 사용자가 많을 때 권한을 하나하나 주는 대신 롤을 만들어 GRANT 롤 TO 사용자; 로 한 번에 주고, 필요하면 롤만 고쳐 모두에게 반영합니다.\n\n**틀린 선지**\n- 시퀀스(SEQUENCE): 일련번호를 자동으로 만들어 주는 객체입니다.\n- 뷰(VIEW): SELECT 결과를 가상 테이블처럼 쓰게 해 주는 객체입니다. 권한을 묶는 것이 아닙니다.\n- 시노님(SYNONYM): 객체에 다른 이름(별명)을 붙이는 것입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "DCL",
+      "ROLE"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sqld-sql-management-0022",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-management",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "트랜잭션 제어(TCL)에 대한 설명으로 옳지 않은 것은?",
+    "choices": [
+      "COMMIT 전에는 변경한 내용을 ROLLBACK 으로 취소할 수 있다.",
+      "SAVEPOINT 를 만들면 ROLLBACK TO 로 그 지점까지 되돌릴 수 있다.",
+      "ROLLBACK 을 하면 이미 COMMIT 한 데이터까지 이전 상태로 되돌아간다.",
+      "COMMIT 을 하면 그 전까지의 변경이 영구히 반영된다."
+    ],
+    "answer": 3,
+    "oneLineConcept": "ROLLBACK 은 COMMIT 하지 않은 변경만 취소",
+    "explanation": "**ROLLBACK** 은 마지막 COMMIT 이후 **아직 확정하지 않은 변경만** 취소합니다. 이미 COMMIT 한 데이터는 지속성(Durability) 때문에 ROLLBACK 으로 되돌릴 수 없습니다.\n\n**틀린 선지**\n- COMMIT 전에는 변경한 내용을 ROLLBACK 으로 취소할 수 있다: 옳은 설명입니다.\n- SAVEPOINT 를 만들면 ROLLBACK TO 로 그 지점까지 되돌릴 수 있다: 옳은 설명입니다.\n- COMMIT 을 하면 그 전까지의 변경이 영구히 반영된다: 옳은 설명입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "TCL",
+      "COMMIT",
+      "ROLLBACK"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "sqld-sql-management-0023",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-management",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "제약조건에 대한 설명으로 옳지 않은 것은?",
+    "choices": [
+      "한 테이블에 기본키를 여러 개 만들 수 있다.",
+      "기본키 컬럼에는 NULL 을 넣을 수 없다.",
+      "CHECK 제약조건은 넣을 수 있는 값의 조건을 정한다.",
+      "UNIQUE 제약조건 컬럼에는 NULL 을 넣을 수 있다."
+    ],
+    "answer": 1,
+    "oneLineConcept": "기본키는 테이블에 하나 (여러 컬럼을 묶은 복합키는 가능)",
+    "explanation": "**기본키는 한 테이블에 하나만** 만들 수 있습니다. 여러 컬럼을 묶어 하나의 기본키(복합 기본키)로 만들 수는 있지만, 기본키 자체가 여러 개일 수는 없습니다.\n\n**틀린 선지**\n- 기본키 컬럼에는 NULL 을 넣을 수 없다: 옳은 설명입니다.\n- CHECK 제약조건은 넣을 수 있는 값의 조건을 정한다: 옳은 설명입니다. 예: CHECK (SAL > 0)\n- UNIQUE 제약조건 컬럼에는 NULL 을 넣을 수 있다: 옳은 설명입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "제약조건",
+      "기본키"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "sqld-sql-management-0024",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-management",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "테이블 T 를 CREATE TABLE T (A NUMBER, B NUMBER DEFAULT 0, C NUMBER); 로 만들었다. INSERT INTO T (A) VALUES (1); 을 실행하면 새 행의 B, C 값은?",
+    "choices": [
+      "0, NULL",
+      "0, 0",
+      "오류가 발생해 입력되지 않는다",
+      "NULL, NULL"
+    ],
+    "answer": 1,
+    "oneLineConcept": "INSERT 에서 빠진 컬럼 = DEFAULT 값, 없으면 NULL",
+    "explanation": "INSERT 할 때 컬럼 목록에 적지 않은 컬럼은 **DEFAULT 값**이 들어가고, DEFAULT 가 없으면 **NULL** 이 들어갑니다.\n\n1. B: DEFAULT 0 → 0\n2. C: DEFAULT 없음 → NULL\n\n결과 **0, NULL**\n\n**틀린 선지**\n- 0, 0: C 에는 DEFAULT 가 없어 0 이 아니라 NULL 이 들어갑니다.\n- 오류가 발생해 입력되지 않는다: B, C 에 NOT NULL 제약이 없으므로 정상으로 입력됩니다.\n- NULL, NULL: B 에는 DEFAULT 0 이 있어 NULL 이 아니라 0 이 들어갑니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "DML",
+      "INSERT",
+      "DEFAULT"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sqld-sql-management-0025",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-management",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "테이블 T 의 X 컬럼에 1, 2, 3, 4 가 들어 있다. 다음을 차례로 실행한 뒤의 결과는?\n\nUPDATE T SET X = X * 10 WHERE X >= 3;\nDELETE FROM T WHERE X < 2;\nSELECT SUM(X) FROM T;",
+    "choices": [
+      "70",
+      "72",
+      "73",
+      "100"
+    ],
+    "answer": 2,
+    "oneLineConcept": "DML 은 앞 문장 결과 위에 차례로 적용",
+    "explanation": "1. UPDATE: 3 이상인 3, 4 → 30, 40. 이제 X = 1, 2, 30, 40\n2. DELETE: 2 보다 작은 1 을 지움 → X = 2, 30, 40\n3. SUM = 2 + 30 + 40 = **72**\n\n**틀린 선지**\n- 70: 2 까지 지운 값입니다. X < 2 이므로 2 는 지워지지 않습니다.\n- 73: DELETE 를 빠뜨린 값(1 + 2 + 30 + 40)입니다.\n- 100: 모든 값에 10 을 곱한 값입니다. UPDATE 는 3 이상인 값만 바꿉니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "DML",
+      "UPDATE",
+      "DELETE"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "sqld-sql-management-0026",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-management",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "SQL 명령과 종류를 짝지은 것으로 옳지 않은 것은?",
+    "choices": [
+      "REVOKE — DCL",
+      "RENAME — DDL",
+      "SAVEPOINT — TCL",
+      "MERGE — DDL"
+    ],
+    "answer": 4,
+    "oneLineConcept": "MERGE 는 데이터를 합치는 DML",
+    "explanation": "**MERGE** 는 데이터를 넣거나 고치는(INSERT·UPDATE) 명령이라 **DML** 입니다. DDL 로 짝지은 것이 틀렸습니다.\n\n**틀린 선지**\n- REVOKE — DCL: 옳은 짝입니다. 권한을 빼앗는 명령입니다.\n- RENAME — DDL: 옳은 짝입니다. 객체 이름을 바꾸는 구조 변경 명령입니다.\n- SAVEPOINT — TCL: 옳은 짝입니다. 트랜잭션의 저장점을 만듭니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "SQL 종류"
+    ],
+    "levelLock": true
+  }
+]

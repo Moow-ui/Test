@@ -1,0 +1,1516 @@
+[
+  {
+    "id": "sqld-sql-advanced-0001",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-advanced",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "WHERE DEPTNO ___ (SELECT DEPTNO FROM DEPT WHERE LOC = '서울') 에서 서브쿼리 결과가 여러 행일 수 있을 때 빈칸에 쓸 연산자로 알맞은 것은?",
+    "choices": [
+      ">",
+      "<>",
+      "IN",
+      "="
+    ],
+    "answer": 3,
+    "oneLineConcept": "서브쿼리 결과가 여러 행 → IN·ANY·ALL·EXISTS",
+    "explanation": "서브쿼리가 **여러 행**을 돌려줄 수 있으면 =, >, <> 같은 단일행 비교 연산자를 쓰면 오류가 납니다. 이때는 **IN**(목록 중 하나와 같음), ANY, ALL, EXISTS 같은 다중행 연산자를 씁니다.\n\n**틀린 선지**\n- >: 단일행 연산자라 여러 행과 바로 비교할 수 없습니다.\n- <>: 단일행 연산자입니다.\n- =: 서브쿼리가 한 행만 돌려줄 때 쓰는 단일행 연산자입니다. 여러 행이면 오류가 납니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "서브쿼리",
+      "다중행 서브쿼리"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sqld-sql-advanced-0002",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-advanced",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "두 SELECT 결과를 합치면서 중복된 행을 하나만 남기는 집합 연산자는?",
+    "choices": [
+      "UNION ALL",
+      "INTERSECT",
+      "UNION",
+      "MINUS"
+    ],
+    "answer": 3,
+    "oneLineConcept": "UNION=합집합(중복 제거), UNION ALL=중복 그대로",
+    "explanation": "- **UNION**: 합집합, 중복 행은 하나만 남김\n- UNION ALL: 합집합, 중복도 그대로 모두\n- INTERSECT: 교집합(양쪽에 다 있는 것)\n- MINUS(Oracle) / EXCEPT: 차집합(앞에만 있는 것)\n\n**틀린 선지**\n- UNION ALL: 중복을 없애지 않고 모두 보여 줍니다.\n- INTERSECT: 양쪽에 모두 있는 행만 남기는 교집합입니다.\n- MINUS: 앞의 결과에서 뒤의 결과를 뺀 차집합입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "집합 연산자",
+      "UNION"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "sqld-sql-advanced-0003",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-advanced",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "[A 테이블]\nX\n1\n2\n2\n3\n\n[B 테이블]\nX\n2\n3\n4\n\n다음 SQL 을 실행하면 몇 행이 나오는가?\n\nSELECT X FROM A\nINTERSECT\nSELECT X FROM B;",
+    "choices": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "answer": 2,
+    "oneLineConcept": "INTERSECT = 양쪽에 모두 있는 값(중복 제거)",
+    "explanation": "**INTERSECT** 는 두 결과에 **모두 있는 값**만 남기고 중복은 없앱니다.\n\n1. A: 1, 2, 2, 3 / B: 2, 3, 4\n2. 양쪽에 다 있는 값: 2, 3\n3. 결과 **2행** (A 에 2 가 두 번 있어도 한 번만)\n\n**틀린 선지**\n- 1: 2 와 3 가운데 하나만 센 값입니다.\n- 3: A 의 2 를 두 번 센 값입니다. INTERSECT 는 중복을 없앱니다.\n- 4: UNION(합집합)의 결과입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "집합 연산자",
+      "INTERSECT"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sqld-sql-advanced-0004",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-advanced",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "[A 테이블]\nX\n1\n2\n2\n3\n\n[B 테이블]\nX\n2\n3\n4\n\nOracle 에서 다음 SQL 의 결과는?\n\nSELECT X FROM A\nMINUS\nSELECT X FROM B;",
+    "choices": [
+      "2, 3",
+      "1, 4",
+      "4",
+      "1"
+    ],
+    "answer": 4,
+    "oneLineConcept": "A MINUS B = A 에만 있고 B 에는 없는 값",
+    "explanation": "**MINUS**(SQL Server 는 EXCEPT)는 앞의 결과에서 뒤의 결과에 있는 값을 뺍니다.\n\n1. A 의 값: 1, 2, 3 (중복 제거)\n2. B 에도 있는 2, 3 을 뺌\n3. 결과 **1**\n\n**틀린 선지**\n- 2, 3: INTERSECT(교집합)의 결과입니다.\n- 1, 4: 한쪽에만 있는 값을 모두 모은 것으로, MINUS 의 결과가 아닙니다.\n- 4: B MINUS A 의 결과입니다. 순서가 바뀌면 결과도 바뀝니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "집합 연산자",
+      "MINUS"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sqld-sql-advanced-0005",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-advanced",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "[A 테이블]\nX\n1\n2\n2\n3\n\n[B 테이블]\nX\n2\n3\n4\n\n다음 SQL 을 실행하면 몇 행이 나오는가?\n\nSELECT X FROM A\nUNION\nSELECT X FROM B;",
+    "choices": [
+      "3",
+      "4",
+      "6",
+      "7"
+    ],
+    "answer": 2,
+    "oneLineConcept": "UNION 은 합친 뒤 중복 제거, UNION ALL 은 그대로",
+    "explanation": "1. 두 결과를 합치면: 1, 2, 2, 3, 2, 3, 4 (7행)\n2. **UNION** 은 중복을 없앰 → 1, 2, 3, 4\n3. 결과 **4행**\n\nUNION ALL 이었다면 7행입니다.\n\n**틀린 선지**\n- 3: 4 를 빠뜨린 값입니다. B 에만 있는 4 도 합집합에 들어갑니다.\n- 6: 중복을 일부만 없앤 값입니다.\n- 7: 중복을 없애지 않는 UNION ALL 의 결과입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "집합 연산자",
+      "UNION",
+      "UNION ALL"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sqld-sql-advanced-0006",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-advanced",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "[EMP 테이블]\nEMPNO | ENAME  | DEPTNO | SAL | COMM\n101   | 김철수 | 10     | 300 | NULL\n102   | 이영희 | 20     | 250 | 50\n103   | 박민수 | 10     | 400 | 0\n104   | 최지은 | 30     | 200 | NULL\n105   | 정우성 | NULL   | 350 | 100\n\n[DEPT 테이블]\nDEPTNO | DNAME\n10     | 총무\n20     | 영업\n30     | 개발\n40     | 연구\n\n다음 SQL 을 실행하면 몇 행이 나오는가?\n\nSELECT D.DNAME FROM DEPT D\nWHERE NOT EXISTS (SELECT 1 FROM EMP E\n                  WHERE E.DEPTNO = D.DEPTNO);",
+    "choices": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "answer": 2,
+    "oneLineConcept": "NOT EXISTS = 서브쿼리 결과가 한 행도 없을 때 참",
+    "explanation": "**EXISTS** 는 서브쿼리 결과가 한 행이라도 있으면 참, **NOT EXISTS** 는 하나도 없으면 참입니다. 서브쿼리는 바깥의 D.DEPTNO 를 쓰는 상관 서브쿼리라 부서마다 따로 확인합니다.\n\n1. 10, 20, 30: 소속 사원이 있음 → NOT EXISTS 거짓\n2. 40(연구): 소속 사원 없음 → 참\n\n결과 **1행** (연구)\n\n**틀린 선지**\n- 0: 부서 40 에는 사원이 없으므로 NOT EXISTS 가 참이 되어 한 행이 나옵니다.\n- 2: DEPTNO 가 NULL 인 정우성을 따로 센 값입니다. 결과는 DEPT 의 행이므로 정우성은 상관없습니다.\n- 3: 사원이 있는 부서 수로, EXISTS 의 결과입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "EXISTS",
+      "상관 서브쿼리"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sqld-sql-advanced-0007",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-advanced",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "SELECT 절에 쓰여 한 행·한 컬럼의 값 하나만 돌려주는 서브쿼리를 무엇이라 하는가?",
+    "choices": [
+      "인라인 뷰",
+      "중첩 서브쿼리",
+      "다중 컬럼 서브쿼리",
+      "스칼라 서브쿼리"
+    ],
+    "answer": 4,
+    "oneLineConcept": "SELECT 절=스칼라, FROM 절=인라인 뷰, WHERE 절=중첩 서브쿼리",
+    "explanation": "서브쿼리는 쓰이는 자리에 따라 이름이 다릅니다.\n\n- **스칼라 서브쿼리**: SELECT 절. 값 하나(한 행·한 컬럼)만 돌려줌\n- 인라인 뷰: FROM 절. 테이블처럼 쓰임\n- 중첩 서브쿼리: WHERE 절\n\n**틀린 선지**\n- 인라인 뷰: FROM 절에 쓰는 서브쿼리입니다.\n- 중첩 서브쿼리: WHERE 절에 쓰는 서브쿼리입니다.\n- 다중 컬럼 서브쿼리: 여러 컬럼을 돌려주는 서브쿼리로, 값 하나만 돌려주는 것이 아닙니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "스칼라 서브쿼리"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sqld-sql-advanced-0008",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-advanced",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "FROM 절에 쓰여 마치 테이블처럼 사용되는 서브쿼리를 무엇이라 하는가?",
+    "choices": [
+      "스칼라 서브쿼리",
+      "단일행 서브쿼리",
+      "상관 서브쿼리",
+      "인라인 뷰"
+    ],
+    "answer": 4,
+    "oneLineConcept": "FROM 절 서브쿼리 = 인라인 뷰 (그 컬럼을 메인쿼리에서 사용 가능)",
+    "explanation": "**인라인 뷰(Inline View)** 는 FROM 절에 쓰는 서브쿼리입니다. SQL 을 실행할 때만 잠깐 만들어지는 뷰처럼 쓰이며, 인라인 뷰의 컬럼은 메인쿼리에서 자유롭게 쓸 수 있습니다. Top N 쿼리에서 자주 씁니다.\n\n**틀린 선지**\n- 스칼라 서브쿼리: SELECT 절에 쓰여 값 하나를 돌려주는 서브쿼리입니다.\n- 단일행 서브쿼리: 결과가 한 행인 서브쿼리를 말하는 분류입니다.\n- 상관 서브쿼리: 메인쿼리의 컬럼을 안에서 쓰는 서브쿼리로, 위치에 따른 이름이 아닙니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "인라인 뷰"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sqld-sql-advanced-0009",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-advanced",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "[EMP 테이블]\nEMPNO | ENAME  | DEPTNO | SAL | COMM\n101   | 김철수 | 10     | 300 | NULL\n102   | 이영희 | 20     | 250 | 50\n103   | 박민수 | 10     | 400 | 0\n104   | 최지은 | 30     | 200 | NULL\n105   | 정우성 | NULL   | 350 | 100\n\n다음 SQL 을 실행하면 몇 행이 나오는가?\n\nSELECT ENAME FROM EMP\nWHERE SAL >= ALL (SELECT SAL FROM EMP\n                  WHERE DEPTNO = 10);",
+    "choices": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "answer": 2,
+    "oneLineConcept": ">= ALL = 서브쿼리 결과의 가장 큰 값 이상",
+    "explanation": "**ALL** 은 서브쿼리 결과 **모든 값**에 대해 조건이 참이어야 합니다.\n\n1. 서브쿼리 결과(부서 10 의 SAL): 300, 400\n2. SAL >= ALL (300, 400) → SAL 이 300 이상이고 400 이상 → SAL >= 400\n3. 400 이상인 사원: 박민수(400) → **1행**\n\n**틀린 선지**\n- 0: 박민수의 400 은 자기 자신과 같으므로 >= 조건을 만족합니다.\n- 2: SAL > 300(가장 작은 값보다 큼)으로 본 결과(박민수, 정우성)입니다. ALL 은 가장 큰 값 400 이상이어야 합니다.\n- 3: >= ANY(가장 작은 값 300 이상)로 본 결과입니다(김철수 300, 박민수 400, 정우성 350).",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "다중행 서브쿼리",
+      "ALL"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sqld-sql-advanced-0010",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-advanced",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "[EMP 테이블]\nEMPNO | ENAME  | DEPTNO | SAL | COMM\n101   | 김철수 | 10     | 300 | NULL\n102   | 이영희 | 20     | 250 | 50\n103   | 박민수 | 10     | 400 | 0\n104   | 최지은 | 30     | 200 | NULL\n105   | 정우성 | NULL   | 350 | 100\n\n다음 SQL 을 실행하면 몇 행이 나오는가?\n\nSELECT ENAME FROM EMP\nWHERE SAL > ANY (SELECT SAL FROM EMP\n                 WHERE DEPTNO = 10);",
+    "choices": [
+      "1",
+      "2",
+      "3",
+      "5"
+    ],
+    "answer": 2,
+    "oneLineConcept": "> ANY = 서브쿼리 결과의 가장 작은 값보다 큼",
+    "explanation": "**ANY** 는 서브쿼리 결과 중 **하나라도** 조건이 참이면 됩니다.\n\n1. 서브쿼리 결과(부서 10 의 SAL): 300, 400\n2. SAL > ANY (300, 400) → 300 보다 크기만 하면 됨 → SAL > 300\n3. 300 보다 큰 사원: 박민수(400), 정우성(350) → **2행**\n\n김철수(300)는 300 보다 크지 않아 빠집니다.\n\n**틀린 선지**\n- 1: 가장 큰 값 400 을 기준으로 본 값(박민수만)입니다. ANY 는 가장 작은 값 300 보다 크기만 하면 됩니다.\n- 3: 300 인 김철수까지 넣은 값입니다. > 는 같은 값을 포함하지 않습니다.\n- 5: 조건을 적용하지 않은 전체 행 수입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "다중행 서브쿼리",
+      "ANY"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "sqld-sql-advanced-0011",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-advanced",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "GROUP BY ROLLUP(DEPTNO) 로 부서별 합계를 구하면, 부서별 합계 행 외에 추가로 어떤 행이 생기는가?",
+    "choices": [
+      "부서별 최댓값 행",
+      "부서별 평균 행",
+      "전체 합계 행",
+      "아무 행도 추가되지 않는다"
+    ],
+    "answer": 3,
+    "oneLineConcept": "ROLLUP(A) = A 별 소계 + 전체 합계",
+    "explanation": "**ROLLUP** 은 GROUP BY 결과에 **소계와 전체 합계**를 더해 줍니다. ROLLUP(DEPTNO) 는 부서별 합계에 **전체 합계 한 행**이 추가됩니다. 전체 합계 행의 DEPTNO 칸은 NULL 로 나옵니다.\n\n**틀린 선지**\n- 부서별 최댓값 행: ROLLUP 이 최댓값 행을 따로 만들지는 않습니다.\n- 부서별 평균 행: ROLLUP 은 SELECT 에 쓴 집계 함수(여기서는 합계)로 소계를 만들 뿐, 평균을 따로 더하지 않습니다.\n- 아무 행도 추가되지 않는다: 전체 합계 행이 추가됩니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "그룹 함수",
+      "ROLLUP"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "sqld-sql-advanced-0012",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-advanced",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "[SALES 테이블]\nREGION | PRODUCT | AMT\n서울   | A       | 10\n서울   | B       | 20\n부산   | A       | 30\n부산   | B       | 40\n\n다음 SQL 을 실행하면 몇 행이 나오는가?\n\nSELECT REGION, PRODUCT, SUM(AMT)\nFROM SALES\nGROUP BY ROLLUP(REGION, PRODUCT);",
+    "choices": [
+      "4",
+      "6",
+      "7",
+      "9"
+    ],
+    "answer": 3,
+    "oneLineConcept": "ROLLUP(A, B) = (A, B) + (A) 소계 + 전체 합계",
+    "explanation": "**ROLLUP(REGION, PRODUCT)** 은 오른쪽부터 하나씩 빼며 묶습니다.\n\n1. (REGION, PRODUCT): 서울A, 서울B, 부산A, 부산B → 4행\n2. (REGION) 소계: 서울, 부산 → 2행\n3. 전체 합계: 1행\n\n4 + 2 + 1 = **7행**\n\n**틀린 선지**\n- 4: 소계와 전체 합계를 빼고 일반 GROUP BY 만 센 값입니다.\n- 6: 전체 합계 행을 빠뜨린 값입니다.\n- 9: PRODUCT 별 소계(2행)까지 만드는 CUBE 의 결과입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "그룹 함수",
+      "ROLLUP"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sqld-sql-advanced-0013",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-advanced",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "[SALES 테이블]\nREGION | PRODUCT | AMT\n서울   | A       | 10\n서울   | B       | 20\n부산   | A       | 30\n부산   | B       | 40\n\n다음 SQL 을 실행하면 몇 행이 나오는가?\n\nSELECT REGION, PRODUCT, SUM(AMT)\nFROM SALES\nGROUP BY CUBE(REGION, PRODUCT);",
+    "choices": [
+      "5",
+      "7",
+      "8",
+      "9"
+    ],
+    "answer": 4,
+    "oneLineConcept": "CUBE(A, B) = (A, B) + (A) + (B) + 전체, 모든 조합",
+    "explanation": "**CUBE** 는 가능한 **모든 조합**의 소계를 만듭니다.\n\n1. (REGION, PRODUCT): 4행\n2. (REGION) 소계: 서울, 부산 → 2행\n3. (PRODUCT) 소계: A, B → 2행\n4. 전체 합계: 1행\n\n4 + 2 + 2 + 1 = **9행**\n\n**틀린 선지**\n- 5: 일반 그룹 4행에 전체 합계만 더한 값입니다.\n- 7: ROLLUP(REGION, PRODUCT) 의 결과입니다. CUBE 는 PRODUCT 별 소계도 만듭니다.\n- 8: 전체 합계 행을 빠뜨린 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "그룹 함수",
+      "CUBE"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sqld-sql-advanced-0014",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-advanced",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "[SALES 테이블]\nREGION | PRODUCT | AMT\n서울   | A       | 10\n서울   | B       | 20\n부산   | A       | 30\n부산   | B       | 40\n\n다음 SQL 을 실행하면 몇 행이 나오는가?\n\nSELECT REGION, PRODUCT, SUM(AMT)\nFROM SALES\nGROUP BY GROUPING SETS(REGION, PRODUCT);",
+    "choices": [
+      "4",
+      "5",
+      "7",
+      "9"
+    ],
+    "answer": 1,
+    "oneLineConcept": "GROUPING SETS(A, B) = A 별 소계 + B 별 소계 (전체 합계 없음)",
+    "explanation": "**GROUPING SETS** 는 괄호 안에 적은 기준마다 **따로 묶은 결과를 합쳐** 보여 줍니다. 적지 않은 조합은 만들지 않습니다.\n\n1. REGION 별: 서울, 부산 → 2행\n2. PRODUCT 별: A, B → 2행\n\n2 + 2 = **4행** (전체 합계는 () 를 넣어야 생깁니다)\n\n**틀린 선지**\n- 5: 전체 합계를 더한 값입니다. GROUPING SETS 에 () 를 적지 않았으므로 전체 합계는 없습니다.\n- 7: ROLLUP(REGION, PRODUCT) 의 결과입니다.\n- 9: CUBE(REGION, PRODUCT) 의 결과입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "그룹 함수",
+      "GROUPING SETS"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "sqld-sql-advanced-0015",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-advanced",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "ROLLUP 이나 CUBE 결과에서 어떤 컬럼이 소계·합계를 위해 묶여서 NULL 로 표시된 행일 때 1 을 돌려주는 함수는?",
+    "choices": [
+      "COUNT",
+      "DECODE",
+      "GROUPING",
+      "NVL"
+    ],
+    "answer": 3,
+    "oneLineConcept": "GROUPING(컬럼) = 소계 행이면 1, 아니면 0",
+    "explanation": "**GROUPING(컬럼)** 은 그 컬럼이 소계·합계를 만들려고 묶인 행이면 **1**, 일반 행이면 **0** 을 돌려줍니다. CASE 나 DECODE 와 함께 써서 소계 행에 '소계'·'전체' 같은 글자를 붙입니다.\n\n**틀린 선지**\n- COUNT: 행 수를 세는 집계 함수로, 소계 행인지 알려 주지 않습니다.\n- DECODE: 값을 비교해 결과를 고르는 함수로, 소계 여부를 스스로 알려 주지 않습니다.\n- NVL: NULL 을 다른 값으로 바꿀 뿐, 원래 NULL 인지 소계 때문에 생긴 NULL 인지 구별하지 못합니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "그룹 함수",
+      "GROUPING"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sqld-sql-advanced-0016",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-advanced",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "[SCORE 테이블]\nNAME | PT\n가   | 100\n나   | 90\n다   | 90\n라   | 80\n\nSELECT NAME, RANK() OVER (ORDER BY PT DESC) FROM SCORE; 에서 '라'의 순위는?",
+    "choices": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 3,
+    "oneLineConcept": "RANK: 같은 값은 같은 순위, 다음 순위는 건너뜀 (1, 2, 2, 4)",
+    "explanation": "**RANK** 는 같은 값에 같은 순위를 주고, 그만큼 **다음 순위를 건너뜁니다.**\n\n1. 가(100) → 1위\n2. 나(90)·다(90) → 공동 2위\n3. 라(80) → 2위가 두 명이므로 3위를 건너뛰고 **4위**\n\n**틀린 선지**\n- 2: 공동 2위인 나·다의 순위입니다.\n- 3: DENSE_RANK 의 결과입니다. RANK 는 공동 순위 수만큼 건너뜁니다.\n- 5: 행이 4개뿐이라 5위는 나올 수 없습니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "윈도우 함수",
+      "RANK"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "sqld-sql-advanced-0017",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-advanced",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "[SCORE 테이블]\nNAME | PT\n가   | 100\n나   | 90\n다   | 90\n라   | 80\n\nSELECT NAME, DENSE_RANK() OVER (ORDER BY PT DESC) FROM SCORE; 에서 '라'의 순위는?",
+    "choices": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2,
+    "oneLineConcept": "DENSE_RANK: 같은 값은 같은 순위, 다음 순위를 건너뛰지 않음 (1, 2, 2, 3)",
+    "explanation": "**DENSE_RANK** 는 같은 값에 같은 순위를 주지만 **다음 순위를 건너뛰지 않습니다.**\n\n1. 가(100) → 1\n2. 나(90)·다(90) → 2\n3. 라(80) → 바로 다음 순위 **3**\n\n**틀린 선지**\n- 2: 공동 2위인 나·다의 순위입니다.\n- 4: RANK 의 결과입니다. DENSE_RANK 는 건너뛰지 않습니다.\n- 5: 행이 4개뿐이라 나올 수 없습니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "윈도우 함수",
+      "DENSE_RANK"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "sqld-sql-advanced-0018",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-advanced",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "같은 값이 있어도 1, 2, 3, 4 처럼 겹치지 않는 고유한 순번을 매기는 윈도우 함수는?",
+    "choices": [
+      "ROW_NUMBER",
+      "DENSE_RANK",
+      "NTILE",
+      "RANK"
+    ],
+    "answer": 1,
+    "oneLineConcept": "ROW_NUMBER = 같은 값이어도 항상 다른 번호",
+    "explanation": "순위 함수 세 가지를 같은 값(90, 90)이 있는 경우로 비교하면 다음과 같습니다.\n\n- RANK: 1, 2, 2, 4\n- DENSE_RANK: 1, 2, 2, 3\n- **ROW_NUMBER: 1, 2, 3, 4** (같은 값이어도 다른 번호)\n\n**틀린 선지**\n- DENSE_RANK: 같은 값에는 같은 순위를 줍니다.\n- NTILE: 행들을 정한 수의 묶음으로 나누어 묶음 번호를 매기는 함수입니다.\n- RANK: 같은 값에는 같은 순위를 줍니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "윈도우 함수",
+      "ROW_NUMBER"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sqld-sql-advanced-0019",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-advanced",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "[W 테이블]\nID | SAL\n1  | 100\n2  | 200\n3  | 200\n4  | 300\n\n다음 SQL 에서 ID 가 2 인 행의 RS 값은? (윈도우 범위는 따로 지정하지 않았다)\n\nSELECT ID, SUM(SAL) OVER (ORDER BY SAL) AS RS\nFROM W;",
+    "choices": [
+      "300",
+      "500",
+      "800",
+      "200"
+    ],
+    "answer": 2,
+    "oneLineConcept": "ORDER BY 만 쓰면 기본 범위는 RANGE → 같은 값은 함께 누적",
+    "explanation": "윈도우 함수에 ORDER BY 만 쓰고 범위를 적지 않으면 기본 범위는 **RANGE BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW** 입니다. RANGE 는 '값' 기준이라 **정렬 값이 같은 행을 함께** 포함합니다.\n\n1. ID 1(100): 100\n2. ID 2(200)·ID 3(200): 값이 같아 둘 다 100 + 200 + 200 = **500**\n3. ID 4(300): 800\n\n**틀린 선지**\n- 300: ROWS(행 단위) 범위였다면 나오는 값(100 + 200)입니다. 기본 범위는 RANGE 라 같은 값 200 을 함께 더합니다.\n- 800: 마지막 행의 누적 합계입니다.\n- 200: 자기 행의 값만 본 것입니다. 누적 합계입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "윈도우 함수",
+      "누적 합계",
+      "RANGE"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "sqld-sql-advanced-0020",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-advanced",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "[M 테이블]\nID | V\n1  | 10\n2  | 20\n3  | 30\n4  | 40\n\n다음 SQL 에서 ID 가 3 인 행의 MS 값은?\n\nSELECT ID,\n  SUM(V) OVER (ORDER BY ID\n    ROWS BETWEEN 1 PRECEDING AND 1 FOLLOWING) AS MS\nFROM M;",
+    "choices": [
+      "60",
+      "70",
+      "90",
+      "100"
+    ],
+    "answer": 3,
+    "oneLineConcept": "ROWS BETWEEN 1 PRECEDING AND 1 FOLLOWING = 앞 1행 + 현재 + 뒤 1행",
+    "explanation": "**ROWS BETWEEN 1 PRECEDING AND 1 FOLLOWING** 은 현재 행을 기준으로 **바로 앞 1행, 현재 행, 바로 뒤 1행**을 더합니다.\n\nID 3 기준: ID 2(20) + ID 3(30) + ID 4(40) = **90**\n\n**틀린 선지**\n- 60: ID 2 행의 값(10 + 20 + 30)입니다.\n- 70: ID 4 행의 값(30 + 40, 뒤 행 없음)입니다.\n- 100: 전체 합계(10 + 20 + 30 + 40)입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "윈도우 함수",
+      "ROWS"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sqld-sql-advanced-0021",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-advanced",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "[M 테이블]\nID | V\n1  | 10\n2  | 20\n3  | 30\n4  | 40\n\nSELECT ID, LAG(V) OVER (ORDER BY ID) FROM M; 에서 ID 가 1 인 행의 두 번째 컬럼 값은?",
+    "choices": [
+      "NULL",
+      "0",
+      "10",
+      "20"
+    ],
+    "answer": 1,
+    "oneLineConcept": "LAG=앞 행 값, LEAD=뒤 행 값. 없으면 NULL",
+    "explanation": "**LAG(V)** 는 정렬 순서에서 **바로 앞 행의 V** 를 가져옵니다. ID 1 은 첫 행이라 앞 행이 없으므로 **NULL** 입니다. (LAG(V, 1, 0) 처럼 세 번째 값을 주면 NULL 대신 그 값이 나옵니다)\n\n**틀린 선지**\n- 0: 기본값을 지정하지 않았으므로 0 이 아니라 NULL 입니다.\n- 10: 자기 행의 값입니다. LAG 는 앞 행의 값을 가져옵니다.\n- 20: 다음 행의 값으로, LEAD 의 결과입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "윈도우 함수",
+      "LAG"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sqld-sql-advanced-0022",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-advanced",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "[EMP 테이블]\nEMPNO | ENAME  | DEPTNO | SAL | COMM\n101   | 김철수 | 10     | 300 | NULL\n102   | 이영희 | 20     | 250 | 50\n103   | 박민수 | 10     | 400 | 0\n104   | 최지은 | 30     | 200 | NULL\n105   | 정우성 | NULL   | 350 | 100\n\nSELECT ENAME, SUM(SAL) OVER (PARTITION BY DEPTNO) AS DSUM FROM EMP; 에서 김철수 행의 DSUM 값은?",
+    "choices": [
+      "300",
+      "400",
+      "1500",
+      "700"
+    ],
+    "answer": 4,
+    "oneLineConcept": "PARTITION BY = 그룹별로 나누어 계산하되 행은 줄지 않음",
+    "explanation": "**PARTITION BY DEPTNO** 는 부서별로 나누어 계산하지만, GROUP BY 와 달리 **행은 그대로** 두고 각 행 옆에 결과를 붙입니다.\n\n김철수는 부서 10 → 부서 10 의 SAL 합계 = 300 + 400 = **700**\n\n**틀린 선지**\n- 300: 김철수 자신의 SAL 입니다. 부서 전체의 합계를 구합니다.\n- 400: 같은 부서 박민수의 SAL 입니다.\n- 1500: 전체 사원의 SAL 합계(OVER () 일 때)입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "윈도우 함수",
+      "PARTITION BY"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sqld-sql-advanced-0023",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-advanced",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "행이 7개인 테이블에서 NTILE(3) OVER (ORDER BY ID) 를 실행했다. ID 순서로 4번째 행의 결과는?",
+    "choices": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "answer": 2,
+    "oneLineConcept": "NTILE(n): 남는 행은 앞 묶음부터 하나씩 더 배정",
+    "explanation": "**NTILE(3)** 은 행을 3묶음으로 나눕니다.\n\n1. 7 ÷ 3 = 2 … 나머지 1\n2. 나머지 1행은 앞 묶음부터 하나씩 더 줌 → 묶음 크기 3, 2, 2\n3. 1~3번째 행 = 1, **4~5번째 행 = 2**, 6~7번째 행 = 3\n\n4번째 행은 **2**\n\n**틀린 선지**\n- 1: 첫 묶음은 3행(1~3번째)까지입니다.\n- 3: 묶음 크기를 2, 2, 3 으로 뒤에 더 준 경우입니다. 남는 행은 앞 묶음에 줍니다.\n- 4: NTILE(3) 은 1~3 만 돌려줍니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "윈도우 함수",
+      "NTILE"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "sqld-sql-advanced-0024",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-advanced",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "행이 5개인 EMP 테이블에서 Oracle 로 SELECT * FROM EMP WHERE ROWNUM = 2; 를 실행하면 몇 행이 나오는가?",
+    "choices": [
+      "0",
+      "1",
+      "2",
+      "5"
+    ],
+    "answer": 1,
+    "oneLineConcept": "ROWNUM 은 조건을 통과한 행에 1부터 붙음 → ROWNUM = 2 는 0행",
+    "explanation": "**ROWNUM** 은 WHERE 조건을 **통과한 행에 1부터 차례로** 붙는 번호입니다.\n\n1. 첫 행: ROWNUM 이 1 → 1 = 2 거짓 → 버림\n2. 다음 행: 앞 행이 버려졌으므로 또 ROWNUM 1 → 거짓 → 버림\n3. 끝까지 1 만 붙으므로 아무 행도 통과하지 못해 **0행**\n\nROWNUM 은 `ROWNUM <= N` 이나 `ROWNUM = 1` 처럼 써야 합니다.\n\n**틀린 선지**\n- 1: 2번째 행이 나올 것이라고 생각한 값입니다. ROWNUM 은 통과한 행에만 번호가 붙어 2가 될 수 없습니다.\n- 2: ROWNUM <= 2 일 때의 결과입니다.\n- 5: 조건이 없을 때의 결과입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "Top N",
+      "ROWNUM"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "sqld-sql-advanced-0025",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-advanced",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Oracle 에서 SAL 이 높은 순서로 상위 3명을 바르게 구하는 SQL 은?",
+    "choices": [
+      "SELECT * FROM (SELECT * FROM EMP WHERE ROWNUM <= 3) ORDER BY SAL DESC;",
+      "SELECT * FROM (SELECT * FROM EMP ORDER BY SAL DESC) WHERE ROWNUM <= 3;",
+      "SELECT * FROM EMP WHERE ROWNUM <= 3 ORDER BY SAL DESC;",
+      "SELECT * FROM EMP WHERE ROWNUM BETWEEN 1 AND 3 ORDER BY SAL;"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Top N: 인라인 뷰에서 먼저 정렬하고 바깥에서 ROWNUM",
+    "explanation": "ROWNUM 은 ORDER BY 보다 **먼저** 붙습니다. 그래서 정렬한 결과에서 위 3행을 자르려면 **인라인 뷰 안에서 먼저 정렬**하고, 바깥에서 ROWNUM <= 3 을 걸어야 합니다.\n\n**틀린 선지**\n- SELECT * FROM (SELECT * FROM EMP WHERE ROWNUM <= 3) ORDER BY SAL DESC;: 정렬하기 전에 3행을 자르므로 상위 3명이 아닐 수 있습니다.\n- SELECT * FROM EMP WHERE ROWNUM <= 3 ORDER BY SAL DESC;: 아무 3행을 먼저 뽑은 뒤 그 3행만 정렬합니다. 상위 3명이 아닐 수 있습니다.\n- SELECT * FROM EMP WHERE ROWNUM BETWEEN 1 AND 3 ORDER BY SAL;: 역시 먼저 3행을 뽑고, 정렬도 오름차순이라 맞지 않습니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "Top N",
+      "ROWNUM",
+      "인라인 뷰"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sqld-sql-advanced-0026",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-advanced",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "SAL 이 500, 400, 400, 300 인 4행이 있다. SQL Server 에서 SELECT TOP (2) WITH TIES * FROM EMP ORDER BY SAL DESC; 를 실행하면 몇 행이 나오는가?",
+    "choices": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "answer": 3,
+    "oneLineConcept": "TOP (N) WITH TIES = N 번째 행과 값이 같은 행까지 포함",
+    "explanation": "**WITH TIES** 는 N 번째 행과 정렬 값이 **같은 행을 함께** 보여 줍니다.\n\n1. SAL 내림차순: 500, 400, 400, 300\n2. TOP (2) → 500, 400\n3. 2번째 값 400 과 같은 행(400)을 하나 더 포함 → **3행**\n\n**틀린 선지**\n- 1: 행이 충분하면 TOP (2) 는 적어도 2행을 돌려줍니다.\n- 2: WITH TIES 가 없을 때의 결과입니다.\n- 4: 300 은 2번째 값 400 과 다르므로 포함되지 않습니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "Top N",
+      "WITH TIES",
+      "SQL Server"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sqld-sql-advanced-0027",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-advanced",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Oracle 계층형 질의에서 START WITH 절의 역할은?",
+    "choices": [
+      "부모와 자식의 연결 방향을 정한다.",
+      "계층 전개를 시작할 행(루트)을 정한다.",
+      "결과를 정렬하는 순서를 정한다.",
+      "계층 깊이(LEVEL)의 최댓값을 정한다."
+    ],
+    "answer": 2,
+    "oneLineConcept": "START WITH = 시작 행, CONNECT BY PRIOR = 부모·자식 연결",
+    "explanation": "Oracle 계층형 질의는 두 부분으로 이루어집니다.\n\n- **START WITH**: 어떤 행에서 **시작할지**(루트) 정함. 예: START WITH MGR IS NULL\n- CONNECT BY PRIOR: 부모와 자식을 **어떻게 연결할지** 정함\n\n**틀린 선지**\n- 부모와 자식의 연결 방향을 정한다: CONNECT BY PRIOR 의 역할입니다.\n- 결과를 정렬하는 순서를 정한다: ORDER BY 또는 ORDER SIBLINGS BY 의 역할입니다.\n- 계층 깊이(LEVEL)의 최댓값을 정한다: START WITH 가 깊이를 제한하지는 않습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "계층형 질의",
+      "START WITH"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "sqld-sql-advanced-0028",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-advanced",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "사원 테이블에 EMPNO(사원번호), MGR(관리자 사원번호)이 있다. Oracle 에서 CONNECT BY PRIOR EMPNO = MGR 로 계층을 전개하면 어느 방향으로 내려가는가?",
+    "choices": [
+      "관리자에서 부하 직원 쪽으로(위에서 아래로)",
+      "같은 관리자를 둔 동료끼리 옆으로",
+      "방향 없이 모든 사원을 한 번에",
+      "부하 직원에서 관리자 쪽으로(아래에서 위로)"
+    ],
+    "answer": 1,
+    "oneLineConcept": "PRIOR 자식키(EMPNO) = 부모키(MGR) → 위에서 아래로(순방향)",
+    "explanation": "**PRIOR** 가 붙은 쪽이 '이미 찾은 앞 행'입니다. PRIOR EMPNO = MGR 은 '앞 행의 사원번호를 MGR 로 가진 행', 즉 **앞 행이 관리하는 부하 직원**을 다음으로 찾습니다. 그래서 **위(관리자)에서 아래(부하)로** 내려가는 순방향 전개입니다. 반대로 PRIOR MGR = EMPNO 는 아래에서 위로 올라갑니다.\n\n**틀린 선지**\n- 같은 관리자를 둔 동료끼리 옆으로: 계층형 질의는 부모·자식 방향으로만 전개합니다.\n- 방향 없이 모든 사원을 한 번에: CONNECT BY 는 정해진 방향으로 한 단계씩 전개합니다.\n- 부하 직원에서 관리자 쪽으로(아래에서 위로): PRIOR MGR = EMPNO 일 때의 방향(역방향)입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "계층형 질의",
+      "CONNECT BY PRIOR"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sqld-sql-advanced-0029",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-advanced",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "[EMP2 테이블]\nEMPNO | ENAME  | MGR\n1     | 대표   | NULL\n2     | 김부장 | 1\n3     | 이부장 | 1\n4     | 박과장 | 2\n5     | 최대리 | 4\n6     | 정사원 | 3\n\nOracle 에서 다음 SQL 을 실행하면 몇 행이 나오는가?\n\nSELECT LEVEL, ENAME FROM EMP2\nSTART WITH EMPNO = 2\nCONNECT BY PRIOR EMPNO = MGR;",
+    "choices": [
+      "2",
+      "3",
+      "4",
+      "6"
+    ],
+    "answer": 2,
+    "oneLineConcept": "START WITH 행부터 그 아래 자식만 전개 (형제·상위는 제외)",
+    "explanation": "1. 시작 행: EMPNO 2 김부장 (LEVEL 1)\n2. PRIOR EMPNO = MGR → MGR 이 2 인 행: 박과장 (LEVEL 2)\n3. MGR 이 4 인 행: 최대리 (LEVEL 3)\n4. MGR 이 5 인 행: 없음 → 끝\n\n결과 **3행** (김부장, 박과장, 최대리). 이부장·정사원은 김부장 아래가 아니라 나오지 않습니다.\n\n**틀린 선지**\n- 2: 시작 행인 김부장을 빼고 센 값입니다. START WITH 행도 결과에 들어갑니다.\n- 4: 대표까지 넣은 값입니다. 대표는 김부장의 위라 순방향 전개에서 나오지 않습니다.\n- 6: 모든 행을 센 값으로, START WITH MGR IS NULL 처럼 대표에서 시작했을 때의 결과입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "계층형 질의",
+      "LEVEL"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "sqld-sql-advanced-0030",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-advanced",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Oracle 계층형 질의에서 LEVEL 가상 컬럼에 대한 설명으로 옳은 것은?",
+    "choices": [
+      "루트(시작) 행의 LEVEL 은 0 이다.",
+      "LEVEL 은 테이블에 직접 만들어야 쓸 수 있는 컬럼이다.",
+      "루트(시작) 행의 LEVEL 은 1 이고, 아래로 한 단계 내려갈 때마다 1씩 커진다.",
+      "리프(가장 아래) 행의 LEVEL 은 언제나 1 이다."
+    ],
+    "answer": 3,
+    "oneLineConcept": "LEVEL: 루트 1, 자식 2, 손자 3 …",
+    "explanation": "**LEVEL** 은 계층형 질의에서 자동으로 생기는 가상 컬럼(의사 컬럼)으로, 그 행이 계층의 몇 번째 단계인지 알려 줍니다. **루트가 1**, 그 자식이 2, 손자가 3 입니다.\n\n**틀린 선지**\n- 루트(시작) 행의 LEVEL 은 0 이다: 루트는 0 이 아니라 1 입니다.\n- LEVEL 은 테이블에 직접 만들어야 쓸 수 있는 컬럼이다: 계층형 질의에서 자동으로 쓸 수 있는 가상 컬럼입니다.\n- 리프(가장 아래) 행의 LEVEL 은 언제나 1 이다: 리프는 가장 아래 단계라 보통 LEVEL 이 가장 큽니다. 리프인지는 CONNECT_BY_ISLEAF 로 확인합니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "계층형 질의",
+      "LEVEL"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sqld-sql-advanced-0031",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-advanced",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "[EMP2 테이블]\nEMPNO | ENAME  | MGR\n1     | 대표   | NULL\n2     | 김부장 | 1\n3     | 이부장 | 1\n4     | 박과장 | 2\n5     | 최대리 | 4\n6     | 정사원 | 3\n\nOracle 에서 START WITH MGR IS NULL CONNECT BY PRIOR EMPNO = MGR 로 전개했을 때, CONNECT_BY_ISLEAF 값이 1 인 행은 몇 개인가?",
+    "choices": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "answer": 2,
+    "oneLineConcept": "CONNECT_BY_ISLEAF = 자식이 없는 행(리프)이면 1",
+    "explanation": "**CONNECT_BY_ISLEAF** 는 그 행 아래에 **자식이 없으면(리프) 1**, 있으면 0 입니다.\n\n1. 대표 → 김부장·이부장 (자식 있음)\n2. 김부장 → 박과장 → 최대리 (최대리는 자식 없음)\n3. 이부장 → 정사원 (정사원은 자식 없음)\n\n리프는 최대리, 정사원 → **2개**\n\n**틀린 선지**\n- 1: 최대리와 정사원 가운데 하나만 센 값입니다.\n- 3: 박과장까지 센 값입니다. 박과장 아래에는 최대리가 있습니다.\n- 4: 대표를 뺀 나머지를 모두 센 값입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "계층형 질의",
+      "CONNECT_BY_ISLEAF"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "sqld-sql-advanced-0032",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-advanced",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "[EMP2 테이블]\nEMPNO | ENAME  | MGR\n1     | 대표   | NULL\n2     | 김부장 | 1\n3     | 이부장 | 1\n4     | 박과장 | 2\n5     | 최대리 | 4\n6     | 정사원 | 3\n\nOracle 에서 다음 SQL 을 실행했을 때 최대리 행의 P 값은?\n\nSELECT ENAME, SYS_CONNECT_BY_PATH(ENAME, '/') AS P\nFROM EMP2\nSTART WITH MGR IS NULL\nCONNECT BY PRIOR EMPNO = MGR;",
+    "choices": [
+      "대표/김부장/박과장/최대리",
+      "/최대리/박과장/김부장/대표",
+      "/김부장/박과장/최대리",
+      "/대표/김부장/박과장/최대리"
+    ],
+    "answer": 4,
+    "oneLineConcept": "SYS_CONNECT_BY_PATH = 루트부터 현재 행까지 경로, 구분자로 시작",
+    "explanation": "**SYS_CONNECT_BY_PATH(컬럼, '구분자')** 는 **루트부터 현재 행까지** 지나온 값을 구분자로 이어 붙입니다. 각 값 앞에 구분자가 붙으므로 맨 앞도 '/' 로 시작합니다.\n\n대표 → 김부장 → 박과장 → 최대리 → **'/대표/김부장/박과장/최대리'**\n\n**틀린 선지**\n- 대표/김부장/박과장/최대리: 맨 앞의 구분자 '/' 가 빠졌습니다. 값마다 앞에 구분자가 붙습니다.\n- /최대리/박과장/김부장/대표: 경로를 거꾸로(아래에서 위로) 적은 것입니다. 루트부터 적습니다.\n- /김부장/박과장/최대리: 루트(대표)를 뺀 것입니다. START WITH MGR IS NULL 이라 대표에서 시작합니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "계층형 질의",
+      "SYS_CONNECT_BY_PATH"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sqld-sql-advanced-0033",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-advanced",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "한 테이블을 서로 다른 별칭 두 개로 불러 자기 자신과 조인하는 것을 무엇이라 하는가?",
+    "choices": [
+      "자연 조인(Natural Join)",
+      "크로스 조인(Cross Join)",
+      "셀프 조인(Self Join)",
+      "외부 조인(Outer Join)"
+    ],
+    "answer": 3,
+    "oneLineConcept": "셀프 조인 = 같은 테이블을 별칭 두 개로 조인 (예: 사원-관리자)",
+    "explanation": "**셀프 조인**은 같은 테이블을 별칭 두 개(예: E, M)로 불러 조인하는 방법입니다. 사원과 그 관리자가 같은 사원 테이블에 있을 때 `EMP2 E JOIN EMP2 M ON E.MGR = M.EMPNO` 처럼 써서 사원 이름과 관리자 이름을 한 줄에 보여 줍니다.\n\n**틀린 선지**\n- 자연 조인(Natural Join): 이름이 같은 컬럼으로 자동 조인하는 방식입니다.\n- 크로스 조인(Cross Join): 조건 없이 모든 조합을 만드는 조인입니다.\n- 외부 조인(Outer Join): 짝이 없는 행도 남기는 조인입니다. 같은 테이블끼리인지와는 관계없습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "셀프 조인"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "sqld-sql-advanced-0034",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-advanced",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "[EMP2 테이블]\nEMPNO | ENAME  | MGR\n1     | 대표   | NULL\n2     | 김부장 | 1\n3     | 이부장 | 1\n4     | 박과장 | 2\n5     | 최대리 | 4\n6     | 정사원 | 3\n\n다음 SQL 을 실행하면 몇 행이 나오는가?\n\nSELECT E.ENAME, M.ENAME AS MGR_NAME\nFROM EMP2 E JOIN EMP2 M\nON E.MGR = M.EMPNO;",
+    "choices": [
+      "4",
+      "5",
+      "6",
+      "36"
+    ],
+    "answer": 2,
+    "oneLineConcept": "셀프 INNER 조인: 관리자가 없는(MGR NULL) 행은 빠짐",
+    "explanation": "E 는 사원, M 은 관리자 역할입니다. E.MGR = M.EMPNO 로 INNER 조인하므로 **관리자가 있는 사원만** 나옵니다.\n\n1. 김부장·이부장 → 대표, 박과장 → 김부장, 최대리 → 박과장, 정사원 → 이부장: 5행\n2. 대표는 MGR 이 NULL 이라 짝이 없어 빠짐\n\n결과 **5행**\n\n**틀린 선지**\n- 4: 한 사원을 빠뜨린 값입니다.\n- 6: 대표까지 넣은 값으로, LEFT OUTER JOIN 이었을 때의 결과입니다.\n- 36: 조건 없는 CROSS JOIN(6 × 6)의 결과입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "셀프 조인",
+      "결과 행 수"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "sqld-sql-advanced-0035",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-advanced",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "지역별·상품별 매출처럼 '행'으로 나열된 값을 상품 A, 상품 B 같은 '열'로 펼쳐 보여 주는 Oracle 구문은?",
+    "choices": [
+      "ROLLUP",
+      "UNION ALL",
+      "UNPIVOT",
+      "PIVOT"
+    ],
+    "answer": 4,
+    "oneLineConcept": "PIVOT = 행 → 열로 펼침, UNPIVOT = 열 → 행으로 접음",
+    "explanation": "- **PIVOT**: 행으로 나열된 값을 **열로 펼칩니다**(가로로 돌림).\n- UNPIVOT: 반대로 여러 열을 **행으로 접습니다**(세로로 돌림).\n\n예: PRODUCT 값 'A', 'B' 를 A 열, B 열로 만드는 것이 PIVOT 입니다.\n\n**틀린 선지**\n- ROLLUP: 소계와 합계 행을 더하는 그룹 함수입니다.\n- UNION ALL: 두 결과를 위아래로 이어 붙입니다. 행을 열로 펼치지 않습니다.\n- UNPIVOT: 열을 행으로 바꾸는 반대 방향입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "PIVOT"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sqld-sql-advanced-0036",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-advanced",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "[분기 매출 테이블]\nYEAR | Q1 | Q2 | Q3 | Q4\n2025 | 10 | 20 | 30 | 40\n\n위처럼 Q1~Q4 열로 나뉜 값을 (YEAR, 분기, 매출) 형태의 4개 행으로 바꿀 때 쓰는 Oracle 구문은?",
+    "choices": [
+      "UNPIVOT",
+      "CUBE",
+      "GROUPING SETS",
+      "PIVOT"
+    ],
+    "answer": 1,
+    "oneLineConcept": "UNPIVOT = 여러 열을 행으로 바꿈",
+    "explanation": "**UNPIVOT** 은 여러 열(Q1~Q4)에 나뉜 값을 **행으로** 바꿉니다. 이 표에 쓰면 (2025, Q1, 10), (2025, Q2, 20), (2025, Q3, 30), (2025, Q4, 40) 의 4행이 됩니다.\n\n**틀린 선지**\n- CUBE: 모든 조합의 소계를 만드는 그룹 함수입니다.\n- GROUPING SETS: 여러 기준의 소계를 함께 구하는 그룹 함수입니다.\n- PIVOT: 행을 열로 펼치는 반대 방향입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "UNPIVOT"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sqld-sql-advanced-0037",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-advanced",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "[SALES 테이블]\nREGION | PRODUCT | AMT\n서울   | A       | 10\n서울   | B       | 20\n부산   | A       | 30\n부산   | B       | 40\n\nOracle 에서 다음 SQL 을 실행한 결과의 행 수와 열 수는?\n\nSELECT *\nFROM (SELECT REGION, PRODUCT, AMT FROM SALES)\nPIVOT (SUM(AMT) FOR PRODUCT IN ('A' AS A, 'B' AS B));",
+    "choices": [
+      "4행 3열",
+      "2행 2열",
+      "1행 4열",
+      "2행 3열"
+    ],
+    "answer": 4,
+    "oneLineConcept": "PIVOT 결과: FOR·집계에 안 쓴 컬럼이 행 기준, IN 목록이 새 열",
+    "explanation": "PIVOT 에서 집계(AMT)와 FOR(PRODUCT)에 쓰지 않은 **REGION** 이 행을 나누는 기준이 됩니다.\n\n1. 행: REGION 값 서울, 부산 → 2행\n2. 열: REGION + IN 목록 A, B → 3열\n\n결과는 (서울, 10, 20), (부산, 30, 40) 의 **2행 3열** 입니다.\n\n**틀린 선지**\n- 4행 3열: PIVOT 하기 전처럼 원래 행 수를 그대로 둔 것입니다.\n- 2행 2열: 행을 나누는 기준인 REGION 열을 빠뜨린 것입니다.\n- 1행 4열: REGION 도 열로 펼친 것처럼 본 것입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "PIVOT",
+      "결과 모양"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sqld-sql-advanced-0038",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-advanced",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Oracle 에서 WHERE REGEXP_LIKE(ENAME, '^A') 조건에 맞는 이름은?",
+    "choices": [
+      "A 가 들어 있는 모든 이름",
+      "A 가 들어 있지 않은 이름",
+      "A 로 시작하는 이름",
+      "A 로 끝나는 이름"
+    ],
+    "answer": 3,
+    "oneLineConcept": "정규 표현식: ^ 는 시작, $ 는 끝",
+    "explanation": "정규 표현식에서 **^ 는 문자열의 시작**, $ 는 끝을 뜻합니다. '^A' 는 'A 로 시작함'이므로 **A 로 시작하는 이름**이 조건에 맞습니다.\n\n**틀린 선지**\n- A 가 들어 있는 모든 이름: '^' 없이 'A' 만 썼을 때의 뜻입니다.\n- A 가 들어 있지 않은 이름: 대괄호 안의 ^ (예: [^A])는 '그 글자가 아님'을 뜻하지만, 여기서는 맨 앞의 ^ 라 시작을 뜻합니다.\n- A 로 끝나는 이름: 'A$' 일 때의 뜻입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "정규 표현식",
+      "REGEXP_LIKE"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sqld-sql-advanced-0039",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-advanced",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Oracle 에서 SELECT REGEXP_SUBSTR('ab12cd345', '[0-9]+') FROM DUAL; 의 결과는?",
+    "choices": [
+      "12",
+      "345",
+      "12345",
+      "1"
+    ],
+    "answer": 1,
+    "oneLineConcept": "REGEXP_SUBSTR 은 처음 맞는 부분 하나만, [0-9]+ 는 숫자 1개 이상 연속",
+    "explanation": "**[0-9]+** 는 '숫자가 1개 이상 이어진 부분'입니다. **REGEXP_SUBSTR** 은 따로 지정하지 않으면 **처음으로 맞는 부분 하나**만 돌려줍니다.\n\n1. 'ab12cd345' 에서 처음 이어진 숫자: 12\n2. 결과 **'12'**\n\n**틀린 선지**\n- 345: 두 번째로 맞는 부분입니다. 네 번째 인자로 2 를 주어야 나옵니다.\n- 12345: 숫자를 모두 이어 붙인 것으로, REGEXP_SUBSTR 은 떨어진 부분을 합치지 않습니다.\n- 1: + 는 1개 이상 이어진 숫자를 모두 잡으므로 12 가 나옵니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "정규 표현식",
+      "REGEXP_SUBSTR"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "sqld-sql-advanced-0040",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-advanced",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Oracle 에서 SELECT REGEXP_REPLACE('a1b2c3', '[0-9]', '') FROM DUAL; 의 결과는?",
+    "choices": [
+      "a b c",
+      "abc",
+      "123",
+      "a1b2c3"
+    ],
+    "answer": 2,
+    "oneLineConcept": "REGEXP_REPLACE: 패턴에 맞는 부분을 모두 바꿈",
+    "explanation": "**REGEXP_REPLACE(문자열, 패턴, 바꿀 문자)** 는 패턴에 맞는 부분을 **모두** 바꿉니다. [0-9] 는 숫자 한 글자이고, 바꿀 문자가 '' 이므로 숫자가 모두 지워집니다.\n\n'a1b2c3' → **'abc'**\n\n**틀린 선지**\n- a b c: 숫자를 공백으로 바꾼 결과입니다. 바꿀 문자가 '' 이므로 지워집니다.\n- 123: 숫자만 남긴 것으로, 반대로 문자를 지웠을 때의 결과입니다.\n- a1b2c3: 아무것도 바뀌지 않은 값입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "정규 표현식",
+      "REGEXP_REPLACE"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "sqld-sql-advanced-0041",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-advanced",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "서브쿼리에 대한 설명으로 옳지 않은 것은?",
+    "choices": [
+      "상관 서브쿼리는 메인쿼리의 컬럼을 서브쿼리 안에서 쓴다.",
+      "서브쿼리는 괄호로 감싸서 쓴다.",
+      "단일행 서브쿼리의 결과가 2행 이상이면 오류가 발생한다.",
+      "메인쿼리는 WHERE 절 서브쿼리의 컬럼을 SELECT 절에서 자유롭게 쓸 수 있다."
+    ],
+    "answer": 4,
+    "oneLineConcept": "메인쿼리는 인라인 뷰 컬럼만 쓸 수 있고, WHERE 서브쿼리 컬럼은 못 씀",
+    "explanation": "WHERE 절의 서브쿼리는 조건을 판단하는 데만 쓰이므로 **메인쿼리가 그 서브쿼리의 컬럼을 SELECT 절에서 쓸 수 없습니다.** 메인쿼리가 서브쿼리 컬럼을 쓰려면 FROM 절의 **인라인 뷰**여야 합니다.\n\n**틀린 선지**\n- 상관 서브쿼리는 메인쿼리의 컬럼을 서브쿼리 안에서 쓴다: 옳은 설명입니다. 메인쿼리 행마다 서브쿼리가 다시 실행되는 것처럼 동작합니다.\n- 서브쿼리는 괄호로 감싸서 쓴다: 옳은 설명입니다.\n- 단일행 서브쿼리의 결과가 2행 이상이면 오류가 발생한다: 옳은 설명입니다. 이때는 IN 같은 다중행 연산자를 써야 합니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "서브쿼리"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "sqld-sql-advanced-0042",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-advanced",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "집합 연산자에 대한 설명으로 옳지 않은 것은?",
+    "choices": [
+      "UNION 으로 합치는 두 SELECT 문의 컬럼 수는 서로 달라도 된다.",
+      "결과의 컬럼 이름은 첫 번째 SELECT 문을 따른다.",
+      "ORDER BY 는 집합 연산 전체의 맨 마지막에 한 번만 쓴다.",
+      "UNION ALL 은 중복 제거를 하지 않아 보통 UNION 보다 빠르다."
+    ],
+    "answer": 1,
+    "oneLineConcept": "집합 연산: 컬럼 수·데이터 형식이 같아야 함, ORDER BY 는 맨 끝 한 번",
+    "explanation": "집합 연산자(UNION, UNION ALL, INTERSECT, MINUS)로 합치는 SELECT 문들은 **컬럼 수가 같고** 같은 위치의 데이터 형식이 맞아야 합니다. 컬럼 수가 다르면 오류가 납니다.\n\n**틀린 선지**\n- 결과의 컬럼 이름은 첫 번째 SELECT 문을 따른다: 옳은 설명입니다.\n- ORDER BY 는 집합 연산 전체의 맨 마지막에 한 번만 쓴다: 옳은 설명입니다.\n- UNION ALL 은 중복 제거를 하지 않아 보통 UNION 보다 빠르다: 옳은 설명입니다. UNION 은 중복을 없애는 작업이 더 필요합니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "집합 연산자"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "sqld-sql-advanced-0043",
+    "certId": "sqld",
+    "subjectId": "sql",
+    "chapterId": "sql-advanced",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "윈도우 함수에 대한 설명으로 옳지 않은 것은?",
+    "choices": [
+      "OVER 절 안에 PARTITION BY 와 ORDER BY 를 쓸 수 있다.",
+      "윈도우 함수를 쓰면 결과 행 수가 PARTITION BY 그룹 수만큼 줄어든다.",
+      "SUM·AVG 같은 집계 함수도 OVER 절과 함께 윈도우 함수로 쓸 수 있다.",
+      "ROWS 는 행 위치를, RANGE 는 값의 범위를 기준으로 윈도우를 정한다."
+    ],
+    "answer": 2,
+    "oneLineConcept": "윈도우 함수는 행 수를 줄이지 않음 (GROUP BY 와 다름)",
+    "explanation": "**윈도우 함수**는 그룹별로 계산하더라도 **원래 행을 그대로 두고** 각 행 옆에 결과를 붙입니다. 결과 행 수가 그룹 수로 줄어드는 것은 GROUP BY 의 특징입니다.\n\n**틀린 선지**\n- OVER 절 안에 PARTITION BY 와 ORDER BY 를 쓸 수 있다: 옳은 설명입니다.\n- SUM·AVG 같은 집계 함수도 OVER 절과 함께 윈도우 함수로 쓸 수 있다: 옳은 설명입니다.\n- ROWS 는 행 위치를, RANGE 는 값의 범위를 기준으로 윈도우를 정한다: 옳은 설명입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-01",
+    "tags": [
+      "윈도우 함수"
+    ],
+    "levelLock": true
+  }
+]
