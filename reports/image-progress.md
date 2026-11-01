@@ -44,6 +44,10 @@
 35. KR beautician-makeup · face-color-analysis (얼굴형별 하이라이트·셰이딩 위치)
 36. US epa-608 · high-pressure-recovery (회수 장치·실린더 연결도)
 37. KR sqld · sql-advanced (계층형 질의 트리)
+38. KR architecture-engineer · design-drawings (KS 건축제도 선 종류·재료 표시 기호)
+39. KR architecture-engineer · hvac-plumbing (트랩 모양·배수 통기 계통)
+40. US cna-nurse-aide · vital-signs (체온계·혈압계 눈금 읽기)
+41. US nclex-rn · physiological-adaptation (ECG 리듬 판독 추가)
 
 ## 기록
 
