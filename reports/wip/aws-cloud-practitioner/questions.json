@@ -1,0 +1,2954 @@
+[
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-concepts",
+    "level": "basic",
+    "stem": "A small company wants to stop buying servers up front and instead pay each month only for the computing it actually uses. Which benefit of the AWS Cloud does this describe?",
+    "choices": [
+      "Trade fixed expense for variable expense",
+      "Increase speed and agility",
+      "Go global in minutes",
+      "Benefit from massive economies of scale"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Pay as you go = fixed expense becomes variable",
+    "explanation": "With the cloud you **trade fixed expense for variable expense**. Instead of paying a large amount up front for servers and data centers, you pay only for the resources you use.\n\n**Wrong choices**\n- Benefit from massive economies of scale: This is about AWS's large size lowering prices, not about paying only for what you use.\n- Increase speed and agility: This is about getting resources faster, not about how you pay.\n- Go global in minutes: This is about reaching users in other parts of the world quickly.",
+    "frequency": 5,
+    "tags": [
+      "Cloud benefits"
+    ],
+    "distractorOrder": "4|2|3"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-concepts",
+    "level": "basic",
+    "stem": "A garden supply store gets very busy every spring. In the past it had to predict months ahead how many servers it would need. Which AWS Cloud benefit removes this problem?",
+    "choices": [
+      "Benefit from massive economies of scale",
+      "Go global in minutes",
+      "Stop guessing capacity",
+      "Stop spending money running and maintaining data centers"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Scale with demand = stop guessing capacity",
+    "explanation": "In the cloud you can add or remove resources as demand changes, so you **stop guessing capacity**. You no longer pay for idle servers or run short when traffic grows.\n\n**Wrong choices**\n- Go global in minutes: This is about reaching new countries quickly, not about sizing for demand.\n- Benefit from massive economies of scale: This is about lower prices from AWS's size.\n- Stop spending money running and maintaining data centers: This is about letting AWS handle the building, power, and hardware.",
+    "frequency": 5,
+    "tags": [
+      "Cloud benefits"
+    ],
+    "distractorOrder": "2|1|4"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-concepts",
+    "level": "basic",
+    "stem": "AWS buys hardware and runs data centers for hundreds of thousands of customers, which lets it offer lower prices. Which cloud benefit is this?",
+    "choices": [
+      "Benefit from massive economies of scale",
+      "Trade fixed expense for variable expense",
+      "Stop guessing capacity",
+      "Increase speed and agility"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Huge shared usage = lower prices (economies of scale)",
+    "explanation": "Because many customers share AWS, AWS can buy and operate at very large volume. These **economies of scale** turn into lower pay-as-you-go prices for customers.\n\n**Wrong choices**\n- Trade fixed expense for variable expense: This is about paying as you go instead of paying up front.\n- Stop guessing capacity: This is about matching resources to demand.\n- Increase speed and agility: This is about getting new resources quickly.",
+    "frequency": 4,
+    "tags": [
+      "Cloud benefits"
+    ],
+    "distractorOrder": "2|3|4"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-concepts",
+    "level": "basic",
+    "stem": "A company in the United States wants to serve new customers in Europe and Asia with low delay, and it wants to set this up in a few clicks instead of building new data centers. Which cloud benefit does this show?",
+    "choices": [
+      "Benefit from massive economies of scale",
+      "Stop guessing capacity",
+      "Trade fixed expense for variable expense",
+      "Go global in minutes"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Many Regions worldwide = go global in minutes",
+    "explanation": "AWS has Regions around the world, so you can deploy an application close to users in other countries quickly. This benefit is called **go global in minutes**.\n\n**Wrong choices**\n- Benefit from massive economies of scale: This is about lower prices, not about reaching other countries.\n- Stop guessing capacity: This is about sizing resources for demand.\n- Trade fixed expense for variable expense: This is about how you pay, not where you deploy.",
+    "frequency": 4,
+    "tags": [
+      "Cloud benefits",
+      "Global infrastructure"
+    ],
+    "distractorOrder": "1|2|3"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-concepts",
+    "level": "basic",
+    "stem": "An online shop's web servers are added automatically when many shoppers visit and removed automatically when traffic drops. Which cloud concept is this?",
+    "choices": [
+      "High availability",
+      "Data residency",
+      "Elasticity",
+      "Durability"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Grow and shrink automatically = elasticity",
+    "explanation": "**Elasticity** is the ability to add resources when demand rises and remove them when demand falls, often automatically. You pay only for what you use at each moment.\n\n**Wrong choices**\n- High availability: High availability means a system keeps running when a part fails.\n- Durability: Durability means stored data is not lost.\n- Data residency: Data residency is about which country or Region data is kept in.",
+    "frequency": 5,
+    "tags": [
+      "Elasticity"
+    ],
+    "distractorOrder": "1|4|2"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-concepts",
+    "level": "basic",
+    "stem": "Which pillar of the AWS Well-Architected Framework focuses on protecting data, systems, and assets?",
+    "choices": [
+      "Operational excellence",
+      "Security",
+      "Reliability",
+      "Performance efficiency"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Protect data and systems = Security pillar",
+    "explanation": "The **Security** pillar covers protecting information, systems, and assets, for example with access control, encryption, and monitoring.\n\n**Wrong choices**\n- Reliability: Reliability is about recovering from failures and meeting demand.\n- Operational excellence: Operational excellence is about running and improving systems day to day.\n- Performance efficiency: Performance efficiency is about using computing resources efficiently.",
+    "frequency": 4,
+    "tags": [
+      "Well-Architected Framework"
+    ],
+    "distractorOrder": "3|1|4"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-concepts",
+    "level": "basic",
+    "stem": "Which pillar of the AWS Well-Architected Framework focuses on reducing the environmental impact of running workloads in the cloud?",
+    "choices": [
+      "Sustainability",
+      "Performance efficiency",
+      "Cost optimization",
+      "Reliability"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Environmental impact = Sustainability pillar",
+    "explanation": "The **Sustainability** pillar is about reducing energy use and environmental impact, for example by using only the resources you need. It is the sixth pillar of the framework.\n\n**Wrong choices**\n- Cost optimization: Cost optimization is about avoiding unneeded spending.\n- Performance efficiency: Performance efficiency is about using resources efficiently to meet requirements.\n- Reliability: Reliability is about a workload working correctly and recovering from failures.",
+    "frequency": 4,
+    "tags": [
+      "Well-Architected Framework"
+    ],
+    "distractorOrder": "3|2|4"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-concepts",
+    "level": "basic",
+    "stem": "Which pillar of the AWS Well-Architected Framework focuses on a workload doing its job correctly and recovering quickly from failures?",
+    "choices": [
+      "Reliability",
+      "Performance efficiency",
+      "Security",
+      "Operational excellence"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Recover from failure = Reliability pillar",
+    "explanation": "The **Reliability** pillar is about a workload performing its function correctly and consistently, and recovering from failures such as a lost server or network problem.\n\n**Wrong choices**\n- Performance efficiency: Performance efficiency is about using resources efficiently, not recovering from failures.\n- Operational excellence: Operational excellence is about running, monitoring, and improving operations.\n- Security: Security is about protecting data and systems.",
+    "frequency": 4,
+    "tags": [
+      "Well-Architected Framework"
+    ],
+    "distractorOrder": "2|4|3"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-concepts",
+    "level": "basic",
+    "stem": "A company wants to move its application to AWS exactly as it is, without changing the code. This is often called \"lift and shift.\" Which migration strategy is this?",
+    "choices": [
+      "Refactor",
+      "Rehost",
+      "Replatform",
+      "Repurchase"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Lift and shift = Rehost",
+    "explanation": "**Rehost** (lift and shift) moves an application to the cloud without changing it. It is often the fastest way to migrate.\n\n**Wrong choices**\n- Replatform: Replatform makes a few changes, such as moving to a managed database.\n- Refactor: Refactor changes the design and code of the application.\n- Repurchase: Repurchase replaces the application with a different product.",
+    "frequency": 5,
+    "tags": [
+      "Migration strategies"
+    ],
+    "distractorOrder": "3|1|4"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-concepts",
+    "level": "basic",
+    "stem": "A company decides to stop running its own customer management software and switch to a software-as-a-service (SaaS) product instead. Which migration strategy is this?",
+    "choices": [
+      "Retain",
+      "Refactor",
+      "Rehost",
+      "Repurchase"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Switch to a new product (often SaaS) = Repurchase",
+    "explanation": "**Repurchase** means moving to a different product, often a SaaS product, instead of moving the old software.\n\n**Wrong choices**\n- Rehost: Rehost moves the same application to the cloud unchanged.\n- Refactor: Refactor rewrites the existing application for the cloud.\n- Retain: Retain keeps the application where it is for now.",
+    "frequency": 4,
+    "tags": [
+      "Migration strategies"
+    ],
+    "distractorOrder": "3|2|1"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-concepts",
+    "level": "basic",
+    "stem": "During migration planning, a company finds an old reporting application that nobody uses anymore. It decides to shut it down. Which migration strategy is this?",
+    "choices": [
+      "Rehost",
+      "Relocate",
+      "Retire",
+      "Retain"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Turn off what is not needed = Retire",
+    "explanation": "**Retire** means turning off applications that are no longer needed. It saves money and means there is less to migrate.\n\n**Wrong choices**\n- Retain: Retain keeps an application running where it is, not shut down.\n- Relocate: Relocate moves an application to the cloud at the virtualization level.\n- Rehost: Rehost moves the application to the cloud unchanged.",
+    "frequency": 4,
+    "tags": [
+      "Migration strategies"
+    ],
+    "distractorOrder": "4|2|1"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-concepts",
+    "level": "basic",
+    "stem": "With Amazon EC2, AWS manages the physical servers, and the customer manages the operating system and applications on their virtual servers. Which cloud computing model is this?",
+    "choices": [
+      "Platform as a Service (PaaS)",
+      "Software as a Service (SaaS)",
+      "Infrastructure as a Service (IaaS)",
+      "On-premises hosting"
+    ],
+    "answer": 3,
+    "oneLineConcept": "EC2 = IaaS (you manage the OS)",
+    "explanation": "**Infrastructure as a Service (IaaS)** gives you basic building blocks such as virtual servers, storage, and networking. You control the operating system and what runs on it.\n\n**Wrong choices**\n- Platform as a Service (PaaS): With PaaS the provider also manages the operating system, and you mostly manage your application.\n- Software as a Service (SaaS): With SaaS you just use finished software and manage almost nothing.\n- On-premises hosting: On-premises means the company owns and runs its own hardware.",
+    "frequency": 4,
+    "tags": [
+      "Cloud computing models"
+    ],
+    "distractorOrder": "1|2|4"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-concepts",
+    "level": "basic",
+    "stem": "A company keeps some applications in its own data center and runs others in AWS, with a connection between the two. Which deployment model is this?",
+    "choices": [
+      "On-premises deployment",
+      "Hybrid deployment",
+      "Cloud deployment (all in the cloud)",
+      "Single-Region deployment"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Some on-premises + some cloud, connected = hybrid",
+    "explanation": "A **hybrid deployment** connects cloud resources with resources that stay on premises. Companies often use it during a gradual migration or when some systems must stay local.\n\n**Wrong choices**\n- Cloud deployment (all in the cloud): An all-in cloud deployment runs everything in the cloud.\n- On-premises deployment: An on-premises (private) deployment runs everything in the company's own data center.\n- Single-Region deployment: This describes where cloud resources run, not a mix of cloud and on-premises.",
+    "frequency": 4,
+    "tags": [
+      "Deployment models"
+    ],
+    "distractorOrder": "3|1|4"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-concepts",
+    "level": "basic",
+    "stem": "What is the AWS Cloud Adoption Framework (AWS CAF) used for?",
+    "choices": [
+      "Scanning servers for software vulnerabilities",
+      "Reviewing a workload against six pillars of good design",
+      "Guiding an organization as it plans and carries out its move to the cloud",
+      "Estimating the monthly cost of AWS services"
+    ],
+    "answer": 3,
+    "oneLineConcept": "AWS CAF = guidance for cloud adoption",
+    "explanation": "The **AWS Cloud Adoption Framework (AWS CAF)** gives guidance to help an organization plan and carry out cloud adoption. It groups advice into six perspectives: Business, People, Governance, Platform, Security, and Operations.\n\n**Wrong choices**\n- Reviewing a workload against six pillars of good design: That is the AWS Well-Architected Framework.\n- Estimating the monthly cost of AWS services: That is the AWS Pricing Calculator.\n- Scanning servers for software vulnerabilities: That is Amazon Inspector.",
+    "frequency": 4,
+    "tags": [
+      "AWS CAF"
+    ],
+    "distractorOrder": "2|4|1"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-concepts",
+    "level": "intermediate",
+    "stem": "Which pillar of the AWS Well-Architected Framework is about using computing resources efficiently to meet requirements, and keeping that efficiency as demand changes and new technology appears?",
+    "choices": [
+      "Reliability",
+      "Performance efficiency",
+      "Operational excellence",
+      "Cost optimization"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Efficient resources as needs change = Performance efficiency",
+    "explanation": "The **Performance efficiency** pillar is about choosing the right resource types and sizes, and reviewing them as needs and technology change.\n\n**Wrong choices**\n- Cost optimization: Cost optimization focuses on avoiding unneeded spending, not on meeting performance needs.\n- Reliability: Reliability focuses on recovering from failures.\n- Operational excellence: Operational excellence focuses on running and improving operations.",
+    "frequency": 4,
+    "tags": [
+      "Well-Architected Framework"
+    ],
+    "distractorOrder": "4|1|3"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-concepts",
+    "level": "intermediate",
+    "stem": "A team makes small, frequent changes that can be reversed, runs operations as code, and learns from every operational failure. Which Well-Architected pillar do these practices support most?",
+    "choices": [
+      "Security",
+      "Performance efficiency",
+      "Operational excellence",
+      "Reliability"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Small reversible changes = Operational excellence",
+    "explanation": "The **Operational excellence** pillar is about running and monitoring systems well and improving processes over time. Small reversible changes and learning from failures are key practices.\n\n**Wrong choices**\n- Reliability: Reliability is about recovering from failures, but these practices are about how operations are run and improved.\n- Performance efficiency: Performance efficiency is about selecting efficient resources.\n- Security: Security is about protecting data and systems.",
+    "frequency": 3,
+    "tags": [
+      "Well-Architected Framework"
+    ],
+    "distractorOrder": "4|2|1"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-concepts",
+    "level": "intermediate",
+    "stem": "A company reviews its AWS bill each month, removes resources it no longer needs, and measures how much each project spends. Which Well-Architected pillar does this support most?",
+    "choices": [
+      "Performance efficiency",
+      "Sustainability",
+      "Cost optimization",
+      "Operational excellence"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Control and measure spending = Cost optimization",
+    "explanation": "The **Cost optimization** pillar is about avoiding unneeded costs, understanding where money is spent, and choosing the most cost-effective resources.\n\n**Wrong choices**\n- Sustainability: Removing unused resources can also help sustainability, but measuring and controlling spending is cost optimization.\n- Performance efficiency: Performance efficiency is about meeting performance needs efficiently.\n- Operational excellence: Operational excellence is about running and improving operations.",
+    "frequency": 4,
+    "tags": [
+      "Well-Architected Framework"
+    ],
+    "distractorOrder": "2|1|4"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-concepts",
+    "level": "intermediate",
+    "stem": "A company moves its database from a self-managed server to Amazon RDS during migration. The application design stays the same, but AWS now handles database maintenance. Which migration strategy is this?",
+    "choices": [
+      "Replatform",
+      "Refactor",
+      "Relocate",
+      "Rehost"
+    ],
+    "answer": 1,
+    "oneLineConcept": "A few cloud optimizations, same design = Replatform",
+    "explanation": "**Replatform** (sometimes called lift, tinker, and shift) makes a few cloud optimizations, such as moving to a managed database, without changing the core design of the application.\n\n**Wrong choices**\n- Rehost: Rehost moves the system with no changes, but here the database platform changes to a managed service.\n- Refactor: Refactor redesigns the application, which is not happening here.\n- Relocate: Relocate moves virtual machines at the virtualization level without changes.",
+    "frequency": 4,
+    "tags": [
+      "Migration strategies"
+    ],
+    "distractorOrder": "4|2|3"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-concepts",
+    "level": "intermediate",
+    "stem": "A company rewrites a large, old application as small serverless services so it can add new features faster. Which migration strategy is this?",
+    "choices": [
+      "Refactor",
+      "Rehost",
+      "Repurchase",
+      "Replatform"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Redesign the app for the cloud = Refactor",
+    "explanation": "**Refactor** (also called re-architect) changes how the application is designed and built, usually to use cloud-native features. It takes the most effort but can bring the most benefit.\n\n**Wrong choices**\n- Replatform: Replatform makes only a few changes and keeps the core design.\n- Rehost: Rehost moves the application without any changes.\n- Repurchase: Repurchase replaces the application with a different product.",
+    "frequency": 4,
+    "tags": [
+      "Migration strategies"
+    ],
+    "distractorOrder": "4|2|3"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-concepts",
+    "level": "intermediate",
+    "stem": "A company just upgraded the hardware for one application in its own data center and decides to keep running it there for a few more years. Which migration strategy is this?",
+    "choices": [
+      "Retire",
+      "Rehost",
+      "Relocate",
+      "Retain"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Keep it where it is for now = Retain",
+    "explanation": "**Retain** means keeping an application where it is for now, for example because of a recent investment or because it is not ready to move.\n\n**Wrong choices**\n- Retire: Retire shuts an application down, but this one will keep running.\n- Relocate: Relocate moves the application to the cloud.\n- Rehost: Rehost moves the application to the cloud unchanged.",
+    "frequency": 3,
+    "tags": [
+      "Migration strategies"
+    ],
+    "distractorOrder": "1|3|2"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-concepts",
+    "level": "intermediate",
+    "stem": "An organization is moving to AWS and wants to train its staff, plan for new job roles, and help its culture adapt to the change. Which AWS CAF perspective covers this?",
+    "choices": [
+      "Operations",
+      "People",
+      "Business",
+      "Governance"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Skills, roles, culture = People perspective",
+    "explanation": "The **People** perspective of AWS CAF focuses on culture, organization structure, leadership, and building the skills staff need for the cloud.\n\n**Wrong choices**\n- Operations: Operations is about running cloud services at the agreed level.\n- Business: Business is about making sure cloud investments support business goals.\n- Governance: Governance is about managing the cloud program, risk, and benefits.",
+    "frequency": 3,
+    "tags": [
+      "AWS CAF"
+    ],
+    "distractorOrder": "1|3|4"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-concepts",
+    "level": "intermediate",
+    "stem": "A company's executives want to make sure their cloud spending leads to clear business results, such as faster product launches and new revenue. Which AWS CAF perspective covers this?",
+    "choices": [
+      "Business",
+      "Governance",
+      "People",
+      "Platform"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Cloud investment → business outcomes = Business perspective",
+    "explanation": "The **Business** perspective of AWS CAF helps make sure cloud investments speed up the organization's business goals and outcomes.\n\n**Wrong choices**\n- Governance: Governance manages the cloud program and risks, but linking cloud to business goals is the Business perspective.\n- People: People is about skills, roles, and culture.\n- Platform: Platform is about building the technical cloud environment.",
+    "frequency": 3,
+    "tags": [
+      "AWS CAF"
+    ],
+    "distractorOrder": "2|3|4"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-concepts",
+    "level": "intermediate",
+    "stem": "Which AWS CAF perspective helps an organization manage its cloud program, control risk, and track the benefits of cloud adoption?",
+    "choices": [
+      "Security",
+      "Governance",
+      "Business",
+      "Operations"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Manage program, risk, benefits = Governance perspective",
+    "explanation": "The **Governance** perspective of AWS CAF helps organizations run their cloud initiatives while increasing benefits and reducing risks, including managing cost and data.\n\n**Wrong choices**\n- Business: Business focuses on business outcomes, not on managing program risk.\n- Operations: Operations focuses on running cloud services day to day.\n- Security: Security focuses on protecting data and workloads.",
+    "frequency": 3,
+    "tags": [
+      "AWS CAF"
+    ],
+    "distractorOrder": "3|4|1"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-concepts",
+    "level": "intermediate",
+    "stem": "A company moves all of its applications out of its own data center and into AWS. Which cost is it most likely to stop paying?",
+    "choices": [
+      "Staff time to configure its applications",
+      "Designing how its application stores data",
+      "Buying and replacing physical servers",
+      "Data sent from AWS out to the internet"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Cloud removes hardware purchase and upkeep",
+    "explanation": "In the cloud, AWS owns and replaces the physical hardware. The company **stops buying and replacing servers** and stops paying for data center space, power, and cooling.\n\n**Wrong choices**\n- Data sent from AWS out to the internet: AWS charges for most data sent out to the internet, so this cost continues.\n- Staff time to configure its applications: The customer still manages its own applications in the cloud.\n- Designing how its application stores data: The customer still designs its own applications and data.",
+    "frequency": 3,
+    "tags": [
+      "Cloud economics"
+    ],
+    "distractorOrder": "4|1|2"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-concepts",
+    "level": "intermediate",
+    "stem": "A company finds that most of its Amazon EC2 instances use only a small part of their CPU and memory all day. What should it do to lower costs?",
+    "choices": [
+      "Move the instances to a different AWS Region",
+      "Rightsize the instances to smaller types that fit the actual use",
+      "Add more instances behind a load balancer",
+      "Turn on more detailed monitoring and change nothing else"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Oversized instances → rightsize",
+    "explanation": "**Rightsizing** means matching instance types and sizes to what a workload actually needs. Oversized instances waste money, so moving to smaller ones lowers cost.\n\n**Wrong choices**\n- Add more instances behind a load balancer: Adding instances would raise cost, not lower it.\n- Move the instances to a different AWS Region: Moving Regions does not fix instances that are too large.\n- Turn on more detailed monitoring and change nothing else: Monitoring shows the problem but does not reduce cost by itself.",
+    "frequency": 4,
+    "tags": [
+      "Cloud economics",
+      "Rightsizing"
+    ],
+    "distractorOrder": "3|1|4"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-concepts",
+    "level": "intermediate",
+    "stem": "A company wants its web application to keep running even if one data center has a problem. Which design gives the best availability?",
+    "choices": [
+      "Take a daily backup of one instance",
+      "Use one larger instance in one Availability Zone",
+      "Run instances in at least two Availability Zones",
+      "Run several instances in one Availability Zone"
+    ],
+    "answer": 3,
+    "oneLineConcept": "High availability = spread across multiple AZs",
+    "explanation": "Availability Zones are isolated from each other. **Running across multiple Availability Zones** means a problem in one zone does not stop the whole application.\n\n**Wrong choices**\n- Run several instances in one Availability Zone: If that one Availability Zone has a problem, all instances are affected.\n- Use one larger instance in one Availability Zone: A single instance is a single point of failure.\n- Take a daily backup of one instance: Backups help recovery but do not keep the application running during a failure.",
+    "frequency": 5,
+    "tags": [
+      "High availability",
+      "Availability Zones"
+    ],
+    "distractorOrder": "4|2|1"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-concepts",
+    "level": "advanced",
+    "stem": "Which of the following is NOT one of the six pillars of the AWS Well-Architected Framework?",
+    "choices": [
+      "Sustainability",
+      "Operational excellence",
+      "Cost optimization",
+      "Scalability"
+    ],
+    "answer": 4,
+    "oneLineConcept": "6 pillars: OpEx, Security, Reliability, Perf, Cost, Sustain.",
+    "explanation": "The six pillars are operational excellence, security, reliability, performance efficiency, cost optimization, and sustainability. **Scalability** is an important idea, but it is not one of the pillars.\n\n**Wrong choices**\n- Sustainability: Sustainability is a pillar (the sixth one).\n- Operational excellence: Operational excellence is a pillar.\n- Cost optimization: Cost optimization is a pillar.",
+    "frequency": 4,
+    "tags": [
+      "Well-Architected Framework"
+    ],
+    "levelLock": true
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-concepts",
+    "level": "advanced",
+    "stem": "A company runs its servers on VMware in its own data center. It wants to move them to VMware Cloud on AWS without buying new hardware, rewriting applications, or changing how it operates them. Which migration strategy is this?",
+    "choices": [
+      "Rehost",
+      "Relocate",
+      "Retain",
+      "Replatform"
+    ],
+    "answer": 2,
+    "oneLineConcept": "VMware as-is to VMware Cloud on AWS = Relocate",
+    "explanation": "**Relocate** moves large numbers of servers to the cloud at the virtualization level, for example from on-premises VMware to VMware Cloud on AWS, without changing applications or operations.\n\n**Wrong choices**\n- Rehost: Rehost moves applications onto new cloud servers such as Amazon EC2, while this keeps the same VMware platform.\n- Replatform: Replatform makes some changes to the platform, such as a managed database.\n- Retain: Retain keeps the servers in the company's own data center.",
+    "frequency": 3,
+    "tags": [
+      "Migration strategies"
+    ],
+    "distractorOrder": "1|4|3"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-concepts",
+    "level": "advanced",
+    "stem": "Developers used to wait weeks for new servers. On AWS they can get resources in minutes and try new ideas at low cost. Which cloud benefit does this describe best?",
+    "choices": [
+      "Benefit from massive economies of scale",
+      "Go global in minutes",
+      "Increase speed and agility",
+      "Stop guessing capacity"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Resources in minutes, easy to experiment = speed and agility",
+    "explanation": "**Increase speed and agility** means new resources are only a few clicks away. Teams can test ideas quickly and cheaply, which speeds up innovation.\n\n**Wrong choices**\n- Stop guessing capacity: Stop guessing capacity is about matching resources to demand, not how fast developers can experiment.\n- Go global in minutes: Go global is about reaching other parts of the world.\n- Benefit from massive economies of scale: Economies of scale is about lower prices.",
+    "frequency": 3,
+    "tags": [
+      "Cloud benefits"
+    ],
+    "distractorOrder": "4|2|1"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-concepts",
+    "level": "advanced",
+    "stem": "A team sets up monitoring so that when a key health measure crosses a limit, the system automatically replaces the failed part without a person stepping in. Which Well-Architected pillar has \"automatically recover from failure\" as a design principle?",
+    "choices": [
+      "Reliability",
+      "Security",
+      "Operational excellence",
+      "Performance efficiency"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Automatic recovery from failure = Reliability",
+    "explanation": "\"Automatically recover from failure\" is a design principle of the **Reliability** pillar. Watching key measures and triggering automatic fixes lets a workload recover quickly.\n\n**Wrong choices**\n- Operational excellence: Operational excellence covers running operations well, but automatic recovery from failure is a Reliability principle.\n- Performance efficiency: Performance efficiency is about using efficient resources.\n- Security: Security is about protecting data and systems.",
+    "frequency": 3,
+    "tags": [
+      "Well-Architected Framework"
+    ],
+    "distractorOrder": "3|4|2"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-concepts",
+    "level": "advanced",
+    "stem": "Which AWS CAF perspective focuses on building a scalable cloud environment and on modernizing existing workloads and building new cloud-native solutions?",
+    "choices": [
+      "Governance",
+      "Platform",
+      "Operations",
+      "Security"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Build the cloud environment = Platform perspective",
+    "explanation": "The **Platform** perspective of AWS CAF helps build an enterprise-grade, scalable cloud (or hybrid) platform and modernize workloads.\n\n**Wrong choices**\n- Operations: Operations is about running services at the agreed level, not building the environment.\n- Security: Security is about protecting data and workloads.\n- Governance: Governance is about managing the cloud program and its risks.",
+    "frequency": 3,
+    "tags": [
+      "AWS CAF"
+    ],
+    "distractorOrder": "3|4|1"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-concepts",
+    "level": "advanced",
+    "stem": "Which AWS CAF perspective focuses on making sure cloud services are run and delivered at a level that meets the needs of the business?",
+    "choices": [
+      "Platform",
+      "Operations",
+      "Governance",
+      "Business"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Run services at the agreed level = Operations perspective",
+    "explanation": "The **Operations** perspective of AWS CAF focuses on running and supporting cloud services so they meet the level the business needs.\n\n**Wrong choices**\n- Platform: Platform is about building the cloud environment, not running services day to day.\n- Governance: Governance is about managing the cloud program and risk.\n- Business: Business is about linking cloud investment to business results.",
+    "frequency": 3,
+    "tags": [
+      "AWS CAF"
+    ],
+    "distractorOrder": "1|3|4"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-concepts",
+    "level": "advanced",
+    "stem": "A company is listing the benefits of moving to AWS. Each statement is a real benefit EXCEPT:",
+    "choices": [
+      "The company pays only for the resources it uses",
+      "The company can deploy in several Regions quickly",
+      "The company no longer needs to control who can access its own data",
+      "The company gets lower prices from AWS's large scale"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Customer always manages access to its own data",
+    "explanation": "Under the shared responsibility model, the customer is still responsible for **controlling access to its own data** in the cloud. Moving to AWS does not remove this duty.\n\n**Wrong choices**\n- The company pays only for the resources it uses: This is a real benefit: pay-as-you-go pricing.\n- The company can deploy in several Regions quickly: This is a real benefit: go global in minutes.\n- The company gets lower prices from AWS's large scale: This is a real benefit: economies of scale.",
+    "frequency": 3,
+    "tags": [
+      "Cloud benefits",
+      "Shared responsibility model"
+    ],
+    "levelLock": true
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-concepts",
+    "level": "advanced",
+    "stem": "An order system is split into parts that talk to each other through a message queue, so if the shipping part fails, new orders are still accepted. Which design idea is this?",
+    "choices": [
+      "Manual scaling",
+      "Loose coupling",
+      "Vertical scaling",
+      "Tight coupling"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Parts connected through a queue = loose coupling",
+    "explanation": "**Loose coupling** means parts of a system depend on each other as little as possible. A queue between them lets one part fail or slow down without stopping the others.\n\n**Wrong choices**\n- Vertical scaling: Vertical scaling means making one server bigger, not separating parts.\n- Tight coupling: Tight coupling links parts directly, so one failure can stop the others.\n- Manual scaling: Manual scaling means a person changes capacity by hand.",
+    "frequency": 3,
+    "tags": [
+      "Design principles"
+    ],
+    "distractorOrder": "3|4|1"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "level": "basic",
+    "stem": "Under the AWS shared responsibility model, who is responsible for the physical security of AWS data centers?",
+    "choices": [
+      "The customer and AWS equally",
+      "The customer",
+      "The customer's internet provider",
+      "AWS"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Security OF the cloud (buildings, hardware) = AWS",
+    "explanation": "**AWS** is responsible for security *of* the cloud: the buildings, hardware, and global network. Physical data center security is fully AWS's job.\n\n**Wrong choices**\n- The customer: Customers cannot enter AWS data centers, so they cannot protect them.\n- The customer and AWS equally: Physical security is entirely AWS's job.\n- The customer's internet provider: Internet providers have no role in AWS data center security.",
+    "frequency": 5,
+    "tags": [
+      "Shared responsibility model"
+    ],
+    "distractorOrder": "2|1|3"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "level": "basic",
+    "stem": "A company runs Amazon EC2 instances. Who is responsible for installing security patches on the guest operating system of these instances?",
+    "choices": [
+      "The AWS Marketplace seller of the instance type",
+      "AWS Professional Services",
+      "The customer",
+      "AWS"
+    ],
+    "answer": 3,
+    "oneLineConcept": "EC2 guest OS patching = customer",
+    "explanation": "With Amazon EC2 (IaaS), the **customer** manages the guest operating system, including security patches, plus the applications and data on it.\n\n**Wrong choices**\n- AWS: AWS patches the host and hardware, not the guest operating system on EC2.\n- AWS Professional Services: Professional Services can be hired for projects, but patching is not automatically their job.\n- The AWS Marketplace seller of the instance type: Instance types are not sold by Marketplace sellers, and they do not patch your servers.",
+    "frequency": 5,
+    "tags": [
+      "Shared responsibility model",
+      "Amazon EC2"
+    ],
+    "distractorOrder": "4|2|1"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "level": "basic",
+    "stem": "An auditor asks a company for AWS's security and compliance reports, such as SOC reports. Where can the company download them?",
+    "choices": [
+      "AWS Artifact",
+      "Amazon Inspector",
+      "AWS Config",
+      "AWS Security Hub"
+    ],
+    "answer": 1,
+    "oneLineConcept": "AWS compliance reports on demand = AWS Artifact",
+    "explanation": "**AWS Artifact** is a self-service portal for downloading AWS security and compliance reports and reviewing certain agreements with AWS.\n\n**Wrong choices**\n- AWS Config: AWS Config tracks the settings of your own resources, not AWS's audit reports.\n- AWS Security Hub: Security Hub collects security findings about your account.\n- Amazon Inspector: Inspector scans your workloads for software vulnerabilities.",
+    "frequency": 5,
+    "tags": [
+      "AWS Artifact",
+      "Compliance"
+    ],
+    "distractorOrder": "3|4|2"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "level": "basic",
+    "stem": "What is the best practice for the AWS account root user?",
+    "choices": [
+      "Share its password with all administrators",
+      "Turn on MFA and use it only for the few tasks that need it",
+      "Create access keys for it so scripts can use it",
+      "Use it for daily administration work"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Root user: MFA on, rarely used",
+    "explanation": "The root user has full access to the account. Protect it with **multi-factor authentication (MFA)** and use it only for tasks that only the root user can do.\n\n**Wrong choices**\n- Use it for daily administration work: Daily work should use IAM identities with limited permissions.\n- Create access keys for it so scripts can use it: Root access keys are a big risk and should not be created.\n- Share its password with all administrators: Sharing credentials removes accountability and raises risk.",
+    "frequency": 5,
+    "tags": [
+      "Root user",
+      "IAM"
+    ],
+    "distractorOrder": "4|3|1"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "level": "basic",
+    "stem": "An application on Amazon EC2 needs to read files in an Amazon S3 bucket. What is the most secure way to give it access?",
+    "choices": [
+      "Put the instance in an IAM group",
+      "Attach an IAM role to the EC2 instance",
+      "Use the root user's credentials",
+      "Store an IAM user's access keys on the instance"
+    ],
+    "answer": 2,
+    "oneLineConcept": "App on EC2 needs AWS access = IAM role",
+    "explanation": "An **IAM role** gives temporary credentials that rotate automatically. Attaching a role to the instance means no long-term keys are stored on the server.\n\n**Wrong choices**\n- Store an IAM user's access keys on the instance: Long-term keys stored on a server can be stolen.\n- Put the instance in an IAM group: IAM groups hold users, not EC2 instances.\n- Use the root user's credentials: The root user should never be used by applications.",
+    "frequency": 5,
+    "tags": [
+      "IAM roles"
+    ],
+    "distractorOrder": "4|1|3"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "level": "basic",
+    "stem": "Twenty accountants need the same AWS permissions. What is the easiest way to manage their permissions?",
+    "choices": [
+      "Put them in an IAM group and attach a policy to the group",
+      "Create one IAM role and share its password with them",
+      "Write a service control policy for each accountant",
+      "Create a security group for the accountants"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Same permissions for many users = IAM group",
+    "explanation": "An **IAM group** is a collection of IAM users. A policy attached to the group applies to every user in it, so permissions are managed in one place.\n\n**Wrong choices**\n- Create one IAM role and share its password with them: Roles do not have passwords, and sharing sign-in details is a bad practice.\n- Create a security group for the accountants: Security groups control network traffic to instances, not user permissions.\n- Write a service control policy for each accountant: Service control policies apply to accounts in AWS Organizations, not to individual users.",
+    "frequency": 4,
+    "tags": [
+      "IAM groups"
+    ],
+    "distractorOrder": "2|4|3"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "level": "basic",
+    "stem": "A security team wants a record of who made each AWS API call, when, and from where. Which service should it use?",
+    "choices": [
+      "AWS CloudTrail",
+      "AWS Config",
+      "Amazon Inspector",
+      "Amazon CloudWatch"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Who did what (API calls) = CloudTrail",
+    "explanation": "**AWS CloudTrail** records actions taken in an AWS account, including API calls, the identity that made them, the time, and the source address. It is key for auditing.\n\n**Wrong choices**\n- Amazon CloudWatch: CloudWatch collects performance metrics and logs, not a record of who called each API.\n- AWS Config: Config records resource settings over time, not every API call by user.\n- Amazon Inspector: Inspector scans for software vulnerabilities.",
+    "frequency": 5,
+    "tags": [
+      "AWS CloudTrail",
+      "Monitoring"
+    ],
+    "distractorOrder": "4|2|3"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "level": "basic",
+    "stem": "Which AWS service protects all AWS customers against common DDoS attacks automatically and at no extra cost?",
+    "choices": [
+      "AWS WAF",
+      "AWS Shield Standard",
+      "Amazon GuardDuty",
+      "AWS Shield Advanced"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Free automatic DDoS protection = Shield Standard",
+    "explanation": "**AWS Shield Standard** is turned on for all customers automatically at no extra charge. It protects against common network and transport layer DDoS attacks.\n\n**Wrong choices**\n- AWS Shield Advanced: Shield Advanced adds more protection and support, but it is a paid service.\n- AWS WAF: AWS WAF filters web requests with rules you set, and it is charged by use.\n- Amazon GuardDuty: GuardDuty detects threats from account activity; it is a paid service.",
+    "frequency": 5,
+    "tags": [
+      "AWS Shield",
+      "DDoS"
+    ],
+    "distractorOrder": "4|1|3"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "level": "basic",
+    "stem": "A company's website is being hit by SQL injection attempts. Which service can block these harmful web requests?",
+    "choices": [
+      "AWS WAF",
+      "Security groups",
+      "AWS Shield Standard",
+      "Amazon Inspector"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Filter harmful web requests (SQLi, XSS) = AWS WAF",
+    "explanation": "**AWS WAF** is a web application firewall. You set rules that look at web requests and block common attacks such as SQL injection and cross-site scripting.\n\n**Wrong choices**\n- AWS Shield Standard: Shield Standard protects against DDoS attacks, not SQL injection in web requests.\n- Security groups: Security groups allow or block traffic by port and address, not by what is inside a web request.\n- Amazon Inspector: Inspector finds vulnerabilities but does not block web requests.",
+    "frequency": 5,
+    "tags": [
+      "AWS WAF"
+    ],
+    "distractorOrder": "3|2|4"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "level": "basic",
+    "stem": "A company wants a service that keeps watching its AWS accounts for signs of threats, such as an instance talking to known bad IP addresses or unusual API activity. Which service should it use?",
+    "choices": [
+      "Amazon Detective",
+      "Amazon Inspector",
+      "Amazon GuardDuty",
+      "Amazon Macie"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Continuous threat detection = GuardDuty",
+    "explanation": "**Amazon GuardDuty** is a threat detection service. It analyzes sources such as AWS CloudTrail events, VPC Flow Logs, and DNS logs to spot suspicious behavior.\n\n**Wrong choices**\n- Amazon Inspector: Inspector looks for software vulnerabilities, not suspicious activity.\n- Amazon Detective: Detective helps investigate findings after they are found.\n- Amazon Macie: Macie finds sensitive data in Amazon S3.",
+    "frequency": 5,
+    "tags": [
+      "Amazon GuardDuty"
+    ],
+    "distractorOrder": "2|1|4"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "level": "basic",
+    "stem": "A company needs to find files in Amazon S3 that contain sensitive data, such as credit card numbers or personal information. Which service should it use?",
+    "choices": [
+      "AWS Artifact",
+      "Amazon Macie",
+      "Amazon GuardDuty",
+      "Amazon Inspector"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Find sensitive data in S3 = Macie",
+    "explanation": "**Amazon Macie** uses machine learning and pattern matching to discover and report sensitive data, such as personal information, stored in Amazon S3.\n\n**Wrong choices**\n- Amazon GuardDuty: GuardDuty detects threats from activity, not sensitive data inside files.\n- Amazon Inspector: Inspector scans for software vulnerabilities.\n- AWS Artifact: Artifact provides AWS compliance reports.",
+    "frequency": 4,
+    "tags": [
+      "Amazon Macie"
+    ],
+    "distractorOrder": "3|4|1"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "level": "basic",
+    "stem": "A company wants automatic scanning of its Amazon EC2 instances for known software vulnerabilities and risky network exposure. Which service should it use?",
+    "choices": [
+      "Amazon Macie",
+      "AWS Trusted Advisor",
+      "Amazon GuardDuty",
+      "Amazon Inspector"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Vulnerability scanning = Inspector",
+    "explanation": "**Amazon Inspector** automatically scans workloads such as Amazon EC2 instances for known software vulnerabilities and unintended network exposure.\n\n**Wrong choices**\n- Amazon GuardDuty: GuardDuty watches for threat activity, not missing software patches.\n- AWS Trusted Advisor: Trusted Advisor gives best-practice checks, not software vulnerability scans.\n- Amazon Macie: Macie finds sensitive data in S3.",
+    "frequency": 5,
+    "tags": [
+      "Amazon Inspector"
+    ],
+    "distractorOrder": "3|2|1"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "level": "basic",
+    "stem": "A company wants to create and control the encryption keys used to protect data in many AWS services. Which service should it use?",
+    "choices": [
+      "AWS Certificate Manager (ACM)",
+      "AWS Key Management Service (AWS KMS)",
+      "AWS Identity and Access Management (IAM)",
+      "AWS Secrets Manager"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Create and manage encryption keys = AWS KMS",
+    "explanation": "**AWS KMS** lets you create, manage, and control the use of encryption keys. Many AWS services work with KMS to encrypt data at rest.\n\n**Wrong choices**\n- AWS Secrets Manager: Secrets Manager stores secrets such as passwords, not the main encryption keys for AWS services.\n- AWS Certificate Manager (ACM): ACM manages SSL/TLS certificates.\n- AWS Identity and Access Management (IAM): IAM controls who can do what, not encryption keys.",
+    "frequency": 5,
+    "tags": [
+      "AWS KMS",
+      "Encryption"
+    ],
+    "distractorOrder": "4|1|3"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "level": "basic",
+    "stem": "An application needs a database password. The company does not want the password written in the code and wants it changed (rotated) automatically. Which service should it use?",
+    "choices": [
+      "AWS Secrets Manager",
+      "AWS Identity and Access Management (IAM)",
+      "AWS Key Management Service (AWS KMS)",
+      "AWS Certificate Manager (ACM)"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Store and rotate passwords = Secrets Manager",
+    "explanation": "**AWS Secrets Manager** stores secrets such as database passwords and API keys and can rotate them automatically. Applications get the secret when they need it.\n\n**Wrong choices**\n- AWS Key Management Service (AWS KMS): KMS manages encryption keys, not application passwords with automatic rotation.\n- AWS Certificate Manager (ACM): ACM manages SSL/TLS certificates.\n- AWS Identity and Access Management (IAM): IAM manages AWS permissions, not database passwords.",
+    "frequency": 4,
+    "tags": [
+      "AWS Secrets Manager"
+    ],
+    "distractorOrder": "3|4|2"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "level": "basic",
+    "stem": "What does the principle of least privilege mean?",
+    "choices": [
+      "Give each user only the permissions needed to do their job",
+      "Give administrators full access to every account",
+      "Give all users the same permissions to keep things simple",
+      "Remove all permissions until a security problem happens"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Least privilege = only the access needed",
+    "explanation": "**Least privilege** means granting only the permissions required for a task. It limits the damage if credentials are stolen or a mistake is made.\n\n**Wrong choices**\n- Give all users the same permissions to keep things simple: Equal permissions usually give many users more access than they need.\n- Give administrators full access to every account: Even administrators should get only the access they need.\n- Remove all permissions until a security problem happens: With no permissions, nobody could do their work.",
+    "frequency": 5,
+    "tags": [
+      "IAM",
+      "Least privilege"
+    ],
+    "distractorOrder": "3|2|4"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "level": "basic",
+    "stem": "Which feature acts as a virtual firewall that controls inbound and outbound traffic for an Amazon EC2 instance?",
+    "choices": [
+      "AWS Shield",
+      "AWS WAF",
+      "Security group",
+      "Network access control list (network ACL)"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Instance-level firewall = security group",
+    "explanation": "A **security group** is a virtual firewall attached to an instance. You add rules that allow traffic by protocol, port, and source.\n\n**Wrong choices**\n- Network access control list (network ACL): A network ACL controls traffic for a whole subnet, not a single instance.\n- AWS WAF: AWS WAF filters web requests for web applications.\n- AWS Shield: Shield protects against DDoS attacks.",
+    "frequency": 5,
+    "tags": [
+      "Security groups",
+      "Amazon VPC"
+    ],
+    "distractorOrder": "4|2|1"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "level": "basic",
+    "stem": "A company turns on multi-factor authentication (MFA) for its IAM users. What does MFA add?",
+    "choices": [
+      "A longer password that must be changed every day",
+      "A second proof of identity, such as a code from a device, in addition to the password",
+      "Encryption of all data the user uploads",
+      "A record of every action the user takes"
+    ],
+    "answer": 2,
+    "oneLineConcept": "MFA = password + something you have",
+    "explanation": "**Multi-factor authentication (MFA)** asks for something extra, such as a code from an authenticator app or a security key, so a stolen password alone is not enough.\n\n**Wrong choices**\n- A longer password that must be changed every day: MFA does not change the password rules.\n- Encryption of all data the user uploads: MFA protects sign-in, not stored data.\n- A record of every action the user takes: Recording actions is done by AWS CloudTrail.",
+    "frequency": 5,
+    "tags": [
+      "MFA",
+      "IAM"
+    ],
+    "distractorOrder": "1|3|4"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "level": "basic",
+    "stem": "A company stores files in an Amazon S3 bucket. Under the shared responsibility model, who decides which users are allowed to access the bucket?",
+    "choices": [
+      "AWS Support",
+      "AWS",
+      "AWS and the customer equally",
+      "The customer"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Access to your data = customer's job",
+    "explanation": "The **customer** is responsible for security *in* the cloud, including deciding who can access its data and setting IAM and bucket permissions.\n\n**Wrong choices**\n- AWS: AWS provides the access control tools, but the customer decides who gets access.\n- AWS Support: AWS Support helps with questions but does not decide access to your data.\n- AWS and the customer equally: Deciding access to customer data is the customer's job.",
+    "frequency": 5,
+    "tags": [
+      "Shared responsibility model",
+      "Amazon S3"
+    ],
+    "distractorOrder": "2|1|3"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "level": "intermediate",
+    "stem": "A company uses Amazon RDS for its database. Who is responsible for patching the database engine software?",
+    "choices": [
+      "The customer",
+      "AWS",
+      "The database software vendor",
+      "AWS Marketplace"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Managed service (RDS) = AWS patches the engine",
+    "explanation": "Amazon RDS is a managed service. **AWS** handles the operating system and database engine patching, while the customer manages data, access, and settings.\n\n**Wrong choices**\n- The customer: With Amazon EC2 the customer would patch, but RDS is a managed service where AWS handles it.\n- The database software vendor: The vendor writes patches, but AWS applies them in RDS.\n- AWS Marketplace: Marketplace is a store for software, not a patching service.",
+    "frequency": 5,
+    "tags": [
+      "Shared responsibility model",
+      "Amazon RDS"
+    ],
+    "distractorOrder": "1|3|4"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "level": "intermediate",
+    "stem": "A company runs code on AWS Lambda. Which task is the customer's responsibility?",
+    "choices": [
+      "Scaling the servers that run the functions",
+      "Maintaining the physical hosts",
+      "Writing secure function code and setting its permissions",
+      "Patching the operating system that runs the functions"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Lambda: customer owns code and permissions",
+    "explanation": "With serverless AWS Lambda, AWS runs the servers and operating system. The **customer** is responsible for its own code, data, and the permissions given to the function.\n\n**Wrong choices**\n- Patching the operating system that runs the functions: AWS manages the operating system for Lambda.\n- Scaling the servers that run the functions: Lambda scales automatically; AWS manages the servers.\n- Maintaining the physical hosts: Physical hardware is always AWS's job.",
+    "frequency": 4,
+    "tags": [
+      "Shared responsibility model",
+      "AWS Lambda"
+    ],
+    "distractorOrder": "4|1|2"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "level": "intermediate",
+    "stem": "A company wants to see how the settings of its AWS resources have changed over time and check them against its own rules, such as \"all EBS volumes must be encrypted.\" Which service should it use?",
+    "choices": [
+      "AWS CloudTrail",
+      "AWS Trusted Advisor",
+      "AWS Config",
+      "Amazon CloudWatch"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Resource settings history + rules = AWS Config",
+    "explanation": "**AWS Config** records the configuration of resources over time and evaluates them against rules, showing which resources do not follow company policy.\n\n**Wrong choices**\n- AWS CloudTrail: CloudTrail records API calls, but Config tracks resource settings and checks them against rules.\n- Amazon CloudWatch: CloudWatch watches performance metrics and logs.\n- AWS Trusted Advisor: Trusted Advisor gives general best-practice checks, not your own custom rules.",
+    "frequency": 5,
+    "tags": [
+      "AWS Config",
+      "Governance"
+    ],
+    "distractorOrder": "1|4|2"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "level": "intermediate",
+    "stem": "A security team uses Amazon GuardDuty, Amazon Inspector, and Amazon Macie. It wants one place to see and prioritize all their findings across accounts. Which service should it use?",
+    "choices": [
+      "AWS Security Hub",
+      "Amazon Detective",
+      "AWS Config",
+      "AWS CloudTrail"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Central view of security findings = Security Hub",
+    "explanation": "**AWS Security Hub** gathers security findings from many AWS services and partner tools into one view and checks accounts against security best practices.\n\n**Wrong choices**\n- Amazon Detective: Detective investigates a finding in depth, but it is not the central view of all findings.\n- AWS CloudTrail: CloudTrail records API activity.\n- AWS Config: Config tracks resource settings.",
+    "frequency": 4,
+    "tags": [
+      "AWS Security Hub"
+    ],
+    "distractorOrder": "2|4|3"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "level": "intermediate",
+    "stem": "After GuardDuty reports a suspicious finding, a security analyst wants to dig into the root cause by looking at related activity and connections over time. Which service helps most?",
+    "choices": [
+      "AWS Security Hub",
+      "Amazon GuardDuty",
+      "Amazon Detective",
+      "Amazon Inspector"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Investigate root cause = Detective",
+    "explanation": "**Amazon Detective** collects log data and builds visual links between activities, which helps analysts find the root cause of security findings.\n\n**Wrong choices**\n- Amazon GuardDuty: GuardDuty creates the finding, but Detective helps investigate its cause.\n- AWS Security Hub: Security Hub collects and ranks findings but is not built for deep investigation.\n- Amazon Inspector: Inspector scans for vulnerabilities.",
+    "frequency": 3,
+    "tags": [
+      "Amazon Detective"
+    ],
+    "distractorOrder": "2|1|4"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "level": "intermediate",
+    "stem": "A company has many AWS accounts. It wants its employees to sign in once and get access to the accounts and business apps they need. Which service should it use?",
+    "choices": [
+      "Amazon Cognito",
+      "AWS Organizations",
+      "IAM groups in each account",
+      "AWS IAM Identity Center"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Workforce single sign-on = IAM Identity Center",
+    "explanation": "**AWS IAM Identity Center** gives employees one place to sign in and reach multiple AWS accounts and applications.\n\n**Wrong choices**\n- Amazon Cognito: Cognito adds sign-in for customers of your own apps, not employee access to AWS accounts.\n- IAM groups in each account: Groups would need separate users in every account, which is not single sign-on.\n- AWS Organizations: Organizations manages accounts and billing but is not the sign-in service.",
+    "frequency": 4,
+    "tags": [
+      "IAM Identity Center"
+    ],
+    "distractorOrder": "1|3|2"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "level": "intermediate",
+    "stem": "A company is building a mobile app and needs sign-up and sign-in for millions of its customers. Which service should it use?",
+    "choices": [
+      "IAM users",
+      "AWS Directory Service",
+      "AWS IAM Identity Center",
+      "Amazon Cognito"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Sign-in for your app's customers = Cognito",
+    "explanation": "**Amazon Cognito** adds user sign-up, sign-in, and access control to web and mobile apps and can scale to large numbers of users.\n\n**Wrong choices**\n- AWS IAM Identity Center: IAM Identity Center is for workforce users, not app customers.\n- IAM users: IAM users are for people and tools working on AWS, not app customers.\n- AWS Directory Service: Directory Service provides managed Microsoft Active Directory for workforce use.",
+    "frequency": 4,
+    "tags": [
+      "Amazon Cognito"
+    ],
+    "distractorOrder": "3|1|2"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "level": "intermediate",
+    "stem": "A company needs SSL/TLS certificates for its website so that visitors connect over HTTPS. Which service can provide and renew these certificates?",
+    "choices": [
+      "AWS Certificate Manager (ACM)",
+      "AWS Key Management Service (AWS KMS)",
+      "AWS CloudHSM",
+      "AWS Secrets Manager"
+    ],
+    "answer": 1,
+    "oneLineConcept": "SSL/TLS certificates = ACM",
+    "explanation": "**AWS Certificate Manager (ACM)** provides, manages, and renews SSL/TLS certificates for use with AWS services, protecting data in transit.\n\n**Wrong choices**\n- AWS Key Management Service (AWS KMS): KMS manages encryption keys, not website certificates.\n- AWS Secrets Manager: Secrets Manager stores passwords and other secrets.\n- AWS CloudHSM: CloudHSM provides hardware for keys, not managed public certificates.",
+    "frequency": 4,
+    "tags": [
+      "ACM",
+      "Encryption"
+    ],
+    "distractorOrder": "2|4|3"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "level": "intermediate",
+    "stem": "A regulated company must keep its encryption keys in a dedicated, single-tenant hardware security module that only it controls. Which service fits this need?",
+    "choices": [
+      "AWS CloudHSM",
+      "AWS Certificate Manager (ACM)",
+      "AWS Key Management Service (AWS KMS)",
+      "AWS Secrets Manager"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Dedicated hardware for your keys = CloudHSM",
+    "explanation": "**AWS CloudHSM** gives you dedicated hardware security modules in the AWS Cloud, where you fully control your keys.\n\n**Wrong choices**\n- AWS Key Management Service (AWS KMS): KMS is a managed key service, but CloudHSM gives you your own dedicated hardware module.\n- AWS Certificate Manager (ACM): ACM manages certificates.\n- AWS Secrets Manager: Secrets Manager stores secrets such as passwords.",
+    "frequency": 3,
+    "tags": [
+      "AWS CloudHSM",
+      "Encryption"
+    ],
+    "distractorOrder": "3|2|4"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "level": "intermediate",
+    "stem": "A company uses AWS Organizations. It wants to make sure no one in its development accounts, not even administrators, can use certain AWS services. What should it use?",
+    "choices": [
+      "Security groups",
+      "AWS Config rules",
+      "IAM groups",
+      "Service control policies (SCPs)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Limit what whole accounts can do = SCP",
+    "explanation": "**Service control policies (SCPs)** in AWS Organizations set the maximum permissions for accounts. Even administrators in those accounts cannot go beyond them.\n\n**Wrong choices**\n- IAM groups: IAM groups apply permissions within one account and cannot limit an account's administrators.\n- Security groups: Security groups control network traffic to instances.\n- AWS Config rules: Config rules report on settings but do not block service use.",
+    "frequency": 4,
+    "tags": [
+      "AWS Organizations",
+      "SCP"
+    ],
+    "distractorOrder": "3|1|2"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "level": "intermediate",
+    "stem": "A company must block traffic from a specific range of IP addresses to every instance in a subnet. It needs a rule that explicitly denies this traffic. What should it use?",
+    "choices": [
+      "Security group",
+      "IAM policy",
+      "Network access control list (network ACL)",
+      "Amazon Route 53"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Subnet level, allow and deny rules = network ACL",
+    "explanation": "A **network ACL** works at the subnet level and supports both allow and deny rules. It is stateless, so return traffic must also be allowed.\n\n**Wrong choices**\n- Security group: Security groups only have allow rules, so they cannot explicitly deny an address range.\n- IAM policy: IAM policies control actions on AWS, not network traffic.\n- Amazon Route 53: Route 53 is a DNS service.",
+    "frequency": 4,
+    "tags": [
+      "Network ACL",
+      "Amazon VPC"
+    ],
+    "distractorOrder": "1|2|4"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "level": "intermediate",
+    "stem": "A company's main website is often targeted by large DDoS attacks. It wants extra protection plus help from an AWS response team during attacks. Which service should it choose?",
+    "choices": [
+      "AWS Firewall Manager",
+      "AWS Shield Advanced",
+      "AWS WAF",
+      "AWS Shield Standard"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Extra DDoS protection + response team = Shield Advanced",
+    "explanation": "**AWS Shield Advanced** is a paid service that adds stronger DDoS protection, attack visibility, and access to the AWS Shield Response Team.\n\n**Wrong choices**\n- AWS Shield Standard: Shield Standard gives basic automatic protection but not access to the response team.\n- AWS WAF: AWS WAF filters web requests but is not a DDoS response service.\n- AWS Firewall Manager: Firewall Manager manages firewall rules across accounts.",
+    "frequency": 4,
+    "tags": [
+      "AWS Shield",
+      "DDoS"
+    ],
+    "distractorOrder": "4|3|1"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "level": "intermediate",
+    "stem": "A company wants data to be protected while it travels between customers' web browsers and its website on AWS. What should it use?",
+    "choices": [
+      "HTTPS with an SSL/TLS certificate",
+      "Server-side encryption in Amazon S3",
+      "Multi-factor authentication",
+      "IAM roles"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Data in transit = TLS (HTTPS)",
+    "explanation": "Data **in transit** is protected with encryption such as **TLS**, which websites use for HTTPS. Data at rest is protected with storage encryption.\n\n**Wrong choices**\n- Server-side encryption in Amazon S3: This protects data at rest in S3, not data in transit.\n- Multi-factor authentication: MFA protects sign-in, not data traveling over the network.\n- IAM roles: Roles give permissions to AWS resources.",
+    "frequency": 4,
+    "tags": [
+      "Encryption"
+    ],
+    "distractorOrder": "2|3|4"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "level": "intermediate",
+    "stem": "An administrator wants a report that lists every IAM user in the account and the status of their passwords, access keys, and MFA devices. What should the administrator use?",
+    "choices": [
+      "IAM credential report",
+      "AWS Artifact",
+      "AWS Trusted Advisor",
+      "AWS CloudTrail event history"
+    ],
+    "answer": 1,
+    "oneLineConcept": "List all users and credential status = credential report",
+    "explanation": "The **IAM credential report** lists all users in the account with the status of their credentials, such as passwords, access keys, and MFA.\n\n**Wrong choices**\n- AWS CloudTrail event history: CloudTrail shows actions taken, not the status of each user's credentials.\n- AWS Trusted Advisor: Trusted Advisor runs best-practice checks but does not list every user's credential status.\n- AWS Artifact: Artifact provides AWS compliance reports.",
+    "frequency": 3,
+    "tags": [
+      "IAM"
+    ],
+    "distractorOrder": "4|3|2"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "level": "intermediate",
+    "stem": "In IAM, what is used to define permissions in a JSON document that says which actions are allowed or denied on which resources?",
+    "choices": [
+      "Access key",
+      "IAM group",
+      "IAM role",
+      "IAM policy"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Permissions written in JSON = IAM policy",
+    "explanation": "An **IAM policy** is a JSON document listing allowed or denied actions on resources. Policies are attached to users, groups, or roles.\n\n**Wrong choices**\n- IAM role: A role is an identity that can use a policy; the policy defines the permissions.\n- IAM group: A group holds users and has policies attached to it.\n- Access key: An access key is a credential for programmatic access.",
+    "frequency": 4,
+    "tags": [
+      "IAM policies"
+    ],
+    "distractorOrder": "3|2|1"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "level": "advanced",
+    "stem": "A company runs workloads on Amazon EC2. Which task is NOT the customer's responsibility?",
+    "choices": [
+      "Encrypting data stored on its volumes",
+      "Patching the guest operating system",
+      "Setting security group rules",
+      "Replacing failed disk drives in AWS data centers"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Hardware upkeep = AWS, even for EC2",
+    "explanation": "Physical hardware, including **replacing failed disk drives**, is AWS's responsibility. On EC2 the customer handles the guest OS, network settings, and data protection.\n\n**Wrong choices**\n- Patching the guest operating system: This is the customer's job on EC2.\n- Setting security group rules: This is the customer's job.\n- Encrypting data stored on its volumes: Choosing and turning on encryption is the customer's job.",
+    "frequency": 5,
+    "tags": [
+      "Shared responsibility model"
+    ],
+    "levelLock": true
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "level": "advanced",
+    "stem": "Which control is shared between AWS and the customer, where AWS handles it for the infrastructure and the customer handles it for its own guest operating systems and applications?",
+    "choices": [
+      "Disposal of old storage hardware",
+      "Patch management",
+      "Physical and environmental controls",
+      "Classifying customer data"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Shared controls: patching, configuration, training",
+    "explanation": "**Patch management** is a shared control: AWS patches the infrastructure, and customers patch their guest OS and applications. Configuration management and awareness training are also shared.\n\n**Wrong choices**\n- Physical and environmental controls: These are fully AWS's job; customers have no access to data centers.\n- Classifying customer data: Deciding how sensitive its data is belongs only to the customer.\n- Disposal of old storage hardware: This is fully AWS's job.",
+    "frequency": 4,
+    "tags": [
+      "Shared responsibility model"
+    ],
+    "distractorOrder": "3|4|1"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "level": "advanced",
+    "stem": "Which statement about AWS Identity and Access Management (IAM) is NOT true?",
+    "choices": [
+      "IAM users must be created again in each AWS Region",
+      "IAM roles give temporary security credentials",
+      "IAM is offered at no additional charge",
+      "An IAM user can belong to more than one group"
+    ],
+    "answer": 1,
+    "oneLineConcept": "IAM is global, not per Region",
+    "explanation": "IAM is a **global** service. Users, groups, roles, and policies apply across all Regions in the account, so they are not created per Region.\n\n**Wrong choices**\n- IAM roles give temporary security credentials: This is true; roles use temporary credentials.\n- An IAM user can belong to more than one group: This is true.\n- IAM is offered at no additional charge: This is true; you do not pay extra for IAM.",
+    "frequency": 4,
+    "tags": [
+      "IAM"
+    ],
+    "levelLock": true
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "level": "advanced",
+    "stem": "A contractor works in a separate AWS account and needs to access resources in a company's account for a few months. What is the most secure approach?",
+    "choices": [
+      "Create an IAM user for the contractor and send its long-term access keys",
+      "Share the company's root user password",
+      "Add the contractor's account to the company's IAM group",
+      "Create an IAM role the contractor's account can assume to get temporary credentials"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Cross-account access = assume a role",
+    "explanation": "**IAM roles** support cross-account access. The trusted account assumes the role and receives temporary credentials, so no long-term keys are shared.\n\n**Wrong choices**\n- Create an IAM user for the contractor and send its long-term access keys: Long-term keys are riskier than temporary role credentials.\n- Share the company's root user password: The root user should never be shared.\n- Add the contractor's account to the company's IAM group: IAM groups contain users in the same account, not other accounts.",
+    "frequency": 4,
+    "tags": [
+      "IAM roles",
+      "Cross-account access"
+    ],
+    "distractorOrder": "1|2|3"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "level": "advanced",
+    "stem": "A company with many accounts in AWS Organizations wants to set up AWS WAF rules once and apply them across all accounts automatically, including new ones. Which service should it use?",
+    "choices": [
+      "AWS Firewall Manager",
+      "AWS Security Hub",
+      "AWS WAF by itself",
+      "AWS Shield Standard"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Manage firewall rules across accounts = Firewall Manager",
+    "explanation": "**AWS Firewall Manager** lets you centrally set up and manage firewall rules, such as AWS WAF rules, across accounts in AWS Organizations.\n\n**Wrong choices**\n- AWS WAF by itself: AWS WAF holds the rules, but Firewall Manager applies them centrally across accounts.\n- AWS Shield Standard: Shield Standard is automatic DDoS protection, not a rule manager.\n- AWS Security Hub: Security Hub collects findings but does not deploy firewall rules.",
+    "frequency": 3,
+    "tags": [
+      "AWS Firewall Manager"
+    ],
+    "distractorOrder": "3|4|2"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "level": "advanced",
+    "stem": "A company is preparing for a compliance audit. It wants a service that continuously collects evidence from its own AWS usage and maps it to audit controls. Which service should it use?",
+    "choices": [
+      "AWS Audit Manager",
+      "AWS Config",
+      "AWS Artifact",
+      "AWS CloudTrail"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Collect audit evidence about your usage = Audit Manager",
+    "explanation": "**AWS Audit Manager** continuously collects evidence from your AWS usage and organizes it by control to help you prepare for audits.\n\n**Wrong choices**\n- AWS Artifact: Artifact gives AWS's own compliance reports, not evidence about your own usage.\n- AWS Config: Config records resource settings but does not organize evidence for audits.\n- AWS CloudTrail: CloudTrail records API calls but does not map them to audit controls.",
+    "frequency": 3,
+    "tags": [
+      "AWS Audit Manager",
+      "Compliance"
+    ],
+    "distractorOrder": "3|2|4"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "level": "advanced",
+    "stem": "A company wants to protect its data at rest in AWS. Each option helps with this EXCEPT:",
+    "choices": [
+      "Turning on encryption for an Amazon RDS database",
+      "Using AWS KMS keys to encrypt Amazon EBS volumes",
+      "Using server-side encryption for Amazon S3 objects",
+      "Turning on AWS Shield Advanced"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Data at rest = storage encryption, not DDoS tools",
+    "explanation": "**AWS Shield Advanced** protects against DDoS attacks; it does not encrypt stored data. Data at rest is protected by encrypting storage such as EBS, RDS, and S3.\n\n**Wrong choices**\n- Using AWS KMS keys to encrypt Amazon EBS volumes: This encrypts stored data.\n- Turning on encryption for an Amazon RDS database: This encrypts stored data.\n- Using server-side encryption for Amazon S3 objects: This encrypts stored data.",
+    "frequency": 4,
+    "tags": [
+      "Encryption",
+      "AWS Shield"
+    ],
+    "levelLock": true
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "level": "advanced",
+    "stem": "A company wants one service that checks its account and gives recommendations in several areas, including security (such as open security group ports and MFA on the root user), cost, and performance. Which service fits best?",
+    "choices": [
+      "AWS Security Hub",
+      "Amazon GuardDuty",
+      "AWS Trusted Advisor",
+      "Amazon Inspector"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Best-practice checks in many areas = Trusted Advisor",
+    "explanation": "**AWS Trusted Advisor** checks your account against AWS best practices and gives recommendations in areas such as cost optimization, security, performance, and fault tolerance.\n\n**Wrong choices**\n- AWS Security Hub: Security Hub focuses on security only, not cost and performance.\n- Amazon Inspector: Inspector scans for software vulnerabilities.\n- Amazon GuardDuty: GuardDuty detects threats from activity.",
+    "frequency": 4,
+    "tags": [
+      "AWS Trusted Advisor"
+    ],
+    "distractorOrder": "1|4|2"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "level": "advanced",
+    "stem": "A network team needs to capture information about the IP traffic going to and from network interfaces in its VPC to troubleshoot connections and investigate security problems. What should it use?",
+    "choices": [
+      "AWS Config",
+      "AWS Artifact",
+      "AWS CloudTrail",
+      "VPC Flow Logs"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Record IP traffic in a VPC = VPC Flow Logs",
+    "explanation": "**VPC Flow Logs** capture information about IP traffic going to and from network interfaces in a VPC. They help with troubleshooting and security analysis.\n\n**Wrong choices**\n- AWS CloudTrail: CloudTrail records API calls, not network traffic.\n- AWS Config: Config records resource settings.\n- AWS Artifact: Artifact provides compliance reports.",
+    "frequency": 3,
+    "tags": [
+      "VPC Flow Logs",
+      "Monitoring"
+    ],
+    "distractorOrder": "3|1|2"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "level": "advanced",
+    "stem": "A law requires a company to store customer data inside one specific country. What is the customer's main way to meet this need on AWS?",
+    "choices": [
+      "Use Amazon CloudFront edge locations in that country",
+      "Turn on AWS Shield Advanced",
+      "Ask AWS Support to keep the data in that country",
+      "Choose an AWS Region in that country for storing the data"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Data residency = customer picks the Region",
+    "explanation": "The customer **chooses the Region** where its data is stored. AWS does not move customer content out of the chosen Region unless the customer does so.\n\n**Wrong choices**\n- Use Amazon CloudFront edge locations in that country: Edge locations cache copies of content close to users; they are not where you choose to keep your main data.\n- Ask AWS Support to keep the data in that country: The customer chooses the Region; it is not a Support request.\n- Turn on AWS Shield Advanced: Shield Advanced protects against DDoS attacks, not data location.",
+    "frequency": 4,
+    "tags": [
+      "Data residency",
+      "Regions"
+    ],
+    "distractorOrder": "1|3|2"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "level": "advanced",
+    "stem": "A company wants to keep its development and production workloads separate so that a mistake in development cannot affect production, and so each can have different policies. What is the best approach?",
+    "choices": [
+      "Use separate security groups in one account",
+      "Use separate Regions in one account",
+      "Use separate AWS accounts managed with AWS Organizations",
+      "Use separate IAM users in one account"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Strong isolation = separate accounts in Organizations",
+    "explanation": "An AWS account is a strong boundary for security and billing. **Separate accounts grouped in AWS Organizations** keep environments apart and let you apply different policies.\n\n**Wrong choices**\n- Use separate IAM users in one account: Users in one account can still affect shared resources; separate accounts give a stronger boundary.\n- Use separate Regions in one account: One account in several Regions still shares the same IAM and account settings.\n- Use separate security groups in one account: Security groups only control network traffic.",
+    "frequency": 4,
+    "tags": [
+      "AWS Organizations",
+      "Multi-account"
+    ],
+    "distractorOrder": "4|2|1"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "level": "basic",
+    "stem": "What is an Availability Zone?",
+    "choices": [
+      "A site that caches content close to users for Amazon CloudFront",
+      "A single rack of servers rented to one customer",
+      "One or more separate data centers with their own power and networking, inside a Region",
+      "A separate geographic area of the world that contains several data centers"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Region > Availability Zones (isolated data centers)",
+    "explanation": "An **Availability Zone (AZ)** is one or more discrete data centers with redundant power, networking, and connectivity. Each Region has multiple AZs that are isolated from each other.\n\n**Wrong choices**\n- A separate geographic area of the world that contains several data centers: That describes a Region, which contains several Availability Zones.\n- A site that caches content close to users for Amazon CloudFront: That describes an edge location.\n- A single rack of servers rented to one customer: Availability Zones are much larger and are shared by many customers.",
+    "frequency": 5,
+    "tags": [
+      "Global infrastructure",
+      "Availability Zones"
+    ],
+    "distractorOrder": "4|1|2"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "level": "basic",
+    "stem": "A video website wants to cache its images and videos close to viewers around the world so pages load faster. Which service should it use?",
+    "choices": [
+      "Amazon S3 Glacier",
+      "Amazon Route 53",
+      "AWS Direct Connect",
+      "Amazon CloudFront"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Cache content at edge locations = CloudFront",
+    "explanation": "**Amazon CloudFront** is a content delivery network (CDN). It caches content at edge locations near users so it is delivered with low delay.\n\n**Wrong choices**\n- Amazon Route 53: Route 53 is a DNS service; it does not cache content.\n- AWS Direct Connect: Direct Connect links a data center to AWS with a private connection.\n- Amazon S3 Glacier: S3 Glacier storage classes are for long-term archives.",
+    "frequency": 5,
+    "tags": [
+      "Amazon CloudFront",
+      "Edge locations"
+    ],
+    "distractorOrder": "2|3|1"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "level": "basic",
+    "stem": "A company needs virtual servers in the cloud where it can choose the operating system and install its own software. Which service should it use?",
+    "choices": [
+      "AWS Lambda",
+      "Amazon S3",
+      "Amazon RDS",
+      "Amazon EC2"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Virtual servers = EC2",
+    "explanation": "**Amazon EC2** provides resizable virtual servers (instances). You choose the instance type and operating system and control the software.\n\n**Wrong choices**\n- AWS Lambda: Lambda runs code without servers you manage, so you cannot choose and manage the operating system.\n- Amazon S3: S3 stores objects; it does not run servers.\n- Amazon RDS: RDS is a managed relational database.",
+    "frequency": 5,
+    "tags": [
+      "Amazon EC2",
+      "Compute"
+    ],
+    "distractorOrder": "1|2|3"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "level": "basic",
+    "stem": "A company wants to run a small piece of code each time a file is uploaded, without managing any servers, and pay only when the code runs. Which service should it use?",
+    "choices": [
+      "Amazon EC2",
+      "AWS Lambda",
+      "Amazon Lightsail",
+      "AWS Elastic Beanstalk"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Event-driven code, no servers = Lambda",
+    "explanation": "**AWS Lambda** is serverless compute. It runs your code in response to events and you pay only for the compute time used.\n\n**Wrong choices**\n- Amazon EC2: EC2 needs you to run and manage servers, and you pay while they run.\n- AWS Elastic Beanstalk: Elastic Beanstalk deploys applications onto servers it manages for you, not event-driven code.\n- Amazon Lightsail: Lightsail provides simple virtual servers.",
+    "frequency": 5,
+    "tags": [
+      "AWS Lambda",
+      "Serverless"
+    ],
+    "distractorOrder": "1|4|3"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "level": "basic",
+    "stem": "A company needs to store a very large and growing number of photos and documents and get them over the internet. Which service is the best fit?",
+    "choices": [
+      "Amazon EBS",
+      "Amazon RDS",
+      "Amazon EFS",
+      "Amazon S3"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Object storage for files of any amount = S3",
+    "explanation": "**Amazon S3** is object storage. It stores any amount of data as objects in buckets and is designed for very high durability.\n\n**Wrong choices**\n- Amazon EBS: EBS is block storage attached to EC2 instances, not internet-accessible object storage.\n- Amazon EFS: EFS is a shared file system for servers.\n- Amazon RDS: RDS stores data in relational database tables.",
+    "frequency": 5,
+    "tags": [
+      "Amazon S3",
+      "Storage"
+    ],
+    "distractorOrder": "1|3|2"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "level": "basic",
+    "stem": "An Amazon EC2 instance needs a storage volume that works like a hard drive for its operating system and database. Which service provides this?",
+    "choices": [
+      "Amazon EBS",
+      "Amazon S3",
+      "Amazon S3 Glacier Deep Archive",
+      "Amazon EFS"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Block storage volume for EC2 = EBS",
+    "explanation": "**Amazon EBS** provides block storage volumes that attach to EC2 instances and act like hard drives. Data stays on the volume when the instance stops.\n\n**Wrong choices**\n- Amazon S3: S3 is object storage, not a disk drive attached to an instance.\n- Amazon EFS: EFS is a shared file system, not a block volume for one instance.\n- Amazon S3 Glacier Deep Archive: This is for long-term archive storage.",
+    "frequency": 5,
+    "tags": [
+      "Amazon EBS",
+      "Storage"
+    ],
+    "distractorOrder": "2|4|3"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "level": "basic",
+    "stem": "Many Linux EC2 instances need to read and write the same files at the same time through a shared file system. Which service should a company use?",
+    "choices": [
+      "Amazon EFS",
+      "Amazon EBS",
+      "EC2 instance store",
+      "Amazon S3 Glacier Flexible Retrieval"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Shared file system for many Linux instances = EFS",
+    "explanation": "**Amazon EFS** is a managed file system that many instances can use at the same time. It grows and shrinks automatically as files are added and removed.\n\n**Wrong choices**\n- Amazon EBS: An EBS volume is usually attached to one instance, not shared as a file system.\n- Amazon S3 Glacier Flexible Retrieval: This is archive storage.\n- EC2 instance store: Instance store is temporary storage on one host.",
+    "frequency": 4,
+    "tags": [
+      "Amazon EFS",
+      "Storage"
+    ],
+    "distractorOrder": "2|4|3"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "level": "basic",
+    "stem": "A company wants a relational database such as MySQL or PostgreSQL, but it does not want to handle backups and patching itself. Which service should it use?",
+    "choices": [
+      "Amazon ElastiCache",
+      "Amazon RDS",
+      "Amazon Redshift",
+      "Amazon DynamoDB"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Managed relational database = RDS",
+    "explanation": "**Amazon RDS** is a managed relational database service. It supports engines such as MySQL and PostgreSQL and handles tasks like backups and patching.\n\n**Wrong choices**\n- Amazon DynamoDB: DynamoDB is a NoSQL database, not MySQL or PostgreSQL.\n- Amazon Redshift: Redshift is a data warehouse for analytics.\n- Amazon ElastiCache: ElastiCache is an in-memory cache.",
+    "frequency": 5,
+    "tags": [
+      "Amazon RDS",
+      "Databases"
+    ],
+    "distractorOrder": "4|3|1"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "level": "basic",
+    "stem": "A mobile game needs a serverless NoSQL database that gives fast responses at any scale. Which service fits best?",
+    "choices": [
+      "Amazon RDS",
+      "Amazon Redshift",
+      "Amazon DynamoDB",
+      "Amazon Aurora"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Serverless NoSQL key-value = DynamoDB",
+    "explanation": "**Amazon DynamoDB** is a fully managed, serverless NoSQL key-value and document database with fast performance at any scale.\n\n**Wrong choices**\n- Amazon RDS: RDS is relational and runs on database instances you size.\n- Amazon Aurora: Aurora is a relational database.\n- Amazon Redshift: Redshift is a data warehouse.",
+    "frequency": 5,
+    "tags": [
+      "Amazon DynamoDB",
+      "Databases"
+    ],
+    "distractorOrder": "1|4|2"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "level": "basic",
+    "stem": "A company wants to run complex reports and analytics on large amounts of historical business data. Which service is built for this?",
+    "choices": [
+      "Amazon RDS",
+      "Amazon Redshift",
+      "Amazon DynamoDB",
+      "Amazon ElastiCache"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Data warehouse for analytics = Redshift",
+    "explanation": "**Amazon Redshift** is a data warehouse service designed to run analytics queries over large amounts of data.\n\n**Wrong choices**\n- Amazon RDS: RDS is mainly for day-to-day transaction databases, not large-scale analytics.\n- Amazon DynamoDB: DynamoDB is a NoSQL database for fast lookups.\n- Amazon ElastiCache: ElastiCache is an in-memory cache.",
+    "frequency": 4,
+    "tags": [
+      "Amazon Redshift",
+      "Analytics"
+    ],
+    "distractorOrder": "1|3|4"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "level": "basic",
+    "stem": "Which AWS service is a DNS service that turns domain names such as example.com into IP addresses?",
+    "choices": [
+      "AWS Direct Connect",
+      "Amazon CloudFront",
+      "Amazon Route 53",
+      "Amazon VPC"
+    ],
+    "answer": 3,
+    "oneLineConcept": "DNS = Route 53",
+    "explanation": "**Amazon Route 53** is a highly available DNS service. It routes users to applications and can also register domain names and check health.\n\n**Wrong choices**\n- Amazon CloudFront: CloudFront delivers content but does not handle DNS.\n- Amazon VPC: VPC is a private network in AWS.\n- AWS Direct Connect: Direct Connect is a private network link.",
+    "frequency": 4,
+    "tags": [
+      "Amazon Route 53",
+      "Networking"
+    ],
+    "distractorOrder": "2|4|1"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "level": "basic",
+    "stem": "A company wants a private, dedicated network connection from its own data center to AWS that does not travel over the public internet. Which service should it use?",
+    "choices": [
+      "AWS Direct Connect",
+      "AWS Site-to-Site VPN",
+      "Amazon CloudFront",
+      "Amazon Route 53"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Private dedicated link to AWS = Direct Connect",
+    "explanation": "**AWS Direct Connect** creates a dedicated private network connection between your location and AWS, which can give more consistent performance than the internet.\n\n**Wrong choices**\n- AWS Site-to-Site VPN: Site-to-Site VPN is encrypted but travels over the public internet.\n- Amazon CloudFront: CloudFront delivers content to users.\n- Amazon Route 53: Route 53 is a DNS service.",
+    "frequency": 5,
+    "tags": [
+      "AWS Direct Connect",
+      "Networking"
+    ],
+    "distractorOrder": "2|3|4"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "level": "basic",
+    "stem": "Which service lets a company create its own logically isolated network in AWS, with its own IP address ranges and subnets?",
+    "choices": [
+      "Amazon Route 53",
+      "Amazon CloudFront",
+      "AWS Direct Connect",
+      "Amazon VPC"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Your private network in AWS = VPC",
+    "explanation": "**Amazon Virtual Private Cloud (VPC)** lets you define a logically isolated network, with subnets, route tables, and gateways that you control.\n\n**Wrong choices**\n- AWS Direct Connect: Direct Connect connects a data center to AWS but is not the network itself.\n- Amazon Route 53: Route 53 is a DNS service.\n- Amazon CloudFront: CloudFront delivers content to users.",
+    "frequency": 5,
+    "tags": [
+      "Amazon VPC",
+      "Networking"
+    ],
+    "distractorOrder": "3|1|2"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "level": "basic",
+    "stem": "An operations team wants to watch the CPU use of its EC2 instances and get an alarm when CPU stays high. Which service should it use?",
+    "choices": [
+      "AWS Trusted Advisor",
+      "AWS Config",
+      "Amazon CloudWatch",
+      "AWS CloudTrail"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Metrics and alarms = CloudWatch",
+    "explanation": "**Amazon CloudWatch** collects metrics and logs from AWS resources and applications, and alarms can notify you or take action when a limit is crossed.\n\n**Wrong choices**\n- AWS CloudTrail: CloudTrail records API calls, not performance metrics.\n- AWS Config: Config tracks resource settings.\n- AWS Trusted Advisor: Trusted Advisor gives best-practice recommendations, not live alarms on metrics.",
+    "frequency": 5,
+    "tags": [
+      "Amazon CloudWatch",
+      "Monitoring"
+    ],
+    "distractorOrder": "4|2|1"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "level": "basic",
+    "stem": "A company wants to describe its servers, networks, and databases in template files so it can create the same environment again and again in a repeatable way. Which service should it use?",
+    "choices": [
+      "AWS Systems Manager",
+      "AWS Config",
+      "AWS Elastic Beanstalk",
+      "AWS CloudFormation"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Infrastructure as code templates = CloudFormation",
+    "explanation": "**AWS CloudFormation** is an infrastructure as code service. You describe resources in a template, and CloudFormation creates them the same way every time.\n\n**Wrong choices**\n- AWS Elastic Beanstalk: Elastic Beanstalk deploys an application for you but is not a general tool for writing infrastructure as templates.\n- AWS Systems Manager: Systems Manager helps operate and patch servers.\n- AWS Config: Config records resource settings.",
+    "frequency": 5,
+    "tags": [
+      "AWS CloudFormation",
+      "Infrastructure as code"
+    ],
+    "distractorOrder": "3|1|2"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "level": "basic",
+    "stem": "A web application runs on several EC2 instances. The company wants incoming traffic spread evenly across them. Which service should it use?",
+    "choices": [
+      "Amazon EC2 Auto Scaling",
+      "Elastic Load Balancing",
+      "Amazon CloudFront",
+      "Amazon Route 53"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Spread traffic across instances = Elastic Load Balancing",
+    "explanation": "**Elastic Load Balancing (ELB)** automatically distributes incoming traffic across multiple targets, such as EC2 instances, and sends traffic only to healthy targets.\n\n**Wrong choices**\n- Amazon EC2 Auto Scaling: Auto Scaling changes the number of instances, but it does not spread traffic.\n- Amazon Route 53: Route 53 answers DNS queries; spreading traffic across instances is the load balancer's main job.\n- Amazon CloudFront: CloudFront caches content at edge locations.",
+    "frequency": 5,
+    "tags": [
+      "Elastic Load Balancing"
+    ],
+    "distractorOrder": "1|4|3"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "level": "basic",
+    "stem": "A company wants EC2 instances to be added automatically when demand rises and removed when demand falls. Which service should it use?",
+    "choices": [
+      "Elastic Load Balancing",
+      "AWS Lambda",
+      "Amazon CloudWatch",
+      "Amazon EC2 Auto Scaling"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Add/remove instances with demand = EC2 Auto Scaling",
+    "explanation": "**Amazon EC2 Auto Scaling** adds or removes instances based on demand or a schedule, so you have enough capacity without paying for idle servers.\n\n**Wrong choices**\n- Elastic Load Balancing: A load balancer spreads traffic but does not add or remove instances.\n- Amazon CloudWatch: CloudWatch can trigger scaling, but Auto Scaling is what adds and removes instances.\n- AWS Lambda: Lambda runs code; it does not manage EC2 instance counts.",
+    "frequency": 5,
+    "tags": [
+      "Auto Scaling",
+      "Elasticity"
+    ],
+    "distractorOrder": "1|3|2"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "level": "basic",
+    "stem": "An order website sends orders to a processing system. The company wants orders to wait safely in a queue until the processing system is ready. Which service should it use?",
+    "choices": [
+      "Amazon Kinesis",
+      "Amazon SQS",
+      "Amazon SNS",
+      "Amazon EventBridge"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Hold messages in a queue = SQS",
+    "explanation": "**Amazon Simple Queue Service (SQS)** is a message queue. It stores messages until the receiving application processes them, which decouples the parts of a system.\n\n**Wrong choices**\n- Amazon SNS: SNS pushes messages to subscribers right away; it is not a queue that holds work.\n- Amazon EventBridge: EventBridge routes events by rules, not as a work queue.\n- Amazon Kinesis: Kinesis is for real-time streaming data.",
+    "frequency": 5,
+    "tags": [
+      "Amazon SQS",
+      "Decoupling"
+    ],
+    "distractorOrder": "3|4|1"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "level": "intermediate",
+    "stem": "A company wants to send the same alert to many subscribers at once by email, text message, and to other applications. Which service should it use?",
+    "choices": [
+      "Amazon SQS",
+      "Amazon SNS",
+      "Amazon CloudWatch",
+      "Amazon EventBridge"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Publish once, many subscribers = SNS",
+    "explanation": "**Amazon Simple Notification Service (SNS)** is a publish/subscribe service. One message sent to a topic is delivered to all subscribers, such as email, SMS, or other applications.\n\n**Wrong choices**\n- Amazon SQS: SQS holds messages in a queue for one consumer to process, not for sending to many subscribers.\n- Amazon EventBridge: EventBridge routes events between services, not email and text to people.\n- Amazon CloudWatch: CloudWatch watches metrics; it uses SNS to send notifications.",
+    "frequency": 4,
+    "tags": [
+      "Amazon SNS"
+    ],
+    "distractorOrder": "1|4|3"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "level": "intermediate",
+    "stem": "A developer wants to upload web application code and let AWS handle the servers, load balancing, scaling, and monitoring automatically. Which service fits best?",
+    "choices": [
+      "AWS Elastic Beanstalk",
+      "Amazon EC2",
+      "Amazon Lightsail",
+      "AWS CloudFormation"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Upload code, AWS handles the rest = Elastic Beanstalk",
+    "explanation": "**AWS Elastic Beanstalk** deploys and runs web applications. You upload code, and it handles capacity, load balancing, scaling, and health monitoring.\n\n**Wrong choices**\n- AWS CloudFormation: CloudFormation builds resources from templates you write; it does not take your code and run it for you.\n- Amazon Lightsail: Lightsail gives simple servers you still manage yourself.\n- Amazon EC2: With EC2 alone you manage the servers yourself.",
+    "frequency": 4,
+    "tags": [
+      "AWS Elastic Beanstalk"
+    ],
+    "distractorOrder": "4|3|2"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "level": "intermediate",
+    "stem": "A small business wants an easy way to launch a simple website with a virtual server at a predictable monthly price. Which service fits best?",
+    "choices": [
+      "Amazon EC2 Dedicated Hosts",
+      "AWS Elastic Beanstalk",
+      "AWS Lambda",
+      "Amazon Lightsail"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Simple server, predictable monthly price = Lightsail",
+    "explanation": "**Amazon Lightsail** offers easy-to-use virtual servers, storage, and networking in bundles with a predictable monthly price. It suits simple websites and small apps.\n\n**Wrong choices**\n- AWS Elastic Beanstalk: Elastic Beanstalk is for deploying applications and is billed by the resources it creates.\n- Amazon EC2 Dedicated Hosts: Dedicated Hosts are physical servers for special license needs and cost more.\n- AWS Lambda: Lambda runs code for events, not a simple website server.",
+    "frequency": 3,
+    "tags": [
+      "Amazon Lightsail"
+    ],
+    "distractorOrder": "2|1|3"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "level": "intermediate",
+    "stem": "A company wants to run containers without having to manage or patch any servers or clusters of virtual machines. Which service should it use?",
+    "choices": [
+      "Amazon Lightsail",
+      "Amazon EC2",
+      "AWS Outposts",
+      "AWS Fargate"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Serverless containers = Fargate",
+    "explanation": "**AWS Fargate** is a serverless compute engine for containers. It works with Amazon ECS and Amazon EKS so you do not manage servers.\n\n**Wrong choices**\n- Amazon EC2: With EC2 you manage the virtual servers that run containers.\n- Amazon Lightsail: Lightsail gives simple virtual servers you manage.\n- AWS Outposts: Outposts runs AWS infrastructure in your own data center.",
+    "frequency": 4,
+    "tags": [
+      "AWS Fargate",
+      "Containers"
+    ],
+    "distractorOrder": "2|1|3"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "level": "intermediate",
+    "stem": "A company already uses Kubernetes on premises and wants a managed Kubernetes service on AWS. Which service should it choose?",
+    "choices": [
+      "Amazon Lightsail",
+      "AWS Lambda",
+      "Amazon EKS",
+      "Amazon ECS"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Managed Kubernetes = EKS",
+    "explanation": "**Amazon Elastic Kubernetes Service (EKS)** is a managed Kubernetes service. **Amazon ECS** is AWS's own container service that does not use Kubernetes.\n\n**Wrong choices**\n- Amazon ECS: ECS is AWS's own container orchestration service, not Kubernetes.\n- AWS Lambda: Lambda runs functions, not Kubernetes.\n- Amazon Lightsail: Lightsail offers simple servers.",
+    "frequency": 4,
+    "tags": [
+      "Amazon EKS",
+      "Containers"
+    ],
+    "distractorOrder": "4|2|1"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "level": "intermediate",
+    "stem": "An analyst wants to run standard SQL queries directly on log files stored in Amazon S3, without loading them into a database or managing servers. Which service should they use?",
+    "choices": [
+      "AWS Glue",
+      "Amazon Athena",
+      "Amazon Redshift",
+      "Amazon RDS"
+    ],
+    "answer": 2,
+    "oneLineConcept": "SQL directly on S3, serverless = Athena",
+    "explanation": "**Amazon Athena** is a serverless query service. It lets you analyze data in Amazon S3 using standard SQL, and you pay for the queries you run.\n\n**Wrong choices**\n- Amazon Redshift: Redshift is a data warehouse where data is usually loaded first.\n- Amazon RDS: RDS needs the data loaded into a database.\n- AWS Glue: Glue prepares and catalogs data but is not the query tool.",
+    "frequency": 4,
+    "tags": [
+      "Amazon Athena",
+      "Analytics"
+    ],
+    "distractorOrder": "3|4|1"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "level": "intermediate",
+    "stem": "A website wants to collect and process clickstream data from users in real time as it arrives. Which service is designed for this?",
+    "choices": [
+      "Amazon Kinesis",
+      "Amazon Athena",
+      "Amazon S3 Glacier Deep Archive",
+      "Amazon Redshift"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Real-time streaming data = Kinesis",
+    "explanation": "**Amazon Kinesis** collects, processes, and analyzes streaming data, such as clickstreams and logs, in real time.\n\n**Wrong choices**\n- Amazon Athena: Athena queries data at rest in S3, not streams as they arrive.\n- Amazon Redshift: Redshift analyzes stored data in a warehouse.\n- Amazon S3 Glacier Deep Archive: This is long-term archive storage.",
+    "frequency": 3,
+    "tags": [
+      "Amazon Kinesis",
+      "Analytics"
+    ],
+    "distractorOrder": "2|4|3"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "level": "intermediate",
+    "stem": "A company needs a serverless service to discover, prepare, and combine data from many sources (extract, transform, and load), with a central data catalog. Which service should it use?",
+    "choices": [
+      "Amazon Athena",
+      "Amazon Kinesis",
+      "AWS Glue",
+      "Amazon Redshift"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Serverless ETL + data catalog = Glue",
+    "explanation": "**AWS Glue** is a serverless data integration (ETL) service. It finds, prepares, and moves data and keeps a data catalog that other services such as Athena can use.\n\n**Wrong choices**\n- Amazon Athena: Athena queries data but is not mainly an ETL service.\n- Amazon Kinesis: Kinesis handles real-time streams.\n- Amazon Redshift: Redshift is a data warehouse that stores and analyzes data.",
+    "frequency": 3,
+    "tags": [
+      "AWS Glue",
+      "Analytics"
+    ],
+    "distractorOrder": "1|2|4"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "level": "intermediate",
+    "stem": "A company must keep old records for many years. It almost never reads them, and waiting hours to get them back is fine. Which Amazon S3 storage class has the lowest storage cost?",
+    "choices": [
+      "S3 Standard-Infrequent Access",
+      "S3 Standard",
+      "S3 Intelligent-Tiering",
+      "S3 Glacier Deep Archive"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Rarely read, hours OK, lowest cost = Glacier Deep Archive",
+    "explanation": "**S3 Glacier Deep Archive** is the lowest-cost S3 storage class. It is meant for long-term archives where retrieval within hours is acceptable.\n\n**Wrong choices**\n- S3 Standard-Infrequent Access: Standard-IA is for data read less often but still needed quickly, and costs more to store.\n- S3 Intelligent-Tiering: Intelligent-Tiering is for unknown or changing access patterns.\n- S3 Standard: S3 Standard is for frequently used data and costs the most to store of these.",
+    "frequency": 5,
+    "tags": [
+      "Amazon S3",
+      "Storage classes"
+    ],
+    "distractorOrder": "1|3|2"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "level": "intermediate",
+    "stem": "A company stores data in Amazon S3 but does not know how often each file will be used, and use changes over time. Which storage class moves data between access tiers automatically to save money?",
+    "choices": [
+      "S3 One Zone-Infrequent Access",
+      "S3 Intelligent-Tiering",
+      "S3 Standard-Infrequent Access",
+      "S3 Glacier Deep Archive"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Unknown or changing access = Intelligent-Tiering",
+    "explanation": "**S3 Intelligent-Tiering** watches how objects are used and moves them between access tiers automatically, saving money when access patterns are unknown or change.\n\n**Wrong choices**\n- S3 Standard-Infrequent Access: Standard-IA does not move data automatically and adds retrieval fees.\n- S3 One Zone-Infrequent Access: One Zone-IA keeps data in one AZ and does not move data automatically.\n- S3 Glacier Deep Archive: Deep Archive is for archives with slow retrieval.",
+    "frequency": 4,
+    "tags": [
+      "Amazon S3",
+      "Storage classes"
+    ],
+    "distractorOrder": "3|1|4"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "level": "intermediate",
+    "stem": "A website reads the same product data from its database many times a second. The company wants to keep this data in memory for very fast responses and lower database load. Which service should it use?",
+    "choices": [
+      "Amazon ElastiCache",
+      "Amazon Redshift",
+      "Amazon DynamoDB",
+      "Amazon RDS"
+    ],
+    "answer": 1,
+    "oneLineConcept": "In-memory cache = ElastiCache",
+    "explanation": "**Amazon ElastiCache** is a managed in-memory caching service. Keeping often-read data in memory speeds up applications and takes load off the database.\n\n**Wrong choices**\n- Amazon DynamoDB: DynamoDB is a database, not an in-memory cache in front of another database.\n- Amazon RDS: RDS is the database itself.\n- Amazon Redshift: Redshift is for analytics.",
+    "frequency": 4,
+    "tags": [
+      "Amazon ElastiCache",
+      "Databases"
+    ],
+    "distractorOrder": "3|4|2"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "level": "intermediate",
+    "stem": "A company wants to move its on-premises database to AWS while the source database keeps running, so downtime is kept low. Which service should it use?",
+    "choices": [
+      "AWS Backup",
+      "AWS Database Migration Service (AWS DMS)",
+      "AWS Storage Gateway",
+      "AWS DataSync"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Migrate databases with low downtime = AWS DMS",
+    "explanation": "**AWS Database Migration Service (DMS)** moves databases to AWS. The source database stays running during the move, which keeps downtime low.\n\n**Wrong choices**\n- AWS DataSync: DataSync moves files and objects, not running databases.\n- AWS Backup: AWS Backup manages backups, not database migrations.\n- AWS Storage Gateway: Storage Gateway connects on-premises apps to cloud storage.",
+    "frequency": 4,
+    "tags": [
+      "AWS DMS",
+      "Migration"
+    ],
+    "distractorOrder": "4|1|3"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "level": "intermediate",
+    "stem": "A company's on-premises applications need to store backups and files in AWS cloud storage while keeping local access. Which service connects them?",
+    "choices": [
+      "AWS DataSync",
+      "Amazon EFS",
+      "AWS Direct Connect",
+      "AWS Storage Gateway"
+    ],
+    "answer": 4,
+    "oneLineConcept": "On-premises access to cloud storage = Storage Gateway",
+    "explanation": "**AWS Storage Gateway** is a hybrid storage service. It gives on-premises applications access to storage in AWS, often with a local cache.\n\n**Wrong choices**\n- AWS DataSync: DataSync moves data between locations but is not an ongoing local gateway to cloud storage.\n- Amazon EFS: EFS is a file system for AWS resources, not a local gateway.\n- AWS Direct Connect: Direct Connect is a network link, not a storage service.",
+    "frequency": 3,
+    "tags": [
+      "AWS Storage Gateway",
+      "Hybrid"
+    ],
+    "distractorOrder": "1|2|3"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "level": "intermediate",
+    "stem": "Most of a company's customers are in Australia, and they complain that the application is slow. The application runs in a Region in North America. What should the company do first?",
+    "choices": [
+      "Choose the lowest-priced Region regardless of location",
+      "Deploy the application in an AWS Region close to Australia",
+      "Add more instances in the current Region",
+      "Move to the Region with the most Availability Zones"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Low latency = choose a Region close to users",
+    "explanation": "Distance adds delay. **Choosing a Region close to users** lowers latency. Other Region choice factors are compliance, service availability, and price.\n\n**Wrong choices**\n- Add more instances in the current Region: More instances add capacity but do not shorten the distance to users.\n- Move to the Region with the most Availability Zones: The number of AZs does not reduce distance to Australian users.\n- Choose the lowest-priced Region regardless of location: Price alone does not solve latency.",
+    "frequency": 4,
+    "tags": [
+      "Regions"
+    ],
+    "distractorOrder": "3|4|1"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "level": "intermediate",
+    "stem": "A factory must keep data processing in its own building for low latency, but it wants to use the same AWS services, tools, and APIs as in the cloud. Which offering fits?",
+    "choices": [
+      "AWS Local Zones",
+      "AWS Direct Connect",
+      "AWS Outposts",
+      "AWS Wavelength"
+    ],
+    "answer": 3,
+    "oneLineConcept": "AWS infrastructure in your own facility = Outposts",
+    "explanation": "**AWS Outposts** brings AWS infrastructure and services into the customer's own data center or site, for workloads that must stay on premises.\n\n**Wrong choices**\n- AWS Local Zones: Local Zones are run by AWS in metro areas, not inside the customer's building.\n- AWS Wavelength: Wavelength places AWS services in telecom 5G networks.\n- AWS Direct Connect: Direct Connect is a network link to AWS, not AWS hardware on site.",
+    "frequency": 4,
+    "tags": [
+      "AWS Outposts",
+      "Hybrid"
+    ],
+    "distractorOrder": "1|4|2"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "level": "intermediate",
+    "stem": "A call center wants to turn recorded phone calls into written text so staff can search them. Which service should it use?",
+    "choices": [
+      "Amazon Transcribe",
+      "Amazon Comprehend",
+      "Amazon Translate",
+      "Amazon Polly"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Speech to text = Transcribe",
+    "explanation": "**Amazon Transcribe** uses machine learning to convert speech into text. **Amazon Polly** does the reverse, turning text into speech.\n\n**Wrong choices**\n- Amazon Polly: Polly does the opposite: it turns text into speech.\n- Amazon Comprehend: Comprehend finds meaning in text but does not create text from audio.\n- Amazon Translate: Translate changes text from one language to another.",
+    "frequency": 4,
+    "tags": [
+      "AI/ML",
+      "Amazon Transcribe"
+    ],
+    "distractorOrder": "4|2|3"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "level": "advanced",
+    "stem": "An insurance company receives thousands of scanned claim forms. It wants to automatically pull out the printed and handwritten text and the data in tables. Which service should it use?",
+    "choices": [
+      "Amazon Comprehend",
+      "Amazon Rekognition",
+      "Amazon Textract",
+      "Amazon Transcribe"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Extract text and tables from documents = Textract",
+    "explanation": "**Amazon Textract** extracts text, handwriting, forms, and table data from scanned documents using machine learning.\n\n**Wrong choices**\n- Amazon Rekognition: Rekognition analyzes images and videos for objects and faces, not form data.\n- Amazon Comprehend: Comprehend analyzes text that already exists; it does not read scanned documents.\n- Amazon Transcribe: Transcribe turns speech into text.",
+    "frequency": 3,
+    "tags": [
+      "AI/ML",
+      "Amazon Textract"
+    ],
+    "distractorOrder": "2|1|4"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "level": "advanced",
+    "stem": "A retailer wants to automatically tell whether thousands of written customer reviews are positive or negative. Which service should it use?",
+    "choices": [
+      "Amazon Rekognition",
+      "Amazon Comprehend",
+      "Amazon Lex",
+      "Amazon Translate"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Sentiment and meaning in text = Comprehend",
+    "explanation": "**Amazon Comprehend** is a natural language processing service. It finds sentiment, key phrases, and other insights in text.\n\n**Wrong choices**\n- Amazon Rekognition: Rekognition analyzes images and video, not the feeling in text.\n- Amazon Translate: Translate changes language but does not judge sentiment.\n- Amazon Lex: Lex builds chatbots.",
+    "frequency": 3,
+    "tags": [
+      "AI/ML",
+      "Amazon Comprehend"
+    ],
+    "distractorOrder": "1|4|3"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "level": "advanced",
+    "stem": "A company wants to find objects and detect faces in photos uploaded by users without building its own machine learning model. Which service should it use?",
+    "choices": [
+      "Amazon Textract",
+      "Amazon Comprehend",
+      "Amazon Polly",
+      "Amazon Rekognition"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Image and video analysis = Rekognition",
+    "explanation": "**Amazon Rekognition** analyzes images and videos to find objects, scenes, text, and faces using pre-trained machine learning.\n\n**Wrong choices**\n- Amazon Textract: Textract reads text and forms from documents, not objects and faces.\n- Amazon Comprehend: Comprehend analyzes text.\n- Amazon Polly: Polly turns text into speech.",
+    "frequency": 3,
+    "tags": [
+      "AI/ML",
+      "Amazon Rekognition"
+    ],
+    "distractorOrder": "1|2|3"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "level": "advanced",
+    "stem": "A company wants to build a generative AI app. It wants to choose from foundation models made by several companies through one API, without managing any infrastructure. Which service fits best?",
+    "choices": [
+      "Amazon Bedrock",
+      "Amazon Lex",
+      "Amazon SageMaker AI",
+      "Amazon Comprehend"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Foundation models through one API = Bedrock",
+    "explanation": "**Amazon Bedrock** is a fully managed service that offers foundation models from several AI companies through a single API, for building generative AI applications.\n\n**Wrong choices**\n- Amazon SageMaker AI: SageMaker AI is mainly for building, training, and deploying your own ML models.\n- Amazon Lex: Lex builds chatbots with voice and text.\n- Amazon Comprehend: Comprehend analyzes text for meaning.",
+    "frequency": 4,
+    "tags": [
+      "AI/ML",
+      "Amazon Bedrock"
+    ],
+    "distractorOrder": "3|2|4"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "level": "advanced",
+    "stem": "A video editing company needs AWS compute placed very close to a large city where its editors work, for very low latency, without running hardware in its own office. Which offering fits best?",
+    "choices": [
+      "Amazon CloudFront edge locations",
+      "AWS Wavelength Zones",
+      "AWS Outposts",
+      "AWS Local Zones"
+    ],
+    "answer": 4,
+    "oneLineConcept": "AWS compute near a big city = Local Zones",
+    "explanation": "**AWS Local Zones** place AWS compute, storage, and other services close to large population centers, for applications that need very low latency.\n\n**Wrong choices**\n- AWS Outposts: Outposts places hardware in the customer's own site, which this company wants to avoid.\n- Amazon CloudFront edge locations: Edge locations cache content; they do not run general compute for editing.\n- AWS Wavelength Zones: Wavelength is for apps used over 5G mobile networks.",
+    "frequency": 3,
+    "tags": [
+      "Local Zones",
+      "Global infrastructure"
+    ],
+    "distractorOrder": "3|1|2"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "level": "advanced",
+    "stem": "A company is building a mobile game for phones on 5G networks and needs the lowest possible delay between the phone and the game servers. Which offering is designed for this?",
+    "choices": [
+      "AWS Wavelength Zones",
+      "Amazon CloudFront edge locations",
+      "AWS Local Zones",
+      "AWS Outposts"
+    ],
+    "answer": 1,
+    "oneLineConcept": "AWS inside 5G networks = Wavelength",
+    "explanation": "**AWS Wavelength** places AWS compute and storage inside telecom providers' 5G networks, so mobile apps reach servers with very low delay.\n\n**Wrong choices**\n- AWS Local Zones: Local Zones serve big cities but are not inside 5G networks.\n- AWS Outposts: Outposts is for the customer's own facility.\n- Amazon CloudFront edge locations: Edge locations cache content, not game servers inside 5G networks.",
+    "frequency": 3,
+    "tags": [
+      "Wavelength",
+      "Global infrastructure"
+    ],
+    "distractorOrder": "3|4|2"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "level": "advanced",
+    "stem": "Which statement about AWS Regions and Availability Zones is NOT correct?",
+    "choices": [
+      "Availability Zones in a Region are linked by low-latency networking",
+      "Each Region has multiple Availability Zones",
+      "Running across Availability Zones improves availability",
+      "Every AWS service is available in every Region"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Services differ by Region; check before choosing",
+    "explanation": "Not every service or feature is offered in every Region. **Service availability** is one of the factors to check when choosing a Region, along with compliance, latency, and price.\n\n**Wrong choices**\n- Each Region has multiple Availability Zones: This is correct.\n- Availability Zones in a Region are linked by low-latency networking: This is correct.\n- Running across Availability Zones improves availability: This is correct.",
+    "frequency": 4,
+    "tags": [
+      "Regions"
+    ],
+    "levelLock": true
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "level": "advanced",
+    "stem": "An operations team needs to apply operating system patches and run commands across hundreds of EC2 instances and on-premises servers from one place. Which service should it use?",
+    "choices": [
+      "AWS Config",
+      "AWS CloudTrail",
+      "AWS CloudFormation",
+      "AWS Systems Manager"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Operate and patch many servers = Systems Manager",
+    "explanation": "**AWS Systems Manager** helps you view and operate servers at scale, including patching and running commands on EC2 instances and on-premises servers.\n\n**Wrong choices**\n- AWS CloudFormation: CloudFormation creates resources from templates; it is not for patching running servers.\n- AWS Config: Config records settings but does not patch or run commands.\n- AWS CloudTrail: CloudTrail records API activity.",
+    "frequency": 3,
+    "tags": [
+      "AWS Systems Manager",
+      "Operations"
+    ],
+    "distractorOrder": "3|1|2"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "level": "advanced",
+    "stem": "Which of the following is NOT a way for customers to work with AWS services?",
+    "choices": [
+      "The AWS Management Console",
+      "The AWS Command Line Interface (AWS CLI)",
+      "Signing in directly to the physical host servers in AWS data centers",
+      "AWS software development kits (SDKs)"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Access AWS via Console, CLI, SDKs, APIs",
+    "explanation": "Customers use AWS through the **Management Console, the AWS CLI, SDKs, and APIs**. They never have access to physical hosts in AWS data centers.\n\n**Wrong choices**\n- The AWS Management Console: This is a web interface for AWS.\n- The AWS Command Line Interface (AWS CLI): This is a command tool for AWS.\n- AWS software development kits (SDKs): SDKs let programs call AWS APIs.",
+    "frequency": 4,
+    "tags": [
+      "Access methods"
+    ],
+    "levelLock": true
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "level": "advanced",
+    "stem": "A company wants events from its AWS services and its software-as-a-service (SaaS) applications to be routed to different targets based on rules, as part of an event-driven design. Which service should it use?",
+    "choices": [
+      "Amazon EventBridge",
+      "Amazon SQS",
+      "Amazon SNS",
+      "AWS Step Functions"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Route events by rules = EventBridge",
+    "explanation": "**Amazon EventBridge** is a serverless event bus. It receives events from AWS services, your apps, and SaaS apps and routes them to targets using rules.\n\n**Wrong choices**\n- Amazon SNS: SNS sends messages to subscribers but is not built to route events from SaaS apps by rules.\n- Amazon SQS: SQS is a queue that holds messages.\n- AWS Step Functions: Step Functions coordinates steps in a workflow.",
+    "frequency": 3,
+    "tags": [
+      "Amazon EventBridge",
+      "Event-driven"
+    ],
+    "distractorOrder": "3|2|4"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "level": "advanced",
+    "stem": "An order process has several steps run by different Lambda functions. The company wants a visual workflow that runs the steps in order and retries a step when it fails. Which service should it use?",
+    "choices": [
+      "Amazon EventBridge",
+      "Amazon SNS",
+      "AWS Step Functions",
+      "Amazon SQS"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Coordinate multi-step workflows = Step Functions",
+    "explanation": "**AWS Step Functions** coordinates multiple steps, such as Lambda functions, into a visual workflow with built-in error handling and retries.\n\n**Wrong choices**\n- Amazon EventBridge: EventBridge routes events, but it does not manage a multi-step workflow with state.\n- Amazon SQS: SQS holds messages but does not control step order.\n- Amazon SNS: SNS sends notifications.",
+    "frequency": 3,
+    "tags": [
+      "AWS Step Functions"
+    ],
+    "distractorOrder": "1|4|2"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "level": "advanced",
+    "stem": "All of the following are serverless services where you do not manage servers EXCEPT:",
+    "choices": [
+      "AWS Fargate",
+      "AWS Lambda",
+      "Amazon DynamoDB",
+      "Amazon EC2"
+    ],
+    "answer": 4,
+    "oneLineConcept": "EC2 = you manage the instances",
+    "explanation": "With **Amazon EC2** you choose, size, and manage the instances yourself. Lambda, Fargate, and DynamoDB are serverless.\n\n**Wrong choices**\n- AWS Lambda: Lambda is serverless compute.\n- AWS Fargate: Fargate is serverless compute for containers.\n- Amazon DynamoDB: DynamoDB is a serverless database.",
+    "frequency": 4,
+    "tags": [
+      "Serverless"
+    ],
+    "levelLock": true
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "billing-pricing-support",
+    "level": "basic",
+    "stem": "A company is testing a new application for a few weeks. The workload is unpredictable and must not be interrupted, and the company does not want a long-term commitment. Which EC2 pricing option fits best?",
+    "choices": [
+      "Spot Instances",
+      "Reserved Instances",
+      "Dedicated Hosts",
+      "On-Demand Instances"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Short-term, no commitment, no interruption = On-Demand",
+    "explanation": "**On-Demand Instances** are paid by the second or hour with no long-term commitment. They suit short-term, unpredictable workloads that cannot be interrupted.\n\n**Wrong choices**\n- Spot Instances: Spot Instances can be interrupted, which this workload cannot accept.\n- Reserved Instances: Reserved Instances need a 1-year or 3-year commitment.\n- Dedicated Hosts: Dedicated Hosts are physical servers for special needs and cost more.",
+    "frequency": 5,
+    "tags": [
+      "EC2 pricing"
+    ],
+    "distractorOrder": "1|2|3"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "billing-pricing-support",
+    "level": "basic",
+    "stem": "A company runs batch jobs that can stop and restart at any time without problems. It wants the lowest possible EC2 cost. Which pricing option should it choose?",
+    "choices": [
+      "On-Demand Instances",
+      "Reserved Instances",
+      "Spot Instances",
+      "Dedicated Hosts"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Can be interrupted + cheapest = Spot",
+    "explanation": "**Spot Instances** use spare EC2 capacity at a large discount. AWS can take them back with a short warning, so they suit flexible jobs that can be interrupted.\n\n**Wrong choices**\n- On-Demand Instances: On-Demand works, but it costs more than Spot.\n- Reserved Instances: Reserved Instances need a long-term commitment and suit steady use.\n- Dedicated Hosts: Dedicated Hosts are the most expensive option.",
+    "frequency": 5,
+    "tags": [
+      "EC2 pricing"
+    ],
+    "distractorOrder": "1|2|4"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "billing-pricing-support",
+    "level": "basic",
+    "stem": "A company runs a database server 24 hours a day, every day, and expects this to continue for 3 years. Which EC2 pricing option lowers its cost compared with On-Demand?",
+    "choices": [
+      "Spot Instances",
+      "On-Demand Instances",
+      "Dedicated Hosts",
+      "Reserved Instances"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Steady use for 1 or 3 years = Reserved Instances",
+    "explanation": "**Reserved Instances** give a discount compared with On-Demand in return for a 1-year or 3-year commitment. They fit steady, predictable workloads.\n\n**Wrong choices**\n- Spot Instances: Spot can be interrupted, which is risky for a database.\n- On-Demand Instances: On-Demand has no discount for steady long-term use.\n- Dedicated Hosts: Dedicated Hosts are for license or compliance needs, not lower cost.",
+    "frequency": 5,
+    "tags": [
+      "EC2 pricing"
+    ],
+    "distractorOrder": "1|2|3"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "billing-pricing-support",
+    "level": "basic",
+    "stem": "A manager wants to receive an alert when the company's AWS costs are forecast to go over the monthly amount it planned. Which service should the manager use?",
+    "choices": [
+      "AWS Cost Explorer",
+      "AWS Pricing Calculator",
+      "AWS Budgets",
+      "AWS Trusted Advisor"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Alert on cost or usage limits = Budgets",
+    "explanation": "**AWS Budgets** lets you set custom cost and usage budgets and sends alerts when actual or forecast amounts go over them.\n\n**Wrong choices**\n- AWS Cost Explorer: Cost Explorer shows and forecasts spending but is not mainly for setting alerts.\n- AWS Pricing Calculator: Pricing Calculator estimates costs before you build.\n- AWS Trusted Advisor: Trusted Advisor gives best-practice recommendations.",
+    "frequency": 5,
+    "tags": [
+      "AWS Budgets"
+    ],
+    "distractorOrder": "1|2|4"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "billing-pricing-support",
+    "level": "basic",
+    "stem": "A finance team wants to see charts of how the company's AWS spending changed over the past months and which services cost the most. Which tool should it use?",
+    "choices": [
+      "AWS Pricing Calculator",
+      "AWS Cost Explorer",
+      "AWS Artifact",
+      "AWS Budgets"
+    ],
+    "answer": 2,
+    "oneLineConcept": "View and analyze past spending = Cost Explorer",
+    "explanation": "**AWS Cost Explorer** lets you view and analyze your costs and usage over time with charts and filters, and it can forecast future costs.\n\n**Wrong choices**\n- AWS Budgets: Budgets sends alerts for limits; it is not mainly for exploring past spending.\n- AWS Pricing Calculator: Pricing Calculator estimates future costs before you build.\n- AWS Artifact: Artifact provides compliance reports.",
+    "frequency": 5,
+    "tags": [
+      "AWS Cost Explorer"
+    ],
+    "distractorOrder": "4|1|3"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "billing-pricing-support",
+    "level": "basic",
+    "stem": "A company is planning a new project and wants to estimate the monthly cost of the AWS services before building anything. Which tool should it use?",
+    "choices": [
+      "AWS Pricing Calculator",
+      "AWS Budgets",
+      "Amazon CloudWatch",
+      "AWS Cost Explorer"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Estimate before you build = Pricing Calculator",
+    "explanation": "**AWS Pricing Calculator** lets you model a planned solution and estimate its cost before you start using AWS services.\n\n**Wrong choices**\n- AWS Cost Explorer: Cost Explorer analyzes costs you already have, not new plans.\n- AWS Budgets: Budgets tracks spending against limits.\n- Amazon CloudWatch: CloudWatch monitors resources and applications.",
+    "frequency": 5,
+    "tags": [
+      "AWS Pricing Calculator"
+    ],
+    "distractorOrder": "4|2|3"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "billing-pricing-support",
+    "level": "basic",
+    "stem": "A company has ten AWS accounts and wants a single bill for all of them. What should it use?",
+    "choices": [
+      "Consolidated billing in AWS Organizations",
+      "AWS IAM",
+      "AWS Cost Explorer",
+      "AWS Budgets"
+    ],
+    "answer": 1,
+    "oneLineConcept": "One bill for many accounts = consolidated billing",
+    "explanation": "**Consolidated billing** in AWS Organizations combines charges from all member accounts into one bill paid by the management account.\n\n**Wrong choices**\n- AWS Cost Explorer: Cost Explorer shows costs but does not combine bills.\n- AWS Budgets: Budgets sets alerts but does not combine bills.\n- AWS IAM: IAM controls permissions, not billing across accounts.",
+    "frequency": 5,
+    "tags": [
+      "AWS Organizations",
+      "Consolidated billing"
+    ],
+    "distractorOrder": "3|4|2"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "billing-pricing-support",
+    "level": "basic",
+    "stem": "A developer has a question about an AWS service and wants answers from the AWS community and AWS experts in a public question-and-answer site. Which resource should they use?",
+    "choices": [
+      "AWS Marketplace",
+      "AWS re:Post",
+      "AWS Artifact",
+      "AWS Professional Services"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Community Q&A = AWS re:Post",
+    "explanation": "**AWS re:Post** is a community question-and-answer site where users, AWS experts, and community members answer questions about AWS.\n\n**Wrong choices**\n- AWS Marketplace: Marketplace is a catalog for buying third-party software.\n- AWS Artifact: Artifact provides compliance reports.\n- AWS Professional Services: Professional Services is a paid consulting team, not a public Q&A site.",
+    "frequency": 4,
+    "tags": [
+      "Support resources"
+    ],
+    "distractorOrder": "1|3|4"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "billing-pricing-support",
+    "level": "intermediate",
+    "stem": "A company wants to lower its compute costs with a 1-year or 3-year commitment, but it wants the discount to apply across EC2 instance families, Regions, AWS Lambda, and AWS Fargate. Which option fits best?",
+    "choices": [
+      "Dedicated Hosts",
+      "Compute Savings Plans",
+      "Spot Instances",
+      "Standard Reserved Instances"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Flexible across EC2/Lambda/Fargate = Compute Savings Plans",
+    "explanation": "**Compute Savings Plans** give lower prices in return for committing to a set amount of compute spend per hour for 1 or 3 years. The discount applies across instance families, Regions, Lambda, and Fargate.\n\n**Wrong choices**\n- Standard Reserved Instances: Standard Reserved Instances apply to EC2 instance types and do not cover Lambda or Fargate.\n- Spot Instances: Spot is not a commitment and can be interrupted.\n- Dedicated Hosts: Dedicated Hosts are physical servers, not a flexible discount.",
+    "frequency": 5,
+    "tags": [
+      "Savings Plans"
+    ],
+    "distractorOrder": "4|3|1"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "billing-pricing-support",
+    "level": "intermediate",
+    "stem": "A company has software licenses that are priced per physical CPU socket and core. It wants to use these licenses on AWS. Which EC2 option should it choose?",
+    "choices": [
+      "Spot Instances",
+      "On-Demand Instances",
+      "Dedicated Instances",
+      "Dedicated Hosts"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Per-socket/per-core licenses = Dedicated Hosts",
+    "explanation": "**Dedicated Hosts** are physical servers fully dedicated to you. They show sockets and cores, which helps you use existing server-bound software licenses.\n\n**Wrong choices**\n- Dedicated Instances: Dedicated Instances run on single-tenant hardware but do not show you the sockets and cores needed for these licenses.\n- Spot Instances: Spot Instances are shared and can be interrupted.\n- On-Demand Instances: Shared On-Demand instances do not give control of the physical server.",
+    "frequency": 4,
+    "tags": [
+      "EC2 pricing",
+      "Licensing"
+    ],
+    "distractorOrder": "3|1|2"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "billing-pricing-support",
+    "level": "intermediate",
+    "stem": "A company wants to see its AWS costs split by department and project. What should it do?",
+    "choices": [
+      "Put each department's resources in a different Region",
+      "Create an IAM group for each department",
+      "Apply cost allocation tags to resources",
+      "Create a security group for each department"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Track costs by team = cost allocation tags",
+    "explanation": "**Cost allocation tags** are labels such as Department or Project. After they are turned on, billing tools can group and report costs by these tags.\n\n**Wrong choices**\n- Put each department's resources in a different Region: Regions are for location, not cost reports by department.\n- Create an IAM group for each department: IAM groups manage permissions, not cost reports.\n- Create a security group for each department: Security groups control network traffic.",
+    "frequency": 4,
+    "tags": [
+      "Cost allocation tags"
+    ],
+    "distractorOrder": "1|2|4"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "billing-pricing-support",
+    "level": "intermediate",
+    "stem": "Besides having one bill, what is a cost benefit of using consolidated billing in AWS Organizations?",
+    "choices": [
+      "Every member account gets a paid support plan at no charge",
+      "Usage from all accounts is combined, which can reach volume pricing discounts sooner",
+      "Data transfer between all accounts becomes free",
+      "Each account receives a separate discount code"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Combined usage → volume discounts",
+    "explanation": "With **consolidated billing**, AWS treats the usage of all accounts as one for pricing, so the organization can reach **volume discount tiers** sooner.\n\n**Wrong choices**\n- Every member account gets a paid support plan at no charge: Consolidated billing does not include support plans.\n- Data transfer between all accounts becomes free: Consolidated billing does not change data transfer pricing.\n- Each account receives a separate discount code: There are no discount codes from consolidated billing.",
+    "frequency": 4,
+    "tags": [
+      "Consolidated billing"
+    ],
+    "distractorOrder": "1|3|4"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "billing-pricing-support",
+    "level": "intermediate",
+    "stem": "A company wants to find, buy, and quickly deploy third-party software, such as a firewall product, that already runs on AWS. Where should it look?",
+    "choices": [
+      "AWS Partner Network",
+      "AWS Artifact",
+      "AWS Marketplace",
+      "AWS re:Post"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Buy third-party software for AWS = Marketplace",
+    "explanation": "**AWS Marketplace** is a digital catalog where you can find, buy, and deploy third-party software, data, and services that run on AWS.\n\n**Wrong choices**\n- AWS Partner Network: The Partner Network is a program for partner companies, not a store to buy and deploy software.\n- AWS re:Post: re:Post is a community Q&A site.\n- AWS Artifact: Artifact provides compliance reports.",
+    "frequency": 4,
+    "tags": [
+      "AWS Marketplace"
+    ],
+    "distractorOrder": "1|4|2"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "billing-pricing-support",
+    "level": "intermediate",
+    "stem": "In general, which type of data transfer has no AWS charge?",
+    "choices": [
+      "Data going out from AWS to the internet",
+      "Data sent through a NAT gateway",
+      "Data moving between two AWS Regions",
+      "Data coming into AWS from the internet"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Data in is generally free; data out is charged",
+    "explanation": "In general, **data transfer into AWS** from the internet is not charged, while data going out to the internet or between Regions is charged.\n\n**Wrong choices**\n- Data going out from AWS to the internet: Data sent out to the internet is usually charged.\n- Data moving between two AWS Regions: Data sent between Regions is usually charged.\n- Data sent through a NAT gateway: NAT gateways charge for data they process.",
+    "frequency": 4,
+    "tags": [
+      "Data transfer pricing"
+    ],
+    "distractorOrder": "1|3|2"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "billing-pricing-support",
+    "level": "intermediate",
+    "stem": "A company wants a service that looks at its actual EC2 usage and uses machine learning to recommend better instance types and sizes. Which service should it use?",
+    "choices": [
+      "AWS Artifact",
+      "AWS Budgets",
+      "AWS Compute Optimizer",
+      "AWS Pricing Calculator"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Usage-based rightsizing advice = Compute Optimizer",
+    "explanation": "**AWS Compute Optimizer** analyzes usage metrics and recommends the best resource sizes and types, helping lower cost and improve performance.\n\n**Wrong choices**\n- AWS Pricing Calculator: Pricing Calculator estimates costs of plans; it does not study actual usage.\n- AWS Budgets: Budgets alerts on spending limits.\n- AWS Artifact: Artifact provides compliance reports.",
+    "frequency": 3,
+    "tags": [
+      "AWS Compute Optimizer",
+      "Rightsizing"
+    ],
+    "distractorOrder": "4|2|1"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "billing-pricing-support",
+    "level": "advanced",
+    "stem": "A company wants regular recommendations that point out idle resources, such as unused load balancers and underused EC2 instances, alongside checks for security and fault tolerance. Which service gives this?",
+    "choices": [
+      "AWS Trusted Advisor",
+      "AWS CloudTrail",
+      "AWS Budgets",
+      "AWS Pricing Calculator"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Find idle resources + best-practice checks = Trusted Advisor",
+    "explanation": "**AWS Trusted Advisor** checks your account against AWS best practices. Its cost optimization checks point out idle and underused resources.\n\n**Wrong choices**\n- AWS Budgets: Budgets alerts on spending but does not inspect resources for waste.\n- AWS Pricing Calculator: Pricing Calculator estimates planned costs.\n- AWS CloudTrail: CloudTrail records API activity.",
+    "frequency": 4,
+    "tags": [
+      "AWS Trusted Advisor",
+      "Cost optimization"
+    ],
+    "distractorOrder": "3|4|2"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "billing-pricing-support",
+    "level": "advanced",
+    "stem": "A company wants to be told when an AWS event, such as scheduled maintenance or a service issue, may affect its own resources. Where should it look?",
+    "choices": [
+      "Amazon CloudWatch",
+      "AWS Trusted Advisor",
+      "AWS CloudTrail",
+      "AWS Health Dashboard"
+    ],
+    "answer": 4,
+    "oneLineConcept": "AWS events affecting your resources = Health Dashboard",
+    "explanation": "The **AWS Health Dashboard** shows the status of AWS services and gives personalized information about events, such as maintenance, that may affect your resources.\n\n**Wrong choices**\n- Amazon CloudWatch: CloudWatch watches your metrics but is not where AWS reports events affecting your account.\n- AWS Trusted Advisor: Trusted Advisor gives best-practice checks.\n- AWS CloudTrail: CloudTrail records API calls made in your account.",
+    "frequency": 3,
+    "tags": [
+      "AWS Health Dashboard",
+      "Support resources"
+    ],
+    "distractorOrder": "1|2|3"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "billing-pricing-support",
+    "level": "advanced",
+    "stem": "Which of these tools does NOT help a company estimate, track, or control its AWS costs?",
+    "choices": [
+      "AWS Budgets",
+      "Amazon Inspector",
+      "AWS Pricing Calculator",
+      "AWS Cost Explorer"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Inspector = security scanning, not cost",
+    "explanation": "**Amazon Inspector** is a security service that scans for vulnerabilities. Cost Explorer, Budgets, and Pricing Calculator are cost management tools.\n\n**Wrong choices**\n- AWS Cost Explorer: Cost Explorer analyzes costs.\n- AWS Budgets: Budgets tracks costs against limits.\n- AWS Pricing Calculator: Pricing Calculator estimates costs.",
+    "frequency": 3,
+    "tags": [
+      "Cost management"
+    ],
+    "levelLock": true
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "billing-pricing-support",
+    "level": "advanced",
+    "stem": "A company needs help from an outside consulting firm that has AWS expertise to plan and carry out its migration. Which AWS resource helps it find such a firm?",
+    "choices": [
+      "AWS Partner Network (APN)",
+      "AWS Marketplace",
+      "AWS re:Post",
+      "AWS Artifact"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Find third-party AWS consulting partners = APN",
+    "explanation": "The **AWS Partner Network (APN)** is a global community of partner companies, including consulting firms, that help customers design, migrate, and run workloads on AWS.\n\n**Wrong choices**\n- AWS Marketplace: Marketplace is mainly for buying software products, not finding a consulting partner to lead a project.\n- AWS re:Post: re:Post is a community Q&A site, not a list of consulting firms.\n- AWS Artifact: Artifact provides compliance reports.",
+    "frequency": 3,
+    "tags": [
+      "AWS Partner Network",
+      "Support resources"
+    ],
+    "distractorOrder": "2|3|4"
+  },
+  {
+    "subjectId": "cloud-practitioner",
+    "chapterId": "billing-pricing-support",
+    "level": "advanced",
+    "stem": "A company needs to be sure EC2 capacity will be available in a specific Availability Zone for a short event next week, but it does not want a 1-year or 3-year commitment. Which option fits best?",
+    "choices": [
+      "Standard Reserved Instances",
+      "Spot Instances",
+      "On-Demand Capacity Reservations",
+      "Compute Savings Plans"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Capacity, no long commitment = Capacity Reservations",
+    "explanation": "**On-Demand Capacity Reservations** reserve EC2 capacity in a specific Availability Zone for any length of time, with no long-term commitment.\n\n**Wrong choices**\n- Standard Reserved Instances: Reserved Instances need a 1-year or 3-year commitment.\n- Spot Instances: Spot capacity can be taken back at any time.\n- Compute Savings Plans: Savings Plans need a long-term commitment and give a discount, not reserved capacity.",
+    "frequency": 3,
+    "tags": [
+      "EC2 pricing",
+      "Capacity"
+    ],
+    "distractorOrder": "1|2|4"
+  }
+]
