@@ -1,0 +1,1619 @@
+[
+  {
+    "id": "aws-cloud-practitioner-cloud-technology-services-0001",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What is an Availability Zone?",
+    "choices": [
+      "A site that caches content close to users for Amazon CloudFront",
+      "A single rack of servers rented to one customer",
+      "One or more separate data centers with their own power and networking, inside a Region",
+      "A separate geographic area of the world that contains several data centers"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Region > Availability Zones (isolated data centers)",
+    "explanation": "An **Availability Zone (AZ)** is one or more discrete data centers with redundant power, networking, and connectivity. Each Region has multiple AZs that are isolated from each other.\n\n**Wrong choices**\n- A separate geographic area of the world that contains several data centers: That describes a Region, which contains several Availability Zones.\n- A site that caches content close to users for Amazon CloudFront: That describes an edge location.\n- A single rack of servers rented to one customer: Availability Zones are much larger and are shared by many customers.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Global infrastructure",
+      "Availability Zones"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-technology-services-0002",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A video website wants to cache its images and videos close to viewers around the world so pages load faster. Which service should it use?",
+    "choices": [
+      "Amazon S3 Glacier",
+      "Amazon Route 53",
+      "AWS Direct Connect",
+      "Amazon CloudFront"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Cache content at edge locations = CloudFront",
+    "explanation": "**Amazon CloudFront** is a content delivery network (CDN). It caches content at edge locations near users so it is delivered with low delay.\n\n**Wrong choices**\n- Amazon Route 53: Route 53 is a DNS service; it does not cache content.\n- AWS Direct Connect: Direct Connect links a data center to AWS with a private connection.\n- Amazon S3 Glacier: S3 Glacier storage classes are for long-term archives.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Amazon CloudFront",
+      "Edge locations"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-technology-services-0003",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A company needs virtual servers in the cloud where it can choose the operating system and install its own software. Which service should it use?",
+    "choices": [
+      "AWS Lambda",
+      "Amazon S3",
+      "Amazon RDS",
+      "Amazon EC2"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Virtual servers = EC2",
+    "explanation": "**Amazon EC2** provides resizable virtual servers (instances). You choose the instance type and operating system and control the software.\n\n**Wrong choices**\n- AWS Lambda: Lambda runs code without servers you manage, so you cannot choose and manage the operating system.\n- Amazon S3: S3 stores objects; it does not run servers.\n- Amazon RDS: RDS is a managed relational database.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Amazon EC2",
+      "Compute"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-technology-services-0004",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A company wants to run a small piece of code each time a file is uploaded, without managing any servers, and pay only when the code runs. Which service should it use?",
+    "choices": [
+      "Amazon EC2",
+      "AWS Lambda",
+      "Amazon Lightsail",
+      "AWS Elastic Beanstalk"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Event-driven code, no servers = Lambda",
+    "explanation": "**AWS Lambda** is serverless compute. It runs your code in response to events and you pay only for the compute time used.\n\n**Wrong choices**\n- Amazon EC2: EC2 needs you to run and manage servers, and you pay while they run.\n- AWS Elastic Beanstalk: Elastic Beanstalk deploys applications onto servers it manages for you, not event-driven code.\n- Amazon Lightsail: Lightsail provides simple virtual servers.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "AWS Lambda",
+      "Serverless"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-technology-services-0005",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A company needs to store a very large and growing number of photos and documents and get them over the internet. Which service is the best fit?",
+    "choices": [
+      "Amazon EBS",
+      "Amazon RDS",
+      "Amazon EFS",
+      "Amazon S3"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Object storage for files of any amount = S3",
+    "explanation": "**Amazon S3** is object storage. It stores any amount of data as objects in buckets and is designed for very high durability.\n\n**Wrong choices**\n- Amazon EBS: EBS is block storage attached to EC2 instances, not internet-accessible object storage.\n- Amazon EFS: EFS is a shared file system for servers.\n- Amazon RDS: RDS stores data in relational database tables.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Amazon S3",
+      "Storage"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-technology-services-0006",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "An Amazon EC2 instance needs a storage volume that works like a hard drive for its operating system and database. Which service provides this?",
+    "choices": [
+      "Amazon EBS",
+      "Amazon S3",
+      "Amazon S3 Glacier Deep Archive",
+      "Amazon EFS"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Block storage volume for EC2 = EBS",
+    "explanation": "**Amazon EBS** provides block storage volumes that attach to EC2 instances and act like hard drives. Data stays on the volume when the instance stops.\n\n**Wrong choices**\n- Amazon S3: S3 is object storage, not a disk drive attached to an instance.\n- Amazon EFS: EFS is a shared file system, not a block volume for one instance.\n- Amazon S3 Glacier Deep Archive: This is for long-term archive storage.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Amazon EBS",
+      "Storage"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-technology-services-0007",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Many Linux EC2 instances need to read and write the same files at the same time through a shared file system. Which service should a company use?",
+    "choices": [
+      "Amazon EFS",
+      "Amazon EBS",
+      "EC2 instance store",
+      "Amazon S3 Glacier Flexible Retrieval"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Shared file system for many Linux instances = EFS",
+    "explanation": "**Amazon EFS** is a managed file system that many instances can use at the same time. It grows and shrinks automatically as files are added and removed.\n\n**Wrong choices**\n- Amazon EBS: An EBS volume is usually attached to one instance, not shared as a file system.\n- Amazon S3 Glacier Flexible Retrieval: This is archive storage.\n- EC2 instance store: Instance store is temporary storage on one host.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Amazon EFS",
+      "Storage"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-technology-services-0008",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A company wants a relational database such as MySQL or PostgreSQL, but it does not want to handle backups and patching itself. Which service should it use?",
+    "choices": [
+      "Amazon ElastiCache",
+      "Amazon RDS",
+      "Amazon Redshift",
+      "Amazon DynamoDB"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Managed relational database = RDS",
+    "explanation": "**Amazon RDS** is a managed relational database service. It supports engines such as MySQL and PostgreSQL and handles tasks like backups and patching.\n\n**Wrong choices**\n- Amazon DynamoDB: DynamoDB is a NoSQL database, not MySQL or PostgreSQL.\n- Amazon Redshift: Redshift is a data warehouse for analytics.\n- Amazon ElastiCache: ElastiCache is an in-memory cache.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Amazon RDS",
+      "Databases"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-technology-services-0009",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A mobile game needs a serverless NoSQL database that gives fast responses at any scale. Which service fits best?",
+    "choices": [
+      "Amazon RDS",
+      "Amazon Redshift",
+      "Amazon DynamoDB",
+      "Amazon Aurora"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Serverless NoSQL key-value = DynamoDB",
+    "explanation": "**Amazon DynamoDB** is a fully managed, serverless NoSQL key-value and document database with fast performance at any scale.\n\n**Wrong choices**\n- Amazon RDS: RDS is relational and runs on database instances you size.\n- Amazon Aurora: Aurora is a relational database.\n- Amazon Redshift: Redshift is a data warehouse.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Amazon DynamoDB",
+      "Databases"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-technology-services-0010",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A company wants to run complex reports and analytics on large amounts of historical business data. Which service is built for this?",
+    "choices": [
+      "Amazon RDS",
+      "Amazon Redshift",
+      "Amazon DynamoDB",
+      "Amazon ElastiCache"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Data warehouse for analytics = Redshift",
+    "explanation": "**Amazon Redshift** is a data warehouse service designed to run analytics queries over large amounts of data.\n\n**Wrong choices**\n- Amazon RDS: RDS is mainly for day-to-day transaction databases, not large-scale analytics.\n- Amazon DynamoDB: DynamoDB is a NoSQL database for fast lookups.\n- Amazon ElastiCache: ElastiCache is an in-memory cache.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Amazon Redshift",
+      "Analytics"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-technology-services-0011",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which AWS service is a DNS service that turns domain names such as example.com into IP addresses?",
+    "choices": [
+      "AWS Direct Connect",
+      "Amazon CloudFront",
+      "Amazon Route 53",
+      "Amazon VPC"
+    ],
+    "answer": 3,
+    "oneLineConcept": "DNS = Route 53",
+    "explanation": "**Amazon Route 53** is a highly available DNS service. It routes users to applications and can also register domain names and check health.\n\n**Wrong choices**\n- Amazon CloudFront: CloudFront delivers content but does not handle DNS.\n- Amazon VPC: VPC is a private network in AWS.\n- AWS Direct Connect: Direct Connect is a private network link.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Amazon Route 53",
+      "Networking"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-technology-services-0012",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A company wants a private, dedicated network connection from its own data center to AWS that does not travel over the public internet. Which service should it use?",
+    "choices": [
+      "AWS Direct Connect",
+      "AWS Site-to-Site VPN",
+      "Amazon CloudFront",
+      "Amazon Route 53"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Private dedicated link to AWS = Direct Connect",
+    "explanation": "**AWS Direct Connect** creates a dedicated private network connection between your location and AWS, which can give more consistent performance than the internet.\n\n**Wrong choices**\n- AWS Site-to-Site VPN: Site-to-Site VPN is encrypted but travels over the public internet.\n- Amazon CloudFront: CloudFront delivers content to users.\n- Amazon Route 53: Route 53 is a DNS service.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "AWS Direct Connect",
+      "Networking"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-technology-services-0013",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which service lets a company create its own logically isolated network in AWS, with its own IP address ranges and subnets?",
+    "choices": [
+      "Amazon Route 53",
+      "Amazon CloudFront",
+      "AWS Direct Connect",
+      "Amazon VPC"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Your private network in AWS = VPC",
+    "explanation": "**Amazon Virtual Private Cloud (VPC)** lets you define a logically isolated network, with subnets, route tables, and gateways that you control.\n\n**Wrong choices**\n- AWS Direct Connect: Direct Connect connects a data center to AWS but is not the network itself.\n- Amazon Route 53: Route 53 is a DNS service.\n- Amazon CloudFront: CloudFront delivers content to users.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Amazon VPC",
+      "Networking"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-technology-services-0014",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "An operations team wants to watch the CPU use of its EC2 instances and get an alarm when CPU stays high. Which service should it use?",
+    "choices": [
+      "AWS Trusted Advisor",
+      "AWS Config",
+      "Amazon CloudWatch",
+      "AWS CloudTrail"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Metrics and alarms = CloudWatch",
+    "explanation": "**Amazon CloudWatch** collects metrics and logs from AWS resources and applications, and alarms can notify you or take action when a limit is crossed.\n\n**Wrong choices**\n- AWS CloudTrail: CloudTrail records API calls, not performance metrics.\n- AWS Config: Config tracks resource settings.\n- AWS Trusted Advisor: Trusted Advisor gives best-practice recommendations, not live alarms on metrics.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Amazon CloudWatch",
+      "Monitoring"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-technology-services-0015",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A company wants to describe its servers, networks, and databases in template files so it can create the same environment again and again in a repeatable way. Which service should it use?",
+    "choices": [
+      "AWS Systems Manager",
+      "AWS Config",
+      "AWS Elastic Beanstalk",
+      "AWS CloudFormation"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Infrastructure as code templates = CloudFormation",
+    "explanation": "**AWS CloudFormation** is an infrastructure as code service. You describe resources in a template, and CloudFormation creates them the same way every time.\n\n**Wrong choices**\n- AWS Elastic Beanstalk: Elastic Beanstalk deploys an application for you but is not a general tool for writing infrastructure as templates.\n- AWS Systems Manager: Systems Manager helps operate and patch servers.\n- AWS Config: Config records resource settings.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "AWS CloudFormation",
+      "Infrastructure as code"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-technology-services-0016",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A web application runs on several EC2 instances. The company wants incoming traffic spread evenly across them. Which service should it use?",
+    "choices": [
+      "Amazon EC2 Auto Scaling",
+      "Elastic Load Balancing",
+      "Amazon CloudFront",
+      "Amazon Route 53"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Spread traffic across instances = Elastic Load Balancing",
+    "explanation": "**Elastic Load Balancing (ELB)** automatically distributes incoming traffic across multiple targets, such as EC2 instances, and sends traffic only to healthy targets.\n\n**Wrong choices**\n- Amazon EC2 Auto Scaling: Auto Scaling changes the number of instances, but it does not spread traffic.\n- Amazon Route 53: Route 53 answers DNS queries; spreading traffic across instances is the load balancer's main job.\n- Amazon CloudFront: CloudFront caches content at edge locations.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Elastic Load Balancing"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-technology-services-0017",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A company wants EC2 instances to be added automatically when demand rises and removed when demand falls. Which service should it use?",
+    "choices": [
+      "Elastic Load Balancing",
+      "AWS Lambda",
+      "Amazon CloudWatch",
+      "Amazon EC2 Auto Scaling"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Add/remove instances with demand = EC2 Auto Scaling",
+    "explanation": "**Amazon EC2 Auto Scaling** adds or removes instances based on demand or a schedule, so you have enough capacity without paying for idle servers.\n\n**Wrong choices**\n- Elastic Load Balancing: A load balancer spreads traffic but does not add or remove instances.\n- Amazon CloudWatch: CloudWatch can trigger scaling, but Auto Scaling is what adds and removes instances.\n- AWS Lambda: Lambda runs code; it does not manage EC2 instance counts.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Auto Scaling",
+      "Elasticity"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-technology-services-0018",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "An order website sends orders to a processing system. The company wants orders to wait safely in a queue until the processing system is ready. Which service should it use?",
+    "choices": [
+      "Amazon Kinesis",
+      "Amazon SQS",
+      "Amazon SNS",
+      "Amazon EventBridge"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Hold messages in a queue = SQS",
+    "explanation": "**Amazon Simple Queue Service (SQS)** is a message queue. It stores messages until the receiving application processes them, which decouples the parts of a system.\n\n**Wrong choices**\n- Amazon SNS: SNS pushes messages to subscribers right away; it is not a queue that holds work.\n- Amazon EventBridge: EventBridge routes events by rules, not as a work queue.\n- Amazon Kinesis: Kinesis is for real-time streaming data.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Amazon SQS",
+      "Decoupling"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-technology-services-0019",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A company wants to send the same alert to many subscribers at once by email, text message, and to other applications. Which service should it use?",
+    "choices": [
+      "Amazon SQS",
+      "Amazon SNS",
+      "Amazon CloudWatch",
+      "Amazon EventBridge"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Publish once, many subscribers = SNS",
+    "explanation": "**Amazon Simple Notification Service (SNS)** is a publish/subscribe service. One message sent to a topic is delivered to all subscribers, such as email, SMS, or other applications.\n\n**Wrong choices**\n- Amazon SQS: SQS holds messages in a queue for one consumer to process, not for sending to many subscribers.\n- Amazon EventBridge: EventBridge routes events between services, not email and text to people.\n- Amazon CloudWatch: CloudWatch watches metrics; it uses SNS to send notifications.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Amazon SNS"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-technology-services-0020",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A developer wants to upload web application code and let AWS handle the servers, load balancing, scaling, and monitoring automatically. Which service fits best?",
+    "choices": [
+      "AWS Elastic Beanstalk",
+      "Amazon EC2",
+      "Amazon Lightsail",
+      "AWS CloudFormation"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Upload code, AWS handles the rest = Elastic Beanstalk",
+    "explanation": "**AWS Elastic Beanstalk** deploys and runs web applications. You upload code, and it handles capacity, load balancing, scaling, and health monitoring.\n\n**Wrong choices**\n- AWS CloudFormation: CloudFormation builds resources from templates you write; it does not take your code and run it for you.\n- Amazon Lightsail: Lightsail gives simple servers you still manage yourself.\n- Amazon EC2: With EC2 alone you manage the servers yourself.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "AWS Elastic Beanstalk"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-technology-services-0021",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A small business wants an easy way to launch a simple website with a virtual server at a predictable monthly price. Which service fits best?",
+    "choices": [
+      "Amazon EC2 Dedicated Hosts",
+      "AWS Elastic Beanstalk",
+      "AWS Lambda",
+      "Amazon Lightsail"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Simple server, predictable monthly price = Lightsail",
+    "explanation": "**Amazon Lightsail** offers easy-to-use virtual servers, storage, and networking in bundles with a predictable monthly price. It suits simple websites and small apps.\n\n**Wrong choices**\n- AWS Elastic Beanstalk: Elastic Beanstalk is for deploying applications and is billed by the resources it creates.\n- Amazon EC2 Dedicated Hosts: Dedicated Hosts are physical servers for special license needs and cost more.\n- AWS Lambda: Lambda runs code for events, not a simple website server.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Amazon Lightsail"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-technology-services-0022",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A company wants to run containers without having to manage or patch any servers or clusters of virtual machines. Which service should it use?",
+    "choices": [
+      "Amazon Lightsail",
+      "Amazon EC2",
+      "AWS Outposts",
+      "AWS Fargate"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Serverless containers = Fargate",
+    "explanation": "**AWS Fargate** is a serverless compute engine for containers. It works with Amazon ECS and Amazon EKS so you do not manage servers.\n\n**Wrong choices**\n- Amazon EC2: With EC2 you manage the virtual servers that run containers.\n- Amazon Lightsail: Lightsail gives simple virtual servers you manage.\n- AWS Outposts: Outposts runs AWS infrastructure in your own data center.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "AWS Fargate",
+      "Containers"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-technology-services-0023",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A company already uses Kubernetes on premises and wants a managed Kubernetes service on AWS. Which service should it choose?",
+    "choices": [
+      "Amazon Lightsail",
+      "AWS Lambda",
+      "Amazon EKS",
+      "Amazon ECS"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Managed Kubernetes = EKS",
+    "explanation": "**Amazon Elastic Kubernetes Service (EKS)** is a managed Kubernetes service. **Amazon ECS** is AWS's own container service that does not use Kubernetes.\n\n**Wrong choices**\n- Amazon ECS: ECS is AWS's own container orchestration service, not Kubernetes.\n- AWS Lambda: Lambda runs functions, not Kubernetes.\n- Amazon Lightsail: Lightsail offers simple servers.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Amazon EKS",
+      "Containers"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-technology-services-0024",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "An analyst wants to run standard SQL queries directly on log files stored in Amazon S3, without loading them into a database or managing servers. Which service should they use?",
+    "choices": [
+      "AWS Glue",
+      "Amazon Athena",
+      "Amazon Redshift",
+      "Amazon RDS"
+    ],
+    "answer": 2,
+    "oneLineConcept": "SQL directly on S3, serverless = Athena",
+    "explanation": "**Amazon Athena** is a serverless query service. It lets you analyze data in Amazon S3 using standard SQL, and you pay for the queries you run.\n\n**Wrong choices**\n- Amazon Redshift: Redshift is a data warehouse where data is usually loaded first.\n- Amazon RDS: RDS needs the data loaded into a database.\n- AWS Glue: Glue prepares and catalogs data but is not the query tool.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Amazon Athena",
+      "Analytics"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-technology-services-0025",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A website wants to collect and process clickstream data from users in real time as it arrives. Which service is designed for this?",
+    "choices": [
+      "Amazon Kinesis",
+      "Amazon Athena",
+      "Amazon S3 Glacier Deep Archive",
+      "Amazon Redshift"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Real-time streaming data = Kinesis",
+    "explanation": "**Amazon Kinesis** collects, processes, and analyzes streaming data, such as clickstreams and logs, in real time.\n\n**Wrong choices**\n- Amazon Athena: Athena queries data at rest in S3, not streams as they arrive.\n- Amazon Redshift: Redshift analyzes stored data in a warehouse.\n- Amazon S3 Glacier Deep Archive: This is long-term archive storage.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Amazon Kinesis",
+      "Analytics"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-technology-services-0026",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A company needs a serverless service to discover, prepare, and combine data from many sources (extract, transform, and load), with a central data catalog. Which service should it use?",
+    "choices": [
+      "Amazon Athena",
+      "Amazon Kinesis",
+      "AWS Glue",
+      "Amazon Redshift"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Serverless ETL + data catalog = Glue",
+    "explanation": "**AWS Glue** is a serverless data integration (ETL) service. It finds, prepares, and moves data and keeps a data catalog that other services such as Athena can use.\n\n**Wrong choices**\n- Amazon Athena: Athena queries data but is not mainly an ETL service.\n- Amazon Kinesis: Kinesis handles real-time streams.\n- Amazon Redshift: Redshift is a data warehouse that stores and analyzes data.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "AWS Glue",
+      "Analytics"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-technology-services-0027",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A company must keep old records for many years. It almost never reads them, and waiting hours to get them back is fine. Which Amazon S3 storage class has the lowest storage cost?",
+    "choices": [
+      "S3 Standard-Infrequent Access",
+      "S3 Standard",
+      "S3 Intelligent-Tiering",
+      "S3 Glacier Deep Archive"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Rarely read, hours OK, lowest cost = Glacier Deep Archive",
+    "explanation": "**S3 Glacier Deep Archive** is the lowest-cost S3 storage class. It is meant for long-term archives where retrieval within hours is acceptable.\n\n**Wrong choices**\n- S3 Standard-Infrequent Access: Standard-IA is for data read less often but still needed quickly, and costs more to store.\n- S3 Intelligent-Tiering: Intelligent-Tiering is for unknown or changing access patterns.\n- S3 Standard: S3 Standard is for frequently used data and costs the most to store of these.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Amazon S3",
+      "Storage classes"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-technology-services-0028",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A company stores data in Amazon S3 but does not know how often each file will be used, and use changes over time. Which storage class moves data between access tiers automatically to save money?",
+    "choices": [
+      "S3 One Zone-Infrequent Access",
+      "S3 Intelligent-Tiering",
+      "S3 Standard-Infrequent Access",
+      "S3 Glacier Deep Archive"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Unknown or changing access = Intelligent-Tiering",
+    "explanation": "**S3 Intelligent-Tiering** watches how objects are used and moves them between access tiers automatically, saving money when access patterns are unknown or change.\n\n**Wrong choices**\n- S3 Standard-Infrequent Access: Standard-IA does not move data automatically and adds retrieval fees.\n- S3 One Zone-Infrequent Access: One Zone-IA keeps data in one AZ and does not move data automatically.\n- S3 Glacier Deep Archive: Deep Archive is for archives with slow retrieval.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Amazon S3",
+      "Storage classes"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-technology-services-0029",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A website reads the same product data from its database many times a second. The company wants to keep this data in memory for very fast responses and lower database load. Which service should it use?",
+    "choices": [
+      "Amazon ElastiCache",
+      "Amazon Redshift",
+      "Amazon DynamoDB",
+      "Amazon RDS"
+    ],
+    "answer": 1,
+    "oneLineConcept": "In-memory cache = ElastiCache",
+    "explanation": "**Amazon ElastiCache** is a managed in-memory caching service. Keeping often-read data in memory speeds up applications and takes load off the database.\n\n**Wrong choices**\n- Amazon DynamoDB: DynamoDB is a database, not an in-memory cache in front of another database.\n- Amazon RDS: RDS is the database itself.\n- Amazon Redshift: Redshift is for analytics.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Amazon ElastiCache",
+      "Databases"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-technology-services-0030",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A company wants to move its on-premises database to AWS while the source database keeps running, so downtime is kept low. Which service should it use?",
+    "choices": [
+      "AWS Backup",
+      "AWS Database Migration Service (AWS DMS)",
+      "AWS Storage Gateway",
+      "AWS DataSync"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Migrate databases with low downtime = AWS DMS",
+    "explanation": "**AWS Database Migration Service (DMS)** moves databases to AWS. The source database stays running during the move, which keeps downtime low.\n\n**Wrong choices**\n- AWS DataSync: DataSync moves files and objects, not running databases.\n- AWS Backup: AWS Backup manages backups, not database migrations.\n- AWS Storage Gateway: Storage Gateway connects on-premises apps to cloud storage.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "AWS DMS",
+      "Migration"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-technology-services-0031",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A company's on-premises applications need to store backups and files in AWS cloud storage while keeping local access. Which service connects them?",
+    "choices": [
+      "AWS DataSync",
+      "Amazon EFS",
+      "AWS Direct Connect",
+      "AWS Storage Gateway"
+    ],
+    "answer": 4,
+    "oneLineConcept": "On-premises access to cloud storage = Storage Gateway",
+    "explanation": "**AWS Storage Gateway** is a hybrid storage service. It gives on-premises applications access to storage in AWS, often with a local cache.\n\n**Wrong choices**\n- AWS DataSync: DataSync moves data between locations but is not an ongoing local gateway to cloud storage.\n- Amazon EFS: EFS is a file system for AWS resources, not a local gateway.\n- AWS Direct Connect: Direct Connect is a network link, not a storage service.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "AWS Storage Gateway",
+      "Hybrid"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-technology-services-0032",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Most of a company's customers are in Australia, and they complain that the application is slow. The application runs in a Region in North America. What should the company do first?",
+    "choices": [
+      "Choose the lowest-priced Region regardless of location",
+      "Deploy the application in an AWS Region close to Australia",
+      "Add more instances in the current Region",
+      "Move to the Region with the most Availability Zones"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Low latency = choose a Region close to users",
+    "explanation": "Distance adds delay. **Choosing a Region close to users** lowers latency. Other Region choice factors are compliance, service availability, and price.\n\n**Wrong choices**\n- Add more instances in the current Region: More instances add capacity but do not shorten the distance to users.\n- Move to the Region with the most Availability Zones: The number of AZs does not reduce distance to Australian users.\n- Choose the lowest-priced Region regardless of location: Price alone does not solve latency.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Regions"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-technology-services-0033",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A factory must keep data processing in its own building for low latency, but it wants to use the same AWS services, tools, and APIs as in the cloud. Which offering fits?",
+    "choices": [
+      "AWS Local Zones",
+      "AWS Direct Connect",
+      "AWS Outposts",
+      "AWS Wavelength"
+    ],
+    "answer": 3,
+    "oneLineConcept": "AWS infrastructure in your own facility = Outposts",
+    "explanation": "**AWS Outposts** brings AWS infrastructure and services into the customer's own data center or site, for workloads that must stay on premises.\n\n**Wrong choices**\n- AWS Local Zones: Local Zones are run by AWS in metro areas, not inside the customer's building.\n- AWS Wavelength: Wavelength places AWS services in telecom 5G networks.\n- AWS Direct Connect: Direct Connect is a network link to AWS, not AWS hardware on site.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "AWS Outposts",
+      "Hybrid"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-technology-services-0034",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A call center wants to turn recorded phone calls into written text so staff can search them. Which service should it use?",
+    "choices": [
+      "Amazon Transcribe",
+      "Amazon Comprehend",
+      "Amazon Translate",
+      "Amazon Polly"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Speech to text = Transcribe",
+    "explanation": "**Amazon Transcribe** uses machine learning to convert speech into text. **Amazon Polly** does the reverse, turning text into speech.\n\n**Wrong choices**\n- Amazon Polly: Polly does the opposite: it turns text into speech.\n- Amazon Comprehend: Comprehend finds meaning in text but does not create text from audio.\n- Amazon Translate: Translate changes text from one language to another.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "AI/ML",
+      "Amazon Transcribe"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-technology-services-0035",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "An insurance company receives thousands of scanned claim forms. It wants to automatically pull out the printed and handwritten text and the data in tables. Which service should it use?",
+    "choices": [
+      "Amazon Comprehend",
+      "Amazon Rekognition",
+      "Amazon Textract",
+      "Amazon Transcribe"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Extract text and tables from documents = Textract",
+    "explanation": "**Amazon Textract** extracts text, handwriting, forms, and table data from scanned documents using machine learning.\n\n**Wrong choices**\n- Amazon Rekognition: Rekognition analyzes images and videos for objects and faces, not form data.\n- Amazon Comprehend: Comprehend analyzes text that already exists; it does not read scanned documents.\n- Amazon Transcribe: Transcribe turns speech into text.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "AI/ML",
+      "Amazon Textract"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-technology-services-0036",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A retailer wants to automatically tell whether thousands of written customer reviews are positive or negative. Which service should it use?",
+    "choices": [
+      "Amazon Rekognition",
+      "Amazon Comprehend",
+      "Amazon Lex",
+      "Amazon Translate"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Sentiment and meaning in text = Comprehend",
+    "explanation": "**Amazon Comprehend** is a natural language processing service. It finds sentiment, key phrases, and other insights in text.\n\n**Wrong choices**\n- Amazon Rekognition: Rekognition analyzes images and video, not the feeling in text.\n- Amazon Translate: Translate changes language but does not judge sentiment.\n- Amazon Lex: Lex builds chatbots.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "AI/ML",
+      "Amazon Comprehend"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-technology-services-0037",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A company wants to find objects and detect faces in photos uploaded by users without building its own machine learning model. Which service should it use?",
+    "choices": [
+      "Amazon Textract",
+      "Amazon Comprehend",
+      "Amazon Polly",
+      "Amazon Rekognition"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Image and video analysis = Rekognition",
+    "explanation": "**Amazon Rekognition** analyzes images and videos to find objects, scenes, text, and faces using pre-trained machine learning.\n\n**Wrong choices**\n- Amazon Textract: Textract reads text and forms from documents, not objects and faces.\n- Amazon Comprehend: Comprehend analyzes text.\n- Amazon Polly: Polly turns text into speech.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "AI/ML",
+      "Amazon Rekognition"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-technology-services-0038",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A company wants to build a generative AI app. It wants to choose from foundation models made by several companies through one API, without managing any infrastructure. Which service fits best?",
+    "choices": [
+      "Amazon Bedrock",
+      "Amazon Lex",
+      "Amazon SageMaker AI",
+      "Amazon Comprehend"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Foundation models through one API = Bedrock",
+    "explanation": "**Amazon Bedrock** is a fully managed service that offers foundation models from several AI companies through a single API, for building generative AI applications.\n\n**Wrong choices**\n- Amazon SageMaker AI: SageMaker AI is mainly for building, training, and deploying your own ML models.\n- Amazon Lex: Lex builds chatbots with voice and text.\n- Amazon Comprehend: Comprehend analyzes text for meaning.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "AI/ML",
+      "Amazon Bedrock"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-technology-services-0039",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A video editing company needs AWS compute placed very close to a large city where its editors work, for very low latency, without running hardware in its own office. Which offering fits best?",
+    "choices": [
+      "Amazon CloudFront edge locations",
+      "AWS Wavelength Zones",
+      "AWS Outposts",
+      "AWS Local Zones"
+    ],
+    "answer": 4,
+    "oneLineConcept": "AWS compute near a big city = Local Zones",
+    "explanation": "**AWS Local Zones** place AWS compute, storage, and other services close to large population centers, for applications that need very low latency.\n\n**Wrong choices**\n- AWS Outposts: Outposts places hardware in the customer's own site, which this company wants to avoid.\n- Amazon CloudFront edge locations: Edge locations cache content; they do not run general compute for editing.\n- AWS Wavelength Zones: Wavelength is for apps used over 5G mobile networks.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Local Zones",
+      "Global infrastructure"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-technology-services-0040",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A company is building a mobile game for phones on 5G networks and needs the lowest possible delay between the phone and the game servers. Which offering is designed for this?",
+    "choices": [
+      "AWS Wavelength Zones",
+      "Amazon CloudFront edge locations",
+      "AWS Local Zones",
+      "AWS Outposts"
+    ],
+    "answer": 1,
+    "oneLineConcept": "AWS inside 5G networks = Wavelength",
+    "explanation": "**AWS Wavelength** places AWS compute and storage inside telecom providers' 5G networks, so mobile apps reach servers with very low delay.\n\n**Wrong choices**\n- AWS Local Zones: Local Zones serve big cities but are not inside 5G networks.\n- AWS Outposts: Outposts is for the customer's own facility.\n- Amazon CloudFront edge locations: Edge locations cache content, not game servers inside 5G networks.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Wavelength",
+      "Global infrastructure"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-technology-services-0041",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Which statement about AWS Regions and Availability Zones is NOT correct?",
+    "choices": [
+      "Availability Zones in a Region are linked by low-latency networking",
+      "Each Region has multiple Availability Zones",
+      "Running across Availability Zones improves availability",
+      "Every AWS service is available in every Region"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Services differ by Region; check before choosing",
+    "explanation": "Not every service or feature is offered in every Region. **Service availability** is one of the factors to check when choosing a Region, along with compliance, latency, and price.\n\n**Wrong choices**\n- Each Region has multiple Availability Zones: This is correct.\n- Availability Zones in a Region are linked by low-latency networking: This is correct.\n- Running across Availability Zones improves availability: This is correct.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Regions"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-technology-services-0042",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "An operations team needs to apply operating system patches and run commands across hundreds of EC2 instances and on-premises servers from one place. Which service should it use?",
+    "choices": [
+      "AWS Config",
+      "AWS CloudTrail",
+      "AWS CloudFormation",
+      "AWS Systems Manager"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Operate and patch many servers = Systems Manager",
+    "explanation": "**AWS Systems Manager** helps you view and operate servers at scale, including patching and running commands on EC2 instances and on-premises servers.\n\n**Wrong choices**\n- AWS CloudFormation: CloudFormation creates resources from templates; it is not for patching running servers.\n- AWS Config: Config records settings but does not patch or run commands.\n- AWS CloudTrail: CloudTrail records API activity.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "AWS Systems Manager",
+      "Operations"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-technology-services-0043",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Which of the following is NOT a way for customers to work with AWS services?",
+    "choices": [
+      "The AWS Management Console",
+      "The AWS Command Line Interface (AWS CLI)",
+      "Signing in directly to the physical host servers in AWS data centers",
+      "AWS software development kits (SDKs)"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Access AWS via Console, CLI, SDKs, APIs",
+    "explanation": "Customers use AWS through the **Management Console, the AWS CLI, SDKs, and APIs**. They never have access to physical hosts in AWS data centers.\n\n**Wrong choices**\n- The AWS Management Console: This is a web interface for AWS.\n- The AWS Command Line Interface (AWS CLI): This is a command tool for AWS.\n- AWS software development kits (SDKs): SDKs let programs call AWS APIs.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Access methods"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-technology-services-0044",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A company wants events from its AWS services and its software-as-a-service (SaaS) applications to be routed to different targets based on rules, as part of an event-driven design. Which service should it use?",
+    "choices": [
+      "Amazon EventBridge",
+      "Amazon SQS",
+      "Amazon SNS",
+      "AWS Step Functions"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Route events by rules = EventBridge",
+    "explanation": "**Amazon EventBridge** is a serverless event bus. It receives events from AWS services, your apps, and SaaS apps and routes them to targets using rules.\n\n**Wrong choices**\n- Amazon SNS: SNS sends messages to subscribers but is not built to route events from SaaS apps by rules.\n- Amazon SQS: SQS is a queue that holds messages.\n- AWS Step Functions: Step Functions coordinates steps in a workflow.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Amazon EventBridge",
+      "Event-driven"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-technology-services-0045",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "An order process has several steps run by different Lambda functions. The company wants a visual workflow that runs the steps in order and retries a step when it fails. Which service should it use?",
+    "choices": [
+      "Amazon EventBridge",
+      "Amazon SNS",
+      "AWS Step Functions",
+      "Amazon SQS"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Coordinate multi-step workflows = Step Functions",
+    "explanation": "**AWS Step Functions** coordinates multiple steps, such as Lambda functions, into a visual workflow with built-in error handling and retries.\n\n**Wrong choices**\n- Amazon EventBridge: EventBridge routes events, but it does not manage a multi-step workflow with state.\n- Amazon SQS: SQS holds messages but does not control step order.\n- Amazon SNS: SNS sends notifications.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "AWS Step Functions"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-technology-services-0046",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-technology-services",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "All of the following are serverless services where you do not manage servers EXCEPT:",
+    "choices": [
+      "AWS Fargate",
+      "AWS Lambda",
+      "Amazon DynamoDB",
+      "Amazon EC2"
+    ],
+    "answer": 4,
+    "oneLineConcept": "EC2 = you manage the instances",
+    "explanation": "With **Amazon EC2** you choose, size, and manage the instances yourself. Lambda, Fargate, and DynamoDB are serverless.\n\n**Wrong choices**\n- AWS Lambda: Lambda is serverless compute.\n- AWS Fargate: Fargate is serverless compute for containers.\n- Amazon DynamoDB: DynamoDB is a serverless database.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Serverless"
+    ],
+    "levelLock": true
+  }
+]

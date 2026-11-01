@@ -1,0 +1,1176 @@
+[
+  {
+    "id": "aws-cloud-practitioner-cloud-concepts-0001",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-concepts",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A small company wants to stop buying servers up front and instead pay each month only for the computing it actually uses. Which benefit of the AWS Cloud does this describe?",
+    "choices": [
+      "Trade fixed expense for variable expense",
+      "Increase speed and agility",
+      "Go global in minutes",
+      "Benefit from massive economies of scale"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Pay as you go = fixed expense becomes variable",
+    "explanation": "With the cloud you **trade fixed expense for variable expense**. Instead of paying a large amount up front for servers and data centers, you pay only for the resources you use.\n\n**Wrong choices**\n- Benefit from massive economies of scale: This is about AWS's large size lowering prices, not about paying only for what you use.\n- Increase speed and agility: This is about getting resources faster, not about how you pay.\n- Go global in minutes: This is about reaching users in other parts of the world quickly.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Cloud benefits"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-concepts-0002",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-concepts",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A garden supply store gets very busy every spring. In the past it had to predict months ahead how many servers it would need. Which AWS Cloud benefit removes this problem?",
+    "choices": [
+      "Benefit from massive economies of scale",
+      "Go global in minutes",
+      "Stop guessing capacity",
+      "Stop spending money running and maintaining data centers"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Scale with demand = stop guessing capacity",
+    "explanation": "In the cloud you can add or remove resources as demand changes, so you **stop guessing capacity**. You no longer pay for idle servers or run short when traffic grows.\n\n**Wrong choices**\n- Go global in minutes: This is about reaching new countries quickly, not about sizing for demand.\n- Benefit from massive economies of scale: This is about lower prices from AWS's size.\n- Stop spending money running and maintaining data centers: This is about letting AWS handle the building, power, and hardware.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Cloud benefits"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-concepts-0003",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-concepts",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "AWS buys hardware and runs data centers for hundreds of thousands of customers, which lets it offer lower prices. Which cloud benefit is this?",
+    "choices": [
+      "Benefit from massive economies of scale",
+      "Trade fixed expense for variable expense",
+      "Stop guessing capacity",
+      "Increase speed and agility"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Huge shared usage = lower prices (economies of scale)",
+    "explanation": "Because many customers share AWS, AWS can buy and operate at very large volume. These **economies of scale** turn into lower pay-as-you-go prices for customers.\n\n**Wrong choices**\n- Trade fixed expense for variable expense: This is about paying as you go instead of paying up front.\n- Stop guessing capacity: This is about matching resources to demand.\n- Increase speed and agility: This is about getting new resources quickly.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Cloud benefits"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-concepts-0004",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-concepts",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A company in the United States wants to serve new customers in Europe and Asia with low delay, and it wants to set this up in a few clicks instead of building new data centers. Which cloud benefit does this show?",
+    "choices": [
+      "Benefit from massive economies of scale",
+      "Stop guessing capacity",
+      "Trade fixed expense for variable expense",
+      "Go global in minutes"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Many Regions worldwide = go global in minutes",
+    "explanation": "AWS has Regions around the world, so you can deploy an application close to users in other countries quickly. This benefit is called **go global in minutes**.\n\n**Wrong choices**\n- Benefit from massive economies of scale: This is about lower prices, not about reaching other countries.\n- Stop guessing capacity: This is about sizing resources for demand.\n- Trade fixed expense for variable expense: This is about how you pay, not where you deploy.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Cloud benefits",
+      "Global infrastructure"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-concepts-0005",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-concepts",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "An online shop's web servers are added automatically when many shoppers visit and removed automatically when traffic drops. Which cloud concept is this?",
+    "choices": [
+      "High availability",
+      "Data residency",
+      "Elasticity",
+      "Durability"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Grow and shrink automatically = elasticity",
+    "explanation": "**Elasticity** is the ability to add resources when demand rises and remove them when demand falls, often automatically. You pay only for what you use at each moment.\n\n**Wrong choices**\n- High availability: High availability means a system keeps running when a part fails.\n- Durability: Durability means stored data is not lost.\n- Data residency: Data residency is about which country or Region data is kept in.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Elasticity"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-concepts-0006",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-concepts",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which pillar of the AWS Well-Architected Framework focuses on protecting data, systems, and assets?",
+    "choices": [
+      "Operational excellence",
+      "Security",
+      "Reliability",
+      "Performance efficiency"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Protect data and systems = Security pillar",
+    "explanation": "The **Security** pillar covers protecting information, systems, and assets, for example with access control, encryption, and monitoring.\n\n**Wrong choices**\n- Reliability: Reliability is about recovering from failures and meeting demand.\n- Operational excellence: Operational excellence is about running and improving systems day to day.\n- Performance efficiency: Performance efficiency is about using computing resources efficiently.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Well-Architected Framework"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-concepts-0007",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-concepts",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which pillar of the AWS Well-Architected Framework focuses on reducing the environmental impact of running workloads in the cloud?",
+    "choices": [
+      "Sustainability",
+      "Performance efficiency",
+      "Cost optimization",
+      "Reliability"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Environmental impact = Sustainability pillar",
+    "explanation": "The **Sustainability** pillar is about reducing energy use and environmental impact, for example by using only the resources you need. It is the sixth pillar of the framework.\n\n**Wrong choices**\n- Cost optimization: Cost optimization is about avoiding unneeded spending.\n- Performance efficiency: Performance efficiency is about using resources efficiently to meet requirements.\n- Reliability: Reliability is about a workload working correctly and recovering from failures.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Well-Architected Framework"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-concepts-0008",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-concepts",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which pillar of the AWS Well-Architected Framework focuses on a workload doing its job correctly and recovering quickly from failures?",
+    "choices": [
+      "Reliability",
+      "Performance efficiency",
+      "Security",
+      "Operational excellence"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Recover from failure = Reliability pillar",
+    "explanation": "The **Reliability** pillar is about a workload performing its function correctly and consistently, and recovering from failures such as a lost server or network problem.\n\n**Wrong choices**\n- Performance efficiency: Performance efficiency is about using resources efficiently, not recovering from failures.\n- Operational excellence: Operational excellence is about running, monitoring, and improving operations.\n- Security: Security is about protecting data and systems.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Well-Architected Framework"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-concepts-0009",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-concepts",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A company wants to move its application to AWS exactly as it is, without changing the code. This is often called \"lift and shift.\" Which migration strategy is this?",
+    "choices": [
+      "Refactor",
+      "Rehost",
+      "Replatform",
+      "Repurchase"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Lift and shift = Rehost",
+    "explanation": "**Rehost** (lift and shift) moves an application to the cloud without changing it. It is often the fastest way to migrate.\n\n**Wrong choices**\n- Replatform: Replatform makes a few changes, such as moving to a managed database.\n- Refactor: Refactor changes the design and code of the application.\n- Repurchase: Repurchase replaces the application with a different product.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Migration strategies"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-concepts-0010",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-concepts",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A company decides to stop running its own customer management software and switch to a software-as-a-service (SaaS) product instead. Which migration strategy is this?",
+    "choices": [
+      "Retain",
+      "Refactor",
+      "Rehost",
+      "Repurchase"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Switch to a new product (often SaaS) = Repurchase",
+    "explanation": "**Repurchase** means moving to a different product, often a SaaS product, instead of moving the old software.\n\n**Wrong choices**\n- Rehost: Rehost moves the same application to the cloud unchanged.\n- Refactor: Refactor rewrites the existing application for the cloud.\n- Retain: Retain keeps the application where it is for now.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Migration strategies"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-concepts-0011",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-concepts",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "During migration planning, a company finds an old reporting application that nobody uses anymore. It decides to shut it down. Which migration strategy is this?",
+    "choices": [
+      "Rehost",
+      "Relocate",
+      "Retire",
+      "Retain"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Turn off what is not needed = Retire",
+    "explanation": "**Retire** means turning off applications that are no longer needed. It saves money and means there is less to migrate.\n\n**Wrong choices**\n- Retain: Retain keeps an application running where it is, not shut down.\n- Relocate: Relocate moves an application to the cloud at the virtualization level.\n- Rehost: Rehost moves the application to the cloud unchanged.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Migration strategies"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-concepts-0012",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-concepts",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "With Amazon EC2, AWS manages the physical servers, and the customer manages the operating system and applications on their virtual servers. Which cloud computing model is this?",
+    "choices": [
+      "Platform as a Service (PaaS)",
+      "Software as a Service (SaaS)",
+      "Infrastructure as a Service (IaaS)",
+      "On-premises hosting"
+    ],
+    "answer": 3,
+    "oneLineConcept": "EC2 = IaaS (you manage the OS)",
+    "explanation": "**Infrastructure as a Service (IaaS)** gives you basic building blocks such as virtual servers, storage, and networking. You control the operating system and what runs on it.\n\n**Wrong choices**\n- Platform as a Service (PaaS): With PaaS the provider also manages the operating system, and you mostly manage your application.\n- Software as a Service (SaaS): With SaaS you just use finished software and manage almost nothing.\n- On-premises hosting: On-premises means the company owns and runs its own hardware.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Cloud computing models"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-concepts-0013",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-concepts",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A company keeps some applications in its own data center and runs others in AWS, with a connection between the two. Which deployment model is this?",
+    "choices": [
+      "On-premises deployment",
+      "Hybrid deployment",
+      "Cloud deployment (all in the cloud)",
+      "Single-Region deployment"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Some on-premises + some cloud, connected = hybrid",
+    "explanation": "A **hybrid deployment** connects cloud resources with resources that stay on premises. Companies often use it during a gradual migration or when some systems must stay local.\n\n**Wrong choices**\n- Cloud deployment (all in the cloud): An all-in cloud deployment runs everything in the cloud.\n- On-premises deployment: An on-premises (private) deployment runs everything in the company's own data center.\n- Single-Region deployment: This describes where cloud resources run, not a mix of cloud and on-premises.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Deployment models"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-concepts-0014",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-concepts",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What is the AWS Cloud Adoption Framework (AWS CAF) used for?",
+    "choices": [
+      "Scanning servers for software vulnerabilities",
+      "Reviewing a workload against six pillars of good design",
+      "Guiding an organization as it plans and carries out its move to the cloud",
+      "Estimating the monthly cost of AWS services"
+    ],
+    "answer": 3,
+    "oneLineConcept": "AWS CAF = guidance for cloud adoption",
+    "explanation": "The **AWS Cloud Adoption Framework (AWS CAF)** gives guidance to help an organization plan and carry out cloud adoption. It groups advice into six perspectives: Business, People, Governance, Platform, Security, and Operations.\n\n**Wrong choices**\n- Reviewing a workload against six pillars of good design: That is the AWS Well-Architected Framework.\n- Estimating the monthly cost of AWS services: That is the AWS Pricing Calculator.\n- Scanning servers for software vulnerabilities: That is Amazon Inspector.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "AWS CAF"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-concepts-0015",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-concepts",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which pillar of the AWS Well-Architected Framework is about using computing resources efficiently to meet requirements, and keeping that efficiency as demand changes and new technology appears?",
+    "choices": [
+      "Reliability",
+      "Performance efficiency",
+      "Operational excellence",
+      "Cost optimization"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Efficient resources as needs change = Performance efficiency",
+    "explanation": "The **Performance efficiency** pillar is about choosing the right resource types and sizes, and reviewing them as needs and technology change.\n\n**Wrong choices**\n- Cost optimization: Cost optimization focuses on avoiding unneeded spending, not on meeting performance needs.\n- Reliability: Reliability focuses on recovering from failures.\n- Operational excellence: Operational excellence focuses on running and improving operations.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Well-Architected Framework"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-concepts-0016",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-concepts",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A team makes small, frequent changes that can be reversed, runs operations as code, and learns from every operational failure. Which Well-Architected pillar do these practices support most?",
+    "choices": [
+      "Security",
+      "Performance efficiency",
+      "Operational excellence",
+      "Reliability"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Small reversible changes = Operational excellence",
+    "explanation": "The **Operational excellence** pillar is about running and monitoring systems well and improving processes over time. Small reversible changes and learning from failures are key practices.\n\n**Wrong choices**\n- Reliability: Reliability is about recovering from failures, but these practices are about how operations are run and improved.\n- Performance efficiency: Performance efficiency is about selecting efficient resources.\n- Security: Security is about protecting data and systems.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Well-Architected Framework"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-concepts-0017",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-concepts",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A company reviews its AWS bill each month, removes resources it no longer needs, and measures how much each project spends. Which Well-Architected pillar does this support most?",
+    "choices": [
+      "Performance efficiency",
+      "Sustainability",
+      "Cost optimization",
+      "Operational excellence"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Control and measure spending = Cost optimization",
+    "explanation": "The **Cost optimization** pillar is about avoiding unneeded costs, understanding where money is spent, and choosing the most cost-effective resources.\n\n**Wrong choices**\n- Sustainability: Removing unused resources can also help sustainability, but measuring and controlling spending is cost optimization.\n- Performance efficiency: Performance efficiency is about meeting performance needs efficiently.\n- Operational excellence: Operational excellence is about running and improving operations.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Well-Architected Framework"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-concepts-0018",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-concepts",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A company moves its database from a self-managed server to Amazon RDS during migration. The application design stays the same, but AWS now handles database maintenance. Which migration strategy is this?",
+    "choices": [
+      "Replatform",
+      "Refactor",
+      "Relocate",
+      "Rehost"
+    ],
+    "answer": 1,
+    "oneLineConcept": "A few cloud optimizations, same design = Replatform",
+    "explanation": "**Replatform** (sometimes called lift, tinker, and shift) makes a few cloud optimizations, such as moving to a managed database, without changing the core design of the application.\n\n**Wrong choices**\n- Rehost: Rehost moves the system with no changes, but here the database platform changes to a managed service.\n- Refactor: Refactor redesigns the application, which is not happening here.\n- Relocate: Relocate moves virtual machines at the virtualization level without changes.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Migration strategies"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-concepts-0019",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-concepts",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A company rewrites a large, old application as small serverless services so it can add new features faster. Which migration strategy is this?",
+    "choices": [
+      "Refactor",
+      "Rehost",
+      "Repurchase",
+      "Replatform"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Redesign the app for the cloud = Refactor",
+    "explanation": "**Refactor** (also called re-architect) changes how the application is designed and built, usually to use cloud-native features. It takes the most effort but can bring the most benefit.\n\n**Wrong choices**\n- Replatform: Replatform makes only a few changes and keeps the core design.\n- Rehost: Rehost moves the application without any changes.\n- Repurchase: Repurchase replaces the application with a different product.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Migration strategies"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-concepts-0020",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-concepts",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A company just upgraded the hardware for one application in its own data center and decides to keep running it there for a few more years. Which migration strategy is this?",
+    "choices": [
+      "Retire",
+      "Rehost",
+      "Relocate",
+      "Retain"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Keep it where it is for now = Retain",
+    "explanation": "**Retain** means keeping an application where it is for now, for example because of a recent investment or because it is not ready to move.\n\n**Wrong choices**\n- Retire: Retire shuts an application down, but this one will keep running.\n- Relocate: Relocate moves the application to the cloud.\n- Rehost: Rehost moves the application to the cloud unchanged.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Migration strategies"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-concepts-0021",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-concepts",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "An organization is moving to AWS and wants to train its staff, plan for new job roles, and help its culture adapt to the change. Which AWS CAF perspective covers this?",
+    "choices": [
+      "Operations",
+      "People",
+      "Business",
+      "Governance"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Skills, roles, culture = People perspective",
+    "explanation": "The **People** perspective of AWS CAF focuses on culture, organization structure, leadership, and building the skills staff need for the cloud.\n\n**Wrong choices**\n- Operations: Operations is about running cloud services at the agreed level.\n- Business: Business is about making sure cloud investments support business goals.\n- Governance: Governance is about managing the cloud program, risk, and benefits.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "AWS CAF"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-concepts-0022",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-concepts",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A company's executives want to make sure their cloud spending leads to clear business results, such as faster product launches and new revenue. Which AWS CAF perspective covers this?",
+    "choices": [
+      "Business",
+      "Governance",
+      "People",
+      "Platform"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Cloud investment → business outcomes = Business perspective",
+    "explanation": "The **Business** perspective of AWS CAF helps make sure cloud investments speed up the organization's business goals and outcomes.\n\n**Wrong choices**\n- Governance: Governance manages the cloud program and risks, but linking cloud to business goals is the Business perspective.\n- People: People is about skills, roles, and culture.\n- Platform: Platform is about building the technical cloud environment.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "AWS CAF"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-concepts-0023",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-concepts",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which AWS CAF perspective helps an organization manage its cloud program, control risk, and track the benefits of cloud adoption?",
+    "choices": [
+      "Security",
+      "Governance",
+      "Business",
+      "Operations"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Manage program, risk, benefits = Governance perspective",
+    "explanation": "The **Governance** perspective of AWS CAF helps organizations run their cloud initiatives while increasing benefits and reducing risks, including managing cost and data.\n\n**Wrong choices**\n- Business: Business focuses on business outcomes, not on managing program risk.\n- Operations: Operations focuses on running cloud services day to day.\n- Security: Security focuses on protecting data and workloads.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "AWS CAF"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-concepts-0024",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-concepts",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A company moves all of its applications out of its own data center and into AWS. Which cost is it most likely to stop paying?",
+    "choices": [
+      "Staff time to configure its applications",
+      "Designing how its application stores data",
+      "Buying and replacing physical servers",
+      "Data sent from AWS out to the internet"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Cloud removes hardware purchase and upkeep",
+    "explanation": "In the cloud, AWS owns and replaces the physical hardware. The company **stops buying and replacing servers** and stops paying for data center space, power, and cooling.\n\n**Wrong choices**\n- Data sent from AWS out to the internet: AWS charges for most data sent out to the internet, so this cost continues.\n- Staff time to configure its applications: The customer still manages its own applications in the cloud.\n- Designing how its application stores data: The customer still designs its own applications and data.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Cloud economics"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-concepts-0025",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-concepts",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A company finds that most of its Amazon EC2 instances use only a small part of their CPU and memory all day. What should it do to lower costs?",
+    "choices": [
+      "Move the instances to a different AWS Region",
+      "Rightsize the instances to smaller types that fit the actual use",
+      "Add more instances behind a load balancer",
+      "Turn on more detailed monitoring and change nothing else"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Oversized instances → rightsize",
+    "explanation": "**Rightsizing** means matching instance types and sizes to what a workload actually needs. Oversized instances waste money, so moving to smaller ones lowers cost.\n\n**Wrong choices**\n- Add more instances behind a load balancer: Adding instances would raise cost, not lower it.\n- Move the instances to a different AWS Region: Moving Regions does not fix instances that are too large.\n- Turn on more detailed monitoring and change nothing else: Monitoring shows the problem but does not reduce cost by itself.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Cloud economics",
+      "Rightsizing"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-concepts-0026",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-concepts",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A company wants its web application to keep running even if one data center has a problem. Which design gives the best availability?",
+    "choices": [
+      "Take a daily backup of one instance",
+      "Use one larger instance in one Availability Zone",
+      "Run instances in at least two Availability Zones",
+      "Run several instances in one Availability Zone"
+    ],
+    "answer": 3,
+    "oneLineConcept": "High availability = spread across multiple AZs",
+    "explanation": "Availability Zones are isolated from each other. **Running across multiple Availability Zones** means a problem in one zone does not stop the whole application.\n\n**Wrong choices**\n- Run several instances in one Availability Zone: If that one Availability Zone has a problem, all instances are affected.\n- Use one larger instance in one Availability Zone: A single instance is a single point of failure.\n- Take a daily backup of one instance: Backups help recovery but do not keep the application running during a failure.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "High availability",
+      "Availability Zones"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-concepts-0027",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-concepts",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Which of the following is NOT one of the six pillars of the AWS Well-Architected Framework?",
+    "choices": [
+      "Sustainability",
+      "Operational excellence",
+      "Cost optimization",
+      "Scalability"
+    ],
+    "answer": 4,
+    "oneLineConcept": "6 pillars: OpEx, Security, Reliability, Perf, Cost, Sustain.",
+    "explanation": "The six pillars are operational excellence, security, reliability, performance efficiency, cost optimization, and sustainability. **Scalability** is an important idea, but it is not one of the pillars.\n\n**Wrong choices**\n- Sustainability: Sustainability is a pillar (the sixth one).\n- Operational excellence: Operational excellence is a pillar.\n- Cost optimization: Cost optimization is a pillar.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Well-Architected Framework"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-concepts-0028",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-concepts",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A company runs its servers on VMware in its own data center. It wants to move them to VMware Cloud on AWS without buying new hardware, rewriting applications, or changing how it operates them. Which migration strategy is this?",
+    "choices": [
+      "Rehost",
+      "Relocate",
+      "Retain",
+      "Replatform"
+    ],
+    "answer": 2,
+    "oneLineConcept": "VMware as-is to VMware Cloud on AWS = Relocate",
+    "explanation": "**Relocate** moves large numbers of servers to the cloud at the virtualization level, for example from on-premises VMware to VMware Cloud on AWS, without changing applications or operations.\n\n**Wrong choices**\n- Rehost: Rehost moves applications onto new cloud servers such as Amazon EC2, while this keeps the same VMware platform.\n- Replatform: Replatform makes some changes to the platform, such as a managed database.\n- Retain: Retain keeps the servers in the company's own data center.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Migration strategies"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-concepts-0029",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-concepts",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Developers used to wait weeks for new servers. On AWS they can get resources in minutes and try new ideas at low cost. Which cloud benefit does this describe best?",
+    "choices": [
+      "Benefit from massive economies of scale",
+      "Go global in minutes",
+      "Increase speed and agility",
+      "Stop guessing capacity"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Resources in minutes, easy to experiment = speed and agility",
+    "explanation": "**Increase speed and agility** means new resources are only a few clicks away. Teams can test ideas quickly and cheaply, which speeds up innovation.\n\n**Wrong choices**\n- Stop guessing capacity: Stop guessing capacity is about matching resources to demand, not how fast developers can experiment.\n- Go global in minutes: Go global is about reaching other parts of the world.\n- Benefit from massive economies of scale: Economies of scale is about lower prices.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Cloud benefits"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-concepts-0030",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-concepts",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A team sets up monitoring so that when a key health measure crosses a limit, the system automatically replaces the failed part without a person stepping in. Which Well-Architected pillar has \"automatically recover from failure\" as a design principle?",
+    "choices": [
+      "Reliability",
+      "Security",
+      "Operational excellence",
+      "Performance efficiency"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Automatic recovery from failure = Reliability",
+    "explanation": "\"Automatically recover from failure\" is a design principle of the **Reliability** pillar. Watching key measures and triggering automatic fixes lets a workload recover quickly.\n\n**Wrong choices**\n- Operational excellence: Operational excellence covers running operations well, but automatic recovery from failure is a Reliability principle.\n- Performance efficiency: Performance efficiency is about using efficient resources.\n- Security: Security is about protecting data and systems.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Well-Architected Framework"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-concepts-0031",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-concepts",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Which AWS CAF perspective focuses on building a scalable cloud environment and on modernizing existing workloads and building new cloud-native solutions?",
+    "choices": [
+      "Governance",
+      "Platform",
+      "Operations",
+      "Security"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Build the cloud environment = Platform perspective",
+    "explanation": "The **Platform** perspective of AWS CAF helps build an enterprise-grade, scalable cloud (or hybrid) platform and modernize workloads.\n\n**Wrong choices**\n- Operations: Operations is about running services at the agreed level, not building the environment.\n- Security: Security is about protecting data and workloads.\n- Governance: Governance is about managing the cloud program and its risks.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "AWS CAF"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-concepts-0032",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-concepts",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Which AWS CAF perspective focuses on making sure cloud services are run and delivered at a level that meets the needs of the business?",
+    "choices": [
+      "Platform",
+      "Operations",
+      "Governance",
+      "Business"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Run services at the agreed level = Operations perspective",
+    "explanation": "The **Operations** perspective of AWS CAF focuses on running and supporting cloud services so they meet the level the business needs.\n\n**Wrong choices**\n- Platform: Platform is about building the cloud environment, not running services day to day.\n- Governance: Governance is about managing the cloud program and risk.\n- Business: Business is about linking cloud investment to business results.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "AWS CAF"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-concepts-0033",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-concepts",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A company is listing the benefits of moving to AWS. Each statement is a real benefit EXCEPT:",
+    "choices": [
+      "The company pays only for the resources it uses",
+      "The company can deploy in several Regions quickly",
+      "The company no longer needs to control who can access its own data",
+      "The company gets lower prices from AWS's large scale"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Customer always manages access to its own data",
+    "explanation": "Under the shared responsibility model, the customer is still responsible for **controlling access to its own data** in the cloud. Moving to AWS does not remove this duty.\n\n**Wrong choices**\n- The company pays only for the resources it uses: This is a real benefit: pay-as-you-go pricing.\n- The company can deploy in several Regions quickly: This is a real benefit: go global in minutes.\n- The company gets lower prices from AWS's large scale: This is a real benefit: economies of scale.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Cloud benefits",
+      "Shared responsibility model"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "aws-cloud-practitioner-cloud-concepts-0034",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "cloud-concepts",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "An order system is split into parts that talk to each other through a message queue, so if the shipping part fails, new orders are still accepted. Which design idea is this?",
+    "choices": [
+      "Manual scaling",
+      "Loose coupling",
+      "Vertical scaling",
+      "Tight coupling"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Parts connected through a queue = loose coupling",
+    "explanation": "**Loose coupling** means parts of a system depend on each other as little as possible. A queue between them lets one part fail or slow down without stopping the others.\n\n**Wrong choices**\n- Vertical scaling: Vertical scaling means making one server bigger, not separating parts.\n- Tight coupling: Tight coupling links parts directly, so one failure can stop the others.\n- Manual scaling: Manual scaling means a person changes capacity by hand.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Design principles"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  }
+]

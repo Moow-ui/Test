@@ -1,0 +1,1536 @@
+[
+  {
+    "id": "aws-cloud-practitioner-security-compliance-0001",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Under the AWS shared responsibility model, who is responsible for the physical security of AWS data centers?",
+    "choices": [
+      "The customer and AWS equally",
+      "The customer",
+      "The customer's internet provider",
+      "AWS"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Security OF the cloud (buildings, hardware) = AWS",
+    "explanation": "**AWS** is responsible for security *of* the cloud: the buildings, hardware, and global network. Physical data center security is fully AWS's job.\n\n**Wrong choices**\n- The customer: Customers cannot enter AWS data centers, so they cannot protect them.\n- The customer and AWS equally: Physical security is entirely AWS's job.\n- The customer's internet provider: Internet providers have no role in AWS data center security.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Shared responsibility model"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-security-compliance-0002",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A company runs Amazon EC2 instances. Who is responsible for installing security patches on the guest operating system of these instances?",
+    "choices": [
+      "The AWS Marketplace seller of the instance type",
+      "AWS Professional Services",
+      "The customer",
+      "AWS"
+    ],
+    "answer": 3,
+    "oneLineConcept": "EC2 guest OS patching = customer",
+    "explanation": "With Amazon EC2 (IaaS), the **customer** manages the guest operating system, including security patches, plus the applications and data on it.\n\n**Wrong choices**\n- AWS: AWS patches the host and hardware, not the guest operating system on EC2.\n- AWS Professional Services: Professional Services can be hired for projects, but patching is not automatically their job.\n- The AWS Marketplace seller of the instance type: Instance types are not sold by Marketplace sellers, and they do not patch your servers.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Shared responsibility model",
+      "Amazon EC2"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-security-compliance-0003",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "An auditor asks a company for AWS's security and compliance reports, such as SOC reports. Where can the company download them?",
+    "choices": [
+      "AWS Artifact",
+      "Amazon Inspector",
+      "AWS Config",
+      "AWS Security Hub"
+    ],
+    "answer": 1,
+    "oneLineConcept": "AWS compliance reports on demand = AWS Artifact",
+    "explanation": "**AWS Artifact** is a self-service portal for downloading AWS security and compliance reports and reviewing certain agreements with AWS.\n\n**Wrong choices**\n- AWS Config: AWS Config tracks the settings of your own resources, not AWS's audit reports.\n- AWS Security Hub: Security Hub collects security findings about your account.\n- Amazon Inspector: Inspector scans your workloads for software vulnerabilities.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "AWS Artifact",
+      "Compliance"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-security-compliance-0004",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What is the best practice for the AWS account root user?",
+    "choices": [
+      "Share its password with all administrators",
+      "Turn on MFA and use it only for the few tasks that need it",
+      "Create access keys for it so scripts can use it",
+      "Use it for daily administration work"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Root user: MFA on, rarely used",
+    "explanation": "The root user has full access to the account. Protect it with **multi-factor authentication (MFA)** and use it only for tasks that only the root user can do.\n\n**Wrong choices**\n- Use it for daily administration work: Daily work should use IAM identities with limited permissions.\n- Create access keys for it so scripts can use it: Root access keys are a big risk and should not be created.\n- Share its password with all administrators: Sharing credentials removes accountability and raises risk.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Root user",
+      "IAM"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-security-compliance-0005",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "An application on Amazon EC2 needs to read files in an Amazon S3 bucket. What is the most secure way to give it access?",
+    "choices": [
+      "Put the instance in an IAM group",
+      "Attach an IAM role to the EC2 instance",
+      "Use the root user's credentials",
+      "Store an IAM user's access keys on the instance"
+    ],
+    "answer": 2,
+    "oneLineConcept": "App on EC2 needs AWS access = IAM role",
+    "explanation": "An **IAM role** gives temporary credentials that rotate automatically. Attaching a role to the instance means no long-term keys are stored on the server.\n\n**Wrong choices**\n- Store an IAM user's access keys on the instance: Long-term keys stored on a server can be stolen.\n- Put the instance in an IAM group: IAM groups hold users, not EC2 instances.\n- Use the root user's credentials: The root user should never be used by applications.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "IAM roles"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-security-compliance-0006",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Twenty accountants need the same AWS permissions. What is the easiest way to manage their permissions?",
+    "choices": [
+      "Put them in an IAM group and attach a policy to the group",
+      "Create one IAM role and share its password with them",
+      "Write a service control policy for each accountant",
+      "Create a security group for the accountants"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Same permissions for many users = IAM group",
+    "explanation": "An **IAM group** is a collection of IAM users. A policy attached to the group applies to every user in it, so permissions are managed in one place.\n\n**Wrong choices**\n- Create one IAM role and share its password with them: Roles do not have passwords, and sharing sign-in details is a bad practice.\n- Create a security group for the accountants: Security groups control network traffic to instances, not user permissions.\n- Write a service control policy for each accountant: Service control policies apply to accounts in AWS Organizations, not to individual users.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "IAM groups"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-security-compliance-0007",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A security team wants a record of who made each AWS API call, when, and from where. Which service should it use?",
+    "choices": [
+      "AWS CloudTrail",
+      "AWS Config",
+      "Amazon Inspector",
+      "Amazon CloudWatch"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Who did what (API calls) = CloudTrail",
+    "explanation": "**AWS CloudTrail** records actions taken in an AWS account, including API calls, the identity that made them, the time, and the source address. It is key for auditing.\n\n**Wrong choices**\n- Amazon CloudWatch: CloudWatch collects performance metrics and logs, not a record of who called each API.\n- AWS Config: Config records resource settings over time, not every API call by user.\n- Amazon Inspector: Inspector scans for software vulnerabilities.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "AWS CloudTrail",
+      "Monitoring"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-security-compliance-0008",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which AWS service protects all AWS customers against common DDoS attacks automatically and at no extra cost?",
+    "choices": [
+      "AWS WAF",
+      "AWS Shield Standard",
+      "Amazon GuardDuty",
+      "AWS Shield Advanced"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Free automatic DDoS protection = Shield Standard",
+    "explanation": "**AWS Shield Standard** is turned on for all customers automatically at no extra charge. It protects against common network and transport layer DDoS attacks.\n\n**Wrong choices**\n- AWS Shield Advanced: Shield Advanced adds more protection and support, but it is a paid service.\n- AWS WAF: AWS WAF filters web requests with rules you set, and it is charged by use.\n- Amazon GuardDuty: GuardDuty detects threats from account activity; it is a paid service.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "AWS Shield",
+      "DDoS"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-security-compliance-0009",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A company's website is being hit by SQL injection attempts. Which service can block these harmful web requests?",
+    "choices": [
+      "AWS WAF",
+      "Security groups",
+      "AWS Shield Standard",
+      "Amazon Inspector"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Filter harmful web requests (SQLi, XSS) = AWS WAF",
+    "explanation": "**AWS WAF** is a web application firewall. You set rules that look at web requests and block common attacks such as SQL injection and cross-site scripting.\n\n**Wrong choices**\n- AWS Shield Standard: Shield Standard protects against DDoS attacks, not SQL injection in web requests.\n- Security groups: Security groups allow or block traffic by port and address, not by what is inside a web request.\n- Amazon Inspector: Inspector finds vulnerabilities but does not block web requests.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "AWS WAF"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-security-compliance-0010",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A company wants a service that keeps watching its AWS accounts for signs of threats, such as an instance talking to known bad IP addresses or unusual API activity. Which service should it use?",
+    "choices": [
+      "Amazon Detective",
+      "Amazon Inspector",
+      "Amazon GuardDuty",
+      "Amazon Macie"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Continuous threat detection = GuardDuty",
+    "explanation": "**Amazon GuardDuty** is a threat detection service. It analyzes sources such as AWS CloudTrail events, VPC Flow Logs, and DNS logs to spot suspicious behavior.\n\n**Wrong choices**\n- Amazon Inspector: Inspector looks for software vulnerabilities, not suspicious activity.\n- Amazon Detective: Detective helps investigate findings after they are found.\n- Amazon Macie: Macie finds sensitive data in Amazon S3.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Amazon GuardDuty"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-security-compliance-0011",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A company needs to find files in Amazon S3 that contain sensitive data, such as credit card numbers or personal information. Which service should it use?",
+    "choices": [
+      "AWS Artifact",
+      "Amazon Macie",
+      "Amazon GuardDuty",
+      "Amazon Inspector"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Find sensitive data in S3 = Macie",
+    "explanation": "**Amazon Macie** uses machine learning and pattern matching to discover and report sensitive data, such as personal information, stored in Amazon S3.\n\n**Wrong choices**\n- Amazon GuardDuty: GuardDuty detects threats from activity, not sensitive data inside files.\n- Amazon Inspector: Inspector scans for software vulnerabilities.\n- AWS Artifact: Artifact provides AWS compliance reports.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Amazon Macie"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-security-compliance-0012",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A company wants automatic scanning of its Amazon EC2 instances for known software vulnerabilities and risky network exposure. Which service should it use?",
+    "choices": [
+      "Amazon Macie",
+      "AWS Trusted Advisor",
+      "Amazon GuardDuty",
+      "Amazon Inspector"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Vulnerability scanning = Inspector",
+    "explanation": "**Amazon Inspector** automatically scans workloads such as Amazon EC2 instances for known software vulnerabilities and unintended network exposure.\n\n**Wrong choices**\n- Amazon GuardDuty: GuardDuty watches for threat activity, not missing software patches.\n- AWS Trusted Advisor: Trusted Advisor gives best-practice checks, not software vulnerability scans.\n- Amazon Macie: Macie finds sensitive data in S3.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Amazon Inspector"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-security-compliance-0013",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A company wants to create and control the encryption keys used to protect data in many AWS services. Which service should it use?",
+    "choices": [
+      "AWS Certificate Manager (ACM)",
+      "AWS Key Management Service (AWS KMS)",
+      "AWS Identity and Access Management (IAM)",
+      "AWS Secrets Manager"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Create and manage encryption keys = AWS KMS",
+    "explanation": "**AWS KMS** lets you create, manage, and control the use of encryption keys. Many AWS services work with KMS to encrypt data at rest.\n\n**Wrong choices**\n- AWS Secrets Manager: Secrets Manager stores secrets such as passwords, not the main encryption keys for AWS services.\n- AWS Certificate Manager (ACM): ACM manages SSL/TLS certificates.\n- AWS Identity and Access Management (IAM): IAM controls who can do what, not encryption keys.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "AWS KMS",
+      "Encryption"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-security-compliance-0014",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "An application needs a database password. The company does not want the password written in the code and wants it changed (rotated) automatically. Which service should it use?",
+    "choices": [
+      "AWS Secrets Manager",
+      "AWS Identity and Access Management (IAM)",
+      "AWS Key Management Service (AWS KMS)",
+      "AWS Certificate Manager (ACM)"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Store and rotate passwords = Secrets Manager",
+    "explanation": "**AWS Secrets Manager** stores secrets such as database passwords and API keys and can rotate them automatically. Applications get the secret when they need it.\n\n**Wrong choices**\n- AWS Key Management Service (AWS KMS): KMS manages encryption keys, not application passwords with automatic rotation.\n- AWS Certificate Manager (ACM): ACM manages SSL/TLS certificates.\n- AWS Identity and Access Management (IAM): IAM manages AWS permissions, not database passwords.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "AWS Secrets Manager"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-security-compliance-0015",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What does the principle of least privilege mean?",
+    "choices": [
+      "Give each user only the permissions needed to do their job",
+      "Give administrators full access to every account",
+      "Give all users the same permissions to keep things simple",
+      "Remove all permissions until a security problem happens"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Least privilege = only the access needed",
+    "explanation": "**Least privilege** means granting only the permissions required for a task. It limits the damage if credentials are stolen or a mistake is made.\n\n**Wrong choices**\n- Give all users the same permissions to keep things simple: Equal permissions usually give many users more access than they need.\n- Give administrators full access to every account: Even administrators should get only the access they need.\n- Remove all permissions until a security problem happens: With no permissions, nobody could do their work.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "IAM",
+      "Least privilege"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-security-compliance-0016",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which feature acts as a virtual firewall that controls inbound and outbound traffic for an Amazon EC2 instance?",
+    "choices": [
+      "AWS Shield",
+      "AWS WAF",
+      "Security group",
+      "Network access control list (network ACL)"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Instance-level firewall = security group",
+    "explanation": "A **security group** is a virtual firewall attached to an instance. You add rules that allow traffic by protocol, port, and source.\n\n**Wrong choices**\n- Network access control list (network ACL): A network ACL controls traffic for a whole subnet, not a single instance.\n- AWS WAF: AWS WAF filters web requests for web applications.\n- AWS Shield: Shield protects against DDoS attacks.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Security groups",
+      "Amazon VPC"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-security-compliance-0017",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A company turns on multi-factor authentication (MFA) for its IAM users. What does MFA add?",
+    "choices": [
+      "A longer password that must be changed every day",
+      "A second proof of identity, such as a code from a device, in addition to the password",
+      "Encryption of all data the user uploads",
+      "A record of every action the user takes"
+    ],
+    "answer": 2,
+    "oneLineConcept": "MFA = password + something you have",
+    "explanation": "**Multi-factor authentication (MFA)** asks for something extra, such as a code from an authenticator app or a security key, so a stolen password alone is not enough.\n\n**Wrong choices**\n- A longer password that must be changed every day: MFA does not change the password rules.\n- Encryption of all data the user uploads: MFA protects sign-in, not stored data.\n- A record of every action the user takes: Recording actions is done by AWS CloudTrail.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "MFA",
+      "IAM"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-security-compliance-0018",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A company stores files in an Amazon S3 bucket. Under the shared responsibility model, who decides which users are allowed to access the bucket?",
+    "choices": [
+      "AWS Support",
+      "AWS",
+      "AWS and the customer equally",
+      "The customer"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Access to your data = customer's job",
+    "explanation": "The **customer** is responsible for security *in* the cloud, including deciding who can access its data and setting IAM and bucket permissions.\n\n**Wrong choices**\n- AWS: AWS provides the access control tools, but the customer decides who gets access.\n- AWS Support: AWS Support helps with questions but does not decide access to your data.\n- AWS and the customer equally: Deciding access to customer data is the customer's job.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Shared responsibility model",
+      "Amazon S3"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-security-compliance-0019",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A company uses Amazon RDS for its database. Who is responsible for patching the database engine software?",
+    "choices": [
+      "The customer",
+      "AWS",
+      "The database software vendor",
+      "AWS Marketplace"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Managed service (RDS) = AWS patches the engine",
+    "explanation": "Amazon RDS is a managed service. **AWS** handles the operating system and database engine patching, while the customer manages data, access, and settings.\n\n**Wrong choices**\n- The customer: With Amazon EC2 the customer would patch, but RDS is a managed service where AWS handles it.\n- The database software vendor: The vendor writes patches, but AWS applies them in RDS.\n- AWS Marketplace: Marketplace is a store for software, not a patching service.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Shared responsibility model",
+      "Amazon RDS"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-security-compliance-0020",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A company runs code on AWS Lambda. Which task is the customer's responsibility?",
+    "choices": [
+      "Scaling the servers that run the functions",
+      "Maintaining the physical hosts",
+      "Writing secure function code and setting its permissions",
+      "Patching the operating system that runs the functions"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Lambda: customer owns code and permissions",
+    "explanation": "With serverless AWS Lambda, AWS runs the servers and operating system. The **customer** is responsible for its own code, data, and the permissions given to the function.\n\n**Wrong choices**\n- Patching the operating system that runs the functions: AWS manages the operating system for Lambda.\n- Scaling the servers that run the functions: Lambda scales automatically; AWS manages the servers.\n- Maintaining the physical hosts: Physical hardware is always AWS's job.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Shared responsibility model",
+      "AWS Lambda"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-security-compliance-0021",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A company wants to see how the settings of its AWS resources have changed over time and check them against its own rules, such as \"all EBS volumes must be encrypted.\" Which service should it use?",
+    "choices": [
+      "AWS CloudTrail",
+      "AWS Trusted Advisor",
+      "AWS Config",
+      "Amazon CloudWatch"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Resource settings history + rules = AWS Config",
+    "explanation": "**AWS Config** records the configuration of resources over time and evaluates them against rules, showing which resources do not follow company policy.\n\n**Wrong choices**\n- AWS CloudTrail: CloudTrail records API calls, but Config tracks resource settings and checks them against rules.\n- Amazon CloudWatch: CloudWatch watches performance metrics and logs.\n- AWS Trusted Advisor: Trusted Advisor gives general best-practice checks, not your own custom rules.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "AWS Config",
+      "Governance"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-security-compliance-0022",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A security team uses Amazon GuardDuty, Amazon Inspector, and Amazon Macie. It wants one place to see and prioritize all their findings across accounts. Which service should it use?",
+    "choices": [
+      "AWS Security Hub",
+      "Amazon Detective",
+      "AWS Config",
+      "AWS CloudTrail"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Central view of security findings = Security Hub",
+    "explanation": "**AWS Security Hub** gathers security findings from many AWS services and partner tools into one view and checks accounts against security best practices.\n\n**Wrong choices**\n- Amazon Detective: Detective investigates a finding in depth, but it is not the central view of all findings.\n- AWS CloudTrail: CloudTrail records API activity.\n- AWS Config: Config tracks resource settings.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "AWS Security Hub"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-security-compliance-0023",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "After GuardDuty reports a suspicious finding, a security analyst wants to dig into the root cause by looking at related activity and connections over time. Which service helps most?",
+    "choices": [
+      "AWS Security Hub",
+      "Amazon GuardDuty",
+      "Amazon Detective",
+      "Amazon Inspector"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Investigate root cause = Detective",
+    "explanation": "**Amazon Detective** collects log data and builds visual links between activities, which helps analysts find the root cause of security findings.\n\n**Wrong choices**\n- Amazon GuardDuty: GuardDuty creates the finding, but Detective helps investigate its cause.\n- AWS Security Hub: Security Hub collects and ranks findings but is not built for deep investigation.\n- Amazon Inspector: Inspector scans for vulnerabilities.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Amazon Detective"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-security-compliance-0024",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A company has many AWS accounts. It wants its employees to sign in once and get access to the accounts and business apps they need. Which service should it use?",
+    "choices": [
+      "Amazon Cognito",
+      "AWS Organizations",
+      "IAM groups in each account",
+      "AWS IAM Identity Center"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Workforce single sign-on = IAM Identity Center",
+    "explanation": "**AWS IAM Identity Center** gives employees one place to sign in and reach multiple AWS accounts and applications.\n\n**Wrong choices**\n- Amazon Cognito: Cognito adds sign-in for customers of your own apps, not employee access to AWS accounts.\n- IAM groups in each account: Groups would need separate users in every account, which is not single sign-on.\n- AWS Organizations: Organizations manages accounts and billing but is not the sign-in service.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "IAM Identity Center"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-security-compliance-0025",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A company is building a mobile app and needs sign-up and sign-in for millions of its customers. Which service should it use?",
+    "choices": [
+      "IAM users",
+      "AWS Directory Service",
+      "AWS IAM Identity Center",
+      "Amazon Cognito"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Sign-in for your app's customers = Cognito",
+    "explanation": "**Amazon Cognito** adds user sign-up, sign-in, and access control to web and mobile apps and can scale to large numbers of users.\n\n**Wrong choices**\n- AWS IAM Identity Center: IAM Identity Center is for workforce users, not app customers.\n- IAM users: IAM users are for people and tools working on AWS, not app customers.\n- AWS Directory Service: Directory Service provides managed Microsoft Active Directory for workforce use.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Amazon Cognito"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-security-compliance-0026",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A company needs SSL/TLS certificates for its website so that visitors connect over HTTPS. Which service can provide and renew these certificates?",
+    "choices": [
+      "AWS Certificate Manager (ACM)",
+      "AWS Key Management Service (AWS KMS)",
+      "AWS CloudHSM",
+      "AWS Secrets Manager"
+    ],
+    "answer": 1,
+    "oneLineConcept": "SSL/TLS certificates = ACM",
+    "explanation": "**AWS Certificate Manager (ACM)** provides, manages, and renews SSL/TLS certificates for use with AWS services, protecting data in transit.\n\n**Wrong choices**\n- AWS Key Management Service (AWS KMS): KMS manages encryption keys, not website certificates.\n- AWS Secrets Manager: Secrets Manager stores passwords and other secrets.\n- AWS CloudHSM: CloudHSM provides hardware for keys, not managed public certificates.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "ACM",
+      "Encryption"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-security-compliance-0027",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A regulated company must keep its encryption keys in a dedicated, single-tenant hardware security module that only it controls. Which service fits this need?",
+    "choices": [
+      "AWS CloudHSM",
+      "AWS Certificate Manager (ACM)",
+      "AWS Key Management Service (AWS KMS)",
+      "AWS Secrets Manager"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Dedicated hardware for your keys = CloudHSM",
+    "explanation": "**AWS CloudHSM** gives you dedicated hardware security modules in the AWS Cloud, where you fully control your keys.\n\n**Wrong choices**\n- AWS Key Management Service (AWS KMS): KMS is a managed key service, but CloudHSM gives you your own dedicated hardware module.\n- AWS Certificate Manager (ACM): ACM manages certificates.\n- AWS Secrets Manager: Secrets Manager stores secrets such as passwords.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "AWS CloudHSM",
+      "Encryption"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-security-compliance-0028",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A company uses AWS Organizations. It wants to make sure no one in its development accounts, not even administrators, can use certain AWS services. What should it use?",
+    "choices": [
+      "Security groups",
+      "AWS Config rules",
+      "IAM groups",
+      "Service control policies (SCPs)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Limit what whole accounts can do = SCP",
+    "explanation": "**Service control policies (SCPs)** in AWS Organizations set the maximum permissions for accounts. Even administrators in those accounts cannot go beyond them.\n\n**Wrong choices**\n- IAM groups: IAM groups apply permissions within one account and cannot limit an account's administrators.\n- Security groups: Security groups control network traffic to instances.\n- AWS Config rules: Config rules report on settings but do not block service use.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "AWS Organizations",
+      "SCP"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-security-compliance-0029",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A company must block traffic from a specific range of IP addresses to every instance in a subnet. It needs a rule that explicitly denies this traffic. What should it use?",
+    "choices": [
+      "Security group",
+      "IAM policy",
+      "Network access control list (network ACL)",
+      "Amazon Route 53"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Subnet level, allow and deny rules = network ACL",
+    "explanation": "A **network ACL** works at the subnet level and supports both allow and deny rules. It is stateless, so return traffic must also be allowed.\n\n**Wrong choices**\n- Security group: Security groups only have allow rules, so they cannot explicitly deny an address range.\n- IAM policy: IAM policies control actions on AWS, not network traffic.\n- Amazon Route 53: Route 53 is a DNS service.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Network ACL",
+      "Amazon VPC"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-security-compliance-0030",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A company's main website is often targeted by large DDoS attacks. It wants extra protection plus help from an AWS response team during attacks. Which service should it choose?",
+    "choices": [
+      "AWS Firewall Manager",
+      "AWS Shield Advanced",
+      "AWS WAF",
+      "AWS Shield Standard"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Extra DDoS protection + response team = Shield Advanced",
+    "explanation": "**AWS Shield Advanced** is a paid service that adds stronger DDoS protection, attack visibility, and access to the AWS Shield Response Team.\n\n**Wrong choices**\n- AWS Shield Standard: Shield Standard gives basic automatic protection but not access to the response team.\n- AWS WAF: AWS WAF filters web requests but is not a DDoS response service.\n- AWS Firewall Manager: Firewall Manager manages firewall rules across accounts.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "AWS Shield",
+      "DDoS"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-security-compliance-0031",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A company wants data to be protected while it travels between customers' web browsers and its website on AWS. What should it use?",
+    "choices": [
+      "HTTPS with an SSL/TLS certificate",
+      "Server-side encryption in Amazon S3",
+      "Multi-factor authentication",
+      "IAM roles"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Data in transit = TLS (HTTPS)",
+    "explanation": "Data **in transit** is protected with encryption such as **TLS**, which websites use for HTTPS. Data at rest is protected with storage encryption.\n\n**Wrong choices**\n- Server-side encryption in Amazon S3: This protects data at rest in S3, not data in transit.\n- Multi-factor authentication: MFA protects sign-in, not data traveling over the network.\n- IAM roles: Roles give permissions to AWS resources.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Encryption"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-security-compliance-0032",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "An administrator wants a report that lists every IAM user in the account and the status of their passwords, access keys, and MFA devices. What should the administrator use?",
+    "choices": [
+      "IAM credential report",
+      "AWS Artifact",
+      "AWS Trusted Advisor",
+      "AWS CloudTrail event history"
+    ],
+    "answer": 1,
+    "oneLineConcept": "List all users and credential status = credential report",
+    "explanation": "The **IAM credential report** lists all users in the account with the status of their credentials, such as passwords, access keys, and MFA.\n\n**Wrong choices**\n- AWS CloudTrail event history: CloudTrail shows actions taken, not the status of each user's credentials.\n- AWS Trusted Advisor: Trusted Advisor runs best-practice checks but does not list every user's credential status.\n- AWS Artifact: Artifact provides AWS compliance reports.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "IAM"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-security-compliance-0033",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "In IAM, what is used to define permissions in a JSON document that says which actions are allowed or denied on which resources?",
+    "choices": [
+      "Access key",
+      "IAM group",
+      "IAM role",
+      "IAM policy"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Permissions written in JSON = IAM policy",
+    "explanation": "An **IAM policy** is a JSON document listing allowed or denied actions on resources. Policies are attached to users, groups, or roles.\n\n**Wrong choices**\n- IAM role: A role is an identity that can use a policy; the policy defines the permissions.\n- IAM group: A group holds users and has policies attached to it.\n- Access key: An access key is a credential for programmatic access.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "IAM policies"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-security-compliance-0034",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A company runs workloads on Amazon EC2. Which task is NOT the customer's responsibility?",
+    "choices": [
+      "Encrypting data stored on its volumes",
+      "Patching the guest operating system",
+      "Setting security group rules",
+      "Replacing failed disk drives in AWS data centers"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Hardware upkeep = AWS, even for EC2",
+    "explanation": "Physical hardware, including **replacing failed disk drives**, is AWS's responsibility. On EC2 the customer handles the guest OS, network settings, and data protection.\n\n**Wrong choices**\n- Patching the guest operating system: This is the customer's job on EC2.\n- Setting security group rules: This is the customer's job.\n- Encrypting data stored on its volumes: Choosing and turning on encryption is the customer's job.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Shared responsibility model"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "aws-cloud-practitioner-security-compliance-0035",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Which control is shared between AWS and the customer, where AWS handles it for the infrastructure and the customer handles it for its own guest operating systems and applications?",
+    "choices": [
+      "Disposal of old storage hardware",
+      "Patch management",
+      "Physical and environmental controls",
+      "Classifying customer data"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Shared controls: patching, configuration, training",
+    "explanation": "**Patch management** is a shared control: AWS patches the infrastructure, and customers patch their guest OS and applications. Configuration management and awareness training are also shared.\n\n**Wrong choices**\n- Physical and environmental controls: These are fully AWS's job; customers have no access to data centers.\n- Classifying customer data: Deciding how sensitive its data is belongs only to the customer.\n- Disposal of old storage hardware: This is fully AWS's job.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Shared responsibility model"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-security-compliance-0036",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Which statement about AWS Identity and Access Management (IAM) is NOT true?",
+    "choices": [
+      "IAM users must be created again in each AWS Region",
+      "IAM roles give temporary security credentials",
+      "IAM is offered at no additional charge",
+      "An IAM user can belong to more than one group"
+    ],
+    "answer": 1,
+    "oneLineConcept": "IAM is global, not per Region",
+    "explanation": "IAM is a **global** service. Users, groups, roles, and policies apply across all Regions in the account, so they are not created per Region.\n\n**Wrong choices**\n- IAM roles give temporary security credentials: This is true; roles use temporary credentials.\n- An IAM user can belong to more than one group: This is true.\n- IAM is offered at no additional charge: This is true; you do not pay extra for IAM.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "IAM"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "aws-cloud-practitioner-security-compliance-0037",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A contractor works in a separate AWS account and needs to access resources in a company's account for a few months. What is the most secure approach?",
+    "choices": [
+      "Create an IAM user for the contractor and send its long-term access keys",
+      "Share the company's root user password",
+      "Add the contractor's account to the company's IAM group",
+      "Create an IAM role the contractor's account can assume to get temporary credentials"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Cross-account access = assume a role",
+    "explanation": "**IAM roles** support cross-account access. The trusted account assumes the role and receives temporary credentials, so no long-term keys are shared.\n\n**Wrong choices**\n- Create an IAM user for the contractor and send its long-term access keys: Long-term keys are riskier than temporary role credentials.\n- Share the company's root user password: The root user should never be shared.\n- Add the contractor's account to the company's IAM group: IAM groups contain users in the same account, not other accounts.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "IAM roles",
+      "Cross-account access"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-security-compliance-0038",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A company with many accounts in AWS Organizations wants to set up AWS WAF rules once and apply them across all accounts automatically, including new ones. Which service should it use?",
+    "choices": [
+      "AWS Firewall Manager",
+      "AWS Security Hub",
+      "AWS WAF by itself",
+      "AWS Shield Standard"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Manage firewall rules across accounts = Firewall Manager",
+    "explanation": "**AWS Firewall Manager** lets you centrally set up and manage firewall rules, such as AWS WAF rules, across accounts in AWS Organizations.\n\n**Wrong choices**\n- AWS WAF by itself: AWS WAF holds the rules, but Firewall Manager applies them centrally across accounts.\n- AWS Shield Standard: Shield Standard is automatic DDoS protection, not a rule manager.\n- AWS Security Hub: Security Hub collects findings but does not deploy firewall rules.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "AWS Firewall Manager"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-security-compliance-0039",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A company is preparing for a compliance audit. It wants a service that continuously collects evidence from its own AWS usage and maps it to audit controls. Which service should it use?",
+    "choices": [
+      "AWS Audit Manager",
+      "AWS Config",
+      "AWS Artifact",
+      "AWS CloudTrail"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Collect audit evidence about your usage = Audit Manager",
+    "explanation": "**AWS Audit Manager** continuously collects evidence from your AWS usage and organizes it by control to help you prepare for audits.\n\n**Wrong choices**\n- AWS Artifact: Artifact gives AWS's own compliance reports, not evidence about your own usage.\n- AWS Config: Config records resource settings but does not organize evidence for audits.\n- AWS CloudTrail: CloudTrail records API calls but does not map them to audit controls.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "AWS Audit Manager",
+      "Compliance"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-security-compliance-0040",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A company wants to protect its data at rest in AWS. Each option helps with this EXCEPT:",
+    "choices": [
+      "Turning on encryption for an Amazon RDS database",
+      "Using AWS KMS keys to encrypt Amazon EBS volumes",
+      "Using server-side encryption for Amazon S3 objects",
+      "Turning on AWS Shield Advanced"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Data at rest = storage encryption, not DDoS tools",
+    "explanation": "**AWS Shield Advanced** protects against DDoS attacks; it does not encrypt stored data. Data at rest is protected by encrypting storage such as EBS, RDS, and S3.\n\n**Wrong choices**\n- Using AWS KMS keys to encrypt Amazon EBS volumes: This encrypts stored data.\n- Turning on encryption for an Amazon RDS database: This encrypts stored data.\n- Using server-side encryption for Amazon S3 objects: This encrypts stored data.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Encryption",
+      "AWS Shield"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "aws-cloud-practitioner-security-compliance-0041",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A company wants one service that checks its account and gives recommendations in several areas, including security (such as open security group ports and MFA on the root user), cost, and performance. Which service fits best?",
+    "choices": [
+      "AWS Security Hub",
+      "Amazon GuardDuty",
+      "AWS Trusted Advisor",
+      "Amazon Inspector"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Best-practice checks in many areas = Trusted Advisor",
+    "explanation": "**AWS Trusted Advisor** checks your account against AWS best practices and gives recommendations in areas such as cost optimization, security, performance, and fault tolerance.\n\n**Wrong choices**\n- AWS Security Hub: Security Hub focuses on security only, not cost and performance.\n- Amazon Inspector: Inspector scans for software vulnerabilities.\n- Amazon GuardDuty: GuardDuty detects threats from activity.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "AWS Trusted Advisor"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-security-compliance-0042",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A network team needs to capture information about the IP traffic going to and from network interfaces in its VPC to troubleshoot connections and investigate security problems. What should it use?",
+    "choices": [
+      "AWS Config",
+      "AWS Artifact",
+      "AWS CloudTrail",
+      "VPC Flow Logs"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Record IP traffic in a VPC = VPC Flow Logs",
+    "explanation": "**VPC Flow Logs** capture information about IP traffic going to and from network interfaces in a VPC. They help with troubleshooting and security analysis.\n\n**Wrong choices**\n- AWS CloudTrail: CloudTrail records API calls, not network traffic.\n- AWS Config: Config records resource settings.\n- AWS Artifact: Artifact provides compliance reports.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "VPC Flow Logs",
+      "Monitoring"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-security-compliance-0043",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A law requires a company to store customer data inside one specific country. What is the customer's main way to meet this need on AWS?",
+    "choices": [
+      "Use Amazon CloudFront edge locations in that country",
+      "Turn on AWS Shield Advanced",
+      "Ask AWS Support to keep the data in that country",
+      "Choose an AWS Region in that country for storing the data"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Data residency = customer picks the Region",
+    "explanation": "The customer **chooses the Region** where its data is stored. AWS does not move customer content out of the chosen Region unless the customer does so.\n\n**Wrong choices**\n- Use Amazon CloudFront edge locations in that country: Edge locations cache copies of content close to users; they are not where you choose to keep your main data.\n- Ask AWS Support to keep the data in that country: The customer chooses the Region; it is not a Support request.\n- Turn on AWS Shield Advanced: Shield Advanced protects against DDoS attacks, not data location.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "Data residency",
+      "Regions"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "aws-cloud-practitioner-security-compliance-0044",
+    "certId": "aws-cloud-practitioner",
+    "subjectId": "cloud-practitioner",
+    "chapterId": "security-compliance",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A company wants to keep its development and production workloads separate so that a mistake in development cannot affect production, and so each can have different policies. What is the best approach?",
+    "choices": [
+      "Use separate security groups in one account",
+      "Use separate Regions in one account",
+      "Use separate AWS accounts managed with AWS Organizations",
+      "Use separate IAM users in one account"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Strong isolation = separate accounts in Organizations",
+    "explanation": "An AWS account is a strong boundary for security and billing. **Separate accounts grouped in AWS Organizations** keep environments apart and let you apply different policies.\n\n**Wrong choices**\n- Use separate IAM users in one account: Users in one account can still affect shared resources; separate accounts give a stronger boundary.\n- Use separate Regions in one account: One account in several Regions still shares the same IAM and account settings.\n- Use separate security groups in one account: Security groups only control network traffic.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "AWS Organizations",
+      "Multi-account"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  }
+]

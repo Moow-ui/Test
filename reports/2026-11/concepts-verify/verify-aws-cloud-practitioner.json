@@ -1,0 +1,58 @@
+{
+  "cert": "aws-cloud-practitioner",
+  "date": "2026-11-02",
+  "method": "작성과 분리된 에이전트가 모든 문장·수치를 다시 확인",
+  "round1": {
+    "cloud-concepts": {
+      "result": "PASS",
+      "issues": [],
+      "notes": [
+        "'Reliability is about recovering from failure' is narrow; the pillar is about a workload performing its intended function correctly and consistently, including recovery. Consider 'working correctly and recovering from failure'.",
+        "Relocate: AWS defines it as hypervisor-level lift and shift (example VMware Cloud on AWS); 'moves VMware workloads as they are' is acceptable but slightly narrow."
+      ]
+    },
+    "security-compliance": {
+      "result": "FAIL",
+      "issues": [
+        "Compare table row 'Network and firewall settings: Customer' under the combined 'Amazon RDS / AWS Lambda' column is misleading for Lambda: for Lambda (an abstracted service) AWS manages the network and firewall layer; the customer only configures network settings if it attaches the function to a VPC. Customer duties for Lambda are function code, IAM permissions and data. Fix: change the row to 'Access permissions (IAM) and data' (Customer/Customer), or split RDS (customer sets security groups) from Lambda."
+      ],
+      "notes": [
+        "Root user 'the identity that created the account' is loose; it is the identity created with the account, signed in with the account email address.",
+        "Shield Advanced SRT engagement requires Business or Enterprise-level Support; fine to omit at CLF level."
+      ]
+    },
+    "cloud-technology-services": {
+      "result": "PASS",
+      "issues": [],
+      "notes": [
+        "'EBS is a block volume for one instance' is the standard teaching; EBS Multi-Attach (io1/io2) is an exception not needed for CLF."
+      ]
+    },
+    "billing-pricing-support": {
+      "result": "PASS",
+      "issues": [],
+      "notes": [
+        "Coverage gap: the summary says it covers 'the main support resources' but does not mention AWS Support plans (Basic/Developer/Business/Enterprise etc.), TAM, AWS Trust & Safety, or AWS Knowledge Center, which are in exam domain 4. Plan line-up has been changing; verify current plan names on aws.amazon.com/premiumsupport before adding."
+      ]
+    },
+    "studyTips": {
+      "result": "PASS",
+      "issues": [],
+      "notes": [
+        "90/65 = 1.38 min per question, so 'a little under a minute and a half' is correct. Could add that there is no penalty for guessing as the main reason to answer every question."
+      ]
+    }
+  },
+  "round2": {
+    "security-compliance": {
+      "result": "PASS",
+      "note": "비교표 Network and firewall settings 행(Lambda 에 맞지 않음)을 IAM permissions for users and roles 로 고친 뒤 새 에이전트가 단원 전체 재확인"
+    }
+  },
+  "final": {
+    "cloud-concepts": "PASS",
+    "security-compliance": "PASS",
+    "cloud-technology-services": "PASS",
+    "billing-pricing-support": "PASS"
+  }
+}

@@ -1,0 +1,343 @@
+{
+  "by": "ai",
+  "chapters": {
+    "cloud-concepts": {
+      "verifiedAt": "2026-11-02",
+      "summary": [
+        "This chapter covers why companies use the cloud and how they plan the move. You learn the benefits of the AWS Cloud, the six pillars of the AWS Well-Architected Framework, the common migration strategies, and the six perspectives of the AWS Cloud Adoption Framework (AWS CAF). Most questions describe a business situation and ask which benefit, pillar, strategy, or perspective it matches.",
+        "The main benefits of the cloud are easy to remember as short phrases. You trade fixed expense for variable expense, so you pay only for what you use. You benefit from economies of scale, stop guessing capacity, increase speed and agility, stop spending money running data centers, and go global in minutes. Elasticity means resources grow and shrink with demand, often automatically.",
+        "The Well-Architected Framework has six pillars: operational excellence, security, reliability, performance efficiency, cost optimization, and sustainability. Reliability is about recovering from failure, and running across multiple Availability Zones is a key way to stay available. Loose coupling, such as using a queue between parts of a system, keeps one failure from stopping everything.",
+        "Migration strategies describe what happens to each application. Rehost is lift and shift, replatform makes a few changes such as moving to a managed database, and refactor redesigns the application. Repurchase switches to a new product, retire turns an application off, retain keeps it where it is, and relocate moves VMware workloads as they are. AWS CAF groups planning advice into the Business, People, Governance, Platform, Security, and Operations perspectives."
+      ],
+      "concepts": [
+        {
+          "term": "Fixed vs variable expense",
+          "definition": "Instead of buying servers up front (fixed), you pay each month only for the resources you use (variable).",
+          "tip": "Pay as you go = variable expense"
+        },
+        {
+          "term": "Elasticity",
+          "definition": "Adding resources when demand rises and removing them when demand falls, often automatically.",
+          "tip": "Grow and shrink with demand"
+        },
+        {
+          "term": "Well-Architected pillars",
+          "definition": "Operational excellence, security, reliability, performance efficiency, cost optimization, and sustainability.",
+          "tip": "Scalability is not a pillar"
+        },
+        {
+          "term": "Migration strategies",
+          "definition": "Rehost, replatform, refactor, repurchase, retire, retain, and relocate describe what happens to each application.",
+          "tip": "Lift and shift = rehost"
+        },
+        {
+          "term": "AWS CAF perspectives",
+          "definition": "Business, People, Governance, Platform, Security, and Operations, each giving advice for one area of cloud adoption.",
+          "tip": "Skills and culture = People"
+        },
+        {
+          "term": "Rightsizing",
+          "definition": "Matching instance types and sizes to what a workload actually uses so you do not pay for idle capacity.",
+          "tip": "Low CPU all day = too big"
+        }
+      ],
+      "points": [
+        "Not guessing how many servers you need = stop guessing capacity.",
+        "Environmental impact is the Sustainability pillar.",
+        "Moving to Amazon RDS without redesign = replatform.",
+        "Switching to a SaaS product = repurchase.",
+        "Run across at least two Availability Zones for high availability."
+      ],
+      "compare": {
+        "title": "Migration strategies at a glance",
+        "columns": [
+          "Strategy",
+          "What happens",
+          "Example"
+        ],
+        "rows": [
+          [
+            "Rehost",
+            "Move as is",
+            "Lift and shift to EC2"
+          ],
+          [
+            "Replatform",
+            "A few cloud changes",
+            "Self-managed database to Amazon RDS"
+          ],
+          [
+            "Refactor",
+            "Redesign the application",
+            "Old app rewritten as serverless services"
+          ],
+          [
+            "Repurchase",
+            "Switch to a new product",
+            "Move to a SaaS product"
+          ],
+          [
+            "Relocate",
+            "Move at the virtualization level",
+            "VMware to VMware Cloud on AWS"
+          ],
+          [
+            "Retain / Retire",
+            "Keep it / turn it off",
+            "Recently upgraded app / unused app"
+          ]
+        ]
+      }
+    },
+    "security-compliance": {
+      "verifiedAt": "2026-11-02",
+      "summary": [
+        "This chapter is about who protects what in AWS and which tools help. It covers the shared responsibility model, identity and access with IAM, encryption, and the security services that detect, block, and report problems. Many questions ask whether a task belongs to AWS or the customer, or which security service fits a need.",
+        "Under the shared responsibility model, AWS is responsible for security of the cloud, such as data centers, hardware, and the global network. The customer is responsible for security in the cloud, such as its data, who can access it, and settings like security groups. On Amazon EC2 the customer patches the guest operating system, while on managed services such as Amazon RDS and AWS Lambda, AWS handles more of the work. Patch management is a shared control.",
+        "IAM is a global service with no additional charge. Use groups to give many users the same permissions, roles to give temporary credentials to applications and other accounts, and policies written in JSON to define permissions. Follow least privilege, protect the root user with MFA, and use it only for tasks that need it. Service control policies in AWS Organizations limit what whole accounts can do.",
+        "Several services split up the security work. CloudTrail records API calls, Config tracks resource settings, GuardDuty detects threats, Inspector finds vulnerabilities, Macie finds sensitive data in S3, Detective investigates findings, and Security Hub brings findings together. Shield Standard gives free DDoS protection, Shield Advanced adds more, and AWS WAF blocks harmful web requests. KMS manages encryption keys, Secrets Manager stores and rotates secrets, and AWS Artifact provides AWS compliance reports."
+      ],
+      "concepts": [
+        {
+          "term": "Shared responsibility model",
+          "definition": "AWS secures the cloud itself (buildings, hardware, network). The customer secures what it puts in the cloud (data, access, settings).",
+          "tip": "OF the cloud = AWS, IN the cloud = you"
+        },
+        {
+          "term": "IAM users, groups, roles, policies",
+          "definition": "Users are people or tools, groups hold users, roles give temporary credentials, and policies are JSON permission documents.",
+          "tip": "App on EC2 needs access = role"
+        },
+        {
+          "term": "Root user",
+          "definition": "The identity that created the account, with full access. Protect it with MFA and use it only for tasks that require it.",
+          "tip": "No root access keys"
+        },
+        {
+          "term": "Security group vs network ACL",
+          "definition": "A security group is a stateful firewall for an instance with allow rules only. A network ACL is a stateless firewall for a subnet with allow and deny rules.",
+          "tip": "Need a deny rule = network ACL"
+        },
+        {
+          "term": "Threat and vulnerability services",
+          "definition": "GuardDuty detects threats, Inspector scans for vulnerabilities, Macie finds sensitive data, Detective investigates, and Security Hub collects findings.",
+          "tip": "Threats = GuardDuty, CVEs = Inspector"
+        },
+        {
+          "term": "Shield and WAF",
+          "definition": "Shield Standard is free automatic DDoS protection, Shield Advanced is paid with a response team, and AWS WAF filters web requests.",
+          "tip": "SQL injection = AWS WAF"
+        },
+        {
+          "term": "AWS Artifact",
+          "definition": "A self-service portal for downloading AWS security and compliance reports and reviewing certain agreements.",
+          "tip": "Auditor wants AWS reports = Artifact"
+        }
+      ],
+      "points": [
+        "Who called which API, and when = CloudTrail.",
+        "How resource settings changed over time = AWS Config.",
+        "Store and rotate database passwords = Secrets Manager.",
+        "Employees sign in once to many accounts = IAM Identity Center; app customers = Cognito.",
+        "The customer chooses the Region where its data is stored."
+      ],
+      "compare": {
+        "title": "Who is responsible?",
+        "columns": [
+          "Task",
+          "Amazon EC2",
+          "Amazon RDS / AWS Lambda"
+        ],
+        "rows": [
+          [
+            "Physical data centers and hardware",
+            "AWS",
+            "AWS"
+          ],
+          [
+            "Operating system patches",
+            "Customer",
+            "AWS"
+          ],
+          [
+            "Customer data and who can access it",
+            "Customer",
+            "Customer"
+          ],
+          [
+            "IAM permissions for users and roles",
+            "Customer",
+            "Customer"
+          ]
+        ]
+      }
+    },
+    "cloud-technology-services": {
+      "verifiedAt": "2026-11-02",
+      "summary": [
+        "This chapter is the largest part of the exam. It covers the AWS global infrastructure, ways to access AWS, and the main services for compute, storage, databases, networking, analytics, AI, and application integration. Most questions describe a need in one sentence and ask which service fits.",
+        "AWS is built from Regions around the world. Each Region contains multiple isolated Availability Zones, and each Availability Zone is one or more data centers. Edge locations cache content for Amazon CloudFront. Local Zones bring AWS close to large cities, Wavelength Zones sit inside 5G networks, and Outposts puts AWS hardware in your own building. Choose a Region by compliance, latency to users, service availability, and price, because not every service is in every Region.",
+        "For compute, Amazon EC2 gives virtual servers, AWS Lambda runs code on events without servers, Fargate runs containers without servers, and Elastic Beanstalk and Lightsail make deployment simple. Elastic Load Balancing spreads traffic and EC2 Auto Scaling adds or removes instances. For storage, Amazon S3 is object storage, Amazon EBS is a block volume for one instance, and Amazon EFS is a shared file system. S3 Glacier Deep Archive is the lowest-cost class for archives.",
+        "For databases, Amazon RDS is managed relational, DynamoDB is serverless NoSQL, Redshift is a data warehouse, and ElastiCache is an in-memory cache. Athena queries data in S3 with SQL, Kinesis handles streaming data, and Glue prepares data. SQS queues messages, SNS sends to many subscribers, EventBridge routes events, and Step Functions runs workflows. AI services include Rekognition for images, Textract for documents, Comprehend for text, Transcribe for speech to text, Polly for text to speech, and Bedrock for foundation models."
+      ],
+      "concepts": [
+        {
+          "term": "Region and Availability Zone",
+          "definition": "A Region is a geographic area with multiple isolated Availability Zones. An Availability Zone is one or more data centers with separate power and networking.",
+          "tip": "Multi-AZ = higher availability"
+        },
+        {
+          "term": "Edge location and CloudFront",
+          "definition": "Amazon CloudFront caches content at edge locations close to users so it loads faster.",
+          "tip": "Cache close to users = CloudFront"
+        },
+        {
+          "term": "S3, EBS, EFS",
+          "definition": "S3 stores objects in buckets, EBS is a block volume for an EC2 instance, and EFS is a file system many instances share.",
+          "tip": "Hard drive for EC2 = EBS"
+        },
+        {
+          "term": "Database choices",
+          "definition": "RDS for managed relational databases, DynamoDB for serverless NoSQL, Redshift for analytics, ElastiCache for in-memory caching.",
+          "tip": "Data warehouse = Redshift"
+        },
+        {
+          "term": "Serverless",
+          "definition": "AWS manages the servers so you do not. Lambda, Fargate, and DynamoDB are serverless; EC2 is not.",
+          "tip": "Run code on events = Lambda"
+        },
+        {
+          "term": "SQS vs SNS",
+          "definition": "SQS holds messages in a queue until a consumer processes them. SNS sends one message to many subscribers at once.",
+          "tip": "Queue = SQS, notify = SNS"
+        },
+        {
+          "term": "Infrastructure as code",
+          "definition": "AWS CloudFormation builds resources from template files so the same environment can be created again and again.",
+          "tip": "Templates = CloudFormation"
+        }
+      ],
+      "points": [
+        "Private dedicated link to AWS = Direct Connect; encrypted over the internet = Site-to-Site VPN.",
+        "DNS = Route 53; private network = VPC.",
+        "Metrics and alarms = CloudWatch.",
+        "SQL on files in S3 without servers = Athena.",
+        "Speech to text = Transcribe; text to speech = Polly.",
+        "Managed Kubernetes = EKS; AWS's own container service = ECS."
+      ],
+      "compare": {
+        "title": "Storage services",
+        "columns": [
+          "Service",
+          "Type",
+          "Typical use"
+        ],
+        "rows": [
+          [
+            "Amazon S3",
+            "Object storage",
+            "Photos, documents, backups, data lakes"
+          ],
+          [
+            "Amazon EBS",
+            "Block storage",
+            "Disk for one EC2 instance"
+          ],
+          [
+            "Amazon EFS",
+            "File storage",
+            "Shared files for many Linux instances"
+          ],
+          [
+            "S3 Glacier Deep Archive",
+            "Archive storage",
+            "Rarely used records; hours to retrieve"
+          ]
+        ]
+      }
+    },
+    "billing-pricing-support": {
+      "verifiedAt": "2026-11-02",
+      "summary": [
+        "This chapter covers how you pay for AWS and where to get help. It includes the EC2 pricing options, the tools for estimating and tracking costs, AWS Organizations consolidated billing, and the main support resources. Questions usually describe a workload or a money question and ask which option or tool fits.",
+        "On-Demand Instances have no commitment and suit short or unpredictable work. Spot Instances are the cheapest but can be interrupted, so they suit flexible jobs. Reserved Instances and Savings Plans give lower prices for a 1-year or 3-year commitment, and Compute Savings Plans also cover Lambda and Fargate. Dedicated Hosts give you a whole physical server for licenses tied to sockets or cores, and On-Demand Capacity Reservations hold capacity in an Availability Zone without a long commitment.",
+        "Use the AWS Pricing Calculator to estimate costs before you build, AWS Budgets to get alerts when costs go over a limit, and AWS Cost Explorer to study past spending. Cost allocation tags split costs by team or project, and Compute Optimizer and Trusted Advisor point out resources that are too big or idle. Consolidated billing gives one bill for many accounts and combines usage for volume discounts. In general, data coming into AWS is not charged, while data going out is.",
+        "For help, AWS re:Post is a community question-and-answer site, AWS Marketplace sells third-party software that runs on AWS, and the AWS Partner Network connects you with partner companies such as consulting firms. The AWS Health Dashboard tells you about AWS events that may affect your resources."
+      ],
+      "concepts": [
+        {
+          "term": "On-Demand Instances",
+          "definition": "Pay by the second or hour with no long-term commitment.",
+          "tip": "Short, unpredictable, no interruption"
+        },
+        {
+          "term": "Spot Instances",
+          "definition": "Spare EC2 capacity at a large discount that AWS can take back with a short warning.",
+          "tip": "Can be interrupted = Spot"
+        },
+        {
+          "term": "Reserved Instances and Savings Plans",
+          "definition": "Lower prices in return for a 1-year or 3-year commitment. Compute Savings Plans also apply to Lambda and Fargate.",
+          "tip": "Steady 24/7 use = commit"
+        },
+        {
+          "term": "Dedicated Hosts",
+          "definition": "A physical server fully dedicated to you, showing sockets and cores for server-bound licenses.",
+          "tip": "Per-socket licenses = Dedicated Hosts"
+        },
+        {
+          "term": "AWS cost tools",
+          "definition": "Budgets alerts on limits, Cost Explorer analyzes past costs, and Pricing Calculator estimates costs before you build.",
+          "tip": "Before = Calculator, after = Explorer"
+        },
+        {
+          "term": "Consolidated billing",
+          "definition": "AWS Organizations combines all member accounts into one bill and adds up usage for volume pricing.",
+          "tip": "Many accounts, one bill"
+        }
+      ],
+      "points": [
+        "Split costs by department = cost allocation tags.",
+        "Data into AWS from the internet is generally free; data out is charged.",
+        "Buy third-party software for AWS = AWS Marketplace.",
+        "Find a consulting partner = AWS Partner Network.",
+        "AWS events affecting your resources = AWS Health Dashboard."
+      ],
+      "compare": {
+        "title": "EC2 pricing options",
+        "columns": [
+          "Option",
+          "Commitment",
+          "Best for"
+        ],
+        "rows": [
+          [
+            "On-Demand",
+            "None",
+            "Short-term or unpredictable work"
+          ],
+          [
+            "Spot",
+            "None (can be interrupted)",
+            "Flexible jobs at the lowest cost"
+          ],
+          [
+            "Reserved Instances / Savings Plans",
+            "1 or 3 years",
+            "Steady, predictable use"
+          ],
+          [
+            "Dedicated Hosts",
+            "On-Demand or reserved",
+            "Server-bound software licenses"
+          ],
+          [
+            "On-Demand Capacity Reservations",
+            "None",
+            "Guaranteed capacity in one Availability Zone"
+          ]
+        ]
+      }
+    }
+  }
+}
