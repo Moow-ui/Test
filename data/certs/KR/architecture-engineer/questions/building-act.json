@@ -1,0 +1,395 @@
+[
+  {
+    "id": "architecture-engineer-building-act-0001",
+    "certId": "architecture-engineer",
+    "subjectId": "architectural-design",
+    "chapterId": "building-act",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "대지면적이 400㎡ 이고 건축면적이 240㎡ 인 건축물의 건폐율은?",
+    "choices": [
+      "40%",
+      "50%",
+      "60%",
+      "240%"
+    ],
+    "answer": 3,
+    "oneLineConcept": "건폐율 = 건축면적 ÷ 대지면적 × 100",
+    "explanation": "건폐율은 땅 가운데 건물이 덮은 면적의 비율입니다 (건축법 제55조).\n\n1. 식: 건폐율 = 건축면적 ÷ 대지면적 × 100\n2. 대입: 240 ÷ 400 × 100\n3. 답: 60%\n4. 검산: 400㎡ 의 60% 는 400 × 0.6 = 240㎡ 로 건축면적과 같습니다.\n\n**틀린 선지**\n- 40%: 건물이 덮지 않은 빈 땅의 비율(100 − 60)입니다.\n- 50%: 계산이 틀린 값입니다. 400㎡ 의 50% 는 200㎡ 입니다.\n- 240%: 건축면적을 그대로 퍼센트로 적은 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "건폐율",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-building-act-0002",
+    "certId": "architecture-engineer",
+    "subjectId": "architectural-design",
+    "chapterId": "building-act",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "대지면적 500㎡ 에 지하 1층 300㎡, 지상층 연면적 합계 1,500㎡ 인 건축물의 용적률은?",
+    "choices": [
+      "60%",
+      "250%",
+      "300%",
+      "360%"
+    ],
+    "answer": 3,
+    "oneLineConcept": "용적률 = 지상층 연면적 ÷ 대지면적 × 100 (지하층 제외)",
+    "explanation": "용적률은 대지면적에 대한 연면적의 비율인데, 용적률을 계산할 때는 지하층 면적을 넣지 않습니다 (건축법 제56조, 시행령 제119조).\n\n1. 지상층 연면적: 1,500㎡ (지하 300㎡ 는 빼기)\n2. 식: 1,500 ÷ 500 × 100\n3. 답: 300%\n4. 검산: 500㎡ × 3 = 1,500㎡ 이므로 맞습니다.\n\n**틀린 선지**\n- 60%: 용적률이 아니라 지하층 면적 비율(300 ÷ 500)입니다.\n- 250%: 계산이 틀린 값입니다. 500㎡ 의 250% 는 1,250㎡ 입니다.\n- 360%: 지하층 300㎡ 까지 넣어 1,800 ÷ 500 으로 계산한 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "용적률",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-building-act-0003",
+    "certId": "architecture-engineer",
+    "subjectId": "architectural-design",
+    "chapterId": "building-act",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "건축법상 '도로'는 원칙적으로 보행과 자동차 통행이 가능한 너비 몇 m 이상의 도로인가?",
+    "choices": [
+      "2m",
+      "3m",
+      "4m",
+      "6m"
+    ],
+    "answer": 3,
+    "oneLineConcept": "건축법상 도로: 보행·자동차 통행이 가능한 너비 4m 이상",
+    "explanation": "건축법 제2조 제1항 제11호는 보행과 자동차 통행이 가능한 너비 4m 이상의 도로를 건축법상 도로로 정합니다. 막다른 도로처럼 지형상 어쩔 수 없는 경우에는 따로 너비 기준이 있습니다.\n\n**틀린 선지**\n- 2m: 대지가 도로에 접해야 하는 길이(접도 길이) 기준입니다.\n- 3m: 건축법상 도로의 원칙적인 너비보다 좁습니다.\n- 6m: 연면적이 큰 건축물의 대지가 접해야 하는 도로 너비 기준입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "도로",
+      "총칙"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-building-act-0004",
+    "certId": "architecture-engineer",
+    "subjectId": "architectural-design",
+    "chapterId": "building-act",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "건축물의 대지는 원칙적으로 도로에 몇 m 이상 접해야 하는가? (자동차 전용도로 제외)",
+    "choices": [
+      "1m",
+      "2m",
+      "3m",
+      "4m"
+    ],
+    "answer": 2,
+    "oneLineConcept": "대지는 도로에 2m 이상 접해야 한다 (건축법 제44조)",
+    "explanation": "건축법 제44조는 건축물의 대지가 2m 이상 도로(자동차만 다니는 도로 제외)에 접해야 한다고 정합니다. 사람과 소방차가 대지에 드나들 수 있게 하려는 것입니다.\n\n**틀린 선지**\n- 1m: 기준보다 짧습니다.\n- 3m: 기준보다 깁니다. 일반 대지의 접도 길이는 2m 입니다.\n- 4m: 연면적 2,000㎡ 이상 건축물의 대지가 너비 6m 이상 도로에 접해야 하는 길이입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "대지와 도로"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-building-act-0005",
+    "certId": "architecture-engineer",
+    "subjectId": "architectural-design",
+    "chapterId": "building-act",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "건축법상 지하층은 그 층의 바닥에서 지표면까지 평균 높이가 해당 층 높이의 얼마 이상인 층인가?",
+    "choices": [
+      "3분의 1",
+      "3분의 2",
+      "4분의 1",
+      "2분의 1"
+    ],
+    "answer": 4,
+    "oneLineConcept": "지하층: 바닥~지표면 평균 높이가 층높이의 1/2 이상",
+    "explanation": "건축법 제2조 제1항 제5호에 따라 건축물의 바닥이 지표면 아래에 있고, 바닥에서 지표면까지 평균 높이가 그 층 높이의 2분의 1 이상이면 지하층입니다. 지하층은 층수와 용적률 계산에서 빠지므로 정의가 중요합니다.\n\n**틀린 선지**\n- 3분의 1: 기준보다 낮은 비율입니다.\n- 3분의 2: 기준보다 높은 비율입니다.\n- 4분의 1: 기준보다 낮은 비율입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "총칙",
+      "지하층"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-building-act-0006",
+    "certId": "architecture-engineer",
+    "subjectId": "architectural-design",
+    "chapterId": "building-act",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "다음 중 건축법상 주요구조부에 해당하는 것은?",
+    "choices": [
+      "내력벽",
+      "사이기둥",
+      "최하층 바닥",
+      "작은 보"
+    ],
+    "answer": 1,
+    "oneLineConcept": "주요구조부: 내력벽·기둥·바닥·보·지붕틀·주계단",
+    "explanation": "건축법 제2조 제1항 제7호의 주요구조부는 내력벽, 기둥, 바닥, 보, 지붕틀, 주계단입니다. 다만 사이기둥, 최하층 바닥, 작은 보, 차양, 옥외 계단처럼 구조상 중요하지 않은 부분은 뺍니다.\n\n**틀린 선지**\n- 사이기둥: 기둥 사이에 보조로 세운 기둥으로 주요구조부에서 빠집니다.\n- 최하층 바닥: 땅에 직접 놓인 맨 아래층 바닥으로 주요구조부에서 빠집니다.\n- 작은 보: 큰 보 사이에 걸친 보조 보로 주요구조부에서 빠집니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "총칙",
+      "주요구조부"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-building-act-0007",
+    "certId": "architecture-engineer",
+    "subjectId": "architectural-design",
+    "chapterId": "building-act",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "연면적 합계가 2,000㎡ 이상인 건축물(공장 등 일부 제외)의 대지는 어떤 도로에 얼마 이상 접해야 하는가?",
+    "choices": [
+      "너비 8m 이상 도로에 6m 이상",
+      "너비 4m 이상 도로에 2m 이상",
+      "너비 6m 이상 도로에 2m 이상",
+      "너비 6m 이상 도로에 4m 이상"
+    ],
+    "answer": 4,
+    "oneLineConcept": "연면적 2,000㎡ 이상: 너비 6m 이상 도로에 4m 이상 접도",
+    "explanation": "건축법 시행령 제28조 제2항은 연면적 합계 2,000㎡(공장은 3,000㎡) 이상인 건축물의 대지가 너비 6m 이상의 도로에 4m 이상 접해야 한다고 정합니다. 큰 건물일수록 사람과 차, 소방차가 드나들 길이 넉넉해야 하기 때문입니다.\n\n**틀린 선지**\n- 너비 8m 이상 도로에 6m 이상: 법령에 없는 기준입니다.\n- 너비 4m 이상 도로에 2m 이상: 일반 건축물의 기본 기준(4m 도로, 2m 접도)과 섞은 것입니다.\n- 너비 6m 이상 도로에 2m 이상: 도로 너비는 맞지만 접하는 길이가 짧습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "대지와 도로"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-building-act-0008",
+    "certId": "architecture-engineer",
+    "subjectId": "architectural-design",
+    "chapterId": "building-act",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "전용주거지역·일반주거지역에서 일조 확보를 위해 높이 10m 이하인 건축물 부분은 정북 방향 인접 대지경계선에서 몇 m 이상 띄어야 하는가?",
+    "choices": [
+      "1m",
+      "1.5m",
+      "2m",
+      "3m"
+    ],
+    "answer": 2,
+    "oneLineConcept": "일조: 높이 10m 이하 부분 1.5m 이상, 10m 초과 부분은 높이의 1/2 이상",
+    "explanation": "건축법 제61조와 시행령 제86조 제1항은 주거지역의 일조를 위해 정북 방향 인접 대지경계선에서 띄울 거리를 정합니다. 높이 10m 이하 부분은 1.5m 이상, 10m 를 넘는 부분은 그 부분 높이의 2분의 1 이상 띄어야 합니다.\n\n**틀린 선지**\n- 1m: 기준보다 짧습니다.\n- 2m: 기준보다 깁니다.\n- 3m: 기준보다 깁니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "지역·지구",
+      "일조"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-building-act-0009",
+    "certId": "architecture-engineer",
+    "subjectId": "architectural-design",
+    "chapterId": "building-act",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "주요구조부가 내화구조인 10층 업무시설에서 거실 각 부분부터 가장 가까운 직통계단까지의 보행거리는 몇 m 이하여야 하는가?",
+    "choices": [
+      "30m",
+      "40m",
+      "50m",
+      "75m"
+    ],
+    "answer": 3,
+    "oneLineConcept": "직통계단 보행거리: 원칙 30m, 내화구조·불연재료 50m",
+    "explanation": "건축법 시행령 제34조 제1항은 거실 각 부분에서 직통계단까지 보행거리를 30m 이하로 정하되, 주요구조부가 내화구조이거나 불연재료로 된 건축물은 50m 이하로 완화합니다. 다만 16층 이상 공동주택의 16층 이상인 층은 40m 이하입니다.\n\n**틀린 선지**\n- 30m: 주요구조부가 내화구조가 아닐 때의 원칙 거리입니다.\n- 40m: 16층 이상 공동주택의 16층 이상인 층에 적용하는 거리입니다.\n- 75m: 스프링클러를 갖춘 자동화 생산시설 공장 등에 적용하는 특례 거리입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "피난",
+      "직통계단"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-building-act-0010",
+    "certId": "architecture-engineer",
+    "subjectId": "architectural-design",
+    "chapterId": "building-act",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "특별시에 층수가 21층 이상인 업무시설을 건축하려 할 때 건축허가권자는?",
+    "choices": [
+      "구청장",
+      "국토교통부장관",
+      "시·도 건축위원회 위원장",
+      "특별시장"
+    ],
+    "answer": 4,
+    "oneLineConcept": "21층 이상 또는 연면적 10만㎡ 이상(특별시·광역시)은 특별시장·광역시장 허가",
+    "explanation": "건축허가는 보통 특별자치시장·특별자치도지사 또는 시장·군수·구청장이 합니다. 그러나 건축법 제11조와 시행령 제8조에 따라 21층 이상이거나 연면적 합계 10만㎡ 이상인 건축물(공장·창고 등 제외)을 특별시나 광역시에 지을 때는 특별시장 또는 광역시장의 허가를 받아야 합니다.\n\n**틀린 선지**\n- 구청장: 일반 건축물의 허가권자이지만, 21층 이상 건축물은 특별시장 허가 대상입니다.\n- 국토교통부장관: 개별 건축물의 건축허가권자가 아닙니다.\n- 시·도 건축위원회 위원장: 건축위원회는 심의를 하는 곳이지 허가권자가 아닙니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "건축허가"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-building-act-0011",
+    "certId": "architecture-engineer",
+    "subjectId": "architectural-design",
+    "chapterId": "building-act",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "건축법령상 대수선에 해당하는 것은?",
+    "choices": [
+      "기둥을 세 개 이상 수선하는 것",
+      "기둥을 두 개 수선하는 것",
+      "내력벽 면적 20㎡ 를 수선하는 것",
+      "외벽 마감재료 벽면적 20㎡ 를 바꾸는 것"
+    ],
+    "answer": 1,
+    "oneLineConcept": "대수선: 기둥·보·지붕틀 3개 이상, 내력벽·외벽 마감 30㎡ 이상 수선 등",
+    "explanation": "건축법 시행령 제3조의2는 대수선을 정합니다. 기둥·보·지붕틀은 각각 세 개 이상 수선·변경할 때, 내력벽과 외벽 마감재료는 벽면적 30㎡ 이상 수선·변경할 때 대수선이 됩니다. 내력벽을 늘리거나 없애는 것은 면적과 관계없이 대수선입니다.\n\n**틀린 선지**\n- 기둥을 두 개 수선하는 것: 기둥은 세 개 이상일 때부터 대수선입니다.\n- 내력벽 면적 20㎡ 를 수선하는 것: 내력벽 수선은 벽면적 30㎡ 이상부터 대수선입니다.\n- 외벽 마감재료 벽면적 20㎡ 를 바꾸는 것: 외벽 마감재료 변경은 벽면적 30㎡ 이상부터 대수선입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "총칙",
+      "대수선"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+]

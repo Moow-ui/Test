@@ -1,0 +1,149 @@
+{
+  "cert": "architecture-engineer",
+  "date": "2026-11-02",
+  "round1": {
+    "planning-history": {
+      "result": "PASS",
+      "issues": [],
+      "notes": [
+        "concepts 주심포식 tip '주(기둥) 심(위)': 柱心의 心은 '중심(기둥 중심선)'이지 '위'가 아님. 암기 문구지만 어원 설명으로 읽힐 수 있어 '주심(기둥 중심) 위에만' 정도로 고치기를 권함."
+      ]
+    },
+    "building-types": {
+      "result": "PASS",
+      "issues": []
+    },
+    "building-act": {
+      "result": "FAIL",
+      "issues": [
+        "summary 4문단 '50m 이하(16층 이상 공동주택은 40m)', concepts '직통계단 보행거리' 의 '(16층 이상 공동주택 40m)', compare 행 '16층 이상 공동주택 | 40m 이하': 시행령 제34조제1항 단서는 '층수가 16층 이상인 공동주택의 경우 16층 이상인 층에 대해서는 40미터'임. 16층 이상 공동주택 전체가 아니라 그 건물의 16층 이상인 층에만 40m 가 적용되고(15층 이하 층은 50m), 주요구조부 내화구조·불연재료일 때의 특례라는 점도 빠짐. '16층 이상 공동주택의 16층 이상인 층은 40m' 로 고칠 것 (근거: law.go.kr 건축법 시행령 제34조, 시행 2026-10-06 판)."
+      ],
+      "notes": [
+        "summary 4문단 '기둥·보·지붕틀을 세 개 이상' 은 concepts 처럼 '각각 세 개 이상' 으로 맞추면 '합쳐서 세 개' 오해가 없음 (시행령 제3조의2 제2~4호는 기둥·보·지붕틀 각각).",
+        "확인 완료(현행 조문 일치): 건축법 제2조 제5호 지하층·제7호 주요구조부·제11호 도로 4m, 제44조 접도 2m, 시행령 제28조 2,000㎡(공장 3,000㎡)·6m·4m, 제8조 21층·10만㎡ 특별시장·광역시장 허가, 제86조 10m 이하 1.5m·초과 1/2, 제3조의2 대수선 30㎡·세 개, 제119조 용적률 연면적 지하층 제외."
+      ]
+    },
+    "related-laws": {
+      "result": "PASS",
+      "issues": [],
+      "notes": [
+        "확인 완료: 국토계획법 제6조(4개 용도지역), 주차장법 시행규칙 제3조(일반형 2.5×5.0, 확장형 2.6×5.2, 장애인전용 3.3×5.0, 2018-03-21 개정), 제6조 출입구 3.5m·50대 이상 분리 또는 5.5m, 피난·방화규칙 제14조(10층 이하 1,000㎡/자동식 소화설비 3,000㎡), 제16조(반자높이 2.1m)."
+      ]
+    },
+    "design-drawings": {
+      "result": "PASS",
+      "issues": []
+    },
+    "construction-management": {
+      "result": "PASS",
+      "issues": []
+    },
+    "earthwork-foundation": {
+      "result": "PASS",
+      "issues": [],
+      "notes": [
+        "강관비계 1.85m·1.5m 는 산업안전보건기준에 관한 규칙 제60조 제1호 현행 조문과 일치 (단, 구조검토·조립도 작성 시 완화 단서 있음)."
+      ]
+    },
+    "structural-work": {
+      "result": "PASS",
+      "issues": []
+    },
+    "finishing-work": {
+      "result": "PASS",
+      "issues": []
+    },
+    "structural-systems": {
+      "result": "PASS",
+      "issues": []
+    },
+    "structural-mechanics": {
+      "result": "PASS",
+      "issues": []
+    },
+    "rc-design": {
+      "result": "FAIL",
+      "issues": [
+        "points 3번 '정착길이를 … 줄이는 조건(갈고리, 높은 강도)': '높은 강도' 가 무엇의 강도인지 없어 오해를 부름. 기본정착길이 ldb = 0.6·db·fy/(λ√fck) 이므로 콘크리트 강도(fck)가 높으면 짧아지지만 철근 항복강도(fy)가 높으면 오히려 길어짐 (KDS 14 20 52). '높은 콘크리트 강도' 로 고칠 것."
+      ],
+      "notes": [
+        "summary '보의 전단력은 … 늑근(스터럽)이 맡고' 는 콘크리트도 전단(Vc)을 분담하므로 '늑근이 함께 맡고' 정도가 더 정확함 (오류로 보지는 않음)."
+      ]
+    },
+    "steel-design": {
+      "result": "PASS",
+      "issues": []
+    },
+    "building-environment": {
+      "result": "PASS",
+      "issues": []
+    },
+    "hvac-plumbing": {
+      "result": "PASS",
+      "issues": [],
+      "notes": [
+        "summary '건축설비 과목에서 비중이 가장 큰' 은 chapters.json 출제 비중으로만 확인 가능 (이 폴더에 없어 대조 못 함). studyTips 의 35% 와는 일치."
+      ]
+    },
+    "electrical-systems": {
+      "result": "PASS",
+      "issues": [],
+      "notes": [
+        "피뢰설비 20m(시행령 제87조제2항·설비규칙 제20조), 비상용 승강기 31m 초과(건축법 제64조제2항·시행령 제90조) 현행 조문 일치. 출처 표기에 비상용 승강기 근거인 '시행령 제90조' 를 더하면 좋음."
+      ]
+    },
+    "fire-protection": {
+      "result": "PASS",
+      "issues": [],
+      "notes": [
+        "compare '일제살수식' 행의 '평소 배관 상태' 칸에 '개방형 헤드' 만 있어 칸 의미와 맞지 않음. '밸브 뒤쪽 비어 있음(개방형 헤드)' 처럼 쓰면 깔끔함.",
+        "옥내소화전 0.17MPa·130L/min(NFTC 102), 비상콘센트 단상 220V·1.5kVA(NFTC 504) 는 현행 기술기준과 일치(조문 원문 대조는 생략, 널리 확인된 값)."
+      ]
+    },
+    "chaptersKeyPoints": {
+      "result": "PASS",
+      "issues": [],
+      "notes": [
+        "building-act keyPoint '용적률은 지상층 연면적 ÷ 대지면적' 은 단순화임. 시행령 제119조는 지하층 외에 지상층의 부속용도 주차장, 피난안전구역, 대피공간 등도 뺌. 시험 범위에서 오류로 보지는 않음.",
+        "related-laws '부설주차장은 건축물에 딸린 주차장' 도 법 정의(건축물·골프연습장 그 밖에 주차수요를 유발하는 시설에 부대)의 단순화."
+      ]
+    },
+    "studyTips": {
+      "result": "PASS",
+      "issues": [],
+      "notes": [
+        "구조역학 35%·공조 35%·건축법령 25% 는 chapters.json 출제 비중 값이라 이 폴더에서 대조하지 못함. 80문항/120분=1분30초, 40점=20문항 중 8문항, 7문항 이하면 과락 계산은 맞음."
+      ]
+    },
+    "figure": {
+      "1": "PASS",
+      "2": "PASS",
+      "3": "PASS",
+      "5": "PASS",
+      "note": "① 선·화살표·글자 선명, 겹침 없음 (아래쪽 여백이 넓어 잘라도 됨). ② 회전지점(삼각형+빗금)·이동지점(삼각형+롤러 2개+빗금)·하중 화살표·치수선 모두 표준 기호, 휨모멘트도를 축 아래(인장측)에 그린 것은 국내 교재 관례와 같음. ③ 중앙 하중 P, 반력 P/2·P/2(위쪽), 경간 L/2+L/2, 삼각형 BMD 양 끝 0·가운데 최대 PL/4 모두 정확. ⑤ structural-mechanics concepts '단순보 중앙 집중하중'·compare 첫 행과 같은 사실만 담김. 캡션·alt 도 그림 내용과 일치."
+    }
+  },
+  "round2": {
+    "building-act": "PASS (제34조 40m 적용 범위를 16층 이상 공동주택의 16층 이상인 층으로 고친 뒤 새 에이전트가 law.go.kr 현행 시행령으로 재확인)",
+    "rc-design": "PASS (정착길이 줄이는 조건을 높은 콘크리트 강도로 고친 뒤 재확인)"
+  },
+  "final": {
+    "planning-history": "PASS",
+    "building-types": "PASS",
+    "building-act": "PASS",
+    "related-laws": "PASS",
+    "design-drawings": "PASS",
+    "construction-management": "PASS",
+    "earthwork-foundation": "PASS",
+    "structural-work": "PASS",
+    "finishing-work": "PASS",
+    "structural-systems": "PASS",
+    "structural-mechanics": "PASS",
+    "rc-design": "PASS",
+    "steel-design": "PASS",
+    "building-environment": "PASS",
+    "hvac-plumbing": "PASS",
+    "electrical-systems": "PASS",
+    "fire-protection": "PASS"
+  }
+}

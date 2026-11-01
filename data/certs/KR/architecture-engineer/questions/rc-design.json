@@ -1,0 +1,288 @@
+[
+  {
+    "id": "architecture-engineer-rc-design-0001",
+    "certId": "architecture-engineer",
+    "subjectId": "structure",
+    "chapterId": "rc-design",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "철근콘크리트 부재에서 피복두께를 두는 주된 목적으로 옳은 것은?",
+    "choices": [
+      "거푸집을 빨리 떼어 내기 위해서",
+      "철근을 녹과 화재로부터 보호하고 부착력을 확보한다",
+      "철근 사용량을 줄이기 위해서",
+      "콘크리트의 압축강도를 높인다"
+    ],
+    "answer": 2,
+    "oneLineConcept": "피복두께: 철근의 녹·불 보호와 부착력 확보",
+    "explanation": "피복두께는 철근 바깥면에서 콘크리트 표면까지의 두께입니다. 이 콘크리트 층이 철근에 물과 공기가 닿아 녹스는 것을 막고, 불이 났을 때 철근 온도가 빨리 오르지 않게 하며, 철근을 단단히 감싸 붙잡아 줍니다.\n\n**틀린 선지**\n- 거푸집을 빨리 떼어 내기 위해서: 거푸집 떼는 시기는 콘크리트 강도로 정하며 피복두께의 목적이 아닙니다.\n- 철근 사용량을 줄이기 위해서: 피복두께는 철근 양을 줄이는 수단이 아닙니다.\n- 콘크리트의 압축강도를 높인다: 피복두께는 콘크리트 강도와 관계가 없습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "피복두께",
+      "내구성"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-rc-design-0002",
+    "certId": "architecture-engineer",
+    "subjectId": "structure",
+    "chapterId": "rc-design",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "양 끝을 받친 단순보에 아래로 하중이 작용할 때, 인장 주철근을 주로 배치하는 위치는?",
+    "choices": [
+      "보의 아래쪽",
+      "보 옆면의 가운데",
+      "보의 위쪽",
+      "보의 중립축 위치"
+    ],
+    "answer": 1,
+    "oneLineConcept": "단순보는 아래가 늘어나므로(인장) 주철근을 아래에 둔다",
+    "explanation": "단순보가 아래로 처지면 윗부분은 눌리고(압축) 아랫부분은 늘어납니다(인장). 콘크리트는 인장에 약하므로 늘어나는 아래쪽에 철근을 넣어 인장을 맡깁니다.\n\n**틀린 선지**\n- 보 옆면의 가운데: 옆면 가운데는 중립축 근처라 인장 저항에 효과가 작습니다.\n- 보의 위쪽: 단순보 위쪽은 압축을 받는 곳입니다. 캔틸레버는 위쪽이 인장입니다.\n- 보의 중립축 위치: 중립축은 응력이 0인 곳이라 인장 철근 효과가 거의 없습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "휨부재",
+      "주철근"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-rc-design-0003",
+    "certId": "architecture-engineer",
+    "subjectId": "structure",
+    "chapterId": "rc-design",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "보에서 전단력에 저항하기 위해 주철근을 감싸듯 일정 간격으로 배치하는 철근은?",
+    "choices": [
+      "배력철근",
+      "나선철근",
+      "늑근(스터럽)",
+      "띠철근(후프)"
+    ],
+    "answer": 3,
+    "oneLineConcept": "보의 전단보강 = 늑근(스터럽), 기둥 = 띠철근·나선철근",
+    "explanation": "늑근(스터럽)은 보의 주철근을 ㄷ자나 ㅁ자 모양으로 감싸는 철근으로, 보 끝 쪽에 비스듬히 생기는 전단 균열을 가로질러 막아 줍니다. 전단력이 큰 지점 가까이에 간격을 촘촘하게 둡니다.\n\n**틀린 선지**\n- 배력철근: 슬래브에서 주철근과 직각으로 놓아 하중을 고르게 나누는 철근입니다.\n- 나선철근: 기둥 주철근을 나선형으로 감는 철근입니다.\n- 띠철근(후프): 기둥의 주철근을 묶어 좌굴을 막는 철근입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "전단설계",
+      "늑근"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-rc-design-0004",
+    "certId": "architecture-engineer",
+    "subjectId": "structure",
+    "chapterId": "rc-design",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "철근콘크리트 강도설계에서 인장지배단면인 휨부재에 쓰는 강도감소계수(φ)는?",
+    "choices": [
+      "0.65",
+      "0.75",
+      "0.85",
+      "0.90"
+    ],
+    "answer": 3,
+    "oneLineConcept": "강도감소계수: 인장지배 0.85, 전단 0.75, 압축지배(띠철근) 0.65",
+    "explanation": "콘크리트구조 설계기준(KDS 14 20 10)은 인장지배단면에 0.85, 전단과 비틀림에 0.75, 압축지배단면 가운데 나선철근 부재는 0.70, 그 밖의 부재는 0.65 를 씁니다. 휨부재는 미리 크게 휘어 경고를 주므로 계수가 큰 편입니다.\n\n**틀린 선지**\n- 0.65: 띠철근으로 보강한 압축지배단면에 쓰는 값입니다.\n- 0.75: 전단과 비틀림에 쓰는 값입니다.\n- 0.90: 콘크리트 구조 기준의 인장지배단면 값보다 큽니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "강도감소계수"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-rc-design-0005",
+    "certId": "architecture-engineer",
+    "subjectId": "structure",
+    "chapterId": "rc-design",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "인장 이형철근의 정착길이를 기본값보다 길게 해야 하는 경우는?",
+    "choices": [
+      "콘크리트의 압축강도가 높을 때",
+      "철근 지름이 작을 때",
+      "철근 끝에 표준갈고리를 둘 때",
+      "철근 아래에 굳지 않은 콘크리트가 300mm 넘게 한 번에 쳐지는 상부 철근일 때"
+    ],
+    "answer": 4,
+    "oneLineConcept": "상부철근은 정착길이를 1.3배로 늘린다 (블리딩으로 부착 약화)",
+    "explanation": "철근 아래에 굳지 않은 콘크리트가 두껍게 있으면 블리딩(물이 떠오르는 현상)으로 철근 아래에 물이 고여 부착이 약해집니다. 그래서 이런 상부 철근은 정착길이에 1.3을 곱해 더 길게 묻습니다 (KDS 14 20 52).\n\n**틀린 선지**\n- 콘크리트의 압축강도가 높을 때: 콘크리트 강도가 높으면 부착이 좋아져 정착길이가 짧아집니다.\n- 철근 지름이 작을 때: 지름이 작은 철근은 정착길이가 짧습니다.\n- 철근 끝에 표준갈고리를 둘 때: 표준갈고리를 두면 갈고리가 붙잡아 주므로 곧은 정착보다 짧아집니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "정착",
+      "이음"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-rc-design-0006",
+    "certId": "architecture-engineer",
+    "subjectId": "structure",
+    "chapterId": "rc-design",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "네 변이 지지된 슬래브를 1방향 슬래브로 설계하는 조건은? (L: 장변 경간, S: 단변 경간)",
+    "choices": [
+      "L/S 가 1.5 일 때",
+      "단변 경간이 3m 이상일 때",
+      "L/S 가 2 를 넘을 때",
+      "L/S 가 1 일 때"
+    ],
+    "answer": 3,
+    "oneLineConcept": "장변/단변 > 2 이면 1방향 슬래브, 2 이하이면 2방향 슬래브",
+    "explanation": "네 변이 받쳐진 슬래브라도 한쪽 변이 다른 쪽의 두 배를 넘게 길면, 하중 대부분이 짧은 방향으로 흘러갑니다. 그래서 장변/단변 비가 2 를 넘으면 짧은 방향으로만 힘을 받는 1방향 슬래브로 설계합니다.\n\n**틀린 선지**\n- L/S 가 1.5 일 때: 비가 2 이하이므로 2방향 슬래브입니다.\n- 단변 경간이 3m 이상일 때: 경간 길이 자체가 아니라 두 경간의 비로 판단합니다.\n- L/S 가 1 일 때: 정사각형 슬래브로 대표적인 2방향 슬래브입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "슬래브"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-rc-design-0007",
+    "certId": "architecture-engineer",
+    "subjectId": "structure",
+    "chapterId": "rc-design",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "폭 b = 300mm, 인장철근량 As = 1,000mm², fy = 400MPa, fck = 25MPa 인 단철근 직사각형 보의 등가 직사각형 응력블록 깊이(a)는 약 얼마인가?",
+    "choices": [
+      "31.4mm",
+      "53.3mm",
+      "62.7mm",
+      "78.4mm"
+    ],
+    "answer": 3,
+    "oneLineConcept": "응력블록 깊이 a = As·fy ÷ (0.85·fck·b)",
+    "explanation": "콘크리트 압축력(0.85 fck × a × b)과 철근 인장력(As × fy)이 같다는 조건으로 a 를 구합니다.\n\n1. 철근 인장력: 1,000 × 400 = 400,000N\n2. 콘크리트 쪽: 0.85 × 25 × 300 = 6,375N/mm\n3. a = 400,000 ÷ 6,375 ≒ 62.7mm\n4. 검산: 0.85 × 25 × 62.7 × 300 ≒ 399,700N 으로 인장력 400,000N 과 거의 같습니다.\n\n**틀린 선지**\n- 31.4mm: 정답의 절반 값으로 계산 실수입니다.\n- 53.3mm: 0.85 를 곱하지 않고 계산한 값입니다.\n- 78.4mm: 식의 계수를 잘못 넣은 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "휨부재",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-rc-design-0008",
+    "certId": "architecture-engineer",
+    "subjectId": "structure",
+    "chapterId": "rc-design",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "처짐을 계산하지 않는 경우, 단순지지된 보의 최소 두께는? (l: 경간, 보통 중량콘크리트, fy = 400MPa)",
+    "choices": [
+      "l/20",
+      "l/16",
+      "l/8",
+      "l/21"
+    ],
+    "answer": 2,
+    "oneLineConcept": "보 최소 두께(처짐 계산 생략): 단순 l/16, 양단 연속 l/21, 캔틸레버 l/8",
+    "explanation": "콘크리트구조 설계기준(KDS 14 20 30)은 처짐을 따로 계산하지 않아도 되는 최소 두께를 정합니다. 보는 단순지지 l/16, 1단 연속 l/18.5, 양단 연속 l/21, 캔틸레버 l/8 이고, 1방향 슬래브는 단순지지 l/20 입니다.\n\n**틀린 선지**\n- l/20: 단순지지 1방향 슬래브의 기준입니다.\n- l/8: 캔틸레버 보의 기준입니다.\n- l/21: 양단 연속 보의 기준입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "사용성",
+      "처짐"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  }
+]

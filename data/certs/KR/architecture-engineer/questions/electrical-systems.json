@@ -1,0 +1,331 @@
+[
+  {
+    "id": "architecture-engineer-electrical-systems-0001",
+    "certId": "architecture-engineer",
+    "subjectId": "building-services",
+    "chapterId": "electrical-systems",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "220V 전원에 11Ω 저항을 연결했을 때 흐르는 전류는?",
+    "choices": [
+      "0.05A",
+      "20A",
+      "209A",
+      "2,420A"
+    ],
+    "answer": 2,
+    "oneLineConcept": "옴의 법칙: 전류 = 전압 ÷ 저항 (I = V/R)",
+    "explanation": "옴의 법칙으로 전류를 구합니다.\n\n1. 식: I = V ÷ R\n2. 대입: 220 ÷ 11\n3. 답: 20A\n4. 검산: 20A × 11Ω = 220V 로 맞습니다.\n\n**틀린 선지**\n- 0.05A: 저항을 전압으로 나눈 값으로 거꾸로 계산했습니다.\n- 209A: 전압에서 저항을 뺀 값입니다.\n- 2,420A: 전압과 저항을 곱한 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "직류회로",
+      "옴의 법칙",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-electrical-systems-0002",
+    "certId": "architecture-engineer",
+    "subjectId": "building-services",
+    "chapterId": "electrical-systems",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "3Ω, 5Ω, 2Ω 저항을 직렬로 연결한 합성저항은?",
+    "choices": [
+      "약 0.97Ω",
+      "약 3.3Ω",
+      "10Ω",
+      "30Ω"
+    ],
+    "answer": 3,
+    "oneLineConcept": "직렬 합성저항 = 각 저항의 합",
+    "explanation": "직렬은 저항을 한 줄로 이은 것이므로 그대로 더합니다.\n\n1. 식: R = R1 + R2 + R3\n2. 대입: 3 + 5 + 2\n3. 답: 10Ω\n4. 검산: 각 저항보다 커야 하므로 10Ω 이 맞습니다.\n\n**틀린 선지**\n- 약 0.97Ω: 세 저항을 병렬로 연결했을 때의 값입니다.\n- 약 3.3Ω: 세 저항의 평균값입니다.\n- 30Ω: 세 저항을 곱한 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "직류회로",
+      "저항의 접속",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-electrical-systems-0003",
+    "certId": "architecture-engineer",
+    "subjectId": "building-services",
+    "chapterId": "electrical-systems",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "10Ω 저항에 5A 의 전류가 흐를 때 저항에서 소비되는 전력은?",
+    "choices": [
+      "25W",
+      "50W",
+      "250W",
+      "2,500W"
+    ],
+    "answer": 3,
+    "oneLineConcept": "전력 P = I²R = VI",
+    "explanation": "전류와 저항을 알 때는 P = I²R 을 씁니다.\n\n1. 식: P = I² × R\n2. 대입: 5² × 10 = 25 × 10\n3. 답: 250W\n4. 검산: 전압 V = 5 × 10 = 50V, P = V × I = 50 × 5 = 250W 로 같습니다.\n\n**틀린 선지**\n- 25W: 전류의 제곱만 구하고 저항을 곱하지 않은 값입니다.\n- 50W: 전류 × 저항으로 전압(50V)을 구한 것이지 전력이 아닙니다.\n- 2,500W: 전압(50V)을 제곱한 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "직류회로",
+      "전력",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-electrical-systems-0004",
+    "certId": "architecture-engineer",
+    "subjectId": "building-services",
+    "chapterId": "electrical-systems",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "어떤 면에 비치는 빛의 밝기 정도인 조도의 단위는?",
+    "choices": [
+      "와트(W)",
+      "럭스(lx)",
+      "칸델라(cd)",
+      "루멘(lm)"
+    ],
+    "answer": 2,
+    "oneLineConcept": "조도 lx, 광속 lm, 광도 cd",
+    "explanation": "조도는 빛을 받는 면 1㎡ 에 들어오는 빛의 양으로, 단위는 럭스(lx)입니다. 1lx 는 1㎡ 에 1lm 의 빛이 고르게 비치는 밝기입니다.\n\n**틀린 선지**\n- 와트(W): 전력의 단위입니다.\n- 칸델라(cd): 어느 한 방향으로 나오는 빛의 세기(광도)의 단위입니다.\n- 루멘(lm): 광원에서 나오는 빛의 전체 양(광속)의 단위입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "조명",
+      "단위"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-electrical-systems-0005",
+    "certId": "architecture-engineer",
+    "subjectId": "building-services",
+    "chapterId": "electrical-systems",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "4Ω 과 6Ω 저항을 병렬로 연결한 합성저항은?",
+    "choices": [
+      "약 0.42Ω",
+      "2.4Ω",
+      "5Ω",
+      "10Ω"
+    ],
+    "answer": 2,
+    "oneLineConcept": "병렬 저항 2개 합성 = 곱 ÷ 합",
+    "explanation": "병렬 합성저항은 두 저항 가운데 작은 값보다도 작아집니다.\n\n1. 식: R = (R1 × R2) ÷ (R1 + R2)\n2. 대입: (4 × 6) ÷ (4 + 6) = 24 ÷ 10\n3. 답: 2.4Ω\n4. 검산: 1/4 + 1/6 = 0.25 + 0.1667 = 0.4167, 이것의 역수 1 ÷ 0.4167 ≒ 2.4Ω 입니다.\n\n**틀린 선지**\n- 약 0.42Ω: 1/4 + 1/6 까지만 계산하고 역수를 취하지 않은 값입니다.\n- 5Ω: 두 저항의 평균값입니다.\n- 10Ω: 직렬로 연결했을 때의 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "직류회로",
+      "저항의 접속",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-electrical-systems-0006",
+    "certId": "architecture-engineer",
+    "subjectId": "building-services",
+    "chapterId": "electrical-systems",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "건축법령상 피뢰설비를 설치해야 하는 건축물의 높이 기준은? (낙뢰 우려 건축물 제외)",
+    "choices": [
+      "10m 이상",
+      "31m 초과",
+      "20m 이상",
+      "15m 이상"
+    ],
+    "answer": 3,
+    "oneLineConcept": "피뢰설비: 낙뢰 우려 건축물 또는 높이 20m 이상",
+    "explanation": "건축법 시행령 제87조 제2항과 건축물의 설비기준 등에 관한 규칙 제20조는 낙뢰 우려가 있는 건축물이나 높이 20m 이상의 건축물에 피뢰설비를 설치하도록 정합니다.\n\n**틀린 선지**\n- 10m 이상: 기준보다 낮습니다.\n- 31m 초과: 비상용 승강기 설치 기준 높이입니다.\n- 15m 이상: 기준보다 낮습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "방재설비",
+      "피뢰"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-electrical-systems-0007",
+    "certId": "architecture-engineer",
+    "subjectId": "building-services",
+    "chapterId": "electrical-systems",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "건축법상 높이 31m 를 넘는 건축물에 승용 승강기와 별도로 설치해야 하는 승강기는?",
+    "choices": [
+      "비상용 승강기",
+      "화물용 승강기",
+      "피난용 승강기",
+      "소형 승강기"
+    ],
+    "answer": 1,
+    "oneLineConcept": "높이 31m 초과 건축물 → 비상용 승강기 설치",
+    "explanation": "건축법 제64조 제2항은 높이 31m 를 넘는 건축물에 소방대가 화재 때 쓸 수 있는 비상용 승강기를 설치하도록 정합니다. 대수는 31m 를 넘는 각 층의 바닥면적 가운데 가장 넓은 층을 기준으로 정합니다 (시행령 제90조).\n\n**틀린 선지**\n- 화물용 승강기: 높이 기준으로 설치 의무가 생기는 승강기가 아닙니다.\n- 피난용 승강기: 고층건축물(30층 이상 또는 높이 120m 이상)에 설치하는 승강기로 31m 초과 기준과 다릅니다.\n- 소형 승강기: 높이 기준으로 설치 의무가 생기는 승강기가 아닙니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "반송설비",
+      "승강기"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-electrical-systems-0008",
+    "certId": "architecture-engineer",
+    "subjectId": "building-services",
+    "chapterId": "electrical-systems",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "저항 6Ω 과 유도리액턴스 8Ω 이 직렬로 연결된 교류회로의 역률은?",
+    "choices": [
+      "0.6",
+      "0.75",
+      "0.8",
+      "1.0"
+    ],
+    "answer": 1,
+    "oneLineConcept": "역률 = R ÷ Z, 임피던스 Z = √(R² + X²)",
+    "explanation": "역률은 전체 전력 가운데 실제로 일하는 전력의 비율입니다.\n\n1. 임피던스: Z = √(6² + 8²) = √(36 + 64) = √100 = 10Ω\n2. 역률: cosθ = R ÷ Z = 6 ÷ 10\n3. 답: 0.6\n4. 검산: 무효율 sinθ = 8 ÷ 10 = 0.8 이고, 0.6² + 0.8² = 1 로 맞습니다.\n\n**틀린 선지**\n- 0.75: R ÷ X 로 계산한 값입니다.\n- 0.8: X ÷ Z 로 구한 무효율입니다.\n- 1.0: 리액턴스가 없는 순수 저항 회로의 역률입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "교류회로",
+      "역률",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-electrical-systems-0009",
+    "certId": "architecture-engineer",
+    "subjectId": "building-services",
+    "chapterId": "electrical-systems",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "3상 Y(성형) 결선에서 상전압이 220V 일 때 선간전압은 약 몇 V 인가?",
+    "choices": [
+      "127V",
+      "220V",
+      "380V",
+      "660V"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Y 결선: 선간전압 = √3 × 상전압, 선전류 = 상전류",
+    "explanation": "Y 결선에서는 두 상의 전압이 120° 어긋나 있어 선간전압이 상전압의 √3 배가 됩니다.\n\n1. 식: V선 = √3 × V상\n2. 대입: 1.732 × 220 ≒ 381V\n3. 답: 약 380V\n4. 검산: 380 ÷ 1.732 ≒ 219V 로 상전압과 거의 같습니다.\n\n**틀린 선지**\n- 127V: √3 으로 곱하지 않고 나눈 값입니다.\n- 220V: 상전압을 그대로 쓴 값으로 Δ 결선의 관계입니다.\n- 660V: √3 대신 3을 곱한 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "3상 교류",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+]

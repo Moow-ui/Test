@@ -1,0 +1,434 @@
+[
+  {
+    "id": "architecture-engineer-construction-management-0001",
+    "certId": "architecture-engineer",
+    "subjectId": "construction",
+    "chapterId": "construction-management",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "네트워크 공정표에서 여유시간이 전혀 없는, 처음부터 끝까지 가장 긴 작업 경로는?",
+    "choices": [
+      "플로트(Float)",
+      "더미(Dummy)",
+      "마일스톤(Milestone)",
+      "주공정선(CP)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "주공정선(CP): 여유가 0인 가장 긴 경로, 공기를 결정한다",
+    "explanation": "주공정선(Critical Path)은 시작부터 끝까지 이어지는 경로 가운데 걸리는 시간이 가장 긴 경로입니다. 이 경로의 작업은 여유시간이 없어서 하루만 늦어도 전체 공사기간이 늦어집니다.\n\n**틀린 선지**\n- 플로트(Float): 작업이 늦어져도 전체 공기에 영향이 없는 여유시간을 말합니다.\n- 더미(Dummy): 작업 시간 없이 앞뒤 순서만 나타내는 가상의 작업입니다.\n- 마일스톤(Milestone): 공사 중 꼭 지켜야 할 중요한 날짜(중간 관리일)입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "공정표",
+      "CP"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-construction-management-0002",
+    "certId": "architecture-engineer",
+    "subjectId": "construction",
+    "chapterId": "construction-management",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "설계와 시공을 한 업체가 함께 맡아 완성된 건물을 발주자에게 넘겨주는 계약 방식은?",
+    "choices": [
+      "턴키(설계·시공 일괄) 계약",
+      "공동도급",
+      "단가 계약",
+      "실비정산 보수가산 계약"
+    ],
+    "answer": 1,
+    "oneLineConcept": "턴키 계약: 설계부터 시공까지 한 업체가 일괄로 맡는다",
+    "explanation": "턴키(Turn-key)는 '열쇠만 돌리면 바로 쓸 수 있게 넘겨준다'는 뜻입니다. 한 업체가 설계와 시공을 함께 맡으므로 책임이 한곳에 모이고 공기를 줄이기 쉽습니다.\n\n**틀린 선지**\n- 공동도급: 여러 회사가 함께 한 공사를 맡는 방식으로 설계·시공 일괄과는 다릅니다.\n- 단가 계약: 일의 단위 가격만 정해 두고 실제 수량에 따라 값을 치르는 계약입니다.\n- 실비정산 보수가산 계약: 실제로 든 비용에 정해진 보수를 더해 치르는 계약입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "계약",
+      "턴키"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-construction-management-0003",
+    "certId": "architecture-engineer",
+    "subjectId": "construction",
+    "chapterId": "construction-management",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "화살선(애로우) 네트워크 공정표에서 작업 시간은 없고 작업의 앞뒤 관계만 나타내는 점선 화살표는?",
+    "choices": [
+      "플로트(Float)",
+      "주공정선(CP)",
+      "결합점(Event)",
+      "더미(Dummy)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "더미: 시간 0, 작업 순서 관계만 나타내는 점선 화살표",
+    "explanation": "더미는 실제 작업이 아니라서 시간도 자원도 들지 않습니다. 두 작업의 순서 관계를 바르게 나타내거나 같은 결합점 사이에 작업이 겹치지 않게 하려고 점선 화살표로 넣습니다.\n\n**틀린 선지**\n- 플로트(Float): 작업의 여유시간을 말합니다.\n- 주공정선(CP): 여유가 없는 가장 긴 경로입니다.\n- 결합점(Event): 작업과 작업이 만나는 동그라미(시작·끝 시점)입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "공정표",
+      "더미"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-construction-management-0004",
+    "certId": "architecture-engineer",
+    "subjectId": "construction",
+    "chapterId": "construction-management",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "횡선식 공정표(바 차트)의 특징으로 옳은 것은?",
+    "choices": [
+      "작성이 쉽고 보기 쉽지만 작업 사이의 관계를 알기 어렵다",
+      "대형·복잡한 공사의 공기 단축 검토에 가장 알맞다",
+      "작업 사이의 관계와 주공정선이 분명하게 드러난다",
+      "여유시간(플로트)을 계산하기 쉽다"
+    ],
+    "answer": 1,
+    "oneLineConcept": "바 차트: 쉽고 보기 좋지만 작업 간 관계·CP 파악이 어렵다",
+    "explanation": "바 차트는 작업마다 시작과 끝을 가로 막대로 그린 공정표입니다. 누구나 쉽게 그리고 읽을 수 있지만, 어떤 작업이 끝나야 다음 작업을 할 수 있는지가 드러나지 않아 주공정선과 여유시간을 알기 어렵습니다.\n\n**틀린 선지**\n- 대형·복잡한 공사의 공기 단축 검토에 가장 알맞다: 복잡한 공사의 공기 단축 검토에는 네트워크 공정표가 알맞습니다.\n- 작업 사이의 관계와 주공정선이 분명하게 드러난다: 작업 관계와 주공정선이 분명히 드러나는 것은 네트워크 공정표의 장점입니다.\n- 여유시간(플로트)을 계산하기 쉽다: 여유시간 계산은 네트워크 공정표로 합니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "공정표",
+      "바 차트"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-construction-management-0005",
+    "certId": "architecture-engineer",
+    "subjectId": "construction",
+    "chapterId": "construction-management",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "여러 건설회사가 하나의 공사를 함께 맡기 위해 임시로 공동 조직을 만들어 도급하는 방식은?",
+    "choices": [
+      "일식도급",
+      "분할도급",
+      "직영 공사",
+      "공동도급(조인트 벤처)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "공동도급: 여러 회사가 임시 공동조직으로 한 공사를 도급",
+    "explanation": "공동도급은 큰 공사를 여러 회사가 함께 맡아 자금 부담과 위험을 나누고 서로의 기술을 보탤 수 있는 방식입니다. 공사가 끝나면 공동 조직은 해체됩니다.\n\n**틀린 선지**\n- 일식도급: 공사 전체를 한 업체에 통째로 맡기는 방식입니다.\n- 분할도급: 한 공사를 공정·공구별로 나누어 여러 업체에 따로 맡기는 방식입니다.\n- 직영 공사: 발주자가 직접 사람과 자재를 모아 시공하는 방식입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "계약",
+      "공동도급"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-construction-management-0006",
+    "certId": "architecture-engineer",
+    "subjectId": "construction",
+    "chapterId": "construction-management",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "작업 A(4일)가 끝나면 작업 B(6일)와 C(3일)를 시작하고, B 와 C 가 모두 끝나면 작업 D(5일)를 시작한다. 전체 공사기간은?",
+    "choices": [
+      "9일",
+      "12일",
+      "15일",
+      "18일"
+    ],
+    "answer": 3,
+    "oneLineConcept": "전체 공기 = 가장 긴 경로(주공정선)의 작업일수 합",
+    "explanation": "경로가 두 개이므로 각각 더해서 긴 쪽을 고릅니다.\n\n1. 경로 A → B → D: 4 + 6 + 5 = 15일\n2. 경로 A → C → D: 4 + 3 + 5 = 12일\n3. 둘 중 긴 경로 15일이 주공정선이고 전체 공기입니다.\n4. 검산: D 는 B 가 끝나는 10일째 뒤에야 시작할 수 있으므로 10 + 5 = 15일입니다.\n\n**틀린 선지**\n- 9일: A 와 D 만 더한 값입니다.\n- 12일: 짧은 경로(A → C → D)의 합입니다. D 는 B 까지 끝나야 시작합니다.\n- 18일: 네 작업을 모두 더한 값입니다. B 와 C 는 동시에 할 수 있습니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "공정표",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-construction-management-0007",
+    "certId": "architecture-engineer",
+    "subjectId": "construction",
+    "chapterId": "construction-management",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "건설사업관리(CM) 방식 가운데 CM 이 시공까지 책임지고 공사비와 공기에 대한 위험을 부담하는 방식은?",
+    "choices": [
+      "CM for Fee(용역형)",
+      "턴키 방식",
+      "설계·입찰·시공 분리 방식",
+      "CM at Risk(시공책임형)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "CM for Fee는 관리 용역만, CM at Risk는 시공 책임까지 진다",
+    "explanation": "CM 은 발주자를 대신해 설계부터 시공까지 사업을 관리하는 일입니다. 관리 용역만 하고 수수료를 받는 것이 CM for Fee, 시공 단계에서 시공자처럼 계약해 공사비와 공기 위험까지 지는 것이 CM at Risk 입니다.\n\n**틀린 선지**\n- CM for Fee(용역형): 관리 용역만 하고 공사비 위험은 지지 않는 방식입니다.\n- 턴키 방식: CM 방식이 아니라 한 업체가 설계와 시공을 일괄로 맡는 계약입니다.\n- 설계·입찰·시공 분리 방식: CM 방식이 아니라 설계 끝난 뒤 입찰로 시공자를 정하는 전통 방식입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "건설사업관리",
+      "CM"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-construction-management-0008",
+    "certId": "architecture-engineer",
+    "subjectId": "construction",
+    "chapterId": "construction-management",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "공사에 실제로 든 비용에 미리 정한 보수(이윤)를 더해 발주자가 지급하는 계약 방식은?",
+    "choices": [
+      "실비정산 보수가산 계약",
+      "정액 계약",
+      "턴키 계약",
+      "단가 계약"
+    ],
+    "answer": 1,
+    "oneLineConcept": "실비정산 보수가산: 실제 비용 + 정해진 보수",
+    "explanation": "실비정산 보수가산 계약은 공사비를 미리 정하기 어려울 때, 실제 든 비용을 모두 정산하고 여기에 정해 둔 보수를 더해 주는 방식입니다. 시공자는 손해 걱정이 적지만, 발주자는 최종 공사비를 미리 알기 어렵습니다.\n\n**틀린 선지**\n- 정액 계약: 공사비 총액을 미리 정해 두는 계약입니다.\n- 턴키 계약: 설계와 시공을 한 업체가 일괄로 맡는 계약입니다.\n- 단가 계약: 단위 작업의 가격만 정하고 수량대로 지급하는 계약입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "계약"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-construction-management-0009",
+    "certId": "architecture-engineer",
+    "subjectId": "construction",
+    "chapterId": "construction-management",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "표준형 벽돌(190 × 90 × 57mm, 줄눈 10mm)로 1.0B 두께 벽을 쌓을 때, 벽면적 1㎡ 당 정미 벽돌 수량은?",
+    "choices": [
+      "75매",
+      "149매",
+      "224매",
+      "298매"
+    ],
+    "answer": 2,
+    "oneLineConcept": "표준형 벽돌 ㎡당 정미량: 0.5B 75매, 1.0B 149매, 1.5B 224매",
+    "explanation": "표준형 벽돌의 벽면적 1㎡ 당 정미량(할증을 넣지 않은 순수 수량)은 벽 두께에 따라 정해져 있습니다. 0.5B 는 75매, 1.0B 는 149매, 1.5B 는 224매입니다. 두께가 반 장 늘 때마다 대략 75매씩 늘어난다고 기억하면 쉽습니다.\n\n**틀린 선지**\n- 75매: 0.5B 벽의 수량입니다.\n- 224매: 1.5B 벽의 수량입니다.\n- 298매: 2.0B 벽 수량에 가까운 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "적산",
+      "벽돌"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-construction-management-0010",
+    "certId": "architecture-engineer",
+    "subjectId": "construction",
+    "chapterId": "construction-management",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "작업 A(4일)가 끝나면 작업 B(6일)와 C(3일)를 시작하고, B 와 C 가 모두 끝나면 작업 D(5일)를 시작한다. 작업 C 의 총여유(TF)는?",
+    "choices": [
+      "0일",
+      "2일",
+      "3일",
+      "6일"
+    ],
+    "answer": 3,
+    "oneLineConcept": "총여유(TF) = 가장 늦은 끝 시각(LFT) − 가장 이른 끝 시각(EFT)",
+    "explanation": "총여유는 전체 공기를 늦추지 않고 그 작업이 늦어질 수 있는 날수입니다.\n\n1. C 의 가장 이른 시작: A 가 끝난 4일 → 가장 이른 끝(EFT) = 4 + 3 = 7일\n2. D 는 B 가 끝나는 10일에 시작하므로 C 는 늦어도 10일까지 끝나면 됩니다 → LFT = 10일\n3. TF = 10 − 7 = 3일\n4. 검산: 두 경로의 길이 차이 15 − 12 = 3일과 같습니다.\n\n**틀린 선지**\n- 0일: 주공정선 위 작업(A, B, D)의 여유입니다. C 는 주공정선에 있지 않습니다.\n- 2일: 계산이 틀린 값입니다.\n- 6일: B 의 작업일수를 그대로 쓴 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "공정표",
+      "여유시간",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-construction-management-0011",
+    "certId": "architecture-engineer",
+    "subjectId": "construction",
+    "chapterId": "construction-management",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "어떤 작업의 표준공기는 10일·표준비용 100만 원이고, 특급공기는 7일·특급비용 160만 원이다. 이 작업의 비용구배(하루 단축 비용)는?",
+    "choices": [
+      "6만 원/일",
+      "16만 원/일",
+      "20만 원/일",
+      "60만 원/일"
+    ],
+    "answer": 3,
+    "oneLineConcept": "비용구배 = (특급비용 − 표준비용) ÷ (표준공기 − 특급공기)",
+    "explanation": "비용구배는 공기를 하루 줄일 때 늘어나는 비용입니다.\n\n1. 늘어난 비용: 160 − 100 = 60만 원\n2. 줄어든 날수: 10 − 7 = 3일\n3. 비용구배: 60 ÷ 3 = 20만 원/일\n4. 검산: 20만 원 × 3일 = 60만 원으로 맞습니다.\n\n**틀린 선지**\n- 6만 원/일: 늘어난 비용을 표준공기 10일로 나눈 값입니다.\n- 16만 원/일: 특급비용을 10일로 나눈 값입니다.\n- 60만 원/일: 날수로 나누지 않은 늘어난 비용 전체입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "공기 단축",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-construction-management-0012",
+    "certId": "architecture-engineer",
+    "subjectId": "construction",
+    "chapterId": "construction-management",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "국가를 당사자로 하는 계약에서 물가변동으로 계약금액을 조정하려면, 다른 요건을 갖춘 경우 계약을 맺은 날부터 최소 며칠이 지나야 하는가?",
+    "choices": [
+      "30일",
+      "60일",
+      "90일",
+      "120일"
+    ],
+    "answer": 3,
+    "oneLineConcept": "물가변동 조정: 계약 후 90일 이상 경과 + 품목조정률 등 3% 이상 증감",
+    "explanation": "국가를 당사자로 하는 계약에 관한 법률 시행령 제64조는 계약을 맺은 날부터 90일 이상 지나고, 품목조정률이나 지수조정률이 3% 이상 오르거나 내렸을 때 계약금액을 조정하도록 정합니다.\n\n**틀린 선지**\n- 30일: 기준보다 짧습니다.\n- 60일: 기준보다 짧습니다.\n- 120일: 기준보다 깁니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "계약",
+      "물가변동"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  }
+]

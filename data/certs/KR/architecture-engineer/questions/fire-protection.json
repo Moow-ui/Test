@@ -1,0 +1,247 @@
+[
+  {
+    "id": "architecture-engineer-fire-protection-0001",
+    "certId": "architecture-engineer",
+    "subjectId": "building-services",
+    "chapterId": "fire-protection",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "휘발유·등유 같은 기름이 타는 화재의 분류는?",
+    "choices": [
+      "A급 화재",
+      "C급 화재",
+      "K급 화재",
+      "B급 화재"
+    ],
+    "answer": 4,
+    "oneLineConcept": "A 일반화재, B 유류화재, C 전기화재, K 주방화재",
+    "explanation": "화재는 타는 물질에 따라 나눕니다. 나무·종이·섬유가 타는 일반화재는 A급, 기름·가연성 액체가 타는 유류화재는 B급, 전기가 흐르는 설비의 화재는 C급, 식용유를 쓰는 주방화재는 K급입니다.\n\n**틀린 선지**\n- A급 화재: 나무·종이 같은 일반 가연물 화재입니다.\n- C급 화재: 전기가 통하는 설비의 화재입니다.\n- K급 화재: 주방의 식용유 화재입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "화재의 종류"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-fire-protection-0002",
+    "certId": "architecture-engineer",
+    "subjectId": "building-services",
+    "chapterId": "fire-protection",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "연소의 3요소로 옳은 것은?",
+    "choices": [
+      "물, 산소, 이산화탄소",
+      "가연물, 산소공급원, 점화원",
+      "가연물, 질소, 냉각",
+      "점화원, 연쇄반응, 불연재"
+    ],
+    "answer": 2,
+    "oneLineConcept": "연소 3요소: 가연물·산소공급원·점화원 (+연쇄반응 = 4요소)",
+    "explanation": "불이 붙으려면 탈 물질(가연물), 산소를 주는 것(산소공급원), 불을 붙이는 에너지(점화원)가 모두 있어야 합니다. 여기에 연쇄반응을 더하면 연소의 4요소가 됩니다. 하나라도 없애면 불이 꺼집니다.\n\n**틀린 선지**\n- 물, 산소, 이산화탄소: 물과 이산화탄소는 소화에 쓰는 물질입니다.\n- 가연물, 질소, 냉각: 질소와 냉각은 연소를 막는 쪽입니다.\n- 점화원, 연쇄반응, 불연재: 연쇄반응은 4요소에 들어가지만 불연재는 연소 요소가 아닙니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "연소 이론"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-fire-protection-0003",
+    "certId": "architecture-engineer",
+    "subjectId": "building-services",
+    "chapterId": "fire-protection",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "기름에 불이 붙은 냄비에 뚜껑을 덮어 끄는 것은 어떤 소화 방법인가?",
+    "choices": [
+      "질식 소화",
+      "제거 소화",
+      "부촉매(억제) 소화",
+      "냉각 소화"
+    ],
+    "answer": 1,
+    "oneLineConcept": "질식 소화: 산소 공급을 끊어 끈다",
+    "explanation": "뚜껑을 덮으면 불에 산소가 더 들어가지 못해 꺼집니다. 이렇게 산소공급원을 끊는 방법이 질식 소화입니다. 식용유 화재에 물을 부으면 기름이 튀어 더 위험합니다.\n\n**틀린 선지**\n- 제거 소화: 타는 물질 자체를 치워 끄는 방법입니다.\n- 부촉매(억제) 소화: 연쇄반응을 끊는 약제로 끄는 방법입니다.\n- 냉각 소화: 물 등으로 온도를 낮추어 끄는 방법입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "소화 방법"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-fire-protection-0004",
+    "certId": "architecture-engineer",
+    "subjectId": "building-services",
+    "chapterId": "fire-protection",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "소방차가 건물 밖 송수구로 물을 보내면, 소방대가 각 층 방수구에 호스를 연결해 불을 끄는 소화활동설비는?",
+    "choices": [
+      "옥내소화전설비",
+      "연결살수설비",
+      "연결송수관설비",
+      "상수도소화용수설비"
+    ],
+    "answer": 3,
+    "oneLineConcept": "연결송수관: 송수구 → 각 층 방수구, 소방대 사용",
+    "explanation": "연결송수관설비는 고층 건물에서 소방대가 쓰도록 미리 깔아 둔 배관입니다. 소방차가 송수구에 물을 밀어 넣으면, 소방대원이 불난 층의 방수구에 호스를 꽂아 바로 물을 씁니다.\n\n**틀린 선지**\n- 옥내소화전설비: 건물 안 수원과 펌프로 거주자가 직접 쓰는 소화설비입니다.\n- 연결살수설비: 송수구로 보낸 물을 지하층 천장 등의 살수헤드로 뿌리는 설비입니다.\n- 상수도소화용수설비: 상수도에 연결한 소화전으로 소방차에 물을 대는 소화용수설비입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "소화활동설비"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-fire-protection-0005",
+    "certId": "architecture-engineer",
+    "subjectId": "building-services",
+    "chapterId": "fire-protection",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "옥내소화전설비에서 노즐 끝의 방수압력은 몇 MPa 이상이어야 하는가?",
+    "choices": [
+      "0.1MPa",
+      "0.17MPa",
+      "0.25MPa",
+      "0.35MPa"
+    ],
+    "answer": 2,
+    "oneLineConcept": "방수압: 옥내소화전 0.17MPa, 옥외소화전 0.25MPa",
+    "explanation": "옥내소화전설비의 화재안전기술기준(NFTC 102)은 가장 불리한 층의 노즐 끝 방수압력을 0.17MPa 이상, 방수량을 분당 130L 이상으로 정합니다.\n\n**틀린 선지**\n- 0.1MPa: 스프링클러헤드의 방수압력 기준입니다.\n- 0.25MPa: 옥외소화전설비의 방수압력 기준입니다.\n- 0.35MPa: 연결송수관설비 방수구의 방수압력 기준입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "옥내소화전"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-fire-protection-0006",
+    "certId": "architecture-engineer",
+    "subjectId": "building-services",
+    "chapterId": "fire-protection",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "준비작동식 스프링클러설비에 대한 설명으로 옳은 것은?",
+    "choices": [
+      "평소 헤드까지 배관에 가압수가 가득 차 있다",
+      "개방형 헤드를 써서 한 구역 전체에 동시에 물을 뿌린다",
+      "헤드가 열려 배관 속 압축공기가 빠진 뒤 건식 밸브가 열린다",
+      "화재감지기가 작동해야 준비작동밸브가 열려 배관에 물이 찬다"
+    ],
+    "answer": 4,
+    "oneLineConcept": "준비작동식: 감지기 작동 → 밸브 개방 → 폐쇄형 헤드 열리면 방수",
+    "explanation": "준비작동식은 밸브 뒤쪽(2차 쪽) 배관을 평소 비워 두었다가, 화재감지기가 불을 감지하면 준비작동밸브가 열려 물을 채웁니다. 그 뒤 열에 헤드가 녹아 열리면 물이 뿌려집니다. 얼 위험이 있거나 물 피해를 줄여야 하는 곳에 씁니다.\n\n**틀린 선지**\n- 평소 헤드까지 배관에 가압수가 가득 차 있다: 습식 스프링클러설비에 대한 설명입니다.\n- 개방형 헤드를 써서 한 구역 전체에 동시에 물을 뿌린다: 일제살수식 스프링클러설비에 대한 설명입니다.\n- 헤드가 열려 배관 속 압축공기가 빠진 뒤 건식 밸브가 열린다: 건식 스프링클러설비에 대한 설명입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "스프링클러"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-fire-protection-0007",
+    "certId": "architecture-engineer",
+    "subjectId": "building-services",
+    "chapterId": "fire-protection",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "비상콘센트설비의 전원회로는 단상교류 몇 V 인 것으로 하는가?",
+    "choices": [
+      "110V",
+      "220V",
+      "380V",
+      "440V"
+    ],
+    "answer": 2,
+    "oneLineConcept": "비상콘센트 전원: 단상교류 220V, 공급용량 1.5kVA 이상",
+    "explanation": "비상콘센트설비의 화재안전기술기준(NFTC 504)은 전원회로를 단상교류 220V, 공급용량 1.5kVA 이상으로 정합니다. 소방대가 화재 때 조명·장비를 쓸 수 있게 하는 설비입니다.\n\n**틀린 선지**\n- 110V: 현재 우리나라 기준 전압이 아닙니다.\n- 380V: 3상 동력용 전압으로 비상콘센트의 단상 전원 기준이 아닙니다.\n- 440V: 비상콘센트 기준 전압이 아닙니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "비상콘센트"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+]

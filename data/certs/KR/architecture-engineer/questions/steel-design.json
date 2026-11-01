@@ -1,0 +1,218 @@
+[
+  {
+    "id": "architecture-engineer-steel-design-0001",
+    "certId": "architecture-engineer",
+    "subjectId": "structure",
+    "chapterId": "steel-design",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "고력볼트 마찰접합에서 힘을 전달하는 원리는?",
+    "choices": [
+      "볼트를 강하게 조여 생긴 판 사이의 마찰력",
+      "볼트 머리의 무게",
+      "볼트 몸통이 판 구멍 벽을 미는 지압력",
+      "용접 열로 녹아 붙은 접착력"
+    ],
+    "answer": 1,
+    "oneLineConcept": "마찰접합: 고력볼트 조임력 → 판 사이 마찰력으로 전달",
+    "explanation": "고력볼트 마찰접합은 높은 강도의 볼트를 세게 조여 판끼리 강하게 눌러 붙입니다. 이때 판 사이에 생기는 마찰력으로 힘을 전하므로, 볼트가 구멍 벽에 닿지 않아 접합부가 미끄러지지 않습니다.\n\n**틀린 선지**\n- 볼트 머리의 무게: 볼트 무게는 힘 전달과 관계가 없습니다.\n- 볼트 몸통이 판 구멍 벽을 미는 지압력: 지압접합의 원리입니다.\n- 용접 열로 녹아 붙은 접착력: 용접접합의 원리입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "볼트접합",
+      "고력볼트"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-steel-design-0002",
+    "certId": "architecture-engineer",
+    "subjectId": "structure",
+    "chapterId": "steel-design",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "가늘고 긴 기둥에 압축력이 커지면 갑자기 옆으로 휘어지며 버티지 못하게 되는 현상은?",
+    "choices": [
+      "릴랙세이션",
+      "크리프",
+      "피로",
+      "좌굴"
+    ],
+    "answer": 4,
+    "oneLineConcept": "좌굴: 가늘고 긴 압축재가 옆으로 휘며 갑자기 무너지는 현상",
+    "explanation": "좌굴(buckling)은 재료가 부서질 만큼의 힘이 되기 전에, 가늘고 긴 압축재가 옆으로 휘어지며 힘을 잃는 현상입니다. 기둥이 길고 가늘수록 잘 생깁니다.\n\n**틀린 선지**\n- 릴랙세이션: 늘린 길이를 고정한 상태에서 응력이 시간이 지나며 줄어드는 현상입니다.\n- 크리프: 일정한 하중 아래에서 시간이 지나며 변형이 늘어나는 현상입니다.\n- 피로: 작은 힘이 여러 번 반복되어 생기는 파괴입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "압축재",
+      "좌굴"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-steel-design-0003",
+    "certId": "architecture-engineer",
+    "subjectId": "structure",
+    "chapterId": "steel-design",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "기둥의 세장비를 구하는 식은? (K: 유효좌굴길이계수, L: 기둥 길이, r: 단면2차반경)",
+    "choices": [
+      "r / KL",
+      "KL / A",
+      "KL / r",
+      "KL × r"
+    ],
+    "answer": 3,
+    "oneLineConcept": "세장비 = 유효좌굴길이 ÷ 단면2차반경, 클수록 좌굴이 쉽다",
+    "explanation": "세장비는 기둥이 얼마나 가늘고 긴지를 나타내는 값입니다. 유효좌굴길이(KL)를 단면2차반경(r = √(I/A))으로 나누어 구하며, 값이 클수록 좌굴이 일어나기 쉽습니다.\n\n**틀린 선지**\n- r / KL: 분자와 분모가 거꾸로 되었습니다.\n- KL / A: 단면적이 아니라 단면2차반경으로 나눕니다.\n- KL × r: 곱하지 않고 나눕니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "압축재",
+      "세장비"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-steel-design-0004",
+    "certId": "architecture-engineer",
+    "subjectId": "structure",
+    "chapterId": "steel-design",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "다리 길이(사이즈)가 10mm 인 등각 필릿용접의 유효 목두께는?",
+    "choices": [
+      "5mm",
+      "7mm",
+      "10mm",
+      "14mm"
+    ],
+    "answer": 2,
+    "oneLineConcept": "필릿용접 유효 목두께 = 0.7 × 사이즈",
+    "explanation": "필릿용접의 단면은 직각삼각형이고, 힘을 받는 유효 목두께는 직각 꼭짓점에서 빗변까지의 거리입니다.\n\n1. 식: a = 0.7 × s (정확히는 s × cos45° ≒ 0.707s)\n2. 대입: 0.7 × 10\n3. 답: 7mm\n4. 검산: 7 ÷ 0.7 = 10mm 로 맞습니다.\n\n**틀린 선지**\n- 5mm: 사이즈의 절반으로 계산한 값입니다.\n- 10mm: 사이즈를 그대로 쓴 값입니다.\n- 14mm: 0.7 을 곱하지 않고 1.4 를 곱한 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "용접접합",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-steel-design-0005",
+    "certId": "architecture-engineer",
+    "subjectId": "structure",
+    "chapterId": "steel-design",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "다른 조건이 같을 때 기둥의 유효좌굴길이가 2배가 되면 탄성 좌굴하중(오일러 좌굴하중)은 몇 배가 되는가?",
+    "choices": [
+      "1/4 배",
+      "1/2 배",
+      "2배",
+      "4배"
+    ],
+    "answer": 1,
+    "oneLineConcept": "오일러 좌굴하중 P = π²EI/(KL)², 유효좌굴길이 제곱에 반비례",
+    "explanation": "오일러 좌굴하중은 유효좌굴길이의 제곱에 반비례합니다.\n\n1. 식: P = π²EI / (KL)²\n2. KL 이 2배가 되면 분모는 2² = 4배\n3. 따라서 좌굴하중은 1/4 배\n4. 검산: 반대로 길이가 1/2 이 되면 4배가 됩니다 (양단 고정 기둥이 양단 핀 기둥의 4배인 이유).\n\n**틀린 선지**\n- 1/2 배: 제곱이 아니라 단순 반비례로 본 값입니다.\n- 2배: 길이가 길어지면 좌굴하중은 줄어듭니다.\n- 4배: 길이가 1/2 로 줄 때의 결과입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "압축재",
+      "좌굴"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-steel-design-0006",
+    "certId": "architecture-engineer",
+    "subjectId": "structure",
+    "chapterId": "steel-design",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "폭 200mm, 두께 10mm 인 강판에 지름 22mm 볼트 구멍 2개가 한 줄(인장 방향과 직각)로 뚫려 있을 때 순단면적은?",
+    "choices": [
+      "1,340mm²",
+      "1,560mm²",
+      "1,780mm²",
+      "2,000mm²"
+    ],
+    "answer": 2,
+    "oneLineConcept": "순단면적 = (판 폭 − 구멍 지름 × 구멍 수) × 두께",
+    "explanation": "인장재는 볼트 구멍만큼 단면이 줄어든 곳(순단면)에서 끊어지기 쉽습니다.\n\n1. 줄어든 폭: 22 × 2 = 44mm\n2. 남은 폭: 200 − 44 = 156mm\n3. 순단면적: 156 × 10 = 1,560mm²\n4. 검산: 전체 2,000mm² 에서 구멍 면적 22 × 10 × 2 = 440mm² 를 빼면 1,560mm² 입니다.\n\n**틀린 선지**\n- 1,340mm²: 구멍을 3개 뺀 값입니다.\n- 1,780mm²: 구멍을 1개만 뺀 값입니다.\n- 2,000mm²: 구멍을 빼지 않은 전체 단면적입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "인장재",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  }
+]

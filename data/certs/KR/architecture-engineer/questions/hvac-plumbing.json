@@ -1,0 +1,466 @@
+[
+  {
+    "id": "architecture-engineer-hvac-plumbing-0001",
+    "certId": "architecture-engineer",
+    "subjectId": "building-services",
+    "chapterId": "hvac-plumbing",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "자연 급기와 기계 배기를 함께 써서 실내를 부압(바깥보다 낮은 압력)으로 유지하며, 화장실·주방에 알맞은 환기 방식은?",
+    "choices": [
+      "제2종 환기",
+      "제4종 환기(자연 환기)",
+      "제1종 환기",
+      "제3종 환기"
+    ],
+    "answer": 4,
+    "oneLineConcept": "1종 급·배기 모두 기계, 2종 급기만 기계, 3종 배기만 기계",
+    "explanation": "제3종 환기는 배기만 팬으로 빼내고 급기는 자연스럽게 들어오게 합니다. 실내 압력이 낮아져 냄새나 습기가 다른 실로 퍼지지 않으므로 화장실·주방·욕실에 씁니다.\n\n**틀린 선지**\n- 제2종 환기: 급기만 기계로 해서 실내를 정압으로 만드는 방식으로, 수술실·클린룸처럼 오염 공기가 들어오면 안 되는 곳에 씁니다.\n- 제4종 환기(자연 환기): 팬 없이 바람과 온도 차로 하는 환기입니다.\n- 제1종 환기: 급기와 배기를 모두 기계로 하는 방식입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "환기방식"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-hvac-plumbing-0002",
+    "certId": "architecture-engineer",
+    "subjectId": "building-services",
+    "chapterId": "hvac-plumbing",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "배수 트랩에 물(봉수)을 고여 있게 하는 주된 목적은?",
+    "choices": [
+      "배수 속도를 높인다",
+      "하수관의 냄새·가스·벌레가 실내로 들어오는 것을 막는다",
+      "배관 소음을 없앤다",
+      "물을 절약한다"
+    ],
+    "answer": 2,
+    "oneLineConcept": "트랩 봉수: 하수 가스·악취·벌레의 실내 유입 차단",
+    "explanation": "트랩은 배수관을 U 자나 S 자로 굽혀 물이 조금 고여 있게 만든 부분입니다. 이 고인 물(봉수)이 마개 역할을 하여 하수관 쪽의 냄새와 가스, 벌레가 실내로 올라오지 못하게 합니다.\n\n**틀린 선지**\n- 배수 속도를 높인다: 트랩은 오히려 흐름에 저항을 주므로 배수 속도를 높이지 않습니다.\n- 배관 소음을 없앤다: 소음 방지가 트랩의 목적이 아닙니다.\n- 물을 절약한다: 물 절약과 관계가 없습니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "배수",
+      "트랩"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-hvac-plumbing-0003",
+    "certId": "architecture-engineer",
+    "subjectId": "building-services",
+    "chapterId": "hvac-plumbing",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "배수 배관에 통기관을 설치하는 주된 목적은?",
+    "choices": [
+      "트랩의 봉수가 빠지는 것을 막고 배수가 잘 흐르게 한다",
+      "급수 압력을 높인다",
+      "배수관 안에 물을 가두어 둔다",
+      "급탕 온도를 유지한다"
+    ],
+    "answer": 1,
+    "oneLineConcept": "통기관: 배수관 압력 변화를 줄여 봉수 보호·배수 원활",
+    "explanation": "배수가 흐를 때 관 안의 공기 압력이 크게 바뀌면 트랩의 봉수가 빨려 나가거나 밀려 나갑니다. 통기관은 배수관에 공기를 드나들게 해 압력 변화를 줄여 봉수를 지키고 물이 잘 흐르게 합니다.\n\n**틀린 선지**\n- 급수 압력을 높인다: 통기관은 급수 계통이 아니라 배수 계통의 설비입니다.\n- 배수관 안에 물을 가두어 둔다: 배수관은 물이 잘 빠져야 하며, 물을 가두는 것은 통기관의 목적이 아닙니다.\n- 급탕 온도를 유지한다: 급탕과는 관계가 없습니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "통기"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-hvac-plumbing-0004",
+    "certId": "architecture-engineer",
+    "subjectId": "building-services",
+    "chapterId": "hvac-plumbing",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "마시는 물이 흐르는 상수 배관과 다른 계통의 배관이 잘못 이어져 상수가 오염될 수 있는 연결은?",
+    "choices": [
+      "워터 해머",
+      "스케일",
+      "크로스 커넥션",
+      "캐비테이션"
+    ],
+    "answer": 3,
+    "oneLineConcept": "크로스 커넥션: 상수 배관과 다른 배관의 잘못된 연결 → 오염",
+    "explanation": "크로스 커넥션은 깨끗한 상수 배관이 빗물·중수·배수 같은 다른 배관과 직접 이어진 상태입니다. 압력이 바뀌면 오염된 물이 상수 쪽으로 흘러들 수 있으므로 절대 만들어서는 안 됩니다.\n\n**틀린 선지**\n- 워터 해머: 밸브를 갑자기 잠글 때 생기는 충격 현상입니다.\n- 스케일: 배관 안쪽에 물때(무기질)가 붙는 현상입니다.\n- 캐비테이션: 펌프 안 압력이 낮아져 물속에 기포가 생기는 현상입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "급수",
+      "오염"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-hvac-plumbing-0005",
+    "certId": "architecture-engineer",
+    "subjectId": "building-services",
+    "chapterId": "hvac-plumbing",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "수도꼭지를 갑자기 잠글 때 배관 속 물의 흐름이 급히 멈추면서 큰 충격음과 압력이 생기는 현상은?",
+    "choices": [
+      "서징",
+      "수격작용(워터 해머)",
+      "공동현상(캐비테이션)",
+      "사이펀 작용"
+    ],
+    "answer": 2,
+    "oneLineConcept": "워터 해머: 급폐쇄로 생기는 압력 충격, 에어챔버 등으로 방지",
+    "explanation": "흐르던 물이 갑자기 멈추면 물의 운동 에너지가 압력으로 바뀌어 배관을 '꽝' 하고 때립니다. 이를 줄이려고 밸브를 천천히 닫거나 에어 챔버·수격방지기를 답니다.\n\n**틀린 선지**\n- 서징: 펌프·송풍기의 압력과 유량이 주기적으로 오르내리는 현상입니다.\n- 공동현상(캐비테이션): 펌프 흡입 쪽 압력이 낮아 물속에 기포가 생기는 현상입니다.\n- 사이펀 작용: 물이 관을 가득 채우며 빨려 나가는 현상으로 트랩 봉수를 잃게 하는 원인입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "급수",
+      "수격작용"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-hvac-plumbing-0006",
+    "certId": "architecture-engineer",
+    "subjectId": "building-services",
+    "chapterId": "hvac-plumbing",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "습공기를 수분의 출입 없이 가열만 했을 때의 변화로 옳은 것은?",
+    "choices": [
+      "노점온도가 높아진다",
+      "상대습도가 높아진다",
+      "절대습도가 높아진다",
+      "상대습도가 낮아진다"
+    ],
+    "answer": 4,
+    "oneLineConcept": "단순 가열: 절대습도·노점온도 그대로, 상대습도는 낮아진다",
+    "explanation": "가열만 하면 공기 속 수증기의 양(절대습도)은 그대로입니다. 그러나 따뜻한 공기는 수증기를 더 많이 품을 수 있어, 품을 수 있는 양에 대한 비율인 상대습도는 낮아집니다. 겨울에 난방하면 실내가 건조해지는 이유입니다.\n\n**틀린 선지**\n- 노점온도가 높아진다: 노점온도는 수증기 양으로 정해지므로 그대로입니다.\n- 상대습도가 높아진다: 상대습도가 높아지는 것은 냉각할 때입니다.\n- 절대습도가 높아진다: 수분이 더해지지 않으므로 절대습도는 그대로입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "습공기",
+      "공기의 성질"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-hvac-plumbing-0007",
+    "certId": "architecture-engineer",
+    "subjectId": "building-services",
+    "chapterId": "hvac-plumbing",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "급기 온도는 일정하게 두고, 실의 부하에 따라 보내는 공기량을 바꾸어 실온을 맞추는 공조 방식은?",
+    "choices": [
+      "정풍량(CAV) 단일덕트 방식",
+      "변풍량(VAV) 단일덕트 방식",
+      "이중덕트 방식",
+      "팬코일 유닛 방식"
+    ],
+    "answer": 2,
+    "oneLineConcept": "VAV: 풍량을 바꿔 부하에 대응, 송풍 동력 절약",
+    "explanation": "변풍량 방식은 각 실의 VAV 유닛이 부하에 맞춰 바람의 양을 조절합니다. 부하가 작을 때 송풍량이 줄어 팬 동력을 아낄 수 있습니다.\n\n**틀린 선지**\n- 정풍량(CAV) 단일덕트 방식: 풍량은 일정하게 두고 급기 온도를 바꾸어 대응하는 방식입니다.\n- 이중덕트 방식: 찬 공기와 더운 공기 덕트 두 개를 섞어 온도를 맞추는 방식입니다.\n- 팬코일 유닛 방식: 각 실 유닛에 냉·온수를 보내는 물 방식입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "공조방식",
+      "VAV"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-hvac-plumbing-0008",
+    "certId": "architecture-engineer",
+    "subjectId": "building-services",
+    "chapterId": "hvac-plumbing",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "각 실에 둔 작은 유닛에 냉수나 온수를 보내 실내 공기를 순환시키며, 실마다 따로 제어하기 쉬운 공조 방식은?",
+    "choices": [
+      "팬코일 유닛 방식",
+      "이중덕트 방식",
+      "복사 냉난방 방식",
+      "정풍량 단일덕트 방식"
+    ],
+    "answer": 1,
+    "oneLineConcept": "팬코일 유닛(FCU): 물 방식, 개별 제어 쉬움, 덕트 공간 작음",
+    "explanation": "팬코일 유닛 방식은 송풍기·코일·필터가 든 작은 유닛을 실마다 두고 냉·온수를 보냅니다. 덕트가 거의 필요 없어 공간을 적게 차지하고, 실마다 켜고 끄기 쉽습니다. 다만 외기 도입이 약해 환기를 따로 고려해야 합니다.\n\n**틀린 선지**\n- 이중덕트 방식: 중앙에서 공기를 덕트로 보내는 전공기 방식입니다.\n- 복사 냉난방 방식: 바닥·천장 표면을 데우거나 식혀 복사열로 냉난방하며, 공기를 순환시키는 방식이 아닙니다.\n- 정풍량 단일덕트 방식: 중앙에서 같은 양의 공기를 덕트로 보내는 전공기 방식이라 실별 제어가 어렵습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "공조방식",
+      "FCU"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-hvac-plumbing-0009",
+    "certId": "architecture-engineer",
+    "subjectId": "building-services",
+    "chapterId": "hvac-plumbing",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "물을 건물 옥상 등 높은 곳의 물탱크로 올린 뒤 중력으로 내려보내, 급수 압력이 거의 일정한 급수 방식은?",
+    "choices": [
+      "수도직결 방식",
+      "펌프직송(부스터) 방식",
+      "압력수조 방식",
+      "고가수조 방식"
+    ],
+    "answer": 4,
+    "oneLineConcept": "고가수조: 중력 공급으로 수압 일정, 단수 때도 저장량 사용",
+    "explanation": "고가수조 방식은 펌프로 높은 곳의 물탱크까지 물을 올려 두고 중력으로 공급합니다. 물탱크 높이가 일정하므로 수압이 고르고, 단수가 되어도 탱크에 남은 물을 쓸 수 있습니다. 대신 물탱크 오염 관리가 필요합니다.\n\n**틀린 선지**\n- 수도직결 방식: 수도 본관의 압력으로 바로 공급하는 방식입니다.\n- 펌프직송(부스터) 방식: 펌프 회전수를 바꾸어 바로 공급하는 방식입니다.\n- 압력수조 방식: 밀폐 탱크의 공기 압력으로 물을 밀어 보내는 방식으로 압력 변동이 큽니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "급수방식"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-hvac-plumbing-0010",
+    "certId": "architecture-engineer",
+    "subjectId": "building-services",
+    "chapterId": "hvac-plumbing",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "기구마다 통기관을 하나씩 세워 통기 효과가 가장 좋은 통기 방식은?",
+    "choices": [
+      "루프(회로) 통기",
+      "신정 통기",
+      "각개 통기",
+      "도피 통기"
+    ],
+    "answer": 3,
+    "oneLineConcept": "각개 통기: 기구마다 통기관, 가장 확실한 봉수 보호",
+    "explanation": "각개 통기는 위생기구 하나하나의 트랩 가까이에서 통기관을 따로 세웁니다. 기구마다 공기가 드나드므로 봉수 보호 효과가 가장 좋지만 배관이 많아 비쌉니다.\n\n**틀린 선지**\n- 루프(회로) 통기: 여러 기구를 묶어 맨 위 기구 앞에서 통기관 하나를 세우는 방식입니다.\n- 신정 통기: 배수 수직관을 지붕 위까지 연장해 통기하는 방식입니다.\n- 도피 통기: 루프 통기를 돕기 위해 배수 수평지관 끝 쪽에 덧붙이는 보조 통기입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "통기"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-hvac-plumbing-0011",
+    "certId": "architecture-engineer",
+    "subjectId": "building-services",
+    "chapterId": "hvac-plumbing",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "흡수식 냉동기에서 일반적으로 쓰는 냉매와 흡수제의 조합으로 옳은 것은?",
+    "choices": [
+      "냉매 암모니아, 흡수제 브롬화리튬",
+      "냉매 프레온, 흡수제 물",
+      "냉매 브롬화리튬, 흡수제 물",
+      "냉매 물, 흡수제 브롬화리튬"
+    ],
+    "answer": 4,
+    "oneLineConcept": "흡수식 냉동기(건물 공조용): 냉매 물 + 흡수제 브롬화리튬(LiBr)",
+    "explanation": "건물 공조에 쓰는 흡수식 냉동기는 물을 아주 낮은 압력에서 증발시켜 냉수를 만들고, 그 수증기를 브롬화리튬 용액이 빨아들이게 합니다. 전기 대신 증기·가스 같은 열로 움직이는 것이 특징입니다.\n\n**틀린 선지**\n- 냉매 암모니아, 흡수제 브롬화리튬: 암모니아 흡수식은 물을 흡수제로 쓰며, 브롬화리튬과 짝을 이루지 않습니다.\n- 냉매 프레온, 흡수제 물: 프레온은 압축식 냉동기의 냉매입니다.\n- 냉매 브롬화리튬, 흡수제 물: 냉매와 흡수제가 서로 바뀌었습니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "열원기기",
+      "흡수식"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-hvac-plumbing-0012",
+    "certId": "architecture-engineer",
+    "subjectId": "building-services",
+    "chapterId": "hvac-plumbing",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "재실자 5명인 실에서 1인당 이산화탄소 발생량이 0.02㎥/h, 실내 허용 농도가 0.1%, 외기 농도가 0.04% 일 때 필요한 환기량은 약 얼마인가?",
+    "choices": [
+      "100㎥/h",
+      "167㎥/h",
+      "250㎥/h",
+      "500㎥/h"
+    ],
+    "answer": 2,
+    "oneLineConcept": "필요 환기량 = 발생량 ÷ (허용 농도 − 외기 농도)",
+    "explanation": "들어오는 바깥 공기에도 이산화탄소가 있으므로 농도 차이로 나눕니다.\n\n1. 전체 발생량: 0.02 × 5 = 0.1㎥/h\n2. 농도 차이: 0.1% − 0.04% = 0.06% = 0.0006\n3. 환기량: 0.1 ÷ 0.0006 ≒ 166.7 ≒ 167㎥/h\n4. 검산: 167 × 0.0006 ≒ 0.1㎥/h 로 발생량과 같습니다.\n\n**틀린 선지**\n- 100㎥/h: 외기 농도를 빼지 않고 0.001 로 나눈 값입니다.\n- 250㎥/h: 외기 농도 0.0004 로만 나눈 값입니다.\n- 500㎥/h: 농도 차이를 0.0002 로 잘못 계산한 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "환기량",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-hvac-plumbing-0013",
+    "certId": "architecture-engineer",
+    "subjectId": "building-services",
+    "chapterId": "hvac-plumbing",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "송풍량 1,800㎥/h 의 공기를 10℃ 가열하는 데 필요한 현열량은? (공기 밀도 1.2kg/㎥, 비열 1.0kJ/kg·K)",
+    "choices": [
+      "5kW",
+      "6kW",
+      "21.6kW",
+      "60kW"
+    ],
+    "answer": 2,
+    "oneLineConcept": "현열량 = 밀도 × 비열 × 풍량(㎥/s) × 온도차",
+    "explanation": "현열은 온도를 바꾸는 데 드는 열입니다.\n\n1. 풍량을 초 단위로: 1,800 ÷ 3,600 = 0.5㎥/s\n2. 질량 유량: 1.2 × 0.5 = 0.6kg/s\n3. 현열량: 0.6 × 1.0 × 10 = 6kJ/s = 6kW\n4. 검산: 시간 단위로 1.2 × 1.0 × 1,800 × 10 = 21,600kJ/h, 이를 3,600 으로 나누면 6kW 로 같습니다.\n\n**틀린 선지**\n- 5kW: 공기 밀도 1.2 를 곱하지 않은 값입니다.\n- 21.6kW: kJ/h 값을 3,600 으로 나누지 않고 1,000 으로 나눈 값입니다.\n- 60kW: 풍량을 초 단위로 바꿀 때 360 으로 나눈 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "공조부하",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+]

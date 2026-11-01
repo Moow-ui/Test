@@ -1,0 +1,526 @@
+[
+  {
+    "id": "architecture-engineer-structural-mechanics-0001",
+    "certId": "architecture-engineer",
+    "subjectId": "structure",
+    "chapterId": "structural-mechanics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "그림과 같이 길이 6m 인 단순보의 가운데에 집중하중 12kN 이 작용할 때 A 지점의 수직반력은?",
+    "choices": [
+      "3kN",
+      "4kN",
+      "6kN",
+      "12kN"
+    ],
+    "answer": 3,
+    "oneLineConcept": "단순보 중앙 집중하중: 두 지점 반력은 각각 P/2",
+    "explanation": "하중이 정확히 가운데에 있으면 두 지점이 똑같이 나누어 받습니다.\n\n1. B 점에 대한 모멘트 평형: R_A × 6 = 12 × 3\n2. R_A = 36 ÷ 6 = 6kN\n3. 수직 힘의 평형: R_B = 12 − 6 = 6kN\n4. 검산: R_A + R_B = 12kN 으로 하중과 같습니다.\n\n**틀린 선지**\n- 3kN: 하중을 네 부분으로 나눈 값입니다.\n- 4kN: 하중을 세 부분으로 나눈 값입니다.\n- 12kN: 하중 전체를 한 지점이 받는다고 본 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "단순보",
+      "반력",
+      "계산"
+    ],
+    "image": "sb-center-12kn-6m.svg",
+    "imageAlt": "왼쪽 끝 A 는 회전지점(삼각형), 오른쪽 끝 B 는 이동지점(삼각형 아래 바퀴)인 수평 보가 있다. 보의 전체 길이는 6m 이고, 보의 가운데(A 에서 3m, B 에서 3m)에 아래로 향하는 집중하중 12kN 이 작용한다.",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-structural-mechanics-0002",
+    "certId": "architecture-engineer",
+    "subjectId": "structure",
+    "chapterId": "structural-mechanics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "등분포하중 2kN/m 이 전 길이에 작용하는 길이 6m 단순보의 최대 휨모멘트는?",
+    "choices": [
+      "4.5kN·m",
+      "9kN·m",
+      "18kN·m",
+      "36kN·m"
+    ],
+    "answer": 2,
+    "oneLineConcept": "단순보 등분포하중 최대 휨모멘트 = wL²/8 (보 가운데)",
+    "explanation": "등분포하중을 받는 단순보는 가운데에서 휨모멘트가 가장 큽니다.\n\n1. 식: M_max = wL² / 8\n2. 대입: 2 × 6² ÷ 8 = 2 × 36 ÷ 8\n3. 답: 72 ÷ 8 = 9kN·m\n4. 검산: 반력 6kN, 가운데에서 6 × 3 − (2 × 3) × 1.5 = 18 − 9 = 9kN·m 로 같습니다.\n\n**틀린 선지**\n- 4.5kN·m: wL²/16 으로 계산한 값입니다.\n- 18kN·m: wL²/4 로 계산한 값입니다.\n- 36kN·m: wL² 에서 8로 나누지 않은 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "단순보",
+      "휨모멘트",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-structural-mechanics-0003",
+    "certId": "architecture-engineer",
+    "subjectId": "structure",
+    "chapterId": "structural-mechanics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "단면이 100mm × 100mm 인 짧은 기둥에 압축력 100kN 이 고르게 작용할 때 압축응력은?",
+    "choices": [
+      "0.1MPa",
+      "1MPa",
+      "10MPa",
+      "100MPa"
+    ],
+    "answer": 3,
+    "oneLineConcept": "응력 = 힘 ÷ 단면적, 1MPa = 1N/mm²",
+    "explanation": "응력은 단면 1mm² 가 받는 힘입니다.\n\n1. 단위 맞추기: 100kN = 100,000N\n2. 단면적: 100 × 100 = 10,000mm²\n3. 응력: 100,000 ÷ 10,000 = 10N/mm² = 10MPa\n4. 검산: 10N/mm² × 10,000mm² = 100,000N 으로 맞습니다.\n\n**틀린 선지**\n- 0.1MPa: 100kN 을 1,000N 으로 잘못 바꾼 값입니다.\n- 1MPa: 단면적을 100,000mm² 로 잘못 계산한 값입니다.\n- 100MPa: 단면적을 1,000mm² 로 잘못 계산한 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "응력",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-structural-mechanics-0004",
+    "certId": "architecture-engineer",
+    "subjectId": "structure",
+    "chapterId": "structural-mechanics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "어떤 점에서 수직 거리 3m 떨어진 곳에 힘 10kN 이 작용할 때, 그 점에 대한 힘의 모멘트 크기는?",
+    "choices": [
+      "3.3kN·m",
+      "13kN·m",
+      "30kN·m",
+      "90kN·m"
+    ],
+    "answer": 3,
+    "oneLineConcept": "힘의 모멘트 = 힘 × 수직 거리",
+    "explanation": "모멘트는 힘이 어떤 점을 중심으로 돌리려는 효과입니다.\n\n1. 식: M = F × d (d 는 점에서 힘의 작용선까지 수직 거리)\n2. 대입: 10 × 3\n3. 답: 30kN·m\n4. 검산: 30 ÷ 3 = 10kN 으로 맞습니다.\n\n**틀린 선지**\n- 3.3kN·m: 곱하지 않고 나눈 값입니다.\n- 13kN·m: 곱하지 않고 더한 값입니다.\n- 90kN·m: 거리를 제곱해 곱한 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "모멘트",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-structural-mechanics-0005",
+    "certId": "architecture-engineer",
+    "subjectId": "structure",
+    "chapterId": "structural-mechanics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "한쪽 끝은 회전지점, 다른 끝은 이동지점으로 받친 단순보의 반력 수와 판별 결과로 옳은 것은?",
+    "choices": [
+      "반력 3개, 1차 부정정",
+      "반력 3개, 안정이며 정정",
+      "반력 4개, 1차 부정정",
+      "반력 2개, 불안정"
+    ],
+    "answer": 2,
+    "oneLineConcept": "단순보: 반력 3개 = 평형식 3개 → 안정·정정",
+    "explanation": "회전지점은 수직·수평 반력 2개, 이동지점은 수직 반력 1개를 가지므로 반력은 모두 3개입니다. 평면에서 쓸 수 있는 평형 조건식(수평·수직·모멘트)도 3개이므로 반력을 모두 풀 수 있어 정정 구조입니다.\n\n**틀린 선지**\n- 반력 3개, 1차 부정정: 반력 수는 맞지만, 평형식 3개로 모두 풀리므로 부정정이 아닙니다.\n- 반력 4개, 1차 부정정: 반력 4개는 양단 회전지점으로 받친 보의 경우입니다.\n- 반력 2개, 불안정: 회전지점의 반력은 2개이므로 전체 반력은 3개입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "판별",
+      "정정"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-structural-mechanics-0006",
+    "certId": "architecture-engineer",
+    "subjectId": "structure",
+    "chapterId": "structural-mechanics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "그림과 같이 길이 4m 인 캔틸레버보의 자유단에 집중하중 5kN 이 작용할 때 고정단 A 의 휨모멘트 크기는?",
+    "choices": [
+      "5kN·m",
+      "10kN·m",
+      "20kN·m",
+      "40kN·m"
+    ],
+    "answer": 3,
+    "oneLineConcept": "캔틸레버 자유단 집중하중: 고정단 모멘트 = P × L",
+    "explanation": "캔틸레버는 고정단에서 휨모멘트가 가장 크고, 크기는 하중 × 고정단까지 거리입니다.\n\n1. 식: M_A = P × L\n2. 대입: 5 × 4\n3. 답: 20kN·m\n4. 검산: 자유단에서 고정단 쪽으로 2m 지점은 5 × 2 = 10kN·m 이고, 거리에 비례해 4m 에서 20kN·m 가 됩니다.\n\n**틀린 선지**\n- 5kN·m: 하중 크기만 적은 값으로 거리를 곱하지 않았습니다.\n- 10kN·m: 보 가운데(자유단에서 2m) 지점의 휨모멘트입니다.\n- 40kN·m: 거리를 두 배로 잘못 잡은 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "캔틸레버",
+      "휨모멘트",
+      "계산"
+    ],
+    "image": "cantilever-end-5kn-4m.svg",
+    "imageAlt": "왼쪽 끝 A 가 벽에 고정된(빗금 친 벽) 수평 캔틸레버보가 있다. 보 길이는 4m 이고, 오른쪽 자유단 B 에 아래로 향하는 집중하중 5kN 이 작용한다.",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-structural-mechanics-0007",
+    "certId": "architecture-engineer",
+    "subjectId": "structure",
+    "chapterId": "structural-mechanics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "폭 b = 200mm, 높이 h = 300mm 인 직사각형 단면의 도심축(수평축)에 대한 단면2차모멘트는?",
+    "choices": [
+      "2.0 × 10⁸ mm⁴",
+      "4.5 × 10⁸ mm⁴",
+      "9.0 × 10⁸ mm⁴",
+      "1.8 × 10⁹ mm⁴"
+    ],
+    "answer": 2,
+    "oneLineConcept": "직사각형 단면2차모멘트(도심축) = bh³/12",
+    "explanation": "단면2차모멘트는 보가 휘는 것에 저항하는 단면 모양의 능력이고, 높이의 세제곱에 비례합니다.\n\n1. 식: I = bh³ / 12\n2. h³ = 300³ = 27,000,000 = 2.7 × 10⁷\n3. bh³ = 200 × 2.7 × 10⁷ = 5.4 × 10⁹\n4. I = 5.4 × 10⁹ ÷ 12 = 4.5 × 10⁸ mm⁴\n5. 검산: 4.5 × 10⁸ × 12 = 5.4 × 10⁹ 로 맞습니다.\n\n**틀린 선지**\n- 2.0 × 10⁸ mm⁴: b 와 h 를 바꾸어 hb³/12 로 계산한 값입니다.\n- 9.0 × 10⁸ mm⁴: bh³/6 으로 계산한 값입니다.\n- 1.8 × 10⁹ mm⁴: 밑변 축에 대한 값 bh³/3 입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "단면의 성질",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-structural-mechanics-0008",
+    "certId": "architecture-engineer",
+    "subjectId": "structure",
+    "chapterId": "structural-mechanics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "폭 100mm, 높이 300mm 인 직사각형 단면의 도심축(수평축)에 대한 단면계수는?",
+    "choices": [
+      "5.0 × 10⁵ mm³",
+      "1.5 × 10⁶ mm³",
+      "3.0 × 10⁶ mm³",
+      "4.5 × 10⁶ mm³"
+    ],
+    "answer": 2,
+    "oneLineConcept": "직사각형 단면계수 Z = bh²/6",
+    "explanation": "단면계수는 휨응력을 구할 때 쓰는 값(σ = M/Z)입니다.\n\n1. 식: Z = bh² / 6\n2. h² = 300² = 90,000\n3. bh² = 100 × 90,000 = 9,000,000\n4. Z = 9,000,000 ÷ 6 = 1,500,000 = 1.5 × 10⁶ mm³\n5. 검산: 단면2차모멘트 I = 100 × 300³ ÷ 12 = 2.25 × 10⁸ 을 h/2 = 150 으로 나누면 1.5 × 10⁶ 으로 같습니다.\n\n**틀린 선지**\n- 5.0 × 10⁵ mm³: b 와 h 를 바꾸어 hb²/6 으로 계산한 값입니다.\n- 3.0 × 10⁶ mm³: bh²/3 으로 계산한 값입니다.\n- 4.5 × 10⁶ mm³: bh²/2 로 계산한 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "단면의 성질",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-structural-mechanics-0009",
+    "certId": "architecture-engineer",
+    "subjectId": "structure",
+    "chapterId": "structural-mechanics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "탄성계수 E = 200,000MPa 인 강봉에 인장응력 200MPa 이 생겼을 때 변형률은? (탄성 범위)",
+    "choices": [
+      "0.0001",
+      "0.001",
+      "0.01",
+      "1,000"
+    ],
+    "answer": 2,
+    "oneLineConcept": "후크의 법칙: 응력 = 탄성계수 × 변형률 (σ = Eε)",
+    "explanation": "탄성 범위에서는 응력이 변형률에 비례합니다.\n\n1. 식: ε = σ ÷ E\n2. 대입: 200 ÷ 200,000\n3. 답: 0.001\n4. 검산: 200,000 × 0.001 = 200MPa 로 맞습니다.\n\n**틀린 선지**\n- 0.0001: 자릿수를 하나 잘못 옮긴 값입니다.\n- 0.01: 자릿수를 하나 잘못 옮긴 값입니다.\n- 1,000: E 를 σ 로 나눈 값으로 거꾸로 계산했습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "응력도",
+      "변형도",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-structural-mechanics-0010",
+    "certId": "architecture-engineer",
+    "subjectId": "structure",
+    "chapterId": "structural-mechanics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "가운데에 집중하중을 받는 단순보에서 다른 조건은 그대로 두고 경간(L)만 2배로 늘리면 가운데 처짐은 몇 배가 되는가?",
+    "choices": [
+      "2배",
+      "4배",
+      "8배",
+      "16배"
+    ],
+    "answer": 3,
+    "oneLineConcept": "단순보 중앙 집중하중 처짐 δ = PL³/48EI, L 의 세제곱에 비례",
+    "explanation": "처짐 식에서 길이 L 은 세제곱으로 들어갑니다.\n\n1. 식: δ = PL³ / (48EI)\n2. L 을 2L 로 바꾸면 (2L)³ = 8L³\n3. 따라서 처짐은 8배가 됩니다.\n4. 검산: 2 × 2 × 2 = 8 입니다.\n\n**틀린 선지**\n- 2배: L 에 단순 비례한다고 본 값입니다.\n- 4배: L 의 제곱에 비례한다고 본 값입니다.\n- 16배: L 의 네제곱에 비례한다고 본 값으로, 등분포하중 처짐 식과 헷갈린 것입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "처짐"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-structural-mechanics-0011",
+    "certId": "architecture-engineer",
+    "subjectId": "structure",
+    "chapterId": "structural-mechanics",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "그림과 같이 길이 8m 인 단순보의 A 지점에서 2m 떨어진 곳에 집중하중 16kN 이 작용할 때 보의 최대 휨모멘트는?",
+    "choices": [
+      "12kN·m",
+      "24kN·m",
+      "32kN·m",
+      "48kN·m"
+    ],
+    "answer": 2,
+    "oneLineConcept": "한 점 집중하중 단순보 최대 휨모멘트 = Pab/L (하중점)",
+    "explanation": "집중하중 하나를 받는 단순보는 하중이 놓인 점에서 휨모멘트가 가장 큽니다.\n\n1. B 점에 대한 모멘트 평형: R_A × 8 = 16 × 6 → R_A = 12kN\n2. R_B = 16 − 12 = 4kN\n3. 하중점 휨모멘트: M = R_A × 2 = 12 × 2 = 24kN·m\n4. 검산: 공식 Pab/L = 16 × 2 × 6 ÷ 8 = 24kN·m, 오른쪽에서 R_B × 6 = 4 × 6 = 24kN·m 로 모두 같습니다.\n\n**틀린 선지**\n- 12kN·m: A 지점 반력의 크기로 휨모멘트가 아닙니다.\n- 32kN·m: 하중이 가운데에 있다고 보고 PL/4 로 계산한 값입니다.\n- 48kN·m: R_A 에 4m 를 곱한 값으로 하중점까지 거리를 잘못 잡았습니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "단순보",
+      "휨모멘트",
+      "계산"
+    ],
+    "image": "sb-offset-16kn-2m-8m.svg",
+    "imageAlt": "왼쪽 끝 A 는 회전지점, 오른쪽 끝 B 는 이동지점인 수평 단순보가 있다. 전체 길이는 8m 이고, A 에서 2m, B 에서 6m 떨어진 점에 아래로 향하는 집중하중 16kN 이 작용한다.",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-structural-mechanics-0012",
+    "certId": "architecture-engineer",
+    "subjectId": "structure",
+    "chapterId": "structural-mechanics",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "등분포하중 3kN/m 이 전 길이에 작용하는 길이 4m 캔틸레버보의 고정단 휨모멘트 크기는?",
+    "choices": [
+      "6kN·m",
+      "12kN·m",
+      "24kN·m",
+      "48kN·m"
+    ],
+    "answer": 3,
+    "oneLineConcept": "캔틸레버 등분포하중 고정단 모멘트 = wL²/2",
+    "explanation": "등분포하중은 전체 하중이 가운데 한 점에 모였다고 보고 계산할 수 있습니다.\n\n1. 전체 하중: 3 × 4 = 12kN\n2. 고정단에서 그 합력까지 거리: 4 ÷ 2 = 2m\n3. 고정단 모멘트: 12 × 2 = 24kN·m\n4. 검산: 공식 wL²/2 = 3 × 16 ÷ 2 = 24kN·m 로 같습니다.\n\n**틀린 선지**\n- 6kN·m: 단순보 공식 wL²/8 로 계산한 값입니다.\n- 12kN·m: 전체 하중만 적고 거리를 곱하지 않은 값입니다.\n- 48kN·m: 2로 나누지 않고 wL² 로 계산한 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "캔틸레버",
+      "휨모멘트",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-structural-mechanics-0013",
+    "certId": "architecture-engineer",
+    "subjectId": "structure",
+    "chapterId": "structural-mechanics",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "양쪽 끝이 모두 고정지점인 보(평면 구조, 수평 반력 포함)의 판별 결과로 옳은 것은?",
+    "choices": [
+      "정정",
+      "1차 부정정",
+      "2차 부정정",
+      "3차 부정정"
+    ],
+    "answer": 4,
+    "oneLineConcept": "부정정 차수 = 반력 수 − 평형식 수(3)",
+    "explanation": "고정지점은 수직·수평 반력과 모멘트 반력, 모두 3개를 가집니다.\n\n1. 반력 수: 3 + 3 = 6개\n2. 평면 평형 조건식: 3개\n3. 부정정 차수: 6 − 3 = 3차 부정정\n4. 검산: 한쪽만 고정한 캔틸레버는 반력 3개로 정정이고, 여기에 고정단 하나(반력 3개)가 더해져 3차가 됩니다.\n\n**틀린 선지**\n- 정정: 반력이 3개일 때(단순보·캔틸레버)의 결과입니다.\n- 1차 부정정: 한쪽 고정·다른 쪽 이동지점인 보의 결과입니다.\n- 2차 부정정: 한쪽 고정·다른 쪽 회전지점인 보의 결과입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "판별",
+      "부정정"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "architecture-engineer-structural-mechanics-0014",
+    "certId": "architecture-engineer",
+    "subjectId": "structure",
+    "chapterId": "structural-mechanics",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "폭 b = 150mm, 높이 h = 200mm 인 직사각형 단면에서 밑변을 지나는 축에 대한 단면2차모멘트는?",
+    "choices": [
+      "1.0 × 10⁸ mm⁴",
+      "2.0 × 10⁸ mm⁴",
+      "4.0 × 10⁸ mm⁴",
+      "1.2 × 10⁹ mm⁴"
+    ],
+    "answer": 3,
+    "oneLineConcept": "직사각형 밑변 축 단면2차모멘트 = bh³/3 (평행축 정리)",
+    "explanation": "도심축 값에 평행축 정리(I = I도심 + A × 거리²)를 더하면 됩니다.\n\n1. 도심축 값: bh³/12 = 150 × 200³ ÷ 12 = 150 × 8,000,000 ÷ 12 = 1.0 × 10⁸ mm⁴\n2. 면적 × 거리²: (150 × 200) × 100² = 30,000 × 10,000 = 3.0 × 10⁸ mm⁴\n3. 합계: 1.0 × 10⁸ + 3.0 × 10⁸ = 4.0 × 10⁸ mm⁴\n4. 검산: bh³/3 = 150 × 8,000,000 ÷ 3 = 4.0 × 10⁸ mm⁴ 로 같습니다.\n\n**틀린 선지**\n- 1.0 × 10⁸ mm⁴: 도심축에 대한 값(bh³/12)입니다.\n- 2.0 × 10⁸ mm⁴: bh³/6 으로 계산한 값입니다.\n- 1.2 × 10⁹ mm⁴: 나누지 않은 bh³ 값입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "단면의 성질",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+]
