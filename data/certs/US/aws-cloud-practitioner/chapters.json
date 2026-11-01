@@ -1,0 +1,56 @@
+{
+  "notesBy": "ai",
+  "subjects": [
+    {
+      "id": "cloud-practitioner",
+      "name": "Cloud Practitioner (CLF-C02)",
+      "questionCount": 65,
+      "chapters": [
+        {
+          "id": "cloud-concepts",
+          "name": "Cloud Concepts",
+          "importance": 4,
+          "examWeight": 24,
+          "summary": "Benefits of the AWS Cloud, the six pillars of the AWS Well-Architected Framework, migration strategies and the AWS Cloud Adoption Framework (AWS CAF), and cloud economics such as fixed versus variable costs and rightsizing.",
+          "keyPoints": [
+            "Trade fixed up-front expense for variable pay-as-you-go expense.",
+            "The Well-Architected Framework has six pillars, including sustainability."
+          ]
+        },
+        {
+          "id": "security-compliance",
+          "name": "Security and Compliance",
+          "importance": 5,
+          "examWeight": 30,
+          "summary": "The AWS shared responsibility model, security and compliance resources such as AWS Artifact, governance and monitoring, and access management with IAM users, groups, roles, policies, MFA, and the root user, plus security services such as AWS Shield, AWS WAF, Amazon GuardDuty, and Amazon Inspector.",
+          "keyPoints": [
+            "AWS secures the cloud itself; the customer secures what they put in the cloud.",
+            "Protect the root user with MFA and do not use it for everyday tasks."
+          ]
+        },
+        {
+          "id": "cloud-technology-services",
+          "name": "Cloud Technology and Services",
+          "importance": 5,
+          "examWeight": 34,
+          "summary": "Ways to deploy and operate in AWS, the global infrastructure of Regions, Availability Zones, and edge locations, and the main compute, database, network, storage, AI/ML, and analytics services.",
+          "keyPoints": [
+            "A Region contains multiple isolated Availability Zones.",
+            "Amazon S3 is object storage; Amazon EBS is block storage for one EC2 instance."
+          ]
+        },
+        {
+          "id": "billing-pricing-support",
+          "name": "Billing, Pricing, and Support",
+          "importance": 3,
+          "examWeight": 12,
+          "summary": "EC2 pricing options (On-Demand, Reserved Instances, Savings Plans, Spot Instances, Dedicated Hosts), billing and cost tools such as AWS Budgets, AWS Cost Explorer, and AWS Pricing Calculator, AWS Organizations consolidated billing, and AWS Support plans and resources.",
+          "keyPoints": [
+            "Spot Instances are cheapest but can be interrupted.",
+            "AWS Budgets alerts you before you overspend; Cost Explorer shows past spending."
+          ]
+        }
+      ]
+    }
+  ]
+}

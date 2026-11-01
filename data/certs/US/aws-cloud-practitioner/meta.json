@@ -1,0 +1,86 @@
+{
+  "id": "aws-cloud-practitioner",
+  "country": "US",
+  "addedAt": "2026-11-02",
+  "name": "AWS Certified Cloud Practitioner",
+  "officialName": "AWS Certified Cloud Practitioner (CLF-C02)",
+  "spacedName": "AWS Certified Cloud Practitioner",
+  "shortNames": [
+    "AWS Cloud Practitioner",
+    "CLF-C02",
+    "AWS CCP",
+    "AWS Cloud Practitioner exam"
+  ],
+  "relatedCertIds": [
+    "comptia-security-plus",
+    "comptia-a-plus"
+  ],
+  "field": "IT",
+  "visualNeed": "none",
+  "certType": "professional-certification",
+  "issuer": {
+    "name": "Amazon Web Services (AWS)",
+    "url": "https://aws.amazon.com/certification/"
+  },
+  "trademarkNotice": "Amazon Web Services, AWS, and AWS Certified are trademarks of Amazon.com, Inc. or its affiliates. This site is not affiliated with or endorsed by AWS.",
+  "order": 400,
+  "updatedAt": "2026-11-02",
+  "examInfo": {
+    "totalQuestions": 65,
+    "timeLimitMinutes": 90,
+    "format": "The real AWS Certified Cloud Practitioner exam (CLF-C02) has 65 questions in 90 minutes. Each question is either multiple choice (one correct answer out of four) or multiple response (two or more correct answers out of five or more). AWS scores 50 of the questions; the other 15 are unscored and are not marked. This practice exam is one 65-question, 90-minute set of single-answer multiple-choice questions with four choices, spread across the four exam domains by their published weights. All questions on this site are original AI-written practice questions, not real exam questions.",
+    "choiceCount": 4,
+    "passCriteria": {
+      "averageScore": 70,
+      "subjectMinScore": null,
+      "shortLabel": "70% practice target",
+      "description": "AWS reports a scaled score from 100 to 1,000, and the minimum passing score is 700. The exam is compensatory: you only need to pass the exam as a whole, not each domain. Scaled scores cannot be turned into a percent of questions correct, so this site uses 70% correct as a practice target only. It is not an official conversion."
+    }
+  },
+  "content": {
+    "eligibility": "There are no prerequisites. AWS says candidates could have up to 6 months of exposure to the AWS Cloud, but this is not required. The exam is offered at Pearson VUE test centers or as an online proctored exam, and the fee listed by AWS is 100 USD.",
+    "intro": "AWS Certified Cloud Practitioner (exam CLF-C02) is the entry-level AWS certification. It checks that you understand the basics of the AWS Cloud: what the cloud is and why businesses use it, how security responsibility is shared between AWS and the customer, what the main AWS services do, and how AWS pricing, billing, and support work. It is meant for people in technical, sales, finance, and management roles alike, and you do not need to write code or build systems to pass.",
+    "trendSummary": "AWS publishes four content domains for CLF-C02: Cloud Technology and Services is the largest at 34%, followed by Security and Compliance (30%), Cloud Concepts (24%), and Billing, Pricing, and Support (12%). Most questions describe a simple business need and ask which AWS service, pricing option, or responsibility fits it. AWS revised the CLF-C02 exam guide several times in 2026 (mostly the lists of in-scope and out-of-scope services), so check the current exam guide before you test.",
+    "studyTip": "Learn what each core service is for in one sentence, because many questions are \"which service should they use?\" Then learn the shared responsibility model and IAM best practices well, since Security and Compliance is 30% of the exam. Finish with the EC2 pricing options and the billing tools, which are easy points once you know the differences.",
+    "faqs": [
+      {
+        "question": "What is the passing score for AWS Cloud Practitioner?",
+        "answer": "AWS reports a scaled score from 100 to 1,000, and 700 is the minimum passing score. It is a scaled score, not a percent, so this site uses 70% correct only as a practice target."
+      },
+      {
+        "question": "How many questions are on the exam and how long is it?",
+        "answer": "The CLF-C02 exam has 65 questions in 90 minutes. Fifteen of them are unscored questions that AWS uses to test new content, and you cannot tell which ones they are, so answer every question."
+      },
+      {
+        "question": "Does the real exam have questions with more than one answer?",
+        "answer": "Yes. Some questions are multiple response, where you pick two or more correct answers from five or more choices. This practice exam uses only single-answer questions with four choices, so read the real questions carefully for how many answers they ask for."
+      },
+      {
+        "question": "Do I need technical experience?",
+        "answer": "No. There are no prerequisites. AWS says candidates could have up to 6 months of exposure to the AWS Cloud, but this is not required, and the exam does not ask you to write code."
+      },
+      {
+        "question": "Are these real AWS exam questions?",
+        "answer": "No. AWS keeps its exam questions confidential. Every question on this site is an original AI-written practice question based on the published exam guide, and some may contain errors. Please report anything that looks wrong."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "title": "AWS, AWS Certified Cloud Practitioner exam page (90 minutes; 65 questions; multiple choice or multiple response; 100 USD; Pearson VUE test center or online proctored; Italian and German versions retire after December 31, 2026)",
+      "url": "https://aws.amazon.com/certification/certified-cloud-practitioner/"
+    },
+    {
+      "title": "AWS, AWS Certified Cloud Practitioner (CLF-C02) exam guide (50 scored and 15 unscored questions; scaled score 100-1,000, minimum passing score 700; compensatory scoring; domains 24/30/34/12%)",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/cloud-practitioner-02.html"
+    },
+    {
+      "title": "AWS, CLF-C02 exam guide revisions (2026 updates)",
+      "url": "https://docs.aws.amazon.com/aws-certification/latest/cloud-practitioner-02/clf-02-revisions.html"
+    },
+    {
+      "title": "AWS Training and Certification Blog, Coming soon: updates to AWS Certified Cloud Practitioner exam (CLF-C02 from September 19, 2023)",
+      "url": "https://aws.amazon.com/blogs/training-and-certification/coming-soon-updates-to-aws-certified-cloud-practitioner-exam/"
+    }
+  ]
+}
