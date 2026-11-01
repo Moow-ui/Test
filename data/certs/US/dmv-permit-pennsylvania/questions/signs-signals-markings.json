@@ -863,5 +863,267 @@
       "regulatory signs"
     ],
     "levelLock": true
+  },
+  {
+    "id": "dmv-permit-pennsylvania-signs-signals-markings-0025",
+    "certId": "dmv-permit-pennsylvania",
+    "subjectId": "knowledge-test",
+    "chapterId": "signs-signals-markings",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "You are about to turn onto a street and see this sign facing you. What does it mean?",
+    "choices": [
+      "You must not drive onto this road from where you are",
+      "Stop, then go when the road is clear",
+      "Slow down because the road ahead is closed for work",
+      "You may enter only to make a U-turn"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Do Not Enter: traffic may not go this way",
+    "explanation": "This is a **Do Not Enter** sign. It is placed where traffic is not allowed to go in that direction, such as the wrong end of a one-way street or an exit ramp. **You must not drive past it.**\n\n**Wrong choices**\n- Stop, then go when the road is clear: That is the meaning of a STOP sign. This sign tells you not to enter at all.\n- Slow down because the road ahead is closed for work: Work zone signs are orange. This sign is about the direction of traffic, not road work.\n- You may enter only to make a U-turn: The sign does not allow entering for any reason, including turning around.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "do not enter",
+      "regulatory sign",
+      "one-way"
+    ],
+    "image": "pa-do-not-enter.svg",
+    "imageAlt": "A square white sign with a large red circle. Inside the circle is a white horizontal bar, with the words DO NOT above the bar and ENTER below it, in white letters.",
+    "imageSource": {
+      "kind": "public",
+      "title": "MUTCD R5-1 Do Not Enter sign (FHWA, 11th Edition)",
+      "license": "U.S. federal government work, public domain"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-pennsylvania-signs-signals-markings-0026",
+    "certId": "dmv-permit-pennsylvania",
+    "subjectId": "knowledge-test",
+    "chapterId": "signs-signals-markings",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What does this sign tell you?",
+    "choices": [
+      "45 mph is the lowest speed allowed on this road",
+      "45 mph is a suggested speed for a curve",
+      "45 mph is the highest legal speed in good conditions",
+      "45 mph is the speed for trucks only"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Speed limit sign: the top legal speed in good conditions",
+    "explanation": "This is a **Speed Limit** sign. It shows the **highest speed you may legally drive** on that road when conditions are good. In rain, fog, or heavy traffic you must drive slower than the posted limit.\n\n**Wrong choices**\n- 45 mph is the lowest speed allowed on this road: A lowest-speed rule uses a separate MINIMUM SPEED sign. This sign shows the top speed.\n- 45 mph is a suggested speed for a curve: Suggested speeds for curves are shown on small yellow signs. This is a white regulatory sign that you must obey.\n- 45 mph is the speed for trucks only: The sign applies to all vehicles. A truck-only limit would say TRUCKS on it.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "speed limit",
+      "regulatory sign"
+    ],
+    "image": "pa-speed-limit-45.svg",
+    "imageAlt": "A white upright rectangle with a black border. Black letters read SPEED LIMIT, and below them is the large number 45.",
+    "imageSource": {
+      "kind": "public",
+      "title": "MUTCD R2-1 Speed Limit sign (FHWA, 11th Edition)",
+      "license": "U.S. federal government work, public domain"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-pennsylvania-signs-signals-markings-0027",
+    "certId": "dmv-permit-pennsylvania",
+    "subjectId": "knowledge-test",
+    "chapterId": "signs-signals-markings",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "What should you do when you see this sign?",
+    "choices": [
+      "Change lanes because the road narrows",
+      "Stop and wait for a flagger",
+      "Speed up to get past the area quickly",
+      "Slow down because there is a sharp rise in the road"
+    ],
+    "answer": 4,
+    "oneLineConcept": "BUMP sign: slow down for a sharp rise in the road",
+    "explanation": "This yellow warning sign says **BUMP**. It warns of a **sharp rise in the road surface** that can jolt your car or make you lose control. **Slow down** before you reach it.\n\n**Wrong choices**\n- Change lanes because the road narrows: The sign warns about the road surface, not a narrowing road. A narrowing road has its own warning sign.\n- Stop and wait for a flagger: There is no flagger mentioned. Flagger signs are orange and used in work zones.\n- Speed up to get past the area quickly: Speeding up over a bump is dangerous. You should slow down.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "bump",
+      "warning sign",
+      "road surface"
+    ],
+    "image": "pa-bump.svg",
+    "imageAlt": "A yellow diamond-shaped sign with a black border and one word in black capital letters: BUMP.",
+    "imageSource": {
+      "kind": "public",
+      "title": "MUTCD W8-1 Bump sign (FHWA, 11th Edition)",
+      "license": "U.S. federal government work, public domain"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-pennsylvania-signs-signals-markings-0028",
+    "certId": "dmv-permit-pennsylvania",
+    "subjectId": "knowledge-test",
+    "chapterId": "signs-signals-markings",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "What does this sign warn you about?",
+    "choices": [
+      "A bridge ahead is narrower than the road you are on",
+      "Only one lane of traffic may cross the bridge at a time, controlled by a signal",
+      "The bridge ahead is closed",
+      "Trucks are not allowed on the bridge"
+    ],
+    "answer": 1,
+    "oneLineConcept": "NARROW BRIDGE: bridge is narrower than the road",
+    "explanation": "The **NARROW BRIDGE** sign warns that the **bridge ahead is narrower than the road** leading to it. Slow down, stay in your lane, and watch for oncoming traffic, especially large vehicles.\n\n**Wrong choices**\n- Only one lane of traffic may cross the bridge at a time, controlled by a signal: The sign does not mention a signal or one-lane traffic. A one-lane bridge has its own ONE LANE BRIDGE sign.\n- The bridge ahead is closed: A closed bridge would use a ROAD CLOSED or BRIDGE CLOSED sign, not a yellow warning sign.\n- Trucks are not allowed on the bridge: Truck limits are shown on white regulatory signs. This sign only warns about width.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "narrow bridge",
+      "warning sign"
+    ],
+    "image": "pa-narrow-bridge.svg",
+    "imageAlt": "A yellow diamond-shaped sign with a black border and two lines of black capital letters: NARROW on the first line and BRIDGE on the second.",
+    "imageSource": {
+      "kind": "public",
+      "title": "MUTCD W5-2 Narrow Bridge sign (FHWA, 11th Edition)",
+      "license": "U.S. federal government work, public domain"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-pennsylvania-signs-signals-markings-0029",
+    "certId": "dmv-permit-pennsylvania",
+    "subjectId": "knowledge-test",
+    "chapterId": "signs-signals-markings",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "What does this sign warn you about?",
+    "choices": [
+      "The road you are on ends at a T",
+      "Your lane will end and merge to the right",
+      "A side road enters from the right ahead",
+      "You must turn right ahead"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Side road sign: watch for cars entering from that side",
+    "explanation": "This yellow warning sign shows a **side road** joining your road from the **right** ahead. The tall line is your road and the short line is the side road. **Watch for vehicles** pulling out or turning in.\n\n**Wrong choices**\n- The road you are on ends at a T: A T intersection sign shows your road ending at a crossing line. Here the tall line keeps going.\n- Your lane will end and merge to the right: A merge sign shows two lines coming together. This sign shows a road joining at a right angle.\n- You must turn right ahead: Warning signs do not order a turn. The short line only shows where another road joins.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "side road",
+      "intersection",
+      "warning sign"
+    ],
+    "image": "pa-side-road-right.svg",
+    "imageAlt": "A yellow diamond-shaped sign with a black border. A thick black vertical line runs from bottom to top. A shorter black line goes out to the right from the middle of the vertical line at a right angle.",
+    "imageSource": {
+      "kind": "public",
+      "title": "MUTCD W2-2R Side Road sign (FHWA, 11th Edition)",
+      "license": "U.S. federal government work, public domain"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "dmv-permit-pennsylvania-signs-signals-markings-0030",
+    "certId": "dmv-permit-pennsylvania",
+    "subjectId": "knowledge-test",
+    "chapterId": "signs-signals-markings",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "You missed your street and want to turn around at the next intersection, where this sign is posted. What is true?",
+    "choices": [
+      "You may turn around if no cars are coming",
+      "You may turn left, but you may not turn right",
+      "You may turn around only when the light is green",
+      "You must not turn around to go back the other way here"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Red circle and slash over U arrow: no U-turns",
+    "explanation": "A red circle with a slash means \"no.\" The black arrow shaped like an upside-down U means a turn back the other way. So this is a **No U-Turn** sign: you **may not make a U-turn** here. Go on to a place where turning around is legal.\n\n**Wrong choices**\n- You may turn around if no cars are coming: The sign is a rule you must obey, even when no traffic is coming.\n- You may turn left, but you may not turn right: The sign only bans turning around. It says nothing about allowing or banning right turns.\n- You may turn around only when the light is green: The ban applies at all times. A green light does not cancel it.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-02",
+    "tags": [
+      "no u-turn",
+      "prohibition",
+      "regulatory sign"
+    ],
+    "image": "pa-no-u-turn.svg",
+    "imageAlt": "A square white sign with a black arrow shaped like an upside-down U: it goes up on the right, curves over the top, and comes down on the left, ending in an arrowhead pointing down. A red circle with a red diagonal slash is drawn over the arrow.",
+    "imageSource": {
+      "kind": "public",
+      "title": "MUTCD R3-4 No U-Turn sign (FHWA, 11th Edition)",
+      "license": "U.S. federal government work, public domain"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
   }
 ]
