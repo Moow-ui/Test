@@ -1,0 +1,734 @@
+[
+  {
+    "id": "ati-teas-measurement-data-0001",
+    "certId": "ati-teas",
+    "subjectId": "mathematics",
+    "chapterId": "measurement-data",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What is the mean of this data set?\n\n3, 9, 4, 10, 4",
+    "choices": [
+      "4",
+      "6",
+      "7",
+      "30"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Mean = sum ÷ number of values",
+    "explanation": "The **mean** (average) is the sum divided by how many values there are.\n\n1. Sum: 3 + 9 + 4 + 10 + 4 = 30\n2. Count: 5 values\n3. Mean: 30 ÷ 5 = 6\n\nCheck: 6 × 5 = 30.\n\n**Wrong choices**\n- 4: 4 is the median and the mode, not the mean.\n- 7: 7 is the range (10 − 3).\n- 30: 30 is the sum; you still need to divide by 5.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "mean",
+      "statistics"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "ati-teas-measurement-data-0002",
+    "certId": "ati-teas",
+    "subjectId": "mathematics",
+    "chapterId": "measurement-data",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What is the median of this data set?\n\n12, 7, 15, 9, 20, 11",
+    "choices": [
+      "11.5",
+      "12",
+      "11",
+      "About 12.3"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Median: order the data; average the two middles if even",
+    "explanation": "Put the data in order first, then find the middle.\n\n1. In order: 7, 9, 11, 12, 15, 20\n2. There are 6 values, so the two middle values are 11 and 12.\n3. Median = (11 + 12) ÷ 2 = 11.5\n\nCheck: three values (7, 9, 11) are below 11.5 and three (12, 15, 20) are above.\n\n**Wrong choices**\n- 12: This picks a middle number without putting the data in order first.\n- 11: With an even number of values, the median is the average of the two middle values.\n- About 12.3: This is the mean (74 ÷ 6), not the median.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "median",
+      "statistics"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "ati-teas-measurement-data-0003",
+    "certId": "ati-teas",
+    "subjectId": "mathematics",
+    "chapterId": "measurement-data",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "How many grams are in 3.5 kilograms?",
+    "choices": [
+      "3,500 g",
+      "350 g",
+      "35,000 g",
+      "0.0035 g"
+    ],
+    "answer": 1,
+    "oneLineConcept": "1 kg = 1,000 g; big unit → small unit, multiply",
+    "explanation": "\"Kilo\" means 1,000, so 1 kg = 1,000 g. Going from a bigger unit to a smaller unit, multiply.\n\n1. 3.5 × 1,000 = 3,500 g\n\nCheck: 3,500 ÷ 1,000 = 3.5 kg.\n\n**Wrong choices**\n- 350 g: This multiplies by 100; 1 kilogram is 1,000 grams.\n- 35,000 g: This multiplies by 10,000.\n- 0.0035 g: This divides by 1,000 instead of multiplying.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "metric conversion"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "ati-teas-measurement-data-0004",
+    "certId": "ati-teas",
+    "subjectId": "mathematics",
+    "chapterId": "measurement-data",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A bandage is 10 inches long. Using 1 inch = 2.54 centimeters, how long is the bandage in centimeters?",
+    "choices": [
+      "3.94 cm",
+      "254 cm",
+      "25.4 cm",
+      "12.54 cm"
+    ],
+    "answer": 3,
+    "oneLineConcept": "1 inch = 2.54 cm; inches → cm, multiply",
+    "explanation": "Each inch is 2.54 cm, so multiply.\n\n1. 10 × 2.54 = 25.4 cm\n\nCheck: 25.4 ÷ 2.54 = 10 inches.\n\n**Wrong choices**\n- 3.94 cm: This divides by 2.54 instead of multiplying.\n- 254 cm: The decimal point is in the wrong place.\n- 12.54 cm: This adds 2.54 instead of multiplying.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "unit conversion"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "ati-teas-measurement-data-0005",
+    "certId": "ati-teas",
+    "subjectId": "mathematics",
+    "chapterId": "measurement-data",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A rectangular garden is 12 feet long and 7 feet wide. What is its perimeter?",
+    "choices": [
+      "84 feet",
+      "38 feet",
+      "19 feet",
+      "26 feet"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Perimeter of a rectangle = 2 × length + 2 × width",
+    "explanation": "**Perimeter** is the distance around the shape. A rectangle has two lengths and two widths.\n\n1. 2 × 12 = 24\n2. 2 × 7 = 14\n3. 24 + 14 = 38 feet\n\nCheck: 12 + 7 + 12 + 7 = 38.\n\n**Wrong choices**\n- 84 feet: 84 is the area in square feet (12 × 7), not the perimeter.\n- 19 feet: This adds only one length and one width.\n- 26 feet: This adds 12 + 7 + 7 and leaves out one side.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "perimeter",
+      "geometry"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "ati-teas-measurement-data-0006",
+    "certId": "ati-teas",
+    "subjectId": "mathematics",
+    "chapterId": "measurement-data",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A triangle has a base of 10 cm and a height of 6 cm. What is its area?",
+    "choices": [
+      "60 square cm",
+      "16 square cm",
+      "15 square cm",
+      "30 square cm"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Triangle area = ½ × base × height",
+    "explanation": "Area of a triangle = ½ × base × height.\n\n1. 10 × 6 = 60\n2. ½ × 60 = 30 square cm\n\nCheck: a triangle is half of a 10-by-6 rectangle, and half of 60 is 30.\n\n**Wrong choices**\n- 60 square cm: This forgets to take half; 10 × 6 is the area of a rectangle.\n- 16 square cm: This adds the base and height.\n- 15 square cm: This takes half twice.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "area",
+      "geometry"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "ati-teas-measurement-data-0007",
+    "certId": "ati-teas",
+    "subjectId": "mathematics",
+    "chapterId": "measurement-data",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "The bar graph shows the number of patients seen at a clinic each weekday. How many more patients were seen on Wednesday than on Tuesday?",
+    "choices": [
+      "12",
+      "9",
+      "6",
+      "48"
+    ],
+    "answer": 1,
+    "oneLineConcept": "\"How many more\" means subtract the two bar values",
+    "explanation": "Read each bar, then subtract.\n\n1. Wednesday: 30 patients\n2. Tuesday: 18 patients\n3. 30 − 18 = 12\n\nCheck: 18 + 12 = 30.\n\n**Wrong choices**\n- 9: 9 is the difference between Wednesday (30) and Thursday (21).\n- 6: 6 is the difference between Monday (24) and Tuesday (18).\n- 48: 48 is the total of Tuesday and Wednesday, not the difference.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "bar graph",
+      "reading graphs"
+    ],
+    "image": "bar-clinic-patients.svg",
+    "imageAlt": "Bar graph titled Patients Seen at the Clinic. The horizontal axis shows Monday through Friday; the vertical axis shows number of patients from 0 to 35 in steps of 5. Each bar has its number printed above it: Monday 24, Tuesday 18, Wednesday 30, Thursday 21, Friday 22.",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "ati-teas-measurement-data-0008",
+    "certId": "ati-teas",
+    "subjectId": "mathematics",
+    "chapterId": "measurement-data",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "The high temperatures for five days were 68°F, 75°F, 59°F, 81°F, and 72°F. What is the range?",
+    "choices": [
+      "72°F",
+      "22°F",
+      "71°F",
+      "81°F"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Range = highest value − lowest value",
+    "explanation": "**Range** = highest value − lowest value.\n\n1. Highest: 81\n2. Lowest: 59\n3. 81 − 59 = 22°F\n\nCheck: 59 + 22 = 81.\n\n**Wrong choices**\n- 72°F: 72 is the median (the middle value in order).\n- 71°F: 71 is the mean (355 ÷ 5).\n- 81°F: 81 is the highest value, not the range.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "range",
+      "statistics"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "ati-teas-measurement-data-0009",
+    "certId": "ati-teas",
+    "subjectId": "mathematics",
+    "chapterId": "measurement-data",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A water tank shaped like a rectangular box is 4 feet long, 2 feet wide, and 3 feet tall. One cubic foot holds about 7.5 gallons. About how many gallons does the full tank hold?",
+    "choices": [
+      "24 gallons",
+      "67.5 gallons",
+      "180 gallons",
+      "3.2 gallons"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Box volume = length × width × height",
+    "explanation": "Find the volume, then convert.\n\n1. Volume = 4 × 2 × 3 = 24 cubic feet\n2. Gallons = 24 × 7.5 = 180 gallons\n\nCheck: 20 × 7.5 = 150 and 4 × 7.5 = 30; 150 + 30 = 180.\n\n**Wrong choices**\n- 24 gallons: 24 is the volume in cubic feet; it still needs to be changed to gallons.\n- 67.5 gallons: This adds the sides (4 + 2 + 3 = 9) instead of multiplying them.\n- 3.2 gallons: This divides 24 by 7.5 instead of multiplying.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "volume",
+      "unit conversion"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "ati-teas-measurement-data-0010",
+    "certId": "ati-teas",
+    "subjectId": "mathematics",
+    "chapterId": "measurement-data",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A circle has a radius of 5 inches. Using π ≈ 3.14, what is its area?",
+    "choices": [
+      "31.4 square inches",
+      "314 square inches",
+      "15.7 square inches",
+      "78.5 square inches"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Circle area = π × radius²",
+    "explanation": "Area of a circle = π × r².\n\n1. r² = 5 × 5 = 25\n2. 3.14 × 25 = 78.5 square inches\n\nCheck: 3 × 25 = 75 and 0.14 × 25 = 3.5; 75 + 3.5 = 78.5.\n\n**Wrong choices**\n- 31.4 square inches: 31.4 is the circumference (2 × 3.14 × 5), not the area.\n- 314 square inches: This uses the diameter (10) instead of the radius.\n- 15.7 square inches: This is 3.14 × 5; the radius must be squared.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "area",
+      "circles"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "ati-teas-measurement-data-0011",
+    "certId": "ati-teas",
+    "subjectId": "mathematics",
+    "chapterId": "measurement-data",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A patient weighs 154 pounds. Using 1 kilogram = 2.2 pounds, what is the patient's weight in kilograms?",
+    "choices": [
+      "338.8 kg",
+      "77 kg",
+      "70 kg",
+      "35 kg"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Pounds → kilograms: divide by 2.2",
+    "explanation": "There are more pounds than kilograms for the same weight, so divide by 2.2.\n\n1. 154 ÷ 2.2 = 70 kg\n\nCheck: 70 × 2.2 = 154 pounds.\n\n**Wrong choices**\n- 338.8 kg: This multiplies by 2.2; pounds to kilograms means dividing.\n- 77 kg: This divides by 2 instead of 2.2.\n- 35 kg: This divides by 4.4, not 2.2.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "unit conversion",
+      "weight"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "ati-teas-measurement-data-0012",
+    "certId": "ati-teas",
+    "subjectId": "mathematics",
+    "chapterId": "measurement-data",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "The line graph shows a patient's temperature every 4 hours after a fever medicine was given. Between which two readings did the temperature drop the most?",
+    "choices": [
+      "Between hour 4 and hour 8",
+      "Between hour 0 and hour 4",
+      "Between hour 8 and hour 12",
+      "Between hour 12 and hour 16"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Steepest part of a line graph = biggest change",
+    "explanation": "Find the change between each pair of readings.\n\n1. Hour 0 → 4: 102.0 − 101.6 = 0.4°F\n2. Hour 4 → 8: 101.6 − 100.6 = 1.0°F\n3. Hour 8 → 12: 100.6 − 100.0 = 0.6°F\n4. Hour 12 → 16: 100.0 − 99.4 = 0.6°F\n\nThe largest drop is 1.0°F, between hour 4 and hour 8. On the graph, this is the steepest part of the line.\n\n**Wrong choices**\n- Between hour 0 and hour 4: The drop here is 102.0 − 101.6 = 0.4°F.\n- Between hour 8 and hour 12: The drop here is 100.6 − 100.0 = 0.6°F.\n- Between hour 12 and hour 16: The drop here is 100.0 − 99.4 = 0.6°F.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "line graph",
+      "reading graphs"
+    ],
+    "image": "line-patient-temperature.svg",
+    "imageAlt": "Line graph titled Patient Temperature. The horizontal axis shows hours after medicine was given: 0, 4, 8, 12, and 16. The vertical axis shows temperature from 99.0 to 102.0 °F. The points, each labeled, are: hour 0, 102.0; hour 4, 101.6; hour 8, 100.6; hour 12, 100.0; hour 16, 99.4.",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "ati-teas-measurement-data-0013",
+    "certId": "ati-teas",
+    "subjectId": "mathematics",
+    "chapterId": "measurement-data",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Use the formula °F = (9/5 × °C) + 32. What is 37°C in degrees Fahrenheit?",
+    "choices": [
+      "52.6°F",
+      "69°F",
+      "124.2°F",
+      "98.6°F"
+    ],
+    "answer": 4,
+    "oneLineConcept": "°F = (9/5 × °C) + 32; multiply before adding",
+    "explanation": "Multiply first, then add 32.\n\n1. 9/5 × 37 = 333 ÷ 5 = 66.6\n2. 66.6 + 32 = 98.6°F\n\nCheck: (98.6 − 32) × 5/9 = 66.6 × 5/9 = 37°C.\n\n**Wrong choices**\n- 52.6°F: This multiplies by 5/9 instead of 9/5.\n- 69°F: This only adds 32 and skips the multiplication.\n- 124.2°F: This adds 32 before multiplying, which breaks the order of operations.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "temperature conversion"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "ati-teas-measurement-data-0014",
+    "certId": "ati-teas",
+    "subjectId": "mathematics",
+    "chapterId": "measurement-data",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "During a shift, a patient drank 1.2 liters of water and 350 milliliters of juice. What was the total amount, in milliliters?",
+    "choices": [
+      "470 mL",
+      "1,550 mL",
+      "351.2 mL",
+      "155 mL"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Convert to the same unit before adding",
+    "explanation": "Change everything to the same unit before adding. 1 liter = 1,000 milliliters.\n\n1. 1.2 L × 1,000 = 1,200 mL\n2. 1,200 mL + 350 mL = 1,550 mL\n\nCheck: 1,550 mL = 1.55 L, and 1.2 L + 0.35 L = 1.55 L.\n\n**Wrong choices**\n- 470 mL: This treats 1.2 L as 120 mL; 1 L is 1,000 mL.\n- 351.2 mL: This adds 1.2 + 350 without changing liters to milliliters.\n- 155 mL: The place value is off by a factor of 10.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "metric conversion",
+      "intake"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "ati-teas-measurement-data-0015",
+    "certId": "ati-teas",
+    "subjectId": "mathematics",
+    "chapterId": "measurement-data",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A shoe store sold these sizes in one hour: 7, 8, 8, 8, 9, 10, 11, 12. The manager wants to know which size sold most often. Which measure answers this, and what is its value?",
+    "choices": [
+      "The median, 8.5",
+      "The mode, 8",
+      "The mean, about 9.1",
+      "The range, 5"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Mode = the value that appears most often",
+    "explanation": "The **mode** is the value that appears most often.\n\n1. Count each size: 7 (once), 8 (three times), 9, 10, 11, 12 (once each)\n2. Size 8 appears most often, so the mode is 8.\n\nThe median (8 + 9) ÷ 2 = 8.5, the mean 73 ÷ 8 ≈ 9.1, and the range 12 − 7 = 5 answer different questions.\n\n**Wrong choices**\n- The median, 8.5: The median is the middle value; it does not tell which size sold most.\n- The mean, about 9.1: The mean is the average size; no one bought size 9.1.\n- The range, 5: The range shows the spread from smallest to largest size.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "mode",
+      "statistics"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "ati-teas-measurement-data-0016",
+    "certId": "ati-teas",
+    "subjectId": "mathematics",
+    "chapterId": "measurement-data",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "On a map, 1/2 inch represents 15 miles. Two towns are 3 1/4 inches apart on the map. What is the actual distance between the towns?",
+    "choices": [
+      "48.75 miles",
+      "195 miles",
+      "22.5 miles",
+      "97.5 miles"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Map scales: find miles per 1 inch first",
+    "explanation": "First find how many miles 1 inch stands for.\n\n1. 1/2 inch = 15 miles, so 1 inch = 30 miles\n2. 3 1/4 inches = 3.25 inches\n3. 3.25 × 30 = 97.5 miles\n\nCheck: 3.25 inches is 6.5 half-inches, and 6.5 × 15 = 97.5 miles.\n\n**Wrong choices**\n- 48.75 miles: This uses 1 inch = 15 miles; the scale is 1/2 inch = 15 miles.\n- 195 miles: This doubles the correct answer by using 1/4 inch = 15 miles.\n- 22.5 miles: This multiplies 15 by 1.5 and does not use the 3 1/4 inches.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "scale",
+      "proportions"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "ati-teas-measurement-data-0017",
+    "certId": "ati-teas",
+    "subjectId": "mathematics",
+    "chapterId": "measurement-data",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "The pie chart shows how a family divides its $2,400 monthly budget. How many dollars per month go to food and transportation together?",
+    "choices": [
+      "$840",
+      "$480",
+      "$360",
+      "$1,560"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Pie chart: add the percents, then multiply by the total",
+    "explanation": "Add the two percents, then find that percent of the total.\n\n1. Food 20% + Transportation 15% = 35%\n2. 35% of $2,400 = 0.35 × 2,400 = $840\n\nCheck: food $480 + transportation $360 = $840.\n\n**Wrong choices**\n- $480: $480 is food alone (20% of $2,400).\n- $360: $360 is transportation alone (15% of $2,400).\n- $1,560: $1,560 is the amount for everything except food and transportation (65%).",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "pie chart",
+      "percents"
+    ],
+    "image": "pie-monthly-budget.svg",
+    "imageAlt": "Pie chart titled Monthly Budget: $2,400. Five labeled slices: Rent 40%, Food 20%, Transportation 15%, Utilities 10%, Other 15%.",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "ati-teas-measurement-data-0018",
+    "certId": "ati-teas",
+    "subjectId": "mathematics",
+    "chapterId": "measurement-data",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A rectangular room is 12 feet by 10 feet. A 3-foot by 4-foot area in one corner will not be carpeted. Carpet costs $3 per square foot. How much will the carpet cost?",
+    "choices": [
+      "$360",
+      "$396",
+      "$324",
+      "$108"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Composite area: subtract the part left out",
+    "explanation": "Find the carpeted area, then multiply by the price.\n\n1. Whole room: 12 × 10 = 120 square feet\n2. Corner: 3 × 4 = 12 square feet\n3. Carpeted area: 120 − 12 = 108 square feet\n4. Cost: 108 × $3 = $324\n\nCheck: 120 × 3 = 360 and 12 × 3 = 36; 360 − 36 = $324.\n\n**Wrong choices**\n- $360: This carpets the whole room and forgets to subtract the corner.\n- $396: This adds the corner area instead of subtracting it.\n- $108: 108 is the carpeted area in square feet, not the cost.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "area",
+      "word problems"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "ati-teas-measurement-data-0019",
+    "certId": "ati-teas",
+    "subjectId": "mathematics",
+    "chapterId": "measurement-data",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A cylinder-shaped container has a radius of 3 cm and a height of 10 cm. Using π ≈ 3.14 and V = π × r² × h, what is its volume?",
+    "choices": [
+      "94.2 cubic cm",
+      "1,130.4 cubic cm",
+      "188.4 cubic cm",
+      "282.6 cubic cm"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Cylinder volume = π × r² × height",
+    "explanation": "Use V = π × r² × h.\n\n1. r² = 3 × 3 = 9\n2. 3.14 × 9 = 28.26\n3. 28.26 × 10 = 282.6 cubic cm\n\nCheck: 3 × 9 × 10 = 270, plus 0.14 × 9 × 10 = 12.6; 270 + 12.6 = 282.6.\n\n**Wrong choices**\n- 94.2 cubic cm: This forgets to square the radius (3.14 × 3 × 10).\n- 1,130.4 cubic cm: This uses the diameter (6) instead of the radius.\n- 188.4 cubic cm: This is 2 × 3.14 × 3 × 10, which is the area of the curved side, not the volume.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "volume",
+      "cylinders"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "ati-teas-measurement-data-0020",
+    "certId": "ati-teas",
+    "subjectId": "mathematics",
+    "chapterId": "measurement-data",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A student's scores on four tests were 82, 76, 90, and 88. What score does she need on the fifth test to have a mean of 85 for all five tests?",
+    "choices": [
+      "85",
+      "84",
+      "89",
+      "91"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Missing value for a mean: target total − current sum",
+    "explanation": "Work backward from the total.\n\n1. Total needed for a mean of 85 over 5 tests: 85 × 5 = 425\n2. Sum so far: 82 + 76 + 90 + 88 = 336\n3. Score needed: 425 − 336 = 89\n\nCheck: (336 + 89) ÷ 5 = 425 ÷ 5 = 85.\n\n**Wrong choices**\n- 85: Scoring 85 would keep her average at 84.2, below 85.\n- 84: 84 is the mean of the first four tests.\n- 91: 91 would raise her mean to 85.4, more than needed.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "mean",
+      "statistics"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+]
