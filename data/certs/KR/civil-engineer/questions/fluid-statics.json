@@ -1,0 +1,213 @@
+[
+  {
+    "id": "civil-engineer-fluid-statics-0001",
+    "certId": "civil-engineer",
+    "subjectId": "hydraulics",
+    "chapterId": "fluid-statics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "수면 아래 5m 깊이에서 물의 정수압(계기압)은? (단, 물의 단위중량은 9.81kN/m³)",
+    "choices": [
+      "49.05kPa",
+      "490.5kPa",
+      "9.81kPa",
+      "4.905kPa"
+    ],
+    "answer": 1,
+    "oneLineConcept": "정수압 p = γh (단위중량 × 깊이)",
+    "explanation": "고여 있는 물의 압력은 깊이에 비례합니다.\n\n1. 식: p = γ × h\n2. 대입: 9.81kN/m³ × 5m = 49.05kN/m²\n3. 1kN/m² = 1kPa 이므로 49.05kPa\n4. 검산: 물 10m 깊이가 약 98kPa(약 1기압)이므로 5m 는 그 절반 정도인 것이 맞습니다.\n\n**틀린 선지**\n- 490.5kPa: 단위를 바꿀 때 10배 크게 계산한 값입니다.\n- 9.81kPa: 깊이를 곱하지 않은 값으로, 수심 1m 의 압력입니다.\n- 4.905kPa: 10배 작게 계산한 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "정수압",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-fluid-statics-0002",
+    "certId": "civil-engineer",
+    "subjectId": "hydraulics",
+    "chapterId": "fluid-statics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "폭 2m, 높이 3m 인 직사각형 수문이 수직으로 서 있고 수문 윗변이 수면과 같은 높이에 있다. 수문 한쪽 면에 작용하는 전체 정수압(힘)은 약 얼마인가? (단, γ = 9.81kN/m³)",
+    "choices": [
+      "176.6kN",
+      "44.1kN",
+      "88.3kN",
+      "29.4kN"
+    ],
+    "answer": 3,
+    "oneLineConcept": "평면에 작용하는 정수력 P = γ × 도심 깊이 × 면적",
+    "explanation": "평면에 작용하는 전체 정수력은 도심(면의 가운데) 깊이의 압력에 면적을 곱해 구합니다.\n\n1. 도심 깊이: 3 ÷ 2 = 1.5m\n2. 면적: 2 × 3 = 6m²\n3. P = 9.81 × 1.5 × 6 ≈ 88.3kN\n4. 검산: 압력은 수면 0 에서 바닥 29.43kPa 까지 삼각형으로 늘어나므로 ½ × 29.43 × 3 × 2 ≈ 88.3kN 으로 같습니다.\n\n**틀린 선지**\n- 176.6kN: 도심 깊이 대신 수문 바닥 깊이(3m)를 쓴 값입니다.\n- 44.1kN: 도심 깊이를 한 번 더 절반으로 줄인 값입니다.\n- 29.4kN: 면적(6m²) 대신 폭(2m)만 곱한 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "정수력",
+      "수문",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-fluid-statics-0003",
+    "certId": "civil-engineer",
+    "subjectId": "hydraulics",
+    "chapterId": "fluid-statics",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "폭 2m, 높이 3m 인 직사각형 수문이 수직으로 서 있고 수문 윗변이 수면 아래 2m 에 있다. 수면에서 전체 정수압의 작용점까지 깊이는 약 얼마인가?",
+    "choices": [
+      "3.500m",
+      "3.714m",
+      "4.000m",
+      "3.595m"
+    ],
+    "answer": 2,
+    "oneLineConcept": "작용점 깊이 = 도심 깊이 + I ÷ (도심 깊이 × 면적)",
+    "explanation": "작용점(압력 중심)은 깊을수록 압력이 커지므로 도심보다 아래에 있습니다.\n\n1. 도심 깊이: 2 + 3 ÷ 2 = 3.5m, 면적 A = 6m²\n2. 도심축 단면 2차 모멘트: I = 2 × 3³ ÷ 12 = 4.5m⁴\n3. 작용점 = 3.5 + 4.5 ÷ (3.5 × 6) = 3.5 + 0.214 ≈ 3.714m\n4. 검산: 작용점이 수문 범위(2m~5m) 안에 있고 도심(3.5m)보다 조금 아래인 것이 맞습니다.\n\n**틀린 선지**\n- 3.500m: 도심 깊이로, 작용점은 도심보다 조금 더 깊습니다.\n- 4.000m: 윗변이 수면에 있을 때 쓰는 \"높이의 2/3\" 규칙을 그대로 적용한 값입니다.\n- 3.595m: 단면 2차 모멘트를 폭과 높이를 바꿔(3 × 2³ ÷ 12) 계산한 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "작용점",
+      "수문",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-fluid-statics-0004",
+    "certId": "civil-engineer",
+    "subjectId": "hydraulics",
+    "chapterId": "fluid-statics",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "부피 0.5m³ 인 물체가 물속에 완전히 잠겨 있을 때 받는 부력은? (단, γ = 9.81kN/m³)",
+    "choices": [
+      "9.81kN",
+      "4.905kN",
+      "0.5kN",
+      "49.05kN"
+    ],
+    "answer": 2,
+    "oneLineConcept": "부력 = 물의 단위중량 × 잠긴 부피 (아르키메데스 원리)",
+    "explanation": "부력은 물체가 밀어낸 물의 무게와 같습니다(아르키메데스 원리).\n\n1. 밀어낸 물의 부피 = 잠긴 부피 = 0.5m³\n2. 부력 = 9.81 × 0.5 = 4.905kN\n3. 검산: 물 1m³ 의 무게가 약 9.81kN 이므로 그 절반인 것이 맞습니다.\n\n**틀린 선지**\n- 9.81kN: 부피를 1m³ 로 본 값입니다.\n- 0.5kN: 부피 숫자를 그대로 힘으로 쓴 값입니다.\n- 49.05kN: 10배 크게 계산한 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "부력",
+      "아르키메데스",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-fluid-statics-0005",
+    "certId": "civil-engineer",
+    "subjectId": "hydraulics",
+    "chapterId": "fluid-statics",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "지름 1mm 인 깨끗한 유리관을 물에 세웠다. 표면장력 0.073N/m, 접촉각 0°, 물의 단위중량 9,810N/m³ 일 때 물이 올라가는 높이는 약 얼마인가?",
+    "choices": [
+      "29.8mm",
+      "14.9mm",
+      "59.5mm",
+      "7.4mm"
+    ],
+    "answer": 1,
+    "oneLineConcept": "모세관 상승 높이 h = 4T·cosθ / (γ·d)",
+    "explanation": "모세관 현상은 표면장력이 물을 끌어올리는 힘과 올라간 물기둥 무게가 같아질 때까지 일어납니다.\n\n1. 식: h = 4T·cosθ ÷ (γ·d)\n2. 분자: 4 × 0.073 × 1 = 0.292\n3. 분모: 9,810 × 0.001 = 9.81\n4. h = 0.292 ÷ 9.81 ≈ 0.0298m = 29.8mm\n5. 검산: 반지름 식 h = 2T·cosθ ÷ (γ·r) 에 r = 0.0005m 를 넣어도 0.146 ÷ 4.905 ≈ 0.0298m 로 같습니다.\n\n**틀린 선지**\n- 14.9mm: 식의 4 대신 2 를 쓴 값입니다(반지름용 식에 지름을 넣은 경우).\n- 59.5mm: 지름 대신 반지름(0.5mm)을 넣은 값입니다.\n- 7.4mm: 식에서 4 를 빠뜨린 값입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "표면장력",
+      "모세관 현상",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-fluid-statics-0006",
+    "certId": "civil-engineer",
+    "subjectId": "hydraulics",
+    "chapterId": "fluid-statics",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "물의 성질에 대한 설명으로 옳지 않은 것은?",
+    "choices": [
+      "점성계수는 온도가 올라가면 작아진다.",
+      "체적탄성계수가 클수록 압축하기 어렵다.",
+      "표면장력은 온도가 올라가면 커진다.",
+      "포화 증기압은 온도가 올라가면 커진다."
+    ],
+    "answer": 3,
+    "oneLineConcept": "물은 온도가 오르면 점성계수·표면장력이 작아지고 증기압은 커진다",
+    "explanation": "온도에 따른 물의 성질 변화입니다.\n\n1. 점성계수: 온도가 오르면 작아집니다(따뜻한 물이 더 잘 흐름).\n2. 표면장력: 온도가 오르면 작아집니다. \"커진다\"가 틀렸습니다.\n3. 포화 증기압: 온도가 오르면 커지고, 대기압과 같아지면 끓습니다.\n4. 체적탄성계수: 압축에 버티는 정도로, 클수록 압축하기 어렵습니다.\n\n**틀린 선지**\n- 점성계수는 온도가 올라가면 작아진다.: 물의 성질로 옳은 설명입니다.\n- 체적탄성계수가 클수록 압축하기 어렵다.: 물의 성질로 옳은 설명입니다.\n- 포화 증기압은 온도가 올라가면 커진다.: 물의 성질로 옳은 설명입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "물의 성질",
+      "점성",
+      "표면장력"
+    ],
+    "levelLock": true
+  }
+]

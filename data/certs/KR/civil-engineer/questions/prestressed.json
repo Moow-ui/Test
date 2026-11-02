@@ -1,0 +1,138 @@
+[
+  {
+    "id": "civil-engineer-prestressed-0001",
+    "certId": "civil-engineer",
+    "subjectId": "rc-steel",
+    "chapterId": "prestressed",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "콘크리트가 굳은 뒤 미리 묻어 둔 덕트(관) 속의 PS 강재를 긴장하고 정착장치로 고정하는 방식은?",
+    "choices": [
+      "포스트텐션 방식",
+      "프리텐션 방식",
+      "롱라인 방식",
+      "하중평형 개념"
+    ],
+    "answer": 1,
+    "oneLineConcept": "포스트텐션 = 콘크리트 경화 후 긴장, 프리텐션 = 타설 전 긴장",
+    "explanation": "프리스트레스를 주는 방식은 강재를 긴장하는 시점으로 나눕니다.\n\n1. 프리텐션: 강재를 먼저 긴장 → 콘크리트 타설·경화 → 강재를 풀어 부착력으로 힘 전달\n2. 포스트텐션: 덕트를 묻고 콘크리트 타설·경화 → 강재 긴장 → 정착장치로 고정(그라우팅)\n3. 현장에서 만드는 큰 교량 거더는 주로 포스트텐션을 씁니다.\n\n**틀린 선지**\n- 프리텐션 방식: 콘크리트를 치기 전에 강재를 먼저 긴장해 두는 방식입니다.\n- 롱라인 방식: 프리텐션 방식에서 긴 베드에 여러 부재를 한 번에 만드는 방법입니다.\n- 하중평형 개념: 프리스트레스를 해석하는 개념으로, 긴장 방식이 아닙니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "포스트텐션",
+      "프리스트레싱 방식"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-prestressed-0002",
+    "certId": "civil-engineer",
+    "subjectId": "rc-steel",
+    "chapterId": "prestressed",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "프리텐션 방식의 PSC 부재에서 일어나지 않는 프리스트레스 손실은?",
+    "choices": [
+      "콘크리트의 탄성수축",
+      "PS 강재와 덕트 사이의 마찰",
+      "콘크리트의 크리프",
+      "콘크리트의 건조수축"
+    ],
+    "answer": 2,
+    "oneLineConcept": "마찰 손실은 덕트가 있는 포스트텐션에서만 생긴다",
+    "explanation": "프리스트레스 손실은 도입할 때 생기는 것과 시간이 지나며 생기는 것으로 나눕니다.\n\n1. 도입 시 손실: 탄성수축, 마찰(포스트텐션만), 정착장치 활동\n2. 시간적 손실: 크리프, 건조수축, PS 강재 릴랙세이션\n3. 프리텐션은 덕트가 없으므로 강재와 덕트 사이 마찰 손실이 생기지 않습니다.\n\n**틀린 선지**\n- 콘크리트의 탄성수축: 프리텐션 부재에서도 강재를 풀 때 즉시 일어나는 손실입니다.\n- 콘크리트의 크리프: 프리텐션 부재에서도 시간이 지나며 일어나는 손실입니다.\n- 콘크리트의 건조수축: 프리텐션 부재에서도 시간이 지나며 일어나는 손실입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "프리스트레스 손실",
+      "프리텐션"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "civil-engineer-prestressed-0003",
+    "certId": "civil-engineer",
+    "subjectId": "rc-steel",
+    "chapterId": "prestressed",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "경간 10m 인 단순보에 포물선으로 배치한 PS 강재의 가운데 처짐(새그)이 0.2m 이고 긴장력이 1,000kN 이다. 하중평형 개념으로 이 강재가 보를 위로 미는 등분포 상향력은?",
+    "choices": [
+      "8kN/m",
+      "16kN/m",
+      "32kN/m",
+      "4kN/m"
+    ],
+    "answer": 2,
+    "oneLineConcept": "포물선 강재 상향력 u = 8Ps / L²",
+    "explanation": "하중평형 개념은 휘어진 PS 강재가 보를 위로 밀어 올리는 힘으로 바깥 하중 일부를 상쇄한다고 보는 개념입니다.\n\n1. 식: u = 8 × P × s ÷ L²\n2. 분자: 8 × 1,000 × 0.2 = 1,600\n3. 분모: 10² = 100\n4. u = 1,600 ÷ 100 = 16kN/m\n5. 검산: 상향력이 만드는 가운데 모멘트 uL²/8 = 16 × 100 ÷ 8 = 200kN·m 이 P × s = 1,000 × 0.2 = 200kN·m 과 같습니다.\n\n**틀린 선지**\n- 8kN/m: 식의 8 대신 4 를 쓴 값입니다.\n- 32kN/m: 식에 2 를 더 곱한 값입니다.\n- 4kN/m: 8 대신 2 를 쓴 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "하중평형 개념",
+      "포물선 배치",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-prestressed-0004",
+    "certId": "civil-engineer",
+    "subjectId": "rc-steel",
+    "chapterId": "prestressed",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "폭 300mm, 높이 600mm 인 직사각형 단면에 프리스트레스 힘 1,200kN 을 도심 아래 100mm 편심으로 도입하였다. 자중 등 다른 하중을 무시할 때 하연(아래 끝)의 응력은?",
+    "choices": [
+      "6.67MPa (압축)",
+      "0",
+      "20.0MPa (압축)",
+      "13.33MPa (압축)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "편심 프리스트레스 하연 응력 = P/A + P·e/Z",
+    "explanation": "응력 개념은 PSC 를 탄성체로 보고 축력과 편심 휨을 겹쳐 응력을 구합니다.\n\n1. P/A = 1,200,000 ÷ (300 × 600) = 1,200,000 ÷ 180,000 ≈ 6.67MPa\n2. Z = 300 × 600² ÷ 6 = 18,000,000mm³\n3. P·e/Z = 1,200,000 × 100 ÷ 18,000,000 ≈ 6.67MPa\n4. 하연: 6.67 + 6.67 = 13.33MPa (압축), 상연: 6.67 − 6.67 = 0\n5. 검산: 편심 100mm 가 핵 반경 h/6 = 100mm 와 같아 상연 응력이 정확히 0 이 되는 것이 맞습니다.\n\n**틀린 선지**\n- 6.67MPa (압축): 편심에 의한 휨 효과를 빠뜨리고 P/A 만 구한 값입니다.\n- 0: 상연(위 끝)의 응력입니다.\n- 20.0MPa (압축): 단면계수를 bh²/12 로 잘못 계산한 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "응력 개념",
+      "편심 프리스트레스",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  }
+]

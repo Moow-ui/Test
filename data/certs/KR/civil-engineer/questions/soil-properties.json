@@ -1,0 +1,226 @@
+[
+  {
+    "id": "civil-engineer-soil-properties-0001",
+    "certId": "civil-engineer",
+    "subjectId": "soil-foundation",
+    "chapterId": "soil-properties",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "포화된 흙의 함수비가 30%, 흙 입자의 비중 Gs 가 2.70 일 때 간극비는?",
+    "choices": [
+      "1.23",
+      "0.30",
+      "0.11",
+      "0.81"
+    ],
+    "answer": 4,
+    "oneLineConcept": "S·e = w·Gs (포화도 × 간극비 = 함수비 × 비중)",
+    "explanation": "흙의 기본 관계식 S·e = w·Gs 를 씁니다. 포화된 흙은 포화도 S = 1(100%) 입니다.\n\n1. e = w × Gs ÷ S\n2. = 0.30 × 2.70 ÷ 1\n3. = 0.81\n4. 검산: 0.81 × 1 = 0.30 × 2.70 = 0.81 로 맞습니다.\n\n**틀린 선지**\n- 1.23: 간극비 0.81 의 역수입니다.\n- 0.30: 함수비를 간극비로 그대로 쓴 값입니다.\n- 0.11: 함수비를 비중으로 나눈 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "간극비",
+      "함수비",
+      "Se = wGs",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-soil-properties-0002",
+    "certId": "civil-engineer",
+    "subjectId": "soil-foundation",
+    "chapterId": "soil-properties",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "어떤 점토의 액성한계 45%, 소성한계 25%, 자연 함수비 35% 일 때 액성지수는?",
+    "choices": [
+      "0.78",
+      "1.4",
+      "0.5",
+      "2.0"
+    ],
+    "answer": 3,
+    "oneLineConcept": "액성지수 LI = (w − PL) / PI, PI = LL − PL",
+    "explanation": "액성지수는 자연 상태의 흙이 소성한계와 액성한계 사이 어디쯤에 있는지 나타냅니다.\n\n1. 소성지수 PI = 45 − 25 = 20\n2. LI = (35 − 25) ÷ 20 = 10 ÷ 20 = 0.5\n3. 검산: LI 가 0 이면 소성한계, 1 이면 액성한계 상태이므로 0.5 는 그 중간인 것이 맞습니다(함수비 35% 가 25% 와 45% 의 가운데).\n\n**틀린 선지**\n- 0.78: 자연 함수비를 액성한계로 나눈 값입니다.\n- 1.4: 자연 함수비를 소성한계로 나눈 값입니다.\n- 2.0: 액성지수 식을 거꾸로(분자·분모 바꿔) 계산한 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "액성지수",
+      "소성지수",
+      "애터버그 한계",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-soil-properties-0003",
+    "certId": "civil-engineer",
+    "subjectId": "soil-foundation",
+    "chapterId": "soil-properties",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "통일분류법에서 기호 SW 가 나타내는 흙은?",
+    "choices": [
+      "입도분포가 나쁜 모래",
+      "입도분포가 좋은 자갈",
+      "입도분포가 좋은 모래",
+      "실트질 모래"
+    ],
+    "answer": 3,
+    "oneLineConcept": "첫 글자 G 자갈·S 모래, 둘째 글자 W 입도 양호·P 입도 불량·M 실트질·C 점토질",
+    "explanation": "통일분류법 기호는 두 글자로 이루어집니다.\n\n1. 첫 글자(주된 흙): G 자갈, S 모래, M 실트, C 점토, O 유기질토\n2. 둘째 글자(성질): W 입도분포 좋음, P 입도분포 나쁨, M 실트 섞임, C 점토 섞임, L 압축성 낮음, H 압축성 높음\n3. SW = 모래(S) + 입도분포 좋음(W)\n\n**틀린 선지**\n- 입도분포가 나쁜 모래: 기호는 SP 입니다.\n- 입도분포가 좋은 자갈: 기호는 GW 입니다.\n- 실트질 모래: 기호는 SM 입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "통일분류법",
+      "흙의 분류"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-soil-properties-0004",
+    "certId": "civil-engineer",
+    "subjectId": "soil-foundation",
+    "chapterId": "soil-properties",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "정수위 투수시험에서 시료 길이 20cm, 단면적 50cm², 수두차 40cm 일 때 100초 동안 500cm³ 의 물이 흘렀다. 투수계수는?",
+    "choices": [
+      "0.2cm/s",
+      "5.0cm/s",
+      "0.05cm/s",
+      "0.0025cm/s"
+    ],
+    "answer": 3,
+    "oneLineConcept": "정수위 투수시험 k = Q·L / (A·h·t)",
+    "explanation": "Darcy 법칙 Q = k·(h/L)·A·t 를 투수계수에 대해 풉니다.\n\n1. k = Q × L ÷ (A × h × t)\n2. 분자: 500 × 20 = 10,000\n3. 분모: 50 × 40 × 100 = 200,000\n4. k = 10,000 ÷ 200,000 = 0.05cm/s\n5. 검산: 0.05 × (40 ÷ 20) × 50 × 100 = 500cm³ 로 맞습니다.\n\n**틀린 선지**\n- 0.2cm/s: 시료 길이와 수두차를 서로 바꿔 넣은 값입니다.\n- 5.0cm/s: 시간(100초)으로 나누지 않은 값입니다.\n- 0.0025cm/s: 시료 길이를 곱하지 않은 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "투수계수",
+      "정수위 투수시험",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-soil-properties-0005",
+    "certId": "civil-engineer",
+    "subjectId": "soil-foundation",
+    "chapterId": "soil-properties",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "두께 4m 인 모래층에 아래에서 위로 물이 흐르며 모래층 위아래의 수두차가 2m 이다. 모래의 비중 2.65, 간극비 0.65 일 때 분사현상(보일링)에 대한 안전율은?",
+    "choices": [
+      "0.5",
+      "2.0",
+      "1.0",
+      "3.3"
+    ],
+    "answer": 2,
+    "oneLineConcept": "한계동수경사 ic = (Gs − 1)/(1 + e), 안전율 = ic / i",
+    "explanation": "위로 흐르는 물의 힘이 흙의 수중 무게보다 커지면 모래가 끓어오르듯 떠오르는 분사현상이 생깁니다.\n\n1. 한계동수경사 ic = (2.65 − 1) ÷ (1 + 0.65) = 1.65 ÷ 1.65 = 1.0\n2. 실제 동수경사 i = 2 ÷ 4 = 0.5\n3. 안전율 = 1.0 ÷ 0.5 = 2.0\n4. 검산: 안전율이 1 보다 크므로 아직 분사현상이 일어나지 않는 상태입니다.\n\n**틀린 선지**\n- 0.5: 실제 동수경사로, 안전율이 아닙니다.\n- 1.0: 한계동수경사로, 안전율이 아닙니다.\n- 3.3: 한계동수경사를 구할 때 (1 + e) 로 나누지 않은 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "분사현상",
+      "한계동수경사",
+      "안전율",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-soil-properties-0006",
+    "certId": "civil-engineer",
+    "subjectId": "soil-foundation",
+    "chapterId": "soil-properties",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "투수계수 2 × 10⁻⁵ m/s 인 지반에 널말뚝을 박았다. 상하류 수위차 6m, 유선망의 유로 수 4개, 등수두면 간격 수 12개 일 때 단위폭(1m)당 침투유량은?",
+    "choices": [
+      "3.6 × 10⁻⁴ m³/s",
+      "4.0 × 10⁻⁵ m³/s",
+      "1.2 × 10⁻⁴ m³/s",
+      "6.7 × 10⁻⁶ m³/s"
+    ],
+    "answer": 2,
+    "oneLineConcept": "유선망 침투유량 q = k × H × Nf / Nd",
+    "explanation": "유선망(흐름선과 같은 수두선을 그린 그물)으로 침투유량을 구합니다.\n\n1. q = k × H × (Nf ÷ Nd)\n2. Nf ÷ Nd = 4 ÷ 12 = 1/3\n3. q = 2 × 10⁻⁵ × 6 × 1/3 = 4.0 × 10⁻⁵ m³/s\n4. 검산: 2 × 10⁻⁵ × 6 = 1.2 × 10⁻⁴ 을 3 으로 나누면 4.0 × 10⁻⁵ 로 같습니다.\n\n**틀린 선지**\n- 3.6 × 10⁻⁴ m³/s: 유로 수와 등수두면 간격 수를 거꾸로 넣은 값입니다.\n- 1.2 × 10⁻⁴ m³/s: 유로 수 ÷ 등수두면 간격 수 를 곱하지 않은 값입니다.\n- 6.7 × 10⁻⁶ m³/s: 수위차를 곱하지 않은 값입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "유선망",
+      "침투유량",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+]

@@ -1,0 +1,212 @@
+[
+  {
+    "id": "civil-engineer-stress-consolidation-0001",
+    "certId": "civil-engineer",
+    "subjectId": "soil-foundation",
+    "chapterId": "stress-consolidation",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "지하수위가 지표면과 같은 포화 지반(포화단위중량 19kN/m³)에서 지표 아래 4m 깊이의 유효응력은? (단, 물의 단위중량 9.81kN/m³)",
+    "choices": [
+      "76.0kPa",
+      "39.24kPa",
+      "36.76kPa",
+      "115.24kPa"
+    ],
+    "answer": 3,
+    "oneLineConcept": "유효응력 σ′ = σ − u = (γsat − γw) × 깊이",
+    "explanation": "유효응력은 흙 입자끼리 실제로 주고받는 응력으로, 전응력에서 간극수압을 뺍니다.\n\n1. 전응력 σ = 19 × 4 = 76.0kPa\n2. 간극수압 u = 9.81 × 4 = 39.24kPa\n3. σ′ = 76.0 − 39.24 = 36.76kPa\n4. 검산: 수중단위중량 (19 − 9.81) × 4 = 9.19 × 4 = 36.76kPa 로 같습니다.\n\n**틀린 선지**\n- 76.0kPa: 전응력으로, 간극수압을 빼지 않은 값입니다.\n- 39.24kPa: 간극수압입니다.\n- 115.24kPa: 전응력에 간극수압을 더한 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "유효응력",
+      "간극수압",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-stress-consolidation-0002",
+    "certId": "civil-engineer",
+    "subjectId": "soil-foundation",
+    "chapterId": "stress-consolidation",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "두께 2cm 인 점토 시료를 양면배수로 압밀시험하였더니 평균압밀도 50% 에 10분이 걸렸다. 같은 점토로 된 두께 4m 의 현장 점토층(위아래 모두 모래층)이 50% 압밀되는 데 걸리는 시간은 약 얼마인가?",
+    "choices": [
+      "약 1,111일",
+      "약 69일",
+      "약 1.4일",
+      "약 278일"
+    ],
+    "answer": 4,
+    "oneLineConcept": "압밀시간은 배수거리의 제곱에 비례: t₂ = t₁ × (H₂/H₁)²",
+    "explanation": "같은 흙, 같은 압밀도이면 시간계수 Tv 가 같으므로 압밀시간은 배수거리의 제곱에 비례합니다(t = Tv·H²/cv).\n\n1. 시료 배수거리: 양면배수 → 2 ÷ 2 = 1cm\n2. 현장 배수거리: 위아래 모래층(양면배수) → 400 ÷ 2 = 200cm\n3. 시간: 10분 × (200 ÷ 1)² = 10 × 40,000 = 400,000분\n4. 400,000 ÷ 60 ÷ 24 ≈ 277.8일 → 약 278일\n5. 검산: 배수거리가 200배이므로 시간은 200² = 40,000배입니다.\n\n**틀린 선지**\n- 약 1,111일: 현장 점토층을 한면배수(배수거리 4m)로 본 값입니다.\n- 약 69일: 시료의 배수거리를 시료 두께 전체(2cm)로 본 값입니다.\n- 약 1.4일: 시간이 배수거리에 그냥 비례한다고 보고 제곱하지 않은 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "압밀시간",
+      "배수거리",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-stress-consolidation-0003",
+    "certId": "civil-engineer",
+    "subjectId": "soil-foundation",
+    "chapterId": "stress-consolidation",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "두께 4m 인 정규압밀 점토층의 압축지수 Cc = 0.4, 초기 간극비 1.0, 층 가운데의 초기 유효응력 100kPa 이다. 유효응력이 100kPa 늘어날 때 최종 압밀침하량은 약 얼마인가?",
+    "choices": [
+      "0.482m",
+      "0.555m",
+      "0.141m",
+      "0.241m"
+    ],
+    "answer": 4,
+    "oneLineConcept": "정규압밀 침하량 S = Cc·H/(1 + e₀) × log(σ₁′/σ₀′)",
+    "explanation": "정규압밀 점토의 1차 압밀침하량 식을 씁니다.\n\n1. Cc × H ÷ (1 + e₀) = 0.4 × 4 ÷ 2 = 0.8m\n2. 최종 유효응력: 100 + 100 = 200kPa\n3. log(200 ÷ 100) = log2 ≈ 0.301\n4. S = 0.8 × 0.301 ≈ 0.241m\n5. 검산: 유효응력이 2배가 되면 간극비가 Cc × log2 = 0.12 줄고, 0.12 ÷ 2 × 4m = 0.24m 로 같습니다.\n\n**틀린 선지**\n- 0.482m: (1 + e₀) 로 나누지 않은 값입니다.\n- 0.555m: 상용로그(log) 대신 자연로그(ln)를 쓴 값입니다.\n- 0.141m: 최종 유효응력을 150kPa(증가량의 절반만 더함)로 잘못 잡은 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "압밀침하량",
+      "압축지수",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-stress-consolidation-0004",
+    "certId": "civil-engineer",
+    "subjectId": "soil-foundation",
+    "chapterId": "stress-consolidation",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "2m × 2m 정사각형 기초에 400kN 의 연직하중이 작용한다. 2:1 분포법으로 구한 기초 바닥 아래 2m 깊이의 평균 연직응력 증가량은?",
+    "choices": [
+      "100kPa",
+      "25kPa",
+      "44.4kPa",
+      "11.1kPa"
+    ],
+    "answer": 2,
+    "oneLineConcept": "2:1 분포법 Δσ = Q / [(B + z)(L + z)]",
+    "explanation": "2:1 분포법은 하중이 깊이 1 에 대해 옆으로 1/2 씩(양쪽 합해 깊이만큼) 퍼진다고 보는 간단한 방법입니다.\n\n1. 깊이 2m 에서 퍼진 면적: (2 + 2) × (2 + 2) = 16m²\n2. Δσ = 400 ÷ 16 = 25kPa\n3. 검산: 기초 바로 아래 압력은 400 ÷ 4 = 100kPa 이고, 깊이 2m 에서 면적이 4배로 넓어져 1/4 이 된 것이 맞습니다.\n\n**틀린 선지**\n- 100kPa: 하중이 퍼지지 않는다고 보고 기초 면적으로만 나눈 값입니다.\n- 44.4kPa: 깊이의 절반(1m)만 더해 3m × 3m 로 본 값입니다.\n- 11.1kPa: 깊이의 2배(4m)를 더해 6m × 6m 로 본 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "지중응력",
+      "2:1 분포법",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-stress-consolidation-0005",
+    "certId": "civil-engineer",
+    "subjectId": "soil-foundation",
+    "chapterId": "stress-consolidation",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "흙의 동상(얼어서 부풀어 오름)을 막는 대책으로 옳지 않은 것은?",
+    "choices": [
+      "동결 깊이 안의 흙을 실트질 흙으로 바꾼다.",
+      "배수구를 설치해 지하수위를 낮춘다.",
+      "동결 깊이 안의 흙을 모래·자갈처럼 동상이 잘 안 되는 재료로 바꾼다.",
+      "지표 가까이에 단열층을 설치한다."
+    ],
+    "answer": 1,
+    "oneLineConcept": "실트는 모관 작용으로 물을 잘 빨아올려 동상이 가장 잘 일어난다",
+    "explanation": "동상은 얼음 층(아이스 렌즈)이 자라면서 지반이 부풀어 오르는 현상입니다. 물 공급, 동상이 잘 되는 흙, 낮은 온도가 함께 있을 때 생깁니다.\n\n1. 지하수위를 낮춰 물 공급을 끊는다.\n2. 모래·자갈 같은 동상이 잘 안 되는 재료로 바꾼다(치환).\n3. 단열층으로 흙이 어는 것을 막는다.\n4. 실트질 흙은 물을 잘 빨아올려 동상이 가장 심하므로 바꿔 넣으면 안 됩니다.\n\n**틀린 선지**\n- 배수구를 설치해 지하수위를 낮춘다.: 동상 방지에 효과가 있는 대책입니다.\n- 동결 깊이 안의 흙을 모래·자갈처럼 동상이 잘 안 되는 재료로 바꾼다.: 동상 방지에 효과가 있는 대책입니다.\n- 지표 가까이에 단열층을 설치한다.: 동상 방지에 효과가 있는 대책입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "동상",
+      "동상 방지 대책"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "civil-engineer-stress-consolidation-0006",
+    "certId": "civil-engineer",
+    "subjectId": "soil-foundation",
+    "chapterId": "stress-consolidation",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "지하수위 위쪽에서 모관현상으로 물이 올라와 포화된 구간(모관 상승 영역)에 대한 설명으로 옳은 것은?",
+    "choices": [
+      "간극수압이 양(+)이 되어 유효응력이 전응력보다 작아진다.",
+      "간극수압이 음(−)이 되어 유효응력이 전응력보다 커진다.",
+      "간극수압이 0 이므로 유효응력은 전응력과 같다.",
+      "전응력이 0 이 되어 흙이 떠오른다."
+    ],
+    "answer": 2,
+    "oneLineConcept": "모관 영역: 간극수압 u = −γw·h (음수) → 유효응력 증가",
+    "explanation": "모관 영역의 물은 표면장력으로 매달려 있어 대기압보다 낮은 압력(음의 간극수압)을 가집니다.\n\n1. 간극수압 u = −γw × (지하수위에서 위로 잰 높이)\n2. 유효응력 σ′ = σ − u = σ + γw·h\n3. 그래서 모관 영역에서는 유효응력이 전응력보다 커집니다.\n\n**틀린 선지**\n- 간극수압이 양(+)이 되어 유효응력이 전응력보다 작아진다.: 지하수위 아래쪽 상태에 대한 설명입니다.\n- 간극수압이 0 이므로 유효응력은 전응력과 같다.: 모관 영역 위의 마른 흙에 대한 설명입니다.\n- 전응력이 0 이 되어 흙이 떠오른다.: 모관현상으로 전응력이 0 이 되지는 않습니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "모관현상",
+      "유효응력"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+]

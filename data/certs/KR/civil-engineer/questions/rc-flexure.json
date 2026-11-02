@@ -1,0 +1,359 @@
+[
+  {
+    "id": "civil-engineer-rc-flexure-0001",
+    "certId": "civil-engineer",
+    "subjectId": "rc-steel",
+    "chapterId": "rc-flexure",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "폭 b = 300mm 인 단철근 직사각형 보에서 인장철근 단면적 As = 2,000mm², fck = 24MPa, fy = 400MPa 일 때 등가직사각형 응력블록의 깊이 a 는 약 얼마인가? (단, 인장철근은 항복한다)",
+    "choices": [
+      "111.1mm",
+      "163.4mm",
+      "130.7mm",
+      "104.6mm"
+    ],
+    "answer": 3,
+    "oneLineConcept": "응력블록 깊이 a = As·fy / (0.85·fck·b) (fck ≤ 40MPa)",
+    "explanation": "철근이 당기는 힘(인장력)과 콘크리트가 미는 힘(압축력)이 같다는 조건으로 구합니다.\n\n1. 인장력 T = As × fy = 2,000 × 400 = 800,000N\n2. 압축력 C = 0.85 × fck × a × b = 0.85 × 24 × 300 × a = 6,120a\n3. a = 800,000 ÷ 6,120 ≈ 130.7mm\n4. 검산: 6,120 × 130.7 ≈ 799,900N 으로 인장력과 같습니다.\n\n**틀린 선지**\n- 111.1mm: 콘크리트 응력 0.85fck 에서 0.85 를 빠뜨린 값입니다.\n- 163.4mm: a 를 β₁(0.80)으로 나눈 중립축 깊이 c 입니다.\n- 104.6mm: a 에 β₁(0.80)을 한 번 더 곱한 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "등가직사각형 응력블록",
+      "응력블록 깊이",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-rc-flexure-0002",
+    "certId": "civil-engineer",
+    "subjectId": "rc-steel",
+    "chapterId": "rc-flexure",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "폭 300mm, 유효깊이 d = 500mm 인 단철근 직사각형 보에서 As = 2,000mm², fck = 24MPa, fy = 400MPa 이다. 공칭 휨강도 Mn 은 약 얼마인가? (단, 인장철근은 항복한다)",
+    "choices": [
+      "295.6kN·m",
+      "400.0kN·m",
+      "334.6kN·m",
+      "347.7kN·m"
+    ],
+    "answer": 4,
+    "oneLineConcept": "공칭 휨강도 Mn = As·fy·(d − a/2)",
+    "explanation": "공칭 휨강도는 인장력 × 팔 길이(인장력과 압축력 사이 거리)입니다.\n\n1. a = 2,000 × 400 ÷ (0.85 × 24 × 300) ≈ 130.7mm\n2. 팔 길이 = d − a/2 = 500 − 65.4 = 434.6mm\n3. Mn = 800,000N × 434.6mm ≈ 347.7 × 10⁶ N·mm = 347.7kN·m\n4. 검산: 압축력 쪽으로 계산해도 0.85 × 24 × 300 × 130.7 × 434.6 ≈ 347.7kN·m 로 같습니다.\n\n**틀린 선지**\n- 295.6kN·m: 강도감소계수 0.85 를 곱한 설계 휨강도 φMn 입니다.\n- 400.0kN·m: 응력블록 깊이를 무시하고 팔 길이를 d 로 본 값입니다.\n- 334.6kN·m: 팔 길이에 a/2 대신 c/2 를 쓴 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "공칭 휨강도",
+      "단철근보",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-rc-flexure-0003",
+    "certId": "civil-engineer",
+    "subjectId": "rc-steel",
+    "chapterId": "rc-flexure",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "고정하중 20kN/m, 활하중 15kN/m 가 작용하는 보의 계수하중을 하중조합 1.2D + 1.6L 로 구하면?",
+    "choices": [
+      "53.5kN/m",
+      "48kN/m",
+      "28kN/m",
+      "35kN/m"
+    ],
+    "answer": 2,
+    "oneLineConcept": "기본 하중조합 U = 1.2D + 1.6L (그리고 U = 1.4D 중 큰 값)",
+    "explanation": "계수하중은 실제 하중에 하중계수를 곱해 안전 여유를 둔 하중입니다.\n\n1. 1.2D = 1.2 × 20 = 24kN/m\n2. 1.6L = 1.6 × 15 = 24kN/m\n3. U = 24 + 24 = 48kN/m\n4. 검산: 다른 조합 1.4D = 28kN/m 보다 크므로 48kN/m 로 설계합니다.\n\n**틀린 선지**\n- 53.5kN/m: 예전 기준의 계수(1.4D + 1.7L)로 계산한 값입니다.\n- 28kN/m: 1.4D 만 적용하고 활하중을 빠뜨린 값입니다.\n- 35kN/m: 하중계수를 곱하지 않고 그냥 더한 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "하중조합",
+      "계수하중",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-rc-flexure-0004",
+    "certId": "civil-engineer",
+    "subjectId": "rc-steel",
+    "chapterId": "rc-flexure",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "콘크리트구조 설계기준에서 인장지배단면(휨부재)에 적용하는 강도감소계수는?",
+    "choices": [
+      "0.75",
+      "0.65",
+      "0.85",
+      "0.70"
+    ],
+    "answer": 3,
+    "oneLineConcept": "강도감소계수: 인장지배 0.85, 전단 0.75, 압축지배 나선 0.70·띠 0.65",
+    "explanation": "강도감소계수(φ)는 재료·시공의 불확실성을 고려해 공칭강도를 줄여 쓰는 계수입니다.\n\n1. 인장지배단면: 0.85\n2. 압축지배단면: 나선철근 0.70, 그 밖(띠철근) 0.65\n3. 전단력·비틀림모멘트: 0.75\n4. 인장지배와 압축지배 사이(변화구간)는 변형률에 따라 직선으로 보간합니다.\n\n**틀린 선지**\n- 0.75: 전단력과 비틀림모멘트에 쓰는 값입니다.\n- 0.65: 띠철근으로 보강한 압축지배단면에 쓰는 값입니다.\n- 0.70: 나선철근으로 보강한 압축지배단면에 쓰는 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "강도감소계수",
+      "인장지배단면"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-rc-flexure-0005",
+    "certId": "civil-engineer",
+    "subjectId": "rc-steel",
+    "chapterId": "rc-flexure",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "fy = 400MPa 철근을 쓴 휨부재에서 인장지배단면이 되기 위한 최외단 인장철근의 순인장변형률 한계는? (이 값 이상이면 인장지배)",
+    "choices": [
+      "0.004",
+      "0.002",
+      "0.005",
+      "0.0033"
+    ],
+    "answer": 3,
+    "oneLineConcept": "fy 400MPa 이하: 순인장변형률 0.005 이상이면 인장지배",
+    "explanation": "단면이 파괴될 때 최외단 인장철근이 얼마나 늘어나는지(순인장변형률 εt)로 단면을 나눕니다.\n\n1. 압축지배: εt ≤ 항복변형률(400MPa 철근은 0.002)\n2. 인장지배: εt ≥ 0.005 (fy 400MPa 이하일 때. 400MPa 를 넘으면 항복변형률의 2.5배)\n3. 휨부재 최소 허용인장변형률: 0.004 (fy 400MPa 이하일 때)\n\n**틀린 선지**\n- 0.004: 휨부재가 가져야 하는 최소 허용인장변형률입니다.\n- 0.002: 철근의 항복변형률(400 ÷ 200,000)로, 압축지배 한계입니다.\n- 0.0033: 압축 연단 콘크리트의 극한변형률입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "인장지배 변형률",
+      "순인장변형률"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-rc-flexure-0006",
+    "certId": "civil-engineer",
+    "subjectId": "rc-steel",
+    "chapterId": "rc-flexure",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "유효깊이 d = 500mm 인 보가 극한상태에서 중립축 깊이 c = 150mm 였다. 최외단 인장철근의 순인장변형률은 약 얼마인가? (단, fck ≤ 40MPa)",
+    "choices": [
+      "0.0070",
+      "0.0110",
+      "0.0014",
+      "0.0077"
+    ],
+    "answer": 4,
+    "oneLineConcept": "변형률은 중립축에서 거리에 비례: εt = εcu × (d − c)/c, εcu = 0.0033",
+    "explanation": "변형률은 중립축으로부터의 거리에 비례합니다(평면 유지 가정).\n\n1. 압축 연단 극한변형률 εcu = 0.0033 (fck ≤ 40MPa)\n2. 비례식: εt ÷ (d − c) = εcu ÷ c\n3. εt = 0.0033 × (500 − 150) ÷ 150 = 0.0033 × 2.333 ≈ 0.0077\n4. 검산: 0.0077 ≥ 0.005 이므로 이 단면은 인장지배단면입니다.\n\n**틀린 선지**\n- 0.0070: 콘크리트 극한변형률을 예전 값 0.003 으로 쓴 값입니다.\n- 0.0110: (d − c) 대신 d 를 써서 비례식을 잘못 세운 값입니다.\n- 0.0014: 비례식을 거꾸로 세운 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "순인장변형률",
+      "변형률 적합",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-rc-flexure-0007",
+    "certId": "civil-engineer",
+    "subjectId": "rc-steel",
+    "chapterId": "rc-flexure",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "대칭 T형보에서 플랜지 두께 100mm, 복부 폭 300mm, 보의 경간 8m, 양쪽 슬래브 중심 사이 거리 2.5m 일 때 플랜지 유효폭은?",
+    "choices": [
+      "2,000mm",
+      "1,900mm",
+      "2,500mm",
+      "1,600mm"
+    ],
+    "answer": 2,
+    "oneLineConcept": "T형보 유효폭 = min(16tf + bw, 슬래브 중심 간격, 경간/4)",
+    "explanation": "대칭 T형보의 유효폭은 세 값 가운데 가장 작은 값입니다.\n\n1. 16 × 플랜지 두께 + 복부 폭 = 16 × 100 + 300 = 1,900mm\n2. 양쪽 슬래브 중심 사이 거리 = 2,500mm\n3. 보 경간의 1/4 = 8,000 ÷ 4 = 2,000mm\n4. 가장 작은 값: 1,900mm\n\n**틀린 선지**\n- 2,000mm: 보 경간의 1/4 로, 세 값 중 가장 작은 값이 아닙니다.\n- 2,500mm: 슬래브 중심 사이 거리로, 가장 작은 값이 아닙니다.\n- 1,600mm: 복부 폭을 더하지 않은 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "T형보",
+      "유효폭",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-rc-flexure-0008",
+    "certId": "civil-engineer",
+    "subjectId": "rc-steel",
+    "chapterId": "rc-flexure",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "폭 300mm 인 복철근 직사각형 보에서 인장철근 As = 3,000mm², 압축철근 As′ = 1,000mm², fck = 27MPa, fy = 400MPa 이다. 압축철근과 인장철근이 모두 항복할 때 응력블록 깊이 a 는 약 얼마인가?",
+    "choices": [
+      "116.2mm",
+      "174.3mm",
+      "145.2mm",
+      "58.1mm"
+    ],
+    "answer": 1,
+    "oneLineConcept": "복철근보 a = (As − As′)·fy / (0.85·fck·b) (압축철근 항복 시)",
+    "explanation": "복철근보에서는 인장력의 일부를 압축철근이 받고, 나머지만 콘크리트가 받습니다.\n\n1. 인장력: 3,000 × 400 = 1,200,000N\n2. 압축철근 몫: 1,000 × 400 = 400,000N\n3. 콘크리트 몫: 1,200,000 − 400,000 = 800,000N\n4. a = 800,000 ÷ (0.85 × 27 × 300) = 800,000 ÷ 6,885 ≈ 116.2mm\n5. 검산: 6,885 × 116.2 + 400,000 ≈ 1,200,000N 으로 인장력과 같습니다.\n\n**틀린 선지**\n- 174.3mm: 압축철근이 받는 힘을 빼지 않고 인장철근 전체로 계산한 값입니다.\n- 145.2mm: a 를 β₁(0.80)로 나눈 중립축 깊이 c 입니다.\n- 58.1mm: 압축철근 면적을 두 번 뺀 값입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "복철근보",
+      "응력블록 깊이",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-rc-flexure-0009",
+    "certId": "civil-engineer",
+    "subjectId": "rc-steel",
+    "chapterId": "rc-flexure",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "단면 400mm × 400mm 인 띠철근 기둥에 축방향 철근 총단면적 3,000mm² 가 배근되었다. fck = 24MPa, fy = 400MPa 일 때 최대 설계 축강도 φPn(max) 는 약 얼마인가?",
+    "choices": [
+      "약 2,862kN",
+      "약 3,522kN",
+      "약 2,620kN",
+      "약 2,290kN"
+    ],
+    "answer": 4,
+    "oneLineConcept": "띠철근 기둥 φPn(max) = 0.65 × 0.80 × [0.85fck(Ag − Ast) + fy·Ast]",
+    "explanation": "기둥은 예상치 못한 편심을 고려해 순수 축강도 Po 에 상한 계수를 곱합니다(띠철근 0.80, 나선철근 0.85).\n\n1. 순단면: 160,000 − 3,000 = 157,000mm²\n2. Po = 0.85 × 24 × 157,000 + 400 × 3,000 = 3,202,800 + 1,200,000 = 4,402,800N\n3. φPn(max) = 0.65 × 0.80 × 4,402,800 ≈ 2,289,500N ≈ 2,290kN\n4. 검산: 0.65 × 0.80 = 0.52 이고 4,402.8 × 0.52 ≈ 2,289.5kN 으로 같습니다.\n\n**틀린 선지**\n- 약 2,862kN: 띠철근 기둥의 축강도 상한 계수 0.80 을 빠뜨린 값입니다.\n- 약 3,522kN: 강도감소계수 0.65 를 빠뜨린 값입니다.\n- 약 2,620kN: 나선철근 기둥의 계수(0.70, 0.85)를 적용한 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "띠철근 기둥",
+      "최대 설계 축강도",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-rc-flexure-0010",
+    "certId": "civil-engineer",
+    "subjectId": "rc-steel",
+    "chapterId": "rc-flexure",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "철근콘크리트 휨부재 강도설계의 기본 가정으로 옳지 않은 것은?",
+    "choices": [
+      "철근과 콘크리트의 변형률은 중립축으로부터의 거리에 비례한다.",
+      "철근 응력은 항복한 뒤에도 변형률에 비례해 계속 커진다.",
+      "휨강도 계산에서 콘크리트의 인장강도는 무시한다.",
+      "압축 연단 콘크리트의 극한변형률은 fck ≤ 40MPa 일 때 0.0033 으로 본다."
+    ],
+    "answer": 2,
+    "oneLineConcept": "철근 응력은 항복 전 Es·εs, 항복 후에는 fy 로 일정",
+    "explanation": "강도설계법의 주요 가정입니다.\n\n1. 변형률은 중립축에서 거리에 비례한다(평면 유지).\n2. 압축 연단 콘크리트 극한변형률은 0.0033 (fck ≤ 40MPa).\n3. 철근 응력은 항복 전에는 Es × 변형률, 항복 후에는 변형률과 관계없이 fy 로 일정하다.\n4. 콘크리트 인장강도는 휨 계산에서 무시하고, 압축응력 분포는 등가직사각형으로 바꿔 쓸 수 있다.\n\n**틀린 선지**\n- 철근과 콘크리트의 변형률은 중립축으로부터의 거리에 비례한다.: 강도설계법의 기본 가정입니다.\n- 휨강도 계산에서 콘크리트의 인장강도는 무시한다.: 강도설계법의 기본 가정입니다.\n- 압축 연단 콘크리트의 극한변형률은 fck ≤ 40MPa 일 때 0.0033 으로 본다.: 강도설계법의 기본 가정입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "강도설계법",
+      "기본 가정"
+    ],
+    "levelLock": true
+  }
+]

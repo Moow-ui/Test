@@ -1,0 +1,213 @@
+[
+  {
+    "id": "civil-engineer-foundations-0001",
+    "certId": "civil-engineer",
+    "subjectId": "soil-foundation",
+    "chapterId": "foundations",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "테르자기(Terzaghi)가 얕은기초로 본 조건은? (Df: 근입깊이, B: 기초 폭)",
+    "choices": [
+      "Df / B ≥ 4",
+      "Df / B ≤ 1",
+      "Df / B ≥ 10",
+      "Df / B = 0 일 때만"
+    ],
+    "answer": 2,
+    "oneLineConcept": "얕은기초: 근입깊이가 기초 폭 이하 (Df/B ≤ 1)",
+    "explanation": "기초는 근입깊이(지표에서 기초 바닥까지 깊이)와 기초 폭의 비로 나눕니다.\n\n1. 얕은기초(직접기초): Df/B ≤ 1 → 확대기초, 전면기초 등\n2. 깊은기초: 그보다 깊게 들어가는 말뚝기초, 케이슨기초 등\n3. 얕은기초는 기초 바닥 아래 지반의 지지력으로 하중을 받칩니다.\n\n**틀린 선지**\n- Df / B ≥ 4: 깊은기초 쪽에 해당하는 조건입니다.\n- Df / B ≥ 10: 말뚝처럼 아주 깊은 기초에 해당하는 조건입니다.\n- Df / B = 0 일 때만: 지표에 바로 놓인 경우만 말하는 것으로, 얕은기초 범위가 너무 좁습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "얕은기초",
+      "기초의 분류"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-foundations-0002",
+    "certId": "civil-engineer",
+    "subjectId": "soil-foundation",
+    "chapterId": "foundations",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "포화 점토 지반(점착력 30kPa, φ = 0, 단위중량 18kN/m³)에 근입깊이 1.5m 인 연속기초가 있다. 테르자기 공식으로 구한 극한지지력은? (단, φ = 0 일 때 Nc = 5.7, Nq = 1.0, Nγ = 0)",
+    "choices": [
+      "171kPa",
+      "181.2kPa",
+      "249.3kPa",
+      "198kPa"
+    ],
+    "answer": 4,
+    "oneLineConcept": "테르자기 연속기초 qu = c·Nc + q·Nq + ½·γ·B·Nγ",
+    "explanation": "테르자기 극한지지력 식은 점착력 항, 상재하중 항, 흙 무게 항의 합입니다.\n\n1. 점착력 항: 30 × 5.7 = 171kPa\n2. 상재하중 항: q = 18 × 1.5 = 27kPa, 27 × 1.0 = 27kPa\n3. 흙 무게 항: Nγ = 0 이므로 0\n4. qu = 171 + 27 + 0 = 198kPa\n5. 검산: 연속기초이므로 형상계수는 모두 1 입니다.\n\n**틀린 선지**\n- 171kPa: 상재하중(근입 흙 무게) 항을 빠뜨린 값입니다.\n- 181.2kPa: Nc 에 다른 이론의 값 5.14 를 쓴 값입니다.\n- 249.3kPa: 정사각형 기초의 형상계수 1.3 을 적용한 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "지지력",
+      "테르자기 공식",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-foundations-0003",
+    "certId": "civil-engineer",
+    "subjectId": "soil-foundation",
+    "chapterId": "foundations",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "지름 0.4m 말뚝을 중심 간격 1.2m 로 3 × 3 = 9개 배치한 군말뚝의 효율을 Converse-Labarre 식으로 구하면 약 얼마인가?",
+    "choices": [
+      "0.863",
+      "0.995",
+      "0.727",
+      "0.273"
+    ],
+    "answer": 3,
+    "oneLineConcept": "군말뚝 효율 E = 1 − θ[(n − 1)m + (m − 1)n] / (90mn), θ = tan⁻¹(d/s)°",
+    "explanation": "말뚝이 가까이 모여 있으면 서로 영향을 주어 한 개씩 있을 때보다 지지력 합이 줄어듭니다.\n\n1. θ = tan⁻¹(0.4 ÷ 1.2) = tan⁻¹(0.333) ≈ 18.43°\n2. (n − 1)m + (m − 1)n = 2 × 3 + 2 × 3 = 12\n3. 90mn = 90 × 3 × 3 = 810\n4. E = 1 − 18.43 × 12 ÷ 810 = 1 − 0.273 ≈ 0.727\n5. 검산: 효율이 1 보다 작아 군말뚝 지지력이 단말뚝 9개 합의 약 73% 인 것이 맞습니다.\n\n**틀린 선지**\n- 0.863: 식의 [(n − 1)m + (m − 1)n] 가운데 한 항만 넣은 값입니다.\n- 0.995: θ 를 도(°)가 아니라 라디안으로 넣은 값입니다.\n- 0.273: 1 에서 빼지 않은 값으로, 효율이 줄어드는 몫입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "군말뚝",
+      "효율",
+      "Converse-Labarre",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-foundations-0004",
+    "certId": "civil-engineer",
+    "subjectId": "soil-foundation",
+    "chapterId": "foundations",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "연약한 점성토 지반의 개량공법에 해당하지 않는 것은?",
+    "choices": [
+      "바이브로플로테이션 공법",
+      "프리로딩(선행재하) 공법",
+      "샌드드레인 공법",
+      "페이퍼드레인 공법"
+    ],
+    "answer": 1,
+    "oneLineConcept": "점성토: 프리로딩·연직배수(샌드·페이퍼드레인), 사질토: 진동다짐(바이브로플로테이션)",
+    "explanation": "지반개량공법은 흙의 종류에 따라 다릅니다.\n\n1. 점성토: 물을 빼서 압밀을 앞당기는 공법 → 프리로딩, 샌드드레인, 페이퍼드레인, 팩드레인 등\n2. 사질토: 진동·충격으로 촘촘하게 다지는 공법 → 바이브로플로테이션, 다짐모래말뚝, 동다짐 등\n3. 바이브로플로테이션은 느슨한 모래를 진동과 물로 다지는 사질토 공법입니다.\n\n**틀린 선지**\n- 프리로딩(선행재하) 공법: 점성토 지반 개량공법입니다.\n- 샌드드레인 공법: 점성토 지반 개량공법입니다.\n- 페이퍼드레인 공법: 점성토 지반 개량공법입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "지반개량",
+      "점성토",
+      "사질토"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "civil-engineer-foundations-0005",
+    "certId": "civil-engineer",
+    "subjectId": "soil-foundation",
+    "chapterId": "foundations",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "말뚝 주변의 연약층이 말뚝보다 더 많이 침하하여 말뚝을 아래로 끌어내리는 힘을 무엇이라 하는가?",
+    "choices": [
+      "정주면마찰력",
+      "선단지지력",
+      "수동토압",
+      "부주면마찰력"
+    ],
+    "answer": 4,
+    "oneLineConcept": "부주면마찰력: 주변 흙이 더 침하 → 말뚝을 아래로 끄는 하중",
+    "explanation": "보통은 흙이 말뚝을 위로 붙잡아 주는 마찰력(정주면마찰력)이 지지력이 됩니다.\n\n1. 연약 점토층이 압밀 등으로 말뚝보다 더 많이 내려가면 마찰력 방향이 아래로 바뀝니다.\n2. 이것이 부주면마찰력이며, 말뚝에 하중을 더하는 효과가 있습니다.\n3. 매립지·성토 지반에서 특히 주의합니다.\n\n**틀린 선지**\n- 정주면마찰력: 말뚝을 위로 받쳐 주는(지지력이 되는) 주면마찰력입니다.\n- 선단지지력: 말뚝 끝(선단)이 단단한 층을 누르며 받는 지지력입니다.\n- 수동토압: 벽이 흙 쪽으로 밀려 들어갈 때 흙이 버티는 토압입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "말뚝",
+      "부주면마찰력"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-foundations-0006",
+    "certId": "civil-engineer",
+    "subjectId": "soil-foundation",
+    "chapterId": "foundations",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "한 변이 2m 인 정사각형 기초의 극한지지력이 600kPa 이다. 안전율 3 을 적용할 때 기초가 받을 수 있는 허용하중은?",
+    "choices": [
+      "800kN",
+      "2,400kN",
+      "400kN",
+      "200kN"
+    ],
+    "answer": 1,
+    "oneLineConcept": "허용하중 = (극한지지력 ÷ 안전율) × 기초 면적",
+    "explanation": "지지력(압력)을 하중(힘)으로 바꾸려면 기초 면적을 곱합니다.\n\n1. 허용지지력 = 600 ÷ 3 = 200kPa\n2. 기초 면적 = 2 × 2 = 4m²\n3. 허용하중 = 200 × 4 = 800kN\n4. 검산: 극한하중 600 × 4 = 2,400kN 의 1/3 이 800kN 으로 같습니다.\n\n**틀린 선지**\n- 2,400kN: 안전율로 나누지 않은 극한하중입니다.\n- 400kN: 기초 면적(4m²) 대신 한 변 길이(2m)를 곱한 값입니다.\n- 200kN: 허용지지력(kPa)에 면적을 곱하지 않은 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "허용지지력",
+      "안전율",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+]

@@ -1,0 +1,285 @@
+[
+  {
+    "id": "civil-engineer-hydrology-0001",
+    "certId": "civil-engineer",
+    "subjectId": "hydraulics",
+    "chapterId": "hydrology",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "유출계수 0.6, 강우강도 50mm/h, 유역면적 2km² 일 때 합리식으로 구한 첨두유량은 약 얼마인가?",
+    "choices": [
+      "60.0m³/s",
+      "216m³/s",
+      "16.7m³/s",
+      "1.67m³/s"
+    ],
+    "answer": 3,
+    "oneLineConcept": "합리식 Q = (1/3.6) × C × I × A (I: mm/h, A: km²)",
+    "explanation": "합리식은 작은 유역의 첨두유량(가장 많이 흐를 때 유량)을 구하는 식입니다.\n\n1. C × I × A = 0.6 × 50 × 2 = 60\n2. Q = 60 ÷ 3.6 ≈ 16.7m³/s\n3. 검산: 50mm/h 를 m/s 로 바꾸면 0.05 ÷ 3,600, 면적 2,000,000m² 를 곱하고 0.6 을 곱하면 16.7m³/s 로 같습니다.\n\n**틀린 선지**\n- 60.0m³/s: 단위를 맞추는 3.6 으로 나누지 않은 값입니다.\n- 216m³/s: 3.6 으로 나누지 않고 곱한 값입니다.\n- 1.67m³/s: 10배 작게 계산한 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "합리식",
+      "첨두유량",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-hydrology-0002",
+    "certId": "civil-engineer",
+    "subjectId": "hydraulics",
+    "chapterId": "hydrology",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "재현기간 50년인 홍수가 앞으로 10년 동안 적어도 한 번 일어날 확률은 약 얼마인가?",
+    "choices": [
+      "20.0%",
+      "2.0%",
+      "81.7%",
+      "18.3%"
+    ],
+    "answer": 4,
+    "oneLineConcept": "n 년 안에 1번 이상 일어날 확률 = 1 − (1 − 1/T)ⁿ",
+    "explanation": "재현기간 T 년 사상은 1년에 일어날 확률이 1/T 입니다.\n\n1. 1년 확률: 1/50 = 0.02\n2. 10년 동안 한 번도 안 일어날 확률: (1 − 0.02)¹⁰ = 0.98¹⁰ ≈ 0.817\n3. 적어도 한 번 일어날 확률: 1 − 0.817 = 0.183 → 약 18.3%\n4. 검산: 두 확률의 합 18.3% + 81.7% = 100% 입니다.\n\n**틀린 선지**\n- 20.0%: 1년 확률 2% 에 10년을 단순히 곱한 값입니다.\n- 2.0%: 1년 동안 일어날 확률입니다.\n- 81.7%: 10년 동안 한 번도 일어나지 않을 확률입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "재현기간",
+      "확률",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-hydrology-0003",
+    "certId": "civil-engineer",
+    "subjectId": "hydraulics",
+    "chapterId": "hydrology",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "지표면에 내린 비가 흙 표면을 통해 흙 속으로 스며드는 현상은?",
+    "choices": [
+      "침루",
+      "차단",
+      "증산",
+      "침투"
+    ],
+    "answer": 4,
+    "oneLineConcept": "침투 = 지표 → 흙 속, 침루 = 흙 속 → 지하수면",
+    "explanation": "수문 순환에서 물이 움직이는 단계를 구별합니다.\n\n1. 차단: 나무·건물 등에 빗물이 붙잡힘\n2. 침투: 지표면에서 흙 속으로 스며듦\n3. 침루: 흙 속 물이 더 내려가 지하수면에 이름\n4. 증발산: 땅·물의 증발 + 식물의 증산\n\n**틀린 선지**\n- 침루: 흙 속으로 들어간 물이 더 깊이 내려가 지하수면에 이르는 현상입니다.\n- 차단: 빗물이 나뭇잎·줄기 등에 붙잡혀 땅에 닿지 못하는 현상입니다.\n- 증산: 식물의 잎을 통해 물이 수증기로 나가는 현상입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "수문 순환",
+      "침투"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-hydrology-0004",
+    "certId": "civil-engineer",
+    "subjectId": "hydraulics",
+    "chapterId": "hydrology",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "단위유량도 이론의 기본 가정에 해당하지 않는 것은?",
+    "choices": [
+      "지속기간이 같은 유효우량이면 유출의 기저시간이 같다(일정 기저시간).",
+      "유출량은 유효우량의 크기에 비례한다(비례 가정).",
+      "강우강도는 유역 안에서 위치에 따라 크게 달라도 된다고 본다.",
+      "여러 강우의 유출은 각각의 유출을 더해 구한다(중첩 가정)."
+    ],
+    "answer": 3,
+    "oneLineConcept": "단위유량도 가정: 일정 기저시간·비례·중첩, 유역에 고른 강우",
+    "explanation": "단위유량도는 유역에 단위 유효우량(예: 1cm)이 일정 시간 동안 고르게 내렸을 때의 직접유출 수문곡선입니다.\n\n1. 일정 기저시간 가정: 지속기간이 같으면 유출 기간이 같다.\n2. 비례 가정: 유효우량이 2배면 유출량도 2배\n3. 중첩 가정: 연속 강우의 유출은 각각을 더한다.\n4. 강우는 유역 전체에 고르게 분포한다고 봅니다. 위치에 따라 크게 달라도 된다는 설명이 틀렸습니다.\n\n**틀린 선지**\n- 지속기간이 같은 유효우량이면 유출의 기저시간이 같다(일정 기저시간).: 단위유량도의 기본 가정입니다.\n- 유출량은 유효우량의 크기에 비례한다(비례 가정).: 단위유량도의 기본 가정입니다.\n- 여러 강우의 유출은 각각의 유출을 더해 구한다(중첩 가정).: 단위유량도의 기본 가정입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "단위유량도",
+      "기본 가정"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "civil-engineer-hydrology-0005",
+    "certId": "civil-engineer",
+    "subjectId": "hydraulics",
+    "chapterId": "hydrology",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "세 관측소 A, B, C 의 강우량이 각각 40mm, 60mm, 80mm 이고 티센 다각형으로 나눈 지배면적이 각각 30km², 50km², 20km² 이다. 유역 평균강우량은?",
+    "choices": [
+      "60mm",
+      "58mm",
+      "62mm",
+      "65.7mm"
+    ],
+    "answer": 2,
+    "oneLineConcept": "티센법 평균강우량 = Σ(강우량 × 지배면적) ÷ 전체 면적",
+    "explanation": "티센법은 각 관측소가 대표하는 면적(지배면적)을 가중치로 씁니다.\n\n1. 강우량 × 면적: 40 × 30 = 1,200, 60 × 50 = 3,000, 80 × 20 = 1,600\n2. 합계: 1,200 + 3,000 + 1,600 = 5,800\n3. 전체 면적 100km² 로 나누면 58mm\n4. 검산: 면적이 넓은 A·B 의 강우가 작으므로 산술평균(60mm)보다 조금 작은 것이 맞습니다.\n\n**틀린 선지**\n- 60mm: 면적과 상관없이 산술평균한 값입니다.\n- 62mm: A 와 C 의 지배면적을 서로 바꿔 넣은 값입니다.\n- 65.7mm: A 관측소를 빼고 B·C 두 곳만으로 가중 평균한 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "유역 평균강우량",
+      "티센법",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-hydrology-0006",
+    "certId": "civil-engineer",
+    "subjectId": "hydraulics",
+    "chapterId": "hydrology",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "4시간 동안 시간별 강우량이 5mm, 35mm, 25mm, 15mm(합계 80mm)였고 직접유출량이 40mm 였다. φ 지수(침투지수)는 약 얼마인가?",
+    "choices": [
+      "11.7mm/h",
+      "10.0mm/h",
+      "13.3mm/h",
+      "20.0mm/h"
+    ],
+    "answer": 1,
+    "oneLineConcept": "φ 지수: 이 값 위의 강우만 유출된다고 보는 일정한 손실률",
+    "explanation": "φ 지수는 강우 그래프에서 이 선 위쪽 비만 직접유출이 된다고 보는 일정한 손실 강도입니다.\n\n1. 먼저 φ = 10 으로 해 보면 0 + 25 + 15 + 5 = 45mm 로 40mm 보다 많으므로 φ 는 10 보다 큽니다.\n2. 첫 시간(5mm)은 φ 보다 작아 유출이 없으므로, 나머지 3시간으로 (35 + 25 + 15) − 3φ = 40\n3. 75 − 3φ = 40 → φ = 35 ÷ 3 ≈ 11.7mm/h\n4. 검산: (35 − 11.7) + (25 − 11.7) + (15 − 11.7) = 23.3 + 13.3 + 3.3 ≈ 40mm 로 맞습니다.\n\n**틀린 선지**\n- 10.0mm/h: 총 손실량을 전체 강우 시간 4시간으로 나눈 값으로, W 지수에 가깝습니다.\n- 13.3mm/h: 직접유출량 40mm 를 3시간으로 나눈 값입니다.\n- 20.0mm/h: 총 손실량 40mm 를 2시간으로 나눈 값입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "침투지수",
+      "φ 지수",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-hydrology-0007",
+    "certId": "civil-engineer",
+    "subjectId": "hydraulics",
+    "chapterId": "hydrology",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Muskingum 하도 홍수추적법의 저류량 식 S = K[xI + (1 − x)O] 에서 가중계수 x 의 이론적 범위는?",
+    "choices": [
+      "0.5 ~ 1.0",
+      "1 ~ 2",
+      "−1 ~ 0",
+      "0 ~ 0.5"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Muskingum 가중계수 x: 0(저수지형) ~ 0.5(순수 이동)",
+    "explanation": "Muskingum 방법은 하도(강 구간)의 저류량을 유입량 I 와 유출량 O 의 가중 평균으로 나타냅니다.\n\n1. x = 0: 저류량이 유출량에만 관계 → 저수지와 같은 흐름\n2. x = 0.5: 유입·유출이 같은 비중 → 홍수파가 모양 변화 없이 이동\n3. 실제 자연 하천은 대체로 0 ~ 0.3 정도의 값을 씁니다.\n\n**틀린 선지**\n- 0.5 ~ 1.0: x 가 0.5 를 넘으면 유출이 유입보다 먼저 커지는 등 물리적으로 맞지 않습니다.\n- 1 ~ 2: 가중계수는 1 을 넘지 않습니다.\n- −1 ~ 0: 가중계수는 음수가 되지 않습니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "홍수추적",
+      "Muskingum"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-hydrology-0008",
+    "certId": "civil-engineer",
+    "subjectId": "hydraulics",
+    "chapterId": "hydrology",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "관측소 X 의 어느 날 강우량이 빠졌다. 주변 A, B, C 관측소의 그날 강우량은 50mm, 60mm, 48mm 이고, 정상연강수량은 X 1,200mm, A 1,000mm, B 1,500mm, C 1,200mm 이다. 정상연강수량 비율법으로 구한 X 의 강우량은?",
+    "choices": [
+      "52.7mm",
+      "48.0mm",
+      "60.0mm",
+      "52.0mm"
+    ],
+    "answer": 4,
+    "oneLineConcept": "정상연강수량 비율법 Px = (Nx/3)(PA/NA + PB/NB + PC/NC)",
+    "explanation": "주변 관측소와 정상연강수량 차이가 10% 를 넘으면 정상연강수량 비율법을 씁니다(A·B 는 X 와 차이가 크므로 이 방법을 씁니다).\n\n1. A: 1,200 ÷ 1,000 × 50 = 60mm\n2. B: 1,200 ÷ 1,500 × 60 = 48mm\n3. C: 1,200 ÷ 1,200 × 48 = 48mm\n4. 평균: (60 + 48 + 48) ÷ 3 = 52.0mm\n5. 검산: 산술평균 (50 + 60 + 48) ÷ 3 ≈ 52.7mm 와 다른 값이 나오는 것이 맞습니다.\n\n**틀린 선지**\n- 52.7mm: 정상연강수량을 고려하지 않고 산술평균한 값입니다.\n- 48.0mm: 정상연강수량이 같은 C 관측소 값만 쓴 값입니다.\n- 60.0mm: A 관측소의 비율 값(1,200/1,000 × 50)만 쓴 값입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "결측 강우량",
+      "정상연강수량 비율법",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  }
+]

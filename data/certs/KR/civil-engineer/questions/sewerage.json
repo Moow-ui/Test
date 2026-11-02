@@ -1,0 +1,435 @@
+[
+  {
+    "id": "civil-engineer-sewerage-0001",
+    "certId": "civil-engineer",
+    "subjectId": "water-sewer",
+    "chapterId": "sewerage",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "하수 배제방식 가운데 분류식의 장점으로 옳은 것은?",
+    "choices": [
+      "관로가 하나뿐이라 건설비가 적게 든다.",
+      "관경이 커서 관 속 청소가 쉽다.",
+      "비가 올 때 관 속 퇴적물이 저절로 씻겨 나간다.",
+      "비가 많이 와도 처리되지 않은 오수가 하천으로 넘쳐흐르지 않는다."
+    ],
+    "answer": 4,
+    "oneLineConcept": "분류식: 오수·우수 따로 → 우천 시 오수 월류 없음",
+    "explanation": "하수 배제방식은 오수(생활하수)와 우수(빗물)를 함께 모으는지에 따라 나눕니다.\n\n1. 분류식: 오수관과 우수관을 따로 둡니다. 비가 와도 오수가 하천으로 넘치지 않고, 처리장에 들어오는 수량·수질이 안정됩니다.\n2. 합류식: 관 하나로 함께 모읍니다. 건설비가 적고 관이 커서 청소가 쉽지만, 큰비에 처리되지 않은 하수가 넘칠 수 있습니다.\n\n**틀린 선지**\n- 관로가 하나뿐이라 건설비가 적게 든다.: 오수관과 우수관을 하나로 쓰는 합류식의 장점입니다.\n- 관경이 커서 관 속 청소가 쉽다.: 큰 관 하나를 쓰는 합류식의 장점입니다.\n- 비가 올 때 관 속 퇴적물이 저절로 씻겨 나간다.: 빗물이 함께 흐르는 합류식의 특징입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "하수 배제방식",
+      "분류식",
+      "합류식"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-sewerage-0002",
+    "certId": "civil-engineer",
+    "subjectId": "water-sewer",
+    "chapterId": "sewerage",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "하수 시료 6mL 를 희석수로 300mL 로 만들어 BOD 시험을 하였다. 처음 용존산소가 8.0mg/L, 5일 뒤 3.0mg/L 였다면 BOD₅ 는? (희석수의 산소 소비는 무시)",
+    "choices": [
+      "5mg/L",
+      "100mg/L",
+      "250mg/L",
+      "400mg/L"
+    ],
+    "answer": 3,
+    "oneLineConcept": "BOD = (처음 DO − 5일 후 DO) × 희석배율",
+    "explanation": "BOD(생물화학적 산소요구량)는 미생물이 5일 동안 유기물을 분해하며 쓴 산소량입니다.\n\n1. 소비된 산소: 8.0 − 3.0 = 5.0mg/L\n2. 희석배율: 300 ÷ 6 = 50\n3. BOD₅ = 5.0 × 50 = 250mg/L\n4. 검산: 시료 6mL 에 든 유기물이 300mL 전체 산소 5mg/L 를 소비했으므로, 원래 시료 기준으로는 50배인 것이 맞습니다.\n\n**틀린 선지**\n- 5mg/L: 희석배율을 곱하지 않은 값입니다.\n- 100mg/L: 희석배율을 20 으로 잘못 계산한 값입니다.\n- 400mg/L: 처음 용존산소(8.0)에 희석배율을 곱한 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "BOD",
+      "희석법",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-sewerage-0003",
+    "certId": "civil-engineer",
+    "subjectId": "water-sewer",
+    "chapterId": "sewerage",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "최종 BOD(BODu)가 200mg/L 인 하수의 탈산소계수 k₁ = 0.1/일(상용대수 기준)일 때 BOD₅ 는 약 얼마인가?",
+    "choices": [
+      "136.8mg/L",
+      "63.2mg/L",
+      "200mg/L",
+      "100mg/L"
+    ],
+    "answer": 1,
+    "oneLineConcept": "BODt = BODu × (1 − 10^(−k₁·t))",
+    "explanation": "BOD 소비는 1차 반응으로, 남은 유기물에 비례해 줄어듭니다.\n\n1. k₁ × t = 0.1 × 5 = 0.5\n2. 10^(−0.5) ≈ 0.3162\n3. BOD₅ = 200 × (1 − 0.3162) = 200 × 0.6838 ≈ 136.8mg/L\n4. 검산: 남은 BOD 200 × 0.3162 ≈ 63.2mg/L 와 합하면 200mg/L 로 같습니다.\n\n**틀린 선지**\n- 63.2mg/L: 5일 뒤에 남아 있는 BOD 입니다.\n- 200mg/L: 최종 BOD 로, 5일 동안 모두 소비된다고 본 값입니다.\n- 100mg/L: 5일 동안 절반이 소비된다고 짐작한 값입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "BOD",
+      "1차 반응",
+      "최종 BOD",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-sewerage-0004",
+    "certId": "civil-engineer",
+    "subjectId": "water-sewer",
+    "chapterId": "sewerage",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "오수관로의 계획하수량에 대한 유속 범위 기준은?",
+    "choices": [
+      "0.8~3.0m/s",
+      "0.6~3.0m/s",
+      "0.3~1.0m/s",
+      "1.0~5.0m/s"
+    ],
+    "answer": 2,
+    "oneLineConcept": "하수관 유속: 오수관 0.6~3.0m/s, 우수·합류관 0.8~3.0m/s",
+    "explanation": "하수관로 유속은 너무 느리면 찌꺼기가 쌓이고, 너무 빠르면 관이 닳습니다.\n\n1. 오수관로: 0.6~3.0m/s\n2. 우수관로·합류관로: 0.8~3.0m/s (빗물에 섞인 흙·모래가 쌓이지 않게 최저 유속을 더 높게 잡음)\n3. 이상적인 유속은 1.0~1.8m/s 정도로 봅니다.\n\n**틀린 선지**\n- 0.8~3.0m/s: 우수관로·합류관로의 유속 범위입니다.\n- 0.3~1.0m/s: 최저 유속이 너무 낮아 관 속에 찌꺼기가 쌓입니다.\n- 1.0~5.0m/s: 최고 유속이 너무 높아 관이 닳습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "하수관로",
+      "유속 기준"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-sewerage-0005",
+    "certId": "civil-engineer",
+    "subjectId": "water-sewer",
+    "chapterId": "sewerage",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "조도계수 n = 0.013, 경심 R = 0.25m, 동수경사 I = 0.004 인 하수관의 평균유속을 Manning 공식으로 구하면 약 얼마인가?",
+    "choices": [
+      "2.43m/s",
+      "1.93m/s",
+      "1.22m/s",
+      "0.12m/s"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Manning 공식 V = (1/n) × R^(2/3) × I^(1/2)",
+    "explanation": "Manning 공식은 관로·수로 유속 계산에 가장 많이 씁니다.\n\n1. 1/n = 1 ÷ 0.013 ≈ 76.92\n2. R^(2/3) = 0.25^(2/3) ≈ 0.397\n3. I^(1/2) = √0.004 ≈ 0.0632\n4. V = 76.92 × 0.397 × 0.0632 ≈ 1.93m/s\n5. 검산: 오수관 유속 범위(0.6~3.0m/s) 안의 값입니다.\n\n**틀린 선지**\n- 2.43m/s: 경심을 2/3 제곱 대신 1/2 제곱한 값입니다.\n- 1.22m/s: 경심을 제곱하지 않고 그대로 곱한 값입니다.\n- 0.12m/s: 동수경사에 제곱근을 씌우지 않은 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "Manning 공식",
+      "유속",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-sewerage-0006",
+    "certId": "civil-engineer",
+    "subjectId": "water-sewer",
+    "chapterId": "sewerage",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "유입 BOD 200mg/L, 유입 유량 10,000m³/일, 폭기조 부피 4,000m³, MLSS 2,500mg/L 인 활성슬러지 공정의 F/M 비는?",
+    "choices": [
+      "5.0/일",
+      "0.2/일",
+      "0.08/일",
+      "0.4/일"
+    ],
+    "answer": 2,
+    "oneLineConcept": "F/M 비 = (BOD × Q) / (MLSS × V)",
+    "explanation": "F/M 비는 미생물(MLSS) 1kg 이 하루에 받는 먹이(BOD)의 양입니다.\n\n1. 하루 유입 BOD: 200 × 10,000 = 2,000,000 (mg/L × m³ → g 단위로 2,000kg)\n2. 폭기조 미생물량: 2,500 × 4,000 = 10,000,000 (같은 단위로 10,000kg)\n3. F/M = 2,000,000 ÷ 10,000,000 = 0.2/일\n4. 검산: 체류시간 = 4,000 ÷ 10,000 = 0.4일, F/M = 200 ÷ (2,500 × 0.4) = 0.2 로 같습니다.\n\n**틀린 선지**\n- 5.0/일: 분자·분모를 거꾸로 계산한 값입니다.\n- 0.08/일: 유량과 부피를 빼고 BOD ÷ MLSS 만 계산한 값입니다.\n- 0.4/일: 폭기조 체류시간(일)을 F/M 비로 혼동한 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "활성슬러지",
+      "F/M 비",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-sewerage-0007",
+    "certId": "civil-engineer",
+    "subjectId": "water-sewer",
+    "chapterId": "sewerage",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "폭기조 혼합액 1L 를 30분 동안 가라앉힌 슬러지 부피가 300mL 이고 MLSS 가 2,500mg/L 일 때 슬러지 용적지수(SVI)는?",
+    "choices": [
+      "8.3",
+      "750",
+      "12",
+      "120"
+    ],
+    "answer": 4,
+    "oneLineConcept": "SVI = SV₃₀(mL/L) × 1,000 / MLSS(mg/L)",
+    "explanation": "SVI 는 활성슬러지 1g 이 차지하는 부피(mL)로, 슬러지가 잘 가라앉는지 판단합니다.\n\n1. SVI = 300 × 1,000 ÷ 2,500\n2. = 300,000 ÷ 2,500 = 120\n3. 검산: MLSS 2,500mg/L = 2.5g/L 이므로 300mL ÷ 2.5g = 120mL/g 로 같습니다. 보통 50~150 이면 침강성이 좋다고 봅니다.\n\n**틀린 선지**\n- 8.3: MLSS 를 침전 부피로 나눈 거꾸로 된 값입니다.\n- 750: 나누지 않고 곱한 값입니다.\n- 12: 1,000 대신 100 을 곱한 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "SVI",
+      "슬러지 침강성",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-sewerage-0008",
+    "certId": "civil-engineer",
+    "subjectId": "water-sewer",
+    "chapterId": "sewerage",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "하수 슬러지의 일반적인 처리 순서로 옳은 것은?",
+    "choices": [
+      "소화 → 농축 → 탈수 → 개량 → 처분",
+      "농축 → 소화 → 개량 → 탈수 → 처분",
+      "탈수 → 농축 → 소화 → 개량 → 처분",
+      "개량 → 소화 → 농축 → 탈수 → 처분"
+    ],
+    "answer": 2,
+    "oneLineConcept": "슬러지 처리: 농축 → 소화 → 개량 → 탈수 → 처분",
+    "explanation": "슬러지는 물이 매우 많아 부피를 줄이는 것이 핵심입니다.\n\n1. 농축: 물을 일부 빼 부피를 줄임\n2. 소화: 미생물로 유기물을 분해해 안정화(혐기성 소화 등)\n3. 개량: 약품 등을 넣어 탈수가 잘 되게 함\n4. 탈수: 기계로 물을 짜냄\n5. 처분: 소각·매립·재활용\n\n**틀린 선지**\n- 소화 → 농축 → 탈수 → 개량 → 처분: 농축으로 부피를 먼저 줄인 뒤 소화하고, 개량은 탈수 앞에 합니다.\n- 탈수 → 농축 → 소화 → 개량 → 처분: 탈수는 개량 뒤 거의 마지막 단계입니다.\n- 개량 → 소화 → 농축 → 탈수 → 처분: 개량은 탈수가 잘 되게 하는 단계로 탈수 바로 앞에 합니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "슬러지 처리",
+      "처리 순서"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-sewerage-0009",
+    "certId": "civil-engineer",
+    "subjectId": "water-sewer",
+    "chapterId": "sewerage",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "함수율 99% 인 슬러지 100m³ 를 농축하여 함수율을 96% 로 낮추었다. 농축 후 슬러지 부피는? (슬러지 비중은 1 로 봄)",
+    "choices": [
+      "75m³",
+      "97.0m³",
+      "25m³",
+      "4.0m³"
+    ],
+    "answer": 3,
+    "oneLineConcept": "고형물량 일정: V₁(100 − P₁) = V₂(100 − P₂)",
+    "explanation": "농축 전후로 고형물(물을 뺀 찌꺼기)의 양은 그대로입니다.\n\n1. 농축 전 고형물: 100 × (100 − 99)% = 1m³\n2. 농축 후 고형물 비율: 100 − 96 = 4%\n3. V₂ = 1 ÷ 0.04 = 25m³\n4. 검산: 25m³ × 4% = 1m³ 로 고형물량이 같습니다. 함수율이 3%p 만 줄어도 부피는 1/4 이 됩니다.\n\n**틀린 선지**\n- 75m³: 줄어든 부피로, 남은 부피가 아닙니다.\n- 97.0m³: 함수율 비(96 ÷ 99)로 계산한 값입니다.\n- 4.0m³: 함수율 차이(100 − 96)를 그대로 부피로 본 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "슬러지",
+      "함수율",
+      "부피 변화",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-sewerage-0010",
+    "certId": "civil-engineer",
+    "subjectId": "water-sewer",
+    "chapterId": "sewerage",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "하수도 계획에서 계획시간최대오수량은 계획1일최대오수량의 1시간당 수량의 몇 배를 표준으로 하는가?",
+    "choices": [
+      "1.3~1.8배",
+      "3배 이상",
+      "0.7~0.8배",
+      "2.5~3.0배"
+    ],
+    "answer": 1,
+    "oneLineConcept": "계획시간최대오수량 = 계획1일최대오수량 ÷ 24 × 1.3~1.8",
+    "explanation": "하수량은 하루 중 시간에 따라 크게 달라지므로, 관로는 가장 많이 흐르는 시간을 기준으로 설계합니다.\n\n1. 계획1일최대오수량을 24 로 나눈 1시간 평균 수량에 1.3~1.8 을 곱합니다.\n2. 오수관로는 이 계획시간최대오수량으로 관경을 정합니다.\n\n**틀린 선지**\n- 3배 이상: 합류식 차집관로 등에서 우천 시 오수량을 다룰 때 자주 쓰는 배수와 혼동한 값입니다.\n- 0.7~0.8배: 계획1일평균오수량을 계획1일최대오수량과 비교할 때 쓰는 비율과 비슷한 값입니다.\n- 2.5~3.0배: 기준보다 너무 큰 값입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "계획오수량",
+      "계획시간최대오수량"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-sewerage-0011",
+    "certId": "civil-engineer",
+    "subjectId": "water-sewer",
+    "chapterId": "sewerage",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "하수관로의 접합 방법 가운데 수리학적으로 가장 좋은 방법으로, 위아래 관의 계획 수위를 맞추어 잇는 방법은?",
+    "choices": [
+      "관정접합",
+      "관저접합",
+      "수면접합",
+      "관중심접합"
+    ],
+    "answer": 3,
+    "oneLineConcept": "관거 접합: 수면접합이 수리학적으로 가장 유리",
+    "explanation": "관 지름이 바뀌는 곳에서는 맨홀에서 관을 어떻게 맞추어 잇는지가 중요합니다.\n\n1. 수면접합: 계획 수위를 맞춤 → 수리학적으로 가장 좋음\n2. 관정접합: 관 꼭대기를 맞춤 → 흐름은 좋지만 하류로 갈수록 깊어짐\n3. 관중심접합: 관 중심을 맞춤\n4. 관저접합: 관 바닥을 맞춤 → 굴착은 얕지만 수리학적으로 불리\n\n**틀린 선지**\n- 관정접합: 관 꼭대기(관정)를 맞추는 방법으로, 흐름은 원활하지만 굴착 깊이가 깊어집니다.\n- 관저접합: 관 바닥을 맞추는 방법으로, 굴착은 얕지만 위쪽 관에 물이 막히기 쉬워 수리학적으로 불리합니다.\n- 관중심접합: 관의 중심을 맞추는 방법으로, 수면접합과 관정접합의 중간 성격입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "하수관로",
+      "관거 접합"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-sewerage-0012",
+    "certId": "civil-engineer",
+    "subjectId": "water-sewer",
+    "chapterId": "sewerage",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "생물학적 질소 제거에 대한 설명으로 옳지 않은 것은?",
+    "choices": [
+      "질산화는 산소가 있는 호기 조건에서 일어난다.",
+      "질산화가 일어나면 물의 알칼리도가 늘어난다.",
+      "탈질은 무산소 조건에서 질산성 질소가 질소 가스로 바뀌는 반응이다.",
+      "탈질 반응에는 메탄올 같은 유기탄소원이 필요하다."
+    ],
+    "answer": 2,
+    "oneLineConcept": "질산화: 호기·알칼리도 소비, 탈질: 무산소·유기탄소 필요·알칼리도 회복",
+    "explanation": "생물학적 질소 제거는 두 단계로 이루어집니다.\n\n1. 질산화(호기 조건): 암모니아성 질소 → 아질산성 → 질산성 질소. 이 과정에서 알칼리도가 소비되어 pH 가 떨어집니다.\n2. 탈질(무산소 조건): 질산성 질소 → 질소 가스(대기로 날아감). 유기탄소원이 필요하고 알칼리도가 일부 회복됩니다.\n3. 따라서 \"질산화로 알칼리도가 늘어난다\"는 설명이 틀렸습니다.\n\n**틀린 선지**\n- 질산화는 산소가 있는 호기 조건에서 일어난다.: 질소 제거에 대한 옳은 설명입니다.\n- 탈질은 무산소 조건에서 질산성 질소가 질소 가스로 바뀌는 반응이다.: 질소 제거에 대한 옳은 설명입니다.\n- 탈질 반응에는 메탄올 같은 유기탄소원이 필요하다.: 질소 제거에 대한 옳은 설명입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "고도처리",
+      "질소 제거",
+      "질산화",
+      "탈질"
+    ],
+    "levelLock": true
+  }
+]

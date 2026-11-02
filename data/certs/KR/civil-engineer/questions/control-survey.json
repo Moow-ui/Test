@@ -1,0 +1,223 @@
+[
+  {
+    "id": "civil-engineer-control-survey-0001",
+    "certId": "civil-engineer",
+    "subjectId": "surveying",
+    "chapterId": "control-survey",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "측선 길이가 100m 이고 방위각이 60° 인 측선의 위거는?",
+    "choices": [
+      "+86.60m",
+      "+50.00m",
+      "+57.74m",
+      "+115.47m"
+    ],
+    "answer": 2,
+    "oneLineConcept": "위거 = 거리 × cos(방위각), 경거 = 거리 × sin(방위각)",
+    "explanation": "위거는 남북(세로) 방향 성분, 경거는 동서(가로) 방향 성분입니다.\n\n1. 위거 = 100 × cos60° = 100 × 0.5 = +50.00m\n2. 경거 = 100 × sin60° = 100 × 0.8660 = +86.60m\n3. 검산: 50² + 86.6² = 2,500 + 7,500 = 10,000 = 100² 으로 맞습니다. 방위각 60° 는 북동쪽이라 위거·경거 모두 + 입니다.\n\n**틀린 선지**\n- +86.60m: sin 을 곱한 값으로, 위거가 아니라 경거입니다.\n- +57.74m: tan 을 곱한 값입니다.\n- +115.47m: 거리를 cos30° 로 나눈 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "위거",
+      "경거",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-control-survey-0002",
+    "certId": "civil-engineer",
+    "subjectId": "surveying",
+    "chapterId": "control-survey",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "폐합 트래버스의 전체 측선 길이가 500m 이고 위거 오차 0.03m, 경거 오차 0.04m 일 때 폐합비는?",
+    "choices": [
+      "1/7,143",
+      "1/12,500",
+      "1/16,667",
+      "1/10,000"
+    ],
+    "answer": 4,
+    "oneLineConcept": "폐합오차 = √(위거오차² + 경거오차²), 폐합비 = 폐합오차 ÷ 전체 길이",
+    "explanation": "폐합오차는 위거 오차와 경거 오차를 직각삼각형의 두 변으로 보고 빗변을 구합니다.\n\n1. 폐합오차 = √(0.03² + 0.04²) = √(0.0009 + 0.0016) = √0.0025 = 0.05m\n2. 폐합비 = 0.05 ÷ 500 = 1/10,000\n3. 검산: 500 ÷ 0.05 = 10,000 이므로 맞습니다.\n\n**틀린 선지**\n- 1/7,143: 두 오차를 단순히 더해(0.07m) 계산한 값입니다.\n- 1/12,500: 경거 오차만으로 계산한 값입니다.\n- 1/16,667: 위거 오차만으로 계산한 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "다각측량",
+      "폐합비",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-control-survey-0003",
+    "certId": "civil-engineer",
+    "subjectId": "surveying",
+    "chapterId": "control-survey",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "다각측량에서 각 관측과 거리 관측의 정밀도가 서로 비슷할 때 위거·경거의 폐합오차를 각 측선 길이에 비례하여 나누어 주는 조정법은?",
+    "choices": [
+      "트랜싯 법칙",
+      "교호법",
+      "편각법",
+      "컴퍼스 법칙"
+    ],
+    "answer": 4,
+    "oneLineConcept": "컴퍼스 법칙: 측선 길이에 비례 배분 (각·거리 정밀도 비슷)",
+    "explanation": "트래버스 폐합오차 조정에는 두 가지 법칙이 많이 나옵니다.\n\n1. 컴퍼스 법칙: 각과 거리의 정밀도가 비슷할 때. 오차 × (그 측선 길이 ÷ 전체 길이)\n2. 트랜싯 법칙: 각의 정밀도가 거리보다 높을 때. 오차 × (그 측선 위거(경거) ÷ 위거(경거) 절댓값 합)\n\n**틀린 선지**\n- 트랜싯 법칙: 각 관측이 거리 관측보다 정밀할 때 쓰며, 위거·경거의 크기에 비례해 나눕니다.\n- 교호법: 강 건너 수준측량 등에서 양쪽을 번갈아 관측하는 방법입니다.\n- 편각법: 노선의 곡선을 설치하는 방법입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "다각측량",
+      "컴퍼스 법칙",
+      "폐합오차 조정"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-control-survey-0004",
+    "certId": "civil-engineer",
+    "subjectId": "surveying",
+    "chapterId": "control-survey",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "같은 정밀도로 관측한 삼각형 세 내각의 합이 180°00′12″ 였다. 각 조건에 맞게 조정하는 방법으로 옳은 것은?",
+    "choices": [
+      "각 내각에 4″ 씩 더한다.",
+      "가장 큰 각에서만 12″ 를 뺀다.",
+      "각 내각에서 12″ 씩 뺀다.",
+      "각 내각에서 4″ 씩 뺀다."
+    ],
+    "answer": 4,
+    "oneLineConcept": "같은 정밀도 삼각형 각 조정: 오차 ÷ 3 을 반대 부호로 똑같이",
+    "explanation": "삼각형 내각의 합은 180° 여야 합니다(각 조건).\n\n1. 오차: 180°00′12″ − 180° = +12″ (많이 잰 것)\n2. 같은 정밀도이므로 세 각에 똑같이: 12″ ÷ 3 = 4″\n3. 많이 쟀으므로 각 내각에서 4″ 씩 뺍니다.\n4. 검산: 조정 후 합 = 180°00′12″ − 12″ = 180°00′00″\n\n**틀린 선지**\n- 각 내각에 4″ 씩 더한다.: 합이 이미 180° 보다 크므로 더하면 오차가 더 커집니다.\n- 가장 큰 각에서만 12″ 를 뺀다.: 정밀도가 같으면 한 각에만 몰지 않고 똑같이 나눕니다.\n- 각 내각에서 12″ 씩 뺀다.: 12″ 를 세 각에 나누지 않고 각각 빼면 36″ 를 빼게 됩니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "삼각측량",
+      "각 조정"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-control-survey-0005",
+    "certId": "civil-engineer",
+    "subjectId": "surveying",
+    "chapterId": "control-survey",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "삼각형 ABC 에서 기선 AB = 500m, ∠A = 60°, ∠B = 50° 로 관측되었다. 변 BC 의 길이는 약 얼마인가?",
+    "choices": [
+      "407.6m",
+      "542.5m",
+      "613.3m",
+      "460.8m"
+    ],
+    "answer": 4,
+    "oneLineConcept": "사인 법칙: 변 ÷ sin(마주 보는 각) 이 모두 같다",
+    "explanation": "사인 법칙은 \"각 변의 길이 ÷ 그 변과 마주 보는 각의 사인\" 이 모두 같다는 법칙입니다.\n\n1. ∠C = 180° − 60° − 50° = 70°\n2. BC 는 ∠A 와 마주 보고, AB 는 ∠C 와 마주 봅니다.\n3. BC = AB × sinA ÷ sinC = 500 × 0.8660 ÷ 0.9397 ≈ 460.8m\n4. 검산: AC = 500 × sin50° ÷ sin70° = 500 × 0.7660 ÷ 0.9397 ≈ 407.6m, 가장 큰 각(70°)과 마주 보는 AB 가 가장 긴 변인 것이 맞습니다.\n\n**틀린 선지**\n- 407.6m: ∠B 의 사인을 써서 구한 변 AC 의 길이입니다.\n- 542.5m: sin60° 와 sin70° 를 분자·분모 거꾸로 넣은 값입니다.\n- 613.3m: sin70° ÷ sin50° 로 거꾸로 계산한 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "삼각측량",
+      "변장 계산",
+      "사인 법칙",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-control-survey-0006",
+    "certId": "civil-engineer",
+    "subjectId": "surveying",
+    "chapterId": "control-survey",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "어떤 측선의 방위각이 300° 일 때 이 측선의 방위는?",
+    "choices": [
+      "N 60° W",
+      "N 30° W",
+      "S 60° W",
+      "S 60° E"
+    ],
+    "answer": 1,
+    "oneLineConcept": "방위각 270°~360° → 방위 N(360° − 방위각)W",
+    "explanation": "방위각은 북쪽에서 시계 방향으로 잰 각이고, 방위는 남북선에서 동·서쪽으로 잰 90° 이하의 각입니다.\n\n1. 300° 는 270°~360° 사이 → 북서쪽(제4상한)\n2. 북쪽에서 서쪽으로 잰 각: 360° − 300° = 60°\n3. 방위: N 60° W\n4. 검산: 북쪽(0°)에서 시계 반대 방향으로 60° 돌리면 300° 가 됩니다.\n\n**틀린 선지**\n- N 30° W: 북쪽에서 서쪽으로 잰 각을 360° − 300° 가 아니라 300° − 270° 로 계산한 것입니다.\n- S 60° W: 남서쪽(180°~270°)에 해당하는 방위입니다.\n- S 60° E: 정반대 방향(방위각 120°)의 방위입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "방위각",
+      "방위"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+]
