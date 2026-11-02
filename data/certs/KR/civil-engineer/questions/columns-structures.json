@@ -1,0 +1,249 @@
+[
+  {
+    "id": "civil-engineer-columns-structures-0001",
+    "certId": "civil-engineer",
+    "subjectId": "applied-mechanics",
+    "chapterId": "columns-structures",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "양단이 힌지인 기둥의 오일러 좌굴하중이 P 일 때, 재료·단면·길이가 같고 양단을 고정한 기둥의 좌굴하중은?",
+    "choices": [
+      "2P",
+      "0.25P",
+      "4P",
+      "8P"
+    ],
+    "answer": 3,
+    "oneLineConcept": "좌굴하중 Pcr = π²EI/(kL)², 양단 고정 k = 0.5 → 4배",
+    "explanation": "오일러 좌굴하중은 유효길이(kL)의 제곱에 반비례합니다.\n\n1. 양단 힌지: k = 1.0, 양단 고정: k = 0.5\n2. 비율: (1.0 ÷ 0.5)² = 2² = 4\n3. 양단 고정 기둥의 좌굴하중 = 4P\n4. 검산: 1단 고정 1단 자유(k = 2.0)이면 (1 ÷ 2)² = 0.25P 로 가장 작고, 양단 고정이 가장 큽니다.\n\n**틀린 선지**\n- 2P: 유효길이계수 비(1 → 0.5)를 제곱하지 않고 계산한 값입니다.\n- 0.25P: 좌굴하중이 줄어드는 쪽(1단 고정 1단 자유에 가까운 쪽)으로 거꾸로 본 값입니다.\n- 8P: 유효길이계수를 0.35 처럼 잘못 잡은 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "오일러 좌굴",
+      "유효길이"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-columns-structures-0002",
+    "certId": "civil-engineer",
+    "subjectId": "applied-mechanics",
+    "chapterId": "columns-structures",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "휨강성 EI = 2,000kN·m², 길이 4m 인 기둥의 아래 끝은 고정, 위 끝은 자유이다. 오일러 좌굴하중은 약 얼마인가?",
+    "choices": [
+      "617kN",
+      "308kN",
+      "1,234kN",
+      "4,935kN"
+    ],
+    "answer": 2,
+    "oneLineConcept": "1단 고정 1단 자유 기둥: 유효길이 kL = 2L",
+    "explanation": "1단 고정·1단 자유 기둥은 유효길이계수 k = 2 입니다.\n\n1. 유효길이: kL = 2 × 4 = 8m\n2. π²EI = 9.8696 × 2,000 ≈ 19,739kN·m²\n3. Pcr = 19,739 ÷ 8² = 19,739 ÷ 64 ≈ 308kN\n4. 검산: 양단 힌지라면 19,739 ÷ 16 ≈ 1,234kN 이고, 그 1/4 이 308kN 이므로 맞습니다.\n\n**틀린 선지**\n- 617kN: 유효길이계수 2 를 제곱하지 않고 곱하기만 한 값입니다.\n- 1,234kN: 양단 힌지(k = 1)로 계산한 값입니다.\n- 4,935kN: 양단 고정(k = 0.5)으로 계산한 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "오일러 좌굴",
+      "캔틸레버 기둥",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-columns-structures-0003",
+    "certId": "civil-engineer",
+    "subjectId": "applied-mechanics",
+    "chapterId": "columns-structures",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "지름 100mm 인 원형 단면 기둥의 길이가 3m 이고 양단이 힌지이다. 세장비는?",
+    "choices": [
+      "30",
+      "120",
+      "60",
+      "240"
+    ],
+    "answer": 2,
+    "oneLineConcept": "세장비 λ = kL / r, 원형 단면 회전반경 r = D/4",
+    "explanation": "세장비는 기둥이 얼마나 가늘고 긴지를 나타내며 λ = kL/r 입니다.\n\n1. 회전반경: r = D/4 = 100 ÷ 4 = 25mm\n2. 유효길이: 양단 힌지 k = 1 → kL = 3,000mm\n3. λ = 3,000 ÷ 25 = 120\n4. 검산: 120 × 25 = 3,000mm = 3m 로 맞습니다.\n\n**틀린 선지**\n- 30: 길이를 지름으로 나눈 값입니다.\n- 60: 길이를 반지름(50mm)으로 나눈 값입니다.\n- 240: 유효길이계수를 2 로 잘못 잡은 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "세장비",
+      "원형 기둥",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-columns-structures-0004",
+    "certId": "civil-engineer",
+    "subjectId": "applied-mechanics",
+    "chapterId": "columns-structures",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "폭 400mm, 높이(편심 방향 길이) 600mm 인 직사각형 단주에 편심 압축하중이 작용한다. 단면에 인장응력이 생기지 않으려면 하중은 도심에서 편심 방향으로 최대 몇 mm 이내에 있어야 하는가?",
+    "choices": [
+      "200mm",
+      "150mm",
+      "100mm",
+      "67mm"
+    ],
+    "answer": 3,
+    "oneLineConcept": "직사각형 단면 핵 반경 = h/6 (핵 전체 폭은 h/3)",
+    "explanation": "편심하중이 단면의 핵(core) 안에 있으면 단면 전체가 압축만 받습니다. 직사각형의 핵 반경은 편심 방향 길이의 1/6 입니다.\n\n1. 조건: P/A − P·e/Z ≥ 0 → e ≤ Z/A\n2. Z/A = (bh²/6) ÷ (bh) = h/6\n3. e ≤ 600 ÷ 6 = 100mm\n4. 검산: e = 100mm 이면 P/A 와 Pe/Z 가 같아져 한쪽 끝 응력이 정확히 0 이 됩니다.\n\n**틀린 선지**\n- 200mm: 핵(core)의 전체 폭 h/3 을 한쪽 편심 한계로 본 값입니다.\n- 150mm: h/4 로 잘못 계산한 값입니다.\n- 67mm: 편심 방향 길이 대신 폭 400mm 의 1/6 을 쓴 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "단주",
+      "핵",
+      "편심"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-columns-structures-0005",
+    "certId": "civil-engineer",
+    "subjectId": "applied-mechanics",
+    "chapterId": "columns-structures",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "부재 수 14개, 절점 수 8개, 반력 수 4개인 평면 트러스의 판별 결과는?",
+    "choices": [
+      "불안정",
+      "정정",
+      "1차 부정정",
+      "2차 부정정"
+    ],
+    "answer": 4,
+    "oneLineConcept": "평면 트러스 부정정 차수 = 부재 수 + 반력 수 − 2 × 절점 수",
+    "explanation": "평면 트러스는 절점마다 수평·수직 평형식 2개가 있으므로, 부정정 차수 N = m + r − 2j 로 판별합니다.\n\n1. m = 14, r = 4, j = 8\n2. N = 14 + 4 − 2 × 8 = 18 − 16 = 2\n3. N > 0 이므로 2차 부정정\n4. 검산: 미지수(부재력 14 + 반력 4 = 18개)가 식(16개)보다 2개 많습니다.\n\n**틀린 선지**\n- 불안정: 차수가 음수일 때의 결과입니다.\n- 정정: 차수가 0 일 때의 결과입니다.\n- 1차 부정정: 반력 수를 3 으로 잘못 넣은 결과입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "트러스",
+      "부정정 차수",
+      "판별"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-columns-structures-0006",
+    "certId": "civil-engineer",
+    "subjectId": "applied-mechanics",
+    "chapterId": "columns-structures",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "정정 트러스 해석에 쓰는 기본 가정으로 옳지 않은 것은?",
+    "choices": [
+      "부재는 마찰이 없는 핀으로 연결되어 있다.",
+      "부재에는 휨모멘트와 전단력도 함께 생긴다고 본다.",
+      "하중과 반력은 절점에만 작용한다.",
+      "부재의 중심축은 절점에서 한 점에 모인다."
+    ],
+    "answer": 2,
+    "oneLineConcept": "이상적인 트러스 부재는 축방향력(인장·압축)만 받는다",
+    "explanation": "트러스는 부재를 핀으로 이어 삼각형을 만든 구조입니다. 해석을 단순하게 하려고 다음과 같이 가정합니다.\n\n1. 절점은 마찰 없는 핀(힌지)으로 연결된다.\n2. 하중과 반력은 절점에만 작용한다.\n3. 부재 중심축은 절점에서 한 점에 모이고, 부재는 곧은 직선이다.\n4. 그 결과 각 부재는 축방향력(인장 또는 압축)만 받고 휨모멘트·전단력은 0 으로 봅니다.\n\n**틀린 선지**\n- 부재는 마찰이 없는 핀으로 연결되어 있다.: 트러스 해석의 기본 가정입니다.\n- 하중과 반력은 절점에만 작용한다.: 트러스 해석의 기본 가정입니다.\n- 부재의 중심축은 절점에서 한 점에 모인다.: 트러스 해석의 기본 가정입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "트러스",
+      "해석 가정"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "civil-engineer-columns-structures-0007",
+    "certId": "civil-engineer",
+    "subjectId": "applied-mechanics",
+    "chapterId": "columns-structures",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "길이 2m, 단면적 1,000mm², 탄성계수 200,000MPa 인 봉에 인장력 100kN 이 작용할 때 봉에 저장되는 탄성변형 에너지는?",
+    "choices": [
+      "100J",
+      "25J",
+      "50J",
+      "200J"
+    ],
+    "answer": 3,
+    "oneLineConcept": "축하중 탄성변형 에너지 U = P²L / (2AE) = ½Pδ",
+    "explanation": "탄성변형 에너지는 하중이 한 일의 절반(하중이 0 에서 서서히 커지므로)입니다. U = ½Pδ = P²L/(2AE).\n\n1. 늘음량: δ = PL/(AE) = 100,000 × 2,000 ÷ (1,000 × 200,000) = 1.0mm\n2. U = ½ × 100,000N × 1.0mm = 50,000N·mm\n3. 50,000N·mm = 50N·m = 50J\n4. 검산: P²L/(2AE) = 10¹⁰ × 2,000 ÷ (2 × 1,000 × 200,000) = 50,000N·mm 로 같습니다.\n\n**틀린 선지**\n- 100J: 식의 1/2 을 빠뜨린 값입니다.\n- 25J: 1/2 대신 1/4 을 곱한 값입니다.\n- 200J: 길이를 두 번 곱하는 등 2배를 더한 값입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "탄성변형 에너지",
+      "축하중",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+]

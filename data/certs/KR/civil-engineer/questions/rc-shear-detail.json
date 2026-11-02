@@ -1,0 +1,221 @@
+[
+  {
+    "id": "civil-engineer-rc-shear-detail-0001",
+    "certId": "civil-engineer",
+    "subjectId": "rc-steel",
+    "chapterId": "rc-shear-detail",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "보통중량콘크리트(λ = 1.0) 보에서 fck = 25MPa, 복부 폭 bw = 300mm, 유효깊이 d = 500mm 일 때 콘크리트가 부담하는 공칭 전단강도 Vc 는?",
+    "choices": [
+      "125kN",
+      "93.75kN",
+      "62.5kN",
+      "250kN"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Vc = (1/6)·λ·√fck·bw·d",
+    "explanation": "전단철근이 없는 부분에서 콘크리트가 받는 전단강도 식입니다.\n\n1. √fck = √25 = 5MPa\n2. bw × d = 300 × 500 = 150,000mm²\n3. Vc = (1/6) × 1.0 × 5 × 150,000 = 125,000N = 125kN\n4. 검산: 설계값은 φVc = 0.75 × 125 = 93.75kN 입니다.\n\n**틀린 선지**\n- 93.75kN: 강도감소계수 0.75 를 곱한 설계값 φVc 입니다.\n- 62.5kN: 1/6 대신 1/12 을 쓴 값입니다.\n- 250kN: 1/6 대신 1/3 을 쓴 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "전단강도",
+      "콘크리트 전단강도",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-rc-shear-detail-0002",
+    "certId": "civil-engineer",
+    "subjectId": "rc-steel",
+    "chapterId": "rc-shear-detail",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "유효깊이 d = 600mm 인 철근콘크리트 보에서 전단철근이 부담하는 전단강도 Vs 가 (1/3)λ√fck·bw·d 이하일 때 수직 스터럽의 최대 간격은?",
+    "choices": [
+      "300mm",
+      "150mm",
+      "600mm",
+      "450mm"
+    ],
+    "answer": 1,
+    "oneLineConcept": "수직 스터럽 간격: d/2 이하, 600mm 이하 (Vs 가 크면 절반)",
+    "explanation": "수직 스터럽 간격은 사인장 균열이 스터럽 사이로 빠져나가지 않도록 제한합니다.\n\n1. 기본: d/2 이하이면서 600mm 이하 → 600 ÷ 2 = 300mm, 600mm 중 작은 값 300mm\n2. Vs 가 (1/3)λ√fck·bw·d 를 넘으면 위 값을 절반(d/4, 300mm 이하)으로 줄입니다.\n3. 이 문제는 Vs 가 그 이하이므로 300mm 입니다.\n\n**틀린 선지**\n- 150mm: Vs 가 (1/3)λ√fck·bw·d 를 넘을 때 쓰는, 절반으로 줄인 간격(d/4)입니다.\n- 600mm: 간격 상한 600mm 만 보고 d/2 조건을 빠뜨린 값입니다.\n- 450mm: 기준에 없는 0.75d 로 계산한 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "전단철근",
+      "간격 제한"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-rc-shear-detail-0003",
+    "certId": "civil-engineer",
+    "subjectId": "rc-steel",
+    "chapterId": "rc-shear-detail",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "지름 25mm 인 인장 이형철근의 기본 정착길이는? (단, fy = 400MPa, fck = 25MPa, 보통중량콘크리트)",
+    "choices": [
+      "500mm",
+      "480mm",
+      "1,200mm",
+      "240mm"
+    ],
+    "answer": 3,
+    "oneLineConcept": "인장 이형철근 기본 정착길이 ldb = 0.6·db·fy / (λ√fck)",
+    "explanation": "정착길이는 철근이 콘크리트에서 빠지지 않도록 묻어야 하는 길이입니다.\n\n1. 식: ldb = 0.6 × db × fy ÷ (λ × √fck)\n2. 분자: 0.6 × 25 × 400 = 6,000\n3. 분모: 1.0 × √25 = 5\n4. ldb = 6,000 ÷ 5 = 1,200mm\n5. 검산: 1,200 ÷ 25 = 48 이므로 철근 지름의 48배로, 압축 정착(20배)보다 긴 것이 맞습니다.\n\n**틀린 선지**\n- 500mm: 압축 이형철근의 기본 정착길이(0.25db·fy/√fck)입니다.\n- 480mm: 표준갈고리의 기본 정착길이(0.24db·fy/√fck)입니다.\n- 240mm: fck 에 제곱근을 씌우지 않고 나눈 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "정착길이",
+      "인장 이형철근",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-rc-shear-detail-0004",
+    "certId": "civil-engineer",
+    "subjectId": "rc-steel",
+    "chapterId": "rc-shear-detail",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "처짐을 계산하지 않는 단순지지 1방향 슬래브의 경간이 4m 일 때 최소 두께는? (단, fy = 400MPa, 보통중량콘크리트)",
+    "choices": [
+      "167mm",
+      "143mm",
+      "200mm",
+      "400mm"
+    ],
+    "answer": 3,
+    "oneLineConcept": "1방향 슬래브 최소 두께: 단순 L/20, 1단 연속 L/24, 양단 연속 L/28, 캔틸레버 L/10",
+    "explanation": "처짐을 계산하지 않을 때 1방향 슬래브의 최소 두께는 받침 조건에 따라 정해집니다(fy = 400MPa 기준).\n\n1. 단순지지: L/20 → 4,000 ÷ 20 = 200mm\n2. 1단 연속: L/24, 양단 연속: L/28, 캔틸레버: L/10\n3. 검산: 받침이 단단할수록(연속일수록) 처짐이 작아 두께를 얇게 할 수 있습니다.\n\n**틀린 선지**\n- 167mm: 한쪽 끝이 연속인 슬래브(L/24)의 값입니다.\n- 143mm: 양쪽 끝이 연속인 슬래브(L/28)의 값입니다.\n- 400mm: 캔틸레버 슬래브(L/10)의 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "1방향 슬래브",
+      "최소 두께"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-rc-shear-detail-0005",
+    "certId": "civil-engineer",
+    "subjectId": "rc-steel",
+    "chapterId": "rc-shear-detail",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "철근콘크리트 옹벽의 안정 검토에서 활동에 대한 저항력은 옹벽에 작용하는 수평력의 몇 배 이상이어야 하는가?",
+    "choices": [
+      "2.0배",
+      "1.5배",
+      "3.0배",
+      "1.2배"
+    ],
+    "answer": 2,
+    "oneLineConcept": "옹벽 안정: 활동 1.5배 이상, 전도 2.0배 이상, 지반반력 ≤ 허용지지력",
+    "explanation": "옹벽은 세 가지 안정 조건을 만족해야 합니다.\n\n1. 활동: 저항력 ≥ 1.5 × 수평력\n2. 전도: 저항모멘트 ≥ 2.0 × 전도모멘트\n3. 지지력: 최대 지반반력 ≤ 지반의 허용지지력\n4. 활동이 부족하면 기초 아래에 활동 방지벽(전단키)을 둡니다.\n\n**틀린 선지**\n- 2.0배: 전도에 대한 저항모멘트 조건입니다.\n- 3.0배: 지반 허용지지력을 정할 때 흔히 쓰는 안전율입니다.\n- 1.2배: 활동 안정 조건보다 작은 값입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "옹벽",
+      "안정 조건",
+      "활동"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-rc-shear-detail-0006",
+    "certId": "civil-engineer",
+    "subjectId": "rc-steel",
+    "chapterId": "rc-shear-detail",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "일반적인 철근콘크리트 보에서 Vc = 125kN 일 때, 계수전단력 Vu 가 얼마 이하이면 최소 전단철근도 두지 않아도 되는가? (단, 전단 강도감소계수 0.75, 슬래브·기초 등 예외 부재가 아님)",
+    "choices": [
+      "93.8kN",
+      "62.5kN",
+      "46.9kN",
+      "125kN"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Vu ≤ ½φVc 이면 최소 전단철근 불필요 (일반 보)",
+    "explanation": "전단철근 배치 기준은 φVc 를 기준으로 나눕니다.\n\n1. φVc = 0.75 × 125 = 93.75kN\n2. ½φVc = 93.75 ÷ 2 ≈ 46.9kN\n3. Vu ≤ 46.9kN: 최소 전단철근도 필요 없음\n4. 46.9kN < Vu ≤ 93.75kN: 최소 전단철근 배치, Vu > 93.75kN: 계산으로 전단철근 설계\n\n**틀린 선지**\n- 93.8kN: φVc 로, 이보다 작으면 최소 전단철근만 두면 되는 경계입니다.\n- 62.5kN: 강도감소계수를 빠뜨리고 Vc 의 절반만 쓴 값입니다.\n- 125kN: 공칭 전단강도 Vc 그대로입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "최소 전단철근",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+]

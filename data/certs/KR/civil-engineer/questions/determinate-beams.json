@@ -1,0 +1,390 @@
+[
+  {
+    "id": "civil-engineer-determinate-beams-0001",
+    "certId": "civil-engineer",
+    "subjectId": "applied-mechanics",
+    "chapterId": "determinate-beams",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "그림과 같은 캔틸레버보에서 고정단 A 에 생기는 휨모멘트의 크기는?",
+    "choices": [
+      "60kN·m",
+      "30kN·m",
+      "15kN·m",
+      "120kN·m"
+    ],
+    "answer": 1,
+    "oneLineConcept": "캔틸레버 자유단 집중하중: 고정단 휨모멘트 = P × L",
+    "explanation": "캔틸레버(한쪽만 고정된 보)는 고정단에서 휨모멘트가 가장 큽니다. 휨모멘트 = 하중 × 고정단까지 거리입니다.\n\n1. 하중 P = 15kN, 고정단까지 거리 L = 4m\n2. M_A = 15 × 4 = 60kN·m\n3. 검산: 자유단 B 에서는 휨모멘트가 0 이고, A 쪽으로 갈수록 15kN·m/m 씩 늘어 4m 에서 60kN·m 가 됩니다.\n\n**틀린 선지**\n- 30kN·m: 보 길이의 절반(2m)을 팔 길이로 쓴 값입니다.\n- 15kN·m: 하중 크기를 그대로 쓴 값으로, 고정단의 수직반력(kN)입니다.\n- 120kN·m: 팔 길이를 두 배(8m)로 잘못 본 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "캔틸레버",
+      "휨모멘트",
+      "그림",
+      "계산"
+    ],
+    "image": "cb-tip-15kn-4m.svg",
+    "imageAlt": "왼쪽 끝 A 는 벽에 고정된 고정단이고 오른쪽 끝 B 는 아무것도 받치지 않은 자유단인 수평 보(캔틸레버)이다. 보의 길이는 4m 이고, 자유단 B 에 아래로 향하는 집중하중 15kN 이 작용한다.",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-determinate-beams-0002",
+    "certId": "civil-engineer",
+    "subjectId": "applied-mechanics",
+    "chapterId": "determinate-beams",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "그림과 같은 내민보에서 A 지점의 수직반력은?",
+    "choices": [
+      "위 방향 3kN",
+      "위 방향 9kN",
+      "아래 방향 12kN",
+      "아래 방향 3kN"
+    ],
+    "answer": 4,
+    "oneLineConcept": "내민보 끝 하중은 반대쪽 지점에 아래 방향(음) 반력을 만든다",
+    "explanation": "B 점에 대한 모멘트 평형으로 A 반력을 구합니다. A 반력을 위 방향(+)으로 가정합니다.\n\n1. B 에 대한 모멘트: R_A × 6 + 9 × 2 = 0 (C 의 하중은 B 를 중심으로 A 를 들어 올리는 방향)\n2. R_A = −18 ÷ 6 = −3kN → 음수이므로 실제로는 아래 방향 3kN\n3. 수직 평형: R_A + R_B = 9 → R_B = 9 + 3 = 12kN (위 방향)\n4. 검산: A 에 대한 모멘트 12 × 6 = 72, 9 × 8 = 72 로 같습니다.\n\n**틀린 선지**\n- 위 방향 3kN: 크기는 맞지만 방향이 반대입니다. 내민 쪽 하중은 A 를 들어 올리려 하므로 A 는 아래로 잡아당겨야 합니다.\n- 위 방향 9kN: 하중 전체를 A 가 받는다고 본 값입니다.\n- 아래 방향 12kN: B 지점 반력의 크기(12kN)와 혼동한 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "내민보",
+      "반력",
+      "그림",
+      "계산"
+    ],
+    "image": "ob-tip-9kn-6m-2m.svg",
+    "imageAlt": "왼쪽 A 는 회전지점(삼각형), A 에서 오른쪽으로 6m 떨어진 B 는 이동지점(삼각형 아래 바퀴)이다. 보는 B 를 지나 2m 더 뻗어 끝점 C 에서 끝나며, C 에 아래로 향하는 집중하중 9kN 이 작용한다.",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-determinate-beams-0003",
+    "certId": "civil-engineer",
+    "subjectId": "applied-mechanics",
+    "chapterId": "determinate-beams",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "그림과 같은 단순보에 생기는 최대 휨모멘트는 약 얼마인가?",
+    "choices": [
+      "28.1kN·m",
+      "25.0kN·m",
+      "50.0kN·m",
+      "56.3kN·m"
+    ],
+    "answer": 1,
+    "oneLineConcept": "최대 휨모멘트는 전단력이 0 인 점에서 생긴다",
+    "explanation": "먼저 반력을 구한 뒤, 전단력이 0 이 되는 위치에서 휨모멘트를 계산합니다.\n\n1. 하중 합계: 4 × 5 = 20kN, A 에서 2.5m 위치에 작용\n2. R_B = 20 × 2.5 ÷ 10 = 5kN, R_A = 20 − 5 = 15kN\n3. 전단력 0 인 점: 15 − 4x = 0 → x = 3.75m (하중 구간 안)\n4. M_max = 15 × 3.75 − 4 × 3.75² ÷ 2 = 56.25 − 28.125 = 28.125 ≈ 28.1kN·m\n5. 검산: 오른쪽에서 보면 5 × (10 − 3.75) − 4 × (5 − 3.75)² ÷ 2 = 31.25 − 3.125 = 28.125 로 같습니다.\n\n**틀린 선지**\n- 25.0kN·m: 하중이 끝나는 점(A 에서 5m)의 휨모멘트로, 최댓값 위치가 아닙니다.\n- 50.0kN·m: 등분포하중이 보 전체에 작용할 때의 wL²/8 입니다.\n- 56.3kN·m: 최대 위치에서 하중이 만드는 모멘트를 빼지 않은 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "단순보",
+      "부분 등분포하중",
+      "최대 휨모멘트",
+      "그림",
+      "계산"
+    ],
+    "image": "sb-half-udl-4knm-10m.svg",
+    "imageAlt": "왼쪽 A 는 회전지점, 오른쪽 B 는 이동지점인 길이 10m 의 단순보이다. A 에서부터 보의 왼쪽 절반(5m 구간)에만 아래로 향하는 등분포하중 4kN/m 이 작용하고, 오른쪽 5m 구간에는 하중이 없다.",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-determinate-beams-0004",
+    "certId": "civil-engineer",
+    "subjectId": "applied-mechanics",
+    "chapterId": "determinate-beams",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "길이 L 인 단순보의 가운데에 집중하중 P 가 작용할 때 가운데의 최대 처짐은? (단, 휨강성은 EI)",
+    "choices": [
+      "5PL³/(384EI)",
+      "PL³/(3EI)",
+      "PL³/(48EI)",
+      "PL²/(16EI)"
+    ],
+    "answer": 3,
+    "oneLineConcept": "단순보 중앙 집중하중 최대 처짐 = PL³/(48EI)",
+    "explanation": "자주 나오는 처짐 공식은 외워 둡니다.\n\n1. 단순보 가운데 집중하중: 최대 처짐 PL³/(48EI), 지점 처짐각 PL²/(16EI)\n2. 단순보 등분포하중: 최대 처짐 5wL⁴/(384EI)\n3. 캔틸레버 자유단 집중하중: 처짐 PL³/(3EI)\n4. 검산: 길이가 2배가 되면 처짐은 2³ = 8배가 되는 것이 집중하중 처짐식의 특징입니다.\n\n**틀린 선지**\n- 5PL³/(384EI): 등분포하중 단순보의 처짐식 5wL⁴/(384EI) 의 모양을 잘못 가져온 것입니다.\n- PL³/(3EI): 자유단에 하중을 받는 캔틸레버의 처짐입니다.\n- PL²/(16EI): 같은 보의 지점 처짐각 식입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "처짐",
+      "단순보",
+      "공식"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-determinate-beams-0005",
+    "certId": "civil-engineer",
+    "subjectId": "applied-mechanics",
+    "chapterId": "determinate-beams",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "폭 200mm, 높이 400mm 인 직사각형 단면 보에 휨모멘트 40kN·m 가 작용할 때 최대 휨응력은?",
+    "choices": [
+      "7.5MPa",
+      "15MPa",
+      "3.75MPa",
+      "75MPa"
+    ],
+    "answer": 1,
+    "oneLineConcept": "최대 휨응력 σ = M / Z, 직사각형 Z = bh²/6",
+    "explanation": "휨응력은 σ = M/Z 입니다. 단위를 N 과 mm 로 맞춥니다.\n\n1. Z = 200 × 400² ÷ 6 = 200 × 160,000 ÷ 6 ≈ 5.333 × 10⁶ mm³\n2. M = 40kN·m = 40 × 10⁶ N·mm\n3. σ = 40 × 10⁶ ÷ 5.333 × 10⁶ = 7.5MPa\n4. 검산: σ = My/I, I = 200 × 400³ ÷ 12 ≈ 1.0667 × 10⁹, y = 200 → 40 × 10⁶ × 200 ÷ 1.0667 × 10⁹ = 7.5MPa 로 같습니다.\n\n**틀린 선지**\n- 15MPa: 단면계수를 bh²/12 로 잘못 계산한 값입니다.\n- 3.75MPa: 단면계수를 bh²/3 으로 잘못 계산한 값입니다.\n- 75MPa: kN·m 를 N·mm 로 바꿀 때 10배 크게 계산한 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "휨응력",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-determinate-beams-0006",
+    "certId": "civil-engineer",
+    "subjectId": "applied-mechanics",
+    "chapterId": "determinate-beams",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "폭 200mm, 높이 300mm 인 직사각형 단면에 전단력 60kN 이 작용할 때 최대 전단응력은?",
+    "choices": [
+      "1.0MPa",
+      "1.5MPa",
+      "1.33MPa",
+      "0.67MPa"
+    ],
+    "answer": 2,
+    "oneLineConcept": "직사각형 단면 최대 전단응력 = 1.5 × V/A (중립축에서)",
+    "explanation": "직사각형 단면의 전단응력은 중립축(높이 가운데)에서 가장 크고, 평균값의 1.5배입니다.\n\n1. 면적 A = 200 × 300 = 60,000mm²\n2. 평균 전단응력: 60,000N ÷ 60,000mm² = 1.0MPa\n3. 최대 전단응력: 1.5 × 1.0 = 1.5MPa\n4. 검산: τ = VQ/(Ib) 로 풀면 Q = 200 × 150 × 75 = 2.25 × 10⁶, I = 4.5 × 10⁸ → 60,000 × 2.25 × 10⁶ ÷ (4.5 × 10⁸ × 200) = 1.5MPa 로 같습니다.\n\n**틀린 선지**\n- 1.0MPa: 평균 전단응력(V/A)으로, 직사각형의 최댓값은 이보다 1.5배 큽니다.\n- 1.33MPa: 원형 단면에 쓰는 4/3 배를 적용한 값입니다.\n- 0.67MPa: 평균 전단응력을 1.5로 나눈 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "전단응력",
+      "직사각형",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-determinate-beams-0007",
+    "certId": "civil-engineer",
+    "subjectId": "applied-mechanics",
+    "chapterId": "determinate-beams",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "길이 3m 인 캔틸레버의 자유단에 집중하중 10kN 이 작용한다. 휨강성 EI = 2 × 10⁴ kN·m² 일 때 자유단 처짐은?",
+    "choices": [
+      "2.25mm",
+      "13.5mm",
+      "0.28mm",
+      "4.5mm"
+    ],
+    "answer": 4,
+    "oneLineConcept": "캔틸레버 자유단 집중하중 처짐 δ = PL³/(3EI)",
+    "explanation": "캔틸레버 자유단에 집중하중이 있으면 처짐은 δ = PL³/(3EI) 입니다.\n\n1. PL³ = 10 × 3³ = 270kN·m³\n2. 3EI = 3 × 2 × 10⁴ = 6 × 10⁴ kN·m²\n3. δ = 270 ÷ 60,000 = 0.0045m = 4.5mm\n4. 검산: 처짐각 θ = PL²/(2EI) = 90 ÷ 40,000 = 0.00225, 캔틸레버는 δ = (2/3)θL 이므로 0.00225 × 2 = 0.0045m 로 같습니다.\n\n**틀린 선지**\n- 2.25mm: 처짐각 식 PL²/(2EI) 의 숫자(0.00225)를 처짐으로 잘못 읽은 값입니다.\n- 13.5mm: PL³/EI 로 계산해 3으로 나누지 않은 값입니다.\n- 0.28mm: 단순보 중앙 집중하중 식 PL³/(48EI) 를 쓴 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "캔틸레버",
+      "처짐",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-determinate-beams-0008",
+    "certId": "civil-engineer",
+    "subjectId": "applied-mechanics",
+    "chapterId": "determinate-beams",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "지간 10m 인 단순보에서 A 지점으로부터 4m 떨어진 C 점이 있다. 집중하중 30kN 이 보 위를 이동할 때 C 점에 생기는 최대 휨모멘트는?",
+    "choices": [
+      "72kN·m",
+      "75kN·m",
+      "48kN·m",
+      "120kN·m"
+    ],
+    "answer": 1,
+    "oneLineConcept": "휨모멘트 영향선 C 점 종거 = ab/L, 하중이 C 위에 올 때 최대",
+    "explanation": "C 점 휨모멘트 영향선은 C 점에서 높이가 ab/L 인 삼각형입니다. 하중이 C 점 위에 오면 C 점 휨모멘트가 가장 큽니다.\n\n1. a = 4m, b = 6m, L = 10m\n2. 영향선 최대 종거: 4 × 6 ÷ 10 = 2.4m\n3. 최대 휨모멘트: 30 × 2.4 = 72kN·m\n4. 검산: 하중이 C 에 있을 때 R_A = 30 × 6 ÷ 10 = 18kN, M_C = 18 × 4 = 72kN·m 로 같습니다.\n\n**틀린 선지**\n- 75kN·m: 하중이 보 가운데에 있을 때의 최대 휨모멘트 PL/4 입니다.\n- 48kN·m: 영향선 종거를 a²/L(= 1.6m)로 잘못 계산한 값입니다.\n- 120kN·m: 하중에 거리 4m 만 곱한 값입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "영향선",
+      "휨모멘트",
+      "이동하중",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-determinate-beams-0009",
+    "certId": "civil-engineer",
+    "subjectId": "applied-mechanics",
+    "chapterId": "determinate-beams",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "단순보에서 휨모멘트가 가장 크게 생기는 위치에 대한 설명으로 옳은 것은?",
+    "choices": [
+      "반력이 큰 쪽 지점 바로 위",
+      "전단력이 0 이 되는 곳",
+      "항상 지간의 1/3 지점",
+      "처짐각이 가장 큰 곳"
+    ],
+    "answer": 2,
+    "oneLineConcept": "휨모멘트를 거리로 미분하면 전단력 → 전단력 0 인 점이 최대",
+    "explanation": "휨모멘트를 보의 길이 방향으로 미분하면 전단력이 됩니다(dM/dx = V). 그래서 전단력이 0 이 되는(부호가 바뀌는) 곳에서 휨모멘트가 가장 큽니다.\n\n1. 가운데 집중하중: 하중점에서 전단력 부호가 바뀌고 그곳이 최대\n2. 전 길이 등분포하중: 가운데에서 전단력 0, 최대 휨모멘트 wL²/8\n3. 검산: 단순보 양 끝 지점은 회전이 자유로워 휨모멘트가 0 입니다.\n\n**틀린 선지**\n- 반력이 큰 쪽 지점 바로 위: 단순보의 지점에서는 휨모멘트가 0 입니다.\n- 항상 지간의 1/3 지점: 하중 상태에 따라 최대 위치가 달라지므로 1/3 지점으로 정해져 있지 않습니다.\n- 처짐각이 가장 큰 곳: 단순보의 처짐각은 보통 지점에서 가장 크고, 그곳 휨모멘트는 0 입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "휨모멘트",
+      "전단력",
+      "개념"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "civil-engineer-determinate-beams-0010",
+    "certId": "civil-engineer",
+    "subjectId": "applied-mechanics",
+    "chapterId": "determinate-beams",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "공액보법으로 처짐을 구할 때 실제 보의 고정단은 공액보에서 어떤 지점으로 바꾸는가?",
+    "choices": [
+      "고정단",
+      "회전지점(힌지 지점)",
+      "자유단",
+      "내부 힌지"
+    ],
+    "answer": 3,
+    "oneLineConcept": "공액보: 고정단 ↔ 자유단, 중간 지점 ↔ 내부 힌지",
+    "explanation": "공액보법은 휨모멘트도를 M/EI 하중으로 바꿔 실은 가상의 보(공액보)를 풀어, 공액보의 전단력 = 실제 처짐각, 휨모멘트 = 실제 처짐으로 구하는 방법입니다.\n\n1. 실제 고정단은 처짐·처짐각이 모두 0 → 공액보에서 전단력·휨모멘트가 0 인 자유단\n2. 실제 자유단은 처짐·처짐각이 있음 → 공액보에서 고정단\n3. 단순 지점은 그대로, 중간 지점은 내부 힌지로 바꿉니다.\n4. 검산: 캔틸레버를 공액보로 바꾸면 고정단이 반대쪽으로 옮겨 가 다시 안정한 캔틸레버가 됩니다.\n\n**틀린 선지**\n- 고정단: 실제 보의 자유단을 공액보에서 고정단으로 바꿉니다. 거꾸로 생각한 것입니다.\n- 회전지점(힌지 지점): 단순 지점(회전·이동 지점)은 공액보에서도 그대로 단순 지점입니다.\n- 내부 힌지: 실제 보의 중간 지점이 공액보에서 내부 힌지가 됩니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-03",
+    "tags": [
+      "공액보법",
+      "처짐 해법"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+]
