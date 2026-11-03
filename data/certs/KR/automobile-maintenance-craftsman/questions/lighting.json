@@ -1,0 +1,386 @@
+[
+  {
+    "id": "automobile-maintenance-craftsman-lighting-0001",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "electrical",
+    "chapterId": "lighting",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "좌우 전조등은 어떻게 연결되어 있는가?",
+    "choices": [
+      "직렬로 연결되어 한쪽이 끊어지면 둘 다 꺼진다",
+      "병렬로 연결되어 한쪽이 끊어져도 다른 쪽은 켜진다",
+      "서로 연결되어 있지 않고 따로 배터리를 쓴다",
+      "직렬과 병렬을 섞어 연결한다"
+    ],
+    "answer": 2,
+    "oneLineConcept": "전조등 좌우 = 병렬 연결",
+    "explanation": "전조등처럼 여러 전구를 함께 켜는 등화 회로는 병렬로 연결합니다. 병렬이면 전구마다 같은 전압(12V)이 걸려 제 밝기를 내고, 한쪽 전구가 끊어져도 다른 쪽은 계속 켜져 안전합니다.\n\n**틀린 선지**\n- 직렬로 연결되어 한쪽이 끊어지면 둘 다 꺼진다: 직렬이면 전압이 나뉘어 어둡고, 한쪽이 끊어지면 모두 꺼집니다.\n- 직렬과 병렬을 섞어 연결한다: 좌우 전조등은 병렬로 연결합니다.\n- 서로 연결되어 있지 않고 따로 배터리를 쓴다: 자동차 전조등은 같은 배터리 전원을 씁니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "전조등",
+      "병렬"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-lighting-0002",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "electrical",
+    "chapterId": "lighting",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "자동차 및 자동차부품의 성능과 기준에 관한 규칙에서 정한 방향지시등의 점멸 횟수는?",
+    "choices": [
+      "1분에 120회 이상 180회 이하",
+      "1분에 30회 이상 60회 이하",
+      "1분에 10회 이상 30회 이하",
+      "1분에 60회 이상 120회 이하"
+    ],
+    "answer": 4,
+    "oneLineConcept": "방향지시등 = 매분 60~120회 일정한 주기",
+    "explanation": "방향지시등은 다른 운전자가 알아보기 쉽도록 1분에 60회 이상 120회 이하의 일정한 주기로 깜빡여야 합니다. 이보다 빠르거나 느리면 전구 끊김이나 플래셔 이상을 점검합니다.\n\n**틀린 선지**\n- 1분에 30회 이상 60회 이하: 기준보다 느린 점멸입니다.\n- 1분에 120회 이상 180회 이하: 기준보다 빠른 점멸입니다.\n- 1분에 10회 이상 30회 이하: 기준보다 훨씬 느린 점멸입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "방향지시등",
+      "법규"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-lighting-0003",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "electrical",
+    "chapterId": "lighting",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "12V 용 60W 전조등 전구에 흐르는 전류는?",
+    "choices": [
+      "720A",
+      "48A",
+      "5A",
+      "0.2A"
+    ],
+    "answer": 3,
+    "oneLineConcept": "전력 P = 전압 V × 전류 I → I = P ÷ V",
+    "explanation": "전구의 W(와트)는 쓰는 전력입니다. 전력은 전압과 전류의 곱이므로 전류는 전력을 전압으로 나눕니다.\n\n1. I = 60 ÷ 12 = 5A\n2. 검산: 12V × 5A = 60W\n\n**틀린 선지**\n- 720A: 전력과 전압을 곱한 값입니다.\n- 0.2A: 전압을 전력으로 나눈 값입니다.\n- 48A: 전력에서 전압을 뺀 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "전력",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-lighting-0004",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "electrical",
+    "chapterId": "lighting",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "12V 용 60W 전조등 전구가 켜져 있을 때 필라멘트의 저항은?",
+    "choices": [
+      "720Ω",
+      "0.2Ω",
+      "5Ω",
+      "2.4Ω"
+    ],
+    "answer": 4,
+    "oneLineConcept": "R = V² ÷ P (또는 I = P ÷ V 를 구한 뒤 R = V ÷ I)",
+    "explanation": "전류를 먼저 구한 뒤 옴의 법칙으로 저항을 구합니다.\n\n1. 전류 I = 60 ÷ 12 = 5A\n2. 저항 R = 12 ÷ 5 = 2.4Ω\n3. 검산: R = V² ÷ P = 144 ÷ 60 = 2.4Ω\n\n**틀린 선지**\n- 5Ω: 전류(5A)를 저항으로 잘못 쓴 값입니다.\n- 0.2Ω: 전압을 전력으로 나눈 값입니다.\n- 720Ω: 전력과 전압을 곱한 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "옴의법칙",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-lighting-0005",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "electrical",
+    "chapterId": "lighting",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "방향지시등을 켰더니 한쪽만 평소보다 빠르게 깜빡인다. 가장 먼저 의심할 것은?",
+    "choices": [
+      "빠르게 깜빡이는 쪽의 방향지시등 전구가 끊어졌다",
+      "발전기 벨트가 느슨하다",
+      "전조등 퓨즈가 끊어졌다",
+      "배터리 전압이 너무 높다"
+    ],
+    "answer": 1,
+    "oneLineConcept": "방향지시등 한쪽 빠른 점멸 → 그쪽 전구 끊김 점검",
+    "explanation": "방향지시등 회로는 전구에 흐르는 전류를 보고 점멸합니다. 한쪽 앞이나 뒤 전구가 끊어지면 흐르는 전류가 줄어 그쪽만 평소보다 빠르게 깜빡여 운전자에게 알려 줍니다. 해당 쪽 전구와 소켓·접지를 먼저 점검합니다.\n\n**틀린 선지**\n- 배터리 전압이 너무 높다: 배터리 전압이 높으면 양쪽 모두에 영향을 줍니다.\n- 전조등 퓨즈가 끊어졌다: 전조등 퓨즈는 방향지시등과 다른 회로입니다.\n- 발전기 벨트가 느슨하다: 충전 경고등과 관계있는 문제입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "방향지시등",
+      "고장진단"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-lighting-0006",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "electrical",
+    "chapterId": "lighting",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "배선에 '1.25RW' 라고 표시되어 있다. 이 표시의 뜻으로 알맞은 것은?",
+    "choices": [
+      "1.25A 까지 흐를 수 있는 빨간색 전선",
+      "단면적 1.25mm² 의 전선으로, 바탕색은 빨강, 줄무늬는 흰색",
+      "길이 1.25m 의 빨간색·흰색 전선",
+      "지름 1.25mm 의 흰색 바탕, 빨간 줄무늬 전선"
+    ],
+    "answer": 2,
+    "oneLineConcept": "배선 표시: 숫자 = 단면적(mm²), 첫 글자 = 바탕색, 둘째 글자 = 줄무늬색",
+    "explanation": "자동차 배선 표시는 굵기와 색을 함께 적습니다.\n\n- 1.25: 전선의 단면적 1.25mm²\n- R(Red): 바탕색 빨강\n- W(White): 줄무늬색 흰색\n\n숫자가 클수록 굵은 전선으로 큰 전류가 흐르는 회로에 씁니다.\n\n**틀린 선지**\n- 길이 1.25m 의 빨간색·흰색 전선: 숫자는 길이가 아니라 단면적입니다.\n- 지름 1.25mm 의 흰색 바탕, 빨간 줄무늬 전선: 숫자는 지름이 아니라 단면적이고, 앞 글자가 바탕색입니다.\n- 1.25A 까지 흐를 수 있는 빨간색 전선: 숫자는 허용 전류가 아니라 단면적입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "배선",
+      "회로도"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-lighting-0007",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "electrical",
+    "chapterId": "lighting",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "퓨즈에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "끊어지면 더 큰 용량으로 바꾸는 것이 좋다",
+      "전류를 늘 일정하게 흐르게 한다",
+      "회로에 병렬로 연결되어 전압을 높여 준다",
+      "회로에 직렬로 연결되어 지나친 전류가 흐르면 끊어져 회로를 보호한다"
+    ],
+    "answer": 4,
+    "oneLineConcept": "퓨즈 = 직렬 연결, 과전류 차단, 같은 용량으로 교환",
+    "explanation": "퓨즈는 회로 중간에 직렬로 넣는 얇은 금속 조각입니다. 단락 등으로 정해진 값보다 큰 전류가 흐르면 녹아 끊어져 배선이 타거나 부품이 상하는 것을 막습니다. 끊어지면 원인을 찾아 고친 뒤 같은 용량의 퓨즈로 바꿉니다.\n\n**틀린 선지**\n- 회로에 병렬로 연결되어 전압을 높여 준다: 퓨즈는 직렬로 넣으며 전압을 높이지 않습니다.\n- 전류를 늘 일정하게 흐르게 한다: 전류를 일정하게 조절하는 부품이 아닙니다.\n- 끊어지면 더 큰 용량으로 바꾸는 것이 좋다: 더 큰 용량으로 바꾸면 과전류에도 끊어지지 않아 배선이 탈 수 있습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "퓨즈"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-lighting-0008",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "electrical",
+    "chapterId": "lighting",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "전조등이나 경음기 회로에 릴레이를 쓰는 주된 목적은?",
+    "choices": [
+      "전구의 수명을 두 배로 늘린다",
+      "작은 전류가 흐르는 스위치로 큰 전류 회로를 켜고 꺼서 스위치 접점을 보호한다",
+      "전압을 높여 전구를 더 밝게 한다",
+      "교류를 직류로 바꾼다"
+    ],
+    "answer": 2,
+    "oneLineConcept": "릴레이 = 작은 전류로 큰 전류를 제어(스위치 보호)",
+    "explanation": "전조등처럼 큰 전류가 흐르는 회로를 운전석 스위치로 직접 켜면 스위치 접점이 타고 긴 배선에서 전압이 떨어집니다. 릴레이를 쓰면 스위치에는 릴레이 코일을 움직일 작은 전류만 흐르고, 큰 전류는 릴레이 접점을 지나 짧은 굵은 배선으로 흐릅니다.\n\n**틀린 선지**\n- 전압을 높여 전구를 더 밝게 한다: 릴레이는 전압을 높이지 않습니다.\n- 교류를 직류로 바꾼다: 정류는 다이오드의 역할입니다.\n- 전구의 수명을 두 배로 늘린다: 전구 수명을 늘리는 장치가 아닙니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "릴레이"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-lighting-0009",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "electrical",
+    "chapterId": "lighting",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "HID(고전압 방전식) 전조등에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "형광 물질에 햇빛을 모아 빛을 낸다",
+      "반도체 소자에 전류를 흘려 빛을 낸다",
+      "밸러스트가 높은 전압을 만들어 전구 안의 가스를 방전시켜 빛을 낸다",
+      "필라멘트를 뜨겁게 달구어 빛을 낸다"
+    ],
+    "answer": 3,
+    "oneLineConcept": "HID = 밸러스트 고전압 → 가스 방전 발광",
+    "explanation": "HID 전조등은 필라멘트가 없고, 밸러스트(안정기)가 켤 때 아주 높은 전압을 만들어 전구 안의 제논 가스 사이로 방전을 일으켜 빛을 냅니다. 켜진 뒤에는 전압을 낮춰 방전을 유지합니다. 고전압이 흐르므로 정비 전 반드시 전원을 끕니다.\n\n**틀린 선지**\n- 필라멘트를 뜨겁게 달구어 빛을 낸다: 할로겐 전구의 원리입니다.\n- 반도체 소자에 전류를 흘려 빛을 낸다: LED 전조등의 원리입니다.\n- 형광 물질에 햇빛을 모아 빛을 낸다: 전조등의 원리가 아닙니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "HID",
+      "전조등"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-lighting-0010",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "electrical",
+    "chapterId": "lighting",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "배터리 전압은 12.6V 인데 전조등을 켠 상태에서 전구 양 끝 전압이 10V 로 측정되고 불빛이 어둡다. 가장 의심되는 원인은?",
+    "choices": [
+      "배선·스위치·접지의 접촉 저항이 커서 전압 강하가 생겼다",
+      "퓨즈의 용량이 너무 크다",
+      "배터리 전압이 너무 높다",
+      "전구의 와트 수가 너무 크다"
+    ],
+    "answer": 1,
+    "oneLineConcept": "전구 전압이 낮으면 회로 중간의 전압 강하(접촉 저항)부터",
+    "explanation": "전원 전압은 정상인데 전구에 걸리는 전압이 낮다면, 그 사이 배선·커넥터·스위치·접지에서 전압이 새어 나가고(전압 강하) 있는 것입니다. 회로 시험기로 구간마다 전압 강하를 재어 접촉이 나쁘거나 부식된 곳을 찾습니다.\n\n**틀린 선지**\n- 전구의 와트 수가 너무 크다: 와트 수가 다르면 밝기가 다르지만 정상 회로라면 전구 전압은 전원 전압에 가깝게 걸립니다.\n- 배터리 전압이 너무 높다: 배터리 전압은 12.6V 로 정상입니다.\n- 퓨즈의 용량이 너무 크다: 퓨즈 용량은 전구 전압을 낮추지 않습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "전압강하",
+      "회로점검"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-lighting-0011",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "electrical",
+    "chapterId": "lighting",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "등화장치를 정비할 때의 방법으로 옳지 않은 것은?",
+    "choices": [
+      "할로겐 전구를 끼울 때 유리 부분을 맨손으로 잡는다",
+      "전구를 바꾸기 전에 등화 스위치를 끈다",
+      "끊어진 퓨즈는 원인을 고친 뒤 같은 용량으로 바꾼다",
+      "전조등을 교환한 뒤에는 비추는 방향(조사 방향)을 점검한다"
+    ],
+    "answer": 1,
+    "oneLineConcept": "할로겐 전구 유리는 맨손 금지(기름 → 과열·수명 단축)",
+    "explanation": "할로겐 전구는 아주 뜨겁게 달아오릅니다. 유리에 손의 기름이 묻으면 그 부분만 더 뜨거워져 전구가 빨리 끊어지거나 깨질 수 있습니다. 끼울 때는 받침 부분을 잡거나 깨끗한 장갑을 끼고, 유리에 묻었으면 알코올로 닦습니다.\n\n**틀린 선지**\n- 끊어진 퓨즈는 원인을 고친 뒤 같은 용량으로 바꾼다: 배선을 보호하는 옳은 방법입니다.\n- 전구를 바꾸기 전에 등화 스위치를 끈다: 감전과 부품 손상을 막는 옳은 방법입니다.\n- 전조등을 교환한 뒤에는 비추는 방향(조사 방향)을 점검한다: 다른 운전자의 눈부심을 막고 앞을 잘 비추기 위한 옳은 점검입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "전구",
+      "정비"
+    ],
+    "levelLock": true
+  }
+]

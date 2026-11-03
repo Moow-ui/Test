@@ -1,0 +1,386 @@
+[
+  {
+    "id": "automobile-maintenance-craftsman-fuel-system-0001",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "engine",
+    "chapterId": "fuel-system",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "가솔린 엔진의 이론 공연비(공기 : 연료, 무게비)는 약 얼마인가?",
+    "choices": [
+      "20 : 1",
+      "14.7 : 1",
+      "1 : 14.7",
+      "7 : 1"
+    ],
+    "answer": 2,
+    "oneLineConcept": "가솔린 이론 공연비 ≈ 14.7 : 1 (공기 14.7kg : 연료 1kg)",
+    "explanation": "이론 공연비는 연료가 남김없이 완전히 타는 데 꼭 필요한 공기의 양입니다. 가솔린 1kg 을 완전히 태우려면 공기가 약 14.7kg 필요합니다. 이보다 공기가 적으면 '농후', 많으면 '희박'하다고 합니다.\n\n**틀린 선지**\n- 1 : 14.7: 공기와 연료의 순서를 거꾸로 적은 것입니다.\n- 7 : 1: 공기가 크게 모자란 매우 농후한 혼합기입니다.\n- 20 : 1: 공기가 많은 희박한 혼합기입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "공연비"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-fuel-system-0002",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "engine",
+    "chapterId": "fuel-system",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "가솔린 엔진의 노킹을 줄이는 방법으로 알맞은 것은?",
+    "choices": [
+      "점화 시기를 더 빠르게 한다",
+      "세탄가가 높은 연료를 쓴다",
+      "옥탄가가 높은 연료를 쓴다",
+      "압축비를 더 높인다"
+    ],
+    "answer": 3,
+    "oneLineConcept": "가솔린 노킹 방지: 옥탄가↑, 점화 시기 늦춤, 과열 방지",
+    "explanation": "가솔린 노킹은 불꽃이 퍼지기 전에 연소실 끝부분의 혼합기가 스스로 불붙어 '딱딱' 두드리는 현상입니다. 스스로 불붙지 않고 버티는 힘이 옥탄가이므로 옥탄가가 높은 연료를 쓰면 줄어듭니다. 점화 시기를 조금 늦추고 엔진 과열을 막는 것도 도움이 됩니다.\n\n**틀린 선지**\n- 세탄가가 높은 연료를 쓴다: 세탄가는 디젤 연료가 불붙기 쉬운 정도로, 디젤 노킹 대책입니다.\n- 점화 시기를 더 빠르게 한다: 점화 시기를 앞당기면 노킹이 더 잘 생깁니다.\n- 압축비를 더 높인다: 압축비가 높으면 온도·압력이 올라 노킹이 더 잘 생깁니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "노킹",
+      "옥탄가"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-fuel-system-0003",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "engine",
+    "chapterId": "fuel-system",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "디젤 엔진의 노킹을 줄이는 방법으로 알맞은 것은?",
+    "choices": [
+      "흡입 공기의 온도를 낮춘다",
+      "세탄가가 높은 연료를 써서 착화 지연을 짧게 한다",
+      "옥탄가가 높은 연료를 쓴다",
+      "압축비를 낮춘다"
+    ],
+    "answer": 2,
+    "oneLineConcept": "디젤 노킹 방지: 세탄가↑, 압축비↑, 흡기 온도↑ (가솔린과 반대)",
+    "explanation": "디젤 노킹은 분사한 연료가 바로 불붙지 않고 쌓였다가(착화 지연) 한꺼번에 타서 생깁니다. 그래서 불이 잘 붙게 하는 쪽이 대책입니다. 세탄가가 높은 연료를 쓰고, 압축비와 흡입 공기 온도를 높여 착화 지연을 짧게 합니다. 가솔린 노킹 대책과 방향이 반대입니다.\n\n**틀린 선지**\n- 옥탄가가 높은 연료를 쓴다: 옥탄가는 가솔린 노킹 대책입니다.\n- 압축비를 낮춘다: 압축비를 낮추면 압축 온도가 낮아져 착화가 늦어지므로 노킹이 늘어납니다.\n- 흡입 공기의 온도를 낮춘다: 흡입 공기가 차가우면 착화가 늦어져 노킹이 늘어납니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "노킹",
+      "세탄가",
+      "디젤"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-fuel-system-0004",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "engine",
+    "chapterId": "fuel-system",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "전자제어 가솔린 엔진에서 인젝터의 연료 분사량을 주로 결정하는 것은?",
+    "choices": [
+      "점화 코일의 2차 전압",
+      "인젝터에 걸리는 전압의 크기",
+      "인젝터에 전류가 흐르는 시간(분사 시간)",
+      "연료 탱크의 크기"
+    ],
+    "answer": 3,
+    "oneLineConcept": "인젝터 분사량 = 통전(분사) 시간으로 제어",
+    "explanation": "인젝터는 전기가 흐르는 동안 바늘 밸브가 열려 연료를 뿜는 전자 밸브입니다. 연료 압력은 일정하게 유지되므로 ECU 는 인젝터를 열어 두는 시간을 길게 하거나 짧게 하여 분사량을 맞춥니다.\n\n**틀린 선지**\n- 인젝터에 걸리는 전압의 크기: 인젝터에는 정해진 전압이 걸리고, 분사량은 열려 있는 시간으로 조절합니다.\n- 연료 탱크의 크기: 탱크 크기는 분사량과 관계가 없습니다.\n- 점화 코일의 2차 전압: 점화 코일 2차 전압은 점화플러그의 불꽃에 쓰입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "인젝터",
+      "전자제어"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-fuel-system-0005",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "engine",
+    "chapterId": "fuel-system",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "전자제어 엔진의 냉각수온 센서(NTC 서미스터)에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "온도가 올라가면 스스로 전압을 만들어 낸다",
+      "온도가 올라가면 저항이 커진다",
+      "온도가 올라가면 저항이 작아진다",
+      "온도와 상관없이 저항이 일정하다"
+    ],
+    "answer": 3,
+    "oneLineConcept": "NTC = 온도↑ 저항↓ (수온·흡기온 센서)",
+    "explanation": "NTC 는 '부(−)의 온도 계수'라는 뜻으로, 온도가 올라갈수록 저항이 줄어드는 반도체입니다. ECU 는 센서에 걸리는 전압 변화로 냉각수 온도를 알아내고, 엔진이 차가우면 연료를 조금 더 분사하고 공회전 속도를 높입니다.\n\n**틀린 선지**\n- 온도가 올라가면 저항이 커진다: 온도가 오르면 저항이 커지는 것은 PTC 입니다.\n- 온도와 상관없이 저항이 일정하다: 저항이 일정하면 온도를 알아낼 수 없습니다.\n- 온도가 올라가면 스스로 전압을 만들어 낸다: 스스로 전압을 만드는 것은 열전대나 지르코니아 산소 센서 같은 방식입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "센서",
+      "NTC"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-fuel-system-0006",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "engine",
+    "chapterId": "fuel-system",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "지르코니아 산소 센서는 혼합기가 농후할 때 어떤 신호를 내는가?",
+    "choices": [
+      "약 12V 의 배터리 전압을 낸다",
+      "약 0.8~0.9V 쪽의 높은 전압을 낸다",
+      "약 0.1V 쪽의 낮은 전압을 낸다",
+      "농후·희박과 상관없이 0V 를 낸다"
+    ],
+    "answer": 2,
+    "oneLineConcept": "지르코니아 산소 센서: 농후 ≈ 0.9V 쪽, 희박 ≈ 0.1V 쪽",
+    "explanation": "산소 센서는 배기가스 속 산소 양을 바깥 공기와 비교해 전압을 만듭니다. 혼합기가 농후하면 배기 속 산소가 적어 높은 전압(약 0.9V 쪽)이, 희박하면 산소가 많아 낮은 전압(약 0.1V 쪽)이 나옵니다. ECU 는 이 신호로 분사량을 고쳐 이론 공연비에 맞춥니다.\n\n**틀린 선지**\n- 약 0.1V 쪽의 낮은 전압을 낸다: 희박할 때의 신호입니다.\n- 약 12V 의 배터리 전압을 낸다: 산소 센서는 1V 아래의 작은 전압을 만듭니다.\n- 농후·희박과 상관없이 0V 를 낸다: 정상 작동 온도에서는 농후·희박에 따라 전압이 오르내립니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "산소센서"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-fuel-system-0007",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "engine",
+    "chapterId": "fuel-system",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "커먼레일 디젤 엔진에서 고압 펌프가 만든 높은 압력의 연료를 저장했다가 각 인젝터에 같은 압력으로 나누어 주는 부품은?",
+    "choices": [
+      "프라이밍 펌프",
+      "커먼레일",
+      "연료 리턴 호스",
+      "연료 필터"
+    ],
+    "answer": 2,
+    "oneLineConcept": "커먼레일 = 고압 연료를 모아 두었다가 모든 인젝터에 공급",
+    "explanation": "커먼레일 방식은 고압 펌프 → 커먼레일(공통 관) → 인젝터 순서로 연료가 갑니다. 레일에 높은 압력의 연료를 모아 두므로 엔진 회전수와 상관없이 높은 압력으로 분사할 수 있고, ECU 가 레일 압력 센서로 압력을 조절합니다.\n\n**틀린 선지**\n- 연료 필터: 연료 속 먼지와 수분을 걸러 내는 부품입니다.\n- 프라이밍 펌프: 연료 계통의 공기를 뺄 때 손으로 누르는 펌프입니다.\n- 연료 리턴 호스: 쓰고 남은 연료를 탱크로 되돌리는 관입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "커먼레일",
+      "디젤"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-fuel-system-0008",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "engine",
+    "chapterId": "fuel-system",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "커먼레일 디젤 엔진에서 주분사 전에 소량의 연료를 먼저 분사하는 파일럿(예비) 분사의 주된 목적은?",
+    "choices": [
+      "연료를 식혀 연료 온도를 낮춘다",
+      "시동을 끈 뒤 레일 압력을 유지한다",
+      "연소 소음과 진동(디젤 노크)을 줄인다",
+      "매연 여과 장치(DPF)를 재생한다"
+    ],
+    "answer": 3,
+    "oneLineConcept": "파일럿 분사 = 소음·진동 감소, 사후 분사 = DPF 재생 등",
+    "explanation": "파일럿 분사는 주분사 직전에 아주 적은 연료를 먼저 뿜어 연소실을 미리 데우는 것입니다. 그러면 주분사한 연료가 늦지 않고 부드럽게 타서 디젤 특유의 '덜덜' 소음과 진동이 줄어듭니다.\n\n**틀린 선지**\n- 매연 여과 장치(DPF)를 재생한다: DPF 재생은 주분사 뒤에 하는 사후 분사(포스트 분사)의 목적입니다.\n- 시동을 끈 뒤 레일 압력을 유지한다: 레일 압력은 고압 펌프와 압력 조절 밸브가 맡습니다.\n- 연료를 식혀 연료 온도를 낮춘다: 분사는 연료를 식히는 목적이 아닙니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "커먼레일",
+      "분사"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-fuel-system-0009",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "engine",
+    "chapterId": "fuel-system",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "리턴 방식 전자제어 가솔린 연료 장치에서 연료 압력 조절기가 하는 일은?",
+    "choices": [
+      "인젝터의 분사 시간을 직접 정한다",
+      "연료의 온도를 일정하게 조절한다",
+      "흡기다기관 압력 변화에 맞춰 연료 압력을 조절해 연료 압력과 흡기다기관 압력의 차이를 일정하게 유지한다",
+      "연료 압력을 언제나 대기압과 같게 유지한다"
+    ],
+    "answer": 3,
+    "oneLineConcept": "연료 압력 조절기 = 연료압과 흡기다기관 압력 차를 일정하게",
+    "explanation": "인젝터는 흡기다기관 안으로 연료를 뿜기 때문에, 다기관 압력이 바뀌면 같은 분사 시간이라도 뿜어지는 양이 달라집니다. 연료 압력 조절기는 다기관 압력(부압)을 받아 연료 압력을 그만큼 올리거나 내려, 두 압력의 차이를 일정하게 지킵니다. 그래서 ECU 는 분사 시간만으로 분사량을 정확히 맞출 수 있습니다.\n\n**틀린 선지**\n- 연료 압력을 언제나 대기압과 같게 유지한다: 연료 압력은 대기압보다 훨씬 높게 유지됩니다.\n- 인젝터의 분사 시간을 직접 정한다: 분사 시간은 ECU 가 정합니다.\n- 연료의 온도를 일정하게 조절한다: 연료 온도를 조절하는 장치가 아닙니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "연료압력조절기"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-fuel-system-0010",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "engine",
+    "chapterId": "fuel-system",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "스로틀 위치 센서(TPS)가 감지하는 것은?",
+    "choices": [
+      "스로틀 밸브가 열린 정도",
+      "배기가스 속 산소의 양",
+      "크랭크축의 위치",
+      "흡입 공기의 온도"
+    ],
+    "answer": 1,
+    "oneLineConcept": "TPS = 스로틀 밸브 열림 정도(가속 의지) 감지",
+    "explanation": "TPS 는 스로틀 밸브 축에 붙은 가변 저항으로, 밸브가 열린 각도를 전압으로 바꿔 ECU 에 보냅니다. ECU 는 이 값으로 운전자가 얼마나 가속하려는지 알고 분사량과 점화 시기를 정합니다.\n\n**틀린 선지**\n- 흡입 공기의 온도: 흡기 온도 센서가 감지합니다.\n- 크랭크축의 위치: 크랭크각 센서가 감지합니다.\n- 배기가스 속 산소의 양: 산소 센서가 감지합니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "센서",
+      "TPS"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-fuel-system-0011",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "engine",
+    "chapterId": "fuel-system",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "LPG 연료와 LPG 연료 장치에 대한 설명으로 옳지 않은 것은?",
+    "choices": [
+      "LPG 는 공기보다 가벼워 새어 나오면 위쪽으로 빠르게 흩어진다",
+      "용기(봄베) 안에는 압력을 받아 액체 상태로 저장된다",
+      "새는 곳을 찾을 때는 비눗물을 바른다",
+      "베이퍼라이저(기화기)에서 기체로 바뀐다"
+    ],
+    "answer": 1,
+    "oneLineConcept": "LPG 는 공기보다 무거워 새면 바닥에 고인다",
+    "explanation": "LPG 는 공기보다 무거운 가스입니다. 새어 나오면 바닥이나 정비 피트처럼 낮은 곳에 고여 불이 붙기 쉬우므로 환기를 잘하고 낮은 곳의 불씨를 조심해야 합니다.\n\n**틀린 선지**\n- 용기(봄베) 안에는 압력을 받아 액체 상태로 저장된다: LPG 는 압력을 받아 액체로 저장되므로 옳은 설명입니다.\n- 베이퍼라이저(기화기)에서 기체로 바뀐다: 액체 LPG 가 베이퍼라이저에서 기체로 바뀌므로 옳은 설명입니다.\n- 새는 곳을 찾을 때는 비눗물을 바른다: 새는 곳에서 거품이 생기므로 옳은 점검 방법입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "LPG",
+      "안전"
+    ],
+    "levelLock": true
+  }
+]

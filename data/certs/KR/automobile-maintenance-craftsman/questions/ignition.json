@@ -1,0 +1,347 @@
+[
+  {
+    "id": "automobile-maintenance-craftsman-ignition-0001",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "engine",
+    "chapterId": "ignition",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "점화 코일이 높은 전압을 만드는 원리로 알맞은 것은?",
+    "choices": [
+      "1차 코일에 전류가 계속 흐르는 동안 2차 코일에 전압이 생기는 작용",
+      "1차 코일에 흐르던 전류를 끊는 순간 2차 코일에 높은 전압이 생기는 상호 유도 작용",
+      "전압을 낮추어 전류를 키우는 감압 작용",
+      "교류를 직류로 바꾸는 정류 작용"
+    ],
+    "answer": 2,
+    "oneLineConcept": "점화 코일: 1차 전류 차단 순간 → 2차에 고전압(상호 유도)",
+    "explanation": "점화 코일은 한 철심에 1차 코일과 2차 코일을 함께 감은 변압기입니다. 1차 코일에 흐르던 전류를 갑자기 끊으면 자력선이 급히 사라지면서, 훨씬 많이 감긴 2차 코일에 수만 볼트의 높은 전압이 생깁니다. 이것이 점화플러그에 불꽃을 튀깁니다.\n\n**틀린 선지**\n- 1차 코일에 전류가 계속 흐르는 동안 2차 코일에 전압이 생기는 작용: 전류가 일정하게 흐르는 동안에는 자력선이 변하지 않아 2차 전압이 생기지 않습니다.\n- 교류를 직류로 바꾸는 정류 작용: 정류는 발전기 다이오드의 역할입니다.\n- 전압을 낮추어 전류를 키우는 감압 작용: 점화 코일은 전압을 높이는 장치입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "점화코일"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-ignition-0002",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "engine",
+    "chapterId": "ignition",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "점화 코일의 1차 코일과 2차 코일을 비교한 것으로 알맞은 것은?",
+    "choices": [
+      "1차 코일과 2차 코일의 감은 수가 같다",
+      "1차 코일이 2차 코일보다 훨씬 많이 감겨 있다",
+      "2차 코일은 1차 코일보다 굵은 선을 적게 감았다",
+      "2차 코일은 1차 코일보다 가는 선을 훨씬 많이 감았다"
+    ],
+    "answer": 4,
+    "oneLineConcept": "1차 = 굵은 선 적게, 2차 = 가는 선 많이",
+    "explanation": "코일에 생기는 전압은 감은 수에 비례합니다. 높은 전압이 필요한 2차 코일은 가는 선을 아주 많이 감고, 큰 전류가 흐르는 1차 코일은 굵은 선을 적게 감습니다.\n\n**틀린 선지**\n- 1차 코일이 2차 코일보다 훨씬 많이 감겨 있다: 감은 수가 거꾸로 되었습니다.\n- 1차 코일과 2차 코일의 감은 수가 같다: 감은 수가 같으면 전압을 높일 수 없습니다.\n- 2차 코일은 1차 코일보다 굵은 선을 적게 감았다: 1차 코일의 특징을 2차 코일에 붙인 것입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "점화코일"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-ignition-0003",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "engine",
+    "chapterId": "ignition",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "전자 점화 장치의 파워 트랜지스터가 하는 일은?",
+    "choices": [
+      "발전기의 교류를 직류로 바꾼다",
+      "점화플러그 간극을 자동으로 조정한다",
+      "2차 고전압을 각 실린더로 나누어 준다",
+      "ECU 신호를 베이스로 받아 점화 코일 1차 전류를 흘렸다 끊었다 한다"
+    ],
+    "answer": 4,
+    "oneLineConcept": "파워 TR = ECU 신호로 점화 코일 1차 전류 단속",
+    "explanation": "파워 트랜지스터는 스위치 역할을 합니다. ECU 가 베이스에 신호를 주면 컬렉터에서 이미터로 1차 전류가 흐르고, 신호를 끊으면 1차 전류도 끊겨 점화 코일 2차에 고전압이 생깁니다. 예전 접점식의 포인트 역할을 대신합니다.\n\n**틀린 선지**\n- 2차 고전압을 각 실린더로 나누어 준다: 배전기의 역할입니다(DLI 에는 배전기가 없습니다).\n- 발전기의 교류를 직류로 바꾼다: 발전기 다이오드의 역할입니다.\n- 점화플러그 간극을 자동으로 조정한다: 점화플러그 간극은 정비할 때 직접 맞춥니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "파워트랜지스터"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-ignition-0004",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "engine",
+    "chapterId": "ignition",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "냉형(cold type) 점화플러그에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "열을 오래 품으므로 저속 위주의 엔진에 알맞다",
+      "불꽃을 튀기는 데 필요한 전압이 낮은 플러그를 말한다",
+      "열을 잘 방출하므로 고속·고압축 엔진에 알맞다",
+      "중심 전극과 접지 전극의 간극이 넓은 플러그를 말한다"
+    ],
+    "answer": 3,
+    "oneLineConcept": "냉형 = 방열 잘 됨 → 고속·고압축 / 열형 = 방열 느림 → 저속",
+    "explanation": "점화플러그는 열을 내보내는 정도(열가)에 따라 나눕니다. 냉형은 절연체가 짧아 열이 빨리 빠지므로 연소실이 뜨거운 고속·고압축 엔진에서 과열되지 않습니다. 열형은 열이 천천히 빠져 저속에서도 전극이 알맞게 뜨거워져 카본이 덜 쌓입니다.\n\n**틀린 선지**\n- 열을 오래 품으므로 저속 위주의 엔진에 알맞다: 열형 플러그의 특징입니다.\n- 중심 전극과 접지 전극의 간극이 넓은 플러그를 말한다: 냉형·열형은 간극이 아니라 열을 내보내는 정도로 나눕니다.\n- 불꽃을 튀기는 데 필요한 전압이 낮은 플러그를 말한다: 요구 전압은 간극·압축 압력 등에 따라 정해지며 냉형의 뜻이 아닙니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "점화플러그",
+      "열가"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-ignition-0005",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "engine",
+    "chapterId": "ignition",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "점화플러그 간극이 규정보다 너무 클 때 나타나는 현상은?",
+    "choices": [
+      "불꽃이 더 강해져 출력이 크게 오른다",
+      "점화와 아무 관계가 없다",
+      "불꽃을 튀기는 데 필요한 전압이 높아져 실화가 생기기 쉽다",
+      "불꽃에 필요한 전압이 낮아진다"
+    ],
+    "answer": 3,
+    "oneLineConcept": "플러그 간극 큼 → 요구 전압↑ → 실화",
+    "explanation": "간극이 넓을수록 전기가 건너뛰어야 할 거리가 멀어 더 높은 전압이 필요합니다. 점화 코일이 만들 수 있는 전압을 넘으면 불꽃이 튀지 않는 실화가 생겨 엔진이 떨고 출력이 떨어집니다.\n\n**틀린 선지**\n- 불꽃에 필요한 전압이 낮아진다: 간극이 좁을 때 요구 전압이 낮아집니다.\n- 불꽃이 더 강해져 출력이 크게 오른다: 요구 전압을 넘으면 불꽃이 튀지 않아 출력이 떨어집니다.\n- 점화와 아무 관계가 없다: 간극은 불꽃 상태에 직접 영향을 줍니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "점화플러그"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-ignition-0006",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "engine",
+    "chapterId": "ignition",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "DLI(배전기 없는 점화 장치)의 동시 점화 방식에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "점화 코일 하나로 두 실린더의 점화플러그에 동시에 불꽃을 튀긴다",
+      "실린더 하나에 점화플러그 두 개를 둔다",
+      "모든 실린더에 한꺼번에 불꽃을 튀긴다",
+      "배전기가 고전압을 순서대로 나누어 준다"
+    ],
+    "answer": 1,
+    "oneLineConcept": "동시 점화 = 코일 1개 → 실린더 2개(압축 상사점 + 배기 상사점)",
+    "explanation": "동시 점화 방식은 피스톤이 함께 오르내리는 두 실린더(4기통이면 1·4번, 2·3번)를 점화 코일 하나에 연결합니다. 한쪽은 압축 끝이라 불꽃이 혼합기를 태우고, 다른 쪽은 배기 끝이라 불꽃이 튀어도 아무 일이 없습니다. 실린더마다 코일을 하나씩 다는 방식은 독립 점화 방식입니다.\n\n**틀린 선지**\n- 배전기가 고전압을 순서대로 나누어 준다: 배전기를 쓰는 예전 방식입니다. DLI 는 배전기가 없습니다.\n- 실린더 하나에 점화플러그 두 개를 둔다: 트윈 플러그 방식으로, 동시 점화와 다릅니다.\n- 모든 실린더에 한꺼번에 불꽃을 튀긴다: 모든 실린더를 한꺼번에 점화하지 않습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "DLI",
+      "점화방식"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-ignition-0007",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "engine",
+    "chapterId": "ignition",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "노크 센서가 노킹을 감지했을 때 ECU 가 하는 조치로 알맞은 것은?",
+    "choices": [
+      "점화 시기를 더 앞당긴다",
+      "공회전 속도를 높인다",
+      "연료 분사를 완전히 끊는다",
+      "점화 시기를 늦춘다"
+    ],
+    "answer": 4,
+    "oneLineConcept": "노킹 감지 → 점화 시기 지각(늦춤)",
+    "explanation": "노크 센서는 실린더 블록에 붙어 노킹 때의 진동을 전기 신호로 바꿉니다. ECU 는 노킹이 감지되면 점화 시기를 조금씩 늦추고, 노킹이 사라지면 다시 조금씩 앞당겨 출력과 엔진 보호를 함께 챙깁니다.\n\n**틀린 선지**\n- 점화 시기를 더 앞당긴다: 점화 시기를 앞당기면 노킹이 더 심해집니다.\n- 연료 분사를 완전히 끊는다: 연료를 끊으면 엔진이 멈추므로 노킹 대책이 아닙니다.\n- 공회전 속도를 높인다: 공회전 속도와 노킹 대책은 관계가 없습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "노크센서",
+      "점화시기"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-ignition-0008",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "engine",
+    "chapterId": "ignition",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "엔진 회전수와 크랭크축의 위치를 감지하여 점화 시기와 분사 시기의 기준 신호로 쓰이는 센서는?",
+    "choices": [
+      "노크 센서",
+      "크랭크각 센서(CKP)",
+      "캠축 위치 센서(CMP)",
+      "산소 센서"
+    ],
+    "answer": 2,
+    "oneLineConcept": "크랭크각 센서 = 회전수·크랭크 위치, 캠축 위치 센서 = 1번 실린더 판별",
+    "explanation": "크랭크각 센서는 크랭크축(또는 플라이휠)의 톱니를 읽어 엔진이 얼마나 빨리 도는지와 피스톤이 어디쯤 있는지를 알려 줍니다. 이 신호가 끊기면 ECU 가 점화·분사 시기를 정할 수 없어 시동이 걸리지 않습니다.\n\n**틀린 선지**\n- 캠축 위치 센서(CMP): 캠축 위치 센서는 몇 번 실린더가 압축 상사점인지(1번 실린더) 판별합니다.\n- 노크 센서: 노크 센서는 노킹 진동을 감지합니다.\n- 산소 센서: 산소 센서는 배기 속 산소 양을 감지합니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "센서",
+      "크랭크각"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-ignition-0009",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "engine",
+    "chapterId": "ignition",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "엔진 회전수와 점화 시기의 관계로 알맞은 것은?",
+    "choices": [
+      "회전수가 높아질수록 점화 시기를 늦춘다",
+      "엔진 부하가 커질수록 점화 시기를 더 앞당긴다",
+      "회전수가 높아질수록 점화 시기를 앞당긴다(진각)",
+      "회전수와 상관없이 점화 시기를 고정한다"
+    ],
+    "answer": 3,
+    "oneLineConcept": "회전수↑ → 진각, 부하↑·노킹 → 지각",
+    "explanation": "혼합기가 불붙어 다 타기까지는 일정한 시간이 걸립니다. 엔진이 빨리 돌면 그 사이 피스톤이 더 많이 움직이므로, 최고 압력이 상사점 조금 뒤에 오도록 점화를 미리(앞당겨) 해야 합니다. 반대로 부하가 크면 노킹이 생기기 쉬워 점화 시기를 늦추는 쪽으로 보정합니다.\n\n**틀린 선지**\n- 회전수가 높아질수록 점화 시기를 늦춘다: 회전수가 높을 때 늦추면 연소가 늦어져 출력이 떨어집니다.\n- 회전수와 상관없이 점화 시기를 고정한다: 회전수에 따라 연소 시간 동안 움직이는 각도가 달라지므로 고정하지 않습니다.\n- 엔진 부하가 커질수록 점화 시기를 더 앞당긴다: 부하가 크면 노킹을 막기 위해 늦추는 쪽으로 보정합니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "점화시기"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-ignition-0010",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "engine",
+    "chapterId": "ignition",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "점화 장치를 점검하는 방법으로 옳지 않은 것은?",
+    "choices": [
+      "점화 파형은 오실로스코프가 있는 진단 장비로 본다",
+      "엔진을 돌린 채 점화 2차 고압선을 맨손으로 잡고 불꽃을 확인한다",
+      "점화플러그 간극은 와이어 게이지(간극 게이지)로 잰다",
+      "점화 코일의 1·2차 저항은 회로 시험기의 저항 레인지로 잰다"
+    ],
+    "answer": 2,
+    "oneLineConcept": "점화 2차 회로는 수만 볼트 → 맨손 접촉 금지",
+    "explanation": "점화 2차 회로에는 수만 볼트의 높은 전압이 흐르므로 맨손으로 잡으면 감전되어 크게 다칠 수 있습니다. 불꽃 시험은 절연된 점화 시험기(스파크 테스터)를 쓰고, 전자 부품이 상하지 않게 정비 지침서의 방법을 따릅니다.\n\n**틀린 선지**\n- 점화플러그 간극은 와이어 게이지(간극 게이지)로 잰다: 둥근 와이어 게이지로 간극을 재는 것은 옳은 방법입니다.\n- 점화 코일의 1·2차 저항은 회로 시험기의 저항 레인지로 잰다: 코일의 끊김·단락을 저항으로 확인하는 옳은 방법입니다.\n- 점화 파형은 오실로스코프가 있는 진단 장비로 본다: 점화 상태를 파형으로 보는 옳은 방법입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "안전",
+      "점화장치"
+    ],
+    "levelLock": true
+  }
+]

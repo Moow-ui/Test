@@ -1,0 +1,360 @@
+[
+  {
+    "id": "automobile-maintenance-craftsman-driveline-0001",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "chassis",
+    "chapterId": "driveline",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "추진축(프로펠러 샤프트)의 자재 이음(유니버설 조인트)이 하는 일은?",
+    "choices": [
+      "추진축이 꺾인 각도로도 동력을 전달할 수 있게 한다",
+      "좌우 바퀴의 회전 차이를 만든다",
+      "추진축의 회전 속도를 줄인다",
+      "추진축의 길이 변화에 대응한다"
+    ],
+    "answer": 1,
+    "oneLineConcept": "자재 이음 = 각도 변화, 슬립 이음 = 길이 변화",
+    "explanation": "차가 울퉁불퉁한 길을 가면 뒤차축이 위아래로 움직여 변속기와 차축 사이의 각도가 바뀝니다. 자재 이음은 이렇게 각도가 바뀌어도 동력이 끊기지 않고 전해지게 하는 이음입니다.\n\n**틀린 선지**\n- 추진축의 길이 변화에 대응한다: 슬립 이음의 역할입니다.\n- 추진축의 회전 속도를 줄인다: 감속은 변속기·종감속 장치의 역할입니다.\n- 좌우 바퀴의 회전 차이를 만든다: 차동 장치의 역할입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "추진축",
+      "자재이음"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-driveline-0002",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "chassis",
+    "chapterId": "driveline",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "추진축에 슬립 이음을 두는 이유는?",
+    "choices": [
+      "추진축의 각도 변화에 대응하기 위해",
+      "엔진 회전을 줄이기 위해",
+      "추진축의 진동을 키우기 위해",
+      "추진축의 길이 변화에 대응하기 위해"
+    ],
+    "answer": 4,
+    "oneLineConcept": "슬립 이음 = 스플라인으로 길이 변화 흡수",
+    "explanation": "뒤차축이 위아래로 움직이면 변속기에서 차축까지의 거리도 조금씩 바뀝니다. 슬립 이음은 스플라인(홈과 돌기)으로 축이 앞뒤로 미끄러지며 길이 변화를 받아 줍니다.\n\n**틀린 선지**\n- 추진축의 각도 변화에 대응하기 위해: 자재 이음의 역할입니다.\n- 엔진 회전을 줄이기 위해: 감속 장치의 역할입니다.\n- 추진축의 진동을 키우기 위해: 슬립 이음은 진동을 키우지 않습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "추진축",
+      "슬립이음"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-driveline-0003",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "chassis",
+    "chapterId": "driveline",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "차동 장치(디퍼렌셜)의 주된 역할은?",
+    "choices": [
+      "엔진의 회전을 끊었다 이었다 한다",
+      "선회할 때 바깥쪽 바퀴를 안쪽 바퀴보다 빠르게 돌게 하여 원활하게 돌게 한다",
+      "차를 뒤로 가게 한다",
+      "바퀴가 잠기지 않게 제동력을 조절한다"
+    ],
+    "answer": 2,
+    "oneLineConcept": "차동 장치 = 선회 시 좌우 바퀴 회전수 차이 허용",
+    "explanation": "차가 돌 때 바깥쪽 바퀴는 안쪽 바퀴보다 더 먼 거리를 갑니다. 좌우 바퀴가 같은 속도로만 돌면 한쪽이 미끄러지며 끌리게 됩니다. 차동 장치는 차동 피니언과 사이드 기어로 좌우 바퀴의 회전수 차이를 자연스럽게 만들어 줍니다.\n\n**틀린 선지**\n- 엔진의 회전을 끊었다 이었다 한다: 클러치의 역할입니다.\n- 차를 뒤로 가게 한다: 후진은 변속기의 후진 기어가 맡습니다.\n- 바퀴가 잠기지 않게 제동력을 조절한다: ABS 의 역할입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "차동장치"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-driveline-0004",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "chassis",
+    "chapterId": "driveline",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "링 기어 잇수가 42, 구동 피니언 잇수가 6 일 때 종감속비는?",
+    "choices": [
+      "48",
+      "7",
+      "36",
+      "0.14"
+    ],
+    "answer": 2,
+    "oneLineConcept": "종감속비 = 링 기어 잇수 ÷ 구동 피니언 잇수",
+    "explanation": "구동 피니언이 링 기어를 돌리므로 피니언이 몇 바퀴 돌아야 링 기어가 한 바퀴 도는지가 종감속비입니다.\n\n1. 종감속비 = 42 ÷ 6 = 7\n2. 뜻: 추진축이 7바퀴 돌 때 차축(링 기어)은 1바퀴 돕니다.\n\n**틀린 선지**\n- 0.14: 거꾸로 나눈 값(6 ÷ 42)입니다.\n- 48: 두 잇수를 더한 값입니다.\n- 36: 두 잇수의 차이입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "종감속비",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-driveline-0005",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "chassis",
+    "chapterId": "driveline",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "차동 장치의 링 기어가 300rpm 으로 돌 때, 한쪽 바퀴가 멈춰서 돌지 않는다면 다른 쪽 바퀴의 회전수는?",
+    "choices": [
+      "600rpm",
+      "150rpm",
+      "0rpm",
+      "300rpm"
+    ],
+    "answer": 1,
+    "oneLineConcept": "한쪽 바퀴 정지 → 반대쪽 = 링 기어 회전수 × 2",
+    "explanation": "차동 장치에서는 좌우 바퀴 회전수의 합이 링 기어 회전수의 2배로 일정합니다.\n\n1. 왼쪽 + 오른쪽 = 300 × 2 = 600rpm\n2. 한쪽이 0rpm 이면 다른 쪽 = 600 − 0 = 600rpm\n\n그래서 한쪽 바퀴가 진흙에서 헛돌 때 그 바퀴만 빠르게 돌고 차는 나아가지 못합니다.\n\n**틀린 선지**\n- 300rpm: 직진할 때 좌우 바퀴가 같은 속도로 돌 때의 값입니다.\n- 150rpm: 링 기어 회전수를 반으로 나눈 값입니다.\n- 0rpm: 차동 작용 때문에 반대쪽 바퀴는 멈추지 않습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "차동장치",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-driveline-0006",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "chassis",
+    "chapterId": "driveline",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "종감속 장치에 하이포이드 기어를 쓰는 장점은?",
+    "choices": [
+      "일반 기어 오일만 써도 된다",
+      "구동 피니언을 링 기어 중심보다 높게 두어 지상고를 높인다",
+      "기어끼리 미끄럼이 전혀 생기지 않는다",
+      "구동 피니언을 링 기어 중심보다 낮게 둘 수 있어 차체 바닥을 낮출 수 있다"
+    ],
+    "answer": 4,
+    "oneLineConcept": "하이포이드 = 피니언 중심을 낮춤 → 추진축·바닥 낮아짐, 전용 오일 필요",
+    "explanation": "하이포이드 기어는 구동 피니언의 중심선을 링 기어 중심보다 아래로 내려 설치합니다. 그만큼 추진축 높이가 낮아져 차의 바닥과 무게 중심을 낮출 수 있습니다. 대신 이 사이 미끄럼이 커서 극압성이 좋은 하이포이드 기어 오일을 써야 합니다.\n\n**틀린 선지**\n- 일반 기어 오일만 써도 된다: 이 사이 미끄럼이 커서 전용 하이포이드 기어 오일이 필요합니다.\n- 기어끼리 미끄럼이 전혀 생기지 않는다: 미끄럼이 커서 전용 오일이 필요한 것이 단점입니다.\n- 구동 피니언을 링 기어 중심보다 높게 두어 지상고를 높인다: 피니언을 낮게 두는 것이 하이포이드의 특징입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "하이포이드",
+      "종감속"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-driveline-0007",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "chassis",
+    "chapterId": "driveline",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "전부동식 차축의 특징으로 알맞은 것은?",
+    "choices": [
+      "주로 가벼운 승용차의 뒷바퀴에 쓴다",
+      "차 무게는 액슬 하우징이 받고 액슬축은 동력만 전달하므로, 바퀴를 떼지 않고도 액슬축을 빼낼 수 있다",
+      "액슬축이 동력 전달과 차 무게 지지를 함께 맡는다",
+      "바퀴를 떼어 내야만 액슬축을 빼낼 수 있다"
+    ],
+    "answer": 2,
+    "oneLineConcept": "전부동식 = 축은 동력만, 무게는 하우징 → 대형차",
+    "explanation": "차축 지지 방식은 차 무게를 누가 받느냐로 나눕니다. 전부동식은 바퀴 허브가 베어링으로 하우징에 얹혀 무게를 하우징이 다 받고, 액슬축은 바퀴를 돌리는 일만 합니다. 그래서 허브 쪽 볼트만 풀면 바퀴를 단 채로 액슬축을 빼낼 수 있고, 무거운 짐을 싣는 대형 트럭·버스에 씁니다.\n\n**틀린 선지**\n- 액슬축이 동력 전달과 차 무게 지지를 함께 맡는다: 반부동식의 특징입니다.\n- 바퀴를 떼어 내야만 액슬축을 빼낼 수 있다: 바퀴를 떼지 않고도 축을 뺄 수 있는 것이 전부동식의 특징입니다.\n- 주로 가벼운 승용차의 뒷바퀴에 쓴다: 승용차 뒷바퀴에는 주로 반부동식을 씁니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "차축",
+      "전부동식"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-driveline-0008",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "chassis",
+    "chapterId": "driveline",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "앞바퀴 굴림(FF) 차의 등속 조인트 부트가 찢어졌을 때 알맞은 조치는?",
+    "choices": [
+      "안의 그리스가 새고 먼지·물이 들어가 조인트가 빨리 닳으므로 부트를 교환한다",
+      "엔진 오일을 보충한다",
+      "주행에 영향이 없으므로 그대로 둔다",
+      "브레이크 패드를 교환한다"
+    ],
+    "answer": 1,
+    "oneLineConcept": "등속 조인트 부트 찢어짐 → 그리스 유출·이물 유입 → 부트 교환",
+    "explanation": "등속 조인트는 바퀴가 조향되며 꺾여도 같은 속도로 동력을 전하는 이음입니다. 고무 부트가 그리스를 감싸고 먼지를 막는데, 부트가 찢어지면 그리스가 튀어 나가고 흙과 물이 들어가 조인트가 빨리 닳아 '딱딱' 소리가 납니다. 빨리 부트를 교환하고 그리스를 채웁니다.\n\n**틀린 선지**\n- 주행에 영향이 없으므로 그대로 둔다: 그대로 두면 조인트가 마모되어 결국 조인트를 통째로 바꿔야 합니다.\n- 엔진 오일을 보충한다: 등속 조인트는 엔진 오일이 아니라 전용 그리스로 윤활합니다.\n- 브레이크 패드를 교환한다: 브레이크와는 관계가 없습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "등속조인트"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-driveline-0009",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "chassis",
+    "chapterId": "driveline",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "차동 제한 장치(LSD)의 기능으로 알맞은 것은?",
+    "choices": [
+      "한쪽 바퀴가 미끄러운 노면에서 헛돌 때 차동 작용을 제한하여 다른 쪽 바퀴에도 구동력을 보낸다",
+      "주행 속도에 따라 감속비를 바꾼다",
+      "급제동할 때 바퀴가 잠기지 않게 한다",
+      "선회할 때 바깥쪽 바퀴를 안쪽 바퀴보다 빠르게 돌게 한다"
+    ],
+    "answer": 1,
+    "oneLineConcept": "LSD = 한쪽 헛돌 때 차동 제한 → 반대쪽에 구동력",
+    "explanation": "일반 차동 장치는 한쪽 바퀴가 진흙·빙판에서 헛돌면 힘이 그쪽으로만 빠져 차가 나아가지 못합니다. LSD 는 좌우 회전 차가 커지면 차동 작용을 제한해 잘 붙어 있는 바퀴에도 구동력이 전해지게 합니다.\n\n**틀린 선지**\n- 선회할 때 바깥쪽 바퀴를 안쪽 바퀴보다 빠르게 돌게 한다: 일반 차동 장치의 기본 역할입니다.\n- 주행 속도에 따라 감속비를 바꾼다: 변속기의 역할입니다.\n- 급제동할 때 바퀴가 잠기지 않게 한다: ABS 의 역할입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "LSD",
+      "차동장치"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-driveline-0010",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "chassis",
+    "chapterId": "driveline",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "주행 중 추진축이 떨리며 진동하는 원인으로 가장 알맞은 것은?",
+    "choices": [
+      "브레이크액이 조금 줄었다",
+      "클러치 페달 유격이 크다",
+      "엔진 오일 점도가 조금 높다",
+      "추진축이 휘었거나 밸런스 웨이트가 떨어졌다"
+    ],
+    "answer": 4,
+    "oneLineConcept": "추진축 진동: 축의 휨·밸런스 웨이트 이탈·자재 이음 마모",
+    "explanation": "추진축은 빠르게 도는 긴 관이라 조금만 휘거나 무게 균형이 깨져도 속도가 오를수록 크게 떨립니다. 축의 휨, 밸런스 웨이트 이탈, 자재 이음 십자축·베어링의 마모, 슬립 이음 스플라인 마모를 점검합니다.\n\n**틀린 선지**\n- 클러치 페달 유격이 크다: 클러치 유격은 클러치 차단과 관계있습니다.\n- 브레이크액이 조금 줄었다: 브레이크액은 제동 장치와 관계있습니다.\n- 엔진 오일 점도가 조금 높다: 엔진 오일 점도는 추진축 진동과 관계가 없습니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "추진축",
+      "고장진단"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  }
+]

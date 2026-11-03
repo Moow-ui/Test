@@ -1,0 +1,382 @@
+[
+  {
+    "id": "automobile-maintenance-craftsman-hydraulic-brake-0001",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "chassis",
+    "chapterId": "hydraulic-brake",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "유압식 브레이크가 페달을 밟은 힘을 네 바퀴에 똑같은 압력으로 전하는 원리는?",
+    "choices": [
+      "베르누이의 정리",
+      "플레밍의 왼손 법칙",
+      "파스칼의 원리",
+      "아르키메데스의 원리"
+    ],
+    "answer": 3,
+    "oneLineConcept": "유압 브레이크 = 파스칼의 원리(밀폐된 액체의 압력은 모든 방향에 같게 전달)",
+    "explanation": "밀폐된 용기 속 액체에 압력을 가하면 그 압력이 모든 곳에 똑같이 전해집니다(파스칼의 원리). 마스터 실린더에서 만든 압력이 브레이크 파이프를 통해 각 바퀴의 휠 실린더·캘리퍼에 같은 크기로 전해져 브레이크가 걸립니다.\n\n**틀린 선지**\n- 베르누이의 정리: 흐르는 유체의 속도와 압력 관계를 다루는 원리입니다.\n- 플레밍의 왼손 법칙: 전동기가 도는 방향을 알아내는 법칙입니다.\n- 아르키메데스의 원리: 물체가 액체 속에서 받는 부력을 다루는 원리입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "파스칼",
+      "유압브레이크"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-hydraulic-brake-0002",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "chassis",
+    "chapterId": "hydraulic-brake",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "베이퍼 록 현상을 바르게 설명한 것은?",
+    "choices": [
+      "마찰열 때문에 라이닝·패드의 마찰력이 떨어지는 현상",
+      "긴 내리막에서 브레이크를 계속 밟아 브레이크액이 끓어 기포가 생기고, 페달이 쑥 들어가며 브레이크가 잘 듣지 않는 현상",
+      "브레이크가 물에 젖어 잘 듣지 않는 현상",
+      "급제동 때 바퀴가 잠겨 미끄러지는 현상"
+    ],
+    "answer": 2,
+    "oneLineConcept": "베이퍼 록 = 브레이크액 끓음 → 기포 → 페달 푹",
+    "explanation": "브레이크를 오래 밟으면 마찰열이 브레이크액까지 전해져 액이 끓고 기포가 생깁니다. 기포는 눌리면 줄어들므로 페달을 밟아도 압력이 잘 전해지지 않아 페달이 쑥 들어갑니다. 흡습한 오래된 브레이크액일수록 끓는점이 낮아 잘 생깁니다.\n\n**틀린 선지**\n- 마찰열 때문에 라이닝·패드의 마찰력이 떨어지는 현상: 페이드 현상의 설명입니다.\n- 급제동 때 바퀴가 잠겨 미끄러지는 현상: 바퀴 잠김으로, ABS 가 막아 주는 현상입니다.\n- 브레이크가 물에 젖어 잘 듣지 않는 현상: 물에 젖어 마찰이 줄어드는 현상(워터 페이드)입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "베이퍼록"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-hydraulic-brake-0003",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "chassis",
+    "chapterId": "hydraulic-brake",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "긴 내리막길에서 베이퍼 록을 막는 운전 방법으로 알맞은 것은?",
+    "choices": [
+      "풋 브레이크만 계속 밟고 내려간다",
+      "브레이크 페달 유격을 완전히 없앤다",
+      "엔진 브레이크를 함께 쓴다",
+      "끓는점이 낮은 브레이크액으로 바꾼다"
+    ],
+    "answer": 3,
+    "oneLineConcept": "베이퍼 록 방지: 엔진 브레이크 병용, 정기적인 브레이크액 교환",
+    "explanation": "내리막에서 낮은 기어를 넣어 엔진 브레이크를 함께 쓰면 풋 브레이크를 덜 밟게 되어 브레이크가 덜 뜨거워집니다. 브레이크액은 끓는점이 높은 규격품을 쓰고 정해진 때 교환합니다.\n\n**틀린 선지**\n- 풋 브레이크만 계속 밟고 내려간다: 풋 브레이크만 계속 쓰면 열이 쌓여 베이퍼 록이 생기기 쉽습니다.\n- 끓는점이 낮은 브레이크액으로 바꾼다: 끓는점이 낮으면 더 쉽게 끓습니다.\n- 브레이크 페달 유격을 완전히 없앤다: 유격이 없으면 브레이크가 끌려 오히려 열이 납니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "베이퍼록",
+      "엔진브레이크"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-hydraulic-brake-0004",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "chassis",
+    "chapterId": "hydraulic-brake",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "유압 브레이크의 공기빼기 작업 순서로 알맞은 것은?",
+    "choices": [
+      "순서와 상관없이 아무 바퀴부터 뺀다",
+      "마스터 실린더에서 가장 가까운 바퀴부터 뺀다",
+      "마스터 실린더에서 가장 먼 바퀴부터 뺀다",
+      "앞바퀴 두 개를 동시에 뺀다"
+    ],
+    "answer": 3,
+    "oneLineConcept": "공기빼기 = 마스터 실린더에서 먼 바퀴부터",
+    "explanation": "브레이크 라인의 공기는 마스터 실린더에서 먼 쪽 끝까지 밀어내야 합니다. 먼 바퀴부터 빼야 앞에서 뺀 라인으로 공기가 다시 들어가지 않습니다. 작업 중에는 리저버 탱크의 브레이크액이 모자라지 않게 계속 채웁니다(차종에 따라 정비 지침서 순서를 따릅니다).\n\n**틀린 선지**\n- 마스터 실린더에서 가장 가까운 바퀴부터 뺀다: 가까운 바퀴부터 빼면 먼 쪽 공기가 남기 쉽습니다.\n- 앞바퀴 두 개를 동시에 뺀다: 공기빼기는 한 바퀴씩 차례로 합니다.\n- 순서와 상관없이 아무 바퀴부터 뺀다: 순서를 지켜야 공기가 남지 않습니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "공기빼기"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-hydraulic-brake-0005",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "chassis",
+    "chapterId": "hydraulic-brake",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "마스터 실린더의 체크 밸브가 브레이크 회로에 잔압을 남겨 두는 이유는?",
+    "choices": [
+      "주차 브레이크를 걸어 둔다",
+      "브레이크액을 식힌다",
+      "페달을 무겁게 하여 급제동을 막는다",
+      "베이퍼 록과 휠 실린더의 오일 누설을 막고, 다음 제동이 빨리 되게 한다"
+    ],
+    "answer": 4,
+    "oneLineConcept": "잔압 = 베이퍼 록 방지·누설 방지·작동 지연 방지",
+    "explanation": "페달에서 발을 떼도 회로에 약간의 압력(잔압)이 남아 있으면 휠 실린더 컵이 벌어진 상태로 유지되어 오일이 새거나 공기가 들어오지 않습니다. 액의 끓는점도 조금 높아져 베이퍼 록을 막고, 다음에 밟을 때 바로 압력이 걸립니다.\n\n**틀린 선지**\n- 페달을 무겁게 하여 급제동을 막는다: 잔압은 페달을 무겁게 하려는 것이 아닙니다.\n- 브레이크액을 식힌다: 액을 식히는 장치가 아닙니다.\n- 주차 브레이크를 걸어 둔다: 주차 브레이크는 따로 케이블이나 전기로 작동합니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "마스터실린더",
+      "잔압"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-hydraulic-brake-0006",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "chassis",
+    "chapterId": "hydraulic-brake",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "브레이크액을 다루는 방법으로 알맞은 것은?",
+    "choices": [
+      "모자라면 엔진 오일로 대신 채운다",
+      "종류가 달라도 섞어 써도 된다",
+      "공기 중의 수분을 잘 빨아들이므로 뚜껑을 꼭 닫아 보관하고 정해진 때 교환한다",
+      "차의 도장 면에 묻어도 그대로 둔다"
+    ],
+    "answer": 3,
+    "oneLineConcept": "브레이크액 = 흡습성 → 밀봉 보관·정기 교환, 다른 종류·광물유 혼합 금지",
+    "explanation": "브레이크액은 습기를 빨아들이는 성질이 있어 수분이 섞이면 끓는점이 낮아져 베이퍼 록이 생기기 쉽습니다. 그래서 뚜껑을 닫아 보관하고 정해진 때 바꿉니다. 다른 규격과 섞거나 광물성 오일을 넣으면 고무 부품이 부풀어 상하고, 도장 면에 묻으면 페인트가 상하므로 바로 닦아 냅니다.\n\n**틀린 선지**\n- 종류가 달라도 섞어 써도 된다: 규격이 다른 액을 섞으면 성질이 바뀌어 고장 날 수 있습니다.\n- 모자라면 엔진 오일로 대신 채운다: 광물성 오일이 들어가면 고무 컵·실이 부풀어 브레이크가 듣지 않을 수 있습니다.\n- 차의 도장 면에 묻어도 그대로 둔다: 브레이크액은 페인트를 상하게 하므로 바로 물로 닦아 냅니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "브레이크액"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-hydraulic-brake-0007",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "chassis",
+    "chapterId": "hydraulic-brake",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "브레이크를 너무 자주 또는 오래 써서 마찰열로 라이닝·패드의 마찰력이 떨어져 브레이크가 잘 듣지 않는 현상은?",
+    "choices": [
+      "시미 현상",
+      "페이드 현상",
+      "스탠딩 웨이브 현상",
+      "베이퍼 록 현상"
+    ],
+    "answer": 2,
+    "oneLineConcept": "페이드 = 마찰재가 뜨거워져 마찰력 저하",
+    "explanation": "페이드는 라이닝이나 패드가 지나치게 뜨거워져 마찰력이 줄어드는 현상입니다. 페달은 단단하게 밟히는데 차가 잘 서지 않는 것이 특징입니다. 브레이크액이 끓어 페달이 쑥 들어가는 베이퍼 록과 구별합니다.\n\n**틀린 선지**\n- 베이퍼 록 현상: 브레이크액이 끓어 기포가 생기는 현상입니다.\n- 스탠딩 웨이브 현상: 고속 주행 때 타이어가 물결처럼 떨리는 현상입니다.\n- 시미 현상: 바퀴가 좌우로 흔들리는 현상입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "페이드"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-hydraulic-brake-0008",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "chassis",
+    "chapterId": "hydraulic-brake",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "진공식 배력 장치(브레이크 부스터)가 페달 힘을 키우는 원리는?",
+    "choices": [
+      "공기 압축기가 만든 압축 공기를 이용한다",
+      "흡기다기관의 부압(진공)과 대기압의 차이를 이용한다",
+      "발전기 전류로 모터를 돌려 이용한다",
+      "배기가스의 압력을 이용한다"
+    ],
+    "answer": 2,
+    "oneLineConcept": "진공 배력 = 흡기다기관 부압 ↔ 대기압 차이",
+    "explanation": "가솔린 엔진의 흡기다기관에는 대기압보다 낮은 부압이 생깁니다. 부스터 안의 칸막이(다이어프램) 한쪽을 부압으로, 다른 쪽에 페달을 밟을 때 대기를 넣으면 압력 차이로 다이어프램이 마스터 실린더를 밀어 적은 힘으로도 큰 제동력을 얻습니다.\n\n**틀린 선지**\n- 배기가스의 압력을 이용한다: 배기 압력은 배력 장치에 쓰지 않습니다.\n- 공기 압축기가 만든 압축 공기를 이용한다: 압축 공기는 대형차의 공기 브레이크에 씁니다.\n- 발전기 전류로 모터를 돌려 이용한다: 일반적인 진공식 배력 장치의 원리가 아닙니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "배력장치"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-hydraulic-brake-0009",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "chassis",
+    "chapterId": "hydraulic-brake",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "ABS(바퀴 잠김 방지 브레이크)를 다는 주된 목적은?",
+    "choices": [
+      "주차할 때 차가 밀리지 않게 한다",
+      "브레이크액이 끓지 않게 한다",
+      "급제동할 때 바퀴가 잠기지 않게 하여 핸들로 방향을 잡을 수 있게 한다",
+      "브레이크 패드가 닳지 않게 한다"
+    ],
+    "answer": 3,
+    "oneLineConcept": "ABS = 바퀴 잠김 방지 → 조향 능력·안정성 유지",
+    "explanation": "바퀴가 잠긴 채 미끄러지면 핸들을 돌려도 차가 방향을 바꾸지 못하고 차가 돌 수도 있습니다. ABS 는 휠 스피드 센서로 바퀴가 잠기려는 순간을 알아채고, 유압 조절 장치(HCU)로 브레이크 압력을 빠르게 줄였다 늘렸다 하여 바퀴가 계속 구르게 합니다.\n\n**틀린 선지**\n- 브레이크액이 끓지 않게 한다: 베이퍼 록은 엔진 브레이크와 브레이크액 관리로 막습니다.\n- 주차할 때 차가 밀리지 않게 한다: 주차 브레이크의 역할입니다.\n- 브레이크 패드가 닳지 않게 한다: ABS 는 패드 마모와 관계가 없습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "ABS"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-hydraulic-brake-0010",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "chassis",
+    "chapterId": "hydraulic-brake",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "제동력 시험기로 앞축을 측정했더니 축중 800kgf, 왼쪽 제동력 300kgf, 오른쪽 제동력 250kgf 였다. 축중에 대한 좌우 제동력의 편차는 몇 %인가?",
+    "choices": [
+      "6.25%",
+      "68.75%",
+      "20%",
+      "16.7%"
+    ],
+    "answer": 1,
+    "oneLineConcept": "좌우 편차(%) = (큰 쪽 − 작은 쪽) ÷ 축중 × 100",
+    "explanation": "좌우 제동력의 차이가 크면 브레이크를 밟을 때 차가 한쪽으로 쏠립니다. 편차는 축중을 기준으로 계산합니다.\n\n1. 좌우 차이 = 300 − 250 = 50kgf\n2. 편차 = 50 ÷ 800 × 100 = 6.25%\n3. 검사 기준(축중의 8% 이하)보다 작으므로 합격입니다. 앞축 제동력 합(550 ÷ 800 = 68.75%)도 기준(50% 이상)을 넘습니다.\n\n**틀린 선지**\n- 68.75%: 좌우 제동력의 합을 축중으로 나눈 값으로, 편차가 아닙니다.\n- 16.7%: 차이를 왼쪽 제동력(300)으로 나눈 값입니다. 기준은 축중입니다.\n- 20%: 차이를 오른쪽 제동력(250)으로 나눈 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "제동력",
+      "계산",
+      "검사"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-hydraulic-brake-0011",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "chassis",
+    "chapterId": "hydraulic-brake",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "드럼 브레이크와 비교한 디스크 브레이크의 설명으로 옳지 않은 것은?",
+    "choices": [
+      "물에 젖어도 빨리 원래 제동력을 되찾는다",
+      "디스크가 밖에 드러나 열을 잘 식히므로 페이드가 적다",
+      "자기 작동 작용이 커서 작은 페달 힘으로도 잘 선다",
+      "패드 면적이 작아 큰 힘이 필요하므로 배력 장치를 함께 쓴다"
+    ],
+    "answer": 3,
+    "oneLineConcept": "디스크 = 방열 좋음·페이드 적음·자기 작동 없음(배력 장치 필요)",
+    "explanation": "드럼 브레이크는 회전하는 드럼이 슈를 더 세게 끌어당기는 자기 작동 작용이 있어 적은 힘으로도 큰 제동력이 납니다. 디스크 브레이크에는 이 작용이 없어 큰 힘이 필요하고, 그래서 배력 장치를 함께 씁니다. 대신 열을 잘 식히고 물이 잘 털려 성능이 안정적입니다.\n\n**틀린 선지**\n- 디스크가 밖에 드러나 열을 잘 식히므로 페이드가 적다: 디스크 브레이크의 옳은 장점입니다.\n- 패드 면적이 작아 큰 힘이 필요하므로 배력 장치를 함께 쓴다: 디스크 브레이크의 옳은 특징입니다.\n- 물에 젖어도 빨리 원래 제동력을 되찾는다: 디스크가 돌며 물을 털어 내므로 옳은 설명입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "디스크브레이크"
+    ],
+    "levelLock": true
+  }
+]

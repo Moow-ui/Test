@@ -1,0 +1,361 @@
+[
+  {
+    "id": "automobile-maintenance-craftsman-wheel-alignment-0001",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "chassis",
+    "chapterId": "wheel-alignment",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "휠 얼라인먼트의 캠버를 바르게 설명한 것은?",
+    "choices": [
+      "차를 위에서 볼 때 양쪽 바퀴의 앞쪽이 뒤쪽보다 좁은 상태",
+      "차를 옆에서 볼 때 조향축이 앞뒤로 기울어진 각도",
+      "차를 앞에서 볼 때 킹핀(조향축)이 안쪽으로 기울어진 각도",
+      "차를 앞에서 볼 때 바퀴의 위쪽이 바깥쪽이나 안쪽으로 기울어진 각도"
+    ],
+    "answer": 4,
+    "oneLineConcept": "캠버 = 앞에서 본 바퀴 기울기 / 캐스터 = 옆에서 본 조향축 기울기 / 토 = 위에서 본 벌어짐",
+    "explanation": "휠 얼라인먼트는 보는 방향으로 구분하면 외우기 쉽습니다.\n\n- 앞에서 볼 때 바퀴 기울기: 캠버 (위가 바깥쪽이면 정(+) 캠버)\n- 앞에서 볼 때 조향축 기울기: 킹핀 경사각\n- 옆에서 볼 때 조향축 기울기: 캐스터\n- 위에서 볼 때 앞쪽이 좁음: 토인\n\n**틀린 선지**\n- 차를 옆에서 볼 때 조향축이 앞뒤로 기울어진 각도: 캐스터의 설명입니다.\n- 차를 위에서 볼 때 양쪽 바퀴의 앞쪽이 뒤쪽보다 좁은 상태: 토인의 설명입니다.\n- 차를 앞에서 볼 때 킹핀(조향축)이 안쪽으로 기울어진 각도: 킹핀 경사각의 설명입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "캠버",
+      "얼라인먼트"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-wheel-alignment-0002",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "chassis",
+    "chapterId": "wheel-alignment",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "휠 얼라인먼트에서 캐스터가 하는 주된 역할은?",
+    "choices": [
+      "타이어의 공기압을 일정하게 유지한다",
+      "제동할 때 제동력을 키운다",
+      "직진성을 좋게 하고 핸들을 돌린 뒤 제자리로 돌아오게 한다",
+      "캠버 때문에 바퀴가 바깥으로 벌어지는 것을 막는다"
+    ],
+    "answer": 3,
+    "oneLineConcept": "캐스터 = 직진성·복원성",
+    "explanation": "캐스터는 옆에서 볼 때 조향축이 뒤로 기울어진 각입니다. 조향축 연장선이 타이어 접지점보다 앞에서 땅에 닿으므로, 바퀴가 마트 카트 바퀴처럼 뒤에서 끌려가며 곧게 서려고 합니다. 그래서 직진성이 좋아지고 핸들을 놓으면 제자리로 돌아옵니다.\n\n**틀린 선지**\n- 캠버 때문에 바퀴가 바깥으로 벌어지는 것을 막는다: 토인의 역할입니다.\n- 제동할 때 제동력을 키운다: 얼라인먼트는 제동력과 직접 관계가 없습니다.\n- 타이어의 공기압을 일정하게 유지한다: 공기압은 얼라인먼트와 따로 관리합니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "캐스터",
+      "얼라인먼트"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-wheel-alignment-0003",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "chassis",
+    "chapterId": "wheel-alignment",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "토인을 조정할 때 주로 길이를 바꾸는 부품은?",
+    "choices": [
+      "쇼크업소버",
+      "타이로드",
+      "코일 스프링",
+      "스태빌라이저"
+    ],
+    "answer": 2,
+    "oneLineConcept": "토인 조정 = 타이로드 길이",
+    "explanation": "토인은 위에서 볼 때 양쪽 앞바퀴의 앞쪽 간격이 뒤쪽보다 좁은 상태입니다. 좌우 바퀴의 너클을 잇는 타이로드의 길이를 늘이거나 줄이면 바퀴 앞쪽이 벌어지거나 좁아지므로 토 값을 맞출 수 있습니다.\n\n**틀린 선지**\n- 쇼크업소버: 쇼크업소버는 진동을 줄이는 현가 부품입니다.\n- 코일 스프링: 코일 스프링은 차 무게를 받치는 부품입니다.\n- 스태빌라이저: 스태빌라이저는 선회할 때 차체 기울기를 줄이는 부품입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "토인",
+      "타이로드"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-wheel-alignment-0004",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "chassis",
+    "chapterId": "wheel-alignment",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "앞바퀴에 토인을 두는 주된 이유는?",
+    "choices": [
+      "캠버 때문에 바퀴가 바깥으로 벌어지며 구르는 것을 막아 타이어 옆미끄럼과 마모를 줄인다",
+      "핸들을 놓았을 때 바퀴가 제자리로 돌아오게 한다",
+      "제동할 때 차의 앞쪽이 내려앉는 것을 막는다",
+      "핸들 조작력을 가볍게 하고 앞차축이 휘는 것을 막는다"
+    ],
+    "answer": 1,
+    "oneLineConcept": "토인 = 캠버에 의한 벌어짐 방지, 타이어 마모 방지",
+    "explanation": "정(+) 캠버가 있는 바퀴는 원뿔이 구르듯 바깥쪽으로 벌어지며 굴러가려 합니다. 바퀴 앞쪽을 조금 안으로 모아(토인) 두면 이 벌어짐이 상쇄되어 바퀴가 똑바로 구르고, 타이어가 옆으로 끌리며 닳는 것을 줄입니다.\n\n**틀린 선지**\n- 핸들을 놓았을 때 바퀴가 제자리로 돌아오게 한다: 캐스터(와 킹핀 경사각)의 복원 작용입니다.\n- 핸들 조작력을 가볍게 하고 앞차축이 휘는 것을 막는다: 캠버의 역할입니다.\n- 제동할 때 차의 앞쪽이 내려앉는 것을 막는다: 얼라인먼트가 아니라 현가장치가 맡는 일입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "토인",
+      "얼라인먼트"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-wheel-alignment-0005",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "chassis",
+    "chapterId": "wheel-alignment",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "타이어 공기압이 규정보다 낮은 상태로 계속 달렸을 때 주로 닳는 부분은?",
+    "choices": [
+      "트레드 한쪽 가장자리만",
+      "트레드 양쪽 가장자리(숄더)",
+      "트레드 가운데",
+      "트레드 전체가 고르게"
+    ],
+    "answer": 2,
+    "oneLineConcept": "공기압 부족 = 양쪽 숄더 마모, 과다 = 가운데 마모",
+    "explanation": "공기압이 낮으면 타이어 가운데가 눌려 들어가고 양쪽 가장자리가 땅을 세게 누르므로 숄더가 빨리 닳습니다. 반대로 공기압이 높으면 가운데가 볼록해져 가운데만 닳습니다. 한쪽 가장자리만 닳으면 캠버·토 같은 얼라인먼트 이상을 의심합니다.\n\n**틀린 선지**\n- 트레드 가운데: 공기압이 너무 높을 때의 마모입니다.\n- 트레드 한쪽 가장자리만: 얼라인먼트(캠버·토) 이상일 때의 마모입니다.\n- 트레드 전체가 고르게: 공기압이 맞을 때 고르게 닳습니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "타이어",
+      "공기압"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-wheel-alignment-0006",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "chassis",
+    "chapterId": "wheel-alignment",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "타이어 옆면에 '205/65 R15' 라고 적혀 있다. 65 가 뜻하는 것은?",
+    "choices": [
+      "타이어가 견딜 수 있는 하중 지수",
+      "타이어 폭 65mm",
+      "편평비(타이어 높이가 폭의 65%)",
+      "림 지름 65cm"
+    ],
+    "answer": 3,
+    "oneLineConcept": "205/65 R15 = 폭 205mm / 편평비 65% / 레이디얼 / 림 15인치",
+    "explanation": "타이어 표기는 앞에서부터 읽습니다.\n\n- 205: 타이어 폭(mm)\n- 65: 편평비 = 타이어 높이 ÷ 폭 × 100 (높이가 폭의 65%)\n- R: 레이디얼 구조\n- 15: 림(휠) 지름(인치)\n\n편평비가 작을수록 옆면이 낮은 납작한 타이어입니다.\n\n**틀린 선지**\n- 타이어 폭 65mm: 폭은 앞의 205mm 입니다.\n- 림 지름 65cm: 림 지름은 뒤의 15 이고 단위는 인치입니다.\n- 타이어가 견딜 수 있는 하중 지수: 하중 지수는 크기 표기 뒤에 따로 붙는 숫자입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "타이어표기",
+      "편평비"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-wheel-alignment-0007",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "chassis",
+    "chapterId": "wheel-alignment",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "바퀴의 정적 불평형(위아래 무게 균형이 맞지 않음)이 있을 때 나타나는 현상은?",
+    "choices": [
+      "핸들이 한쪽으로 쏠리는 현상",
+      "바퀴가 좌우로 흔들리는 시미",
+      "바퀴가 위아래로 튀는 트램핑",
+      "물 위에서 미끄러지는 수막현상"
+    ],
+    "answer": 3,
+    "oneLineConcept": "정적 불평형 → 트램핑(상하), 동적 불평형 → 시미(좌우)",
+    "explanation": "바퀴의 한 곳이 무거우면 돌 때마다 그 무게가 위아래로 바퀴를 흔들어 통통 튀는 트램핑이 생깁니다(정적 불평형). 바퀴 안쪽과 바깥쪽의 무게 균형이 맞지 않으면 바퀴가 좌우로 흔들리는 시미가 생깁니다(동적 불평형). 휠 밸런서로 납 조각(밸런스 웨이트)을 붙여 맞춥니다.\n\n**틀린 선지**\n- 바퀴가 좌우로 흔들리는 시미: 동적 불평형일 때의 현상입니다.\n- 핸들이 한쪽으로 쏠리는 현상: 공기압 차이나 얼라인먼트 불량 때문에 생깁니다.\n- 물 위에서 미끄러지는 수막현상: 물이 고인 길을 빠르게 달릴 때 생기는 현상입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "휠밸런스"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-wheel-alignment-0008",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "chassis",
+    "chapterId": "wheel-alignment",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "고속 주행 때 타이어 접지면 뒤쪽이 물결처럼 떨리는 스탠딩 웨이브 현상을 막는 방법으로 알맞은 것은?",
+    "choices": [
+      "타이어 공기압을 규정보다 낮춘다",
+      "속도를 더 높여 빨리 지나간다",
+      "편평비가 큰 타이어로 바꾼다",
+      "타이어 공기압을 규정보다 조금 높이고 과속하지 않는다"
+    ],
+    "answer": 4,
+    "oneLineConcept": "스탠딩 웨이브 = 고속 + 공기압 부족 → 공기압 조금 높이고 감속",
+    "explanation": "타이어가 빨리 돌면 눌렸던 부분이 원래 모양으로 돌아오기 전에 다시 땅에 닿아 물결 모양으로 떨립니다. 이 상태가 계속되면 타이어가 뜨거워져 터질 수 있습니다. 공기압을 규정보다 조금(10~15% 정도) 높이고 속도를 줄이면 막을 수 있습니다.\n\n**틀린 선지**\n- 타이어 공기압을 규정보다 낮춘다: 공기압이 낮을수록 타이어가 더 많이 눌려 잘 생깁니다.\n- 편평비가 큰 타이어로 바꾼다: 편평비가 큰(옆면이 높은) 타이어일수록 더 잘 생깁니다.\n- 속도를 더 높여 빨리 지나간다: 속도가 빠를수록 더 심해집니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "스탠딩웨이브",
+      "타이어"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-wheel-alignment-0009",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "chassis",
+    "chapterId": "wheel-alignment",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "자동차 및 자동차부품의 성능과 기준에 관한 규칙에서 정한 승용차 타이어 트레드의 최소 깊이는?",
+    "choices": [
+      "1.6mm 이상",
+      "0.8mm 이상",
+      "3.2mm 이상",
+      "5.0mm 이상"
+    ],
+    "answer": 1,
+    "oneLineConcept": "타이어 트레드 깊이 1.6mm 이상 (마모 한계 표시)",
+    "explanation": "타이어 홈(트레드)이 얕아지면 빗길에서 물이 빠지지 않아 미끄러지기 쉽습니다. 규칙은 트레드 깊이를 1.6mm 이상 유지하도록 정하고 있고, 타이어 홈 안의 마모 한계 표시(작은 돌기)가 트레드 면과 같은 높이가 되면 교환할 때입니다.\n\n**틀린 선지**\n- 0.8mm 이상: 기준보다 얕은 값입니다.\n- 3.2mm 이상: 기준의 2배 값입니다.\n- 5.0mm 이상: 새 타이어에 가까운 깊이로, 법정 최소 기준이 아닙니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "타이어",
+      "법규"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-wheel-alignment-0010",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "chassis",
+    "chapterId": "wheel-alignment",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "빗길 고속 주행 때 타이어가 물 위에 떠서 핸들과 브레이크가 듣지 않는 수막현상을 막는 방법으로 알맞은 것은?",
+    "choices": [
+      "타이어 공기압을 낮춘다",
+      "속도를 높여 물웅덩이를 빨리 지나간다",
+      "트레드가 닳아 매끈한 타이어를 쓴다",
+      "속도를 줄이고 트레드 홈이 충분히 남은 타이어를 쓴다"
+    ],
+    "answer": 4,
+    "oneLineConcept": "수막현상 방지: 감속, 트레드 깊이 확보, 공기압 조금 높임",
+    "explanation": "수막현상은 타이어와 노면 사이의 물이 빠져나가지 못해 타이어가 물 위에 뜨는 현상입니다. 트레드 홈이 물을 빼내는 길이므로 홈이 충분한 타이어를 쓰고, 속도를 줄여 물이 빠질 시간을 줍니다. 공기압은 조금 높이는 편이 좋습니다.\n\n**틀린 선지**\n- 타이어 공기압을 낮춘다: 공기압이 낮으면 접지면이 넓고 물렁해져 더 잘 뜹니다.\n- 트레드가 닳아 매끈한 타이어를 쓴다: 홈이 없으면 물을 빼낼 수 없어 더 잘 뜹니다.\n- 속도를 높여 물웅덩이를 빨리 지나간다: 속도가 빠를수록 더 잘 생깁니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "수막현상",
+      "타이어"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  }
+]

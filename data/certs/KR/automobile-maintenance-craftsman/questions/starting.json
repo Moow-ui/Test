@@ -1,0 +1,349 @@
+[
+  {
+    "id": "automobile-maintenance-craftsman-starting-0001",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "electrical",
+    "chapterId": "starting",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "자동차 시동 전동기로 주로 쓰는 전동기는?",
+    "choices": [
+      "직류 분권식 전동기",
+      "직류 직권식 전동기",
+      "교류 유도 전동기",
+      "직류 복권식 전동기"
+    ],
+    "answer": 2,
+    "oneLineConcept": "시동 전동기 = 직류 직권식 (기동 회전력이 큼)",
+    "explanation": "엔진을 처음 돌릴 때는 큰 힘이 필요합니다. 직권식은 전기자 코일과 계자 코일이 직렬로 이어져 있어, 회전 속도가 낮을 때 큰 전류가 흘러 회전력이 매우 큽니다. 그래서 시동 전동기에 알맞습니다.\n\n**틀린 선지**\n- 직류 분권식 전동기: 분권식은 회전 속도가 일정한 편이라 큰 기동 회전력이 필요한 시동 전동기에 맞지 않습니다.\n- 직류 복권식 전동기: 복권식은 와이퍼 모터처럼 일정한 속도가 필요한 곳에 씁니다.\n- 교류 유도 전동기: 자동차 배터리는 직류이므로 교류 전동기를 시동 전동기로 쓰지 않습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "시동전동기"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-starting-0002",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "electrical",
+    "chapterId": "starting",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "시동 전동기처럼 전류가 흐르는 도체가 자기장 속에서 힘을 받아 움직이는 방향을 알아내는 법칙은?",
+    "choices": [
+      "플레밍의 왼손 법칙",
+      "파스칼의 원리",
+      "렌츠의 법칙",
+      "플레밍의 오른손 법칙"
+    ],
+    "answer": 1,
+    "oneLineConcept": "전동기 = 플레밍 왼손, 발전기 = 플레밍 오른손",
+    "explanation": "플레밍의 왼손 법칙은 엄지·검지·중지를 서로 직각으로 펴서 검지를 자기장 방향, 중지를 전류 방향으로 하면 엄지가 힘의 방향이 된다는 법칙입니다. 전기를 넣어 힘을 얻는 전동기에 씁니다.\n\n**틀린 선지**\n- 플레밍의 오른손 법칙: 도체를 움직여 전기를 얻는 발전기에 쓰는 법칙입니다.\n- 렌츠의 법칙: 유도 전류는 자속 변화를 방해하는 방향으로 흐른다는 법칙입니다.\n- 파스칼의 원리: 액체의 압력 전달에 관한 원리입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "플레밍",
+      "전동기"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-starting-0003",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "electrical",
+    "chapterId": "starting",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "시동 전동기의 오버러닝 클러치가 하는 일은?",
+    "choices": [
+      "계자 코일에 자기장을 만든다",
+      "전기자 코일의 전류 방향을 바꾼다",
+      "엔진이 시동된 뒤 엔진 회전에 의해 시동 전동기가 빠르게 돌려지는 것을 막는다",
+      "피니언을 링 기어 쪽으로 밀어 물리게 한다"
+    ],
+    "answer": 3,
+    "oneLineConcept": "오버러닝 클러치 = 엔진 → 전동기 역구동 방지",
+    "explanation": "시동이 걸리면 엔진이 시동 전동기보다 훨씬 빨리 돕니다. 이때 피니언이 링 기어에 물려 있으면 엔진이 전동기를 거꾸로 빠르게 돌려 전기자가 망가질 수 있습니다. 오버러닝 클러치는 한 방향으로만 힘을 전해 엔진 쪽 회전이 전동기로 넘어오지 않게 합니다.\n\n**틀린 선지**\n- 피니언을 링 기어 쪽으로 밀어 물리게 한다: 솔레노이드 스위치(시프트 레버)의 역할입니다.\n- 전기자 코일의 전류 방향을 바꾼다: 정류자와 브러시의 역할입니다.\n- 계자 코일에 자기장을 만든다: 계자 코일 자체의 역할입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "오버러닝클러치"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-starting-0004",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "electrical",
+    "chapterId": "starting",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "시동 전동기 솔레노이드 스위치의 풀인 코일과 홀드인 코일에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "처음에는 두 코일이 함께 플런저를 당기고, 접점이 붙은 뒤에는 홀드인 코일만 플런저를 붙잡아 둔다",
+      "홀드인 코일은 배터리를 충전하는 코일이다",
+      "풀인 코일만 처음부터 끝까지 플런저를 당긴다",
+      "두 코일이 번갈아 가며 전기자를 돌린다"
+    ],
+    "answer": 1,
+    "oneLineConcept": "풀인 + 홀드인 → 당김, 접점 붙은 뒤 홀드인만 유지",
+    "explanation": "시동 스위치를 돌리면 풀인 코일과 홀드인 코일에 함께 전류가 흘러 강한 힘으로 플런저를 당겨 피니언을 밀어 넣고 주 접점을 붙입니다. 접점이 붙으면 풀인 코일 양 끝 전압이 같아져 전류가 거의 흐르지 않고, 홀드인 코일만으로 플런저를 붙잡아 둡니다.\n\n**틀린 선지**\n- 풀인 코일만 처음부터 끝까지 플런저를 당긴다: 접점이 붙은 뒤에는 풀인 코일에 전류가 거의 흐르지 않습니다.\n- 홀드인 코일은 배터리를 충전하는 코일이다: 충전은 발전기가 맡습니다.\n- 두 코일이 번갈아 가며 전기자를 돌린다: 전기자를 돌리는 것은 주 접점을 지나 흐르는 큰 전류입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "솔레노이드스위치"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-starting-0005",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "electrical",
+    "chapterId": "starting",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "12V 배터리를 쓰는 차에서 크랭킹 중 배터리 전압을 재었다. 대체로 양호하다고 보는 기준은?",
+    "choices": [
+      "약 6V 이상",
+      "약 9.6V 이상",
+      "약 15V 이상",
+      "12.6V 이상을 계속 유지"
+    ],
+    "answer": 2,
+    "oneLineConcept": "크랭킹 중 전압 ≈ 9.6V 이상이면 대체로 양호",
+    "explanation": "시동 전동기는 큰 전류를 쓰므로 크랭킹하는 동안 배터리 전압이 내려갑니다. 12V 배터리는 크랭킹 중에도 약 9.6V 이상을 유지하면 대체로 양호하다고 봅니다. 그보다 크게 떨어지면 배터리 충전 상태나 수명, 케이블 접촉을 점검합니다.\n\n**틀린 선지**\n- 12.6V 이상을 계속 유지: 12.6V 는 크랭킹하지 않을 때의 완전 충전 전압이며, 크랭킹 중에는 내려가는 것이 정상입니다.\n- 약 6V 이상: 6V 까지 떨어지면 배터리가 매우 약하거나 회로에 큰 문제가 있는 것입니다.\n- 약 15V 이상: 배터리 전압이 크랭킹 중 15V 까지 오를 수는 없습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "크랭킹",
+      "배터리"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-starting-0006",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "electrical",
+    "chapterId": "starting",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "시동 전동기를 작동할 때의 주의 사항으로 알맞은 것은?",
+    "choices": [
+      "시동이 안 걸리면 배터리 케이블을 뺐다 꽂으며 돌린다",
+      "엔진이 돌고 있을 때도 시동 스위치를 다시 돌려 본다",
+      "시동이 걸릴 때까지 계속 돌린다",
+      "한 번에 오래(약 10초 넘게) 돌리지 말고, 시동이 안 걸리면 잠시 쉬었다가 다시 한다"
+    ],
+    "answer": 4,
+    "oneLineConcept": "시동 전동기는 짧게, 쉬었다가 다시",
+    "explanation": "시동 전동기는 아주 큰 전류를 쓰므로 오래 돌리면 코일이 뜨거워져 상하고 배터리도 빨리 닳습니다. 한 번에 짧게 돌리고, 걸리지 않으면 잠시 쉬었다가 다시 합니다. 엔진이 돌고 있을 때 스위치를 다시 돌리면 피니언과 링 기어가 상합니다.\n\n**틀린 선지**\n- 시동이 걸릴 때까지 계속 돌린다: 오래 돌리면 전동기가 과열되어 상합니다.\n- 엔진이 돌고 있을 때도 시동 스위치를 다시 돌려 본다: 돌고 있는 링 기어에 피니언이 물리며 기어가 상합니다.\n- 시동이 안 걸리면 배터리 케이블을 뺐다 꽂으며 돌린다: 케이블을 뺐다 꽂으면 불꽃이 튀고 전기 장치가 상할 수 있습니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "시동전동기",
+      "안전"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-starting-0007",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "electrical",
+    "chapterId": "starting",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "시동 전동기에서 브러시와 함께 전기자 코일에 흐르는 전류의 방향을 바꿔 주어 전기자가 한 방향으로 계속 돌게 하는 부품은?",
+    "choices": [
+      "오버러닝 클러치",
+      "정류자",
+      "계자 코일",
+      "피니언"
+    ],
+    "answer": 2,
+    "oneLineConcept": "정류자 + 브러시 = 전기자 전류 방향 전환",
+    "explanation": "전기자 코일이 반 바퀴 돌 때마다 전류 방향이 바뀌어야 같은 방향으로 계속 힘을 받습니다. 정류자는 구리 조각을 둥글게 붙인 부분으로, 브러시와 닿는 조각이 바뀌며 전류 방향을 바꿔 줍니다.\n\n**틀린 선지**\n- 계자 코일: 계자 코일은 자기장을 만드는 코일입니다.\n- 오버러닝 클러치: 오버러닝 클러치는 엔진이 전동기를 돌리지 못하게 합니다.\n- 피니언: 피니언은 링 기어에 물려 엔진을 돌리는 작은 기어입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "정류자",
+      "시동전동기"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-starting-0008",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "electrical",
+    "chapterId": "starting",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "이모빌라이저(도난 방지 시동 장치)에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "도어 잠금만 담당하고 시동과는 관계가 없다",
+      "키 안의 트랜스폰더 칩 암호가 차에 등록된 것과 맞아야 시동이 걸린다",
+      "키의 모양만 맞으면 누구나 시동을 걸 수 있다",
+      "엔진 오일이 부족하면 시동을 막는 장치이다"
+    ],
+    "answer": 2,
+    "oneLineConcept": "이모빌라이저 = 키 칩 암호 확인 후 시동 허용",
+    "explanation": "이모빌라이저는 키에 들어 있는 작은 칩(트랜스폰더)과 차의 제어기가 무선으로 암호를 주고받아, 등록된 키일 때만 연료 분사와 점화를 허용합니다. 키를 복사해 모양만 같아도 암호가 맞지 않으면 시동이 걸리지 않으므로, 새 키는 진단 장비로 등록해야 합니다.\n\n**틀린 선지**\n- 키의 모양만 맞으면 누구나 시동을 걸 수 있다: 모양만 같은 복사 키로는 시동을 걸 수 없게 하는 장치입니다.\n- 도어 잠금만 담당하고 시동과는 관계가 없다: 시동을 허용하거나 막는 장치입니다.\n- 엔진 오일이 부족하면 시동을 막는 장치이다: 오일 부족은 경고등으로 알릴 뿐 이모빌라이저와 관계가 없습니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "이모빌라이저",
+      "유무선통신"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-starting-0009",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "electrical",
+    "chapterId": "starting",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "시동 스위치를 돌리면 '딸깍' 소리만 나고 엔진이 돌지 않는다. 가장 먼저 점검할 것은?",
+    "choices": [
+      "연료 탱크의 연료 양",
+      "산소 센서 신호",
+      "배터리의 충전 상태와 배터리 단자의 접촉 상태",
+      "점화플러그 간극"
+    ],
+    "answer": 3,
+    "oneLineConcept": "딸깍 소리만 남 → 배터리 방전·단자 접촉 불량부터",
+    "explanation": "'딸깍' 소리는 솔레노이드 스위치가 움직였다는 뜻입니다. 그런데 엔진을 돌릴 큰 전류가 흐르지 못하면 전동기가 돌지 않습니다. 배터리가 방전되었거나 단자가 헐겁고 부식되어 큰 전류가 흐를 때 전압이 크게 떨어지는 경우가 가장 많습니다.\n\n**틀린 선지**\n- 점화플러그 간극: 점화플러그는 크랭킹이 된 뒤 시동이 걸리는지에 관계합니다.\n- 연료 탱크의 연료 양: 연료가 없어도 엔진은 크랭킹(돌기)은 됩니다.\n- 산소 센서 신호: 산소 센서는 시동 뒤 혼합비 조절에 쓰입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "시동불량",
+      "고장진단"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-starting-0010",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "electrical",
+    "chapterId": "starting",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "시동장치를 점검할 때의 방법으로 옳지 않은 것은?",
+    "choices": [
+      "크랭킹 전류 시험은 오래 돌릴수록 정확하므로 30초 이상 계속 크랭킹한다",
+      "크랭킹 시험 중 시동이 걸리지 않도록 점화나 연료 공급을 차단한다",
+      "시험 전에 배터리 충전 상태를 먼저 확인한다",
+      "시동 전동기를 떼어 내기 전에 배터리 (−) 케이블을 분리한다"
+    ],
+    "answer": 1,
+    "oneLineConcept": "크랭킹 시험은 짧게(약 10~15초 이내)",
+    "explanation": "크랭킹 전류·전압 시험은 짧은 시간 안에 값을 읽습니다. 30초 넘게 계속 돌리면 전동기가 과열되고 배터리가 크게 방전되어 오히려 정확한 값을 얻을 수 없습니다.\n\n**틀린 선지**\n- 크랭킹 시험 중 시동이 걸리지 않도록 점화나 연료 공급을 차단한다: 시험 중 엔진이 시동되면 정확한 값을 얻을 수 없으므로 옳은 방법입니다.\n- 시험 전에 배터리 충전 상태를 먼저 확인한다: 배터리가 약하면 전동기가 정상이어도 값이 나쁘게 나오므로 옳은 방법입니다.\n- 시동 전동기를 떼어 내기 전에 배터리 (−) 케이블을 분리한다: 단락 사고를 막는 옳은 방법입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "크랭킹시험",
+      "안전"
+    ],
+    "levelLock": true
+  }
+]

@@ -1,0 +1,346 @@
+[
+  {
+    "id": "automobile-maintenance-craftsman-suspension-0001",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "chassis",
+    "chapterId": "suspension",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "현가장치에서 쇼크업소버의 역할은?",
+    "choices": [
+      "선회할 때 차체가 좌우로 기우는 것을 줄인다",
+      "차의 무게를 받쳐 준다",
+      "바퀴의 방향을 바꾼다",
+      "스프링의 진동을 빨리 줄여 승차감과 바퀴의 접지력을 좋게 한다"
+    ],
+    "answer": 4,
+    "oneLineConcept": "쇼크업소버 = 스프링 진동 감쇠",
+    "explanation": "스프링은 충격을 받으면 한동안 출렁입니다. 쇼크업소버는 안의 오일이 작은 구멍을 지나며 생기는 저항으로 이 출렁임을 빨리 멈추게 합니다. 그래서 차체가 덜 출렁이고 바퀴가 노면에서 덜 뜹니다.\n\n**틀린 선지**\n- 차의 무게를 받쳐 준다: 차 무게를 받치는 것은 스프링입니다.\n- 선회할 때 차체가 좌우로 기우는 것을 줄인다: 스태빌라이저의 역할입니다.\n- 바퀴의 방향을 바꾼다: 조향장치의 역할입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "쇼크업소버"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-suspension-0002",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "chassis",
+    "chapterId": "suspension",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "스태빌라이저(안티 롤 바)의 역할은?",
+    "choices": [
+      "직진할 때 핸들이 똑바로 서게 한다",
+      "차체가 위아래로 출렁이는 것을 줄인다",
+      "제동할 때 차의 앞쪽이 숙여지는 것을 막는다",
+      "선회할 때 차체가 좌우로 기우는 롤링을 줄인다"
+    ],
+    "answer": 4,
+    "oneLineConcept": "스태빌라이저 = 롤링(좌우 기울기) 감소",
+    "explanation": "스태빌라이저는 좌우 현가장치를 잇는 비틀림 막대입니다. 선회할 때 한쪽 바퀴만 눌려 올라가면 막대가 비틀리며 반대쪽도 함께 누르려 하므로 차체가 바깥쪽으로 크게 기울지 않습니다.\n\n**틀린 선지**\n- 차체가 위아래로 출렁이는 것을 줄인다: 위아래 출렁임은 쇼크업소버가 줄입니다.\n- 제동할 때 차의 앞쪽이 숙여지는 것을 막는다: 앞쪽 숙임(노스 다이브)은 현가 구조와 전자제어 현가가 맡습니다.\n- 직진할 때 핸들이 똑바로 서게 한다: 직진성은 캐스터 등 얼라인먼트와 관계있습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "스태빌라이저"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-suspension-0003",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "chassis",
+    "chapterId": "suspension",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "스프링 위 질량의 진동 가운데 차체 앞뒤가 번갈아 오르내리는(가로축을 중심으로 회전하는) 진동은?",
+    "choices": [
+      "피칭",
+      "요잉",
+      "롤링",
+      "바운싱"
+    ],
+    "answer": 1,
+    "oneLineConcept": "바운싱 = 상하, 피칭 = 앞뒤 끄덕임, 롤링 = 좌우 기울기, 요잉 = 수평 회전",
+    "explanation": "차체의 진동은 어느 축을 중심으로 움직이느냐로 나눕니다.\n\n- 바운싱: 차체 전체가 위아래로 평행하게 움직임\n- 피칭: 가로축(좌우로 뻗은 축) 중심, 앞뒤가 번갈아 오르내림\n- 롤링: 세로축(앞뒤로 뻗은 축) 중심, 좌우로 기울어짐\n- 요잉: 수직축 중심, 위에서 볼 때 좌우로 돎\n\n**틀린 선지**\n- 롤링: 앞뒤로 뻗은 축을 중심으로 좌우로 기울어지는 진동입니다.\n- 요잉: 수직축을 중심으로 차가 좌우로 도는 진동입니다.\n- 바운싱: 차체 전체가 위아래로 움직이는 진동입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "진동",
+      "피칭"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-suspension-0004",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "chassis",
+    "chapterId": "suspension",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "차체 전체가 위아래로 평행하게 오르내리는 진동은?",
+    "choices": [
+      "요잉",
+      "롤링",
+      "피칭",
+      "바운싱"
+    ],
+    "answer": 4,
+    "oneLineConcept": "바운싱 = 차체 전체 상하 진동",
+    "explanation": "바운싱은 차체가 기울지 않고 통째로 위아래로 움직이는 진동입니다. 울퉁불퉁한 길에서 앞뒤 바퀴가 같은 충격을 받을 때 잘 생기며, 쇼크업소버가 이 진동을 빨리 줄여 줍니다.\n\n**틀린 선지**\n- 피칭: 앞뒤가 번갈아 오르내리는 진동입니다.\n- 롤링: 좌우로 기울어지는 진동입니다.\n- 요잉: 위에서 볼 때 좌우로 도는 진동입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "진동",
+      "바운싱"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-suspension-0005",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "chassis",
+    "chapterId": "suspension",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "맥퍼슨형 현가장치의 특징으로 알맞은 것은?",
+    "choices": [
+      "판스프링을 쓰는 일체 차축 방식이다",
+      "위아래 두 개의 컨트롤 암으로 바퀴를 지지한다",
+      "주로 대형 트럭의 뒤차축에 쓴다",
+      "구조가 간단하고 부품이 적어 엔진룸을 넓게 쓸 수 있다"
+    ],
+    "answer": 4,
+    "oneLineConcept": "맥퍼슨 = 쇼크업소버 일체 스트럿, 구조 간단·공간 넓음",
+    "explanation": "맥퍼슨형은 쇼크업소버를 몸통(스트럿)으로 삼고 그 둘레에 코일 스프링을 끼워, 아래쪽 컨트롤 암 하나와 함께 바퀴를 지지합니다. 부품이 적고 가벼우며 위쪽 컨트롤 암이 없어 엔진룸이 넓어지므로 앞바퀴 굴림 승용차에 많이 씁니다.\n\n**틀린 선지**\n- 위아래 두 개의 컨트롤 암으로 바퀴를 지지한다: 위시본형의 특징입니다.\n- 판스프링을 쓰는 일체 차축 방식이다: 맥퍼슨형은 독립 현가 방식입니다.\n- 주로 대형 트럭의 뒤차축에 쓴다: 대형 트럭 뒤차축에는 주로 판스프링 일체 차축을 씁니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "맥퍼슨"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-suspension-0006",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "chassis",
+    "chapterId": "suspension",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "일체 차축식과 비교한 독립 현가 방식의 장점은?",
+    "choices": [
+      "바퀴가 움직여도 얼라인먼트가 거의 바뀌지 않는다",
+      "스프링 아래 질량이 작아 승차감과 바퀴의 접지성이 좋다",
+      "구조가 간단하고 값이 싸다",
+      "무거운 짐을 싣는 대형 트럭에 알맞다"
+    ],
+    "answer": 2,
+    "oneLineConcept": "독립 현가 = 스프링 아래 질량↓ → 승차감·접지성↑",
+    "explanation": "독립 현가는 좌우 바퀴가 따로 움직여 한쪽 바퀴의 충격이 반대쪽에 덜 전해집니다. 바퀴 쪽에 매달린 무게(스프링 아래 질량)도 가벼워 노면을 잘 따라가므로 승차감과 접지성이 좋습니다. 대신 구조가 복잡하고, 바퀴가 움직일 때 얼라인먼트가 조금씩 바뀝니다.\n\n**틀린 선지**\n- 구조가 간단하고 값이 싸다: 일체 차축식의 장점입니다.\n- 바퀴가 움직여도 얼라인먼트가 거의 바뀌지 않는다: 독립 현가는 바퀴가 움직이며 얼라인먼트가 바뀌기 쉬워 점검이 중요합니다.\n- 무거운 짐을 싣는 대형 트럭에 알맞다: 일체 차축식(판스프링)의 쓰임입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "독립현가"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-suspension-0007",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "chassis",
+    "chapterId": "suspension",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "차의 한쪽 모서리를 세게 눌렀다 놓았더니 차체가 여러 번 출렁이다가 멈췄다. 가장 의심되는 부품은?",
+    "choices": [
+      "스태빌라이저 링크",
+      "브레이크 캘리퍼",
+      "타이로드 엔드",
+      "쇼크업소버"
+    ],
+    "answer": 4,
+    "oneLineConcept": "눌렀다 놓으면 여러 번 출렁임 → 쇼크업소버 감쇠력 저하",
+    "explanation": "쇼크업소버가 정상이면 눌렀다 놓았을 때 한두 번만 움직이고 바로 멈춥니다. 여러 번 출렁인다면 쇼크업소버 안의 오일이 새거나 감쇠력이 약해진 것이므로 오일 누유와 작동 상태를 확인하고 교환합니다.\n\n**틀린 선지**\n- 스태빌라이저 링크: 스태빌라이저 링크가 상하면 선회·요철 때 '딱딱' 소리가 납니다.\n- 타이로드 엔드: 타이로드 엔드는 조향 부품으로 출렁임과 관계없습니다.\n- 브레이크 캘리퍼: 캘리퍼는 제동 부품입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "쇼크업소버",
+      "점검"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-suspension-0008",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "chassis",
+    "chapterId": "suspension",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "스프링 아래 질량이 클 때 나타나는 현상으로 알맞은 것은?",
+    "choices": [
+      "승차감이 좋아지고 접지성이 높아진다",
+      "승차감과 접지성에 아무 영향이 없다",
+      "제동 거리가 짧아진다",
+      "노면의 충격이 차체로 잘 전해져 승차감이 나빠지고 바퀴의 접지성이 떨어진다"
+    ],
+    "answer": 4,
+    "oneLineConcept": "스프링 아래 질량은 가벼울수록 좋다",
+    "explanation": "스프링 아래 질량은 바퀴·브레이크·차축처럼 스프링보다 아래에 매달린 무게입니다. 이것이 무거우면 요철을 만났을 때 바퀴가 크게 튀어 오르고 다시 땅에 닿기까지 시간이 걸려 접지성이 떨어지고, 그 충격이 차체로 전해져 승차감도 나빠집니다.\n\n**틀린 선지**\n- 승차감이 좋아지고 접지성이 높아진다: 거꾸로 설명한 것입니다.\n- 승차감과 접지성에 아무 영향이 없다: 스프링 아래 질량은 승차감과 접지성에 직접 영향을 줍니다.\n- 제동 거리가 짧아진다: 접지성이 떨어지면 오히려 제동에 불리합니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "스프링아래질량"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-suspension-0009",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "chassis",
+    "chapterId": "suspension",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "현가장치 부품을 교환하는 작업으로 옳지 않은 것은?",
+    "choices": [
+      "코일 스프링 압축기 없이 스트럿 위쪽 고정 너트를 풀어 스프링을 분리한다",
+      "쇼크업소버에서 오일이 새는지 확인한다",
+      "부품을 교환한 뒤 휠 얼라인먼트를 점검한다",
+      "차를 들어 올린 뒤에는 안전 스탠드로 받친다"
+    ],
+    "answer": 1,
+    "oneLineConcept": "스트럿 분해는 반드시 스프링 압축기로 스프링을 누른 뒤",
+    "explanation": "스트럿에 끼워진 코일 스프링은 늘 강하게 눌려 있습니다. 압축기 없이 위쪽 너트를 풀면 스프링이 순간적으로 튀어 나가 크게 다칠 수 있습니다. 반드시 스프링 압축기로 스프링을 눌러 힘을 뺀 뒤 너트를 풉니다.\n\n**틀린 선지**\n- 차를 들어 올린 뒤에는 안전 스탠드로 받친다: 차가 내려앉는 사고를 막는 옳은 작업입니다.\n- 부품을 교환한 뒤 휠 얼라인먼트를 점검한다: 현가 부품을 바꾸면 얼라인먼트가 바뀔 수 있어 옳은 작업입니다.\n- 쇼크업소버에서 오일이 새는지 확인한다: 누유는 쇼크업소버 불량의 신호라 옳은 점검입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "안전",
+      "스트럿"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "automobile-maintenance-craftsman-suspension-0010",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "chassis",
+    "chapterId": "suspension",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "판스프링(리프 스프링)을 가장 많이 쓰는 곳은?",
+    "choices": [
+      "경주용 차의 앞바퀴",
+      "무거운 짐을 싣는 화물차의 뒤차축",
+      "소형 승용차의 앞바퀴 독립 현가",
+      "오토바이의 앞바퀴"
+    ],
+    "answer": 2,
+    "oneLineConcept": "판스프링 = 일체 차축, 큰 하중의 화물차",
+    "explanation": "판스프링은 휘어진 강판 여러 장을 겹친 스프링입니다. 튼튼하고 큰 무게를 견디며 스프링 자체가 차축을 잡아 주는 역할도 하므로 구조가 간단합니다. 그래서 짐을 많이 싣는 화물차의 일체 차축에 많이 씁니다. 대신 승차감은 코일 스프링보다 딱딱합니다.\n\n**틀린 선지**\n- 소형 승용차의 앞바퀴 독립 현가: 소형 승용차 앞바퀴에는 주로 코일 스프링을 쓴 맥퍼슨형을 씁니다.\n- 오토바이의 앞바퀴: 오토바이 앞바퀴에는 텔레스코픽 포크를 씁니다.\n- 경주용 차의 앞바퀴: 경주용 차는 가볍고 정밀한 독립 현가를 씁니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "판스프링"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  }
+]

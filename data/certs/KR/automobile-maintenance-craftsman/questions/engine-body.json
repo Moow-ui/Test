@@ -1,0 +1,426 @@
+[
+  {
+    "id": "automobile-maintenance-craftsman-engine-body-0001",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "engine",
+    "chapterId": "engine-body",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "4행정 사이클 엔진에서 1사이클(흡입·압축·폭발·배기)을 마치는 동안 크랭크축은 몇 회전하는가?",
+    "choices": [
+      "4회전",
+      "2회전",
+      "1회전",
+      "0.5회전"
+    ],
+    "answer": 2,
+    "oneLineConcept": "4행정 1사이클 = 크랭크축 2회전(720°)",
+    "explanation": "4행정 엔진은 흡입 → 압축 → 폭발(동력) → 배기의 네 행정으로 한 사이클을 마칩니다. 피스톤이 위에서 아래로(또는 아래에서 위로) 한 번 움직일 때 크랭크축은 반 바퀴(180°) 돕니다.\n\n1. 행정 1개 = 크랭크축 180°\n2. 행정 4개 = 180° × 4 = 720°\n3. 720° ÷ 360° = 2회전\n\n같은 동안 캠축은 그 절반인 1회전합니다.\n\n**틀린 선지**\n- 1회전: 2행정 사이클 엔진이 1사이클을 마치는 회전수입니다.\n- 4회전: 행정 하나에 크랭크축이 한 바퀴 돈다고 잘못 센 값입니다.\n- 0.5회전: 행정 하나(180°) 동안의 회전수입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "4행정",
+      "크랭크축",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-engine-body-0002",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "engine",
+    "chapterId": "engine-body",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "4행정 사이클 엔진에서 크랭크축과 캠축의 회전 속도 비(크랭크축 : 캠축)는?",
+    "choices": [
+      "1 : 2",
+      "4 : 1",
+      "2 : 1",
+      "1 : 1"
+    ],
+    "answer": 3,
+    "oneLineConcept": "크랭크축 2회전에 캠축 1회전 → 2 : 1",
+    "explanation": "흡기·배기 밸브는 한 사이클에 한 번씩만 열리면 됩니다. 한 사이클 동안 크랭크축은 2회전하므로 밸브를 여는 캠축은 1회전만 하도록 만듭니다. 그래서 캠축 기어(스프로킷) 잇수는 크랭크축 기어의 2배입니다.\n\n- 크랭크축 : 캠축 = 2 : 1\n\n**틀린 선지**\n- 1 : 2: 순서를 거꾸로 적은 것으로, 캠축이 크랭크축보다 2배 빨리 돈다는 뜻이 됩니다.\n- 1 : 1: 두 축이 같은 속도로 돌면 밸브가 한 사이클에 두 번 열립니다.\n- 4 : 1: 크랭크축 4회전에 캠축 1회전이라는 뜻으로, 4행정 엔진과 맞지 않습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "캠축",
+      "4행정"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-engine-body-0003",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "engine",
+    "chapterId": "engine-body",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "행정 체적이 450cc, 연소실 체적이 50cc 인 엔진의 압축비는?",
+    "choices": [
+      "8",
+      "11",
+      "10",
+      "9"
+    ],
+    "answer": 3,
+    "oneLineConcept": "압축비 = (연소실 체적 + 행정 체적) ÷ 연소실 체적",
+    "explanation": "압축비는 피스톤이 맨 아래(하사점)에 있을 때의 전체 부피를 맨 위(상사점)에 있을 때의 부피, 곧 연소실 체적으로 나눈 값입니다.\n\n1. 전체 부피 = 50 + 450 = 500cc\n2. 압축비 = 500 ÷ 50 = 10\n3. 검산: 1 + 450 ÷ 50 = 1 + 9 = 10\n\n**틀린 선지**\n- 9: 행정 체적만 연소실 체적으로 나눈 값(450 ÷ 50)입니다. 연소실 체적을 더하지 않았습니다.\n- 11: 10 에 1 을 한 번 더 더한 값입니다.\n- 8: 행정 체적에서 연소실 체적을 뺀 뒤 나눈 값(400 ÷ 50)입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "압축비",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-engine-body-0004",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "engine",
+    "chapterId": "engine-body",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "실린더 안지름 8cm, 행정 10cm 인 4기통 엔진의 총배기량은 약 얼마인가? (π = 3.14 로 계산)",
+    "choices": [
+      "약 2,010cc",
+      "약 502cc",
+      "약 1,005cc",
+      "약 8,038cc"
+    ],
+    "answer": 1,
+    "oneLineConcept": "총배기량 = π/4 × 안지름² × 행정 × 실린더 수",
+    "explanation": "배기량은 피스톤이 한 번 움직일 때 밀어내는 부피(원기둥 부피)입니다.\n\n1. 실린더 1개: 3.14 ÷ 4 × 8² × 10 = 0.785 × 64 × 10 = 502.4cc\n2. 4기통: 502.4 × 4 = 2,009.6cc ≈ 2,010cc\n3. 검산: 2,010 ÷ 4 ≈ 502cc 로 1기통 값과 맞습니다.\n\n**틀린 선지**\n- 약 502cc: 실린더 1개의 배기량입니다. 실린더 수 4 를 곱하지 않았습니다.\n- 약 8,038cc: π/4 대신 π 를 곱해(안지름을 반지름처럼 써서) 4배 크게 나온 값입니다.\n- 약 1,005cc: 실린더 2개 분량만 계산한 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "배기량",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-engine-body-0005",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "engine",
+    "chapterId": "engine-body",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "실린더 벽이 가장 많이 마모되는 곳은?",
+    "choices": [
+      "실린더 전체가 고르게 마모된다",
+      "실린더 한가운데",
+      "실린더 아랫부분(하사점 부근)",
+      "실린더 윗부분(상사점 부근)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "실린더 마모는 상사점 부근, 피스톤이 옆으로 미는 방향에서 크다",
+    "explanation": "피스톤이 상사점 부근에 있을 때 폭발 압력과 열이 가장 크고, 피스톤 링이 벽을 세게 밉니다. 또 피스톤이 잠깐 멈췄다가 방향을 바꾸는 곳이라 기름막(유막)이 끊기기 쉽습니다. 그래서 실린더 윗부분이 가장 많이 닳습니다.\n\n**틀린 선지**\n- 실린더 아랫부분(하사점 부근): 하사점 부근은 압력과 온도가 낮아 마모가 적습니다.\n- 실린더 한가운데: 가운데는 피스톤 속도가 빨라 기름막이 잘 유지됩니다.\n- 실린더 전체가 고르게 마모된다: 압력·온도 차이 때문에 위쪽이 더 닳아 고르지 않습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "실린더",
+      "마모"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-engine-body-0006",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "engine",
+    "chapterId": "engine-body",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "압축 압력 시험에서 압력이 낮게 나온 실린더에 엔진 오일을 조금 넣고 다시 재었더니 압력이 뚜렷하게 올라갔다. 가장 의심되는 곳은?",
+    "choices": [
+      "점화플러그 간극 과다",
+      "피스톤 링 또는 실린더 벽의 마모",
+      "흡기·배기 밸브의 밀착 불량",
+      "연료 인젝터의 분사 불량"
+    ],
+    "answer": 2,
+    "oneLineConcept": "습식 시험에서 압력이 오르면 링·실린더 마모, 그대로면 밸브 불량",
+    "explanation": "오일을 넣고 재는 방법을 습식 압축 압력 시험이라고 합니다. 넣은 오일이 피스톤 링과 실린더 벽 사이의 틈을 잠시 막아 주므로, 압력이 올라갔다면 새던 곳이 그 틈, 곧 링이나 실린더 벽이라는 뜻입니다.\n\n- 압력이 거의 그대로이면: 오일로 막을 수 없는 밸브 쪽(밀착 불량)이나 헤드 개스킷을 의심합니다.\n\n**틀린 선지**\n- 흡기·배기 밸브의 밀착 불량: 밸브에서 새는 압축은 오일로 막히지 않으므로 오일을 넣어도 압력이 거의 오르지 않습니다.\n- 점화플러그 간극 과다: 점화플러그 간극은 불꽃 상태와 관계있고 압축 압력과는 관계가 없습니다.\n- 연료 인젝터의 분사 불량: 압축 압력 시험은 연료를 쓰지 않고 크랭킹만 하므로 인젝터와 관계가 없습니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "압축압력",
+      "진단"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-engine-body-0007",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "engine",
+    "chapterId": "engine-body",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "실린더 헤드 볼트를 조이는 방법으로 알맞은 것은?",
+    "choices": [
+      "바깥쪽에서 중앙 쪽으로 한 번에 세게 조인다",
+      "중앙에서 바깥쪽으로 대각선 순서로, 토크렌치를 써서 여러 번 나누어 규정 토크로 조인다",
+      "임팩트렌치로 최대 힘을 주어 한 번에 조인다",
+      "한쪽 끝에서 다른 쪽 끝으로 차례대로 한 번에 조인다"
+    ],
+    "answer": 2,
+    "oneLineConcept": "헤드 볼트: 안쪽 → 바깥쪽, 대각선, 토크렌치로 나누어 조임",
+    "explanation": "실린더 헤드는 넓고 얇은 판이라 한쪽부터 세게 조이면 휘거나 개스킷이 고르게 눌리지 않습니다. 그래서 가운데에서 바깥쪽으로, 대각선 순서로, 토크렌치를 써서 2~3번에 나누어 규정 토크까지 조입니다. 풀 때는 반대로 바깥쪽에서 안쪽으로 풉니다.\n\n**틀린 선지**\n- 바깥쪽에서 중앙 쪽으로 한 번에 세게 조인다: 바깥쪽부터 조이는 것은 풀 때의 순서입니다. 한 번에 세게 조이면 헤드가 휠 수 있습니다.\n- 한쪽 끝에서 다른 쪽 끝으로 차례대로 한 번에 조인다: 한쪽 끝부터 조이면 반대쪽으로 힘이 몰려 헤드가 휠 수 있습니다.\n- 임팩트렌치로 최대 힘을 주어 한 번에 조인다: 임팩트렌치는 힘을 정확히 맞출 수 없어 볼트가 늘어나거나 헤드가 상할 수 있습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "실린더헤드",
+      "토크렌치"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-engine-body-0008",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "engine",
+    "chapterId": "engine-body",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "크랭크축을 V블록 위에 올리고 다이얼 게이지를 대어 한 바퀴 돌렸더니 바늘이 0.06mm 움직였다. 크랭크축의 휨값은?",
+    "choices": [
+      "0.03mm",
+      "0.12mm",
+      "0.06mm",
+      "0.015mm"
+    ],
+    "answer": 1,
+    "oneLineConcept": "크랭크축 휨값 = 다이얼 게이지 움직임(흔들림) ÷ 2",
+    "explanation": "휜 축을 돌리면 휜 쪽이 위로 올 때와 아래로 갈 때의 차이가 다이얼 게이지에 나타납니다. 이 차이(흔들림)는 실제 휨의 2배이므로 절반이 휨값입니다.\n\n1. 다이얼 게이지 움직임 = 0.06mm\n2. 휨값 = 0.06 ÷ 2 = 0.03mm\n\n**틀린 선지**\n- 0.06mm: 게이지 움직임을 그대로 쓴 값입니다. 흔들림은 휨의 2배입니다.\n- 0.12mm: 게이지 움직임을 2배로 한 값입니다.\n- 0.015mm: 게이지 움직임을 4로 나눈 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "크랭크축",
+      "다이얼게이지",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-engine-body-0009",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "engine",
+    "chapterId": "engine-body",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "크랭크축 메인 저널과 베어링 사이의 오일 간극을 잴 때 쓰는 측정 도구로 가장 알맞은 것은?",
+    "choices": [
+      "플라스틱 게이지(플라스티 게이지)",
+      "실린더 보어 게이지",
+      "버니어 캘리퍼스",
+      "필러 게이지(시크니스 게이지)"
+    ],
+    "answer": 1,
+    "oneLineConcept": "베어링 오일 간극 = 플라스틱 게이지로 눌린 폭을 읽는다",
+    "explanation": "플라스틱 게이지는 가는 플라스틱 실입니다. 저널 위에 올려놓고 베어링 캡을 규정 토크로 조였다가 풀면 실이 눌려 납작해지는데, 그 폭을 봉투의 눈금과 비교하면 오일 간극을 알 수 있습니다.\n\n**틀린 선지**\n- 필러 게이지(시크니스 게이지): 필러 게이지는 밸브 간극·피스톤 링 이음 간극처럼 손이 들어가는 평평한 틈을 잽니다. 둥근 베어링 안쪽 간극에는 넣을 수 없습니다.\n- 실린더 보어 게이지: 실린더 보어 게이지는 실린더 안지름과 마모량을 잽니다.\n- 버니어 캘리퍼스: 버니어 캘리퍼스는 길이·바깥지름을 재는 도구라 간극을 직접 잴 수 없습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "측정",
+      "베어링"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-engine-body-0010",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "engine",
+    "chapterId": "engine-body",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "흡·배기 밸브 간극이 규정보다 클 때 나타나는 현상은?",
+    "choices": [
+      "엔진 출력이 높아진다",
+      "밸브가 열려 있는 기간이 길어진다",
+      "밸브가 늦게 열리고 일찍 닫히며 밸브 쪽에서 두드리는 소음이 난다",
+      "밸브가 완전히 닫히지 않아 압축이 샌다"
+    ],
+    "answer": 3,
+    "oneLineConcept": "밸브 간극 큼 → 소음·열림 기간 짧음, 작음 → 밀착 불량·압축 누설",
+    "explanation": "밸브 간극은 캠과 밸브 사이의 작은 틈입니다. 틈이 크면 캠이 그만큼 더 돌아야 밸브를 밀기 시작하므로 밸브가 늦게 열리고 일찍 닫히고, 부딪치는 소리(태핏 소음)가 납니다. 반대로 틈이 너무 작으면 열팽창 때 밸브가 완전히 닫히지 않습니다.\n\n**틀린 선지**\n- 밸브가 완전히 닫히지 않아 압축이 샌다: 간극이 너무 작을 때의 현상입니다.\n- 밸브가 열려 있는 기간이 길어진다: 간극이 크면 열려 있는 기간은 오히려 짧아집니다.\n- 엔진 출력이 높아진다: 공기가 덜 들어가고 배기가 덜 빠져 출력은 떨어집니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "밸브간극"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-engine-body-0011",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "engine",
+    "chapterId": "engine-body",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "엔진 정비 작업장의 안전 수칙으로 옳지 않은 것은?",
+    "choices": [
+      "잭으로 들어 올린 차 밑에서 작업할 때는 안전 스탠드(받침대)를 받친다",
+      "연료 계통을 작업할 때는 불꽃이나 화기를 가까이하지 않는다",
+      "그라인더 작업은 잠깐이면 보안경을 쓰지 않아도 된다",
+      "회전하는 벨트·팬 가까이에서는 헐렁한 옷과 장갑이 말려 들어가지 않게 조심한다"
+    ],
+    "answer": 3,
+    "oneLineConcept": "그라인더 작업은 짧아도 보안경 착용",
+    "explanation": "그라인더는 쇳가루와 숫돌 조각이 매우 빠르게 튀므로 작업 시간이 짧아도 반드시 보안경(또는 보안면)을 씁니다. 눈은 한 번 다치면 되돌리기 어렵습니다.\n\n**틀린 선지**\n- 잭으로 들어 올린 차 밑에서 작업할 때는 안전 스탠드(받침대)를 받친다: 잭만으로 받친 차는 내려앉을 수 있으므로 옳은 수칙입니다.\n- 회전하는 벨트·팬 가까이에서는 헐렁한 옷과 장갑이 말려 들어가지 않게 조심한다: 회전체에 옷·장갑이 말려 드는 사고를 막는 옳은 수칙입니다.\n- 연료 계통을 작업할 때는 불꽃이나 화기를 가까이하지 않는다: 연료 증기는 불이 붙기 쉬우므로 옳은 수칙입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "안전",
+      "보호구"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "automobile-maintenance-craftsman-engine-body-0012",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "engine",
+    "chapterId": "engine-body",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "외경 마이크로미터의 슬리브 눈금이 7.5mm 를 지났고, 심블 눈금(1눈금 0.01mm)이 23 에 맞춰져 있다. 측정값은?",
+    "choices": [
+      "9.80mm",
+      "7.23mm",
+      "7.523mm",
+      "7.73mm"
+    ],
+    "answer": 4,
+    "oneLineConcept": "마이크로미터 = 슬리브 눈금 + 심블 눈금 × 0.01mm",
+    "explanation": "마이크로미터는 슬리브(고정된 통)에서 큰 값을, 심블(돌아가는 통)에서 0.01mm 단위의 작은 값을 읽어 더합니다.\n\n1. 슬리브: 7.5mm (0.5mm 눈금까지 보임)\n2. 심블: 23 × 0.01 = 0.23mm\n3. 합계: 7.5 + 0.23 = 7.73mm\n\n**틀린 선지**\n- 7.23mm: 슬리브의 0.5mm 눈금을 빼먹고 7mm 로 읽은 값입니다.\n- 7.523mm: 심블 눈금을 0.001mm 단위로 잘못 읽은 값입니다.\n- 9.80mm: 심블 눈금 23 을 0.1mm 단위(2.3mm)로 잘못 더한 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "측정",
+      "마이크로미터",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  }
+]

@@ -1,0 +1,350 @@
+[
+  {
+    "id": "automobile-maintenance-craftsman-steering-0001",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "chassis",
+    "chapterId": "steering",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "조향 핸들을 360° 돌렸을 때 피트먼 암이 24° 움직였다. 조향 기어비는?",
+    "choices": [
+      "12 : 1",
+      "15 : 1",
+      "24 : 1",
+      "1 : 15"
+    ],
+    "answer": 2,
+    "oneLineConcept": "조향 기어비 = 핸들 회전 각도 ÷ 피트먼 암 회전 각도",
+    "explanation": "조향 기어비는 핸들을 얼마나 돌려야 바퀴 쪽(피트먼 암)이 얼마나 움직이는지를 나타냅니다.\n\n1. 기어비 = 360 ÷ 24 = 15\n2. 15 : 1 → 핸들을 15° 돌리면 피트먼 암이 1° 움직입니다.\n\n기어비가 크면 핸들이 가볍지만 많이 돌려야 합니다.\n\n**틀린 선지**\n- 1 : 15: 순서를 거꾸로 적은 것입니다.\n- 24 : 1: 피트먼 암 각도를 그대로 기어비로 쓴 것입니다.\n- 12 : 1: 360 을 30 으로 나눈 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "조향기어비",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-steering-0002",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "chassis",
+    "chapterId": "steering",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "축거 2.4m, 바깥쪽 앞바퀴의 조향 각도 30°, 바퀴 접지면 중심과 킹핀 중심 사이 거리 0.2m 인 차의 최소 회전 반경은? (sin30° = 0.5)",
+    "choices": [
+      "5.0m",
+      "4.8m",
+      "약 3.0m",
+      "1.4m"
+    ],
+    "answer": 1,
+    "oneLineConcept": "최소 회전 반경 R = 축거 ÷ sin(바깥 바퀴 조향각) + r",
+    "explanation": "최소 회전 반경은 핸들을 끝까지 돌렸을 때 바깥쪽 앞바퀴가 그리는 원의 반지름입니다.\n\n1. 축거 ÷ sin30° = 2.4 ÷ 0.5 = 4.8m\n2. r(접지면 중심~킹핀 거리)을 더함: 4.8 + 0.2 = 5.0m\n\n**틀린 선지**\n- 4.8m: r(0.2m)을 더하지 않은 값입니다.\n- 1.4m: 축거에 sin30° 를 곱한 뒤 r 을 더한 값입니다. 축거는 sin 값으로 나눕니다.\n- 약 3.0m: sin30° 대신 cos30°(약 0.866)로 나눈 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "최소회전반경",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-steering-0003",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "chassis",
+    "chapterId": "steering",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "애커먼 장토식 조향 기구에서 선회할 때 앞바퀴의 조향 각도는 어떻게 되는가?",
+    "choices": [
+      "안쪽 바퀴의 조향 각도가 바깥쪽 바퀴보다 크다",
+      "두 바퀴의 조향 각도가 같다",
+      "바깥쪽 바퀴의 조향 각도가 안쪽 바퀴보다 크다",
+      "뒷바퀴만 조향된다"
+    ],
+    "answer": 1,
+    "oneLineConcept": "애커먼 장토식 = 안쪽 바퀴가 더 많이 꺾여 같은 중심으로 선회",
+    "explanation": "차가 돌 때 안쪽 바퀴는 더 작은 원을 그려야 합니다. 애커먼 장토식은 너클 암과 타이로드의 각도를 이용해 안쪽 바퀴를 바깥쪽보다 더 많이 꺾어, 네 바퀴가 모두 같은 회전 중심을 두고 미끄러지지 않고 돌게 합니다.\n\n**틀린 선지**\n- 두 바퀴의 조향 각도가 같다: 두 바퀴 각이 같으면 한쪽 바퀴가 끌리며 미끄러집니다.\n- 바깥쪽 바퀴의 조향 각도가 안쪽 바퀴보다 크다: 거꾸로 설명한 것입니다.\n- 뒷바퀴만 조향된다: 일반 승용차는 앞바퀴를 조향합니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "애커먼"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-steering-0004",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "chassis",
+    "chapterId": "steering",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "조향축 끝의 피니언이 돌면서 톱니 막대를 좌우로 직접 움직여 바퀴를 조향하는 조향 기어 형식은?",
+    "choices": [
+      "웜 롤러형",
+      "랙 앤 피니언형",
+      "웜 섹터형",
+      "볼 너트형(볼 순환식)"
+    ],
+    "answer": 2,
+    "oneLineConcept": "랙 앤 피니언 = 피니언 회전 → 랙 좌우 직선 운동",
+    "explanation": "랙 앤 피니언형은 둥근 피니언 기어와 곧은 톱니 막대(랙)가 맞물린 구조입니다. 핸들을 돌리면 피니언이 돌고, 랙이 좌우로 움직이며 양 끝의 타이로드를 밀고 당겨 바퀴를 꺾습니다. 구조가 간단하고 가벼워 승용차에 널리 씁니다.\n\n**틀린 선지**\n- 볼 너트형(볼 순환식): 웜(볼 너트)의 회전을 섹터 축으로 바꾸는 방식으로 대형차에 많습니다.\n- 웜 섹터형: 웜과 부채꼴 섹터 기어가 맞물리는 방식입니다.\n- 웜 롤러형: 웜과 롤러가 맞물리는 방식입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "랙앤피니언"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-steering-0005",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "chassis",
+    "chapterId": "steering",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "전동식 동력 조향장치(MDPS)에 대한 설명으로 알맞은 것은?",
+    "choices": [
+      "전기 모터가 조향력을 도와주며, 토크 센서가 운전자가 핸들을 돌리는 힘을 감지한다",
+      "압축 공기로 조향력을 돕는다",
+      "엔진이 오일 펌프를 돌려 유압으로 조향력을 돕는다",
+      "핸들의 유격을 크게 하여 조향을 가볍게 한다"
+    ],
+    "answer": 1,
+    "oneLineConcept": "MDPS = 모터 + 토크 센서 + ECU, 엔진 동력 안 씀",
+    "explanation": "MDPS 는 핸들을 돌리는 힘과 방향을 토크 센서가 감지하면, ECU 가 차 속도에 맞춰 전기 모터를 돌려 조향을 돕습니다. 유압 펌프를 돌리지 않으므로 엔진 동력 손실이 적어 연비에 유리하고, 오일을 쓰지 않습니다.\n\n**틀린 선지**\n- 엔진이 오일 펌프를 돌려 유압으로 조향력을 돕는다: 유압식 동력 조향장치의 설명입니다.\n- 압축 공기로 조향력을 돕는다: 승용차 조향장치는 압축 공기를 쓰지 않습니다.\n- 핸들의 유격을 크게 하여 조향을 가볍게 한다: 유격이 크면 조향이 불안정해질 뿐 가벼워지지 않습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "MDPS",
+      "동력조향"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-steering-0006",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "chassis",
+    "chapterId": "steering",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "주행 중 핸들이 한쪽으로 쏠리는 원인으로 가장 알맞은 것은?",
+    "choices": [
+      "좌우 타이어의 공기압이 다르다",
+      "배터리 전압이 조금 낮다",
+      "연료가 얼마 남지 않았다",
+      "엔진 오일이 조금 부족하다"
+    ],
+    "answer": 1,
+    "oneLineConcept": "핸들 쏠림: 좌우 공기압 차이·얼라인먼트 불량·한쪽 브레이크 끌림",
+    "explanation": "좌우 타이어의 공기압이 다르면 굴러가는 저항과 바퀴 지름이 달라져 차가 공기압이 낮은 쪽으로 끌려갑니다. 캠버·캐스터 같은 얼라인먼트가 좌우로 다르거나 한쪽 브레이크가 끌려도 쏠립니다.\n\n**틀린 선지**\n- 엔진 오일이 조금 부족하다: 엔진 오일과 핸들 쏠림은 관계가 없습니다.\n- 연료가 얼마 남지 않았다: 연료 양은 조향과 관계가 없습니다.\n- 배터리 전압이 조금 낮다: 배터리 전압은 핸들 쏠림의 원인이 아닙니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "핸들쏠림",
+      "고장진단"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-steering-0007",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "chassis",
+    "chapterId": "steering",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "조향 핸들이 무거워지는 원인이 아닌 것은?",
+    "choices": [
+      "동력 조향장치 오일이 부족하다",
+      "조향 기어가 너무 꽉 조정되어 있다",
+      "앞 타이어 공기압이 크게 부족하다",
+      "타이어 공기압이 규정보다 조금 높다"
+    ],
+    "answer": 4,
+    "oneLineConcept": "핸들 무거움: 공기압 부족·동력 조향 오일 부족·기어 조정 과다·얼라인먼트 불량",
+    "explanation": "타이어 공기압이 낮으면 땅에 닿는 면이 넓어져 핸들이 무거워집니다. 유압식 동력 조향장치의 오일이 모자라거나, 조향 기어가 너무 꽉 조정되어도 무거워집니다. 공기압이 조금 높으면 접지면이 줄어 오히려 핸들은 가벼워집니다.\n\n**틀린 선지**\n- 앞 타이어 공기압이 크게 부족하다: 접지면이 넓어져 핸들이 무거워지는 원인입니다.\n- 동력 조향장치 오일이 부족하다: 유압 도움이 줄어 핸들이 무거워지는 원인입니다.\n- 조향 기어가 너무 꽉 조정되어 있다: 기어가 뻑뻑해져 핸들이 무거워지는 원인입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "조향",
+      "고장진단"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "automobile-maintenance-craftsman-steering-0008",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "chassis",
+    "chapterId": "steering",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "일반적인 유압식 동력 조향장치에서 오일 펌프를 돌리는 것은?",
+    "choices": [
+      "와이퍼 모터",
+      "변속기 출력축",
+      "엔진(크랭크축 풀리와 벨트)",
+      "구동 바퀴"
+    ],
+    "answer": 3,
+    "oneLineConcept": "유압식 동력 조향 오일 펌프 = 엔진 벨트로 구동",
+    "explanation": "유압식 동력 조향장치의 오일 펌프는 엔진 앞쪽 크랭크축 풀리에서 벨트로 돌립니다. 그래서 엔진이 돌아야 유압이 생기고, 벨트가 느슨하거나 끊어지면 핸들이 갑자기 무거워집니다.\n\n**틀린 선지**\n- 변속기 출력축: 변속기 출력축은 바퀴로 동력을 보내는 축입니다.\n- 구동 바퀴: 바퀴가 펌프를 돌리지 않습니다.\n- 와이퍼 모터: 와이퍼 모터는 와이퍼만 움직입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "동력조향",
+      "오일펌프"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-steering-0009",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "chassis",
+    "chapterId": "steering",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "유압식 동력 조향장치에서 엔진이 멈추거나 오일 펌프가 고장 났을 때 사람의 힘만으로도 조향할 수 있게 하는 밸브는?",
+    "choices": [
+      "압력 스위치",
+      "유량 제어 밸브",
+      "안전 체크 밸브",
+      "유압 조절 밸브(릴리프 밸브)"
+    ],
+    "answer": 3,
+    "oneLineConcept": "안전 체크 밸브 = 유압 없을 때 수동 조향 가능",
+    "explanation": "유압이 없으면 동력 실린더 한쪽을 미는 순간 반대쪽에 부압이 생겨 핸들이 매우 무거워집니다. 안전 체크 밸브는 이때 열려 양쪽 오일이 통하게 하므로, 유압 도움 없이도 사람의 힘으로 조향할 수 있게 합니다.\n\n**틀린 선지**\n- 유량 제어 밸브: 엔진 회전수가 높아져도 펌프 토출량이 지나치게 늘지 않게 하는 밸브입니다.\n- 유압 조절 밸브(릴리프 밸브): 최고 유압이 너무 오르지 않게 하는 밸브입니다.\n- 압력 스위치: 유압이 높아질 때 엔진 ECU 에 알려 공회전을 보정하는 스위치입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "동력조향",
+      "안전체크밸브"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-steering-0010",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "chassis",
+    "chapterId": "steering",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "앞바퀴의 캠버와 킹핀 경사각을 합한 각을 무엇이라고 하는가?",
+    "choices": [
+      "캐스터 각",
+      "협각(인클루디드 앵글)",
+      "토아웃",
+      "셋백"
+    ],
+    "answer": 2,
+    "oneLineConcept": "캠버 + 킹핀 경사각 = 협각",
+    "explanation": "앞에서 보았을 때 바퀴 중심선의 기울기(캠버)와 조향축(킹핀)의 기울기를 더한 각이 협각입니다. 협각은 조향축 중심선이 타이어 접지면 가까이에 오게 하여 핸들 조작을 가볍게 하고, 바퀴가 제자리로 돌아오는 힘을 줍니다.\n\n**틀린 선지**\n- 캐스터 각: 옆에서 본 조향축 기울기입니다.\n- 토아웃: 바퀴 앞쪽이 뒤쪽보다 넓게 벌어진 상태입니다.\n- 셋백: 앞뒤 차축이 좌우로 어긋난 정도입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "협각",
+      "얼라인먼트"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+]

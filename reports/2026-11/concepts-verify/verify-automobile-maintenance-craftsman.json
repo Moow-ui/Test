@@ -1,0 +1,42 @@
+{
+  "verifiedAt": "2026-11-04",
+  "verifier": "independent (did not author)",
+  "notes": "law.go.kr fetch failed (connection reset / OPEN API needs registered IP); legal numbers checked against known text: 자동차규칙 제12조(트레드 1.6mm 이상), 제44조(방향지시등 매분 60~120회), 자동차관리법 시행규칙 별표15(제동력 합 차량중량 50%, 각 축 축중 50%·뒤축 20%, 좌우 차 축중 8% 이내). Q-net page fetched: 60문항(60분), 60점, 필기 14,500원·실기 41,300원, 실기 작업형 4시간 정도. cb4.txt: 적용기간 2025.01.01~2027.12.31, 주요항목 16개.",
+  "chapters": {
+    "engine-body": {"result": "PASS", "issues": []},
+    "lubrication": {"result": "PASS", "issues": []},
+    "cooling": {"result": "PASS", "issues": []},
+    "fuel-system": {"result": "FAIL", "issues": [
+      {"where": "concepts.json fuel-system summary[1]", "sentence": "수온 센서, 스로틀 위치 센서, 산소 센서는 각각 냉각수 온도, 가속 페달을 밟은 정도, 배기 속 산소를 알려 줍니다.", "reason": "TPS 는 스로틀 밸브가 열린 정도를 감지한다(가속 페달 위치는 APS). 같은 단원 문제(TPS 가 감지하는 것 = '스로틀 밸브가 열린 정도')와 chapters.json keyPoint('TPS: 스로틀 열림 정도')와도 표현이 어긋남.", "fix": "…각각 냉각수 온도, 스로틀 밸브가 열린 정도, 배기 속 산소를 알려 줍니다."}
+    ]},
+    "intake-exhaust": {"result": "PASS", "issues": []},
+    "ignition": {"result": "PASS", "issues": []},
+    "clutch-transmission": {"result": "PASS", "issues": []},
+    "driveline": {"result": "PASS", "issues": []},
+    "wheel-alignment": {"result": "PASS", "issues": []},
+    "hydraulic-brake": {"result": "PASS", "issues": []},
+    "suspension": {"result": "PASS", "issues": []},
+    "steering": {"result": "PASS", "issues": []},
+    "charging": {"result": "PASS", "issues": []},
+    "starting": {"result": "PASS", "issues": []},
+    "convenience": {"result": "PASS", "issues": []},
+    "lighting": {"result": "PASS", "issues": []}
+  },
+  "meta": {"result": "FAIL", "issues": [
+    {"where": "meta.json studyTips.studyOrder", "sentence": "문항 수가 가장 많은 엔진 영역(23문항)부터 시작하세요.", "reason": "출제기준은 60문항을 영역별로 나누지 않는다. 23·22·15 는 이 사이트의 어림값(trendSummary 에서도 '학습용 어림값'이라 밝힘)이고, 주요항목 수는 엔진 6·섀시 6·전기 4 로 엔진과 섀시가 같아(60×6/16=22.5) '문항 수가 가장 많은'은 확인할 수 없는 사실처럼 읽힌다. 뒤의 '섀시(22문항)', '전기·전자장치(15문항)'도 확정 수치처럼 보인다.", "fix": "'주요항목이 6개로 많은 엔진 영역부터 시작하세요.' … '그다음 섀시(주요항목 6개)의 …, 마지막으로 전기·전자장치(4개)의 …' 처럼 출제기준 항목 수로 쓰거나, 문항 수를 쓰려면 '이 사이트 어림값'임을 밝힌다."}
+  ], "checkedOk": [
+    "examInfo: 60문항·60분·4지 택일·CBT·60점(36문항)·과락 없음(단일 과목) — Q-net 일치",
+    "출제기준 기간 2025.1.1~2027.12.31, 주요항목 16개 목록 — cb4.txt 일치",
+    "수수료 필기 14,500원·실기 41,300원 — Q-net 일치",
+    "실기 '자동차정비 실무' 작업형 4시간 정도 — Q-net 일치",
+    "응시자격 제한 없음, FAQ 5개 사실 오류 없음, 합격률·통계 없음",
+    "studyTips.hardChapters·examDay: 단원 데이터에 근거, 지어낸 통계 없음",
+    "minor(비차단): trendSummary 의 23·22 는 6:6 을 어림한 값이라 '비례'로는 22.5·22.5 — '어림값' 표기가 있어 허용"
+  ]},
+  "figure": {"result": "PASS", "checklist": {
+    "matchesText": "PASS — 직렬 A(−)↔B(+), 출력 A(+)·B(−), 24V 60Ah / 병렬 (+)끼리·(−)끼리, 12V 120Ah. alt·caption·compare 표와 일치",
+    "readable": "PASS — 글자 크고 겹침·잘림 없음 (minor: 아래쪽 약 30% 빈 여백, viewBox 를 줄이면 더 좋음)",
+    "technicallyCorrect": "PASS",
+    "helpsUnderstanding": "PASS — 단자 연결 모양으로 직렬/병렬 판단하는 문제에 직접 도움"
+  }}
+}

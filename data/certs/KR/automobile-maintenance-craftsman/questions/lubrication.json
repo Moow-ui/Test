@@ -1,0 +1,372 @@
+[
+  {
+    "id": "automobile-maintenance-craftsman-lubrication-0001",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "engine",
+    "chapterId": "lubrication",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "엔진 오일(윤활유)이 하는 일이 아닌 것은?",
+    "choices": [
+      "마찰로 생긴 열을 가져가 식힌다",
+      "연소실에서 연료와 함께 타서 출력을 높인다",
+      "금속끼리 직접 닿지 않게 하여 마찰을 줄인다",
+      "금속 표면에 막을 만들어 녹을 막는다"
+    ],
+    "answer": 2,
+    "oneLineConcept": "윤활유 작용: 감마·냉각·밀봉·청정·방청·응력 분산",
+    "explanation": "엔진 오일은 마찰을 줄이는 감마 작용, 열을 식히는 냉각 작용, 피스톤과 실린더 사이를 막는 밀봉 작용, 때를 씻어 내는 청정 작용, 녹을 막는 방청 작용, 충격을 나누는 응력 분산 작용을 합니다. 오일이 연소실에서 타는 것은 링 마모 같은 고장이며 출력을 높이지 않습니다.\n\n**틀린 선지**\n- 금속끼리 직접 닿지 않게 하여 마찰을 줄인다: 감마(마찰 감소) 작용으로 옳은 설명입니다.\n- 마찰로 생긴 열을 가져가 식힌다: 냉각 작용으로 옳은 설명입니다.\n- 금속 표면에 막을 만들어 녹을 막는다: 방청(녹 방지) 작용으로 옳은 설명입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "윤활유"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "automobile-maintenance-craftsman-lubrication-0002",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "engine",
+    "chapterId": "lubrication",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "엔진 오일 규격 'SAE 10W-30' 에서 W 가 뜻하는 것은?",
+    "choices": [
+      "물(water)에 잘 섞인다는 표시",
+      "마모 방지 첨가제가 들어 있다는 표시",
+      "오일의 무게(weight)",
+      "겨울철(낮은 온도)에서의 점도 등급"
+    ],
+    "answer": 4,
+    "oneLineConcept": "10W-30: W = 겨울(저온) 점도, 뒤 숫자 = 고온 점도",
+    "explanation": "SAE 번호는 오일의 끈적한 정도(점도)를 나타냅니다. 숫자가 클수록 진합니다. 10W-30 처럼 두 숫자가 있으면 추울 때는 10W 처럼 묽게, 뜨거울 때는 30 처럼 진하게 작용하는 사계절용(다급) 오일입니다. W 는 Winter(겨울)의 머리글자입니다.\n\n**틀린 선지**\n- 오일의 무게(weight): W 를 영어 weight(무게)로 착각한 것입니다.\n- 물(water)에 잘 섞인다는 표시: 엔진 오일은 물과 섞이면 안 됩니다.\n- 마모 방지 첨가제가 들어 있다는 표시: 첨가제 표시는 SAE 점도 번호와 따로 적습니다(API 등급 등).",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "점도",
+      "SAE"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-lubrication-0003",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "engine",
+    "chapterId": "lubrication",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "오일 레벨 게이지로 엔진 오일을 확인했더니 오일이 우유처럼 뿌옇다. 가장 의심되는 것은?",
+    "choices": [
+      "오일 첨가제가 많이 들어갔다",
+      "정상적인 새 오일이다",
+      "냉각수가 오일에 섞였다",
+      "연료(가솔린)가 오일에 많이 섞였다"
+    ],
+    "answer": 3,
+    "oneLineConcept": "오일이 우유색 = 냉각수 혼입 (헤드 개스킷 등 점검)",
+    "explanation": "오일과 물이 섞이면 저어 놓은 우유처럼 뿌옇게 됩니다. 실린더 헤드 개스킷이 상했거나 실린더 블록·헤드에 금이 가서 냉각수가 오일 쪽으로 들어온 경우가 많습니다. 새 오일은 맑은 갈색이고, 오래 쓴 오일은 검게 변합니다.\n\n**틀린 선지**\n- 연료(가솔린)가 오일에 많이 섞였다: 연료가 섞이면 오일이 묽어지고 연료 냄새가 나지만 우유색이 되지는 않습니다.\n- 정상적인 새 오일이다: 새 오일은 맑고 투명한 갈색입니다.\n- 오일 첨가제가 많이 들어갔다: 첨가제 때문에 우유색이 되지는 않습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "오일점검"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-lubrication-0004",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "engine",
+    "chapterId": "lubrication",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "윤활 장치에서 유압 조절 밸브(릴리프 밸브)의 역할은?",
+    "choices": [
+      "오일 팬 안의 오일 양을 표시한다",
+      "뜨거워진 오일을 식힌다",
+      "오일 속의 쇳가루와 먼지를 걸러 낸다",
+      "오일 압력이 지나치게 높아지지 않게 조절한다"
+    ],
+    "answer": 4,
+    "oneLineConcept": "유압 조절 밸브 = 오일 압력이 너무 오르지 않게 일정하게",
+    "explanation": "오일 펌프는 엔진이 빨리 돌수록 더 많은 오일을 밀어내므로 압력이 계속 오를 수 있습니다. 유압 조절 밸브는 압력이 정해진 값을 넘으면 스프링을 밀고 열려 오일 일부를 되돌려 보내 압력을 일정하게 지킵니다.\n\n**틀린 선지**\n- 오일 속의 쇳가루와 먼지를 걸러 낸다: 오일 여과기(오일 필터)의 역할입니다.\n- 뜨거워진 오일을 식힌다: 오일 쿨러의 역할입니다.\n- 오일 팬 안의 오일 양을 표시한다: 오일 레벨 게이지(유면 표시기)의 역할입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "유압조절밸브"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-lubrication-0005",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "engine",
+    "chapterId": "lubrication",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "엔진의 유압(오일 압력)이 규정보다 높아지는 원인은?",
+    "choices": [
+      "크랭크축 베어링 간극이 너무 크다",
+      "오일에 연료가 섞여 묽어졌다",
+      "유압 조절 밸브 스프링의 장력이 너무 크다",
+      "엔진 오일 양이 부족하다"
+    ],
+    "answer": 3,
+    "oneLineConcept": "유압 상승: 조절 밸브 스프링 장력 과다·오일 점도 높음·통로 막힘",
+    "explanation": "유압 조절 밸브는 스프링이 미는 힘보다 오일 압력이 커져야 열립니다. 스프링 장력이 너무 크면 밸브가 늦게 열려 압력이 높게 유지됩니다. 오일이 너무 진하거나 오일 통로가 막혀도 유압이 오릅니다.\n\n**틀린 선지**\n- 엔진 오일 양이 부족하다: 오일이 모자라면 펌프가 공기를 빨아들여 유압이 낮아집니다.\n- 크랭크축 베어링 간극이 너무 크다: 베어링 간극이 크면 오일이 쉽게 새어 나가 유압이 낮아집니다.\n- 오일에 연료가 섞여 묽어졌다: 오일이 묽어지면 잘 새어 나가 유압이 낮아집니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "유압",
+      "고장진단"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-lubrication-0006",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "engine",
+    "chapterId": "lubrication",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "오일 펌프에서 나온 오일을 모두 오일 여과기로 거른 뒤 각 윤활부로 보내는 여과 방식은?",
+    "choices": [
+      "샨트식(복합식)",
+      "비산식",
+      "분류식",
+      "전류식"
+    ],
+    "answer": 4,
+    "oneLineConcept": "전류식 = 오일 전부 여과 후 윤활부로",
+    "explanation": "여과 방식은 세 가지입니다.\n\n- 전류식: 오일 전부를 여과기에 통과시킨 뒤 윤활부로 보냅니다. 여과기가 막힐 때를 대비해 바이패스 밸브가 있습니다.\n- 분류식: 일부만 걸러 오일 팬으로 되돌리고, 나머지는 거르지 않고 윤활부로 보냅니다.\n- 샨트식: 두 방식을 섞은 것입니다.\n\n**틀린 선지**\n- 분류식: 오일 일부만 걸러 오일 팬으로 되돌리는 방식입니다.\n- 샨트식(복합식): 전류식과 분류식을 섞은 방식입니다.\n- 비산식: 여과 방식이 아니라 크랭크축이 오일을 튀겨 바르는 윤활 방식입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "여과방식"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-lubrication-0007",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "engine",
+    "chapterId": "lubrication",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "엔진 오일 펌프의 종류로 쓰이지 않는 것은?",
+    "choices": [
+      "로터리식 펌프",
+      "기어식 펌프",
+      "베인식 펌프",
+      "원심식 펌프"
+    ],
+    "answer": 4,
+    "oneLineConcept": "오일 펌프: 기어식·로터리식·베인식·플런저식 (원심식은 물 펌프)",
+    "explanation": "오일 펌프는 진한 오일을 일정한 양씩 밀어 보내야 하므로 기어식, 로터리식(안쪽·바깥쪽 로터), 베인식, 플런저식처럼 부피를 밀어내는 방식을 씁니다. 날개를 돌려 원심력으로 보내는 원심식은 냉각수를 돌리는 물 펌프(워터 펌프)에 쓰입니다.\n\n**틀린 선지**\n- 기어식 펌프: 두 기어가 맞물려 오일을 밀어내는 오일 펌프입니다.\n- 로터리식 펌프: 안쪽·바깥쪽 로터가 돌며 오일을 밀어내는 오일 펌프입니다.\n- 베인식 펌프: 날개(베인)가 홈을 따라 움직이며 오일을 밀어내는 오일 펌프입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "오일펌프"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "automobile-maintenance-craftsman-lubrication-0008",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "engine",
+    "chapterId": "lubrication",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "엔진 오일 양을 점검하는 방법으로 알맞은 것은?",
+    "choices": [
+      "엔진을 빠르게 돌리는 중에 레벨 게이지를 뽑아 본다",
+      "오일이 L 표시보다 아래에 있어야 정상이다",
+      "평탄한 곳에서 엔진을 멈추고 몇 분 기다린 뒤 레벨 게이지의 F 와 L 사이에 있는지 본다",
+      "경사진 곳에 세운 채로 바로 확인한다"
+    ],
+    "answer": 3,
+    "oneLineConcept": "오일량: 평탄한 곳, 엔진 정지 후 잠시 뒤, F~L 사이",
+    "explanation": "엔진이 돌 때는 오일이 엔진 위쪽까지 퍼져 있어 정확한 양을 알 수 없습니다. 평탄한 곳에서 엔진을 끄고 오일이 오일 팬으로 내려올 때까지 잠시 기다린 뒤 레벨 게이지를 닦아 다시 꽂았다가 뽑아 봅니다. F(가득)와 L(부족) 사이면 정상이고 F 에 가까울수록 좋습니다.\n\n**틀린 선지**\n- 엔진을 빠르게 돌리는 중에 레벨 게이지를 뽑아 본다: 엔진이 돌 때는 오일이 위쪽에 퍼져 있어 실제보다 적게 보입니다.\n- 오일이 L 표시보다 아래에 있어야 정상이다: L 아래면 오일이 부족한 것이므로 보충해야 합니다.\n- 경사진 곳에 세운 채로 바로 확인한다: 차가 기울어 있으면 오일 면도 기울어 정확히 잴 수 없습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "오일점검"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-lubrication-0009",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "engine",
+    "chapterId": "lubrication",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "주행 중 계기판의 오일 압력 경고등이 켜졌다. 가장 먼저 의심할 원인은?",
+    "choices": [
+      "발전기 벨트가 약간 느슨하다",
+      "연료가 얼마 남지 않았다",
+      "엔진 오일 양이 크게 부족하다",
+      "냉각수가 조금 부족하다"
+    ],
+    "answer": 3,
+    "oneLineConcept": "오일 압력 경고등 = 유압 부족 → 즉시 정지하고 오일량 점검",
+    "explanation": "오일 압력 경고등은 엔진 안의 오일 압력이 정해진 값보다 낮을 때 켜집니다. 오일이 크게 부족하거나 오일 펌프·유압 스위치에 이상이 있을 때입니다. 계속 달리면 베어링이 눌어붙을 수 있으므로 안전한 곳에 세우고 엔진을 끈 뒤 오일 양부터 확인합니다.\n\n**틀린 선지**\n- 냉각수가 조금 부족하다: 냉각수 부족은 수온 게이지·과열로 나타납니다.\n- 연료가 얼마 남지 않았다: 연료 부족은 연료 경고등으로 알립니다.\n- 발전기 벨트가 약간 느슨하다: 발전기 벨트 문제는 충전 경고등으로 나타납니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "경고등",
+      "유압"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-lubrication-0010",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "engine",
+    "chapterId": "lubrication",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "정비하고 남은 폐엔진오일을 처리하는 방법으로 알맞은 것은?",
+    "choices": [
+      "물로 묽게 하여 하수구에 흘려보낸다",
+      "따로 모아 보관했다가 허가받은 폐기물 처리업체에 맡긴다",
+      "작업장 뒤편 흙에 묻는다",
+      "일반 쓰레기와 함께 버린다"
+    ],
+    "answer": 2,
+    "oneLineConcept": "폐유는 지정폐기물 → 분리 보관 후 전문 처리업체에 위탁",
+    "explanation": "폐엔진오일은 땅과 물을 심하게 오염시키므로 폐기물관리법에서 지정폐기물로 다룹니다. 새지 않는 통에 따로 모아 두었다가 허가받은 처리업체에 넘기고, 다른 폐기물과 섞지 않습니다.\n\n**틀린 선지**\n- 물로 묽게 하여 하수구에 흘려보낸다: 하수구로 버리면 하천과 지하수가 오염되고 법 위반입니다.\n- 일반 쓰레기와 함께 버린다: 일반 쓰레기로 버릴 수 없는 지정폐기물입니다.\n- 작업장 뒤편 흙에 묻는다: 땅에 묻으면 토양과 지하수가 오염됩니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "폐유",
+      "환경"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "automobile-maintenance-craftsman-lubrication-0011",
+    "certId": "automobile-maintenance-craftsman",
+    "subjectId": "engine",
+    "chapterId": "lubrication",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "피스톤 링과 밸브 가이드가 많이 마모된 엔진에서 나타나기 쉬운 현상은?",
+    "choices": [
+      "연료 소비량이 줄어든다",
+      "엔진 오일 소비가 늘고 배기가스에 흰 연기가 섞인다",
+      "오일 압력이 규정보다 높아진다",
+      "냉각수가 빠르게 줄어든다"
+    ],
+    "answer": 2,
+    "oneLineConcept": "링·밸브 가이드 마모 → 오일이 연소실로 올라가 탐(오일 소비↑)",
+    "explanation": "피스톤 링이 닳으면 실린더 벽의 오일이 연소실로 올라가고, 밸브 가이드가 닳으면 밸브 축을 따라 오일이 흘러 들어갑니다. 이 오일이 연료와 함께 타면서 오일이 빨리 줄고 배기에 흰(푸르스름한) 연기가 섞입니다.\n\n**틀린 선지**\n- 오일 압력이 규정보다 높아진다: 마모로 틈이 커지면 오일 압력은 오르지 않습니다.\n- 냉각수가 빠르게 줄어든다: 냉각수 감소는 헤드 개스킷·라디에이터 누수와 관계있습니다.\n- 연료 소비량이 줄어든다: 압축이 새어 출력이 떨어지므로 연료 소비는 오히려 늘기 쉽습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-04",
+    "tags": [
+      "오일소비",
+      "고장진단"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  }
+]
