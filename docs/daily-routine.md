@@ -20,6 +20,11 @@
 | 내용 다듬기 | [refine.md](refine.md). 순서·기록 [reports/refine-progress.md](../reports/refine-progress.md) |
 | 그림 보강 | 다듬기 기간에는 다듬는 자격증 안에서 1건 ([refine.md](refine.md) 3-6). 기간이 끝나면 새벽 루틴 맨 끝에 하루 1건 (아래 "2-2. 그림 보강"). 진행 기록 [reports/image-progress.md](../reports/image-progress.md) |
 
+> **예약 루틴 지시문과 다를 때 (2026-11-03)**: 새벽 루틴 지시문에는 "한국 자격증 1개 + 미국 자격증 1개를 추가한다", 오후 루틴 지시문에는 "미국 2개"라고 적혀 있다.
+> 지시문 스스로 "중지·속도 변경은 docs/routine-status.md 로만 정한다"고 하므로, **내용 다듬기 기간에는 이 문서와 routine-status.md 를 따른다**:
+> 새벽 = 내용 다듬기 1개 + 새 자격증 1개(한국·미국 번갈아), 오후 = 내용 다듬기 1개 + 미국 1개. 지시문의 "그림 보강 1건(7-1)"은 다듬는 자격증 안에서 한다.
+> 새 자격증 검사에는 `npm run check:unique -- {slug}` 를 더한다. 기간이 끝나면 지시문 그대로 한다.
+
 이 문서는 루틴이 매번 읽고 그대로 따르는 지시문이다. 실행하는 쪽은 이전 실행을 기억하지 못하므로
 상태는 전부 `reports/routine-progress.md` 와 git 에 남긴다.
 
