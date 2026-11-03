@@ -16,13 +16,14 @@
 | 날짜 | 자격증 | 전 | 후 | 함정 수 | 검증(문장/통과/뺌) | 비고 |
 |---|---|---|---|---|---|---|
 | 2026-11-03 | KR forklift-operator | 8 / 14 / 12 / 0 | 7 / 0 / 0 / 12 | 34 | 48 / 48 / 0 (수정 후 통과 1) | 첫 다듬기 (회장 실행 당일, 수동). 그림 보강 안 함. 같은 날 단원 페이지 합치기(mergedAt) 첫 적용: 12단원 모두 /concepts/{단원} 으로 합침, 배포 파일 -12 |
+| 2026-11-04 | US dmv-permit-california | 4 / 1 / 5 / 0 | 2 / 0 / 0 / 5 | 15 | 65 / 65 / 0 (수정 후 통과 2) | 새벽 루틴. 5단원 모두 /concepts/{단원} 으로 합침(mergedAt), printable, basisYear 2026. 그림 보강 해당 없음 |
 
 ## 순서 (80개)
 
 | # | 나라 | slug | 이름 | 단원 수 | 상태 |
 |---|---|---|---|---|---|
 | 1 | KR | forklift-operator | 지게차운전기능사 | 12 | 2026-11-03 완료 |
-| 2 | US | dmv-permit-california | California DMV Permit Test | 5 | |
+| 2 | US | dmv-permit-california | California DMV Permit Test | 5 | 2026-11-04 완료 |
 | 3 | KR | electrician-craftsman | 전기기능사 | 17 | |
 | 4 | US | dmv-permit-texas | Texas DMV Permit Test | 5 | |
 | 5 | KR | computer-literacy-2 | 컴퓨터활용능력 2급 | 9 | |
