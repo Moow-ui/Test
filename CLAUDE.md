@@ -15,6 +15,7 @@
 | 코드 구조, 화면·다국어·출제·SEO·로그인·배포 규칙 | [docs/code-rules.md](docs/code-rules.md) |
 | 화면 변경을 되돌리기 | [docs/rollback.md](docs/rollback.md) |
 | 수험 정보 글 쓰기 (매일 23:00 루틴) | [docs/daily-guide.md](docs/daily-guide.md) |
+| 기존 자격증 내용 다듬기 (2026-11-04 ~ 늦어도 2027-02-28) | [docs/refine.md](docs/refine.md) |
 
 ## 기본
 
@@ -24,8 +25,8 @@
 - Next.js 16 은 예전과 다르다. 코드를 쓰기 전에 `node_modules/next/dist/docs/` 를 확인한다.
 - 타겟: 40~50대 현장 근무자. 쉬는 시간 5~10분, PC·모바일 동등, 큰 글자, 높은 대비, 글자가 있는 버튼, 애니메이션 없음.
 - 로그인 없이 모든 기능을 쓸 수 있어야 한다.
-- 자격증 메인·개념 정리·단원 핵심정리 제목 아래 "검사 완료" 날짜(한국·미국 모두)는 회장이 매일 직접 검사한 날이다. 빌드한 날(한국시간)로 자동으로 바뀐다.
-  회장이 "오늘 검사 못 했다"고 하면 그날을 `config/inspection.ts` 의 `SKIPPED_DATES` 에 적는다.
+- 자격증 메인·개념 정리·단원 핵심정리 제목 아래에는 "○○년 출제기준 반영"이 나온다 (`meta.json` 의 `basisYear`, 없으면 추가한 해).
+  매일 바뀌던 "검사 완료" 날짜는 2026-11-03 에 없앴다 (내용이 안 바뀌었는데 날짜만 매일 바뀌면 구글이 꾸민 최신성으로 볼 수 있어서).
 
 ## 가장 중요한 규칙 6가지
 
@@ -83,6 +84,7 @@ scripts/                   validate-data, build-data, import-questions, convert-
 - **문제는 직접 만든 AI 예상문제(`source: "predicted"`)와 공개 기출(`source: "past"`)이다.** 기출은 시행기관이 공개한 것만, 최근 10년, 문항마다 출처(기관·연도·회차)와 이용 조건(예: 공공누리 제1유형)을 적는다. 유출 문제(덤프)·복원 문제 금지, 기출을 지어내지 않는다 ([docs/data-rules.md](docs/data-rules.md) 7장).
 - **검수 표시**: 분리된 AI 검증(add-cert.md A-5)을 통과한 문제는 `reviewStatus: "verified"` + `reviewedAt`(통과 날짜) → "예상문제 · 검수 완료 ⓘ". 기록이 없으면 `unverified` → "검수 전".
 - 해설은 "핵심 설명(계산은 번호 목록) + **틀린 선지** 목록" 형식. 50대가 이해할 수 있는 쉬운 말로.
+- **자주 틀리는 함정** (`chapters.json` 단원의 `pitfalls`): 그 단원 문제의 틀린 선지에서 뽑고, 작성과 분리된 검증을 통과한 것만 싣는다.
 - **운영진 학습 팁**: 자격증마다 3개(공부 순서 · 자주 틀리는 단원 · 시험 당일 팁), 각 2~4문장. `meta.json` 의 `studyTips`.
   그 자격증의 출제기준·단원 데이터(`chapters.json`, `examInfo`)에 근거해 쓰고, 확인할 수 없는 합격률·통계는 쓰지 않는다.
 - **이용자 후기**: 실제 이용자가 쓴 것만. 후기 글은 화면에 그대로 보이게 하되 별점 구조화 데이터(Review·AggregateRating)는 넣지 않는다.
@@ -98,6 +100,11 @@ scripts/                   validate-data, build-data, import-questions, convert-
 - 개발 서버가 켜져 있으면 배포용 빌드(`opennextjs-cloudflare build`)가 실패한다. 끄고 실행한다.
 
 ## 매일 자격증 추가 루틴 (2026-10-02 시작)
+
+- **내용 다듬기 기간 (2026-11-04 ~ 순서가 다 끝나는 날, 목표 2027-01-31 · 최종 2027-02-28. 2026-11-03 회장 결정)**: 2026-10-26 무렵 구글 노출이 크게 줄어,
+  새벽 루틴은 **기존 자격증 1개 내용 다듬기([docs/refine.md](docs/refine.md)) + 새 자격증 1개(한국·미국 번갈아)** 를 한다. 그림 보강은 다듬기 안에서 한다.
+  다듬기 = 주소·제목·설명·화면은 그대로 두고, 단원마다 "자주 틀리는 함정"(`pitfalls`)을 더하고 요점↔개념 정리·다른 자격증과 같은 문장을 줄인다. 커밋 `refine: {slug}`.
+  기간이 끝나면 저절로 아래 평소 규칙(한국 1 + 미국 1)으로 돌아간다. 2026-11-04 이후 새 자격증은 처음부터 이 기준으로 만든다 (`npm run check:unique`, add-cert.md A-6-2).
 
 - 매일 한국시간 새벽 04:30(새벽 루틴)에 클라우드 루틴이 한국 1개 + 미국 1개를 추가한다.
   오후 13:54(오후 루틴)는 **2026-10-13부터 평소 꺼 둠** (2026-10-17 결정: 기본은 새벽 루틴만, 사용량에 여유가 있으면 회장이 가끔 하루씩 켠다). 규칙을 고칠 때는 오후 루틴 쪽도 계속 같이 고친다.
@@ -138,5 +145,6 @@ npm run images:render -- {slug}  그림 검증용 PNG 만들기 (assets/*.svg �
 npm run check:cert -- {slug}  자격증 게시 기준 검사 (초급·중급·고급 각 30문제 이상, 실전 1회분 이상)
 npm run check:meta     빌드 결과의 title·description 중복, noindex, sitemap, hreflang 검사
 npm run check:deploy-size  빌드 결과의 Cloudflare 배포 파일 수 (한도 근처면 "모드: 보강")
+npm run check:unique [-- {slug}]  페이지 고유 내용 검사 (다른 자격증과 같은 문장, 요점↔개념 정리 겹침, 단원 글 길이, 함정)
 npx wrangler deploy --dry-run   Cloudflare 배포 묶음 확인 (실제 배포는 push 하면 자동)
 ```

@@ -42,6 +42,8 @@ public/data/                      빌드 때 자동으로 만든다 (git 에 올
 | `trademarkNotice` | (선택) 시행기관의 상표 사용 규정에 따른 상표 고지 문장. 자격증 페이지 아래에 그대로 나온다 |
 | `order` | 목록 순서 (작을수록 앞). 문제가 준비된 자격증은 이 값과 상관없이 항상 앞에 온다 |
 | `updatedAt` | 내용 최종 수정일 `YYYY-MM-DD` (sitemap) |
+| `refinedAt` | (선택) 내용 다듬기를 마친 날 `YYYY-MM-DD` ([refine.md](refine.md)). 있으면 고유 내용 검사를 오류로 적용하고, 단원 페이지에 공개 기출 출제 기록(연도별 문항 수, 데이터에서 세기만)을 보여 준다. 2026-11-04 이후 새 자격증은 `addedAt` 과 같은 날을 적는다 |
+| `basisYear` | (선택) 내용이 기준으로 삼은 시험 연도. 제목 아래 "2026년 출제기준 반영"으로 나온다. 공식 출제기준·법령을 그해에 확인했을 때만 올린다. 없으면 `addedAt` 의 연도 |
 | `addedAt` | 문제를 풀 수 있게 추가한 날 `YYYY-MM-DD` (한국시간). 사이트 하단 "기록"(`/{lang}/log`)에 날짜별로 나온다 |
 | `examInfo` | `totalQuestions`, `timeLimitMinutes`, `format`, `choiceCount`(선지 수, 기본 4), `passCriteria { averageScore, subjectMinScore(과락 없으면 null), description, shortLabel(선택: 결과 화면 "합격선 통과 (…)" 괄호 안, 예 "2종 보통 60점") }` |
 | `content` | `eligibility`, `intro`, `trendSummary`, `studyTip`, `faqs[3~5]` |
@@ -66,7 +68,10 @@ public/data/                      빌드 때 자동으로 만든다 (git 에 올
 
 - **Subject**: `id`, `name`, `questionCount`(실제 시험의 과목 문항 수), `chapters[]`
   - 과목 `questionCount` 의 합 = `examInfo.totalQuestions`
-- **Chapter**: `id`, `name`, `importance`(1~5), `examWeight`(과목 내 %, 합계 100), `summary`, `keyPoints[]`
+- **Chapter**: `id`, `name`, `importance`(1~5), `examWeight`(과목 내 %, 합계 100), `summary`, `keyPoints[]`, `pitfalls[]`(선택)
+  - **pitfalls**: 자주 틀리는 함정 최대 3개 `{ trap, fact }`. `trap` = 수험생이 고르기 쉬운 틀린 생각 한 문장(8~160자), `fact` = 바른 내용과 왜 헷갈리는지(20~320자).
+    그 단원 문제의 틀린 선지에서 뽑고, 정답·해설과 같은 사실만 쓴다. 작성과 분리된 검증을 통과한 것만 적는다 ([refine.md](refine.md) 4번). 단원 핵심정리 페이지에 "자주 틀리는 함정" 상자로 나온다.
+  - `keyPoints` 는 "외울 것"(숫자·조건·구분 위주), 개념 정리(`concepts.json`)는 "설명"이다. 두 곳에 같은 문장을 쓰지 않는다
   - 단원 id 는 자격증 안에서 유일해야 한다. `past`, `quiz`, `cbt`, `notes`, `opengraph-image` 는 쓸 수 없다 (URL 충돌).
   - 단원 id 도 한번 정하면 바꾸지 않는다 (URL 과 문제 파일 이름에 쓰인다).
 
@@ -186,6 +191,9 @@ public/data/                      빌드 때 자동으로 만든다 (git 에 올
 - 관련 자격증 참조, 모의고사의 문제 id, 그림 파일 존재
 - 문제가 있는 자격증에 운영진 학습 팁(`studyTips`)이 있는지
 - 검수 표시: `reviewStatus: "verified"` 와 `reviewedAt` 이 짝이 맞는지
+- 고유 내용 (`lib/content-quality.ts`, 자세히는 `npm run check:unique -- {slug}`): 요점과 개념 정리의 같은 문장, 같은 나라 다른 자격증과 같은 문장(5% 이하),
+  단원 핵심정리 페이지의 고유 글 길이(한국 300자·미국 600자 이상), 함정 있는 단원 절반 이상.
+  `refinedAt` 이 있거나 2026-11-04 이후 추가한 자격증만 오류로 막고, 나머지는 기준 미달 개수만 보여 준다
 
 ## 7. 콘텐츠 정책
 
