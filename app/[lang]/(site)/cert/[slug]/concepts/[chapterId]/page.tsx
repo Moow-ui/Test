@@ -141,6 +141,19 @@ export default async function ConceptChapterPage({ params }: Props) {
         </section>
       )}
 
+      <section aria-labelledby="concepts-title">
+        <h2 id="concepts-title" className="text-lg font-bold">
+          {m.concepts.coreTitle}
+        </h2>
+        <ConceptCards locale={lang} concepts={entry.concepts} />
+      </section>
+
+      {entry.figures && <ConceptFigures locale={lang} figures={entry.figures} />}
+
+      {!merged && <ConceptPoints locale={lang} points={entry.points} />}
+
+      {entry.compare && <ConceptCompare locale={lang} compare={entry.compare} />}
+
       {/* 합친 페이지: 핵심정리 → 자주 틀리는 함정. 함정이 있으면 시험 포인트(개념서에 그대로 있음)는 함정과 겹치므로 요점만,
           함정이 없으면 요점 + 시험 포인트(같은 말은 하나만) */}
       {merged && (
@@ -159,29 +172,8 @@ export default async function ConceptChapterPage({ params }: Props) {
         </>
       )}
 
-      <section aria-labelledby="concepts-title">
-        <h2 id="concepts-title" className="text-lg font-bold">
-          {m.concepts.coreTitle}
-        </h2>
-        <ConceptCards locale={lang} concepts={entry.concepts} />
-      </section>
-
-      {entry.figures && <ConceptFigures locale={lang} figures={entry.figures} />}
-
-      {!merged && <ConceptPoints locale={lang} points={entry.points} />}
-
-      {entry.compare && <ConceptCompare locale={lang} compare={entry.compare} />}
-
       {merged && (
         <>
-          <ChapterWeight
-            locale={lang}
-            importance={chapter.importance}
-            subjectName={subject.name}
-            subjectTotal={subject.questionCount}
-            examWeight={chapter.examWeight}
-          />
-          {cert.refinedAt && <PastTrend locale={lang} chapterName={chapter.name} questions={pastInChapter} />}
           {mergedExamples.length > 0 && (
             <section aria-labelledby="examples-title" className="space-y-4">
               <h2 id="examples-title" className="text-xl font-bold">
@@ -273,6 +265,20 @@ export default async function ConceptChapterPage({ params }: Props) {
           </Link>
         </p>
       </nav>
+
+      {/* 합친 페이지: 중요도·출제 비중(+ 공개 기출 기록)은 맨 아래 (2026-11-03 회장 요청) */}
+      {merged && (
+        <>
+          <ChapterWeight
+            locale={lang}
+            importance={chapter.importance}
+            subjectName={subject.name}
+            subjectTotal={subject.questionCount}
+            examWeight={chapter.examWeight}
+          />
+          {cert.refinedAt && <PastTrend locale={lang} chapterName={chapter.name} questions={pastInChapter} />}
+        </>
+      )}
 
       <IssuerNotice locale={lang} cert={cert} />
 
