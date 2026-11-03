@@ -72,6 +72,14 @@ export const LEVEL_CHOICE_COUNT: Record<(typeof LEVELS)[number], number> = {
 /** 문제 파일 하나에 넣을 수 있는 최대 문항 수. 넘으면 {chapterId}-2.json, -3.json 으로 나눈다 */
 export const MAX_QUESTIONS_PER_FILE = 300;
 
+/** 자주 틀리는 함정 하나: 수험생이 고르기 쉬운 틀린 생각 + 바른 내용 */
+export const pitfallSchema = z.object({
+  /** 헷갈리는 생각 (틀린 선지에서 나온 것. 예: "점멸 빨간불은 서행하라는 뜻이다") */
+  trap: z.string().min(8).max(160),
+  /** 바른 내용과 왜 헷갈리는지 */
+  fact: z.string().min(20).max(320),
+});
+
 export const chapterSchema = z.object({
   id: slugSchema.refine((v) => !RESERVED_CHAPTER_IDS.includes(v), {
     message: `단원 id로 쓸 수 없는 이름입니다 (${RESERVED_CHAPTER_IDS.join(", ")})`,
@@ -85,6 +93,11 @@ export const chapterSchema = z.object({
   summary: z.string().min(1),
   /** 단원 페이지에 보여 줄 핵심 정리 항목 */
   keyPoints: z.array(z.string().min(1)).default([]),
+  /**
+   * 자주 틀리는 함정 2~3개 (단원 핵심정리 페이지의 "자주 틀리는 함정" 상자).
+   * 이 단원 문제의 틀린 선지에서 뽑는다. 작성과 분리된 검증을 통과한 것만 적는다 (docs/refine.md).
+   */
+  pitfalls: z.array(pitfallSchema).max(3).optional(),
 });
 
 export const subjectSchema = z
@@ -236,6 +249,19 @@ export const certMetaSchema = certSummarySchema.extend({
     .string()
     .regex(/^\d{4}-\d{2}-\d{2}$/)
     .optional(),
+  /**
+   * 내용 다듬기를 마친 날 YYYY-MM-DD (docs/refine.md). 있으면 고유 내용 검사(lib/content-quality.ts)를 오류로 적용하고,
+   * 단원 페이지에 기출 출제 경향 상자를 보여 준다. 2026-11-04 이후 추가된 자격증은 처음부터 다듬은 방식으로 만들고 이 값을 적는다.
+   */
+  refinedAt: z
+    .string()
+    .regex(/^\d{4}-\d{2}-\d{2}$/)
+    .optional(),
+  /**
+   * 내용이 기준으로 삼은 시험 연도 (제목 아래 "2026년 출제기준 반영"). 공식 출제기준·법령을 그해에 확인했을 때만 올린다.
+   * 없으면 addedAt 의 연도를 쓴다.
+   */
+  basisYear: z.number().int().min(2020).max(2100).optional(),
   examInfo: examInfoSchema.optional(),
   /** 자격증 소개·출제 경향·FAQ */
   content: certContentSchema.optional(),

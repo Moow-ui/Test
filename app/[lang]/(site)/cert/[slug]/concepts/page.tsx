@@ -7,7 +7,7 @@ import { Stars } from "@/components/Stars";
 import { ConceptByline, ConceptNote, ExamSummary } from "@/components/concepts/ConceptParts";
 import { NoteNavigator } from "@/components/concepts/NoteNavigator";
 import { IssuerNotice } from "@/components/cert/IssuerNotice";
-import { InspectedBadge } from "@/components/cert/InspectedBadge";
+import { BasisBadge } from "@/components/cert/BasisBadge";
 import { getCertificationIn, getConcepts } from "@/lib/data";
 import { fmt, getMessages, isLocale, localeCountry, localePath } from "@/lib/i18n";
 import { articleJsonLd, certMainMeta, certOgImagePath, conceptsMeta, toMetadata } from "@/lib/seo";
@@ -82,7 +82,7 @@ export default async function ConceptsPage({ params }: Props) {
             meta.h1
           )}
         </h1>
-        <InspectedBadge lang={lang} />
+        <BasisBadge lang={lang} year={cert.basisYear} />
       </header>
 
       {/* 단원 목차: 과목별, 중요도 ★ 와 과목 안 출제 비중(추정) */}

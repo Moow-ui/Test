@@ -231,6 +231,8 @@ export async function getCertification(id: string): Promise<Certification | null
     studyTips: cert.meta.studyTips ?? null,
     notes: cert.notes,
     updatedAt: hasDetail ? (cert.meta.updatedAt ?? null) : null,
+    refinedAt: cert.meta.refinedAt ?? null,
+    basisYear: cert.meta.basisYear ?? (cert.meta.addedAt ? Number(cert.meta.addedAt.slice(0, 4)) : null),
     writtenExam: cert.meta.writtenExam,
     ready: item.ready,
   };

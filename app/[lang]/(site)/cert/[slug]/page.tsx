@@ -8,7 +8,7 @@ import { AnalysisPanel } from "@/components/cert/AnalysisPanel";
 import { CertBoxes } from "@/components/cert/CertBoxes";
 import { ANALYSIS_ANCHOR } from "@/components/cert/anchors";
 import { IssuerNotice } from "@/components/cert/IssuerNotice";
-import { InspectedBadge } from "@/components/cert/InspectedBadge";
+import { BasisBadge } from "@/components/cert/BasisBadge";
 import { RelatedCerts } from "@/components/cert/RelatedCerts";
 import { StudyTips } from "@/components/cert/StudyTips";
 import { ReviewSection } from "@/components/reviews/ReviewSection";
@@ -88,7 +88,7 @@ export default async function CertPage({ params }: Props) {
       <div className="text-center">
         <h1 className="text-xl font-bold leading-snug tracking-tight sm:text-2xl">{meta.h1}</h1>
         {cert.ready && cert.examInfo && <p className="mt-1 text-sm text-ink-sub">{m.cert.h1Sub}</p>}
-        <InspectedBadge lang={lang} />
+        <BasisBadge lang={lang} year={cert.basisYear} />
       </div>
 
       {/* 가장 먼저 보이는 큰 박스: 초급 / 중급 / 고급, 그 아래 실전 문제풀이 */}

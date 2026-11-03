@@ -1,5 +1,7 @@
 import { z } from "zod";
 import { GUIDE_MAX_SIMILARITY, guideSimilarity } from "../guide-quality";
+import { certSentenceKeys, checkCertContent, mustPassContentCheck } from "../content-quality";
+import { loadCertTexts } from "./content-texts";
 import {
   COUNTRIES,
   LEVELS,
@@ -254,6 +256,26 @@ export async function validateData(store: DataStore): Promise<ValidationResult> 
 
   // slug 는 나라가 달라도 겹치면 안 된다 (문제 id·배포 파일 주소가 slug 로 시작한다)
   errors.push(...checkCertList(metas));
+
+  // 자격증 페이지 고유 내용 (lib/content-quality.ts, docs/refine.md).
+  // 다듬은 자격증·2026-11-04 이후 새 자격증만 오류. 나머지는 개수만 보여 준다 (다른 루틴이 멈추지 않게)
+  const texts = await loadCertTexts(store);
+  const keysById = new Map(texts.map((e) => [e.text.id, certSentenceKeys(e.text)]));
+  let strictCount = 0;
+  let pendingWithIssues = 0;
+  for (const e of texts) {
+    const sameCountry = new Map([...keysById].filter(([id]) => texts.find((x) => x.text.id === id)?.text.country === e.text.country));
+    const report = checkCertContent(e.text, sameCountry);
+    if (mustPassContentCheck(e)) {
+      strictCount++;
+      for (const p of report.problems) errors.push(`${e.text.country}/${e.text.id} 고유 내용 → ${p} (npm run check:unique -- ${e.text.id})`);
+    } else if (report.problems.length > 0) {
+      pendingWithIssues++;
+    }
+  }
+  lines.push(
+    `\n[고유 내용] 다듬은·새 자격증 ${strictCount}개 검사 · 아직 다듬지 않아 기준 미달인 자격증 ${pendingWithIssues}개 (경고, docs/refine.md)`,
+  );
 
   // 수험 정보 글 (data/guides/{lang}/{slug}.json)
   const guideCounts: string[] = [];
