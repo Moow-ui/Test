@@ -6,8 +6,10 @@ import { Stars } from "@/components/Stars";
 import { StaticQuestion } from "@/components/StaticQuestion";
 import { IssuerNotice } from "@/components/cert/IssuerNotice";
 import { BasisBadge } from "@/components/cert/BasisBadge";
+import { ChapterPitfalls, PastTrend } from "@/components/cert/ChapterExtras";
 import { ANALYSIS_ANCHOR } from "@/components/cert/anchors";
-import { getCertificationIn, getConcepts, getQuestions } from "@/lib/data";
+import { getCertificationIn, getConcepts, getMergedChapterIds, getQuestions } from "@/lib/data";
+import { chapterHref } from "@/lib/chapter-link";
 import { fmt, getMessages, isLocale, localeCountry, localePath } from "@/lib/i18n";
 import { pickChapterRepresentatives } from "@/lib/representative";
 import { certMainMeta, certOgImagePath, chapterMeta, toMetadata } from "@/lib/seo";
@@ -55,11 +57,6 @@ export default async function ChapterPage({ params }: Props) {
   const inChapter = questions.filter((q) => q.chapterId === chapter.id);
   const pastInChapter = inChapter.filter((q) => q.source === "past" && q.pastInfo);
   const hasPast = pastInChapter.length > 0;
-  // 연도별 기출 문항 수 (최근 연도가 앞)
-  const pastByYear = [...pastInChapter.reduce((acc, q) => {
-    const year = q.pastInfo!.year;
-    return acc.set(year, (acc.get(year) ?? 0) + 1);
-  }, new Map<number, number>())].sort((a, b) => b[0] - a[0]);
   const shown = pickChapterRepresentatives(cert.subjects, questions, chapter.id);
   const meta = chapterMeta(lang, cert, subject, chapter, hasPast);
   const mainMeta = certMainMeta(lang, cert);
@@ -75,6 +72,7 @@ export default async function ChapterPage({ params }: Props) {
   const next = allChapters[position + 1];
   const quizCount = Math.min(5, inChapter.length);
   const certPath = mainMeta.path;
+  const merged = await getMergedChapterIds(cert.id);
   // 이 단원의 개념 정리(검증 통과)가 있으면 그 페이지로 가는 링크를 둔다
   const hasConcept = !!(await getConcepts(cert.id))?.chapters.some((c) => c.id === chapter.id);
   // 핵심정리 작성 주체: 운영진 작성 / AI 작성 · 운영진 검수 / AI 작성 · 운영진 검수 전
@@ -121,45 +119,9 @@ export default async function ChapterPage({ params }: Props) {
         </section>
       )}
 
-      {/* 자주 틀리는 함정: 이 단원 문제의 틀린 선지에서 뽑아 검증한 것 (chapters.json 의 pitfalls, docs/refine.md) */}
-      {chapter.pitfalls && chapter.pitfalls.length > 0 && (
-        <section aria-labelledby="pitfalls-title" className="card space-y-4 p-6">
-          <h2 id="pitfalls-title" className="text-lg font-bold">
-            {fmt(m.chapter.pitfallsTitle, { name: chapter.name })}
-          </h2>
-          <ul className="space-y-4">
-            {chapter.pitfalls.map((p) => (
-              <li key={p.trap} className="space-y-1">
-                <p>
-                  <span className="font-bold text-ink-sub">{m.chapter.pitfallTrap}: </span>
-                  {p.trap}
-                </p>
-                <p>
-                  <span className="font-bold text-accent">{m.chapter.pitfallFact}: </span>
-                  {p.fact}
-                </p>
-              </li>
-            ))}
-          </ul>
-        </section>
-      )}
-
-      {/* 공개 기출 출제 기록: 수록한 기출을 세어서만 보여 준다 (지어낸 수치 없음). 내용 다듬기를 마친 자격증만 */}
-      {cert.refinedAt && pastByYear.length > 0 && (
-        <section aria-labelledby="past-trend-title" className="card space-y-2 p-6">
-          <h2 id="past-trend-title" className="text-lg font-bold">
-            {fmt(m.chapter.pastTrendTitle, { name: chapter.name })}
-          </h2>
-          <p>{fmt(m.chapter.pastTrendText, { n: pastInChapter.length })}</p>
-          <ul className="flex flex-wrap gap-x-4 gap-y-1">
-            {pastByYear.map(([year, n]) => (
-              <li key={year} className="font-bold">
-                {fmt(m.chapter.pastTrendYear, { year, n })}
-              </li>
-            ))}
-          </ul>
-        </section>
-      )}
+      {/* 자주 틀리는 함정 · 공개 기출 출제 기록(내용 다듬기를 마친 자격증만) */}
+      <ChapterPitfalls locale={lang} chapterName={chapter.name} pitfalls={chapter.pitfalls} />
+      {cert.refinedAt && <PastTrend locale={lang} chapterName={chapter.name} questions={pastInChapter} />}
 
       {/* 중요도·출제 비중 상자와 단원 소개는 "꼭 외우세요" 아래에 둔다 */}
       <div className="space-y-4">
@@ -222,14 +184,14 @@ export default async function ChapterPage({ params }: Props) {
       <nav aria-label={m.chapter.otherLabel} className="space-y-4">
         <div className="grid gap-2 sm:grid-cols-2">
           {prev ? (
-            <Link href={`${certPath}/${prev.chapter.id}`} className="btn justify-start text-left">
+            <Link href={chapterHref(certPath, prev.chapter.id, merged)} className="btn justify-start text-left">
               {fmt(m.chapter.prev, { name: prev.chapter.name })}
             </Link>
           ) : (
             <span />
           )}
           {next && (
-            <Link href={`${certPath}/${next.chapter.id}`} className="btn justify-end text-right">
+            <Link href={chapterHref(certPath, next.chapter.id, merged)} className="btn justify-end text-right">
               {fmt(m.chapter.next, { name: next.chapter.name })}
             </Link>
           )}
@@ -240,7 +202,7 @@ export default async function ChapterPage({ params }: Props) {
             .filter((c) => c.id !== chapter.id)
             .map((c) => (
               <li key={c.id}>
-                <Link href={`${certPath}/${c.id}`} className="link">
+                <Link href={chapterHref(certPath, c.id, merged)} className="link">
                   {c.name}
                 </Link>
               </li>

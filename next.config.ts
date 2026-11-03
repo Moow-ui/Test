@@ -1,6 +1,7 @@
 import { initOpenNextCloudflareForDev } from "@opennextjs/cloudflare";
 import type { NextConfig } from "next";
 import { DOMAIN } from "./config/brand";
+import { mergedChapterRedirects } from "./lib/data/redirects";
 
 /** 언어 경로가 생기기 전의 주소. 모두 한국어 주소(/ko/...)로 옮겼다 */
 const LEGACY_PATHS = ["/cert/:path*", "/notes", "/profile"];
@@ -35,6 +36,8 @@ const nextConfig: NextConfig = {
       },
       ...LEGACY_PATHS.map((source) => ({ source, destination: `/ko${source}`, statusCode: 301 as const })),
       ...OLD_ADMIN_PATHS.map((source) => ({ source, destination: "/admin", statusCode: 301 as const })),
+      // 단원 페이지 합치기: 합친 자격증의 /{단원} → /concepts/{단원} (docs/refine.md 3-7)
+      ...mergedChapterRedirects().map((r) => ({ ...r, statusCode: 301 as const })),
     ];
   },
 };

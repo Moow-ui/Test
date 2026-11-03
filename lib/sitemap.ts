@@ -1,5 +1,5 @@
 import { INFO_PAGE_IDS, INFO_UPDATED } from "@/content/pages";
-import { getConcepts, getGuides, getReadyCertifications } from "./data";
+import { getConcepts, getGuides, getMergedChapterIds, getReadyCertifications } from "./data";
 import { isGuideExpired } from "./guide-quality";
 import { LOCALES, localeCountry, localePath, type Locale } from "./i18n";
 import { languageAlternates } from "./seo";
@@ -43,8 +43,11 @@ export async function sitemapEntries(locale: Locale): Promise<SitemapEntry[]> {
       { path: base, lastModified, changeFrequency: "weekly", priority: 0.9 },
       { path: `${base}/past`, lastModified, changeFrequency: "weekly", priority: 0.8 },
     );
+    // 단원 핵심정리. 단원 페이지를 합친 단원은 개념 정리 단원 페이지로 영구 이동하므로 넣지 않는다
+    const merged = await getMergedChapterIds(cert.id);
     for (const subject of cert.subjects) {
       for (const chapter of subject.chapters) {
+        if (merged.has(chapter.id)) continue;
         entries.push({ path: `${base}/${chapter.id}`, lastModified, changeFrequency: "monthly", priority: 0.6 });
       }
     }
@@ -55,7 +58,8 @@ export async function sitemapEntries(locale: Locale): Promise<SitemapEntry[]> {
       for (const chapter of concepts.chapters) {
         entries.push({
           path: `${base}/concepts/${chapter.id}`,
-          lastModified: chapter.verifiedAt,
+          // 합친 단원은 합친 날에도 내용이 바뀌었다
+          lastModified: merged.has(chapter.id) && cert.mergedAt && cert.mergedAt > chapter.verifiedAt ? cert.mergedAt : chapter.verifiedAt,
           changeFrequency: "monthly",
           priority: 0.6,
         });

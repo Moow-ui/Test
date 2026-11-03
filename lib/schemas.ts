@@ -262,6 +262,15 @@ export const certMetaSchema = certSummarySchema.extend({
    * 없으면 addedAt 의 연도 (addedAt 도 없으면 updatedAt 의 연도)를 쓴다.
    */
   basisYear: z.number().int().min(2020).max(2100).optional(),
+  /**
+   * 단원 페이지를 하나로 합친 날 YYYY-MM-DD (docs/refine.md 3-7). 있으면 개념 정리가 있는 단원은
+   * 개념 정리 단원 페이지(/concepts/{단원})가 단원 핵심정리 내용까지 보여 주고, /{단원} 은 그쪽으로 영구 이동한다.
+   * 자격증마다 내용 다듬기 하는 날 적는다 (한꺼번에 바꾸지 않는다, 2026-11-03 회장 결정).
+   */
+  mergedAt: z
+    .string()
+    .regex(/^\d{4}-\d{2}-\d{2}$/)
+    .optional(),
   examInfo: examInfoSchema.optional(),
   /** 자격증 소개·출제 경향·FAQ */
   content: certContentSchema.optional(),

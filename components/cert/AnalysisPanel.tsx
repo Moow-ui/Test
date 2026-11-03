@@ -64,32 +64,33 @@ export function AnalysisPanel({
                   const label = fmt(m.cert.chapterLabel, { no, name: chapter.name });
                   const hasConcept = conceptChapterIds.includes(chapter.id);
                   const conceptPath = `/cert/${certId}/concepts/${chapter.id}`;
+                  const stats = (
+                    <span className="block text-sm">
+                      <Stars value={chapter.importance} />
+                      <span className="ml-2 font-bold text-ink-sub">{fmt(m.cert.weight, { n: chapter.examWeight })}</span>
+                    </span>
+                  );
                   return (
-                    <li key={chapter.id} className="flex items-start justify-between gap-2">
-                      <span className="min-w-0">
-                        {linkChapters ? (
-                          <Link href={localePath(locale, hasConcept ? conceptPath : `/cert/${certId}/${chapter.id}`)} className="link">
-                            {label}
-                          </Link>
-                        ) : (
-                          <span className="font-bold">{label}</span>
-                        )}
-                        <span className="block text-sm">
-                          <Stars value={chapter.importance} />
-                          <span className="ml-2 font-bold text-ink-sub">
-                            {fmt(m.cert.weight, { n: chapter.examWeight })}
-                          </span>
-                        </span>
-                      </span>
-                      {/* 개념 정리 페이지가 있는 단원(검증 통과)에만 */}
-                      {linkChapters && hasConcept && (
+                    <li key={chapter.id}>
+                      {/* 단원 줄 전체가 링크 하나 (단원 이름과 별도 버튼이 같은 곳으로 가지 않게, 2026-11-03 회장 요청) */}
+                      {linkChapters ? (
                         <Link
-                          href={localePath(locale, conceptPath)}
-                          aria-label={fmt(m.cert.seeConceptLabel, { name: chapter.name })}
-                          className="inline-flex min-h-11 shrink-0 items-center rounded-lg bg-primary-soft px-2 text-sm font-bold text-accent hover:underline"
+                          href={localePath(locale, hasConcept ? conceptPath : `/cert/${certId}/${chapter.id}`)}
+                          className="group flex min-h-11 items-center justify-between gap-2 rounded-lg py-1 hover:bg-primary-soft"
                         >
-                          {m.cert.seeConcept}
+                          <span className="min-w-0">
+                            <span className="link">{label}</span>
+                            {stats}
+                          </span>
+                          <span aria-hidden="true" className="shrink-0 px-2 text-lg font-bold text-accent">
+                            →
+                          </span>
                         </Link>
+                      ) : (
+                        <span className="block">
+                          <span className="font-bold">{label}</span>
+                          {stats}
+                        </span>
                       )}
                     </li>
                   );

@@ -4,7 +4,8 @@ import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { StaticQuestion } from "@/components/StaticQuestion";
 import { IssuerNotice } from "@/components/cert/IssuerNotice";
-import { getCertificationIn, getQuestions } from "@/lib/data";
+import { getCertificationIn, getMergedChapterIds, getQuestions } from "@/lib/data";
+import { chapterHref } from "@/lib/chapter-link";
 import { fmt, getMessages, isLocale, localeCountry, localePath, writtenVars } from "@/lib/i18n";
 import { pickCertRepresentatives } from "@/lib/representative";
 import { certMainMeta, certOgImagePath, certPastMeta, toMetadata } from "@/lib/seo";
@@ -49,6 +50,7 @@ export default async function PastPage({ params }: Props) {
   const meta = certPastMeta(lang, cert, hasPast, shown.length);
   const mainMeta = certMainMeta(lang, cert);
   const certPath = mainMeta.path;
+  const merged = await getMergedChapterIds(cert.id);
   const sep = m.common.listSeparator;
   const vars = {
     ...writtenVars(lang, cert.writtenExam),
@@ -143,7 +145,7 @@ export default async function PastPage({ params }: Props) {
               <ul className="mt-2 flex flex-wrap gap-x-4 gap-y-2">
                 {s.chapters.map((c) => (
                   <li key={c.id}>
-                    <Link href={`${certPath}/${c.id}`} className="link">
+                    <Link href={chapterHref(certPath, c.id, merged)} className="link">
                       {c.name}
                     </Link>
                   </li>

@@ -237,6 +237,7 @@ export async function getCertification(id: string): Promise<Certification | null
     notes: cert.notes,
     updatedAt: hasDetail ? (cert.meta.updatedAt ?? null) : null,
     refinedAt: cert.meta.refinedAt ?? null,
+    mergedAt: cert.meta.mergedAt ?? null,
     basisYear: cert.meta.basisYear ?? yearOf(cert.meta.addedAt ?? cert.meta.updatedAt),
     writtenExam: cert.meta.writtenExam,
     ready: item.ready,
@@ -330,4 +331,14 @@ export async function getGuide(lang: string, slug: string): Promise<Guide | null
 /** 이 자격증을 다룬 수험 정보 글 (자격증 페이지의 "이 자격증 수험 정보"). 지난 일정 글은 뺀다 */
 export async function getGuidesForCert(lang: string, certId: string, limit = 3): Promise<Guide[]> {
   return (await getGuides(lang)).filter((g) => g.certIds.includes(certId) && !isGuideExpired(g)).slice(0, limit);
+}
+
+/**
+ * 단원 페이지를 합친 단원 id (meta.json 의 mergedAt 이 있는 자격증의, 개념 정리 검증을 통과한 단원).
+ * 이 단원들은 /{단원} 페이지를 만들지 않고 /concepts/{단원} 으로 영구 이동한다 (lib/data/redirects.ts).
+ */
+export async function getMergedChapterIds(id: string): Promise<Set<string>> {
+  const cert = await findCert(id);
+  if (!cert?.meta.mergedAt) return new Set();
+  return new Set(((await getConcepts(id))?.chapters ?? []).map((c) => c.id));
 }

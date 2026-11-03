@@ -7,6 +7,10 @@ import { Stars } from "@/components/Stars";
 import { StaticQuestion } from "@/components/StaticQuestion";
 import { ConceptByline, ConceptCards, ConceptCompare, ConceptFigures, ConceptPoints } from "@/components/concepts/ConceptParts";
 import { IssuerNotice } from "@/components/cert/IssuerNotice";
+import { BasisBadge } from "@/components/cert/BasisBadge";
+import { ChapterPitfalls, ChapterSolve, ChapterWeight, PastTrend } from "@/components/cert/ChapterExtras";
+import { chapterHref } from "@/lib/chapter-link";
+import { mergeKeyPoints } from "@/lib/content-quality";
 import { getCertificationIn, getConcepts, getQuestions, type CertConcepts } from "@/lib/data";
 import { fmt, getMessages, isLocale, localeCountry, localePath } from "@/lib/i18n";
 import { pickChapterRepresentatives } from "@/lib/representative";
@@ -73,10 +77,20 @@ export default async function ConceptChapterPage({ params }: Props) {
   const examples = pickChapterRepresentatives(cert.subjects, verified, chapter.id).slice(0, EXAMPLE_COUNT);
   const quizCount = Math.min(5, questions.filter((q) => q.chapterId === chapter.id).length);
 
+  // 단원 페이지를 합친 자격증(meta.mergedAt): 단원 핵심정리 내용까지 이 페이지에 모은다 (docs/refine.md 3-7)
+  const merged = !!cert.mergedAt;
+  const mergedIds = new Set(concepts.chapters.map((c) => c.id));
   const neighbor = (c: CertConcepts["chapters"][number] | undefined) =>
     c && { href: `${overview.path}/${c.id}`, name: chapterName(cert, c.id) };
-  const prev = neighbor(concepts.chapters[index - 1]);
-  const next = neighbor(concepts.chapters[index + 1]);
+  // 합친 자격증은 모든 단원 순서로 이동 (개념 정리가 없는 단원은 단원 핵심정리로)
+  const allChapters = cert.subjects.flatMap((s) => s.chapters);
+  const position = allChapters.findIndex((c) => c.id === chapter.id);
+  const mergedNeighbor = (c: (typeof allChapters)[number] | undefined) =>
+    c && { href: chapterHref(certPath, c.id, mergedIds), name: c.name };
+  const prev = merged ? mergedNeighbor(allChapters[position - 1]) : neighbor(concepts.chapters[index - 1]);
+  const next = merged ? mergedNeighbor(allChapters[position + 1]) : neighbor(concepts.chapters[index + 1]);
+  const mergedExamples = merged ? pickChapterRepresentatives(cert.subjects, questions, chapter.id) : [];
+  const pastInChapter = questions.filter((q) => q.chapterId === chapter.id && q.source === "past");
 
   // 제목 "{시험명} {단원} 개념 정리" 를 시험명 / 나머지 두 줄로 나눈다 (시험명으로 시작하지 않으면 한 줄)
   const titleLines = meta.h1.startsWith(`${cert.name} `)
@@ -85,7 +99,7 @@ export default async function ConceptChapterPage({ params }: Props) {
 
   return (
     <article className="mx-auto max-w-3xl space-y-8">
-      <JsonLd data={articleJsonLd(lang, meta, entry.verifiedAt)} />
+      <JsonLd data={articleJsonLd(lang, meta, cert.mergedAt && cert.mergedAt > entry.verifiedAt ? cert.mergedAt : entry.verifiedAt)} />
       <Breadcrumbs
         label={m.nav.breadcrumb}
         crumbs={[
@@ -112,6 +126,7 @@ export default async function ConceptChapterPage({ params }: Props) {
           {m.common.importance} <Stars value={chapter.importance} /> ·{" "}
           {fmt(m.concepts.weightEstimated, { n: chapter.examWeight })}
         </p>
+        {merged && <BasisBadge lang={lang} year={cert.basisYear} />}
       </header>
 
       {/* 개요: 요약 노트와 같은 글 (P16) */}
@@ -126,6 +141,24 @@ export default async function ConceptChapterPage({ params }: Props) {
         </section>
       )}
 
+      {/* 합친 페이지: 핵심정리 → 자주 틀리는 함정. 함정이 있으면 시험 포인트(개념서에 그대로 있음)는 함정과 겹치므로 요점만,
+          함정이 없으면 요점 + 시험 포인트(같은 말은 하나만) */}
+      {merged && (
+        <>
+          <section aria-labelledby="keypoints-title" className="card space-y-2 border-l-4 border-l-primary p-6">
+            <h2 id="keypoints-title" className="text-lg font-bold text-accent">
+              {fmt(m.chapter.keyPointsTitle, { name: chapter.name })}
+            </h2>
+            <ul className="list-disc space-y-2 pl-6">
+              {(chapter.pitfalls?.length ? chapter.keyPoints : mergeKeyPoints(chapter.keyPoints, entry.points)).map((point) => (
+                <li key={point}>{point}</li>
+              ))}
+            </ul>
+          </section>
+          <ChapterPitfalls locale={lang} chapterName={chapter.name} pitfalls={chapter.pitfalls} />
+        </>
+      )}
+
       <section aria-labelledby="concepts-title">
         <h2 id="concepts-title" className="text-lg font-bold">
           {m.concepts.coreTitle}
@@ -135,11 +168,50 @@ export default async function ConceptChapterPage({ params }: Props) {
 
       {entry.figures && <ConceptFigures locale={lang} figures={entry.figures} />}
 
-      <ConceptPoints locale={lang} points={entry.points} />
+      {!merged && <ConceptPoints locale={lang} points={entry.points} />}
 
       {entry.compare && <ConceptCompare locale={lang} compare={entry.compare} />}
 
-      {examples.length > 0 && (
+      {merged && (
+        <>
+          <ChapterWeight
+            locale={lang}
+            importance={chapter.importance}
+            subjectName={subject.name}
+            subjectTotal={subject.questionCount}
+            examWeight={chapter.examWeight}
+          />
+          {cert.refinedAt && <PastTrend locale={lang} chapterName={chapter.name} questions={pastInChapter} />}
+          {mergedExamples.length > 0 && (
+            <section aria-labelledby="examples-title" className="space-y-4">
+              <h2 id="examples-title" className="text-xl font-bold">
+                {fmt(m.chapter.questionsTitle, { name: chapter.name, n: mergedExamples.length })}
+              </h2>
+              {mergedExamples.map((q, i) => (
+                <StaticQuestion
+                  key={q.id}
+                  locale={lang}
+                  question={q}
+                  number={i + 1}
+                  location={`${subject.name} › ${chapter.name}`}
+                  chapterImportance={chapter.importance}
+                />
+              ))}
+            </section>
+          )}
+          <ChapterSolve
+            locale={lang}
+            certPath={certPath}
+            chapterId={chapter.id}
+            chapterName={chapter.name}
+            subjectId={subject.id}
+            subjectName={subject.name}
+            quizCount={quizCount}
+          />
+        </>
+      )}
+
+      {!merged && examples.length > 0 && (
         <section aria-labelledby="examples-title" className="space-y-4">
           <h2 id="examples-title" className="text-lg font-bold">
             {fmt(m.concepts.examples, { n: examples.length })}
@@ -158,7 +230,7 @@ export default async function ConceptChapterPage({ params }: Props) {
         </section>
       )}
 
-      {quizCount > 0 && (
+      {!merged && quizCount > 0 && (
         <Link href={`${certPath}/quiz?chapter=${chapter.id}&count=${quizCount}`} className="btn btn-primary btn-lg w-full">
           {fmt(m.concepts.solveChapter, { n: quizCount })}
         </Link>
@@ -179,6 +251,22 @@ export default async function ConceptChapterPage({ params }: Props) {
             </Link>
           )}
         </div>
+        {merged && (
+          <>
+            <h2 className="text-lg font-bold">{fmt(m.chapter.othersTitle, { subject: subject.name })}</h2>
+            <ul className="flex flex-wrap gap-x-4 gap-y-2">
+              {subject.chapters
+                .filter((c) => c.id !== chapter.id)
+                .map((c) => (
+                  <li key={c.id}>
+                    <Link href={chapterHref(certPath, c.id, mergedIds)} className="link">
+                      {c.name}
+                    </Link>
+                  </li>
+                ))}
+            </ul>
+          </>
+        )}
         <p>
           <Link href={overview.path} className="btn btn-primary btn-lg w-full">
             {fmt(m.concepts.toOverview, { cert: cert.name })}

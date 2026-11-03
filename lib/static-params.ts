@@ -1,4 +1,4 @@
-import { getCertList, getConcepts, getGuides, getReadyCertifications } from "./data";
+import { getCertList, getConcepts, getGuides, getMergedChapterIds, getReadyCertifications } from "./data";
 import { LOCALES, localeCountry } from "./i18n";
 
 /**
@@ -28,13 +28,16 @@ export async function readyCertParams(): Promise<Array<{ lang: string; slug: str
   return result;
 }
 
-/** 단원 화면: 준비된 자격증의 모든 단원 */
+/** 단원 화면: 준비된 자격증의 모든 단원. 단원 페이지를 합친 단원(개념 정리로 영구 이동)은 만들지 않는다 */
 export async function chapterParams(): Promise<Array<{ lang: string; slug: string; chapterId: string }>> {
   const result = [];
   for (const lang of LOCALES) {
     for (const cert of await getReadyCertifications(localeCountry(lang))) {
+      const merged = await getMergedChapterIds(cert.id);
       for (const subject of cert.subjects) {
-        for (const chapter of subject.chapters) result.push({ lang, slug: cert.id, chapterId: chapter.id });
+        for (const chapter of subject.chapters) {
+          if (!merged.has(chapter.id)) result.push({ lang, slug: cert.id, chapterId: chapter.id });
+        }
       }
     }
   }

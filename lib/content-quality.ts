@@ -179,3 +179,15 @@ export function checkCertContent(cert: CertText, others: Map<string, Set<string>
 export function mustPassContentCheck(meta: { refinedAt?: string; addedAt?: string }): boolean {
   return !!meta.refinedAt || (!!meta.addedAt && meta.addedAt >= REFINE_START);
 }
+
+/**
+ * 합친 단원 페이지의 "핵심정리" 목록: 단원 요점(keyPoints) 뒤에 개념 정리의 시험 포인트(points)를 붙이되,
+ * 이미 있는 요점과 같은 말(유사도 SAME_SENTENCE_SIMILARITY 이상)인 포인트는 뺀다.
+ */
+export function mergeKeyPoints(keyPoints: string[], points: string[]): string[] {
+  const out = [...keyPoints];
+  for (const p of points) {
+    if (!out.some((k) => sentenceSimilarity(k, p) >= SAME_SENTENCE_SIMILARITY)) out.push(p);
+  }
+  return out;
+}
