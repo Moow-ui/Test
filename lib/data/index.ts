@@ -217,6 +217,11 @@ export async function getSplitInProgress(country: Country): Promise<SplitInProgr
     .sort((a, b) => b.startedAt.localeCompare(a.startedAt));
 }
 
+/** "YYYY-MM-DD" 의 연도 (없으면 null) */
+function yearOf(date: string | undefined): number | null {
+  return date ? Number(date.slice(0, 4)) : null;
+}
+
 /** 자격증 한 건 (없으면 null) */
 export async function getCertification(id: string): Promise<Certification | null> {
   const cert = await findCert(id);
@@ -232,7 +237,7 @@ export async function getCertification(id: string): Promise<Certification | null
     notes: cert.notes,
     updatedAt: hasDetail ? (cert.meta.updatedAt ?? null) : null,
     refinedAt: cert.meta.refinedAt ?? null,
-    basisYear: cert.meta.basisYear ?? (cert.meta.addedAt ? Number(cert.meta.addedAt.slice(0, 4)) : null),
+    basisYear: cert.meta.basisYear ?? yearOf(cert.meta.addedAt ?? cert.meta.updatedAt),
     writtenExam: cert.meta.writtenExam,
     ready: item.ready,
   };

@@ -259,7 +259,7 @@ export const certMetaSchema = certSummarySchema.extend({
     .optional(),
   /**
    * 내용이 기준으로 삼은 시험 연도 (제목 아래 "2026년 출제기준 반영"). 공식 출제기준·법령을 그해에 확인했을 때만 올린다.
-   * 없으면 addedAt 의 연도를 쓴다.
+   * 없으면 addedAt 의 연도 (addedAt 도 없으면 updatedAt 의 연도)를 쓴다.
    */
   basisYear: z.number().int().min(2020).max(2100).optional(),
   examInfo: examInfoSchema.optional(),
