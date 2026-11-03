@@ -181,6 +181,23 @@ summary::-webkit-details-marker {
   .print-subject {
     overflow: visible !important;
   }
+  /* 단원 목차는 한 쪽에: 화면용 누르기 높이(min-h-11)·간격을 줄이고 글자를 조금 작게 */
+  .print-toc {
+    break-inside: avoid;
+    font-size: 10.5pt;
+    padding: 12pt !important;
+  }
+  .print-toc li,
+  .print-toc a,
+  .print-toc li > span {
+    min-height: 0 !important;
+  }
+  .print-toc ol > li + li {
+    margin-top: 2pt !important;
+  }
+  .print-toc section + section {
+    margin-top: 8pt !important;
+  }
   main {
     max-width: none !important;
     padding: 0 !important;

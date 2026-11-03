@@ -97,7 +97,7 @@ export default async function ConceptsPage({ params }: Props) {
       </header>
 
       {/* 단원 목차: 과목별, 중요도 ★ 와 과목 안 출제 비중(추정) */}
-      <nav aria-labelledby="toc-title" className="card p-6">
+      <nav aria-labelledby="toc-title" className="print-toc card p-6">
         <h2 id="toc-title" className="text-lg font-bold">
           {m.concepts.tocTitle}
         </h2>
