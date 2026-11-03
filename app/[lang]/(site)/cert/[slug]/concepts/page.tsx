@@ -102,7 +102,8 @@ export default async function ConceptsPage({ params }: Props) {
           {m.concepts.tocTitle}
         </h2>
         <p className="mt-2 text-sm text-ink-sub">
-          {m.concepts.tocLinkHint} {m.concepts.tocHint}
+          <span className="no-print">{m.concepts.tocLinkHint} </span>
+          {m.concepts.tocHint}
         </p>
         <div className="mt-4 space-y-6">
           {cert.subjects.map((subject, si) => (
@@ -140,7 +141,7 @@ export default async function ConceptsPage({ params }: Props) {
       </nav>
 
       {/* 요약 노트: 과목마다 한 묶음, 그 안에 단원 노트(개요 · 핵심 정리 · ★ 시험 포인트) */}
-      <section aria-labelledby="note-title" className="space-y-6">
+      <section aria-labelledby="note-title" className="print-break-before space-y-6">
         <h2 id="note-title" className="text-xl font-bold">
           {m.concepts.noteTitle}
         </h2>
@@ -152,7 +153,7 @@ export default async function ConceptsPage({ params }: Props) {
             .filter(({ chapter }) => byId.has(chapter.id));
           if (chapters.length === 0) return null;
           return (
-            <section key={subject.id} aria-labelledby={`${subject.id}-note`} className="card overflow-hidden">
+            <section key={subject.id} aria-labelledby={`${subject.id}-note`} className="print-subject card overflow-hidden">
               <h3 id={`${subject.id}-note`} className="bg-primary-soft px-4 py-4 text-lg font-bold sm:px-6">
                 {fmt(m.concepts.subjectNo, { n: si + 1 })} · {subject.name}
                 <span className="ml-2 text-sm font-normal text-ink-sub">

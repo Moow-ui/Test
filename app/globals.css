@@ -170,6 +170,17 @@ summary::-webkit-details-marker {
   .print-avoid-break {
     break-inside: avoid;
   }
+  /* 개념서 인쇄(전자책 모양): 요약 노트는 새 쪽에서, 과목마다·단원마다 새 쪽에서 시작 (2026-11-03 회장 요청) */
+  .print-break-before {
+    break-before: page;
+  }
+  .print-subject ~ .print-subject,
+  .print-chapter ~ .print-chapter {
+    break-before: page;
+  }
+  .print-subject {
+    overflow: visible !important;
+  }
   main {
     max-width: none !important;
     padding: 0 !important;

@@ -76,7 +76,7 @@
 
 ## 5. 마무리·검사·올리기
 
-1. `meta.json`: `refinedAt` = 오늘(한국시간), `mergedAt` = 오늘(3-7), `updatedAt` = 오늘 (sitemap 날짜가 바뀌어 구글·네이버가 그 자격증 페이지만 다시 가져간다).
+1. `meta.json`: `refinedAt` = 오늘(한국시간), `mergedAt` = 오늘(3-7), `printable: true`(개념서 "인쇄·PDF로 저장" 버튼, 2026-11-03 회장 결정: 다듬는 날 자격증별로 켠다), `updatedAt` = 오늘 (sitemap 날짜가 바뀌어 구글·네이버가 그 자격증 페이지만 다시 가져간다).
 2. 검사 (전부 통과해야 올린다):
 
    ```bash

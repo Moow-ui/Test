@@ -44,6 +44,7 @@ public/data/                      빌드 때 자동으로 만든다 (git 에 올
 | `updatedAt` | 내용 최종 수정일 `YYYY-MM-DD` (sitemap) |
 | `refinedAt` | (선택) 내용 다듬기를 마친 날 `YYYY-MM-DD` ([refine.md](refine.md)). 있으면 고유 내용 검사를 오류로 적용하고, 단원 페이지에 공개 기출 출제 기록(연도별 문항 수, 데이터에서 세기만)을 보여 준다. 2026-11-04 이후 새 자격증은 `addedAt` 과 같은 날을 적는다 |
 | `mergedAt` | (선택) 단원 페이지를 하나로 합친 날 ([refine.md](refine.md) 3-7). 있으면 개념 정리가 있는 단원은 `/concepts/{단원}` 하나만 만들고 `/{단원}` 은 그쪽으로 영구 이동한다. 자격증별로 다듬는 날 적는다 |
+| `printable` | (선택) `true` 면 개념서(`/concepts`)에 "인쇄·PDF로 저장" 버튼. 인쇄물은 과목·단원마다 새 쪽에서 시작한다. 다듬는 날 자격증별로 켠다 |
 | `basisYear` | (선택) 내용이 기준으로 삼은 시험 연도. 제목 아래 "2026년 출제기준 반영"으로 나온다. 공식 출제기준·법령을 그해에 확인했을 때만 올린다. 없으면 `addedAt`(그것도 없으면 `updatedAt`)의 연도 |
 | `addedAt` | 문제를 풀 수 있게 추가한 날 `YYYY-MM-DD` (한국시간). 사이트 하단 "기록"(`/{lang}/log`)에 날짜별로 나온다 |
 | `examInfo` | `totalQuestions`, `timeLimitMinutes`, `format`, `choiceCount`(선지 수, 기본 4), `passCriteria { averageScore, subjectMinScore(과락 없으면 null), description, shortLabel(선택: 결과 화면 "합격선 통과 (…)" 괄호 안, 예 "2종 보통 60점") }` |
