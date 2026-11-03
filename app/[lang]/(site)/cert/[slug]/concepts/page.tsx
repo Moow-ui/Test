@@ -6,10 +6,12 @@ import { JsonLd } from "@/components/JsonLd";
 import { Stars } from "@/components/Stars";
 import { ConceptByline, ConceptNote, ExamSummary } from "@/components/concepts/ConceptParts";
 import { NoteNavigator } from "@/components/concepts/NoteNavigator";
+import { PrintButton } from "@/components/concepts/PrintButton";
 import { IssuerNotice } from "@/components/cert/IssuerNotice";
 import { BasisBadge } from "@/components/cert/BasisBadge";
 import { getCertificationIn, getConcepts } from "@/lib/data";
-import { fmt, getMessages, isLocale, localeCountry, localePath } from "@/lib/i18n";
+import { brandName, fmt, getMessages, isLocale, localeCountry, localePath } from "@/lib/i18n";
+import { absoluteUrl } from "@/lib/site";
 import { articleJsonLd, certMainMeta, certOgImagePath, conceptsMeta, toMetadata } from "@/lib/seo";
 import { conceptParams } from "@/lib/static-params";
 
@@ -83,6 +85,15 @@ export default async function ConceptsPage({ params }: Props) {
           )}
         </h1>
         <BasisBadge lang={lang} year={cert.basisYear} />
+        {/* 인쇄·PDF 버튼 (meta.json 의 printable 이 있는 자격증만) + 인쇄물에만 나오는 출처 한 줄 */}
+        {cert.printable && (
+          <>
+            <PrintButton label={m.concepts.printButton} hint={m.concepts.printHint} />
+            <p className="print-only mt-2 text-sm">
+              {fmt(m.concepts.printSource, { brand: brandName(lang), url: absoluteUrl(meta.path) })}
+            </p>
+          </>
+        )}
       </header>
 
       {/* 단원 목차: 과목별, 중요도 ★ 와 과목 안 출제 비중(추정) */}
@@ -169,7 +180,7 @@ export default async function ConceptsPage({ params }: Props) {
       {/* 시험 정보(형태·문항 수·시간·합격 기준·출처): 본문을 다 본 뒤 아래쪽에 */}
       <ExamSummary locale={lang} cert={cert} />
 
-      <div className="flex flex-col gap-2 sm:flex-row">
+      <div className="no-print flex flex-col gap-2 sm:flex-row">
         <Link href={`${certPath}/quiz?level=basic&count=5&subject=all`} className="btn btn-primary btn-lg">
           {fmt(m.concepts.solve5, { name: cert.name })}
         </Link>

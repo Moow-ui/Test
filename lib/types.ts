@@ -63,6 +63,8 @@ export interface Certification extends CertSummary {
   updatedAt: string | null;
   /** 내용 다듬기를 마친 날 (meta.json 의 refinedAt) */
   refinedAt: string | null;
+  /** 개념서에 인쇄·PDF 버튼을 보여 주는가 (meta.json 의 printable) */
+  printable: boolean;
   /** 단원 페이지를 하나로 합친 날 (meta.json 의 mergedAt) */
   mergedAt: string | null;
   /** 내용이 기준으로 삼은 시험 연도 (meta.json 의 basisYear, 없으면 addedAt·updatedAt 의 연도) */

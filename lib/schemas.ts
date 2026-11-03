@@ -267,6 +267,8 @@ export const certMetaSchema = certSummarySchema.extend({
    * 개념 정리 단원 페이지(/concepts/{단원})가 단원 핵심정리 내용까지 보여 주고, /{단원} 은 그쪽으로 영구 이동한다.
    * 자격증마다 내용 다듬기 하는 날 적는다 (한꺼번에 바꾸지 않는다, 2026-11-03 회장 결정).
    */
+  /** 개념서(/concepts)에 "인쇄·PDF로 저장" 버튼을 보여 준다 (2026-11-03 지게차로 먼저 시험, 회장 확인 뒤 넓힌다) */
+  printable: z.boolean().optional(),
   mergedAt: z
     .string()
     .regex(/^\d{4}-\d{2}-\d{2}$/)
