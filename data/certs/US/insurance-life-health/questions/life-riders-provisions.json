@@ -1,0 +1,860 @@
+[
+  {
+    "id": "insurance-life-health-life-riders-provisions-0001",
+    "certId": "insurance-life-health",
+    "subjectId": "life-insurance",
+    "chapterId": "life-riders-provisions",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Under a waiver of premium rider, premiums are usually waived after:",
+    "choices": [
+      "The insured turns 65",
+      "The first day of any illness",
+      "The owner loses a job",
+      "The insured has been totally disabled for a waiting period, often 6 months"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Waiver of premium: after a waiting period of total disability",
+    "explanation": "The **waiver of premium** rider stops premium payments if the insured becomes **totally disabled**. There is usually a **waiting period of about 6 months**, and premiums paid during that time are often refunded if the disability qualifies.\n\n**Wrong choices**\n- The insured turns 65: Reaching 65 usually ends this rider; it does not trigger it.\n- The first day of any illness: A short illness does not meet the total disability and waiting period rules.\n- The owner loses a job: Losing a job is not a disability.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "riders",
+      "waiver of premium"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-life-riders-provisions-0002",
+    "certId": "insurance-life-health",
+    "subjectId": "life-insurance",
+    "chapterId": "life-riders-provisions",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which rider lets the insured buy more coverage at set ages or life events, such as marriage or the birth of a child, without proof of insurability?",
+    "choices": [
+      "Guaranteed insurability rider",
+      "Accidental death rider",
+      "Waiver of premium rider",
+      "Cost of living rider"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Guaranteed insurability = buy more later, no medical proof",
+    "explanation": "The **guaranteed insurability** rider gives the right to **buy more coverage** at set **option dates** or events **without proof of insurability**. Premiums for the added coverage are based on the insured's age at that time.\n\n**Wrong choices**\n- Accidental death rider: An accidental death rider pays extra for accidental death.\n- Waiver of premium rider: Waiver of premium stops premiums during disability.\n- Cost of living rider: A cost of living rider raises coverage with inflation, not at life events of the insured's choosing.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "riders",
+      "guaranteed insurability"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-life-riders-provisions-0003",
+    "certId": "insurance-life-health",
+    "subjectId": "life-insurance",
+    "chapterId": "life-riders-provisions",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "An accidental death rider on a life policy usually pays:",
+    "choices": [
+      "An extra amount if death results from illness",
+      "A refund of all premiums at age 65",
+      "The face amount to the insured while still living",
+      "An extra amount, often equal to the face amount, if death results from an accident within a set time"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Accidental death rider = extra benefit for accidental death",
+    "explanation": "An **accidental death** rider pays an **additional benefit** (often equal to the face amount, called double indemnity) when death is caused by an **accident** and happens within a set time after it, often 90 days.\n\n**Wrong choices**\n- An extra amount if death results from illness: Death from illness is paid only by the base policy.\n- A refund of all premiums at age 65: A refund of premiums is a return of premium feature.\n- The face amount to the insured while still living: Paying while living is not what this rider does.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "riders",
+      "accidental death"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-life-riders-provisions-0004",
+    "certId": "insurance-life-health",
+    "subjectId": "life-insurance",
+    "chapterId": "life-riders-provisions",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "The entire contract provision says that:",
+    "choices": [
+      "The agent can add promises to the contract by letter",
+      "The insurer may change the policy terms by updating its company rules",
+      "Only the policy is part of the contract; the application is not",
+      "The policy and the attached copy of the application make up the whole contract"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Entire contract = policy + attached application",
+    "explanation": "Under the **entire contract** provision, the **policy plus the attached application** are the whole agreement. Nothing outside them, such as company rules or agent letters, can be added or changed later without the owner's agreement.\n\n**Wrong choices**\n- The agent can add promises to the contract by letter: An agent cannot change the contract.\n- The insurer may change the policy terms by updating its company rules: The insurer cannot change terms by pointing to outside rules.\n- Only the policy is part of the contract; the application is not: A copy of the application is attached and is part of the contract.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "provisions",
+      "entire contract"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-life-riders-provisions-0005",
+    "certId": "insurance-life-health",
+    "subjectId": "life-insurance",
+    "chapterId": "life-riders-provisions",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What does the free look provision allow a new policyowner to do?",
+    "choices": [
+      "Skip the first year's premium",
+      "Return the policy within a short period after delivery for a full refund of premium",
+      "Change the policy into term insurance at any time",
+      "Borrow the full face amount"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Free look: return the policy for a full refund",
+    "explanation": "The **free look** provision gives the new owner a short time **after delivery** (set by state law, often 10 days or more) to read the policy and **return it for a full refund**.\n\n**Wrong choices**\n- Skip the first year's premium: The first premium is still due.\n- Change the policy into term insurance at any time: Changing the type of coverage is not part of the free look.\n- Borrow the full face amount: Policy loans are limited to the cash value, not the face amount.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "provisions",
+      "free look"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-life-riders-provisions-0006",
+    "certId": "insurance-life-health",
+    "subjectId": "life-insurance",
+    "chapterId": "life-riders-provisions",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "If the primary beneficiary dies before the insured, and the owner did not change the designation, the proceeds go to:",
+    "choices": [
+      "The primary beneficiary's estate",
+      "The agent",
+      "The insurance company",
+      "The contingent beneficiary"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Contingent beneficiary takes if the primary dies first",
+    "explanation": "The **contingent beneficiary** receives the proceeds only if the **primary beneficiary** is not alive when the insured dies. If no beneficiary is alive, proceeds usually go to the **insured's estate**.\n\n**Wrong choices**\n- The primary beneficiary's estate: The primary beneficiary must outlive the insured to receive the proceeds.\n- The agent: An agent has no claim to the proceeds.\n- The insurance company: The insurer still owes the death benefit.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "beneficiary",
+      "contingent"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-life-riders-provisions-0007",
+    "certId": "insurance-life-health",
+    "subjectId": "life-insurance",
+    "chapterId": "life-riders-provisions",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A life insurance premium is due, and the insured dies during the grace period without paying it. What does the insurer do?",
+    "choices": [
+      "Pays nothing because the premium was late",
+      "Pays the death benefit minus the unpaid premium",
+      "Pays only the cash value",
+      "Pays the death benefit plus a refund of the last premium"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Death in grace period: pay benefit minus overdue premium",
+    "explanation": "The **grace period** (usually **30 or 31 days**) keeps the policy **in force** after the due date. If the insured dies then, the insurer pays the **death benefit minus the unpaid premium**.\n\n**Wrong choices**\n- Pays nothing because the premium was late: The policy is still in force during the grace period.\n- Pays only the cash value: The full death benefit is owed, not just the cash value.\n- Pays the death benefit plus a refund of the last premium: The unpaid premium is subtracted, not refunded.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "provisions",
+      "grace period"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-life-riders-provisions-0008",
+    "certId": "insurance-life-health",
+    "subjectId": "life-insurance",
+    "chapterId": "life-riders-provisions",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which nonforfeiture option keeps the same face amount but only for a limited time?",
+    "choices": [
+      "Reduced paid-up",
+      "Extended term",
+      "Cash surrender",
+      "Paid-up additions"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Extended term: same face amount, shorter time",
+    "explanation": "**Extended term** uses the cash value to buy **term insurance for the same face amount**, lasting as long as the cash value can pay for it. **Reduced paid-up** gives a smaller amount for life.\n\n**Wrong choices**\n- Reduced paid-up: Reduced paid-up gives a lower face amount for life.\n- Cash surrender: Cash surrender ends the coverage and pays out the cash value.\n- Paid-up additions: Paid-up additions is a dividend option, not a nonforfeiture option.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "nonforfeiture"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-life-riders-provisions-0009",
+    "certId": "insurance-life-health",
+    "subjectId": "life-insurance",
+    "chapterId": "life-riders-provisions",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which dividend option uses each dividend to buy a small amount of fully paid-up permanent insurance?",
+    "choices": [
+      "One-year term",
+      "Accumulate at interest",
+      "Paid-up additions",
+      "Reduce premium"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Paid-up additions = dividends buy more paid-up coverage",
+    "explanation": "With **paid-up additions**, each dividend buys a little **paid-up permanent insurance** at the insured's age. This raises the death benefit and the cash value. Dividends come only from **participating** policies.\n\n**Wrong choices**\n- One-year term: One-year term buys term coverage for one year, often up to the cash value.\n- Accumulate at interest: Accumulate at interest leaves dividends with the insurer to earn interest.\n- Reduce premium: Reduce premium uses the dividend to lower the next premium.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "dividends"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-life-riders-provisions-0010",
+    "certId": "insurance-life-health",
+    "subjectId": "life-insurance",
+    "chapterId": "life-riders-provisions",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "After a life policy has been in force for 2 years, what does the incontestability provision mean?",
+    "choices": [
+      "The insurer can still deny any claim for any misstatement",
+      "The owner can no longer change the beneficiary",
+      "The premium can no longer change",
+      "The insurer cannot void the policy because of misstatements on the application"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Incontestable after 2 years in force",
+    "explanation": "Under the **incontestability** provision, once the policy has been **in force 2 years**, the insurer **cannot contest** it for misstatements on the application. Rules on fraud vary by state.\n\n**Wrong choices**\n- The insurer can still deny any claim for any misstatement: After 2 years the insurer loses the right to contest for misstatements.\n- The owner can no longer change the beneficiary: Beneficiary changes are an owner's right and are not affected.\n- The premium can no longer change: The provision has nothing to do with premium changes.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "provisions",
+      "incontestability"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-life-riders-provisions-0011",
+    "certId": "insurance-life-health",
+    "subjectId": "life-insurance",
+    "chapterId": "life-riders-provisions",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A parent buys a life policy on a young child. Which rider waives future premiums if the parent dies or becomes disabled before the child reaches a set age?",
+    "choices": [
+      "Payor benefit rider",
+      "Guaranteed insurability rider",
+      "Accidental death rider",
+      "Cost of living rider"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Payor benefit: waives premiums if the payor dies or is disabled",
+    "explanation": "The **payor benefit** rider is common on **juvenile policies**. If the **payor** (usually a parent) dies or becomes disabled, premiums are **waived** until the child reaches a set age, such as 21 or 25.\n\n**Wrong choices**\n- Guaranteed insurability rider: Guaranteed insurability lets the insured buy more coverage later.\n- Accidental death rider: An accidental death rider pays extra for an accidental death of the insured.\n- Cost of living rider: A cost of living rider raises coverage for inflation.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "riders",
+      "payor benefit"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-life-riders-provisions-0012",
+    "certId": "insurance-life-health",
+    "subjectId": "life-insurance",
+    "chapterId": "life-riders-provisions",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "What does an accelerated death benefit provision allow?",
+    "choices": [
+      "The beneficiary to receive double the face amount",
+      "The owner to borrow the cash value at a lower interest rate",
+      "An insured with a terminal illness to receive part of the death benefit while living, which reduces the amount paid at death",
+      "The owner to stop paying premiums at age 65"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Accelerated benefit: part of the death benefit paid early",
+    "explanation": "An **accelerated death benefit** lets a **terminally ill** (or in some policies, chronically or critically ill) insured receive **part of the death benefit early**. The amount paid is **subtracted** from what the beneficiary later receives.\n\n**Wrong choices**\n- The beneficiary to receive double the face amount: Double the face amount describes an accidental death benefit.\n- The owner to borrow the cash value at a lower interest rate: Policy loans are a separate provision.\n- The owner to stop paying premiums at age 65: Stopping premiums is not part of this provision.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "accelerated death benefit"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-life-riders-provisions-0013",
+    "certId": "insurance-life-health",
+    "subjectId": "life-insurance",
+    "chapterId": "life-riders-provisions",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "An owner named his sister as an irrevocable beneficiary. He now wants a policy loan. What is required?",
+    "choices": [
+      "Nothing; the owner can borrow at any time",
+      "The sister's consent",
+      "The insurer's medical exam",
+      "A new application"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Irrevocable beneficiary must consent to loans and changes",
+    "explanation": "An **irrevocable beneficiary** has a **vested interest** in the policy. The owner needs that beneficiary's **consent** before changing the beneficiary, taking a **policy loan**, or surrendering the policy.\n\n**Wrong choices**\n- Nothing; the owner can borrow at any time: With an irrevocable beneficiary, the owner cannot act alone.\n- The insurer's medical exam: A medical exam has nothing to do with a policy loan.\n- A new application: A loan does not require a new application.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "beneficiary",
+      "irrevocable"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-life-riders-provisions-0014",
+    "certId": "insurance-life-health",
+    "subjectId": "life-insurance",
+    "chapterId": "life-riders-provisions",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "An insured names her 8-year-old grandson as beneficiary. If she dies while he is still a minor, how are proceeds usually handled?",
+    "choices": [
+      "Paid to a court-appointed guardian or a trustee for the child",
+      "Paid directly to the child in cash",
+      "Held by the agent until the child turns 18",
+      "Returned to the insured's estate for good"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Minor beneficiaries: pay a guardian or trustee",
+    "explanation": "Insurers usually **will not pay** large proceeds **directly to a minor**, who cannot legally sign a release. The money is paid to a **court-appointed guardian** or to a **trustee** named in a trust for the child.\n\n**Wrong choices**\n- Paid directly to the child in cash: A minor generally cannot legally receive and sign for the proceeds.\n- Held by the agent until the child turns 18: Agents do not hold claim money.\n- Returned to the insured's estate for good: The child is still the beneficiary; the estate does not keep the money.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "beneficiary",
+      "minor"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-life-riders-provisions-0015",
+    "certId": "insurance-life-health",
+    "subjectId": "life-insurance",
+    "chapterId": "life-riders-provisions",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A premium remains unpaid at the end of the grace period, and the policy has an automatic premium loan provision with enough cash value. What happens?",
+    "choices": [
+      "The policy lapses right away",
+      "The policy changes to reduced paid-up insurance",
+      "The insurer pays the premium with a loan against the cash value, keeping the policy in force",
+      "The insurer cancels the policy and pays the cash value"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Automatic premium loan keeps the policy from lapsing",
+    "explanation": "The **automatic premium loan** provision tells the insurer to **borrow from the cash value** to pay a missed premium at the end of the grace period. The policy **stays in force**, and the loan plus interest is charged against the policy.\n\n**Wrong choices**\n- The policy lapses right away: The provision exists to prevent lapse.\n- The policy changes to reduced paid-up insurance: Reduced paid-up is a nonforfeiture option used only if the policy is not kept in force by a loan.\n- The insurer cancels the policy and pays the cash value: The policy is not cancelled while the loan can pay the premium.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "premium payment",
+      "automatic premium loan"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-life-riders-provisions-0016",
+    "certId": "insurance-life-health",
+    "subjectId": "life-insurance",
+    "chapterId": "life-riders-provisions",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "To reinstate a lapsed life policy, the owner usually must:",
+    "choices": [
+      "Simply pay the next premium; nothing else is needed",
+      "Wait until the insured reaches age 65",
+      "Buy a new policy, because lapsed policies can never be reinstated",
+      "Apply within the time the policy allows, show proof of insurability, and pay past-due premiums with interest"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Reinstatement: time limit + evidence + back premiums",
+    "explanation": "**Reinstatement** brings a lapsed policy back. The owner usually must apply within a set time (often a few years), give **proof of insurability**, and pay **back premiums with interest** and any loans.\n\n**Wrong choices**\n- Simply pay the next premium; nothing else is needed: Paying one premium is not enough after a lapse.\n- Wait until the insured reaches age 65: There is no age requirement for reinstatement.\n- Buy a new policy, because lapsed policies can never be reinstated: Most policies can be reinstated if the rules are met (not if cash was surrendered).",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "reinstatement"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-life-riders-provisions-0017",
+    "certId": "insurance-life-health",
+    "subjectId": "life-insurance",
+    "chapterId": "life-riders-provisions",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which settlement option pays a set dollar amount each month until the proceeds and interest are used up?",
+    "choices": [
+      "Fixed period",
+      "Fixed amount",
+      "Interest only",
+      "Life income"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Fixed amount sets the payment; fixed period sets the time",
+    "explanation": "Under the **fixed amount** option, the beneficiary picks the **size of each payment**, and payments last until the money runs out. Under **fixed period**, the beneficiary picks the **length of time**, and the payment size is figured from that.\n\n**Wrong choices**\n- Fixed period: Fixed period chooses the number of years, not the payment amount.\n- Interest only: Interest only pays just the interest and keeps the principal.\n- Life income: Life income pays for the beneficiary's lifetime.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "settlement options"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-life-riders-provisions-0018",
+    "certId": "insurance-life-health",
+    "subjectId": "life-insurance",
+    "chapterId": "life-riders-provisions",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A policyowner gives a bank a collateral assignment of her life policy to secure a loan. If she dies while the loan is unpaid, what happens?",
+    "choices": [
+      "The bank receives the entire death benefit",
+      "The beneficiary receives everything and the bank gets nothing",
+      "The policy becomes void",
+      "The bank receives the amount still owed, and the rest goes to the beneficiary"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Collateral assignment: lender gets only what is owed",
+    "explanation": "A **collateral assignment** is a **temporary, partial** transfer of rights to secure a debt. At death the lender is paid **only the balance owed**, and the **rest goes to the beneficiary**. An **absolute assignment** transfers all rights.\n\n**Wrong choices**\n- The bank receives the entire death benefit: Receiving everything happens only under an absolute assignment.\n- The beneficiary receives everything and the bank gets nothing: The bank has a valid claim up to the amount owed.\n- The policy becomes void: Assignment does not void the policy.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "assignment"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-life-riders-provisions-0019",
+    "certId": "insurance-life-health",
+    "subjectId": "life-insurance",
+    "chapterId": "life-riders-provisions",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Rosa and her husband are named insured and primary beneficiary. Both die in the same car crash, and no one can tell who died first. Their son is the contingent beneficiary. Under common disaster rules, who usually receives the proceeds?",
+    "choices": [
+      "The son, because the insured is treated as having outlived the primary beneficiary",
+      "The husband's estate",
+      "The two estates, split equally",
+      "The insurer keeps the proceeds"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Common disaster: proceeds go to the contingent beneficiary",
+    "explanation": "When the insured and primary beneficiary die together and the order cannot be proved, the **Uniform Simultaneous Death Act** and **common disaster** provisions treat the **insured as the survivor**. The proceeds pass to the **contingent beneficiary**.\n\n**Wrong choices**\n- The husband's estate: Paying the husband's estate is what the rule is meant to prevent.\n- The two estates, split equally: The proceeds are not split between estates.\n- The insurer keeps the proceeds: The insurer still owes the death benefit.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "beneficiary",
+      "common disaster"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-life-riders-provisions-0020",
+    "certId": "insurance-life-health",
+    "subjectId": "life-insurance",
+    "chapterId": "life-riders-provisions",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Tom named \"my children, per stirpes\" as beneficiaries. He had three children, but one died before Tom and left two children of her own. How are the proceeds divided?",
+    "choices": [
+      "The two living children split everything, half each",
+      "Each living child gets one third, and the deceased child's third is split between her two children",
+      "All four living descendants share equally, one quarter each",
+      "The deceased child's share goes to Tom's estate"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Per stirpes: a deceased child's share passes to that child's heirs",
+    "explanation": "A **class designation** names a group such as \"my children.\" **Per stirpes** means \"by the branch\": a deceased child's share passes **down to that child's own children**.\n1. 3 children, so each share = 1/3\n2. The deceased child's 1/3 is split between her 2 children = 1/6 each\n\n**Wrong choices**\n- The two living children split everything, half each: Splitting only among living children is per capita.\n- All four living descendants share equally, one quarter each: Equal shares to all descendants ignores the family branches.\n- The deceased child's share goes to Tom's estate: The share stays in the family branch; it does not go to the estate.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "beneficiary",
+      "per stirpes"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-life-riders-provisions-0021",
+    "certId": "insurance-life-health",
+    "subjectId": "life-insurance",
+    "chapterId": "life-riders-provisions",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Ann stops paying premiums on her whole life policy. She wants no more premiums and wants coverage for the rest of her life, even if the amount is smaller. Which option should she choose?",
+    "choices": [
+      "Extended term insurance",
+      "Cash surrender",
+      "Automatic premium loan",
+      "Reduced paid-up insurance"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Reduced paid-up: lower face, no more premiums, for life",
+    "explanation": "**Reduced paid-up** uses the cash value as a single premium to buy a **smaller amount of permanent insurance** that lasts **for life** with **no more premiums**.\n\n**Wrong choices**\n- Extended term insurance: Extended term keeps the same face amount but only for a limited time.\n- Cash surrender: Cash surrender ends all coverage.\n- Automatic premium loan: An automatic premium loan keeps the premiums going by borrowing; it is not a way to stop premiums.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "nonforfeiture"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-life-riders-provisions-0022",
+    "certId": "insurance-life-health",
+    "subjectId": "life-insurance",
+    "chapterId": "life-riders-provisions",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A policy has a 2-year suicide clause. The insured dies by suicide 14 months after the policy was issued. What does the insurer usually pay?",
+    "choices": [
+      "The full face amount",
+      "Nothing at all",
+      "A refund of the premiums paid",
+      "Double the face amount"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Suicide within the clause period: premiums returned",
+    "explanation": "Under the **suicide clause** (often **2 years**), if the insured dies by suicide within that period, the insurer pays a **refund of premiums**, not the death benefit. After the period ends, suicide is covered like any other death.\n\n**Wrong choices**\n- The full face amount: The full face amount is paid only if the suicide happens after the clause period.\n- Nothing at all: The insurer still returns the premiums paid.\n- Double the face amount: Suicide never doubles the benefit; an accidental death rider does not cover it.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "provisions",
+      "suicide"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-life-riders-provisions-0023",
+    "certId": "insurance-life-health",
+    "subjectId": "life-insurance",
+    "chapterId": "life-riders-provisions",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Sam said he was 40 on his application, but he was really 43 when the policy was issued. He paid $500 a year for $100,000 of coverage at the age-40 rate of $5 per $1,000. The rate at age 43 is $6 per $1,000. If the error is found at his death, about how much will be paid?",
+    "choices": [
+      "$83,333",
+      "$100,000",
+      "$120,000",
+      "$97,000"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Misstated age: benefit = what the premium buys at the true age",
+    "explanation": "Under the **misstatement of age or gender** provision, the insurer pays what the **premium paid would have bought at the correct age**.\n1. Premium paid = $500\n2. Rate at true age 43 = $6 per $1,000\n3. $500 ÷ $6 = 83.33 units of $1,000\n4. Benefit = about $83,333\n\n**Wrong choices**\n- $100,000: The face is adjusted because Sam paid the lower rate for a younger age.\n- $120,000: $120,000 would be the result of a younger true age, not an older one.\n- $97,000: The insurer does not simply subtract a few thousand dollars; it uses the premium-to-rate formula.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "provisions",
+      "misstatement of age",
+      "calculation"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-life-riders-provisions-0024",
+    "certId": "insurance-life-health",
+    "subjectId": "life-insurance",
+    "chapterId": "life-riders-provisions",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Linda's whole life policy has a $100,000 face amount. She has an outstanding policy loan of $8,000 and $400 of unpaid loan interest. If she dies, how much will the beneficiary receive?",
+    "choices": [
+      "$100,000",
+      "$91,600",
+      "$92,000",
+      "$108,400"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Unpaid loans and interest are subtracted from the death benefit",
+    "explanation": "A **policy loan** does not have to be repaid while the insured lives, but any **unpaid loan and interest** are **subtracted from the death benefit**.\n1. Face amount = $100,000\n2. Loan + interest = $8,000 + $400 = $8,400\n3. Paid to beneficiary = $100,000 − $8,400 = $91,600\n\n**Wrong choices**\n- $100,000: The loan balance is not forgiven at death.\n- $92,000: This subtracts the loan but forgets the unpaid interest.\n- $108,400: Loans are subtracted, never added to the benefit.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "policy loans",
+      "calculation"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "cert": "insurance-life-health",
+  "date": "2026-11-05",
+  "chapters": {
+    "life-policy-types": { "result": "PASS", "issues": ["1차 FAIL: points 의 투자 위험 상품 목록에 variable annuity 빠짐 → 더한 뒤 재검증 PASS"] },
+    "life-riders-provisions": { "result": "PASS", "issues": [] },
+    "life-application-underwriting": { "result": "PASS", "issues": ["1차 FAIL 3: AML '고객 확인'(보험사는 AML 프로그램·SAR) 고침, STOLI '대부분 주에서 금지'로, FCRA 요점 '사전 고지'(실제는 요청 후 3일 이내 서면) → 2차에서도 FAIL 이라 그 부분을 빼고 '거절·할증에 쓴 보고서 제공처를 알린다'만 남김(2차 PASS 부분)"] },
+    "retirement-life-concepts": { "result": "PASS", "issues": ["1차 FAIL: MEC 를 불법처럼 쓴 정의 → 7-pay test 불합격으로 고쳐 재검증 PASS"] },
+    "health-policy-types": { "result": "PASS", "issues": ["1차 FAIL 3: major medical 'high maximum'(ACA 로 한도 금지) → out-of-pocket maximum, short-term medical 은 한정 위험 보장이 아니라 공백 기간 임시 보장으로 → 재검증 PASS"] },
+    "health-provisions-riders": { "result": "PASS", "issues": [] },
+    "social-insurance": { "result": "PASS", "issues": [] },
+    "health-other-concepts": { "result": "PASS", "issues": ["1차 FAIL 2: 산재보험 '주법상 의무' → Texas 는 선택이라 'almost every state' 로 고쳐 재검증 PASS"] },
+    "health-field-underwriting": { "result": "PASS", "issues": ["1차 FAIL: FCRA 가 개인정보 고지를 요구한다는 문장 → 보험사 개인정보 고지 + 조사 보고서 고지로 고쳐 재검증 PASS"] }
+  },
+  "meta": { "result": "PASS", "issues": ["1차 FAIL 3: 'Most states' → 'Many states', 선지 수 문장(난이도별 2·3·4개), 6문항 = Medicare·Medicaid·Social Security 합계 → 재검증 PASS"] },
+  "pitfalls": "27/27 PASS (trap 은 모두 실제 틀린 생각, fact 는 문제 정답·해설과 일치)",
+  "totals": "1차 406문장 · PASS 392 · FAIL 14 → 고친 14 재검증 13 PASS · 1 FAIL(FCRA 사전 고지) → 틀린 부분 삭제",
+  "figures": {}
+}

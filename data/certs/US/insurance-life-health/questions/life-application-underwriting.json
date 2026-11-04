@@ -1,0 +1,720 @@
+[
+  {
+    "id": "insurance-life-health-life-application-underwriting-0001",
+    "certId": "insurance-life-health",
+    "subjectId": "life-insurance",
+    "chapterId": "life-application-underwriting",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Who normally signs a life insurance application?",
+    "choices": [
+      "Only the agent",
+      "The proposed insured, the policyowner if different, and the agent",
+      "Only the beneficiary",
+      "Only the insurer's underwriter"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Application signers: insured, owner (if different), agent",
+    "explanation": "A life application is signed by the **proposed insured**, the **policyowner** if that is a different person, and the **agent**. The insured's signature also shows consent to being insured.\n\n**Wrong choices**\n- Only the agent: The agent alone cannot sign for the applicant.\n- Only the beneficiary: The beneficiary does not need to sign.\n- Only the insurer's underwriter: The underwriter reviews the application but does not sign it as a party.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "application",
+      "signatures"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-life-application-underwriting-0002",
+    "certId": "insurance-life-health",
+    "subjectId": "life-insurance",
+    "chapterId": "life-application-underwriting",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "An insurer issues a policy even though one health question on the application was left blank. Later it wants to contest a claim based on that unanswered question. What is the usual result?",
+    "choices": [
+      "The insurer can void the policy because the application was incomplete",
+      "The agent must pay the claim personally",
+      "The insurer is considered to have waived its right to that answer and cannot contest on that basis",
+      "The beneficiary must answer the question before the claim is paid"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Issuing with a blank answer waives the right to that answer",
+    "explanation": "Incomplete applications should be sent back to be completed. If the insurer **issues the policy anyway**, it is treated as having **waived** its right to the missing information and **cannot later contest** the policy because of the blank.\n\n**Wrong choices**\n- The insurer can void the policy because the application was incomplete: Issuing the policy with the blank is what gives up the insurer's right.\n- The agent must pay the claim personally: The agent is not personally liable for the claim.\n- The beneficiary must answer the question before the claim is paid: The claim does not depend on the beneficiary filling in the old application.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "application",
+      "incomplete application",
+      "waiver"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-life-application-underwriting-0003",
+    "certId": "insurance-life-health",
+    "subjectId": "life-insurance",
+    "chapterId": "life-application-underwriting",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "How are statements on a life insurance application treated?",
+    "choices": [
+      "As warranties, which must be literally true in every detail",
+      "As representations, which must be true to the best of the applicant's knowledge",
+      "As opinions that the insurer cannot rely on",
+      "As promises about the insured's future health"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Application answers = representations, not warranties",
+    "explanation": "Statements on a life application are **representations**: true to the **best of the applicant's knowledge**. A **warranty** must be **exactly true**, and life insurance does not treat application answers that way.\n\n**Wrong choices**\n- As warranties, which must be literally true in every detail: Warranties must be literally true, a stricter standard not used for application answers.\n- As opinions that the insurer cannot rely on: The insurer does rely on the answers to underwrite.\n- As promises about the insured's future health: The answers describe the present, not promises about the future.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "application",
+      "representations"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-life-application-underwriting-0004",
+    "certId": "insurance-life-health",
+    "subjectId": "life-insurance",
+    "chapterId": "life-application-underwriting",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "An agent collects the first premium with the application and gives a conditional receipt. When does coverage usually begin?",
+    "choices": [
+      "Only when the policy is delivered",
+      "Only after the free look period ends",
+      "On the first anniversary of the policy",
+      "On the application date, or the medical exam date if later, if the applicant is insurable as applied for"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Conditional receipt: coverage from application (or exam) date",
+    "explanation": "A **conditional receipt** makes coverage start on the **application date** (or the **medical exam date**, if later), on the **condition** that the applicant is **insurable as applied for**.\n\n**Wrong choices**\n- Only when the policy is delivered: Without a conditional receipt, coverage may start at delivery, but this receipt starts it earlier.\n- Only after the free look period ends: The free look period does not start coverage.\n- On the first anniversary of the policy: Coverage does not wait a full year.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "premium receipt",
+      "conditional receipt"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-life-application-underwriting-0005",
+    "certId": "insurance-life-health",
+    "subjectId": "life-insurance",
+    "chapterId": "life-application-underwriting",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Under the Gramm-Leach-Bliley Act, an insurer must:",
+    "choices": [
+      "Share applicants' medical records with any company that asks",
+      "Get federal approval for every policy form",
+      "Give customers a privacy notice explaining how their nonpublic personal information is shared",
+      "Publish each customer's claims online"
+    ],
+    "answer": 3,
+    "oneLineConcept": "GLBA: privacy notice for nonpublic personal information",
+    "explanation": "The **Gramm-Leach-Bliley Act** requires financial institutions, including insurers, to give a **privacy notice** about how they collect and share **nonpublic personal information**. Customers can usually **opt out** of sharing with nonaffiliated third parties.\n\n**Wrong choices**\n- Share applicants' medical records with any company that asks: GLBA limits sharing; it does not require it.\n- Get federal approval for every policy form: Insurance policy forms are approved by states, not under GLBA.\n- Publish each customer's claims online: Publishing customer data would violate privacy rules.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "privacy",
+      "GLBA"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-life-application-underwriting-0006",
+    "certId": "insurance-life-health",
+    "subjectId": "life-insurance",
+    "chapterId": "life-application-underwriting",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "In which case does insurable interest generally exist?",
+    "choices": [
+      "A neighbor buying a policy on another neighbor",
+      "A fan buying a policy on a famous athlete",
+      "An investor buying a policy on a stranger",
+      "A business buying a policy on a key employee"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Insurable interest = real financial or family loss at death",
+    "explanation": "**Insurable interest** exists when the buyer would suffer a **real loss** if the insured died, such as close family, a creditor, or a **business and its key employee**. Every person also has insurable interest in their own life.\n\n**Wrong choices**\n- A neighbor buying a policy on another neighbor: A neighbor has no financial stake in the other person's life.\n- A fan buying a policy on a famous athlete: A fan has no financial or family loss from the athlete's death.\n- An investor buying a policy on a stranger: An investor with no relationship has no insurable interest.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "insurable interest"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-life-application-underwriting-0007",
+    "certId": "insurance-life-health",
+    "subjectId": "life-insurance",
+    "chapterId": "life-application-underwriting",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Under the Fair Credit Reporting Act, what must an insurer do if it declines or rates an application based on a consumer report?",
+    "choices": [
+      "Keep the reason secret from the applicant",
+      "Tell the applicant and give the name and address of the reporting agency",
+      "Charge the applicant for the report",
+      "Cancel any other policies the applicant has"
+    ],
+    "answer": 2,
+    "oneLineConcept": "FCRA: tell the applicant and name the reporting agency",
+    "explanation": "The **Fair Credit Reporting Act** requires the insurer to tell applicants when a consumer report is used. If coverage is **declined or rated** because of it, the applicant must be told and given the **name and address of the reporting agency**, so they can check and dispute errors.\n\n**Wrong choices**\n- Keep the reason secret from the applicant: FCRA requires disclosure, not secrecy.\n- Charge the applicant for the report: The applicant is not billed for the insurer's report; they can get a free copy after an adverse action.\n- Cancel any other policies the applicant has: FCRA does not allow cancelling other policies because of the report.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "FCRA",
+      "consumer report"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-life-application-underwriting-0008",
+    "certId": "insurance-life-health",
+    "subjectId": "life-insurance",
+    "chapterId": "life-application-underwriting",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "An insurance contract is called a contract of adhesion. What does that mean for the consumer?",
+    "choices": [
+      "The insured may rewrite any clause they dislike",
+      "Because the insurer wrote the contract, unclear wording is read in favor of the insured",
+      "Both sides must agree on every word before signing",
+      "The insured must follow every warranty to the letter"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Adhesion: insurer writes it, unclear terms favor the insured",
+    "explanation": "An insurance policy is a **contract of adhesion**: the **insurer writes** it and the buyer can only accept or reject it. For that reason, **ambiguous wording** is interpreted **in favor of the insured**.\n\n**Wrong choices**\n- The insured may rewrite any clause they dislike: The insured cannot rewrite the insurer's wording.\n- Both sides must agree on every word before signing: Clauses are not negotiated word by word; that is the point of adhesion.\n- The insured must follow every warranty to the letter: Application statements are representations, not warranties.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "contract law",
+      "adhesion"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-life-application-underwriting-0009",
+    "certId": "insurance-life-health",
+    "subjectId": "life-insurance",
+    "chapterId": "life-application-underwriting",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Insurance is a unilateral contract. This means that:",
+    "choices": [
+      "Both sides must keep paying for the policy to stay valid",
+      "The insured promises to pay premiums for life",
+      "Only the insurer makes a legally enforceable promise",
+      "The contract can be changed by either side at any time"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Unilateral: only the insurer is legally bound",
+    "explanation": "In a **unilateral contract**, only **one party** makes an enforceable promise. The **insurer** promises to pay covered claims. The owner does not promise to pay premiums; if they stop, the policy lapses but the owner cannot be sued for them.\n\n**Wrong choices**\n- Both sides must keep paying for the policy to stay valid: Only the insurer is bound; the owner may stop paying.\n- The insured promises to pay premiums for life: The owner makes no legal promise to pay premiums.\n- The contract can be changed by either side at any time: Neither side may change the contract on its own.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "contract law",
+      "unilateral"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-life-application-underwriting-0010",
+    "certId": "insurance-life-health",
+    "subjectId": "life-insurance",
+    "chapterId": "life-application-underwriting",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which of these is a replacement?",
+    "choices": [
+      "Adding a rider to an existing policy",
+      "Buying a second policy while keeping the first fully in force",
+      "Buying a new policy that will cause an existing policy to lapse or be surrendered",
+      "Changing the beneficiary on an existing policy"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Replacement: new policy causes an old one to end or shrink",
+    "explanation": "**Replacement** happens when a new policy causes an existing one to **lapse, be surrendered, be reduced**, or be borrowed against heavily. The agent must follow state **replacement rules**, such as giving the applicant a replacement notice and telling the insurer.\n\n**Wrong choices**\n- Adding a rider to an existing policy: A rider changes the existing policy; it does not replace it.\n- Buying a second policy while keeping the first fully in force: Keeping both policies fully in force is not a replacement.\n- Changing the beneficiary on an existing policy: A beneficiary change is a normal owner's right.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "replacement"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-life-application-underwriting-0011",
+    "certId": "insurance-life-health",
+    "subjectId": "life-insurance",
+    "chapterId": "life-application-underwriting",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Under federal anti-money-laundering rules (including the USA PATRIOT Act), insurers that sell covered products must:",
+    "choices": [
+      "Accept cash of any amount without asking questions",
+      "Share all applicants' medical files with federal agencies",
+      "Refuse premiums paid by check",
+      "Have an anti-money-laundering program and report suspicious transactions"
+    ],
+    "answer": 4,
+    "oneLineConcept": "AML: have a program and report suspicious activity",
+    "explanation": "Insurers that issue **covered products** (such as permanent life and annuities with cash value) must keep an **anti-money-laundering program**, train agents, and file **suspicious activity reports**. Warning signs include large cash payments and early surrenders with no concern for penalties.\n\n**Wrong choices**\n- Accept cash of any amount without asking questions: Large cash payments are a warning sign, not something to accept without question.\n- Share all applicants' medical files with federal agencies: AML rules are about money, not sharing medical files.\n- Refuse premiums paid by check: Checks are normal payments.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "anti-money laundering",
+      "USA PATRIOT Act"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-life-application-underwriting-0012",
+    "certId": "insurance-life-health",
+    "subjectId": "life-insurance",
+    "chapterId": "life-application-underwriting",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Before an insurer tests an applicant for HIV as part of underwriting, it usually must:",
+    "choices": [
+      "Get the applicant's written consent and give information about the test",
+      "Test without telling the applicant",
+      "Decline everyone who lives in certain areas",
+      "Ask about the applicant's sexual orientation"
+    ],
+    "answer": 1,
+    "oneLineConcept": "HIV testing needs informed written consent",
+    "explanation": "Insurers may use **HIV tests** in underwriting, but they must usually get the applicant's **written informed consent**, give **information about the test**, and keep results **confidential**.\n\n**Wrong choices**\n- Test without telling the applicant: Testing without consent is not allowed.\n- Decline everyone who lives in certain areas: Declining by where someone lives is unfair discrimination.\n- Ask about the applicant's sexual orientation: Underwriting may not use sexual orientation.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "disclosure",
+      "HIV consent"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-life-application-underwriting-0013",
+    "certId": "insurance-life-health",
+    "subjectId": "life-insurance",
+    "chapterId": "life-application-underwriting",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "What is the main purpose of the MIB (Medical Information Bureau)?",
+    "choices": [
+      "To decide whether an applicant must be declined",
+      "To pay medical claims for members",
+      "To share coded medical information among member insurers to help detect errors and fraud on applications",
+      "To set premium rates for all life insurers"
+    ],
+    "answer": 3,
+    "oneLineConcept": "MIB shares coded medical data among member insurers",
+    "explanation": "The **MIB** keeps **coded** medical information reported by member insurers. An underwriter uses it to spot **omissions or misstatements**, but an MIB report **alone cannot be the reason** to decline coverage.\n\n**Wrong choices**\n- To decide whether an applicant must be declined: The MIB does not make underwriting decisions.\n- To pay medical claims for members: The MIB is not an insurer and does not pay claims.\n- To set premium rates for all life insurers: Each insurer sets its own premium rates.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "underwriting",
+      "MIB"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-life-application-underwriting-0014",
+    "certId": "insurance-life-health",
+    "subjectId": "life-insurance",
+    "chapterId": "life-application-underwriting",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "What is stranger-originated life insurance (STOLI)?",
+    "choices": [
+      "A policyowner selling a policy they no longer need to a licensed buyer",
+      "A business insuring its key employee",
+      "A spouse buying a policy on the other spouse",
+      "An arrangement in which investors with no insurable interest get a person to buy a policy meant to be transferred to them"
+    ],
+    "answer": 4,
+    "oneLineConcept": "STOLI: investors set up a policy on a stranger to profit",
+    "explanation": "**STOLI** (also IOLI) is set up from the start so that **investors with no insurable interest** profit from someone's death. The person is often paid to apply, and the policy is then transferred to the investors. Most states **prohibit** it.\n\n**Wrong choices**\n- A policyowner selling a policy they no longer need to a licensed buyer: A legitimate life settlement of a policy bought for a real need is not STOLI.\n- A business insuring its key employee: A business has insurable interest in a key employee.\n- A spouse buying a policy on the other spouse: A spouse has insurable interest in the other spouse.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "underwriting",
+      "STOLI"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-life-application-underwriting-0015",
+    "certId": "insurance-life-health",
+    "subjectId": "life-insurance",
+    "chapterId": "life-application-underwriting",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "In a life insurance contract, when does the applicant usually make the offer?",
+    "choices": [
+      "When the agent first explains the product",
+      "When the applicant submits a signed application with the first premium",
+      "When the insurer mails advertising",
+      "When the policy is delivered"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Offer = application + premium; acceptance = insurer issues",
+    "explanation": "A contract needs **offer and acceptance**. In life insurance, the applicant usually makes the **offer** by sending the **signed application with the first premium**, and the insurer **accepts** by issuing the policy as applied for.\n\n**Wrong choices**\n- When the agent first explains the product: An agent's explanation is only an invitation to apply.\n- When the insurer mails advertising: Advertising is not an offer.\n- When the policy is delivered: Delivery comes after acceptance; at that point the contract is already formed (unless the premium was not paid).",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "contract law",
+      "offer and acceptance"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-life-application-underwriting-0016",
+    "certId": "insurance-life-health",
+    "subjectId": "life-insurance",
+    "chapterId": "life-application-underwriting",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Jim applied without paying a premium. The policy was issued as applied for. When the agent delivers it, what should the agent do?",
+    "choices": [
+      "Collect the first premium and get Jim's signed statement that his health has not changed",
+      "Leave the policy and bill Jim later, with no other paperwork",
+      "Start a new application",
+      "Ask Jim to take a new medical exam"
+    ],
+    "answer": 1,
+    "oneLineConcept": "No premium with app: collect it plus a good-health statement",
+    "explanation": "When no premium was paid with the application, coverage does not start until the policy is **delivered and the premium is paid**. The agent collects the premium and a signed **statement of good health** confirming the insured's health has **not changed** since applying.\n\n**Wrong choices**\n- Leave the policy and bill Jim later, with no other paperwork: Leaving the policy without collecting the premium and a health statement does not put coverage in force properly.\n- Start a new application: The policy was already approved, so a new application is not needed.\n- Ask Jim to take a new medical exam: A statement of continued good health is normally enough; a new exam is not standard.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "policy delivery",
+      "statement of good health"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-life-application-underwriting-0017",
+    "certId": "insurance-life-health",
+    "subjectId": "life-insurance",
+    "chapterId": "life-application-underwriting",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Paul has well-controlled diabetes and is otherwise healthy. The insurer agrees to issue his policy but at a higher premium than the standard rate. Paul has been placed in which risk class?",
+    "choices": [
+      "Preferred",
+      "Standard",
+      "Substandard (rated)",
+      "Declined"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Risk classes: preferred, standard, substandard (rated), declined",
+    "explanation": "Underwriters place applicants into **risk classes**: **preferred** (better than average), **standard** (average), **substandard or rated** (higher risk, extra premium), and **declined**. An extra charge for a health condition means a **substandard** rating.\n\n**Wrong choices**\n- Preferred: Preferred applicants pay less than standard, not more.\n- Standard: Standard applicants pay the regular rate without an extra charge.\n- Declined: Paul was offered coverage, so he was not declined.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "underwriting",
+      "risk classification"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-life-application-underwriting-0018",
+    "certId": "insurance-life-health",
+    "subjectId": "life-insurance",
+    "chapterId": "life-application-underwriting",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Mia owned a policy on her husband's life that she bought while they were married. They divorced, she kept paying the premium, and he died two years later. Will the insurer pay Mia?",
+    "choices": [
+      "No, because insurable interest ended with the divorce",
+      "Only if she remarried him before his death",
+      "Yes, because insurable interest only needs to exist when the policy is issued",
+      "Only the cash value, not the death benefit"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Insurable interest is needed at issue, not at death",
+    "explanation": "For life insurance, **insurable interest** must exist **when the policy is issued**. It does **not need to exist at the time of death**, so Mia, as owner and beneficiary, is paid.\n\n**Wrong choices**\n- No, because insurable interest ended with the divorce: The divorce does not matter because the interest existed at issue.\n- Only if she remarried him before his death: Remarriage has no effect on the claim.\n- Only the cash value, not the death benefit: The full death benefit is owed under a valid policy.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "insurable interest"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-life-application-underwriting-0019",
+    "certId": "insurance-life-health",
+    "subjectId": "life-insurance",
+    "chapterId": "life-application-underwriting",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Beth paid one monthly premium of $60, and the insured died the next week. The insurer paid the $250,000 death benefit. Which feature of an insurance contract does this show?",
+    "choices": [
+      "Aleatory",
+      "Adhesion",
+      "Unilateral",
+      "Conditional"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Aleatory: unequal exchange of values",
+    "explanation": "An insurance contract is **aleatory**: the values exchanged can be very **unequal** and depend on an uncertain event. A small premium can lead to a large payment, or many premiums may be paid with no claim.\n\n**Wrong choices**\n- Adhesion: Adhesion means the insurer writes the contract.\n- Unilateral: Unilateral means only the insurer makes an enforceable promise.\n- Conditional: Conditional means the insurer pays only if the owner meets conditions such as filing a claim.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "contract law",
+      "aleatory"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-life-application-underwriting-0020",
+    "certId": "insurance-life-health",
+    "subjectId": "life-insurance",
+    "chapterId": "life-application-underwriting",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Carl applied for a policy at standard rates, but the insurer approved it only at a higher rated premium. Legally, what is the policy the insurer sends?",
+    "choices": [
+      "An acceptance that binds Carl to the higher premium",
+      "A breach of contract by the insurer",
+      "A counteroffer that Carl may accept or reject",
+      "A conditional receipt"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Issuing other than applied for = counteroffer",
+    "explanation": "When the insurer issues a policy **different from what was applied for**, such as with a rating, it is a **counteroffer**. At delivery the agent must **explain the rating**, and Carl decides whether to accept it, usually by signing and paying the higher premium.\n\n**Wrong choices**\n- An acceptance that binds Carl to the higher premium: Carl is not bound until he accepts the new terms.\n- A breach of contract by the insurer: Insurers may rate or decline; this is not a breach.\n- A conditional receipt: A conditional receipt is given when the premium is paid with the application.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "policy delivery",
+      "counteroffer"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+]

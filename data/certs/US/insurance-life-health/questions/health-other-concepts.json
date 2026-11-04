@@ -1,0 +1,393 @@
+[
+  {
+    "id": "insurance-life-health-health-other-concepts-0001",
+    "certId": "insurance-life-health",
+    "subjectId": "health-insurance",
+    "chapterId": "health-other-concepts",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A surgeon injures her hand and can no longer operate, but she can teach at a medical school. Her disability policy defines total disability using the own occupation definition. Is she considered totally disabled?",
+    "choices": [
+      "Yes, because she cannot do the main duties of her own job as a surgeon",
+      "Yes, but only if she earns no income at all",
+      "No, because she can still work in another job suited to her training",
+      "No, because she can still use her other hand"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Own occupation: can't do your own job = totally disabled",
+    "explanation": "Under the **own occupation** definition, the insured is totally disabled if they **cannot perform the main duties of their own job**, even if they can work at something else. Under the stricter **any occupation** definition, they are disabled only if they cannot do **any job** suited to their education, training, and experience.\n\n**Wrong choices**\n- Yes, but only if she earns no income at all: Under own occupation, she can be totally disabled even if she works in another field.\n- No, because she can still work in another job suited to her training: That is the any occupation test, which her policy does not use.\n- No, because she can still use her other hand: The test is whether she can perform her own occupation, not whether she has some ability left.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "total disability",
+      "own occupation"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-health-other-concepts-0002",
+    "certId": "insurance-life-health",
+    "subjectId": "health-insurance",
+    "chapterId": "health-other-concepts",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Under the any occupation definition of total disability, when is an insured considered totally disabled?",
+    "choices": [
+      "When they cannot work at any job suited to their education, training, and experience",
+      "When they can work only part time in their own job",
+      "When they cannot do the main duties of their own job",
+      "When they have been in a hospital for at least 30 days"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Any occupation = can't do any reasonably suited job",
+    "explanation": "The **any occupation** definition is **stricter** than own occupation. The insured is totally disabled only when they **cannot do any job** they are reasonably suited for by **education, training, or experience**. Because benefits are harder to get, these policies usually cost less.\n\n**Wrong choices**\n- When they can work only part time in their own job: Part-time work at a reduced level describes partial or residual disability.\n- When they cannot do the main duties of their own job: That is the own occupation definition.\n- When they have been in a hospital for at least 30 days: Hospital stays are not the test for total disability.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "total disability",
+      "any occupation"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-health-other-concepts-0003",
+    "certId": "insurance-life-health",
+    "subjectId": "health-insurance",
+    "chapterId": "health-other-concepts",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "An insured can still do some, but not all, of the important duties of his job after an injury. Many disability policies pay what kind of benefit in this situation?",
+    "choices": [
+      "The full total disability benefit for life",
+      "No benefit, since he is still able to work",
+      "A partial disability benefit, commonly a set percentage such as half of the total disability benefit, for a limited time",
+      "A lump sum equal to the principal sum"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Partial disability: reduced benefit, usually for a limited time",
+    "explanation": "**Partial disability** means the insured can do **some but not all** of their important job duties, or can work only part time. Many policies pay a **reduced benefit**, commonly about **half** of the total disability benefit, and only for a **limited period**.\n\n**Wrong choices**\n- The full total disability benefit for life: Total disability benefits are for people who cannot do their job, not those who can do part of it.\n- No benefit, since he is still able to work: Policies with partial disability benefits pay something even when the insured works part time.\n- A lump sum equal to the principal sum: Principal sum is an AD&D term.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "partial disability"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-health-other-concepts-0004",
+    "certId": "insurance-life-health",
+    "subjectId": "health-insurance",
+    "chapterId": "health-other-concepts",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Before her illness, Kim earned $6,000 a month. She returns to work part time and now earns $3,000 a month. Her policy's full monthly disability benefit is $3,000 and includes a residual disability benefit. How much would the residual benefit pay?",
+    "choices": [
+      "$4,500",
+      "$1,500",
+      "$3,000",
+      "$3,000 minus her $3,000 pay, which is $0"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Residual benefit = full benefit x percent of income lost",
+    "explanation": "A **residual disability** benefit pays a **share of the full benefit** that matches the **percentage of income lost**.\n\n1. Income lost: $6,000 - $3,000 = $3,000\n2. Percent lost: $3,000 / $6,000 = 50%\n3. Residual benefit: $3,000 x 50% = **$1,500**\n\n**Wrong choices**\n- $4,500: No step in the formula produces $4,500.\n- $3,000: $3,000 is the full benefit for total disability, but Kim is still earning some income.\n- $3,000 minus her $3,000 pay, which is $0: Residual benefits are based on the percentage of income lost, not a dollar-for-dollar subtraction.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "residual disability",
+      "calculation"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-health-other-concepts-0005",
+    "certId": "insurance-life-health",
+    "subjectId": "health-insurance",
+    "chapterId": "health-other-concepts",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "An insured recovers from a back injury and goes back to work. Two months later, the same back problem disables him again. Under a typical recurrent disability provision, how is the second period handled?",
+    "choices": [
+      "It is covered only by workers compensation",
+      "It is not covered, because the insured had already recovered",
+      "It is treated as a continuation of the first disability, so a new elimination period is not required",
+      "It is treated as a new disability with a new elimination period"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Recurrent disability: same cause, short gap = same claim",
+    "explanation": "A **recurrent disability** provision says that if the **same condition** disables the insured again within a set time after recovery (often **6 months**), it is treated as the **same disability**. The insured does **not** have to serve a **new elimination period**.\n\n**Wrong choices**\n- It is covered only by workers compensation: Workers compensation applies only to job-related injuries, and the question does not say this was one.\n- It is not covered, because the insured had already recovered: The recurrent disability provision exists to cover exactly this case.\n- It is treated as a new disability with a new elimination period: A recurrence of the same cause within the set period is not treated as new.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "recurrent disability"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-health-other-concepts-0006",
+    "certId": "insurance-life-health",
+    "subjectId": "health-insurance",
+    "chapterId": "health-other-concepts",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "In a health or disability policy, who usually has the right to change the beneficiary or make other changes to the policy?",
+    "choices": [
+      "The insured, even when someone else owns the policy",
+      "The agent who sold the policy",
+      "The policyowner",
+      "The beneficiary"
+    ],
+    "answer": 3,
+    "oneLineConcept": "The policyowner holds the policy's rights",
+    "explanation": "**Owner's rights** belong to the **policyowner**, who is often, but not always, the insured. The owner can name and change **revocable beneficiaries**, pay premiums, and make policy changes. If the policy has an **irrevocable** beneficiary, that beneficiary's consent is needed for a change.\n\n**Wrong choices**\n- The insured, even when someone else owns the policy: The insured has these rights only if they are also the owner.\n- The agent who sold the policy: Agents have no right to change a client's policy.\n- The beneficiary: A beneficiary receives benefits but does not control the policy.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "owner's rights"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-health-other-concepts-0007",
+    "certId": "insurance-life-health",
+    "subjectId": "health-insurance",
+    "chapterId": "health-other-concepts",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Under the Affordable Care Act, if a health plan offers coverage for dependent children, until what age must it allow a child to stay on a parent's plan?",
+    "choices": [
+      "Age 26",
+      "Age 18",
+      "Age 30",
+      "Age 21"
+    ],
+    "answer": 1,
+    "oneLineConcept": "ACA: children can stay on a parent's plan to age 26",
+    "explanation": "The **Affordable Care Act** requires plans that offer **dependent coverage** to let children stay on a parent's plan **until age 26**, whether or not they are married, in school, or living at home. Many plans also continue coverage past that age for a child who cannot support themselves because of a **disability**.\n\n**Wrong choices**\n- Age 18: 18 is far below the ACA requirement.\n- Age 30: 30 is beyond the federal requirement.\n- Age 21: 21 is not the ACA age.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "dependent children",
+      "ACA"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-health-other-concepts-0008",
+    "certId": "insurance-life-health",
+    "subjectId": "health-insurance",
+    "chapterId": "health-other-concepts",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Linda is covered by her own employer's group plan and also as a dependent on her husband's group plan. For Linda's own medical bills, which plan is usually primary?",
+    "choices": [
+      "Both plans pay half",
+      "Whichever plan has the lower deductible",
+      "Her own employer's plan",
+      "Her husband's plan"
+    ],
+    "answer": 3,
+    "oneLineConcept": "COB: your own plan pays first; total cannot exceed 100%",
+    "explanation": "Under **coordination of benefits**, the plan that covers a person as an **employee** is **primary** and pays first; the plan that covers them as a **dependent** is **secondary**. Together, the plans will not pay more than **100% of allowable expenses**, so the insured cannot profit from a claim.\n\n**Wrong choices**\n- Both plans pay half: Plans do not simply split the bill; one pays first.\n- Whichever plan has the lower deductible: The order is set by coordination rules, not by the deductible.\n- Her husband's plan: For Linda, her husband's plan is secondary because she is only a dependent on it.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "coordination of benefits"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-health-other-concepts-0009",
+    "certId": "insurance-life-health",
+    "subjectId": "health-insurance",
+    "chapterId": "health-other-concepts",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A nonoccupational health policy covers which losses?",
+    "choices": [
+      "All illnesses and injuries, both on and off the job",
+      "Only illnesses and injuries that are not caused by the insured's job",
+      "Only losses that workers compensation refuses to pay",
+      "Only injuries that happen at work"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Nonoccupational = off-the-job only (work losses go to workers' comp)",
+    "explanation": "A **nonoccupational** policy covers sickness and injury **off the job** only, because job-related losses are expected to be covered by **workers compensation**. An **occupational** policy covers losses **both on and off the job**.\n\n**Wrong choices**\n- All illnesses and injuries, both on and off the job: Covering both describes an occupational policy.\n- Only losses that workers compensation refuses to pay: A nonoccupational policy is not designed as a backup to workers compensation.\n- Only injuries that happen at work: On-the-job losses are what an occupational policy or workers compensation covers.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "occupational vs nonoccupational",
+      "workers compensation"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-health-other-concepts-0010",
+    "certId": "insurance-life-health",
+    "subjectId": "health-insurance",
+    "chapterId": "health-other-concepts",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Paul's employer pays the full premium for his group disability income coverage and does not include it in Paul's taxable pay. Paul also buys an individual disability policy with his own after-tax money. If Paul becomes disabled, how are the benefits taxed?",
+    "choices": [
+      "Benefits from his own policy are taxable; the employer plan's benefits are tax-free",
+      "Both are tax-free",
+      "Benefits from the employer-paid plan are taxable income; benefits from his own policy are tax-free",
+      "Both are taxable income"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Who paid the premium (and how) decides if DI benefits are taxed",
+    "explanation": "For disability income, the **tax treatment of benefits** follows the **premium**. If the **employer** paid the premium (and it was not counted as the employee's income), the benefits are **taxable**. If the insured paid with **after-tax** money, the benefits are **tax-free**.\n\n**Wrong choices**\n- Benefits from his own policy are taxable; the employer plan's benefits are tax-free: This reverses the rule.\n- Both are tax-free: Benefits from coverage the employer paid for with untaxed dollars are taxable.\n- Both are taxable income: Benefits from a policy paid with after-tax money are not taxed.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "tax treatment",
+      "disability income"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-health-other-concepts-0011",
+    "certId": "insurance-life-health",
+    "subjectId": "health-insurance",
+    "chapterId": "health-other-concepts",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A health insurer pays a policyholder's medical bills after another driver caused a car accident. The insurer then seeks repayment from the other driver. What is this right called?",
+    "choices": [
+      "Indemnity",
+      "Assignment",
+      "Coordination of benefits",
+      "Subrogation"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Subrogation: insurer steps into the insured's shoes to recover",
+    "explanation": "**Subrogation** lets the insurer, after paying a claim, take over the insured's **right to recover** from the **party who caused the loss**. This keeps the insured from being paid twice for the same loss.\n\n**Wrong choices**\n- Indemnity: Indemnity is the principle of restoring the insured to their prior financial position, not the recovery right itself.\n- Assignment: Assignment is the transfer of policy rights or benefits by the owner to someone else.\n- Coordination of benefits: Coordination of benefits sets the order of payment among the insured's own plans.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "subrogation"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  }
+]
