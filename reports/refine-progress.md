@@ -17,6 +17,7 @@
 |---|---|---|---|---|---|---|
 | 2026-11-03 | KR forklift-operator | 8 / 14 / 12 / 0 | 7 / 0 / 0 / 12 | 34 | 48 / 48 / 0 (수정 후 통과 1) | 첫 다듬기 (회장 실행 당일, 수동). 그림 보강 안 함. 같은 날 단원 페이지 합치기(mergedAt) 첫 적용: 12단원 모두 /concepts/{단원} 으로 합침, 배포 파일 -12 |
 | 2026-11-04 | US dmv-permit-california | 4 / 1 / 5 / 0 | 2 / 0 / 0 / 5 | 15 | 65 / 65 / 0 (수정 후 통과 2) | 새벽 루틴. 5단원 모두 /concepts/{단원} 으로 합침(mergedAt), printable, basisYear 2026. 그림 보강 해당 없음 |
+| 2026-11-05 | KR electrician-craftsman | 4 / 8 / 16 / 0 | 4 / 0 / 0 / 17 | 47 | 55 / 55 / 0 | 새벽 루틴. 17단원 모두 /concepts/{단원} 으로 합침(mergedAt), printable. basisYear 확인 안 함. 그림 보강 해당 없음(다음 할 일에 없음) |
 
 ## 순서 (80개)
 
@@ -24,7 +25,7 @@
 |---|---|---|---|---|---|
 | 1 | KR | forklift-operator | 지게차운전기능사 | 12 | 2026-11-03 완료 |
 | 2 | US | dmv-permit-california | California DMV Permit Test | 5 | 2026-11-04 완료 |
-| 3 | KR | electrician-craftsman | 전기기능사 | 17 | |
+| 3 | KR | electrician-craftsman | 전기기능사 | 17 | 2026-11-05 완료 |
 | 4 | US | dmv-permit-texas | Texas DMV Permit Test | 5 | |
 | 5 | KR | computer-literacy-2 | 컴퓨터활용능력 2급 | 9 | |
 | 6 | US | dmv-permit-florida | Florida DMV Permit Test | 5 | |
