@@ -1,0 +1,812 @@
+[
+  {
+    "id": "insurance-life-health-health-provisions-riders-0001",
+    "certId": "insurance-life-health",
+    "subjectId": "health-insurance",
+    "chapterId": "health-provisions-riders",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Under the entire contract provision of a health policy, what makes up the whole contract?",
+    "choices": [
+      "The policy, the attached application, and any attached riders or endorsements",
+      "The policy plus any brochures the agent gave the applicant",
+      "The policy plus the insurer's internal underwriting rules",
+      "Only the application signed by the applicant"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Entire contract = policy + attached application + riders",
+    "explanation": "The **entire contract** provision says the **policy, the attached application, and any attached riders or endorsements** are the whole agreement. Nothing outside it can be added by reference, and no change is valid unless an officer of the insurer approves it in writing and it is attached to the policy; an **agent cannot change** the policy.\n\n**Wrong choices**\n- The policy plus any brochures the agent gave the applicant: Sales materials are not part of the contract unless attached to the policy.\n- The policy plus the insurer's internal underwriting rules: The insurer cannot add outside documents that are not attached.\n- Only the application signed by the applicant: The application is part of the contract, but so is the policy itself.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "entire contract"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-health-provisions-riders-0002",
+    "certId": "insurance-life-health",
+    "subjectId": "health-insurance",
+    "chapterId": "health-provisions-riders",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A health policy has been in force for 3 years. The insurer now learns that the insured made an honest mistake on the application. Under the time limit on certain defenses provision, what can the insurer do?",
+    "choices": [
+      "It can cancel the policy because any misstatement voids the contract",
+      "It can void the policy, but only if it refunds all premiums with interest",
+      "It can deny claims but must keep the policy in force",
+      "It cannot void the policy or deny a claim because of that misstatement"
+    ],
+    "answer": 4,
+    "oneLineConcept": "After 2 years, only fraud can be contested",
+    "explanation": "The **time limit on certain defenses** (the health version of the incontestable clause) says that after the policy has been in force **2 years**, the insurer cannot void the policy or deny a claim because of **misstatements on the application**, except **fraudulent** misstatements.\n\n**Wrong choices**\n- It can cancel the policy because any misstatement voids the contract: After the 2-year period, honest (non-fraudulent) misstatements cannot be used to void the policy or deny claims.\n- It can void the policy, but only if it refunds all premiums with interest: Refunding premiums does not get around the time limit.\n- It can deny claims but must keep the policy in force: Denying claims based on the old misstatement is also barred after the time limit.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "time limit on certain defenses",
+      "incontestable"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-health-provisions-riders-0003",
+    "certId": "insurance-life-health",
+    "subjectId": "health-insurance",
+    "chapterId": "health-provisions-riders",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "An insured pays health insurance premiums monthly. How long is the grace period under the standard provision?",
+    "choices": [
+      "60 days",
+      "10 days",
+      "31 days",
+      "7 days"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Grace period: weekly 7 · monthly 10 · others 31 days",
+    "explanation": "The **grace period** lets the insured pay a late premium while the policy **stays in force**. It is at least **7 days** for weekly premiums, **10 days** for monthly premiums, and **31 days** for all other modes (quarterly, semiannual, annual).\n\n**Wrong choices**\n- 60 days: No standard health grace period is that long.\n- 31 days: 31 days is the grace period for premiums paid other than weekly or monthly, such as quarterly or yearly.\n- 7 days: 7 days applies to weekly premiums.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "grace period"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-health-provisions-riders-0004",
+    "certId": "insurance-life-health",
+    "subjectId": "health-insurance",
+    "chapterId": "health-provisions-riders",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Ann's lapsed health policy is reinstated on June 1. She gets sick with an illness that begins June 6, and she breaks her arm in a fall on June 3. Which losses are covered?",
+    "choices": [
+      "Only the broken arm",
+      "Only the illness",
+      "Both the broken arm and the illness",
+      "Neither loss, because a reinstated policy has a 30-day waiting period for all claims"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Reinstated: accidents covered at once; sickness after 10 days",
+    "explanation": "Under the **reinstatement** provision, a reinstated policy covers **accidental injury** that happens **after** reinstatement right away, but covers **sickness** only if it **begins more than 10 days** after reinstatement. This keeps people from reinstating only after they already know they are sick.\n\n**Wrong choices**\n- Only the illness: Accidents are covered right after reinstatement, so the broken arm is covered.\n- Both the broken arm and the illness: Sickness is covered only if it begins more than 10 days after reinstatement, and June 6 is too soon.\n- Neither loss, because a reinstated policy has a 30-day waiting period for all claims: There is no 30-day wait; accidents are covered at once and sickness after 10 days.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "reinstatement"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-health-provisions-riders-0005",
+    "certId": "insurance-life-health",
+    "subjectId": "health-insurance",
+    "chapterId": "health-provisions-riders",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Under the notice of claim provision, how soon should the insured give the insurer written notice of a loss?",
+    "choices": [
+      "Within 15 days",
+      "Within 90 days",
+      "Within 20 days, or as soon as reasonably possible",
+      "Within 1 year"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Notice of claim: within 20 days of the loss",
+    "explanation": "The **notice of claim** provision requires the insured to tell the insurer about a loss **within 20 days** after it happens, or **as soon as reasonably possible**. This first notice starts the claim process.\n\n**Wrong choices**\n- Within 15 days: 15 days is how long the insurer has to send claim forms.\n- Within 90 days: 90 days is the usual time for proof of loss, not notice of claim.\n- Within 1 year: 1 year is the outside limit for proof of loss, not for notice.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "notice of claim"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-health-provisions-riders-0006",
+    "certId": "insurance-life-health",
+    "subjectId": "health-insurance",
+    "chapterId": "health-provisions-riders",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "An insurer receives notice of a claim but does not send claim forms within 15 days. What may the claimant do?",
+    "choices": [
+      "Send written proof of the loss in their own words, and it counts as meeting the proof of loss requirement",
+      "Collect double benefits as a penalty",
+      "Sue the insurer right away",
+      "Nothing until the forms arrive, since the claim cannot move forward without them"
+    ],
+    "answer": 1,
+    "oneLineConcept": "No forms in 15 days: claimant may send own written proof",
+    "explanation": "Under the **claim forms** provision, the insurer must send claim forms **within 15 days** of receiving notice. If it does not, the claimant may send **written proof of loss in their own form**, describing what happened and how much was lost, and that satisfies the requirement.\n\n**Wrong choices**\n- Collect double benefits as a penalty: The provision does not create a double benefit.\n- Sue the insurer right away: Legal action generally must wait until 60 days after proof of loss is given.\n- Nothing until the forms arrive, since the claim cannot move forward without them: The claimant does not have to wait; written proof in any form is accepted.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "claim forms"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-health-provisions-riders-0007",
+    "certId": "insurance-life-health",
+    "subjectId": "health-insurance",
+    "chapterId": "health-provisions-riders",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Proof of loss is normally due within 90 days of the loss. If it is not reasonably possible to meet that deadline, what is the latest it may be given, unless the claimant lacks legal capacity?",
+    "choices": [
+      "2 years from the date of loss",
+      "6 months from the date of loss",
+      "3 years from the date of loss",
+      "1 year from the date it was otherwise due"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Proof of loss: 90 days; at most 1 year (unless legal incapacity)",
+    "explanation": "The **proof of loss** provision gives the claimant **90 days** after the loss to send proof. If that is not reasonably possible, proof is still accepted if given as soon as possible but **no later than 1 year**, unless the claimant **lacks legal capacity** (for example, is in a coma).\n\n**Wrong choices**\n- 2 years from the date of loss: 2 years is the time limit on certain defenses, not proof of loss.\n- 6 months from the date of loss: There is no 6-month limit; the outside limit is 1 year.\n- 3 years from the date of loss: 3 years is the limit for bringing a lawsuit.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "proof of loss"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-health-provisions-riders-0008",
+    "certId": "insurance-life-health",
+    "subjectId": "health-insurance",
+    "chapterId": "health-provisions-riders",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "While a claim is pending, the insurer wants the claimant to see a doctor of the insurer's choice. Who pays for this examination?",
+    "choices": [
+      "The insurer",
+      "The claimant's own doctor",
+      "The claimant",
+      "The state insurance department"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Insurer may require exams (and autopsy if lawful) at its own cost",
+    "explanation": "Under the **physical examination and autopsy** provision, the insurer may have the claimant examined **at its own expense** as often as reasonably needed while a claim is pending, and may request an **autopsy** in case of death **where the law allows** it.\n\n**Wrong choices**\n- The claimant's own doctor: The claimant's doctor does not pay for the insurer's exam.\n- The claimant: The provision says the insurer pays for exams it requires.\n- The state insurance department: The state does not pay for claim exams.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "physical examination and autopsy"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-health-provisions-riders-0009",
+    "certId": "insurance-life-health",
+    "subjectId": "health-insurance",
+    "chapterId": "health-provisions-riders",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Joe gives the insurer proof of loss on March 1. The insurer has not paid, and Joe wants to sue. Under the legal actions provision, what applies?",
+    "choices": [
+      "He may sue right away, with no time limit",
+      "He must wait 1 year, and then has 2 years to sue",
+      "He must wait until 60 days after giving proof of loss, and he cannot sue more than 3 years after proof was required",
+      "He must wait until 30 days after the loss, and he has 5 years to sue"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Legal actions: not before 60 days after proof; not after 3 years",
+    "explanation": "The **legal actions** provision gives the insurer time to review the claim: no lawsuit may be brought until **60 days after proof of loss** is given, and none may be brought **more than 3 years** after the time proof of loss was required.\n\n**Wrong choices**\n- He may sue right away, with no time limit: The provision requires a 60-day wait and sets a 3-year outside limit.\n- He must wait 1 year, and then has 2 years to sue: The waiting period is 60 days, not 1 year.\n- He must wait until 30 days after the loss, and he has 5 years to sue: Neither the 30-day nor the 5-year figure is in the standard provision.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "legal actions"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-health-provisions-riders-0010",
+    "certId": "insurance-life-health",
+    "subjectId": "health-insurance",
+    "chapterId": "health-provisions-riders",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "An applicant has a history of back problems. Instead of declining the application, the insurer issues the policy but excludes coverage for back conditions. What is used to do this?",
+    "choices": [
+      "The grace period provision",
+      "An impairment (exclusion) rider",
+      "A waiver of premium rider",
+      "A guaranteed insurability rider"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Impairment rider excludes a named condition so a policy can be issued",
+    "explanation": "An **impairment rider** (exclusion rider) removes coverage for a **specific condition** or body part. It lets the insurer **issue** a policy to someone it might otherwise decline, while not covering the known health problem.\n\n**Wrong choices**\n- The grace period provision: The grace period is about late premium payments.\n- A waiver of premium rider: That rider stops premiums while the insured is disabled.\n- A guaranteed insurability rider: That rider lets the insured buy more coverage later; it does not exclude a condition.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "impairment rider"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-health-provisions-riders-0011",
+    "certId": "insurance-life-health",
+    "subjectId": "health-insurance",
+    "chapterId": "health-provisions-riders",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "The insured's age was given incorrectly on a health application, and the error is found when a claim is filed. What does the misstatement of age provision require?",
+    "choices": [
+      "The policy is voided and premiums are refunded",
+      "The claim is paid in full and the error is ignored",
+      "The insured must pay all back premiums before any claim is paid",
+      "Benefits are adjusted to the amount the premium paid would have bought at the correct age"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Wrong age: benefit = what the premium would buy at the true age",
+    "explanation": "Under the **misstatement of age (or gender)** provision, the insurer does not cancel the policy. Instead it **adjusts the benefit** to what the premium actually paid **would have bought at the correct age**.\n\n**Wrong choices**\n- The policy is voided and premiums are refunded: The policy is not voided for an age error; benefits are adjusted.\n- The claim is paid in full and the error is ignored: The error is not ignored; benefits change to match the correct age.\n- The insured must pay all back premiums before any claim is paid: The adjustment is made to the benefit, not by billing back premiums first.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "misstatement of age"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-health-provisions-riders-0012",
+    "certId": "insurance-life-health",
+    "subjectId": "health-insurance",
+    "chapterId": "health-provisions-riders",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Ed bought a disability policy as an office clerk. He later becomes a roofer and does not tell the insurer. He is injured on a roof and files a claim. Under the change of occupation provision, what happens?",
+    "choices": [
+      "The claim is denied because he did not report the change",
+      "The benefit is reduced to what his premium would have bought for the more hazardous job",
+      "The insurer raises his premium and pays the full benefit",
+      "The full benefit is paid, since occupation does not matter after issue"
+    ],
+    "answer": 2,
+    "oneLineConcept": "More hazardous job: benefit reduced to what premium would buy",
+    "explanation": "The **change of occupation** provision (an optional provision) says that if the insured moves to a **more hazardous** job, the insurer pays only what the premium would have bought **at the riskier classification**. If the insured moves to a **less hazardous** job, the insurer lowers the rate and refunds any excess premium.\n\n**Wrong choices**\n- The claim is denied because he did not report the change: The provision reduces the benefit; it does not deny the claim.\n- The insurer raises his premium and pays the full benefit: The provision adjusts benefits after a loss rather than charging higher back premium.\n- The full benefit is paid, since occupation does not matter after issue: Occupation affects risk, so the benefit is adjusted.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "change of occupation"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-health-provisions-riders-0013",
+    "certId": "insurance-life-health",
+    "subjectId": "health-insurance",
+    "chapterId": "health-provisions-riders",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "An insured owns two disability income policies. When she becomes disabled, the total monthly benefits from all her coverage are more than her monthly earnings before the disability. Which provision lets one insurer reduce its benefit?",
+    "choices": [
+      "Coordination of benefits",
+      "Relation of earnings to insurance",
+      "Time limit on certain defenses",
+      "Change of occupation"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Relation of earnings: limits disability benefits above earnings",
+    "explanation": "The optional **relation of earnings to insurance** provision lets a disability insurer **reduce its benefit proportionately** when total benefits from all policies are **more than the insured's earnings**, and refund the premium for the extra coverage. It keeps the insured from earning more by being disabled than by working.\n\n**Wrong choices**\n- Coordination of benefits: Coordination of benefits applies mainly to group medical plans, not individual disability income.\n- Time limit on certain defenses: That provision limits contesting misstatements after 2 years.\n- Change of occupation: That provision deals with switching to a more or less hazardous job.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "relation of earnings to insurance"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-health-provisions-riders-0014",
+    "certId": "insurance-life-health",
+    "subjectId": "health-insurance",
+    "chapterId": "health-provisions-riders",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which part of a health policy states the insurer's basic promise to pay, and the kinds of losses it covers?",
+    "choices": [
+      "The grace period provision",
+      "The entire contract provision",
+      "The consideration clause",
+      "The insuring clause"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Insuring clause = the insurer's promise and scope of coverage",
+    "explanation": "The **insuring clause** is the insurer's main **promise to pay** benefits. It names the insured, describes the **scope of coverage** (for example, accident only, or accident and sickness), and usually appears on the first page of the policy.\n\n**Wrong choices**\n- The grace period provision: That provision deals with late premium payments.\n- The entire contract provision: That provision lists what documents make up the contract.\n- The consideration clause: The consideration clause describes what the insured gives in exchange: the premium and the application statements.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "insuring clause"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-health-provisions-riders-0015",
+    "certId": "insurance-life-health",
+    "subjectId": "health-insurance",
+    "chapterId": "health-provisions-riders",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Under the consideration clause, what does the applicant give the insurer in exchange for the insurer's promise?",
+    "choices": [
+      "A promise to pay premiums for at least 2 years",
+      "The first premium and the statements made on the application",
+      "A medical exam paid by the applicant",
+      "A promise to stay healthy for the life of the policy"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Consideration = premium + application statements",
+    "explanation": "The **consideration clause** describes the exchange of value that makes the contract binding. The applicant's **consideration** is the **premium** and the **statements on the application**; the insurer's consideration is its **promise to pay** covered losses.\n\n**Wrong choices**\n- A promise to pay premiums for at least 2 years: The insured is not legally bound to keep paying; the contract is unilateral.\n- A medical exam paid by the applicant: A medical exam is not the consideration.\n- A promise to stay healthy for the life of the policy: The insured makes no promise about future health.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "consideration clause"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-health-provisions-riders-0016",
+    "certId": "insurance-life-health",
+    "subjectId": "health-insurance",
+    "chapterId": "health-provisions-riders",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "After an individual health policy is delivered, the owner decides they do not want it. Under the free look provision, what usually happens if they return it within the allowed time, typically at least 10 days?",
+    "choices": [
+      "They receive a refund only if they had a claim",
+      "They get a full refund of the premium paid",
+      "They must keep the policy for at least one year",
+      "They get the premium back minus a cancellation fee"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Free look: return within the period for a full refund",
+    "explanation": "The **free look** period (usually **at least 10 days** after delivery for individual health policies, and longer for some types such as Medicare supplement) lets the owner **review** the policy and **return it for a full premium refund**.\n\n**Wrong choices**\n- They receive a refund only if they had a claim: Claims have nothing to do with the free look refund.\n- They must keep the policy for at least one year: The free look lets them return it right away.\n- They get the premium back minus a cancellation fee: A free look return gives a full refund.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "free look"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-health-provisions-riders-0017",
+    "certId": "insurance-life-health",
+    "subjectId": "health-insurance",
+    "chapterId": "health-provisions-riders",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A disability income policy has a 30-day elimination period. What does this mean?",
+    "choices": [
+      "Benefits start only after the insured has been disabled for 30 days",
+      "The insured has 30 days to return the policy for a refund",
+      "The insured has 30 days to pay a late premium",
+      "Sickness is not covered during the first 30 days after the policy is issued"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Elimination period = waiting time after disability starts",
+    "explanation": "An **elimination period** is a waiting time that starts **each time a disability begins**; no benefits are paid for those days. A **probationary period** is different: it is a waiting time right **after the policy is issued** during which sickness is not covered.\n\n**Wrong choices**\n- The insured has 30 days to return the policy for a refund: That describes a free look period.\n- The insured has 30 days to pay a late premium: That describes a grace period.\n- Sickness is not covered during the first 30 days after the policy is issued: That describes a probationary period, which runs from the policy's start date.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "elimination period",
+      "probationary period"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-health-provisions-riders-0018",
+    "certId": "insurance-life-health",
+    "subjectId": "health-insurance",
+    "chapterId": "health-provisions-riders",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What does a waiver of premium feature in a disability income policy do?",
+    "choices": [
+      "Lets the insured buy more coverage without proof of health",
+      "Lets the insured skip one premium payment each year",
+      "Stops premium payments while the insured is totally disabled, after a set waiting period",
+      "Refunds all premiums ever paid if the insured never files a claim"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Waiver of premium: no premiums due while totally disabled",
+    "explanation": "With **waiver of premium**, once the insured has been **totally disabled** for a set period (often **90 days**), the insurer **waives** the premiums for as long as the disability lasts, and often refunds premiums paid during the waiting time. The policy stays in force.\n\n**Wrong choices**\n- Lets the insured buy more coverage without proof of health: That is a guaranteed insurability or future increase option.\n- Lets the insured skip one premium payment each year: There is no such feature.\n- Refunds all premiums ever paid if the insured never files a claim: That describes a return of premium rider.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "waiver of premium"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-health-provisions-riders-0019",
+    "certId": "insurance-life-health",
+    "subjectId": "health-insurance",
+    "chapterId": "health-provisions-riders",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A major medical plan has a $500 deductible and 80/20 coinsurance. The insured has a $5,500 covered hospital bill and has not met any of the deductible this year. Assuming the out-of-pocket maximum is not reached, how much does the insurer pay?",
+    "choices": [
+      "$5,000",
+      "$4,400",
+      "$4,000",
+      "$1,500"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Subtract the deductible first, then apply coinsurance",
+    "explanation": "Take off the **deductible** first, then split the rest by **coinsurance**.\n\n1. Bill after deductible: $5,500 - $500 = $5,000\n2. Insurer's 80% share: $5,000 x 0.80 = **$4,000**\n3. Insured pays: $500 + 20% of $5,000 ($1,000) = $1,500\n\n**Wrong choices**\n- $5,000: $5,000 is the amount after the deductible, before coinsurance is applied.\n- $4,400: $4,400 is 80% of the whole $5,500; the deductible must come off first.\n- $1,500: $1,500 is what the insured pays, not the insurer.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "deductible",
+      "coinsurance",
+      "calculation"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-health-provisions-riders-0020",
+    "certId": "insurance-life-health",
+    "subjectId": "health-insurance",
+    "chapterId": "health-provisions-riders",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "An out-of-network surgeon charges $6,000 for an operation, but the plan says the usual, reasonable, and customary (URC) charge in that area is $4,000. How does the plan usually figure its payment?",
+    "choices": [
+      "It pays $6,000 and bills the surgeon for the difference",
+      "It pays its share of the full $6,000",
+      "It pays nothing because the charge was too high",
+      "It bases its payment on $4,000, and the insured may owe the rest of the surgeon's bill"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Plans pay based on usual, reasonable, and customary charges",
+    "explanation": "Many plans pay only up to the **usual, reasonable, and customary (URC)** charge, which is the typical fee for that service in that area. If an out-of-network provider charges more, the insured may be **billed for the difference**.\n\n**Wrong choices**\n- It pays $6,000 and bills the surgeon for the difference: The plan does not pay above the URC amount.\n- It pays its share of the full $6,000: The plan pays only on the URC amount, not on a higher charge.\n- It pays nothing because the charge was too high: The plan still pays based on the URC amount.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "usual reasonable and customary"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-health-provisions-riders-0021",
+    "certId": "insurance-life-health",
+    "subjectId": "health-insurance",
+    "chapterId": "health-provisions-riders",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A plan requires the insured to get approval before a nonemergency surgery or hospital stay. What is this requirement called?",
+    "choices": [
+      "Coordination of benefits",
+      "Pre-authorization (prior approval)",
+      "Probationary period",
+      "Subrogation"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Pre-authorization = approval before nonemergency care",
+    "explanation": "**Pre-authorization** (prior approval or precertification) means the plan must **approve** certain nonemergency care, such as planned surgery or a hospital stay, **before** it happens. If the insured skips this step, the plan may pay less or deny the claim.\n\n**Wrong choices**\n- Coordination of benefits: Coordination of benefits decides which plan pays first when a person has two plans.\n- Probationary period: A probationary period is a waiting time after the policy starts.\n- Subrogation: Subrogation is the insurer's right to recover from a party who caused the loss.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "pre-authorization"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-health-provisions-riders-0022",
+    "certId": "insurance-life-health",
+    "subjectId": "health-insurance",
+    "chapterId": "health-provisions-riders",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A young professional wants to be able to raise her disability income coverage as her pay grows, without proving good health each time. Which rider meets this need?",
+    "choices": [
+      "Guaranteed insurability (future increase option) rider",
+      "Return of premium rider",
+      "Impairment rider",
+      "Waiver of premium rider"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Guaranteed insurability: buy more later without health proof",
+    "explanation": "A **guaranteed insurability** or **future increase option** rider lets the insured **buy more coverage** at set dates or events **without proving insurability**. The new coverage is priced at the insured's age at the time, and the insured usually must show higher income for disability coverage.\n\n**Wrong choices**\n- Return of premium rider: A return of premium rider refunds premiums if few claims are paid; it does not raise coverage.\n- Impairment rider: An impairment rider excludes a health condition; it does not add coverage.\n- Waiver of premium rider: Waiver of premium stops premiums during disability; it does not raise coverage.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "guaranteed insurability",
+      "future increase option"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-health-provisions-riders-0023",
+    "certId": "insurance-life-health",
+    "subjectId": "health-insurance",
+    "chapterId": "health-provisions-riders",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Under which type of health policy can the insurer NOT cancel the coverage, but CAN raise premiums for everyone in the same class?",
+    "choices": [
+      "Cancelable",
+      "Optionally renewable",
+      "Noncancelable",
+      "Guaranteed renewable"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Guaranteed renewable: can't cancel, can raise rates by class",
+    "explanation": "A **guaranteed renewable** policy must be renewed as long as premiums are paid, but the insurer **can raise premiums for a whole class** of insureds. A **noncancelable** policy is stronger: the insurer **can neither cancel nor raise** the premium.\n\n**Wrong choices**\n- Cancelable: A cancelable policy can be ended by the insurer with notice.\n- Optionally renewable: With optionally renewable coverage, the insurer may choose not to renew on a renewal date.\n- Noncancelable: With noncancelable coverage, the insurer can neither cancel nor raise the premium.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "renewability"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  }
+]

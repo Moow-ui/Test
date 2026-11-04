@@ -20,6 +20,20 @@
             "Decreasing term fits a debt that shrinks, such as a mortgage; level term keeps the same face amount for the whole term.",
             "Joint life pays at the first death; survivorship (second-to-die) life pays at the second death.",
             "Annuity: accumulation period = paying in; annuity (payout) period = receiving payments; the annuitant's life is the measuring life."
+          ],
+          "pitfalls": [
+            {
+              "trap": "A 20-pay life policy covers the insured for only 20 years.",
+              "fact": "20-pay life means premiums are paid for 20 years, but coverage lasts for the whole of life. A policy that simply ends after 20 years is 20-year term."
+            },
+            {
+              "trap": "Under universal life Option A, the beneficiary gets the face amount plus the cash value.",
+              "fact": "Option A pays a level death benefit equal to the face amount; the cash value is inside that amount, not added to it. Option B is the one that pays the face amount plus the cash value."
+            },
+            {
+              "trap": "A joint life policy pays when the second insured dies.",
+              "fact": "Joint life pays at the first death. Survivorship (second-to-die) life pays at the second death, which is why couples use it to pay estate taxes after both have died."
+            }
           ]
         },
         {
@@ -36,6 +50,20 @@
             "Nonforfeiture options: cash surrender, reduced paid-up (lower face, no more premiums, for life), extended term (same face, for a limited time).",
             "Misstatement of age or gender: the benefit is adjusted to what the premium paid would have bought at the correct age or gender.",
             "Irrevocable beneficiary must agree before the owner changes the beneficiary or takes a policy loan."
+          ],
+          "pitfalls": [
+            {
+              "trap": "Extended term gives lower coverage that lasts for life.",
+              "fact": "Extended term keeps the same face amount but only for a limited time. Reduced paid-up is the option that gives a smaller face amount for life with no more premiums."
+            },
+            {
+              "trap": "If the insured dies during the grace period, the insurer pays nothing because the premium was late.",
+              "fact": "Coverage stays in force during the grace period. The insurer pays the death benefit minus the premium that was due."
+            },
+            {
+              "trap": "A suicide during the suicide-clause period means the beneficiary receives nothing at all.",
+              "fact": "If the insured dies by suicide within the suicide-clause period, the insurer refunds the premiums paid instead of paying the face amount."
+            }
           ]
         },
         {
@@ -52,6 +80,20 @@
             "Risk classes: preferred, standard, substandard (rated), and declined.",
             "Insurance contract features: aleatory (unequal exchange), adhesion (insurer writes it), unilateral (only the insurer promises), conditional.",
             "Under the Fair Credit Reporting Act, an applicant must be told when a consumer report is ordered and who supplied it if coverage is declined or rated."
+          ],
+          "pitfalls": [
+            {
+              "trap": "Insurable interest must still exist on the day the insured dies.",
+              "fact": "For life insurance, insurable interest is needed only when the policy is issued. An ex-spouse who kept owning and paying for the policy can still collect the death benefit."
+            },
+            {
+              "trap": "If the insurer approves a policy at a higher rate than applied for, the applicant is already bound by it.",
+              "fact": "Issuing a policy on different terms is a counteroffer. The applicant can accept it, usually at delivery, or turn it down."
+            },
+            {
+              "trap": "Answers on a life application are warranties that must be exactly true.",
+              "fact": "Application answers are representations, true to the best of the applicant's knowledge. Only a material misrepresentation gives the insurer a reason to contest the policy."
+            }
           ]
         },
         {
@@ -68,6 +110,20 @@
             "Qualified plans: employer contributions are deductible and growth is tax-deferred; nonqualified plans may favor key employees.",
             "A policy that fails the 7-pay test becomes a modified endowment contract (MEC); loans and withdrawals are taxed gains first, plus a 10% penalty before age 59½.",
             "Key person insurance: the business owns, pays, and is the beneficiary."
+          ],
+          "pitfalls": [
+            {
+              "trap": "Policy dividends are taxable income in the year they are paid.",
+              "fact": "Dividends are treated as a return of excess premium. They are not taxed until the total received is more than the premiums paid, although interest earned on dividends left with the insurer is taxable."
+            },
+            {
+              "trap": "In a cross-purchase buy-sell plan, the business owns one policy on each partner.",
+              "fact": "In a cross-purchase plan each partner owns a policy on every other partner, so four partners need 12 policies. A business owning one policy on each owner is an entity plan."
+            },
+            {
+              "trap": "When an employer pays for $80,000 of group term life, the employee is taxed on the cost of the whole $80,000.",
+              "fact": "The cost of the first $50,000 of employer-paid group term life is left out of the employee's income. Only the cost of the coverage above $50,000 is taxable."
+            }
           ]
         }
       ]
@@ -91,6 +147,20 @@
             "An HSA must be paired with a high deductible health plan; the money belongs to the account holder and rolls over each year.",
             "COBRA lets employees of employers with 20 or more workers keep group health coverage, usually 18 months after job loss, paying up to 102% of the premium.",
             "Long-term care eligibility usually needs a cognitive impairment or inability to do 2 of the 6 activities of daily living."
+          ],
+          "pitfalls": [
+            {
+              "trap": "Business overhead expense insurance pays the disabled owner's own salary.",
+              "fact": "Business overhead expense pays office bills such as rent, utilities, and staff wages while the owner is disabled. Replacing the owner's own income is the job of individual disability income insurance."
+            },
+            {
+              "trap": "Under COBRA, a laid-off worker keeps group health coverage at the price the employer used to charge.",
+              "fact": "COBRA continuation usually lasts up to 18 months after a job loss, and the former worker can be charged up to 102% of the full premium, including the share the employer used to pay."
+            },
+            {
+              "trap": "Money left in a health FSA goes with the worker to a new job.",
+              "fact": "The HSA is the account that belongs to the worker and moves with them. Unused health FSA money is generally lost at the end of the plan year, apart from limited carryover or grace period rules, and an HRA is funded and kept by the employer."
+            }
           ]
         },
         {
@@ -104,9 +174,23 @@
             "Notice of claim: within 20 days of the loss, or as soon as reasonably possible.",
             "Claim forms: the insurer must send them within 15 days of the notice of claim.",
             "Proof of loss: within 90 days of the loss; no later than 1 year unless the claimant lacks legal capacity.",
-            "Time limit on certain defenses: after 2 years the insurer cannot deny a claim for misstatements on the application, except fraud.",
-            "Legal actions: no lawsuit until 60 days after proof of loss, and none after 3 years.",
+            "Time limit on certain defenses: after the policy has been in force 2 years (3 in some states), the insurer cannot deny a claim for misstatements on the application, except fraudulent ones.",
+            "Legal actions: no lawsuit until 60 days after proof of loss is given, and none after 3 years from the date proof of loss was required.",
             "Noncancelable: the insurer cannot cancel or raise premiums; guaranteed renewable: cannot cancel but can raise premiums for a whole class."
+          ],
+          "pitfalls": [
+            {
+              "trap": "The grace period for a monthly health premium is 31 days.",
+              "fact": "Under the standard provision the grace period is 7 days for weekly premiums, 10 days for monthly premiums, and 31 days for all other modes."
+            },
+            {
+              "trap": "After a health policy is reinstated, a sickness that starts a few days later is covered.",
+              "fact": "A reinstated policy covers accidents right away, but it covers sickness only if it begins more than 10 days after the reinstatement date."
+            },
+            {
+              "trap": "With a $500 deductible and 80/20 coinsurance, the plan pays 80% of the whole bill.",
+              "fact": "The deductible comes off first. On a $5,500 covered bill with a $500 deductible, the plan pays 80% of the remaining $5,000, which is $4,000, not 80% of $5,500."
+            }
           ]
         },
         {
@@ -121,6 +205,20 @@
             "Medicare does not pay for long-term custodial care.",
             "Medicaid is run by the states with federal and state money and is based on financial need.",
             "Social Security disability needs a disability expected to last at least 12 months or end in death, and a 5-month waiting period."
+          ],
+          "pitfalls": [
+            {
+              "trap": "Medicare Part A pays for long-term custodial care in a nursing home.",
+              "fact": "Medicare does not pay for custodial care. Part A helps pay for a limited number of days in a skilled nursing facility after a qualifying inpatient hospital stay, when daily skilled care is needed."
+            },
+            {
+              "trap": "A worker under 65 gets Medicare as soon as Social Security disability benefits begin.",
+              "fact": "A person under 65 generally becomes eligible for Medicare after receiving Social Security disability benefits for 24 months. People with permanent kidney failure can qualify sooner."
+            },
+            {
+              "trap": "Social Security disability pays for any injury that keeps you off work for a few months.",
+              "fact": "Social Security disability needs a condition expected to last at least 12 months or to end in death, and benefits start only after a 5-month waiting period."
+            }
           ]
         },
         {
@@ -135,6 +233,20 @@
             "Disability benefits from an individual policy paid with after-tax money are tax-free; if the employer paid the premium, benefits are taxable.",
             "Coordination of benefits: the primary plan pays first, and total payments from all plans cannot exceed 100% of the allowable expenses.",
             "Subrogation: after paying a claim, the insurer takes over the insured's right to recover from the party who caused the loss."
+          ],
+          "pitfalls": [
+            {
+              "trap": "Benefits from an employer-paid disability plan are tax-free.",
+              "fact": "If the employer paid the premium and did not count it as the worker's income, the disability benefits are taxable. Benefits from a policy the person paid for with after-tax money are tax-free."
+            },
+            {
+              "trap": "When a person has her own group plan and is also on her spouse's plan, the spouse's plan pays first.",
+              "fact": "For a person's own claims, the plan that covers her as an employee pays first. The plan that covers her as a dependent pays second."
+            },
+            {
+              "trap": "A relapse of the same condition two months after returning to work starts a new elimination period.",
+              "fact": "Under a recurrent disability provision, a relapse from the same cause within the stated time is treated as the same disability, so a new elimination period does not start."
+            }
           ]
         },
         {
@@ -149,6 +261,20 @@
             "Errors on the application are corrected by drawing a line through, writing the correct answer, and having the applicant initial it; no correction fluid.",
             "If the premium was not collected with the application, the agent gets a statement of good health when delivering the policy.",
             "Replacement means a new policy will cause an existing one to lapse or be reduced; the agent must follow the state's replacement rules and notices."
+          ],
+          "pitfalls": [
+            {
+              "trap": "An agent may use correction fluid to fix a wrong answer on the application.",
+              "fact": "The agent draws a line through the error, writes the correct answer, and has the applicant initial the change. The applicant must know about every change."
+            },
+            {
+              "trap": "If no premium was paid with the application, the agent just hands over the policy and the insurer bills later.",
+              "fact": "When the premium was not collected with the application, the agent collects the first premium at delivery and gets a signed statement of good health from the insured."
+            },
+            {
+              "trap": "The MIB decides whether an insurer must decline an applicant.",
+              "fact": "The MIB only lets member insurers share coded medical information. An insurer may not decline an applicant based only on an MIB report; it must do its own underwriting."
+            }
           ]
         }
       ]

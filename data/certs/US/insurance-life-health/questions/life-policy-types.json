@@ -1,0 +1,859 @@
+[
+  {
+    "id": "insurance-life-health-life-policy-types-0001",
+    "certId": "insurance-life-health",
+    "subjectId": "life-insurance",
+    "chapterId": "life-policy-types",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "How are premiums usually paid on an ordinary (straight) whole life policy?",
+    "choices": [
+      "A level premium for as long as the insured lives, up to the policy's maturity age",
+      "A premium that goes up every year as the insured gets older",
+      "One single premium paid at the start",
+      "Premiums only during the first 10 years"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Ordinary whole life = level premium for life",
+    "explanation": "**Ordinary (straight) whole life** charges a **level premium** that is paid for life, up to the maturity age of the policy (age 100 or 121). The premium is set at the age when the policy is bought and does not rise.\n\n**Wrong choices**\n- A premium that goes up every year as the insured gets older: A premium that rises each year describes annually renewable term, not whole life.\n- One single premium paid at the start: Paying once at the start is single-premium whole life.\n- Premiums only during the first 10 years: Paying for only 10 years is a limited-pay (10-pay) policy.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "whole life"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-life-policy-types-0002",
+    "certId": "insurance-life-health",
+    "subjectId": "life-insurance",
+    "chapterId": "life-policy-types",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Under a whole life policy, when does the cash value equal the face amount?",
+    "choices": [
+      "After the first 10 policy years",
+      "When the insured reaches age 65",
+      "When the policy matures, at age 100 or 121 depending on the policy",
+      "Never; the cash value always stays below the face amount"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Whole life matures when cash value = face amount (age 100 or 121)",
+    "explanation": "The cash value of whole life grows over time and **equals the face amount at maturity**, which is **age 100 or 121** depending on the mortality table the policy uses. At maturity the owner is paid the face amount.\n\n**Wrong choices**\n- After the first 10 policy years: Ten years is far too early; cash value builds slowly in the early years.\n- When the insured reaches age 65: Age 65 is a common retirement age, not the maturity age of whole life.\n- Never; the cash value always stays below the face amount: The cash value does reach the face amount at maturity.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "whole life",
+      "cash value"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-life-policy-types-0003",
+    "certId": "insurance-life-health",
+    "subjectId": "life-insurance",
+    "chapterId": "life-policy-types",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A \"20-pay life\" policy means that:",
+    "choices": [
+      "Coverage lasts for 20 years and then ends",
+      "The policy pays the face amount in cash after 20 years",
+      "Premiums are paid for 20 years, and coverage lasts for the insured's whole life",
+      "The premium goes up every 20 years"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Limited-pay life: short payment period, lifetime coverage",
+    "explanation": "**Limited-pay life** squeezes the premiums into a set period, such as 20 years or to age 65, but the **coverage lasts for life**. Because premiums are paid over fewer years, each premium is higher than for ordinary whole life.\n\n**Wrong choices**\n- Coverage lasts for 20 years and then ends: Coverage that ends after 20 years is 20-year term insurance.\n- The policy pays the face amount in cash after 20 years: Paying the face amount in cash after a set time describes an endowment, not limited-pay life.\n- The premium goes up every 20 years: Limited-pay life has a level premium during the payment period.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "limited-pay life"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-life-policy-types-0004",
+    "certId": "insurance-life-health",
+    "subjectId": "life-insurance",
+    "chapterId": "life-policy-types",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Compared with ordinary whole life bought at the same age for the same face amount, single-premium whole life:",
+    "choices": [
+      "Gives coverage only for a set number of years",
+      "Has a large cash value right away because the whole premium is paid at once",
+      "Has no cash value at all",
+      "Requires premiums to be paid until age 100"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Single-premium whole life = one payment, immediate cash value",
+    "explanation": "**Single-premium whole life** is paid up with **one large premium** at the start. Because so much money goes in at once, it has a **large cash value immediately**, and no more premiums are due.\n\n**Wrong choices**\n- Gives coverage only for a set number of years: Single-premium whole life is permanent coverage, not term.\n- Has no cash value at all: It is whole life, so it does build cash value.\n- Requires premiums to be paid until age 100: No more premiums are due after the single payment.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "single-premium life"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-life-policy-types-0005",
+    "certId": "insurance-life-health",
+    "subjectId": "life-insurance",
+    "chapterId": "life-policy-types",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which feature best describes universal life insurance?",
+    "choices": [
+      "A fixed premium that can never be changed",
+      "Cash value invested in separate accounts chosen by the owner, with no guaranteed minimum",
+      "Flexible premiums and an adjustable death benefit, with a cash account that earns interest",
+      "Coverage for a set number of years only"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Universal life = flexible premium + adjustable death benefit",
+    "explanation": "**Universal life** has two parts: a **death benefit** and a **cash account** that earns interest (with a guaranteed minimum). The owner can change the premium and, within limits, the death benefit.\n\n**Wrong choices**\n- A fixed premium that can never be changed: A fixed premium that cannot change is traditional whole life.\n- Cash value invested in separate accounts chosen by the owner, with no guaranteed minimum: Separate accounts with no guaranteed minimum describe variable life.\n- Coverage for a set number of years only: Coverage for a set number of years is term insurance.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "universal life"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-life-policy-types-0006",
+    "certId": "insurance-life-health",
+    "subjectId": "life-insurance",
+    "chapterId": "life-policy-types",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A universal life owner wants the death benefit to grow as the cash value grows. Which death benefit option should be chosen?",
+    "choices": [
+      "Option A (level death benefit)",
+      "The reduced paid-up option",
+      "The extended term option",
+      "Option B (increasing death benefit)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "UL Option B = face + cash value; Option A = level",
+    "explanation": "Under **Option B**, the beneficiary receives the **face amount plus the cash value**, so the death benefit rises as the cash value grows. **Option A** keeps the death benefit level.\n\n**Wrong choices**\n- Option A (level death benefit): Option A pays a level death benefit; growth in cash value does not raise it.\n- The reduced paid-up option: Reduced paid-up is a nonforfeiture option used when premiums stop.\n- The extended term option: Extended term is also a nonforfeiture option, not a death benefit option.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "universal life",
+      "death benefit options"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-life-policy-types-0007",
+    "certId": "insurance-life-health",
+    "subjectId": "life-insurance",
+    "chapterId": "life-policy-types",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Ken owns a universal life policy with Option A (level death benefit). The face amount is $200,000 and the cash value is $30,000. There are no loans. If Ken dies, how much does the beneficiary receive?",
+    "choices": [
+      "$200,000",
+      "$230,000",
+      "$170,000",
+      "$30,000"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Option A pays the face amount; cash value is part of it",
+    "explanation": "Under **Option A** the death benefit stays **level at the face amount**. The cash value is part of that amount, not added to it.\n1. Face amount = $200,000\n2. Option A pays the face amount only\n3. Beneficiary receives $200,000\n\n**Wrong choices**\n- $230,000: $230,000 is face plus cash value, which is how Option B pays.\n- $170,000: The cash value is not subtracted from the face amount.\n- $30,000: The cash value alone is paid only if the policy is surrendered.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "universal life",
+      "death benefit options",
+      "calculation"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-life-policy-types-0008",
+    "certId": "insurance-life-health",
+    "subjectId": "life-insurance",
+    "chapterId": "life-policy-types",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "In a variable life policy, who carries the investment risk?",
+    "choices": [
+      "The policyowner",
+      "The insurance company",
+      "The agent who sold the policy",
+      "The state guaranty association"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Variable life: owner carries the investment risk",
+    "explanation": "In **variable life**, the cash value is placed in **separate accounts** (stock, bond and similar funds) chosen by the owner. If the funds lose value, the cash value falls, so the **policyowner carries the investment risk**.\n\n**Wrong choices**\n- The insurance company: The insurer carries the risk in fixed products such as traditional whole life, not in variable life.\n- The agent who sold the policy: The agent does not guarantee investment results.\n- The state guaranty association: A guaranty association protects against insurer failure, not against market losses.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "variable life",
+      "separate account"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-life-policy-types-0009",
+    "certId": "insurance-life-health",
+    "subjectId": "life-insurance",
+    "chapterId": "life-policy-types",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "What license or registration does an agent need to sell variable life insurance?",
+    "choices": [
+      "Only a state life insurance license",
+      "Both a state life insurance license and a securities registration",
+      "Only a securities registration",
+      "A property and casualty license"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Variable products need a life license + securities registration",
+    "explanation": "**Variable life** is both **insurance** and a **security**, because the cash value is invested in separate accounts. The agent needs a **state life license** and a **securities registration** (through FINRA).\n\n**Wrong choices**\n- Only a state life insurance license: A life license alone is not enough because variable life is a security.\n- Only a securities registration: A securities registration alone is not enough because it is also life insurance.\n- A property and casualty license: A property and casualty license does not cover life insurance.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "variable life",
+      "licensing"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-life-policy-types-0010",
+    "certId": "insurance-life-health",
+    "subjectId": "life-insurance",
+    "chapterId": "life-policy-types",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Variable universal life combines:",
+    "choices": [
+      "The flexible premiums of universal life with the separate-account investment choices of variable life",
+      "A fixed premium with a guaranteed interest rate",
+      "Term coverage with a refund of premiums at the end of the term",
+      "Coverage on two people with payment at the second death"
+    ],
+    "answer": 1,
+    "oneLineConcept": "VUL = flexible premium (UL) + separate accounts (variable)",
+    "explanation": "**Variable universal life** takes the **flexible premium and adjustable death benefit** of universal life and adds the **separate-account investments** of variable life. The owner carries the investment risk.\n\n**Wrong choices**\n- A fixed premium with a guaranteed interest rate: Fixed premiums and a guaranteed rate describe traditional whole life.\n- Term coverage with a refund of premiums at the end of the term: A refund of premiums at the end of a term is return of premium term.\n- Coverage on two people with payment at the second death: Payment at the second of two deaths is survivorship life.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "variable universal life"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-life-policy-types-0011",
+    "certId": "insurance-life-health",
+    "subjectId": "life-insurance",
+    "chapterId": "life-policy-types",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Lisa is looking at an indexed universal life policy whose interest credit is linked to a stock market index. Which statement is most typical of this kind of policy?",
+    "choices": [
+      "The cash value is invested directly in the index's stocks, so market losses pass to her",
+      "It credits the full gain of the index with no limit",
+      "The interest credit is fixed for the life of the policy",
+      "It has a guaranteed minimum credit (floor), but gains are limited by a cap or participation rate"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Indexed life: floor protects losses, cap limits gains",
+    "explanation": "**Indexed life** credits interest based on a market **index**, but the money is not invested directly in stocks. A **floor** (often 0% or more) protects against losses, and a **cap** or **participation rate** limits how much of the index gain is credited.\n\n**Wrong choices**\n- The cash value is invested directly in the index's stocks, so market losses pass to her: The cash value is not invested in the stocks themselves, and the floor protects against index losses.\n- It credits the full gain of the index with no limit: Indexed policies limit gains with a cap or participation rate.\n- The interest credit is fixed for the life of the policy: A fixed credit for life would not be linked to an index at all.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "indexed life"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-life-policy-types-0012",
+    "certId": "insurance-life-health",
+    "subjectId": "life-insurance",
+    "chapterId": "life-policy-types",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Interest-sensitive (current assumption) whole life differs from traditional whole life mainly because it:",
+    "choices": [
+      "Puts the cash value into separate accounts chosen by the owner",
+      "Uses current interest rates and costs, so the premium or cash value can change while minimum guarantees remain",
+      "Has no cash value",
+      "Ends at a set age, like term insurance"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Interest-sensitive whole life reflects current rates, keeps guarantees",
+    "explanation": "**Interest-sensitive whole life** credits the cash value using **current interest rates** and current costs. When rates are high the cash value can grow faster or the premium can drop, but the policy still has **minimum guarantees**.\n\n**Wrong choices**\n- Puts the cash value into separate accounts chosen by the owner: Separate accounts are used by variable life.\n- Has no cash value: It is whole life, so it builds cash value.\n- Ends at a set age, like term insurance: It is permanent coverage, not term.",
+    "frequency": 2,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "interest-sensitive whole life"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-life-policy-types-0013",
+    "certId": "insurance-life-health",
+    "subjectId": "life-insurance",
+    "chapterId": "life-policy-types",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A homeowner wants life insurance that pays off the mortgage if he dies. The coverage only needs to shrink as the loan balance shrinks. Which type fits best?",
+    "choices": [
+      "Decreasing term",
+      "Level term",
+      "Ordinary whole life",
+      "Single-premium whole life"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Decreasing term matches a debt that shrinks",
+    "explanation": "**Decreasing term** has a face amount that **goes down over the term**, matching a debt such as a **mortgage** that is paid down over time. The premium is usually level.\n\n**Wrong choices**\n- Level term: Level term keeps the same face amount, which is more than a shrinking debt needs.\n- Ordinary whole life: Whole life gives lifetime coverage at a higher cost than this need calls for.\n- Single-premium whole life: Single-premium whole life needs a large payment up front and is permanent coverage.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "term life",
+      "decreasing term"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-life-policy-types-0014",
+    "certId": "insurance-life-health",
+    "subjectId": "life-insurance",
+    "chapterId": "life-policy-types",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Under a 20-year level term policy, what stays the same for the whole 20 years?",
+    "choices": [
+      "The cash value, which grows each year",
+      "The face amount",
+      "The face amount, which drops by a set amount each year",
+      "Nothing; the policy keeps going after 20 years with no premium"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Level term: same face amount for the whole term",
+    "explanation": "**Level term** keeps the **same face amount** for the whole term. Term insurance has **no cash value**, and coverage ends at the end of the term unless it is renewed or converted.\n\n**Wrong choices**\n- The cash value, which grows each year: Term insurance does not build cash value.\n- The face amount, which drops by a set amount each year: A face amount that drops each year is decreasing term.\n- Nothing; the policy keeps going after 20 years with no premium: Term coverage ends at the end of the term; it does not continue for free.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "term life",
+      "level term"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-life-policy-types-0015",
+    "certId": "insurance-life-health",
+    "subjectId": "life-insurance",
+    "chapterId": "life-policy-types",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which statement about annually renewable term (ART) is true?",
+    "choices": [
+      "Its premium stays level for 20 years",
+      "It can be renewed each year without proof of insurability, but the premium goes up at each renewal",
+      "It requires a new medical exam every year",
+      "It builds cash value over time"
+    ],
+    "answer": 2,
+    "oneLineConcept": "ART: renew yearly, no evidence needed, premium rises",
+    "explanation": "**Annually renewable term** gives one year of coverage at a time. The owner can **renew without proof of insurability**, but the **premium rises** each year because the insured is older.\n\n**Wrong choices**\n- Its premium stays level for 20 years: A premium that stays level for 20 years is level term.\n- It requires a new medical exam every year: Renewal does not require new medical evidence.\n- It builds cash value over time: Term insurance does not build cash value.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "term life",
+      "annually renewable term"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-life-policy-types-0016",
+    "certId": "insurance-life-health",
+    "subjectId": "life-insurance",
+    "chapterId": "life-policy-types",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "What happens under a return of premium (ROP) term policy if the insured lives to the end of the term?",
+    "choices": [
+      "The insurer refunds the premiums paid, as described in the policy",
+      "The policy automatically turns into whole life",
+      "The insured receives the face amount",
+      "Nothing, but the premium was lower than plain level term"
+    ],
+    "answer": 1,
+    "oneLineConcept": "ROP term refunds premiums if the insured outlives the term",
+    "explanation": "**Return of premium term** pays back the **premiums paid** (as the policy defines them) if the insured is **alive at the end of the term**. Because of this feature, it **costs more** than plain level term of the same amount.\n\n**Wrong choices**\n- The policy automatically turns into whole life: Conversion to whole life only happens if the owner uses a conversion option.\n- The insured receives the face amount: The face amount is paid only at death during the term.\n- Nothing, but the premium was lower than plain level term: ROP term costs more than plain level term, not less, and it does refund premiums.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "term life",
+      "return of premium"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-life-policy-types-0017",
+    "certId": "insurance-life-health",
+    "subjectId": "life-insurance",
+    "chapterId": "life-policy-types",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Maria has a 10-year convertible term policy. Her health has become much worse, and she wants permanent coverage before the conversion deadline. What can she usually do?",
+    "choices": [
+      "Convert only if she passes a new medical exam",
+      "Convert to a permanent policy without proof of insurability, usually at a premium based on her age at conversion",
+      "Convert, but the premium will be set by her current health",
+      "Renew for another term, because term policies cannot be converted"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Convertible term: change to permanent without evidence of insurability",
+    "explanation": "A **conversion privilege** lets the owner change term into **permanent insurance without proof of insurability**. The new premium is usually based on the insured's **attained age** (age at conversion), not her health.\n\n**Wrong choices**\n- Convert only if she passes a new medical exam: No medical exam is needed; that is the whole point of conversion.\n- Convert, but the premium will be set by her current health: Her health is not used to set the premium after conversion.\n- Renew for another term, because term policies cannot be converted: Her policy is convertible, so conversion is allowed within the policy's time limit.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "term life",
+      "convertible"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-life-policy-types-0018",
+    "certId": "insurance-life-health",
+    "subjectId": "life-insurance",
+    "chapterId": "life-policy-types",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A joint life policy covering two people pays the death benefit:",
+    "choices": [
+      "At the second death",
+      "At the first death",
+      "Only if both die at the same time",
+      "Only when both reach age 100"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Joint life = first to die",
+    "explanation": "**Joint life** (first-to-die) covers two people and pays at the **first death**. Coverage then ends for the survivor.\n\n**Wrong choices**\n- At the second death: Paying at the second death is survivorship (second-to-die) life.\n- Only if both die at the same time: The policy does not require both to die together.\n- Only when both reach age 100: It pays at death, not when the insureds reach a certain age.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "joint life"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-life-policy-types-0019",
+    "certId": "insurance-life-health",
+    "subjectId": "life-insurance",
+    "chapterId": "life-policy-types",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A married couple wants a policy whose proceeds will be available to pay estate taxes after both of them have died. Which type of policy fits best?",
+    "choices": [
+      "Joint (first-to-die) life",
+      "Decreasing term on the husband only",
+      "Survivorship (second-to-die) life",
+      "Annually renewable term on each spouse"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Survivorship life pays at the second death",
+    "explanation": "**Survivorship life** covers two people and pays at the **second death**. Estate taxes for a married couple are often due after the second death, so this plan matches that need and usually costs less than two single policies.\n\n**Wrong choices**\n- Joint (first-to-die) life: Joint life pays at the first death, which is earlier than the estate tax need.\n- Decreasing term on the husband only: Decreasing term on one spouse may end or shrink before it is needed.\n- Annually renewable term on each spouse: ART premiums rise every year and coverage is temporary.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "survivorship life",
+      "estate planning"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-life-policy-types-0020",
+    "certId": "insurance-life-health",
+    "subjectId": "life-insurance",
+    "chapterId": "life-policy-types",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "In an annuity, the accumulation period is the time when:",
+    "choices": [
+      "The annuitant receives payments",
+      "The insurer pays a death benefit",
+      "The annuitant's payments stop",
+      "The owner pays money in and the value grows"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Accumulation = paying in; annuity period = paying out",
+    "explanation": "The **accumulation period** is the time when money is **paid into** the annuity and grows tax-deferred. The **annuity (payout) period** is when the annuitant **receives payments**.\n\n**Wrong choices**\n- The annuitant receives payments: Receiving payments happens in the annuity (payout) period.\n- The insurer pays a death benefit: A death benefit is not what defines the accumulation period.\n- The annuitant's payments stop: Payments stopping relates to the payout option, not the accumulation period.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "annuity",
+      "accumulation period"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-life-policy-types-0021",
+    "certId": "insurance-life-health",
+    "subjectId": "life-insurance",
+    "chapterId": "life-policy-types",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which statement describes an immediate annuity?",
+    "choices": [
+      "It must be funded with many premiums over many years",
+      "It is bought with a single premium and starts payments usually within one year",
+      "It cannot start payments until the annuitant is 65",
+      "It pays only a death benefit, never income"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Immediate annuity: single premium, payments start within a year",
+    "explanation": "An **immediate annuity** is bought with a **single premium**, and payments **begin within about one year** (often after the first payment period). A **deferred annuity** waits longer and can be funded with one or many premiums.\n\n**Wrong choices**\n- It must be funded with many premiums over many years: Funding over many years is a flexible-premium deferred annuity.\n- It cannot start payments until the annuitant is 65: There is no rule that payments must wait until 65.\n- It pays only a death benefit, never income: An annuity's main job is to provide income.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "annuity",
+      "immediate annuity"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-life-policy-types-0022",
+    "certId": "insurance-life-health",
+    "subjectId": "life-insurance",
+    "chapterId": "life-policy-types",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "In a variable annuity, the amount of each payout:",
+    "choices": [
+      "Can rise or fall with the performance of the separate account",
+      "Is guaranteed by the insurer's general account",
+      "Is fixed at purchase and never changes",
+      "Rises each year by a set percentage stated in the contract"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Variable annuity payouts move with the separate account",
+    "explanation": "A **variable annuity** invests in a **separate account**, so payments **change with investment results**. A **fixed annuity** pays a guaranteed amount backed by the insurer's general account.\n\n**Wrong choices**\n- Is guaranteed by the insurer's general account: Guarantees from the general account describe a fixed annuity.\n- Is fixed at purchase and never changes: Fixed payments that never change describe a fixed annuity.\n- Rises each year by a set percentage stated in the contract: A set yearly increase is a contract feature, not how variable payouts work.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "annuity",
+      "variable annuity"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-life-policy-types-0023",
+    "certId": "insurance-life-health",
+    "subjectId": "life-insurance",
+    "chapterId": "life-policy-types",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Walter chose a life-only (straight life) annuity payout. He died after receiving only two monthly payments. What happens next?",
+    "choices": [
+      "Payments stop, and nothing more is paid to anyone",
+      "The rest of his principal is paid to his beneficiary",
+      "Payments continue to his beneficiary for the rest of 10 years",
+      "Payments continue to a joint annuitant for life"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Life-only annuity: highest income, nothing left at death",
+    "explanation": "A **life-only (straight life)** annuity pays for the annuitant's **lifetime only**. When he dies, **payments stop** and nothing is left for a beneficiary, which is why this option gives the **highest monthly income**.\n\n**Wrong choices**\n- The rest of his principal is paid to his beneficiary: Paying the unused principal to a beneficiary is a refund option.\n- Payments continue to his beneficiary for the rest of 10 years: Payments for a guaranteed 10 years is a life with period certain option.\n- Payments continue to a joint annuitant for life: Payments to a second person is a joint and survivor option.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "annuity",
+      "payout options"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-life-policy-types-0024",
+    "certId": "insurance-life-health",
+    "subjectId": "life-insurance",
+    "chapterId": "life-policy-types",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A retired couple, ages 66 and 64, want annuity income that keeps coming as long as either of them is alive. Which payout option fits?",
+    "choices": [
+      "Life with 10-year period certain on the husband only",
+      "Life-only annuity on the husband",
+      "Fixed-period payout for 10 years",
+      "Joint and survivor life annuity"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Joint and survivor: income continues until the second death",
+    "explanation": "A **joint and survivor** annuity pays income while **either annuitant is alive**. After the first death, payments continue to the survivor (sometimes at a reduced amount).\n\n**Wrong choices**\n- Life with 10-year period certain on the husband only: Period certain on one life does not promise income for the wife's whole life.\n- Life-only annuity on the husband: Life-only on the husband stops when he dies.\n- Fixed-period payout for 10 years: A fixed 10-year period can end while both are still alive.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "annuity",
+      "payout options"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  }
+]

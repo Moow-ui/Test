@@ -1,0 +1,465 @@
+[
+  {
+    "id": "insurance-life-health-social-insurance-0001",
+    "certId": "insurance-life-health",
+    "subjectId": "health-insurance",
+    "chapterId": "social-insurance",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which part of Medicare is hospital insurance, covering inpatient hospital stays?",
+    "choices": [
+      "Part B",
+      "Part D",
+      "Part A",
+      "Part C"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Part A = hospital insurance",
+    "explanation": "**Medicare Part A** is **hospital insurance**. It helps pay for **inpatient hospital** care, limited **skilled nursing facility** care after a hospital stay, hospice, and some home health care.\n\n**Wrong choices**\n- Part B: Part B is medical insurance for doctor visits and outpatient care.\n- Part D: Part D covers prescription drugs.\n- Part C: Part C is Medicare Advantage, offered through private plans.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "Medicare Part A"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-social-insurance-0002",
+    "certId": "insurance-life-health",
+    "subjectId": "health-insurance",
+    "chapterId": "social-insurance",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "A Medicare beneficiary visits her doctor's office for a checkup and some outpatient tests. Which part of Medicare mainly covers this?",
+    "choices": [
+      "Part D",
+      "Medicaid",
+      "Part B",
+      "Part A"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Part B = doctors and outpatient care",
+    "explanation": "**Medicare Part B** is **medical insurance**. It helps pay for **doctor services, outpatient care**, lab tests, durable medical equipment, and many preventive services. Most people pay a monthly premium for Part B.\n\n**Wrong choices**\n- Part D: Part D covers prescription drugs only.\n- Medicaid: Medicaid is a separate need-based program, not a part of Medicare.\n- Part A: Part A covers inpatient hospital care, not regular doctor visits.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "Medicare Part B"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-social-insurance-0003",
+    "certId": "insurance-life-health",
+    "subjectId": "health-insurance",
+    "chapterId": "social-insurance",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which part of Medicare provides prescription drug coverage?",
+    "choices": [
+      "Part D",
+      "Part C",
+      "Part A",
+      "Part B"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Part D = prescription drugs",
+    "explanation": "**Medicare Part D** covers **prescription drugs**. It is offered through **private insurers approved by Medicare**, either as a stand-alone drug plan or as part of a Medicare Advantage plan.\n\n**Wrong choices**\n- Part C: Part C is Medicare Advantage; many of these plans include drug coverage, but drug coverage itself is Part D.\n- Part A: Part A is hospital insurance.\n- Part B: Part B is medical insurance for doctors and outpatient care.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "Medicare Part D"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-social-insurance-0004",
+    "certId": "insurance-life-health",
+    "subjectId": "health-insurance",
+    "chapterId": "social-insurance",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Which statement about Medicare Part C (Medicare Advantage) is correct?",
+    "choices": [
+      "It is a Medicare supplement policy that pays Original Medicare's deductibles",
+      "It is run directly by each state for people with low income",
+      "It is offered by private companies approved by Medicare and covers at least what Parts A and B cover",
+      "It covers only prescription drugs"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Part C = Medicare Advantage through private plans",
+    "explanation": "**Medicare Part C (Medicare Advantage)** lets beneficiaries get their Medicare benefits through **private plans approved by Medicare**, such as HMOs or PPOs. These plans must cover **everything Parts A and B cover**, and many add drug coverage and extra benefits. A person in Medicare Advantage generally does not need a Medigap policy.\n\n**Wrong choices**\n- It is a Medicare supplement policy that pays Original Medicare's deductibles: Medigap supplements Original Medicare; Medicare Advantage is a different way to receive Medicare benefits.\n- It is run directly by each state for people with low income: That describes Medicaid.\n- It covers only prescription drugs: Drug coverage alone is Part D.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "Medicare Part C",
+      "Medicare Advantage"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-social-insurance-0005",
+    "certId": "insurance-life-health",
+    "subjectId": "health-insurance",
+    "chapterId": "social-insurance",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A 52-year-old worker has received Social Security disability benefits for some time. When does he generally become eligible for Medicare?",
+    "choices": [
+      "Immediately when his disability benefits begin",
+      "After 5 months of disability",
+      "Not until he turns 65",
+      "After receiving Social Security disability benefits for 24 months"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Medicare under 65: after 24 months of SS disability benefits",
+    "explanation": "**Medicare** covers people **65 and older**, people who have received **Social Security disability benefits for 24 months**, and people with **end-stage renal disease** (permanent kidney failure). So a disabled worker under 65 usually waits **24 months** after disability benefits begin.\n\n**Wrong choices**\n- Immediately when his disability benefits begin: Medicare generally starts only after 24 months of disability benefits.\n- After 5 months of disability: 5 months is the waiting period before Social Security disability payments begin, not Medicare.\n- Not until he turns 65: People under 65 can qualify through disability.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "Medicare eligibility",
+      "disability"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-social-insurance-0006",
+    "certId": "insurance-life-health",
+    "subjectId": "health-insurance",
+    "chapterId": "social-insurance",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Maria is 48 and has permanent kidney failure that requires regular dialysis. She has worked and paid Medicare taxes for many years. Which statement is most accurate?",
+    "choices": [
+      "She must first receive Social Security disability for 24 months",
+      "She can qualify for Medicare before age 65 because of end-stage renal disease",
+      "She must wait until age 65 for Medicare",
+      "She can get Medicare only if she also qualifies for Medicaid"
+    ],
+    "answer": 2,
+    "oneLineConcept": "End-stage renal disease = Medicare at any age",
+    "explanation": "People with **end-stage renal disease (ESRD)**, meaning permanent kidney failure needing **dialysis or a transplant**, can qualify for **Medicare at any age** if they (or a spouse or parent) have enough work history. The **24-month** wait applies to disability, not ESRD.\n\n**Wrong choices**\n- She must first receive Social Security disability for 24 months: The 24-month wait applies to disability, not to end-stage renal disease.\n- She must wait until age 65 for Medicare: End-stage renal disease is a way to qualify before 65.\n- She can get Medicare only if she also qualifies for Medicaid: Medicare eligibility for ESRD is not based on income.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "Medicare eligibility",
+      "end-stage renal disease"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-social-insurance-0007",
+    "certId": "insurance-life-health",
+    "subjectId": "health-insurance",
+    "chapterId": "social-insurance",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "An older man needs someone to help him bathe, dress, and eat for the rest of his life in a nursing home. He needs no skilled medical care. Will Medicare pay for this care?",
+    "choices": [
+      "Yes, but only if he also buys a Part D drug plan",
+      "Yes, Part A pays for up to 100 days of any nursing home care",
+      "Yes, Part B pays for custodial care if a doctor orders it",
+      "No, because Medicare does not pay for long-term custodial care"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Medicare does not pay for long-term custodial care",
+    "explanation": "**Medicare does not cover long-term custodial care**, which is help with daily activities such as bathing and dressing when that is the only care needed. This gap is why people buy **long-term care insurance**, and why many people with little money turn to **Medicaid**.\n\n**Wrong choices**\n- Yes, but only if he also buys a Part D drug plan: Part D covers drugs, not nursing home care.\n- Yes, Part A pays for up to 100 days of any nursing home care: Part A pays for limited skilled nursing care after a qualifying hospital stay, not custodial care.\n- Yes, Part B pays for custodial care if a doctor orders it: A doctor's order does not make custodial care covered.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "Medicare limits",
+      "custodial care"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-social-insurance-0008",
+    "certId": "insurance-life-health",
+    "subjectId": "health-insurance",
+    "chapterId": "social-insurance",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "After a 4-day inpatient hospital stay for a hip fracture, Helen is moved to a skilled nursing facility for daily rehab therapy. Which statement about Medicare Part A is correct?",
+    "choices": [
+      "Part A will not pay because skilled nursing care is covered only by Part D",
+      "Part A can help pay for a limited number of days of skilled nursing care because she had a qualifying hospital stay first",
+      "Part A pays for skilled nursing care for as long as she needs it, with no limit",
+      "Part A will not pay unless she has been in the hospital at least 30 days"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Part A: limited skilled nursing care after a 3-day hospital stay",
+    "explanation": "**Part A** helps pay for **skilled nursing facility** care only after a **qualifying inpatient hospital stay of at least 3 days**, and only for **daily skilled care** such as rehab. Coverage is limited to **up to 100 days per benefit period**, with the patient paying a daily share after the first 20 days.\n\n**Wrong choices**\n- Part A will not pay because skilled nursing care is covered only by Part D: Part D is drug coverage.\n- Part A pays for skilled nursing care for as long as she needs it, with no limit: Part A covers up to 100 days per benefit period, not an unlimited stay.\n- Part A will not pay unless she has been in the hospital at least 30 days: Original Medicare requires an inpatient stay of at least 3 days, not 30.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "Medicare Part A",
+      "skilled nursing facility"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-social-insurance-0009",
+    "certId": "insurance-life-health",
+    "subjectId": "health-insurance",
+    "chapterId": "social-insurance",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which statement best describes Medicaid?",
+    "choices": [
+      "A federal program for everyone age 65 and older, regardless of income",
+      "A private insurance plan sold by agents to fill gaps in Medicare",
+      "A program run by the states, paid for with federal and state money, for people with limited income and resources",
+      "A program that pays benefits only to people injured at work"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Medicaid = state-run, federal + state money, based on need",
+    "explanation": "**Medicaid** is a **joint federal-state program** run by each state. Eligibility is based on **financial need** (income and assets). It also pays for **long-term nursing home care** for people who qualify financially, which Medicare does not.\n\n**Wrong choices**\n- A federal program for everyone age 65 and older, regardless of income: That describes Medicare.\n- A private insurance plan sold by agents to fill gaps in Medicare: That describes a Medicare supplement policy.\n- A program that pays benefits only to people injured at work: That describes workers compensation.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "Medicaid"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-social-insurance-0010",
+    "certId": "insurance-life-health",
+    "subjectId": "health-insurance",
+    "chapterId": "social-insurance",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Frank, 70, has both Medicare and Medicaid because of his low income. He has a hospital bill covered by both. Generally, how is the bill paid?",
+    "choices": [
+      "Medicare pays first, and Medicaid pays after Medicare for remaining covered costs",
+      "Frank must choose one program and give up the other",
+      "Neither program pays because he has two kinds of coverage",
+      "Medicaid pays first, and Medicare pays only what is left"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Medicaid is the payer of last resort",
+    "explanation": "People who have both programs are called **dual eligible**. **Medicare pays first**, and **Medicaid** pays after, because Medicaid is generally the **payer of last resort**. Medicaid may also help pay Medicare premiums and cost sharing for people who qualify.\n\n**Wrong choices**\n- Frank must choose one program and give up the other: People can be enrolled in both programs at once.\n- Neither program pays because he has two kinds of coverage: Having both does not cancel coverage.\n- Medicaid pays first, and Medicare pays only what is left: Medicaid is generally the payer of last resort, so it pays after Medicare.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "Medicaid",
+      "dual eligible"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-social-insurance-0011",
+    "certId": "insurance-life-health",
+    "subjectId": "health-insurance",
+    "chapterId": "social-insurance",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A worker is approved for Social Security disability benefits. How long is the waiting period before benefits begin?",
+    "choices": [
+      "12 months",
+      "5 full months",
+      "24 months",
+      "90 days"
+    ],
+    "answer": 2,
+    "oneLineConcept": "SS disability: 5-month waiting period",
+    "explanation": "**Social Security disability** has a **5-month waiting period**: benefits generally begin with the **sixth full month** of disability. The disability itself must be expected to last **at least 12 months or result in death**.\n\n**Wrong choices**\n- 12 months: 12 months is how long the disability must be expected to last, not the waiting period.\n- 24 months: 24 months is the wait for Medicare after disability benefits begin.\n- 90 days: 90 days is a common elimination period in private disability policies, not Social Security.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "Social Security disability",
+      "waiting period"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-social-insurance-0012",
+    "certId": "insurance-life-health",
+    "subjectId": "health-insurance",
+    "chapterId": "social-insurance",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Sam breaks his leg and his doctor expects him to be back at work in about 6 months. He applies for Social Security disability. What is the most likely outcome?",
+    "choices": [
+      "He will qualify only if his employer also pays disability benefits",
+      "He will qualify, because any disability that stops work qualifies",
+      "He will qualify after a 5-month waiting period",
+      "He will not qualify, because his disability is not expected to last at least 12 months"
+    ],
+    "answer": 4,
+    "oneLineConcept": "SS disability: must last 12 months or end in death",
+    "explanation": "Social Security uses a **strict definition** of disability: the worker must be unable to do **any substantial gainful work**, and the condition must be expected to **last at least 12 months or result in death**. A short-term injury expected to heal in 6 months does not qualify.\n\n**Wrong choices**\n- He will qualify only if his employer also pays disability benefits: Employer benefits do not decide Social Security eligibility.\n- He will qualify, because any disability that stops work qualifies: Social Security uses a strict definition; short-term disabilities do not qualify.\n- He will qualify after a 5-month waiting period: The waiting period does not matter if the disability does not meet the 12-month test.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "Social Security disability",
+      "definition"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-social-insurance-0013",
+    "certId": "insurance-life-health",
+    "subjectId": "health-insurance",
+    "chapterId": "social-insurance",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A worker covered by Social Security dies, leaving a 10-year-old son. Generally, until what age can the son receive Social Security survivor benefits, if he is not disabled?",
+    "choices": [
+      "Age 16",
+      "Age 26",
+      "Age 18, or 19 if he is still a full-time high school student",
+      "Age 21"
+    ],
+    "answer": 3,
+    "oneLineConcept": "SS child survivor benefit: to 18 (19 if in high school)",
+    "explanation": "**Social Security survivor benefits** can be paid to the deceased worker's **unmarried children** generally **until age 18**, or **19** if they are still full-time elementary or high school students. A child disabled before age 22 can receive benefits longer.\n\n**Wrong choices**\n- Age 16: Age 16 matters for a surviving parent's benefit as caregiver, not for the child's own benefit.\n- Age 26: 26 is the age for staying on a parent's health plan under the ACA.\n- Age 21: Survivor benefits for a non-disabled child generally do not continue to 21.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "Social Security survivor benefits"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  }
+]

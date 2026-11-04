@@ -1,0 +1,536 @@
+[
+  {
+    "id": "insurance-life-health-health-field-underwriting-0001",
+    "certId": "insurance-life-health",
+    "subjectId": "health-insurance",
+    "chapterId": "health-field-underwriting",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "When should an agent ideally collect the first premium on a health insurance application?",
+    "choices": [
+      "After the first claim is filed",
+      "Never; the insurer bills the applicant directly at a later date",
+      "With the application, giving the applicant a receipt",
+      "Only after the policy is issued and delivered"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Collect first premium with the app and give a receipt",
+    "explanation": "The agent should **collect the first premium with the application** whenever possible and give the applicant a **receipt**. This shows the applicant is serious, may give earlier coverage under a **conditional receipt**, and lowers the chance the policy will be refused at delivery.\n\n**Wrong choices**\n- After the first claim is filed: Coverage cannot begin without a premium.\n- Never; the insurer bills the applicant directly at a later date: The agent should collect the first premium whenever possible.\n- Only after the policy is issued and delivered: Collecting at delivery is allowed but not ideal, and it requires a statement of good health.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "initial premium",
+      "receipt"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-health-field-underwriting-0002",
+    "certId": "insurance-life-health",
+    "subjectId": "health-insurance",
+    "chapterId": "health-field-underwriting",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Beth applies for health coverage, pays the first premium, and gets a conditional receipt on May 1. She has a medical exam on May 10 and is approved as applied for. She is injured on May 15, before the policy is delivered. What is the most likely result?",
+    "choices": [
+      "The claim is covered only if she was injured before May 1",
+      "The claim is not covered, because conditional receipts never give coverage before issue",
+      "The claim is covered, because coverage began on May 10 when she met the receipt's conditions",
+      "The claim is not covered, because the policy had not been delivered"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Conditional receipt: covered from later of app or exam date",
+    "explanation": "A **conditional receipt** gives coverage starting on the **later of the application date or the medical exam date**, **if** the applicant is found **insurable as applied for**. Beth's exam was May 10 and she was approved, so she was covered on May 15.\n\n**Wrong choices**\n- The claim is covered only if she was injured before May 1: Coverage starts on the later of the application date or exam date, not before the application.\n- The claim is not covered, because conditional receipts never give coverage before issue: Conditional receipts do give coverage before issue if the applicant is found insurable.\n- The claim is not covered, because the policy had not been delivered: With a conditional receipt, coverage can start before delivery once the conditions are met.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "conditional receipt"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-health-field-underwriting-0003",
+    "certId": "insurance-life-health",
+    "subjectId": "health-insurance",
+    "chapterId": "health-field-underwriting",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "What is the role of the MIB (Medical Information Bureau) in underwriting?",
+    "choices": [
+      "It lets member insurers share coded medical information to help spot errors or misstatements on applications",
+      "It sells health insurance to people who have been declined elsewhere",
+      "It provides consumer credit scores to insurers",
+      "It decides whether an insurer must decline the applicant"
+    ],
+    "answer": 1,
+    "oneLineConcept": "MIB shares coded medical info; it is not a reason to decline by itself",
+    "explanation": "The **MIB** is a member organization that keeps **coded medical information** reported by insurers. Insurers use it to find **omissions or misstatements** on applications, but an insurer **cannot decline** an applicant **solely** because of an MIB report.\n\n**Wrong choices**\n- It sells health insurance to people who have been declined elsewhere: The MIB does not sell insurance.\n- It provides consumer credit scores to insurers: Credit information comes from consumer reporting agencies, not the MIB.\n- It decides whether an insurer must decline the applicant: MIB information alone is not a reason to decline; the insurer must do its own underwriting.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "MIB"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-health-field-underwriting-0004",
+    "certId": "insurance-life-health",
+    "subjectId": "health-insurance",
+    "chapterId": "health-field-underwriting",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "An insurer orders a consumer report on an applicant and, because of information in it, charges a higher premium. Under the Fair Credit Reporting Act, what must the insurer do?",
+    "choices": [
+      "Cancel the application and refund the premium",
+      "Give the applicant a full copy of the report from its own files",
+      "Tell the applicant about the adverse action and give the name and address of the reporting agency",
+      "Nothing, because insurers are exempt from the Fair Credit Reporting Act"
+    ],
+    "answer": 3,
+    "oneLineConcept": "FCRA: adverse action must be disclosed with the agency's name",
+    "explanation": "Under the **Fair Credit Reporting Act**, if an insurer takes **adverse action** (such as declining or rating up) based on a **consumer report**, it must **tell the applicant** and give the **name and address of the consumer reporting agency**. The applicant can then get the report and **dispute** wrong information.\n\n**Wrong choices**\n- Cancel the application and refund the premium: The Act does not require canceling the application.\n- Give the applicant a full copy of the report from its own files: The insurer must name the reporting agency; the applicant can get the report from that agency.\n- Nothing, because insurers are exempt from the Fair Credit Reporting Act: Insurers that use consumer reports must follow the Act.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "Fair Credit Reporting Act",
+      "consumer report"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-health-field-underwriting-0005",
+    "certId": "insurance-life-health",
+    "subjectId": "health-insurance",
+    "chapterId": "health-field-underwriting",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "What does the HIPAA Privacy Rule mainly protect?",
+    "choices": [
+      "An agent's commission records",
+      "A person's individually identifiable health information",
+      "An insurer's premium rates from competitors",
+      "A person's credit card numbers held by stores"
+    ],
+    "answer": 2,
+    "oneLineConcept": "HIPAA Privacy Rule protects identifiable health information",
+    "explanation": "The **HIPAA Privacy Rule** protects **individually identifiable health information** held by health plans, providers, and their business partners. It limits how this information is **used and shared** and gives people the right to see and correct their records.\n\n**Wrong choices**\n- An agent's commission records: Commission records are not what the Privacy Rule protects.\n- An insurer's premium rates from competitors: HIPAA does not protect business pricing.\n- A person's credit card numbers held by stores: Retail credit card data is not covered by the HIPAA Privacy Rule.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "HIPAA",
+      "privacy"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-health-field-underwriting-0006",
+    "certId": "insurance-life-health",
+    "subjectId": "health-insurance",
+    "chapterId": "health-field-underwriting",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "An agent notices an error on a health application before sending it in. What is the correct way to fix it?",
+    "choices": [
+      "Draw a line through the error, write the correct answer, and have the applicant initial the change",
+      "Leave the error and explain it in a separate note",
+      "Use correction fluid and write the correct answer",
+      "Fix it alone without telling the applicant"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Fix app errors: strike through, correct, applicant initials",
+    "explanation": "Errors on an application are fixed by **drawing a line through** the wrong answer, **writing the correct answer**, and having the **applicant initial** the change. **Correction fluid** must not be used, and the agent must never change answers on their own.\n\n**Wrong choices**\n- Leave the error and explain it in a separate note: Leaving the error can cause problems at claim time; it should be corrected and initialed.\n- Use correction fluid and write the correct answer: Correction fluid hides the original answer and is not allowed.\n- Fix it alone without telling the applicant: The applicant must approve changes to their answers.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "application",
+      "corrections"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-health-field-underwriting-0007",
+    "certId": "insurance-life-health",
+    "subjectId": "health-insurance",
+    "chapterId": "health-field-underwriting",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "Dave applied for a health policy but did not pay any premium with the application. The policy is now ready to deliver. What should the agent do at delivery?",
+    "choices": [
+      "Collect the premium only; no health statement is needed",
+      "Hand over the policy and tell Dave he will be billed later",
+      "Ask Dave to take a new medical exam before delivery",
+      "Collect the first premium and get a signed statement that Dave's health has not changed"
+    ],
+    "answer": 4,
+    "oneLineConcept": "No premium with app: collect it + statement of good health at delivery",
+    "explanation": "If the premium was **not collected with the application**, coverage does not begin until the policy is **delivered and the premium is paid**. At delivery, the agent collects the premium and obtains a **statement of good health** confirming the applicant's health has **not changed** since applying.\n\n**Wrong choices**\n- Collect the premium only; no health statement is needed: When no premium was paid with the application, a statement of good health is needed at delivery.\n- Hand over the policy and tell Dave he will be billed later: Coverage should not begin without the premium and confirmation of good health.\n- Ask Dave to take a new medical exam before delivery: A new exam is not normally required; a statement of good health is used.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "policy delivery",
+      "statement of good health"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-health-field-underwriting-0008",
+    "certId": "insurance-life-health",
+    "subjectId": "health-insurance",
+    "chapterId": "health-field-underwriting",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A health policy is issued with a higher premium than applied for and an exclusion rider. What should the agent do at delivery?",
+    "choices": [
+      "Remove the rider before delivering the policy",
+      "Explain the rating and the rider to the client and, as the insurer requires, get the client's signed acceptance",
+      "Return the policy to the insurer without contacting the client",
+      "Deliver the policy without mentioning the changes"
+    ],
+    "answer": 2,
+    "oneLineConcept": "At delivery, explain ratings, riders, and exclusions",
+    "explanation": "At **policy delivery**, the agent should **explain** the policy's provisions, riders, **exclusions**, and any **rating** (higher premium). A policy issued differently from the application is a **counteroffer**, so the client must **accept** it, often by signing an amendment or acknowledgment.\n\n**Wrong choices**\n- Remove the rider before delivering the policy: An agent has no authority to change the policy.\n- Return the policy to the insurer without contacting the client: The client should be given the chance to accept the modified offer.\n- Deliver the policy without mentioning the changes: The client must understand changes from what they applied for.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "policy delivery",
+      "ratings",
+      "exclusions"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-health-field-underwriting-0009",
+    "certId": "insurance-life-health",
+    "subjectId": "health-insurance",
+    "chapterId": "health-field-underwriting",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "In insurance, what does replacement mean?",
+    "choices": [
+      "Getting a duplicate copy of a lost policy",
+      "Moving the policy to a new address",
+      "Adding a rider to an existing policy",
+      "Buying a new policy that will cause an existing policy to lapse, be canceled, or be reduced"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Replacement = new policy causes an old one to end or shrink",
+    "explanation": "**Replacement** happens when a **new policy** is bought and an **existing policy** will **lapse, be canceled, or be reduced** because of it. The agent must follow the state's **replacement rules**, such as giving required notices, and make sure the change is in the client's best interest.\n\n**Wrong choices**\n- Getting a duplicate copy of a lost policy: A duplicate policy is not a replacement.\n- Moving the policy to a new address: An address change is not replacement.\n- Adding a rider to an existing policy: Adding a rider changes coverage but does not replace the policy.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "replacement"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-health-field-underwriting-0010",
+    "certId": "insurance-life-health",
+    "subjectId": "health-insurance",
+    "chapterId": "health-field-underwriting",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which of the following is NOT one of the four elements needed for a legal contract?",
+    "choices": [
+      "A notary's stamp",
+      "Consideration",
+      "Competent parties",
+      "Offer and acceptance"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Elements: agreement, consideration, competent parties, legal purpose",
+    "explanation": "A valid contract needs four elements: **offer and acceptance**, **consideration**, **competent parties**, and **legal purpose**. A notary's stamp is not required.\n\n**Wrong choices**\n- Consideration: Consideration is a required element.\n- Competent parties: Competent parties is a required element.\n- Offer and acceptance: Offer and acceptance is a required element.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "contract law",
+      "elements of a contract"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-health-field-underwriting-0011",
+    "certId": "insurance-life-health",
+    "subjectId": "health-insurance",
+    "chapterId": "health-field-underwriting",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Statements made by an applicant on a health insurance application are generally treated as which of the following?",
+    "choices": [
+      "Warranties, which are guaranteed to be exactly true",
+      "Conditions, which the insurer must meet before paying",
+      "Concealments, which hide important facts",
+      "Representations, which are true to the best of the applicant's knowledge"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Application answers are representations, not warranties",
+    "explanation": "Answers on an application are **representations**: statements believed **true to the best of the applicant's knowledge**. A **warranty** is a statement **guaranteed** to be true. A false representation can void the policy only if it is **material** (would have changed the insurer's decision).\n\n**Wrong choices**\n- Warranties, which are guaranteed to be exactly true: Applicant statements are generally not treated as warranties.\n- Conditions, which the insurer must meet before paying: Conditions are policy requirements, not the applicant's statements.\n- Concealments, which hide important facts: Concealment is the intentional hiding of facts, not a normal answer.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "representations",
+      "warranties"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-health-field-underwriting-0012",
+    "certId": "insurance-life-health",
+    "subjectId": "health-insurance",
+    "chapterId": "health-field-underwriting",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "An insured pays a few months of premiums and then has a large covered claim. Which feature of insurance contracts does this unequal exchange show?",
+    "choices": [
+      "Adhesion",
+      "Aleatory",
+      "Conditional",
+      "Unilateral"
+    ],
+    "answer": 2,
+    "oneLineConcept": "Aleatory = unequal exchange that depends on chance",
+    "explanation": "Insurance is **aleatory**: the values exchanged are **unequal** and depend on **chance**. The insured may pay little and collect a lot, or pay for years and collect nothing.\n\n**Wrong choices**\n- Adhesion: Adhesion means the insurer writes the contract and the buyer takes it as written.\n- Conditional: Conditional means the insured must meet certain conditions, such as filing proof of loss.\n- Unilateral: Unilateral means only the insurer makes a legally binding promise.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "aleatory contract"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-health-field-underwriting-0013",
+    "certId": "insurance-life-health",
+    "subjectId": "health-insurance",
+    "chapterId": "health-field-underwriting",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "A court finds that a sentence in a health policy can be read two different ways. The insured's reading would mean the claim is covered. How will the court most likely decide?",
+    "choices": [
+      "In favor of the insured, because the insurer wrote the contract",
+      "The court will cancel the policy and refund premiums",
+      "In favor of the insurer, because it is the expert",
+      "The court will split the claim payment in half"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Adhesion: unclear wording is read in the insured's favor",
+    "explanation": "Insurance is a **contract of adhesion**: the **insurer writes** it and the buyer can only accept or reject it. Because of this, any **ambiguity** is generally interpreted **in favor of the insured**.\n\n**Wrong choices**\n- The court will cancel the policy and refund premiums: Unclear wording does not void the contract.\n- In favor of the insurer, because it is the expert: Experience does not change the rule; the drafter bears the risk of unclear wording.\n- The court will split the claim payment in half: Courts do not split claims because of unclear wording.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "contract of adhesion"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-health-field-underwriting-0014",
+    "certId": "insurance-life-health",
+    "subjectId": "health-insurance",
+    "chapterId": "health-field-underwriting",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "Why is an insurance policy called a unilateral contract?",
+    "choices": [
+      "Only the insurer makes a legally enforceable promise",
+      "The contract can be changed by the agent at any time",
+      "Both the insurer and the insured are legally bound to perform",
+      "The insured writes the contract and the insurer accepts it"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Unilateral: only the insurer's promise is enforceable",
+    "explanation": "Insurance is **unilateral** because **only the insurer** makes an enforceable promise (to pay covered claims). The insured **does not promise** to keep paying premiums; if they stop, the policy simply lapses.\n\n**Wrong choices**\n- The contract can be changed by the agent at any time: Agents cannot change policies.\n- Both the insurer and the insured are legally bound to perform: That describes a bilateral contract; the insured does not have to keep paying.\n- The insured writes the contract and the insurer accepts it: The insurer writes the contract, which is the idea of adhesion.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "unilateral contract"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "insurance-life-health-health-field-underwriting-0015",
+    "certId": "insurance-life-health",
+    "subjectId": "health-insurance",
+    "chapterId": "health-field-underwriting",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "Which person would usually NOT have an insurable interest needed to buy a health policy on another person?",
+    "choices": [
+      "A parent buying coverage for a minor child",
+      "An employer buying disability coverage on a key employee",
+      "A neighbor who is a friend",
+      "A spouse buying coverage on the other spouse"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Insurable interest needs a real financial or family stake",
+    "explanation": "**Insurable interest** means the buyer would suffer a **financial or family loss** if the insured became sick, hurt, or died. People have insurable interest in **themselves**, their **spouses and dependent children**, and employers in **key employees**. A neighbor or friend normally does not.\n\n**Wrong choices**\n- A parent buying coverage for a minor child: A parent has insurable interest in a dependent child.\n- An employer buying disability coverage on a key employee: A business has insurable interest in a key employee.\n- A spouse buying coverage on the other spouse: Spouses have insurable interest in each other.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-05",
+    "tags": [
+      "insurable interest"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+]
