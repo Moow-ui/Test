@@ -1,0 +1,30 @@
+{
+ "total": 678,
+ "totalChapterItems": 642,
+ "totalMetaSentences": 36,
+ "perChapter": {
+  "survey-planning": "PASS",
+  "sampling": "PASS",
+  "questionnaire": "PASS",
+  "fgi": "PASS",
+  "in-depth-interview": "PASS",
+  "data-collection": "PASS",
+  "fieldwork": "PASS",
+  "secondary-data": "PASS",
+  "measurement": "PASS",
+  "data-processing": "PASS",
+  "probability": "PASS",
+  "descriptive-inference": "PASS",
+  "regression": "PASS"
+ },
+ "meta": "PASS",
+ "figure": "PASS",
+ "fails": [],
+ "notes": [
+  "chapters.json summary/keyPoints/pitfalls and concepts.json (all 13 chapters) are identical to content-for-verify.json; no extra text fields found.",
+  "All 39 pitfall traps match a wrong choice in the cited source question and each fact matches that question's answer/explanation.",
+  "examWeight sums to 100 within each subject; 13 chapter names match the 13 주요항목 of rep1363 (identical to rep486).",
+  "meta: 80문항/2시간/25·25·30 (2027.1.1~2030.12.31), 100문항/150분/30·30·40 (~2026.12.31), 객관식 4지 택일형, 과목 40·평균 60, 과락 10/25·12/30, 실기 복합형(작업형+필답형) 60점, 수수료 19,400/33,900, 응시자격 제한 없음 — all match Q-net sources; studyTips cite only chapters.json weights/examInfo, no invented stats.",
+  "Figure concept-correlation-scatter.png: three panels (positive, negative, no-direction) with labels exactly as caption/alt describe; no axis tick numbers."
+ ]
+}

@@ -1,0 +1,645 @@
+[
+  {
+    "id": "social-research-analyst-2-regression-0001",
+    "certId": "social-research-analyst-2",
+    "subjectId": "statistics",
+    "chapterId": "regression",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "그림은 두 변수 X 와 Y 의 산점도이다. 두 변수의 상관계수 r 로 가장 알맞은 것은?",
+    "choices": [
+      "r = −0.9",
+      "r = 0.3",
+      "r = 0.9",
+      "r = 0"
+    ],
+    "answer": 3,
+    "oneLineConcept": "점이 오른쪽 위로 모이면 r 은 +1 에 가깝다",
+    "explanation": "점들이 왼쪽 아래에서 오른쪽 위로 거의 한 줄로 올라갑니다. X 가 클수록 Y 도 크고(양의 관계), 점들이 직선 가까이 모여 있으므로 관계가 강합니다. 그래서 r 은 +1 에 가까운 0.9 정도입니다.\n\n**틀린 선지**\n- r = −0.9: 음의 상관은 점들이 오른쪽 아래로 내려가는 모양입니다.\n- r = 0.3: 방향은 맞지만, 0.3 이면 점들이 훨씬 넓게 흩어져 있어야 합니다.\n- r = 0: r = 0 이면 점들이 뚜렷한 방향 없이 흩어집니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "상관계수",
+      "산점도",
+      "그림"
+    ],
+    "image": "scatter-positive-strong.svg",
+    "imageAlt": "가로축 X, 세로축 Y 인 산점도이다. 점 16개가 왼쪽 아래에서 오른쪽 위로 이어지며, 한 직선 둘레에 좁은 띠 모양으로 가깝게 모여 있다. 축에는 눈금 숫자가 없다.",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-regression-0002",
+    "certId": "social-research-analyst-2",
+    "subjectId": "statistics",
+    "chapterId": "regression",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "그림은 두 변수 X 와 Y 의 산점도이다. 두 변수의 상관계수 r 로 가장 알맞은 것은?",
+    "choices": [
+      "r = −0.9",
+      "r = −0.1",
+      "r = 0.9",
+      "r = 0"
+    ],
+    "answer": 1,
+    "oneLineConcept": "점이 오른쪽 아래로 모이면 r 은 −1 에 가깝다",
+    "explanation": "점들이 왼쪽 위에서 오른쪽 아래로 거의 한 줄로 내려갑니다. X 가 클수록 Y 는 작아지는 음의 관계이고, 점들이 직선 가까이 모여 있어 관계가 강합니다. 그래서 r 은 −1 에 가까운 −0.9 정도입니다.\n\n**틀린 선지**\n- r = −0.1: 방향은 맞지만, −0.1 이면 직선 모양이 거의 보이지 않을 만큼 흩어져 있어야 합니다.\n- r = 0.9: 양의 상관은 점들이 오른쪽 위로 올라가는 모양입니다.\n- r = 0: r = 0 이면 점들이 뚜렷한 방향 없이 흩어집니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "상관계수",
+      "산점도",
+      "그림"
+    ],
+    "image": "scatter-negative-strong.svg",
+    "imageAlt": "가로축 X, 세로축 Y 인 산점도이다. 점 16개가 왼쪽 위에서 오른쪽 아래로 이어지며, 한 직선 둘레에 좁은 띠 모양으로 가깝게 모여 있다. 축에는 눈금 숫자가 없다.",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-regression-0003",
+    "certId": "social-research-analyst-2",
+    "subjectId": "statistics",
+    "chapterId": "regression",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "그림은 X 와 Y 의 산점도와 최소제곱법으로 구한 회귀직선이다. 회귀직선은 네모로 표시한 두 점 (0, 2) 와 (5, 12) 를 지난다. 이 회귀식은?",
+    "choices": [
+      "Ŷ = 2 + 2X",
+      "Ŷ = 2 + 0.5X",
+      "Ŷ = 2X",
+      "Ŷ = 12 + 2X"
+    ],
+    "answer": 1,
+    "oneLineConcept": "기울기 = Y 증가량 ÷ X 증가량, 절편 = X=0 일 때 Y",
+    "explanation": "회귀식은 Ŷ = a + bX 꼴입니다. a 는 절편(X = 0 일 때 Y 값), b 는 기울기(X 가 1 늘 때 Y 가 늘어나는 양)입니다.\n\n1. 절편: X = 0 일 때 Y = 2 → a = 2\n2. 기울기: X 가 0 → 5 로 5 늘 때 Y 는 2 → 12 로 10 늘었으므로 b = 10 ÷ 5 = 2\n3. Ŷ = 2 + 2X\n4. 검산: X = 5 → 2 + 10 = 12 ✓\n\n**틀린 선지**\n- Ŷ = 2 + 0.5X: 기울기를 'X 증가량 ÷ Y 증가량'(5 ÷ 10)으로 거꾸로 계산했습니다.\n- Ŷ = 2X: 절편 2 를 빠뜨렸습니다. 이 식은 원점 (0, 0) 을 지납니다.\n- Ŷ = 12 + 2X: 절편 자리에 X = 5 일 때의 Y 값 12 를 넣었습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "회귀식",
+      "기울기",
+      "그림"
+    ],
+    "image": "scatter-fitted-line.svg",
+    "imageAlt": "가로축 X(0~6, 1 간격 눈금), 세로축 Y(0~14, 2 간격 눈금)인 산점도에 직선 하나가 그려져 있다. 직선 위의 두 점이 네모로 표시되어 각각 (0, 2), (5, 12) 라고 적혀 있다. 점 11개가 직선 위아래에 가깝게 흩어져 있다.",
+    "imageSource": {
+      "kind": "self"
+    },
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-regression-0004",
+    "certId": "social-research-analyst-2",
+    "subjectId": "statistics",
+    "chapterId": "regression",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "피어슨 상관계수 r 이 가질 수 있는 값의 범위는?",
+    "choices": [
+      "0 이상 1 이하",
+      "−1 이상 1 이하",
+      "0 이상 100 이하",
+      "제한 없음"
+    ],
+    "answer": 2,
+    "oneLineConcept": "상관계수 r: −1 ≤ r ≤ 1",
+    "explanation": "상관계수는 −1 부터 +1 까지의 값을 가집니다. +1 은 완전한 양의 직선 관계, −1 은 완전한 음의 직선 관계, 0 은 직선 관계가 없음을 뜻합니다.\n\n**틀린 선지**\n- 0 이상 1 이하: 음의 상관(한쪽이 늘면 다른 쪽이 주는 관계)도 있으므로 음수도 나옵니다.\n- 0 이상 100 이하: 백분율이 아닙니다.\n- 제한 없음: 상관계수는 단위가 없고 −1 ~ 1 사이로 정해져 있습니다. 제한이 없는 것은 공분산입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "상관계수"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-regression-0005",
+    "certId": "social-research-analyst-2",
+    "subjectId": "statistics",
+    "chapterId": "regression",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "두 변수의 피어슨 상관계수가 0 이라는 것의 뜻으로 가장 알맞은 것은?",
+    "choices": [
+      "두 변수는 어떤 관계도 전혀 없다",
+      "한 변수가 늘면 다른 변수는 줄어든다",
+      "두 변수 사이에 직선(선형) 관계가 없다",
+      "두 변수의 값이 서로 같다"
+    ],
+    "answer": 3,
+    "oneLineConcept": "r = 0 → 직선 관계 없음 (곡선 관계는 가능)",
+    "explanation": "피어슨 상관계수는 '직선 관계'의 강도만 잽니다. r = 0 이어도 U 자 모양 같은 곡선 관계는 있을 수 있으므로 '아무 관계도 없다'고 단정하면 안 됩니다.\n\n**틀린 선지**\n- 두 변수는 어떤 관계도 전혀 없다: 곡선 관계는 있을 수 있습니다. r 은 직선 관계만 잽니다.\n- 한 변수가 늘면 다른 변수는 줄어든다: 음의 상관(r < 0)에 대한 설명입니다.\n- 두 변수의 값이 서로 같다: 상관계수는 값이 같은지와는 관계없습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "상관계수"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-regression-0006",
+    "certId": "social-research-analyst-2",
+    "subjectId": "statistics",
+    "chapterId": "regression",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "키(X)와 몸무게(Y)의 상관계수를 구했다. 키의 단위를 cm 에서 m 로 바꾸어 다시 계산하면 상관계수는?",
+    "choices": [
+      "변하지 않는다",
+      "100분의 1로 줄어든다",
+      "100배 커진다",
+      "부호가 바뀐다"
+    ],
+    "answer": 1,
+    "oneLineConcept": "상관계수는 단위를 바꿔도 그대로",
+    "explanation": "상관계수는 단위가 없는 값이라 측정 단위를 바꾸거나(곱하기), 모든 값에 같은 수를 더해도 변하지 않습니다(곱하는 수가 양수일 때). cm → m 는 모든 값에 0.01 을 곱한 것이므로 r 은 그대로입니다.\n\n**틀린 선지**\n- 100분의 1로 줄어든다: 공분산은 단위에 따라 바뀌지만, 상관계수는 표준편차로 나누어 단위를 없앤 값이라 그대로입니다.\n- 100배 커진다: 곱하는 수가 양수이면 크기도 부호도 바뀌지 않습니다.\n- 부호가 바뀐다: 음수를 곱할 때만 부호가 바뀝니다. 0.01 은 양수입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "상관계수",
+      "성질"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-regression-0007",
+    "certId": "social-research-analyst-2",
+    "subjectId": "statistics",
+    "chapterId": "regression",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "X 와 Y 의 공분산이 12, X 의 표준편차가 3, Y 의 표준편차가 5 일 때 상관계수는?",
+    "choices": [
+      "1.25",
+      "0.48",
+      "4",
+      "0.8"
+    ],
+    "answer": 4,
+    "oneLineConcept": "r = Cov(X,Y) ÷ (sX·sY)",
+    "explanation": "상관계수 r = 공분산 ÷ (X 의 표준편차 × Y 의 표준편차)\n\n1. 3 × 5 = 15\n2. 12 ÷ 15 = 0.8\n\n**틀린 선지**\n- 1.25: 15 ÷ 12 로 거꾸로 나눴습니다. 상관계수는 1 을 넘을 수 없습니다.\n- 0.48: 12 ÷ 25 로, Y 의 표준편차만 두 번 썼습니다.\n- 4: 12 ÷ 3 으로, Y 의 표준편차를 빠뜨렸습니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "상관계수",
+      "공분산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-regression-0008",
+    "certId": "social-research-analyst-2",
+    "subjectId": "statistics",
+    "chapterId": "regression",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "다음 5개 자료로 최소제곱 회귀식을 구하면? X: 1, 2, 3, 4, 5 / Y: 2, 4, 5, 4, 5",
+    "choices": [
+      "Ŷ = 1.8 + 0.6X",
+      "Ŷ = 2.2 + 0.6X",
+      "Ŷ = 4.0 + 0.6X",
+      "Ŷ = 0.6 + 2.2X"
+    ],
+    "answer": 2,
+    "oneLineConcept": "b = Sxy ÷ Sxx, a = Ȳ − b·X̄",
+    "explanation": "기울기 b = Σ(X − X̄)(Y − Ȳ) ÷ Σ(X − X̄)², 절편 a = Ȳ − b·X̄\n\n1. X̄ = 15 ÷ 5 = 3, Ȳ = 20 ÷ 5 = 4\n2. X − X̄: −2, −1, 0, 1, 2 / Y − Ȳ: −2, 0, 1, 0, 1\n3. 곱의 합 = 4 + 0 + 0 + 0 + 2 = 6\n4. (X − X̄)² 의 합 = 4 + 1 + 0 + 1 + 4 = 10\n5. b = 6 ÷ 10 = 0.6\n6. a = 4 − 0.6 × 3 = 4 − 1.8 = 2.2\n7. 검산: 회귀직선은 평균점 (3, 4) 를 지납니다. 2.2 + 0.6 × 3 = 4 ✓\n\n**틀린 선지**\n- Ŷ = 1.8 + 0.6X: 절편 자리에 b × X̄ = 1.8 을 넣었습니다. 절편은 Ȳ 에서 이 값을 뺀 4 − 1.8 입니다.\n- Ŷ = 4.0 + 0.6X: 절편을 Ȳ = 4 로 잘못 두었습니다.\n- Ŷ = 0.6 + 2.2X: 절편과 기울기를 서로 바꿔 적었습니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "회귀식",
+      "최소제곱법"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-regression-0009",
+    "certId": "social-research-analyst-2",
+    "subjectId": "statistics",
+    "chapterId": "regression",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "X̄ = 10, Ȳ = 30, Σ(X − X̄)(Y − Ȳ) = 40, Σ(X − X̄)² = 20 인 자료로 단순회귀식을 구했다. X = 15 일 때 Y 의 예측값은?",
+    "choices": [
+      "60",
+      "17.5",
+      "40",
+      "30"
+    ],
+    "answer": 3,
+    "oneLineConcept": "Ŷ = a + bX 에 X 를 넣어 예측",
+    "explanation": "1. 기울기 b = 40 ÷ 20 = 2\n2. 절편 a = Ȳ − b·X̄ = 30 − 2 × 10 = 10\n3. 회귀식 Ŷ = 10 + 2X\n4. X = 15 → 10 + 2 × 15 = 40\n\n**틀린 선지**\n- 60: 절편을 Ȳ = 30 으로 두어 30 + 2 × 15 로 계산했습니다.\n- 17.5: 기울기를 20 ÷ 40 = 0.5 로 거꾸로 구해 10 + 0.5 × 15 로 계산했습니다.\n- 30: Y 의 평균입니다. X = 15 는 평균 10 보다 크므로 예측값도 평균보다 커야 합니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "회귀식",
+      "예측"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-regression-0010",
+    "certId": "social-research-analyst-2",
+    "subjectId": "statistics",
+    "chapterId": "regression",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "회귀분석에서 결정계수(R²)의 뜻으로 옳은 것은?",
+    "choices": [
+      "회귀직선의 기울기",
+      "잔차(오차)를 제곱해 더한 값",
+      "Y 의 전체 변동 가운데 회귀식이 설명하는 비율",
+      "회귀계수가 0 일 확률"
+    ],
+    "answer": 3,
+    "oneLineConcept": "R² = SSR ÷ SST (설명된 변동의 비율)",
+    "explanation": "결정계수 R² = 회귀제곱합(SSR) ÷ 총제곱합(SST) 입니다. Y 가 들쭉날쭉한 정도 가운데 X 로 설명되는 몫이 얼마인지를 0 ~ 1 사이 값으로 나타냅니다. 1 에 가까울수록 회귀식이 자료에 잘 맞습니다.\n\n**틀린 선지**\n- 회귀직선의 기울기: 기울기는 X 가 1 늘 때 Y 가 변하는 양으로, 설명력과는 다른 값입니다.\n- 잔차(오차)를 제곱해 더한 값: 잔차제곱합(SSE)으로, 회귀식이 설명하지 못한 부분입니다.\n- 회귀계수가 0 일 확률: 확률이 아니라 비율입니다. 회귀계수 검정에서는 p값을 따로 봅니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "결정계수"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-regression-0011",
+    "certId": "social-research-analyst-2",
+    "subjectId": "statistics",
+    "chapterId": "regression",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "단순회귀분석에서 X 와 Y 의 상관계수가 −0.7 일 때 결정계수(R²)는?",
+    "choices": [
+      "−0.49",
+      "0.49",
+      "0.7",
+      "0.84"
+    ],
+    "answer": 2,
+    "oneLineConcept": "단순회귀 R² = r²",
+    "explanation": "단순회귀분석에서는 결정계수가 상관계수의 제곱과 같습니다.\n\n1. R² = (−0.7)² = 0.49\n2. 제곱이므로 음수가 될 수 없습니다.\n\n**틀린 선지**\n- −0.49: 음수를 제곱하면 양수입니다. 결정계수는 0 ~ 1 사이입니다.\n- 0.7: 상관계수의 절댓값으로, 제곱하지 않았습니다.\n- 0.84: √0.7(약 0.84)로, 제곱 대신 제곱근을 씌운 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "결정계수",
+      "상관계수"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-regression-0012",
+    "certId": "social-research-analyst-2",
+    "subjectId": "statistics",
+    "chapterId": "regression",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "표본 22개로 단순회귀분석을 하였다. 총제곱합(SST)이 200, 잔차제곱합(SSE)이 50 일 때 회귀 분산분석표의 F 값은?",
+    "choices": [
+      "63",
+      "3",
+      "0.75",
+      "60"
+    ],
+    "answer": 4,
+    "oneLineConcept": "회귀 F = MSR ÷ MSE, 잔차 자유도 n − 2",
+    "explanation": "1. 회귀제곱합 SSR = SST − SSE = 200 − 50 = 150\n2. 자유도: 회귀 1 (독립변수 1개), 잔차 n − 2 = 22 − 2 = 20\n3. MSR = 150 ÷ 1 = 150, MSE = 50 ÷ 20 = 2.5\n4. F = MSR ÷ MSE = 150 ÷ 2.5 = 60\n\n**틀린 선지**\n- 63: 잔차 자유도를 21(n − 1)로 써서 150 ÷ (50 ÷ 21) 로 계산했습니다. 단순회귀의 잔차 자유도는 n − 2 입니다.\n- 3: 제곱합끼리(150 ÷ 50) 나눴습니다. 자유도로 나눈 평균제곱끼리 나누어야 합니다.\n- 0.75: 결정계수 R² = 150 ÷ 200 입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "회귀 분산분석",
+      "F검정"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-regression-0013",
+    "certId": "social-research-analyst-2",
+    "subjectId": "statistics",
+    "chapterId": "regression",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "회귀제곱합(SSR)이 80, 잔차제곱합(SSE)이 20 일 때 결정계수(R²)는?",
+    "choices": [
+      "0.2",
+      "4",
+      "0.8",
+      "0.25"
+    ],
+    "answer": 3,
+    "oneLineConcept": "R² = SSR ÷ (SSR + SSE)",
+    "explanation": "1. 총제곱합 SST = SSR + SSE = 80 + 20 = 100\n2. R² = SSR ÷ SST = 80 ÷ 100 = 0.8\n\n**틀린 선지**\n- 0.2: SSE ÷ SST 로, 회귀식이 설명하지 못한 비율입니다.\n- 4: SSR ÷ SSE 입니다. 결정계수는 1 을 넘을 수 없습니다.\n- 0.25: SSE ÷ SSR 입니다. 나누는 수는 총제곱합 SST 입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "결정계수",
+      "제곱합"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-regression-0014",
+    "certId": "social-research-analyst-2",
+    "subjectId": "statistics",
+    "chapterId": "regression",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "단순회귀모형 Y = β₀ + β₁X + ε 에서 'X 가 Y 에 영향을 주는가'를 검정할 때 귀무가설은?",
+    "choices": [
+      "β₀ = 0",
+      "β₁ = 1",
+      "β₁ ≠ 0",
+      "β₁ = 0"
+    ],
+    "answer": 4,
+    "oneLineConcept": "단순회귀 귀무가설: 기울기 β₁ = 0",
+    "explanation": "기울기 β₁ 이 0 이면 X 가 변해도 Y 의 예측값이 변하지 않으므로 X 는 Y 를 설명하지 못합니다. 그래서 귀무가설은 'β₁ = 0', 대립가설은 'β₁ ≠ 0' 입니다.\n\n**틀린 선지**\n- β₀ = 0: 절편이 0 인지 보는 가설로, X 의 영향과는 관계가 없습니다.\n- β₁ = 1: 기울기가 1 인지는 이 검정에서 보는 것이 아닙니다.\n- β₁ ≠ 0: 대립가설입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "회귀분석",
+      "가설검정"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-regression-0015",
+    "certId": "social-research-analyst-2",
+    "subjectId": "statistics",
+    "chapterId": "regression",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "중회귀분석에서 다중공선성이란?",
+    "choices": [
+      "잔차끼리 서로 관련되어 있는 문제",
+      "독립변수(설명변수)들끼리 서로 강하게 관련되어 있는 문제",
+      "잔차의 분산이 일정하지 않은 문제",
+      "표본 크기가 너무 작은 문제"
+    ],
+    "answer": 2,
+    "oneLineConcept": "다중공선성 = 독립변수끼리 높은 상관 (VIF 로 확인)",
+    "explanation": "다중공선성은 독립변수들끼리 상관이 너무 높아 각 변수의 효과를 따로 떼어 내기 어려운 상태입니다. 회귀계수가 불안정해지고 부호가 이상하게 나오기도 합니다. 분산팽창요인(VIF)이 크면(보통 10 이상) 의심합니다.\n\n**틀린 선지**\n- 잔차끼리 서로 관련되어 있는 문제: 자기상관에 대한 설명입니다.\n- 잔차의 분산이 일정하지 않은 문제: 이분산성(분산이 고르지 않음)에 대한 설명입니다.\n- 표본 크기가 너무 작은 문제: 표본 크기 부족은 다중공선성과 다른 문제입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "중회귀",
+      "다중공선성"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-regression-0016",
+    "certId": "social-research-analyst-2",
+    "subjectId": "statistics",
+    "chapterId": "regression",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "표본 21개, 독립변수 4개인 중회귀분석에서 결정계수 R² 가 0.6 이었다. 수정결정계수는?",
+    "choices": [
+      "0.53",
+      "0.60",
+      "0.40",
+      "0.50"
+    ],
+    "answer": 4,
+    "oneLineConcept": "수정 R² = 1 − (1−R²)(n−1)/(n−k−1)",
+    "explanation": "수정결정계수 = 1 − (1 − R²) × (n − 1) ÷ (n − k − 1), k = 독립변수 수\n\n1. 1 − R² = 0.4\n2. (n − 1) ÷ (n − k − 1) = 20 ÷ (21 − 4 − 1) = 20 ÷ 16 = 1.25\n3. 0.4 × 1.25 = 0.5\n4. 1 − 0.5 = 0.50\n\n**틀린 선지**\n- 0.53: 분모를 n − k = 17 로 써서 1 − 0.4 × 20/17 ≈ 0.53 으로 계산했습니다. 분모는 n − k − 1 입니다.\n- 0.60: 보통 결정계수 그대로입니다. 수정결정계수는 변수 수를 반영해 더 작아집니다.\n- 0.40: 1 − R² 로, 설명되지 않은 비율입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "중회귀",
+      "수정결정계수"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-regression-0017",
+    "certId": "social-research-analyst-2",
+    "subjectId": "statistics",
+    "chapterId": "regression",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "중회귀분석의 해석으로 옳지 않은 것은?",
+    "choices": [
+      "독립변수를 하나 더 넣으면 수정결정계수는 줄어들 수 있다",
+      "각 회귀계수는 다른 독립변수가 일정할 때 그 변수가 1 늘면 Y 가 변하는 양이다",
+      "독립변수를 하나 더 넣으면 결정계수(R²)가 줄어들 수 있다",
+      "회귀모형 전체가 유의한지는 F검정으로 판단한다"
+    ],
+    "answer": 3,
+    "oneLineConcept": "변수를 추가하면 R² 는 줄지 않고, 수정 R² 는 줄 수 있다",
+    "explanation": "보통 결정계수 R² 는 독립변수를 더 넣으면 쓸모없는 변수라도 줄어들지 않습니다(같거나 커짐). 그래서 변수 수를 고려해 벌점을 주는 수정결정계수를 함께 봅니다. 따라서 'R² 가 줄어들 수 있다'는 틀린 설명입니다.\n\n**틀린 선지**\n- 독립변수를 하나 더 넣으면 수정결정계수는 줄어들 수 있다: 옳은 설명입니다. 쓸모없는 변수를 넣으면 수정결정계수는 줄어들 수 있습니다.\n- 각 회귀계수는 다른 독립변수가 일정할 때 그 변수가 1 늘면 Y 가 변하는 양이다: 옳은 설명입니다. 중회귀계수(편회귀계수)의 뜻입니다.\n- 회귀모형 전체가 유의한지는 F검정으로 판단한다: 옳은 설명입니다. 모든 회귀계수가 0 인지를 F검정으로 봅니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "중회귀",
+      "결정계수"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "social-research-analyst-2-regression-0018",
+    "certId": "social-research-analyst-2",
+    "subjectId": "statistics",
+    "chapterId": "regression",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "상관분석에 대한 설명으로 옳지 않은 것은?",
+    "choices": [
+      "상관계수가 크면 X 가 Y 의 원인이라고 할 수 있다",
+      "상관계수의 절댓값이 1 에 가까울수록 직선 관계가 강하다",
+      "X 와 Y 를 서로 바꾸어 계산해도 상관계수는 같다",
+      "단순회귀분석에서 결정계수는 상관계수의 제곱과 같다"
+    ],
+    "answer": 1,
+    "oneLineConcept": "상관관계는 인과관계가 아니다",
+    "explanation": "상관계수는 두 변수가 함께 움직이는 정도만 보여 줄 뿐, 어느 쪽이 원인인지는 알려 주지 않습니다. 예를 들어 아이스크림 판매량과 물놀이 사고는 함께 늘지만, 둘 다 '더위'라는 다른 원인 때문입니다.\n\n**틀린 선지**\n- 상관계수의 절댓값이 1 에 가까울수록 직선 관계가 강하다: 옳은 설명입니다.\n- X 와 Y 를 서로 바꾸어 계산해도 상관계수는 같다: 옳은 설명입니다. 상관계수는 두 변수에 대해 대칭입니다.\n- 단순회귀분석에서 결정계수는 상관계수의 제곱과 같다: 옳은 설명입니다. R² = r² 입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "상관계수",
+      "인과관계"
+    ],
+    "levelLock": true
+  }
+]

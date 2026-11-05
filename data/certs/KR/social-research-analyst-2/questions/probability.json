@@ -1,0 +1,565 @@
+[
+  {
+    "id": "social-research-analyst-2-probability-0001",
+    "certId": "social-research-analyst-2",
+    "subjectId": "statistics",
+    "chapterId": "probability",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "확률변수 X 의 기댓값(평균)이 E(X) = 3 일 때, E(2X + 5) 는?",
+    "choices": [
+      "11",
+      "6",
+      "8",
+      "16"
+    ],
+    "answer": 1,
+    "oneLineConcept": "E(aX+b) = a·E(X) + b",
+    "explanation": "기댓값은 곱한 수는 그대로 곱하고, 더한 수는 그대로 더합니다. 공식: E(aX + b) = a·E(X) + b\n\n1. 2 × E(X) = 2 × 3 = 6\n2. 6 + 5 = 11\n\n**틀린 선지**\n- 6: 2 를 곱하기만 하고 5 를 더하지 않은 값입니다.\n- 8: 2 를 곱하지 않고 5 만 더한 값입니다.\n- 16: 3 에 5 를 먼저 더한 뒤 2 를 곱한 값으로, 계산 순서가 틀렸습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "기댓값",
+      "확률변수"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-probability-0002",
+    "certId": "social-research-analyst-2",
+    "subjectId": "statistics",
+    "chapterId": "probability",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "확률변수 X 의 분산이 Var(X) = 4 일 때, Var(3X + 2) 는?",
+    "choices": [
+      "36",
+      "12",
+      "14",
+      "38"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Var(aX+b) = a²·Var(X), 더한 상수는 무관",
+    "explanation": "분산은 곱한 수의 제곱만큼 커지고, 더한 수(상수)는 분산에 영향을 주지 않습니다. 공식: Var(aX + b) = a²·Var(X)\n\n1. a² = 3² = 9\n2. 9 × 4 = 36\n3. 더한 2 는 모든 값을 똑같이 옮길 뿐이라 흩어진 정도는 그대로입니다.\n\n**틀린 선지**\n- 12: 3 을 제곱하지 않고 그대로 곱한 값입니다.\n- 14: 3 을 그대로 곱한 뒤 2 까지 더한 값입니다.\n- 38: 제곱은 맞게 했지만 상수 2 를 더한 값입니다. 상수는 분산을 바꾸지 않습니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "분산",
+      "확률변수"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-probability-0003",
+    "certId": "social-research-analyst-2",
+    "subjectId": "statistics",
+    "chapterId": "probability",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "확률변수 X 가 0, 1, 2 의 값을 가질 확률이 각각 0.2, 0.5, 0.3 일 때, X 의 기댓값은?",
+    "choices": [
+      "1.0",
+      "0.5",
+      "1.1",
+      "0.6"
+    ],
+    "answer": 3,
+    "oneLineConcept": "E(X) = Σ(값 × 확률)",
+    "explanation": "기댓값은 '값 × 그 값의 확률'을 모두 더한 것입니다.\n\n1. 0 × 0.2 = 0\n2. 1 × 0.5 = 0.5\n3. 2 × 0.3 = 0.6\n4. 합계 = 0 + 0.5 + 0.6 = 1.1\n\n**틀린 선지**\n- 1.0: 값 0, 1, 2 를 단순히 평균 낸 값입니다. 확률(가중치)을 반영하지 않았습니다.\n- 0.5: 가장 큰 확률 0.5 를 답으로 고른 것입니다. 확률과 기댓값은 다릅니다.\n- 0.6: 2 × 0.3 = 0.6 만 계산하고 1 × 0.5 를 빠뜨린 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "기댓값",
+      "이산확률분포"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-probability-0004",
+    "certId": "social-research-analyst-2",
+    "subjectId": "statistics",
+    "chapterId": "probability",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "확률변수 X 가 0, 1, 2 의 값을 가질 확률이 각각 0.2, 0.5, 0.3 이다. X 의 분산은?",
+    "choices": [
+      "1.7",
+      "1.21",
+      "0.59",
+      "0.49"
+    ],
+    "answer": 4,
+    "oneLineConcept": "Var(X) = E(X²) − {E(X)}²",
+    "explanation": "분산은 Var(X) = E(X²) − {E(X)}² 로 구합니다.\n\n1. E(X) = 0×0.2 + 1×0.5 + 2×0.3 = 1.1\n2. E(X²) = 0²×0.2 + 1²×0.5 + 2²×0.3 = 0 + 0.5 + 1.2 = 1.7\n3. Var(X) = 1.7 − 1.1² = 1.7 − 1.21 = 0.49\n4. 검산: 표준편차는 0.7 이고 0.7² = 0.49 입니다.\n\n**틀린 선지**\n- 1.7: E(X²) 까지만 구하고 평균의 제곱을 빼지 않은 값입니다.\n- 1.21: 평균의 제곱 {E(X)}² 입니다.\n- 0.59: 1.7 − 1.21 을 잘못 뺀 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "분산",
+      "이산확률분포"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-probability-0005",
+    "certId": "social-research-analyst-2",
+    "subjectId": "statistics",
+    "chapterId": "probability",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "시행 횟수 n = 100, 성공 확률 p = 0.2 인 이항분포 B(100, 0.2) 의 평균(기댓값)은?",
+    "choices": [
+      "16",
+      "4",
+      "20",
+      "80"
+    ],
+    "answer": 3,
+    "oneLineConcept": "이항분포 평균 = np, 분산 = np(1−p)",
+    "explanation": "이항분포의 평균은 n × p 입니다.\n\n1. 평균 = 100 × 0.2 = 20\n\n**틀린 선지**\n- 16: 분산 np(1 − p) = 100 × 0.2 × 0.8 = 16 입니다.\n- 4: 표준편차 √16 = 4 입니다.\n- 80: 실패 횟수의 평균 100 × 0.8 = 80 입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "이항분포",
+      "기댓값"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-probability-0006",
+    "certId": "social-research-analyst-2",
+    "subjectId": "statistics",
+    "chapterId": "probability",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "이항분포 B(400, 0.5) 를 따르는 확률변수의 표준편차는?",
+    "choices": [
+      "100",
+      "10",
+      "200",
+      "20"
+    ],
+    "answer": 2,
+    "oneLineConcept": "이항분포 표준편차 = √{np(1−p)}",
+    "explanation": "이항분포의 분산은 np(1 − p), 표준편차는 그 제곱근입니다.\n\n1. 분산 = 400 × 0.5 × 0.5 = 100\n2. 표준편차 = √100 = 10\n\n**틀린 선지**\n- 100: 분산입니다. 표준편차는 분산의 제곱근입니다.\n- 200: 평균 np = 400 × 0.5 = 200 입니다.\n- 20: √400 = 20 으로, n 만 제곱근을 씌운 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "이항분포",
+      "표준편차"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-probability-0007",
+    "certId": "social-research-analyst-2",
+    "subjectId": "statistics",
+    "chapterId": "probability",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "다음 중 이항분포를 따르는 확률변수로 가장 알맞은 것은?",
+    "choices": [
+      "동전을 10번 던졌을 때 앞면이 나온 횟수",
+      "1시간 동안 걸려 오는 전화의 수",
+      "어떤 사람의 키(cm)",
+      "정류장에서 버스를 기다리는 시간"
+    ],
+    "answer": 1,
+    "oneLineConcept": "이항분포 = n번 독립 시행, 성공 확률 일정, 성공 횟수",
+    "explanation": "이항분포는 첫째, 결과가 '성공/실패' 두 가지뿐이고, 둘째, 매번 성공 확률이 같으며, 셋째, 각 시행이 서로 영향을 주지 않는(독립) 시행을 정해진 횟수 n 번 했을 때의 성공 횟수입니다. 동전 10번 던지기에서 앞면 횟수가 바로 이 경우입니다.\n\n**틀린 선지**\n- 1시간 동안 걸려 오는 전화의 수: 정해진 시행 횟수 없이 일정 시간 동안 일어나는 횟수로, 포아송분포에 가깝습니다.\n- 어떤 사람의 키(cm): 키는 소수점까지 잴 수 있는 연속형 값입니다.\n- 정류장에서 버스를 기다리는 시간: 기다리는 시간은 연속형 값입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "이항분포"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-probability-0008",
+    "certId": "social-research-analyst-2",
+    "subjectId": "statistics",
+    "chapterId": "probability",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "다음 중 연속확률변수에 해당하는 것은?",
+    "choices": [
+      "주사위를 던져 나온 눈의 수",
+      "한 가구의 자녀 수",
+      "전구의 수명(시간)",
+      "하루 동안 나온 불량품 개수"
+    ],
+    "answer": 3,
+    "oneLineConcept": "재는 값 = 연속, 세는 값 = 이산",
+    "explanation": "연속확률변수는 어떤 구간 안의 모든 값(소수점 아래까지)을 가질 수 있는 변수입니다. 시간, 길이, 무게 같은 '재는' 값이 여기에 속합니다. 전구 수명은 1000.5시간처럼 어떤 값이든 가질 수 있습니다.\n\n**틀린 선지**\n- 주사위를 던져 나온 눈의 수: 1~6 처럼 셀 수 있는 값만 나오는 이산확률변수입니다.\n- 한 가구의 자녀 수: 0명, 1명, 2명처럼 세는 값이라 이산확률변수입니다.\n- 하루 동안 나온 불량품 개수: 개수를 세는 값이라 이산확률변수입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "확률변수",
+      "연속"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-probability-0009",
+    "certId": "social-research-analyst-2",
+    "subjectId": "statistics",
+    "chapterId": "probability",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "정규분포에 대한 설명으로 옳은 것은?",
+    "choices": [
+      "평균과 중앙값이 항상 다르다",
+      "오른쪽으로 꼬리가 긴 모양이다",
+      "평균을 중심으로 좌우 대칭인 종 모양이다",
+      "분산이 클수록 그래프가 뾰족하고 좁아진다"
+    ],
+    "answer": 3,
+    "oneLineConcept": "정규분포 = 좌우 대칭 종 모양, 평균=중앙값=최빈값",
+    "explanation": "정규분포는 평균을 가운데에 두고 좌우가 똑같은 종 모양입니다. 그래서 평균·중앙값·최빈값이 모두 같고, 왜도(기울어진 정도)는 0 입니다.\n\n**틀린 선지**\n- 평균과 중앙값이 항상 다르다: 좌우 대칭이므로 평균과 중앙값은 같습니다.\n- 오른쪽으로 꼬리가 긴 모양이다: 정규분포는 어느 쪽으로도 기울지 않습니다.\n- 분산이 클수록 그래프가 뾰족하고 좁아진다: 반대입니다. 분산이 클수록 넓고 납작해집니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "정규분포"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-probability-0010",
+    "certId": "social-research-analyst-2",
+    "subjectId": "statistics",
+    "chapterId": "probability",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "시험 점수 X 가 평균 50, 표준편차 10 인 정규분포를 따른다. 65점을 표준화한 Z 값은?",
+    "choices": [
+      "1.5",
+      "15",
+      "0.15",
+      "−1.5"
+    ],
+    "answer": 1,
+    "oneLineConcept": "Z = (X − μ) ÷ σ",
+    "explanation": "표준화는 '평균에서 표준편차 몇 개만큼 떨어져 있나'를 구하는 것입니다. Z = (X − 평균) ÷ 표준편차\n\n1. 65 − 50 = 15\n2. 15 ÷ 10 = 1.5\n\n**틀린 선지**\n- 15: 평균과의 차이만 구하고 표준편차로 나누지 않았습니다.\n- 0.15: 100 으로 나눈 값입니다(분산으로 나눔). 나누는 수는 표준편차 10 입니다.\n- −1.5: 65 가 평균보다 크므로 Z 는 양수입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "표준정규분포",
+      "표준화"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-probability-0011",
+    "certId": "social-research-analyst-2",
+    "subjectId": "statistics",
+    "chapterId": "probability",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "X 가 평균 70, 표준편차 5 인 정규분포를 따를 때 P(X ≥ 80) 은? (단, P(0 ≤ Z ≤ 2) = 0.4772)",
+    "choices": [
+      "0.4772",
+      "0.9772",
+      "0.0456",
+      "0.0228"
+    ],
+    "answer": 4,
+    "oneLineConcept": "P(Z ≥ z) = 0.5 − P(0 ≤ Z ≤ z)",
+    "explanation": "1. Z = (80 − 70) ÷ 5 = 2\n2. 표준정규분포는 Z = 0 을 기준으로 오른쪽 절반의 확률이 0.5 입니다.\n3. P(Z ≥ 2) = 0.5 − P(0 ≤ Z ≤ 2) = 0.5 − 0.4772 = 0.0228\n\n**틀린 선지**\n- 0.4772: 0 부터 2 사이의 확률로, 구하려는 오른쪽 끝부분이 아닙니다.\n- 0.9772: P(Z ≤ 2), 즉 80점 이하일 확률입니다.\n- 0.0456: 양쪽 끝(Z ≤ −2 와 Z ≥ 2)을 더한 확률입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "정규분포",
+      "확률 계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-probability-0012",
+    "certId": "social-research-analyst-2",
+    "subjectId": "statistics",
+    "chapterId": "probability",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "표준정규분포에 대한 설명으로 옳지 않은 것은?",
+    "choices": [
+      "평균은 0, 분산은 1 이다",
+      "Z = 0 을 중심으로 좌우 대칭이다",
+      "Z 값이 클수록 확률밀도(그래프 높이)가 계속 커진다",
+      "P(Z ≤ 0) = 0.5 이다"
+    ],
+    "answer": 3,
+    "oneLineConcept": "표준정규분포 = 평균 0, 분산 1, Z=0 에서 가장 높음",
+    "explanation": "표준정규분포는 평균 0, 분산 1 인 정규분포입니다. 그래프는 Z = 0 에서 가장 높고, 0 에서 멀어질수록(양쪽 모두) 낮아집니다. 따라서 'Z 가 클수록 높이가 계속 커진다'는 틀린 설명입니다.\n\n**틀린 선지**\n- 평균은 0, 분산은 1 이다: 옳은 설명입니다. 표준정규분포의 정의입니다.\n- Z = 0 을 중심으로 좌우 대칭이다: 옳은 설명입니다. 종 모양이 0 을 중심으로 대칭입니다.\n- P(Z ≤ 0) = 0.5 이다: 옳은 설명입니다. 대칭이므로 0 왼쪽이 전체의 절반입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "표준정규분포"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "social-research-analyst-2-probability-0013",
+    "certId": "social-research-analyst-2",
+    "subjectId": "statistics",
+    "chapterId": "probability",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "모평균이 100, 모표준편차가 20 인 모집단에서 크기 16 인 표본을 뽑았다. 표본평균의 표준오차는?",
+    "choices": [
+      "5",
+      "1.25",
+      "20",
+      "25"
+    ],
+    "answer": 1,
+    "oneLineConcept": "표준오차 = σ ÷ √n",
+    "explanation": "표본평균의 표준오차(표본평균이 흔들리는 정도)는 모표준편차 ÷ √n 입니다.\n\n1. √16 = 4\n2. 20 ÷ 4 = 5\n\n**틀린 선지**\n- 1.25: 20 ÷ 16 으로, n 에 제곱근을 씌우지 않았습니다.\n- 20: 모표준편차 그대로입니다. 표본평균은 개별 값보다 덜 흔들립니다.\n- 25: 표본평균의 분산 20² ÷ 16 = 25 입니다. 표준오차는 그 제곱근인 5 입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "표본분포",
+      "표준오차"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-probability-0014",
+    "certId": "social-research-analyst-2",
+    "subjectId": "statistics",
+    "chapterId": "probability",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "모집단 분포의 모양과 상관없이, 표본 크기가 충분히 크면 표본평균의 분포가 정규분포에 가까워진다는 정리는?",
+    "choices": [
+      "대수의 법칙",
+      "베이즈 정리",
+      "중심극한정리",
+      "체비셰프 부등식"
+    ],
+    "answer": 3,
+    "oneLineConcept": "중심극한정리: n 이 크면 표본평균 ≈ 정규분포",
+    "explanation": "중심극한정리는 모집단이 정규분포가 아니어도 표본 크기 n 이 크면(보통 30 이상) 표본평균이 평균 μ, 표준편차 σ/√n 인 정규분포에 가까워진다는 정리입니다. 그래서 큰 표본에서는 Z 값으로 추정·검정을 할 수 있습니다.\n\n**틀린 선지**\n- 대수의 법칙: 표본이 커질수록 표본평균이 모평균에 가까워진다는 법칙입니다. 분포의 '모양'이 정규분포가 된다는 내용은 아닙니다.\n- 베이즈 정리: 새 정보를 반영해 조건부 확률을 고쳐 계산하는 정리입니다.\n- 체비셰프 부등식: 분포 모양을 몰라도 평균에서 멀리 떨어질 확률의 상한을 알려 주는 부등식입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "중심극한정리",
+      "표본분포"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-probability-0015",
+    "certId": "social-research-analyst-2",
+    "subjectId": "statistics",
+    "chapterId": "probability",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "모비율 p = 0.4 인 모집단에서 크기 n = 150 인 표본을 뽑을 때, 표본비율의 표준오차는?",
+    "choices": [
+      "0.0016",
+      "0.04",
+      "0.016",
+      "0.24"
+    ],
+    "answer": 2,
+    "oneLineConcept": "표본비율 표준오차 = √{p(1−p)/n}",
+    "explanation": "표본비율의 표준오차는 √{p(1 − p) ÷ n} 입니다.\n\n1. p(1 − p) = 0.4 × 0.6 = 0.24\n2. 0.24 ÷ 150 = 0.0016\n3. √0.0016 = 0.04\n\n**틀린 선지**\n- 0.0016: 제곱근을 씌우기 전의 값(표본비율의 분산)입니다.\n- 0.016: 0.0016 의 제곱근을 잘못 계산한 값입니다. 0.04 × 0.04 = 0.0016 입니다.\n- 0.24: p(1 − p) 만 구하고 n 으로 나누지 않았습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "표본분포",
+      "비율"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-probability-0016",
+    "certId": "social-research-analyst-2",
+    "subjectId": "statistics",
+    "chapterId": "probability",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "모평균 50, 모표준편차 10 인 모집단에서 크기 25 인 표본을 뽑았다. 표본평균이 46 이상 54 이하일 확률은? (단, P(0 ≤ Z ≤ 2) = 0.4772)",
+    "choices": [
+      "0.4772",
+      "0.6826",
+      "0.0456",
+      "0.9544"
+    ],
+    "answer": 4,
+    "oneLineConcept": "표본평균의 Z = (x̄ − μ) ÷ (σ/√n)",
+    "explanation": "1. 표준오차 = 10 ÷ √25 = 10 ÷ 5 = 2\n2. 46 → Z = (46 − 50) ÷ 2 = −2, 54 → Z = (54 − 50) ÷ 2 = 2\n3. P(−2 ≤ Z ≤ 2) = 0.4772 × 2 = 0.9544\n\n**틀린 선지**\n- 0.4772: 한쪽(0 ~ 2)만 구한 값입니다. 양쪽을 더해야 합니다.\n- 0.6826: Z 가 −1 ~ 1 일 때의 확률입니다. 표준오차를 쓰면 Z 는 ±2 입니다.\n- 0.0456: 범위 바깥(양쪽 끝)의 확률입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "표본분포",
+      "정규분포"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  }
+]
