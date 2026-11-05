@@ -1,0 +1,241 @@
+[
+  {
+    "id": "social-research-analyst-2-fieldwork-0001",
+    "certId": "social-research-analyst-2",
+    "subjectId": "survey-management",
+    "chapterId": "fieldwork",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "면접 조사원 교육에서 가장 강조해야 할 내용은?",
+    "choices": [
+      "질문은 쓰인 그대로 읽고 마음대로 바꾸지 않는다",
+      "응답이 애매하면 조사원이 짐작해서 적는다",
+      "응답자가 망설이면 조사원의 생각을 답으로 권한다",
+      "시간을 줄이기 위해 일부 문항은 건너뛴다"
+    ],
+    "answer": 1,
+    "oneLineConcept": "조사원 원칙: 질문은 그대로, 답은 들은 그대로 기록",
+    "explanation": "모든 응답자가 같은 질문을 받아야 응답을 비교할 수 있습니다. 조사원이 질문을 바꾸거나 답을 짐작해 적으면 조사원마다 결과가 달라지는 비표본오차가 생깁니다.\n\n**틀린 선지**\n- 응답이 애매하면 조사원이 짐작해서 적는다: 짐작해 적으면 응답자의 실제 답이 아니게 됩니다. 중립적으로 다시 물어야 합니다.\n- 응답자가 망설이면 조사원의 생각을 답으로 권한다: 조사원이 답을 권하면 응답이 왜곡됩니다(면접자 편향).\n- 시간을 줄이기 위해 일부 문항은 건너뛴다: 문항을 건너뛰면 무응답이 생겨 자료가 불완전해집니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "조사원 교육"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-fieldwork-0002",
+    "certId": "social-research-analyst-2",
+    "subjectId": "survey-management",
+    "chapterId": "fieldwork",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "조사원에게 조사 목적, 응답자를 찾는 방법, 질문 진행 요령, 어려운 상황의 대처법 등을 적어 나눠 주는 문서는?",
+    "choices": [
+      "코딩북",
+      "조사원 지침서(조사 매뉴얼)",
+      "표본추출틀",
+      "보고서"
+    ],
+    "answer": 2,
+    "oneLineConcept": "조사원 지침서 = 조사 목적·절차·대처법을 담은 안내서",
+    "explanation": "조사원 지침서가 있으면 조사원마다 같은 방법으로 조사할 수 있어 조사의 일관성이 높아집니다. 조사원 교육 때 함께 설명합니다.\n\n**틀린 선지**\n- 코딩북: 응답을 숫자로 바꾸는 규칙을 적은 자료처리용 문서입니다.\n- 표본추출틀: 표본을 뽑는 모집단 명단입니다.\n- 보고서: 조사가 끝난 뒤 결과를 정리한 문서입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "조사원 지침서"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-fieldwork-0003",
+    "certId": "social-research-analyst-2",
+    "subjectId": "survey-management",
+    "chapterId": "fieldwork",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "조사 대상으로 뽑은 500명 가운데 400명이 조사를 끝까지 마쳤다. 단순 응답률은?",
+    "choices": [
+      "20%",
+      "40%",
+      "80%",
+      "125%"
+    ],
+    "answer": 3,
+    "oneLineConcept": "단순 응답률 = 응답 완료 수 ÷ 조사 대상 수 × 100",
+    "explanation": "응답률은 조사 대상 가운데 실제로 응답한 사람의 비율입니다.\n\n1. 400 ÷ 500 = 0.8\n2. 0.8 × 100 = 80%\n3. 검산: 500명의 80%는 400명\n\n**틀린 선지**\n- 20%: 응답하지 않은 비율(100명 ÷ 500명)입니다.\n- 40%: 400을 1,000으로 잘못 나눈 값입니다.\n- 125%: 500을 400으로 거꾸로 나눈 값입니다. 응답률은 100%를 넘을 수 없습니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "응답률",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-fieldwork-0004",
+    "certId": "social-research-analyst-2",
+    "subjectId": "survey-management",
+    "chapterId": "fieldwork",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "조사원이 응답자를 실제로 만나지 않고 설문지를 직접 채우는 부정을 찾아내는 방법으로 가장 알맞은 것은?",
+    "choices": [
+      "조사원에게 말로 조사를 제대로 했는지 물어본다",
+      "회수된 설문지의 개수만 센다",
+      "응답자 일부에게 다시 연락해 실제로 조사를 받았는지 확인한다",
+      "조사가 모두 끝난 뒤 분석 결과만 보고 판단한다"
+    ],
+    "answer": 3,
+    "oneLineConcept": "실사 검증: 응답자 일부에게 재연락해 실제 조사 확인",
+    "explanation": "실사 기간 동안 조사원별로 응답자 일부를 골라 전화 등으로 다시 연락해, 실제로 조사를 받았는지와 몇 가지 응답이 맞는지 확인합니다. 부정이 드러나면 그 조사원의 자료를 다시 조사하고 조사원을 교체합니다.\n\n**틀린 선지**\n- 조사원에게 말로 조사를 제대로 했는지 물어본다: 부정을 한 조사원이 사실대로 말하리라 기대하기 어렵습니다.\n- 회수된 설문지의 개수만 센다: 개수가 맞아도 내용이 가짜일 수 있습니다.\n- 조사가 모두 끝난 뒤 분석 결과만 보고 판단한다: 분석 결과만으로는 어떤 설문지가 가짜인지 가려내기 어렵고, 시기도 늦습니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "실사 점검",
+      "검증"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-fieldwork-0005",
+    "certId": "social-research-analyst-2",
+    "subjectId": "survey-management",
+    "chapterId": "fieldwork",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "조사원에 따라 결과가 달라지는 면접자 편향을 줄이는 방법으로 가장 알맞은 것은?",
+    "choices": [
+      "경력이 많은 조사원에게는 질문을 고쳐 물을 권한을 준다",
+      "조사원마다 자기에게 편한 방식으로 질문하게 한다",
+      "시간을 아끼기 위해 교육 없이 바로 조사에 들어간다",
+      "모든 조사원에게 같은 내용으로 교육하고 같은 조사 지침서를 쓰게 한다"
+    ],
+    "answer": 4,
+    "oneLineConcept": "면접자 편향↓ = 표준화된 교육·지침서·질문",
+    "explanation": "면접자 편향은 조사원의 말투, 질문 방식, 태도에 따라 응답이 달라지는 현상입니다. 같은 교육과 지침서로 조사 방법을 통일하면 조사원 사이의 차이가 줄어듭니다.\n\n**틀린 선지**\n- 경력이 많은 조사원에게는 질문을 고쳐 물을 권한을 준다: 조사원마다 질문이 달라지면 오히려 편향이 커집니다.\n- 조사원마다 자기에게 편한 방식으로 질문하게 한다: 질문 방식이 제각각이면 응답을 비교할 수 없습니다.\n- 시간을 아끼기 위해 교육 없이 바로 조사에 들어간다: 교육이 없으면 조사원마다 진행 방식이 달라집니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "면접자 편향",
+      "조사원 교육"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-fieldwork-0006",
+    "certId": "social-research-analyst-2",
+    "subjectId": "survey-management",
+    "chapterId": "fieldwork",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "회수된 설문지에 '나이 25세'인데 '현재 직장 근무 기간 30년'으로 적혀 있다. 이것을 찾아내는 점검은?",
+    "choices": [
+      "응답 사이의 논리적 일관성(정합성) 점검",
+      "응답률 점검",
+      "표본 크기 점검",
+      "척도의 신뢰도 점검"
+    ],
+    "answer": 1,
+    "oneLineConcept": "정합성 점검 = 응답끼리 논리적으로 맞는지 확인",
+    "explanation": "25세가 30년 동안 일했을 수는 없으므로 둘 중 하나가 잘못 적혔습니다. 이런 논리적 모순을 찾아 응답자에게 다시 확인하거나 원본을 대조해 고칩니다.\n\n**틀린 선지**\n- 응답률 점검: 몇 명이 응답했는지를 보는 것으로, 한 설문지 안의 모순은 찾지 못합니다.\n- 표본 크기 점검: 표본이 충분한지 보는 것으로, 응답 내용의 모순과는 관계가 없습니다.\n- 척도의 신뢰도 점검: 측정 도구가 일관된 결과를 주는지 보는 것입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "실사 품질",
+      "정합성 점검"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-fieldwork-0007",
+    "certId": "social-research-analyst-2",
+    "subjectId": "survey-management",
+    "chapterId": "fieldwork",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "실사(현장 조사) 진행 중 점검과 조치로 옳지 않은 것은?",
+    "choices": [
+      "만나지 못한 응답자는 정해진 규칙에 따라 다시 방문한다",
+      "날마다 조사 일정 대비 진행률을 확인한다",
+      "문제가 드러난 조사원은 다시 교육하거나 교체한다",
+      "응답률이 낮은 지역은 조사원이 근처의 아무 사람으로 마음대로 대체한다"
+    ],
+    "answer": 4,
+    "oneLineConcept": "응답자 대체는 미리 정한 규칙대로, 조사원 임의 대체 금지",
+    "explanation": "조사원이 마음대로 응답자를 바꾸면 만나기 쉬운 사람만 조사되어 표본이 치우칩니다. 대체가 필요하면 조사 설계 때 정한 대체 규칙에 따라야 합니다.\n\n**틀린 선지**\n- 만나지 못한 응답자는 정해진 규칙에 따라 다시 방문한다: 옳은 조치입니다. 재방문으로 무응답을 줄입니다.\n- 날마다 조사 일정 대비 진행률을 확인한다: 옳은 조치입니다. 늦어지는 곳을 일찍 찾아낼 수 있습니다.\n- 문제가 드러난 조사원은 다시 교육하거나 교체한다: 옳은 조치입니다. 품질 문제를 바로잡습니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "실사 진행 관리"
+    ],
+    "levelLock": true
+  }
+]

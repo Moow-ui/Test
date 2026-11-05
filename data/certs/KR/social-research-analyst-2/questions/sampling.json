@@ -1,0 +1,560 @@
+[
+  {
+    "id": "social-research-analyst-2-sampling-0001",
+    "certId": "social-research-analyst-2",
+    "subjectId": "survey-design",
+    "chapterId": "sampling",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "다음 중 확률표본추출 방법은?",
+    "choices": [
+      "할당표본추출",
+      "층화표본추출",
+      "눈덩이표본추출",
+      "편의표본추출"
+    ],
+    "answer": 2,
+    "oneLineConcept": "확률표본: 단순무작위·계통·층화·군집",
+    "explanation": "확률표본추출은 모집단의 모든 구성원이 뽑힐 확률을 미리 알 수 있고 0보다 큰 방법입니다. 단순무작위, 계통, 층화, 군집표본추출이 여기에 속합니다.\n\n**틀린 선지**\n- 할당표본추출: 비율(할당량)은 정하지만, 그 안에서 조사원이 사람을 골라 뽑힐 확률을 알 수 없는 비확률표본추출입니다.\n- 눈덩이표본추출: 응답자의 소개로 다음 응답자를 찾는 비확률표본추출입니다.\n- 편의표본추출: 만나기 쉬운 사람을 고르는 비확률표본추출입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "확률표본추출"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-sampling-0002",
+    "certId": "social-research-analyst-2",
+    "subjectId": "survey-design",
+    "chapterId": "sampling",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "조사원이 역 앞에서 지나가는 사람 가운데 응답해 줄 만한 사람을 골라 조사했다. 이 표본추출 방법은?",
+    "choices": [
+      "단순무작위표본추출",
+      "계통표본추출",
+      "편의(임의)표본추출",
+      "군집표본추출"
+    ],
+    "answer": 3,
+    "oneLineConcept": "편의표본 = 조사하기 쉬운 사람을 골라 뽑음",
+    "explanation": "편의표본추출은 시간과 비용이 적게 들지만, 뽑히는 사람이 한쪽으로 치우칠 수 있어 모집단을 대표한다고 보기 어렵습니다.\n\n**틀린 선지**\n- 단순무작위표본추출: 모든 구성원이 같은 확률로 무작위로 뽑혀야 합니다. 조사원이 고르는 것은 무작위가 아닙니다.\n- 계통표본추출: 명단에서 일정한 간격마다 뽑는 확률표본추출입니다.\n- 군집표본추출: 집단(학교·동네 등)을 무작위로 뽑는 확률표본추출입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "비확률표본추출",
+      "편의표본추출"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-sampling-0003",
+    "certId": "social-research-analyst-2",
+    "subjectId": "survey-design",
+    "chapterId": "sampling",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "명단을 구하기 어려운 희귀 집단을 조사하려고, 처음 찾은 응답자에게 비슷한 사람을 소개받아 표본을 늘려 가는 방법은?",
+    "choices": [
+      "판단(유의)표본추출",
+      "할당표본추출",
+      "층화표본추출",
+      "눈덩이표본추출"
+    ],
+    "answer": 4,
+    "oneLineConcept": "눈덩이표본 = 응답자 소개로 희귀 집단 표본 확대",
+    "explanation": "눈덩이표본추출은 응답자가 다음 응답자를 소개하며 표본이 눈덩이처럼 불어납니다. 찾기 어려운 집단에 쓸모가 있지만, 서로 아는 사람끼리 모여 대표성이 낮을 수 있습니다.\n\n**틀린 선지**\n- 판단(유의)표본추출: 조사자가 목적에 맞는다고 판단한 사람을 직접 고르는 방법으로, 소개를 이어 가는 방식이 아닙니다.\n- 할당표본추출: 성별·연령 등 비율을 맞춰 조사원이 고르는 방법입니다.\n- 층화표본추출: 명단(표본추출틀)이 있어야 쓸 수 있는 확률표본추출입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "비확률표본추출",
+      "눈덩이표본추출"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-sampling-0004",
+    "certId": "social-research-analyst-2",
+    "subjectId": "survey-design",
+    "chapterId": "sampling",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "모집단의 성별·연령대 비율에 맞춰 조사원별로 '30대 남성 10명'처럼 조사할 인원을 정해 주고, 그 안에서 누구를 조사할지는 조사원이 정하게 했다. 이 방법은?",
+    "choices": [
+      "할당표본추출",
+      "층화표본추출",
+      "판단표본추출",
+      "군집표본추출"
+    ],
+    "answer": 1,
+    "oneLineConcept": "할당 = 비율 맞춘 뒤 조사원이 선택 (비확률)",
+    "explanation": "할당표본추출은 모집단 비율에 맞춰 칸(할당량)을 정하지만, 칸 안에서 사람을 무작위로 뽑지 않으므로 비확률표본추출입니다. 층화표본추출과 가장 많이 헷갈리는데, 차이는 '칸 안에서 무작위로 뽑느냐'입니다.\n\n**틀린 선지**\n- 층화표본추출: 층을 나누는 점은 같지만, 층화표본추출은 각 층 안에서 무작위로 뽑습니다. 조사원이 고르면 할당표본추출입니다.\n- 판단표본추출: 비율을 맞추는 할당량 없이 조사자의 판단만으로 고르는 방법입니다.\n- 군집표본추출: 집단을 단위로 무작위로 뽑는 방법입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "할당표본추출"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-sampling-0005",
+    "certId": "social-research-analyst-2",
+    "subjectId": "survey-design",
+    "chapterId": "sampling",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "층화표본추출에서 층을 나누는 바람직한 방법은?",
+    "choices": [
+      "층 안의 구성원은 서로 다르고, 층과 층은 서로 비슷하게 나눈다",
+      "층 안의 구성원은 서로 비슷하고, 층과 층은 서로 다르게 나눈다",
+      "층 안도, 층과 층 사이도 모두 서로 비슷하게 나눈다",
+      "층의 크기가 반드시 모두 같도록 나눈다"
+    ],
+    "answer": 2,
+    "oneLineConcept": "층화: 층 내 동질·층 간 이질 / 군집: 반대",
+    "explanation": "층화표본추출은 모집단을 성별·지역 같은 기준으로 층으로 나누고, 각 층에서 무작위로 뽑습니다. 층 안이 비슷할수록(동질적) 표본오차가 줄어 더 정확해집니다.\n\n**틀린 선지**\n- 층 안의 구성원은 서로 다르고, 층과 층은 서로 비슷하게 나눈다: 이것은 군집표본추출에서 집단(군집)을 나누는 바람직한 조건입니다.\n- 층 안도, 층과 층 사이도 모두 서로 비슷하게 나눈다: 층끼리 비슷하면 층을 나누는 의미가 없습니다.\n- 층의 크기가 반드시 모두 같도록 나눈다: 층 크기는 달라도 됩니다. 비례 배분 등으로 층별 표본 수를 정합니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "층화표본추출"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-sampling-0006",
+    "certId": "social-research-analyst-2",
+    "subjectId": "survey-design",
+    "chapterId": "sampling",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "전국 고등학생을 조사하려고 학교 명단에서 학교 20곳을 무작위로 뽑은 뒤, 뽑힌 학교의 학생 전체를 조사했다. 이 방법은?",
+    "choices": [
+      "층화표본추출",
+      "계통표본추출",
+      "군집표본추출",
+      "할당표본추출"
+    ],
+    "answer": 3,
+    "oneLineConcept": "군집 = 집단을 무작위로 뽑고 그 안을 조사",
+    "explanation": "군집표본추출은 개인 명단이 없어도 집단(학교·마을) 명단만 있으면 쓸 수 있고 비용이 적게 듭니다. 집단 안이 다양하고(이질적) 집단끼리는 비슷할수록 좋습니다.\n\n**틀린 선지**\n- 층화표본추출: 층화는 모든 층(집단)에서 조금씩 뽑습니다. 이 문제는 집단 자체를 뽑고 그 안을 모두 조사했습니다.\n- 계통표본추출: 명단에서 일정한 간격으로 개인을 뽑는 방법입니다.\n- 할당표본추출: 비율을 맞춰 조사원이 고르는 비확률 방법입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "군집표본추출"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-sampling-0007",
+    "certId": "social-research-analyst-2",
+    "subjectId": "survey-design",
+    "chapterId": "sampling",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "모집단 명단 2,000명에서 계통표본추출로 100명을 뽑으려 한다. 추출 간격은?",
+    "choices": [
+      "10",
+      "20",
+      "50",
+      "100"
+    ],
+    "answer": 2,
+    "oneLineConcept": "계통추출 간격 = 모집단 크기 ÷ 표본 크기",
+    "explanation": "추출 간격은 모집단 크기를 표본 크기로 나눈 값입니다.\n\n1. 2,000 ÷ 100 = 20\n2. 처음 20명 안에서 시작점 하나를 무작위로 고르고, 그 뒤로 20명마다 1명씩 뽑습니다.\n3. 검산: 20 × 100 = 2,000\n\n**틀린 선지**\n- 10: 표본 200명을 뽑을 때의 간격입니다.\n- 50: 표본 40명을 뽑을 때의 간격입니다.\n- 100: 표본 수(100명)를 간격으로 잘못 쓴 값입니다. 이렇게 하면 20명만 뽑힙니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "계통표본추출",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-sampling-0008",
+    "certId": "social-research-analyst-2",
+    "subjectId": "survey-design",
+    "chapterId": "sampling",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "계통표본추출을 쓸 때 특히 주의해야 할 점은?",
+    "choices": [
+      "모집단 명단(표본추출틀)이 없어도 쓸 수 있다",
+      "조사자의 판단으로 뽑으므로 확률표본이 아니다",
+      "반드시 모집단을 먼저 층으로 나누어야 한다",
+      "명단이 일정한 주기로 배열되어 있으면 표본이 한쪽으로 치우칠 수 있다"
+    ],
+    "answer": 4,
+    "oneLineConcept": "계통추출 주의: 명단의 주기성 → 편향 가능",
+    "explanation": "예를 들어 아파트 명단이 '각 층 10호씩' 순서로 되어 있는데 간격을 10으로 하면 매번 같은 위치의 호(예: 모서리 집)만 뽑힐 수 있습니다. 이처럼 명단에 주기가 있고 간격이 그 주기와 맞으면 표본이 치우칩니다.\n\n**틀린 선지**\n- 모집단 명단(표본추출틀)이 없어도 쓸 수 있다: 계통표본추출은 명단에서 간격마다 뽑으므로 명단이 있어야 합니다.\n- 조사자의 판단으로 뽑으므로 확률표본이 아니다: 시작점을 무작위로 정하므로 확률표본추출입니다.\n- 반드시 모집단을 먼저 층으로 나누어야 한다: 층을 나누는 것은 층화표본추출의 절차입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "계통표본추출"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-sampling-0009",
+    "certId": "social-research-analyst-2",
+    "subjectId": "survey-design",
+    "chapterId": "sampling",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "표본을 실제로 뽑을 때 쓰는, 모집단 구성원의 명단을 무엇이라 하는가?",
+    "choices": [
+      "표본추출틀",
+      "표본추출단위",
+      "모수",
+      "통계량"
+    ],
+    "answer": 1,
+    "oneLineConcept": "표본추출틀 = 표본을 뽑는 모집단 명단",
+    "explanation": "표본추출틀은 전화번호부, 주민 명단, 회원 명부처럼 표본을 뽑는 바탕이 되는 목록입니다. 명단이 모집단과 맞지 않으면(빠진 사람·중복) 표본이 치우칠 수 있습니다.\n\n**틀린 선지**\n- 표본추출단위: 명단에 적힌 하나하나의 뽑히는 대상(개인·가구 등)을 말합니다. 명단 전체가 아닙니다.\n- 모수: 모집단의 특성을 나타내는 값(예: 모평균)입니다.\n- 통계량: 표본에서 계산한 값(예: 표본평균)입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "표본추출틀"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-sampling-0010",
+    "certId": "social-research-analyst-2",
+    "subjectId": "survey-design",
+    "chapterId": "sampling",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "다른 조건이 같을 때 표본의 크기를 늘리면 일반적으로 줄어드는 오차는?",
+    "choices": [
+      "응답자가 사실과 다르게 답해서 생기는 오차",
+      "표본오차",
+      "자료를 입력하다 잘못 친 오차",
+      "조사원이 질문을 바꿔 읽어서 생기는 오차"
+    ],
+    "answer": 2,
+    "oneLineConcept": "표본 크기↑ → 표본오차↓ (비표본오차는 별개)",
+    "explanation": "표본오차는 모집단의 일부만 뽑아서 생기는 우연한 차이입니다. 표본이 클수록 모집단에 가까워져 표본오차가 줄어듭니다. 응답 오류·입력 오류·조사원 편향 같은 비표본오차는 표본 크기와 상관없이 생기며, 조사 관리를 잘해야 줄어듭니다.\n\n**틀린 선지**\n- 응답자가 사실과 다르게 답해서 생기는 오차: 응답 오류는 비표본오차라서 표본을 늘린다고 줄지 않습니다.\n- 자료를 입력하다 잘못 친 오차: 입력 오류는 비표본오차입니다. 오히려 자료가 많아지면 늘 수도 있습니다.\n- 조사원이 질문을 바꿔 읽어서 생기는 오차: 조사원 편향은 비표본오차입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "표본오차"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-sampling-0011",
+    "certId": "social-research-analyst-2",
+    "subjectId": "survey-design",
+    "chapterId": "sampling",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "다음 중 비표본오차에 해당하는 것을 모두 고른 것은?\n\nㄱ. 조사 대상자가 응답을 거부해서 생긴 오차\nㄴ. 조사원이 응답을 잘못 받아 적어서 생긴 오차\nㄷ. 우연히 뽑힌 표본이 모집단과 조금 달라서 생긴 오차\nㄹ. 질문 문구가 애매해서 응답이 엇갈려 생긴 오차",
+    "choices": [
+      "ㄱ, ㄴ",
+      "ㄱ, ㄴ, ㄹ",
+      "ㄴ, ㄷ, ㄹ",
+      "ㄱ, ㄴ, ㄷ, ㄹ"
+    ],
+    "answer": 2,
+    "oneLineConcept": "비표본오차 = 무응답·기록·질문·입력 등 표본 외 오차",
+    "explanation": "비표본오차는 표본을 뽑는 것 말고 조사 과정에서 생기는 모든 오차입니다. 무응답(ㄱ), 조사원의 기록 실수(ㄴ), 질문 문구 문제(ㄹ)가 여기에 속합니다. ㄷ처럼 일부만 뽑아서 생기는 우연한 차이는 표본오차입니다.\n\n**틀린 선지**\n- ㄱ, ㄴ: ㄹ(애매한 질문 문구로 생긴 응답 오류)도 비표본오차인데 빠졌습니다.\n- ㄴ, ㄷ, ㄹ: ㄷ은 표본오차이고, ㄱ(무응답)이 빠졌습니다.\n- ㄱ, ㄴ, ㄷ, ㄹ: ㄷ은 일부만 뽑아서 생기는 표본오차이므로 넣으면 안 됩니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "비표본오차"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "social-research-analyst-2-sampling-0012",
+    "certId": "social-research-analyst-2",
+    "subjectId": "survey-design",
+    "chapterId": "sampling",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "다른 조건이 같을 때 표본의 크기를 4배로 늘리면 표본오차(표준오차)는 어떻게 되는가?",
+    "choices": [
+      "처음의 1/4로 줄어든다",
+      "처음의 2배로 커진다",
+      "처음의 1/2로 줄어든다",
+      "변하지 않는다"
+    ],
+    "answer": 3,
+    "oneLineConcept": "표준오차 ∝ 1/√n → n 4배면 오차 1/2",
+    "explanation": "표준오차는 표준편차를 √n(표본 크기의 제곱근)으로 나눈 값입니다.\n\n1. 표본 크기가 4배 → √4 = 2\n2. 분모가 2배가 되므로 표준오차는 1/2\n3. 검산: 오차를 1/2로 줄이려면 표본을 2² = 4배로 늘려야 합니다.\n\n**틀린 선지**\n- 처음의 1/4로 줄어든다: 표준오차는 표본 크기의 제곱근에 반비례합니다. 4배가 아니라 √4 = 2배만큼 줄어듭니다.\n- 처음의 2배로 커진다: 표본이 커지면 표준오차는 줄어듭니다.\n- 변하지 않는다: 표본 크기가 커지면 표본오차는 줄어듭니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "표본오차",
+      "표본크기"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-sampling-0013",
+    "certId": "social-research-analyst-2",
+    "subjectId": "survey-design",
+    "chapterId": "sampling",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "모비율을 추정하려 한다. 신뢰수준 95%(z = 1.96), 허용오차 ±5%p로 하고, 모비율을 모르므로 p = 0.5로 둘 때 필요한 최소 표본 크기는?",
+    "choices": [
+      "97명",
+      "196명",
+      "385명",
+      "1,537명"
+    ],
+    "answer": 3,
+    "oneLineConcept": "n = z²·p(1−p)/e², 소수점은 올림",
+    "explanation": "비율 추정에 필요한 표본 크기 공식은 n = z² × p × (1 − p) ÷ e² 입니다.\n\n1. z² = 1.96 × 1.96 = 3.8416\n2. p × (1 − p) = 0.5 × 0.5 = 0.25\n3. e² = 0.05 × 0.05 = 0.0025\n4. n = 3.8416 × 0.25 ÷ 0.0025 = 384.16\n5. 사람 수는 모자라면 안 되므로 올림 → 385명\n\np = 0.5일 때 p(1 − p)가 가장 커서, 모비율을 모를 때 가장 안전한(큰) 표본 크기를 줍니다.\n\n**틀린 선지**\n- 97명: 허용오차를 ±10%p(0.1)로 계산한 값입니다.\n- 196명: 1.96을 제곱하지 않고 계산한 값입니다(1.96 × 0.25 ÷ 0.0025 = 196).\n- 1,537명: 허용오차를 ±2.5%p(0.025)로 계산한 값입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "표본크기",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-sampling-0014",
+    "certId": "social-research-analyst-2",
+    "subjectId": "survey-design",
+    "chapterId": "sampling",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "허용오차를 그대로 두고 신뢰수준을 95%에서 99%로 높이면, 필요한 표본 크기는 어떻게 되는가?",
+    "choices": [
+      "작아진다",
+      "변하지 않는다",
+      "모집단 크기와 상관없이 정확히 절반이 된다",
+      "커진다"
+    ],
+    "answer": 4,
+    "oneLineConcept": "신뢰수준↑ 또는 허용오차↓ → 표본 크기↑",
+    "explanation": "표본 크기 공식에는 z²이 들어갑니다. 신뢰수준 95%의 z는 1.96, 99%의 z는 약 2.58로 커지므로 필요한 표본 크기도 커집니다. 허용오차를 줄일 때도 표본 크기는 커집니다.\n\n**틀린 선지**\n- 작아진다: 더 높은 확신을 얻으려면 더 많은 자료가 필요합니다. 표본은 줄지 않습니다.\n- 변하지 않는다: 신뢰수준이 바뀌면 공식의 z 값(1.96 → 2.58)이 바뀌어 표본 크기도 달라집니다.\n- 모집단 크기와 상관없이 정확히 절반이 된다: 표본 크기는 커지며, 절반이 되는 일은 없습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "신뢰수준",
+      "표본크기"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-sampling-0015",
+    "certId": "social-research-analyst-2",
+    "subjectId": "survey-design",
+    "chapterId": "sampling",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "모집단 전체의 평균이나 비율처럼, 모집단의 특성을 나타내는 값을 무엇이라 하는가?",
+    "choices": [
+      "모수",
+      "통계량",
+      "표본오차",
+      "표본추출틀"
+    ],
+    "answer": 1,
+    "oneLineConcept": "모수 = 모집단의 특성값 / 통계량 = 표본의 값",
+    "explanation": "모수는 보통 알 수 없는 모집단의 참값이고, 통계량은 표본으로 계산해 모수를 추정하는 값입니다. 예를 들어 전체 국민의 평균 키가 모수, 1,000명 표본의 평균 키가 통계량입니다.\n\n**틀린 선지**\n- 통계량: 표본에서 계산한 값(표본평균·표본비율)입니다. 이 값으로 모수를 추정합니다.\n- 표본오차: 통계량과 모수 사이의 차이를 말합니다.\n- 표본추출틀: 표본을 뽑는 명단입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "모수",
+      "통계량"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-sampling-0016",
+    "certId": "social-research-analyst-2",
+    "subjectId": "survey-design",
+    "chapterId": "sampling",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "같은 표본 크기에서 층화표본추출이 단순무작위표본추출보다 더 정확한 추정값을 주는 경우는?",
+    "choices": [
+      "각 층 안의 구성원들이 조사하려는 특성에서 서로 매우 다를 때",
+      "각 층 안의 구성원들이 조사하려는 특성에서 서로 비슷할 때",
+      "층을 하나만 만들 때",
+      "표본추출틀이 전혀 없을 때"
+    ],
+    "answer": 2,
+    "oneLineConcept": "층 내 동질성↑ → 층화추출의 표본오차↓",
+    "explanation": "층화표본추출에서는 층마다 따로 뽑으므로, 층과 층 사이의 차이는 표본오차에 들어가지 않습니다. 남는 것은 층 안의 차이뿐이라서, 층 안이 비슷할수록 오차가 작아지고 추정이 정확해집니다.\n\n**틀린 선지**\n- 각 층 안의 구성원들이 조사하려는 특성에서 서로 매우 다를 때: 층 안이 다양하면 층을 나눈 효과가 거의 없어 단순무작위추출과 비슷해집니다.\n- 층을 하나만 만들 때: 층이 하나면 단순무작위표본추출과 같습니다.\n- 표본추출틀이 전혀 없을 때: 층화표본추출도 각 층의 명단이 있어야 무작위로 뽑을 수 있습니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "층화표본추출",
+      "표본오차"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+]

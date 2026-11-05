@@ -1,0 +1,920 @@
+[
+  {
+    "id": "social-research-analyst-2-descriptive-inference-0001",
+    "certId": "social-research-analyst-2",
+    "subjectId": "statistics",
+    "chapterId": "descriptive-inference",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "자료 2, 3, 3, 5, 7 의 평균, 중앙값, 최빈값을 바르게 짝지은 것은?",
+    "choices": [
+      "평균 4, 중앙값 4.5, 최빈값 3",
+      "평균 3, 중앙값 3, 최빈값 4",
+      "평균 5, 중앙값 3, 최빈값 3",
+      "평균 4, 중앙값 3, 최빈값 3"
+    ],
+    "answer": 4,
+    "oneLineConcept": "중앙값 = 가운데 순서 값, 최빈값 = 가장 많이 나온 값",
+    "explanation": "1. 평균 = (2 + 3 + 3 + 5 + 7) ÷ 5 = 20 ÷ 5 = 4\n2. 중앙값 = 크기 순서로 늘어놓았을 때 가운데(3번째) 값 = 3\n3. 최빈값 = 가장 많이 나온 값 = 3 (두 번)\n\n**틀린 선지**\n- 평균 4, 중앙값 4.5, 최빈값 3: 4.5 는 가장 작은 값과 가장 큰 값의 가운데 (2 + 7) ÷ 2 입니다. 중앙값은 가운데 순서의 값입니다.\n- 평균 3, 중앙값 3, 최빈값 4: 평균과 최빈값을 서로 바꿔 적었습니다.\n- 평균 5, 중앙값 3, 최빈값 3: 평균을 잘못 계산했습니다. 합계 20 을 5 로 나누면 4 입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "중심경향",
+      "평균",
+      "중앙값"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-descriptive-inference-0002",
+    "certId": "social-research-analyst-2",
+    "subjectId": "statistics",
+    "chapterId": "descriptive-inference",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "다음 중 극단값(유난히 크거나 작은 값)의 영향을 가장 크게 받는 대푯값은?",
+    "choices": [
+      "중앙값",
+      "최빈값",
+      "산술평균",
+      "사분위수"
+    ],
+    "answer": 3,
+    "oneLineConcept": "평균은 극단값에 약하고 중앙값은 강하다",
+    "explanation": "산술평균은 모든 값을 더해 나누므로 아주 큰 값 하나만 있어도 크게 움직입니다. 예: 1, 2, 3, 4, 100 의 평균은 22 이지만 중앙값은 3 입니다.\n\n**틀린 선지**\n- 중앙값: 가운데 순서의 값이라 끝에 있는 극단값의 크기에는 거의 영향을 받지 않습니다.\n- 최빈값: 가장 많이 나온 값이라 극단값 하나로는 잘 바뀌지 않습니다.\n- 사분위수: 순서로 정하는 위치 값이라 극단값의 영향을 적게 받습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "중심경향",
+      "극단값"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-descriptive-inference-0003",
+    "certId": "social-research-analyst-2",
+    "subjectId": "statistics",
+    "chapterId": "descriptive-inference",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "오른쪽으로 꼬리가 긴(양의 왜도) 분포에서 대푯값의 크기 순서로 가장 일반적인 것은?",
+    "choices": [
+      "평균 > 중앙값 > 최빈값",
+      "최빈값 > 중앙값 > 평균",
+      "평균 = 중앙값 = 최빈값",
+      "중앙값 > 평균 > 최빈값"
+    ],
+    "answer": 1,
+    "oneLineConcept": "오른쪽 꼬리(양의 왜도): 평균 > 중앙값 > 최빈값",
+    "explanation": "오른쪽 꼬리가 길다는 것은 큰 값 몇 개가 멀리 떨어져 있다는 뜻입니다(예: 소득 분포). 평균은 이 큰 값에 끌려 오른쪽으로 가장 많이 가고, 최빈값은 봉우리(가장 많은 곳)에 남습니다. 그래서 보통 평균 > 중앙값 > 최빈값 입니다.\n\n**틀린 선지**\n- 최빈값 > 중앙값 > 평균: 왼쪽으로 꼬리가 긴(음의 왜도) 분포의 순서입니다.\n- 평균 = 중앙값 = 최빈값: 좌우 대칭(정규분포)일 때입니다.\n- 중앙값 > 평균 > 최빈값: 평균이 중앙값보다 작아지는 경우는 왼쪽 꼬리가 길 때입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "왜도",
+      "분포 모양"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-descriptive-inference-0004",
+    "certId": "social-research-analyst-2",
+    "subjectId": "statistics",
+    "chapterId": "descriptive-inference",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "자료 1, 3, 5, 7, 9 의 표본분산(n − 1 로 나눈 값)은?",
+    "choices": [
+      "8",
+      "40",
+      "10",
+      "3.16"
+    ],
+    "answer": 3,
+    "oneLineConcept": "표본분산 = 편차제곱합 ÷ (n − 1)",
+    "explanation": "1. 평균 = (1 + 3 + 5 + 7 + 9) ÷ 5 = 25 ÷ 5 = 5\n2. 편차의 제곱: (−4)² + (−2)² + 0² + 2² + 4² = 16 + 4 + 0 + 4 + 16 = 40\n3. 표본분산 = 40 ÷ (5 − 1) = 10\n\n**틀린 선지**\n- 8: 40 을 n = 5 로 나눈 값(모분산 방식)입니다. 문제는 n − 1 로 나누라고 했습니다.\n- 40: 편차 제곱의 합으로, 아직 나누지 않은 값입니다.\n- 3.16: 표본분산 10 의 제곱근, 즉 표본표준편차입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "분산",
+      "산포"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-descriptive-inference-0005",
+    "certId": "social-research-analyst-2",
+    "subjectId": "statistics",
+    "chapterId": "descriptive-inference",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "A 집단은 평균 50kg, 표준편차 5kg 이고 B 집단은 평균 200kg, 표준편차 10kg 이다. 상대적인 흩어짐(변동계수)이 더 큰 쪽은?",
+    "choices": [
+      "B (표준편차가 더 크므로)",
+      "A (변동계수 10%)",
+      "B (변동계수 5%)",
+      "두 집단이 같다"
+    ],
+    "answer": 2,
+    "oneLineConcept": "변동계수 = 표준편차 ÷ 평균 × 100%",
+    "explanation": "평균의 크기가 크게 다른 두 집단은 표준편차만으로 비교하면 안 되고, 변동계수(표준편차 ÷ 평균 × 100%)로 비교합니다.\n\n1. A: 5 ÷ 50 × 100 = 10%\n2. B: 10 ÷ 200 × 100 = 5%\n3. 10% > 5% 이므로 A 가 상대적으로 더 흩어져 있습니다.\n\n**틀린 선지**\n- B (표준편차가 더 크므로): 표준편차는 B 가 크지만 평균도 4배나 커서 상대적인 흩어짐은 더 작습니다.\n- B (변동계수 5%): B 의 변동계수 5% 는 A 의 10% 보다 작습니다.\n- 두 집단이 같다: 변동계수가 10% 와 5% 로 다릅니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "변동계수",
+      "산포"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-descriptive-inference-0006",
+    "certId": "social-research-analyst-2",
+    "subjectId": "statistics",
+    "chapterId": "descriptive-inference",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "일원분산분석의 기본 가정으로 옳지 않은 것은?",
+    "choices": [
+      "각 집단의 분산은 서로 달라야 한다",
+      "각 집단의 자료는 정규분포를 따른다",
+      "각 관측값은 서로 독립이다",
+      "각 집단의 모분산은 서로 같다"
+    ],
+    "answer": 1,
+    "oneLineConcept": "분산분석 가정 = 정규성·독립성·등분산성",
+    "explanation": "일원분산분석은 세 가지를 가정합니다.\n\n1. 정규성: 각 집단의 자료가 정규분포를 따른다\n2. 독립성: 관측값끼리 서로 영향을 주지 않는다\n3. 등분산성: 각 집단의 모분산이 같다\n\n'분산이 서로 달라야 한다'는 등분산성과 정반대이므로 틀린 설명입니다.\n\n**틀린 선지**\n- 각 집단의 자료는 정규분포를 따른다: 옳은 설명입니다(정규성).\n- 각 관측값은 서로 독립이다: 옳은 설명입니다(독립성).\n- 각 집단의 모분산은 서로 같다: 옳은 설명입니다(등분산성).",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "분산분석",
+      "가정"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "social-research-analyst-2-descriptive-inference-0007",
+    "certId": "social-research-analyst-2",
+    "subjectId": "statistics",
+    "chapterId": "descriptive-inference",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "모든 자료 값에 10 을 더하면 평균과 표준편차는 어떻게 되는가?",
+    "choices": [
+      "평균과 표준편차가 모두 10 커진다",
+      "평균은 그대로이고 표준편차가 10 커진다",
+      "평균은 10 커지고 표준편차는 10배가 된다",
+      "평균은 10 커지고 표준편차는 그대로이다"
+    ],
+    "answer": 4,
+    "oneLineConcept": "상수를 더하면 평균만 이동, 표준편차는 그대로",
+    "explanation": "모든 값을 똑같이 10 씩 옮기면 자료 전체가 통째로 이동합니다. 가운데(평균)는 10 만큼 옮겨 가지만, 값들 사이의 간격은 그대로라서 흩어진 정도(표준편차)는 변하지 않습니다.\n\n**틀린 선지**\n- 평균과 표준편차가 모두 10 커진다: 표준편차는 값들 사이의 간격이라 모든 값에 같은 수를 더해도 바뀌지 않습니다.\n- 평균은 그대로이고 표준편차가 10 커진다: 평균은 더한 만큼 커지고, 표준편차는 그대로입니다. 거꾸로 적었습니다.\n- 평균은 10 커지고 표준편차는 10배가 된다: 표준편차가 10배가 되려면 모든 값에 10 을 '곱해야' 합니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "평균",
+      "표준편차"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-descriptive-inference-0008",
+    "certId": "social-research-analyst-2",
+    "subjectId": "statistics",
+    "chapterId": "descriptive-inference",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "추정량의 기댓값이 추정하려는 모수(모집단의 참값)와 같아지는 성질은?",
+    "choices": [
+      "일치성",
+      "효율성",
+      "충분성",
+      "불편성"
+    ],
+    "answer": 4,
+    "oneLineConcept": "불편성 = 추정량의 기댓값 = 모수",
+    "explanation": "불편성은 '평균적으로 치우치지 않는다'는 성질입니다. 여러 번 표본을 뽑아 추정량을 계산하면 그 평균이 참값과 같아집니다. 표본평균은 모평균의 불편추정량이고, n − 1 로 나눈 표본분산은 모분산의 불편추정량입니다.\n\n**틀린 선지**\n- 일치성: 표본 크기가 커질수록 추정량이 참값에 점점 가까워지는 성질입니다.\n- 효율성: 불편추정량 가운데 분산이 더 작은(덜 흔들리는) 것을 고르는 기준입니다.\n- 충분성: 표본이 가진 모수에 대한 정보를 빠짐없이 담고 있는 성질입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "점추정",
+      "불편성"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-descriptive-inference-0009",
+    "certId": "social-research-analyst-2",
+    "subjectId": "statistics",
+    "chapterId": "descriptive-inference",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "모표준편차가 10 인 모집단에서 크기 100 인 표본을 뽑아 표본평균 50 을 얻었다. 모평균의 95% 신뢰구간은?",
+    "choices": [
+      "48.355 ~ 51.645",
+      "47.424 ~ 52.576",
+      "30.4 ~ 69.6",
+      "48.04 ~ 51.96"
+    ],
+    "answer": 4,
+    "oneLineConcept": "95% 신뢰구간 = x̄ ± 1.96·σ/√n",
+    "explanation": "모평균의 신뢰구간 = 표본평균 ± Z × (σ ÷ √n), 95% 일 때 Z = 1.96\n\n1. 표준오차 = 10 ÷ √100 = 10 ÷ 10 = 1\n2. 오차한계 = 1.96 × 1 = 1.96\n3. 50 − 1.96 = 48.04, 50 + 1.96 = 51.96\n\n**틀린 선지**\n- 48.355 ~ 51.645: Z = 1.645 를 쓴 90% 신뢰구간입니다.\n- 47.424 ~ 52.576: Z = 2.576 을 쓴 99% 신뢰구간입니다.\n- 30.4 ~ 69.6: 표준오차 대신 모표준편차 10 을 그대로 써서 50 ± 19.6 으로 계산했습니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "구간추정",
+      "신뢰구간"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-descriptive-inference-0010",
+    "certId": "social-research-analyst-2",
+    "subjectId": "statistics",
+    "chapterId": "descriptive-inference",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "400명을 조사한 결과 찬성 비율이 0.5 였다. 모비율의 95% 신뢰구간은?",
+    "choices": [
+      "0.459 ~ 0.541",
+      "0.451 ~ 0.549",
+      "0.436 ~ 0.564",
+      "0.475 ~ 0.525"
+    ],
+    "answer": 2,
+    "oneLineConcept": "모비율 구간 = p̂ ± Z·√{p̂(1−p̂)/n}",
+    "explanation": "모비율의 신뢰구간 = p̂ ± Z × √{p̂(1 − p̂) ÷ n}, 95% 일 때 Z = 1.96\n\n1. p̂(1 − p̂) = 0.5 × 0.5 = 0.25\n2. 0.25 ÷ 400 = 0.000625, √0.000625 = 0.025\n3. 오차한계 = 1.96 × 0.025 = 0.049\n4. 0.5 − 0.049 = 0.451, 0.5 + 0.049 = 0.549\n\n**틀린 선지**\n- 0.459 ~ 0.541: Z = 1.645 를 쓴 90% 신뢰구간(0.5 ± 0.041)입니다.\n- 0.436 ~ 0.564: Z = 2.576 을 쓴 99% 신뢰구간(0.5 ± 0.064)입니다.\n- 0.475 ~ 0.525: 표준오차 0.025 에 Z 를 곱하지 않았습니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "구간추정",
+      "모비율"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-descriptive-inference-0011",
+    "certId": "social-research-analyst-2",
+    "subjectId": "statistics",
+    "chapterId": "descriptive-inference",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "모비율을 추정하려 한다. 신뢰수준 95%, 오차한계 ±0.05 를 지키려면 필요한 최소 표본 크기는? (사전 정보가 없어 p = 0.5 로 둔다)",
+    "choices": [
+      "384명",
+      "385명",
+      "271명",
+      "664명"
+    ],
+    "answer": 2,
+    "oneLineConcept": "n = Z²·p(1−p) ÷ e², 소수점은 올림",
+    "explanation": "표본 크기 n = Z² × p(1 − p) ÷ (오차한계)²\n\n1. Z² = 1.96² = 3.8416\n2. p(1 − p) = 0.5 × 0.5 = 0.25\n3. (오차한계)² = 0.05² = 0.0025\n4. n = 3.8416 × 0.25 ÷ 0.0025 = 384.16\n5. 사람 수는 소수가 될 수 없고, 모자라면 오차한계를 못 지키므로 올림 → 385명\n\n**틀린 선지**\n- 384명: 384.16 을 버림한 값입니다. 표본 크기는 항상 올림합니다.\n- 271명: Z = 1.645(90% 신뢰수준)로 계산한 값입니다.\n- 664명: Z = 2.576(99% 신뢰수준)으로 계산한 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "표본크기"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-descriptive-inference-0012",
+    "certId": "social-research-analyst-2",
+    "subjectId": "statistics",
+    "chapterId": "descriptive-inference",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "다른 조건이 같을 때 신뢰구간의 오차한계를 절반으로 줄이려면 표본 크기를 몇 배로 늘려야 하는가?",
+    "choices": [
+      "2배",
+      "4배",
+      "√2배",
+      "8배"
+    ],
+    "answer": 2,
+    "oneLineConcept": "오차한계 ∝ 1/√n → 절반으로 하려면 n 은 4배",
+    "explanation": "오차한계는 1/√n 에 비례합니다. 오차한계를 1/2 로 줄이려면 √n 이 2배가 되어야 하고, √n 이 2배가 되려면 n 은 2² = 4배가 되어야 합니다.\n\n1. 오차한계 ∝ 1 ÷ √n\n2. 1 ÷ √(4n) = 1 ÷ (2√n) → 절반\n\n**틀린 선지**\n- 2배: 표본을 2배로 늘리면 오차한계는 1/√2 (약 0.71배)로만 줄어듭니다.\n- √2배: √2배로 늘리면 오차한계는 약 0.84배로만 줄어듭니다.\n- 8배: 8배면 오차한계가 약 0.35배가 되어 필요 이상으로 줄어듭니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "표본크기",
+      "오차한계"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-descriptive-inference-0013",
+    "certId": "social-research-analyst-2",
+    "subjectId": "statistics",
+    "chapterId": "descriptive-inference",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "가설검정에서 제1종 오류란?",
+    "choices": [
+      "귀무가설이 참인데 귀무가설을 기각하는 오류",
+      "귀무가설이 거짓인데 귀무가설을 기각하지 않는 오류",
+      "대립가설이 참일 때 대립가설을 받아들이는 것",
+      "표본을 잘못 뽑아서 생기는 오류"
+    ],
+    "answer": 1,
+    "oneLineConcept": "1종 오류 = 참인 귀무가설을 기각(α)",
+    "explanation": "제1종 오류는 '맞는 것을 틀렸다고 하는' 오류입니다. 귀무가설(차이가 없다)이 사실은 맞는데 표본 결과만 보고 버리는 경우입니다. 이 오류를 범할 확률의 허용 한계가 유의수준 α 입니다.\n\n**틀린 선지**\n- 귀무가설이 거짓인데 귀무가설을 기각하지 않는 오류: 제2종 오류(β)입니다.\n- 대립가설이 참일 때 대립가설을 받아들이는 것: 옳은 판단입니다. 이 확률을 검정력(1 − β)이라고 합니다.\n- 표본을 잘못 뽑아서 생기는 오류: 표본추출 과정의 문제로, 가설검정의 제1종 오류와는 다른 개념입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "가설검정",
+      "1종 오류"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-descriptive-inference-0014",
+    "certId": "social-research-analyst-2",
+    "subjectId": "statistics",
+    "chapterId": "descriptive-inference",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "가설검정에서 유의수준(α)의 뜻으로 옳은 것은?",
+    "choices": [
+      "제2종 오류를 범할 확률",
+      "귀무가설이 거짓일 때 이를 기각할 확률",
+      "귀무가설이 참일 확률",
+      "제1종 오류를 범할 확률의 최대 허용 한계"
+    ],
+    "answer": 4,
+    "oneLineConcept": "유의수준 α = 1종 오류의 최대 허용 확률",
+    "explanation": "유의수준 α 는 '귀무가설이 맞는데도 기각해 버리는 잘못(제1종 오류)'을 어느 정도까지 받아들일지 미리 정한 한계입니다. 보통 0.05 나 0.01 을 씁니다.\n\n**틀린 선지**\n- 제2종 오류를 범할 확률: 제2종 오류 확률은 β 로 따로 표시합니다.\n- 귀무가설이 거짓일 때 이를 기각할 확률: 검정력(1 − β)의 정의입니다.\n- 귀무가설이 참일 확률: 가설검정은 귀무가설이 참일 확률을 계산하지 않습니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "가설검정",
+      "유의수준"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-descriptive-inference-0015",
+    "certId": "social-research-analyst-2",
+    "subjectId": "statistics",
+    "chapterId": "descriptive-inference",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "유의수준 0.05 에서 가설검정을 했더니 p값이 0.03 이었다. 옳은 결론은?",
+    "choices": [
+      "귀무가설을 기각하지 않는다",
+      "대립가설이 틀렸다고 결론 내린다",
+      "표본을 늘려야만 판단할 수 있다",
+      "귀무가설을 기각한다"
+    ],
+    "answer": 4,
+    "oneLineConcept": "p값 < 유의수준 → 귀무가설 기각",
+    "explanation": "p값이 유의수준보다 작으면 귀무가설을 기각합니다.\n\n1. p값 0.03 < 유의수준 0.05\n2. 따라서 귀무가설을 기각하고, 대립가설을 받아들입니다.\n\n**틀린 선지**\n- 귀무가설을 기각하지 않는다: p값이 유의수준보다 클 때의 결론입니다.\n- 대립가설이 틀렸다고 결론 내린다: 귀무가설이 기각되었으므로 오히려 대립가설을 지지합니다.\n- 표본을 늘려야만 판단할 수 있다: p값과 유의수준만으로 이미 판단할 수 있습니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "가설검정",
+      "p값"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-descriptive-inference-0016",
+    "certId": "social-research-analyst-2",
+    "subjectId": "statistics",
+    "chapterId": "descriptive-inference",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "p값에 대한 설명으로 옳지 않은 것은?",
+    "choices": [
+      "p값은 귀무가설이 참일 확률이다",
+      "p값이 유의수준보다 작으면 귀무가설을 기각한다",
+      "귀무가설이 참이라고 할 때, 관측한 결과만큼 또는 그보다 더 극단적인 결과가 나올 확률이다",
+      "p값이 작을수록 귀무가설에 반하는 증거가 강하다"
+    ],
+    "answer": 1,
+    "oneLineConcept": "p값 = 귀무가설이 참일 때 이런 결과가 나올 확률",
+    "explanation": "p값은 '귀무가설이 맞다고 가정했을 때, 지금 같은 결과(또는 더 극단적인 결과)가 우연히 나올 확률'입니다. 귀무가설 자체가 맞을 확률이 아닙니다. 이것이 가장 흔한 오해입니다.\n\n**틀린 선지**\n- p값이 유의수준보다 작으면 귀무가설을 기각한다: 옳은 설명입니다. p값으로 판정하는 규칙입니다.\n- 귀무가설이 참이라고 할 때, 관측한 결과만큼 또는 그보다 더 극단적인 결과가 나올 확률이다: 옳은 설명입니다. p값의 정의입니다.\n- p값이 작을수록 귀무가설에 반하는 증거가 강하다: 옳은 설명입니다. 우연으로 보기 어려울수록 p값이 작습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "가설검정",
+      "p값"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "social-research-analyst-2-descriptive-inference-0017",
+    "certId": "social-research-analyst-2",
+    "subjectId": "statistics",
+    "chapterId": "descriptive-inference",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "제1종 오류 확률 α = 0.05, 제2종 오류 확률 β = 0.2 인 검정의 검정력은?",
+    "choices": [
+      "0.95",
+      "0.2",
+      "0.75",
+      "0.8"
+    ],
+    "answer": 4,
+    "oneLineConcept": "검정력 = 1 − β",
+    "explanation": "검정력은 '귀무가설이 틀렸을 때 제대로 기각할 확률'로, 1 − β 입니다.\n\n1. 검정력 = 1 − 0.2 = 0.8\n\n**틀린 선지**\n- 0.95: 1 − α 로, 귀무가설이 참일 때 올바르게 기각하지 않을 확률입니다.\n- 0.2: β, 즉 제2종 오류 확률 그 자체입니다.\n- 0.75: 1 − α − β 로 계산한 값으로, 이런 공식은 없습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "가설검정",
+      "검정력"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-descriptive-inference-0018",
+    "certId": "social-research-analyst-2",
+    "subjectId": "statistics",
+    "chapterId": "descriptive-inference",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "같은 직원 20명의 교육 전 점수와 교육 후 점수를 비교하여 교육 효과가 있는지 검정하려 한다. 가장 알맞은 방법은?",
+    "choices": [
+      "독립 2표본 t검정",
+      "대응표본 t검정",
+      "카이제곱 독립성 검정",
+      "단순회귀분석"
+    ],
+    "answer": 2,
+    "oneLineConcept": "같은 대상 전·후 비교 = 대응표본 t검정",
+    "explanation": "같은 사람을 두 번 잰 자료(전·후)는 짝이 지어져 있으므로 대응표본 t검정을 씁니다. 사람마다 '후 − 전' 차이를 구해 그 평균이 0 인지 검정합니다.\n\n**틀린 선지**\n- 독립 2표본 t검정: 서로 다른 두 집단(예: 남자와 여자)을 비교할 때 씁니다. 여기서는 같은 사람을 두 번 쟀습니다.\n- 카이제곱 독립성 검정: 두 범주형 변수(예: 성별과 찬반)가 관련 있는지 볼 때 씁니다.\n- 단순회귀분석: 한 변수로 다른 변수를 예측하는 식을 만들 때 씁니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "대응표본",
+      "t검정"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-descriptive-inference-0019",
+    "certId": "social-research-analyst-2",
+    "subjectId": "statistics",
+    "chapterId": "descriptive-inference",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "16명의 교육 전·후 점수 차이(후 − 전)의 평균이 3, 표준편차가 4 였다. 대응표본 t검정 통계량과 자유도는?",
+    "choices": [
+      "t = 3, 자유도 16",
+      "t = 3, 자유도 15",
+      "t = 12, 자유도 15",
+      "t = 0.75, 자유도 15"
+    ],
+    "answer": 2,
+    "oneLineConcept": "대응 t = d̄ ÷ (s_d/√n), 자유도 n − 1",
+    "explanation": "대응표본 t = 차이의 평균 ÷ (차이의 표준편차 ÷ √n), 자유도 = n − 1\n\n1. √16 = 4\n2. 표준오차 = 4 ÷ 4 = 1\n3. t = 3 ÷ 1 = 3\n4. 자유도 = 16 − 1 = 15\n\n**틀린 선지**\n- t = 3, 자유도 16: t 값은 맞지만 자유도는 n − 1 = 15 입니다.\n- t = 12, 자유도 15: 4 ÷ 16 = 0.25 로 나누어 제곱근을 빠뜨렸습니다.\n- t = 0.75, 자유도 15: 3 ÷ 4 로, 표준편차를 √n 으로 나누지 않았습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "대응표본",
+      "t검정",
+      "자유도"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-descriptive-inference-0020",
+    "certId": "social-research-analyst-2",
+    "subjectId": "statistics",
+    "chapterId": "descriptive-inference",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "두 모집단의 분산이 같다고 가정하고 독립 2표본 t검정을 한다. 표본 크기가 각각 12 와 10 일 때 자유도는?",
+    "choices": [
+      "22",
+      "20",
+      "21",
+      "11"
+    ],
+    "answer": 2,
+    "oneLineConcept": "독립 2표본 t 자유도 = n₁ + n₂ − 2",
+    "explanation": "등분산을 가정한 독립 2표본 t검정의 자유도는 n₁ + n₂ − 2 입니다.\n\n1. 12 + 10 − 2 = 20\n\n**틀린 선지**\n- 22: 두 표본 크기를 더하기만 했습니다. 두 집단의 평균을 하나씩 추정하므로 2 를 뺍니다.\n- 21: 1 만 뺐습니다. 집단이 둘이므로 2 를 뺍니다.\n- 11: 한 집단(12)의 자유도 12 − 1 입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "독립표본",
+      "t검정",
+      "자유도"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-descriptive-inference-0021",
+    "certId": "social-research-analyst-2",
+    "subjectId": "statistics",
+    "chapterId": "descriptive-inference",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "일원분산분석(ANOVA)을 쓰는 목적으로 가장 알맞은 것은?",
+    "choices": [
+      "세 집단 이상의 평균이 서로 같은지 비교한다",
+      "여러 집단의 분산이 같은지만 비교한다",
+      "두 범주형 변수가 서로 관련이 있는지 검정한다",
+      "두 변수 사이 직선 관계의 강도를 잰다"
+    ],
+    "answer": 1,
+    "oneLineConcept": "분산분석 = 셋 이상 집단의 평균 비교",
+    "explanation": "분산분석은 이름에 '분산'이 들어 있지만, 실제 목적은 셋 이상 집단의 '평균' 차이를 비교하는 것입니다. 집단 사이 변동과 집단 안 변동을 비교(F 값)해서 평균 차이가 우연인지 판단합니다.\n\n**틀린 선지**\n- 여러 집단의 분산이 같은지만 비교한다: 분산을 '도구'로 쓸 뿐, 목적은 평균 비교입니다.\n- 두 범주형 변수가 서로 관련이 있는지 검정한다: 교차분석(카이제곱 검정)의 목적입니다.\n- 두 변수 사이 직선 관계의 강도를 잰다: 상관분석의 목적입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "분산분석"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-descriptive-inference-0022",
+    "certId": "social-research-analyst-2",
+    "subjectId": "statistics",
+    "chapterId": "descriptive-inference",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "4개 집단에서 각각 5명씩, 모두 20명의 자료로 일원분산분석을 한다. 집단 간 자유도와 집단 내 자유도는?",
+    "choices": [
+      "집단 간 3, 집단 내 16",
+      "집단 간 4, 집단 내 16",
+      "집단 간 3, 집단 내 19",
+      "집단 간 4, 집단 내 20"
+    ],
+    "answer": 1,
+    "oneLineConcept": "집단 간 df = k−1, 집단 내 df = n−k",
+    "explanation": "일원분산분석에서 집단 수를 k, 전체 자료 수를 n 이라 하면\n\n1. 집단 간 자유도 = k − 1 = 4 − 1 = 3\n2. 집단 내 자유도 = n − k = 20 − 4 = 16\n3. 검산: 3 + 16 = 19 = 전체 자유도(n − 1)\n\n**틀린 선지**\n- 집단 간 4, 집단 내 16: 집단 간 자유도는 집단 수에서 1 을 뺍니다.\n- 집단 간 3, 집단 내 19: 19 는 전체 자유도(n − 1)입니다. 집단 내 자유도는 n − k 입니다.\n- 집단 간 4, 집단 내 20: 둘 다 1 이나 k 를 빼지 않은 값입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "분산분석",
+      "자유도"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-descriptive-inference-0023",
+    "certId": "social-research-analyst-2",
+    "subjectId": "statistics",
+    "chapterId": "descriptive-inference",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "3개 집단, 모두 33명의 자료로 일원분산분석을 하였다. 총제곱합(SST)이 100, 집단 간 제곱합(SSB)이 40 일 때 F 통계량은?",
+    "choices": [
+      "10.67",
+      "20",
+      "0.67",
+      "10"
+    ],
+    "answer": 4,
+    "oneLineConcept": "F = (SSB/(k−1)) ÷ (SSW/(n−k)), SST = SSB + SSW",
+    "explanation": "1. 집단 내 제곱합 SSW = SST − SSB = 100 − 40 = 60\n2. 집단 간 자유도 = 3 − 1 = 2, 집단 내 자유도 = 33 − 3 = 30\n3. MSB = 40 ÷ 2 = 20, MSW = 60 ÷ 30 = 2\n4. F = MSB ÷ MSW = 20 ÷ 2 = 10\n\n**틀린 선지**\n- 10.67: 집단 내 자유도를 30 이 아니라 32(n − 1)로 나눈 값입니다.\n- 20: MSB 만 구하고 MSW 로 나누지 않았습니다.\n- 0.67: 제곱합끼리(40 ÷ 60) 나눈 값입니다. 자유도로 나눈 평균제곱끼리 나누어야 합니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "분산분석",
+      "F검정"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-descriptive-inference-0024",
+    "certId": "social-research-analyst-2",
+    "subjectId": "statistics",
+    "chapterId": "descriptive-inference",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "행이 3개, 열이 4개인 교차표로 카이제곱 독립성 검정을 할 때 자유도는?",
+    "choices": [
+      "12",
+      "6",
+      "11",
+      "5"
+    ],
+    "answer": 2,
+    "oneLineConcept": "카이제곱 자유도 = (행−1)×(열−1)",
+    "explanation": "교차분석(카이제곱 독립성 검정)의 자유도 = (행의 수 − 1) × (열의 수 − 1)\n\n1. (3 − 1) × (4 − 1) = 2 × 3 = 6\n\n**틀린 선지**\n- 12: 칸의 수 3 × 4 입니다. 각각 1 씩 빼고 곱해야 합니다.\n- 11: 칸의 수에서 1 을 뺀 값입니다.\n- 5: (3 − 1) + (4 − 1) 로 더했습니다. 곱해야 합니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "교차분석",
+      "카이제곱",
+      "자유도"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-descriptive-inference-0025",
+    "certId": "social-research-analyst-2",
+    "subjectId": "statistics",
+    "chapterId": "descriptive-inference",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "100명을 조사한 교차표에서 남자 60명·여자 40명, 찬성 70명·반대 30명이었다. 성별과 찬반이 독립이라고 할 때 '남자·찬성' 칸의 기대도수는?",
+    "choices": [
+      "28",
+      "18",
+      "42",
+      "35"
+    ],
+    "answer": 3,
+    "oneLineConcept": "기대도수 = 행 합계 × 열 합계 ÷ 전체",
+    "explanation": "기대도수 = (그 행의 합계 × 그 열의 합계) ÷ 전체 합계\n\n1. 남자 합계 60, 찬성 합계 70, 전체 100\n2. 60 × 70 ÷ 100 = 42\n3. 검산: 남자 60명 중 70% 가 찬성이면 42명\n\n**틀린 선지**\n- 28: 여자·찬성 칸의 기대도수(40 × 70 ÷ 100)입니다.\n- 18: 남자·반대 칸의 기대도수(60 × 30 ÷ 100)입니다.\n- 35: 찬성 70명을 남녀 반반으로 나눈 값입니다. 남녀 인원이 달라 반으로 나누면 안 됩니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "교차분석",
+      "기대도수"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "social-research-analyst-2-descriptive-inference-0026",
+    "certId": "social-research-analyst-2",
+    "subjectId": "statistics",
+    "chapterId": "descriptive-inference",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "성별과 정당 지지가 관련이 있는지 교차분석(카이제곱 검정)을 할 때 귀무가설로 알맞은 것은?",
+    "choices": [
+      "성별과 정당 지지는 서로 관련이 있다",
+      "성별과 정당 지지는 서로 독립이다(관련이 없다)",
+      "남녀의 평균 지지율이 다르다",
+      "성별과 정당 지지의 상관계수가 1 이다"
+    ],
+    "answer": 2,
+    "oneLineConcept": "교차분석 귀무가설 = 두 변수는 독립",
+    "explanation": "귀무가설은 '차이·관련이 없다'는 쪽으로 세웁니다. 교차분석에서는 '두 변수는 서로 독립이다'가 귀무가설이고, '관련이 있다'가 대립가설입니다.\n\n**틀린 선지**\n- 성별과 정당 지지는 서로 관련이 있다: 대립가설입니다.\n- 남녀의 평균 지지율이 다르다: 평균 비교(t검정) 형식의 가설이고, 그것도 대립가설 형태입니다.\n- 성별과 정당 지지의 상관계수가 1 이다: 교차분석은 범주형 자료라 상관계수로 가설을 세우지 않습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-06",
+    "tags": [
+      "교차분석",
+      "가설"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+]
