@@ -12,17 +12,16 @@
 
 | 도메인 | 처음 기록 | 어디에 필요 |
 |---|---|---|
-| license.kacta.or.kr | 2026-11-06 | 전산회계·전산세무 시행기관 (공식 안내에 적힌 주소. 루틴이 열려던 kacpta 와 다름) |
-| kacta.or.kr | 2026-11-06 | 한국세무사회 |
-| www.kacta.or.kr | 2026-11-06 | 한국세무사회 |
 
 ## 넣었음
 
 - apps.provexam.online · docs.aws.amazon.com · fsc.go.kr · ilga.gov · www.ilga.gov · kca-coffee.org · kcsc.re.kr · kdca.go.kr · kec.or.kr · kesco.or.kr · legislature.mi.gov · mcee.go.kr · mfds.go.kr · ncleg.gov · ncs.go.kr · oah.nc.gov · open.law.go.kr · pearsonassessments.com · e-jkd.org (2026-11-06)
+- kacta.or.kr · www.kacta.or.kr (2026-11-06) — www 는 열림 확인
 - www.samilexam.com · samilexam.com (2026-11-06, 재경관리사) — www 는 열림 확인
 
 ## 넣어도 안 열림 (사이트 쪽에서 막음 — 허용 목록으로 해결 안 됨)
 
+- license.kacta.or.kr — 넣었지만 사이트가 연결을 끊음 (2026-11-06). 전산회계는 회장 확인 자료(reports/official-info/kacta-2026-11-06.md)로 진행
 - www.pqi.or.kr · pqi.or.kr — 넣었지만 사이트가 연결을 끊음 (2026-11-06)
 
 - license.kacpta.or.kr · kacpta.or.kr — 열리지 않음. 시행기관 공식 안내에 적힌 주소는 license.kacta.or.kr
