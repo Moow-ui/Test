@@ -19,6 +19,7 @@
 | 2026-11-04 | US dmv-permit-california | 4 / 1 / 5 / 0 | 2 / 0 / 0 / 5 | 15 | 65 / 65 / 0 (수정 후 통과 2) | 새벽 루틴. 5단원 모두 /concepts/{단원} 으로 합침(mergedAt), printable, basisYear 2026. 그림 보강 해당 없음 |
 | 2026-11-05 | KR electrician-craftsman | 4 / 8 / 16 / 0 | 4 / 0 / 0 / 17 | 47 | 55 / 55 / 0 | 새벽 루틴. 17단원 모두 /concepts/{단원} 으로 합침(mergedAt), printable. basisYear 확인 안 함. 그림 보강 해당 없음(다음 할 일에 없음) |
 | 2026-11-06 | US dmv-permit-texas | 15 / 9 / 5 / 0 | 5 / 0 / 0 / 5 | 15 | 49 / 49 / 0 (수정 후 통과 3) | 새벽 루틴. 5단원 모두 /concepts/{단원} 으로 합침(mergedAt), printable, basisYear 2026(DL-7 Rev. Jan 2026). 문항 laws-licensing-alcohol-0011 해설 범위 좁음 — 오류 발견 기록만. 그림 보강 해당 없음 |
+| 2026-11-07 | KR computer-literacy-2 | 1 / 6 / 7 / 0 | 0 / 0 / 0 / 9 | 27 | 41 / 41 / 0 | 새벽 루틴. 9단원 모두 /concepts/{단원} 으로 합침(mergedAt), printable. basisYear 확인 안 함. 개념 정리 1문장(chart-print) 고쳐 그 단원 verifiedAt 갱신. 그림 보강 해당 없음 |
 
 ## 순서 (80개)
 
@@ -28,7 +29,7 @@
 | 2 | US | dmv-permit-california | California DMV Permit Test | 5 | 2026-11-04 완료 |
 | 3 | KR | electrician-craftsman | 전기기능사 | 17 | 2026-11-05 완료 |
 | 4 | US | dmv-permit-texas | Texas DMV Permit Test | 5 | 2026-11-06 완료 |
-| 5 | KR | computer-literacy-2 | 컴퓨터활용능력 2급 | 9 | |
+| 5 | KR | computer-literacy-2 | 컴퓨터활용능력 2급 | 9 | 2026-11-07 완료 |
 | 6 | US | dmv-permit-florida | Florida DMV Permit Test | 5 | |
 | 7 | KR | computer-literacy-1 | 컴퓨터활용능력 1급 | 12 | |
 | 8 | US | nasm-cpt | NASM Certified Personal Trainer | 16 | |
