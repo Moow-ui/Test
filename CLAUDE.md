@@ -111,6 +111,7 @@ scripts/                   validate-data, build-data, import-questions, convert-
   오후 루틴은 켜지면 **미국 2개**를 추가한다 (2026-10-17 결정. 한국은 새벽 루틴만).
 - **종료일 없음. 중지·속도 변경은 [docs/routine-status.md](docs/routine-status.md) 로만 정한다.**
 - 애드센스 신청(2026-10-29)은 루틴과 별개 일정이다.
+- 루틴이 막힌 도메인을 [reports/domains-needed.md](reports/domains-needed.md) 에 모은다. 회장이 "추가할 도메인 모두 알려줘"라고 하면 그 파일의 "추가할 도메인" 표를 알려 준다.
 - 절차는 [docs/daily-routine.md](docs/daily-routine.md), 진행 기록은 [reports/routine-progress.md](reports/routine-progress.md)(새벽)·[reports/routine-progress-pm.md](reports/routine-progress-pm.md)(오후).
 - 배포 파일 수가 Cloudflare 한도 근처면(`npm run check:deploy-size` → "모드: 보강") 새 자격증 대신 기존 자격증의 문제를 보강한다 ([docs/daily-routine.md](docs/daily-routine.md) 0-1). 매일 업데이트는 계속된다.
 - 후보(`data/cert-queue.json`)가 한 나라에서 10개 이하로 줄면 새벽 루틴이 그 나라 후보를 10개 보충한다 ([docs/daily-routine.md](docs/daily-routine.md) 1-1).
