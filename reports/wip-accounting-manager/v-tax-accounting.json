@@ -1,0 +1,492 @@
+[
+ {
+  "n": 1,
+  "answer": 3,
+  "flag": "ok",
+  "confidence": "high",
+  "work": "부가가치세=국세·간접세; 취득세 지방세, 소득·법인세 직접세"
+ },
+ {
+  "n": 2,
+  "answer": 1,
+  "flag": "ok",
+  "confidence": "high",
+  "work": "law-checked: 국세기본법 제21조②1 소득세 과세기간 끝나는 때; 원천징수 소득세는 지급시, 상속세는 상속개시, 부가세는 과세기간 끝나는 때"
+ },
+ {
+  "n": 3,
+  "answer": 3,
+  "flag": "ok",
+  "confidence": "high",
+  "work": "국기법 제22조: 원천징수 소득세는 성립과 동시에 확정"
+ },
+ {
+  "n": 4,
+  "answer": 1,
+  "flag": "ok",
+  "confidence": "high",
+  "work": "상속세는 정부 결정으로 확정; 나머지 신고납세"
+ },
+ {
+  "n": 5,
+  "answer": 3,
+  "flag": "ok",
+  "confidence": "high",
+  "work": "law-checked: 국세기본법 제45조의2① 경정청구 법정신고기한 후 5년"
+ },
+ {
+  "n": 6,
+  "answer": 2,
+  "flag": "ok",
+  "confidence": "high",
+  "work": "law-checked: 국세기본법 제27조① 5억원 미만 5년"
+ },
+ {
+  "n": 7,
+  "answer": 1,
+  "flag": "ok",
+  "confidence": "high",
+  "work": "law-checked: 국기법 제45조 수정신고는 기한 내 신고자(·기한후신고자); 제26조의2 5년/무신고 7년 맞음"
+ },
+ {
+  "n": 8,
+  "answer": 4,
+  "flag": "ok",
+  "confidence": "high",
+  "work": "law-checked: 국세기본법 제38조② 청산인은 분배·인도한 재산가액 한도"
+ },
+ {
+  "n": 9,
+  "answer": 1,
+  "flag": "ok",
+  "confidence": "high",
+  "work": "law-checked: 법인세법 시행령 제106조①1나 임원 귀속 → 상여"
+ },
+ {
+  "n": 10,
+  "answer": 1,
+  "flag": "ok",
+  "confidence": "high",
+  "work": "law-checked: 시행령 제106조①1 단서 귀속불분명 → 대표자 상여"
+ },
+ {
+  "n": 11,
+  "answer": 1,
+  "flag": "ok",
+  "confidence": "high",
+  "work": "사내 유보 → 유보"
+ },
+ {
+  "n": 12,
+  "answer": 3,
+  "flag": "ok",
+  "confidence": "high",
+  "work": "감가상각비는 결산조정 항목"
+ },
+ {
+  "n": 13,
+  "answer": 1,
+  "flag": "ok",
+  "confidence": "high",
+  "work": "law-checked: 시행령 제106조①3나 법 제25조 기업업무추진비 → 기타사외유출"
+ },
+ {
+  "n": 14,
+  "answer": 3,
+  "flag": "ok",
+  "confidence": "high",
+  "work": "law-checked: 법인세법 제13조① 이월결손금→비과세소득→소득공제"
+ },
+ {
+  "n": 15,
+  "answer": 4,
+  "flag": "ok",
+  "confidence": "high",
+  "work": "50+12-4=58M 차가감소득, +기부금 한도초과 3M=61M 각사업연도소득, -이월결손금 8M(80% 한도 48.8M 이내)=53M"
+ },
+ {
+  "n": 16,
+  "answer": 2,
+  "flag": "ok",
+  "confidence": "high",
+  "work": "law-checked: 법인세법 제55조① (2025.12.23 개정, 2026 개시 사업연도) 2억 이하 10%, 2억~200억 20%: 2억×10%=20M + 3억×20%=60M = 80M (구 9/19%면 75M이 함정)"
+ },
+ {
+  "n": 17,
+  "answer": 4,
+  "flag": "ok",
+  "confidence": "high",
+  "work": "부가세 매출세액은 익금불산입; 채무면제이익(결손보전 안함)·자기주식처분이익·임대료는 익금"
+ },
+ {
+  "n": 18,
+  "answer": 4,
+  "flag": "ok",
+  "confidence": "high",
+  "work": "과태료는 손금불산입(법 제21조)"
+ },
+ {
+  "n": 19,
+  "answer": 3,
+  "flag": "ok",
+  "confidence": "high",
+  "work": "법인세비용 손금불산입, 기타사외유출"
+ },
+ {
+  "n": 20,
+  "answer": 4,
+  "flag": "ok",
+  "confidence": "high",
+  "work": "law-checked: 법인세법 제25조②, 시행령 제41조① 3만원 초과 적격증빙 미수취 → 전액 손금불산입"
+ },
+ {
+  "n": 21,
+  "answer": 1,
+  "flag": "ok",
+  "confidence": "high",
+  "work": "law-checked: 법인세법 제25조④ 중소 기본한도 36M + 50억×0.3%=15M → 51M; 60M-51M=9M"
+ },
+ {
+  "n": 22,
+  "answer": 2,
+  "flag": "ok",
+  "confidence": "high",
+  "work": "law-checked: 법인세법 제24조②1다 이재민 구호금품=특례기부금"
+ },
+ {
+  "n": 23,
+  "answer": 3,
+  "flag": "ok",
+  "confidence": "high",
+  "work": "law-checked: 법인세법 제24조⑤ 다음 사업연도 개시일부터 10년 이월"
+ },
+ {
+  "n": 24,
+  "answer": 2,
+  "flag": "ok",
+  "confidence": "high",
+  "work": "채권자불분명 사채이자 손금불산입: 원천징수세액분 기타사외유출, 나머지 대표자 상여 (시행령 제106조①3라)"
+ },
+ {
+  "n": 25,
+  "answer": 2,
+  "flag": "ok",
+  "confidence": "high",
+  "work": "상각범위 100M×0.2=20M, 계상 25M → 5M 손금불산입 유보"
+ },
+ {
+  "n": 26,
+  "answer": 2,
+  "flag": "ok",
+  "confidence": "high",
+  "work": "시인부족 4M, 전기부인액 3M 한도 손금산입(△유보) 3M"
+ },
+ {
+  "n": 27,
+  "answer": 3,
+  "flag": "ok",
+  "confidence": "high",
+  "work": "law-checked: 법인세법 시행령 제31조②2 엘리베이터 설치=자본적 지출 → 즉시상각의제로 감가상각 시부인 (600만원 미만 소액수선비 특례는 수선비에만, 10M이라 해당 없음)"
+ },
+ {
+  "n": 28,
+  "answer": 3,
+  "flag": "ok",
+  "confidence": "high",
+  "work": "law-checked: 법인세법 시행령 제31조④ 거래단위별 100만원 이하"
+ },
+ {
+  "n": 29,
+  "answer": 3,
+  "flag": "ok",
+  "confidence": "high",
+  "work": "업무무관자산 관리비 손금불산입(법 제27조)"
+ },
+ {
+  "n": 30,
+  "answer": 1,
+  "flag": "ok",
+  "confidence": "high",
+  "work": "이익준비금 자본전입 무상주 → 의제배당; 주발초·일반 감자차익은 제외"
+ },
+ {
+  "n": 31,
+  "answer": 2,
+  "flag": "ok",
+  "confidence": "high",
+  "work": "권리의무확정주의(법 제40조)"
+ },
+ {
+  "n": 32,
+  "answer": 4,
+  "flag": "ok",
+  "confidence": "high",
+  "work": "상품 판매 손익귀속: 인도한 날 → 2026"
+ },
+ {
+  "n": 33,
+  "answer": 3,
+  "flag": "ok",
+  "confidence": "high",
+  "work": "law-checked: 법인세법 시행령 제19조의2①1 상법상 소멸시효 완성 외상매출금; ④는 30만원 이하 요건 위반(50만원), ①②는 대손 불가"
+ },
+ {
+  "n": 34,
+  "answer": 4,
+  "flag": "ok",
+  "confidence": "high",
+  "work": "law-checked: 법인세법 시행령 제61조② 한도=500M×max(1%,0.8%)=5M; 8M-5M=3M 손금불산입 유보"
+ },
+ {
+  "n": 35,
+  "answer": 3,
+  "flag": "ok",
+  "confidence": "high",
+  "work": "law-checked: 법인세법 제13조① 비중소기업 80%"
+ },
+ {
+  "n": 36,
+  "answer": 4,
+  "flag": "ok",
+  "confidence": "medium",
+  "work": "law-checked: 법인세법 제13조① 한도 100M×80%=80M 공제 → 과세표준 20M. (10년 전 발생 결손금은 2019 이전분 10년 기한 부칙과 경계지만 \"공제 요건을 모두 갖춘\" 전제로 해소)"
+ },
+ {
+  "n": 37,
+  "answer": 3,
+  "flag": "ok",
+  "confidence": "high",
+  "work": "law-checked: 법인세법 제60조① 종료일 속하는 달 말일부터 3개월 → 3월 31일"
+ },
+ {
+  "n": 38,
+  "answer": 1,
+  "flag": "ok",
+  "confidence": "high",
+  "work": "law-checked: 법인세법 제63조②③ 중간예납기간 1~6월, 2개월 이내 → 8월 31일"
+ },
+ {
+  "n": 39,
+  "answer": 3,
+  "flag": "ok",
+  "confidence": "high",
+  "work": "law-checked: 법인세법 제60조③ 결손 법인도 신고의무 → ③ 틀림; 시행령 제60조② 2016 이후 0%, 제63조① 신설법인 최초 사업연도 제외 맞음"
+ },
+ {
+  "n": 40,
+  "answer": 2,
+  "flag": "ok",
+  "confidence": "high",
+  "work": "양도소득·퇴직소득은 분류과세"
+ },
+ {
+  "n": 41,
+  "answer": 1,
+  "flag": "ok",
+  "confidence": "high",
+  "work": "law-checked: 소득세법 제14조③6 이자·배당 합계 2천만원"
+ },
+ {
+  "n": 42,
+  "answer": 4,
+  "flag": "ok",
+  "confidence": "high",
+  "work": "law-checked: 소득세법 제14조③6 합계 18M ≤ 20M → 분리과세(14% 원천징수로 종결)"
+ },
+ {
+  "n": 43,
+  "answer": 1,
+  "flag": "ok",
+  "confidence": "medium",
+  "work": "law-checked: 소득세법 제14조③6 합계 28M > 20M → 전액 종합과세 대상(2천만원까지는 14% 세율 적용되나 합산은 전액). 2026 조특법 고배당기업 배당 분리과세 특례는 일반 상장법인 배당 전제로 무시"
+ },
+ {
+  "n": 44,
+  "answer": 1,
+  "flag": "ok",
+  "confidence": "high",
+  "work": "비영업대금의 이익 → 이자소득"
+ },
+ {
+  "n": 45,
+  "answer": 2,
+  "flag": "ok",
+  "confidence": "high",
+  "work": "law-checked: 소득세법 제129조①3 원천징수대상 사업소득 3%; 비영업대금 25%, 배당 14%, 일용근로 6%"
+ },
+ {
+  "n": 46,
+  "answer": 1,
+  "flag": "ok",
+  "confidence": "high",
+  "work": "law-checked: 소득세법 제70조① 다음 연도 5월 1일~31일"
+ },
+ {
+  "n": 47,
+  "answer": 1,
+  "flag": "ok",
+  "confidence": "high",
+  "work": "law-checked: 소득세법 제137조① 다음 연도 2월분 급여 지급 시"
+ },
+ {
+  "n": 48,
+  "answer": 2,
+  "flag": "ok",
+  "confidence": "high",
+  "work": "law-checked: 소득세법 제50조① 본인·배우자·부(60세↑)·딸(20세↓) 4명 × 150만=6M; 아들 25세 제외"
+ },
+ {
+  "n": 49,
+  "answer": 4,
+  "flag": "ok",
+  "confidence": "high",
+  "work": "law-checked: 소득세법 제50조①2 배우자도 소득금액 100만원 이하 요건 → ④ 틀림"
+ },
+ {
+  "n": 50,
+  "answer": 4,
+  "flag": "ok",
+  "confidence": "high",
+  "work": "복권 당첨금은 무조건 분리과세 기타소득 (소득세법 제14조③8)"
+ },
+ {
+  "n": 51,
+  "answer": 4,
+  "flag": "ok",
+  "confidence": "high",
+  "work": "law-checked: 소득세법 제12조2가 논·밭 작물생산 임대소득 비과세"
+ },
+ {
+  "n": 52,
+  "answer": 2,
+  "flag": "ok",
+  "confidence": "high",
+  "work": "개인의 토지 양도 → 양도소득; ①은 사업소득, ③ 과세대상 아님, ④ 퇴직소득"
+ },
+ {
+  "n": 53,
+  "answer": 1,
+  "flag": "ok",
+  "confidence": "high",
+  "work": "law-checked: 소득세법 제65조① 1.1~6.30, 11월 30일까지 징수"
+ },
+ {
+  "n": 54,
+  "answer": 2,
+  "flag": "ok",
+  "confidence": "high",
+  "work": "재화 수입자는 사업자 여부 무관 납세의무(부가가치세법 제3조); 국가·법인격없는 단체도 납세의무자 가능"
+ },
+ {
+  "n": 55,
+  "answer": 4,
+  "flag": "ok",
+  "confidence": "high",
+  "work": "제1기 1.1~6.30"
+ },
+ {
+  "n": 56,
+  "answer": 3,
+  "flag": "ok",
+  "confidence": "high",
+  "work": "law-checked: 부가가치세법 제49조① 과세기간 끝난 후 25일 → 2027.1.25"
+ },
+ {
+  "n": 57,
+  "answer": 1,
+  "flag": "ok",
+  "confidence": "high",
+  "work": "영세율=완전면세, 매입세액 환급"
+ },
+ {
+  "n": 58,
+  "answer": 2,
+  "flag": "multiple",
+  "confidence": "medium",
+  "work": "law-checked: 부가가치세법 시행령 제37조1나1) 과세되는 고속버스는 시외우등·고급고속버스뿐 → 일반 \"고속버스 여객운송\"도 면세. ②(미가공 쌀)이 의도된 답이지만 ③도 면세로 볼 수 있음. ③을 \"우등고속버스\" 또는 택시 등으로 바꿀 것"
+ },
+ {
+  "n": 59,
+  "answer": 2,
+  "flag": "ok",
+  "confidence": "high",
+  "work": "내국신용장에 의한 공급 → 영세율; 수돗물·시내버스 면세"
+ },
+ {
+  "n": 60,
+  "answer": 4,
+  "flag": "ok",
+  "confidence": "high",
+  "work": "인도되는 재화 → 인도일 10/20"
+ },
+ {
+  "n": 61,
+  "answer": 2,
+  "flag": "ok",
+  "confidence": "high",
+  "work": "law-checked: 부가가치세법 제17조② 공급시기 전 세금계산서 발급 후 7일 이내 대가 수령 → 발급일 9/1"
+ },
+ {
+  "n": 62,
+  "answer": 4,
+  "flag": "ok",
+  "confidence": "high",
+  "work": "개인적 공급(매입세액 공제분) → 공급의제, 시가 과세표준"
+ },
+ {
+  "n": 63,
+  "answer": 3,
+  "flag": "ok",
+  "confidence": "high",
+  "work": "law-checked: 부가가치세법 제29조⑤⑥ 30M-2M(에누리)-1M(파손)=27M; 판매장려금 미공제, 연체이자 불포함"
+ },
+ {
+  "n": 64,
+  "answer": 2,
+  "flag": "ok",
+  "confidence": "high",
+  "work": "law-checked: 부가가치세법 제39조①6 기업업무추진비 관련 매입세액 불공제"
+ },
+ {
+  "n": 65,
+  "answer": 4,
+  "flag": "ok",
+  "confidence": "high",
+  "work": "law-checked: 부가가치세법 제39조①7 토지 관련 매입세액 불공제; ① 제39조①8 맞음"
+ },
+ {
+  "n": 66,
+  "answer": 4,
+  "flag": "ok",
+  "confidence": "high",
+  "work": "law-checked: 부가가치세법 제45조① 5,500,000×10/110=500,000"
+ },
+ {
+  "n": 67,
+  "answer": 2,
+  "flag": "ok",
+  "confidence": "high",
+  "work": "law-checked: 부가가치세법 시행령 제109조① 1억4백만원"
+ },
+ {
+  "n": 68,
+  "answer": 1,
+  "flag": "ok",
+  "confidence": "high",
+  "work": "law-checked: 부가가치세법 제69조① 4,800만원 미만 납부의무 면제"
+ },
+ {
+  "n": 69,
+  "answer": 3,
+  "flag": "ok",
+  "confidence": "high",
+  "work": "품목·단가는 임의적 기재사항 (부가가치세법 제32조①)"
+ },
+ {
+  "n": 70,
+  "answer": 2,
+  "flag": "ok",
+  "confidence": "high",
+  "work": "당기법인세=(1,000,000+50,000-200,000)×20%=170,000; 이연법인세부채 200,000×20%=40,000; 법인세비용=210,000"
+ }
+]
