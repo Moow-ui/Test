@@ -119,6 +119,7 @@ scripts/                   validate-data, build-data, import-questions, convert-
 - 문제는 작성과 분리된 검증(다시 풀기·재계산·최신 기준 확인)을 통과한 것만 게시한다. 확신이 없는 문제는 `data/review-queue/` 에 보관.
 - 검증을 통과한 문제는 `reviewedAt` 을 적어 넣는다 (자동으로 "검수 완료" 표시).
 - **공개 기출을 구할 수 있으면 반드시 문제 구성에 넣는다** ([docs/daily-routine.md](docs/daily-routine.md) 2-1). 출제는 기출과 예상문제를 반씩 섞는다.
+- 이용 조건 때문에 기출을 싣지 못해도 최근 1회분을 읽고 출제 경향(주제·형식)을 참고해 예상문제를 쓴다. 문제지는 저장소에 넣지 않고 운영진 말로 쓴 메모만 `reports/official-info/` 에 남긴다 ([docs/daily-routine.md](docs/daily-routine.md) 2-3).
 - **그림 (2026-10-12 결정)**: `meta.json` 의 `visualNeed`(high·medium·none)에 따라 새 자격증에 그림 문제·개념 그림을 넣고 ([docs/add-cert.md](docs/add-cert.md) 4-1),
   기존 자격증은 새벽 루틴이 맨 끝에 하루 1건씩 그림을 보강한다 ([docs/daily-routine.md](docs/daily-routine.md) 2-2, 기록 [reports/image-progress.md](reports/image-progress.md)). 그림 규칙은 [docs/data-rules.md](docs/data-rules.md) 8장.
   그림을 못 만들어도 루틴 실패가 아니다.
