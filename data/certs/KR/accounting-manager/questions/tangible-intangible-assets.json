@@ -1,0 +1,433 @@
+[
+  {
+    "id": "accounting-manager-tangible-intangible-assets-0001",
+    "certId": "accounting-manager",
+    "subjectId": "financial-accounting",
+    "chapterId": "tangible-intangible-assets",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "유형자산의 취득원가에 포함되는 것은?",
+    "choices": [
+      "관리 및 기타 일반간접원가",
+      "새로운 상품을 알리는 광고·판촉 원가",
+      "설치장소를 준비하는 데 드는 원가",
+      "새로운 시설을 개설하는 데 드는 원가"
+    ],
+    "answer": 3,
+    "oneLineConcept": "취득원가 = 사용 가능한 상태로 만드는 데 직접 든 원가",
+    "explanation": "유형자산의 취득원가에는 구입가격과 함께 자산을 경영진이 의도한 방식으로 쓸 수 있는 장소·상태에 이르게 하는 데 직접 관련된 원가가 들어갑니다. 설치장소 준비원가, 운송·취급비, 설치·조립원가, 전문가 수수료 등이 그 예입니다.\n\n**틀린 선지**\n- 새 시설 개설원가: 자산과 직접 관련된 원가가 아니어서 발생 시 비용으로 처리합니다.\n- 광고·판촉 원가: 자산을 쓸 수 있게 만드는 원가가 아니므로 비용으로 처리합니다.\n- 관리·일반간접원가: 특정 자산과 직접 관련되지 않아 비용으로 처리합니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "유형자산 취득원가"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "accounting-manager-tangible-intangible-assets-0002",
+    "certId": "accounting-manager",
+    "subjectId": "financial-accounting",
+    "chapterId": "tangible-intangible-assets",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "(주)동해는 공장을 짓기 위해 낡은 건물이 있는 토지를 사서 건물을 곧바로 철거하였다. 다음 자료에서 토지의 취득원가는?\n\n- 토지와 건물 일괄 구입가격: 50,000,000원\n- 기존 건물 철거비용: 3,000,000원\n- 철거 때 나온 폐자재 판매대금: 500,000원\n- 토지 정지(평탄화) 비용: 1,000,000원\n- 토지 취득세: 2,000,000원",
+    "choices": [
+      "53,500,000원",
+      "56,000,000원",
+      "54,500,000원",
+      "55,500,000원"
+    ],
+    "answer": 4,
+    "oneLineConcept": "건물 철거 목적 일괄구입: 전액 토지 + 철거비 - 폐자재 수입",
+    "explanation": "새 건물을 짓기 위해 기존 건물을 바로 철거하면, 일괄 구입가격 전부가 토지 원가가 됩니다. 철거비용은 토지 원가에 더하고, 폐자재를 팔아 받은 돈은 뺍니다.\n\n1. 구입가격 50,000,000원\n2. 철거비용 + 3,000,000원, 폐자재 판매대금 - 500,000원\n3. 정지비용 + 1,000,000원, 취득세 + 2,000,000원\n4. 토지 원가 = 50,000,000 + 3,000,000 - 500,000 + 1,000,000 + 2,000,000 = 55,500,000원\n\n검산: 가산 6,000,000원 - 차감 500,000원 = 순증 5,500,000원\n\n**틀린 선지**\n- 56,000,000원: 폐자재 판매대금 500,000원을 빼지 않은 금액입니다.\n- 54,500,000원: 토지 정지비용 1,000,000원을 빠뜨린 금액입니다.\n- 53,500,000원: 취득세 2,000,000원을 빠뜨린 금액입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "토지 원가",
+      "일괄구입"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "accounting-manager-tangible-intangible-assets-0003",
+    "certId": "accounting-manager",
+    "subjectId": "financial-accounting",
+    "chapterId": "tangible-intangible-assets",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "(주)한라는 사용하던 기계(취득원가 1,000,000원, 감가상각누계액 400,000원, 공정가치 700,000원)를 내주고 현금 100,000원을 더 지급하여 새 기계를 얻었다. 이 교환은 상업적 실질이 있으며 내준 기계의 공정가치가 더 명확하다. 새 기계의 취득원가와 처분손익은?",
+    "choices": [
+      "취득원가 800,000원, 처분손익 없음",
+      "취득원가 700,000원, 처분손익 없음",
+      "취득원가 700,000원, 처분이익 100,000원",
+      "취득원가 800,000원, 처분이익 100,000원"
+    ],
+    "answer": 4,
+    "oneLineConcept": "상업적 실질 있는 교환: 제공자산 공정가치 + 현금 지급액",
+    "explanation": "상업적 실질이 있는 교환에서는 내준 자산의 공정가치에 추가로 지급한 현금을 더해 새 자산의 원가로 삼고, 내준 자산의 장부금액과 공정가치의 차이를 처분손익으로 인식합니다.\n\n1. 내준 기계 장부금액 = 1,000,000 - 400,000 = 600,000원\n2. 처분이익 = 공정가치 700,000 - 장부금액 600,000 = 100,000원\n3. 새 기계 원가 = 700,000 + 현금 100,000 = 800,000원\n\n검산: 내준 가치(장부 600,000 + 처분이익 100,000 + 현금 100,000) = 800,000원\n\n**틀린 선지**\n- 700,000원·처분손익 없음: 상업적 실질이 없을 때처럼 장부금액 600,000원에 현금을 더한 결과입니다.\n- 700,000원·처분이익 100,000원: 처분이익은 맞지만 추가로 지급한 현금 100,000원을 원가에 더하지 않았습니다.\n- 800,000원·처분손익 없음: 원가는 맞지만 공정가치와 장부금액의 차이 100,000원을 이익으로 인식하지 않았습니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "유형자산 교환",
+      "상업적 실질"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "accounting-manager-tangible-intangible-assets-0004",
+    "certId": "accounting-manager",
+    "subjectId": "financial-accounting",
+    "chapterId": "tangible-intangible-assets",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "차입원가 자본화에 대한 설명으로 옳은 것은?",
+    "choices": [
+      "적격자산을 취득·건설하는 데 직접 관련된 차입원가는 그 자산 원가에 포함한다.",
+      "적격자산을 다 지은 뒤에 생긴 이자도 계속 자산 원가에 포함한다.",
+      "짧은 기간에 만들어지는 재고자산도 적격자산에 해당한다.",
+      "특정 목적으로 빌린 돈을 잠시 예금해 받은 이자는 자본화 금액에 더한다."
+    ],
+    "answer": 1,
+    "oneLineConcept": "적격자산 취득·건설 관련 차입원가는 자본화",
+    "explanation": "적격자산은 의도한 용도로 쓰거나 팔 수 있는 상태가 되기까지 상당한 기간이 걸리는 자산입니다. 이런 자산을 취득·건설·생산하는 데 직접 관련된 차입원가(이자 등)는 자산 원가에 포함(자본화)합니다.\n\n**틀린 선지**\n- 일시 투자수익 가산: 특정차입금을 잠시 운용해 번 수익은 자본화할 금액에서 뺍니다.\n- 완성 후 이자 자본화: 자산이 쓸 수 있는 상태가 되면 자본화를 멈추고 이후 이자는 비용 처리합니다.\n- 단기 제조 재고자산: 상당한 기간이 걸리지 않으므로 적격자산이 아닙니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "차입원가",
+      "적격자산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "accounting-manager-tangible-intangible-assets-0005",
+    "certId": "accounting-manager",
+    "subjectId": "financial-accounting",
+    "chapterId": "tangible-intangible-assets",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "기계를 1,000,000원에 취득하였다(잔존가치 100,000원, 내용연수 4년). 연수합계법을 적용할 때 2년차 감가상각비는?",
+    "choices": [
+      "270,000원",
+      "300,000원",
+      "360,000원",
+      "225,000원"
+    ],
+    "answer": 1,
+    "oneLineConcept": "연수합계법: (원가-잔존가치) × 남은 연수 ÷ 연수합계",
+    "explanation": "연수합계법은 처음에 많이, 갈수록 적게 상각하는 방법입니다.\n\n1. 감가상각대상금액 = 1,000,000 - 100,000 = 900,000원\n2. 연수합계 = 1 + 2 + 3 + 4 = 10\n3. 1년차 = 900,000 × 4/10 = 360,000원\n4. 2년차 = 900,000 × 3/10 = 270,000원\n\n검산: 4년 합계 360,000 + 270,000 + 180,000 + 90,000 = 900,000원\n\n**틀린 선지**\n- 360,000원: 2년차가 아니라 1년차 감가상각비입니다.\n- 225,000원: 정액법(900,000 ÷ 4)으로 계산한 금액입니다.\n- 300,000원: 잔존가치를 빼지 않고 1,000,000 × 3/10으로 계산한 금액입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "감가상각",
+      "연수합계법"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "accounting-manager-tangible-intangible-assets-0006",
+    "certId": "accounting-manager",
+    "subjectId": "financial-accounting",
+    "chapterId": "tangible-intangible-assets",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "(주)금강은 20X1년 초에 토지를 1,000,000원에 취득하고 재평가모형을 적용한다. 공정가치는 20X1년 말 1,200,000원, 20X2년 말 900,000원이다. 20X2년 당기손익에 미치는 영향은?",
+    "choices": [
+      "200,000원 손실",
+      "300,000원 손실",
+      "100,000원 손실",
+      "영향 없음"
+    ],
+    "answer": 3,
+    "oneLineConcept": "재평가 감소: 재평가잉여금 먼저 상계, 초과분만 당기손실",
+    "explanation": "재평가로 장부금액이 줄면 먼저 그 자산에 쌓인 재평가잉여금(기타포괄손익)을 줄이고, 잉여금을 넘는 부분만 당기손실로 인식합니다.\n\n1. 20X1년 말: 1,200,000 - 1,000,000 = 200,000원 증가 → 재평가잉여금 200,000원\n2. 20X2년 말: 900,000 - 1,200,000 = 300,000원 감소\n3. 재평가잉여금 200,000원을 먼저 줄임(기타포괄손실)\n4. 나머지 100,000원 → 당기손실\n\n검산: 200,000 + 100,000 = 감소액 300,000원\n\n**틀린 선지**\n- 300,000원 손실: 남아 있던 재평가잉여금 200,000원을 먼저 줄이지 않고 감소액 전부를 당기손실로 본 금액입니다.\n- 200,000원 손실: 재평가잉여금으로 줄이는 부분을 당기손실로 착각한 금액입니다.\n- 영향 없음: 감소액이 잉여금 잔액을 넘으므로 넘는 100,000원은 당기손실입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "재평가모형",
+      "재평가잉여금"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "accounting-manager-tangible-intangible-assets-0007",
+    "certId": "accounting-manager",
+    "subjectId": "financial-accounting",
+    "chapterId": "tangible-intangible-assets",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "(주)태백은 20X1년 초에 토지를 1,000,000원에 취득하고 재평가모형을 적용한다. 공정가치는 20X1년 말 800,000원, 20X2년 말 1,100,000원이다. 20X2년에 인식할 기타포괄이익(재평가잉여금)은?",
+    "choices": [
+      "300,000원",
+      "0원",
+      "100,000원",
+      "200,000원"
+    ],
+    "answer": 3,
+    "oneLineConcept": "재평가 증가: 이전 당기손실 환입 먼저, 나머지만 OCI",
+    "explanation": "재평가로 장부금액이 늘어날 때, 과거에 같은 자산의 재평가 감소를 당기손실로 인식했다면 그 금액만큼은 먼저 당기이익으로 되돌리고(환입) 나머지만 기타포괄이익으로 인식합니다.\n\n1. 20X1년 말: 800,000 - 1,000,000 = 200,000원 감소 → 당기손실 200,000원\n2. 20X2년 말: 1,100,000 - 800,000 = 300,000원 증가\n3. 이전 당기손실 200,000원 → 당기이익으로 환입\n4. 나머지 100,000원 → 기타포괄이익(재평가잉여금)\n\n검산: 당기이익 200,000 + 기타포괄이익 100,000 = 증가액 300,000원\n\n**틀린 선지**\n- 300,000원: 이전에 당기손실로 인식한 200,000원을 먼저 당기이익으로 환입하지 않은 금액입니다.\n- 200,000원: 당기이익으로 환입하는 금액이며 기타포괄이익이 아닙니다.\n- 0원: 증가액이 이전 손실을 넘으므로 넘는 100,000원은 기타포괄이익입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "재평가모형",
+      "재평가이익"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "accounting-manager-tangible-intangible-assets-0008",
+    "certId": "accounting-manager",
+    "subjectId": "financial-accounting",
+    "chapterId": "tangible-intangible-assets",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "기계장치의 장부금액은 5,000,000원이다. 손상 징후가 있어 검토한 결과 순공정가치(공정가치 - 처분부대원가)는 3,200,000원, 사용가치는 3,500,000원이다. 인식할 손상차손은?",
+    "choices": [
+      "1,800,000원",
+      "1,500,000원",
+      "300,000원",
+      "3,500,000원"
+    ],
+    "answer": 2,
+    "oneLineConcept": "회수가능액 = max(순공정가치, 사용가치)",
+    "explanation": "손상차손은 장부금액이 회수가능액보다 클 때 그 차이입니다. 회수가능액은 순공정가치와 사용가치 중 '큰' 금액입니다.\n\n1. 회수가능액 = max(3,200,000, 3,500,000) = 3,500,000원\n2. 손상차손 = 5,000,000 - 3,500,000 = 1,500,000원\n\n검산: 손상 후 장부금액 3,500,000원 = 회수가능액\n\n**틀린 선지**\n- 1,800,000원: 순공정가치와 사용가치 중 작은 금액(3,200,000원)을 회수가능액으로 본 결과입니다.\n- 300,000원: 순공정가치와 사용가치의 차이일 뿐 손상차손이 아닙니다.\n- 3,500,000원: 손상차손이 아니라 손상 후 장부금액(회수가능액)입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "자산손상",
+      "회수가능액"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "accounting-manager-tangible-intangible-assets-0009",
+    "certId": "accounting-manager",
+    "subjectId": "financial-accounting",
+    "chapterId": "tangible-intangible-assets",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "회사 내부에서 진행하는 신제품 프로젝트 가운데 '연구단계'에서 생긴 지출은 어떻게 처리하는가?",
+    "choices": [
+      "발생한 기간의 비용으로 처리한다.",
+      "기술적 실현가능성 등 요건을 갖추면 무형자산으로 인식한다.",
+      "무형자산으로 인식한 뒤 내용연수 동안 상각한다.",
+      "개발단계로 넘어가면 소급하여 무형자산으로 바꾼다."
+    ],
+    "answer": 1,
+    "oneLineConcept": "연구단계 지출 = 항상 비용, 개발단계는 요건 충족 시 자산",
+    "explanation": "연구단계에서는 미래 경제적효익을 가져올 무형자산이 있다는 것을 보여 줄 수 없으므로 지출을 모두 발생 시점에 비용으로 처리합니다. 연구단계와 개발단계를 구분할 수 없을 때에도 연구단계에서 생긴 것으로 봅니다.\n\n**틀린 선지**\n- 요건을 갖추면 무형자산: 기술적 실현가능성 등 요건을 따지는 것은 개발단계 지출에 대한 규정입니다.\n- 무형자산 인식 후 상각: 연구단계 지출은 자산이 되지 않습니다.\n- 개발단계로 넘어가면 소급: 이미 비용으로 처리한 지출을 나중에 자산으로 되돌리지 않습니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "무형자산",
+      "연구단계"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "accounting-manager-tangible-intangible-assets-0010",
+    "certId": "accounting-manager",
+    "subjectId": "financial-accounting",
+    "chapterId": "tangible-intangible-assets",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "내용연수가 비한정인(정해진 한계가 없는) 무형자산에 대한 설명으로 옳은 것은?",
+    "choices": [
+      "5년 안에 모두 상각한다.",
+      "상각하지 않으며 손상검사도 하지 않는다.",
+      "상각하지 않고, 매년 그리고 손상 징후가 있을 때 손상검사를 한다.",
+      "최대 20년 동안 정액법으로 상각한다."
+    ],
+    "answer": 3,
+    "oneLineConcept": "비한정 내용연수 무형자산: 상각 안 함 + 매년 손상검사",
+    "explanation": "내용연수가 비한정이라는 것은 효익이 들어오는 기간에 정해진 끝이 보이지 않는다는 뜻입니다. 이런 무형자산은 상각하지 않는 대신 매년, 그리고 손상 징후가 있을 때마다 손상검사를 합니다. 또 매 기간 여전히 비한정인지 다시 검토합니다.\n\n**틀린 선지**\n- 상각도 손상검사도 안 함: 상각은 하지 않지만 손상검사는 매년 해야 합니다.\n- 최대 20년 정액 상각: K-IFRS에는 이런 상각 기간 상한이 없으며, 비한정이면 상각하지 않습니다.\n- 5년 안에 상각: 기준서에 없는 내용입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "무형자산",
+      "비한정 내용연수"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "accounting-manager-tangible-intangible-assets-0011",
+    "certId": "accounting-manager",
+    "subjectId": "financial-accounting",
+    "chapterId": "tangible-intangible-assets",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "투자부동산에 공정가치모형을 적용할 때의 설명으로 옳은 것은?",
+    "choices": [
+      "공정가치 변동으로 생긴 손익은 당기손익으로 인식한다.",
+      "공정가치 변동으로 생긴 손익은 기타포괄손익으로 인식한다.",
+      "회사가 직접 쓰는 사옥도 투자부동산으로 분류할 수 있다.",
+      "공정가치로 평가하면서 감가상각도 함께 한다."
+    ],
+    "answer": 1,
+    "oneLineConcept": "투자부동산 공정가치모형: 평가손익 당기손익, 감가상각 없음",
+    "explanation": "투자부동산(임대수익이나 시세차익을 목적으로 보유하는 부동산)에 공정가치모형을 쓰면 매 보고기간말 공정가치로 평가하고, 그 변동액을 당기손익에 반영합니다. 공정가치로 평가하므로 감가상각은 하지 않습니다.\n\n**틀린 선지**\n- 기타포괄손익으로 인식: 유형자산 재평가모형과 헷갈린 것으로, 투자부동산 공정가치 변동은 당기손익입니다.\n- 감가상각도 함께: 공정가치모형에서는 감가상각을 하지 않습니다.\n- 자가사용 사옥: 회사가 직접 쓰는 부동산은 유형자산이며 투자부동산이 아닙니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "투자부동산",
+      "공정가치모형"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "accounting-manager-tangible-intangible-assets-0012",
+    "certId": "accounting-manager",
+    "subjectId": "financial-accounting",
+    "chapterId": "tangible-intangible-assets",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "(주)소백은 20X1년 초 임대 목적으로 건물을 10,000,000원에 취득하였다(내용연수 10년, 잔존가치 0원, 정액법). 20X1년 말 공정가치는 9,500,000원이다. 공정가치모형을 적용할 때 20X1년 당기순이익에 미치는 영향은?",
+    "choices": [
+      "500,000원 감소",
+      "1,500,000원 감소",
+      "1,000,000원 감소",
+      "영향 없음"
+    ],
+    "answer": 1,
+    "oneLineConcept": "투자부동산 공정가치모형: 공정가치 하락분만 당기손실",
+    "explanation": "공정가치모형에서는 감가상각을 하지 않고 공정가치 변동만 당기손익에 반영합니다.\n\n1. 공정가치 변동 = 9,500,000 - 10,000,000 = -500,000원\n2. 감가상각비 = 0원(공정가치모형)\n3. 당기순이익 영향 = 500,000원 감소\n\n검산: 원가모형이었다면 감가상각비 1,000,000원 감소로, 두 모형의 차이는 500,000원\n\n**틀린 선지**\n- 1,000,000원 감소: 원가모형을 적용해 감가상각비(10,000,000 ÷ 10)를 인식한 결과입니다.\n- 1,500,000원 감소: 공정가치모형에서 하지 않는 감가상각까지 함께 반영한 금액입니다.\n- 영향 없음: 평가손익을 기타포괄손익으로 본 결과이며, 투자부동산은 당기손익에 반영합니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "투자부동산",
+      "공정가치모형"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+]

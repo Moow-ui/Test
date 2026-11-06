@@ -1,0 +1,389 @@
+[
+  {
+    "id": "accounting-manager-financial-instruments-0001",
+    "certId": "accounting-manager",
+    "subjectId": "financial-accounting",
+    "chapterId": "financial-instruments",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "계약상 현금흐름을 받는 것이 목적인 사업모형으로 보유하고, 계약 조건상 원리금만으로 이루어진 현금흐름이 생기는 채무상품(채권)은 원칙적으로 어떻게 분류하는가?",
+    "choices": [
+      "관계기업투자",
+      "당기손익-공정가치 측정 금융자산",
+      "기타포괄손익-공정가치 측정 금융자산",
+      "상각후원가 측정 금융자산"
+    ],
+    "answer": 4,
+    "oneLineConcept": "수취 목적 + 원리금만 = 상각후원가(AC)",
+    "explanation": "K-IFRS 1109는 사업모형과 현금흐름 특성 두 가지로 금융자산을 분류합니다. 원리금을 받는 것만이 목적인 사업모형이고 현금흐름이 원금과 이자로만 이루어져 있으면 상각후원가로 측정합니다.\n\n**틀린 선지**\n- 기타포괄손익-공정가치: 원리금 수취와 '매도' 둘 다가 목적인 사업모형일 때의 분류입니다.\n- 당기손익-공정가치: 단기매매 등 위 두 사업모형에 해당하지 않을 때의 분류입니다.\n- 관계기업투자: 다른 회사에 유의적인 영향력을 행사하는 지분상품에 쓰는 분류로, 채무상품과 관계없습니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "금융자산 분류",
+      "상각후원가"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "accounting-manager-financial-instruments-0002",
+    "certId": "accounting-manager",
+    "subjectId": "financial-accounting",
+    "chapterId": "financial-instruments",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "단기간 시세 차익을 얻으려고 취득한 상장회사 주식은 어떻게 분류하는가?",
+    "choices": [
+      "당기손익-공정가치 측정 금융자산",
+      "기타포괄손익-공정가치 측정으로 지정한 금융자산",
+      "관계기업투자(지분법)",
+      "상각후원가 측정 금융자산"
+    ],
+    "answer": 1,
+    "oneLineConcept": "단기매매 지분상품 = 당기손익-공정가치(FVPL)",
+    "explanation": "주식(지분상품)은 원리금만 받는 상품이 아니므로 상각후원가로 분류할 수 없고, 원칙적으로 당기손익-공정가치로 측정합니다. 단기매매 목적이 아닌 지분상품에 한해 처음 인식할 때 기타포괄손익-공정가치로 지정할 수 있으며, 단기매매 목적이면 이 지정을 쓸 수 없습니다.\n\n**틀린 선지**\n- FVOCI 지정: 단기매매 목적이 아닌 지분상품만 지정할 수 있습니다.\n- 상각후원가: 원리금만 받는 채무상품에 쓰는 분류로, 주식에는 쓸 수 없습니다.\n- 관계기업투자: 유의적인 영향력(보통 20% 이상 보유)이 있을 때의 분류이며, 단기 차익 목적과 맞지 않습니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "금융자산 분류",
+      "FVPL"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "accounting-manager-financial-instruments-0003",
+    "certId": "accounting-manager",
+    "subjectId": "financial-accounting",
+    "chapterId": "financial-instruments",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "기타포괄손익-공정가치 측정으로 지정한 지분상품(주식)에 대한 설명으로 옳은 것은?",
+    "choices": [
+      "처음 지정한 뒤에도 언제든지 당기손익-공정가치로 바꿀 수 있다.",
+      "처분하면 그동안 쌓인 평가손익을 당기손익으로 재분류한다.",
+      "처분하더라도 그동안 쌓인 평가손익을 당기손익으로 재분류하지 않는다.",
+      "공정가치가 떨어지면 손상차손을 당기손익으로 인식한다."
+    ],
+    "answer": 3,
+    "oneLineConcept": "FVOCI 지정 지분상품: 재순환 없음, 손상 없음, 지정 취소 불가",
+    "explanation": "지분상품을 기타포괄손익-공정가치로 지정하면 공정가치 변동을 기타포괄손익으로 인식하고, 처분하더라도 누적액을 당기손익으로 옮기지 않습니다(필요하면 자본 안에서 이익잉여금으로 대체). 이 지정은 처음 인식할 때 하며 나중에 취소할 수 없습니다.\n\n**틀린 선지**\n- 처분 시 당기손익 재분류: 채무상품(채권) FVOCI에 해당하는 처리입니다.\n- 손상차손 인식: FVOCI 지정 지분상품은 손상 규정을 적용하지 않습니다.\n- 언제든지 변경: 최초 인식 때의 지정은 취소할 수 없습니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "FVOCI 지분상품",
+      "재분류 금지"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "accounting-manager-financial-instruments-0004",
+    "certId": "accounting-manager",
+    "subjectId": "financial-accounting",
+    "chapterId": "financial-instruments",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "(주)가람은 20X1년 1월 1일 액면 1,000,000원, 표시이자율 연 8%(매년 말 지급), 만기 3년인 사채를 950,263원에 취득하여 상각후원가로 분류하였다. 유효이자율은 연 10%이다. 20X1년 말 이 금융자산의 상각후원가는? (원 미만 반올림)",
+    "choices": [
+      "950,263원",
+      "965,289원",
+      "1,000,000원",
+      "935,237원"
+    ],
+    "answer": 2,
+    "oneLineConcept": "상각후원가 = 기초 장부금액 + (유효이자 - 표시이자)",
+    "explanation": "유효이자율법에서는 장부금액에 유효이자율을 곱해 이자수익을 계산하고, 실제 받는 표시이자와의 차이만큼 장부금액을 늘립니다(할인 취득이므로 증가).\n\n1. 이자수익 = 950,263 × 10% = 95,026원\n2. 표시이자 = 1,000,000 × 8% = 80,000원\n3. 할인 상각액 = 95,026 - 80,000 = 15,026원\n4. 20X1년 말 상각후원가 = 950,263 + 15,026 = 965,289원\n\n검산: 만기까지 3년 동안 장부금액이 액면 1,000,000원에 다가가며 증가\n\n**틀린 선지**\n- 935,237원: 상각액 15,026원을 더하지 않고 뺀 금액입니다. 할인 취득이면 장부금액이 늘어납니다.\n- 950,263원: 취득원가 그대로로, 유효이자율법 상각을 반영하지 않았습니다.\n- 1,000,000원: 액면금액이며, 만기가 되어야 이 금액에 이릅니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "유효이자율법",
+      "상각후원가"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "accounting-manager-financial-instruments-0005",
+    "certId": "accounting-manager",
+    "subjectId": "financial-accounting",
+    "chapterId": "financial-instruments",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "(주)가람은 20X1년 1월 1일 액면 1,000,000원, 표시이자율 연 8%(매년 말 지급), 만기 3년인 사채를 950,263원(유효이자율 연 10%)에 취득하여 상각후원가로 분류하였다. 20X2년에 인식할 이자수익은? (원 미만 반올림)",
+    "choices": [
+      "98,182원",
+      "95,026원",
+      "96,529원",
+      "80,000원"
+    ],
+    "answer": 3,
+    "oneLineConcept": "이자수익 = 기초 상각후원가 × 유효이자율 (매년 증가)",
+    "explanation": "할인 취득한 채권은 장부금액이 매년 늘어나므로 이자수익도 매년 늘어납니다.\n\n1. 20X1년 이자수익 = 950,263 × 10% = 95,026원\n2. 20X1년 말 장부금액 = 950,263 + (95,026 - 80,000) = 965,289원\n3. 20X2년 이자수익 = 965,289 × 10% = 96,529원\n\n검산: 20X2년 말 장부금액 981,818원 × 10% = 98,182원(20X3년), 981,818 + 98,182 - 80,000 = 1,000,000원으로 액면과 일치\n\n**틀린 선지**\n- 95,026원: 20X2년이 아니라 20X1년 이자수익입니다.\n- 98,182원: 20X3년(마지막 해) 이자수익입니다.\n- 80,000원: 실제로 받는 표시이자이며, 유효이자율법의 이자수익이 아닙니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "유효이자율법",
+      "이자수익"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "accounting-manager-financial-instruments-0006",
+    "certId": "accounting-manager",
+    "subjectId": "financial-accounting",
+    "chapterId": "financial-instruments",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "사채를 할인발행(액면보다 싸게 발행)한 회사 입장에서의 설명으로 옳지 않은 것은?",
+    "choices": [
+      "발행 당시 시장이자율이 표시이자율보다 높을 때 생긴다.",
+      "유효이자율법으로 상각하면 매년 이자비용이 늘어난다.",
+      "만기까지 인식할 이자비용 합계는 표시이자 합계보다 작다.",
+      "사채의 장부금액은 만기로 갈수록 늘어나 액면금액에 가까워진다."
+    ],
+    "answer": 3,
+    "oneLineConcept": "할인발행: 총이자비용 = 표시이자 합계 + 할인액",
+    "explanation": "할인발행하면 처음에 받은 돈이 액면보다 적지만 만기에는 액면을 갚아야 합니다. 이 차이(할인액)가 기간에 걸쳐 이자비용으로 더해지므로, 총이자비용은 표시이자 합계보다 할인액만큼 '큽니다'.\n\n**틀린 선지**\n- 시장이자율 > 표시이자율: 투자자가 더 높은 수익을 원하므로 싸게 발행된다는 옳은 설명입니다.\n- 이자비용 매년 증가: 장부금액이 늘어나므로 유효이자(장부금액 × 유효이자율)도 늘어난다는 옳은 설명입니다.\n- 장부금액 증가: 할인액이 상각되며 액면에 다가간다는 옳은 설명입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "사채",
+      "할인발행"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "accounting-manager-financial-instruments-0007",
+    "certId": "accounting-manager",
+    "subjectId": "financial-accounting",
+    "chapterId": "financial-instruments",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "(주)나래는 20X1년 1월 1일 액면 1,000,000원, 표시이자율 연 10%(매년 말 지급), 만기 3년인 사채를 발행하였다. 발행 당시 시장이자율은 연 8%이고 발행금액은 1,051,542원이다. 20X1년 말 사채의 장부금액은? (원 미만 반올림)",
+    "choices": [
+      "1,067,419원",
+      "1,051,542원",
+      "1,035,665원",
+      "1,000,000원"
+    ],
+    "answer": 3,
+    "oneLineConcept": "할증발행: 장부금액 = 기초 - (표시이자 - 유효이자)",
+    "explanation": "할증발행(액면보다 비싸게 발행)한 사채는 유효이자가 표시이자보다 작고, 그 차이만큼 장부금액이 매년 줄어듭니다.\n\n1. 이자비용 = 1,051,542 × 8% = 84,123원\n2. 표시이자 = 1,000,000 × 10% = 100,000원\n3. 할증 상각액 = 100,000 - 84,123 = 15,877원\n4. 20X1년 말 장부금액 = 1,051,542 - 15,877 = 1,035,665원\n\n검산: 장부금액이 줄어 만기에 액면 1,000,000원에 가까워짐\n\n**틀린 선지**\n- 1,067,419원: 할증 상각액을 빼지 않고 더한 금액입니다.\n- 1,051,542원: 발행금액 그대로로, 상각을 반영하지 않았습니다.\n- 1,000,000원: 액면금액으로, 만기에야 이 금액이 됩니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "사채",
+      "할증발행",
+      "유효이자율법"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "accounting-manager-financial-instruments-0008",
+    "certId": "accounting-manager",
+    "subjectId": "financial-accounting",
+    "chapterId": "financial-instruments",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "최초 인식 뒤 신용위험이 유의적으로 늘지 않은 금융자산(1단계)에 대해 인식하는 손실충당금은?",
+    "choices": [
+      "실제로 발생한 손실만",
+      "손실충당금을 인식하지 않음",
+      "전체기간 기대신용손실",
+      "12개월 기대신용손실"
+    ],
+    "answer": 4,
+    "oneLineConcept": "1단계 = 12개월 기대신용손실, 2·3단계 = 전체기간",
+    "explanation": "K-IFRS 1109는 기대신용손실(앞으로 떼일 것으로 예상되는 금액)로 손실충당금을 쌓습니다. 신용위험이 유의적으로 늘지 않았으면 앞으로 12개월 안에 생길 수 있는 부도로 인한 손실(12개월 기대신용손실)만 인식합니다.\n\n**틀린 선지**\n- 전체기간 기대신용손실: 신용위험이 유의적으로 늘었거나(2단계) 신용이 손상된(3단계) 경우에 인식합니다.\n- 실제 발생 손실만: 손실이 생긴 뒤에야 인식하던 예전 방식으로, 현재 기준서와 맞지 않습니다.\n- 인식하지 않음: 위험이 늘지 않았어도 12개월 기대신용손실은 인식합니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "기대신용손실",
+      "손상 3단계"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "accounting-manager-financial-instruments-0009",
+    "certId": "accounting-manager",
+    "subjectId": "financial-accounting",
+    "chapterId": "financial-instruments",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "신용이 손상된 금융자산(3단계)의 이자수익은 어떻게 계산하는가?",
+    "choices": [
+      "신용이 손상되면 이자수익을 인식하지 않는다",
+      "총장부금액 × 유효이자율",
+      "액면금액 × 표시이자율",
+      "상각후원가(총장부금액 - 손실충당금) × 유효이자율"
+    ],
+    "answer": 4,
+    "oneLineConcept": "3단계 이자수익 = 손실충당금 차감 후 금액 × 유효이자율",
+    "explanation": "1·2단계에서는 손실충당금을 빼기 전 총장부금액에 유효이자율을 곱하지만, 신용이 손상된 3단계부터는 손실충당금을 뺀 상각후원가에 유효이자율을 곱해 이자수익을 계산합니다.\n\n**틀린 선지**\n- 총장부금액 × 유효이자율: 1단계와 2단계에서 쓰는 계산 방법입니다.\n- 이자수익 미인식: 3단계에서도 순장부금액 기준으로 이자수익을 인식합니다.\n- 액면 × 표시이자율: 유효이자율법이 아니며, 실제 받은 이자와도 다를 수 있습니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "기대신용손실",
+      "이자수익"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "accounting-manager-financial-instruments-0010",
+    "certId": "accounting-manager",
+    "subjectId": "financial-accounting",
+    "chapterId": "financial-instruments",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "(주)바다는 고객에게서 받은 어음을 은행에서 할인받았다. 어음이 부도나면 은행이 (주)바다에 돈을 돌려받을 수 있는 조건(상환청구권)이어서, 어음의 위험과 보상 대부분을 (주)바다가 그대로 가지고 있다. 올바른 회계처리는?",
+    "choices": [
+      "어음을 계속 인식하면서 할인료를 어음 장부금액에 더한다.",
+      "어음을 계속 자산으로 인식하고, 받은 현금은 차입금(금융부채)으로 인식한다.",
+      "어음을 제거하고 상환 가능성은 주석으로만 공시한다.",
+      "어음(매출채권)을 제거하고 할인료를 처분손실로 인식한다."
+    ],
+    "answer": 2,
+    "oneLineConcept": "위험·보상 대부분 보유 → 제거 불가, 담보 차입으로 처리",
+    "explanation": "금융자산은 소유에 따른 위험과 보상 대부분을 넘겼을 때 제거합니다. 상환청구권이 있어 위험을 대부분 그대로 지고 있으면 어음을 계속 자산으로 두고, 은행에서 받은 돈은 빌린 돈(차입금)으로 봅니다.\n\n**틀린 선지**\n- 제거 후 처분손실: 위험과 보상 대부분을 넘긴 경우의 처리입니다.\n- 제거 후 주석 공시: 위험을 대부분 보유하므로 제거 요건을 충족하지 못합니다.\n- 할인료를 어음에 가산: 할인료는 이자비용 성격이며 자산 금액을 늘리지 않습니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "금융자산 제거",
+      "어음 할인"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "accounting-manager-financial-instruments-0011",
+    "certId": "accounting-manager",
+    "subjectId": "financial-accounting",
+    "chapterId": "financial-instruments",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "(주)하늘은 20X1년 중 상장주식 100주를 주당 10,000원에 사면서 거래수수료 20,000원을 지급하고 당기손익-공정가치 측정 금융자산으로 분류하였다. 20X1년 말 주가는 11,000원이다. 이 주식이 20X1년 당기순이익에 미치는 영향은?",
+    "choices": [
+      "100,000원 증가",
+      "120,000원 증가",
+      "80,000원 증가",
+      "영향 없음"
+    ],
+    "answer": 3,
+    "oneLineConcept": "FVPL 거래원가는 즉시 비용, 평가이익은 당기손익",
+    "explanation": "당기손익-공정가치 금융자산은 거래원가를 취득원가에 넣지 않고 바로 비용으로 처리합니다.\n\n1. 취득원가 = 100주 × 10,000원 = 1,000,000원, 수수료 20,000원은 비용\n2. 기말 공정가치 = 100주 × 11,000원 = 1,100,000원\n3. 평가이익 = 1,100,000 - 1,000,000 = 100,000원\n4. 당기순이익 영향 = 100,000 - 20,000 = 80,000원 증가\n\n검산: 총 지출 1,020,000원 → 기말 가치 1,100,000원, 차이 80,000원\n\n**틀린 선지**\n- 100,000원 증가: 평가이익만 보고 수수료 비용 20,000원을 빠뜨린 금액입니다.\n- 영향 없음: 기타포괄손익-공정가치로 분류했을 때처럼 평가손익을 당기손익에서 뺀 결과입니다.\n- 120,000원 증가: 수수료를 비용이 아니라 이익으로 더한 금액입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "FVPL",
+      "거래원가"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  }
+]

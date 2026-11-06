@@ -1,0 +1,293 @@
+[
+  {
+    "id": "accounting-manager-corporate-tax-structure-0001",
+    "certId": "accounting-manager",
+    "subjectId": "tax-accounting",
+    "chapterId": "corporate-tax-structure",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "세무조정으로 익금에 산입한 금액이 회사 밖으로 나가 그 법인의 임원에게 귀속된 것이 확인되었다. 소득처분은?",
+    "choices": [
+      "상여",
+      "배당",
+      "기타사외유출",
+      "유보"
+    ],
+    "answer": 1,
+    "oneLineConcept": "사외유출 귀속자가 임원·직원이면 상여",
+    "explanation": "익금산입액이 회사 밖으로 나간 경우(사외유출)에는 받은 사람에 따라 처분합니다. 임원이나 직원이 받았으면 '상여'로 처분하고, 그 사람의 근로소득으로 보아 소득세를 과세합니다.\n\n**틀린 선지**\n- 배당: 귀속자가 임원·직원이 아닌 주주일 때의 처분입니다.\n- 기타사외유출: 귀속자가 법인이나 사업을 하는 개인이고 그 소득이 그쪽 소득으로 이미 과세될 때의 처분입니다.\n- 유보: 금액이 회사 밖으로 나가지 않고 회사 안에 남아 있을 때의 처분입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "소득처분",
+      "상여"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "accounting-manager-corporate-tax-structure-0002",
+    "certId": "accounting-manager",
+    "subjectId": "tax-accounting",
+    "chapterId": "corporate-tax-structure",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "세무조사에서 매출 누락 1,000만원이 확인되어 익금에 산입하였으나, 그 돈이 누구에게 돌아갔는지 밝혀지지 않았다. 소득처분은?",
+    "choices": [
+      "대표자에 대한 상여",
+      "기타사외유출",
+      "유보",
+      "대표자에 대한 배당"
+    ],
+    "answer": 1,
+    "oneLineConcept": "사외유출인데 귀속 불분명 → 대표자 상여",
+    "explanation": "회사 밖으로 나간 것은 분명하지만 받은 사람을 알 수 없으면, 회사를 책임지는 대표자가 가져간 것으로 보아 '대표자에 대한 상여'로 처분합니다. 대표자는 그 금액만큼 근로소득이 생긴 것으로 보아 소득세를 냅니다.\n\n**틀린 선지**\n- 기타사외유출: 귀속자가 법인 등으로 확인되고 그쪽에서 이미 과세될 때 하는 처분입니다.\n- 대표자에 대한 배당: 귀속 불분명일 때는 배당이 아니라 상여로 처분합니다.\n- 유보: 회사 밖으로 나간 금액이므로 유보가 될 수 없습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "소득처분",
+      "대표자 상여"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "accounting-manager-corporate-tax-structure-0003",
+    "certId": "accounting-manager",
+    "subjectId": "tax-accounting",
+    "chapterId": "corporate-tax-structure",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "감가상각비를 세법상 한도보다 많이 비용 처리하여 그 초과액을 손금불산입하였다. 이 금액의 소득처분은?",
+    "choices": [
+      "유보",
+      "기타사외유출",
+      "상여",
+      "배당"
+    ],
+    "answer": 1,
+    "oneLineConcept": "회사 안에 남는 차이(자산·부채 차이)는 유보",
+    "explanation": "감가상각비 한도초과액은 돈이 회사 밖으로 나간 것이 아니라, 회사 장부의 자산 금액과 세법상 자산 금액 사이에 차이가 생긴 것입니다. 이런 차이는 '유보'로 처분하고, 나중에 그 차이가 없어질 때 반대 조정을 합니다.\n\n**틀린 선지**\n- 기타사외유출: 회사 밖으로 나간 금액에 하는 처분이므로 맞지 않습니다.\n- 상여: 임원·직원에게 돈이 나간 경우의 처분입니다.\n- 배당: 주주에게 돈이 나간 경우의 처분입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "소득처분",
+      "유보",
+      "감가상각"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "accounting-manager-corporate-tax-structure-0004",
+    "certId": "accounting-manager",
+    "subjectId": "tax-accounting",
+    "chapterId": "corporate-tax-structure",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "결산서(장부)에 비용으로 반영해야만 손금으로 인정되는 '결산조정' 항목은?",
+    "choices": [
+      "법인세비용의 손금불산입",
+      "자산 평가이익의 익금불산입",
+      "감가상각비",
+      "기업업무추진비 한도초과액의 손금불산입"
+    ],
+    "answer": 3,
+    "oneLineConcept": "결산조정 = 장부에 비용으로 넣어야만 손금 인정 (예: 감가상각비)",
+    "explanation": "결산조정 항목은 회사가 결산할 때 장부에 비용으로 잡아야만 손금이 되는 항목입니다. 감가상각비가 대표적이며, 장부에 넣지 않았다면 세무조정계산서에서 따로 손금산입할 수 없습니다.\n\n**틀린 선지**\n- 기업업무추진비 한도초과액: 장부 처리와 관계없이 세무조정계산서에서 반드시 조정하는 신고조정 항목입니다.\n- 법인세비용: 장부에 비용으로 잡았더라도 세무조정으로 손금불산입하는 신고조정 항목입니다.\n- 평가이익 익금불산입: 세무조정계산서에서 조정하는 신고조정 항목입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "결산조정",
+      "신고조정"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "accounting-manager-corporate-tax-structure-0005",
+    "certId": "accounting-manager",
+    "subjectId": "tax-accounting",
+    "chapterId": "corporate-tax-structure",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "다음 중 귀속자를 따지지 않고 '기타사외유출'로 처분하는 항목은?",
+    "choices": [
+      "기업업무추진비 한도초과액",
+      "임원 상여금 한도초과액",
+      "감가상각비 한도초과액",
+      "퇴직급여충당금 한도초과액"
+    ],
+    "answer": 1,
+    "oneLineConcept": "기업업무추진비·기부금 한도초과액 → 기타사외유출",
+    "explanation": "기업업무추진비 한도초과액과 기부금 한도초과액 등은 세법이 정한 대로 귀속자를 따지지 않고 '기타사외유출'로 처분합니다. 기타사외유출은 받은 사람에게 추가로 세금을 매기지 않는 처분입니다.\n\n**틀린 선지**\n- 임원 상여금 한도초과액: 임원에게 돈이 나간 것이므로 상여로 처분합니다.\n- 감가상각비 한도초과액: 회사 안에 남는 자산 차이이므로 유보로 처분합니다.\n- 퇴직급여충당금 한도초과액: 회사 안에 남는 부채 차이이므로 유보로 처분합니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "소득처분",
+      "기타사외유출"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "accounting-manager-corporate-tax-structure-0006",
+    "certId": "accounting-manager",
+    "subjectId": "tax-accounting",
+    "chapterId": "corporate-tax-structure",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "법인세 과세표준을 계산할 때 각 사업연도 소득금액에서 공제하는 항목의 순서로 옳은 것은?",
+    "choices": [
+      "비과세소득 → 이월결손금 → 소득공제",
+      "이월결손금 → 소득공제 → 비과세소득",
+      "이월결손금 → 비과세소득 → 소득공제",
+      "소득공제 → 비과세소득 → 이월결손금"
+    ],
+    "answer": 3,
+    "oneLineConcept": "과세표준 = 각사업연도소득 − 이월결손금 − 비과세소득 − 소득공제",
+    "explanation": "법인세법은 각 사업연도 소득의 범위에서 이월결손금, 비과세소득, 소득공제를 '차례로' 공제하여 과세표준을 구한다고 정하고 있습니다. 공제 순서는 이월결손금이 먼저입니다.\n\n**틀린 선지**\n- 비과세소득 먼저: 법에서 정한 순서는 이월결손금이 첫 번째입니다.\n- 이월결손금 → 소득공제 → 비과세소득: 비과세소득이 소득공제보다 먼저 공제됩니다.\n- 소득공제 먼저: 소득공제는 마지막에 공제합니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "계산구조",
+      "과세표준"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "accounting-manager-corporate-tax-structure-0007",
+    "certId": "accounting-manager",
+    "subjectId": "tax-accounting",
+    "chapterId": "corporate-tax-structure",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "다음 자료로 ㈜한빛(중소기업 아님)의 법인세 과세표준을 구하면?\n- 결산서상 당기순이익: 50,000,000원\n- 익금산입·손금불산입: 12,000,000원\n- 손금산입·익금불산입: 4,000,000원\n- 기부금 한도초과액: 3,000,000원\n- 공제 요건을 갖춘 이월결손금: 8,000,000원\n- 비과세소득·소득공제: 없음",
+    "choices": [
+      "47,000,000원",
+      "61,000,000원",
+      "50,000,000원",
+      "53,000,000원"
+    ],
+    "answer": 4,
+    "oneLineConcept": "차가감소득 + 기부금 한도초과액 = 각사업연도소득 → 결손금 공제",
+    "explanation": "1. 차가감소득금액 = 50,000,000 + 12,000,000 − 4,000,000 = 58,000,000원\n2. 각 사업연도 소득금액 = 58,000,000 + 기부금 한도초과액 3,000,000 = 61,000,000원\n3. 이월결손금 공제 한도 = 61,000,000 × 80% = 48,800,000원 → 8,000,000원 전액 공제 가능\n4. 과세표준 = 61,000,000 − 8,000,000 = 53,000,000원\n검산: 50 + 12 − 4 + 3 − 8 = 53(백만원)\n\n**틀린 선지**\n- 50,000,000원: 기부금 한도초과액을 더하지 않은 금액입니다(58,000,000 − 8,000,000).\n- 61,000,000원: 이월결손금을 공제하기 전의 각 사업연도 소득금액입니다.\n- 47,000,000원: 기부금 한도초과액을 더하지 않고 오히려 뺀 금액입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "계산구조",
+      "과세표준",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "accounting-manager-corporate-tax-structure-0008",
+    "certId": "accounting-manager",
+    "subjectId": "tax-accounting",
+    "chapterId": "corporate-tax-structure",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "2026년 1월 1일에 개시하여 12월 31일에 끝나는 사업연도의 일반 영리 내국법인(성실신고확인 대상 등 특례 없음) 과세표준이 5억원일 때 법인세 산출세액은?",
+    "choices": [
+      "75,000,000원",
+      "80,000,000원",
+      "100,000,000원",
+      "50,000,000원"
+    ],
+    "answer": 2,
+    "oneLineConcept": "2026년 개시 사업연도 세율: 2억 이하 10%, 2억~200억 20%",
+    "explanation": "2025년 12월 법 개정으로 2026년 1월 1일 이후 개시하는 사업연도부터 법인세율은 과세표준 2억원 이하 10%, 2억원 초과 200억원 이하 20%, 200억원 초과 3천억원 이하 22%, 3천억원 초과 25%입니다.\n1. 2억원 × 10% = 20,000,000원\n2. (5억원 − 2억원) × 20% = 60,000,000원\n3. 산출세액 = 20,000,000 + 60,000,000 = 80,000,000원\n검산: 법조문 계산식 '2천만원 + 2억원 초과액의 20%' = 2천만원 + 6천만원 = 8천만원\n\n**틀린 선지**\n- 75,000,000원: 개정 전 세율(9%·19%)로 계산한 금액입니다. 2026년 개시 사업연도에는 맞지 않습니다.\n- 100,000,000원: 과세표준 전체에 20%를 곱한 금액입니다. 법인세는 구간별로 나누어 세율을 적용합니다.\n- 50,000,000원: 과세표준 전체에 10%를 곱한 금액입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "법인세율",
+      "산출세액",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+]

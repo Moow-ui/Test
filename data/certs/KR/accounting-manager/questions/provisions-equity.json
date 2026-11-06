@@ -1,0 +1,306 @@
+[
+  {
+    "id": "accounting-manager-provisions-equity-0001",
+    "certId": "accounting-manager",
+    "subjectId": "financial-accounting",
+    "chapterId": "provisions-equity",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "충당부채를 인식하기 위한 요건에 해당하지 않는 것은?",
+    "choices": [
+      "의무 이행에 필요한 금액을 신뢰성 있게 추정할 수 있다.",
+      "과거사건의 결과로 현재의무(법적의무 또는 의제의무)가 있다.",
+      "의무를 이행할 상대방이 누구인지 구체적으로 확정되어 있다.",
+      "의무를 이행하기 위해 자원이 빠져나갈 가능성이 높다."
+    ],
+    "answer": 3,
+    "oneLineConcept": "충당부채 3요건: 현재의무·유출가능성 높음·신뢰성 있는 추정",
+    "explanation": "충당부채는 지출 시기나 금액이 불확실한 부채입니다. 현재의무가 있고, 자원 유출 가능성이 높으며, 금액을 신뢰성 있게 추정할 수 있으면 인식합니다. 의무의 상대방이 누구인지는 몰라도 됩니다(예: 불특정 다수에 대한 제품보증).\n\n**틀린 선지**\n- 현재의무: 인식 요건 중 하나입니다. 관행에 따른 의제의무도 포함됩니다.\n- 자원 유출 가능성이 높음: 인식 요건 중 하나입니다.\n- 신뢰성 있는 추정: 인식 요건 중 하나입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "충당부채",
+      "인식요건"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "accounting-manager-provisions-equity-0002",
+    "certId": "accounting-manager",
+    "subjectId": "financial-accounting",
+    "chapterId": "provisions-equity",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "충당부채와 우발부채·우발자산에 대한 설명으로 옳은 것은?",
+    "choices": [
+      "우발자산은 경제적효익이 들어올 가능성이 높으면 주석으로 공시하고 자산으로 인식하지 않는다.",
+      "우발부채는 재무상태표에 부채로 인식한다.",
+      "앞으로 예상되는 영업손실에 대해서도 충당부채를 인식한다.",
+      "충당부채는 화폐의 시간가치 효과가 크더라도 현재가치로 평가하지 않는다."
+    ],
+    "answer": 1,
+    "oneLineConcept": "우발자산: 유입 가능성 높으면 주석, 자산 인식 안 함",
+    "explanation": "우발자산은 아직 확정되지 않은 자산이라 재무상태표에 인식하지 않고, 효익이 들어올 가능성이 높을 때 주석으로 알립니다. 들어오는 것이 거의 확실해지면 그때는 우발자산이 아니라 자산으로 인식합니다.\n\n**틀린 선지**\n- 우발부채를 부채로 인식: 우발부채는 인식하지 않고 주석으로 공시하며, 유출 가능성이 아주 낮으면 공시도 하지 않습니다.\n- 미래 영업손실: 현재의무가 아니므로 충당부채로 인식하지 않습니다.\n- 현재가치 평가 안 함: 시간가치 효과가 중요하면 현재가치로 평가합니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "우발부채",
+      "우발자산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "accounting-manager-provisions-equity-0003",
+    "certId": "accounting-manager",
+    "subjectId": "financial-accounting",
+    "chapterId": "provisions-equity",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "(주)성실은 20X1년 제품 매출 10,000,000원에 대해 판매 후 1년간 무상수리를 보증하며, 보증비용은 매출의 3%로 추정된다. 20X1년에 실제 쓴 보증비용이 120,000원일 때 20X1년 말 제품보증충당부채는?",
+    "choices": [
+      "120,000원",
+      "180,000원",
+      "300,000원",
+      "420,000원"
+    ],
+    "answer": 2,
+    "oneLineConcept": "기말 보증충당부채 = 추정 보증비용 - 당기 실제 지출",
+    "explanation": "판매한 해에 앞으로 들 보증비용 전체를 추정해 비용과 충당부채로 인식하고, 실제로 쓴 금액만큼 충당부채를 줄입니다.\n\n1. 추정 보증비용 = 10,000,000 × 3% = 300,000원\n2. 실제 사용액 = 120,000원\n3. 기말 충당부채 = 300,000 - 120,000 = 180,000원\n\n검산: 사용 120,000 + 잔액 180,000 = 추정액 300,000원\n\n**틀린 선지**\n- 300,000원: 당기 비용으로 인식할 금액이며, 이미 쓴 120,000원을 빼지 않았습니다.\n- 120,000원: 실제로 쓴 금액이며 남은 의무가 아닙니다.\n- 420,000원: 실제 사용액을 빼지 않고 더한 금액입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "제품보증충당부채"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "accounting-manager-provisions-equity-0004",
+    "certId": "accounting-manager",
+    "subjectId": "financial-accounting",
+    "chapterId": "provisions-equity",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "퇴직급여제도 중 확정기여제도에 대한 설명으로 옳은 것은?",
+    "choices": [
+      "예측단위적립방식으로 확정급여채무를 측정한다.",
+      "재측정요소를 기타포괄손익으로 인식한다.",
+      "기업은 정해진 기여금을 내면 그 이상의 지급 의무가 없다.",
+      "적립금 운용 결과에 따른 위험을 기업이 진다."
+    ],
+    "answer": 3,
+    "oneLineConcept": "확정기여제도: 기여금 납부로 기업 의무 끝, 위험은 종업원",
+    "explanation": "확정기여제도(DC형)는 기업이 정해진 금액을 기금에 내면 의무가 끝나고, 운용 결과에 따라 종업원이 받을 퇴직급여가 달라집니다. 기업은 낸 기여금을 그 기간 비용으로 인식하면 됩니다.\n\n**틀린 선지**\n- 운용 위험을 기업이 부담: 확정급여제도(DB형)의 특징입니다.\n- 재측정요소를 기타포괄손익: 확정급여제도에서 생기는 항목입니다.\n- 예측단위적립방식: 확정급여채무를 측정하는 방법으로, 확정급여제도에 해당합니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "종업원급여",
+      "확정기여제도"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "accounting-manager-provisions-equity-0005",
+    "certId": "accounting-manager",
+    "subjectId": "financial-accounting",
+    "chapterId": "provisions-equity",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "(주)한결(주당 액면 5,000원)은 자기주식 100주를 주당 6,000원에 사들였다. 그 뒤 60주를 주당 7,000원에, 나머지 40주를 주당 5,500원에 팔았다. 이 거래 뒤 자기주식처분이익 잔액은? (처음 자기주식처분이익·손실 잔액은 없다)",
+    "choices": [
+      "60,000원",
+      "20,000원",
+      "40,000원",
+      "0원"
+    ],
+    "answer": 3,
+    "oneLineConcept": "자기주식 처분손익은 자본 항목, 처분이익과 손실은 서로 상계",
+    "explanation": "자기주식을 팔아 생긴 이익·손실은 당기손익이 아니라 자본에 반영하며, 처분손실은 먼저 처분이익 잔액과 상계합니다.\n\n1. 60주 처분이익 = 60 × (7,000 - 6,000) = 60,000원\n2. 40주 처분손실 = 40 × (6,000 - 5,500) = 20,000원\n3. 처분이익 잔액 = 60,000 - 20,000 = 40,000원\n\n검산: 받은 돈 420,000 + 220,000 = 640,000원, 취득원가 600,000원, 차이 40,000원\n\n**틀린 선지**\n- 60,000원: 뒤에 생긴 처분손실 20,000원을 처분이익과 상계하지 않은 금액입니다.\n- 20,000원: 처분손실 금액만 본 것입니다.\n- 0원: 처분이익과 손실 금액이 다르므로 이익 40,000원이 남습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "자기주식",
+      "자기주식처분이익"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "accounting-manager-provisions-equity-0006",
+    "certId": "accounting-manager",
+    "subjectId": "financial-accounting",
+    "chapterId": "provisions-equity",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "다음 중 주당 액면금액이 줄어드는 거래는?",
+    "choices": [
+      "무상증자",
+      "주식배당",
+      "현금배당",
+      "주식분할"
+    ],
+    "answer": 4,
+    "oneLineConcept": "주식분할: 주식 수↑, 액면↓, 자본금·자본총계 불변",
+    "explanation": "주식분할은 주식 한 주를 여러 주로 쪼개는 것으로, 주식 수가 늘어나는 만큼 주당 액면금액이 줄어듭니다. 자본금과 자본총계는 그대로입니다.\n\n**틀린 선지**\n- 주식배당: 이익잉여금을 자본금으로 옮기며 주식 수가 늘지만 주당 액면금액은 그대로입니다.\n- 무상증자: 자본잉여금 등을 자본금으로 옮기며 주식 수가 늘지만 주당 액면금액은 그대로입니다.\n- 현금배당: 현금이 나가 자본이 줄 뿐 주식 수와 액면금액은 바뀌지 않습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "주식분할",
+      "자본 변동"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "accounting-manager-provisions-equity-0007",
+    "certId": "accounting-manager",
+    "subjectId": "financial-accounting",
+    "chapterId": "provisions-equity",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "다음 중 자본금을 늘리는 거래를 모두 고른 것은?\n\nㄱ. 주식배당\nㄴ. 무상증자\nㄷ. 주식분할\nㄹ. 주식병합",
+    "choices": [
+      "ㄷ, ㄹ",
+      "ㄱ, ㄷ",
+      "ㄱ, ㄴ",
+      "ㄴ, ㄷ"
+    ],
+    "answer": 3,
+    "oneLineConcept": "자본금 증가: 주식배당·무상증자 / 분할·병합은 자본금 불변",
+    "explanation": "주식배당은 이익잉여금을, 무상증자는 자본잉여금이나 이익잉여금을 자본금으로 옮기므로 자본금이 늘어납니다. 두 거래 모두 자본 안에서 금액만 옮기므로 자본총계는 그대로입니다. 주식분할과 주식병합은 주식 수와 주당 액면금액만 반대로 바뀔 뿐 자본금 총액은 변하지 않습니다.\n\n**틀린 선지**\n- ㄱ, ㄷ: 주식분할(ㄷ)은 액면이 줄어드는 만큼 주식 수가 늘어 자본금은 그대로입니다.\n- ㄴ, ㄷ: 무상증자(ㄴ)는 맞지만 주식분할(ㄷ)은 자본금이 늘지 않고, 주식배당(ㄱ)이 빠졌습니다.\n- ㄷ, ㄹ: 주식분할과 주식병합은 모두 자본금 총액이 바뀌지 않습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "주식배당",
+      "무상증자",
+      "자본금"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "accounting-manager-provisions-equity-0008",
+    "certId": "accounting-manager",
+    "subjectId": "financial-accounting",
+    "chapterId": "provisions-equity",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "(주)든든은 주주총회에서 현금배당 2,000,000원과 주식배당 1,000,000원을 결의하였다. 상법에 따라 적립해야 할 이익준비금의 최소 금액은? (이익준비금 누계액은 자본금의 1/2에 못 미친다)",
+    "choices": [
+      "0원",
+      "300,000원",
+      "200,000원",
+      "100,000원"
+    ],
+    "answer": 3,
+    "oneLineConcept": "이익준비금 = 금전배당의 1/10 이상 (주식배당 제외)",
+    "explanation": "상법은 자본금의 1/2에 이를 때까지 매 결산기 금전에 의한 이익배당액의 1/10 이상을 이익준비금으로 적립하게 합니다. 주식배당은 계산에서 뺍니다.\n\n1. 금전배당 = 2,000,000원 (주식배당 1,000,000원 제외)\n2. 최소 이익준비금 = 2,000,000 × 1/10 = 200,000원\n\n검산: 이익준비금 누계가 자본금의 1/2 미만이므로 한도 문제 없음\n\n**틀린 선지**\n- 300,000원: 주식배당까지 포함해 3,000,000 × 1/10로 계산한 금액입니다.\n- 100,000원: 주식배당 금액에 1/10을 곱한 금액입니다.\n- 0원: 금전배당이 있으므로 이익준비금을 적립해야 합니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "이익잉여금 처분",
+      "이익준비금"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "accounting-manager-provisions-equity-0009",
+    "certId": "accounting-manager",
+    "subjectId": "financial-accounting",
+    "chapterId": "provisions-equity",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "(주)미소의 확정급여제도 자료는 다음과 같다. 20X1년 당기손익으로 인식할 퇴직급여는? (기여금 납부와 퇴직금 지급은 없다)\n\n- 기초 확정급여채무: 1,000,000원\n- 기초 사외적립자산: 800,000원\n- 할인율: 연 10%\n- 당기근무원가: 150,000원",
+    "choices": [
+      "150,000원",
+      "250,000원",
+      "170,000원",
+      "330,000원"
+    ],
+    "answer": 3,
+    "oneLineConcept": "당기손익 퇴직급여 = 근무원가 + 순확정급여부채 × 할인율",
+    "explanation": "확정급여제도에서 당기손익에 들어가는 것은 근무원가와 순이자입니다. 순이자는 확정급여채무에서 사외적립자산을 뺀 순확정급여부채에 할인율을 곱해 구합니다. 재측정요소는 기타포괄손익으로 갑니다.\n\n1. 순확정급여부채 = 1,000,000 - 800,000 = 200,000원\n2. 순이자원가 = 200,000 × 10% = 20,000원\n3. 퇴직급여 = 150,000 + 20,000 = 170,000원\n\n검산: 채무 이자 100,000 - 자산 이자수익 80,000 = 순이자 20,000원\n\n**틀린 선지**\n- 250,000원: 확정급여채무 이자 100,000원만 더하고 사외적립자산 이자수익 80,000원을 빼지 않은 금액입니다.\n- 150,000원: 근무원가만 보고 순이자원가 20,000원을 빠뜨린 금액입니다.\n- 330,000원: 사외적립자산 이자수익 80,000원을 빼지 않고 더한 금액입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "확정급여제도",
+      "순이자"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+]

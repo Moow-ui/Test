@@ -1,0 +1,318 @@
+[
+  {
+    "id": "accounting-manager-corporate-tax-base-0001",
+    "certId": "accounting-manager",
+    "subjectId": "tax-accounting",
+    "chapterId": "corporate-tax-base",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "법인세법상 익금과 손금의 귀속사업연도를 정하는 원칙으로 옳은 것은?",
+    "choices": [
+      "결산을 확정한 주주총회일이 속하는 사업연도",
+      "익금과 손금이 확정된 날이 속하는 사업연도",
+      "현금을 실제로 받거나 지급한 날이 속하는 사업연도",
+      "회사가 임의로 선택한 사업연도"
+    ],
+    "answer": 2,
+    "oneLineConcept": "귀속시기 원칙 = 권리의무확정주의",
+    "explanation": "법인세법은 익금과 손금이 '확정된 날'이 속하는 사업연도에 귀속시킵니다. 이를 권리의무확정주의라고 하며, 받을 권리나 줄 의무가 확정되었는지를 기준으로 합니다.\n\n**틀린 선지**\n- 현금 수수일: 현금이 오간 날을 기준으로 하는 현금주의는 법인세법의 원칙이 아닙니다.\n- 주주총회일: 결산 확정 절차와 손익의 귀속시기는 별개입니다.\n- 회사가 임의 선택: 귀속시기를 회사가 마음대로 정하면 세금을 조절할 수 있어 허용되지 않습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "손익 귀속시기",
+      "권리의무확정주의"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "accounting-manager-corporate-tax-base-0002",
+    "certId": "accounting-manager",
+    "subjectId": "tax-accounting",
+    "chapterId": "corporate-tax-base",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "사업연도가 1월 1일~12월 31일인 ㈜해솔은 2026년 11월 20일 상품 판매계약을 맺고, 2026년 12월 28일 상품을 인도하였으며, 대금은 2027년 1월 10일에 받았다. 이 매출의 귀속사업연도와 기준일로 옳은 것은?",
+    "choices": [
+      "2026 사업연도 – 계약을 맺은 날",
+      "2027 사업연도 – 대금 청구서를 보낸 날",
+      "2027 사업연도 – 대금을 받은 날",
+      "2026 사업연도 – 상품을 인도한 날"
+    ],
+    "answer": 4,
+    "oneLineConcept": "상품·제품 판매의 귀속시기 = 인도한 날",
+    "explanation": "법인세법 시행령은 상품(부동산 제외)·제품의 판매 손익을 그 상품을 '인도한 날'이 속하는 사업연도에 귀속시킵니다. 인도일이 2026년 12월 28일이므로 2026 사업연도의 익금입니다.\n\n**틀린 선지**\n- 대금을 받은 날: 현금 수령일은 일반 상품 판매의 귀속 기준이 아닙니다.\n- 계약을 맺은 날: 계약만으로는 판매가 이루어진 것이 아니며, 기준은 인도일입니다.\n- 대금 청구서를 보낸 날: 청구일은 귀속시기 기준이 아닙니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "손익 귀속시기",
+      "상품 판매"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "accounting-manager-corporate-tax-base-0003",
+    "certId": "accounting-manager",
+    "subjectId": "tax-accounting",
+    "chapterId": "corporate-tax-base",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "다음 중 법인세법상 대손금으로 손금에 산입할 수 있는 것은?",
+    "choices": [
+      "특수관계인에게 업무와 관련 없이 빌려준 가지급금",
+      "채무보증(법령상 예외 아님)으로 생긴 구상채권",
+      "상법에 따른 소멸시효가 완성된 외상매출금",
+      "회수기일이 6개월 이상 지났고 채무자별 합계가 50만원인 채권"
+    ],
+    "answer": 3,
+    "oneLineConcept": "소멸시효 완성 채권은 대손 사유 / 업무무관 가지급금·보증 구상채권은 대손 불가",
+    "explanation": "법인세법 시행령은 상법·어음법·수표법·민법에 따라 소멸시효가 완성된 채권을 대손 사유로 정하고 있습니다. 소멸시효가 완성된 외상매출금은 대손금으로 손금에 산입할 수 있습니다.\n\n**틀린 선지**\n- 채무자별 합계 50만원 채권: 회수기일 6개월 경과 소액채권 특례는 채무자별 합계 30만원 이하만 해당합니다.\n- 업무무관 가지급금: 특수관계인에 대한 업무무관 가지급금은 대손금으로 인정하지 않습니다.\n- 채무보증 구상채권: 법령상 예외가 아닌 채무보증으로 생긴 구상채권은 대손금으로 인정하지 않습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "대손금",
+      "대손 사유"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "accounting-manager-corporate-tax-base-0004",
+    "certId": "accounting-manager",
+    "subjectId": "tax-accounting",
+    "chapterId": "corporate-tax-base",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "㈜미래(금융회사 아님)의 사업연도 말 대손충당금 설정 대상 채권 잔액은 500,000,000원이고 대손실적률은 0.8%이다. 회사가 설정한 대손충당금 잔액이 8,000,000원(전기 한도초과액 없음)일 때 세무조정은?",
+    "choices": [
+      "손금불산입 4,000,000원(유보)",
+      "손금불산입 8,000,000원(유보)",
+      "세무조정 없음",
+      "손금불산입 3,000,000원(유보)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "대손충당금 한도 = 채권잔액 × MAX(1%, 대손실적률)",
+    "explanation": "1. 적용률 = MAX(1%, 0.8%) = 1%\n2. 한도액 = 500,000,000 × 1% = 5,000,000원\n3. 한도초과액 = 8,000,000 − 5,000,000 = 3,000,000원 → 손금불산입(유보)\n검산: 5,000,000 + 3,000,000 = 8,000,000원\n\n**틀린 선지**\n- 4,000,000원: 대손실적률 0.8%를 그대로 적용한 금액입니다. 1%와 비교해 큰 비율을 씁니다.\n- 세무조정 없음: 회사 설정액이 한도를 넘으므로 조정이 필요합니다.\n- 8,000,000원: 한도까지는 손금으로 인정되므로 전액이 손금불산입되지는 않습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "대손충당금",
+      "한도",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "accounting-manager-corporate-tax-base-0005",
+    "certId": "accounting-manager",
+    "subjectId": "tax-accounting",
+    "chapterId": "corporate-tax-base",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "중소기업이 아닌 일반 법인이 이월결손금을 공제할 때, 각 사업연도 소득의 몇 %를 한도로 공제할 수 있는가? (회생계획 이행 중인 기업 등 특례 없음)",
+    "choices": [
+      "50%",
+      "100%",
+      "80%",
+      "60%"
+    ],
+    "answer": 3,
+    "oneLineConcept": "이월결손금 공제 한도: 일반 법인 80%, 중소기업 100%",
+    "explanation": "이월결손금은 각 사업연도 개시일 전 15년 이내에 생긴 결손금을 공제합니다. 공제 한도는 일반 법인은 각 사업연도 소득의 80%, 중소기업과 회생계획 이행 중인 기업 등은 100%입니다.\n\n**틀린 선지**\n- 100%: 중소기업 등에 적용되는 한도입니다.\n- 60%: 현행 법인세법의 이월결손금 공제 한도가 아닙니다.\n- 50%: 현행 법인세법의 이월결손금 공제 한도가 아닙니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "이월결손금",
+      "공제한도"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "accounting-manager-corporate-tax-base-0006",
+    "certId": "accounting-manager",
+    "subjectId": "tax-accounting",
+    "chapterId": "corporate-tax-base",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "중소기업이 아닌 ㈜대한의 당기 각 사업연도 소득금액은 100,000,000원이다. 공제 요건을 모두 갖춘 이월결손금(3년 전 발생)이 90,000,000원 있고 비과세소득과 소득공제는 없다. 당기 과세표준은?",
+    "choices": [
+      "100,000,000원",
+      "10,000,000원",
+      "0원",
+      "20,000,000원"
+    ],
+    "answer": 4,
+    "oneLineConcept": "일반 법인 이월결손금 공제 = MIN(결손금, 소득 × 80%)",
+    "explanation": "1. 공제 한도 = 100,000,000 × 80% = 80,000,000원\n2. 공제액 = MIN(90,000,000, 80,000,000) = 80,000,000원\n3. 과세표준 = 100,000,000 − 80,000,000 = 20,000,000원\n4. 공제하지 못한 10,000,000원은 다음 사업연도 이후로 넘어갑니다(15년 기간 안에서).\n검산: 80,000,000 + 20,000,000 = 100,000,000원\n\n**틀린 선지**\n- 10,000,000원: 이월결손금 90,000,000원을 한도 없이 전부 공제한 금액입니다.\n- 0원: 중소기업처럼 100% 한도를 적용했거나 결손금이 소득보다 크다고 착각한 경우입니다.\n- 100,000,000원: 이월결손금을 전혀 공제하지 않은 금액입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "이월결손금",
+      "과세표준",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "accounting-manager-corporate-tax-base-0007",
+    "certId": "accounting-manager",
+    "subjectId": "tax-accounting",
+    "chapterId": "corporate-tax-base",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "사업연도가 1월 1일~12월 31일이고 성실신고확인서 제출 대상이 아닌 법인의 법인세 과세표준 신고기한은?",
+    "choices": [
+      "다음 해 2월 말일",
+      "다음 해 4월 30일",
+      "다음 해 3월 31일",
+      "다음 해 5월 31일"
+    ],
+    "answer": 3,
+    "oneLineConcept": "법인세 신고기한 = 사업연도 종료일이 속하는 달의 말일부터 3개월",
+    "explanation": "내국법인은 사업연도 종료일이 속하는 달의 말일부터 3개월 이내에 법인세를 신고해야 합니다. 12월 31일에 끝나면 다음 해 3월 31일까지입니다(성실신고확인서 제출 법인은 4개월).\n\n**틀린 선지**\n- 4월 30일: 성실신고확인서를 제출하는 법인에 적용되는 4개월 기한입니다.\n- 5월 31일: 개인의 종합소득세 확정신고 기한입니다.\n- 2월 말일: 근로소득 연말정산 시기와 혼동한 것입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "신고기한",
+      "법인세 신고"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "accounting-manager-corporate-tax-base-0008",
+    "certId": "accounting-manager",
+    "subjectId": "tax-accounting",
+    "chapterId": "corporate-tax-base",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "사업연도가 1월 1일~12월 31일인 법인(신설법인 아님)의 법인세 중간예납세액 납부기한은?",
+    "choices": [
+      "8월 31일",
+      "7월 31일",
+      "9월 30일",
+      "7월 25일"
+    ],
+    "answer": 1,
+    "oneLineConcept": "중간예납: 개시일부터 6개월분, 그 기간이 지난 날부터 2개월 이내 납부",
+    "explanation": "중간예납기간은 사업연도 개시일부터 6개월이 되는 날까지(1월 1일~6월 30일)이고, 이 기간이 지난 날부터 2개월 이내에 납부해야 합니다. 따라서 8월 31일까지입니다.\n\n**틀린 선지**\n- 7월 31일: 중간예납기간 종료 후 1개월로 잘못 계산한 날짜입니다.\n- 7월 25일: 부가가치세 제1기 확정신고 기한과 혼동한 것입니다.\n- 9월 30일: 2개월을 넘긴 날짜입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "중간예납"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "accounting-manager-corporate-tax-base-0009",
+    "certId": "accounting-manager",
+    "subjectId": "tax-accounting",
+    "chapterId": "corporate-tax-base",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "법인세 신고·납부 등에 대한 설명으로 옳지 않은 것은?",
+    "choices": [
+      "합병이나 분할이 아닌 방법으로 새로 설립된 법인의 최초 사업연도에는 중간예납 의무가 없다.",
+      "퇴직급여충당금 누적액 한도를 계산할 때 퇴직급여추계액에 곱하는 비율은 2016년 이후 개시 사업연도부터 0%이다.",
+      "각 사업연도 소득금액이 없거나 결손금이 있는 법인은 법인세 과세표준 신고를 하지 않아도 된다.",
+      "최저한세는 감면 등을 적용한 뒤의 세액이 일정 수준 아래로 내려가지 않도록 하는 제도이다."
+    ],
+    "answer": 3,
+    "oneLineConcept": "소득이 없거나 결손이어도 법인세 신고 의무 있음",
+    "explanation": "법인세법은 각 사업연도 소득금액이 없거나 결손금이 있는 법인도 과세표준 신고를 해야 한다고 정하고 있습니다. 결손금도 신고해야 나중에 이월결손금으로 공제받을 수 있습니다.\n\n**틀린 선지**\n- 최저한세 설명: 감면을 많이 받아도 최소한의 세금은 내도록 하는 제도라는 설명은 옳습니다.\n- 신설법인 중간예납: 합병·분할에 의하지 않고 새로 설립된 법인의 최초 사업연도는 중간예납 대상에서 빠집니다.\n- 퇴직급여충당금 0%: 법인세법 시행령에 2016년 이후 개시 사업연도는 100분의 0으로 정해져 있습니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "신고의무",
+      "최저한세",
+      "중간예납"
+    ],
+    "levelLock": true
+  }
+]

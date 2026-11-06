@@ -1,0 +1,355 @@
+[
+  {
+    "id": "accounting-manager-standard-variable-costing-0001",
+    "certId": "accounting-manager",
+    "subjectId": "cost-management-accounting",
+    "chapterId": "standard-variable-costing",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "직접재료원가 가격차이를 구하는 식으로 옳은 것은? (AQ: 실제 사용량, AP: 실제 가격, SP: 표준 가격, SQ: 실제 생산량에 허용된 표준 사용량, 구입량과 사용량은 같음)",
+    "choices": [
+      "SP × (AQ − SQ)",
+      "SQ × (AP − SP)",
+      "AP × (AQ − SQ)",
+      "AQ × (AP − SP)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "가격차이 = AQ × (AP − SP), 수량차이 = SP × (AQ − SQ)",
+    "explanation": "가격차이는 '실제로 쓴 양'에 대해 가격이 표준과 얼마나 달랐는지를 봅니다. 그래서 실제 수량(AQ)에 가격 차이(AP − SP)를 곱합니다. 실제 가격이 표준보다 높으면 불리한 차이입니다.\n\n**틀린 선지**\n- SQ × (AP − SP): 가격 차이에 표준 수량을 곱했습니다. 가격차이는 실제 수량을 기준으로 합니다.\n- SP × (AQ − SQ): 수량차이(능률차이)를 구하는 식입니다.\n- AP × (AQ − SQ): 수량차이는 표준 가격(SP)을 곱해야 하므로 이 식은 어느 차이에도 맞지 않습니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "표준원가",
+      "재료가격차이"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "accounting-manager-standard-variable-costing-0002",
+    "certId": "accounting-manager",
+    "subjectId": "cost-management-accounting",
+    "chapterId": "standard-variable-costing",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "제품 1개의 직접재료 표준은 3kg, kg당 표준가격은 500원이다. 당기에 1,000개를 생산하며 재료 3,200kg을 kg당 480원에 사서 모두 썼다. 직접재료원가 수량차이는?",
+    "choices": [
+      "100,000원 불리",
+      "100,000원 유리",
+      "96,000원 불리",
+      "64,000원 유리"
+    ],
+    "answer": 1,
+    "oneLineConcept": "수량차이 = SP × (AQ − SQ), 실제 사용량이 많으면 불리",
+    "explanation": "수량차이는 표준가격으로 계산합니다.\n1. 표준 허용 사용량(SQ) = 1,000개 × 3kg = 3,000kg\n2. 수량차이 = 500 × (3,200 − 3,000) = 100,000원\n3. 표준보다 많이 썼으므로 불리한 차이\n검산: 가격차이 3,200 × (480 − 500) = 64,000원 유리, 총차이 = 실제 1,536,000 − 표준 1,500,000 = 36,000원 불리 = 100,000 불리 − 64,000 유리\n\n**틀린 선지**\n- 96,000원 불리: 수량 차이 200kg에 실제가격 480원을 곱했습니다. 수량차이는 표준가격으로 계산합니다.\n- 100,000원 유리: 금액은 맞지만 표준보다 많이 쓴 것이므로 불리한 차이입니다.\n- 64,000원 유리: 가격차이입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "표준원가",
+      "재료수량차이"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "accounting-manager-standard-variable-costing-0003",
+    "certId": "accounting-manager",
+    "subjectId": "cost-management-accounting",
+    "chapterId": "standard-variable-costing",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "제품 1개당 표준 직접노동시간은 2시간, 표준임률은 시간당 10,000원이다. 당기에 500개를 생산하는 데 실제 1,100시간이 걸렸고, 실제 임금 총액은 10,450,000원이었다. 직접노무원가 임률차이는?",
+    "choices": [
+      "1,000,000원 불리",
+      "550,000원 불리",
+      "550,000원 유리",
+      "500,000원 유리"
+    ],
+    "answer": 3,
+    "oneLineConcept": "임률차이 = AH × (AR − SR) = 실제임금 − AH × SR",
+    "explanation": "임률차이는 실제 작업시간을 기준으로 실제 임금과 표준 임금을 비교합니다.\n1. 실제 시간 × 표준임률 = 1,100 × 10,000 = 11,000,000원\n2. 임률차이 = 10,450,000 − 11,000,000 = −550,000원 → 실제 임금이 적으므로 유리\n3. (참고) 실제 임률 = 10,450,000 ÷ 1,100 = 9,500원\n검산: 능률차이 = 10,000 × (1,100 − 1,000) = 1,000,000원 불리, 총차이 = 10,450,000 − 표준 10,000,000 = 450,000원 불리 = 1,000,000 불리 − 550,000 유리\n\n**틀린 선지**\n- 550,000원 불리: 금액은 맞지만 실제 임률(9,500원)이 표준(10,000원)보다 낮으므로 유리합니다.\n- 500,000원 유리: 임률 차이 500원에 표준시간 1,000시간을 곱했습니다. 임률차이는 실제 시간으로 계산합니다.\n- 1,000,000원 불리: 능률차이(시간차이)입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "표준원가",
+      "노무임률차이"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        3
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "accounting-manager-standard-variable-costing-0004",
+    "certId": "accounting-manager",
+    "subjectId": "cost-management-accounting",
+    "chapterId": "standard-variable-costing",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "고정제조간접원가 조업도차이가 생기는 원인으로 옳은 것은?",
+    "choices": [
+      "실제 지출한 고정제조간접원가가 예산과 달라서",
+      "실제 작업시간이 표준시간보다 길어서",
+      "기준조업도와 실제 생산량에 허용된 표준조업도가 달라서",
+      "재료 구입가격이 표준가격보다 높아서"
+    ],
+    "answer": 3,
+    "oneLineConcept": "조업도차이 = 예산 − 표준조업도 × 고정비 배부율",
+    "explanation": "고정제조간접원가는 기준조업도로 나눈 배부율로 제품에 배부합니다. 실제 생산량에 허용된 표준조업도가 기준조업도보다 적으면 덜 배부되어 불리한 조업도차이가, 많으면 유리한 차이가 생깁니다. 원가를 아끼거나 낭비해서 생기는 차이가 아니라 설비를 얼마나 썼는지를 보여 줍니다.\n\n**틀린 선지**\n- 실제 지출액과 예산의 차이: 고정제조간접원가 예산차이(소비차이)의 원인입니다.\n- 작업시간이 길어서: 변동제조간접원가나 직접노무원가의 능률차이 원인입니다. 고정제조간접원가는 능률차이를 따로 계산하지 않는 것이 일반적입니다.\n- 재료 구입가격: 직접재료원가 가격차이의 원인입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "고정제조간접원가",
+      "조업도차이"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "accounting-manager-standard-variable-costing-0005",
+    "certId": "accounting-manager",
+    "subjectId": "cost-management-accounting",
+    "chapterId": "standard-variable-costing",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "고정제조간접원가 예산은 1,200,000원, 기준조업도는 4,000기계시간이다. 제품 1개당 표준 기계시간은 2시간이고, 당기 실제 생산량은 1,800개, 실제 고정제조간접원가는 1,250,000원이다. 고정제조간접원가 조업도차이는?",
+    "choices": [
+      "170,000원 불리",
+      "120,000원 유리",
+      "50,000원 불리",
+      "120,000원 불리"
+    ],
+    "answer": 4,
+    "oneLineConcept": "조업도차이: 표준조업도 < 기준조업도이면 불리",
+    "explanation": "조업도차이는 예산과 '표준조업도로 배부한 금액'을 비교합니다.\n1. 고정비 배부율 = 1,200,000 ÷ 4,000시간 = 시간당 300원\n2. 표준조업도 = 1,800개 × 2시간 = 3,600시간\n3. 배부액 = 3,600 × 300 = 1,080,000원\n4. 조업도차이 = 1,200,000 − 1,080,000 = 120,000원, 기준보다 덜 생산했으므로 불리\n검산: 예산차이 50,000원 불리 + 조업도차이 120,000원 불리 = 170,000원 = 실제 1,250,000 − 배부 1,080,000\n\n**틀린 선지**\n- 120,000원 유리: 금액은 맞지만 표준조업도(3,600시간)가 기준조업도(4,000시간)보다 작으므로 불리합니다.\n- 170,000원 불리: 예산차이와 조업도차이를 합친 총 배부차이입니다.\n- 50,000원 불리: 예산차이(실제 1,250,000 − 예산 1,200,000)입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "고정제조간접원가",
+      "조업도차이",
+      "예산차이"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "accounting-manager-standard-variable-costing-0006",
+    "certId": "accounting-manager",
+    "subjectId": "cost-management-accounting",
+    "chapterId": "standard-variable-costing",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "변동제조간접원가는 직접노동시간당 400원으로 배부한다. 당기 실제 직접노동시간은 5,200시간, 실제 생산량에 허용된 표준시간은 5,000시간, 실제 변동제조간접원가는 2,150,000원이다. 변동제조간접원가 소비차이는?",
+    "choices": [
+      "70,000원 불리",
+      "70,000원 유리",
+      "80,000원 불리",
+      "150,000원 불리"
+    ],
+    "answer": 1,
+    "oneLineConcept": "변동OH 소비차이 = 실제발생액 − 실제시간 × 표준배부율",
+    "explanation": "소비차이는 실제 시간을 기준으로 '써야 했던 금액'과 실제 발생액을 비교합니다.\n1. 실제 시간 × 표준배부율 = 5,200 × 400 = 2,080,000원\n2. 소비차이 = 2,150,000 − 2,080,000 = 70,000원, 더 썼으므로 불리\n검산: 능률차이 400 × (5,200 − 5,000) = 80,000원 불리, 합계 150,000원 = 2,150,000 − 표준 2,000,000\n\n**틀린 선지**\n- 80,000원 불리: 능률차이입니다.\n- 70,000원 유리: 실제 발생액이 기준 금액보다 많으므로 불리합니다.\n- 150,000원 불리: 소비차이와 능률차이를 합친 총차이입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "변동제조간접원가",
+      "소비차이",
+      "능률차이"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "accounting-manager-standard-variable-costing-0007",
+    "certId": "accounting-manager",
+    "subjectId": "cost-management-accounting",
+    "chapterId": "standard-variable-costing",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "변동원가계산에서 고정제조간접원가는 어떻게 처리하는가?",
+    "choices": [
+      "제품원가에 포함해 재고자산으로 이월한다.",
+      "판매된 부분만 매출원가로 처리한다.",
+      "발생한 기간의 비용(기간원가)으로 처리한다.",
+      "직접재료원가와 함께 재공품에 포함한다."
+    ],
+    "answer": 3,
+    "oneLineConcept": "변동원가계산: 고정제조간접원가 = 기간비용",
+    "explanation": "변동원가계산은 직접재료원가·직접노무원가·변동제조간접원가만 제품원가로 봅니다. 고정제조간접원가는 생산량과 관계없이 발생하므로 그 기간에 전부 비용으로 처리합니다.\n\n**틀린 선지**\n- 재고자산으로 이월: 전부원가계산의 처리입니다.\n- 판매된 부분만 매출원가: 전부원가계산에서 결과적으로 나타나는 모습입니다. 변동원가계산은 판매량과 관계없이 전액을 비용으로 합니다.\n- 재공품에 포함: 변동원가계산에서는 고정제조간접원가를 어떤 재고자산에도 넣지 않습니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "변동원가계산",
+      "전부원가계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "accounting-manager-standard-variable-costing-0008",
+    "certId": "accounting-manager",
+    "subjectId": "cost-management-accounting",
+    "chapterId": "standard-variable-costing",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "㈜동해는 당기에 제품 10,000개를 생산해 8,000개를 판매했다(기초재고 없음). 고정제조간접원가는 500,000원이고, 변동원가계산에 의한 영업이익은 300,000원이다. 전부원가계산에 의한 영업이익은?",
+    "choices": [
+      "200,000원",
+      "425,000원",
+      "400,000원",
+      "300,000원"
+    ],
+    "answer": 3,
+    "oneLineConcept": "전부원가 이익 − 변동원가 이익 = 재고 증감 × 단위당 고정OH",
+    "explanation": "생산량이 판매량보다 많으면 전부원가계산에서는 고정제조간접원가 일부가 기말재고에 남아 비용이 줄어듭니다.\n1. 단위당 고정제조간접원가 = 500,000 ÷ 10,000개 = 50원\n2. 기말재고 = 10,000 − 8,000 = 2,000개, 재고에 남는 고정비 = 2,000 × 50 = 100,000원\n3. 전부원가 영업이익 = 300,000 + 100,000 = 400,000원\n검산: 전부원가에서 비용 처리된 고정비 = 8,000 × 50 = 400,000원, 변동원가보다 100,000원 적음\n\n**틀린 선지**\n- 200,000원: 차이를 더해야 할 곳에서 뺐습니다. 재고가 늘면 전부원가 이익이 더 큽니다.\n- 425,000원: 단위당 고정비를 판매량(8,000개)으로 나누어 62.5원으로 계산했습니다. 생산량으로 나눠야 합니다.\n- 300,000원: 변동원가 영업이익을 그대로 썼습니다. 재고가 변했으므로 두 이익은 다릅니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "변동원가계산",
+      "전부원가계산",
+      "이익차이"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "accounting-manager-standard-variable-costing-0009",
+    "certId": "accounting-manager",
+    "subjectId": "cost-management-accounting",
+    "chapterId": "standard-variable-costing",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "㈜서해의 자료가 다음과 같다. 재고는 선입선출법으로 흐른다고 가정할 때 전부원가계산에 의한 영업이익은?\n- 기초제품 1,000개(단위당 고정제조간접원가 40원 포함)\n- 당기 생산 5,000개, 당기 고정제조간접원가 300,000원\n- 당기 판매 5,500개\n- 변동원가계산 영업이익 200,000원",
+    "choices": [
+      "210,000원",
+      "170,000원",
+      "230,000원",
+      "190,000원"
+    ],
+    "answer": 4,
+    "oneLineConcept": "이익차이 = 기말재고 고정OH − 기초재고 고정OH",
+    "explanation": "기초재고에 들어 있던 고정비는 이번에 비용이 되고, 기말재고에 남는 고정비는 다음으로 넘어갑니다.\n1. 당기 단위당 고정비 = 300,000 ÷ 5,000 = 60원\n2. 기말재고 = 1,000 + 5,000 − 5,500 = 500개(선입선출이므로 당기 생산분) → 고정비 500 × 60 = 30,000원\n3. 기초재고 고정비 = 1,000 × 40 = 40,000원\n4. 전부원가 이익 = 200,000 + 30,000 − 40,000 = 190,000원\n검산: 전부원가에서 비용이 된 고정비 = 40,000 + 300,000 − 30,000 = 310,000원, 변동원가(300,000원)보다 10,000원 많으므로 이익이 10,000원 적음\n\n**틀린 선지**\n- 210,000원: 차이 10,000원의 방향을 거꾸로 했습니다. 기초재고 고정비가 기말재고보다 크면 전부원가 이익이 작습니다.\n- 170,000원: 기초재고의 단위당 고정비도 당기 단가 60원으로 계산했습니다. 기초재고는 40원입니다.\n- 230,000원: 기말재고 고정비만 더하고 기초재고에서 넘어온 고정비 40,000원을 빼지 않았습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "변동원가계산",
+      "전부원가계산",
+      "이익차이"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "accounting-manager-standard-variable-costing-0010",
+    "certId": "accounting-manager",
+    "subjectId": "cost-management-accounting",
+    "chapterId": "standard-variable-costing",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "초변동원가계산(쓰루풋 원가계산)에 대한 설명으로 옳지 않은 것은?",
+    "choices": [
+      "직접재료원가만 제품원가(재고자산)로 본다.",
+      "직접노무원가와 변동제조간접원가도 기간비용으로 처리한다.",
+      "재료처리량 공헌이익은 매출액에서 직접재료원가를 뺀 금액이다.",
+      "생산량을 늘릴수록 영업이익이 커지므로 재고를 쌓아 두려는 유인이 가장 크다."
+    ],
+    "answer": 4,
+    "oneLineConcept": "초변동원가계산: 직접재료원가만 재고화, 과잉생산 유인 감소",
+    "explanation": "초변동원가계산은 직접재료원가만 재고로 넘기고 나머지 원가는 모두 그 기간 비용으로 처리합니다. 그래서 많이 만들어 재고를 쌓아도 이익이 늘지 않아 불필요한 생산을 막는 효과가 있습니다. 생산량을 늘리면 이익이 커지는 유인이 가장 큰 것은 전부원가계산입니다.\n\n**틀린 선지**\n- 직접재료원가만 제품원가: 옳습니다. 초변동원가계산의 핵심 특징입니다.\n- 직접노무원가·변동제조간접원가 기간비용: 옳습니다. 이 원가들은 운영비용으로 기간에 처리합니다.\n- 재료처리량 공헌이익: 옳습니다. 매출액 − 직접재료원가로 계산합니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "초변동원가계산"
+    ],
+    "levelLock": true
+  }
+]

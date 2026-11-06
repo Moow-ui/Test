@@ -1,0 +1,496 @@
+[
+  {
+    "id": "accounting-manager-income-tax-0001",
+    "certId": "accounting-manager",
+    "subjectId": "tax-accounting",
+    "chapterId": "income-tax",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "다음 중 종합소득에 합산하지 않고 따로 과세하는 '분류과세' 대상 소득은?",
+    "choices": [
+      "근로소득",
+      "양도소득",
+      "사업소득",
+      "연금소득"
+    ],
+    "answer": 2,
+    "oneLineConcept": "분류과세 = 퇴직소득·양도소득 (종합소득과 별도)",
+    "explanation": "소득세는 이자·배당·사업·근로·연금·기타소득을 합쳐 종합과세하고, 퇴직소득과 양도소득은 오랜 기간 쌓인 소득이 한 번에 생기는 특성이 있어 각각 따로 과세(분류과세)합니다.\n\n**틀린 선지**\n- 연금소득: 종합소득에 속합니다(일정 요건의 분리과세 선택 가능성과는 별개).\n- 사업소득: 종합소득에 합산하는 소득입니다.\n- 근로소득: 종합소득에 합산하는 소득입니다(일용근로자 제외).",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "분류과세",
+      "소득 구분"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "accounting-manager-income-tax-0002",
+    "certId": "accounting-manager",
+    "subjectId": "tax-accounting",
+    "chapterId": "income-tax",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "2026년 귀속 소득세에서 이자소득과 배당소득(원천징수된 일반 금융소득)의 합계액이 얼마를 넘으면 종합소득에 합산하여 과세하는가?",
+    "choices": [
+      "2천만원",
+      "1천만원",
+      "4천만원",
+      "1천500만원"
+    ],
+    "answer": 1,
+    "oneLineConcept": "금융소득 종합과세 기준금액 = 연 2천만원",
+    "explanation": "원천징수된 이자·배당소득의 합계가 2천만원(이자소득등의 종합과세기준금액) 이하이면 원천징수로 과세가 끝나고, 2천만원을 넘으면 종합소득에 합산하여 과세합니다.\n\n**틀린 선지**\n- 1천500만원: 사적연금소득의 분리과세 선택 기준과 혼동한 것입니다.\n- 1천만원: 현행 소득세법의 금융소득 종합과세 기준이 아닙니다.\n- 4천만원: 현행 소득세법의 금융소득 종합과세 기준이 아닙니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "금융소득 종합과세"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "accounting-manager-income-tax-0003",
+    "certId": "accounting-manager",
+    "subjectId": "tax-accounting",
+    "chapterId": "income-tax",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "거주자 김씨의 2026년 금융소득은 은행 정기예금 이자 12,000,000원과 상장주식 배당금 6,000,000원이며 모두 원천징수되었다. 이 금융소득의 과세 방법으로 옳은 것은?",
+    "choices": [
+      "배당금만 종합소득에 합산",
+      "이자만 종합소득에 합산",
+      "전액 종합소득에 합산",
+      "전액 분리과세(원천징수로 과세 종결)"
+    ],
+    "answer": 4,
+    "oneLineConcept": "원천징수된 금융소득 합계 2천만원 이하 → 분리과세",
+    "explanation": "1. 금융소득 합계 = 12,000,000 + 6,000,000 = 18,000,000원\n2. 2천만원 이하이므로 종합과세 기준금액을 넘지 않습니다.\n3. 원천징수된 금융소득이므로 원천징수로 과세가 끝납니다(분리과세).\n검산: 18,000,000원 < 20,000,000원\n\n**틀린 선지**\n- 전액 종합소득 합산: 합계가 2천만원을 넘을 때의 처리입니다.\n- 배당금만 합산: 기준금액은 이자와 배당을 합친 금액으로 판단하며, 소득 종류별로 나누어 합산하지 않습니다.\n- 이자만 합산: 마찬가지로 합계 기준이며, 이 경우 합계가 2천만원 이하입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "금융소득 종합과세",
+      "분리과세"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "accounting-manager-income-tax-0004",
+    "certId": "accounting-manager",
+    "subjectId": "tax-accounting",
+    "chapterId": "income-tax",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "거주자 박씨의 2026년 금융소득은 원천징수된 예금이자 18,000,000원과 국내 상장법인 배당금 10,000,000원이다(배당금은 분리과세 특례 대상이 아니다). 종합소득에 합산하는 금융소득(배당가산액은 고려하지 않음)은?",
+    "choices": [
+      "28,000,000원",
+      "18,000,000원",
+      "0원",
+      "8,000,000원"
+    ],
+    "answer": 1,
+    "oneLineConcept": "2천만원 초과 시 금융소득 전액을 종합소득에 합산",
+    "explanation": "1. 금융소득 합계 = 18,000,000 + 10,000,000 = 28,000,000원\n2. 2천만원을 넘으므로 '넘는 부분'만이 아니라 금융소득 전액을 종합소득에 합산합니다.\n3. 다만 세액 계산 때 2천만원까지는 원천징수세율(14%)을, 넘는 부분은 기본세율을 적용하는 방식으로 세 부담을 맞춥니다.\n검산: 합산액 28,000,000원 = 2천만원 구간 20,000,000 + 초과 구간 8,000,000\n\n**틀린 선지**\n- 8,000,000원: 2천만원을 넘는 금액만 합산한다고 착각한 것입니다. 합산은 전액, 세율 적용만 구간별로 나눕니다.\n- 18,000,000원: 이자만 합산한 금액입니다. 배당소득도 금융소득에 포함됩니다.\n- 0원: 합계가 2천만원을 넘으므로 종합과세 대상입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "금융소득 종합과세",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        4
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "accounting-manager-income-tax-0005",
+    "certId": "accounting-manager",
+    "subjectId": "tax-accounting",
+    "chapterId": "income-tax",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "회사원 이씨가 사업과 관계없이 친구에게 돈을 빌려주고 받은 이자는 어떤 소득으로 구분되는가?",
+    "choices": [
+      "이자소득",
+      "배당소득",
+      "기타소득",
+      "사업소득"
+    ],
+    "answer": 1,
+    "oneLineConcept": "사업이 아닌 개인 간 금전 대여 이자 = 비영업대금의 이익(이자소득)",
+    "explanation": "대금업을 사업으로 하지 않는 사람이 일시적으로 돈을 빌려주고 받은 이자는 '비영업대금의 이익'으로 이자소득에 해당합니다. 원천징수세율은 일반 이자(14%)보다 높은 25%입니다.\n\n**틀린 선지**\n- 기타소득: 비영업대금의 이익은 소득세법상 이자소득으로 열거되어 있습니다.\n- 사업소득: 돈을 빌려주는 것을 사업으로 계속 반복하는 대금업자일 때 사업소득이 됩니다.\n- 배당소득: 법인의 이익을 나눠 받는 소득이므로 해당하지 않습니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "소득 구분",
+      "이자소득"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "accounting-manager-income-tax-0006",
+    "certId": "accounting-manager",
+    "subjectId": "tax-accounting",
+    "chapterId": "income-tax",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "소득세법상 원천징수세율을 바르게 연결한 것은?",
+    "choices": [
+      "비영업대금의 이익 – 14%",
+      "원천징수대상 사업소득 – 3%",
+      "일반적인 배당소득 – 25%",
+      "일용근로자의 근로소득 – 기본세율"
+    ],
+    "answer": 2,
+    "oneLineConcept": "원천징수세율: 이자·배당 14%, 비영업대금 25%, 사업소득 3%, 일용근로 6%",
+    "explanation": "원천징수대상 사업소득(예: 프리랜서 인적용역)은 지급액의 3%를 원천징수합니다. 일반 이자·배당은 14%, 비영업대금의 이익은 25%, 일용근로자의 근로소득은 6%입니다.\n\n**틀린 선지**\n- 비영업대금 – 14%: 비영업대금의 이익은 25%입니다(온라인투자연계금융업자를 통한 경우 14%).\n- 일용근로자 – 기본세율: 일용근로자의 근로소득은 6%입니다. 기본세율은 일반 근로소득에 적용합니다.\n- 일반 배당 – 25%: 일반 배당소득은 14%이며, 25%는 출자공동사업자의 배당소득 등에 적용합니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "원천징수",
+      "원천징수세율"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "accounting-manager-income-tax-0007",
+    "certId": "accounting-manager",
+    "subjectId": "tax-accounting",
+    "chapterId": "income-tax",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "2026년 귀속 종합소득이 있는 거주자의 종합소득 과세표준 확정신고 기간은?",
+    "choices": [
+      "2027년 5월 1일 ~ 5월 31일",
+      "2027년 3월 1일 ~ 3월 31일",
+      "2027년 7월 1일 ~ 7월 25일",
+      "2027년 2월 1일 ~ 2월 말일"
+    ],
+    "answer": 1,
+    "oneLineConcept": "종합소득 확정신고: 다음 해 5월 1일~5월 31일",
+    "explanation": "종합소득이 있는 거주자는 과세기간의 다음 연도 5월 1일부터 5월 31일까지 확정신고를 합니다. 종합소득과세표준이 없거나 결손금이 있어도 신고 대상입니다.\n\n**틀린 선지**\n- 3월 1일~3월 31일: 12월 결산 법인의 법인세 신고기한과 혼동한 것입니다.\n- 2월: 근로소득 연말정산 시기와 혼동한 것입니다.\n- 7월 1일~7월 25일: 부가가치세 제1기 확정신고 기간과 혼동한 것입니다.",
+    "frequency": 5,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "확정신고",
+      "신고기한"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "accounting-manager-income-tax-0008",
+    "certId": "accounting-manager",
+    "subjectId": "tax-accounting",
+    "chapterId": "income-tax",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "근로소득에 대한 연말정산은 원칙적으로 언제 하는가?",
+    "choices": [
+      "다음 연도 2월분 급여를 지급할 때",
+      "다음 연도 1월분 급여를 지급할 때",
+      "해당 연도 12월분 급여를 지급할 때",
+      "다음 연도 5월 종합소득 확정신고 때"
+    ],
+    "answer": 1,
+    "oneLineConcept": "연말정산 = 다음 연도 2월분 급여 지급 시 (퇴직자는 퇴직 달)",
+    "explanation": "회사(원천징수의무자)는 다음 연도 2월분 근로소득을 지급할 때 1년간의 근로소득세를 다시 계산해 정산합니다. 퇴직자는 퇴직하는 달의 급여를 지급할 때 정산합니다.\n\n**틀린 선지**\n- 1월분 급여 지급 때: 법에서 정한 시기는 2월분 급여 지급 때입니다.\n- 12월분 급여 지급 때: 그 해가 끝나기 전이라 1년치 공제 자료를 반영할 수 없습니다.\n- 5월 확정신고 때: 다른 소득이 있어 확정신고를 하는 경우의 절차이며, 연말정산 시기가 아닙니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "연말정산",
+      "원천징수"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "accounting-manager-income-tax-0009",
+    "certId": "accounting-manager",
+    "subjectId": "tax-accounting",
+    "chapterId": "income-tax",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "거주자 최씨(45세)의 2026년 기본공제 대상을 판단할 때, 기본공제액은? (모두 생계를 같이 하며 장애인은 없다)\n- 배우자: 소득 없음\n- 아버지(72세): 소득 없음\n- 아들(25세): 소득 없음\n- 딸(15세): 소득 없음",
+    "choices": [
+      "7,500,000원",
+      "6,000,000원",
+      "4,500,000원",
+      "3,000,000원"
+    ],
+    "answer": 2,
+    "oneLineConcept": "기본공제 1명당 150만원 / 직계비속 20세 이하, 직계존속 60세 이상",
+    "explanation": "1. 본인: 대상 → 1명\n2. 배우자: 소득 없음 → 대상\n3. 아버지(72세): 60세 이상 직계존속 → 대상\n4. 아들(25세): 20세를 넘어 대상 아님(장애인 아님)\n5. 딸(15세): 20세 이하 → 대상\n6. 기본공제 = 4명 × 1,500,000 = 6,000,000원\n검산: 5명 중 아들 1명 제외 → 4명\n\n**틀린 선지**\n- 7,500,000원: 25세 아들까지 포함해 5명으로 계산한 금액입니다.\n- 4,500,000원: 본인을 빼고 계산한 금액입니다. 본인도 기본공제 대상입니다.\n- 3,000,000원: 본인과 배우자만 넣은 금액입니다.",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "인적공제",
+      "기본공제",
+      "계산"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "id": "accounting-manager-income-tax-0010",
+    "certId": "accounting-manager",
+    "subjectId": "tax-accounting",
+    "chapterId": "income-tax",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "소득세법상 기본공제에 대한 설명으로 옳지 않은 것은?",
+    "choices": [
+      "기본공제액은 대상자 1명당 연 150만원이다.",
+      "장애인인 부양가족은 나이 요건의 제한을 받지 않는다.",
+      "총급여액 500만원 이하의 근로소득만 있는 배우자는 기본공제 대상이 될 수 있다.",
+      "배우자는 소득금액과 관계없이 언제나 기본공제 대상이다."
+    ],
+    "answer": 4,
+    "oneLineConcept": "배우자도 소득금액 100만원 이하(총급여 500만원 이하) 요건 필요",
+    "explanation": "배우자는 나이 요건은 없지만 소득 요건은 있습니다. 해당 과세기간의 소득금액 합계가 100만원 이하이거나, 총급여액 500만원 이하의 근로소득만 있어야 기본공제 대상이 됩니다.\n\n**틀린 선지**\n- 1명당 150만원: 소득세법에 정한 금액과 같습니다.\n- 총급여 500만원 이하 배우자: 소득세법에 명시된 내용입니다.\n- 장애인은 나이 제한 없음: 소득세법에 명시된 내용입니다(소득 요건은 적용).",
+    "frequency": 4,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "인적공제",
+      "기본공제"
+    ],
+    "levelLock": true
+  },
+  {
+    "id": "accounting-manager-income-tax-0011",
+    "certId": "accounting-manager",
+    "subjectId": "tax-accounting",
+    "chapterId": "income-tax",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "다음 중 종합소득에 합산하지 않고 원천징수로 과세가 끝나는(무조건 분리과세) 소득은?",
+    "choices": [
+      "사업소득",
+      "합계 2천만원을 넘는 이자소득",
+      "공적연금소득",
+      "복권 당첨금"
+    ],
+    "answer": 4,
+    "oneLineConcept": "복권 당첨금은 무조건 분리과세 기타소득",
+    "explanation": "복권 당첨금은 기타소득 중 무조건 분리과세 대상으로, 지급할 때 원천징수하면 과세가 끝나며 종합소득에 합산하지 않습니다.\n\n**틀린 선지**\n- 공적연금소득: 종합소득에 합산하는 소득입니다(연말정산 후 다른 소득이 있으면 확정신고).\n- 사업소득: 종합소득에 합산합니다(분리과세 주택임대소득 같은 예외만 있음).\n- 2천만원 초과 이자소득: 금융소득 종합과세 대상입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "분리과세",
+      "기타소득"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        3,
+        4
+      ],
+      "intermediate": [
+        1,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "accounting-manager-income-tax-0012",
+    "certId": "accounting-manager",
+    "subjectId": "tax-accounting",
+    "chapterId": "income-tax",
+    "source": "predicted",
+    "level": "basic",
+    "stem": "다음 중 소득세가 과세되지 않는(비과세) 소득은?",
+    "choices": [
+      "상장주식 배당금",
+      "상가를 빌려주고 받은 임대료",
+      "은행 정기예금 이자",
+      "논·밭을 작물 생산에 쓰도록 빌려주고 받은 소득"
+    ],
+    "answer": 4,
+    "oneLineConcept": "논·밭을 작물 생산에 이용하게 한 소득은 비과세",
+    "explanation": "소득세법은 논·밭을 작물 생산에 이용하게 하여 생기는 소득을 비과세 사업소득으로 정하고 있습니다. 농업을 보호하려는 취지입니다.\n\n**틀린 선지**\n- 상가 임대료: 부동산임대업에서 생긴 사업소득으로 과세됩니다.\n- 정기예금 이자: 이자소득으로 과세됩니다.\n- 배당금: 배당소득으로 과세됩니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "비과세",
+      "사업소득"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        2,
+        4
+      ],
+      "intermediate": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "id": "accounting-manager-income-tax-0013",
+    "certId": "accounting-manager",
+    "subjectId": "tax-accounting",
+    "chapterId": "income-tax",
+    "source": "predicted",
+    "level": "intermediate",
+    "stem": "다음 중 소득세법상 양도소득으로 과세되는 것은?",
+    "choices": [
+      "부동산매매업자가 판매용으로 지은 건물을 팔아 생긴 이익",
+      "회사원이 보유하던 토지를 팔아 생긴 이익",
+      "개인이 쓰던 가구를 중고로 팔아 생긴 이익",
+      "회사원이 퇴직하면서 받은 퇴직금"
+    ],
+    "answer": 2,
+    "oneLineConcept": "양도소득 = 토지·건물 등 열거 자산을 사업 아닌 형태로 판 이익",
+    "explanation": "양도소득은 토지·건물, 부동산에 관한 권리, 일정한 주식 등 소득세법에 열거된 자산을 팔아서 생긴 이익입니다. 회사원이 개인 자산으로 보유한 토지를 판 이익이 대표적입니다.\n\n**틀린 선지**\n- 부동산매매업자의 건물 판매: 부동산을 사고파는 것이 사업이므로 사업소득입니다.\n- 퇴직금: 퇴직소득으로 따로 분류과세합니다.\n- 중고 가구 판매: 양도소득세 과세 대상 자산으로 열거되어 있지 않습니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "양도소득",
+      "소득 구분"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        2
+      ],
+      "intermediate": [
+        1,
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "id": "accounting-manager-income-tax-0014",
+    "certId": "accounting-manager",
+    "subjectId": "tax-accounting",
+    "chapterId": "income-tax",
+    "source": "predicted",
+    "level": "advanced",
+    "stem": "종합소득이 있는 거주자(신규 사업자 등 예외 아님)의 소득세 중간예납에 대한 설명으로 옳은 것은?",
+    "choices": [
+      "1월 1일~6월 30일을 중간예납기간으로 하고, 고지된 세액을 11월 30일까지 납부한다.",
+      "1월 1일~3월 31일을 중간예납기간으로 하고, 4월 25일까지 납부한다.",
+      "1월 1일~6월 30일을 중간예납기간으로 하고, 8월 31일까지 납부한다.",
+      "7월 1일~12월 31일을 중간예납기간으로 하고, 다음 해 5월 31일까지 납부한다."
+    ],
+    "answer": 1,
+    "oneLineConcept": "소득세 중간예납: 1~6월분, 11월에 고지 세액 납부",
+    "explanation": "소득세 중간예납은 1월 1일부터 6월 30일까지를 중간예납기간으로 하여, 세무서가 고지한 세액을 11월 30일까지 납부합니다. 실적이 크게 줄었으면 11월에 중간예납추계액을 신고·납부할 수도 있습니다.\n\n**틀린 선지**\n- 8월 31일까지: 12월 결산 법인의 법인세 중간예납 기한과 혼동한 것입니다.\n- 1~3월, 4월 25일: 부가가치세 제1기 예정신고와 혼동한 것입니다.\n- 7~12월, 다음 해 5월: 종합소득 확정신고와 혼동한 것입니다.",
+    "frequency": 3,
+    "reviewStatus": "verified",
+    "reviewedAt": "2026-11-07",
+    "tags": [
+      "중간예납",
+      "소득세"
+    ],
+    "choicesByLevel": {
+      "basic": [
+        1,
+        3
+      ],
+      "intermediate": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+]
