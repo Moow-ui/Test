@@ -8,6 +8,7 @@ import { StaticQuestion } from "@/components/StaticQuestion";
 import { ConceptByline, ConceptCards, ConceptCompare, ConceptFigures, ConceptPoints } from "@/components/concepts/ConceptParts";
 import { IssuerNotice } from "@/components/cert/IssuerNotice";
 import { BasisBadge } from "@/components/cert/BasisBadge";
+import { PrintTracker } from "@/components/concepts/PrintButton";
 import { ChapterPitfalls, ChapterSolve, ChapterWeight, PastTrend } from "@/components/cert/ChapterExtras";
 import { chapterHref } from "@/lib/chapter-link";
 import { mergeKeyPoints } from "@/lib/content-quality";
@@ -127,6 +128,7 @@ export default async function ConceptChapterPage({ params }: Props) {
           {fmt(m.concepts.weightEstimated, { n: chapter.examWeight })}
         </p>
         {merged && <BasisBadge lang={lang} year={cert.basisYear} />}
+        <PrintTracker certId={cert.id} page="chapter" hasButton={false} />
       </header>
 
       {/* 개요: 요약 노트와 같은 글 (P16) */}

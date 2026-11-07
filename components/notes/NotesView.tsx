@@ -7,6 +7,7 @@ import { QuestionImage } from "@/components/QuestionImage";
 import { ChapterNotesLink } from "@/components/quiz/ChapterNotesLink";
 import { QuestionBadges } from "@/components/quiz/QuestionBadges";
 import { useQuestions } from "@/lib/data/client";
+import { track } from "@/lib/analytics";
 import { circled } from "@/lib/format";
 import { fmt, localePath } from "@/lib/i18n";
 import {
@@ -77,7 +78,14 @@ export function NotesView({ cert }: { cert: { id: string; name: string; subjects
             <Link href={`${certPath}/quiz?mode=notes`} className="btn btn-primary btn-lg">
               {m.retry}
             </Link>
-            <button type="button" className="btn btn-lg" onClick={() => window.print()}>
+            <button
+              type="button"
+              className="btn btn-lg"
+              onClick={() => {
+                track("notes_print", { cert_id: cert.id });
+                window.print();
+              }}
+            >
               {m.print}
             </button>
             <button type="button" className="btn btn-lg" onClick={() => setConfirmClear(true)}>

@@ -6,7 +6,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { Stars } from "@/components/Stars";
 import { ConceptByline, ConceptNote, ExamSummary } from "@/components/concepts/ConceptParts";
 import { NoteNavigator } from "@/components/concepts/NoteNavigator";
-import { PrintButton } from "@/components/concepts/PrintButton";
+import { PrintButton, PrintTracker } from "@/components/concepts/PrintButton";
 import { IssuerNotice } from "@/components/cert/IssuerNotice";
 import { BasisBadge } from "@/components/cert/BasisBadge";
 import { getCertificationIn, getConcepts } from "@/lib/data";
@@ -85,6 +85,7 @@ export default async function ConceptsPage({ params }: Props) {
           )}
         </h1>
         <BasisBadge lang={lang} year={cert.basisYear} />
+        <PrintTracker certId={cert.id} page="book" hasButton={!!cert.printable} />
         {/* 인쇄·PDF 버튼 (meta.json 의 printable 이 있는 자격증만) + 인쇄물에만 나오는 출처 한 줄 */}
         {cert.printable && (
           <>
