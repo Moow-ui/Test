@@ -37,7 +37,7 @@ export default async function SupportPage({ params }: Props) {
   const intro = fmt(m.intro, { brand });
 
   return (
-    <div className="w-full max-w-xl space-y-8">
+    <div className="fixed-text-size w-full max-w-xl space-y-8">
       <header className="flex flex-col items-center gap-4 text-center">
         <Link href={localePath(lang)} aria-label={fmt(m.back, { brand })} className="rounded-3xl">
           <LogoMark size={96} />

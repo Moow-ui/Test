@@ -28,6 +28,15 @@ html[data-font="xl"] {
     font-size: 18px;
   }
 }
+/* 응원하기 페이지는 "가 가 가" 설정과 상관없이 기본 크기로 고정 (2026-11-07 회장 결정). PC 18px · 휴대폰 15.5px */
+html:has(.fixed-text-size) {
+  font-size: 18px !important;
+}
+@media (max-width: 639px) {
+  html:has(.fixed-text-size) {
+    font-size: 15.5px !important;
+  }
+}
 
 body {
   background: var(--bg);
