@@ -22,6 +22,7 @@ import {
   touchRecentCert,
   type QuizSession,
 } from "@/lib/storage";
+import { elapsedSec, track, useTrackLeave } from "@/lib/analytics";
 import type { ExamInfo, PoolItem, Question, QuizLevel, Subject } from "@/lib/types";
 import { reportSolve } from "@/lib/review-client";
 import { useMessages } from "@/lib/use-messages";
@@ -150,13 +151,37 @@ export function QuizRunner({ cert }: { cert: QuizCert }) {
     }
     if (!pool || handledRef.current === paramString) return;
     handledRef.current = paramString;
-    createSession(cert, pool, new URLSearchParams(paramString), m);
+    const created = createSession(cert, pool, new URLSearchParams(paramString), m);
+    if (created) {
+      track("quiz_start", {
+        cert_id: cert.id,
+        mode: created.mode,
+        level: created.level ?? "none",
+        subject: created.subjectId ? "one" : "all",
+        question_count: created.questionIds.length,
+      });
+    }
     touchRecentCert(cert.id);
     router.replace(`${certPath}/quiz`);
   }, [paramString, cert, pool, router, m, certPath]);
 
   const sessionQuestions = loaded ?? [];
   const total = sessionQuestions.length;
+
+  // 풀이 도중에 떠나면 몇 번째 문제에서 그만뒀는지 남긴다
+  const leaving =
+    hydrated && session && !session.finishedAt && total > 0
+      ? {
+          cert_id: cert.id,
+          mode: session.mode,
+          level: session.level ?? "none",
+          question_count: total,
+          question_number: Math.min(session.currentIndex, total - 1) + 1,
+          answered: Object.keys(session.answers).length,
+          duration_sec: elapsedSec(session.startedAt),
+        }
+      : null;
+  useTrackLeave("quiz_leave", leaving);
 
   if (!hydrated || paramString || !loaded) {
     return (
@@ -252,6 +277,15 @@ export function QuizRunner({ cert }: { cert: QuizCert }) {
     addWrongNotes(cert.id, sessionQuestions, session.answers);
     finishSession(session);
     reportSolve(cert.id);
+    track("quiz_complete", {
+      cert_id: cert.id,
+      mode: session.mode,
+      level: session.level ?? "none",
+      question_count: total,
+      answered: sessionQuestions.filter((q) => session.answers[q.id] !== undefined).length,
+      score: Math.round(((total - wrongIds.length) / total) * 100),
+      duration_sec: elapsedSec(session.startedAt),
+    });
     window.scrollTo(0, 0);
   };
 

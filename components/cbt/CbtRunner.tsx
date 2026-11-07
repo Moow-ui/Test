@@ -24,6 +24,7 @@ import {
   touchRecentCert,
   type CbtSession,
 } from "@/lib/storage";
+import { track, useTrackLeave } from "@/lib/analytics";
 import type { Question } from "@/lib/types";
 import { reportSolve } from "@/lib/review-client";
 import { useMessages } from "@/lib/use-messages";
@@ -84,6 +85,14 @@ export function CbtRunner({ cert }: { cert: QuizCert }) {
     }
     addWrongNotes(cert.id, asked, target.answers);
     if (asked.length > 0) reportSolve(cert.id);
+    track("cbt_complete", {
+      cert_id: cert.id,
+      question_count: asked.length,
+      answered: asked.filter((q) => target.answers[q.id] !== undefined).length,
+      score: asked.length > 0 ? Math.round(((asked.length - wrongIds.length) / asked.length) * 100) : 0,
+      time_up: target.remainingSec <= 1 ? 1 : 0,
+      duration_sec: target.totalSec - target.remainingSec,
+    });
     setRunning(false);
     window.scrollTo(0, 0);
   }
@@ -101,6 +110,20 @@ export function CbtRunner({ cert }: { cert: QuizCert }) {
     return () => window.clearInterval(timer);
   }, [ticking]);
 
+  // 시험 도중에 떠나면 몇 번째 문제에서 그만뒀는지 남긴다 ("잠시 멈춤" 뒤 떠나도 센다)
+  useTrackLeave(
+    "cbt_leave",
+    inProgress && session
+      ? {
+          cert_id: cert.id,
+          question_count: total,
+          question_number: Math.min(session.currentIndex, total - 1) + 1,
+          answered: Object.keys(session.answers).length,
+          duration_sec: session.totalSec - session.remainingSec,
+        }
+      : null,
+  );
+
   // 실제 시험과 같은 문항 수로 낼 수 있는가 (과목마다 문제가 questionCount 만큼 있어야 한다)
   const enough = !!pool && mockExamShortage(cert.subjects, pool).length === 0;
 
@@ -113,6 +136,7 @@ export function CbtRunner({ cert }: { cert: QuizCert }) {
       history: getHistory(),
     });
     startCbt(cert.id, picked.map((q) => q.id), mockExamSeconds(cert.examInfo));
+    track("cbt_start", { cert_id: cert.id, question_count: picked.length });
     touchRecentCert(cert.id);
     setRunning(true);
     window.scrollTo(0, 0);
