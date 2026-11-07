@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
-import { Fold } from "@/components/Fold";
+import { Fold, FoldMark } from "@/components/Fold";
 import { JsonLd } from "@/components/JsonLd";
 import { AnalysisPanel } from "@/components/cert/AnalysisPanel";
 import { CertBoxes } from "@/components/cert/CertBoxes";
@@ -197,13 +197,18 @@ export default async function CertPage({ params }: Props) {
       {/* 운영진 학습 팁(운영진 작성). 이용자 후기와 섞지 않고 따로 둔다 */}
       {cert.studyTips && <StudyTips locale={lang} certName={cert.name} tips={cert.studyTips} />}
 
-      {/* 이 자격증을 다룬 시험 준비 안내 글 (글이 있을 때만) */}
+      {/* 이 자격증을 다룬 시험 준비 안내 글 (글이 있을 때만). 학습 팁처럼 접어 둔 상자 */}
       {guides.length > 0 && (
-        <section aria-labelledby="cert-guides" className="space-y-2">
-          <h2 id="cert-guides" className="text-lg font-bold">
-            {m.guide.certRelated}
-          </h2>
-          <ul className="space-y-2">
+        <details aria-labelledby="cert-guides" className="card">
+          <summary className="flex min-h-14 items-center justify-between gap-2 px-4">
+            <h2 id="cert-guides" className="font-bold">
+              {m.guide.certRelated}
+            </h2>
+            <span className="shrink-0 text-sm font-bold text-accent">
+              <FoldMark />
+            </span>
+          </summary>
+          <ul className="space-y-2 px-4 pb-4">
             {guides.map((g) => (
               <li key={g.slug}>
                 <Link href={localePath(lang, `/guide/${g.slug}`)} className="link">
@@ -212,19 +217,26 @@ export default async function CertPage({ params }: Props) {
               </li>
             ))}
           </ul>
-        </section>
+        </details>
       )}
 
-      {/* 읽을거리(출제 경향·자격증 소개·자주 묻는 질문)는 맨 아래에 작게 접어 둔다 */}
+      {/* 읽을거리(출제 경향·자격증 소개·자주 묻는 질문)도 학습 팁처럼 접어 둔 상자 (2026-11-07 회장 결정) */}
       {content && (
-        <details className="pt-6 text-sm">
-          <summary className="inline-flex min-h-10 items-center font-bold text-ink-sub underline underline-offset-2">
-            <span className="when-closed">{fmt(m.cert.more, { name: cert.name })}</span>
-            <span className="when-open">{m.common.hide}</span>
+        <details aria-labelledby="cert-more" className="card">
+          <summary className="flex min-h-14 items-center justify-between gap-2 px-4 py-2">
+            <span className="flex flex-wrap items-baseline gap-x-2">
+              <h2 id="cert-more" className="font-bold">
+                {fmt(m.cert.more, { name: cert.name })}
+              </h2>
+              <span className="text-sm text-ink-sub">{m.cert.moreSub}</span>
+            </span>
+            <span className="shrink-0 text-sm font-bold text-accent">
+              <FoldMark />
+            </span>
           </summary>
-          <div className="mt-2 space-y-6">
+          <div className="space-y-6 px-4 pb-4 text-sm">
             <section className="space-y-2">
-              <h2 className="font-bold">{fmt(m.cert.trendTitle, { name: cert.name, ...writtenVars(lang, cert.writtenExam) })}</h2>
+              <h3 className="font-bold">{fmt(m.cert.trendTitle, { name: cert.name, ...writtenVars(lang, cert.writtenExam) })}</h3>
               <p>{content.trendSummary}</p>
               <p>{content.studyTip}</p>
               {cert.ready && (
@@ -236,11 +248,11 @@ export default async function CertPage({ params }: Props) {
               )}
             </section>
             <section className="space-y-2">
-              <h2 className="font-bold">{fmt(m.cert.introTitle, { name: cert.name })}</h2>
+              <h3 className="font-bold">{fmt(m.cert.introTitle, { name: cert.name })}</h3>
               <p>{content.intro}</p>
             </section>
             <section>
-              <h2 className="font-bold">{m.cert.faqTitle}</h2>
+              <h3 className="font-bold">{m.cert.faqTitle}</h3>
               <dl className="mt-2 space-y-4">
                 {content.faqs.map((faq) => (
                   <div key={faq.question}>
