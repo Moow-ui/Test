@@ -67,6 +67,14 @@ export async function Footer({ locale }: { locale: Locale }) {
           </nav>
         </div>
 
+        {/* 응원하기: 문구 한 줄과 버튼. 송금 정보는 응원 페이지에만 둔다 (문제 풀이 화면에는 하단 안내가 없다) */}
+        <div className="mt-8 flex flex-col gap-3 border-t border-line-soft pt-6 sm:flex-row sm:items-center sm:justify-between">
+          <p className="text-base text-ink">{fmt(m.support.footerText, { brand })}</p>
+          <Link href={localePath(locale, "/support")} className="btn shrink-0">
+            {m.support.footerButton}
+          </Link>
+        </div>
+
         {/* 아래: 고지문 (작은 글씨) + 저작권 · 기록 */}
         <div className="mt-8 space-y-2 border-t border-line-soft pt-6">
           <p>{m.site.notice}</p>

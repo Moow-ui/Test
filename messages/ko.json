@@ -524,7 +524,10 @@
     "review_link": "링크(인터넷 주소)는 넣을 수 없습니다.",
     "review_phone": "전화번호는 넣을 수 없습니다.",
     "review_banned": "쓸 수 없는 말이 들어 있습니다.",
-    "review_limit": "후기는 하루에 3개까지 쓸 수 있습니다."
+    "review_limit": "후기는 하루에 3개까지 쓸 수 있습니다.",
+    "cheer_length": "응원 한마디는 10~300자로 써 주세요.",
+    "cheer_nickname": "닉네임은 20자까지 쓸 수 있습니다.",
+    "cheer_limit": "응원은 하루에 3개까지 남길 수 있습니다."
   },
   "admin": {
     "title": "관리자",
@@ -566,7 +569,17 @@
     "hide": "숨기기",
     "show": "다시 보이기",
     "delete": "삭제",
-    "deleteConfirm": "이 후기를 삭제할까요? 되돌릴 수 없습니다."
+    "deleteConfirm": "이 후기를 삭제할까요? 되돌릴 수 없습니다.",
+    "cheers": "응원",
+    "cheerCount": "전체 {n}개 · 공개 {public}개",
+    "cheerNone": "아직 받은 응원이 없습니다.",
+    "cheerList": "최신 응원 (최대 {n}개). [공개]를 누른 글만 응원 페이지에 보입니다.",
+    "cheerLine": "{lang} · {nickname}",
+    "cheerPublic": "공개 중",
+    "cheerPrivate": "비공개",
+    "publish": "공개",
+    "unpublish": "비공개로 되돌리기",
+    "cheerDeleteConfirm": "이 응원을 삭제할까요? 되돌릴 수 없습니다."
   },
   "concepts": {
     "printButton": "🖨 인쇄·PDF로 저장",
@@ -724,6 +737,10 @@
     },
     "guide": {
       "title": "{title} | {brand}"
+    },
+    "support": {
+      "title": "응원하기 | {brand}",
+      "description": "{brand}을 응원하는 곳입니다. 커피 한 잔을 보내거나 응원 한마디를 남길 수 있습니다."
     }
   },
   "og": {
@@ -823,5 +840,36 @@
       "일정이 지난 글에는 \"지난 일정\" 안내를 붙입니다."
     ],
     "reportError": "틀린 내용 알리기"
+  },
+  "support": {
+    "footerText": "{brand}은 회원가입 없이 누구나 쓸 수 있도록 운영자가 직접 비용을 내며 운영합니다. 도움이 되셨다면 커피 한 잔으로 응원해 주세요.",
+    "footerButton": "응원하기",
+    "title": "{brand} 응원하기",
+    "intro": "{brand}은 회원가입 없이 누구나 쓸 수 있도록 운영자가 직접 비용을 내며 운영합니다. 도움이 되셨다면 커피 한 잔으로 응원해 주세요. 돈을 보내지 않아도 아래에 응원 한마디를 남겨 주시면 큰 힘이 됩니다.",
+    "payTitle": "커피 한 잔 보내기",
+    "payNote": "보내 주신 돈은 사이트 운영비(서버·도메인 비용)에 씁니다.",
+    "account": "{bank} {account}",
+    "holder": "예금주 {holder}",
+    "copy": "계좌번호 복사",
+    "copied": "계좌번호를 복사했습니다. 은행 앱에 붙여 넣으세요.",
+    "copyFailed": "복사하지 못했습니다. 계좌번호를 직접 적어 주세요.",
+    "toss": "토스로 보내기",
+    "kakaoPay": "카카오페이로 보내기",
+    "qrHint": "휴대폰 카메라로 QR 그림을 찍으면 송금 화면이 열립니다.",
+    "tossQr": "토스 송금 QR",
+    "kakaoPayQr": "카카오페이 송금 QR",
+    "messageTitle": "응원 한마디 남기기",
+    "messageIntro": "돈을 보내지 않아도 괜찮습니다. 남겨 주신 글은 운영자가 먼저 읽고, 그중 일부를 아래 '받은 응원'에 소개합니다.",
+    "body": "응원 한마디 (10~300자)",
+    "bodyCount": "{n} / {max}자",
+    "nickname": "닉네임 (선택, 20자까지)",
+    "nicknameHint": "비워 두면 '익명'으로 표시됩니다.",
+    "privacyHint": "이름·연락처 같은 개인정보는 적지 말아 주세요.",
+    "submit": "응원 보내기",
+    "sent": "응원이 전달되었습니다. 고맙습니다!",
+    "writeAgain": "한마디 더 남기기",
+    "receivedTitle": "받은 응원",
+    "anonymous": "익명",
+    "back": "처음 화면으로 돌아가기"
   }
 }

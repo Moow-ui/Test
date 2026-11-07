@@ -42,7 +42,7 @@ export function clientIp(headers: Headers): string {
  * IP 를 그대로 저장하지 않기 위한 해시. scope 를 섞어서 범위 밖에서는 같은 사람인지 알 수 없게 한다
  * (후기는 날짜, 신고는 후기 id).
  */
-async function ipHash(ip: string, scope: string): Promise<string> {
+export async function ipHash(ip: string, scope: string): Promise<string> {
   const salt = (await readEnv()).REVIEW_HASH_SALT ?? process.env.REVIEW_HASH_SALT;
   return sha256(`${typeof salt === "string" && salt ? salt : "qpass"}|${ip}|${scope}`);
 }

@@ -90,6 +90,19 @@ const SCHEMA = [
      created_at INTEGER NOT NULL,
      PRIMARY KEY (review_id, ip_hash)
    )`,
+  // 응원 한마디 (응원하기 페이지. 자격증 후기와 따로 둔다). 처음에는 비공개이고 관리자가 고른 글만 공개한다.
+  // ip_hash 는 "같은 IP 하루 3개" 제한용 (날짜를 섞은 해시). public: 0 비공개 · 1 공개
+  `CREATE TABLE IF NOT EXISTS cheers (
+     id TEXT PRIMARY KEY,
+     locale TEXT NOT NULL,
+     body TEXT NOT NULL,
+     nickname TEXT NOT NULL,
+     ip_hash TEXT NOT NULL,
+     created_at INTEGER NOT NULL,
+     public INTEGER NOT NULL DEFAULT 0
+   )`,
+  `CREATE INDEX IF NOT EXISTS cheers_public ON cheers (locale, public, created_at)`,
+  `CREATE INDEX IF NOT EXISTS cheers_ip ON cheers (ip_hash, created_at)`,
   // 자격증별 주간 풀이 횟수 (횟수만 센다. 누가 풀었는지는 저장하지 않는다)
   `CREATE TABLE IF NOT EXISTS quiz_activity (
      cert_id TEXT NOT NULL,

@@ -76,6 +76,8 @@ lib/storage.ts             ★ localStorage 는 여기 한 곳
 lib/review-rules.ts        후기 입력 규칙 (별점·10~300자·링크·전화번호·금칙어) · lib/review-client.ts 후기·풀이 횟수 API 호출
 lib/server/                D1, 세션, 비밀번호 해시, 후기·주간 풀이 횟수(reviews.ts)
 components/cert/StudyTips.tsx  운영진 학습 팁 상자 · components/reviews/  이용자 후기란 (자격증 페이지 맨 아래)
+config/support.ts          ★ 응원하기 송금 정보 (계좌·토스·카카오페이, QR 그림 public/support/) · /{lang}/support 응원 페이지 (noindex)
+lib/cheer-rules.ts         응원 한마디 규칙 · lib/server/cheers.ts 저장 (처음엔 비공개, 관리자 화면 "응원" 칸에서 고른 것만 공개)
 scripts/                   validate-data, build-data, import-questions, convert-choices, check-meta, ci-build
 ```
 

@@ -3,10 +3,12 @@ import { headers } from "next/headers";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ReportStatusButton } from "@/components/admin/ReportStatusButton";
+import { CheerAdminButtons } from "@/components/admin/CheerAdminButtons";
 import { ReviewAdminButtons } from "@/components/admin/ReviewAdminButtons";
 import { brandName, fmt, getMessages } from "@/lib/i18n";
 import { getAdminIdentity } from "@/lib/server/access";
 import { MEMBER_LIST_LIMIT, REVIEW_LIST_LIMIT, formatKst, getAdminOverview, getAdminReviews } from "@/lib/server/admin";
+import { CHEER_LIST_LIMIT, getAdminCheers } from "@/lib/server/cheers";
 import { getDb } from "@/lib/server/db";
 
 // 관리자 한 사람이 보는 화면이라 문구는 한국어만 쓴다
@@ -24,7 +26,7 @@ export function generateMetadata(): Metadata {
   };
 }
 
-const TABS = ["members", "reports", "reviews"] as const;
+const TABS = ["members", "reports", "reviews", "cheers"] as const;
 type Tab = (typeof TABS)[number];
 
 export default async function AdminPage({ searchParams }: { searchParams: Promise<{ tab?: string }> }) {
@@ -48,8 +50,14 @@ export default async function AdminPage({ searchParams }: { searchParams: Promis
   const tab: Tab = TABS.find((t) => t === requested) ?? "members";
   const data = await getAdminOverview(db);
   const reviewData = tab === "reviews" ? await getAdminReviews(db) : null;
+  const cheerData = tab === "cheers" ? await getAdminCheers(db) : null;
   const statuses: Record<string, string> = all.reviews.statuses;
-  const tabLabels: Record<Tab, string> = { members: m.members, reports: m.reports, reviews: m.reviews };
+  const tabLabels: Record<Tab, string> = {
+    members: m.members,
+    reports: m.reports,
+    reviews: m.reviews,
+    cheers: m.cheers,
+  };
   const stats = [
     { label: m.total, value: data.total },
     { label: m.today, value: data.today },
@@ -199,6 +207,44 @@ export default async function AdminPage({ searchParams }: { searchParams: Promis
                         show: m.show,
                         delete: m.delete,
                         deleteConfirm: m.deleteConfirm,
+                        cancel: all.common.cancel,
+                        failed: m.failed,
+                      }}
+                    />
+                  </li>
+                ))}
+              </ul>
+            </>
+          )}
+        </section>
+      )}
+      {cheerData && (
+        <section aria-labelledby="cheers-title" className="space-y-4">
+          <h2 id="cheers-title" className="text-xl font-bold">
+            {m.cheers}
+          </h2>
+          <p className="font-bold">{fmt(m.cheerCount, { n: cheerData.total, public: cheerData.publicTotal })}</p>
+          {cheerData.cheers.length === 0 ? (
+            <p className="card p-4">{m.cheerNone}</p>
+          ) : (
+            <>
+              <h3 className="font-bold">{fmt(m.cheerList, { n: CHEER_LIST_LIMIT })}</h3>
+              <ul className="space-y-2">
+                {cheerData.cheers.map((c) => (
+                  <li key={c.id} className="card space-y-2 p-4">
+                    <p className="text-sm font-bold text-ink-sub">
+                      {formatKst(c.createdAt)} · {fmt(m.cheerLine, { lang: c.locale, nickname: c.nickname || all.support.anonymous })}
+                      <span className={`ml-2 ${c.public ? "text-ok" : ""}`}>{c.public ? m.cheerPublic : m.cheerPrivate}</span>
+                    </p>
+                    <p className="break-words">{c.body}</p>
+                    <CheerAdminButtons
+                      id={c.id}
+                      isPublic={c.public === 1}
+                      labels={{
+                        publish: m.publish,
+                        unpublish: m.unpublish,
+                        delete: m.delete,
+                        deleteConfirm: m.cheerDeleteConfirm,
                         cancel: all.common.cancel,
                         failed: m.failed,
                       }}

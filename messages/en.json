@@ -524,7 +524,10 @@
     "review_link": "Links are not allowed.",
     "review_phone": "Phone numbers are not allowed.",
     "review_banned": "Your review contains words that are not allowed.",
-    "review_limit": "You can post up to 3 reviews a day."
+    "review_limit": "You can post up to 3 reviews a day.",
+    "cheer_length": "Messages must be 10–300 characters.",
+    "cheer_nickname": "Display names can be up to 20 characters.",
+    "cheer_limit": "You can leave up to 3 messages a day."
   },
   "admin": {
     "title": "Admin",
@@ -566,7 +569,17 @@
     "hide": "Hide",
     "show": "Show again",
     "delete": "Delete",
-    "deleteConfirm": "Delete this review? This cannot be undone."
+    "deleteConfirm": "Delete this review? This cannot be undone.",
+    "cheers": "Messages",
+    "cheerCount": "{n} total · {public} public",
+    "cheerNone": "No messages yet.",
+    "cheerList": "Latest messages (up to {n}). Only messages you publish appear on the support page.",
+    "cheerLine": "{lang} · {nickname}",
+    "cheerPublic": "Public",
+    "cheerPrivate": "Private",
+    "publish": "Publish",
+    "unpublish": "Make private",
+    "cheerDeleteConfirm": "Delete this message? This cannot be undone."
   },
   "concepts": {
     "printButton": "🖨 Print / Save as PDF",
@@ -724,6 +737,10 @@
     },
     "guide": {
       "title": "{title} | {brand}"
+    },
+    "support": {
+      "title": "Support us | {brand}",
+      "description": "Support {brand} by buying us a coffee or leaving a short message."
     }
   },
   "og": {
@@ -823,5 +840,36 @@
       "Articles whose dates have passed are clearly marked."
     ],
     "reportError": "Report an error"
+  },
+  "support": {
+    "footerText": "{brand} is free for everyone, no sign-up needed, and is paid for out of the operator's own pocket. If it helped you, you can buy us a coffee.",
+    "footerButton": "Support us",
+    "title": "Support {brand}",
+    "intro": "{brand} is free for everyone, no sign-up needed, and is paid for out of the operator's own pocket. If it helped you, you can buy us a coffee. A short message of support below helps a lot too, no payment needed.",
+    "payTitle": "Buy us a coffee",
+    "payNote": "For now we can only receive money through Korean payment apps (Korean bank transfer, Toss, KakaoPay). Any money goes toward running the site (server and domain costs).",
+    "account": "{bank} {account}",
+    "holder": "Account holder: {holder}",
+    "copy": "Copy account number",
+    "copied": "Account number copied. Paste it into your banking app.",
+    "copyFailed": "Could not copy. Please write the account number down.",
+    "toss": "Send with Toss",
+    "kakaoPay": "Send with KakaoPay",
+    "qrHint": "Scan a QR code with your phone camera to open the payment screen.",
+    "tossQr": "Toss payment QR code",
+    "kakaoPayQr": "KakaoPay payment QR code",
+    "messageTitle": "Leave a message",
+    "messageIntro": "No payment needed. The operator reads every message first and shares some of them below under \"Messages we received.\"",
+    "body": "Your message (10–300 characters)",
+    "bodyCount": "{n} / {max} characters",
+    "nickname": "Display name (optional, up to 20 characters)",
+    "nicknameHint": "Leave it blank to show as \"Anonymous.\"",
+    "privacyHint": "Please do not include personal information such as your name or phone number.",
+    "submit": "Send message",
+    "sent": "Your message was sent. Thank you!",
+    "writeAgain": "Write another message",
+    "receivedTitle": "Messages we received",
+    "anonymous": "Anonymous",
+    "back": "Back to the home page"
   }
 }

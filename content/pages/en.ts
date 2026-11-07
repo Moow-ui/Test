@@ -100,9 +100,11 @@ Contact: {email}`,
 
 **Reviews**: your star rating, the review text, where you are now (studying, passed, or did not pass), and a display name. You can post without an account. To limit how many reviews come from one place in a day we store a one-way hash of your IP address, never the address itself. Reviews are public, so please do not include personal information.
 
+**Messages of support**: your message and an optional display name. You can leave one without an account. Messages are private at first; the operator reads them and publishes only the ones they choose on the support page. To limit how many come from one place in a day we store a one-way hash of your IP address, never the address itself.
+
 **Practice counts**: when a practice session ends we add one to a weekly count for that exam. We do not record who took it.
 
-We use this information only to provide and secure the service, to publish reviews, and to fix reported questions.`,
+We use this information only to provide and secure the service, to publish reviews and selected messages of support, and to fix reported questions.`,
       },
       {
         heading: "If you do not log in",
@@ -155,7 +157,8 @@ We may also disclose information if required by law.`,
 - **Login sessions**: up to 30 days, or until you log out.
 - **Failed login counts**: cleared when you log in successfully or delete your account.
 - **Problem reports**: contain no information that identifies you and are kept to maintain question quality.
-- **Reviews**: stay published until removed. Reviews posted while logged in are deleted when you delete your account. To remove a review posted without an account, email {email}.`,
+- **Reviews**: stay published until removed. Reviews posted while logged in are deleted when you delete your account. To remove a review posted without an account, email {email}.
+- **Messages of support**: kept until the operator deletes them. To have yours removed, email {email}.`,
       },
       {
         heading: "Your rights and how to delete your data",
