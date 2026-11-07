@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import "pretendard/dist/web/variable/pretendardvariable-dynamic-subset.css";
 import "../globals.css";
 import { FontLoader } from "@/components/FontLoader";
+import { Clarity } from "@/components/Clarity";
 import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 import { SyncManager } from "@/components/auth/SyncManager";
 import { LOCALES, brandName, getMessages, isLocale } from "@/lib/i18n";
@@ -70,6 +71,7 @@ export default async function RootLayout({ children, params }: Props) {
         <FontLoader />
         <SyncManager />
         <GoogleAnalytics />
+        <Clarity />
       </body>
     </html>
   );

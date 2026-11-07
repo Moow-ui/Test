@@ -58,3 +58,12 @@ export const SHOW_AD_SLOTS = process.env.NEXT_PUBLIC_SHOW_AD_SLOTS === "1";
 const gaRaw = (process.env.NEXT_PUBLIC_GA_ID ?? "G-ZMWJDYDG6V").trim();
 export const GA_MEASUREMENT_ID: string | null =
   process.env.NODE_ENV === "production" && /^G-[A-Z0-9]+$/.test(gaRaw) ? gaRaw : null;
+
+/**
+ * Microsoft Clarity 프로젝트 ID (화면 사용 녹화·히트맵). 공개되는 값이라 코드에 적어 둔다.
+ * 환경변수 NEXT_PUBLIC_CLARITY_ID 가 있으면 그 값이 우선하고, "off" 로 두면 태그를 넣지 않는다.
+ * 개발 서버에서는 넣지 않는다.
+ */
+const clarityRaw = (process.env.NEXT_PUBLIC_CLARITY_ID ?? "z9u4hdcjao").trim();
+export const CLARITY_PROJECT_ID: string | null =
+  process.env.NODE_ENV === "production" && /^[a-z0-9]{6,20}$/.test(clarityRaw) ? clarityRaw : null;
