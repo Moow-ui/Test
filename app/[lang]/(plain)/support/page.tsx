@@ -40,7 +40,7 @@ export default async function SupportPage({ params }: Props) {
     <div className="fixed-text-size w-full max-w-xl space-y-8">
       <header className="flex flex-col items-center gap-4 text-center">
         <Link href={localePath(lang)} aria-label={fmt(m.back, { brand })} className="rounded-3xl">
-          <LogoMark size={96} />
+          <LogoMark size={64} />
         </Link>
         <h1 className="text-3xl font-bold">{fmt(m.title, { brand })}</h1>
         {/* 소개 글만 부드러운 글꼴(고운돋움). 이 문장에 쓰인 글자만 받아 와서 가볍다 (text=) */}

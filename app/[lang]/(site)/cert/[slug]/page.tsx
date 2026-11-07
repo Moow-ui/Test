@@ -148,124 +148,127 @@ export default async function CertPage({ params }: Props) {
       )}
 
       {/* 시험 정보는 접어 두고, 출제 분석은 펼쳐 둔다 (사용자 결정 2026-10-18). 내용은 HTML 에 그대로 있음 */}
-      {examInfo && (
-        <div className="space-y-2 pt-4">
-          <Fold title={m.cert.examInfo}>
-            <dl className="grid gap-x-4 gap-y-2 sm:grid-cols-[6rem_1fr]">
-              <dt className="font-bold text-ink-sub">{m.cert.certType}</dt>
-              <dd>
-                {cert.grade
-                  ? fmt(m.cert.certTypeWithGrade, { type: m.certTypes[cert.certType], grade: cert.grade })
-                  : m.certTypes[cert.certType]}
-              </dd>
-              <dt className="font-bold text-ink-sub">{m.cert.field}</dt>
-              <dd>{cert.field}</dd>
-              <dt className="font-bold text-ink-sub">{m.cert.organizer}</dt>
-              <dd>{cert.issuer.name}</dd>
-              <dt className="font-bold text-ink-sub">{m.cert.subjects}</dt>
-              <dd>
-                {cert.subjects
-                  .map((s) => fmt(m.cert.subjectItem, { name: s.name, n: s.questionCount }))
-                  .join(m.cert.subjectSeparator)}
-              </dd>
-              <dt className="font-bold text-ink-sub">{m.cert.itemsTime}</dt>
-              <dd>{fmt(m.cert.itemsTimeValue, { n: examInfo.totalQuestions, min: examInfo.timeLimitMinutes })}</dd>
-              <dt className="font-bold text-ink-sub">{m.cert.format}</dt>
-              <dd>{examInfo.format}</dd>
-              <dt className="font-bold text-ink-sub">{m.cert.passCriteria}</dt>
-              <dd className="font-bold">{examInfo.passCriteria.description}</dd>
-              {content && (
-                <>
-                  <dt className="font-bold text-ink-sub">{m.cert.eligibility}</dt>
-                  <dd>{content.eligibility}</dd>
-                </>
-              )}
-            </dl>
-          </Fold>
-
-          <Fold id={ANALYSIS_ANCHOR} title={m.cert.analysis} defaultOpen>
-            <AnalysisPanel
-              certId={cert.id}
-              subjects={cert.subjects}
-              linkChapters={cert.ready}
-              conceptChapterIds={concepts?.chapters.map((c) => c.id)}
-            />
-          </Fold>
-        </div>
-      )}
-
-      {/* 운영진 학습 팁(운영진 작성). 이용자 후기와 섞지 않고 따로 둔다 */}
-      {cert.studyTips && <StudyTips locale={lang} certName={cert.name} tips={cert.studyTips} />}
-
-      {/* 이 자격증을 다룬 시험 준비 안내 글 (글이 있을 때만). 학습 팁처럼 접어 둔 상자 */}
-      {guides.length > 0 && (
-        <details aria-labelledby="cert-guides" className="card">
-          <summary className="flex min-h-14 items-center justify-between gap-2 px-4">
-            <h2 id="cert-guides" className="font-bold">
-              {m.guide.certRelated}
-            </h2>
-            <span className="shrink-0 text-sm font-bold text-accent">
-              <FoldMark />
-            </span>
-          </summary>
-          <ul className="space-y-2 px-4 pb-4">
-            {guides.map((g) => (
-              <li key={g.slug}>
-                <Link href={localePath(lang, `/guide/${g.slug}`)} className="link">
-                  {g.title}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </details>
-      )}
-
-      {/* 읽을거리(출제 경향·자격증 소개·자주 묻는 질문)도 학습 팁처럼 접어 둔 상자 (2026-11-07 회장 결정) */}
-      {content && (
-        <details aria-labelledby="cert-more" className="card">
-          <summary className="flex min-h-14 items-center justify-between gap-2 px-4 py-2">
-            <span className="flex flex-wrap items-baseline gap-x-2">
-              <h2 id="cert-more" className="font-bold">
-                {fmt(m.cert.more, { name: cert.name })}
-              </h2>
-              <span className="text-sm text-ink-sub">{m.cert.moreSub}</span>
-            </span>
-            <span className="shrink-0 text-sm font-bold text-accent">
-              <FoldMark />
-            </span>
-          </summary>
-          <div className="space-y-6 px-4 pb-4 text-sm">
-            <section className="space-y-2">
-              <h3 className="font-bold">{fmt(m.cert.trendTitle, { name: cert.name, ...writtenVars(lang, cert.writtenExam) })}</h3>
-              <p>{content.trendSummary}</p>
-              <p>{content.studyTip}</p>
-              {cert.ready && (
-                <p>
-                  <Link href={pastMeta.path} className="link">
-                    {fmt(m.cert.viewPast, { title: pastMeta.h1 })}
-                  </Link>
-                </p>
-              )}
-            </section>
-            <section className="space-y-2">
-              <h3 className="font-bold">{fmt(m.cert.introTitle, { name: cert.name })}</h3>
-              <p>{content.intro}</p>
-            </section>
-            <section>
-              <h3 className="font-bold">{m.cert.faqTitle}</h3>
-              <dl className="mt-2 space-y-4">
-                {content.faqs.map((faq) => (
-                  <div key={faq.question}>
-                    <dt className="font-bold">{fmt(m.cert.faqQ, { question: faq.question })}</dt>
-                    <dd className="mt-2">{faq.answer}</dd>
-                  </div>
-                ))}
+      {/* 접는 상자들(시험 정보·출제 분석·학습 팁·수험 정보·더 알아보기)은 같은 간격으로 한 묶음 (2026-11-07 회장 결정) */}
+      <div className="space-y-2 pt-4">
+        {examInfo && (
+          <>
+            <Fold title={m.cert.examInfo}>
+              <dl className="grid gap-x-4 gap-y-2 sm:grid-cols-[6rem_1fr]">
+                <dt className="font-bold text-ink-sub">{m.cert.certType}</dt>
+                <dd>
+                  {cert.grade
+                    ? fmt(m.cert.certTypeWithGrade, { type: m.certTypes[cert.certType], grade: cert.grade })
+                    : m.certTypes[cert.certType]}
+                </dd>
+                <dt className="font-bold text-ink-sub">{m.cert.field}</dt>
+                <dd>{cert.field}</dd>
+                <dt className="font-bold text-ink-sub">{m.cert.organizer}</dt>
+                <dd>{cert.issuer.name}</dd>
+                <dt className="font-bold text-ink-sub">{m.cert.subjects}</dt>
+                <dd>
+                  {cert.subjects
+                    .map((s) => fmt(m.cert.subjectItem, { name: s.name, n: s.questionCount }))
+                    .join(m.cert.subjectSeparator)}
+                </dd>
+                <dt className="font-bold text-ink-sub">{m.cert.itemsTime}</dt>
+                <dd>{fmt(m.cert.itemsTimeValue, { n: examInfo.totalQuestions, min: examInfo.timeLimitMinutes })}</dd>
+                <dt className="font-bold text-ink-sub">{m.cert.format}</dt>
+                <dd>{examInfo.format}</dd>
+                <dt className="font-bold text-ink-sub">{m.cert.passCriteria}</dt>
+                <dd className="font-bold">{examInfo.passCriteria.description}</dd>
+                {content && (
+                  <>
+                    <dt className="font-bold text-ink-sub">{m.cert.eligibility}</dt>
+                    <dd>{content.eligibility}</dd>
+                  </>
+                )}
               </dl>
-            </section>
-            <RelatedCerts locale={lang} certName={cert.name} related={related} />
-          </div>
-        </details>
-      )}
+            </Fold>
+
+            <Fold id={ANALYSIS_ANCHOR} title={m.cert.analysis} defaultOpen>
+              <AnalysisPanel
+                certId={cert.id}
+                subjects={cert.subjects}
+                linkChapters={cert.ready}
+                conceptChapterIds={concepts?.chapters.map((c) => c.id)}
+              />
+            </Fold>
+          </>
+        )}
+
+        {/* 운영진 학습 팁(운영진 작성). 이용자 후기와 섞지 않고 따로 둔다 */}
+        {cert.studyTips && <StudyTips locale={lang} certName={cert.name} tips={cert.studyTips} />}
+
+        {/* 이 자격증을 다룬 시험 준비 안내 글 (글이 있을 때만). 학습 팁처럼 접어 둔 상자 */}
+        {guides.length > 0 && (
+          <details aria-labelledby="cert-guides" className="card">
+            <summary className="flex min-h-14 items-center justify-between gap-2 px-4">
+              <h2 id="cert-guides" className="font-bold">
+                {m.guide.certRelated}
+              </h2>
+              <span className="shrink-0 text-sm font-bold text-accent">
+                <FoldMark />
+              </span>
+            </summary>
+            <ul className="space-y-2 px-4 pb-4">
+              {guides.map((g) => (
+                <li key={g.slug}>
+                  <Link href={localePath(lang, `/guide/${g.slug}`)} className="link">
+                    {g.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </details>
+        )}
+
+        {/* 읽을거리(출제 경향·자격증 소개·자주 묻는 질문)도 학습 팁처럼 접어 둔 상자 (2026-11-07 회장 결정) */}
+        {content && (
+          <details aria-labelledby="cert-more" className="card">
+            <summary className="flex min-h-14 items-center justify-between gap-2 px-4 py-2">
+              <span className="flex flex-wrap items-baseline gap-x-2">
+                <h2 id="cert-more" className="font-bold">
+                  {fmt(m.cert.more, { name: cert.name })}
+                </h2>
+                <span className="text-sm text-ink-sub">{m.cert.moreSub}</span>
+              </span>
+              <span className="shrink-0 text-sm font-bold text-accent">
+                <FoldMark />
+              </span>
+            </summary>
+            <div className="space-y-6 px-4 pb-4 text-sm">
+              <section className="space-y-2">
+                <h3 className="font-bold">{fmt(m.cert.trendTitle, { name: cert.name, ...writtenVars(lang, cert.writtenExam) })}</h3>
+                <p>{content.trendSummary}</p>
+                <p>{content.studyTip}</p>
+                {cert.ready && (
+                  <p>
+                    <Link href={pastMeta.path} className="link">
+                      {fmt(m.cert.viewPast, { title: pastMeta.h1 })}
+                    </Link>
+                  </p>
+                )}
+              </section>
+              <section className="space-y-2">
+                <h3 className="font-bold">{fmt(m.cert.introTitle, { name: cert.name })}</h3>
+                <p>{content.intro}</p>
+              </section>
+              <section>
+                <h3 className="font-bold">{m.cert.faqTitle}</h3>
+                <dl className="mt-2 space-y-4">
+                  {content.faqs.map((faq) => (
+                    <div key={faq.question}>
+                      <dt className="font-bold">{fmt(m.cert.faqQ, { question: faq.question })}</dt>
+                      <dd className="mt-2">{faq.answer}</dd>
+                    </div>
+                  ))}
+                </dl>
+              </section>
+              <RelatedCerts locale={lang} certName={cert.name} related={related} />
+            </div>
+          </details>
+        )}
+      </div>
       {/* "준비 중" 자격증은 접어 둘 읽을거리가 없어서 관련 자격증을 그대로 보여 준다 */}
       {!content && <RelatedCerts locale={lang} certName={cert.name} related={related} />}
 
