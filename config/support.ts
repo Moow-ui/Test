@@ -10,8 +10,8 @@ export const SUPPORT = {
   accountDisplay: "1000-1605-6121",
   /** [복사]로 복사되는 값 (은행 앱에 붙여 넣기 좋게 숫자만) */
   accountCopy: "100016056121",
-  /** 예금주 (송금 앱에 그대로 이 이름이 보인다) */
-  holder: "김건무",
+  /** 화면에 보이는 예금주 (가운데 글자를 가린다. 송금 앱에서는 은행이 실제 이름을 보여 준다) */
+  holder: "김*무",
   /** 토스 앱의 송금 화면을 바로 여는 주소 (토스 QR 에 들어 있는 주소 그대로). 토스가 깔린 휴대폰에서만 열린다 */
   tossUrl:
     "supertoss://send?amount=0&bank=%ED%86%A0%EC%8A%A4%EB%B1%85%ED%81%AC&accountNo=100016056121&origin=qr",
