@@ -21,10 +21,8 @@ const ICONS: Record<string, string> = {
   recent: "M12 3a9 9 0 1 1 0 18 9 9 0 0 1 0-18zM12 7v5l3 3",
   notes: "M6 3h12v18H6zM9 8h6M9 12h6M9 16h4",
   profile: "M12 4a4 4 0 1 1 0 8 4 4 0 0 1 0-8zM4 21c0-4 4-6 8-6s8 2 8 6",
-  qna: "M4 5h16v11H9l-5 4zM9 9h6M9 12h4",
-  notice: "M4 10v4h3l7 5V5L7 10zM18 9a4 4 0 0 1 0 6",
+  feedback: "M4 5h16v11H9l-5 4zM9 9h6M9 12h4",
   guide: "M5 4h10l4 4v12H5zM14 4v5h5M8 13h8M8 17h6",
-  log: "M4 20V10M10 20V4M16 20v-7M22 20H2",
   theme: "M20 14A8 8 0 1 1 10 4a6 6 0 0 0 10 10z",
 };
 
@@ -85,9 +83,7 @@ export function SideMenu({ certs = [] }: { certs?: MenuCert[] }) {
     { icon: "guide", href: localePath(locale, "/guide"), label: t.guide },
     { icon: "notes", href: localePath(locale, "/notes"), label: t.notes },
     { icon: "profile", href: localePath(locale, "/profile"), label: auth.status === "user" ? t.profile : t.login },
-    { icon: "qna", href: localePath(locale, "/qna"), label: t.qna },
-    { icon: "notice", href: localePath(locale, "/notice"), label: t.notice },
-    { icon: "log", href: localePath(locale, "/log"), label: t.log },
+    { icon: "feedback", href: localePath(locale, "/feedback"), label: t.feedback },
   ];
 
   return (

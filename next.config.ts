@@ -36,6 +36,9 @@ const nextConfig: NextConfig = {
       },
       ...LEGACY_PATHS.map((source) => ({ source, destination: `/ko${source}`, statusCode: 301 as const })),
       ...OLD_ADMIN_PATHS.map((source) => ({ source, destination: "/admin", statusCode: 301 as const })),
+      // 메뉴 정리 (2026-11-07): 질문 & 답변 → 개선 의견, 공지사항은 없앴다
+      { source: "/:lang(ko|en)/qna", destination: "/:lang/feedback", statusCode: 301 as const },
+      { source: "/:lang(ko|en)/notice", destination: "/:lang", statusCode: 301 as const },
       // 단원 페이지 합치기: 합친 자격증의 /{단원} → /concepts/{단원} (docs/refine.md 3-7)
       ...mergedChapterRedirects().map((r) => ({ ...r, statusCode: 301 as const })),
     ];

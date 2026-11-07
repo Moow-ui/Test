@@ -1,7 +1,8 @@
 import type { CheerInput, CheerItem } from "./cheer-rules";
+import type { FeedbackInput } from "./feedback-rules";
 import type { Locale } from "./i18n";
 
-/** 응원 API 호출 (클라이언트 전용). 실패하면 오류 코드 (화면 문구는 messages 의 "errors") */
+/** 응원·개선 의견 API 호출 (클라이언트 전용). 실패하면 오류 코드 (화면 문구는 messages 의 "errors") */
 
 async function post(url: string, body: unknown): Promise<{ ok: boolean; error: string }> {
   try {
@@ -39,4 +40,15 @@ export async function sendCheer(input: CheerInput): Promise<string | null> {
 /** 관리자 화면: 응원 공개 / 비공개 / 삭제. 성공하면 true */
 export async function setCheerState(id: string, action: "publish" | "unpublish" | "delete"): Promise<boolean> {
   return (await post("/api/admin/cheers", { id, action })).ok;
+}
+
+/** 개선 의견을 보낸다. 성공하면 null, 실패하면 오류 코드 */
+export async function sendFeedback(input: FeedbackInput): Promise<string | null> {
+  const result = await post("/api/feedback", input);
+  return result.ok ? null : result.error;
+}
+
+/** 관리자 화면: 개선 의견 처리 완료 / 처리 전으로 / 삭제. 성공하면 true */
+export async function setFeedbackState(id: string, action: "done" | "undo" | "delete"): Promise<boolean> {
+  return (await post("/api/admin/feedback", { id, action })).ok;
 }

@@ -103,6 +103,17 @@ const SCHEMA = [
    )`,
   `CREATE INDEX IF NOT EXISTS cheers_public ON cheers (locale, public, created_at)`,
   `CREATE INDEX IF NOT EXISTS cheers_ip ON cheers (ip_hash, created_at)`,
+  // 개선 의견 (메뉴 "개선 의견". 공개하지 않고 관리자만 읽는다). ip_hash 는 "같은 IP 하루 5개" 제한용
+  `CREATE TABLE IF NOT EXISTS feedback (
+     id TEXT PRIMARY KEY,
+     locale TEXT NOT NULL,
+     body TEXT NOT NULL,
+     ip_hash TEXT NOT NULL,
+     created_at INTEGER NOT NULL,
+     resolved_at INTEGER
+   )`,
+  `CREATE INDEX IF NOT EXISTS feedback_created ON feedback (created_at)`,
+  `CREATE INDEX IF NOT EXISTS feedback_ip ON feedback (ip_hash, created_at)`,
   // 자격증별 주간 풀이 횟수 (횟수만 센다. 누가 풀었는지는 저장하지 않는다)
   `CREATE TABLE IF NOT EXISTS quiz_activity (
      cert_id TEXT NOT NULL,

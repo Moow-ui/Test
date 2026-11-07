@@ -102,9 +102,11 @@ Contact: {email}`,
 
 **Messages of support**: your message and an optional display name. You can leave one without an account. Messages are private at first; the operator reads them and publishes only the ones they choose on the support page. To limit how many come from one place in a day we store a one-way hash of your IP address, never the address itself.
 
+**Feedback**: the text of your feedback. You can send it without an account. It is never published; only the operator reads it. To limit how much comes from one place in a day we store a one-way hash of your IP address, never the address itself.
+
 **Practice counts**: when a practice session ends we add one to a weekly count for that exam. We do not record who took it.
 
-We use this information only to provide and secure the service, to publish reviews and selected messages of support, and to fix reported questions.`,
+We use this information only to provide and secure the service, to publish reviews and selected messages of support, to improve the site based on feedback, and to fix reported questions.`,
       },
       {
         heading: "If you do not log in",
@@ -158,7 +160,8 @@ We may also disclose information if required by law.`,
 - **Failed login counts**: cleared when you log in successfully or delete your account.
 - **Problem reports**: contain no information that identifies you and are kept to maintain question quality.
 - **Reviews**: stay published until removed. Reviews posted while logged in are deleted when you delete your account. To remove a review posted without an account, email {email}.
-- **Messages of support**: kept until the operator deletes them. To have yours removed, email {email}.`,
+- **Messages of support**: kept until the operator deletes them. To have yours removed, email {email}.
+- **Feedback**: kept while we use it to improve the site, then deleted.`,
       },
       {
         heading: "Your rights and how to delete your data",

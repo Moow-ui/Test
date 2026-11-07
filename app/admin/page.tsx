@@ -4,12 +4,14 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ReportStatusButton } from "@/components/admin/ReportStatusButton";
 import { CheerAdminButtons } from "@/components/admin/CheerAdminButtons";
+import { FeedbackAdminButtons } from "@/components/admin/FeedbackAdminButtons";
 import { ReviewAdminButtons } from "@/components/admin/ReviewAdminButtons";
 import { brandName, fmt, getMessages } from "@/lib/i18n";
 import { getAdminIdentity } from "@/lib/server/access";
 import { MEMBER_LIST_LIMIT, REVIEW_LIST_LIMIT, formatKst, getAdminOverview, getAdminReviews } from "@/lib/server/admin";
 import { CHEER_LIST_LIMIT, getAdminCheers } from "@/lib/server/cheers";
 import { getDb } from "@/lib/server/db";
+import { FEEDBACK_LIST_LIMIT, getAdminFeedback } from "@/lib/server/feedback";
 
 // 관리자 한 사람이 보는 화면이라 문구는 한국어만 쓴다
 const LOCALE = "ko";
@@ -26,7 +28,7 @@ export function generateMetadata(): Metadata {
   };
 }
 
-const TABS = ["members", "reports", "reviews", "cheers"] as const;
+const TABS = ["members", "reports", "feedback", "reviews", "cheers"] as const;
 type Tab = (typeof TABS)[number];
 
 export default async function AdminPage({ searchParams }: { searchParams: Promise<{ tab?: string }> }) {
@@ -51,10 +53,12 @@ export default async function AdminPage({ searchParams }: { searchParams: Promis
   const data = await getAdminOverview(db);
   const reviewData = tab === "reviews" ? await getAdminReviews(db) : null;
   const cheerData = tab === "cheers" ? await getAdminCheers(db) : null;
+  const feedbackData = tab === "feedback" ? await getAdminFeedback(db) : null;
   const statuses: Record<string, string> = all.reviews.statuses;
   const tabLabels: Record<Tab, string> = {
     members: m.members,
     reports: m.reports,
+    feedback: m.feedback,
     reviews: m.reviews,
     cheers: m.cheers,
   };
@@ -207,6 +211,44 @@ export default async function AdminPage({ searchParams }: { searchParams: Promis
                         show: m.show,
                         delete: m.delete,
                         deleteConfirm: m.deleteConfirm,
+                        cancel: all.common.cancel,
+                        failed: m.failed,
+                      }}
+                    />
+                  </li>
+                ))}
+              </ul>
+            </>
+          )}
+        </section>
+      )}
+      {feedbackData && (
+        <section aria-labelledby="feedback-title" className="space-y-4">
+          <h2 id="feedback-title" className="text-xl font-bold">
+            {m.feedback}
+          </h2>
+          <p className="font-bold">{fmt(m.feedbackCount, { open: feedbackData.open, n: feedbackData.total })}</p>
+          {feedbackData.items.length === 0 ? (
+            <p className="card p-4">{m.feedbackNone}</p>
+          ) : (
+            <>
+              <h3 className="font-bold">{fmt(m.feedbackList, { n: FEEDBACK_LIST_LIMIT })}</h3>
+              <ul className="space-y-2">
+                {feedbackData.items.map((f) => (
+                  <li key={f.id} className="card space-y-2 p-4">
+                    <p className="text-sm font-bold text-ink-sub">
+                      {formatKst(f.createdAt)} · {f.locale}
+                      {f.resolvedAt && <span className="ml-2 text-ok">{m.resolved}</span>}
+                    </p>
+                    <p className="whitespace-pre-wrap break-words">{f.body}</p>
+                    <FeedbackAdminButtons
+                      id={f.id}
+                      resolved={!!f.resolvedAt}
+                      labels={{
+                        done: m.done,
+                        undo: m.undo,
+                        delete: m.delete,
+                        deleteConfirm: m.feedbackDeleteConfirm,
                         cancel: all.common.cancel,
                         failed: m.failed,
                       }}
