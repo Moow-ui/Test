@@ -7,33 +7,41 @@ import type { ReactNode } from "react";
 const BUTTON =
   "flex min-h-16 w-full items-center justify-center rounded-2xl bg-[#2b3036] px-6 py-4 text-center text-xl font-bold text-white shadow-md hover:bg-[#3a4048] focus-visible:outline-4 focus-visible:outline-offset-2";
 
-/** 누르면 바로 다른 곳(송금 앱)으로 넘어가는 버튼. note 는 버튼 아래의 작은 안내 */
+/** 버튼 앞의 이모지 하나 (꾸밈이라 화면 읽기 프로그램에는 숨긴다) */
+function Emoji({ emoji }: { emoji: string }) {
+  return (
+    <span aria-hidden="true" className="mr-3">
+      {emoji}
+    </span>
+  );
+}
+
+/** 누르면 바로 다른 곳(송금 앱)으로 넘어가는 버튼 */
 export function LinkButton({
+  emoji,
   href,
   title,
-  note,
   external = false,
 }: {
+  emoji: string;
   href: string;
   title: string;
-  note?: string;
   external?: boolean;
 }) {
   return (
-    <div className="space-y-2">
-      <a href={href} className={BUTTON} {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}>
-        {title}
-      </a>
-      {note && <p className="text-center text-sm text-ink-sub">{note}</p>}
-    </div>
+    <a href={href} className={BUTTON} {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}>
+      <Emoji emoji={emoji} />
+      {title}
+    </a>
   );
 }
 
 /** 누르면 바로 아래에 내용이 열리는 버튼 (details 그대로라 움직이는 효과가 없다) */
-export function OpenButton({ title, children }: { title: string; children: ReactNode }) {
+export function OpenButton({ emoji, title, children }: { emoji: string; title: string; children: ReactNode }) {
   return (
     <details className="group">
       <summary className={`${BUTTON} cursor-pointer list-none [&::-webkit-details-marker]:hidden`}>
+        <Emoji emoji={emoji} />
         <span>{title}</span>
         <span aria-hidden="true" className="ml-3 text-base">
           <span className="group-open:hidden">▼</span>

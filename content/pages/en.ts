@@ -149,6 +149,7 @@ We do not pass your username, display name, or study records to advertisers.`,
 - **Cloudflare, Inc.** hosts the site and the account database. Account information and study records are stored on Cloudflare's infrastructure, and Cloudflare processes connection data such as IP addresses to deliver and protect the site.
 - **Google LLC (Google AdSense)** serves advertising, as described above.
 - **Google LLC (Google Analytics)** collects visit statistics (pages viewed, device and browser type, approximate region) through cookies so we can improve the site. We do not send your username, display name, or study records.
+- **Google LLC (Google Fonts)** serves the font for the introduction on the support page. When the font loads, your IP address and browser information may be sent to Google. No cookies are used.
 - **Microsoft Corporation (Microsoft Clarity)** records how pages are used (clicks, scrolling, device and browser type, approximate region) through cookies so we can find and fix confusing screens. Text typed into input fields is masked and not recorded. We do not send your username, display name, or study records.
 
 We may also disclose information if required by law.`,

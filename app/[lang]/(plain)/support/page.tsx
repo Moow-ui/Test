@@ -34,6 +34,7 @@ export default async function SupportPage({ params }: Props) {
   if (!isLocale(lang)) notFound();
   const m = getMessages(lang).support;
   const brand = brandName(lang);
+  const intro = fmt(m.intro, { brand });
 
   return (
     <div className="w-full max-w-xl space-y-8">
@@ -42,11 +43,19 @@ export default async function SupportPage({ params }: Props) {
           <LogoMark size={96} />
         </Link>
         <h1 className="text-3xl font-bold">{fmt(m.title, { brand })}</h1>
-        <p className="text-lg">{fmt(m.intro, { brand })}</p>
+        {/* 소개 글만 부드러운 글꼴(고운돋움). 이 문장에 쓰인 글자만 받아 와서 가볍다 (text=) */}
+        <link
+          rel="stylesheet"
+          href={`https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap&text=${encodeURIComponent(intro)}`}
+          precedence="default"
+        />
+        <p className="break-keep text-xl leading-relaxed text-ink-sub" style={{ fontFamily: '"Gowun Dodum", var(--font-web)' }}>
+          {intro}
+        </p>
       </header>
 
       <div className="space-y-4">
-        <OpenButton title={m.accountBox}>
+        <OpenButton emoji="🏦" title={m.accountBox}>
           <p>{m.payNote}</p>
           <div className="space-y-1">
             <p className="text-lg font-bold">{SUPPORT.bank[lang]}</p>
@@ -57,10 +66,10 @@ export default async function SupportPage({ params }: Props) {
         </OpenButton>
 
         {/* 토스 앱의 송금 화면을 바로 연다 (토스가 깔린 휴대폰에서만) */}
-        <LinkButton href={SUPPORT.tossUrl} title={m.tossBox} note={m.tossHint} />
-        <LinkButton href={SUPPORT.kakaoPayUrl} title={m.kakaoPayBox} external />
+        <LinkButton emoji="💸" href={SUPPORT.tossUrl} title={m.tossBox} />
+        <LinkButton emoji="💛" href={SUPPORT.kakaoPayUrl} title={m.kakaoPayBox} external />
 
-        <OpenButton title={m.messageBox}>
+        <OpenButton emoji="💌" title={m.messageBox}>
           <CheerForm />
         </OpenButton>
       </div>
